@@ -9,11 +9,13 @@
  */
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import ThemeSwitcher from '@/components/ui/ThemeSwitcher';
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 export default function HomePage() {
   const { t } = useTranslation();
+  const router = useRouter();
 
   return (
     <main
@@ -57,6 +59,7 @@ export default function HomePage() {
       >
         {/* Quick Start button */}
         <button
+          onClick={() => router.push('/lobby')}
           className="group relative min-w-[220px] cursor-pointer rounded-xl px-8 py-4 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
           style={{ backgroundColor: 'var(--color-primary)' }}
         >
@@ -68,6 +71,7 @@ export default function HomePage() {
 
         {/* Customize button */}
         <button
+          onClick={() => router.push('/lobby')}
           className="group relative min-w-[220px] cursor-pointer rounded-xl px-8 py-4 text-lg font-bold shadow-lg transition-transform hover:scale-105 active:scale-95"
           style={{
             backgroundColor: 'var(--color-bg-card)',
