@@ -98,24 +98,24 @@ export default function LobbyPage() {
   // ─── Render Schritte ───────────────────────────────────────────
 
   return (
-    <main className="min-h-screen p-4 md:p-8 max-w-2xl mx-auto flex flex-col">
-      
+    <main className="flex flex-col max-w-2xl mx-auto px-4 md:px-8" style={{ height: '100dvh' }}>
+
       {/* Header mit Progress */}
-      <div className="mb-8 flex flex-col gap-4">
+      <div className="pt-4 md:pt-8 pb-4 flex flex-col gap-4 shrink-0">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black">🕹️ Lobby</h1>
           <span className="text-sm font-bold opacity-30">Schritt {step} von 4</span>
         </div>
         <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-          <motion.div 
+          <motion.div
             className="h-full bg-[var(--color-accent)]"
             animate={{ width: `${(step / 4) * 100}%` }}
           />
         </div>
       </div>
 
-      {/* Wizard Content Area */}
-      <div className="flex-1">
+      {/* Wizard Content Area — scrollable */}
+      <div className="flex-1 overflow-y-auto pb-4">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={step}
@@ -276,61 +276,57 @@ export default function LobbyPage() {
         </AnimatePresence>
       </div>
 
-      {/* Navigation Footer */}
-      <div className="mt-12 flex gap-4">
-        {step > 1 && (
-          <button 
-            onClick={() => setStep(s => s - 1)}
-            className="flex-1 py-4 rounded-xl border-2 border-[var(--color-border)] font-bold opacity-60 hover:opacity-100"
-          >
-            Zurück
-          </button>
-        )}
-        {step < 4 ? (
-          <button 
-            onClick={() => setStep(s => s + 1)}
-            disabled={!canGoNext}
-            className="flex-[2] py-4 rounded-xl bg-white/10 border border-white/20 font-black disabled:opacity-20 flex items-center justify-center gap-2"
-          >
-            Weiter {canGoNext ? '→' : '(Schritte fehlen)'}
-          </button>
-        ) : null}
-      </div>
-
-      {/* Quick Replay Functionality */}
-      {players.length > 0 && step === 1 && (
-        <div className="mt-8 pt-8 border-t border-white/5 flex flex-col items-center gap-4">
-          <p className="text-xs opacity-40 uppercase font-black">Bereits gespielt?</p>
-          <button 
-            onClick={() => setStep(4)}
-            className="text-sm font-bold text-[var(--color-accent)] hover:underline"
-          >
-            Direkt zu den Einstellungen &rarr;
-          </button>
-        </div>
-      )}
-
-      <QRScannerModal 
-        isOpen={isScannerOpen} 
+      <QRScannerModal
+        isOpen={isScannerOpen}
         onClose={() => setIsScannerOpen(false)}
         onScan={(text) => {
-          // If code starts with @, treat it as a player name/alias
           if (text.startsWith('@')) {
             setNameInput(text.substring(1));
             handleAddPlayer();
           } else {
-             alert(`Gescannter Code: ${text}\n(Zukünftige Funktion: Song-Favoriten oder Deck-Import)`);
+            alert(`Gescannter Code: ${text}\n(Zukünftige Funktion: Song-Favoriten oder Deck-Import)`);
           }
         }}
       />
 
-      {/* Reset Hint */}
-      <button 
-        onClick={() => { initSession(); setStep(1); }}
-        className="mt-12 text-xs opacity-20 hover:opacity-100 transition-opacity"
-      >
-        Komplette Lobby zurücksetzen
-      </button>
+      {/* Navigation Footer — always visible at bottom */}
+      <div className="shrink-0 pb-6 pt-3 flex flex-col gap-2 border-t border-white/5">
+        <div className="flex gap-3">
+          {step > 1 && (
+            <button
+              onClick={() => setStep(s => s - 1)}
+              className="flex-1 py-4 rounded-xl border-2 border-[var(--color-border)] font-bold opacity-60 hover:opacity-100"
+            >
+              Zurück
+            </button>
+          )}
+          {step < 4 && (
+            <button
+              onClick={() => setStep(s => s + 1)}
+              disabled={!canGoNext}
+              className="flex-[2] py-4 rounded-xl bg-white/10 border border-white/20 font-black disabled:opacity-20 flex items-center justify-center gap-2"
+            >
+              Weiter {canGoNext ? '→' : '(fehlt noch)'}
+            </button>
+          )}
+        </div>
+
+        {players.length > 0 && step === 1 && (
+          <button
+            onClick={() => setStep(4)}
+            className="text-xs font-bold text-[var(--color-accent)] opacity-60 hover:opacity-100 transition-opacity text-center py-1"
+          >
+            Direkt zu den Einstellungen →
+          </button>
+        )}
+
+        <button
+          onClick={() => { initSession(); setStep(1); }}
+          className="text-[10px] opacity-20 hover:opacity-60 transition-opacity text-center"
+        >
+          Lobby zurücksetzen
+        </button>
+      </div>
 
     </main>
   );

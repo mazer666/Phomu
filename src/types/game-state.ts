@@ -141,4 +141,7 @@ export interface GameState {
 
   /** Ob die Drawing-Phase automatisch triggern soll (z.B. nach Auto-Skip) */
   autoDrawIntent: boolean;
+
+  /** Jahreszahlen auf der gemeinsamen Timeline (wächst mit richtigen Antworten) */
+  timelineYears: number[];
 }

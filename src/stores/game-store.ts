@@ -84,6 +84,15 @@ interface GameActions {
 
   /** Setzt den gesamten Fortschritt (XP) zurück */
   resetProgress: () => void;
+
+  /** Setzt die initialen Timeline-Jahreszahlen (beim ersten Timeline-Zug) */
+  initTimeline: (years: number[]) => void;
+
+  /** Fügt eine Jahreszahl zur Timeline hinzu (nach richtigem Tipp) */
+  addTimelineYear: (year: number) => void;
+
+  /** Entfernt eine Jahreszahl aus der Timeline (erste Instanz) */
+  removeTimelineYear: (year: number) => void;
 }
 
 /** Vollständiger Store-Typ = State + Actions */
@@ -113,6 +122,7 @@ function createInitialState(): GameState {
     preferredPlayer: 'standard',
     currentSongSource: null,
     autoDrawIntent: false,
+    timelineYears: [],
   };
 }
 
@@ -315,6 +325,7 @@ export const useGameStore = create<GameStore>()(
           isGameOver: false,
           winnerId: undefined,
           roundPhase: 'drawing',
+          timelineYears: [],
         }));
       },
 
@@ -349,8 +360,29 @@ export const useGameStore = create<GameStore>()(
 
       // ── resetProgress ─────────────────────────────────────────────
       resetProgress() {
-        set({
-          totalXP: 0,
+        set({ totalXP: 0 });
+      },
+
+      // ── initTimeline ──────────────────────────────────────────────
+      initTimeline(years) {
+        set({ timelineYears: [...years].sort((a, b) => a - b) });
+      },
+
+      // ── addTimelineYear ───────────────────────────────────────────
+      addTimelineYear(year) {
+        set((state) => ({
+          timelineYears: [...state.timelineYears, year].sort((a, b) => a - b),
+        }));
+      },
+
+      // ── removeTimelineYear ────────────────────────────────────────
+      removeTimelineYear(year) {
+        set((state) => {
+          const idx = state.timelineYears.indexOf(year);
+          if (idx === -1) return {};
+          const next = [...state.timelineYears];
+          next.splice(idx, 1);
+          return { timelineYears: next };
         });
       },
     }),
@@ -364,6 +396,9 @@ export const useGameStore = create<GameStore>()(
         sessionId: state.sessionId,
         totalXP: state.totalXP,
         preferredPlayer: state.preferredPlayer,
+        currentRound: state.currentRound,
+        isGameOver: state.isGameOver,
+        timelineYears: state.timelineYears,
       }),
     }
   )
