@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "pack": "90s Unplugged",
+    "version": "1.0.0",
+    "updatedAt": "2026-03-30T18:15:00Z"
+  },
+  "songs": [
+    {
+      "id": "90s-oasis-wonderwall",
+      "title": "Wonderwall",
+      "artist": "Oasis",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Britpop",
+      "difficulty": "easy",
+      "mood": ["Sing-along", "Acoustic", "Classic"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Dieser Song ist die inoffizielle Hymne jeder WG-Party mit einer Akustikgitarre.",
+        "Das Musikvideo ist in Schwarz-Weiß gehalten und zeigt die Bandmitglieder in einem Raum sitzend.",
+        "Wurde von Noel Gallagher geschrieben und von seinem Bruder Liam gesungen.",
+        "Der Begriff 'Wonderwall' stammt von einem Album von George Harrison.",
+        "Refrain: 'Because maybe, you're gonna be the one that saves me...'"
+      ],
+      "lyrics": { "real": ["Today is gonna be the day that they're gonna throw it back to you", "By now you should've somehow realized what you gotta do", "I don't believe that anybody feels the way I do about you now"], "fake": "Walking through the park in the middle of the dark, feeling free" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "6hzrDeceEKc" }
+    },
+    {
+      "id": "90s-rem-losing-my-religion",
+      "title": "Losing My Religion",
+      "artist": "R.E.M.",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Moody", "Classic", "Alternative"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Der Song ist berühmt für den Einsatz einer Mandoline als Hauptinstrument.",
+        "Der Titel ist eine Südstaaten-Redewendung für 'die Beherrschung verlieren' oder 'am Ende seiner Geduld sein'.",
+        "Das Video ist voller religiöser und klassisch-künstlerischer Anspielungen.",
+        "Sänger Michael Stipe tanzt im Video auf eine sehr markante, energetische Weise.",
+        "Refrain: 'That's me in the corner, that's me in the spotlight, losing my religion.'"
+      ],
+      "lyrics": { "real": ["Oh, life is bigger, it's bigger than you and you are not me", "The lengths that I will go to, the distance in your eyes", "Every whisper, every waking hour, I'm choosing my confessions"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "xwtdhWltSIg" }
+    },
+    {
+      "id": "90s-alanis-morissette-ironic",
+      "title": "Ironic",
+      "artist": "Alanis Morissette",
+      "year": 1995,
+      "country": "CA",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": ["Sassy", "Sing-along", "Pop"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Wurde oft kritisiert, weil die meisten Beispiele im Text gar keine echte 'Ironie' sind, sondern nur Pech.",
+        "Im Video fährt die Sängerin Auto und wird von drei Versionen ihrer selbst begleitet.",
+        "Ein Schlüsselwerk des 'Angry-Feminist-Pop' der 90er.",
+        "Handelt von einem Flugzeugabsturz, einem Regen am Hochzeitstag und einem gewonnenen Lottoschein.",
+        "Ist es nicht ironisch? 'It's like rain on your wedding day...'"
+      ],
+      "lyrics": { "real": ["An old man turned ninety-eight, he won the lottery and died the next day", "It's a black fly in your Chardonnay, it's a death row pardon two minutes too late", "And isn't it ironic, don't you think?"], "fake": "Walking down the street with shoes on my feet, feeling incomplete" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "Jne9t8sHpUc" }
+    },
+    {
+      "id": "90s-sinéad-oconnor-nothing-compares",
+      "title": "Nothing Compares 2 U",
+      "artist": "Sinéad O'Connor",
+      "year": 1990,
+      "country": "IE",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Sad", "Epic", "Soulful"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Wurde ursprünglich von Prince geschrieben.",
+        "Das Video besteht fast nur aus einer extremen Nahaufnahme des Gesichts der Sängerin.",
+        "Die Sängerin zerreißt am Ende des Videos fast symbolisch ein Bild des Papstes (in einer späteren Live-Version).",
+        "Thematisiert den Schmerz nach einer Trennung und die Unmöglichkeit, jemanden zu ersetzen.",
+        "Besonders bewegend: Die echte Träne, die der Sängerin im Video über die Wange läuft."
+      ],
+      "lyrics": { "real": ["It's been seven hours and fifteen days since you took your love away", "I go out every night and sleep all day since you took your love away", "Nothing compares, nothing compares to you"], "fake": "In the middle of the night, I'm looking for a light that shines so bright" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "0-EF60neguk" }
+    },
+    {
+      "id": "90s-radiohead-creep",
+      "title": "Creep",
+      "artist": "Radiohead",
+      "year": 1992,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Dark", "Moody", "Rock"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Die Band mochte den Song später gar nicht mehr und weigerte sich lange, ihn live zu spielen.",
+        "Berühmt für die plötzlichen, lauten Gitarren-Schläge ('Chuck-chuck') vor dem Refrain.",
+        "Basiert harmonisch auf 'The Air That I Breathe' von den Hollies (was zu Rechtsstreitigkeiten führte).",
+        "Die Hymne für alle Außenseiter und Menschen mit Minderwertigkeitskomplexen.",
+        "Refrain: 'But I'm a creep, I'm a weirdo, what the hell am I doing here?'"
+      ],
+      "lyrics": { "real": ["When you were here before, couldn't look you in the eye", "You're just like an angel, your skin makes me cry", "You float like a feather in a beautiful world"], "fake": "I'm walking on sunshine, while the moon is falling down to the sea" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "XFkzRNyygfk" }
+    },
+    {
+      "id": "90s-blind-melon-no-rain",
+      "title": "No Rain",
+      "artist": "Blind Melon",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Happy", "Classic", "Summer"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Berühmt durch das Musikvideo mit dem 'Bee-Girl' im Bienenkostüm.",
+        "Ein großer Hit der Hippie-beeinflussten Alternative-Szene der frühen 90er.",
+        "Der Sänger Shannon Hoon starb tragischerweise kurz nach dem Erfolg der Band.",
+        "Der Text drückt das Gefühl aus, sich in seiner eigenen kleinen Welt wohler zu fühlen.",
+        "Refrain: 'And I wonder if you'll notice me when I'm gone...'"
+      ],
+      "lyrics": { "real": ["All I can say is that my life is pretty plain, I like watching the puddles gather rain", "And all I can do is just pour some tea for two and speak my point of view", "I just want someone to say to me: I'll always be there when you wake"], "fake": "Dancing with the bees under the ancient trees in the breeze" },
+      "isOneHitWonder": true,
+      "links": { "youtube": "3qVPNONdF58" }
+    },
+    {
+      "id": "90s-extreme-more-than-words",
+      "title": "More Than Words",
+      "artist": "Extreme",
+      "year": 1990,
+      "country": "US",
+      "genre": "Acoustic Rock",
+      "difficulty": "easy",
+      "mood": ["Romantic", "Acoustic", "Classic"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Wurde oft fälschlicherweise für einen Song einer reinen Akustik-Band gehalten, obwohl Extreme eigentlich eine Funk-Metal-Band waren.",
+        "Der Song handelt davon, Liebe durch Taten statt durch bloße Worte zu beweisen.",
+        "Ein reines Duett aus Akustikgitarre und zweistimmigem Gesang.",
+        "Das Video zeigt die Bandmitglieder entspannt sitzend beim Spielen.",
+        "Refrain: 'More than words to show you feel that your love for me is real.'"
+      ],
+      "lyrics": { "real": ["Saying I love you is not the words I want to hear from you", "It's not that I want you not to say, but if you only knew", "How easy it would be to show me how you feel"], "fake": "I'm looking for a reason to believe in the season of love" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "UrIiLvg58SY" }
+    },
+    {
+      "id": "90s-cranberries-zombie",
+      "title": "Zombie",
+      "artist": "The Cranberries",
+      "year": 1994,
+      "country": "IE",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": ["Powerful", "Serious", "Alternative"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Ein Protestsong gegen den Nordirlandkonflikt nach einem Bombenattentat.",
+        "Der markante Jodel-Gesang von Dolores O'Riordan im Refrain ist unverwechselbar.",
+        "Das Video zeigt die Sängerin goldbemalt vor einem Kreuz im Kreis von Kindern.",
+        "Einer der meistgespielten Rocksongs der 90er Jahre.",
+        "Refrain: 'In your head, in your head, zombie, zombie, zombie!'"
+      ],
+      "lyrics": { "real": ["Another head hangs lowly, child is slowly taken", "And the violence caused such silence, who are we mistaken?", "But you see, it's not me, it's not my family"], "fake": "Walking through the ruins of a town that used to be so bright" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "6Ejga4kJUts" }
+    },
+    {
+      "id": "90s-verve-bitter-sweet-symphony",
+      "title": "Bitter Sweet Symphony",
+      "artist": "The Verve",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Britpop",
+      "difficulty": "medium",
+      "mood": ["Epic", "Moody", "Classic"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Das berühmte Streicher-Sample stammt aus einer Orchesterversion eines Rolling-Stones-Songs.",
+        "Im Video läuft der Sänger Richard Ashcroft stoisch geradeaus über den Bürgersteig und rammt Passanten.",
+        "Es gab jahrelange Rechtsstreitigkeiten um die Urheberrechte (die erst 2019 beigelegt wurden).",
+        "Thematisiert die menschliche Existenz als einen ständigen Kampf um Geld und Überleben.",
+        "Hörst du die Geigen? 'No change, I can change, I can change...'"
+      ],
+      "lyrics": { "real": ["'Cause it's a bittersweet symphony, this life", "Try to make ends meet, you're a slave to money then you die", "I'll take you down the only road I've ever been down"], "fake": "Looking for the sun in the middle of a run in the light" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "1lyu1KKwC74" }
+    },
+    {
+      "id": "90s-counting-crows-mr-jones",
+      "title": "Mr. Jones",
+      "artist": "Counting Crows",
+      "year": 1993,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Happy", "Classic", "Pop"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Der Song handelt von zwei Musikern, die davon träumen, berühmt zu werden, um mehr Aufmerksamkeit von Frauen zu bekommen.",
+        "Adam Duritz, der Sänger mit den markanten Dreadlocks, singt den Song mit viel Leidenschaft.",
+        "Mr. Jones ist ein echter Freund des Sängers (Marty Jones).",
+        "Enthält viele Referenzen an Kunst und Berühmtheit.",
+        "Refrain: 'Mr. Jones and me tell each other fairy tales...'"
+      ],
+      "lyrics": { "real": ["I was down at the New Amsterdam staring at this yellow-haired girl", "Mr. Jones strikes up a conversation with a black-haired flamenco dancer", "She dances while his father plays guitar"], "fake": "In the middle of the island, we're looking for the silent sea" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "-oqAU5CHwuM" }
+    },
+    {
+      "id": "90s-eric-clapton-tears-in-heaven",
+      "title": "Tears in Heaven",
+      "artist": "Eric Clapton",
+      "year": 1992,
+      "country": "GB",
+      "genre": "Acoustic Rock",
+      "difficulty": "medium",
+      "mood": ["Sad", "Acoustic", "Soulful"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Wurde geschrieben, um den tragischen Tod des dreijährigen Sohnes des Sängers zu verarbeiten.",
+        "Ein Kernstück des 'Unplugged'-Albums von MTV.",
+        "Gewann drei Grammys, darunter Record of the Year.",
+        "Handelt von der Frage, ob man sich im Himmel wiedererkennt.",
+        "Refrain: 'Would you know my name if I saw you in heaven?'"
+      ],
+      "lyrics": { "real": ["Would you know my name if I saw you in heaven?", "Would it be the same if I saw you in heaven?", "I must be strong and carry on, 'cause I know I don't belong here in heaven"], "fake": "Looking for the sun in the middle of a run in the light" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "JxPj3GAYYZ0" }
+    },
+    {
+      "id": "90s-no-doubt-dont-speak",
+      "title": "Don't Speak",
+      "artist": "No Doubt",
+      "year": 1995,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": ["Sad", "Moody", "Classic"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Thematisiert die Trennung zwischen Sängerin Gwen Stefani und dem Bassisten Tony Kanal.",
+        "Im Video sieht man die Spannungen innerhalb der Band während ihres Aufstiegs zum Ruhm.",
+        "Markierte den weltweiten Durchbruch der Ska-beeinflussten Band.",
+        "Bekannt für das melancholische Gitarren-Solo und Gwens emotionalen Gesang.",
+        "Refrain: 'Don't speak, I know just what you're saying, so please stop explaining...'"
+      ],
+      "lyrics": { "real": ["You and me, we used to be together, every day together, always", "I really feel that I'm losing my best friend, I can't believe this could be the end", "Don't speak, I know just what you're saying, so please stop explaining"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "TR3Vdo5etCQ" }
+    },
+    {
+      "id": "90s-goo-goo-dolls-iris",
+      "title": "Iris",
+      "artist": "Goo Goo Dolls",
+      "year": 1998,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": ["Romantic", "Epic", "Power Ballad"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Wurde für den Soundtrack des Films 'Stadt der Engel' (City of Angels) geschrieben.",
+        "Bekannt für seine ungewöhnliche Gitarrenstimmung (fast alle Saiten auf D).",
+        "Hielt jahrelang den Rekord für die meisten Wochen auf Platz 1 der Radio-Charts.",
+        "Der Text drückt das Verlangen aus, von jemandem wirklich 'gesehen' zu werden.",
+        "Refrain: 'I just want you to know who I am!'"
+      ],
+      "lyrics": { "real": ["And I'd give up forever to touch you, 'cause I know that you feel me somehow", "You're the closest to heaven that I'll ever be, and I don't want to go home right now", "And I don't want the world to see me, 'cause I don't think that they'd understand"], "fake": "In the shadow of the night, I will hold you tight and treat you right" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "NdYWuo9OqQI" }
+    },
+    {
+      "id": "90s-jewel-who-will-save-your-soul",
+      "title": "Who Will Save Your Soul",
+      "artist": "Jewel",
+      "year": 1995,
+      "country": "US",
+      "genre": "Folk Pop",
+      "difficulty": "medium",
+      "mood": ["Soulful", "Acoustic", "Alternative"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Der erste große Hit der Sängerin, die zeitweise in ihrem Auto lebte, bevor sie berühmt wurde.",
+        "Bekannt für den fast gejodelten Gesangsstil der Strophen.",
+        "Das Video zeigt die Sängerin in einer öffentlichen Toilette singend (Symbol für Einsamkeit).",
+        "Thematisiert die Oberflächlichkeit und Sinnsuche in der Gesellschaft.",
+        "Refrain: 'Who will save your soul after all the lies that you told?'"
+      ],
+      "lyrics": { "real": ["People living their lives for you on TV, they say they're better than you and you agree", "You say: Please, please, someone help me, but who will save your soul?", "We try to hustle them, try to bustle them, try to cussle them"], "fake": "Nothing's gonna change my world, you're the only special girl" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "0wBDDAZkNtk" }
+    },
+    {
+      "id": "90s-sheryl-crow-all-i-wanna-do",
+      "title": "All I Wanna Do",
+      "artist": "Sheryl Crow",
+      "year": 1993,
+      "country": "US",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": ["Happy", "Summer", "Casual"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Basiert auf einem Gedicht namens 'Fun' von Wyn Cooper.",
+        "Der Song fängt das entspannte Lebensgefühl von LA ein ('All I wanna do is have some fun').",
+        "Gewann den Grammy für den Record of the Year 1995.",
+        "Das Video zeigt die Sängerin entspannt in einer Bar und auf den Straßen.",
+        "Refrain: 'All I wanna do is have some fun, I got a feeling I'm not the only one.'"
+      ],
+      "lyrics": { "real": ["Hit it! This ain't no disco, it ain't no country club either", "All I wanna do is have some fun until the sun comes up over Santa Monica Boulevard", "I like a good beer buzz early in the morning"], "fake": "Dancing all alone, far away from home, in the neon zone" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "hG9C0VwruXE" }
+    },
+    {
+      "id": "90s-natalie-imbruglia-torn",
+      "title": "Torn",
+      "artist": "Natalie Imbruglia",
+      "year": 1997,
+      "country": "AU",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": ["Sad", "Classic", "Pop"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Ist eigentlich ein Cover (Original von der Band Ednaswap).",
+        "Wurde zu einem der meistgespielten Songs im Radio der späten 90er.",
+        "Das Video zeigt die Sängerin in einer sich ständig verändernden Filmset-Kulisse.",
+        "Thematisiert die Desillusionierung nach einer gescheiterten Beziehung.",
+        "Refrain: 'I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor.'"
+      ],
+      "lyrics": { "real": ["I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor", "Illusion never changed into something real, I'm wide awake and I can see the perfect sky is torn", "You're a little late, I'm already torn"], "fake": "Take a look at me now, there's nothing left but memories" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "xJKj0pQniIs" }
+    },
+    {
+      "id": "90s-sixpence-kiss-me",
+      "title": "Kiss Me",
+      "artist": "Sixpence None the Richer",
+      "year": 1997,
+      "country": "US",
+      "genre": "Dream Pop",
+      "difficulty": "easy",
+      "mood": ["Happy", "Romantic", "Soft"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Wurde weltberühmt durch die Teenie-Komödie 'Eine wie keine' (She's All That).",
+        "Ein Paradebeispiel für den unbeschwerten, akustischen Pop-Sound der späten 90er.",
+        "Die Band hat einen religiösen Hintergrund, was man dem Song aber nicht direkt anhört.",
+        "Der Refrain fordert zu einem Kuss unter dem 'Milchlicht' (milky twilight) auf.",
+        "Refrain: 'Kiss me out of the bearded barley...'"
+      ],
+      "lyrics": { "real": ["Kiss me out of the bearded barley, nighty, beside the green, green grass", "Swing, swing, swing the spinning step, you wear those shoes and I will wear that dress", "Oh, kiss me, beneath the milky twilight"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOneHitWonder": true,
+      "links": { "youtube": "hII0JXUJNDo" }
+    },
+    {
+      "id": "90s-semisonic-closing-time",
+      "title": "Closing Time",
+      "artist": "Semisonic",
+      "year": 1998,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Moody", "Classic", "Anthem"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Handelt vordergründig vom Schließen einer Bar, aber eigentlich von der Geburt des ersten Kindes des Sängers.",
+        "Wird oft in Bars als letztes Lied des Abends gespielt.",
+        "Bekannt für den Spruch: 'You don't have to go home, but you can't stay here.'",
+        "Ein One-Hit-Wonder der späten 90er Jahre.",
+        "Refrain: 'Closing time, open all the doors and let you out into the world.'"
+      ],
+      "lyrics": { "real": ["Closing time, open all the doors and let you out into the world", "Closing time, turn the bright lights on over every boy and every girl", "I know who I want to take me home"], "fake": "Walking through the silver screen, looking for the girl I've seen" },
+      "isOneHitWonder": true,
+      "links": { "youtube": "xGytDsqkQY8" }
+    },
+    {
+      "id": "90s-third-eye-blind-semi-charmed",
+      "title": "Semi-Charmed Life",
+      "artist": "Third Eye Blind",
+      "year": 1997,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Happy", "Fast", "Groovy"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Klingt wie ein fröhlicher Popsong, handelt aber eigentlich von Drogensucht (Crystal Meth).",
+        "Ein Klassiker des 90er-Radios mit sehr schnellem Gesang in den Strophen.",
+        "Der 'Doo-doo-doo'-Teil ist extrem eingängig und weltbekannt.",
+        "Die Band schaffte es, einen Song über Sucht als Sommerhit zu tarnen.",
+        "Ich will etwas anderes, das mich durchbringt: 'I want something else!'"
+      ],
+      "lyrics": { "real": ["I want something else to get me through this semi-charmed kind of life, baby, baby", "I believe in the sand beneath my feet, I believe in the goal", "The sky was gold, it was rose, I was taking sips of it through my nose"], "fake": "Dancing in the street, moving to the rhythm of the beat" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "beINamVRGy4" }
+    },
+    {
+      "id": "90s-soul-asylum-runaway-train",
+      "title": "Runaway Train",
+      "artist": "Soul Asylum",
+      "year": 1992,
+      "country": "US",
+      "genre": "Acoustic Rock",
+      "difficulty": "medium",
+      "mood": ["Sad", "Serious", "Powerful"],
+      "pack": "90s Unplugged",
+      "hints": [
+        "Bekannt durch das Musikvideo, das echte vermisste Kinder zeigte (viele wurden dadurch gefunden).",
+        "Thematisiert Depression und das Gefühl, die Kontrolle über sein Leben zu verlieren.",
+        "Gewann den Grammy für den Best Rock Song 1994.",
+        "Ein Meilenstein des gefühlvollen Alternative Rock der frühen 90er.",
+        "Refrain: 'Runaway train, never going back, wrong way on a one-way track.'"
+      ],
+      "lyrics": { "real": ["Call you up in the middle of the night, like a firefly without a light", "You were there like a blowtorch burning, I was a key that could use some turning", "Runaway train, never going back, wrong way on a one-way track"], "fake": "In the cold of the winter, I'm looking for a splinter of light" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "NRtvqT_wMeY" }
+    }
+  ]
+}

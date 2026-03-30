@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "pack": "Rock Anthems",
+    "version": "1.0.0",
+    "updatedAt": "2026-03-30T16:13:15Z"
+  },
+  "songs": [
+    {
+      "id": "rock-acdc-highway-to-hell",
+      "title": "Highway to Hell",
+      "artist": "AC/DC",
+      "year": 1979,
+      "country": "AU",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": ["Powerful", "Energy", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Einer der bekanntesten Hard-Rock-Songs aller Zeiten mit einem legendären Gitarren-Riff.",
+        "Der Titel war ein Spitzname der Band für das anstrengende Tourleben.",
+        "Dies war das letzte Album mit dem legendären Sänger Bon Scott.",
+        "Handelt von einem Leben auf der Überholspur, ohne Stoppschilder oder Tempolimits.",
+        "Refrain: 'I'm on the highway to hell!'"
+      ],
+      "lyrics": { "real": ["Livin' easy, livin' free, season ticket on a one-way ride", "Askin' nothin', leave me be, takin' everything in my stride", "Don't need reason, don't need rhyme, ain't nothin' I'd rather do"], "fake": "Walking through the desert sand, looking for the promised land" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "l482T0yNkeo" }
+    },
+    {
+      "id": "rock-gnr-sweet-child-o-mine",
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "medium",
+      "mood": ["Romantic", "Epic", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Das ikonische Intro-Riff begann als eine Art Fingerübung (Warm-up) von Gitarrist Slash.",
+        "Sänger Axl Rose schrieb den Text für seine damalige Freundin Erin Everly.",
+        "Einer der wenigen Hard-Rock-Hits, der Platz 1 der US-Pop-Charts erreichte.",
+        "Die Frage 'Where do we go now?' am Ende entstand, weil der Band kein Schluss einfiel.",
+        "Gehört zu den meistgespielten Rock-Songs auf YouTube."
+      ],
+      "lyrics": { "real": ["She's got a smile that it seems to me reminds me of childhood memories", "Where everything was as fresh as the bright blue sky", "Now and then when I see her face she takes me away to that special place"], "fake": "In the shadow of the night, I will hold you tight and make it right" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "1w7OgIMMRc4" }
+    },
+    {
+      "id": "rock-led-zeppelin-stairway",
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "year": 1971,
+      "country": "GB",
+      "genre": "Classic Rock",
+      "difficulty": "hard",
+      "mood": ["Epic", "Moody", "Mystical"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Gilt oft als der beste Rock-Song aller Zeiten, obwohl er nie als Single veröffentlicht wurde.",
+        "Der Song baut sich langsam von einer akustischen Folk-Ballade zu einer Hard-Rock-Hymne auf.",
+        "Gitarrist Jimmy Page spielt eines der am meisten bewunderten Solos der Musikgeschichte.",
+        "Thematisiert eine Frau, die glaubt, sich einen Weg in den Himmel kaufen zu können.",
+        "In vielen Musikgeschäften ist das Anspielen dieses Songs verboten, weil es jeder tut."
+      ],
+      "lyrics": { "real": ["There's a lady who's sure all that glitters is gold, and she's buying a stairway to heaven", "When she gets there she knows, if the stores are all closed, with a word she can get what she came for", "Ooh, ooh, and she's buying a stairway to heaven"], "fake": "Walking through the silver forest, listening to the ancient chorus" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "QkF3oxziUI4" }
+    },
+    {
+      "id": "rock-nirvana-teen-spirit",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "year": 1991,
+      "country": "US",
+      "genre": "Grunge",
+      "difficulty": "easy",
+      "mood": ["Aggressive", "Energy", "Grunge"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Markierte den weltweiten Durchbruch des Grunge und das Ende der Hair-Metal-Ära.",
+        "Der Titel stammt von einem Deodorant-Namen ('Teen Spirit'), den eine Freundin an Kurts Wand schrieb.",
+        "Kurt Cobain wollte eigentlich einen Song im Stil der 'Pixies' schreiben.",
+        "Das Video mit den tanzenden Cheerleadern in einer zerfallenden Turnhalle ist ikonisch.",
+        "Refrain: 'With the lights out, it's less dangerous! Here we are now, entertain us!'"
+      ],
+      "lyrics": { "real": ["Load up on guns, bring your friends, it's fun to lose and to pretend", "She's over-bored and self-assured, oh no, I know a dirty word", "Hello, hello, hello, how low?"], "fake": "In the middle of the street, you can feel the heat of the broken beat" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "hTWKbfoikeg" }
+    },
+    {
+      "id": "rock-deep-purple-smoke-on-the-water",
+      "title": "Smoke on the Water",
+      "artist": "Deep Purple",
+      "year": 1972,
+      "country": "GB",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": ["Cool", "Rock", "Classic"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Der Song hat das - für Anfänger - bekannteste Gitarrenriff der Welt (4 Töne).",
+        "Der Text beschreibt einen echten Brand im Casino von Montreux während eines Frank-Zappa-Konzerts.",
+        "Der Titel bezieht sich auf den Rauch, der über den Genfer See zog.",
+        "Die Band nahm das Album 'Machine Head' in den Trümmern des ausgebrannten Casinos auf.",
+        "Ein absoluter Pflichtsong für jeden angehenden Gitarristen."
+      ],
+      "lyrics": { "real": ["We all came out to Montreux on the Lake Geneva shoreline", "To make records with a mobile, we didn't have much time", "Smoke on the water, fire in the sky"], "fake": "Running for the mountain, looking for a fountain of eternal life" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "zUwEIt9ez7M" }
+    },
+    {
+      "id": "rock-stones-satisfaction",
+      "title": "(I Can't Get No) Satisfaction",
+      "artist": "The Rolling Stones",
+      "year": 1965,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Rebellious", "Cool", "Classic"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Keith Richards träumte das Riff und nahm es nachts auf einem Kassettenrekorder auf.",
+        "Einer der ersten Songs, der einen Fuzz-Effekt für die Gitarre prominent einsetzte.",
+        "Der Text kritisiert die Konsumgesellschaft und sexuelle Frustration.",
+        "Machte die Stones endgültig zu Rivalen der Beatles.",
+        "Refrain: 'I can't get no satisfaction, 'cause I try and I try...'"
+      ],
+      "lyrics": { "real": ["I can't get no satisfaction, 'cause I try and I try and I try", "When I'm drivin' in my car and a man comes on the radio", "He's tellin' me more and more about some useless information"], "fake": "Walking down the street with the rhythm in my feet and a smile so sweet" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "nrIPxlFzDi0" }
+    },
+    {
+      "id": "rock-springsteen-born-in-the-usa",
+      "title": "Born in the U.S.A.",
+      "artist": "Bruce Springsteen",
+      "year": 1984,
+      "country": "US",
+      "genre": "Heartland Rock",
+      "difficulty": "easy",
+      "mood": ["Powerful", "Serious", "Stadium Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Wird oft fälschlicherweise als patriotische Hymne verstanden, ist aber eigentlich ein kritischer Song über Veteranen.",
+        "Handelt von den Schwierigkeiten eines Vietnam-Veteranen nach seiner Rückkehr.",
+        "Das treibende Schlagzeug und die Synthesizer-Fanfare sind unverwechselbar.",
+        "Ronald Reagan wollte den Song für seinen Wahlkampf nutzen, was Springsteen ablehnte.",
+        "Der 'Boss' in seiner kommerziell erfolgreichsten Phase."
+      ],
+      "lyrics": { "real": ["Born down in a dead man's town, the first kick I took was when I hit the ground", "You end up like a dog that's been beat too much, till you spend half your life just covering up", "Born in the U.S.A., I was born in the U.S.A."], "fake": "Stars and stripes are flying high under the bright and morning sky" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "lZD4ezDbbu4" }
+    },
+    {
+      "id": "rock-linkin-park-in-the-end",
+      "title": "In the End",
+      "artist": "Linkin Park",
+      "year": 2000,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": ["Moody", "Intense", "Modern Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Einer der definierenden Songs des Nu-Metal-Genres mit einer Mischung aus Rap und Gesang.",
+        "Chester Bennington mochte den Song anfangs gar nicht und wollte ihn nicht auf dem Album haben.",
+        "Das Musikvideo nutzt für die damalige Zeit wegweisendes CGI in einer Wüstenwelt.",
+        "Thematisiert das Scheitern von Bemühungen und das Gefühl der Vergeblichkeit.",
+        "Besonders ikonisch durch das Klavier-Intro am Anfang."
+      ],
+      "lyrics": { "real": ["It starts with one thing, I don't know why, it doesn't even matter how hard you try", "Keep that in mind, I designed this rhyme to explain in due time", "I tried so hard and got so far, but in the end it doesn't even matter"], "fake": "Nothing's gonna change the way I feel about the things we did for real" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "eVTXPUF4Oz4" }
+    },
+    {
+      "id": "rock-bon-jovi-its-my-life",
+      "title": "It's My Life",
+      "artist": "Bon Jovi",
+      "year": 2000,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Powerful", "Inspiring", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Markierte das große Comeback der Band im neuen Jahrtausend.",
+        "Enthält eine Text-Referenz an den früheren Hit 'Livin' on a Prayer' ('For Tommy and Gina...').",
+        "Nutzt wie der 80er-Hit 'Livin' on a Prayer' eine Talkbox (Gitarreneffekt).",
+        "Eine Hymne auf Selbstbestimmung und das Leben im Hier und Jetzt.",
+        "Refrain: 'It's my life! It's now or never!'"
+      ],
+      "lyrics": { "real": ["This ain't a song for the broken-hearted, no silent prayer for the faith-departed", "I ain't gonna be just a face in the crowd, you're gonna hear my voice when I shout it out loud", "It's my life, it's now or never, I ain't gonna live forever"], "fake": "Taking my chances, making my moves, I've got nothing left to lose" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "vx2u5uUu3DE" }
+    },
+    {
+      "id": "rock-scorpions-wind-of-change",
+      "title": "Wind of Change",
+      "artist": "Scorpions",
+      "year": 1990,
+      "country": "DE",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": ["Melancholic", "Inspiring", "Peace"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Wurde zur inoffiziellen Hymne des Mauerfalls und des Endes des Kalten Krieges.",
+        "Gilt als eine der meistverkauften deutschen Singles aller Zeiten.",
+        "Das charakteristische Pfeifen am Anfang ist weltweit bekannt.",
+        "Die Band wurde zu diesem Song durch den Besuch beim 'Moscow Music Peace Festival' inspiriert.",
+        "Sänger Klaus Meine schrieb den Song sowohl auf Englisch als auch auf Russisch."
+      ],
+      "lyrics": { "real": ["I follow the Moskva down to Gorky Park, listening to the wind of change", "An August summer night, soldiers passing by, listening to the wind of change", "The world is closing in, did you ever think that we could be so close like brothers?"], "fake": "Berlin is calling, the wall is falling, see the people stand as one" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "n4RjJKxsamQ" }
+    },
+    {
+      "id": "rock-queen-we-will-rock-you",
+      "title": "We Will Rock You",
+      "artist": "Queen",
+      "year": 1977,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Powerful", "Energy", "Stadium Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Berühmt durch den einfachen Rhythmus aus zweimal Stampfen und einmal Klatschen.",
+        "Brian May wollte einen Song schreiben, bei dem das Publikum maximal mitmachen kann.",
+        "Wurde oft zusammen mit 'We Are the Champions' gespielt.",
+        "Der stampfende Sound wurde in einer alten Kirche mit vielen Overdubs aufgenommen.",
+        "Ein absoluter Klassiker bei Sportveranstaltungen weltweit."
+      ],
+      "lyrics": { "real": ["Buddy, you're a boy, make a big noise playing in the street, gonna be a big man someday", "You got mud on your face, you big disgrace, kicking your can all over the place", "Singing: We will, we will rock you!"], "fake": "Marching to the beat, feeling the heat of the broken street" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "-tJYN-eG1zk" }
+    },
+    {
+      "id": "rock-aerosmith-dream-on",
+      "title": "Dream On",
+      "artist": "Aerosmith",
+      "year": 1973,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "medium",
+      "mood": ["Epic", "Moody", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Steven Tylers erste große Power-Ballade und ein Meilenstein für die Band.",
+        "Der Song ist bekannt für den unglaublichen Schrei am Ende des Liedes.",
+        "Thematisiert den Weg zum Ruhm und das Festhalten an Träumen.",
+        "Eminem sampelte den Song später für seinen Hit 'Sing for the Moment'.",
+        "Refrain: 'Dream on, dream on, dream until your dreams come true!'"
+      ],
+      "lyrics": { "real": ["Every time that I look in the mirror, all these lines on my face getting clearer", "The past is gone, it went by like dusk to dawn", "Isn't that the way? Everybody's got their dues to pay"], "fake": "Walking through the silver screen, looking for the girl I've seen" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "hHRNSeuvzlM" }
+    },
+    {
+      "id": "rock-metallica-enter-sandman",
+      "title": "Enter Sandman",
+      "artist": "Metallica",
+      "year": 1991,
+      "country": "US",
+      "genre": "Heavy Metal",
+      "difficulty": "medium",
+      "mood": ["Heavy", "Dark", "Energy"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Das Lied, das Metallica endgültig in den Mainstream katapultierte (The Black Album).",
+        "Handelt von Albträumen und der Angst eines Kindes vor der Dunkelheit.",
+        "Das ikonische Gitarrenriff am Anfang ist eines der bekanntesten Metal-Riffs.",
+        "Enthält ein gesprochenes Gebet im Mittelteil ('Now I lay me down to sleep...').",
+        "Vergiss dein Nachtgebet nicht: 'Sleep with one eye open, gripping your pillow tight!'"
+      ],
+      "lyrics": { "real": ["Say your prayers, little one, don't forget, my son, to include everyone", "Tuck you in, warm within, keep you free from sin till the sandman he comes", "Exit: light, Enter: night, Take my hand, we're off to never-never land"], "fake": "In the middle of the shadow, I'm looking for the golden arrow" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "CD-E-AgQu30" }
+    },
+    {
+      "id": "rock-white-stripes-seven-nation-army",
+      "title": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "year": 2003,
+      "country": "US",
+      "genre": "Garage Rock",
+      "difficulty": "easy",
+      "mood": ["Groovy", "Energy", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Hat die vielleicht bekannteste Basslinie des 21. Jahrhunderts (obwohl sie auf einer Gitarre gespielt wurde).",
+        "Wurde zur inoffiziellen Hymne in Fußballstadien weltweit.",
+        "Handelt von Paranoia und dem Gefühl, von Klatsch und Tratsch verfolgt zu werden.",
+        "Jack White nutzte einen speziellen Effekt, um die Gitarre wie einen Bass klingen zu lassen.",
+        "Der Rhythmus geht so: 'Döh, döh-döh-döh-döh, dööh, dööh...'"
+      ],
+      "lyrics": { "real": ["I'm gonna fight 'em off, a seven nation army couldn't hold me back", "They're gonna rip it off, taking their time right behind my back", "And I'm talking to myself at night because I can't forget"], "fake": "Walking down the dusty road, carrying a heavy load" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "0J2QdDbelmY" }
+    },
+    {
+      "id": "rock-foo-fighters-everlong",
+      "title": "Everlong",
+      "artist": "Foo Fighters",
+      "year": 1997,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "hard",
+      "mood": ["Epic", "Driving", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Wurde von Dave Grohl nach dem Ende seiner Ehe geschrieben.",
+        "Gilt als einer der emotionalsten und stärksten Songs der Band.",
+        "Das surreale Musikvideo wurde von Michel Gondry gedreht.",
+        "Bekannt für seine treibende Energie und die verzerrten Gitarren.",
+        "Refrain: 'And I wonder when I sing along with you, if everything could ever feel this real forever?'"
+      ],
+      "lyrics": { "real": ["Hello, I've waited here for you, everlong", "Tonight I throw myself into, and out of the red, out of her head she sang", "If everything could ever feel this real forever, if anything could ever be this good again"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "eBG7P-K-r1Y" }
+    },
+    {
+      "id": "rock-journey-dont-stop-believin",
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "year": 1981,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Sing-along", "Inspiring", "Classic"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Wurde durch die Schlussszene der Serie 'The Sopranos' erneut zum Welthit.",
+        "Der 'South Detroit', von dem im Song die Rede ist, existiert eigentlich gar nicht.",
+        "Bekannt für den markanten Klavier-Beginn und die epische Steigerung.",
+        "Die Hymne für alle Träumer und Reisenden im Mitternachtszug.",
+        "Refrain: 'Don't stop believin', hold on to that feelin'!'"
+      ],
+      "lyrics": { "real": ["Just a small-town girl, livin' in a lonely world, she took the midnight train goin' anywhere", "Just a city boy, born and raised in South Detroit, he took the midnight train goin' anywhere", "Don't stop believin', hold on to that feelin', streetlight people"], "fake": "Walking down the dusty road, carrying a heavy load of love" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "1k8dqizvAZu" }
+    },
+    {
+      "id": "rock-killers-mr-brightside",
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "year": 2003,
+      "country": "US",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": ["Energy", "Classic", "Sing-along"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Hält den Rekord für die meisten Wochen in den britischen Top 100 Charts.",
+        "Handelt von Eifersucht und der Paranoia nach dem Betrug einer Freundin.",
+        "Sänger Brandon Flower schrieb den Text in einem Casino in Las Vegas.",
+        "Beginnt mit dem markanten Gitarren-Arpeggio.",
+        "In britischen Bars ist es fast Gesetz, diesen Song laut mitzusingen."
+      ],
+      "lyrics": { "real": ["I'm coming out of my cage and I've been doing just fine, gotta, gotta be down because I want it all", "It started out with a kiss, how did it end up like this?", "It was only a kiss, it was only a kiss"], "fake": "In the middle of the night, we're looking for the light of our soul" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "gGdGFtwCNBE" }
+    },
+    {
+      "id": "rock-rem-man-on-the-moon",
+      "title": "Man on the Moon",
+      "artist": "R.E.M.",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": ["Cool", "Classic", "Alternative"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Eine Hommage an den exzentrischen Comedian Andy Kaufman.",
+        "Der Titel bezieht sich auf die Verschwörungstheorien zur Mondlandung.",
+        "Wurde als Soundtrack für die gleichnamige Filmbiografie mit Jim Carrey verwendet.",
+        "Michael Stipe imitiert im Song kurzzeitig Elvis Presley.",
+        "Refrain: 'If you believe they put a man on the moon...'"
+      ],
+      "lyrics": { "real": ["Mott the Hoople and the game of Life, yeah, yeah, yeah, yeah", "Andy Kaufman in the wrestling match, yeah, yeah, yeah, yeah", "If you believe they put a man on the moon, if you believe there's nothing up his sleeve"], "fake": "Walking through the silver forest, listening to the ancient chorus" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "dLxpNiF0YKs" }
+    },
+    {
+      "id": "rock-blur-song-2",
+      "title": "Song 2",
+      "artist": "Blur",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": ["Energy", "Fast", "Aggressive"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Bekannt für den berühmten 'Woo-hoo!'-Schrei.",
+        "War ursprünglich als Parodie auf die US-Grunge-Szene gedacht, wurde aber der größte Hit der Band.",
+        "Dauert genau zwei Minuten und zwei Sekunden und ist Songnummer zwei auf dem Album.",
+        "Ein absoluter Klassiker in FIFA-Videospielen und Stadien.",
+        "Refrain: 'Woo-hoo! When I feel heavy-metal...'"
+      ],
+      "lyrics": { "real": ["Woo-hoo! When I feel heavy-metal, woo-hoo! And I'm pins and I'm needles", "Woo-hoo! Well, I lie and I'm easy, all of the time but I'm never blue", "I got my head checked by a jumbo jet"], "fake": "In the middle of the night, searching for a fight in the neon light" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "SSbBvKaM6sk" }
+    },
+    {
+      "id": "rock-linkin-park-numb",
+      "title": "Numb",
+      "artist": "Linkin Park",
+      "year": 2003,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": ["Moody", "Intense", "Rock"],
+      "pack": "Rock Anthems",
+      "hints": [
+        "Das Musikvideo wurde teilweise in Prag gedreht (Karlsbrücke, Veitsdom).",
+        "Einer der erfolgreichsten Songs der Band, der oft mit Jay-Z gemixt wurde ('Encore').",
+        "Thematisiert den Druck, den Erwartungen anderer gerecht werden zu müssen.",
+        "Ikonisches Synthesizer-Intro und Chesters kraftvoller Gesang.",
+        "Refrain: 'I've become so numb, I can't feel you there!'"
+      ],
+      "lyrics": { "real": ["I'm tired of being what you want me to be, feeling so faithless, lost under the surface", "Don't know what you're expecting of me, put under the pressure of walking in your shoes", "I've become so numb, I can't feel you there, become so tired, so much more aware"], "fake": "Taking my chances, making my moves, I've got nothing left to lose" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "kXYiU_JCYtU" }
+    }
+  ]
+}

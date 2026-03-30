@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "pack": "Hip Hop Essentials",
+    "version": "1.0.0",
+    "updatedAt": "2026-03-30T16:20:00Z"
+  },
+  "songs": [
+    {
+      "id": "hiphop-sugarhill-rappers-delight",
+      "title": "Rapper's Delight",
+      "artist": "The Sugarhill Gang",
+      "year": 1979,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": ["Fun", "Classic", "Old School"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Gilt als der Song, der Hip Hop weltweit bekannt gemacht hat.",
+        "Basiert auf einem prominenten Sample von 'Good Times' der Band Chic.",
+        "Der Text beginnt mit 'I said a hip hop, hippie to the hippie, to the hip, hip hop...'.",
+        "Dauert in der Originallänge fast 15 Minuten.",
+        "Ein Meilenstein des frühen Rap-Sounds."
+      ],
+      "lyrics": { "real": ["I said a hip hop, hippie to the hippie, to the hip, hip hop, you don't stop", "Rock it out with the bang bang boogie, say up jump the boogie, to the rhythm of the boogie, the beat", "Now what you hear is not a test, I'm rapping to the beat"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "mcCK99wHrk0" }
+    },
+    {
+      "id": "hiphop-grandmaster-the-message",
+      "title": "The Message",
+      "artist": "Grandmaster Flash & The Furious Five",
+      "year": 1982,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": ["Serious", "Socially Conscious", "Classic"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "War einer der ersten Hip-Hop-Songs mit einer sozialkritischen Botschaft.",
+        "Thematisiert das harte Leben und den Überlebenskampf in den Ghettos von NYC.",
+        "Bekannt für den Refrain: 'It's like a jungle sometimes, it makes me wonder how I keep from going under'.",
+        "Wurde 2002 als erster Hip-Hop-Song in das nationale Register der Library of Congress aufgenommen.",
+        "Ein Meilenstein des Conscious Rap."
+      ],
+      "lyrics": { "real": ["It's like a jungle sometimes, it makes me wonder how I keep from going under", "Broken glass everywhere, people pissing on the stairs, you know they just don't care", "Don't push me 'cause I'm close to the edge, I'm trying not to lose my head"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "PobrSpMwKk4" }
+    },
+    {
+      "id": "hiphop-rundmc-its-tricky",
+      "title": "It's Tricky",
+      "artist": "Run-D.M.C.",
+      "year": 1986,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": ["Energy", "Classic", "Fun"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Die Band aus Queens markierte den Übergang zum 'New School' Hip Hop.",
+        "Der Song basiert auf einem Sample von 'My Sharona' der Band The Knack.",
+        "Bekannt für die Zusammenarbeit mit Aerosmith ('Walk This Way', anderer Song).",
+        "Der Text beschreibt, wie 'tricky' es ist, einen guten Reim zu rappen.",
+        "Refrain: 'It's tricky to rock a rhyme, to rock a rhyme that's right on time!'"
+      ],
+      "lyrics": { "real": ["It's tricky to rock a rhyme, to rock a rhyme that's right on time, it's tricky", "I met this little girl, her name was Joan, she loved the way I rocked the microphone", "Speech is my hammer, bang the world into shape"], "fake": "Nothing's gonna stop me now, I'm the king of the night somehow" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "l-O5IHVhWj0" }
+    },
+    {
+      "id": "hiphop-beastie-fight-right",
+      "title": "(You Gotta ) Fight For Your Right (To Party!)",
+      "artist": "Beastie Boys",
+      "year": 1986,
+      "country": "US",
+      "genre": "Rap Rock",
+      "difficulty": "easy",
+      "mood": ["Energy", "Fun", "Aggressive"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Ein perfekter Mix aus Hip Hop und Hard Rock.",
+        "War ursprünglich als Parodie auf Party-Hymnen gedacht, wurde aber selbst zum ultimativen Party-Song.",
+        "Das Video zeigt eine eskalierende Hausparty.",
+        "Die drei weißen Rapper aus Brooklyn starteten als Hardcore-Punk-Band.",
+        "Refrain: 'You gotta fight for your right to party!'"
+      ],
+      "lyrics": { "real": ["Your mom busted in and said: What's that noise? Mom you're just jealous it's the Beastie Boys!", "You gotta fight for your right to party!", "You wake up late for school, man you don't wanna go"], "fake": "In the middle of the night, we're looking for a fight in the neon light" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "eBShN8qT4lk" }
+    },
+    {
+      "id": "hiphop-public-enemy-fight-power",
+      "title": "Fight the Power",
+      "artist": "Public Enemy",
+      "year": 1989,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": ["Serious", "Powerful", "Aggressive"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Wurde für den Film 'Do the Right Thing' von Spike Lee geschrieben.",
+        "Ein kraftvoller Protestsong gegen Rassismus und soziale Ungerechtigkeit.",
+        "Enthält eine Unmenge an Samples, die einen dichten, fast chaotischen Sound erzeugen.",
+        "Chuck D liefert die politischen Botschaften, Flavor Flav sorgt für den Hype.",
+        "Refrain: 'Fight the power! We got to fight the powers that be!'"
+      ],
+      "lyrics": { "real": ["Elvis was a hero to most but he never meant shit to me you see", "Straight up racist that sucker was simple and plain", "Fight the power! We got to fight the powers that be!"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "mmo3HFa2vjg" }
+    },
+    {
+      "id": "hiphop-nwa-straight-outta-compton",
+      "title": "Straight Outta Compton",
+      "artist": "N.W.A.",
+      "year": 1988,
+      "country": "US",
+      "genre": "Gangsta Rap",
+      "difficulty": "medium",
+      "mood": ["Aggressive", "Serious", "Raw"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Der Song, der Gangsta Rap in den Mainstream katapultierte.",
+        "Die Gruppe bestand aus Legenden wie Dr. Dre, Ice Cube und Eazy-E.",
+        "Thematisiert die Polizeigewalt und das Leben in der kalifornischen Stadt Compton.",
+        "Wurde wegen der expliziten Texte vom FBI beobachtet.",
+        "Refrain: 'You are now about to witness the strength of street knowledge.'"
+      ],
+      "lyrics": { "real": ["You are now about to witness the strength of street knowledge", "Straight outta Compton, crazy motherfucker named Ice Cube", "From the gang called Niggas With Attitudes"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "TMZi25Pq3T8" }
+    },
+    {
+      "id": "hiphop-drdre-gthang",
+      "title": "Nuthin' but a 'G' Thang",
+      "artist": "Dr. Dre ft. Snoop Dogg",
+      "year": 1992,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "medium",
+      "mood": ["Cool", "Groovy", "Classic"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Der Inbegriff des G-Funk-Sounds der frühen 90er Jahre.",
+        "Markierte den weltweiten Durchbruch von Snoop Dogg.",
+        "Basiert auf einem entspannten Sample von Leon Haywood.",
+        "Der Text dreht sich um das Leben in Long Beach und LA.",
+        "Refrain: 'It's like this and like that and like this and a...'"
+      ],
+      "lyrics": { "real": ["One, two, three and to the four, Snoop Doggy Dogg and Dr. Dre is at the door", "Ready to make an entrance, so back on up", "It's like this and like that and like this and a"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "0f0UMfInowo" }
+    },
+    {
+      "id": "hiphop-bigg-juicy",
+      "title": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "year": 1994,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": ["Inspirational", "Classic", "Groovy"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Eine 'Rags-to-Riches'-Geschichte über den Aufstieg vom Drogendealer zum Rap-Superstar.",
+        "Basiert auf dem 'Juicy Fruit'-Sample der Band Mtume.",
+        "Beginnt mit der berühmten Widmung: 'To all the teachers that told me I'd never amount to nothing'.",
+        "Ein absoluter Meilenstein des East Coast Hip Hop.",
+        "Refrain: 'It was all a dream, I used to read Word Up! magazine!'"
+      ],
+      "lyrics": { "real": ["It was all a dream, I used to read Word Up! magazine", "Salt-n-Pepa and Heavy D up in the limousine", "Hangin' pictures on my wall, every Saturday Rap Attack, Mr. Magic, Marley Marl"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "_P_P_K_g_g" }
+    },
+    {
+      "id": "hiphop-2pac-california-love",
+      "title": "California Love",
+      "artist": "2Pac ft. Dr. Dre",
+      "year": 1995,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "easy",
+      "mood": ["Energy", "Classic", "Anthem"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Die ultimative Hymne für den Staat Kalifornien und den West Coast Hip Hop.",
+        "Das Video ist im Stil von 'Mad Max' gehalten und spielt in der Wüste.",
+        "Markanter Talkbox-Refrain ('California... knows how to party').",
+        "Einer der größten kommerziellen Erfolge von 2Pac.",
+        "Refrain: 'California love!'"
+      ],
+      "lyrics": { "real": ["California! Knows how to party, California! Knows how to party", "In the city of L.A., in the city of good ol' Watts", "In the city, the city of Compton, we keep it rockin'"], "fake": "Nothing's gonna stop me now, I'm the king of the night somehow" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "5wBTdfAkqGU" }
+    },
+    {
+      "id": "hiphop-wutang-cream",
+      "title": "C.R.E.A.M.",
+      "artist": "Wu-Tang Clan",
+      "year": 1993,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": ["Serious", "Raw", "Moody"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Das Akronym steht für 'Cash Rules Everything Around Me'.",
+        "Thematisiert den Kampf um Geld und Überleben in den gefährlichen Vierteln von Staten Island.",
+        "Basiert auf einem traurigen Klavier-Sample von The Charmels.",
+        "Ein Paradebeispiel für den rohen, unverfälschten Sound des Wu-Tang Clans.",
+        "Refrain: 'Cash rules everything around me, C.R.E.A.M. get the money!'"
+      ],
+      "lyrics": { "real": ["Cash rules everything around me, C.R.E.A.M. get the money", "Dollar dollar bill y'all!", "I grew up on the crime side, the New York Times side"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "PBwAxmrE194" }
+    },
+    {
+      "id": "hiphop-warreng-regulate",
+      "title": "Regulate",
+      "artist": "Warren G ft. Nate Dogg",
+      "year": 1994,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "medium",
+      "mood": ["Cool", "Groovy", "Smooth"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Einer der entspanntesten G-Funk-Tracks überhaupt.",
+        "Basiert auf einem Sample von Michael McDonalds 'I Keep Forgettin''.",
+        "Erzählt eine Geschichte über einen Überfall und die anschließende Rettung in Long Beach.",
+        "Nate Doggs tiefe, melodische Stimme im Refrain ist das Markenzeichen.",
+        "Refrain: 'Regulators! We regulate any stealing of his property!'"
+      ],
+      "lyrics": { "real": ["Regulators! We regulate any stealing of his property", "And we're damn good too, but you can't be any geek off the street", "You gotta be handy with the steel if you know what I mean, earn your keep"], "fake": "In the middle of the night, we're looking for the light of the broken soul" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "1K_V99-hW5U" }
+    },
+    {
+      "id": "hiphop-mobbdeep-shookones",
+      "title": "Shook Ones, Pt. II",
+      "artist": "Mobb Deep",
+      "year": 1995,
+      "country": "US",
+      "genre": "Hardcore Hip Hop",
+      "difficulty": "hard",
+      "mood": ["Dark", "Serious", "Raw"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Bekannt für seinen düsteren, atmosphärischen Sound und die harten Beats.",
+        "Wurde prominent im Finale des Films '8 Mile' mit Eminem verwendet.",
+        "Thematisiert die harten Realitäten und die Angst in den Projekten von Queensbridge.",
+        "Das Klavier-Sample ist eines der ikonischsten im gesamten Hip Hop.",
+        "Refrain: 'To all the shook ones, your shook ones...'"
+      ],
+      "lyrics": { "real": ["To all the killers and a hundred dollar billers", "For real niggas who ain't got no feelings", "I got you stuck on the realness, we be the infamous, you heard of us"], "fake": "In the shadow of the night, we're looking for the light of your heart" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "yoYZf-lBF_U" }
+    },
+    {
+      "id": "hiphop-busta-woohah",
+      "title": "Woo Hah!! Got You All in Check",
+      "artist": "Busta Rhymes",
+      "year": 1996,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": ["Energy", "Crazy", "Fun"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Markierte den Durchbruch von Busta Rhymes als Solo-Künstler.",
+        "Bekannt für den extrem schnellen und energetischen Rap-Stil.",
+        "Das Video zeigt Busta in verschiedenen verrückten Outfits und mit Weitwinkel-Linsen.",
+        "Der 'Woo-Hah!'-Schrei ist das unverwechselbare Markenzeichen des Songs.",
+        "Refrain: 'Woo-hah!! Got you all in check!'"
+      ],
+      "lyrics": { "real": ["Woo-hah!! Got you all in check!", "Woo-hah!! Got you all in check!", "Yeah, yeah, yeah, check it out, I'm the one who's gonna make you scream"], "fake": "Moving to the left, moving to the right, in the neon light" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "z7hJ4VzA0_Q" }
+    },
+    {
+      "id": "hiphop-missy-freakon",
+      "title": "Get Ur Freak On",
+      "artist": "Missy Elliott",
+      "year": 2001,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": ["Energy", "Strange", "Dance"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Ein futuristischer Track mit indischen Bhangra-Einflüssen.",
+        "Produziert vom legendären Timbaland.",
+        "Missy Elliott gilt als eine der kreativsten und einflussreichsten Frauen im Hip Hop.",
+        "Bekannt für die markante Basslinie und die experimentellen Sounds.",
+        "Refrain: 'Get your freak on! Get your freak on!'"
+      ],
+      "lyrics": { "real": ["Me-he-he-he, me-he-he-he, get your freak on!", "Holla! Get your freak on!", "Copy that! I'm the one who's gonna make you dance"], "fake": "In the middle of the street, you can feel the heat of the beat" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "v9nN2F5hM6w" }
+    },
+    {
+      "id": "hiphop-tribe-ickit",
+      "title": "Can I Kick It?",
+      "artist": "A Tribe Called Quest",
+      "year": 1990,
+      "country": "US",
+      "genre": "Jazz Rap",
+      "difficulty": "easy",
+      "mood": ["Cool", "Groovy", "Intelligent"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Ein Klassiker des Jazz Rap mit entspannten Beats.",
+        "Basiert auf einem Sample von Lou Reeds 'Walk on the Wild Side'.",
+        "Der Text ist friedfertig und positiv ('Native Tongues' Bewegung).",
+        "Der Refrain ist ein Call-and-Response: 'Can I kick it? - Yes you can!'",
+        "Refrain: 'Can I kick it? (Yes you can!)'"
+      ],
+      "lyrics": { "real": ["Can I kick it? (Yes you can!)", "Can I kick it? (Yes you can!)", "Can I kick it? (Yes you can!)", "Well, then I'm gone!"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "O3pyCGnZzYA" }
+    },
+    {
+      "id": "hiphop-lauryn-doowop",
+      "title": "Doo Wop (That Thing)",
+      "artist": "Lauryn Hill",
+      "year": 1998,
+      "country": "US",
+      "genre": "Soul/Hip Hop",
+      "difficulty": "medium",
+      "mood": ["Soulful", "Serious", "Groovy"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Eine Warnung an junge Männer und Frauen vor Oberflächlichkeit und falschen Versprechungen.",
+        "Die Sängerin war zuvor Mitglied der Fugees.",
+        "Kombiniert 60er-Jahre Soul-Einflüsse mit modernem Hip Hop.",
+        "Gewann zwei Grammys, darunter Best Female R&B Vocal Performance.",
+        "Refrain: 'Guys you know you better watch out, some girls, some girls are only about that thing!'"
+      ],
+      "lyrics": { "real": ["It's been three weeks since you were looking for your friend", "But you're really not looking for no friend", "Guys you know you better watch out, some girls, some girls are only about that thing"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "T6QKqFPRZSA" }
+    },
+    {
+      "id": "hiphop-cypress-insane",
+      "title": "Insane in the Brain",
+      "artist": "Cypress Hill",
+      "year": 1993,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": ["Fun", "Fast", "Crazy"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Bekannt für die nasale Stimme von B-Real und die markanten Samples.",
+        "Der Song wurde oft als Hymne für den Cannabiskonsum interpretiert, handelt aber eigentlich von Respekt in der Gangsta-Szene.",
+        "Das charakteristische 'Wiehern' am Anfang ist weltbekannt.",
+        "Ein Klassiker der Latino-Hip-Hop-Szene aus LA.",
+        "Refrain: 'Insane in the brain! Insane in the membrane!'"
+      ],
+      "lyrics": { "real": ["Who you tryin' to get crazy with, ése? Don't you know I'm loco?", "Insane in the brain! Insane in the membrane!", "Think I'm going crazy? No, I'm just getting started"], "fake": "In the middle of the night, we're looking for the light of the broken soul" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "RijB8wnJCN0" }
+    },
+    {
+      "id": "hiphop-houseofpain-jump",
+      "title": "Jump Around",
+      "artist": "House of Pain",
+      "year": 1992,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": ["Energy", "Fun", "Classic"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Der ultimative Song, um jede Party in Bewegung zu versetzen.",
+        "Wurde vom Dr. Dre Produzenten DJ Muggs produziert.",
+        "Der markante hohe Ton ('Squeak') am Anfang des Beats ist legendär.",
+        "Wird oft in Stadien und bei Sportveranstaltungen gespielt.",
+        "Refrain: 'Jump around! Jump around! Jump up, jump up and get down!'"
+      ],
+      "lyrics": { "real": ["Pack it up, pack it in, let me begin, I came to win, battle me that's a sin", "I won't ever slack up, punk you better back up", "Jump around! Jump around! Jump up, jump up and get down!"], "fake": "Moving to the left, moving to the right, in the blue light" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "XhzpxjuwZy0" }
+    },
+    {
+      "id": "hiphop-saltnpepa-pushit",
+      "title": "Push It",
+      "artist": "Salt-N-Pepa",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": ["Fun", "Sexy", "Classic"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Einer der ersten Hip-Hop-Songs einer weiblichen Gruppe, der ein Riesen-Hit wurde.",
+        "Bekannt für den markanten 'Ah, push it' Flüster-Vocal.",
+        "Thematisiert (auf spielerische Weise) sexuelle Anspielungen auf der Tanzfläche.",
+        "Wurde durch ein ikonisches Musikvideo mit Lederjacken unterstützt.",
+        "Refrain: 'Ah, push it! Push it real good!'"
+      ],
+      "lyrics": { "real": ["Ah, push it! Push it real good!", "Ah, push it! Push it real good!", "Get up on this! One more time! Push it!"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "vRev_f6K4Hk" }
+    },
+    {
+      "id": "hiphop-mchammer-touchthis",
+      "title": "U Can't Touch This",
+      "artist": "MC Hammer",
+      "year": 1990,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": ["Fun", "Classic", "Dance"],
+      "pack": "Hip Hop Essentials",
+      "hints": [
+        "Bekannt durch die weiten Pluderhosen ('Hammer Pants') und die markanten Tanzschritte.",
+        "Basiert auf einem prominenten Sample von Rick James' 'Super Freak'.",
+        "Wurde zu einem der bekanntesten Lieder der Popkultur.",
+        "Gewann zwei Grammys, darunter Best R&B Song.",
+        "Refrain: 'Stop! Hammer Time!'"
+      ],
+      "lyrics": { "real": ["U can't touch this, u can't touch this", "My-my-my-my music hits me so hard makes me say oh my Lord", "Stop! Hammer time!"], "fake": "In the middle of the night, we're looking for the light of the broken soul" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "otCpCn0l4Wo" }
+    }
+  ]
+}

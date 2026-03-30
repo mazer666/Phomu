@@ -216,6 +216,174 @@
       "links": { "youtube": "wK-8TkvzXgc" }
     },
     {
+      "id": "movie-whitney-houston-i-will-always-love-you",
+      "title": "I Will Always Love You",
+      "artist": "Whitney Houston",
+      "year": 1992,
+      "country": "US",
+      "genre": "Soul-pop",
+      "difficulty": "easy",
+      "mood": ["Romantic", "Epic", "Power Ballad"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Das Hauptthema aus dem Film 'Bodyguard'.",
+        "Wurde ursprünglich von Dolly Parton geschrieben und gesungen.",
+        "Der A-cappella-Beginn des Songs war eine Idee von Kevin Costner.",
+        "Eine der meistverkauften Singles aller Zeiten.",
+        "Bekannt für den gewaltigen Tonartwechsel vor dem letzten Refrain."
+      ],
+      "lyrics": { "real": ["If I should stay, I would only be in your way", "So I'll go, but I know I'll think of you every step of the way", "And I will always love you, I will always love you"], "fake": "Walking through the silver moonlight, looking for the light of day" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "3JWTaaS7LdU" }
+    },
+    {
+      "id": "movie-harold-faltermeyer-axel-f",
+      "title": "Axel F",
+      "artist": "Harold Faltermeyer",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Synth-pop",
+      "difficulty": "easy",
+      "mood": ["Cool", "Electronic", "Classic"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Das instrumentale Hauptthema aus 'Beverly Hills Cop'.",
+        "Benannt nach der Hauptfigur des Films, Axel Foley (gespielt von Eddie Murphy).",
+        "Der deutsche Komponist Harold Faltermeyer schuf diesen Pionier-Song des Synthesizer-Pop.",
+        "Wurde Jahre später durch ein nerviges animiertes Maskottchen (Crazy Frog) erneut zum Hit.",
+        "Ein absolutes Muss-Riff für jeden Keyboarder der 80er."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": { "youtube": "V4kWpi2HnPU" }
+    },
+    {
+      "id": "movie-coolio-gangstas-paradise",
+      "title": "Gangsta's Paradise",
+      "artist": "Coolio",
+      "year": 1995,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": ["Moody", "Serious", "Classic"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Aus dem Film 'Dangerous Minds' mit Michelle Pfeiffer.",
+        "Basiert auf einem Sample von Stevie Wonders 'Pastime Paradise'.",
+        "Thematisiert das harte Leben in den Ghettos und die Hoffnungslosigkeit.",
+        "Das Video zeigt Coolio im Dialog mit Michelle Pfeiffer.",
+        "Refrain: 'As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left.'"
+      ],
+      "lyrics": { "real": ["As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left", "Cause I've been blasting and laughing so long that even my mama thinks that my mind is gone", "Tell me why are we so blind to see that the ones we hurt are you and me?"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "fPO76Jdqk6M" }
+    },
+    {
+      "id": "movie-elton-john-circle-of-life",
+      "title": "Circle of Life",
+      "artist": "Elton John",
+      "year": 1994,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Epic", "Disney", "Inspiring"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Eröffnungssong des Disney-Erfolgs 'Der König der Löwen'.",
+        "Der berühmte Zulu-Gesang am Anfang stammt von Lebo M.",
+        "Thematisiert den ewigen Kreislauf des Lebens und der Natur.",
+        "Die ikonische Szene zeigt Simba, der dem Tierreich präsentiert wird.",
+        "Nants ingonyama bagithi Baba!"
+      ],
+      "lyrics": { "real": ["From the day we arrive on the planet and blinking, step into the sun", "There's more to see than can ever be seen, more to do than can ever be done", "It's the circle of life, and it moves us all"], "fake": "Walking through the savannah, looking for the banner of light" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "GibiNy4d4gc" }
+    },
+    {
+      "id": "movie-lady-gaga-shallow",
+      "title": "Shallow",
+      "artist": "Lady Gaga & Bradley Cooper",
+      "year": 2018,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "medium",
+      "mood": ["Romantic", "Epic", "Soulful"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Das Herzstück des Films 'A Star Is Born'.",
+        "Gewann den Oscar für den Besten Originalsong 2019.",
+        "Ein kraftvolles Duett zwischen einer Popsängerin und einem Schauspieler.",
+        "Bekannt für den intensiven Gesang am Ende des Liedes.",
+        "Refrain: 'I'm off the deep end, watch as I dive in, I'll never meet the ground.'"
+      ],
+      "lyrics": { "real": ["Tell me something, girl, are you happy in this modern world?", "Or do you need more? Is there something else you're searching for?", "I'm falling, in all the good times I find myself longing for change"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "bo_efYhYU2A" }
+    },
+    {
+      "id": "movie-bruce-springsteen-streets-of-philly",
+      "title": "Streets of Philadelphia",
+      "artist": "Bruce Springsteen",
+      "year": 1994,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Sad", "Serious", "Moody"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Titelsong des Films 'Philadelphia' (einer der ersten Hollywood-Filme über AIDS).",
+        "Der 'Boss' schrieb den Song auf Wunsch des Regisseurs Jonathan Demme.",
+        "Gewann den Oscar für den Besten Originalsong und vier Grammys.",
+        "Bekannt für den minimalistischen Drumbeat und die gehauchte Stimme.",
+        "Refrain: 'I walked the avenue till my legs felt like stone, I'm wasting away on the streets of Philadelphia.'"
+      ],
+      "lyrics": { "real": ["I was bruised and battered, I couldn't tell what I felt, I was unrecognizable to myself", "I saw my reflection in a window, I didn't know my own face", "Oh brother, are you gonna leave me wasting away on the streets of Philadelphia?"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "4z2DtNW79sQ" }
+    },
+    {
+      "id": "movie-hugh-jackman-greatest-show",
+      "title": "The Greatest Show",
+      "artist": "Hugh Jackman",
+      "year": 2017,
+      "country": "US",
+      "genre": "Soundtrack",
+      "difficulty": "medium",
+      "mood": ["Energy", "Epic", "Happy"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Der Eröffnungssong des Filmmusicals 'The Greatest Showman'.",
+        "Wurde von den 'La La Land'-Komponisten Pasek & Paul geschrieben.",
+        "Ein kraftvoller Mix aus modernem Pop und klassischer Musical-Struktur.",
+        "Hugh Jackman singt hier die Rolle des P.T. Barnum.",
+        "Refrain: 'Whoa, this is the greatest show!'"
+      ],
+      "lyrics": { "real": ["Whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa", "Ladies and gents, this is the moment you've waited for", "Searching in the dark, your curtains down and empty sheets"], "fake": "In the middle of the street, you can feel the heat of the broken beat" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "NyVYGBCnZok" }
+    },
+    {
+      "id": "movie-justin-timberlake-cant-stop-the-feeling",
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "year": 2016,
+      "country": "US",
+      "genre": "Dance-pop",
+      "difficulty": "easy",
+      "mood": ["Happy", "Dance", "Summer"],
+      "pack": "Movie Hits",
+      "hints": [
+        "Wurde für den Soundtrack des DreamWorks-Films 'Trolls' geschrieben.",
+        "War 2016 der meistverkaufte Song des Jahres in den USA.",
+        "Ein extrem gut gelaunter Funk-Pop-Song, der zum Tanzen auffordert.",
+        "Gewann einen Grammy und war für einen Oscar nominiert.",
+        "Refrain: 'I got this feeling inside my bones, it goes electric, wavy when I turn it on.'"
+      ],
+      "lyrics": { "real": ["I got this feeling inside my bones, it goes electric, wavy when I turn it on", "All through my city, all through my home, we're flying up, no ceiling, when we're in our zone", "I got that sunshine in my pocket, got that good soul in my feet"], "fake": "Dancing all alone, far away from home, in the neon zone" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "ru0K8uYEZWw" }
+    },
+    {
       "id": "movie-survivor-burning-heart",
       "title": "Burning Heart",
       "artist": "Survivor",

@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "pack": "Electronic & Techno",
+    "version": "1.0.0",
+    "updatedAt": "2026-03-30T16:22:30Z"
+  },
+  "songs": [
+    {
+      "id": "electro-kraftwerk-das-model",
+      "title": "Das Model",
+      "artist": "Kraftwerk",
+      "year": 1978,
+      "country": "DE",
+      "genre": "Synth-pop",
+      "difficulty": "easy",
+      "mood": ["Cool", "Electronic", "Classic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Pioniere der elektronischen Musik aus Düsseldorf.",
+        "Der Song beschreibt die kühle Faszination einer Modeikone.",
+        "Erreichte Jahre nach Veröffentlichung Platz 1 der britischen Charts.",
+        "Bekannt für die minimalistischen Melodien und den fast roboterhaften Gesang.",
+        "Refrain: 'Sie ist ein Model und sie sieht gut aus!'"
+      ],
+      "lyrics": { "real": ["Sie ist ein Model und sie sieht gut aus", "Ich nehm' sie heut' gerne mit zu mir nach Haus", "Sie wirkt so kühl, an sie kommt niemand ran"], "fake": "Wir tanzen im Licht, bis der Morgen anbricht" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "XFkzRNyygfk" }
+    },
+    {
+      "id": "electro-underworld-born-slippy",
+      "title": "Born Slippy (Nuxx)",
+      "artist": "Underworld",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Techno",
+      "difficulty": "medium",
+      "mood": ["Energy", "Night", "Classic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Wurde durch den Kultfilm 'Trainspotting' weltberühmt.",
+        "Die repetitive 'Shouting'-Vocal-Line 'Lager, lager, lager' ist das Markenzeichen.",
+        "Ein Meilenstein des 90er-Techno, der die Brücke zum Mainstream schlug.",
+        "Die düstere Grundstimmung wird durch treibende Beats kontrastiert.",
+        "Einer der wichtigsten elektronischen Tracks des Jahrzehnts."
+      ],
+      "lyrics": { "real": ["Drive boy, dog boy, dirty numb angel boy", "In the sparkle in the rain, in the sparkle in the rain", "Lager, lager, lager, lager, shouting, shouting, shouting"], "fake": "In the middle of the night, we're looking for the light of the broken soul" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "1K_V99-hW5U" }
+    },
+    {
+      "id": "electro-daft-punk-around-the-world",
+      "title": "Around the World",
+      "artist": "Daft Punk",
+      "year": 1997,
+      "country": "FR",
+      "genre": "French House",
+      "difficulty": "easy",
+      "mood": ["Dance", "Groovy", "Minimalist"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Der Text besteht ausschließlich aus dem titelgebenden Satz (144 Mal!).",
+        "Das Musikvideo von Michel Gondry zeigt verschiedene Tanzgruppen, die jeweils ein Instrument repräsentieren.",
+        "Ein Paradebeispiel für den hypnotischen House-Sound der 90er.",
+        "Daft Punk begründeten damit ihren Status als Ikonen der elektronischen Musik.",
+        "Refrain: 'Around the world, around the world...'"
+      ],
+      "lyrics": { "real": ["Around the world, around the world", "Around the world, around the world", "Around the world, around the world"], "fake": "Nothing's gonna stop me now, I'm the king of the night somehow" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "LKYPYj2XX80" }
+    },
+    {
+      "id": "electro-chem-bros-galvanize",
+      "title": "Galvanize",
+      "artist": "The Chemical Brothers",
+      "year": 2005,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "medium",
+      "mood": ["Powerful", "Energy", "Cool"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Mischt elektronische Beats mit arabischen Saiteninstrumenten (Qanun).",
+        "Der Rap-Gesang stammt von Q-Tip (A Tribe Called Quest).",
+        "Gewann den Grammy für die beste Dance-Aufnahme 2006.",
+        "Ein extrem kraftvoller Song, der oft in der Werbung und bei Sportevents genutzt wird.",
+        "Refrain: 'World, the time has come to... galvanize!'"
+      ],
+      "lyrics": { "real": ["World, the time has come to push the button", "Don't hold back, galvanize!", "I'm the one who's gonna make you scream"], "fake": "In the shadow of the night, I'm looking for the light of your broken heart" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "Xu3FTEmN-eg" }
+    },
+    {
+      "id": "electro-fatboy-slim-praise-you",
+      "title": "Praise You",
+      "artist": "Fatboy Slim",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "easy",
+      "mood": ["Happy", "Classic", "Groovy"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Das Video zeigt eine (scheinbar) dilettantische Tanzgruppe vor einem Kino in LA.",
+        "Basiert auf einem Sample von Camille Yarbrough.",
+        "Thematisiert Dankbarkeit und Wertschätzung gegenüber einem geliebten Menschen.",
+        "Einer der entspanntesten und gleichzeitig tanzbarsten Hits von Fatboy Slim.",
+        "Refrain: 'I have to praise you like I should!'"
+      ],
+      "lyrics": { "real": ["We've come a long, long way together, through the hard times and the good", "I have to celebrate you baby, I have to praise you like I should", "I have to praise you, I have to praise you"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "ruAi4VBoBSM" }
+    },
+    {
+      "id": "electro-paul-kalkbrenner-sky-and-sand",
+      "title": "Sky and Sand",
+      "artist": "Paul Kalkbrenner",
+      "year": 2008,
+      "country": "DE",
+      "genre": "Techno / Deep House",
+      "difficulty": "easy",
+      "mood": ["Chill", "Melancholic", "Epic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Titelsong des Films 'Berlin Calling', in dem Paul Kalkbrenner auch die Hauptrolle spielt.",
+        "Hielt sich über 100 Wochen in den deutschen Single-Charts.",
+        "Den Gesang lieferte Pauls Bruder Fritz Kalkbrenner.",
+        "Wurde zur Hymne des modernen Berliner Nachtlebens.",
+        "Refrain: 'And we build a castle in the sky and in the sand...'"
+      ],
+      "lyrics": { "real": ["A cold wind's blowing and we build a castle in the sky and in the sand", "Design our own world, ain't nobody in the way", "You and me, let's fly away!"], "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "1K_V99-hW5U" }
+    },
+    {
+      "id": "electro-avicii-wake-me-up",
+      "title": "Wake Me Up",
+      "artist": "Avicii",
+      "year": 2013,
+      "country": "SE",
+      "genre": "EDM / Folk Pop",
+      "difficulty": "easy",
+      "mood": ["Happy", "Energy", "Summer"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Mischte als einer der ersten Songs EDM-Beats mit Country- und Folk-Elementen.",
+        "Der Soulig-Gesang stammt von Aloe Blacc.",
+        "Wurde nach der Premiere beim Ultra Music Festival 2013 zunächst skeptisch aufgenommen, bevor er zum Welthit wurde.",
+        "Thematisiert das Erwachsenwerden und die Sinnsuche.",
+        "Refrain: 'So wake me up when it's all over, when I'm wiser and I'm older!'"
+      ],
+      "lyrics": { "real": ["Feeling my way through the darkness, guided by a beating heart", "I can't tell where the journey will end, but I know where to start", "So wake me up when it's all over, when I'm wiser and I'm older"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "IcrbM1l_BoI" }
+    },
+    {
+      "id": "electro-shm-dont-you-worry",
+      "title": "Don't You Worry Child",
+      "artist": "Swedish House Mafia",
+      "year": 2012,
+      "country": "SE",
+      "genre": "Progressive House",
+      "difficulty": "medium",
+      "mood": ["Epic", "Energy", "Happy"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "War die Abschiedssingle der Gruppe vor ihrer vorübergehenden Auflösung.",
+        "Besticht durch den euphorischen Refrain und die kraftvolle Stimme von John Martin.",
+        "Thematisiert Ratschläge des Vaters an seinen Sohn in schwierigen Zeiten.",
+        "Ein Paradebeispiel für den Stadion-EDM-Sound der frühen 2010er.",
+        "Refrain: 'Don't you worry, don't you worry, child! See, heaven's got a plan for you!'"
+      ],
+      "lyrics": { "real": ["There was a time, I used to look into my father's eyes", "In a happy home, I was a king, I had a golden throne", "Don't you worry, don't you worry, child, see, heaven's got a plan for you"], "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "1y6smkh6csw" }
+    },
+    {
+      "id": "electro-calvin-harris-summer",
+      "title": "Summer",
+      "artist": "Calvin Harris",
+      "year": 2014,
+      "country": "GB",
+      "genre": "EDM",
+      "difficulty": "easy",
+      "mood": ["Happy", "Summer", "Dance"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Calvin Harris übernahm hier ausnahmsweise selbst den Gesang.",
+        "Wurde zum meistgestreamten Song des Sommers 2014 weltweit.",
+        "Bekannt für den extrem eingängigen Synthesizer-Drop.",
+        "Handelt von einer flüchtigen Sommerliebe.",
+        "Der perfekte Soundtrack für Pool-Partys und Strandclubs."
+      ],
+      "lyrics": { "real": ["When I met you in the summer, to my heartbeat's sound", "We fell in love, as the leaves turned brown", "And we could be together baby, as long as skies are blue"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "ebXbLfLACGM" }
+    },
+    {
+      "id": "electro-guetta-titanium",
+      "title": "Titanium",
+      "artist": "David Guetta ft. Sia",
+      "year": 2011,
+      "country": "FR",
+      "genre": "EDM / Pop",
+      "difficulty": "medium",
+      "mood": ["Powerful", "Epic", "Inspiring"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Sollte ursprünglich von Katy Perry oder Mary J. Blige gesungen werden.",
+        "Machte Sia als Sängerin im EDM-Bereich weltberühmt.",
+        "Thematisiert innere Stärke und Unverwundbarkeit gegenüber Angriffen.",
+        "Besitzt eine der kraftvollsten Refrain-Explosionen der Ära.",
+        "Refrain: 'I'm bulletproof, nothing to lose, fire away, fire away!'"
+      ],
+      "lyrics": { "real": ["You shout it out, but I can't hear a word you say, I'm talking loud, not saying much", "I'm bulletproof, nothing to lose, fire away, fire away", "You shoot me down, but I won't fall, I am titanium"], "fake": "Staring at the sun, we're on the run, until the battle's won" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "JRfuAukYTKg" }
+    },
+    {
+      "id": "electro-faithless-insomnia",
+      "title": "Insomnia",
+      "artist": "Faithless",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Trance / Dance",
+      "difficulty": "medium",
+      "mood": ["Energy", "Night", "Classic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Bekannt für den legendären Pizzicato-Synthesizer-Hook.",
+        "Sänger Maxi Jazz liefert einen ikonischen, gesprochenen Text über Schlaflosigkeit.",
+        "Einer der größten Dance-Hymnen der 90er Jahre.",
+        "Der Track baut sich langsam auf und explodiert in einem treibenden Refrain.",
+        "Refrain: 'I can't get no sleep!'"
+      ],
+      "lyrics": { "real": ["Deep in the bosom of the gentle night, is when I search for the light", "I can't get no sleep!", "I need to sleep, I can't get no sleep!"], "fake": "In the middle of the rain, I'm calling out your name in vain" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "1K_V99-hW5U" }
+    },
+    {
+      "id": "electro-robert-miles-children",
+      "title": "Children",
+      "artist": "Robert Miles",
+      "year": 1995,
+      "country": "IT",
+      "genre": "Dream Trance",
+      "difficulty": "easy",
+      "mood": ["Chill", "Classic", "Melancholic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Begründete das Genre des 'Dream Trance'.",
+        "Wurde als Reaktion auf tragische Verkehrsunfälle nach Clubbesuchen geschrieben (als Song zum Runterkommen).",
+        "Die einfache, traurige Klavier-Melodie ist das Markenzeichen des Songs.",
+        "Ein Welthit, der in vielen Ländern Platz 1 erreichte.",
+        "Besitzt fast keinen Text, lebt aber von der Atmosphäre."
+      ],
+      "lyrics": { "real": ["(Instrumental piece with iconic piano melody)"], "fake": "Dancing in the dreams of a broken child" },
+      "isOneHitWonder": true,
+      "links": { "youtube": "1K_V99-hW5U" }
+    },
+    {
+      "id": "electro-darude-sandstorm",
+      "title": "Sandstorm",
+      "artist": "Darude",
+      "year": 1999,
+      "country": "FI",
+      "genre": "Trance",
+      "difficulty": "easy",
+      "mood": ["Energy", "Speed", "Classic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Ein instrumental-Track, der durch Internet-Memes (Twitch) Kultstatus erreichte.",
+        "Der rasante, verzerrte Synthesizer-Hook ist unverwechselbar.",
+        "Wurde oft bei Sportveranstaltungen als Einlaufmusik genutzt.",
+        "Einer der erfolgreichsten finnischen Musik-Exporte.",
+        "Hat fast 20 Jahre nach Release ein Riesen-Comeback gefeiert."
+      ],
+      "lyrics": { "real": ["(Fast-paced electronic instrumental with distorted synth lead)"], "fake": "Running through the sand under the desert moon" },
+      "isOneHitWonder": true,
+      "links": { "youtube": "y6120QOlsfU" }
+    },
+    {
+      "id": "electro-tiesto-adagio",
+      "title": "Adagio for Strings",
+      "artist": "Tiësto",
+      "year": 2005,
+      "country": "NL",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": ["Epic", "Dramatic", "Energy"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Eine moderne Trance-Interpretation des klassischen Werks von Samuel Barber.",
+        "Tiësto gilt als einer der Wegbereiter des modernen EDM-Superstar-Daseins.",
+        "Der Track beginnt ruhig und steigert sich in einen gewaltigen Synthesizer-Orkan.",
+        "Wurde oft als beste Trance-Aufnahme aller Zeiten bezeichnet.",
+        "Völlig ohne Text, nur reine emotionale Energie."
+      ],
+      "lyrics": { "real": ["(Epic orchestral trance build-up with driving synth leads)"], "fake": "Waiting for the sun to rise above the mountain top" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "2EaE0_gQLw0" }
+    },
+    {
+      "id": "electro-deadmau5-strobe",
+      "title": "Strobe",
+      "artist": "Deadmau5",
+      "year": 2009,
+      "country": "CA",
+      "genre": "Progressive House",
+      "difficulty": "hard",
+      "mood": ["Atmospheric", "Deep", "Epic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Einer der am meisten geschätzten Tracks im Progressive House.",
+        "Dauert in der Album-Version über 10 Minuten und baut sich extrem langsam auf.",
+        "Der Künstler Deadmau5 ist bekannt für seinen riesigen Mäusekopf-Helm.",
+        "Thematisiert (instrumental) die hypnotische Kraft von Club-Beleuchtung.",
+        "Gilt unter Fans als sein Meisterwerk."
+      ],
+      "lyrics": { "real": ["(Atmospheric progressive house builds over 10 minutes)"], "fake": "Walking in the stars with a rhythm in my heart" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "tKi9HiYps" }
+    },
+    {
+      "id": "electro-disclosure-latch",
+      "title": "Latch",
+      "artist": "Disclosure ft. Sam Smith",
+      "year": 2012,
+      "country": "GB",
+      "genre": "UK Garage / Deep House",
+      "difficulty": "medium",
+      "mood": ["Sexy", "Groovy", "Soulful"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Markierte den Durchbruch sowohl für Disclosure als auch für Sam Smith.",
+        "Mischt moderne House-Beats mit klassischem Soul-Gesang im Falsett.",
+        "Der ungewöhnliche 6/8-Takt verleiht dem Song ein besonderes Swing-Gefühl.",
+        "Wurde zu einem der einflussreichsten UK-House-Tracks der 2010er.",
+        "Refrain: 'Now I've got you in my space, I won't let go of you!'"
+      ],
+      "lyrics": { "real": ["You lift my heart up when the rest of me is down", "You, you enchant me even when you're not around", "Now I've got you in my space, I won't let go of you"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "93ASUImTedo" }
+    },
+    {
+      "id": "electro-zedd-clarity",
+      "title": "Clarity",
+      "artist": "Zedd ft. Foxes",
+      "year": 2012,
+      "country": "DE/RU",
+      "genre": "EDM",
+      "difficulty": "medium",
+      "mood": ["Powerful", "Epic", "Serious"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Der in Deutschland aufgewachsene Zedd gewann hiermit einen Grammy.",
+        "Thematisiert eine komplizierte, fast toxische Beziehung ('If our love is tragedy, why are you my remedy?').",
+        "Bekannt für den glasklaren Sound und die kraftvolle Stimme von Foxes.",
+        "Ein Meilenstein des emotionalen EDM-Pop.",
+        "Refrain: 'Cause you are the piece of me I wish I didn't need!'"
+      ],
+      "lyrics": { "real": ["High dive into frozen waves where the past comes back to life", "Fight fear for the selfish pain, it was worth it every time", "If our love is tragedy, why are you my remedy?"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "IXXxciRUMzE" }
+    },
+    {
+      "id": "electro-martin-garrix-animals",
+      "title": "Animals",
+      "artist": "Martin Garrix",
+      "year": 2013,
+      "country": "NL",
+      "genre": "Big Room House",
+      "difficulty": "easy",
+      "mood": ["Energy", "Wild", "Club"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Machte den damals erst 17-jährigen Garrix zum Weltstar.",
+        "Der 'Plonk'-Drop ist eines der bekanntesten Geräusche der EDM-Geschichte.",
+        "Thematisiert den animalischen Trieb auf der Tanzfläche.",
+        "Wurde zur Hymne der 'Big Room House'-Ära.",
+        "Völlig instrumental im Hauptteil, unterbricht nur durch ein kurzes Sprach-Sample."
+      ],
+      "lyrics": { "real": ["We're the motherfuckin' animals!", "(Epic wooden percussion drop follows)"], "fake": "In the middle of the night, we're looking for the light" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "gCYcHz2k5x0" }
+    },
+    {
+      "id": "electro-marshmello-happier",
+      "title": "Happier",
+      "artist": "Marshmello ft. Bastille",
+      "year": 2018,
+      "country": "US",
+      "genre": "Future Bass / Pop",
+      "difficulty": "easy",
+      "mood": ["Sad", "Happy", "Positive"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Marshmello tritt immer mit einer weißen, marshmallow-förmigen Maske auf.",
+        "Das Musikvideo über ein Mädchen und ihren Hund rührte Millionen zu Tränen.",
+        "Thematisiert den schmerzhaften Entschluss, jemanden gehen zu lassen, damit er glücklicher wird.",
+        "Kombiniert Bastilles Indie-Pop-Sound mit modernem EDM.",
+        "Refrain: 'Then only for a minute, I want to change my mind...'"
+      ],
+      "lyrics": { "real": ["When the morning comes, when we see what we've become", "In the cold light of day, we're a flame in the wind", "I want you to be happier, I want you to be happier"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "m7Bc3pLyij0" }
+    },
+    {
+      "id": "electro-kygo-firestone",
+      "title": "Firestone",
+      "artist": "Kygo ft. Conrad Sewell",
+      "year": 2014,
+      "country": "NO",
+      "genre": "Tropical House",
+      "difficulty": "easy",
+      "mood": ["Summer", "Chill", "Melodic"],
+      "pack": "Electronic & Techno",
+      "hints": [
+        "Kygo gilt als der Pionier des 'Tropical House' Genres.",
+        "Der charakteristische, flötenartige Synthesizer-Sound ist weltbekannt.",
+        "Handelt von einem inneren Feuer und einer tiefen Verbindung.",
+        "Der Song verbreitet direkt Urlaubsstimmung.",
+        "Einer der meistgestreamten norwegischen Songs aller Zeiten."
+      ],
+      "lyrics": { "real": ["I'm a heart of stone, and you're a firestone", "We light up the world, we light up the world", "Our hearts are like firestones, our hearts are like firestones"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOneHitWonder": false,
+      "links": { "youtube": "9Sc-irO3pYk" }
+    }
+  ]
+}

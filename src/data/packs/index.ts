@@ -8,6 +8,13 @@
 import globalHits from './global-hits.json';
 import eightyFlashback from './80s-flashback.json';
 import movieHits from './movie-hits.json';
+import rockAnthems from './rock-anthems.json';
+import ninetyUnplugged from './90s-unplugged.json';
+import danceFloorFillers from './dance-floor-fillers.json';
+import germanClassics from './german-classics.json';
+import hipHopEssentials from './hip-hop-essentials.json';
+import indieAlternative from './indie-alternative.json';
+import electronicTechno from './electronic-techno.json';
 
 import type { PhomuSong } from '@/types/song';
 
@@ -16,6 +23,13 @@ export const ALL_SONGS: PhomuSong[] = [
   ...(globalHits.songs as any),
   ...(eightyFlashback.songs as any),
   ...(movieHits.songs as any),
+  ...(rockAnthems.songs as any),
+  ...(ninetyUnplugged.songs as any),
+  ...(danceFloorFillers.songs as any),
+  ...(germanClassics.songs as any),
+  ...(hipHopEssentials.songs as any),
+  ...(indieAlternative.songs as any),
+  ...(electronicTechno.songs as any),
 ];
 
 /** All available pack names extracted from data */

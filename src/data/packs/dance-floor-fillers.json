@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "pack": "Dance Floor Fillers",
+    "version": "1.0.0",
+    "updatedAt": "2026-03-30T16:17:00Z"
+  },
+  "songs": [
+    {
+      "id": "dance-snap-rhythm-is-a-dancer",
+      "title": "Rhythm Is a Dancer",
+      "artist": "Snap!",
+      "year": 1992,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Dance", "Energy", "Classic"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Einer der erfolgreichsten Eurodance-Songs der 90er Jahre, produziert in Deutschland.",
+        "Der Rap-Teil enthält die (berühmt-berüchtigte) Zeile: 'I'm serious as cancer when I say rhythm is a dancer'.",
+        "Der Song basiert auf einem Sample von 'Automan' von Newcleus.",
+        "Das Video spielt in einem futuristischen Space-Setting mit viel Nebel.",
+        "Refrain: 'Rhythm is a dancer, it's a soul's companion...'"
+      ],
+      "lyrics": { "real": ["Rhythm is a dancer, it's a soul's companion, you can feel it everywhere", "Lift your hands and voices, free your mind and join us, you can feel it in the air", "Oh, it's a passion, oh, you can feel it in your soul"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "KlyXNRrsk4A" }
+    },
+    {
+      "id": "dance-dr-alban-its-my-life",
+      "title": "It's My Life",
+      "artist": "Dr. Alban",
+      "year": 1992,
+      "country": "SE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Happy", "Energy", "Dance"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Gesungen von einem gelernten Zahnarzt aus Schweden (mit nigerianischen Wurzeln).",
+        "Der Song ruft dazu auf, sein eigenes Leben zu leben und sich nicht reinreden zu lassen.",
+        "Markanter Refrain mit der Zeile 'It's my life, take it or leave it'.",
+        "Wurde in einer berühmten Tampon-Werbung in Deutschland verwendet.",
+        "Refrain: 'Stop bugging me, stop bothering me, stop bugging me, stop forcing me!'"
+      ],
+      "lyrics": { "real": ["It's my life, take it or leave it, set me free, what's that you say?", "It's my life, my problems, it's my life, my worries", "It's my life, take it or leave it, it's my life, my way"], "fake": "In the middle of the street, you can feel the heat of the beat" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "4zHm_6LIVGE" }
+    },
+    {
+      "id": "dance-haddaway-what-is-love",
+      "title": "What Is Love",
+      "artist": "Haddaway",
+      "year": 1993,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Dance", "Classic", "Fun"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Unsterblich geworden durch den 'Night at the Roxbury'-Sketch bei SNL (mit dem seitlichen Kopf-Nicken).",
+        "Der Sänger stammt aus Trinidad und Tobago, startete seine Karriere aber in Köln.",
+        "Der Song war ein Nummer-1-Hit in fast ganz Europa.",
+        "Refrain: 'What is love? Baby don't hurt me, don't hurt me, no more.'",
+        "Wurde Jahre später durch Internet-Memes erneut zum Kult."
+      ],
+      "lyrics": { "real": ["What is love? Baby don't hurt me, don't hurt me, no more", "I don't know why you're not there, I give you my love but you don't care", "What is right and what is wrong? Give me a sign"], "fake": "Looking for a heart, falling apart, right from the start" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "HEXWRTEbj1I" }
+    },
+    {
+      "id": "dance-culture-beat-mr-vain",
+      "title": "Mr. Vain",
+      "artist": "Culture Beat",
+      "year": 1993,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Fast", "Energy", "Dance"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Produziert vom Frankfurter DJ Torsten Fenslau.",
+        "Thematisiert Eitelkeit und Selbstverliebtheit auf der Tanzfläche.",
+        "Der Song hat ein sehr schnelles Tempo und einen treibenden Bass.",
+        "War 1993 die erfolgreichste Single in Europa.",
+        "Refrain: 'Call him Mr. Vain, call him Mr. Wrong, call him Mr. Insane!'"
+      ],
+      "lyrics": { "real": ["Call him Mr. Vain, call him Mr. Wrong, call him Mr. Insane", "I know what I want and I want it now, I want you cause I'm Mr. Vain", "He'd say: I know what I want and I want it now!"], "fake": "Nothing's gonna stop me now, I'm the king of the night somehow" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "mfWb_60lhw0" }
+    },
+    {
+      "id": "dance-corona-rhythm-of-the-night",
+      "title": "The Rhythm of the Night",
+      "artist": "Corona",
+      "year": 1993,
+      "country": "IT",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Happy", "Dance", "Classic"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Ein Klassiker des italienischen Eurodance-Booms.",
+        "Die Sängerin im Video (Olga de Souza) lieh nur ihr Gesicht, die Stimme stammte von Jenny B.",
+        "Wurde oft missverstanden als 'This is the Reebok or the Nike'.",
+        "Refrain: 'This is the rhythm of the night, the night, oh yeah.'",
+        "Erreichte Jahre später durch den Film 'The Last Workshop' und Memes erneut Popularität."
+      ],
+      "lyrics": { "real": ["This is the rhythm of the night, the night, oh yeah", "The rhythm of the night, this is the rhythm of my life", "My life, oh yeah, the rhythm of the night"], "fake": "Dancing to the beat, moving my feet, in the summer heat" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "u3ltZmI5LQw" }
+    },
+    {
+      "id": "dance-la-bouche-be-my-lover",
+      "title": "Be My Lover",
+      "artist": "La Bouche",
+      "year": 1995,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Happy", "Dance", "Energy"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Entdeckt und produziert vom legendären Frank Farian (Boney M., Milli Vanilli).",
+        "Die Sängerin Melanie Thornton hatte eine der stärksten Stimmen des Genres.",
+        "Ikonischer Beginn mit 'La da da dee da da da da...'.",
+        "War ein riesiger Charterfolg in den USA und Europa.",
+        "Refrain: 'Be my lover, wanna be my lover, go and be my lover!'"
+      ],
+      "lyrics": { "real": ["La da da dee da da da da, be my lover", "Wanna be my lover, looking back on all the time we spent together", "You oughta know by now if you wanna be my lover"], "fake": "Sun is coming up and we're dancing till the light of day" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "5P0_vEosWp0" }
+    },
+    {
+      "id": "dance-scatman-john-scatman",
+      "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+      "artist": "Scatman John",
+      "year": 1994,
+      "country": "US",
+      "genre": "Eurodance",
+      "difficulty": "hard",
+      "mood": ["Fun", "Fast", "Creative"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Der Sänger war ein Jazz-Pianist, der zeitlebens stotterte und dies zu seinem Markenzeichen machte.",
+        "Der Song vermischt Scat-Gesang mit Eurodance-Beats.",
+        "Thematisiert den Umgang mit Stottern und die Überwindung von Hindernissen.",
+        "Wurde im Alter von 52 Jahren zum Weltstar.",
+        "Refrain: 'I'm the Scatman! Ski-ba-bop-ba-dop-bop!'"
+      ],
+      "lyrics": { "real": ["I'm the Scatman! Ski-ba-bop-ba-dop-bop!", "Everybody stutters one way or the other, so check out my message to you", "Matter of fact, don't let nothing hold you back, if the Scatman can do it, so can you"], "fake": "Moving to the left, moving to the right, in the blue light" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "Hy8kmNEo1i8" }
+    },
+    {
+      "id": "dance-gala-freed-from-desire",
+      "title": "Freed from Desire",
+      "artist": "Gala",
+      "year": 1996,
+      "country": "IT",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Dance", "Energy", "Anthem"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Wurde Jahrzehnte später zur Hymne in Fußball- und Dartstadien ('Will Grigg's on fire').",
+        "Die Sängerin Gala stammt aus Italien und schrieb den Song über buddhistische Themen.",
+        "Der eingängige 'Na-na-na-na-na-na-na'-Teil ist das Markenzeichen des Songs.",
+        "Ein Song über die Freiheit von materialistischen Begierden.",
+        "Refrain: 'Freed from desire, mind and senses purified!'"
+      ],
+      "lyrics": { "real": ["My love has got no money, he's got his strong beliefs", "My love has got no power, he's got his strong beliefs", "Wanting more and more, people just want more and more"], "fake": "Dancing in the fire, taking it higher, higher and higher" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "p3l7fgvrEKM" }
+    },
+    {
+      "id": "dance-spice-girls-wannabe",
+      "title": "Wannabe",
+      "artist": "Spice Girls",
+      "year": 1996,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Happy", "Energy", "Pop"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Die Debütsingle, die das Phänomen 'Girl Power' weltweit bekannt machte.",
+        "Das Ganze Video wurde in einem einzigen 'One-Take' (ohne sichtbare Schnitte) gedreht.",
+        "Handelt von der Wichtigkeit von Freundschaft über romantischen Beziehungen.",
+        "Der Begriff 'zig-a-zig-ah' wurde zum geflügelten Wort.",
+        "Refrain: 'If you wanna be my lover, you gotta get with my friends!'"
+      ],
+      "lyrics": { "real": ["I'll tell you what I want, what I really, really want", "If you wanna be my lover, you gotta get with my friends", "Make it last forever, friendship never ends"], "fake": "In the middle of the night, we're gonna hold you tight" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "gJLIiF15wjQ" }
+    },
+    {
+      "id": "dance-backstreet-boys-everybody",
+      "title": "Everybody (Backstreet's Back)",
+      "artist": "Backstreet Boys",
+      "year": 1997,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Dance", "Classic", "Energy"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Das Musikvideo ist im Horror-Stil (Thriller-Hommage) mit den Bandmitgliedern als Monstern gehalten.",
+        "Einer der größten Hits der Boygroup-Ära der späten 90er.",
+        "Produziert von Max Martin in Schweden.",
+        "Der markante Bass-Synthesizer leitet den atmosphärischen Song ein.",
+        "Refrain: 'Everybody! Rock your body! Backstreet's back, alright!'"
+      ],
+      "lyrics": { "real": ["Everybody, rock your body, everybody, rock your body right", "Backstreet's back, alright!", "Now throw your hands up in the air, wave them around like you just don't care"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "6M6samPccfI" }
+    },
+    {
+      "id": "dance-eiffel-65-blue",
+      "title": "Blue (Da Ba Dee)",
+      "artist": "Eiffel 65",
+      "year": 1998,
+      "country": "IT",
+      "genre": "Italo Dance",
+      "difficulty": "easy",
+      "mood": ["Fun", "Electronic", "Catchy"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "In diesem Song dreht sich alles (wirklich alles) um die Farbe Blau.",
+        "Das Video zeigt computeranimierte Außerirdische auf einem blauen Planeten.",
+        "Der markante Autotune-Effekt auf der Stimme war damals wegweisend für das Genre.",
+        "Wurde zu einem der größten globalen Chart-Erfolge für eine italienische Band.",
+        "Refrain: 'I'm blue, da ba dee da ba di...'"
+      ],
+      "lyrics": { "real": ["I'm blue, da ba dee da ba di, da ba dee da ba di, da ba dee da ba di", "I have a blue house with a blue window, blue is the color of all that I wear", "Blue are the streets and all the trees are too"], "fake": "Dancing in the sky, where the birds learn to fly, so high" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "68ugkg9RePc" }
+    },
+    {
+      "id": "dance-vengaboys-boom-boom",
+      "title": "Boom, Boom, Boom, Boom!!",
+      "artist": "Vengaboys",
+      "year": 1998,
+      "country": "NL",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": ["Happy", "Energy", "Party"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Die Band ist bekannt für ihr buntes Venga-Mobil und ihre schrillen Outfits.",
+        "Der Song handelt vom Wunsch, die Nacht gemeinsam im Schlafzimmer zu verbringen.",
+        "Ein absoluter Party-Garant auf jeder 90er-Feier.",
+        "Der Refrain hat einen extrem eingängigen Rhythmus, den man sofort mitschreit.",
+        "Refrain: 'Boom, boom, boom, boom! I want you in my room!'"
+      ],
+      "lyrics": { "real": ["Boom, boom, boom, boom! I want you in my room, let's spend the night together", "From now until forever, boom, boom, boom, boom! I wanna go boom boom", "Let's spend the night together together in my room"], "fake": "Moving to the left, moving to the right, in the neon light" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "llyiQ4I-trA" }
+    },
+    {
+      "id": "dance-alice-deejay-better-off-alone",
+      "title": "Better Off Alone",
+      "artist": "Alice Deejay",
+      "year": 1999,
+      "country": "NL",
+      "genre": "Trance",
+      "difficulty": "easy",
+      "mood": ["Electronic", "Moody", "Dance"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Einer der bekanntesten Trance-Hymnen der späten 90er.",
+        "Die markante Synthesizer-Melodie erkennt man nach der ersten Sekunde.",
+        "Die Sängerin stellt im Song immer wieder dieselbe Frage: 'Do you think you're better off alone?'",
+        "Wurde Jahre später von David Guetta ('Play Hard') gesampelt.",
+        "Ein minimalistisches Meisterwerk des Dance-Pop."
+      ],
+      "lyrics": { "real": ["Do you think you're better off alone?", "Do you think you're better off alone?", "Talk to me, ooh, talk to me"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "Lgs9QUtWc7M" }
+    },
+    {
+      "id": "dance-darude-sandstorm",
+      "title": "Sandstorm",
+      "artist": "Darude",
+      "year": 1999,
+      "country": "FI",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": ["Energy", "Electronic", "Fast"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Das vielleicht bekannteste instrumentale Dance-Stück der Welt.",
+        "Im Internet ist es ein Dauer-Meme, auf die Frage nach einem Songtitel immer mit diesem Namen zu antworten.",
+        "Das Video zeigt eine Verfolgungsjagd durch die Straßen von Helsinki.",
+        "Ein Klassiker bei Sportveranstaltungen und E-Sport-Turnieren.",
+        "Die Melodie geht etwa so: 'Du-du-du-du-du...'"
+      ],
+      "lyrics": null,
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "y6120QOlsfU" }
+    },
+    {
+      "id": "dance-faithless-insomnia",
+      "title": "Insomnia",
+      "artist": "Faithless",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": ["Dark", "Energy", "Epic"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "In diesem Song geht es um die Qualen der Schlaflosigkeit.",
+        "Der 'Mond-Drop' (das Einsetzen der Synthesizer-Melodie nach der langen Steigerung) ist legendär.",
+        "Sänger Maxi Jazz (R.I.P.) lieferte die markanten Spoken-Word-Strophen.",
+        "Einer der einflussreichsten Dance-Tracks aller Zeiten.",
+        "Refrain: 'I can't get no sleep!'"
+      ],
+      "lyrics": { "real": ["I can't get no sleep, I need to sleep, I can't get no sleep", "Deep in the bosom of the gentle night, is when I search for the light", "I want to leave this place, I want to leave this world"], "fake": "In the middle of the night, I will hold you tight and treat you right" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "P8JEm4d6Wu4" }
+    },
+    {
+      "id": "dance-prodigy-firestarter",
+      "title": "Firestarter",
+      "artist": "The Prodigy",
+      "year": 1996,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "hard",
+      "mood": ["Aggressive", "Energy", "Raw"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Das Video in einem verlassenen U-Bahn-Tunnel schockierte damals viele Eltern.",
+        "Keith Flint wurde durch diesen Song zum Gesicht der Band und zur Punk-Ikone des Dance.",
+        "Mischt intensive Breakbeats mit aggressiven Synthesizern.",
+        "Ein markantes Sample stammt von der Rockband 'Breeders'.",
+        "Refrain: 'I'm the trouble starter, punkin' instigator!'"
+      ],
+      "lyrics": { "real": ["I'm the trouble starter, punkin' instigator, I'm the fear addicted, danger illustrated", "I'm a firestarter, twisted firestarter", "You're the firestarter, twisted firestarter"], "fake": "Burning all the bridges, down in the ditches of the night" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "wmin5WkOuPw" }
+    },
+    {
+      "id": "dance-chemical-bros-hey-boy-girl",
+      "title": "Hey Boy Hey Girl",
+      "artist": "The Chemical Brothers",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "easy",
+      "mood": ["Cool", "Dance", "Groovy"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Das gesamte Lied dreht sich um eine repetitive Sprachzeile: 'Hey boy, hey girl...'.",
+        "Ein Meilenstein des Big Beat, der Rock-Energie in den Club brachte.",
+        "Die Melodie wird durch verzerrte Acid-Synthesizer getrieben.",
+        "Das Musikvideo mit den tanzenden Skeletten ist unvergesslich.",
+        "Refrain: 'Hey boy, hey girl, superstars, here we go!'"
+      ],
+      "lyrics": { "real": ["Hey boy, hey girl, superstars, here we go!", "Hey boy, hey girl, superstars, here we go!", "Hey boy, hey girl, superstars, here we go!"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "tpKCqp9CALQ" }
+    },
+    {
+      "id": "dance-fatboy-slim-rockafeller",
+      "title": "The Rockafeller Skank",
+      "artist": "Fatboy Slim",
+      "year": 1998,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "medium",
+      "mood": ["Fun", "Fast", "Groovy"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Wurde als 'The Funk Soul Brother' weltberühmt.",
+        "Der Song basiert fast ausschließlich auf einem einzigen Vocal-Sample.",
+        "Bekannt für den plötzlichen Geschwindigkeitswechsel (Slowing down and speeding up).",
+        "War ein Highlight im Soundtrack des Spiels FIFA 99.",
+        "Refrain: 'Right about now, the funk soul brother, check it out now!'"
+      ],
+      "lyrics": { "real": ["Right about now, the funk soul brother, check it out now, the funk soul brother", "Right about now, the funk soul brother, check it out now, the funk soul brother", "Right about now, the funk soul brother, check it out now!"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "nm6DO_7px1I" }
+    },
+    {
+      "id": "dance-daft-punk-one-more-time",
+      "title": "One More Time",
+      "artist": "Daft Punk",
+      "year": 2000,
+      "country": "FR",
+      "genre": "French House",
+      "difficulty": "easy",
+      "mood": ["Happy", "Dance", "Epic"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Das Video ist im Anime-Stil (Interstella 5555) gehalten.",
+        "Einer der bekanntesten House-Tracks aller Zeiten mit markantem Autotune-Gesang.",
+        "Die Melodie ist extrem lebensfroh und feiert den Moment.",
+        "Das Duo Daft Punk trat stets in Roboter-Helmen auf.",
+        "Refrain: 'One more time, we're gonna celebrate!'"
+      ],
+      "lyrics": { "real": ["One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing", "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing", "Music's got me feeling so free, we're gonna celebrate and dance so free"], "fake": "Nothing's gonna change my world, you're the only special girl" },
+      "isOne_hit_wonder": false,
+      "links": { "youtube": "FGBhQbmPwH8" }
+    },
+    {
+      "id": "dance-modjo-lady",
+      "title": "Lady (Hear Me Tonight)",
+      "artist": "Modjo",
+      "year": 2000,
+      "country": "FR",
+      "genre": "French House",
+      "difficulty": "easy",
+      "mood": ["Cool", "Groovy", "Romantic"],
+      "pack": "Dance Floor Fillers",
+      "hints": [
+        "Basiert auf einem Sample aus dem Song 'Soup for One' von Chic.",
+        "Ein Paradebeispiel für den eleganten French House der Jahrtausendwende.",
+        "Das Video zeigt eine Gruppe von Freunden bei einem Roadtrip.",
+        "Einer der entspanntesten und gleichzeitig tanzbarsten Hits der Ära.",
+        "Refrain: 'Lady, hear me tonight, 'cause my feeling is just so right!'"
+      ],
+      "lyrics": { "real": ["Lady, hear me tonight, 'cause my feeling is just so right", "As we dance by the light, and I'll keep you till the morning light", "Lady, I just feel like I won't get you out of my mind"], "fake": "When the stars are shining bright, I will hold you through the night" },
+      "isOne_hit_wonder": true,
+      "links": { "youtube": "HzpCcNdhy5w" }
+    }
+  ]
+}
