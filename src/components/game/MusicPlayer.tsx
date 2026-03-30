@@ -6,7 +6,7 @@
  */
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useGameStore } from '@/stores/game-store';
 
 interface MusicPlayerProps {
@@ -29,6 +29,21 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, blurred = false }: 
   const [playerState, setPlayerState] = useState<'loading' | 'playing' | 'error' | 'fallback'>('loading');
   const [muted, setMuted] = useState(false);
   const [videoRevealed, setVideoRevealed] = useState(false);
+  const swipeStartX = useRef<number | null>(null);
+  const SWIPE_THRESHOLD = 60; // px
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    swipeStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (swipeStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - swipeStartX.current;
+    swipeStartX.current = null;
+    if (Math.abs(dx) >= SWIPE_THRESHOLD) {
+      setVideoRevealed(v => !v);
+    }
+  }, []);
   const [activeDomain, setActiveDomain] = useState<'music.youtube.com' | 'www.youtube.com'>(
     preferredPlayer === 'music' ? 'music.youtube.com' : 'www.youtube.com'
   );
@@ -131,12 +146,28 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, blurred = false }: 
         {/* Blur-Overlay (Timeline-Modus) */}
         {blurred && !videoRevealed && (
           <div
-            className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 cursor-pointer select-none"
+            className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 select-none"
             style={{ backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: 'rgba(0,0,0,0.4)' }}
-            onClick={() => setVideoRevealed(v => !v)}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             <span className="text-3xl">🎵</span>
-            <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Antippen zum Ein-/Ausblenden</p>
+            <div className="flex items-center gap-2 opacity-60">
+              <span className="text-lg">←</span>
+              <p className="text-[10px] font-black uppercase tracking-widest">Swipe zum Enthüllen</p>
+              <span className="text-lg">→</span>
+            </div>
+          </div>
+        )}
+        {blurred && videoRevealed && (
+          <div
+            className="absolute inset-0 z-20 flex flex-col items-center justify-end pb-3 select-none"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <p className="text-[9px] font-black uppercase tracking-widest opacity-40 bg-black/40 px-3 py-1 rounded-full">
+              Swipe zum Verbergen
+            </p>
           </div>
         )}
 
