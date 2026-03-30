@@ -12,6 +12,8 @@ import { useGameStore } from '@/stores/game-store';
 interface MusicPlayerProps {
   youtubeLink: string;
   startSeconds?: number;
+  /** Blendet Video per Blur aus (Timeline-Modus: Song unbekannt) */
+  blurred?: boolean;
 }
 
 declare global {
@@ -21,11 +23,12 @@ declare global {
   }
 }
 
-export function MusicPlayer({ youtubeLink, startSeconds = 0 }: MusicPlayerProps) {
+export function MusicPlayer({ youtubeLink, startSeconds = 0, blurred = false }: MusicPlayerProps) {
   const { preferredPlayer, currentSongSource, skipBrokenSong } = useGameStore();
-  
+
   const [playerState, setPlayerState] = useState<'loading' | 'playing' | 'error' | 'fallback'>('loading');
   const [muted, setMuted] = useState(false);
+  const [videoRevealed, setVideoRevealed] = useState(false);
   const [activeDomain, setActiveDomain] = useState<'music.youtube.com' | 'www.youtube.com'>(
     preferredPlayer === 'music' ? 'music.youtube.com' : 'www.youtube.com'
   );
@@ -124,7 +127,19 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0 }: MusicPlayerProps)
     <div className="w-full rounded-2xl overflow-hidden shadow-2xl transition-all border border-white/10">
       <div className="relative w-full aspect-video bg-black">
         <div ref={containerRef} className="absolute inset-0 w-full h-full" />
-        
+
+        {/* Blur-Overlay (Timeline-Modus) */}
+        {blurred && !videoRevealed && (
+          <div
+            className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 cursor-pointer select-none"
+            style={{ backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: 'rgba(0,0,0,0.4)' }}
+            onClick={() => setVideoRevealed(true)}
+          >
+            <span className="text-3xl">🎵</span>
+            <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Antippen zum Enthüllen</p>
+          </div>
+        )}
+
         {/* Overlays / States */}
         {playerState === 'loading' && (
           <div className="absolute inset-0 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center gap-4 z-10">

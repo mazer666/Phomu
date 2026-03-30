@@ -69,7 +69,7 @@ export function QuestionPhase({
       )}
 
       {currentMode === 'timeline' && (
-        <TimelineMode song={song} onAnswer={handleAnswered} />
+        <TimelineMode song={song} onAnswer={handleAnswered} onReveal={onReveal} />
       )}
 
       {currentMode === 'lyrics' && (
