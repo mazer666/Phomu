@@ -3,7 +3,7 @@
 Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that bridges the gap between physical collectible cards and a dynamic, digital music experience.
 
 ## 🌟 Core Philosophy
-- **Human-Centric:** No rigid AI-checking. A "Pilot" (player) manually validates answers to keep the game flow natural and fair.
+- **Human-Centric:** No rigid AI-checking. A "Pilot" (player) manually validates answers to keep the game flow natural and fair unless the questions are completely clear.
 - **Privacy First:** No tracking, secure Google Auth via Supabase, and local-first data processing.
 - **Hybrid Play:** Works with physical QR/NFC cards or as a purely digital web-app.
 - **Open Standards:** Export cards as print-ready PNGs optimized for professional services (like meinspiel.de) or DIY home printing.
