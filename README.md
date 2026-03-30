@@ -1,47 +1,27 @@
-# Phomu - The Ultimate Hybrid Music Party Platform
+# Phomu - The Modular Music Party Platform
 
-Phomu (Physical-Mobile-Music) is a community-driven, open-source party game. It combines the tactile feel of physical cards with a powerful, customizable web application.
+Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that bridges the gap between physical collectible cards and a dynamic, digital music experience.
 
-## 🎯 Game Concept
-Phomu is designed for 1 to 20+ players. It can be played using physical cards (with QR/NFC codes) or purely digitally. The game is hosted on GitHub, uses Supabase for data, and is designed to be fully customizable by the user.
+## 🌟 Core Philosophy
+- **Human-Centric:** No rigid AI-checking. A "Pilot" (player) manually validates answers to keep the game flow natural and fair.
+- **Privacy First:** No tracking, secure Google Auth via Supabase, and local-first data processing.
+- **Hybrid Play:** Works with physical QR/NFC cards or as a purely digital web-app.
+- **Open Standards:** Export cards as print-ready PNGs optimized for professional services (like meinspiel.de) or DIY home printing.
 
-## 🛠 Detailed Game Rules
+## 🎮 Game Mechanics
+1. **Chronological Timeline:** Place songs correctly in time. Successfully added cards allow (or force) removal of duplicates to keep the board clean.
+2. **Hint-Master:** Guess the artist/title using 5 levels of increasingly easy clues (from History to Audio).
+3. **Lyrics Labyrinth:** Identify the AI-generated "fake" lyric line. Players must lock in their choice **before** the music starts for the reveal.
+4. **Vibe-Check:** Match songs to specific moods and compare your taste with anonymous global community stats.
+5. **Survivor:** Decide if an artist is a "One-Hit Wonder" or a "Long-term Survivor" (2+ Top 40 hits).
 
-### General Setup
-- **Players:** Individual, Fixed Teams, or Shifting Teams (randomized every round).
-- **Controller:** One "Pilot" (can be a fixed player or the person to the left of the current turn-taker).
-- **Anti-Cheat:** The UI includes a "Privacy Toggle" to hide solutions from the controller.
-- **Winning:** Standard goal is 10 points (adjustable in settings).
+## 🛠 Tech Stack
+- **Framework:** Next.js + TypeScript (Strict Mode).
+- **Styling:** Tailwind CSS (Mobile-first, Responsive).
+- **Backend:** Supabase (PostgreSQL, Auth, Real-time sync).
+- **License:** GPL-3.0 (Copyleft).
 
-### The 5 Game Modes
-1. **Chronological Timeline (The Organizer):**
-   - Goal: Place songs correctly on a timeline.
-   - Mechanic: If a song is placed correctly, the player *can* choose to remove one existing card from the timeline.
-   - **Double-Year Rule:** If a year appears twice, the player *must* remove one of those duplicates.
-   - Optional: Chips-betting system (players bet on others' correctness).
-
-2. **Hint-Master (The Detective):**
-   - 5 levels of clues: History -> Trivia -> Album -> Audio Snippet (30s) -> Full Song.
-   - Points: 5 (Level 1) down to 1 (Level 5).
-
-3. **Lyrics Labyrinth (The Fake):**
-   - 4 lines of lyrics appear. 3 are real, 1 is AI-generated fake.
-   - **Critical:** The player must lock in their choice **before** the music starts. The music serves as the resolution/reveal.
-
-4. **Vibe-Check (The Mood Match):**
-   - The app gives a mood (e.g., "Midnight Drive"). Player scans/picks a matching song.
-   - Community Factor: Compares your choice with anonymous global stats (requires Supabase sync).
-
-5. **Survivor (The Career Check):**
-   - Is the artist a "One-Hit Wonder" or a "Survivor" (2+ Top 40 hits)?
-   - Modes: "Survival" (don't get it wrong) or "Point Hunting".
-
-## 💻 Technical Standards for Vibe/Developers
-- **Language:** TypeScript (Strict Mode).
-- **File Limits:** Max 400 lines (target), absolute maximum 600 lines per file.
-- **Comments:** "Noob-friendly" - every logic block must be explained for non-developers.
-- **Configuration:** All settings are stored in `src/config/game-config.ts`.
-- **Localization:** Prepared for DE/EN (i18next).
-
-## 📂 Project Structure
-Refer to the `/specifications` folder for detailed logic flows, database schemas, and the roadmap.
+## 📏 Development Standards (For Vibe/AI Coding)
+- **Modular Code:** Maximum 400-600 lines of code per file to ensure readability.
+- **Beginner-Friendly:** Every logic block must be explained in plain English for non-developers.
+- **Centralized Config:** All game constants (scores, modes, packs) are stored in `src/config/game-config.ts`.
