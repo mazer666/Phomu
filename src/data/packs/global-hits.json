@@ -24,10 +24,17 @@
         "Stampfendes Rockabilly-Schlagzeug, aggressive Gitarrenriffs und ein wütend-energischer Gesangsstil.",
         "Elvis Presley singt einem untreuen Partner, dass er 'nichts als ein Hund' ist."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "You ain't nothin' but a hound dog",
+          "Snoopin' 'round the door",
+          "You ain't never caught a rabbit"
+        ],
+        "fake": "Barking at the moon all night"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "aNYWl13I2uE"
       }
     },
     {
@@ -47,10 +54,17 @@
         "Mitreißendes Gitarrenintro, das direkt in einen treibenden 12-Takt-Blues übergeht.",
         "Chuck Berry singt über einen Jungen aus Louisiana namens Johnny, der ein großer Rock'n'Roll-Star werden soll."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Deep down in Louisiana close to New Orleans",
+          "Way back up in the woods among the evergreens",
+          "There stood a log cabin made of earth and wood"
+        ],
+        "fake": "He played a silver guitar under the morning sun"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "6ROwVrANTsc"
       }
     },
     {
@@ -70,10 +84,17 @@
         "Kraftvolle Soul-Stimme, grooviges Bläserarrangement und ein Chor, der ein einzelnes englisches Wort immer wiederholt.",
         "Aretha Franklin fordert von ihrem Partner das, was jeder Mensch verdient – buchstabiert es sogar aus."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "What you want, baby, I got it",
+          "What you need, do you know I got it?",
+          "R-E-S-P-E-C-T, find out what it means to me"
+        ],
+        "fake": "S-U-P-P-O-R-T, show me that you care for me"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "6FOUqQt3Kg0"
       }
     },
     {
@@ -93,10 +114,17 @@
         "Beginnt solo mit Piano, baut sich zur vollständigen Band auf und endet mit einem mehrstimmigen, sich wiederholenden Outro.",
         "Paul McCartney fordert jemanden namens 'Jude' auf, sich zu öffnen – das berühmte 'Na na na'-Outro dauert über vier Minuten."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Hey Jude, don't make it bad",
+          "Take a sad song and make it better",
+          "Remember to let her into your heart"
+        ],
+        "fake": "Don't let the world bring you down today"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "A_MjCqQoLLA"
       }
     },
     {
@@ -116,7 +144,14 @@
         "Das Stück wechselt zwischen stiller Ballade, Oper und hartem Rock – kein anderer Song klingt so.",
         "Queen erzählen eine dramatische Geschichte, die damit beginnt, ob das alles Real Life oder nur Fantasy ist."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Is this the real life? Is this just fantasy?",
+          "Caught in a landslide, no escape from reality",
+          "Mama, just killed a man"
+        ],
+        "fake": "I'm just a lonely boy in a lonely world"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "fJ9rUzIMcZQ"
@@ -139,7 +174,14 @@
         "Disco-Pop mit glitzernden Synthesizern, aufbauenden Streichern und harmonischem Frauengesang.",
         "Das schwedische Quartett ABBA besingt das Gefühl, die Königin der Tanzfläche zu sein – jung und sweet, only seventeen."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "You can dance, you can jive",
+          "Havin' the time of your life",
+          "See that girl, watch that scene, diggin' the dancing queen"
+        ],
+        "fake": "Friday night and the stars are out to play"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "xFrGuyw1V8s"
@@ -162,10 +204,17 @@
         "Charakteristische Disco-Streicher im Intro, die in einen treibenden Viervierteltakt und eine kraftvolle Stimme übergehen.",
         "Gloria Gaynor singt nach einer schmerzhaften Trennung: Sie hat überlebt und braucht ihren Ex nicht mehr."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "At first I was afraid, I was petrified",
+          "Kept thinking I could never live without you by my side",
+          "I've got all my life to live, and I've got all my love to give"
+        ],
+        "fake": "So I walked out that door and I never looked back at you"
+      },
       "isOneHitWonder": true,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "f6S_t_8-N90"
       }
     },
     {
@@ -185,7 +234,14 @@
         "Synthie-Streicher, knallende Snare und Schritte in der Dunkelheit – der Aufbau erzeugt echte Gänsehaut.",
         "Michael Jackson tanzt mit Untoten in einem der berühmtesten Musikvideos aller Zeiten."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "It's close to midnight and something evil's lurking in the dark",
+          "You start to freeze as horror looks you right between the eyes",
+          "You're fighting for your life inside a killer, thriller tonight"
+        ],
+        "fake": "The shadow of the night is chasing every step you take"
+      },
       "isOneHitWonder": false,
       "previewTimestamp": {
         "start": 40,
@@ -212,10 +268,17 @@
         "Bubblegum-Synthie-Pop der 80er mit einer gespielten, nasalen Stimme und einem Refrain, der zur Mädchen-Hymne wurde.",
         "Cyndi Lauper singt, dass Mädchen am Ende des Tages einfach nur Spaß haben wollen."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I come home in the morning light",
+          "My mother says when you gonna live your life right?",
+          "Oh girls, they wanna have fun"
+        ],
+        "fake": "Dancing through the hallway until the sun goes down"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "PIb6AZdTr-A"
       }
     },
     {
@@ -235,10 +298,17 @@
         "Funkiger Groove, strahlende Blechbläser und eine einladende Gitarre – deutlich tanzbarder als Bowies frühere Werke.",
         "David Bowie lädt unter dem Licht eines fremden Mondes und einem roten Schuh zum Tanzen ein."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Let's dance, put on your red shoes and dance the blues",
+          "Let's sway, while color lights up your face",
+          "Under the moonlight, the serious moonlight"
+        ],
+        "fake": "Swing with me beneath the golden sky tonight"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "VbD_G7nebgQ"
       }
     },
     {
