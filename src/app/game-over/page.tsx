@@ -23,7 +23,7 @@ const PODEST_CONFIG = [
 
 export default function GameOverPage() {
   const router = useRouter();
-  const { players, config, winnerId, currentRound, initSession, startGame } = useGameStore();
+  const { players, config, winnerId, currentRound, initSession, startGame, resetScores } = useGameStore();
 
   // Guard: Kein beendetes Spiel → zur Lobby
   useEffect(() => {
@@ -146,13 +146,12 @@ export default function GameOverPage() {
         transition={{ delay: 0.6 }}
         className="flex flex-col gap-3 w-full max-w-sm"
       >
-        {/* Nochmal spielen: Spieler behalten, Scores reset */}
+        {/* Nochmal spielen: gleiche Spieler, Scores und Runden-Stand auf 0 */}
         <button
           onClick={() => {
-            // Scores zurücksetzen, neue Session mit gleichen Spielern
-            players.forEach(() => {}); // scores werden in startGame nicht zurückgesetzt
-            // Schnell: initSession + Router zur Lobby für Neukonfiguration
-            router.push('/lobby');
+            resetScores();
+            startGame();
+            router.push('/game');
           }}
           className="w-full py-4 rounded-2xl text-xl font-black hover:opacity-90 transition-opacity"
           style={{ backgroundColor: 'var(--color-primary)' }}

@@ -66,6 +66,9 @@ interface GameActions {
 
   /** Addiert Punkte zum Score eines Spielers */
   awardPoints: (playerId: string, points: number) => void;
+
+  /** Setzt alle Spieler-Scores auf 0 zurück (für "Nochmal spielen") */
+  resetScores: () => void;
 }
 
 /** Vollständiger Store-Typ = State + Actions */
@@ -246,6 +249,21 @@ export const useGameStore = create<GameStore>()(
           players: state.players.map((p) =>
             p.id === playerId ? { ...p, score: p.score + points } : p,
           ),
+        }));
+      },
+
+      // ── resetScores ───────────────────────────────────────────────
+      resetScores() {
+        set((state) => ({
+          players: state.players.map((p) => ({ ...p, score: 0 })),
+          currentRound: 0,
+          roundHistory: [],
+          playedSongIds: [],
+          currentAnswers: [],
+          currentSong: null,
+          isGameOver: false,
+          winnerId: undefined,
+          roundPhase: 'drawing',
         }));
       },
     }),

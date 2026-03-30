@@ -3,7 +3,6 @@
  *
  * Router-Komponente für die Fragerunde.
  * Leitet je nach aktivem Spielmodus an die passende Modus-Komponente weiter.
- * Timeline und Lyrics sind Platzhalter — werden in Phase 4 implementiert.
  */
 'use client';
 
@@ -14,6 +13,8 @@ import type { PhomuSong } from '@/types/song';
 import { SurvivorMode } from './modes/SurvivorMode';
 import { VibeCheckMode } from './modes/VibeCheckMode';
 import { HintMasterMode } from './modes/HintMasterMode';
+import { TimelineMode } from './modes/TimelineMode';
+import { LyricsMode } from './modes/LyricsMode';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -26,41 +27,14 @@ interface QuestionPhaseProps {
   onReveal: () => void;
 }
 
-// ─── Platzhalter für noch nicht implementierte Modi ────────────────
-
-function PlaceholderMode({
-  song,
-  modeName,
-  onReveal,
-}: {
-  song: PhomuSong;
-  modeName: string;
-  onReveal: () => void;
-}) {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6 text-center">
-      <p className="text-5xl">🚧</p>
-      <div>
-        <h3 className="text-xl font-black mb-2">{modeName}</h3>
-        <p className="opacity-60 text-sm max-w-xs">
-          Dieser Modus wird in Phase 4 implementiert.
-          <br />
-          Für jetzt: Diskutiert gemeinsam und entscheidet!
-        </p>
-      </div>
-      <p className="opacity-40 text-sm">
-        Song: <strong>{song.title}</strong> von {song.artist} ({song.year})
-      </p>
-      <button
-        onClick={onReveal}
-        className="px-8 py-4 rounded-2xl font-black text-lg"
-        style={{ backgroundColor: 'var(--color-primary)' }}
-      >
-        Weiter zum Reveal →
-      </button>
-    </div>
-  );
-}
+/** Modi, bei denen der "Alle fertig → Reveal"-Button angezeigt wird */
+const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
+  'survivor',
+  'vibe-check',
+  'hint-master',
+  'timeline',
+  'lyrics',
+];
 
 // ─── Komponente ───────────────────────────────────────────────────
 
@@ -70,7 +44,6 @@ export function QuestionPhase({
   onAnswered,
   onReveal,
 }: QuestionPhaseProps) {
-  // Nach Antwort: kurz warten, dann Reveal anbieten
   const handleAnswered = useCallback(
     (isCorrect: boolean, points: number) => {
       onAnswered(isCorrect, points);
@@ -94,25 +67,15 @@ export function QuestionPhase({
       )}
 
       {currentMode === 'timeline' && (
-        <PlaceholderMode
-          song={song}
-          modeName="📅 Chronologische Timeline"
-          onReveal={onReveal}
-        />
+        <TimelineMode song={song} onAnswer={handleAnswered} />
       )}
 
       {currentMode === 'lyrics' && (
-        <PlaceholderMode
-          song={song}
-          modeName="📝 Lyrics Labyrinth"
-          onReveal={onReveal}
-        />
+        <LyricsMode song={song} onAnswer={handleAnswered} />
       )}
 
-      {/* Reveal-Button (für Survivor, Vibe-Check, Hint-Master nach der Antwort) */}
-      {(currentMode === 'survivor' ||
-        currentMode === 'vibe-check' ||
-        currentMode === 'hint-master') && (
+      {/* Alle-fertig-Button → Reveal für alle Modi */}
+      {MODES_WITH_REVEAL_BUTTON.includes(currentMode) && (
         <motion.div
           className="flex justify-center mt-6 pb-8"
           initial={{ opacity: 0 }}

@@ -8,7 +8,7 @@
  */
 'use client';
 
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import type { PhomuSong } from '@/types/song';
 
@@ -46,11 +46,15 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
     onAnswer(isCorrect, isCorrect ? 2 : 0);
   }
 
-  // Sechs zufällige Stimmungen (inkl. mind. einer richtigen)
-  const correctMood = song.mood[0];
-  const wrong = ALL_MOODS.filter((m) => !song.mood.includes(m));
-  const shuffled = [...wrong].sort(() => Math.random() - 0.5).slice(0, 5);
-  const options = [...shuffled, correctMood].sort(() => Math.random() - 0.5);
+  // Sechs zufällige Stimmungen (inkl. mind. einer richtigen) — einmalig stabilisiert
+  const options = useMemo(() => {
+    const correctMood = song.mood[0];
+    const wrong = ALL_MOODS.filter((m) => !song.mood.includes(m));
+    const shuffled = [...wrong].sort(() => Math.random() - 0.5).slice(0, 5);
+    return [...shuffled, correctMood].sort(() => Math.random() - 0.5);
+  // song.id ist stabil solange derselbe Song angezeigt wird
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [song.id]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
