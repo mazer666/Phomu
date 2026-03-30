@@ -364,6 +364,8 @@ export const useGameStore = create<GameStore>()(
         sessionId: state.sessionId,
         totalXP: state.totalXP,
         preferredPlayer: state.preferredPlayer,
+        currentRound: state.currentRound,
+        isGameOver: state.isGameOver,
       }),
     }
   )
