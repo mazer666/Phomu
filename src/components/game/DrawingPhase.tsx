@@ -7,8 +7,9 @@
  */
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
 import type { GameMode } from '@/config/game-config';
 import type { PhomuSong } from '@/types/song';
 import { pickRandomSong } from '@/utils/song-picker';
@@ -41,6 +42,11 @@ const MODE_META: Record<GameMode, { icon: string; title: string; instruction: st
     title: 'Survivor',
     instruction: 'One-Hit-Wonder oder Dauerstar? Was glaubst du?',
   },
+  'cover-confusion': {
+    icon: '🖼️',
+    title: 'Cover Confusion',
+    instruction: 'Welches Cover passt zu diesem Song? Finde es heraus!',
+  },
 };
 
 // ─── Props ────────────────────────────────────────────────────────
@@ -62,6 +68,7 @@ export function DrawingPhase({
   onCardDrawn,
 }: DrawingPhaseProps) {
   const meta = MODE_META[currentMode];
+  const { autoDrawIntent } = useGameStore();
   const [isDrawing, setIsDrawing] = useState(false);
   const [error, setError] = useState('');
 
@@ -83,6 +90,13 @@ export function DrawingPhase({
       setIsDrawing(false);
     }, 600);
   }, [isDrawing, playedSongIds, onCardDrawn]);
+
+  // AUTO-DRAW: Wenn wir nach einem Skip hier ankommen, automatisch ziehen
+  useEffect(() => {
+    if (autoDrawIntent && !isDrawing) {
+      handleDraw();
+    }
+  }, [autoDrawIntent, isDrawing, handleDraw]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 text-center">

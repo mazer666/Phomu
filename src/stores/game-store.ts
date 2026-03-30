@@ -56,7 +56,13 @@ interface GameActions {
   endGame: (winnerId?: string) => void;
 
   /** Setzt den aktuellen Song und wechselt in die Fragerunde */
-  drawSong: (song: PhomuSong) => void;
+  drawSong: (song: PhomuSong, source?: 'random' | 'qr') => void;
+
+  /** Überspringt einen defekten Song (404/Restricted) */
+  skipBrokenSong: () => void;
+
+  /** Setzt den bevorzugten Player-Typ */
+  setPreferredPlayer: (type: 'standard' | 'music') => void;
 
   /** Wechselt die aktuelle Rundenphase */
   advancePhase: (phase: RoundPhase) => void;
@@ -76,10 +82,7 @@ interface GameActions {
   /** Aktualisiert Spielerdaten (z.B. Avatar/Farbe in Settings) */
   updatePlayer: (playerId: string, updates: Partial<Player>) => void;
 
-  /** Schaltet die lineare Progression ein/aus */
-  toggleLinearProgression: () => void;
-
-  /** Setzt den gesamten Fortschritt zurück (Reset) */
+  /** Setzt den gesamten Fortschritt (XP) zurück */
   resetProgress: () => void;
 }
 
@@ -105,10 +108,11 @@ function createInitialState(): GameState {
     playedSongIds: [],
     isGameOver: false,
     winnerId: undefined,
-    // Global Progression
+    // Global Progression & Preferences
     totalXP: 0,
-    unlockedPackIds: ['global-hits', '80s-flashback', '90s-rave'], // Start packs
-    isLinearProgressionEnabled: true,
+    preferredPlayer: 'standard',
+    currentSongSource: null,
+    autoDrawIntent: false,
   };
 }
 
@@ -235,51 +239,47 @@ export const useGameStore = create<GameStore>()(
 
       // ── endGame ──────────────────────────────────────────────────
       endGame(winnerId) {
-        const { players, totalXP, unlockedPackIds } = get();
+        const { players, totalXP } = get();
         // Berechne die in dieser Session verdiente XP (Summe aller Spieler-Punkte)
         const sessionXP = players.reduce((sum, p) => sum + p.score, 0);
         const newTotalXP = totalXP + sessionXP;
-
-        // Unlock-Logik: Alle 100 XP ein neues Pack freischalten
-        const allPacks = PHOMU_CONFIG.SONG_PACKS;
-        const currentUnlockCount = unlockedPackIds.length;
-        const totalPossibleUnlocks = Math.floor(newTotalXP / 100);
-        const expectedUnlockCount = Math.min(
-          allPacks.length,
-          3 + totalPossibleUnlocks // Start mit 3 Packs + 1 pro 100 XP
-        );
-
-        const newUnlockedIds = [...unlockedPackIds];
-        let newlyUnlockedPack: string | null = null;
-        
-        for (let i = 0; i < expectedUnlockCount; i++) {
-          const packId = allPacks[i].id;
-          if (!newUnlockedIds.includes(packId)) {
-            newUnlockedIds.push(packId);
-            newlyUnlockedPack = allPacks[i].name;
-          }
-        }
 
         set({
           isGameOver: true,
           winnerId,
           roundPhase: 'scoring',
           totalXP: newTotalXP,
-          unlockedPackIds: newUnlockedIds,
         });
-
-        if (newlyUnlockedPack) {
-          console.log(`🎉 NEUES PACK FREIGESCHALTET: ${newlyUnlockedPack}`);
-        }
       },
 
       // ── drawSong ─────────────────────────────────────────────────
-      drawSong(song) {
+      drawSong(song, source = 'random') {
         set((state) => ({
           currentSong: song,
+          currentSongSource: source,
           roundPhase: 'question',
           playedSongIds: [...state.playedSongIds, song.id],
+          autoDrawIntent: false, // Reset flag once song is actually drawn
         }));
+      },
+
+      // ── skipBrokenSong ───────────────────────────────────────────
+      skipBrokenSong() {
+        const { currentSongSource } = get();
+        
+        if (currentSongSource === 'qr') {
+          // Bei QR-Scan wird nur markiert als "übersprungen"
+          set({ roundPhase: 'drawing', autoDrawIntent: false });
+          return;
+        }
+
+        // Bei Zufallszug wird sofort ein neuer Song gezogen (via DrawingPhase auto-intent)
+        set({ roundPhase: 'drawing', currentSong: null, autoDrawIntent: true });
+      },
+
+      // ── setPreferredPlayer ────────────────────────────────────────
+      setPreferredPlayer(type) {
+        set({ preferredPlayer: type });
       },
 
       // ── advancePhase ──────────────────────────────────────────────
@@ -334,6 +334,7 @@ export const useGameStore = create<GameStore>()(
           isGameOver: false,
           winnerId: undefined,
           playedSongIds: [...state.playedSongIds, song.id],
+          currentSongSource: 'qr',
         }));
       },
 
@@ -346,18 +347,10 @@ export const useGameStore = create<GameStore>()(
         }));
       },
 
-      // ── toggleLinearProgression ──────────────────────────────────
-      toggleLinearProgression() {
-        set((state) => ({
-          isLinearProgressionEnabled: !state.isLinearProgressionEnabled,
-        }));
-      },
-
       // ── resetProgress ─────────────────────────────────────────────
       resetProgress() {
         set({
           totalXP: 0,
-          unlockedPackIds: ['global-hits', '80s-flashback', '90s-rave'],
         });
       },
     }),
@@ -370,8 +363,7 @@ export const useGameStore = create<GameStore>()(
         config: state.config,
         sessionId: state.sessionId,
         totalXP: state.totalXP,
-        unlockedPackIds: state.unlockedPackIds,
-        isLinearProgressionEnabled: state.isLinearProgressionEnabled,
+        preferredPlayer: state.preferredPlayer,
       }),
     }
   )

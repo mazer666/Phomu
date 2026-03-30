@@ -133,9 +133,12 @@ export interface GameState {
   /** Total XP earned across all sessions */
   totalXP: number;
 
-  /** List of pack IDs currently unlocked */
-  unlockedPackIds: string[];
+  /** Bevorzugter Player-Typ (Standard YouTube vs YouTube Music) */
+  preferredPlayer: 'standard' | 'music';
 
-  /** Whether the linear progression system is active */
-  isLinearProgressionEnabled: boolean;
+  /** Woher der aktuelle Song kommt (Zufallswahl vs QR-Scan) */
+  currentSongSource: 'random' | 'qr' | null;
+
+  /** Ob die Drawing-Phase automatisch triggern soll (z.B. nach Auto-Skip) */
+  autoDrawIntent: boolean;
 }

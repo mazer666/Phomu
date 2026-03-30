@@ -5,9 +5,9 @@
  * 
  * Hier können Spieler:
  * - Ihren Namen, Avatar und Farbe ändern
- * - Den Spielfortschritt einsehen (XP / Level)
+ * - Den Spielfortschritt einsehen (XP)
  * - Das App-Theme wechseln
- * - Die lineare Progression (Unlocks) umschalten
+ * - YouTube Player Optionen anpassen
  */
 
 import { useRouter } from 'next/navigation';
@@ -24,21 +24,18 @@ export default function SettingsPage() {
   const router = useRouter();
   const { 
     players, 
-    totalXP, 
-    unlockedPackIds, 
-    isLinearProgressionEnabled,
-    toggleLinearProgression,
+    totalXP,
     updatePlayer,
+    preferredPlayer,
+    setPreferredPlayer,
     resetProgress
   } = useGameStore();
   
   const [currentTheme, setCurrentTheme] = useState<ThemeName>('jackbox');
   const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
 
-  // Level-Berechnung (z.B. alle 100 XP ein Level)
+  // Level-Berechnung (rein informativ: alle 100 XP ein Level)
   const currentLevel = Math.floor(totalXP / 100) + 1;
-  const nextLevelXP = currentLevel * 100;
-  const progressToNext = (totalXP % 100);
 
   // Theme aus HTML-Tag lesen
   useEffect(() => {
@@ -67,56 +64,29 @@ export default function SettingsPage() {
         </button>
       </header>
 
-      {/* Fortschritts-Übersicht */}
-      <section className="bg-gradient-to-br from-[var(--color-accent)]/20 to-transparent p-8 rounded-3xl border border-[var(--color-accent)]/20 space-y-4">
-        <div className="flex items-end justify-between">
-          <div>
-            <h2 className="text-sm font-black uppercase opacity-60 tracking-wider">Dein Fortschritt</h2>
-            <p className="text-5xl font-black">Level {currentLevel}</p>
-          </div>
-          <div className="text-right">
-            <p className="text-xs font-bold opacity-60">Gesamt XP</p>
-            <p className="text-2xl font-mono font-black">{totalXP.toLocaleString()}</p>
-          </div>
-        </div>
+      {/* Profil-Statistiken */}
+      <section className="bg-[var(--color-bg-card)] p-8 rounded-[40px] border border-white/5 relative overflow-hidden shadow-2xl">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-accent)]/10 blur-3xl -mr-16 -mt-16" />
         
-        <div className="space-y-4">
-          <div className="h-4 bg-black/20 rounded-full overflow-hidden border border-white/5 relative">
-            <motion.div 
-              initial={{ width: 0 }}
-              animate={{ width: `${progressToNext}%` }}
-              className="h-full bg-[var(--color-accent)] shadow-[0_0_15px_rgba(var(--color-accent-rgb),0.5)]"
-            />
-          </div>
-          <div className="flex justify-between items-center">
-             <p className="text-[10px] font-black opacity-40 uppercase tracking-widest">Lvl {currentLevel}</p>
-             <p className="text-[10px] font-black text-[var(--color-accent)] uppercase tracking-[0.2em] animate-pulse">Next Unlock: {PHOMU_CONFIG.SONG_PACKS[unlockedPackIds.length]?.name || 'All Unlocked'}</p>
-             <p className="text-[10px] font-black opacity-40 uppercase tracking-widest">Lvl {currentLevel + 1}</p>
-          </div>
+        <div className="relative z-10 flex flex-col items-center gap-2">
+           <div className="text-center group">
+             <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-40 mb-1 group-hover:opacity-100 transition-opacity">Lifetime Score</p>
+             <h2 className="text-6xl font-black tracking-tighter">{totalXP.toLocaleString()} <span className="text-xl opacity-30">XP</span></h2>
+           </div>
+           <div className="px-4 py-1.5 bg-white/5 rounded-full border border-white/10">
+              <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Level {currentLevel}</p>
+           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-          <div className="bg-white/5 p-4 rounded-3xl border border-white/5 text-center group hover:bg-white/10 transition-all">
-            <p className="text-[9px] font-black opacity-40 uppercase tracking-widest mb-1">Packs Unlocked</p>
-            <p className="text-2xl font-black">{unlockedPackIds.length} <span className="text-sm opacity-20">/ {PHOMU_CONFIG.SONG_PACKS.length}</span></p>
+        <div className="grid grid-cols-2 gap-4 mt-10">
+          <div className="bg-white/5 p-5 rounded-3xl border border-white/5 text-center group hover:bg-white/10 transition-all">
+            <p className="text-[9px] font-black opacity-40 uppercase tracking-widest mb-1">Song Packs</p>
+            <p className="text-2xl font-black">All Unlocked</p>
           </div>
-          <div className="bg-white/5 p-4 rounded-3xl border border-white/5 text-center group hover:bg-white/10 transition-all">
+          <div className="bg-white/5 p-5 rounded-3xl border border-white/5 text-center group hover:bg-white/10 transition-all">
             <p className="text-[9px] font-black opacity-40 uppercase tracking-widest mb-1">Songs Ready</p>
             <p className="text-2xl font-black">1.000+</p>
           </div>
-          <div className="bg-white/5 p-4 rounded-3xl border border-white/5 text-center group hover:bg-white/10 transition-all">
-            <p className="text-[9px] font-black opacity-40 uppercase tracking-widest mb-1">XP System</p>
-            <p className={`text-xl font-black ${isLinearProgressionEnabled ? 'text-green-400' : 'text-orange-400'}`}>
-              {isLinearProgressionEnabled ? 'LINEAR' : 'FREE'}
-            </p>
-          </div>
-          <button 
-            onClick={() => toggleLinearProgression()}
-            className="bg-[var(--color-accent)] text-white p-4 rounded-3xl shadow-xl shadow-[var(--color-accent)]/20 hover:scale-105 active:scale-95 transition-all flex flex-col items-center justify-center"
-          >
-            <p className="text-[9px] font-black uppercase tracking-widest">Spielfluss</p>
-            <p className="text-xs font-black uppercase">Ändern</p>
-          </button>
         </div>
       </section>
 
@@ -235,17 +205,43 @@ export default function SettingsPage() {
           </section>
 
           <section className="space-y-6">
+            <h2 className="text-xl font-black uppercase tracking-tight border-b border-white/5 pb-2">🔊 Abspiel-Optionen</h2>
+            <div className="bg-white/5 p-6 rounded-3xl border border-white/5 space-y-4">
+              <p className="text-xs opacity-50 font-bold uppercase tracking-widest">YouTube Player Modus</p>
+              <div className="flex bg-black/20 p-1 rounded-2xl">
+                <button 
+                  onClick={() => setPreferredPlayer('standard')}
+                  className={`flex-1 py-3 rounded-xl font-black text-xs transition-all ${preferredPlayer === 'standard' ? 'bg-[var(--color-accent)] text-white shadow-xl' : 'opacity-40 hover:opacity-100'}`}
+                >
+                  STANDARD
+                </button>
+                <button 
+                  onClick={() => setPreferredPlayer('music')}
+                  className={`flex-1 py-3 rounded-xl font-black text-xs transition-all ${preferredPlayer === 'music' ? 'bg-[var(--color-accent)] text-white shadow-xl' : 'opacity-40 hover:opacity-100'}`}
+                >
+                  MUSIC MODE (BETA)
+                </button>
+              </div>
+              <p className="text-[10px] italic opacity-40">
+                {preferredPlayer === 'music' 
+                  ? 'Hinweis: Music Mode sieht besser aus, ist aber restriktiver bei einigen Songs.' 
+                  : 'Hinweis: Standard YouTube ist am zuverlässigsten für alle Songs.'}
+              </p>
+            </div>
+          </section>
+
+          <section className="space-y-6">
             <h2 className="text-xl font-black uppercase tracking-tight border-b border-white/5 pb-2 text-red-500/50">⚠️ Gefahrzone</h2>
             <button 
               onClick={() => {
-                if(confirm('Möchtest du wirklich deinen gesamten Fortschritt und alle Unlocks löschen?')) {
+                if(confirm('Möchtest du wirklich deinen gesamten Fortschritt (XP) löschen?')) {
                   resetProgress();
                   alert('Fortschritt wurde zurückgesetzt!');
                 }
               }}
               className="w-full p-4 rounded-2xl border-2 border-red-500/20 bg-red-500/5 text-red-500 font-black hover:bg-red-500/10 transition-all uppercase text-xs tracking-widest"
             >
-              Fortschritt Zurücksetzen
+              XP Zurücksetzen
             </button>
           </section>
         </div>
@@ -253,8 +249,8 @@ export default function SettingsPage() {
 
       {/* Info */}
       <footer className="pt-20 opacity-30 text-center space-y-2">
-        <p className="text-xs font-black tracking-widest uppercase">PHOMU PLATFORM v1.5.0</p>
-        <p className="text-[10px] uppercase font-bold text-[var(--color-accent)]">Unlocked: 1000 Track Expansion</p>
+        <p className="text-xs font-black tracking-widest uppercase">PHOMU PLATFORM v1.5.1</p>
+        <p className="text-[10px] uppercase font-bold text-[var(--color-accent)]">All Packs Enabled</p>
         <div className="flex justify-center gap-4 pt-4">
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           <p className="text-[9px] uppercase font-black">All Systems Functional</p>

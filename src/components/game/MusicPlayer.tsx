@@ -1,128 +1,190 @@
 /**
- * MusicPlayer
- *
- * YouTube-Embed für die RevealPhase.
- * Extrahiert die Video-ID aus dem links.youtube-Feld (ID, Voll-URL oder youtu.be).
- * Startet stumm geschaltet (Autoplay-Policy), Ton-Button zum Einschalten.
+ * MusicPlayer (Robust Version)
+ * 
+ * Uses the YouTube IFrame Player API for advanced state tracking 
+ * and reliable error detection (Region blocks, embed restrictions).
  */
 'use client';
 
-import { useState } from 'react';
-
-// ─── YouTube-ID-Extraktion ────────────────────────────────────────
-
-/**
- * Gibt eine bereinigte YouTube-Video-ID zurück oder null.
- * Unterstützt: rohe ID (11 Zeichen), youtube.com/watch?v=…, youtu.be/…
- */
-function extractYouTubeId(raw: string): string | null {
-  if (!raw || raw === 'TODO:verify' || raw.startsWith('TODO')) return null;
-
-  // Bereits eine reine Video-ID (11 Zeichen, keine Sonderzeichen)
-  if (/^[a-zA-Z0-9_-]{11}$/.test(raw)) return raw;
-
-  try {
-    const url = new URL(raw.startsWith('http') ? raw : `https://${raw}`);
-
-    // youtube.com/watch?v=ID
-    if (url.hostname.includes('youtube.com')) {
-      return url.searchParams.get('v');
-    }
-    // youtu.be/ID
-    if (url.hostname === 'youtu.be') {
-      return url.pathname.slice(1).split('/')[0] ?? null;
-    }
-  } catch {
-    // keine gültige URL
-  }
-
-  return null;
-}
-
-// ─── Props ────────────────────────────────────────────────────────
+import { useState, useEffect, useRef } from 'react';
+import { useGameStore } from '@/stores/game-store';
 
 interface MusicPlayerProps {
-  /** Wert aus song.links.youtube */
   youtubeLink: string;
-  /** Startzeitpunkt in Sekunden (optional, aus song.previewTimestamp) */
   startSeconds?: number;
 }
 
-// ─── Komponente ───────────────────────────────────────────────────
+declare global {
+  interface Window {
+    onYouTubeIframeAPIReady: () => void;
+    YT: any;
+  }
+}
 
 export function MusicPlayer({ youtubeLink, startSeconds = 0 }: MusicPlayerProps) {
+  const { preferredPlayer, currentSongSource, skipBrokenSong } = useGameStore();
+  
+  const [playerState, setPlayerState] = useState<'loading' | 'playing' | 'error' | 'fallback'>('loading');
   const [muted, setMuted] = useState(false);
-  const [useStandardFallback, setUseStandardFallback] = useState(false);
+  const [activeDomain, setActiveDomain] = useState<'music.youtube.com' | 'www.youtube.com'>(
+    preferredPlayer === 'music' ? 'music.youtube.com' : 'www.youtube.com'
+  );
+
+  const playerRef = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const videoId = extractYouTubeId(youtubeLink);
 
-  // Kein gültiges Video vorhanden
+  // 1. YouTube API Laden
+  useEffect(() => {
+    if (!window.YT) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+    }
+  }, []);
+
+  // 2. Player Initialisieren / Re-Initialisieren bei Domain-Wechsel
+  useEffect(() => {
+    if (!videoId) return;
+
+    const initPlayer = () => {
+      // Alten Player aufräumen falls vorhanden
+      if (playerRef.current) {
+        try { playerRef.current.destroy(); } catch(e) {}
+      }
+
+      playerRef.current = new window.YT.Player(containerRef.current, {
+        height: '100%',
+        width: '100%',
+        videoId: videoId,
+        host: `https://${activeDomain}`,
+        playerVars: {
+          autoplay: 1,
+          mute: muted ? 1 : 0,
+          start: startSeconds,
+          rel: 0,
+          modestbranding: 1,
+          origin: window.location.origin
+        },
+        events: {
+          onReady: (event: any) => {
+            setPlayerState('playing');
+            event.target.playVideo();
+          },
+          onError: (event: any) => {
+            console.warn('❌ YouTube Player Error:', event.data, activeDomain);
+            handleError();
+          },
+          onStateChange: (event: any) => {
+            // Wenn der Player auf "Buffer" hängen bleibt (oft bei Restrictions)
+            if (event.data === window.YT.PlayerState.UNSTARTED) {
+              // Timeout für Load-Check
+              setTimeout(() => {
+                if (playerState === 'loading') handleError();
+              }, 4000);
+            }
+          }
+        }
+      });
+    };
+
+    if (window.YT && window.YT.Player) {
+      initPlayer();
+    } else {
+      window.onYouTubeIframeAPIReady = initPlayer;
+    }
+
+    return () => {
+      if (playerRef.current) {
+        try { playerRef.current.destroy(); } catch(e) {}
+      }
+    };
+  }, [videoId, activeDomain]); // Re-run when domain changes (fallback)
+
+  const handleError = () => {
+    if (activeDomain === 'music.youtube.com') {
+      console.log('🔄 Fallback to Standard YouTube...');
+      setActiveDomain('www.youtube.com');
+      setPlayerState('fallback');
+    } else {
+      setPlayerState('error');
+      // Auto-Skip for Random Draws after delay
+      if (currentSongSource === 'random') {
+        setTimeout(() => skipBrokenSong(), 3000);
+      }
+    }
+  };
+
   if (!videoId) {
-    return (
-      <div
-        className="flex items-center justify-center h-20 rounded-xl text-sm opacity-50 border"
-        style={{ borderColor: 'var(--color-border)' }}
-      >
-        🎵 Kein Musik-Link verfügbar
-      </div>
-    );
+    return <div className="h-40 flex items-center justify-center opacity-30 border rounded-2xl italic">Kein Video verfügbar</div>;
   }
 
-  // YouTube Music Embed URL vs Standard YouTube
-  const domain = useStandardFallback ? 'www.youtube.com' : 'music.youtube.com';
-  const embedUrl =
-    `https://${domain}/embed/${videoId}` +
-    `?autoplay=1&mute=${muted ? 1 : 0}&start=${startSeconds}&rel=0&modestbranding=1`;
-
   return (
-    <div className="w-full rounded-2xl overflow-hidden shadow-2xl transition-all" style={{ border: '1px solid var(--color-border)' }}>
-      {/* Video-Frame */}
-      <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 */ }}>
-        <iframe
-          key={`${videoId}-${muted}-${useStandardFallback}`}
-          src={embedUrl}
-          title="Phomu Music Player"
-          allow="autoplay; encrypted-media"
-          onError={() => setUseStandardFallback(true)}
-          className="absolute inset-0 w-full h-full"
-        />
-        {/* Anti-Spoiler Overlay (Optional - usually handles in parent, but here we cover for safety) */}
-        {!useStandardFallback && (
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm pointer-events-none flex items-center justify-center">
-             <div className="w-12 h-12 rounded-full border-4 border-white/20 border-t-[var(--color-accent)] animate-spin" />
+    <div className="w-full rounded-2xl overflow-hidden shadow-2xl transition-all border border-white/10">
+      <div className="relative w-full aspect-video bg-black">
+        <div ref={containerRef} className="absolute inset-0 w-full h-full" />
+        
+        {/* Overlays / States */}
+        {playerState === 'loading' && (
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center gap-4 z-10">
+            <div className="w-12 h-12 rounded-full border-4 border-white/20 border-t-[var(--color-accent)] animate-spin" />
+            <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Lade Musik...</p>
+          </div>
+        )}
+
+        {playerState === 'error' && (
+          <div className="absolute inset-0 bg-red-500/20 backdrop-blur-xl flex flex-col items-center justify-center gap-4 z-20 text-center px-8">
+            <span className="text-4xl">⚠️</span>
+            <h3 className="font-black uppercase text-sm">Musik nicht verfügbar</h3>
+            <p className="text-[10px] opacity-70 leading-relaxed max-w-xs">
+              Dieses Video ist in deiner Region gesperrt oder wurde entfernt.
+            </p>
+            {currentSongSource === 'qr' ? (
+              <button 
+                onClick={() => skipBrokenSong()}
+                className="mt-4 px-6 py-2 bg-white text-black rounded-lg font-black text-[10px] hover:scale-105 transition-all"
+              >
+                KARTE ÜBERSPRINGEN
+              </button>
+            ) : (
+              <p className="text-[9px] font-black text-white/40 uppercase tracking-widest mt-4 animate-pulse">
+                Draw wird automatisch wiederholt...
+              </p>
+            )}
           </div>
         )}
       </div>
 
-      {/* Ton-Steuerung */}
-      <div
-        className="flex items-center justify-between px-4 py-3"
-        style={{ backgroundColor: 'var(--color-bg-card)' }}
-      >
+      {/* Controls */}
+      <footer className="bg-[var(--color-bg-card)] px-5 py-4 flex items-center justify-between">
         <div className="flex flex-col">
-          <span className="text-[10px] font-black uppercase tracking-widest opacity-40">Source</span>
-          <span className="text-xs font-bold">{useStandardFallback ? 'YouTube Video' : 'YouTube Music'}</span>
+          <span className="text-[9px] font-black opacity-30 uppercase tracking-widest">Player</span>
+          <span className={`text-[10px] font-black ${activeDomain === 'music.youtube.com' ? 'text-green-400' : 'text-orange-400'}`}>
+            {activeDomain === 'music.youtube.com' ? 'MUSIC MODE (YT)' : 'STANDARD MODE (YT)'}
+          </span>
         </div>
+
         <div className="flex gap-2">
-          {useStandardFallback && !domain.includes('music') && (
-            <button 
-              onClick={() => setUseStandardFallback(false)}
-              className="text-[9px] font-black uppercase opacity-40 hover:opacity-100"
-            >
-              Retry Music Mode
-            </button>
-          )}
-          <button
-            onClick={() => setMuted((m) => !m)}
-            className={`
-              flex items-center gap-2 text-xs font-black px-5 py-2 rounded-xl
-              transition-all shadow-lg active:scale-95
-              ${muted ? 'bg-white/10 text-white opacity-60' : 'bg-green-500 text-white shadow-green-500/20'}
-            `}
-          >
-            {muted ? '🔈 SOUND MUTE' : '🔊 SOUND ON'}
-          </button>
+           <button 
+             onClick={() => setMuted(!muted)}
+             className={`px-4 py-2 rounded-xl text-[10px] font-black transition-all ${muted ? 'bg-white/10 opacity-40' : 'bg-green-500 text-white'}`}
+           >
+             {muted ? '🔈 MUTED' : '🔊 LIVE'}
+           </button>
         </div>
-      </div>
+      </footer>
     </div>
   );
+}
+
+function extractYouTubeId(raw: string): string | null {
+  if (!raw || raw.startsWith('TODO')) return null;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(raw)) return raw;
+  try {
+    const url = new URL(raw.startsWith('http') ? raw : `https://${raw}`);
+    if (url.hostname.includes('youtube.com')) return url.searchParams.get('v');
+    if (url.hostname === 'youtu.be') return url.pathname.slice(1).split('/')[0];
+  } catch {}
+  return null;
 }

@@ -83,75 +83,95 @@ export function TimelineMode({ song, onAnswer, roundNumber = 1 }: TimelineModePr
   }, [selectedSlot, isRevealed]);
 
   return (
-    <div className="flex flex-col items-center px-4 py-8 gap-8 max-w-xl mx-auto min-h-[60vh]">
+    <div className="flex flex-col items-center px-4 py-8 gap-6 max-w-xl mx-auto min-h-[80vh] pb-40">
       
-      {/* Dynamic Instruction */}
-      <div className="text-center space-y-2">
-        <h2 className="text-2xl font-black uppercase tracking-tight">
-          {!isRevealed ? "Hör genau hin!" : selectedSlot === correct ? "Goldrichtig! ✨" : "Leider daneben... 🌧️"}
-        </h2>
-        <p className="opacity-50 text-xs font-bold uppercase tracking-widest">
-          {!isRevealed ? "Wähle den Slot (Tasten 1-4 oder Klicken)" : "Das war die Lösung"}
+      {/* Dynamic Header / Instruction */}
+      <div className="text-center space-y-4 w-full">
+        <div className="flex flex-col items-center gap-2">
+           <h2 className="text-2xl font-black uppercase tracking-tight">
+             {!isRevealed ? "Hör genau hin!" : selectedSlot === correct ? "Goldrichtig! ✨" : "Leider daneben... 🌧️"}
+           </h2>
+           
+           {/* New 'Now Listening' Indicator that replaces the floating card */}
+           <AnimatePresence mode="wait">
+             {!selectedSlot && !isRevealed && (
+               <motion.div 
+                 initial={{ scale: 0.8, opacity: 0 }}
+                 animate={{ scale: 1, opacity: 1 }}
+                 exit={{ scale: 0.8, opacity: 0 }}
+                 className="flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full"
+               >
+                 <div className="w-2 h-2 rounded-full bg-[var(--color-accent)] animate-ping" />
+                 <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Suchen...</p>
+               </motion.div>
+             )}
+           </AnimatePresence>
+        </div>
+        
+        <p className="opacity-40 text-[9px] font-black uppercase tracking-[0.2em]">
+          {!isRevealed ? "Wo passt diesen Song zeitlich am besten hin?" : "Das war die Lösung"}
         </p>
       </div>
 
       {/* Timeline Layout */}
-      <div className="w-full relative flex flex-col gap-12 mt-4">
-        {/* Connection Line */}
-        <div className="absolute left-1/2 top-4 bottom-4 w-1 bg-white/5 -translate-x-1/2 rounded-full" />
+      <div className="w-full relative flex flex-col mt-8">
+        {/* The Vertical Line - Moved to Left for cleaner layout */}
+        <div className="absolute left-8 top-0 bottom-0 w-1 bg-white/5 rounded-full" />
 
-        <div className="space-y-6">
+        <div className="space-y-12">
           {[0, 1, 2, 3].map((slotIdx) => {
             const isTarget = selectedSlot === slotIdx;
             
             return (
-              <div key={slotIdx} className="relative">
-                {/* Slot Area as Button for Accessibility */}
+              <div key={slotIdx} className="relative pl-16">
+                {/* Slot Area */}
                 <button 
                   onClick={() => handleDrop(slotIdx)}
                   className={`
                     w-full h-24 rounded-2xl border-2 border-dashed flex items-center justify-center transition-all focus:outline-none focus:ring-4 focus:ring-[var(--color-accent)]/50
-                    ${isTarget ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 scale-105' : 'border-white/10 hover:border-white/20'}
+                    ${isTarget ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 scale-102' : 'border-white/5 bg-white/[0.02] hover:border-white/20'}
                     ${isRevealed && slotIdx === correct ? 'border-green-500 bg-green-500/20' : ''}
                     ${isRevealed && isTarget && slotIdx !== correct ? 'border-red-500 bg-red-500/20' : ''}
                   `}
                 >
                   {isTarget && (
-                    <div className="text-center">
+                    <div className="text-center p-4">
                       {!isRevealed ? (
-                        <p className="text-[10px] font-black uppercase tracking-widest animate-pulse">Eingesetzt</p>
+                        <div className="flex items-center gap-3">
+                           <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">🎵</div>
+                           <p className="text-[10px] font-black uppercase tracking-widest animate-pulse">Eingesetzt</p>
+                        </div>
                       ) : (
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-4">
                            <img src={song.coverUrl || '/placeholder-cd.png'} className="w-16 h-16 rounded-lg object-cover shadow-2xl" alt="Cover" />
                            <div className="text-left">
-                             <p className="text-xs font-black uppercase">{song.artist}</p>
-                             <p className="text-[10px] font-bold opacity-60 text-white/40">{song.title}</p>
-                             <p className="text-lg font-black text-green-400">{song.year}</p>
+                             <p className="text-xs font-black uppercase truncate max-w-[150px]">{song.artist}</p>
+                             <p className="text-[9px] font-bold opacity-40 uppercase truncate max-w-[150px] leading-none mb-1">{song.title}</p>
+                             <p className="text-xl font-black text-white">{song.year}</p>
                            </div>
                         </div>
                       )}
                     </div>
                   )}
                   {!isTarget && !isRevealed && (
-                    <p className="text-[10px] font-black opacity-20 uppercase tracking-widest">Slot {slotIdx + 1}</p>
+                    <span className="text-[9px] font-black opacity-10 uppercase tracking-widest">Position {slotIdx + 1}</span>
                   )}
                   {isRevealed && !isTarget && slotIdx === correct && (
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 text-green-500 font-black flex items-center gap-2">
-                       <span className="text-xs">RICHTIG</span>
+                       <span className="text-[10px]">HIER</span>
                        <span className="text-2xl">←</span>
                     </div>
                   )}
                 </button>
 
-                {/* Anchor Card */}
+                {/* Anchor Card - Moved to the Left on the Line */}
                 {slotIdx < 3 && anchors[slotIdx] && (
-                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 z-10">
-                    <div className="px-4 py-2 bg-[var(--color-bg-card)] border border-white/10 rounded-xl shadow-2xl">
-                      <p className="text-xl font-black text-center leading-none">{anchors[slotIdx].year}</p>
-                      <p className="text-[8px] font-bold opacity-40 uppercase text-center truncate max-w-[80px]">
-                        {anchors[slotIdx].artist}
-                      </p>
+                  <div className="absolute -bottom-10 left-0 -translate-x-1/2 z-20">
+                    <div className="w-16 h-16 bg-[var(--color-bg-card)] border-2 border-white/10 rounded-full flex flex-col items-center justify-center shadow-2xl ring-4 ring-black/40">
+                      <p className="text-sm font-black text-white leading-none">{anchors[slotIdx].year}</p>
                     </div>
+                    {/* Visual Hint for the Anchor */}
+                    <div className="absolute top-1/2 left-20 -translate-y-1/2 w-4 h-[1px] bg-white/20" />
                   </div>
                 )}
               </div>
@@ -160,14 +180,14 @@ export function TimelineMode({ song, onAnswer, roundNumber = 1 }: TimelineModePr
         </div>
       </div>
 
-      <footer className="fixed bottom-10 left-0 right-0 px-6 z-[60]">
-        <div className="max-w-md mx-auto grid grid-cols-2 gap-4">
+      <footer className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/90 to-transparent z-[60]">
+        <div className="max-w-md mx-auto grid grid-cols-2 gap-4 pb-4">
           {canDiscard && !isRevealed && (
             <button 
               onClick={() => onAnswer(false, 0)}
               className="py-4 bg-white/5 border border-white/10 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-white/10 transition-all"
             >
-              Abgeben (10/10)
+              Abgeben
             </button>
           )}
           
@@ -176,28 +196,13 @@ export function TimelineMode({ song, onAnswer, roundNumber = 1 }: TimelineModePr
             onClick={handleReveal}
             className={`
               col-span-full py-5 rounded-3xl font-black text-lg transition-all shadow-2xl
-              ${selectedSlot !== null && !isRevealed ? 'bg-[var(--color-accent)] animate-bounce text-white' : 'bg-white/10 opacity-40 text-white/40'}
+              ${selectedSlot !== null && !isRevealed ? 'bg-[var(--color-accent)] shadow-[0_10px_40px_-10px_rgba(var(--color-accent-rgb),0.5)] scale-105 text-white' : 'bg-white/5 opacity-20 text-white/40'}
             `}
           >
-            {isRevealed ? "GEWERTET" : "JETZT AUFLÖSEN"}
+            {isRevealed ? "FERTIG" : "AUFLÖSEN"}
           </button>
         </div>
       </footer>
-
-      {/* Initial Blank Card Placeholder */}
-      <AnimatePresence>
-        {!selectedSlot && (
-          <motion.div 
-            initial={{ y: 200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ scale: 0.5, opacity: 0 }}
-            className="fixed bottom-32 left-1/2 -translate-x-1/2 w-48 h-64 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl border-2 border-white/20 backdrop-blur-2xl flex flex-col items-center justify-center gap-4 z-50 pointer-events-none shadow-[0_0_50px_rgba(255,255,255,0.1)]"
-          >
-            <div className="w-12 h-12 rounded-full border-4 border-[var(--color-accent)] animate-ping" />
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] opacity-50">Suchen...</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
