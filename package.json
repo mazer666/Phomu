@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate-songs": "npx tsx src/utils/validate-song-data.ts"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

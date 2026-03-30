@@ -1,0 +1,1165 @@
+{
+  "meta": {
+    "pack": "Global Hits 1950-2026",
+    "version": "1.0.0",
+    "description": "50 ikonische Songs aus 7 Jahrzehnten globaler Popkultur",
+    "songCount": 50,
+    "lyricsStatus": "pending – Lyrics werden über das Admin-Tool manuell eingetragen"
+  },
+  "songs": [
+    {
+      "id": "elvis-hound-dog-1956",
+      "title": "Hound Dog",
+      "artist": "Elvis Presley",
+      "year": 1956,
+      "country": "US",
+      "genre": "Rock'n'Roll",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Nostalgic", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Dieses Lied ist eine Coverversion – das Original wurde 1952 von Rhythm-&-Blues-Sängerin Big Mama Thornton aufgenommen.",
+        "Elvis nahm den Song im Juli 1956 in 31 Aufnahmen an einem einzigen Tag auf.",
+        "Hielt sich 11 Wochen auf Platz 1 der US-Billboard-Charts – ein Rekord für die damalige Zeit.",
+        "Stampfendes Rockabilly-Schlagzeug, aggressive Gitarrenriffs und ein wütend-energischer Gesangsstil.",
+        "Elvis Presley singt einem untreuen Partner, dass er 'nichts als ein Hund' ist."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "chuck-berry-johnny-b-goode-1958",
+      "title": "Johnny B. Goode",
+      "artist": "Chuck Berry",
+      "year": 1958,
+      "country": "US",
+      "genre": "Rock'n'Roll",
+      "difficulty": "medium",
+      "mood": ["Road Trip", "Nostalgic", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Eröffnungs-Gitarrenriff gilt als eines der einflussreichsten aller Zeiten und war Berrys Hommage an seinen Mentor Carl Hogan.",
+        "Dieser Song ist einer der wenigen Rock'n'Roll-Titel auf der Voyager Golden Record, die 1977 ins All geschickt wurde.",
+        "Erschienen 1958 auf Chess Records; die Hauptfigur basiert lose auf Chuck Berry selbst.",
+        "Mitreißendes Gitarrenintro, das direkt in einen treibenden 12-Takt-Blues übergeht.",
+        "Chuck Berry singt über einen Jungen aus Louisiana namens Johnny, der ein großer Rock'n'Roll-Star werden soll."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "aretha-franklin-respect-1967",
+      "title": "Respect",
+      "artist": "Aretha Franklin",
+      "year": 1967,
+      "country": "US",
+      "genre": "Soul",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Rebel", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Original wurde 1965 von Otis Redding geschrieben – Aretha verwandelte es in eine Hymne der Bürgerrechts- und Frauenbewegung.",
+        "Die berühmte Buchstabier-Sequenz im Refrain wurde spontan im Studio von Aretha und ihren Backing-Sängerinnen erfunden.",
+        "Erschienen 1967 auf Atlantic Records; brachte Aretha Franklin ihren ersten Grammy für 'Best Rhythm & Blues Recording'.",
+        "Kraftvolle Soul-Stimme, grooviges Bläserarrangement und ein Chor, der ein einzelnes englisches Wort immer wiederholt.",
+        "Aretha Franklin fordert von ihrem Partner das, was jeder Mensch verdient – buchstabiert es sogar aus."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "beatles-hey-jude-1968",
+      "title": "Hey Jude",
+      "artist": "The Beatles",
+      "year": 1968,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Nostalgic", "Epic", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Paul McCartney schrieb diesen Song, um John Lennons Sohn Julian aufzumuntern, dessen Eltern sich gerade trennten.",
+        "Mit 7 Minuten und 11 Sekunden war es damals die längste Single, die je Platz 1 der UK-Charts erreichte.",
+        "Erschien 1968 als erste Single auf dem Beatles-eigenen Apple Records Label.",
+        "Beginnt solo mit Piano, baut sich zur vollständigen Band auf und endet mit einem mehrstimmigen, sich wiederholenden Outro.",
+        "Paul McCartney fordert jemanden namens 'Jude' auf, sich zu öffnen – das berühmte 'Na na na'-Outro dauert über vier Minuten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "queen-bohemian-rhapsody-1975",
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Epic", "Nostalgic", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Freddie Mercury sammelte die Fragmente dieses Stücks über viele Jahre in Notizbüchern, bevor er sie zu einem Song zusammensetzte.",
+        "Die Oper-Sektion in der Mitte enthält das arabische Wort 'Bismillah', das Freddie Mercury bewusst einbaute.",
+        "Mit sechs Minuten galt das Stück als zu lang für eine Single – Radiomoderatoren spielten es trotzdem in Dauerschleife.",
+        "Das Stück wechselt zwischen stiller Ballade, Oper und hartem Rock – kein anderer Song klingt so.",
+        "Queen erzählen eine dramatische Geschichte, die damit beginnt, ob das alles Real Life oder nur Fantasy ist."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "fJ9rUzIMcZQ"
+      }
+    },
+    {
+      "id": "abba-dancing-queen-1976",
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "year": 1976,
+      "country": "SE",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Summer Vibes", "Nostalgic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Beim ersten Live-Auftritt dieses Liedes saß König Carl XVI. Gustaf von Schweden im Publikum – am Abend vor seiner Hochzeit.",
+        "Der charakteristische Piano-Arpeggio zu Beginn steht in D-Dur und gilt als einer der bekanntesten Einstiege der Popgeschichte.",
+        "Erschienen 1976 auf dem Album 'Arrival'; die einzige ABBA-Single, die jemals Platz 1 in den USA erreichte.",
+        "Disco-Pop mit glitzernden Synthesizern, aufbauenden Streichern und harmonischem Frauengesang.",
+        "Das schwedische Quartett ABBA besingt das Gefühl, die Königin der Tanzfläche zu sein – jung und sweet, only seventeen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xFrGuyw1V8s"
+      }
+    },
+    {
+      "id": "gloria-gaynor-i-will-survive-1978",
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "year": 1978,
+      "country": "US",
+      "genre": "Disco",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Heartbreak", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Dieses Stück wurde ursprünglich als B-Seite veröffentlicht und erst durch Proteste von Diskjockeys zur A-Seite befördert.",
+        "Gloria Gaynor nahm den Song auf, während sie mit einem Rückengips im Studio saß – direkt nach einer OP.",
+        "Gewann 1980 den Grammy für 'Best Disco Recording' – bisher der einzige Preisträger dieser einmalig vergebenen Kategorie.",
+        "Charakteristische Disco-Streicher im Intro, die in einen treibenden Viervierteltakt und eine kraftvolle Stimme übergehen.",
+        "Gloria Gaynor singt nach einer schmerzhaften Trennung: Sie hat überlebt und braucht ihren Ex nicht mehr."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "mj-thriller-1982",
+      "title": "Thriller",
+      "artist": "Michael Jackson",
+      "year": 1982,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Neon Night", "Party Anthem", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das 14-minütige Musikvideo wurde von Horror-Regisseur John Landis inszeniert und kostete damals 500.000 Dollar.",
+        "Horror-Schauspieler Vincent Price sprach den berühmten Rap-Teil am Ende des Songs ein.",
+        "Das gleichnamige Album ist mit über 70 Millionen verkauften Exemplaren das meistverkaufte Album aller Zeiten.",
+        "Synthie-Streicher, knallende Snare und Schritte in der Dunkelheit – der Aufbau erzeugt echte Gänsehaut.",
+        "Michael Jackson tanzt mit Untoten in einem der berühmtesten Musikvideos aller Zeiten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "previewTimestamp": {
+        "start": 40,
+        "end": 100
+      },
+      "links": {
+        "youtube": "sOnqjkJTMaA"
+      }
+    },
+    {
+      "id": "cyndi-lauper-girls-just-want-1983",
+      "title": "Girls Just Want to Have Fun",
+      "artist": "Cyndi Lauper",
+      "year": 1983,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Party Anthem", "Nostalgic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Original dieses Liedes war ein Rocksong, der 1979 von Robert Hazard aus einer männlichen Perspektive geschrieben wurde.",
+        "Das Musikvideo gehörte zu den ersten, die auf MTV massiv rotierten und half, den Sender zu etablieren.",
+        "Erschienen 1983 auf Laupers Debütalbum 'She's So Unusual'; lief über 40 Wochen in den Billboard Hot 100.",
+        "Bubblegum-Synthie-Pop der 80er mit einer gespielten, nasalen Stimme und einem Refrain, der zur Mädchen-Hymne wurde.",
+        "Cyndi Lauper singt, dass Mädchen am Ende des Tages einfach nur Spaß haben wollen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "david-bowie-lets-dance-1983",
+      "title": "Let's Dance",
+      "artist": "David Bowie",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Nostalgic", "Neon Night"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Gitarrist Stevie Ray Vaughan spielte die prägenden Gitarrenparts – obwohl er damals noch völlig unbekannt war.",
+        "Produziert von Nile Rodgers (Chic), der Bowie überredete, einen einfacheren, kommerzielleren Sound auszuprobieren.",
+        "Erschienen auf dem Album 'Let's Dance' (1983); es war Bowies meistverkauftes Album zu Lebzeiten.",
+        "Funkiger Groove, strahlende Blechbläser und eine einladende Gitarre – deutlich tanzbarder als Bowies frühere Werke.",
+        "David Bowie lädt unter dem Licht eines fremden Mondes und einem roten Schuh zum Tanzen ein."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "george-michael-careless-whisper-1984",
+      "title": "Careless Whisper",
+      "artist": "George Michael",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Heartbreak", "Nostalgic", "Dance Floor"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "George Michael schrieb diesen Song im Alter von 17 Jahren – die Melodie fiel ihm ein, während er in einem Bus saß.",
+        "Das berühmte Saxofon-Riff zu Beginn gilt als eines der bekanntesten Einstiege in der gesamten Popgeschichte.",
+        "Erschienen 1984; in Großbritannien war es die meistverkaufte Single des gesamten Jahres.",
+        "Langsame Ballade mit einem elegischen, sofort erkennbaren Saxofon-Intro, das in einen gefühlvollen Soul-Gesang übergeht.",
+        "George Michael bereut eine Untreue und singt über schuldbewusste Füße, die keinen Rhythmus mehr finden."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "prince-purple-rain-1984",
+      "title": "Purple Rain",
+      "artist": "Prince",
+      "year": 1984,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": ["Power Ballad", "Heartbreak", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück entstand als Live-Improvisation im First Avenue Club in Minneapolis – die Version im Film wurde wirklich live aufgezeichnet.",
+        "Das Stück dauert über acht Minuten; der Gitarrensolo am Ende ist einer der gefeiertsten der Rockgeschichte.",
+        "Titelsong des halbbiografischen Films von 1984; der Film gewann den Oscar für das Beste Originaldrehbuch.",
+        "Kraftvolle Rock-Ballade mit anschwellendem Gitarrensolo, feierlichen Synthesizern und einer emotional aufgeladenen Stimme.",
+        "Prince singt über Liebe, Schmerz und das Ende einer Beziehung – unter violettem Regen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "aha-take-on-me-1985",
+      "title": "Take On Me",
+      "artist": "a-ha",
+      "year": 1985,
+      "country": "NO",
+      "genre": "Synth-Pop",
+      "difficulty": "easy",
+      "mood": ["Neon Night", "Nostalgic", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Musikvideo kombiniert Bleistiftskizzen-Animation mit Realfilm – eine Rotoskopie-Technik, die 16 Wochen Arbeit kostete.",
+        "Der Song wurde zunächst zweimal veröffentlicht und flopte – erst die dritte Version mit dem neuen Video wurde ein Welthit.",
+        "Erschienen 1985; in Deutschland war die melancholische Ballade 'The Sun Always Shines on TV' des gleichen Trios sogar erfolgreicher.",
+        "Treibende Synthesizer-Arpeggios, ein extrem hoher Falsett-Gesang und eines der prägnantesten Synthie-Intros der 80er.",
+        "Das norwegische Trio a-ha fordert in einem comicartigen Musikvideo auf: Wage es, dich einzulassen – take on me."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "djV11Xbc914"
+      }
+    },
+    {
+      "id": "madonna-like-a-prayer-1989",
+      "title": "Like a Prayer",
+      "artist": "Madonna",
+      "year": 1989,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Party Anthem", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Musikvideo löste internationale Kontroversen aus: Pepsi-Cola zog eine 5-Millionen-Dollar-Werbekampagne mit Madonna zurück.",
+        "Das Stück enthält einen Gospel-Chor von über 25 Sängerinnen, aufgenommen in einer echten Kirche.",
+        "Erschienen 1989 auf dem gleichnamigen Album; war Madonnas 13. Platz-1-Hit in den USA.",
+        "Beginnt mit ruhigem Piano und Stimme, bevor ein mitreißender Gospel-Chor und Rockgitarren einsetzen.",
+        "Madonna singt in einem kontroversen Musikvideo, dass das Leben wie ein Gebet ist – und sie kniet nieder."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "nirvana-smells-like-teen-spirit-1991",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "year": 1991,
+      "country": "US",
+      "genre": "Grunge",
+      "difficulty": "easy",
+      "mood": ["Rebel", "Party Anthem", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Der Titel entstand, weil jemand an Kurt Cobains Zimmerwand schrieb, er rieche nach einem Deo der Marke 'Teen Spirit'.",
+        "Die Gitarre ist ungewöhnlich tief gestimmt (Bb-Stimmung), was dem Riff seinen besonders schweren, bedrohlichen Klang gibt.",
+        "Erschienen auf dem Album 'Nevermind' (1991); das Album verdrängte Michael Jacksons 'Dangerous' von Platz 1.",
+        "Beginnt mit einem Vier-Noten-Gitarrenriff, wird ruhig bei der Strophe, explodiert dann in einem massiven Refrain.",
+        "Nirvana spielen in einem Musikvideo in einer Schulsporthalle, während alles um sie herum zunehmend chaotisch wird."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "hTWKbfoikeg"
+      }
+    },
+    {
+      "id": "whitney-houston-i-will-always-love-you-1992",
+      "title": "I Will Always Love You",
+      "artist": "Whitney Houston",
+      "year": 1992,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Power Ballad", "Heartbreak", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Original wurde 1974 von Country-Legende Dolly Parton geschrieben – als Abschied an ihren damaligen Manager.",
+        "Produzent David Foster schlug vor, die Einleitung völlig ohne Musikbegleitung zu singen – a cappella.",
+        "Aus dem Soundtrack des Films 'Bodyguard' (1992) mit Kevin Costner; 14 Wochen auf Platz 1 der US-Charts.",
+        "Beginnt a cappella, baut sich langsam auf und entfaltet sich dann zu einer bombastischen Power-Ballade.",
+        "Whitney Houston singt mit einer der mächtigsten Stimmen der Popgeschichte über unvergängliche Liebe."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "mariah-carey-all-i-want-for-christmas-1994",
+      "title": "All I Want for Christmas Is You",
+      "artist": "Mariah Carey",
+      "year": 1994,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Party Anthem", "Nostalgic", "Chill"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Mariah Carey und Walter Afanasieff schrieben und nahmen diesen Song in nur 15 Minuten spontan im Studio auf.",
+        "Der Song wartete 25 Jahre: Erst 2019 erreichte er Platz 1 der Billboard Hot 100 – ein Vierteljahrhundert nach Veröffentlichung.",
+        "Erschienen 1994 auf dem Weihnachtsalbum 'Merry Christmas'; einer der meistgestreamten Weihnachtssongs aller Zeiten.",
+        "Schimmernde Glöckchen, ein fröhliches Tempogefühl und Mariahs Stimme über mehrere Oktaven – sofort als Weihnachtshit erkennbar.",
+        "Mariah Carey wünscht sich keine Geschenke und keinen Schmuck – nur eine bestimmte Person zu Weihnachten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "spice-girls-wannabe-1996",
+      "title": "Wannabe",
+      "artist": "Spice Girls",
+      "year": 1996,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Party Anthem", "Dance Floor", "Rebel"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück wurde an einem einzigen Tag aufgenommen; der Nonsens-Begriff im Refrain wurde nie offiziell erklärt.",
+        "Das Musikvideo entstand in einer einzigen Kameraeinstellung in einem Londoner Hotel und kostete nur 25.000 Pfund.",
+        "Debütsingle der Spice Girls (1996); direkt auf Platz 1 in 37 Ländern eingestiegen – Rekord für eine Debütsingle.",
+        "Energetischer Girl-Power-Pop mit stampfendem Beat, Rap-Einwürfen und einem mehrstimmigen Refrain.",
+        "Die Spice Girls erklären, was sie wirklich wirklich wollen – und betonen dabei die Bedeutung von Freundschaft."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "britney-spears-baby-one-more-time-1998",
+      "title": "...Baby One More Time",
+      "artist": "Britney Spears",
+      "year": 1998,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Nostalgic", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück wurde ursprünglich für die R&B-Gruppe TLC geschrieben, die es ablehnte.",
+        "Das Schulmädchen-Musikvideo war Britneys eigene Idee – die Plattenfirma wollte ursprünglich ein Animationsvideo.",
+        "Debütsingle von Britney Spears (1998); in über 100 Ländern auf Platz 1 gespielt.",
+        "Eingängiger Synth-Pop mit einer kraftvollen Strophe, einem explodierenden Refrain und einer jugendlichen Stimme.",
+        "Britney Spears fleht in einer Schuluniform ihren Ex an, zurückzukommen und ihr ein Zeichen zu geben."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "backstreet-boys-i-want-it-that-way-1999",
+      "title": "I Want It That Way",
+      "artist": "Backstreet Boys",
+      "year": 1999,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Heartbreak", "Nostalgic", "Power Ballad"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Die Texte wurden vom Schweden Andreas Carlsson und Max Martin geschrieben – und werden oft für ihre logische Inkonsistenz kritisiert.",
+        "Das Stück wurde in mindestens fünf Sprachen veröffentlicht, darunter Deutsch und Spanisch.",
+        "Erschienen 1999 auf dem Album 'Millennium'; die Backstreet Boys waren damals die meistverkaufte Boyband der Welt.",
+        "Harmonischer Boyband-Pop mit mehrstimmigem Chorgesang, emotionalem Streicher-Hintergrund und einem eingängigen Refrain.",
+        "Die Backstreet Boys singen, dass es nur einen Weg gibt, wie sie es wollen – und bitten um Verständnis."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "coldplay-yellow-2000",
+      "title": "Yellow",
+      "artist": "Coldplay",
+      "year": 2000,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": ["Rainy Day", "Heartbreak", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Der Titel 'Yellow' entstand, weil ein Telefonbuch 'Yellow Pages' während einer Aufnahmepause im Studio herumlag.",
+        "Das Musikvideo wurde in einer einzigen Kameraeinstellung am Strand von Studland Bay in Dorset gedreht.",
+        "Erschienen 2000 auf dem Debütalbum 'Parachute'; der Durchbruch für Coldplay in Großbritannien.",
+        "Melancholischer britischer Indie-Rock mit einem Gitarren-Arpeggio-Intro und einem gefühlvollen, anschwellenden Refrain.",
+        "Coldplay-Sänger Chris Martin besingt die Sterne und eine Person, für die er alles tun würde – alles in Gelb."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "eminem-lose-yourself-2002",
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "year": 2002,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "easy",
+      "mood": ["Epic", "Rebel", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück entstand für den Soundtrack des halbautobiografischen Films '8 Mile', in dem Eminem die Hauptrolle spielt.",
+        "Gewann 2003 den Oscar für 'Bestes Originallied' – Eminem schlief während der Zeremonie und hörte erst später davon.",
+        "Hielt sich 12 Wochen auf Platz 1 der Billboard Hot 100 – länger als jeder andere Rap-Song davor.",
+        "Ein hämmerndes Gitarrenriff baut sich auf, Eminems Verse kommen rapide und atemlos, der Refrain ist wie ein Schlachtruf.",
+        "Eminem fragt: Wenn du eine einzige Chance hättest, alles zu geben – würdest du sie ergreifen oder sie verstreichen lassen?"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "beyonce-crazy-in-love-2003",
+      "title": "Crazy in Love",
+      "artist": "Beyoncé ft. Jay-Z",
+      "year": 2003,
+      "country": "US",
+      "genre": "R&B",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Party Anthem", "Summer Vibes"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das markante Horn-Sample stammt aus dem Song 'Are You My Woman? (Tell Me So)' der Chi-Lites aus dem Jahr 1970.",
+        "Der Song enthält das erste öffentliche Duett von Beyoncé und Jay-Z – kurz nach ihrer Beziehungsbekanntmachung.",
+        "Erschienen 2003 auf Beyoncés erstem Soloalbum 'Dangerously in Love'; gewann vier Grammys.",
+        "Mitreißende Brass-Fanfare zu Beginn, die sofort den Ton für einen R&B-Banger mit Rap-Einwürfen setzt.",
+        "Beyoncé und Jay-Z singen über eine Liebe, die sie so verrückt macht, dass sie die Kontrolle verlieren."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "outkast-hey-ya-2003",
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "year": 2003,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Summer Vibes", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "André 3000 schrieb und produzierte das Stück allein und spielte fast alle Instrumente selbst ein.",
+        "Der Song mischt Funk, Rock, Country und Hip-Hop auf eine Weise, die kein Genre eindeutig benennen kann.",
+        "Erschienen 2003 auf dem Doppelalbum 'Speakerboxxx/The Love Below'; eines der meistgespielten Lieder des Jahrzehnts.",
+        "Spritziger, sonniger Sound mit Handclaps, einer Blechgitarre und einem fast paradox fröhlichen Ton trotz komplexer Liebesfragen.",
+        "OutKast fordern das Publikum auf zu schütteln – und vergleichen dabei alte Fotoentwicklungstechnik mit modernen Beziehungen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "amy-winehouse-rehab-2006",
+      "title": "Rehab",
+      "artist": "Amy Winehouse",
+      "year": 2006,
+      "country": "GB",
+      "genre": "Soul",
+      "difficulty": "medium",
+      "mood": ["Rebel", "Chill", "Nostalgic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Amy Winehouses Plattenfirma drängte sie tatsächlich zur Rehabilitation – das dreifache 'No' im Refrain war ihre echte Antwort.",
+        "Produzent Mark Ronson verwendete bewusst analoge Aufnahmemethoden, damit das Stück wie ein Motown-Hit der 1960er klingt.",
+        "Erschienen 2006 auf dem Album 'Back to Black'; das Album gewann fünf Grammys inklusive 'Album des Jahres'.",
+        "Retro-Soul mit einem sarkastisch-selbstbewussten Refrain, Blechbläsern und Winehouses charakteristisch rauer Stimme.",
+        "Amy Winehouse weigert sich trotz des Drucks ihrer Umgebung dreifach hartnäckig, in die Rehabilitation zu gehen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "rihanna-umbrella-2007",
+      "title": "Umbrella",
+      "artist": "Rihanna",
+      "year": 2007,
+      "country": "BB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Rainy Day", "Dance Floor", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück war ursprünglich für Britney Spears vorgesehen – sie lehnte es ab, und Rihanna nahm es an.",
+        "Der Intro-Rap wurde von Jay-Z spontan hinzugefügt, als er Rihanna beim Aufnehmen im Studio besuchte.",
+        "Erschienen 2007; Rihannas erster Platz-1-Hit in Deutschland, wo er sich zehn Wochen hielt.",
+        "Dunkler R&B-Sound mit einem eingängigen Refrain, der ein englisches Wort silbenweise zieht.",
+        "Rihanna bietet einer Person Schutz unter ihrem Regenschirm an – egal was passiert, sie wird da sein."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "lady-gaga-bad-romance-2009",
+      "title": "Bad Romance",
+      "artist": "Lady Gaga",
+      "year": 2009,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Neon Night", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Der Ausruf ganz am Anfang des Songs entstand spontan bei einer Probe und wurde so beliebt, dass er blieb.",
+        "Das Musikvideo spielt in einem futuristischen weißen Raum und war zu der Zeit Gagas teuerste Produktion.",
+        "Erschienen 2009 als erste Single aus der 'The Fame Monster' EP; sofort auf Platz 1 in über 20 Ländern.",
+        "Elektronischer Synth-Pop mit einer eingängigen Silbenfolge im Intro, pulsierendem Bass und dramatischen Strophen.",
+        "Lady Gaga singt von einer ungesunden, obsessiven Liebesbeziehung voller Drama – sie will die ganze Welt von jemandem."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "qrO4YZeyl0I"
+      }
+    },
+    {
+      "id": "adele-rolling-in-the-deep-2010",
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "year": 2010,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Heartbreak", "Power Ballad", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Adele schrieb diesen Song in wenigen Stunden nach einer Trennung; Produzent Paul Epworth überredete sie, den Titel beizubehalten.",
+        "Das charakteristische Schlagzeug-Intro wurde mit Topfdeckeln aufgenommen, um einen rohen, dampfenden Sound zu erzielen.",
+        "Erschienen 2010 auf dem Album '21'; das meistverkaufte Album des gesamten Jahrzehnts weltweit.",
+        "Mächtige Trommeln, bluesige Gitarren und Adeles Powerhouse-Stimme, die direkt aus dem Nichts explodiert.",
+        "Adele rechnet nach einer bitteren Trennung mit ihrem Ex ab und singt über das vertane Potenzial ihrer Liebe."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "rYEDA3JcQqw"
+      }
+    },
+    {
+      "id": "shakira-waka-waka-2010",
+      "title": "Waka Waka (This Time for Africa)",
+      "artist": "Shakira",
+      "year": 2010,
+      "country": "CO",
+      "genre": "World",
+      "difficulty": "easy",
+      "mood": ["Summer Vibes", "Dance Floor", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Der Titel 'Waka Waka' leitet sich von einem Lied der kamerunischen Gruppe Golden Sounds ab, das Shakira als musikalische Basis verwendete.",
+        "Offizieller Song der FIFA Fußball-Weltmeisterschaft 2010 in Südafrika; Shakira spielte ihn bei der Eröffnungsfeier live.",
+        "Erschienen 2010; das Musikvideo gehört zu den meistgesehenen aller Zeiten auf YouTube.",
+        "Afropop-Rhythmen, lebhafter Groove und Shakiras unverwechselbarer Gesang, gemischt mit südafrikanischen Percussion-Elementen.",
+        "Shakira feuert Fußballer an: Diesmal für Afrika – mit einem Hüftschwung, der die Welt begeisterte."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pRpeEdMmmQ0"
+      }
+    },
+    {
+      "id": "stromae-alors-on-danse-2010",
+      "title": "Alors on Danse",
+      "artist": "Stromae",
+      "year": 2010,
+      "country": "BE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": ["Dance Floor", "Neon Night", "Chill"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Stromae ist ein belgischer Künstler mit ruandischen Wurzeln; sein Künstlername ist das rückwärts gelesene Wort für 'Maestro'.",
+        "Das Stück wurde zunächst in Belgien veröffentlicht und erst durch einen Remix von Kanye West international bekannt.",
+        "Erschienen 2010; in über 25 Ländern auf Platz 1 und machte Stromae weltweit über Nacht berühmt.",
+        "Treibender Electro-Beat, melancholische Synthies und ein Sprechgesang auf Französisch über moderne Alltagsprobleme.",
+        "Stromae singt auf Französisch: Wenn Probleme sich häufen, tanzt man einfach weiter – und dann tanzt man noch mehr."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "gotye-somebody-that-i-used-to-know-2011",
+      "title": "Somebody That I Used to Know",
+      "artist": "Gotye ft. Kimbra",
+      "year": 2011,
+      "country": "AU",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": ["Heartbreak", "Rainy Day", "Chill"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Sample, das die Grundlage des Songs bildet, stammt von der brasilianischen Komponistin Luiz Bonfá aus ihrem Stück 'Seville'.",
+        "Das Musikvideo, in dem Körper in ein Tapetenmuster übergehen, entstand mit echter Körperbemalung – ohne digitale Effekte.",
+        "Erschienen 2011 auf dem australischen Album 'Making Mirrors'; in über 25 Ländern auf Platz 1.",
+        "Minimalistischer Indie-Pop mit gezupfter Gitarre und einem Xylofon-ähnlichen Riff, der sich zu einem emotionalen Duett aufbaut.",
+        "Ein australischer Künstler und eine Sängerin aus Neuseeland singen über eine Beziehung, die sie nun zu Fremden gemacht hat."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "MmZexg8sxyk"
+      }
+    },
+    {
+      "id": "david-guetta-titanium-2011",
+      "title": "Titanium",
+      "artist": "David Guetta ft. Sia",
+      "year": 2011,
+      "country": "FR",
+      "genre": "Electronic",
+      "difficulty": "easy",
+      "mood": ["Epic", "Dance Floor", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Sia schrieb den Song ursprünglich für sich selbst und gab ihn an David Guetta ab – nahm ihn aber später für eigene Releases zurück.",
+        "Der Songtitel bezieht sich auf das härteste natürlich vorkommende Metall – als Metapher für Unverwundbarkeit.",
+        "Erschienen 2011 auf Guettas Album 'Nothing but the Beat'; in vielen Ländern ein Nummer-1-Hit.",
+        "Bombastischer EDM-Track mit langsamem Aufbau, der in einen triumphalen Refrain mit Sias unverwechselbarer Stimme mündet.",
+        "Sia singt in diesem David-Guetta-Track, dass sie unzerstörbar ist – Kugeln können sie nicht aufhalten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "psy-gangnam-style-2012",
+      "title": "Gangnam Style",
+      "artist": "PSY",
+      "year": 2012,
+      "country": "KR",
+      "genre": "K-Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Party Anthem", "Summer Vibes"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Gangnam ist ein wohlhabender Bezirk in Seoul – vergleichbar mit Beverly Hills; PSY parodiert satirisch dessen Lifestyle.",
+        "Das Musikvideo war das erste YouTube-Video überhaupt, das die Marke von einer Milliarde Aufrufen knackte.",
+        "Erschienen 2012; führte den Begriff 'K-Pop' einem globalen Massenpublikum ein und veränderte die Musikindustrie.",
+        "Hyper-energetischer K-Pop mit einem unvermeidbaren Synthesizer-Hook und einem Tanz, der einen Reiter imitiert.",
+        "PSY tanzt im Pferdestil durch Seoul und singt über das extravagante Leben im Gangnam-Bezirk."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "9bZkp7q19f0"
+      }
+    },
+    {
+      "id": "pharrell-happy-2013",
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "year": 2013,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Summer Vibes", "Party Anthem", "Dance Floor"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Lied war zunächst Teil des Animationsfilm-Soundtracks 'Despicable Me 2' und wurde erst durch ein 24-Stunden-Musikvideo weltweit bekannt.",
+        "Gewann 2014 den Oscar für 'Bestes Originallied' – Pharrell erschien zur Zeremonie mit einem auffällig großen Hut.",
+        "Erschienen 2013; führte in 24 Ländern die Charts an und war 2014 der meistgestreamte Song auf Spotify.",
+        "Funkiger Soul-Pop mit simplen Handclaps, einer eingängigen Melodie und einem Refrain, der kaum aus dem Kopf geht.",
+        "Pharrell Williams erklärt sich zum Glücksstück und fordert alle auf mitzumachen – das Gefühl ist ansteckend."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZbZSe6N_BXs"
+      }
+    },
+    {
+      "id": "daft-punk-get-lucky-2013",
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams",
+      "year": 2013,
+      "country": "FR",
+      "genre": "Electronic",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Neon Night", "Summer Vibes"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das French-House-Duo hielt seine Identität hinter Helmen so geheim, dass selbst Mitarbeiter ihre Gesichter nicht kannten.",
+        "Gitarrist Nile Rodgers (Chic) spielte das funkige Gitarrenriff, das die gesamte Grundlage des Songs bildet.",
+        "Erschienen 2013 auf dem Album 'Random Access Memories'; weltweit ein Nummer-1-Hit und Kritikerliebling.",
+        "Disco-Funk-Gitarrenriff, ein treibender Bass und Pharrells Falsett-Stimme – klingt wie 1979 mit modernen Beats.",
+        "Daft Punk und Pharrell singen, dass sie vom Glück begünstigt sind und die Nacht noch jung ist."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "lorde-royals-2013",
+      "title": "Royals",
+      "artist": "Lorde",
+      "year": 2013,
+      "country": "NZ",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": ["Chill", "Rebel", "Rainy Day"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Lorde schrieb diesen Song mit 15 Jahren; die Inspiration kam von einem Zeitungsfoto eines Baseballspielers mit dem Spitznamen 'Royal'.",
+        "Das Stück wurde von einem Hobbyisten und Fan entdeckt, der ihre Demo-Aufnahme an ein Label schickte.",
+        "Erschienen 2013 als Debütsingle der Neuseeländerin; gewann zwei Grammys inklusive 'Song des Jahres'.",
+        "Minimalistische Beats, nur Stimme und spärliche Percussion – eine bewusste Anti-Glamour-Ästhetik ohne Bläser oder Synthesizer.",
+        "Lorde erklärt, dass sie niemals von Kronjuwelen und Goldbechern träumt – das Königshaus-Leben ist nichts für sie."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nlcIKh6oBFg"
+      }
+    },
+    {
+      "id": "mark-ronson-uptown-funk-2014",
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "year": 2014,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Party Anthem", "Summer Vibes"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück referenziert so viele Funk- und Soul-Künstler der 70er, dass mehrere Musiker dieser Ära nachträglich als Mitautoren gelistet wurden.",
+        "Mark Ronson und Bruno Mars arbeiteten sieben Monate an dem Song, bevor sie mit dem Ergebnis zufrieden waren.",
+        "Erschienen 2014; hielt sich 14 Wochen auf Platz 1 der Billboard Hot 100 – die längste Platz-1-Serie der 2010er Jahre.",
+        "Retro-Funk mit Blechbläsern, einem federnden Bass und Bruno Mars' charakteristischer Soul-Stimme – direkt aus den 70ern entlehnt.",
+        "Mark Ronson und Bruno Mars aus dem Uptown sind zu funky für deine Kommentare und zu heiß für dich."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OPf0YbXqDm0"
+      }
+    },
+    {
+      "id": "sia-chandelier-2014",
+      "title": "Chandelier",
+      "artist": "Sia",
+      "year": 2014,
+      "country": "AU",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Power Ballad", "Heartbreak", "Epic"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Sia schrieb diesen Song über ihren Kampf gegen Alkoholsucht; der Kronleuchter steht symbolisch für ein ausschweifendes Partyleben.",
+        "Im Musikvideo tanzt die damals elfjährige Maddie Ziegler in einem leeren Haus mit Perücke – eine der ikonischsten Choreografien des Jahrzehnts.",
+        "Erschienen 2014 auf dem Album '1000 Forms of Fear'; machte Sia nach Jahren als anonyme Songwriterin selbst weltberühmt.",
+        "Langsamer Aufbau, der in einen bombastischen Refrain mit Sias dramatischer Vierokaven-Stimme explodiert.",
+        "Sia schwingt wie ein Kronleuchter – eine Hymne über Vergessen, Feiern und den schmerzhaften Morgen danach."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "sam-smith-stay-with-me-2014",
+      "title": "Stay with Me",
+      "artist": "Sam Smith",
+      "year": 2014,
+      "country": "GB",
+      "genre": "Soul",
+      "difficulty": "medium",
+      "mood": ["Heartbreak", "Rainy Day", "Power Ballad"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Tom Petty und Jeff Lynne wurden nachträglich als Mitautoren anerkannt, weil die Melodie dem Refrain von 'I Won't Back Down' ähnelt.",
+        "Sam Smith schrieb diesen Song nach einer One-Night-Stand-Erfahrung und der anschließenden Bitte, doch zu bleiben.",
+        "Erschienen 2014 auf dem Debütalbum 'In the Lonely Hour'; gewann vier Grammys inklusive 'Bestes neues Talent'.",
+        "Sparsame Gospel-Piano-Akkorde, ein Chor, der sich langsam erhebt, und Smiths intime, melancholische Falsettstimme.",
+        "Sam Smith fleht nach einer kurzen Begegnung inständig darum, dass die andere Person einfach bleibt – auch ohne Liebe."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "taylor-swift-shake-it-off-2014",
+      "title": "Shake It Off",
+      "artist": "Taylor Swift",
+      "year": 2014,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Party Anthem", "Summer Vibes", "Dance Floor"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück markierte Swifts öffentlichen Wechsel vom Country zum reinen Pop; sie schrieb es als Reaktion auf anhaltende Medienkritik.",
+        "Das Musikvideo zeigt Swift, wie sie verschiedene Tanzstile ausprobiert – und bei keinem davon besonders gut ist.",
+        "Erschienen 2014 auf dem Album '1989'; Swifts erstes Nummer-1-Pop-Album in den USA.",
+        "Fröhlicher, spritziger Pop mit Blechbläser-Elementen und einem Refrain, der zum Tanzen und Weitermachen einlädt.",
+        "Taylor Swift beschließt, sich von Kritik und Klatsch nicht runterziehen zu lassen – und schüttelt einfach alles ab."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nfWlot6h_JM"
+      }
+    },
+    {
+      "id": "justin-timberlake-cant-stop-the-feeling-2016",
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "year": 2016,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Dance Floor", "Summer Vibes", "Party Anthem"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück entstand für den Animationsfilm 'Trolls' und begann auf einer Ukulele, auf der Produzent Max Martin herumgespielt hatte.",
+        "Gewann 2017 den Grammy für 'Bestes Lied, das für visuelle Medien geschrieben wurde'.",
+        "Erschienen 2016; einer der wenigen Songs, der seit dem Jahr 2000 in Deutschland Platz 1 der Charts erreichte.",
+        "Sonniger Funk-Pop mit Handclaps, einem positiven Refrain und einem unwiderstehlichen Groove, der gute Laune verbreitet.",
+        "Justin Timberlake singt über ein gutes Gefühl auf der Tanzfläche, das er einfach nicht stoppen kann – niemand kann es."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "drake-one-dance-2016",
+      "title": "One Dance",
+      "artist": "Drake",
+      "year": 2016,
+      "country": "CA",
+      "genre": "R&B",
+      "difficulty": "medium",
+      "mood": ["Chill", "Summer Vibes", "Dance Floor"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück enthält ein Sample aus dem Afrobeats-Song 'Do You Mind' von Kyla aus dem Jahr 2013.",
+        "Drake wurde von südafrikanischer Dancehall-Musik inspiriert, die er während einer Tournee kennenlernte.",
+        "Erschienen 2016; Drakes erster globaler Nummer-1-Hit und einer der meistgestreamten Songs des Jahres.",
+        "Laid-back Afrobeats-Groove, eine federleichte Melodie und Drakes typischer Singsang-Rap für eine warme Sommernacht.",
+        "Drake bittet eine Frau um nur einen Tanz, einen Drink und vielleicht noch eine weitere Chance."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "ed-sheeran-shape-of-you-2017",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": ["Summer Vibes", "Dance Floor", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Sheeran schrieb diesen Song eigentlich für Rihanna – sie lehnte ihn ab, und er behielt ihn für sich selbst.",
+        "Die Marimba-artige Melodie zu Beginn wurde mit einem Marimba-Synthesizer-Preset in der DAW GarageBand erzeugt.",
+        "Erschienen 2017 auf dem Album '÷' (Divide); mit über fünf Milliarden Streams einer der meistgestreamten Songs aller Zeiten.",
+        "Eingängiger Marimba-Loop, ein tropisch beeinflusster Pop-Groove und Sheerans Sprechgesang-Stil.",
+        "Ed Sheeran verliebt sich in einem Fitnessstudio – und besingt seine Lieblingsform."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JGwWNGJdvx8"
+      }
+    },
+    {
+      "id": "luis-fonsi-despacito-2017",
+      "title": "Despacito",
+      "artist": "Luis Fonsi ft. Daddy Yankee",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "easy",
+      "mood": ["Summer Vibes", "Dance Floor", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Musikvideo wurde in La Perla gedreht – einem historischen, damals als gefährlich geltenden Viertel von San Juan, Puerto Rico.",
+        "Die Remix-Version mit Justin Bieber machte den Song weltweit noch populärer, obwohl das Original bereits ein Mega-Hit war.",
+        "Erschienen 2017; erster hauptsächlich spanischsprachiger Nummer-1-Hit in den USA seit 'Macarena' im Jahr 1996.",
+        "Sommerlicher Reggaeton-Rhythmus, akustische Gitarre und ein langsam-verführerischer Titel, der das Tempo des Liedes selbst beschreibt.",
+        "Luis Fonsi und Daddy Yankee singen auf Spanisch über langsame, behutsame Annäherung – der Titel bedeutet 'langsam'."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ktvTqknDobU"
+      }
+    },
+    {
+      "id": "weeknd-blinding-lights-2019",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "year": 2019,
+      "country": "CA",
+      "genre": "Synth-Pop",
+      "difficulty": "easy",
+      "mood": ["Neon Night", "Road Trip", "Dance Floor"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Der Synthesizer-Sound ist direkt von 80er-Jahre-Synth-Pop inspiriert – insbesondere von A-ha und Depeche Mode.",
+        "Das Stück blieb länger in den Billboard Hot 100 als jeder andere Song in der Geschichte der Charts.",
+        "Erschienen 2019 auf dem Album 'After Hours'; laut Spotify einer der meistgestreamten Songs aller Zeiten.",
+        "Pulsierender Retro-Synthesizer, ein laufendes Tempo und die hohe Falsettstimme des Weeknds unter Neonlichtern.",
+        "Der Weeknd fährt durch blendende Lichter einer nächtlichen Stadt und sehnt sich verzweifelt nach einer Person."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4NRXx6U8ABQ"
+      }
+    },
+    {
+      "id": "billie-eilish-bad-guy-2019",
+      "title": "bad guy",
+      "artist": "Billie Eilish",
+      "year": 2019,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Neon Night", "Rebel", "Chill"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Billie Eilish und ihr Bruder Finneas O'Connell nahmen den Song im Schlafzimmer ihres Elternhauses auf – mit selbstgebautem Acoustic Treatment.",
+        "Das Stück verwendet einen Trap-Hi-Hat-Rhythmus, der für das Genre ungewöhnlich leise und minimalistisch eingesetzt wird.",
+        "Erschienen 2019 auf dem Debütalbum 'When We All Fall Asleep, Where Do We Go?'; gewann fünf Grammys.",
+        "Flüsteriger Gesang über einem minimalistischen Bass-Drop – ironisch, selbstbewusst und kühl.",
+        "Billie Eilish behauptet ironisch, sie sei die Böse – und unterläuft damit alle Erwartungen an einen Pop-Star."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DyDfgMOUjCI"
+      }
+    },
+    {
+      "id": "dua-lipa-levitating-2020",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Dance Floor", "Summer Vibes", "Neon Night"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück wurde von Clarence Coffee Jr. und Stuart Price mitgeschrieben – beide sind auch für Hits von Ariana Grande bekannt.",
+        "Die Disco-Einflüsse wurden bewusst gewählt: Produzent Stuart Price wollte den Sound der 70er für ein 2020er-Publikum modernisieren.",
+        "Erschienen 2020 auf dem Album 'Future Nostalgia'; das Kritikerliebling-Album des Jahres 2020.",
+        "Funkiger Disco-Pop mit schwebenden Synthesizern, einem treibenden Bass und Dua Lipas warmer Stimme.",
+        "Dua Lipa fühlt sich so verliebt, dass sie das Gefühl hat zu levitieren – zu schweben."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TUVcZfQe-Kw"
+      }
+    },
+    {
+      "id": "glass-animals-heat-waves-2020",
+      "title": "Heat Waves",
+      "artist": "Glass Animals",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Indie Pop",
+      "difficulty": "hard",
+      "mood": ["Rainy Day", "Heartbreak", "Chill"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Sänger Dave Bayley schrieb den Song auf Wunsch eines Freundes als Tribut an eine Person, die er sehr vermisste.",
+        "Das Stück wurde durch TikTok-Nutzung wiederentdeckt und erreichte erst 2022 Platz 1 in den USA – anderthalb Jahre nach Release.",
+        "Erschienen 2020 auf dem Album 'Dreamland'; einer der seltenen Songs, der einen verzögerten globalen Durchbruch erlebte.",
+        "Traumhafter Indie-Pop mit schwimmenden Synthesizern, einem emotionalen Refrain und einem fast hypnotischen Groove.",
+        "Glass Animals singen von Hitzewellen und dem schmerzhaften Vermissen einer Person – sogar in Träumen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TODO:verify"
+      }
+    },
+    {
+      "id": "olivia-rodrigo-drivers-license-2021",
+      "title": "drivers license",
+      "artist": "Olivia Rodrigo",
+      "year": 2021,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Heartbreak", "Rainy Day", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Olivia Rodrigo schrieb den Song während der COVID-Lockdowns und teilte erste Aufnahmen auf TikTok.",
+        "In den ersten 24 Stunden hatte er mehr Spotify-Streams als jedes andere Lied zuvor – ein Rekord bei Veröffentlichung.",
+        "Erschienen 2021 als Debütsingle; sofort auf Platz 1 in den USA, UK und 15 weiteren Ländern.",
+        "Pianolastige Pop-Ballade, die von zerbrechlich und ruhig zu einem Herzschmerz-Ausbruch in der Bridge anschwillt.",
+        "Olivia Rodrigo fährt zum ersten Mal allein durch die Vorstädte – mit frischem Führerschein und einem alten Herzschmerz."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZmDBbnmKpqQ"
+      }
+    },
+    {
+      "id": "harry-styles-as-it-was-2022",
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "year": 2022,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": ["Heartbreak", "Rainy Day", "Road Trip"],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Das Stück wurde in zwei Stunden am ersten Tag der Aufnahmesessions für das Album 'Harry's House' fertiggestellt.",
+        "Das Intro des Songs beginnt mit der Stimme von Kid Harpoons Tochter, die Styles auf Englisch nach Hause ruft.",
+        "Erschienen 2022; laut Spotify das meistgestreamte Lied des gesamten Jahres weltweit.",
+        "Melancholischer 80er-inspirierter Synth-Pop mit Gitarren-Arpeggio und einem euphorisch-traurigen Refrain.",
+        "Harry Styles singt, dass er nicht allein zu Hause sein soll – und dass nichts mehr so ist wie es war."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "H5v3kku4y6Q"
+      }
+    }
+  ]
+}
