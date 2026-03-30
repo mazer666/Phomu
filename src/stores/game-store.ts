@@ -11,8 +11,9 @@
 
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { GameState, GameConfig, GameRound } from '@/types/game-state';
+import type { GameState, GameConfig, GameRound, RoundPhase, PlayerAnswer } from '@/types/game-state';
 import type { Player } from '@/types/player';
+import type { PhomuSong } from '@/types/song';
 import { PHOMU_CONFIG } from '@/config/game-config';
 
 // ─── Standardkonfiguration ────────────────────────────────────────
@@ -53,6 +54,18 @@ interface GameActions {
 
   /** Beendet das Spiel und setzt den Gewinner */
   endGame: (winnerId?: string) => void;
+
+  /** Setzt den aktuellen Song und wechselt in die Fragerunde */
+  drawSong: (song: PhomuSong) => void;
+
+  /** Wechselt die aktuelle Rundenphase */
+  advancePhase: (phase: RoundPhase) => void;
+
+  /** Fügt eine Spielerantwort zur laufenden Runde hinzu */
+  submitAnswer: (answer: PlayerAnswer) => void;
+
+  /** Addiert Punkte zum Score eines Spielers */
+  awardPoints: (playerId: string, points: number) => void;
 }
 
 /** Vollständiger Store-Typ = State + Actions */
@@ -204,6 +217,36 @@ export const useGameStore = create<GameStore>()(
       // ── endGame ──────────────────────────────────────────────────
       endGame(winnerId) {
         set({ isGameOver: true, winnerId, roundPhase: 'scoring' });
+      },
+
+      // ── drawSong ─────────────────────────────────────────────────
+      drawSong(song) {
+        set((state) => ({
+          currentSong: song,
+          roundPhase: 'question',
+          playedSongIds: [...state.playedSongIds, song.id],
+        }));
+      },
+
+      // ── advancePhase ──────────────────────────────────────────────
+      advancePhase(phase) {
+        set({ roundPhase: phase });
+      },
+
+      // ── submitAnswer ──────────────────────────────────────────────
+      submitAnswer(answer) {
+        set((state) => ({
+          currentAnswers: [...state.currentAnswers, answer],
+        }));
+      },
+
+      // ── awardPoints ───────────────────────────────────────────────
+      awardPoints(playerId, points) {
+        set((state) => ({
+          players: state.players.map((p) =>
+            p.id === playerId ? { ...p, score: p.score + points } : p,
+          ),
+        }));
       },
     }),
 
