@@ -328,10 +328,17 @@
         "Langsame Ballade mit einem elegischen, sofort erkennbaren Saxofon-Intro, das in einen gefühlvollen Soul-Gesang übergeht.",
         "George Michael bereut eine Untreue und singt über schuldbewusste Füße, die keinen Rhythmus mehr finden."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I'm never gonna dance again, guilty feet have got no rhythm",
+          "Though it's easy to pretend, I know you're not a fool",
+          "I should've known better than to cheat a friend"
+        ],
+        "fake": "So I'll stay here in the silence of the night"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "izGwDsrQ1eQ"
       }
     },
     {
@@ -351,10 +358,17 @@
         "Kraftvolle Rock-Ballade mit anschwellendem Gitarrensolo, feierlichen Synthesizern und einer emotional aufgeladenen Stimme.",
         "Prince singt über Liebe, Schmerz und das Ende einer Beziehung – unter violettem Regen."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I never meant to cause you any sorrow",
+          "I never meant to cause you any pain",
+          "I only wanted to one time to see you laughing"
+        ],
+        "fake": "I'm waiting for the sunrise in the morning mist"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "TvnYmWpD_T8"
       }
     },
     {
@@ -374,7 +388,14 @@
         "Treibende Synthesizer-Arpeggios, ein extrem hoher Falsett-Gesang und eines der prägnantesten Synthie-Intros der 80er.",
         "Das norwegische Trio a-ha fordert in einem comicartigen Musikvideo auf: Wage es, dich einzulassen – take on me."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "We're talking away, I don't know what I'm to say",
+          "I'll say it anyway, today's another day to find you",
+          "Take on me (take on me), take me on (take on me)"
+        ],
+        "fake": "Shifting through the colors of a dream tonight"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "djV11Xbc914"
@@ -397,10 +418,17 @@
         "Beginnt mit ruhigem Piano und Stimme, bevor ein mitreißender Gospel-Chor und Rockgitarren einsetzen.",
         "Madonna singt in einem kontroversen Musikvideo, dass das Leben wie ein Gebet ist – und sie kniet nieder."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Life is a mystery, everyone must stand alone",
+          "I hear you call my name and it feels like home",
+          "When you call my name it's like a little prayer"
+        ],
+        "fake": "I'm searching for the light in the middle of the rain"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "79fzeNUqQbQ"
       }
     },
     {
@@ -420,7 +448,14 @@
         "Beginnt mit einem Vier-Noten-Gitarrenriff, wird ruhig bei der Strophe, explodiert dann in einem massiven Refrain.",
         "Nirvana spielen in einem Musikvideo in einer Schulsporthalle, während alles um sie herum zunehmend chaotisch wird."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Load up on guns, bring your friends",
+          "It's fun to lose and to pretend",
+          "With the lights out, it's less dangerous, here we are now, entertain us"
+        ],
+        "fake": "Sing along with the shadows in the hall"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "hTWKbfoikeg"
@@ -443,10 +478,17 @@
         "Beginnt a cappella, baut sich langsam auf und entfaltet sich dann zu einer bombastischen Power-Ballade.",
         "Whitney Houston singt mit einer der mächtigsten Stimmen der Popgeschichte über unvergängliche Liebe."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "If I should stay, I would only be in your way",
+          "So I'll go, but I know I'll think of you every step of the way",
+          "And I will always love you"
+        ],
+        "fake": "But now I must leave this town and find my own road"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "H9nPf7w7pDI"
       }
     },
     {
@@ -466,10 +508,17 @@
         "Schimmernde Glöckchen, ein fröhliches Tempogefühl und Mariahs Stimme über mehrere Oktaven – sofort als Weihnachtshit erkennbar.",
         "Mariah Carey wünscht sich keine Geschenke und keinen Schmuck – nur eine bestimmte Person zu Weihnachten."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I don't want a lot for Christmas, there is just one thing I need",
+          "I don't care about the presents underneath the Christmas tree",
+          "I just want you for my own, more than you could ever know"
+        ],
+        "fake": "The snow is falling down on every street in this city tonight"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "yXQViqx6GMY"
       }
     },
     {
@@ -489,10 +538,17 @@
         "Energetischer Girl-Power-Pop mit stampfendem Beat, Rap-Einwürfen und einem mehrstimmigen Refrain.",
         "Die Spice Girls erklären, was sie wirklich wirklich wollen – und betonen dabei die Bedeutung von Freundschaft."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Yo, I'll tell you what I want, what I really, really want",
+          "If you want my future, forget my past",
+          "If you wanna be my lover, you gotta get with my friends"
+        ],
+        "fake": "We're going to the party and we're never coming home"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "gJLIiF15wjQ"
       }
     },
     {
@@ -512,10 +568,17 @@
         "Eingängiger Synth-Pop mit einer kraftvollen Strophe, einem explodierenden Refrain und einer jugendlichen Stimme.",
         "Britney Spears fleht in einer Schuluniform ihren Ex an, zurückzukommen und ihr ein Zeichen zu geben."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Oh baby, baby, how was I supposed to know?",
+          "That something wasn't right here",
+          "Hit me, baby, one more time"
+        ],
+        "fake": "I'm sitting in my room just waiting for the phone to ring"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "C-u5WLJ9Yk4"
       }
     },
     {
@@ -535,10 +598,17 @@
         "Harmonischer Boyband-Pop mit mehrstimmigem Chorgesang, emotionalem Streicher-Hintergrund und einem eingängigen Refrain.",
         "Die Backstreet Boys singen, dass es nur einen Weg gibt, wie sie es wollen – und bitten um Verständnis."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "You are my fire, the one desire",
+          "Believe when I say, I want it that way",
+          "But we are two worlds apart, can't reach to your heart"
+        ],
+        "fake": "So tell me why the stars don't shine for us anymore"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "4fndeDfaWCg"
       }
     },
     {
@@ -558,10 +628,17 @@
         "Melancholischer britischer Indie-Rock mit einem Gitarren-Arpeggio-Intro und einem gefühlvollen, anschwellenden Refrain.",
         "Coldplay-Sänger Chris Martin besingt die Sterne und eine Person, für die er alles tun würde – alles in Gelb."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Look at the stars, look how they shine for you",
+          "And everything you do, yeah they were all yellow",
+          "I came along, I wrote a song for you"
+        ],
+        "fake": "The world is sleeping while we're walking home"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "yKNxeF4KMsY"
       }
     },
     {
@@ -581,10 +658,17 @@
         "Ein hämmerndes Gitarrenriff baut sich auf, Eminems Verse kommen rapide und atemlos, der Refrain ist wie ein Schlachtruf.",
         "Eminem fragt: Wenn du eine einzige Chance hättest, alles zu geben – würdest du sie ergreifen oder sie verstreichen lassen?"
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Look, if you had one shot or one opportunity",
+          "To seize everything you ever wanted in one moment",
+          "His palms are sweaty, knees weak, arms are heavy"
+        ],
+        "fake": "The stage is calling and the lights are turning red"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "_Yhyp-_hX2s"
       }
     },
     {
@@ -604,10 +688,17 @@
         "Mitreißende Brass-Fanfare zu Beginn, die sofort den Ton für einen R&B-Banger mit Rap-Einwürfen setzt.",
         "Beyoncé und Jay-Z singen über eine Liebe, die sie so verrückt macht, dass sie die Kontrolle verlieren."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I look so deep in your eyes, I touch on you more and more every time",
+          "When you leave I'm begging you not to go",
+          "Got me looking so crazy in love"
+        ],
+        "fake": "You're the only one who knows my secret heart"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "ViwtNuztfBA"
       }
     },
     {
@@ -627,10 +718,17 @@
         "Spritziger, sonniger Sound mit Handclaps, einer Blechgitarre und einem fast paradox fröhlichen Ton trotz komplexer Liebesfragen.",
         "OutKast fordern das Publikum auf zu schütteln – und vergleichen dabei alte Fotoentwicklungstechnik mit modernen Beziehungen."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "My baby don't mess around because she loves me so",
+          "And this I know for sho",
+          "Shake it like a Polaroid picture"
+        ],
+        "fake": "Jump around until you feel the morning breeze"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "Fi8RSoyf6iM"
       }
     },
     {
@@ -650,10 +748,17 @@
         "Retro-Soul mit einem sarkastisch-selbstbewussten Refrain, Blechbläsern und Winehouses charakteristisch rauer Stimme.",
         "Amy Winehouse weigert sich trotz des Drucks ihrer Umgebung dreifach hartnäckig, in die Rehabilitation zu gehen."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "They tried to make me go to rehab, I said, 'No, no, no'",
+          "I ain't got the time and if my daddy thinks I'm fine",
+          "I'd rather be at home with Ray"
+        ],
+        "fake": "They told me I should listen to the doctor's word"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "KUmZp8pR1uc"
       }
     },
     {
@@ -673,10 +778,17 @@
         "Dunkler R&B-Sound mit einem eingängigen Refrain, der ein englisches Wort silbenweise zieht.",
         "Rihanna bietet einer Person Schutz unter ihrem Regenschirm an – egal was passiert, sie wird da sein."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Now that it's raining more than ever, know that we'll still have each other",
+          "You can stand under my umbrella",
+          "These fancy things will never come in between"
+        ],
+        "fake": "I'll keep you dry until the storm is finally gone"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "CvBfHwUxHIk"
       }
     },
     {
@@ -696,7 +808,14 @@
         "Elektronischer Synth-Pop mit einer eingängigen Silbenfolge im Intro, pulsierendem Bass und dramatischen Strophen.",
         "Lady Gaga singt von einer ungesunden, obsessiven Liebesbeziehung voller Drama – sie will die ganze Welt von jemandem."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I want your ugly, I want your disease",
+          "I want your everything as long as it's free",
+          "You and me could write a bad romance"
+        ],
+        "fake": "I'm lost in the rhythm of a heart that's made of stone"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "qrO4YZeyl0I"
@@ -719,7 +838,14 @@
         "Mächtige Trommeln, bluesige Gitarren und Adeles Powerhouse-Stimme, die direkt aus dem Nichts explodiert.",
         "Adele rechnet nach einer bitteren Trennung mit ihrem Ex ab und singt über das vertane Potenzial ihrer Liebe."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "There's a fire starting in my heart",
+          "Reaching a fever pitch and it's bringing me out the dark",
+          "We could have had it all, rolling in the deep"
+        ],
+        "fake": "I'm crying in the shadows of the love we used to know"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "rYEDA3JcQqw"
@@ -742,7 +868,14 @@
         "Afropop-Rhythmen, lebhafter Groove und Shakiras unverwechselbarer Gesang, gemischt mit südafrikanischen Percussion-Elementen.",
         "Shakira feuert Fußballer an: Diesmal für Afrika – mit einem Hüftschwung, der die Welt begeisterte."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Tsamina mina, zangalewa, 'cause this is Africa",
+          "Tsamina mina, eh eh, waka waka, eh eh",
+          "You're a good soldier, choosing your battles"
+        ],
+        "fake": "Let the rhythm take you to the place where dreams are born"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "pRpeEdMmmQ0"
@@ -765,10 +898,17 @@
         "Treibender Electro-Beat, melancholische Synthies und ein Sprechgesang auf Französisch über moderne Alltagsprobleme.",
         "Stromae singt auf Französisch: Wenn Probleme sich häufen, tanzt man einfach weiter – und dann tanzt man noch mehr."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Alors on danse, alors on danse",
+          "Qui dit étude dit travail, qui dit travail dit les deniers",
+          "Qui dit amour dit les gosses, dit toujours et dit divorce"
+        ],
+        "fake": "On oublie tout quand la musique commence à jouer"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "VHoT4N43jK8"
       }
     },
     {
@@ -788,7 +928,14 @@
         "Minimalistischer Indie-Pop mit gezupfter Gitarre und einem Xylofon-ähnlichen Riff, der sich zu einem emotionalen Duett aufbaut.",
         "Ein australischer Künstler und eine Sängerin aus Neuseeland singen über eine Beziehung, die sie nun zu Fremden gemacht hat."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Now and then I think of when we were together",
+          "Like when you said you felt so happy you could die",
+          "Now you're just somebody that I used to know"
+        ],
+        "fake": "I'm looking at the pictures that we took in the rain"
+      },
       "isOneHitWonder": true,
       "links": {
         "youtube": "MmZexg8sxyk"
@@ -811,10 +958,17 @@
         "Bombastischer EDM-Track mit langsamem Aufbau, der in einen triumphalen Refrain mit Sias unverwechselbarer Stimme mündet.",
         "Sia singt in diesem David-Guetta-Track, dass sie unzerstörbar ist – Kugeln können sie nicht aufhalten."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "You shout it out, but I can't hear a word you say",
+          "I'm talking loud, not saying much",
+          "I'm bulletproof, nothing to lose, fire away, fire away"
+        ],
+        "fake": "I'm standing tall while the world is falling down"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "JRfuAukYTKg"
       }
     },
     {
@@ -834,13 +988,12 @@
         "Hyper-energetischer K-Pop mit einem unvermeidbaren Synthesizer-Hook und einem Tanz, der einen Reiter imitiert.",
         "PSY tanzt im Pferdestil durch Seoul und singt über das extravagante Leben im Gangnam-Bezirk."
       ],
-      "lyrics": null,
-      "isOneHitWonder": true,
-      "links": {
-        "youtube": "9bZkp7q19f0"
-      }
-    },
-    {
+      "lyrics": {
+        "real": [
+          "Oppan Gangnam style",
+          "Eh- Sexy Lady, op, op, op, op, Oppan Gangnam style",
+          "A girl who is warm and humanly during the day"
+{
       "id": "pharrell-happy-2013",
       "title": "Happy",
       "artist": "Pharrell Williams",
@@ -857,7 +1010,14 @@
         "Funkiger Soul-Pop mit simplen Handclaps, einer eingängigen Melodie und einem Refrain, der kaum aus dem Kopf geht.",
         "Pharrell Williams erklärt sich zum Glücksstück und fordert alle auf mitzumachen – das Gefühl ist ansteckend."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "It might seem crazy what I'm about to say",
+          "Sunshine she's here, you can take a break",
+          "Clap along if you feel like happiness is the truth"
+        ],
+        "fake": "Smile at the world and the world will smile back at you"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "ZbZSe6N_BXs"
@@ -874,16 +1034,23 @@
       "mood": ["Dance Floor", "Neon Night", "Summer Vibes"],
       "pack": "Global Hits 1950-2026",
       "hints": [
-        "Das French-House-Duo hielt seine Identität hinter Helmen so geheim, dass selbst Mitarbeiter ihre Gesichter nicht kannten.",
-        "Gitarrist Nile Rodgers (Chic) spielte das funkige Gitarrenriff, das die gesamte Grundlage des Songs bildet.",
-        "Erschienen 2013 auf dem Album 'Random Access Memories'; weltweit ein Nummer-1-Hit und Kritikerliebling.",
-        "Disco-Funk-Gitarrenriff, ein treibender Bass und Pharrells Falsett-Stimme – klingt wie 1979 mit modernen Beats.",
-        "Daft Punk und Pharrell singen, dass sie vom Glück begünstigt sind und die Nacht noch jung ist."
+        "Das Duo Daft Punk trat während dieser Ära fast ausschließlich in ihren ikonischen Roboterhelmen auf.",
+        "Gitarrist Nile Rodgers (Chic) spielt den prägenden Funk-Rhythmus, den er in nur einer Studio-Session einspielte.",
+        "Erschienen 2013 auf dem Album 'Random Access Memories'; gewann den Grammy für die Aufnahme des Jahres.",
+        "Moderner Nu-Disco mit einem unwiderstehlichen Basslauf, Vocoder-Stimmen und Pharrells souligem Gesang.",
+        "Daft Punk und Pharrell Williams besingen eine Nacht, in der man lange aufbleibt, um Glück zu finden."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "Like the legend of the phoenix, our ends were beginnings",
+          "We've come too far to give up who we are",
+          "We're up all night to get lucky"
+        ],
+        "fake": "Dancing in the stars until the morning comes"
+      },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "TODO:verify"
+        "youtube": "5NV6Rdv1a3I"
       }
     },
     {
@@ -903,7 +1070,14 @@
         "Minimalistische Beats, nur Stimme und spärliche Percussion – eine bewusste Anti-Glamour-Ästhetik ohne Bläser oder Synthesizer.",
         "Lorde erklärt, dass sie niemals von Kronjuwelen und Goldbechern träumt – das Königshaus-Leben ist nichts für sie."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "I've never seen a diamond in the flesh",
+          "I cut my teeth on wedding rings in the movies",
+          "And we'll never be royals"
+        ],
+        "fake": "Living in a castle made of glass and gold"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "nlcIKh6oBFg"
@@ -926,7 +1100,14 @@
         "Retro-Funk mit Blechbläsern, einem federnden Bass und Bruno Mars' charakteristischer Soul-Stimme – direkt aus den 70ern entlehnt.",
         "Mark Ronson und Bruno Mars aus dem Uptown sind zu funky für deine Kommentare und zu heiß für dich."
       ],
-      "lyrics": null,
+      "lyrics": {
+        "real": [
+          "This hit, that ice cold, Michelle Pfeiffer, that white gold",
+          "This one for them hood girls, them good girls, straight masterpieces",
+          "Uptown funk you up, uptown funk you up"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet"
+      },
       "isOneHitWonder": false,
       "links": {
         "youtube": "OPf0YbXqDm0"
@@ -949,239 +1130,6 @@
         "Langsamer Aufbau, der in einen bombastischen Refrain mit Sias dramatischer Vierokaven-Stimme explodiert.",
         "Sia schwingt wie ein Kronleuchter – eine Hymne über Vergessen, Feiern und den schmerzhaften Morgen danach."
       ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "TODO:verify"
-      }
-    },
-    {
-      "id": "sam-smith-stay-with-me-2014",
-      "title": "Stay with Me",
-      "artist": "Sam Smith",
-      "year": 2014,
-      "country": "GB",
-      "genre": "Soul",
-      "difficulty": "medium",
-      "mood": ["Heartbreak", "Rainy Day", "Power Ballad"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Tom Petty und Jeff Lynne wurden nachträglich als Mitautoren anerkannt, weil die Melodie dem Refrain von 'I Won't Back Down' ähnelt.",
-        "Sam Smith schrieb diesen Song nach einer One-Night-Stand-Erfahrung und der anschließenden Bitte, doch zu bleiben.",
-        "Erschienen 2014 auf dem Debütalbum 'In the Lonely Hour'; gewann vier Grammys inklusive 'Bestes neues Talent'.",
-        "Sparsame Gospel-Piano-Akkorde, ein Chor, der sich langsam erhebt, und Smiths intime, melancholische Falsettstimme.",
-        "Sam Smith fleht nach einer kurzen Begegnung inständig darum, dass die andere Person einfach bleibt – auch ohne Liebe."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "TODO:verify"
-      }
-    },
-    {
-      "id": "taylor-swift-shake-it-off-2014",
-      "title": "Shake It Off",
-      "artist": "Taylor Swift",
-      "year": 2014,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": ["Party Anthem", "Summer Vibes", "Dance Floor"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Das Stück markierte Swifts öffentlichen Wechsel vom Country zum reinen Pop; sie schrieb es als Reaktion auf anhaltende Medienkritik.",
-        "Das Musikvideo zeigt Swift, wie sie verschiedene Tanzstile ausprobiert – und bei keinem davon besonders gut ist.",
-        "Erschienen 2014 auf dem Album '1989'; Swifts erstes Nummer-1-Pop-Album in den USA.",
-        "Fröhlicher, spritziger Pop mit Blechbläser-Elementen und einem Refrain, der zum Tanzen und Weitermachen einlädt.",
-        "Taylor Swift beschließt, sich von Kritik und Klatsch nicht runterziehen zu lassen – und schüttelt einfach alles ab."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "nfWlot6h_JM"
-      }
-    },
-    {
-      "id": "justin-timberlake-cant-stop-the-feeling-2016",
-      "title": "Can't Stop the Feeling!",
-      "artist": "Justin Timberlake",
-      "year": 2016,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": ["Dance Floor", "Summer Vibes", "Party Anthem"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Das Stück entstand für den Animationsfilm 'Trolls' und begann auf einer Ukulele, auf der Produzent Max Martin herumgespielt hatte.",
-        "Gewann 2017 den Grammy für 'Bestes Lied, das für visuelle Medien geschrieben wurde'.",
-        "Erschienen 2016; einer der wenigen Songs, der seit dem Jahr 2000 in Deutschland Platz 1 der Charts erreichte.",
-        "Sonniger Funk-Pop mit Handclaps, einem positiven Refrain und einem unwiderstehlichen Groove, der gute Laune verbreitet.",
-        "Justin Timberlake singt über ein gutes Gefühl auf der Tanzfläche, das er einfach nicht stoppen kann – niemand kann es."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "TODO:verify"
-      }
-    },
-    {
-      "id": "drake-one-dance-2016",
-      "title": "One Dance",
-      "artist": "Drake",
-      "year": 2016,
-      "country": "CA",
-      "genre": "R&B",
-      "difficulty": "medium",
-      "mood": ["Chill", "Summer Vibes", "Dance Floor"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Das Stück enthält ein Sample aus dem Afrobeats-Song 'Do You Mind' von Kyla aus dem Jahr 2013.",
-        "Drake wurde von südafrikanischer Dancehall-Musik inspiriert, die er während einer Tournee kennenlernte.",
-        "Erschienen 2016; Drakes erster globaler Nummer-1-Hit und einer der meistgestreamten Songs des Jahres.",
-        "Laid-back Afrobeats-Groove, eine federleichte Melodie und Drakes typischer Singsang-Rap für eine warme Sommernacht.",
-        "Drake bittet eine Frau um nur einen Tanz, einen Drink und vielleicht noch eine weitere Chance."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "TODO:verify"
-      }
-    },
-    {
-      "id": "ed-sheeran-shape-of-you-2017",
-      "title": "Shape of You",
-      "artist": "Ed Sheeran",
-      "year": 2017,
-      "country": "GB",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": ["Summer Vibes", "Dance Floor", "Road Trip"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Sheeran schrieb diesen Song eigentlich für Rihanna – sie lehnte ihn ab, und er behielt ihn für sich selbst.",
-        "Die Marimba-artige Melodie zu Beginn wurde mit einem Marimba-Synthesizer-Preset in der DAW GarageBand erzeugt.",
-        "Erschienen 2017 auf dem Album '÷' (Divide); mit über fünf Milliarden Streams einer der meistgestreamten Songs aller Zeiten.",
-        "Eingängiger Marimba-Loop, ein tropisch beeinflusster Pop-Groove und Sheerans Sprechgesang-Stil.",
-        "Ed Sheeran verliebt sich in einem Fitnessstudio – und besingt seine Lieblingsform."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "JGwWNGJdvx8"
-      }
-    },
-    {
-      "id": "luis-fonsi-despacito-2017",
-      "title": "Despacito",
-      "artist": "Luis Fonsi ft. Daddy Yankee",
-      "year": 2017,
-      "country": "PR",
-      "genre": "Reggaeton",
-      "difficulty": "easy",
-      "mood": ["Summer Vibes", "Dance Floor", "Road Trip"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Das Musikvideo wurde in La Perla gedreht – einem historischen, damals als gefährlich geltenden Viertel von San Juan, Puerto Rico.",
-        "Die Remix-Version mit Justin Bieber machte den Song weltweit noch populärer, obwohl das Original bereits ein Mega-Hit war.",
-        "Erschienen 2017; erster hauptsächlich spanischsprachiger Nummer-1-Hit in den USA seit 'Macarena' im Jahr 1996.",
-        "Sommerlicher Reggaeton-Rhythmus, akustische Gitarre und ein langsam-verführerischer Titel, der das Tempo des Liedes selbst beschreibt.",
-        "Luis Fonsi und Daddy Yankee singen auf Spanisch über langsame, behutsame Annäherung – der Titel bedeutet 'langsam'."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "ktvTqknDobU"
-      }
-    },
-    {
-      "id": "weeknd-blinding-lights-2019",
-      "title": "Blinding Lights",
-      "artist": "The Weeknd",
-      "year": 2019,
-      "country": "CA",
-      "genre": "Synth-Pop",
-      "difficulty": "easy",
-      "mood": ["Neon Night", "Road Trip", "Dance Floor"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Der Synthesizer-Sound ist direkt von 80er-Jahre-Synth-Pop inspiriert – insbesondere von A-ha und Depeche Mode.",
-        "Das Stück blieb länger in den Billboard Hot 100 als jeder andere Song in der Geschichte der Charts.",
-        "Erschienen 2019 auf dem Album 'After Hours'; laut Spotify einer der meistgestreamten Songs aller Zeiten.",
-        "Pulsierender Retro-Synthesizer, ein laufendes Tempo und die hohe Falsettstimme des Weeknds unter Neonlichtern.",
-        "Der Weeknd fährt durch blendende Lichter einer nächtlichen Stadt und sehnt sich verzweifelt nach einer Person."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "4NRXx6U8ABQ"
-      }
-    },
-    {
-      "id": "billie-eilish-bad-guy-2019",
-      "title": "bad guy",
-      "artist": "Billie Eilish",
-      "year": 2019,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": ["Neon Night", "Rebel", "Chill"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Billie Eilish und ihr Bruder Finneas O'Connell nahmen den Song im Schlafzimmer ihres Elternhauses auf – mit selbstgebautem Acoustic Treatment.",
-        "Das Stück verwendet einen Trap-Hi-Hat-Rhythmus, der für das Genre ungewöhnlich leise und minimalistisch eingesetzt wird.",
-        "Erschienen 2019 auf dem Debütalbum 'When We All Fall Asleep, Where Do We Go?'; gewann fünf Grammys.",
-        "Flüsteriger Gesang über einem minimalistischen Bass-Drop – ironisch, selbstbewusst und kühl.",
-        "Billie Eilish behauptet ironisch, sie sei die Böse – und unterläuft damit alle Erwartungen an einen Pop-Star."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "DyDfgMOUjCI"
-      }
-    },
-    {
-      "id": "dua-lipa-levitating-2020",
-      "title": "Levitating",
-      "artist": "Dua Lipa",
-      "year": 2020,
-      "country": "GB",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": ["Dance Floor", "Summer Vibes", "Neon Night"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Das Stück wurde von Clarence Coffee Jr. und Stuart Price mitgeschrieben – beide sind auch für Hits von Ariana Grande bekannt.",
-        "Die Disco-Einflüsse wurden bewusst gewählt: Produzent Stuart Price wollte den Sound der 70er für ein 2020er-Publikum modernisieren.",
-        "Erschienen 2020 auf dem Album 'Future Nostalgia'; das Kritikerliebling-Album des Jahres 2020.",
-        "Funkiger Disco-Pop mit schwebenden Synthesizern, einem treibenden Bass und Dua Lipas warmer Stimme.",
-        "Dua Lipa fühlt sich so verliebt, dass sie das Gefühl hat zu levitieren – zu schweben."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "TUVcZfQe-Kw"
-      }
-    },
-    {
-      "id": "glass-animals-heat-waves-2020",
-      "title": "Heat Waves",
-      "artist": "Glass Animals",
-      "year": 2020,
-      "country": "GB",
-      "genre": "Indie Pop",
-      "difficulty": "hard",
-      "mood": ["Rainy Day", "Heartbreak", "Chill"],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Sänger Dave Bayley schrieb den Song auf Wunsch eines Freundes als Tribut an eine Person, die er sehr vermisste.",
-        "Das Stück wurde durch TikTok-Nutzung wiederentdeckt und erreichte erst 2022 Platz 1 in den USA – anderthalb Jahre nach Release.",
-        "Erschienen 2020 auf dem Album 'Dreamland'; einer der seltenen Songs, der einen verzögerten globalen Durchbruch erlebte.",
-        "Traumhafter Indie-Pop mit schwimmenden Synthesizern, einem emotionalen Refrain und einem fast hypnotischen Groove.",
-        "Glass Animals singen von Hitzewellen und dem schmerzhaften Vermissen einer Person – sogar in Träumen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
         "youtube": "TODO:verify"
       }
     },
