@@ -52,7 +52,13 @@ export default function LobbyPage() {
   const { players, config, addPlayer, removePlayer, setConfig, initSession, startGame } = useGameStore();
 
   const [step, setStep] = useState(1);
+  const [direction, setDirection] = useState(1);
   const [nameInput, setNameInput] = useState(`Spieler ${players.length + 1}`);
+
+  const goTo = useCallback((next: number) => {
+    setDirection(next > step ? 1 : -1);
+    setStep(next);
+  }, [step]);
   const [isScannerOpen, setIsScannerOpen] = useState(false);
 
   // Update name input when players list changes (if not modified by user)
@@ -88,17 +94,16 @@ export default function LobbyPage() {
     router.push('/game');
   }, [startGame, router]);
 
-  // Framer Motion Animation Variants
   const variants = {
-    enter: (direction: number) => ({ x: direction > 0 ? '100%' : '-100%', opacity: 0 }),
+    enter: (d: number) => ({ x: d > 0 ? '100%' : '-100%', opacity: 0 }),
     center: { x: 0, opacity: 1 },
-    exit: (direction: number) => ({ x: direction < 0 ? '100%' : '-100%', opacity: 0 }),
+    exit: (d: number) => ({ x: d < 0 ? '100%' : '-100%', opacity: 0 }),
   };
 
   // ─── Render Schritte ───────────────────────────────────────────
 
   return (
-    <main className="max-w-2xl mx-auto px-4 md:px-8">
+    <main className="max-w-2xl mx-auto px-4 md:px-8 overflow-x-hidden">
 
       {/* Header mit Progress */}
       <div className="pt-4 md:pt-8 pb-4 flex flex-col gap-4">
@@ -115,10 +120,11 @@ export default function LobbyPage() {
       </div>
 
       {/* Wizard Content Area — padding-bottom makes room for the fixed footer */}
-      <div className="pb-52">
-        <AnimatePresence mode="wait" initial={false}>
+      <div className="pb-52 overflow-x-hidden">
+        <AnimatePresence mode="wait" initial={false} custom={direction}>
           <motion.div
             key={step}
+            custom={direction}
             initial="enter"
             animate="center"
             exit="exit"
@@ -295,7 +301,7 @@ export default function LobbyPage() {
           <div className="flex gap-3">
             {step > 1 && (
               <button
-                onClick={() => setStep(s => s - 1)}
+                onClick={() => goTo(step - 1)}
                 className="flex-1 py-4 rounded-xl border-2 border-[var(--color-border)] font-bold opacity-60 hover:opacity-100"
               >
                 Zurück
@@ -303,7 +309,7 @@ export default function LobbyPage() {
             )}
             {step < 4 && (
               <button
-                onClick={() => setStep(s => s + 1)}
+                onClick={() => goTo(step + 1)}
                 disabled={!canGoNext}
                 className="flex-[2] py-4 rounded-xl bg-white/10 border border-white/20 font-black disabled:opacity-20 flex items-center justify-center gap-2"
               >
@@ -314,7 +320,7 @@ export default function LobbyPage() {
 
           {players.length > 0 && step === 1 && (
             <button
-              onClick={() => setStep(4)}
+              onClick={() => goTo(4)}
               className="text-xs font-bold text-[var(--color-accent)] opacity-60 hover:opacity-100 transition-opacity text-center py-1"
             >
               Direkt zu den Einstellungen →
@@ -322,7 +328,7 @@ export default function LobbyPage() {
           )}
 
           <button
-            onClick={() => { initSession(); setStep(1); }}
+            onClick={() => { initSession(); goTo(1); }}
             className="text-[10px] opacity-20 hover:opacity-60 transition-opacity text-center"
           >
             Lobby zurücksetzen

@@ -103,3 +103,18 @@ input:focus:not(:focus-visible),
 select:focus:not(:focus-visible) {
   outline: none;
 }
+
+/* ─── Base Layout ────────────────────────────────────────────────── */
+/* Apply theme background to html+body so no white shows through,    */
+/* and clip horizontal Framer Motion overflow on both to keep         */
+/* position:fixed elements working correctly on iOS Safari.           */
+html {
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
