@@ -56,6 +56,13 @@ const MODES: ModeInfo[] = [
     description:
       'One-Hit-Wonder oder Dauerstar? Erkenne, ob ein Artist nur diesen einen Hit hatte.',
   },
+  {
+    id: 'cover-confusion',
+    icon: '🎭',
+    title: 'Cover Confusion',
+    description:
+      'Hör einen Cover-Song und errate den Original-Interpreten — mit oder ohne Hinweise.',
+  },
 ];
 
 // ─── Props ────────────────────────────────────────────────────────

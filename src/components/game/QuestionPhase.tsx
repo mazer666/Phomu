@@ -35,7 +35,7 @@ const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
   'hint-master',
   'timeline',
   'lyrics',
-  'cover-confusion',
+  // cover-confusion hat eigenen WEITER-Button im Footer
 ];
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -77,7 +77,7 @@ export function QuestionPhase({
       )}
 
       {currentMode === 'cover-confusion' && (
-        <CoverConfusionMode song={song} onAnswer={handleAnswered} />
+        <CoverConfusionMode song={song} onAnswer={handleAnswered} onReveal={onReveal} />
       )}
 
       {/* Alle-fertig-Button → Reveal für alle Modi */}
