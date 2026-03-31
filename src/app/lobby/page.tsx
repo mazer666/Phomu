@@ -105,8 +105,8 @@ export default function LobbyPage() {
   return (
     <main className="max-w-2xl mx-auto px-4 md:px-8 overflow-x-hidden">
 
-      {/* Header mit Progress */}
-      <div className="pt-4 md:pt-8 pb-4 flex flex-col gap-4">
+      {/* Header mit Progress — sticky so only content scrolls */}
+      <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black">🕹️ Lobby</h1>
           <span className="text-sm font-bold opacity-30">Schritt {step} von 4</span>
@@ -120,7 +120,7 @@ export default function LobbyPage() {
       </div>
 
       {/* Wizard Content Area — padding-bottom makes room for the fixed footer */}
-      <div className="pb-52 overflow-x-hidden">
+      <div className="pb-44 overflow-x-hidden">
         <AnimatePresence mode="wait" initial={false} custom={direction}>
           <motion.div
             key={step}
@@ -267,15 +267,6 @@ export default function LobbyPage() {
                   </div>
                 </div>
 
-                {/* Summary / Replay Button if appropriate */}
-                {players.length > 0 && step === 4 && (
-                  <button 
-                    onClick={handleStart}
-                    className="w-full py-5 rounded-2xl bg-[var(--color-primary)] text-white text-xl font-black shadow-xl hover:scale-[1.02] active:scale-95 transition-all mt-4"
-                  >
-                    🚀 SPIEL STARTEN!
-                  </button>
-                )}
               </div>
             )}
           </motion.div>
@@ -298,6 +289,15 @@ export default function LobbyPage() {
       {/* Navigation Footer — fixed at viewport bottom */}
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)] border-t border-white/5">
         <div className="max-w-2xl mx-auto px-4 md:px-8 pt-3 pb-6 flex flex-col gap-2">
+          {/* Primary CTA on step 4 — always visible */}
+          {step === 4 && players.length > 0 && (
+            <button
+              onClick={handleStart}
+              className="w-full py-4 rounded-2xl bg-[var(--color-primary)] text-white text-lg font-black shadow-xl active:scale-95 transition-all"
+            >
+              🚀 SPIEL STARTEN!
+            </button>
+          )}
           <div className="flex gap-3">
             {step > 1 && (
               <button

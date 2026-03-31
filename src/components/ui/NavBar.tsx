@@ -58,10 +58,12 @@ export function NavBar() {
         })}
       </div>
 
-      {/* Theme + Sprache */}
+      {/* Theme + Sprache — ThemeSwitcher hidden on mobile (too wide) */}
       <div className="flex items-center gap-2 shrink-0">
         <LanguageSwitcher />
-        <ThemeSwitcher />
+        <span className="hidden md:contents">
+          <ThemeSwitcher />
+        </span>
       </div>
     </nav>
   );

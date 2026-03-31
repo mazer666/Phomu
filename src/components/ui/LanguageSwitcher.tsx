@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
   return (
     <div className="flex items-center gap-3">
       <span
-        className="text-sm font-medium"
+        className="hidden md:inline text-sm font-medium"
         style={{ color: 'var(--color-text-secondary)' }}
       >
         {t('settings.language')}
