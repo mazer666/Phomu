@@ -58,7 +58,7 @@ Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that
 - AI-assisted creation (hints, fake lyrics), manually verified.
 
 ## Tech Stack
-- **Framework:** Next.js 15 (App Router) + TypeScript (Strict Mode)
+- **Framework:** Next.js 16 (App Router) + TypeScript (Strict Mode)
 - **Styling:** Tailwind CSS (Mobile-first, Responsive) + Framer Motion (Animations)
 - **State Management:** Zustand
 - **Backend:** Supabase (PostgreSQL, Auth, Real-time sync)
@@ -71,3 +71,11 @@ Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that
 - **TypeScript Strict:** No `any`. Clear interfaces for everything.
 - **Beginner-Friendly:** Every logic block explained in plain English/German for non-developers.
 - **Centralized Config:** All game constants in `src/config/game-config.ts`.
+
+
+## Aktueller Projektstand (Dokumentation)
+- **Statusbericht:** `specifications/current_status_2026-03-30.md`
+- **Verbesserungsplan (Mobile UX + Security + Phasen):** `specifications/improvement_plan_mobile_ux_security.md`
+- **Roadmap (historisch/ursprünglich):** `specifications/project_roadmap.md`
+
+> Hinweis: Der Statusbericht vom **30. März 2026** ist die führende Quelle für den aktuellen Ist-Zustand und offene Qualitätslücken.
