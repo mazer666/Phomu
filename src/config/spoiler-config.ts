@@ -17,44 +17,13 @@ export const SPOILER_CONFIG = {
    * Diese werden IMMER zensiert, wenn sie der gesuchte Artist sind.
    */
   EXCEPTIONS: [
-    'BTS',
-    'TLC',
-    'U2',
-    'REM',
-    'R.E.M.',
-    'SIA',
-    'DMX',
-    'HIM',
-    'JLS',
-    'ELO',
-    'YES',
-    'AIR',
-    'ABC',
-    '112',
-    'JAY', // Für Jay-Z
-    'ZAY', // Für ZAYN
-    'A$AP', // 4, aber Sonderzeichen-Check
-    'P!nk', // 4, aber Sonderzeichen-Check
-    'LFO',
-    'NWA',
-    'N.W.A.',
-    'NAS',
-    'NEO', // Falls Neo (Matrix-Soundtrack etc.)
-    '10cc',
-    'B.O.B',
-    'E17',
-    '50',  // Für 50 Cent (Häufiger Token)
+    'BTS', 'TLC', 'U2', 'REM', 'R.E.M.', 'SIA', 'DMX', 'HIM', 'JLS', 'ELO', 'YES', 'AIR', 'ABC', '112', 'JAY', 'ZAY', 'NWA', 'N.W.A.', 'NAS', 'E17',
+    '311', 'LFO', 'KRS', 'GZA', 'RZA', 'MIA', 'M.I.A.', 'GNR', 'G\'N\'R', 'NEO', 'BVB', 'STS', 'DÖF', 'DAF', 'Fettes Brot', 'Die Ärzte', '2Pac', '50 Cent'
   ],
 
   /** Wörter, die NICHT zensiert werden sollen (White-List) selbst wenn sie Teil des Titels sind */
   IGNORE_WORDS: [
-    'THE',
-    'AND',
-    'WITH',
-    'FROM',
-    'FEAT',
-    'THAT',
-    'THIS',
-    'YOUR',
+    'THE', 'AND', 'WITH', 'FROM', 'FEAT', 'THAT', 'THIS', 'YOUR', 'MINE', 'SOME',
+    'DER', 'DIE', 'DAS', 'UND', 'MIT', 'VON', 'FÜR', 'EINE', 'EINER', 'EINES'
   ]
 };

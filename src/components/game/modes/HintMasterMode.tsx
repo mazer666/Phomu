@@ -76,12 +76,17 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
                 </p>
               </div>
               <MusicPlayer
+                key={`${shownHints}-${isRevealed}`}
                 youtubeLink={song.links.youtube}
                 startSeconds={startSecs}
-                endSeconds={startSecs + 30}
+                endSeconds={isRevealed ? startSecs + 180 : startSecs + 30}
                 blurred={!isRevealed}
               />
-              {!isRevealed && <p className="text-[9px] opacity-50 italic text-center">Wird nach 4 Tipps unblurred · max. 30 Sek.</p>}
+              {!isRevealed && (
+                <p className="text-[9px] opacity-50 italic text-center">
+                  Spielt 30 Sek. ab Anfang &middot; Restart bei jedem Tipp
+                </p>
+              )}
             </div>
           </motion.div>
         )}
