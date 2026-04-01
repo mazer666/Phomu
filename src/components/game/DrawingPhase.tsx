@@ -7,12 +7,34 @@
  */
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/stores/game-store';
 import type { GameMode } from '@/config/game-config';
 import type { PhomuSong } from '@/types/song';
 import { pickRandomSong } from '@/utils/song-picker';
+
+// ─── Juicy Text-Varianten ─────────────────────────────────────────
+
+const DRAW_BUTTON_LABELS = [
+  '🃏 Karte ziehen',
+  '🎴 Karte auf den Tisch!',
+  '🎲 Schicksal herausfordern',
+  '🎵 Song aufdecken',
+  '🔮 Was kommt als nächstes?',
+  '💥 Los geht\'s!',
+  '🎯 Ran an die Karte',
+  '🤞 Drück das Glück',
+];
+
+const PILOT_LABELS = [
+  (name: string) => `🎮 ${name} ist am Zug`,
+  (name: string) => `🎯 ${name}, du bist dran!`,
+  (name: string) => `🎤 Vorhang auf für ${name}!`,
+  (name: string) => `👑 ${name} übernimmt das Steuer`,
+  (name: string) => `🚀 ${name} — jetzt oder nie`,
+  (name: string) => `🃏 ${name} zieht die Karte`,
+];
 
 // ─── Modus-Metadaten ──────────────────────────────────────────────
 
@@ -77,6 +99,9 @@ export function DrawingPhase({
   const { autoDrawIntent, config } = useGameStore();
   const [isDrawing, setIsDrawing] = useState(false);
   const [error, setError] = useState('');
+
+  const drawLabel = useMemo(() => DRAW_BUTTON_LABELS[Math.floor(Math.random() * DRAW_BUTTON_LABELS.length)]!, []);
+  const pilotLabel = useMemo(() => PILOT_LABELS[Math.floor(Math.random() * PILOT_LABELS.length)]!, []);
 
   const handleDraw = useCallback(() => {
     if (isDrawing) return;
@@ -153,7 +178,7 @@ export function DrawingPhase({
           className="flex flex-col items-center gap-1 mb-10"
         >
           <p className="text-sm font-black" style={{ color: pilotColor ?? 'inherit' }}>
-            🎮 {pilotName} ist am Zug
+            {pilotLabel(pilotName)}
           </p>
           {nextPilotName && (
             <p className="text-xs opacity-40">
@@ -182,7 +207,7 @@ export function DrawingPhase({
                 color: 'var(--color-text)',
               }}
             >
-              🃏 Karte ziehen
+              {drawLabel}
             </motion.button>
           ) : (
             <motion.div

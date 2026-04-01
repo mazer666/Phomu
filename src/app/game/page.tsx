@@ -36,6 +36,9 @@ const PHASE_VARIANTS = {
 
 import { FeedbackOverlay } from '@/components/game/FeedbackOverlay';
 import { DiceAnimation } from '@/components/game/DiceAnimation';
+import { LastRoundBanner } from '@/components/game/LastRoundBanner';
+import { pickLastRoundMessage } from '@/utils/last-round-messages';
+import type { LastRoundMessage } from '@/utils/last-round-messages';
 
 export default function GamePage() {
   const router = useRouter();
@@ -67,6 +70,8 @@ export default function GamePage() {
   const [now, setNow] = useState(0);
   const [isRerolling, setIsRerolling] = useState(false);
   const [lastAnswerCount, setLastAnswerCount] = useState(0);
+  const [lastRoundBannerMsg, setLastRoundBannerMsg] = useState<LastRoundMessage | null>(null);
+  const lastRoundBannerShown = useRef(false);
 
   // Initialisiere 'now' nur auf dem Client
   useEffect(() => {
@@ -158,10 +163,32 @@ export default function GamePage() {
     advancePhase('reveal');
   }, [advancePhase]);
 
+  // ── Letzte Rotation erkennen ──────────────────────────────────
+  const isLastRotation = useMemo(() => {
+    if (config.endingCondition === 'time' && gameStartTime) {
+      return now >= gameStartTime + config.targetTimeMinutes * 60 * 1000;
+    }
+    if (config.endingCondition === 'rounds') {
+      const totalTurns = config.targetRounds * turnOrder.length;
+      // Nächste Runde (currentRound + 1) wäre in der letzten Rotation
+      return (currentRound + 1) >= (totalTurns - turnOrder.length + 1);
+    }
+    return false;
+  }, [config, currentRound, turnOrder, gameStartTime, now]);
+
   // ── Handler: Nächste Runde ─────────────────────────────────────
   const handleNextRound = useCallback(() => {
-    nextRound();
-  }, [nextRound]);
+    if (isLastRotation && !isGameOver && !lastRoundBannerShown.current) {
+      lastRoundBannerShown.current = true;
+      setLastRoundBannerMsg(pickLastRoundMessage());
+      setTimeout(() => {
+        setLastRoundBannerMsg(null);
+        nextRound();
+      }, 3400);
+    } else {
+      nextRound();
+    }
+  }, [isLastRotation, isGameOver, nextRound]);
 
 
   // ── Power User: Antwort overrulen ─────────────────────────────
@@ -263,11 +290,15 @@ export default function GamePage() {
       style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}
     >
       {/* Juicy Overlays */}
-      <FeedbackOverlay 
-        isCorrect={lastAnswer?.isCorrect ?? null} 
-        triggerKey={lastAnswerCount} 
+      <FeedbackOverlay
+        isCorrect={lastAnswer?.isCorrect ?? null}
+        triggerKey={lastAnswerCount}
       />
       <DiceAnimation isVisible={isRerolling} />
+      <LastRoundBanner
+        message={lastRoundBannerMsg}
+        onDismiss={() => { setLastRoundBannerMsg(null); nextRound(); }}
+      />
 
       {/* Header */}
       <GameHeader

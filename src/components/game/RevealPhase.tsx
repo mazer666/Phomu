@@ -8,7 +8,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import type { PhomuSong } from '@/types/song';
 import type { PlayerAnswer } from '@/types/game-state';
 import type { Player, Team } from '@/types/player';
@@ -30,6 +30,40 @@ interface RevealPhaseProps {
   onOverrideRedraw?: () => void;
   overrideGovernance?: 'host' | 'co-host' | 'majority';
 }
+
+// ─── Juicy Text-Varianten ─────────────────────────────────────────
+
+const REVEAL_LABELS = [
+  '🎵 Aufgedeckt!',
+  '🎤 NA ALSO!',
+  '🎉 VOILÀ!',
+  '💥 TATAAAA!',
+  '🃏 Die Karte spricht!',
+  '🔍 Gelüftet!',
+  '👁️ Augen auf!',
+  '🎯 Enthüllt!',
+];
+
+const SCORING_HEADERS = [
+  'Punkte diese Runde',
+  'Kassiert! 💰',
+  'Wer hat abgeräumt?',
+  'Punktestand +1',
+  'Das gab Punkte.',
+  'Pluspunkte, bitte!',
+  'Verdient!',
+];
+
+const NEXT_ROUND_LABELS = [
+  'Nächste Runde →',
+  'Weiter gehts! →',
+  'Noch eine! →',
+  'Los, nächster Song! →',
+  'Nicht aufhören jetzt →',
+  'Ran ans nächste →',
+  'Weiter, weiter! →',
+  'Tut nicht weh. Weiter →',
+];
 
 // ─── Hilfs-Badge für Schwierigkeit ───────────────────────────────
 
@@ -64,6 +98,10 @@ export function RevealPhase({
 }: RevealPhaseProps) {
 
   const [showPowerMenu, setShowPowerMenu] = useState(false);
+
+  const revealLabel = useMemo(() => REVEAL_LABELS[Math.floor(Math.random() * REVEAL_LABELS.length)]!, []);
+  const scoringHeader = useMemo(() => SCORING_HEADERS[Math.floor(Math.random() * SCORING_HEADERS.length)]!, []);
+  const nextRoundLabel = useMemo(() => NEXT_ROUND_LABELS[Math.floor(Math.random() * NEXT_ROUND_LABELS.length)]!, []);
 
   // Gewinner nur anzeigen, wenn Punkte-Modus UND jemand hat das Ziel erreicht,
   // ODER wenn die Gameover-Condition via Store bereits wahr ist (Time/Rounds).
@@ -140,7 +178,7 @@ export function RevealPhase({
         }}
       >
         {/* Aufgedeckt-Badge */}
-        <p className="text-xs uppercase tracking-widest opacity-50 mb-4">🎵 Aufgedeckt!</p>
+        <p className="text-xs uppercase tracking-widest opacity-50 mb-4">{revealLabel}</p>
 
         {/* Titel + Artist */}
         <h2 className="text-4xl font-black leading-tight mb-1">{song.title}</h2>
@@ -183,7 +221,7 @@ export function RevealPhase({
           className="rounded-xl p-4"
           style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)' }}
         >
-          <p className="text-sm font-bold opacity-70 mb-3">Punkte diese Runde</p>
+          <p className="text-sm font-bold opacity-70 mb-3">{scoringHeader}</p>
           <div className="space-y-2">
             {scoringRows.map(({ player, points }) => (
               <div key={player.id} className="flex items-center gap-3">
@@ -285,7 +323,7 @@ export function RevealPhase({
                        hover:opacity-90 transition-opacity"
             style={{ backgroundColor: 'var(--color-primary)' }}
           >
-            Nächste Runde →
+            {nextRoundLabel}
           </button>
         )}
       </motion.div>
