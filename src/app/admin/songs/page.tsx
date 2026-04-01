@@ -202,6 +202,12 @@ function SongEditor({
   const [moodInput, setMoodInput] = useState(song.mood.join(', '));
   const [hintEvidenceInput, setHintEvidenceInput] = useState<[string, string, string, string, string]>(song.hintEvidence ?? ['', '', '', '', '']);
 
+  // Cover Management Zustand
+  const [isSearchingCover, setIsSearchingCover] = useState(false);
+  const [coverResults, setCoverResults] = useState<any[]>([]);
+  const [isCoverLoading, setIsCoverLoading] = useState(false);
+  const [currentCover, setCurrentCover] = useState(song.coverUrl || '');
+
   /** Hint-Felder updaten */
   function updateHint(index: number, value: string) {
     const newHints = [...form.hints] as [string, string, string, string, string];
@@ -228,7 +234,50 @@ function SongEditor({
       .map((m) => m.trim())
       .filter(Boolean);
 
-    onSave({ ...form, lyrics, mood, hintEvidence: hintEvidenceInput });
+    onSave({ ...form, lyrics, mood, hintEvidence: hintEvidenceInput, coverUrl: currentCover });
+  }
+
+  /** Cover suchen via API Proxy */
+  async function handleSearchCover() {
+    setIsCoverLoading(true);
+    setIsSearchingCover(true);
+    try {
+      const res = await fetch(`/api/admin/covers/search?artist=${encodeURIComponent(form.artist)}&title=${encodeURIComponent(form.title)}`);
+      const data = await res.json();
+      if (data.results) {
+        setCoverResults(data.results);
+      }
+    } catch (err) {
+      alert('Fehler bei der Cover-Suche');
+    } finally {
+      setIsCoverLoading(false);
+    }
+  }
+
+  /** Cover auswählen und permanent speichern */
+  async function handleSelectCover(url: string) {
+    if (!confirm('Dieses Cover als offiziell speichern und in die Pack-JSON schreiben?')) return;
+    
+    setIsCoverLoading(true);
+    try {
+      const res = await fetch('/api/admin/covers/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ songId: form.id, imageUrl: url }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setCurrentCover(data.coverUrl);
+        setForm(p => ({ ...p, coverUrl: data.coverUrl }));
+        setIsSearchingCover(false);
+      } else {
+        alert('Fehler beim Speichern: ' + data.error);
+      }
+    } catch (err) {
+      alert('Systemfehler beim Speichern');
+    } finally {
+      setIsCoverLoading(false);
+    }
   }
 
   // Eingabefeld-Hilfsfunktion
@@ -268,6 +317,63 @@ function SongEditor({
           ✕ Schließen
         </button>
       </div>
+
+      {/* Cover Sektion */}
+      <div className="flex gap-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
+        <div className="w-24 h-24 bg-gray-200 rounded-md overflow-hidden flex-shrink-0 border border-gray-300">
+          {currentCover ? (
+            <img src={currentCover} alt="Cover" className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center p-1">Kein Cover</div>
+          )}
+        </div>
+        <div className="flex-1 space-y-2">
+          <p className="text-xs font-bold text-gray-500 uppercase">Cover Art (500x500)</p>
+          <div className="flex gap-2">
+            <button 
+              onClick={handleSearchCover}
+              disabled={isCoverLoading}
+              className="px-3 py-1.5 bg-white border border-gray-300 rounded text-xs font-semibold hover:bg-gray-50 disabled:opacity-50"
+            >
+              🔍 Cover suchen
+            </button>
+            <input 
+              type="text" 
+              value={currentCover} 
+              onChange={(e) => setCurrentCover(e.target.value)}
+              placeholder="/covers/song-id.jpg"
+              className="flex-1 text-xs border border-gray-300 rounded px-2 py-1"
+            />
+          </div>
+          <p className="text-[10px] text-gray-400">Das Bild wird lokal unter <code>public/covers/</code> gespeichert.</p>
+        </div>
+      </div>
+
+      {/* Cover Suchergebnisse */}
+      {isSearchingCover && (
+        <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 space-y-3">
+          <div className="flex justify-between items-center">
+            <h3 className="text-xs font-bold text-blue-800 uppercase">Suchergebnisse</h3>
+            <button onClick={() => setIsSearchingCover(false)} className="text-xs text-blue-600 hover:underline">Ausblenden</button>
+          </div>
+          {isCoverLoading && <p className="text-xs text-center py-4">Suche läuft...</p>}
+          {!isCoverLoading && coverResults.length === 0 && <p className="text-xs text-center py-4">Keine Ergebnisse gefunden.</p>}
+          <div className="grid grid-cols-4 gap-2">
+            {coverResults.map((res: any) => (
+              <div 
+                key={res.id} 
+                onClick={() => handleSelectCover(res.url)}
+                className="group relative cursor-pointer aspect-square bg-white rounded border border-gray-200 overflow-hidden hover:border-blue-500 transition-all"
+              >
+                <img src={res.thumbnail} alt="Result" className="w-full h-full object-cover" title={`${res.source}: ${res.album}`} />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                  <span className="text-[10px] text-white font-bold">Wählen</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Basis-Felder */}
       <div className="grid grid-cols-2 gap-3">

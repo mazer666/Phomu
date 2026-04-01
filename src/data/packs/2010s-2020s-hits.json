@@ -13,7 +13,11 @@
       "country": "GB",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Groovy", "Catchy"],
+      "mood": [
+        "Happy",
+        "Groovy",
+        "Catchy"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Wurde ursprünglich für Rihanna oder Little Mix geschrieben.",
@@ -22,9 +26,18 @@
         "Thematisiert die Anziehung in einer Bar.",
         "Refrain: 'I'm in love with the shape of you, we push and pull like a magnet do!'"
       ],
-      "lyrics": { "real": ["The club isn't the best place to find a lover, so the bar is where I go", "Me and my friends at the table doing shots, drinking fast and then we talk slow", "I'm in love with the shape of you, we push and pull like a magnet do"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "The club isn't the best place to find a lover, so the bar is where I go",
+          "Me and my friends at the table doing shots, drinking fast and then we talk slow",
+          "I'm in love with the shape of you, we push and pull like a magnet do"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "JGwWNGJdvx8" }
+      "links": {
+        "youtube": "JGwWNGJdvx8"
+      }
     },
     {
       "id": "modern-taylor-swift-shake",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Positive"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Taylor Swifts endgültiger Abschied vom Country hin zum reinen Pop.",
@@ -43,9 +60,18 @@
         "Wurde zu einer Hymne der Selbstbehauptung.",
         "Refrain: 'Cause the players gonna play, play, play... and the haters gonna hate, hate, hate!'"
       ],
-      "lyrics": { "real": ["I stay out too late, got nothing in my brain, that's what people say", "I'm lightning on my feet, and that's what they don't see", "Cause the players gonna play, play, play, and the haters gonna hate, hate, hate"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "I stay out too late, got nothing in my brain, that's what people say",
+          "I'm lightning on my feet, and that's what they don't see",
+          "Cause the players gonna play, play, play, and the haters gonna hate, hate, hate"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "nfWlotnwmsE" }
+      "links": {
+        "youtube": "nfWlotnwmsE"
+      }
     },
     {
       "id": "modern-adele-rolling-deep",
@@ -55,7 +81,11 @@
       "country": "GB",
       "genre": "Soul / Pop",
       "difficulty": "medium",
-      "mood": ["Powerful", "Emotional", "Classic"],
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Beschreibt Adele selbst als einen 'Dark Blues-y Gospel Disco Tune'.",
@@ -64,9 +94,18 @@
         "Besticht durch den stampfenden Rhythmus und Adeles unvergleichliche Stimme.",
         "Refrain: 'We could have had it all! Rolling in the deep!'"
       ],
-      "lyrics": { "real": ["There's a fire starting in my heart, reaching a fever pitch and it's bringing me out the dark", "The scars of your love, they leave me breathless, I can't help feeling", "We could have had it all, rolling in the deep"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "There's a fire starting in my heart, reaching a fever pitch and it's bringing me out the dark",
+          "The scars of your love, they leave me breathless, I can't help feeling",
+          "We could have had it all, rolling in the deep"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "rYEDA3JcQqw" }
+      "links": {
+        "youtube": "rYEDA3JcQqw"
+      }
     },
     {
       "id": "modern-drake-one-dance",
@@ -76,7 +115,11 @@
       "country": "CA/NG/GB",
       "genre": "Dancehall / Afrobeats",
       "difficulty": "easy",
-      "mood": ["Chill", "Groovy", "Catchy"],
+      "mood": [
+        "Chill",
+        "Groovy",
+        "Catchy"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Drake kombinierte hier Hip-Hop mit jamaikanischem Dancehall und nigerianischem Afrobeat.",
@@ -85,9 +128,18 @@
         "Thematisiert den Wunsch nach einem letzten Tanz vor dem Clubbesuch.",
         "Refrain: 'I need a one dance, got a Hennessy in my hand!'"
       ],
-      "lyrics": { "real": ["Baby, I like your style, grips on your waist, front way, back way", "I need a one dance, got a Hennessy in my hand, one more time 'fore I go", "Higher powers taking a hold on me"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Baby, I like your style, grips on your waist, front way, back way",
+          "I need a one dance, got a Hennessy in my hand, one more time 'fore I go",
+          "Higher powers taking a hold on me"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "qL7zrWcv6XY" }
+      "links": {
+        "youtube": "mym4sKoAnKs"
+      }
     },
     {
       "id": "modern-billie-eilish-bad-guy",
@@ -97,7 +149,11 @@
       "country": "US",
       "genre": "Electropop",
       "difficulty": "easy",
-      "mood": ["Cool", "Electronic", "Dark"],
+      "mood": [
+        "Cool",
+        "Electronic",
+        "Dark"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Produziert von ihrem Bruder Finneas in seinem Schlafzimmer.",
@@ -106,9 +162,18 @@
         "Mischte die Pop-Welt durch den düsteren, eigenwilligen Sound komplett auf.",
         "Refrain: 'So you're a tough guy, like it really rough guy... I'm the bad guy! Duh!'"
       ],
-      "lyrics": { "real": ["White shirt now red, my bloody nose, sleepin', you're on your tippy toes", "So you're a tough guy, like it really rough guy, just can't get enough guy", "I'm the bad guy, duh!"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "White shirt now red, my bloody nose, sleepin', you're on your tippy toes",
+          "So you're a tough guy, like it really rough guy, just can't get enough guy",
+          "I'm the bad guy, duh!"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DyDfgMvif8" }
+      "links": {
+        "youtube": "DyDfgMvif8"
+      }
     },
     {
       "id": "modern-harry-styles-as-it-was",
@@ -118,7 +183,11 @@
       "country": "GB",
       "genre": "Synth-Pop / Indie",
       "difficulty": "easy",
-      "mood": ["Happy", "Atmospheric", "Nostalgic"],
+      "mood": [
+        "Happy",
+        "Atmospheric",
+        "Nostalgic"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Inbegriff des modernen 'Vibe'-Pop mit 80er-Jahre-Synth-Einflüssen.",
@@ -127,9 +196,18 @@
         "War der erfolgreichste Song des Jahres 2022 weltweit.",
         "Refrain: 'In this world, it's just us, you know it's not the same as it was!'"
       ],
-      "lyrics": { "real": ["Holdin' me back, gravity's holdin' me back", "In this world, it's just us, you know it's not the same as it was", "You know it's not the same as it was, as it was"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Holdin' me back, gravity's holdin' me back",
+          "In this world, it's just us, you know it's not the same as it was",
+          "You know it's not the same as it was, as it was"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "H5v3kks4yAY" }
+      "links": {
+        "youtube": "H5v3kku4y6Q"
+      }
     },
     {
       "id": "modern-miley-cyrus-flowers",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Pop / Disco",
       "difficulty": "easy",
-      "mood": ["Powerful", "Positive", "Chill"],
+      "mood": [
+        "Powerful",
+        "Positive",
+        "Chill"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Wurde am Geburtstag ihres Ex-Mannes Liam Hemsworth veröffentlicht.",
@@ -148,9 +230,18 @@
         "Ein massiver Welthit, der Wochen an der Spitze der Charts stand.",
         "Refrain: 'I can buy myself flowers, write my name in the sand!'"
       ],
-      "lyrics": { "real": ["We were good, we were gold, kind of dream that can't be sold", "I can buy myself flowers, write my name in the sand", "Talk to myself for hours, say things you don't understand"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "We were good, we were gold, kind of dream that can't be sold",
+          "I can buy myself flowers, write my name in the sand",
+          "Talk to myself for hours, say things you don't understand"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "G7KNmW9a75Y" }
+      "links": {
+        "youtube": "G7KNmW9a75Y"
+      }
     },
     {
       "id": "modern-the-weeknd-blinding-lights",
@@ -160,7 +251,11 @@
       "country": "CA",
       "genre": "Synthwave / Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Nostalgic", "Fast"],
+      "mood": [
+        "Energy",
+        "Nostalgic",
+        "Fast"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Perfekte Hommage an den 80er-Jahre-Synth-Sound (Retrowave).",
@@ -169,9 +264,18 @@
         "Einer der meistgestreamten Songs der Spotify-Geschichte.",
         "Refrain: 'I said, ooh, I'm blinded by the lights!'"
       ],
-      "lyrics": { "real": ["I've been on my own for long enough, maybe you can show me how to love", "I said, ooh, I'm blinded by the lights", "No I can't sleep until I feel your touch"], "fake": "Walking down the street with a rhythm in my feet tonight" },
+      "lyrics": {
+        "real": [
+          "I've been on my own for long enough, maybe you can show me how to love",
+          "I said, ooh, I'm blinded by the lights",
+          "No I can't sleep until I feel your touch"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4NRXx6on8is" }
+      "links": {
+        "youtube": "4NRXx6on8is"
+      }
     },
     {
       "id": "modern-pharrell-happy",
@@ -181,7 +285,11 @@
       "country": "US",
       "genre": "Pop / Soul",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Positive"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Titelsong aus dem Animationsfilm 'Ich – Einfach unverbesserlich 2'.",
@@ -190,9 +298,18 @@
         "Wurde weltweit zum Symbol für Freude und wurde in zahllosen Fan-Videos adaptiert.",
         "Refrain: 'Because I'm happy, clap along if you feel like a room without a roof!'"
       ],
-      "lyrics": { "real": ["It might seem crazy what I'm about to say, sunshine she's here, you can take a break", "Because I'm happy, clap along if you feel like a room without a roof", "Because I'm happy, clap along if you feel like happiness is the truth"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "It might seem crazy what I'm about to say, sunshine she's here, you can take a break",
+          "Because I'm happy, clap along if you feel like a room without a roof",
+          "Because I'm happy, clap along if you feel like happiness is the truth"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "y6Sxv-sUYtM" }
+      "links": {
+        "youtube": "y6Sxv-sUYtM"
+      }
     },
     {
       "id": "modern-sia-chandelier",
@@ -202,7 +319,11 @@
       "country": "AU",
       "genre": "Electropop",
       "difficulty": "medium",
-      "mood": ["Powerful", "Emotional", "Epic"],
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Epic"
+      ],
       "pack": "2010s & 2020s Chart Toppers",
       "hints": [
         "Beschreibt auf dramatische Weise den Kampf mit Alkoholsucht und Partyleben.",
@@ -211,9 +332,18 @@
         "Besticht durch den unglaublichen Stimmumfang im Refrain.",
         "Refrain: 'I'm gonna swing from the chandelier, from the chandelier!'"
       ],
-      "lyrics": { "real": ["Party girls don't get hurt, can't feel anything, when will I learn?", "I'm gonna swing from the chandelier, from the chandelier", "I'm gonna live like tomorrow doesn't exist, like it doesn't exist"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Party girls don't get hurt, can't feel anything, when will I learn?",
+          "I'm gonna swing from the chandelier, from the chandelier",
+          "I'm gonna live like tomorrow doesn't exist, like it doesn't exist"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "2vjPBrBU-TM" }
+      "links": {
+        "youtube": "2vjPBrBU-TM"
+      }
     }
   ]
 }
