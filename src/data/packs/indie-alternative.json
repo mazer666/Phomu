@@ -886,50 +886,6 @@
       "isQRCompatible": true
     },
     {
-      "id": "indie-radiohead-creep",
-      "title": "Creep",
-      "artist": "Radiohead",
-      "year": 1992,
-      "country": "GB",
-      "genre": "Alternative Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Sad",
-        "Emotional",
-        "Classic"
-      ],
-      "pack": "Indie & Alternative",
-      "hints": [
-        "[XXX]s Debütsingle, die sie weltweit bekannt machte.",
-        "Der plötzliche Gitarren-Schlag vor dem Refrain ist das Markenzeichen des Songs.",
-        "Thematisiert Selbstzweifel und das Gefühl, nicht dazuzugehören.",
-        "Die Band mochte den Song später so wenig, dass sie ihn jahrelang nicht live spielten.",
-        "Refrain: 'I'm a [XXX]! I'm a weirdo! What the hell am I doing here?'"
-      ],
-      "lyrics": {
-        "real": [
-          "When you were here before, couldn't look you in the eye",
-          "You're just like an angel, your skin makes me cry",
-          "I'm a creep, I'm a weirdo, what the hell am I doing here?"
-        ],
-        "fake": "Dancing in the stars, playing my guitars tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "XFkzRNyygfk"
-      },
-      "coverUrl": "/covers/indie-radiohead-creep.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
       "id": "indie-killers-brightside",
       "title": "Mr. Brightside",
       "artist": "The Killers",
@@ -1095,50 +1051,6 @@
         "youtube": "gnhXHvRoUd0"
       },
       "coverUrl": "/covers/indie-kings-of-leon-somebody.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
-      "id": "indie-mgmt-kids",
-      "title": "Kids",
-      "artist": "MGMT",
-      "year": 2007,
-      "country": "US",
-      "genre": "Indie Pop / Synth Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Happy",
-        "Electronic",
-        "Nostalgic"
-      ],
-      "pack": "Indie & Alternative",
-      "hints": [
-        "Bekannt für den extrem einprägsamen Synthesizer-Hook.",
-        "Thematisiert den Kontrast zwischen kindlicher Unbekümmertheit und der Realität der Erwachsenen.",
-        "Das Video mit dem Baby und den Monstern sorgte für viel Gesprächsstoff.",
-        "Ein Meilenstein des Synth-lastigen Indie-Pop.",
-        "Refrain: 'Control yourself! Take only what you need from it!'"
-      ],
-      "lyrics": {
-        "real": [
-          "You were a child crawling on your knees toward it",
-          "Control yourself, take only what you need from it",
-          "A family of trees wanted to be haunted"
-        ],
-        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "fe4EK4HSPkI"
-      },
-      "coverUrl": "/covers/indie-mgmt-kids.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",

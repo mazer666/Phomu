@@ -63,8 +63,8 @@ export function PlayerCard({ name, avatar, color, isPilot, onRemove }: PlayerCar
       {/* Entfernen-Button */}
       <button
         onClick={onRemove}
-        className="shrink-0 w-7 h-7 flex items-center justify-center text-sm rounded-lg
-                   text-red-400 hover:text-red-300 hover:bg-red-400/20 transition-colors"
+        className="shrink-0 w-11 h-11 flex items-center justify-center text-lg rounded-xl
+                   text-red-400 hover:text-red-300 hover:bg-red-400/20 active:scale-90 transition-all"
         aria-label={`${name} entfernen`}
         title={`${name} entfernen`}
       >

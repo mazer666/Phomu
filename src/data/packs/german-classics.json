@@ -886,94 +886,6 @@
       "isQRCompatible": true
     },
     {
-      "id": "german-groenemeyer-maenner",
-      "title": "Männer",
-      "artist": "Herbert Grönemeyer",
-      "year": 1984,
-      "country": "DE",
-      "genre": "Pop / Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Funny",
-        "Classic",
-        "Thoughtful"
-      ],
-      "pack": "German Classics",
-      "hints": [
-        "Eine ironische und zugleich tiefgründige Analyse des männlichen Rollenbildes.",
-        "[XXX] [XXX]s endgültiger Durchbruch als einer der wichtigsten deutschen Musiker.",
-        "Bekannt für den markanten, fast abgehackten Gesangsstil.",
-        "Ein absoluter Klassiker, der auf keiner deutschen Party fehlen darf.",
-        "Refrain: '[XXX] nehmen in den Arm, [XXX] geben Geborgenheit!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Männer haben's schwer, nehmen's leicht, außen hart und innen ganz weich",
-          "Männer werden als Kind schon auf Mann geeicht",
-          "Männer nehmen in den Arm, Männer geben Geborgenheit"
-        ],
-        "fake": "Tanzen im Regen, dem Leben entgegen, heute Nacht"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "oE_s_yYq_eE"
-      },
-      "coverUrl": "/covers/german-groenemeyer-maenner.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
-      "id": "german-westernhagen-freiheit",
-      "title": "Freiheit",
-      "artist": "Westernhagen",
-      "year": 1987,
-      "country": "DE",
-      "genre": "Rock / Ballad",
-      "difficulty": "easy",
-      "mood": [
-        "Emotional",
-        "Inspirational",
-        "Classic"
-      ],
-      "pack": "German Classics",
-      "hints": [
-        "Wurde zur Hymne der deutschen Wiedervereinigung 1989/90.",
-        "Marius Müller-[XXX]s Reibeisenstimme verleiht dem Song enorme Kraft.",
-        "Thematisiert den universellen Wunsch nach [XXX] und Selbstbestimmung.",
-        "Ein fester Bestandteil der deutschen Rockgeschichte.",
-        "Refrain: '[XXX]... ist das einzige, was zählt!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Die Verträge sind gemacht, und es wurde viel gelacht",
-          "Alle Türen stehen offen, auf ein Neues lässt sich hoffen",
-          "Freiheit, Freiheit, ist das einzige, was zählt"
-        ],
-        "fake": "In der Mitte der Nacht, haben wir das Licht angemacht"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "S5O9O5S9S"
-      },
-      "coverUrl": "/covers/german-westernhagen-freiheit.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
       "id": "german-hosen-tage",
       "title": "Tage wie diese",
       "artist": "Die Toten Hosen",
@@ -1007,50 +919,6 @@
         "youtube": "j09hpp3AxIE"
       },
       "coverUrl": "/covers/german-hosen-tage.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
-      "id": "german-aerzte-zu-spaet",
-      "title": "Zu spät",
-      "artist": "Die Ärzte",
-      "year": 1984,
-      "country": "DE",
-      "genre": "Punk Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Funny",
-        "Energy",
-        "Classic"
-      ],
-      "pack": "German Classics",
-      "hints": [
-        "Einer der frühen Hits der 'besten Band der Welt'.",
-        "Handelt von einem Verlassenen, der seiner Ex-Freundin prophezeit, dass sie es bereuen wird.",
-        "Farin Urlaub und Bela B. zeigen hier ihren typischen Humor.",
-        "Ein unverzichtbarer Song für jedes [XXX]-Konzert.",
-        "Refrain: 'Doch eines Tages werd' ich mich rächen! Ich werd' die Herzen aller Mädchen brechen!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Du bist gegangen, hast mich einfach so verlassen",
-          "Und jetzt steh ich hier, mutterseelenallein auf der Gassen",
-          "Doch eines Tages werd' ich mich rächen, ich werd' die Herzen aller Mädchen brechen"
-        ],
-        "fake": "In der Mitte der Straβe, spürst du die Hitze der Trommel"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "1KjPyEY7DQ4"
-      },
-      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",
@@ -1280,50 +1148,6 @@
       "isQRCompatible": true
     },
     {
-      "id": "german-silbermond-das-beste",
-      "title": "Das Beste",
-      "artist": "Silbermond",
-      "year": 2006,
-      "country": "DE",
-      "genre": "Pop / Ballad",
-      "difficulty": "easy",
-      "mood": [
-        "Romantic",
-        "Emotional",
-        "Classic"
-      ],
-      "pack": "German Classics",
-      "hints": [
-        "Die ultimative Liebeserklärung der 2000er Jahre.",
-        "Stefanie Kloß' gefühlvolle Stimme und das dezente Klavier tragen den Song.",
-        "Wurde zu einem der meistgespielten Songs bei Trauungen in Deutschland.",
-        "Zementierte den Status von [XXX] als eine der wichtigsten deutschen Bands.",
-        "Refrain: 'Das [XXX], was mir je passiert ist!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Ich habe einen Schatz gefunden, und er trägt deinen Namen",
-          "Du bist das Beste, was mir je passiert ist",
-          "Es ist so schön, dass es dich gibt"
-        ],
-        "fake": "In der Stille der Nacht, haben wir an dich gedacht"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "gxEPV4kolz0"
-      },
-      "coverUrl": "/covers/german-silbermond-das-beste.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
       "id": "german-juli-welle",
       "title": "Perfekte Welle",
       "artist": "Juli",
@@ -1357,50 +1181,6 @@
         "youtube": "ad8ukI7Z-b8"
       },
       "coverUrl": "/covers/german-juli-welle.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
-      "id": "german-helden-denkmal",
-      "title": "Denkmal",
-      "artist": "Wir sind Helden",
-      "year": 2003,
-      "country": "DE",
-      "genre": "Indie / Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Funny",
-        "Energy",
-        "Classic"
-      ],
-      "pack": "German Classics",
-      "hints": [
-        "Wir [XXX] [XXX] brachten mit diesem Song intellektuellen Witz zurück in den Pop.",
-        "Handelt davon, dass man lieber gemeinsam lebt als sich ein [XXX] bauen zu lassen.",
-        "Bekannt für Judith Holofernes' charakteristische Texte und Stimme.",
-        "Ein Meilenstein des deutschen Indie-Pop.",
-        "Refrain: 'Hol den Vorschlaghammer! Sie haben uns ein [XXX] gebaut!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Komm mal ans Fenster, komm mal her zu mir",
-          "Hol den Vorschlaghammer, sie haben uns ein Denkmal gebaut",
-          "Und jeder Vollidiot weiß, dass das Liebe ist"
-        ],
-        "fake": "Nichts kann uns stoppen, wenn wir durch die Zeit fliegen irgendwie"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "O7-L_u_3p_Y"
-      },
-      "coverUrl": "/covers/german-helden-denkmal.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",

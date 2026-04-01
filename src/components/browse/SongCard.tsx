@@ -75,7 +75,7 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
       <div className="relative aspect-[4/5] overflow-hidden bg-gray-900">
         {song.coverUrl ? (
           <Image 
-            src={song.coverUrl} 
+            src={`/Phomu${song.coverUrl}`} 
             alt={song.title} 
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"

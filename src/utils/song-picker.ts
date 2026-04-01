@@ -38,9 +38,9 @@ export function pickRandomSong({
   
   // 2. Modus-Spezifische Filter (z.B. Lyrics Labyrinth nur für Songs mit Lyrics)
   if (currentMode === 'lyrics') {
-    pool = pool.filter(s => s.lyrics !== null && s.supportedModes?.includes('lyrics'));
+    pool = pool.filter(s => s.lyrics !== null);
   } else if (currentMode) {
-    pool = pool.filter(s => s.supportedModes?.includes(currentMode as any));
+    pool = pool.filter(s => s.supportedModes?.includes(currentMode as GameMode));
   }
 
   // 3. Noch nicht gespielte Songs bevorzugen

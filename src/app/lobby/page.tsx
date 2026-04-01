@@ -6,7 +6,7 @@
  */
 'use client';
 
-import { useState, useEffect, useCallback, useMemo, type KeyboardEvent } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useGameStore } from '@/stores/game-store';
@@ -74,12 +74,6 @@ export default function LobbyPage() {
   }, [step]);
   const [isScannerOpen, setIsScannerOpen] = useState(false);
 
-  // Update name input when players list changes (if not modified by user)
-  useEffect(() => {
-    if (nameInput.startsWith('Spieler ') || nameInput === '') {
-      setNameInput(`Spieler ${players.length + 1}`);
-    }
-  }, [players.length]);
 
   // ─── Hilfsfunktionen ────────────────────────────────────────────
 
@@ -88,7 +82,7 @@ export default function LobbyPage() {
     if (step === 2) return config.selectedModes.length > 0;
     if (step === 3) return config.selectedPacks.length > 0;
     return true;
-  }, [step, players.length, config]);
+  }, [step, players.length, config.selectedModes, config.selectedPacks]);
 
   const handleAddPlayer = useCallback(() => {
     if (!nameInput.trim()) return;
@@ -99,7 +93,10 @@ export default function LobbyPage() {
     const color = PLAYER_COLORS[players.length % PLAYER_COLORS.length];
 
     addPlayer(nameInput.trim(), avatar, color);
-    // The useEffect will handle the next 'Spieler X' pre-fill
+    
+    // Auto-update name for the next addition
+    const nextCount = players.length + 1;
+    setNameInput(`Spieler ${nextCount + 1}`);
   }, [nameInput, players.length, addPlayer]);
 
   const handleTeamModeChange = useCallback((mode: TeamMode) => {
@@ -123,7 +120,7 @@ export default function LobbyPage() {
   // ─── Render Schritte ───────────────────────────────────────────
 
   return (
-    <main className="max-w-2xl mx-auto px-4 md:px-8 overflow-x-hidden">
+    <main className="max-w-2xl mx-auto px-4 md:px-8 overflow-x-hidden min-h-screen flex flex-col">
 
       {/* Header mit Progress — sticky so only content scrolls */}
       <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-4 md:pt-6 pb-4 flex flex-col gap-3">
@@ -140,49 +137,50 @@ export default function LobbyPage() {
       </div>
 
       {/* Wizard Content Area — padding-bottom makes room for the fixed footer */}
-      <div className="pb-44 overflow-x-hidden">
+      <div className="flex-1 pb-44 overflow-x-hidden">
         <AnimatePresence mode="wait" initial={false} custom={direction}>
-          <motion.div
-            key={step}
-            custom={direction}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            variants={variants}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-          >
-            {step === 1 && (
-              <div className="space-y-6">
-                <div>
+          {step === 1 && (
+            <motion.div
+              key="step-1"
+              custom={direction}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              variants={variants}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="space-y-6"
+            >
+              <div>
                   <h2 className="text-xl font-bold mb-2">Wer spielt mit?</h2>
                   <p className="text-sm opacity-60">Füge mindestens einen Spieler hinzu.</p>
                 </div>
                 
-                  <div className="flex gap-2">
-                    <input
-                      value={nameInput}
-                      onChange={(e) => setNameInput(e.target.value)}
-                      onKeyDown={(e) => e.key === 'Enter' && handleAddPlayer()}
-                      placeholder="Name eingeben..."
-                      className="flex-1 bg-white/10 border border-[var(--color-border)] rounded-2xl px-4 py-4 focus:outline-none focus:border-[var(--color-accent)] font-bold text-sm"
-                    />
-                    <Tooltip content="Spieler hinzufügen" position="top">
-                      <button 
-                        onClick={handleAddPlayer}
-                        className="px-6 py-4 rounded-2xl bg-[var(--color-accent)] font-black shadow-lg hover:scale-105 active:scale-95 transition-all text-white"
-                      >
-                        +
-                      </button>
-                    </Tooltip>
-                    <Tooltip content="Phomu-Karte scannen" position="top">
-                      <button 
-                        onClick={() => setIsScannerOpen(true)}
-                        className="px-5 py-4 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-xl hover:bg-white/20 transition-all active:scale-95"
-                      >
-                        📸
-                      </button>
-                    </Tooltip>
-                  </div>
+                <div className="flex gap-2">
+                  <input
+                    value={nameInput}
+                    onChange={(e) => setNameInput(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleAddPlayer()}
+                    onFocus={(e) => e.target.select()}
+                    placeholder="Name eingeben..."
+                    className="flex-1 bg-white/10 border border-[var(--color-border)] rounded-2xl px-4 py-4 focus:outline-none focus:border-[var(--color-accent)] font-bold text-sm"
+                  />
+                  <Tooltip content="Spieler hinzufügen" position="top">
+                    <button 
+                      onClick={handleAddPlayer}
+                      className="px-6 py-4 rounded-2xl bg-[var(--color-accent)] font-black shadow-lg hover:scale-105 active:scale-95 transition-all text-white"
+                    >
+                      +
+                    </button>
+                  </Tooltip>
+                  <Tooltip content="Phomu-Karte scannen" position="top">
+                    <button 
+                      onClick={() => setIsScannerOpen(true)}
+                      className="px-5 py-4 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-xl hover:bg-white/20 transition-all active:scale-95"
+                    >
+                      📸
+                    </button>
+                  </Tooltip>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {players.map((p) => (
@@ -196,12 +194,21 @@ export default function LobbyPage() {
                     />
                   ))}
                 </div>
-              </div>
+              </motion.div>
             )}
 
-            {step === 2 && (
-              <div className="space-y-6">
-                <div>
+          {step === 2 && (
+            <motion.div
+              key="step-2"
+              custom={direction}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              variants={variants}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="space-y-6"
+            >
+              <div>
                   <h2 className="text-xl font-bold mb-2">Wie wird gespielt?</h2>
                   <p className="text-sm opacity-60">Wähle die Spielmodi, die vorkommen sollen.</p>
                 </div>
@@ -209,12 +216,21 @@ export default function LobbyPage() {
                   selectedModes={config.selectedModes}
                   onChange={(modes) => setConfig({ selectedModes: modes })}
                 />
-              </div>
+              </motion.div>
             )}
 
-            {step === 3 && (
-              <div className="space-y-6">
-                <div>
+          {step === 3 && (
+            <motion.div
+              key="step-3"
+              custom={direction}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              variants={variants}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="space-y-6"
+            >
+              <div>
                   <h2 className="text-xl font-bold mb-2">Was hören wir?</h2>
                   <p className="text-sm opacity-60">Wähle eines oder mehrere Song-Packs aus.</p>
                 </div>
@@ -222,13 +238,22 @@ export default function LobbyPage() {
                   selectedPacks={config.selectedPacks}
                   onChange={(packs) => setConfig({ selectedPacks: packs })}
                 />
-              </div>
+              </motion.div>
             )}
 
-            {step === 4 && (
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-xl font-bold mb-2">Feinschiff</h2>
+          {step === 4 && (
+            <motion.div
+              key="step-4"
+              custom={direction}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              variants={variants}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="space-y-8"
+            >
+              <div>
+                  <h2 className="text-xl font-bold mb-2">Feinschlapf</h2>
                   <p className="text-sm opacity-60">Letzte Einstellungen vor dem Start.</p>
                 </div>
 
@@ -320,30 +345,31 @@ export default function LobbyPage() {
                     </div>
                   </div>
 
-                  {/* Difficulty */}
+                  {/* Difficulty & Settings */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-xs font-bold opacity-40 uppercase mb-2 block">Schwierigkeit</label>
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold opacity-40 uppercase ml-1">Schwierigkeit</label>
                       <select 
                         value={config.difficulty} 
                         onChange={(e) => setConfig({ difficulty: e.target.value as Difficulty | 'all' })}
-                        className="w-full bg-[var(--color-bg-card)] border border-[var(--color-border)] p-3 rounded-xl"
+                        className="w-full bg-[var(--color-bg-card)] border border-[var(--color-border)] p-4 rounded-2xl focus:border-[var(--color-accent)] outline-none transition-all"
                       >
                         {DIFFICULTY_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
                       </select>
                     </div>
-                    <div>
-                      <label className="text-xs font-bold opacity-40 uppercase mb-2 block">Zeitlimit</label>
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold opacity-40 uppercase ml-1">Zeitlimit</label>
                       <select 
                         value={config.timeLimitSeconds ?? ''} 
                         onChange={(e) => setConfig({ timeLimitSeconds: e.target.value ? Number(e.target.value) : null })}
-                        className="w-full bg-[var(--color-bg-card)] border border-[var(--color-border)] p-3 rounded-xl"
+                        className="w-full bg-[var(--color-bg-card)] border border-[var(--color-border)] p-4 rounded-2xl focus:border-[var(--color-accent)] outline-none transition-all"
                       >
                         {TIME_LIMIT_OPTIONS.map(o => <option key={o.value ?? 'null'} value={o.value ?? ''}>{o.label}</option>)}
                       </select>
                     </div>
-                    <div className="bg-[var(--color-bg-card)] p-3 rounded-xl border border-[var(--color-border)]">
-                      <label className="flex items-center justify-between text-sm font-bold">
+
+                    <div className="bg-[var(--color-bg-card)] p-4 rounded-2xl border border-[var(--color-border)]">
+                      <label className="flex items-center justify-between text-sm font-bold cursor-pointer group">
                         <div className="flex flex-col">
                           <span>QR-Karten Modus</span>
                           <span className="text-[9px] opacity-40 uppercase tracking-widest mt-1">Nur physische Karten</span>
@@ -352,76 +378,76 @@ export default function LobbyPage() {
                           type="checkbox"
                           checked={config.onlyQRCompatible ?? false}
                           onChange={(e) => setConfig({ onlyQRCompatible: e.target.checked })}
-                          className="accent-[var(--color-accent)] w-5 h-5"
+                          className="accent-[var(--color-accent)] w-6 h-6 rounded-lg overflow-hidden transition-all group-active:scale-90"
                         />
                       </label>
                     </div>
-                    <div className="bg-[var(--color-bg-card)] p-3 rounded-xl border border-[var(--color-border)]">
-                      <label className="flex items-center justify-between text-sm font-bold">
+
+                    <div className="bg-[var(--color-bg-card)] p-4 rounded-2xl border border-[var(--color-border)]">
+                      <label className="flex items-center justify-between text-sm font-bold cursor-pointer group">
                         <span>Zeitabzug</span>
                         <input
                           type="checkbox"
                           checked={config.timeDecayEnabled}
                           onChange={(e) => setConfig({ timeDecayEnabled: e.target.checked })}
-                          className="accent-[var(--color-accent)] w-5 h-5"
+                          className="accent-[var(--color-accent)] w-6 h-6 rounded-lg overflow-hidden transition-all group-active:scale-90"
                         />
                       </label>
                     </div>
                   </div>
 
                   {/* Team Mode */}
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     <div>
-                      <label className="text-xs font-bold opacity-40 uppercase mb-2 block">Team Modus</label>
-                      <div className="grid grid-cols-3 gap-2">
+                      <label className="text-xs font-bold opacity-40 uppercase mb-3 block ml-1">Team Modus</label>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                         {TEAM_MODE_OPTIONS.map(o => (
                           <button
                             key={o.value}
                             onClick={() => handleTeamModeChange(o.value)}
-                            className={`p-3 rounded-xl border-2 text-xs font-bold transition-all ${config.teamMode === o.value ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}
+                            className={`p-4 rounded-2xl border-2 text-xs font-bold transition-all text-left flex flex-col gap-1 ${config.teamMode === o.value ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-accent)]' : 'border-white/5 bg-white/5 opacity-60 hover:opacity-100'}`}
                           >
-                            <div>{o.label}</div>
-                            <div className="opacity-60 font-normal mt-0.5">{o.description}</div>
+                            <span className="text-sm">{o.label}</span>
+                            <span className="text-[9px] uppercase tracking-widest opacity-60">{o.description}</span>
                           </button>
                         ))}
                       </div>
                     </div>
 
-                    {/* Team-Zuweisung: nur bei fixed/shifting */}
+                    {/* Team Configuration */}
                     {(config.teamMode === 'fixed' || config.teamMode === 'shifting') && teams.length > 0 && (
                       <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        className="overflow-hidden space-y-4"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="space-y-6"
                       >
-                        {/* Team-Übersicht */}
-                        <div className="grid grid-cols-2 gap-2">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {teams.map((team) => (
                             <div
                               key={team.id}
-                              className="p-3 rounded-2xl border-2 space-y-1"
-                              style={{ borderColor: team.color + '66', background: team.color + '18' }}
+                              className="p-4 rounded-3xl border-2 space-y-3"
+                              style={{ borderColor: team.color + '44', background: team.color + '10' }}
                             >
-                              <div className="flex items-center justify-between gap-1">
+                              <div className="flex items-center justify-between">
                                 <input 
                                   value={team.name}
                                   onChange={(e) => {
                                     const next = teams.map(t => t.id === team.id ? { ...t, name: e.target.value } : t);
                                     useGameStore.setState({ teams: next });
                                   }}
-                                  className="bg-transparent font-black text-xs border-none focus:outline-none w-full"
+                                  className="bg-transparent font-black text-sm outline-none w-full"
                                   style={{ color: team.color }}
                                 />
                                 {teams.length > 2 && (
                                   <button
                                     onClick={() => removeTeam(team.id)}
-                                    className="text-[10px] opacity-40 hover:opacity-80 shrink-0"
+                                    className="w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-xs opacity-40 hover:opacity-100 transition-opacity"
                                   >
                                     ✕
                                   </button>
                                 )}
                               </div>
-                              <div className="flex flex-wrap gap-2 py-1">
+                              <div className="flex flex-wrap gap-2">
                                 {CURATED_TEAM_COLORS.map(c => (
                                   <button
                                     key={c.value}
@@ -429,91 +455,66 @@ export default function LobbyPage() {
                                       const next = teams.map(t => t.id === team.id ? { ...t, color: c.value } : t);
                                       useGameStore.setState({ teams: next });
                                     }}
-                                    className={`w-3 h-3 rounded-full border border-white/20 transition-transform ${team.color === c.value ? 'scale-125 ring-2 ring-white/40' : 'hover:scale-110'}`}
+                                    className={`w-4 h-4 rounded-full transition-all ${team.color === c.value ? 'scale-125 ring-2 ring-white border-2 border-black' : 'opacity-40 hover:opacity-100'}`}
                                     style={{ backgroundColor: c.value }}
-                                    title={c.name}
                                   />
                                 ))}
                               </div>
-                              <div className="flex flex-wrap gap-1">
-                                {players
-                                  .filter(p => p.teamId === team.id)
-                                  .map(p => (
-                                    <span
-                                      key={p.id}
-                                      className="text-[10px] font-bold px-2 py-0.5 rounded-full"
-                                      style={{ background: team.color + '33', color: team.color }}
-                                    >
-                                      {p.avatar} {p.name}
-                                    </span>
-                                  ))}
-                                {players.filter(p => p.teamId === team.id).length === 0 && (
-                                  <span className="text-[10px] opacity-30 italic">Leer</span>
-                                )}
+                              <div className="flex flex-wrap gap-1.5 pt-2 border-t border-white/5">
+                                {players.filter(p => p.teamId === team.id).map(p => (
+                                  <span key={p.id} className="text-[10px] font-bold px-2 py-1 rounded-lg bg-white/5">
+                                    {p.avatar} {p.name}
+                                  </span>
+                                ))}
                               </div>
                             </div>
                           ))}
                         </div>
 
-                        {/* Spieler zuweisen */}
-                        {config.teamMode === 'fixed' && players.length > 0 && (
-                          <div className="space-y-2">
-                            <p className="text-[10px] font-black uppercase opacity-40 tracking-widest">
-                              Spieler zuweisen
-                            </p>
-                            {players.map((player) => (
-                              <div key={player.id} className="flex items-center gap-2">
-                                <span className="text-sm w-5">{player.avatar}</span>
-                                <span className="flex-1 text-xs font-bold truncate">{player.name}</span>
-                                <div className="flex gap-1">
-                                  {teams.map((team) => (
-                                    <button
-                                      key={team.id}
-                                      onClick={() =>
-                                        assignPlayerToTeam(
-                                          player.id,
-                                          player.teamId === team.id ? undefined : team.id,
-                                        )
-                                      }
-                                      className="px-2 py-1 rounded-lg text-[10px] font-black transition-all"
-                                      style={{
-                                        background: player.teamId === team.id ? team.color : team.color + '22',
-                                        color: player.teamId === team.id ? '#fff' : team.color,
-                                        border: `1px solid ${team.color}44`,
-                                      }}
-                                    >
-                                      {team.name.split(' ')[0]}
-                                    </button>
-                                  ))}
+                        {config.teamMode === 'fixed' && (
+                          <div className="space-y-4">
+                            <h4 className="text-[10px] font-black uppercase opacity-30 tracking-widest ml-1">Team-Zuweisung</h4>
+                            <div className="grid gap-2">
+                              {players.map(player => (
+                                <div key={player.id} className="flex items-center gap-3 p-2 bg-white/5 rounded-2xl">
+                                  <span className="text-xl">{player.avatar}</span>
+                                  <span className="flex-1 text-xs font-bold">{player.name}</span>
+                                  <div className="flex gap-1">
+                                    {teams.map(team => (
+                                      <button
+                                        key={team.id}
+                                        onClick={() => assignPlayerToTeam(player.id, player.teamId === team.id ? undefined : team.id)}
+                                        className="px-3 py-1.5 rounded-xl text-[9px] font-black uppercase transition-all"
+                                        style={{ 
+                                          backgroundColor: player.teamId === team.id ? team.color : 'transparent',
+                                          color: player.teamId === team.id ? '#fff' : team.color,
+                                          border: `1px solid ${team.color}44`
+                                        }}
+                                      >
+                                        {team.name.split(' ')[0]}
+                                      </button>
+                                    ))}
+                                  </div>
                                 </div>
-                              </div>
-                            ))}
+                              ))}
+                            </div>
                           </div>
                         )}
-
-                        {config.teamMode === 'shifting' && (
-                          <p className="text-xs opacity-50 text-center italic">
-                            Mix-Teams werden jede Runde automatisch neu gemischt
-                          </p>
-                        )}
-
-                        {/* Weiteres Team hinzufügen */}
+                        
                         {teams.length < 4 && (
-                          <button
+                          <button 
                             onClick={() => createTeam()}
-                            className="w-full py-2 rounded-xl border border-dashed border-white/20 text-xs font-bold opacity-50 hover:opacity-80 transition-opacity"
+                            className="w-full py-3 rounded-2xl border-2 border-dashed border-white/10 text-xs font-bold opacity-40 hover:opacity-100 hover:border-white/30 transition-all"
                           >
-                            + Team hinzufügen
+                            + Weiteres Team hinzufügen
                           </button>
                         )}
                       </motion.div>
                     )}
                   </div>
                 </div>
-
-              </div>
+              </motion.div>
             )}
-          </motion.div>
         </AnimatePresence>
       </div>
 
@@ -522,57 +523,40 @@ export default function LobbyPage() {
         onClose={() => setIsScannerOpen(false)}
         onScan={(text) => {
           const intent = parseQrIntent(text);
-
           if (intent.kind === 'player') {
             setNameInput(intent.name);
             handleAddPlayer();
             return;
           }
-
           if (intent.kind === 'pack') {
             const exists = PHOMU_CONFIG.SONG_PACKS.some((pack) => pack.id === intent.packId);
-            if (!exists) {
-              alert(`Pack nicht gefunden: ${intent.packId}`);
-              return;
-            }
+            if (!exists) return alert(`Pack nicht gefunden: ${intent.packId}`);
             if (!config.selectedPacks.includes(intent.packId)) {
               setConfig({ selectedPacks: [...config.selectedPacks, intent.packId] });
             }
-            alert(`Pack hinzugefügt: ${intent.packId}`);
             return;
           }
-
-          if (intent.kind === 'session') {
-            alert(`Session-Join erkannt: ${intent.sessionCode} (Realtime-Join kommt in Phase 3).`);
-            return;
-          }
-
-          if (intent.kind === 'unsupported-song-link') {
-            alert('Direkte Song-QRs sind ab jetzt nicht mehr vorgesehen. Bitte Session- oder Pack-QR nutzen.');
-            return;
-          }
-
-          alert(`Unbekannter QR-Inhalt: ${text}`);
         }}
       />
 
       {/* Navigation Footer — fixed at viewport bottom */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)] border-t border-white/5">
-        <div className="max-w-2xl mx-auto px-4 md:px-8 pt-3 pb-6 flex flex-col gap-2">
-          {/* Primary CTA on step 4 — always visible */}
+      <footer className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-xl border-t border-white/5 pb-safe">
+        <div className="max-w-2xl mx-auto px-4 md:px-8 pt-4 pb-8 flex flex-col gap-3">
+          
           {step === 4 && players.length > 0 && (
             <button
               onClick={handleStart}
-              className="w-full py-4 rounded-2xl bg-[var(--color-primary)] text-white text-lg font-black shadow-xl active:scale-95 transition-all"
+              className="w-full py-5 rounded-3xl bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-primary)] text-white text-xl font-black shadow-2xl shadow-[var(--color-accent)]/20 active:scale-95 transition-all"
             >
-              🚀 SPIEL STARTEN!
+              🚀 JETZT STARTEN!
             </button>
           )}
+
           <div className="flex gap-3">
             {step > 1 && (
               <button
                 onClick={() => goTo(step - 1)}
-                className="flex-1 py-4 rounded-xl border-2 border-[var(--color-border)] font-bold opacity-60 hover:opacity-100"
+                className="flex-1 py-4 rounded-2xl border-2 border-white/5 font-bold opacity-40 hover:opacity-100 hover:bg-white/5 transition-all"
               >
                 Zurück
               </button>
@@ -581,30 +565,25 @@ export default function LobbyPage() {
               <button
                 onClick={() => goTo(step + 1)}
                 disabled={!canGoNext}
-                className="flex-[2] py-4 rounded-xl bg-white/10 border border-white/20 font-black disabled:opacity-20 flex items-center justify-center gap-2"
+                className="flex-[2] py-4 rounded-2xl bg-white/10 border border-white/10 font-black disabled:opacity-20 transition-all flex items-center justify-center gap-2"
               >
-                Weiter {canGoNext ? '→' : '(fehlt noch)'}
+                {canGoNext ? 'Weiter →' : 'Bitte wählen...'}
               </button>
             )}
           </div>
 
-          {players.length > 0 && step === 1 && (
-            <button
-              onClick={() => goTo(4)}
-              className="text-xs font-bold text-[var(--color-accent)] opacity-60 hover:opacity-100 transition-opacity text-center py-1"
-            >
-              Direkt zu den Einstellungen →
+          <div className="flex justify-between items-center px-2">
+            {players.length > 0 && step === 1 && (
+              <button onClick={() => goTo(4)} className="text-[10px] font-black uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-[var(--color-accent)] transition-all">
+                Schnell-Setup →
+              </button>
+            )}
+            <button onClick={() => { initSession(); goTo(1); }} className="text-[10px] font-black uppercase tracking-widest opacity-20 hover:opacity-100 hover:text-red-500 transition-all ml-auto">
+              Reset Lobby ↺
             </button>
-          )}
-
-          <button
-            onClick={() => { initSession(); goTo(1); }}
-            className="text-[10px] opacity-20 hover:opacity-60 transition-opacity text-center"
-          >
-            Lobby zurücksetzen
-          </button>
+          </div>
         </div>
-      </div>
+      </footer>
 
     </main>
   );

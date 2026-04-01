@@ -18,6 +18,8 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@emnapi/core": "^1.9.1",
+    "@emnapi/runtime": "^1.9.1",
     "framer-motion": "^12.38.0",
     "html5-qrcode": "^2.3.8",
     "i18next": "^26.0.2",

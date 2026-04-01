@@ -52,7 +52,7 @@ export default function BrowsePage() {
   const startQuickGame = useGameStore((state) => state.startQuickGame);
 
   const [allSongs, setAllSongs] = useState<PhomuSong[]>(loadSongs);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [adminMode, setAdminMode] = useState(false);
   const [editingSong, setEditingSong] = useState<PhomuSong | null>(null);
   const [showHints, setShowHints] = useState(false);
@@ -69,10 +69,11 @@ export default function BrowsePage() {
     onlyWithLyrics: false,
     onlyQR: false,
   });
+  const [showFilters, setShowFilters] = useState(false);
 
   // Initiales Laden
   useEffect(() => {
-    setIsLoaded(true);
+    setMounted(true);
   }, []);
 
   const genres = useMemo(() => getGenres(allSongs), [allSongs]);
@@ -139,7 +140,7 @@ export default function BrowsePage() {
     });
   };
 
-  if (!isLoaded) return null;
+  if (!mounted) return null;
 
   return (
     <div className="min-h-screen bg-[#0a0a0c] text-white flex flex-col">
@@ -198,14 +199,27 @@ export default function BrowsePage() {
                >
                  Lobby
                </button>
+               <button
+                 onClick={() => setShowFilters(!showFilters)}
+                 className="md:hidden w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-xl transition-all"
+               >
+                 {showFilters ? '✕' : '⌥'}
+               </button>
             </div>
           </div>
         </div>
       </header>
 
-      <div className="flex-1 max-w-[1800px] mx-auto w-full flex flex-col md:flex-row p-8 gap-8">
+      <div className="flex-1 max-w-[1800px] mx-auto w-full flex flex-col md:flex-row p-4 md:p-8 gap-8 relative">
         {/* Sidebar */}
-        <aside className="w-full md:w-72 shrink-0 space-y-10">
+        <AnimatePresence>
+          {(showFilters || (typeof window !== 'undefined' && window.innerWidth >= 768)) && (
+            <motion.aside 
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="w-full md:w-72 shrink-0 space-y-10 overflow-hidden"
+            >
           <div>
             <div className="flex items-center justify-between mb-4">
               <h4 className="text-[10px] font-black opacity-30 uppercase tracking-[0.2em]">Sortierung</h4>
@@ -224,7 +238,7 @@ export default function BrowsePage() {
               ].map(s => (
                 <button
                   key={s.id}
-                  onClick={() => setSortBy(s.id as any)}
+                  onClick={() => setSortBy(s.id as 'year' | 'title' | 'artist')}
                   className={`flex items-center justify-between px-5 py-3.5 rounded-2xl text-[11px] font-black transition-all border ${sortBy === s.id ? 'bg-blue-600 border-blue-500 text-white shadow-xl shadow-blue-600/20' : 'bg-white/5 border-white/5 text-white/40 hover:bg-white/10'}`}
                 >
                   <span>{s.label}</span>
@@ -289,7 +303,9 @@ export default function BrowsePage() {
               ALLES ZURÜCKSETZEN ↺
             </button>
           </div>
-        </aside>
+        </motion.aside>
+        )}
+      </AnimatePresence>
 
         {/* Content Area */}
         <main className="flex-1">
