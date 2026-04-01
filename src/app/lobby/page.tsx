@@ -16,9 +16,9 @@ import { PackSelector } from '@/components/lobby/PackSelector';
 import { QRScannerModal } from '@/components/game/QRScannerModal';
 import { Tooltip } from '@/components/ui/Tooltip';
 import { PHOMU_CONFIG } from '@/config/game-config';
-import { AVAILABLE_PACKS } from '@/data/packs';
 import type { Difficulty } from '@/config/game-config';
 import type { TeamMode } from '@/types/player';
+import { parseQrIntent } from '@/utils/qr-intent';
 
 // ─── Konstanten ───────────────────────────────────────────────────
 
@@ -214,16 +214,33 @@ export default function LobbyPage() {
 
                 <div className="grid gap-6">
                   {/* Win Score */}
-                  <div className="bg-[var(--color-bg-card)]/50 p-4 rounded-2xl border border-[var(--color-border)]">
-                    <label className="text-sm font-bold opacity-60 block mb-2 uppercase tracking-wide">
-                      Zielpunkte: <span className="text-[var(--color-accent)] text-lg">{config.winCondition}</span>
-                    </label>
-                    <input 
-                      type="range" min={5} max={25} step={1}
-                      value={config.winCondition}
-                      onChange={(e) => setConfig({ winCondition: Number(e.target.value) })}
-                      className="w-full h-2 accent-[var(--color-accent)] cursor-pointer"
-                    />
+                  <div className="bg-[var(--color-bg-card)]/50 p-4 rounded-2xl border border-[var(--color-border)] space-y-4">
+                    <div>
+                      <label className="text-sm font-bold opacity-60 block mb-2 uppercase tracking-wide">
+                        Zielpunkte: <span className="text-[var(--color-accent)] text-lg">{config.winCondition}</span>
+                      </label>
+                      <input 
+                        type="range" min={5} max={25} step={1}
+                        value={config.winCondition}
+                        onChange={(e) => setConfig({ winCondition: Number(e.target.value) })}
+                        className="w-full h-2 accent-[var(--color-accent)] cursor-pointer"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="text-sm font-bold opacity-60 block mb-2 uppercase tracking-wide">
+                        Runden (Standard): <span className="text-[var(--color-accent)] text-lg">{config.roundsToPlay}</span>
+                      </label>
+                      <input
+                        type="range"
+                        min={10}
+                        max={30}
+                        step={1}
+                        value={config.roundsToPlay}
+                        onChange={(e) => setConfig({ roundsToPlay: Number(e.target.value) })}
+                        className="w-full h-2 accent-[var(--color-accent)] cursor-pointer"
+                      />
+                    </div>
                   </div>
 
                   {/* Difficulty */}
@@ -247,6 +264,20 @@ export default function LobbyPage() {
                       >
                         {TIME_LIMIT_OPTIONS.map(o => <option key={o.value ?? 'null'} value={o.value ?? ''}>{o.label}</option>)}
                       </select>
+                    </div>
+                    <div className="sm:col-span-2 bg-[var(--color-bg-card)]/50 p-3 rounded-xl border border-[var(--color-border)]">
+                      <label className="flex items-center justify-between text-sm font-bold">
+                        <span>Optionaler Zeitabzug aktivieren</span>
+                        <input
+                          type="checkbox"
+                          checked={config.timeDecayEnabled}
+                          onChange={(e) => setConfig({ timeDecayEnabled: e.target.checked })}
+                          className="accent-[var(--color-accent)]"
+                        />
+                      </label>
+                      <p className="text-[10px] opacity-60 mt-2">
+                        Ab Sekunde {config.timeDecayGraceSeconds + 1} wird alle {config.timeDecayStepSeconds}s jeweils {config.timeDecayStepPoints} Punkt(e) abgezogen.
+                      </p>
                     </div>
                   </div>
 
@@ -277,12 +308,38 @@ export default function LobbyPage() {
         isOpen={isScannerOpen}
         onClose={() => setIsScannerOpen(false)}
         onScan={(text) => {
-          if (text.startsWith('@')) {
-            setNameInput(text.substring(1));
+          const intent = parseQrIntent(text);
+
+          if (intent.kind === 'player') {
+            setNameInput(intent.name);
             handleAddPlayer();
-          } else {
-            alert(`Gescannter Code: ${text}\n(Zukünftige Funktion: Song-Favoriten oder Deck-Import)`);
+            return;
           }
+
+          if (intent.kind === 'pack') {
+            const exists = PHOMU_CONFIG.SONG_PACKS.some((pack) => pack.id === intent.packId);
+            if (!exists) {
+              alert(`Pack nicht gefunden: ${intent.packId}`);
+              return;
+            }
+            if (!config.selectedPacks.includes(intent.packId)) {
+              setConfig({ selectedPacks: [...config.selectedPacks, intent.packId] });
+            }
+            alert(`Pack hinzugefügt: ${intent.packId}`);
+            return;
+          }
+
+          if (intent.kind === 'session') {
+            alert(`Session-Join erkannt: ${intent.sessionCode} (Realtime-Join kommt in Phase 3).`);
+            return;
+          }
+
+          if (intent.kind === 'unsupported-song-link') {
+            alert('Direkte Song-QRs sind ab jetzt nicht mehr vorgesehen. Bitte Session- oder Pack-QR nutzen.');
+            return;
+          }
+
+          alert(`Unbekannter QR-Inhalt: ${text}`);
         }}
       />
 

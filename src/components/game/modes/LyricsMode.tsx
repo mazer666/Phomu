@@ -27,7 +27,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 interface LyricsModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
 }
 
 // ─── Hauptkomponente ──────────────────────────────────────────────
@@ -54,7 +54,7 @@ function LyricsQuestion({
 }: {
   song: PhomuSong;
   lyrics: SongLyrics;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
 }) {
   const [selected, setSelected] = useState<number | null>(null);
   const [answered, setAnswered] = useState(false);
@@ -149,7 +149,7 @@ function BonusRound({
   onAnswer,
 }: {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
 }) {
   const [claimed, setClaimed] = useState(false);
 

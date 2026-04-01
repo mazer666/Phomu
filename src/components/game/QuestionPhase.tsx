@@ -23,7 +23,7 @@ interface QuestionPhaseProps {
   song: PhomuSong;
   currentMode: GameMode;
   /** Wird aufgerufen, wenn der Spieler fertig ist: isCorrect + Punkte */
-  onAnswered: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswered: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
   /** Wird aufgerufen, wenn alle bereit sind zum Reveal */
   onReveal: () => void;
 }
@@ -47,8 +47,8 @@ export function QuestionPhase({
   onReveal,
 }: QuestionPhaseProps) {
   const handleAnswered = useCallback(
-    (isCorrect: boolean, points: number) => {
-      onAnswered(isCorrect, points);
+    (isCorrect: boolean, points: number, answeredInSeconds?: number) => {
+      onAnswered(isCorrect, points, answeredInSeconds);
     },
     [onAnswered],
   );

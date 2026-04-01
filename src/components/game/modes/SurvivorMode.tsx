@@ -14,7 +14,7 @@ import { MusicPlayer } from '../MusicPlayer';
 
 interface SurvivorModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
 }
 
 export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {

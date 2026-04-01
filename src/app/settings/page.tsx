@@ -14,6 +14,7 @@ import { useRouter } from 'next/navigation';
 import { useGameStore } from '@/stores/game-store';
 import { PHOMU_CONFIG } from '@/config/game-config';
 import type { ThemeName } from '@/config/game-config';
+import type { AIQueueStrategy, HintReleasePolicy, OverrideGovernance } from '@/types/game-state';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -28,7 +29,9 @@ export default function SettingsPage() {
     updatePlayer,
     preferredPlayer,
     setPreferredPlayer,
-    resetProgress
+    resetProgress,
+    config,
+    setConfig,
   } = useGameStore();
   
   const [currentTheme, setCurrentTheme] = useState<ThemeName>('jackbox');
@@ -227,6 +230,49 @@ export default function SettingsPage() {
                   ? 'Hinweis: Music Mode sieht besser aus, ist aber restriktiver bei einigen Songs.' 
                   : 'Hinweis: Standard YouTube ist am zuverlässigsten für alle Songs.'}
               </p>
+            </div>
+          </section>
+
+
+          <section className="space-y-6">
+            <h2 className="text-xl font-black uppercase tracking-tight border-b border-white/5 pb-2">🧠 KI & Override Governance</h2>
+            <div className="bg-white/5 p-6 rounded-3xl border border-white/5 space-y-4">
+              <div>
+                <p className="text-xs opacity-50 font-bold uppercase tracking-widest mb-2">Override Governance</p>
+                <select
+                  value={config.overrideGovernance}
+                  onChange={(e) => setConfig({ overrideGovernance: e.target.value as OverrideGovernance })}
+                  className="w-full bg-black/20 border border-white/10 p-3 rounded-xl text-sm"
+                >
+                  <option value="host">Host (Default)</option>
+                  <option value="co-host">Co-Host</option>
+                  <option value="majority">Mehrheit</option>
+                </select>
+              </div>
+
+              <div>
+                <p className="text-xs opacity-50 font-bold uppercase tracking-widest mb-2">Hint Release Policy</p>
+                <select
+                  value={config.hintReleasePolicy}
+                  onChange={(e) => setConfig({ hintReleasePolicy: e.target.value as HintReleasePolicy })}
+                  className="w-full bg-black/20 border border-white/10 p-3 rounded-xl text-sm"
+                >
+                  <option value="auto-publish">Auto Publish nach Checks</option>
+                  <option value="manual-review">Manuelle Freigabe</option>
+                </select>
+              </div>
+
+              <div>
+                <p className="text-xs opacity-50 font-bold uppercase tracking-widest mb-2">AI Blocking Verhalten</p>
+                <select
+                  value={config.aiQueueStrategy}
+                  onChange={(e) => setConfig({ aiQueueStrategy: e.target.value as AIQueueStrategy })}
+                  className="w-full bg-black/20 border border-white/10 p-3 rounded-xl text-sm"
+                >
+                  <option value="queue-retry-pending">Queue + Retry + Pending</option>
+                  <option value="fail-fast">Fail Fast</option>
+                </select>
+              </div>
             </div>
           </section>
 

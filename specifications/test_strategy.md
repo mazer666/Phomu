@@ -1,47 +1,41 @@
-# Phomu Test Strategy (aktualisiert: 30. März 2026)
+# Phomu Test Strategy (aktualisiert: 1. April 2026)
 
-## 1. Build- und Qualitäts-Gates (Pflicht)
-- `npm run build` muss erfolgreich sein.
-- `npm run lint` muss erfolgreich sein (nach ESLint-Flat-Config-Migration).
-- `npm run validate-songs` muss ohne Fehler laufen.
+## 1) Quality Gates (CI)
+Pflicht in der Pipeline:
+1. `npm run typecheck`
+2. `npm run lint`
+3. `npm run test`
+4. `npm run validate-songs`
+5. `npm run validate-catalog`
+6. `npm run build`
+7. `npm audit --omit=dev --audit-level=moderate`
 
-## 2. Funktionale Kern-Tests
-- **Lobby-Flow:** Spieler hinzufügen/entfernen, Modi/Packs wählen, Start möglich.
-- **Game-Loop:** Drawing → Question → Reveal → nächste Runde / Game Over.
-- **Browse:** Suche, Filter, Sortierung und Quick-Start aus Songkarte.
+Nicht-blockierend in der Baseline-Phase:
+- `npm run format:check` (wird als sichtbarer Warnkanal geführt, bis Repo-weit formatiert ist)
 
-## 3. Responsive & Mobile UX Audit
-- Pflicht-Breakpoints: 360px (iPhone SE), 390px/430px (moderne iPhones), 768px (Tablet), 1920px (Desktop).
-- Touch-Targets mindestens 44x44px.
-- Kein horizontaler Overflow.
-- Safe-Area-Verhalten auf iOS prüfen.
+Optional bei gesetztem Secret:
+- `npm run audit-youtube-official`
 
-## 4. Datenqualität
-- Songfelder auf Schema prüfen (ID, Titel, Artist, Jahr, Country, Links, Difficulty, Hints).
-- YouTube-IDs/URLs auf valides Format normalisieren.
-- Keine Inkonsistenzen zwischen Packs und zentralen Typdefinitionen.
+## 2) Testpyramide
+- **Unit Tests:** Parser/Queue/Helper (`src/utils/*.test.ts`)
+- **Static Analysis:** TypeScript + ESLint
+- **Data Quality:** Song-/Katalog-Validierung inkl. Duplicate- und Coverage-Prüfung
+- **Build Verification:** Produktionsbuild muss grün sein
+- **Security Verification:** Dependency-Audit, später Header/Secrets/SAST
 
-## 5. Security-Tests
+## 3) Datenschutz- und Security-Checks
+- Data minimization prüfen: nur erforderliche Daten speichern.
+- Keine API-Keys im Repo.
+- KI-Workflows: kleine Requests, Queue+Retry, Pending-Status statt aggressiver Bursts.
+- Hints: spoilerarm, evidenzbasiert und nachvollziehbar.
 
-### 5.1 Dependency Security
-- `npm audit --audit-level=moderate`
-- `npm audit --omit=dev --audit-level=moderate`
+## 4) Katalog-/Content-Qualität
+- Duplicate-Policy: global strikt für neue/aktualisierte Songs.
+- Mindestens ein Song pro Jahr (1950-heute) als Langfristziel.
+- Hint-Evidence Pflicht für neue Admin-Einträge.
 
-### 5.2 Static Security Checks (Code)
-- Scan auf gefährliche Browser-Patterns:
-  - `dangerouslySetInnerHTML`
-  - `eval(`
-  - `new Function(`
-
-### 5.3 Konfigurations-Security (nachziehen)
-- Security-Header-Checks (CSP/HSTS/Referrer-Policy/Permissions-Policy).
-- Keine sensiblen Daten im Client-Bundle.
-- Secrets-Scanning in CI.
-
-## 6. Empfohlene CI-Pipeline-Reihenfolge
-1. Install (`npm ci`)
-2. Lint
-3. Type/Build
-4. Song Validation
-5. Security Audits
-6. (später) E2E Smoke
+## 5) Release-Readiness
+Ein Release gilt als "vertrauenswürdig", wenn:
+- alle blockierenden Gates grün sind,
+- keine Security-Audits auf `moderate+` offen sind,
+- keine Regression gegenüber Quality-Baseline vorliegt.

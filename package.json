@@ -8,7 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "validate-songs": "npx tsx src/utils/validate-song-data.ts"
+    "validate-songs": "npx tsx src/utils/validate-song-data.ts",
+    "validate-catalog": "npx tsx src/utils/validate-song-catalog.ts",
+    "audit-youtube-official": "node scripts/audit-official-youtube-links.js",
+    "validate-catalog-strict": "npx tsx src/utils/validate-song-catalog.ts --strict",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
@@ -27,11 +34,15 @@
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
+    "@vitest/coverage-v8": "^4.1.2",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.1",
     "postcss": "^8.5.8",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.2"
   }
 }

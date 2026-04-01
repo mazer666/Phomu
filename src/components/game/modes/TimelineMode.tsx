@@ -9,7 +9,7 @@
  */
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import type { PhomuSong } from '@/types/song';
 import { getAllSongs } from '@/utils/song-picker';
 import { useGameStore } from '@/stores/game-store';
@@ -60,14 +60,14 @@ function canonicalSlot(songYear: number, sortedYears: number[]): number {
 
 interface TimelineModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
   onReveal?: () => void;
 }
 
 type RemovalState = 'none' | 'choosing' | 'done';
 
 export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
-  const { timelineYears, initTimeline, addTimelineYear, removeTimelineYear } = useGameStore();
+  const { timelineYears, initTimeline, addTimelineYear, removeTimelineYear, config } = useGameStore();
 
   // Einmalig initialisieren, wenn Timeline noch leer ist
   useEffect(() => {
@@ -85,7 +85,14 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     [song.year, timelineYears],
   );
 
-  const points = timelineYears.length + 1; // mehr Jahre = mehr Punkte
+  const points = Math.min(timelineYears.length + 1, config.timelineMaxPoints); // mehr Jahre = mehr Punkte, aber gecappt
+
+
+  const questionStartedAt = useRef<number>(Date.now());
+
+  useEffect(() => {
+    questionStartedAt.current = Date.now();
+  }, [song.id]);
 
   const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
   const [isRevealed, setIsRevealed] = useState(false);
@@ -98,7 +105,8 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     if (selectedSlot === null || isRevealed) return;
     const isCorrect = validSlotSet.has(selectedSlot);
     setIsRevealed(true);
-    onAnswer(isCorrect, isCorrect ? points : 0);
+    const answeredInSeconds = Math.max(1, Math.round((Date.now() - questionStartedAt.current) / 1000));
+    onAnswer(isCorrect, isCorrect ? points : 0, answeredInSeconds);
 
     if (!isCorrect) return;
 

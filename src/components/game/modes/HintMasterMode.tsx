@@ -15,7 +15,7 @@ import { MusicPlayer } from '../MusicPlayer';
 
 interface HintMasterModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
 }
 
 export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {

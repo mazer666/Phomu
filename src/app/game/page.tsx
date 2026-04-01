@@ -87,14 +87,23 @@ export default function GamePage() {
 
   // ── Handler: Spieler hat geantwortet ──────────────────────────
   const handleAnswered = useCallback(
-    (isCorrect: boolean, pointsAwarded: number) => {
+    (isCorrect: boolean, basePointsAwarded: number, answeredInSeconds?: number) => {
       if (!pilotId) return;
+
+      let pointsAwarded = basePointsAwarded;
+      if (isCorrect && config.timeDecayEnabled && typeof answeredInSeconds === 'number') {
+        const overtime = Math.max(0, answeredInSeconds - config.timeDecayGraceSeconds);
+        const decaySteps = Math.floor(overtime / Math.max(1, config.timeDecayStepSeconds));
+        const decayPoints = decaySteps * config.timeDecayStepPoints;
+        pointsAwarded = Math.max(config.minPointsPerCorrect, basePointsAwarded - decayPoints);
+      }
 
       const answer: PlayerAnswer = {
         playerId: pilotId,
         answer: isCorrect ? 'correct' : 'incorrect',
         isCorrect,
         pointsAwarded,
+        answeredInSeconds,
       };
 
       submitAnswer(answer);
@@ -102,7 +111,16 @@ export default function GamePage() {
         awardPoints(pilotId, pointsAwarded);
       }
     },
-    [pilotId, submitAnswer, awardPoints],
+    [
+      pilotId,
+      config.timeDecayEnabled,
+      config.timeDecayGraceSeconds,
+      config.timeDecayStepSeconds,
+      config.timeDecayStepPoints,
+      config.minPointsPerCorrect,
+      submitAnswer,
+      awardPoints,
+    ],
   );
 
   // ── Handler: Reveal starten ────────────────────────────────────
@@ -112,6 +130,28 @@ export default function GamePage() {
 
   // ── Handler: Nächste Runde ─────────────────────────────────────
   const handleNextRound = useCallback(() => {
+    nextRound();
+  }, [nextRound]);
+
+
+  // ── Power User: Antwort overrulen ─────────────────────────────
+  const handleOverrideCorrect = useCallback(() => {
+    if (!pilotId) return;
+    const alreadyCorrect = currentAnswers.some((a) => a.playerId === pilotId && a.isCorrect);
+    if (alreadyCorrect) return;
+
+    const points = Math.max(1, config.minPointsPerCorrect);
+    submitAnswer({
+      playerId: pilotId,
+      answer: 'override-correct',
+      isCorrect: true,
+      pointsAwarded: points,
+    });
+    awardPoints(pilotId, points);
+  }, [pilotId, currentAnswers, config.minPointsPerCorrect, submitAnswer, awardPoints]);
+
+  // ── Power User: Runde verwerfen / neu ziehen ───────────────────
+  const handleOverrideRedraw = useCallback(() => {
     nextRound();
   }, [nextRound]);
 
@@ -260,6 +300,9 @@ export default function GamePage() {
                     winCondition={config.winCondition}
                     onNextRound={handleNextRound}
                     onEndGame={handleEndGame}
+                    onOverrideCorrect={handleOverrideCorrect}
+                    onOverrideRedraw={handleOverrideRedraw}
+                    overrideGovernance={config.overrideGovernance}
                   />
                 </motion.div>
               )}
