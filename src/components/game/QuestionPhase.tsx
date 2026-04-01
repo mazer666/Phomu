@@ -34,8 +34,7 @@ const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
   'vibe-check',
   'hint-master',
   'timeline',
-  'lyrics',
-  // cover-confusion hat eigenen WEITER-Button im Footer
+  // lyrics und cover-confusion haben eigene Buttons im Modus
 ];
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -73,7 +72,7 @@ export function QuestionPhase({
       )}
 
       {currentMode === 'lyrics' && (
-        <LyricsMode song={song} onAnswer={handleAnswered} />
+        <LyricsMode song={song} onAnswer={handleAnswered} onReveal={onReveal} />
       )}
 
       {currentMode === 'cover-confusion' && (

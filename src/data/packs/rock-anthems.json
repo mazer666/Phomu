@@ -1017,50 +1017,6 @@
       "coverUrl": "/covers/rock-the-who-riley.jpg"
     },
     {
-      "id": "rock-metallica-sandman",
-      "title": "Enter Sandman",
-      "artist": "Metallica",
-      "year": 1991,
-      "country": "US",
-      "genre": "Heavy Metal",
-      "difficulty": "easy",
-      "mood": [
-        "Powerful",
-        "Dark",
-        "Classic"
-      ],
-      "pack": "Rock Anthems",
-      "hints": [
-        "Der Song, der [XXX] endgültig in den globalen Mainstream katapultierte.",
-        "Thematisiert Kindheitsängste und den '[XXX]n'.",
-        "Das Hauptriff von Kirk Hammett ist eines der bekanntesten im Metal.",
-        "Bekannt für den eingebauten Gebetsteil ('Now I lay me down to sleep').",
-        "Refrain: 'Exit light, [XXX] night! Take my hand, we're off to never-never land!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Say your prayers, little one, don't forget, my son, to include everyone",
-          "I tuck you in, warm within, keep you free from sin",
-          "Exit light, enter night, take my hand, we're off to never-never land"
-        ],
-        "fake": "In the middle of the night, we're looking for the light of our love"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "CD-E-LDc384"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/rock-metallica-sandman.jpg"
-    },
-    {
       "id": "rock-iron-maiden-trooper",
       "title": "The Trooper",
       "artist": "Iron Maiden",
@@ -1147,50 +1103,6 @@
       ],
       "isQRCompatible": true,
       "coverUrl": "/covers/rock-sabbath-paranoid.jpg"
-    },
-    {
-      "id": "rock-deep-purple-smoke",
-      "title": "Smoke on the Water",
-      "artist": "Deep Purple",
-      "year": 1972,
-      "country": "GB",
-      "genre": "Hard Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Classic",
-        "Story",
-        "Energy"
-      ],
-      "pack": "Rock Anthems",
-      "hints": [
-        "Vielleicht das berühmteste Gitarren-Riff aller Zeiten.",
-        "Erzählt die wahre Geschichte eines Feuers im Casino von Montreux während eines Frank Zappa Konzerts.",
-        "Ritchie Blackmores Riff wird fast jedem Gitarren-Anfänger als Erstes beigebracht.",
-        "Ein Paradebeispiel für klassischen Hard-Rock.",
-        "Refrain: '[XXX] on the [XXX], fire in the sky!'"
-      ],
-      "lyrics": {
-        "real": [
-          "We all came out to Montreux, on the Lake Geneva shoreline",
-          "To make records with a mobile, we didn't have much time",
-          "Smoke on the water, a fire in the sky"
-        ],
-        "fake": "In the middle of the lake, we're making no mistake tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "Q2FzZSBD5LE"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/rock-deep-purple-smoke.jpg"
     },
     {
       "id": "rock-kiss-rock-nite",

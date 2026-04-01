@@ -966,50 +966,6 @@
       "isQRCompatible": true
     },
     {
-      "id": "dance-daft-punk-one-more",
-      "title": "One More Time",
-      "artist": "Daft Punk",
-      "year": 2000,
-      "country": "FR",
-      "genre": "French House / Electronic",
-      "difficulty": "easy",
-      "mood": [
-        "Happy",
-        "Energy",
-        "Classic"
-      ],
-      "pack": "Dance Floor Fillers",
-      "hints": [
-        "Bekannt für den extremen Einsatz von Auto-Tune auf den Vocals von Romanthony.",
-        "Der Inbegriff des 'French House' Sounds um die Jahrtausendwende.",
-        "Das Anime-Musikvideo ist Teil des Films 'Interstella 5555'.",
-        "Ein Inbegriff für unbeschwerte Party-Energie.",
-        "Refrain: 'One [XXX] [XXX], we're gonna celebrate!'"
-      ],
-      "lyrics": {
-        "real": [
-          "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing",
-          "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing",
-          "Music's got me feeling so free, we're gonna celebrate"
-        ],
-        "fake": "Dancing in the stars, playing my guitars tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "FGBhQbmPwH8"
-      },
-      "coverUrl": "/covers/dance-daft-punk-one-more.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
       "id": "dance-lady-gaga-bad-romance",
       "title": "Bad Romance",
       "artist": "Lady Gaga",

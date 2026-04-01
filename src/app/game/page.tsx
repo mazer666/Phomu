@@ -38,6 +38,7 @@ export default function GamePage() {
   const router = useRouter();
   const {
     players,
+    teams,
     config,
     currentRound,
     roundPhase,
@@ -73,13 +74,18 @@ export default function GamePage() {
     }
   }, [isGameOver, router]);
 
-  // ── Aktiver Spieler (Pilot) + nächster ────────────────────────
+  // ── Aktiver Spieler/Aktives Team (Pilot) + nächster ────────────────────────
   const pilotId = turnOrder[currentTurnIndex];
-  const pilot = players.find((p) => p.id === pilotId);
+  const isTeamTurn = config.teamMode !== 'individual';
+  const pilot = isTeamTurn
+    ? teams.find((t) => t.id === pilotId)
+    : players.find((p) => p.id === pilotId);
   const nextPilotId = turnOrder.length > 1
     ? turnOrder[(currentTurnIndex + 1) % turnOrder.length]
     : undefined;
-  const nextPilot = players.find((p) => p.id === nextPilotId);
+  const nextPilot = isTeamTurn
+    ? teams.find((t) => t.id === nextPilotId)
+    : players.find((p) => p.id === nextPilotId);
 
   // ── Handler: Karte gezogen ─────────────────────────────────────
   const handleCardDrawn = useCallback(
@@ -214,6 +220,8 @@ export default function GamePage() {
       {/* Scoreboard Overlay */}
       <Scoreboard
         players={players}
+        teams={teams}
+        teamMode={config.teamMode}
         winCondition={config.winCondition}
         isOpen={showScoreboard}
         onClose={() => setShowScoreboard(false)}
@@ -237,7 +245,7 @@ export default function GamePage() {
                 playedSongIds={playedSongIds}
                 pilotName={pilot?.name}
                 pilotColor={pilot?.color}
-                nextPilotName={players.length > 1 ? nextPilot?.name : undefined}
+                nextPilotName={turnOrder.length > 1 ? nextPilot?.name : undefined}
                 nextPilotColor={nextPilot?.color}
                 onCardDrawn={handleCardDrawn}
               />

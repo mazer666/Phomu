@@ -137,7 +137,7 @@ export default function LobbyPage() {
       </div>
 
       {/* Wizard Content Area — padding-bottom makes room for the fixed footer */}
-      <div className="flex-1 pb-44 overflow-x-hidden">
+      <div className="flex-1 pb-64 overflow-x-hidden">
         <AnimatePresence mode="wait" initial={false} custom={direction}>
           {step === 1 && (
             <motion.div
@@ -162,7 +162,7 @@ export default function LobbyPage() {
                     onKeyDown={(e) => e.key === 'Enter' && handleAddPlayer()}
                     onFocus={(e) => e.target.select()}
                     placeholder="Name eingeben..."
-                    className="flex-1 bg-white/10 border border-[var(--color-border)] rounded-2xl px-4 py-4 focus:outline-none focus:border-[var(--color-accent)] font-bold text-sm"
+                    className="flex-1 min-w-0 bg-white/10 border border-[var(--color-border)] rounded-2xl px-4 py-4 focus:outline-none focus:border-[var(--color-accent)] font-bold text-sm"
                   />
                   <Tooltip content="Spieler hinzufügen" position="top">
                     <button 

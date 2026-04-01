@@ -2300,50 +2300,6 @@
       "isQRCompatible": true
     },
     {
-      "id": "olivia-rodrigo-drivers-2021",
-      "title": "drivers license",
-      "artist": "Olivia Rodrigo",
-      "year": 2021,
-      "country": "US",
-      "genre": "Pop / Power Ballad",
-      "difficulty": "easy",
-      "mood": [
-        "Sad",
-        "Emotional",
-        "Heartbreak"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "Machte die damals 17-Jährige über Nacht zur globalen Sensation.",
-        "Thematisiert den Schmerz einer Trennung vor dem Hintergrund der neuen Fahrerlaubnis.",
-        "Besticht durch den dramatischen Bridge-Aufbau und die ehrlichen Lyrics.",
-        "Besitzt einen beinahe hypnotischen, minimalistischen Beat.",
-        "Refrain: 'And I know we weren't perfect! But I've never felt this way for no one!'"
-      ],
-      "lyrics": {
-        "real": [
-          "I got my drivers license last week, just like we always talked about",
-          "But today I drove through the suburbs, crying 'cause you weren't around",
-          "And I know we weren't perfect but I've never felt this way for no one"
-        ],
-        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "ZmDBbnmKpqQ"
-      },
-      "coverUrl": "/covers/olivia-rodrigo-drivers-2021.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true
-    },
-    {
       "id": "sza-killbill-2023",
       "title": "Kill Bill",
       "artist": "SZA",

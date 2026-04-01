@@ -13,6 +13,7 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import type { PhomuSong } from '@/types/song';
+import { MusicPlayer } from '../MusicPlayer';
 
 // ─── Konstanten ───────────────────────────────────────────────────
 
@@ -28,19 +29,20 @@ function shuffle<T>(arr: T[]): T[] {
 interface LyricsModeProps {
   song: PhomuSong;
   onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
+  onReveal: () => void;
 }
 
 // ─── Hauptkomponente ──────────────────────────────────────────────
 
-export function LyricsMode({ song, onAnswer }: LyricsModeProps) {
+export function LyricsMode({ song, onAnswer, onReveal }: LyricsModeProps) {
   const lyrics = song.lyrics;
 
   // Fallback wenn keine Lyrics vorhanden
   if (!lyrics) {
-    return <BonusRound song={song} onAnswer={onAnswer} />;
+    return <BonusRound song={song} onAnswer={onAnswer} onReveal={onReveal} />;
   }
 
-  return <LyricsQuestion song={song} lyrics={lyrics} onAnswer={onAnswer} />;
+  return <LyricsQuestion song={song} lyrics={lyrics} onAnswer={onAnswer} onReveal={onReveal} />;
 }
 
 // ─── Lyrics-Frage (wenn Daten vorhanden) ─────────────────────────
@@ -51,13 +53,15 @@ function LyricsQuestion({
   song,
   lyrics,
   onAnswer,
+  onReveal,
 }: {
   song: PhomuSong;
   lyrics: SongLyrics;
   onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
+  onReveal: () => void;
 }) {
   const [selected, setSelected] = useState<number | null>(null);
-  const [answered, setAnswered] = useState(false);
+  const [isRevealing, setIsRevealing] = useState(false);
 
   // 3 echte + 1 fake Zeile mischen — einmalig stabilisiert
   const options = useMemo(() => {
@@ -73,11 +77,15 @@ function LyricsQuestion({
   }, [song.id]);
 
   function handleSelect(index: number) {
-    if (answered) return;
-    const isCorrect = options[index]?.isFake ?? false;
     setSelected(index);
-    setAnswered(true);
+  }
+
+  function handleConfirm() {
+    if (selected === null || isRevealing) return;
+    setIsRevealing(true);
+    const isCorrect = options[selected]?.isFake ?? false;
     onAnswer(isCorrect, isCorrect ? LYRICS_POINTS : 0);
+    onReveal();
   }
 
   return (
@@ -108,7 +116,7 @@ function LyricsQuestion({
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.08 }}
               onClick={() => handleSelect(i)}
-              disabled={answered}
+              disabled={false}
               className="text-left p-4 rounded-xl border-2 text-sm leading-relaxed
                          font-mono transition-all disabled:cursor-default"
               style={{
@@ -118,6 +126,7 @@ function LyricsQuestion({
                 backgroundColor: isSelected
                   ? 'color-mix(in srgb, var(--color-accent) 15%, transparent)'
                   : 'var(--color-bg-card)',
+                transform: isSelected ? 'scale(1.02)' : 'scale(1)',
               }}
             >
               <span className="font-sans font-bold opacity-40 mr-2 text-xs">
@@ -129,14 +138,26 @@ function LyricsQuestion({
         })}
       </div>
 
-      {answered && (
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="text-sm opacity-50 text-center italic"
+      {selected !== null && (
+        <motion.div
+           initial={{ opacity: 0, y: 15 }}
+           animate={{ opacity: 1, y: 0 }}
+           className="mt-4 flex justify-center"
         >
-          Antwort eingeloggt. Warten auf das Reveal …
-        </motion.p>
+           <button
+             onClick={handleConfirm}
+             className="px-8 py-4 w-full rounded-2xl text-xl font-black shadow-lg hover:opacity-90 transition-opacity"
+             style={{ backgroundColor: 'var(--color-accent)', color: '#000' }}
+           >
+             Bestätigen & Auflösen
+           </button>
+        </motion.div>
+      )}
+
+      {isRevealing && (
+        <div style={{ display: 'none' }}>
+           <MusicPlayer youtubeLink={song.links.youtube} />
+        </div>
       )}
     </div>
   );
@@ -147,9 +168,11 @@ function LyricsQuestion({
 function BonusRound({
   song,
   onAnswer,
+  onReveal,
 }: {
   song: PhomuSong;
   onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
+  onReveal: () => void;
 }) {
   const [claimed, setClaimed] = useState(false);
 
@@ -167,14 +190,14 @@ function BonusRound({
       {!claimed ? (
         <div className="flex gap-3">
           <button
-            onClick={() => { setClaimed(true); onAnswer(true, 2); }}
+            onClick={() => { setClaimed(true); onAnswer(true, 2); onReveal(); }}
             className="px-6 py-3 rounded-xl font-black"
             style={{ backgroundColor: 'var(--color-success)' }}
           >
             ✅ Ich kenn&apos;s!
           </button>
           <button
-            onClick={() => { setClaimed(true); onAnswer(false, 0); }}
+            onClick={() => { setClaimed(true); onAnswer(false, 0); onReveal(); }}
             className="px-6 py-3 rounded-xl font-bold border"
             style={{ borderColor: 'var(--color-border)' }}
           >

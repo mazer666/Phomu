@@ -241,8 +241,16 @@ export const useGameStore = create<GameStore>()(
 
       // ── startGame ────────────────────────────────────────────────
       startGame() {
-        const { config } = get();
+        const { config, players, teams } = get();
+        
+        // Define turnOrder based on mode
+        const newTurnOrder = config.teamMode === 'individual'
+          ? players.map((p) => p.id)
+          : teams.map((t) => t.id);
+
         set({
+          turnOrder: newTurnOrder,
+          currentTurnIndex: 0,
           currentRound: 1,
           roundPhase: 'drawing',
           currentMode: pickRandomMode(config.selectedModes),
@@ -413,12 +421,31 @@ export const useGameStore = create<GameStore>()(
       },
 
       // ── awardPoints ───────────────────────────────────────────────
-      awardPoints(playerId, points) {
-        set((state) => ({
-          players: state.players.map((p) =>
-            p.id === playerId ? { ...p, score: p.score + points } : p,
-          ),
-        }));
+      awardPoints(entityId, points) {
+        set((state) => {
+          const isTeam = state.teams.some(t => t.id === entityId);
+          if (isTeam) {
+            return {
+              teams: state.teams.map((t) =>
+                t.id === entityId ? { ...t, score: t.score + points } : t,
+              ),
+            };
+          }
+
+          const player = state.players.find(p => p.id === entityId);
+          if (!player) return state;
+
+          const teamId = player.teamId;
+          return {
+            players: state.players.map((p) =>
+              p.id === entityId ? { ...p, score: p.score + points } : p,
+            ),
+            // Sync points up to the player's team if they are in one (for individual turns in teams)
+            teams: teamId ? state.teams.map((t) =>
+              t.id === teamId ? { ...t, score: t.score + points } : t,
+            ) : state.teams,
+          };
+        });
       },
 
       // ── resetScores ───────────────────────────────────────────────
