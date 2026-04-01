@@ -37,7 +37,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "9bFHsd3o1w0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-ray-parker-jr-ghostbusters",
@@ -71,7 +80,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "Fe93CLbHjxQ"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-dirty-dancing-time-of-my-life",
@@ -105,7 +123,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "WpmILPAcRQo"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-pharrell-happy",
@@ -139,7 +166,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ZbZSe6N_BXs"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-kenny-loggins-footloose",
@@ -173,7 +209,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ltrMfT4Qz5Y"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-elton-john-can-you-feel-the-love",
@@ -207,7 +252,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "KjgWWjkNbhU"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-adele-skyfall",
@@ -241,7 +295,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "DeumyOzKqgI"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-irene-cara-flashdance",
@@ -275,7 +338,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ILWSp0m9G2U"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-bee-gees-stayin-alive",
@@ -309,7 +381,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "I_izvAbhExY"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-huey-lewis-power-of-love",
@@ -343,7 +424,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "wBl2QGAIx1s"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-whitney-houston-i-will-always-love-you",
@@ -377,7 +467,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "3JWTaaS7LdU"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-harold-faltermeyer-axel-f",
@@ -404,7 +503,15 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "V4kWpi2HnPU"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-coolio-gangstas-paradise",
@@ -438,7 +545,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "SQCSxqScSVQ"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-elton-john-circle-of-life",
@@ -472,7 +588,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "GibiNy4d4gc"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-lady-gaga-shallow",
@@ -506,7 +631,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "bo_efYhYU2A"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-bruce-springsteen-streets-of-philly",
@@ -540,7 +674,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "4z2DtNW79sQ"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-hugh-jackman-greatest-show",
@@ -574,7 +717,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "NyVYXRD1Ans"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-justin-timberlake-cant-stop-the-feeling",
@@ -608,7 +760,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ru0K8uYEZWw"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-survivor-burning-heart",
@@ -642,7 +803,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "btPJPFnesV4"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-berlin-take-my-breath-away",
@@ -676,7 +846,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "Bx51eegLTY8"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-simple-minds-dont-you-forget",
@@ -710,7 +889,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "CdqoNKCCt7A"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-seal-kiss-from-a-rose",
@@ -744,7 +932,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "hDd2G_V1rzc"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-idina-menzel-let-it-go",
@@ -778,7 +975,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "S5O9O5S9S"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-dirty-dancing-time",
@@ -812,7 +1018,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "WpmILPAcRQo"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-lion-king-circle",
@@ -846,7 +1061,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "GibiNy4d4gc"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-frozen-let-it-go",
@@ -880,7 +1104,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "L0MK7qz13bU"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-pulp-fiction-misirlou",
@@ -912,7 +1145,15 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ZIU0RMV_II8"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-snf-night-fever",
@@ -946,7 +1187,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "-tJYN-eG1zk"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-top-gun-danger-zone",
@@ -980,7 +1230,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "siwpn14IE7E"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-flashdance-feeling",
@@ -1014,7 +1273,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ILWSp0m9G2U"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-footloose-theme",
@@ -1048,7 +1316,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ltrMfT4Qz5Y"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-bond-skyfall",
@@ -1082,7 +1359,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "DeumyOzKqgI"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "movie-showman-this-is-me",
@@ -1116,7 +1402,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "CjxugyZCfuw"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

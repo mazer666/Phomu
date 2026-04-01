@@ -38,7 +38,16 @@
       "links": {
         "youtube": "JGwWNGJdvx8"
       },
-      "coverUrl": "/covers/modern-ed-sheeran-shape.jpg"
+      "coverUrl": "/covers/modern-ed-sheeran-shape.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-taylor-swift-shake",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "vkxJqKvh8lo"
       },
-      "coverUrl": "/covers/modern-taylor-swift-shake.jpg"
+      "coverUrl": "/covers/modern-taylor-swift-shake.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-adele-rolling-deep",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "rYEDA3JcQqw"
       },
-      "coverUrl": "/covers/modern-adele-rolling-deep.jpg"
+      "coverUrl": "/covers/modern-adele-rolling-deep.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-drake-one-dance",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "mym4sKoAnKs"
       },
-      "coverUrl": "/covers/modern-drake-one-dance.jpg"
+      "coverUrl": "/covers/modern-drake-one-dance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-billie-eilish-bad-guy",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "DyDfgMvif8"
       },
-      "coverUrl": "/covers/modern-billie-eilish-bad-guy.jpg"
+      "coverUrl": "/covers/modern-billie-eilish-bad-guy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-harry-styles-as-it-was",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "H5v3kku4y6Q"
       },
-      "coverUrl": "/covers/modern-harry-styles-as-it-was.jpg"
+      "coverUrl": "/covers/modern-harry-styles-as-it-was.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-miley-cyrus-flowers",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "G7KNmW9a75Y"
       },
-      "coverUrl": "/covers/modern-miley-cyrus-flowers.jpg"
+      "coverUrl": "/covers/modern-miley-cyrus-flowers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-the-weeknd-blinding-lights",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "4NRXx6U8ABQ"
       },
-      "coverUrl": "/covers/modern-the-weeknd-blinding-lights.jpg"
+      "coverUrl": "/covers/modern-the-weeknd-blinding-lights.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-pharrell-happy",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "y6Sxv-sUYtM"
       },
-      "coverUrl": "/covers/modern-pharrell-happy.jpg"
+      "coverUrl": "/covers/modern-pharrell-happy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "modern-sia-chandelier",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "2vjPBrBU-TM"
       },
-      "coverUrl": "/covers/modern-sia-chandelier.jpg"
+      "coverUrl": "/covers/modern-sia-chandelier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

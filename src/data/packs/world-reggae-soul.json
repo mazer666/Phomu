@@ -37,7 +37,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "jGqrvn3q1oo"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-otis-redding-dock-bay",
@@ -71,7 +80,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "rTVjnBo96Ug"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-marvin-gaye-whats-going-on",
@@ -105,7 +123,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "H-kA3UtBj4M"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-al-green-stay-together",
@@ -139,7 +166,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "XXx6RDzR6eM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-miriam-makeba-pata-pata",
@@ -173,7 +209,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "y1FHfcaWPoM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-bvsc-chan-chan",
@@ -207,7 +252,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "tGbRZ73NvlY"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-santana-oye-como-va",
@@ -240,7 +294,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "9Y46Y1aXQQw"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-fela-kuti-water",
@@ -274,7 +337,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "IQBC5URoF0s"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "reggae-toots-maytals-54-46",
@@ -308,7 +380,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "yjg6u_hEY8"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "reggae-peter-tosh-legalize-it",
@@ -342,7 +423,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "i-7paynQS7M"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "reggae-shaggy-wasnt-me",
@@ -376,7 +466,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "dfBf3"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "reggae-sean-paul-get-busy",
@@ -410,7 +509,16 @@
       "isOne_hit_wonder": false,
       "links": {
         "youtube": "oPQ3oSTAt6"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "reggae-jimmy-cliff-rivers",
@@ -444,7 +552,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "twf7LhQIBkQ"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-tracy-chapman-fast-car",
@@ -478,7 +595,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "DwrHwZyFN7M"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-bill-withers-sunshine",
@@ -512,7 +638,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "YuKfiH0Scao"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-amy-back-to-black",
@@ -546,7 +681,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "TJAfLE39ZZ8"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-lauryn-hill-doo-wop",
@@ -580,7 +724,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "T6QKqFPRZSA"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "soul-erykah-badu-on-on",
@@ -614,7 +767,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "OqN0jsSeqPo"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-nina-simone-baby",
@@ -648,7 +810,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "eFGmha"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-kaoma-lambada",
@@ -682,7 +853,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "iyLdoQGBchQ"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-marley-threebirds",
@@ -716,7 +896,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ZA_7X_"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-ub40-redwine",
@@ -750,7 +939,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "zXt5MeWM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-jimmycliff-clearly",
@@ -784,7 +982,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "lJErpOGN-HU"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-innercircle-sweat",
@@ -818,7 +1025,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "uc2X9C"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-shaggy-itwasntme",
@@ -852,7 +1068,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "2g5Hz17"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-seanpaul-getbusy",
@@ -886,7 +1111,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "oPQ3o14ksaM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-aretha-respect",
@@ -920,7 +1154,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "6FOUqQt3Kg0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-marvin-goingon",
@@ -954,7 +1197,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "H-kA3t"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-stevie-superstition",
@@ -988,7 +1240,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "7_tmeHCO1IM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-jamesbrown-feelgood",
@@ -1022,7 +1283,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "B1wOK9y"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-billwithers-sunshine",
@@ -1056,7 +1326,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "S5O9O5S9S"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-algreen-together",
@@ -1090,7 +1369,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "XXx6RDzR6eM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-otis-dock",
@@ -1124,7 +1412,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "gxEPV4kolz0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-beneking-standbyme",
@@ -1158,7 +1455,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "VMNKlr_MCdM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "world-raycharles-roadjack",
@@ -1192,7 +1498,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "uSiHqxgE2d0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

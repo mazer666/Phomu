@@ -143,33 +143,52 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
 
       {answered && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="w-full max-w-sm space-y-4"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="w-full max-w-lg space-y-6"
         >
-          <div className="p-4 rounded-3xl bg-green-500/10 border-2 border-green-500/30 text-center shadow-[0_0_20px_rgba(34,197,94,0.1)]">
-            <p className="text-[10px] font-black uppercase tracking-widest text-green-500 mb-1">Offizieller Vibe</p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {song.mood.map(m => (
-                <span key={m} className="px-4 py-2 rounded-full bg-green-500 text-white font-black text-sm shadow-[0_0_15px_rgba(34,197,94,0.4)]">
+          {/* Main Reveal Card */}
+          <div className="relative p-8 rounded-[2.5rem] bg-gradient-to-br from-green-500/20 to-blue-500/10 border-2 border-green-500/30 text-center shadow-2xl overflow-hidden">
+            <div className="absolute top-0 right-0 p-4 opacity-5 bg-white rounded-bl-3xl">✨</div>
+            <p className="text-xs font-black uppercase tracking-[0.3em] text-green-400 mb-4 drop-shadow-md">
+              Die Stimmung des Songs ist
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {song.mood.map((m, i) => (
+                <motion.span
+                  key={m}
+                  initial={{ scale: 0, rotate: -10 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  className="px-8 py-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 text-white font-black text-2xl shadow-[0_10px_30px_rgba(34,197,94,0.4)] border-b-4 border-black/20"
+                >
                   {m}
-                </span>
+                </motion.span>
               ))}
             </div>
+            
+            <p className="mt-8 text-lg font-bold opacity-80">
+              {song.mood.includes(selected ?? '') 
+                ? '😎 Volltreffer! Dein Vibe-Check war spot-on.' 
+                : '🌑 Fast... Dein Gefühl war ein anderes.'}
+            </p>
           </div>
 
-          <div className="p-3 bg-white/5 rounded-2xl border border-white/10">
+          {/* Music Integration */}
+          <div className="p-1.5 bg-gradient-to-b from-white/10 to-transparent rounded-[2rem] border border-white/10 shadow-inner">
             <MusicPlayer
               youtubeLink={song.links.youtube}
               startSeconds={song.previewTimestamp?.start ?? 0}
-              endSeconds={(song.previewTimestamp?.start ?? 0) + 60}
+              endSeconds={(song.previewTimestamp?.start ?? 0) + 120}
               blurred={false}
             />
           </div>
 
-          <p className="text-center text-sm font-bold opacity-60">
-            {song.mood.includes(selected ?? '') ? '✨ Volltreffer!' : '🌑 Knapp daneben...'}
-          </p>
+          <div className="text-center pt-2">
+            <p className="text-[10px] font-black uppercase tracking-widest opacity-30">
+              {song.title} &middot; {song.artist} ({song.year})
+            </p>
+          </div>
         </motion.div>
       )}
     </div>

@@ -43,6 +43,10 @@ const DEFAULT_CONFIG: GameConfig = {
   selectedPacks: [PHOMU_CONFIG.SONG_PACKS[0].id],
   teamMode: PHOMU_CONFIG.DEFAULT_TEAM_MODE,
   deviceMode: 'pass-the-phone',
+  endingCondition: 'rounds',
+  targetPoints: 100,
+  targetRounds: 10,
+  targetTimeMinutes: 60,
   winCondition: PHOMU_CONFIG.DEFAULT_WIN_SCORE,
   timeLimitSeconds: null,
   difficulty: 'all',
@@ -57,6 +61,7 @@ const DEFAULT_CONFIG: GameConfig = {
   hintReleasePolicy: PHOMU_CONFIG.DEFAULT_HINT_RELEASE_POLICY,
   aiQueueStrategy: PHOMU_CONFIG.DEFAULT_AI_QUEUE_STRATEGY,
   chipsEnabled: PHOMU_CONFIG.ENABLE_CHIPS_BETTING,
+  onlyQRCompatible: false,
 };
 
 // ─── Store-Interface ──────────────────────────────────────────────
@@ -164,6 +169,7 @@ function createInitialState(): GameState {
     currentSongSource: null,
     autoDrawIntent: false,
     timelineYears: [],
+    gameStartTime: null,
   };
 }
 
@@ -244,11 +250,13 @@ export const useGameStore = create<GameStore>()(
           currentAnswers: [],
           isGameOver: false,
           winnerId: undefined,
+          gameStartTime: Date.now(),
         });
       },
 
       // ── nextRound ────────────────────────────────────────────────
       nextRound() {
+        const state = get();
         const {
           currentRound,
           config,
@@ -258,9 +266,48 @@ export const useGameStore = create<GameStore>()(
           currentAnswers,
           currentSong,
           roundHistory,
-        } = get();
+          players,
+          teams,
+          gameStartTime,
+        } = state;
 
-        // Abgeschlossene Runde in den Verlauf schreiben (nur wenn Song vorhanden)
+        // 1. Check for Game Over Conditions
+        let shouldEnd = false;
+        let winnerId: string | undefined = undefined;
+
+        // Only check ending after a full rotation is complete (last player finished)
+        // or if it's the very first round being initialized.
+        const isEndOfRotation = currentTurnIndex === turnOrder.length - 1;
+
+        if (isEndOfRotation) {
+          if (config.endingCondition === 'points') {
+            const topPlayer = [...players].sort((a, b) => b.score - a.score)[0];
+            const topTeam = [...teams].sort((a, b) => b.score - a.score)[0];
+            const maxScore = config.teamMode === 'individual' ? (topPlayer?.score ?? 0) : (topTeam?.score ?? 0);
+            
+            if (maxScore >= config.targetPoints) {
+              shouldEnd = true;
+              winnerId = config.teamMode === 'individual' ? topPlayer?.id : topTeam?.id;
+            }
+          } else if (config.endingCondition === 'rounds') {
+            // targetRounds is per team/player
+            if (currentRound >= config.targetRounds * (config.teamMode === 'individual' ? players.length : teams.length)) {
+              shouldEnd = true;
+            }
+          } else if (config.endingCondition === 'time' && gameStartTime) {
+            const elapsedMinutes = (Date.now() - gameStartTime) / 60000;
+            if (elapsedMinutes >= config.targetTimeMinutes) {
+              shouldEnd = true;
+            }
+          }
+        }
+
+        if (shouldEnd) {
+          state.endGame(winnerId);
+          return;
+        }
+
+        // 2. Prepare next round
         const newHistory: GameRound[] =
           currentSong !== null
             ? [
@@ -280,10 +327,9 @@ export const useGameStore = create<GameStore>()(
           : 0;
 
         // Bei Shifting-Teams: Spieler jede Runde neu mischen
-        const { teams, players, config: cfg } = get();
         let updatedTeams = teams;
         let updatedPlayers = players;
-        if (cfg.teamMode === 'shifting' && teams.length >= 2) {
+        if (config.teamMode === 'shifting' && teams.length >= 2) {
           const shuffled = [...players].sort(() => Math.random() - 0.5);
           const newTeams: Team[] = teams.map(t => ({ ...t, playerIds: [] as string[] }));
           shuffled.forEach((p, i) => {
@@ -528,6 +574,7 @@ export const useGameStore = create<GameStore>()(
         currentRound: state.currentRound,
         isGameOver: state.isGameOver,
         timelineYears: state.timelineYears,
+        gameStartTime: state.gameStartTime,
       }),
     }
   )

@@ -74,7 +74,7 @@ export function DrawingPhase({
   onCardDrawn,
 }: DrawingPhaseProps) {
   const meta = MODE_META[currentMode];
-  const { autoDrawIntent } = useGameStore();
+  const { autoDrawIntent, config } = useGameStore();
   const [isDrawing, setIsDrawing] = useState(false);
   const [error, setError] = useState('');
 
@@ -83,7 +83,13 @@ export function DrawingPhase({
     setIsDrawing(true);
     setError('');
 
-    const song = pickRandomSong(playedSongIds);
+    const song = pickRandomSong({
+      playedIds: playedSongIds,
+      selectedPacks: config.selectedPacks,
+      difficulty: config.difficulty,
+      onlyQRCompatible: config.onlyQRCompatible,
+      currentMode: currentMode
+    });
     if (!song) {
       setError('Keine Songs verfügbar. Bitte prüfe dein Song-Pack.');
       setIsDrawing(false);
@@ -95,7 +101,7 @@ export function DrawingPhase({
       onCardDrawn(song);
       setIsDrawing(false);
     }, 600);
-  }, [isDrawing, playedSongIds, onCardDrawn]);
+  }, [isDrawing, playedSongIds, onCardDrawn, config, currentMode]);
 
   // AUTO-DRAW: Wenn wir nach einem Skip hier ankommen, automatisch ziehen
   useEffect(() => {

@@ -38,7 +38,16 @@
       "links": {
         "youtube": "XFkzRNyygfk"
       },
-      "coverUrl": "/covers/indie-radiohead-creep.jpg"
+      "coverUrl": "/covers/indie-radiohead-creep.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-nirvana-come-as-you-are",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "vabnZ9-ex7o"
       },
-      "coverUrl": "/covers/indie-nirvana-come-as-you-are.jpg"
+      "coverUrl": "/covers/indie-nirvana-come-as-you-are.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-oasis-dont-look-back",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "bDvy4VD6Dq8"
       },
-      "coverUrl": "/covers/indie-oasis-dont-look-back.jpg"
+      "coverUrl": "/covers/indie-oasis-dont-look-back.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-rhcp-under-the-bridge",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "GLvohMXgcBo"
       },
-      "coverUrl": "/covers/indie-rhcp-under-the-bridge.jpg"
+      "coverUrl": "/covers/indie-rhcp-under-the-bridge.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-the-cure-friday",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "mGgMZpGYiy8"
       },
-      "coverUrl": "/covers/indie-the-cure-friday.jpg"
+      "coverUrl": "/covers/indie-the-cure-friday.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-the-smiths-light",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "siO6dkqidc4"
       },
-      "coverUrl": "/covers/indie-the-smiths-light.jpg"
+      "coverUrl": "/covers/indie-the-smiths-light.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-pixies-mind",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "N3oCS85HvpY"
       },
-      "coverUrl": "/covers/indie-pixies-mind.jpg"
+      "coverUrl": "/covers/indie-pixies-mind.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-rem-shiny",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "YYOKMUTTDdA"
       },
-      "coverUrl": "/covers/indie-rem-shiny.jpg"
+      "coverUrl": "/covers/indie-rem-shiny.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-beck-loser",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "YgSPaXgAdzE"
       },
-      "coverUrl": "/covers/indie-beck-loser.jpg"
+      "coverUrl": "/covers/indie-beck-loser.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-white-stripes-fell-in-love",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "fTXB3H68t8"
       },
-      "coverUrl": "/covers/indie-white-stripes-fell-in-love.jpg"
+      "coverUrl": "/covers/indie-white-stripes-fell-in-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-arctic-monkeys-do-i-wanna-know",
@@ -388,7 +478,16 @@
       "links": {
         "youtube": "bpOSxM0rNPM"
       },
-      "coverUrl": "/covers/indie-arctic-monkeys-do-i-wanna-know.jpg"
+      "coverUrl": "/covers/indie-arctic-monkeys-do-i-wanna-know.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-killers-somebody-told-me",
@@ -423,7 +522,16 @@
       "links": {
         "youtube": "Y5fBdpreJiU"
       },
-      "coverUrl": "/covers/indie-killers-somebody-told-me.jpg"
+      "coverUrl": "/covers/indie-killers-somebody-told-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-kol-sex-on-fire",
@@ -458,7 +566,16 @@
       "links": {
         "youtube": "RF0HhrwIwp0"
       },
-      "coverUrl": "/covers/indie-kol-sex-on-fire.jpg"
+      "coverUrl": "/covers/indie-kol-sex-on-fire.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-franz-ferdinand-take-me-out",
@@ -493,7 +610,16 @@
       "links": {
         "youtube": "X9jhwR07yk4"
       },
-      "coverUrl": "/covers/indie-franz-ferdinand-take-me-out.jpg"
+      "coverUrl": "/covers/indie-franz-ferdinand-take-me-out.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-muse-knights-of-cydonia",
@@ -528,7 +654,16 @@
       "links": {
         "youtube": "G_sBOsh-vyI"
       },
-      "coverUrl": "/covers/indie-muse-knights-of-cydonia.jpg"
+      "coverUrl": "/covers/indie-muse-knights-of-cydonia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-gorillaz-feel-good-inc",
@@ -563,7 +698,16 @@
       "links": {
         "youtube": "HyHNuVaZJ-k"
       },
-      "coverUrl": "/covers/indie-gorillaz-feel-good-inc.jpg"
+      "coverUrl": "/covers/indie-gorillaz-feel-good-inc.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-arcade-fire-wake-up",
@@ -598,7 +742,16 @@
       "links": {
         "youtube": "sJRPPUr1yic"
       },
-      "coverUrl": "/covers/indie-arcade-fire-wake-up.jpg"
+      "coverUrl": "/covers/indie-arcade-fire-wake-up.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-mgmt-kids",
@@ -633,7 +786,16 @@
       "links": {
         "youtube": "fe4EK4HSPkI"
       },
-      "coverUrl": "/covers/indie-mgmt-kids.jpg"
+      "coverUrl": "/covers/indie-mgmt-kids.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-foster-the-people-pumped-up-kicks",
@@ -668,7 +830,16 @@
       "links": {
         "youtube": "SDTZ7iX4vTQ"
       },
-      "coverUrl": "/covers/indie-foster-the-people-pumped-up-kicks.jpg"
+      "coverUrl": "/covers/indie-foster-the-people-pumped-up-kicks.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-m83-midnight-city",
@@ -703,7 +874,16 @@
       "links": {
         "youtube": "dX3k_QDnzHE"
       },
-      "coverUrl": "/covers/indie-m83-midnight-city.jpg"
+      "coverUrl": "/covers/indie-m83-midnight-city.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-radiohead-creep",
@@ -738,7 +918,16 @@
       "links": {
         "youtube": "XFkzRNyygfk"
       },
-      "coverUrl": "/covers/indie-radiohead-creep.jpg"
+      "coverUrl": "/covers/indie-radiohead-creep.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-killers-brightside",
@@ -773,7 +962,16 @@
       "links": {
         "youtube": "gGdGFtwCNBE"
       },
-      "coverUrl": "/covers/indie-killers-brightside.jpg"
+      "coverUrl": "/covers/indie-killers-brightside.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-arctic-monkeys-wanna",
@@ -808,7 +1006,16 @@
       "links": {
         "youtube": "bpOSxM0rNPM"
       },
-      "coverUrl": "/covers/indie-arctic-monkeys-wanna.jpg"
+      "coverUrl": "/covers/indie-arctic-monkeys-wanna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-franz-ferdinand-takeout",
@@ -843,7 +1050,16 @@
       "links": {
         "youtube": "X9jhwR07yk4"
       },
-      "coverUrl": "/covers/indie-franz-ferdinand-takeout.jpg"
+      "coverUrl": "/covers/indie-franz-ferdinand-takeout.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-kings-of-leon-somebody",
@@ -878,7 +1094,16 @@
       "links": {
         "youtube": "gnhXHvRoUd0"
       },
-      "coverUrl": "/covers/indie-kings-of-leon-somebody.jpg"
+      "coverUrl": "/covers/indie-kings-of-leon-somebody.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-mgmt-kids",
@@ -913,7 +1138,16 @@
       "links": {
         "youtube": "fe4EK4HSPkI"
       },
-      "coverUrl": "/covers/indie-mgmt-kids.jpg"
+      "coverUrl": "/covers/indie-mgmt-kids.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-foster-kicks",
@@ -948,7 +1182,16 @@
       "links": {
         "youtube": "SDTZ7iX4vTQ"
       },
-      "coverUrl": "/covers/indie-foster-kicks.jpg"
+      "coverUrl": "/covers/indie-foster-kicks.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-gotye-somebody",
@@ -983,7 +1226,16 @@
       "links": {
         "youtube": "8WYHDfJDPDc"
       },
-      "coverUrl": "/covers/indie-gotye-somebody.jpg"
+      "coverUrl": "/covers/indie-gotye-somebody.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-florence-dogdays",
@@ -1018,7 +1270,16 @@
       "links": {
         "youtube": "iWOyfLBYtuU"
       },
-      "coverUrl": "/covers/indie-florence-dogdays.jpg"
+      "coverUrl": "/covers/indie-florence-dogdays.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-mumford-lion",
@@ -1053,7 +1314,16 @@
       "links": {
         "youtube": "X7bHe--mp1g"
       },
-      "coverUrl": "/covers/indie-mumford-lion.jpg"
+      "coverUrl": "/covers/indie-mumford-lion.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-lumineers-hohey",
@@ -1088,7 +1358,16 @@
       "links": {
         "youtube": "zvCBSSwgtg4"
       },
-      "coverUrl": "/covers/indie-lumineers-hohey.jpg"
+      "coverUrl": "/covers/indie-lumineers-hohey.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-bastille-pompeii",
@@ -1123,7 +1402,16 @@
       "links": {
         "youtube": "F90Cw4l-8NY"
       },
-      "coverUrl": "/covers/indie-bastille-pompeii.jpg"
+      "coverUrl": "/covers/indie-bastille-pompeii.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-imagine-radioactive",
@@ -1158,7 +1446,16 @@
       "links": {
         "youtube": "7wtfhZwyrcc"
       },
-      "coverUrl": "/covers/indie-imagine-radioactive.jpg"
+      "coverUrl": "/covers/indie-imagine-radioactive.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-21pilots-stressed",
@@ -1193,7 +1490,16 @@
       "links": {
         "youtube": "pXRviuL6vMY"
       },
-      "coverUrl": "/covers/indie-21pilots-stressed.jpg"
+      "coverUrl": "/covers/indie-21pilots-stressed.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "indie-tame-impala-less",
@@ -1228,7 +1534,16 @@
       "links": {
         "youtube": "sBzrzS1Ag_g"
       },
-      "coverUrl": "/covers/indie-tame-impala-less.jpg"
+      "coverUrl": "/covers/indie-tame-impala-less.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

@@ -38,7 +38,16 @@
       "links": {
         "youtube": "XFkzRNyygfk"
       },
-      "coverUrl": "/covers/electro-kraftwerk-das-model.jpg"
+      "coverUrl": "/covers/electro-kraftwerk-das-model.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-underworld-born-slippy",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "mwVdYq9AT0w"
       },
-      "coverUrl": "/covers/electro-underworld-born-slippy.jpg"
+      "coverUrl": "/covers/electro-underworld-born-slippy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-daft-punk-around-the-world",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "LKYPYj2XX80"
       },
-      "coverUrl": "/covers/electro-daft-punk-around-the-world.jpg"
+      "coverUrl": "/covers/electro-daft-punk-around-the-world.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-chem-bros-galvanize",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "Xu3FTEmN-eg"
       },
-      "coverUrl": "/covers/electro-chem-bros-galvanize.jpg"
+      "coverUrl": "/covers/electro-chem-bros-galvanize.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-fatboy-slim-praise-you",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/electro-fatboy-slim-praise-you.jpg"
+      "coverUrl": "/covers/electro-fatboy-slim-praise-you.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-paul-kalkbrenner-sky-and-sand",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "8ybFb_wKlvQ"
       },
-      "coverUrl": "/covers/electro-paul-kalkbrenner-sky-and-sand.jpg"
+      "coverUrl": "/covers/electro-paul-kalkbrenner-sky-and-sand.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-avicii-wake-me-up",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "IcrbM1l_BoI"
       },
-      "coverUrl": "/covers/electro-avicii-wake-me-up.jpg"
+      "coverUrl": "/covers/electro-avicii-wake-me-up.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-shm-dont-you-worry",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "1y6smkh6c-0"
       },
-      "coverUrl": "/covers/electro-shm-dont-you-worry.jpg"
+      "coverUrl": "/covers/electro-shm-dont-you-worry.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-calvin-harris-summer",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "ebXbLfLACGM"
       },
-      "coverUrl": "/covers/electro-calvin-harris-summer.jpg"
+      "coverUrl": "/covers/electro-calvin-harris-summer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-guetta-titanium",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "JRfuAukYTKg"
       },
-      "coverUrl": "/covers/electro-guetta-titanium.jpg"
+      "coverUrl": "/covers/electro-guetta-titanium.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-faithless-insomnia",
@@ -388,7 +478,16 @@
       "links": {
         "youtube": "P8JEm4d6Wu4"
       },
-      "coverUrl": "/covers/electro-faithless-insomnia.jpg"
+      "coverUrl": "/covers/electro-faithless-insomnia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-robert-miles-children",
@@ -421,7 +520,15 @@
       "links": {
         "youtube": "eqHlC6Nrr80"
       },
-      "coverUrl": "/covers/electro-robert-miles-children.jpg"
+      "coverUrl": "/covers/electro-robert-miles-children.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-darude-sandstorm",
@@ -454,7 +561,16 @@
       "links": {
         "youtube": "y6120QOlsfU"
       },
-      "coverUrl": "/covers/electro-darude-sandstorm.jpg"
+      "coverUrl": "/covers/electro-darude-sandstorm.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-tiesto-adagio",
@@ -487,7 +603,16 @@
       "links": {
         "youtube": "2EaE0_gQLw0"
       },
-      "coverUrl": "/covers/electro-tiesto-adagio.jpg"
+      "coverUrl": "/covers/electro-tiesto-adagio.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-deadmau5-strobe",
@@ -520,7 +645,16 @@
       "links": {
         "youtube": "tKi9HiYps"
       },
-      "coverUrl": "/covers/electro-deadmau5-strobe.jpg"
+      "coverUrl": "/covers/electro-deadmau5-strobe.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-disclosure-latch",
@@ -555,7 +689,16 @@
       "links": {
         "youtube": "93ASUImTedo"
       },
-      "coverUrl": "/covers/electro-disclosure-latch.jpg"
+      "coverUrl": "/covers/electro-disclosure-latch.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-zedd-clarity",
@@ -590,7 +733,16 @@
       "links": {
         "youtube": "IXXxciRUMzE"
       },
-      "coverUrl": "/covers/electro-zedd-clarity.jpg"
+      "coverUrl": "/covers/electro-zedd-clarity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-martin-garrix-animals",
@@ -624,7 +776,16 @@
       "links": {
         "youtube": "gCYcHz2k5x0"
       },
-      "coverUrl": "/covers/electro-martin-garrix-animals.jpg"
+      "coverUrl": "/covers/electro-martin-garrix-animals.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-marshmello-happier",
@@ -659,7 +820,16 @@
       "links": {
         "youtube": "m7Bc3pLyij0"
       },
-      "coverUrl": "/covers/electro-marshmello-happier.jpg"
+      "coverUrl": "/covers/electro-marshmello-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-kygo-firestone",
@@ -694,7 +864,16 @@
       "links": {
         "youtube": "9Sc-ir2UwGU"
       },
-      "coverUrl": "/covers/electro-kygo-firestone.jpg"
+      "coverUrl": "/covers/electro-kygo-firestone.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-prodigy-firestarter",
@@ -729,7 +908,16 @@
       "links": {
         "youtube": "wmin5WkOuPw"
       },
-      "coverUrl": "/covers/electro-prodigy-firestarter.jpg"
+      "coverUrl": "/covers/electro-prodigy-firestarter.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-chemical-boygirl",
@@ -764,7 +952,16 @@
       "links": {
         "youtube": "tpKCqp9CALQ"
       },
-      "coverUrl": "/covers/electro-chemical-boygirl.jpg"
+      "coverUrl": "/covers/electro-chemical-boygirl.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-fatboy-righthere",
@@ -799,7 +996,16 @@
       "links": {
         "youtube": "ub747pprmJ8"
       },
-      "coverUrl": "/covers/electro-fatboy-righthere.jpg"
+      "coverUrl": "/covers/electro-fatboy-righthere.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-faithless-insomnia",
@@ -834,7 +1040,16 @@
       "links": {
         "youtube": "P8JEm4d6nRE"
       },
-      "coverUrl": "/covers/electro-faithless-insomnia.jpg"
+      "coverUrl": "/covers/electro-faithless-insomnia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-darude-sandstorm",
@@ -867,7 +1082,15 @@
       "links": {
         "youtube": "y6120QOlsfU"
       },
-      "coverUrl": "/covers/electro-darude-sandstorm.jpg"
+      "coverUrl": "/covers/electro-darude-sandstorm.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-robert-miles-children",
@@ -900,7 +1123,15 @@
       "links": {
         "youtube": "CC5ca6Hsb2Q"
       },
-      "coverUrl": "/covers/electro-robert-miles-children.jpg"
+      "coverUrl": "/covers/electro-robert-miles-children.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-atb-9pm",
@@ -935,7 +1166,16 @@
       "links": {
         "youtube": "9hbu9toStfc"
       },
-      "coverUrl": "/covers/electro-atb-9pm.jpg"
+      "coverUrl": "/covers/electro-atb-9pm.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-paulvandyk-angel",
@@ -968,7 +1208,15 @@
       "links": {
         "youtube": "2wnzgR06or0"
       },
-      "coverUrl": "/covers/electro-paulvandyk-angel.jpg"
+      "coverUrl": "/covers/electro-paulvandyk-angel.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-tiesto-adagio",
@@ -1001,7 +1249,15 @@
       "links": {
         "youtube": "2EaE0_Y"
       },
-      "coverUrl": "/covers/electro-tiesto-adagio.jpg"
+      "coverUrl": "/covers/electro-tiesto-adagio.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-deadmau5-strobe",
@@ -1034,7 +1290,15 @@
       "links": {
         "youtube": "tKi9HIp"
       },
-      "coverUrl": "/covers/electro-deadmau5-strobe.jpg"
+      "coverUrl": "/covers/electro-deadmau5-strobe.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-skrillex-scary",
@@ -1069,7 +1333,16 @@
       "links": {
         "youtube": "WSeNSzJ2-Jw"
       },
-      "coverUrl": "/covers/electro-skrillex-scary.jpg"
+      "coverUrl": "/covers/electro-skrillex-scary.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-shm-worry-child",
@@ -1104,7 +1377,16 @@
       "links": {
         "youtube": "1y6smkh6c-0"
       },
-      "coverUrl": "/covers/electro-shm-worry-child.jpg"
+      "coverUrl": "/covers/electro-shm-worry-child.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-zedd-clarity",
@@ -1139,7 +1421,16 @@
       "links": {
         "youtube": "IxxstCcZGE"
       },
-      "coverUrl": "/covers/electro-zedd-clarity.jpg"
+      "coverUrl": "/covers/electro-zedd-clarity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-disclosure-latch",
@@ -1174,7 +1465,16 @@
       "links": {
         "youtube": "93ASuAgK"
       },
-      "coverUrl": "/covers/electro-disclosure-latch.jpg"
+      "coverUrl": "/covers/electro-disclosure-latch.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "electro-kygo-firestone",
@@ -1209,7 +1509,16 @@
       "links": {
         "youtube": "9Sc-ir"
       },
-      "coverUrl": "/covers/electro-kygo-firestone.jpg"
+      "coverUrl": "/covers/electro-kygo-firestone.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

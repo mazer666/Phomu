@@ -40,7 +40,16 @@
       "links": {
         "youtube": "cYwDUonrGFQ"
       },
-      "coverUrl": "/covers/elvis-hound-dog-1956.jpg"
+      "coverUrl": "/covers/elvis-hound-dog-1956.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "chuck-berry-johnny-b-goode-1958",
@@ -75,7 +84,16 @@
       "links": {
         "youtube": "FTvehe6kPjU"
       },
-      "coverUrl": "/covers/chuck-berry-johnny-b-goode-1958.jpg"
+      "coverUrl": "/covers/chuck-berry-johnny-b-goode-1958.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "aretha-franklin-respect-1967",
@@ -110,7 +128,16 @@
       "links": {
         "youtube": "6FOUqQt3Kg0"
       },
-      "coverUrl": "/covers/aretha-franklin-respect-1967.jpg"
+      "coverUrl": "/covers/aretha-franklin-respect-1967.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "beatles-hey-jude-1968",
@@ -145,7 +172,16 @@
       "links": {
         "youtube": "A_MjCqQoLLA"
       },
-      "coverUrl": "/covers/beatles-hey-jude-1968.jpg"
+      "coverUrl": "/covers/beatles-hey-jude-1968.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "queen-bohemian-rhapsody-1975",
@@ -180,7 +216,16 @@
       "links": {
         "youtube": "fJ9rUzIMcZQ"
       },
-      "coverUrl": "/covers/queen-bohemian-rhapsody-1975.jpg"
+      "coverUrl": "/covers/queen-bohemian-rhapsody-1975.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "abba-dancing-queen-1976",
@@ -215,7 +260,16 @@
       "links": {
         "youtube": "xFrGuyw1V8s"
       },
-      "coverUrl": "/covers/abba-dancing-queen-1976.jpg"
+      "coverUrl": "/covers/abba-dancing-queen-1976.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "gloria-gaynor-i-will-survive-1978",
@@ -250,7 +304,16 @@
       "links": {
         "youtube": "5LDGBO11RaQ"
       },
-      "coverUrl": "/covers/gloria-gaynor-i-will-survive-1978.jpg"
+      "coverUrl": "/covers/gloria-gaynor-i-will-survive-1978.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "mj-thriller-1982",
@@ -289,7 +352,16 @@
       "links": {
         "youtube": "sOnqjkJTMaA"
       },
-      "coverUrl": "/covers/mj-thriller-1982.jpg"
+      "coverUrl": "/covers/mj-thriller-1982.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "cyndi-lauper-girls-just-want-1983",
@@ -324,7 +396,16 @@
       "links": {
         "youtube": "PIb6AZdTr-A"
       },
-      "coverUrl": "/covers/cyndi-lauper-girls-just-want-1983.jpg"
+      "coverUrl": "/covers/cyndi-lauper-girls-just-want-1983.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "david-bowie-lets-dance-1983",
@@ -359,7 +440,16 @@
       "links": {
         "youtube": "N4d7ztcN7lc"
       },
-      "coverUrl": "/covers/david-bowie-lets-dance-1983.jpg"
+      "coverUrl": "/covers/david-bowie-lets-dance-1983.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "george-michael-careless-whisper-1984",
@@ -394,7 +484,16 @@
       "links": {
         "youtube": "izGwDsrQ1eQ"
       },
-      "coverUrl": "/covers/george-michael-careless-whisper-1984.jpg"
+      "coverUrl": "/covers/george-michael-careless-whisper-1984.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "prince-purple-rain-1984",
@@ -429,7 +528,16 @@
       "links": {
         "youtube": "TvnYmWpD_T8"
       },
-      "coverUrl": "/covers/prince-purple-rain-1984.jpg"
+      "coverUrl": "/covers/prince-purple-rain-1984.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "aha-take-on-me-1985",
@@ -464,7 +572,16 @@
       "links": {
         "youtube": "djV11Xbc914"
       },
-      "coverUrl": "/covers/aha-take-on-me-1985.jpg"
+      "coverUrl": "/covers/aha-take-on-me-1985.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "madonna-like-a-prayer-1989",
@@ -499,7 +616,16 @@
       "links": {
         "youtube": "79fzeNUqQbQ"
       },
-      "coverUrl": "/covers/madonna-like-a-prayer-1989.jpg"
+      "coverUrl": "/covers/madonna-like-a-prayer-1989.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "nirvana-smells-like-teen-spirit-1991",
@@ -534,7 +660,16 @@
       "links": {
         "youtube": "hTWKbfoikeg"
       },
-      "coverUrl": "/covers/nirvana-smells-like-teen-spirit-1991.jpg"
+      "coverUrl": "/covers/nirvana-smells-like-teen-spirit-1991.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "whitney-houston-i-will-always-love-you-1992",
@@ -569,7 +704,16 @@
       "links": {
         "youtube": "H9nPf7w7pDI"
       },
-      "coverUrl": "/covers/whitney-houston-i-will-always-love-you-1992.jpg"
+      "coverUrl": "/covers/whitney-houston-i-will-always-love-you-1992.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "mariah-carey-all-i-want-for-christmas-1994",
@@ -604,7 +748,16 @@
       "links": {
         "youtube": "yXQViqx6GMY"
       },
-      "coverUrl": "/covers/mariah-carey-all-i-want-for-christmas-1994.jpg"
+      "coverUrl": "/covers/mariah-carey-all-i-want-for-christmas-1994.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "spice-girls-wannabe-1996",
@@ -639,7 +792,16 @@
       "links": {
         "youtube": "gJLIiF15wjQ"
       },
-      "coverUrl": "/covers/spice-girls-wannabe-1996.jpg"
+      "coverUrl": "/covers/spice-girls-wannabe-1996.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "britney-spears-baby-one-more-time-1998",
@@ -674,7 +836,16 @@
       "links": {
         "youtube": "C-u5WLJ9Yk4"
       },
-      "coverUrl": "/covers/britney-spears-baby-one-more-time-1998.jpg"
+      "coverUrl": "/covers/britney-spears-baby-one-more-time-1998.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "backstreet-boys-i-want-it-that-way-1999",
@@ -709,7 +880,16 @@
       "links": {
         "youtube": "4fndeDfaWCg"
       },
-      "coverUrl": "/covers/backstreet-boys-i-want-it-that-way-1999.jpg"
+      "coverUrl": "/covers/backstreet-boys-i-want-it-that-way-1999.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "coldplay-yellow-2000",
@@ -744,7 +924,16 @@
       "links": {
         "youtube": "yKNxeF4KMsY"
       },
-      "coverUrl": "/covers/coldplay-yellow-2000.jpg"
+      "coverUrl": "/covers/coldplay-yellow-2000.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "eminem-lose-yourself-2002",
@@ -779,7 +968,16 @@
       "links": {
         "youtube": "_Yhyp-_hX2s"
       },
-      "coverUrl": "/covers/eminem-lose-yourself-2002.jpg"
+      "coverUrl": "/covers/eminem-lose-yourself-2002.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "beyonce-crazy-in-love-2003",
@@ -814,7 +1012,16 @@
       "links": {
         "youtube": "VKBByEiXnMA"
       },
-      "coverUrl": "/covers/beyonce-crazy-in-love-2003.jpg"
+      "coverUrl": "/covers/beyonce-crazy-in-love-2003.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "outkast-hey-ya-2003",
@@ -849,7 +1056,16 @@
       "links": {
         "youtube": "PWgvGjAhvIw"
       },
-      "coverUrl": "/covers/outkast-hey-ya-2003.jpg"
+      "coverUrl": "/covers/outkast-hey-ya-2003.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "amy-winehouse-rehab-2006",
@@ -884,7 +1100,16 @@
       "links": {
         "youtube": "KUmZp8pR1uc"
       },
-      "coverUrl": "/covers/amy-winehouse-rehab-2006.jpg"
+      "coverUrl": "/covers/amy-winehouse-rehab-2006.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "rihanna-umbrella-2007",
@@ -919,7 +1144,16 @@
       "links": {
         "youtube": "CvBfHwUxHIk"
       },
-      "coverUrl": "/covers/rihanna-umbrella-2007.jpg"
+      "coverUrl": "/covers/rihanna-umbrella-2007.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "lady-gaga-bad-romance-2009",
@@ -954,7 +1188,16 @@
       "links": {
         "youtube": "qrO4YZeyl0I"
       },
-      "coverUrl": "/covers/lady-gaga-bad-romance-2009.jpg"
+      "coverUrl": "/covers/lady-gaga-bad-romance-2009.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "adele-rolling-in-the-deep-2010",
@@ -989,7 +1232,16 @@
       "links": {
         "youtube": "rYEDA3JcQqw"
       },
-      "coverUrl": "/covers/adele-rolling-in-the-deep-2010.jpg"
+      "coverUrl": "/covers/adele-rolling-in-the-deep-2010.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "shakira-waka-waka-2010",
@@ -1024,7 +1276,16 @@
       "links": {
         "youtube": "pRpeEdMmmQ0"
       },
-      "coverUrl": "/covers/shakira-waka-waka-2010.jpg"
+      "coverUrl": "/covers/shakira-waka-waka-2010.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "stromae-alors-on-danse-2010",
@@ -1059,7 +1320,16 @@
       "links": {
         "youtube": "VHoT4N43jK8"
       },
-      "coverUrl": "/covers/stromae-alors-on-danse-2010.jpg"
+      "coverUrl": "/covers/stromae-alors-on-danse-2010.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "gotye-somebody-that-i-used-to-know-2011",
@@ -1094,7 +1364,16 @@
       "links": {
         "youtube": "MmZexg8sxyk"
       },
-      "coverUrl": "/covers/gotye-somebody-that-i-used-to-know-2011.jpg"
+      "coverUrl": "/covers/gotye-somebody-that-i-used-to-know-2011.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "david-guetta-titanium-2011",
@@ -1129,7 +1408,16 @@
       "links": {
         "youtube": "JRfuAukYTKg"
       },
-      "coverUrl": "/covers/david-guetta-titanium-2011.jpg"
+      "coverUrl": "/covers/david-guetta-titanium-2011.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "psy-gangnam-style-2012",
@@ -1164,7 +1452,16 @@
       "links": {
         "youtube": "9bZkp7q19f0"
       },
-      "coverUrl": "/covers/psy-gangnam-style-2012.jpg"
+      "coverUrl": "/covers/psy-gangnam-style-2012.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "pharrell-happy-2013",
@@ -1199,7 +1496,16 @@
       "links": {
         "youtube": "ZbZSe6N_BXs"
       },
-      "coverUrl": "/covers/pharrell-happy-2013.jpg"
+      "coverUrl": "/covers/pharrell-happy-2013.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "daft-punk-get-lucky-2013",
@@ -1234,7 +1540,16 @@
       "links": {
         "youtube": "5NV6Rdv1a3I"
       },
-      "coverUrl": "/covers/daft-punk-get-lucky-2013.jpg"
+      "coverUrl": "/covers/daft-punk-get-lucky-2013.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "lorde-royals-2013",
@@ -1269,7 +1584,16 @@
       "links": {
         "youtube": "nlcIKh6sBtc"
       },
-      "coverUrl": "/covers/lorde-royals-2013.jpg"
+      "coverUrl": "/covers/lorde-royals-2013.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "mark-ronson-uptown-funk-2014",
@@ -1304,7 +1628,16 @@
       "links": {
         "youtube": "OPf0YbXqDm0"
       },
-      "coverUrl": "/covers/mark-ronson-uptown-funk-2014.jpg"
+      "coverUrl": "/covers/mark-ronson-uptown-funk-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "sia-chandelier-2014",
@@ -1339,7 +1672,16 @@
       "links": {
         "youtube": "2vjPBrBU-TM"
       },
-      "coverUrl": "/covers/sia-chandelier-2014.jpg"
+      "coverUrl": "/covers/sia-chandelier-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "sam-smith-stay-with-me-2014",
@@ -1374,7 +1716,16 @@
       "links": {
         "youtube": "pB-5XG-DbAA"
       },
-      "coverUrl": "/covers/sam-smith-stay-with-me-2014.jpg"
+      "coverUrl": "/covers/sam-smith-stay-with-me-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "taylor-swift-shake-it-off-2014",
@@ -1409,7 +1760,16 @@
       "links": {
         "youtube": "nfWlot6h_JM"
       },
-      "coverUrl": "/covers/taylor-swift-shake-it-off-2014.jpg"
+      "coverUrl": "/covers/taylor-swift-shake-it-off-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "justin-timberlake-cant-stop-the-feeling-2016",
@@ -1444,7 +1804,16 @@
       "links": {
         "youtube": "pok8H_KF1FA"
       },
-      "coverUrl": "/covers/justin-timberlake-cant-stop-the-feeling-2016.jpg"
+      "coverUrl": "/covers/justin-timberlake-cant-stop-the-feeling-2016.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "drake-one-dance-2016",
@@ -1479,7 +1848,16 @@
       "links": {
         "youtube": "qggxPtnFk9o"
       },
-      "coverUrl": "/covers/drake-one-dance-2016.jpg"
+      "coverUrl": "/covers/drake-one-dance-2016.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "ed-sheeran-shape-of-you-2017",
@@ -1514,7 +1892,16 @@
       "links": {
         "youtube": "JGwWNGJdvx8"
       },
-      "coverUrl": "/covers/ed-sheeran-shape-of-you-2017.jpg"
+      "coverUrl": "/covers/ed-sheeran-shape-of-you-2017.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "luis-fonsi-despacito-2017",
@@ -1549,7 +1936,16 @@
       "links": {
         "youtube": "ktvTqknDobU"
       },
-      "coverUrl": "/covers/luis-fonsi-despacito-2017.jpg"
+      "coverUrl": "/covers/luis-fonsi-despacito-2017.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "the-weeknd-blinding-lights-2019",
@@ -1584,7 +1980,16 @@
       "links": {
         "youtube": "4NRXx6U8ABQ"
       },
-      "coverUrl": "/covers/the-weeknd-blinding-lights-2019.jpg"
+      "coverUrl": "/covers/the-weeknd-blinding-lights-2019.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "billie-eilish-bad-guy-2019",
@@ -1619,7 +2024,16 @@
       "links": {
         "youtube": "DyDfgMOUjCI"
       },
-      "coverUrl": "/covers/billie-eilish-bad-guy-2019.jpg"
+      "coverUrl": "/covers/billie-eilish-bad-guy-2019.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dua-lipa-levitating-2020",
@@ -1654,7 +2068,16 @@
       "links": {
         "youtube": "TUVcZfQe-Kw"
       },
-      "coverUrl": "/covers/dua-lipa-levitating-2020.jpg"
+      "coverUrl": "/covers/dua-lipa-levitating-2020.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "glass-animals-heat-waves-2020",
@@ -1689,7 +2112,16 @@
       "links": {
         "youtube": "mRD0-GxqHVo"
       },
-      "coverUrl": "/covers/glass-animals-heat-waves-2020.jpg"
+      "coverUrl": "/covers/glass-animals-heat-waves-2020.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "olivia-rodrigo-drivers-license-2021",
@@ -1724,7 +2156,16 @@
       "links": {
         "youtube": "ZmDBbnmKpqQ"
       },
-      "coverUrl": "/covers/olivia-rodrigo-drivers-license-2021.jpg"
+      "coverUrl": "/covers/olivia-rodrigo-drivers-license-2021.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "harry-styles-as-it-was-2022",
@@ -1759,7 +2200,16 @@
       "links": {
         "youtube": "H5v3kku4y6Q"
       },
-      "coverUrl": "/covers/harry-styles-as-it-was-2022.jpg"
+      "coverUrl": "/covers/harry-styles-as-it-was-2022.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "miley-cyrus-flowers-2023",
@@ -1794,7 +2244,16 @@
       "links": {
         "youtube": "G7KNmW9a75Y"
       },
-      "coverUrl": "/covers/miley-cyrus-flowers-2023.jpg"
+      "coverUrl": "/covers/miley-cyrus-flowers-2023.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "taylor-swift-antihero-2022",
@@ -1829,7 +2288,16 @@
       "links": {
         "youtube": "b1kbLwvqugk"
       },
-      "coverUrl": "/covers/taylor-swift-antihero-2022.jpg"
+      "coverUrl": "/covers/taylor-swift-antihero-2022.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "olivia-rodrigo-drivers-2021",
@@ -1864,7 +2332,16 @@
       "links": {
         "youtube": "ZmDBbnmKpqQ"
       },
-      "coverUrl": "/covers/olivia-rodrigo-drivers-2021.jpg"
+      "coverUrl": "/covers/olivia-rodrigo-drivers-2021.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "sza-killbill-2023",
@@ -1899,7 +2376,16 @@
       "links": {
         "youtube": "MSRcC626prw"
       },
-      "coverUrl": "/covers/sza-killbill-2023.jpg"
+      "coverUrl": "/covers/sza-killbill-2023.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dojacat-sayso-2020",
@@ -1934,7 +2420,16 @@
       "links": {
         "youtube": "pok8H_KF1FA"
       },
-      "coverUrl": "/covers/dojacat-sayso-2020.jpg"
+      "coverUrl": "/covers/dojacat-sayso-2020.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "lilnasx-oldtown-2019",
@@ -1969,7 +2464,16 @@
       "links": {
         "youtube": "r7qovpFAGrQ"
       },
-      "coverUrl": "/covers/lilnasx-oldtown-2019.jpg"
+      "coverUrl": "/covers/lilnasx-oldtown-2019.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "weeknd-ariana-tears-2021",
@@ -2004,7 +2508,16 @@
       "links": {
         "youtube": "LIIDh-qI9oI"
       },
-      "coverUrl": "/covers/weeknd-ariana-tears-2021.jpg"
+      "coverUrl": "/covers/weeknd-ariana-tears-2021.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

@@ -34,17 +34,21 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
   const [phase, setPhase] = useState<Phase>('listening');
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
 
+  // 50% chance for "Original or Cover" variation - stabilized in state
+  const [variation] = useState(() => Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover');
+  const [isCoverGuess, setIsCoverGuess] = useState<boolean | null>(null);
+
   const points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)];
   const playLink = song.links.coverLink || song.links.youtube;
 
-  // 3 artists for multiple-choice: correct + 2 random wrong
-  const choiceOptions = useMemo(() => {
+  // 3 artists for multiple-choice: correct + 2 random wrong - stabilized
+  const [choiceOptions] = useState(() => {
     const others = Array.from(
       new Set(getAllSongs().map((s) => s.artist).filter((a) => a !== song.artist)),
     );
     const wrong = [...others].sort(() => Math.random() - 0.5).slice(0, 2);
     return [...wrong, song.artist].sort(() => Math.random() - 0.5);
-  }, [song.artist]);
+  });
 
   function handleGetHint() {
     if (hintsUsed < 2) {
@@ -66,6 +70,14 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
     const correct = artist === song.artist;
     setWasCorrect(correct);
     onAnswer(correct, correct ? points : 0);
+    setPhase('done');
+  }
+
+  function handleChoiceVariation(guessCover: boolean) {
+    const actuallyCover = !!song.links.coverLink;
+    const correct = guessCover === actuallyCover;
+    setWasCorrect(correct);
+    onAnswer(correct, correct ? 3 : 0); // 3 Pkt für Variation
     setPhase('done');
   }
 
@@ -124,22 +136,48 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
 
       {/* ── Listening phase: Know it / Get hint ────────────────────── */}
       {phase === 'listening' && (
-        <div className="space-y-3 mt-2">
-          <button
-            onClick={() => setPhase('self-assess')}
-            className="w-full py-5 rounded-3xl bg-[var(--color-accent)] font-black text-lg text-white shadow-xl shadow-[var(--color-accent)]/20 hover:scale-[1.02] active:scale-95 transition-all"
-          >
-            Ich kenne ihn! ✋&nbsp;&nbsp;({points} Pkt)
-          </button>
+        <div className="space-y-4 mt-2">
+          {variation === 'who-is-it' ? (
+            <>
+              <button
+                onClick={() => setPhase('self-assess')}
+                className="w-full py-5 rounded-3xl bg-[var(--color-accent)] font-black text-lg text-white shadow-xl shadow-[var(--color-accent)]/20 hover:scale-[1.02] active:scale-95 transition-all"
+              >
+                Ich kenne ihn! ✋&nbsp;&nbsp;({points} Pkt)
+              </button>
 
-          <button
-            onClick={handleGetHint}
-            className="w-full py-4 rounded-2xl border-2 border-white/10 font-black uppercase text-xs tracking-widest hover:bg-white/5 transition-all active:scale-95"
-          >
-            {hintsUsed < 2
-              ? `Hinweis holen → ${POINTS_BY_HINTS[hintsUsed + 1]} Pkt`
-              : `Letzter Hinweis: 3 Künstler zur Wahl → ${POINTS_BY_HINTS[3]} Pkt`}
-          </button>
+              <button
+                onClick={handleGetHint}
+                className="w-full py-4 rounded-2xl border-2 border-white/10 font-black uppercase text-xs tracking-widest hover:bg-white/5 transition-all active:scale-95"
+              >
+                {hintsUsed < 2
+                  ? `Hinweis holen → ${POINTS_BY_HINTS[hintsUsed + 1]} Pkt`
+                  : `Letzter Hinweis: 3 Künstler zur Wahl → ${POINTS_BY_HINTS[3]} Pkt`}
+              </button>
+            </>
+          ) : (
+            <div className="bg-white/5 p-6 rounded-[2rem] border border-white/10 text-center space-y-6">
+              <p className="text-sm font-black uppercase tracking-widest text-[var(--color-accent)] opacity-80">
+                Spezial-Variante
+              </p>
+              <h3 className="text-xl font-bold">Ist das ein Cover oder das Original?</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <button
+                  onClick={() => handleChoiceVariation(true)}
+                  className="py-6 bg-blue-500 rounded-3xl font-black text-white shadow-lg active:scale-95 transition-all"
+                >
+                  COVER 🎭
+                </button>
+                <button
+                  onClick={() => handleChoiceVariation(false)}
+                  className="py-6 bg-purple-500 rounded-3xl font-black text-white shadow-lg active:scale-95 transition-all"
+                >
+                  ORIGINAL 💿
+                </button>
+              </div>
+              <p className="text-[10px] opacity-40 uppercase font-black">+3 Punkte bei richtigem Tipp</p>
+            </div>
+          )}
         </div>
       )}
 

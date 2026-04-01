@@ -25,6 +25,8 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
   const [lyricsReal2, setLyricsReal2] = useState(song.lyrics?.real[2] ?? '');
   const [lyricsFake, setLyricsFake] = useState(song.lyrics?.fake ?? '');
   const [moodInput, setMoodInput] = useState(song.mood.join(', '));
+  const [supportedModesInput, setSupportedModesInput] = useState(song.supportedModes.join(', '));
+  const [isQRCompatible, setIsQRCompatible] = useState(song.isQRCompatible);
 
   function updateHint(index: number, value: string) {
     const newHints = [...form.hints] as [string, string, string, string, string];
@@ -36,7 +38,15 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
     const hasLyrics = lyricsReal0.trim() || lyricsReal1.trim() || lyricsReal2.trim() || lyricsFake.trim();
     const lyrics = hasLyrics ? { real: [lyricsReal0, lyricsReal1, lyricsReal2] as [string, string, string], fake: lyricsFake } : null;
     const mood = moodInput.split(',').map((m) => m.trim()).filter(Boolean);
-    onSave({ ...form, lyrics, mood: mood as any });
+    const supportedModes = supportedModesInput.split(',').map((m) => m.trim()).filter(Boolean);
+    
+    onSave({ 
+      ...form, 
+      lyrics, 
+      mood, 
+      supportedModes, 
+      isQRCompatible 
+    });
   }
 
   return (
@@ -79,6 +89,24 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Input 
+            label="Supported Modes" 
+            value={supportedModesInput} 
+            onChange={setSupportedModesInput} 
+            placeholder="timeline, hint-master, ..." 
+          />
+          <div className="flex flex-col gap-2">
+            <label className="text-[10px] font-black text-gray-400 uppercase tracking-tighter">QR Kompatibel</label>
+            <button 
+              onClick={() => setIsQRCompatible(!isQRCompatible)}
+              className={`py-2 px-4 rounded-xl font-bold text-xs transition-all ${isQRCompatible ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}
+            >
+              {isQRCompatible ? '✅ QR Kompatibel' : '❌ Nicht QR'}
+            </button>
+          </div>
+        </div>
+
         <div className="flex gap-4 pt-4 border-t border-gray-100">
           <button onClick={handleSave} className="flex-1 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg">💾 Speichern</button>
           <button onClick={onCancel} className="flex-1 py-4 bg-gray-100 text-gray-600 font-bold rounded-xl">Abbrechen</button>
@@ -88,7 +116,7 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
   );
 }
 
-function Input({ label, value, onChange, type = "text" }: { label: string, value: any, onChange: (v: string) => void, type?: string }) {
+function Input({ label, value, onChange, type = "text", placeholder }: { label: string, value: string | number, onChange: (v: string) => void, type?: string, placeholder?: string }) {
   return (
     <div className="space-y-1">
       <label className="text-[10px] font-black text-gray-400 uppercase tracking-tighter">{label}</label>
@@ -96,7 +124,8 @@ function Input({ label, value, onChange, type = "text" }: { label: string, value
         type={type} 
         value={value} 
         onChange={e => onChange(e.target.value)}
-        className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500"
+        placeholder={placeholder}
+        className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 bg-white text-gray-900"
       />
     </div>
   );

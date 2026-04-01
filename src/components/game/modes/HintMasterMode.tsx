@@ -79,12 +79,12 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
                 key={`${shownHints}-${isRevealed}`}
                 youtubeLink={song.links.youtube}
                 startSeconds={startSecs}
-                endSeconds={isRevealed ? startSecs + 180 : startSecs + 30}
+                endSeconds={(isRevealed || shownHints === 5) ? startSecs + 180 : startSecs + 30}
                 blurred={!isRevealed}
               />
               {!isRevealed && (
                 <p className="text-[9px] opacity-50 italic text-center">
-                  Spielt 30 Sek. ab Anfang &middot; Restart bei jedem Tipp
+                  {shownHints === 5 ? 'Ebene 5: Audio läuft weiter...' : 'Spielt 30 Sek. ab Anfang · Restart bei jedem Tipp'}
                 </p>
               )}
             </div>

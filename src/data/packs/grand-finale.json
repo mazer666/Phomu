@@ -39,7 +39,16 @@
       "links": {
         "youtube": "H5v3kku4y6Q"
       },
-      "coverUrl": "/covers/finale-harry-asitwas.jpg"
+      "coverUrl": "/covers/finale-harry-asitwas.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-miley-flowers",
@@ -74,7 +83,16 @@
       "links": {
         "youtube": "G7KNmW9a75Y"
       },
-      "coverUrl": "/covers/finale-miley-flowers.jpg"
+      "coverUrl": "/covers/finale-miley-flowers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-taylor-antihero",
@@ -109,7 +127,16 @@
       "links": {
         "youtube": "b1kbLwvqugk"
       },
-      "coverUrl": "/covers/finale-taylor-antihero.jpg"
+      "coverUrl": "/covers/finale-taylor-antihero.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-sza-killbill",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-sza-killbill.jpg"
+      "coverUrl": "/covers/finale-sza-killbill.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-weeknd-blinding",
@@ -177,7 +213,16 @@
       "links": {
         "youtube": "4NRXx6U8ABQ"
       },
-      "coverUrl": "/covers/finale-weeknd-blinding.jpg"
+      "coverUrl": "/covers/finale-weeknd-blinding.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-dualipa-levitating",
@@ -211,7 +256,16 @@
       "links": {
         "youtube": "TUVcZfQe-Kw"
       },
-      "coverUrl": "/covers/finale-dualipa-levitating.jpg"
+      "coverUrl": "/covers/finale-dualipa-levitating.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-olivia-drivers",
@@ -245,7 +299,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-olivia-drivers.jpg"
+      "coverUrl": "/covers/finale-olivia-drivers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-badbunny-titi",
@@ -279,7 +342,16 @@
       "links": {
         "youtube": "Cr8K88UcO0s"
       },
-      "coverUrl": "/covers/finale-badbunny-titi.jpg"
+      "coverUrl": "/covers/finale-badbunny-titi.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-glass-waves",
@@ -313,7 +385,16 @@
       "links": {
         "youtube": "mRD0-GxqHVo"
       },
-      "coverUrl": "/covers/finale-glass-waves.jpg"
+      "coverUrl": "/covers/finale-glass-waves.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-katebush-running",
@@ -348,7 +429,16 @@
       "links": {
         "youtube": "wp43OdtAAkM"
       },
-      "coverUrl": "/covers/finale-katebush-running.jpg"
+      "coverUrl": "/covers/finale-katebush-running.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-fleetwood-dreams",
@@ -383,7 +473,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-fleetwood-dreams.jpg"
+      "coverUrl": "/covers/finale-fleetwood-dreams.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-elton-dua-cold",
@@ -418,7 +517,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/finale-elton-dua-cold.jpg"
+      "coverUrl": "/covers/finale-elton-dua-cold.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-rema-calm",
@@ -453,7 +561,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-rema-calm.jpg"
+      "coverUrl": "/covers/finale-rema-calm.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-sam-kim-unholy",
@@ -487,7 +604,16 @@
       "links": {
         "youtube": "Uq9gPaIzbe8"
       },
-      "coverUrl": "/covers/finale-sam-kim-unholy.jpg"
+      "coverUrl": "/covers/finale-sam-kim-unholy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-doja-sayso",
@@ -521,7 +647,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-doja-sayso.jpg"
+      "coverUrl": "/covers/finale-doja-sayso.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-billie-happier",
@@ -555,7 +690,16 @@
       "links": {
         "youtube": "5GJWxDKyk3A"
       },
-      "coverUrl": "/covers/finale-billie-happier.jpg"
+      "coverUrl": "/covers/finale-billie-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-lilnas-montero",
@@ -589,7 +733,16 @@
       "links": {
         "youtube": "6swm"
       },
-      "coverUrl": "/covers/finale-lilnas-montero.jpg"
+      "coverUrl": "/covers/finale-lilnas-montero.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-silksonic-leave",
@@ -624,7 +777,16 @@
       "links": {
         "youtube": "adLGHcj_fmA"
       },
-      "coverUrl": "/covers/finale-silksonic-leave.jpg"
+      "coverUrl": "/covers/finale-silksonic-leave.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-lizzo-time",
@@ -658,7 +820,16 @@
       "links": {
         "youtube": "IXXxciRUMzE"
       },
-      "coverUrl": "/covers/finale-lizzo-time.jpg"
+      "coverUrl": "/covers/finale-lizzo-time.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-ed-shivers",
@@ -692,7 +863,16 @@
       "links": {
         "youtube": "IlV7Rhv"
       },
-      "coverUrl": "/covers/finale-ed-shivers.jpg"
+      "coverUrl": "/covers/finale-ed-shivers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-adele-easy",
@@ -726,7 +906,16 @@
       "links": {
         "youtube": "U3ASuAgKnpD"
       },
-      "coverUrl": "/covers/finale-adele-easy.jpg"
+      "coverUrl": "/covers/finale-adele-easy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-justin-peaches",
@@ -760,7 +949,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-justin-peaches.jpg"
+      "coverUrl": "/covers/finale-justin-peaches.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-gayle-abcdefu",
@@ -794,7 +992,16 @@
       "links": {
         "youtube": "NaFd8ucHLuo"
       },
-      "coverUrl": "/covers/finale-gayle-abcdefu.jpg"
+      "coverUrl": "/covers/finale-gayle-abcdefu.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-maneskin-beggin",
@@ -828,7 +1035,16 @@
       "links": {
         "youtube": "6sw"
       },
-      "coverUrl": "/covers/finale-maneskin-beggin.jpg"
+      "coverUrl": "/covers/finale-maneskin-beggin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-benson-beautiful",
@@ -862,7 +1078,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-benson-beautiful.jpg"
+      "coverUrl": "/covers/finale-benson-beautiful.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-teddy-lose",
@@ -897,7 +1122,16 @@
       "links": {
         "youtube": "Qh8QwVYOSVU"
       },
-      "coverUrl": "/covers/finale-teddy-lose.jpg"
+      "coverUrl": "/covers/finale-teddy-lose.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-noah-stick",
@@ -932,7 +1166,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-noah-stick.jpg"
+      "coverUrl": "/covers/finale-noah-stick.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-hozier-sweet",
@@ -966,7 +1209,16 @@
       "links": {
         "youtube": "NTpbbQUBbuo"
       },
-      "coverUrl": "/covers/finale-hozier-sweet.jpg"
+      "coverUrl": "/covers/finale-hozier-sweet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-sabrina-espresso",
@@ -1001,7 +1253,16 @@
       "links": {
         "youtube": "1y6smkh6c-0"
       },
-      "coverUrl": "/covers/finale-sabrina-espresso.jpg"
+      "coverUrl": "/covers/finale-sabrina-espresso.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-billie-barbie",
@@ -1036,7 +1297,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-billie-barbie.jpg"
+      "coverUrl": "/covers/finale-billie-barbie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-ryan-ken",
@@ -1071,7 +1341,16 @@
       "links": {
         "youtube": "ru1LC9lW20Q"
       },
-      "coverUrl": "/covers/finale-ryan-ken.jpg"
+      "coverUrl": "/covers/finale-ryan-ken.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-dua-barbie",
@@ -1105,7 +1384,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-dua-barbie.jpg"
+      "coverUrl": "/covers/finale-dua-barbie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-tate-greedy",
@@ -1139,7 +1427,16 @@
       "links": {
         "youtube": "To4SWGZkEPk"
       },
-      "coverUrl": "/covers/finale-tate-greedy.jpg"
+      "coverUrl": "/covers/finale-tate-greedy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-jack-lovin",
@@ -1172,7 +1469,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-jack-lovin.jpg"
+      "coverUrl": "/covers/finale-jack-lovin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-kenya-strangers",
@@ -1206,7 +1512,16 @@
       "links": {
         "youtube": "S2TaAcwC_zI"
       },
-      "coverUrl": "/covers/finale-kenya-strangers.jpg"
+      "coverUrl": "/covers/finale-kenya-strangers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-peggy-nanana",
@@ -1240,7 +1555,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/finale-peggy-nanana.jpg"
+      "coverUrl": "/covers/finale-peggy-nanana.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-calvin-miracle",
@@ -1274,7 +1598,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-calvin-miracle.jpg"
+      "coverUrl": "/covers/finale-calvin-miracle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-raye-prada",
@@ -1308,7 +1641,16 @@
       "links": {
         "youtube": "zFMYL0XQ3lA"
       },
-      "coverUrl": "/covers/finale-raye-prada.jpg"
+      "coverUrl": "/covers/finale-raye-prada.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-tyla-water",
@@ -1342,7 +1684,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-tyla-water.jpg"
+      "coverUrl": "/covers/finale-tyla-water.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-mitski-love",
@@ -1377,7 +1728,16 @@
       "links": {
         "youtube": "vx4kLgnFexo"
       },
-      "coverUrl": "/covers/finale-mitski-love.jpg"
+      "coverUrl": "/covers/finale-mitski-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-arctic-yours",
@@ -1411,7 +1771,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-arctic-yours.jpg"
+      "coverUrl": "/covers/finale-arctic-yours.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-kushner-daylight",
@@ -1445,7 +1814,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-kushner-daylight.jpg"
+      "coverUrl": "/covers/finale-kushner-daylight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-loreen-tattoo",
@@ -1479,7 +1857,16 @@
       "links": {
         "youtube": "b3vJfR81xO0"
       },
-      "coverUrl": "/covers/finale-loreen-tattoo.jpg"
+      "coverUrl": "/covers/finale-loreen-tattoo.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-sanchez-found",
@@ -1513,7 +1900,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-sanchez-found.jpg"
+      "coverUrl": "/covers/finale-sanchez-found.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-jvke-golden",
@@ -1547,7 +1943,16 @@
       "links": {
         "youtube": "PEM0Vs8jf1w"
       },
-      "coverUrl": "/covers/finale-jvke-golden.jpg"
+      "coverUrl": "/covers/finale-jvke-golden.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-tom-love",
@@ -1580,7 +1985,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "gxEPV4kolz0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-eminem-mockingbird",
@@ -1613,7 +2027,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "S9bCLPwzSC0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-sia-unstoppable",
@@ -1646,7 +2069,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "gxEPV4kolz0"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-jungkook-seven",
@@ -1680,7 +2112,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/finale-jungkook-seven.jpg"
+      "coverUrl": "/covers/finale-jungkook-seven.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "finale-taylor-cruel",
@@ -1713,7 +2154,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ic8j13piAhQ"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

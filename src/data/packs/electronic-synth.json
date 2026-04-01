@@ -40,7 +40,16 @@
       "links": {
         "youtube": "GEnx9xS79Lc"
       },
-      "coverUrl": "/covers/synth-kraftwerk-model.jpg"
+      "coverUrl": "/covers/synth-kraftwerk-model.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-depeche-silence",
@@ -75,7 +84,16 @@
       "links": {
         "youtube": "aGSKrC7dGcY"
       },
-      "coverUrl": "/covers/synth-depeche-silence.jpg"
+      "coverUrl": "/covers/synth-depeche-silence.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-neworder-monday",
@@ -110,7 +128,16 @@
       "links": {
         "youtube": "FYH8DsU2WCk"
       },
-      "coverUrl": "/covers/synth-neworder-monday.jpg"
+      "coverUrl": "/covers/synth-neworder-monday.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-petshop-girls",
@@ -144,7 +171,16 @@
       "links": {
         "youtube": "p3j2NYZ8FKs"
       },
-      "coverUrl": "/covers/synth-petshop-girls.jpg"
+      "coverUrl": "/covers/synth-petshop-girls.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-eurythmics-dreams",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "qeMFqkcPYcg"
       },
-      "coverUrl": "/covers/synth-eurythmics-dreams.jpg"
+      "coverUrl": "/covers/synth-eurythmics-dreams.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-softcell-love",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "XZVpR3Pk-r8"
       },
-      "coverUrl": "/covers/synth-softcell-love.jpg"
+      "coverUrl": "/covers/synth-softcell-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-humanleague-me",
@@ -247,7 +301,16 @@
       "links": {
         "youtube": "uPudE8nDog0"
       },
-      "coverUrl": "/covers/synth-humanleague-me.jpg"
+      "coverUrl": "/covers/synth-humanleague-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-tears-rule",
@@ -281,7 +344,16 @@
       "links": {
         "youtube": "aGCtTfUuVeaE"
       },
-      "coverUrl": "/covers/synth-tears-rule.jpg"
+      "coverUrl": "/covers/synth-tears-rule.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-bronski-boy",
@@ -315,7 +387,16 @@
       "links": {
         "youtube": "88sARuFu-tc"
       },
-      "coverUrl": "/covers/synth-bronski-boy.jpg"
+      "coverUrl": "/covers/synth-bronski-boy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-yazoo-dontgo",
@@ -349,7 +430,16 @@
       "links": {
         "youtube": "_sQGwDeambg"
       },
-      "coverUrl": "/covers/synth-yazoo-dontgo.jpg"
+      "coverUrl": "/covers/synth-yazoo-dontgo.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-daft-onetime",
@@ -383,7 +473,16 @@
       "links": {
         "youtube": "FGBhQbmPwH8"
       },
-      "coverUrl": "/covers/disco-daft-onetime.jpg"
+      "coverUrl": "/covers/disco-daft-onetime.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-chem-heyboy",
@@ -417,7 +516,16 @@
       "links": {
         "youtube": "tpKCqp9CALQ"
       },
-      "coverUrl": "/covers/disco-chem-heyboy.jpg"
+      "coverUrl": "/covers/disco-chem-heyboy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-fatboy-praise",
@@ -452,7 +560,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/disco-fatboy-praise.jpg"
+      "coverUrl": "/covers/disco-fatboy-praise.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-under-slippy",
@@ -486,7 +603,16 @@
       "links": {
         "youtube": "mwVdYq9AT0w"
       },
-      "coverUrl": "/covers/disco-under-slippy.jpg"
+      "coverUrl": "/covers/disco-under-slippy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-faithless-insomnia",
@@ -520,7 +646,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/disco-faithless-insomnia.jpg"
+      "coverUrl": "/covers/disco-faithless-insomnia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-prodigy-fire",
@@ -554,7 +689,16 @@
       "links": {
         "youtube": "wmin5WkOuPw"
       },
-      "coverUrl": "/covers/disco-prodigy-fire.jpg"
+      "coverUrl": "/covers/disco-prodigy-fire.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-moby-go",
@@ -588,7 +732,16 @@
       "links": {
         "youtube": "p7T9t"
       },
-      "coverUrl": "/covers/disco-moby-go.jpg"
+      "coverUrl": "/covers/disco-moby-go.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-massive-sympathy",
@@ -622,7 +775,16 @@
       "links": {
         "youtube": "u7K72X4eo_s"
       },
-      "coverUrl": "/covers/disco-massive-sympathy.jpg"
+      "coverUrl": "/covers/disco-massive-sympathy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-chem-galvanize",
@@ -656,7 +818,16 @@
       "links": {
         "youtube": "Xu3FTEmN-eg"
       },
-      "coverUrl": "/covers/disco-chem-galvanize.jpg"
+      "coverUrl": "/covers/disco-chem-galvanize.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-justice-dance",
@@ -690,7 +861,16 @@
       "links": {
         "youtube": "sy1dYFGkPUE"
       },
-      "coverUrl": "/covers/disco-justice-dance.jpg"
+      "coverUrl": "/covers/disco-justice-dance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-kavinsky-nightcall",
@@ -724,7 +904,16 @@
       "links": {
         "youtube": "MV_3D8v97Y"
       },
-      "coverUrl": "/covers/disco-kavinsky-nightcall.jpg"
+      "coverUrl": "/covers/disco-kavinsky-nightcall.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-daft-lucky",
@@ -759,7 +948,16 @@
       "links": {
         "youtube": "CCHdMIEGaaM"
       },
-      "coverUrl": "/covers/disco-daft-lucky.jpg"
+      "coverUrl": "/covers/disco-daft-lucky.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-disclosure-latch",
@@ -793,7 +991,16 @@
       "links": {
         "youtube": "93ASuAgKnpD"
       },
-      "coverUrl": "/covers/disco-disclosure-latch.jpg"
+      "coverUrl": "/covers/disco-disclosure-latch.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-avicii-levels",
@@ -828,7 +1035,16 @@
       "links": {
         "youtube": "_ovdm2yX"
       },
-      "coverUrl": "/covers/disco-avicii-levels.jpg"
+      "coverUrl": "/covers/disco-avicii-levels.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-swedish-child",
@@ -863,7 +1079,16 @@
       "links": {
         "youtube": "1y6smkh6c-0"
       },
-      "coverUrl": "/covers/disco-swedish-child.jpg"
+      "coverUrl": "/covers/disco-swedish-child.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-omd-enola",
@@ -897,7 +1122,16 @@
       "links": {
         "youtube": "d5XJ2GiR6Bo"
       },
-      "coverUrl": "/covers/synth-omd-enola.jpg"
+      "coverUrl": "/covers/synth-omd-enola.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-ultravox-vienna",
@@ -932,7 +1166,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/synth-ultravox-vienna.jpg"
+      "coverUrl": "/covers/synth-ultravox-vienna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-visage-grey",
@@ -967,7 +1210,16 @@
       "links": {
         "youtube": "eZHk4RwIp_g"
       },
-      "coverUrl": "/covers/synth-visage-grey.jpg"
+      "coverUrl": "/covers/synth-visage-grey.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-eury-rain",
@@ -1002,7 +1254,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/synth-eury-rain.jpg"
+      "coverUrl": "/covers/synth-eury-rain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-depeche-jesus",
@@ -1037,7 +1298,16 @@
       "links": {
         "youtube": "u1xrNaTO1bI"
       },
-      "coverUrl": "/covers/synth-depeche-jesus.jpg"
+      "coverUrl": "/covers/synth-depeche-jesus.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-petshop-sin",
@@ -1072,7 +1342,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/synth-petshop-sin.jpg"
+      "coverUrl": "/covers/synth-petshop-sin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-tears-mad",
@@ -1106,7 +1385,16 @@
       "links": {
         "youtube": "u1xrNaTO1bI"
       },
-      "coverUrl": "/covers/synth-tears-mad.jpg"
+      "coverUrl": "/covers/synth-tears-mad.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-talktalk-life",
@@ -1141,7 +1429,16 @@
       "links": {
         "youtube": "cFH5JgyZK1I"
       },
-      "coverUrl": "/covers/synth-talktalk-life.jpg"
+      "coverUrl": "/covers/synth-talktalk-life.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-aha-take",
@@ -1176,7 +1473,16 @@
       "links": {
         "youtube": "djV11Xbc914"
       },
-      "coverUrl": "/covers/synth-aha-take.jpg"
+      "coverUrl": "/covers/synth-aha-take.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-alpha-forever",
@@ -1211,7 +1517,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/synth-alpha-forever.jpg"
+      "coverUrl": "/covers/synth-alpha-forever.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-frankie-relax",
@@ -1245,7 +1560,16 @@
       "links": {
         "youtube": "Yem_iEHiyJ0"
       },
-      "coverUrl": "/covers/synth-frankie-relax.jpg"
+      "coverUrl": "/covers/synth-frankie-relax.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-dead-round",
@@ -1279,7 +1603,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/synth-dead-round.jpg"
+      "coverUrl": "/covers/synth-dead-round.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-rick-never",
@@ -1313,7 +1646,16 @@
       "links": {
         "youtube": "dQw4w9WgXcQ"
       },
-      "coverUrl": "/covers/synth-rick-never.jpg"
+      "coverUrl": "/covers/synth-rick-never.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-kim-kids",
@@ -1347,7 +1689,16 @@
       "links": {
         "youtube": "r_GH66"
       },
-      "coverUrl": "/covers/synth-kim-kids.jpg"
+      "coverUrl": "/covers/synth-kim-kids.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-nena-luft",
@@ -1382,7 +1733,16 @@
       "links": {
         "youtube": "Lur-S"
       },
-      "coverUrl": "/covers/synth-nena-luft.jpg"
+      "coverUrl": "/covers/synth-nena-luft.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "synth-falco-amadeus",
@@ -1416,7 +1776,16 @@
       "links": {
         "youtube": "cVikZ8Oe_gb0"
       },
-      "coverUrl": "/covers/synth-falco-amadeus.jpg"
+      "coverUrl": "/covers/synth-falco-amadeus.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-kygo-firestone",
@@ -1450,7 +1819,16 @@
       "links": {
         "youtube": "9ScvVInX"
       },
-      "coverUrl": "/covers/house-kygo-firestone.jpg"
+      "coverUrl": "/covers/house-kygo-firestone.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-major-leanon",
@@ -1485,7 +1863,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/house-major-leanon.jpg"
+      "coverUrl": "/covers/house-major-leanon.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-chain-closer",
@@ -1519,7 +1906,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/house-chain-closer.jpg"
+      "coverUrl": "/covers/house-chain-closer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-marsh-happier",
@@ -1553,7 +1949,16 @@
       "links": {
         "youtube": "m7Bc3pLyij0"
       },
-      "coverUrl": "/covers/house-marsh-happier.jpg"
+      "coverUrl": "/covers/house-marsh-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-garrix-animals",
@@ -1587,7 +1992,16 @@
       "links": {
         "youtube": "gCYcHz2k5x0"
       },
-      "coverUrl": "/covers/house-garrix-animals.jpg"
+      "coverUrl": "/covers/house-garrix-animals.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-afrojack-control",
@@ -1621,7 +2035,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/house-afrojack-control.jpg"
+      "coverUrl": "/covers/house-afrojack-control.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-guetta-titanium",
@@ -1655,7 +2078,16 @@
       "links": {
         "youtube": "JRfuAAtZ"
       },
-      "coverUrl": "/covers/house-guetta-titanium.jpg"
+      "coverUrl": "/covers/house-guetta-titanium.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "disco-skrillex-scary",
@@ -1690,7 +2122,16 @@
       "links": {
         "youtube": "WSeNSzJ2-Jw"
       },
-      "coverUrl": "/covers/disco-skrillex-scary.jpg"
+      "coverUrl": "/covers/disco-skrillex-scary.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "house-zedd-clarity",
@@ -1724,7 +2165,16 @@
       "links": {
         "youtube": "IsuVMdnF8A0"
       },
-      "coverUrl": "/covers/house-zedd-clarity.jpg"
+      "coverUrl": "/covers/house-zedd-clarity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

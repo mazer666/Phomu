@@ -6,7 +6,8 @@
  */
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/stores/game-store';
 
 interface MusicPlayerProps {
@@ -16,50 +17,40 @@ interface MusicPlayerProps {
   endSeconds?: number;
   /** Blendet Video per Blur aus (Timeline-Modus: Song unbekannt) */
   blurred?: boolean;
+  className?: string;
 }
 
 declare global {
   interface Window {
     onYouTubeIframeAPIReady: () => void;
-    YT: any;
+    YT: {
+      Player: any;
+      PlayerState: {
+        UNSTARTED: number;
+        PLAYING: number;
+        PAUSED: number;
+        BUFFERING: number;
+        CUED: number;
+        ENDED: number;
+      };
+    };
   }
 }
 
-export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred = false }: MusicPlayerProps) {
-  const { preferredPlayer, currentSongSource, skipBrokenSong } = useGameStore();
+/**
+ * Hilfsfunktion zum Extrahieren der YouTube Video-ID
+ */
+function extractYouTubeId(url: string): string | null {
+  if (!url) return null;
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:.*v=|.*\/|.*embed\/|.*vi?\/))([^?&"'>]+)/);
+  return match ? match[1] : url.length === 11 ? url : null;
+}
 
-  const [playerState, setPlayerState] = useState<'loading' | 'playing' | 'error' | 'fallback'>('loading');
-  const [muted, setMuted] = useState(false);
+export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred = false, className = '' }: MusicPlayerProps) {
+  const { preferredPlayer, skipBrokenSong } = useGameStore();
+
+  const [playerState, setPlayerState] = useState<'loading' | 'playing' | 'error' | 'paused'>('loading');
   const [videoRevealed, setVideoRevealed] = useState(false);
-  const swipeStartX = useRef<number | null>(null);
-  const SWIPE_THRESHOLD = 60;
-
-  const handleTouchStart = useCallback((e: React.TouchEvent) => {
-    swipeStartX.current = e.touches[0].clientX;
-  }, []);
-
-  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
-    if (swipeStartX.current === null) return;
-    const dx = e.changedTouches[0].clientX - swipeStartX.current;
-    swipeStartX.current = null;
-    if (Math.abs(dx) >= SWIPE_THRESHOLD) {
-      setVideoRevealed(v => !v);
-    }
-  }, []);
-
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
-    swipeStartX.current = e.clientX;
-  }, []);
-
-  const handleMouseUp = useCallback((e: React.MouseEvent) => {
-    if (swipeStartX.current === null) return;
-    const dx = e.clientX - swipeStartX.current;
-    swipeStartX.current = null;
-    if (Math.abs(dx) >= SWIPE_THRESHOLD) {
-      setVideoRevealed(v => !v);
-    }
-  }, []);
-
   const [activeDomain, setActiveDomain] = useState<'music.youtube.com' | 'www.youtube.com'>(
     preferredPlayer === 'music' ? 'music.youtube.com' : 'www.youtube.com'
   );
@@ -67,81 +58,76 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
   const playerRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const endCheckRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const videoId = extractYouTubeId(youtubeLink);
-
-  // 1. YouTube API Laden
-  useEffect(() => {
-    if (!window.YT) {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      const firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
-    }
-  }, []);
+  const videoId = useMemo(() => extractYouTubeId(youtubeLink), [youtubeLink]);
+  const [key, setKey] = useState(0);
 
   const handleError = useCallback(() => {
-    if (activeDomain === 'music.youtube.com') {
-      console.log('🔄 Fallback to Standard YouTube...');
-      setActiveDomain('www.youtube.com');
-      setPlayerState('fallback');
-    } else {
-      setPlayerState('error');
-      // Auto-Skip for Random Draws after delay
-      if (currentSongSource === 'random') {
-        setTimeout(() => skipBrokenSong(), 3000);
-      }
-    }
-  }, [activeDomain, currentSongSource, skipBrokenSong]);
+    console.warn('❌ MusicPlayer Error detected.');
+    setPlayerState('error');
+    if (endCheckRef.current) clearInterval(endCheckRef.current);
+  }, []);
 
-  // 2. Player Initialisieren / Re-Initialisieren bei Domain-Wechsel
+  const toggleDomain = useCallback(() => {
+    setActiveDomain(prev => prev === 'www.youtube.com' ? 'music.youtube.com' : 'www.youtube.com');
+    setPlayerState('loading');
+    setKey(prev => prev + 1);
+  }, []);
+
   useEffect(() => {
-    if (!videoId) return;
+    if (!videoId || typeof window === 'undefined') return;
+
+    const playerId = `yt-player-${videoId}-${activeDomain.replace(/\./g, '-')}`;
+    
+    const loadApi = () => {
+      if (!window.YT) {
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+      }
+    };
 
     const initPlayer = () => {
-      // Alten Player aufräumen falls vorhanden
-      if (playerRef.current) {
-        try { playerRef.current.destroy(); } catch(e) {}
-      }
-
+      if (!containerRef.current) return;
+      
       playerRef.current = new window.YT.Player(containerRef.current, {
         height: '100%',
         width: '100%',
         videoId: videoId,
-        host: `https://${activeDomain}`,
         playerVars: {
           autoplay: 1,
-          mute: muted ? 1 : 0,
-          start: startSeconds,
+          controls: 0,
           rel: 0,
           modestbranding: 1,
-          origin: window.location.origin
+          start: startSeconds,
+          mute: 0,
+          origin: window.location.origin,
+          host: `https://${activeDomain}`
         },
         events: {
           onReady: (event: any) => {
             setPlayerState('playing');
             event.target.playVideo();
+            
             if (endSeconds) {
               if (endCheckRef.current) clearInterval(endCheckRef.current);
               endCheckRef.current = setInterval(() => {
-                try {
-                  const t = playerRef.current?.getCurrentTime?.();
-                  if (t !== undefined && t >= endSeconds) {
-                    playerRef.current.pauseVideo();
-                    clearInterval(endCheckRef.current!);
-                    endCheckRef.current = null;
-                  }
-                } catch (e) { /* ignore */ }
+                const currentTime = event.target.getCurrentTime();
+                if (currentTime >= endSeconds) {
+                  event.target.pauseVideo();
+                  setPlayerState('paused');
+                  if (endCheckRef.current) { clearInterval(endCheckRef.current); endCheckRef.current = null; }
+                }
               }, 500);
             }
           },
           onError: (event: any) => {
-            console.warn('❌ YouTube Player Error:', event.data, activeDomain);
+            console.warn('❌ YouTube IFrame Error:', event.data);
             handleError();
           },
           onStateChange: (event: any) => {
-            // Wenn der Player auf "Buffer" hängen bleibt (oft bei Restrictions)
-            if (event.data === window.YT.PlayerState.UNSTARTED) {
-              // Timeout für Load-Check
+            if (event.data === (window.YT?.PlayerState?.UNSTARTED ?? -1)) {
+              // Timeout to check if it ever starts
               setTimeout(() => {
                 if (playerState === 'loading') handleError();
               }, 4000);
@@ -151,6 +137,7 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
       });
     };
 
+    loadApi();
     if (window.YT && window.YT.Player) {
       initPlayer();
     } else {
@@ -163,110 +150,115 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
         try { playerRef.current.destroy(); } catch(e) {}
       }
     };
-  }, [videoId, activeDomain, muted, startSeconds, endSeconds, handleError, playerState]); // Re-run when domain changes (fallback)
-
+  }, [videoId, activeDomain, startSeconds, endSeconds, handleError, playerState]);
 
   if (!videoId) {
     return <div className="h-40 flex items-center justify-center opacity-30 border rounded-2xl italic">Kein Video verfügbar</div>;
   }
 
   return (
-    <div className="w-full rounded-2xl overflow-hidden shadow-2xl transition-all border border-white/10">
-      <div className="relative w-full aspect-video bg-black">
-        <div ref={containerRef} className="absolute inset-0 w-full h-full" />
+    <div className={`relative w-full aspect-video rounded-[2rem] overflow-hidden bg-black shadow-2xl transition-all ${className}`}>
+      {/* Target Player */}
+      <div 
+        ref={containerRef} 
+        key={key}
+        className={`w-full h-full transition-all duration-1000 ${videoRevealed ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'}`} 
+      />
 
-        {/* Blur-Overlay (Timeline-Modus) */}
-        {blurred && !videoRevealed && (
-          <div
-            className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 select-none"
-            style={{ backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', background: 'rgba(0,0,0,0.4)' }}
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd}
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
+      {/* Swipe Overlay */}
+      <AnimatePresence>
+        {blurred && !videoRevealed && playerState !== 'error' && (
+          <motion.div 
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-[#0a0a0c]/40 backdrop-blur-[60px]"
           >
-            <span className="text-3xl">🎵</span>
-            <div className="flex items-center gap-2 opacity-60">
-              <span className="text-lg">←</span>
-              <p className="text-[10px] font-black uppercase tracking-widest">Swipe zum Enthüllen</p>
-              <span className="text-lg">→</span>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              {playerState === 'loading' ? (
+                <motion.div 
+                  animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.6, 0.3] }}
+                  transition={{ repeat: Infinity, duration: 2 }}
+                  className="w-32 h-32 rounded-full border-2 border-white/10 flex items-center justify-center"
+                >
+                   <span className="text-4xl animate-pulse">💿</span>
+                </motion.div>
+              ) : (
+                 <div className="w-32 h-32 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                    <span className="text-4xl">{playerState === 'playing' ? '🎵' : '⏸️'}</span>
+                 </div>
+              )}
             </div>
-          </div>
-        )}
-        {blurred && videoRevealed && (
-          <div
-            className="absolute inset-0 z-20 flex flex-col items-center justify-end pb-3 select-none"
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd}
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-          >
-            <p className="text-[9px] font-black uppercase tracking-widest opacity-40 bg-black/40 px-3 py-1 rounded-full">
-              Swipe zum Verbergen
-            </p>
-          </div>
-        )}
 
-        {/* Overlays / States */}
-        {playerState === 'loading' && (
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center gap-4 z-10">
-            <div className="w-12 h-12 rounded-full border-4 border-white/20 border-t-[var(--color-accent)] animate-spin" />
-            <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Lade Musik...</p>
-          </div>
-        )}
+            <motion.div 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              className="mt-40 text-center space-y-2 select-none"
+            >
+              <h3 className="text-xl font-black uppercase tracking-widest text-white/80">Musik läuft</h3>
+              <p className="text-[10px] font-black text-white/30 uppercase tracking-[0.2em]">Swipe zum Aufdecken</p>
+            </motion.div>
 
+            {/* Premium Drag Handle */}
+            <motion.div
+              drag="x"
+              dragConstraints={{ left: 0, right: 300 }}
+              dragElastic={0.05}
+              onDragEnd={(_, info) => {
+                if (info.offset.x > 150) setVideoRevealed(true);
+              }}
+              className="absolute left-10 bottom-12 h-16 w-16 bg-white rounded-full flex items-center justify-center shadow-2xl cursor-grab active:cursor-grabbing group hover:bg-blue-400 transition-colors"
+            >
+              <span className="text-xl text-black">➔</span>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Error / Region Lock Overlay */}
+      <AnimatePresence>
         {playerState === 'error' && (
-          <div className="absolute inset-0 bg-red-500/20 backdrop-blur-xl flex flex-col items-center justify-center gap-4 z-20 text-center px-8">
-            <span className="text-4xl">⚠️</span>
-            <h3 className="font-black uppercase text-sm">Musik nicht verfügbar</h3>
-            <p className="text-[10px] opacity-70 leading-relaxed max-w-xs">
-              Dieses Video ist in deiner Region gesperrt oder wurde entfernt.
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-[#121215] p-8 text-center"
+          >
+            <div className="w-20 h-20 bg-red-500/20 rounded-3xl flex items-center justify-center mb-6 border border-red-500/30">
+              <span className="text-4xl">⚠️</span>
+            </div>
+            
+            <h2 className="text-2xl font-black uppercase tracking-tight mb-2 text-red-500">Video gesperrt</h2>
+            <p className="text-sm text-white/40 max-w-sm mb-8 leading-relaxed">
+              Dieses Video kann in deiner Region ggf. nicht abgespielt werden. Versuche den alternativen Player oder überspringe den Song.
             </p>
-            {currentSongSource === 'qr' ? (
-              <button 
-                onClick={() => skipBrokenSong()}
-                className="mt-4 px-6 py-2 bg-white text-black rounded-lg font-black text-[10px] hover:scale-105 transition-all"
+
+            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+              <button
+                onClick={toggleDomain}
+                className="flex-1 bg-white text-black h-14 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl"
               >
-                KARTE ÜBERSPRINGEN
+                Alternative Player ({activeDomain === 'www.youtube.com' ? 'Music' : 'Standard'})
               </button>
-            ) : (
-              <p className="text-[9px] font-black text-white/40 uppercase tracking-widest mt-4 animate-pulse">
-                Draw wird automatisch wiederholt...
-              </p>
-            )}
-          </div>
+              
+              <button
+                onClick={() => skipBrokenSong()}
+                className="flex-1 bg-red-500/10 border border-red-500/20 text-red-500 h-14 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-red-500/20 transition-all"
+              >
+                Song überspringen
+              </button>
+            </div>
+          </motion.div>
         )}
-      </div>
+      </AnimatePresence>
 
-      {/* Controls */}
-      <footer className="bg-[var(--color-bg-card)] px-5 py-4 flex items-center justify-between">
-        <div className="flex flex-col">
-          <span className="text-[9px] font-black opacity-30 uppercase tracking-widest">Player</span>
-          <span className={`text-[10px] font-black ${activeDomain === 'music.youtube.com' ? 'text-green-400' : 'text-orange-400'}`}>
-            {activeDomain === 'music.youtube.com' ? 'MUSIC MODE (YT)' : 'STANDARD MODE (YT)'}
-          </span>
-        </div>
-
-        <div className="flex gap-2">
-           <button 
-             onClick={() => setMuted(!muted)}
-             className={`px-4 py-2 rounded-xl text-[10px] font-black transition-all ${muted ? 'bg-white/10 opacity-40' : 'bg-green-500 text-white'}`}
-           >
-             {muted ? '🔈 MUTED' : '🔊 LIVE'}
-           </button>
-        </div>
-      </footer>
+      {/* Manual Hide Toggle (when revealed) */}
+      {videoRevealed && blurred && (
+        <button 
+          onClick={() => setVideoRevealed(false)}
+          className="absolute right-6 top-6 z-40 bg-black/40 hover:bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest border border-white/10 transition-all"
+        >
+          Verbergen
+        </button>
+      )}
     </div>
   );
-}
-
-function extractYouTubeId(raw: string): string | null {
-  if (!raw || raw.startsWith('TODO')) return null;
-  if (/^[a-zA-Z0-9_-]{11}$/.test(raw)) return raw;
-  try {
-    const url = new URL(raw.startsWith('http') ? raw : `https://${raw}`);
-    if (url.hostname.includes('youtube.com')) return url.searchParams.get('v');
-    if (url.hostname === 'youtu.be') return url.pathname.slice(1).split('/')[0];
-  } catch {}
-  return null;
 }

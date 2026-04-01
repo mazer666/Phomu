@@ -38,7 +38,16 @@
       "links": {
         "youtube": "LOZuxwVk7TU"
       },
-      "coverUrl": "/covers/2000s-britney-toxic.jpg"
+      "coverUrl": "/covers/2000s-britney-toxic.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-timberlake-cry-me-river",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "DksSPZTZES0"
       },
-      "coverUrl": "/covers/2000s-timberlake-cry-me-river.jpg"
+      "coverUrl": "/covers/2000s-timberlake-cry-me-river.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-rihanna-umbrella",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "CvBfHAsWh0w"
       },
-      "coverUrl": "/covers/2000s-rihanna-umbrella.jpg"
+      "coverUrl": "/covers/2000s-rihanna-umbrella.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-beyonce-crazy-in-love",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "ViwtNLUqkMY"
       },
-      "coverUrl": "/covers/2000s-beyonce-crazy-in-love.jpg"
+      "coverUrl": "/covers/2000s-beyonce-crazy-in-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-shakira-whenever",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "weRHyjj34ZE"
       },
-      "coverUrl": "/covers/2000s-shakira-whenever.jpg"
+      "coverUrl": "/covers/2000s-shakira-whenever.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-lady-gaga-poker-face",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "bESGLojNYSo"
       },
-      "coverUrl": "/covers/2000s-lady-gaga-poker-face.jpg"
+      "coverUrl": "/covers/2000s-lady-gaga-poker-face.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-bep-feeling",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "uSD4vsh1zDA"
       },
-      "coverUrl": "/covers/2000s-bep-feeling.jpg"
+      "coverUrl": "/covers/2000s-bep-feeling.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-nelly-dilemma",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "8WYHDfJDPDc"
       },
-      "coverUrl": "/covers/2000s-nelly-dilemma.jpg"
+      "coverUrl": "/covers/2000s-nelly-dilemma.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-alicia-keys-fallin",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "Urdlvw0SSEc"
       },
-      "coverUrl": "/covers/2000s-alicia-keys-fallin.jpg"
+      "coverUrl": "/covers/2000s-alicia-keys-fallin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "2000s-coldplay-yellow",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "yKNxeF4KMsY"
       },
-      "coverUrl": "/covers/2000s-coldplay-yellow.jpg"
+      "coverUrl": "/covers/2000s-coldplay-yellow.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

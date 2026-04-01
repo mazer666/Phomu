@@ -12,9 +12,11 @@
  *  - Nach Pack und Vollständigkeit filtern
  */
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
+import Image from 'next/image';
 import type { PhomuSong } from '@/types/song';
 import globalHitsRaw from '@/data/packs/global-hits.json';
+import { SongEditor } from '@/components/admin/SongEditor';
 
 // ─── Typen ────────────────────────────────────────────────────────────────────
 
@@ -47,6 +49,8 @@ const EMPTY_SONG: AdminSong = {
   lyrics: null,
   isOneHitWonder: false,
   links: { youtube: '' },
+  supportedModes: ['timeline', 'hint-master', 'vibe-check', 'cover-confusion', 'survivor'],
+  isQRCompatible: true,
 };
 
 // ─── Hilfsfunktionen ─────────────────────────────────────────────────────────
@@ -104,7 +108,7 @@ function loadSongsFromStorage(): AdminSong[] {
     // localStorage nicht verfügbar oder beschädigt → Fallback auf JSON
   }
   // Typkonvertierung: JSON hat lyrics: null, was unser Typ erlaubt
-  return globalHitsRaw.songs as unknown as AdminSong[];
+  return (globalHitsRaw.songs as unknown as AdminSong[]) || [];
 }
 
 /** Speichert Songs in localStorage */
@@ -177,405 +181,6 @@ function SongRow({
     </tr>
   );
 }
-
-// ─── Haupt-Bearbeitungsformular ───────────────────────────────────────────────
-
-function SongEditor({
-  song,
-  onSave,
-  onCancel,
-}: {
-  song: AdminSong;
-  onSave: (updated: AdminSong) => void;
-  onCancel: () => void;
-}) {
-  // Lokaler Zustand für alle Felder
-  const [form, setForm] = useState<AdminSong>({ ...song });
-
-  // Lyrics werden als Strings im Formular bearbeitet
-  const [lyricsReal0, setLyricsReal0] = useState(song.lyrics?.real[0] ?? '');
-  const [lyricsReal1, setLyricsReal1] = useState(song.lyrics?.real[1] ?? '');
-  const [lyricsReal2, setLyricsReal2] = useState(song.lyrics?.real[2] ?? '');
-  const [lyricsFake, setLyricsFake] = useState(song.lyrics?.fake ?? '');
-
-  // Mood als kommagetrennte Eingabe
-  const [moodInput, setMoodInput] = useState(song.mood.join(', '));
-  const [hintEvidenceInput, setHintEvidenceInput] = useState<[string, string, string, string, string]>(song.hintEvidence ?? ['', '', '', '', '']);
-
-  // Cover Management Zustand
-  const [isSearchingCover, setIsSearchingCover] = useState(false);
-  const [coverResults, setCoverResults] = useState<any[]>([]);
-  const [isCoverLoading, setIsCoverLoading] = useState(false);
-  const [currentCover, setCurrentCover] = useState(song.coverUrl || '');
-
-  /** Hint-Felder updaten */
-  function updateHint(index: number, value: string) {
-    const newHints = [...form.hints] as [string, string, string, string, string];
-    newHints[index] = value;
-    setForm((prev) => ({ ...prev, hints: newHints }));
-  }
-
-  /** Speichern: Formular-Daten zusammenbauen und weitergeben */
-  function handleSave() {
-    // Lyrics: null wenn alle Felder leer, sonst Objekt
-    const hasLyrics =
-      lyricsReal0.trim() || lyricsReal1.trim() || lyricsReal2.trim() || lyricsFake.trim();
-
-    const lyrics: AdminSong['lyrics'] = hasLyrics
-      ? {
-          real: [lyricsReal0, lyricsReal1, lyricsReal2],
-          fake: lyricsFake,
-        }
-      : null;
-
-    // Mood: kommagetrennte Eingabe aufsplitten
-    const mood = moodInput
-      .split(',')
-      .map((m) => m.trim())
-      .filter(Boolean);
-
-    onSave({ ...form, lyrics, mood, hintEvidence: hintEvidenceInput, coverUrl: currentCover });
-  }
-
-  /** Cover suchen via API Proxy */
-  async function handleSearchCover() {
-    setIsCoverLoading(true);
-    setIsSearchingCover(true);
-    try {
-      const res = await fetch(`/api/admin/covers/search?artist=${encodeURIComponent(form.artist)}&title=${encodeURIComponent(form.title)}`);
-      const data = await res.json();
-      if (data.results) {
-        setCoverResults(data.results);
-      }
-    } catch (err) {
-      alert('Fehler bei der Cover-Suche');
-    } finally {
-      setIsCoverLoading(false);
-    }
-  }
-
-  /** Cover auswählen und permanent speichern */
-  async function handleSelectCover(url: string) {
-    if (!confirm('Dieses Cover als offiziell speichern und in die Pack-JSON schreiben?')) return;
-    
-    setIsCoverLoading(true);
-    try {
-      const res = await fetch('/api/admin/covers/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ songId: form.id, imageUrl: url }),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setCurrentCover(data.coverUrl);
-        setForm(p => ({ ...p, coverUrl: data.coverUrl }));
-        setIsSearchingCover(false);
-      } else {
-        alert('Fehler beim Speichern: ' + data.error);
-      }
-    } catch (err) {
-      alert('Systemfehler beim Speichern');
-    } finally {
-      setIsCoverLoading(false);
-    }
-  }
-
-  // Eingabefeld-Hilfsfunktion
-  function field(
-    label: string,
-    value: string | number,
-    onChange: (v: string) => void,
-    opts?: { placeholder?: string; type?: string; required?: boolean }
-  ) {
-    return (
-      <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-          {label}
-          {opts?.required && <span className="text-red-500 ml-1">*</span>}
-        </label>
-        <input
-          type={opts?.type ?? 'text'}
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          placeholder={opts?.placeholder}
-          className="border border-gray-300 rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-      </div>
-    );
-  }
-
-  return (
-    <div className="bg-white border border-gray-200 rounded-xl p-5 space-y-5">
-      <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold text-gray-800">
-          ✏️ Song bearbeiten
-        </h2>
-        <button
-          onClick={onCancel}
-          className="text-sm text-gray-500 hover:text-gray-800"
-        >
-          ✕ Schließen
-        </button>
-      </div>
-
-      {/* Cover Sektion */}
-      <div className="flex gap-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
-        <div className="w-24 h-24 bg-gray-200 rounded-md overflow-hidden flex-shrink-0 border border-gray-300">
-          {currentCover ? (
-            <img src={currentCover} alt="Cover" className="w-full h-full object-cover" />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs text-center p-1">Kein Cover</div>
-          )}
-        </div>
-        <div className="flex-1 space-y-2">
-          <p className="text-xs font-bold text-gray-500 uppercase">Cover Art (500x500)</p>
-          <div className="flex gap-2">
-            <button 
-              onClick={handleSearchCover}
-              disabled={isCoverLoading}
-              className="px-3 py-1.5 bg-white border border-gray-300 rounded text-xs font-semibold hover:bg-gray-50 disabled:opacity-50"
-            >
-              🔍 Cover suchen
-            </button>
-            <input 
-              type="text" 
-              value={currentCover} 
-              onChange={(e) => setCurrentCover(e.target.value)}
-              placeholder="/covers/song-id.jpg"
-              className="flex-1 text-xs border border-gray-300 rounded px-2 py-1"
-            />
-          </div>
-          <p className="text-[10px] text-gray-400">Das Bild wird lokal unter <code>public/covers/</code> gespeichert.</p>
-        </div>
-      </div>
-
-      {/* Cover Suchergebnisse */}
-      {isSearchingCover && (
-        <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 space-y-3">
-          <div className="flex justify-between items-center">
-            <h3 className="text-xs font-bold text-blue-800 uppercase">Suchergebnisse</h3>
-            <button onClick={() => setIsSearchingCover(false)} className="text-xs text-blue-600 hover:underline">Ausblenden</button>
-          </div>
-          {isCoverLoading && <p className="text-xs text-center py-4">Suche läuft...</p>}
-          {!isCoverLoading && coverResults.length === 0 && <p className="text-xs text-center py-4">Keine Ergebnisse gefunden.</p>}
-          <div className="grid grid-cols-4 gap-2">
-            {coverResults.map((res: any) => (
-              <div 
-                key={res.id} 
-                onClick={() => handleSelectCover(res.url)}
-                className="group relative cursor-pointer aspect-square bg-white rounded border border-gray-200 overflow-hidden hover:border-blue-500 transition-all"
-              >
-                <img src={res.thumbnail} alt="Result" className="w-full h-full object-cover" title={`${res.source}: ${res.album}`} />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                  <span className="text-[10px] text-white font-bold">Wählen</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Basis-Felder */}
-      <div className="grid grid-cols-2 gap-3">
-        {field('ID', form.id, (v) => setForm((p) => ({ ...p, id: v })), {
-          placeholder: 'z.B. beatles-hey-jude-1968',
-          required: true,
-        })}
-        {field('Titel', form.title, (v) => setForm((p) => ({ ...p, title: v })), {
-          required: true,
-        })}
-        {field('Künstler', form.artist, (v) => setForm((p) => ({ ...p, artist: v })), {
-          required: true,
-        })}
-        {field('Jahr', form.year, (v) => setForm((p) => ({ ...p, year: parseInt(v) || p.year })), {
-          type: 'number',
-          required: true,
-        })}
-        {field('Land (ISO)', form.country, (v) =>
-          setForm((p) => ({ ...p, country: v.toUpperCase() })), {
-          placeholder: 'z.B. DE, US, GB',
-          required: true,
-        })}
-        {field('Genre', form.genre, (v) => setForm((p) => ({ ...p, genre: v })), {
-          placeholder: 'z.B. Pop, Rock, R&B',
-          required: true,
-        })}
-      </div>
-
-      {/* Difficulty und OneHitWonder */}
-      <div className="grid grid-cols-2 gap-3">
-        <div className="flex flex-col gap-1">
-          <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-            Schwierigkeit <span className="text-red-500">*</span>
-          </label>
-          <select
-            value={form.difficulty}
-            onChange={(e) =>
-              setForm((p) => ({
-                ...p,
-                difficulty: e.target.value as 'easy' | 'medium' | 'hard',
-              }))
-            }
-            className="border border-gray-300 rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-          >
-            <option value="easy">easy – leicht erkennbar</option>
-            <option value="medium">medium – bekannt aber nicht trivial</option>
-            <option value="hard">hard – eher für Musikfans</option>
-          </select>
-        </div>
-
-        <div className="flex flex-col gap-1">
-          <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-            One-Hit-Wonder?
-          </label>
-          <select
-            value={form.isOneHitWonder ? 'true' : 'false'}
-            onChange={(e) =>
-              setForm((p) => ({ ...p, isOneHitWonder: e.target.value === 'true' }))
-            }
-            className="border border-gray-300 rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-          >
-            <option value="false">Nein – hatte mehrere Hits</option>
-            <option value="true">Ja – hauptsächlich dieser eine Hit</option>
-          </select>
-        </div>
-      </div>
-
-      {/* Mood */}
-      {field(
-        'Stimmungen (Mood)',
-        moodInput,
-        setMoodInput,
-        { placeholder: 'z.B. Dance Floor, Heartbreak, Road Trip' }
-      )}
-      <p className="text-xs text-gray-400 -mt-4">
-        Mehrere Stimmungen mit Komma trennen.
-      </p>
-
-      {/* Pack */}
-      {field('Pack', form.pack, (v) => setForm((p) => ({ ...p, pack: v })), {
-        required: true,
-      })}
-
-      {/* YouTube-Link */}
-      <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-          YouTube <span className="text-red-500">*</span>
-        </label>
-        <input
-          type="text"
-          value={form.links.youtube}
-          onChange={(e) =>
-            setForm((p) => ({ ...p, links: { ...p.links, youtube: e.target.value } }))
-          }
-          placeholder="11-stellige Video-ID, z.B. dQw4w9WgXcQ"
-          className="border border-gray-300 rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-        {form.links.youtube && !form.links.youtube.startsWith('TODO:') && (
-          <a
-            href={`https://www.youtube.com/watch?v=${form.links.youtube}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-blue-500 hover:underline"
-          >
-            ▶ YouTube öffnen
-          </a>
-        )}
-      </div>
-
-      {/* Hints */}
-      <div className="space-y-2">
-        <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide block">
-          Hints (5 Stück, von schwierig → einfach) <span className="text-red-500">*</span>
-        </label>
-        <p className="text-xs text-gray-400">
-          Hint 1 = 5 Punkte (schwierig/historisch) · Hint 5 = 1 Punkt (fast zu einfach)
-        </p>
-        {form.hints.map((hint, i) => (
-          <div key={i} className="flex gap-2 items-start">
-            <span className="text-xs font-bold text-gray-400 mt-2 w-6 shrink-0">
-              {i + 1}
-            </span>
-            <div className="flex-1 space-y-1">
-              <textarea
-                value={hint}
-                onChange={(e) => updateHint(i, e.target.value)}
-                placeholder={`Hint ${i + 1}: ${i === 0 ? 'Historischer/obskurer Fakt' : i === 4 ? 'Fast zu einfach' : 'Musiktrivia'}`}
-                rows={2}
-                className="w-full border border-gray-300 rounded px-2 py-1.5 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-              <input
-                type="url"
-                value={hintEvidenceInput[i]}
-                onChange={(e) => {
-                  const next = [...hintEvidenceInput] as [string, string, string, string, string];
-                  next[i] = e.target.value;
-                  setHintEvidenceInput(next);
-                }}
-                placeholder="Evidenz-URL für diesen Hint (https://...)"
-                className="w-full border border-gray-200 rounded px-2 py-1 text-xs"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Lyrics */}
-      <div className="space-y-2">
-        <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide block">
-          Lyrics (Lyrics-Labyrinth-Modus)
-        </label>
-        <p className="text-xs text-gray-400">
-          3 echte Zeilen aus dem Song + 1 erfundene Zeile (die KI-gefälschte). Leer lassen = später eintragen.
-        </p>
-        <div className="bg-green-50 rounded p-3 space-y-2">
-          <p className="text-xs font-semibold text-green-700">Echte Zeilen (3 Stück)</p>
-          {[
-            [lyricsReal0, setLyricsReal0],
-            [lyricsReal1, setLyricsReal1],
-            [lyricsReal2, setLyricsReal2],
-          ].map(([val, setter], i) => (
-            <input
-              key={i}
-              type="text"
-              value={val as string}
-              onChange={(e) => (setter as React.Dispatch<React.SetStateAction<string>>)(e.target.value)}
-              placeholder={`Echte Zeile ${i + 1}`}
-              className="w-full border border-green-200 bg-white rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
-          ))}
-        </div>
-        <div className="bg-red-50 rounded p-3">
-          <p className="text-xs font-semibold text-red-700 mb-2">Gefälschte Zeile (1 Stück)</p>
-          <input
-            type="text"
-            value={lyricsFake}
-            onChange={(e) => setLyricsFake(e.target.value)}
-            placeholder="Erfundene Zeile, die plausibel klingt aber falsch ist"
-            className="w-full border border-red-200 bg-white rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
-          />
-        </div>
-      </div>
-
-      {/* Aktions-Buttons */}
-      <div className="flex gap-3 pt-2">
-        <button
-          onClick={handleSave}
-          className="flex-1 bg-blue-600 text-white rounded-lg py-2 text-sm font-semibold hover:bg-blue-700 transition-colors"
-        >
-          💾 Speichern
-        </button>
-        <button
-          onClick={onCancel}
-          className="px-4 border border-gray-300 rounded-lg py-2 text-sm text-gray-600 hover:bg-gray-50 transition-colors"
-        >
-          Abbrechen
-        </button>
-      </div>
-    </div>
-  );
-}
-
 // ─── Haupt-Seite ───────────────────────────────────────────────────────────────
 
 export default function AdminSongsPage() {
@@ -805,24 +410,14 @@ export default function AdminSongsPage() {
             </div>
           </div>
 
-          {/* Rechte Spalte: Bearbeitungsformular */}
           <div className="w-[480px] shrink-0">
-            {selectedSong ? (
-              <SongEditor
-                key={selectedSong.id}
-                song={selectedSong}
-                onSave={handleSave}
-                onCancel={() => setSelectedId(null)}
-              />
-            ) : (
-              <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
-                <p className="text-4xl mb-3">🎵</p>
-                <p className="font-medium">Song aus der Liste auswählen</p>
-                <p className="text-sm mt-1">
-                  Klicke auf einen Song links, um ihn zu bearbeiten.
-                </p>
-              </div>
-            )}
+            <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
+              <p className="text-4xl mb-3">🎵</p>
+              <p className="font-medium">Admin-Modus im Browser</p>
+              <p className="text-sm mt-1">
+                Die Bearbeitung erfolgt nun direkt über den Song-Browser.
+              </p>
+            </div>
           </div>
         </div>
       </div>

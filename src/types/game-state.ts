@@ -32,6 +32,8 @@ export type RoundPhase =
   | 'reveal'      // Answer revealed, music playing
   | 'scoring';    // Points being awarded, next turn loading
 
+export type GameEndingCondition = 'points' | 'rounds' | 'time';
+
 /**
  * Configuration set before the game starts.
  * Created in the lobby and locked in when the game begins.
@@ -49,7 +51,15 @@ export interface GameConfig {
   /** How the game is played (one device or many) */
   deviceMode: DeviceMode;
 
-  /** Score needed to win — e.g. 10 points */
+  /** Main condition that triggers the end of the game */
+  endingCondition: GameEndingCondition;
+
+  /** Target value for the ending condition (points, total rounds, or minutes) */
+  targetPoints: number;
+  targetRounds: number;
+  targetTimeMinutes: number;
+
+  /** Score needed to win — e.g. 10 points (Legacy/Alias for targetPoints) */
   winCondition: number;
 
   /** Maximum seconds per turn — null means no limit */
@@ -58,7 +68,7 @@ export interface GameConfig {
   /** Song difficulty filter */
   difficulty: Difficulty | 'all';
 
-  /** Standard-Rundenanzahl (Produktanforderung: mindestens 10) */
+  /** Standard-Rundenanzahl (Produktanforderung: mindestens 10) (Legacy/Alias for targetRounds) */
   roundsToPlay: number;
 
   /** Maximale Punkte im Timeline-Modus */
@@ -90,6 +100,9 @@ export interface GameConfig {
 
   /** Whether chips/betting mechanic is active */
   chipsEnabled: boolean;
+
+  /** Whether to play only songs that have a physical QR card */
+  onlyQRCompatible: boolean;
 }
 
 /**
@@ -184,4 +197,7 @@ export interface GameState {
 
   /** Jahreszahlen auf der gemeinsamen Timeline (wächst mit richtigen Antworten) */
   timelineYears: number[];
+
+  /** Timestamp when the game started (for time-based ending condition) */
+  gameStartTime: number | null;
 }

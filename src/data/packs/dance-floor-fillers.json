@@ -38,7 +38,16 @@
       "links": {
         "youtube": "KlyXNRrsk4A"
       },
-      "coverUrl": "/covers/dance-snap-rhythm-is-a-dancer.jpg"
+      "coverUrl": "/covers/dance-snap-rhythm-is-a-dancer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-dr-alban-its-my-life",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "oW0VovnyjPY"
       },
-      "coverUrl": "/covers/dance-dr-alban-its-my-life.jpg"
+      "coverUrl": "/covers/dance-dr-alban-its-my-life.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-haddaway-what-is-love",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "HEXWRTEbj1I"
       },
-      "coverUrl": "/covers/dance-haddaway-what-is-love.jpg"
+      "coverUrl": "/covers/dance-haddaway-what-is-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-culture-beat-mr-vain",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "ZMtf_ouMTHw"
       },
-      "coverUrl": "/covers/dance-culture-beat-mr-vain.jpg"
+      "coverUrl": "/covers/dance-culture-beat-mr-vain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-corona-rhythm-of-the-night",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "OnT58cIJSpw"
       },
-      "coverUrl": "/covers/dance-corona-rhythm-of-the-night.jpg"
+      "coverUrl": "/covers/dance-corona-rhythm-of-the-night.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-la-bouche-be-my-lover",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "ViP87WipSm0"
       },
-      "coverUrl": "/covers/dance-la-bouche-be-my-lover.jpg"
+      "coverUrl": "/covers/dance-la-bouche-be-my-lover.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-scatman-john-scatman",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "Hy8kmNEo1i8"
       },
-      "coverUrl": "/covers/dance-scatman-john-scatman.jpg"
+      "coverUrl": "/covers/dance-scatman-john-scatman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-gala-freed-from-desire",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "p3l7fgvrEKM"
       },
-      "coverUrl": "/covers/dance-gala-freed-from-desire.jpg"
+      "coverUrl": "/covers/dance-gala-freed-from-desire.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-spice-girls-wannabe",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "gJLIiF15wjQ"
       },
-      "coverUrl": "/covers/dance-spice-girls-wannabe.jpg"
+      "coverUrl": "/covers/dance-spice-girls-wannabe.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-backstreet-boys-everybody",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "6M6samPEMpM"
       },
-      "coverUrl": "/covers/dance-backstreet-boys-everybody.jpg"
+      "coverUrl": "/covers/dance-backstreet-boys-everybody.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-eiffel-65-blue",
@@ -388,7 +478,16 @@
       "links": {
         "youtube": "68ugkg9RePc"
       },
-      "coverUrl": "/covers/dance-eiffel-65-blue.jpg"
+      "coverUrl": "/covers/dance-eiffel-65-blue.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-vengaboys-boom-boom",
@@ -423,7 +522,16 @@
       "links": {
         "youtube": "gD8UfYKZ9qk"
       },
-      "coverUrl": "/covers/dance-vengaboys-boom-boom.jpg"
+      "coverUrl": "/covers/dance-vengaboys-boom-boom.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-alice-deejay-better-off-alone",
@@ -458,7 +566,16 @@
       "links": {
         "youtube": "Lgs9QUtWc3M"
       },
-      "coverUrl": "/covers/dance-alice-deejay-better-off-alone.jpg"
+      "coverUrl": "/covers/dance-alice-deejay-better-off-alone.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-darude-sandstorm",
@@ -486,7 +603,15 @@
       "links": {
         "youtube": "y6120QOlsfU"
       },
-      "coverUrl": "/covers/dance-darude-sandstorm.jpg"
+      "coverUrl": "/covers/dance-darude-sandstorm.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-faithless-insomnia",
@@ -521,7 +646,16 @@
       "links": {
         "youtube": "P8JEm4d6Wu4"
       },
-      "coverUrl": "/covers/dance-faithless-insomnia.jpg"
+      "coverUrl": "/covers/dance-faithless-insomnia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-prodigy-firestarter",
@@ -556,7 +690,16 @@
       "links": {
         "youtube": "wmin5WkOuPw"
       },
-      "coverUrl": "/covers/dance-prodigy-firestarter.jpg"
+      "coverUrl": "/covers/dance-prodigy-firestarter.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-chemical-bros-hey-boy-girl",
@@ -591,7 +734,16 @@
       "links": {
         "youtube": "tpKCqp9CALQ"
       },
-      "coverUrl": "/covers/dance-chemical-bros-hey-boy-girl.jpg"
+      "coverUrl": "/covers/dance-chemical-bros-hey-boy-girl.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-fatboy-slim-rockafeller",
@@ -626,7 +778,16 @@
       "links": {
         "youtube": "nm6DO_7px1I"
       },
-      "coverUrl": "/covers/dance-fatboy-slim-rockafeller.jpg"
+      "coverUrl": "/covers/dance-fatboy-slim-rockafeller.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-daft-punk-one-more-time",
@@ -661,7 +822,16 @@
       "links": {
         "youtube": "FGBhQbmPwH8"
       },
-      "coverUrl": "/covers/dance-daft-punk-one-more-time.jpg"
+      "coverUrl": "/covers/dance-daft-punk-one-more-time.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-modjo-lady",
@@ -696,7 +866,16 @@
       "links": {
         "youtube": "S5O9O5S9S"
       },
-      "coverUrl": "/covers/dance-modjo-lady.jpg"
+      "coverUrl": "/covers/dance-modjo-lady.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-madonna-vogue",
@@ -731,7 +910,16 @@
       "links": {
         "youtube": "GuJQSAiODqI"
       },
-      "coverUrl": "/covers/dance-madonna-vogue.jpg"
+      "coverUrl": "/covers/dance-madonna-vogue.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-mj-billie-jean",
@@ -766,7 +954,16 @@
       "links": {
         "youtube": "Zi_XLOBDo_Y"
       },
-      "coverUrl": "/covers/dance-mj-billie-jean.jpg"
+      "coverUrl": "/covers/dance-mj-billie-jean.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-daft-punk-one-more",
@@ -801,7 +998,16 @@
       "links": {
         "youtube": "FGBhQbmPwH8"
       },
-      "coverUrl": "/covers/dance-daft-punk-one-more.jpg"
+      "coverUrl": "/covers/dance-daft-punk-one-more.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-lady-gaga-bad-romance",
@@ -836,7 +1042,16 @@
       "links": {
         "youtube": "qrO4YZeyl0I"
       },
-      "coverUrl": "/covers/dance-lady-gaga-bad-romance.jpg"
+      "coverUrl": "/covers/dance-lady-gaga-bad-romance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-katy-perry-firework",
@@ -871,7 +1086,16 @@
       "links": {
         "youtube": "QGJuMBdaqIw"
       },
-      "coverUrl": "/covers/dance-katy-perry-firework.jpg"
+      "coverUrl": "/covers/dance-katy-perry-firework.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-guetta-titanium",
@@ -906,7 +1130,16 @@
       "links": {
         "youtube": "JRfuAukYTKg"
       },
-      "coverUrl": "/covers/dance-guetta-titanium.jpg"
+      "coverUrl": "/covers/dance-guetta-titanium.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-avicii-wake-me",
@@ -941,7 +1174,16 @@
       "links": {
         "youtube": "I_izvAbhExY"
       },
-      "coverUrl": "/covers/dance-avicii-wake-me.jpg"
+      "coverUrl": "/covers/dance-avicii-wake-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-calvin-harris-summer",
@@ -976,7 +1218,16 @@
       "links": {
         "youtube": "ebXbLfLACGM"
       },
-      "coverUrl": "/covers/dance-calvin-harris-summer.jpg"
+      "coverUrl": "/covers/dance-calvin-harris-summer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-dua-lipa-start-now",
@@ -1011,7 +1262,16 @@
       "links": {
         "youtube": "oygrmJFKYZY"
       },
-      "coverUrl": "/covers/dance-dua-lipa-start-now.jpg"
+      "coverUrl": "/covers/dance-dua-lipa-start-now.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-weeknd-feel-face",
@@ -1046,7 +1306,16 @@
       "links": {
         "youtube": "KEI4qSrkPAs"
       },
-      "coverUrl": "/covers/dance-weeknd-feel-face.jpg"
+      "coverUrl": "/covers/dance-weeknd-feel-face.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-bruno-uptown-funk",
@@ -1081,7 +1350,16 @@
       "links": {
         "youtube": "OPf0AuLS"
       },
-      "coverUrl": "/covers/dance-bruno-uptown-funk.jpg"
+      "coverUrl": "/covers/dance-bruno-uptown-funk.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-jt-can-stop",
@@ -1116,7 +1394,16 @@
       "links": {
         "youtube": "rutF6n"
       },
-      "coverUrl": "/covers/dance-jt-can-stop.jpg"
+      "coverUrl": "/covers/dance-jt-can-stop.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-maroon5-jagger",
@@ -1151,7 +1438,16 @@
       "links": {
         "youtube": "iEPTlhBmwRg"
       },
-      "coverUrl": "/covers/dance-maroon5-jagger.jpg"
+      "coverUrl": "/covers/dance-maroon5-jagger.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-pitbull-everything",
@@ -1186,7 +1482,16 @@
       "links": {
         "youtube": "0x-FMquRkK0"
       },
-      "coverUrl": "/covers/dance-pitbull-everything.jpg"
+      "coverUrl": "/covers/dance-pitbull-everything.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "dance-lmfao-party-rock",
@@ -1221,7 +1526,16 @@
       "links": {
         "youtube": "KQ6zr6kCPj8"
       },
-      "coverUrl": "/covers/dance-lmfao-party-rock.jpg"
+      "coverUrl": "/covers/dance-lmfao-party-rock.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

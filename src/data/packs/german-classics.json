@@ -38,7 +38,16 @@
       "links": {
         "youtube": "hiwgOWo7mDc"
       },
-      "coverUrl": "/covers/german-nena-99-luftballons.jpg"
+      "coverUrl": "/covers/german-nena-99-luftballons.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-falco-rock-me-amadeus",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "cVikZ8Oe_36"
       },
-      "coverUrl": "/covers/german-falco-rock-me-amadeus.jpg"
+      "coverUrl": "/covers/german-falco-rock-me-amadeus.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-peter-schilling-major-tom",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "wO0A0XcWy88"
       },
-      "coverUrl": "/covers/german-peter-schilling-major-tom.jpg"
+      "coverUrl": "/covers/german-peter-schilling-major-tom.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-hosen-hier-kommt-alex",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "1z6U0HUKWQg"
       },
-      "coverUrl": "/covers/german-hosen-hier-kommt-alex.jpg"
+      "coverUrl": "/covers/german-hosen-hier-kommt-alex.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-aerzte-zu-spaet",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "X648-JAusbg"
       },
-      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg"
+      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-groenemeyer-maenner",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "_IZsxfo8ITw"
       },
-      "coverUrl": "/covers/german-groenemeyer-maenner.jpg"
+      "coverUrl": "/covers/german-groenemeyer-maenner.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-westernhagen-freiheit",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "wPnmXHQdEUE"
       },
-      "coverUrl": "/covers/german-westernhagen-freiheit.jpg"
+      "coverUrl": "/covers/german-westernhagen-freiheit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-rio-reiser-koenig",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "BzGHhaMUqSQ"
       },
-      "coverUrl": "/covers/german-rio-reiser-koenig.jpg"
+      "coverUrl": "/covers/german-rio-reiser-koenig.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-trio-da-da-da",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "ZviYmTMpBXE"
       },
-      "coverUrl": "/covers/german-trio-da-da-da.jpg"
+      "coverUrl": "/covers/german-trio-da-da-da.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-spider-murphy-skandal",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "oESfa8jt0p8"
       },
-      "coverUrl": "/covers/german-spider-murphy-skandal.jpg"
+      "coverUrl": "/covers/german-spider-murphy-skandal.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-fanta4-die-da",
@@ -388,7 +478,16 @@
       "links": {
         "youtube": "h6W0BDdMG8I"
       },
-      "coverUrl": "/covers/german-fanta4-die-da.jpg"
+      "coverUrl": "/covers/german-fanta4-die-da.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-fettes-brot-jein",
@@ -423,7 +522,16 @@
       "links": {
         "youtube": "D8yXGAsRJK"
       },
-      "coverUrl": "/covers/german-fettes-brot-jein.jpg"
+      "coverUrl": "/covers/german-fettes-brot-jein.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-xavier-naidoo-dieser-weg",
@@ -458,7 +566,16 @@
       "links": {
         "youtube": "RPN88D_HjMU"
       },
-      "coverUrl": "/covers/german-xavier-naidoo-dieser-weg.jpg"
+      "coverUrl": "/covers/german-xavier-naidoo-dieser-weg.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-silbermond-das-beste",
@@ -493,7 +610,16 @@
       "links": {
         "youtube": "LyYAQHDMqfA"
       },
-      "coverUrl": "/covers/german-silbermond-das-beste.jpg"
+      "coverUrl": "/covers/german-silbermond-das-beste.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-juli-perfekte-welle",
@@ -528,7 +654,16 @@
       "links": {
         "youtube": "ad8ukI7Z-b8"
       },
-      "coverUrl": "/covers/german-juli-perfekte-welle.jpg"
+      "coverUrl": "/covers/german-juli-perfekte-welle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-helden-denkmal",
@@ -563,7 +698,16 @@
       "links": {
         "youtube": "aC872j2-PDw"
       },
-      "coverUrl": "/covers/german-helden-denkmal.jpg"
+      "coverUrl": "/covers/german-helden-denkmal.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-sportfreunde-kompliment",
@@ -598,7 +742,16 @@
       "links": {
         "youtube": "C4uXGzFZjqw"
       },
-      "coverUrl": "/covers/german-sportfreunde-kompliment.jpg"
+      "coverUrl": "/covers/german-sportfreunde-kompliment.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-seeed-dickes-b",
@@ -633,7 +786,16 @@
       "links": {
         "youtube": "GYK-NfOo7b4"
       },
-      "coverUrl": "/covers/german-seeed-dickes-b.jpg"
+      "coverUrl": "/covers/german-seeed-dickes-b.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-peter-fox-haus-am-see",
@@ -668,7 +830,16 @@
       "links": {
         "youtube": "gMqIuAJ92tM"
       },
-      "coverUrl": "/covers/german-peter-fox-haus-am-see.jpg"
+      "coverUrl": "/covers/german-peter-fox-haus-am-see.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-bourani-auf-uns",
@@ -703,7 +874,16 @@
       "links": {
         "youtube": "k9EYjn5f_nE"
       },
-      "coverUrl": "/covers/german-bourani-auf-uns.jpg"
+      "coverUrl": "/covers/german-bourani-auf-uns.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-groenemeyer-maenner",
@@ -738,7 +918,16 @@
       "links": {
         "youtube": "oE_s_yYq_eE"
       },
-      "coverUrl": "/covers/german-groenemeyer-maenner.jpg"
+      "coverUrl": "/covers/german-groenemeyer-maenner.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-westernhagen-freiheit",
@@ -773,7 +962,16 @@
       "links": {
         "youtube": "S5O9O5S9S"
       },
-      "coverUrl": "/covers/german-westernhagen-freiheit.jpg"
+      "coverUrl": "/covers/german-westernhagen-freiheit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-hosen-tage",
@@ -808,7 +1006,16 @@
       "links": {
         "youtube": "j09hpp3AxIE"
       },
-      "coverUrl": "/covers/german-hosen-tage.jpg"
+      "coverUrl": "/covers/german-hosen-tage.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-aerzte-zu-spaet",
@@ -843,7 +1050,16 @@
       "links": {
         "youtube": "1KjPyEY7DQ4"
       },
-      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg"
+      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-falco-amadeus",
@@ -878,7 +1094,16 @@
       "links": {
         "youtube": "y-H895vrIU8"
       },
-      "coverUrl": "/covers/german-falco-amadeus.jpg"
+      "coverUrl": "/covers/german-falco-amadeus.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-peter-fox-haus",
@@ -911,7 +1136,16 @@
       "links": {
         "youtube": "cIfx8QiNXfs"
       },
-      "coverUrl": "/covers/german-peter-fox-haus.jpg"
+      "coverUrl": "/covers/german-peter-fox-haus.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-seeed-ding",
@@ -946,7 +1180,16 @@
       "links": {
         "youtube": "-tJYN-eG1zk"
       },
-      "coverUrl": "/covers/german-seeed-ding.jpg"
+      "coverUrl": "/covers/german-seeed-ding.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-jan-delay-jonny",
@@ -981,7 +1224,16 @@
       "links": {
         "youtube": "kW7u7ptj-j4"
       },
-      "coverUrl": "/covers/german-jan-delay-jonny.jpg"
+      "coverUrl": "/covers/german-jan-delay-jonny.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-revolverheld-halt-dich",
@@ -1016,7 +1268,16 @@
       "links": {
         "youtube": "4DUUutHHaBg"
       },
-      "coverUrl": "/covers/german-revolverheld-halt-dich.jpg"
+      "coverUrl": "/covers/german-revolverheld-halt-dich.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-silbermond-das-beste",
@@ -1051,7 +1312,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/german-silbermond-das-beste.jpg"
+      "coverUrl": "/covers/german-silbermond-das-beste.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-juli-welle",
@@ -1086,7 +1356,16 @@
       "links": {
         "youtube": "ad8ukI7Z-b8"
       },
-      "coverUrl": "/covers/german-juli-welle.jpg"
+      "coverUrl": "/covers/german-juli-welle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-helden-denkmal",
@@ -1121,7 +1400,16 @@
       "links": {
         "youtube": "O7-L_u_3p_Y"
       },
-      "coverUrl": "/covers/german-helden-denkmal.jpg"
+      "coverUrl": "/covers/german-helden-denkmal.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-stiller-kompliment",
@@ -1156,7 +1444,16 @@
       "links": {
         "youtube": "C4uXGzFZjqw"
       },
-      "coverUrl": "/covers/german-stiller-kompliment.jpg"
+      "coverUrl": "/covers/german-stiller-kompliment.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-xavier-weg",
@@ -1191,7 +1488,16 @@
       "links": {
         "youtube": "S5O9O5S9S"
       },
-      "coverUrl": "/covers/german-xavier-weg.jpg"
+      "coverUrl": "/covers/german-xavier-weg.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "german-sido-bilder",
@@ -1226,7 +1532,16 @@
       "links": {
         "youtube": "RveIJFR7LV4"
       },
-      "coverUrl": "/covers/german-sido-bilder.jpg"
+      "coverUrl": "/covers/german-sido-bilder.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

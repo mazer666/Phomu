@@ -125,12 +125,27 @@ export interface PhomuSong {
     end: number;
   };
 
+  /**
+   * List of game modes that are logically supported for this song.
+   * e.g. ["timeline", "hint-master", "vibe-check", "cover-confusion", "survivor"]
+   * "lyrics-labyrinth" should be excluded if no lyrics are present.
+   */
+  supportedModes: string[];
+
+  /**
+   * Whether this song is compatible with the physical QR-card deck.
+   * Old classics or very specific niche songs might not be on the physical cards.
+   */
+  isQRCompatible: boolean;
+
   /** Streaming links — YouTube is required, others are optional */
   links: {
     /** YouTube video ID (11 characters) or full URL */
     youtube: string;
     /** YouTube Music / Cover version ID (for Cover Confusion mode) */
     coverLink?: string;
+    /** Alternative / Backup YouTube ID if the primary is region-locked */
+    fallbackYoutubeId?: string;
     /** Spotify track URI (spotify:track:xxx) or URL */
     spotify?: string;
     /** Apple Music track URL (future feature) */

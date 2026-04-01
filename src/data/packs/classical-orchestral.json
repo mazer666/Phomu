@@ -39,7 +39,16 @@
       "links": {
         "youtube": "6z7"
       },
-      "coverUrl": "/covers/class-beethoven-5.jpg"
+      "coverUrl": "/covers/class-beethoven-5.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-mozart-nacht",
@@ -74,7 +83,16 @@
       "links": {
         "youtube": "ECAK9XHakW4"
       },
-      "coverUrl": "/covers/class-mozart-nacht.jpg"
+      "coverUrl": "/covers/class-mozart-nacht.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-vivaldi-spring",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-vivaldi-spring.jpg"
+      "coverUrl": "/covers/class-vivaldi-spring.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-bach-toccata",
@@ -142,7 +169,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-bach-toccata.jpg"
+      "coverUrl": "/covers/class-bach-toccata.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-pachelbel-canon",
@@ -174,9 +210,18 @@
       },
       "isOneHitWonder": true,
       "links": {
-        "youtube": "U5AO5G4VwNA"
+        "youtube": "JvNQLJ1_HQ0"
       },
-      "coverUrl": "/covers/class-pachelbel-canon.jpg"
+      "coverUrl": "/covers/class-pachelbel-canon.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-tchaikovsky-swan",
@@ -210,7 +255,16 @@
       "links": {
         "youtube": "9ScvVInX"
       },
-      "coverUrl": "/covers/class-tchaikovsky-swan.jpg"
+      "coverUrl": "/covers/class-tchaikovsky-swan.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-strauss-danube",
@@ -244,7 +298,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-strauss-danube.jpg"
+      "coverUrl": "/covers/class-strauss-danube.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-bizet-carmen",
@@ -278,7 +341,16 @@
       "links": {
         "youtube": "EuEBZImVupQ"
       },
-      "coverUrl": "/covers/class-bizet-carmen.jpg"
+      "coverUrl": "/covers/class-bizet-carmen.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-rossini-william",
@@ -312,7 +384,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-rossini-william.jpg"
+      "coverUrl": "/covers/class-rossini-william.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-grieg-mountain",
@@ -346,7 +427,16 @@
       "links": {
         "youtube": "zf2aIVKp1OY"
       },
-      "coverUrl": "/covers/class-grieg-mountain.jpg"
+      "coverUrl": "/covers/class-grieg-mountain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-orff-fortuna",
@@ -380,7 +470,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-orff-fortuna.jpg"
+      "coverUrl": "/covers/class-orff-fortuna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-wagner-valkyries",
@@ -414,7 +513,16 @@
       "links": {
         "youtube": "xeRwBiu4wfQ"
       },
-      "coverUrl": "/covers/class-wagner-valkyries.jpg"
+      "coverUrl": "/covers/class-wagner-valkyries.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-handel-hallelujah",
@@ -448,7 +556,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-handel-hallelujah.jpg"
+      "coverUrl": "/covers/class-handel-hallelujah.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-debussy-lune",
@@ -482,7 +599,16 @@
       "links": {
         "youtube": "-Bxpm0EmOMU"
       },
-      "coverUrl": "/covers/class-debussy-lune.jpg"
+      "coverUrl": "/covers/class-debussy-lune.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-chopin-nocturne",
@@ -516,7 +642,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-chopin-nocturne.jpg"
+      "coverUrl": "/covers/class-chopin-nocturne.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-puccini-dorma",
@@ -550,7 +685,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-puccini-dorma.jpg"
+      "coverUrl": "/covers/class-puccini-dorma.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-verdi-donna",
@@ -584,7 +728,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-verdi-donna.jpg"
+      "coverUrl": "/covers/class-verdi-donna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "score-john-wars",
@@ -618,7 +771,16 @@
       "links": {
         "youtube": "yH7LkX3L"
       },
-      "coverUrl": "/covers/score-john-wars.jpg"
+      "coverUrl": "/covers/score-john-wars.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-zimmer-pirate",
@@ -652,7 +814,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/score-zimmer-pirate.jpg"
+      "coverUrl": "/covers/score-zimmer-pirate.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-morricone-ugly",
@@ -686,7 +857,16 @@
       "links": {
         "youtube": "AkQowzXG5W4"
       },
-      "coverUrl": "/covers/score-morricone-ugly.jpg"
+      "coverUrl": "/covers/score-morricone-ugly.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-shore-hobbits",
@@ -720,7 +900,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-shore-hobbits.jpg"
+      "coverUrl": "/covers/score-shore-hobbits.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-silvestri-bttf",
@@ -754,7 +943,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/score-silvestri-bttf.jpg"
+      "coverUrl": "/covers/score-silvestri-bttf.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-elfman-batman",
@@ -788,7 +986,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-elfman-batman.jpg"
+      "coverUrl": "/covers/score-elfman-batman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-djawadi-got",
@@ -822,7 +1029,16 @@
       "links": {
         "youtube": "s7L2PVdrb_8"
       },
-      "coverUrl": "/covers/score-djawadi-got.jpg"
+      "coverUrl": "/covers/score-djawadi-got.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-einaudi-nuvole",
@@ -856,7 +1072,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/class-einaudi-nuvole.jpg"
+      "coverUrl": "/covers/class-einaudi-nuvole.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-holst-mars",
@@ -890,7 +1115,16 @@
       "links": {
         "youtube": "cXOanvv4plU"
       },
-      "coverUrl": "/covers/class-holst-mars.jpg"
+      "coverUrl": "/covers/class-holst-mars.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-ravel-bolero",
@@ -924,7 +1158,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-ravel-bolero.jpg"
+      "coverUrl": "/covers/class-ravel-bolero.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-saint-saens-danse",
@@ -958,7 +1201,16 @@
       "links": {
         "youtube": "ogJN8dkFjEQ"
       },
-      "coverUrl": "/covers/class-saint-saens-danse.jpg"
+      "coverUrl": "/covers/class-saint-saens-danse.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-mussorgsky-bald",
@@ -992,7 +1244,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-mussorgsky-bald.jpg"
+      "coverUrl": "/covers/class-mussorgsky-bald.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-sibelius-finlandia",
@@ -1026,7 +1287,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/class-sibelius-finlandia.jpg"
+      "coverUrl": "/covers/class-sibelius-finlandia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false
     },
     {
       "id": "class-barber-adagio",
@@ -1060,7 +1330,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-barber-adagio.jpg"
+      "coverUrl": "/covers/class-barber-adagio.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-jenkins-palladio",
@@ -1094,7 +1373,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-jenkins-palladio.jpg"
+      "coverUrl": "/covers/class-jenkins-palladio.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-richter-daylight",
@@ -1128,7 +1416,16 @@
       "links": {
         "youtube": "InyT9Gyoz_o"
       },
-      "coverUrl": "/covers/class-richter-daylight.jpg"
+      "coverUrl": "/covers/class-richter-daylight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "class-glass-opening",
@@ -1162,7 +1459,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/class-glass-opening.jpg"
+      "coverUrl": "/covers/class-glass-opening.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-trek-theme",
@@ -1195,7 +1501,16 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "ruAi4VBoBSM"
-      }
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-up-married",
@@ -1229,7 +1544,16 @@
       "links": {
         "youtube": "S1uWHjhluTI"
       },
-      "coverUrl": "/covers/score-up-married.jpg"
+      "coverUrl": "/covers/score-up-married.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-beauty-other",
@@ -1263,7 +1587,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-beauty-other.jpg"
+      "coverUrl": "/covers/score-beauty-other.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-shape-water",
@@ -1297,7 +1630,16 @@
       "links": {
         "youtube": "AfuMFHB80HE"
       },
-      "coverUrl": "/covers/score-shape-water.jpg"
+      "coverUrl": "/covers/score-shape-water.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-clint-aeterna",
@@ -1331,7 +1673,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-clint-aeterna.jpg"
+      "coverUrl": "/covers/score-clint-aeterna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-horner-rose",
@@ -1365,7 +1716,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/score-horner-rose.jpg"
+      "coverUrl": "/covers/score-horner-rose.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-bond-theme",
@@ -1399,7 +1759,16 @@
       "links": {
         "youtube": "Vr6yscEWPYw"
       },
-      "coverUrl": "/covers/score-bond-theme.jpg"
+      "coverUrl": "/covers/score-bond-theme.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-lalo-mission",
@@ -1433,7 +1802,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-lalo-mission.jpg"
+      "coverUrl": "/covers/score-lalo-mission.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-henry-panther",
@@ -1467,7 +1845,16 @@
       "links": {
         "youtube": "ruAi4VBoBSM"
       },
-      "coverUrl": "/covers/score-henry-panther.jpg"
+      "coverUrl": "/covers/score-henry-panther.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-herrmann-psycho",
@@ -1501,7 +1888,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-herrmann-psycho.jpg"
+      "coverUrl": "/covers/score-herrmann-psycho.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-nino-godfather",
@@ -1535,7 +1931,16 @@
       "links": {
         "youtube": "sbCOtg3JY3s"
       },
-      "coverUrl": "/covers/score-nino-godfather.jpg"
+      "coverUrl": "/covers/score-nino-godfather.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "score-zimmer-time",
@@ -1569,7 +1974,16 @@
       "links": {
         "youtube": "gxEPV4kolz0"
       },
-      "coverUrl": "/covers/score-zimmer-time.jpg"
+      "coverUrl": "/covers/score-zimmer-time.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

@@ -38,7 +38,16 @@
       "links": {
         "youtube": "A_MjCqQoLLA"
       },
-      "coverUrl": "/covers/legends-beatles-hey-jude.jpg"
+      "coverUrl": "/covers/legends-beatles-hey-jude.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-stones-satisfaction",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "nrIPxlFzDi0"
       },
-      "coverUrl": "/covers/legends-stones-satisfaction.jpg"
+      "coverUrl": "/covers/legends-stones-satisfaction.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-elvis-suspicious-minds",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "WrMGGouem3c"
       },
-      "coverUrl": "/covers/legends-elvis-suspicious-minds.jpg"
+      "coverUrl": "/covers/legends-elvis-suspicious-minds.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-abba-dancing-queen",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "xP-z676878"
       },
-      "coverUrl": "/covers/legends-abba-dancing-queen.jpg"
+      "coverUrl": "/covers/legends-abba-dancing-queen.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-bee-gees-stayin-alive",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "I_izvAbhExY"
       },
-      "coverUrl": "/covers/legends-bee-gees-stayin-alive.jpg"
+      "coverUrl": "/covers/legends-bee-gees-stayin-alive.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-led-zeppelin-stairway",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "Ly6ZhQVnVow"
       },
-      "coverUrl": "/covers/legends-led-zeppelin-stairway.jpg"
+      "coverUrl": "/covers/legends-led-zeppelin-stairway.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-pink-floyd-wish",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "89j-6xpdq4"
       },
-      "coverUrl": "/covers/legends-pink-floyd-wish.jpg"
+      "coverUrl": "/covers/legends-pink-floyd-wish.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-fleetwood-mac-dreams",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "mrZRURarkSS"
       },
-      "coverUrl": "/covers/legends-fleetwood-mac-dreams.jpg"
+      "coverUrl": "/covers/legends-fleetwood-mac-dreams.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-bowie-space-oddity",
@@ -318,7 +390,16 @@
       "links": {
         "youtube": "iYYRH4apXDo"
       },
-      "coverUrl": "/covers/legends-bowie-space-oddity.jpg"
+      "coverUrl": "/covers/legends-bowie-space-oddity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "legends-simon-garfunkel-bridge",
@@ -353,7 +434,16 @@
       "links": {
         "youtube": "dWO1HbkBUR8"
       },
-      "coverUrl": "/covers/legends-simon-garfunkel-bridge.jpg"
+      "coverUrl": "/covers/legends-simon-garfunkel-bridge.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }

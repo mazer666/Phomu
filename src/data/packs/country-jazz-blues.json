@@ -38,7 +38,16 @@
       "links": {
         "youtube": "Lq0fUa0_8"
       },
-      "coverUrl": "/covers/country-johnny-cash-walk-the-line.jpg"
+      "coverUrl": "/covers/country-johnny-cash-walk-the-line.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-dolly-parton-jolene",
@@ -73,7 +82,16 @@
       "links": {
         "youtube": "Lq0fUa0_8"
       },
-      "coverUrl": "/covers/country-dolly-parton-jolene.jpg"
+      "coverUrl": "/covers/country-dolly-parton-jolene.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-louis-armstrong-wonderful",
@@ -108,7 +126,16 @@
       "links": {
         "youtube": "rBrd_3VMC3c"
       },
-      "coverUrl": "/covers/jazz-louis-armstrong-wonderful.jpg"
+      "coverUrl": "/covers/jazz-louis-armstrong-wonderful.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-ella-fitzgerald-summertime",
@@ -143,7 +170,16 @@
       "links": {
         "youtube": "L5xafQXg1yI"
       },
-      "coverUrl": "/covers/jazz-ella-fitzgerald-summertime.jpg"
+      "coverUrl": "/covers/jazz-ella-fitzgerald-summertime.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "blues-bb-king-thrill-is-gone",
@@ -178,7 +214,16 @@
       "links": {
         "youtube": "SgXSomPE_FY"
       },
-      "coverUrl": "/covers/blues-bb-king-thrill-is-gone.jpg"
+      "coverUrl": "/covers/blues-bb-king-thrill-is-gone.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-ray-charles-georgia",
@@ -213,7 +258,16 @@
       "links": {
         "youtube": "fRgWBN8yt_E"
       },
-      "coverUrl": "/covers/jazz-ray-charles-georgia.jpg"
+      "coverUrl": "/covers/jazz-ray-charles-georgia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "blues-muddy-waters-hoochie",
@@ -248,7 +302,16 @@
       "links": {
         "youtube": "e_l6A7krjrQ"
       },
-      "coverUrl": "/covers/blues-muddy-waters-hoochie.jpg"
+      "coverUrl": "/covers/blues-muddy-waters-hoochie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-nina-simone-feeling-good",
@@ -283,7 +346,16 @@
       "links": {
         "youtube": "D5Y11hwjMNs"
       },
-      "coverUrl": "/covers/jazz-nina-simone-feeling-good.jpg"
+      "coverUrl": "/covers/jazz-nina-simone-feeling-good.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-miles-davis-so-what",
@@ -316,7 +388,15 @@
       "links": {
         "youtube": "ylXk1LBvIqU"
       },
-      "coverUrl": "/covers/jazz-miles-davis-so-what.jpg"
+      "coverUrl": "/covers/jazz-miles-davis-so-what.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-shania-twain-woman",
@@ -351,7 +431,16 @@
       "links": {
         "youtube": "ZJL4UGSbeFg"
       },
-      "coverUrl": "/covers/country-shania-twain-woman.jpg"
+      "coverUrl": "/covers/country-shania-twain-woman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-john-denver-country-roads",
@@ -386,7 +475,16 @@
       "links": {
         "youtube": "1vrEljMfXYo"
       },
-      "coverUrl": "/covers/country-john-denver-country-roads.jpg"
+      "coverUrl": "/covers/country-john-denver-country-roads.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-willie-nelson-road-again",
@@ -421,7 +519,16 @@
       "links": {
         "youtube": "dBN86y30Ufc"
       },
-      "coverUrl": "/covers/country-willie-nelson-road-again.jpg"
+      "coverUrl": "/covers/country-willie-nelson-road-again.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-kenny-rogers-gambler",
@@ -456,7 +563,16 @@
       "links": {
         "youtube": "7hx4gdlfamo"
       },
-      "coverUrl": "/covers/country-kenny-rogers-gambler.jpg"
+      "coverUrl": "/covers/country-kenny-rogers-gambler.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "blues-etta-james-at-last",
@@ -491,7 +607,16 @@
       "links": {
         "youtube": "S-cbOl96RFM"
       },
-      "coverUrl": "/covers/blues-etta-james-at-last.jpg"
+      "coverUrl": "/covers/blues-etta-james-at-last.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-billie-holiday-fruit",
@@ -526,7 +651,16 @@
       "links": {
         "youtube": "Web007rzSOI"
       },
-      "coverUrl": "/covers/jazz-billie-holiday-fruit.jpg"
+      "coverUrl": "/covers/jazz-billie-holiday-fruit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-nat-king-cole-love",
@@ -561,7 +695,16 @@
       "links": {
         "youtube": "ir_LJ5dvS2w"
       },
-      "coverUrl": "/covers/jazz-nat-king-cole-love.jpg"
+      "coverUrl": "/covers/jazz-nat-king-cole-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "blues-robert-johnson-crossroad",
@@ -596,7 +739,16 @@
       "links": {
         "youtube": "GsB_cGdgPTo"
       },
-      "coverUrl": "/covers/blues-robert-johnson-crossroad.jpg"
+      "coverUrl": "/covers/blues-robert-johnson-crossroad.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "blues-howlin-wolf-smokestack",
@@ -631,7 +783,16 @@
       "links": {
         "youtube": "O7D-1RG-VRk"
       },
-      "coverUrl": "/covers/blues-howlin-wolf-smokestack.jpg"
+      "coverUrl": "/covers/blues-howlin-wolf-smokestack.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-norah-jones-dont-know-why",
@@ -666,7 +827,16 @@
       "links": {
         "youtube": "tO4dxvguQDk"
       },
-      "coverUrl": "/covers/jazz-norah-jones-dont-know-why.jpg"
+      "coverUrl": "/covers/jazz-norah-jones-dont-know-why.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-garth-brooks-friends",
@@ -701,7 +871,16 @@
       "links": {
         "youtube": "mvCgSqPZ4EM"
       },
-      "coverUrl": "/covers/country-garth-brooks-friends.jpg"
+      "coverUrl": "/covers/country-garth-brooks-friends.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-louis-jordan-boogie",
@@ -736,7 +915,16 @@
       "links": {
         "youtube": "S-cbOl96RFM"
       },
-      "coverUrl": "/covers/jazz-louis-jordan-boogie.jpg"
+      "coverUrl": "/covers/jazz-louis-jordan-boogie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "jazz-cab-calloway-minnie",
@@ -771,7 +959,16 @@
       "links": {
         "youtube": "8mq4UT4VnbE"
       },
-      "coverUrl": "/covers/jazz-cab-calloway-minnie.jpg"
+      "coverUrl": "/covers/jazz-cab-calloway-minnie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-carter-family-circle",
@@ -806,7 +1003,16 @@
       "links": {
         "youtube": "ZJL4UGSbeFg"
       },
-      "coverUrl": "/covers/country-carter-family-circle.jpg"
+      "coverUrl": "/covers/country-carter-family-circle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "country-patsy-cline-crazy",
@@ -841,7 +1047,16 @@
       "links": {
         "youtube": "YWKeuYcDAoo"
       },
-      "coverUrl": "/covers/country-patsy-cline-crazy.jpg"
+      "coverUrl": "/covers/country-patsy-cline-crazy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     },
     {
       "id": "blues-robert-cray-smoking-gun",
@@ -876,7 +1091,16 @@
       "links": {
         "youtube": "mvCgSqPZ4EM"
       },
-      "coverUrl": "/covers/blues-robert-cray-smoking-gun.jpg"
+      "coverUrl": "/covers/blues-robert-cray-smoking-gun.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true
     }
   ]
 }
