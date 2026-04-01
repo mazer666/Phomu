@@ -20,6 +20,7 @@ interface SurvivorModeProps {
 export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
   const [answered, setAnswered] = useState(false);
   const [choice, setChoice] = useState<boolean | null>(null);
+  const [cheatUsed, setCheatUsed] = useState(false);
 
   function handleChoice(guessedOneHit: boolean) {
     if (answered) return;
@@ -39,10 +40,22 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
         animate={{ opacity: 1, y: 0 }}
         className="text-center"
       >
-        <div className="flex justify-center mb-3">
+        <div className="flex justify-center mb-3 relative">
           <span className="px-3 py-1 rounded-full border border-[var(--color-accent)]/40 text-[10px] font-black uppercase tracking-widest text-[var(--color-accent)]">
             +3 Pkt bei richtiger Antwort
           </span>
+          {cheatUsed && (
+            <span
+              className="absolute -top-2 -right-2 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
+              style={{
+                backgroundColor: '#fb923c',
+                transform: 'rotate(6deg)',
+                boxShadow: '0 2px 8px rgba(251,146,60,0.6)',
+              }}
+            >
+              CHEAT -1 Pkt
+            </span>
+          )}
         </div>
 
         {!answered ? (
@@ -62,9 +75,9 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
           </>
         )}
 
-        <div className="mt-4 w-64 mx-auto transition-opacity" style={{ opacity: answered ? 1 : 0.4 }}>
-          <MusicPlayer 
-            youtubeLink={song.links.youtube} 
+        <div className="mt-4 w-full max-w-sm mx-auto transition-opacity" style={{ opacity: answered ? 1 : 0.4 }}>
+          <MusicPlayer
+            youtubeLink={song.links.youtube}
             startSeconds={song.previewTimestamp?.start ?? 0}
             blurred={!answered}
           />
@@ -112,7 +125,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
             animate={{ opacity: 0.4 }}
             whileHover={{ opacity: 1, scale: 1.05 }}
             onClick={() => {
-              // Cheat: Reveal but no points (or -1 penalty)
+              setCheatUsed(true);
               setAnswered(true);
               onAnswer(true, -1);
             }}

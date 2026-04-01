@@ -10416,10 +10416,10 @@
     {
       "id": "yt-6i0HqJ1tRn8",
       "title": "Beggin'",
-      "artist": "Various Artists",
-      "year": 2024,
-      "country": "INT",
-      "genre": "Electronic",
+      "artist": "Måneskin",
+      "year": 2017,
+      "country": "IT",
+      "genre": "Rock",
       "difficulty": "medium",
       "mood": [
         "Popular",
@@ -10427,8 +10427,8 @@
       ],
       "pack": "YouTube Collection",
       "hints": [
-        "Ein Song von Various Artists.",
-        "Gefunden im Genre Electronic.",
+        "Ein Song von Måneskin.",
+        "Gefunden im Genre Rock.",
         "Der Titel lautet: Beggin'",
         "Playlist-Tag: Dance Floor"
       ],
@@ -27814,10 +27814,10 @@
       "isQRCompatible": false
     },
     {
-      "id": "yt-btPJPFnesV4",
-      "title": "Eye Of The Tiger (Official HD Video)",
+      "id": "yt-_qDML_BCju8",
+      "title": "Eye Of The Tiger",
       "artist": "Survivor",
-      "year": 1990,
+      "year": 1982,
       "country": "INT",
       "genre": "All-Time",
       "difficulty": "medium",
@@ -27829,13 +27829,13 @@
       "hints": [
         "Ein Song von Survivor.",
         "Gefunden im Genre All-Time.",
-        "Der Titel lautet: Eye Of The Tiger (Official HD Video)",
+        "Der Titel lautet: Eye Of The Tiger",
         "Playlist-Tag: Legends & Classics"
       ],
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=btPJPFnesV4"
+        "youtube": "https://www.youtube.com/watch?v=_qDML_BCju8"
       },
       "supportedModes": [
         "timeline"

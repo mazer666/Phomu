@@ -194,11 +194,26 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
           </motion.button>
         )}
 
-        <p className="opacity-40 text-[9px] font-black uppercase tracking-[0.2em]">
-          {!isRevealed
-            ? `${numSlots} Positionen · ${points} Punkte`
-            : 'Das war die Lösung'}
-        </p>
+        <div className="flex items-center justify-center gap-2">
+          <p className="opacity-40 text-[9px] font-black uppercase tracking-[0.2em]">
+            {!isRevealed
+              ? `${numSlots} Positionen · ${points} Punkte`
+              : 'Das war die Lösung'}
+          </p>
+          {!isRevealed && cheatActive && (
+            <span
+              className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
+              style={{
+                backgroundColor: '#fb923c',
+                transform: 'rotate(4deg)',
+                boxShadow: '0 2px 10px rgba(251,146,60,0.7)',
+                display: 'inline-block',
+              }}
+            >
+              {Math.max(1, points - 2)} Pkt CHEAT
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Optional: Jahreszahl entfernen nach richtigem Tipp */}

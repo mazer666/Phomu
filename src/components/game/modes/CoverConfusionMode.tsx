@@ -93,11 +93,23 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
           <p className="text-[10px] font-black uppercase opacity-40">Cover Confusion 🎭</p>
           <p className="text-sm font-bold opacity-60">Wer ist der Original-Interpret?</p>
         </div>
-        <div className="text-right">
+        <div className="text-right relative">
           <p className="text-[10px] font-black uppercase opacity-40">Punkte möglich</p>
           <p className="text-xl font-black text-[var(--color-accent)]">
             {phase === 'done' ? (wasCorrect ? `+${points}` : '0') : `+${points}`}
           </p>
+          {cheatActive && (
+            <span
+              className="absolute -top-1 -right-1 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
+              style={{
+                backgroundColor: '#fb923c',
+                transform: 'rotate(-5deg)',
+                boxShadow: '0 2px 10px rgba(251,146,60,0.7)',
+              }}
+            >
+              +{Math.max(1, points - 2)} CHEAT
+            </span>
+          )}
         </div>
       </div>
 

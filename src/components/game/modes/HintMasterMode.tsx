@@ -58,9 +58,23 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
           <p className="text-[10px] font-black uppercase opacity-40">Ebene</p>
           <p className="text-xl font-black">{shownHints} <span className="text-xs opacity-30">/ {maxHints}</span></p>
         </div>
-        <div className="text-right">
+        <div className="text-right relative">
           <p className="text-[10px] font-black uppercase opacity-40">Mögliche Punkte</p>
-          <p className="text-xl font-black text-[var(--color-accent)]">+{points}</p>
+          <p className="text-xl font-black text-[var(--color-accent)]">
+            +{points}
+          </p>
+          {cheatUsed && (
+            <span
+              className="absolute -top-1 -right-1 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
+              style={{
+                backgroundColor: '#fb923c',
+                transform: 'rotate(-5deg)',
+                boxShadow: '0 2px 10px rgba(251,146,60,0.7)',
+              }}
+            >
+              +{Math.max(1, points - 2)} CHEAT
+            </span>
+          )}
         </div>
       </div>
 
