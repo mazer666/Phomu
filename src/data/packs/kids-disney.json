@@ -14,7 +14,11 @@
       "country": "US/ZA",
       "genre": "Movie Soundtrack / World",
       "difficulty": "easy",
-      "mood": ["Epic", "Emotional", "Classic"],
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Der majestätische Eröffnungssong aus 'Der König der Löwen'.",
@@ -23,9 +27,18 @@
         "Komponiert von Elton John mit Texten von Tim Rice.",
         "Refrain: 'It's the circle of life! And it moves us all!'"
       ],
-      "lyrics": { "real": ["Nants ingonyama bagithi Baba", "It's the circle of life and it moves us all", "Through despair and hope, through faith and love"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "Nants ingonyama bagithi Baba",
+          "It's the circle of life and it moves us all",
+          "Through despair and hope, through faith and love"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "GibiNy4d4gc" }
+      "links": {
+        "youtube": "GibiNy4d4gc"
+      }
     },
     {
       "id": "disney-lion-love",
@@ -35,7 +48,11 @@
       "country": "GB",
       "genre": "Pop / Ballad / Soundtrack",
       "difficulty": "easy",
-      "mood": ["Romantic", "Emotional", "Classic"],
+      "mood": [
+        "Romantic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Die Oscar-prämierte Ballade aus 'Der König der Löwen'.",
@@ -44,9 +61,18 @@
         "Ein Inbegriff für Disney-Romantik.",
         "Refrain: 'Can you feel the love tonight? It is where we are!'"
       ],
-      "lyrics": { "real": ["There's a calm surrender to the rush of day", "And can you feel the love tonight? It is where we are", "It's enough for this wide-eyed wanderer that we got this far"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "There's a calm surrender to the rush of day",
+          "And can you feel the love tonight? It is where we are",
+          "It's enough for this wide-eyed wanderer that we got this far"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fTtgVSxBaSw" }
+      "links": {
+        "youtube": "fTtgVSxBaSw"
+      }
     },
     {
       "id": "disney-tarzan-heart",
@@ -56,7 +82,11 @@
       "country": "GB",
       "genre": "Pop / Ballad / Soundtrack",
       "difficulty": "easy",
-      "mood": ["Emotional", "Protective", "Classic"],
+      "mood": [
+        "Emotional",
+        "Protective",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Phil Collins schrieb und sang diesen Song für den Film 'Tarzan'.",
@@ -65,9 +95,18 @@
         "Phil Collins nahm den Song in verschiedenen Sprachen auf (auch Deutsch!).",
         "Refrain: 'You'll be in my heart! From this day on, now and forever more!'"
       ],
-      "lyrics": { "real": ["Come stop your crying, it will be alright, just take my hand, hold it tight", "You'll be in my heart, from this day on, now and forever more", "You'll be in my heart, no matter what they say"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Come stop your crying, it will be alright, just take my hand, hold it tight",
+          "You'll be in my heart, from this day on, now and forever more",
+          "You'll be in my heart, no matter what they say"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-aladdin-world",
@@ -77,7 +116,11 @@
       "country": "US",
       "genre": "Pop / Ballad / Soundtrack",
       "difficulty": "easy",
-      "mood": ["Epic", "Romantic", "Classic"],
+      "mood": [
+        "Epic",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Der fliegende Teppich-Song aus 'Aladdin'.",
@@ -86,9 +129,18 @@
         "Inbegriff für orientalische Disney-Magie.",
         "Refrain: 'A whole new world! A new fantastic point of view!'"
       ],
-      "lyrics": { "real": ["I can show you the world, shining, shimmering, splendid", "A whole new world, a new fantastic point of view", "No one to tell us no, or where to go, or say we're only dreaming"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "I can show you the world, shining, shimmering, splendid",
+          "A whole new world, a new fantastic point of view",
+          "No one to tell us no, or where to go, or say we're only dreaming"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-beauty-beast",
@@ -98,7 +150,11 @@
       "country": "CA/US",
       "genre": "Pop / Ballad / Soundtrack",
       "difficulty": "easy",
-      "mood": ["Romantic", "Epic", "Classic"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Titelsong aus 'Die Schöne und das Biest'.",
@@ -107,9 +163,18 @@
         "Ein zeitloses Märchen-Duett.",
         "Refrain: 'Tale as old as time! Song as old as rhyme! Beauty and the beast!'"
       ],
-      "lyrics": { "real": ["Tale as old as time, true as it can be", "Beauty and the beast, just a little change, small to say the least", "Both a little scared, neither one prepared, beauty and the beast"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "Tale as old as time, true as it can be",
+          "Beauty and the beast, just a little change, small to say the least",
+          "Both a little scared, neither one prepared, beauty and the beast"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "axySrE0Kg6k" }
+      "links": {
+        "youtube": "axySrE0Kg6k"
+      }
     },
     {
       "id": "disney-frozen-letitgo",
@@ -119,7 +184,11 @@
       "country": "US",
       "genre": "Soundtrack / Powerful",
       "difficulty": "medium",
-      "mood": ["Powerful", "Confident", "Classic"],
+      "mood": [
+        "Powerful",
+        "Confident",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "DER Song aus 'Die Eiskönigin' (Frozen).",
@@ -128,9 +197,18 @@
         "Idina Menzels gewaltige Stimme prägt diesen Hit.",
         "Refrain: 'Let it go, let it go! Can't hold it back anymore!'"
       ],
-      "lyrics": { "real": ["The snow glows white on the mountain tonight, not a footprint to be seen", "Let it go, let it go, can't hold it back anymore", "Let it go, let it go, turn away and slam the door"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "The snow glows white on the mountain tonight, not a footprint to be seen",
+          "Let it go, let it go, can't hold it back anymore",
+          "Let it go, let it go, turn away and slam the door"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "L0MK7qz13bU" }
+      "links": {
+        "youtube": "L0MK7qz13bU"
+      }
     },
     {
       "id": "disney-frozen-forever",
@@ -140,7 +218,11 @@
       "country": "US",
       "genre": "Soundtrack / Broadway",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Excited"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Excited"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Thematisiert Annas Vorfreude auf die Krönung und das Wiedersehen mit ihrer Schwester.",
@@ -149,9 +231,18 @@
         "Ein wichtiger Wendepunkt in der Geschichte von 'Eiskönigin'.",
         "Refrain: 'Cause for the first time in forever! There'll be music, there'll be light!'"
       ],
-      "lyrics": { "real": ["The window is open, so's that door, I didn't know they did that anymore", "Cause for the first time in forever, there'll be music, there'll be light", "For the first time in forever, I'll be dancing through the night"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "The window is open, so's that door, I didn't know they did that anymore",
+          "Cause for the first time in forever, there'll be music, there'll be light",
+          "For the first time in forever, I'll be dancing through the night"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-frozen-summer",
@@ -161,7 +252,11 @@
       "country": "US",
       "genre": "Soundtrack / Funny",
       "difficulty": "easy",
-      "mood": ["Funny", "Happy", "Naïve"],
+      "mood": [
+        "Funny",
+        "Happy",
+        "Naïve"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen von Olaf dem Schneemann.",
@@ -170,9 +265,18 @@
         "Ein Paradebeispiel für Disneys Sinn für Selbstironie.",
         "Refrain: 'And I'll be a... happy snowman!'"
       ],
-      "lyrics": { "real": ["Bees'll buzz, kids'll blow dandelion fuzz, and I'll be doing whatever snow does in summer", "A drink in my hand, my snow against the burning sand", "Probably getting gorgeously tanned in summer"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Bees'll buzz, kids'll blow dandelion fuzz, and I'll be doing whatever snow does in summer",
+          "A drink in my hand, my snow against the burning sand",
+          "Probably getting gorgeously tanned in summer"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-moana-far",
@@ -182,7 +286,11 @@
       "country": "US",
       "genre": "Soundtrack / Inspirational",
       "difficulty": "easy",
-      "mood": ["Powerful", "Determined", "Classic"],
+      "mood": [
+        "Powerful",
+        "Determined",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Die Hymne aus 'Vaiana' (Moana).",
@@ -191,9 +299,18 @@
         "Inbegriff für modernen Disney-Heldinnen-Pop.",
         "Refrain: 'See the line where the sky meets the sea? It calls me!'"
       ],
-      "lyrics": { "real": ["I've been staring at the edge of the water, 'long as I can remember", "See the line where the sky meets the sea? It calls me", "And no one knows, how far it goes"], "fake": "Walking down the street with a rhythm in my feet tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I've been staring at the edge of the water, 'long as I can remember",
+          "See the line where the sky meets the sea? It calls me",
+          "And no one knows, how far it goes"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "cPAbM0MT" }
+      "links": {
+        "youtube": "cPAbM0MT"
+      }
     },
     {
       "id": "disney-moana-welcome",
@@ -203,7 +320,11 @@
       "country": "US",
       "genre": "Soundtrack / Funny / Rap",
       "difficulty": "easy",
-      "mood": ["Funny", "Confident", "Groovy"],
+      "mood": [
+        "Funny",
+        "Confident",
+        "Groovy"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen von Halbgott Maui (Dwayne 'The Rock' Johnson).",
@@ -212,9 +333,18 @@
         "Ein extrem eingängiger Gute-Laune-Track.",
         "Refrain: 'What can I say except you're welcome! For the tides, the sun, the sky!'"
       ],
-      "lyrics": { "real": ["I see what's happening here, you're face to face with greatness and it's strange", "You're welcome, what can I say except you're welcome", "For the tides, the sun, the sky, hey, it's okay, it's okay, you're welcome"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend" },
+      "lyrics": {
+        "real": [
+          "I see what's happening here, you're face to face with greatness and it's strange",
+          "You're welcome, what can I say except you're welcome",
+          "For the tides, the sun, the sky, hey, it's okay, it's okay, you're welcome"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "79Dj" }
+      "links": {
+        "youtube": "79Dj"
+      }
     },
     {
       "id": "disney-encanto-bruno",
@@ -224,7 +354,11 @@
       "country": "US/CO",
       "genre": "Soundtrack / Salsa / Pop",
       "difficulty": "hard",
-      "mood": ["Complex", "Catchy", "Electronic"],
+      "mood": [
+        "Complex",
+        "Catchy",
+        "Electronic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Der Überraschungs-Megahit aus 'Encanto'.",
@@ -233,9 +367,18 @@
         "Wurde zu einem riesigen TikTok-Phänomen.",
         "Refrain: 'We don't talk about Bruno, no, no, no!'"
       ],
-      "lyrics": { "real": ["We don't talk about Bruno, no, no, no, we don't talk about Bruno", "It was my wedding day, we were getting ready and there wasn't a cloud in the sky", "Bruno walks in with a mischievous grin, thunder!"], "fake": "In the shadow of the night, we're looking for the light of our broken soul" },
+      "lyrics": {
+        "real": [
+          "We don't talk about Bruno, no, no, no, we don't talk about Bruno",
+          "It was my wedding day, we were getting ready and there wasn't a cloud in the sky",
+          "Bruno walks in with a mischievous grin, thunder!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken soul"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "bvWRMAU" }
+      "links": {
+        "youtube": "bvWRMAU"
+      }
     },
     {
       "id": "disney-encanto-pressure",
@@ -245,7 +388,11 @@
       "country": "US/CO",
       "genre": "Soundtrack / Reggaeton / Pop",
       "difficulty": "medium",
-      "mood": ["Powerful", "Serious", "Groovy"],
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Groovy"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Thematisiert den enormen Druck und die Erwartungshaltung an die starke Schwester Luisa.",
@@ -254,9 +401,18 @@
         "Inbegriff für Disneys modernere, tiefgründigere Texte.",
         "Refrain: 'Under the surface! I'm pretty sure I'm worthless if I can't be of service!'"
       ],
-      "lyrics": { "real": ["I'm the strong one, I'm not nervous, I'm as tough as the crust of the Earth is", "Under the surface, I feel shattered like a glass or a bubble", "Pressure like a drip, drip, drip that'll never stop, woah"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm the strong one, I'm not nervous, I'm as tough as the crust of the Earth is",
+          "Under the surface, I feel shattered like a glass or a bubble",
+          "Pressure like a drip, drip, drip that'll never stop, woah"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "tQwVKr8rCYw"
+      }
     },
     {
       "id": "disney-coco-loco",
@@ -266,7 +422,11 @@
       "country": "US/MX",
       "genre": "Soundtrack / Mariachi",
       "difficulty": "medium",
-      "mood": ["Happy", "Energy", "Cultural"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Cultural"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Thematisiert die Freude an der Musik und die Liebe zur Familie in 'Coco'.",
@@ -274,9 +434,18 @@
         "Ein quirliger Mitsing-Track voller Energie.",
         "Refrain: 'You make me un poco loco! Un poquitititi-to loco!'"
       ],
-      "lyrics": { "real": ["What color is the sky? Ay mi amor, ay mi amor", "You make me un poco loco, un poquitititi-to loco", "The way you keep me guessing, I'm nodding and I'm yess-ing"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "What color is the sky? Ay mi amor, ay mi amor",
+          "You make me un poco loco, un poquitititi-to loco",
+          "The way you keep me guessing, I'm nodding and I'm yess-ing"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-coco-rememberme",
@@ -286,7 +455,11 @@
       "country": "US/MX",
       "genre": "Soundtrack / Ballad",
       "difficulty": "easy",
-      "mood": ["Emotional", "Dreamy", "Classic"],
+      "mood": [
+        "Emotional",
+        "Dreamy",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Der zentrale Song des Films 'Coco'.",
@@ -295,9 +468,18 @@
         "Gewann den Oscar für den besten Song.",
         "Refrain: 'Remember me! Though I have to say goodbye!'"
       ],
-      "lyrics": { "real": ["Remember me, though I have to say goodbye, remember me, don't let it make you cry", "For even if I'm far away I hold you in my heart", "I sing a secret song to you each night we are apart"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Remember me, though I have to say goodbye, remember me, don't let it make you cry",
+          "For even if I'm far away I hold you in my heart",
+          "I sing a secret song to you each night we are apart"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "E7VP9" }
+      "links": {
+        "youtube": "E7VP9"
+      }
     },
     {
       "id": "disney-zootopia-try",
@@ -307,7 +489,11 @@
       "country": "CO/US",
       "genre": "Soundtrack / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Positive"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Titelsong aus 'Zoomania' (Zootopia).",
@@ -316,9 +502,18 @@
         "Ein moderner, kraftvoller Radio-Popsong.",
         "Refrain: 'I won't give up, no I won't give in! Till I reach the end and then I'll start again!'"
       ],
-      "lyrics": { "real": ["I messed up tonight, I lost another fight, I still mess up but I'll just start again", "I won't give up, no I won't give in, till I reach the end and then I'll start again", "Birds don't just fly, they fall down and get up"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "I messed up tonight, I lost another fight, I still mess up but I'll just start again",
+          "I won't give up, no I won't give in, till I reach the end and then I'll start again",
+          "Birds don't just fly, they fall down and get up"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-tangled-begin",
@@ -328,7 +523,11 @@
       "country": "US",
       "genre": "Soundtrack / Pop Rock",
       "difficulty": "easy",
-      "mood": ["Young", "Happy", "Dreamy"],
+      "mood": [
+        "Young",
+        "Happy",
+        "Dreamy"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Rapunzels Eröffnungssong aus 'Neu verföhnt' (Tangled).",
@@ -337,9 +536,18 @@
         "Inbegriff für jugendliche Neugier.",
         "Refrain: 'And I'll keep wondering and wondering and wondering and wondering!'"
       ],
-      "lyrics": { "real": ["7 AM, the usual morning lineup, start on the chores and sweep till the floor's all clean", "And I'll keep wondering and wondering and wondering and wondering", "When will my life begin?"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "7 AM, the usual morning lineup, start on the chores and sweep till the floor's all clean",
+          "And I'll keep wondering and wondering and wondering and wondering",
+          "When will my life begin?"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-tangled-mother",
@@ -349,7 +557,11 @@
       "country": "US",
       "genre": "Soundtrack / Broadway / Villain",
       "difficulty": "medium",
-      "mood": ["Manipulative", "Funny", "Classic"],
+      "mood": [
+        "Manipulative",
+        "Funny",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Der Song der Antagonistin Mutter Gothel.",
@@ -358,9 +570,18 @@
         "Ein Paradebeispiel für Disneys starke Bösewicht-Songs.",
         "Refrain: 'Mother knows best! Listen to your mother!'"
       ],
-      "lyrics": { "real": ["Mother knows best, listen to your mother, it's a scary world out there", "Mother knows best, one way or another, something will go wrong, I swear", "Rapunzel, Rapunzel, let down your hair!"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "Mother knows best, listen to your mother, it's a scary world out there",
+          "Mother knows best, one way or another, something will go wrong, I swear",
+          "Rapunzel, Rapunzel, let down your hair!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gjZ_f6X" }
+      "links": {
+        "youtube": "gjZ_f6X"
+      }
     },
     {
       "id": "disney-princess-frog-almost",
@@ -370,7 +591,11 @@
       "country": "US",
       "genre": "Soundtrack / Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Determined", "Happy", "Jazzy"],
+      "mood": [
+        "Determined",
+        "Happy",
+        "Jazzy"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Tianas ehrgeiziger Song über ihren Traum von einem eigenen Restaurant.",
@@ -378,9 +603,18 @@
         "Inbegriff für harte Arbeit und Zielstrebigkeit.",
         "Refrain: 'I'm almost there! People down here think I'm crazy!'"
       ],
-      "lyrics": { "real": ["Mama, I don't have time for dancing, that's just gonna have to wait a while", "And I'm almost there, I'm almost there", "People down here think I'm crazy, but I don't care"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Mama, I don't have time for dancing, that's just gonna have to wait a while",
+          "And I'm almost there, I'm almost there",
+          "People down here think I'm crazy, but I don't care"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ThMwHKfzz1I"
+      }
     },
     {
       "id": "disney-princess-frog-friends",
@@ -390,7 +624,11 @@
       "country": "US",
       "genre": "Soundtrack / Villain / Jazz",
       "difficulty": "medium",
-      "mood": ["Dark", "Magic", "Groovy"],
+      "mood": [
+        "Dark",
+        "Magic",
+        "Groovy"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Der Song des Voodoo-Meisters Dr. Facilier.",
@@ -399,9 +637,18 @@
         "Einer der visuell spektakulärsten Villain-Songs.",
         "Refrain: 'Are you ready? (Are you ready?)!'"
       ],
-      "lyrics": { "real": ["Don't you disrespect me little man, don't you derogate or deride", "I got friends on the other side (He's got friends on the other side)", "Sit down at my table, put your minds at ease"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Don't you disrespect me little man, don't you derogate or deride",
+          "I got friends on the other side (He's got friends on the other side)",
+          "Sit down at my table, put your minds at ease"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "yZAY-7" }
+      "links": {
+        "youtube": "yZAY-7"
+      }
     },
     {
       "id": "disney-mercy-tramp",
@@ -411,7 +658,11 @@
       "country": "US",
       "genre": "Soundtrack / Jazz / Blues",
       "difficulty": "easy",
-      "mood": ["Cool", "Sultry", "Classic"],
+      "mood": [
+        "Cool",
+        "Sultry",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen von Peggy (der Hündin) in 'Susi und Strolch'.",
@@ -420,9 +671,18 @@
         "Ein Inbegriff für Disneys frühe meisterhafte Musik-Einlagen.",
         "Refrain: 'He's a tramp! But I love him!'"
       ],
-      "lyrics": { "real": ["He's a tramp, but I love him, breaks a new heart every day", "He's a tramp, they adore him, and I only hope he'll stay that way", "He's a scamp, he's a wanderer"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "He's a tramp, but I love him, breaks a new heart every day",
+          "He's a tramp, they adore him, and I only hope he'll stay that way",
+          "He's a scamp, he's a wanderer"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-pinocchio-wish",
@@ -432,7 +692,11 @@
       "country": "US",
       "genre": "Soundtrack / Classical / Ballad",
       "difficulty": "easy",
-      "mood": ["Dreamy", "Iconic", "Classic"],
+      "mood": [
+        "Dreamy",
+        "Iconic",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Wurde zur inoffiziellen Hymne des gesamten Disney-Konzerns.",
@@ -441,9 +705,18 @@
         "Der Anfang des Songs wird oft vor Disney-Filmen gespielt.",
         "Refrain: 'When you wish upon a star! Makes no difference who you are!'"
       ],
-      "lyrics": { "real": ["When you wish upon a star, makes no difference who you are", "Anything your heart desires, will come to you", "If your heart is in your dream, no request is too extreme"], "fake": "In the shadow of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "When you wish upon a star, makes no difference who you are",
+          "Anything your heart desires, will come to you",
+          "If your heart is in your dream, no request is too extreme"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "MAr6C" }
+      "links": {
+        "youtube": "MAr6C"
+      }
     },
     {
       "id": "disney-mermaid-sea",
@@ -453,7 +726,11 @@
       "country": "US/JM",
       "genre": "Soundtrack / Calypso / Reggae",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Dance"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen von Sebastian der Krabbe in 'Arielle, die Meerjungfrau'.",
@@ -462,9 +739,18 @@
         "Gewann den Oscar für den besten Song.",
         "Refrain: 'Under the sea! Under the sea! Darling it's better down where it's wetter!'"
       ],
-      "lyrics": { "real": ["The seaweed is always greener, in somebody else's lake", "Under the sea, under the sea, darling it's better down where it's wetter", "Take it from me, take it from me"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend" },
+      "lyrics": {
+        "real": [
+          "The seaweed is always greener, in somebody else's lake",
+          "Under the sea, under the sea, darling it's better down where it's wetter",
+          "Take it from me, take it from me"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "disney-mermaid-kiss",
@@ -474,7 +760,11 @@
       "country": "US/JM",
       "genre": "Soundtrack / Calypso / Ballad",
       "difficulty": "easy",
-      "mood": ["Romantic", "Chill", "Classic"],
+      "mood": [
+        "Romantic",
+        "Chill",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Begleitet die (fast-)romantische Bootsfahrt von Arielle und Prinz Erik.",
@@ -483,9 +773,18 @@
         "Ein Inbegriff für Disney-Romantik am Wasser.",
         "Refrain: 'Sha la la la la la! My oh my! Look at the boy too shy!'"
       ],
-      "lyrics": { "real": ["There you see her, sitting there across the way", "Sha la la la la la, my oh my, look at the boy too shy", "Ain't gonna kiss the girl, sha la la la la la"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "There you see her, sitting there across the way",
+          "Sha la la la la la, my oh my, look at the boy too shy",
+          "Ain't gonna kiss the girl, sha la la la la la"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-mermaid-world",
@@ -495,7 +794,11 @@
       "country": "US",
       "genre": "Soundtrack / Broadway / Ballad",
       "difficulty": "easy",
-      "mood": ["Dreamy", "Emotional", "Classic"],
+      "mood": [
+        "Dreamy",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Arielles Sehnsuchtslied nach der Welt der Menschen.",
@@ -504,9 +807,18 @@
         "Begründete die neue Ära der Disney-Heldinnen-Balladen.",
         "Refrain: 'I want to be where the people are! I want to see, want to see them dancing!'"
       ],
-      "lyrics": { "real": ["Look at this stuff, isn't it neat? Wouldn't you think my collection's complete?", "I want to be where the people are, I want to see, want to see them dancing", "Walking around on those, what do you call 'em? Oh, feet!"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Look at this stuff, isn't it neat? Wouldn't you think my collection's complete?",
+          "I want to be where the people are, I want to see, want to see them dancing",
+          "Walking around on those, what do you call 'em? Oh, feet!"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-alice-late",
@@ -516,7 +828,11 @@
       "country": "US",
       "genre": "Soundtrack / Fast / Classic",
       "difficulty": "easy",
-      "mood": ["Fast", "Funny", "Classic"],
+      "mood": [
+        "Fast",
+        "Funny",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen vom Weißen Hasen in 'Alice im Wunderland'.",
@@ -525,9 +841,18 @@
         "Ein Inbegriff für den schrägen Charme des Films.",
         "Refrain: 'I'm late! I'm late! For a very important date!'"
       ],
-      "lyrics": { "real": ["I'm late, I'm late, for a very important date", "No time to say hello, goodbye, I'm late, I'm late, I'm late", "I'm overdue, I'm really in a stew"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "I'm late, I'm late, for a very important date",
+          "No time to say hello, goodbye, I'm late, I'm late, I'm late",
+          "I'm overdue, I'm really in a stew"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-cindy-bibbidi",
@@ -537,7 +862,11 @@
       "country": "US",
       "genre": "Soundtrack / Magic",
       "difficulty": "easy",
-      "mood": ["Funny", "Magic", "Classic"],
+      "mood": [
+        "Funny",
+        "Magic",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Cinderellas Zauberspruch-Song der Guten Fee.",
@@ -546,9 +875,18 @@
         "Ein Inbegriff für Disneys frühe Animations-Highlights.",
         "Refrain: 'Salagadoola mechicka boola! Bibbidi-bobbidi-boo!'"
       ],
-      "lyrics": { "real": ["Salagadoola mechicka boola, bibbidi-bobbidi-boo", "Put them together and what have you got? Bibbidi-bobbidi-boo", "It'll do magic, believe it or not"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Salagadoola mechicka boola, bibbidi-bobbidi-boo",
+          "Put them together and what have you got? Bibbidi-bobbidi-boo",
+          "It'll do magic, believe it or not"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-cindy-dream",
@@ -558,7 +896,11 @@
       "country": "US",
       "genre": "Soundtrack / Ballad",
       "difficulty": "easy",
-      "mood": ["Dreamy", "Emotional", "Classic"],
+      "mood": [
+        "Dreamy",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Inbegriff für Cinderellas unerschütterlichen Optimismus.",
@@ -566,9 +908,18 @@
         "Ilene Woods' sanfte Stimme macht den Song zum zeitlosen Klassiker.",
         "Refrain: 'A dream is a wish your heart makes! When you're fast asleep!'"
       ],
-      "lyrics": { "real": ["A dream is a wish your heart makes, when you're fast asleep", "In dreams you will lose your heartaches, whatever you wish for, you keep", "No matter how your heart is grieving, if you keep on believing"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "A dream is a wish your heart makes, when you're fast asleep",
+          "In dreams you will lose your heartaches, whatever you wish for, you keep",
+          "No matter how your heart is grieving, if you keep on believing"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-sleeping-dream",
@@ -578,7 +929,11 @@
       "country": "US",
       "genre": "Soundtrack / Classical / Ballad",
       "difficulty": "easy",
-      "mood": ["Romantic", "Dreamy", "Classic"],
+      "mood": [
+        "Romantic",
+        "Dreamy",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Basierend auf dem berühmten Walzer aus Tschaikowskis Ballett für 'Dornröschen'.",
@@ -587,9 +942,18 @@
         "Ein Inbegriff für die klassische Disney-Operetten-Ära.",
         "Refrain: 'I know you! I walked with you once upon a dream!'"
       ],
-      "lyrics": { "real": ["I know you, I walked with you once upon a dream", "I know you, the gleam in your eyes is so familiar a gleam", "Yet I know it's true, that visions are seldom all they seem"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I know you, I walked with you once upon a dream",
+          "I know you, the gleam in your eyes is so familiar a gleam",
+          "Yet I know it's true, that visions are seldom all they seem"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "9yTtfyzT1nw"
+      }
     },
     {
       "id": "disney-snowwhite-someday",
@@ -599,7 +963,11 @@
       "country": "US",
       "genre": "Soundtrack / Classical",
       "difficulty": "easy",
-      "mood": ["Dreamy", "Romantic", "Classic"],
+      "mood": [
+        "Dreamy",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Stammt aus 'Schneewittchen und die sieben Zwerge', dem ersten abendfüllenden Zeichentrickfilm.",
@@ -608,9 +976,18 @@
         "Wurde später oft von Jazz-Musikern gecovert.",
         "Refrain: 'Someday my prince will come! Someday we'll meet again!'"
       ],
-      "lyrics": { "real": ["Someday my prince will come, someday we'll meet again", "And away to his castle we'll go, to be happy forever I know", "Someday when spring is here, we'll find our love anew"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Someday my prince will come, someday we'll meet again",
+          "And away to his castle we'll go, to be happy forever I know",
+          "Someday when spring is here, we'll find our love anew"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-peterpan-fly",
@@ -620,7 +997,11 @@
       "country": "US",
       "genre": "Soundtrack / Happy",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Magic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Magic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Begleitet die fliegenden Kinder auf ihrem Weg nach Nimmerland.",
@@ -629,9 +1010,18 @@
         "Zentraler Song für die Vorstellungskraft des Films 'Peter Pan'.",
         "Refrain: 'Think of a wonderful thought! Any happy little thought!'"
       ],
-      "lyrics": { "real": ["Think of a wonderful thought, any happy little thought", "You can fly! You can fly! You can fly!", "Just a little bit of pixie dust!"], "fake": "In the shadow of the night, we're looking for the light of our happy love" },
+      "lyrics": {
+        "real": [
+          "Think of a wonderful thought, any happy little thought",
+          "You can fly! You can fly! You can fly!",
+          "Just a little bit of pixie dust!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our happy love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "kyd1j3mRsw4"
+      }
     },
     {
       "id": "disney-jungle-bare",
@@ -641,7 +1031,11 @@
       "country": "US",
       "genre": "Soundtrack / Jazz / Happy",
       "difficulty": "easy",
-      "mood": ["Chill", "Happy", "Positive"],
+      "mood": [
+        "Chill",
+        "Happy",
+        "Positive"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Balus Lebensphilosophie aus 'Das Dschungelbuch'.",
@@ -650,9 +1044,18 @@
         "Ein Inbegriff für unbeschwerte Disney-Fröhlichkeit.",
         "Refrain: 'Look for the bare necessities! The simple bare necessities!'"
       ],
-      "lyrics": { "real": ["Look for the bare necessities, the simple bare necessities", "Forget about your worries and your strife", "I mean the bare necessities, are Mother Nature's recipes"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "Look for the bare necessities, the simple bare necessities",
+          "Forget about your worries and your strife",
+          "I mean the bare necessities, are Mother Nature's recipes"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-jungle-likeyou",
@@ -662,7 +1065,11 @@
       "country": "US",
       "genre": "Soundtrack / Swing / Jazz",
       "difficulty": "medium",
-      "mood": ["Energy", "Funny", "Groovy"],
+      "mood": [
+        "Energy",
+        "Funny",
+        "Groovy"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen von King Louie in 'Das Dschungelbuch'.",
@@ -671,9 +1078,18 @@
         "Ein absolutes Highlight des Films, das zum Tanzen einlädt.",
         "Refrain: 'I wanna be like you! I wanna walk like you, talk like youToo!'"
       ],
-      "lyrics": { "real": ["I'm the king of the swingers, oh, the jungle VIP", "I wanna be like you, I wanna walk like you, talk like you too", "You'll see it's true, an ape like me, can learn to be human too"], "fake": "Dancing in the street, moving to the beat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "I'm the king of the swingers, oh, the jungle VIP",
+          "I wanna be like you, I wanna walk like you, talk like you too",
+          "You'll see it's true, an ape like me, can learn to be human too"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-poppins-sugar",
@@ -683,7 +1099,11 @@
       "country": "GB/US",
       "genre": "Soundtrack / Classical / Happy",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Mary Poppins' Art, unangenehme Aufgaben spaßig zu gestalten.",
@@ -692,9 +1112,18 @@
         "Besticht durch den hüpfenden Rhythmus und den klaren Gesang.",
         "Refrain: 'A spoonful of sugar helps the medicine go down!'"
       ],
-      "lyrics": { "real": ["In every job that must be done, there is an element of fun", "A spoonful of sugar helps the medicine go down, the medicine go down, medicine go down", "Just a spoonful of sugar helps the medicine go down"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "In every job that must be done, there is an element of fun",
+          "A spoonful of sugar helps the medicine go down, the medicine go down, medicine go down",
+          "Just a spoonful of sugar helps the medicine go down"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-poppins-supercali",
@@ -704,7 +1133,11 @@
       "country": "GB/US",
       "genre": "Soundtrack / Funny",
       "difficulty": "hard",
-      "mood": ["Fast", "Funny", "Classic"],
+      "mood": [
+        "Fast",
+        "Funny",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Vielleicht das bekannteste Kunstwort der Musikgeschichte.",
@@ -713,9 +1146,18 @@
         "Ein Inbegriff für unbeschwerte Disney-Phantasie.",
         "Refrain: 'Supercalifragilisticexpialidocious!'"
       ],
-      "lyrics": { "real": ["Supercalifragilisticexpialidocious! Even though the sound of it is something quite atrocious", "If you say it loud enough, you'll always sound precocious", "Supercalifragilisticexpialidocious!"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "Supercalifragilisticexpialidocious! Even though the sound of it is something quite atrocious",
+          "If you say it loud enough, you'll always sound precocious",
+          "Supercalifragilisticexpialidocious!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-poppins-chim",
@@ -725,7 +1167,11 @@
       "country": "GB/US",
       "genre": "Soundtrack / Waltz",
       "difficulty": "easy",
-      "mood": ["Atmospheric", "Dreamy", "Classic"],
+      "mood": [
+        "Atmospheric",
+        "Dreamy",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Gesungen von Schornsteinfeger Bert in 'Mary Poppins'.",
@@ -734,9 +1180,18 @@
         "Gewann den Oscar für den besten Song.",
         "Refrain: 'Chim chiminey, chim chiminey, chim chim cher-oo!'"
       ],
-      "lyrics": { "real": ["Chim chiminey, chim chiminey, chim chim cher-oo!", "A sweep is as lucky as lucky can be", "Chim chiminey, chim chiminey, chim chim cher-ee!"], "fake": "In the shadow of the night, we're looking for the light of our broken heart" },
+      "lyrics": {
+        "real": [
+          "Chim chiminey, chim chiminey, chim chim cher-oo!",
+          "A sweep is as lucky as lucky can be",
+          "Chim chiminey, chim chiminey, chim chim cher-ee!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-aristocats-cat",
@@ -746,7 +1201,11 @@
       "country": "US",
       "genre": "Soundtrack / Jazz / Swing",
       "difficulty": "medium",
-      "mood": ["Groovy", "Energy", "Cool"],
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Cool"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Inbegriff der Jazz-Kultur für Kinder aus 'Aristocats'.",
@@ -755,9 +1214,18 @@
         "Ein absoluter Kult-Track des Films.",
         "Refrain: 'Ev'rybody wants to be a cat! Because a cat's the only cat who knows where it's at!'"
       ],
-      "lyrics": { "real": ["Ev'rybody wants to be a cat, because a cat's the only cat who knows where it's at", "Tell me, ev'rybody's pickin' up on that feline beat", "Cause ev'rything else is obsolete"], "fake": "Dancing in the street, moving to the beat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "Ev'rybody wants to be a cat, because a cat's the only cat who knows where it's at",
+          "Tell me, ev'rybody's pickin' up on that feline beat",
+          "Cause ev'rything else is obsolete"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-robin-lally",
@@ -767,7 +1235,11 @@
       "country": "US",
       "genre": "Soundtrack / Folk / Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Chill", "Funny"],
+      "mood": [
+        "Happy",
+        "Chill",
+        "Funny"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Begleitet Robin Hood und Little John im Sherwood Forest.",
@@ -776,9 +1248,18 @@
         "Ein kurzer, aber extrem einprägsamer Ohrwurm.",
         "Refrain: 'Oo-de-lally, oo-de-lally, golly, what a day!'"
       ],
-      "lyrics": { "real": ["Robin Hood and Little John walkin' through the forest, laughin' back and forth", "Oo-de-lally, oo-de-lally, golly, what a day", "Never mindin' such a triflin' things as a friend or a foe"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Robin Hood and Little John walkin' through the forest, laughin' back and forth",
+          "Oo-de-lally, oo-de-lally, golly, what a day",
+          "Never mindin' such a triflin' things as a friend or a foe"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-mulan-reflection",
@@ -788,7 +1269,11 @@
       "country": "US/PH",
       "genre": "Soundtrack / Broadway / Ballad",
       "difficulty": "easy",
-      "mood": ["Emotional", "Serene", "Classic"],
+      "mood": [
+        "Emotional",
+        "Serene",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Mulans Lied über Identität und den Wunsch nach Anerkennung ihres wahren Ichs.",
@@ -797,9 +1282,18 @@
         "Ein Inbegriff für die emotionale Reife des Disney-Songwritings.",
         "Refrain: 'When will my reflection show... who I am inside?'"
       ],
-      "lyrics": { "real": ["Look at me, you may think you see who I really am, but you'll never know me", "When will my reflection show, who I am inside?", "Why must we all conceal what we think, how we feel?"], "fake": "In the shadow of the night, we're looking for the light of our broken soul" },
+      "lyrics": {
+        "real": [
+          "Look at me, you may think you see who I really am, but you'll never know me",
+          "When will my reflection show, who I am inside?",
+          "Why must we all conceal what we think, how we feel?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-mulan-manout",
@@ -809,7 +1303,11 @@
       "country": "US",
       "genre": "Soundtrack / Energy / Epic",
       "difficulty": "easy",
-      "mood": ["Energy", "Powerful", "Funny"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Funny"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Die ultimative Trainings-Hymne aus 'Mulan'.",
@@ -818,9 +1316,18 @@
         "Ein extrem beliebter Song, der oft als Motivations-Track genutzt wird.",
         "Refrain: 'I'll make a man out of you! (Be a man!)'"
       ],
-      "lyrics": { "real": ["Let's get down to business to defeat the Huns", "You must be swift as the coursing river (Be a man)", "With all the force of a great typhoon (Be a man)"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Let's get down to business to defeat the Huns",
+          "You must be swift as the coursing river (Be a man)",
+          "With all the force of a great typhoon (Be a man)"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "TVcLIfSC4OE" }
+      "links": {
+        "youtube": "TVcLIfSC4OE"
+      }
     },
     {
       "id": "disney-pocahontas-colors",
@@ -830,7 +1337,11 @@
       "country": "US",
       "genre": "Soundtrack / Broadway / Ballad",
       "difficulty": "easy",
-      "mood": ["Epic", "Inspirational", "Serene"],
+      "mood": [
+        "Epic",
+        "Inspirational",
+        "Serene"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Inbegriff für Pocahontas' Verbindung zur Natur und ihre Weisheit.",
@@ -839,9 +1350,18 @@
         "Besticht durch die bildhafte Sprache und die orchestrale Weite.",
         "Refrain: 'Can you paint with all the colors of the wind?'"
       ],
-      "lyrics": { "real": ["You think I'm an ignorant savage, and you've been so many places", "Can you paint with all the colors of the wind?", "You can own the earth and still, all you'll own is earth until"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "You think I'm an ignorant savage, and you've been so many places",
+          "Can you paint with all the colors of the wind?",
+          "You can own the earth and still, all you'll own is earth until"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-lion-prepared",
@@ -851,7 +1371,11 @@
       "country": "US",
       "genre": "Soundtrack / Villain / Powerful",
       "difficulty": "easy",
-      "mood": ["Dark", "Powerful", "Theatrical"],
+      "mood": [
+        "Dark",
+        "Powerful",
+        "Theatrical"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Scars düsterer Planungs-Song für die Machtübernahme in 'Der König der Löwen'.",
@@ -859,9 +1383,18 @@
         "Ein Inbegriff für Disneys meisterhafte Charakterisierung von Schurken durch Musik.",
         "Refrain: 'Be prepared! Be prepared!'"
       ],
-      "lyrics": { "real": ["I know that your powers of retention, are as wet as a warthog's backside", "Be prepared! Our teeth and ambitions are bared!", "Be prepared!"], "fake": "In the shadow of the night, we're looking for the light of our broken dream" },
+      "lyrics": {
+        "real": [
+          "I know that your powers of retention, are as wet as a warthog's backside",
+          "Be prepared! Our teeth and ambitions are bared!",
+          "Be prepared!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "5WsZdDDQ8b0"
+      }
     },
     {
       "id": "disney-lion-king-ready",
@@ -871,7 +1404,11 @@
       "country": "US/GB",
       "genre": "Soundtrack / Happy / Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Confident"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Confident"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Simba's fröhliches Lied über seine Zukunft als alleiniger Herrscher.",
@@ -880,9 +1417,18 @@
         "Besitzt einen frischen, afrikanisch inspirierten Pop-Sound.",
         "Refrain: 'Oh, I just can't wait to be king!'"
       ],
-      "lyrics": { "real": ["I'm gonna be a mighty king, so enemies beware!", "Oh, I just can't wait to be king!", "No one saying 'do this', no one saying 'be there'"], "fake": "Dancing in the street, moving to the beat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "I'm gonna be a mighty king, so enemies beware!",
+          "Oh, I just can't wait to be king!",
+          "No one saying 'do this', no one saying 'be there'"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-lion-matata",
@@ -892,7 +1438,11 @@
       "country": "US",
       "genre": "Soundtrack / Happy / Funny",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Chill"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Chill"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Timon und Pumbas Lebensmotto, das weltweit Kult wurde.",
@@ -901,9 +1451,18 @@
         "Besitzt einen extrem einprägsamen Mitsing-Refrain.",
         "Refrain: 'Hakuna Matata! What a wonderful phrase!'"
       ],
-      "lyrics": { "real": ["Hakuna Matata! What a wonderful phrase", "Hakuna Matata! Ain't no passing craze", "It means no worries, for the rest of your days"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Hakuna Matata! What a wonderful phrase",
+          "Hakuna Matata! Ain't no passing craze",
+          "It means no worries, for the rest of your days"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-hercules-hero",
@@ -913,7 +1472,11 @@
       "country": "US",
       "genre": "Soundtrack / Gospel / Soul",
       "difficulty": "medium",
-      "mood": ["Energy", "Explosive", "Funny"],
+      "mood": [
+        "Energy",
+        "Explosive",
+        "Funny"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Die Musen besingen den rasanten Aufstieg des Hercules vom Niemand zum Star.",
@@ -922,9 +1485,18 @@
         "Ein absoluter Gute-Laune-Track des Films.",
         "Refrain: 'From zero to hero! In no time flat!'"
       ],
-      "lyrics": { "real": ["Bless my soul! Herc was on a roll", "From zero to hero, in no time flat", "Zero to hero, just like that!"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Bless my soul! Herc was on a roll",
+          "From zero to hero, in no time flat",
+          "Zero to hero, just like that!"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-hercules-inlove",
@@ -934,7 +1506,11 @@
       "country": "US",
       "genre": "Soundtrack / Pop / Soul",
       "difficulty": "easy",
-      "mood": ["Cool", "Determined", "Romantic"],
+      "mood": [
+        "Cool",
+        "Determined",
+        "Romantic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Megaras (Meg) Weigerung, sich ihre Gefühle für Hercules einzugestehen.",
@@ -943,9 +1519,18 @@
         "Ein cooler und moderner Disney-Song.",
         "Refrain: 'I won't say I'm in love... (No chance, no way)'"
       ],
-      "lyrics": { "real": ["If there's a prize for rotten judgment, I guess I've already won that", "I won't say I'm in love (No chance no way, I won't say it)", "It's too cliché, I won't say I'm in love"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "If there's a prize for rotten judgment, I guess I've already won that",
+          "I won't say I'm in love (No chance no way, I won't say it)",
+          "It's too cliché, I won't say I'm in love"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "DPMjsfJwUow"
+      }
     },
     {
       "id": "disney-hercules-distance",
@@ -955,7 +1540,11 @@
       "country": "US",
       "genre": "Soundtrack / Broadway / Ballad",
       "difficulty": "easy",
-      "mood": ["Determined", "Epic", "Classic"],
+      "mood": [
+        "Determined",
+        "Epic",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Hercules' Sehnsuchtslied nach seiner wahren Bestimmung und Herkunft.",
@@ -964,9 +1553,18 @@
         "Ein kraftvoller, epischer Disney-Track.",
         "Refrain: 'I will find my way! I can go the distance!'"
       ],
-      "lyrics": { "real": ["I have often dreamed of a far off place, where a hero's welcome would be waiting for me", "I will find my way, I can go the distance", "I'll be there someday, if I can be strong"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "I have often dreamed of a far off place, where a hero's welcome would be waiting for me",
+          "I will find my way, I can go the distance",
+          "I'll be there someday, if I can be strong"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-toy-friend",
@@ -976,7 +1574,11 @@
       "country": "US",
       "genre": "Soundtrack / Pop / Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Thematisiert die bedingungslose Freundschaft zwischen Andy und seinen Spielzeugen in 'Toy Story'.",
@@ -985,9 +1587,18 @@
         "Begleitete alle Teile der 'Toy Story' Saga.",
         "Refrain: 'You've got a friend in me! You've got a friend in me!'"
       ],
-      "lyrics": { "real": ["You've got a friend in me, you've got a friend in me", "When the road looks rough ahead, and you're miles and miles from your nice warm bed", "Just remember what your old pal said, you've got a friend in me"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "You've got a friend in me, you've got a friend in me",
+          "When the road looks rough ahead, and you're miles and miles from your nice warm bed",
+          "Just remember what your old pal said, you've got a friend in me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Xv8976X" }
+      "links": {
+        "youtube": "Xv8976X"
+      }
     },
     {
       "id": "disney-toy2-lovedme",
@@ -997,7 +1608,11 @@
       "country": "US/CA",
       "genre": "Soundtrack / Ballad",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Nostalgic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Nostalgic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Beschreibt Jessies (Cowgirl) schmerzhafte Vergangenheit und das Verlassenwerden in 'Toy Story 2'.",
@@ -1006,9 +1621,18 @@
         "Ein echter Gänsehaut-Track.",
         "Refrain: 'When somebody loved me! Ev'rything was beautiful!'"
       ],
-      "lyrics": { "real": ["When somebody loved me, ev'rything was beautiful", "Ev'ry hour we spent together, lives within my heart", "And when she was sad, I was there to dry her tears"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "When somebody loved me, ev'rything was beautiful",
+          "Ev'ry hour we spent together, lives within my heart",
+          "And when she was sad, I was there to dry her tears"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "disney-up-life",
@@ -1018,7 +1642,11 @@
       "country": "US",
       "genre": "Soundtrack / Instrumental / Waltz",
       "difficulty": "medium",
-      "mood": ["Emotional", "Nostalgic", "Epic"],
+      "mood": [
+        "Emotional",
+        "Nostalgic",
+        "Epic"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Obwohl weitestgehend instrumental, ist dieser Song die Seele des Zeichentrickfilms 'Oben' (Up).",
@@ -1027,9 +1655,18 @@
         "Ein Inbegriff für meisterhafte filmmusikalische Erzählkunst.",
         "Genre-Inhalt: Nostalgischer Klavier- und Akkordeon-Sound."
       ],
-      "lyrics": { "real": ["(Instrumental piece - but everybody knows the feeling!)", "(Emotional journey through life and love)", "(The heart of UP)"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - but everybody knows the feeling!)",
+          "(Emotional journey through life and love)",
+          "(The heart of UP)"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "disney-cars-highway",
@@ -1039,7 +1676,11 @@
       "country": "US",
       "genre": "Soundtrack / Country Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Positive"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Positive"
+      ],
       "pack": "Kids & Disney Magic",
       "hints": [
         "Eine moderne Pop-Country-Interpretation des Hits von Tom Cochrane für 'Cars'.",
@@ -1048,9 +1689,18 @@
         "Ein absoluter Favorit für Roadtrips und Fans von Lightning McQueen.",
         "Refrain: 'Life is a highway! I want to ride it all night long!'"
       ],
-      "lyrics": { "real": ["Life's like a road that you travel on when there's one day here and the next day gone", "Life is a highway, I want to ride it all night long", "If you're going my way, I want to drive it all night long"], "fake": "In the middle of the street, you can feel the heat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "Life's like a road that you travel on when there's one day here and the next day gone",
+          "Life is a highway, I want to ride it all night long",
+          "If you're going my way, I want to drive it all night long"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     }
   ]
 }

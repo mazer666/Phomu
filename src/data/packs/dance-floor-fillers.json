@@ -13,7 +13,11 @@
       "country": "DE",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Dance", "Energy", "Classic"],
+      "mood": [
+        "Dance",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Einer der erfolgreichsten Eurodance-Songs der 90er Jahre, produziert in Deutschland.",
@@ -22,9 +26,18 @@
         "Das Video spielt in einem futuristischen Space-Setting mit viel Nebel.",
         "Refrain: 'Rhythm is a dancer, it's a soul's companion...'"
       ],
-      "lyrics": { "real": ["Rhythm is a dancer, it's a soul's companion, you can feel it everywhere", "Lift your hands and voices, free your mind and join us, you can feel it in the air", "Oh, it's a passion, oh, you can feel it in your soul"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "Rhythm is a dancer, it's a soul's companion, you can feel it everywhere",
+          "Lift your hands and voices, free your mind and join us, you can feel it in the air",
+          "Oh, it's a passion, oh, you can feel it in your soul"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "KlyXNRrsk4A" }
+      "links": {
+        "youtube": "KlyXNRrsk4A"
+      }
     },
     {
       "id": "dance-dr-alban-its-my-life",
@@ -34,7 +47,11 @@
       "country": "SE",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Dance"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Gesungen von einem gelernten Zahnarzt aus Schweden (mit nigerianischen Wurzeln).",
@@ -43,9 +60,18 @@
         "Wurde in einer berühmten Tampon-Werbung in Deutschland verwendet.",
         "Refrain: 'Stop bugging me, stop bothering me, stop bugging me, stop forcing me!'"
       ],
-      "lyrics": { "real": ["It's my life, take it or leave it, set me free, what's that you say?", "It's my life, my problems, it's my life, my worries", "It's my life, take it or leave it, it's my life, my way"], "fake": "In the middle of the street, you can feel the heat of the beat" },
+      "lyrics": {
+        "real": [
+          "It's my life, take it or leave it, set me free, what's that you say?",
+          "It's my life, my problems, it's my life, my worries",
+          "It's my life, take it or leave it, it's my life, my way"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the beat"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "4zHm_6LIVGE" }
+      "links": {
+        "youtube": "oW0VovnyjPY"
+      }
     },
     {
       "id": "dance-haddaway-what-is-love",
@@ -55,7 +81,11 @@
       "country": "DE",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Dance", "Classic", "Fun"],
+      "mood": [
+        "Dance",
+        "Classic",
+        "Fun"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Unsterblich geworden durch den 'Night at the Roxbury'-Sketch bei SNL (mit dem seitlichen Kopf-Nicken).",
@@ -64,9 +94,18 @@
         "Refrain: 'What is love? Baby don't hurt me, don't hurt me, no more.'",
         "Wurde Jahre später durch Internet-Memes erneut zum Kult."
       ],
-      "lyrics": { "real": ["What is love? Baby don't hurt me, don't hurt me, no more", "I don't know why you're not there, I give you my love but you don't care", "What is right and what is wrong? Give me a sign"], "fake": "Looking for a heart, falling apart, right from the start" },
+      "lyrics": {
+        "real": [
+          "What is love? Baby don't hurt me, don't hurt me, no more",
+          "I don't know why you're not there, I give you my love but you don't care",
+          "What is right and what is wrong? Give me a sign"
+        ],
+        "fake": "Looking for a heart, falling apart, right from the start"
+      },
       "isOne_hit_wonder": true,
-      "links": { "youtube": "HEXWRTEbj1I" }
+      "links": {
+        "youtube": "HEXWRTEbj1I"
+      }
     },
     {
       "id": "dance-culture-beat-mr-vain",
@@ -76,7 +115,11 @@
       "country": "DE",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Fast", "Energy", "Dance"],
+      "mood": [
+        "Fast",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Produziert vom Frankfurter DJ Torsten Fenslau.",
@@ -85,9 +128,18 @@
         "War 1993 die erfolgreichste Single in Europa.",
         "Refrain: 'Call him Mr. Vain, call him Mr. Wrong, call him Mr. Insane!'"
       ],
-      "lyrics": { "real": ["Call him Mr. Vain, call him Mr. Wrong, call him Mr. Insane", "I know what I want and I want it now, I want you cause I'm Mr. Vain", "He'd say: I know what I want and I want it now!"], "fake": "Nothing's gonna stop me now, I'm the king of the night somehow" },
+      "lyrics": {
+        "real": [
+          "Call him Mr. Vain, call him Mr. Wrong, call him Mr. Insane",
+          "I know what I want and I want it now, I want you cause I'm Mr. Vain",
+          "He'd say: I know what I want and I want it now!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm the king of the night somehow"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "mfWb_60lhw0" }
+      "links": {
+        "youtube": "mfWb_60lhw0"
+      }
     },
     {
       "id": "dance-corona-rhythm-of-the-night",
@@ -97,7 +149,11 @@
       "country": "IT",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Classic"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Classic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Ein Klassiker des italienischen Eurodance-Booms.",
@@ -106,9 +162,18 @@
         "Refrain: 'This is the rhythm of the night, the night, oh yeah.'",
         "Erreichte Jahre später durch den Film 'The Last Workshop' und Memes erneut Popularität."
       ],
-      "lyrics": { "real": ["This is the rhythm of the night, the night, oh yeah", "The rhythm of the night, this is the rhythm of my life", "My life, oh yeah, the rhythm of the night"], "fake": "Dancing to the beat, moving my feet, in the summer heat" },
+      "lyrics": {
+        "real": [
+          "This is the rhythm of the night, the night, oh yeah",
+          "The rhythm of the night, this is the rhythm of my life",
+          "My life, oh yeah, the rhythm of the night"
+        ],
+        "fake": "Dancing to the beat, moving my feet, in the summer heat"
+      },
       "isOne_hit_wonder": true,
-      "links": { "youtube": "u3ltZmI5LQw" }
+      "links": {
+        "youtube": "u3ltZmI5LQw"
+      }
     },
     {
       "id": "dance-la-bouche-be-my-lover",
@@ -118,7 +183,11 @@
       "country": "DE",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Energy"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Entdeckt und produziert vom legendären Frank Farian (Boney M., Milli Vanilli).",
@@ -127,9 +196,18 @@
         "War ein riesiger Charterfolg in den USA und Europa.",
         "Refrain: 'Be my lover, wanna be my lover, go and be my lover!'"
       ],
-      "lyrics": { "real": ["La da da dee da da da da, be my lover", "Wanna be my lover, looking back on all the time we spent together", "You oughta know by now if you wanna be my lover"], "fake": "Sun is coming up and we're dancing till the light of day" },
+      "lyrics": {
+        "real": [
+          "La da da dee da da da da, be my lover",
+          "Wanna be my lover, looking back on all the time we spent together",
+          "You oughta know by now if you wanna be my lover"
+        ],
+        "fake": "Sun is coming up and we're dancing till the light of day"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "5P0_vEosWp0" }
+      "links": {
+        "youtube": "5P0_vEosWp0"
+      }
     },
     {
       "id": "dance-scatman-john-scatman",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Eurodance",
       "difficulty": "hard",
-      "mood": ["Fun", "Fast", "Creative"],
+      "mood": [
+        "Fun",
+        "Fast",
+        "Creative"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Der Sänger war ein Jazz-Pianist, der zeitlebens stotterte und dies zu seinem Markenzeichen machte.",
@@ -148,9 +230,18 @@
         "Wurde im Alter von 52 Jahren zum Weltstar.",
         "Refrain: 'I'm the Scatman! Ski-ba-bop-ba-dop-bop!'"
       ],
-      "lyrics": { "real": ["I'm the Scatman! Ski-ba-bop-ba-dop-bop!", "Everybody stutters one way or the other, so check out my message to you", "Matter of fact, don't let nothing hold you back, if the Scatman can do it, so can you"], "fake": "Moving to the left, moving to the right, in the blue light" },
+      "lyrics": {
+        "real": [
+          "I'm the Scatman! Ski-ba-bop-ba-dop-bop!",
+          "Everybody stutters one way or the other, so check out my message to you",
+          "Matter of fact, don't let nothing hold you back, if the Scatman can do it, so can you"
+        ],
+        "fake": "Moving to the left, moving to the right, in the blue light"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "Hy8kmNEo1i8" }
+      "links": {
+        "youtube": "Hy8kmNEo1i8"
+      }
     },
     {
       "id": "dance-gala-freed-from-desire",
@@ -160,7 +251,11 @@
       "country": "IT",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Dance", "Energy", "Anthem"],
+      "mood": [
+        "Dance",
+        "Energy",
+        "Anthem"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Wurde Jahrzehnte später zur Hymne in Fußball- und Dartstadien ('Will Grigg's on fire').",
@@ -169,9 +264,18 @@
         "Ein Song über die Freiheit von materialistischen Begierden.",
         "Refrain: 'Freed from desire, mind and senses purified!'"
       ],
-      "lyrics": { "real": ["My love has got no money, he's got his strong beliefs", "My love has got no power, he's got his strong beliefs", "Wanting more and more, people just want more and more"], "fake": "Dancing in the fire, taking it higher, higher and higher" },
+      "lyrics": {
+        "real": [
+          "My love has got no money, he's got his strong beliefs",
+          "My love has got no power, he's got his strong beliefs",
+          "Wanting more and more, people just want more and more"
+        ],
+        "fake": "Dancing in the fire, taking it higher, higher and higher"
+      },
       "isOne_hit_wonder": true,
-      "links": { "youtube": "p3l7fgvrEKM" }
+      "links": {
+        "youtube": "p3l7fgvrEKM"
+      }
     },
     {
       "id": "dance-spice-girls-wannabe",
@@ -181,7 +285,11 @@
       "country": "GB",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Pop"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Pop"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Die Debütsingle, die das Phänomen 'Girl Power' weltweit bekannt machte.",
@@ -190,9 +298,18 @@
         "Der Begriff 'zig-a-zig-ah' wurde zum geflügelten Wort.",
         "Refrain: 'If you wanna be my lover, you gotta get with my friends!'"
       ],
-      "lyrics": { "real": ["I'll tell you what I want, what I really, really want", "If you wanna be my lover, you gotta get with my friends", "Make it last forever, friendship never ends"], "fake": "In the middle of the night, we're gonna hold you tight" },
+      "lyrics": {
+        "real": [
+          "I'll tell you what I want, what I really, really want",
+          "If you wanna be my lover, you gotta get with my friends",
+          "Make it last forever, friendship never ends"
+        ],
+        "fake": "In the middle of the night, we're gonna hold you tight"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "gJLIiF15wjQ" }
+      "links": {
+        "youtube": "gJLIiF15wjQ"
+      }
     },
     {
       "id": "dance-backstreet-boys-everybody",
@@ -202,7 +319,11 @@
       "country": "US",
       "genre": "Pop",
       "difficulty": "medium",
-      "mood": ["Dance", "Classic", "Energy"],
+      "mood": [
+        "Dance",
+        "Classic",
+        "Energy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Das Musikvideo ist im Horror-Stil (Thriller-Hommage) mit den Bandmitgliedern als Monstern gehalten.",
@@ -211,9 +332,18 @@
         "Der markante Bass-Synthesizer leitet den atmosphärischen Song ein.",
         "Refrain: 'Everybody! Rock your body! Backstreet's back, alright!'"
       ],
-      "lyrics": { "real": ["Everybody, rock your body, everybody, rock your body right", "Backstreet's back, alright!", "Now throw your hands up in the air, wave them around like you just don't care"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "lyrics": {
+        "real": [
+          "Everybody, rock your body, everybody, rock your body right",
+          "Backstreet's back, alright!",
+          "Now throw your hands up in the air, wave them around like you just don't care"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "6M6samPEMpM" }
+      "links": {
+        "youtube": "6M6samPEMpM"
+      }
     },
     {
       "id": "dance-eiffel-65-blue",
@@ -223,7 +353,11 @@
       "country": "IT",
       "genre": "Italo Dance",
       "difficulty": "easy",
-      "mood": ["Fun", "Electronic", "Catchy"],
+      "mood": [
+        "Fun",
+        "Electronic",
+        "Catchy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "In diesem Song dreht sich alles (wirklich alles) um die Farbe Blau.",
@@ -232,9 +366,18 @@
         "Wurde zu einem der größten globalen Chart-Erfolge für eine italienische Band.",
         "Refrain: 'I'm blue, da ba dee da ba di...'"
       ],
-      "lyrics": { "real": ["I'm blue, da ba dee da ba di, da ba dee da ba di, da ba dee da ba di", "I have a blue house with a blue window, blue is the color of all that I wear", "Blue are the streets and all the trees are too"], "fake": "Dancing in the sky, where the birds learn to fly, so high" },
+      "lyrics": {
+        "real": [
+          "I'm blue, da ba dee da ba di, da ba dee da ba di, da ba dee da ba di",
+          "I have a blue house with a blue window, blue is the color of all that I wear",
+          "Blue are the streets and all the trees are too"
+        ],
+        "fake": "Dancing in the sky, where the birds learn to fly, so high"
+      },
       "isOne_hit_wonder": true,
-      "links": { "youtube": "68ugkg9RePc" }
+      "links": {
+        "youtube": "68ugkg9RePc"
+      }
     },
     {
       "id": "dance-vengaboys-boom-boom",
@@ -244,7 +387,11 @@
       "country": "NL",
       "genre": "Eurodance",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Party"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Party"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Die Band ist bekannt für ihr buntes Venga-Mobil und ihre schrillen Outfits.",
@@ -253,9 +400,18 @@
         "Der Refrain hat einen extrem eingängigen Rhythmus, den man sofort mitschreit.",
         "Refrain: 'Boom, boom, boom, boom! I want you in my room!'"
       ],
-      "lyrics": { "real": ["Boom, boom, boom, boom! I want you in my room, let's spend the night together", "From now until forever, boom, boom, boom, boom! I wanna go boom boom", "Let's spend the night together together in my room"], "fake": "Moving to the left, moving to the right, in the neon light" },
+      "lyrics": {
+        "real": [
+          "Boom, boom, boom, boom! I want you in my room, let's spend the night together",
+          "From now until forever, boom, boom, boom, boom! I wanna go boom boom",
+          "Let's spend the night together together in my room"
+        ],
+        "fake": "Moving to the left, moving to the right, in the neon light"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "llyiQ4I-trA" }
+      "links": {
+        "youtube": "llyiQ4I-trA"
+      }
     },
     {
       "id": "dance-alice-deejay-better-off-alone",
@@ -265,7 +421,11 @@
       "country": "NL",
       "genre": "Trance",
       "difficulty": "easy",
-      "mood": ["Electronic", "Moody", "Dance"],
+      "mood": [
+        "Electronic",
+        "Moody",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Einer der bekanntesten Trance-Hymnen der späten 90er.",
@@ -274,9 +434,18 @@
         "Wurde Jahre später von David Guetta ('Play Hard') gesampelt.",
         "Ein minimalistisches Meisterwerk des Dance-Pop."
       ],
-      "lyrics": { "real": ["Do you think you're better off alone?", "Do you think you're better off alone?", "Talk to me, ooh, talk to me"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "Do you think you're better off alone?",
+          "Do you think you're better off alone?",
+          "Talk to me, ooh, talk to me"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOne_hit_wonder": true,
-      "links": { "youtube": "Lgs9QUtWc7M" }
+      "links": {
+        "youtube": "Lgs9QUtWc7M"
+      }
     },
     {
       "id": "dance-darude-sandstorm",
@@ -286,7 +455,11 @@
       "country": "FI",
       "genre": "Trance",
       "difficulty": "medium",
-      "mood": ["Energy", "Electronic", "Fast"],
+      "mood": [
+        "Energy",
+        "Electronic",
+        "Fast"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Das vielleicht bekannteste instrumentale Dance-Stück der Welt.",
@@ -297,7 +470,9 @@
       ],
       "lyrics": null,
       "isOne_hit_wonder": true,
-      "links": { "youtube": "y6120QOlsfU" }
+      "links": {
+        "youtube": "y6120QOlsfU"
+      }
     },
     {
       "id": "dance-faithless-insomnia",
@@ -307,7 +482,11 @@
       "country": "GB",
       "genre": "Trance",
       "difficulty": "medium",
-      "mood": ["Dark", "Energy", "Epic"],
+      "mood": [
+        "Dark",
+        "Energy",
+        "Epic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "In diesem Song geht es um die Qualen der Schlaflosigkeit.",
@@ -316,9 +495,18 @@
         "Einer der einflussreichsten Dance-Tracks aller Zeiten.",
         "Refrain: 'I can't get no sleep!'"
       ],
-      "lyrics": { "real": ["I can't get no sleep, I need to sleep, I can't get no sleep", "Deep in the bosom of the gentle night, is when I search for the light", "I want to leave this place, I want to leave this world"], "fake": "In the middle of the night, I will hold you tight and treat you right" },
+      "lyrics": {
+        "real": [
+          "I can't get no sleep, I need to sleep, I can't get no sleep",
+          "Deep in the bosom of the gentle night, is when I search for the light",
+          "I want to leave this place, I want to leave this world"
+        ],
+        "fake": "In the middle of the night, I will hold you tight and treat you right"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "P8JEm4d6Wu4" }
+      "links": {
+        "youtube": "P8JEm4d6Wu4"
+      }
     },
     {
       "id": "dance-prodigy-firestarter",
@@ -328,7 +516,11 @@
       "country": "GB",
       "genre": "Big Beat",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Energy", "Raw"],
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Raw"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Das Video in einem verlassenen U-Bahn-Tunnel schockierte damals viele Eltern.",
@@ -337,9 +529,18 @@
         "Ein markantes Sample stammt von der Rockband 'Breeders'.",
         "Refrain: 'I'm the trouble starter, punkin' instigator!'"
       ],
-      "lyrics": { "real": ["I'm the trouble starter, punkin' instigator, I'm the fear addicted, danger illustrated", "I'm a firestarter, twisted firestarter", "You're the firestarter, twisted firestarter"], "fake": "Burning all the bridges, down in the ditches of the night" },
+      "lyrics": {
+        "real": [
+          "I'm the trouble starter, punkin' instigator, I'm the fear addicted, danger illustrated",
+          "I'm a firestarter, twisted firestarter",
+          "You're the firestarter, twisted firestarter"
+        ],
+        "fake": "Burning all the bridges, down in the ditches of the night"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "wmin5WkOuPw" }
+      "links": {
+        "youtube": "wmin5WkOuPw"
+      }
     },
     {
       "id": "dance-chemical-bros-hey-boy-girl",
@@ -349,7 +550,11 @@
       "country": "GB",
       "genre": "Big Beat",
       "difficulty": "easy",
-      "mood": ["Cool", "Dance", "Groovy"],
+      "mood": [
+        "Cool",
+        "Dance",
+        "Groovy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Das gesamte Lied dreht sich um eine repetitive Sprachzeile: 'Hey boy, hey girl...'.",
@@ -358,9 +563,18 @@
         "Das Musikvideo mit den tanzenden Skeletten ist unvergesslich.",
         "Refrain: 'Hey boy, hey girl, superstars, here we go!'"
       ],
-      "lyrics": { "real": ["Hey boy, hey girl, superstars, here we go!", "Hey boy, hey girl, superstars, here we go!", "Hey boy, hey girl, superstars, here we go!"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Hey boy, hey girl, superstars, here we go!",
+          "Hey boy, hey girl, superstars, here we go!",
+          "Hey boy, hey girl, superstars, here we go!"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "tpKCqp9CALQ" }
+      "links": {
+        "youtube": "tpKCqp9CALQ"
+      }
     },
     {
       "id": "dance-fatboy-slim-rockafeller",
@@ -370,7 +584,11 @@
       "country": "GB",
       "genre": "Big Beat",
       "difficulty": "medium",
-      "mood": ["Fun", "Fast", "Groovy"],
+      "mood": [
+        "Fun",
+        "Fast",
+        "Groovy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Wurde als 'The Funk Soul Brother' weltberühmt.",
@@ -379,9 +597,18 @@
         "War ein Highlight im Soundtrack des Spiels FIFA 99.",
         "Refrain: 'Right about now, the funk soul brother, check it out now!'"
       ],
-      "lyrics": { "real": ["Right about now, the funk soul brother, check it out now, the funk soul brother", "Right about now, the funk soul brother, check it out now, the funk soul brother", "Right about now, the funk soul brother, check it out now!"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Right about now, the funk soul brother, check it out now, the funk soul brother",
+          "Right about now, the funk soul brother, check it out now, the funk soul brother",
+          "Right about now, the funk soul brother, check it out now!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "nm6DO_7px1I" }
+      "links": {
+        "youtube": "nm6DO_7px1I"
+      }
     },
     {
       "id": "dance-daft-punk-one-more-time",
@@ -391,7 +618,11 @@
       "country": "FR",
       "genre": "French House",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Epic"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Epic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Das Video ist im Anime-Stil (Interstella 5555) gehalten.",
@@ -400,9 +631,18 @@
         "Das Duo Daft Punk trat stets in Roboter-Helmen auf.",
         "Refrain: 'One more time, we're gonna celebrate!'"
       ],
-      "lyrics": { "real": ["One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing", "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing", "Music's got me feeling so free, we're gonna celebrate and dance so free"], "fake": "Nothing's gonna change my world, you're the only special girl" },
+      "lyrics": {
+        "real": [
+          "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing",
+          "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing",
+          "Music's got me feeling so free, we're gonna celebrate and dance so free"
+        ],
+        "fake": "Nothing's gonna change my world, you're the only special girl"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "FGBhQbmPwH8" }
+      "links": {
+        "youtube": "FGBhQbmPwH8"
+      }
     },
     {
       "id": "dance-modjo-lady",
@@ -412,7 +652,11 @@
       "country": "FR",
       "genre": "French House",
       "difficulty": "easy",
-      "mood": ["Cool", "Groovy", "Romantic"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Romantic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Basiert auf einem Sample aus dem Song 'Soup for One' von Chic.",
@@ -421,9 +665,18 @@
         "Einer der entspanntesten und gleichzeitig tanzbarsten Hits der Ära.",
         "Refrain: 'Lady, hear me tonight, 'cause my feeling is just so right!'"
       ],
-      "lyrics": { "real": ["Lady, hear me tonight, 'cause my feeling is just so right", "As we dance by the light, and I'll keep you till the morning light", "Lady, I just feel like I won't get you out of my mind"], "fake": "When the stars are shining bright, I will hold you through the night" },
+      "lyrics": {
+        "real": [
+          "Lady, hear me tonight, 'cause my feeling is just so right",
+          "As we dance by the light, and I'll keep you till the morning light",
+          "Lady, I just feel like I won't get you out of my mind"
+        ],
+        "fake": "When the stars are shining bright, I will hold you through the night"
+      },
       "isOne_hit_wonder": true,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "dance-madonna-vogue",
@@ -433,7 +686,11 @@
       "country": "US",
       "genre": "Dance-Pop / House",
       "difficulty": "easy",
-      "mood": ["Cool", "Classic", "Dance"],
+      "mood": [
+        "Cool",
+        "Classic",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Brachte den Underground-'Voguing'-Tanzstil in den Mainstream.",
@@ -442,9 +699,18 @@
         "Das Schwarz-Weiß-Video von David Fincher ist pure Kunst.",
         "Refrain: 'Strike a pose! Vogue, vogue, vogue!'"
       ],
-      "lyrics": { "real": ["Look around, everywhere you turn is heartache, it's everywhere that you go", "You try everything you can to escape the pain of life that you know", "Strike a pose, vogue, vogue, vogue, vogue, vogue!"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "Look around, everywhere you turn is heartache, it's everywhere that you go",
+          "You try everything you can to escape the pain of life that you know",
+          "Strike a pose, vogue, vogue, vogue, vogue, vogue!"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "GuJQSAiODqI" }
+      "links": {
+        "youtube": "GuJQSAiODqI"
+      }
     },
     {
       "id": "dance-mj-billie-jean",
@@ -454,7 +720,11 @@
       "country": "US",
       "genre": "Dance-Pop / Funk",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Dance"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Besitzt eine der berühmtesten Basslinien der Musikgeschichte.",
@@ -463,9 +733,18 @@
         "Produziert von Quincy Jones, obwohl er die Basslinie anfangs zu lang fand.",
         "Ein absolutes Dauerbrenner-Highlight auf jeder Tanzfläche."
       ],
-      "lyrics": { "real": ["She was more like a beauty queen from a movie scene", "I said don't mind, but what do you mean, I am the one", "Billie Jean is not my lover, she's just a girl who claims that I am the one"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "She was more like a beauty queen from a movie scene",
+          "I said don't mind, but what do you mean, I am the one",
+          "Billie Jean is not my lover, she's just a girl who claims that I am the one"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Zi_XLOBDo_Y" }
+      "links": {
+        "youtube": "Zi_XLOBDo_Y"
+      }
     },
     {
       "id": "dance-daft-punk-one-more",
@@ -475,7 +754,11 @@
       "country": "FR",
       "genre": "French House / Electronic",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Bekannt für den extremen Einsatz von Auto-Tune auf den Vocals von Romanthony.",
@@ -484,9 +767,18 @@
         "Ein Inbegriff für unbeschwerte Party-Energie.",
         "Refrain: 'One more time, we're gonna celebrate!'"
       ],
-      "lyrics": { "real": ["One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing", "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing", "Music's got me feeling so free, we're gonna celebrate"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing",
+          "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing",
+          "Music's got me feeling so free, we're gonna celebrate"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "FGBhQbmPwQ8" }
+      "links": {
+        "youtube": "FGBhQbmPwQ8"
+      }
     },
     {
       "id": "dance-lady-gaga-bad-romance",
@@ -496,7 +788,11 @@
       "country": "US",
       "genre": "Dance-Pop / Electro",
       "difficulty": "easy",
-      "mood": ["Energy", "Powerful", "Classic"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Einer der visuell und akustisch einflussreichsten Pop-Songs der 2000er.",
@@ -505,9 +801,18 @@
         "Das Video definierte Gagas avantgardistischen Status endgültig.",
         "Refrain: 'I want your love and I want your revenge, you and me could write a bad romance!'"
       ],
-      "lyrics": { "real": ["Rah-rah-ah-ah-ah, Roma, roma-ma, Gaga, ooh-la-la", "I want your ugly, I want your disease, I want your everything as long as it's free", "I want your love and I want your revenge, you and me could write a bad romance"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Rah-rah-ah-ah-ah, Roma, roma-ma, Gaga, ooh-la-la",
+          "I want your ugly, I want your disease, I want your everything as long as it's free",
+          "I want your love and I want your revenge, you and me could write a bad romance"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "qrO4AUcuwow" }
+      "links": {
+        "youtube": "qrO4YZeyl0I"
+      }
     },
     {
       "id": "dance-katy-perry-firework",
@@ -517,7 +822,11 @@
       "country": "US",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Inspirational", "Powerful"],
+      "mood": [
+        "Happy",
+        "Inspirational",
+        "Powerful"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Eine Hymne auf Selbstwertgefühl und die eigene Einzigartigkeit.",
@@ -526,9 +835,18 @@
         "Wurde zu einem festen Bestandteil von Silvester-Playlists weltweit.",
         "Refrain: 'Cause baby, you're a firework! Come on, show 'em what you're worth!'"
       ],
-      "lyrics": { "real": ["Do you ever feel like a plastic bag, drifting through the wind, wanting to start again?", "You just gotta ignite the light, and let it shine", "Cause baby, you're a firework, come on, show 'em what you're worth"], "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow" },
+      "lyrics": {
+        "real": [
+          "Do you ever feel like a plastic bag, drifting through the wind, wanting to start again?",
+          "You just gotta ignite the light, and let it shine",
+          "Cause baby, you're a firework, come on, show 'em what you're worth"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "QGJuMBdaqIw" }
+      "links": {
+        "youtube": "QGJuMBdaqIw"
+      }
     },
     {
       "id": "dance-guetta-titanium",
@@ -538,7 +856,11 @@
       "country": "FR/AU",
       "genre": "EDM / Dance-Pop",
       "difficulty": "medium",
-      "mood": ["Powerful", "Emotional", "Electronic"],
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Electronic"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Sias kraftvolle Stimme macht diesen Club-Track zu einer emotionalen Hymne.",
@@ -547,9 +869,18 @@
         "Ein Meilenstein für den weltweiten EDM-Boom der 2010er.",
         "Refrain: 'I'm bulletproof, nothing to lose, fire away, fire away!'"
       ],
-      "lyrics": { "real": ["You shout it loud, but I can't hear a word you say, I'm talking loud, not saying much", "I'm bulletproof, nothing to lose, fire away, fire away", "You shoot me down, but I won't fall, I am titanium"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "You shout it loud, but I can't hear a word you say, I'm talking loud, not saying much",
+          "I'm bulletproof, nothing to lose, fire away, fire away",
+          "You shoot me down, but I won't fall, I am titanium"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "JRfuAAnVKl0" }
+      "links": {
+        "youtube": "JRfuAukYTKg"
+      }
     },
     {
       "id": "dance-avicii-wake-me",
@@ -559,7 +890,11 @@
       "country": "SE/US",
       "genre": "Folk-House / EDM",
       "difficulty": "easy",
-      "mood": ["Happy", "Inspirational", "Energy"],
+      "mood": [
+        "Happy",
+        "Inspirational",
+        "Energy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Revolutionierte den EDM-Sound durch die Kombination mit Folk-Gitarren.",
@@ -568,9 +903,18 @@
         "Ein Symbol für Aviciis bahnbrechende musikalische Vision.",
         "Refrain: 'So wake me up when it's all over, when I'm wiser and I'm older!'"
       ],
-      "lyrics": { "real": ["Feeling my way through the darkness, guided by a beating heart", "I can't tell where the journey will end, but I know where to start", "So wake me up when it's all over, when I'm wiser and I'm older"], "fake": "Walking down the street with a rhythm in my feet tonight" },
+      "lyrics": {
+        "real": [
+          "Feeling my way through the darkness, guided by a beating heart",
+          "I can't tell where the journey will end, but I know where to start",
+          "So wake me up when it's all over, when I'm wiser and I'm older"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "I_izvAbhExY" }
+      "links": {
+        "youtube": "I_izvAbhExY"
+      }
     },
     {
       "id": "dance-calvin-harris-summer",
@@ -580,7 +924,11 @@
       "country": "GB",
       "genre": "Dance-Pop / EDM",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Summer"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Summer"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Calvin Harris übernimmt hier selbst den Gesang.",
@@ -589,9 +937,18 @@
         "Vermittelt das perfekte Gefühl von Freiheit und warmen Nächten.",
         "Refrain: 'When I met you in the summer, to my heartbeat sound!'"
       ],
-      "lyrics": { "real": ["When I met you in the summer, to my heartbeat sound", "We fell in love, as the leaves turned brown", "And we could be together, baby, as long as skies are blue"], "fake": "Dancing in the sun, having so much fun with everyone" },
+      "lyrics": {
+        "real": [
+          "When I met you in the summer, to my heartbeat sound",
+          "We fell in love, as the leaves turned brown",
+          "And we could be together, baby, as long as skies are blue"
+        ],
+        "fake": "Dancing in the sun, having so much fun with everyone"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ebXbLfLACGM" }
+      "links": {
+        "youtube": "ebXbLfLACGM"
+      }
     },
     {
       "id": "dance-dua-lipa-start-now",
@@ -601,7 +958,11 @@
       "country": "GB",
       "genre": "Nu-Disco / Pop",
       "difficulty": "easy",
-      "mood": ["Cool", "Energy", "Dance"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Brachte den Disco-Sound mit moderner Produktion zurück in die Charts.",
@@ -610,9 +971,18 @@
         "Ein Paradebeispiel für den Erfolg ihres Albums 'Future Nostalgia'.",
         "Refrain: 'Don't show up, don't come out, don't start caring about me now!'"
       ],
-      "lyrics": { "real": ["If you don't wanna see me dancing with somebody, if you wanna believe that anything could stop me", "Don't show up, don't come out, don't start caring about me now", "Walk away, you know how, don't start caring about me now"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "If you don't wanna see me dancing with somebody, if you wanna believe that anything could stop me",
+          "Don't show up, don't come out, don't start caring about me now",
+          "Walk away, you know how, don't start caring about me now"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "oygrmJFKYZY" }
+      "links": {
+        "youtube": "oygrmJFKYZY"
+      }
     },
     {
       "id": "dance-weeknd-feel-face",
@@ -622,7 +992,11 @@
       "country": "CA",
       "genre": "Pop / Funk",
       "difficulty": "easy",
-      "mood": ["Groovy", "Energy", "Dance"],
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Produziert von Max Martin, inspiriert durch Michael Jacksons Funk-Sound.",
@@ -631,9 +1005,18 @@
         "Wurde zu seinem endgültigen Durchbruch im Pop-Olymp.",
         "Refrain: 'I can't feel my face when I'm with you, but I love it!'"
       ],
-      "lyrics": { "real": ["And I know she'll be the death of me, at least we'll both be numb", "And she'll always get the best of me, the worst is yet to come", "I can't feel my face when I'm with you, but I love it"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "And I know she'll be the death of me, at least we'll both be numb",
+          "And she'll always get the best of me, the worst is yet to come",
+          "I can't feel my face when I'm with you, but I love it"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "dqt8Z7YL4RU" }
+      "links": {
+        "youtube": "dqt8Z7YL4RU"
+      }
     },
     {
       "id": "dance-bruno-uptown-funk",
@@ -643,7 +1026,11 @@
       "country": "GB/US",
       "genre": "Funk / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Groovy"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Groovy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Eine moderne Hommage an den Minneapolis-Sound und den Funk der 80er.",
@@ -652,9 +1039,18 @@
         "Wurde zu einem der erfolgreichsten Songs des Jahrzehnts.",
         "Refrain: 'Don't believe me, just watch!'"
       ],
-      "lyrics": { "real": ["This hit, that ice cold, Michelle Pfeiffer, that white gold", "This one for them hood girls, them good girls, straight masterpieces", "Don't believe me, just watch, come on!"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "This hit, that ice cold, Michelle Pfeiffer, that white gold",
+          "This one for them hood girls, them good girls, straight masterpieces",
+          "Don't believe me, just watch, come on!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "OPf0AuLS" }
+      "links": {
+        "youtube": "OPf0AuLS"
+      }
     },
     {
       "id": "dance-jt-can-stop",
@@ -664,7 +1060,11 @@
       "country": "US",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Energy"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Energy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Titelsong aus dem Animationsfilm 'Trolls'.",
@@ -673,9 +1073,18 @@
         "Besticht durch seine Leichtigkeit und den positiven Vibe.",
         "Refrain: 'I got this feeling inside my bones, it goes electric, wavy when I turn it on!'"
       ],
-      "lyrics": { "real": ["I got this feeling inside my bones, it goes electric, wavy when I turn it on", "All through my city, all through my home, we're flying up, no ceiling, when we're in our zone", "I can't stop the feeling, so just dance, dance, dance"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "I got this feeling inside my bones, it goes electric, wavy when I turn it on",
+          "All through my city, all through my home, we're flying up, no ceiling, when we're in our zone",
+          "I can't stop the feeling, so just dance, dance, dance"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "rutF6n" }
+      "links": {
+        "youtube": "rutF6n"
+      }
     },
     {
       "id": "dance-maroon5-jagger",
@@ -685,7 +1094,11 @@
       "country": "US",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Cool", "Energy", "Dance"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Eine Hommage an die Tanzbewegungen von Mick Jagger.",
@@ -694,9 +1107,18 @@
         "Vermittelt ein Gefühl von Lockerheit und Selbstbewusstsein.",
         "Refrain: 'I got the moves like Jagger, I got the moves like Jagger!'"
       ],
-      "lyrics": { "real": ["Just shoot for the stars, if it feels right, and aim for my heart if you feel like", "You wanna steer, but I'm taking ownership, I'm taking control", "And it goes like this, I got the moves like Jagger"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "Just shoot for the stars, if it feels right, and aim for my heart if you feel like",
+          "You wanna steer, but I'm taking ownership, I'm taking control",
+          "And it goes like this, I got the moves like Jagger"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "iEPTlhBHeFg" }
+      "links": {
+        "youtube": "iEPTlhBmwRg"
+      }
     },
     {
       "id": "dance-pitbull-everything",
@@ -706,7 +1128,11 @@
       "country": "US/NL",
       "genre": "Dance-Pop / Electro House",
       "difficulty": "easy",
-      "mood": ["Energy", "Party", "Happy"],
+      "mood": [
+        "Energy",
+        "Party",
+        "Happy"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Inbegriff des 'Electronic Dance Pop' Booms der frühen 2010er.",
@@ -715,9 +1141,18 @@
         "Ein absolutes Muss für jede Clubnacht jener Ära.",
         "Refrain: 'Tonight I want all of you tonight, give me everything tonight!'"
       ],
-      "lyrics": { "real": ["Me not working hard? Yeah, right! Picture that with a Kodak!", "Tonight I want all of you tonight, give me everything tonight", "For all we know we might not get tomorrow, let's do it tonight"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "Me not working hard? Yeah, right! Picture that with a Kodak!",
+          "Tonight I want all of you tonight, give me everything tonight",
+          "For all we know we might not get tomorrow, let's do it tonight"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "EPo5wwmKEfg" }
+      "links": {
+        "youtube": "0x-FMquRkK0"
+      }
     },
     {
       "id": "dance-lmfao-party-rock",
@@ -727,7 +1162,11 @@
       "country": "US",
       "genre": "Electionic / Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Party", "Fun"],
+      "mood": [
+        "Energy",
+        "Party",
+        "Fun"
+      ],
       "pack": "Dance Floor Fillers",
       "hints": [
         "Löste den weltweiten 'Shuffle'-Tanzboom aus.",
@@ -736,9 +1175,18 @@
         "Das Musikvideo parodiert den Film '28 Days Later'.",
         "Refrain: 'Party rock is in the house tonight! Everybody just have a good time!'"
       ],
-      "lyrics": { "real": ["Party rock is in the house tonight, everybody just have a good time", "And we gonna make you lose your mind, everybody just have a good time", "Every day I'm shufflin'"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Party rock is in the house tonight, everybody just have a good time",
+          "And we gonna make you lose your mind, everybody just have a good time",
+          "Every day I'm shufflin'"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "KQ6zr6kCPj8" }
+      "links": {
+        "youtube": "KQ6zr6kCPj8"
+      }
     }
   ]
 }

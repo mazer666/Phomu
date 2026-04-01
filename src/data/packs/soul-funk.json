@@ -14,7 +14,11 @@
       "country": "US",
       "genre": "Soul / Funk",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für das explosive Lebensgefühl des frühen Funk.",
@@ -23,9 +27,18 @@
         "James Brown gilt als der 'Godfather of Soul'.",
         "Refrain: 'I feel good! I knew that I would, now!'"
       ],
-      "lyrics": { "real": ["Whoa! I feel good, I knew that I would, now", "I feel good, I knew that I would, now", "So good, so good, I got you"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Whoa! I feel good, I knew that I would, now",
+          "I feel good, I knew that I would, now",
+          "So good, so good, I got you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "U5T" }
+      "links": {
+        "youtube": "U5T"
+      }
     },
     {
       "id": "soul-aretha-respect",
@@ -35,7 +48,11 @@
       "country": "US",
       "genre": "Soul / R&B",
       "difficulty": "easy",
-      "mood": ["Confident", "Powerful", "Classic"],
+      "mood": [
+        "Confident",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Originally written by Otis Redding, but unforgettably reclaimed by Aretha.",
@@ -44,9 +61,18 @@
         "Aretha Franklin ist die 'Queen of Soul'.",
         "Refrain: 'R-E-S-P-E-C-T! Find out what it means to me!'"
       ],
-      "lyrics": { "real": ["What you want, baby I got it, what you need, do you know I've got it?", "All I'm askin' is for a little respect when you come home", "R-E-S-P-E-C-T, find out what it means to me"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "What you want, baby I got it, what you need, do you know I've got it?",
+          "All I'm askin' is for a little respect when you come home",
+          "R-E-S-P-E-C-T, find out what it means to me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6FOUqQt3Kg0" }
+      "links": {
+        "youtube": "6FOUqQt3Kg0"
+      }
     },
     {
       "id": "soul-stevie-superstition",
@@ -56,7 +82,11 @@
       "country": "US",
       "genre": "Funk / Soul",
       "difficulty": "medium",
-      "mood": ["Cool", "Energy", "Classic"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch das markante Clavinet-Riff, das sofort ins Ohr geht.",
@@ -65,9 +95,18 @@
         "Ein Inbegriff für den innovativen Funk-Sound der 70er.",
         "Refrain: 'When you believe in things that you don't understand! Then you suffer!'"
       ],
-      "lyrics": { "real": ["Very superstitious, writing's on the wall", "Very superstitious, ladders 'bout to fall", "When you believe in things that you don't understand, then you suffer"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Very superstitious, writing's on the wall",
+          "Very superstitious, ladders 'bout to fall",
+          "When you believe in things that you don't understand, then you suffer"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "0CFuCYNx-Sk" }
+      "links": {
+        "youtube": "7_tmeHCO1IM"
+      }
     },
     {
       "id": "soul-marvin-goingon",
@@ -77,7 +116,11 @@
       "country": "US",
       "genre": "Soul / Social Commentary",
       "difficulty": "medium",
-      "mood": ["Serious", "Atmospheric", "Spiritual"],
+      "mood": [
+        "Serious",
+        "Atmospheric",
+        "Spiritual"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch die dichte, jazzige Atmosphäre und den sanften Gesang.",
@@ -86,9 +129,18 @@
         "Ein Inbegriff für den 'Conscious Soul'.",
         "Refrain: 'Mother, mother, there's too many of you crying!'"
       ],
-      "lyrics": { "real": ["Mother, mother, there's too many of you crying", "Brother, brother, brother, there's far too many of you dying", "You know we've got to find a way to bring some lovin' here today"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Mother, mother, there's too many of you crying",
+          "Brother, brother, brother, there's far too many of you dying",
+          "You know we've got to find a way to bring some lovin' here today"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "H-kA3UtBj4M" }
+      "links": {
+        "youtube": "H-kA3UtBj4M"
+      }
     },
     {
       "id": "soul-billwithers-sunshine",
@@ -98,7 +150,11 @@
       "country": "US",
       "genre": "Soul / Folk-Soul",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Classic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch die absolute Schlichtheit und das berühmte 'I know, I know, I know' Intermezzo.",
@@ -106,9 +162,18 @@
         "Wurde zu einem der am häufigsten gecoverten Soul-Songs aller Zeiten.",
         "Refrain: 'Ain't no sunshine when she's gone!'"
       ],
-      "lyrics": { "real": ["Ain't no sunshine when she's gone, it's not warm when she's away", "Ain't no sunshine when she's gone, and she's always gone too long", "I know, I know, I know, I know"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Ain't no sunshine when she's gone, it's not warm when she's away",
+          "Ain't no sunshine when she's gone, and she's always gone too long",
+          "I know, I know, I know, I know"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CICIOJ9" }
+      "links": {
+        "youtube": "CICIOJ9"
+      }
     },
     {
       "id": "soul-algreen-together",
@@ -118,7 +183,11 @@
       "country": "US",
       "genre": "Soul / Memphis Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Smooth", "Classic"],
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den geschmeidigen, hochemotionalen Memphis-Soul.",
@@ -127,9 +196,18 @@
         "Wurde durch den Film 'Pulp Fiction' erneut einem breiten Publikum bekannt.",
         "Refrain: 'Let's, let's stay together! Loving you whether, whether times are good or bad!'"
       ],
-      "lyrics": { "real": ["I'm so in love with you, whatever you want to do is all right with me", "Let's stay together, loving you whether, whether times are good or bad", "Happy or sad"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm so in love with you, whatever you want to do is all right with me",
+          "Let's stay together, loving you whether, whether times are good or bad",
+          "Happy or sad"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "XXx6RDzR6eM"
+      }
     },
     {
       "id": "soul-isley-shout",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Soul / Rock and Roll / Gospel",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Classic"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den Call-and-Response-Stil des frühen Soul.",
@@ -148,9 +230,18 @@
         "Wurde zu einer festen Größe auf jeder Party weltweit.",
         "Refrain: 'You know you make me wanna shout! Throw my hands back and shout!'"
       ],
-      "lyrics": { "real": ["Well, you know you make me wanna shout, throw my hands back and shout", "Kick my heels back and shout, come on now, don't forget to say you will", "Shout! Shout! Shout!"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Well, you know you make me wanna shout, throw my hands back and shout",
+          "Kick my heels back and shout, come on now, don't forget to say you will",
+          "Shout! Shout! Shout!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-otis-dockbay",
@@ -160,7 +251,11 @@
       "country": "US",
       "genre": "Soul / Memphis Soul",
       "difficulty": "easy",
-      "mood": ["Relaxed", "Melancholic", "Classic"],
+      "mood": [
+        "Relaxed",
+        "Melancholic",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Posthum veröffentlicht nach Otis Reddings tragischem Flugzeugabsturz.",
@@ -169,9 +264,18 @@
         "Erster posthumer Nummer-1-Hit in den USA.",
         "Refrain: 'Sittin' on the dock of the bay! Watchin' the ships roll in!'"
       ],
-      "lyrics": { "real": ["Sittin' in the morning sun, I'll be sittin' when the evening comes", "Watchin' the ships roll in, and then I watch 'em roll away again", "I'm sittin' on the dock of the bay"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Sittin' in the morning sun, I'll be sittin' when the evening comes",
+          "Watchin' the ships roll in, and then I watch 'em roll away again",
+          "I'm sittin' on the dock of the bay"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "rTVjnBo8" }
+      "links": {
+        "youtube": "rTVjnBo8"
+      }
     },
     {
       "id": "soul-samcooke-change",
@@ -181,7 +285,11 @@
       "country": "US",
       "genre": "Soul / Civil Rights Anthem",
       "difficulty": "medium",
-      "mood": ["Serious", "Powerful", "Emotional"],
+      "mood": [
+        "Serious",
+        "Powerful",
+        "Emotional"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inspiriert durch Dylans 'Blowin' in the Wind' und eigene Diskriminierungserfahrungen.",
@@ -190,9 +298,18 @@
         "Thematisiert Hoffnung und den langen Weg zur Gerechtigkeit.",
         "Refrain: 'It's been a long, a long time coming! But I know a change gonna come!'"
       ],
-      "lyrics": { "real": ["I was born by the river in a little tent, oh and just like the river I've been running ever since", "It's been a long, a long time coming, but I know a change gonna come", "Oh yes it will"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I was born by the river in a little tent, oh and just like the river I've been running ever since",
+          "It's been a long, a long time coming, but I know a change gonna come",
+          "Oh yes it will"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "wEBlaMOmKV" }
+      "links": {
+        "youtube": "wEBlaMOmKV"
+      }
     },
     {
       "id": "soul-raycharles-jack",
@@ -202,7 +319,11 @@
       "country": "US",
       "genre": "R&B / Soul / Jazz influence",
       "difficulty": "easy",
-      "mood": ["Funny", "Energy", "Classic"],
+      "mood": [
+        "Funny",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für das humorvolle Zwiegespräch zwischen Ray Charles und den Raelettes (Background-Sängerinnen).",
@@ -211,9 +332,18 @@
         "Ray Charles gilt als 'The Genius'.",
         "Refrain: 'Hit the road Jack! And don't you come back no more, no more!'"
       ],
-      "lyrics": { "real": ["Hit the road Jack and don't you come back no more, no more, no more, no more", "Hit the road Jack and don't you come back no more", "What you say?"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Hit the road Jack and don't you come back no more, no more, no more, no more",
+          "Hit the road Jack and don't you come back no more",
+          "What you say?"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "soul-sly-thankyou",
@@ -223,7 +353,11 @@
       "country": "US",
       "genre": "Funk",
       "difficulty": "hard",
-      "mood": ["Cool", "Energy", "Experimental"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Experimental"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Revolutionierte den Funk durch den Einsatz von Larry Grahams 'Slap'-Bass-Technik.",
@@ -231,9 +365,18 @@
         "Thematisiert Identität und den Widerstand gegen Konformität.",
         "Refrain: 'Thank you for letting me be myself again!'"
       ],
-      "lyrics": { "real": ["Lookin' at the devil, grinnin' at his gun", "Fingers happy, trigger pullin' on a cloud of fear", "Thank you falettinme be mice elf agin"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Lookin' at the devil, grinnin' at his gun",
+          "Fingers happy, trigger pullin' on a cloud of fear",
+          "Thank you falettinme be mice elf agin"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-temptations-mygirl",
@@ -243,7 +386,11 @@
       "country": "US",
       "genre": "Soul / Motown",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Classic"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für die Perfektion des 'Motown Sound'.",
@@ -252,9 +399,18 @@
         "Geschrieben von Smokey Robinson.",
         "Refrain: 'I guess you'd say! What can make me feel this way? My girl!'"
       ],
-      "lyrics": { "real": ["I've got sunshine on a cloudy day, when it's cold outside I've got the month of May", "I guess you'd say what can make me feel this way?", "My girl, my girl, my girl"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I've got sunshine on a cloudy day, when it's cold outside I've got the month of May",
+          "I guess you'd say what can make me feel this way?",
+          "My girl, my girl, my girl"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "C_CSjLiA" }
+      "links": {
+        "youtube": "C_CSjLiA"
+      }
     },
     {
       "id": "soul-supremes-hurrylove",
@@ -264,7 +420,11 @@
       "country": "US",
       "genre": "Soul / Motown-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für das perfekte Zusammenspiel von Diana Ross und den Supremes.",
@@ -273,9 +433,18 @@
         "Wurde Jahre später durch Phil Collins erneut zum Welthit.",
         "Refrain: 'You can't hurry love! No, you just have to wait!'"
       ],
-      "lyrics": { "real": ["I need love, love to ease my mind, I need to find, find someone to call mine", "Mama said you can't hurry love, no you just have to wait", "She said love don't come easy"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I need love, love to ease my mind, I need to find, find someone to call mine",
+          "Mama said you can't hurry love, no you just have to wait",
+          "She said love don't come easy"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ovoBi3pXD_A" }
+      "links": {
+        "youtube": "ovoBi3pXD_A"
+      }
     },
     {
       "id": "soul-fourtops-reachout",
@@ -285,7 +454,11 @@
       "country": "US",
       "genre": "Soul / Motown",
       "difficulty": "medium",
-      "mood": ["Powerful", "Urgent", "Epic"],
+      "mood": [
+        "Powerful",
+        "Urgent",
+        "Epic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch das dramatische Intro (Tamburin, Oboe) und Levi Stubbs kraftvolle, fast schreiende Stimme.",
@@ -293,9 +466,18 @@
         "Gilt als einer der am intensivsten produzierten Motown-Hits.",
         "Refrain: 'I'll be there, with a love that will shelter you!'"
       ],
-      "lyrics": { "real": ["Now if you feel that you can't go on, because all of your hope is gone", "And your life is filled with much confusion, and happiness is just an illusion", "Reach out, reach out for me"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Now if you feel that you can't go on, because all of your hope is gone",
+          "And your life is filled with much confusion, and happiness is just an illusion",
+          "Reach out, reach out for me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-j5-iwantyouback",
@@ -305,7 +487,11 @@
       "country": "US",
       "genre": "Soul / Bubblegum Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Machte den damals 11-jährigen Michael Jackson über Nacht zum Weltstar.",
@@ -314,9 +500,18 @@
         "Ein Inbegriff für pure Musik-Energie.",
         "Refrain: 'Oh baby, give me one more chance! Won't you please let me back in your heart!'"
       ],
-      "lyrics": { "real": ["When I had you to myself, I didn't want you around", "Those pretty faces always made you stand out in a crowd", "Oh baby, give me one more chance"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "When I had you to myself, I didn't want you around",
+          "Those pretty faces always made you stand out in a crowd",
+          "Oh baby, give me one more chance"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "s3Q8as" }
+      "links": {
+        "youtube": "s3Q8as"
+      }
     },
     {
       "id": "soul-ewf-september",
@@ -326,7 +521,11 @@
       "country": "US",
       "genre": "Funk / Disco / R&B",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Die ultimative Gute-Laune-Hymne der späten 70er.",
@@ -335,9 +534,18 @@
         "Bekannt für den 'Ba-dee-ya' Chorus.",
         "Refrain: 'Do you remember! The 21st night of September!'"
       ],
-      "lyrics": { "real": ["Do you remember the 21st night of September?", "Love was changing the mind of pretenders, while chasing the clouds away", "Our hearts were ringing in the key that our souls were singing"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Do you remember the 21st night of September?",
+          "Love was changing the mind of pretenders, while chasing the clouds away",
+          "Our hearts were ringing in the key that our souls were singing"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Gs069" }
+      "links": {
+        "youtube": "Gs069"
+      }
     },
     {
       "id": "soul-koolgang-celebration",
@@ -347,7 +555,11 @@
       "country": "US",
       "genre": "Funk / Disco-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Der weltweite Standard-Song für jede Art von Feierlichkeit.",
@@ -355,9 +567,18 @@
         "Thematisiert Zusammenkunft, Freude und gute Zeiten.",
         "Refrain: 'Celebrate good times, come on! (It's a celebration)!'"
       ],
-      "lyrics": { "real": ["Celebrate good times, come on! (Let's celebrate)", "There's a party goin' on right here, a celebration to last throughout the years", "Bring your good times, and your laughter too"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Celebrate good times, come on! (Let's celebrate)",
+          "There's a party goin' on right here, a celebration to last throughout the years",
+          "Bring your good times, and your laughter too"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "C1hp04_zEWk"
+      }
     },
     {
       "id": "soul-chic-freak",
@@ -367,7 +588,11 @@
       "country": "US",
       "genre": "Disco / Funk",
       "difficulty": "easy",
-      "mood": ["Cool", "Energy", "Club"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Club"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Nile Rodgers' Meisterwerk des minimalistischen Funk-Gitarrenspiels.",
@@ -376,9 +601,18 @@
         "Einer der meistverkauften Disco-Hits aller Zeiten.",
         "Refrain: 'Ah, freak out! Le freak, c'est chic!'"
       ],
-      "lyrics": { "real": ["Have you heard about the new dance craze? Listen to us, I'm sure you'll be amazed", "Ah, freak out! Le freak, c'est chic!", "Freak out!"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Have you heard about the new dance craze? Listen to us, I'm sure you'll be amazed",
+          "Ah, freak out! Le freak, c'est chic!",
+          "Freak out!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-sister-family",
@@ -388,7 +622,11 @@
       "country": "US",
       "genre": "Disco / Soul",
       "difficulty": "easy",
-      "mood": ["Happy", "Confident", "Positive"],
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Wurde zur Hymne für Zusammenhalt und weibliche Stärke.",
@@ -397,9 +635,18 @@
         "Wurde zum Erkennungslied für Sportteams und Bewegungen weltweit.",
         "Refrain: 'We are family! I got all my sisters with me!'"
       ],
-      "lyrics": { "real": ["We are family, I got all my sisters with me", "We are family, get up everybody and sing", "Everyone can see we're together as we walk on by"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "We are family, I got all my sisters with me",
+          "We are family, get up everybody and sing",
+          "Everyone can see we're together as we walk on by"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "soul-donna-love",
@@ -409,7 +656,11 @@
       "country": "US",
       "genre": "Electronic Disco / Hi-NRG",
       "difficulty": "medium",
-      "mood": ["Mysterious", "Atmospheric", "Energy"],
+      "mood": [
+        "Mysterious",
+        "Atmospheric",
+        "Energy"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Revolutionierte die Tanzmusik durch den fast reinen Einsatz von Synthesizern (Produziert von Giorgio Moroder).",
@@ -417,9 +668,18 @@
         "Gilt als Grundstein für die spätere Techno- und House-Musik.",
         "Refrain: 'I feel love, I feel love, I feel love!'"
       ],
-      "lyrics": { "real": ["Ooh, it's so good, it's so good, it's so good", "Ooh, Heaven knows, Heaven knows, Heaven knows", "I feel love, I feel love, I feel love"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Ooh, it's so good, it's so good, it's so good",
+          "Ooh, Heaven knows, Heaven knows, Heaven knows",
+          "I feel love, I feel love, I feel love"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-dianaross-comingout",
@@ -429,7 +689,11 @@
       "country": "US",
       "genre": "Disco / Funk-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Confident", "Positive"],
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch das triumphale Posaunen-Intro und Nile Rodgers' markante Funk-Gitarre.",
@@ -438,9 +702,18 @@
         "Ein Inbegriff für Diana Ross' erfolgreiche Solo-Karriere.",
         "Refrain: 'I'm coming out! I want the world to know! Got to let it show!'"
       ],
-      "lyrics": { "real": ["I'm coming out, I want the world to know, got to let it show", "There's a new me coming out, and I just had to live", "I want the world to know, got to let it show"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "I'm coming out, I want the world to know, got to let it show",
+          "There's a new me coming out, and I just had to live",
+          "I want the world to know, got to let it show"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "6CHdKORwPEQ"
+      }
     },
     {
       "id": "soul-chaka-woman",
@@ -450,7 +723,11 @@
       "country": "US",
       "genre": "Soul / Disco",
       "difficulty": "easy",
-      "mood": ["Confident", "Powerful", "Classic"],
+      "mood": [
+        "Confident",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch Chaka Khans gewaltige Stimme und die mitreißende Disco-Produktion.",
@@ -458,9 +735,18 @@
         "Ein massiver Club-Hit, der Chakas Solo-Star-Status besiegelte.",
         "Refrain: 'I'm every woman! It's all in me!'"
       ],
-      "lyrics": { "real": ["Whatever you want, whatever you need, anything you want done baby, I'll do it naturally", "I'm every woman, it's all in me", "Anything you want done baby, I'll do it naturally"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Whatever you want, whatever you need, anything you want done baby, I'll do it naturally",
+          "I'm every woman, it's all in me",
+          "Anything you want done baby, I'll do it naturally"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-rickjames-freak",
@@ -470,7 +756,11 @@
       "country": "US",
       "genre": "Funk / Rock influence",
       "difficulty": "easy",
-      "mood": ["Energy", "Crazy", "Classic"],
+      "mood": [
+        "Energy",
+        "Crazy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch das markante Synthesizer-Bass-Riff (später weltberühmt durch MC Hammer).",
@@ -478,9 +768,18 @@
         "Ein Inbegriff für den raueren, provokanten 'Punk-Funk'.",
         "Refrain: 'She's a very kinky girl! The kind you don't take home to mother!'"
       ],
-      "lyrics": { "real": ["She's a very kinky girl, the kind you don't take home to mother", "She will never let your spirits down, once you get her off the street", "Super freak, super freak, she's super freaky"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "She's a very kinky girl, the kind you don't take home to mother",
+          "She will never let your spirits down, once you get her off the street",
+          "Super freak, super freak, she's super freaky"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "QYHxGBH6o4M"
+      }
     },
     {
       "id": "soul-prince-kiss",
@@ -490,7 +789,11 @@
       "country": "US",
       "genre": "Funk / Pop",
       "difficulty": "easy",
-      "mood": ["Cool", "Sarcastic", "Classic"],
+      "mood": [
+        "Cool",
+        "Sarcastic",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch die absolute Reduktion (kein Basslauf!) und Princes extremes Falsett.",
@@ -498,9 +801,18 @@
         "Einer seiner größten und zugleich ungewöhnlichsten Hits.",
         "Refrain: 'You don't have to be beautiful, to turn me on!'"
       ],
-      "lyrics": { "real": ["You don't have to be beautiful to turn me on", "I just need your body baby from dusk 'til dawn", "You don't need experience to turn me out"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "You don't have to be beautiful to turn me on",
+          "I just need your body baby from dusk 'til dawn",
+          "You don't need experience to turn me out"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "H9tEvf4c568" }
+      "links": {
+        "youtube": "H9tEvf4c568"
+      }
     },
     {
       "id": "soul-mj-dontstop",
@@ -510,7 +822,11 @@
       "country": "US",
       "genre": "Disco / Funk-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Der Beginn von MJs Ära als alleiniger 'King of Pop'.",
@@ -518,9 +834,18 @@
         "Produziert von Quincy Jones; ein Meilenstein der Pop-Produktion.",
         "Refrain: 'Keep on, with the force, don't stop! Don't stop 'til you get enough!'"
       ],
-      "lyrics": { "real": ["You know, I was wondering, can we keep on, because the force, it's got a lot of power", "Don't stop 'til you get enough", "Keep on with the force don't stop"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "You know, I was wondering, can we keep on, because the force, it's got a lot of power",
+          "Don't stop 'til you get enough",
+          "Keep on with the force don't stop"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "yURRmWkbFwM" }
+      "links": {
+        "youtube": "yURRmWtbTbo"
+      }
     },
     {
       "id": "soul-commodores-brick",
@@ -530,7 +855,11 @@
       "country": "US",
       "genre": "Funk",
       "difficulty": "easy",
-      "mood": ["Energy", "Funny", "Classic"],
+      "mood": [
+        "Energy",
+        "Funny",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für das stolze Besingen weiblicher Formen im Funk-Kontext.",
@@ -538,9 +867,18 @@
         "Wurde zu einem der bekanntesten Funk-Hymnen der späten 70er.",
         "Refrain: 'She's a brick house! She's mighty-mighty, just lettin' it all hang out!'"
       ],
-      "lyrics": { "real": ["She's a brick house, she's mighty-mighty, just lettin' it all hang out", "She's a brick house, that lady's stacked and that's a fact", "Ain't holding nothing back"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "She's a brick house, she's mighty-mighty, just lettin' it all hang out",
+          "She's a brick house, that lady's stacked and that's a fact",
+          "Ain't holding nothing back"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ukW6ZRaPWYk"
+      }
     },
     {
       "id": "soul-wildcherry-funky",
@@ -550,7 +888,11 @@
       "country": "US",
       "genre": "Funk Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Classic"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den weißen Funk-Rock, der die Disco-Ära prägte.",
@@ -558,9 +900,18 @@
         "Besticht durch das scharfkantige Gitarren-Riff und den mitreißenden Drive.",
         "Refrain: 'Play that funky music white boy!'"
       ],
-      "lyrics": { "real": ["Play that funky music white boy, play that funky music right", "Play that funky music white boy, lay down the boogie and play that funky music", "Till you die!"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Play that funky music white boy, play that funky music right",
+          "Play that funky music white boy, lay down the boogie and play that funky music",
+          "Till you die!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-awb-pieces",
@@ -570,7 +921,11 @@
       "country": "GB",
       "genre": "Funk / instrumental focus",
       "difficulty": "medium",
-      "mood": ["Cool", "Energy", "Classic"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch das messerscharfe Saxophon-Motiv und den coolen Groove.",
@@ -578,9 +933,18 @@
         "Ein Inbegriff für den tighten, instrumentalen Funk.",
         "Refrain: (Wird gerufen): 'Pick up the pieces!'"
       ],
-      "lyrics": { "real": ["Pick up the pieces!", "(Saxophone Instrumental)", "Pick up the pieces!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Pick up the pieces!",
+          "(Saxophone Instrumental)",
+          "Pick up the pieces!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "soul-tower-hip",
@@ -590,7 +954,11 @@
       "country": "US",
       "genre": "Funk / R&B",
       "difficulty": "hard",
-      "mood": ["Energy", "Busy", "Intelligent"],
+      "mood": [
+        "Energy",
+        "Busy",
+        "Intelligent"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch das extrem schnelle, präzise Bassspiel von Rocco Prestia.",
@@ -598,9 +966,18 @@
         "Ein Inbegriff für den komplexen Sektions-Sound der Bläser aus Oakland.",
         "Refrain: 'What is hip? Tell me, tell me, if you think you know!'"
       ],
-      "lyrics": { "real": ["So you're shooting for the stars, and you're thinking of the moon", "But you're just a little bit out of tune", "What is hip? Tell me, tell me, if you think you know"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "So you're shooting for the stars, and you're thinking of the moon",
+          "But you're just a little bit out of tune",
+          "What is hip? Tell me, tell me, if you think you know"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-parliament-funk",
@@ -610,16 +987,29 @@
       "country": "US",
       "genre": "P-Funk",
       "difficulty": "medium",
-      "mood": ["Energy", "Party", "Classic"],
+      "mood": [
+        "Energy",
+        "Party",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den bombastischen, außerirdischen 'P-Funk' Sound von George Clinton.",
         "Besticht durch die dominanten Chor-Gesänge und den schweren, hypnotischen Groove.",
         "Refrain: 'We want the funk! Gotta have the funk!'"
       ],
-      "lyrics": { "real": ["Tear the roof off the sucker, tear the roof off the mother-sucker", "We want the funk, gotta have the funk", "We need the funk, gotta have the funk"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Tear the roof off the sucker, tear the roof off the mother-sucker",
+          "We want the funk, gotta have the funk",
+          "We need the funk, gotta have the funk"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "uSQuBcl4Y3A" }
+      "links": {
+        "youtube": "h_mnrkLg36M"
+      }
     },
     {
       "id": "soul-funkadelic-nation",
@@ -629,7 +1019,11 @@
       "country": "US",
       "genre": "Funk / Rock influence",
       "difficulty": "medium",
-      "mood": ["Positive", "Energy", "Spiritual"],
+      "mood": [
+        "Positive",
+        "Energy",
+        "Spiritual"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Thematisiert die vereinende Kraft der Musik über alle Grenzen hinweg.",
@@ -637,9 +1031,18 @@
         "Ein Inbegriff für die Philosophie von George Clinton.",
         "Refrain: 'One nation under a groove! Gettin' down just for the funk of it!'"
       ],
-      "lyrics": { "real": ["One nation under a groove, gettin' down just for the funk of it", "Feet, don't fail me now!", "Do you promise to funk, the whole funk and nothing but the funk?"], "fake": "In the shadow of the night, I'm looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "One nation under a groove, gettin' down just for the funk of it",
+          "Feet, don't fail me now!",
+          "Do you promise to funk, the whole funk and nothing but the funk?"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "6AQaLeMZqJU"
+      }
     },
     {
       "id": "soul-ohio-roller",
@@ -649,16 +1052,29 @@
       "country": "US",
       "genre": "Funk",
       "difficulty": "easy",
-      "mood": ["Energy", "Funny", "Classic"],
+      "mood": [
+        "Energy",
+        "Funny",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besitzt ein ikonisches Gitarren-Riff und den berühmten (wenn auch unbeabsichtigten) Schrei im Refrain.",
         "Thematisiert die Auf- und Abs einer Liebesbeziehung als Achterbahnfahrt.",
         "Refrain: 'Love rollercoaster! Your love is like a rollercoaster baby!'"
       ],
-      "lyrics": { "real": ["Your love is like a rollercoaster baby, baby, I wanna ride", "Love rollercoaster! (Ooh ooh ooh)", "You give me a feeling, I don't know why"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Your love is like a rollercoaster baby, baby, I wanna ride",
+          "Love rollercoaster! (Ooh ooh ooh)",
+          "You give me a feeling, I don't know why"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-rose-wash",
@@ -668,16 +1084,29 @@
       "country": "US",
       "genre": "Disco / Funk",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch den klatschenden Rhythmus und den extrem eingängigen Refrain.",
         "Zentraler Song des gleichnamigen Films; besingt fröhlich den Arbeitsalltag in einer Waschanlage.",
         "Refrain: 'At the car wash! Workin' at the car wash, yeah!'"
       ],
-      "lyrics": { "real": ["Workin' at the car wash, workin' at the car wash, yeah", "You might not ever get rich, but let me tell you it's better than diggin' a ditch", "At the car wash"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Workin' at the car wash, workin' at the car wash, yeah",
+          "You might not ever get rich, but let me tell you it's better than diggin' a ditch",
+          "At the car wash"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "IGGiT0-flRE" }
+      "links": {
+        "youtube": "IGGiT0-flRE"
+      }
     },
     {
       "id": "soul-gap-bomb",
@@ -687,16 +1116,29 @@
       "country": "US",
       "genre": "Funk / Synth-Funk",
       "difficulty": "easy",
-      "mood": ["Energy", "Cool", "Nightlife"],
+      "mood": [
+        "Energy",
+        "Cool",
+        "Nightlife"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den wuchtigen 'Electro-Funk' Sound der frühen 80er.",
         "Besticht durch die markanten Synthesizer-Explosionen und den stampfenden Bass.",
         "Refrain: 'You dropped a bomb on me, baby!'"
       ],
-      "lyrics": { "real": ["You dropped a bomb on me, baby, you dropped a bomb on me", "I was happy as I could be, until you came around", "You dropped a bomb on me"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "You dropped a bomb on me, baby, you dropped a bomb on me",
+          "I was happy as I could be, until you came around",
+          "You dropped a bomb on me"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-zapp-bounce",
@@ -706,16 +1148,29 @@
       "country": "US",
       "genre": "Funk / Talkbox focus",
       "difficulty": "medium",
-      "mood": ["Cool", "Energy", "Experimental"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Experimental"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch den exzessiven Einsatz der Talkbox (Vorgänger von Auto-Tune).",
         "Einer der einflussreichsten Tracks für den späteren G-Funk Sound von Dr. Dre und Snoop Dogg.",
         "Refrain: 'More bounce to the ounce!'"
       ],
-      "lyrics": { "real": ["More bounce to the ounce!", "(Talkbox Vocals)", "Get on the dancefloor!"], "fake": "In the shadow of the night, I'm looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "More bounce to the ounce!",
+          "(Talkbox Vocals)",
+          "Get on the dancefloor!"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "soul-curtis-move",
@@ -725,7 +1180,11 @@
       "country": "US",
       "genre": "Soul / Funk / Cinematic",
       "difficulty": "medium",
-      "mood": ["Positive", "Energy", "Powerful"],
+      "mood": [
+        "Positive",
+        "Energy",
+        "Powerful"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den hochenergetischen, hoffnungsvollen Soul.",
@@ -733,9 +1192,18 @@
         "Thematisiert sozialen Aufstieg und Durchhaltevermögen.",
         "Refrain: 'Move on up! Just keep on wishing!'"
       ],
-      "lyrics": { "real": ["Hush now child, and don't you cry, your folks might understand you by and by", "Move on up, toward your destination", "You may find from time to time, complication"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Hush now child, and don't you cry, your folks might understand you by and by",
+          "Move on up, toward your destination",
+          "You may find from time to time, complication"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6Z66" }
+      "links": {
+        "youtube": "6Z66"
+      }
     },
     {
       "id": "soul-isaac-shaft",
@@ -745,7 +1213,11 @@
       "country": "US",
       "genre": "Funk / Cinematic",
       "difficulty": "easy",
-      "mood": ["Cool", "Energy", "Epic"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Epic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Gewann als erstes Werk eines schwarzen Komponisten den Oscar für den besten Song.",
@@ -753,9 +1225,18 @@
         "Inbegriff für den 'Street Soul' der 70er.",
         "Refrain: 'Who's the black private dick that's a sex machine to all the chicks? (Shaft)!'"
       ],
-      "lyrics": { "real": ["Who's the black private dick that's a sex machine to all the chicks? (Shaft!)", "You're damn right", "Who is the man that would risk his life for his brother man? (Shaft!)"], "fake": "In the shadow of the night, we're looking for the light" },
+      "lyrics": {
+        "real": [
+          "Who's the black private dick that's a sex machine to all the chicks? (Shaft!)",
+          "You're damn right",
+          "Who is the man that would risk his life for his brother man? (Shaft!)"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-womack-110th",
@@ -765,7 +1246,11 @@
       "country": "US",
       "genre": "Soul / Cinematic",
       "difficulty": "medium",
-      "mood": ["Serious", "Tough", "Atmospheric"],
+      "mood": [
+        "Serious",
+        "Tough",
+        "Atmospheric"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besingt die harte Realität in Harlem jenseits der 110. Straße.",
@@ -773,9 +1258,18 @@
         "Wurde Jahrzehnte später durch Quentin Tarantinos 'Jackie Brown' zum Kulthit.",
         "Refrain: 'In every city you'll find the same thing going down!'"
       ],
-      "lyrics": { "real": ["I was the third brother of five, doing whatever I had to do to survive", "Across 110th Street, pimps trying to catch a woman that's weak", "Across 110th Street, pushed by the back against the wall"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I was the third brother of five, doing whatever I had to do to survive",
+          "Across 110th Street, pimps trying to catch a woman that's weak",
+          "Across 110th Street, pushed by the back against the wall"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "JxCsIX6iU5o"
+      }
     },
     {
       "id": "soul-gilscott-rev",
@@ -785,7 +1279,11 @@
       "country": "US",
       "genre": "Soul / Jazz / Spoken Word",
       "difficulty": "hard",
-      "mood": ["Serious", "Cool", "Political"],
+      "mood": [
+        "Serious",
+        "Cool",
+        "Political"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für gesellschaftskritischen Spoken Word Soul.",
@@ -794,9 +1292,18 @@
         "Gilt als einer der wichtigsten Vorläufer des Hip Hop.",
         "Refrain: 'The revolution will not be televised!'"
       ],
-      "lyrics": { "real": ["You will not be able to stay home, brother", "You will not be able to plug in, turn on and cop out", "The revolution will not be televised"], "fake": "In the shadow of the night, I'm looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "You will not be able to stay home, brother",
+          "You will not be able to plug in, turn on and cop out",
+          "The revolution will not be televised"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-barry-enough",
@@ -806,7 +1313,11 @@
       "country": "US",
       "genre": "Soul / Disco",
       "difficulty": "easy",
-      "mood": ["Romantic", "Smooth", "Classic"],
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch die tiefste, samtigste Bass-Stimme der Musikgeschichte.",
@@ -814,9 +1325,18 @@
         "Thematisiert grenzenlose Sehnsucht und Leidenschaft.",
         "Refrain: 'I've got so much of your love to give!'"
       ],
-      "lyrics": { "real": ["I've heard people say that too much of anything is not good for you, baby", "But I don't know about that", "Can't get enough of your love, babe"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I've heard people say that too much of anything is not good for you, baby",
+          "But I don't know about that",
+          "Can't get enough of your love, babe"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "rTVjnBo8" }
+      "links": {
+        "youtube": "rTVjnBo8"
+      }
     },
     {
       "id": "soul-luther-toomuch",
@@ -826,7 +1346,11 @@
       "country": "US",
       "genre": "R&B / Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Happy", "Classic"],
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch Luther Vandross' technisch perfekten, seidenweichen Gesang.",
@@ -834,9 +1358,18 @@
         "Ein Inbegriff für den polierten R&B-Sound der frühen 80er.",
         "Refrain: 'A thousand kisses from you is never too much!'"
       ],
-      "lyrics": { "real": ["I can't fool myself, I don't want nobody else to ever love me", "A thousand kisses from you is never too much", "And I just don't wanna stop"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "I can't fool myself, I don't want nobody else to ever love me",
+          "A thousand kisses from you is never too much",
+          "And I just don't wanna stop"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "pNj9bXKGOiI"
+      }
     },
     {
       "id": "soul-gladys-train",
@@ -846,7 +1379,11 @@
       "country": "US",
       "genre": "Soul / R&B",
       "difficulty": "easy",
-      "mood": ["Emotional", "Honest", "Classic"],
+      "mood": [
+        "Emotional",
+        "Honest",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Besticht durch die wunderbaren Call-and-Response Harmonien zwischen Gladys und den Pips.",
@@ -854,9 +1391,18 @@
         "Inbegriff für bodenständigen, emotionalen R&B.",
         "Refrain: 'He's leaving (leavin') on that midnight train to Georgia!'"
       ],
-      "lyrics": { "real": ["L.A. proved too much for the man, so he's leavin' the life he's come to know", "He's leaving on that midnight train to Georgia", "I'd rather live in his world than live without him in mine"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "L.A. proved too much for the man, so he's leavin' the life he's come to know",
+          "He's leaving on that midnight train to Georgia",
+          "I'd rather live in his world than live without him in mine"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-staple-there",
@@ -866,7 +1412,11 @@
       "country": "US",
       "genre": "Soul / Gospel / Reggae influence",
       "difficulty": "easy",
-      "mood": ["Positive", "Spiritual", "Relaxed"],
+      "mood": [
+        "Positive",
+        "Spiritual",
+        "Relaxed"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Kombiniert Soul mit starken Gospel- und Reggae-Einflüssen.",
@@ -874,9 +1424,18 @@
         "Besticht durch den federnden Basslauf und Mavis Staples' kraftvolle Stimme.",
         "Refrain: 'I know a place! Ain't nobody crying! I'll take you there!'"
       ],
-      "lyrics": { "real": ["I know a place, ain't nobody crying, ain't nobody worried", "Ain't no smiling faces lying to the races", "I'll take you there"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I know a place, ain't nobody crying, ain't nobody worried",
+          "Ain't no smiling faces lying to the races",
+          "I'll take you there"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "soul-sly-affair",
@@ -886,7 +1445,11 @@
       "country": "US",
       "genre": "Funk / Minimalist",
       "difficulty": "medium",
-      "mood": ["Cool", "Moody", "Intelligent"],
+      "mood": [
+        "Cool",
+        "Moody",
+        "Intelligent"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Einer der ersten großen Hits, der einen Drum-Computer einsetzte.",
@@ -894,9 +1457,18 @@
         "Thematisiert die Unausweichlichkeit familiärer Bindungen, egal ob gut oder schlecht.",
         "Refrain: 'It's a family affair! It's a family affair!'"
       ],
-      "lyrics": { "real": ["It's a family affair, it's a family affair", "One child grows up to be somebody that just loves to learn", "And another child grows up to be somebody you'd just love to burn"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "It's a family affair, it's a family affair",
+          "One child grows up to be somebody that just loves to learn",
+          "And another child grows up to be somebody you'd just love to burn"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-war-lowrider",
@@ -906,7 +1478,11 @@
       "country": "US",
       "genre": "Funk / Latin influence",
       "difficulty": "easy",
-      "mood": ["Cool", "Relaxed", "Funny"],
+      "mood": [
+        "Cool",
+        "Relaxed",
+        "Funny"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für den sonnigen, Chicano-inspirierten Funk aus LA.",
@@ -914,9 +1490,18 @@
         "Thematisiert (humorvoll) das entspannte Cruisen im 'Low Rider' Auto.",
         "Refrain: 'All my friends know the low rider! The low rider is a little higher!'"
       ],
-      "lyrics": { "real": ["All my friends know the low rider, the low rider is a little higher", "Low rider drives a little slower, low rider is a real goer", "Take a little trip, take a little trip with me"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "All my friends know the low rider, the low rider is a little higher",
+          "Low rider drives a little slower, low rider is a real goer",
+          "Take a little trip, take a little trip with me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-billwithers-lovely",
@@ -926,7 +1511,11 @@
       "country": "US",
       "genre": "Soul / Pop influence",
       "difficulty": "medium",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Bekannt für den extrem lang gehaltenen Ton von Bill Withers am Ende (über 18 Sekunden).",
@@ -934,9 +1523,18 @@
         "Thematisiert die heilende Kraft der Liebe an einem schwierigen Tag.",
         "Refrain: 'A lovely day! (Lovely day, lovely day, lovely day, lovely day)'"
       ],
-      "lyrics": { "real": ["When I wake up in the morning, love, and the sunlight hurts my eyes", "And something without warning, love, bears heavy on my mind", "Then I look at you, and the world's alright with me"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "When I wake up in the morning, love, and the sunlight hurts my eyes",
+          "And something without warning, love, bears heavy on my mind",
+          "Then I look at you, and the world's alright with me"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "soul-grover-justtwo",
@@ -946,7 +1544,11 @@
       "country": "US",
       "genre": "Smooth Jazz / R&B",
       "difficulty": "easy",
-      "mood": ["Smooth", "Romantic", "Classic"],
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Inbegriff für geschmeidigen R&B der frühen 80er Jahre.",
@@ -954,9 +1556,18 @@
         "Thematisiert den Zusammenhalt eines Paares gegen den Rest der Welt.",
         "Refrain: 'Just the two of us! We can make it if we try!'"
       ],
-      "lyrics": { "real": ["I see the crystal raindrops fall, and the beauty of it all is when the sun comes shining through", "To make those rainbows in my mind, when I think of you sometime", "Just the two of us, we can make it if we try"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I see the crystal raindrops fall, and the beauty of it all is when the sun comes shining through",
+          "To make those rainbows in my mind, when I think of you sometime",
+          "Just the two of us, we can make it if we try"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Uw5OLnN7UvM"
+      }
     },
     {
       "id": "soul-george-night",
@@ -966,7 +1577,11 @@
       "country": "US",
       "genre": "Soul / Funk / Jazz focus",
       "difficulty": "easy",
-      "mood": ["Cool", "Energy", "Nightlife"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Nightlife"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Produziert von Quincy Jones; ein Meilenstein des Post-Disco Funk.",
@@ -974,9 +1589,18 @@
         "Thematisiert den Glamour und die Bewegung der Nacht.",
         "Refrain: 'Give me the night! (Give me the night, give me the night, oh)'"
       ],
-      "lyrics": { "real": ["Whenever dark is hanging round, you'll be finding your way on the street", "Take a look at the girls around you, coming out from the cold into the heat", "Give me the night"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Whenever dark is hanging round, you'll be finding your way on the street",
+          "Take a look at the girls around you, coming out from the cold into the heat",
+          "Give me the night"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "soul-gnarls-crazy",
@@ -986,7 +1610,11 @@
       "country": "US",
       "genre": "Neo-Soul / Alternative",
       "difficulty": "easy",
-      "mood": ["Cool", "Moody", "Intelligent"],
+      "mood": [
+        "Cool",
+        "Moody",
+        "Intelligent"
+      ],
       "pack": "Soul & Funk Grooves",
       "hints": [
         "Ein massiver Welthit, der Neo-Soul mit Indie-Ästhetik verband.",
@@ -994,9 +1622,18 @@
         "Thematisiert Identität und die Grenze zwischen Wahnsinn und Genialität.",
         "Refrain: 'I remember when, I remember, I remember when I lost my mind! Does that make me crazy?'"
       ],
-      "lyrics": { "real": ["I remember when, I remember, I remember when I lost my mind", "There was something so pleasant about that place", "Does that make me crazy? Probably"], "fake": "In the shadow of the night, I'm looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I remember when, I remember, I remember when I lost my mind",
+          "There was something so pleasant about that place",
+          "Does that make me crazy? Probably"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     }
   ]
 }

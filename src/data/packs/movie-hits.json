@@ -13,7 +13,11 @@
       "country": "CA",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Romantic", "Epic"],
+      "mood": [
+        "Sad",
+        "Romantic",
+        "Epic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Dieses Lied ist das Hauptthema des Blockbusters 'Titanic'.",
@@ -22,9 +26,18 @@
         "Gewann sowohl den Oscar als auch den Golden Globe für den besten Filmsong.",
         "Besonders emotional, wenn man an eine schwimmende Tür am Ende des Films denkt."
       ],
-      "lyrics": { "real": ["Every night in my dreams I see you, I feel you", "That is how I know you go on", "Far across the distance and spaces between us"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "Every night in my dreams I see you, I feel you",
+          "That is how I know you go on",
+          "Far across the distance and spaces between us"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "3gK_2XdjOdY" }
+      "links": {
+        "youtube": "3gK_2XdjOdY"
+      }
     },
     {
       "id": "movie-ray-parker-jr-ghostbusters",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "Soundtrack",
       "difficulty": "easy",
-      "mood": ["Fun", "Catchy", "Halloween"],
+      "mood": [
+        "Fun",
+        "Catchy",
+        "Halloween"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Titelsong der gleichnamigen Komödie über Geisterjäger.",
@@ -43,9 +60,18 @@
         "Wurde von einem Huey Lewis Song ('I Want a New Drug') beeinflusst (und führte zu einem Rechtsstreit).",
         "Wenn etwas Seltsames in deiner Nachbarschaft passiert, wen rufst du an?"
       ],
-      "lyrics": { "real": ["If there's something strange in your neighborhood, who you gonna call?", "If there's something weird and it don't look good, who you gonna call?", "I ain't afraid of no ghost"], "fake": "When the shadows fall and the monsters call for your soul" },
+      "lyrics": {
+        "real": [
+          "If there's something strange in your neighborhood, who you gonna call?",
+          "If there's something weird and it don't look good, who you gonna call?",
+          "I ain't afraid of no ghost"
+        ],
+        "fake": "When the shadows fall and the monsters call for your soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Fe93CLbHjkQ" }
+      "links": {
+        "youtube": "Fe93CLbHjxQ"
+      }
     },
     {
       "id": "movie-dirty-dancing-time-of-my-life",
@@ -55,7 +81,11 @@
       "country": "US",
       "genre": "Pop",
       "difficulty": "medium",
-      "mood": ["Romantic", "Happy", "Classic"],
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das Finale des Films 'Dirty Dancing' wird durch diesen Song gekrönt.",
@@ -64,9 +94,18 @@
         "Ein Duett zwischen einem Mitglied der 'Righteous Brothers' und einer Popsängerin.",
         "Niemand schiebt Baby in eine Ecke."
       ],
-      "lyrics": { "real": ["Now I've had the time of my life, no I never felt like this before", "Yes I swear it's the truth, and I owe it all to you", "Cause I've had the time of my life and I've searched through every open door"], "fake": "Dancing in the dark, lighting up a spark in my lonely heart" },
+      "lyrics": {
+        "real": [
+          "Now I've had the time of my life, no I never felt like this before",
+          "Yes I swear it's the truth, and I owe it all to you",
+          "Cause I've had the time of my life and I've searched through every open door"
+        ],
+        "fake": "Dancing in the dark, lighting up a spark in my lonely heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "WpmILPAcRQo" }
+      "links": {
+        "youtube": "WpmILPAcRQo"
+      }
     },
     {
       "id": "movie-pharrell-happy",
@@ -76,7 +115,11 @@
       "country": "US",
       "genre": "Neo Soul",
       "difficulty": "easy",
-      "mood": ["Happy", "Upbeat", "Dance"],
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Dance"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Wurde für den Soundtrack von 'Ich – Einfach unverbesserlich 2' (Despicable Me 2) geschrieben.",
@@ -85,9 +128,18 @@
         "Der Text fordert dazu auf, mitzuklatschen, wenn man sich glücklich fühlt.",
         "Refrain: 'Because I'm happy, clap along if you feel like a room without a roof.'"
       ],
-      "lyrics": { "real": ["It might seem crazy what I'm about to say, sunshine she's here you can take a break", "Because I'm happy, clap along if you feel like a room without a roof", "Because I'm happy, clap along if you feel like happiness is the truth"], "fake": "Nothing's gonna stop me now, I'm feeling like I'm floating in the sky" },
+      "lyrics": {
+        "real": [
+          "It might seem crazy what I'm about to say, sunshine she's here you can take a break",
+          "Because I'm happy, clap along if you feel like a room without a roof",
+          "Because I'm happy, clap along if you feel like happiness is the truth"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm feeling like I'm floating in the sky"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ZbZSe6N_BXs" }
+      "links": {
+        "youtube": "ZbZSe6N_BXs"
+      }
     },
     {
       "id": "movie-kenny-loggins-footloose",
@@ -97,7 +149,11 @@
       "country": "US",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Upbeat", "Dance"],
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Dance"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Titelsong des gleichnamigen Films mit Kevin Bacon.",
@@ -106,9 +162,18 @@
         "Fordert dazu auf, die Schuhe auszuziehen und loszutanzen ('Kick off your Sunday shoes').",
         "Ein absoluter Tanzklassiker der 80er Jahre."
       ],
-      "lyrics": { "real": ["Been working so hard, I'm punching my card, eight hours for what?", "I got this feeling that time's just holding me down", "I'll hit the ceiling or else I'll tear up this town"], "fake": "Running for the light, looking for a fight in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "Been working so hard, I'm punching my card, eight hours for what?",
+          "I got this feeling that time's just holding me down",
+          "I'll hit the ceiling or else I'll tear up this town"
+        ],
+        "fake": "Running for the light, looking for a fight in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ltrMfT44XLY" }
+      "links": {
+        "youtube": "ltrMfT4Qz5Y"
+      }
     },
     {
       "id": "movie-elton-john-can-you-feel-the-love",
@@ -118,7 +183,11 @@
       "country": "GB",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Disney", "Epic"],
+      "mood": [
+        "Romantic",
+        "Disney",
+        "Epic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Dieser Song ist das Herzstück des Disney-Animationsfilms 'Der König der Löwen'.",
@@ -127,9 +196,18 @@
         "Refrain: 'And can you feel the love tonight? It is where we are.'",
         "Besonders bewegend im Zusammenspiel mit Hans Zimmers Filmmusik."
       ],
-      "lyrics": { "real": ["There's a calm surrender to the rush of day, when the heat of a rolling wave can be turned away", "An enchanted moment, and it sees me through", "It's enough to make kings and vagabonds believe the very best in you"], "fake": "In the circle of life, we find the strength to move throughout the night" },
+      "lyrics": {
+        "real": [
+          "There's a calm surrender to the rush of day, when the heat of a rolling wave can be turned away",
+          "An enchanted moment, and it sees me through",
+          "It's enough to make kings and vagabonds believe the very best in you"
+        ],
+        "fake": "In the circle of life, we find the strength to move throughout the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fTtgVSx66M4" }
+      "links": {
+        "youtube": "fTtgVSx66M4"
+      }
     },
     {
       "id": "movie-adele-skyfall",
@@ -139,7 +217,11 @@
       "country": "GB",
       "genre": "Soul-pop",
       "difficulty": "medium",
-      "mood": ["Dark", "Epic", "Cinematic"],
+      "mood": [
+        "Dark",
+        "Epic",
+        "Cinematic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das Titellied zum gleichnamigen James-Bond-Abenteuer mit Daniel Craig.",
@@ -148,9 +230,18 @@
         "Der Text nutzt die Metapher des 'Himmelseinsturzes' für den Zusammenbruch einer Welt.",
         "Markante, tiefe Stimme der britischen Soul-Sängerin."
       ],
-      "lyrics": { "real": ["This is the end, hold your breath and count to ten", "Feel the earth move and then, hear my heart burst again", "For this is the end, I've drowned and dreamt this moment"], "fake": "Diamonds are forever, they're the only thing that's gonna stay through time" },
+      "lyrics": {
+        "real": [
+          "This is the end, hold your breath and count to ten",
+          "Feel the earth move and then, hear my heart burst again",
+          "For this is the end, I've drowned and dreamt this moment"
+        ],
+        "fake": "Diamonds are forever, they're the only thing that's gonna stay through time"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeumyOzKqgI" }
+      "links": {
+        "youtube": "DeumyOzKqgI"
+      }
     },
     {
       "id": "movie-irene-cara-flashdance",
@@ -160,7 +251,11 @@
       "country": "US",
       "genre": "Dance",
       "difficulty": "easy",
-      "mood": ["Upbeat", "Happy", "Inspiring"],
+      "mood": [
+        "Upbeat",
+        "Happy",
+        "Inspiring"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Inspirierte eine ganze Generation von Tänzern durch den Film 'Flashdance'.",
@@ -169,9 +264,18 @@
         "Die berühmte Szene mit dem Wassereimer auf der Bühne ist ikonisch.",
         "Refrain: 'What a feeling! Being's believing!'"
       ],
-      "lyrics": { "real": ["First, when there's nothing, but a slow glowing dream that your fear seems to hide deep inside your mind", "All alone I have cried, silent tears full of pride in a world made of steel, made of stone", "Take your passion and make it happen"], "fake": "Step into the light, feel the neon bright, dancing through the night" },
+      "lyrics": {
+        "real": [
+          "First, when there's nothing, but a slow glowing dream that your fear seems to hide deep inside your mind",
+          "All alone I have cried, silent tears full of pride in a world made of steel, made of stone",
+          "Take your passion and make it happen"
+        ],
+        "fake": "Step into the light, feel the neon bright, dancing through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ILWSp0m9G2U" }
+      "links": {
+        "youtube": "ILWSp0m9G2U"
+      }
     },
     {
       "id": "movie-bee-gees-stayin-alive",
@@ -181,7 +285,11 @@
       "country": "AU",
       "genre": "Disco",
       "difficulty": "easy",
-      "mood": ["Cool", "Dance", "Groovy"],
+      "mood": [
+        "Cool",
+        "Dance",
+        "Groovy"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Der Eröffnungssong von 'Saturday Night Fever' mit John Travolta.",
@@ -190,9 +298,18 @@
         "Showcase für den ikonischen 'Strut'-Walk zu Beginn des Films.",
         "Der Inbegriff der Disco-Ära."
       ],
-      "lyrics": { "real": ["Well, you can tell by the way I use my walk, I'm a woman's man: no time to talk", "Music loud and women warm, I've been kicked around since I was born", "And now it's all right, it's okay, and you may look the other way"], "fake": "Night fever, night fever, we know how to do it when the light is low" },
+      "lyrics": {
+        "real": [
+          "Well, you can tell by the way I use my walk, I'm a woman's man: no time to talk",
+          "Music loud and women warm, I've been kicked around since I was born",
+          "And now it's all right, it's okay, and you may look the other way"
+        ],
+        "fake": "Night fever, night fever, we know how to do it when the light is low"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "I_izvAbhExY" }
+      "links": {
+        "youtube": "I_izvAbhExY"
+      }
     },
     {
       "id": "movie-huey-lewis-power-of-love",
@@ -202,7 +319,11 @@
       "country": "US",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Upbeat", "Classic"],
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Wurde durch den Film 'Zurück in die Zukunft' (Back to the Future) zum Welthit.",
@@ -211,9 +332,18 @@
         "Der Text preist die Kraft der Liebe, die weder Geld noch Ruhm braucht.",
         "Ikonisches Album-Cover mit der Silhouette eines DeLoreans (indirekt)."
       ],
-      "lyrics": { "real": ["The power of love is a curious thing, make a one man weep, make another man sing", "Change a hawk to a little white dove, more than a feeling: that's the power of love", "Tougher than diamonds, rich like cream! Stronger and harder than a bad girl's dream"], "fake": "Running back in time, try to find a rhyme, through the middle of the crime" },
+      "lyrics": {
+        "real": [
+          "The power of love is a curious thing, make a one man weep, make another man sing",
+          "Change a hawk to a little white dove, more than a feeling: that's the power of love",
+          "Tougher than diamonds, rich like cream! Stronger and harder than a bad girl's dream"
+        ],
+        "fake": "Running back in time, try to find a rhyme, through the middle of the crime"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "wK-8TkvzXgc" }
+      "links": {
+        "youtube": "wBl2QGAIx1s"
+      }
     },
     {
       "id": "movie-whitney-houston-i-will-always-love-you",
@@ -223,7 +353,11 @@
       "country": "US",
       "genre": "Soul-pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Epic", "Power Ballad"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das Hauptthema aus dem Film 'Bodyguard'.",
@@ -232,9 +366,18 @@
         "Eine der meistverkauften Singles aller Zeiten.",
         "Bekannt für den gewaltigen Tonartwechsel vor dem letzten Refrain."
       ],
-      "lyrics": { "real": ["If I should stay, I would only be in your way", "So I'll go, but I know I'll think of you every step of the way", "And I will always love you, I will always love you"], "fake": "Walking through the silver moonlight, looking for the light of day" },
+      "lyrics": {
+        "real": [
+          "If I should stay, I would only be in your way",
+          "So I'll go, but I know I'll think of you every step of the way",
+          "And I will always love you, I will always love you"
+        ],
+        "fake": "Walking through the silver moonlight, looking for the light of day"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "3JWTaaS7LdU" }
+      "links": {
+        "youtube": "3JWTaaS7LdU"
+      }
     },
     {
       "id": "movie-harold-faltermeyer-axel-f",
@@ -244,7 +387,11 @@
       "country": "DE",
       "genre": "Synth-pop",
       "difficulty": "easy",
-      "mood": ["Cool", "Electronic", "Classic"],
+      "mood": [
+        "Cool",
+        "Electronic",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das instrumentale Hauptthema aus 'Beverly Hills Cop'.",
@@ -255,7 +402,9 @@
       ],
       "lyrics": null,
       "isOneHitWonder": false,
-      "links": { "youtube": "V4kWpi2HnPU" }
+      "links": {
+        "youtube": "V4kWpi2HnPU"
+      }
     },
     {
       "id": "movie-coolio-gangstas-paradise",
@@ -265,7 +414,11 @@
       "country": "US",
       "genre": "Hip Hop",
       "difficulty": "medium",
-      "mood": ["Moody", "Serious", "Classic"],
+      "mood": [
+        "Moody",
+        "Serious",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Aus dem Film 'Dangerous Minds' mit Michelle Pfeiffer.",
@@ -274,9 +427,18 @@
         "Das Video zeigt Coolio im Dialog mit Michelle Pfeiffer.",
         "Refrain: 'As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left.'"
       ],
-      "lyrics": { "real": ["As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left", "Cause I've been blasting and laughing so long that even my mama thinks that my mind is gone", "Tell me why are we so blind to see that the ones we hurt are you and me?"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left",
+          "Cause I've been blasting and laughing so long that even my mama thinks that my mind is gone",
+          "Tell me why are we so blind to see that the ones we hurt are you and me?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fPO76Jdqk6M" }
+      "links": {
+        "youtube": "fPO76Jdqk6M"
+      }
     },
     {
       "id": "movie-elton-john-circle-of-life",
@@ -286,7 +448,11 @@
       "country": "GB",
       "genre": "Pop",
       "difficulty": "medium",
-      "mood": ["Epic", "Disney", "Inspiring"],
+      "mood": [
+        "Epic",
+        "Disney",
+        "Inspiring"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Eröffnungssong des Disney-Erfolgs 'Der König der Löwen'.",
@@ -295,9 +461,18 @@
         "Die ikonische Szene zeigt Simba, der dem Tierreich präsentiert wird.",
         "Nants ingonyama bagithi Baba!"
       ],
-      "lyrics": { "real": ["From the day we arrive on the planet and blinking, step into the sun", "There's more to see than can ever be seen, more to do than can ever be done", "It's the circle of life, and it moves us all"], "fake": "Walking through the savannah, looking for the banner of light" },
+      "lyrics": {
+        "real": [
+          "From the day we arrive on the planet and blinking, step into the sun",
+          "There's more to see than can ever be seen, more to do than can ever be done",
+          "It's the circle of life, and it moves us all"
+        ],
+        "fake": "Walking through the savannah, looking for the banner of light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "GibiNy4d4gc" }
+      "links": {
+        "youtube": "GibiNy4d4gc"
+      }
     },
     {
       "id": "movie-lady-gaga-shallow",
@@ -307,7 +482,11 @@
       "country": "US",
       "genre": "Country Pop",
       "difficulty": "medium",
-      "mood": ["Romantic", "Epic", "Soulful"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Soulful"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das Herzstück des Films 'A Star Is Born'.",
@@ -316,9 +495,18 @@
         "Bekannt für den intensiven Gesang am Ende des Liedes.",
         "Refrain: 'I'm off the deep end, watch as I dive in, I'll never meet the ground.'"
       ],
-      "lyrics": { "real": ["Tell me something, girl, are you happy in this modern world?", "Or do you need more? Is there something else you're searching for?", "I'm falling, in all the good times I find myself longing for change"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Tell me something, girl, are you happy in this modern world?",
+          "Or do you need more? Is there something else you're searching for?",
+          "I'm falling, in all the good times I find myself longing for change"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "bo_efYhYU2A" }
+      "links": {
+        "youtube": "bo_efYhYU2A"
+      }
     },
     {
       "id": "movie-bruce-springsteen-streets-of-philly",
@@ -328,7 +516,11 @@
       "country": "US",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Sad", "Serious", "Moody"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Moody"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Titelsong des Films 'Philadelphia' (einer der ersten Hollywood-Filme über AIDS).",
@@ -337,9 +529,18 @@
         "Bekannt für den minimalistischen Drumbeat und die gehauchte Stimme.",
         "Refrain: 'I walked the avenue till my legs felt like stone, I'm wasting away on the streets of Philadelphia.'"
       ],
-      "lyrics": { "real": ["I was bruised and battered, I couldn't tell what I felt, I was unrecognizable to myself", "I saw my reflection in a window, I didn't know my own face", "Oh brother, are you gonna leave me wasting away on the streets of Philadelphia?"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "I was bruised and battered, I couldn't tell what I felt, I was unrecognizable to myself",
+          "I saw my reflection in a window, I didn't know my own face",
+          "Oh brother, are you gonna leave me wasting away on the streets of Philadelphia?"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4z2DtNW79sQ" }
+      "links": {
+        "youtube": "4z2DtNW79sQ"
+      }
     },
     {
       "id": "movie-hugh-jackman-greatest-show",
@@ -349,7 +550,11 @@
       "country": "US",
       "genre": "Soundtrack",
       "difficulty": "medium",
-      "mood": ["Energy", "Epic", "Happy"],
+      "mood": [
+        "Energy",
+        "Epic",
+        "Happy"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Der Eröffnungssong des Filmmusicals 'The Greatest Showman'.",
@@ -358,9 +563,18 @@
         "Hugh Jackman singt hier die Rolle des P.T. Barnum.",
         "Refrain: 'Whoa, this is the greatest show!'"
       ],
-      "lyrics": { "real": ["Whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa", "Ladies and gents, this is the moment you've waited for", "Searching in the dark, your curtains down and empty sheets"], "fake": "In the middle of the street, you can feel the heat of the broken beat" },
+      "lyrics": {
+        "real": [
+          "Whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa",
+          "Ladies and gents, this is the moment you've waited for",
+          "Searching in the dark, your curtains down and empty sheets"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken beat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "NyVYGBCnZok" }
+      "links": {
+        "youtube": "NyVYGBCnZok"
+      }
     },
     {
       "id": "movie-justin-timberlake-cant-stop-the-feeling",
@@ -370,7 +584,11 @@
       "country": "US",
       "genre": "Dance-pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Summer"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Summer"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Wurde für den Soundtrack des DreamWorks-Films 'Trolls' geschrieben.",
@@ -379,9 +597,18 @@
         "Gewann einen Grammy und war für einen Oscar nominiert.",
         "Refrain: 'I got this feeling inside my bones, it goes electric, wavy when I turn it on.'"
       ],
-      "lyrics": { "real": ["I got this feeling inside my bones, it goes electric, wavy when I turn it on", "All through my city, all through my home, we're flying up, no ceiling, when we're in our zone", "I got that sunshine in my pocket, got that good soul in my feet"], "fake": "Dancing all alone, far away from home, in the neon zone" },
+      "lyrics": {
+        "real": [
+          "I got this feeling inside my bones, it goes electric, wavy when I turn it on",
+          "All through my city, all through my home, we're flying up, no ceiling, when we're in our zone",
+          "I got that sunshine in my pocket, got that good soul in my feet"
+        ],
+        "fake": "Dancing all alone, far away from home, in the neon zone"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ru0K8uYEZWw" }
+      "links": {
+        "youtube": "ru0K8uYEZWw"
+      }
     },
     {
       "id": "movie-survivor-burning-heart",
@@ -391,7 +618,11 @@
       "country": "US",
       "genre": "Hard Rock",
       "difficulty": "medium",
-      "mood": ["Powerful", "Inspiring", "Rock"],
+      "mood": [
+        "Powerful",
+        "Inspiring",
+        "Rock"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Wurde für den Film 'Rocky IV' geschrieben (Kampf gegen Ivan Drago).",
@@ -400,9 +631,18 @@
         "Ein klassischer Motivations-Song für Heldenreisen.",
         "Refrain: 'In the burning heart, just about to burst!'"
       ],
-      "lyrics": { "real": ["Two worlds collide, rival nations", "It's a primitive clash, venting years of frustrations", "In the burning heart, just about to burst, there's a quest for satisfaction"], "fake": "Fighting for the right, in the middle of the night, shining bright" },
+      "lyrics": {
+        "real": [
+          "Two worlds collide, rival nations",
+          "It's a primitive clash, venting years of frustrations",
+          "In the burning heart, just about to burst, there's a quest for satisfaction"
+        ],
+        "fake": "Fighting for the right, in the middle of the night, shining bright"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "yL3lJfhnt8g" }
+      "links": {
+        "youtube": "btPJPFnesV4"
+      }
     },
     {
       "id": "movie-berlin-take-my-breath-away",
@@ -412,7 +652,11 @@
       "country": "US",
       "genre": "Synth-pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Epic", "Classic"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das Liebesthema aus dem Film 'Top Gun'.",
@@ -421,9 +665,18 @@
         "Der markante Bass-Synthesizer leitet den atmosphärischen Song ein.",
         "Ein absolutes Highlight für Sonnenuntergänge und Kampfjets."
       ],
-      "lyrics": { "real": ["Watching every motion in my foolish lover's game", "On this endless ocean, finally abandoned all my shame", "Take my breath away"], "fake": "Flying high above the clouds, away from all the noisy crowds" },
+      "lyrics": {
+        "real": [
+          "Watching every motion in my foolish lover's game",
+          "On this endless ocean, finally abandoned all my shame",
+          "Take my breath away"
+        ],
+        "fake": "Flying high above the clouds, away from all the noisy crowds"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Bx51eegLTY8" }
+      "links": {
+        "youtube": "Bx51eegLTY8"
+      }
     },
     {
       "id": "movie-simple-minds-dont-you-forget",
@@ -433,7 +686,11 @@
       "country": "GB",
       "genre": "New Wave",
       "difficulty": "easy",
-      "mood": ["Happy", "Inspiring", "Classic"],
+      "mood": [
+        "Happy",
+        "Inspiring",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Wurde durch den Eröffnungs- und Abspann von 'The Breakfast Club' unsterblich.",
@@ -442,9 +699,18 @@
         "Das Symbol für das Teenager-Lebensgefühl der 80er Jahre.",
         "Wer erinnert sich an die erhobene Faust am Ende?"
       ],
-      "lyrics": { "real": ["Hey, hey, hey, hey! Ohhh...", "Won't you come see about me? I'll be alone, dancing you know it baby", "Don't you forget about me, don't, don't, don't, don't"], "fake": "Nothing's gonna change my world, you're the only special girl" },
+      "lyrics": {
+        "real": [
+          "Hey, hey, hey, hey! Ohhh...",
+          "Won't you come see about me? I'll be alone, dancing you know it baby",
+          "Don't you forget about me, don't, don't, don't, don't"
+        ],
+        "fake": "Nothing's gonna change my world, you're the only special girl"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CdqoNKCCt7A" }
+      "links": {
+        "youtube": "CdqoNKCCt7A"
+      }
     },
     {
       "id": "movie-seal-kiss-from-a-rose",
@@ -454,7 +720,11 @@
       "country": "GB",
       "genre": "Soul-pop",
       "difficulty": "medium",
-      "mood": ["Romantic", "Epic", "Moody"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Moody"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Wurde ein Welthit durch den Soundtrack von 'Batman Forever'.",
@@ -463,9 +733,18 @@
         "Bekannt für seine komplexen Harmonien und Folk-Einflüsse.",
         "Refrain: 'But did you know that when it snows, my eyes become large and the light that you shine can be seen?'"
       ],
-      "lyrics": { "real": ["There used to be a greying tower alone on the sea", "You became the light on the dark side of me", "Love remained a drug that's the high and not the pill"], "fake": "In the middle of the night, I will hold you tight and treat you right" },
+      "lyrics": {
+        "real": [
+          "There used to be a greying tower alone on the sea",
+          "You became the light on the dark side of me",
+          "Love remained a drug that's the high and not the pill"
+        ],
+        "fake": "In the middle of the night, I will hold you tight and treat you right"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ateQQc-Ag3E" }
+      "links": {
+        "youtube": "hDd2G_V1rzc"
+      }
     },
     {
       "id": "movie-idina-menzel-let-it-go",
@@ -475,7 +754,11 @@
       "country": "US",
       "genre": "Disney",
       "difficulty": "medium",
-      "mood": ["Powerful", "Disney", "Inspiring"],
+      "mood": [
+        "Powerful",
+        "Disney",
+        "Inspiring"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Die zentrale Hymne aus dem Disney-Film 'Die Eiskönigin' (Frozen).",
@@ -484,9 +767,18 @@
         "Ein globaler kultureller Phänomen-Song, besonders bei Kindern.",
         "Lass es los! 'The cold never bothered me anyway.'"
       ],
-      "lyrics": { "real": ["The snow glows white on the mountain tonight, not a footprint to be seen", "A kingdom of isolation, and it looks like I'm the queen", "Let it go, let it go, can't hold it back anymore"], "fake": "Building a castle in the sky, where the eagles learn to fly" },
+      "lyrics": {
+        "real": [
+          "The snow glows white on the mountain tonight, not a footprint to be seen",
+          "A kingdom of isolation, and it looks like I'm the queen",
+          "Let it go, let it go, can't hold it back anymore"
+        ],
+        "fake": "Building a castle in the sky, where the eagles learn to fly"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "movie-dirty-dancing-time",
@@ -496,7 +788,11 @@
       "country": "US",
       "genre": "Pop / Soft Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Classic", "Happy"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Happy"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Inbegriff der 80er-Jahre-Romanze durch den Film 'Dirty Dancing'.",
@@ -505,9 +801,18 @@
         "Ein absoluter Klassiker für Hochzeiten und Abschlussbälle.",
         "Refrain: 'I've had the time of my life, No, I never felt this way before!'"
       ],
-      "lyrics": { "real": ["I've had the time of my life, No, I never felt this way before", "Yes, I swear, it's the truth, And I owe it all to you", "Cause I've had the time of my life, and I owe it all to you"], "fake": "Dancing in the street, moving to the beat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "I've had the time of my life, No, I never felt this way before",
+          "Yes, I swear, it's the truth, And I owe it all to you",
+          "Cause I've had the time of my life, and I owe it all to you"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "WpmILPAcRQo" }
+      "links": {
+        "youtube": "WpmILPAcRQo"
+      }
     },
     {
       "id": "movie-lion-king-circle",
@@ -517,7 +822,11 @@
       "country": "US/ZA",
       "genre": "Pop / World",
       "difficulty": "medium",
-      "mood": ["Epic", "Emotional", "Classic"],
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Titelsong des Disney-Klassikers 'Der König der Löwen'.",
@@ -526,9 +835,18 @@
         "Geschrieben von Elton John und Tim Rice.",
         "Ein Symbol für Hoffnung und generationsübergreifende Verantwortung."
       ],
-      "lyrics": { "real": ["Nants ingonyama bagithi baba, sithi uhm ingonyama", "It's the circle of life, and it moves us all", "Through despair and hope, through faith and love"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Nants ingonyama bagithi baba, sithi uhm ingonyama",
+          "It's the circle of life, and it moves us all",
+          "Through despair and hope, through faith and love"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "GibiNy4d4gc" }
+      "links": {
+        "youtube": "GibiNy4d4gc"
+      }
     },
     {
       "id": "movie-frozen-let-it-go",
@@ -538,7 +856,11 @@
       "country": "US",
       "genre": "Showtune / Pop",
       "difficulty": "easy",
-      "mood": ["Powerful", "Emotional", "Happy"],
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Happy"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Weltweites Phänomen aus dem Disney-Film 'Die Eiskönigin'.",
@@ -547,9 +869,18 @@
         "Zementierte den Status des Disney-Renaissance-Sequels.",
         "Refrain: 'Let it go, let it go, can't hold it back anymore!'"
       ],
-      "lyrics": { "real": ["The snow glows white on the mountain tonight, not a footprint to be seen", "Let it go, let it go, can't hold it back anymore", "Let it go, let it go, turn away and slam the door"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "The snow glows white on the mountain tonight, not a footprint to be seen",
+          "Let it go, let it go, can't hold it back anymore",
+          "Let it go, let it go, turn away and slam the door"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "L0MK7qz13bU" }
+      "links": {
+        "youtube": "L0MK7qz13bU"
+      }
     },
     {
       "id": "movie-pulp-fiction-misirlou",
@@ -559,7 +890,11 @@
       "country": "US",
       "genre": "Surf Rock",
       "difficulty": "medium",
-      "mood": ["Energy", "Raw", "Cool"],
+      "mood": [
+        "Energy",
+        "Raw",
+        "Cool"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Das furiose Instrumental-Intro von Quentin Tarantinos 'Pulp Fiction'.",
@@ -568,9 +903,16 @@
         "Der Sound ist untrennbar mit dem Coolness-Faktor des Films verbunden.",
         "Refrain: (Instrumental) - 'DA-DA-DA-DA-DA-DA-DA...'"
       ],
-      "lyrics": { "real": ["(Instrumental)"], "fake": "Singing along with the rhythm of the ocean" },
+      "lyrics": {
+        "real": [
+          "(Instrumental)"
+        ],
+        "fake": "Singing along with the rhythm of the ocean"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "movie-snf-night-fever",
@@ -580,7 +922,11 @@
       "country": "GB/AU",
       "genre": "Disco",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Dance"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Zentraler Song aus dem Disco-Phänomen 'Saturday Night Fever'.",
@@ -589,9 +935,18 @@
         "Perfekter Takt zum Tanzen und Feiern auf der LED-Tanzfläche.",
         "Refrain: 'Night fever, night fever! We know how to do it!'"
       ],
-      "lyrics": { "real": ["Listen to the ground, there is movement all around", "There's something going down and I can feel it", "Night fever, night fever, we know how to do it"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "Listen to the ground, there is movement all around",
+          "There's something going down and I can feel it",
+          "Night fever, night fever, we know how to do it"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "-tJYN-eG1zk" }
+      "links": {
+        "youtube": "-tJYN-eG1zk"
+      }
     },
     {
       "id": "movie-top-gun-danger-zone",
@@ -601,7 +956,11 @@
       "country": "US",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Powerful", "Action"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Action"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Untrennbar verbunden mit den Luftkampf-Szenen aus 'Top Gun'.",
@@ -610,9 +969,18 @@
         "Erlebte ein Comeback im Sequel 'Top Gun: Maverick'.",
         "Refrain: 'Highway to the danger zone! Ride into the danger zone!'"
       ],
-      "lyrics": { "real": ["Revvin' up your engine, listen to her howlin' roar", "Metal under tension, beggin' you to touch and go", "Highway to the danger zone, ride into the danger zone"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Revvin' up your engine, listen to her howlin' roar",
+          "Metal under tension, beggin' you to touch and go",
+          "Highway to the danger zone, ride into the danger zone"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "siwpn14IE7E" }
+      "links": {
+        "youtube": "siwpn14IE7E"
+      }
     },
     {
       "id": "movie-flashdance-feeling",
@@ -622,7 +990,11 @@
       "country": "US",
       "genre": "Pop / Dance",
       "difficulty": "easy",
-      "mood": ["Inspirational", "Energy", "Classic"],
+      "mood": [
+        "Inspirational",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Thematisiert den Traum einer Tänzerin, es nach oben zu schaffen.",
@@ -631,9 +1003,18 @@
         "Die Tanzszenen im Film setzten neue ästhetische Maßstäbe.",
         "Refrain: 'What a feeling! Being's believin'! I can have it all!'"
       ],
-      "lyrics": { "real": ["First, when there's nothing, but a slow glowing dream", "That your fear seems to hide deep inside your mind", "What a feeling, bein's believin', I can have it all, now I'm dancing for my life"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "First, when there's nothing, but a slow glowing dream",
+          "That your fear seems to hide deep inside your mind",
+          "What a feeling, bein's believin', I can have it all, now I'm dancing for my life"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ILWSp0m9G2U"
+      }
     },
     {
       "id": "movie-footloose-theme",
@@ -643,7 +1024,11 @@
       "country": "US",
       "genre": "Pop / Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Dance"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dance"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Der Song über die Auflehnung gegen ein Tanzverbot.",
@@ -652,9 +1037,18 @@
         "Wurde zu einer Hymne der jugendlichen Freiheit.",
         "Refrain: 'Footloose, footloose! Kick off your Sunday shoes!'"
       ],
-      "lyrics": { "real": ["Been working so hard, I'm punching my card, eight hours, for what?", "Footloose, footloose, kick off your Sunday shoes", "Please, Louise, pull me off of my knees"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Been working so hard, I'm punching my card, eight hours, for what?",
+          "Footloose, footloose, kick off your Sunday shoes",
+          "Please, Louise, pull me off of my knees"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ltrMfT44X9A" }
+      "links": {
+        "youtube": "ltrMfT4Qz5Y"
+      }
     },
     {
       "id": "movie-bond-skyfall",
@@ -664,7 +1058,11 @@
       "country": "GB",
       "genre": "Soul / Pop",
       "difficulty": "medium",
-      "mood": ["Epic", "Emotional", "Dramatic"],
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Dramatic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Titelsong zum 23. James-Bond-Abenteuer.",
@@ -673,9 +1071,18 @@
         "Besticht durch das orchestrale Arrangement und Adeles kraftvolle Stimme.",
         "Refrain: 'Let the sky fall, when it crumbles, we will stand tall!'"
       ],
-      "lyrics": { "real": ["This is the end, hold your breath and count to ten", "Let the sky fall, when it crumbles, we will stand tall", "Facing it all together at Skyfall"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "lyrics": {
+        "real": [
+          "This is the end, hold your breath and count to ten",
+          "Let the sky fall, when it crumbles, we will stand tall",
+          "Facing it all together at Skyfall"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeumyOzKqgI" }
+      "links": {
+        "youtube": "DeumyOzKqgI"
+      }
     },
     {
       "id": "movie-showman-this-is-me",
@@ -685,7 +1092,11 @@
       "country": "US",
       "genre": "Showtune / Pop",
       "difficulty": "medium",
-      "mood": ["Powerful", "Inspirational", "Epic"],
+      "mood": [
+        "Powerful",
+        "Inspirational",
+        "Epic"
+      ],
       "pack": "Movie Hits",
       "hints": [
         "Eine gewaltige Hymne auf Selbstakzeptanz und Stolz.",
@@ -694,9 +1105,18 @@
         "Besticht durch den kraftvollen Chor und die mitreißende Energie.",
         "Refrain: 'I am brave, I am bruised, I am who I'm meant to be, this is me!'"
       ],
-      "lyrics": { "real": ["I'm not a stranger to the dark, hide away, they say, 'cause we don't want your broken parts", "I am brave, I am bruised, I am who I'm meant to be, this is me", "Look out 'cause here I come, and I'm marching on to the beat I drum"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "I'm not a stranger to the dark, hide away, they say, 'cause we don't want your broken parts",
+          "I am brave, I am bruised, I am who I'm meant to be, this is me",
+          "Look out 'cause here I come, and I'm marching on to the beat I drum"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CjxugyZ5XTk" }
+      "links": {
+        "youtube": "CjxugyZCfuw"
+      }
     }
   ]
 }

@@ -13,7 +13,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Romantic", "Classic", "Dreamy"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Dreamy"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Einer der erfolgreichsten deutschen Schlager überhaupt.",
@@ -22,9 +26,18 @@
         "Roland Kaisers markante, tiefe Stimme machte das Lied zum Kult.",
         "Refrain: 'Santa Maria, Insel die aus Träumen geboren!'"
       ],
-      "lyrics": { "real": ["Santa Maria, Insel die aus Träumen geboren", "Santa Maria, ich hab' dich für immer verloren", "Doch im Wind, da hör' ich noch deinen Namen"], "fake": "Unter den Sternen der Nacht, bin ich allein erwacht" },
+      "lyrics": {
+        "real": [
+          "Santa Maria, Insel die aus Träumen geboren",
+          "Santa Maria, ich hab' dich für immer verloren",
+          "Doch im Wind, da hör' ich noch deinen Namen"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "schlager-marianne-rosenberg-er-gehoert",
@@ -34,7 +47,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Dance"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Wurde zu einer Hymne der Gay-Community und auf vielen CSDs gespielt.",
@@ -43,9 +60,18 @@
         "Thematisiert unerschütterliche Treue und Stolz auf den Partner.",
         "Refrain: 'Er gehört zu mir, wie mein Name an der Tür!'"
       ],
-      "lyrics": { "real": ["Er gehört zu mir, wie mein Name an der Tür", "Ich weiß, er ist kein Held, doch er ist meine Welt", "Alles was ich hab', das geb' ich nur ihm"], "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach" },
+      "lyrics": {
+        "real": [
+          "Er gehört zu mir, wie mein Name an der Tür",
+          "Ich weiß, er ist kein Held, doch er ist meine Welt",
+          "Alles was ich hab', das geb' ich nur ihm"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "-ageU-fcnaA"
+      }
     },
     {
       "id": "schlager-wolgang-petry-verlieben",
@@ -55,7 +81,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Sing-along"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Sing-along"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Markierte das große Comeback von 'Wolle' Petry in den 90ern.",
@@ -64,9 +94,18 @@
         "Zählt vier Stadien einer gescheiterten und wiederbelebten Liebe auf.",
         "Refrain: 'Verlieben, verloren, vergessen, verzeih'n, verdammt es war Glück und verdammt war es schön!'"
       ],
-      "lyrics": { "real": ["Verlieben, verloren, vergessen, verzeih'n", "Verdammt, es war Glück und verdammt war es schön", "Ich weiß nicht wohin, aber ich weiß wo ich bin"], "fake": "Ich flöge hoch hinaus, aus diesem alten Haus" },
+      "lyrics": {
+        "real": [
+          "Verlieben, verloren, vergessen, verzeih'n",
+          "Verdammt, es war Glück und verdammt war es schön",
+          "Ich weiß nicht wohin, aber ich weiß wo ich bin"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "Mlt2xg_j5AY"
+      }
     },
     {
       "id": "schlager-helene-fischer-atemlos",
@@ -76,7 +115,11 @@
       "country": "DE",
       "genre": "Schlager / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Energy"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Einer der erfolgreichsten deutschen Songs des 21. Jahrhunderts.",
@@ -85,9 +128,18 @@
         "Thematisiert eine berauschende Nacht voller Freiheit und Gefühl.",
         "Refrain: 'Atemlos durch die Nacht, bis ein neuer Tag erwacht!'"
       ],
-      "lyrics": { "real": ["Wir ziehen durch die Straßen und die Clubs dieser Stadt", "Das ist unsere Nacht, wie für uns beide gemacht, oho oho", "Atemlos durch die Nacht, bis ein neuer Tag erwacht"], "fake": "Wir springen ins Glück, schauen niemals zurück" },
+      "lyrics": {
+        "real": [
+          "Wir ziehen durch die Straßen und die Clubs dieser Stadt",
+          "Das ist unsere Nacht, wie für uns beide gemacht, oho oho",
+          "Atemlos durch die Nacht, bis ein neuer Tag erwacht"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "haECT-SerHk" }
+      "links": {
+        "youtube": "haECT-SerHk"
+      }
     },
     {
       "id": "schlager-andrea-berg-liebe",
@@ -97,7 +149,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Sad", "Serious", "Sing-along"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Sing-along"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Ein Dauerbrenner in den Charts und in jeder Schlager-Playlist.",
@@ -106,9 +162,18 @@
         "Bekannt für ihre emotionalen Live-Auftritte und ihre treue Fangemeinde.",
         "Refrain: 'Du hast mich tausendmal belogen, du hast mich tausendmal verletzt!'"
       ],
-      "lyrics": { "real": ["Du hast mich tausendmal belogen, du hast mich tausendmal verletzt", "Ich bin mit dir so hoch geflogen, doch der Himmel war besetzt", "Du warst die Sonne in der Nacht"], "fake": "In den Gassen der Stadt, da wird man niemals satt" },
+      "lyrics": {
+        "real": [
+          "Du hast mich tausendmal belogen, du hast mich tausendmal verletzt",
+          "Ich bin mit dir so hoch geflogen, doch der Himmel war besetzt",
+          "Du warst die Sonne in der Nacht"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "schlager-rex-gildo-fiesta",
@@ -118,7 +183,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Classic"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Verbreitet klischeehafte mexikanische Urlaubsstimmung.",
@@ -127,9 +196,18 @@
         "Ein absoluter Klassiker auf jeder Karnevals- und Faschingsparty.",
         "Refrain: 'Fiesta, Fiesta Mexicana, heute Abend gibt es eine Riesen-Party!'"
       ],
-      "lyrics": { "real": ["Hossa! Hossa!", "Fiesta, Fiesta Mexicana, heute Abend gibt es eine Riesen-Party", "Fiesta, Fiesta Mexicana, bald wird alles wieder gut"], "fake": "Unter der Sonne von Mexiko, da sind wir alle froh" },
+      "lyrics": {
+        "real": [
+          "Hossa! Hossa!",
+          "Fiesta, Fiesta Mexicana, heute Abend gibt es eine Riesen-Party",
+          "Fiesta, Fiesta Mexicana, bald wird alles wieder gut"
+        ],
+        "fake": "Unter der Sonne von Mexiko, da sind wir alle froh"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "schlager-juergen-drews-bett",
@@ -139,7 +217,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Summer"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Summer"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Der Song ist eine Coverversion von 'Let Your Love Flow' der Bellamy Brothers.",
@@ -148,9 +230,18 @@
         "Ein Lied, das fast jeder in Deutschland mitsingen kann.",
         "Refrain: 'Ein Bett im Kornfeld, das ist immer frei!'"
       ],
-      "lyrics": { "real": ["Ein Bett im Kornfeld, das ist immer frei", "Denn es ist Sommer, und was ist schon dabei", "Die Grillen singen und es duftet nach Heu"], "fake": "Wir springen ins Glück, schauen niemals zurück" },
+      "lyrics": {
+        "real": [
+          "Ein Bett im Kornfeld, das ist immer frei",
+          "Denn es ist Sommer, und was ist schon dabei",
+          "Die Grillen singen und es duftet nach Heu"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "schlager-howard-carpendale-hello",
@@ -160,7 +251,11 @@
       "country": "ZA/DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Romantic", "Classic", "Emotional"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Emotional"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Howard Carpendale stammt ursprünglich aus Südafrika.",
@@ -169,9 +264,18 @@
         "Besitzt eine sehr markante Textpassage, in der das Telefon klingelt.",
         "Refrain: 'Hello again! Ich sag' einfach hello again!'"
       ],
-      "lyrics": { "real": ["Hello again! Ich sag' einfach hello again", "Es ist schon lange her, seit wir uns sahen", "Du hast dich kaum verändert, bist immer noch schön"], "fake": "Unter den Sternen der Nacht, bin ich allein erwacht" },
+      "lyrics": {
+        "real": [
+          "Hello again! Ich sag' einfach hello again",
+          "Es ist schon lange her, seit wir uns sahen",
+          "Du hast dich kaum verändert, bist immer noch schön"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "8rRgfq5X7DY"
+      }
     },
     {
       "id": "schlager-roberto-blanco-spass",
@@ -181,7 +285,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Classic"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Verbreitet unerschütterlichen Optimismus und Lebensfreude.",
@@ -190,9 +298,18 @@
         "Zählt zu den bekanntesten Gute-Laune-Liedern des Schlagers.",
         "Refrain: 'Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein!'"
       ],
-      "lyrics": { "real": ["Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein", "So wie ein schöner Traum, so wie ein grüner Baum", "Wir nehmen alles nicht so schwer"], "fake": "In den Gassen der Stadt, da wird man niemals satt" },
+      "lyrics": {
+        "real": [
+          "Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein",
+          "So wie ein schöner Traum, so wie ein grüner Baum",
+          "Wir nehmen alles nicht so schwer"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "x2dTtjXDIn4"
+      }
     },
     {
       "id": "schlager-dschinghis-khan-khan",
@@ -202,7 +319,11 @@
       "country": "DE",
       "genre": "Disco / Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Energy"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Energy"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Wurde für den Eurovision Song Contest 1979 geschrieben (4. Platz).",
@@ -211,9 +332,18 @@
         "Ein Welthit, der besonders in Japan und der Sowjetunion extrem populär war.",
         "Refrain: 'Dsching, Dsching, Dschinghis Khan! He Reiter, Ho Reiter, He Reiter, immer weiter!'"
       ],
-      "lyrics": { "real": ["Sie ritten um die Wette mit dem Steppenwind, tausend Mann", "Und einer ritt voran, dem folgten alle blind, Dschinghis Khan", "Dsching, Dsching, Dschinghis Khan! He Reiter, Ho Reiter, He Reiter, immer weiter"], "fake": "Wir fliegen durch die Nacht, bis der helle Tag erwacht" },
+      "lyrics": {
+        "real": [
+          "Sie ritten um die Wette mit dem Steppenwind, tausend Mann",
+          "Und einer ritt voran, dem folgten alle blind, Dschinghis Khan",
+          "Dsching, Dsching, Dschinghis Khan! He Reiter, Ho Reiter, He Reiter, immer weiter"
+        ],
+        "fake": "Wir fliegen durch die Nacht, bis der helle Tag erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "haH3tP_I66g" }
+      "links": {
+        "youtube": "DAr7KaxzfpA"
+      }
     },
     {
       "id": "schlager-katja-ebstein-wunder",
@@ -223,7 +353,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Inspiring", "Classic"],
+      "mood": [
+        "Happy",
+        "Inspiring",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Belegte den dritten Platz beim Eurovision Song Contest 1970.",
@@ -232,9 +366,18 @@
         "Besitzt ein sehr markantes, modulationsreiches Arrangement.",
         "Refrain: 'Wunder gibt es immer wieder, heute oder morgen können sie geschehen!'"
       ],
-      "lyrics": { "real": ["Wunder gibt es immer wieder, heute oder morgen können sie geschehen", "Wunder gibt es immer wieder, wenn sie dir begegnen, musst du sie auch sehen", "Frag' nicht nach dem Sonnenschein, wenn es einmal regnet"], "fake": "In den Gassen der Nacht, da wird die Hoffnung wieder wach" },
+      "lyrics": {
+        "real": [
+          "Wunder gibt es immer wieder, heute oder morgen können sie geschehen",
+          "Wunder gibt es immer wieder, wenn sie dir begegnen, musst du sie auch sehen",
+          "Frag' nicht nach dem Sonnenschein, wenn es einmal regnet"
+        ],
+        "fake": "In den Gassen der Nacht, da wird die Hoffnung wieder wach"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "Ny7yzW1Ejno"
+      }
     },
     {
       "id": "schlager-juliane-werding-conny",
@@ -244,7 +387,11 @@
       "country": "DE",
       "genre": "Schlager / Storytelling",
       "difficulty": "medium",
-      "mood": ["Sad", "Serious", "Moody"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Moody"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Thematisiert auf sehr direkte Weise den Drogentod eines Freundes.",
@@ -253,9 +400,18 @@
         "Machte die erst 15-jährige Juliane Werding über Nacht zum Star.",
         "Refrain: 'Am Tag, als Conny Kramer starb, und alle Glocken läuteten...'"
       ],
-      "lyrics": { "real": ["Wir lagen träumend im Gras, die Köpfe voll verrückter Ideen", "Am Tag, als Conny Kramer starb, und alle Glocken läuteten", "Es war ein langer Weg zurück, doch wir haben ihn nicht mehr gesehen"], "fake": "Unter den Sternen der Nacht, bin ich allein erwacht" },
+      "lyrics": {
+        "real": [
+          "Wir lagen träumend im Gras, die Köpfe voll verrückter Ideen",
+          "Am Tag, als Conny Kramer starb, und alle Glocken läuteten",
+          "Es war ein langer Weg zurück, doch wir haben ihn nicht mehr gesehen"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "OD8-q-Zey7Q"
+      }
     },
     {
       "id": "schlager-udo-juergens-wein",
@@ -265,7 +421,11 @@
       "country": "AT/DE",
       "genre": "Schlager / Chanson",
       "difficulty": "easy",
-      "mood": ["Nostalgic", "Classic", "Sad"],
+      "mood": [
+        "Nostalgic",
+        "Classic",
+        "Sad"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Thematisiert das Leben und die Sehnsucht von Gastarbeitern in Deutschland.",
@@ -274,9 +434,18 @@
         "Ein absoluter Meilenstein der deutschsprachigen Musikgeschichte.",
         "Refrain: 'Griechischer Wein, ist so wie das Blut der Erde!'"
       ],
-      "lyrics": { "real": ["Es war schon dunkel, als ich durch die Vorstadtstraßen heimwärts ging", "Griechischer Wein, ist so wie das Blut der Erde", "Komm schenk' dir ein, und wenn ich dann traurig bin, schenk' noch mal ein"], "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach" },
+      "lyrics": {
+        "real": [
+          "Es war schon dunkel, als ich durch die Vorstadtstraßen heimwärts ging",
+          "Griechischer Wein, ist so wie das Blut der Erde",
+          "Komm schenk' dir ein, und wenn ich dann traurig bin, schenk' noch mal ein"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "D8hAhqDcVRA"
+      }
     },
     {
       "id": "schlager-nicole-frieden",
@@ -286,7 +455,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Sad", "Inspiring", "Classic"],
+      "mood": [
+        "Sad",
+        "Inspiring",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Der erste deutsche Sieg beim Eurovision Song Contest überhaupt.",
@@ -295,9 +468,18 @@
         "Thematisiert den Wunsch nach Weltfrieden in Zeiten des Kalten Krieges.",
         "Refrain: 'Ein bißchen Frieden, ein bißchen Sonne, für diese Erde auf der wir wohnen!'"
       ],
-      "lyrics": { "real": ["Wie eine Blume am Winterrand, wie ein Feuer im eisigen Wind", "Ein bißchen Frieden, ein bißchen Sonne, für diese Erde auf der wir wohnen", "Sing' mit mir ein kleines Lied, dass die Welt in Frieden lebt"], "fake": "Unter den Sternen der Nacht, bin ich allein erwacht" },
+      "lyrics": {
+        "real": [
+          "Wie eine Blume am Winterrand, wie ein Feuer im eisigen Wind",
+          "Ein bißchen Frieden, ein bißchen Sonne, für diese Erde auf der wir wohnen",
+          "Sing' mit mir ein kleines Lied, dass die Welt in Frieden lebt"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "hp_b-095yPc"
+      }
     },
     {
       "id": "schlager-maffay-bruecken",
@@ -307,7 +489,11 @@
       "country": "DE",
       "genre": "Rock / Schlager",
       "difficulty": "medium",
-      "mood": ["Epic", "Dramatic", "Serious"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Serious"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Ursprünglich von der DDR-Rockband 'Karat' aufgenommen.",
@@ -316,9 +502,18 @@
         "Gilt als einer der emotionalsten und tiefgründigsten Hits dieser Ära.",
         "Refrain: 'Über sieben Brücken mußt du gehn, sieben dunkle Jahre überstehn!'"
       ],
-      "lyrics": { "real": ["Manchmal geh' ich meine Straße ohne Blick, manchmal wünsch' ich mir mein Schaukelpferd zurück", "Über sieben Brücken mußt du gehn, sieben dunkle Jahre überstehn", "Siebenmal wirst du die Asche sein, aber einmal auch der helle Schein"], "fake": "Wir springen ins Glück, schauen niemals zurück" },
+      "lyrics": {
+        "real": [
+          "Manchmal geh' ich meine Straße ohne Blick, manchmal wünsch' ich mir mein Schaukelpferd zurück",
+          "Über sieben Brücken mußt du gehn, sieben dunkle Jahre überstehn",
+          "Siebenmal wirst du die Asche sein, aber einmal auch der helle Schein"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "GzCl8DIJCR0"
+      }
     },
     {
       "id": "schlager-vicky-leandros-leben",
@@ -328,7 +523,11 @@
       "country": "GR/DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Inspirational"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Inspirational"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Ein Song über Abschied, Loslassen und den unerschütterlichen Lebensmut.",
@@ -337,9 +536,18 @@
         "Besitzt eine sehr festliche, fast orchestrale Steigerung.",
         "Refrain: 'Ich liebe das Leben! Irgendwann fängt alles an!'"
       ],
-      "lyrics": { "real": ["Das Karussell wird sich weiterdrehen, auch wenn wir auseinandergehen", "Ich liebe das Leben, es war viel zu schön um wahr zu sein", "Nein, weine nicht, wenn es kein Morgen gibt"], "fake": "In den Gassen der Stadt, da wird man niemals satt" },
+      "lyrics": {
+        "real": [
+          "Das Karussell wird sich weiterdrehen, auch wenn wir auseinandergehen",
+          "Ich liebe das Leben, es war viel zu schön um wahr zu sein",
+          "Nein, weine nicht, wenn es kein Morgen gibt"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "7_FsW8RPCTc"
+      }
     },
     {
       "id": "schlager-guildo-horn-lieb",
@@ -349,7 +557,11 @@
       "country": "DE",
       "genre": "Schlager / Comedy",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Crazy"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Crazy"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Sollte den Staub vom ESC wischen und sorgte für Sensation in Deutschland (7. Platz).",
@@ -358,9 +570,18 @@
         "Ironisierte den klassischen Schlager, wurde aber selbst zum Riesen-Hit.",
         "Refrain: 'Guildo hat euch lieb!'"
       ],
-      "lyrics": { "real": ["Wenn die Welt voll Kummer ist und der Regen fällt auf dein Gesicht", "Guildo hat euch lieb!", "Und wenn ihr einmal traurig seid, dann kommt zu mir!"], "fake": "Wir springen ins Glück, schauen niemals zurück" },
+      "lyrics": {
+        "real": [
+          "Wenn die Welt voll Kummer ist und der Regen fällt auf dein Gesicht",
+          "Guildo hat euch lieb!",
+          "Und wenn ihr einmal traurig seid, dann kommt zu mir!"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "jQ5lYitQf-M" }
+      "links": {
+        "youtube": "HPZX7EZIFD0"
+      }
     },
     {
       "id": "schlager-roy-black-schoen",
@@ -370,7 +591,11 @@
       "country": "DE/NO",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Classic"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Ein herzerwärmendes Duett zwischen dem Schlagerstar Roy Black und der kleinen Anita Hegerland.",
@@ -379,9 +604,18 @@
         "Die Melodie ist extrem eingängig und fast wie ein Volkslied aufgebaut.",
         "Refrain: 'Schön ist es auf der Welt zu sein, sagt die Biene zu dem Stachelschwein!'"
       ],
-      "lyrics": { "real": ["Schön ist es auf der Welt zu sein, sagt die Biene zu dem Stachelschwein", "Und wir beide glauben das, denn es macht uns Riesen-Spaß", "Alle Vögel singen heute nur für uns allein"], "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach" },
+      "lyrics": {
+        "real": [
+          "Schön ist es auf der Welt zu sein, sagt die Biene zu dem Stachelschwein",
+          "Und wir beide glauben das, denn es macht uns Riesen-Spaß",
+          "Alle Vögel singen heute nur für uns allein"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "schlager-heino-enzian",
@@ -391,7 +625,11 @@
       "country": "DE",
       "genre": "Schlager / Volksmusik",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Classic"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Das Markenzeichen des Sängers mit der dunklen Brille und dem blonden Haar.",
@@ -400,9 +638,18 @@
         "Wurde in den 80ern sogar in einer Dance-Version wieder erfolgreich.",
         "Refrain: 'Blau, blau, blau blüht der Enzian!'"
       ],
-      "lyrics": { "real": ["Auf der Alm, da gibt's koa Sünd', aber bunte Blumen find'st du g'wiss am Wegesrand", "Blau, blau, blau blüht der Enzian", "Wenn wir uns wiedersehen, am Bergeshang bei Sonnenschein"], "fake": "In den Gassen der Stadt, da wird man niemals satt" },
+      "lyrics": {
+        "real": [
+          "Auf der Alm, da gibt's koa Sünd', aber bunte Blumen find'st du g'wiss am Wegesrand",
+          "Blau, blau, blau blüht der Enzian",
+          "Wenn wir uns wiedersehen, am Bergeshang bei Sonnenschein"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "2tY57TYnr9w"
+      }
     },
     {
       "id": "schlager-costa-cordalis-anita",
@@ -412,7 +659,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Classic"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Costa Cordalis brachte griechisches Flair in den deutschen Schlager.",
@@ -421,9 +672,18 @@
         "Bekannt für den markanten Call-and-Response im Refrain.",
         "Refrain: 'Ich fand sie irgendwo, allein in Mexiko, Anita!'"
       ],
-      "lyrics": { "real": ["Ich fand sie irgendwo, allein in Mexiko, Anita", "Schwarz war ihr Haar, die Augen wie Sterne so klar", "Anita, Anita! Ich liebe dich so!"], "fake": "Unter den Sternen der Nacht, bin ich allein erwacht" },
+      "lyrics": {
+        "real": [
+          "Ich fand sie irgendwo, allein in Mexiko, Anita",
+          "Schwarz war ihr Haar, die Augen wie Sterne so klar",
+          "Anita, Anita! Ich liebe dich so!"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "b58_FSpSWhw"
+      }
     },
     {
       "id": "schlager-helene-atemlos",
@@ -433,7 +693,11 @@
       "country": "DE",
       "genre": "Schlager / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Wurde zum absoluten Phänomen und zur erfolgreichsten Schlager-Single aller Zeiten.",
@@ -442,9 +706,18 @@
         "Sorgte bei der WM-Feier 2014 für den musikalischen Höhepunkt.",
         "Refrain: 'Atemlos durch die Nacht! Bis ein neuer Tag erwacht!'"
       ],
-      "lyrics": { "real": ["Wir zieh'n durch die Straßen und die Clubs dieser Stadt", "Das ist unsre Nacht, wie für uns beide gemacht", "Atemlos durch die Nacht, bis ein neuer Tag erwacht"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "Wir zieh'n durch die Straßen und die Clubs dieser Stadt",
+          "Das ist unsre Nacht, wie für uns beide gemacht",
+          "Atemlos durch die Nacht, bis ein neuer Tag erwacht"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "schlager-roland-santa",
@@ -454,7 +727,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Romantic", "Classic", "Dreamy"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Dreamy"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Ursprünglich ein italienischer Hit von Oliver Onions.",
@@ -463,9 +740,18 @@
         "Ein absoluter Klassiker, der bis heute bei den 'Kaisermania'-Konzerten gefeiert wird.",
         "Refrain: 'Santa Maria! Insel, die aus Träumen geboren!'"
       ],
-      "lyrics": { "real": ["Santa Maria, Insel, die aus Träumen geboren", "Ich hab' meine Sinne an dich verloren", "Santa Maria, weit über's Meer"], "fake": "In der Mitte der Nacht, haben wir das Licht angemacht" },
+      "lyrics": {
+        "real": [
+          "Santa Maria, Insel, die aus Träumen geboren",
+          "Ich hab' meine Sinne an dich verloren",
+          "Santa Maria, weit über's Meer"
+        ],
+        "fake": "In der Mitte der Nacht, haben wir das Licht angemacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "0oJ99THF4Rc"
+      }
     },
     {
       "id": "schlager-udo-wein",
@@ -475,7 +761,11 @@
       "country": "AT",
       "genre": "Schlager / Chanson",
       "difficulty": "easy",
-      "mood": ["Classic", "Deep", "Story"],
+      "mood": [
+        "Classic",
+        "Deep",
+        "Story"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Thematisiert die Sehnsucht griechischer Gastarbeiter nach ihrer Heimat.",
@@ -484,9 +774,18 @@
         "Die Bouzouki-Melodie ist das Erkennungsmerkmal des Songs.",
         "Refrain: 'Griechischer Wein, ist so wie das Blut der Erde!'"
       ],
-      "lyrics": { "real": ["Griechischer Wein, ist so wie das Blut der Erde", "Komm' schenk dir ein, und wenn ich dann traurig werde", "Liegt es daran, dass ich immer noch träume von drüben"], "fake": "Walking down the street with a rhythm in my feet tonight" },
+      "lyrics": {
+        "real": [
+          "Griechischer Wein, ist so wie das Blut der Erde",
+          "Komm' schenk dir ein, und wenn ich dann traurig werde",
+          "Liegt es daran, dass ich immer noch träume von drüben"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "qOnj4u18F08" }
+      "links": {
+        "youtube": "shIKpOYMVTo"
+      }
     },
     {
       "id": "schlager-petry-verlieben",
@@ -496,7 +795,11 @@
       "country": "DE",
       "genre": "Schlager / Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Classic"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Wolfgang 'Wolle' Petrys großer Comeback-Hit der 90er.",
@@ -505,9 +808,18 @@
         "Ein Muss für jedes Schützenfest und jede Schlager-Party.",
         "Refrain: 'Verlieben, verloren, vergessen, verzeih'n! Verdammt, wir leben noch!'"
       ],
-      "lyrics": { "real": ["Verlieben, verloren, vergessen, verzeih'n", "Verdammt, wir leben noch, wir leben noch", "Kopf über Wasser, wir tauchen nicht unter"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "Verlieben, verloren, vergessen, verzeih'n",
+          "Verdammt, wir leben noch, wir leben noch",
+          "Kopf über Wasser, wir tauchen nicht unter"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "schlager-marianne-ergehoert",
@@ -517,7 +829,11 @@
       "country": "DE",
       "genre": "Schlager / Disco",
       "difficulty": "easy",
-      "mood": ["Classic", "Happy", "Dance"],
+      "mood": [
+        "Classic",
+        "Happy",
+        "Dance"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Kombiniert klassische Schlager-Elemente mit einem modernen Disco-Beat.",
@@ -526,9 +842,18 @@
         "Besonders in der Queer-Szene genießt der Song Kultstatus.",
         "Refrain: 'Er gehört zu mir, wie mein Name an der Tür!'"
       ],
-      "lyrics": { "real": ["Er gehört zu mir, wie mein Name an der Tür", "Ich weiß, er ist bei mir, auch wenn ich ihn verlier'", "Das kann mir keiner nehmen, dass wir uns doch verstehen"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Er gehört zu mir, wie mein Name an der Tür",
+          "Ich weiß, er ist bei mir, auch wenn ich ihn verlier'",
+          "Das kann mir keiner nehmen, dass wir uns doch verstehen"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "schlager-andrea-belogen",
@@ -538,7 +863,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Painful", "Energy", "Classic"],
+      "mood": [
+        "Painful",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Einer der am meisten gespielten Songs in deutschen Discofox-Clubs.",
@@ -547,9 +876,18 @@
         "Besticht durch den eingängigen Rhythmus und den leidenschaftlichen Refrain.",
         "Refrain: 'Du hast mich tausendmal belogen! Du hast mich tausendmal verletzt!'"
       ],
-      "lyrics": { "real": ["Du hast mich tausendmal belogen, du hast mich tausendmal verletzt", "Ich bin mit dir so hoch geflogen, doch der Himmel war besetzt", "Ich hab' geglaubt, ich hab' gehofft, dass alles anders wird"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Du hast mich tausendmal belogen, du hast mich tausendmal verletzt",
+          "Ich bin mit dir so hoch geflogen, doch der Himmel war besetzt",
+          "Ich hab' geglaubt, ich hab' gehofft, dass alles anders wird"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "schlager-djoetzi-stern",
@@ -559,7 +897,11 @@
       "country": "AT",
       "genre": "Schlager / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Singalong"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Singalong"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "War über 100 Wochen in den deutschen Charts vertreten.",
@@ -568,9 +910,18 @@
         "Wurde zur ultimativen Hymne auf Volksfesten und Après-Ski-Partys.",
         "Refrain: 'Einen Stern, der deinen Namen trägt! Alle Zeiten überlebt!'"
       ],
-      "lyrics": { "real": ["Einen Stern, der deinen Namen trägt, alle Zeiten überlebt", "Und passend zu der Ewigkeit, schenk' ich dir heut' Nacht mein Herz", "Halleluja, halleluja"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Einen Stern, der deinen Namen trägt, alle Zeiten überlebt",
+          "Und passend zu der Ewigkeit, schenk' ich dir heut' Nacht mein Herz",
+          "Halleluja, halleluja"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1fFpX0X0X0X" }
+      "links": {
+        "youtube": "1fFpX0X0X0X"
+      }
     },
     {
       "id": "schlager-reim-verdammt",
@@ -580,7 +931,11 @@
       "country": "DE",
       "genre": "Schlager / Rock",
       "difficulty": "easy",
-      "mood": ["Emotional", "Energy", "Classic"],
+      "mood": [
+        "Emotional",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Hielt sich 16 Wochen lang auf Platz 1 der deutschen Charts.",
@@ -589,9 +944,18 @@
         "Ein absoluter Meilenstein der deutschen Pop-Geschichte der Nachwendezeit.",
         "Refrain: 'Verdammt, ich lieb' dich, ich lieb' dich nicht!'"
       ],
-      "lyrics": { "real": ["Ich zieh' dich aus, mit meinen Blicken, und dann leg' ich dich wieder an", "Verdammt, ich lieb' dich, ich lieb' dich nicht", "Verdammt, ich brauch' dich, ich brauch' dich nicht"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Ich zieh' dich aus, mit meinen Blicken, und dann leg' ich dich wieder an",
+          "Verdammt, ich lieb' dich, ich lieb' dich nicht",
+          "Verdammt, ich brauch' dich, ich brauch' dich nicht"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "schlager-howard-hello",
@@ -601,7 +965,11 @@
       "country": "ZA/DE",
       "genre": "Schlager / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Classic"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Howard Carpendales erfolgreichster und bekanntester Song.",
@@ -610,9 +978,18 @@
         "Ein absoluter Klassiker im deutschen Radio.",
         "Refrain: 'Hello again! Drück' ich die Tür auf und komm' rein!'"
       ],
-      "lyrics": { "real": ["Hello again, drück' ich die Tür auf und komm' rein", "Ich sag' hello again, heut' Nacht will ich nicht einsam sein", "Kopf aus dem Fenster, der Morgen ist nah"], "fake": "Walking down the street with a rhythm in my feet tonight" },
+      "lyrics": {
+        "real": [
+          "Hello again, drück' ich die Tür auf und komm' rein",
+          "Ich sag' hello again, heut' Nacht will ich nicht einsam sein",
+          "Kopf aus dem Fenster, der Morgen ist nah"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "-tJYN-eG1zk" }
+      "links": {
+        "youtube": "-tJYN-eG1zk"
+      }
     },
     {
       "id": "schlager-drews-kornfeld",
@@ -622,7 +999,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Chill", "Classic"],
+      "mood": [
+        "Happy",
+        "Chill",
+        "Classic"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Eine Cover-Version des Country-Songs 'Let Your Love Flow'.",
@@ -631,9 +1012,18 @@
         "Ein absolutes Muss für jede Schlager-Sause.",
         "Refrain: 'Ein Bett im Kornfeld, das ist immer frei!'"
       ],
-      "lyrics": { "real": ["Ein Bett im Kornfeld, das ist immer frei, denn es ist Sommer, und was ist schon dabei", "Die Grillen singen, und es duftet nach Heu", "Und irgendwo in Berlin, fängt ein neues Leben an"], "fake": "Dancing in the sun, having so much fun with everyone heut" },
+      "lyrics": {
+        "real": [
+          "Ein Bett im Kornfeld, das ist immer frei, denn es ist Sommer, und was ist schon dabei",
+          "Die Grillen singen, und es duftet nach Heu",
+          "Und irgendwo in Berlin, fängt ein neues Leben an"
+        ],
+        "fake": "Dancing in the sun, having so much fun with everyone heut"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "XqX0720VTRY"
+      }
     },
     {
       "id": "schlager-rexgildo-fiesta",
@@ -643,7 +1033,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Party"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Party"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Der Inbegriff für 'Gute-Laune-Schlager' der 70er Jahre.",
@@ -652,9 +1046,18 @@
         "Rex Gildos fröhliche Performance machte den Song zum Kulthit.",
         "Refrain: 'Fiesta, Fiesta Mexicana! Bald wird die Nacht zum Tag!'"
       ],
-      "lyrics": { "real": ["Fiesta, Fiesta Mexicana, heut' Nacht da feiern wir", "Hossa, hossa!", "Der Tequila, der fließt heute Abend wie Wasser"], "fake": "Nichts kann uns stoppen, wenn wir durch die Nacht fliegen irgendwie" },
+      "lyrics": {
+        "real": [
+          "Fiesta, Fiesta Mexicana, heut' Nacht da feiern wir",
+          "Hossa, hossa!",
+          "Der Tequila, der fließt heute Abend wie Wasser"
+        ],
+        "fake": "Nichts kann uns stoppen, wenn wir durch die Nacht fliegen irgendwie"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "schlager-roberto-blanco-spass",
@@ -664,7 +1067,11 @@
       "country": "DE",
       "genre": "Schlager",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Energy"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Energy"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Roberto Blancos Lebensmotto in einen Song gefasst.",
@@ -673,9 +1080,18 @@
         "Wird bis heute oft zitiert und bei fröhlichen Anlässen gesungen.",
         "Refrain: 'Ein bisschen Spaß muss sein! Dann ist die Welt voll Sonnenschein!'"
       ],
-      "lyrics": { "real": ["Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein", "So wie ein schöner Traum, fliegen wir durch Raum und Zeit", "Heut' Abend da feiern wir, in guter alter Manier"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein",
+          "So wie ein schöner Traum, fliegen wir durch Raum und Zeit",
+          "Heut' Abend da feiern wir, in guter alter Manier"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "schlager-vicky-liebe",
@@ -685,7 +1101,11 @@
       "country": "GR/DE",
       "genre": "Schlager / Chanson",
       "difficulty": "easy",
-      "mood": ["Grateful", "Classic", "Inspirational"],
+      "mood": [
+        "Grateful",
+        "Classic",
+        "Inspirational"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Vicky Leandros' Ode an das Leben nach einer Enttäuschung.",
@@ -694,9 +1114,18 @@
         "Ein zeitloser Evergreen, der oft gecovert wurde.",
         "Refrain: 'Ich liebe das Leben! Und ich lass' mir nichts nehmen!'"
       ],
-      "lyrics": { "real": ["Ich liebe das Leben, und ich lass' mir nichts nehmen", "Keinen Augenblick, schau' ich mehr zurück", "Wir seh'n uns bestimmt einmal wieder"], "fake": "In the middle of the street, you can feel the heat of my heart" },
+      "lyrics": {
+        "real": [
+          "Ich liebe das Leben, und ich lass' mir nichts nehmen",
+          "Keinen Augenblick, schau' ich mehr zurück",
+          "Wir seh'n uns bestimmt einmal wieder"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of my heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "schlager-ebstein-wunder",
@@ -706,7 +1135,11 @@
       "country": "DE",
       "genre": "Schlager / Chanson",
       "difficulty": "easy",
-      "mood": ["Inspirational", "Classic", "Positive"],
+      "mood": [
+        "Inspirational",
+        "Classic",
+        "Positive"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Erreichte den 3. Platz beim Eurovision Song Contest 1970.",
@@ -715,9 +1148,18 @@
         "Wurde zu einem der bekanntesten Lieder der Nachkriegszeit.",
         "Refrain: 'Wunder gibt es immer wieder! Heute oder morgen!'"
       ],
-      "lyrics": { "real": ["Wunder gibt es immer wieder, heute oder morgen", "Sorgen, das sind Tränen, die wir nicht mehr seh'n", "Glaub' an das Leben, glaub' an das Licht"], "fake": "Tanzen im Regen, dem Leben entgegen, heute Nacht" },
+      "lyrics": {
+        "real": [
+          "Wunder gibt es immer wieder, heute oder morgen",
+          "Sorgen, das sind Tränen, die wir nicht mehr seh'n",
+          "Glaub' an das Leben, glaub' an das Licht"
+        ],
+        "fake": "Tanzen im Regen, dem Leben entgegen, heute Nacht"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Ny7yzW1Ejno"
+      }
     },
     {
       "id": "schlager-nicole-frieden",
@@ -727,7 +1169,11 @@
       "country": "DE",
       "genre": "Schlager / Folk",
       "difficulty": "easy",
-      "mood": ["Serious", "Classic", "Grateful"],
+      "mood": [
+        "Serious",
+        "Classic",
+        "Grateful"
+      ],
       "pack": "Schlager & Evergreens",
       "hints": [
         "Erster Sieg für Deutschland beim Eurovision Song Contest.",
@@ -736,9 +1182,18 @@
         "Wurde in unzählige Sprachen übersetzt und weltweit ein Hit.",
         "Refrain: 'Ein bißchen Frieden, ein bißchen Sonne, für diese Erde, auf der wir wohnen!'"
       ],
-      "lyrics": { "real": ["Ein bißchen Frieden, ein bißchen Sonne, für diese Erde, auf der wir wohnen", "Ich weiß, ich bin nur ein kleines Licht, aber wir brauchen uns alle", "Heut' Abend da feiern wir, in guter alter Manier"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Ein bißchen Frieden, ein bißchen Sonne, für diese Erde, auf der wir wohnen",
+          "Ich weiß, ich bin nur ein kleines Licht, aber wir brauchen uns alle",
+          "Heut' Abend da feiern wir, in guter alter Manier"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     }
   ]
 }

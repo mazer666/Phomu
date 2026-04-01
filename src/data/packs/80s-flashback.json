@@ -13,7 +13,11 @@
       "country": "NO",
       "genre": "Synth-pop",
       "difficulty": "easy",
-      "mood": ["Upbeat", "Classic", "Electronic"],
+      "mood": [
+        "Upbeat",
+        "Classic",
+        "Electronic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Dieses Musikvideo nutzte eine revolutionäre Bleistift-Skizzen-Animation (Rotoskopie).",
@@ -31,7 +35,9 @@
         "fake": "Walking the street, I'm feeling the heat of the neon light"
       },
       "isOneHitWonder": false,
-      "links": { "youtube": "djV11Xbc914" }
+      "links": {
+        "youtube": "djV11Xbc914"
+      }
     },
     {
       "id": "80s-michael-jackson-thriller",
@@ -41,7 +47,11 @@
       "country": "US",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Party", "Spooky", "Dance"],
+      "mood": [
+        "Party",
+        "Spooky",
+        "Dance"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Musikvideo ist fast 14 Minuten lang und wurde von John Landis gedreht.",
@@ -59,7 +69,9 @@
         "fake": "The shadows are calling your name in the middle of the deepest fog"
       },
       "isOneHitWonder": false,
-      "links": { "youtube": "sOnqjkJTMaA" }
+      "links": {
+        "youtube": "sOnqjkJTMaA"
+      }
     },
     {
       "id": "80s-queen-another-one-bites-the-dust",
@@ -69,7 +81,11 @@
       "country": "GB",
       "genre": "Funk Rock",
       "difficulty": "medium",
-      "mood": ["Cool", "Groovy", "Rock"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Rock"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Dieser Song hat eine der am meisten wiedererkannten Basslinien der Musikgeschichte.",
@@ -87,7 +103,9 @@
         "fake": "Running through the fire, higher than the wire, feel the heat"
       },
       "isOneHitWonder": false,
-      "links": { "youtube": "rY0WxgSXdEE" }
+      "links": {
+        "youtube": "rY0WxgSXdEE"
+      }
     },
     {
       "id": "80s-cyndi-lauper-girls-just-want-to-have-fun",
@@ -97,7 +115,11 @@
       "country": "US",
       "genre": "New Wave",
       "difficulty": "easy",
-      "mood": ["Happy", "Party", "Upbeat"],
+      "mood": [
+        "Happy",
+        "Party",
+        "Upbeat"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Wurde ursprünglich von einem Mann (Robert Hazard) geschrieben, aber aus weiblicher Perspektive zum Hit.",
@@ -115,7 +137,9 @@
         "fake": "Dancing all alone in the neon light, until the sun comes rising bright"
       },
       "isOneHitWonder": false,
-      "links": { "youtube": "PIb6AZdTr-A" }
+      "links": {
+        "youtube": "PIb6AZdTr-A"
+      }
     },
     {
       "id": "80s-journeys-dont-stop-believin",
@@ -125,7 +149,11 @@
       "country": "US",
       "genre": "Arena Rock",
       "difficulty": "easy",
-      "mood": ["Inspiring", "Sing-along", "Rock"],
+      "mood": [
+        "Inspiring",
+        "Sing-along",
+        "Rock"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Dieser Song erlebte durch die Serie 'The Sopranos' und 'Glee' ein riesiges Comeback.",
@@ -143,7 +171,9 @@
         "fake": "He dreams of a life in the big city lights, working the nights"
       },
       "isOneHitWonder": false,
-      "links": { "youtube": "VcjzHMhBtf0" }
+      "links": {
+        "youtube": "VcjzHMhBtf0"
+      }
     },
     {
       "id": "80s-bon-jovi-livin-on-a-prayer",
@@ -153,7 +183,11 @@
       "country": "US",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Stadium Rock", "Inspiring", "Sing-along"],
+      "mood": [
+        "Stadium Rock",
+        "Inspiring",
+        "Sing-along"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "In diesem Song wird eine Talkbox verwendet, um dem Gitarrensound eine 'sprechende' Stimme zu verleihen.",
@@ -162,9 +196,18 @@
         "Der ikonische Tonartwechsel im letzten Refrain ist berüchtigt für seine Höhe.",
         "Ein absoluter Klassiker in jeder Karaokebar."
       ],
-      "lyrics": { "real": ["Tommy used to work on the docks, union's been on strike", "Gina works the diner all day, working for her man", "She says: We've gotta hold on to what we've got"], "fake": "He dreams of a future where the sun don't shine no more" },
+      "lyrics": {
+        "real": [
+          "Tommy used to work on the docks, union's been on strike",
+          "Gina works the diner all day, working for her man",
+          "She says: We've gotta hold on to what we've got"
+        ],
+        "fake": "He dreams of a future where the sun don't shine no more"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "lDK9QqIzhwk" }
+      "links": {
+        "youtube": "lDK9QqIzhwk"
+      }
     },
     {
       "id": "80s-phil-collins-in-the-air-tonight",
@@ -174,7 +217,11 @@
       "country": "GB",
       "genre": "Soft Rock",
       "difficulty": "medium",
-      "mood": ["Moody", "Drums", "Epic"],
+      "mood": [
+        "Moody",
+        "Drums",
+        "Epic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Bekannt für den vielleicht berühmtesten Schlagzeug-Einsatz (Drum Fill) der Welt.",
@@ -183,9 +230,18 @@
         "Wurde prominent in der ersten Folge von 'Miami Vice' eingesetzt.",
         "Spürst du es auch schon? 'I can feel it coming in the air tonight...'"
       ],
-      "lyrics": { "real": ["I can feel it coming in the air tonight, oh Lord", "And I've been waiting for this moment, for all my life", "Well, if you told me you were drowning, I would not lend a hand"], "fake": "The moon is high and the tide is rising slow tonight" },
+      "lyrics": {
+        "real": [
+          "I can feel it coming in the air tonight, oh Lord",
+          "And I've been waiting for this moment, for all my life",
+          "Well, if you told me you were drowning, I would not lend a hand"
+        ],
+        "fake": "The moon is high and the tide is rising slow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "YkADjWpW6mQ" }
+      "links": {
+        "youtube": "YkADj0TPrJA"
+      }
     },
     {
       "id": "80s-eurythmics-sweet-dreams",
@@ -195,7 +251,11 @@
       "country": "GB",
       "genre": "Synth-pop",
       "difficulty": "easy",
-      "mood": ["Electronic", "Dark", "Groovy"],
+      "mood": [
+        "Electronic",
+        "Dark",
+        "Groovy"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Duo besteht aus Annie Lennox und Dave Stewart.",
@@ -204,9 +264,18 @@
         "Der Text ist eher zynisch und handelt davon, wie jeder nach etwas anderem strebt.",
         "Refrain: 'Sweet dreams are made of this, who am I to disagree?'"
       ],
-      "lyrics": { "real": ["Sweet dreams are made of this, who am I to disagree?", "I travel the world and the seven seas, everybody's looking for something", "Some of them want to use you, some of them want to get used by you"], "fake": "Moving through the shadows of the night, until the dawn comes bright" },
+      "lyrics": {
+        "real": [
+          "Sweet dreams are made of this, who am I to disagree?",
+          "I travel the world and the seven seas, everybody's looking for something",
+          "Some of them want to use you, some of them want to get used by you"
+        ],
+        "fake": "Moving through the shadows of the night, until the dawn comes bright"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "qeMFqkcPYcg" }
+      "links": {
+        "youtube": "qeMFqkcPYcg"
+      }
     },
     {
       "id": "8s-tina-turner-whats-love-got-to-do-with-it",
@@ -216,7 +285,11 @@
       "country": "US",
       "genre": "Pop",
       "difficulty": "medium",
-      "mood": ["Soulful", "Classic", "Empowering"],
+      "mood": [
+        "Soulful",
+        "Classic",
+        "Empowering"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Markierte das unglaubliche Comeback der Sängerin in ihren 40ern.",
@@ -225,9 +298,18 @@
         "Der Titel stellt die Frage, was Liebe eigentlich damit zu tun hat.",
         "Die 'Queen of Rock 'n' Roll' in ihrer ikonischen 80er-Ära."
       ],
-      "lyrics": { "real": ["You must understand though the touch of your hand makes my pulse react", "That it's only the thrill of boy meeting girl, opposites attract", "What's love got to do, got to do with it? Who needs a heart when a heart can be broken?"], "fake": "Take a look at me now, there's nothing left but memories" },
+      "lyrics": {
+        "real": [
+          "You must understand though the touch of your hand makes my pulse react",
+          "That it's only the thrill of boy meeting girl, opposites attract",
+          "What's love got to do, got to do with it? Who needs a heart when a heart can be broken?"
+        ],
+        "fake": "Take a look at me now, there's nothing left but memories"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "oGpFcHTxjZs" }
+      "links": {
+        "youtube": "oGpFcHTxjZs"
+      }
     },
     {
       "id": "80s-police-every-breath-you-take",
@@ -237,7 +319,11 @@
       "country": "GB",
       "genre": "New Wave",
       "difficulty": "easy",
-      "mood": ["Moody", "Obsessive", "Classic"],
+      "mood": [
+        "Moody",
+        "Obsessive",
+        "Classic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Wird oft fälschlicherweise als Liebeslied gespielt, handelt aber eigentlich von Besessenheit und Überwachung.",
@@ -246,9 +332,18 @@
         "Die berühmte Gitarrenfigur wird oft nachgeahmt, ist aber schwer perfekt zu spielen.",
         "Ich werde dich beobachten: 'Every breath you take, every move you make...'"
       ],
-      "lyrics": { "real": ["Every breath you take, and every move you make", "Every bond you break, every step you take, I'll be watching you", "Every single day, and every word you say, every game you play"], "fake": "Whenever you go, whatever you do, I will follow you" },
+      "lyrics": {
+        "real": [
+          "Every breath you take, and every move you make",
+          "Every bond you break, every step you take, I'll be watching you",
+          "Every single day, and every word you say, every game you play"
+        ],
+        "fake": "Whenever you go, whatever you do, I will follow you"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "OMOGaugKpjw" }
+      "links": {
+        "youtube": "1Zo5OVQfSCA"
+      }
     },
     {
       "id": "80s-rick-astley-never-gonna-give-you-up",
@@ -258,7 +353,11 @@
       "country": "GB",
       "genre": "Dance-pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Internet Meme", "Meme"],
+      "mood": [
+        "Happy",
+        "Internet Meme",
+        "Meme"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Dieser Song wurde Jahre später zum berühmtesten Internet-Streich aller Zeiten ('Rickrolling').",
@@ -267,9 +366,18 @@
         "Verspricht niemals aufzugeben, niemals zu enttäuschen.",
         "Kein Phomu ohne dieses Meme: 'Never gonna give you up...'"
       ],
-      "lyrics": { "real": ["We're no strangers to love, you know the rules and so do I", "A full commitment's what I'm thinking of, you wouldn't get this from any other guy", "Never gonna give you up, never gonna let you down"], "fake": "I've been searching for a heart like yours throughout the night" },
+      "lyrics": {
+        "real": [
+          "We're no strangers to love, you know the rules and so do I",
+          "A full commitment's what I'm thinking of, you wouldn't get this from any other guy",
+          "Never gonna give you up, never gonna let you down"
+        ],
+        "fake": "I've been searching for a heart like yours throughout the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "dQw4w9WgXcQ" }
+      "links": {
+        "youtube": "dQw4w9WgXcQ"
+      }
     },
     {
       "id": "80s-michael-jackson-billie-jean",
@@ -279,7 +387,11 @@
       "country": "US",
       "genre": "R&B",
       "difficulty": "easy",
-      "mood": ["Cool", "Groovy", "Dance"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Dance"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "In diesem Musikvideo leuchten die Bodenplatten unter den Füßen des Sängers auf.",
@@ -288,9 +400,18 @@
         "Das markante Schlagzeug-Intro wurde wochenlang abgemischt, bis es perfekt klang.",
         "Einer der erfolgreichsten Solo-Songs des 'King of Pop'."
       ],
-      "lyrics": { "real": ["Billie Jean is not my lover, she's just a girl who claims that I am the one", "But the kid is not my son", "She says I am the one, but the kid is not my son"], "fake": "Dancing in the hall, she's the one who's gonna make me fall" },
+      "lyrics": {
+        "real": [
+          "Billie Jean is not my lover, she's just a girl who claims that I am the one",
+          "But the kid is not my son",
+          "She says I am the one, but the kid is not my son"
+        ],
+        "fake": "Dancing in the hall, she's the one who's gonna make me fall"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Zi_XLOBDo_Y" }
+      "links": {
+        "youtube": "Zi_XLOBDo_Y"
+      }
     },
     {
       "id": "80s-madonna-like-a-virgin",
@@ -300,7 +421,11 @@
       "country": "US",
       "genre": "Dance-pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Pop"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Pop"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Video zu diesem Song wurde unter anderem in den Kanälen von Venedig gedreht.",
@@ -309,9 +434,18 @@
         "Produziert von Nile Rodgers (Gitarrist von Chic).",
         "Refrain: 'Like a virgin, touched for the very first time...'"
       ],
-      "lyrics": { "real": ["I made it through the wilderness, somehow I made it through", "Didn't know how lost I was until I found you", "Like a virgin, touched for the very first time"], "fake": "When the stars are shining bright, I will hold you through the night" },
+      "lyrics": {
+        "real": [
+          "I made it through the wilderness, somehow I made it through",
+          "Didn't know how lost I was until I found you",
+          "Like a virgin, touched for the very first time"
+        ],
+        "fake": "When the stars are shining bright, I will hold you through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "s__rX_WL100" }
+      "links": {
+        "youtube": "s__rX_WL100"
+      }
     },
     {
       "id": "80s-tears-for-fears-everybody-wants-to-rule",
@@ -321,7 +455,11 @@
       "country": "GB",
       "genre": "New Wave",
       "difficulty": "medium",
-      "mood": ["Cool", "Driving", "Synth"],
+      "mood": [
+        "Cool",
+        "Driving",
+        "Synth"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Der Song hieß ursprünglich 'Everybody Wants to Go to War'.",
@@ -330,9 +468,18 @@
         "Handelt von Machtgier und den Fehlern der Menschheit.",
         "Intro fängt sofort mit einem treibenden Synthesizer-Riff an."
       ],
-      "lyrics": { "real": ["Welcome to your life, there's no turning back", "Even while we sleep we will find you acting on your best behavior", "Turn your back on mother nature, everybody wants to rule the world"], "fake": "Open up your mind, let the light of day define the way" },
+      "lyrics": {
+        "real": [
+          "Welcome to your life, there's no turning back",
+          "Even while we sleep we will find you acting on your best behavior",
+          "Turn your back on mother nature, everybody wants to rule the world"
+        ],
+        "fake": "Open up your mind, let the light of day define the way"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "aGCdLKXnf3w" }
+      "links": {
+        "youtube": "aGCdLKXnf3w"
+      }
     },
     {
       "id": "80s-wham-wake-me-up-before-you-go-go",
@@ -342,7 +489,11 @@
       "country": "GB",
       "genre": "Dance-pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Upbeat", "Pop"],
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Pop"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Duo bestand aus George Michael und Andrew Ridgeley.",
@@ -351,9 +502,18 @@
         "Beginnt mit dem ikonischen viermaligen Schnipsen und 'Jitterbug'.",
         "Eine der fröhlichsten Hymnen der 80er Jahre."
       ],
-      "lyrics": { "real": ["You put the boom-boom into my heart, you send my soul sky high when your lovin' starts", "Jitterbug into my brain, goes a bang-bang-bang till my feet do the same", "Wake me up before you go-go, don't leave me hanging on like a solo"], "fake": "Sun is coming up and we're dancing till the light of day" },
+      "lyrics": {
+        "real": [
+          "You put the boom-boom into my heart, you send my soul sky high when your lovin' starts",
+          "Jitterbug into my brain, goes a bang-bang-bang till my feet do the same",
+          "Wake me up before you go-go, don't leave me hanging on like a solo"
+        ],
+        "fake": "Sun is coming up and we're dancing till the light of day"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "pIgZ7gMze7A" }
+      "links": {
+        "youtube": "pIgZ7gMze7A"
+      }
     },
     {
       "id": "80s-whitney-houston-dance-with-somebody",
@@ -363,7 +523,11 @@
       "country": "US",
       "genre": "Dance-pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Party"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Party"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Wurde oft mit Cyndi Laupers Stil verglichen, entwickelte sich aber zum Signatur-Hit der Sängerin.",
@@ -372,9 +536,18 @@
         "Der Text drückt den Wunsch aus, jemanden zum Tanzen zu finden, der einen liebt.",
         "Ein Meilenstein der 80er Dance-Pop-Geschichte."
       ],
-      "lyrics": { "real": ["Clock strikes upon the hour and the sun begins to fade", "Still enough time to figure out how to chase my blues away", "Oh, I wanna dance with somebody, I wanna feel the heat with somebody"], "fake": "Waiting for the moment when you look into my lonely eyes" },
+      "lyrics": {
+        "real": [
+          "Clock strikes upon the hour and the sun begins to fade",
+          "Still enough time to figure out how to chase my blues away",
+          "Oh, I wanna dance with somebody, I wanna feel the heat with somebody"
+        ],
+        "fake": "Waiting for the moment when you look into my lonely eyes"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "eH3giaIzONA" }
+      "links": {
+        "youtube": "eH3giaIzONA"
+      }
     },
     {
       "id": "80s-survivor-eye-of-the-tiger",
@@ -384,7 +557,11 @@
       "country": "US",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Inspiring", "Training", "Rock"],
+      "mood": [
+        "Inspiring",
+        "Training",
+        "Rock"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Wurde speziell für den Film 'Rocky III' auf Wunsch von Sylvester Stallone geschrieben.",
@@ -393,9 +570,18 @@
         "Handelt vom Überleben und dem Behalten des Fokus ('Eye of the Tiger').",
         "Die ultimative Trainings-Hymne der Welt."
       ],
-      "lyrics": { "real": ["Risin' up, back on the street, did my time, took my chances", "Went the distance, now I'm back on my feet, just a man and his will to survive", "It's the eye of the tiger, it's the thrill of the fight"], "fake": "Stronger than the mountain, faster than the wind, we will win" },
+      "lyrics": {
+        "real": [
+          "Risin' up, back on the street, did my time, took my chances",
+          "Went the distance, now I'm back on my feet, just a man and his will to survive",
+          "It's the eye of the tiger, it's the thrill of the fight"
+        ],
+        "fake": "Stronger than the mountain, faster than the wind, we will win"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "btPJPFnesV4" }
+      "links": {
+        "youtube": "btPJPFnesV4"
+      }
     },
     {
       "id": "80s-rick-james-super-freak",
@@ -405,7 +591,11 @@
       "country": "US",
       "genre": "Funk",
       "difficulty": "medium",
-      "mood": ["Groovy", "Dance", "Funk"],
+      "mood": [
+        "Groovy",
+        "Dance",
+        "Funk"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Die Basslinie dieses Songs wurde später berühmt durch MC Hammers 'U Can't Touch This'.",
@@ -414,9 +604,18 @@
         "Ein Meilenstein des Funk und Punk-Funk.",
         "Refrain: 'She's a very kinky girl... the kind you don't take home to mother.'"
       ],
-      "lyrics": { "real": ["She's a very kinky girl, the kind you don't take home to mother", "She will never let your spirits down, once you get her off the street", "I like my girls quite a bit, I'll take them all around the world"], "fake": "Dancing in the red light, feeling alright, all through the night" },
+      "lyrics": {
+        "real": [
+          "She's a very kinky girl, the kind you don't take home to mother",
+          "She will never let your spirits down, once you get her off the street",
+          "I like my girls quite a bit, I'll take them all around the world"
+        ],
+        "fake": "Dancing in the red light, feeling alright, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "QYHxGBH6o4M" }
+      "links": {
+        "youtube": "QYHxGBH6o4M"
+      }
     },
     {
       "id": "80s-dexys-midnight-runners-come-on-eileen",
@@ -426,7 +625,11 @@
       "country": "GB",
       "genre": "Celtic Pop",
       "difficulty": "medium",
-      "mood": ["Happy", "Fast", "Sing-along"],
+      "mood": [
+        "Happy",
+        "Fast",
+        "Sing-along"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Bekannt für den Einsatz von Geigen und einen Folk-beeinflussten Sound.",
@@ -435,9 +638,18 @@
         "Dankte der Protagonistin 'Eileen', dass sie alles so viel besser mache.",
         "Ein Klassiker auf jeder Hochzeit und 80er-Party."
       ],
-      "lyrics": { "real": ["Come on Eileen, oh I swear (what he means) at this moment, you mean everything", "You in that dress, my thoughts I confess, verge on dirty", "Ah, come on Eileen"], "fake": "Walking down the dusty road, carrying a heavy load of love" },
+      "lyrics": {
+        "real": [
+          "Come on Eileen, oh I swear (what he means) at this moment, you mean everything",
+          "You in that dress, my thoughts I confess, verge on dirty",
+          "Ah, come on Eileen"
+        ],
+        "fake": "Walking down the dusty road, carrying a heavy load of love"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "6-mG7R0L-I0" }
+      "links": {
+        "youtube": "pq1ybbixmro"
+      }
     },
     {
       "id": "80s-madonna-material-girl",
@@ -447,7 +659,11 @@
       "country": "US",
       "genre": "Dance-pop",
       "difficulty": "easy",
-      "mood": ["Sassy", "Catchy", "Classic"],
+      "mood": [
+        "Sassy",
+        "Catchy",
+        "Classic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Video ist eine Hommage an Marilyn Monroes Performance von 'Diamonds Are a Girl's Best Friend'.",
@@ -456,9 +672,18 @@
         "Produziert von Nile Rodgers.",
         "Refrain: 'Cause we are living in a material world, and I am a material girl.'"
       ],
-      "lyrics": { "real": ["Some boys kiss me, some boys hug me, I think they're okay", "If they don't give me proper credit, I just walk away", "They can beg and they can plead, but they can't see the light"], "fake": "Money makes the world go round, and I'm the queen of this town" },
+      "lyrics": {
+        "real": [
+          "Some boys kiss me, some boys hug me, I think they're okay",
+          "If they don't give me proper credit, I just walk away",
+          "They can beg and they can plead, but they can't see the light"
+        ],
+        "fake": "Money makes the world go round, and I'm the queen of this town"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6p-lDYPR2P8" }
+      "links": {
+        "youtube": "6p-lDYPR2P8"
+      }
     },
     {
       "id": "80s-police-roxanne",
@@ -468,7 +693,11 @@
       "country": "GB",
       "genre": "Reggae Rock",
       "difficulty": "medium",
-      "mood": ["Cool", "Moody", "Rock"],
+      "mood": [
+        "Cool",
+        "Moody",
+        "Rock"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Obwohl 1978 veröffentlicht, war es ein definierender Hit für die frühen 80er Jahre.",
@@ -477,9 +706,18 @@
         "Die Band verbindet hier Reggae-Rhythmen mit Punk-Energie.",
         "Du musst das rote Licht nicht anmachen: 'Roxanne, you don't have to put on the red light!'"
       ],
-      "lyrics": { "real": ["Roxanne, you don't have to put on the red light", "Those days are over, you don't have to sell your body to the night", "Roxanne, you don't have to wear that dress tonight"], "fake": "Walking the streets of Paris, looking for a sign of love" },
+      "lyrics": {
+        "real": [
+          "Roxanne, you don't have to put on the red light",
+          "Those days are over, you don't have to sell your body to the night",
+          "Roxanne, you don't have to wear that dress tonight"
+        ],
+        "fake": "Walking the streets of Paris, looking for a sign of love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "3T1c7GAsRJK" }
+      "links": {
+        "youtube": "3T1c7GAsRJK"
+      }
     },
     {
       "id": "80s-dennie-williams-lets-hear-it-for-the-boy",
@@ -489,7 +727,11 @@
       "country": "US",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Movie", "Upbeat"],
+      "mood": [
+        "Happy",
+        "Movie",
+        "Upbeat"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Wurde durch den Film 'Footloose' weltberühmt.",
@@ -498,9 +740,18 @@
         "Ein Paradebeispiel für den hellen, perkussiven 80er-Pop-Sound.",
         "Refrain: 'Let's hear it for the boy, oh, let's give the boy a hand!'"
       ],
-      "lyrics": { "real": ["My baby, he don't talk sweet, he ain't got much to say", "But he loves me, loves me, loves me, I know that he loves me anyway", "Let's hear it for the boy, oh, let's give the boy a hand"], "fake": "He's dancing in the street, moving to the rhythm of the beat" },
+      "lyrics": {
+        "real": [
+          "My baby, he don't talk sweet, he ain't got much to say",
+          "But he loves me, loves me, loves me, I know that he loves me anyway",
+          "Let's hear it for the boy, oh, let's give the boy a hand"
+        ],
+        "fake": "He's dancing in the street, moving to the rhythm of the beat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "s7UfHl28sT0" }
+      "links": {
+        "youtube": "s7UfHl28sT0"
+      }
     },
     {
       "id": "80s-dire-straits-money-for-nothing",
@@ -510,7 +761,11 @@
       "country": "GB",
       "genre": "Rock",
       "difficulty": "medium",
-      "mood": ["Cool", "Rock", "Electronic"],
+      "mood": [
+        "Cool",
+        "Rock",
+        "Electronic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Musikvideo war eines der ersten mit computeranimierten 3D-Figuren.",
@@ -519,9 +774,18 @@
         "Der Text ist aus der Sicht von Arbeitern geschrieben, die Musiker im Fernsehen beobachten.",
         "Hörst du die Drums? 'I want my MTV...'"
       ],
-      "lyrics": { "real": ["I want my MTV, I want my MTV", "Now look at them yo-yos that's the way you do it, you play the guitar on the MTV", "That ain't working, that's the way you do it, money for nothing and your chicks for free"], "fake": "Working all day in the factory line, dreaming of the summer time" },
+      "lyrics": {
+        "real": [
+          "I want my MTV, I want my MTV",
+          "Now look at them yo-yos that's the way you do it, you play the guitar on the MTV",
+          "That ain't working, that's the way you do it, money for nothing and your chicks for free"
+        ],
+        "fake": "Working all day in the factory line, dreaming of the summer time"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "wTP2RUD_cL0" }
+      "links": {
+        "youtube": "wTP2RUD_cL0"
+      }
     },
     {
       "id": "80s-peter-gabriel-sledgehammer",
@@ -531,7 +795,11 @@
       "country": "GB",
       "genre": "Art Pop",
       "difficulty": "medium",
-      "mood": ["Creative", "Groovy", "Epic"],
+      "mood": [
+        "Creative",
+        "Groovy",
+        "Epic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Das Musikvideo hielt lange den Rekord für die meisten VMA-Nominierungen und Siege.",
@@ -540,9 +808,18 @@
         "Handelt von Metaphern für spirituelle oder physische Kraft.",
         "Ein audiovisuelles Meisterwerk der 80er."
       ],
-      "lyrics": { "real": ["You could have a steam train, if you'd just lay down your tracks", "You could have a aeroplane flying, if you bring your blue sky back", "I want to be your sledgehammer, why don't you call my name?"], "fake": "Feel the power of the light, shining through the middle of the night" },
+      "lyrics": {
+        "real": [
+          "You could have a steam train, if you'd just lay down your tracks",
+          "You could have a aeroplane flying, if you bring your blue sky back",
+          "I want to be your sledgehammer, why don't you call my name?"
+        ],
+        "fake": "Feel the power of the light, shining through the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "OJWJE0x7T4Q" }
+      "links": {
+        "youtube": "OJWJE0x7T4Q"
+      }
     },
     {
       "id": "80s-tears-for-fears-shout",
@@ -552,7 +829,11 @@
       "country": "GB",
       "genre": "New Wave",
       "difficulty": "easy",
-      "mood": ["Powerful", "Serious", "Synth"],
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Synth"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Der Song wurde als Protestlied gegen politische Ungerechtigkeiten geschrieben.",
@@ -561,9 +842,18 @@
         "Der Song verbrachte 1985 drei Wochen auf Platz 1 der US-Charts.",
         "Lass es raus: 'Shout, shout, let it all out!'"
       ],
-      "lyrics": { "real": ["Shout, shout, let it all out, these are the things I can do without", "Come on, I'm talking to you, come on", "In violent times, you shouldn't have to sell your soul"], "fake": "Whisper in the dark, try to find a spark in your broken heart" },
+      "lyrics": {
+        "real": [
+          "Shout, shout, let it all out, these are the things I can do without",
+          "Come on, I'm talking to you, come on",
+          "In violent times, you shouldn't have to sell your soul"
+        ],
+        "fake": "Whisper in the dark, try to find a spark in your broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Ye7GCyul_C0" }
+      "links": {
+        "youtube": "Ye7FKc1JQe4"
+      }
     },
     {
       "id": "80s-kim-carnes-bette-davis-eyes",
@@ -573,7 +863,11 @@
       "country": "US",
       "genre": "New Wave",
       "difficulty": "medium",
-      "mood": ["Cool", "Moody", "Classic"],
+      "mood": [
+        "Cool",
+        "Moody",
+        "Classic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Bekannt für die extrem raue, heisere Stimme der Sängerin.",
@@ -582,9 +876,18 @@
         "Der Synthesizer-Sound wurde durch das Klatschen auf ein Klaviergehäuse ergänzt.",
         "Sie wird dich verzaubern mit ihren 'Bette Davis Eyes'."
       ],
-      "lyrics": { "real": ["Her hair is Harlow gold, her lips surprise", "Her hands are never cold, she's got Bette Davis eyes", "She'll tease you, she'll unease you, all the better just to please you"], "fake": "Walking through the silver screen, the most beautiful girl I've seen" },
+      "lyrics": {
+        "real": [
+          "Her hair is Harlow gold, her lips surprise",
+          "Her hands are never cold, she's got Bette Davis eyes",
+          "She'll tease you, she'll unease you, all the better just to please you"
+        ],
+        "fake": "Walking through the silver screen, the most beautiful girl I've seen"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "EPOIS5taqA8" }
+      "links": {
+        "youtube": "EPOIS5taqA8"
+      }
     },
     {
       "id": "80s-foreigner-i-want-to-know-what-love-is",
@@ -594,7 +897,11 @@
       "country": "US",
       "genre": "Soft Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Epic", "Power Ballad"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Enthält einen Background-Chor der New Jersey Mass Choir.",
@@ -603,9 +910,18 @@
         "Thematisiert die Suche nach wahrer Liebe und emotionaler Tiefe.",
         "Refrain: 'I want to know what love is, I want you to show me.'"
       ],
-      "lyrics": { "real": ["I gotta take a little time, a little time to think things over", "I better read between the lines, in case I need it when I'm older", "I want to know what love is, I want you to show me"], "fake": "In the cold of the winter, I'm looking for a splinter of light" },
+      "lyrics": {
+        "real": [
+          "I gotta take a little time, a little time to think things over",
+          "I better read between the lines, in case I need it when I'm older",
+          "I want to know what love is, I want you to show me"
+        ],
+        "fake": "In the cold of the winter, I'm looking for a splinter of light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "r3Pr1_v7hV8" }
+      "links": {
+        "youtube": "r3Pr1_v7hsw"
+      }
     },
     {
       "id": "80s-dead-or-alive-you-spin-me-round",
@@ -615,7 +931,11 @@
       "country": "GB",
       "genre": "Hi-NRG",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Electronic"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Electronic"
+      ],
       "pack": "80s Flashback",
       "hints": [
         "Der Sänger Pete Burns war bekannt für sein extremes androgynes Aussehen.",
@@ -624,9 +944,18 @@
         "Wurde oft gecovert, unter anderem von Flo Rida (als 'Right Round').",
         "Refrain: 'You spin me right round, baby, right round like a record, baby!'"
       ],
-      "lyrics": { "real": ["If I, I get to know your name, well if I, could trace your private number, baby", "All I want is to have my way and I'll see you from day to day", "You spin me right round, baby, right round like a record, baby"], "fake": "Moving to the left, moving to the right, in the neon light" },
+      "lyrics": {
+        "real": [
+          "If I, I get to know your name, well if I, could trace your private number, baby",
+          "All I want is to have my way and I'll see you from day to day",
+          "You spin me right round, baby, right round like a record, baby"
+        ],
+        "fake": "Moving to the left, moving to the right, in the neon light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "PGNiXGX2nLU" }
+      "links": {
+        "youtube": "PGNiXGX2nLU"
+      }
     }
   ]
 }

@@ -13,7 +13,11 @@
       "country": "US",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Sexy", "Energy", "Catchy"],
+      "mood": [
+        "Sexy",
+        "Energy",
+        "Catchy"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Bekannt für den schrillen, hohen Synthesizer-Hook (ein Sample aus einem Bollywood-Film).",
@@ -22,9 +26,18 @@
         "Gewann Britney ihren ersten und lang ersehnten Grammy.",
         "Refrain: 'With a taste of a poison paradise, I'm addicted to you!'"
       ],
-      "lyrics": { "real": ["Baby, can't you see I'm calling? A guy like you should wear a warning", "It's dangerous, I'm loving it", "With a taste of a poison paradise, I'm addicted to you"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Baby, can't you see I'm calling? A guy like you should wear a warning",
+          "It's dangerous, I'm loving it",
+          "With a taste of a poison paradise, I'm addicted to you"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "LOZuxwVk7TU" }
+      "links": {
+        "youtube": "LOZuxwVk7TU"
+      }
     },
     {
       "id": "2000s-timberlake-cry-me-river",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "R&B / Pop",
       "difficulty": "medium",
-      "mood": ["Emotional", "Cool", "Moody"],
+      "mood": [
+        "Emotional",
+        "Cool",
+        "Moody"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Produziert von Timbaland, bekannt für den Beat-Box-Rhythmus und die Regen-Sounds.",
@@ -43,9 +60,18 @@
         "Markierte den endgültigen Durchbruch als ernstzunehmender Solo-Künstler nach 'N Sync.",
         "Refrain: 'You don't have to say what you did, I already know!'"
       ],
-      "lyrics": { "real": ["You told me you loved me, why did you leave me all alone?", "You don't have to say what you did, I already know, I found out from him", "Now there's just no chance for you and me, there'll never be"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "You told me you loved me, why did you leave me all alone?",
+          "You don't have to say what you did, I already know, I found out from him",
+          "Now there's just no chance for you and me, there'll never be"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DksSPZTZES0" }
+      "links": {
+        "youtube": "DksSPZTZES0"
+      }
     },
     {
       "id": "2000s-rihanna-umbrella",
@@ -55,7 +81,11 @@
       "country": "BB/US",
       "genre": "R&B / Pop",
       "difficulty": "easy",
-      "mood": ["Classic", "Catchy", "Powerful"],
+      "mood": [
+        "Classic",
+        "Catchy",
+        "Powerful"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Sollte ursprünglich von Britney Spears oder Mary J. Blige gesungen werden.",
@@ -64,9 +94,18 @@
         "Dominierte weltweit für Monate die Charts.",
         "Refrain: 'Under my umbrella, ella, ella, eh, eh, eh!'"
       ],
-      "lyrics": { "real": ["When the sun shines, we'll shine together, told you I'll be here forever", "Now that it's raining more than ever, know that we'll still have each other", "You can stand under my umbrella, ella, ella, eh, eh, eh"], "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow" },
+      "lyrics": {
+        "real": [
+          "When the sun shines, we'll shine together, told you I'll be here forever",
+          "Now that it's raining more than ever, know that we'll still have each other",
+          "You can stand under my umbrella, ella, ella, eh, eh, eh"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CvBfHAsWh0w" }
+      "links": {
+        "youtube": "CvBfHAsWh0w"
+      }
     },
     {
       "id": "2000s-beyonce-crazy-in-love",
@@ -76,7 +115,11 @@
       "country": "US",
       "genre": "R&B / Funk",
       "difficulty": "easy",
-      "mood": ["Energy", "Powerful", "Classic"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Das kraftvolle Bläser-Sample stammt von 'Are You My Woman?' (The Chi-Lites).",
@@ -85,9 +128,18 @@
         "Ein absolutes Feuerwerk aus Energie und Soul.",
         "Refrain: 'Got me looking so crazy in love, your love's got me looking so crazy in love!'"
       ],
-      "lyrics": { "real": ["I look and stare so deep in your eyes, I touch on you more and more every time", "Got me looking so crazy in love, your love's got me looking so crazy in love", "I'm looking so crazy, your love's got me looking so crazy in love"], "fake": "In the middle of the street, you can feel the heat of my heart" },
+      "lyrics": {
+        "real": [
+          "I look and stare so deep in your eyes, I touch on you more and more every time",
+          "Got me looking so crazy in love, your love's got me looking so crazy in love",
+          "I'm looking so crazy, your love's got me looking so crazy in love"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of my heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ViwtNLUqkMY" }
+      "links": {
+        "youtube": "ViwtNLUqkMY"
+      }
     },
     {
       "id": "2000s-shakira-whenever",
@@ -97,7 +149,11 @@
       "country": "CO",
       "genre": "Latin-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "War Shakiras erster großer Hit in englischer Sprache (Album 'Laundry Service').",
@@ -106,9 +162,18 @@
         "Das Video zeigt Shakira, wie sie aus dem Wasser steigt und mit Pferden tanzt.",
         "Refrain: 'Whenever, wherever, we're meant to be together!'"
       ],
-      "lyrics": { "real": ["Lucky you were born that far away so so we could both make fun of distance", "Whenever, wherever, we're meant to be together", "I'll be there, and you'll be near, and that's the deal, my dear"], "fake": "Dancing under the moon, singing a happy tune for you" },
+      "lyrics": {
+        "real": [
+          "Lucky you were born that far away so so we could both make fun of distance",
+          "Whenever, wherever, we're meant to be together",
+          "I'll be there, and you'll be near, and that's the deal, my dear"
+        ],
+        "fake": "Dancing under the moon, singing a happy tune for you"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "weRHyjj3P_g" }
+      "links": {
+        "youtube": "weRHyjj34ZE"
+      }
     },
     {
       "id": "2000s-lady-gaga-poker-face",
@@ -118,7 +183,11 @@
       "country": "US",
       "genre": "Synth-Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Catchy", "Electronic"],
+      "mood": [
+        "Energy",
+        "Catchy",
+        "Electronic"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Zementierte Gagas Status als neue Queen of Pop am Ende der Dekade.",
@@ -127,9 +196,18 @@
         "Die futuristischen Outfits im Video beeinflussten die Mode jahrelang.",
         "Refrain: 'Can't read my, can't read my, no he can't read my poker face!'"
       ],
-      "lyrics": { "real": ["I wanna hold 'em like they do in Texas, please, fold 'em, let 'em hit me, raise it, baby, stay with me", "Can't read my, can't read my, no he can't read my poker face", "P-p-p-poker face, p-p-p-poker face"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "lyrics": {
+        "real": [
+          "I wanna hold 'em like they do in Texas, please, fold 'em, let 'em hit me, raise it, baby, stay with me",
+          "Can't read my, can't read my, no he can't read my poker face",
+          "P-p-p-poker face, p-p-p-poker face"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "bESGLojNYSo" }
+      "links": {
+        "youtube": "bESGLojNYSo"
+      }
     },
     {
       "id": "2000s-bep-feeling",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Party"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Party"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Produziert von David Guetta, war es der perfekte Soundtrack für das Ende des Jahrzehnts.",
@@ -148,9 +230,18 @@
         "Hielt sich monatelang an der Spitze der weltweiten Charts.",
         "Refrain: 'I gotta feeling that tonight's gonna be a good night!'"
       ],
-      "lyrics": { "real": ["I gotta feeling that tonight's gonna be a good night", "That tonight's gonna be a good night", "Tonight's the night, let's live it up, I got my money, let's spend it up"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "I gotta feeling that tonight's gonna be a good night",
+          "That tonight's gonna be a good night",
+          "Tonight's the night, let's live it up, I got my money, let's spend it up"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "uSD4vvyzZNE" }
+      "links": {
+        "youtube": "uSD4vsh1zDA"
+      }
     },
     {
       "id": "2000s-nelly-dilemma",
@@ -160,7 +251,11 @@
       "country": "US",
       "genre": "R&B / Hip Hop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Smooth", "Classic"],
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Classic"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Basiert auf einem Sample von Patti LaBelle ('Love, Need and Want You').",
@@ -169,9 +264,18 @@
         "Kombiniert Nellys Rap mit Kelly Rowlands sanftem Gesang.",
         "Refrain: 'No matter what I do, all I think about is you!'"
       ],
-      "lyrics": { "real": ["I love you, and I need you, Nelly I love you, I do, need you", "No matter what I do, all I think about is you", "Even when I'm with my boo, boy, you know I'm crazy over you"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "I love you, and I need you, Nelly I love you, I do, need you",
+          "No matter what I do, all I think about is you",
+          "Even when I'm with my boo, boy, you know I'm crazy over you"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "8WYHDfJDPDc" }
+      "links": {
+        "youtube": "8WYHDfJDPDc"
+      }
     },
     {
       "id": "2000s-alicia-keys-fallin",
@@ -181,7 +285,11 @@
       "country": "US",
       "genre": "Soul / R&B",
       "difficulty": "medium",
-      "mood": ["Emotional", "Powerful", "Classic"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Markierte den unglaublichen Durchbruch der damals erst 20-jährigen Alicia Keys.",
@@ -190,9 +298,18 @@
         "Gewann drei Grammys im Jahr 2002.",
         "Refrain: 'I keep on fallin' in and out of love with you!'"
       ],
-      "lyrics": { "real": ["I keep on fallin' in and out of love with you", "I never loved someone the way that I love you", "Oh, oh, I never felt this way"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "I keep on fallin' in and out of love with you",
+          "I never loved someone the way that I love you",
+          "Oh, oh, I never felt this way"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Urdlvw0SSEc" }
+      "links": {
+        "youtube": "Urdlvw0SSEc"
+      }
     },
     {
       "id": "2000s-coldplay-yellow",
@@ -202,7 +319,11 @@
       "country": "GB",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Atmospheric", "Romantic", "Classic"],
+      "mood": [
+        "Atmospheric",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "2000s Pop & RnB",
       "hints": [
         "Startete die Weltkarriere der Band um Chris Martin.",
@@ -211,9 +332,18 @@
         "Eine Hymne auf die bedingungslose Hingabe.",
         "Refrain: 'Look at the stars, look how they shine for you!'"
       ],
-      "lyrics": { "real": ["Look at the stars, look how they shine for you", "And everything you do, yeah they were all yellow", "I came along, I wrote a song for you, and all the things you do"], "fake": "In the shadow of the night, I'm looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "Look at the stars, look how they shine for you",
+          "And everything you do, yeah they were all yellow",
+          "I came along, I wrote a song for you, and all the things you do"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1MwjX4CtDRA" }
+      "links": {
+        "youtube": "1MwjX4CtDRA"
+      }
     }
   ]
 }

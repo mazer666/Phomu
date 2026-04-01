@@ -13,7 +13,11 @@
       "country": "AU",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Powerful", "Energy", "Rock"],
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Einer der bekanntesten Hard-Rock-Songs aller Zeiten mit einem legendären Gitarren-Riff.",
@@ -22,9 +26,18 @@
         "Handelt von einem Leben auf der Überholspur, ohne Stoppschilder oder Tempolimits.",
         "Refrain: 'I'm on the highway to hell!'"
       ],
-      "lyrics": { "real": ["Livin' easy, livin' free, season ticket on a one-way ride", "Askin' nothin', leave me be, takin' everything in my stride", "Don't need reason, don't need rhyme, ain't nothin' I'd rather do"], "fake": "Walking through the desert sand, looking for the promised land" },
+      "lyrics": {
+        "real": [
+          "Livin' easy, livin' free, season ticket on a one-way ride",
+          "Askin' nothin', leave me be, takin' everything in my stride",
+          "Don't need reason, don't need rhyme, ain't nothin' I'd rather do"
+        ],
+        "fake": "Walking through the desert sand, looking for the promised land"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "l482T0yNkeo" }
+      "links": {
+        "youtube": "l482T0yNkeo"
+      }
     },
     {
       "id": "rock-gnr-sweet-child-o-mine",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "Hard Rock",
       "difficulty": "medium",
-      "mood": ["Romantic", "Epic", "Rock"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Das ikonische Intro-Riff begann als eine Art Fingerübung (Warm-up) von Gitarrist Slash.",
@@ -43,9 +60,18 @@
         "Die Frage 'Where do we go now?' am Ende entstand, weil der Band kein Schluss einfiel.",
         "Gehört zu den meistgespielten Rock-Songs auf YouTube."
       ],
-      "lyrics": { "real": ["She's got a smile that it seems to me reminds me of childhood memories", "Where everything was as fresh as the bright blue sky", "Now and then when I see her face she takes me away to that special place"], "fake": "In the shadow of the night, I will hold you tight and make it right" },
+      "lyrics": {
+        "real": [
+          "She's got a smile that it seems to me reminds me of childhood memories",
+          "Where everything was as fresh as the bright blue sky",
+          "Now and then when I see her face she takes me away to that special place"
+        ],
+        "fake": "In the shadow of the night, I will hold you tight and make it right"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1w7OgIMMRc4" }
+      "links": {
+        "youtube": "1w7OgIMMRc4"
+      }
     },
     {
       "id": "rock-led-zeppelin-stairway",
@@ -55,7 +81,11 @@
       "country": "GB",
       "genre": "Classic Rock",
       "difficulty": "hard",
-      "mood": ["Epic", "Moody", "Mystical"],
+      "mood": [
+        "Epic",
+        "Moody",
+        "Mystical"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Gilt oft als der beste Rock-Song aller Zeiten, obwohl er nie als Single veröffentlicht wurde.",
@@ -64,9 +94,18 @@
         "Thematisiert eine Frau, die glaubt, sich einen Weg in den Himmel kaufen zu können.",
         "In vielen Musikgeschäften ist das Anspielen dieses Songs verboten, weil es jeder tut."
       ],
-      "lyrics": { "real": ["There's a lady who's sure all that glitters is gold, and she's buying a stairway to heaven", "When she gets there she knows, if the stores are all closed, with a word she can get what she came for", "Ooh, ooh, and she's buying a stairway to heaven"], "fake": "Walking through the silver forest, listening to the ancient chorus" },
+      "lyrics": {
+        "real": [
+          "There's a lady who's sure all that glitters is gold, and she's buying a stairway to heaven",
+          "When she gets there she knows, if the stores are all closed, with a word she can get what she came for",
+          "Ooh, ooh, and she's buying a stairway to heaven"
+        ],
+        "fake": "Walking through the silver forest, listening to the ancient chorus"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "QkF3oxziUI4" }
+      "links": {
+        "youtube": "QkF3oxziUI4"
+      }
     },
     {
       "id": "rock-nirvana-teen-spirit",
@@ -76,7 +115,11 @@
       "country": "US",
       "genre": "Grunge",
       "difficulty": "easy",
-      "mood": ["Aggressive", "Energy", "Grunge"],
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Grunge"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Markierte den weltweiten Durchbruch des Grunge und das Ende der Hair-Metal-Ära.",
@@ -85,9 +128,18 @@
         "Das Video mit den tanzenden Cheerleadern in einer zerfallenden Turnhalle ist ikonisch.",
         "Refrain: 'With the lights out, it's less dangerous! Here we are now, entertain us!'"
       ],
-      "lyrics": { "real": ["Load up on guns, bring your friends, it's fun to lose and to pretend", "She's over-bored and self-assured, oh no, I know a dirty word", "Hello, hello, hello, how low?"], "fake": "In the middle of the street, you can feel the heat of the broken beat" },
+      "lyrics": {
+        "real": [
+          "Load up on guns, bring your friends, it's fun to lose and to pretend",
+          "She's over-bored and self-assured, oh no, I know a dirty word",
+          "Hello, hello, hello, how low?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken beat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "hTWKbfoikeg" }
+      "links": {
+        "youtube": "hTWKbfoikeg"
+      }
     },
     {
       "id": "rock-deep-purple-smoke-on-the-water",
@@ -97,7 +149,11 @@
       "country": "GB",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Cool", "Rock", "Classic"],
+      "mood": [
+        "Cool",
+        "Rock",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Der Song hat das - für Anfänger - bekannteste Gitarrenriff der Welt (4 Töne).",
@@ -106,9 +162,18 @@
         "Die Band nahm das Album 'Machine Head' in den Trümmern des ausgebrannten Casinos auf.",
         "Ein absoluter Pflichtsong für jeden angehenden Gitarristen."
       ],
-      "lyrics": { "real": ["We all came out to Montreux on the Lake Geneva shoreline", "To make records with a mobile, we didn't have much time", "Smoke on the water, fire in the sky"], "fake": "Running for the mountain, looking for a fountain of eternal life" },
+      "lyrics": {
+        "real": [
+          "We all came out to Montreux on the Lake Geneva shoreline",
+          "To make records with a mobile, we didn't have much time",
+          "Smoke on the water, fire in the sky"
+        ],
+        "fake": "Running for the mountain, looking for a fountain of eternal life"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "zUwEIt9ez7M" }
+      "links": {
+        "youtube": "Q2FzZSBD5LE"
+      }
     },
     {
       "id": "rock-stones-satisfaction",
@@ -118,7 +183,11 @@
       "country": "GB",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Rebellious", "Cool", "Classic"],
+      "mood": [
+        "Rebellious",
+        "Cool",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Keith Richards träumte das Riff und nahm es nachts auf einem Kassettenrekorder auf.",
@@ -127,9 +196,18 @@
         "Machte die Stones endgültig zu Rivalen der Beatles.",
         "Refrain: 'I can't get no satisfaction, 'cause I try and I try...'"
       ],
-      "lyrics": { "real": ["I can't get no satisfaction, 'cause I try and I try and I try", "When I'm drivin' in my car and a man comes on the radio", "He's tellin' me more and more about some useless information"], "fake": "Walking down the street with the rhythm in my feet and a smile so sweet" },
+      "lyrics": {
+        "real": [
+          "I can't get no satisfaction, 'cause I try and I try and I try",
+          "When I'm drivin' in my car and a man comes on the radio",
+          "He's tellin' me more and more about some useless information"
+        ],
+        "fake": "Walking down the street with the rhythm in my feet and a smile so sweet"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "nrIPxlFzDi0" }
+      "links": {
+        "youtube": "nrIPxlFzDi0"
+      }
     },
     {
       "id": "rock-springsteen-born-in-the-usa",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Heartland Rock",
       "difficulty": "easy",
-      "mood": ["Powerful", "Serious", "Stadium Rock"],
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Stadium Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Wird oft fälschlicherweise als patriotische Hymne verstanden, ist aber eigentlich ein kritischer Song über Veteranen.",
@@ -148,9 +230,18 @@
         "Ronald Reagan wollte den Song für seinen Wahlkampf nutzen, was Springsteen ablehnte.",
         "Der 'Boss' in seiner kommerziell erfolgreichsten Phase."
       ],
-      "lyrics": { "real": ["Born down in a dead man's town, the first kick I took was when I hit the ground", "You end up like a dog that's been beat too much, till you spend half your life just covering up", "Born in the U.S.A., I was born in the U.S.A."], "fake": "Stars and stripes are flying high under the bright and morning sky" },
+      "lyrics": {
+        "real": [
+          "Born down in a dead man's town, the first kick I took was when I hit the ground",
+          "You end up like a dog that's been beat too much, till you spend half your life just covering up",
+          "Born in the U.S.A., I was born in the U.S.A."
+        ],
+        "fake": "Stars and stripes are flying high under the bright and morning sky"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "lZD4ezDbbu4" }
+      "links": {
+        "youtube": "EPhWR4d3FJQ"
+      }
     },
     {
       "id": "rock-linkin-park-in-the-end",
@@ -160,7 +251,11 @@
       "country": "US",
       "genre": "Nu Metal",
       "difficulty": "medium",
-      "mood": ["Moody", "Intense", "Modern Rock"],
+      "mood": [
+        "Moody",
+        "Intense",
+        "Modern Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Einer der definierenden Songs des Nu-Metal-Genres mit einer Mischung aus Rap und Gesang.",
@@ -169,9 +264,18 @@
         "Thematisiert das Scheitern von Bemühungen und das Gefühl der Vergeblichkeit.",
         "Besonders ikonisch durch das Klavier-Intro am Anfang."
       ],
-      "lyrics": { "real": ["It starts with one thing, I don't know why, it doesn't even matter how hard you try", "Keep that in mind, I designed this rhyme to explain in due time", "I tried so hard and got so far, but in the end it doesn't even matter"], "fake": "Nothing's gonna change the way I feel about the things we did for real" },
+      "lyrics": {
+        "real": [
+          "It starts with one thing, I don't know why, it doesn't even matter how hard you try",
+          "Keep that in mind, I designed this rhyme to explain in due time",
+          "I tried so hard and got so far, but in the end it doesn't even matter"
+        ],
+        "fake": "Nothing's gonna change the way I feel about the things we did for real"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "eVTXPUF4Oz4" }
+      "links": {
+        "youtube": "eVTXPUF4Oz4"
+      }
     },
     {
       "id": "rock-bon-jovi-its-my-life",
@@ -181,7 +285,11 @@
       "country": "US",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Powerful", "Inspiring", "Rock"],
+      "mood": [
+        "Powerful",
+        "Inspiring",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Markierte das große Comeback der Band im neuen Jahrtausend.",
@@ -190,9 +298,18 @@
         "Eine Hymne auf Selbstbestimmung und das Leben im Hier und Jetzt.",
         "Refrain: 'It's my life! It's now or never!'"
       ],
-      "lyrics": { "real": ["This ain't a song for the broken-hearted, no silent prayer for the faith-departed", "I ain't gonna be just a face in the crowd, you're gonna hear my voice when I shout it out loud", "It's my life, it's now or never, I ain't gonna live forever"], "fake": "Taking my chances, making my moves, I've got nothing left to lose" },
+      "lyrics": {
+        "real": [
+          "This ain't a song for the broken-hearted, no silent prayer for the faith-departed",
+          "I ain't gonna be just a face in the crowd, you're gonna hear my voice when I shout it out loud",
+          "It's my life, it's now or never, I ain't gonna live forever"
+        ],
+        "fake": "Taking my chances, making my moves, I've got nothing left to lose"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "vx2u5uUu3DE" }
+      "links": {
+        "youtube": "vx2u5uUu3DE"
+      }
     },
     {
       "id": "rock-scorpions-wind-of-change",
@@ -202,7 +319,11 @@
       "country": "DE",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Melancholic", "Inspiring", "Peace"],
+      "mood": [
+        "Melancholic",
+        "Inspiring",
+        "Peace"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Wurde zur inoffiziellen Hymne des Mauerfalls und des Endes des Kalten Krieges.",
@@ -211,9 +332,18 @@
         "Die Band wurde zu diesem Song durch den Besuch beim 'Moscow Music Peace Festival' inspiriert.",
         "Sänger Klaus Meine schrieb den Song sowohl auf Englisch als auch auf Russisch."
       ],
-      "lyrics": { "real": ["I follow the Moskva down to Gorky Park, listening to the wind of change", "An August summer night, soldiers passing by, listening to the wind of change", "The world is closing in, did you ever think that we could be so close like brothers?"], "fake": "Berlin is calling, the wall is falling, see the people stand as one" },
+      "lyrics": {
+        "real": [
+          "I follow the Moskva down to Gorky Park, listening to the wind of change",
+          "An August summer night, soldiers passing by, listening to the wind of change",
+          "The world is closing in, did you ever think that we could be so close like brothers?"
+        ],
+        "fake": "Berlin is calling, the wall is falling, see the people stand as one"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "n4RjJKxsamQ" }
+      "links": {
+        "youtube": "n4RjJKxsamQ"
+      }
     },
     {
       "id": "rock-queen-we-will-rock-you",
@@ -223,7 +353,11 @@
       "country": "GB",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Powerful", "Energy", "Stadium Rock"],
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Stadium Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Berühmt durch den einfachen Rhythmus aus zweimal Stampfen und einmal Klatschen.",
@@ -232,9 +366,18 @@
         "Der stampfende Sound wurde in einer alten Kirche mit vielen Overdubs aufgenommen.",
         "Ein absoluter Klassiker bei Sportveranstaltungen weltweit."
       ],
-      "lyrics": { "real": ["Buddy, you're a boy, make a big noise playing in the street, gonna be a big man someday", "You got mud on your face, you big disgrace, kicking your can all over the place", "Singing: We will, we will rock you!"], "fake": "Marching to the beat, feeling the heat of the broken street" },
+      "lyrics": {
+        "real": [
+          "Buddy, you're a boy, make a big noise playing in the street, gonna be a big man someday",
+          "You got mud on your face, you big disgrace, kicking your can all over the place",
+          "Singing: We will, we will rock you!"
+        ],
+        "fake": "Marching to the beat, feeling the heat of the broken street"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "-tJYN-eG1zk" }
+      "links": {
+        "youtube": "-tJYN-eG1zk"
+      }
     },
     {
       "id": "rock-aerosmith-dream-on",
@@ -244,7 +387,11 @@
       "country": "US",
       "genre": "Hard Rock",
       "difficulty": "medium",
-      "mood": ["Epic", "Moody", "Rock"],
+      "mood": [
+        "Epic",
+        "Moody",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Steven Tylers erste große Power-Ballade und ein Meilenstein für die Band.",
@@ -253,9 +400,18 @@
         "Eminem sampelte den Song später für seinen Hit 'Sing for the Moment'.",
         "Refrain: 'Dream on, dream on, dream until your dreams come true!'"
       ],
-      "lyrics": { "real": ["Every time that I look in the mirror, all these lines on my face getting clearer", "The past is gone, it went by like dusk to dawn", "Isn't that the way? Everybody's got their dues to pay"], "fake": "Walking through the silver screen, looking for the girl I've seen" },
+      "lyrics": {
+        "real": [
+          "Every time that I look in the mirror, all these lines on my face getting clearer",
+          "The past is gone, it went by like dusk to dawn",
+          "Isn't that the way? Everybody's got their dues to pay"
+        ],
+        "fake": "Walking through the silver screen, looking for the girl I've seen"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "hHRNSeuvzlM" }
+      "links": {
+        "youtube": "hHRNSeuvzlM"
+      }
     },
     {
       "id": "rock-metallica-enter-sandman",
@@ -265,7 +421,11 @@
       "country": "US",
       "genre": "Heavy Metal",
       "difficulty": "medium",
-      "mood": ["Heavy", "Dark", "Energy"],
+      "mood": [
+        "Heavy",
+        "Dark",
+        "Energy"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Das Lied, das Metallica endgültig in den Mainstream katapultierte (The Black Album).",
@@ -274,9 +434,18 @@
         "Enthält ein gesprochenes Gebet im Mittelteil ('Now I lay me down to sleep...').",
         "Vergiss dein Nachtgebet nicht: 'Sleep with one eye open, gripping your pillow tight!'"
       ],
-      "lyrics": { "real": ["Say your prayers, little one, don't forget, my son, to include everyone", "Tuck you in, warm within, keep you free from sin till the sandman he comes", "Exit: light, Enter: night, Take my hand, we're off to never-never land"], "fake": "In the middle of the shadow, I'm looking for the golden arrow" },
+      "lyrics": {
+        "real": [
+          "Say your prayers, little one, don't forget, my son, to include everyone",
+          "Tuck you in, warm within, keep you free from sin till the sandman he comes",
+          "Exit: light, Enter: night, Take my hand, we're off to never-never land"
+        ],
+        "fake": "In the middle of the shadow, I'm looking for the golden arrow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CD-E-AgQu30" }
+      "links": {
+        "youtube": "CD-E-LDc384"
+      }
     },
     {
       "id": "rock-white-stripes-seven-nation-army",
@@ -286,7 +455,11 @@
       "country": "US",
       "genre": "Garage Rock",
       "difficulty": "easy",
-      "mood": ["Groovy", "Energy", "Rock"],
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Hat die vielleicht bekannteste Basslinie des 21. Jahrhunderts (obwohl sie auf einer Gitarre gespielt wurde).",
@@ -295,9 +468,18 @@
         "Jack White nutzte einen speziellen Effekt, um die Gitarre wie einen Bass klingen zu lassen.",
         "Der Rhythmus geht so: 'Döh, döh-döh-döh-döh, dööh, dööh...'"
       ],
-      "lyrics": { "real": ["I'm gonna fight 'em off, a seven nation army couldn't hold me back", "They're gonna rip it off, taking their time right behind my back", "And I'm talking to myself at night because I can't forget"], "fake": "Walking down the dusty road, carrying a heavy load" },
+      "lyrics": {
+        "real": [
+          "I'm gonna fight 'em off, a seven nation army couldn't hold me back",
+          "They're gonna rip it off, taking their time right behind my back",
+          "And I'm talking to myself at night because I can't forget"
+        ],
+        "fake": "Walking down the dusty road, carrying a heavy load"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "0J2QdDbelmY" }
+      "links": {
+        "youtube": "0J2QdDbelmY"
+      }
     },
     {
       "id": "rock-foo-fighters-everlong",
@@ -307,7 +489,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "hard",
-      "mood": ["Epic", "Driving", "Rock"],
+      "mood": [
+        "Epic",
+        "Driving",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Wurde von Dave Grohl nach dem Ende seiner Ehe geschrieben.",
@@ -316,9 +502,18 @@
         "Bekannt für seine treibende Energie und die verzerrten Gitarren.",
         "Refrain: 'And I wonder when I sing along with you, if everything could ever feel this real forever?'"
       ],
-      "lyrics": { "real": ["Hello, I've waited here for you, everlong", "Tonight I throw myself into, and out of the red, out of her head she sang", "If everything could ever feel this real forever, if anything could ever be this good again"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Hello, I've waited here for you, everlong",
+          "Tonight I throw myself into, and out of the red, out of her head she sang",
+          "If everything could ever feel this real forever, if anything could ever be this good again"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "eBG7P-K-r1Y" }
+      "links": {
+        "youtube": "eBG7P-K-r1Y"
+      }
     },
     {
       "id": "rock-journey-dont-stop-believin",
@@ -328,7 +523,11 @@
       "country": "US",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": ["Sing-along", "Inspiring", "Classic"],
+      "mood": [
+        "Sing-along",
+        "Inspiring",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Wurde durch die Schlussszene der Serie 'The Sopranos' erneut zum Welthit.",
@@ -337,9 +536,18 @@
         "Die Hymne für alle Träumer und Reisenden im Mitternachtszug.",
         "Refrain: 'Don't stop believin', hold on to that feelin'!'"
       ],
-      "lyrics": { "real": ["Just a small-town girl, livin' in a lonely world, she took the midnight train goin' anywhere", "Just a city boy, born and raised in South Detroit, he took the midnight train goin' anywhere", "Don't stop believin', hold on to that feelin', streetlight people"], "fake": "Walking down the dusty road, carrying a heavy load of love" },
+      "lyrics": {
+        "real": [
+          "Just a small-town girl, livin' in a lonely world, she took the midnight train goin' anywhere",
+          "Just a city boy, born and raised in South Detroit, he took the midnight train goin' anywhere",
+          "Don't stop believin', hold on to that feelin', streetlight people"
+        ],
+        "fake": "Walking down the dusty road, carrying a heavy load of love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1k8dqizvAZu" }
+      "links": {
+        "youtube": "1k8dqizvAZu"
+      }
     },
     {
       "id": "rock-killers-mr-brightside",
@@ -349,7 +557,11 @@
       "country": "US",
       "genre": "Indie Rock",
       "difficulty": "medium",
-      "mood": ["Energy", "Classic", "Sing-along"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Sing-along"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Hält den Rekord für die meisten Wochen in den britischen Top 100 Charts.",
@@ -358,9 +570,18 @@
         "Beginnt mit dem markanten Gitarren-Arpeggio.",
         "In britischen Bars ist es fast Gesetz, diesen Song laut mitzusingen."
       ],
-      "lyrics": { "real": ["I'm coming out of my cage and I've been doing just fine, gotta, gotta be down because I want it all", "It started out with a kiss, how did it end up like this?", "It was only a kiss, it was only a kiss"], "fake": "In the middle of the night, we're looking for the light of our soul" },
+      "lyrics": {
+        "real": [
+          "I'm coming out of my cage and I've been doing just fine, gotta, gotta be down because I want it all",
+          "It started out with a kiss, how did it end up like this?",
+          "It was only a kiss, it was only a kiss"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gGdGFtwCNBE" }
+      "links": {
+        "youtube": "gGdGFtwCNBE"
+      }
     },
     {
       "id": "rock-rem-man-on-the-moon",
@@ -370,7 +591,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Cool", "Classic", "Alternative"],
+      "mood": [
+        "Cool",
+        "Classic",
+        "Alternative"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Eine Hommage an den exzentrischen Comedian Andy Kaufman.",
@@ -379,9 +604,18 @@
         "Michael Stipe imitiert im Song kurzzeitig Elvis Presley.",
         "Refrain: 'If you believe they put a man on the moon...'"
       ],
-      "lyrics": { "real": ["Mott the Hoople and the game of Life, yeah, yeah, yeah, yeah", "Andy Kaufman in the wrestling match, yeah, yeah, yeah, yeah", "If you believe they put a man on the moon, if you believe there's nothing up his sleeve"], "fake": "Walking through the silver forest, listening to the ancient chorus" },
+      "lyrics": {
+        "real": [
+          "Mott the Hoople and the game of Life, yeah, yeah, yeah, yeah",
+          "Andy Kaufman in the wrestling match, yeah, yeah, yeah, yeah",
+          "If you believe they put a man on the moon, if you believe there's nothing up his sleeve"
+        ],
+        "fake": "Walking through the silver forest, listening to the ancient chorus"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "dLxpNiF0YKs" }
+      "links": {
+        "youtube": "dLxpNiF0YKs"
+      }
     },
     {
       "id": "rock-blur-song-2",
@@ -391,7 +625,11 @@
       "country": "GB",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Fast", "Aggressive"],
+      "mood": [
+        "Energy",
+        "Fast",
+        "Aggressive"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Bekannt für den berühmten 'Woo-hoo!'-Schrei.",
@@ -400,9 +638,18 @@
         "Ein absoluter Klassiker in FIFA-Videospielen und Stadien.",
         "Refrain: 'Woo-hoo! When I feel heavy-metal...'"
       ],
-      "lyrics": { "real": ["Woo-hoo! When I feel heavy-metal, woo-hoo! And I'm pins and I'm needles", "Woo-hoo! Well, I lie and I'm easy, all of the time but I'm never blue", "I got my head checked by a jumbo jet"], "fake": "In the middle of the night, searching for a fight in the neon light" },
+      "lyrics": {
+        "real": [
+          "Woo-hoo! When I feel heavy-metal, woo-hoo! And I'm pins and I'm needles",
+          "Woo-hoo! Well, I lie and I'm easy, all of the time but I'm never blue",
+          "I got my head checked by a jumbo jet"
+        ],
+        "fake": "In the middle of the night, searching for a fight in the neon light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "SSbBvKaM6sk" }
+      "links": {
+        "youtube": "SSbBvKaM6sk"
+      }
     },
     {
       "id": "rock-deeppurple-highwaystar",
@@ -412,7 +659,11 @@
       "country": "GB",
       "genre": "Hard Rock",
       "difficulty": "hard",
-      "mood": ["Fast", "Energy", "Classic"],
+      "mood": [
+        "Fast",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Gilt als einer der wichtigsten Songs für die Entwicklung des Speed Metal.",
@@ -421,9 +672,17 @@
         "Ein absoluter Klassiker für Autofahrten.",
         "Refrain: 'I'm a highway star!'"
       ],
-      "lyrics": { "real": ["I'm a highway star, I'm a highway star", "I'm a highway star, I'm a highway star"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "I'm a highway star, I'm a highway star",
+          "I'm a highway star, I'm a highway star"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "AqEW53Ui2no"
+      }
     },
     {
       "id": "rock-acdc-back-black",
@@ -433,7 +692,11 @@
       "country": "AU",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Raw", "Classic"],
+      "mood": [
+        "Energy",
+        "Raw",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Einer der am meist verkauften Rock-Songs aller Zeiten.",
@@ -442,9 +705,18 @@
         "Eine Hommage an ihren verstorbenen Sänger.",
         "Refrain: 'I'm back in black, I hit the sack!'"
       ],
-      "lyrics": { "real": ["Back in black, I hit the sack, I've been too long, I'm glad to be back", "Yes, I'm let loose from the noose that's kept me hanging about", "I'm back, yes I'm back, well I'm back in black"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Back in black, I hit the sack, I've been too long, I'm glad to be back",
+          "Yes, I'm let loose from the noose that's kept me hanging about",
+          "I'm back, yes I'm back, well I'm back in black"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "pAgnJDJN4VA" }
+      "links": {
+        "youtube": "pAgnJDJN4VA"
+      }
     },
     {
       "id": "rock-gnr-jungle",
@@ -454,7 +726,11 @@
       "country": "US",
       "genre": "Hard Rock / Glam Metal",
       "difficulty": "medium",
-      "mood": ["Energy", "Dangerous", "Classic"],
+      "mood": [
+        "Energy",
+        "Dangerous",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Der ultimative Opener von 'Appetite for Destruction'.",
@@ -463,9 +739,18 @@
         "Slashs Riffs und Soli definieren den Sound einer ganzen Generation.",
         "Refrain: 'Welcome to the jungle, we've got fun and games!'"
       ],
-      "lyrics": { "real": ["Welcome to the jungle, we've got fun and games", "We got everything you want, honey, we know the names", "In the jungle, welcome to the jungle, watch it bring you to your sha-na-na-na-na-na-na-na-knees, knees"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "Welcome to the jungle, we've got fun and games",
+          "We got everything you want, honey, we know the names",
+          "In the jungle, welcome to the jungle, watch it bring you to your sha-na-na-na-na-na-na-na-knees, knees"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "o1tj2zJ2Wvg" }
+      "links": {
+        "youtube": "o1tj2zJ2Wvg"
+      }
     },
     {
       "id": "rock-aerosmith-dream-on",
@@ -475,7 +760,11 @@
       "country": "US",
       "genre": "Rock / Power Ballad",
       "difficulty": "hard",
-      "mood": ["Epic", "Emotional", "Classic"],
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Steven Tylers erste große Rock-Ballade.",
@@ -484,9 +773,18 @@
         "Ein absolutes stimmliches Meisterwerk.",
         "Refrain: 'Dream on, dream on, dream until your dreams come true!'"
       ],
-      "lyrics": { "real": ["Every time that I look in the mirror, all these lines on my face getting clearer", "The past is gone, it went by like dusk to dawn", "Dream on, dream on, dream until your dreams come true"], "fake": "In the shadow of the night, we're looking for the light of our soul" },
+      "lyrics": {
+        "real": [
+          "Every time that I look in the mirror, all these lines on my face getting clearer",
+          "The past is gone, it went by like dusk to dawn",
+          "Dream on, dream on, dream until your dreams come true"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "89j-6xpdq4" }
+      "links": {
+        "youtube": "89j-6xpdq4"
+      }
     },
     {
       "id": "rock-the-who-riley",
@@ -496,7 +794,11 @@
       "country": "GB",
       "genre": "Hard Rock / Prog Rock",
       "difficulty": "medium",
-      "mood": ["Epic", "Electronic", "Classic"],
+      "mood": [
+        "Epic",
+        "Electronic",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Oft fälschlicherweise als 'Teenage Wasteland' bezeichnet.",
@@ -505,9 +807,18 @@
         "Handelt von einem Bauern und der Hoffnung auf ein besseres Leben.",
         "Refrain: 'Don't cry! Don't raise your eye! It's only teenage wasteland!'"
       ],
-      "lyrics": { "real": ["Out here in the fields, I fight for my meals, I get my back into my living", "I don't need to fight to prove I'm right, I don't need to be forgiven", "Teenage wasteland, it's only teenage wasteland"], "fake": "Walking down the street with a rhythm in my feet tonight" },
+      "lyrics": {
+        "real": [
+          "Out here in the fields, I fight for my meals, I get my back into my living",
+          "I don't need to fight to prove I'm right, I don't need to be forgiven",
+          "Teenage wasteland, it's only teenage wasteland"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "x2KRpRMqlHg" }
+      "links": {
+        "youtube": "Gu9HhYv0C7E"
+      }
     },
     {
       "id": "rock-metallica-sandman",
@@ -517,7 +828,11 @@
       "country": "US",
       "genre": "Heavy Metal",
       "difficulty": "easy",
-      "mood": ["Powerful", "Dark", "Classic"],
+      "mood": [
+        "Powerful",
+        "Dark",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Der Song, der Metallica endgültig in den globalen Mainstream katapultierte.",
@@ -526,9 +841,18 @@
         "Bekannt für den eingebauten Gebetsteil ('Now I lay me down to sleep').",
         "Refrain: 'Exit light, enter night! Take my hand, we're off to never-never land!'"
       ],
-      "lyrics": { "real": ["Say your prayers, little one, don't forget, my son, to include everyone", "I tuck you in, warm within, keep you free from sin", "Exit light, enter night, take my hand, we're off to never-never land"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Say your prayers, little one, don't forget, my son, to include everyone",
+          "I tuck you in, warm within, keep you free from sin",
+          "Exit light, enter night, take my hand, we're off to never-never land"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CD-E-LDc384" }
+      "links": {
+        "youtube": "CD-E-LDc384"
+      }
     },
     {
       "id": "rock-iron-maiden-trooper",
@@ -538,7 +862,11 @@
       "country": "GB",
       "genre": "Heavy Metal",
       "difficulty": "hard",
-      "mood": ["Energy", "Epic", "Classic"],
+      "mood": [
+        "Energy",
+        "Epic",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Basiert auf der Attacke der Leichten Brigade im Krimkrieg (1854).",
@@ -547,9 +875,18 @@
         "Ein Inbegriff des 'New Wave of British Heavy Metal'.",
         "Refrain: (Gitarren-Melodie) - 'Woah-oh-oh-oh-oh-oh-oh-oh!'"
       ],
-      "lyrics": { "real": ["The bugle sounds, the charge begins, but on this battlefield no one wins", "You'll take my life but I'll take yours too, you fire your musket but I'll run you through", "When you're waiting for the next attack, you better stand there's no turning back"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "The bugle sounds, the charge begins, but on this battlefield no one wins",
+          "You'll take my life but I'll take yours too, you fire your musket but I'll run you through",
+          "When you're waiting for the next attack, you better stand there's no turning back"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "2G5rfPISIwo" }
+      "links": {
+        "youtube": "X4bgXH3sJ2Q"
+      }
     },
     {
       "id": "rock-sabbath-paranoid",
@@ -559,7 +896,11 @@
       "country": "GB",
       "genre": "Heavy Metal",
       "difficulty": "easy",
-      "mood": ["Raw", "Short", "Classic"],
+      "mood": [
+        "Raw",
+        "Short",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Gilt als einer der Blaupausen für Heavy Metal.",
@@ -568,9 +909,18 @@
         "Ein extrem kompakter und druckvoller Meilenstein.",
         "Refrain: 'Can you help me? Occupy my brain? Oh yeah!'"
       ],
-      "lyrics": { "real": ["Finished with my woman 'cause she couldn't help me with my mind", "People think I'm insane because I am frowning all the time", "All day long I think of things but nothing seems to satisfy"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Finished with my woman 'cause she couldn't help me with my mind",
+          "People think I'm insane because I am frowning all the time",
+          "All day long I think of things but nothing seems to satisfy"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "v8HeY_08nMA" }
+      "links": {
+        "youtube": "v8HeY_08nMA"
+      }
     },
     {
       "id": "rock-deep-purple-smoke",
@@ -580,7 +930,11 @@
       "country": "GB",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Classic", "Story", "Energy"],
+      "mood": [
+        "Classic",
+        "Story",
+        "Energy"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Vielleicht das berühmteste Gitarren-Riff aller Zeiten.",
@@ -589,9 +943,18 @@
         "Ein Paradebeispiel für klassischen Hard-Rock.",
         "Refrain: 'Smoke on the water, fire in the sky!'"
       ],
-      "lyrics": { "real": ["We all came out to Montreux, on the Lake Geneva shoreline", "To make records with a mobile, we didn't have much time", "Smoke on the water, a fire in the sky"], "fake": "In the middle of the lake, we're making no mistake tonight" },
+      "lyrics": {
+        "real": [
+          "We all came out to Montreux, on the Lake Geneva shoreline",
+          "To make records with a mobile, we didn't have much time",
+          "Smoke on the water, a fire in the sky"
+        ],
+        "fake": "In the middle of the lake, we're making no mistake tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "zUwEIt9ez7M" }
+      "links": {
+        "youtube": "Q2FzZSBD5LE"
+      }
     },
     {
       "id": "rock-kiss-rock-nite",
@@ -601,7 +964,11 @@
       "country": "US",
       "genre": "Hard Rock",
       "difficulty": "easy",
-      "mood": ["Party", "Energy", "Classic"],
+      "mood": [
+        "Party",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Die ultimative Party-Hymne der Rock-Welt.",
@@ -610,9 +977,18 @@
         "Ein unverzichtbarer Song für jedes Rock-Konzert.",
         "Refrain: 'I wanna rock and roll all nite, and party every day!'"
       ],
-      "lyrics": { "real": ["You say you wanna stand by my side, darlin', your love's something I can't hide", "You drive me wild, we'll drive me crazy", "I wanna rock and roll all nite, and party every day"], "fake": "Nothing's gonna stop us now, we're playing in the clouds somehow" },
+      "lyrics": {
+        "real": [
+          "You say you wanna stand by my side, darlin', your love's something I can't hide",
+          "You drive me wild, we'll drive me crazy",
+          "I wanna rock and roll all nite, and party every day"
+        ],
+        "fake": "Nothing's gonna stop us now, we're playing in the clouds somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "A_MjCqQoLLA" }
+      "links": {
+        "youtube": "A_MjCqQoLLA"
+      }
     },
     {
       "id": "rock-zz-top-la-grange",
@@ -622,7 +998,11 @@
       "country": "US",
       "genre": "Blues Rock",
       "difficulty": "medium",
-      "mood": ["Cool", "Raw", "Classic"],
+      "mood": [
+        "Cool",
+        "Raw",
+        "Classic"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Bekannt für den 'Tush'-Beat und das unglaubliche Gitarrenspiel von Billy Gibbons.",
@@ -631,9 +1011,18 @@
         "Ein Klassiker des Southern Rock mit viel Groove.",
         "Refrain: 'A haw, haw, haw, haw! A haw!'"
       ],
-      "lyrics": { "real": ["Rumor spreadin' 'round in that Texas town, 'bout that shack outside La Grange", "And you know what I'm talkin' about, just introduced which you don't doubt", "They gotta lot of nice girls ah"], "fake": "Walking down the road, carrying a heavy load of blues" },
+      "lyrics": {
+        "real": [
+          "Rumor spreadin' 'round in that Texas town, 'bout that shack outside La Grange",
+          "And you know what I'm talkin' about, just introduced which you don't doubt",
+          "They gotta lot of nice girls ah"
+        ],
+        "fake": "Walking down the road, carrying a heavy load of blues"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "aB4nH8qx2IM"
+      }
     },
     {
       "id": "rock-linkin-park-numb",
@@ -643,7 +1032,11 @@
       "country": "US",
       "genre": "Nu Metal",
       "difficulty": "medium",
-      "mood": ["Moody", "Intense", "Rock"],
+      "mood": [
+        "Moody",
+        "Intense",
+        "Rock"
+      ],
       "pack": "Rock Anthems",
       "hints": [
         "Das Musikvideo wurde teilweise in Prag gedreht (Karlsbrücke, Veitsdom).",
@@ -652,9 +1045,18 @@
         "Ikonisches Synthesizer-Intro und Chesters kraftvoller Gesang.",
         "Refrain: 'I've become so numb, I can't feel you there!'"
       ],
-      "lyrics": { "real": ["I'm tired of being what you want me to be, feeling so faithless, lost under the surface", "Don't know what you're expecting of me, put under the pressure of walking in your shoes", "I've become so numb, I can't feel you there, become so tired, so much more aware"], "fake": "Taking my chances, making my moves, I've got nothing left to lose" },
+      "lyrics": {
+        "real": [
+          "I'm tired of being what you want me to be, feeling so faithless, lost under the surface",
+          "Don't know what you're expecting of me, put under the pressure of walking in your shoes",
+          "I've become so numb, I can't feel you there, become so tired, so much more aware"
+        ],
+        "fake": "Taking my chances, making my moves, I've got nothing left to lose"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "kXYiU_JCYtU" }
+      "links": {
+        "youtube": "kXYiU_JCYtU"
+      }
     }
   ]
 }

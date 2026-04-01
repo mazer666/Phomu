@@ -13,7 +13,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Serious", "Classic", "Moody"],
+      "mood": [
+        "Serious",
+        "Classic",
+        "Moody"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Einer der bekanntesten Songs des 'Man in Black'.",
@@ -22,9 +26,18 @@
         "Johnny Cash summte zu Beginn jeder Strophe, um den richtigen Ton zu finden.",
         "Refrain: 'Because you're mine, I walk the line!'"
       ],
-      "lyrics": { "real": ["I keep a close watch on this heart of mine", "I keep my eyes wide open all the time", "Because you're mine, I walk the line"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "lyrics": {
+        "real": [
+          "I keep a close watch on this heart of mine",
+          "I keep my eyes wide open all the time",
+          "Because you're mine, I walk the line"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Lq0fUa0_8" }
+      "links": {
+        "youtube": "Lq0fUa0_8"
+      }
     },
     {
       "id": "country-dolly-parton-jolene",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Sad", "Classic", "Serious"],
+      "mood": [
+        "Sad",
+        "Classic",
+        "Serious"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Ein verzweifeltes Flehen an eine Frau mit 'flammend rotem Haar'.",
@@ -43,9 +60,18 @@
         "Thematisiert die Angst, den Ehemann an eine schönere Frau zu verlieren.",
         "Refrain: 'Jolene, Jolene, Jolene, Jolene! I'm begging of you please don't take my man!'"
       ],
-      "lyrics": { "real": ["Jolene, Jolene, Jolene, Jolene, I'm begging of you please don't take my man", "Your beauty is beyond compare with flaming locks of auburn hair", "And I cannot compete with you, Jolene"], "fake": "In the middle of the stars, I'm playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "Jolene, Jolene, Jolene, Jolene, I'm begging of you please don't take my man",
+          "Your beauty is beyond compare with flaming locks of auburn hair",
+          "And I cannot compete with you, Jolene"
+        ],
+        "fake": "In the middle of the stars, I'm playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Lq0fUa0_8" }
+      "links": {
+        "youtube": "Lq0fUa0_8"
+      }
     },
     {
       "id": "jazz-louis-armstrong-wonderful",
@@ -55,7 +81,11 @@
       "country": "US",
       "genre": "Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Dreamy"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Dreamy"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Eine Hymne auf den Frieden und die Schönheit der Natur.",
@@ -64,9 +94,18 @@
         "Ein zeitloser Evergreen, der oft bei feierlichen Anlässen gespielt wird.",
         "Refrain: 'And I think to myself... what a wonderful world!'"
       ],
-      "lyrics": { "real": ["I see trees of green, red roses too, I see them bloom for me and you", "And I think to myself: what a wonderful world", "The colors of the rainbow so pretty in the sky"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "I see trees of green, red roses too, I see them bloom for me and you",
+          "And I think to myself: what a wonderful world",
+          "The colors of the rainbow so pretty in the sky"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CWzrABouyeE" }
+      "links": {
+        "youtube": "CWzrABouyeE"
+      }
     },
     {
       "id": "jazz-ella-fitzgerald-summertime",
@@ -76,7 +115,11 @@
       "country": "US",
       "genre": "Jazz",
       "difficulty": "medium",
-      "mood": ["Chill", "Classic", "Smooth"],
+      "mood": [
+        "Chill",
+        "Classic",
+        "Smooth"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Stammt ursprünglich aus der Oper 'Porgy and Bess' von George Gershwin.",
@@ -85,9 +128,18 @@
         "Die Melodie ist hypnotisch und wiegend aufgebaut.",
         "Refrain: 'Summertime, and the livin' is easy...'"
       ],
-      "lyrics": { "real": ["Summertime, and the livin' is easy, fish are jumpin' and the cotton is high", "Your daddy's rich and your mamma's good lookin'", "So hush little baby, don't you cry"], "fake": "In the middle of the night, we're looking for the light of the moon" },
+      "lyrics": {
+        "real": [
+          "Summertime, and the livin' is easy, fish are jumpin' and the cotton is high",
+          "Your daddy's rich and your mamma's good lookin'",
+          "So hush little baby, don't you cry"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the moon"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "niv_p_G5GNo" }
+      "links": {
+        "youtube": "niv_p_G5GNo"
+      }
     },
     {
       "id": "blues-bb-king-thrill-is-gone",
@@ -97,7 +149,11 @@
       "country": "US",
       "genre": "Blues",
       "difficulty": "medium",
-      "mood": ["Sad", "Classic", "Moody"],
+      "mood": [
+        "Sad",
+        "Classic",
+        "Moody"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "B.B. King ist bekannt für seine Gitarre, die er 'Lucille' nannte.",
@@ -106,9 +162,18 @@
         "Sein gefühlvolles Gitarrenspiel setzt hier Maßstäbe im Blues.",
         "Refrain: 'The thrill is gone, the thrill is gone away for good!'"
       ],
-      "lyrics": { "real": ["The thrill is gone, the thrill is gone away", "You know you done me wrong, baby, and you'll be sorry someday", "I'm free, baby, I'm free from your spell"], "fake": "In the shadow of the night, I'm looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "The thrill is gone, the thrill is gone away",
+          "You know you done me wrong, baby, and you'll be sorry someday",
+          "I'm free, baby, I'm free from your spell"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "SgXSomPE_FY"
+      }
     },
     {
       "id": "jazz-ray-charles-georgia",
@@ -118,7 +183,11 @@
       "country": "US",
       "genre": "Soul / Jazz",
       "difficulty": "medium",
-      "mood": ["Romantic", "Classic", "Smooth"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Smooth"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Wurde 1979 zur offiziellen Hymne des US-Bundesstaates Georgia ernannt.",
@@ -127,9 +196,18 @@
         "Seine gefühlvolle Klavierbegleitung und der volle Orchestersound sind legendär.",
         "Refrain: 'Georgia, Georgia, the whole day through, just an old sweet song keeps Georgia on my mind!'"
       ],
-      "lyrics": { "real": ["Georgia, Georgia, the whole day through, just an old sweet song keeps Georgia on my mind", "Other arms reach out to me, other eyes smile tenderly", "Still in peaceful dreams I see, the road leads back to you"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "Georgia, Georgia, the whole day through, just an old sweet song keeps Georgia on my mind",
+          "Other arms reach out to me, other eyes smile tenderly",
+          "Still in peaceful dreams I see, the road leads back to you"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fRgWBN8yt_E" }
+      "links": {
+        "youtube": "fRgWBN8yt_E"
+      }
     },
     {
       "id": "blues-muddy-waters-hoochie",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Chicago Blues",
       "difficulty": "medium",
-      "mood": ["Cool", "Powerful", "Raw"],
+      "mood": [
+        "Cool",
+        "Powerful",
+        "Raw"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Ein Inbegriff des elektrischen Chicago Blues.",
@@ -148,9 +230,18 @@
         "Bekannt für das markante Stop-and-Go Riff der Mundharmonika und Gitarre.",
         "Refrain: 'I'm a hoochie coochie man, the whole world knows I'm here!'"
       ],
-      "lyrics": { "real": ["The gypsy woman told my mother before I was born", "I got a boy child's comin', he's gonna be a son of a gun", "I'm a hoochie coochie man, the whole world knows I'm here"], "fake": "Walking down the street with a rhythm in my feet and a silver seat" },
+      "lyrics": {
+        "real": [
+          "The gypsy woman told my mother before I was born",
+          "I got a boy child's comin', he's gonna be a son of a gun",
+          "I'm a hoochie coochie man, the whole world knows I'm here"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet and a silver seat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "e_l6A7krjrQ" }
+      "links": {
+        "youtube": "e_l6A7krjrQ"
+      }
     },
     {
       "id": "jazz-nina-simone-feeling-good",
@@ -160,7 +251,11 @@
       "country": "US",
       "genre": "Jazz / Soul",
       "difficulty": "medium",
-      "mood": ["Powerful", "Inspiring", "Classic"],
+      "mood": [
+        "Powerful",
+        "Inspiring",
+        "Classic"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Stammt ursprünglich aus dem Musical 'The Roar of the Greasepaint – The Smell of the Crowd'.",
@@ -169,9 +264,18 @@
         "Die Kombination aus Simones stolzem Gesang und den mächtigen Bläsern ist grandios.",
         "Refrain: 'It's a new dawn, it's a new day, it's a new life for me... and I'm feeling good!'"
       ],
-      "lyrics": { "real": ["Birds flying high, you know how I feel, sun in the sky, you know how I feel", "It's a new dawn, it's a new day, it's a new life for me", "And I'm feeling good!"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "Birds flying high, you know how I feel, sun in the sky, you know how I feel",
+          "It's a new dawn, it's a new day, it's a new life for me",
+          "And I'm feeling good!"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "D5Y11hwjMNs" }
+      "links": {
+        "youtube": "D5Y11hwjMNs"
+      }
     },
     {
       "id": "jazz-miles-davis-so-what",
@@ -181,7 +285,11 @@
       "country": "US",
       "genre": "Modal Jazz",
       "difficulty": "hard",
-      "mood": ["Cool", "Atmospheric", "Intelligent"],
+      "mood": [
+        "Cool",
+        "Atmospheric",
+        "Intelligent"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Eröffnungstrack des meistverkauften Jazzalbums aller Zeiten, 'Kind of Blue'.",
@@ -190,9 +298,16 @@
         "Völlig ohne Text (Instrumental), lebt aber von der Improvisationskunst.",
         "Der 'So What'-Ruf des Pianos am Anfang ist ein Klassiker der Jazzgeschichte."
       ],
-      "lyrics": { "real": ["(Instrumental piece with iconic bass and trumpet lines)"], "fake": "Walking in the stars with a melody from Mars" },
+      "lyrics": {
+        "real": [
+          "(Instrumental piece with iconic bass and trumpet lines)"
+        ],
+        "fake": "Walking in the stars with a melody from Mars"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ylXk1LBvIqU" }
+      "links": {
+        "youtube": "ylXk1LBvIqU"
+      }
     },
     {
       "id": "country-shania-twain-woman",
@@ -202,7 +317,11 @@
       "country": "CA",
       "genre": "Country Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Pop"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Pop"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Mischte Country-Elemente mit modernem Pop-Rock zu einem weltweiten Phänomen.",
@@ -211,9 +330,18 @@
         "Besticht durch das markante Gitarren-Intro und den energischen Refrain.",
         "Refrain: 'Let's go girls! Man! I feel like a woman!'"
       ],
-      "lyrics": { "real": ["I'm going out tonight, I'm feeling alright, gonna let it all hang out", "The best thing about being a woman is the prerogative to have a little fun", "Let's go girls! Man! I feel like a woman!"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "I'm going out tonight, I'm feeling alright, gonna let it all hang out",
+          "The best thing about being a woman is the prerogative to have a little fun",
+          "Let's go girls! Man! I feel like a woman!"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ZJL4UGSbeFg" }
+      "links": {
+        "youtube": "ZJL4UGSbeFg"
+      }
     },
     {
       "id": "country-john-denver-country-roads",
@@ -223,7 +351,11 @@
       "country": "US",
       "genre": "Country / Folk",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Summer"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Summer"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Eine Hymne auf den US-Bundesststaat West Virginia.",
@@ -232,9 +364,18 @@
         "John Denver schrieb den Song gemeinsam mit Bill und Taffy Danoff.",
         "Refrain: 'Country roads, take me home, to the place I belong!'"
       ],
-      "lyrics": { "real": ["Almost heaven, West Virginia, Blue Ridge Mountains, Shenandoah River", "Country roads, take me home, to the place I belong", "West Virginia, mountain mamma, take me home, country roads"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Almost heaven, West Virginia, Blue Ridge Mountains, Shenandoah River",
+          "Country roads, take me home, to the place I belong",
+          "West Virginia, mountain mamma, take me home, country roads"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1vrEljMfXYo" }
+      "links": {
+        "youtube": "1vrEljMfXYo"
+      }
     },
     {
       "id": "country-willie-nelson-road-again",
@@ -244,7 +385,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Road Trip"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Road Trip"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Thematisiert das Leben auf Tournee und die Liebe zum Reisen.",
@@ -253,9 +398,18 @@
         "Gewann den Grammy für den besten Country-Song 1981.",
         "Refrain: 'On the road again, just can't wait to get on the road again!'"
       ],
-      "lyrics": { "real": ["On the road again, just can't wait to get on the road again", "The life I love is making music with my friends", "And I can't wait to get on the road again"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "On the road again, just can't wait to get on the road again",
+          "The life I love is making music with my friends",
+          "And I can't wait to get on the road again"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "dBN86y30Ufc" }
+      "links": {
+        "youtube": "dBN86y30Ufc"
+      }
     },
     {
       "id": "country-kenny-rogers-gambler",
@@ -265,7 +419,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "medium",
-      "mood": ["Serious", "Storytelling", "Classic"],
+      "mood": [
+        "Serious",
+        "Storytelling",
+        "Classic"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Erzählt die Geschichte einer Begegnung mit einem alten Spieler in einem Zug.",
@@ -274,9 +432,18 @@
         "Markierte den endgültigen Durchbruch für Kenny Rogers.",
         "Refrain: 'You got to know when to hold 'em, know when to fold 'em!'"
       ],
-      "lyrics": { "real": ["You got to know when to hold 'em, know when to fold 'em", "Know when to walk away, and know when to run", "You never count your money when you're sittin' at the table"], "fake": "In the middle of the night, we're looking for the light of the broken soul" },
+      "lyrics": {
+        "real": [
+          "You got to know when to hold 'em, know when to fold 'em",
+          "Know when to walk away, and know when to run",
+          "You never count your money when you're sittin' at the table"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "7hx4gdlfamo" }
+      "links": {
+        "youtube": "7hx4gdlfamo"
+      }
     },
     {
       "id": "blues-etta-james-at-last",
@@ -286,7 +453,11 @@
       "country": "US",
       "genre": "Blues / Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Classic", "Smooth"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Smooth"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Einer der romantischsten Songs aller Zeiten, oft auf Hochzeiten gespielt.",
@@ -295,9 +466,18 @@
         "Thematisiert das Ende einer langen Suche nach der großen Liebe.",
         "Refrain: 'At last, my love has come along!'"
       ],
-      "lyrics": { "real": ["At last, my love has come along", "My lonely days are over, and life is like a song", "At last, the skies above are blue"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "At last, my love has come along",
+          "My lonely days are over, and life is like a song",
+          "At last, the skies above are blue"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S-cbOl96RFM" }
+      "links": {
+        "youtube": "S-cbOl96RFM"
+      }
     },
     {
       "id": "jazz-billie-holiday-fruit",
@@ -307,7 +487,11 @@
       "country": "US",
       "genre": "Jazz",
       "difficulty": "hard",
-      "mood": ["Sad", "Serious", "Powerful"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Powerful"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Ein erschütternder Protestsong gegen den Rassismus und die Lynchjustiz in den USA.",
@@ -316,9 +500,18 @@
         "Wurde 1999 vom Time Magazine zum 'Song des Jahrhunderts' gekürt.",
         "Ein extrem wichtiges und bedrückendes Dokument der Zeitgeschichte."
       ],
-      "lyrics": { "real": ["Southern trees bear a strange fruit", "Blood on the leaves and blood at the root", "Black bodies swinging in the southern breeze"], "fake": "In the shadow of the night, we're looking for the light of the broken soul" },
+      "lyrics": {
+        "real": [
+          "Southern trees bear a strange fruit",
+          "Blood on the leaves and blood at the root",
+          "Black bodies swinging in the southern breeze"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of the broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Web007rzSOI" }
+      "links": {
+        "youtube": "Web007rzSOI"
+      }
     },
     {
       "id": "jazz-nat-king-cole-love",
@@ -328,7 +521,11 @@
       "country": "US",
       "genre": "Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Classic"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Ein charmanter, eleganter Song, der das Wort 'Love' buchstabiert.",
@@ -337,9 +534,18 @@
         "Vermittelt pure Lebensfreude und romantische Leichtigkeit.",
         "Refrain: 'L is for the way you look at me!'"
       ],
-      "lyrics": { "real": ["L is for the way you look at me, O is for the only one I see", "V is very, very extraordinary, E is even more than anyone that you adore", "Love was made for me and you"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "L is for the way you look at me, O is for the only one I see",
+          "V is very, very extraordinary, E is even more than anyone that you adore",
+          "Love was made for me and you"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "JErVP6xpdq4" }
+      "links": {
+        "youtube": "ir_LJ5dvS2w"
+      }
     },
     {
       "id": "blues-robert-johnson-crossroad",
@@ -349,7 +555,11 @@
       "country": "US",
       "genre": "Delta Blues",
       "difficulty": "hard",
-      "mood": ["Moody", "Raw", "Classic"],
+      "mood": [
+        "Moody",
+        "Raw",
+        "Classic"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Die Legende besagt, Robert Johnson habe an einer Kreuzung seine Seele dem Teufel verkauft, um Gitarre spielen zu lernen.",
@@ -358,9 +568,18 @@
         "Die Aufnahme besticht durch Johnsons klagenden Gesang und sein fesselndes Spiel.",
         "Refrain: 'I went to the crossroad, fell down on my knees!'"
       ],
-      "lyrics": { "real": ["I went to the crossroad, fell down on my knees", "I went to the crossroad, fell down on my knees", "Asked the Lord above have mercy, now save poor Bob, if you please"], "fake": "Walking down the street with a rhythm in my feet and a silver seat" },
+      "lyrics": {
+        "real": [
+          "I went to the crossroad, fell down on my knees",
+          "I went to the crossroad, fell down on my knees",
+          "Asked the Lord above have mercy, now save poor Bob, if you please"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet and a silver seat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "GsB_cGdgPTo" }
+      "links": {
+        "youtube": "GsB_cGdgPTo"
+      }
     },
     {
       "id": "blues-howlin-wolf-smokestack",
@@ -370,7 +589,11 @@
       "country": "US",
       "genre": "Chicago Blues",
       "difficulty": "medium",
-      "mood": ["Raw", "Powerful", "Moody"],
+      "mood": [
+        "Raw",
+        "Powerful",
+        "Moody"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Bekannt für den markanten, fast geisterhaften Heul-Gesang von Howlin' Wolf.",
@@ -379,9 +602,18 @@
         "Ein Klassiker des Chess Records Labels aus Chicago.",
         "Wurde oft gecovert, unter anderem von den Grateful Dead und den Yardbirds."
       ],
-      "lyrics": { "real": ["Ah-whoooo, smokestack lightnin', shinin' just like gold", "Don't you hear me cryin'?", "Whoo-hooo, tell me baby, where did you stay last night?"], "fake": "In the shadow of the night, we're looking for the light of the broken soul" },
+      "lyrics": {
+        "real": [
+          "Ah-whoooo, smokestack lightnin', shinin' just like gold",
+          "Don't you hear me cryin'?",
+          "Whoo-hooo, tell me baby, where did you stay last night?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of the broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "O7D-1RG-VRk" }
+      "links": {
+        "youtube": "O7D-1RG-VRk"
+      }
     },
     {
       "id": "jazz-norah-jones-dont-know-why",
@@ -391,7 +623,11 @@
       "country": "US",
       "genre": "Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Chill", "Smooth"],
+      "mood": [
+        "Romantic",
+        "Chill",
+        "Smooth"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Markierte den globalen Durchbruch von Norah Jones.",
@@ -400,9 +636,18 @@
         "Ein Paradebeispiel für modernen, pop-orientierten Jazz.",
         "Refrain: 'I don't know why I didn't come!'"
       ],
-      "lyrics": { "real": ["I waited 'til I saw the sun, I don't know why I didn't come", "I left you by the house of fun, I don't know why I didn't come", "My heart is drenched in wine, but you'll be on my mind forever"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "I waited 'til I saw the sun, I don't know why I didn't come",
+          "I left you by the house of fun, I don't know why I didn't come",
+          "My heart is drenched in wine, but you'll be on my mind forever"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "tO4dXzguxto" }
+      "links": {
+        "youtube": "tO4dXzguxto"
+      }
     },
     {
       "id": "country-garth-brooks-friends",
@@ -412,7 +657,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Sing-along", "Party"],
+      "mood": [
+        "Happy",
+        "Sing-along",
+        "Party"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Der ultimative Song für jede Country-Bar und jedes Konzert.",
@@ -421,9 +670,18 @@
         "Besitzt einen gewaltigen Mitsing-Refrain.",
         "Refrain: 'I got friends in low places, where the whiskey drowns and the beer chases...'"
       ],
-      "lyrics": { "real": ["Blame it all on my roots, I showed up in boots, and ruined your black tie affair", "I've got friends in low places, where the whiskey drowns and the beer chases", "And my blues away, and I'll be okay"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Blame it all on my roots, I showed up in boots, and ruined your black tie affair",
+          "I've got friends in low places, where the whiskey drowns and the beer chases",
+          "And my blues away, and I'll be okay"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "mvCgSqPZ4EM" }
+      "links": {
+        "youtube": "mvCgSqPZ4EM"
+      }
     },
     {
       "id": "jazz-louis-jordan-boogie",
@@ -433,7 +691,11 @@
       "country": "US",
       "genre": "Jump Blues / Jazz",
       "difficulty": "medium",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Einer der größten Hits der Jump-Blues-Ära nach dem Zweiten Weltkrieg.",
@@ -442,9 +704,18 @@
         "Louis Jordan gilt als einer der wichtigsten Vorläufer des Rock'n'Roll.",
         "Refrain: 'Choo choo, choo choo ch'boogie!'"
       ],
-      "lyrics": { "real": ["Heading for the station with a pack on my back", "I'm tired of transportation in the back of a hack", "Choo choo, choo choo ch'boogie, take me right back to the track Jack"], "fake": "In the middle of the night, we're looking for the light of the train" },
+      "lyrics": {
+        "real": [
+          "Heading for the station with a pack on my back",
+          "I'm tired of transportation in the back of a hack",
+          "Choo choo, choo choo ch'boogie, take me right back to the track Jack"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the train"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S-cbOl96RFM" }
+      "links": {
+        "youtube": "S-cbOl96RFM"
+      }
     },
     {
       "id": "jazz-cab-calloway-minnie",
@@ -454,7 +725,11 @@
       "country": "US",
       "genre": "Jazz / Swing",
       "difficulty": "easy",
-      "mood": ["Fun", "Classic", "Energy"],
+      "mood": [
+        "Fun",
+        "Classic",
+        "Energy"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Berühmt für den 'Hi-De-Hi-De-Ho' Call-and-Response-Gesang.",
@@ -463,9 +738,18 @@
         "Erreichte durch den Film 'The Blues Brothers' in den 80ern erneut Kultstatus.",
         "Ein absolutes Fest für das Publikum zum Mitmachen."
       ],
-      "lyrics": { "real": ["Folks, here's a story 'bout Minnie the Moocher, she was a lowdown hoochie-coocher", "He-de-he-de-he-de-ho!", "She had a heart as big as a whale!"], "fake": "Dancing in the street, moving to the beat of the jazz" },
+      "lyrics": {
+        "real": [
+          "Folks, here's a story 'bout Minnie the Moocher, she was a lowdown hoochie-coocher",
+          "He-de-he-de-he-de-ho!",
+          "She had a heart as big as a whale!"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the jazz"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "8mq4UT4VnbE" }
+      "links": {
+        "youtube": "8mq4UT4VnbE"
+      }
     },
     {
       "id": "country-carter-family-circle",
@@ -475,7 +759,11 @@
       "country": "US",
       "genre": "Country / Gospel",
       "difficulty": "hard",
-      "mood": ["Sad", "Classic", "Spiritual"],
+      "mood": [
+        "Sad",
+        "Classic",
+        "Spiritual"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Einer der einflussreichsten Songs in der Geschichte der Country-Musik.",
@@ -484,9 +772,18 @@
         "Wurde von unzähligen Künstlern (z.B. Johnny Cash) gecovert.",
         "Refrain: 'Will the circle be unbroken, by and by, Lord, by and by?'"
       ],
-      "lyrics": { "real": ["I was standing by my window, on one cold and cloudy day", "Will the circle be unbroken, by and by, Lord, by and by", "There's a better home a-waiting, in the sky, Lord, in the sky"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "I was standing by my window, on one cold and cloudy day",
+          "Will the circle be unbroken, by and by, Lord, by and by",
+          "There's a better home a-waiting, in the sky, Lord, in the sky"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ZJL4UGSbeFg" }
+      "links": {
+        "youtube": "ZJL4UGSbeFg"
+      }
     },
     {
       "id": "country-patsy-cline-crazy",
@@ -496,7 +793,11 @@
       "country": "US",
       "genre": "Country / Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Romantic", "Classic"],
+      "mood": [
+        "Sad",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Geschrieben von dem damals noch unbekannten Willie Nelson.",
@@ -505,9 +806,18 @@
         "Handelt von der Erkenntnis, dass man aus Liebe unvernünftige Dinge tut.",
         "Refrain: 'I'm crazy for feelin' so lonely... crazy for feelin' so blue!'"
       ],
-      "lyrics": { "real": ["I'm crazy, crazy for feelin' so lonely", "I'm crazy, crazy for feelin' so blue", "I knew you'd love me as long as you wanted, and then some day you'd leave me for somebody new"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "I'm crazy, crazy for feelin' so lonely",
+          "I'm crazy, crazy for feelin' so blue",
+          "I knew you'd love me as long as you wanted, and then some day you'd leave me for somebody new"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "MbnrdQPzhsc" }
+      "links": {
+        "youtube": "MbnrdQPzhsc"
+      }
     },
     {
       "id": "blues-robert-cray-smoking-gun",
@@ -517,7 +827,11 @@
       "country": "US",
       "genre": "Blues / Rock",
       "difficulty": "medium",
-      "mood": ["Powerful", "Moody", "Cool"],
+      "mood": [
+        "Powerful",
+        "Moody",
+        "Cool"
+      ],
       "pack": "Country, Jazz & Blues",
       "hints": [
         "Robert Cray modernisierte den Blues in den 80er Jahren mit seinem 'Clean' Gitarrensound.",
@@ -526,9 +840,18 @@
         "Besticht durch sein knackiges, präzises Gitarrenspiel.",
         "Refrain: 'I'm standing here with a smoking gun!'"
       ],
-      "lyrics": { "real": ["Waiting for the sun to rise, above the mountain top", "I'm standing here with a smoking gun", "And I'm the one who's gonna make you scream"], "fake": "In the middle of the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "Waiting for the sun to rise, above the mountain top",
+          "I'm standing here with a smoking gun",
+          "And I'm the one who's gonna make you scream"
+        ],
+        "fake": "In the middle of the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "mvCgSqPZ4EM" }
+      "links": {
+        "youtube": "mvCgSqPZ4EM"
+      }
     }
   ]
 }

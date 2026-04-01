@@ -14,7 +14,11 @@
       "country": "GB",
       "genre": "Pop / Piano Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Soft", "Classic"],
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Elton Johns erster großer Welthit, geschrieben mit Bernie Taupin.",
@@ -23,9 +27,19 @@
         "Bernie Taupin schrieb den Text angeblich am Frühstückstisch.",
         "Refrain: 'And you can tell everybody! This is your song!'"
       ],
-      "lyrics": { "real": ["It's a little bit funny, this feeling inside", "I'm not one of those who can easily hide", "I know it's not much, but it's the best I can do", "My gift is my song, and this one's for you"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "It's a little bit funny, this feeling inside",
+          "I'm not one of those who can easily hide",
+          "I know it's not much, but it's the best I can do",
+          "My gift is my song, and this one's for you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S3J_p2R2N" }
+      "links": {
+        "youtube": "S3J_p2R2N"
+      }
     },
     {
       "id": "piano-joel-pianoman",
@@ -35,7 +49,11 @@
       "country": "US",
       "genre": "Pop / Piano Rock",
       "difficulty": "medium",
-      "mood": ["Storytelling", "Classic", "Nostalgic"],
+      "mood": [
+        "Storytelling",
+        "Classic",
+        "Nostalgic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für Storytelling am Klavier über die Gäste einer Bar.",
@@ -44,9 +62,18 @@
         "Ein absoluter Klassiker, der weltweit in jeder Kneipe mitgesungen wird.",
         "Refrain: 'Sing us a song, you're the piano man!'"
       ],
-      "lyrics": { "real": ["It's nine o'clock on a Saturday, the regular crowd shuffles in", "There's an old man sitting next to me, makin' love to his tonic and gin", "Sing us a song, you're the piano man"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "It's nine o'clock on a Saturday, the regular crowd shuffles in",
+          "There's an old man sitting next to me, makin' love to his tonic and gin",
+          "Sing us a song, you're the piano man"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-adele-someone",
@@ -56,7 +83,11 @@
       "country": "GB",
       "genre": "Pop / Soul",
       "difficulty": "medium",
-      "mood": ["Sad", "Emotional", "Powerful"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Zutiefst bewegende Ballade über das Akzeptieren des Lebensendes einer großen Liebe.",
@@ -65,9 +96,18 @@
         "Adeles Live-Performance bei den BRIT Awards 2011 machte den Song zur Legende.",
         "Refrain: 'Nevermind, I'll find someone like you! I wish nothing but the best for you too!'"
       ],
-      "lyrics": { "real": ["I heard that you're settled down, that you found a girl and you're married now", "I hate to turn up out of the blue, uninvited, but I couldn't stay away", "Nevermind, I'll find someone like you"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I heard that you're settled down, that you found a girl and you're married now",
+          "I hate to turn up out of the blue, uninvited, but I couldn't stay away",
+          "Nevermind, I'll find someone like you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "hLQl3WQQoQ0" }
+      "links": {
+        "youtube": "hLQl3WQQoQ0"
+      }
     },
     {
       "id": "piano-legend-allofme",
@@ -77,7 +117,11 @@
       "country": "US",
       "genre": "Soul / Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Soft", "Powerful"],
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Powerful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für moderne Hochzeitslieder.",
@@ -86,9 +130,18 @@
         "Besticht durch die intime Atmosphäre und den gefühlvollen Gesang.",
         "Refrain: 'Cause all of me! Loves all of you!'"
       ],
-      "lyrics": { "real": ["'Cause all of me, loves all of you", "Love your curves and all your edges, all your perfect imperfections", "Give your all to me, I'll give my all to you"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "'Cause all of me, loves all of you",
+          "Love your curves and all your edges, all your perfect imperfections",
+          "Give your all to me, I'll give my all to you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "450p7WoxVZY" }
+      "links": {
+        "youtube": "450p7goxZqg"
+      }
     },
     {
       "id": "piano-alicia-gotyou",
@@ -98,7 +151,11 @@
       "country": "US",
       "genre": "Soul / R&B",
       "difficulty": "medium",
-      "mood": ["Romantic", "Powerful", "Classic"],
+      "mood": [
+        "Romantic",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für anspruchsvollen R&B-Soul am Klavier.",
@@ -107,9 +164,18 @@
         "Wurde zu einem Standard für Gesangswettbewerbe weltweit.",
         "Refrain: 'Some people want it all! But I don't want nothing at all if I ain't got you!'"
       ],
-      "lyrics": { "real": ["Some people live for the fortune, some people live just for the fame", "Some people want it all, but I don't want nothing at all", "If I ain't got you, baby"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Some people live for the fortune, some people live just for the fame",
+          "Some people want it all, but I don't want nothing at all",
+          "If I ain't got you, baby"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Ju8Hr50Ckwk"
+      }
     },
     {
       "id": "piano-coldplay-scientist",
@@ -119,7 +185,11 @@
       "country": "GB",
       "genre": "Piano Rock / Alternative",
       "difficulty": "easy",
-      "mood": ["Sad", "Atmospheric", "Nostalgic"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Nostalgic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert den Wunsch, in einer Beziehung zum Anfang zurückzukehren.",
@@ -128,9 +198,18 @@
         "Ein Inbegriff für den melancholischen Coldplay-Sound der frühen 2000er.",
         "Refrain: 'Nobody said it was easy! No one ever said it would be this hard!'"
       ],
-      "lyrics": { "real": ["Come up to meet you, tell you I'm sorry, you don't know how lovely you are", "I had to find you, tell you I need you, tell you I set you apart", "Nobody said it was easy"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Come up to meet you, tell you I'm sorry, you don't know how lovely you are",
+          "I had to find you, tell you I need you, tell you I set you apart",
+          "Nobody said it was easy"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "RB-RcX5DS5A" }
+      "links": {
+        "youtube": "RB-RcX5DS5A"
+      }
     },
     {
       "id": "piano-vanessa-miles",
@@ -140,7 +219,11 @@
       "country": "US",
       "genre": "Pop / Piano Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Dreamy"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dreamy"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Bekannt für das virtuose, helle Klavier-Intro, das sofort gute Laune verbreitet.",
@@ -149,9 +232,18 @@
         "Ein Inbegriff für den euphorischen Piano-Pop der 2000er.",
         "Refrain: 'If I could fall into the sky! Do you think time would pass me by?'"
       ],
-      "lyrics": { "real": ["Making my way downtown, walking fast, faces pass and I'm home bound", "If I could fall into the sky, do you think time would pass me by?", "'Cause you know I'd walk a thousand miles"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Making my way downtown, walking fast, faces pass and I'm home bound",
+          "If I could fall into the sky, do you think time would pass me by?",
+          "'Cause you know I'd walk a thousand miles"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "Cwkej79U3ek" }
+      "links": {
+        "youtube": "Cwkej79U3ek"
+      }
     },
     {
       "id": "piano-journey-believin",
@@ -161,7 +253,11 @@
       "country": "US",
       "genre": "Rock / Power Ballad",
       "difficulty": "easy",
-      "mood": ["Energy", "Positive", "Classic"],
+      "mood": [
+        "Energy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Besitzt eines der berühmtesten Klavier-Intros der Rockgeschichte.",
@@ -170,9 +266,18 @@
         "Ein absoluter Party- und Karaoke-Garant weltweit.",
         "Refrain: 'Don't stop believin'! Hold on to that feelin'!'"
       ],
-      "lyrics": { "real": ["Just a small town girl, livin' in a lonely world", "He's just a city boy, born and raised in South Detroit", "Don't stop believin', hold on to that feelin'"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Just a small town girl, livin' in a lonely world",
+          "He's just a city boy, born and raised in South Detroit",
+          "Don't stop believin', hold on to that feelin'"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "piano-meatloaf-anything",
@@ -182,7 +287,11 @@
       "country": "US",
       "genre": "Rock / Opera influence",
       "difficulty": "medium",
-      "mood": ["Epic", "Powerful", "Emotional"],
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für den bombastischen Rock-Opern-Stil von Jim Steinman.",
@@ -191,9 +300,18 @@
         "Wurde zu Meat Loafs größtem kommerziellen Erfolg weltweit.",
         "Refrain: 'I'd do anything for love! But I won't do that!'"
       ],
-      "lyrics": { "real": ["And I would do anything for love, I'd run right into hell and back", "But I won't do that, no I won't do that", "As long as the wheels are turning"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "And I would do anything for love, I'd run right into hell and back",
+          "But I won't do that, no I won't do that",
+          "As long as the wheels are turning"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-whitney-always",
@@ -203,7 +321,11 @@
       "country": "US",
       "genre": "Pop / Soul",
       "difficulty": "medium",
-      "mood": ["Emotional", "Powerful", "Romantic"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Romantic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Originally written by Dolly Parton, but unforgettably transformed by Whitney.",
@@ -212,9 +334,18 @@
         "Zentraler Song des Soundtracks zum Film 'The Bodyguard'.",
         "Refrain: 'And I... will always love youuuu!'"
       ],
-      "lyrics": { "real": ["If I should stay, I would only be in your way", "So I'll go, but I know I'll think of you every step of the way", "And I will always love you"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "If I should stay, I would only be in your way",
+          "So I'll go, but I know I'll think of you every step of the way",
+          "And I will always love you"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "3JWTaaS7LdU"
+      }
     },
     {
       "id": "piano-mariah-withoutyou",
@@ -224,7 +355,11 @@
       "country": "US",
       "genre": "Pop / Soul / Ballade",
       "difficulty": "medium",
-      "mood": ["Sad", "Powerful", "Emotional"],
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Emotional"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Coverversion der Gruppe Badfinger, berühmt gemacht durch Mariahs enorme Stimmgewalt.",
@@ -233,9 +368,18 @@
         "Ein Inbegriff für die großen Power-Balladen der 90er.",
         "Refrain: 'I can't live! If living is without you!'"
       ],
-      "lyrics": { "real": ["No I can't forget this evening, or your face as you were leaving", "But I guess that's just the way the story goes", "I can't live, if living is without you"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "No I can't forget this evening, or your face as you were leaving",
+          "But I guess that's just the way the story goes",
+          "I can't live, if living is without you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-bonnie-eclipse",
@@ -245,7 +389,11 @@
       "country": "GB",
       "genre": "Pop / Power Ballad",
       "difficulty": "easy",
-      "mood": ["Epic", "Dramatic", "Nostalgic"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Nostalgic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Ein Meisterwerk des Bombast-Rock, geschrieben von Jim Steinman.",
@@ -254,9 +402,18 @@
         "Wurde zu einem der meistgespielten Lieder der 80er Jahre.",
         "Refrain: 'Turn around, bright eyes! Every now and then I fall apart!'"
       ],
-      "lyrics": { "real": ["Turn around, every now and then I get a little bit lonely", "Turn around, bright eyes, every now and then I fall apart", "And I need you now tonight"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Turn around, every now and then I get a little bit lonely",
+          "Turn around, bright eyes, every now and then I fall apart",
+          "And I need you now tonight"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "lcOxhH8N3Bo"
+      }
     },
     {
       "id": "piano-phil-odds",
@@ -266,7 +423,11 @@
       "country": "GB",
       "genre": "Pop / Rock Ballad",
       "difficulty": "medium",
-      "mood": ["Sad", "Emotional", "Powerful"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für die tief empfundenen Balladen von Phil Collins.",
@@ -275,9 +436,18 @@
         "Eigens für den gleichnamigen Film geschrieben.",
         "Refrain: 'So take a look at me now! 'Cause there's just an empty space!'"
       ],
-      "lyrics": { "real": ["How can I just let you walk away, just let you leave without a trace", "So take a look at me now, 'cause there's just an empty space", "And you coming back to me is against all odds"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "How can I just let you walk away, just let you leave without a trace",
+          "So take a look at me now, 'cause there's just an empty space",
+          "And you coming back to me is against all odds"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-prince-rain",
@@ -287,7 +457,11 @@
       "country": "US",
       "genre": "Rock / Soul / Epic",
       "difficulty": "medium",
-      "mood": ["Epic", "Spiritual", "Romantic"],
+      "mood": [
+        "Epic",
+        "Spiritual",
+        "Romantic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Besticht durch den gospel-artigen Beginn am Klavier und das legendäre Gitarren-Solo am Ende.",
@@ -296,9 +470,18 @@
         "Ein Inbegriff für musikalische Brillanz und emotionale Tiefe.",
         "Refrain: 'Purple rain, purple rain! I only wanted to see you bathing in the purple rain!'"
       ],
-      "lyrics": { "real": ["I never meant to cause you any sorrow, I never meant to cause you any pain", "I only wanted to one time to see you laughing", "I only wanted to see you bathing in the purple rain"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I never meant to cause you any sorrow, I never meant to cause you any pain",
+          "I only wanted to one time to see you laughing",
+          "I only wanted to see you bathing in the purple rain"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "TvnYmWpD_T8" }
+      "links": {
+        "youtube": "TvnYmWpD_T8"
+      }
     },
     {
       "id": "piano-gnr-rain",
@@ -308,7 +491,11 @@
       "country": "US",
       "genre": "Hard Rock / Power Ballad",
       "difficulty": "hard",
-      "mood": ["Epic", "Dramatic", "Moody"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Das Opus Magnum von Axl Rose, der jahrelang an diesem Song arbeitete.",
@@ -317,9 +504,18 @@
         "Wurde durch sein episches Musikvideo (Hochzeit und Beerdigung) zum Kult.",
         "Refrain: 'Nothing lasts forever! Even cold November rain!'"
       ],
-      "lyrics": { "real": ["When I look into your eyes, I can see a love restrained", "But darlin' when I hold you, don't you know I feel the same", "Nothing lasts forever, even cold November rain"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "When I look into your eyes, I can see a love restrained",
+          "But darlin' when I hold you, don't you know I feel the same",
+          "Nothing lasts forever, even cold November rain"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "8SbUC-UaAxE" }
+      "links": {
+        "youtube": "8SbUC-UaAxE"
+      }
     },
     {
       "id": "piano-aerosmith-dreamon",
@@ -329,7 +525,11 @@
       "country": "US",
       "genre": "Hard Rock / Ballade",
       "difficulty": "hard",
-      "mood": ["Epic", "Dramatic", "Aggressive"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Aggressive"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Steven Tylers Meisterwerk über das Älterwerden und Verfolgen von Träumen.",
@@ -338,9 +538,18 @@
         "Ein Meilenstein des Hard Rock, der die Band berühmt machte.",
         "Refrain: 'Dream on, dream on, dream on! Dream until your dreams come true!'"
       ],
-      "lyrics": { "real": ["Every time that I look in the mirror, all these lines on my face gettin' clearer", "The past is gone, it went by like dusk to dawn", "Dream on, dream on, dream until your dreams come true"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "Every time that I look in the mirror, all these lines on my face gettin' clearer",
+          "The past is gone, it went by like dusk to dawn",
+          "Dream on, dream on, dream until your dreams come true"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "iJDtukGW79Y"
+      }
     },
     {
       "id": "piano-evanescence-immortal",
@@ -350,7 +559,11 @@
       "country": "US",
       "genre": "Gothic Rock / Piano Pop",
       "difficulty": "medium",
-      "mood": ["Sad", "Moody", "Dark"],
+      "mood": [
+        "Sad",
+        "Moody",
+        "Dark"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für den atmosphärischen Gothic-Folk-Sound von Amy Lee.",
@@ -359,9 +572,18 @@
         "Wurde zu einem der bekanntesten Lieder der frühen 2000er.",
         "Refrain: 'When you cried, I'd wipe away all of your tears!'"
       ],
-      "lyrics": { "real": ["I'm so tired of being here, suppressed by all my childish fears", "When you cried, I'd wipe away all of your tears", "I've tried so hard to tell myself that you're gone"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I'm so tired of being here, suppressed by all my childish fears",
+          "When you cried, I'd wipe away all of your tears",
+          "I've tried so hard to tell myself that you're gone"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "5anLPw0EfMo" }
+      "links": {
+        "youtube": "5anLPw0Efmo"
+      }
     },
     {
       "id": "piano-keenan-scars",
@@ -371,7 +593,11 @@
       "country": "AU",
       "genre": "Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Emotional", "Sad", "Honest"],
+      "mood": [
+        "Emotional",
+        "Sad",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Moderner Viral-Hit eines jungen australischen Künstlers.",
@@ -379,9 +605,18 @@
         "Besticht durch die glasklare Produktion und das gefühlvolle Klavier.",
         "Refrain: 'I'll give you all my scars!'"
       ],
-      "lyrics": { "real": ["If I could hold you for a second, I would never let you go", "I'll give you all my scars, even though they're made of glass", "I'm falling for you faster than I ever have before"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "If I could hold you for a second, I would never let you go",
+          "I'll give you all my scars, even though they're made of glass",
+          "I'm falling for you faster than I ever have before"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "piano-calum-own",
@@ -391,7 +626,11 @@
       "country": "GB",
       "genre": "Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Honest"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Zutiefst berührende Coverversion des Robyn-Dance-Tracks.",
@@ -400,9 +639,18 @@
         "Besticht durch die Reduktion auf Stimme und Klavier.",
         "Refrain: 'I'm in the corner, watching you kiss her!'"
       ],
-      "lyrics": { "real": ["Somebody said you got a new friend, does she love you better than I can?", "I'm in the corner, watching you kiss her, oh oh oh", "I'm right over here, why can't you see me?"], "fake": "In the middle of the street, you can feel the heat of our happy heart tonight" },
+      "lyrics": {
+        "real": [
+          "Somebody said you got a new friend, does she love you better than I can?",
+          "I'm in the corner, watching you kiss her, oh oh oh",
+          "I'm right over here, why can't you see me?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "q31tGyBJhRY" }
+      "links": {
+        "youtube": "q31tGyBJhRY"
+      }
     },
     {
       "id": "piano-lewis-loved",
@@ -412,7 +660,11 @@
       "country": "GB",
       "genre": "Soul / Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Honest"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "War wochenlang auf Platz 1 weltweit und besiegelte Capaldis Status als Superstar.",
@@ -421,9 +673,18 @@
         "Das Video thematisiert Organspende auf sehr berührende Weise.",
         "Refrain: 'Now the day bleeds, into nightfall! And you're not here!'"
       ],
-      "lyrics": { "real": ["I'm going under and this time I fear there's no one to save me", "This all or nothing really got a way of driving me crazy", "I need somebody to heal, somebody to know, somebody to have"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm going under and this time I fear there's no one to save me",
+          "This all or nothing really got a way of driving me crazy",
+          "I need somebody to heal, somebody to know, somebody to have"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "zABLecsR5UE" }
+      "links": {
+        "youtube": "zABLecsR5UE"
+      }
     },
     {
       "id": "piano-tom-love",
@@ -433,7 +694,11 @@
       "country": "GB",
       "genre": "Indie Pop / Piano Rock",
       "difficulty": "medium",
-      "mood": ["Dramatic", "Sad", "Powerful"],
+      "mood": [
+        "Dramatic",
+        "Sad",
+        "Powerful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für die emotionale Erschöpfung nach mehreren enttäuschten Lieben.",
@@ -442,9 +707,18 @@
         "Tom Odells Stimme bricht fast vor Gefühl im Finale.",
         "Refrain: 'And I wanna kiss you, make you feel alright! But I'm just so tired!'"
       ],
-      "lyrics": { "real": ["I wanna take you somewhere so you know I care, but it's so cold and I don't know where", "And I wanna kiss you, make you feel alright", "But I'm just so tired to share my happiness with you"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "I wanna take you somewhere so you know I care, but it's so cold and I don't know where",
+          "And I wanna kiss you, make you feel alright",
+          "But I'm just so tired to share my happiness with you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "MwpMEbgC7DA" }
+      "links": {
+        "youtube": "MwpMEbgC7DA"
+      }
     },
     {
       "id": "piano-birdy-skinny",
@@ -454,7 +728,11 @@
       "country": "GB",
       "genre": "Folk / Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Soft", "Fragile", "Sad"],
+      "mood": [
+        "Soft",
+        "Fragile",
+        "Sad"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Hauchzarte Coverversion des Bon Iver Songs, aufgenommen als sie erst 14 Jahre alt war.",
@@ -463,9 +741,18 @@
         "Machte sie weltweit über Nacht berühmt.",
         "Refrain: 'Come on skinny love just last the year! Pour a little salt we were never here!'"
       ],
-      "lyrics": { "real": ["Come on skinny love just last the year, pour a little salt we were never here", "Staring at the sink of blood and crushed veneer", "Who will love you? Who will fight?"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Come on skinny love just last the year, pour a little salt we were never here",
+          "Staring at the sink of blood and crushed veneer",
+          "Who will love you? Who will fight?"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "aNzCDt2eidg" }
+      "links": {
+        "youtube": "aNzCDt2eidg"
+      }
     },
     {
       "id": "piano-sia-breathe",
@@ -475,7 +762,11 @@
       "country": "AU",
       "genre": "Indie Pop / Downtempo",
       "difficulty": "medium",
-      "mood": ["Sad", "Atmospheric", "Spiritual"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Spiritual"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Unvergesslich durch das Serienfinale von 'Six Feet Under'.",
@@ -484,9 +775,18 @@
         "Ein Inbegriff für atmosphärischen, traurigen Piano-Indie.",
         "Refrain: 'Help, I have done it again! I have been here many times before!'"
       ],
-      "lyrics": { "real": ["Help, I have done it again, I have been here many times before", "Hurt myself again today, and the worst part is there's no one else to blame", "Be my friend, hold me, wrap me up"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Help, I have done it again, I have been here many times before",
+          "Hurt myself again today, and the worst part is there's no one else to blame",
+          "Be my friend, hold me, wrap me up"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "hSH7fblGuWM" }
+      "links": {
+        "youtube": "hSH7fblGuWM"
+      }
     },
     {
       "id": "piano-queen-bohemian",
@@ -496,7 +796,11 @@
       "country": "GB",
       "genre": "Art Rock / Opera",
       "difficulty": "hard",
-      "mood": ["Epic", "Dramatic", "Moody"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Das epochale Meisterwerk von Freddie Mercury.",
@@ -505,9 +809,18 @@
         "Ein Inbegriff für musikalische Grenzenlosigkeit.",
         "Refrain: 'Mamaaa, just killed a man! Put a gun against his head!'"
       ],
-      "lyrics": { "real": ["Mama, just killed a man, put a gun against his head, pulled my trigger, now he's dead", "Mama, life had just begun", "But now I've gone and thrown it all away"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Mama, just killed a man, put a gun against his head, pulled my trigger, now he's dead",
+          "Mama, life had just begun",
+          "But now I've gone and thrown it all away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-lp-onemore",
@@ -517,7 +830,11 @@
       "country": "US",
       "genre": "Pop / Electronic / Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Spiritual"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Zutiefst bewegender Song über Mitgefühl und den Wert eines einzelnen Lebens.",
@@ -526,9 +843,18 @@
         "Thematisiert die Frage: Wer kümmert sich, wenn ein weiteres Licht erlischt?",
         "Refrain: 'Who cares if one more light goes out? Well I do!'"
       ],
-      "lyrics": { "real": ["Should've stayed, were there signs I ignored?", "Can I help you, not to hurt, anymore?", "Who cares if one more light goes out, well I do"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Should've stayed, were there signs I ignored?",
+          "Can I help you, not to hurt, anymore?",
+          "Who cares if one more light goes out, well I do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "30oyR8-C0X8" }
+      "links": {
+        "youtube": "30oyR8-C0X8"
+      }
     },
     {
       "id": "piano-xtina-beautiful",
@@ -538,7 +864,11 @@
       "country": "US",
       "genre": "Pop / Power Ballad",
       "difficulty": "easy",
-      "mood": ["Positive", "Confident", "Emotional"],
+      "mood": [
+        "Positive",
+        "Confident",
+        "Emotional"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für Empowerment-Songs und Selbstakzeptanz.",
@@ -547,9 +877,18 @@
         "Wurde zu einer Hymne für die LGBTQ+ Community.",
         "Refrain: 'I am beautiful! No matter what they say!'"
       ],
-      "lyrics": { "real": ["Don't look at me!", "Every day is so wonderful, then suddenly it's hard to breathe", "I am beautiful, no matter what they say"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Don't look at me!",
+          "Every day is so wonderful, then suddenly it's hard to breathe",
+          "I am beautiful, no matter what they say"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "eAfyFTzZDMM" }
+      "links": {
+        "youtube": "eAfyFTzZDMM"
+      }
     },
     {
       "id": "piano-gaga-reasons",
@@ -559,7 +898,11 @@
       "country": "US",
       "genre": "Pop / Country influence",
       "difficulty": "easy",
-      "mood": ["Sad", "Powerful", "Honest"],
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert den Wunsch zu bleiben, obwohl man einen Millionen Gründe zum Gehen hat.",
@@ -567,9 +910,18 @@
         "Ein Kernstück ihres persönlichen Albums 'Joanne'.",
         "Refrain: 'I've got a hundred million reasons to walk away! But baby I just need one good one to stay!'"
       ],
-      "lyrics": { "real": ["You're giving me a million reasons to let you go", "You're giving me a million reasons to quit the show", "I've got a hundred million reasons to walk away"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "You're giving me a million reasons to let you go",
+          "You're giving me a million reasons to quit the show",
+          "I've got a hundred million reasons to walk away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "en2D_5T" }
+      "links": {
+        "youtube": "en2D_5T"
+      }
     },
     {
       "id": "piano-pink-beam",
@@ -579,7 +931,11 @@
       "country": "US",
       "genre": "Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Spiritual", "Emotional"],
+      "mood": [
+        "Sad",
+        "Spiritual",
+        "Emotional"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Zutiefst persönlicher Song über den Wunsch, für einen Moment mit einem Verstorbenen verbunden zu sein.",
@@ -588,9 +944,18 @@
         "Ein Inbegriff für ihre emotionalen Balladen-Künste.",
         "Refrain: 'Beam me up! Let's write our own ending!'"
       ],
-      "lyrics": { "real": ["There's a whole world out there that I don't want to see", "Beam me up, let's write our own ending", "I'm not ready to be this alone"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "There's a whole world out there that I don't want to see",
+          "Beam me up, let's write our own ending",
+          "I'm not ready to be this alone"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-bruno-man",
@@ -600,7 +965,11 @@
       "country": "US",
       "genre": "Pop / Piano Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Honest"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für Reue und das Eingeständnis eigener Fehler nach einer Trennung.",
@@ -609,9 +978,18 @@
         "Wurde zu einem der meistgestreamten Piano-Hits der 2010er.",
         "Refrain: 'I should've bought you flowers! And held your hand!'"
       ],
-      "lyrics": { "real": ["Same bed but it feels just a little bit bigger now", "Our song on the radio but it don't sound the same", "I should've bought you flowers, and held your hand"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Same bed but it feels just a little bit bigger now",
+          "Our song on the radio but it don't sound the same",
+          "I should've bought you flowers, and held your hand"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ekzHI963AkY" }
+      "links": {
+        "youtube": "ekzHIouo8Q4"
+      }
     },
     {
       "id": "piano-sam-wall",
@@ -621,7 +999,11 @@
       "country": "GB",
       "genre": "Pop / Sam Smith Soul",
       "difficulty": "medium",
-      "mood": ["Epic", "Dramatic", "Moody"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Titeltrack zum James-Bond-Film 'Spectre'.",
@@ -630,9 +1012,18 @@
         "Gewann den Oscar für den besten Song.",
         "Refrain: 'How do I live, how do I breathe! When you're not here!'"
       ],
-      "lyrics": { "real": ["I've been here before, but always hit the floor", "I've spent a lifetime running, and I always get away", "How do I live, how do I breathe? When you're not here I'm suffocating"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "I've been here before, but always hit the floor",
+          "I've spent a lifetime running, and I always get away",
+          "How do I live, how do I breathe? When you're not here I'm suffocating"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "8gwX7fblGuWM" }
+      "links": {
+        "youtube": "8gwX7fblGuWM"
+      }
     },
     {
       "id": "piano-james-gowont",
@@ -642,7 +1033,11 @@
       "country": "GB",
       "genre": "Pop / Acoustic Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Happy", "Soft"],
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Soft"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für moderne Liebeslieder über das gemeinsame Altern.",
@@ -651,9 +1046,18 @@
         "Machte den X-Factor-Gewinner weltweit zum Star.",
         "Refrain: 'I'll carry you across the threshold! I'm so in love with you!'"
       ],
-      "lyrics": { "real": ["I met you in the dark, you lit me up", "You made me feel as though I was enough", "I want to live with you, even when we're ghosts"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "I met you in the dark, you lit me up",
+          "You made me feel as though I was enough",
+          "I want to live with you, even when we're ghosts"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "0yW7z" }
+      "links": {
+        "youtube": "0yW7z"
+      }
     },
     {
       "id": "piano-dean-alright",
@@ -663,7 +1067,11 @@
       "country": "AU",
       "genre": "Pop / Indie Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Honest", "Emotional"],
+      "mood": [
+        "Sad",
+        "Honest",
+        "Emotional"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert das Entdecken von Untreue und den Zuspruch von Freunden.",
@@ -672,9 +1080,18 @@
         "Ein Inbegriff für den ehrlichen 'Broken Heart' Pop.",
         "Refrain: 'Look back and smile! 'Cause it was a lesson learned! It's gonna be alright!'"
       ],
-      "lyrics": { "real": ["I see the way you look at him, I see the way you smile", "It’s gonna be alright, it’s gonna be okay", "Look back and smile, for the lesson learned"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I see the way you look at him, I see the way you smile",
+          "It’s gonna be alright, it’s gonna be okay",
+          "Look back and smile, for the lesson learned"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "piano-freya-lost",
@@ -684,7 +1101,11 @@
       "country": "GB",
       "genre": "Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Soft"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Soft"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Besticht durch Freyinas tiefe, soulige Stimme und das minimalistische Klavier.",
@@ -693,9 +1114,18 @@
         "Freyas Durchbruch-Hit weltweit.",
         "Refrain: 'And I'm lost! Lost without you!'"
       ],
-      "lyrics": { "real": ["Standing on the platform, watching you go", "It's funny how the people you love become strangers", "And I'm lost, lost without you"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Standing on the platform, watching you go",
+          "It's funny how the people you love become strangers",
+          "And I'm lost, lost without you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "tDPpex1wvOc"
+      }
     },
     {
       "id": "piano-kodaline-all-i-want",
@@ -705,7 +1135,11 @@
       "country": "IE",
       "genre": "Indie Pop / Rock Influence",
       "difficulty": "medium",
-      "mood": ["Sad", "Emotional", "Epic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Epic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert die Sehnsucht nach einer Rückkehr des geliebten Menschen.",
@@ -714,9 +1148,18 @@
         "Ein Inbegriff für irischen Indie-Rock mit Herz.",
         "Refrain: 'All I want is nothing more! To hear you knocking on my door!'"
       ],
-      "lyrics": { "real": ["All I want is nothing more, to hear you knocking on my door", "But you're not here, I'm not alright", "If I could see you for the first time, oh what a feeling"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "All I want is nothing more, to hear you knocking on my door",
+          "But you're not here, I'm not alright",
+          "If I could see you for the first time, oh what a feeling"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "mtPcdUtLr60" }
+      "links": {
+        "youtube": "jGUASAxXwg4"
+      }
     },
     {
       "id": "piano-fray-howtosave",
@@ -726,7 +1169,11 @@
       "country": "US",
       "genre": "Piano Rock / Alternative",
       "difficulty": "easy",
-      "mood": ["Sad", "Serious", "Powerful"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Powerful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Besitzt eines der markantesten Klavier-Riffs der 2000er Jahre.",
@@ -735,9 +1182,18 @@
         "Ein Inbegriff für melancholischen Piano-Rock.",
         "Refrain: 'Where did I go wrong? I lost a friend!'"
       ],
-      "lyrics": { "real": ["Step one, you say we need to talk, he walks, you say sit down it's just a talk", "Where did I go wrong? I lost a friend", "Somewhere along in the bitterness"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Step one, you say we need to talk, he walks, you say sit down it's just a talk",
+          "Where did I go wrong? I lost a friend",
+          "Somewhere along in the bitterness"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "piano-fff-100years",
@@ -747,7 +1203,11 @@
       "country": "US",
       "genre": "Piano Pop",
       "difficulty": "easy",
-      "mood": ["Thoughtful", "Nostalgic", "Soft"],
+      "mood": [
+        "Thoughtful",
+        "Nostalgic",
+        "Soft"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert den Lauf des Lebens von 15 bis 100 Jahren.",
@@ -755,9 +1215,18 @@
         "Ein Inbegriff für Singer-Songwriter-Pop am Klavier.",
         "Refrain: 'I'm fifteen for a moment! Caught in between ten and twenty!'"
       ],
-      "lyrics": { "real": ["I'm fifteen for a moment, caught in between ten and twenty", "I'm thirty-three for a moment, I'm still the man I thought I'd be", "Hundred years to go and I'm still counting"], "fake": "In the shadow of the night, I'm looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I'm fifteen for a moment, caught in between ten and twenty",
+          "I'm thirty-three for a moment, I'm still the man I thought I'd be",
+          "Hundred years to go and I'm still counting"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "piano-powter-badday",
@@ -767,7 +1236,11 @@
       "country": "CA",
       "genre": "Piano Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Funny"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Funny"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Der ultimative Motivations-Song nach einem schlechten Erlebnis.",
@@ -776,9 +1249,18 @@
         "Ein Inbegriff für sonnigen Piano-Pop aus den 2000ern.",
         "Refrain: 'You had a bad day! You're taking one down!'"
       ],
-      "lyrics": { "real": ["You had a bad day, you're taking one down, you sing a sad song just to turn it around", "You say you don't know, you tell me don't lie", "You work at a smile and you go for a ride"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "You had a bad day, you're taking one down, you sing a sad song just to turn it around",
+          "You say you don't know, you tell me don't lie",
+          "You work at a smile and you go for a ride"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gH4766" }
+      "links": {
+        "youtube": "gH4766"
+      }
     },
     {
       "id": "piano-blunt-goodbye",
@@ -788,7 +1270,11 @@
       "country": "GB",
       "genre": "Pop Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Honest"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Zutiefst schmerzhafte Ballade über das endgültige Aus einer Liebe.",
@@ -796,9 +1282,18 @@
         "Wurde zu einem der meistgespielten Beerdigungs- und Trennungslieder.",
         "Refrain: 'Goodbye my lover! Goodbye my friend!'"
       ],
-      "lyrics": { "real": ["Goodbye my lover, goodbye my friend, you have been the one", "I'm so hollow, baby, I'm so hollow", "I've seen you cry, I've seen you smile"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Goodbye my lover, goodbye my friend, you have been the one",
+          "I'm so hollow, baby, I'm so hollow",
+          "I've seen you cry, I've seen you smile"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "wVyggTKDcOE"
+      }
     },
     {
       "id": "piano-snow-run",
@@ -808,7 +1303,11 @@
       "country": "GB",
       "genre": "Indie Rock / Anthem",
       "difficulty": "medium",
-      "mood": ["Epic", "Powerful", "Emotional"],
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert Zusammenhalt und den Wunsch, den Schmerz eines anderen zu teilen.",
@@ -817,9 +1316,18 @@
         "Ein Inbegriff für den Stadion-Indie-Sound.",
         "Refrain: 'Light up, light up! As if you have a choice!'"
       ],
-      "lyrics": { "real": ["I'll sing it one last time for you, then we really have to go", "You've been the only thing that's right in all I've done", "Light up, light up, as if you have a choice"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'll sing it one last time for you, then we really have to go",
+          "You've been the only thing that's right in all I've done",
+          "Light up, light up, as if you have a choice"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "piano-jules-madworld",
@@ -829,7 +1337,11 @@
       "country": "US",
       "genre": "Piano Ballade",
       "difficulty": "medium",
-      "mood": ["Sad", "Atmospheric", "Dark"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Dark"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Coverversion des Tears for Fears Hits, transponiert in eine düstere Ballade.",
@@ -837,9 +1349,18 @@
         "Besticht durch die absolute Melancholie und den unterkühlten Klavierklang.",
         "Refrain: 'And I find it kind of funny! I find it kind of sad! The dreams in which I'm dying!'"
       ],
-      "lyrics": { "real": ["All around me are familiar faces, worn out places, worn out faces", "And I find it kind of funny, I find it kind of sad", "The dreams in which I'm dying are the best I've ever had"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "All around me are familiar faces, worn out places, worn out faces",
+          "And I find it kind of funny, I find it kind of sad",
+          "The dreams in which I'm dying are the best I've ever had"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "4N3N1M9" }
+      "links": {
+        "youtube": "4N3N1M9"
+      }
     },
     {
       "id": "piano-radio-surprises",
@@ -849,7 +1370,11 @@
       "country": "GB",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Atmospheric", "Dreamy"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Dreamy"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Besitzt eine der wunderschönsten, glockenspiel-artigen Melodien (oft am Klavier interpretiert).",
@@ -857,9 +1382,18 @@
         "Thom Yorkes fragiler Gesang prägt diesen Indie-Klassiker.",
         "Refrain: 'No alarms and no surprises! Please!'"
       ],
-      "lyrics": { "real": ["A heart that's full up like a landfill, a job that slowly kills you", "Bruises that won't heal", "No alarms and no surprises, please"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "A heart that's full up like a landfill, a job that slowly kills you",
+          "Bruises that won't heal",
+          "No alarms and no surprises, please"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "u5CVsLyAY4E" }
+      "links": {
+        "youtube": "u5CVsLyAY4E"
+      }
     },
     {
       "id": "piano-keane-somewhere",
@@ -869,7 +1403,11 @@
       "country": "GB",
       "genre": "Piano Rock",
       "difficulty": "easy",
-      "mood": ["Nostalgic", "Epic", "Positive"],
+      "mood": [
+        "Nostalgic",
+        "Epic",
+        "Positive"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Besticht durch das kraftvolle, hämmernde Klavier und den monumentalen Refrain.",
@@ -878,9 +1416,18 @@
         "Ein Inbegriff für britischen Piano-Rock.",
         "Refrain: 'And if you have a minute, why don't we go! Talk about it somewhere only we know!'"
       ],
-      "lyrics": { "real": ["I walked across an empty land, I knew the pathway like the back of my hand", "Oh simple thing where have you gone?", "Talk about it somewhere only we know"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "I walked across an empty land, I knew the pathway like the back of my hand",
+          "Oh simple thing where have you gone?",
+          "Talk about it somewhere only we know"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-calling-wherever",
@@ -890,7 +1437,11 @@
       "country": "US",
       "genre": "Alt-Rock / Ballade",
       "difficulty": "easy",
-      "mood": ["Romantic", "Energy", "Powerful"],
+      "mood": [
+        "Romantic",
+        "Energy",
+        "Powerful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für die tiefen-Stimmen-Balladen der frühen 2000er.",
@@ -899,9 +1450,18 @@
         "Alex Bands markante Stimme machte den Song zum Kulthit.",
         "Refrain: 'If I could then I would! I'll go wherever you will go!'"
       ],
-      "lyrics": { "real": ["So lately, been wondering who will be there to take my place", "If I could, then I would, I'll go wherever you will go", "Way up high or down low, I'll go wherever you will go"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "So lately, been wondering who will be there to take my place",
+          "If I could, then I would, I'll go wherever you will go",
+          "Way up high or down low, I'll go wherever you will go"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-lifehouse-youandme",
@@ -911,7 +1471,11 @@
       "country": "US",
       "genre": "Alt-Rock / Soft Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Soft", "Classic"],
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Sehr beliebter Hochzeit-Song in den USA.",
@@ -920,9 +1484,18 @@
         "Ein Inbegriff für den romantischen US-Alternative-Sound.",
         "Refrain: 'It's you and me, and all of the people!'"
       ],
-      "lyrics": { "real": ["What day is it? And in what month? This clock never seemed so alive", "It's you and me, and all of the people with nothing to do", "Nothing to lose"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "What day is it? And in what month? This clock never seemed so alive",
+          "It's you and me, and all of the people with nothing to do",
+          "Nothing to lose"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ac3HkriqdGQ"
+      }
     },
     {
       "id": "piano-hoobastank-reason",
@@ -932,7 +1505,11 @@
       "country": "US",
       "genre": "Alt-Rock / Ballade",
       "difficulty": "easy",
-      "mood": ["Honest", "Positive", "Energy"],
+      "mood": [
+        "Honest",
+        "Positive",
+        "Energy"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Wurde zu einem der meistgespielten Radio-Hits der 2000er Jahre.",
@@ -940,9 +1517,18 @@
         "Besticht durch den klaren Refrain und die ehrliche Entschuldigung.",
         "Refrain: 'I've found a reason for me! To change who I used to be!'"
       ],
-      "lyrics": { "real": ["I'm not a perfect person, there's many things I wish I didn't do", "I've found a reason for me, to change who I used to be", "And the reason is you"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm not a perfect person, there's many things I wish I didn't do",
+          "I've found a reason for me, to change who I used to be",
+          "And the reason is you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "piano-3doors-here",
@@ -952,7 +1538,11 @@
       "country": "US",
       "genre": "Alt-Rock / Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Atmospheric", "Energy"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Energy"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für Sehnsucht auf Tournee oder bei Fernbeziehungen.",
@@ -961,9 +1551,18 @@
         "Ein absoluter Fan-Favorit.",
         "Refrain: 'I'm here without you, baby! But you're still on my lonely mind!'"
       ],
-      "lyrics": { "real": ["A hundred days have made me older since the last time that I saw your pretty face", "I'm here without you baby, but you're still on my lonely mind", "I think about you baby and I dream about you all the time"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "A hundred days have made me older since the last time that I saw your pretty face",
+          "I'm here without you baby, but you're still on my lonely mind",
+          "I think about you baby and I dream about you all the time"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV30oyR8" }
+      "links": {
+        "youtube": "kPBzTxZQG5Q"
+      }
     },
     {
       "id": "piano-matchbox-unwell",
@@ -973,7 +1572,11 @@
       "country": "US",
       "genre": "Alt-Rock / Pop influence",
       "difficulty": "easy",
-      "mood": ["Honest", "Energy", "Thoughtful"],
+      "mood": [
+        "Honest",
+        "Energy",
+        "Thoughtful"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Thematisiert psychische Labilität und das Gefühl, nicht ganz bei sich zu sein.",
@@ -981,9 +1584,18 @@
         "Ein kluger Song über Selbstwahrnehmung und Akzeptanz.",
         "Refrain: 'I'm not crazy, I'm just a little unwell!'"
       ],
-      "lyrics": { "real": ["All day staring at the ceiling, making friends with shadows on my wall", "I'm not crazy, I'm just a little unwell", "I know, right now you can't tell"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "All day staring at the ceiling, making friends with shadows on my wall",
+          "I'm not crazy, I'm just a little unwell",
+          "I know, right now you can't tell"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "piano-greenday-september",
@@ -993,7 +1605,11 @@
       "country": "US",
       "genre": "Alt-Rock / Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Classic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Billie Joe Armstrong schrieb den Song über den frühen Tod seines Vaters.",
@@ -1002,9 +1618,18 @@
         "Ein Inbegriff für den emotionalen Kern der Punk-Rock-Band.",
         "Refrain: 'Wake me up! When September ends!'"
       ],
-      "lyrics": { "real": ["Summer has come and passed, the innocent can never last", "Wake me up when September ends", "Like my fathers come to pass, seven years has gone so fast"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Summer has come and passed, the innocent can never last",
+          "Wake me up when September ends",
+          "Like my fathers come to pass, seven years has gone so fast"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "piano-simple-perfect",
@@ -1014,7 +1639,11 @@
       "country": "CA",
       "genre": "Pop-Punk / Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Honest", "Energy"],
+      "mood": [
+        "Sad",
+        "Honest",
+        "Energy"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Inbegriff für jugendliche Protest-Balladen gegen elterliche Erwartungen.",
@@ -1023,9 +1652,18 @@
         "Wurde zu einer Hymne der Emo-Ära.",
         "Refrain: 'I'm sorry I can't be perfect!'"
       ],
-      "lyrics": { "real": ["Hey dad, look at me, think back and talk to me", "And now I try hard to make it, I just want to make you proud", "I'm sorry I can't be perfect"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Hey dad, look at me, think back and talk to me",
+          "And now I try hard to make it, I just want to make you proud",
+          "I'm sorry I can't be perfect"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "RUi54JTgL5s"
+      }
     },
     {
       "id": "piano-mcr-cancer",
@@ -1035,7 +1673,11 @@
       "country": "US",
       "genre": "Gothic Rock / Piano Ballade",
       "difficulty": "medium",
-      "mood": ["Sad", "Dark", "Honest"],
+      "mood": [
+        "Sad",
+        "Dark",
+        "Honest"
+      ],
       "pack": "Piano & Power Ballads",
       "hints": [
         "Zutiefst schmerzhafter Song aus der Sicht eines Krebspatienten.",
@@ -1044,9 +1686,18 @@
         "Ein Kernstück des 'Black Parade' Albums.",
         "Refrain: 'The hardest part of this! Is leaving you!'"
       ],
-      "lyrics": { "real": ["Turn away, if you could get me a drink of water 'cause my lips are chapped and faded", "Call my aunt Marie, help her gather all my things", "The hardest part of this, is leaving you"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Turn away, if you could get me a drink of water 'cause my lips are chapped and faded",
+          "Call my aunt Marie, help her gather all my things",
+          "The hardest part of this, is leaving you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     }
   ]
 }

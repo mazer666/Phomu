@@ -14,7 +14,11 @@
       "country": "GB",
       "genre": "Synth-Pop / Indie Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Nostalgic", "Modern"],
+      "mood": [
+        "Happy",
+        "Nostalgic",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Dominierte das Jahr 2022 und wurde zum meistgestreamten Song des Jahres.",
@@ -23,9 +27,18 @@
         "Das Musikvideo auf der Drehscheibe wurde zur Ikone.",
         "Refrain: 'In this world, it's just us! You know it's not the same as it was!'"
       ],
-      "lyrics": { "real": ["In this world, it's just us, you know it's not the same as it was", "In this world, it's just us, you know it's not the same as it was", "As it was, as it was"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "In this world, it's just us, you know it's not the same as it was",
+          "In this world, it's just us, you know it's not the same as it was",
+          "As it was, as it was"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "H5v3kku4y6Q" }
+      "links": {
+        "youtube": "H5v3kku4y6Q"
+      }
     },
     {
       "id": "finale-miley-flowers",
@@ -35,7 +48,11 @@
       "country": "US",
       "genre": "Pop / Disco-Funk influence",
       "difficulty": "easy",
-      "mood": ["Confident", "Positive", "Modern"],
+      "mood": [
+        "Confident",
+        "Positive",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für die Hymne der Selbstliebe und Unabhängigkeit der 2020er.",
@@ -44,9 +61,18 @@
         "Wurde zu einem der schnellsten Songs, der 1 Milliarde Streams erreichte.",
         "Refrain: 'I can buy myself flowers! Write my name in the sand!'"
       ],
-      "lyrics": { "real": ["I can buy myself flowers, write my name in the sand", "Talk to myself for hours, say things you don't understand", "I can take myself dancing, and I can hold my own hand"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "I can buy myself flowers, write my name in the sand",
+          "Talk to myself for hours, say things you don't understand",
+          "I can take myself dancing, and I can hold my own hand"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "G7KNmW9a75Y" }
+      "links": {
+        "youtube": "G7KNmW9a75Y"
+      }
     },
     {
       "id": "finale-taylor-antihero",
@@ -56,7 +82,11 @@
       "country": "US",
       "genre": "Synth-Pop",
       "difficulty": "medium",
-      "mood": ["Thinking", "Sarcastic", "Modern"],
+      "mood": [
+        "Thinking",
+        "Sarcastic",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für Taylors selbstkritische und ehrliche Songwriter-Phase.",
@@ -65,9 +95,18 @@
         "Bekannt für die Zeile: 'It's me, hi, I'm the problem, it's me'.",
         "Refrain: 'I'll stare directly at the sun but never in the mirror!'"
       ],
-      "lyrics": { "real": ["It's me, hi, I'm the problem, it's me", "At tea time, everybody agrees", "I'll stare directly at the sun but never in the mirror"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "It's me, hi, I'm the problem, it's me",
+          "At tea time, everybody agrees",
+          "I'll stare directly at the sun but never in the mirror"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "b1kbLwvqugk"
+      }
     },
     {
       "id": "finale-sza-killbill",
@@ -77,7 +116,11 @@
       "country": "US",
       "genre": "R&B / Pop",
       "difficulty": "easy",
-      "mood": ["Dark", " moody", "Modern"],
+      "mood": [
+        "Dark",
+        " moody",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inspiriert durch die gleichnamige Filmreihe von Quentin Tarantino.",
@@ -85,9 +128,18 @@
         "Besticht durch den entspannten, atmosphärischen R&B-Groove.",
         "Refrain: 'I might kill my ex, not the best idea!'"
       ],
-      "lyrics": { "real": ["I might kill my ex, not the best idea, his new girlfriend's next, how'd I get here?", "I might kill my ex, I still love him though", "Rather be in jail than alone"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I might kill my ex, not the best idea, his new girlfriend's next, how'd I get here?",
+          "I might kill my ex, I still love him though",
+          "Rather be in jail than alone"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-weeknd-blinding",
@@ -97,7 +149,11 @@
       "country": "CA",
       "genre": "Synth-Pop / 80s Revival",
       "difficulty": "easy",
-      "mood": ["Energy", "Nightlife", "Modern"],
+      "mood": [
+        "Energy",
+        "Nightlife",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Einer der erfolgreichsten Songs aller Zeiten (Platz 1 der Billboard All-Time Charts).",
@@ -105,9 +161,18 @@
         "Thematisiert das Verlangen und die nächtliche Fahrt durch die Stadt.",
         "Refrain: 'I said, ooh, I'm blinded by the lights!'"
       ],
-      "lyrics": { "real": ["I said, ooh, I'm blinded by the lights", "No, I can't sleep until I feel your touch", "I said, ooh, I'm drowning in the night"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I said, ooh, I'm blinded by the lights",
+          "No, I can't sleep until I feel your touch",
+          "I said, ooh, I'm drowning in the night"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4NRXx6U8ABQ" }
+      "links": {
+        "youtube": "4NRXx6U8ABQ"
+      }
     },
     {
       "id": "finale-dualipa-levitating",
@@ -117,7 +182,11 @@
       "country": "GB",
       "genre": "Disco-Pop / Future Nostalgia",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Modern"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für das Disco-Revival der frühen 2020er Jahre.",
@@ -125,9 +194,18 @@
         "Thematisiert die euphorische Verliebtheit, die einen 'abheben' lässt.",
         "Refrain: 'You can fly with me tonight! You can fly with me tonight! Baby, let me take you for a ride!'"
       ],
-      "lyrics": { "real": ["If you wanna run away with me, I know a galaxy, and I can take you for a ride", "I feel like we're levitating", "The milky way we're renegading"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "If you wanna run away with me, I know a galaxy, and I can take you for a ride",
+          "I feel like we're levitating",
+          "The milky way we're renegading"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "finale-olivia-drivers",
@@ -137,7 +215,11 @@
       "country": "US",
       "genre": "Pop / Power Ballade",
       "difficulty": "medium",
-      "mood": ["Sad", "Emotional", "Modern"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Durchbruch-Hit für Olivia Rodrigo und eines der größten Musik-Phänomene des Jahres 2021.",
@@ -145,9 +227,18 @@
         "Besticht durch den dramatischen Brückenteil und die ehrlichen Lyrics.",
         "Refrain: 'And I know we weren't perfect but I've never felt this way for no-one!'"
       ],
-      "lyrics": { "real": ["I got my driver's license last week, just like we always talked about", "'Cause you were so excited for me to finally drive up to your house", "But today I drove through the suburbs"], "fake": "Dancing in the shadow of the broken light tonight" },
+      "lyrics": {
+        "real": [
+          "I got my driver's license last week, just like we always talked about",
+          "'Cause you were so excited for me to finally drive up to your house",
+          "But today I drove through the suburbs"
+        ],
+        "fake": "Dancing in the shadow of the broken light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-badbunny-titi",
@@ -157,7 +248,11 @@
       "country": "PR",
       "genre": "Reggaeton / Trap",
       "difficulty": "easy",
-      "mood": ["Energy", "Party", "Modern"],
+      "mood": [
+        "Energy",
+        "Party",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für den weltweiten Triumph des spanischsprachigen Pop.",
@@ -165,9 +260,18 @@
         "Besticht durch den plötzlichen Rhythmuswechsel und die pulsierende Energie.",
         "Bad Bunny war mehrere Jahre in Folge der meistgestreamte Künstler weltweit."
       ],
-      "lyrics": { "real": ["Tití me preguntó, si tengo mucha' novia', mucha' novia'", "Hoy tengo a una, mañana otra, ey, pero no hay boda", "Tití me preguntó"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Tití me preguntó, si tengo mucha' novia', mucha' novia'",
+          "Hoy tengo a una, mañana otra, ey, pero no hay boda",
+          "Tití me preguntó"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Cr8K88UcO0s"
+      }
     },
     {
       "id": "finale-glass-waves",
@@ -177,7 +281,11 @@
       "country": "GB",
       "genre": "Indie Pop / Electronic Pop",
       "difficulty": "easy",
-      "mood": ["Dreamy", "Nostalgic", "Modern"],
+      "mood": [
+        "Dreamy",
+        "Nostalgic",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Hielt den Rekord für den langsamsten Aufstieg an die Spitze der US-Charts (über 50 Wochen).",
@@ -185,9 +293,18 @@
         "Besticht durch den 'geschmolzenen' Synthesizer-Sound und den eingängigen Beat.",
         "Refrain: 'Sometimes all I think about is you! Late nights in the middle of June!'"
       ],
-      "lyrics": { "real": ["Sometimes all I think about is you, late nights in the middle of June", "Heat waves been faking me out, can't make you happier now", "Sometimes all I think about is you"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Sometimes all I think about is you, late nights in the middle of June",
+          "Heat waves been faking me out, can't make you happier now",
+          "Sometimes all I think about is you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "mRD0-GxqHVo" }
+      "links": {
+        "youtube": "mRD0-GxqHVo"
+      }
     },
     {
       "id": "finale-katebush-running",
@@ -197,7 +314,11 @@
       "country": "GB",
       "genre": "Art Pop / 80s Icon",
       "difficulty": "medium",
-      "mood": ["Atmospheric", "Powerful", "Classic"],
+      "mood": [
+        "Atmospheric",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erlebte 2022 durch die Serie 'Stranger Things' ein beispielloses globales Comeback.",
@@ -206,9 +327,18 @@
         "Ein Inbegriff für den intelligenten Pop der 80er.",
         "Refrain: 'And if I only could! I'd make a deal with God!'"
       ],
-      "lyrics": { "real": ["It doesn't hurt me, do you want to feel how it feels?", "Do you want to know that it doesn't hurt me?", "And if I only could, I'd make a deal with God"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "It doesn't hurt me, do you want to feel how it feels?",
+          "Do you want to know that it doesn't hurt me?",
+          "And if I only could, I'd make a deal with God"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "wp43OdtAAkM"
+      }
     },
     {
       "id": "finale-fleetwood-dreams",
@@ -218,7 +348,11 @@
       "country": "US/GB",
       "genre": "Soft Rock / Classic",
       "difficulty": "easy",
-      "mood": ["Smooth", "Dreamy", "Classic"],
+      "mood": [
+        "Smooth",
+        "Dreamy",
+        "Classic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erlebte 2020 durch ein virales TikTok-Video (Skateboard und Cranberry-Saft) ein riesiges Revival.",
@@ -227,9 +361,18 @@
         "Besticht durch die entspannte Atmosphäre und den perfekten Rhythmus.",
         "Refrain: 'Thunder only happens when it's raining!'"
       ],
-      "lyrics": { "real": ["Now here you go again, you say you want your freedom", "Well who am I to keep you down?", "Thunder only happens when it's raining"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Now here you go again, you say you want your freedom",
+          "Well who am I to keep you down?",
+          "Thunder only happens when it's raining"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-elton-dua-cold",
@@ -239,7 +382,11 @@
       "country": "GB",
       "genre": "Disco-Pop / Remix",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Mashup aus mehreren Elton John Klassikern (Rocket Man, Sacrifice, Kiss the Bride).",
@@ -248,9 +395,18 @@
         "Bescherte Elton John seinen ersten Nummer-1-Hit seit Jahrzehnten.",
         "Refrain: 'And I think it's gonna be a long, long time!'"
       ],
-      "lyrics": { "real": ["It's a human sign when things go wrong, when the scent of her lingers and temptation's strong", "And I think it's gonna be a long, long time", "Cold cold heart, hardened by you"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "It's a human sign when things go wrong, when the scent of her lingers and temptation's strong",
+          "And I think it's gonna be a long, long time",
+          "Cold cold heart, hardened by you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "finale-rema-calm",
@@ -260,7 +416,11 @@
       "country": "NG/US",
       "genre": "Afrobeats / Pop",
       "difficulty": "easy",
-      "mood": ["Smooth", "Happy", "Positive"],
+      "mood": [
+        "Smooth",
+        "Happy",
+        "Positive"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für den weltweiten Erfolg des 'Afrobeats' Genres.",
@@ -269,9 +429,18 @@
         "Wurde zu einem der meistgespielten Songs in Clubs und Radios weltweit.",
         "Refrain: 'Baby calm down! Calm down!'"
       ],
-      "lyrics": { "real": ["Another banger!", "Baby, calm down, calm down", "Girl, this your body put in my heart, for lockdown, for lockdown, oh, lockdown"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Another banger!",
+          "Baby, calm down, calm down",
+          "Girl, this your body put in my heart, for lockdown, for lockdown, oh, lockdown"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-sam-kim-unholy",
@@ -281,7 +450,11 @@
       "country": "GB/DE",
       "genre": "Industrial Pop / Dance",
       "difficulty": "medium",
-      "mood": ["Dark", "Powerful", "Modern"],
+      "mood": [
+        "Dark",
+        "Powerful",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erster Nummer-1-Hit in den USA für eine nicht-binäre Person und eine Trans-Frau.",
@@ -289,9 +462,18 @@
         "Thematisiert (provozierend) geheime außereheliche Affären.",
         "Refrain: 'Mummy don't know Daddy's getting hot! At the body shop!'"
       ],
-      "lyrics": { "real": ["Mummy don't know daddy's getting hot, at the body shop, doing something unholy", "He's lucky, lucky girl, she got married to a boy like you", "Unholy!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Mummy don't know daddy's getting hot, at the body shop, doing something unholy",
+          "He's lucky, lucky girl, she got married to a boy like you",
+          "Unholy!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "finale-doja-sayso",
@@ -301,7 +483,11 @@
       "country": "US",
       "genre": "Disco-Pop / Rap",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Cool"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Cool"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Wurde durch eine TikTok-Tanz-Challenge zum Megahit.",
@@ -309,9 +495,18 @@
         "Inbegriff für den Sound der frühen 2020er Jahre.",
         "Refrain: 'Day to night to morning, keep with me in the moment!'"
       ],
-      "lyrics": { "real": ["Day to night to morning, keep with me in the moment", "I'd let you had I known it, why don't you say so?", "Didn't even notice, no punches left to roll with"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Day to night to morning, keep with me in the moment",
+          "I'd let you had I known it, why don't you say so?",
+          "Didn't even notice, no punches left to roll with"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-billie-happier",
@@ -321,7 +516,11 @@
       "country": "US",
       "genre": "Alternative Pop / Jazz Influence / Rock Finale",
       "difficulty": "medium",
-      "mood": ["Sad", "Powerful", "Modern"],
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Besticht durch den extremen Kontrast zwischen leisem Ukulelen-Beginn und lautem Rock-Finale.",
@@ -329,9 +528,18 @@
         "Inbegriff für Billies musikalische Weiterentwicklung.",
         "Refrain: 'When I'm away from you, I'm happier than ever!'"
       ],
-      "lyrics": { "real": ["When I'm away from you, I'm happier than ever", "I wish I could explain it better", "I wish it wasn't true"], "fake": "Dancing in the shadow of the broken light tonight" },
+      "lyrics": {
+        "real": [
+          "When I'm away from you, I'm happier than ever",
+          "I wish I could explain it better",
+          "I wish it wasn't true"
+        ],
+        "fake": "Dancing in the shadow of the broken light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "5GJWxDKyk3A" }
+      "links": {
+        "youtube": "5GJWxDKyk3A"
+      }
     },
     {
       "id": "finale-lilnas-montero",
@@ -341,7 +549,11 @@
       "country": "US",
       "genre": "Pop / Hip Hop Influence",
       "difficulty": "easy",
-      "mood": ["Provocative", "Energy", "Modern"],
+      "mood": [
+        "Provocative",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Sorgte durch sein Musikvideo (Abstieg in die Unterwelt) weltweit für Kontroversen.",
@@ -349,9 +561,18 @@
         "Besticht durch das markante Flamenco-Gitarren-Motiv und den treibenden Beat.",
         "Refrain: 'Call me by your name! Tell me you love me in private!'"
       ],
-      "lyrics": { "real": ["I'm not phased, only here to sin", "Call me by your name, tell me you love me in private", "Call me by your name, I don't care if you're lying"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I'm not phased, only here to sin",
+          "Call me by your name, tell me you love me in private",
+          "Call me by your name, I don't care if you're lying"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6swm" }
+      "links": {
+        "youtube": "6swm"
+      }
     },
     {
       "id": "finale-silksonic-leave",
@@ -361,7 +582,11 @@
       "country": "US",
       "genre": "Soul / R&B / Retro",
       "difficulty": "medium",
-      "mood": ["Smooth", "Romantic", "Classic"],
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Perfekte Hommage an den Philly Soul der 70er Jahre.",
@@ -370,9 +595,18 @@
         "Gewann mehrere Grammys, inklusive Song des Jahres.",
         "Refrain: 'I'm lascia' the door open! (I'm lascia' the door open)'"
       ],
-      "lyrics": { "real": ["I'm a-leaving the door open, I'm a-leaving the door open", "I'm a-leaving the door open, girl, hoping that you feel the way I feel", "And you want me like I want you tonight"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm a-leaving the door open, I'm a-leaving the door open",
+          "I'm a-leaving the door open, girl, hoping that you feel the way I feel",
+          "And you want me like I want you tonight"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "adLGHcj_nnU" }
+      "links": {
+        "youtube": "adLGHcj_nnU"
+      }
     },
     {
       "id": "finale-lizzo-time",
@@ -382,7 +616,11 @@
       "country": "US",
       "genre": "Disco-Pop / Funk",
       "difficulty": "easy",
-      "mood": ["Happy", "Confident", "Modern"],
+      "mood": [
+        "Happy",
+        "Confident",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für Optimismus und das Überwinden schwerer Zeiten.",
@@ -390,9 +628,18 @@
         "Wurde zu einer der wichtigsten Gute-Laune-Hymnen nach der Pandemie.",
         "Refrain: 'It's about damn time!'"
       ],
-      "lyrics": { "real": ["In a minute, I'ma need a sentimental man or woman to pump me up", "Feeling fussy, walkin' in my Balenci-ussies", "It's about damn time!"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "In a minute, I'ma need a sentimental man or woman to pump me up",
+          "Feeling fussy, walkin' in my Balenci-ussies",
+          "It's about damn time!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "IXXxciRUMzE"
+      }
     },
     {
       "id": "finale-ed-shivers",
@@ -402,7 +649,11 @@
       "country": "GB",
       "genre": "Pop / Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Modern"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für Eds Rückkehr zum rasanten Pop-Sound nach 'Bad Habits'.",
@@ -410,9 +661,18 @@
         "Thematisiert die körperliche Reaktion bei der Anwesenheit der geliebten Person.",
         "Refrain: 'Ooh, I love it when you do it like that!'"
       ],
-      "lyrics": { "real": ["I took a arrow to the heart, I never kissed a mouth that tastes like yours", "Strawberries and somethin' more", "Ooh, I love it when you do it like that"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "I took a arrow to the heart, I never kissed a mouth that tastes like yours",
+          "Strawberries and somethin' more",
+          "Ooh, I love it when you do it like that"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "IlV7Rhv" }
+      "links": {
+        "youtube": "IlV7Rhv"
+      }
     },
     {
       "id": "finale-adele-easy",
@@ -422,7 +682,11 @@
       "country": "GB",
       "genre": "Pop / Soul Ballade",
       "difficulty": "medium",
-      "mood": ["Sad", "Emotional", "Modern"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Adeles Rückkehr nach mehrjähriger Pause und Auftakt zum Album '30'.",
@@ -430,9 +694,18 @@
         "Thematisiert die Bitte um Verständnis für die eigene Vergangenheit und Fehler.",
         "Refrain: 'Go easy on me, baby! I was still a child!'"
       ],
-      "lyrics": { "real": ["There ain't no gold in this river that I've been washin' my hands in forever", "Go easy on me, baby, I was still a child", "Didn't get the chance to feel the world around me"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "There ain't no gold in this river that I've been washin' my hands in forever",
+          "Go easy on me, baby, I was still a child",
+          "Didn't get the chance to feel the world around me"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "U3ASuAgKnpD" }
+      "links": {
+        "youtube": "U3ASuAgKnpD"
+      }
     },
     {
       "id": "finale-justin-peaches",
@@ -442,7 +715,11 @@
       "country": "CA/US",
       "genre": "R&B / Pop",
       "difficulty": "easy",
-      "mood": ["Smooth", "Happy", "Relaxed"],
+      "mood": [
+        "Smooth",
+        "Happy",
+        "Relaxed"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für den entspannten, sommerlichen R&B-Pop der frühen 2020er.",
@@ -450,9 +727,18 @@
         "Thematisiert das Reisen und die Liebe (von Georgia bis Kalifornien).",
         "Refrain: 'I got my peaches out in Georgia! (Ooh, yeah, shit)!'"
       ],
-      "lyrics": { "real": ["I got my peaches out in Georgia (oh, yeah, shit)", "I get my weed from California (that's that shit)", "I took my chick up to the North, yeah"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I got my peaches out in Georgia (oh, yeah, shit)",
+          "I get my weed from California (that's that shit)",
+          "I took my chick up to the North, yeah"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-gayle-abcdefu",
@@ -462,7 +748,11 @@
       "country": "US",
       "genre": "Pop-Rock / Alternative",
       "difficulty": "easy",
-      "mood": ["Angry", "Energy", "Funny"],
+      "mood": [
+        "Angry",
+        "Energy",
+        "Funny"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Wurde zu einer weltweiten Trennungshymne auf TikTok.",
@@ -470,9 +760,18 @@
         "Thematisiert die Abrechnung mit dem Ex-Partner und seinem gesamten Umfeld.",
         "Refrain: 'A-B-C-D-E, F-U! And your mom and your sister and your job!'"
       ],
-      "lyrics": { "real": ["A-B-C-D-E, F-U and your mom and your sister and your job", "And your broke-ass car and the shit you call art", "Fuck you and your friends that I'll never see again"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "A-B-C-D-E, F-U and your mom and your sister and your job",
+          "And your broke-ass car and the shit you call art",
+          "Fuck you and your friends that I'll never see again"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "finale-maneskin-beggin",
@@ -482,7 +781,11 @@
       "country": "IT",
       "genre": "Rock / Cover",
       "difficulty": "medium",
-      "mood": ["Energy", "Aggressive", "Cool"],
+      "mood": [
+        "Energy",
+        "Aggressive",
+        "Cool"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Coverversion eines 60er-Jahre Klassikers (Four Seasons), die 2021 weltberühmt wurde.",
@@ -490,9 +793,18 @@
         "Måneskin gewannen den Eurovision Song Contest und brachten Rock zurück in die Charts.",
         "Refrain: 'I'm beggin', beggin' you! Put your loving hand out, baby!'"
       ],
-      "lyrics": { "real": ["I am beggin', beggin' you, so put your loving hand out, baby", "I'm beggin', beggin' you, so put your loving hand out, darling", "Riding high, when I was king"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "I am beggin', beggin' you, so put your loving hand out, baby",
+          "I'm beggin', beggin' you, so put your loving hand out, darling",
+          "Riding high, when I was king"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6sw" }
+      "links": {
+        "youtube": "6sw"
+      }
     },
     {
       "id": "finale-benson-beautiful",
@@ -502,7 +814,11 @@
       "country": "US",
       "genre": "Indie Pop / Folk Rock",
       "difficulty": "medium",
-      "mood": ["Emotional", "Powerful", "Modern"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Der erste große globale Megahit des Jahres 2024.",
@@ -510,9 +826,18 @@
         "Thematisiert die Angst, all die schönen Dinge im Leben wieder zu verlieren.",
         "Refrain: 'Please stay! I want you, I need you, oh God!'"
       ],
-      "lyrics": { "real": ["For a while there it was rough, but lately I've been doing better", "But I've found a girl, my help from above", "Please stay, I want you, I need you, oh God, don't take these beautiful things that I've got"], "fake": "Dancing in the stars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "For a while there it was rough, but lately I've been doing better",
+          "But I've found a girl, my help from above",
+          "Please stay, I want you, I need you, oh God, don't take these beautiful things that I've got"
+        ],
+        "fake": "Dancing in the stars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-teddy-lose",
@@ -522,7 +847,11 @@
       "country": "US",
       "genre": "Soul / R&B / Pop",
       "difficulty": "medium",
-      "mood": ["Emotional", "Powerful", "Modern"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für das Soul-Revival der Jahre 2023/2024.",
@@ -531,9 +860,18 @@
         "Wurde zu einem der größten Überraschungshits weltweit.",
         "Refrain: 'I lose control, when you're not next to me!'"
       ],
-      "lyrics": { "real": ["I lose control, when you're not next to me", "When you're not next to me, I'm losing my mind", "You're all I'm thinking of"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "I lose control, when you're not next to me",
+          "When you're not next to me, I'm losing my mind",
+          "You're all I'm thinking of"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Qh8QwVYOSVU"
+      }
     },
     {
       "id": "finale-noah-stick",
@@ -543,7 +881,11 @@
       "country": "US",
       "genre": "Folk-Pop / Indie Folk",
       "difficulty": "easy",
-      "mood": ["Moody", "Nostalgic", "Modern"],
+      "mood": [
+        "Moody",
+        "Nostalgic",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Besticht durch die akustische Gitarre und Noah Kahans herzzerreißendes Songwriting.",
@@ -552,9 +894,18 @@
         "Wurde zum Globalhit durch seine ehrliche, bodenständige Art.",
         "Refrain: 'And I'll dream each night of some version of you!'"
       ],
-      "lyrics": { "real": ["And I'll dream each night of some version of you", "That I might not have, but I did not lose", "And I'm stuck with your ghost in a towns that I love"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "And I'll dream each night of some version of you",
+          "That I might not have, but I did not lose",
+          "And I'm stuck with your ghost in a towns that I love"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-hozier-sweet",
@@ -564,7 +915,11 @@
       "country": "IE",
       "genre": "Indie Rock / Soul",
       "difficulty": "easy",
-      "mood": ["Cool", "Energy", "Modern"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Bescherte Hozier 10 Jahre nach 'Take Me To Church' erneut einen Nummer-1-Hit.",
@@ -572,9 +927,18 @@
         "Thematisiert (mit einem Augenzwinkern) unterschiedliche Lebensstile: Die gesunde Routine gegen den nächtlichen Exzess.",
         "Refrain: 'I think I'll take my whiskey neat! My coffee black and my bed at three!'"
       ],
-      "lyrics": { "real": ["I think I'll take my whiskey neat, my coffee black and my bed at three", "You're too sweet for me", "I think I'll take my whiskey neat"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I think I'll take my whiskey neat, my coffee black and my bed at three",
+          "You're too sweet for me",
+          "I think I'll take my whiskey neat"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "NTpbbQUBbuo"
+      }
     },
     {
       "id": "finale-sabrina-espresso",
@@ -584,7 +948,11 @@
       "country": "US",
       "genre": "Disco-Pop / Funk",
       "difficulty": "easy",
-      "mood": ["Happy", "Confident", "Modern"],
+      "mood": [
+        "Happy",
+        "Confident",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für das sommerliche Pop-Revival von 2024.",
@@ -593,9 +961,18 @@
         "Wurde über Nacht zum globalen Ohrwurm.",
         "Refrain: 'That's that me, espresso!'"
       ],
-      "lyrics": { "real": ["That's that me, espresso!", "Now he's thinking 'bout me every night, oh", "Is it that sweet? I guess so!"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "That's that me, espresso!",
+          "Now he's thinking 'bout me every night, oh",
+          "Is it that sweet? I guess so!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1y6smkh6c-0" }
+      "links": {
+        "youtube": "1y6smkh6c-0"
+      }
     },
     {
       "id": "finale-billie-barbie",
@@ -605,7 +982,11 @@
       "country": "US",
       "genre": "Sad Pop / Movie Theme",
       "difficulty": "medium",
-      "mood": ["Sad", "Thinking", "Emotional"],
+      "mood": [
+        "Sad",
+        "Thinking",
+        "Emotional"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Sorgte im Barbie-Film für den emotionalen Höhepunkt.",
@@ -614,9 +995,18 @@
         "Gewann den Oscar für den besten Filmsong.",
         "Refrain: 'I used to float, now I just fall down! I used to know, but I'm not sure now!'"
       ],
-      "lyrics": { "real": ["I used to float, now I just fall down", "I used to know, but I'm not sure now", "What was I made for?"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I used to float, now I just fall down",
+          "I used to know, but I'm not sure now",
+          "What was I made for?"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-ryan-ken",
@@ -626,7 +1016,11 @@
       "country": "CA",
       "genre": "Glam Rock / Movie Show",
       "difficulty": "easy",
-      "mood": ["Heroic", "Funny", "Epic"],
+      "mood": [
+        "Heroic",
+        "Funny",
+        "Epic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Der heimliche Star-Song des Barbie-Films.",
@@ -635,9 +1029,18 @@
         "Slash von Guns N' Roses spielte die Gitarre auf dem Track.",
         "Refrain: 'I'm just Ken! Anywhere else I'd be a ten!'"
       ],
-      "lyrics": { "real": ["I'm just Ken, anywhere else I'd be a ten", "Is it my destiny to live and die a life of blonde fragility?", "I'm just Ken, and I'm enough"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I'm just Ken, anywhere else I'd be a ten",
+          "Is it my destiny to live and die a life of blonde fragility?",
+          "I'm just Ken, and I'm enough"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "finale-dua-barbie",
@@ -647,7 +1050,11 @@
       "country": "GB",
       "genre": "Disco-Pop / Movie Theme",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Modern"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für das schillernde Disco-Gefühl des Barbie-Films.",
@@ -655,9 +1062,18 @@
         "Thematisiert das Weitertanzen, auch wenn das Herz brennt.",
         "Refrain: 'Watch me dance, dance the night away! My heart could be burning but you won't see it on my face!'"
       ],
-      "lyrics": { "real": ["Watch me dance, dance the night away, my heart could be burning but you won't see it on my face", "Watch me dance, dance the night away", "I'll still keep the party running"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Watch me dance, dance the night away, my heart could be burning but you won't see it on my face",
+          "Watch me dance, dance the night away",
+          "I'll still keep the party running"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-tate-greedy",
@@ -667,7 +1083,11 @@
       "country": "CA",
       "genre": "Pop / Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Confident", "Energy", "Modern"],
+      "mood": [
+        "Confident",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für den energetischen 'Main Pop Girl' Sound von 2023.",
@@ -675,9 +1095,18 @@
         "Wurde weltweit durch Tanz-Videos auf Social Media populär.",
         "Refrain: 'I would want myself too! I'm greedy!'"
       ],
-      "lyrics": { "real": ["I would want myself too, I'm greedy", "I ain't talking money, I'm just physically obsessed with you", "Look around, girl, you know I'm greedy"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "I would want myself too, I'm greedy",
+          "I ain't talking money, I'm just physically obsessed with you",
+          "Look around, girl, you know I'm greedy"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "To4SWGZkEPk"
+      }
     },
     {
       "id": "finale-jack-lovin",
@@ -687,16 +1116,29 @@
       "country": "US",
       "genre": "Hip Hop / Pop",
       "difficulty": "easy",
-      "mood": ["Cool", "Happy", "Modern"],
+      "mood": [
+        "Cool",
+        "Happy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Samplet einen klassischen R&B-Track (Delbert McClinton) und macht daraus einen modernen Clubhit.",
         "Besticht durch Jack Harlows lockeren Flow und die gute Laune.",
         "Refrain: 'I'm not on you, I'm just lovin' on me!'"
       ],
-      "lyrics": { "real": ["I'm not on you, I'm just lovin' on me", "Whatever you do, I'm just lovin' on me", "Whatcha doin'?"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm not on you, I'm just lovin' on me",
+          "Whatever you do, I'm just lovin' on me",
+          "Whatcha doin'?"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-kenya-strangers",
@@ -706,7 +1148,11 @@
       "country": "GB",
       "genre": "Drum & Bass Pop / Electronic",
       "difficulty": "easy",
-      "mood": ["Moody", "Dreamy", "Electronic"],
+      "mood": [
+        "Moody",
+        "Dreamy",
+        "Electronic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erreichte als einer der wenigen reinen Drum & Bass Tracks die Spitze der Charts.",
@@ -714,9 +1160,18 @@
         "Thematisiert den Zyklus von Kennenlernen und Fremdwerden.",
         "Refrain: 'We'll just be strangers again!'"
       ],
-      "lyrics": { "real": ["And I'm staring at the ceiling, thinking 'bout the way you feel", "We'll just be strangers again", "In the morning when we wake up"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "And I'm staring at the ceiling, thinking 'bout the way you feel",
+          "We'll just be strangers again",
+          "In the morning when we wake up"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "S2TaAcwC_zI"
+      }
     },
     {
       "id": "finale-peggy-nanana",
@@ -726,7 +1181,11 @@
       "country": "KR",
       "genre": "House / Club",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Club"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Club"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Kombiniert 90er-Jahre Eurodance-Vibes mit moderner Produktion.",
@@ -734,9 +1193,18 @@
         "Wurde zu DER Club-Hymne des Jahres 2023.",
         "Refrain: 'It goes like nanana, nanana, nanana!'"
       ],
-      "lyrics": { "real": ["It goes like nanana, nanana, nanana", "I can feel it, can you feel it?", "Nanana!"], "fake": "Dancing in the stars in the middle of the night tonight" },
+      "lyrics": {
+        "real": [
+          "It goes like nanana, nanana, nanana",
+          "I can feel it, can you feel it?",
+          "Nanana!"
+        ],
+        "fake": "Dancing in the stars in the middle of the night tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "finale-calvin-miracle",
@@ -746,7 +1214,11 @@
       "country": "GB",
       "genre": "Trance / Dance",
       "difficulty": "medium",
-      "mood": ["Energy", "Peak", "Nostalgic"],
+      "mood": [
+        "Energy",
+        "Peak",
+        "Nostalgic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für das Trance-Revival der 90er Jahre im Jahr 2023.",
@@ -754,9 +1226,18 @@
         "Thematisiert den Wunsch nach einem Wunder in der Liebe.",
         "Refrain: 'Are you gonna be a miracle? (Miracle)'"
       ],
-      "lyrics": { "real": ["When you feel like you can't go on, and you're tired of being alone", "Are you gonna be a miracle? (Miracle)", "Can you show me a miracle?"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "When you feel like you can't go on, and you're tired of being alone",
+          "Are you gonna be a miracle? (Miracle)",
+          "Can you show me a miracle?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-raye-prada",
@@ -766,7 +1247,11 @@
       "country": "GB",
       "genre": "Dance-Pop / Rap",
       "difficulty": "easy",
-      "mood": ["Energy", "Cool", "Nightlife"],
+      "mood": [
+        "Energy",
+        "Cool",
+        "Nightlife"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Galt als einer der einflussreichsten Club-Tracks des Jahres 2023.",
@@ -774,9 +1259,18 @@
         "Wurde weltweit durch Remixes und soziale Kanäle zum Hit.",
         "Refrain: 'In the Prada in the night!'"
       ],
-      "lyrics": { "real": ["I'm in the Prada, I'm in the night", "I'm in the city, the city of light", "Feeling so pretty, feeling so right"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I'm in the Prada, I'm in the night",
+          "I'm in the city, the city of light",
+          "Feeling so pretty, feeling so right"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "finale-tyla-water",
@@ -786,7 +1280,11 @@
       "country": "ZA",
       "genre": "Amapiano / R&B",
       "difficulty": "easy",
-      "mood": ["Smooth", "Romantic", "Modern"],
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Machte den südafrikanischen 'Amapiano' Sound weltweit populär.",
@@ -794,9 +1292,18 @@
         "Thematisiert (mit viel Eleganz) das Verlangen nach Erfrischung und Leidenschaft.",
         "Refrain: 'Make me sweat, make me hotter! Make me lose my breath, make me water!'"
       ],
-      "lyrics": { "real": ["Make me sweat, make me hotter, make me lose my breath, make me water", "Can you handle the heat?", "Make me water"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Make me sweat, make me hotter, make me lose my breath, make me water",
+          "Can you handle the heat?",
+          "Make me water"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-mitski-love",
@@ -806,7 +1313,11 @@
       "country": "US",
       "genre": "Chamber Pop / Indie",
       "difficulty": "easy",
-      "mood": ["Sad", "Atmospheric", "Spiritual"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Spiritual"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für traurigen, atmosphärischen Indie-Pop der 2020er.",
@@ -815,9 +1326,18 @@
         "Wurde zum Kult-Soundtrack für emotionale Momente online.",
         "Refrain: 'Nothing in the world belongs to me! But my love, mine, all mine!'"
       ],
-      "lyrics": { "real": ["Moon, a hole of light, through the big blue net in the sky", "Nothing in the world belongs to me but my love, mine, all mine", "I love my love, mine, all mine"], "fake": "In the shadow of the mountain looking for the one tonight" },
+      "lyrics": {
+        "real": [
+          "Moon, a hole of light, through the big blue net in the sky",
+          "Nothing in the world belongs to me but my love, mine, all mine",
+          "I love my love, mine, all mine"
+        ],
+        "fake": "In the shadow of the mountain looking for the one tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "vx4kLgnFexo"
+      }
     },
     {
       "id": "finale-arctic-yours",
@@ -827,7 +1347,11 @@
       "country": "GB",
       "genre": "Indie Rock / Classic (resurgence)",
       "difficulty": "easy",
-      "mood": ["Moody", "Romantic", "Cool"],
+      "mood": [
+        "Moody",
+        "Romantic",
+        "Cool"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erlebte 2023 durch Social Media ein beispielloses globales Comeback.",
@@ -835,9 +1359,18 @@
         "Besticht durch den schleppenden Rhythmus und Alex Turners unterkühlten Charme.",
         "Refrain: 'I wanna be your vacuum cleaner! Breathing in your dust!'"
       ],
-      "lyrics": { "real": ["I wanna be your vacuum cleaner, breathing in your dust", "I wanna be your Ford Cortina, I will never rust", "I just wanna be yours"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I wanna be your vacuum cleaner, breathing in your dust",
+          "I wanna be your Ford Cortina, I will never rust",
+          "I just wanna be yours"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-kushner-daylight",
@@ -847,7 +1380,11 @@
       "country": "US",
       "genre": "Dark Folk / Pop",
       "difficulty": "medium",
-      "mood": ["Dark", "Powerful", "Serious"],
+      "mood": [
+        "Dark",
+        "Powerful",
+        "Serious"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Besticht durch den extrem tiefen, fast sakralen Gesang von David Kushner.",
@@ -855,9 +1392,18 @@
         "Ein Inbegriff für 'gothic pop' Vibes von 2023.",
         "Refrain: 'Oh, I love it and I hate it at the same time! You and I drink the poison from the same vine!'"
       ],
-      "lyrics": { "real": ["Oh, I love it and I hate it at the same time", "You and I drink the poison from the same vine", "Oh I love it and I hate it"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Oh, I love it and I hate it at the same time",
+          "You and I drink the poison from the same vine",
+          "Oh I love it and I hate it"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-loreen-tattoo",
@@ -867,7 +1413,11 @@
       "country": "SE",
       "genre": "Electronic Pop / ESC Winner",
       "difficulty": "medium",
-      "mood": ["Epic", "Powerful", "Energy"],
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Energy"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Gewanner den Eurovision Song Contest 2023 und machte Loreen zur zweifachen Siegerin.",
@@ -875,9 +1425,18 @@
         "Thematisiert eine Liebe, die sich wie ein Tattoo in die Seele brennt.",
         "Refrain: 'I don't care about the world! I don't care about them all!'"
       ],
-      "lyrics": { "real": ["I don't care about the world, I don't care about them all", "You're stuck on me like a tattoo", "I don't care about the pain"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I don't care about the world, I don't care about them all",
+          "You're stuck on me like a tattoo",
+          "I don't care about the pain"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "b3vJfR81xO0"
+      }
     },
     {
       "id": "finale-sanchez-found",
@@ -887,7 +1446,11 @@
       "country": "US",
       "genre": "Soul-Pop / Retro",
       "difficulty": "easy",
-      "mood": ["Romantic", "Smooth", "Nostalgic"],
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Nostalgic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Inbegriff für den nostalgischen 50er Jahre Sound in den 2020ern.",
@@ -895,9 +1458,18 @@
         "Thematisiert die Hingabe an die eine wahre Person.",
         "Refrain: 'I would never fall in love again, until I found her!'"
       ],
-      "lyrics": { "real": ["Georgia, wrap me up in all your, I want you in my arms", "I would never fall in love again until I found her", "I said I would never fall in love again until I found her"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Georgia, wrap me up in all your, I want you in my arms",
+          "I would never fall in love again until I found her",
+          "I said I would never fall in love again until I found her"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-jvke-golden",
@@ -907,7 +1479,11 @@
       "country": "US",
       "genre": "Indie Pop / Piano focus",
       "difficulty": "medium",
-      "mood": ["Dreamy", "Beautiful", "Romantic"],
+      "mood": [
+        "Dreamy",
+        "Beautiful",
+        "Romantic"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Besticht durch den rasanten Klavier-Lauf und die cinematische Atmosphäre.",
@@ -915,9 +1491,18 @@
         "Thematisiert den perfekten Moment mit der geliebten Person.",
         "Refrain: 'It's your golden hour! (Ooh-ooh-ooh)!'"
       ],
-      "lyrics": { "real": ["It's your golden hour, what a beautiful sight", "Don't you ever look away", "I see the light in your eyes"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "It's your golden hour, what a beautiful sight",
+          "Don't you ever look away",
+          "I see the light in your eyes"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "PEM0Vs8jf1w"
+      }
     },
     {
       "id": "finale-tom-love",
@@ -927,7 +1512,11 @@
       "country": "GB",
       "genre": "Indie Pop / Piano Ballade",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Powerful"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erlebte 10 Jahre nach Veröffentlichung ein massives weltweites Comeback (insbesondere 2022/2023).",
@@ -935,9 +1524,18 @@
         "Wurde zur Hymne des emotionalen Widerstands in vielen Krisen weltweit.",
         "Refrain: 'And if somebody hurts you, I wanna fight! But my hands been broken one too many times!'"
       ],
-      "lyrics": { "real": ["And if somebody hurts you, I wanna fight, but my hands been broken one too many times", "I wanna take you somewhere so you know I care", "But it's so cold and I don't know where"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "And if somebody hurts you, I wanna fight, but my hands been broken one too many times",
+          "I wanna take you somewhere so you know I care",
+          "But it's so cold and I don't know where"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-eminem-mockingbird",
@@ -947,7 +1545,11 @@
       "country": "US",
       "genre": "Hip Hop / Classic",
       "difficulty": "medium",
-      "mood": ["Sad", "Serious", "Modern resurgence"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Modern resurgence"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Erlebte 2023 ein unglaubliches globales Streaming-Comeback bei der Gen Z.",
@@ -955,9 +1557,18 @@
         "Besticht durch den entspannten Beat und den fast gesungenen Rap.",
         "Refrain: 'Now hush-a-bye baby, don't you cry! Everything's gonna be alright!'"
       ],
-      "lyrics": { "real": ["Now hush little baby, don't you cry, everything's gonna be alright", "Stiffen that upper lip, up little lady, I told ya", "Daddy's here to hold ya through the night"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Now hush little baby, don't you cry, everything's gonna be alright",
+          "Stiffen that upper lip, up little lady, I told ya",
+          "Daddy's here to hold ya through the night"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "yURRmWkbFwM" }
+      "links": {
+        "youtube": "S9bCLPwzSC0"
+      }
     },
     {
       "id": "finale-sia-unstoppable",
@@ -967,7 +1578,11 @@
       "country": "AU",
       "genre": "Pop / Empowerment",
       "difficulty": "easy",
-      "mood": ["Powerful", "Energy", "Positive"],
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Positive"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Wurde 2022 durch Werbespots weltweit erneut zum massiven Chartstürmer.",
@@ -975,9 +1590,18 @@
         "Besticht durch den treibenden Rhythmus und Sias kraftvolle Stimme.",
         "Refrain: 'I'm unstoppable! I'm a Porsche with no brakes!'"
       ],
-      "lyrics": { "real": ["I'm unstoppable, I'm a Porsche with no brakes", "I'm invincible, yeah, I win every single game", "I'm so powerful, I don't need batteries to play"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I'm unstoppable, I'm a Porsche with no brakes",
+          "I'm invincible, yeah, I win every single game",
+          "I'm so powerful, I don't need batteries to play"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-jungkook-seven",
@@ -987,7 +1611,11 @@
       "country": "KR/US",
       "genre": "Pop / UK Garage influence",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Modern"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Dominierte die Charts weltweit im Sommer 2023.",
@@ -995,9 +1623,18 @@
         "Solo-Meilenstein für das BTS-Mitglied.",
         "Refrain: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)!'"
       ],
-      "lyrics": { "real": ["Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)", "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)", "Every night I'll be loving you right"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
+          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
+          "Every night I'll be loving you right"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "finale-taylor-cruel",
@@ -1007,7 +1644,11 @@
       "country": "US",
       "genre": "Synth-Pop / Modern Classic",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Modern resurgence"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Modern resurgence"
+      ],
       "pack": "The Grand Finale: 2020s & Legends",
       "hints": [
         "Einer der seltenen Fälle, in denen ein Song Jahre nach Erscheinen durch Fan-Nachfrage zum offiziellen Nummer-1-Hit wurde (2023).",
@@ -1015,9 +1656,18 @@
         "Thematisiert den Rausch und die Unsicherheit einer Sommer-Romanze.",
         "Refrain: 'I love you, ain't that the worst thing you ever heard!'"
       ],
-      "lyrics": { "real": ["Fever dream high in the quiet of the night, you know that I caught it", "I love you, ain't that the worst thing you ever heard?", "It's a cruel summer with you"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Fever dream high in the quiet of the night, you know that I caught it",
+          "I love you, ain't that the worst thing you ever heard?",
+          "It's a cruel summer with you"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ic8j13we6wA" }
+      "links": {
+        "youtube": "ic8j13piAhQ"
+      }
     }
   ]
 }

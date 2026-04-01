@@ -14,7 +14,11 @@
       "country": "DE",
       "genre": "Classical / Romantic",
       "difficulty": "medium",
-      "mood": ["Powerful", "Dramatic", "Classic"],
+      "mood": [
+        "Powerful",
+        "Dramatic",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Bekannt für das berühmteste Vier-Noten-Motiv der Musikgeschichte ('Da-da-da-duuum').",
@@ -23,9 +27,18 @@
         "Ein Inbegriff für die Wucht der klassischen Symphonie.",
         "Motiv: Kurz-Kurz-Kurz-Lang."
       ],
-      "lyrics": { "real": ["(Instrumental Masterpiece)", "Da-da-da-duuum", "Da-da-da-duuum"], "fake": "Singing in the rain tonight tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Masterpiece)",
+          "Da-da-da-duuum",
+          "Da-da-da-duuum"
+        ],
+        "fake": "Singing in the rain tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6z7" }
+      "links": {
+        "youtube": "6z7"
+      }
     },
     {
       "id": "class-mozart-nacht",
@@ -35,7 +48,11 @@
       "country": "AT",
       "genre": "Classical / Serenade",
       "difficulty": "easy",
-      "mood": ["Happy", "Elegant", "Classic"],
+      "mood": [
+        "Happy",
+        "Elegant",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Eine der bekanntesten Serenaden der Musikgeschichte.",
@@ -44,9 +61,18 @@
         "Ein Inbegriff für den leichten, Wiener Klassik Sound.",
         "Thematisiert (laut Titel) eine abendliche Unterhaltungsmusik."
       ],
-      "lyrics": { "real": ["(Instrumental Serenade)", "Tadi-da-da-da-da-da-da", "Tadi-da-da-da-da-da-da"], "fake": "Dancing stars in the night so bright" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Serenade)",
+          "Tadi-da-da-da-da-da-da",
+          "Tadi-da-da-da-da-da-da"
+        ],
+        "fake": "Dancing stars in the night so bright"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-vivaldi-spring",
@@ -56,7 +82,11 @@
       "country": "IT",
       "genre": "Baroque",
       "difficulty": "easy",
-      "mood": ["Positive", "Lively", "Classic"],
+      "mood": [
+        "Positive",
+        "Lively",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für Programmmusik: Die Geige imitiert Vögel, Bäche und Gewitter.",
@@ -64,9 +94,18 @@
         "Vivaldi verfasste zu jedem Satz ein erklärendes Sonett.",
         "Eines der meistgespielten Werke der Barockmusik."
       ],
-      "lyrics": { "real": ["(Instrumental Baroque)", "Spring has come with joy", "The birds greet it with their song"], "fake": "Flowers bloom in the garden of love tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Baroque)",
+          "Spring has come with joy",
+          "The birds greet it with their song"
+        ],
+        "fake": "Flowers bloom in the garden of love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-bach-toccata",
@@ -76,7 +115,11 @@
       "country": "DE",
       "genre": "Baroque / Organ",
       "difficulty": "hard",
-      "mood": ["Powerful", "Dark", "Epic"],
+      "mood": [
+        "Powerful",
+        "Dark",
+        "Epic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Das wohl berühmteste Orgelwerk der Welt.",
@@ -84,9 +127,18 @@
         "Besticht durch den rasanten Einstieg und die gewaltige Klangfülle der Pfeifenorgel.",
         "Ein Inbegriff für Bachs polyphone Meisterschaft."
       ],
-      "lyrics": { "real": ["(Instrumental Organ)", "Dramatic opening chords", "Cascading organ scales"], "fake": "In the shadow of the cathedral tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Organ)",
+          "Dramatic opening chords",
+          "Cascading organ scales"
+        ],
+        "fake": "In the shadow of the cathedral tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-pachelbel-canon",
@@ -96,7 +148,11 @@
       "country": "DE",
       "genre": "Baroque",
       "difficulty": "easy",
-      "mood": ["Peaceful", "Romantic", "Harmonious"],
+      "mood": [
+        "Peaceful",
+        "Romantic",
+        "Harmonious"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Bekannt für den unendlichen Bass-Loop (8 Töne), der die Grundlage bildet.",
@@ -104,9 +160,18 @@
         "Hunderte moderne Pop-Songs (z.B. 'Go West', 'Basket Case') basieren auf dieser Akkordfolge.",
         "Ein Inbegriff für barocke Harmonie."
       ],
-      "lyrics": { "real": ["(Instrumental Canon)", "D-A-B-F#-G-D-G-A", "Repeated bass progression"], "fake": "Together forever in the light of day" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Canon)",
+          "D-A-B-F#-G-D-G-A",
+          "Repeated bass progression"
+        ],
+        "fake": "Together forever in the light of day"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-tchaikovsky-swan",
@@ -116,7 +181,11 @@
       "country": "RU",
       "genre": "Romantic / Ballet",
       "difficulty": "medium",
-      "mood": ["Moody", "Sad", "Elegant"],
+      "mood": [
+        "Moody",
+        "Sad",
+        "Elegant"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Das berühmteste Ballett-Thema der Welt (Oboe spielt die Schwanenmelodie).",
@@ -124,9 +193,18 @@
         "Besticht durch die sehnsuchtsvolle, fast schwebende Melodie.",
         "Ein Inbegriff für den russischen Spät-Romantik-Sound."
       ],
-      "lyrics": { "real": ["(Instrumental Ballet)", "Haunting oboe melody", "Swans on the lake"], "fake": "Dancing on the water under the moon tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Ballet)",
+          "Haunting oboe melody",
+          "Swans on the lake"
+        ],
+        "fake": "Dancing on the water under the moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "9ScvVInX" }
+      "links": {
+        "youtube": "9ScvVInX"
+      }
     },
     {
       "id": "class-strauss-danube",
@@ -136,7 +214,11 @@
       "country": "AT",
       "genre": "Classical / Waltz",
       "difficulty": "easy",
-      "mood": ["Happy", "Elegant", "Flowing"],
+      "mood": [
+        "Happy",
+        "Elegant",
+        "Flowing"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Die heimliche Hymne Österreichs.",
@@ -144,9 +226,18 @@
         "Wurde durch Stanley Kubricks Film '2001: Odyssee im Weltraum' weltberühmt.",
         "Besingt (ursprünglich mit Text) die Schönheit der Donau."
       ],
-      "lyrics": { "real": ["Donau so blau, so schön und blau", "Durch Tal und Au wogst ruhig du hin", "Dich grüßt unser Blick"], "fake": "Waltzing in the stars above the earth tonight" },
+      "lyrics": {
+        "real": [
+          "Donau so blau, so schön und blau",
+          "Durch Tal und Au wogst ruhig du hin",
+          "Dich grüßt unser Blick"
+        ],
+        "fake": "Waltzing in the stars above the earth tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-bizet-carmen",
@@ -156,7 +247,11 @@
       "country": "FR",
       "genre": "Romantic / Opera",
       "difficulty": "easy",
-      "mood": ["Seductive", "Confident", "Classic"],
+      "mood": [
+        "Seductive",
+        "Confident",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für das verführerische, gefährliche Element der Opern-Heldin Carmen.",
@@ -164,9 +259,18 @@
         "Besticht durch den markanten, schleppenden Rhythmus (Habanera).",
         "Eine der meistzitierten Melodien der Musikgeschichte."
       ],
-      "lyrics": { "real": ["L'amour est un oiseau rebelle que nul ne peut apprivoiser", "Et c'est bien en vain qu'on l'appelle", "S'il lui convient de refuser"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "L'amour est un oiseau rebelle que nul ne peut apprivoiser",
+          "Et c'est bien en vain qu'on l'appelle",
+          "S'il lui convient de refuser"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-rossini-william",
@@ -176,7 +280,11 @@
       "country": "IT",
       "genre": "Classical / Opera Overture",
       "difficulty": "easy",
-      "mood": ["Energy", "Heroic", "Fast"],
+      "mood": [
+        "Energy",
+        "Heroic",
+        "Fast"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für Galopp-Musik (bekannt durch Film-Verfolgungsjagden).",
@@ -184,9 +292,18 @@
         "Das Finale der Ouvertüre ist als 'The Lone Ranger Theme' weltberühmt.",
         "Symbolisiert den Sieg der Schweizer über die Österreicher."
       ],
-      "lyrics": { "real": ["(Instrumental Galopp)", "Ba-da-bam, ba-da-bam, ba-da-bam-bam-bam", "Ba-da-bam, ba-da-bam, ba-da-bam-bam-bam"], "fake": "Riding on the horse through the fields of gold tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Galopp)",
+          "Ba-da-bam, ba-da-bam, ba-da-bam-bam-bam",
+          "Ba-da-bam, ba-da-bam, ba-da-bam-bam-bam"
+        ],
+        "fake": "Riding on the horse through the fields of gold tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-grieg-mountain",
@@ -196,7 +313,11 @@
       "country": "NO",
       "genre": "Romantic / Suite",
       "difficulty": "medium",
-      "mood": ["Tense", "Fast", "Aggressive"],
+      "mood": [
+        "Tense",
+        "Fast",
+        "Aggressive"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch das Crescendo und die ständige Beschleunigung (Accelerando).",
@@ -204,9 +325,18 @@
         "Wurde in unzähligen Filmen und Videospielen als Symbol für wachsende Gefahr verwendet.",
         "Ein Inbegriff für norwegische Nationalromantik."
       ],
-      "lyrics": { "real": ["(Instrumental Suite)", "Tiptoeing through the dark", "Faster and faster away from the trolls"], "fake": "Running through the trees in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Suite)",
+          "Tiptoeing through the dark",
+          "Faster and faster away from the trolls"
+        ],
+        "fake": "Running through the trees in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "zf2aIVKp1OY"
+      }
     },
     {
       "id": "class-orff-fortuna",
@@ -216,7 +346,11 @@
       "country": "DE",
       "genre": "Modern Classical / Cantata",
       "difficulty": "medium",
-      "mood": ["Epic", "Powerful", "Dramatic"],
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Dramatic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für bombastische Chormusik ('Drama-Chor').",
@@ -224,9 +358,18 @@
         "Wurde durch zahllose Werbespots und monumentale Filmsequenzen zum Pop-Kulturgut.",
         "Text basiert auf mittelalterlichen lateinischen Gedichten."
       ],
-      "lyrics": { "real": ["O Fortuna, velut luna statu variabilis", "Semper crescis aut decrescis", "Vita detestabilis nunc obdurat"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "O Fortuna, velut luna statu variabilis",
+          "Semper crescis aut decrescis",
+          "Vita detestabilis nunc obdurat"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-wagner-valkyries",
@@ -236,7 +379,11 @@
       "country": "DE",
       "genre": "Romantic / Opera",
       "difficulty": "medium",
-      "mood": ["Epic", "Heroic", "Aggressive"],
+      "mood": [
+        "Epic",
+        "Heroic",
+        "Aggressive"
+      ],
       "pack": "Classical & Orchebal Masterpieces",
       "hints": [
         "Inbegriff für heroischen, lautstarken Orchester-Bombast.",
@@ -244,9 +391,18 @@
         "Das Motiv wird von den Blechbläsern getragen.",
         "Teil des Opernzyklus 'Der Ring des Nibelungen'."
       ],
-      "lyrics": { "real": ["(Instrumental Opera)", "Dada-da-da-daaa, Dada-da-da-daaa", "Riding through the sky"], "fake": "Flying to the moon in the middle of the night tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Opera)",
+          "Dada-da-da-daaa, Dada-da-da-daaa",
+          "Riding through the sky"
+        ],
+        "fake": "Flying to the moon in the middle of the night tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "xeRwBiu4wfQ"
+      }
     },
     {
       "id": "class-handel-hallelujah",
@@ -256,7 +412,11 @@
       "country": "DE/GB",
       "genre": "Baroque / Oratorio",
       "difficulty": "easy",
-      "mood": ["Happy", "Epic", "Religious"],
+      "mood": [
+        "Happy",
+        "Epic",
+        "Religious"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für österliche und weihnachtliche Festesfreude.",
@@ -264,9 +424,18 @@
         "Es ist Tradition, bei diesem Stück in Konzerten aufzustehen.",
         "Wird oft in Komödien verwendet, wenn etwas Wunderbares passiert."
       ],
-      "lyrics": { "real": ["Hallelujah! Hallelujah! Hallelujah! Hallelujah! Hallelujah!", "For the Lord God Omnipotent reigneth", "Hallelujah! Hallelujah!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Hallelujah! Hallelujah! Hallelujah! Hallelujah! Hallelujah!",
+          "For the Lord God Omnipotent reigneth",
+          "Hallelujah! Hallelujah!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-debussy-lune",
@@ -276,7 +445,11 @@
       "country": "FR",
       "genre": "Impressionism / Piano",
       "difficulty": "medium",
-      "mood": ["Peaceful", "Dreamy", "Atmospheric"],
+      "mood": [
+        "Peaceful",
+        "Dreamy",
+        "Atmospheric"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für musikalischen Impressionismus (Mondschein-Musik).",
@@ -284,9 +457,18 @@
         "Wurde durch 'Oceans Eleven' (Finalszene) erneut zum Kult.",
         "Ein Meilenstein für die Abkehr von starren klassischen Formen."
       ],
-      "lyrics": { "real": ["(Instrumental Piano)", "Soft moonlight over the water", "Gentle piano chords"], "fake": "Watching the moon in the middle of the night tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Soft moonlight over the water",
+          "Gentle piano chords"
+        ],
+        "fake": "Watching the moon in the middle of the night tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-chopin-nocturne",
@@ -296,7 +478,11 @@
       "country": "PL/FR",
       "genre": "Romantic / Piano",
       "difficulty": "medium",
-      "mood": ["Romantic", "Dreamy", "Smooth"],
+      "mood": [
+        "Romantic",
+        "Dreamy",
+        "Smooth"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für romantische Klaviermusik.",
@@ -304,9 +490,18 @@
         "Besticht durch die gesangliche (bel-canto) Melodie der rechten Hand.",
         "Das Standard-Stück für entspannte, nächtliche Atmosphäre."
       ],
-      "lyrics": { "real": ["(Instrumental Piano)", "Singing piano melody", "Melancholy and beauty"], "fake": "Dancing in the shadow of the broken light tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Singing piano melody",
+          "Melancholy and beauty"
+        ],
+        "fake": "Dancing in the shadow of the broken light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-puccini-dorma",
@@ -316,7 +511,11 @@
       "country": "IT",
       "genre": "Romantic / Opera",
       "difficulty": "medium",
-      "mood": ["Epic", "Powerful", "Emotional"],
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Wurde durch Luciano Pavarotti (Fußball-WM 1990) zum Pop-Phenomän.",
@@ -324,9 +523,18 @@
         "Wurde zum Standard für emotionale Gänsehaut-Momente weltweit.",
         "Inbegriff für das Tenor-Gesangsideal."
       ],
-      "lyrics": { "real": ["Nessun dorma! Nessun dorma! Tu pure, o Principessa", "Nella tua fredda stanza guardi le stelle", "Vincerò! Vincerò! Vincerò!"], "fake": "Singing in the morning with the rising sun tonight" },
+      "lyrics": {
+        "real": [
+          "Nessun dorma! Nessun dorma! Tu pure, o Principessa",
+          "Nella tua fredda stanza guardi le stelle",
+          "Vincerò! Vincerò! Vincerò!"
+        ],
+        "fake": "Singing in the morning with the rising sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-verdi-donna",
@@ -336,7 +544,11 @@
       "country": "IT",
       "genre": "Romantic / Opera",
       "difficulty": "easy",
-      "mood": ["Happy", "Lively", "Classic"],
+      "mood": [
+        "Happy",
+        "Lively",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Thematisiert (ironisch) die angebliche Flatterhaftigkeit der Frauen.",
@@ -344,9 +556,18 @@
         "Verdi wusste, dass der Song so hitverdächtig war, dass er die Noten bis zur Generalprobe geheim hielt.",
         "Refrain: 'La donna è mobile, qual piuma al vento!'"
       ],
-      "lyrics": { "real": ["La donna è mobile qual piuma al vento", "Muta d'accento e di pensiero", "Sempre un amabile, leggiadro viso"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "La donna è mobile qual piuma al vento",
+          "Muta d'accento e di pensiero",
+          "Sempre un amabile, leggiadro viso"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-john-wars",
@@ -356,7 +577,11 @@
       "country": "US",
       "genre": "Movie Score / Orchestral",
       "difficulty": "easy",
-      "mood": ["Epic", "Heroic", "Exciting"],
+      "mood": [
+        "Epic",
+        "Heroic",
+        "Exciting"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Das wohl bekannteste Film-Thema der Kinogeschichte.",
@@ -364,9 +589,18 @@
         "Kombiniert klassische Spätromantik mit modernem Blockbuster-Feeling.",
         "Hymne der Skywalker-Saga."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Trompeten-Fanfare", "Galactic Fanfare"], "fake": "In a galaxy far far away tonight tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Trompeten-Fanfare",
+          "Galactic Fanfare"
+        ],
+        "fake": "In a galaxy far far away tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "yH7LkX3L" }
+      "links": {
+        "youtube": "yH7LkX3L"
+      }
     },
     {
       "id": "score-zimmer-pirate",
@@ -376,7 +610,11 @@
       "country": "DE/US",
       "genre": "Movie Score / Orchestral",
       "difficulty": "easy",
-      "mood": ["Energy", "Heroic", "Exciting"],
+      "mood": [
+        "Energy",
+        "Heroic",
+        "Exciting"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Thematisiert den Spirit von Captain Jack Sparrow.",
@@ -384,9 +622,18 @@
         "Wurde zu einer der am häufigsten genutzten Sport- und Motivations-Hymnen.",
         "Inbegriff für modernen symphonischen Action-Score."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Pumping cello rhythm", "Swashbuckling melody"], "fake": "Sailing through the ocean in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Pumping cello rhythm",
+          "Swashbuckling melody"
+        ],
+        "fake": "Sailing through the ocean in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "score-morricone-ugly",
@@ -396,7 +643,11 @@
       "country": "IT",
       "genre": "Movie Score / Western",
       "difficulty": "easy",
-      "mood": ["Cool", "Epic", "Unique"],
+      "mood": [
+        "Cool",
+        "Epic",
+        "Unique"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für den 'Italo-Western' Sound.",
@@ -404,9 +655,18 @@
         "Setzte Maßstäbe durch den Einsatz ungewöhnlicher Instrumente (Ocarina, elektrische Gitarre, Pfiffe).",
         "Symbolisiert den einsamen Revolverhelden."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Wah-wah-wah!", "Whistle and chime"], "fake": "In the middle of the desert with a gun in my hand tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Wah-wah-wah!",
+          "Whistle and chime"
+        ],
+        "fake": "In the middle of the desert with a gun in my hand tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "AkQowzXG5W4"
+      }
     },
     {
       "id": "score-shore-hobbits",
@@ -416,7 +676,11 @@
       "country": "CA",
       "genre": "Movie Score / Celtic influence",
       "difficulty": "easy",
-      "mood": ["Happy", "Smooth", "Nostalgic"],
+      "mood": [
+        "Happy",
+        "Smooth",
+        "Nostalgic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für die Idylle des Auenlands (Shire).",
@@ -424,9 +688,18 @@
         "Symbolisiert Heimat, Frieden und den Beginn eines großen Abenteuers.",
         "Teil eines der meistausgezeichneten Scores aller Zeiten."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Gentle flute melody", "Smell of old Toby and green grass"], "fake": "In the shadow of the mountain looking for the one ring tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Gentle flute melody",
+          "Smell of old Toby and green grass"
+        ],
+        "fake": "In the shadow of the mountain looking for the one ring tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-silvestri-bttf",
@@ -436,7 +709,11 @@
       "country": "US",
       "genre": "Movie Score / Orchestral",
       "difficulty": "easy",
-      "mood": ["Heroic", "Exciting", "Classic"],
+      "mood": [
+        "Heroic",
+        "Exciting",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für das Gefühl von Zeitreise und Abenteuer.",
@@ -444,9 +721,18 @@
         "Wurde zu einem der bekanntesten Themen der 80er Jahre Kino-Ära.",
         "Eng verbunden mit dem DeLorean und Doktor Brown."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Triumphant fanfare", "Time travel energy"], "fake": "Great Scott! We're going back in time tonight tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Triumphant fanfare",
+          "Time travel energy"
+        ],
+        "fake": "Great Scott! We're going back in time tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "score-elfman-batman",
@@ -456,7 +742,11 @@
       "country": "US",
       "genre": "Movie Score / Dark Orchestral",
       "difficulty": "medium",
-      "mood": ["Dark", "Epic", "Serious"],
+      "mood": [
+        "Dark",
+        "Epic",
+        "Serious"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für den dunklen, gotischen Superhelden-Sound.",
@@ -464,9 +754,18 @@
         "Prägte den Sound von Tim Burtons Batman-Filmen und der Zeichentrickserie.",
         "Refrain: 'Dun-dun, dun-dun, dun-dun-dun-dun!'"
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Dark brass anthem", "Vigilante of the night"], "fake": "In the shadow of the city looking for the joker tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Dark brass anthem",
+          "Vigilante of the night"
+        ],
+        "fake": "In the shadow of the city looking for the joker tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-djawadi-got",
@@ -476,7 +775,11 @@
       "country": "DE",
       "genre": "TV Score / Orchestral",
       "difficulty": "easy",
-      "mood": ["Epic", "Moody", "Powerful"],
+      "mood": [
+        "Epic",
+        "Moody",
+        "Powerful"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für den modernen Fantasy-Soundtrack.",
@@ -484,9 +787,18 @@
         "Das visuelle Intro (mechanische Weltkarte) wurde durch diese Musik erst zur Ikone.",
         "Symbolisiert Verrat, Machtkampf und das Kommen des Winters."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Churning cellos", "Main title progression"], "fake": "Winter is coming in the middle of the night tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Churning cellos",
+          "Main title progression"
+        ],
+        "fake": "Winter is coming in the middle of the night tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-einaudi-nuvole",
@@ -496,7 +808,11 @@
       "country": "IT",
       "genre": "Contemporary Classical / Piano",
       "difficulty": "medium",
-      "mood": ["Peaceful", "Sad", "Atmospheric"],
+      "mood": [
+        "Peaceful",
+        "Sad",
+        "Atmospheric"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für den minimalistischen 'Modern Classical' Stil.",
@@ -504,9 +820,18 @@
         "Wurde zu einem der meistgestreamten Klavierstücke der Gegenwart.",
         "Wird oft in Filmen und Dokus für tiefe Nachdenklichkeit genutzt."
       ],
-      "lyrics": { "real": ["(Instrumental Piano)", "Floating like white clouds", "Gentle repetitive melody"], "fake": "Watching the stars in the middle of the night tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Floating like white clouds",
+          "Gentle repetitive melody"
+        ],
+        "fake": "Watching the stars in the middle of the night tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "class-holst-mars",
@@ -516,7 +841,11 @@
       "country": "GB",
       "genre": "Modern Classical / Suite",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Epic", "Tense"],
+      "mood": [
+        "Aggressive",
+        "Epic",
+        "Tense"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für kriegerischen, mechanischen Orchester-Sound.",
@@ -524,9 +853,18 @@
         "Wurde zur massiven Inspiration für spätere Filmkomponisten wie John Williams (Star Wars).",
         "Thematisiert den astrologischen Charakter des Kriegsgottes Mars."
       ],
-      "lyrics": { "real": ["(Instrumental Suite)", "Menacing 5/4 rhythm", "Drums of war"], "fake": "Marching to the darkness under the red sky tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Suite)",
+          "Menacing 5/4 rhythm",
+          "Drums of war"
+        ],
+        "fake": "Marching to the darkness under the red sky tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-ravel-bolero",
@@ -536,7 +874,11 @@
       "country": "FR",
       "genre": "Impressionism / Ballet",
       "difficulty": "medium",
-      "mood": ["Hypnotic", "Powerful", "Lively"],
+      "mood": [
+        "Hypnotic",
+        "Powerful",
+        "Lively"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch die ständige Wiederholung des Hauptthemas bei stetig wachsender Orchestrierung.",
@@ -544,9 +886,18 @@
         "Ein Inbegriff für musikalisches Crescendo.",
         "Wurde ursprünglich für die Tänzerin Ida Rubinstein komponiert."
       ],
-      "lyrics": { "real": ["(Instrumental Ballet)", "Hypnotic snare drum beat", "Slowly building fire"], "fake": "Dancing in the heat of the burning sun tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Ballet)",
+          "Hypnotic snare drum beat",
+          "Slowly building fire"
+        ],
+        "fake": "Dancing in the heat of the burning sun tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-saint-saens-danse",
@@ -556,7 +907,11 @@
       "country": "FR",
       "genre": "Romantic / Symphonic Poem",
       "difficulty": "medium",
-      "mood": ["Dark", "Spooky", "Lively"],
+      "mood": [
+        "Dark",
+        "Spooky",
+        "Lively"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Thematisiert den Totentanz um Mitternacht auf dem Friedhof.",
@@ -564,9 +919,18 @@
         "Inbegriff für klassische Halloween-Musik.",
         "Die Harfe schlägt am Anfang zwölfmal für die Mitternachtsstunde."
       ],
-      "lyrics": { "real": ["(Instrumental Poem)", "Midnight strike of the harp", "Dead shadows dancing"], "fake": "In the shadow of the grave we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Poem)",
+          "Midnight strike of the harp",
+          "Dead shadows dancing"
+        ],
+        "fake": "In the shadow of the grave we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ogJN8dkFjEQ"
+      }
     },
     {
       "id": "class-mussorgsky-bald",
@@ -576,7 +940,11 @@
       "country": "RU",
       "genre": "Romantic / Symphonic Poem",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Dark", "Epic"],
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Epic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für musikalische Hexensabbat-Darstellung.",
@@ -584,9 +952,18 @@
         "Wurde weltberühmt durch Disneys 'Fantasia'.",
         "Die Glocken am Ende läuten den Sonnenaufgang und das Verschwinden der Geister ein."
       ],
-      "lyrics": { "real": ["(Instrumental Poem)", "Swirling winds of the night", "Demonic orchestral chaos"], "fake": "Dancing on the mountain of the evil king tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Poem)",
+          "Swirling winds of the night",
+          "Demonic orchestral chaos"
+        ],
+        "fake": "Dancing on the mountain of the evil king tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-sibelius-finlandia",
@@ -596,7 +973,11 @@
       "country": "FI",
       "genre": "Romantic / Symphonic Poem",
       "difficulty": "medium",
-      "mood": ["Powerful", "Heroic", "Nationalistic"],
+      "mood": [
+        "Powerful",
+        "Heroic",
+        "Nationalistic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für finnisches Nationalbewusstsein gegenüber der russischen Zensur.",
@@ -604,9 +985,18 @@
         "Symbolisiert den Kampf und den Triumph eines Volkes.",
         "Wurde zu einer der bekanntesten klassischen Melodien Skandinaviens."
       ],
-      "lyrics": { "real": ["(Instrumental Poem)", "Stolzer Hymnen-Gesang", "Spirit of Finland"], "fake": "Watching the light over the northern ice tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Poem)",
+          "Stolzer Hymnen-Gesang",
+          "Spirit of Finland"
+        ],
+        "fake": "Watching the light over the northern ice tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "class-barber-adagio",
@@ -616,7 +1006,11 @@
       "country": "US",
       "genre": "Modern Classical / Elegie",
       "difficulty": "hard",
-      "mood": ["Sad", "Emotional", "Atmospheric"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Atmospheric"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für tiefste Trauer und Pathos in der Musik.",
@@ -624,9 +1018,18 @@
         "Wurde durch Filme wie 'Platoon' zur filmischen Chiffre für Tragik.",
         "Wird oft bei Staatstrauerfeiern weltweit gespielt."
       ],
-      "lyrics": { "real": ["(Instrumental Elegie)", "Slow rising sea of strings", "Universal grief"], "fake": "In the shadow of the broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Elegie)",
+          "Slow rising sea of strings",
+          "Universal grief"
+        ],
+        "fake": "In the shadow of the broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-jenkins-palladio",
@@ -636,7 +1039,11 @@
       "country": "GB",
       "genre": "Contemporary Classical / Neo-Baroque",
       "difficulty": "medium",
-      "mood": ["Cool", "Rhythmic", "Elegant"],
+      "mood": [
+        "Cool",
+        "Rhythmic",
+        "Elegant"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch das extrem rhythmische, pulsierende Streicher-Thema.",
@@ -644,9 +1051,18 @@
         "Kombiniert barocke Strenge mit moderner Pop-Ästhetik.",
         "Refrain: 'Dun-dun-dun-dun, dun-dun-dun-dun!'"
       ],
-      "lyrics": { "real": ["(Instrumental Neo-Baroque)", "Pulsing staccato strings", "Shiny like diamonds"], "fake": "Forever in the light of the broken star tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Neo-Baroque)",
+          "Pulsing staccato strings",
+          "Shiny like diamonds"
+        ],
+        "fake": "Forever in the light of the broken star tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "class-richter-daylight",
@@ -656,7 +1072,11 @@
       "country": "DE/GB",
       "genre": "Post-Minimalism",
       "difficulty": "medium",
-      "mood": ["Sad", "Moody", "Atmospheric"],
+      "mood": [
+        "Sad",
+        "Moody",
+        "Atmospheric"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für melancholischen Post-Minimalismus.",
@@ -664,9 +1084,18 @@
         "Wurde durch zahllose Film-Soundtracks (z.B. 'Arrival', 'Shutter Island') zum Kult-Stück.",
         "Verbindet klassische Instrumentierung mit moderner emotionaler Tiefe."
       ],
-      "lyrics": { "real": ["(Instrumental Minimalism)", "Heavy weeping cellos", "Floating layers of sadness"], "fake": "In the shadow of the rising sun tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Minimalism)",
+          "Heavy weeping cellos",
+          "Floating layers of sadness"
+        ],
+        "fake": "In the shadow of the rising sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "class-glass-opening",
@@ -676,7 +1105,11 @@
       "country": "US",
       "genre": "Minimalism",
       "difficulty": "medium",
-      "mood": ["Hypnotic", "Peaceful", "Intelligent"],
+      "mood": [
+        "Hypnotic",
+        "Peaceful",
+        "Intelligent"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für den minimalistischen Stil von Philip Glass.",
@@ -684,9 +1117,18 @@
         "Wirkt hypnotisch, beruhigend und mathematisch präzise zugleich.",
         "Eines der zugänglichsten Werke der zeitgenössischen E-Musik."
       ],
-      "lyrics": { "real": ["(Instrumental Minimalism)", "Hypnotic arpeggios", "Circular piano patterns"], "fake": "Dancing in the circles of the mind tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Minimalism)",
+          "Hypnotic arpeggios",
+          "Circular piano patterns"
+        ],
+        "fake": "Dancing in the circles of the mind tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-trek-theme",
@@ -696,7 +1138,11 @@
       "country": "US",
       "genre": "Movie Score / Orchestral",
       "difficulty": "easy",
-      "mood": ["Epic", "Adventurous", "Positive"],
+      "mood": [
+        "Epic",
+        "Adventurous",
+        "Positive"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für die musikalische Erforschung des Weltraums.",
@@ -704,9 +1150,18 @@
         "Wurde später auch zum Thema der Serie 'The Next Generation'.",
         "Symbolisiert Mut und Neugier."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "To boldly go where no man has gone before", "Final frontier!"], "fake": "Sailing through the stars in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "To boldly go where no man has gone before",
+          "Final frontier!"
+        ],
+        "fake": "Sailing through the stars in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "score-up-married",
@@ -716,7 +1171,11 @@
       "country": "US",
       "genre": "Movie Score / Jazz influence",
       "difficulty": "easy",
-      "mood": ["Happy", "Sad", "Nostalgic"],
+      "mood": [
+        "Happy",
+        "Sad",
+        "Nostalgic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Begleitet die berühmte, wortlose Montage am Anfang des Films 'Oben'.",
@@ -724,9 +1183,18 @@
         "Ein Inbegriff für hochemotionale Animationsfilm-Musik.",
         "Gewann den Oscar für die beste Filmmusik."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Whimsical piano waltz", "Memory of a lifetime"], "fake": "Floating with the balloons in the blue sky tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Whimsical piano waltz",
+          "Memory of a lifetime"
+        ],
+        "fake": "Floating with the balloons in the blue sky tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "S1uWHjhluTI"
+      }
     },
     {
       "id": "score-beauty-other",
@@ -736,7 +1204,11 @@
       "country": "US",
       "genre": "Movie Score / Ambient Piano",
       "difficulty": "easy",
-      "mood": ["Peaceful", "Moody", "Atmospheric"],
+      "mood": [
+        "Peaceful",
+        "Moody",
+        "Atmospheric"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch den minimalistischen Klavier-Sound und die schwebenden Synthesizer-Flächen.",
@@ -744,9 +1216,18 @@
         "Thematisiert die Schönheit in den kleinen, alltäglichen Dingen (bekannt durch die Tüten-Szene).",
         "Geprägt durch Thomas Newmans typischen 'Plinking'-Sound."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Soft piano notes", "Paper bag in the wind"], "fake": "Watching the light through the broken glass tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Soft piano notes",
+          "Paper bag in the wind"
+        ],
+        "fake": "Watching the light through the broken glass tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-shape-water",
@@ -756,7 +1237,11 @@
       "country": "FR",
       "genre": "Movie Score / Waltz",
       "difficulty": "easy",
-      "mood": ["Dreamy", "Whimsical", "Romantic"],
+      "mood": [
+        "Dreamy",
+        "Whimsical",
+        "Romantic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für märchenhafte, leicht altmodisch klingende Filmmusik.",
@@ -764,9 +1249,18 @@
         "Thematisiert die Liebe jenseits von Worten und Gattungen.",
         "Gewann den Oscar für den besten Soundtrack."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Whistling the water theme", "Magic of the deep"], "fake": "Dancing under the sea with the one I love tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Whistling the water theme",
+          "Magic of the deep"
+        ],
+        "fake": "Dancing under the sea with the one I love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "AfuMFHB80HE"
+      }
     },
     {
       "id": "score-clint-aeterna",
@@ -776,7 +1270,11 @@
       "country": "GB",
       "genre": "Modern Classical / Movie Theme",
       "difficulty": "medium",
-      "mood": ["Tense", "Epic", "Powerful"],
+      "mood": [
+        "Tense",
+        "Epic",
+        "Powerful"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für dramatische Steigerung und drohendes Unheil.",
@@ -784,9 +1282,18 @@
         "Wurde durch unzählige Trailer weltberühmt (oft verwechselt als 'Herr der Ringe' Musik).",
         "Symbolisiert den Untergang und die Hoffnungslosigkeit."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Urgent repetitive strings", "Tension and release"], "fake": "Running from the shadows in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Urgent repetitive strings",
+          "Tension and release"
+        ],
+        "fake": "Running from the shadows in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-horner-rose",
@@ -796,7 +1303,11 @@
       "country": "US",
       "genre": "Movie Score / Celtic influence",
       "difficulty": "easy",
-      "mood": ["Romantic", "Sad", "Epic"],
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Epic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch die Solostimme (Sissel) und die irischen Flöten.",
@@ -804,9 +1315,18 @@
         "Teil des meistverkauften orchestralen Soundtracks aller Zeiten.",
         "Webt das Thema von 'My Heart Will Go On' instrumental ein."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Ethereal vocalise", "Soul of the ocean"], "fake": "I'll never let go in the middle of the sea tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Ethereal vocalise",
+          "Soul of the ocean"
+        ],
+        "fake": "I'll never let go in the middle of the sea tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "score-bond-theme",
@@ -816,7 +1336,11 @@
       "country": "GB",
       "genre": "Movie Theme / Surf-Jazz influence",
       "difficulty": "easy",
-      "mood": ["Cool", "Aggressive", "Classic"],
+      "mood": [
+        "Cool",
+        "Aggressive",
+        "Classic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Das legendärste Spionage-Thema der Welt.",
@@ -824,9 +1348,18 @@
         "Symbolisiert Weltgewandtheit, Gefahr und britisches Understatement.",
         "Begleitet Agent 007 seit über 60 Jahren."
       ],
-      "lyrics": { "real": ["(Instrumental Theme)", "Vibrant guitar riff", "Shaken, not stirred"], "fake": "Licensed to kill in the middle of the night tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Vibrant guitar riff",
+          "Shaken, not stirred"
+        ],
+        "fake": "Licensed to kill in the middle of the night tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "score-lalo-mission",
@@ -836,7 +1369,11 @@
       "country": "AR/US",
       "genre": "Movie Theme / Jazz-Funk focus",
       "difficulty": "medium",
-      "mood": ["Urgent", "Cool", "Fast"],
+      "mood": [
+        "Urgent",
+        "Cool",
+        "Fast"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch den ungewöhnlichen 5/4-Takt, der an brennende Zündschnüre erinnert.",
@@ -844,9 +1381,18 @@
         "Wurde durch die Neuinterpretationen für die Tom Cruise-Filme erneut zum Welthit.",
         "Symbolisiert Unmöglichkeit und technisches Geschick."
       ],
-      "lyrics": { "real": ["(Instrumental Theme)", "Burning fuse rhythm", "5/4 time signature"], "fake": "Accepting the mission in the shadow of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Burning fuse rhythm",
+          "5/4 time signature"
+        ],
+        "fake": "Accepting the mission in the shadow of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-henry-panther",
@@ -856,7 +1402,11 @@
       "country": "US",
       "genre": "Movie Theme / Jazz",
       "difficulty": "easy",
-      "mood": ["Cool", "Funny", "Smooth"],
+      "mood": [
+        "Cool",
+        "Funny",
+        "Smooth"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch das schleichende Saxophon-Motiv und die verspielte Jazz-Attitüde.",
@@ -864,9 +1414,18 @@
         "Fast jeder erkennt die Melodie bereits nach den ersten drei Tönen.",
         "Eng verbunden mit Inspektor Clouseau."
       ],
-      "lyrics": { "real": ["(Instrumental Theme)", "Sneaky saxophone melody", "Cool jazz groove"], "fake": "Shadow in the night looking for the pink diamond" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Sneaky saxophone melody",
+          "Cool jazz groove"
+        ],
+        "fake": "Shadow in the night looking for the pink diamond"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ruAi4VBoBSM" }
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      }
     },
     {
       "id": "score-herrmann-psycho",
@@ -876,7 +1435,11 @@
       "country": "US",
       "genre": "Movie Score / Thriller",
       "difficulty": "hard",
-      "mood": ["Tense", "Aggressive", "Scary"],
+      "mood": [
+        "Tense",
+        "Aggressive",
+        "Scary"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für akustischen Horror (die 'Dusch-Szene').",
@@ -884,9 +1447,18 @@
         "Herrmann nutzte bewusst nur Streichinstrumente, um einen kalten Sound zu erzeugen.",
         "Hitchcock gab zu, dass die Musik die Wirkung des Films verdoppelt hat."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Screeching violins", "Knife-like string stabs"], "fake": "Alone in the shower in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Screeching violins",
+          "Knife-like string stabs"
+        ],
+        "fake": "Alone in the shower in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "score-nino-godfather",
@@ -896,7 +1468,11 @@
       "country": "IT",
       "genre": "Movie Theme / Italian Folk influence",
       "difficulty": "easy",
-      "mood": ["Moody", "Serious", "Epic"],
+      "mood": [
+        "Moody",
+        "Serious",
+        "Epic"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Inbegriff für Melancholie und die dunkle Seite familiärer Loyalität.",
@@ -904,9 +1480,18 @@
         "Symbolisiert Macht, Ehre und den italienischen Clan.",
         "Einer der meistrespektierten Scores der Kinogeschichte."
       ],
-      "lyrics": { "real": ["(Instrumental Theme)", "Lonely trumpet call", "Sicilian melody"], "fake": "An offer you can't refuse in the shadow of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Lonely trumpet call",
+          "Sicilian melody"
+        ],
+        "fake": "An offer you can't refuse in the shadow of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "score-zimmer-time",
@@ -916,7 +1501,11 @@
       "country": "DE/US",
       "genre": "Movie Score / Modern Orchestral",
       "difficulty": "easy",
-      "mood": ["Epic", "Atmospheric", "Powerful"],
+      "mood": [
+        "Epic",
+        "Atmospheric",
+        "Powerful"
+      ],
       "pack": "Classical & Orchestral Masterpieces",
       "hints": [
         "Besticht durch den extrem langsamen Aufbau und das triumphale Finale.",
@@ -924,9 +1513,18 @@
         "Thematisiert (im Film) die Auflösung der Ebenen und das Ende einer Reise.",
         "Geprägt durch Zimmer's massiven Einsatz von Bässen und Bläsern."
       ],
-      "lyrics": { "real": ["(Instrumental Score)", "Washed out piano melody", "Building wall of sound"], "fake": "Dream within a dream in the middle of the night" },
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Washed out piano melody",
+          "Building wall of sound"
+        ],
+        "fake": "Dream within a dream in the middle of the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     }
   ]
 }

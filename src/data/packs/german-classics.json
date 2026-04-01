@@ -13,7 +13,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Welle",
       "difficulty": "easy",
-      "mood": ["Upbeat", "Classic", "Electronic"],
+      "mood": [
+        "Upbeat",
+        "Classic",
+        "Electronic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Einer der weltweit bekanntesten deutschsprachigen Songs aller Zeiten.",
@@ -22,9 +26,18 @@
         "Ein Meilenstein der Neuen Deutschen Welle (NDW).",
         "Refrain: '99 Luftballons auf ihrem Weg zum Horizont...'"
       ],
-      "lyrics": { "real": ["Hast du etwas Zeit für mich? Dann singe ich ein Lied für dich", "Von 99 Luftballons auf ihrem Weg zum Horizont", "Denkst du vielleicht grad an mich? Dann singe ich ein Lied für dich"], "fake": "Wir fliegen durch die Nacht, bis der helle Tag erwacht" },
+      "lyrics": {
+        "real": [
+          "Hast du etwas Zeit für mich? Dann singe ich ein Lied für dich",
+          "Von 99 Luftballons auf ihrem Weg zum Horizont",
+          "Denkst du vielleicht grad an mich? Dann singe ich ein Lied für dich"
+        ],
+        "fake": "Wir fliegen durch die Nacht, bis der helle Tag erwacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Lur-SGl3uw8" }
+      "links": {
+        "youtube": "Lur-SGl3uw8"
+      }
     },
     {
       "id": "german-falco-rock-me-amadeus",
@@ -34,7 +47,11 @@
       "country": "AT",
       "genre": "Pop/Rap",
       "difficulty": "medium",
-      "mood": ["Cool", "Epic", "Classic"],
+      "mood": [
+        "Cool",
+        "Epic",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Der einzige deutschsprachige Song, der jemals Platz 1 der US-Billboard-Charts erreichte.",
@@ -43,9 +60,18 @@
         "Das Video zeigt Falco in Rokoko-Kleidung kombiniert mit 80er-Styling.",
         "Refrain: 'Amadeus, Amadeus, Amadeus, Amadeus, Amadeus, oh oh oh Amadeus!'"
       ],
-      "lyrics": { "real": ["Er war ein Punker und er lebte in der großen Stadt, es war Wien, war Vienna", "Wo er alles tat, er hatte Schulden, denn er trank, doch ihn liebten alle Frauen", "Und jede rief: Come and rock me Amadeus!"], "fake": "Er spielte Klavier in einer kleinen Bar, fernab von aller Gefahr" },
+      "lyrics": {
+        "real": [
+          "Er war ein Punker und er lebte in der großen Stadt, es war Wien, war Vienna",
+          "Wo er alles tat, er hatte Schulden, denn er trank, doch ihn liebten alle Frauen",
+          "Und jede rief: Come and rock me Amadeus!"
+        ],
+        "fake": "Er spielte Klavier in einer kleinen Bar, fernab von aller Gefahr"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "cVikZ8Oe_36" }
+      "links": {
+        "youtube": "cVikZ8Oe_36"
+      }
     },
     {
       "id": "german-peter-schilling-major-tom",
@@ -55,7 +81,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Welle",
       "difficulty": "easy",
-      "mood": ["Space", "Epic", "Synth"],
+      "mood": [
+        "Space",
+        "Epic",
+        "Synth"
+      ],
       "pack": "German Classics",
       "hints": [
         "Eine inoffizielle Fortsetzung von David Bowies 'Space Oddity'.",
@@ -64,9 +94,18 @@
         "Bekannt für den Countdown im Refrain: 'Gründlich checkt er alle Instrumente...'.",
         "Refrain: 'Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos!'"
       ],
-      "lyrics": { "real": ["Gründlich checkt er alle Instrumente, nur noch ein paar Sekunden bis zum Start", "Mit dem Lichtstrahl deiner Augen blickst du in die Ewigkeit", "Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos"], "fake": "In den Sternen steht geschrieben, dass wir uns für immer lieben" },
+      "lyrics": {
+        "real": [
+          "Gründlich checkt er alle Instrumente, nur noch ein paar Sekunden bis zum Start",
+          "Mit dem Lichtstrahl deiner Augen blickst du in die Ewigkeit",
+          "Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos"
+        ],
+        "fake": "In den Sternen steht geschrieben, dass wir uns für immer lieben"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "N17idm97K7w" }
+      "links": {
+        "youtube": "wO0A0XcWy88"
+      }
     },
     {
       "id": "german-hosen-hier-kommt-alex",
@@ -76,7 +115,11 @@
       "country": "DE",
       "genre": "Punk Rock",
       "difficulty": "medium",
-      "mood": ["Powerful", "Serious", "Energy"],
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Energy"
+      ],
       "pack": "German Classics",
       "hints": [
         "Thematisiert den Protagonisten Alex aus dem Roman/Film 'A Clockwork Orange'.",
@@ -85,9 +128,18 @@
         "Wurde oft im Rahmen von Theateraufführungen des Stoffs verwendet.",
         "Refrain: 'In einer Welt, in der man nur noch lebt, damit man täglich arbeiten geht...'"
       ],
-      "lyrics": { "real": ["In einer Welt, in der man nur noch lebt, damit man täglich arbeiten geht", "Wo man sich nur noch sieht, damit man sich nicht mehr versteht", "Und wer den Wahnsinn nicht mehr packt, der haut sich völlig nackt ans Kreuz"], "fake": "Wir rennen durch die Straßen, um den Moment niemals zu verpassen" },
+      "lyrics": {
+        "real": [
+          "In einer Welt, in der man nur noch lebt, damit man täglich arbeiten geht",
+          "Wo man sich nur noch sieht, damit man sich nicht mehr versteht",
+          "Und wer den Wahnsinn nicht mehr packt, der haut sich völlig nackt ans Kreuz"
+        ],
+        "fake": "Wir rennen durch die Straßen, um den Moment niemals zu verpassen"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1z6U0HUKWQg" }
+      "links": {
+        "youtube": "1z6U0HUKWQg"
+      }
     },
     {
       "id": "german-aerzte-zu-spaet",
@@ -97,7 +149,11 @@
       "country": "DE",
       "genre": "Punk Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Fun"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Fun"
+      ],
       "pack": "German Classics",
       "hints": [
         "Handelt von einem Jungen, der von einem Mädchen wegen eines reicheren Jungen verlassen wird.",
@@ -106,9 +162,18 @@
         "Bekannt für den humorvollen Text und das Mitsing-Potenzial.",
         "Refrain: 'Eines Tages werde ich mich rächen, ich werde die Herzen aller Mädchen brechen!'"
       ],
-      "lyrics": { "real": ["Du glaubst, du bist was Besseres, weil du einen Freund hast, der Geld hat", "Ich hab' zwar kein Auto, aber ich bin nicht so wie er", "Doch eines Tages werde ich mich rächen, ich werde die Herzen aller Mädchen brechen"], "fake": "In der Schule warst du schon die Königin, und ich hatte nur meinen Sinn" },
+      "lyrics": {
+        "real": [
+          "Du glaubst, du bist was Besseres, weil du einen Freund hast, der Geld hat",
+          "Ich hab' zwar kein Auto, aber ich bin nicht so wie er",
+          "Doch eines Tages werde ich mich rächen, ich werde die Herzen aller Mädchen brechen"
+        ],
+        "fake": "In der Schule warst du schon die Königin, und ich hatte nur meinen Sinn"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "german-groenemeyer-maenner",
@@ -118,7 +183,11 @@
       "country": "DE",
       "genre": "Rock",
       "difficulty": "medium",
-      "mood": ["Classic", "Moody", "Serious"],
+      "mood": [
+        "Classic",
+        "Moody",
+        "Serious"
+      ],
       "pack": "German Classics",
       "hints": [
         "Ein ironischer und gleichzeitig ehrlicher Blick auf die männliche Rolle in der Gesellschaft.",
@@ -127,9 +196,18 @@
         "Der Refrain zählt verschiedene Eigenschaften und Widersprüche von Männern auf.",
         "Refrain: 'Männer nehmen in den Arm, Männer geben Geborgenheit...'"
       ],
-      "lyrics": { "real": ["Männer nehmen in den Arm, Männer geben Geborgenheit, Männer weinen heimlich", "Männer brauchen viel Zuneigung, Männer sind so verletzlich", "Männer sind auf dieser Welt einfach unersetzlich"], "fake": "Wir stehen stramm im Wind, weil wir die Stärksten sind" },
+      "lyrics": {
+        "real": [
+          "Männer nehmen in den Arm, Männer geben Geborgenheit, Männer weinen heimlich",
+          "Männer brauchen viel Zuneigung, Männer sind so verletzlich",
+          "Männer sind auf dieser Welt einfach unersetzlich"
+        ],
+        "fake": "Wir stehen stramm im Wind, weil wir die Stärksten sind"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "qOnE98SmsM8" }
+      "links": {
+        "youtube": "_IZsxfo8ITw"
+      }
     },
     {
       "id": "german-westernhagen-freiheit",
@@ -139,7 +217,11 @@
       "country": "DE",
       "genre": "Rock",
       "difficulty": "medium",
-      "mood": ["Epic", "Moody", "Serious"],
+      "mood": [
+        "Epic",
+        "Moody",
+        "Serious"
+      ],
       "pack": "German Classics",
       "hints": [
         "Wurde zu einer Hymne der deutschen Wiedervereinigung, obwohl der Text älter ist.",
@@ -148,9 +230,18 @@
         "Wurde oft bei großen politischen Umbrüchen im Radio rauf und runter gespielt.",
         "Refrain: 'Freiheit, Freiheit, ist die einzige, die zählt!'"
       ],
-      "lyrics": { "real": ["Die Verträge sind gemacht und es wurde viel gelacht, was aus uns geworden ist", "Freiheit, Freiheit, ist die einzige, die zählt", "Der Mensch ist leider nicht gut, er hat nur Blut und Wut in seinem Bauch"], "fake": "In den Gassen dieser Stadt, gibt es keinen der uns satt macht" },
+      "lyrics": {
+        "real": [
+          "Die Verträge sind gemacht und es wurde viel gelacht, was aus uns geworden ist",
+          "Freiheit, Freiheit, ist die einzige, die zählt",
+          "Der Mensch ist leider nicht gut, er hat nur Blut und Wut in seinem Bauch"
+        ],
+        "fake": "In den Gassen dieser Stadt, gibt es keinen der uns satt macht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "nUnm_rF-2M8" }
+      "links": {
+        "youtube": "nUnm_rF-2M8"
+      }
     },
     {
       "id": "german-rio-reiser-koenig",
@@ -160,7 +251,11 @@
       "country": "DE",
       "genre": "Pop Rock",
       "difficulty": "easy",
-      "mood": ["Fun", "Happy", "Classic"],
+      "mood": [
+        "Fun",
+        "Happy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Der Sänger war ursprünglich der Kopf der Polit-Rock-Band 'Ton Steine Scherben'.",
@@ -169,9 +264,18 @@
         "Thematisiert auf spielerische Weise die Sehnsucht nach Macht und Veränderung.",
         "Refrain: 'Das alles und noch viel mehr, würd' ich machen, wenn ich König von Deutschland wär!'"
       ],
-      "lyrics": { "real": ["Jede Nacht um halb eins, wenn das Fernsehen rauscht, leg ich mich aufs Bett und mal mir aus", "Wie es wäre, wenn ich nicht der wäre, der ich bin, sondern Kanzler, Kaiser, König oder Königin", "Das alles und noch viel mehr, würd' ich machen, wenn ich König von Deutschland wär"], "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies" },
+      "lyrics": {
+        "real": [
+          "Jede Nacht um halb eins, wenn das Fernsehen rauscht, leg ich mich aufs Bett und mal mir aus",
+          "Wie es wäre, wenn ich nicht der wäre, der ich bin, sondern Kanzler, Kaiser, König oder Königin",
+          "Das alles und noch viel mehr, würd' ich machen, wenn ich König von Deutschland wär"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "BzGHhaMUqSQ" }
+      "links": {
+        "youtube": "BzGHhaMUqSQ"
+      }
     },
     {
       "id": "german-trio-da-da-da",
@@ -181,7 +285,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Welle",
       "difficulty": "easy",
-      "mood": ["Minimalist", "Fun", "Catchy"],
+      "mood": [
+        "Minimalist",
+        "Fun",
+        "Catchy"
+      ],
       "pack": "German Classics",
       "hints": [
         "Ein Beispiel für den extremen Minimalismus der NDW-Ära.",
@@ -190,9 +298,18 @@
         "Der Text besteht fast nur aus der titelgebenden Phrase und 'Ich lieb' dich nicht, du liebst mich nicht'.",
         "Refrain: 'Da da da, ich lieb' dich nicht, du liebst mich nicht, aha aha aha!'"
       ],
-      "lyrics": { "real": ["Was ist hier los? Was ist passiert? Ich hab' dich geliebt, du hast mich beschissen", "Da da da, ich lieb' dich nicht, du liebst mich nicht, aha aha aha", "Ich lieb' dich nicht, du liebst mich nicht, da da da"], "fake": "In der kleinen Stadt, wo man keine Träume hat, stehen wir stramm" },
+      "lyrics": {
+        "real": [
+          "Was ist hier los? Was ist passiert? Ich hab' dich geliebt, du hast mich beschissen",
+          "Da da da, ich lieb' dich nicht, du liebst mich nicht, aha aha aha",
+          "Ich lieb' dich nicht, du liebst mich nicht, da da da"
+        ],
+        "fake": "In der kleinen Stadt, wo man keine Träume hat, stehen wir stramm"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ZviYmTMpBXE" }
+      "links": {
+        "youtube": "ZviYmTMpBXE"
+      }
     },
     {
       "id": "german-spider-murphy-skandal",
@@ -202,7 +319,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Welle",
       "difficulty": "easy",
-      "mood": ["Happy", "Rock'n'Roll", "Fun"],
+      "mood": [
+        "Happy",
+        "Rock'n'Roll",
+        "Fun"
+      ],
       "pack": "German Classics",
       "hints": [
         "Bayerischer Rock'n'Roll gepaart mit NDW-Elementen.",
@@ -211,9 +332,18 @@
         "Die Nummer '32 16 8' (die Rosi anruft) war in München jahrelang vergeben und verursachte viele Scherzanrufe.",
         "Refrain: 'Skandal im Sperrbezirk! Skandal um Rosi!'"
       ],
-      "lyrics": { "real": ["In München steht ein Hofbräuhaus, doch Freudenhäuser müssen raus", "Draußen vor der Stadt, in einer Sperrbezirkstraße, da wohnt die Rosi", "Und wer sie sehen will, der muss im Telefonbuch graben"], "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe" },
+      "lyrics": {
+        "real": [
+          "In München steht ein Hofbräuhaus, doch Freudenhäuser müssen raus",
+          "Draußen vor der Stadt, in einer Sperrbezirkstraße, da wohnt die Rosi",
+          "Und wer sie sehen will, der muss im Telefonbuch graben"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "oESfa8jt0p8" }
+      "links": {
+        "youtube": "oESfa8jt0p8"
+      }
     },
     {
       "id": "german-fanta4-die-da",
@@ -223,7 +353,11 @@
       "country": "DE",
       "genre": "Hip Hop",
       "difficulty": "medium",
-      "mood": ["Happy", "Fun", "Classic"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Markierte den kommerziellen Durchbruch von deutschem Hip Hop.",
@@ -232,9 +366,18 @@
         "Die Band stammt aus Stuttgart (Fanta 4).",
         "Refrain: 'Ist es die da, die da am Eingang steht? Nein, es ist die da, die an der Ecke steht!'"
       ],
-      "lyrics": { "real": ["Freitagabend, es ist wieder Zeit für 'ne Party, wir haben richtig Bock und gehen steil", "Wir stehen am Eingang und wer kommt da rein? Die da!", "Ist es die da, die da am Eingang steht? Nein, es ist die da, die an der Ecke steht"], "fake": "Walking through the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Freitagabend, es ist wieder Zeit für 'ne Party, wir haben richtig Bock und gehen steil",
+          "Wir stehen am Eingang und wer kommt da rein? Die da!",
+          "Ist es die da, die da am Eingang steht? Nein, es ist die da, die an der Ecke steht"
+        ],
+        "fake": "Walking through the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S0Nf-EofN0Q" }
+      "links": {
+        "youtube": "S0Nf-EofN0Q"
+      }
     },
     {
       "id": "german-fettes-brot-jein",
@@ -244,7 +387,11 @@
       "country": "DE",
       "genre": "Hip Hop",
       "difficulty": "medium",
-      "mood": ["Fun", "Moody", "Storytelling"],
+      "mood": [
+        "Fun",
+        "Moody",
+        "Storytelling"
+      ],
       "pack": "German Classics",
       "hints": [
         "Thematisiert den inneren Konflikt zwischen Treue und Versuchung.",
@@ -253,9 +400,18 @@
         "Das Video spielt im Wilden Westen.",
         "Refrain: 'Soll ich's wirklich machen oder lass ich's lieber sein? Jein!'"
       ],
-      "lyrics": { "real": ["Es ist Samstagabend, ich hab' alles am Start, ich geh' in den Club und ich fahr' ab", "Soll ich's wirklich machen oder lass ich's lieber sein?", "Auf der einen Seite will ich, auf der anderen hab' ich Schiss"], "fake": "Nichts ist wie es scheint, wenn die Sonne für uns weint" },
+      "lyrics": {
+        "real": [
+          "Es ist Samstagabend, ich hab' alles am Start, ich geh' in den Club und ich fahr' ab",
+          "Soll ich's wirklich machen oder lass ich's lieber sein?",
+          "Auf der einen Seite will ich, auf der anderen hab' ich Schiss"
+        ],
+        "fake": "Nichts ist wie es scheint, wenn die Sonne für uns weint"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "D8yXGAsRJK" }
+      "links": {
+        "youtube": "D8yXGAsRJK"
+      }
     },
     {
       "id": "german-xavier-naidoo-dieser-weg",
@@ -265,7 +421,11 @@
       "country": "DE",
       "genre": "Soul/Pop",
       "difficulty": "easy",
-      "mood": ["Serious", "Inspiring", "Moody"],
+      "mood": [
+        "Serious",
+        "Inspiring",
+        "Moody"
+      ],
       "pack": "German Classics",
       "hints": [
         "Wurde zur inoffiziellen Hymne der deutschen Nationalmannschaft beim 'Sommermärchen' 2006.",
@@ -274,9 +434,18 @@
         "Bekannt für die kraftvolle, soulige Stimme des Sängers.",
         "Refrain: 'Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer.'"
       ],
-      "lyrics": { "real": ["Ich hab' das alles schon mal gesehen, ich hab' das alles schon mal gehört", "Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer", "Ich geh' diesen Weg für mich, ich geh' ihn ganz allein"], "fake": "In den Gassen der Nacht, da wird die Hoffnung wieder wach" },
+      "lyrics": {
+        "real": [
+          "Ich hab' das alles schon mal gesehen, ich hab' das alles schon mal gehört",
+          "Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer",
+          "Ich geh' diesen Weg für mich, ich geh' ihn ganz allein"
+        ],
+        "fake": "In den Gassen der Nacht, da wird die Hoffnung wieder wach"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "RPN88D_HjMU"
+      }
     },
     {
       "id": "german-silbermond-das-beste",
@@ -286,7 +455,11 @@
       "country": "DE",
       "genre": "Pop Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Epic", "Serious"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Serious"
+      ],
       "pack": "German Classics",
       "hints": [
         "Eine der erfolgreichsten deutschen Balladen der 2000er Jahre.",
@@ -295,9 +468,18 @@
         "Gewann mehrere Echos und blieb monatelang in den Charts.",
         "Refrain: 'Du bist das Beste, was mir je passiert ist, es tut so gut, wie du mich liebst.'"
       ],
-      "lyrics": { "real": ["Ich habe dich gefunden, ich hab' dich gesucht, ich hab' dich gesehen", "Du bist das Beste, was mir je passiert ist, es tut so gut, wie du mich liebst", "Ich sag's dir viel zu selten, doch ich mein's genau so wie ich's sag"], "fake": "Unter den Sternen der Nacht, bin ich allein erwacht" },
+      "lyrics": {
+        "real": [
+          "Ich habe dich gefunden, ich hab' dich gesucht, ich hab' dich gesehen",
+          "Du bist das Beste, was mir je passiert ist, es tut so gut, wie du mich liebst",
+          "Ich sag's dir viel zu selten, doch ich mein's genau so wie ich's sag"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "Jm_shIu_tKw" }
+      "links": {
+        "youtube": "Jm_shIu_tKw"
+      }
     },
     {
       "id": "german-juli-perfekte-welle",
@@ -307,7 +489,11 @@
       "country": "DE",
       "genre": "Pop Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Pop"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Pop"
+      ],
       "pack": "German Classics",
       "hints": [
         "Wurde zu einer Hymne des Aufbruchs und des Glücksmoments.",
@@ -316,9 +502,18 @@
         "Handelt davon, den Moment zu nutzen, wenn alles perfekt zusammenpasst.",
         "Refrain: 'Das ist die perfekte Welle, das ist der perfekte Tag!'"
       ],
-      "lyrics": { "real": ["Du hast gewartet auf diesen Moment, du hast gehofft, dass er niemals endet", "Das ist die perfekte Welle, das ist der perfekte Tag", "Lass dich einfach von der Strömung treiben, du wirst sehen"], "fake": "Wir springen ins kalte Wasser, um die Welt zu sehen" },
+      "lyrics": {
+        "real": [
+          "Du hast gewartet auf diesen Moment, du hast gehofft, dass er niemals endet",
+          "Das ist die perfekte Welle, das ist der perfekte Tag",
+          "Lass dich einfach von der Strömung treiben, du wirst sehen"
+        ],
+        "fake": "Wir springen ins kalte Wasser, um die Welt zu sehen"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "ad8ukI7Z-b8" }
+      "links": {
+        "youtube": "ad8ukI7Z-b8"
+      }
     },
     {
       "id": "german-helden-denkmal",
@@ -328,7 +523,11 @@
       "country": "DE",
       "genre": "Indie Pop",
       "difficulty": "medium",
-      "mood": ["Happy", "Creative", "Unique"],
+      "mood": [
+        "Happy",
+        "Creative",
+        "Unique"
+      ],
       "pack": "German Classics",
       "hints": [
         "Der Song handelt davon, kein offizielles Denkmal zu wollen, sondern lieber das Leben zu genießen.",
@@ -337,9 +536,18 @@
         "Refrain: 'Hol den Vorschlaghammer! Sie haben uns ein Denkmal gebaut...'",
         "Gilt als einer der bedeutendsten Indie-Hits dieser Ära."
       ],
-      "lyrics": { "real": ["Hol den Vorschlaghammer! Sie haben uns ein Denkmal gebaut", "Und jeder Vollidiot weiß, dass das die Liebe nicht ersetzt", "Komm mal her, ich will dir was sagen, es ist nicht so wie du denkst"], "fake": "In der Mitte der Nacht, da wird die Welt wieder wach" },
+      "lyrics": {
+        "real": [
+          "Hol den Vorschlaghammer! Sie haben uns ein Denkmal gebaut",
+          "Und jeder Vollidiot weiß, dass das die Liebe nicht ersetzt",
+          "Komm mal her, ich will dir was sagen, es ist nicht so wie du denkst"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Welt wieder wach"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "1K_V99-hW5U"
+      }
     },
     {
       "id": "german-sportfreunde-kompliment",
@@ -349,7 +557,11 @@
       "country": "DE",
       "genre": "Indie Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Sing-along"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Sing-along"
+      ],
       "pack": "German Classics",
       "hints": [
         "Das ultimative 'Unplugged'-Lied für Lagerfeuer und Festivals.",
@@ -358,9 +570,18 @@
         "War ursprünglich kein großer Charterfolg, wurde aber über die Jahre zum Kult-Hit.",
         "Refrain: 'Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist!'"
       ],
-      "lyrics": { "real": ["Wenn man mich fragen würde, was ich am meisten mag, dann wärst du es", "Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist", "Ich wollte dir nur mal eben sagen, dass ich froh bin, dass es dich gibt"], "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe" },
+      "lyrics": {
+        "real": [
+          "Wenn man mich fragen würde, was ich am meisten mag, dann wärst du es",
+          "Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist",
+          "Ich wollte dir nur mal eben sagen, dass ich froh bin, dass es dich gibt"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "M92Gf7t-o64" }
+      "links": {
+        "youtube": "C4uXGzFZjqw"
+      }
     },
     {
       "id": "german-seeed-dickes-b",
@@ -370,7 +591,11 @@
       "country": "DE",
       "genre": "Reggae/Dancehall",
       "difficulty": "medium",
-      "mood": ["Energy", "Cool", "Groovy"],
+      "mood": [
+        "Energy",
+        "Cool",
+        "Groovy"
+      ],
       "pack": "German Classics",
       "hints": [
         "Eine Liebeserklärung an die Stadt Berlin (Dickes B).",
@@ -379,9 +604,18 @@
         "Der Song fängt den rauen, aber herzlichen Vibe der Hauptstadt perfekt ein.",
         "Refrain: 'Dickes B, oben an der Spree, im Sommer tust du gut und im Winter tut's weh!'"
       ],
-      "lyrics": { "real": ["Guten Morgen Berlin, du hast mir gefehlt, ich hab' dich so lange nicht gesehen", "Dickes B, oben an der Spree, im Sommer tust du gut und im Winter tut's weh", "Berlin, Berlin, du bist so wunderbar, Berlin, Berlin!"], "fake": "Wir tanzen im Regen, dem Glück entgegen auf allen Wegen" },
+      "lyrics": {
+        "real": [
+          "Guten Morgen Berlin, du hast mir gefehlt, ich hab' dich so lange nicht gesehen",
+          "Dickes B, oben an der Spree, im Sommer tust du gut und im Winter tut's weh",
+          "Berlin, Berlin, du bist so wunderbar, Berlin, Berlin!"
+        ],
+        "fake": "Wir tanzen im Regen, dem Glück entgegen auf allen Wegen"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "1K_V99-hW5U" }
+      "links": {
+        "youtube": "GYK-NfOo7b4"
+      }
     },
     {
       "id": "german-peter-fox-haus-am-see",
@@ -391,7 +625,11 @@
       "country": "DE",
       "genre": "Dancehall",
       "difficulty": "medium",
-      "mood": ["Cool", "Groovy", "Summer"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Summer"
+      ],
       "pack": "German Classics",
       "hints": [
         "Stammt vom extrem erfolgreichen Soloalbum 'Stadtaffe' des Seeed-Sängers.",
@@ -400,9 +638,18 @@
         "Wurde zu einem der meistgespielten Songs der späten 2000er.",
         "Refrain: 'Und am Ende der Straße steht ein Haus am See...'"
       ],
-      "lyrics": { "real": ["Hier bin ich geboren, hier werd' ich begraben, doch dazwischen will ich leben", "Und am Ende der Straße steht ein Haus am See", "Ich hab' 20 Kinder, meine Frau ist schön, alle kommen vorbei"], "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies" },
+      "lyrics": {
+        "real": [
+          "Hier bin ich geboren, hier werd' ich begraben, doch dazwischen will ich leben",
+          "Und am Ende der Straße steht ein Haus am See",
+          "Ich hab' 20 Kinder, meine Frau ist schön, alle kommen vorbei"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "gMqIuAJ92tM" }
+      "links": {
+        "youtube": "gMqIuAJ92tM"
+      }
     },
     {
       "id": "german-bourani-auf-uns",
@@ -412,7 +659,11 @@
       "country": "DE",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Inspiring", "Epic"],
+      "mood": [
+        "Happy",
+        "Inspiring",
+        "Epic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Die WM-Hymne von 2014, die untrennbar mit dem vierten Stern verbunden ist.",
@@ -421,9 +672,18 @@
         "Ein Song, der Mut macht und ein Gefühl von Gemeinschaft vermittelt.",
         "Refrain: 'Ein Hoch auf das, was uns vereint, auf diesen Moment, der immer bleibt!'"
       ],
-      "lyrics": { "real": ["Wer friert uns diesen Moment ein? Besser kann es nicht sein", "Ein Hoch auf das, was uns vereint, auf diesen Moment, der immer bleibt", "Auf uns, auf diesen Tag, auf dieses Leben!"], "fake": "Wir springen ins Glück, schauen niemals zurück, Stück für Stück" },
+      "lyrics": {
+        "real": [
+          "Wer friert uns diesen Moment ein? Besser kann es nicht sein",
+          "Ein Hoch auf das, was uns vereint, auf diesen Moment, der immer bleibt",
+          "Auf uns, auf diesen Tag, auf dieses Leben!"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück, Stück für Stück"
+      },
       "isOne_hit_wonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "k9EYjn5f_nE"
+      }
     },
     {
       "id": "german-groenemeyer-maenner",
@@ -433,7 +693,11 @@
       "country": "DE",
       "genre": "Pop / Rock",
       "difficulty": "easy",
-      "mood": ["Funny", "Classic", "Thoughtful"],
+      "mood": [
+        "Funny",
+        "Classic",
+        "Thoughtful"
+      ],
       "pack": "German Classics",
       "hints": [
         "Eine ironische und zugleich tiefgründige Analyse des männlichen Rollenbildes.",
@@ -442,9 +706,18 @@
         "Ein absoluter Klassiker, der auf keiner deutschen Party fehlen darf.",
         "Refrain: 'Männer nehmen in den Arm, Männer geben Geborgenheit!'"
       ],
-      "lyrics": { "real": ["Männer haben's schwer, nehmen's leicht, außen hart und innen ganz weich", "Männer werden als Kind schon auf Mann geeicht", "Männer nehmen in den Arm, Männer geben Geborgenheit"], "fake": "Tanzen im Regen, dem Leben entgegen, heute Nacht" },
+      "lyrics": {
+        "real": [
+          "Männer haben's schwer, nehmen's leicht, außen hart und innen ganz weich",
+          "Männer werden als Kind schon auf Mann geeicht",
+          "Männer nehmen in den Arm, Männer geben Geborgenheit"
+        ],
+        "fake": "Tanzen im Regen, dem Leben entgegen, heute Nacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "oE_s_yYq_eE" }
+      "links": {
+        "youtube": "oE_s_yYq_eE"
+      }
     },
     {
       "id": "german-westernhagen-freiheit",
@@ -454,7 +727,11 @@
       "country": "DE",
       "genre": "Rock / Ballad",
       "difficulty": "easy",
-      "mood": ["Emotional", "Inspirational", "Classic"],
+      "mood": [
+        "Emotional",
+        "Inspirational",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Wurde zur Hymne der deutschen Wiedervereinigung 1989/90.",
@@ -463,9 +740,18 @@
         "Ein fester Bestandteil der deutschen Rockgeschichte.",
         "Refrain: 'Freiheit... ist das einzige, was zählt!'"
       ],
-      "lyrics": { "real": ["Die Verträge sind gemacht, und es wurde viel gelacht", "Alle Türen stehen offen, auf ein Neues lässt sich hoffen", "Freiheit, Freiheit, ist das einzige, was zählt"], "fake": "In der Mitte der Nacht, haben wir das Licht angemacht" },
+      "lyrics": {
+        "real": [
+          "Die Verträge sind gemacht, und es wurde viel gelacht",
+          "Alle Türen stehen offen, auf ein Neues lässt sich hoffen",
+          "Freiheit, Freiheit, ist das einzige, was zählt"
+        ],
+        "fake": "In der Mitte der Nacht, haben wir das Licht angemacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "german-hosen-tage",
@@ -475,7 +761,11 @@
       "country": "DE",
       "genre": "Punk Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Die erfolgreichste Single in der Geschichte der Band um Campino.",
@@ -484,9 +774,18 @@
         "Ein moderner Klassiker des deutschsprachigen Rock.",
         "Refrain: 'An Tagen wie diesen, wünscht man sich Unendlichkeit!'"
       ],
-      "lyrics": { "real": ["Ich warte seit Wochen auf diesen Tag, und tanz' vor Freude über den Asphalt", "An Tagen wie diesen, wünscht man sich Unendlichkeit", "An Tagen wie diesen, haben wir noch ewig Zeit"], "fake": "Nichts kann uns stoppen, wir fliegen durch die Wolken irgendwie" },
+      "lyrics": {
+        "real": [
+          "Ich warte seit Wochen auf diesen Tag, und tanz' vor Freude über den Asphalt",
+          "An Tagen wie diesen, wünscht man sich Unendlichkeit",
+          "An Tagen wie diesen, haben wir noch ewig Zeit"
+        ],
+        "fake": "Nichts kann uns stoppen, wir fliegen durch die Wolken irgendwie"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "j09hpp3AxIE" }
+      "links": {
+        "youtube": "j09hpp3AxIE"
+      }
     },
     {
       "id": "german-aerzte-zu-spaet",
@@ -496,7 +795,11 @@
       "country": "DE",
       "genre": "Punk Rock",
       "difficulty": "easy",
-      "mood": ["Funny", "Energy", "Classic"],
+      "mood": [
+        "Funny",
+        "Energy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Einer der frühen Hits der 'besten Band der Welt'.",
@@ -505,9 +808,18 @@
         "Ein unverzichtbarer Song für jedes Ärzte-Konzert.",
         "Refrain: 'Doch eines Tages werd' ich mich rächen! Ich werd' die Herzen aller Mädchen brechen!'"
       ],
-      "lyrics": { "real": ["Du bist gegangen, hast mich einfach so verlassen", "Und jetzt steh ich hier, mutterseelenallein auf der Gassen", "Doch eines Tages werd' ich mich rächen, ich werd' die Herzen aller Mädchen brechen"], "fake": "In der Mitte der Straβe, spürst du die Hitze der Trommel" },
+      "lyrics": {
+        "real": [
+          "Du bist gegangen, hast mich einfach so verlassen",
+          "Und jetzt steh ich hier, mutterseelenallein auf der Gassen",
+          "Doch eines Tages werd' ich mich rächen, ich werd' die Herzen aller Mädchen brechen"
+        ],
+        "fake": "In der Mitte der Straβe, spürst du die Hitze der Trommel"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "german-falco-amadeus",
@@ -517,7 +829,11 @@
       "country": "AT",
       "genre": "Pop / Rap",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Dance"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "German Classics",
       "hints": [
         "Der einzige deutschsprachige Song, der jemals Platz 1 der US-Billboard-Charts erreichte.",
@@ -526,9 +842,18 @@
         "Zementierte seinen Status als globaler Superstar der 80er Jahre.",
         "Refrain: 'Amadeus, Amadeus, oh, oh, oh Amadeus!'"
       ],
-      "lyrics": { "real": ["Er war ein Genie und wir liebten ihn, er war ein Superstar, er war populär", "Amadeus, Amadeus, oh, oh, oh Amadeus", "Rock me Amadeus!"], "fake": "Tanzen in den Sternen, meine Gitarren spielen heute Nacht" },
+      "lyrics": {
+        "real": [
+          "Er war ein Genie und wir liebten ihn, er war ein Superstar, er war populär",
+          "Amadeus, Amadeus, oh, oh, oh Amadeus",
+          "Rock me Amadeus!"
+        ],
+        "fake": "Tanzen in den Sternen, meine Gitarren spielen heute Nacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "bHAtB2P6m9M" }
+      "links": {
+        "youtube": "bHAtB2P6m9M"
+      }
     },
     {
       "id": "german-peter-fox-haus",
@@ -538,7 +863,11 @@
       "country": "DE",
       "genre": "Reggae / Pop / Hip Hop",
       "difficulty": "easy",
-      "mood": ["Chill", "Happy", "Classic"],
+      "mood": [
+        "Chill",
+        "Happy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Stammt vom legendären Solo-Album 'Stadtaffe' des Seeed-Frontmanns.",
@@ -547,9 +876,16 @@
         "Ein moderner Meilenstein der deutschen Pop-Musik.",
         "Refrain: 'Und am Ende der Straße steht ein Haus am See!'"
       ],
-      "lyrics": { "real": ["Hier bin ich geborn, hier werd ich begraben, hab taube Ohren, einen weißen Bart"], "fake": "In der Mitte der Nacht, haben wir das Licht angemacht" },
+      "lyrics": {
+        "real": [
+          "Hier bin ich geborn, hier werd ich begraben, hab taube Ohren, einen weißen Bart"
+        ],
+        "fake": "In der Mitte der Nacht, haben wir das Licht angemacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "german-seeed-ding",
@@ -559,7 +895,11 @@
       "country": "DE",
       "genre": "Dancehall / Reggae",
       "difficulty": "easy",
-      "mood": ["Energy", "Dance", "Funny"],
+      "mood": [
+        "Energy",
+        "Dance",
+        "Funny"
+      ],
       "pack": "German Classics",
       "hints": [
         "Seeed brachten mit diesem Track den Berliner Dancehall-Sound auf ein neues Level.",
@@ -568,9 +908,18 @@
         "Gewann den Bundesvision Song Contest 2006.",
         "Refrain: 'Du hast da so ein Ding am Laufen!'"
       ],
-      "lyrics": { "real": ["Ich seh mein Schicksal in dei'm Ausschnitt, es ist heiß und es ist Zeit für den nächsten Schritt", "Du hast da so ein Ding am Laufen, mit mir und ein paar andern Typen draußen", "Ich schau dich an, und ich weiß genau was du denkst"], "fake": "Tanzen auf der Straβe, im Rhythmus des Herzens heute" },
+      "lyrics": {
+        "real": [
+          "Ich seh mein Schicksal in dei'm Ausschnitt, es ist heiß und es ist Zeit für den nächsten Schritt",
+          "Du hast da so ein Ding am Laufen, mit mir und ein paar andern Typen draußen",
+          "Ich schau dich an, und ich weiß genau was du denkst"
+        ],
+        "fake": "Tanzen auf der Straβe, im Rhythmus des Herzens heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "-tJYN-eG1zk" }
+      "links": {
+        "youtube": "-tJYN-eG1zk"
+      }
     },
     {
       "id": "german-jan-delay-jonny",
@@ -580,7 +929,11 @@
       "country": "DE",
       "genre": "Funk / Soul",
       "difficulty": "easy",
-      "mood": ["Groovy", "Happy", "Energy"],
+      "mood": [
+        "Groovy",
+        "Happy",
+        "Energy"
+      ],
       "pack": "German Classics",
       "hints": [
         "Jan Delay erfand sich hiermit als Funk-Showmaster mit seiner Band 'Disko No. 1' neu.",
@@ -589,9 +942,18 @@
         "Ein Inbegriff für modernen deutschen Funk.",
         "Refrain: 'Oh Jonny, oh Jonny, oh Jonny, oh Jonny!'"
       ],
-      "lyrics": { "real": ["Es war ein harter Tag, doch jetzt bin ich hier, Oh Jonny", "Du bist die Sonne, du bist das Licht, wenn du tanzt sieht man es nicht", "Oh Jonny, oh Jonny, oh Jonny, oh Jonny"], "fake": "Nichts kann uns stoppen, wenn wir durch die Nacht fliegen irgendwie" },
+      "lyrics": {
+        "real": [
+          "Es war ein harter Tag, doch jetzt bin ich hier, Oh Jonny",
+          "Du bist die Sonne, du bist das Licht, wenn du tanzt sieht man es nicht",
+          "Oh Jonny, oh Jonny, oh Jonny, oh Jonny"
+        ],
+        "fake": "Nichts kann uns stoppen, wenn wir durch die Nacht fliegen irgendwie"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "rTVjnBo66dU" }
+      "links": {
+        "youtube": "kW7u7ptj-j4"
+      }
     },
     {
       "id": "german-revolverheld-halt-dich",
@@ -601,7 +963,11 @@
       "country": "DE",
       "genre": "Pop Rock",
       "difficulty": "medium",
-      "mood": ["Emotional", "Romantic", "Classic"],
+      "mood": [
+        "Emotional",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Eines der erfolgreichsten deutschen Duette der 2010er Jahre.",
@@ -610,9 +976,18 @@
         "Ein Dauerbrenner im Radio und bei Hochzeiten.",
         "Refrain: 'Halt dich an mir fest, wenn du nicht mehr weiterweißt!'"
       ],
-      "lyrics": { "real": ["Lass uns noch ein bisschen bleiben, wir haben uns so viel zu schreiben", "Halt dich an mir fest, ich lass dich nicht allein", "Halt dich an mir fest, wenn du nicht mehr weiterweißt"], "fake": "In der Mitte der Träume, suchen wir das Licht der Sterne tonight" },
+      "lyrics": {
+        "real": [
+          "Lass uns noch ein bisschen bleiben, wir haben uns so viel zu schreiben",
+          "Halt dich an mir fest, ich lass dich nicht allein",
+          "Halt dich an mir fest, wenn du nicht mehr weiterweißt"
+        ],
+        "fake": "In der Mitte der Träume, suchen wir das Licht der Sterne tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "german-silbermond-das-beste",
@@ -622,7 +997,11 @@
       "country": "DE",
       "genre": "Pop / Ballad",
       "difficulty": "easy",
-      "mood": ["Romantic", "Emotional", "Classic"],
+      "mood": [
+        "Romantic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Die ultimative Liebeserklärung der 2000er Jahre.",
@@ -631,9 +1010,18 @@
         "Zementierte den Status von Silbermond als eine der wichtigsten deutschen Bands.",
         "Refrain: 'Das Beste, was mir je passiert ist!'"
       ],
-      "lyrics": { "real": ["Ich habe einen Schatz gefunden, und er trägt deinen Namen", "Du bist das Beste, was mir je passiert ist", "Es ist so schön, dass es dich gibt"], "fake": "In der Stille der Nacht, haben wir an dich gedacht" },
+      "lyrics": {
+        "real": [
+          "Ich habe einen Schatz gefunden, und er trägt deinen Namen",
+          "Du bist das Beste, was mir je passiert ist",
+          "Es ist so schön, dass es dich gibt"
+        ],
+        "fake": "In der Stille der Nacht, haben wir an dich gedacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "german-juli-welle",
@@ -643,7 +1031,11 @@
       "country": "DE",
       "genre": "Pop / Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Markierte den Beginn der neuen deutschen Pop-Welle Mitte der 2000er.",
@@ -652,9 +1044,18 @@
         "Wurde nach der Tsunami-Katastrophe 2004 zeitweise nicht mehr im Radio gespielt.",
         "Refrain: 'Das ist die perfekte Welle, das ist der perfekte Tag!'"
       ],
-      "lyrics": { "real": ["Du hast dein Leben lang gewartet, auf diesen einen Moment", "Das ist die perfekte Welle, das ist der perfekte Tag", "Lass dich einfach von ihr tragen, denk am besten gar nicht nach"], "fake": "Tanzen auf der Straβe, im Rhythmus des Lebens heute" },
+      "lyrics": {
+        "real": [
+          "Du hast dein Leben lang gewartet, auf diesen einen Moment",
+          "Das ist die perfekte Welle, das ist der perfekte Tag",
+          "Lass dich einfach von ihr tragen, denk am besten gar nicht nach"
+        ],
+        "fake": "Tanzen auf der Straβe, im Rhythmus des Lebens heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "ad8ukI7Z-b8" }
+      "links": {
+        "youtube": "ad8ukI7Z-b8"
+      }
     },
     {
       "id": "german-helden-denkmal",
@@ -664,7 +1065,11 @@
       "country": "DE",
       "genre": "Indie / Pop",
       "difficulty": "easy",
-      "mood": ["Funny", "Energy", "Classic"],
+      "mood": [
+        "Funny",
+        "Energy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Wir sind Helden brachten mit diesem Song intellektuellen Witz zurück in den Pop.",
@@ -673,9 +1078,18 @@
         "Ein Meilenstein des deutschen Indie-Pop.",
         "Refrain: 'Hol den Vorschlaghammer! Sie haben uns ein Denkmal gebaut!'"
       ],
-      "lyrics": { "real": ["Komm mal ans Fenster, komm mal her zu mir", "Hol den Vorschlaghammer, sie haben uns ein Denkmal gebaut", "Und jeder Vollidiot weiß, dass das Liebe ist"], "fake": "Nichts kann uns stoppen, wenn wir durch die Zeit fliegen irgendwie" },
+      "lyrics": {
+        "real": [
+          "Komm mal ans Fenster, komm mal her zu mir",
+          "Hol den Vorschlaghammer, sie haben uns ein Denkmal gebaut",
+          "Und jeder Vollidiot weiß, dass das Liebe ist"
+        ],
+        "fake": "Nichts kann uns stoppen, wenn wir durch die Zeit fliegen irgendwie"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "O7-L_u_3p_Y" }
+      "links": {
+        "youtube": "O7-L_u_3p_Y"
+      }
     },
     {
       "id": "german-stiller-kompliment",
@@ -685,7 +1099,11 @@
       "country": "DE",
       "genre": "Indie Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Wurde zur absoluten Mitsing-Hymne der 2000er Jahre.",
@@ -694,9 +1112,18 @@
         "Besticht durch seine charmante Einfachheit.",
         "Refrain: 'Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist!'"
       ],
-      "lyrics": { "real": ["Wenn man so will, bist du das Ziel einer langen Reise", "Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist", "Ein Kompliment, mit dem ich dich verwöhnen will"], "fake": "In der Mitte der Nacht, haben wir das Licht angemacht" },
+      "lyrics": {
+        "real": [
+          "Wenn man so will, bist du das Ziel einer langen Reise",
+          "Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist",
+          "Ein Kompliment, mit dem ich dich verwöhnen will"
+        ],
+        "fake": "In der Mitte der Nacht, haben wir das Licht angemacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "C4uXGzFZjqw"
+      }
     },
     {
       "id": "german-xavier-weg",
@@ -706,7 +1133,11 @@
       "country": "DE",
       "genre": "Soul / R&B",
       "difficulty": "medium",
-      "mood": ["Serious", "Deep", "Classic"],
+      "mood": [
+        "Serious",
+        "Deep",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Inbegriff des Sommermärchens der WM 2006 (wurde oft in der Kabine gespielt).",
@@ -715,9 +1146,18 @@
         "Ein klangvoller Meilenstein des modernen deutschen Soul.",
         "Refrain: 'Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer!'"
       ],
-      "lyrics": { "real": ["Ich hab gesucht, doch nichts gefunden, ich hab gewartet, doch es kam nichts", "Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer", "Nicht mit vielen wirst du dir einig sein, doch dieses Leben bietet so viel mehr"], "fake": "In der Stille der Nacht, haben wir an dich gedacht" },
+      "lyrics": {
+        "real": [
+          "Ich hab gesucht, doch nichts gefunden, ich hab gewartet, doch es kam nichts",
+          "Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer",
+          "Nicht mit vielen wirst du dir einig sein, doch dieses Leben bietet so viel mehr"
+        ],
+        "fake": "In der Stille der Nacht, haben wir an dich gedacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "german-sido-bilder",
@@ -727,7 +1167,11 @@
       "country": "DE",
       "genre": "Hip Hop / Pop",
       "difficulty": "easy",
-      "mood": ["Thoughtful", "Emotional", "Classic"],
+      "mood": [
+        "Thoughtful",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "German Classics",
       "hints": [
         "Markierte Sidos Wandel vom 'Masken-Rapper' zum ernstzunehmenden Künstler.",
@@ -736,9 +1180,18 @@
         "Einer der erfolgreichsten deutschen Rap-Songs aller Zeiten im Mainstream.",
         "Refrain: 'Ich kuck' zurück auf eine wunderschöne Zeit!'"
       ],
-      "lyrics": { "real": ["Ich hab' das alles mal gelernt, doch wieder vergessen", "Ich kuck zurück auf eine wunderschöne Zeit", "Und ich hab diese Bilder im Kopf, die mir keiner nehmen kann"], "fake": "Dancing in the street, moving to the beat of my life tonight" },
+      "lyrics": {
+        "real": [
+          "Ich hab' das alles mal gelernt, doch wieder vergessen",
+          "Ich kuck zurück auf eine wunderschöne Zeit",
+          "Und ich hab diese Bilder im Kopf, die mir keiner nehmen kann"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my life tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "RveIJFR7LV4"
+      }
     }
   ]
 }

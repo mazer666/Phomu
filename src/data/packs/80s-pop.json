@@ -14,7 +14,11 @@
       "country": "US",
       "genre": "Pop / R&B",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Dance"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Bekannt für den markanten Basslauf und den legendären Moonwalk.",
@@ -23,9 +27,18 @@
         "Einer der erfolgreichsten Solo-Songs aller Zeiten.",
         "Refrain: 'Billie Jean is not my lover! She's just a girl who claims that I am the one!'"
       ],
-      "lyrics": { "real": ["She was more like a beauty queen from a movie scene", "Billie Jean is not my lover, she's just a girl who claims that I am the one", "But the kid is not my son"], "fake": "Dancing in the street, moving to the beat of the heart" },
+      "lyrics": {
+        "real": [
+          "She was more like a beauty queen from a movie scene",
+          "Billie Jean is not my lover, she's just a girl who claims that I am the one",
+          "But the kid is not my son"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Zi_XLOBDo_Y" }
+      "links": {
+        "youtube": "Zi_XLOBDo_Y"
+      }
     },
     {
       "id": "80s-madonna-virgin",
@@ -35,7 +48,11 @@
       "country": "US",
       "genre": "Pop / Dance",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Machte Madonna endgültig zum globalen Superstar und Kultur-Phänomen.",
@@ -44,9 +61,18 @@
         "Thematisiert den Neuanfang nach einer schwierigen Zeit.",
         "Refrain: 'Like a virgin! Touched for the very first time!'"
       ],
-      "lyrics": { "real": ["I made it through the wilderness, somehow I made it through", "Like a virgin, touched for the very first time", "Like a virgin, when your heart beats next to mine"], "fake": "In the middle of the island, we're looking for the silent moon" },
+      "lyrics": {
+        "real": [
+          "I made it through the wilderness, somehow I made it through",
+          "Like a virgin, touched for the very first time",
+          "Like a virgin, when your heart beats next to mine"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "s__rX_fS6w" }
+      "links": {
+        "youtube": "s__rX_fS6w"
+      }
     },
     {
       "id": "80s-prince-rain",
@@ -56,7 +82,11 @@
       "country": "US",
       "genre": "Pop / Rock / Soul",
       "difficulty": "medium",
-      "mood": ["Emotional", "Epic", "Classic"],
+      "mood": [
+        "Emotional",
+        "Epic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Unvergessliches Gitarren-Solo und orchestraler Aufbau.",
@@ -65,9 +95,18 @@
         "Stammt aus dem gleichnamigen Film-Soundtrack.",
         "Refrain: 'Purple rain, purple rain! I only wanted to see you bathing in the purple rain!'"
       ],
-      "lyrics": { "real": ["I never meant to cause you any sorrow, I never meant to cause you any pain", "Purple rain, purple rain", "I only wanted to see you bathing in the purple rain"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "I never meant to cause you any sorrow, I never meant to cause you any pain",
+          "Purple rain, purple rain",
+          "I only wanted to see you bathing in the purple rain"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "TvnYmWpP_CQ" }
+      "links": {
+        "youtube": "TvnYmWpP_CQ"
+      }
     },
     {
       "id": "80s-lauper-fun",
@@ -77,7 +116,11 @@
       "country": "US",
       "genre": "Pop / New Wave",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Wurde zur ultimativen Hymne für Frauen-Unabhängigkeit und Spaß.",
@@ -86,9 +129,18 @@
         "Ursprünglich von einem Mann geschrieben, aber Cyndi änderte die Perspektive.",
         "Refrain: 'Oh girls just want to have fun!'"
       ],
-      "lyrics": { "real": ["I come home in the morning light, my mother says 'When you gonna live your life right?'", "Oh girls, they wanna have fun", "That's all they really want, is some fun"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "I come home in the morning light, my mother says 'When you gonna live your life right?'",
+          "Oh girls, they wanna have fun",
+          "That's all they really want, is some fun"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "PjEb-r6" }
+      "links": {
+        "youtube": "PjEb-r6"
+      }
     },
     {
       "id": "80s-whitney-dance",
@@ -98,7 +150,11 @@
       "country": "US",
       "genre": "Pop / Dance",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Confident"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Confident"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Whitney Houstons kraftvoller Gesang über einem euphorischen Dance-Beat.",
@@ -107,9 +163,18 @@
         "Einer ihrer erfolgreichsten und fröhlichsten Hits.",
         "Refrain: 'Oh, I wanna dance with somebody! I wanna feel the heat with somebody!'"
       ],
-      "lyrics": { "real": ["Clock strikes upon the hour and the sun begins to fade", "Oh, I wanna dance with somebody, I wanna feel the heat with somebody", "Yeah, I wanna dance with somebody, with somebody who loves me"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Clock strikes upon the hour and the sun begins to fade",
+          "Oh, I wanna dance with somebody, I wanna feel the heat with somebody",
+          "Yeah, I wanna dance with somebody, with somebody who loves me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "eH3giaIzLJw" }
+      "links": {
+        "youtube": "eH3giaIzLJw"
+      }
     },
     {
       "id": "80s-george-whisper",
@@ -119,7 +184,11 @@
       "country": "GB",
       "genre": "Pop / Soul",
       "difficulty": "medium",
-      "mood": ["Emotional", "Romantic", "Classic"],
+      "mood": [
+        "Emotional",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Besitzt eines der bekanntesten Saxophon-Solos der Musikgeschichte.",
@@ -128,9 +197,18 @@
         "Ein Inbegriff für gefühlvollen 80er-Jahre-Pop.",
         "Refrain: 'I'm never gonna dance again, guilty feet have got no rhythm!'"
       ],
-      "lyrics": { "real": ["I feel so unsure, as I take your hand and lead you to the dance floor", "I'm never gonna dance again, guilty feet have got no rhythm", "Though it's easy to pretend, I know you're not a fool"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "I feel so unsure, as I take your hand and lead you to the dance floor",
+          "I'm never gonna dance again, guilty feet have got no rhythm",
+          "Though it's easy to pretend, I know you're not a fool"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "iz" }
+      "links": {
+        "youtube": "iz"
+      }
     },
     {
       "id": "80s-eurythmics-dreams",
@@ -140,7 +218,11 @@
       "country": "GB",
       "genre": "Synth Pop / New Wave",
       "difficulty": "easy",
-      "mood": ["Moody", "Electronic", "Classic"],
+      "mood": [
+        "Moody",
+        "Electronic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Besticht durch den hypnotischen Synthesizer-Arpeggio-Sound.",
@@ -149,9 +231,18 @@
         "Ein zeitloser Klassiker des Synth-Pop.",
         "Refrain: 'Sweet dreams are made of this! Who am I to disagree?'"
       ],
-      "lyrics": { "real": ["Sweet dreams are made of this, who am I to disagree?", "Travel the world and the seven seas, everybody's looking for something", "Some of them want to use you, some of them want to get used by you"], "fake": "In the shadow of the night, I'm looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Sweet dreams are made of this, who am I to disagree?",
+          "Travel the world and the seven seas, everybody's looking for something",
+          "Some of them want to use you, some of them want to get used by you"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "qeMFqkcPYcg" }
+      "links": {
+        "youtube": "qeMFqkcPYcg"
+      }
     },
     {
       "id": "80s-duran-wolf",
@@ -161,7 +252,11 @@
       "country": "GB",
       "genre": "New Wave / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Cool", "Classic"],
+      "mood": [
+        "Energy",
+        "Cool",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Das Video im Indiana-Jones-Stil prägte das Image der Band.",
@@ -170,9 +265,18 @@
         "Half Duran Duran, den US-Markt zu erobern.",
         "Refrain: 'In touch with the ground, I'm on the hunt, I'm after you!'"
       ],
-      "lyrics": { "real": ["Dark in the city, night is a wire, steam in the subway, earth is afire", "In touch with the ground, I'm on the hunt I'm after you", "Smell like a sound, I'm lost in a crowd and I'm hungry like the wolf"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "Dark in the city, night is a wire, steam in the subway, earth is afire",
+          "In touch with the ground, I'm on the hunt I'm after you",
+          "Smell like a sound, I'm lost in a crowd and I'm hungry like the wolf"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "oOg5evPPog" }
+      "links": {
+        "youtube": "oOg5evPPog"
+      }
     },
     {
       "id": "80s-police-breath",
@@ -182,7 +286,11 @@
       "country": "GB",
       "genre": "Pop / Rock",
       "difficulty": "easy",
-      "mood": ["Obsessive", "Moody", "Classic"],
+      "mood": [
+        "Obsessive",
+        "Moody",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Oft als Liebeslied missverstanden, handelt es eigentlich von Überwachung und Besessenheit.",
@@ -191,9 +299,18 @@
         "Einer der am häufigsten gespielten Radio-Songs weltweit.",
         "Refrain: 'Every breath you take, every move you make, I'll be watching you!'"
       ],
-      "lyrics": { "real": ["Every breath you take, and every move you make", "Every bond you break, every step you take, I'll be watching you", "Every single day, and every word you say, every game you play, every night you stay"], "fake": "In the middle of the night, we're looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "Every breath you take, and every move you make",
+          "Every bond you break, every step you take, I'll be watching you",
+          "Every single day, and every word you say, every game you play, every night you stay"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "OMOGwi90" }
+      "links": {
+        "youtube": "OMOGwi90"
+      }
     },
     {
       "id": "80s-aha-takeonme",
@@ -203,7 +320,11 @@
       "country": "NO",
       "genre": "Synth Pop",
       "difficulty": "medium",
-      "mood": ["Energy", "Classic", "Happy"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Happy"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Bekannt für das wegweisende Bleistiftzeichnungen-Animationsvideo.",
@@ -212,9 +333,18 @@
         "Norwegens erfolgreichster Pop-Export.",
         "Refrain: 'Take on me! (Take on me) Take me on! (Take on me)'"
       ],
-      "lyrics": { "real": ["We're talking away, I don't know what I'm to say", "Take on me (take on me), take me on (take on me)", "I'll be gone in a day or two"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "We're talking away, I don't know what I'm to say",
+          "Take on me (take on me), take me on (take on me)",
+          "I'll be gone in a day or two"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "djV11X" }
+      "links": {
+        "youtube": "djV11X"
+      }
     },
     {
       "id": "80s-rick-astley-never",
@@ -224,7 +354,11 @@
       "country": "GB",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Rick Astleys Debütsingle, die ihn zum Weltstar machte.",
@@ -233,9 +367,18 @@
         "Produziert vom legendären Trio Stock Aitken Waterman.",
         "Refrain: 'Never gonna give you up! Never gonna let you down!'"
       ],
-      "lyrics": { "real": ["We're no strangers to love, you know the rules and so do I", "Never gonna give you up, never gonna let you down", "Never gonna run around and desert you"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "We're no strangers to love, you know the rules and so do I",
+          "Never gonna give you up, never gonna let you down",
+          "Never gonna run around and desert you"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "dQw4w9WgXcQ" }
+      "links": {
+        "youtube": "dQw4w9WgXcQ"
+      }
     },
     {
       "id": "80s-journey-believin",
@@ -245,7 +388,11 @@
       "country": "US",
       "genre": "Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Inspirational", "Classic"],
+      "mood": [
+        "Happy",
+        "Inspirational",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff der 'Feel-Good' Stadionhymne.",
@@ -254,9 +401,18 @@
         "Erlebte durch Serien wie 'The Sopranos' und 'Glee' ein massives Revival.",
         "Refrain: 'Don't stop believin'! Hold on to that feelin'!'"
       ],
-      "lyrics": { "real": ["Just a small town girl, livin' in a lonely world", "Don't stop believin', hold on to that feelin'", "Streetlights, people, oh-oh-oh"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "Just a small town girl, livin' in a lonely world",
+          "Don't stop believin', hold on to that feelin'",
+          "Streetlights, people, oh-oh-oh"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "V_Y1uX" }
+      "links": {
+        "youtube": "V_Y1uX"
+      }
     },
     {
       "id": "80s-toto-africa",
@@ -266,7 +422,11 @@
       "country": "US",
       "genre": "Soft Rock / Pop",
       "difficulty": "hard",
-      "mood": ["Atmospheric", "Deep", "Classic"],
+      "mood": [
+        "Atmospheric",
+        "Deep",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Besticht durch seine komplexe Perkussion und die harmonischen Gesänge.",
@@ -275,9 +435,18 @@
         "Ein handwerklich perfekt produzierter Song der 'Studiomusiker-Supergroup'.",
         "Refrain: 'It's gonna take a lot to drag me away from you!'"
       ],
-      "lyrics": { "real": ["The wild dogs cry out in the night, as they grow restless longing for some solitary company", "It's gonna take a lot to drag me away from you", "There's nothing that a hundred men or more could ever do"], "fake": "In the shadow of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "The wild dogs cry out in the night, as they grow restless longing for some solitary company",
+          "It's gonna take a lot to drag me away from you",
+          "There's nothing that a hundred men or more could ever do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "FTQbiNsz" }
+      "links": {
+        "youtube": "FTQbiNsz"
+      }
     },
     {
       "id": "80s-tears-world",
@@ -287,7 +456,11 @@
       "country": "GB",
       "genre": "New Wave / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Epic", "Thoughtful", "Classic"],
+      "mood": [
+        "Epic",
+        "Thoughtful",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Besticht durch den treibenden 'Shuffle-Beat' und die flächigen Synthesizer.",
@@ -296,9 +469,18 @@
         "Der eingängige Gitarren-Hook ist sofort erkennbar.",
         "Refrain: 'Acting on your best behavior, turn your back on Mother Nature!'"
       ],
-      "lyrics": { "real": ["Welcome to your life, there's no turning back", "Even while we sleep, we will find you acting on your best behavior", "Everybody wants to rule the world"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Welcome to your life, there's no turning back",
+          "Even while we sleep, we will find you acting on your best behavior",
+          "Everybody wants to rule the world"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "aGCdLKXnf3w" }
+      "links": {
+        "youtube": "aGCdLKXnf3w"
+      }
     },
     {
       "id": "80s-culture-chameleon",
@@ -308,7 +490,11 @@
       "country": "GB",
       "genre": "Pop / New Wave",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Energy"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Energy"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff der farbenfrohen und androgynen Ära von Boy George.",
@@ -317,9 +503,18 @@
         "War ein globaler Nummer-Eins-Hit.",
         "Refrain: 'Karma karma karma karma karma chameleon!'"
       ],
-      "lyrics": { "real": ["Desert loving in your eyes all the way, if I listen to your lies would you say", "Karma, karma, karma, karma, karma chameleon", "You come and go, you come and go"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "Desert loving in your eyes all the way, if I listen to your lies would you say",
+          "Karma, karma, karma, karma, karma chameleon",
+          "You come and go, you come and go"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "JmcA9L" }
+      "links": {
+        "youtube": "JmcA9L"
+      }
     },
     {
       "id": "80s-soft-cell-love",
@@ -329,7 +524,11 @@
       "country": "GB",
       "genre": "Synth Pop",
       "difficulty": "easy",
-      "mood": ["Moody", "Energy", "Classic"],
+      "mood": [
+        "Moody",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Ursprünglich ein Northern-Soul-Song von Gloria Jones.",
@@ -338,9 +537,18 @@
         "Thematisiert eine toxische, komplizierte Liebe.",
         "Refrain: 'Sometimes I feel I've got to run away! I've got to get away!'"
       ],
-      "lyrics": { "real": ["Sometimes I feel I've got to run away, I've got to get away", "From the pain you drive into the heart of me", "The love we share, seems to go nowhere"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Sometimes I feel I've got to run away, I've got to get away",
+          "From the pain you drive into the heart of me",
+          "The love we share, seems to go nowhere"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "XZVpR3O" }
+      "links": {
+        "youtube": "XZVpR3O"
+      }
     },
     {
       "id": "80s-depeche-enough",
@@ -350,7 +558,11 @@
       "country": "GB",
       "genre": "Synth Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Electronic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Electronic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Früher Hit der Band aus der Ära von Vince Clarke.",
@@ -359,9 +571,18 @@
         "Ein unverzichtbarer Song für jede Synth-Pop-Party.",
         "Refrain: 'And I just can't get enough! And I just can't get enough!'"
       ],
-      "lyrics": { "real": ["When I'm with you baby, I go out of my head, and I just can't get enough", "We walk together, we're walking down the street", "And I just can't get enough, I just can't get enough"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "When I'm with you baby, I go out of my head, and I just can't get enough",
+          "We walk together, we're walking down the street",
+          "And I just can't get enough, I just can't get enough"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "_6VUPi" }
+      "links": {
+        "youtube": "_6VUPi"
+      }
     },
     {
       "id": "80s-nena-luftballons",
@@ -371,7 +592,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Welle",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Serious"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Serious"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Einer der wenigen deutschsprachigen Songs, die weltweit zum Hit wurden.",
@@ -380,9 +605,18 @@
         "Nenas markante Stimme und Ausstrahlung machten sie zur Ikone.",
         "Refrain: '99 Luftballons, auf ihrem Weg zum Horizont!'"
       ],
-      "lyrics": { "real": ["Hast du etwas Zeit für mich, dann singe ich ein Lied für dich", "99 Luftballons, auf ihrem Weg zum Horizont", "Denkst du vielleicht grad an mich, dann singe ich ein Lied für dich"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "Hast du etwas Zeit für mich, dann singe ich ein Lied für dich",
+          "99 Luftballons, auf ihrem Weg zum Horizont",
+          "Denkst du vielleicht grad an mich, dann singe ich ein Lied für dich"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Lur-S" }
+      "links": {
+        "youtube": "Lur-S"
+      }
     },
     {
       "id": "80s-falco-kommissar",
@@ -392,7 +626,11 @@
       "country": "AT",
       "genre": "Pop / Rap / Electronic",
       "difficulty": "medium",
-      "mood": ["Cool", "Energy", "Classic"],
+      "mood": [
+        "Cool",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Einer der ersten globalen Erfolge, die Rap-Elemente mit weißem Pop kombinierten.",
@@ -401,9 +639,18 @@
         "Zementierte Falcos Ruf als 'erster weißer Rapper'.",
         "Refrain: 'Drah' di net um, oh, oh, oh! Schau, schau, der Kommissar geht um!'"
       ],
-      "lyrics": { "real": ["Zwei, drei, vier, eins, zwei, drei, na es ist nichts dabei", "Drah' di net um, oh, oh, oh, schau schau, der Kommissar geht um", "Wenn er dich anspricht, und du weißt warum"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Zwei, drei, vier, eins, zwei, drei, na es ist nichts dabei",
+          "Drah' di net um, oh, oh, oh, schau schau, der Kommissar geht um",
+          "Wenn er dich anspricht, und du weißt warum"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-alphaville-young",
@@ -413,7 +660,11 @@
       "country": "DE",
       "genre": "Synth Pop",
       "difficulty": "easy",
-      "mood": ["Atmospheric", "Classic", "Melancholic"],
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Melancholic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Die ultimative Ballade der Synth-Pop-Ära.",
@@ -422,9 +673,18 @@
         "Marion Golds Stimme verleiht dem Song eine einzigartige Weite.",
         "Refrain: 'Forever young! I want to be forever young!'"
       ],
-      "lyrics": { "real": ["Let's dance in style, let's dance for a while, heaven can wait, we're only watching the skies", "Forever young, I want to be forever young", "Do you really want to live forever, forever and ever?"], "fake": "Walking down the silver path under the dragon's wrath tonight" },
+      "lyrics": {
+        "real": [
+          "Let's dance in style, let's dance for a while, heaven can wait, we're only watching the skies",
+          "Forever young, I want to be forever young",
+          "Do you really want to live forever, forever and ever?"
+        ],
+        "fake": "Walking down the silver path under the dragon's wrath tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "t1DWWf" }
+      "links": {
+        "youtube": "t1DWWf"
+      }
     },
     {
       "id": "80s-modern-talking-heart",
@@ -434,7 +694,11 @@
       "country": "DE",
       "genre": "Euro Disco / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Energy"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Energy"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Begründete das Phänomen 'Modern Talking' (Dieter Bohlen und Thomas Anders).",
@@ -443,9 +707,18 @@
         "Ein Inbegriff für den Euro-Disco-Sound der Mitte der 80er.",
         "Refrain: 'You're my heart, you're my soul! I'll keep it shining everywhere I go!'"
       ],
-      "lyrics": { "real": ["Deep in my heart, there's a fire - a burning heart", "You're my heart, you're my soul, I'll keep it shining everywhere I go", "You're my heart, you're my soul, I'll be holding you forever"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Deep in my heart, there's a fire - a burning heart",
+          "You're my heart, you're my soul, I'll keep it shining everywhere I go",
+          "You're my heart, you're my soul, I'll be holding you forever"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4kHl4GW" }
+      "links": {
+        "youtube": "4kHl4GW"
+      }
     },
     {
       "id": "80s-sandra-magdalena",
@@ -455,7 +728,11 @@
       "country": "DE",
       "genre": "Euro Disco / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Happy"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Happy"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Sandra war zuvor Mitglied der Gruppe 'Arabesque'.",
@@ -464,9 +741,18 @@
         "War in über 20 Ländern auf Platz 1 der Charts.",
         "Refrain: 'I'll never be Maria Magdalena! (You're a creature of the night)'"
       ],
-      "lyrics": { "real": ["You take my love for granted like a thousand times before", "I'll never be Maria Magdalena, (you're a creature of the night)", "Maria Magdalena, (you're a creature of the night)"], "fake": "Dancing in the street, moving to the beat of my own drum" },
+      "lyrics": {
+        "real": [
+          "You take my love for granted like a thousand times before",
+          "I'll never be Maria Magdalena, (you're a creature of the night)",
+          "Maria Magdalena, (you're a creature of the night)"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "80s-psb-westend",
@@ -476,7 +762,11 @@
       "country": "GB",
       "genre": "Synth Pop",
       "difficulty": "easy",
-      "mood": ["Cool", "Electronic", "Classic"],
+      "mood": [
+        "Cool",
+        "Electronic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff des coolen, urbanen Synth-Pop der Mitte der 80er.",
@@ -485,9 +775,18 @@
         "War ein globaler Nummer-Eins-Hit.",
         "Refrain: 'In a West End town, a dead end world!'"
       ],
-      "lyrics": { "real": ["Sometimes you're better off dead, there's a gun in your hand and it's pointing at your head", "In a West End town, a dead end world, the East End boys and West End girls", "West End girls, West End girls"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Sometimes you're better off dead, there's a gun in your hand and it's pointing at your head",
+          "In a West End town, a dead end world, the East End boys and West End girls",
+          "West End girls, West End girls"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S0N6_" }
+      "links": {
+        "youtube": "S0N6_"
+      }
     },
     {
       "id": "80s-neworder-monday",
@@ -497,7 +796,11 @@
       "country": "GB",
       "genre": "Synth Pop / Dance",
       "difficulty": "medium",
-      "mood": ["Electronic", "Energy", "Classic"],
+      "mood": [
+        "Electronic",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Gilt als die meistverkaufte 12-Zoll-Single aller Zeiten.",
@@ -506,9 +809,18 @@
         "Besitzt eine kühle, fast mechanische Atmosphäre.",
         "Refrain: 'How does it feel? To treat me like you do?'"
       ],
-      "lyrics": { "real": ["How does it feel, to treat me like you do? When you've laid your hands upon me", "And told me who you are? I thought I was mistaken", "I thought I heard your words - tell me, how do I feel?"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "How does it feel, to treat me like you do? When you've laid your hands upon me",
+          "And told me who you are? I thought I was mistaken",
+          "I thought I heard your words - tell me, how do I feel?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "80s-humanleague-wantme",
@@ -518,7 +830,11 @@
       "country": "GB",
       "genre": "Synth Pop",
       "difficulty": "easy",
-      "mood": ["Dramatic", "Electronic", "Classic"],
+      "mood": [
+        "Dramatic",
+        "Electronic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Handelt von einem Dialog zwischen einem Entdecker und seiner ehemaligen Muse.",
@@ -527,9 +843,18 @@
         "Der Refrain ist eine der stärksten Hooklines des Jahrzehnts.",
         "Refrain: 'Don't you want me baby? Don't you want me, oh!'"
       ],
-      "lyrics": { "real": ["You were working as a waitress in a cocktail bar, when I met you", "Don't, don't you want me? You know I can't believe it when I hear that you won't see me", "Don't, don't you want me? You know I don't believe you when you say that you don't need me"], "fake": "Dancing in the street, moving to the beat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "You were working as a waitress in a cocktail bar, when I met you",
+          "Don't, don't you want me? You know I can't believe it when I hear that you won't see me",
+          "Don't, don't you want me? You know I don't believe you when you say that you don't need me"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "uPudE8nDog0" }
+      "links": {
+        "youtube": "uPudE8nDog0"
+      }
     },
     {
       "id": "80s-yazoo-onlyyou",
@@ -539,7 +864,11 @@
       "country": "GB",
       "genre": "Synth Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Electronic", "Classic"],
+      "mood": [
+        "Romantic",
+        "Electronic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Vince Clarkes erste Veröffentlichung nach seinem Ausstieg bei Depeche Mode.",
@@ -548,9 +877,18 @@
         "Wurde zu einem der meistgespielten Liebeslieder der 80er Jahre.",
         "Refrain: 'All I needed was the love you gave! All I needed for another day!'"
       ],
-      "lyrics": { "real": ["Looking at the address of the letters I have sent, or the memory of it", "All I needed was the love you gave, all I needed for another day", "And all I ever knew, only you"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Looking at the address of the letters I have sent, or the memory of it",
+          "All I needed was the love you gave, all I needed for another day",
+          "And all I ever knew, only you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "AsMcT03cSvs"
+      }
     },
     {
       "id": "80s-bronski-boy",
@@ -560,7 +898,11 @@
       "country": "GB",
       "genre": "Synth Pop / Dance",
       "difficulty": "medium",
-      "mood": ["Sad", "Powerful", "Classic"],
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Thematisiert auf eindringliche Weise Homophobie und die Flucht eines jungen Mannes aus der Provinz.",
@@ -569,9 +911,18 @@
         "Ein Inbegriff für den elektronischen 'Hi-NRG' Sound.",
         "Refrain: 'Run away, turn away, run away, turn away, run away!'"
       ],
-      "lyrics": { "real": ["You leave in the morning with everything you own in a little black case", "Run away, turn away, run away, turn away, run away", "Pushed around and kicked around, always a lonely boy"], "fake": "In the shadow of the valley, I'm looking for a rally of hope tonight" },
+      "lyrics": {
+        "real": [
+          "You leave in the morning with everything you own in a little black case",
+          "Run away, turn away, run away, turn away, run away",
+          "Pushed around and kicked around, always a lonely boy"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "80s-frankie-relax",
@@ -581,7 +932,11 @@
       "country": "GB",
       "genre": "Pop / Dance",
       "difficulty": "easy",
-      "mood": ["Energy", "Controversial", "Classic"],
+      "mood": [
+        "Energy",
+        "Controversial",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Sorgte durch seinen provokanten Text und das Video für einen riesigen Skandal.",
@@ -590,9 +945,18 @@
         "Die 'Frankie Say Relax' T-Shirts waren ein Mode-Phänomen.",
         "Refrain: 'Relax, don't do it, when you want to go to it!'"
       ],
-      "lyrics": { "real": ["Relax, don't do it, when you want to suck it to it", "Relax, don't do it, when you want to go to it", "Relax, don't do it, when you want to come"], "fake": "In the middle of the night, we're looking for the light of our happy love" },
+      "lyrics": {
+        "real": [
+          "Relax, don't do it, when you want to suck it to it",
+          "Relax, don't do it, when you want to go to it",
+          "Relax, don't do it, when you want to come"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our happy love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Yem_i" }
+      "links": {
+        "youtube": "Yem_i"
+      }
     },
     {
       "id": "80s-dead-alive-round",
@@ -602,7 +966,11 @@
       "country": "GB",
       "genre": "Hi-NRG / Dance",
       "difficulty": "easy",
-      "mood": ["Energy", "Dance", "Classic"],
+      "mood": [
+        "Energy",
+        "Dance",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Erster großer Erfolg für das Produzenten-Trio Stock Aitken Waterman.",
@@ -611,9 +979,18 @@
         "Ein absoluter Klassiker in jedem 80er-Jahre-Club.",
         "Refrain: 'You spin me right round, baby, right round!'"
       ],
-      "lyrics": { "real": ["If I I get to know your name, well if I could trace your private number, baby", "You spin me right round, baby, right round like a record, baby, right round round round", "I, I got to maintain my pride, I, I'm gonna reach out and touch you"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "If I I get to know your name, well if I could trace your private number, baby",
+          "You spin me right round, baby, right round like a record, baby, right round round round",
+          "I, I got to maintain my pride, I, I'm gonna reach out and touch you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "PGNiXGX2nLU" }
+      "links": {
+        "youtube": "PGNiXGX2nLU"
+      }
     },
     {
       "id": "80s-bananarama-venus",
@@ -623,7 +1000,11 @@
       "country": "GB",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Eine moderne Pop-Interpretation des Hits von Shocking Blue.",
@@ -632,9 +1013,18 @@
         "Ein Inbegriff für den fröhlichen Sound der Mitte der 80er.",
         "Refrain: 'She's got it! Yeah, baby, she's got it!'"
       ],
-      "lyrics": { "real": ["She's got it, yeah baby, she's got it", "I'm your Venus, I'm your fire at your desire", "Well, I'm your Venus, I'm your fire at your desire"], "fake": "Dancing in the street, moving to the beat of my own drum" },
+      "lyrics": {
+        "real": [
+          "She's got it, yeah baby, she's got it",
+          "I'm your Venus, I'm your fire at your desire",
+          "Well, I'm your Venus, I'm your fire at your desire"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "80s-belinda-heaven",
@@ -644,7 +1034,11 @@
       "country": "US",
       "genre": "Pop Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Belinda Carlisle startete hiermit nach den 'Go-Go's' eine erfolgreiche Solo-Karriere.",
@@ -653,9 +1047,18 @@
         "Wurde zu einer der bekanntesten Radio-Hymnen des Jahrzehnts.",
         "Refrain: 'Ooh, baby, do you know what that's worth? Ooh, heaven is a place on earth!'"
       ],
-      "lyrics": { "real": ["Ooh, baby, do you know what that's worth? Ooh, heaven is a place on earth", "They say in heaven love comes first, we'll make heaven a place on earth", "When I feel alone, I reach for you, and you bring me home"], "fake": "In the middle of the street, you can feel the heat of our happy heart tonight" },
+      "lyrics": {
+        "real": [
+          "Ooh, baby, do you know what that's worth? Ooh, heaven is a place on earth",
+          "They say in heaven love comes first, we'll make heaven a place on earth",
+          "When I feel alone, I reach for you, and you bring me home"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "P-v_F" }
+      "links": {
+        "youtube": "P-v_F"
+      }
     },
     {
       "id": "80s-kimwilde-kids",
@@ -665,7 +1068,11 @@
       "country": "GB",
       "genre": "New Wave / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Young", "Classic"],
+      "mood": [
+        "Energy",
+        "Young",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Kim Wildes Debütsingle, die sie über Nacht zum Pop-Star machte.",
@@ -674,9 +1081,18 @@
         "Ein zeitloser Klassiker, der bis heute in Clubs gespielt wird.",
         "Refrain: 'Woah-oh! We're the kids in America!'"
       ],
-      "lyrics": { "real": ["Looking out a dirty window, down the street to the blind hotel", "Woah-oh, we're the kids in America (Woah-oh)", "Woah-oh, we're the kids in America (Woah-oh)"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Looking out a dirty window, down the street to the blind hotel",
+          "Woah-oh, we're the kids in America (Woah-oh)",
+          "Woah-oh, we're the kids in America (Woah-oh)"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "80s-trio-dada",
@@ -686,7 +1102,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Welle",
       "difficulty": "easy",
-      "mood": ["Funny", "Minimalist", "Classic"],
+      "mood": [
+        "Funny",
+        "Minimalist",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff des radikalen Minimalismus der Neuen Deutschen Welle.",
@@ -695,9 +1115,18 @@
         "War ein globaler Überraschungshit, auch im englischsprachigen Raum.",
         "Refrain: 'Da da da, ich lieb' dich nicht, du liebst mich nicht!'"
       ],
-      "lyrics": { "real": ["Da da da, ich lieb dich nicht du liebst mich nicht", "Da da da, ich lieb dich nicht du liebst mich nicht", "Aha!"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Da da da, ich lieb dich nicht du liebst mich nicht",
+          "Da da da, ich lieb dich nicht du liebst mich nicht",
+          "Aha!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-cccatch-canlose",
@@ -707,7 +1136,11 @@
       "country": "DE/NL",
       "genre": "Euro Disco",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Dance"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "C.C. Catch wurde von Dieter Bohlen entdeckt und produziert.",
@@ -716,9 +1149,18 @@
         "Sicherte ihr den Status als 'Euro-Disco-Prinzessin'.",
         "Refrain: 'I can lose my heart tonight! If you're gonna be my knight!'"
       ],
-      "lyrics": { "real": ["I can lose my heart tonight, if you're gonna be my knight", "I can lose my heart tonight, everything will be alright", "Stay with me, stay with me"], "fake": "In the shadow of the night, we're looking for the light of our broken soul" },
+      "lyrics": {
+        "real": [
+          "I can lose my heart tonight, if you're gonna be my knight",
+          "I can lose my heart tonight, everything will be alright",
+          "Stay with me, stay with me"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "80s-badboysblue-woman",
@@ -728,7 +1170,11 @@
       "country": "DE",
       "genre": "Euro Disco",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Dance"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Bad Boys Blue waren die Konkurrenz zu Modern Talking in den Charts.",
@@ -737,9 +1183,18 @@
         "Ein Dauerbrenner in jeder 80er-Jahre-Disco.",
         "Refrain: 'You're a woman, I'm a man! This is more than just a game!'"
       ],
-      "lyrics": { "real": ["You're a woman, I'm a man, this is more than just a game", "I can make you feel so good, in the middle of the night", "Come on baby, take my hand"], "fake": "In the middle of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "You're a woman, I'm a man, this is more than just a game",
+          "I can make you feel so good, in the middle of the night",
+          "Come on baby, take my hand"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-joy-japanese",
@@ -749,7 +1204,11 @@
       "country": "AT",
       "genre": "Euro Disco",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Österreichischer Euro-Disco-Beitrag zum weltweiten Erfolg.",
@@ -758,9 +1217,18 @@
         "Ein Inbegriff für unbeschwerten 80er-Jahre-Tanzsound.",
         "Refrain: 'Japanese girls! Oh, oh, oh, oh!'"
       ],
-      "lyrics": { "real": ["Japanese girls, Japanese girls, I love you Japanese girls", "In the land of the rising sun, she's the one and only one", "Japanese girls, oh oh oh oh"], "fake": "Dancing in the street, moving to the beat of my own drum tonight" },
+      "lyrics": {
+        "real": [
+          "Japanese girls, Japanese girls, I love you Japanese girls",
+          "In the land of the rising sun, she's the one and only one",
+          "Japanese girls, oh oh oh oh"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ye7SNKVu8Cw"
+      }
     },
     {
       "id": "80s-gazebo-chopin",
@@ -770,7 +1238,11 @@
       "country": "IT",
       "genre": "Italo Disco",
       "difficulty": "easy",
-      "mood": ["Romantic", "Classic", "Dreamy"],
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Dreamy"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff des Italo Disco mit einem Hauch von Melancholie.",
@@ -779,9 +1251,18 @@
         "Ein Welthit, der Italo Disco in den Mainstream brachte.",
         "Refrain: 'I like Chopin! Love the way you celebrate!'"
       ],
-      "lyrics": { "real": ["Remember that piano, so delightful unusual", "I like Chopin, love the way you celebrate", "Rainy days never say goodbye"], "fake": "In the middle of the night, we're looking for the light of our happy love" },
+      "lyrics": {
+        "real": [
+          "Remember that piano, so delightful unusual",
+          "I like Chopin, love the way you celebrate",
+          "Rainy days never say goodbye"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our happy love"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-plion-happy",
@@ -791,7 +1272,11 @@
       "country": "IT",
       "genre": "Italo Disco",
       "difficulty": "easy",
-      "mood": ["Happy", "Electronic", "Energy"],
+      "mood": [
+        "Happy",
+        "Electronic",
+        "Energy"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Ein weiterer Meilenstein des Italo Disco der frühen 80er.",
@@ -800,9 +1285,18 @@
         "P. Lion war einer der Pioniere des melodischen Italo Disco.",
         "Refrain: 'Happy children! In the garden of the rising sun!'"
       ],
-      "lyrics": { "real": ["Happy children, in the garden of the rising sun", "Happy children, they are playing in the light", "Oh, oh, oh, happy children"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Happy children, in the garden of the rising sun",
+          "Happy children, they are playing in the light",
+          "Oh, oh, oh, happy children"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "80s-ryan-paris-dolce",
@@ -812,7 +1306,11 @@
       "country": "IT",
       "genre": "Italo Disco",
       "difficulty": "easy",
-      "mood": ["Summer", "Cool", "Classic"],
+      "mood": [
+        "Summer",
+        "Cool",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Der ultimative Italo-Sommerhit der frühen 80er.",
@@ -821,9 +1319,18 @@
         "Ein Meilenstein, der Italo Disco weltweit bekannt machte.",
         "Refrain: 'La dolce vita! (Oh, oh, oh)'"
       ],
-      "lyrics": { "real": ["We're walking like in a dream, so delightful unusual", "La dolce vita, (oh oh oh)", "La dolce vita, (oh oh oh)"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "We're walking like in a dream, so delightful unusual",
+          "La dolce vita, (oh oh oh)",
+          "La dolce vita, (oh oh oh)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-baltimora-tarzan",
@@ -833,7 +1340,11 @@
       "country": "IT",
       "genre": "Italo Disco",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Funny"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Bekannt für den markanten 'Tarzan-Schrei' im Refrain.",
@@ -842,9 +1353,18 @@
         "Ein absoluter Ohrwurm.",
         "Refrain: 'Woah-oh-oh-oh-oh-oh-oh-oh-oh-oh!'"
       ],
-      "lyrics": { "real": ["Jungle life, I'm far away from nowhere", "Woah-oh-oh-oh-oh-oh-oh-oh-oh-oh", "Jungle life, I'm living in the city"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Jungle life, I'm far away from nowhere",
+          "Woah-oh-oh-oh-oh-oh-oh-oh-oh-oh",
+          "Jungle life, I'm living in the city"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "_r0n963M" }
+      "links": {
+        "youtube": "_r0n963M"
+      }
     },
     {
       "id": "80s-righeira-playa",
@@ -854,7 +1374,11 @@
       "country": "IT",
       "genre": "Italo Disco",
       "difficulty": "easy",
-      "mood": ["Summer", "Happy", "Classic"],
+      "mood": [
+        "Summer",
+        "Happy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Trotz der fröhlichen Melodie handelt der Song eigentlich von einer drohenden nuklearen Katastrophe.",
@@ -863,9 +1387,18 @@
         "Sorgte weltweit für Strandstimmung.",
         "Refrain: 'Vamos a la playa! Oh, oh, oh, oh, oh!'"
       ],
-      "lyrics": { "real": ["Vamos a la playa, oh oh oh oh oh", "Vamos a la playa, oh oh oh oh oh", "La bomba estalló"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Vamos a la playa, oh oh oh oh oh",
+          "Vamos a la playa, oh oh oh oh oh",
+          "La bomba estalló"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "80s-sabrina-boys",
@@ -875,7 +1408,11 @@
       "country": "IT",
       "genre": "Dance-Pop / Italo Disco",
       "difficulty": "easy",
-      "mood": ["Energy", "Summer", "Dance"],
+      "mood": [
+        "Energy",
+        "Summer",
+        "Dance"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Sabrina wurde durch diesen Sommerhit und das dazugehörige Pool-Video zur Kult-Ikone.",
@@ -884,9 +1421,18 @@
         "Ein Welthit, der Sabrinas Weltruhm begründete.",
         "Refrain: 'Boys, boys, boys! I'm looking for a good time!'"
       ],
-      "lyrics": { "real": ["Sun-shine, summertime love, make me feel alright", "Boys, boys, boys, I'm looking for a good time", "Boys, boys, boys, ready for my love"], "fake": "Dancing in the street, moving to the beat of my own drum tonight" },
+      "lyrics": {
+        "real": [
+          "Sun-shine, summertime love, make me feel alright",
+          "Boys, boys, boys, I'm looking for a good time",
+          "Boys, boys, boys, ready for my love"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum tonight"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-samantha-fox-touchme",
@@ -896,7 +1442,11 @@
       "country": "GB",
       "genre": "Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Confident", "Dance"],
+      "mood": [
+        "Energy",
+        "Confident",
+        "Dance"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Samantha Fox wechselte hiermit erfolgreich von der Model-Karriere in die Musik-Welt.",
@@ -905,9 +1455,18 @@
         "Ein Inbegriff für den selbstbewussten weiblichen Pop der Mitte der 80er.",
         "Refrain: 'Touch me, touch me! I want to feel your body!'"
       ],
-      "lyrics": { "real": ["He stepped into the light, and I was so surprised", "Touch me, touch me, I want to feel your body", "Baby, I'm on fire"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "He stepped into the light, and I was so surprised",
+          "Touch me, touch me, I want to feel your body",
+          "Baby, I'm on fire"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "W1btg3mpEOc"
+      }
     },
     {
       "id": "80s-laura-branigan-selfcontrol",
@@ -917,7 +1476,11 @@
       "country": "US",
       "genre": "Synth Pop / Dance",
       "difficulty": "easy",
-      "mood": ["Moody", "Energy", "Classic"],
+      "mood": [
+        "Moody",
+        "Energy",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Eine moderne Interpretation des Hits von Raf.",
@@ -926,9 +1489,18 @@
         "Ein Inbegriff für mysteriösen und zugleich tanzbaren 80er-Pop.",
         "Refrain: 'You take my self, you take my self control!'"
       ],
-      "lyrics": { "real": ["I live among the creatures of the night, I haven't got the will to try and fight", "You take my self, you take my self control", "I, I live among the creatures of the night"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "I live among the creatures of the night, I haven't got the will to try and fight",
+          "You take my self, you take my self control",
+          "I, I live among the creatures of the night"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "80s-bonnie-tyler-eclipse",
@@ -938,7 +1510,11 @@
       "country": "GB",
       "genre": "Soft Rock / Pop",
       "difficulty": "medium",
-      "mood": ["Dramatic", "Epic", "Classic"],
+      "mood": [
+        "Dramatic",
+        "Epic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Geschrieben von Jim Steinman, bekannt für seinen bombastischen Stil.",
@@ -947,9 +1523,18 @@
         "Ein Welthit mit einem der bekanntesten Musikvideos.",
         "Refrain: 'Turn around, bright eyes! Every now and then I fall apart!'"
       ],
-      "lyrics": { "real": ["Once upon a time I was falling in love, now I'm only falling apart", "Turn around, bright eyes, every now and then I fall apart", "Total eclipse of the heart"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Once upon a time I was falling in love, now I'm only falling apart",
+          "Turn around, bright eyes, every now and then I fall apart",
+          "Total eclipse of the heart"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "lcOxhH-o4p0" }
+      "links": {
+        "youtube": "lcOxhH-o4p0"
+      }
     },
     {
       "id": "80s-kenny-loggins-footloose",
@@ -959,7 +1544,11 @@
       "country": "US",
       "genre": "Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Dance"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dance"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Titelsong des gleichnamigen Films (Tanzfilm-Klassiker).",
@@ -968,9 +1557,18 @@
         "Wurde zur Hymne für Freiheit und Bewegung.",
         "Refrain: 'Loose, footloose! Kick off your Sunday shoes!'"
       ],
-      "lyrics": { "real": ["I've been working so hard, I'm punching my card", "Loose, footloose, kick off your Sunday shoes", "Please, Louise, pull me off of my knees"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "I've been working so hard, I'm punching my card",
+          "Loose, footloose, kick off your Sunday shoes",
+          "Please, Louise, pull me off of my knees"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1k8CRPRt99I" }
+      "links": {
+        "youtube": "1k8CRPRt99I"
+      }
     },
     {
       "id": "80s-billmedley-time-of-life",
@@ -980,7 +1578,11 @@
       "country": "US",
       "genre": "Pop / Soft Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Classic"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Unvergesslicher Schlusssong des Films 'Dirty Dancing'.",
@@ -989,9 +1591,18 @@
         "Einer der meistgespielten 'Hochzeitstanz'-Songs weltweit.",
         "Refrain: 'I've had the time of my life! And I owe it all to you!'"
       ],
-      "lyrics": { "real": ["I've had the time of my life, and I owe it all to you", "I've had the time of my life, and I've never felt this way before", "With my body and soul, I want you more than you'll ever know"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "I've had the time of my life, and I owe it all to you",
+          "I've had the time of my life, and I've never felt this way before",
+          "With my body and soul, I want you more than you'll ever know"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "WpmGnaWh" }
+      "links": {
+        "youtube": "WpmGnaWh"
+      }
     },
     {
       "id": "80s-survivor-tiger",
@@ -1001,7 +1612,11 @@
       "country": "US",
       "genre": "Rock / Arena Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Powerful", "Classic"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Titelsong des Films 'Rocky III' (Wunsch von Sylvester Stallone).",
@@ -1010,9 +1625,18 @@
         "Ein absoluter Klassiker, der weltweit als Motivations-Song bekannt ist.",
         "Refrain: 'It's the eye of the tiger! It's the thrill of the fight!'"
       ],
-      "lyrics": { "real": ["Rising up, back on the street, did my time, took my chances", "It's the eye of the tiger, it's the thrill of the fight", "Risin' up to the challenge of our rival"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Rising up, back on the street, did my time, took my chances",
+          "It's the eye of the tiger, it's the thrill of the fight",
+          "Risin' up to the challenge of our rival"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "btPJPFE" }
+      "links": {
+        "youtube": "btPJPFE"
+      }
     },
     {
       "id": "80s-simple-minds-forget",
@@ -1022,7 +1646,11 @@
       "country": "GB",
       "genre": "New Wave / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Atmospheric", "Classic", "Inspirational"],
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Inspirational"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff der 'Breakfast Club' Ära (Coming-of-Age Film).",
@@ -1031,9 +1659,18 @@
         "Bekannt für den markanten 'La-la-la-la' Teil am Ende.",
         "Refrain: 'Don't you forget about me! Don't don't don't don't!'"
       ],
-      "lyrics": { "real": ["Hey, hey, hey, hey! Oh oh oh oh!", "Don't you forget about me, don't don't don't don't", "Will you stand above me, look my way, never love me?"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Hey, hey, hey, hey! Oh oh oh oh!",
+          "Don't you forget about me, don't don't don't don't",
+          "Will you stand above me, look my way, never love me?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CdqoNKCCt" }
+      "links": {
+        "youtube": "CdqoNKCCt"
+      }
     },
     {
       "id": "80s-spandau-ballet-true",
@@ -1043,7 +1680,11 @@
       "country": "GB",
       "genre": "New Wave / Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Chill", "Classic"],
+      "mood": [
+        "Romantic",
+        "Chill",
+        "Classic"
+      ],
       "pack": "80s Pop Hits",
       "hints": [
         "Inbegriff des 'Sophisti-Pop' mit seinem sanften Saxophon und den souligen Harmonien.",
@@ -1052,9 +1693,18 @@
         "Besticht durch Gary Kemps meisterhaftes Songwriting.",
         "Refrain: 'I know this much is true!'"
       ],
-      "lyrics": { "real": ["So true, funny how it seems always in time, but never in line for dreams", "Head over heels, I'm slipping in between", "I know this much is true"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "So true, funny how it seems always in time, but never in line for dreams",
+          "Head over heels, I'm slipping in between",
+          "I know this much is true"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1k8CRPRt99I" }
+      "links": {
+        "youtube": "1k8CRPRt99I"
+      }
     }
   ]
 }

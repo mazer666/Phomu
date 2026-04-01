@@ -13,7 +13,11 @@
       "country": "GB",
       "genre": "Britpop",
       "difficulty": "easy",
-      "mood": ["Sing-along", "Acoustic", "Classic"],
+      "mood": [
+        "Sing-along",
+        "Acoustic",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Dieser Song ist die inoffizielle Hymne jeder WG-Party mit einer Akustikgitarre.",
@@ -22,9 +26,18 @@
         "Der Begriff 'Wonderwall' stammt von einem Album von George Harrison.",
         "Refrain: 'Because maybe, you're gonna be the one that saves me...'"
       ],
-      "lyrics": { "real": ["Today is gonna be the day that they're gonna throw it back to you", "By now you should've somehow realized what you gotta do", "I don't believe that anybody feels the way I do about you now"], "fake": "Walking through the park in the middle of the dark, feeling free" },
+      "lyrics": {
+        "real": [
+          "Today is gonna be the day that they're gonna throw it back to you",
+          "By now you should've somehow realized what you gotta do",
+          "I don't believe that anybody feels the way I do about you now"
+        ],
+        "fake": "Walking through the park in the middle of the dark, feeling free"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6hzrDeceEKc" }
+      "links": {
+        "youtube": "6hzrDeceEKc"
+      }
     },
     {
       "id": "90s-rem-losing-my-religion",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Moody", "Classic", "Alternative"],
+      "mood": [
+        "Moody",
+        "Classic",
+        "Alternative"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Der Song ist berühmt für den Einsatz einer Mandoline als Hauptinstrument.",
@@ -43,9 +60,18 @@
         "Sänger Michael Stipe tanzt im Video auf eine sehr markante, energetische Weise.",
         "Refrain: 'That's me in the corner, that's me in the spotlight, losing my religion.'"
       ],
-      "lyrics": { "real": ["Oh, life is bigger, it's bigger than you and you are not me", "The lengths that I will go to, the distance in your eyes", "Every whisper, every waking hour, I'm choosing my confessions"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Oh, life is bigger, it's bigger than you and you are not me",
+          "The lengths that I will go to, the distance in your eyes",
+          "Every whisper, every waking hour, I'm choosing my confessions"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "xwtdhWltSIg" }
+      "links": {
+        "youtube": "xwtdhWltSIg"
+      }
     },
     {
       "id": "90s-alanis-morissette-ironic",
@@ -55,7 +81,11 @@
       "country": "CA",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Sassy", "Sing-along", "Pop"],
+      "mood": [
+        "Sassy",
+        "Sing-along",
+        "Pop"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wurde oft kritisiert, weil die meisten Beispiele im Text gar keine echte 'Ironie' sind, sondern nur Pech.",
@@ -64,9 +94,18 @@
         "Handelt von einem Flugzeugabsturz, einem Regen am Hochzeitstag und einem gewonnenen Lottoschein.",
         "Ist es nicht ironisch? 'It's like rain on your wedding day...'"
       ],
-      "lyrics": { "real": ["An old man turned ninety-eight, he won the lottery and died the next day", "It's a black fly in your Chardonnay, it's a death row pardon two minutes too late", "And isn't it ironic, don't you think?"], "fake": "Walking down the street with shoes on my feet, feeling incomplete" },
+      "lyrics": {
+        "real": [
+          "An old man turned ninety-eight, he won the lottery and died the next day",
+          "It's a black fly in your Chardonnay, it's a death row pardon two minutes too late",
+          "And isn't it ironic, don't you think?"
+        ],
+        "fake": "Walking down the street with shoes on my feet, feeling incomplete"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Jne9t8sHpUc" }
+      "links": {
+        "youtube": "Jne9t8sHpUc"
+      }
     },
     {
       "id": "90s-sinéad-oconnor-nothing-compares",
@@ -76,7 +115,11 @@
       "country": "IE",
       "genre": "Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Epic", "Soulful"],
+      "mood": [
+        "Sad",
+        "Epic",
+        "Soulful"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wurde ursprünglich von Prince geschrieben.",
@@ -85,9 +128,18 @@
         "Thematisiert den Schmerz nach einer Trennung und die Unmöglichkeit, jemanden zu ersetzen.",
         "Besonders bewegend: Die echte Träne, die der Sängerin im Video über die Wange läuft."
       ],
-      "lyrics": { "real": ["It's been seven hours and fifteen days since you took your love away", "I go out every night and sleep all day since you took your love away", "Nothing compares, nothing compares to you"], "fake": "In the middle of the night, I'm looking for a light that shines so bright" },
+      "lyrics": {
+        "real": [
+          "It's been seven hours and fifteen days since you took your love away",
+          "I go out every night and sleep all day since you took your love away",
+          "Nothing compares, nothing compares to you"
+        ],
+        "fake": "In the middle of the night, I'm looking for a light that shines so bright"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "0-EF60neguk" }
+      "links": {
+        "youtube": "0-EF60neguk"
+      }
     },
     {
       "id": "90s-radiohead-creep",
@@ -97,7 +149,11 @@
       "country": "GB",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Dark", "Moody", "Rock"],
+      "mood": [
+        "Dark",
+        "Moody",
+        "Rock"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Die Band mochte den Song später gar nicht mehr und weigerte sich lange, ihn live zu spielen.",
@@ -106,9 +162,18 @@
         "Die Hymne für alle Außenseiter und Menschen mit Minderwertigkeitskomplexen.",
         "Refrain: 'But I'm a creep, I'm a weirdo, what the hell am I doing here?'"
       ],
-      "lyrics": { "real": ["When you were here before, couldn't look you in the eye", "You're just like an angel, your skin makes me cry", "You float like a feather in a beautiful world"], "fake": "I'm walking on sunshine, while the moon is falling down to the sea" },
+      "lyrics": {
+        "real": [
+          "When you were here before, couldn't look you in the eye",
+          "You're just like an angel, your skin makes me cry",
+          "You float like a feather in a beautiful world"
+        ],
+        "fake": "I'm walking on sunshine, while the moon is falling down to the sea"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "XFkzRNyygfk" }
+      "links": {
+        "youtube": "XFkzRNyygfk"
+      }
     },
     {
       "id": "90s-blind-melon-no-rain",
@@ -118,7 +183,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Happy", "Classic", "Summer"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Summer"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Berühmt durch das Musikvideo mit dem 'Bee-Girl' im Bienenkostüm.",
@@ -127,9 +196,18 @@
         "Der Text drückt das Gefühl aus, sich in seiner eigenen kleinen Welt wohler zu fühlen.",
         "Refrain: 'And I wonder if you'll notice me when I'm gone...'"
       ],
-      "lyrics": { "real": ["All I can say is that my life is pretty plain, I like watching the puddles gather rain", "And all I can do is just pour some tea for two and speak my point of view", "I just want someone to say to me: I'll always be there when you wake"], "fake": "Dancing with the bees under the ancient trees in the breeze" },
+      "lyrics": {
+        "real": [
+          "All I can say is that my life is pretty plain, I like watching the puddles gather rain",
+          "And all I can do is just pour some tea for two and speak my point of view",
+          "I just want someone to say to me: I'll always be there when you wake"
+        ],
+        "fake": "Dancing with the bees under the ancient trees in the breeze"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "3qVPNONdF58" }
+      "links": {
+        "youtube": "3qVPNONdF58"
+      }
     },
     {
       "id": "90s-extreme-more-than-words",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Acoustic Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Acoustic", "Classic"],
+      "mood": [
+        "Romantic",
+        "Acoustic",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wurde oft fälschlicherweise für einen Song einer reinen Akustik-Band gehalten, obwohl Extreme eigentlich eine Funk-Metal-Band waren.",
@@ -148,9 +230,18 @@
         "Das Video zeigt die Bandmitglieder entspannt sitzend beim Spielen.",
         "Refrain: 'More than words to show you feel that your love for me is real.'"
       ],
-      "lyrics": { "real": ["Saying I love you is not the words I want to hear from you", "It's not that I want you not to say, but if you only knew", "How easy it would be to show me how you feel"], "fake": "I'm looking for a reason to believe in the season of love" },
+      "lyrics": {
+        "real": [
+          "Saying I love you is not the words I want to hear from you",
+          "It's not that I want you not to say, but if you only knew",
+          "How easy it would be to show me how you feel"
+        ],
+        "fake": "I'm looking for a reason to believe in the season of love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "UrIiLvg58SY" }
+      "links": {
+        "youtube": "UrIiLvg58SY"
+      }
     },
     {
       "id": "90s-cranberries-zombie",
@@ -160,7 +251,11 @@
       "country": "IE",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Powerful", "Serious", "Alternative"],
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Alternative"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Ein Protestsong gegen den Nordirlandkonflikt nach einem Bombenattentat.",
@@ -169,9 +264,18 @@
         "Einer der meistgespielten Rocksongs der 90er Jahre.",
         "Refrain: 'In your head, in your head, zombie, zombie, zombie!'"
       ],
-      "lyrics": { "real": ["Another head hangs lowly, child is slowly taken", "And the violence caused such silence, who are we mistaken?", "But you see, it's not me, it's not my family"], "fake": "Walking through the ruins of a town that used to be so bright" },
+      "lyrics": {
+        "real": [
+          "Another head hangs lowly, child is slowly taken",
+          "And the violence caused such silence, who are we mistaken?",
+          "But you see, it's not me, it's not my family"
+        ],
+        "fake": "Walking through the ruins of a town that used to be so bright"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6Ejga4kJUts" }
+      "links": {
+        "youtube": "6Ejga4kJUts"
+      }
     },
     {
       "id": "90s-verve-bitter-sweet-symphony",
@@ -181,7 +285,11 @@
       "country": "GB",
       "genre": "Britpop",
       "difficulty": "medium",
-      "mood": ["Epic", "Moody", "Classic"],
+      "mood": [
+        "Epic",
+        "Moody",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Das berühmte Streicher-Sample stammt aus einer Orchesterversion eines Rolling-Stones-Songs.",
@@ -190,9 +298,18 @@
         "Thematisiert die menschliche Existenz als einen ständigen Kampf um Geld und Überleben.",
         "Hörst du die Geigen? 'No change, I can change, I can change...'"
       ],
-      "lyrics": { "real": ["'Cause it's a bittersweet symphony, this life", "Try to make ends meet, you're a slave to money then you die", "I'll take you down the only road I've ever been down"], "fake": "Looking for the sun in the middle of a run in the light" },
+      "lyrics": {
+        "real": [
+          "'Cause it's a bittersweet symphony, this life",
+          "Try to make ends meet, you're a slave to money then you die",
+          "I'll take you down the only road I've ever been down"
+        ],
+        "fake": "Looking for the sun in the middle of a run in the light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1lyu1KKwC74" }
+      "links": {
+        "youtube": "1lyu1KKwC74"
+      }
     },
     {
       "id": "90s-counting-crows-mr-jones",
@@ -202,7 +319,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Happy", "Classic", "Pop"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Pop"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Der Song handelt von zwei Musikern, die davon träumen, berühmt zu werden, um mehr Aufmerksamkeit von Frauen zu bekommen.",
@@ -211,9 +332,18 @@
         "Enthält viele Referenzen an Kunst und Berühmtheit.",
         "Refrain: 'Mr. Jones and me tell each other fairy tales...'"
       ],
-      "lyrics": { "real": ["I was down at the New Amsterdam staring at this yellow-haired girl", "Mr. Jones strikes up a conversation with a black-haired flamenco dancer", "She dances while his father plays guitar"], "fake": "In the middle of the island, we're looking for the silent sea" },
+      "lyrics": {
+        "real": [
+          "I was down at the New Amsterdam staring at this yellow-haired girl",
+          "Mr. Jones strikes up a conversation with a black-haired flamenco dancer",
+          "She dances while his father plays guitar"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sea"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "-oqAU5CHwuM" }
+      "links": {
+        "youtube": "-oqAU5CHwuM"
+      }
     },
     {
       "id": "90s-eric-clapton-tears-in-heaven",
@@ -223,7 +353,11 @@
       "country": "GB",
       "genre": "Acoustic Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Acoustic", "Soulful"],
+      "mood": [
+        "Sad",
+        "Acoustic",
+        "Soulful"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wurde geschrieben, um den tragischen Tod des dreijährigen Sohnes des Sängers zu verarbeiten.",
@@ -232,9 +366,18 @@
         "Handelt von der Frage, ob man sich im Himmel wiedererkennt.",
         "Refrain: 'Would you know my name if I saw you in heaven?'"
       ],
-      "lyrics": { "real": ["Would you know my name if I saw you in heaven?", "Would it be the same if I saw you in heaven?", "I must be strong and carry on, 'cause I know I don't belong here in heaven"], "fake": "Looking for the sun in the middle of a run in the light" },
+      "lyrics": {
+        "real": [
+          "Would you know my name if I saw you in heaven?",
+          "Would it be the same if I saw you in heaven?",
+          "I must be strong and carry on, 'cause I know I don't belong here in heaven"
+        ],
+        "fake": "Looking for the sun in the middle of a run in the light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "JxPj3GAYYZ0" }
+      "links": {
+        "youtube": "JxPj3GAYYZ0"
+      }
     },
     {
       "id": "90s-no-doubt-dont-speak",
@@ -244,7 +387,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Sad", "Moody", "Classic"],
+      "mood": [
+        "Sad",
+        "Moody",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Thematisiert die Trennung zwischen Sängerin Gwen Stefani und dem Bassisten Tony Kanal.",
@@ -253,9 +400,18 @@
         "Bekannt für das melancholische Gitarren-Solo und Gwens emotionalen Gesang.",
         "Refrain: 'Don't speak, I know just what you're saying, so please stop explaining...'"
       ],
-      "lyrics": { "real": ["You and me, we used to be together, every day together, always", "I really feel that I'm losing my best friend, I can't believe this could be the end", "Don't speak, I know just what you're saying, so please stop explaining"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "You and me, we used to be together, every day together, always",
+          "I really feel that I'm losing my best friend, I can't believe this could be the end",
+          "Don't speak, I know just what you're saying, so please stop explaining"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "TR3Vdo5etCQ" }
+      "links": {
+        "youtube": "TR3Vdo5etCQ"
+      }
     },
     {
       "id": "90s-goo-goo-dolls-iris",
@@ -265,7 +421,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Epic", "Power Ballad"],
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wurde für den Soundtrack des Films 'Stadt der Engel' (City of Angels) geschrieben.",
@@ -274,9 +434,18 @@
         "Der Text drückt das Verlangen aus, von jemandem wirklich 'gesehen' zu werden.",
         "Refrain: 'I just want you to know who I am!'"
       ],
-      "lyrics": { "real": ["And I'd give up forever to touch you, 'cause I know that you feel me somehow", "You're the closest to heaven that I'll ever be, and I don't want to go home right now", "And I don't want the world to see me, 'cause I don't think that they'd understand"], "fake": "In the shadow of the night, I will hold you tight and treat you right" },
+      "lyrics": {
+        "real": [
+          "And I'd give up forever to touch you, 'cause I know that you feel me somehow",
+          "You're the closest to heaven that I'll ever be, and I don't want to go home right now",
+          "And I don't want the world to see me, 'cause I don't think that they'd understand"
+        ],
+        "fake": "In the shadow of the night, I will hold you tight and treat you right"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "NdYWuo9OqQI" }
+      "links": {
+        "youtube": "NdYWuo9OqQI"
+      }
     },
     {
       "id": "90s-jewel-who-will-save-your-soul",
@@ -286,7 +455,11 @@
       "country": "US",
       "genre": "Folk Pop",
       "difficulty": "medium",
-      "mood": ["Soulful", "Acoustic", "Alternative"],
+      "mood": [
+        "Soulful",
+        "Acoustic",
+        "Alternative"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Der erste große Hit der Sängerin, die zeitweise in ihrem Auto lebte, bevor sie berühmt wurde.",
@@ -295,9 +468,18 @@
         "Thematisiert die Oberflächlichkeit und Sinnsuche in der Gesellschaft.",
         "Refrain: 'Who will save your soul after all the lies that you told?'"
       ],
-      "lyrics": { "real": ["People living their lives for you on TV, they say they're better than you and you agree", "You say: Please, please, someone help me, but who will save your soul?", "We try to hustle them, try to bustle them, try to cussle them"], "fake": "Nothing's gonna change my world, you're the only special girl" },
+      "lyrics": {
+        "real": [
+          "People living their lives for you on TV, they say they're better than you and you agree",
+          "You say: Please, please, someone help me, but who will save your soul?",
+          "We try to hustle them, try to bustle them, try to cussle them"
+        ],
+        "fake": "Nothing's gonna change my world, you're the only special girl"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "0wBDDAZkNtk" }
+      "links": {
+        "youtube": "0wBDDAZkNtk"
+      }
     },
     {
       "id": "90s-sheryl-crow-all-i-wanna-do",
@@ -307,7 +489,11 @@
       "country": "US",
       "genre": "Pop Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Summer", "Casual"],
+      "mood": [
+        "Happy",
+        "Summer",
+        "Casual"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Basiert auf einem Gedicht namens 'Fun' von Wyn Cooper.",
@@ -316,9 +502,18 @@
         "Das Video zeigt die Sängerin entspannt in einer Bar und auf den Straßen.",
         "Refrain: 'All I wanna do is have some fun, I got a feeling I'm not the only one.'"
       ],
-      "lyrics": { "real": ["Hit it! This ain't no disco, it ain't no country club either", "All I wanna do is have some fun until the sun comes up over Santa Monica Boulevard", "I like a good beer buzz early in the morning"], "fake": "Dancing all alone, far away from home, in the neon zone" },
+      "lyrics": {
+        "real": [
+          "Hit it! This ain't no disco, it ain't no country club either",
+          "All I wanna do is have some fun until the sun comes up over Santa Monica Boulevard",
+          "I like a good beer buzz early in the morning"
+        ],
+        "fake": "Dancing all alone, far away from home, in the neon zone"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "hG9C0VwruXE" }
+      "links": {
+        "youtube": "hG9C0VwruXE"
+      }
     },
     {
       "id": "90s-natalie-imbruglia-torn",
@@ -328,7 +523,11 @@
       "country": "AU",
       "genre": "Pop Rock",
       "difficulty": "easy",
-      "mood": ["Sad", "Classic", "Pop"],
+      "mood": [
+        "Sad",
+        "Classic",
+        "Pop"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Ist eigentlich ein Cover (Original von der Band Ednaswap).",
@@ -337,9 +536,18 @@
         "Thematisiert die Desillusionierung nach einer gescheiterten Beziehung.",
         "Refrain: 'I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor.'"
       ],
-      "lyrics": { "real": ["I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor", "Illusion never changed into something real, I'm wide awake and I can see the perfect sky is torn", "You're a little late, I'm already torn"], "fake": "Take a look at me now, there's nothing left but memories" },
+      "lyrics": {
+        "real": [
+          "I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor",
+          "Illusion never changed into something real, I'm wide awake and I can see the perfect sky is torn",
+          "You're a little late, I'm already torn"
+        ],
+        "fake": "Take a look at me now, there's nothing left but memories"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "xJKj0pQniIs" }
+      "links": {
+        "youtube": "VV1XWJN3nJo"
+      }
     },
     {
       "id": "90s-sixpence-kiss-me",
@@ -349,7 +557,11 @@
       "country": "US",
       "genre": "Dream Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Soft"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Soft"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wurde weltberühmt durch die Teenie-Komödie 'Eine wie keine' (She's All That).",
@@ -358,9 +570,18 @@
         "Der Refrain fordert zu einem Kuss unter dem 'Milchlicht' (milky twilight) auf.",
         "Refrain: 'Kiss me out of the bearded barley...'"
       ],
-      "lyrics": { "real": ["Kiss me out of the bearded barley, nighty, beside the green, green grass", "Swing, swing, swing the spinning step, you wear those shoes and I will wear that dress", "Oh, kiss me, beneath the milky twilight"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Kiss me out of the bearded barley, nighty, beside the green, green grass",
+          "Swing, swing, swing the spinning step, you wear those shoes and I will wear that dress",
+          "Oh, kiss me, beneath the milky twilight"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "hII0JXUJNDo" }
+      "links": {
+        "youtube": "hII0JXUJNDo"
+      }
     },
     {
       "id": "90s-semisonic-closing-time",
@@ -370,7 +591,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Moody", "Classic", "Anthem"],
+      "mood": [
+        "Moody",
+        "Classic",
+        "Anthem"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Handelt vordergründig vom Schließen einer Bar, aber eigentlich von der Geburt des ersten Kindes des Sängers.",
@@ -379,9 +604,18 @@
         "Ein One-Hit-Wonder der späten 90er Jahre.",
         "Refrain: 'Closing time, open all the doors and let you out into the world.'"
       ],
-      "lyrics": { "real": ["Closing time, open all the doors and let you out into the world", "Closing time, turn the bright lights on over every boy and every girl", "I know who I want to take me home"], "fake": "Walking through the silver screen, looking for the girl I've seen" },
+      "lyrics": {
+        "real": [
+          "Closing time, open all the doors and let you out into the world",
+          "Closing time, turn the bright lights on over every boy and every girl",
+          "I know who I want to take me home"
+        ],
+        "fake": "Walking through the silver screen, looking for the girl I've seen"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "xGytDsqkQY8" }
+      "links": {
+        "youtube": "xGytDsqkQY8"
+      }
     },
     {
       "id": "90s-third-eye-blind-semi-charmed",
@@ -391,7 +625,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Happy", "Fast", "Groovy"],
+      "mood": [
+        "Happy",
+        "Fast",
+        "Groovy"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Klingt wie ein fröhlicher Popsong, handelt aber eigentlich von Drogensucht (Crystal Meth).",
@@ -400,9 +638,18 @@
         "Die Band schaffte es, einen Song über Sucht als Sommerhit zu tarnen.",
         "Ich will etwas anderes, das mich durchbringt: 'I want something else!'"
       ],
-      "lyrics": { "real": ["I want something else to get me through this semi-charmed kind of life, baby, baby", "I believe in the sand beneath my feet, I believe in the goal", "The sky was gold, it was rose, I was taking sips of it through my nose"], "fake": "Dancing in the street, moving to the rhythm of the beat" },
+      "lyrics": {
+        "real": [
+          "I want something else to get me through this semi-charmed kind of life, baby, baby",
+          "I believe in the sand beneath my feet, I believe in the goal",
+          "The sky was gold, it was rose, I was taking sips of it through my nose"
+        ],
+        "fake": "Dancing in the street, moving to the rhythm of the beat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "beINamVRGy4" }
+      "links": {
+        "youtube": "beINamVRGy4"
+      }
     },
     {
       "id": "90s-soul-asylum-runaway-train",
@@ -412,7 +659,11 @@
       "country": "US",
       "genre": "Acoustic Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Serious", "Powerful"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Powerful"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Bekannt durch das Musikvideo, das echte vermisste Kinder zeigte (viele wurden dadurch gefunden).",
@@ -421,9 +672,18 @@
         "Ein Meilenstein des gefühlvollen Alternative Rock der frühen 90er.",
         "Refrain: 'Runaway train, never going back, wrong way on a one-way track.'"
       ],
-      "lyrics": { "real": ["Call you up in the middle of the night, like a firefly without a light", "You were there like a blowtorch burning, I was a key that could use some turning", "Runaway train, never going back, wrong way on a one-way track"], "fake": "In the cold of the winter, I'm looking for a splinter of light" },
+      "lyrics": {
+        "real": [
+          "Call you up in the middle of the night, like a firefly without a light",
+          "You were there like a blowtorch burning, I was a key that could use some turning",
+          "Runaway train, never going back, wrong way on a one-way track"
+        ],
+        "fake": "In the cold of the winter, I'm looking for a splinter of light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S5O9O5S9S" }
+      "links": {
+        "youtube": "S5O9O5S9S"
+      }
     },
     {
       "id": "unplugged-clapton-layla",
@@ -433,7 +693,11 @@
       "country": "GB",
       "genre": "Blues Rock / Acoustic",
       "difficulty": "easy",
-      "mood": ["Chill", "Classic", "Sad"],
+      "mood": [
+        "Chill",
+        "Classic",
+        "Sad"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Wandelte den ursprünglichen Hard-Rock-Hit der Dominos in eine sanfte Shuffle-Nummer um.",
@@ -442,9 +706,18 @@
         "Ein absolutes Highlight der 90er Jahre Live-Auftritte.",
         "Refrain: 'Layla, you've got me on my knees, Layla, I'm begging, darling please!'"
       ],
-      "lyrics": { "real": ["What'll you do when you get lonely and nobody's waiting by your side?", "You've been running and hiding much too long, you know it's just your foolish pride", "Layla, you've got me on my knees, Layla, I'm begging, darling please"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "What'll you do when you get lonely and nobody's waiting by your side?",
+          "You've been running and hiding much too long, you know it's just your foolish pride",
+          "Layla, you've got me on my knees, Layla, I'm begging, darling please"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "unplugged-aic-nutshell",
@@ -454,7 +727,11 @@
       "country": "US",
       "genre": "Grunge / Acoustic",
       "difficulty": "hard",
-      "mood": ["Sad", "Atmospheric", "Powerful"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Powerful"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Einer der emotionalsten und düstersten Momente der Grunge-Ära.",
@@ -463,9 +740,18 @@
         "Die Akustik-Gitarren klingen hier fast wie eine dunkle Vorahnung.",
         "Ein Gänsehaut-Moment für jeden Fan der 90er."
       ],
-      "lyrics": { "real": ["We chase misprinted lies, we face the path of time", "And yet I fight, and yet I fight, this battle all alone", "No one to cry to, no place to call home"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "We chase misprinted lies, we face the path of time",
+          "And yet I fight, and yet I fight, this battle all alone",
+          "No one to cry to, no place to call home"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "89j-6xpdq4" }
+      "links": {
+        "youtube": "89j-6xpdq4"
+      }
     },
     {
       "id": "unplugged-pearl-jam-black",
@@ -475,7 +761,11 @@
       "country": "US",
       "genre": "Grunge / Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Powerful", "Deep"],
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Deep"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Eddie Vedders Gesang bricht am Ende des Songs fast vor Emotionen.",
@@ -484,9 +774,18 @@
         "Ein zeitloser Klassiker über Verlust und Sehnsucht.",
         "Refrain: 'I know someday you'll have a beautiful life, I know you'll be a sun...'"
       ],
-      "lyrics": { "real": ["Sheets of empty canvas, untouched sheets of clay, laid spread out before me as her body once did", "I know someday you'll have a beautiful life, I know you'll be a sun in somebody else's sky", "But why, why, why can't it be, can't it be mine?"], "fake": "In the shadow of the night, we're looking for the light of your soul" },
+      "lyrics": {
+        "real": [
+          "Sheets of empty canvas, untouched sheets of clay, laid spread out before me as her body once did",
+          "I know someday you'll have a beautiful life, I know you'll be a sun in somebody else's sky",
+          "But why, why, why can't it be, can't it be mine?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeumyOzKqgI" }
+      "links": {
+        "youtube": "DeumyOzKqgI"
+      }
     },
     {
       "id": "unplugged-no-doubt-speak",
@@ -496,7 +795,11 @@
       "country": "US",
       "genre": "Alternative / Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Romantic", "Classic"],
+      "mood": [
+        "Sad",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Gwen Stefani schrieb den Song nach der Trennung von ihrem Bandkollegen Tony Kanal.",
@@ -505,9 +808,18 @@
         "Wurde 1996 zur meistgespielten Radio-Single weltweit.",
         "Refrain: 'Don't speak, I know just what you're saying!'"
       ],
-      "lyrics": { "real": ["You and me, we used to be together, every day together, always", "I really feel that I'm losing my best friend, I can't believe this could be the end", "Don't speak, I know just what you're saying, so please stop explaining, don't tell me 'cause it hurts"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "You and me, we used to be together, every day together, always",
+          "I really feel that I'm losing my best friend, I can't believe this could be the end",
+          "Don't speak, I know just what you're saying, so please stop explaining, don't tell me 'cause it hurts"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "8WYHDfJDPDc" }
+      "links": {
+        "youtube": "8WYHDfJDPDc"
+      }
     },
     {
       "id": "unplugged-tori-amos-crucify",
@@ -517,7 +829,11 @@
       "country": "US",
       "genre": "Alternative / Piano",
       "difficulty": "medium",
-      "mood": ["Powerful", "Serious", "Intelligent"],
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Intelligent"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Tori Amos ist bekannt für ihr virtuoses Klavierspiel und provokante Texte.",
@@ -526,9 +842,18 @@
         "Ein Meilenstein des Introspektiven Folk-Pop der 90er.",
         "Refrain: 'Why do we crucify ourselves? Every day...'"
       ],
-      "lyrics": { "real": ["Every finger in the room is pointing at me, I wanna spit in their faces then I get afraid of what that could bring", "I got a bowling ball in my stomach, I got a desert in my mouth", "Why do we crucify ourselves every day? I through with guilt, I through with guilt"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Every finger in the room is pointing at me, I wanna spit in their faces then I get afraid of what that could bring",
+          "I got a bowling ball in my stomach, I got a desert in my mouth",
+          "Why do we crucify ourselves every day? I through with guilt, I through with guilt"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "unplugged-sheryl-crow-wanna-do",
@@ -538,7 +863,11 @@
       "country": "US",
       "genre": "Country / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Chill", "Groovy"],
+      "mood": [
+        "Happy",
+        "Chill",
+        "Groovy"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Basiert auf dem Gedicht 'Disco Detroit' von Wyn Cooper.",
@@ -547,9 +876,18 @@
         "Besticht durch den entspannten Vibe und das eingängige Riff.",
         "Refrain: 'All I wanna do is have some fun, I got a feeling I'm not the only one!'"
       ],
-      "lyrics": { "real": ["All I wanna do is have some fun, I got a feeling I'm not the only one", "All I wanna do is have some fun, until the sun comes up over Santa Monica Blvd", "I like a good beer buzz early in the morning"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "All I wanna do is have some fun, I got a feeling I'm not the only one",
+          "All I wanna do is have some fun, until the sun comes up over Santa Monica Blvd",
+          "I like a good beer buzz early in the morning"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "xwtdhWltSIg" }
+      "links": {
+        "youtube": "xwtdhWltSIg"
+      }
     },
     {
       "id": "unplugged-alanis-morissette-ironic",
@@ -559,7 +897,11 @@
       "country": "CA",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Story", "Classic"],
+      "mood": [
+        "Happy",
+        "Story",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Handelt von ironischen (und manche sagen, eigentlich nur unglücklichen) Situationen.",
@@ -568,9 +910,18 @@
         "Einer der am meist zitierten Songs der 90er Jahre.",
         "Refrain: 'It's like ra-a-ain on your wedding day, it's a free ride when you've already paid!'"
       ],
-      "lyrics": { "real": ["An old man turned ninety-eight, he won the lottery and died the next day", "It's like ra-a-ain on your wedding day, it's a free ride when you've already paid", "And who would have thought, it figures"], "fake": "In the middle of the street, you can feel the heat of my heart" },
+      "lyrics": {
+        "real": [
+          "An old man turned ninety-eight, he won the lottery and died the next day",
+          "It's like ra-a-ain on your wedding day, it's a free ride when you've already paid",
+          "And who would have thought, it figures"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of my heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "JGwWNGJdvx8" }
+      "links": {
+        "youtube": "JGwWNGJdvx8"
+      }
     },
     {
       "id": "unplugged-counting-crows-mr-jones",
@@ -580,7 +931,11 @@
       "country": "US",
       "genre": "Alternative / Folk",
       "difficulty": "medium",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Adam Duritz singt hier über die Träume, berühmt zu werden.",
@@ -589,9 +944,18 @@
         "Ein Inbegriff der College-Rock-Bewegung der frühen 90er.",
         "Refrain: 'Mr. Jones and me, tell each other fairy tales!'"
       ],
-      "lyrics": { "real": ["I was walking down the street and I saw you looking so sweet", "Mr. Jones and me, lookin' at the video, when I look at the television, I wanna see me staring back at me", "We all wanna be big stars, but we got different reasons for that"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "I was walking down the street and I saw you looking so sweet",
+          "Mr. Jones and me, lookin' at the video, when I look at the television, I wanna see me staring back at me",
+          "We all wanna be big stars, but we got different reasons for that"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "-tJYN-eG1zk" }
+      "links": {
+        "youtube": "-tJYN-eG1zk"
+      }
     },
     {
       "id": "unplugged-googoo-dolls-iris",
@@ -601,7 +965,11 @@
       "country": "US",
       "genre": "Alternative / Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Emotional", "Classic"],
+      "mood": [
+        "Romantic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Ursprünglich für den Soundtrack des Films 'Stadt der Engel' geschrieben.",
@@ -610,9 +978,18 @@
         "Eine zeitlose Hymne auf die bedingungslose Liebe.",
         "Refrain: 'And I'd give up forever to touch you, 'cause I know that you feel me somehow!'"
       ],
-      "lyrics": { "real": ["And I'd give up forever to touch you, 'cause I know that you feel me somehow", "You're the closest to heaven that I'll ever be, and I don't want to go home right now", "And I don't want the world to see me, 'cause I don't think that they'd understand"], "fake": "In the shadow of the night, we're looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "And I'd give up forever to touch you, 'cause I know that you feel me somehow",
+          "You're the closest to heaven that I'll ever be, and I don't want to go home right now",
+          "And I don't want the world to see me, 'cause I don't think that they'd understand"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "unplugged-oasis-wonderwall",
@@ -622,7 +999,11 @@
       "country": "GB",
       "genre": "Britpop",
       "difficulty": "easy",
-      "mood": ["Singalong", "Classic", "Nostalgic"],
+      "mood": [
+        "Singalong",
+        "Classic",
+        "Nostalgic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Die wohl berühmteste Akustik-Gitarren-Hymne der Welt.",
@@ -631,9 +1012,18 @@
         "Prägte die Britpop-Ära wie kaum ein anderes Stück.",
         "Refrain: 'Because maybe, you're gonna be the one that saves me!'"
       ],
-      "lyrics": { "real": ["Today is gonna be the day that they're gonna throw it back to you", "By now you should've somehow realized what you gotta do", "Because maybe, you're gonna be the one that saves me, and after all, you're my wonderwall"], "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow" },
+      "lyrics": {
+        "real": [
+          "Today is gonna be the day that they're gonna throw it back to you",
+          "By now you should've somehow realized what you gotta do",
+          "Because maybe, you're gonna be the one that saves me, and after all, you're my wonderwall"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "6hzrDeceEKc" }
+      "links": {
+        "youtube": "6hzrDeceEKc"
+      }
     },
     {
       "id": "unplugged-hootie-only-wanna",
@@ -643,7 +1033,11 @@
       "country": "US",
       "genre": "Folk Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Darius Ruckers unverwechselbare Bariton-Stimme trägt diesen Song.",
@@ -652,9 +1046,18 @@
         "Besticht durch sein entspanntes Tempo und die sonnige Ausstrahlung.",
         "Refrain: 'I only wanna be with you!'"
       ],
-      "lyrics": { "real": ["You and me, we come from different worlds, you like to laugh at me when I look at other girls", "I'm not the best man for you, but I'm the only one with heart", "I only wanna be with you"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "You and me, we come from different worlds, you like to laugh at me when I look at other girls",
+          "I'm not the best man for you, but I'm the only one with heart",
+          "I only wanna be with you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Ln6WQqRDrCo"
+      }
     },
     {
       "id": "unplugged-jewel-save-soul",
@@ -664,7 +1067,11 @@
       "country": "US",
       "genre": "Folk / Acoustic",
       "difficulty": "medium",
-      "mood": ["Serious", "Story", "Acoustic"],
+      "mood": [
+        "Serious",
+        "Story",
+        "Acoustic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Jewels Durchbruch, nachdem sie jahrelang in einem Transporter gelebt und in Cafés gespielt hatte.",
@@ -673,9 +1080,18 @@
         "Ein Paradebeispiel für den Folk-Boom der 90er Jahre.",
         "Refrain: 'Who will save your soul? After all the lies that you told!'"
       ],
-      "lyrics": { "real": ["People living their lives for you on TV, they say they're better than you and you agree", "Who will save your soul? When it comes to the nuggets, people, who will save your soul?", "La-dee-da, la-dee-da, who's gonna save your soul?"], "fake": "Walking down the silver path under the dragon's wrath tonight" },
+      "lyrics": {
+        "real": [
+          "People living their lives for you on TV, they say they're better than you and you agree",
+          "Who will save your soul? When it comes to the nuggets, people, who will save your soul?",
+          "La-dee-da, la-dee-da, who's gonna save your soul?"
+        ],
+        "fake": "Walking down the silver path under the dragon's wrath tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeumyOzKqgI" }
+      "links": {
+        "youtube": "DeumyOzKqgI"
+      }
     },
     {
       "id": "unplugged-imbruglia-torn",
@@ -685,7 +1101,11 @@
       "country": "AU",
       "genre": "Pop / Alternative",
       "difficulty": "easy",
-      "mood": ["Sad", "Classic", "Deep"],
+      "mood": [
+        "Sad",
+        "Classic",
+        "Deep"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Eigentlich eine Cover-Version der Band Ednaswap, aber Natalies Version wurde zum Welthit.",
@@ -694,9 +1114,18 @@
         "Wurde zu einer der meistgespielten Radio-Singles aller Zeiten.",
         "Refrain: 'I'm all out of faith, this is how I feel, I'm cold and I am shamed!'"
       ],
-      "lyrics": { "real": ["I thought I saw a man brought to life, he was warm, he came around like he was dignified", "I'm all out of faith, this is how I feel, I'm cold and I am shamed, lying naked on the floor", "Illusion never changed into something real, I'm wide awake and I can see"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "I thought I saw a man brought to life, he was warm, he came around like he was dignified",
+          "I'm all out of faith, this is how I feel, I'm cold and I am shamed, lying naked on the floor",
+          "Illusion never changed into something real, I'm wide awake and I can see"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "unplugged-radiohead-high-dry",
@@ -706,7 +1135,11 @@
       "country": "GB",
       "genre": "Alternative / Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Moody", "Classic"],
+      "mood": [
+        "Sad",
+        "Moody",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Stammt vom wegweisenden Album 'The Bends'.",
@@ -715,9 +1148,18 @@
         "Thematisiert den schnellen Ruhm und das anschließende Fallenlassen.",
         "Refrain: 'Don't leave me high, don't leave me dry!'"
       ],
-      "lyrics": { "real": ["Two jumps in a week, I bet you think that's pretty clever don't you boy?", "Flying on your motorcycle, watching all the ground beneath you drop", "Don't leave me high, don't leave me dry, don't leave me high, don't leave me dry"], "fake": "In the shadow of the night, we're looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "Two jumps in a week, I bet you think that's pretty clever don't you boy?",
+          "Flying on your motorcycle, watching all the ground beneath you drop",
+          "Don't leave me high, don't leave me dry, don't leave me high, don't leave me dry"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "nfWlotnwmsE" }
+      "links": {
+        "youtube": "rt8AdNwTTUI"
+      }
     },
     {
       "id": "unplugged-cranberries-linger",
@@ -727,7 +1169,11 @@
       "country": "IE",
       "genre": "Alternative / Folk Rock",
       "difficulty": "easy",
-      "mood": ["Romantic", "Sad", "Classic"],
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Classic"
+      ],
       "pack": "90s Unplugged",
       "hints": [
         "Dolores O'Riordans erste Single mit der Band und ihr großer Durchbruch.",
@@ -736,9 +1182,18 @@
         "Ein Inbegriff des irischen Alternative-Sounds der 90er.",
         "Refrain: 'You know I'm such a fool for you, you've got me wrapped around your finger!'"
       ],
-      "lyrics": { "real": ["If you, if you could return, don't let it burn, don't let it fade", "But I'm in so deep, you know I'm such a fool for you", "You've got me wrapped around your finger, do you have to, do you have to let it linger?"], "fake": "Dancing in the street, moving to the beat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "If you, if you could return, don't let it burn, don't let it fade",
+          "But I'm in so deep, you know I'm such a fool for you",
+          "You've got me wrapped around your finger, do you have to, do you have to let it linger?"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     }
   ]
 }

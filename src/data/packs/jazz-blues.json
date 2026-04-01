@@ -14,7 +14,11 @@
       "country": "US",
       "genre": "Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Positive", "Classic"],
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Einer der optimistischsten und bekanntesten Songs aller Zeiten.",
@@ -23,9 +27,18 @@
         "Wurde zu einer Hymne für globalen Frieden.",
         "Refrain: 'And I think to myself... what a wonderful world!'"
       ],
-      "lyrics": { "real": ["I see trees of green, red roses too, I see them bloom for me and you", "And I think to myself, what a wonderful world", "I see skies of blue and clouds of white"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I see trees of green, red roses too, I see them bloom for me and you",
+          "And I think to myself, what a wonderful world",
+          "I see skies of blue and clouds of white"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CWzrABouyeE" }
+      "links": {
+        "youtube": "CWzrABouyeE"
+      }
     },
     {
       "id": "jazz-simone-feeling",
@@ -35,7 +48,11 @@
       "country": "US",
       "genre": "Jazz / Soul",
       "difficulty": "easy",
-      "mood": ["Confident", "Powerful", "Classic"],
+      "mood": [
+        "Confident",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Befreiung und einen neuen Lebensabschnitt.",
@@ -44,9 +61,18 @@
         "Wurde unzählige Male gecovert (u.a. von Muse und Michael Bublé).",
         "Refrain: 'It's a new dawn, it's a new day, it's a new life for me!'"
       ],
-      "lyrics": { "real": ["Birds flying high you know how I feel, sun in the sky you know how I feel", "It's a new dawn, it's a new day, it's a new life for me", "And I'm feeling good"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Birds flying high you know how I feel, sun in the sky you know how I feel",
+          "It's a new dawn, it's a new day, it's a new life for me",
+          "And I'm feeling good"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "D5Y11" }
+      "links": {
+        "youtube": "D5Y11"
+      }
     },
     {
       "id": "jazz-fitzgerald-summertime",
@@ -56,7 +82,11 @@
       "country": "US",
       "genre": "Jazz / Vocal",
       "difficulty": "easy",
-      "mood": ["Chill", "Dreamy", "Classic"],
+      "mood": [
+        "Chill",
+        "Dreamy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein Standard aus der Oper 'Porgy and Bess' von George Gershwin.",
@@ -65,9 +95,18 @@
         "Handelt von einem Wiegenlied in einer heißen Sommernacht.",
         "Refrain: 'Summertime... and the livin' is easy!'"
       ],
-      "lyrics": { "real": ["Summertime, and the livin' is easy, fish are jumpin' and the cotton is high", "Oh your daddy's rich and your ma is good lookin'", "So hush little baby, don't you cry"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Summertime, and the livin' is easy, fish are jumpin' and the cotton is high",
+          "Oh your daddy's rich and your ma is good lookin'",
+          "So hush little baby, don't you cry"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-holiday-fruit",
@@ -77,7 +116,11 @@
       "country": "US",
       "genre": "Jazz / Vocal",
       "difficulty": "medium",
-      "mood": ["Serious", "Deep", "Classic"],
+      "mood": [
+        "Serious",
+        "Deep",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein erschütternder Protestsong gegen Rassismus und Lynchjustiz im US-Süden.",
@@ -86,9 +129,18 @@
         "Die Metapher 'Strange Fruit' bezieht sich auf die Opfer von Gewalt.",
         "Genre-Inhalt: Melancholischer, tiefgründiger Gesang."
       ],
-      "lyrics": { "real": ["Southern trees bear a strange fruit, blood on the leaves and blood at the root", "Black bodies swinging in the southern breeze", "Strange fruit hanging from the poplar trees"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Southern trees bear a strange fruit, blood on the leaves and blood at the root",
+          "Black bodies swinging in the southern breeze",
+          "Strange fruit hanging from the poplar trees"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "h4ZyuULy9zs" }
+      "links": {
+        "youtube": "h4ZyuULy9zs"
+      }
     },
     {
       "id": "jazz-miles-sowhat",
@@ -98,7 +150,11 @@
       "country": "US",
       "genre": "Jazz / Modal Jazz",
       "difficulty": "hard",
-      "mood": ["Cool", "Intelligent", "Classic"],
+      "mood": [
+        "Cool",
+        "Intelligent",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Eröffnungssong des meistverkauften Jazz-Albums aller Zeiten: 'Kind of Blue'.",
@@ -107,9 +163,18 @@
         "Der Titel spiegelt Miles Davis' reservierte und kühle Haltung wider.",
         "Genre-Inhalt: Legendäres Trompetenspiel."
       ],
-      "lyrics": { "real": ["(Instrumental masterpiece - listen to the dialogue between bass and horns)", "(The essence of Kind of Blue)", "(Cool Jazz at its best)"], "fake": "In the middle of the street, you can feel the heat of the broken drum" },
+      "lyrics": {
+        "real": [
+          "(Instrumental masterpiece - listen to the dialogue between bass and horns)",
+          "(The essence of Kind of Blue)",
+          "(Cool Jazz at its best)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "zqNTltOGh5c"
+      }
     },
     {
       "id": "jazz-coltrane-things",
@@ -119,7 +184,11 @@
       "country": "US",
       "genre": "Jazz / Post-Bop",
       "difficulty": "hard",
-      "mood": ["Epic", "Intelligent", "Classic"],
+      "mood": [
+        "Epic",
+        "Intelligent",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Eine radikale Jazz-Interpretation des Klassikers aus 'The Sound of Music'.",
@@ -128,9 +197,18 @@
         "Ein Paradebeispiel für die Weiterentwicklung bekannter Melodien in den Jazz.",
         "Genre-Inhalt: Virtuoses Saxophon-Solo."
       ],
-      "lyrics": { "real": ["(Instrumental interpretation of the famous melody)", "(Spiritual Jazz at its foundation)", "(John Coltrane on soprano sax)"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "(Instrumental interpretation of the famous melody)",
+          "(Spiritual Jazz at its foundation)",
+          "(John Coltrane on soprano sax)"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-brubeck-takefive",
@@ -140,7 +218,11 @@
       "country": "US",
       "genre": "Jazz / Cool Jazz",
       "difficulty": "medium",
-      "mood": ["Cool", "Intelligent", "Classic"],
+      "mood": [
+        "Cool",
+        "Intelligent",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Bekannt für seinen ungewöhnlichen 5/4-Takt.",
@@ -149,9 +231,18 @@
         "Das Schlagzeug-Solo von Joe Morello ist ein Meisterwerk der Präzision.",
         "Genre-Inhalt: Unvergesslicher Klavier-Vamp."
       ],
-      "lyrics": { "real": ["(Instrumental - focused on the unique 5/4 time signature)", "(Cool Jazz anthem)", "(Paul Desmond's signature melody)"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute Nacht" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - focused on the unique 5/4 time signature)",
+          "(Cool Jazz anthem)",
+          "(Paul Desmond's signature melody)"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Nacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "vmDDOFXSgAs" }
+      "links": {
+        "youtube": "vmDDOFXSgAs"
+      }
     },
     {
       "id": "jazz-sinatra-flyme",
@@ -161,7 +252,11 @@
       "country": "US",
       "genre": "Vocal Jazz / Swing",
       "difficulty": "easy",
-      "mood": ["Romantic", "Happy", "Classic"],
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Sinatras coolen Swing-Stil der Mitte der 60er.",
@@ -170,9 +265,18 @@
         "Arrangiert von Quincy Jones mit Sinatras unvergleichlicher Lässigkeit.",
         "Refrain: 'Fly me to the moon! Let me play among the stars!'"
       ],
-      "lyrics": { "real": ["Fly me to the moon, let me play among the stars", "Let me see what spring is like on Jupiter and Mars", "In other words, hold my hand, in other words, darling kiss me"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Fly me to the moon, let me play among the stars",
+          "Let me see what spring is like on Jupiter and Mars",
+          "In other words, hold my hand, in other words, darling kiss me"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Y2rDb4Ur2fw" }
+      "links": {
+        "youtube": "Y2rDb4Ur2fw"
+      }
     },
     {
       "id": "jazz-natkingcole-love",
@@ -182,7 +286,11 @@
       "country": "US",
       "genre": "Vocal Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Positive"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Positive"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Buchstabiert die Essenz der Liebe auf charmante Weise.",
@@ -191,9 +299,18 @@
         "War Coles letzter großer internationaler Hit vor seinem Tod.",
         "Refrain: 'L is for the way you look at me! O is for the only one I see!'"
       ],
-      "lyrics": { "real": ["L is for the way you look at me, O is for the only one I see", "V is very, very extraordinary, E is even more than anyone that you adore", "Love was made for me and you"], "fake": "Dancing in the street, moving to the beat of our broken heart" },
+      "lyrics": {
+        "real": [
+          "L is for the way you look at me, O is for the only one I see",
+          "V is very, very extraordinary, E is even more than anyone that you adore",
+          "Love was made for me and you"
+        ],
+        "fake": "Dancing in the street, moving to the beat of our broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "ir_LJ5dvS2w"
+      }
     },
     {
       "id": "jazz-etta-atlast",
@@ -203,7 +320,11 @@
       "country": "US",
       "genre": "Jazz / Blues / Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Emotional", "Classic"],
+      "mood": [
+        "Romantic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Die ultimative Hochzeitsballade der Jazz- und Soul-Geschichte.",
@@ -212,9 +333,18 @@
         "Ein Inbegriff für tiefe emotionale Ausdruckskraft.",
         "Refrain: 'At last! My love has come along!'"
       ],
-      "lyrics": { "real": ["At last, my love has come along, my lonely days are over", "And life is like a song, oh yeah", "At last, the skies above are blue, my heart was wrapped up in clover"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "At last, my love has come along, my lonely days are over",
+          "And life is like a song, oh yeah",
+          "At last, the skies above are blue, my heart was wrapped up in clover"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "S-cbOl96RFM" }
+      "links": {
+        "youtube": "S-cbOl96RFM"
+      }
     },
     {
       "id": "jazz-raycharles-georgia",
@@ -224,7 +354,11 @@
       "country": "US",
       "genre": "Soul / Blues / Jazz",
       "difficulty": "easy",
-      "mood": ["Nostalgic", "Emotional", "Classic"],
+      "mood": [
+        "Nostalgic",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Wurde zur offiziellen Staatshymne von Georgia (USA).",
@@ -233,9 +367,18 @@
         "Kombiniert Blues-Gefühl mit pop-orientiertem Arrangement.",
         "Refrain: 'Georgia, Georgia... the whole day through!'"
       ],
-      "lyrics": { "real": ["Georgia, Georgia, the whole day through", "Just an old sweet song keeps Georgia on my mind", "Other arms reach out to me, other eyes smile tenderly"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "Georgia, Georgia, the whole day through",
+          "Just an old sweet song keeps Georgia on my mind",
+          "Other arms reach out to me, other eyes smile tenderly"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fRgWBN86_E8" }
+      "links": {
+        "youtube": "fRgWBN86_E8"
+      }
     },
     {
       "id": "jazz-bbking-thrill",
@@ -245,7 +388,11 @@
       "country": "US",
       "genre": "Blues",
       "difficulty": "medium",
-      "mood": ["Sad", "Atmospheric", "Classic"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "B.B. Kings größter kommerzieller Erfolg und sein Markenzeichen.",
@@ -254,9 +401,18 @@
         "Ein Inbegriff für den modernisierten Blues mit Streicher-Arrangement.",
         "Refrain: 'The thrill is gone! The thrill is gone away for good!'"
       ],
-      "lyrics": { "real": ["The thrill is gone, the thrill is gone away", "The thrill is gone baby, the thrill is gone away for good", "You know you done me wrong baby, and you'll be sorry someday"], "fake": "In the middle of the night, we're looking for the light of our broken soul" },
+      "lyrics": {
+        "real": [
+          "The thrill is gone, the thrill is gone away",
+          "The thrill is gone baby, the thrill is gone away for good",
+          "You know you done me wrong baby, and you'll be sorry someday"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4fk2prKnCcI" }
+      "links": {
+        "youtube": "4fk2prKnCcI"
+      }
     },
     {
       "id": "jazz-muddy-hoochie",
@@ -266,7 +422,11 @@
       "country": "US",
       "genre": "Chicago Blues",
       "difficulty": "medium",
-      "mood": ["Confident", "Powerful", "Classic"],
+      "mood": [
+        "Confident",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein Inbegriff für den elektrischen Chicago Blues Sound.",
@@ -275,9 +435,18 @@
         "Besitzt das berühmte 'Stop-Time' Riff am Anfang.",
         "Refrain: 'I'm a hoochie coochie man! Everybody knows I'm here!'"
       ],
-      "lyrics": { "real": ["The gypsy woman told my mother, before I was born", "I got a boy child's coming, he's gonna be a son of a gun", "He's gonna make pretty women, jump and shout"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "The gypsy woman told my mother, before I was born",
+          "I got a boy child's coming, he's gonna be a son of a gun",
+          "He's gonna make pretty women, jump and shout"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "e_l6A" }
+      "links": {
+        "youtube": "e_l6A"
+      }
     },
     {
       "id": "jazz-robjohnson-crossroad",
@@ -287,7 +456,11 @@
       "country": "US",
       "genre": "Delta Blues",
       "difficulty": "hard",
-      "mood": ["Moody", "Spiritual", "Classic"],
+      "mood": [
+        "Moody",
+        "Spiritual",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Kernstück der Legende um Robert Johnson, der angeblich seine Seele am Kreuzweg verkaufte.",
@@ -296,9 +469,18 @@
         "Beeinflusste ganze Generationen von Rock-Musikern (u.a. Eric Clapton).",
         "Refrain: 'I went to the crossroad, fell down on my knees!'"
       ],
-      "lyrics": { "real": ["I went to the crossroad, fell down on my knees", "I went to the crossroad, fell down on my knees", "Asked the Lord above, 'Have mercy, now save poor Bob, if you please'"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I went to the crossroad, fell down on my knees",
+          "I went to the crossroad, fell down on my knees",
+          "Asked the Lord above, 'Have mercy, now save poor Bob, if you please'"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-howlinwolf-smokestack",
@@ -308,7 +490,11 @@
       "country": "US",
       "genre": "Chicago Blues",
       "difficulty": "medium",
-      "mood": ["Moody", "Powerful", "Classic"],
+      "mood": [
+        "Moody",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Besticht durch den hypnotischen, eintönigen Blues-Riff und Wolfs Wolfsgeheul-Gesang.",
@@ -317,9 +503,18 @@
         "Ein Inbegriff für den düsteren, kraftvollen Blues.",
         "Refrain: 'Oh-whooooo, smokestack lightnin'! Shinin' just like gold!'"
       ],
-      "lyrics": { "real": ["Ah-who ooh, smokestack lightnin', shinin' just like gold", "Don't you hear me cryin'?", "Whoa tell me baby, where did you stay last night?"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "Ah-who ooh, smokestack lightnin', shinin' just like gold",
+          "Don't you hear me cryin'?",
+          "Whoa tell me baby, where did you stay last night?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-norah-knowwhy",
@@ -329,7 +524,11 @@
       "country": "US",
       "genre": "Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Chill", "Romantic", "Soft"],
+      "mood": [
+        "Chill",
+        "Romantic",
+        "Soft"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Norah Jones' großer Durchbruch und Inbegriff für modernen 'Soft Jazz'.",
@@ -338,9 +537,18 @@
         "Gewann mehrere Grammys, u.a. 'Song des Jahres'.",
         "Refrain: 'I don't know why I didn't come! I left you by the house of fun!'"
       ],
-      "lyrics": { "real": ["I waited 'til I saw the sun, I don't know why I didn't come", "I left you by the house of fun, I don't know why I didn't come", "I don't know why I didn't come"], "fake": "In the shadow of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "I waited 'til I saw the sun, I don't know why I didn't come",
+          "I left you by the house of fun, I don't know why I didn't come",
+          "I don't know why I didn't come"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "tO4dxvGuQDk" }
+      "links": {
+        "youtube": "tO4dxvGuQDk"
+      }
     },
     {
       "id": "jazz-dianakrall-look",
@@ -350,7 +558,11 @@
       "country": "CA",
       "genre": "Jazz / Vocal",
       "difficulty": "easy",
-      "mood": ["Sexy", "Romantic", "Atmospheric"],
+      "mood": [
+        "Sexy",
+        "Romantic",
+        "Atmospheric"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Eine moderne, sinnliche Interpretation des Klassikers von Burt Bacharach.",
@@ -359,9 +571,18 @@
         "Perfekt für entspannte, romantische Abende.",
         "Refrain: 'The look of love... is in your eyes!'"
       ],
-      "lyrics": { "real": ["The look of love, is in your eyes, a look your smile can't disguise", "The look of love, it's saying so much more than just words could ever say", "And what my heart has heard, well it takes my breath away"], "fake": "In the middle of the street, you can feel the heat of our happy heart tonight" },
+      "lyrics": {
+        "real": [
+          "The look of love, is in your eyes, a look your smile can't disguise",
+          "The look of love, it's saying so much more than just words could ever say",
+          "And what my heart has heard, well it takes my breath away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-buble-feeling",
@@ -371,7 +592,11 @@
       "country": "CA",
       "genre": "Jazz / Pop / Big Band",
       "difficulty": "easy",
-      "mood": ["Confident", "Powerful", "Energy"],
+      "mood": [
+        "Confident",
+        "Powerful",
+        "Energy"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Michael Bublés moderne Big-Band-Version des Nina Simone Klassikers.",
@@ -380,9 +605,18 @@
         "Ein Inbegriff für den Erfolg des 'Modern Crooner' Stils.",
         "Refrain: 'It's a new dawn, it's a new day!'"
       ],
-      "lyrics": { "real": ["Birds flying high you know how I feel, sun in the sky you know how I feel", "It's a new dawn, it's a new day, it's a new life for me", "And I'm feeling good"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Birds flying high you know how I feel, sun in the sky you know how I feel",
+          "It's a new dawn, it's a new day, it's a new life for me",
+          "And I'm feeling good"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "EdwsfBv8Okg" }
+      "links": {
+        "youtube": "Edwsf-8F3sI"
+      }
     },
     {
       "id": "jazz-amywinehouse-black",
@@ -392,7 +626,11 @@
       "country": "GB",
       "genre": "Soul / Jazz / R&B",
       "difficulty": "medium",
-      "mood": ["Sad", "Serious", "Moody"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Moody"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Amy Winehouses modernen Retro-Soul mit Jazz-Einflüssen.",
@@ -401,9 +639,18 @@
         "Ein düsteres Meisterwerk der Popgeschichte.",
         "Refrain: 'We only said goodbye with words, I died a hundred times!'"
       ],
-      "lyrics": { "real": ["He left no time to regret, kept his dick wet with his same old safe bet", "We only said goodbye with words, I died a hundred times", "You go back to her and I go back to black"], "fake": "In the middle of the night, we're looking for the light of our broken dream" },
+      "lyrics": {
+        "real": [
+          "He left no time to regret, kept his dick wet with his same old safe bet",
+          "We only said goodbye with words, I died a hundred times",
+          "You go back to her and I go back to black"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our broken dream"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "TJAfAdPh" }
+      "links": {
+        "youtube": "TJAfAdPh"
+      }
     },
     {
       "id": "jazz-gregporter-laura",
@@ -413,7 +660,11 @@
       "country": "US",
       "genre": "Jazz / Soul",
       "difficulty": "easy",
-      "mood": ["Romantic", "Emotional", "Warm"],
+      "mood": [
+        "Romantic",
+        "Emotional",
+        "Warm"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Gregory Porters warmer, tiefer Bariton prägt diesen modernen Jazz-Hit.",
@@ -422,9 +673,18 @@
         "Einfaches, aber extrem gefühlvolles Arrangement.",
         "Refrain: 'Hey Laura, it's me! Sorry but I had to ring your doorbell!'"
       ],
-      "lyrics": { "real": ["Hey Laura, it's me, sorry but I had to ring your doorbell", "I had to see if you were home, I had to see you alone", "And tell me that I'm not the only one"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Hey Laura, it's me, sorry but I had to ring your doorbell",
+          "I had to see if you were home, I had to see you alone",
+          "And tell me that I'm not the only one"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-duke-atrain",
@@ -434,7 +694,11 @@
       "country": "US",
       "genre": "Swing / Big Band",
       "difficulty": "medium",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Erkennungsmelodie des Duke Ellington Orchestras.",
@@ -443,9 +707,18 @@
         "Besticht durch den feinen Swing und die brillanten Bläser-Sätze.",
         "Genre-Inhalt: Legendärer Swing-Standard."
       ],
-      "lyrics": { "real": ["You must take the A train, to go to Sugar Hill way up in Harlem", "If you should take the A train, you'll find the quickest way to get to Harlem", "Hurry, get on now, it's coming"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "You must take the A train, to go to Sugar Hill way up in Harlem",
+          "If you should take the A train, you'll find the quickest way to get to Harlem",
+          "Hurry, get on now, it's coming"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-countbasie-oneoclock",
@@ -455,7 +728,11 @@
       "country": "US",
       "genre": "Swing / Big Band",
       "difficulty": "medium",
-      "mood": ["Energy", "Explosive", "Classic"],
+      "mood": [
+        "Energy",
+        "Explosive",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Count Basies 'Kansas City Style' Jazz.",
@@ -464,9 +741,18 @@
         "War einer der wichtigsten Songs für Basies weltweiten Erfolg.",
         "Genre-Inhalt: Explosive Bläser-Antworten."
       ],
-      "lyrics": { "real": ["(Instrumental piece - but the rhythm talks to you!)", "(The foundation of the Count Basie sound)", "(Pure Swing Energy)"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - but the rhythm talks to you!)",
+          "(The foundation of the Count Basie sound)",
+          "(Pure Swing Energy)"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-bennygoodman-sing",
@@ -476,7 +762,11 @@
       "country": "US",
       "genre": "Swing / Big Band",
       "difficulty": "hard",
-      "mood": ["Energy", "Explosive", "Classic"],
+      "mood": [
+        "Energy",
+        "Explosive",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Bekannt für das ausgedehnte Schlagzeug-Solo von Gene Krupa.",
@@ -485,9 +775,18 @@
         "Das Konzert in der Carnegie Hall (1938) machte diesen Song zur Legende.",
         "Genre-Inhalt: Treibendes, afrikanisch inspiriertes Schlagzeug."
       ],
-      "lyrics": { "real": ["(Instrumental masterpiece - Gene Krupa's drums are leading!)", "(The high point of any Swing concert)", "(Benny Goodman's signature clarinet)"], "fake": "In the shadow of the night, we're looking for the light of our happy love" },
+      "lyrics": {
+        "real": [
+          "(Instrumental masterpiece - Gene Krupa's drums are leading!)",
+          "(The high point of any Swing concert)",
+          "(Benny Goodman's signature clarinet)"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our happy love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fhyhP_5" }
+      "links": {
+        "youtube": "fhyhP_5"
+      }
     },
     {
       "id": "jazz-glennmiller-mood",
@@ -497,7 +796,11 @@
       "country": "US",
       "genre": "Swing / Big Band",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Vielleicht der populärste Swing-Song aller Zeiten.",
@@ -506,9 +809,18 @@
         "Ein Inbegriff für die Tanzbegeisterung der späten 30er und 40er Jahre.",
         "Genre-Inhalt: Fröhlicher, mitreißender Big Band Sound."
       ],
-      "lyrics": { "real": ["(Instrumental - but everybody chants the rhythm!)", "(The most famous Swing tune ever)", "(Glenn Miller Orchestra signature)"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - but everybody chants the rhythm!)",
+          "(The most famous Swing tune ever)",
+          "(Glenn Miller Orchestra signature)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-cabcalloway-minnie",
@@ -518,7 +830,11 @@
       "country": "US",
       "genre": "Jazz / Swing",
       "difficulty": "easy",
-      "mood": ["Funny", "Energy", "Classic"],
+      "mood": [
+        "Funny",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Bekannt für den berühmten 'Hi-De-Hi-De-Hi-De-Ho' Mitmach-Teil.",
@@ -527,9 +843,18 @@
         "Wurde durch den Film 'The Blues Brothers' erneut zum Welthit.",
         "Refrain: 'He-De-He-De-He-De-He!'"
       ],
-      "lyrics": { "real": ["Folks, here's the story 'bout Minnie the Moocher", "She was a low-down hoochie-coocher", "He-de-he-de-he-de-he! Hi-de-hi-de-hi-de-ho!"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "Folks, here's the story 'bout Minnie the Moocher",
+          "She was a low-down hoochie-coocher",
+          "He-de-he-de-he-de-he! Hi-de-hi-de-hi-de-ho!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "hDe_K1" }
+      "links": {
+        "youtube": "hDe_K1"
+      }
     },
     {
       "id": "jazz-dinah-daymade",
@@ -539,7 +864,11 @@
       "country": "US",
       "genre": "Jazz / Vocal / Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Happy", "Classic"],
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Dinah Washingtons größter Hit und herrlich optimistisch.",
@@ -548,9 +877,18 @@
         "Ein Inbegriff für den Übergang von Jazz zu Pop in den späten 50ern.",
         "Refrain: 'What a diff'rence a day made! Twenty-four little hours!'"
       ],
-      "lyrics": { "real": ["What a diff'rence a day made, twenty-four little hours", "Brought the sun and the flowers, where there used to be rain", "My yesterday was blue dear, today I'm a part of you dear"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "What a diff'rence a day made, twenty-four little hours",
+          "Brought the sun and the flowers, where there used to be rain",
+          "My yesterday was blue dear, today I'm a part of you dear"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-sarah-birdland",
@@ -560,7 +898,11 @@
       "country": "US",
       "genre": "Jazz / Vocal",
       "difficulty": "medium",
-      "mood": ["Cool", "Jazzy", "Classic"],
+      "mood": [
+        "Cool",
+        "Jazzy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Sarah Vaughans Status als eine der größten Jazz-Stimmen.",
@@ -569,9 +911,18 @@
         "Ein zeitloser Jazz-Standard.",
         "Refrain: 'Lullaby of birdland! That's what I always hear when you sigh!'"
       ],
-      "lyrics": { "real": ["Lullaby of birdland, that's what I always hear when you sigh", "Never in my wordland, could there be ways to reveal, in a phrase, how I feel", "Have you ever heard two turtle doves, bill and coo, when they love?"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "Lullaby of birdland, that's what I always hear when you sigh",
+          "Never in my wordland, could there be ways to reveal, in a phrase, how I feel",
+          "Have you ever heard two turtle doves, bill and coo, when they love?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-peggylee-fever",
@@ -581,7 +932,11 @@
       "country": "US",
       "genre": "Jazz / Pop / Rhythm & Blues",
       "difficulty": "easy",
-      "mood": ["Sexy", "Cool", "Minimalist"],
+      "mood": [
+        "Sexy",
+        "Cool",
+        "Minimalist"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Minimalismus im Jazz-Pop.",
@@ -590,9 +945,18 @@
         "Peggy Lees hauchzarter Gesang machte den Song zur Sensation.",
         "Refrain: 'Fever! In the morning! Fever all through the night!'"
       ],
-      "lyrics": { "real": ["Never know how much I love you, never know how much I care", "When you put your arms around me, I get a fever that's so hard to bear", "You give me fever, when you kiss me, fever when you hold me tight"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Never know how much I love you, never know how much I care",
+          "When you put your arms around me, I get a fever that's so hard to bear",
+          "You give me fever, when you kiss me, fever when you hold me tight"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "XmSdI_6" }
+      "links": {
+        "youtube": "XmSdI_6"
+      }
     },
     {
       "id": "jazz-julie-river",
@@ -602,7 +966,11 @@
       "country": "US",
       "genre": "Jazz / Vocal / Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Serious", "Sexy"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Sexy"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Julie Londons rauchiger Gesang prägt diesen melancholischen Klassiker.",
@@ -611,9 +979,18 @@
         "Besitzt ein extrem reduziertes, elegantes Gitarren- und Bass-Arrangement.",
         "Refrain: 'Cry me a river! I cried a river over you!'"
       ],
-      "lyrics": { "real": ["Now you say you're lonely, you cried a long night through", "Well, you can cry me a river, cry me a river", "I cried a river over you"], "fake": "In the shadow of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Now you say you're lonely, you cried a long night through",
+          "Well, you can cry me a river, cry me a river",
+          "I cried a river over you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-chet-valentine",
@@ -623,7 +1000,11 @@
       "country": "US",
       "genre": "Vocal Jazz / Cool Jazz",
       "difficulty": "medium",
-      "mood": ["Emotional", "Serene", "Classic"],
+      "mood": [
+        "Emotional",
+        "Serene",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Chet Bakers verletzlichen, fast hauchzarten Gesangsstil.",
@@ -632,9 +1013,18 @@
         "Ein absolutes Kernstück des Cool Jazz.",
         "Refrain: 'My funny valentine! Sweet comic valentine!'"
       ],
-      "lyrics": { "real": ["My funny valentine, sweet comic valentine, you make me smile with my heart", "You're looks are laughable, unphotographable", "Yet you're my favorite work of art"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "My funny valentine, sweet comic valentine, you make me smile with my heart",
+          "You're looks are laughable, unphotographable",
+          "Yet you're my favorite work of art"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-getz-ipanema",
@@ -644,7 +1034,11 @@
       "country": "BR/US",
       "genre": "Bossa Nova",
       "difficulty": "easy",
-      "mood": ["Chill", "Dreamy", "Sexy"],
+      "mood": [
+        "Chill",
+        "Dreamy",
+        "Sexy"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Machte den Bossa Nova weltweit populär.",
@@ -653,9 +1047,18 @@
         "Stan Getz' warmes Saxophon-Spiel ist das Markenzeichen dieses Welthits.",
         "Refrain: 'Tall and tan and young and lovely! The girl from Ipanema goes walking!'"
       ],
-      "lyrics": { "real": ["Tall and tan and young and lovely, the girl from Ipanema goes walking", "And when she passes, each one she passes goes - ah", "When she walks, she's like a samba, that swings so cool and sways so gentle"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Tall and tan and young and lovely, the girl from Ipanema goes walking",
+          "And when she passes, each one she passes goes - ah",
+          "When she walks, she's like a samba, that swings so cool and sways so gentle"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-jobim-desafinado",
@@ -665,7 +1068,11 @@
       "country": "BR/US",
       "genre": "Bossa Nova / Jazz",
       "difficulty": "medium",
-      "mood": ["Chill", "Sophisticated", "Classic"],
+      "mood": [
+        "Chill",
+        "Sophisticated",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein programmatischer Song, der die Ästhetik des Bossa Nova verteidigt.",
@@ -674,9 +1081,18 @@
         "Ein Schlüsselwerk des Jazz-Bossa-Booms der 60er Jahre.",
         "Genre-Inhalt: Lyrisches Tenorsaxophon."
       ],
-      "lyrics": { "real": ["(Instrumental piece - representing the Soul of Bossa Nova)", "(Defending the new sound of Brazil)", "(Stan Getz' signature sound)"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - representing the Soul of Bossa Nova)",
+          "(Defending the new sound of Brazil)",
+          "(Stan Getz' signature sound)"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "L7lmMNweUVU"
+      }
     },
     {
       "id": "jazz-hancock-cantaloupe",
@@ -686,7 +1102,11 @@
       "country": "US",
       "genre": "Jazz / Hard Bop",
       "difficulty": "medium",
-      "mood": ["Cool", "Groovy", "Classic"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Besticht durch das unvergessliche Klavier-Ostinato.",
@@ -695,9 +1115,18 @@
         "Herbie Hancocks minimalistisches Spiel ist hier stilbildend.",
         "Genre-Inhalt: Treibender, cooler Jazz-Groove."
       ],
-      "lyrics": { "real": ["(Instrumental masterpiece - driven by the famous piano riff)", "(A blueprint for Jazz-Rap sampling)", "(Freddie Hubbard on Cornet)"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "(Instrumental masterpiece - driven by the famous piano riff)",
+          "(A blueprint for Jazz-Rap sampling)",
+          "(Freddie Hubbard on Cornet)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-monk-round",
@@ -707,7 +1136,11 @@
       "country": "US",
       "genre": "Jazz / Ballad",
       "difficulty": "hard",
-      "mood": ["Deep", "Atmospheric", "Classic"],
+      "mood": [
+        "Deep",
+        "Atmospheric",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Eine der meistaufgenommenen Jazz-Balladen aller Zeiten.",
@@ -716,9 +1149,18 @@
         "Ein Inbegriff für die intellektuelle Tiefe des modernen Jazz.",
         "Genre-Inhalt: Melancholischer Klavier-Standard."
       ],
-      "lyrics": { "real": ["(Instrumental - but often sung with lyrics about night and memory)", "(Monk's harmonic genius at work)", "(The quintessential midnight mood)"], "fake": "In the shadow of the night, we're looking for the light of our broken dream" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - but often sung with lyrics about night and memory)",
+          "(Monk's harmonic genius at work)",
+          "(The quintessential midnight mood)"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-mingus-hat",
@@ -728,7 +1170,11 @@
       "country": "US",
       "genre": "Jazz / Blues",
       "difficulty": "hard",
-      "mood": ["Sad", "Deep", "Classic"],
+      "mood": [
+        "Sad",
+        "Deep",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein Klagelied für den kurz zuvor verstorbenen Saxophonisten Lester Young.",
@@ -737,9 +1183,18 @@
         "Ein Meilenstein des modernen Jazz-Stils.",
         "Genre-Inhalt: Klagegesang der Instrumente."
       ],
-      "lyrics": { "real": ["(Instrumental elegy for Lester Young)", "(One of the deepest blue moments in Jazz history)", "(Mingus Ah Um masterpiece)"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "(Instrumental elegy for Lester Young)",
+          "(One of the deepest blue moments in Jazz history)",
+          "(Mingus Ah Um masterpiece)"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-silver-father",
@@ -749,7 +1204,11 @@
       "country": "US",
       "genre": "Jazz / Hard Bop",
       "difficulty": "medium",
-      "mood": ["Groovy", "Warm", "Classic"],
+      "mood": [
+        "Groovy",
+        "Warm",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Kombiniert Hard-Bop mit Einflüssen kapverdischer Volksmusik.",
@@ -758,9 +1217,18 @@
         "Beeinflusste die Popmusik maßgeblich (u.a. Steely Dan für 'Rikki Don't Lose That Number').",
         "Genre-Inhalt: Soul-Jazz mit besonderem Drall."
       ],
-      "lyrics": { "real": ["(Instrumental piece - with a legendary groove)", "(Silver's mix of tradition and modernity)", "(Inspired by Cape Verdean rhythms)"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - with a legendary groove)",
+          "(Silver's mix of tradition and modernity)",
+          "(Inspired by Cape Verdean rhythms)"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "jazz-blakey-moanin",
@@ -770,7 +1238,11 @@
       "country": "US",
       "genre": "Jazz / Hard Bop",
       "difficulty": "medium",
-      "mood": ["Energy", "Explosive", "Classic"],
+      "mood": [
+        "Energy",
+        "Explosive",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein absolutes Musterbeispiel für den Hard-Bop Sound der 'Messengers'.",
@@ -779,9 +1251,18 @@
         "Ein extrem kraftvoller und mitreißender Standard.",
         "Genre-Inhalt: Gospel-inspirierter Hard Bop."
       ],
-      "lyrics": { "real": ["(Instrumental - focused on the iconic piano call and response)", "(Blakey's hard bop masterpiece)", "(Bobby Timmons' soulful melody)"], "fake": "Dancing in the street, moving to the beat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - focused on the iconic piano call and response)",
+          "(Blakey's hard bop masterpiece)",
+          "(Bobby Timmons' soulful melody)"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-adderley-mercy",
@@ -791,7 +1272,11 @@
       "country": "US",
       "genre": "Jazz / Soul Jazz",
       "difficulty": "easy",
-      "mood": ["Groovy", "Happy", "Classic"],
+      "mood": [
+        "Groovy",
+        "Happy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein riesiger Crossover-Hit der 60er Jahre.",
@@ -800,9 +1285,18 @@
         "Ein Inbegriff für die Öffnung des Jazz zum Pop und R&B.",
         "Genre-Inhalt: Soul-Jazz mit Hit-Charakter."
       ],
-      "lyrics": { "real": ["(Instrumental - but often introduced with a long speech about soul)", "(Zawinul's soulful electric piano)", "(Cannonball at his most accessible)"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - but often introduced with a long speech about soul)",
+          "(Zawinul's soulful electric piano)",
+          "(Cannonball at his most accessible)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "s4rXEKtC8iY"
+      }
     },
     {
       "id": "jazz-morgan-sidewinder",
@@ -812,7 +1306,11 @@
       "country": "US",
       "genre": "Jazz / Hard Bop",
       "difficulty": "medium",
-      "mood": ["Cool", "Groovy", "Classic"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Kombiniert Blues, Soul und Jazz in einem extrem eingängigen Format.",
@@ -821,9 +1319,18 @@
         "Lee Morgans Trompetenspiel ist hier voller Witz und Energie.",
         "Genre-Inhalt: Treibender Soul-Jazz."
       ],
-      "lyrics": { "real": ["(Instrumental - legendary for its dancing groove)", "(Morgan's biggest commercial success)", "(The sound of cool 60s Jazz)"], "fake": "Dancing in the stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - legendary for its dancing groove)",
+          "(Morgan's biggest commercial success)",
+          "(The sound of cool 60s Jazz)"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-montgomery-round",
@@ -833,7 +1340,11 @@
       "country": "US",
       "genre": "Jazz / Guitar",
       "difficulty": "medium",
-      "mood": ["Smooth", "Dreamy", "Classic"],
+      "mood": [
+        "Smooth",
+        "Dreamy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Wes Montgomerys revolutionäres Oktav-Spiel auf der Gitarre.",
@@ -842,9 +1353,18 @@
         "Ein absoluter 'Late Night' Klassiker.",
         "Genre-Inhalt: Lyrische Jazz-Gitarre."
       ],
-      "lyrics": { "real": ["(Instrumental - Montgomery's thumb-picking magic)", "(Warm and soulful guitar interpretation)", "(The genius of octave playing)"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "(Instrumental - Montgomery's thumb-picking magic)",
+          "(Warm and soulful guitar interpretation)",
+          "(The genius of octave playing)"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-benson-broadway",
@@ -854,7 +1374,11 @@
       "country": "US",
       "genre": "Jazz / Pop / Funk",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Confident"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Confident"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "George Bensons Live-Version wurde zum absoluten Welthit.",
@@ -863,9 +1387,18 @@
         "Ein Inbegriff für den Jazz-Pop der späten 70er Jahre.",
         "Refrain: 'They say the neon lights are bright on Broadway!'"
       ],
-      "lyrics": { "real": ["They say the neon lights are bright on Broadway", "They say there's always magic in the air", "But when you're walking down that street, and you ain't had enough to eat"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "They say the neon lights are bright on Broadway",
+          "They say there's always magic in the air",
+          "But when you're walking down that street, and you ain't had enough to eat"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-jarreau-love",
@@ -875,7 +1408,11 @@
       "country": "US",
       "genre": "Jazz / Pop / R&B",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Soft"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Soft"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Al Jarreaus Status als König des Smooth Jazz Pop.",
@@ -884,9 +1421,18 @@
         "Ein absoluter Radio-Klassiker der frühen 80er.",
         "Refrain: 'We're in this love together! Just a second out of time!'"
       ],
-      "lyrics": { "real": ["It's like a diamond ring, it's a precious thing, and we never want to lose it", "We're in this love together, we got the kind that lasts forever", "We're in this love together, just a second out of time"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "It's like a diamond ring, it's a precious thing, and we never want to lose it",
+          "We're in this love together, we got the kind that lasts forever",
+          "We're in this love together, just a second out of time"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-wonder-sirduke",
@@ -896,7 +1442,11 @@
       "country": "US",
       "genre": "Funk / Soul / Jazz influence",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Positive"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Stevie Wonders Hommage an Duke Ellington und die Giganten des Jazz.",
@@ -905,9 +1455,18 @@
         "Zentraler Track des Albums 'Songs in the Key of Life'.",
         "Refrain: 'You can feel it all over! You can feel it all over, people!'"
       ],
-      "lyrics": { "real": ["Music is a world within itself, with a language we all understand", "But you can feel it all over, you can feel it all over people", "For there's Basie, Miller, Satchmo and the king of all Sir Duke"], "fake": "Dancing in the street, moving to the beat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "Music is a world within itself, with a language we all understand",
+          "But you can feel it all over, you can feel it all over people",
+          "For there's Basie, Miller, Satchmo and the king of all Sir Duke"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-ewf-september",
@@ -917,7 +1476,11 @@
       "country": "US",
       "genre": "R&B / Soul / Jazz influence",
       "difficulty": "easy",
-      "mood": ["Happy", "Dance", "Energy"],
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Ein zeitloser Party-Klassiker mit komplexem Jazz-Harmonie-Hintergrund.",
@@ -926,9 +1489,18 @@
         "Ein Inbegriff für die Perfektion schwarzer Popmusik der 70er.",
         "Refrain: 'Do you remember! The 21st night of September!'"
       ],
-      "lyrics": { "real": ["Do you remember, the 21st night of September?", "Love was changing the mind of pretenders, while chasing the clouds away", "Ba de ya, say do you remember?"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Do you remember, the 21st night of September?",
+          "Love was changing the mind of pretenders, while chasing the clouds away",
+          "Ba de ya, say do you remember?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-chicago-25or6",
@@ -938,7 +1510,11 @@
       "country": "US",
       "genre": "Jazz Rock / Rock",
       "difficulty": "medium",
-      "mood": ["Energy", "Powerful", "Classic"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für das Genre 'Jazz-Rock' mit kraftvollem Bläser-Satz.",
@@ -947,9 +1523,18 @@
         "Ein extrem druckvoller und technisch anspruchsvoller Track.",
         "Refrain: 'Twenty-five or six to four!'"
       ],
-      "lyrics": { "real": ["Waiting for the break of day, searching for something to say", "Flashin' lights against the sky, givin' sight to sleepless eyes", "Twenty-five or six to four"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Waiting for the break of day, searching for something to say",
+          "Flashin' lights against the sky, givin' sight to sleepless eyes",
+          "Twenty-five or six to four"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-blood-spinning",
@@ -959,7 +1544,11 @@
       "country": "US",
       "genre": "Jazz Rock / Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Mischte Jazz-Big-Band-Techniken mit zeitgenössischem Rock.",
@@ -968,9 +1557,18 @@
         "Ein Inbegriff für aufwendig produzierten Brass-Rock.",
         "Refrain: 'What goes up must come down! Spinnin' wheel got to go 'round!'"
       ],
-      "lyrics": { "real": ["What goes up must come down, spinnin' wheel got to go 'round", "Talkin' 'bout your troubles, it's a cryin' sin", "Ride a painted pony, let the spinnin' wheel spin"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "What goes up must come down, spinnin' wheel got to go 'round",
+          "Talkin' 'bout your troubles, it's a cryin' sin",
+          "Ride a painted pony, let the spinnin' wheel spin"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-steelydan-doitagain",
@@ -980,7 +1578,11 @@
       "country": "US",
       "genre": "Jazz Rock / Pop",
       "difficulty": "medium",
-      "mood": ["Cool", "Atmospheric", "Classic"],
+      "mood": [
+        "Cool",
+        "Atmospheric",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für den unterkühlten, perfekt produzierten Jazz-Rock von Steely Dan.",
@@ -989,9 +1591,18 @@
         "Ein Meisterwerk an präzisem Recording und Musikalität.",
         "Refrain: 'Go back, Jack, do it again! Wheels turnin' 'round and 'round!'"
       ],
-      "lyrics": { "real": ["In the morning you go gunnin' for the man who stole your water", "Go back, Jack, do it again, wheels turnin' 'round and 'round", "You been broken down and you've been runnin' hot"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "In the morning you go gunnin' for the man who stole your water",
+          "Go back, Jack, do it again, wheels turnin' 'round and 'round",
+          "You been broken down and you've been runnin' hot"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-joni-helpme",
@@ -1001,7 +1612,11 @@
       "country": "CA",
       "genre": "Soft Rock / Jazz influence",
       "difficulty": "medium",
-      "mood": ["Serene", "Emotional", "Classic"],
+      "mood": [
+        "Serene",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für Joni Mitchells Öffnung zu Jazz-Strukturen auf 'Court and Spark'.",
@@ -1010,9 +1625,18 @@
         "Ihre luftige Stimme über den komplexen Harmonien ist unverkennbar.",
         "Refrain: 'Help me, I think I'm falling in love again!'"
       ],
-      "lyrics": { "real": ["Help me, I think I'm falling in love again", "When I get that crazy feeling, I know I'm in trouble again", "Both of us flirting around, flirting and flirting"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "Help me, I think I'm falling in love again",
+          "When I get that crazy feeling, I know I'm in trouble again",
+          "Both of us flirting around, flirting and flirting"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "jazz-rickie-chuck",
@@ -1022,7 +1646,11 @@
       "country": "US",
       "genre": "Jazz Pop / Rock",
       "difficulty": "medium",
-      "mood": ["Funny", "Chill", "Groovy"],
+      "mood": [
+        "Funny",
+        "Chill",
+        "Groovy"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Rickie Lee Jones' Überraschungshit mit jazzigem Vibe.",
@@ -1031,9 +1659,18 @@
         "Ein Inbegriff für den coolen West Coast Sound jener Zeit.",
         "Refrain: 'Chuck E.'s in love! He-e-e's in love!'"
       ],
-      "lyrics": { "real": ["How come he don't come and P.L.P. with me down at the beach no more?", "Chuck E.'s in love, he-e-e's in love", "Chuck E.'s in love with the little girl who's singing this song"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "How come he don't come and P.L.P. with me down at the beach no more?",
+          "Chuck E.'s in love, he-e-e's in love",
+          "Chuck E.'s in love with the little girl who's singing this song"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "jazz-sade-smooth",
@@ -1043,7 +1680,11 @@
       "country": "GB/NG",
       "genre": "Smooth Jazz / Pop",
       "difficulty": "easy",
-      "mood": ["Sexy", "Cool", "Atmospheric"],
+      "mood": [
+        "Sexy",
+        "Cool",
+        "Atmospheric"
+      ],
       "pack": "Jazz & Blues Classics",
       "hints": [
         "Inbegriff für den eleganten Sophisti-Pop der 80er Jahre.",
@@ -1052,9 +1693,18 @@
         "Das Saxophon-Solo ist eines der bekanntesten der Musikgeschichte.",
         "Refrain: 'Smooth operator! Coast to coast, LA to Chicago!'"
       ],
-      "lyrics": { "real": ["Diamond life, lover boy, we move in space with minimum waste and maximum joy", "Smooth operator, smooth operator", "Coast to coast, LA to Chicago, western male"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "Diamond life, lover boy, we move in space with minimum waste and maximum joy",
+          "Smooth operator, smooth operator",
+          "Coast to coast, LA to Chicago, western male"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4TYv2PhG89A" }
+      "links": {
+        "youtube": "4TYv2PhG89A"
+      }
     }
   ]
 }

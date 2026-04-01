@@ -14,7 +14,11 @@
       "country": "US",
       "genre": "Heavy Metal",
       "difficulty": "easy",
-      "mood": ["Powerful", "Dark", "Energy"],
+      "mood": [
+        "Powerful",
+        "Dark",
+        "Energy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für Mainstream-Metal der early 90s.",
@@ -23,9 +27,18 @@
         "Der Durchbruch-Song des 'Black Album'.",
         "Refrain: 'Exit light! Enter night! Take my hand!'"
       ],
-      "lyrics": { "real": ["Say your prayers little one, don't forget my son, to include everyone", "Exit light, enter night, take my hand", "We're off to never-never land"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Say your prayers little one, don't forget my son, to include everyone",
+          "Exit light, enter night, take my hand",
+          "We're off to never-never land"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CD-E-m" }
+      "links": {
+        "youtube": "CD-E-m"
+      }
     },
     {
       "id": "metal-maiden-trooper",
@@ -35,7 +48,11 @@
       "country": "GB",
       "genre": "Heavy Metal / NWOBHM",
       "difficulty": "medium",
-      "mood": ["Energy", "Epic", "Powerful"],
+      "mood": [
+        "Energy",
+        "Epic",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Besticht durch das galoppierende Bass-Riff und die zweistimmigen Gitarren.",
@@ -44,9 +61,18 @@
         "Ein Inbegriff für den epischen Metal der 80er.",
         "Refrain: 'Whoa-oh-oh-oh-oh-oh-oh!'"
       ],
-      "lyrics": { "real": ["The bugle sounds the charge begins, but on this battlefield no one wins", "And as I lay there gazing at the sky", "My body's numb and my throat is dry"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "The bugle sounds the charge begins, but on this battlefield no one wins",
+          "And as I lay there gazing at the sky",
+          "My body's numb and my throat is dry"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "2G5rfP" }
+      "links": {
+        "youtube": "2G5rfP"
+      }
     },
     {
       "id": "metal-sabbath-paranoid",
@@ -56,7 +82,11 @@
       "country": "GB",
       "genre": "Heavy Metal",
       "difficulty": "easy",
-      "mood": ["Powerful", "Dark", "Classic"],
+      "mood": [
+        "Powerful",
+        "Dark",
+        "Classic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Gilt als einer der Gründungs-Songs des Heavy Metal.",
@@ -65,9 +95,18 @@
         "Ozzy Osbournes klagende Stimme prägt diesen Klassiker.",
         "Refrain: 'Finished with my woman 'cause she couldn't help me with my mind!'"
       ],
-      "lyrics": { "real": ["Finished with my woman 'cause she couldn't help me with my mind", "People think I'm insane because I am frowning all the time", "All day long I think of things but nothing seems to satisfy"], "fake": "In the shadow of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "Finished with my woman 'cause she couldn't help me with my mind",
+          "People think I'm insane because I am frowning all the time",
+          "All day long I think of things but nothing seems to satisfy"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "0qanF-91aJo"
+      }
     },
     {
       "id": "metal-priest-breaking",
@@ -77,7 +116,11 @@
       "country": "GB",
       "genre": "Heavy Metal",
       "difficulty": "easy",
-      "mood": ["Energy", "Aggressive", "Classic"],
+      "mood": [
+        "Energy",
+        "Aggressive",
+        "Classic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Besitzt eines der bekanntesten Metal-Riffs der Musikgeschichte.",
@@ -86,9 +129,18 @@
         "Ein absoluter Party- und Live-Klassiker.",
         "Refrain: 'Breaking the law! Breaking the law!'"
       ],
-      "lyrics": { "real": ["There I was completely wasted, out of work and down", "I couldn't take it any longer, there was no more to be found", "Breaking the law, breaking the law"], "fake": "Dancing in the street, moving to the beat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "There I was completely wasted, out of work and down",
+          "I couldn't take it any longer, there was no more to be found",
+          "Breaking the law, breaking the law"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-motorhead-ace",
@@ -98,7 +150,11 @@
       "country": "GB",
       "genre": "Heavy Metal / Speed Metal / Rock 'n' Roll",
       "difficulty": "easy",
-      "mood": ["Energy", "Fast", "Aggressive"],
+      "mood": [
+        "Energy",
+        "Fast",
+        "Aggressive"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für Geschwindigkeit, Lautstärke und Lemmys Reibeisen-Stimme.",
@@ -107,9 +163,18 @@
         "Ein Song, der keine Gefangenen macht.",
         "Refrain: 'The Ace of Spades! The Ace of Spades!'"
       ],
-      "lyrics": { "real": ["If you like to gamble, I tell you I'm your man", "You win some, lose some, all the same to me", "The Ace of Spades, the Ace of Spades"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "If you like to gamble, I tell you I'm your man",
+          "You win some, lose some, all the same to me",
+          "The Ace of Spades, the Ace of Spades"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-slayer-raining",
@@ -119,7 +184,11 @@
       "country": "US",
       "genre": "Thrash Metal",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Dark", "Powerful"],
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ein Inbegriff für die Brutalität und Präzision des Thrash Metal.",
@@ -128,9 +197,18 @@
         "Das Songwriting von Jeff Hanneman prägte den extremen Metal.",
         "Refrain: 'Raining blood! From a lacerated sky!'"
       ],
-      "lyrics": { "real": ["Trapped in purgatory, a lifeless object, alive", "Raining blood, from a lacerated sky", "Bleeding its horror, creating my structure, now I shall reign in blood"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Trapped in purgatory, a lifeless object, alive",
+          "Raining blood, from a lacerated sky",
+          "Bleeding its horror, creating my structure, now I shall reign in blood"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-megadeth-holywars",
@@ -140,7 +218,11 @@
       "country": "US",
       "genre": "Thrash Metal",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Complex", "Powerful"],
+      "mood": [
+        "Aggressive",
+        "Complex",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ein technisches Meisterwerk des Thrash Metal aus dem Album 'Rust in Peace'.",
@@ -149,9 +231,18 @@
         "Gilt als einer der besten Metal-Songs aller Zeiten.",
         "Refrain: 'Holy wars!'"
       ],
-      "lyrics": { "real": ["Brother will kill brother, spilling blood across the land", "Fools like me, who cross the sea and bring back many scars", "Holy wars"], "fake": "In the shadow of the night, we're looking for the light of our broken dream" },
+      "lyrics": {
+        "real": [
+          "Brother will kill brother, spilling blood across the land",
+          "Fools like me, who cross the sea and bring back many scars",
+          "Holy wars"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "M42_EBAmcLk"
+      }
     },
     {
       "id": "metal-anthrax-madhouse",
@@ -161,7 +252,11 @@
       "country": "US",
       "genre": "Thrash Metal",
       "difficulty": "medium",
-      "mood": ["Energy", "Crazy", "Aggressive"],
+      "mood": [
+        "Energy",
+        "Crazy",
+        "Aggressive"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Vereint Thrash-Energie mit einem fast schon poppigen Hook.",
@@ -170,9 +265,18 @@
         "Einer der 'Big Four' des Thrash Metal.",
         "Refrain: 'It's a Madhouse! Or so they say!'"
       ],
-      "lyrics": { "real": ["White coats, to Bind me, Out of control", "It's a madhouse, or so they say", "It's a madhouse, oh am I the one who's crazy?"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "White coats, to Bind me, Out of control",
+          "It's a madhouse, or so they say",
+          "It's a madhouse, oh am I the one who's crazy?"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-pantera-walk",
@@ -182,7 +286,11 @@
       "country": "US",
       "genre": "Groove Metal",
       "difficulty": "easy",
-      "mood": ["Powerful", "Aggressive", "Heavy"],
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Heavy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für das 'Groove Metal' Genre mit seinem schleppenden, brutalen Riffs.",
@@ -191,9 +299,18 @@
         "Ein absolutes Live-Monster.",
         "Refrain: 'Walk! What did you say? Walk! Are you talking to me?'"
       ],
-      "lyrics": { "real": ["Respect, walk, what did you say? Respect, walk, are you talking to me?", "No way punk!", "Walk on home boy!"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "Respect, walk, what did you say? Respect, walk, are you talking to me?",
+          "No way punk!",
+          "Walk on home boy!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "AkFq" }
+      "links": {
+        "youtube": "AkFq"
+      }
     },
     {
       "id": "metal-sepultura-roots",
@@ -203,7 +320,11 @@
       "country": "BR",
       "genre": "Groove Metal / Nu Metal",
       "difficulty": "medium",
-      "mood": ["Primary", "Powerful", "Aggressive"],
+      "mood": [
+        "Primary",
+        "Powerful",
+        "Aggressive"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Verbindet Thrash/Groove Metal mit brasilianischen Tribal-Rhythmen.",
@@ -212,9 +333,18 @@
         "Ein bahnbrechender Song für den modernen Metal.",
         "Refrain: 'Roots! Bloody Roots!'"
       ],
-      "lyrics": { "real": ["Roots bloody roots, roots bloody roots", "I believe in our fate, we don't need to fake", "It's all we wanna be, that's what we're gonna be"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "Roots bloody roots, roots bloody roots",
+          "I believe in our fate, we don't need to fake",
+          "It's all we wanna be, that's what we're gonna be"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-slipknot-bleed",
@@ -224,7 +354,11 @@
       "country": "US",
       "genre": "Nu Metal",
       "difficulty": "medium",
-      "mood": ["Aggressive", "Energy", "Dark"],
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Dark"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Der Durchbruch-Hit der maskierten Neun aus Iowa.",
@@ -233,9 +367,18 @@
         "Ein Inbegriff für den Erfolg des Nu Metal um die Jahrtausendwende.",
         "Refrain: 'I felt the hate rise up in me! Kneel down and clear the stone of leaves!'"
       ],
-      "lyrics": { "real": ["I felt the hate rise up in me, kneel down and clear the stone of leaves", "I won't let you get me, keep it inside and wait and bleed", "I wander through my mind and find it out"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "I felt the hate rise up in me, kneel down and clear the stone of leaves",
+          "I won't let you get me, keep it inside and wait and bleed",
+          "I wander through my mind and find it out"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-soad-chopsuey",
@@ -245,7 +388,11 @@
       "country": "US/AM",
       "genre": "Alternative Metal / Nu Metal",
       "difficulty": "hard",
-      "mood": ["Crazy", "Energy", "Powerful"],
+      "mood": [
+        "Crazy",
+        "Energy",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Besticht durch die rasanten Wechsel zwischen Chaos und Melodik.",
@@ -254,9 +401,18 @@
         "Wurde zu einer Hymne für eine ganze Generation.",
         "Refrain: 'Wake up! (Wake up!) Grab a brush and put a little makeup!'"
       ],
-      "lyrics": { "real": ["Wake up (Wake up), grab a brush and put a little makeup", "Why'd you leave the keys upon the table? Here you go create another fable", "I don't think you trust, in my, self-righteous suicide"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute Nacht" },
+      "lyrics": {
+        "real": [
+          "Wake up (Wake up), grab a brush and put a little makeup",
+          "Why'd you leave the keys upon the table? Here you go create another fable",
+          "I don't think you trust, in my, self-righteous suicide"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Nacht"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "CSvF" }
+      "links": {
+        "youtube": "CSvF"
+      }
     },
     {
       "id": "metal-korn-freak",
@@ -266,7 +422,11 @@
       "country": "US",
       "genre": "Nu Metal",
       "difficulty": "medium",
-      "mood": ["Dark", "Aggressive", "Deep"],
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Deep"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für den 'Korn-Sound' mit tiefgestimmten 7-Saiter-Gitarren.",
@@ -275,9 +435,18 @@
         "Besitzt ein visuell bahnbrechendes Musikvideo.",
         "Refrain: 'Something takes a part of me! You and I were meant to be!'"
       ],
-      "lyrics": { "real": ["Something takes a part of me, you and I were meant to be", "A cheap fuck for me to lay, something takes a part of me", "I'm on a leash, you're on a leash, we're all on a leash"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Something takes a part of me, you and I were meant to be",
+          "A cheap fuck for me to lay, something takes a part of me",
+          "I'm on a leash, you're on a leash, we're all on a leash"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-rammstein-duhast",
@@ -287,7 +456,11 @@
       "country": "DE",
       "genre": "Neue Deutsche Härte / Industrial Metal",
       "difficulty": "easy",
-      "mood": ["Powerful", "Primary", "Classic"],
+      "mood": [
+        "Powerful",
+        "Primary",
+        "Classic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Machte Rammstein weltweit (besonders in den USA) zum Phänomen.",
@@ -296,9 +469,18 @@
         "Ein Inbegriff für Industrial-Power aus Deutschland.",
         "Refrain: 'Du! Du hast! Du hast mich!'"
       ],
-      "lyrics": { "real": ["Du, du hast, du hast mich", "Du hast mich gefragt, und ich hab nichts gesagt", "Willst du bis der Tod euch scheidet, treu ihr sein für alle Tage?"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend" },
+      "lyrics": {
+        "real": [
+          "Du, du hast, du hast mich",
+          "Du hast mich gefragt, und ich hab nichts gesagt",
+          "Willst du bis der Tod euch scheidet, treu ihr sein für alle Tage?"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "W3q8Ok" }
+      "links": {
+        "youtube": "W3q8Ok"
+      }
     },
     {
       "id": "metal-linkin-in-the-end",
@@ -308,7 +490,11 @@
       "country": "US",
       "genre": "Nu Metal / Rap Rock",
       "difficulty": "easy",
-      "mood": ["Emotional", "Powerful", "Sad"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Sad"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Kombiniert Chester Benningtons kraftvollen Melodie-Gesang mit Mike Shinodas Rap.",
@@ -317,9 +503,18 @@
         "Wurde zu einer zeitlosen Hymne.",
         "Refrain: 'I tried so hard and got so far! But in the end, it doesn't even matter!'"
       ],
-      "lyrics": { "real": ["It starts with one thing, I don't know why, it doesn't even matter how hard you try", "I tried so hard and got so far, but in the end it doesn't even matter", "I had to fall to lose it all, but in the end it doesn't even matter"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "It starts with one thing, I don't know why, it doesn't even matter how hard you try",
+          "I tried so hard and got so far, but in the end it doesn't even matter",
+          "I had to fall to lose it all, but in the end it doesn't even matter"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-disturbed-sickness",
@@ -329,7 +524,11 @@
       "country": "US",
       "genre": "Nu Metal / Alternative Metal",
       "difficulty": "medium",
-      "mood": ["Aggressive", "Energy", "Powerful"],
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Bekannt für den markanten Stakkato-Gesang am Anfang ('ooh-wah-ah-ah-ah').",
@@ -338,9 +537,18 @@
         "Ein Inbegriff für den aggressiven Sound der Jahrhundertwende.",
         "Refrain: 'Get up, come on get down with the sickness!'"
       ],
-      "lyrics": { "real": ["Get up, come on get down with the sickness", "You mother get up, come on get down with the sickness", "Open up your hate, and let it flow into me"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Get up, come on get down with the sickness",
+          "You mother get up, come on get down with the sickness",
+          "Open up your hate, and let it flow into me"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "09LTTg" }
+      "links": {
+        "youtube": "09LTTg"
+      }
     },
     {
       "id": "metal-avenged-nightmare",
@@ -350,7 +558,11 @@
       "country": "US",
       "genre": "Heavy Metal",
       "difficulty": "medium",
-      "mood": ["Dark", "Energy", "Powerful"],
+      "mood": [
+        "Dark",
+        "Energy",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Erster Song nach dem Tod ihres Schlagzeugers The Rev (mit Mike Portnoy am Drumkit).",
@@ -359,9 +571,18 @@
         "Ein moderner Metal-Dauerbrenner.",
         "Refrain: 'Nightmare! (Nightmare!) Now your nightmare comes to life!'"
       ],
-      "lyrics": { "real": ["Nightmare! Now your nightmare comes to life", "Dragged you down below down to the devil's show", "To be his guest forever (Peace of mind is less than never)"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Nightmare! Now your nightmare comes to life",
+          "Dragged you down below down to the devil's show",
+          "To be his guest forever (Peace of mind is less than never)"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-gojira-stranded",
@@ -371,7 +592,11 @@
       "country": "FR",
       "genre": "Progressive Metal / Groove Metal",
       "difficulty": "medium",
-      "mood": ["Powerful", "Aggressive", "Atmospheric"],
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Atmospheric"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Besticht durch die markanten Whammy-Pedal-Gitarreneffekte.",
@@ -380,9 +605,18 @@
         "Ein Inbegriff für modernen, technisch innovativen Metal aus Frankreich.",
         "Refrain: 'Stranded! Lying on the ground!'"
       ],
-      "lyrics": { "real": ["I'm stranded, I'm stranded, I'm stranded, in the cold", "Stranded, and you're far away", "I'm stranded, in the middle of nowhere"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "I'm stranded, I'm stranded, I'm stranded, in the cold",
+          "Stranded, and you're far away",
+          "I'm stranded, in the middle of nowhere"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-mastodon-thunder",
@@ -392,7 +626,11 @@
       "country": "US",
       "genre": "Sludge Metal / Progressive Metal",
       "difficulty": "medium",
-      "mood": ["Powerful", "Aggressive", "Epic"],
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Epic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für das Mastodon-Konzeptalbum 'Leviathan' (basierend auf Moby Dick).",
@@ -401,9 +639,18 @@
         "Besitzt einen Gast-Gesang von Neil Fallon (Clutch).",
         "Refrain: 'White whale! Holy grail!'"
       ],
-      "lyrics": { "real": ["I think that someone is trying to kill me, infecting my blood and destroying my mind", "Split your lungs with blood and thunder when you see the white whale", "Break your backs and crack your oars men if you wish to prevail"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I think that someone is trying to kill me, infecting my blood and destroying my mind",
+          "Split your lungs with blood and thunder when you see the white whale",
+          "Break your backs and crack your oars men if you wish to prevail"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-opeth-perdition",
@@ -413,7 +660,11 @@
       "country": "SE",
       "genre": "Progressive Death Metal",
       "difficulty": "hard",
-      "mood": ["Complex", "Dark", "Epic"],
+      "mood": [
+        "Complex",
+        "Dark",
+        "Epic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ein Paradebeispiel für den Wechsel zwischen brutalen Growls und sanftem Klargesang.",
@@ -422,9 +673,18 @@
         "Ein Inbegriff für die Perfektion des progressiven Metal.",
         "Refrain: 'Ghost of perdition! Sticking to your thoughts!'"
       ],
-      "lyrics": { "real": ["Ghost of perdition, sticking to your thoughts", "To the floor with the ones who fell", "Sorrow of the night, darkness in the light"], "fake": "In the shadow of the valley, I'm looking for a rally of hope tonight" },
+      "lyrics": {
+        "real": [
+          "Ghost of perdition, sticking to your thoughts",
+          "To the floor with the ones who fell",
+          "Sorrow of the night, darkness in the light"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-dreamtheater-pullme",
@@ -434,7 +694,11 @@
       "country": "US",
       "genre": "Progressive Metal",
       "difficulty": "hard",
-      "mood": ["Complex", "Epic", "Powerful"],
+      "mood": [
+        "Complex",
+        "Epic",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Der einzige echte Radio-Hit des Progressive-Metal-Aushängeschilds.",
@@ -443,9 +707,18 @@
         "Ein Inbegriff für die Verschmelzung von Hard Rock und hoher Musikalität.",
         "Refrain: 'Pull me under! Pull me under! Pull me under, I'm not afraid!'"
       ],
-      "lyrics": { "real": ["Lost in the sky, clouds roll by and I roll with them", "Pull me under, pull me under, pull me under I'm not afraid", "All that I am, all that I was"], "fake": "In the middle of the street, you can feel the heat of our happy heart tonight" },
+      "lyrics": {
+        "real": [
+          "Lost in the sky, clouds roll by and I roll with them",
+          "Pull me under, pull me under, pull me under I'm not afraid",
+          "All that I am, all that I was"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "SGRgA" }
+      "links": {
+        "youtube": "SGRgA"
+      }
     },
     {
       "id": "metal-tool-schism",
@@ -455,7 +728,11 @@
       "country": "US",
       "genre": "Progressive Metal",
       "difficulty": "hard",
-      "mood": ["Complex", "Intelligent", "Deep"],
+      "mood": [
+        "Complex",
+        "Intelligent",
+        "Deep"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Berühmt für seinen komplexen Basslauf und die ständig wechselnden Taktarten.",
@@ -464,9 +741,18 @@
         "Ein Inbegriff für intellektuellen, spirituellen Metal.",
         "Refrain: 'I know the pieces fit 'cause I watched them tumble down!'"
       ],
-      "lyrics": { "real": ["I know the pieces fit 'cause I watched them tumble down", "No fault, none to blame, it doesn't mean I don't desire", "Between supposed lovers, between supposed brothers"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I know the pieces fit 'cause I watched them tumble down",
+          "No fault, none to blame, it doesn't mean I don't desire",
+          "Between supposed lovers, between supposed brothers"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "MM62wjLrgmA"
+      }
     },
     {
       "id": "metal-nin-closer",
@@ -476,7 +762,11 @@
       "country": "US",
       "genre": "Industrial Rock / Metal",
       "difficulty": "medium",
-      "mood": ["Sexy", "Dark", "Powerful"],
+      "mood": [
+        "Sexy",
+        "Dark",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Trent Reznors provokatives Meisterwerk über Obsession und Selbsthass.",
@@ -485,9 +775,18 @@
         "Ein Inbegriff für die dunkle Seite der 90er Jahre.",
         "Refrain: 'I want to fuck you like an animal!'"
       ],
-      "lyrics": { "real": ["You let me violate you, you let me desecrate you", "I want to fuck you like an animal, I want to feel you from the inside", "You get me closer to God"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "You let me violate you, you let me desecrate you",
+          "I want to fuck you like an animal, I want to feel you from the inside",
+          "You get me closer to God"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-ministry-jesus",
@@ -497,7 +796,11 @@
       "country": "US",
       "genre": "Industrial Metal",
       "difficulty": "medium",
-      "mood": ["Crazy", "Energy", "Fast"],
+      "mood": [
+        "Crazy",
+        "Energy",
+        "Fast"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Kombiniert rasanten Metal mit Industrial-Chaos und dem Irrsinn von Gibby Haynes (Butthole Surfers).",
@@ -506,9 +809,18 @@
         "Besitzt einen extrem einprägsamen, beinahe dadaistischen Gesangsteil.",
         "Refrain: 'Ding-a-ding-dang-my-dang-along-ling-long!'"
       ],
-      "lyrics": { "real": ["Soon I discovered that this rock thing was true, Jerry Lee Lewis was the devil", "Jesus built my hotrod, it's a love affair, mainly Jesus and my hotrod", "Ding-a-ding-dang-my-dang-along-ling-long"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "Soon I discovered that this rock thing was true, Jerry Lee Lewis was the devil",
+          "Jesus built my hotrod, it's a love affair, mainly Jesus and my hotrod",
+          "Ding-a-ding-dang-my-dang-along-ling-long"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-manson-beautiful",
@@ -518,7 +830,11 @@
       "country": "US",
       "genre": "Industrial Metal / Shock Rock",
       "difficulty": "easy",
-      "mood": ["Dark", "Aggressive", "Energy"],
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Energy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für das Image und den Sound von Marilyn Manson Mitte der 90er.",
@@ -527,9 +843,18 @@
         "Wurde zur Hymne für Outsider und Kritiker der Schönheitsideale.",
         "Refrain: 'The beautiful people! The beautiful people!'"
       ],
-      "lyrics": { "real": ["The beautiful people, the beautiful people, it's all relative to the size of your steeple", "You can't see the forest for the trees, you can't smell your own shit on your knees", "The beautiful people, the beautiful people"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "The beautiful people, the beautiful people, it's all relative to the size of your steeple",
+          "You can't see the forest for the trees, you can't smell your own shit on your knees",
+          "The beautiful people, the beautiful people"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Ypkvw" }
+      "links": {
+        "youtube": "Ypkvw"
+      }
     },
     {
       "id": "metal-inflames-quiet",
@@ -539,7 +864,11 @@
       "country": "SE",
       "genre": "Melodic Death Metal / Modern Metal",
       "difficulty": "medium",
-      "mood": ["Energy", "Atmospheric", "Powerful"],
+      "mood": [
+        "Energy",
+        "Atmospheric",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für den modernisierten Göteborger Sound.",
@@ -548,9 +877,18 @@
         "Anders Fridéns markanter Wechselgesang prägt den Song.",
         "Refrain: 'I'll find my own quiet place!'"
       ],
-      "lyrics": { "real": ["I'm a little bit confused, I'm a little bit lost", "I'll find my own quiet place, and tell you something interesting", "We only need to let it go"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm a little bit confused, I'm a little bit lost",
+          "I'll find my own quiet place, and tell you something interesting",
+          "We only need to let it go"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-darktran-misery",
@@ -560,7 +898,11 @@
       "country": "SE",
       "genre": "Melodic Death Metal",
       "difficulty": "medium",
-      "mood": ["Melancholic", "Powerful", "Atmospheric"],
+      "mood": [
+        "Melancholic",
+        "Powerful",
+        "Atmospheric"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Einer der bekanntesten Songs der Genre-Pioniere aus Göteborg.",
@@ -569,9 +911,18 @@
         "Ein Inbegriff für atmosphärischen, intelligenten Metal.",
         "Refrain: 'To the end we will go! To the end of the world!'"
       ],
-      "lyrics": { "real": ["To the end we will go, to the end of the world", "Wearing misery's crown, for the whole world to see", "I seek the light where darkness leads"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "To the end we will go, to the end of the world",
+          "Wearing misery's crown, for the whole world to see",
+          "I seek the light where darkness leads"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-atthegates-soul",
@@ -581,7 +932,11 @@
       "country": "SE",
       "genre": "Melodic Death Metal",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Fast", "Powerful"],
+      "mood": [
+        "Aggressive",
+        "Fast",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ein absoluter Meilenstein und Blueprint für den melodischen Death Metal.",
@@ -590,9 +945,18 @@
         "Inbegriff für Energie und Präzision.",
         "Refrain: 'Slaughter of the soul! (Go!)'"
       ],
-      "lyrics": { "real": ["I am the master of my own deceit, go!", "Slaughter of the soul, we are but puppets in the scheme", "Suicide of the spirit, death to the light"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I am the master of my own deceit, go!",
+          "Slaughter of the soul, we are but puppets in the scheme",
+          "Suicide of the spirit, death to the light"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-amon-thunder",
@@ -602,7 +966,11 @@
       "country": "SE",
       "genre": "Melodic Death Metal / Viking Metal",
       "difficulty": "medium",
-      "mood": ["Epic", "Powerful", "Energy"],
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Energy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Thematisiert Thors finalen Kampf gegen die Midgardschlange.",
@@ -611,9 +979,18 @@
         "Ein Live-Favorit weltweit.",
         "Refrain: 'Thor! Odins son! Protector of mankind!'"
       ],
-      "lyrics": { "real": ["Thor! Odins son! Protector of mankind!", "Ride to meet your fate! Your destiny awaits!", "Twilight of the thunder God!"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "Thor! Odins son! Protector of mankind!",
+          "Ride to meet your fate! Your destiny awaits!",
+          "Twilight of the thunder God!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-behemoth-lucifer",
@@ -623,7 +1000,11 @@
       "country": "PL",
       "genre": "Blackened Death Metal",
       "difficulty": "hard",
-      "mood": ["Dark", "Aggressive", "Epic"],
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Epic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ein Kernstück des gefeierten Albums 'The Satanist'.",
@@ -632,9 +1013,18 @@
         "Inbegriff für modernsten, ästhetisch anspruchsvollen extremen Metal.",
         "Refrain: 'Ora pro nobis! Lucifer!'"
       ],
-      "lyrics": { "real": ["Forgive me not for I have sinned, I have walked the path of the dark king", "Ora pro nobis Lucifer, for the stars are falling down", "Praise the light of the morning star"], "fake": "In the shadow of the night, we're looking for the light of our broken dream" },
+      "lyrics": {
+        "real": [
+          "Forgive me not for I have sinned, I have walked the path of the dark king",
+          "Ora pro nobis Lucifer, for the stars are falling down",
+          "Praise the light of the morning star"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-cannibal-face",
@@ -644,7 +1034,11 @@
       "country": "US",
       "genre": "Death Metal",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Gross", "Fast"],
+      "mood": [
+        "Aggressive",
+        "Gross",
+        "Fast"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Unbestreitbares Aushängeschild des brutalen Death Metal.",
@@ -653,9 +1047,18 @@
         "Ein Inbegriff für Schock-Ästhetik in der Musik.",
         "Refrain: 'Hammer smashed face!' (Guttural growled)"
       ],
-      "lyrics": { "real": ["There's something inside me, it's coming out", "I feel like killing you, let me smash your face", "Brutality is the only way for me to survive"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "There's something inside me, it's coming out",
+          "I feel like killing you, let me smash your face",
+          "Brutality is the only way for me to survive"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "vlgiWBCbCJk"
+      }
     },
     {
       "id": "metal-death-crystal",
@@ -665,7 +1068,11 @@
       "country": "US",
       "genre": "Progressive Death Metal",
       "difficulty": "hard",
-      "mood": ["Intelligent", "Complex", "Powerful"],
+      "mood": [
+        "Intelligent",
+        "Complex",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Chuck Schuldiners Meisterwerk über religiöse Verlogenheit.",
@@ -674,9 +1081,18 @@
         "Schuldiner gilt als der 'Godfather of Death Metal'.",
         "Refrain: 'Inside the crystal mountain! Evil takes its form!'"
       ],
-      "lyrics": { "real": ["Built on lies, the mountain of glass starts to shatter", "Inside the crystal mountain, evil takes its form", "Shame on the ones who hide behind the light"], "fake": "In the middle of the street, you can feel the heat of our happy heart tonight" },
+      "lyrics": {
+        "real": [
+          "Built on lies, the mountain of glass starts to shatter",
+          "Inside the crystal mountain, evil takes its form",
+          "Shame on the ones who hide behind the light"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-morbid-chapel",
@@ -686,7 +1102,11 @@
       "country": "US",
       "genre": "Death Metal",
       "difficulty": "hard",
-      "mood": ["Dark", "Aggressive", "Epic"],
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Epic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ein Grundpfeiler des floridischen Death Metal.",
@@ -695,9 +1115,18 @@
         "Ein Inbegriff für die düstere Seite des Metal-Underground.",
         "Refrain: 'Dead! Your God is dead!'"
       ],
-      "lyrics": { "real": ["Ghouls attack the church, desecrate the holy alter", "Dead! Your God is dead! Burn in hell forever", "Sacrifice the blood of the innocent for the ancient ones"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Ghouls attack the church, desecrate the holy alter",
+          "Dead! Your God is dead! Burn in hell forever",
+          "Sacrifice the blood of the innocent for the ancient ones"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-napalm-suffer",
@@ -707,7 +1136,11 @@
       "country": "GB",
       "genre": "Grindcore",
       "difficulty": "hard",
-      "mood": ["Aggressive", "Fast", "Funny"],
+      "mood": [
+        "Aggressive",
+        "Fast",
+        "Funny"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Hält den Guinness-Weltrekord für den kürzesten Song aller Zeiten (ca. 1,3 Sekunden).",
@@ -716,9 +1149,17 @@
         "Besteht nur aus dem Wort 'You suffer - but why?'.",
         "Refrain: 'YOU SUFFER!'"
       ],
-      "lyrics": { "real": ["You suffer", "But why?"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "You suffer",
+          "But why?"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-hatebreed-heard",
@@ -728,7 +1169,11 @@
       "country": "US",
       "genre": "Hardcore Metal / Metalcore",
       "difficulty": "easy",
-      "mood": ["Energy", "Powerful", "Confident"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Confident"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Einer der motivierendsten Songs der Hardcore-Geschichte.",
@@ -737,9 +1182,18 @@
         "Zentraler Song für die Verbindung von Metal-Produktion und Hardcore-Attitüde.",
         "Refrain: 'I will be heard! NOW IS THE TIME FOR ME TO RISE!'"
       ],
-      "lyrics": { "real": ["Now is the time for me to rise, leave the past behind", "I will be heard, I will be heard!", "No one can stop me from rising again!"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Now is the time for me to rise, leave the past behind",
+          "I will be heard, I will be heard!",
+          "No one can stop me from rising again!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-madball-pride",
@@ -749,7 +1203,11 @@
       "country": "US",
       "genre": "New York Hardcore",
       "difficulty": "medium",
-      "mood": ["Energy", "Aggressive", "Traditional"],
+      "mood": [
+        "Energy",
+        "Aggressive",
+        "Traditional"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für den aggressiven Sound der Straße aus New York.",
@@ -758,9 +1216,18 @@
         "Ein Song voller purer Hardcore-Energie.",
         "Refrain: 'Pride! It's all we have! Times are changing!'"
       ],
-      "lyrics": { "real": ["Pride, it's all we have left, from the streets we came", "Times are changing, but we stay the same", "NYHC until the end of our days!"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Pride, it's all we have left, from the streets we came",
+          "Times are changing, but we stay the same",
+          "NYHC until the end of our days!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-soia-stepdown",
@@ -770,7 +1237,11 @@
       "country": "US",
       "genre": "New York Hardcore",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Funny"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Bekannt für das humorvolle Musikvideo, das Mosh-Tanzstile erklärt.",
@@ -779,9 +1250,18 @@
         "Besitzt einen extrem mitreißenden Groove.",
         "Refrain: 'You better step down! You better think twice!'"
       ],
-      "lyrics": { "real": ["You better step down, you better think twice, for the sake of the life", "We don't need your hate, we don't need your lies", "NYHC for the world to see!"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "You better step down, you better think twice, for the sake of the life",
+          "We don't need your hate, we don't need your lies",
+          "NYHC for the world to see!"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-agnostic-go",
@@ -791,7 +1271,11 @@
       "country": "US",
       "genre": "New York Hardcore",
       "difficulty": "easy",
-      "mood": ["Energy", "Happy", "Positive"],
+      "mood": [
+        "Energy",
+        "Happy",
+        "Positive"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Die ultimative Mitsing-Hymne des New York Hardcore.",
@@ -800,9 +1284,18 @@
         "Roger Mirets Stimme ist die Stimme des Hardcore.",
         "Refrain: 'Gotta, gotta, gotta go! Oi! Oi! Oi!'"
       ],
-      "lyrics": { "real": ["From the East Coast to the West Coast, we got the sound", "Gotta, gotta, gotta go! NYHC is coming through", "Stand for the truth, stand for our brothers"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "From the East Coast to the West Coast, we got the sound",
+          "Gotta, gotta, gotta go! NYHC is coming through",
+          "Stand for the truth, stand for our brothers"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-cromags-know",
@@ -812,7 +1305,11 @@
       "country": "US",
       "genre": "Hardcore Punk / Crossover",
       "difficulty": "medium",
-      "mood": ["Aggressive", "Energy", "Traditional"],
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Traditional"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Eröffnungssong des wegweisenden Albums 'The Age of Quarrel'.",
@@ -821,9 +1318,18 @@
         "Ein Inbegriff für den frühen New Yorker Crossover-Sound.",
         "Refrain: 'We gotta know! We gotta know the truth!'"
       ],
-      "lyrics": { "real": ["We gotta know, we gotta know the truth about the life", "Running through the streets, dodging the strife", "Age of quarrel is upon us now!"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "We gotta know, we gotta know the truth about the life",
+          "Running through the streets, dodging the strife",
+          "Age of quarrel is upon us now!"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "Wo-z58xLoe8"
+      }
     },
     {
       "id": "metal-badbrains-pay",
@@ -833,7 +1339,11 @@
       "country": "US",
       "genre": "Hardcore Punk",
       "difficulty": "hard",
-      "mood": ["Fast", "Energy", "Crazy"],
+      "mood": [
+        "Fast",
+        "Energy",
+        "Crazy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Einer der schnellsten und technisch anspruchsvollsten Songs der Punkgeschichte.",
@@ -842,9 +1352,18 @@
         "Ein Inbegriff für pure, unkontrollierte Energie.",
         "Genre-Inhalt: Rasanter, fast ungesungener Speed-Punk."
       ],
-      "lyrics": { "real": ["Pay to cum, pay to cum, for the pleasure in the sun", "No one knows where we go when the lights are low", "Fast as lightning, loud as thunder!"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Pay to cum, pay to cum, for the pleasure in the sun",
+          "No one knows where we go when the lights are low",
+          "Fast as lightning, loud as thunder!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-minorthreat-straight",
@@ -854,7 +1373,11 @@
       "country": "US",
       "genre": "Hardcore Punk",
       "difficulty": "easy",
-      "mood": ["Serious", "Energy", "Confident"],
+      "mood": [
+        "Serious",
+        "Energy",
+        "Confident"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Begründete die 'Straight Edge' Lebensweise (kein Alkohol, keine Drogen).",
@@ -863,9 +1386,18 @@
         "Ein kurzer, aber weltgeschichtlich bedeutsamer Punk-Song.",
         "Refrain: 'I've got the straight edge!'"
       ],
-      "lyrics": { "real": ["I'm a person just like you, but I've got better things to do", "I've got the straight edge, I don't need no drugs to be happy", "I've got the straight edge!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I'm a person just like you, but I've got better things to do",
+          "I've got the straight edge, I don't need no drugs to be happy",
+          "I've got the straight edge!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-blackflag-tvparty",
@@ -875,7 +1407,11 @@
       "country": "US",
       "genre": "Hardcore Punk",
       "difficulty": "easy",
-      "mood": ["Funny", "Happy", "Sarcastic"],
+      "mood": [
+        "Funny",
+        "Happy",
+        "Sarcastic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Ironischer Song über Passivität und TV-Konsum.",
@@ -884,9 +1420,18 @@
         "Ein Inbegriff für L.A. Hardcore mit einem Augenzwinkern.",
         "Refrain: 'We're gonna have a TV party tonight!'"
       ],
-      "lyrics": { "real": ["We're gonna have a TV party tonight, we're gonna have a TV party alright", "My favorite show is coming on, don't forget the beer", "TV party tonight!"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "We're gonna have a TV party tonight, we're gonna have a TV party alright",
+          "My favorite show is coming on, don't forget the beer",
+          "TV party tonight!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-deadkennedys-holiday",
@@ -896,7 +1441,11 @@
       "country": "US",
       "genre": "Hardcore Punk",
       "difficulty": "medium",
-      "mood": ["Sarcastic", "Aggressive", "Serious"],
+      "mood": [
+        "Sarcastic",
+        "Aggressive",
+        "Serious"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Beißende Satire gegen privilegierte US-Studenten und Pol Pot Regime.",
@@ -905,9 +1454,18 @@
         "Ein Kernstück des US-Polit-Punks.",
         "Refrain: 'It's a holiday in Cambodia! It's tough kid, but it's life!'"
       ],
-      "lyrics": { "real": ["So you been to school for a year or two and you think you know it all", "It's a holiday in Cambodia, where you'll do what you're told", "Don't forget to pack a wife!"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "So you been to school for a year or two and you think you know it all",
+          "It's a holiday in Cambodia, where you'll do what you're told",
+          "Don't forget to pack a wife!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "2UjOQ0w_4CU"
+      }
     },
     {
       "id": "metal-fugazi-waiting",
@@ -917,7 +1475,11 @@
       "country": "US",
       "genre": "Post-Hardcore",
       "difficulty": "easy",
-      "mood": ["Groovy", "Energy", "Confident"],
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Confident"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Besitzt einen der bekanntesten Bassläufe der Independent-Musikgeschichte.",
@@ -926,9 +1488,18 @@
         "Ein Inbegriff für Integrität und den DIY-Spirit.",
         "Refrain: 'I am a patient boy! I wait, I wait, I wait, I wait!'"
       ],
-      "lyrics": { "real": ["I am a patient boy, I wait I wait I wait I wait", "My time is like water down the drain", "Everybody's moving, moving, moving, moving"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "I am a patient boy, I wait I wait I wait I wait",
+          "My time is like water down the drain",
+          "Everybody's moving, moving, moving, moving"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-lamb-redneck",
@@ -938,7 +1509,11 @@
       "country": "US",
       "genre": "Groove Metal",
       "difficulty": "medium",
-      "mood": ["Aggressive", "Powerful", "Energy"],
+      "mood": [
+        "Aggressive",
+        "Powerful",
+        "Energy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für den modernen US-Groove-Metal (NWOAHM).",
@@ -947,9 +1522,18 @@
         "Ein absoluter Live-Dauerbrenner.",
         "Refrain: 'This is an invitation! To the end of everything!' (Hooky and heavy)"
       ],
-      "lyrics": { "real": ["This is an invitation, to the end of everything", "You're a person but you don't even know it", "Now it's time to pay the price for your own lies"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "This is an invitation, to the end of everything",
+          "You're a person but you don't even know it",
+          "Now it's time to pay the price for your own lies"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "oqdZpxkzNvc"
+      }
     },
     {
       "id": "metal-killswitch-curse",
@@ -959,7 +1543,11 @@
       "country": "US",
       "genre": "Metalcore",
       "difficulty": "easy",
-      "mood": ["Emotional", "Powerful", "Romantic"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Romantic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Paradebeispiel für Metalcore mit emotionaler Tiefe.",
@@ -968,9 +1556,18 @@
         "Howard Jones' kraftvoller Bariton macht diesen Song unvergesslich.",
         "Refrain: 'There is love! There is love! Watching you from the shadows!'"
       ],
-      "lyrics": { "real": ["This is my curse, the longing in my heart", "Watching you from the shadows, praying for the light", "I will wait for you forever, no matter what they say"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "This is my curse, the longing in my heart",
+          "Watching you from the shadows, praying for the light",
+          "I will wait for you forever, no matter what they say"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-bmth-throne",
@@ -980,7 +1577,11 @@
       "country": "GB",
       "genre": "Alternative Metal / Modern Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Confident", "Powerful"],
+      "mood": [
+        "Energy",
+        "Confident",
+        "Powerful"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Inbegriff für den evolutionären Soundwechsel von BMTH zu elektronischen Hymnen.",
@@ -989,9 +1590,18 @@
         "Ein moderner Arena-Rock/Metal Welthit.",
         "Refrain: 'So you can throw me to the wolves! Tomorrow I will come back leader of the pack!'"
       ],
-      "lyrics": { "real": ["So you can throw me to the wolves, tomorrow I will come back leader of the pack", "Every scar you give me is a world I've built", "You can throw me to the wolves!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "So you can throw me to the wolves, tomorrow I will come back leader of the pack",
+          "Every scar you give me is a world I've built",
+          "You can throw me to the wolves!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-architects-doomsday",
@@ -1001,7 +1611,11 @@
       "country": "GB",
       "genre": "Metalcore / Progressive Metalcore",
       "difficulty": "medium",
-      "mood": ["Sad", "Powerful", "Emotional"],
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Emotional"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Zutiefst emotionaler Song, geschrieben nach dem Krebstod von Gitarrist Tom Searle.",
@@ -1010,9 +1624,18 @@
         "Ein Meilenstein des modernen Metalcore.",
         "Refrain: 'They say the ocean's blue! But it's black as the night!'"
       ],
-      "lyrics": { "real": ["They say the ocean's blue, but it's black as the night", "I'm still searching for the light in the dark", "Every word I say is a prayer for you"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "They say the ocean's blue, but it's black as the night",
+          "I'm still searching for the light in the dark",
+          "Every word I say is a prayer for you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "metal-parkway-carrion",
@@ -1022,7 +1645,11 @@
       "country": "AU",
       "genre": "Metalcore",
       "difficulty": "medium",
-      "mood": ["Energy", "Powerful", "Epic"],
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Epic"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Der Durchbruch-Song des australischen Metalcore-Giganten.",
@@ -1031,9 +1658,18 @@
         "Winston McCall's Performance ist pure Energie.",
         "Refrain: 'In the distance! The sound of the broken world!'"
       ],
-      "lyrics": { "real": ["Carrion, in the distance, I hear the sound of the end", "We are the survivors of the broken machine", "Parkway Drive for the life!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Carrion, in the distance, I hear the sound of the end",
+          "We are the survivors of the broken machine",
+          "Parkway Drive for the life!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "metal-callboy-moves",
@@ -1043,7 +1679,11 @@
       "country": "DE",
       "genre": "Electronicore / Party Metal",
       "difficulty": "easy",
-      "mood": ["Funny", "Happy", "Energy"],
+      "mood": [
+        "Funny",
+        "Happy",
+        "Energy"
+      ],
       "pack": "Metal & Hardcore Fury",
       "hints": [
         "Machte die Band zum globalen viralen Phänomen (samt Pilz-Frisuren).",
@@ -1052,9 +1692,18 @@
         "Ein Inbegriff für 'Party-Metal' aus Deutschland.",
         "Refrain: 'Döp, döp, döp, döp, döp, döp, döp, döp! We've got the moves!'"
       ],
-      "lyrics": { "real": ["Summer is calling, we're ready to dance", "Döp döp döp döp baby, we got the moves", "Best time of our lives, right here right now"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Summer is calling, we're ready to dance",
+          "Döp döp döp döp baby, we got the moves",
+          "Best time of our lives, right here right now"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     }
   ]
 }

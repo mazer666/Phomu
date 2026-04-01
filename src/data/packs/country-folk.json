@@ -14,7 +14,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Powerful", "Romantic", "Classic"],
+      "mood": [
+        "Powerful",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Johnny Cashs erfolgreichster Song, mitgeschrieben von June Carter.",
@@ -23,9 +27,18 @@
         "Ein absolutes Aushängeschild für den Sound des 'Man in Black'.",
         "Refrain: 'And it burns, burns, burns! The ring of fire!'"
       ],
-      "lyrics": { "real": ["Love is a burning thing, and it makes a fiery ring", "Bound by wild desire, I fell into a ring of fire", "I fell into a burning ring of fire, I went down, down, down"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Love is a burning thing, and it makes a fiery ring",
+          "Bound by wild desire, I fell into a ring of fire",
+          "I fell into a burning ring of fire, I went down, down, down"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "It7107" }
+      "links": {
+        "youtube": "It7107"
+      }
     },
     {
       "id": "country-dolly-jolene",
@@ -35,7 +48,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Classic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Dolly Partons verzweifelter Appell an eine Frau, die ihren Mann stehlen könnte.",
@@ -44,9 +61,18 @@
         "Ein zeitloser Klassiker, der unzählige Male gecovert wurde.",
         "Refrain: 'Jolene, Jolene, Jolene, Jolene! I'm begging of you please don't take my man!'"
       ],
-      "lyrics": { "real": ["Jolene, Jolene, Jolene, Jolene", "I'm begging of you please don't take my man", "Your beauty is beyond compare, with flaming locks of auburn hair"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "Jolene, Jolene, Jolene, Jolene",
+          "I'm begging of you please don't take my man",
+          "Your beauty is beyond compare, with flaming locks of auburn hair"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-willie-road",
@@ -56,7 +82,11 @@
       "country": "US",
       "genre": "Country / Outlaw Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Road Trip", "Classic"],
+      "mood": [
+        "Happy",
+        "Road Trip",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Die ultimative Hymne für das Leben auf Tournee.",
@@ -65,9 +95,18 @@
         "Ein Inbegriff für den Lebensgeist des Outlaw Country.",
         "Refrain: 'On the road again! Goin' places that I've never been!'"
       ],
-      "lyrics": { "real": ["On the road again, just can't wait to get on the road again", "The life I love is making music with my friends", "And I can't wait to get on the road again"], "fake": "In the shadow of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "On the road again, just can't wait to get on the road again",
+          "The life I love is making music with my friends",
+          "And I can't wait to get on the road again"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "dBN86y30Ufc"
+      }
     },
     {
       "id": "country-denver-roads",
@@ -77,7 +116,11 @@
       "country": "US",
       "genre": "Country / Folk",
       "difficulty": "easy",
-      "mood": ["Happy", "Nostalgic", "Classic"],
+      "mood": [
+        "Happy",
+        "Nostalgic",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besingt die Schönheit von West Virginia, obwohl die Songwriter den Staat damals kaum kannten.",
@@ -86,9 +129,18 @@
         "John Denvers klarer, optimistischer Gesang ist das Markenzeichen.",
         "Refrain: 'Country roads, take me home! To the place I belong!'"
       ],
-      "lyrics": { "real": ["Almost heaven, West Virginia, Blue Ridge Mountains, Shenandoah River", "Life is old there, older than the trees", "Country roads, take me home, to the place I belong"], "fake": "Dancing in the street, moving to the beat of the broken drum tonight" },
+      "lyrics": {
+        "real": [
+          "Almost heaven, West Virginia, Blue Ridge Mountains, Shenandoah River",
+          "Life is old there, older than the trees",
+          "Country roads, take me home, to the place I belong"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-rogers-gambler",
@@ -98,7 +150,11 @@
       "country": "US",
       "genre": "Country / Storytelling",
       "difficulty": "easy",
-      "mood": ["Cool", "Serious", "Classic"],
+      "mood": [
+        "Cool",
+        "Serious",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Erzählt die Geschichte einer Begegnung mit einem alten Spieler im Zug.",
@@ -107,9 +163,18 @@
         "Ein Inbegriff für Country-Storytelling.",
         "Refrain: 'You've got to know when to hold 'em! Know when to fold 'em!'"
       ],
-      "lyrics": { "real": ["On a warm summer's eve, on a train bound for nowhere, I met up with a gambler", "You've got to know when to hold 'em, know when to fold 'em", "Know when to walk away, know when to run"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "On a warm summer's eve, on a train bound for nowhere, I met up with a gambler",
+          "You've got to know when to hold 'em, know when to fold 'em",
+          "Know when to walk away, know when to run"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-shania-man",
@@ -119,7 +184,11 @@
       "country": "CA",
       "genre": "Country Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Confident", "Energy"],
+      "mood": [
+        "Happy",
+        "Confident",
+        "Energy"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Einer der größten Crossover-Hits zwischen Country und Pop.",
@@ -128,9 +197,18 @@
         "Shania Twains Energie machte sie zur Queen des Country-Pop.",
         "Refrain: 'Oh, oh, oh, go totally crazy! Forget I'm a lady!'"
       ],
-      "lyrics": { "real": ["Let's go girls!", "I'm going out tonight, I'm feelin' alright", "The best thing about being a woman, is the prerogative to have a little fun"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Let's go girls!",
+          "I'm going out tonight, I'm feelin' alright",
+          "The best thing about being a woman, is the prerogative to have a little fun"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-garth-friends",
@@ -140,7 +218,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Funny"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Die ultimative Kneipen-Hymne der 90er Jahre.",
@@ -149,9 +231,18 @@
         "Ein Inbegriff für den massiven Erfolg des modernen Country.",
         "Refrain: 'I got friends in low places! Where the whiskey drowns and the beer chases!'"
       ],
-      "lyrics": { "real": ["Blame it all on my roots, I showed up in boots", "I'm not big on social graces", "I've got friends in low places, where the whiskey drowns and the beer chases"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "Blame it all on my roots, I showed up in boots",
+          "I'm not big on social graces",
+          "I've got friends in low places, where the whiskey drowns and the beer chases"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-strait-amarillo",
@@ -161,7 +252,11 @@
       "country": "US",
       "genre": "Country / Western",
       "difficulty": "medium",
-      "mood": ["Nostalgic", "Professional", "Classic"],
+      "mood": [
+        "Nostalgic",
+        "Professional",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für den Sound des Rodeo-Lebens.",
@@ -170,9 +265,18 @@
         "George Strait gilt als der 'King of Country'.",
         "Refrain: 'Amarillo by morning! Up from San Antone!'"
       ],
-      "lyrics": { "real": ["Amarillo by morning, up from San Antone", "Everything that I've got, is just what I've got on", "I ain't got a dime, but what I got is mine"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Amarillo by morning, up from San Antone",
+          "Everything that I've got, is just what I've got on",
+          "I ain't got a dime, but what I got is mine"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-jackson-chattahoochee",
@@ -182,7 +286,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Funny"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besticht durch den rasanten Uptempo-Beat und das humorvolle Musikvideo (Alan Jackson auf Wasserski).",
@@ -191,9 +299,18 @@
         "Gewann mehrere Country Music Awards als 'Single des Jahres'.",
         "Refrain: 'Way down yonder on the Chattahoochee! It gets hotter than a hoochie coochie!'"
       ],
-      "lyrics": { "real": ["Way down yonder on the Chattahoochee, it gets hotter than a hoochie coochie", "We learned a lot about livin' and a little 'bout lovin'", "Yeah way down yonder on the Chattahoochee"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Way down yonder on the Chattahoochee, it gets hotter than a hoochie coochie",
+          "We learned a lot about livin' and a little 'bout lovin'",
+          "Yeah way down yonder on the Chattahoochee"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-tim-live",
@@ -203,7 +320,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Emotional", "Serious", "Powerful"],
+      "mood": [
+        "Emotional",
+        "Serious",
+        "Powerful"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Thematisiert den bewussten Umgang mit dem Leben nach einer Schockdiagnose.",
@@ -212,9 +333,18 @@
         "Wurde zu einer Hymne für Lebensfreude und Wertschätzung.",
         "Refrain: 'I went skydivin'! I went Rocky Mountain climbin'!'"
       ],
-      "lyrics": { "real": ["I went skydivin', I went Rocky Mountain climbin'", "I went two point seven seconds on a bull named Fu Manchu", "And I loved deeper and I spoke sweeter"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute" },
+      "lyrics": {
+        "real": [
+          "I went skydivin', I went Rocky Mountain climbin'",
+          "I went two point seven seconds on a bull named Fu Manchu",
+          "And I loved deeper and I spoke sweeter"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-faith-breathe",
@@ -224,7 +354,11 @@
       "country": "US",
       "genre": "Country Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Soft", "Emotional"],
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Emotional"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Ein massiver Crossover-Erfolg, der wochenlang die Pop-Charts dominierte.",
@@ -233,9 +367,18 @@
         "Besticht durch das elegante Arrangement und die romantische Stimmung.",
         "Refrain: 'I can feel you breathe! It's washing over me!'"
       ],
-      "lyrics": { "real": ["I can feel you breathe, it's washing over me", "Suddenly I'm melting into you", "There's nothing left to prove"], "fake": "In the middle of the island, we're looking for the silent sun tonight" },
+      "lyrics": {
+        "real": [
+          "I can feel you breathe, it's washing over me",
+          "Suddenly I'm melting into you",
+          "There's nothing left to prove"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-carrie-cheats",
@@ -245,7 +388,11 @@
       "country": "US",
       "genre": "Country Pop / Rock influence",
       "difficulty": "easy",
-      "mood": ["Aggressive", "Confident", "Energy"],
+      "mood": [
+        "Aggressive",
+        "Confident",
+        "Energy"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Die ultimative Rache-Hymne einer betrogenen Frau.",
@@ -254,9 +401,18 @@
         "Machte die American-Idol-Gewinnerin zum Superstar.",
         "Refrain: 'I dug my key into the side of his pretty little souped-up four-wheel drive!'"
       ],
-      "lyrics": { "real": ["I dug my key into the side, of his pretty little souped-up four-wheel drive", "Carved my name into his leather seats", "I took a Louisville slugger to both headlights"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "I dug my key into the side, of his pretty little souped-up four-wheel drive",
+          "Carved my name into his leather seats",
+          "I took a Louisville slugger to both headlights"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-taylor-love",
@@ -266,7 +422,11 @@
       "country": "US",
       "genre": "Country Pop",
       "difficulty": "easy",
-      "mood": ["Romantic", "Happy", "Dreamy"],
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Dreamy"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Eine moderne Interpretation von Romeo und Julia mit einem Happy End.",
@@ -275,9 +435,18 @@
         "Ein Inbegriff für den frühen, country-geprägten Stil von Taylor Swift.",
         "Refrain: 'Romeo, take me somewhere we can be alone! I'll be waiting!'"
       ],
-      "lyrics": { "real": ["We were both young when I first saw you, I close my eyes and the flashback starts", "You'll be the prince and I'll be the princess", "It's a love story, baby, just say yes"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "We were both young when I first saw you, I close my eyes and the flashback starts",
+          "You'll be the prince and I'll be the princess",
+          "It's a love story, baby, just say yes"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-stapleton-whiskey",
@@ -287,7 +456,11 @@
       "country": "US",
       "genre": "Country / Soul",
       "difficulty": "medium",
-      "mood": ["Smooth", "Romantic", "Powerful"],
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Powerful"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Eine Coverversion des David Allan Coe/George Jones Klassikers mit Soul-Einschlag.",
@@ -296,9 +469,18 @@
         "Wurde zu einem der meistgespielten modernen Country-Songs.",
         "Refrain: 'You're as smooth as Tennessee whiskey! You're as sweet as strawberry wine!'"
       ],
-      "lyrics": { "real": ["I used to spend my nights out in a barroom, liquor was the only love I'd known", "You're as smooth as Tennessee whiskey", "You're as sweet as strawberry wine"], "fake": "Dancing in the Stars, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I used to spend my nights out in a barroom, liquor was the only love I'd known",
+          "You're as smooth as Tennessee whiskey",
+          "You're as sweet as strawberry wine"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "country-combs-hurricane",
@@ -308,7 +490,11 @@
       "country": "US",
       "genre": "Country / Rock influence",
       "difficulty": "easy",
-      "mood": ["Powerful", "Emotional", "Energy"],
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Energy"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Thematisiert das plötzliche Wiedersehen mit einer verflossenen Liebe als Naturereignis.",
@@ -317,9 +503,18 @@
         "Ein Inbegriff für den Erfolg des 'Everyman' Country.",
         "Refrain: 'Then you rolled in with your hair in the wind! Just like a hurricane!'"
       ],
-      "lyrics": { "real": ["The moon went hiding, a lonely night driving", "Then you rolled in with your hair in the wind, just like a hurricane", "You wrecked my whole world, girl"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "The moon went hiding, a lonely night driving",
+          "Then you rolled in with your hair in the wind, just like a hurricane",
+          "You wrecked my whole world, girl"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-wallen-glasses",
@@ -329,7 +524,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Moody", "Sad", "Energy"],
+      "mood": [
+        "Moody",
+        "Sad",
+        "Energy"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Thematisiert den Versuch, Liebeskummer durch Alkohol zu betäuben.",
@@ -337,9 +536,18 @@
         "Ein absoluter Mega-Hit im Streaming-Bereich.",
         "Refrain: 'Poor me, pour me another drink! 'Cause I don't wanna feel a thing!'"
       ],
-      "lyrics": { "real": ["Poor me, pour me another drink, 'cause I don't wanna feel a thing", "I just wanna sipped down, until the sun goes down", "Deep down, whiskey glasses"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Poor me, pour me another drink, 'cause I don't wanna feel a thing",
+          "I just wanna sipped down, until the sun goes down",
+          "Deep down, whiskey glasses"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "country-kacey-arrow",
@@ -349,7 +557,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Confident", "Positive"],
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besticht durch seine liberale, für Country-Verhältnisse progressive Botschaft.",
@@ -358,9 +570,18 @@
         "Ein Inbegriff für den modernen, weltoffenen Country-Stil.",
         "Refrain: 'Follow your arrow wherever it points!'"
       ],
-      "lyrics": { "real": ["You're damned if you do and you're damned if you don't", "So just do what you want, follow your arrow wherever it points", "And if you want to make out with a girl, that's okay too"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "You're damned if you do and you're damned if you don't",
+          "So just do what you want, follow your arrow wherever it points",
+          "And if you want to make out with a girl, that's okay too"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-maren-church",
@@ -370,7 +591,11 @@
       "country": "US",
       "genre": "Country / Soul influence",
       "difficulty": "easy",
-      "mood": ["Spirit", "Positive", "Happy"],
+      "mood": [
+        "Spirit",
+        "Positive",
+        "Happy"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Erklärt das Autofahren und Musikhören zur spirituellen Erfahrung.",
@@ -379,9 +604,18 @@
         "Ein Inbegriff für den frischen Wind in Nashville.",
         "Refrain: 'Can I get a hallelujah! Can I get an amen!'"
       ],
-      "lyrics": { "real": ["I've got a window down, the radio's up loudly", "When I'm in my church, you can see me singing proudly", "Can I get a hallelujah, can I get an amen"], "fake": "In the shadow of the night, I'm looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "I've got a window down, the radio's up loudly",
+          "When I'm in my church, you can see me singing proudly",
+          "Can I get a hallelujah, can I get an amen"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-zacbrown-chicken",
@@ -391,7 +625,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Positive"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besingt die einfachen Freuden des Lebens im US-Süden.",
@@ -400,9 +638,18 @@
         "Ein absoluter Party-Garant auf jedem Country-Festival.",
         "Refrain: 'You know I like my chicken fried! And a cold beer on a Friday night!'"
       ],
-      "lyrics": { "real": ["You know I like my chicken fried, and a cold beer on a Friday night", "A pair of jeans that fit just right, and the radio up", "Well it's funny how it's the little things in life that mean the most"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "You know I like my chicken fried, and a cold beer on a Friday night",
+          "A pair of jeans that fit just right, and the radio up",
+          "Well it's funny how it's the little things in life that mean the most"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-oldcrow-wagon",
@@ -412,7 +659,11 @@
       "country": "US",
       "genre": "Folk / Bluegrass",
       "difficulty": "easy",
-      "mood": ["Happy", "Energy", "Classic"],
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Basiert auf einem Refrain-Fragment, das Bob Dylan in den 70ern aufnahm.",
@@ -421,9 +672,18 @@
         "Besticht durch die Geige und den ansteckenden Mitsing-Schwung.",
         "Refrain: 'Rock me mama like a wagon wheel! Rock me mama anyway you feel!'"
       ],
-      "lyrics": { "real": ["Headed down south to the land of the pines, I'm thumbing my way into North Caroline", "Rock me mama like a wagon wheel, rock me mama anyway you feel", "Hey mama rock me"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Headed down south to the land of the pines, I'm thumbing my way into North Caroline",
+          "Rock me mama like a wagon wheel, rock me mama anyway you feel",
+          "Hey mama rock me"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1gX1EP6mG-E" }
+      "links": {
+        "youtube": "1gX1EP6mG-E"
+      }
     },
     {
       "id": "country-chicks-earl",
@@ -433,7 +693,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Funny", "Energy", "Aggressive"],
+      "mood": [
+        "Funny",
+        "Energy",
+        "Aggressive"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Humorvoller (aber dunkel-thematischer) Song über die Entsorgung eines gewalttätigen Ehemanns.",
@@ -442,9 +706,18 @@
         "Ein absoluter Klassiker des Trios.",
         "Refrain: 'Goodbye Earl! We need a break!'"
       ],
-      "lyrics": { "real": ["Mary Anne and Wanda were the best of friends, all through their high school days", "Earl had to die, goodbye Earl", "We needed a break, and it's time for Earl to go"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "Mary Anne and Wanda were the best of friends, all through their high school days",
+          "Earl had to die, goodbye Earl",
+          "We needed a break, and it's time for Earl to go"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-mumford-lion",
@@ -454,7 +727,11 @@
       "country": "GB",
       "genre": "Indie Folk / Folk Rock",
       "difficulty": "medium",
-      "mood": ["Energy", "Emotional", "Powerful"],
+      "mood": [
+        "Energy",
+        "Emotional",
+        "Powerful"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Machte den Indie-Folk mit Banjo und Kontrabass weltweit massentauglich.",
@@ -463,9 +740,18 @@
         "Wurde zu einer Hymne der frühen 2010er Jahre.",
         "Refrain: 'But it was not your fault but mine! And it was your heart on the line!'"
       ],
-      "lyrics": { "real": ["Weep for yourself, my man, you'll never be what is in your heart", "But it was not your fault but mine, and it was your heart on the line", "I really fucked it up this time"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Weep for yourself, my man, you'll never be what is in your heart",
+          "But it was not your fault but mine, and it was your heart on the line",
+          "I really fucked it up this time"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-lumineers-hohey",
@@ -475,7 +761,11 @@
       "country": "US",
       "genre": "Indie Folk",
       "difficulty": "easy",
-      "mood": ["Happy", "Romantic", "Soft"],
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Soft"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Bekannt für den markanten 'Ho!' und 'Hey!' Mitmach-Ruf.",
@@ -484,9 +774,18 @@
         "Ein Inbegriff für den Erfolg des modernen, bodenständigen Folk.",
         "Refrain: 'I belong with you, you belong with me! You're my sweetheart!'"
       ],
-      "lyrics": { "real": ["I've been trying to do it right, I've been living a lonely life", "I belong with you, you belong with me, you're my sweetheart", "Ho! Hey!"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I've been trying to do it right, I've been living a lonely life",
+          "I belong with you, you belong with me, you're my sweetheart",
+          "Ho! Hey!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-simon-silence",
@@ -496,7 +795,11 @@
       "country": "US",
       "genre": "Folk Rock",
       "difficulty": "easy",
-      "mood": ["Sad", "Serious", "Atmospheric"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Atmospheric"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Die ultimative Folk-Ballade über mangelnde Kommunikation.",
@@ -505,9 +808,18 @@
         "Berühmt als Teil des Soundtracks zum Film 'The Graduate'.",
         "Refrain: 'Hello darkness, my old friend! I've come to talk with you again!'"
       ],
-      "lyrics": { "real": ["Hello darkness, my old friend, I've come to talk with you again", "Because a vision softly creeping, left its seeds while I was sleeping", "And the vision that was planted in my brain, still remains"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Hello darkness, my old friend, I've come to talk with you again",
+          "Because a vision softly creeping, left its seeds while I was sleeping",
+          "And the vision that was planted in my brain, still remains"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4fW7z" }
+      "links": {
+        "youtube": "4fW7z"
+      }
     },
     {
       "id": "country-dylan-blowing",
@@ -517,7 +829,11 @@
       "country": "US",
       "genre": "Folk",
       "difficulty": "easy",
-      "mood": ["Serious", "Spiritual", "Classic"],
+      "mood": [
+        "Serious",
+        "Spiritual",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Die Protesthymne der Bürgerrechts- und Friedensbewegung schlechthin.",
@@ -526,9 +842,18 @@
         "Ein Inbegriff für den intellektuellen Folk der 60er Jahre.",
         "Refrain: 'The answer, my friend, is blowin' in the wind!'"
       ],
-      "lyrics": { "real": ["How many roads must a man walk down, before you call him a man?", "The answer, my friend, is blowin' in the wind", "The answer is blowin' in the wind"], "fake": "Dancing in the light, feeling so right, tonight tonight" },
+      "lyrics": {
+        "real": [
+          "How many roads must a man walk down, before you call him a man?",
+          "The answer, my friend, is blowin' in the wind",
+          "The answer is blowin' in the wind"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "folk-joan-rust",
@@ -538,7 +863,11 @@
       "country": "US",
       "genre": "Folk",
       "difficulty": "medium",
-      "mood": ["Melancholic", "Poetic", "Emotional"],
+      "mood": [
+        "Melancholic",
+        "Poetic",
+        "Emotional"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Joan Baez blickt in diesem Song auf ihre Beziehung zu Bob Dylan zurück.",
@@ -547,9 +876,18 @@
         "Inbegriff für den anspruchsvollen Singer-Songwriter Folk der 70er.",
         "Refrain: 'Diamonds and rust! Yes, I've seen it all!'"
       ],
-      "lyrics": { "real": ["Well, I'll be damned, here comes your ghost again", "Yes, I'm thinking of the night we met", "Our love was a poem, diamonds and rust"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Well, I'll be damned, here comes your ghost again",
+          "Yes, I'm thinking of the night we met",
+          "Our love was a poem, diamonds and rust"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "eHyl8a394-M"
+      }
     },
     {
       "id": "folk-joni-taxi",
@@ -559,7 +897,11 @@
       "country": "CA",
       "genre": "Folk Rock",
       "difficulty": "easy",
-      "mood": ["Sarcastic", "Happy", "Environmental"],
+      "mood": [
+        "Sarcastic",
+        "Happy",
+        "Environmental"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Ein Inbegriff für den frühen Umwelt-Aktivismus in der Popmusik.",
@@ -567,9 +909,18 @@
         "Thematisiert (humorvoll verpackt) die Zerstörung der Natur durch den Menschen.",
         "Refrain: 'Don't it always seem to go! That you don't know what you've got 'til it's gone!'"
       ],
-      "lyrics": { "real": ["They paved paradise, and put up a parking lot", "With a pink hotel, a boutique, and a swinging hot spot", "Don't it always seem to go that you don't know what you've got until it's gone"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "They paved paradise, and put up a parking lot",
+          "With a pink hotel, a boutique, and a swinging hot spot",
+          "Don't it always seem to go that you don't know what you've got until it's gone"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "folk-neil-gold",
@@ -579,7 +930,11 @@
       "country": "CA",
       "genre": "Folk Rock / Country Rock",
       "difficulty": "easy",
-      "mood": ["Soft", "Searching", "Classic"],
+      "mood": [
+        "Soft",
+        "Searching",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Neil Youngs einziger Nummer-1-Hit in den USA.",
@@ -588,9 +943,18 @@
         "Ein absoluter Meilenstein der Musikgeschichte.",
         "Refrain: 'And I'm gettin' old! Searchin' for a heart of gold!'"
       ],
-      "lyrics": { "real": ["I've been to Hollywood, I've been to Redwood, I crossed the ocean for a heart of gold", "It's such a fine line that keeps me in the sun", "I'm searching for a heart of gold"], "fake": "In the middle of the street, you can feel the heat of our happy heart tonight" },
+      "lyrics": {
+        "real": [
+          "I've been to Hollywood, I've been to Redwood, I crossed the ocean for a heart of gold",
+          "It's such a fine line that keeps me in the sun",
+          "I'm searching for a heart of gold"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "folk-james-rain",
@@ -600,7 +964,11 @@
       "country": "US",
       "genre": "Folk / Soft Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Emotional", "Spiritual"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Zutiefst persönlicher Song über persönliche Kämpfe und den Verlust einer Freundin.",
@@ -609,9 +977,18 @@
         "Ein Kernstück des 'Gentle Folk' der frühen 70er.",
         "Refrain: 'I've seen fire and I've seen rain! I've seen sunny days that I thought would never end!'"
       ],
-      "lyrics": { "real": ["Just yesterday morning, they let me know you were gone", "Suzanne, the plans they made put an end to you", "I've seen fire and I've seen rain"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Just yesterday morning, they let me know you were gone",
+          "Suzanne, the plans they made put an end to you",
+          "I've seen fire and I've seen rain"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "folk-cat-father",
@@ -621,7 +998,11 @@
       "country": "GB",
       "genre": "Folk",
       "difficulty": "medium",
-      "mood": ["Emotional", "Serious", "Dramatic"],
+      "mood": [
+        "Emotional",
+        "Serious",
+        "Dramatic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besticht durch das Zwiegespräch zwischen einem vorsichtigen Vater und einem stürmischen Sohn.",
@@ -630,9 +1011,18 @@
         "Ein Inbegriff für Folk-Storytelling mit tiefem moralischem Kern.",
         "Refrain: 'I am old but I'm happy!'"
       ],
-      "lyrics": { "real": ["It's not time to make a change, just relax, take it easy", "I was once like you are now, and I know that it's not easy", "Look at me, I am old but I'm happy"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "It's not time to make a change, just relax, take it easy",
+          "I was once like you are now, and I know that it's not easy",
+          "Look at me, I am old but I'm happy"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "folk-don-pie",
@@ -642,7 +1032,11 @@
       "country": "US",
       "genre": "Folk / Pop influence",
       "difficulty": "easy",
-      "mood": ["Nostalgic", "Epic", "Classic"],
+      "mood": [
+        "Nostalgic",
+        "Epic",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Epischer Song über den Tod von Buddy Holly ('The Day the Music Died').",
@@ -651,9 +1045,18 @@
         "Einer der längsten und berühmtesten Songs der Musikgeschichte.",
         "Refrain: 'Bye, bye, Miss American Pie! Drove my Chevy to the levee!'"
       ],
-      "lyrics": { "real": ["A long long time ago, I can still remember, how that music used to make me smile", "Bye, bye, Miss American Pie", "Drove my Chevy to the levee, but the levee was dry"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "A long long time ago, I can still remember, how that music used to make me smile",
+          "Bye, bye, Miss American Pie",
+          "Drove my Chevy to the levee, but the levee was dry"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "folk-jim-bottle",
@@ -663,7 +1066,11 @@
       "country": "US",
       "genre": "Folk / Soft Rock",
       "difficulty": "medium",
-      "mood": ["Romantic", "Sad", "Atmospheric"],
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Atmospheric"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Zutiefst romantische Ballade über den Wunsch, Zeit einzufrieren.",
@@ -672,9 +1079,18 @@
         "Thematisiert Vergänglichkeit und tiefe persönliche Bindung.",
         "Refrain: 'If I could save time in a bottle! The first thing that I'd like to do!'"
       ],
-      "lyrics": { "real": ["If I could save time in a bottle, the first thing that I'd like to do", "Is to save every day, till eternity passes away", "Just to spend them with you"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "If I could save time in a bottle, the first thing that I'd like to do",
+          "Is to save every day, till eternity passes away",
+          "Just to spend them with you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "folk-gordon-sundown",
@@ -684,7 +1100,11 @@
       "country": "CA",
       "genre": "Folk / Country influence",
       "difficulty": "easy",
-      "mood": ["Cool", "Moody", "Classic"],
+      "mood": [
+        "Cool",
+        "Moody",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Gordon Lightfoots größter Erfolg, geprägt von einem dunklen, fast bedrohlichen Beat.",
@@ -693,9 +1113,18 @@
         "Ein Inbegriff für den kanadischen Folk-Exporthit.",
         "Refrain: 'Sundown, you better take care! If I find you been creepin' 'round my back stairs!'"
       ],
-      "lyrics": { "real": ["Sundown, you better take care, if I find you've been creepin' round my back stairs", "She's been lookin' like a queen in a town that's been eatin' from her hand", "I can see her lookin' in the dark"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight" },
+      "lyrics": {
+        "real": [
+          "Sundown, you better take care, if I find you've been creepin' round my back stairs",
+          "She's been lookin' like a queen in a town that's been eatin' from her hand",
+          "I can see her lookin' in the dark"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-townes-pancho",
@@ -705,7 +1134,11 @@
       "country": "US",
       "genre": "Folk / Country / Storytelling",
       "difficulty": "hard",
-      "mood": ["Melancholic", "Poetic", "Dark"],
+      "mood": [
+        "Melancholic",
+        "Poetic",
+        "Dark"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für poetisches Country-Storytelling über zwei Outlaws.",
@@ -714,9 +1147,18 @@
         "Townes Van Zandt gilt als einer der brillantesten Texter seiner Generation.",
         "Refrain: 'All the Federales say, they could've had him any day!'"
       ],
-      "lyrics": { "real": ["Living on the road, my friend, was gonna keep you free and clean", "Pancho was a bandit, boy, his horse was fast as polished steel", "Lefty, he can't sing the blues all night long like he used to"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Living on the road, my friend, was gonna keep you free and clean",
+          "Pancho was a bandit, boy, his horse was fast as polished steel",
+          "Lefty, he can't sing the blues all night long like he used to"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-guyclark-train",
@@ -726,7 +1168,11 @@
       "country": "US",
       "genre": "Country / Folk / Storytelling",
       "difficulty": "hard",
-      "mood": ["Sad", "Emotional", "Classic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Zutiefst bewegende Ode an einen alten Mann, der dem jungen Songwriter die Welt erklärte.",
@@ -735,9 +1181,18 @@
         "Ein Meilenstein des progressiven Country.",
         "Refrain: 'Like Desperados waiting for a train!'"
       ],
-      "lyrics": { "real": ["I was only a kid, and he was an old man, we used to drink whiskey like water", "He's a desperado waiting for a train", "He looked like an old friend I hadn't seen in years"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "I was only a kid, and he was an old man, we used to drink whiskey like water",
+          "He's a desperado waiting for a train",
+          "He looked like an old friend I hadn't seen in years"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-kris-mcgee",
@@ -747,7 +1202,11 @@
       "country": "US",
       "genre": "Country / Folk Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Romantic", "Epic"],
+      "mood": [
+        "Energy",
+        "Romantic",
+        "Epic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Kristoffersons Meisterwerk über Freiheit und das Loslassen.",
@@ -756,9 +1215,18 @@
         "Ein Inbegriff für den Geist der frühen 70er Jahre.",
         "Refrain: 'Freedom's just another word for nothin' left to lose!'"
       ],
-      "lyrics": { "real": ["Busted flat in Baton Rouge, waitin' for a train, I was feeling nearly as faded as my jeans", "Freedom's just another word for nothin' left to lose", "Nothin' don't mean nothin' honey, if it ain't free"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Busted flat in Baton Rouge, waitin' for a train, I was feeling nearly as faded as my jeans",
+          "Freedom's just another word for nothin' left to lose",
+          "Nothin' don't mean nothin' honey, if it ain't free"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-waylon-cowboys",
@@ -768,7 +1236,11 @@
       "country": "US",
       "genre": "Outlaw Country",
       "difficulty": "easy",
-      "mood": ["Moody", "Cool", "Classic"],
+      "mood": [
+        "Moody",
+        "Cool",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für den harten, ungeschönten Outlaw-Sound.",
@@ -777,9 +1249,18 @@
         "Ein Song voller purer Western-Attitüde.",
         "Refrain: 'Mammas don't let your babies grow up to be cowboys!'"
       ],
-      "lyrics": { "real": ["Cowboys ain't easy to love and they're harder to hold", "Mammas don't let your babies grow up to be cowboys", "Make 'em be doctors and lawyers and such"], "fake": "In the shadow of the night, we're looking for the light of our love tonight" },
+      "lyrics": {
+        "real": [
+          "Cowboys ain't easy to love and they're harder to hold",
+          "Mammas don't let your babies grow up to be cowboys",
+          "Make 'em be doctors and lawyers and such"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-merle-mama",
@@ -789,7 +1270,11 @@
       "country": "US",
       "genre": "Bakersfield Country",
       "difficulty": "medium",
-      "mood": ["Serious", "Energy", "Classic"],
+      "mood": [
+        "Serious",
+        "Energy",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Reflektiert Haggards eigene Zeit im Gefängnis und seine Reue.",
@@ -798,9 +1283,18 @@
         "Ein Grundpfeiler des ehrlichen, harten Country.",
         "Refrain: 'And I turned twenty-one in prison doing life without parole!'"
       ],
-      "lyrics": { "real": ["The first thing I remember knowing, was a lonesome whistle blowing", "Mama tried to raise me better, but her pleading I denied", "I turned twenty-one in prison, doing life without parole"], "fake": "In the middle of the street, you can feel the heat of the broken heart tonight" },
+      "lyrics": {
+        "real": [
+          "The first thing I remember knowing, was a lonesome whistle blowing",
+          "Mama tried to raise me better, but her pleading I denied",
+          "I turned twenty-one in prison, doing life without parole"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-tammy-stand",
@@ -810,7 +1304,11 @@
       "country": "US",
       "genre": "Country",
       "difficulty": "easy",
-      "mood": ["Traditional", "Serious", "Classic"],
+      "mood": [
+        "Traditional",
+        "Serious",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für traditionelle Familienwerte (und oft kontrovers diskutiert).",
@@ -819,9 +1317,18 @@
         "Ein weltweiter Mega-Hit für die 'First Lady of Country Music'.",
         "Refrain: 'Stand by your man! Give him two arms to cling to!'"
       ],
-      "lyrics": { "real": ["Sometimes it's hard to be a woman, giving all your love to just one man", "Stand by your man, give him two arms to cling to", "And something warm to come to when nights are cold and lonely"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Sometimes it's hard to be a woman, giving all your love to just one man",
+          "Stand by your man, give him two arms to cling to",
+          "And something warm to come to when nights are cold and lonely"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-loretta-daughter",
@@ -831,7 +1338,11 @@
       "country": "US",
       "genre": "Country / Autobiographical",
       "difficulty": "easy",
-      "mood": ["Emotional", "Traditional", "Honest"],
+      "mood": [
+        "Emotional",
+        "Traditional",
+        "Honest"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Die Lebensgeschichte von Loretta Lynn, geboren in ärmlichen Verhältnissen in Butcher Hollow.",
@@ -840,9 +1351,18 @@
         "Inbegriff für Authentizität im Country.",
         "Refrain: 'Well, I was born a coal miner's daughter! In a cabin on a hill!'"
       ],
-      "lyrics": { "real": ["Well, I was born a coal miner's daughter, in a cabin on a hill in Butcher Holler", "My daddy worked all night in the Van Lear coal mines", "Mama scrubbed our clothes on a washboard"], "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight" },
+      "lyrics": {
+        "real": [
+          "Well, I was born a coal miner's daughter, in a cabin on a hill in Butcher Holler",
+          "My daddy worked all night in the Van Lear coal mines",
+          "Mama scrubbed our clothes on a washboard"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-patsy-crazy",
@@ -852,7 +1372,11 @@
       "country": "US",
       "genre": "Country / Jazz influence",
       "difficulty": "easy",
-      "mood": ["Smooth", "Sad", "Classic"],
+      "mood": [
+        "Smooth",
+        "Sad",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Geschrieben von einem damals noch unbekannten Willie Nelson.",
@@ -861,9 +1385,18 @@
         "Ein Inbegriff für den edlen Nashville-Sound.",
         "Refrain: 'I'm crazy for feeling so lonely! I'm crazy for feeling so blue!'"
       ],
-      "lyrics": { "real": ["Crazy, I'm crazy for feeling so lonely, I'm crazy for feeling so blue", "I knew you'd love me as long as you wanted", "Then some day you'd leave me for somebody new"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "Crazy, I'm crazy for feeling so lonely, I'm crazy for feeling so blue",
+          "I knew you'd love me as long as you wanted",
+          "Then some day you'd leave me for somebody new"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "country-hank-heart",
@@ -873,7 +1406,11 @@
       "country": "US",
       "genre": "Honky Tonk / Country",
       "difficulty": "easy",
-      "mood": ["Sad", "Traditional", "Classic"],
+      "mood": [
+        "Sad",
+        "Traditional",
+        "Classic"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Einer der wichtigsten Songs der Country-Geschichte.",
@@ -882,9 +1419,18 @@
         "Ein Inbegriff für den Honky-Tonk Sound.",
         "Refrain: 'Your cheatin' heart! Will tell on you!'"
       ],
-      "lyrics": { "real": ["Your cheatin' heart will tell on you, you'll cry and cry the whole night through", "When tears come down like falling rain", "You'll toss around and call my name"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "Your cheatin' heart will tell on you, you'll cry and cry the whole night through",
+          "When tears come down like falling rain",
+          "You'll toss around and call my name"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-billmonroe-blue",
@@ -894,7 +1440,11 @@
       "country": "US",
       "genre": "Bluegrass",
       "difficulty": "medium",
-      "mood": ["Energy", "Traditional", "Fast"],
+      "mood": [
+        "Energy",
+        "Traditional",
+        "Fast"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für den Bluegrass-Sound (Acoustic instruments, fast tempo).",
@@ -903,9 +1453,18 @@
         "Bill Monroe gilt als der 'Father of Bluegrass'.",
         "Refrain: 'Blue moon of Kentucky keep on shining!'"
       ],
-      "lyrics": { "real": ["Blue moon of Kentucky keep on shining, shine on the one that's gone and left me blue", "I said blue moon of Kentucky keep on shining", "Shine on the one that's gone and left me blue"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "Blue moon of Kentucky keep on shining, shine on the one that's gone and left me blue",
+          "I said blue moon of Kentucky keep on shining",
+          "Shine on the one that's gone and left me blue"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "4syA9aNnNa0" }
+      "links": {
+        "youtube": "4syA9aNnNa0"
+      }
     },
     {
       "id": "country-earl-breakdown",
@@ -915,7 +1474,11 @@
       "country": "US",
       "genre": "Bluegrass Instrumental",
       "difficulty": "hard",
-      "mood": ["Fast", "Energy", "Skillful"],
+      "mood": [
+        "Fast",
+        "Energy",
+        "Skillful"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besticht durch das bahnbrechende Drei-Finger-Picking von Earl Scruggs auf dem Banjo.",
@@ -924,9 +1487,16 @@
         "Ein Inbegriff für den High-Speed Bluegrass.",
         "Besonderheit: Keine Lyrics, nur rasantes Banjo-Zupfen."
       ],
-      "lyrics": { "real": ["(Fast Banjo Instrumental)"], "fake": "Dancing to the rhythm of the wind tonight" },
+      "lyrics": {
+        "real": [
+          "(Fast Banjo Instrumental)"
+        ],
+        "fake": "Dancing to the rhythm of the wind tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-alison-nothing",
@@ -936,7 +1506,11 @@
       "country": "US",
       "genre": "Bluegrass / Country Pop",
       "difficulty": "easy",
-      "mood": ["Soft", "Romantic", "Emotional"],
+      "mood": [
+        "Soft",
+        "Romantic",
+        "Emotional"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für Alison Krauss' glasklare Engel-Stimme.",
@@ -945,9 +1519,18 @@
         "Einer ihrer größten kommerziellen Erfolge.",
         "Refrain: 'You say it best! When you say nothing at all!'"
       ],
-      "lyrics": { "real": ["It's amazing how you can speak right to my heart, without saying a word you can light up the dark", "You say it best when you say nothing at all", "Old Mr. Webster could never define"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "It's amazing how you can speak right to my heart, without saying a word you can light up the dark",
+          "You say it best when you say nothing at all",
+          "Old Mr. Webster could never define"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "country-billy-dust",
@@ -957,7 +1540,11 @@
       "country": "US",
       "genre": "Modern Bluegrass / Jamgrass",
       "difficulty": "hard",
-      "mood": ["Fast", "Energy", "Skillful"],
+      "mood": [
+        "Fast",
+        "Energy",
+        "Skillful"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für das Genre-Update des Bluegrass durch Billy Strings.",
@@ -966,9 +1553,18 @@
         "Ein viraler Hit, der das Genre für ein junges Publikum öffnete.",
         "Refrain: 'Twenty-five to life for a dusty baggie!'"
       ],
-      "lyrics": { "real": ["I've got a little dust in a baggie, for the blue eyes to see", "Twenty-five to life in the joint, for a dusty baggie!", "I'm a lonesome man with a heavy hand"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I've got a little dust in a baggie, for the blue eyes to see",
+          "Twenty-five to life in the joint, for a dusty baggie!",
+          "I'm a lonesome man with a heavy hand"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     },
     {
       "id": "country-colter-devil",
@@ -978,7 +1574,11 @@
       "country": "CA",
       "genre": "Western / Folk",
       "difficulty": "easy",
-      "mood": ["Moody", "Deep", "Dark"],
+      "mood": [
+        "Moody",
+        "Deep",
+        "Dark"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Besticht durch Colter Walls unglaublich tiefe, raue Baritonstimme.",
@@ -987,9 +1587,18 @@
         "Ein Inbegriff für den düsteren 'Real Country' Revitalisierungstrend.",
         "Refrain: 'But the devil wears a suit and tie!'"
       ],
-      "lyrics": { "real": ["I met a man at the crossroads, he was looking for a soul to buy", "Well the devil wears a suit and tie", "He's better than you think he is"], "fake": "In the shadow of the night, we're looking for the light tonight" },
+      "lyrics": {
+        "real": [
+          "I met a man at the crossroads, he was looking for a soul to buy",
+          "Well the devil wears a suit and tie",
+          "He's better than you think he is"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-tyler-road",
@@ -999,7 +1608,11 @@
       "country": "US",
       "genre": "Americana / Country",
       "difficulty": "easy",
-      "mood": ["Energy", "Honest", "Moody"],
+      "mood": [
+        "Energy",
+        "Honest",
+        "Moody"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Inbegriff für den Erfolg des unabhängigen Americana-Sounds ohne Nashville-Hochglanz.",
@@ -1008,9 +1621,18 @@
         "Wurde zu einer modernen Hymne der Country-Underground-Szene.",
         "Refrain: 'Keep your nose on the grindstone and out of the coke!'"
       ],
-      "lyrics": { "real": ["Lord have mercy on my soul, for the life I've chosen to live", "Keep your nose on the grindstone and out of the coke", "Get you a girl with a heart of gold"], "fake": "In the middle of the street, you can feel the heat tonight" },
+      "lyrics": {
+        "real": [
+          "Lord have mercy on my soul, for the life I've chosen to live",
+          "Keep your nose on the grindstone and out of the coke",
+          "Get you a girl with a heart of gold"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "LjftvOLs0Y0"
+      }
     },
     {
       "id": "country-sturgill-turtles",
@@ -1020,7 +1642,11 @@
       "country": "US",
       "genre": "Psychedelic Country",
       "difficulty": "medium",
-      "mood": ["Spiritual", "Moody", "Intelligent"],
+      "mood": [
+        "Spiritual",
+        "Moody",
+        "Intelligent"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Revolutionierte den Country durch die Einbeziehung von transzendentalen und metaphysischen Themen.",
@@ -1029,9 +1655,18 @@
         "Ein Inbegriff für den Aufstieg des intelligenten Country.",
         "Refrain: 'Turtles all the way down! It's turtles all the way down!'"
       ],
-      "lyrics": { "real": ["I've seen Jesus in a tortilla, and the Buddha in a dream", "You don't have to look too far to find the truth", "Love is the only thing that saves us from ourselves"], "fake": "Dancing in the STARS, playing my guitars tonight tonight" },
+      "lyrics": {
+        "real": [
+          "I've seen Jesus in a tortilla, and the Buddha in a dream",
+          "You don't have to look too far to find the truth",
+          "Love is the only thing that saves us from ourselves"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gxEPV4kolz0" }
+      "links": {
+        "youtube": "gxEPV4kolz0"
+      }
     },
     {
       "id": "country-zach-orange",
@@ -1041,7 +1676,11 @@
       "country": "US",
       "genre": "Americana / Country / Folk",
       "difficulty": "easy",
-      "mood": ["Sad", "Atmospheric", "Powerful"],
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Powerful"
+      ],
       "pack": "Country & Folk Classics",
       "hints": [
         "Wurde zum viralen Streaming-Phänomen und machte Zach Bryan zum Superstar.",
@@ -1050,9 +1689,18 @@
         "Ein Inbegriff für den Erfolg des authentischen Singer-Songwriter-Stils.",
         "Refrain: 'Something in the orange, tells me we're not done!'"
       ],
-      "lyrics": { "real": ["To you I'm just a man, to me you're all I am", "Something in the orange tells me we're not done", "I miss you in the mornings when I'm walking to the sun"], "fake": "In the middle of the island, we're looking for the silent moon tonight" },
+      "lyrics": {
+        "real": [
+          "To you I'm just a man, to me you're all I am",
+          "Something in the orange tells me we're not done",
+          "I miss you in the mornings when I'm walking to the sun"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "DeE8W" }
+      "links": {
+        "youtube": "DeE8W"
+      }
     }
   ]
 }

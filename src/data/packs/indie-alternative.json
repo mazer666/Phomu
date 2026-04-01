@@ -13,7 +13,11 @@
       "country": "GB",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Sad", "Serious", "Moody"],
+      "mood": [
+        "Sad",
+        "Serious",
+        "Moody"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Der Song, den die Band jahrelang hasste, weil er sie auf einen Sound festlegte.",
@@ -22,9 +26,18 @@
         "Der markante Klavier-Lauf zu Beginn ist eigentlich eine akustische Gitarre.",
         "Refrain: 'I'm a creep, I'm a weirdo, what the hell am I doing here?'"
       ],
-      "lyrics": { "real": ["When you were here before, couldn't look you in the eye", "You're just like an angel, your skin makes me cry", "I'm a creep, I'm a weirdo, what the hell am I doing here?"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "When you were here before, couldn't look you in the eye",
+          "You're just like an angel, your skin makes me cry",
+          "I'm a creep, I'm a weirdo, what the hell am I doing here?"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "XFkzRNyygfk" }
+      "links": {
+        "youtube": "XFkzRNyygfk"
+      }
     },
     {
       "id": "indie-nirvana-come-as-you-are",
@@ -34,7 +47,11 @@
       "country": "US",
       "genre": "Grunge",
       "difficulty": "easy",
-      "mood": ["Moody", "Classic", "Serious"],
+      "mood": [
+        "Moody",
+        "Classic",
+        "Serious"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Das markante Bass-Riff wurde oft mit 'Eighties' von Killing Joke verglichen.",
@@ -43,9 +60,18 @@
         "Kurt Cobains Stimme ist hier besonders kehlig und melancholisch.",
         "Refrain: 'And I swear that I don't have a gun, no I don't have a gun...'"
       ],
-      "lyrics": { "real": ["Come as you are, as you were, as I want you to be", "As a friend, as a friend, as a known enemy", "Take your time, hurry up, choice is yours, don't be late"], "fake": "In the shadow of the night, I'm looking for the light of your heart" },
+      "lyrics": {
+        "real": [
+          "Come as you are, as you were, as I want you to be",
+          "As a friend, as a friend, as a known enemy",
+          "Take your time, hurry up, choice is yours, don't be late"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "vabnZ9-ex7M" }
+      "links": {
+        "youtube": "vabnZ9-ex7o"
+      }
     },
     {
       "id": "indie-oasis-dont-look-back",
@@ -55,7 +81,11 @@
       "country": "GB",
       "genre": "Britpop",
       "difficulty": "medium",
-      "mood": ["Epic", "Classic", "Anthem"],
+      "mood": [
+        "Epic",
+        "Classic",
+        "Anthem"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Einer der wenigen Hits, bei denen Noel Gallagher den Lead-Gesang übernimmt.",
@@ -64,9 +94,18 @@
         "Die Person 'Sally', die im Refrain erwähnt wird, existiert laut Noel gar nicht.",
         "Refrain: 'And so Sally can wait, she knows it's too late as we're walking on by!'"
       ],
-      "lyrics": { "real": ["Slip inside the eye of your mind, don't you know you might find", "A better place to play, you said that you'd never been", "And so Sally can wait, she knows it's too late as we're walking on by"], "fake": "Nothing's gonna change my world, you're the only special girl" },
+      "lyrics": {
+        "real": [
+          "Slip inside the eye of your mind, don't you know you might find",
+          "A better place to play, you said that you'd never been",
+          "And so Sally can wait, she knows it's too late as we're walking on by"
+        ],
+        "fake": "Nothing's gonna change my world, you're the only special girl"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "r8OipmAfAYU" }
+      "links": {
+        "youtube": "r8OipmAfAYU"
+      }
     },
     {
       "id": "indie-rhcp-under-the-bridge",
@@ -76,7 +115,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Moody", "Epic"],
+      "mood": [
+        "Sad",
+        "Moody",
+        "Epic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Sänger Anthony Kiedis schrieb den Text ursprünglich als Gedicht über seine Einsamkeit und Drogenvergangenheit.",
@@ -85,9 +128,18 @@
         "Markante, cleane Gitarren-Akkorde von John Frusciante.",
         "Refrain: 'Under the bridge downtown, is where I drew some blood!'"
       ],
-      "lyrics": { "real": ["Sometimes I feel like I don't have a partner, sometimes I feel like my only friend", "Is the city I live in, the city of angels, lonely as I am, together we cry", "Under the bridge downtown, is where I drew some blood"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "Sometimes I feel like I don't have a partner, sometimes I feel like my only friend",
+          "Is the city I live in, the city of angels, lonely as I am, together we cry",
+          "Under the bridge downtown, is where I drew some blood"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "GLvohMXgcsc" }
+      "links": {
+        "youtube": "GLvohMXgcBo"
+      }
     },
     {
       "id": "indie-the-cure-friday",
@@ -97,7 +149,11 @@
       "country": "GB",
       "genre": "New Wave / Indie Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Classic", "Fun"],
+      "mood": [
+        "Happy",
+        "Classic",
+        "Fun"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Robert Smith hielt den Song anfangs für so gut, dass er dachte, er hätte ihn versehentlich geklaut.",
@@ -106,9 +162,18 @@
         "Bekannt für den glockigen Gitarrensound und Robert Smiths verspielten Gesang.",
         "Refrain: 'I don't care if Monday's blue, Tuesday's gray and Wednesday too!'"
       ],
-      "lyrics": { "real": ["I don't care if Monday's blue, Tuesday's gray and Wednesday too", "Thursday I don't care about you, it's Friday I'm in love", "Saturday wait, and Sunday always comes too late"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "I don't care if Monday's blue, Tuesday's gray and Wednesday too",
+          "Thursday I don't care about you, it's Friday I'm in love",
+          "Saturday wait, and Sunday always comes too late"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "mGgMZpGYiy8" }
+      "links": {
+        "youtube": "mGgMZpGYiy8"
+      }
     },
     {
       "id": "indie-the-smiths-light",
@@ -118,7 +183,11 @@
       "country": "GB",
       "genre": "Indie Rock",
       "difficulty": "medium",
-      "mood": ["Sad", "Romantic", "Classic"],
+      "mood": [
+        "Sad",
+        "Romantic",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Thematisiert die Sehnsucht nach Zugehörigkeit und den Wunsch, nie wieder nach Hause zu müssen.",
@@ -127,9 +196,18 @@
         "Ein Song über Isolation, Liebe und den Drang, der Enge der Vorstadt zu entfliehen.",
         "Refrain: 'And if a ten-ton truck kills the both of us, to die by your side is such a heavenly way to die!'"
       ],
-      "lyrics": { "real": ["Take me out tonight, where there's music and there's people and they're young and alive", "And if a ten-ton truck kills the both of us", "To die by your side is such a heavenly way to die"], "fake": "Walking through the city, feeling so pretty, in the middle of a pity" },
+      "lyrics": {
+        "real": [
+          "Take me out tonight, where there's music and there's people and they're young and alive",
+          "And if a ten-ton truck kills the both of us",
+          "To die by your side is such a heavenly way to die"
+        ],
+        "fake": "Walking through the city, feeling so pretty, in the middle of a pity"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "siO6dkqidcE" }
+      "links": {
+        "youtube": "siO6dkqidcE"
+      }
     },
     {
       "id": "indie-pixies-mind",
@@ -139,7 +217,11 @@
       "country": "US",
       "genre": "Indie Rock / Grunge",
       "difficulty": "easy",
-      "mood": ["Cool", "Epic", "Strange"],
+      "mood": [
+        "Cool",
+        "Epic",
+        "Strange"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Wurde weltberühmt durch die Schlussszene des Films 'Fight Club'.",
@@ -148,9 +230,18 @@
         "Thematisiert den Kontrollverlust und das Abgleiten in den Wahnsinn.",
         "Refrain: 'Where is my mind? Way out in the water, see it swimming...'"
       ],
-      "lyrics": { "real": ["With your feet in the air and your head on the ground, try this trick and spin it, yeah", "Your head will collapse but there's nothing in it and you'll ask yourself", "Where is my mind? Way out in the water, see it swimming"], "fake": "In the shadow of the night, I'm looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "With your feet in the air and your head on the ground, try this trick and spin it, yeah",
+          "Your head will collapse but there's nothing in it and you'll ask yourself",
+          "Where is my mind? Way out in the water, see it swimming"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "N3oCS85HvpY" }
+      "links": {
+        "youtube": "N3oCS85HvpY"
+      }
     },
     {
       "id": "indie-rem-shiny",
@@ -160,7 +251,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Happy", "Fun", "Catchy"],
+      "mood": [
+        "Happy",
+        "Fun",
+        "Catchy"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Sänger Michael Stipe hasst diesen Song heute, weil er ihm zu fröhlich und oberflächlich vorkommt.",
@@ -169,9 +264,18 @@
         "Der Song war weltweit ein riesiger Charterfolg, obwohl die Band ihn fast nie live spielt.",
         "Refrain: 'Shiny happy people holding hands!'"
       ],
-      "lyrics": { "real": ["Shiny happy people laughing, meet me in the crowd, people, people", "Throw your love around, love me, love me, take it into town, happy, happy", "Put it in your hands, take it, take it, there's no time to cry, happy, happy"], "fake": "In the middle of the street, you can feel the heat of the broken beat" },
+      "lyrics": {
+        "real": [
+          "Shiny happy people laughing, meet me in the crowd, people, people",
+          "Throw your love around, love me, love me, take it into town, happy, happy",
+          "Put it in your hands, take it, take it, there's no time to cry, happy, happy"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken beat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "YYOKMUTTDvg" }
+      "links": {
+        "youtube": "YYOKMUTTDvg"
+      }
     },
     {
       "id": "indie-beck-loser",
@@ -181,7 +285,11 @@
       "country": "US",
       "genre": "Indie / Slacker Rap",
       "difficulty": "medium",
-      "mood": ["Cool", "Strange", "Moody"],
+      "mood": [
+        "Cool",
+        "Strange",
+        "Moody"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Der ultimative Song für die 'Slacker'-Generation der 90er Jahre.",
@@ -190,9 +298,18 @@
         "Wurde fast über Nacht zu einem weltweiten Phänomen.",
         "Beck gilt seither als einer der kreativsten Köpfe des Indie-Bereichs."
       ],
-      "lyrics": { "real": ["In the time of chimpanzees I was a monkey, butane in my veins and I'm out to cut the junkie", "Soy un perdedor, I'm a loser baby, so why don't you kill me?", "Forces of evil in a bozo nightmare"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "In the time of chimpanzees I was a monkey, butane in my veins and I'm out to cut the junkie",
+          "Soy un perdedor, I'm a loser baby, so why don't you kill me?",
+          "Forces of evil in a bozo nightmare"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "YgSPaXgAdzE" }
+      "links": {
+        "youtube": "YgSPaXgAdzE"
+      }
     },
     {
       "id": "indie-white-stripes-fell-in-love",
@@ -202,7 +319,11 @@
       "country": "US",
       "genre": "Garage Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Fast", "Raw"],
+      "mood": [
+        "Energy",
+        "Fast",
+        "Raw"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Das gesamte Musikvideo ist eine Stop-Motion-Animation aus LEGO-Steinen.",
@@ -211,9 +332,18 @@
         "Ein Song über die impulsiven Gefühle einer neuen Verliebtheit.",
         "Hat den markanten 'Oh-oh-oh'-Chor im Refrain."
       ],
-      "lyrics": { "real": ["Fell in love with a girl, I fell in love once and almost completely", "She's in love with the world but sometimes these feelings can be so misleading", "She can't help it! The girl can't help it!"], "fake": "Then I saw her face, now I'm a believer in the ancient race" },
+      "lyrics": {
+        "real": [
+          "Fell in love with a girl, I fell in love once and almost completely",
+          "She's in love with the world but sometimes these feelings can be so misleading",
+          "She can't help it! The girl can't help it!"
+        ],
+        "fake": "Then I saw her face, now I'm a believer in the ancient race"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fTXB3H68t8" }
+      "links": {
+        "youtube": "fTXB3H68t8"
+      }
     },
     {
       "id": "indie-arctic-monkeys-do-i-wanna-know",
@@ -223,7 +353,11 @@
       "country": "GB",
       "genre": "Indie Rock",
       "difficulty": "easy",
-      "mood": ["Cool", "Sexy", "Moody"],
+      "mood": [
+        "Cool",
+        "Sexy",
+        "Moody"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Das markante, schleppende Riff wurde sofort zum Klassiker des modernen Rock.",
@@ -232,9 +366,18 @@
         "Thematisiert die Unsicherheit und Sehnsucht nach einer alten Flamme.",
         "Refrain: 'Do I wanna know? If this feeling flows both ways?'"
       ],
-      "lyrics": { "real": ["Have you got colour in your cheeks? Do you ever get that fear that you can't shift the tide?", "Crawling back to you, ever thought of calling when you've had a few?", "Do I wanna know? If this feeling flows both ways?"], "fake": "In the middle of the night, we're looking for the light of our soul" },
+      "lyrics": {
+        "real": [
+          "Have you got colour in your cheeks? Do you ever get that fear that you can't shift the tide?",
+          "Crawling back to you, ever thought of calling when you've had a few?",
+          "Do I wanna know? If this feeling flows both ways?"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "bpOSxM0rNPM" }
+      "links": {
+        "youtube": "bpOSxM0rNPM"
+      }
     },
     {
       "id": "indie-killers-somebody-told-me",
@@ -244,7 +387,11 @@
       "country": "US",
       "genre": "Indie Rock",
       "difficulty": "medium",
-      "mood": ["Energy", "Classic", "Electronic"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Electronic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Ein Paradebeispiel für den Dance-Rock-Sound der frühen 2000er.",
@@ -253,9 +400,18 @@
         "Das Video zeigt die Band vor einer riesigen LED-Wand in der Wüste.",
         "Refrain: 'Somebody told me that you had a boyfriend who looked like a girlfriend that I had in February of last year!'"
       ],
-      "lyrics": { "real": ["I'm breaking my back just to know your name, seventeen tracks and I've had it with this game", "Somebody told me that you had a boyfriend who looked like a girlfriend that I had in February of last year", "It's not confidential, I've got potential!"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "I'm breaking my back just to know your name, seventeen tracks and I've had it with this game",
+          "Somebody told me that you had a boyfriend who looked like a girlfriend that I had in February of last year",
+          "It's not confidential, I've got potential!"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Y5fBdpreJiU" }
+      "links": {
+        "youtube": "Y5fBdpreJiU"
+      }
     },
     {
       "id": "indie-kol-sex-on-fire",
@@ -265,7 +421,11 @@
       "country": "US",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Powerful"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Powerful"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Machte die Followill-Brüder zu weltweiten Stadion-Rockstars.",
@@ -274,9 +434,18 @@
         "Ein absoluter Klassiker in jeder Indie-Disco.",
         "Refrain: 'You, your sex is on fire!'"
       ],
-      "lyrics": { "real": ["Lay where you're laying, don't make a sound, I know they're watching, they're watching", "All the commotion, the kiddie-like pride, it has you taking the light", "You, your sex is on fire!"], "fake": "Dancing in the street, moving to the beat of the broken beat" },
+      "lyrics": {
+        "real": [
+          "Lay where you're laying, don't make a sound, I know they're watching, they're watching",
+          "All the commotion, the kiddie-like pride, it has you taking the light",
+          "You, your sex is on fire!"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken beat"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "RF0HhrwIwp0" }
+      "links": {
+        "youtube": "RF0HhrwIwp0"
+      }
     },
     {
       "id": "indie-franz-ferdinand-take-me-out",
@@ -286,7 +455,11 @@
       "country": "GB",
       "genre": "Indie Rock",
       "difficulty": "medium",
-      "mood": ["Energy", "Dance", "Cool"],
+      "mood": [
+        "Energy",
+        "Dance",
+        "Cool"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Bekannt für den plötzlichen Tempowechsel nach dem Intro.",
@@ -295,9 +468,18 @@
         "Das Video ist im Stil der russischen Avantgarde gestaltet.",
         "Refrain: 'I say don't you know, you say you don't know... I'm just a shot away!'"
       ],
-      "lyrics": { "real": ["So if you're lonely, you know I'm here waiting for you", "I'm just a crosshair, I'm just a shot away from you", "If I move this way, step to the side"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "So if you're lonely, you know I'm here waiting for you",
+          "I'm just a crosshair, I'm just a shot away from you",
+          "If I move this way, step to the side"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Ijk4j-6706M" }
+      "links": {
+        "youtube": "X9jhwR07yk4"
+      }
     },
     {
       "id": "indie-muse-knights-of-cydonia",
@@ -307,7 +489,11 @@
       "country": "GB",
       "genre": "Space Rock",
       "difficulty": "hard",
-      "mood": ["Epic", "Dramatic", "Energy"],
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Energy"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Eine wilde Mischung aus Space-Rock, Spaghetti-Western-Sound und Queen-Gesängen.",
@@ -316,9 +502,18 @@
         "Handelt vom Kampf für die eigenen Rechte und das Überleben.",
         "Refrain: 'No one's gonna take me alive, time has come to make things right!'"
       ],
-      "lyrics": { "real": ["Come ride with me through the veins of history, I'll show you a god who falls asleep on the job", "No one's gonna take me alive, time has come to make things right", "You and I must fight for our rights, you and I must fight to survive"], "fake": "In the deep of the space, we find the ancient race of the light" },
+      "lyrics": {
+        "real": [
+          "Come ride with me through the veins of history, I'll show you a god who falls asleep on the job",
+          "No one's gonna take me alive, time has come to make things right",
+          "You and I must fight for our rights, you and I must fight to survive"
+        ],
+        "fake": "In the deep of the space, we find the ancient race of the light"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "G_sBOsh-vyI" }
+      "links": {
+        "youtube": "G_sBOsh-vyI"
+      }
     },
     {
       "id": "indie-gorillaz-feel-good-inc",
@@ -328,7 +523,11 @@
       "country": "GB",
       "genre": "Alternative Hip Hop",
       "difficulty": "medium",
-      "mood": ["Cool", "Groovy", "Electronic"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Electronic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Eine virtuelle Band, erschaffen von Damon Albarn (Blur) und Jamie Hewlett.",
@@ -337,9 +536,18 @@
         "Mischte Alternative Rock, Rap und Funk zu einem völlig neuen Sound.",
         "Das Video zeigt die animierte Band in einer schwebenden Windmühle."
       ],
-      "lyrics": { "real": ["City's breaking down on a camel's back, they just gotta go 'cause they don't know whack", "So while you fill the streets, it's appealing to see, you won't get out the county, 'cause you're bad and free", "Feel good, shake it, shake it, feel good"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "City's breaking down on a camel's back, they just gotta go 'cause they don't know whack",
+          "So while you fill the streets, it's appealing to see, you won't get out the county, 'cause you're bad and free",
+          "Feel good, shake it, shake it, feel good"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "HyHNuVaZJ-k" }
+      "links": {
+        "youtube": "HyHNuVaZJ-k"
+      }
     },
     {
       "id": "indie-arcade-fire-wake-up",
@@ -349,7 +557,11 @@
       "country": "CA",
       "genre": "Indie Rock",
       "difficulty": "easy",
-      "mood": ["Epic", "Moody", "Powerful"],
+      "mood": [
+        "Epic",
+        "Moody",
+        "Powerful"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Bekannt für den riesigen 'Whoa-oh-oh'-Chor, der am Anfang des Liedes einsetzt.",
@@ -358,9 +570,18 @@
         "Wurde als Eröffnungssong für den Film 'Where the Wild Things Are' verwendet.",
         "Refrain: 'If the children don't grow up, our bodies get bigger but our hearts get torn up!'"
       ],
-      "lyrics": { "real": ["Something filled up my heart with nothing, someone told me not to cry", "But now that I'm older, my heart's colder and I can't look you in the eye", "If the children don't grow up, our bodies get bigger but our hearts get torn up"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Something filled up my heart with nothing, someone told me not to cry",
+          "But now that I'm older, my heart's colder and I can't look you in the eye",
+          "If the children don't grow up, our bodies get bigger but our hearts get torn up"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "9zdNdjF-htY" }
+      "links": {
+        "youtube": "9zdNdjF-htY"
+      }
     },
     {
       "id": "indie-mgmt-kids",
@@ -370,7 +591,11 @@
       "country": "US",
       "genre": "Indie Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Electronic", "Catchy"],
+      "mood": [
+        "Happy",
+        "Electronic",
+        "Catchy"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Ein Meilenstein des Synth-lastigen Indie-Pop der späten 2000er.",
@@ -379,9 +604,18 @@
         "Thematisiert Nostalgie und das Erwachsenwerden.",
         "Refrain: 'Control yourself, take only what you need from it!'"
       ],
-      "lyrics": { "real": ["You were a child, crawling on your knees toward it, making momma so proud", "Control yourself, take only what you need from it", "A family of trees wanting to be haunted"], "fake": "Dancing in the light, feeling so right, all through the night" },
+      "lyrics": {
+        "real": [
+          "You were a child, crawling on your knees toward it, making momma so proud",
+          "Control yourself, take only what you need from it",
+          "A family of trees wanting to be haunted"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fe4EK4HSPkI" }
+      "links": {
+        "youtube": "fe4EK4HSPkI"
+      }
     },
     {
       "id": "indie-foster-the-people-pumped-up-kicks",
@@ -391,7 +625,11 @@
       "country": "US",
       "genre": "Indie Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Moody", "Serious"],
+      "mood": [
+        "Happy",
+        "Moody",
+        "Serious"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Klingt wie ein fröhlicher Popsong, hat aber einen sehr dunklen Text über Amokläufe an Schulen.",
@@ -400,9 +638,18 @@
         "Der Refrain hat eine fast hypnotische, entspannte Melodie.",
         "Refrain: 'All the other kids with the pumped up kicks, you better run, better run...'"
       ],
-      "lyrics": { "real": ["Robert's got a quick hand, he'll look around the room, he won't tell you his plan", "All the other kids with the pumped up kicks, you better run, better run, outrun my gun", "Daddy works a long day, he be coming home late, he's coming home late"], "fake": "In the shadow of the night, I'm looking for the light of your soul" },
+      "lyrics": {
+        "real": [
+          "Robert's got a quick hand, he'll look around the room, he won't tell you his plan",
+          "All the other kids with the pumped up kicks, you better run, better run, outrun my gun",
+          "Daddy works a long day, he be coming home late, he's coming home late"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "SDTZ7iX4vTQ" }
+      "links": {
+        "youtube": "SDTZ7iX4vTQ"
+      }
     },
     {
       "id": "indie-m83-midnight-city",
@@ -412,7 +659,11 @@
       "country": "FR",
       "genre": "Dream Pop",
       "difficulty": "medium",
-      "mood": ["Epic", "Electronic", "Night"],
+      "mood": [
+        "Epic",
+        "Electronic",
+        "Night"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Einer der atmosphärischsten Tracks des Indie-Elektronik-Genres.",
@@ -421,9 +672,18 @@
         "Das Video zeigt Kinder mit telekinetischen Kräften.",
         "Refrain: 'Waiting in a car, waiting for a ride in the dark!'"
       ],
-      "lyrics": { "real": ["Waiting in a car, waiting for a ride in the dark", "The night city grows, look at the horizon glow", "The song is in my soul, let the night take control"], "fake": "Driving through the neon light, chasing ghosts in the night" },
+      "lyrics": {
+        "real": [
+          "Waiting in a car, waiting for a ride in the dark",
+          "The night city grows, look at the horizon glow",
+          "The song is in my soul, let the night take control"
+        ],
+        "fake": "Driving through the neon light, chasing ghosts in the night"
+      },
       "isOneHitWonder": true,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "1KjPyEY7DQ4"
+      }
     },
     {
       "id": "indie-radiohead-creep",
@@ -433,7 +693,11 @@
       "country": "GB",
       "genre": "Alternative Rock",
       "difficulty": "easy",
-      "mood": ["Sad", "Emotional", "Classic"],
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Radioheads Debütsingle, die sie weltweit bekannt machte.",
@@ -442,9 +706,18 @@
         "Die Band mochte den Song später so wenig, dass sie ihn jahrelang nicht live spielten.",
         "Refrain: 'I'm a creep! I'm a weirdo! What the hell am I doing here?'"
       ],
-      "lyrics": { "real": ["When you were here before, couldn't look you in the eye", "You're just like an angel, your skin makes me cry", "I'm a creep, I'm a weirdo, what the hell am I doing here?"], "fake": "Dancing in the stars, playing my guitars tonight" },
+      "lyrics": {
+        "real": [
+          "When you were here before, couldn't look you in the eye",
+          "You're just like an angel, your skin makes me cry",
+          "I'm a creep, I'm a weirdo, what the hell am I doing here?"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "XFkzRNyygfk" }
+      "links": {
+        "youtube": "XFkzRNyygfk"
+      }
     },
     {
       "id": "indie-killers-brightside",
@@ -454,7 +727,11 @@
       "country": "US",
       "genre": "Indie Rock",
       "difficulty": "easy",
-      "mood": ["Energy", "Classic", "Sad"],
+      "mood": [
+        "Energy",
+        "Classic",
+        "Sad"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Einer der dauerhaftesten Indie-Hits der 2000er Jahre.",
@@ -463,9 +740,18 @@
         "Wurde zu einer absoluten Mitsing-Hymne in Stadien und Clubs.",
         "Refrain: 'I'm coming out of my cage, and I've been doing just fine!'"
       ],
-      "lyrics": { "real": ["I'm coming out of my cage and I've been doing just fine", "Gotta gotta be down because I want it all", "It started out with a kiss, how did it end up like this?"], "fake": "In the middle of the street, you can feel the heat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "I'm coming out of my cage and I've been doing just fine",
+          "Gotta gotta be down because I want it all",
+          "It started out with a kiss, how did it end up like this?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gGdGFtwCNBE" }
+      "links": {
+        "youtube": "gGdGFtwCNBE"
+      }
     },
     {
       "id": "indie-arctic-monkeys-wanna",
@@ -475,7 +761,11 @@
       "country": "GB",
       "genre": "Indie Rock / Stomp Rock",
       "difficulty": "easy",
-      "mood": ["Cool", "Moody", "Classic"],
+      "mood": [
+        "Cool",
+        "Moody",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Bekannt für das schleppende, extrem coole Gitarren-Riff.",
@@ -484,9 +774,18 @@
         "Das animierte Video mit der Soundwelle ist Kult.",
         "Refrain: 'Crawling back to you... do I wanna know?'"
       ],
-      "lyrics": { "real": ["Have you got colour in your cheeks? Do you ever get that fear that you can't shift the tide?", "Crawling back to you, ever thought of calling when you've had a few?", "Cause I always do, maybe I'm too busy being yours to fall for somebody new"], "fake": "Walking down the street with a rhythm in my feet tonight" },
+      "lyrics": {
+        "real": [
+          "Have you got colour in your cheeks? Do you ever get that fear that you can't shift the tide?",
+          "Crawling back to you, ever thought of calling when you've had a few?",
+          "Cause I always do, maybe I'm too busy being yours to fall for somebody new"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "bpOSxM0TkBI" }
+      "links": {
+        "youtube": "bpOSxM0rNPM"
+      }
     },
     {
       "id": "indie-franz-ferdinand-takeout",
@@ -496,7 +795,11 @@
       "country": "GB",
       "genre": "Indie Rock / Post-Punk",
       "difficulty": "easy",
-      "mood": ["Energy", "Dance", "Classic"],
+      "mood": [
+        "Energy",
+        "Dance",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Besticht durch den plötzlichen Tempowechsel nach dem Intro.",
@@ -505,9 +808,18 @@
         "Thematisiert die Spannung vor einem entscheidenden Moment.",
         "Refrain: 'I say, don't you know? You say you don't know! I say, take me out!'"
       ],
-      "lyrics": { "real": ["So if you're lonely, you know I'm here waiting for you", "I'm just a crosshair, I'm just a shot away from you", "If I move this way, step this way, touch this way, take me out!"], "fake": "In the shadow of the valley, I'm looking for a rally of hope" },
+      "lyrics": {
+        "real": [
+          "So if you're lonely, you know I'm here waiting for you",
+          "I'm just a crosshair, I'm just a shot away from you",
+          "If I move this way, step this way, touch this way, take me out!"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "Ijk4j-r7S8w" }
+      "links": {
+        "youtube": "X9jhwR07yk4"
+      }
     },
     {
       "id": "indie-kings-of-leon-somebody",
@@ -517,7 +829,11 @@
       "country": "US",
       "genre": "Indie Rock / Arena Rock",
       "difficulty": "easy",
-      "mood": ["Emotional", "Powerful", "Classic"],
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Die Band besteht aus drei Brüdern und einem Cousin.",
@@ -526,9 +842,18 @@
         "Ein Inbegriff für emotionalen Indie-Rock mit Stadion-Faktor.",
         "Refrain: 'I've been roaming around, always looking down at all I see!'"
       ],
-      "lyrics": { "real": ["I've been roaming around, always looking down at all I see", "Painted faces fill the places I can't reach", "You know that I could use somebody, someone like you and all you know and how you speak"], "fake": "In the middle of the night, we're looking for the light of our love" },
+      "lyrics": {
+        "real": [
+          "I've been roaming around, always looking down at all I see",
+          "Painted faces fill the places I can't reach",
+          "You know that I could use somebody, someone like you and all you know and how you speak"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "gnhXHvRoUd0" }
+      "links": {
+        "youtube": "gnhXHvRoUd0"
+      }
     },
     {
       "id": "indie-mgmt-kids",
@@ -538,7 +863,11 @@
       "country": "US",
       "genre": "Indie Pop / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Electronic", "Nostalgic"],
+      "mood": [
+        "Happy",
+        "Electronic",
+        "Nostalgic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Bekannt für den extrem einprägsamen Synthesizer-Hook.",
@@ -547,9 +876,18 @@
         "Ein Meilenstein des Synth-lastigen Indie-Pop.",
         "Refrain: 'Control yourself! Take only what you need from it!'"
       ],
-      "lyrics": { "real": ["You were a child crawling on your knees toward it", "Control yourself, take only what you need from it", "A family of trees wanted to be haunted"], "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow" },
+      "lyrics": {
+        "real": [
+          "You were a child crawling on your knees toward it",
+          "Control yourself, take only what you need from it",
+          "A family of trees wanted to be haunted"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "fe4EK4HSPkI" }
+      "links": {
+        "youtube": "fe4EK4HSPkI"
+      }
     },
     {
       "id": "indie-foster-kicks",
@@ -559,7 +897,11 @@
       "country": "US",
       "genre": "Indie Pop / Dance-Pop",
       "difficulty": "easy",
-      "mood": ["Happy", "Serious", "Groovy"],
+      "mood": [
+        "Happy",
+        "Serious",
+        "Groovy"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Bekannt für den krassen Kontrast zwischen fröhlicher Melodie und düsterem Text.",
@@ -568,9 +910,18 @@
         "Mark Heppner schrieb den Song in nur wenigen Stunden.",
         "Refrain: 'All the other kids with the pumped up kicks, you'd better run, better run, outrun my gun!'"
       ],
-      "lyrics": { "real": ["Robert's got a quick hand, he'll look around the room, he won't tell you his plan", "All the other kids with the pumped up kicks", "You'd better run, better run, outrun my gun"], "fake": "Dancing in the street, moving to the beat of the broken heart" },
+      "lyrics": {
+        "real": [
+          "Robert's got a quick hand, he'll look around the room, he won't tell you his plan",
+          "All the other kids with the pumped up kicks",
+          "You'd better run, better run, outrun my gun"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "SDTZ7iX4vTQ" }
+      "links": {
+        "youtube": "SDTZ7iX4vTQ"
+      }
     },
     {
       "id": "indie-gotye-somebody",
@@ -580,7 +931,11 @@
       "country": "AU/NZ",
       "genre": "Indie Pop / Art Pop",
       "difficulty": "easy",
-      "mood": ["Sad", "Unique", "Classic"],
+      "mood": [
+        "Sad",
+        "Unique",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Besitzt ein markantes Xylophon-Sample (inspiriert durch Luiz Bonfá).",
@@ -589,9 +944,18 @@
         "Kimbras Gastpart bildet den perfekten Gegenpol zu Gotyes Klage.",
         "Refrain: 'But you didn't have to cut me off! Make out like it never happened and that we were nothing!'"
       ],
-      "lyrics": { "real": ["Now and then I think of when we were together, like when you said you felt so happy you could die", "But you didn't have to cut me off, make out like it never happened and that we were nothing", "Now you're just somebody that I used to know"], "fake": "In the shadow of the night, I'm looking for the light of your broken soul" },
+      "lyrics": {
+        "real": [
+          "Now and then I think of when we were together, like when you said you felt so happy you could die",
+          "But you didn't have to cut me off, make out like it never happened and that we were nothing",
+          "Now you're just somebody that I used to know"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "8WYHDfJDPDc" }
+      "links": {
+        "youtube": "8WYHDfJDPDc"
+      }
     },
     {
       "id": "indie-florence-dogdays",
@@ -601,7 +965,11 @@
       "country": "GB",
       "genre": "Indie Rock / Baroque Pop",
       "difficulty": "medium",
-      "mood": ["Powerful", "Energy", "Happy"],
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Happy"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Florence Welchs gewaltige Stimme steht hier im Mittelpunkt.",
@@ -610,9 +978,18 @@
         "Ein Inbegriff für theatralischen, mitreißenden Indie-Pop.",
         "Refrain: 'Run fast for your mother, run fast for your father!'"
       ],
-      "lyrics": { "real": ["Happiness, hit her like a train on a track", "Coming towards her, stuck in the light", "The dog days are over, the dog days are done, can you hear the horses? 'Cause here they come"], "fake": "In the middle of the island, we're looking for the silent sun" },
+      "lyrics": {
+        "real": [
+          "Happiness, hit her like a train on a track",
+          "Coming towards her, stuck in the light",
+          "The dog days are over, the dog days are done, can you hear the horses? 'Cause here they come"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "iWOyfLBYtuU" }
+      "links": {
+        "youtube": "iWOyfLBYtuU"
+      }
     },
     {
       "id": "indie-mumford-lion",
@@ -622,7 +999,11 @@
       "country": "GB",
       "genre": "Folk Rock / Indie Folk",
       "difficulty": "medium",
-      "mood": ["Energy", "Raw", "Sad"],
+      "mood": [
+        "Energy",
+        "Raw",
+        "Sad"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Löste den weltweiten Folk-Rock-Boom der frühen 2010er aus.",
@@ -631,9 +1012,18 @@
         "Ein Inbegriff für handgemachte Musik im digitalen Zeitalter.",
         "Refrain: 'But it was not your fault but mine, and it was your heart on the line!'"
       ],
-      "lyrics": { "real": ["Weep for yourself, my help, you'll never need it", "But it was not your fault but mine, and it was your heart on the line", "I really fucked it up this time, didn't I, my dear?"], "fake": "Walking through the rain, I'm calling out your name in vain" },
+      "lyrics": {
+        "real": [
+          "Weep for yourself, my help, you'll never need it",
+          "But it was not your fault but mine, and it was your heart on the line",
+          "I really fucked it up this time, didn't I, my dear?"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "X7bHe--mp1g"
+      }
     },
     {
       "id": "indie-lumineers-hohey",
@@ -643,7 +1033,11 @@
       "country": "US",
       "genre": "Indie Folk",
       "difficulty": "easy",
-      "mood": ["Happy", "Singalong", "Classic"],
+      "mood": [
+        "Happy",
+        "Singalong",
+        "Classic"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Besticht durch seine extreme Einfachheit und die markanten 'Ho' und 'Hey' Rufe.",
@@ -652,9 +1046,18 @@
         "Ein Paradebeispiel für minimalistisches Songwriting mit großer Wirkung.",
         "Refrain: 'I belong with you, you belong with me, you're my sweetheart!'"
       ],
-      "lyrics": { "real": ["(Ho!) I've been trying to do it right, (Hey!) I've been living a lonely life", "I belong with you, you belong with me, you're my sweetheart", "I belong with you, you belong with me, you're my sweet (Ho!)"], "fake": "Dancing in the light, feeling so right, tonight" },
+      "lyrics": {
+        "real": [
+          "(Ho!) I've been trying to do it right, (Hey!) I've been living a lonely life",
+          "I belong with you, you belong with me, you're my sweetheart",
+          "I belong with you, you belong with me, you're my sweet (Ho!)"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "zvCBSSwgtg4" }
+      "links": {
+        "youtube": "zvCBSSwgtg4"
+      }
     },
     {
       "id": "indie-bastille-pompeii",
@@ -664,7 +1067,11 @@
       "country": "GB",
       "genre": "Indie Pop / Synth Pop",
       "difficulty": "easy",
-      "mood": ["Energy", "Epic", "Singalong"],
+      "mood": [
+        "Energy",
+        "Epic",
+        "Singalong"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Besticht durch den markanten Männer-Chor am Anfang ('Eh-eho, eh-eho').",
@@ -673,9 +1080,18 @@
         "Ein Welthit, der Indie-Elemente perfekt in den Pop integrierte.",
         "Refrain: 'But if you close your eyes, does it almost feel like nothing changed at all?'"
       ],
-      "lyrics": { "real": ["I was left to my own devices, many days fell away with nothing to show", "But if you close your eyes, does it almost feel like nothing changed at all?", "And if you close your eyes, does it almost feel like you've been here before?"], "fake": "Nothing's gonna stop me now, I'm king of the town somehow" },
+      "lyrics": {
+        "real": [
+          "I was left to my own devices, many days fell away with nothing to show",
+          "But if you close your eyes, does it almost feel like nothing changed at all?",
+          "And if you close your eyes, does it almost feel like you've been here before?"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "F90Cw4l-8NY" }
+      "links": {
+        "youtube": "F90Cw4l-8NY"
+      }
     },
     {
       "id": "indie-imagine-radioactive",
@@ -685,7 +1101,11 @@
       "country": "US",
       "genre": "Alternative Rock / Indie Electronic",
       "difficulty": "easy",
-      "mood": ["Powerful", "Energy", "Dark"],
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Dark"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Besitzt einen extrem wuchtigen, elektronisch beeinflussten Beat.",
@@ -694,9 +1114,18 @@
         "Wurde zu einem der am längsten in den US-Charts vertretenen Songs.",
         "Refrain: 'I'm waking up, I feel it in my bones! Welcome to the new age!'"
       ],
-      "lyrics": { "real": ["I'm waking up, I feel it in my bones, enough to make my systems blow", "Welcome to the new age, to the new age", "I'm radioactive, radioactive"], "fake": "In the middle of the street, you can feel the heat of our happy heart" },
+      "lyrics": {
+        "real": [
+          "I'm waking up, I feel it in my bones, enough to make my systems blow",
+          "Welcome to the new age, to the new age",
+          "I'm radioactive, radioactive"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "1KjPyEY7DQ4" }
+      "links": {
+        "youtube": "7wtfhZwyrcc"
+      }
     },
     {
       "id": "indie-21pilots-stressed",
@@ -706,7 +1135,11 @@
       "country": "US",
       "genre": "Alternative Hip Hop / Indie Pop",
       "difficulty": "easy",
-      "mood": ["Nostalgic", "Serious", "Indie"],
+      "mood": [
+        "Nostalgic",
+        "Serious",
+        "Indie"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Thematisiert die Sehnsucht nach der Kindheit und den Druck des Erwachsenwerdens.",
@@ -715,9 +1148,18 @@
         "Wurde zur Hymne einer ganzen Generation von Jugendlichen.",
         "Refrain: 'Wish we could turn back time, to the good old days!'"
       ],
-      "lyrics": { "real": ["I wish I found some better sounds no one's ever heard", "Wish we could turn back time, to the good old days", "When our mamma sang us to sleep but now we're stressed out"], "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend" },
+      "lyrics": {
+        "real": [
+          "I wish I found some better sounds no one's ever heard",
+          "Wish we could turn back time, to the good old days",
+          "When our mamma sang us to sleep but now we're stressed out"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "pXRviuL6vMY" }
+      "links": {
+        "youtube": "pXRviuL6vMY"
+      }
     },
     {
       "id": "indie-tame-impala-less",
@@ -727,7 +1169,11 @@
       "country": "AU",
       "genre": "Psychedelic Pop / Indie Pop",
       "difficulty": "medium",
-      "mood": ["Cool", "Groovy", "Indie"],
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Indie"
+      ],
       "pack": "Indie & Alternative",
       "hints": [
         "Besticht durch eine der eingängigsten Basslinien der letzten Jahre.",
@@ -736,9 +1182,18 @@
         "Ein Paradebeispiel für modernen Psychedelic-Indie.",
         "Refrain: 'Someone said they left together, I ran out the door to get her!'"
       ],
-      "lyrics": { "real": ["Someone said they left together, I ran out the door to get her, she was holding hands with Trevor", "Not the greatest feeling ever, said pull yourself together", "You should try your luck with Heather"], "fake": "In the shadow of the night, we're looking for the light of our broken soul" },
+      "lyrics": {
+        "real": [
+          "Someone said they left together, I ran out the door to get her, she was holding hands with Trevor",
+          "Not the greatest feeling ever, said pull yourself together",
+          "You should try your luck with Heather"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken soul"
+      },
       "isOneHitWonder": false,
-      "links": { "youtube": "O2lG6fX3XW8" }
+      "links": {
+        "youtube": "sBzrzS1Ag_g"
+      }
     }
   ]
 }
