@@ -23,7 +23,9 @@ const API_KEY     = process.argv.find(a => a.startsWith('--api-key='))?.split('=
 const PACKS_DIR   = path.join(__dirname, '../src/data/packs');
 const REPORT_FILE = path.join(__dirname, '../broken-links-report.json');
 const DRY_RUN     = process.argv.includes('--dry-run');
-const DELAY_MS    = 200; // Rate-limit: ~5 req/s (well under 10k/day)
+const DELAY_MS    = 150; // Rate-limit: ~6 req/s
+const LIMIT_ARG   = process.argv.find((a) => a.startsWith('--limit='));
+const LIMIT       = LIMIT_ARG ? Number(LIMIT_ARG.split('=')[1]) : Number.POSITIVE_INFINITY;
 
 if (!API_KEY) {
   console.error('Kein API Key angegeben!');
@@ -50,6 +52,14 @@ async function findOfficialVideo(artist, title) {
     if (!items) continue;
 
     const data = JSON.parse(items);
+    if (data.error) {
+      if (data.error.errors?.[0]?.reason === 'quotaExceeded') {
+        throw new Error('QUOTA_EXCEEDED');
+      }
+      console.error(`  YouTube API Error: ${data.error.message}`);
+      continue;
+    }
+
     if (!data.items || data.items.length === 0) continue;
 
     // Prefer VEVO, then official artist channel, then first result
@@ -74,12 +84,8 @@ function httpsGet(url) {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        if (res.statusCode !== 200) {
-          console.error(`  HTTP ${res.statusCode}: ${data.slice(0, 200)}`);
-          resolve(null);
-        } else {
-          resolve(data);
-        }
+        // Return data regardless of status so caller can check for error JSON
+        resolve(data);
       });
     }).on('error', (e) => {
       console.error(`  Request error: ${e.message}`);
@@ -95,9 +101,13 @@ function sleep(ms) {
 // ─── Main ─────────────────────────────────────────────────────────────
 
 async function main() {
-  const report = JSON.parse(fs.readFileSync(REPORT_FILE, 'utf-8'));
-  console.log(`🔍 ${report.length} broken links gefunden. Suche offizielle Videos...`);
-  if (DRY_RUN) console.log('   (--dry-run: Keine Änderungen werden gespeichert)\n');
+  const rawReport = JSON.parse(fs.readFileSync(REPORT_FILE, 'utf-8'));
+  // Shuffle report to ensure fair distribution across packets/years
+  const report = rawReport.sort(() => Math.random() - 0.5);
+
+  console.log(`🔍 ${report.length} broken links found. Searching official videos (shuffled)...`);
+  if (DRY_RUN) console.log('   (--dry-run: No changes will be saved)\n');
+  if (LIMIT < Number.POSITIVE_INFINITY) console.log(`   (Processing limit: ${LIMIT} songs)\n`);
 
   // Lade alle Packs in den Speicher
   const packs = {};
@@ -108,45 +118,62 @@ async function main() {
   let fixed = 0;
   let failed = 0;
 
-  for (let i = 0; i < report.length; i++) {
-    const entry = report[i];
-    const { file, id, title, artist } = entry;
+  try {
+    for (let i = 0; i < report.length && i < LIMIT; i++) {
+      const entry = report[i];
+      const { file, id, title, artist, videoId: brokenVideoId } = entry;
 
-    process.stdout.write(`[${i + 1}/${report.length}] ${artist} – ${title} ... `);
+      // Skip if already fixed (different ID than in report)
+      if (packs[file]) {
+        const song = packs[file].songs?.find((s) => s.id === id);
+        if (song && song.links?.youtube && song.links.youtube !== brokenVideoId) {
+          process.stdout.write(`[${i + 1}/${Math.min(report.length, LIMIT)}] ${artist} – ${title} ... (Already fixed) ✅\n`);
+          continue;
+        }
+      }
 
-    const result = await findOfficialVideo(artist, title);
+      process.stdout.write(`[${i + 1}/${Math.min(report.length, LIMIT)}] ${artist} – ${title} ... `);
 
-    if (!result) {
-      console.log('❌ nicht gefunden');
-      failed++;
-    } else {
-      console.log(`✅ ${result.videoId} (${result.channelTitle})`);
+      const result = await findOfficialVideo(artist, title);
 
-      // Update in pack data
-      if (!DRY_RUN && packs[file]) {
-        const song = packs[file].songs?.find(s => s.id === id);
-        if (song) {
-          if (!song.links) song.links = {};
-          song.links.youtube = result.videoId;
+      if (!result) {
+        console.log('❌ nicht gefunden');
+        failed++;
+      } else {
+        console.log(`✅ ${result.videoId} (${result.channelTitle})`);
+
+        // Update in memory
+        if (packs[file]) {
+          const song = packs[file].songs?.find((s) => s.id === id);
+          if (song) {
+            if (!song.links) song.links = {};
+            song.links.youtube = result.videoId;
+            fixed++;
+
+            // Save immediately to avoid data loss on quota error
+            if (!DRY_RUN) {
+              fs.writeFileSync(path.join(PACKS_DIR, file), JSON.stringify(packs[file], null, 2) + '\n');
+            }
+          }
+        } else {
           fixed++;
         }
-      } else {
-        fixed++;
       }
-    }
 
-    await sleep(DELAY_MS);
+      await sleep(DELAY_MS);
+    }
+  } catch (err) {
+    if (err.message === 'QUOTA_EXCEEDED') {
+      console.log('\n\n🛑 YouTube API Quota exhausted for today.');
+    } else {
+      console.error('\n\n❌ Unexpected Error:', err);
+    }
   }
 
-  // Speichere geänderte Packs
   if (!DRY_RUN) {
-    for (const [file, data] of Object.entries(packs)) {
-      fs.writeFileSync(path.join(PACKS_DIR, file), JSON.stringify(data, null, 2) + '\n');
-    }
-    console.log(`\n✅ ${fixed} Songs aktualisiert, ${failed} nicht gefunden.`);
-    console.log('   Dateien gespeichert.');
+    console.log(`\n✅ Done. ${fixed} songs updated, ${failed} not found.`);
   } else {
-    console.log(`\nDry-run: ${fixed} würden aktualisiert, ${failed} nicht gefunden.`);
+    console.log(`\nDry-run: ${fixed} would be updated, ${failed} not found.`);
   }
 }
 

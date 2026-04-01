@@ -1,0 +1,1609 @@
+{
+  "generatedAt": "2026-04-01T09:18:07.221Z",
+  "counts": {
+    "unreachable": 168,
+    "invalid_id": 32
+  },
+  "results": [
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-britney-toxic",
+      "artist": "Britney Spears",
+      "title": "Toxic",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-timberlake-cry-me-river",
+      "artist": "Justin Timberlake",
+      "title": "Cry Me a River",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-rihanna-umbrella",
+      "artist": "Rihanna ft. Jay-Z",
+      "title": "Umbrella",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-beyonce-crazy-in-love",
+      "artist": "Beyoncé ft. Jay-Z",
+      "title": "Crazy In Love",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-shakira-whenever",
+      "artist": "Shakira",
+      "title": "Whenever, Wherever",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-lady-gaga-poker-face",
+      "artist": "Lady Gaga",
+      "title": "Poker Face",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-bep-feeling",
+      "artist": "The Black Eyed Peas",
+      "title": "I Gotta Feeling",
+      "status": "unreachable",
+      "details": "Video nicht gefunden (leer oder entfernt)"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-nelly-dilemma",
+      "artist": "Nelly ft. Kelly Rowland",
+      "title": "Dilemma",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-alicia-keys-fallin",
+      "artist": "Alicia Keys",
+      "title": "Fallin'",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-coldplay-yellow",
+      "artist": "Coldplay",
+      "title": "Yellow",
+      "status": "unreachable",
+      "details": "Video nicht gefunden (leer oder entfernt)"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-ed-sheeran-shape",
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-taylor-swift-shake",
+      "artist": "Taylor Swift",
+      "title": "Shake It Off",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-adele-rolling-deep",
+      "artist": "Adele",
+      "title": "Rolling in the Deep",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-drake-one-dance",
+      "artist": "Drake ft. Wizkid & Kyla",
+      "title": "One Dance",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-billie-eilish-bad-guy",
+      "artist": "Billie Eilish",
+      "title": "Bad guy",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-harry-styles-as-it-was",
+      "artist": "Harry Styles",
+      "title": "As It Was",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-miley-cyrus-flowers",
+      "artist": "Miley Cyrus",
+      "title": "Flowers",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-the-weeknd-blinding-lights",
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-pharrell-happy",
+      "artist": "Pharrell Williams",
+      "title": "Happy",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-sia-chandelier",
+      "artist": "Sia",
+      "title": "Chandelier",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-beatles-hey-jude",
+      "artist": "The Beatles",
+      "title": "Hey Jude",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-stones-satisfaction",
+      "artist": "The Rolling Stones",
+      "title": "(I Can't Get No) Satisfaction",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-elvis-suspicious-minds",
+      "artist": "Elvis Presley",
+      "title": "Suspicious Minds",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-abba-dancing-queen",
+      "artist": "ABBA",
+      "title": "Dancing Queen",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-bee-gees-stayin-alive",
+      "artist": "Bee Gees",
+      "title": "Stayin' Alive",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-led-zeppelin-stairway",
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-pink-floyd-wish",
+      "artist": "Pink Floyd",
+      "title": "Wish You Were Here",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-fleetwood-mac-dreams",
+      "artist": "Fleetwood Mac",
+      "title": "Dreams",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-bowie-space-oddity",
+      "artist": "David Bowie",
+      "title": "Space Oddity",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-simon-garfunkel-bridge",
+      "artist": "Simon & Garfunkel",
+      "title": "Bridge Over Troubled Water",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-aha-take-on-me",
+      "artist": "A-ha",
+      "title": "Take on Me",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-michael-jackson-thriller",
+      "artist": "Michael Jackson",
+      "title": "Thriller",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-queen-another-one-bites-the-dust",
+      "artist": "Queen",
+      "title": "Another One Bites the Dust",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-cyndi-lauper-girls-just-want-to-have-fun",
+      "artist": "Cyndi Lauper",
+      "title": "Girls Just Want to Have Fun",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-journeys-dont-stop-believin",
+      "artist": "Journey",
+      "title": "Don't Stop Believin'",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-bon-jovi-livin-on-a-prayer",
+      "artist": "Bon Jovi",
+      "title": "Livin' on a Prayer",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-phil-collins-in-the-air-tonight",
+      "artist": "Phil Collins",
+      "title": "In the Air Tonight",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-eurythmics-sweet-dreams",
+      "artist": "Eurythmics",
+      "title": "Sweet Dreams (Are Made of This)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "8s-tina-turner-whats-love-got-to-do-with-it",
+      "artist": "Tina Turner",
+      "title": "What's Love Got to Do with It",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-police-every-breath-you-take",
+      "artist": "The Police",
+      "title": "Every Breath You Take",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-rick-astley-never-gonna-give-you-up",
+      "artist": "Rick Astley",
+      "title": "Never Gonna Give You Up",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-michael-jackson-billie-jean",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-madonna-like-a-virgin",
+      "artist": "Madonna",
+      "title": "Like a Virgin",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-tears-for-fears-everybody-wants-to-rule",
+      "artist": "Tears for Fears",
+      "title": "Everybody Wants to Rule the World",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-wham-wake-me-up-before-you-go-go",
+      "artist": "Wham!",
+      "title": "Wake Me Up Before You Go-Go",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-whitney-houston-dance-with-somebody",
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-survivor-eye-of-the-tiger",
+      "artist": "Survivor",
+      "title": "Eye of the Tiger",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-rick-james-super-freak",
+      "artist": "Rick James",
+      "title": "Super Freak",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-dexys-midnight-runners-come-on-eileen",
+      "artist": "Dexys Midnight Runners",
+      "title": "Come On Eileen",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-madonna-material-girl",
+      "artist": "Madonna",
+      "title": "Material Girl",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-police-roxanne",
+      "artist": "The Police",
+      "title": "Roxanne",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-dennie-williams-lets-hear-it-for-the-boy",
+      "artist": "Deniece Williams",
+      "title": "Let's Hear It for the Boy",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-dire-straits-money-for-nothing",
+      "artist": "Dire Straits",
+      "title": "Money for Nothing",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-peter-gabriel-sledgehammer",
+      "artist": "Peter Gabriel",
+      "title": "Sledgehammer",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-tears-for-fears-shout",
+      "artist": "Tears for Fears",
+      "title": "Shout",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-kim-carnes-bette-davis-eyes",
+      "artist": "Kim Carnes",
+      "title": "Bette Davis Eyes",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-foreigner-i-want-to-know-what-love-is",
+      "artist": "Foreigner",
+      "title": "I Want to Know What Love Is",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-dead-or-alive-you-spin-me-round",
+      "artist": "Dead or Alive",
+      "title": "You Spin Me Round (Like a Record)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-mj-billiejean",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-madonna-virgin",
+      "artist": "Madonna",
+      "title": "Like a Virgin",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-prince-rain",
+      "artist": "Prince",
+      "title": "Purple Rain",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-lauper-fun",
+      "artist": "Cyndi Lauper",
+      "title": "Girls Just Want to Have Fun",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-whitney-dance",
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-george-whisper",
+      "artist": "George Michael",
+      "title": "Careless Whisper",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-eurythmics-dreams",
+      "artist": "Eurythmics",
+      "title": "Sweet Dreams (Are Made of This)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-duran-wolf",
+      "artist": "Duran Duran",
+      "title": "Hungry Like the Wolf",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-police-breath",
+      "artist": "The Police",
+      "title": "Every Breath You Take",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-aha-takeonme",
+      "artist": "a-ha",
+      "title": "Take On Me",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-rick-astley-never",
+      "artist": "Rick Astley",
+      "title": "Never Gonna Give You Up",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-journey-believin",
+      "artist": "Journey",
+      "title": "Don't Stop Believin'",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-toto-africa",
+      "artist": "Toto",
+      "title": "Africa",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-tears-world",
+      "artist": "Tears for Fears",
+      "title": "Everybody Wants to Rule the World",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-culture-chameleon",
+      "artist": "Culture Club",
+      "title": "Karma Chameleon",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-soft-cell-love",
+      "artist": "Soft Cell",
+      "title": "Tainted Love",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-depeche-enough",
+      "artist": "Depeche Mode",
+      "title": "Just Can't Get Enough",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-nena-luftballons",
+      "artist": "Nena",
+      "title": "99 Luftballons",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-falco-kommissar",
+      "artist": "Falco",
+      "title": "Der Kommissar",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-alphaville-young",
+      "artist": "Alphaville",
+      "title": "Forever Young",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-modern-talking-heart",
+      "artist": "Modern Talking",
+      "title": "You're My Heart, You're My Soul",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-sandra-magdalena",
+      "artist": "Sandra",
+      "title": "(I'll Never Be) Maria Magdalena",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-psb-westend",
+      "artist": "Pet Shop Boys",
+      "title": "West End Girls",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-neworder-monday",
+      "artist": "New Order",
+      "title": "Blue Monday",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-humanleague-wantme",
+      "artist": "The Human League",
+      "title": "Don't You Want Me",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-yazoo-onlyyou",
+      "artist": "Yazoo",
+      "title": "Only You",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-bronski-boy",
+      "artist": "Bronski Beat",
+      "title": "Smalltown Boy",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-frankie-relax",
+      "artist": "Frankie Goes to Hollywood",
+      "title": "Relax",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-dead-alive-round",
+      "artist": "Dead or Alive",
+      "title": "You Spin Me Round (Like a Record)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-bananarama-venus",
+      "artist": "Bananarama",
+      "title": "Venus",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-belinda-heaven",
+      "artist": "Belinda Carlisle",
+      "title": "Heaven Is a Place on Earth",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-kimwilde-kids",
+      "artist": "Kim Wilde",
+      "title": "Kids in America",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-trio-dada",
+      "artist": "Trio",
+      "title": "Da Da Da",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-cccatch-canlose",
+      "artist": "C.C. Catch",
+      "title": "I Can Lose My Heart Tonight",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-badboysblue-woman",
+      "artist": "Bad Boys Blue",
+      "title": "You're a Woman",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-joy-japanese",
+      "artist": "Joy",
+      "title": "Japanese Girls",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-gazebo-chopin",
+      "artist": "Gazebo",
+      "title": "I Like Chopin",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-plion-happy",
+      "artist": "P. Lion",
+      "title": "Happy Children",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-ryan-paris-dolce",
+      "artist": "Ryan Paris",
+      "title": "Dolce Vita",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-baltimora-tarzan",
+      "artist": "Baltimora",
+      "title": "Tarzan Boy",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-righeira-playa",
+      "artist": "Righeira",
+      "title": "Vamos a la playa",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-sabrina-boys",
+      "artist": "Sabrina",
+      "title": "Boys (Summertime Love)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-samantha-fox-touchme",
+      "artist": "Samantha Fox",
+      "title": "Touch Me (I Want Your Body)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-laura-branigan-selfcontrol",
+      "artist": "Laura Branigan",
+      "title": "Self Control",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-bonnie-tyler-eclipse",
+      "artist": "Bonnie Tyler",
+      "title": "Total Eclipse of the Heart",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-kenny-loggins-footloose",
+      "artist": "Kenny Loggins",
+      "title": "Footloose",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-billmedley-time-of-life",
+      "artist": "Bill Medley & Jennifer Warnes",
+      "title": "(I've Had) The Time of My Life",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-survivor-tiger",
+      "artist": "Survivor",
+      "title": "Eye of the Tiger",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-simple-minds-forget",
+      "artist": "Simple Minds",
+      "title": "Don't You (Forget About Me)",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "80s-pop.json",
+      "id": "80s-spandau-ballet-true",
+      "artist": "Spandau Ballet",
+      "title": "True",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-oasis-wonderwall",
+      "artist": "Oasis",
+      "title": "Wonderwall",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-rem-losing-my-religion",
+      "artist": "R.E.M.",
+      "title": "Losing My Religion",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-alanis-morissette-ironic",
+      "artist": "Alanis Morissette",
+      "title": "Ironic",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-sinéad-oconnor-nothing-compares",
+      "artist": "Sinéad O'Connor",
+      "title": "Nothing Compares 2 U",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-radiohead-creep",
+      "artist": "Radiohead",
+      "title": "Creep",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-blind-melon-no-rain",
+      "artist": "Blind Melon",
+      "title": "No Rain",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-extreme-more-than-words",
+      "artist": "Extreme",
+      "title": "More Than Words",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-cranberries-zombie",
+      "artist": "The Cranberries",
+      "title": "Zombie",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-verve-bitter-sweet-symphony",
+      "artist": "The Verve",
+      "title": "Bitter Sweet Symphony",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-counting-crows-mr-jones",
+      "artist": "Counting Crows",
+      "title": "Mr. Jones",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-eric-clapton-tears-in-heaven",
+      "artist": "Eric Clapton",
+      "title": "Tears in Heaven",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-no-doubt-dont-speak",
+      "artist": "No Doubt",
+      "title": "Don't Speak",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-goo-goo-dolls-iris",
+      "artist": "Goo Goo Dolls",
+      "title": "Iris",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-jewel-who-will-save-your-soul",
+      "artist": "Jewel",
+      "title": "Who Will Save Your Soul",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-sheryl-crow-all-i-wanna-do",
+      "artist": "Sheryl Crow",
+      "title": "All I Wanna Do",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-natalie-imbruglia-torn",
+      "artist": "Natalie Imbruglia",
+      "title": "Torn",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-sixpence-kiss-me",
+      "artist": "Sixpence None the Richer",
+      "title": "Kiss Me",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-semisonic-closing-time",
+      "artist": "Semisonic",
+      "title": "Closing Time",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-third-eye-blind-semi-charmed",
+      "artist": "Third Eye Blind",
+      "title": "Semi-Charmed Life",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "90s-soul-asylum-runaway-train",
+      "artist": "Soul Asylum",
+      "title": "Runaway Train",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-clapton-layla",
+      "artist": "Eric Clapton",
+      "title": "Layla (Unplugged)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-aic-nutshell",
+      "artist": "Alice in Chains",
+      "title": "Nutshell (Unplugged)",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-pearl-jam-black",
+      "artist": "Pearl Jam",
+      "title": "Black (Unplugged)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-no-doubt-speak",
+      "artist": "No Doubt",
+      "title": "Don't Speak",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-tori-amos-crucify",
+      "artist": "Tori Amos",
+      "title": "Crucify",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-sheryl-crow-wanna-do",
+      "artist": "Sheryl Crow",
+      "title": "All I Wanna Do",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-alanis-morissette-ironic",
+      "artist": "Alanis Morissette",
+      "title": "Ironic",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-counting-crows-mr-jones",
+      "artist": "Counting Crows",
+      "title": "Mr. Jones",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-googoo-dolls-iris",
+      "artist": "Goo Goo Dolls",
+      "title": "Iris",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-oasis-wonderwall",
+      "artist": "Oasis",
+      "title": "Wonderwall",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-hootie-only-wanna",
+      "artist": "Hootie & the Blowfish",
+      "title": "Only Wanna Be with You",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-jewel-save-soul",
+      "artist": "Jewel",
+      "title": "Who Will Save Your Soul",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-imbruglia-torn",
+      "artist": "Natalie Imbruglia",
+      "title": "Torn",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-radiohead-high-dry",
+      "artist": "Radiohead",
+      "title": "High and Dry",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "90s-unplugged.json",
+      "id": "unplugged-cranberries-linger",
+      "artist": "The Cranberries",
+      "title": "Linger",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-beethoven-5",
+      "artist": "Ludwig van Beethoven",
+      "title": "Symphony No. 5 (Fate)",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-mozart-nacht",
+      "artist": "Wolfgang Amadeus Mozart",
+      "title": "Eine kleine Nachtmusik",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-vivaldi-spring",
+      "artist": "Antonio Vivaldi",
+      "title": "The Four Seasons (Spring)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-bach-toccata",
+      "artist": "Johann Sebastian Bach",
+      "title": "Toccata and Fugue in D minor",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-pachelbel-canon",
+      "artist": "Johann Pachelbel",
+      "title": "Canon in D",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-tchaikovsky-swan",
+      "artist": "Pyotr Ilyich Tchaikovsky",
+      "title": "Swan Lake (Theme)",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-strauss-danube",
+      "artist": "Johann Strauss II",
+      "title": "The Blue Danube",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-bizet-carmen",
+      "artist": "Georges Bizet",
+      "title": "Carmen (Habanera)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-rossini-william",
+      "artist": "Gioachino Rossini",
+      "title": "William Tell Overture",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-grieg-mountain",
+      "artist": "Edvard Grieg",
+      "title": "In the Hall of the Mountain King",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-orff-fortuna",
+      "artist": "Carl Orff",
+      "title": "Carmina Burana (O Fortuna)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-wagner-valkyries",
+      "artist": "Richard Wagner",
+      "title": "Ride of the Valkyries",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-handel-hallelujah",
+      "artist": "George Frideric Handel",
+      "title": "Hallelujah Chorus",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-debussy-lune",
+      "artist": "Claude Debussy",
+      "title": "Clair de Lune",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-chopin-nocturne",
+      "artist": "Frédéric Chopin",
+      "title": "Nocturne in E-flat major, Op. 9, No. 2",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-puccini-dorma",
+      "artist": "Giacomo Puccini",
+      "title": "Nessun Dorma (Turandot)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-verdi-donna",
+      "artist": "Giuseppe Verdi",
+      "title": "La Donna è Mobile (Rigoletto)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-john-wars",
+      "artist": "John Williams",
+      "title": "Star Wars Main Title",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-zimmer-pirate",
+      "artist": "Hans Zimmer / Klaus Badelt",
+      "title": "He's a Pirate",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-morricone-ugly",
+      "artist": "Ennio Morricone",
+      "title": "The Good, the Bad and the Ugly",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-shore-hobbits",
+      "artist": "Howard Shore",
+      "title": "Concerning Hobbits (LOTR)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-silvestri-bttf",
+      "artist": "Alan Silvestri",
+      "title": "Back to the Future Theme",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-elfman-batman",
+      "artist": "Danny Elfman",
+      "title": "Batman Theme (1989)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-djawadi-got",
+      "artist": "Ramin Djawadi",
+      "title": "Game of Thrones Main Title",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-einaudi-nuvole",
+      "artist": "Ludovico Einaudi",
+      "title": "Nuvole Bianche",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-holst-mars",
+      "artist": "Gustav Holst",
+      "title": "The Planets (Mars, the Bringer of War)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-ravel-bolero",
+      "artist": "Maurice Ravel",
+      "title": "Boléro",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-saint-saens-danse",
+      "artist": "Camille Saint-Saëns",
+      "title": "Danse Macabre",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-mussorgsky-bald",
+      "artist": "Modest Mussorgsky",
+      "title": "Night on Bald Mountain",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-sibelius-finlandia",
+      "artist": "Jean Sibelius",
+      "title": "Finlandia",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-barber-adagio",
+      "artist": "Samuel Barber",
+      "title": "Adagio for Strings",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-jenkins-palladio",
+      "artist": "Karl Jenkins",
+      "title": "Palladio (Diamond Music)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-richter-daylight",
+      "artist": "Max Richter",
+      "title": "On the Nature of Daylight",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "class-glass-opening",
+      "artist": "Philip Glass",
+      "title": "Glassworks (Opening)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-trek-theme",
+      "artist": "Jerry Goldsmith",
+      "title": "Star Trek (Main Theme)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-up-married",
+      "artist": "Michael Giacchino",
+      "title": "Up (Main Theme - Married Life)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-beauty-other",
+      "artist": "Thomas Newman",
+      "title": "American Beauty (Any Other Name)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-shape-water",
+      "artist": "Alexandre Desplat",
+      "title": "The Shape of Water (Theme)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-clint-aeterna",
+      "artist": "Clint Mansell",
+      "title": "Lux Aeterna (Requiem for a Dream)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-horner-rose",
+      "artist": "James Horner",
+      "title": "Rose (Titanic Theme)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-bond-theme",
+      "artist": "Monty Norman / John Barry",
+      "title": "James Bond Theme",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-lalo-mission",
+      "artist": "Lalo Schifrin",
+      "title": "Mission: Impossible Theme",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-henry-panther",
+      "artist": "Henry Mancini",
+      "title": "Pink Panther Theme",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-herrmann-psycho",
+      "artist": "Bernard Herrmann",
+      "title": "Psycho (The Murder)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-nino-godfather",
+      "artist": "Nino Rota",
+      "title": "The Godfather (Main Title)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "classical-orchestral.json",
+      "id": "score-zimmer-time",
+      "artist": "Hans Zimmer",
+      "title": "Time (Inception)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-cash-fire",
+      "artist": "Johnny Cash",
+      "title": "Ring of Fire",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-dolly-jolene",
+      "artist": "Dolly Parton",
+      "title": "Jolene",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-willie-road",
+      "artist": "Willie Nelson",
+      "title": "On the Road Again",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-denver-roads",
+      "artist": "John Denver",
+      "title": "Take Me Home, Country Roads",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-rogers-gambler",
+      "artist": "Kenny Rogers",
+      "title": "The Gambler",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-shania-man",
+      "artist": "Shania Twain",
+      "title": "Man! I Feel Like a Woman!",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-garth-friends",
+      "artist": "Garth Brooks",
+      "title": "Friends in Low Places",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-strait-amarillo",
+      "artist": "George Strait",
+      "title": "Amarillo by Morning",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-jackson-chattahoochee",
+      "artist": "Alan Jackson",
+      "title": "Chattahoochee",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-tim-live",
+      "artist": "Tim McGraw",
+      "title": "Live Like You Were Dying",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "country-folk.json",
+      "id": "country-faith-breathe",
+      "artist": "Faith Hill",
+      "title": "Breathe",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    }
+  ]
+}
