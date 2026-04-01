@@ -43,6 +43,7 @@ const EMPTY_SONG: AdminSong = {
   mood: [],
   pack: 'Global Hits 1950-2026',
   hints: ['', '', '', '', ''],
+  hintEvidence: ['', '', '', '', ''],
   lyrics: null,
   isOneHitWonder: false,
   links: { youtube: '' },
@@ -57,6 +58,38 @@ function isSongComplete(song: AdminSong): boolean {
   if (!song.lyrics) return false;
   if (!song.hints.every((h) => h.trim() !== '')) return false;
   return true;
+}
+
+
+function normalizeText(value: string): string {
+  return value
+    .normalize('NFKD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function duplicateKey(song: AdminSong): string {
+  return `${normalizeText(song.artist)}::${normalizeText(song.title)}::${song.year}`;
+}
+
+function hasHintSpoiler(song: AdminSong): boolean {
+  const tokens = new Set([
+    ...normalizeText(song.title).split(' ').filter((t) => t.length >= 4),
+    ...normalizeText(song.artist).split(' ').filter((t) => t.length >= 4),
+  ]);
+
+  return song.hints.some((hint) => {
+    const h = normalizeText(hint);
+    return [...tokens].some((token) => token && h.includes(token));
+  });
+}
+
+function hasVerifiableHints(song: AdminSong): boolean {
+  if (!song.hintEvidence || song.hintEvidence.length !== 5) return false;
+  return song.hintEvidence.every((url) => typeof url === 'string' && /^https?:\/\//.test(url));
 }
 
 /** Lädt Songs aus localStorage (falls vorhanden), sonst aus dem JSON */
@@ -166,6 +199,7 @@ function SongEditor({
 
   // Mood als kommagetrennte Eingabe
   const [moodInput, setMoodInput] = useState(song.mood.join(', '));
+  const [hintEvidenceInput, setHintEvidenceInput] = useState<[string, string, string, string, string]>(song.hintEvidence ?? ['', '', '', '', '']);
 
   /** Hint-Felder updaten */
   function updateHint(index: number, value: string) {
@@ -193,7 +227,7 @@ function SongEditor({
       .map((m) => m.trim())
       .filter(Boolean);
 
-    onSave({ ...form, lyrics, mood });
+    onSave({ ...form, lyrics, mood, hintEvidence: hintEvidenceInput });
   }
 
   // Eingabefeld-Hilfsfunktion
@@ -355,13 +389,26 @@ function SongEditor({
             <span className="text-xs font-bold text-gray-400 mt-2 w-6 shrink-0">
               {i + 1}
             </span>
-            <textarea
-              value={hint}
-              onChange={(e) => updateHint(i, e.target.value)}
-              placeholder={`Hint ${i + 1}: ${i === 0 ? 'Historischer/obskurer Fakt' : i === 4 ? 'Fast zu einfach' : 'Musiktrivia'}`}
-              rows={2}
-              className="flex-1 border border-gray-300 rounded px-2 py-1.5 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
+            <div className="flex-1 space-y-1">
+              <textarea
+                value={hint}
+                onChange={(e) => updateHint(i, e.target.value)}
+                placeholder={`Hint ${i + 1}: ${i === 0 ? 'Historischer/obskurer Fakt' : i === 4 ? 'Fast zu einfach' : 'Musiktrivia'}`}
+                rows={2}
+                className="w-full border border-gray-300 rounded px-2 py-1.5 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <input
+                type="url"
+                value={hintEvidenceInput[i]}
+                onChange={(e) => {
+                  const next = [...hintEvidenceInput] as [string, string, string, string, string];
+                  next[i] = e.target.value;
+                  setHintEvidenceInput(next);
+                }}
+                placeholder="Evidenz-URL für diesen Hint (https://...)"
+                className="w-full border border-gray-200 rounded px-2 py-1 text-xs"
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -460,11 +507,28 @@ export default function AdminSongsPage() {
   const handleSave = useCallback(
     (updated: AdminSong) => {
       setSongs((prev) => {
-        const next = prev.map((s) => (s.id === updated.id ? updated : s));
-        // Wenn neuer Song (ID noch nicht vorhanden)
-        if (!prev.find((s) => s.id === updated.id)) {
-          next.push(updated);
+        const isExisting = prev.some((s) => s.id === updated.id);
+        const baseline = isExisting ? prev.filter((s) => s.id !== updated.id) : prev;
+
+        // Duplicate Policy A: global strikt
+        const newKey = duplicateKey(updated);
+        const duplicate = baseline.find((s) => duplicateKey(s) === newKey || s.id === updated.id);
+        if (duplicate) {
+          alert(`Duplikat erkannt: ${duplicate.artist} – ${duplicate.title} (${duplicate.year})`);
+          return prev;
         }
+
+        // Hint Quality Gates
+        if (hasHintSpoiler(updated)) {
+          alert('Speichern blockiert: Hint enthält Spoiler (Titel/Artist-Token).');
+          return prev;
+        }
+        if (!hasVerifiableHints(updated)) {
+          alert('Speichern blockiert: Jeder Hint braucht eine prüfbare Evidenz-URL.');
+          return prev;
+        }
+
+        const next = [...baseline, updated];
         saveSongsToStorage(next);
         return next;
       });

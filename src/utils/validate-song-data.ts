@@ -72,6 +72,16 @@ function isYoutubeUrl(value: string): boolean {
   );
 }
 
+function normalizeForComparison(value: string): string {
+  return value
+    .normalize('NFKD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 // ─── Haupt-Validierungslogik ──────────────────────────────────────────────────
 
 /**
@@ -156,6 +166,40 @@ export function validateSong(song: unknown): SongValidationResult {
         errors.push(err(songId, `hints[${i}]`, `Hint ${i + 1} ist leer oder kein String`));
       }
     });
+
+
+    // Hint-Qualität: keine offensichtlichen Spoiler (Titel/Artist Tokens)
+    const normalizedTitle = normalizeForComparison(title);
+    const normalizedArtist = normalizeForComparison(artist);
+    const spoilerTokens = new Set([
+      ...normalizedTitle.split(' ').filter((t) => t.length >= 4),
+      ...normalizedArtist.split(' ').filter((t) => t.length >= 4),
+    ]);
+
+    hints.forEach((h, i) => {
+      const normalizedHint = normalizeForComparison(String(h));
+      for (const token of spoilerTokens) {
+        if (token && normalizedHint.includes(token)) {
+          warnings.push(warn(songId, `hints[${i}]`, `Hint enthält möglichen Spoiler-Token: "${token}"`));
+          break;
+        }
+      }
+    });
+
+    // Prüfbarkeit: wenn hintEvidence vorhanden, muss es 5 Quellen geben
+    if (Array.isArray(s['hintEvidence'])) {
+      const evidence = s['hintEvidence'] as unknown[];
+      if (evidence.length !== 5) {
+        warnings.push(warn(songId, 'hintEvidence', `Falsche Anzahl hintEvidence: ${evidence.length} (erwartet: 5)`));
+      }
+      evidence.forEach((ev, i) => {
+        if (typeof ev !== 'string' || !ev.startsWith('http')) {
+          warnings.push(warn(songId, `hintEvidence[${i}]`, 'hintEvidence muss eine gültige URL sein (http/https)'));
+        }
+      });
+    } else {
+      warnings.push(warn(songId, 'hintEvidence', 'Keine hintEvidence vorhanden – Prüfbarkeit der Hints eingeschränkt'));
+    }
   }
 
   // isOneHitWonder: muss boolean sein
@@ -192,6 +236,27 @@ export function validateSong(song: unknown): SongValidationResult {
     }
     if (!lyrics['fake'] || typeof lyrics['fake'] !== 'string') {
       errors.push(err(songId, 'lyrics.fake', 'lyrics.fake muss ein String (die gefälschte Liedzeile) sein'));
+    }
+  }
+
+  // coverMode: optional, aber wenn vorhanden muss relationType/confidence valide sein
+  if (s['coverMode'] !== undefined) {
+    const cm = s['coverMode'] as Record<string, unknown>;
+    const validRelationTypes = ['original', 'cover', 'sample', 'remix'];
+    const validConfidence = ['low', 'medium', 'high'];
+
+    if (!cm || typeof cm !== 'object') {
+      errors.push(err(songId, 'coverMode', 'coverMode muss ein Objekt sein'));
+    } else {
+      if (!validRelationTypes.includes(cm['relationType'] as string)) {
+        errors.push(err(songId, 'coverMode.relationType', `Ungültiger Wert: "${cm['relationType']}" (erwartet: original|cover|sample|remix)`));
+      }
+      if (!validConfidence.includes(cm['confidence'] as string)) {
+        errors.push(err(songId, 'coverMode.confidence', `Ungültiger Wert: "${cm['confidence']}" (erwartet: low|medium|high)`));
+      }
+      if (cm['coverYear'] !== undefined && typeof cm['coverYear'] !== 'number') {
+        errors.push(err(songId, 'coverMode.coverYear', 'coverMode.coverYear muss eine Zahl sein'));
+      }
     }
   }
 

@@ -25,7 +25,7 @@ type Phase = 'listening' | 'self-assess' | 'choice' | 'done';
 
 interface CoverConfusionModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
   onReveal?: () => void;
 }
 

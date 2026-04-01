@@ -8,6 +8,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import type { PhomuSong } from '@/types/song';
 import type { PlayerAnswer } from '@/types/game-state';
 import type { Player } from '@/types/player';
@@ -22,6 +23,9 @@ interface RevealPhaseProps {
   winCondition: number;
   onNextRound: () => void;
   onEndGame: () => void;
+  onOverrideCorrect?: () => void;
+  onOverrideRedraw?: () => void;
+  overrideGovernance?: 'host' | 'co-host' | 'majority';
 }
 
 // ─── Hilfs-Badge für Schwierigkeit ───────────────────────────────
@@ -48,7 +52,13 @@ export function RevealPhase({
   winCondition,
   onNextRound,
   onEndGame,
+  onOverrideCorrect,
+  onOverrideRedraw,
+  overrideGovernance = 'host',
 }: RevealPhaseProps) {
+
+  const [showPowerMenu, setShowPowerMenu] = useState(false);
+
   // Prüfen ob irgendein Spieler den Gewinnscore erreicht hat
   const winner = players.find((p) => p.score >= winCondition);
 
@@ -180,6 +190,46 @@ export function RevealPhase({
         >
           ⭐ {song.artist} ist ein One-Hit-Wonder!
         </motion.p>
+      )}
+
+      {/* Verstecktes Power-User Menü (nur Ausnahmefälle) */}
+      <div className="flex justify-end">
+        <button
+          onClick={() => setShowPowerMenu((v) => !v)}
+          className="text-[10px] opacity-20 hover:opacity-60 transition-opacity px-2 py-1"
+          aria-label="Power Actions"
+          title="Power Actions"
+        >
+          ⋯
+        </button>
+      </div>
+
+      {showPowerMenu && (
+        <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 p-3 space-y-2">
+          <p className="text-[10px] uppercase tracking-wider opacity-60">
+            Power User · Governance: {overrideGovernance}
+          </p>
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={() => {
+                onOverrideCorrect?.();
+                setShowPowerMenu(false);
+              }}
+              className="text-left px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-sm"
+            >
+              ✅ Antwort trotzdem korrekt werten
+            </button>
+            <button
+              onClick={() => {
+                onOverrideRedraw?.();
+                setShowPowerMenu(false);
+              }}
+              className="text-left px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-sm"
+            >
+              🔄 Runde verwerfen & neue Frage
+            </button>
+          </div>
+        </div>
       )}
 
       {/* Aktions-Buttons */}

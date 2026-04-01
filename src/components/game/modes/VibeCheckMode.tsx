@@ -30,7 +30,7 @@ const ALL_MOODS = [
 
 interface VibeCheckModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
 }
 
 export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {

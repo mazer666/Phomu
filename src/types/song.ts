@@ -18,12 +18,29 @@ export type CountryCode = string;
 /** How well-known the song is — affects which songs appear at each difficulty setting */
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
+export interface CoverModeMetadata {
+  /** Beziehung zum Originalwerk */
+  relationType: 'original' | 'cover' | 'sample' | 'remix';
+  /** Song-ID des Originals, wenn bekannt */
+  originalSongId?: string;
+  /** Artist des Originals für Reveal-Texte */
+  originalArtist?: string;
+  /** Cover-Artist, falls dieser Song eine Cover-Version ist */
+  coverArtist?: string;
+  /** Jahr der Cover-Version */
+  coverYear?: number;
+  /** Optionaler Reveal-Satz für den Cover-Mode */
+  revealPrompt?: string;
+  /** Datenqualität/Konfidenz */
+  confidence: 'low' | 'medium' | 'high';
+}
+
 /**
  * The full data record for one song.
  * Every song must have at least a YouTube link — the other providers are optional.
  */
 export interface PhomuSong {
-  /** Unique identifier — used in QR code URLs: /play?id=SONG_ID */
+  /** Unique identifier — used internally and for admin references */
   id: string;
 
   /** Song title as officially released */
@@ -68,6 +85,12 @@ export interface PhomuSong {
   hints: [string, string, string, string, string];
 
   /**
+   * Prüfbare Quellen pro Hint (z. B. Wikipedia/Discogs/Official Notes).
+   * Optional für Legacy-Daten, für neue KI-Hints empfohlen verpflichtend.
+   */
+  hintEvidence?: [string, string, string, string, string];
+
+  /**
    * Lyrics data for Lyrics Labyrinth mode.
    * null = noch nicht eingetragen (wird über Admin-Tool ausgefüllt).
    */
@@ -83,6 +106,12 @@ export interface PhomuSong {
    * false if they had 2 or more Top 40 hits.
    */
   isOneHitWonder: boolean;
+
+  /**
+   * Metadaten für den Cover-Confusion-Modus.
+   * Optional, weil nicht jeder Song eine relevante Cover-Beziehung hat.
+   */
+  coverMode?: CoverModeMetadata;
 
   /**
    * Optional: controls which section of the song to play.

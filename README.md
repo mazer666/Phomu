@@ -47,7 +47,7 @@ Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that
 
 ## Physical Cards (59x91mm + 3mm Bleed)
 - **Front:** Year displayed large, optional country flag, abstract musical design. **No** artist/title/hints on the card.
-- **Back:** Only QR code + Phomu URL (`/play?id=SONG_ID`).
+- **Back:** Only QR code + Phomu URL (Session-/Pack-Intent, **kein** direkter Song-Link).
 - Everything else runs through the app.
 - Max 110 cards per set (for meinspiel.de).
 
@@ -66,6 +66,12 @@ Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that
 - **Hosting:** Vercel (Free Tier)
 - **License:** GPL-3.0 (Copyleft)
 
+
+## Quality & Trust
+- Multi-layer quality gates: Typecheck, Lint, Unit Tests, Data Validation, Build, Dependency Audit.
+- Privacy-first and data minimization: only store what is required for game functionality.
+- Security and contribution guidelines: `SECURITY.md` and `CONTRIBUTING.md`.
+
 ## Development Standards
 - **Modular Code:** Maximum 400-600 lines per file.
 - **TypeScript Strict:** No `any`. Clear interfaces for everything.
@@ -74,8 +80,11 @@ Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that
 
 
 ## Aktueller Projektstand (Dokumentation)
-- **Statusbericht:** `specifications/current_status_2026-03-30.md`
+- **Contributing Guide:** `CONTRIBUTING.md`
+- **Security & Privacy Policy:** `SECURITY.md`
+- **Statusbericht:** `specifications/current_status_2026-04-01.md`
 - **Verbesserungsplan (Mobile UX + Security + Phasen):** `specifications/improvement_plan_mobile_ux_security.md`
 - **Roadmap (historisch/ursprünglich):** `specifications/project_roadmap.md`
+- **Strategie & PM-Vorschläge (5.000 Songs, Scoring, UX/UI, Admin-Security):** `specifications/product_strategy_2026-03-31.md`
 
-> Hinweis: Der Statusbericht vom **30. März 2026** ist die führende Quelle für den aktuellen Ist-Zustand und offene Qualitätslücken.
+> Hinweis: Der Statusbericht vom **1. April 2026** ist die führende Quelle für den aktuellen Ist-Zustand und offene Qualitätslücken.

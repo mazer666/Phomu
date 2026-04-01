@@ -9,6 +9,16 @@ import type { Player, Team, TeamMode } from './player';
 import type { PhomuSong } from './song';
 import type { GameMode, MusicProvider, Difficulty } from '@/config/game-config';
 
+
+/** Wer Override-Aktionen im Spiel ausführen darf */
+export type OverrideGovernance = 'host' | 'co-host' | 'majority';
+
+/** Veröffentlichungspolitik für KI-generierte Hints */
+export type HintReleasePolicy = 'auto-publish' | 'manual-review';
+
+/** Verhalten bei API-Blocking/Rate-Limit */
+export type AIQueueStrategy = 'queue-retry-pending' | 'fail-fast';
+
 /** How the game is currently being played */
 export type DeviceMode =
   | 'pass-the-phone'  // Single device passed between players
@@ -47,6 +57,36 @@ export interface GameConfig {
 
   /** Song difficulty filter */
   difficulty: Difficulty | 'all';
+
+  /** Standard-Rundenanzahl (Produktanforderung: mindestens 10) */
+  roundsToPlay: number;
+
+  /** Maximale Punkte im Timeline-Modus */
+  timelineMaxPoints: number;
+
+  /** Optional: später antworten = weniger Punkte */
+  timeDecayEnabled: boolean;
+
+  /** Ab wann der Zeitabzug greift */
+  timeDecayGraceSeconds: number;
+
+  /** Alle X Sekunden wird 1 Punkt abgezogen */
+  timeDecayStepSeconds: number;
+
+  /** Wie viele Punkte pro Schritt abgezogen werden */
+  timeDecayStepPoints: number;
+
+  /** Minimum für richtige Antwort trotz Zeitabzug */
+  minPointsPerCorrect: number;
+
+  /** Governance für versteckte Override-Aktionen */
+  overrideGovernance: OverrideGovernance;
+
+  /** Veröffentlichung von KI-Hints nach bestandenen Checks */
+  hintReleasePolicy: HintReleasePolicy;
+
+  /** Verhalten bei KI-Blocking (Queue + Retry + Pending empfohlen) */
+  aiQueueStrategy: AIQueueStrategy;
 
   /** Whether chips/betting mechanic is active */
   chipsEnabled: boolean;
