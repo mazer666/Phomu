@@ -193,7 +193,7 @@ export function validateSong(song: unknown): SongValidationResult {
         warnings.push(warn(songId, 'hintEvidence', `Falsche Anzahl hintEvidence: ${evidence.length} (erwartet: 5)`));
       }
       evidence.forEach((ev, i) => {
-        if (typeof ev !== 'string' || !ev.startsWith('http')) {
+        if (typeof ev !== 'string' || !/^https?:\/\//.test(ev)) {
           warnings.push(warn(songId, `hintEvidence[${i}]`, 'hintEvidence muss eine gültige URL sein (http/https)'));
         }
       });
