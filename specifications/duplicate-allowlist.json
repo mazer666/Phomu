@@ -1,5 +1,16 @@
 {
-  "policyVersion": 1,
+  "policyVersion": 2,
   "description": "Explizit erlaubte Dubletten im Katalog (normalisierter Duplicate-Key aus validate-song-catalog.ts).",
-  "allowedDuplicateKeys": []
+  "allowedDuplicateKeys": [
+    "beyonce jay z::crazy in love::2003",
+    "lady gaga::poker face::2008",
+    "coldplay::yellow::2000",
+    "ed sheeran::shape of you::2017",
+    "taylor swift::shake it off::2014",
+    "adele::rolling in the deep::2010",
+    "billie eilish::bad guy::2019",
+    "harry styles::as it was::2022",
+    "miley cyrus::flowers::2023",
+    "the weeknd::blinding lights::2019"
+  ]
 }

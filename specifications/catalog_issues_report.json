@@ -1,263 +1,17 @@
 {
-  "generatedAt": "2026-04-02T10:39:07.713Z",
+  "generatedAt": "2026-04-02T10:43:51.129Z",
   "packs": 27,
   "songs": 1915,
   "schemaErrors": 2234,
   "schemaWarnings": 4632,
-  "duplicateGroups": 173,
-  "allowedDuplicateGroups": 0,
+  "duplicateGroups": 163,
+  "allowedDuplicateGroups": 10,
   "missingYears": [
     1952,
     2025,
     2026
   ],
   "topDuplicateGroups": [
-    {
-      "key": "beyonce jay z::crazy in love::2003",
-      "songs": [
-        {
-          "id": "2000s-beyonce-crazy-in-love",
-          "artist": "Beyoncé ft. Jay-Z",
-          "title": "Crazy In Love",
-          "year": 2003,
-          "packFile": "2000s-pop-rnb.json"
-        },
-        {
-          "id": "beyonce-crazy-in-love-2003",
-          "artist": "Beyoncé ft. Jay-Z",
-          "title": "Crazy in Love",
-          "year": 2003,
-          "packFile": "global-hits.json"
-        },
-        {
-          "id": "yt-5BnF0_LksYI",
-          "artist": "Beyoncé ft. Jay-Z",
-          "title": "Crazy In Love",
-          "year": 2003,
-          "packFile": "youtube-import.json"
-        }
-      ]
-    },
-    {
-      "key": "lady gaga::poker face::2008",
-      "songs": [
-        {
-          "id": "2000s-lady-gaga-poker-face",
-          "artist": "Lady Gaga",
-          "title": "Poker Face",
-          "year": 2008,
-          "packFile": "2000s-pop-rnb.json"
-        },
-        {
-          "id": "yt-oG-4Uvhm4lI",
-          "artist": "Lady Gaga",
-          "title": "Poker Face",
-          "year": 2008,
-          "packFile": "youtube-import.json"
-        }
-      ]
-    },
-    {
-      "key": "coldplay::yellow::2000",
-      "songs": [
-        {
-          "id": "2000s-coldplay-yellow",
-          "artist": "Coldplay",
-          "title": "Yellow",
-          "year": 2000,
-          "packFile": "2000s-pop-rnb.json"
-        },
-        {
-          "id": "coldplay-yellow-2000",
-          "artist": "Coldplay",
-          "title": "Yellow",
-          "year": 2000,
-          "packFile": "global-hits.json"
-        }
-      ]
-    },
-    {
-      "key": "ed sheeran::shape of you::2017",
-      "songs": [
-        {
-          "id": "modern-ed-sheeran-shape",
-          "artist": "Ed Sheeran",
-          "title": "Shape of You",
-          "year": 2017,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "ed-sheeran-shape-of-you-2017",
-          "artist": "Ed Sheeran",
-          "title": "Shape of You",
-          "year": 2017,
-          "packFile": "global-hits.json"
-        },
-        {
-          "id": "yt-xTvyyoF_LZY",
-          "artist": "Ed Sheeran",
-          "title": "Shape of You",
-          "year": 2017,
-          "packFile": "youtube-import.json"
-        }
-      ]
-    },
-    {
-      "key": "taylor swift::shake it off::2014",
-      "songs": [
-        {
-          "id": "modern-taylor-swift-shake",
-          "artist": "Taylor Swift",
-          "title": "Shake It Off",
-          "year": 2014,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "taylor-swift-shake-it-off-2014",
-          "artist": "Taylor Swift",
-          "title": "Shake It Off",
-          "year": 2014,
-          "packFile": "global-hits.json"
-        }
-      ]
-    },
-    {
-      "key": "adele::rolling in the deep::2010",
-      "songs": [
-        {
-          "id": "modern-adele-rolling-deep",
-          "artist": "Adele",
-          "title": "Rolling in the Deep",
-          "year": 2010,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "adele-rolling-in-the-deep-2010",
-          "artist": "Adele",
-          "title": "Rolling in the Deep",
-          "year": 2010,
-          "packFile": "global-hits.json"
-        }
-      ]
-    },
-    {
-      "key": "billie eilish::bad guy::2019",
-      "songs": [
-        {
-          "id": "modern-billie-eilish-bad-guy",
-          "artist": "Billie Eilish",
-          "title": "Bad guy",
-          "year": 2019,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "billie-eilish-bad-guy-2019",
-          "artist": "Billie Eilish",
-          "title": "bad guy",
-          "year": 2019,
-          "packFile": "global-hits.json"
-        }
-      ]
-    },
-    {
-      "key": "harry styles::as it was::2022",
-      "songs": [
-        {
-          "id": "modern-harry-styles-as-it-was",
-          "artist": "Harry Styles",
-          "title": "As It Was",
-          "year": 2022,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "harry-styles-as-it-was-2022",
-          "artist": "Harry Styles",
-          "title": "As It Was",
-          "year": 2022,
-          "packFile": "global-hits.json"
-        },
-        {
-          "id": "finale-harry-asitwas",
-          "artist": "Harry Styles",
-          "title": "As It Was",
-          "year": 2022,
-          "packFile": "grand-finale.json"
-        },
-        {
-          "id": "yt-nujn6wbr-e8",
-          "artist": "Harry Styles",
-          "title": "As It Was",
-          "year": 2022,
-          "packFile": "youtube-import.json"
-        }
-      ]
-    },
-    {
-      "key": "miley cyrus::flowers::2023",
-      "songs": [
-        {
-          "id": "modern-miley-cyrus-flowers",
-          "artist": "Miley Cyrus",
-          "title": "Flowers",
-          "year": 2023,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "miley-cyrus-flowers-2023",
-          "artist": "Miley Cyrus",
-          "title": "Flowers",
-          "year": 2023,
-          "packFile": "global-hits.json"
-        },
-        {
-          "id": "finale-miley-flowers",
-          "artist": "Miley Cyrus",
-          "title": "Flowers",
-          "year": 2023,
-          "packFile": "grand-finale.json"
-        },
-        {
-          "id": "yt-BkSSOGNeWTM",
-          "artist": "Miley Cyrus",
-          "title": "Flowers",
-          "year": 2023,
-          "packFile": "youtube-import.json"
-        }
-      ]
-    },
-    {
-      "key": "the weeknd::blinding lights::2019",
-      "songs": [
-        {
-          "id": "modern-the-weeknd-blinding-lights",
-          "artist": "The Weeknd",
-          "title": "Blinding Lights",
-          "year": 2019,
-          "packFile": "2010s-2020s-hits.json"
-        },
-        {
-          "id": "the-weeknd-blinding-lights-2019",
-          "artist": "The Weeknd",
-          "title": "Blinding Lights",
-          "year": 2019,
-          "packFile": "global-hits.json"
-        },
-        {
-          "id": "finale-weeknd-blinding",
-          "artist": "The Weeknd",
-          "title": "Blinding Lights",
-          "year": 2019,
-          "packFile": "grand-finale.json"
-        },
-        {
-          "id": "yt-J7p4bzqLvCw",
-          "artist": "The Weeknd",
-          "title": "Blinding Lights",
-          "year": 2019,
-          "packFile": "youtube-import.json"
-        }
-      ]
-    },
     {
       "key": "pharrell williams::happy::2013",
       "songs": [
@@ -1225,6 +979,217 @@
           "title": "Smalltown Boy (Remastered)",
           "year": 1984,
           "packFile": "youtube-import.json"
+        }
+      ]
+    },
+    {
+      "key": "frankie goes to hollywood::relax::1983",
+      "songs": [
+        {
+          "id": "80s-frankie-relax",
+          "artist": "Frankie Goes to Hollywood",
+          "title": "Relax",
+          "year": 1983,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "synth-frankie-relax",
+          "artist": "Frankie Goes to Hollywood",
+          "title": "Relax",
+          "year": 1983,
+          "packFile": "electronic-synth.json"
+        },
+        {
+          "id": "yt-pJ2L1dh-dSo",
+          "artist": "Frankie Goes to Hollywood",
+          "title": "Relax (Come Fighting)",
+          "year": 1983,
+          "packFile": "youtube-import.json"
+        }
+      ]
+    },
+    {
+      "key": "kim wilde::kids in america::1981",
+      "songs": [
+        {
+          "id": "80s-kimwilde-kids",
+          "artist": "Kim Wilde",
+          "title": "Kids in America",
+          "year": 1981,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "synth-kim-kids",
+          "artist": "Kim Wilde",
+          "title": "Kids in America",
+          "year": 1981,
+          "packFile": "electronic-synth.json"
+        },
+        {
+          "id": "yt-i5HDfxDW7Ck",
+          "artist": "Kim Wilde",
+          "title": "Kids In America (2020 Remaster)",
+          "year": 1981,
+          "packFile": "youtube-import.json"
+        }
+      ]
+    },
+    {
+      "key": "trio::da da da::1982",
+      "songs": [
+        {
+          "id": "80s-trio-dada",
+          "artist": "Trio",
+          "title": "Da Da Da",
+          "year": 1982,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "german-trio-da-da-da",
+          "artist": "Trio",
+          "title": "Da Da Da",
+          "year": 1982,
+          "packFile": "german-classics.json"
+        }
+      ]
+    },
+    {
+      "key": "righeira::vamos a la playa::1983",
+      "songs": [
+        {
+          "id": "80s-righeira-playa",
+          "artist": "Righeira",
+          "title": "Vamos a la playa",
+          "year": 1983,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "yt-x0OMFm8FO90",
+          "artist": "Righeira",
+          "title": "Vamos a la Playa (1983)",
+          "year": 1983,
+          "packFile": "youtube-import.json"
+        }
+      ]
+    },
+    {
+      "key": "bonnie tyler::total eclipse of the heart::1983",
+      "songs": [
+        {
+          "id": "80s-bonnie-tyler-eclipse",
+          "artist": "Bonnie Tyler",
+          "title": "Total Eclipse of the Heart",
+          "year": 1983,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "piano-bonnie-eclipse",
+          "artist": "Bonnie Tyler",
+          "title": "Total Eclipse of the Heart",
+          "year": 1983,
+          "packFile": "piano-ballads.json"
+        }
+      ]
+    },
+    {
+      "key": "kenny loggins::footloose::1984",
+      "songs": [
+        {
+          "id": "80s-kenny-loggins-footloose",
+          "artist": "Kenny Loggins",
+          "title": "Footloose",
+          "year": 1984,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "movie-kenny-loggins-footloose",
+          "artist": "Kenny Loggins",
+          "title": "Footloose",
+          "year": 1984,
+          "packFile": "movie-hits.json"
+        }
+      ]
+    },
+    {
+      "key": "bill medley jennifer warnes::the time of my life::1987",
+      "songs": [
+        {
+          "id": "80s-billmedley-time-of-life",
+          "artist": "Bill Medley & Jennifer Warnes",
+          "title": "(I've Had) The Time of My Life",
+          "year": 1987,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "movie-dirty-dancing-time-of-my-life",
+          "artist": "Bill Medley & Jennifer Warnes",
+          "title": "(I've Had) The Time of My Life",
+          "year": 1987,
+          "packFile": "movie-hits.json"
+        }
+      ]
+    },
+    {
+      "key": "simple minds::don t you::1985",
+      "songs": [
+        {
+          "id": "80s-simple-minds-forget",
+          "artist": "Simple Minds",
+          "title": "Don't You (Forget About Me)",
+          "year": 1985,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "movie-simple-minds-dont-you-forget",
+          "artist": "Simple Minds",
+          "title": "Don't You (Forget About Me)",
+          "year": 1985,
+          "packFile": "movie-hits.json"
+        },
+        {
+          "id": "yt-STgLfdt8u3U",
+          "artist": "Simple Minds",
+          "title": "Don't You (Forget About Me) (Remastered 2001)",
+          "year": 1985,
+          "packFile": "youtube-import.json"
+        }
+      ]
+    },
+    {
+      "key": "spandau ballet::true::1983",
+      "songs": [
+        {
+          "id": "80s-spandau-ballet-true",
+          "artist": "Spandau Ballet",
+          "title": "True",
+          "year": 1983,
+          "packFile": "80s-pop.json"
+        },
+        {
+          "id": "yt-ITX-SEsyGRg",
+          "artist": "Spandau Ballet",
+          "title": "True (2003 Remaster)",
+          "year": 1983,
+          "packFile": "youtube-import.json"
+        }
+      ]
+    },
+    {
+      "key": "radiohead::creep::1992",
+      "songs": [
+        {
+          "id": "90s-radiohead-creep",
+          "artist": "Radiohead",
+          "title": "Creep",
+          "year": 1992,
+          "packFile": "90s-unplugged.json"
+        },
+        {
+          "id": "indie-radiohead-creep",
+          "artist": "Radiohead",
+          "title": "Creep",
+          "year": 1992,
+          "packFile": "indie-alternative.json"
         }
       ]
     }
