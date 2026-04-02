@@ -183,7 +183,7 @@ function buildTimelineHeadlines(year: number): string[] {
 
 function TimelineReveal({ song }: { song: PhomuSong }) {
   const headlines = useMemo(() => buildTimelineHeadlines(song.year), [song.year]);
-  const headline = useMemo(() => pickDeterministic(headlines, `cover:${song.id}`), [headlines, song.id]);
+  const headline = useMemo(() => pickDeterministic(headlines, `timeline:${song.id}`), [headlines, song.id]);
 
   return (
     <motion.div
