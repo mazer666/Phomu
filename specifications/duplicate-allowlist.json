@@ -1,0 +1,5 @@
+{
+  "policyVersion": 1,
+  "description": "Explizit erlaubte Dubletten im Katalog (normalisierter Duplicate-Key aus validate-song-catalog.ts).",
+  "allowedDuplicateKeys": []
+}

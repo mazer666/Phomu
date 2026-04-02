@@ -35,6 +35,19 @@ function loadBaseline(): QualityBaseline | null {
   return JSON.parse(raw) as QualityBaseline;
 }
 
+
+interface DuplicateAllowlist {
+  allowedDuplicateKeys: string[];
+}
+
+function loadDuplicateAllowlist(): Set<string> {
+  const allowlistPath = path.resolve(process.cwd(), 'specifications/duplicate-allowlist.json');
+  if (!fs.existsSync(allowlistPath)) return new Set();
+  const raw = fs.readFileSync(allowlistPath, 'utf-8');
+  const parsed = JSON.parse(raw) as DuplicateAllowlist;
+  return new Set(parsed.allowedDuplicateKeys ?? []);
+}
+
 interface DuplicateEntry {
   key: string;
   songs: Array<{ id: string; artist: string; title: string; year: number; packFile: string }>;
@@ -130,7 +143,10 @@ function main(): void {
     totalWarnings += result.allWarnings.length;
   }
 
-  const duplicates = checkDuplicates(packs);
+  const allDuplicates = checkDuplicates(packs);
+  const duplicateAllowlist = loadDuplicateAllowlist();
+  const duplicates = allDuplicates.filter((entry) => !duplicateAllowlist.has(entry.key));
+  const allowedDuplicates = allDuplicates.length - duplicates.length;
   const currentYear = new Date().getFullYear();
   const missingYears = checkYearCoverage(packs, 1950, currentYear);
 
@@ -140,6 +156,7 @@ function main(): void {
   console.log(`Schema-Fehler: ${totalErrors}`);
   console.log(`Schema-Warnungen: ${totalWarnings}`);
   console.log(`Duplicate-Gruppen: ${duplicates.length}`);
+  console.log(`Erlaubte Dubletten (Allowlist): ${allowedDuplicates}`);
   console.log(`Fehlende Jahre (1950-${currentYear}): ${missingYears.length}`);
 
   if (duplicates.length > 0) {
