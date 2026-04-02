@@ -20,13 +20,17 @@ const DICE_COUNT = 3;
 export function DiceAnimation({ isVisible, onComplete }: DiceAnimationProps) {
   const [showText, setShowText] = useState(false);
 
-  // Pre-generate random positions to avoid impurity during render
-  const diceOffsets = useMemo(() => 
-    Array.from({ length: DICE_COUNT }).map(() => ({
-      yInitial: Math.random() * 200 - 100,
-      yAnimate: Math.random() * 200 - 100,
-    })),
-  []);
+  const diceOffsets = useMemo(
+    () =>
+      Array.from({ length: DICE_COUNT }).map((_, index) => {
+        const seed = (index + 1) * 97;
+        return {
+          yInitial: (seed % 200) - 100,
+          yAnimate: ((seed * 1.7) % 200) - 100,
+        };
+      }),
+    [],
+  );
 
   useEffect(() => {
     if (isVisible) {

@@ -71,6 +71,16 @@ const MODE_META: Record<GameMode, { icon: string; title: string; instruction: st
   },
 };
 
+
+function deterministicIndex(seed: string, length: number): number {
+  if (length <= 1) return 0;
+  let hash = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+  return hash % length;
+}
+
 // ─── Props ────────────────────────────────────────────────────────
 
 interface DrawingPhaseProps {
@@ -100,8 +110,15 @@ export function DrawingPhase({
   const [isDrawing, setIsDrawing] = useState(false);
   const [error, setError] = useState('');
 
-  const drawLabel = useMemo(() => DRAW_BUTTON_LABELS[Math.floor(Math.random() * DRAW_BUTTON_LABELS.length)]!, []);
-  const pilotLabel = useMemo(() => PILOT_LABELS[Math.floor(Math.random() * PILOT_LABELS.length)]!, []);
+  const drawLabel = useMemo(() => {
+    const seed = `${currentMode}:${playedSongIds.length}`;
+    return DRAW_BUTTON_LABELS[deterministicIndex(seed, DRAW_BUTTON_LABELS.length)]!;
+  }, [currentMode, playedSongIds.length]);
+
+  const pilotLabel = useMemo(() => {
+    const seed = `${pilotName ?? 'pilot'}:${currentMode}`;
+    return PILOT_LABELS[deterministicIndex(seed, PILOT_LABELS.length)]!;
+  }, [pilotName, currentMode]);
 
   const handleDraw = useCallback(() => {
     if (isDrawing) return;
