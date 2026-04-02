@@ -3,7 +3,7 @@
     "pack": "Global Hits 1950-2026",
     "version": "1.0.0",
     "description": "254 ikonische Songs aus 7 Jahrzehnten globaler Popkultur",
-    "songCount": 254,
+    "songCount": 216,
     "lyricsStatus": "pending – Lyrics werden über das Admin-Tool manuell eingetragen"
   },
   "songs": [
@@ -3726,43 +3726,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "ben-e-king-stand-by-me-1961",
-      "title": "Stand by Me",
-      "artist": "Ben E. King",
-      "year": 1961,
-      "country": "US",
-      "genre": "Soul",
-      "difficulty": "easy",
-      "mood": [
-        "Feel-Good",
-        "Nostalgic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "acker-bilk-stranger-on-the-shore-1962",
       "title": "Stranger on the Shore",
       "artist": "Acker Bilk",
@@ -4132,43 +4095,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "the-rolling-stones-i-cant-get-no-satisfaction-1965",
-      "title": "(I Can't Get No) Satisfaction",
-      "artist": "The Rolling Stones",
-      "year": 1965,
-      "country": "GB",
-      "genre": "Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Party Anthem",
-        "Rebellious"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "the-beatles-help-1965",
       "title": "Help!",
       "artist": "The Beatles",
@@ -4176,43 +4102,6 @@
       "country": "GB",
       "genre": "Rock",
       "difficulty": "easy",
-      "mood": [
-        "Feel-Good",
-        "Nostalgic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "the-beach-boys-good-vibrations-1966",
-      "title": "Good Vibrations",
-      "artist": "The Beach Boys",
-      "year": 1966,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "medium",
       "mood": [
         "Feel-Good",
         "Nostalgic"
@@ -4465,43 +4354,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "otis-redding-sittin-on-the-dock-of-the-bay-1968",
-      "title": "(Sittin' On) The Dock of the Bay",
-      "artist": "Otis Redding",
-      "year": 1968,
-      "country": "US",
-      "genre": "Soul",
-      "difficulty": "easy",
-      "mood": [
-        "Nostalgic",
-        "Melancholic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "the-archies-sugar-sugar-1969",
       "title": "Sugar, Sugar",
       "artist": "The Archies",
@@ -4539,43 +4391,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "elvis-presley-suspicious-minds-1969",
-      "title": "Suspicious Minds",
-      "artist": "Elvis Presley",
-      "year": 1969,
-      "country": "US",
-      "genre": "Rock",
-      "difficulty": "medium",
-      "mood": [
-        "Emotional",
-        "Nostalgic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "fifth-dimension-aquariuslet-the-sunshine-in-1969",
       "title": "Aquarius/Let the Sunshine In",
       "artist": "Fifth Dimension",
@@ -4585,80 +4400,6 @@
       "difficulty": "hard",
       "mood": [
         "Feel-Good",
-        "Nostalgic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "simon-bridge-over-troubled-water-1970",
-      "title": "Bridge over Troubled Water",
-      "artist": "Simon & Garfunkel",
-      "year": 1970,
-      "country": "US",
-      "genre": "Folk Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Emotional",
-        "Nostalgic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "the-beatles-let-it-be-1970",
-      "title": "Let It Be",
-      "artist": "The Beatles",
-      "year": 1970,
-      "country": "GB",
-      "genre": "Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Emotional",
         "Nostalgic"
       ],
       "pack": "Global Hits 1950-2026",
@@ -5279,43 +5020,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "wild-cherry-play-that-funky-music-1976",
-      "title": "Play That Funky Music",
-      "artist": "Wild Cherry",
-      "year": 1976,
-      "country": "US",
-      "genre": "Funk R&B",
-      "difficulty": "medium",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": true,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "bee-gees-how-deep-is-your-love-1977",
       "title": "How Deep Is Your Love",
       "artist": "Bee Gees",
@@ -5326,80 +5030,6 @@
       "mood": [
         "Romantic",
         "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "donna-summer-i-feel-love-1977",
-      "title": "I Feel Love",
-      "artist": "Donna Summer",
-      "year": 1977,
-      "country": "US",
-      "genre": "Disco Electronic",
-      "difficulty": "medium",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "fleetwood-mac-dreams-1977",
-      "title": "Dreams",
-      "artist": "Fleetwood Mac",
-      "year": 1977,
-      "country": "US",
-      "genre": "Rock Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Nostalgic",
-        "Feel-Good"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -5575,43 +5205,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "blondie-heart-of-glass-1979",
-      "title": "Heart of Glass",
-      "artist": "Blondie",
-      "year": 1979,
-      "country": "US",
-      "genre": "New Wave Disco",
-      "difficulty": "medium",
-      "mood": [
-        "Dance Floor",
-        "Feel-Good"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "pink-floyd-another-brick-in-the-wall-part-2-1979",
       "title": "Another Brick in the Wall (Part 2)",
       "artist": "Pink Floyd",
@@ -5723,43 +5316,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "kim-carnes-bette-davis-eyes-1981",
-      "title": "Bette Davis Eyes",
-      "artist": "Kim Carnes",
-      "year": 1981,
-      "country": "US",
-      "genre": "Pop Rock",
-      "difficulty": "medium",
-      "mood": [
-        "Nostalgic",
-        "Feel-Good"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "lionel-richie-endless-love-1981",
       "title": "Endless Love",
       "artist": "Lionel Richie & Diana Ross",
@@ -5769,43 +5325,6 @@
       "difficulty": "medium",
       "mood": [
         "Romantic",
-        "Emotional"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "soft-cell-tainted-love-1981",
-      "title": "Tainted Love",
-      "artist": "Soft Cell",
-      "year": 1981,
-      "country": "GB",
-      "genre": "Synth-Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Dance Floor",
         "Emotional"
       ],
       "pack": "Global Hits 1950-2026",
@@ -5871,43 +5390,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "survivor-eye-of-the-tiger-1982",
-      "title": "Eye of the Tiger",
-      "artist": "Survivor",
-      "year": 1982,
-      "country": "US",
-      "genre": "Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Pump-Up",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "paul-mccartney-ebony-and-ivory-1982",
       "title": "Ebony and Ivory",
       "artist": "Paul McCartney & Stevie Wonder",
@@ -5945,117 +5427,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "michael-jackson-billie-jean-1983",
-      "title": "Billie Jean",
-      "artist": "Michael Jackson",
-      "year": 1983,
-      "country": "US",
-      "genre": "Pop R&B",
-      "difficulty": "easy",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "the-police-every-breath-you-take-1983",
-      "title": "Every Breath You Take",
-      "artist": "The Police",
-      "year": 1983,
-      "country": "GB",
-      "genre": "Pop Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Romantic",
-        "Emotional"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "irene-cara-flashdance-what-a-feeling-1983",
-      "title": "Flashdance... What a Feeling",
-      "artist": "Irene Cara",
-      "year": 1983,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Empowerment",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "prince-when-doves-cry-1984",
       "title": "When Doves Cry",
       "artist": "Prince",
@@ -6066,43 +5437,6 @@
       "mood": [
         "Emotional",
         "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "tina-turner-whats-love-got-to-do-with-it-1984",
-      "title": "What's Love Got to Do with It",
-      "artist": "Tina Turner",
-      "year": 1984,
-      "country": "US",
-      "genre": "Pop R&B",
-      "difficulty": "easy",
-      "mood": [
-        "Empowerment",
-        "Party Anthem"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -6204,43 +5538,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "dire-straits-money-for-nothing-1985",
-      "title": "Money for Nothing",
-      "artist": "Dire Straits",
-      "year": 1985,
-      "country": "GB",
-      "genre": "Rock",
-      "difficulty": "medium",
-      "mood": [
-        "Party Anthem",
-        "Nostalgic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "whitney-houston-greatest-love-of-all-1986",
       "title": "Greatest Love of All",
       "artist": "Whitney Houston",
@@ -6251,43 +5548,6 @@
       "mood": [
         "Empowerment",
         "Emotional"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "berlin-take-my-breath-away-1986",
-      "title": "Take My Breath Away",
-      "artist": "Berlin",
-      "year": 1986,
-      "country": "US",
-      "genre": "Synth-Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Romantic",
-        "Nostalgic"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -6362,80 +5622,6 @@
       "mood": [
         "Party Anthem",
         "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "whitney-houston-i-wanna-dance-with-somebody-1987",
-      "title": "I Wanna Dance with Somebody",
-      "artist": "Whitney Houston",
-      "year": 1987,
-      "country": "US",
-      "genre": "Pop Dance",
-      "difficulty": "easy",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "rick-astley-never-gonna-give-you-up-1987",
-      "title": "Never Gonna Give You Up",
-      "artist": "Rick Astley",
-      "year": 1987,
-      "country": "GB",
-      "genre": "Pop Dance",
-      "difficulty": "easy",
-      "mood": [
-        "Feel-Good",
-        "Fun"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -6722,43 +5908,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "mc-hammer-u-cant-touch-this-1990",
-      "title": "U Can't Touch This",
-      "artist": "MC Hammer",
-      "year": 1990,
-      "country": "US",
-      "genre": "Hip-Hop",
-      "difficulty": "easy",
-      "mood": [
-        "Party Anthem",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "bryan-adams-everything-i-do-i-do-it-for-you-1991",
       "title": "(Everything I Do) I Do It for You",
       "artist": "Bryan Adams",
@@ -6880,43 +6029,6 @@
       "mood": [
         "Party Anthem",
         "Fun"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "meat-loaf-id-do-anything-for-love-but-i-wont-do-that-1993",
-      "title": "I'd Do Anything for Love (But I Won't Do That)",
-      "artist": "Meat Loaf",
-      "year": 1993,
-      "country": "US",
-      "genre": "Rock",
-      "difficulty": "easy",
-      "mood": [
-        "Romantic",
-        "Emotional"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -7101,43 +6213,6 @@
       "difficulty": "easy",
       "mood": [
         "Romantic",
-        "Emotional"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "coolio-gangstas-paradise-1995",
-      "title": "Gangsta's Paradise",
-      "artist": "Coolio",
-      "year": 1995,
-      "country": "US",
-      "genre": "Hip-Hop",
-      "difficulty": "easy",
-      "mood": [
-        "Nostalgic",
         "Emotional"
       ],
       "pack": "Global Hits 1950-2026",
@@ -7388,43 +6463,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "aqua-barbie-girl-1997",
-      "title": "Barbie Girl",
-      "artist": "Aqua",
-      "year": 1997,
-      "country": "DK",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Fun",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "celine-dion-my-heart-will-go-on-1998",
       "title": "My Heart Will Go On",
       "artist": "Celine Dion",
@@ -7472,43 +6510,6 @@
       "mood": [
         "Heartbreak",
         "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "cher-believe-1998",
-      "title": "Believe",
-      "artist": "Cher",
-      "year": 1998,
-      "country": "US",
-      "genre": "Pop Dance",
-      "difficulty": "easy",
-      "mood": [
-        "Empowerment",
-        "Dance Floor"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -7721,80 +6722,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "kylie-minogue-cant-get-you-out-of-my-head-2001",
-      "title": "Can't Get You Out of My Head",
-      "artist": "Kylie Minogue",
-      "year": 2001,
-      "country": "AU",
-      "genre": "Pop Dance",
-      "difficulty": "easy",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "alicia-keys-fallin-2001",
-      "title": "Fallin'",
-      "artist": "Alicia Keys",
-      "year": 2001,
-      "country": "US",
-      "genre": "R&B Soul",
-      "difficulty": "easy",
-      "mood": [
-        "Emotional",
-        "Romantic"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "lifehouse-hanging-by-a-moment-2001",
       "title": "Hanging by a Moment",
       "artist": "Lifehouse",
@@ -7873,43 +6800,6 @@
       "title": "Hot in Herre",
       "artist": "Nelly",
       "year": 2002,
-      "country": "US",
-      "genre": "Hip-Hop",
-      "difficulty": "easy",
-      "mood": [
-        "Party Anthem",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "50-cent-in-da-club-2003",
-      "title": "In Da Club",
-      "artist": "50 Cent",
-      "year": 2003,
       "country": "US",
       "genre": "Hip-Hop",
       "difficulty": "easy",
@@ -8138,43 +7028,6 @@
       "mood": [
         "Romantic",
         "Emotional"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "madonna-hung-up-2005",
-      "title": "Hung Up",
-      "artist": "Madonna",
-      "year": 2005,
-      "country": "US",
-      "genre": "Pop Dance",
-      "difficulty": "medium",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -8498,43 +7351,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "black-eyed-peas-i-gotta-feeling-2009",
-      "title": "I Gotta Feeling",
-      "artist": "Black Eyed Peas",
-      "year": 2009,
-      "country": "US",
-      "genre": "Pop Dance",
-      "difficulty": "easy",
-      "mood": [
-        "Party Anthem",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "lady-gaga-poker-face-2009",
       "title": "Poker Face",
       "artist": "Lady Gaga",
@@ -8656,80 +7472,6 @@
       "mood": [
         "Emotional",
         "Heartbreak"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "lmfao-party-rock-anthem-2011",
-      "title": "Party Rock Anthem",
-      "artist": "LMFAO",
-      "year": 2011,
-      "country": "US",
-      "genre": "Electronic Hip-Hop",
-      "difficulty": "easy",
-      "mood": [
-        "Party Anthem",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": true,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "maroon-5-moves-like-jagger-2011",
-      "title": "Moves Like Jagger",
-      "artist": "Maroon 5 feat. Christina Aguilera",
-      "year": 2011,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Dance Floor",
-        "Party Anthem"
       ],
       "pack": "Global Hits 1950-2026",
       "hints": [
@@ -9127,43 +7869,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "drake-gods-plan-2018",
-      "title": "God's Plan",
-      "artist": "Drake",
-      "year": 2018,
-      "country": "CA",
-      "genre": "Hip-Hop",
-      "difficulty": "easy",
-      "mood": [
-        "Feel-Good",
-        "Empowerment"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "maroon-5-girls-like-you-2018",
       "title": "Girls Like You",
       "artist": "Maroon 5",
@@ -9312,80 +8017,6 @@
       "isQRCompatible": false
     },
     {
-      "id": "the-kid-laroi-stay-2021",
-      "title": "STAY",
-      "artist": "The Kid LAROI & Justin Bieber",
-      "year": 2021,
-      "country": "AU",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Heartbreak",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "ed-sheeran-bad-habits-2021",
-      "title": "Bad Habits",
-      "artist": "Ed Sheeran",
-      "year": 2021,
-      "country": "GB",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Party Anthem",
-        "Dance Floor"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
       "id": "taylor-swift-cruel-summer-2023",
       "title": "Cruel Summer",
       "artist": "Taylor Swift",
@@ -9506,43 +8137,6 @@
       "difficulty": "easy",
       "mood": [
         "Party Anthem",
-        "Feel-Good"
-      ],
-      "pack": "Global Hits 1950-2026",
-      "hints": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "hintEvidence": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": ""
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false
-    },
-    {
-      "id": "sabrina-carpenter-espresso-2024",
-      "title": "Espresso",
-      "artist": "Sabrina Carpenter",
-      "year": 2024,
-      "country": "US",
-      "genre": "Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Dance Floor",
         "Feel-Good"
       ],
       "pack": "Global Hits 1950-2026",
