@@ -20,11 +20,25 @@ interface MusicPlayerProps {
   className?: string;
 }
 
+
+interface YTPlayerInstance {
+  playVideo: () => void;
+  pauseVideo: () => void;
+  getCurrentTime: () => number;
+  getPlayerState: () => number;
+  destroy: () => void;
+}
+
+interface YTPlayerEvent {
+  target: YTPlayerInstance;
+  data: number;
+}
+
 declare global {
   interface Window {
     onYouTubeIframeAPIReady: () => void;
     YT: {
-      Player: any;
+      Player: new (element: HTMLElement, options: Record<string, unknown>) => YTPlayerInstance;
       PlayerState: {
         UNSTARTED: number;
         PLAYING: number;
@@ -55,7 +69,7 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
     preferredPlayer === 'music' ? 'music.youtube.com' : 'www.youtube.com'
   );
 
-  const playerRef = useRef<any>(null);
+  const playerRef = useRef<YTPlayerInstance | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const endCheckRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const videoId = useMemo(() => extractYouTubeId(youtubeLink), [youtubeLink]);
@@ -115,7 +129,7 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
           host: `https://${activeDomain}`
         },
         events: {
-          onReady: (event: any) => {
+          onReady: (event: YTPlayerEvent) => {
             setPlayerState('playing');
             event.target.playVideo();
             
@@ -131,11 +145,11 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
               }, 500);
             }
           },
-          onError: (event: any) => {
+          onError: (event: YTPlayerEvent) => {
             console.warn('❌ YouTube IFrame Error:', event.data);
             handleError();
           },
-          onStateChange: (event: any) => {
+          onStateChange: (event: YTPlayerEvent) => {
             if (event.data === (window.YT?.PlayerState?.UNSTARTED ?? -1)) {
               // Timeout to check if it ever starts
               setTimeout(() => {
@@ -169,7 +183,7 @@ export function MusicPlayer({ youtubeLink, startSeconds = 0, endSeconds, blurred
       if (endCheckRef.current) { clearInterval(endCheckRef.current); endCheckRef.current = null; }
       if (skipTimerRef.current) { clearInterval(skipTimerRef.current); skipTimerRef.current = null; }
       if (playerRef.current) {
-        try { playerRef.current.destroy(); } catch(e) {}
+        try { playerRef.current.destroy(); } catch { /* noop */ }
       }
     };
   }, [videoId, activeDomain, startSeconds, endSeconds, handleError, playerState]);

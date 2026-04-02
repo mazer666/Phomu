@@ -137,7 +137,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     if (timelineYears.length === 0) {
       initTimeline(randomInitialYears(3));
     }
-  }, []);
+  }, [initTimeline, timelineYears.length]);
 
   const validSlotSet = useMemo(
     () => getValidSlots(song.year, timelineYears),
