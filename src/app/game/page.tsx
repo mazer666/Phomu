@@ -67,16 +67,11 @@ export default function GamePage() {
   } = useGameStore();
 
   const [showScoreboard, setShowScoreboard] = useState(false);
-  const [now, setNow] = useState(0);
+  const [now, setNow] = useState(() => Date.now());
   const [isRerolling, setIsRerolling] = useState(false);
-  const [lastAnswerCount, setLastAnswerCount] = useState(0);
   const [lastRoundBannerMsg, setLastRoundBannerMsg] = useState<LastRoundMessage | null>(null);
   const lastRoundBannerShown = useRef(false);
 
-  // Initialisiere 'now' nur auf dem Client
-  useEffect(() => {
-    setNow(Date.now());
-  }, []);
 
   // ── Zeit-Updater für Progress-Bar ─────────────────────────────
   useEffect(() => {
@@ -243,12 +238,6 @@ export default function GamePage() {
     }, 2000);
   }, [skipBrokenSong]);
 
-  // ── Feedback Trigger (bei neuer Antwort) ──────────────────────
-  useEffect(() => {
-    if (currentAnswers.length > lastAnswerCount) {
-      setLastAnswerCount(currentAnswers.length);
-    }
-  }, [currentAnswers.length, lastAnswerCount]);
 
   const lastAnswer = currentAnswers[currentAnswers.length - 1];
 
@@ -292,7 +281,7 @@ export default function GamePage() {
       {/* Juicy Overlays */}
       <FeedbackOverlay
         isCorrect={lastAnswer?.isCorrect ?? null}
-        triggerKey={lastAnswerCount}
+        triggerKey={currentAnswers.length}
       />
       <DiceAnimation isVisible={isRerolling} />
       <LastRoundBanner

@@ -52,7 +52,6 @@ export default function BrowsePage() {
   const startQuickGame = useGameStore((state) => state.startQuickGame);
 
   const [allSongs, setAllSongs] = useState<PhomuSong[]>(loadSongs);
-  const [mounted, setMounted] = useState(false);
   const [adminMode, setAdminMode] = useState(false);
   const [editingSong, setEditingSong] = useState<PhomuSong | null>(null);
   const [showHints, setShowHints] = useState(false);
@@ -75,14 +74,11 @@ export default function BrowsePage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState<number | 'all'>(24);
 
-  // Initiales Laden
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   // Reset page when filters change
   useEffect(() => {
-    setCurrentPage(1);
+    const timer = setTimeout(() => setCurrentPage(1), 0);
+    return () => clearTimeout(timer);
   }, [filters, sortBy, sortOrder, pageSize]);
 
   const genres = useMemo(() => getGenres(allSongs), [allSongs]);
@@ -165,8 +161,6 @@ export default function BrowsePage() {
     });
     setCurrentPage(1);
   };
-
-  if (!mounted) return null;
 
   return (
     <div className="min-h-screen bg-[#0a0a0c] text-white flex flex-col">
