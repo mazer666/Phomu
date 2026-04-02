@@ -71,7 +71,7 @@ Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (L
 - **Teststrategie (QA-Update):** `specifications/test_strategy.md`
 - **Security-Policy (überarbeitet):** `SECURITY.md`
 - **UX/Security Verbesserungsplan:** `specifications/improvement_plan_mobile_ux_security.md`
-- **Archiv (historische Dokumentstände):** `specifications/archive/`
+- **Archiv (historische Dokumentstände):** `specifications/archive/` (inkl. archivierter Strategie- und Snapshot-Dokumente mit Datumsstempel im Dateinamen)
 
 ---
 
