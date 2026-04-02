@@ -485,6 +485,7 @@ export default function AdminReviewPage() {
       })),
     };
 
+    // eslint-disable-next-line react-hooks/purity
     downloadJson(exportData, `phomu-delta-${Date.now()}.json`);
   }
 
@@ -516,6 +517,7 @@ export default function AdminReviewPage() {
       },
       songs: mergedSongs,
     };
+    // eslint-disable-next-line react-hooks/purity
     downloadJson(exportData, `phomu-all-songs-${Date.now()}.json`);
   }
 
