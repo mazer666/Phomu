@@ -9,6 +9,7 @@ Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (L
 - **Modi:** 6 aktiv im Game-Flow.
 - **Packs:** 27 Packs / 1.915 Songs im Katalog.
 - **Build / Typecheck / Tests:** grün.
+- **Admin-API-Security:** Bearer-Token-Guard (`x-admin-token` via `ADMIN_API_TOKEN`) + Input-/URL-Validierung für Cover-Endpoints.
 - **Bekannte Quality-Gaps:** viele Lint-Warnungen, Katalog-Duplikate, fehlende Jahresabdeckung 1952/2025/2026.
 
 ---
@@ -59,7 +60,7 @@ Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (L
 ### Größte offene Risiken
 - Lint-Warnungen (React-Hooks/Purity und `any`-Typen).
 - Katalogqualität (Duplikate + Jahrgangslücken + hohe Warnungsmenge).
-- Security-Hardening (Headers, API-Guardrails, Admin-Endpunkte härten).
+- Security-Hardening: wichtige Admin-API-Guardrails umgesetzt; nächste Schritte: CSP/Headers auf finalem Host und Rate-Limiting an Edge/Proxy.
 
 ---
 
@@ -83,6 +84,14 @@ npm run dev
 ```
 
 Wichtige Checks:
+
+Zusätzlich für Admin-Endpoints:
+
+```bash
+cp .env.example .env.local
+# ADMIN_API_TOKEN setzen
+```
+
 
 ```bash
 npm run typecheck

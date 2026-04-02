@@ -27,7 +27,15 @@ Aktualisiert: 2. April 2026
 ## 3.3 Daten & Secrets
 - Secrets nur via Environment/Secret-Manager
 - Kein Persistieren von Access-Tokens im Klartext
+- PATs/Access-Tokens niemals in Chat/Issues/Commits posten; bei Leak sofort widerrufen
 - Regelmäßige Dependency-Audits
+
+
+## 3.4 Bereits umgesetzt (Stabilisierung + Security-Baseline)
+- Admin-Cover-APIs sind per `x-admin-token` + `ADMIN_API_TOKEN` geschützt (401/503 bei fehlender Auth/Config).
+- Strikte Input-Validation für `artist`, `title`, `songId` und `imageUrl`.
+- Nur HTTPS und Allowlist für externe Cover-Hosts (`mzstatic.com`, `dzcdn.net`).
+- Externe Requests mit Timeout, Response-Typ-Prüfung und Bildgrößenlimit (5 MB).
 
 ## 4) Security-Verifikation
 - CI-Pflichtchecks:
