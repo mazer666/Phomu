@@ -103,6 +103,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true, coverUrl: relativePath });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Save cover failed';
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
