@@ -22,7 +22,7 @@ const youtubeUrlFromSong = (song) => {
   return '';
 };
 
-let csvContent = 'Pack;Artist;Track;Year;YouTube Link;Hints;Genre;Vibe\n';
+let csvContent = 'Pack;Artist;Track;Year;YouTube Link;Spotify Link;Amazon Music Link;Hints;Genre;Vibe\n';
 
 files.forEach((file) => {
   const filePath = path.join(packsDir, file);
@@ -46,7 +46,10 @@ files.forEach((file) => {
         ? song.mood.join(' | ')
         : (song.vibe || '');
 
-      csvContent += `"${escapeCsv(packName)}";"${escapeCsv(song.artist)}";"${escapeCsv(song.title)}";"${escapeCsv(song.year)}";"${escapeCsv(youtubeUrlFromSong(song))}";"${escapeCsv(hints)}";"${escapeCsv(song.genre)}";"${escapeCsv(vibe)}"\n`;
+      const spotifyLink = song.links?.spotify || '';
+      const amazonMusicLink = song.links?.amazonMusic || '';
+
+      csvContent += `"${escapeCsv(packName)}";"${escapeCsv(song.artist)}";"${escapeCsv(song.title)}";"${escapeCsv(song.year)}";"${escapeCsv(youtubeUrlFromSong(song))}";"${escapeCsv(spotifyLink)}";"${escapeCsv(amazonMusicLink)}";"${escapeCsv(hints)}";"${escapeCsv(song.genre)}";"${escapeCsv(vibe)}"\n`;
     });
   } catch (error) {
     console.error(`Fehler beim Lesen von ${file}:`, error.message);

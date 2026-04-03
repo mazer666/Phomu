@@ -20,7 +20,7 @@
       ],
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
-        "Ursprünglich als Trost für John Lennons Sohn Julian ('Jules') geschrieben.",
+        "Ursprünglich als Trost für Lennons Sohn Julian geschrieben.",
         "Der Song ist mit über 7 Minuten einer der längsten Nummer-1-Hits jener Ära.",
         "Bekannt für das über vierminütige 'Na na na na'-Outro.",
         "Paul McCartney übernahm hier den Hauptgesang.",
@@ -32,7 +32,10 @@
           "Remember to let her into your heart, then you can start to make it better",
           "Better better better better better, waaaaa!"
         ],
-        "fake": "Dancing in the light, feeling so right, all through the night"
+        "fake": [
+          "Don't feel sad, just live up, to your dreams",
+          "Take a bad boot and fill it up with your love"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -64,10 +67,10 @@
       ],
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
-        "Keith Richards wachte nachts auf, nahm das Riff auf und schlief wieder ein.",
+        "Der Gitarist der Band wachte nachts auf, nahm das Riff auf und schlief wieder ein.",
         "Das Fuzz-Gitarren-Riff ist eines der bekanntesten der Welt.",
         "Handelt von Frustration über Kommerz und die moderne Gesellschaft.",
-        "Mick Jaggers Gesang und Performance zementierten den Status der Band als 'Anti-Beatles'.",
+        "Der Sänger und Performance zementierten den Status der Band als 'Anti-Beatles'.",
         "Refrain: 'I [XXX] get no [XXX]!'"
       ],
       "lyrics": {
@@ -76,7 +79,11 @@
           "Cause I try, and I try, and I try, and I try",
           "I can't get no, I can't get no!"
         ],
-        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+        "fake": [
+          "Oh, ho, I forget no! I forget no!",
+          "Cause you fry, and I cry and I cry and I cry"
+      ]
+
       },
       "isOneHitWonder": false,
       "links": {
@@ -108,7 +115,7 @@
       ],
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
-        "Markierte das große Comeback des 'King of Rock 'n' Roll' in den späten 60ern.",
+        "Markierte das große Comeback des Sängers in den späten 60ern.",
         "Handelt von Misstrauen und der Unfähigkeit, eine Beziehung zu retten.",
         "Bekannt für das markante 'Fade-out' und 'Fade-in' am Ende des Songs.",
         "[XXX] trug bei den Auftritten oft seine berühmten Jumpsuits.",
@@ -120,7 +127,10 @@
           "Why can't you see what you're doing to me, when you don't believe a word I say?",
           "We can't go on together with suspicious minds"
         ],
-        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+        "fake": [
+          "We fought our crap. You didn't forget, because you never cared",
+          "We must hold together as we were one child"
+          ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -154,7 +164,7 @@
       "hints": [
         "Wurde zur Hochzeit von König Carl XVI. Gustaf von Schweden uraufgeführt.",
         "Ein absolutes Meisterwerk des schwedischen Kompositions-Duos Benny & Björn.",
-        "Der einzige [XXX]-Song, der in den USA Platz 1 erreichte.",
+        "Der einzige ihrer Songs, der in den USA Platz 1 erreichte.",
         "Verbindet Disco-Beats mit glockenharem Pop-Gesang.",
         "Refrain: 'You are the [XXX] [XXX], young and sweet, only seventeen!'"
       ],
@@ -164,7 +174,12 @@
           "See that girl, watch that scene, digging the dancing queen",
           "Friday night and the lights are low, looking out for a place to go"
         ],
-        "fake": "Dancing in the stars, playing my guitars, until the morning bars"
+        "fake": [
+          "Saturday lights and you are bright and flow, fading on a stair to show",
+          "Kiss the girl, stare into the lights, glowing, becoming the dancing queen"
+          "Loving you, missing you, driving fully insane"
+          "Like the wind, as you are, a shooting star"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -197,10 +212,10 @@
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
         "Inbegriff der Disco-Ära durch den Film 'Saturday Night Fever'.",
-        "Bekannt für den extrem hohen Falsett-Gesang der Gibb-Brüder.",
+        "Bekannt für den extrem hohen Falsett-Gesang der berühmten Brüder.",
         "Der Rhythmus entspricht fast exakt 103 Beats pro Minute (perfekt für Herzdruckmassage).",
         "Thematisiert das nackte Überleben im harten New York der 70er.",
-        "Das Video zeigt die Brüder, wie sie lässig durch eine Häuserschlucht spazieren."
+        "Das Video zeigt die Gibb-Brüder, wie sie lässig durch eine Häuserschlucht spazieren."
       ],
       "lyrics": {
         "real": [
@@ -208,7 +223,10 @@
           "Music loud and women warm, I've been kicked around since I was born",
           "Stayin' alive, stayin' alive, ah ha ha ha, stayin' alive"
         ],
-        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+        "fake": [
+          "Nothing's gonna stop me now, I'm king of the town somehow",
+          "Uh, uh, ah, praying for life, ah, uh, ha"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -252,7 +270,11 @@
           "When she gets there she knows, if the stores are all closed, with a word she can get what she came for",
           "And it makes me wonder..."
         ],
-        "fake": "Walking down the silver path under the dragon's wrath tonight"
+        "fake": [
+          "Walking down the silver path under the dragon's wrath up to the sky",
+          "Where she gets the gold, and the stores are not closed",
+          "And I am afraid..."
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -296,7 +318,10 @@
           "Can you tell a green field from a cold steel rail? A smile from a veil?",
           "How I wish, how I wish you were here"
         ],
-        "fake": "Staring at the wall, waiting for the fall of the silent rain"
+        "fake": [
+        "Staring at the wall, waiting for the fall of the silent rain",
+        "Can you see a purple sky? A rainbow that wants to cry?"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -329,7 +354,7 @@
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
         "Stammt vom legendären Album 'Rumours', das während heftiger bandinterner Trennungen entstand.",
-        "Stevie Nicks schrieb den Text in nur 10 Minuten in einem kleinen Nebenraum im Studio.",
+        "Der Text wurde in nur 10 Minuten in einem kleinen Nebenraum im Studio geschrieben.",
         "Bekannt für den schwebenden, zweistimmigen Basslauf und die ätherische Atmosphäre.",
         "Erlebte ein massives Revival durch ein virales TikTok-Video mit Cranberry-Saft.",
         "Refrain: 'Thunder only happens when it's raining!'"
@@ -340,7 +365,10 @@
           "Thunder only happens when it's raining, players only love you when they're playing",
           "Say, women, they will come and they will go"
         ],
-        "fake": "In the middle of the night, we're looking for the light of our love"
+        "fake": [
+          "Now you kick it low, you stay for Joe, well who do you think you are",
+          "Lightning only strikes, on the fields of love, playing for a change of hearts"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -373,8 +401,8 @@
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
         "Wurde zeitgleich mit der ersten Mondlandung (Apollo 11) veröffentlicht.",
-        "Erzählt die Geschichte von Major Tom, einem Astronauten, der den Kontakt zur Erde verliert.",
-        "[XXX] erfand hiermit die Kunstfigur, die seine Karriere maßgeblich prägte.",
+        "Erzählt die Geschichte von einem Astronauten, der den Kontakt zur Erde verliert.",
+        "Der Star erfand hiermit die Kunstfigur, die seine Karriere maßgeblich prägte.",
         "Besitzt einen ikonischen 'Countdown' zu Beginn des Songs.",
         "Refrain: 'Ground Control to Major Tom! Your circuit's dead, there's something wrong!'"
       ],
@@ -384,7 +412,11 @@
           "Check ignition and may God's love be with you",
           "This is Ground Control to Major Tom, you've really made the grade"
         ],
-        "fake": "Flying to the sun, we're having so much fun with no one"
+        "fake": [
+        "Flying to the sun, we're love to have so much fun with no one",
+        "Fuel up, and pray to moon, so we will be there soon",
+        "This is Agent Bravo to Major Tom, your signal is weak, shouldn't we meet?"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -417,7 +449,7 @@
       "pack": "60s & 70s Soul & Rock Legends",
       "hints": [
         "Die wohl berühmteste Klavier-Ballade der US-Folk-Geschichte.",
-        "Besticht durch den unglaublichen Gesang von Art [XXX].",
+        "Besticht durch den unglaublichen Gesang von Art.",
         "Wurde zu einer Hymne für Beistand und Hilfe in schwierigen Zeiten.",
         "Gewann fünf Grammys im Jahr 1971.",
         "Refrain: 'Like a [XXX] [XXX] [XXX] [XXX], I will lay me down!'"
@@ -428,7 +460,11 @@
           "I'm on your side when times get rough and friends just can't be found",
           "Like a bridge over troubled water, I will lay me down"
         ],
-        "fake": "In the middle of the island, we're looking for the silent sun"
+        "fake": [
+          "In the middle of the island, we're looking for the silent sun",
+          "I will dry them all, with my empty hands",
+          "Like a fridge in the winter sun, I will feed you all"
+      ]
       },
       "isOneHitWonder": false,
       "links": {

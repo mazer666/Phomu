@@ -23,7 +23,7 @@
         "Dieses Musikvideo nutzte eine revolutionäre Bleistift-Skizzen-Animation (Rotoskopie).",
         "Die Band stammt ursprünglich aus Norwegen.",
         "Der Song ist bekannt für einen der höchsten Falsett-Töne der Popgeschichte.",
-        "Im Refrain singt der Sänger über das Akzeptieren einer Einladung: '[XXX] on me...'",
+        "Im Refrain singt der Sänger über das Akzeptieren einer Einladung.",
         "Der größte Hit von A-ha."
       ],
       "lyrics": {
@@ -32,7 +32,11 @@
           "I'll say it anyway, today's another day to find you",
           "Shying away, I'll be coming for your love, okay?"
         ],
-        "fake": "Walking the street, I'm feeling the heat of the neon light"
+        "fake": [
+          "Walking away, I can't stay without knowing what to say",
+          "I'll still pay, whatever bill to pay",
+          "Buying the car, I want to drive with you"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -120,7 +124,11 @@
           "Ain't no sound but the sound of his feet, machine guns ready to go",
           "Are you ready, hey, are you ready for this? Are you hanging on the edge of your seat?"
         ],
-        "fake": "Running through the fire, higher than the wire, feel the heat"
+        "fake": [
+          "Frankie leaps from his chair with his hat and the cat",
+          "Ain't no hound, no dog, no cat, no mouse, no rat",
+          "Are you greedy, yeah, are you wating for more? Are you stepping just on the floor?"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -153,7 +161,7 @@
       "pack": "80s Flashback",
       "hints": [
         "Wurde ursprünglich von einem Mann (Robert Hazard) geschrieben, aber aus weiblicher Perspektive zum Hit.",
-        "Gilt als eine der wichtigsten Hymnen des Feminismus in der Popmusik.",
+        "Gilt als eine der wichtigsten Hymnen des Feminismus in der Popmusik der 80er Jahre.",
         "Das Video zeigt die Sängerin in extrem bunten Kleidern und mit wildem Haar.",
         "Der Refrain betont, dass Mädchen einfach nur Spaß haben wollen.",
         "Debüt-Single dieser US-Sängerin mit der markanten Stimme."
@@ -164,7 +172,10 @@
           "Oh mother dear, we're not the fortunate ones, and girls they want to have fun",
           "The phone rings in the middle of the night, my father yells: What you gonna do with your life?"
         ],
-        "fake": "Dancing all alone in the neon light, until the sun comes rising bright"
+        "fake": [
+        "I didn't just get home, and my boyfried says: Are you ready to spend all your life?",
+        "Oh father dear, you think you are smart, and I am here just for the fun"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -208,7 +219,11 @@
           "She took the midnight train goin' anywhere",
           "A singer in a smoky room, the smell of wine and cheap perfume"
         ],
-        "fake": "He dreams of a life in the big city lights, working the nights"
+        "fake": [
+          "Fast as a small car with lights, chargin' on the highway",
+          "It took all the coins, just to take all the trash",
+          "A painter on a rainy day, with the hell of a view"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -252,7 +267,11 @@
           "Gina works the diner all day, working for her man",
           "She says: We've gotta hold on to what we've got"
         ],
-        "fake": "He dreams of a future where the sun don't shine no more"
+        "fake": [
+        "He dreams of a future where the sun don't shine no more",
+        "Tommy hits the gym, showing Gina what he prepares",
+        "They've gotta grow old togehter, so they stay strong"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -288,7 +307,7 @@
         "Wurde oft fälschlicherweise als Song über das Zeuge-Sein an einem Ertrinkungsunfall gedeutet.",
         "Der Song nutzt einen 'Gated Reverb' Sound auf den Drums, der den 80er Sound definierte.",
         "Wurde prominent in der ersten Folge von 'Miami Vice' eingesetzt.",
-        "Spürst du es auch schon? 'I can feel it coming in the [XXX] [XXX]...'"
+        "Spürst du es auch schon? 'I can feel it coming in the ...'"
       ],
       "lyrics": {
         "real": [
@@ -296,7 +315,10 @@
           "And I've been waiting for this moment, for all my life",
           "Well, if you told me you were drowning, I would not lend a hand"
         ],
-        "fake": "The moon is high and the tide is rising slow tonight"
+        "fake": [
+          "The moon is high and the tide is rising slow tonight",
+          "You need to feel it staying in a chain tonight"
+          ]
       },
       "isOneHitWonder": false,
       "links": {
