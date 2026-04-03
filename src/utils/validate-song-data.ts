@@ -165,8 +165,11 @@ export function validateSong(song: unknown): SongValidationResult {
       errors.push(err(songId, 'hints', `Falsche Anzahl Hints: ${hints.length} (erwartet: ${minHints}–${maxHints})`));
     }
     hints.forEach((h, i) => {
-      if (typeof h !== 'string' || (h as string).trim() === '') {
-        errors.push(err(songId, `hints[${i}]`, `Hint ${i + 1} ist leer oder kein String`));
+      if (typeof h !== 'string') {
+        errors.push(err(songId, `hints[${i}]`, `Hint ${i + 1} ist kein String`));
+      } else if ((h as string).trim() === '') {
+        // Leere Hints sind bei Stub-Songs akzeptiert – Warnung, kein Fehler
+        warnings.push(warn(songId, `hints[${i}]`, `Hint ${i + 1} ist leer – bitte ausfüllen`));
       }
     });
 
@@ -216,8 +219,10 @@ export function validateSong(song: unknown): SongValidationResult {
     errors.push(err(songId, 'links', 'Pflichtfeld fehlt: links-Objekt (mindestens links.youtube)'));
   } else {
     const youtube = links['youtube'];
-    if (!youtube || typeof youtube !== 'string') {
+    if (youtube === undefined || youtube === null) {
       errors.push(err(songId, 'links.youtube', 'Pflichtfeld fehlt: links.youtube (Video-ID oder URL)'));
+    } else if (typeof youtube !== 'string') {
+      errors.push(err(songId, 'links.youtube', 'links.youtube muss ein String sein'));
     } else if (isYoutubePlaceholder(youtube)) {
       // Platzhalter → Warnung, kein Fehler (ist in der Entwicklung OK)
       warnings.push(warn(songId, 'links.youtube', `YouTube-Link ist noch ein Platzhalter ("${youtube}") – bitte verifizieren`));
