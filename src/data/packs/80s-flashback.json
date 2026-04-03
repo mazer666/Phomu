@@ -2,7 +2,7 @@
   "meta": {
     "pack": "80s Flashback",
     "version": "1.0.0",
-    "updatedAt": "2026-04-03T22:03:45.648948"
+    "updatedAt": "2026-04-03T23:28:04.301915"
   },
   "songs": [
     {
@@ -376,7 +376,10 @@
           "I travel the world and the seven seas, everybody's looking for something",
           "Some of them want to use you, some of them want to get used by you"
         ],
-        "fake": "Moving through the shadows of the night, until the dawn comes bright"
+        "fake": [
+          "Some of them want to lose you, some of then want to get lost by you",
+          "You travel the world by the seven seas, so everyone is free to use you"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -412,7 +415,7 @@
       "hints": [
         "Markierte das unglaubliche Comeback der Sängerin in ihren 40ern.",
         "Der Song gewann drei Grammys, darunter Record of the Year.",
-        "[XXX] [XXX] mochte den Song anfangs gar nicht und hielt ihn für zu 'Pop-lastig'.",
+        "Die Sängerin mochte den Song anfangs gar nicht und hielt ihn für zu 'Pop-lastig'.",
         "Der Titel stellt die Frage, was Liebe eigentlich damit zu tun hat.",
         "Die 'Queen of Rock 'n' Roll' in ihrer ikonischen 80er-Ära."
       ],
@@ -422,7 +425,11 @@
           "That it's only the thrill of boy meeting girl, opposites attract",
           "What's love got to do, got to do with it? Who needs a heart when a heart can be broken?"
         ],
-        "fake": "Take a look at me now, there's nothing left but memories"
+        "fake": [
+          "Take a look at me now, there's nothing left but memories",
+          "This is only the chill of opposite attraction, I'm set on you",
+          "They need to know what love is, what love has to do with it"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -468,7 +475,11 @@
           "Every bond you break, every step you take, I'll be watching you",
           "Every single day, and every word you say, every game you play"
         ],
-        "fake": "Whenever you go, whatever you do, I will follow you"
+        "fake": [
+          "Whenever you go, whatever you do, I will follow you",
+          "Every though you're on, every hand you shake, I't be holding on",
+          "Every other night, and every other day, I'll be dreaming of you"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -502,11 +513,11 @@
       ],
       "pack": "80s Flashback",
       "hints": [
-        "Dieser Song wurde Jahre später zum berühmtesten Internet-Streich aller Zeiten ('[XXX]rolling').",
+        "Dieser Song wurde Jahre später zum berühmtesten Internet-Streich aller Zeiten.",
         "Produziert von dem Hit-Trio Stock Aitken Waterman.",
         "Der Sänger war erst 21 Jahre alt, als er diesen Hit mit seiner tiefen Bariton-Stimme aufnahm.",
         "Verspricht niemals aufzugeben, niemals zu enttäuschen.",
-        "Kein Phomu ohne dieses Meme: '[XXX] [XXX] [XXX] you up...'"
+        "Meme-Hook: '[XXX] [XXX] [XXX] you up...'"
       ],
       "lyrics": {
         "real": [
@@ -514,11 +525,17 @@
           "A full commitment's what I'm thinking of, you wouldn't get this from any other guy",
           "Never gonna give you up, never gonna let you down"
         ],
-        "fake": "I've been searching for a heart like yours throughout the night"
+        "fake": [
+          "I've been searching for a heart like yours, to draw it on my map",
+          "A complete vow is what I want from you, to join me on my way",
+          "Defying all the thoughs of giving up, I'm here to stay"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "dQw4w9WgXcQ"
+        "youtube": "dQw4w9WgXcQ",
+        "spotify": "4PTG3Z6ehGkBFwjybzWkR8",
+        "amazonMusic": "B0DZTSF3YS"
       },
       "coverUrl": "/covers/80s-rick-astley-never-gonna-give-you-up.jpg",
       "supportedModes": [
@@ -548,7 +565,7 @@
       "hints": [
         "In diesem Musikvideo leuchten die Bodenplatten unter den Füßen des Sängers auf.",
         "Der Song handelt von einer Frau, die behauptet, der Sänger sei der Vater ihres Sohnes.",
-        "Bei der Aufführung dieses Songs bei 'Motown 25' zeigte [XXX] zum ersten Mal den Moonwalk.",
+        "Bei der Aufführung dieses Songs bei 'Motown 25' zeigte der Sänger zum ersten Mal seinen ikonischen Walk.",
         "Das markante Schlagzeug-Intro wurde wochenlang abgemischt, bis es perfekt klang.",
         "Einer der erfolgreichsten Solo-Songs des 'King of Pop'."
       ],
@@ -558,11 +575,17 @@
           "But the kid is not my son",
           "She says I am the one, but the kid is not my son"
         ],
-        "fake": "Dancing in the hall, she's the one who's gonna make me fall"
+        "fake": [
+          "The one she claims that I am the one",
+          "The one who made her son",
+          "She says, she is the mother of my son, but I am not the only one"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "Zi_XLOBDo_Y"
+        "youtube": "Zi_XLOBDo_Y",
+        "spotify": "7J1uxwnxfQLu4APicE5Rnj",
+        "amazonMusic": "B00BPLGP02"
       },
       "coverUrl": "/covers/80s-michael-jackson-billie-jean.jpg",
       "supportedModes": [
@@ -602,11 +625,18 @@
           "Didn't know how lost I was until I found you",
           "Like a virgin, touched for the very first time"
         ],
-        "fake": "When the stars are shining bright, I will hold you through the night"
+        "fake": [
+          "I found the water, found the salt, and lived there after all",
+          "Didn't mind the pain, until I made you explain",
+          "Like a bird, who flew for the very first time",
+          "Like a girl, who grew up instantly with everything in mind"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "s__rX_WL100"
+        "youtube": "s__rX_WL100",
+        "spotify": "1ZPlNanZsJSPK5h9YZZFbZ",
+        "amazonMusic": "B00122FMC6"
       },
       "coverUrl": "/covers/80s-madonna-like-a-virgin.jpg",
       "supportedModes": [
@@ -646,11 +676,17 @@
           "Even while we sleep we will find you acting on your best behavior",
           "Turn your back on mother nature, everybody wants to rule the world"
         ],
-        "fake": "Open up your mind, let the light of day define the way"
+        "fake": [
+          "No turning 'round, no sound, so that it seems that no one found",
+          "Everyone is here to dip and behave like we were brave",
+          "Turning to the cityscape, ruling all the world, choosing to misbehave"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "aGCdLKXNF3w"
+        "youtube": "aGCdLKXNF3w",
+        "spotify": "4RvWPyQ5RL0ao9LPZeSouE",
+        "amazonMusic": "B00P1K51XA"
       },
       "coverUrl": "/covers/80s-tears-for-fears-everybody-wants-to-rule.jpg",
       "supportedModes": [
@@ -679,7 +715,7 @@
       "pack": "80s Flashback",
       "hints": [
         "Das Duo bestand aus George Michael und Andrew Ridgeley.",
-        "Der Titel entstand durch eine krakelige Notiz, die Andrew an George schrieb (Jitterbug!).",
+        "Der Titel entstand durch eine krakelige Notiz, die Andrew an George schrieb.",
         "Im Musikvideo tragen alle 'CHOOSE LIFE' T-Shirts.",
         "Beginnt mit dem ikonischen viermaligen Schnipsen und 'Jitterbug'.",
         "Eine der fröhlichsten Hymnen der 80er Jahre."
@@ -690,11 +726,17 @@
           "Jitterbug into my brain, goes a bang-bang-bang till my feet do the same",
           "Wake me up before you go-go, don't leave me hanging on like a solo"
         ],
-        "fake": "Sun is coming up and we're dancing till the light of day"
+        "fake": [
+          "Sun is coming up and we're dancing till the light of day",
+          "Jitterbug freezing your brain, drumming bang bang with your fingers",
+          "Staying up until the dawn, so you pretend to be drawn"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "pIgZ7gMze7A"
+        "youtube": "pIgZ7gMze7A",
+        "spotify": "0ikz6tENMONtK6qGkOrU3c",
+        "amazonMusic": "B00136RVDY"
       },
       "coverUrl": "/covers/80s-wham-wake-me-up-before-you-go-go.jpg",
       "supportedModes": [
@@ -726,7 +768,7 @@
         "Die Sängerin gewann damit 1988 den Grammy für die beste weibliche Pop-Vocal-Performance.",
         "Das Video zeigt die Sängerin in einer bunten Kulisse mit markanter Dauerwelle.",
         "Der Text drückt den Wunsch aus, jemanden zum Tanzen zu finden, der einen liebt.",
-        "Ein Meilenstein der 80er [XXX]-Pop-Geschichte."
+        "Ein Meilenstein der 80er Tanz-Pop-Geschichte."
       ],
       "lyrics": {
         "real": [
@@ -734,11 +776,17 @@
           "Still enough time to figure out how to chase my blues away",
           "Oh, I wanna dance with somebody, I wanna feel the heat with somebody"
         ],
-        "fake": "Waiting for the moment when you look into my lonely eyes"
+        "fake": [
+          "Waiting for the moment when you look into my lonely eyes",
+          "Enough time to go out and blow the blues away",
+          "Oh, Oh, you should dance with somebody"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "eH3giaIzONA"
+        "youtube": "eH3giaIzONA",
+        "spotify": "2tUBqZG2AbRi7Q0BIrVrEj",
+        "amazonMusic": "B00IZ13AT4"
       },
       "coverUrl": "/covers/80s-whitney-houston-dance-with-somebody.jpg",
       "supportedModes": [
@@ -766,10 +814,10 @@
       ],
       "pack": "80s Flashback",
       "hints": [
-        "Wurde speziell für den Film 'Rocky III' auf Wunsch von Sylvester Stallone geschrieben.",
+        "Wurde speziell für einen Film auf Wunsch von Sylvester Stallone geschrieben.",
         "Der ikonische Gitarren-Riff synchronisiert sich perfekt mit den Boxhieben im Film.",
         "Der Song gewann einen Grammy und wurde für einen Oscar nominiert.",
-        "Handelt vom Überleben und dem Behalten des Fokus ('Eye of the [XXX]').",
+        "Handelt vom Überleben und dem Behalten des Fokus.",
         "Die ultimative Trainings-Hymne der Welt."
       ],
       "lyrics": {
@@ -778,11 +826,18 @@
           "Went the distance, now I'm back on my feet, just a man and his will to survive",
           "It's the eye of the tiger, it's the thrill of the fight"
         ],
-        "fake": "Stronger than the mountain, faster than the wind, we will win"
+        "fake": [
+          "Stronger than the mountain, faster than the wind, we will win",
+          "Ran a mile, now I'm set on my fire, just with the will to survive",
+          "Stayin' shut, up on the stairs, did my plan, took my fight",
+          "It's the life of a tiger, it's the train on the run"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "btPJPFnesV4"
+        "youtube": "btPJPFnesV4",
+        "spotify": "2KH16WveTQWT6KOG9Rg6e2",
+        "amazonMusic": "B0013832A8"
       },
       "coverUrl": "/covers/80s-survivor-eye-of-the-tiger.jpg",
       "supportedModes": [
@@ -822,11 +877,17 @@
           "She will never let your spirits down, once you get her off the street",
           "I like my girls quite a bit, I'll take them all around the world"
         ],
-        "fake": "Dancing in the red light, feeling alright, all through the night"
+        "fake": [
+          "She's stinky, like the milk is on fire and you don't tell you mother",
+          "I will never let my will go down, so that she gets off to the street",
+          "She likes my pills, I'll give it to her, like a super, super freak"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "QYHxGBH6o4M"
+        "youtube": "QYHxGBH6o4M",
+        "spotify": "2dCmGcEOQrMQhMMS8Vj7Ca",
+        "amazonMusic": "B07GLHWHBF"
       },
       "coverUrl": "/covers/80s-rick-james-super-freak.jpg",
       "supportedModes": [
@@ -866,11 +927,17 @@
           "You in that dress, my thoughts I confess, verge on dirty",
           "Ah, come on Eileen"
         ],
-        "fake": "Walking down the dusty road, carrying a heavy load of love"
+        "fake": [
+          "Come on, come on, oh I hear your scream, that you live in the moment and see everything",
+          "In my suit, my shoes, my socks, I'm ready to confess",
+          "Oh, come on, come on, oh oh no, oh oh no"
+        ]
       },
       "isOneHitWonder": true,
       "links": {
-        "youtube": "pq1ybbixmro"
+        "youtube": "pq1ybbixmro",
+        "spotify": "3MrWxJaD2AT0W9DjWF64Vm",
+        "amazonMusic": "B082XQDW5F"
       },
       "coverUrl": "/covers/80s-dexys-midnight-runners-come-on-eileen.jpg",
       "supportedModes": [
@@ -898,7 +965,7 @@
       ],
       "pack": "80s Flashback",
       "hints": [
-        "Das Video ist eine Hommage an Marilyn Monroes Performance von 'Diamonds Are a [XXX]'s Best Friend'.",
+        "Das Video ist eine Hommage an Marilyn Monroes Performance von 'Diamonds Are ...",
         "Einer der Songs, die das Image der Sängerin als unabhängige Geschäftsfrau zementierten.",
         "Thematisiert den Wunsch nach Wohlstand und materiellen Werten in der Liebe.",
         "Produziert von Nile Rodgers.",
@@ -910,11 +977,17 @@
           "If they don't give me proper credit, I just walk away",
           "They can beg and they can plead, but they can't see the light"
         ],
-        "fake": "Money makes the world go round, and I'm the queen of this town"
+        "fake": [
+          "Money makes the world go round, and I'm the queen of this town",
+          "So you give me all your wealth, I'll take it and pray anyway",
+          "They may sing, they may shout, but I will take the material things"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "6p-lDYPR2P8"
+        "youtube": "6p-lDYPR2P8",
+        "spotify": "7bkyXSi4GtVfD7itZRUR3e",
+        "amazonMusic": "B0CSSFNMCG"
       },
       "coverUrl": "/covers/80s-madonna-material-girl.jpg",
       "supportedModes": [
@@ -946,7 +1019,7 @@
         "Der Song handelt von einem Mann, der sich in eine Prostituierte verliebt.",
         "Das ikonische Lachen zu Beginn entstand, weil Sting sich versehentlich auf ein Klavier setzte.",
         "Die Band verbindet hier Reggae-Rhythmen mit Punk-Energie.",
-        "Du musst das rote Licht nicht anmachen: '[XXX], you don't have to put on the red light!'"
+        "Du musst das rote Licht nicht anmachen: '..., you don't have to put on the red light!'"
       ],
       "lyrics": {
         "real": [
@@ -954,11 +1027,17 @@
           "Those days are over, you don't have to sell your body to the night",
           "Roxanne, you don't have to wear that dress tonight"
         ],
-        "fake": "Walking the streets of Paris, looking for a sign of love"
+        "fake": [
+          "Walking the streets of Paris, looking for a sign of love",
+          "Roxanne, I sit on your bed, your pillows are red",
+          "Roxanne, you should not stress this topic tonight"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "3T1c7GkzRQQ"
+        "youtube": "3T1c7GkzRQQ",
+        "spotify": "3S998fWun9i5z7K2iRptk3",
+        "amazonMusic": "B07QMMW7NF"
       },
       "coverUrl": "/covers/80s-police-roxanne.jpg",
       "supportedModes": [
@@ -998,11 +1077,17 @@
           "But he loves me, loves me, loves me, I know that he loves me anyway",
           "Let's hear it for the boy, oh, let's give the boy a hand"
         ],
-        "fake": "He's dancing in the street, moving to the rhythm of the beat"
+        "fake": [
+          "My darling, you are sweet, you are kind, what do you have on your mind?",
+          "He has fallen in love with me. I know it like the sea in my mind",
+          "Listen to the beat of you heart, and give me your hand"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "gI7YHZVc7mM"
+        "youtube": "gI7YHZVc7mM",
+        "spotify": "0YByunSgZfXmXzXN9YAL6X",
+        "amazonMusic": "B003YNT2SQ"
       },
       "coverUrl": "/covers/80s-dennie-williams-lets-hear-it-for-the-boy.jpg",
       "supportedModes": [
@@ -1042,11 +1127,17 @@
           "Now look at them yo-yos that's the way you do it, you play the guitar on the MTV",
           "That ain't working, that's the way you do it, money for nothing and your chicks for free"
         ],
-        "fake": "Working all day in the factory line, dreaming of the summer time"
+        "fake": [
+          "Working all day in the factory line, dreaming of the summer time",
+          "I gave away my radio, to that MTV can come to me",
+          "It is screaming, it is spinning, that's my way, so that you see me play"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "wTP2RUD_cL0"
+        "youtube": "wTP2RUD_cL0",
+        "spotify": "4y1Ls7v9TevNiTqy9u9SME",
+        "amazonMusic": "B0CP4F2RGD"
       },
       "coverUrl": "/covers/80s-dire-straits-money-for-nothing.jpg",
       "supportedModes": [
@@ -1086,11 +1177,16 @@
           "You could have a aeroplane flying, if you bring your blue sky back",
           "I want to be your sledgehammer, why don't you call my name?"
         ],
-        "fake": "Feel the power of the light, shining through the middle of the night"
+        "fake": [
+          "You feel the power, you feel the might, make it smash",
+          "Jack and the Hammer, Jack Hammer, blade and fade"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "OJWJE0x7T4Q"
+        "youtube": "OJWJE0x7T4Q",
+        "spotify": "0Y9uTzWEvUn7bgY96SshNi",
+        "amazonMusic": "B07D1FDNDZ"
       },
       "coverUrl": "/covers/80s-peter-gabriel-sledgehammer.jpg",
       "supportedModes": [
@@ -1130,11 +1226,17 @@
           "Come on, I'm talking to you, come on",
           "In violent times, you shouldn't have to sell your soul"
         ],
-        "fake": "Whisper in the dark, try to find a spark in your broken heart"
+        "fake": [
+          "Whisper in the dark, try to find a spark in your broken heart",
+          "Come in, sit down, and listen to my sound",
+          "In blue times, cry and cry, and let it all out"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "Ye7FKc1JQe4"
+        "youtube": "Ye7FKc1JQe4",
+        "spotify": "2gQaQUhDCNGfBVXTvxAmXQ",
+        "amazonMusic": "B00O64D4FE"
       },
       "coverUrl": "/covers/80s-tears-for-fears-shout.jpg",
       "supportedModes": [
@@ -1164,7 +1266,7 @@
       "hints": [
         "Bekannt für die extrem raue, heisere Stimme der Sängerin.",
         "Der Song wurde ursprünglich schon 1974 als Country-Song geschrieben.",
-        "[XXX] [XXX] selbst bedankte sich bei der Sängerin, weil sie sie 'modern' gemacht habe.",
+        "Die namensgebende Dame selbst bedankte sich bei der Sängerin, weil sie sie 'modern' gemacht habe.",
         "Der Synthesizer-Sound wurde durch das Klatschen auf ein Klaviergehäuse ergänzt.",
         "Sie wird dich verzaubern mit ihren '[XXX] [XXX] [XXX]'."
       ],
@@ -1174,11 +1276,17 @@
           "Her hands are never cold, she's got Bette Davis eyes",
           "She'll tease you, she'll unease you, all the better just to please you"
         ],
-        "fake": "Walking through the silver screen, the most beautiful girl I've seen"
+        "fake": [
+          "Her eyes are pure water, her smile is pure delight",
+          "Her feet are velvet, her skin is silk",
+          "She might please you, she might ease you"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "EPOIS5taqA8"
+        "youtube": "EPOIS5taqA8",
+        "spotify": "0odIT9B9BvOCnXfS0e4lB5",
+        "amazonMusic": "B000VLX5R6"
       },
       "coverUrl": "/covers/80s-kim-carnes-bette-davis-eyes.jpg",
       "supportedModes": [
@@ -1218,11 +1326,17 @@
           "I better read between the lines, in case I need it when I'm older",
           "I want to know what love is, I want you to show me"
         ],
-        "fake": "In the cold of the winter, I'm looking for a splinter of light"
+        "fake": [
+          "I have a plan, a littel plan to expand, to make it last",
+          "I should draw the lines, so that you see what I mean",
+          "You could show me the way, that you want me to take"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "r3Pr1_v7hsw"
+        "youtube": "r3Pr1_v7hsw",
+        "spotify": "04OjLvOApQve45B0ISx4XN",
+        "amazonMusic": "B07YNB5L8W"
       },
       "coverUrl": "/covers/80s-foreigner-i-want-to-know-what-love-is.jpg",
       "supportedModes": [
@@ -1262,11 +1376,17 @@
           "All I want is to have my way and I'll see you from day to day",
           "You spin me right round, baby, right round like a record, baby"
         ],
-        "fake": "Moving to the left, moving to the right, in the neon light"
+        "fake": [
+          "So I can call you, baby, with my phone, oh yeah baby, I'll call you",
+          "I shouldn't spin you around, and thouch your sound, baby",
+          "If we get on around, we will lose our sound, and no trace can be found"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "PGNiXGX2nLU"
+        "youtube": "PGNiXGX2nLU",
+        "spotify": "1ChS6h2L5Mh9NqXnO8C3v8",
+        "amazonMusic": "B073HCDWRH"
       },
       "coverUrl": "/covers/80s-dead-or-alive-you-spin-me-round.jpg",
       "supportedModes": [
