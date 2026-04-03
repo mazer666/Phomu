@@ -56,9 +56,6 @@ def upsert_song(song_id, artist, title, spotify_id, amazon_music_id):
                         
                         print(f"Updated pack: {filename}")
                         updated = True
-                        break
-                if updated:
-                    break
             except Exception as e:
                 print(f"Error processing {filename}: {e}")
     

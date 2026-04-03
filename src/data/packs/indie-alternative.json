@@ -175,7 +175,10 @@
           "Is the city I live in, the city of angels, lonely as I am, together we cry",
           "Under the bridge downtown, is where I drew some blood"
         ],
-        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+        "fake": [
+          "In the shadow of the valley, I'm looking for a rally of hope",
+          "Up on the fridge, I see the needle, of a known old friend"
+      ]
       },
       "isOneHitWonder": false,
       "links": {
@@ -219,7 +222,10 @@
           "Thursday I don't care about you, it's Friday I'm in love",
           "Saturday wait, and Sunday always comes too late"
         ],
-        "fake": "In the middle of the night, we're looking for the light of our love"
+        "fake": [
+          "I just can't give it love today, I'm not in the mood",
+          "Friday is my favourite, it's the best day of the week"
+        ]
       },
       "isOneHitWonder": false,
       "links": {
