@@ -128,6 +128,7 @@ function LyricsQuestion({
           >
             <MusicPlayer 
               youtubeLink={song.links.youtube}
+              youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
               startSeconds={song.previewTimestamp?.start ?? 0}
               blurred={false}
             />
@@ -187,7 +188,10 @@ function LyricsQuestion({
 
       {isRevealing && (
         <div style={{ display: 'none' }}>
-           <MusicPlayer youtubeLink={song.links.youtube} />
+           <MusicPlayer
+             youtubeLink={song.links.youtube}
+             youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
+           />
         </div>
       )}
     </div>

@@ -3,7 +3,7 @@
     "pack": "Global Hits 1950-2026",
     "version": "1.0.0",
     "description": "50 ikonische Songs aus 7 Jahrzehnten globaler Popkultur",
-    "songCount": 50,
+    "songCount": 59,
     "lyricsStatus": "pending – Lyrics werden über das Admin-Tool manuell eingetragen"
   },
   "songs": [
@@ -2474,6 +2474,108 @@
         "lyrics-labyrinth"
       ],
       "isQRCompatible": true
+    },
+    {
+      "id": "catalog-coverage-hank-williams-jambalaya-1952",
+      "title": "Jambalaya (On the Bayou)",
+      "artist": "Hank Williams",
+      "year": 1952,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "medium",
+      "mood": [
+        "Road Trip",
+        "Nostalgic",
+        "Feel Good"
+      ],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Ein Country-Klassiker aus den frühen 1950ern mit starkem Cajun-Einfluss.",
+        "Der Refrain zählt südliche US-Orte und Speisen auf.",
+        "Der Titel enthält ein Gericht aus der kreolischen Küche Louisianas.",
+        "Fiddle, Akustikgitarre und ein treibender Two-Step-Rhythmus prägen den Sound.",
+        "Der Song beginnt mit einem Gruß an \"my ma cher amio\"."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nG7-tsqDRYE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "survivor"
+      ],
+      "isQRCompatible": false
+    },
+    {
+      "id": "catalog-coverage-ciara-ecstasy-2025",
+      "title": "Ecstasy",
+      "artist": "Ciara",
+      "year": 2025,
+      "country": "US",
+      "genre": "R&B",
+      "difficulty": "hard",
+      "mood": [
+        "Modern Hits",
+        "Dance Floor",
+        "Energetic"
+      ],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "R&B-Single aus 2025 und Lead-Track eines Studioalbums mit dem Titel \"CiCi\".",
+        "Das Musikvideo erschien am selben Tag wie die Single und wurde von Diane Martel inszeniert.",
+        "Später erschien eine Remix-Version mit Normani und Teyana Taylor.",
+        "Sinnlicher Midtempo-Groove mit klarer Club-Ästhetik und moderner R&B-Produktion.",
+        "Der Titel beschreibt einen intensiven Gefühlszustand – derselbe wie im Songnamen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "rKMM14qvkwg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "survivor"
+      ],
+      "isQRCompatible": false
+    },
+    {
+      "id": "catalog-coverage-bruno-mars-i-just-might-2026",
+      "title": "I Just Might",
+      "artist": "Bruno Mars",
+      "year": 2026,
+      "country": "US",
+      "genre": "Disco-pop",
+      "difficulty": "hard",
+      "mood": [
+        "Neon Night",
+        "Epic",
+        "Modern Hits"
+      ],
+      "pack": "Global Hits 1950-2026",
+      "hints": [
+        "Single aus Januar 2026, veröffentlicht als Auftakt zu einem neuen Soloalbum.",
+        "Der zugehörige Clip erschien gleichzeitig mit der Single auf YouTube.",
+        "Der Track wird in Presse/Reviews als Mix aus Disco-Pop, Pop-Soul und Funk beschrieben.",
+        "Retro-Soundstage-Ästhetik und mehrstimmige Selbst-Inszenierung prägen das Video.",
+        "Der Songtitel beginnt mit \"I\" und endet mit \"Might\"."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "mrV8kK5t0V8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "survivor"
+      ],
+      "isQRCompatible": false
     }
   ]
 }

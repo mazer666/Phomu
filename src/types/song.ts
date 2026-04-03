@@ -146,6 +146,8 @@ export interface PhomuSong {
     coverLink?: string;
     /** Alternative / Backup YouTube ID if the primary is region-locked */
     fallbackYoutubeId?: string;
+    /** Weitere alternative YouTube IDs/URLs (Fallback-Reihenfolge nach links.youtube) */
+    youtubeAlternatives?: string[];
     /** Spotify track URI (spotify:track:xxx) or URL */
     spotify?: string;
     /** Apple Music track URL (future feature) */

@@ -12,6 +12,7 @@ import { ALL_SONGS as DATA_SONGS } from '@/data/packs';
 // ─── Daten laden & Storage ──────────────────────────────────────────────────
 
 const STORAGE_KEY = 'phomu-admin-songs';
+const PAGE_SIZE_OPTIONS = [8, 24, 48, 96, 'all'] as const;
 
 /** Lädt Songs aus localStorage oder Fallback auf JSON */
 function loadSongs(): PhomuSong[] {
@@ -52,7 +53,6 @@ export default function BrowsePage() {
   const startQuickGame = useGameStore((state) => state.startQuickGame);
 
   const [allSongs, setAllSongs] = useState<PhomuSong[]>(loadSongs);
-  const [mounted, setMounted] = useState(false);
   const [adminMode, setAdminMode] = useState(false);
   const [editingSong, setEditingSong] = useState<PhomuSong | null>(null);
   const [showHints, setShowHints] = useState(false);
@@ -75,14 +75,16 @@ export default function BrowsePage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState<number | 'all'>(24);
 
-  // Initiales Laden
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   // Reset page when filters change
   useEffect(() => {
-    setCurrentPage(1);
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (!cancelled) setCurrentPage(1);
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [filters, sortBy, sortOrder, pageSize]);
 
   const genres = useMemo(() => getGenres(allSongs), [allSongs]);
@@ -166,8 +168,6 @@ export default function BrowsePage() {
     setCurrentPage(1);
   };
 
-  if (!mounted) return null;
-
   return (
     <div className="min-h-screen bg-[#0a0a0c] text-white flex flex-col">
       {/* Dynamic Header */}
@@ -214,10 +214,11 @@ export default function BrowsePage() {
             <div className="flex items-center gap-2 h-12">
                <button
                  onClick={() => setAdminMode(!adminMode)}
-                 className={`w-12 h-full rounded-2xl flex items-center justify-center transition-all border ${adminMode ? 'bg-red-500/10 border-red-500 text-red-500' : 'bg-white/5 border-white/5 text-white/30 hover:bg-white/10'}`}
+                 className={`px-4 h-full rounded-2xl flex items-center justify-center gap-2 transition-all border text-[10px] font-black uppercase tracking-wider ${adminMode ? 'bg-red-500/10 border-red-500 text-red-400' : 'bg-white/5 border-white/5 text-white/50 hover:bg-white/10'}`}
                  title="Admin Modus"
                >
-                 {adminMode ? '🔒' : '🔓'}
+                 <span>{adminMode ? '🔓' : '🔒'}</span>
+                 <span>{adminMode ? 'Admin an' : 'Admin aus'}</span>
                </button>
                <button 
                  onClick={() => router.push('/lobby')}
@@ -345,10 +346,10 @@ export default function BrowsePage() {
             
             <div className="flex items-center gap-3">
               <div className="flex items-center bg-white/5 p-1 rounded-xl border border-white/10">
-                {[8, 24, 48, 96, 'all'].map((size) => (
+                {PAGE_SIZE_OPTIONS.map((size) => (
                   <button
                     key={size}
-                    onClick={() => setPageSize(size as any)}
+                    onClick={() => setPageSize(size)}
                     className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all ${pageSize === size ? 'bg-blue-600 text-white shadow-lg' : 'text-white/40 hover:text-white'}`}
                   >
                     {size === 'all' ? 'Alle' : size}
@@ -420,9 +421,10 @@ export default function BrowsePage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setEditingSong({ 
-                  id: `new-${Date.now()}`, title: '', artist: '', year: 2024, country: 'DE', genre: 'Pop', 
+                  id: `new-${Date.now()}`, title: '', artist: '', year: new Date().getFullYear(), country: 'DE', genre: 'Pop', 
                   difficulty: 'medium', mood: [], pack: 'Custom', hints: ['', '', '', '', ''], lyrics: null, 
-                  isOneHitWonder: false, links: { youtube: '' }, supportedModes: ['timeline'], isQRCompatible: true
+                  hintEvidence: ['', '', '', '', ''],
+                  isOneHitWonder: false, links: { youtube: '' }, supportedModes: ['timeline', 'hint-master', 'vibe-check', 'cover-confusion', 'survivor'], isQRCompatible: true
                 })}
                 className="aspect-[4/5] rounded-[2rem] border-2 border-dashed border-white/10 flex flex-col items-center justify-center gap-4 text-white/20 hover:text-blue-400 hover:border-blue-400/50 hover:bg-blue-400/5 transition-all group"
               >
@@ -512,9 +514,11 @@ export default function BrowsePage() {
               className="w-full max-w-2xl bg-[#121215] rounded-[3rem] border border-white/10 shadow-2xl p-8 max-h-[90vh] overflow-y-auto"
             >
               <SongEditor 
+                key={editingSong.id}
                 song={editingSong} 
                 onSave={handleSaveSong} 
-                onCancel={() => setEditingSong(null)} 
+                onCancel={() => setEditingSong(null)}
+                variant="inline"
               />
             </motion.div>
           </motion.div>

@@ -189,6 +189,18 @@ export interface GameState {
   /** Bevorzugter Player-Typ (Standard YouTube vs YouTube Music) */
   preferredPlayer: 'standard' | 'music';
 
+  /** Ob Hintergrundmusik abgespielt werden soll */
+  musicEnabled: boolean;
+
+  /** Lautstärke für Hintergrundmusik (0..1) */
+  musicVolume: number;
+
+  /** Ob kurze Soundeffekte abgespielt werden sollen */
+  sfxEnabled: boolean;
+
+  /** Lautstärke für Soundeffekte (0..1) */
+  sfxVolume: number;
+
   /** Woher der aktuelle Song kommt (Zufallswahl vs QR-Scan) */
   currentSongSource: 'random' | 'qr' | null;
 

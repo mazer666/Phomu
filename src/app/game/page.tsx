@@ -37,8 +37,10 @@ const PHASE_VARIANTS = {
 import { FeedbackOverlay } from '@/components/game/FeedbackOverlay';
 import { DiceAnimation } from '@/components/game/DiceAnimation';
 import { LastRoundBanner } from '@/components/game/LastRoundBanner';
+import { InGameSettingsPanel } from '@/components/game/InGameSettingsPanel';
 import { pickLastRoundMessage } from '@/utils/last-round-messages';
 import type { LastRoundMessage } from '@/utils/last-round-messages';
+import { useGameAudioCues } from '@/hooks/useGameAudioCues';
 
 export default function GamePage() {
   const router = useRouter();
@@ -64,19 +66,17 @@ export default function GamePage() {
     endGame,
     initSession,
     skipBrokenSong,
+    sfxEnabled,
+    sfxVolume,
   } = useGameStore();
 
   const [showScoreboard, setShowScoreboard] = useState(false);
-  const [now, setNow] = useState(0);
+  const [showInGameSettings, setShowInGameSettings] = useState(false);
+  const [now, setNow] = useState(() => Date.now());
   const [isRerolling, setIsRerolling] = useState(false);
-  const [lastAnswerCount, setLastAnswerCount] = useState(0);
   const [lastRoundBannerMsg, setLastRoundBannerMsg] = useState<LastRoundMessage | null>(null);
   const lastRoundBannerShown = useRef(false);
 
-  // Initialisiere 'now' nur auf dem Client
-  useEffect(() => {
-    setNow(Date.now());
-  }, []);
 
   // ── Zeit-Updater für Progress-Bar ─────────────────────────────
   useEffect(() => {
@@ -111,6 +111,8 @@ export default function GamePage() {
   const nextPilot = isTeamTurn
     ? teams.find((t) => t.id === nextPilotId)
     : players.find((p) => p.id === nextPilotId);
+
+  const pilotAvatar = !isTeamTurn && pilot && 'avatar' in pilot ? pilot.avatar : '👥';
 
   // ── Handler: Karte gezogen ─────────────────────────────────────
   const handleCardDrawn = useCallback(
@@ -243,14 +245,19 @@ export default function GamePage() {
     }, 2000);
   }, [skipBrokenSong]);
 
-  // ── Feedback Trigger (bei neuer Antwort) ──────────────────────
-  useEffect(() => {
-    if (currentAnswers.length > lastAnswerCount) {
-      setLastAnswerCount(currentAnswers.length);
-    }
-  }, [currentAnswers.length, lastAnswerCount]);
 
   const lastAnswer = currentAnswers[currentAnswers.length - 1];
+
+  // Kurze Event-SFX (resilient, ohne Flow-Unterbrechung)
+  useGameAudioCues({
+    currentMode,
+    roundPhase,
+    answerCount: currentAnswers.length,
+    lastAnswerCorrect: lastAnswer?.isCorrect ?? null,
+    isGameOver,
+    sfxEnabled,
+    sfxVolume,
+  });
 
   // ── Fortschrittsberechnung (Progress Bar) ─────────────────────
   const progressData = useMemo(() => {
@@ -292,7 +299,7 @@ export default function GamePage() {
       {/* Juicy Overlays */}
       <FeedbackOverlay
         isCorrect={lastAnswer?.isCorrect ?? null}
-        triggerKey={lastAnswerCount}
+        triggerKey={currentAnswers.length}
       />
       <DiceAnimation isVisible={isRerolling} />
       <LastRoundBanner
@@ -305,7 +312,7 @@ export default function GamePage() {
         roundNumber={progressData.currentVal}
         currentMode={currentMode}
         pilotName={pilot?.name}
-        pilotAvatar={isTeamTurn ? '👥' : (pilot as any)?.avatar}
+        pilotAvatar={pilotAvatar}
         pilotColor={pilot?.color}
         timeLimitSeconds={roundPhase === 'question' ? config.timeLimitSeconds : null}
         progressPercentage={progressData.percentage}
@@ -325,6 +332,16 @@ export default function GamePage() {
         🏆 Punkte
       </button>
 
+      {/* In-Game Settings (jederzeit erreichbar) */}
+      <button
+        onClick={() => setShowInGameSettings(true)}
+        className="fixed bottom-4 left-4 z-30 px-4 py-2 rounded-full text-sm font-bold shadow-lg transition-opacity hover:opacity-90"
+        style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)' }}
+        aria-label="Spiel-Einstellungen öffnen"
+      >
+        ⚙️ Settings
+      </button>
+
       {/* Scoreboard Overlay */}
       <Scoreboard
         players={players}
@@ -333,6 +350,13 @@ export default function GamePage() {
         winCondition={config.winCondition}
         isOpen={showScoreboard}
         onClose={() => setShowScoreboard(false)}
+      />
+
+      <InGameSettingsPanel
+        isOpen={showInGameSettings}
+        onClose={() => setShowInGameSettings(false)}
+        onLeaveParty={handleExit}
+        onOpenFullSettings={() => router.push('/settings')}
       />
 
       {/* Phasen-Content mit Übergangsanimation */}

@@ -12,8 +12,7 @@
  *  - Nach Pack und Vollständigkeit filtern
  */
 
-import { useState, useEffect, useCallback, useMemo } from 'react';
-import Image from 'next/image';
+import { useState, useCallback } from 'react';
 import type { PhomuSong } from '@/types/song';
 import globalHitsRaw from '@/data/packs/global-hits.json';
 import { SongEditor } from '@/components/admin/SongEditor';
@@ -184,17 +183,13 @@ function SongRow({
 // ─── Haupt-Seite ───────────────────────────────────────────────────────────────
 
 export default function AdminSongsPage() {
-  const [songs, setSongs] = useState<AdminSong[]>([]);
+  const [songs, setSongs] = useState<AdminSong[]>(() => loadSongsFromStorage());
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [filterCompleteness, setFilterCompleteness] = useState<FilterCompleteness>('all');
   const [filterPack, setFilterPack] = useState<FilterPack>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [savedMessage, setSavedMessage] = useState('');
 
-  // Beim ersten Render: Songs aus localStorage oder JSON laden
-  useEffect(() => {
-    setSongs(loadSongsFromStorage());
-  }, []);
 
   // Alle verfügbaren Packs aus den Songs ermitteln
   const availablePacks = Array.from(new Set(songs.map((s) => s.pack)));
@@ -411,13 +406,37 @@ export default function AdminSongsPage() {
           </div>
 
           <div className="w-[480px] shrink-0">
-            <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
-              <p className="text-4xl mb-3">🎵</p>
-              <p className="font-medium">Admin-Modus im Browser</p>
-              <p className="text-sm mt-1">
-                Die Bearbeitung erfolgt nun direkt über den Song-Browser.
-              </p>
-            </div>
+            {selectedSong ? (
+              <SongEditor
+                key={selectedSong.id}
+                song={selectedSong}
+                onSave={handleSave}
+                onCancel={() => setSelectedId(null)}
+                variant="inline"
+              />
+            ) : (
+              <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
+                <p className="text-4xl mb-3">🎵</p>
+                <p className="font-medium">Kein Song ausgewählt</p>
+                <p className="text-sm mt-1">
+                  Wähle links einen Song aus oder lege einen neuen Song an.
+                </p>
+                <button
+                  onClick={() => {
+                    const draftSong: AdminSong = {
+                      ...EMPTY_SONG,
+                      id: `draft-${Date.now()}`,
+                      title: 'Neuer Song',
+                    };
+                    setSongs((prev) => [draftSong, ...prev]);
+                    setSelectedId(draftSong.id);
+                  }}
+                  className="mt-4 px-4 py-2 text-sm bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  + Neuen Song starten
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

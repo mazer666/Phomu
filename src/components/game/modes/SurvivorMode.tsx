@@ -80,6 +80,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
         <div className="mt-4 w-full max-w-sm mx-auto transition-opacity" style={{ opacity: (answered || cheatUsed) ? 1 : 0.4 }}>
           <MusicPlayer
             youtubeLink={song.links.youtube}
+            youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
             startSeconds={song.previewTimestamp?.start ?? 0}
             blurred={!answered && !cheatUsed}
           />

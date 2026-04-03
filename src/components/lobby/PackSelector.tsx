@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { PHOMU_CONFIG } from '@/config/game-config';
 
 interface PackSelectorProps {
@@ -12,6 +12,20 @@ interface PackSelectorProps {
 export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
   const allPacks = PHOMU_CONFIG.SONG_PACKS;
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollMore, setCanScrollMore] = useState(true);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const check = () => {
+      setCanScrollMore(el.scrollTop + el.clientHeight < el.scrollHeight - 8);
+    };
+    check();
+    el.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    return () => { el.removeEventListener('scroll', check); window.removeEventListener('resize', check); };
+  }, []);
 
   const togglePack = (packId: string) => {
     if (selectedPacks.includes(packId)) {
@@ -48,7 +62,33 @@ export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
       </div>
 
       {/* Pack Grid */}
-      <div className="grid grid-cols-2 gap-2.5 max-h-[52vh] overflow-y-auto px-0.5 pb-2 custom-scrollbar">
+      <div className="relative">
+        {/* Scroll-fade hint at bottom */}
+        <AnimatePresence>
+          {canScrollMore && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none z-10 flex flex-col items-center justify-end pb-1"
+              style={{ background: 'linear-gradient(to top, var(--color-bg) 30%, transparent)' }}
+            >
+              <motion.span
+                animate={{ y: [0, 4, 0] }}
+                transition={{ repeat: Infinity, duration: 1.4, ease: 'easeInOut' }}
+                className="text-[9px] font-black uppercase tracking-widest opacity-40"
+              >
+                ↓ mehr
+              </motion.span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <div
+          ref={scrollRef}
+          className="grid grid-cols-2 gap-2.5 max-h-[52vh] overflow-y-auto px-0.5 pb-2 no-scrollbar"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
         {allPacks.map((pack, index) => {
           const isSelected = selectedPacks.includes(pack.id);
           const isHovered = hoveredId === pack.id;
@@ -151,6 +191,7 @@ export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
             </motion.button>
           );
         })}
+        </div>
       </div>
 
       {/* Footer badge */}

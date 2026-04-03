@@ -96,6 +96,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               <MusicPlayer
                 key={`${shownHints}-${isRevealed}`}
                 youtubeLink={song.links.youtube}
+                youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
                 startSeconds={startSecs}
                 endSeconds={(isRevealed || shownHints === 5) ? startSecs + 180 : startSecs + 30}
                 blurred={!isRevealed}

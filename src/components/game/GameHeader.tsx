@@ -57,6 +57,40 @@ interface GameHeaderProps {
 
 // ─── Komponente ───────────────────────────────────────────────────
 
+
+interface TimerCountdownProps {
+  initialSeconds: number;
+  onTimeUp?: () => void;
+}
+
+function TimerCountdown({ initialSeconds, onTimeUp }: TimerCountdownProps) {
+  const [secondsLeft, setSecondsLeft] = useState(initialSeconds);
+
+  useEffect(() => {
+    if (secondsLeft <= 0) {
+      onTimeUp?.();
+      return;
+    }
+    const timer = setTimeout(() => setSecondsLeft((s) => s - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [secondsLeft, onTimeUp]);
+
+  const timerColor =
+    secondsLeft > 20 ? 'var(--color-success)'
+      : secondsLeft > 10 ? 'var(--color-secondary)'
+        : 'var(--color-error)';
+
+  return (
+    <div
+      className="text-3xl font-black tabular-nums min-w-[2.5ch] text-right"
+      style={{ color: timerColor, filter: `drop-shadow(0 0 8px ${timerColor}44)` }}
+      aria-label={`${secondsLeft} Sekunden übrig`}
+    >
+      {secondsLeft}
+    </div>
+  );
+}
+
 export function GameHeader({
   roundNumber,
   currentMode,
@@ -70,22 +104,6 @@ export function GameHeader({
   onExit,
 }: GameHeaderProps) {
   const router = useRouter();
-  const [secondsLeft, setSecondsLeft] = useState<number | null>(timeLimitSeconds);
-
-  // Timer zurücksetzen wenn neue Runde beginnt (timeLimitSeconds ändert sich)
-  useEffect(() => {
-    setSecondsLeft(timeLimitSeconds);
-  }, [timeLimitSeconds, roundNumber]);
-
-  // Countdown-Logik
-  useEffect(() => {
-    if (secondsLeft === null || secondsLeft <= 0) {
-      if (secondsLeft === 0) onTimeUp?.();
-      return;
-    }
-    const timer = setTimeout(() => setSecondsLeft((s) => (s !== null ? s - 1 : null)), 1000);
-    return () => clearTimeout(timer);
-  }, [secondsLeft, onTimeUp]);
 
   const handleExit = useCallback(() => {
     if (onExit) {
@@ -95,12 +113,6 @@ export function GameHeader({
     }
   }, [onExit, router]);
 
-  // Timer-Farbe: grün → gelb → rot
-  const timerColor =
-    secondsLeft === null ? 'var(--color-text)'
-    : secondsLeft > 20 ? 'var(--color-success)'
-    : secondsLeft > 10 ? 'var(--color-secondary)'
-    : 'var(--color-error)';
 
   const displayProgressLabel = useMemo(() => {
     if (!targetLabel) return `Runde ${roundNumber}`;
@@ -185,14 +197,12 @@ export function GameHeader({
              <span className="text-[11px] font-black tabular-nums">{displayProgressLabel}</span>
           </div>
 
-          {secondsLeft !== null && (
-            <div
-              className="text-3xl font-black tabular-nums min-w-[2.5ch] text-right"
-              style={{ color: timerColor, filter: `drop-shadow(0 0 8px ${timerColor}44)` }}
-              aria-label={`${secondsLeft} Sekunden übrig`}
-            >
-              {secondsLeft}
-            </div>
+          {timeLimitSeconds !== null && (
+            <TimerCountdown
+              key={`${roundNumber}-${timeLimitSeconds}`}
+              initialSeconds={timeLimitSeconds}
+              onTimeUp={onTimeUp}
+            />
           )}
         </div>
       </div>

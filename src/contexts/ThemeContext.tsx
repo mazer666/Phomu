@@ -27,17 +27,12 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 const STORAGE_KEY = 'phomu-theme';
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<ThemeName>(
-    PHOMU_CONFIG.DEFAULT_THEME
-  );
-
-  // On mount, load theme from localStorage
-  useEffect(() => {
+  const [theme, setThemeState] = useState<ThemeName>(() => {
+    if (typeof localStorage === 'undefined') return PHOMU_CONFIG.DEFAULT_THEME;
     const saved = localStorage.getItem(STORAGE_KEY) as ThemeName | null;
-    if (saved && PHOMU_CONFIG.AVAILABLE_THEMES.includes(saved)) {
-      setThemeState(saved);
-    }
-  }, []);
+    if (saved && PHOMU_CONFIG.AVAILABLE_THEMES.includes(saved)) return saved;
+    return PHOMU_CONFIG.DEFAULT_THEME;
+  });
 
   // Whenever theme changes, update <html> data-theme attribute and save
   useEffect(() => {

@@ -6,7 +6,7 @@ import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 /** @type {import('eslint').Linter.Config[]} */
 const eslintConfig = [
   {
-    ignores: ['.next/**', 'out/**', 'dist/**', 'node_modules/**', 'next-env.d.ts'],
+    ignores: ['.next/**', 'out/**', 'dist/**', 'coverage/**', 'node_modules/**', 'next-env.d.ts'],
   },
   ...nextVitals,
   {

@@ -1,90 +1,116 @@
-# Phomu - The Modular Music Party Platform
+# Phomu – Musik-Partyspiel (Hybrid aus App + Karten)
 
-Phomu (Physical-Mobile-Music) is an open-source, hybrid party game platform that bridges the gap between physical collectible cards and a dynamic, digital music experience.
+Phomu ist ein Open-Source Partyspiel, das Musikquiz, Social-Gaming und physische QR-Karten kombiniert.
+Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (Lobby → Spiel → Game Over), 6 spielbaren Modi, mehreren Themes und einem großen Song-Katalog.
 
-## Core Philosophy
-- **Human-Centric:** No rigid AI-checking. A "Pilot" (player) manually validates answers to keep the game flow natural and fair unless the questions are completely clear.
-- **Privacy First:** No tracking, secure Google Auth via Supabase, and local-first data processing.
-- **Hybrid Play:** Works with physical QR cards or as a purely digital web-app.
-- **Open Standards:** Export cards as print-ready PNGs optimized for professional services (like meinspiel.de) or DIY home printing.
+## Produktstatus (Stand: 2. April 2026)
+- **Framework:** Next.js 16 + React 19 + TypeScript.
+- **State:** Zustand-Store mit Session-/Runden-/Scoring-Logik.
+- **Modi:** 6 aktiv im Game-Flow.
+- **Packs:** 27 Packs / 1.915 Songs im Katalog.
+- **Build / Typecheck / Tests:** grün.
+- **Admin-API-Security:** Bearer-Token-Guard (`x-admin-token` via `ADMIN_API_TOKEN`) + Input-/URL-Validierung für Cover-Endpoints.
+- **Bekannte Quality-Gaps:** viele Lint-Warnungen, Katalog-Duplikate, fehlende Jahresabdeckung 1952/2025/2026.
 
-## Game Modes (5 Total)
-1. **Chronological Timeline:** Place songs correctly in time via drag & drop. Successfully added cards allow (or force) removal of duplicates to keep the board clean. Auto-validated.
-2. **Hint-Master:** Guess the artist/title using 5 levels of increasingly easy clues (History -> Trivia -> Album -> Audio Snippet -> Full Song). Points: 5 down to 1. Pilot validates manually.
-3. **Lyrics Labyrinth:** Identify the AI-generated "fake" lyric line among 3 real ones. Players must lock in their choice **before** the music starts for the reveal. Auto-validated.
-4. **Vibe-Check:** Match songs to specific moods and compare your taste with anonymous global community stats. Auto-validated.
-5. **Survivor:** Decide if an artist is a "One-Hit Wonder" or a "Long-term Survivor" (2+ Top 40 hits). Auto-validated.
+---
 
-## Music Playback & Anti-Spoiler
-- **Providers:** YouTube (primary/free), Spotify Free (30s preview) + Premium (SDK), Amazon Music (YouTube fallback). Apple Music planned later (requires Apple Developer Account).
-- Provider is chosen once in Settings, changeable during game.
-- User click + countdown required (browser autoplay restriction).
-- **Anti-Spoiler Overlay:** Music plays behind a custom overlay -- no title, artist, or cover visible.
-  - Singleplayer: Reveal after own lock-in.
-  - Multiplayer: Reveal only after ALL lock-ins.
-- **Projector Mode (TV):** Separate route (`/projector`), also spoiler-free.
+## Spielmodi (aktuell implementiert)
 
-## Players & Sessions
-- **Anonymous play** by default, Google Login optional (for saves/community features).
-- **1-24 players**, default: single player.
-- **Teams:** Individual / Fixed Teams / Shifting Teams (randomized every round).
-- **Eliminated players** become spectators (can play along without scoring).
-- **Device Model:** Pass-the-Phone (default) + Multi-Device optional (session code via Supabase Realtime).
-- **Host-Assist:** Configurable level of host control.
+1. **Chronologische Timeline (`timeline`)**  
+   Songs in die richtige zeitliche Reihenfolge einordnen; Timeline wächst dynamisch, Punkte sind konfigurierbar gedeckelt.
 
-## Configuration (Pre-Game)
-- Time limit (optional), difficulty, modes, scoring, teams.
-- Players can join/leave before and during setup.
-- **Session Presets** saveable and loadable.
-- **UX:** Progressive Disclosure -- "Quick Start" (3 clicks) vs "Customize" (step-by-step wizard).
-- **Chips Mechanic:** Optional betting system (planned).
+2. **Hint-Master (`hint-master`)**  
+   Song über bis zu 5 Hinweise erraten; frühe Treffer geben mehr Punkte.
 
-## 4 Themes (Switchable In-App)
-1. **Jackbox Games** (Default) -- Colorful, bold, party arcade.
-2. **Spotify** -- Dark, minimal, clean.
-3. **YouTube** -- Dark/red, modern.
-4. **Music Wall / TikTok Vibe** -- White, tiles, album covers dominant.
+3. **Lyrics Labyrinth (`lyrics`)**  
+   Fake-Lyric zwischen echten Zeilen identifizieren.
 
-## Physical Cards (59x91mm + 3mm Bleed)
-- **Front:** Year displayed large, optional country flag, abstract musical design. **No** artist/title/hints on the card.
-- **Back:** Only QR code + Phomu URL (Session-/Pack-Intent, **kein** direkter Song-Link).
-- Everything else runs through the app.
-- Max 110 cards per set (for meinspiel.de).
+4. **Vibe-Check (`vibe-check`)**  
+   Song einer Stimmung zuordnen, Fokus auf Team-/Gruppengefühl.
 
-## Song Database
-- **Minimum 50 songs** for development, target 1,000+ for launch.
-- **First Pack:** "Global Hits 1950-2026" (globally popular songs across all decades).
-- Each song includes: title, artist, year, country, genre, difficulty, mood tags, 5 hints, 3 real + 1 fake lyric, one-hit-wonder flag, streaming links (YouTube + Spotify + Apple + Amazon).
-- AI-assisted creation (hints, fake lyrics), manually verified.
+5. **Survivor (`survivor`)**  
+   Einschätzen: One-Hit-Wonder oder nachhaltiger Chart-Act.
 
-## Tech Stack
-- **Framework:** Next.js 16 (App Router) + TypeScript (Strict Mode)
-- **Styling:** Tailwind CSS (Mobile-first, Responsive) + Framer Motion (Animations)
-- **State Management:** Zustand
-- **Backend:** Supabase (PostgreSQL, Auth, Real-time sync)
-- **Internationalization:** i18next (DE primary, EN)
-- **Hosting:** Vercel (Free Tier)
-- **License:** GPL-3.0 (Copyleft)
+6. **Cover Confusion (`cover-confusion`)**  
+   Cover-Version hören und Original-Interpret erkennen.
+
+---
+
+## Kernfunktionen
+
+- **Lobby & Session Setup:** Spielerverwaltung, Modusauswahl, Teamkonfiguration, Endbedingungen.
+- **Rundenlogik:** Drawing-, Question-, Reveal- und Scoring-Phasen.
+- **Scoring:** klassische Punkte + optionaler Time-Decay.
+- **Anti-Spoiler-Fokus:** Musik- und Reveal-Flows sollen erst im richtigen Moment auflösen.
+- **Themes:** Jackbox, Spotify, YouTube, Musicwall.
+- **Bilinguale Oberfläche:** Deutsch/Englisch.
+
+---
+
+## Qualität, Security und Tests
+
+### Bereits aktiv
+- `npm run typecheck`
+- `npm run lint` (derzeit nur Warnungen, keine Errors)
+- `npm run test`
+- `npm run test:e2e:install` (installiert Playwright Chromium)
+- `npm run test:e2e:install:linux` (installiert notwendige Linux-Systemlibs für Playwright)
+- `npm run test:e2e:smoke` (smoke flow via Playwright)
+- `npm run validate-songs`
+- `npm run validate-catalog`
+- `npm run build`
+
+### Größte offene Risiken
+- Lint-Warnungen (React-Hooks/Purity und `any`-Typen).
+- Katalogqualität (Duplikate + Jahrgangslücken + hohe Warnungsmenge).
+- Security-Hardening: wichtige Admin-API-Guardrails umgesetzt; nächste Schritte: CSP/Headers auf finalem Host und Rate-Limiting an Edge/Proxy.
+
+---
+
+## Dokumentations-Index (aktualisiert)
+
+- **Komplettes Multi-Rollen-Audit:** `specifications/full_audit_2026-04-02.md`
+- **Projektstatus (Snapshot):** `specifications/current_status_2026-04-02.md`
+- **Roadmap + Arbeitspakete + Abnahmekriterien:** `specifications/project_roadmap.md`
+- **Teststrategie (QA-Update):** `specifications/test_strategy.md`
+- **Security-Policy (überarbeitet):** `SECURITY.md`
+- **UX/Security Verbesserungsplan:** `specifications/improvement_plan_mobile_ux_security.md`
+- **Archiv (historische Dokumentstände):** `specifications/archive/` (inkl. archivierter Strategie- und Snapshot-Dokumente mit Datumsstempel im Dateinamen)
+
+---
+
+## Lokale Entwicklung
+
+```bash
+npm install
+npm run dev
+```
+
+Wichtige Checks:
+
+Zusätzlich für Admin-Endpoints:
+
+```bash
+cp .env.example .env.local
+# ADMIN_API_TOKEN setzen
+```
 
 
-## Quality & Trust
-- Multi-layer quality gates: Typecheck, Lint, Unit Tests, Data Validation, Build, Dependency Audit.
-- Privacy-first and data minimization: only store what is required for game functionality.
-- Security and contribution guidelines: `SECURITY.md` and `CONTRIBUTING.md`.
+```bash
+npm run typecheck
+npm run lint
+npm run test
+npm run test:e2e:install
+# nur auf Linux nötig, falls Browser-Libs fehlen:
+# npm run test:e2e:install:linux
+npm run test:e2e:smoke
+npm run validate-songs
+npm run validate-catalog
+npm run build
+```
 
-## Development Standards
-- **Modular Code:** Maximum 400-600 lines per file.
-- **TypeScript Strict:** No `any`. Clear interfaces for everything.
-- **Beginner-Friendly:** Every logic block explained in plain English/German for non-developers.
-- **Centralized Config:** All game constants in `src/config/game-config.ts`.
+---
 
+## Lizenz
 
-## Aktueller Projektstand (Dokumentation)
-- **Contributing Guide:** `CONTRIBUTING.md`
-- **Security & Privacy Policy:** `SECURITY.md`
-- **Statusbericht:** `specifications/current_status_2026-04-01.md`
-- **Verbesserungsplan (Mobile UX + Security + Phasen):** `specifications/improvement_plan_mobile_ux_security.md`
-- **Roadmap (historisch/ursprünglich):** `specifications/project_roadmap.md`
-- **Strategie & PM-Vorschläge (5.000 Songs, Scoring, UX/UI, Admin-Security):** `specifications/product_strategy_2026-03-31.md`
-
-> Hinweis: Der Statusbericht vom **1. April 2026** ist die führende Quelle für den aktuellen Ist-Zustand und offene Qualitätslücken.
+GPL-3.0

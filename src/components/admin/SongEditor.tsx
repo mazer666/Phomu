@@ -14,9 +14,10 @@ interface SongEditorProps {
   song: PhomuSong;
   onSave: (updated: PhomuSong) => void;
   onCancel: () => void;
+  variant?: 'modal' | 'inline';
 }
 
-export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
+export function SongEditor({ song, onSave, onCancel, variant = 'modal' }: SongEditorProps) {
   const [form, setForm] = useState<PhomuSong>({ ...song });
 
   // Lyrics handling
@@ -27,6 +28,9 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
   const [moodInput, setMoodInput] = useState(song.mood.join(', '));
   const [supportedModesInput, setSupportedModesInput] = useState(song.supportedModes.join(', '));
   const [isQRCompatible, setIsQRCompatible] = useState(song.isQRCompatible);
+  const [hintEvidenceInput, setHintEvidenceInput] = useState(
+    (song.hintEvidence ?? ['', '', '', '', '']).join('\n')
+  );
 
   function updateHint(index: number, value: string) {
     const newHints = [...form.hints] as [string, string, string, string, string];
@@ -39,19 +43,35 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
     const lyrics = hasLyrics ? { real: [lyricsReal0, lyricsReal1, lyricsReal2] as [string, string, string], fake: lyricsFake } : null;
     const mood = moodInput.split(',').map((m) => m.trim()).filter(Boolean);
     const supportedModes = supportedModesInput.split(',').map((m) => m.trim()).filter(Boolean);
+    const evidenceRows = hintEvidenceInput.split('\n').map((row) => row.trim()).filter(Boolean).slice(0, 5);
+    const hintEvidence =
+      evidenceRows.length === 5
+        ? (evidenceRows as [string, string, string, string, string])
+        : undefined;
     
     onSave({ 
       ...form, 
       lyrics, 
       mood, 
       supportedModes, 
-      isQRCompatible 
+      isQRCompatible,
+      hintEvidence
     });
   }
 
+  const containerClass =
+    variant === 'modal'
+      ? 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto'
+      : 'w-full';
+
+  const panelClass =
+    variant === 'modal'
+      ? 'bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 space-y-6'
+      : 'bg-white rounded-2xl shadow-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-6';
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 space-y-6">
+    <div className={containerClass}>
+      <div className={panelClass}>
         <div className="flex items-center justify-between border-b border-gray-100 pb-4">
           <h2 className="text-2xl font-black text-gray-900">✏️ Song bearbeiten</h2>
           <button onClick={onCancel} className="text-gray-400 hover:text-gray-900 text-2xl">✕</button>
@@ -64,6 +84,8 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
           <Input label="Jahr" value={form.year} type="number" onChange={v => setForm(p => ({ ...p, year: parseInt(v) || p.year }))} />
           <Input label="Land" value={form.country} onChange={v => setForm(p => ({ ...p, country: v.toUpperCase() }))} />
           <Input label="Genre" value={form.genre} onChange={v => setForm(p => ({ ...p, genre: v }))} />
+          <Input label="YouTube ID/URL" value={form.links.youtube} onChange={v => setForm(p => ({ ...p, links: { ...p.links, youtube: v } }))} />
+          <Input label="Cover URL" value={form.coverUrl ?? ''} onChange={v => setForm(p => ({ ...p, coverUrl: v || undefined }))} />
         </div>
 
         <div className="space-y-3">
@@ -105,6 +127,19 @@ export function SongEditor({ song, onSave, onCancel }: SongEditorProps) {
               {isQRCompatible ? '✅ QR Kompatibel' : '❌ Nicht QR'}
             </button>
           </div>
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-[10px] font-black text-gray-400 uppercase tracking-tighter">
+            Hint Evidences (je Zeile eine URL, 5 Zeilen)
+          </label>
+          <textarea
+            value={hintEvidenceInput}
+            onChange={(e) => setHintEvidenceInput(e.target.value)}
+            placeholder="https://...\nhttps://...\nhttps://...\nhttps://...\nhttps://..."
+            rows={5}
+            className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 bg-white text-gray-900"
+          />
         </div>
 
         <div className="flex gap-4 pt-4 border-t border-gray-100">

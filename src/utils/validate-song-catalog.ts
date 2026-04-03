@@ -35,9 +35,46 @@ function loadBaseline(): QualityBaseline | null {
   return JSON.parse(raw) as QualityBaseline;
 }
 
+
+interface DuplicateAllowlist {
+  allowedDuplicateKeys: string[];
+}
+
+function loadDuplicateAllowlist(): Set<string> {
+  const allowlistPath = path.resolve(process.cwd(), 'specifications/duplicate-allowlist.json');
+  if (!fs.existsSync(allowlistPath)) return new Set();
+  const raw = fs.readFileSync(allowlistPath, 'utf-8');
+  const parsed = JSON.parse(raw) as DuplicateAllowlist;
+  return new Set(parsed.allowedDuplicateKeys ?? []);
+}
+
 interface DuplicateEntry {
   key: string;
   songs: Array<{ id: string; artist: string; title: string; year: number; packFile: string }>;
+}
+
+const SECONDARY_DUPLICATE_PACKS = new Set<string>([
+  // Import-Pack enthält häufig alternative Uploads/Remaster derselben Songs.
+  // Diese sollen kuratierte Pack-Dubletten nicht künstlich aufblasen.
+  'youtube-import.json',
+]);
+
+interface CatalogIssuesReport {
+  generatedAt: string;
+  packs: number;
+  songs: number;
+  schemaErrors: number;
+  schemaWarnings: number;
+  duplicateGroups: number;
+  allowedDuplicateGroups: number;
+  ignoredSecondaryDuplicateGroups: number;
+  missingYears: number[];
+  topDuplicateGroups: DuplicateEntry[];
+}
+
+function writeIssuesReport(report: CatalogIssuesReport, reportPath: string): void {
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
+  console.log(`📝 Report geschrieben: ${path.relative(process.cwd(), reportPath)}`);
 }
 
 function normalizeText(value: string): string {
@@ -94,6 +131,11 @@ function checkDuplicates(packs: PackFile[]): DuplicateEntry[] {
     .map(([key, songs]) => ({ key, songs }));
 }
 
+function isSecondaryDuplicateOnly(entry: DuplicateEntry): boolean {
+  const primaryCount = entry.songs.filter((song) => !SECONDARY_DUPLICATE_PACKS.has(song.packFile)).length;
+  return primaryCount <= 1;
+}
+
 function checkYearCoverage(packs: PackFile[], startYear: number, endYear: number): number[] {
   const present = new Set<number>();
 
@@ -115,6 +157,20 @@ function checkYearCoverage(packs: PackFile[], startYear: number, endYear: number
   return missing;
 }
 
+function resolveCoverageEndYear(args: string[], currentYear: number): number {
+  const explicitArg = args.find((arg) => arg.startsWith('--coverage-end-year='));
+  if (!explicitArg) {
+    // Default: laufendes Jahr muss ebenfalls abgedeckt sein.
+    return currentYear;
+  }
+
+  const parsed = Number(explicitArg.replace('--coverage-end-year=', '').trim());
+  if (!Number.isInteger(parsed) || parsed < 1900 || parsed > currentYear + 1) {
+    throw new Error(`Ungültiger Wert für --coverage-end-year: "${explicitArg}"`);
+  }
+  return parsed;
+}
+
 function main(): void {
   const packsDir = path.resolve(process.cwd(), 'src/data/packs');
   const packs = readPackFiles(packsDir);
@@ -130,9 +186,21 @@ function main(): void {
     totalWarnings += result.allWarnings.length;
   }
 
-  const duplicates = checkDuplicates(packs);
+  const allDuplicates = checkDuplicates(packs);
+  const duplicateAllowlist = loadDuplicateAllowlist();
+  const allowlistFiltered = allDuplicates.filter((entry) => !duplicateAllowlist.has(entry.key));
+  const ignoredSecondaryDuplicates = allowlistFiltered.filter(isSecondaryDuplicateOnly).length;
+  const duplicates = allowlistFiltered.filter((entry) => !isSecondaryDuplicateOnly(entry));
+  const allowedDuplicates = allDuplicates.length - duplicates.length;
   const currentYear = new Date().getFullYear();
-  const missingYears = checkYearCoverage(packs, 1950, currentYear);
+  const coverageEndYear = resolveCoverageEndYear(process.argv, currentYear);
+  const missingYears = checkYearCoverage(packs, 1950, coverageEndYear);
+  const shouldWriteReport = process.argv.includes('--write-report');
+  const reportArg = process.argv.find((arg) => arg.startsWith('--report-path='));
+  const reportPath = path.resolve(
+    process.cwd(),
+    reportArg ? reportArg.replace('--report-path=', '') : 'specifications/catalog_issues_report.json',
+  );
 
   console.log('🎛️  Phomu Katalog-Qualitätsgate');
   console.log(`Packs: ${packs.length}`);
@@ -140,7 +208,9 @@ function main(): void {
   console.log(`Schema-Fehler: ${totalErrors}`);
   console.log(`Schema-Warnungen: ${totalWarnings}`);
   console.log(`Duplicate-Gruppen: ${duplicates.length}`);
-  console.log(`Fehlende Jahre (1950-${currentYear}): ${missingYears.length}`);
+  console.log(`Erlaubte Dubletten (Allowlist): ${allowedDuplicates}`);
+  console.log(`Ignorierte Secondary-Dubletten: ${ignoredSecondaryDuplicates}`);
+  console.log(`Fehlende Jahre (1950-${coverageEndYear}): ${missingYears.length}`);
 
   if (duplicates.length > 0) {
     console.log('\n❌ Duplicate-Kandidaten (Top 20):');
@@ -154,6 +224,22 @@ function main(): void {
 
   if (missingYears.length > 0) {
     console.log(`\n❌ Fehlende Jahre: ${missingYears.join(', ')}`);
+  }
+
+  if (shouldWriteReport) {
+    const report: CatalogIssuesReport = {
+      generatedAt: new Date().toISOString(),
+      packs: packs.length,
+      songs: totalSongs,
+      schemaErrors: totalErrors,
+      schemaWarnings: totalWarnings,
+      duplicateGroups: duplicates.length,
+      allowedDuplicateGroups: allowedDuplicates,
+      ignoredSecondaryDuplicateGroups: ignoredSecondaryDuplicates,
+      missingYears,
+      topDuplicateGroups: duplicates,
+    };
+    writeIssuesReport(report, reportPath);
   }
 
   const strictMode = process.argv.includes('--strict');

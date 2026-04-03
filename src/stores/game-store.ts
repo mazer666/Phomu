@@ -98,6 +98,9 @@ interface GameActions {
   /** Setzt den bevorzugten Player-Typ */
   setPreferredPlayer: (type: 'standard' | 'music') => void;
 
+  /** Audio-Einstellungen für Musik/SFX */
+  setAudioSettings: (updates: Partial<Pick<GameState, 'musicEnabled' | 'musicVolume' | 'sfxEnabled' | 'sfxVolume'>>) => void;
+
   /** Wechselt die aktuelle Rundenphase */
   advancePhase: (phase: RoundPhase) => void;
 
@@ -166,6 +169,10 @@ function createInitialState(): GameState {
     // Global Progression & Preferences
     totalXP: 0,
     preferredPlayer: 'standard',
+    musicEnabled: true,
+    musicVolume: 0.8,
+    sfxEnabled: true,
+    sfxVolume: 0.55,
     currentSongSource: null,
     autoDrawIntent: false,
     timelineYears: [],
@@ -408,6 +415,16 @@ export const useGameStore = create<GameStore>()(
         set({ preferredPlayer: type });
       },
 
+      // ── setAudioSettings ─────────────────────────────────────────
+      setAudioSettings(updates) {
+        set((state) => ({
+          musicEnabled: updates.musicEnabled ?? state.musicEnabled,
+          musicVolume: updates.musicVolume ?? state.musicVolume,
+          sfxEnabled: updates.sfxEnabled ?? state.sfxEnabled,
+          sfxVolume: updates.sfxVolume ?? state.sfxVolume,
+        }));
+      },
+
       // ── advancePhase ──────────────────────────────────────────────
       advancePhase(phase) {
         set({ roundPhase: phase });
@@ -598,6 +615,10 @@ export const useGameStore = create<GameStore>()(
         sessionId: state.sessionId,
         totalXP: state.totalXP,
         preferredPlayer: state.preferredPlayer,
+        musicEnabled: state.musicEnabled,
+        musicVolume: state.musicVolume,
+        sfxEnabled: state.sfxEnabled,
+        sfxVolume: state.sfxVolume,
         currentRound: state.currentRound,
         isGameOver: state.isGameOver,
         timelineYears: state.timelineYears,

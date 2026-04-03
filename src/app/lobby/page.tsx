@@ -1,8 +1,8 @@
 /**
  * Lobby-Seite (Wizard-Edition)
- * 
- * Ein schrittweiser Prozess (1-4) für optimale Mobile-Nutzung.
- * 1. Spieler | 2. Modi | 3. Packs | 4. Einstellungen
+ *
+ * Ein schrittweiser Prozess (1-5) für optimale Mobile-Nutzung.
+ * 1. Spieler | 2. Modi | 3. Packs | 4. Spielende | 5. Teams
  */
 'use client';
 
@@ -77,6 +77,8 @@ export default function LobbyPage() {
 
   // ─── Hilfsfunktionen ────────────────────────────────────────────
 
+  const TOTAL_STEPS = 6;
+
   const canGoNext = useMemo(() => {
     if (step === 1) return players.length >= PHOMU_CONFIG.MIN_PLAYERS;
     if (step === 2) return config.selectedModes.length > 0;
@@ -126,12 +128,12 @@ export default function LobbyPage() {
       <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black">🕹️ Lobby</h1>
-          <span className="text-sm font-bold opacity-30">Schritt {step} von 4</span>
+          <span className="text-sm font-bold opacity-30">Schritt {step} von {TOTAL_STEPS}</span>
         </div>
         <div className="h-2 bg-white/10 rounded-full overflow-hidden">
           <motion.div
             className="h-full bg-[var(--color-accent)]"
-            animate={{ width: `${(step / 4) * 100}%` }}
+            animate={{ width: `${(step / TOTAL_STEPS) * 100}%` }}
           />
         </div>
       </div>
@@ -253,298 +255,385 @@ export default function LobbyPage() {
               className="space-y-8"
             >
               <div>
-                  <h2 className="text-xl font-bold mb-2">Feinschlapf</h2>
-                  <p className="text-sm opacity-60">Letzte Einstellungen vor dem Start.</p>
-                </div>
+                <h2 className="text-xl font-bold mb-2">Wann ist Schluss?</h2>
+                <p className="text-sm opacity-60">Lege fest, wann das Spiel endet.</p>
+              </div>
 
-                <div className="grid gap-6">
-                  {/* Game Ending Condition */}
-                  <div className="bg-[var(--color-bg-card)]/50 p-6 rounded-3xl border border-[var(--color-border)] space-y-6">
-                    <div className="flex flex-col gap-4">
-                      <div className="text-center">
-                        <label className="text-[10px] font-black opacity-40 uppercase tracking-widest">Spiel-Ende nach...</label>
-                        <p className="text-[9px] opacity-30 uppercase tracking-[0.2em] mt-1">Nur die aktive Bedingung beendet das Spiel</p>
-                      </div>
-                      <div className="grid grid-cols-3 gap-2 p-1 bg-white/5 rounded-2xl">
-                        {(['points', 'rounds', 'time'] as const).map((mode) => (
-                          <button
-                            key={mode}
-                            onClick={() => setConfig({ endingCondition: mode })}
-                            className={`py-3 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${config.endingCondition === mode ? 'bg-[var(--color-accent)] text-white shadow-lg' : 'opacity-40 hover:opacity-100'}`}
-                          >
-                            {mode === 'points' ? '🏆 Punkte' : mode === 'rounds' ? '🔄 Runden' : '⏱️ Zeit'}
-                          </button>
-                        ))}
-                      </div>
+              <div className="grid gap-6">
+                {/* Game Ending Condition */}
+                <div className="bg-[var(--color-bg-card)]/50 p-6 rounded-3xl border border-[var(--color-border)] space-y-6">
+                  <div className="flex flex-col gap-4">
+                    <div className="text-center">
+                      <label className="text-[10px] font-black opacity-40 uppercase tracking-widest">Spiel-Ende nach...</label>
+                      <p className="text-[9px] opacity-30 uppercase tracking-[0.2em] mt-1">Nur die aktive Bedingung beendet das Spiel</p>
                     </div>
-
-                    {/* Presets based on mode */}
-                    <div className="space-y-4">
-                      {config.endingCondition === 'points' && (
-                        <div className="grid grid-cols-4 gap-2">
-                          {[50, 100, 200, 500].map(v => (
-                            <button
-                              key={v}
-                              onClick={() => setConfig({ targetPoints: v, winCondition: v })}
-                              className={`py-2 rounded-xl text-xs font-bold border transition-all ${config.targetPoints === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}
-                            >
-                              {v}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                      {config.endingCondition === 'rounds' && (
-                        <div className="grid grid-cols-4 gap-2">
-                          {[5, 10, 15, 20].map(v => (
-                            <button
-                              key={v}
-                              onClick={() => setConfig({ targetRounds: v, roundsToPlay: v })}
-                              className={`py-2 rounded-xl text-xs font-bold border transition-all ${config.targetRounds === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}
-                            >
-                              {v}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                      {config.endingCondition === 'time' && (
-                        <div className="grid grid-cols-4 sm:grid-cols-4 gap-2">
-                          {[30, 60, 90, 120, 150, 180, 210, 240].map(v => (
-                            <button
-                              key={v}
-                              onClick={() => setConfig({ targetTimeMinutes: v })}
-                              className={`py-2 rounded-xl text-[10px] font-bold border transition-all ${config.targetTimeMinutes === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}
-                            >
-                              {v < 60 ? `${v}m` : `${v/60}h`}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-
-                      {/* Manual Slider Section */}
-                      <div className="pt-4 border-t border-white/5">
-                        <div className="flex items-center justify-between mb-4">
-                          <span className="text-[10px] font-black opacity-30 uppercase tracking-widest">Eigene Einstellung</span>
-                          <span className="text-xl font-black text-[var(--color-accent)]">
-                            {config.endingCondition === 'points' && `${config.targetPoints} Pkt.`}
-                            {config.endingCondition === 'rounds' && `${config.targetRounds} Rnd.`}
-                            {config.endingCondition === 'time' && (config.targetTimeMinutes < 60 ? `${config.targetTimeMinutes} Min.` : `${config.targetTimeMinutes / 60} Std.`)}
-                          </span>
-                        </div>
-                        <input 
-                          type="range"
-                          min={config.endingCondition === 'time' ? 30 : 5}
-                          max={config.endingCondition === 'time' ? 240 : 500}
-                          step={config.endingCondition === 'time' ? 30 : 5}
-                          value={config.endingCondition === 'points' ? config.targetPoints : config.endingCondition === 'rounds' ? config.targetRounds : config.targetTimeMinutes}
-                          onChange={(e) => {
-                            const val = Number(e.target.value);
-                            if (config.endingCondition === 'points') setConfig({ targetPoints: val, winCondition: val });
-                            else if (config.endingCondition === 'rounds') setConfig({ targetRounds: val, roundsToPlay: val });
-                            else setConfig({ targetTimeMinutes: val });
-                          }}
-                          className="w-full h-1.5 accent-[var(--color-accent)] bg-white/10 rounded-full cursor-pointer appearance-none"
-                        />
-                      </div>
+                    <div className="grid grid-cols-3 gap-2 p-1 bg-white/5 rounded-2xl">
+                      {(['points', 'rounds', 'time'] as const).map((mode) => (
+                        <button
+                          key={mode}
+                          onClick={() => setConfig({ endingCondition: mode })}
+                          className={`py-3 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${config.endingCondition === mode ? 'bg-[var(--color-accent)] text-white shadow-lg' : 'opacity-40 hover:opacity-100'}`}
+                        >
+                          {mode === 'points' ? '🏆 Punkte' : mode === 'rounds' ? '🔄 Runden' : '⏱️ Zeit'}
+                        </button>
+                      ))}
                     </div>
                   </div>
 
-                  {/* Difficulty & Settings */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold opacity-40 uppercase ml-1">Schwierigkeit</label>
-                      <select 
-                        value={config.difficulty} 
-                        onChange={(e) => setConfig({ difficulty: e.target.value as Difficulty | 'all' })}
-                        className="w-full bg-[var(--color-bg-card)] border border-[var(--color-border)] p-4 rounded-2xl focus:border-[var(--color-accent)] outline-none transition-all"
-                      >
-                        {DIFFICULTY_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold opacity-40 uppercase ml-1">Zeitlimit</label>
-                      <select 
-                        value={config.timeLimitSeconds ?? ''} 
-                        onChange={(e) => setConfig({ timeLimitSeconds: e.target.value ? Number(e.target.value) : null })}
-                        className="w-full bg-[var(--color-bg-card)] border border-[var(--color-border)] p-4 rounded-2xl focus:border-[var(--color-accent)] outline-none transition-all"
-                      >
-                        {TIME_LIMIT_OPTIONS.map(o => <option key={o.value ?? 'null'} value={o.value ?? ''}>{o.label}</option>)}
-                      </select>
-                    </div>
-
-                    <div className="bg-[var(--color-bg-card)] p-4 rounded-2xl border border-[var(--color-border)]">
-                      <label className="flex items-center justify-between text-sm font-bold cursor-pointer group">
-                        <div className="flex flex-col">
-                          <span>QR-Karten Modus</span>
-                          <span className="text-[9px] opacity-40 uppercase tracking-widest mt-1">Nur physische Karten</span>
-                        </div>
-                        <input
-                          type="checkbox"
-                          checked={config.onlyQRCompatible ?? false}
-                          onChange={(e) => setConfig({ onlyQRCompatible: e.target.checked })}
-                          className="accent-[var(--color-accent)] w-6 h-6 rounded-lg overflow-hidden transition-all group-active:scale-90"
-                        />
-                      </label>
-                    </div>
-
-                    <div className="bg-[var(--color-bg-card)] p-4 rounded-2xl border border-[var(--color-border)]">
-                      <label className="flex items-center justify-between text-sm font-bold cursor-pointer group">
-                        <span>Zeitabzug</span>
-                        <input
-                          type="checkbox"
-                          checked={config.timeDecayEnabled}
-                          onChange={(e) => setConfig({ timeDecayEnabled: e.target.checked })}
-                          className="accent-[var(--color-accent)] w-6 h-6 rounded-lg overflow-hidden transition-all group-active:scale-90"
-                        />
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Team Mode */}
-                  <div className="space-y-6">
-                    <div>
-                      <label className="text-xs font-bold opacity-40 uppercase mb-3 block ml-1">Team Modus</label>
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                        {TEAM_MODE_OPTIONS.map(o => (
-                          <button
-                            key={o.value}
-                            onClick={() => handleTeamModeChange(o.value)}
-                            className={`p-4 rounded-2xl border-2 text-xs font-bold transition-all text-left flex flex-col gap-1 ${config.teamMode === o.value ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-accent)]' : 'border-white/5 bg-white/5 opacity-60 hover:opacity-100'}`}
-                          >
-                            <span className="text-sm">{o.label}</span>
-                            <span className="text-[9px] uppercase tracking-widest opacity-60">{o.description}</span>
+                  <div className="space-y-4">
+                    {config.endingCondition === 'points' && (
+                      <div className="grid grid-cols-4 gap-2">
+                        {[50, 100, 200, 500].map(v => (
+                          <button key={v} onClick={() => setConfig({ targetPoints: v, winCondition: v })}
+                            className={`py-2 rounded-xl text-xs font-bold border transition-all ${config.targetPoints === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
+                            {v}
                           </button>
                         ))}
                       </div>
-                    </div>
-
-                    {/* Team Configuration */}
-                    {(config.teamMode === 'fixed' || config.teamMode === 'shifting') && teams.length > 0 && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="space-y-6"
-                      >
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          {teams.map((team) => (
-                            <div
-                              key={team.id}
-                              className="p-4 rounded-3xl border-2 space-y-3"
-                              style={{ borderColor: team.color + '44', background: team.color + '10' }}
-                            >
-                              <div className="flex items-center justify-between gap-2">
-                                <div className="flex bg-white/5 rounded-lg flex-1">
-                                  <input 
-                                    value={team.name}
-                                    onChange={(e) => {
-                                      const next = teams.map(t => t.id === team.id ? { ...t, name: e.target.value } : t);
-                                      useGameStore.setState({ teams: next });
-                                    }}
-                                    className="bg-transparent font-black px-2 py-1 text-sm outline-none w-full"
-                                    style={{ color: team.color }}
-                                  />
-                                  <button
-                                    onClick={() => {
-                                      // Get an unused name by temporarily taking current teams into account
-                                      const used = teams.map(t => t.name);
-                                      useGameStore.getState().createTeam(); // We will use a custom shuffle directly via a quick inline or a new action. 
-                                      // Wait, a better way is to call createTeam without actually adding? No. I'll just change the name directly using a local list or dispatch an event, but I can't easily access pickTeamName since it's unexported. Let's just create a quick inline list of funny names if we need to shuffle.
-                                      // Let's use a standard array here for shuffling
-                                      const FUNNY_NAMES = ['Die Ohrwürmer', 'Stimmbruch Deluxe', 'Absolute Divas', 'Team Gänsehaut', 'Die Taktlosen', 'Bass im Gesicht', 'Die Plattenbosse', 'Vollplayback', 'Die Kopfhörer-Diebe', 'Team Zugabe', 'Karaoke-Katastrophe', 'Die Falschen Noten', 'Riff Raff', 'Die Discokugel-Gang', 'Team Eintagsfliege', 'Einfach zu laut', 'Die Hinterbänkler', 'Team Aufgedreht', 'Die Plattenspieler', 'Autotune-Verbot', 'Team Schallmauer', 'Die Dauerschleife', 'Mosh-Pit-Diplomaten', 'Team Bassgewicht'];
-                                      const available = FUNNY_NAMES.filter(n => !used.includes(n));
-                                      const randomName = (available.length > 0 ? available : FUNNY_NAMES)[Math.floor(Math.random() * (available.length > 0 ? available.length : FUNNY_NAMES.length))];
-                                      const next = teams.map(t => t.id === team.id ? { ...t, name: randomName } : t);
-                                      useGameStore.setState({ teams: next });
-                                    }}
-                                    className="w-8 flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity"
-                                    title="Anderer lustiger Name"
-                                  >
-                                    🎲
-                                  </button>
-                                </div>
-                                {teams.length > 2 && (
-                                  <button
-                                    onClick={() => removeTeam(team.id)}
-                                    className="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center text-xs opacity-60 hover:opacity-100 hover:bg-red-500/20 transition-all font-black"
-                                    title="Team löschen"
-                                  >
-                                    ✕
-                                  </button>
-                                )}
-                              </div>
-                              <div className="flex flex-wrap gap-2">
-                                {CURATED_TEAM_COLORS.map(c => (
-                                  <button
-                                    key={c.value}
-                                    onClick={() => {
-                                      const next = teams.map(t => t.id === team.id ? { ...t, color: c.value } : t);
-                                      useGameStore.setState({ teams: next });
-                                    }}
-                                    className={`w-4 h-4 rounded-full transition-all ${team.color === c.value ? 'scale-125 ring-2 ring-white border-2 border-black' : 'opacity-40 hover:opacity-100'}`}
-                                    style={{ backgroundColor: c.value }}
-                                  />
-                                ))}
-                              </div>
-                              <div className="flex flex-wrap gap-1.5 pt-2 border-t border-white/5">
-                                {players.filter(p => p.teamId === team.id).map(p => (
-                                  <span key={p.id} className="text-[10px] font-bold px-2 py-1 rounded-lg bg-white/5">
-                                    {p.avatar} {p.name}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-
-                        {config.teamMode === 'fixed' && (
-                          <div className="space-y-4">
-                            <h4 className="text-[10px] font-black uppercase opacity-30 tracking-widest ml-1">Team-Zuweisung</h4>
-                            <div className="grid gap-2">
-                              {players.map(player => (
-                                <div key={player.id} className="flex items-center gap-3 p-2 bg-white/5 rounded-2xl">
-                                  <span className="text-xl">{player.avatar}</span>
-                                  <span className="flex-1 text-xs font-bold">{player.name}</span>
-                                  <div className="flex gap-1">
-                                    {teams.map(team => (
-                                      <button
-                                        key={team.id}
-                                        onClick={() => assignPlayerToTeam(player.id, player.teamId === team.id ? undefined : team.id)}
-                                        className="px-3 py-1.5 rounded-xl text-[9px] font-black uppercase transition-all"
-                                        style={{ 
-                                          backgroundColor: player.teamId === team.id ? team.color : 'transparent',
-                                          color: player.teamId === team.id ? '#fff' : team.color,
-                                          border: `1px solid ${team.color}44`
-                                        }}
-                                      >
-                                        {team.name.split(' ')[0]}
-                                      </button>
-                                    ))}
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-                        
-                        {teams.length < Math.max(2, Math.floor(players.length / 2)) && teams.length < 8 && (
-                          <button 
-                            onClick={() => createTeam()}
-                            className="w-full py-3 rounded-2xl border-2 border-dashed border-white/10 text-xs font-bold opacity-40 hover:opacity-100 hover:border-white/30 transition-all"
-                          >
-                            + Weiteres Team hinzufügen
-                          </button>
-                        )}
-                        {players.length < 4 && (
-                           <div className="text-center p-3 bg-red-500/10 border border-red-500/20 rounded-2xl mt-4">
-                             <p className="text-[10px] font-black uppercase tracking-widest text-red-400">Hinweis</p>
-                             <p className="text-xs text-red-400/80 mt-1">Für den Team-Modus werden mindestens 4 Spieler benötigt (min. 2 pro Team).</p>
-                           </div>
-                        )}
-                      </motion.div>
                     )}
+                    {config.endingCondition === 'rounds' && (
+                      <div className="grid grid-cols-4 gap-2">
+                        {[5, 10, 15, 20].map(v => (
+                          <button key={v} onClick={() => setConfig({ targetRounds: v, roundsToPlay: v })}
+                            className={`py-2 rounded-xl text-xs font-bold border transition-all ${config.targetRounds === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
+                            {v}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    {config.endingCondition === 'time' && (
+                      <div className="grid grid-cols-4 gap-2">
+                        {[30, 60, 90, 120, 150, 180, 210, 240].map(v => (
+                          <button key={v} onClick={() => setConfig({ targetTimeMinutes: v })}
+                            className={`py-2 rounded-xl text-[10px] font-bold border transition-all ${config.targetTimeMinutes === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
+                            {v < 60 ? `${v}m` : `${v / 60}h`}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+
+                    <div className="pt-4 border-t border-white/5">
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-[10px] font-black opacity-30 uppercase tracking-widest">Eigene Einstellung</span>
+                        <span className="text-xl font-black text-[var(--color-accent)]">
+                          {config.endingCondition === 'points' && `${config.targetPoints} Pkt.`}
+                          {config.endingCondition === 'rounds' && `${config.targetRounds} Rnd.`}
+                          {config.endingCondition === 'time' && (config.targetTimeMinutes < 60 ? `${config.targetTimeMinutes} Min.` : `${config.targetTimeMinutes / 60} Std.`)}
+                        </span>
+                      </div>
+                      <input
+                        type="range"
+                        min={config.endingCondition === 'time' ? 30 : 5}
+                        max={config.endingCondition === 'time' ? 240 : 500}
+                        step={config.endingCondition === 'time' ? 30 : 5}
+                        value={config.endingCondition === 'points' ? config.targetPoints : config.endingCondition === 'rounds' ? config.targetRounds : config.targetTimeMinutes}
+                        onChange={(e) => {
+                          const val = Number(e.target.value);
+                          if (config.endingCondition === 'points') setConfig({ targetPoints: val, winCondition: val });
+                          else if (config.endingCondition === 'rounds') setConfig({ targetRounds: val, roundsToPlay: val });
+                          else setConfig({ targetTimeMinutes: val });
+                        }}
+                        className="w-full h-1.5 accent-[var(--color-accent)] bg-white/10 rounded-full cursor-pointer appearance-none"
+                      />
+                    </div>
                   </div>
                 </div>
-              </motion.div>
-            )}
+
+              </div>
+            </motion.div>
+          )}
+
+          {step === 5 && (
+            <motion.div
+              key="step-5"
+              custom={direction}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              variants={variants}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="space-y-8"
+            >
+              <div>
+                <h2 className="text-xl font-bold mb-2">Feintuning</h2>
+                <p className="text-sm opacity-60">Alles optional. Defaults sind solide.</p>
+              </div>
+
+              <div className="space-y-6">
+                {/* Schwierigkeit */}
+                <div className="space-y-3">
+                  <p className="text-[10px] font-black uppercase tracking-widest opacity-40 ml-1">Schwierigkeit</p>
+                  <div className="grid grid-cols-4 gap-2">
+                    {([
+                      { value: 'all',    label: 'Alles',   emoji: '🌈', sub: 'Für alle' },
+                      { value: 'easy',   label: 'Leicht',  emoji: '😌', sub: 'Hits, die jeder kennt' },
+                      { value: 'medium', label: 'Mittel',  emoji: '🎯', sub: 'Etwas Grips nötig' },
+                      { value: 'hard',   label: 'Schwer',  emoji: '💀', sub: 'Nur für Nerds' },
+                    ] as const).map(o => (
+                      <motion.button
+                        key={o.value}
+                        whileTap={{ scale: 0.93 }}
+                        onClick={() => setConfig({ difficulty: o.value })}
+                        className={`relative flex flex-col items-center gap-1.5 py-4 px-2 rounded-2xl border-2 transition-all ${
+                          config.difficulty === o.value
+                            ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10'
+                            : 'border-white/8 bg-white/5 opacity-50 hover:opacity-80'
+                        }`}
+                      >
+                        <span className="text-2xl">{o.emoji}</span>
+                        <span className="text-[10px] font-black uppercase tracking-tight leading-none">{o.label}</span>
+                        {config.difficulty === o.value && (
+                          <motion.div
+                            layoutId="diff-indicator"
+                            className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-[var(--color-accent)] flex items-center justify-center"
+                          >
+                            <span className="text-[8px] font-black text-white">✓</span>
+                          </motion.div>
+                        )}
+                      </motion.button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Zeitlimit pro Frage */}
+                <div className="space-y-3">
+                  <p className="text-[10px] font-black uppercase tracking-widest opacity-40 ml-1">Zeitlimit pro Frage</p>
+                  <div className="grid grid-cols-4 gap-2">
+                    {([
+                      { value: null, label: '∞',     sub: 'Kein Limit' },
+                      { value: 30,   label: '30s',   sub: 'Turbo' },
+                      { value: 60,   label: '60s',   sub: 'Normal' },
+                      { value: 120,  label: '2min',  sub: 'Gemütlich' },
+                    ] as const).map(o => (
+                      <motion.button
+                        key={o.value ?? 'null'}
+                        whileTap={{ scale: 0.93 }}
+                        onClick={() => setConfig({ timeLimitSeconds: o.value })}
+                        className={`flex flex-col items-center gap-1 py-4 px-2 rounded-2xl border-2 transition-all ${
+                          (config.timeLimitSeconds ?? null) === o.value
+                            ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10'
+                            : 'border-white/8 bg-white/5 opacity-50 hover:opacity-80'
+                        }`}
+                      >
+                        <span className="text-lg font-black tabular-nums" style={{ color: (config.timeLimitSeconds ?? null) === o.value ? 'var(--color-accent)' : 'inherit' }}>{o.label}</span>
+                        <span className="text-[9px] opacity-60 uppercase tracking-tight leading-none">{o.sub}</span>
+                      </motion.button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Toggle-Optionen */}
+                <div className="space-y-3">
+                  <p className="text-[10px] font-black uppercase tracking-widest opacity-40 ml-1">Extras</p>
+                  <div className="grid grid-cols-1 gap-3">
+                    {/* QR-Karten */}
+                    <motion.button
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => setConfig({ onlyQRCompatible: !(config.onlyQRCompatible ?? false) })}
+                      className={`relative flex items-center gap-4 p-4 rounded-2xl border-2 text-left transition-all ${
+                        config.onlyQRCompatible
+                          ? 'border-violet-500/60 bg-violet-500/10'
+                          : 'border-white/8 bg-white/5 opacity-60 hover:opacity-90'
+                      }`}
+                    >
+                      <span className="text-3xl shrink-0">📸</span>
+                      <div className="flex-1">
+                        <p className="text-sm font-black">QR-Karten Modus</p>
+                        <p className="text-[10px] opacity-50 mt-0.5">Nur Songs, die auf physischen Karten stehen.</p>
+                      </div>
+                      <div className={`w-11 h-6 rounded-full transition-all relative shrink-0 ${config.onlyQRCompatible ? 'bg-violet-500' : 'bg-white/10'}`}>
+                        <motion.div
+                          animate={{ x: config.onlyQRCompatible ? 22 : 2 }}
+                          transition={{ type: 'spring', stiffness: 500, damping: 28 }}
+                          className="absolute top-1 w-4 h-4 rounded-full bg-white shadow"
+                        />
+                      </div>
+                    </motion.button>
+
+                    {/* Zeitabzug */}
+                    <motion.button
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => setConfig({ timeDecayEnabled: !config.timeDecayEnabled })}
+                      className={`relative flex items-center gap-4 p-4 rounded-2xl border-2 text-left transition-all ${
+                        config.timeDecayEnabled
+                          ? 'border-orange-500/60 bg-orange-500/10'
+                          : 'border-white/8 bg-white/5 opacity-60 hover:opacity-90'
+                      }`}
+                    >
+                      <span className="text-3xl shrink-0">⏳</span>
+                      <div className="flex-1">
+                        <p className="text-sm font-black">Zeitabzug</p>
+                        <p className="text-[10px] opacity-50 mt-0.5">Wer trödelt, verliert Punkte. Kein Mitleid.</p>
+                      </div>
+                      <div className={`w-11 h-6 rounded-full transition-all relative shrink-0 ${config.timeDecayEnabled ? 'bg-orange-500' : 'bg-white/10'}`}>
+                        <motion.div
+                          animate={{ x: config.timeDecayEnabled ? 22 : 2 }}
+                          transition={{ type: 'spring', stiffness: 500, damping: 28 }}
+                          className="absolute top-1 w-4 h-4 rounded-full bg-white shadow"
+                        />
+                      </div>
+                    </motion.button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          {step === 6 && (
+            <motion.div
+              key="step-6"
+              custom={direction}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              variants={variants}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="space-y-8"
+            >
+              <div>
+                <h2 className="text-xl font-bold mb-2">Wer gegen wen?</h2>
+                <p className="text-sm opacity-60">Einzeln, feste Teams oder wechselnde Konstellationen.</p>
+              </div>
+
+              <div className="space-y-6">
+                {/* Team Mode Picker */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {TEAM_MODE_OPTIONS.map(o => (
+                    <button
+                      key={o.value}
+                      onClick={() => handleTeamModeChange(o.value)}
+                      className={`p-5 rounded-2xl border-2 text-left flex flex-col gap-1.5 transition-all ${config.teamMode === o.value ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-accent)]' : 'border-white/5 bg-white/5 opacity-60 hover:opacity-100'}`}
+                    >
+                      <span className="text-base font-black">{o.label}</span>
+                      <span className="text-[9px] uppercase tracking-widest opacity-60">{o.description}</span>
+                    </button>
+                  ))}
+                </div>
+
+                {/* Team Configuration */}
+                {(config.teamMode === 'fixed' || config.teamMode === 'shifting') && teams.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="space-y-6"
+                  >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {teams.map((team) => (
+                        <div
+                          key={team.id}
+                          className="p-4 rounded-3xl border-2 space-y-3"
+                          style={{ borderColor: team.color + '44', background: team.color + '10' }}
+                        >
+                          <div className="flex items-center justify-between gap-2">
+                            <div className="flex bg-white/5 rounded-lg flex-1">
+                              <input
+                                value={team.name}
+                                onChange={(e) => {
+                                  const next = teams.map(t => t.id === team.id ? { ...t, name: e.target.value } : t);
+                                  useGameStore.setState({ teams: next });
+                                }}
+                                className="bg-transparent font-black px-2 py-1 text-sm outline-none w-full"
+                                style={{ color: team.color }}
+                              />
+                              <button
+                                onClick={() => {
+                                  const used = teams.map(t => t.name);
+                                  const FUNNY_NAMES = ['Die Ohrwürmer', 'Stimmbruch Deluxe', 'Absolute Divas', 'Team Gänsehaut', 'Die Taktlosen', 'Bass im Gesicht', 'Die Plattenbosse', 'Vollplayback', 'Die Kopfhörer-Diebe', 'Team Zugabe', 'Karaoke-Katastrophe', 'Die Falschen Noten', 'Riff Raff', 'Die Discokugel-Gang', 'Team Eintagsfliege', 'Einfach zu laut', 'Die Hinterbänkler', 'Team Aufgedreht', 'Die Plattenspieler', 'Autotune-Verbot', 'Team Schallmauer', 'Die Dauerschleife', 'Mosh-Pit-Diplomaten', 'Team Bassgewicht'];
+                                  const available = FUNNY_NAMES.filter(n => !used.includes(n));
+                                  const pool = available.length > 0 ? available : FUNNY_NAMES;
+                                  const randomName = pool[Math.floor(Math.random() * pool.length)]!;
+                                  const next = teams.map(t => t.id === team.id ? { ...t, name: randomName } : t);
+                                  useGameStore.setState({ teams: next });
+                                }}
+                                className="w-8 flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity"
+                                title="Anderer lustiger Name"
+                              >
+                                🎲
+                              </button>
+                            </div>
+                            {teams.length > 2 && (
+                              <button
+                                onClick={() => removeTeam(team.id)}
+                                className="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center text-xs opacity-60 hover:opacity-100 hover:bg-red-500/20 transition-all font-black"
+                                title="Team löschen"
+                              >
+                                ✕
+                              </button>
+                            )}
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {CURATED_TEAM_COLORS.map(c => (
+                              <button
+                                key={c.value}
+                                onClick={() => {
+                                  const next = teams.map(t => t.id === team.id ? { ...t, color: c.value } : t);
+                                  useGameStore.setState({ teams: next });
+                                }}
+                                className={`w-4 h-4 rounded-full transition-all ${team.color === c.value ? 'scale-125 ring-2 ring-white border-2 border-black' : 'opacity-40 hover:opacity-100'}`}
+                                style={{ backgroundColor: c.value }}
+                              />
+                            ))}
+                          </div>
+                          <div className="flex flex-wrap gap-1.5 pt-2 border-t border-white/5">
+                            {players.filter(p => p.teamId === team.id).map(p => (
+                              <span key={p.id} className="text-[10px] font-bold px-2 py-1 rounded-lg bg-white/5">
+                                {p.avatar} {p.name}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {config.teamMode === 'fixed' && (
+                      <div className="space-y-4">
+                        <h4 className="text-[10px] font-black uppercase opacity-30 tracking-widest ml-1">Team-Zuweisung</h4>
+                        <div className="grid gap-2">
+                          {players.map(player => (
+                            <div key={player.id} className="flex items-center gap-3 p-2 bg-white/5 rounded-2xl">
+                              <span className="text-xl">{player.avatar}</span>
+                              <span className="flex-1 text-xs font-bold">{player.name}</span>
+                              <div className="flex gap-1">
+                                {teams.map(team => (
+                                  <button
+                                    key={team.id}
+                                    onClick={() => assignPlayerToTeam(player.id, player.teamId === team.id ? undefined : team.id)}
+                                    className="px-3 py-1.5 rounded-xl text-[9px] font-black uppercase transition-all"
+                                    style={{
+                                      backgroundColor: player.teamId === team.id ? team.color : 'transparent',
+                                      color: player.teamId === team.id ? '#fff' : team.color,
+                                      border: `1px solid ${team.color}44`,
+                                    }}
+                                  >
+                                    {team.name.split(' ')[0]}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {teams.length < Math.max(2, Math.floor(players.length / 2)) && teams.length < 8 && (
+                      <button
+                        onClick={() => createTeam()}
+                        className="w-full py-3 rounded-2xl border-2 border-dashed border-white/10 text-xs font-bold opacity-40 hover:opacity-100 hover:border-white/30 transition-all"
+                      >
+                        + Weiteres Team hinzufügen
+                      </button>
+                    )}
+                    {players.length < 4 && (
+                      <div className="text-center p-3 bg-red-500/10 border border-red-500/20 rounded-2xl">
+                        <p className="text-[10px] font-black uppercase tracking-widest text-red-400">Hinweis</p>
+                        <p className="text-xs text-red-400/80 mt-1">Für den Team-Modus werden mindestens 4 Spieler benötigt (min. 2 pro Team).</p>
+                      </div>
+                    )}
+                  </motion.div>
+                )}
+              </div>
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
 
@@ -573,7 +662,7 @@ export default function LobbyPage() {
       <footer className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-xl border-t border-white/5 pb-safe">
         <div className="max-w-2xl mx-auto px-4 md:px-8 pt-4 pb-8 flex flex-col gap-3">
           
-          {step === 4 && players.length > 0 && (
+          {step === TOTAL_STEPS && players.length > 0 && (
             <button
               onClick={handleStart}
               className="w-full py-5 rounded-3xl bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-primary)] text-white text-xl font-black shadow-2xl shadow-[var(--color-accent)]/20 active:scale-95 transition-all"
@@ -591,7 +680,7 @@ export default function LobbyPage() {
                 Zurück
               </button>
             )}
-            {step < 4 && (
+            {step < TOTAL_STEPS && (
               <button
                 onClick={() => goTo(step + 1)}
                 disabled={!canGoNext}
@@ -604,7 +693,7 @@ export default function LobbyPage() {
 
           <div className="flex justify-between items-center px-2">
             {players.length > 0 && step === 1 && (
-              <button onClick={() => goTo(4)} className="text-[10px] font-black uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-[var(--color-accent)] transition-all">
+              <button onClick={() => goTo(TOTAL_STEPS)} className="text-[10px] font-black uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-[var(--color-accent)] transition-all">
                 Schnell-Setup →
               </button>
             )}

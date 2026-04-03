@@ -55,6 +55,21 @@ const NEXT_ROUND_LABELS = [
   'Kein Zurück mehr →',
 ];
 
+
+function hashSeed(seed: string): number {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+function pickDeterministic<T>(items: T[], seed: string): T {
+  if (items.length === 0) throw new Error('Cannot pick from empty array');
+  const index = hashSeed(seed) % items.length;
+  return items[index]!;
+}
+
 // ─── Modus-spezifische Reveal-Karten ─────────────────────────────
 
 function buildTimelineHeadlines(year: number): string[] {
@@ -168,7 +183,7 @@ function buildTimelineHeadlines(year: number): string[] {
 
 function TimelineReveal({ song }: { song: PhomuSong }) {
   const headlines = useMemo(() => buildTimelineHeadlines(song.year), [song.year]);
-  const headline = useMemo(() => headlines[Math.floor(Math.random() * headlines.length)]!, [headlines]);
+  const headline = useMemo(() => pickDeterministic(headlines, `timeline:${song.id}`), [headlines, song.id]);
 
   return (
     <motion.div
@@ -203,7 +218,7 @@ function HintMasterReveal({ song }: { song: PhomuSong }) {
     'Der Song hat sich verraten.',
     'Kein Geheimnis mehr.',
   ], []);
-  const subline = useMemo(() => sublines[Math.floor(Math.random() * sublines.length)]!, [sublines]);
+  const subline = useMemo(() => pickDeterministic(sublines, `hint:${song.id}`), [sublines, song.id]);
 
   return (
     <motion.div
@@ -247,7 +262,7 @@ function LyricsReveal({ song }: { song: PhomuSong }) {
     'Diese Zeile war nie in dem Song:',
     'Unser kreativer Beitrag:',
   ], []);
-  const fakeLabel = useMemo(() => fakeLabels[Math.floor(Math.random() * fakeLabels.length)]!, [fakeLabels]);
+  const fakeLabel = useMemo(() => pickDeterministic(fakeLabels, `lyrics:${song.id}`), [fakeLabels, song.id]);
 
   if (!song.lyrics) {
     return (
@@ -300,7 +315,7 @@ function VibeCheckReveal({ song }: { song: PhomuSong }) {
     'Offiziell bestätigt:',
     'Das ist die Energie dieses Songs:',
   ], []);
-  const headline = useMemo(() => headlines[Math.floor(Math.random() * headlines.length)]!, [headlines]);
+  const headline = useMemo(() => pickDeterministic(headlines, `cover:${song.id}`), [headlines, song.id]);
 
   return (
     <motion.div
@@ -351,8 +366,8 @@ function SurvivorReveal({ song }: { song: PhomuSong }) {
 
   const headline = useMemo(() => {
     const pool = isOHW ? yesHeadlines : noHeadlines;
-    return pool[Math.floor(Math.random() * pool.length)]!;
-  }, [isOHW, yesHeadlines, noHeadlines]);
+    return pickDeterministic(pool, `survivor:${song.id}:${isOHW ? 'yes' : 'no'}`);
+  }, [isOHW, song.id, yesHeadlines, noHeadlines]);
 
   return (
     <motion.div
@@ -397,7 +412,7 @@ function CoverConfusionReveal({ song }: { song: PhomuSong }) {
     'Originalquelle bestätigt:',
     'Das haben die eigentlich erfunden:',
   ], []);
-  const headline = useMemo(() => headlines[Math.floor(Math.random() * headlines.length)]!, [headlines]);
+  const headline = useMemo(() => pickDeterministic(headlines, `cover:${song.id}`), [headlines, song.id]);
 
   return (
     <motion.div
@@ -457,8 +472,8 @@ export function RevealPhase({
 
   const [showPowerMenu, setShowPowerMenu] = useState(false);
 
-  const scoringHeader = useMemo(() => SCORING_HEADERS[Math.floor(Math.random() * SCORING_HEADERS.length)]!, []);
-  const nextRoundLabel = useMemo(() => NEXT_ROUND_LABELS[Math.floor(Math.random() * NEXT_ROUND_LABELS.length)]!, []);
+  const scoringHeader = useMemo(() => pickDeterministic(SCORING_HEADERS, `score:${song.id}:${currentMode}`), [song.id, currentMode]);
+  const nextRoundLabel = useMemo(() => pickDeterministic(NEXT_ROUND_LABELS, `next:${song.id}:${answers.length}`), [song.id, answers.length]);
 
   // Gewinner-Logik
   const showWinUI = isGameOver || (endingCondition === 'points' && (

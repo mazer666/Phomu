@@ -118,3 +118,8 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
 }
+
+/* Hide scrollbars on elements that use overflow-y:auto but still allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

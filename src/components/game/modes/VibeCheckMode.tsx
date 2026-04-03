@@ -109,6 +109,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         >
           <MusicPlayer 
             youtubeLink={song.links.youtube}
+            youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
             startSeconds={song.previewTimestamp?.start ?? 0}
             blurred={false}
           />
@@ -206,6 +207,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
           <div className="p-1.5 bg-gradient-to-b from-white/10 to-transparent rounded-[2rem] border border-white/10 shadow-inner">
             <MusicPlayer
               youtubeLink={song.links.youtube}
+              youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
               startSeconds={song.previewTimestamp?.start ?? 0}
               endSeconds={(song.previewTimestamp?.start ?? 0) + 120}
               blurred={false}

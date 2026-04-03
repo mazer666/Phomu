@@ -35,36 +35,40 @@ import youtubeImport from './youtube-import.json';
 
 import type { PhomuSong } from '@/types/song';
 
-/** All songs from all packs combined */
-export const ALL_SONGS: PhomuSong[] = [
-  ...(globalHits.songs as any),
-  ...(eightyFlashback.songs as any),
-  ...(movieHits.songs as any),
-  ...(rockAnthems.songs as any),
-  ...(ninetyUnplugged.songs as any),
-  ...(danceFloorFillers.songs as any),
-  ...(germanClassics.songs as any),
-  ...(hipHopEssentials.songs as any),
-  ...(indieAlternative.songs as any),
-  ...(electronicTechno.songs as any),
-  ...(schlagerEvergreens.songs as any),
-  ...(countryJazzBlues.songs as any),
-  ...(worldReggaeSoul.songs as any),
-  ...(sixtySeventyLegends.songs as any),
-  ...(popRnB2000s.songs as any),
-  ...(hits2010s2020s.songs as any),
-  ...(pop80s.songs as any),
-  ...(kidsDisney.songs as any),
-  ...(jazzBlues.songs as any),
-  ...(metalHardcore.songs as any),
-  ...(countryFolk.songs as any),
-  ...(pianoBallads.songs as any),
-  ...(electronicSynth.songs as any),
-  ...(soulFunk.songs as any),
-  ...(classicalOrchestral.songs as any),
-  ...(grandFinale.songs as any),
-  ...(youtubeImport.songs as any),
+type SongPackFile = { songs: unknown[] };
+
+const ALL_PACK_FILES: SongPackFile[] = [
+  globalHits,
+  eightyFlashback,
+  movieHits,
+  rockAnthems,
+  ninetyUnplugged,
+  danceFloorFillers,
+  germanClassics,
+  hipHopEssentials,
+  indieAlternative,
+  electronicTechno,
+  schlagerEvergreens,
+  countryJazzBlues,
+  worldReggaeSoul,
+  sixtySeventyLegends,
+  popRnB2000s,
+  hits2010s2020s,
+  pop80s,
+  kidsDisney,
+  jazzBlues,
+  metalHardcore,
+  countryFolk,
+  pianoBallads,
+  electronicSynth,
+  soulFunk,
+  classicalOrchestral,
+  grandFinale,
+  youtubeImport,
 ];
+
+/** All songs from all packs combined */
+export const ALL_SONGS: PhomuSong[] = ALL_PACK_FILES.flatMap((pack) => pack.songs) as PhomuSong[];
 
 /** All available pack names extracted from data */
 export const AVAILABLE_PACKS: string[] = Array.from(new Set(ALL_SONGS.map(s => s.pack)));

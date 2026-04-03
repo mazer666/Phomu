@@ -1,85 +1,76 @@
-/**
- * ModeSelector
- *
- * Multi-Select-Komponente für die 5 Phomu-Spielmodi.
- * Jeder Modus wird mit Icon, Titel und Kurzbeschreibung angezeigt.
- * Mindestens ein Modus muss immer aktiv bleiben.
- */
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import type { GameMode } from '@/config/game-config';
-
-// ─── Modus-Metadaten ──────────────────────────────────────────────
 
 interface ModeInfo {
   id: GameMode;
-  icon: string;
+  emoji: string;
   title: string;
-  description: string;
+  tagline: string;
+  flavour: string;
+  gradient: [string, string];
 }
 
-/** Beschreibungen für alle 5 Spielmodi auf Deutsch */
 const MODES: ModeInfo[] = [
   {
     id: 'timeline',
-    icon: '📅',
-    title: 'Chronologische Timeline',
-    description:
-      'Sortiere Songs nach ihrem Erscheinungsjahr. Wer die perfekteste Zeitlinie baut, gewinnt!',
+    emoji: '📅',
+    title: 'Timeline',
+    tagline: 'Wann war das nochmal?',
+    flavour: 'Songs nach Jahr sortieren. Klingt einfach. Ist es nicht.',
+    gradient: ['#0891b2', '#2563eb'],
   },
   {
     id: 'hint-master',
-    icon: '🕵️',
+    emoji: '🕵️',
     title: 'Hint-Master',
-    description:
-      'Erkenne den Song anhand von bis zu 5 Hinweisen. Je früher du rätst, desto mehr Punkte!',
+    tagline: 'Fünf Hinweise. Einer reicht dir.',
+    flavour: 'Je früher du antwortest, desto mehr Punkte. Aber auch desto mehr Risiko.',
+    gradient: ['#7c3aed', '#db2777'],
   },
   {
     id: 'lyrics',
-    icon: '📝',
+    emoji: '📝',
     title: 'Lyrics Labyrinth',
-    description:
-      'Welcher Liedtext ist echt, welcher ist frei erfunden? Entlarve die falschen Lyrics!',
+    tagline: 'Einer von uns lügt.',
+    flavour: 'Echter Text oder frei erfunden? Dein Ohrwurm-Gedächtnis gegen unsere KI.',
+    gradient: ['#dc2626', '#ea580c'],
   },
   {
     id: 'vibe-check',
-    icon: '😎',
-    title: 'Vibe-Check',
-    description:
-      'Ordne jeden Song einer Stimmung zu — Punkte gibt es, wenn ihr alle gleich fühlt.',
+    emoji: '😎',
+    title: 'Vibe Check',
+    tagline: 'Fühlst du das, oder fühlst du das nicht?',
+    flavour: 'Stimmt die Gruppe überein, gibt\'s Punkte. Gruppentherapie durch Musik.',
+    gradient: ['#059669', '#0d9488'],
   },
   {
     id: 'survivor',
-    icon: '🏆',
+    emoji: '🏆',
     title: 'Survivor',
-    description:
-      'One-Hit-Wonder oder Dauerstar? Erkenne, ob ein Artist nur diesen einen Hit hatte.',
+    tagline: 'One-Hit-Wonder oder Dauerstar?',
+    flavour: 'Erkenne, ob der Artist mehr als diesen einen Song hatte. Peinlich wenn nicht.',
+    gradient: ['#b45309', '#d97706'],
   },
   {
     id: 'cover-confusion',
-    icon: '🎭',
+    emoji: '🎭',
     title: 'Cover Confusion',
-    description:
-      'Hör einen Cover-Song und errate den Original-Interpreten — mit oder ohne Hinweise.',
+    tagline: 'Das Original ist nicht das, was du denkst.',
+    flavour: 'Du hörst ein Cover. Wer hat\'s zuerst gemacht? Könnte alles sein.',
+    gradient: ['#be185d', '#9333ea'],
   },
 ];
 
-// ─── Props ────────────────────────────────────────────────────────
-
 interface ModeSelectorProps {
-  /** Aktuell ausgewählte Modi */
   selectedModes: GameMode[];
-  /** Wird aufgerufen, wenn sich die Auswahl ändert */
   onChange: (modes: GameMode[]) => void;
 }
-
-// ─── Komponente ───────────────────────────────────────────────────
 
 export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
   function toggleMode(modeId: GameMode) {
     if (selectedModes.includes(modeId)) {
-      // Letzten aktiven Modus nicht abwählen
       if (selectedModes.length === 1) return;
       onChange(selectedModes.filter((m) => m !== modeId));
     } else {
@@ -87,73 +78,117 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
     }
   }
 
-  function handleSelectAll() {
-    onChange(MODES.map(m => m.id));
-  }
+  const allSelected = selectedModes.length === MODES.length;
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-end px-1">
+      <div className="flex justify-between items-center px-1">
         <div>
-          <p className="text-[10px] font-black uppercase opacity-40 tracking-widest leading-none">Rotation</p>
-          <p className="text-[10px] font-bold text-[var(--color-accent)] uppercase">
-            {selectedModes.length} von {MODES.length} ausgewählt
+          <p className="text-[10px] font-black uppercase opacity-40 tracking-widest leading-none">Modi</p>
+          <p className="text-[11px] font-black mt-0.5" style={{ color: 'var(--color-accent)' }}>
+            {selectedModes.length} von {MODES.length} aktiv
           </p>
         </div>
         <button
-          onClick={handleSelectAll}
-          className="text-[10px] font-black uppercase underline decoration-[var(--color-accent)] opacity-60 hover:opacity-100"
+          onClick={() => onChange(allSelected ? [MODES[0]!.id] : MODES.map(m => m.id))}
+          className="text-[10px] font-black uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity border border-white/10 px-3 py-1.5 rounded-full hover:bg-white/5"
         >
-          Alle wählen
+          {allSelected ? 'Abwählen' : 'Alle wählen'}
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 gap-3">
         {MODES.map((mode, index) => {
           const isSelected = selectedModes.includes(mode.id);
+          const isLast = isSelected && selectedModes.length === 1;
+          const [gradFrom, gradTo] = mode.gradient;
 
           return (
             <motion.button
               key={mode.id}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
+              initial={{ opacity: 0, x: -16 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.04, type: 'spring', stiffness: 380, damping: 28 }}
               onClick={() => toggleMode(mode.id)}
-              whileTap={{ scale: 0.97 }}
-              className={[
-                'text-left p-4 rounded-2xl border-2 transition-all',
-                isSelected
-                  ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 shadow-lg shadow-[var(--color-accent)]/5'
-                  : 'border-white/5 bg-white/5 hover:border-white/20',
-              ].join(' ')}
+              whileTap={{ scale: 0.98 }}
               aria-pressed={isSelected}
+              className="relative text-left rounded-2xl overflow-hidden focus:outline-none"
             >
-              {/* Icon + Titel */}
-              <div className="flex items-start gap-3">
-                <span className="text-2xl leading-none mt-0.5" aria-hidden>
-                  {mode.icon}
-                </span>
-                <div className="flex-1 min-w-0">
-                  <p className="font-bold text-sm leading-tight uppercase tracking-tight">{mode.title}</p>
-                  <p className="text-[10px] opacity-50 mt-1 leading-snug">{mode.description}</p>
-                </div>
-              </div>
+              {/* Gradient bg */}
+              <div
+                className="absolute inset-0 transition-opacity duration-300"
+                style={{
+                  background: `linear-gradient(135deg, ${gradFrom}, ${gradTo})`,
+                  opacity: isSelected ? 1 : 0.18,
+                }}
+              />
 
-              {/* Status Row */}
-              <div className="mt-3 flex items-center justify-between">
-                <div className="flex-1">
-                   {isSelected && (
-                     <div className="flex items-center gap-1.5">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] animate-pulse" />
-                        <span className="text-[10px] font-black text-[var(--color-accent)] uppercase tracking-widest">Aktiv</span>
-                     </div>
-                   )}
+              {/* Border glow */}
+              <div
+                className="absolute inset-0 rounded-2xl border-2 transition-all duration-300"
+                style={{
+                  borderColor: isSelected ? `${gradTo}bb` : 'rgba(255,255,255,0.07)',
+                  boxShadow: isSelected ? `0 0 20px ${gradFrom}44` : 'none',
+                }}
+              />
+
+              {/* Dim overlay when off */}
+              {!isSelected && (
+                <div className="absolute inset-0 rounded-2xl bg-[#0a0a0c]/55 pointer-events-none" />
+              )}
+
+              {/* Content */}
+              <div className="relative z-10 flex items-center gap-4 px-4 py-4">
+                {/* Emoji */}
+                <motion.span
+                  className="text-3xl leading-none shrink-0"
+                  animate={{ scale: isSelected ? 1.15 : 1 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+                >
+                  {mode.emoji}
+                </motion.span>
+
+                {/* Text */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <p className="font-black text-sm uppercase tracking-tight leading-none">
+                      {mode.title}
+                    </p>
+                    {isLast && (
+                      <span className="text-[8px] font-black uppercase tracking-widest px-1.5 py-0.5 rounded-full bg-white/10 opacity-50">
+                        Pflicht
+                      </span>
+                    )}
+                  </div>
+                  <p
+                    className="text-[11px] font-black italic mt-0.5 leading-tight transition-opacity duration-200"
+                    style={{ opacity: isSelected ? 0.9 : 0.45 }}
+                  >
+                    {mode.tagline}
+                  </p>
+                  <p
+                    className="text-[10px] mt-1 leading-snug transition-opacity duration-200"
+                    style={{ opacity: isSelected ? 0.6 : 0.25 }}
+                  >
+                    {mode.flavour}
+                  </p>
                 </div>
-                
-                {/* Hinweis: letzter Modus kann nicht deaktiviert werden */}
-                {isSelected && selectedModes.length === 1 && (
-                  <p className="text-[9px] opacity-30 uppercase font-black">Erforderlich</p>
-                )}
+
+                {/* Checkmark */}
+                <AnimatePresence>
+                  {isSelected && (
+                    <motion.div
+                      initial={{ scale: 0, rotate: -20 }}
+                      animate={{ scale: 1, rotate: 0 }}
+                      exit={{ scale: 0, rotate: 20 }}
+                      transition={{ type: 'spring', stiffness: 500, damping: 22 }}
+                      className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 font-black text-xs shadow-lg"
+                      style={{ background: gradTo }}
+                    >
+                      ✓
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </motion.button>
           );

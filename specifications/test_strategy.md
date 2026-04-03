@@ -1,7 +1,12 @@
-# Phomu Test Strategy (aktualisiert: 1. April 2026)
+# Phomu Teststrategie (aktualisiert: 2. April 2026)
 
-## 1) Quality Gates (CI)
-Pflicht in der Pipeline:
+## 1) Zielbild
+Die Teststrategie stellt sicher, dass Phomu als Musik-Partyspiel stabil, fair, sicher und auf Mobilgeräten zuverlässig spielbar ist.
+
+---
+
+## 2) Verbindliche Quality Gates (CI)
+
 1. `npm run typecheck`
 2. `npm run lint`
 3. `npm run test`
@@ -10,32 +15,58 @@ Pflicht in der Pipeline:
 6. `npm run build`
 7. `npm audit --omit=dev --audit-level=moderate`
 
-Nicht-blockierend in der Baseline-Phase:
-- `npm run format:check` (wird als sichtbarer Warnkanal geführt, bis Repo-weit formatiert ist)
-
-Optional bei gesetztem Secret:
+Optional, wenn Secret gesetzt:
 - `npm run audit-youtube-official`
 
-## 2) Testpyramide
-- **Unit Tests:** Parser/Queue/Helper (`src/utils/*.test.ts`)
-- **Static Analysis:** TypeScript + ESLint
-- **Data Quality:** Song-/Katalog-Validierung inkl. Duplicate- und Coverage-Prüfung
-- **Build Verification:** Produktionsbuild muss grün sein
-- **Security Verification:** Dependency-Audit, später Header/Secrets/SAST
+---
 
-## 3) Datenschutz- und Security-Checks
-- Data minimization prüfen: nur erforderliche Daten speichern.
-- Keine API-Keys im Repo.
-- KI-Workflows: kleine Requests, Queue+Retry, Pending-Status statt aggressiver Bursts.
-- Hints: spoilerarm, evidenzbasiert und nachvollziehbar.
+## 3) Testebenen
 
-## 4) Katalog-/Content-Qualität
-- Duplicate-Policy: global strikt für neue/aktualisierte Songs.
-- Mindestens ein Song pro Jahr (1950-heute) als Langfristziel.
-- Hint-Evidence Pflicht für neue Admin-Einträge.
+## 3.1 Unit Tests
+- Utilities (QR-Intent, Queue, Picker, Censoring).
+- Reine Geschäftslogik (Scoring, Timeline-Slot-Logik, Time-Decay).
 
-## 5) Release-Readiness
-Ein Release gilt als "vertrauenswürdig", wenn:
+## 3.2 Integrationstests
+- Zustand-Store-Flows (Round-Transition, Answer-Submission, Game-End).
+- Mode-Container inkl. `QuestionPhase`/`RevealPhase`-Verhalten.
+
+## 3.3 End-to-End Tests (kritische Journeys)
+- Quick Start: Landing → Lobby → Game → Game Over.
+- Modusrotation mit mehreren Modi.
+- Error-Pfade (leere Packs, ungültige Konfiguration, defekte Songs).
+
+## 3.4 Data Quality Tests
+- Song-Schema, Required Fields, Duplicate-Policy.
+- Coverage-Policy (Jahrgänge, Pflichtfelder, Hint-Qualität).
+
+## 3.5 Security Tests
+- API Input Validation (invalid/malformed payloads).
+- AuthN/AuthZ-Tests für Admin-Routen.
+- Dependency & Secret Scan.
+
+## 3.6 Non-Functional
+- Mobile Performance (Lighthouse).
+- Accessibility-Smoketests (Kontrast, Fokus, Labels).
+
+---
+
+## 4) Abnahmekriterien pro Release
+Ein Release ist freigabefähig, wenn:
 - alle blockierenden Gates grün sind,
-- keine Security-Audits auf `moderate+` offen sind,
-- keine Regression gegenüber Quality-Baseline vorliegt.
+- keine offenen `moderate+` Dependency-Risiken vorliegen,
+- keine bekannten P1/P2 Bugs ungelöst sind,
+- kritische E2E-Journeys in der Zielmatrix erfolgreich sind.
+
+---
+
+## 5) Defect-Management
+- **P1:** Spielabbruch, Datenverlust, Security-Lücke → Hotfix.
+- **P2:** Kernfunktion gestört, starker UX-Schaden → Fix vor nächstem Release.
+- **P3:** kosmetisch oder Workaround vorhanden → geplant im nächsten Sprint.
+
+---
+
+## 6) Fokus 2026 Q2
+1. Testabdeckung für Spielmodi erhöhen.
+2. Katalogregression automatisieren.
+3. Security- und E2E-Layer als Standard etablieren.

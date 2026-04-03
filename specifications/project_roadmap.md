@@ -1,77 +1,128 @@
-# Project Roadmap & Acceptance Criteria
+# Phomu Roadmap 2026 (aktualisiert am 2. April 2026)
 
-## Phase 0: Project Scaffold
-- Initialize Next.js 15 (App Router) + TypeScript Strict + Tailwind CSS.
-- Install Framer Motion, i18next, Zustand.
-- Set up 4 switchable themes (Jackbox, Spotify, YouTube, Music Wall).
-- Create landing page with language toggle (DE/EN) and theme switcher.
-- **Criteria:** App loads on localhost. Language and theme switching works. `npm run build` passes.
+Diese Roadmap ersetzt die ältere Fassung als operative Planungsgrundlage.
 
-## Phase 1: Type System & Song Data
-- Define all TypeScript interfaces (PhomuSong, Player, GameState, Session).
-- Create 50 seed songs ("Global Hits 1950-2026") as JSON.
-- Build song validation utility and song browser page.
-- **Criteria:** `/browse` page displays all songs with search/filter. Validation script passes.
+---
 
-## Phase 2: Music Player & Anti-Spoiler
-- Implement YouTube provider via IFrame API (Strategy Pattern).
-- Build anti-spoiler overlay (no title/artist/cover visible).
-- Click-to-play + countdown for autoplay workaround.
-- **Criteria:** Music plays correctly on `/test-music`. Solutions remain hidden behind overlay. No metadata leaks in DOM.
+## Phase 1 — Stabilisierung & Content-Qualität (2–4 Wochen)
 
-## Phase 3: Lobby & Player Management
-- Build Quick Start (3 clicks) and Customize (wizard) flows.
-- Player management: add/remove/rename, anonymous by default.
-- Team configuration: Individual / Fixed / Shifting.
-- Session presets (localStorage).
-- **Criteria:** Session can be started with configured players/teams. Quick Start works in 3 taps.
+## Arbeitspaket 1.1: Lint-Härtung
+- Alle bestehenden Lint-Warnungen priorisiert abbauen (Hooks/Purity/`any`).
+- Ziel: Warnungen in Kernpfaden gegen 0.
 
-## Phase 4: Game Engine & First Mode (Survivor)
-- Build game engine: turn management, scoring, round progression.
-- Implement Survivor mode (binary choice, auto-validated).
-- Build draw card animation, reveal screen, scoreboard, game over.
-- Pass-Device screen for Pilot anti-cheat.
-- **Criteria:** Complete game loop: Lobby -> Game -> Rounds -> Game Over. Scoring is correct.
+### Abnahmekriterien
+- `npm run lint` ohne Warnungen in `src/app/**`, `src/components/game/**`, `src/admin-api/**`.
+- Keine neuen `any`-Typen in produktiven Pfaden.
 
-## Phase 5: Remaining 4 Game Modes
-- 5A: Vibe-Check (mood selection + community stats mock).
-- 5B: Lyrics Labyrinth (lock-in before music, auto-validated).
-- 5C: Chronological Timeline (drag & drop with `@dnd-kit`, duplicate rule).
-- 5D: Hint-Master (5 hint levels, Pilot manual validation, Swipe-to-Unlock).
-- **Criteria:** All 5 modes playable. Mode 3 locks input before music. Timeline drag & drop works on touch.
+## Arbeitspaket 1.2: Katalogsanierung
+- Duplicate-Policy finalisieren (global strict oder bewusst kuratiert erlaubt).
+- Fehlende Jahre 1952/2025/2026 abdecken.
+- Schema-Warnungen systematisch abbauen.
 
-## Phase 6: Supabase Online Features
-- Google Auth (optional login).
-- Multi-device sessions via Supabase Realtime (session codes).
-- Vibe-Check community stats (real data).
-- Spectator mode for eliminated players.
-- **Criteria:** Two browser tabs can join the same session. Game state stays in sync.
+### Abnahmekriterien
+- `npm run validate-catalog` ohne neue Regressionen.
+- Fehlende Jahre = 0.
+- Dokumentierte Duplicate-Regel im Repo.
 
-## Phase 7: Additional Music Providers
-- Spotify Free (30s preview) + Premium (Web Playback SDK).
-- Amazon Music (YouTube fallback).
-- Provider fallback logic (broken link -> next provider).
-- Apple Music: deferred (requires Apple Developer Account).
-- Automatisierte YouTube-Playlist-Verarbeitung implementieren
-- **Criteria:** Spotify preview plays. Fallback works when provider link is invalid.
+## Arbeitspaket 1.3: Test-Breite erhöhen
+- Mindestens je ein Test pro zentraler Utility-/Scoring-Regel.
 
-## Phase 8: Projector/TV Mode
-- Separate route `/projector` for big screen display.
-- Spoiler-free: shows question, timer, scoreboard, join QR code.
-- **Criteria:** Projector view syncs with game state. No spoilers visible.
+### Abnahmekriterien
+- `npm run test` grün.
+- Coverage in kritischen Regeln (Song-Picker, Mode-Scoring, Intent-Parsing) nachvollziehbar erhöht.
 
-## Phase 9: Physical Cards & QR System
-- Card front generator (59x91mm + 3mm bleed, year, flag, abstract design).
-- Card back generator (QR code + Phomu URL).
-- PNG/PDF export for meinspiel.de and DIY printing.
-- `/play?id=SONG_ID` route for QR scan entry.
-- **Criteria:** High-res PNG export with correct bleed margins. QR code links to correct song.
+---
 
-## Phase 10: Polish & Launch
-- Chips mechanic (optional betting).
-- Host-Assist mode.
-- PWA manifest (installable on home screen).
-- Vercel deployment.
-- Cross-browser testing (Chrome, Safari, Firefox, iOS Safari).
-- How-to-Play guide.
-- **Criteria:** App deployed on Vercel. Works across all target browsers. PWA installable.
+## Phase 2 — Musikzentrierte UX & Spielgefühl (3–5 Wochen)
+
+## Arbeitspaket 2.1: Always-on-Music Flow
+- Pre-Round-Loops, Transition-Stings, Reveal-Boosts implementieren.
+
+### Abnahmekriterien
+- Keine stille Phase > 3 Sekunden im Standard-Flow.
+- Session-Playtest: subjektive Musikpräsenz > 8/10.
+
+## Arbeitspaket 2.2: Modus-Feinschliff
+- Spezifische Audiomechaniken für Hint-Master, Timeline, Survivor, Cover Confusion.
+
+### Abnahmekriterien
+- Jeder Modus hat mindestens 1 eindeutigen musikalischen Moment in Question-Phase.
+- Usability-Test: Moduserkennung > 90% ohne Text-Hilfe.
+
+## Arbeitspaket 2.3: Mobile UX Excellence
+- Sticky CTA, Safe-Area, Touch-Targets, reduzierte visuelle Dichte.
+
+### Abnahmekriterien
+- Kein horizontaler Overflow auf 360px.
+- Alle Primärinteraktionen erreichen 44x44px.
+- Lighthouse Mobile (Hauptseiten): Performance ≥ 85, Accessibility ≥ 90.
+
+---
+
+## Phase 3 — Security Hardening (2–3 Wochen)
+
+## Arbeitspaket 3.1: Header & Plattformschutz
+- Security Header in Next.js konfigurieren.
+
+### Abnahmekriterien
+- Header auf allen produktiven Routen verifiziert.
+- CSP/Referrer/Permissions dokumentiert.
+
+## Arbeitspaket 3.2: API-Härtung Admin-Endpunkte
+- AuthN/AuthZ einziehen.
+- Request-Schema-Validation und Fehlercodes standardisieren.
+- URL-Allowlist + Größenlimits für externe Cover-Downloads.
+
+### Abnahmekriterien
+- Unautorisierte Requests erhalten 401/403.
+- Security-Tests decken Missbrauchsszenarien ab (invalid URLs, large files, malformed payloads).
+
+## Arbeitspaket 3.3: Security-Operations
+- Threat Model (STRIDE-lite), Incident-Runbook, Secret-Scanning, Audit-Gate.
+
+### Abnahmekriterien
+- Security-Dokumente versioniert.
+- CI bricht bei High/Critical Findings ab.
+
+---
+
+## Phase 4 — Realtime & Online-Funktionen (3–6 Wochen)
+
+## Arbeitspaket 4.1: Session Sync
+- Multi-Device stabil, reconnect-fähig, konsistente Turn-Reihenfolge.
+
+### Abnahmekriterien
+- 2–6 Geräte synchron ohne Drift in Kernaktionen.
+- Reconnect innerhalb definierter Zeit (z. B. < 5s).
+
+## Arbeitspaket 4.2: Rollen- und Rechtekonzept
+- Host, Co-Host, Player, Spectator Rollenmodell.
+
+### Abnahmekriterien
+- Jede kritische Aktion ist rollenbasiert abgesichert.
+- Rechte-Matrix als Dokument vorhanden.
+
+---
+
+## Phase 5 — Launch Readiness & Live Ops (3–4 Wochen)
+
+## Arbeitspaket 5.1: E2E- und Device-Matrix
+- Kritische Journeys über Zielbrowser und Zielgeräte testen.
+
+### Abnahmekriterien
+- Definierte Journey-Tests alle grün.
+- Keine Blocker in iOS Safari / Android Chrome / Desktop-Browsern.
+
+## Arbeitspaket 5.2: Produktbetrieb
+- Weekly Challenges, Event Packs, Telemetrie-KPIs (privacy-preserving).
+
+### Abnahmekriterien
+- KPI-Dashboard für Session-Länge, Abbruchpunkte, Modusnutzung.
+- Operatives Ritual: wöchentlicher Quality + Product Review.
+
+---
+
+## Governance
+- **Definition of Ready:** Ticket hat UX-, QA- und Security-Auswirkung beschrieben.
+- **Definition of Done:** Code + Test + Doku + Abnahmekriterium erfüllt.
+- **Release Gate:** Typecheck, Lint, Tests, Content-Validation, Build, Security-Audit.

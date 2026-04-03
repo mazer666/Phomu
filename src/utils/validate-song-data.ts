@@ -158,8 +158,11 @@ export function validateSong(song: unknown): SongValidationResult {
     errors.push(err(songId, 'hints', 'Pflichtfeld fehlt: hints muss ein Array mit genau 5 Strings sein'));
   } else {
     const hints = s['hints'] as unknown[];
-    if (hints.length !== 5) {
-      errors.push(err(songId, 'hints', `Falsche Anzahl Hints: ${hints.length} (erwartet: genau 5)`));
+    const isYoutubeImportSong = s['pack'] === 'YouTube Collection';
+    const minHints = isYoutubeImportSong ? 4 : 5;
+    const maxHints = 5;
+    if (hints.length < minHints || hints.length > maxHints) {
+      errors.push(err(songId, 'hints', `Falsche Anzahl Hints: ${hints.length} (erwartet: ${minHints}–${maxHints})`));
     }
     hints.forEach((h, i) => {
       if (typeof h !== 'string' || (h as string).trim() === '') {
@@ -220,6 +223,32 @@ export function validateSong(song: unknown): SongValidationResult {
       warnings.push(warn(songId, 'links.youtube', `YouTube-Link ist noch ein Platzhalter ("${youtube}") – bitte verifizieren`));
     } else if (!isYoutubeVideoId(youtube) && !isYoutubeUrl(youtube)) {
       warnings.push(warn(songId, 'links.youtube', `YouTube-Wert sieht ungewöhnlich aus: "${youtube}" (erwartet: 11-stellige ID oder URL)`));
+    }
+
+    const fallbackYoutubeId = links['fallbackYoutubeId'];
+    if (fallbackYoutubeId !== undefined) {
+      if (typeof fallbackYoutubeId !== 'string' || isYoutubePlaceholder(fallbackYoutubeId)) {
+        warnings.push(warn(songId, 'links.fallbackYoutubeId', 'fallbackYoutubeId sollte eine gültige YouTube-ID oder URL sein'));
+      } else if (!isYoutubeVideoId(fallbackYoutubeId) && !isYoutubeUrl(fallbackYoutubeId)) {
+        warnings.push(warn(songId, 'links.fallbackYoutubeId', `fallbackYoutubeId sieht ungewöhnlich aus: "${fallbackYoutubeId}"`));
+      }
+    }
+
+    const youtubeAlternatives = links['youtubeAlternatives'];
+    if (youtubeAlternatives !== undefined) {
+      if (!Array.isArray(youtubeAlternatives)) {
+        warnings.push(warn(songId, 'links.youtubeAlternatives', 'youtubeAlternatives sollte ein Array aus YouTube-IDs/URLs sein'));
+      } else {
+        youtubeAlternatives.forEach((alternative, index) => {
+          if (typeof alternative !== 'string' || isYoutubePlaceholder(alternative)) {
+            warnings.push(warn(songId, `links.youtubeAlternatives[${index}]`, 'Alternative sollte eine gültige YouTube-ID oder URL sein'));
+            return;
+          }
+          if (!isYoutubeVideoId(alternative) && !isYoutubeUrl(alternative)) {
+            warnings.push(warn(songId, `links.youtubeAlternatives[${index}]`, `Alternative sieht ungewöhnlich aus: "${alternative}"`));
+          }
+        });
+      }
     }
   }
 

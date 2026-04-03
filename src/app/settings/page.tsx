@@ -15,7 +15,7 @@ import { useGameStore } from '@/stores/game-store';
 import { PHOMU_CONFIG } from '@/config/game-config';
 import type { ThemeName } from '@/config/game-config';
 import type { AIQueueStrategy, HintReleasePolicy, OverrideGovernance } from '@/types/game-state';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const EMOJI_AVATARS = ['🎵', '🎸', '🥁', '🎹', '🎺', '🎻', '🎤', '🎧', '🦁', '🐯', '🦊', '🦄', '👾', '🚀', '🕺', '💃', '✨', '🔥'];
@@ -29,22 +29,26 @@ export default function SettingsPage() {
     updatePlayer,
     preferredPlayer,
     setPreferredPlayer,
+    musicEnabled,
+    musicVolume,
+    sfxEnabled,
+    sfxVolume,
+    setAudioSettings,
     resetProgress,
     config,
     setConfig,
   } = useGameStore();
   
-  const [currentTheme, setCurrentTheme] = useState<ThemeName>('jackbox');
+  const [currentTheme, setCurrentTheme] = useState<ThemeName>(() => {
+    if (typeof document === 'undefined') return 'jackbox';
+    const theme = document.documentElement.getAttribute('data-theme') as ThemeName | null;
+    return theme ?? 'jackbox';
+  });
   const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
 
   // Level-Berechnung (rein informativ: alle 100 XP ein Level)
   const currentLevel = Math.floor(totalXP / 100) + 1;
 
-  // Theme aus HTML-Tag lesen
-  useEffect(() => {
-    const theme = document.documentElement.getAttribute('data-theme') as ThemeName;
-    if (theme) setCurrentTheme(theme);
-  }, []);
 
   const handleThemeChange = (theme: ThemeName) => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -230,6 +234,48 @@ export default function SettingsPage() {
                   ? 'Hinweis: Music Mode sieht besser aus, ist aber restriktiver bei einigen Songs.' 
                   : 'Hinweis: Standard YouTube ist am zuverlässigsten für alle Songs.'}
               </p>
+
+              <div className="pt-3 border-t border-white/10 space-y-3">
+                <div className="flex items-center justify-between">
+                  <p className="text-xs opacity-60 font-bold uppercase tracking-widest">Hintergrundmusik</p>
+                  <button
+                    onClick={() => setAudioSettings({ musicEnabled: !musicEnabled })}
+                    className={`px-3 py-1 rounded-lg text-[10px] font-black ${musicEnabled ? 'bg-green-500/20 text-green-300' : 'bg-white/10 opacity-70'}`}
+                  >
+                    {musicEnabled ? 'AN' : 'AUS'}
+                  </button>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={100}
+                  step={1}
+                  disabled={!musicEnabled}
+                  value={Math.round(musicVolume * 100)}
+                  onChange={(e) => setAudioSettings({ musicVolume: Number(e.target.value) / 100 })}
+                  className="w-full accent-[var(--color-accent)]"
+                />
+
+                <div className="flex items-center justify-between pt-2">
+                  <p className="text-xs opacity-60 font-bold uppercase tracking-widest">Soundeffekte</p>
+                  <button
+                    onClick={() => setAudioSettings({ sfxEnabled: !sfxEnabled })}
+                    className={`px-3 py-1 rounded-lg text-[10px] font-black ${sfxEnabled ? 'bg-green-500/20 text-green-300' : 'bg-white/10 opacity-70'}`}
+                  >
+                    {sfxEnabled ? 'AN' : 'AUS'}
+                  </button>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={100}
+                  step={1}
+                  disabled={!sfxEnabled}
+                  value={Math.round(sfxVolume * 100)}
+                  onChange={(e) => setAudioSettings({ sfxVolume: Number(e.target.value) / 100 })}
+                  className="w-full accent-[var(--color-accent)]"
+                />
+              </div>
             </div>
           </section>
 

@@ -116,6 +116,11 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
       {/* Music Player — gebluurt bis Antwort gegeben (Swipe zum Enthüllen) */}
       <MusicPlayer
         youtubeLink={playLink}
+        youtubeAlternatives={
+          song.links.coverLink
+            ? undefined
+            : (song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined))
+        }
         startSeconds={song.previewTimestamp?.start ?? 0}
         blurred={phase !== 'done'}
       />
