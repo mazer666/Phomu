@@ -79,6 +79,21 @@ function extractSpotifyTrackId(value?: string): string | null {
   return match ? match[1] : null;
 }
 
+function extractAmazonTrackId(url?: string): string | null {
+  if (!url) return null;
+  // Match ASIN in trackAsin=... or /albums/ASIN or /dp/ASIN
+  const trackAsinMatch = url.match(/trackAsin=([a-zA-Z0-9]{10})/);
+  if (trackAsinMatch) return trackAsinMatch[1];
+  
+  const albumsMatch = url.match(/\/albums\/([a-zA-Z0-9]{10})/);
+  if (albumsMatch) return albumsMatch[1];
+
+  const dpMatch = url.match(/\/dp\/([a-zA-Z0-9]{10})/);
+  if (dpMatch) return dpMatch[1];
+
+  return null;
+}
+
 export function MusicPlayer({
   songId,
   songTitle,
@@ -123,9 +138,11 @@ export function MusicPlayer({
   const spotifyFreeAudioRef = useRef<HTMLAudioElement | null>(null);
   const amazonPrimeAudioRef = useRef<HTMLAudioElement | null>(null);
   const spotifyTrackId = useMemo(() => extractSpotifyTrackId(spotifyLink), [spotifyLink]);
+  const amazonTrackId = useMemo(() => extractAmazonTrackId(amazonMusicLink), [amazonMusicLink]);
   const useSpotifyPremium = preferredMusicProvider === 'spotify-premium' && !!spotifyTrackId;
   const useSpotifyFree = preferredMusicProvider === 'spotify-free' && !!spotifyFreePreview;
   const useAmazonPrime = preferredMusicProvider === 'amazon-music' && !!amazonPrimePreview;
+  const useAmazonPremium = preferredMusicProvider === 'amazon-music-premium' && !!amazonTrackId;
 
   const handleReportMissing = useCallback(() => {
     if (typeof window === 'undefined' || !songId) return;
@@ -325,7 +342,7 @@ export function MusicPlayer({
         try { playerRef.current.destroy(); } catch { /* noop */ }
       }
     };
-  }, [videoId, activeDomain, startSeconds, endSeconds, handleError, playerState, musicEnabled, musicVolume, useSpotifyPremium, useSpotifyFree, useAmazonPrime]);
+  }, [videoId, activeDomain, startSeconds, endSeconds, handleError, playerState, musicEnabled, musicVolume, useSpotifyPremium, useSpotifyFree, useAmazonPrime, useAmazonPremium]);
 
   useEffect(() => {
     if (useSpotifyPremium || useSpotifyFree || useAmazonPrime) return;
@@ -344,7 +361,7 @@ export function MusicPlayer({
     } catch {
       // noop (e.g. player not ready)
     }
-  }, [musicEnabled, musicVolume, playerState, useSpotifyPremium, useSpotifyFree, useAmazonPrime]);
+  }, [musicEnabled, musicVolume, playerState, useSpotifyPremium, useSpotifyFree, useAmazonPrime, useAmazonPremium]);
 
   useEffect(() => {
     if (!useSpotifyFree || !spotifyFreeAudioRef.current) return;
@@ -372,7 +389,7 @@ export function MusicPlayer({
     });
   }, [useAmazonPrime, musicEnabled, musicVolume, amazonPrimePreview]);
 
-  if (!videoId && !useSpotifyPremium && !useSpotifyFree && !useAmazonPrime) {
+  if (!videoId && !useSpotifyPremium && !useSpotifyFree && !useAmazonPrime && !useAmazonPremium) {
     return <div className="h-40 flex items-center justify-center opacity-30 border rounded-2xl italic">Kein Video verfügbar</div>;
   }
 
@@ -502,13 +519,15 @@ export function MusicPlayer({
         </button>
       )}
 
-      {(preferredMusicProvider === 'spotify-free' || preferredMusicProvider === 'spotify-premium' || preferredMusicProvider === 'amazon-music') && (
+      {(preferredMusicProvider === 'spotify-free' || preferredMusicProvider === 'spotify-premium' || preferredMusicProvider === 'amazon-music' || preferredMusicProvider === 'amazon-music-premium') && (
         <div className="absolute left-4 bottom-4 z-40 rounded-lg border border-white/10 bg-black/60 px-2 py-1 text-[9px] font-bold text-white/80">
           {preferredMusicProvider === 'spotify-free'
             ? 'Spotify Free: eingeschränkt (Preview). YouTube-Fallback aktiv.'
             : preferredMusicProvider === 'spotify-premium'
               ? 'Spotify: bei fehlender Premium-Wiedergabe wird YouTube genutzt.'
-              : 'Amazon Prime: eingeschränkt (Preview). YouTube-Fallback aktiv.'}
+              : preferredMusicProvider === 'amazon-music'
+                ? 'Amazon Prime: eingeschränkt (Preview). YouTube-Fallback aktiv.'
+                : 'Amazon Music Premium: nutzt Full-Track Embed. Login bei Amazon nötig.'}
         </div>
       )}
 
@@ -557,6 +576,20 @@ export function MusicPlayer({
               </a>
             )}
           </div>
+        </div>
+      )}
+
+      {useAmazonPremium && amazonTrackId && (
+        <div className="absolute inset-0 z-50 bg-black p-3 sm:p-4">
+          <iframe
+            title="Amazon Music Premium Player"
+            src={`https://music.amazon.com/embed/track/${amazonTrackId}?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE`}
+            width="100%"
+            height="100%"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            className="w-full h-full rounded-2xl border border-white/10"
+          />
         </div>
       )}
 

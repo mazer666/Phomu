@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 import type { PhomuSong } from '@/types/song';
 import { getAllSongs } from '@/utils/song-picker';
 import { useGameStore } from '@/stores/game-store';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import { MusicPlayer } from '../MusicPlayer';
 
 // ─── Jahrzehnt-Hints für den Cheat ────────────────────────────────────────────
@@ -132,6 +133,8 @@ type RemovalState = 'none' | 'choosing' | 'done';
 export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
   const { timelineYears, initTimeline, addTimelineYear, removeTimelineYear, config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
 
+  const currentPlayerId = turnOrder[currentTurnIndex];
+
   // Einmalig initialisieren, wenn Timeline noch leer ist
   useEffect(() => {
     if (timelineYears.length === 0) {
@@ -174,9 +177,8 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     setIsRevealed(true);
     const answeredInSeconds = Math.max(1, Math.round((Date.now() - questionStartedAt.current) / 1000));
     
-    // Penalize if cheat was used
-    const finalPoints = isCorrect ? Math.max(1, points - (cheatActive ? 2 : 0)) : 0;
-    onAnswer(isCorrect, finalPoints, answeredInSeconds);
+    // Timeline: Punkte basierend auf Komplexität (Cheats/Joker wurden bereits abgezogen)
+    onAnswer(isCorrect, isCorrect ? points : 0, answeredInSeconds);
 
     if (!isCorrect) return;
 
@@ -195,10 +197,6 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
   }, [
     selectedSlot, 
     isRevealed, 
-    validSlotSet, 
-    onAnswer, 
-    points, 
-    cheatActive, 
     song.year, 
     timelineYears, 
     addTimelineYear, 
@@ -210,8 +208,16 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     setRemovalState('done');
   }
 
+  function handleCheat() {
+    if (cheatActive || isRevealed || !currentPlayerId) return;
+    setCheatActive(true);
+    setCheatHint(getDecadeHint(song.year));
+    // Sofortiger Abzug von 2 Punkten für den Dekaden-Hint
+    awardPoints(currentPlayerId, -2);
+  }
+
   function handleJoker() {
-    if (jokerUsed || isRevealed) return;
+    if (jokerUsed || isRevealed || !currentPlayerId) return;
     // Find all wrong slots (not in validSlotSet)
     const wrongSlots: number[] = [];
     for (let i = 0; i < numSlots; i++) {
@@ -221,9 +227,8 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     const pick = wrongSlots[Math.floor(Math.random() * wrongSlots.length)]!;
     setJokerSlot(pick);
     setJokerUsed(true);
-    // Deduct 1 point from current player's accumulated score
-    const pilotId = turnOrder[currentTurnIndex];
-    if (pilotId) awardPoints(pilotId, -1);
+    // Sofortiger Abzug von 1 Punkt für den Joker
+    awardPoints(currentPlayerId, -1);
     // Clear selection if the joker removed the selected slot
     if (selectedSlot === pick) setSelectedSlot(null);
   }
@@ -271,19 +276,31 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
         <h2 className="text-2xl font-black uppercase tracking-tight">
           {!isRevealed
             ? 'Wann war dieser Song?'
-            : selectedSlot !== null && validSlotSet.has(selectedSlot)
-              ? 'Goldrichtig! ✨'
-              : 'Leider daneben... 🌧️'}
+            : (
+              <>
+                <p 
+                  className="text-xl font-black uppercase italic tracking-tighter mb-1"
+                  style={{ color: getSpicyColor(validSlotSet.has(selectedSlot!), song.id) }}
+                >
+                  {getSpicyMessage(validSlotSet.has(selectedSlot!), song.id)}
+                </p>
+                <p className="text-sm opacity-60">
+                  {validSlotSet.has(selectedSlot!)
+                    ? 'Goldrichtig! ✨'
+                    : 'Leider daneben... 🌧️'}
+                </p>
+              </>
+            )}
         </h2>
         
         {/* Cheat Button */}
-        {!isRevealed && !cheatActive && (
+        {!isRevealed && !cheatActive && !config.noCheatMode && (
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.3 }}
             whileHover={{ opacity: 1, scale: 1.05 }}
-            onClick={() => { setCheatActive(true); setCheatHint(getDecadeHint(song.year)); }}
-            className="text-[10px] font-black uppercase tracking-widest border border-white/10 py-1.5 px-3 rounded-full hover:bg-white/5 transition-all mb-2"
+            onClick={handleCheat}
+            className="text-[10px] font-black uppercase tracking-widest border border-red-500/20 py-1.5 px-3 rounded-full hover:bg-red-500/5 text-red-500 transition-all mb-2"
           >
             🕵️ Jahrzehnt-Hint (-2 Pkt)
           </motion.button>
@@ -304,14 +321,14 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
         )}
 
         {/* Joker Button */}
-        {!isRevealed && !jokerUsed && numSlots > 3 && (
+        {!isRevealed && !jokerUsed && numSlots > 3 && !config.noCheatMode && (
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.3 }}
             whileHover={{ opacity: 1, scale: 1.05 }}
             onClick={handleJoker}
-            className="text-[10px] font-black uppercase tracking-widest border border-yellow-500/20 py-1.5 px-3 rounded-full hover:bg-yellow-500/5 transition-all mb-1"
-            style={{ color: '#fbbf24' }}
+            className="text-[10px] font-black uppercase tracking-widest border border-orange-500/20 py-1.5 px-3 rounded-full hover:bg-orange-500/5 transition-all mb-1"
+            style={{ color: '#f97316' }}
           >
             🃏 Joker: Falschen Slot entfernen (-1 Pkt)
           </motion.button>
@@ -335,18 +352,31 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
               ? `${numSlots} Positionen · ${points} Punkte`
               : 'Das war die Lösung'}
           </p>
-          {!isRevealed && cheatActive && (
+          {cheatActive && (
             <span
-              className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
+              className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none"
               style={{
-                backgroundColor: '#fb923c',
+                backgroundColor: '#ef4444',
                 transform: 'rotate(4deg)',
-                boxShadow: '0 2px 10px rgba(251,146,60,0.7)',
+                boxShadow: '0 2px 10px rgba(239,68,68,0.7)',
                 display: 'inline-block',
               }}
             >
-              {Math.max(1, points - 2)} Pkt CHEAT
+              -2 PKT CHEAT
             </span>
+          )}
+          {jokerUsed && (
+             <span
+             className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none ml-2"
+             style={{
+               backgroundColor: '#f97316',
+               transform: 'rotate(-3deg)',
+               boxShadow: '0 2px 10px rgba(249,115,22,0.7)',
+               display: 'inline-block',
+             }}
+           >
+             -1 PKT JOKER
+           </span>
           )}
         </div>
       </div>

@@ -61,6 +61,7 @@ const DEFAULT_CONFIG: GameConfig = {
   hintReleasePolicy: PHOMU_CONFIG.DEFAULT_HINT_RELEASE_POLICY,
   aiQueueStrategy: PHOMU_CONFIG.DEFAULT_AI_QUEUE_STRATEGY,
   chipsEnabled: PHOMU_CONFIG.ENABLE_CHIPS_BETTING,
+  noCheatMode: PHOMU_CONFIG.DEFAULT_NO_CHEAT_MODE,
   onlyQRCompatible: false,
 };
 
@@ -453,7 +454,7 @@ export const useGameStore = create<GameStore>()(
           if (isTeam) {
             return {
               teams: state.teams.map((t) =>
-                t.id === entityId ? { ...t, score: t.score + points } : t,
+                t.id === entityId ? { ...t, score: Math.max(0, t.score + points) } : t,
               ),
             };
           }
@@ -464,11 +465,11 @@ export const useGameStore = create<GameStore>()(
           const teamId = player.teamId;
           return {
             players: state.players.map((p) =>
-              p.id === entityId ? { ...p, score: p.score + points } : p,
+              p.id === entityId ? { ...p, score: Math.max(0, p.score + points) } : p,
             ),
             // Sync points up to the player's team if they are in one (for individual turns in teams)
             teams: teamId ? state.teams.map((t) =>
-              t.id === teamId ? { ...t, score: t.score + points } : t,
+              t.id === teamId ? { ...t, score: Math.max(0, t.score + points) } : t,
             ) : state.teams,
           };
         });

@@ -97,8 +97,8 @@ export interface PhomuSong {
   lyrics: {
     /** Exactly 3 real lyric lines from the actual song */
     real: [string, string, string];
-    /** 1 AI-generated fake lyric line that sounds plausible but is wrong */
-    fake: string;
+    /** 1 or 4 AI-generated fake lyric lines that sound plausible but are wrong */
+    fake: string | string[];
   } | null;
 
   /**

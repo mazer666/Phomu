@@ -17,12 +17,12 @@ export type GameMode =
   | 'survivor'       // Mode 5: Survivor (one-hit-wonder detection)
   | 'cover-confusion'; // Mode 6: Cover Confusion (original artist detection)
 
-/** Supported music providers */
 export type MusicProvider =
   | 'youtube'         // Primary, free, everyone has access
   | 'spotify-free'    // 30-second preview via Web API
   | 'spotify-premium' // Full playback via Web Playback SDK
-  | 'amazon-music'    // Falls back to YouTube
+  | 'amazon-music'    // Standard: 30s Preview (Prime/Unlimited)
+  | 'amazon-music-premium' // Experimental: Full playback via Embed
   | 'apple-music';    // Future: requires Apple Developer Account
 
 /** Available UI themes */
@@ -69,6 +69,7 @@ export const PHOMU_CONFIG = {
   DEFAULT_OVERRIDE_GOVERNANCE: 'host',
   DEFAULT_HINT_RELEASE_POLICY: 'auto-publish',
   DEFAULT_AI_QUEUE_STRATEGY: 'queue-retry-pending',
+  DEFAULT_NO_CHEAT_MODE: false,
 
 
   // Language

@@ -101,6 +101,9 @@ export interface GameConfig {
   /** Whether chips/betting mechanic is active */
   chipsEnabled: boolean;
 
+  /** EXPERT: Disables all cheats/jokers */
+  noCheatMode: boolean;
+
   /** Whether to play only songs that have a physical QR card */
   onlyQRCompatible: boolean;
 }

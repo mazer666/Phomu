@@ -12,6 +12,8 @@
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 
@@ -60,17 +62,25 @@ function LyricsQuestion({
   onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
   onReveal: () => void;
 }) {
+  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [selected, setSelected] = useState<number | null>(null);
   const [isRevealing, setIsRevealing] = useState(false);
   const [cheatActive, setCheatActive] = useState(false);
 
+  const currentPlayerId = turnOrder[currentTurnIndex];
+
   // 3 echte + 1 fake Zeile mischen — einmalig stabilisiert
   const options = useMemo(() => {
+    // Falls mehrere Fakes vorhanden sind, eine zufällig auswählen
+    const selectedFake = Array.isArray(lyrics.fake)
+      ? lyrics.fake[Math.floor(Math.random() * lyrics.fake.length)]
+      : lyrics.fake;
+
     const items = [
       { text: lyrics.real[0], isFake: false },
       { text: lyrics.real[1], isFake: false },
       { text: lyrics.real[2], isFake: false },
-      { text: lyrics.fake,    isFake: true  },
+      { text: selectedFake,   isFake: true  },
     ];
     return shuffle(items);
   // song.id ist stabil solange derselbe Song angezeigt wird
@@ -85,10 +95,16 @@ function LyricsQuestion({
     if (selected === null || isRevealing) return;
     setIsRevealing(true);
     const isCorrect = options[selected]?.isFake ?? false;
-    // Lyrics-Cheat: Fix 1 Punkt, sonst 4 Punkte
-    const points = isCorrect ? (cheatActive ? 1 : LYRICS_POINTS) : 0;
-    onAnswer(isCorrect, points);
+    // Lyrics-Labyrinth: 4 Punkte Grundgewinn (Cheats wurden bereits abgezogen)
+    onAnswer(isCorrect, isCorrect ? LYRICS_POINTS : 0);
     onReveal();
+  }
+
+  function handleCheat() {
+    if (cheatActive || isRevealing || !currentPlayerId) return;
+    setCheatActive(true);
+    // Sofortiger Abzug von 2 Punkten für den Musik-Cheat
+    awardPoints(currentPlayerId, -2);
   }
 
   return (
@@ -108,14 +124,14 @@ function LyricsQuestion({
         </p>
 
         {/* Cheat-Button */}
-        {!isRevealing && !cheatActive && (
+        {!isRevealing && !cheatActive && !config.noCheatMode && (
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => setCheatActive(true)}
-            className="mt-4 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full border border-yellow-500/30 text-yellow-500/60 hover:text-yellow-500 hover:bg-yellow-500/10 transition-all mx-auto"
+            onClick={handleCheat}
+            className="mt-4 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full border border-red-500/30 text-red-500/60 hover:text-red-500 hover:bg-red-500/10 transition-all mx-auto"
           >
-            🔍 Musik hören (nur 1 Pkt Fix)
+            🔍 Musik hören (-2 Pkt)
           </motion.button>
         )}
 
@@ -209,6 +225,26 @@ function LyricsQuestion({
              amazonPrimePreview={song.links.amazonPrimePreview}
            />
         </div>
+      )}
+
+      {isRevealing && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="mt-6 text-center"
+        >
+          <p 
+            className="text-2xl font-black uppercase italic tracking-tighter mb-1"
+            style={{ color: getSpicyColor(options[selected!]?.isFake ?? false, song.id) }}
+          >
+            {getSpicyMessage(options[selected!]?.isFake ?? false, song.id)}
+          </p>
+          <p className="text-sm font-bold opacity-60">
+            {options[selected!]?.isFake 
+              ? '✨ Korrekt! Du hast die Fake-Zeile erkannt.' 
+              : '🌧️ Falsch... das war eine echte Zeile.'}
+          </p>
+        </motion.div>
       )}
     </div>
   );

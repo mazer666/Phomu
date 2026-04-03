@@ -216,3 +216,36 @@ export const WRONG_MESSAGES = [
   "Falsch! Das war wohl dein letztes Stündlein.",
   "Daneben! Wie ein Bär beim Ballett.",
 ];
+
+// ─── Helfer für deterministische Auswahl ──────────────────────────
+
+/** Einfacher Hash-Algorithmus für Strings */
+export function hashSeed(seed: string): number {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+/** Wählt ein Item deterministisch basierend auf einem Seed */
+export function pickDeterministic<T>(items: T[], seed: string): T {
+  if (!items.length) return null as T;
+  const idx = hashSeed(seed) % items.length;
+  return items[idx]!;
+}
+
+const COLORS_CORRECT = ['#4ade80', '#22c55e', '#6ee7b7', '#34d399', '#facc15'];
+const COLORS_WRONG = ['#f87171', '#ef4444', '#fb923c', '#f43f5e', '#ec4899'];
+
+/** Gibt einen spicy Spruch für das Ergebnis zurück */
+export function getSpicyMessage(isCorrect: boolean, seed: string): string {
+  const pool = isCorrect ? CORRECT_MESSAGES : WRONG_MESSAGES;
+  return pickDeterministic(pool, seed);
+}
+
+/** Gibt die passende Farbe für den spicy Spruch zurück */
+export function getSpicyColor(isCorrect: boolean, seed: string): string {
+  const pool = isCorrect ? COLORS_CORRECT : COLORS_WRONG;
+  return pickDeterministic(pool, seed);
+}

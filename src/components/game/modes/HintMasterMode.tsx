@@ -9,6 +9,8 @@
 
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { PHOMU_CONFIG } from '@/config/game-config';
 import { MusicPlayer } from '../MusicPlayer';
@@ -20,6 +22,7 @@ interface HintMasterModeProps {
 }
 
 export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
+  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [shownHints, setShownHints] = useState(1);
   const [isRevealed, setIsRevealed] = useState(false);
   const [showMusic, setShowMusic] = useState(false);
@@ -27,6 +30,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
   const [cheatUsed, setCheatUsed] = useState(false);
 
+  const currentPlayerId = turnOrder[currentTurnIndex];
   const maxHints = song.hints.length;
   const points = PHOMU_CONFIG.HINT_MASTER_POINTS[shownHints - 1] ?? 1;
   const startSecs = song.previewTimestamp?.start ?? 0;
@@ -44,9 +48,16 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
     setWasCorrect(isCorrect);
     setDone(true);
     
-    // Penalize if cheat was used
-    const finalPoints = isCorrect ? Math.max(1, points - (cheatUsed ? 2 : 0)) : 0;
-    onAnswer(isCorrect, finalPoints);
+    // HintMaster: Punkte für die aktuelle Ebene (Cheats wurden bereits abgezogen)
+    onAnswer(isCorrect, isCorrect ? points : 0);
+  };
+
+  const handleCheat = () => {
+    if (showMusic || cheatUsed || isRevealed || !currentPlayerId) return;
+    setShowMusic(true);
+    setCheatUsed(true);
+    // Sofortiger Abzug von 2 Punkten für den Musik-Cheat
+    awardPoints(currentPlayerId, -2);
   };
 
   return (
@@ -67,12 +78,12 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
             <span
               className="absolute -top-1 -right-1 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
               style={{
-                backgroundColor: '#fb923c',
+                backgroundColor: '#ef4444',
                 transform: 'rotate(-5deg)',
-                boxShadow: '0 2px 10px rgba(251,146,60,0.7)',
+                boxShadow: '0 2px 10px rgba(239,68,68,0.7)',
               }}
             >
-              +{Math.max(1, points - 2)} CHEAT
+              -2 PKT CHEAT
             </span>
           )}
         </div>
@@ -150,13 +161,10 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
             )}
 
             {/* Music Cheat Button (Only if music not already shown) */}
-            {!showMusic && shownHints < 4 && (
+            {!showMusic && shownHints < 4 && !config.noCheatMode && (
               <button
-                onClick={() => {
-                  setShowMusic(true);
-                  setCheatUsed(true);
-                }}
-                className="w-full py-2 rounded-xl border border-white/5 text-[9px] font-black uppercase tracking-[0.2em] opacity-30 hover:opacity-100 hover:bg-white/5 transition-all mb-1"
+                onClick={handleCheat}
+                className="w-full py-2 rounded-xl border border-red-500/10 text-[9px] font-black uppercase tracking-[0.2em] opacity-30 hover:opacity-100 hover:bg-red-500/5 text-red-500 transition-all mb-1"
               >
                 🕵️ Musik-Cheat: Audio jetzt (-2 Pkt)
               </button>
@@ -214,7 +222,13 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
                 : 'border-red-500/30 bg-red-500/10',
             ].join(' ')}
           >
-            <p className="text-lg font-black">
+            <p 
+              className="text-lg font-black uppercase italic tracking-tighter"
+              style={{ color: getSpicyColor(wasCorrect!, song.id) }}
+            >
+              {getSpicyMessage(wasCorrect!, song.id)}
+            </p>
+            <p className="text-xs font-bold opacity-60">
               {wasCorrect ? 'Gewusst! ✨' : 'Nicht gewusst 🌧️'}
             </p>
             <p className="text-sm opacity-60">

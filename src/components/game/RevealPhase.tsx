@@ -12,6 +12,7 @@ import type { PhomuSong } from '@/types/song';
 import type { PlayerAnswer } from '@/types/game-state';
 import type { Player, Team } from '@/types/player';
 import type { GameMode } from '@/config/game-config';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -502,8 +503,39 @@ export function RevealPhase({
     })
     .filter((r): r is { player: Player; points: number } => r.player !== undefined);
 
+  // Spicy Feedback für die Runde (Basierend auf der ersten Antwort)
+  const firstAnswer = answers[0];
+  const spicyMessage = firstAnswer 
+    ? getSpicyMessage(firstAnswer.isCorrect, song.id)
+    : null;
+  const spicyColor = firstAnswer
+    ? getSpicyColor(firstAnswer.isCorrect, song.id)
+    : 'var(--color-text)';
+
   return (
     <div className="max-w-lg mx-auto px-6 py-8 flex flex-col gap-6">
+
+      {/* ── Spicy Feedback Header ──────────────────────────────── */}
+      {spicyMessage && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-2"
+        >
+          <div className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 mb-3 text-[10px] font-black uppercase tracking-[0.2em] opacity-40">
+            Fazit der Runde
+          </div>
+          <h2 
+            className="text-3xl font-black uppercase italic tracking-tighter drop-shadow-lg"
+            style={{ color: spicyColor }}
+          >
+            {spicyMessage}
+          </h2>
+          <p className="text-sm font-bold opacity-50 mt-1 uppercase tracking-widest">
+            {firstAnswer.isCorrect ? 'Das war ein Volltreffer!' : 'Das war wohl nichts...'}
+          </p>
+        </motion.div>
+      )}
 
       {/* ── Modus-spezifische Auflösung ───────────────────────── */}
       {currentMode === 'timeline'         && <TimelineReveal song={song} />}

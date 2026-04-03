@@ -473,6 +473,30 @@ export default function LobbyPage() {
                         />
                       </div>
                     </motion.button>
+
+                    {/* No Cheat Mode (Expert) */}
+                    <motion.button
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => setConfig({ noCheatMode: !config.noCheatMode })}
+                      className={`relative flex items-center gap-4 p-4 rounded-2xl border-2 text-left transition-all ${
+                        config.noCheatMode
+                          ? 'border-red-500/60 bg-red-500/10'
+                          : 'border-white/8 bg-white/5 opacity-60 hover:opacity-90'
+                      }`}
+                    >
+                      <span className="text-3xl shrink-0">🚫</span>
+                      <div className="flex-1">
+                        <p className="text-sm font-black">No-Cheat Modus</p>
+                        <p className="text-[10px] opacity-50 mt-0.5">Experten-Option: Deaktiviert alle Joker und Hilfen.</p>
+                      </div>
+                      <div className={`w-11 h-6 rounded-full transition-all relative shrink-0 ${config.noCheatMode ? 'bg-red-500' : 'bg-white/10'}`}>
+                        <motion.div
+                          animate={{ x: config.noCheatMode ? 22 : 2 }}
+                          transition={{ type: 'spring', stiffness: 500, damping: 28 }}
+                          className="absolute top-1 w-4 h-4 rounded-full bg-white shadow"
+                        />
+                      </div>
+                    </motion.button>
                   </div>
                 </div>
               </div>

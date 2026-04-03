@@ -10,6 +10,8 @@
 
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 
@@ -35,17 +37,27 @@ interface VibeCheckModeProps {
 }
 
 export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
+  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [cheatActive, setCheatActive] = useState(false);
+
+  const currentPlayerId = turnOrder[currentTurnIndex];
 
   function handleSelect(mood: string) {
     if (answered) return;
     const isCorrect = song.mood.includes(mood);
     setSelected(mood);
     setAnswered(true);
-    // Vibe-Check: 2 Punkte Basis — wenn Cheat aktiv: nur 1 Punkt
-    onAnswer(isCorrect, isCorrect ? (cheatActive ? 1 : 2) : 0);
+    // Vibe-Check: 2 Punkte Basis — Cheats wurden bereits abgezogen
+    onAnswer(isCorrect, isCorrect ? 2 : 0);
+  }
+
+  function handleCheat() {
+    if (cheatActive || answered || !currentPlayerId) return;
+    setCheatActive(true);
+    // Sofortiger Abzug von 1 Punkt
+    awardPoints(currentPlayerId, -1);
   }
 
   // Sechs zufällige Stimmungen (inkl. mind. einer richtigen) — einmalig stabilisiert
@@ -89,12 +101,12 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
       </motion.p>
 
       {/* Cheat-Button */}
-      {!answered && !cheatActive && (
+      {!answered && !cheatActive && !config.noCheatMode && (
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => setCheatActive(true)}
-          className="text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full border border-yellow-500/30 text-yellow-500/60 hover:text-yellow-500 hover:bg-yellow-500/10 transition-all"
+          onClick={handleCheat}
+          className="text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full border border-red-500/30 text-red-500/60 hover:text-red-500 hover:bg-red-500/10 transition-all"
         >
           🔍 Musik hören & sehen (-1 Punkt)
         </motion.button>
@@ -204,7 +216,14 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
               ))}
             </div>
             
-            <p className="mt-8 text-lg font-bold opacity-80">
+            <p 
+              className="mt-6 text-xl font-black uppercase italic tracking-tighter"
+              style={{ color: getSpicyColor(song.mood.includes(selected ?? ''), song.id) }}
+            >
+              {getSpicyMessage(song.mood.includes(selected ?? ''), song.id)}
+            </p>
+
+            <p className="mt-2 text-sm font-bold opacity-60">
               {song.mood.includes(selected ?? '') 
                 ? '😎 Volltreffer! Dein Vibe-Check war spot-on.' 
                 : '🌑 Fast... Dein Gefühl war ein anderes.'}

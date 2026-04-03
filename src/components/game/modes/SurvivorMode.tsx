@@ -9,6 +9,8 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 
@@ -18,17 +20,27 @@ interface SurvivorModeProps {
 }
 
 export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
+  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [answered, setAnswered] = useState(false);
   const [choice, setChoice] = useState<boolean | null>(null);
   const [cheatUsed, setCheatUsed] = useState(false);
+
+  const currentPlayerId = turnOrder[currentTurnIndex];
 
   function handleChoice(guessedOneHit: boolean) {
     if (answered) return;
     const isCorrect = guessedOneHit === song.isOneHitWonder;
     setChoice(guessedOneHit);
     setAnswered(true);
-    // Survivor: 3 Punkte, Cheat kostet -1 Pkt
-    onAnswer(isCorrect, isCorrect ? (cheatUsed ? 2 : 3) : 0);
+    // Survivor: 3 Punkte Grundgewinn (Cheats wurden bereits abgezogen)
+    onAnswer(isCorrect, isCorrect ? 3 : 0);
+  }
+
+  function handleCheat() {
+    if (cheatUsed || answered || !currentPlayerId) return;
+    setCheatUsed(true);
+    // Sofortiger Abzug von 1 Punkt
+    awardPoints(currentPlayerId, -1);
   }
 
   return (
@@ -48,12 +60,12 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
             <span
               className="absolute -top-2 -right-2 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
               style={{
-                backgroundColor: '#fb923c',
+                backgroundColor: '#ef4444',
                 transform: 'rotate(6deg)',
-                boxShadow: '0 2px 8px rgba(251,146,60,0.6)',
+                boxShadow: '0 2px 8px rgba(239,68,68,0.6)',
               }}
             >
-              +2 Pkt CHEAT
+              -1 PKT CHEAT
             </span>
           )}
         </div>
@@ -131,12 +143,12 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
           </motion.div>
           
           {/* Music Cheat Button */}
-          {!cheatUsed && (
+          {!cheatUsed && !config.noCheatMode && (
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.4 }}
               whileHover={{ opacity: 1, scale: 1.05 }}
-              onClick={() => setCheatUsed(true)}
+              onClick={handleCheat}
               className="text-[10px] font-black uppercase tracking-widest border border-white/10 py-2 rounded-xl hover:bg-white/5 transition-all mt-4"
             >
               🕵️ Musik-Cheat: Artist enthüllen (-1 Pkt)
@@ -154,17 +166,23 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
               <p className="text-5xl mb-3">
                 {choice === song.isOneHitWonder ? '✅' : '❌'}
               </p>
-              <p className="font-bold">
+              <p 
+                className="font-black uppercase italic tracking-tighter text-xl mb-1"
+                style={{ color: getSpicyColor(choice === song.isOneHitWonder, song.id) }}
+              >
+                {getSpicyMessage(choice === song.isOneHitWonder, song.id)}
+              </p>
+              <p className="font-bold opacity-80">
                 {song.isOneHitWonder
                   ? 'Ja, ein One-Hit-Wonder!'
                   : 'Nein, ein echter Dauerstar!'}
               </p>
             </>
           ) : (
-            <div className="bg-[var(--color-accent)]/10 p-4 rounded-2xl border border-[var(--color-accent)]/20">
+            <div className="bg-red-500/10 p-4 rounded-2xl border border-red-500/20">
               <p className="text-2xl mb-1">🕵️</p>
-              <p className="text-sm font-bold uppercase tracking-tight text-[var(--color-accent)]">Cheat benutzt</p>
-              <p className="text-xs opacity-60">Infos wurden enthüllt (-1 Pkt)</p>
+              <p className="text-sm font-bold uppercase tracking-tight text-red-500">Cheat benutzt</p>
+              <p className="text-xs opacity-60">Infos wurden enthüllt (-1 Pkt gezahlt)</p>
             </div>
           )}
           <p className="text-sm opacity-50 mt-4 font-black uppercase tracking-[0.2em]">Wartet auf das Reveal …</p>
