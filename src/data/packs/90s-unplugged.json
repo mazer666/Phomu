@@ -2,7 +2,7 @@
   "meta": {
     "pack": "90s Unplugged",
     "version": "1.0.0",
-    "updatedAt": "2026-04-04T00:15:02.855018"
+    "updatedAt": "2026-04-04T00:26:00.114006"
   },
   "songs": [
     {
@@ -1186,7 +1186,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "rt8AdNwTTUI"
+        "youtube": "rt8AdNwTTUI",
+        "spotify": "2a1iMaoWQ5MnvLFBDv4qkf",
+        "amazonMusic": "B01DPX4BWQ"
       },
       "coverUrl": "/covers/unplugged-radiohead-high-dry.jpg",
       "supportedModes": [
@@ -1230,7 +1232,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "G6Kspj3OO0s"
+        "youtube": "G6Kspj3OO0s",
+        "spotify": "0gEyKnHvgkrkBM6fbeHdwK",
+        "amazonMusic": "B001SVKPK0"
       },
       "coverUrl": "/covers/unplugged-cranberries-linger.jpg",
       "supportedModes": [
