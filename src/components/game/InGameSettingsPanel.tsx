@@ -57,6 +57,8 @@ export function InGameSettingsPanel({
     sfxEnabled,
     sfxVolume,
     setAudioSettings,
+    config,
+    setConfig,
   } = useGameStore();
 
   return (
@@ -166,9 +168,19 @@ export function InGameSettingsPanel({
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-amber-400/25 bg-amber-400/10 p-3 text-[11px] font-bold text-amber-100">
-                Tipp: Als nächstes sinnvoll adaptierbar: reduzierte Animationen, Farbschwächen-Modus,
-                größere Touch-Ziele und Untertitel/Transkript-Overlays.
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-xs font-black uppercase tracking-widest">Strict Mode</span>
+                    <p className="text-[10px] opacity-40 mt-0.5">Deaktiviert alle Cheats &amp; Joker</p>
+                  </div>
+                  <button
+                    onClick={() => setConfig({ noCheatMode: !config.noCheatMode })}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-black ${config.noCheatMode ? 'bg-red-500/20 text-red-300 border border-red-400/30' : 'bg-white/10 text-white/70 border border-white/15'}`}
+                  >
+                    {config.noCheatMode ? 'AN' : 'AUS'}
+                  </button>
+                </div>
               </div>
             </div>
 

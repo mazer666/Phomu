@@ -39,8 +39,9 @@ const SETTINGS_SECTIONS = [
 
 export default function SettingsHubPage() {
   const router = useRouter();
-  const { totalXP, players } = useGameStore();
+  const { totalXP, players, currentRound } = useGameStore();
   const currentLevel = Math.floor(totalXP / 100) + 1;
+  const gameIsActive = currentRound > 0;
 
   return (
     <main className="min-h-screen max-w-5xl mx-auto p-4 md:p-10 space-y-8">
@@ -51,12 +52,22 @@ export default function SettingsHubPage() {
             Klarer Flow in vier Bereichen
           </p>
         </div>
-        <button
-          onClick={() => router.back()}
-          className="px-6 py-3 rounded-2xl bg-[var(--color-accent)] text-white font-black text-sm"
-        >
-          Zurück
-        </button>
+        <div className="flex gap-2">
+          {gameIsActive && (
+            <button
+              onClick={() => router.push('/game')}
+              className="px-6 py-3 rounded-2xl bg-[var(--color-accent)] text-white font-black text-sm"
+            >
+              ▶ Zurück zum Spiel
+            </button>
+          )}
+          <button
+            onClick={() => router.back()}
+            className="px-6 py-3 rounded-2xl border border-white/15 text-white font-black text-sm hover:bg-white/5"
+          >
+            Zurück
+          </button>
+        </div>
       </header>
 
       <section className="grid sm:grid-cols-3 gap-3">

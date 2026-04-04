@@ -9,12 +9,13 @@ const PLAYER_COLORS = ['#FF6B35', '#FFD166', '#06D6A0', '#118AB2', '#EF476F', '#
 
 export default function SettingsProfilePage() {
   const router = useRouter();
-  const { players, updatePlayer } = useGameStore();
+  const { players, updatePlayer, currentRound } = useGameStore();
   const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
+  const gameIsActive = currentRound > 0;
 
   return (
     <main className="min-h-screen max-w-4xl mx-auto p-4 md:p-8 space-y-6">
-      <Header title="👥 Spieler & Profil" onBack={() => router.push('/settings')} />
+      <Header title="👥 Spieler & Profil" onBack={() => router.push('/settings')} gameIsActive={gameIsActive} onBackToGame={() => router.push('/game')} />
 
       {players.length === 0 ? (
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center">
@@ -84,13 +85,20 @@ export default function SettingsProfilePage() {
   );
 }
 
-function Header({ title, onBack }: { title: string; onBack: () => void }) {
+function Header({ title, onBack, gameIsActive, onBackToGame }: { title: string; onBack: () => void; gameIsActive?: boolean; onBackToGame?: () => void }) {
   return (
-    <header className="rounded-3xl border border-white/10 bg-white/5 p-5 flex items-center justify-between">
+    <header className="rounded-3xl border border-white/10 bg-white/5 p-5 flex items-center justify-between gap-3">
       <h1 className="text-2xl font-black">{title}</h1>
-      <button onClick={onBack} className="px-4 py-2 rounded-xl bg-[var(--color-accent)] text-white text-sm font-black">
-        Zur Übersicht
-      </button>
+      <div className="flex gap-2">
+        {gameIsActive && onBackToGame && (
+          <button onClick={onBackToGame} className="px-4 py-2 rounded-xl bg-[var(--color-accent)] text-white text-sm font-black">
+            ▶ Zum Spiel
+          </button>
+        )}
+        <button onClick={onBack} className="px-4 py-2 rounded-xl border border-white/15 text-white text-sm font-black hover:bg-white/5">
+          Zur Übersicht
+        </button>
+      </div>
     </header>
   );
 }
