@@ -1318,53 +1318,6 @@
       "coverUrl": "/covers/finale-lilnas-montero.jpg"
     },
     {
-      "id": "hiphop-lilnasx-road",
-      "title": "Old Town Road",
-      "artist": "Lil Nas X",
-      "year": 2019,
-      "country": "US",
-      "genre": "Country Rap",
-      "difficulty": "easy",
-      "mood": [
-        "Happy",
-        "Energy",
-        "Unique"
-      ],
-      "hints": [
-        "Löste eine weltweite Debatte über Genre-Grenzen aus.",
-        "Verbindet klassische Country-Instrumente mit Trap-Beats.",
-        "Wurde durch die Social-Media-App TikTok zum globalen Phänomen.",
-        "Ein Paradebeispiel für modernen Marketing-Erfolg und musikalische Offenheit.",
-        "Refrain: 'I'm gonna take my horse to the old [XXX] [XXX]!'"
-      ],
-      "lyrics": {
-        "real": [
-          "I'm gonna take my horse to the old town road, I'm gonna ride till I can't no more",
-          "I got the horses in the back, horse tack is attached",
-          "Hat is matte black, got the boots that's black to match"
-        ],
-        "fake": "Dancing in the sun, having so much fun with everyone heute"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "r7qovpFAGrQ"
-      },
-      "coverUrl": "/covers/hiphop-lilnasx-road.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "Hip Hop Essentials",
-        "YouTube Collection"
-      ]
-    },
-    {
       "id": "lilnasx-oldtown-2019",
       "title": "Old Town Road",
       "artist": "Lil Nas X ft. Billy Ray Cyrus",
@@ -1407,7 +1360,9 @@
       ],
       "isQRCompatible": true,
       "packs": [
-        "Global Hits 1950-2026"
+        "Global Hits 1950-2026",
+        "Hip Hop Essentials",
+        "YouTube Collection"
       ]
     },
     {

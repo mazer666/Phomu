@@ -3703,52 +3703,6 @@
       ]
     },
     {
-      "id": "drake-one-dance-2016",
-      "title": "One Dance",
-      "artist": "Drake",
-      "year": 2016,
-      "country": "CA",
-      "genre": "R&B",
-      "difficulty": "medium",
-      "mood": [
-        "Chill",
-        "Summer Vibes",
-        "Dance Floor"
-      ],
-      "hints": [
-        "Das Stück enthält ein Sample aus dem Afrobeats-Song 'Do You Mind' von Kyla aus dem Jahr 2013.",
-        "[XXX] wurde von südafrikanischer [XXX]hall-Musik inspiriert, die er während einer Tournee kennenlernte.",
-        "Erschienen 2016; [XXX]s erster globaler Nummer-1-Hit und einer der meistgestreamten Songs des Jahres.",
-        "Laid-back Afrobeats-Groove, eine federleichte Melodie und [XXX]s typischer Singsang-Rap für eine warme Sommernacht.",
-        "[XXX] bittet eine Frau um nur einen Tanz, einen Drink und vielleicht noch eine weitere Chance."
-      ],
-      "lyrics": {
-        "real": [
-          "Grip on your waist, front way, back way",
-          "I need a one dance, got a Hennessy in my hand",
-          "One more time before I go, higher powers taking a hold on me"
-        ],
-        "fake": "Step to the left, then move it to the right tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "mym4sKoAnKs"
-      },
-      "coverUrl": "/covers/drake-one-dance-2016.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "Global Hits 1950-2026"
-      ]
-    },
-    {
       "id": "modern-drake-one-dance",
       "title": "One Dance",
       "artist": "Drake ft. Wizkid & Kyla",
@@ -3793,7 +3747,8 @@
       ],
       "isQRCompatible": true,
       "packs": [
-        "2010s & 2020s Chart Toppers"
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
       ]
     },
     {

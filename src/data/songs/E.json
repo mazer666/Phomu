@@ -632,52 +632,6 @@
       ]
     },
     {
-      "id": "jazz-ella-fitzgerald-summertime",
-      "title": "Summertime",
-      "artist": "Ella Fitzgerald",
-      "year": 1957,
-      "country": "US",
-      "genre": "Jazz",
-      "difficulty": "medium",
-      "mood": [
-        "Chill",
-        "Classic",
-        "Smooth"
-      ],
-      "hints": [
-        "Stammt ursprünglich aus der Oper 'Porgy and Bess' von George Gershwin.",
-        "[XXX] [XXX]s Version gilt als eine der maßgeblichen Interpretationen.",
-        "Thematisiert die drückende Hitze und die Ruhe eines Sommertages im Süden.",
-        "Die Melodie ist hypnotisch und wiegend aufgebaut.",
-        "Refrain: '[XXX], and the livin' is easy...'"
-      ],
-      "lyrics": {
-        "real": [
-          "Summertime, and the livin' is easy, fish are jumpin' and the cotton is high",
-          "Your daddy's rich and your mamma's good lookin'",
-          "So hush little baby, don't you cry"
-        ],
-        "fake": "In the middle of the night, we're looking for the light of the moon"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "2HJCN3upMHE"
-      },
-      "coverUrl": "/covers/jazz-ella-fitzgerald-summertime.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "Country, Jazz & Blues"
-      ]
-    },
-    {
       "id": "jazz-fitzgerald-summertime",
       "title": "Summertime",
       "artist": "Ella Fitzgerald & Louis Armstrong",
@@ -720,7 +674,8 @@
       "isQRCompatible": true,
       "coverUrl": "/covers/jazz-fitzgerald-summertime.jpg",
       "packs": [
-        "Jazz & Blues Classics"
+        "Jazz & Blues Classics",
+        "Country, Jazz & Blues"
       ]
     },
     {
@@ -769,52 +724,6 @@
       "coverUrl": "/covers/disney-lion-love.jpg",
       "packs": [
         "Kids & Disney Magic",
-        "Movie Hits"
-      ]
-    },
-    {
-      "id": "movie-elton-john-circle-of-life",
-      "title": "Circle of Life",
-      "artist": "Elton John",
-      "year": 1994,
-      "country": "GB",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Epic",
-        "Disney",
-        "Inspiring"
-      ],
-      "hints": [
-        "Eröffnungssong des Disney-Erfolgs 'Der König der Löwen'.",
-        "Der berühmte Zulu-Gesang am Anfang stammt von Lebo M.",
-        "Thematisiert den ewigen Kreislauf des Lebens und der Natur.",
-        "Die ikonische Szene zeigt Simba, der dem Tierreich präsentiert wird.",
-        "Nants ingonyama bagithi Baba!"
-      ],
-      "lyrics": {
-        "real": [
-          "From the day we arrive on the planet and blinking, step into the sun",
-          "There's more to see than can ever be seen, more to do than can ever be done",
-          "It's the circle of life, and it moves us all"
-        ],
-        "fake": "Walking through the savannah, looking for the banner of light"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "GibiNy4d4gc"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/movie-elton-john-circle-of-life.jpg",
-      "packs": [
         "Movie Hits"
       ]
     },
@@ -1016,7 +925,8 @@
       "isQRCompatible": true,
       "coverUrl": "/covers/movie-lion-king-circle.jpg",
       "packs": [
-        "Movie Hits"
+        "Movie Hits",
+        "Kids & Disney Magic"
       ]
     },
     {

@@ -1014,52 +1014,6 @@
       ]
     },
     {
-      "id": "disney-lion-circle",
-      "title": "Circle of Life",
-      "artist": "Carmen Twillie & Lebo M.",
-      "year": 1994,
-      "country": "US/ZA",
-      "genre": "Movie Soundtrack / World",
-      "difficulty": "easy",
-      "mood": [
-        "Epic",
-        "Emotional",
-        "Classic"
-      ],
-      "hints": [
-        "Der majestätische Eröffnungssong aus 'Der König der Löwen'.",
-        "Beginnt mit dem markanten Zulu-Gesang von [XXX] M.",
-        "Thematisiert den ewigen Kreislauf der Natur und das Leben.",
-        "Komponiert von Elton John mit Texten von Tim Rice.",
-        "Refrain: 'It's the [XXX] of [XXX]! And it moves us all!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Nants ingonyama bagithi Baba",
-          "It's the circle of life and it moves us all",
-          "Through despair and hope, through faith and love"
-        ],
-        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "GibiNy4d4gc"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/disney-lion-circle.jpg",
-      "packs": [
-        "Kids & Disney Magic"
-      ]
-    },
-    {
       "id": "country-carrie-cheats",
       "title": "Before He Cheats",
       "artist": "Carrie Underwood",

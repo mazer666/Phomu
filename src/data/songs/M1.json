@@ -1661,51 +1661,6 @@
       ]
     },
     {
-      "id": "house-marsh-happier",
-      "title": "Happier",
-      "artist": "Marshmello & Bastille",
-      "year": 2018,
-      "country": "US/GB",
-      "genre": "Dance-Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Sad",
-        "Energy",
-        "Emotional"
-      ],
-      "hints": [
-        "Kontrastiert eine traurige Botschaft (Trennung) mit einem hochenergetischen Beat.",
-        "Besticht durch [XXX]s typische Synthesizer-Produktion und Dan Smiths leidenschaftliche Stimme.",
-        "Das Musikvideo über einen geliebten Hund wurde zum Internet-Tränenzieher.",
-        "Refrain: 'I want you to be [XXX]! I want you to be [XXX]!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Lately, I've been, I've been thinking, I want you to be happier",
-          "Even if that means I'm not with you",
-          "When the morning comes, when we see what we've become"
-        ],
-        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "m7Bc3pLyij0"
-      },
-      "coverUrl": "/covers/house-marsh-happier.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "Electronic & Synthpop Voyage"
-      ]
-    },
-    {
       "id": "electro-marshmello-happier",
       "title": "Happier",
       "artist": "Marshmello ft. Bastille",
@@ -1748,7 +1703,8 @@
       ],
       "isQRCompatible": true,
       "packs": [
-        "Electronic & Techno"
+        "Electronic & Techno",
+        "Electronic & Synthpop Voyage"
       ]
     },
     {
