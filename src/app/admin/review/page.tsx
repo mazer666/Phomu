@@ -14,7 +14,7 @@
 
 import { useState, useMemo, useCallback, useEffect, type ReactNode } from 'react';
 import type { PhomuSong } from '@/types/song';
-import { ALL_SONGS } from '@/data/packs';
+import { ALL_SONGS, AVAILABLE_PACKS } from '@/data/songs';
 
 // ─── Typen ────────────────────────────────────────────────────────────────────
 
@@ -295,8 +295,9 @@ function SongRow({
         <td className="px-3 py-2 text-gray-700 max-w-[220px] truncate" title={song.title}>
           {song.title}
         </td>
-        <td className="px-3 py-2 text-gray-500 text-xs max-w-[120px] truncate" title={song.pack}>
-          {song.pack}
+        <td className="px-3 py-2 text-gray-500 text-xs max-w-[120px] truncate" title={song.packs.join(', ')}>
+          {song.packs[0]}
+          {song.packs.length > 1 && ` (+${song.packs.length - 1})`}
         </td>
         <td className="px-3 py-2">
           <div className="flex gap-2 items-center">
@@ -365,7 +366,7 @@ export default function AdminReviewPage() {
 
   // All available packs
   const availablePacks = useMemo(
-    () => Array.from(new Set(ALL_SONGS.map((s) => s.pack))).sort(),
+    () => AVAILABLE_PACKS.sort(),
     []
   );
 
@@ -379,7 +380,7 @@ export default function AdminReviewPage() {
   const displaySongs = useMemo(() => {
     let list = mergedSongs;
 
-    if (filterPack !== 'all') list = list.filter((s) => s.pack === filterPack);
+    if (filterPack !== 'all') list = list.filter((s) => s.packs.includes(filterPack));
 
     if (filterStatus === 'complete') list = list.filter(isComplete);
     else if (filterStatus === 'incomplete') list = list.filter((s) => !isComplete(s));
@@ -401,7 +402,7 @@ export default function AdminReviewPage() {
       if (sortField === 'year') cmp = a.year - b.year;
       else if (sortField === 'artist') cmp = a.artist.localeCompare(b.artist);
       else if (sortField === 'title') cmp = a.title.localeCompare(b.title);
-      else if (sortField === 'pack') cmp = a.pack.localeCompare(b.pack);
+      else if (sortField === 'pack') cmp = (a.packs[0] || '').localeCompare(b.packs[0] || '');
       return sortDir === 'asc' ? cmp : -cmp;
     });
   }, [mergedSongs, edits, filterPack, filterStatus, search, sortField, sortDir]);
@@ -467,8 +468,11 @@ export default function AdminReviewPage() {
     const byPack: Record<string, PhomuSong[]> = {};
     mergedSongs.forEach((s) => {
       if (edits[s.id]) {
-        if (!byPack[s.pack]) byPack[s.pack] = [];
-        byPack[s.pack].push(s);
+        // Delta export should probably go into all its packs or just a "review" pack.
+        // For simplicity, we'll keep the first pack as the target for the delta.
+        const targetPack = s.packs[0] || 'Unassigned';
+        if (!byPack[targetPack]) byPack[targetPack] = [];
+        byPack[targetPack].push(s);
       }
     });
 
@@ -492,7 +496,7 @@ export default function AdminReviewPage() {
   // ─── Export: vollständiges Pack ───────────────────────────────────────────────
 
   function handleExportPack(packName: string) {
-    const songs = mergedSongs.filter((s) => s.pack === packName);
+    const songs = mergedSongs.filter((s) => s.packs.includes(packName));
     const exportData = {
       meta: {
         pack: packName,

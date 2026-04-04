@@ -26,6 +26,7 @@ export function SongEditor({ song, onSave, onCancel, variant = 'modal' }: SongEd
   const [lyricsReal2, setLyricsReal2] = useState(song.lyrics?.real[2] ?? '');
   const [lyricsFake, setLyricsFake] = useState(song.lyrics?.fake ?? '');
   const [moodInput, setMoodInput] = useState(song.mood.join(', '));
+  const [packsInput, setPacksInput] = useState(song.packs.join(', '));
   const [supportedModesInput, setSupportedModesInput] = useState(song.supportedModes.join(', '));
   const [isQRCompatible, setIsQRCompatible] = useState(song.isQRCompatible);
   const [hintEvidenceInput, setHintEvidenceInput] = useState(
@@ -42,6 +43,7 @@ export function SongEditor({ song, onSave, onCancel, variant = 'modal' }: SongEd
     const hasLyrics = lyricsReal0.trim() || lyricsReal1.trim() || lyricsReal2.trim() || (typeof lyricsFake === 'string' ? lyricsFake.trim() : lyricsFake.length > 0);
     const lyrics = hasLyrics ? { real: [lyricsReal0, lyricsReal1, lyricsReal2] as [string, string, string], fake: lyricsFake } : null;
     const mood = moodInput.split(',').map((m) => m.trim()).filter(Boolean);
+    const packs = packsInput.split(',').map((p) => p.trim()).filter(Boolean);
     const supportedModes = supportedModesInput.split(',').map((m) => m.trim()).filter(Boolean);
     const evidenceRows = hintEvidenceInput.split('\n').map((row) => row.trim()).filter(Boolean).slice(0, 5);
     const hintEvidence =
@@ -53,6 +55,7 @@ export function SongEditor({ song, onSave, onCancel, variant = 'modal' }: SongEd
       ...form, 
       lyrics, 
       mood, 
+      packs,
       supportedModes, 
       isQRCompatible,
       hintEvidence
@@ -90,6 +93,7 @@ export function SongEditor({ song, onSave, onCancel, variant = 'modal' }: SongEd
           <Input label="Amazon Music URL" value={form.links.amazonMusic ?? ''} onChange={v => setForm(p => ({ ...p, links: { ...p.links, amazonMusic: v || undefined } }))} />
           <Input label="Amazon Prime Preview URL" value={form.links.amazonPrimePreview ?? ''} onChange={v => setForm(p => ({ ...p, links: { ...p.links, amazonPrimePreview: v || undefined } }))} />
           <Input label="Cover URL" value={form.coverUrl ?? ''} onChange={v => setForm(p => ({ ...p, coverUrl: v || undefined }))} />
+          <Input label="Song Packs" value={packsInput} onChange={setPacksInput} placeholder="Global Hits, Rock Anthems, ..." />
         </div>
 
         <div className="space-y-3">

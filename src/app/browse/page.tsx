@@ -7,7 +7,7 @@ import type { PhomuSong } from '@/types/song';
 import { SongCard } from '@/components/browse/SongCard';
 import { SongEditor } from '@/components/admin/SongEditor';
 import { useGameStore } from '@/stores/game-store';
-import { ALL_SONGS as DATA_SONGS } from '@/data/packs';
+import { ALL_SONGS as DATA_SONGS } from '@/data/songs';
 
 // ─── Daten laden & Storage ──────────────────────────────────────────────────
 
@@ -422,7 +422,7 @@ export default function BrowsePage() {
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setEditingSong({ 
                   id: `new-${Date.now()}`, title: '', artist: '', year: new Date().getFullYear(), country: 'DE', genre: 'Pop', 
-                  difficulty: 'medium', mood: [], pack: 'Custom', hints: ['', '', '', '', ''], lyrics: null, 
+                  difficulty: 'medium', mood: [], packs: ['Custom'], hints: ['', '', '', '', ''], lyrics: null, 
                   hintEvidence: ['', '', '', '', ''],
                   isOneHitWonder: false, links: { youtube: '' }, supportedModes: ['timeline', 'hint-master', 'vibe-check', 'cover-confusion', 'survivor'], isQRCompatible: true
                 })}

@@ -1,0 +1,3244 @@
+{
+  "songs": [
+    {
+      "id": "dance-la-bouche-be-my-lover",
+      "title": "Be My Lover",
+      "artist": "La Bouche",
+      "year": 1995,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
+      "hints": [
+        "Entdeckt und produziert vom legendären Frank Farian (Boney M., Milli Vanilli).",
+        "Die Sängerin Melanie Thornton hatte eine der stärksten Stimmen des Genres.",
+        "Ikonischer Beginn mit 'La da da dee da da da da...'.",
+        "War ein riesiger Charterfolg in den USA und Europa.",
+        "Refrain: 'Be my [XXX], wanna be my [XXX], go and be my [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "La da da dee da da da da, be my lover",
+          "Wanna be my lover, looking back on all the time we spent together",
+          "You oughta know by now if you wanna be my lover"
+        ],
+        "fake": "Sun is coming up and we're dancing till the light of day"
+      },
+      "links": {
+        "youtube": "ViP87WipSm0"
+      },
+      "coverUrl": "/covers/dance-la-bouche-be-my-lover.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-6nl5U0O5nOU",
+      "title": "Perdoname ft. Eddy Lover",
+      "artist": "La Factoria",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Factoria.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Perdoname ft. Eddy Lover",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6nl5U0O5nOU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-XngTiXBPmEE",
+      "title": "De La Ghetto, Arcangel, Ozuna, Anuel Aa, Dj Luian, Mambo Kingz",
+      "artist": "La Ocasión",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Ocasión.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: De La Ghetto, Arcangel, Ozuna, Anuel Aa, Dj Luian, Mambo Kingz",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XngTiXBPmEE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-X05T3FmRzZ0",
+      "title": "Recuerdame ft. Marc Anthony",
+      "artist": "La Quinta Estación",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Quinta Estación.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Recuerdame ft. Marc Anthony",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=X05T3FmRzZ0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-OOJ0OP0viVM",
+      "title": "Sueños Rotos",
+      "artist": "La Quinta Estación",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Quinta Estación.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Sueños Rotos",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OOJ0OP0viVM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-MbhfiEhlDNg",
+      "title": "Cumbia Barulera ft. Jorge Muñiz",
+      "artist": "La Sonora Dinamita",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Sonora Dinamita.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Cumbia Barulera ft. Jorge Muñiz",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MbhfiEhlDNg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-s37GxC9Xho8",
+      "title": "La Parabólica ft. El Bebeto",
+      "artist": "La Sonora Dinamita",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Sonora Dinamita.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Parabólica ft. El Bebeto",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s37GxC9Xho8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-0nBFWzpWXuM",
+      "title": "Celia Cruz",
+      "artist": "La Vida Es Un Carnaval",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von La Vida Es Un Carnaval.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Celia Cruz",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0nBFWzpWXuM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "lady-gaga-bad-romance-2009",
+      "title": "Bad Romance",
+      "artist": "Lady Gaga",
+      "year": 1990,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dance Floor",
+        "Energy",
+        "Legends & Classics",
+        "Neon Night",
+        "Party Anthem",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Ausruf ganz am Anfang des Songs entstand spontan bei einer Probe und wurde so beliebt, dass er blieb.",
+        "Das Musikvideo spielt in einem futuristischen weißen Raum und war zu der Zeit [XXX]s teuerste Produktion.",
+        "Erschienen 2009 als erste Single aus der 'The Fame Monster' EP; sofort auf Platz 1 in über 20 Ländern.",
+        "Elektronischer Synth-Pop mit einer eingängigen Silbenfolge im Intro, pulsierendem Bass und dramatischen Strophen.",
+        "[XXX] [XXX] singt von einer ungesunden, obsessiven Liebesbeziehung voller Drama – sie will die ganze Welt von jemandem."
+      ],
+      "lyrics": {
+        "real": [
+          "I want your ugly, I want your disease",
+          "I want your everything as long as it's free",
+          "You and me could write a bad romance"
+        ],
+        "fake": "I'm lost in the rhythm of a heart that's made of stone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qrO4YZeyl0I"
+      },
+      "coverUrl": "/covers/lady-gaga-bad-romance-2009.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-en2D_5TzXCA",
+      "title": "Million Reasons",
+      "artist": "Lady Gaga",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Honest",
+        "Latin Heat",
+        "Popular",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Ein Song von Lady Gaga.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Million Reasons",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": {
+        "real": [
+          "You're giving me a million reasons to let you go",
+          "You're giving me a million reasons to quit the show",
+          "I've got a hundred million reasons to walk away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=en2D_5TzXCA"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/piano-gaga-reasons.jpg"
+    },
+    {
+      "id": "yt-oG-4Uvhm4lI",
+      "title": "Poker Face",
+      "artist": "Lady Gaga",
+      "year": 2008,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Catchy",
+        "Electronic",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Zementierte ihren Status als neue Queen of Pop am Ende der Dekade.",
+        "Thematisiert Bisexualität und das Verstecken von Gefühlen hinter einer Maske.",
+        "Der 'Ma-ma-ma-ma'-Hook ist unvergesslich.",
+        "Die futuristischen Outfits im Video beeinflussten die Mode jahrelang.",
+        "Refrain: 'Can't read my, can't read my, no he can't read my [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I wanna hold 'em like they do in Texas, please, fold 'em, let 'em hit me, raise it, baby, stay with me",
+          "Can't read my, can't read my, no he can't read my poker face",
+          "P-p-p-poker face, p-p-p-poker face"
+        ],
+        "fake": [
+          "Draw the card, p-p-p poker face, don't cheat and repeat",
+          "I don't want to fold, make me break, my p-p-p poker face",
+          "Control, cold and win the gold, with my p-p-p poker face"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oG-4Uvhm4lI",
+        "spotify": "1QV6tiMFM6fSOKOGLMHYYg",
+        "amazonMusic": "B001SWKSNS"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/2000s-lady-gaga-poker-face.jpg"
+    },
+    {
+      "id": "yt-R5RRHt-sSX8",
+      "title": "Stupid Love",
+      "artist": "Lady Gaga",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Stupid Love",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=R5RRHt-sSX8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-DXnS8mqUDyQ",
+      "title": "Rain On Me",
+      "artist": "Lady Gaga & Ariana Grande",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Rain On Me",
+        "Playlist-Tag: Modern Anthems"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DXnS8mqUDyQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-UsCXul-7YS8",
+      "title": "Sour Candy",
+      "artist": "Lady Gaga & BLACKPINK",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Sour Candy",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UsCXul-7YS8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "movie-lady-gaga-shallow",
+      "title": "Shallow",
+      "artist": "Lady Gaga & Bradley Cooper",
+      "year": 2018,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Soulful"
+      ],
+      "hints": [
+        "Das Herzstück des Films 'A Star Is Born'.",
+        "Gewann den Oscar für den Besten Originalsong 2019.",
+        "Ein kraftvolles Duett zwischen einer Popsängerin und einem Schauspieler.",
+        "Bekannt für den intensiven Gesang am Ende des Liedes.",
+        "Refrain: 'I'm off the deep end, watch as I dive in, I'll never meet the ground.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Tell me something, girl, are you happy in this modern world?",
+          "Or do you need more? Is there something else you're searching for?",
+          "I'm falling, in all the good times I find myself longing for change"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bo_efYhYU2A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-lady-gaga-shallow.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "yt-DlFXDl_ROAM",
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga & Bruno Mars",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Die With A Smile",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DlFXDl_ROAM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "score-lalo-mission",
+      "title": "Mission: Impossible Theme",
+      "artist": "Lalo Schifrin",
+      "year": 1966,
+      "country": "AR/US",
+      "genre": "Movie Theme / Jazz-Funk focus",
+      "difficulty": "medium",
+      "mood": [
+        "Urgent",
+        "Cool",
+        "Fast"
+      ],
+      "hints": [
+        "Besticht durch den ungewöhnlichen 5/4-Takt, der an brennende Zündschnüre erinnert.",
+        "Inbegriff für musikalische Spannung und Action.",
+        "Wurde durch die Neuinterpretationen für die Tom Cruise-Filme erneut zum Welthit.",
+        "Symbolisiert Unmöglichkeit und technisches Geschick."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Burning fuse rhythm",
+          "5/4 time signature"
+        ],
+        "fake": "Accepting the mission in the shadow of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "O07WucFwdq8",
+        "spotify": "0VlxbRzdOyA56BviBK9vkc",
+        "amazonMusic": "B01IVFMUEO"
+      },
+      "coverUrl": "/covers/score-lalo-mission.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-lamb-redneck",
+      "title": "Redneck",
+      "artist": "Lamb of God",
+      "year": 2006,
+      "country": "US",
+      "genre": "Groove Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Powerful",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff für den modernen US-Groove-Metal (NWOAHM).",
+        "Thematisiert Arroganz und das Entlarven von Schwätzern.",
+        "Besticht durch Randy Blythes gewaltige Stimme und den massiven Groove.",
+        "Ein absoluter Live-Dauerbrenner.",
+        "Refrain: 'This is an invitation! To the end of everything!' (Hooky and heavy)"
+      ],
+      "lyrics": {
+        "real": [
+          "This is an invitation, to the end of everything",
+          "You're a person but you don't even know it",
+          "Now it's time to pay the price for your own lies"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "oqdZpxkzNvc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-lamb-redneck.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-vTyIRz9XGsQ",
+      "title": "Asking",
+      "artist": "Lane 8 & POLIÇA",
+      "year": 2018,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Asking",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vTyIRz9XGsQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-laura-branigan-selfcontrol",
+      "title": "Self Control",
+      "artist": "Laura Branigan",
+      "year": 1984,
+      "country": "US",
+      "genre": "Synth Pop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Eine moderne Interpretation des Hits von Raf.",
+        "[XXX] [XXX]s kraftvolle Stimme verleiht dem Song eine enorme Tiefe.",
+        "Thematisiert das nächtliche Leben und den Kontrollverlust.",
+        "Ein Inbegriff für mysteriösen und zugleich tanzbaren 80er-Pop.",
+        "Refrain: 'You take my [XXX], you take my [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I live among the creatures of the night, I haven't got the will to try and fight",
+          "You take my self, you take my self control",
+          "I, I live among the creatures of the night"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FQD0yGuZ2N8",
+        "spotify": "6JNJERZGJwDVgkmbohBw7u",
+        "amazonMusic": "B001O7WLUU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-laura-branigan-selfcontrol.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-eCS4OTgaHeM",
+      "title": "Soothing",
+      "artist": "Laura Marling",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Laura Marling.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Soothing",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eCS4OTgaHeM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-S39NaDPNDtk",
+      "title": "O Superman",
+      "artist": "Laurie Anderson",
+      "year": 1981,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: O Superman",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=S39NaDPNDtk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "hiphop-lauryn-doowop",
+      "title": "Doo Wop (That Thing)",
+      "artist": "Lauryn Hill",
+      "year": 1998,
+      "country": "US",
+      "genre": "Soul/Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Groovy",
+        "Powerful",
+        "Serious",
+        "Soulful"
+      ],
+      "hints": [
+        "[XXX] [XXX]s erste Solo-Single nach den Fugees.",
+        "Gibt Ratschläge an Männer und Frauen, sich nicht für oberflächliche Dinge auszunutzen.",
+        "Kombiniert Doo-Wop-Harmonien aus den 60ern mit modernem Hip-Hop.",
+        "Gewann den Grammy für den besten R&B-Song und die beste weibliche R&B-Aufnahme.",
+        "Refrain: 'Girls you know you better watch out... Guys you know you better watch out!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's been three weeks since you were looking for your friend",
+          "But you're really not looking for no friend",
+          "Guys you know you better watch out, some girls, some girls are only about that thing"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "links": {
+        "youtube": "T6QKqFPRZSA"
+      },
+      "coverUrl": "/covers/hiphop-lauryn-doowop.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "yt-Ahm7myXatco",
+      "title": "All 4 Nothing (I'm So In Love)",
+      "artist": "Lauv",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: All 4 Nothing (I'm So In Love)",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ahm7myXatco"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-SzQG_qK4LVo",
+      "title": "Steal The Show",
+      "artist": "Lauv",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Steal The Show",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SzQG_qK4LVo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disney-mulan-reflection",
+      "title": "Reflection",
+      "artist": "Lea Salonga",
+      "year": 1998,
+      "country": "US/PH",
+      "genre": "Soundtrack / Broadway / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Serene",
+        "Classic"
+      ],
+      "hints": [
+        "Mulans Lied über Identität und den Wunsch nach Anerkennung ihres wahren Ichs.",
+        "Thematisiert die innere Zerrissenheit zwischen Tradition und persönlicher Wahrheit.",
+        "Lea [XXX]s glasklare Stimme verleiht dem Song eine enorme Tiefe.",
+        "Ein Inbegriff für die emotionale Reife des Disney-Songwritings.",
+        "Refrain: 'When will my [XXX] show... who I am inside?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Look at me, you may think you see who I really am, but you'll never know me",
+          "When will my reflection show, who I am inside?",
+          "Why must we all conceal what we think, how we feel?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NTlSFWHkJgk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mulan-reflection.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "legends-led-zeppelin-stairway",
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "year": 1971,
+      "country": "GB",
+      "genre": "Hard Rock / Folk Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Dramatic",
+        "Epic",
+        "Legends & Classics",
+        "Moody",
+        "Mystical",
+        "Popular"
+      ],
+      "hints": [
+        "Gilt oft als der beste Rock-Song aller Zeiten, obwohl er nie als Single veröffentlicht wurde.",
+        "Der Song baut sich langsam von einer akustischen Folk-Ballade zu einer Hard-Rock-Hymne auf.",
+        "Gitarrist Jimmy Page spielt eines der am meisten bewunderten Solos der Musikgeschichte.",
+        "Thematisiert eine Frau, die glaubt, sich einen Weg in den Himmel kaufen zu können.",
+        "In vielen Musikgeschäften ist das Anspielen dieses Songs verboten, weil es jeder tut."
+      ],
+      "lyrics": {
+        "real": [
+          "There's a lady who's sure all that glitters is gold, and she's buying a stairway to heaven",
+          "When she gets there she knows, if the stores are all closed, with a word she can get what she came for",
+          "And it makes me wonder..."
+        ],
+        "fake": [
+          "Walking down the silver path under the dragon's wrath up to the sky",
+          "Where she gets the gold, and the stores are not closed",
+          "And I am afraid..."
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QkF3oxziUI4",
+        "spotify": "5CQ30WqJwcep0pYcV4AMNc",
+        "amazonMusic": "B00M8AHW74"
+      },
+      "coverUrl": "/covers/legends-led-zeppelin-stairway.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "jazz-morgan-sidewinder",
+      "title": "The Sidewinder",
+      "artist": "Lee Morgan",
+      "year": 1964,
+      "country": "US",
+      "genre": "Jazz / Hard Bop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Kombiniert Blues, Soul und Jazz in einem extrem eingängigen Format.",
+        "Besticht durch den typischen 'Boogaloo' Rhythmus der 60er.",
+        "Ein Inbegriff für den Blue Note Sound jener Ära.",
+        "Lee [XXX]s Trompetenspiel ist hier voller Witz und Energie.",
+        "Genre-Inhalt: Treibender Soul-Jazz."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental - legendary for its dancing groove)",
+          "(Morgan's biggest commercial success)",
+          "(The sound of cool 60s Jazz)"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NHN6-yWFKPc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-morgan-sidewinder.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-kdk8t9sr0yo",
+      "title": "Don't Want You Back",
+      "artist": "Leela James",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Leela James.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Don't Want You Back",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kdk8t9sr0yo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-OO_j8pV3JOw",
+      "title": "More Than I Can Say",
+      "artist": "Leo Sayer",
+      "year": 1980,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: More Than I Can Say",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OO_j8pV3JOw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-i8TKoBPkZQo",
+      "title": "Lessons In Love",
+      "artist": "Level 42",
+      "year": 1986,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Lessons In Love",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=i8TKoBPkZQo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-lewis-loved",
+      "title": "Someone You Loved",
+      "artist": "Lewis Capaldi",
+      "year": 2018,
+      "country": "GB",
+      "genre": "Soul / Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
+      "hints": [
+        "War wochenlang auf Platz 1 weltweit und besiegelte [XXX]s Status als Superstar.",
+        "Thematisiert den herben Verlust und das Gefühl, ohne jemanden ungeschützt zu sein.",
+        "Besticht durch die raue, leidenschaftliche Stimme und den herzzerreißenden Refrain.",
+        "Das Video thematisiert Organspende auf sehr berührende Weise.",
+        "Refrain: 'Now the day bleeds, into nightfall! And you're not here!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm going under and this time I fear there's no one to save me",
+          "This all or nothing really got a way of driving me crazy",
+          "I need somebody to heal, somebody to know, somebody to have"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "zABLecsR5UE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lewis-loved.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "piano-lifehouse-youandme",
+      "title": "You and Me",
+      "artist": "Lifehouse",
+      "year": 2005,
+      "country": "US",
+      "genre": "Alt-Rock / Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
+      "hints": [
+        "Sehr beliebter Hochzeit-Song in den USA.",
+        "Thematisiert den Moment, in dem die Welt um einen herum verschwindet.",
+        "Besticht durch das schlichte Arrangement und die ehrliche Performance.",
+        "Ein Inbegriff für den romantischen US-Alternative-Sound.",
+        "Refrain: 'It's you and me, and all of the people!'"
+      ],
+      "lyrics": {
+        "real": [
+          "What day is it? And in what month? This clock never seemed so alive",
+          "It's you and me, and all of the people with nothing to do",
+          "Nothing to lose"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ac3HkriqdGQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lifehouse-youandme.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-oz0Oz5tBOg8",
+      "title": "MONTERO (Call Me By Your Name)",
+      "artist": "Lil Nas X",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Modern",
+        "Modern Anthems",
+        "Popular",
+        "Provocative"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: MONTERO (Call Me By Your Name)",
+        "Playlist-Tag: Modern Anthems"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not phased, only here to sin",
+          "Call me by your name, tell me you love me in private",
+          "Call me by your name, I don't care if you're lying"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6swmTBVI83k"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-lilnas-montero.jpg"
+    },
+    {
+      "id": "hiphop-lilnasx-road",
+      "title": "Old Town Road",
+      "artist": "Lil Nas X",
+      "year": 2019,
+      "country": "US",
+      "genre": "Country Rap",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Unique"
+      ],
+      "hints": [
+        "Löste eine weltweite Debatte über Genre-Grenzen aus.",
+        "Verbindet klassische Country-Instrumente mit Trap-Beats.",
+        "Wurde durch die Social-Media-App TikTok zum globalen Phänomen.",
+        "Ein Paradebeispiel für modernen Marketing-Erfolg und musikalische Offenheit.",
+        "Refrain: 'I'm gonna take my horse to the old [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm gonna take my horse to the old town road, I'm gonna ride till I can't no more",
+          "I got the horses in the back, horse tack is attached",
+          "Hat is matte black, got the boots that's black to match"
+        ],
+        "fake": "Dancing in the sun, having so much fun with everyone heute"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "r7qovpFAGrQ"
+      },
+      "coverUrl": "/covers/hiphop-lilnasx-road.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-r7qovpFAGrQ",
+      "title": "Old Town Road  ft. Billy Ray Cyrus",
+      "artist": "Lil Nas X",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Lil Nas X.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Old Town Road  ft. Billy Ray Cyrus",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=r7qovpFAGrQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "lilnasx-oldtown-2019",
+      "title": "Old Town Road",
+      "artist": "Lil Nas X ft. Billy Ray Cyrus",
+      "year": 2019,
+      "country": "US",
+      "genre": "Country Rap / Hip-Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Hielt mit 19 Wochen den Rekord für die längste Nummer 1 in den US-Charts.",
+        "Löste eine Debatte darüber aus, was 'echter' Country ist.",
+        "Kombiniert Banjo-Samples mit schweren Trap-Beats.",
+        "War ein massiver viraler Erfolg auf Plattformen wie TikTok.",
+        "Refrain: 'I'm gonna take my horse to the old [XXX] [XXX]! I'm gonna ride 'til I can't no more!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm gonna take my horse to the old town road",
+          "I'm gonna ride 'til I can't no more",
+          "I got the horses in the back, horse tack is attached"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "r7qovpFAGrQ"
+      },
+      "coverUrl": "/covers/lilnasx-oldtown-2019.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-UTHLKHL_whs",
+      "title": "INDUSTRY BABY",
+      "artist": "Lil Nas X, Jack Harlow",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Ein Song von Lil Nas X, Jack Harlow.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: INDUSTRY BABY",
+        "Playlist-Tag: Modern Anthems"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UTHLKHL_whs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "rock-linkin-park-in-the-end",
+      "title": "In the End",
+      "artist": "Linkin Park",
+      "year": 2000,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Intense",
+        "Modern Rock",
+        "Moody",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Einer der definierenden Songs des Nu-Metal-Genres mit einer Mischung aus Rap und Gesang.",
+        "Chester Bennington mochte den Song anfangs gar nicht und wollte ihn nicht auf dem Album haben.",
+        "Das Musikvideo nutzt für die damalige Zeit wegweisendes CGI in einer Wüstenwelt.",
+        "Thematisiert das Scheitern von Bemühungen und das Gefühl der Vergeblichkeit.",
+        "Besonders ikonisch durch das Klavier-Intro am Anfang."
+      ],
+      "lyrics": {
+        "real": [
+          "It starts with one thing, I don't know why, it doesn't even matter how hard you try",
+          "Keep that in mind, I designed this rhyme to explain in due time",
+          "I tried so hard and got so far, but in the end it doesn't even matter"
+        ],
+        "fake": "Nothing's gonna change the way I feel about the things we did for real"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eVTXPUF4Oz4"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-linkin-park-in-the-end.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore"
+      ]
+    },
+    {
+      "id": "rock-linkin-park-numb",
+      "title": "Numb",
+      "artist": "Linkin Park",
+      "year": 2003,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Intense",
+        "Rock"
+      ],
+      "hints": [
+        "Das Musikvideo wurde teilweise in Prag gedreht (Karlsbrücke, Veitsdom).",
+        "Einer der erfolgreichsten Songs der Band, der oft mit Jay-Z gemixt wurde ('Encore').",
+        "Thematisiert den Druck, den Erwartungen anderer gerecht werden zu müssen.",
+        "Ikonisches Synthesizer-Intro und Chesters kraftvoller Gesang.",
+        "Refrain: 'I've become so [XXX], I can't feel you there!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm tired of being what you want me to be, feeling so faithless, lost under the surface",
+          "Don't know what you're expecting of me, put under the pressure of walking in your shoes",
+          "I've become so numb, I can't feel you there, become so tired, so much more aware"
+        ],
+        "fake": "Taking my chances, making my moves, I've got nothing left to lose"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kXYiU_JCYtU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-linkin-park-numb.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "piano-lp-onemore",
+      "title": "One More Light",
+      "artist": "Linkin Park",
+      "year": 2017,
+      "country": "US",
+      "genre": "Pop / Electronic / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
+      "hints": [
+        "Zutiefst bewegender Song über Mitgefühl und den Wert eines einzelnen Lebens.",
+        "Wurde nach Chester Benningtons Tod zur Hymne für die Trauerarbeit der Fans weltweit.",
+        "Besticht durch die zerbrechliche Produktion und den intimen Gesang.",
+        "Thematisiert die Frage: Wer kümmert sich, wenn ein weiteres Licht erlischt?",
+        "Refrain: 'Who cares if one [XXX] [XXX] goes out? Well I do!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Should've stayed, were there signs I ignored?",
+          "Can I help you, not to hurt, anymore?",
+          "Who cares if one more light goes out, well I do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Tm8LGxTLtQk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lp-onemore.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-eKpVQm41f8Y",
+      "title": "Loco-motion(1962)",
+      "artist": "Little Eva",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Little Eva.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Loco-motion(1962)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eKpVQm41f8Y"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-j1QrD9-S4sU",
+      "title": "Move",
+      "artist": "Little Mix",
+      "year": 2013,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Move",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=j1QrD9-S4sU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-F13JNjpNW6c",
+      "title": "Tutti Frutti",
+      "artist": "Little Richard",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Little Richard.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Tutti Frutti",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=F13JNjpNW6c"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-d_4jayID2_A",
+      "title": "2 Be Loved (Am I Ready)",
+      "artist": "Lizzo",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: 2 Be Loved (Am I Ready)",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=d_4jayID2_A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-wnWxeBfV2ZQ",
+      "title": "About Damn Time",
+      "artist": "Lizzo",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Confident",
+        "Happy",
+        "Modern",
+        "Modern Hits",
+        "Popular"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: About Damn Time",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": {
+        "real": [
+          "In a minute, I'ma need a sentimental man or woman to pump me up",
+          "Feeling fussy, walkin' in my Balenci-ussies",
+          "It's about damn time!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wnWxeBfV2ZQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-lizzo-time.jpg"
+    },
+    {
+      "id": "yt-xZdj3LM5X1M",
+      "title": "Good as Hell",
+      "artist": "Lizzo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Good as Hell",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xZdj3LM5X1M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-9y4sFUmiwB0",
+      "title": "Juice",
+      "artist": "Lizzo",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Juice",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9y4sFUmiwB0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "dance-lmfao-party-rock",
+      "title": "Party Rock Anthem",
+      "artist": "LMFAO",
+      "year": 2011,
+      "country": "US",
+      "genre": "Electionic / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Party",
+        "Fun"
+      ],
+      "hints": [
+        "Löste den weltweiten 'Shuffle'-Tanzboom aus.",
+        "Der Refrain 'Every day I'm shufflin'' wurde zum geflügelten Wort.",
+        "Ein Inbegriff für übertriebenen, spaßigen [XXX]-Sound.",
+        "Das Musikvideo parodiert den Film '28 Days Later'.",
+        "Refrain: '[XXX] [XXX] is in the house tonight! Everybody just have a good time!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Party rock is in the house tonight, everybody just have a good time",
+          "And we gonna make you lose your mind, everybody just have a good time",
+          "Every day I'm shufflin'"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "KQ6zr6kCPj8"
+      },
+      "coverUrl": "/covers/dance-lmfao-party-rock.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "lorde-royals-2013",
+      "title": "Royals",
+      "artist": "Lorde",
+      "year": 2013,
+      "country": "NZ",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Chill",
+        "Rebel",
+        "Rainy Day"
+      ],
+      "hints": [
+        "[XXX] schrieb diesen Song mit 15 Jahren; die Inspiration kam von einem Zeitungsfoto eines Baseballspielers mit dem Spitznamen 'Royal'.",
+        "Das Stück wurde von einem Hobbyisten und Fan entdeckt, der ihre Demo-Aufnahme an ein Label schickte.",
+        "Erschienen 2013 als Debütsingle der Neuseeländerin; gewann zwei Grammys inklusive 'Song des Jahres'.",
+        "Minimalistische Beats, nur Stimme und spärliche Percussion – eine bewusste Anti-Glamour-Ästhetik ohne Bläser oder Synthesizer.",
+        "[XXX] erklärt, dass sie niemals von Kronjuwelen und Goldbechern träumt – das Königshaus-Leben ist nichts für sie."
+      ],
+      "lyrics": {
+        "real": [
+          "I've never seen a diamond in the flesh",
+          "I cut my teeth on wedding rings in the movies",
+          "And we'll never be royals"
+        ],
+        "fake": "Living in a castle made of glass and gold"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nlcIKh6sBtc"
+      },
+      "coverUrl": "/covers/lorde-royals-2013.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-hHtOXB1JunA",
+      "title": "Euphoria",
+      "artist": "Loreen",
+      "year": 2012,
+      "country": "SE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Euphoria",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hHtOXB1JunA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "finale-loreen-tattoo",
+      "title": "Tattoo",
+      "artist": "Loreen",
+      "year": 2023,
+      "country": "SE",
+      "genre": "Electronic Pop / ESC Winner",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Energy"
+      ],
+      "hints": [
+        "Gewanner den Eurovision Song Contest 2023 und machte [XXX] zur zweifachen Siegerin.",
+        "Besticht durch die atmosphärische Inszenierung und [XXX]'s kraftvolle Stimme.",
+        "Thematisiert eine Liebe, die sich wie ein [XXX] in die Seele brennt.",
+        "Refrain: 'I don't care about the world! I don't care about them all!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I don't care about the world, I don't care about them all",
+          "You're stuck on me like a tattoo",
+          "I don't care about the pain"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "b3vJfR81xO0"
+      },
+      "coverUrl": "/covers/finale-loreen-tattoo.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "country-loretta-daughter",
+      "title": "Coal Miner's Daughter",
+      "artist": "Loretta Lynn",
+      "year": 1970,
+      "country": "US",
+      "genre": "Country / Autobiographical",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Traditional",
+        "Honest"
+      ],
+      "hints": [
+        "Die Lebensgeschichte von [XXX] [XXX], geboren in ärmlichen Verhältnissen in Butcher Hollow.",
+        "Besticht durch die ehrlichen Beschreibungen des ländlichen Lebens.",
+        "Machte die harte Arbeit der Bergleute und den Stolz der Appalachia-Region weithin bekannt.",
+        "Inbegriff für Authentizität im Country.",
+        "Refrain: 'Well, I was born a [XXX] [XXX] [XXX]! In a cabin on a hill!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Well, I was born a coal miner's daughter, in a cabin on a hill in Butcher Holler",
+          "My daddy worked all night in the Van Lear coal mines",
+          "Mama scrubbed our clothes on a washboard"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5VhOPHR47qE"
+      },
+      "coverUrl": "/covers/country-loretta-daughter.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-LXFL5mdfP40",
+      "title": "No me importa el dinero  1080 HD",
+      "artist": "Los autenticos decadentes ft. Julieta Venegas",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Los autenticos decadentes ft. Julieta Venegas.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: No me importa el dinero  1080 HD",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LXFL5mdfP40"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Z7EsuR5I8SE",
+      "title": "Macarena",
+      "artist": "Los Del Rio",
+      "year": 1993,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Macarena",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z7EsuR5I8SE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-zWaymcVmJ-A",
+      "title": "Macarena (Bayside Boys Remix)",
+      "artist": "Los Del Rio",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Los Del Rio.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Macarena (Bayside Boys Remix)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zWaymcVmJ-A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-A7LMQnYnxmw",
+      "title": "Mi Amigo El De Arriba",
+      "artist": "Los Inquietos Del Norte",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Los Inquietos Del Norte.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Mi Amigo El De Arriba",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A7LMQnYnxmw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-fhzv1nVrTYA",
+      "title": "y yo que te deseo a morir",
+      "artist": "Los Inquietos del Vallenato",
+      "year": 2004,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: y yo que te deseo a morir",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fhzv1nVrTYA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-LWfYwDAcE7I",
+      "title": "Que De Raro Tiene",
+      "artist": "Los Temerarios",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Los Temerarios.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Que De Raro Tiene",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LWfYwDAcE7I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-yc5UPdpraU0",
+      "title": "temerarios ENAMORADO DE TI",
+      "artist": "Los Temerarios",
+      "year": 2001,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: temerarios ENAMORADO DE TI",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yc5UPdpraU0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-u4caKfzCTzY",
+      "title": "Todo me recuerda a ti -- Los Temerarios",
+      "artist": "Los Temerarios",
+      "year": 2006,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Todo me recuerda a ti -- Los Temerarios",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=u4caKfzCTzY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-3es727JJxY8",
+      "title": "El Centenario",
+      "artist": "Los Tucanes De Tijuana",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Los Tucanes De Tijuana.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: El Centenario",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3es727JJxY8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-PoP2Sa7wYNQ",
+      "title": "Where Are You Now",
+      "artist": "Lost Frequencies ft. Calum Scott",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Lost Frequencies ft. Calum Scott.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Where Are You Now",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PoP2Sa7wYNQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "jazz-louis-armstrong-wonderful",
+      "title": "What a Wonderful World",
+      "artist": "Louis Armstrong",
+      "year": 1967,
+      "country": "US",
+      "genre": "Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dreamy",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Eine Hymne auf den Frieden und die Schönheit der Natur.",
+        "[XXX]s raue, herzliche Stimme macht das Lied unverwechselbar.",
+        "Wurde erst Jahre nach Veröffentlichung durch den Film 'Good Morning, Vietnam' ein Riesen-Hit.",
+        "Ein zeitloser Evergreen, der oft bei feierlichen Anlässen gespielt wird.",
+        "Refrain: 'And I think to myself... [XXX] a [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I see trees of green, red roses too, I see them bloom for me and you",
+          "And I think to myself: what a wonderful world",
+          "The colors of the rainbow so pretty in the sky"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "rBrd_3VMC3c"
+      },
+      "coverUrl": "/covers/jazz-louis-armstrong-wonderful.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "jazz-louis-jordan-boogie",
+      "title": "Choo Choo Ch'Boogie",
+      "artist": "Louis Jordan",
+      "year": 1946,
+      "country": "US",
+      "genre": "Jump Blues / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Einer der größten Hits der Jump-Blues-Ära nach dem Zweiten Weltkrieg.",
+        "Kombiniert Blues-Strukturen mit schnellem Jazz-Swing.",
+        "Thematisiert die Heimkehr eines Soldaten mit dem Zug.",
+        "[XXX] [XXX] gilt als einer der wichtigsten Vorläufer des Rock'n'Roll.",
+        "Refrain: '[XXX] [XXX], [XXX] [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Heading for the station with a pack on my back",
+          "I'm tired of transportation in the back of a hack",
+          "Choo choo, choo choo ch'boogie, take me right back to the track Jack"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the train"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TftHrHOmSWc"
+      },
+      "coverUrl": "/covers/jazz-louis-jordan-boogie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues"
+      ]
+    },
+    {
+      "id": "disney-jungle-likeyou",
+      "title": "I Wan'na Be Like You",
+      "artist": "Louis Prima",
+      "year": 1967,
+      "country": "US",
+      "genre": "Soundtrack / Swing / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Groovy"
+      ],
+      "hints": [
+        "Gesungen von King Louie in 'Das Dschungelbuch'.",
+        "Ein explosiver Swing-Track voller Energy und Spielfreude.",
+        "Besticht durch [XXX] [XXX]s markanten Jazz-Gesang und den Scat-Teil.",
+        "Ein absolutes Highlight des Films, das zum Tanzen einlädt.",
+        "Refrain: 'I [XXX] be [XXX] you! I [XXX] walk [XXX] you, talk [XXX] youToo!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm the king of the swingers, oh, the jungle VIP",
+          "I wanna be like you, I wanna walk like you, talk like you too",
+          "You'll see it's true, an ape like me, can learn to be human too"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ud5J7Ye332I"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-jungle-likeyou.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "class-einaudi-nuvole",
+      "title": "Nuvole Bianche",
+      "artist": "Ludovico Einaudi",
+      "year": 2004,
+      "country": "IT",
+      "genre": "Contemporary Classical / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Peaceful",
+        "Sad",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Inbegriff für den minimalistischen 'Modern Classical' Stil.",
+        "Besticht durch die hypnotische Wiederholung und die emotionale Tiefe.",
+        "Wurde zu einem der meistgestreamten Klavierstücke der Gegenwart.",
+        "Wird oft in Filmen und Dokus für tiefe Nachdenklichkeit genutzt."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Floating like white clouds",
+          "Gentle repetitive melody"
+        ],
+        "fake": "Watching the stars in the middle of the night tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "VUCI-1vIbUo",
+        "spotify": "3weNRklVDqb4Rr5MhKBR3D",
+        "amazonMusic": "B001ST9OT0"
+      },
+      "coverUrl": "/covers/class-einaudi-nuvole.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "class-beethoven-5",
+      "title": "Symphony No. 5 (Fate)",
+      "artist": "Ludwig van Beethoven",
+      "year": 1808,
+      "country": "DE",
+      "genre": "Classical / Romantic",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Dramatic",
+        "Classic"
+      ],
+      "hints": [
+        "Bekannt für das berühmteste Vier-Noten-Motiv der Musikgeschichte ('Da-da-da-duuum').",
+        "Thematisiert (laut Legende) das Schicksal, das an die Pforte klopft.",
+        "[XXX] komponierte dieses Werk während seiner fortschreitenden Ertaubung.",
+        "Ein Inbegriff für die Wucht der klassischen Symphonie.",
+        "Motiv: Kurz-Kurz-Kurz-Lang."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Masterpiece)",
+          "Da-da-da-duuum",
+          "Da-da-da-duuum"
+        ],
+        "fake": "Singing in the rain tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "jamsU8wICr0",
+        "spotify": "0eBr9W1GE5nou99gRdy02J",
+        "amazonMusic": "B001SWMB0G"
+      },
+      "coverUrl": "/covers/class-beethoven-5.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-_fWiSYBFn8M",
+      "title": "YO NO SE MAÑANA",
+      "artist": "Luis Enrique",
+      "year": 2001,
+      "country": "NI",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Latin Heat",
+        "Popular"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: YO NO SE MAÑANA",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_fWiSYBFn8M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-EsfSuL-VFBw",
+      "title": "Aqui Estoy Yo ft. Aleks Syntek, Noel Schajris, David Bisbal",
+      "artist": "Luis Fonsi",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Fonsi.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Aqui Estoy Yo ft. Aleks Syntek, Noel Schajris, David Bisbal",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EsfSuL-VFBw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kJQP7kiw5Fk",
+      "title": "Despacito ft. Daddy Yankee",
+      "artist": "Luis Fonsi",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Essentials"
+      ],
+      "hints": [
+        "Ein Song von Luis Fonsi.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Despacito ft. Daddy Yankee",
+        "Playlist-Tag: Latin Essentials"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-dgFgGrljh1I",
+      "title": "Llueve Por Dentro",
+      "artist": "Luis Fonsi",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Fonsi.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Llueve Por Dentro",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dgFgGrljh1I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-8hRGBcr_gJc",
+      "title": "No Me Doy Por Vencido",
+      "artist": "Luis Fonsi",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Fonsi.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: No Me Doy Por Vencido",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8hRGBcr_gJc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-FXovf5dsRTw",
+      "title": "Despacito",
+      "artist": "Luis Fonsi & Daddy Yankee",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Despacito",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FXovf5dsRTw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-YDswuo2dIvY",
+      "title": "Échame La Culpa",
+      "artist": "Luis Fonsi & Demi Lovato",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Échame La Culpa",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YDswuo2dIvY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "luis-fonsi-despacito-2017",
+      "title": "Despacito",
+      "artist": "Luis Fonsi ft. Daddy Yankee",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "easy",
+      "mood": [
+        "Summer Vibes",
+        "Dance Floor",
+        "Road Trip"
+      ],
+      "hints": [
+        "Das Musikvideo wurde in La Perla gedreht – einem historischen, damals als gefährlich geltenden Viertel von San Juan, Puerto Rico.",
+        "Die Remix-Version mit Justin Bieber machte den Song weltweit noch populärer, obwohl das Original bereits ein Mega-Hit war.",
+        "Erschienen 2017; erster hauptsächlich spanischsprachiger Nummer-1-Hit in den USA seit 'Macarena' im Jahr 1996.",
+        "Sommerlicher Reggaeton-Rhythmus, akustische Gitarre und ein langsam-verführerischer Titel, der das Tempo des Liedes selbst beschreibt.",
+        "[XXX] [XXX] und [XXX] [XXX] singen auf Spanisch über langsame, behutsame Annäherung – der Titel bedeutet 'langsam'."
+      ],
+      "lyrics": {
+        "real": [
+          "Despacito, quiero respirar tu cuello despacito",
+          "Deja que te diga cosas al oído para que te acuerdes si no estás conmigo",
+          "Pasito a pasito, suave suavecito"
+        ],
+        "fake": "Bailando juntos unter der Sonne"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kJQP7kiw5Fk"
+      },
+      "coverUrl": "/covers/luis-fonsi-despacito-2017.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-TyHvyGVs42U",
+      "title": "Échame La Culpa",
+      "artist": "Luis Fonsi, Demi Lovato",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Essentials"
+      ],
+      "hints": [
+        "Ein Song von Luis Fonsi, Demi Lovato.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Échame La Culpa",
+        "Playlist-Tag: Latin Essentials"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TyHvyGVs42U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-D79-FN99dRI",
+      "title": "\"Fría Como El Viento\"",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Miguel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: \"Fría Como El Viento\"",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D79-FN99dRI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-wOjzo02Tmck",
+      "title": "\"La Incondicional\"",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Miguel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: \"La Incondicional\"",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wOjzo02Tmck"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-giAE7Yz7gHI",
+      "title": "\"Por Debajo de la Mesa\"",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Miguel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: \"Por Debajo de la Mesa\"",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=giAE7Yz7gHI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-OThKTAVrUMQ",
+      "title": "\"Tengo Todo Excepto A Ti\"",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Miguel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: \"Tengo Todo Excepto A Ti\"",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OThKTAVrUMQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ETVV404OzTA",
+      "title": "Entregate",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luis Miguel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Entregate",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ETVV404OzTA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-eRj0mVmzT5s",
+      "title": "You're Not There [LYRIC VIDEO]",
+      "artist": "Lukas Graham",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Lukas Graham.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: You're Not There [LYRIC VIDEO]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eRj0mVmzT5s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "country-combs-hurricane",
+      "title": "Hurricane",
+      "artist": "Luke Combs",
+      "year": 2016,
+      "country": "US",
+      "genre": "Country / Rock influence",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Energy"
+      ],
+      "hints": [
+        "Thematisiert das plötzliche Wiedersehen mit einer verflossenen Liebe als Naturereignis.",
+        "[XXX] [XXX]' kraftvolle, ehrliche Stimme machte ihn zum Gesicht des modernen Country.",
+        "Besticht durch den treibenden Rhythmus und den eingängigen Chorus.",
+        "Ein Inbegriff für den Erfolg des 'Everyman' Country.",
+        "Refrain: 'Then you rolled in with your hair in the wind! Just like a [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The moon went hiding, a lonely night driving",
+          "Then you rolled in with your hair in the wind, just like a hurricane",
+          "You wrecked my whole world, girl"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "BixwVsiDdZM"
+      },
+      "coverUrl": "/covers/country-combs-hurricane.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-tSamjnqHgIw",
+      "title": "Mayor Que Yo 3",
+      "artist": "Luny Tunes, Daddy Yankee, Wisin, Don Omar, Yandel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Luny Tunes, Daddy Yankee, Wisin, Don Omar, Yandel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Mayor Que Yo 3",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tSamjnqHgIw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "soul-luther-toomuch",
+      "title": "Never Too Much",
+      "artist": "Luther Vandross",
+      "year": 1981,
+      "country": "US",
+      "genre": "R&B / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Besticht durch [XXX] [XXX]' technisch perfekten, seidenweichen Gesang.",
+        "Thematisiert den unstillbaren Hunger nach der Anwesenheit der geliebten Person.",
+        "Ein Inbegriff für den polierten R&B-Sound der frühen 80er.",
+        "Refrain: 'A thousand kisses from you is [XXX] too [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can't fool myself, I don't want nobody else to ever love me",
+          "A thousand kisses from you is never too much",
+          "And I just don't wanna stop"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pNj9bXKGOiI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-luther-toomuch.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt--p8GXZcdrIk",
+      "title": "Sweet Home Alabama",
+      "artist": "Lynyrd Skynyrd",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Lynyrd Skynyrd.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Sweet Home Alabama",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-p8GXZcdrIk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

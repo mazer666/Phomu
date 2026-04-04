@@ -1,0 +1,66 @@
+{
+  "songs": [
+    {
+      "id": "yt-t7M89YJAPhM",
+      "title": "Clipe Oficial",
+      "artist": "\"Ainda Bem\" Marisa Monte",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von \"Ainda Bem\" Marisa Monte.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Clipe Oficial",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=t7M89YJAPhM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-MKhuZGk5qZ8",
+      "title": "El Triste (En Vivo)",
+      "artist": "[HD] Jose Jose",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von [HD] Jose Jose.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: El Triste (En Vivo)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MKhuZGk5qZ8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

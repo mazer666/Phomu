@@ -97,7 +97,7 @@ function duplicateKey(song: PhomuSong): string {
 function readPackFiles(packsDir: string): PackFile[] {
   const files = fs
     .readdirSync(packsDir)
-    .filter((file) => file.endsWith('.json'))
+    .filter((file) => file.endsWith('.json') && file !== 'packs.json')
     .sort();
 
   return files.map((file) => {
@@ -132,7 +132,7 @@ function checkDuplicates(packs: PackFile[]): DuplicateEntry[] {
 }
 
 function isSecondaryDuplicateOnly(entry: DuplicateEntry): boolean {
-  const primaryCount = entry.songs.filter((song) => !SECONDARY_DUPLICATE_PACKS.has(song.packFile)).length;
+  const primaryCount = entry.songs.length; // Simplified for new structure
   return primaryCount <= 1;
 }
 
@@ -172,7 +172,7 @@ function resolveCoverageEndYear(args: string[], currentYear: number): number {
 }
 
 function main(): void {
-  const packsDir = path.resolve(process.cwd(), 'src/data/packs');
+  const packsDir = path.resolve(process.cwd(), 'src/data/songs');
   const packs = readPackFiles(packsDir);
 
   let totalSongs = 0;

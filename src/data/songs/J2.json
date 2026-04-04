@@ -1,0 +1,799 @@
+{
+  "songs": [
+    {
+      "id": "yt-5mfEJa7ydCQ",
+      "title": "Hey! (taken from \"Starry Nights\" concert DVD)",
+      "artist": "Julio Iglesias",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Julio Iglesias.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Hey! (taken from \"Starry Nights\" concert DVD)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5mfEJa7ydCQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "finale-jungkook-seven",
+      "title": "Seven",
+      "artist": "Jung Kook ft. Latto",
+      "year": 2023,
+      "country": "KR/US",
+      "genre": "Pop / UK Garage influence",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Dominierte die Charts weltweit im Sommer 2023.",
+        "Besticht durch den federleichten UK-Garage-Beat.",
+        "Solo-Meilenstein für das BTS-Mitglied.",
+        "Refrain: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
+          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
+          "Every night I'll be loving you right"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "KjK32vDk7mA"
+      },
+      "coverUrl": "/covers/finale-jungkook-seven.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "disco-justice-dance",
+      "title": "D.A.N.C.E.",
+      "artist": "Justice",
+      "year": 2007,
+      "country": "FR",
+      "genre": "Electro House / Nu-Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Cool"
+      ],
+      "hints": [
+        "Inbegriff für das Michael-Jackson-Gedenk-Stück im Electro-Gewand.",
+        "Besticht durch den Kinderchor und den funkigen Basslauf.",
+        "Das Duo aus Frankreich wurde mit diesem Track weltweit berühmt.",
+        "Refrain: 'Under the spotlight! Neither black nor white! It's an easy as ABC!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The way you move is an indication, of how you're going to help your generation",
+          "Under the spotlight, neither black nor white, it's as easy as ABC",
+          "1-2-3-4-5, stick to the B-E-A-T"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "sy1dYFGkPUE"
+      },
+      "coverUrl": "/covers/disco-justice-dance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "yt-tkaEpUBUQDw",
+      "title": "Fire",
+      "artist": "Justice",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justice.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Fire",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tkaEpUBUQDw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-v6HFc5I0hr8",
+      "title": "Ghost",
+      "artist": "Justin Bieber",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Ghost",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=v6HFc5I0hr8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "finale-justin-peaches",
+      "title": "Peaches",
+      "artist": "Justin Bieber ft. Daniel Caesar & Giveon",
+      "year": 2021,
+      "country": "CA/US",
+      "genre": "R&B / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Smooth",
+        "Happy",
+        "Relaxed"
+      ],
+      "hints": [
+        "Inbegriff für den entspannten, sommerlichen R&B-Pop der frühen 2020er.",
+        "Besticht durch den sanften Groove und die wechselnden Gesangsparts.",
+        "Thematisiert das Reisen und die Liebe (von Georgia bis Kalifornien).",
+        "Refrain: 'I got my [XXX] out in Georgia! (Ooh, yeah, shit)!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I got my peaches out in Georgia (oh, yeah, shit)",
+          "I get my weed from California (that's that shit)",
+          "I took my chick up to the North, yeah"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tQ0yjYUFKAE"
+      },
+      "coverUrl": "/covers/finale-justin-peaches.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-eeA9WIVOSfE",
+      "title": "Desaparecida [Video Official]",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Desaparecida [Video Official]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eeA9WIVOSfE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Kso9VtVWVPE",
+      "title": "Egoista [Official Audio]",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Egoista [Official Audio]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Kso9VtVWVPE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kN_RciDPwfo",
+      "title": "Esta Noche ft. Farruko (Remake)",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Esta Noche ft. Farruko (Remake)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kN_RciDPwfo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-DS8bYJg3gFI",
+      "title": "Nos Envidian (DAY 5)",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Nos Envidian (DAY 5)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DS8bYJg3gFI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-qfl8aYbB1jE",
+      "title": "Orgullo Ft. J Balvin (Remix)",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Orgullo Ft. J Balvin (Remix)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qfl8aYbB1jE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Ko-C-dlzBYw",
+      "title": "Otra Copa ft. Farruko [Official Audio]",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Otra Copa ft. Farruko [Official Audio]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ko-C-dlzBYw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-VBis3lgUnos",
+      "title": "Si El Mundo Se Acabara [Official Audio]",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Si El Mundo Se Acabara [Official Audio]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VBis3lgUnos"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-vNaXGhS6fGc",
+      "title": "Si Ella Quisiera [Official Audio]",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Si Ella Quisiera [Official Audio]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vNaXGhS6fGc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-zJIbeMPcFD8",
+      "title": "Sustancia (DAY 6)",
+      "artist": "Justin Quiles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Justin Quiles.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Sustancia (DAY 6)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zJIbeMPcFD8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "justin-timberlake-cant-stop-the-feeling-2016",
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "year": 2016,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Party Anthem",
+        "Positive",
+        "Summer",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Das Stück entstand für den Animationsfilm 'Trolls' und begann auf einer Ukulele, auf der Produzent Max Martin herumgespielt hatte.",
+        "Gewann 2017 den Grammy für 'Bestes Lied, das für visuelle Medien geschrieben wurde'.",
+        "Erschienen 2016; einer der wenigen Songs, der seit dem Jahr 2000 in Deutschland Platz 1 der Charts erreichte.",
+        "Sonniger Funk-Pop mit Handclaps, einem positiven Refrain und einem unwiderstehlichen Groove, der gute Laune verbreitet.",
+        "[XXX] [XXX] singt über ein gutes Gefühl auf der Tanzfläche, das er einfach nicht [XXX]pen kann – niemand kann es."
+      ],
+      "lyrics": {
+        "real": [
+          "I got this feeling inside my bones",
+          "It goes electric, wavy when I turn it on",
+          "Nothing I can see but you when you dance, dance, dance"
+        ],
+        "fake": "The stars are shining on the floor where we stand"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ru0K8uYEZWw"
+      },
+      "coverUrl": "/covers/justin-timberlake-cant-stop-the-feeling-2016.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "2000s-timberlake-cry-me-river",
+      "title": "Cry Me a River",
+      "artist": "Justin Timberlake",
+      "year": 2002,
+      "country": "US",
+      "genre": "R&B / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Cool",
+        "Moody"
+      ],
+      "hints": [
+        "Bekannt für den Beat-Box-Rhythmus und die Regen-Sounds.",
+        "Handelt von der schmerzhaften Trennung von seiner Ex-Freundin Britney Spears.",
+        "Das Musikvideo zeigt ihn, wie er in das Haus seiner Ex einbricht.",
+        "Markierte den endgültigen Durchbruch als ernstzunehmender Solo-Künstler nach 'N Sync.",
+        "Refrain: 'You don't have to say what you did, I already know!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You told me you loved me, why did you leave me all alone?",
+          "You don't have to say what you did, I already know, I found out from him",
+          "Now there's just no chance for you and me, there'll never be"
+        ],
+        "fake": [
+          "Walking through the rain, I'm calling out your name in vain",
+          "You fold me in a way, we did not mean so say"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DksSPZTZES0",
+        "spotify": "7Lf7oSEVdzZqTA0kEDSlS5",
+        "amazonMusic": "B001VFGEVM"
+      },
+      "coverUrl": "/covers/2000s-timberlake-cry-me-river.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "yt-c7JEPbT6W0w",
+      "title": "Like I Love You",
+      "artist": "Justin Timberlake",
+      "year": 2002,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Like I Love You",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=c7JEPbT6W0w"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-7EJbFg_LxjY",
+      "title": "Rock Your Body",
+      "artist": "Justin Timberlake",
+      "year": 2003,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Rock Your Body",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7EJbFg_LxjY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-K7dmbMmzf9Q",
+      "title": "Iko Iko (My Bestie)",
+      "artist": "Justin Wellington",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Iko Iko (My Bestie)",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=K7dmbMmzf9Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "finale-jvke-golden",
+      "title": "golden hour",
+      "artist": "JVKE",
+      "year": 2022,
+      "country": "US",
+      "genre": "Indie Pop / Piano focus",
+      "difficulty": "medium",
+      "mood": [
+        "Dreamy",
+        "Beautiful",
+        "Romantic"
+      ],
+      "hints": [
+        "Besticht durch den rasanten Klavier-Lauf und die cinematische Atmosphäre.",
+        "Wurde weltweit durch Videos von Sonnenuntergängen populär.",
+        "Thematisiert den perfekten Moment mit der geliebten Person.",
+        "Refrain: 'It's your [XXX] [XXX]! (Ooh-ooh-ooh)!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's your golden hour, what a beautiful sight",
+          "Don't you ever look away",
+          "I see the light in your eyes"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "PEM0Vs8jf1w"
+      },
+      "coverUrl": "/covers/finale-jvke-golden.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "schlager-juergen-drews-bett",
+      "title": "Ein Bett im Kornfeld",
+      "artist": "Jürgen Drews",
+      "year": 1976,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Summer"
+      ],
+      "hints": [
+        "Der Song ist eine Coverversion von 'Let Your Love Flow' der Bellamy Brothers.",
+        "Machte [XXX] [XXX] zum 'König von Mallorca' (obwohl der Song viel älter ist).",
+        "Thematisiert die Freiheit und Romantik des sommerlichen Landlebens.",
+        "Ein Lied, das fast jeder in Deutschland mitsingen kann.",
+        "Refrain: 'Ein [XXX] im [XXX], das ist immer frei!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ein Bett im Kornfeld, das ist immer frei",
+          "Denn es ist Sommer, und was ist schon dabei",
+          "Die Grillen singen und es duftet nach Heu"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "XqX0720VTRY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-juergen-drews-bett.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    }
+  ]
+}

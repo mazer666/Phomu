@@ -4,7 +4,7 @@ import sys
 import datetime
 
 LOG_FILE = '/tmp/enrich_log_batch3.json'
-PACKS_DIR = os.path.abspath('src/data/packs')
+PACKS_DIR = os.path.abspath('src/data/songs')
 
 def apply_enrichment(results_file):
     if not os.path.exists(results_file):

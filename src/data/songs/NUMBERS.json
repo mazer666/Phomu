@@ -1,0 +1,297 @@
+{
+  "songs": [
+    {
+      "id": "yt-hXI8RQYC36Q",
+      "title": "Nicky Jam y Enrique Iglesias (Official Music Video YTMAs)",
+      "artist": "21. El Perdön",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von 21. El Perdön.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Nicky Jam y Enrique Iglesias (Official Music Video YTMAs)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hXI8RQYC36Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kkx-7fsiWgg",
+      "title": "Nicky Jam | Video Oficial",
+      "artist": "22. Hasta el Amanecer",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von 22. Hasta el Amanecer.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Nicky Jam | Video Oficial",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kkx-7fsiWgg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-L051v3NC0F4",
+      "title": "The Show Must Go On",
+      "artist": "2CELLOS",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von 2CELLOS.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: The Show Must Go On",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=L051v3NC0F4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "hiphop-2pac-california-love",
+      "title": "California Love",
+      "artist": "2Pac ft. Dr. Dre",
+      "year": 1995,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Anthem"
+      ],
+      "hints": [
+        "Die ultimative Hymne für den Staat Kalifornien und den West Coast Hip Hop.",
+        "Das Video ist im Stil von 'Mad Max' gehalten und spielt in der Wüste.",
+        "Markanter Talkbox-Refrain ('[XXX]... knows how to party').",
+        "Einer der größten kommerziellen Erfolge von [XXX].",
+        "Refrain: '[XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "California! Knows how to party, California! Knows how to party",
+          "In the city of L.A., in the city of good ol' Watts",
+          "In the city, the city of Compton, we keep it rockin'"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm the king of the night somehow"
+      },
+      "links": {
+        "youtube": "5wBTdfAkqGU"
+      },
+      "coverUrl": "/covers/hiphop-2pac-california-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "piano-3doors-here",
+      "title": "Here Without You",
+      "artist": "3 Doors Down",
+      "year": 2003,
+      "country": "US",
+      "genre": "Alt-Rock / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff für Sehnsucht auf Tournee oder bei Fernbeziehungen.",
+        "Thematisiert Einsamkeit und das Festhalten an Träumen.",
+        "Besticht durch den melancholischen Gitarrenklang (oft am Klavier gespielt) und den kraftvollen Refrain.",
+        "Ein absoluter Fan-Favorit.",
+        "Refrain: 'I'm [XXX] [XXX] you, baby! But you're still on my lonely mind!'"
+      ],
+      "lyrics": {
+        "real": [
+          "A hundred days have made me older since the last time that I saw your pretty face",
+          "I'm here without you baby, but you're still on my lonely mind",
+          "I think about you baby and I dream about you all the time"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kPBzTxZQG5Q"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-3doors-here.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-6NXnxTNIWkc",
+      "title": "What's Up",
+      "artist": "4 Non Blondes",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von 4 Non Blondes.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: What's Up",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6NXnxTNIWkc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "hiphop-50cent-club",
+      "title": "In Da Club",
+      "artist": "50 Cent",
+      "year": 2003,
+      "country": "US",
+      "genre": "Gangsta Rap",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Party",
+        "Cool"
+      ],
+      "hints": [
+        "Der ultimative Geburtstags- und [XXX]-Track der 2000er.",
+        "Produziert von Dr. Dre für das Album 'Get Rich or Die Tryin''.",
+        "Beginnt mit dem berühmten 'Go shorty, it's your birthday'.",
+        "Zementierte 50 [XXX]s Status als globaler Rap-Superstar.",
+        "Refrain: 'You can find me in the [XXX], bottle full of bub!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Go, go, go, go, go, go, go, shorty, it's your birthday",
+          "We gonna party like it's your birthday",
+          "You can find me in the club, bottle full of bub, look daddy I got the X if you into taking drugs"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5qm8PH4xAss"
+      },
+      "coverUrl": "/covers/hiphop-50cent-club.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-K4HdBUaLSmE",
+      "title": "6 Nights",
+      "artist": "6 Years",
+      "year": 1985,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von 6 Years.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: 6 Nights",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=K4HdBUaLSmE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

@@ -149,8 +149,11 @@ export function validateSong(song: unknown): SongValidationResult {
     errors.push(err(songId, 'mood', 'mood-Array ist leer – mindestens ein Stimmungs-Tag erforderlich'));
   }
 
-  if (!s['pack'] || typeof s['pack'] !== 'string') {
-    errors.push(err(songId, 'pack', 'Pflichtfeld fehlt: pack (z.B. "Global Hits 1950-2026")'));
+  // packs: Array mit mindestens einem Eintrag
+  if (!Array.isArray(s['packs'])) {
+    errors.push(err(songId, 'packs', 'Pflichtfeld fehlt: packs muss ein Array sein (z.B. ["Global Hits 1950-2026"])'));
+  } else if ((s['packs'] as string[]).length === 0) {
+    errors.push(err(songId, 'packs', 'packs-Array ist leer – mindestens eine Pack-Zuordnung erforderlich'));
   }
 
   // hints: muss ein Array mit genau 5 Strings sein
@@ -158,7 +161,7 @@ export function validateSong(song: unknown): SongValidationResult {
     errors.push(err(songId, 'hints', 'Pflichtfeld fehlt: hints muss ein Array mit genau 5 Strings sein'));
   } else {
     const hints = s['hints'] as unknown[];
-    const isYoutubeImportSong = s['pack'] === 'YouTube Collection';
+    const isYoutubeImportSong = (s['packs'] as string[]).includes('YouTube Collection');
     const minHints = isYoutubeImportSong ? 4 : 5;
     const maxHints = 5;
     if (hints.length < minHints || hints.length > maxHints) {

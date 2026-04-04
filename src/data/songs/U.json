@@ -1,0 +1,408 @@
+{
+  "songs": [
+    {
+      "id": "world-ub40-redwine",
+      "title": "Red Red Wine",
+      "artist": "UB40",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Reggae Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Sad",
+        "Classic"
+      ],
+      "hints": [
+        "Ursprünglich ein Song von Neil Diamond.",
+        "[XXX] machten daraus einen der erfolgreichsten Reggae-Pop-Hits der 80er.",
+        "Thematisiert den Versuch, Kummer mit Wein zu vergessen.",
+        "Besticht durch den sanften Synthesizer-Reggae-Sound.",
+        "Refrain: 'Red, red [XXX]! You make me feel so fine!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Red, red wine, you make me feel so fine, you keep me rocking all of the time",
+          "Red, red wine, stay close to me, don't let me be alone",
+          "It's tearing me apart, to be alone like this"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "zXt5MeWM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-ub40-redwine.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "schlager-udo-juergens-wein",
+      "title": "Griechischer Wein",
+      "artist": "Udo Jürgens",
+      "year": 1974,
+      "country": "AT/DE",
+      "genre": "Schlager / Chanson",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Classic",
+        "Sad"
+      ],
+      "hints": [
+        "Thematisiert das Leben und die Sehnsucht von Gastarbeitern in Deutschland.",
+        "Udo [XXX] wurde durch diesen Song zu einem der angesehensten Chanson-Sänger im Schlager-Gewand.",
+        "Der Text ist melancholisch und gleichzeitig feierlich.",
+        "Ein absoluter Meilenstein der deutschsprachigen Musikgeschichte.",
+        "Refrain: '[XXX] [XXX], ist so wie das Blut der Erde!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Es war schon dunkel, als ich durch die Vorstadtstraßen heimwärts ging",
+          "Griechischer Wein, ist so wie das Blut der Erde",
+          "Komm schenk' dir ein, und wenn ich dann traurig bin, schenk' noch mal ein"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "D8hAhqDcVRA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-udo-juergens-wein.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-8CrRd4hcAeE",
+      "title": "Dancing with Tears in My Eyes",
+      "artist": "Ultravox",
+      "year": 1984,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Dancing with Tears in My Eyes",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8CrRd4hcAeE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "synth-ultravox-vienna",
+      "title": "Vienna",
+      "artist": "Ultravox",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Wave / Epic",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Inbegriff für theatralischen, bombastischen Synthpop.",
+        "Besticht durch den dramatischen Aufbau, das Klavier-Solo und Midge Ures kraftvollen Gesang.",
+        "Thematisiert eine flüchtige Begegnung in der nebligen Atmosphäre Wiens.",
+        "Wurde zu einem der bekanntesten und einflussreichsten Lieder des Genres.",
+        "Refrain: 'This means nothing to me! This means nothing to me! Oh, [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "We walked in the cold air, freezing breath on a window pane",
+          "Lying and waiting, the man in the dark in a picture frame",
+          "The feeling has gone, only you and I"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "EoVBjYpxhF0"
+      },
+      "coverUrl": "/covers/synth-ultravox-vienna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "yt-2biSdr0uuo0",
+      "title": "Vienna (2008 Remaster)",
+      "artist": "Ultravox",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Vienna (2008 Remaster)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2biSdr0uuo0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-vT0oJWPbIZs",
+      "title": "Ozuna Feat. Pusho, Alexio & Juanka El Problematik",
+      "artist": "Un Bellaqueo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Un Bellaqueo.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Ozuna Feat. Pusho, Alexio & Juanka El Problematik",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vT0oJWPbIZs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kbn4lB07gm0",
+      "title": "Alkilados (VideoSelfie Oficial) Ft. Nicky Jam, J. Alvarez & Roockie",
+      "artist": "Una Cita Remix",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Una Cita Remix.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Alkilados (VideoSelfie Oficial) Ft. Nicky Jam, J. Alvarez & Roockie",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kbn4lB07gm0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disco-under-slippy",
+      "title": "Born Slippy (Nuxx)",
+      "artist": "Underworld",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Techno / Progressive House",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Epic",
+        "Night",
+        "Nightlife"
+      ],
+      "hints": [
+        "Wurde durch den Kultfilm 'Trainspotting' weltberühmt.",
+        "Die repetitive 'Shouting'-Vocal-Line 'Lager, lager, lager' ist das Markenzeichen.",
+        "Ein Meilenstein des 90er-Techno, der die Brücke zum Mainstream schlug.",
+        "Die düstere Grundstimmung wird durch treibende Beats kontrastiert.",
+        "Einer der wichtigsten elektronischen Tracks des Jahrzehnts."
+      ],
+      "lyrics": {
+        "real": [
+          "Drive boy, dog boy, dirty numb angel boy",
+          "In the doorway boy, she was a lipstick boy",
+          "Lager, lager, lager, lager"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "mwVdYq9AT0w"
+      },
+      "coverUrl": "/covers/disco-under-slippy.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt--EeH7ox2U_c",
+      "title": "19. Late Night Jawn",
+      "artist": "Unknown",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: 19. Late Night Jawn",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-EeH7ox2U_c"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-GxBSyx85Kp8",
+      "title": "Yeah!  ft. Lil Jon, Ludacris",
+      "artist": "Usher",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Usher.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Yeah!  ft. Lil Jon, Ludacris",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GxBSyx85Kp8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt--aWoTDsa56k",
+      "title": "Alexandre Pires- Letra (lyrics)",
+      "artist": "usted no sabe",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von usted no sabe.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Alexandre Pires- Letra (lyrics)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-aWoTDsa56k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

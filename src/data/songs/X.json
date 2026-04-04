@@ -1,0 +1,81 @@
+{
+  "songs": [
+    {
+      "id": "german-xavier-naidoo-dieser-weg",
+      "title": "Dieser Weg",
+      "artist": "Xavier Naidoo",
+      "year": 2005,
+      "country": "DE",
+      "genre": "Soul/Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Serious",
+        "Inspiring",
+        "Moody"
+      ],
+      "hints": [
+        "Wurde zur inoffiziellen Hymne der deutschen Nationalmannschaft beim 'Sommermärchen' 2006.",
+        "Gerald Asamoah spielte das Lied in der Kabine rauf und runter.",
+        "Thematisiert den Weg zu sich selbst und die Überwindung von Hindernissen.",
+        "Bekannt für die kraftvolle, soulige Stimme des Sängers.",
+        "Refrain: '[XXX] Weg wird kein leichter sein, [XXX] Weg wird steinig und schwer.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich hab' das alles schon mal gesehen, ich hab' das alles schon mal gehört",
+          "Dieser Weg wird kein leichter sein, dieser Weg wird steinig und schwer",
+          "Ich geh' diesen Weg für mich, ich geh' ihn ganz allein"
+        ],
+        "fake": "In den Gassen der Nacht, da wird die Hoffnung wieder wach"
+      },
+      "links": {
+        "youtube": "9o4fDVYc_cQ"
+      },
+      "coverUrl": "/covers/german-xavier-naidoo-dieser-weg.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-yp-WJXOb2V4",
+      "title": "Making Plans For Nigel",
+      "artist": "XTC",
+      "year": 1979,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Making Plans For Nigel",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yp-WJXOb2V4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

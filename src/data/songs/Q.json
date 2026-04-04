@@ -1,0 +1,290 @@
+{
+  "songs": [
+    {
+      "id": "yt-uHgnebZ_jYo",
+      "title": "Daddy Yankee",
+      "artist": "Que Tengo Que Hacer",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Que Tengo Que Hacer.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Daddy Yankee",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uHgnebZ_jYo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-rY0WxgSXdEE",
+      "title": "Another One Bites the Dust",
+      "artist": "Queen",
+      "year": 1980,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Legends & Classics",
+        "Popular",
+        "Rock"
+      ],
+      "hints": [
+        "Dieser Song hat eine der am meisten wiedererkannten Basslinien der Musikgeschichte.",
+        "Wurde inspiriert vom Funk-Stil der Band 'Chic'.",
+        "Der Text handelt von einem Gangster-Szenario mit Maschinengewehren.",
+        "Wird oft in der Ersten Hilfe verwendet, um den Takt für die Herzdruckmassage zu halten.",
+        "Ein Riesenhit von Freddie Mercury und Co."
+      ],
+      "lyrics": {
+        "real": [
+          "Steve walks warily down the street with the brim pulled low",
+          "Ain't no sound but the sound of his feet, machine guns ready to go",
+          "Are you ready, hey, are you ready for this? Are you hanging on the edge of your seat?"
+        ],
+        "fake": [
+          "Frankie leaps from his chair with his hat and the cat",
+          "Ain't no hound, no dog, no cat, no mouse, no rat",
+          "Are you greedy, yeah, are you wating for more? Are you stepping just on the floor?"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rY0WxgSXdEE",
+        "spotify": "5vdp5UmvTsnMEMESIF2Ym7",
+        "amazonMusic": "B004G94WSM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/80s-queen-another-one-bites-the-dust.jpg"
+    },
+    {
+      "id": "queen-bohemian-rhapsody-1975",
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Nostalgic",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Freddie Mercury sammelte die Fragmente dieses Stücks über viele Jahre in Notizbüchern, bevor er sie zu einem Song zusammensetzte.",
+        "Die Oper-Sektion in der Mitte enthält das arabische Wort 'Bismillah', das Freddie Mercury bewusst einbaute.",
+        "Mit sechs Minuten galt das Stück als zu lang für eine Single – Radiomoderatoren spielten es trotzdem in Dauerschleife.",
+        "Das Stück wechselt zwischen stiller Ballade, Oper und hartem Rock – kein anderer Song klingt so.",
+        "[XXX] erzählen eine dramatische Geschichte, die damit beginnt, ob das alles Real Life oder nur Fantasy ist."
+      ],
+      "lyrics": {
+        "real": [
+          "Is this the real life? Is this just fantasy?",
+          "Caught in a landslide, no escape from reality",
+          "Mama, just killed a man"
+        ],
+        "fake": "I'm just a lonely boy in a lonely world"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "fJ9rUzIMcZQ"
+      },
+      "coverUrl": "/covers/queen-bohemian-rhapsody-1975.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "piano-queen-bohemian",
+      "title": "Bohemian Rhapsody (Piano Part)",
+      "artist": "Queen",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Art Rock / Opera",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
+      "hints": [
+        "Das epochale Meisterwerk von Freddie Mercury.",
+        "Besticht durch das unverwechselbare Klavier-Balladen-Intro vor dem opernhaften Mittelteil.",
+        "Thematisiert (evtl. metaphorisch) Reue, Mord und Schicksalsergebung.",
+        "Ein Inbegriff für musikalische Grenzenlosigkeit.",
+        "Refrain: 'Mamaaa, just killed a man! Put a gun against his head!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Mama, just killed a man, put a gun against his head, pulled my trigger, now he's dead",
+          "Mama, life had just begun",
+          "But now I've gone and thrown it all away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "a7vqHDWG8y0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-queen-bohemian.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-fJ9rUzIMcZQ",
+      "title": "Queen – Bohemian Rhapsody (Official Video Remastered)",
+      "artist": "Queen",
+      "year": 1975,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Queen – Bohemian Rhapsody (Official Video Remastered)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "rock-queen-we-will-rock-you",
+      "title": "We Will Rock You",
+      "artist": "Queen",
+      "year": 1977,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Stadium Rock"
+      ],
+      "hints": [
+        "Berühmt durch den einfachen Rhythmus aus zweimal Stampfen und einmal Klatschen.",
+        "Brian May wollte einen Song schreiben, bei dem das Publikum maximal mitmachen kann.",
+        "Wurde oft zusammen mit 'We Are the Champions' gespielt.",
+        "Der stampfende Sound wurde in einer alten Kirche mit vielen Overdubs aufgenommen.",
+        "Ein absoluter Klassiker bei Sportveranstaltungen weltweit."
+      ],
+      "lyrics": {
+        "real": [
+          "Buddy, you're a boy, make a big noise playing in the street, gonna be a big man someday",
+          "You got mud on your face, you big disgrace, kicking your can all over the place",
+          "Singing: We will, we will rock you!"
+        ],
+        "fake": "Marching to the beat, feeling the heat of the broken street"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-tJYN-eG1zk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-queen-we-will-rock-you.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "yt-VFFRyLyE7BI",
+      "title": "Remaster)",
+      "artist": "Quiet Life (2020",
+      "year": 1982,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Quiet Life (2020.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Remaster)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VFFRyLyE7BI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

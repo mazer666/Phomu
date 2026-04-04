@@ -1,0 +1,733 @@
+{
+  "songs": [
+    {
+      "id": "yt-73sbW7gjBeo",
+      "title": "Beijinho No Ombro",
+      "artist": "Valesca Popozuda",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Valesca Popozuda.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Beijinho No Ombro",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=73sbW7gjBeo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-vanessa-miles",
+      "title": "A Thousand Miles",
+      "artist": "Vanessa Carlton",
+      "year": 2002,
+      "country": "US",
+      "genre": "Pop / Piano Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dreamy"
+      ],
+      "hints": [
+        "Bekannt für das virtuose, helle Klavier-Intro, das sofort gute Laune verbreitet.",
+        "Wurde durch den Film 'White Chicks' zu einem Internet-Mem und Kulthit.",
+        "Thematisiert die Bereitschaft, lange Wege für die Liebe auf sich zu nehmen.",
+        "Ein Inbegriff für den euphorischen Piano-Pop der 2000er.",
+        "Refrain: 'If I could fall into the sky! Do you think time would pass me by?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Making my way downtown, walking fast, faces pass and I'm home bound",
+          "If I could fall into the sky, do you think time would pass me by?",
+          "'Cause you know I'd walk a thousand miles"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "Cwkej79U3ek"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-vanessa-miles.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-rlxjuG9YHkM",
+      "title": "Comadreja Bachata Congress 2015 ~ Social ~ Desirée Guidonet & Daniel Sánchez ~ V",
+      "artist": "Various",
+      "year": 2015,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Comadreja Bachata Congress 2015 ~ Social ~ Desirée Guidonet & Daniel Sánchez ~ V",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rlxjuG9YHkM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "dance-vengaboys-boom-boom",
+      "title": "Boom, Boom, Boom, Boom!!",
+      "artist": "Vengaboys",
+      "year": 1998,
+      "country": "NL",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Party"
+      ],
+      "hints": [
+        "Die Band ist bekannt für ihr buntes Venga-Mobil und ihre schrillen Outfits.",
+        "Der Song handelt vom Wunsch, die Nacht gemeinsam im Schlafzimmer zu verbringen.",
+        "Ein absoluter Party-Garant auf jeder 90er-Feier.",
+        "Der Refrain hat einen extrem eingängigen Rhythmus, den man sofort mitschreit.",
+        "Refrain: '[XXX], [XXX], [XXX], [XXX]! I want you in my room!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Boom, boom, boom, boom! I want you in my room, let's spend the night together",
+          "From now until forever, boom, boom, boom, boom! I wanna go boom boom",
+          "Let's spend the night together together in my room"
+        ],
+        "fake": "Moving to the left, moving to the right, in the neon light"
+      },
+      "links": {
+        "youtube": "gD8UfYKZ9qk"
+      },
+      "coverUrl": "/covers/dance-vengaboys-boom-boom.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-KRQPDlKoaWk",
+      "title": "We Like To Party! (The Vengabus)",
+      "artist": "Vengaboys",
+      "year": 1999,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: We Like To Party! (The Vengabus)",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KRQPDlKoaWk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disney-cindy-bibbidi",
+      "title": "Bibbidi-Bobbidi-Boo",
+      "artist": "Verna Felton",
+      "year": 1950,
+      "country": "US",
+      "genre": "Soundtrack / Magic",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Magic",
+        "Classic"
+      ],
+      "hints": [
+        "Cinderellas Zauberspruch-Song der Guten Fee.",
+        "Thematisiert Verwandlung und Hoffnung durch Magie.",
+        "Besticht durch den lautmalerischen Refrain und den verspielten Rhythmus.",
+        "Ein Inbegriff für Disneys frühe Animations-Highlights.",
+        "Refrain: 'Salagadoola mechicka boola! [XXX]-[XXX]-boo!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Salagadoola mechicka boola, bibbidi-bobbidi-boo",
+          "Put them together and what have you got? Bibbidi-bobbidi-boo",
+          "It'll do magic, believe it or not"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5dv6pOGeuGs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-cindy-bibbidi.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-x07SLQtlypo",
+      "title": "Estos Celos",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Estos Celos",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x07SLQtlypo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-oq70h9XBj_0",
+      "title": "Hermoso Cariño (Oficial En Vivo)",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Hermoso Cariño (Oficial En Vivo)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oq70h9XBj_0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Byeu5C9FS6s",
+      "title": "La Ley del Monte (En Vivo)",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Ley del Monte (En Vivo)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Byeu5C9FS6s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-xa2GLqL12Zk",
+      "title": "Mujeres Divinas (Oficial En Vivo)",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Mujeres Divinas (Oficial En Vivo)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xa2GLqL12Zk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Y0U12sjwseU",
+      "title": "Para Siempre",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Para Siempre",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y0U12sjwseU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-gfm2zSgQ8cQ",
+      "title": "Por Tu Maldito Amor",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Por Tu Maldito Amor",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gfm2zSgQ8cQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-AOU_025VwDU",
+      "title": "Que De Raro Tiene ((Cover Audio La Leyenda Viviente) (Video))",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Vicente Fernández.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Que De Raro Tiene ((Cover Audio La Leyenda Viviente) (Video))",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AOU_025VwDU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "schlager-vicky-leandros-leben",
+      "title": "Ich liebe das Leben",
+      "artist": "Vicky Leandros",
+      "year": 1975,
+      "country": "GR/DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Inspirational"
+      ],
+      "hints": [
+        "Ein Song über Abschied, Loslassen und den unerschütterlichen [XXX]smut.",
+        "[XXX] [XXX] ist eine der international erfolgreichsten Schlagersängerinnen.",
+        "Wird oft auf Partys am Ende gespielt, wenn die Stimmung ihren Höhepunkt erreicht.",
+        "Besitzt eine sehr festliche, fast orchestrale Steigerung.",
+        "Refrain: 'Ich [XXX] das [XXX]! Irgendwann fängt alles an!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Das Karussell wird sich weiterdrehen, auch wenn wir auseinandergehen",
+          "Ich liebe das Leben, es war viel zu schön um wahr zu sein",
+          "Nein, weine nicht, wenn es kein Morgen gibt"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "7_FsW8RPCTc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-vicky-leandros-leben.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-CS9OO0S5w2k",
+      "title": "YMCA (OFFICIAL Music Video 1978)",
+      "artist": "Village People",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Village People.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: YMCA (OFFICIAL Music Video 1978)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CS9OO0S5w2k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Bam_KHI-lSQ",
+      "title": "Drums",
+      "artist": "Vince Clarke",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Drums",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Bam_KHI-lSQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ySeKRfdwi8A",
+      "title": "Eternity",
+      "artist": "Vintage Culture & Elder Island",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Eternity",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ySeKRfdwi8A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "synth-visage-grey",
+      "title": "Fade to Grey",
+      "artist": "Visage",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Romantic",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Cool",
+        "German New Wave",
+        "Popular",
+        "Retro"
+      ],
+      "hints": [
+        "Inbegriff für die 'New Romantic' Bewegung Anfang der 80er.",
+        "Besticht durch die französischsprachigen Flüstermomente und den kühlen Beat.",
+        "Thematisiert die Monotonie und das Verschwinden der Farben im Leben.",
+        "Steve Strange wurde durch das exzentrische Musikvideo zur Stilikone.",
+        "Refrain: 'Ah, we [XXX] to [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "One man on a lonely platform, one case on a lonely station",
+          "One way ticket to a city of light, shadows in the rain",
+          "Fade to grey"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CL39eozQqdI"
+      },
+      "coverUrl": "/covers/synth-visage-grey.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-sRTGhPR-fWQ",
+      "title": "Mind Of A Toy",
+      "artist": "Visage",
+      "year": 1981,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Mind Of A Toy",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sRTGhPR-fWQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-4a7nNZxEUgw",
+      "title": "Breathe (feat. Jesse Jo Stark)",
+      "artist": "Volbeat",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Breathe (feat. Jesse Jo Stark)",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4a7nNZxEUgw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-TuY1py-wPl4",
+      "title": "Si Tú Me Besas",
+      "artist": "Víctor Manuelle",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Víctor Manuelle.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Si Tú Me Besas",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TuY1py-wPl4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

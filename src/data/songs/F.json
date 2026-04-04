@@ -1,0 +1,2041 @@
+{
+  "songs": [
+    {
+      "id": "yt-GhciBgYbA74",
+      "title": "Tito Nieves",
+      "artist": "Fabricando Fantasías",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Fabricando Fantasías.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Tito Nieves",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GhciBgYbA74"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "country-faith-breathe",
+      "title": "Breathe",
+      "artist": "Faith Hill",
+      "year": 1999,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Emotional"
+      ],
+      "hints": [
+        "Ein massiver Crossover-Erfolg, der wochenlang die Pop-Charts dominierte.",
+        "[XXX] [XXX]s sanfte, aber kraftvolle Stimme steht im Zentrum dieser Ballade.",
+        "Thematisiert die Magie eines intimen Moments mit dem geliebten Menschen.",
+        "Besticht durch das elegante Arrangement und die romantische Stimmung.",
+        "Refrain: 'I can feel you [XXX]! It's washing over me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can feel you breathe, it's washing over me",
+          "Suddenly I'm melting into you",
+          "There's nothing left to prove"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "yCmsZUN4r_s"
+      },
+      "coverUrl": "/covers/country-faith-breathe.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "disco-faithless-insomnia",
+      "title": "Insomnia",
+      "artist": "Faithless",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Progressive House / Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Dark",
+        "Energy",
+        "Epic",
+        "Mysterious",
+        "Night",
+        "Nightlife"
+      ],
+      "hints": [
+        "In diesem Song geht es um die Qualen der Schlaflosigkeit.",
+        "Der 'Mond-Drop' (das Einsetzen der Synthesizer-Melodie nach der langen Steigerung) ist legendär.",
+        "Sänger Maxi Jazz (R.I.P.) lieferte die markanten Spoken-Word-Strophen.",
+        "Einer der einflussreichsten Dance-Tracks aller Zeiten.",
+        "Refrain: 'I can't get no sleep!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Deep in the bosom of the gentle night",
+          "I can't get no sleep",
+          "I need to sleep, I can't get no sleep"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "P8JEm4d6Wu4"
+      },
+      "coverUrl": "/covers/disco-faithless-insomnia.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-YHjAVcif8I8",
+      "title": "Revelations",
+      "artist": "Faithless",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Revelations",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YHjAVcif8I8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kHuw4sAZFZA",
+      "title": "Voodoo",
+      "artist": "Faithless",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Voodoo",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kHuw4sAZFZA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-svvGcuMA_MI",
+      "title": "Yeah The Girls",
+      "artist": "Faithless",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Yeah The Girls",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=svvGcuMA_MI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-falco-kommissar",
+      "title": "Der Kommissar",
+      "artist": "Falco",
+      "year": 1981,
+      "country": "AT",
+      "genre": "Pop / Rap / Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Energy",
+        "German New Wave",
+        "Popular"
+      ],
+      "hints": [
+        "Einer der ersten globalen Erfolge, die Rap-Elemente mit weißem Pop kombinierten.",
+        "Besitzt einen extrem einprägsamen Synthesizer-Basslauf.",
+        "Thematisiert das Nachtleben und die drohende Polizeikontrolle.",
+        "Zementierte [XXX]s Ruf als 'erster weißer Rapper'.",
+        "Refrain: 'Drah' di net um, oh, oh, oh! Schau, schau, der [XXX] geht um!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Zwei, drei, vier, eins, zwei, drei, na es ist nichts dabei",
+          "Drah' di net um, oh, oh, oh, schau schau, der Kommissar geht um",
+          "Wenn er dich anspricht, und du weißt warum"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eKaGZdY2WTU",
+        "spotify": "3TBRJsLCcwroEkA3tD4u2N",
+        "amazonMusic": "B01N4N147T"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-falco-kommissar.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "synth-falco-amadeus",
+      "title": "Rock Me Amadeus",
+      "artist": "Falco",
+      "year": 1985,
+      "country": "AT",
+      "genre": "Synth-Rap / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Epic",
+        "German New Wave",
+        "Popular"
+      ],
+      "hints": [
+        "Der einzige deutschsprachige Song, der jemals Platz 1 der US-Billboard-Charts erreichte.",
+        "Eine moderne Hommage an das Wunderkind Wolfgang [XXX] Mozart.",
+        "Der Sänger [XXX] war ein Pionier des weißen Raps in Europa.",
+        "Das Video zeigt [XXX] in Rokoko-Kleidung kombiniert mit 80er-Styling.",
+        "Refrain: '[XXX], [XXX], [XXX], [XXX], [XXX], oh oh oh [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Er war ein Genie und wir alle liebten ihn",
+          "Er hatte Schulden, denn er trank, doch er war ein Superstar",
+          "Rock me Amadeus"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "cVikZ8Oe_XA"
+      },
+      "coverUrl": "/covers/synth-falco-amadeus.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "German Classics",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-E-kkX2UuBcg",
+      "title": "Besas Tan Bien",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Besas Tan Bien",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=E-kkX2UuBcg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-VceA2FfMkFk",
+      "title": "Cositas Que Haciamos [Official Music Video]",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Cositas Que Haciamos [Official Music Video]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VceA2FfMkFk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Gco5eX2D89Q",
+      "title": "Hola Beba",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Hola Beba",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gco5eX2D89Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt--M_V4cNzY2U",
+      "title": "Liberace (feat. Anuel AA) [Trap Ficante]",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Liberace (feat. Anuel AA) [Trap Ficante]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-M_V4cNzY2U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-lkN51aqPOzU",
+      "title": "Obsesionado",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Obsesionado",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lkN51aqPOzU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-MNmc_XJp5rI",
+      "title": "Passion Whine ft. Sean Paul",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Passion Whine ft. Sean Paul",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MNmc_XJp5rI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-tATPzYQC4Oo",
+      "title": "Speed Up",
+      "artist": "Farruko",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Speed Up",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tATPzYQC4Oo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ZBMsSPR9QMg",
+      "title": "Sunset  ft. Shaggy, Nicky Jam",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Sunset  ft. Shaggy, Nicky Jam",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZBMsSPR9QMg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disco-fatboy-praise",
+      "title": "Praise You",
+      "artist": "Fatboy Slim",
+      "year": 1998,
+      "country": "GB",
+      "genre": "Big Beat / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Funny",
+        "Groovy",
+        "Happy"
+      ],
+      "hints": [
+        "Das Video zeigt eine (scheinbar) dilettantische Tanzgruppe vor einem Kino in LA.",
+        "Basiert auf einem Sample von Camille Yarbrough.",
+        "Thematisiert Dankbarkeit und Wertschätzung gegenüber einem geliebten Menschen.",
+        "Einer der entspanntesten und gleichzeitig tanzbarsten Hits von [XXX] [XXX].",
+        "Refrain: 'I have to [XXX] you like I should!'"
+      ],
+      "lyrics": {
+        "real": [
+          "We've come a long long way together, through the hard times and the good",
+          "I have to celebrate you baby, I have to praise you like I should",
+          "I have to praise you like I should"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ruAi4VBoBSM"
+      },
+      "coverUrl": "/covers/disco-fatboy-praise.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "electro-fatboy-righthere",
+      "title": "Right Here, Right Now",
+      "artist": "Fatboy Slim",
+      "year": 1998,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Samplet eine Zeile aus dem Film 'Strange Days'.",
+        "Das Video zeigt die Evolution des Lebens in nur wenigen Minuten.",
+        "Die orchestralen Streicher verleihen dem Beat eine epische Dimension.",
+        "Ein Inbegriff für die kreative Sample-Kunst von Norman Cook.",
+        "Refrain: '[XXX] [XXX], [XXX] now! [XXX] [XXX], [XXX] now!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Right here, right now, right here, right now",
+          "Right here, right now, right here, right now",
+          "Right here, right now!"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ub747pprmJ8"
+      },
+      "coverUrl": "/covers/electro-fatboy-righthere.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "dance-fatboy-slim-rockafeller",
+      "title": "The Rockafeller Skank",
+      "artist": "Fatboy Slim",
+      "year": 1998,
+      "country": "GB",
+      "genre": "Big Beat",
+      "difficulty": "medium",
+      "mood": [
+        "Fun",
+        "Fast",
+        "Groovy"
+      ],
+      "hints": [
+        "Wurde als 'The Funk Soul Brother' weltberühmt.",
+        "Der Song basiert fast ausschließlich auf einem einzigen Vocal-Sample.",
+        "Bekannt für den plötzlichen Geschwindigkeitswechsel (Slowing down and speeding up).",
+        "War ein Highlight im Soundtrack des Spiels FIFA 99.",
+        "Refrain: 'Right about now, the funk soul brother, check it out now!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Right about now, the funk soul brother, check it out now, the funk soul brother",
+          "Right about now, the funk soul brother, check it out now, the funk soul brother",
+          "Right about now, the funk soul brother, check it out now!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "links": {
+        "youtube": "FMrIy9zm7QY"
+      },
+      "coverUrl": "/covers/dance-fatboy-slim-rockafeller.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-YBTLqg4iTrg",
+      "title": "Drugs From Amsterdam",
+      "artist": "Fedde Le Grand",
+      "year": 2015,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Drugs From Amsterdam",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YBTLqg4iTrg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kI6UJaWhUgY",
+      "title": "Together (Original Mix)",
+      "artist": "Fedde Le Grand",
+      "year": 2006,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Together (Original Mix)",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kI6UJaWhUgY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-MCUZzNX6tys",
+      "title": "Ein Jahr (Es geht voran)",
+      "artist": "Fehlfarben",
+      "year": 1981,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Ein Jahr (Es geht voran)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MCUZzNX6tys"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-HnxxaDLVJeg",
+      "title": "Verschwende Deine Jugend",
+      "artist": "Fehlfarben",
+      "year": 1981,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Verschwende Deine Jugend",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HnxxaDLVJeg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "world-fela-kuti-water",
+      "title": "Water No Get Enemy",
+      "artist": "Fela Kuti",
+      "year": 1975,
+      "country": "NG",
+      "genre": "Afrobeat",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Groovy",
+        "Serious"
+      ],
+      "hints": [
+        "[XXX] [XXX] gilt als der Erfinder des Afrobeat.",
+        "Thematisiert die Notwendigkeit und Allgegenwart des Wassers (niemand kann Wasser hassen).",
+        "Afrobeat mischt Yoruba-Melodien mit Funk und Jazz-Improvisation.",
+        "Die Tracks sind oft extrem lang und bauen einen hypnotischen 'Groove' auf.",
+        "Ein politisch und musikalisch kraftvolles Meisterwerk aus Nigeria."
+      ],
+      "lyrics": {
+        "real": [
+          "Omi o l'ota o, water, him not get enemy",
+          "If you fight am, you go die, water, him not get enemy",
+          "I say water no get enemy!"
+        ],
+        "fake": "Dancing in the rain, following the train to the plain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "IQBC5URoF0s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-fela-kuti-water.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "german-fettes-brot-jein",
+      "title": "Jein",
+      "artist": "Fettes Brot",
+      "year": 1996,
+      "country": "DE",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Fun",
+        "Moody",
+        "Storytelling"
+      ],
+      "hints": [
+        "Thematisiert den inneren Konflikt zwischen Treue und Versuchung.",
+        "Der Titel ist ein Kofferwort aus 'Ja' und 'Nein'.",
+        "Ein Meilenstein des norddeutschen Hip Hop mit viel Humor.",
+        "Das Video spielt im Wilden Westen.",
+        "Refrain: 'Soll ich's wirklich machen oder lass ich's lieber sein? [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Es ist Samstagabend, ich hab' alles am Start, ich geh' in den Club und ich fahr' ab",
+          "Soll ich's wirklich machen oder lass ich's lieber sein?",
+          "Auf der einen Seite will ich, auf der anderen hab' ich Schiss"
+        ],
+        "fake": "Nichts ist wie es scheint, wenn die Sonne für uns weint"
+      },
+      "links": {
+        "youtube": "tcV7VN3l3bY"
+      },
+      "coverUrl": "/covers/german-fettes-brot-jein.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-eRsSxEVmSnw",
+      "title": "Make You Feel Good",
+      "artist": "Fetty Wap",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Fetty Wap.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Make You Feel Good",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eRsSxEVmSnw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-GIt01DTdqpg",
+      "title": "That's My Girl (Live at the AMA's)",
+      "artist": "Fifth Harmony",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Fifth Harmony.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: That's My Girl (Live at the AMA's)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GIt01DTdqpg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-fff-100years",
+      "title": "100 Years",
+      "artist": "Five for Fighting",
+      "year": 2003,
+      "country": "US",
+      "genre": "Piano Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Thoughtful",
+        "Nostalgic",
+        "Soft"
+      ],
+      "hints": [
+        "Thematisiert den Lauf des Lebens von 15 bis 100 Jahren.",
+        "Besticht durch das fließende Klavierspiel und die nachdenklichen Lyrics.",
+        "Ein Inbegriff für Singer-Songwriter-Pop am Klavier.",
+        "Refrain: 'I'm fifteen for a moment! Caught in between ten and twenty!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm fifteen for a moment, caught in between ten and twenty",
+          "I'm thirty-three for a moment, I'm still the man I thought I'd be",
+          "Hundred years to go and I'm still counting"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GRz4FY0ZcwI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-fff-100years.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "country-earl-breakdown",
+      "title": "Foggy Mountain Breakdown",
+      "artist": "Flatt & Scruggs (Earl Scruggs)",
+      "year": 1949,
+      "country": "US",
+      "genre": "Bluegrass Instrumental",
+      "difficulty": "hard",
+      "mood": [
+        "Fast",
+        "Energy",
+        "Skillful"
+      ],
+      "hints": [
+        "Besticht durch das bahnbrechende Drei-Finger-Picking von [XXX] [XXX] auf dem Banjo.",
+        "Ein Instrumentaltitel, der zur Standard-Referenz für Banjo-Virtuosität wurde.",
+        "Oft verwendet für rasante Verfolgungsjagden im Film (z.B. Bonnie and Clyde).",
+        "Ein Inbegriff für den High-Speed Bluegrass.",
+        "Besonderheit: Keine Lyrics, nur rasantes Banjo-Zupfen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Fast Banjo Instrumental)"
+        ],
+        "fake": "Dancing to the rhythm of the wind tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "z_Y3mnj-8lA"
+      },
+      "coverUrl": "/covers/country-earl-breakdown.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "legends-fleetwood-mac-dreams",
+      "title": "Dreams",
+      "artist": "Fleetwood Mac",
+      "year": 1977,
+      "country": "GB/US",
+      "genre": "Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Dreamy",
+        "Moody",
+        "Smooth"
+      ],
+      "hints": [
+        "Stammt vom legendären Album 'Rumours', das während heftiger bandinterner Trennungen entstand.",
+        "Der Text wurde in nur 10 Minuten in einem kleinen Nebenraum im Studio geschrieben.",
+        "Bekannt für den schwebenden, zweistimmigen Basslauf und die ätherische Atmosphäre.",
+        "Erlebte ein massives Revival durch ein virales TikTok-Video mit Cranberry-Saft.",
+        "Refrain: 'Thunder only happens when it's raining!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Now here you go again, you say you want your freedom, well who am I to keep you down?",
+          "Thunder only happens when it's raining, players only love you when they're playing",
+          "Say, women, they will come and they will go"
+        ],
+        "fake": [
+          "Now you kick it low, you stay for Joe, well who do you think you are",
+          "Lightning only strikes, on the fields of love, playing for a change of hearts"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y3ywicffOj4",
+        "spotify": "0ofHAoxe9vBkTCp2UQIavz",
+        "amazonMusic": "B00B2O141W"
+      },
+      "coverUrl": "/covers/legends-fleetwood-mac-dreams.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "yt-LHUB7H87dr0",
+      "title": "NIGGA TE QUIERO original videoclip (FLEX)",
+      "artist": "Flex (Nigga)",
+      "year": 2004,
+      "country": "PA",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: NIGGA TE QUIERO original videoclip (FLEX)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LHUB7H87dr0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-MNSC0AWu5S0",
+      "title": "Good Feeling",
+      "artist": "Flo Rida",
+      "year": 2011,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Good Feeling",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MNSC0AWu5S0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-florence-dogdays",
+      "title": "Dog Days Are Over",
+      "artist": "Florence + The Machine",
+      "year": 2008,
+      "country": "GB",
+      "genre": "Indie Rock / Baroque Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Happy"
+      ],
+      "hints": [
+        "[XXX] Welchs gewaltige Stimme steht hier im Mittelpunkt.",
+        "Besticht durch das markante Händeklatschen und die Harfenklänge.",
+        "Thematisiert den plötzlichen Einbruch von Glück in ein schwieriges Leben.",
+        "Ein Inbegriff für theatralischen, mitreißenden Indie-Pop.",
+        "Refrain: 'Run fast for your mother, run fast for your father!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Happiness, hit her like a train on a track",
+          "Coming towards her, stuck in the light",
+          "The dog days are over, the dog days are done, can you hear the horses? 'Cause here they come"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iWOyfLBYtuU"
+      },
+      "coverUrl": "/covers/indie-florence-dogdays.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-LuEyDGugQvk",
+      "title": "TRUST feat. Isabella Manfredi",
+      "artist": "Flume",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Flume.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: TRUST feat. Isabella Manfredi",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LuEyDGugQvk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-00QVU7voMq8",
+      "title": "Eres Mi Sueño",
+      "artist": "Fonseca",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Fonseca.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Eres Mi Sueño",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=00QVU7voMq8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "rock-foo-fighters-everlong",
+      "title": "Everlong",
+      "artist": "Foo Fighters",
+      "year": 1997,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Driving",
+        "Rock"
+      ],
+      "hints": [
+        "Wurde von Dave Grohl nach dem Ende seiner Ehe geschrieben.",
+        "Gilt als einer der emotionalsten und stärksten Songs der Band.",
+        "Das surreale Musikvideo wurde von Michel Gondry gedreht.",
+        "Bekannt für seine treibende Energie und die verzerrten Gitarren.",
+        "Refrain: 'And I wonder when I sing along with you, if everything could ever feel this real forever?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hello, I've waited here for you, everlong",
+          "Tonight I throw myself into, and out of the red, out of her head she sang",
+          "If everything could ever feel this real forever, if anything could ever be this good again"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eBG7P-K-r1Y"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-foo-fighters-everlong.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "80s-foreigner-i-want-to-know-what-love-is",
+      "title": "I Want to Know What Love Is",
+      "artist": "Foreigner",
+      "year": 1984,
+      "country": "US",
+      "genre": "Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
+      "hints": [
+        "Enthält einen Background-Chor der New Jersey Mass Choir.",
+        "Gilt als eine der größten Power-Balladen aller Zeiten.",
+        "Der Song erreichte Platz 1 in den USA und in Großbritannien.",
+        "Thematisiert die Suche nach wahrer Liebe und emotionaler Tiefe.",
+        "Refrain: 'I [XXX] to [XXX] [XXX] [XXX] is, I [XXX] you to show me.'"
+      ],
+      "lyrics": {
+        "real": [
+          "I gotta take a little time, a little time to think things over",
+          "I better read between the lines, in case I need it when I'm older",
+          "I want to know what love is, I want you to show me"
+        ],
+        "fake": [
+          "I have a plan, a littel plan to expand, to make it last",
+          "I should draw the lines, so that you see what I mean",
+          "You could show me the way, that you want me to take"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "r3Pr1_v7hsw",
+        "spotify": "04OjLvOApQve45B0ISx4XN",
+        "amazonMusic": "B07YNB5L8W"
+      },
+      "coverUrl": "/covers/80s-foreigner-i-want-to-know-what-love-is.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt-RIXgWIwtSnU",
+      "title": "The Flame Still Burns",
+      "artist": "Foreigner",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Foreigner.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: The Flame Still Burns",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RIXgWIwtSnU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-foster-the-people-pumped-up-kicks",
+      "title": "Pumped Up Kicks",
+      "artist": "Foster The People",
+      "year": 2010,
+      "country": "US",
+      "genre": "Indie Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Moody",
+        "Serious"
+      ],
+      "hints": [
+        "Klingt wie ein fröhlicher Popsong, hat aber einen sehr dunklen Text über Amokläufe an Schulen.",
+        "Die '[XXX] up [XXX]' im Titel beziehen sich auf teure Markenschuhe.",
+        "Wurde durch virale Verbreitung im Internet zu einem der größten Indie-Pop-Hits des Jahrzehnts.",
+        "Der Refrain hat eine fast hypnotische, entspannte Melodie.",
+        "Refrain: 'All the other kids with the [XXX] up [XXX], you better run, better run...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Robert's got a quick hand, he'll look around the room, he won't tell you his plan",
+          "All the other kids with the pumped up kicks, you better run, better run, outrun my gun",
+          "Daddy works a long day, he be coming home late, he's coming home late"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SDTZ7iX4vTQ"
+      },
+      "coverUrl": "/covers/indie-foster-the-people-pumped-up-kicks.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "soul-fourtops-reachout",
+      "title": "Reach Out I'll Be There",
+      "artist": "Four Tops",
+      "year": 1966,
+      "country": "US",
+      "genre": "Soul / Motown",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Urgent",
+        "Epic"
+      ],
+      "hints": [
+        "Besticht durch das dramatische Intro (Tamburin, Oboe) und Levi Stubbs kraftvolle, fast schreiende Stimme.",
+        "Thematisiert den unerschütterlichen Beistand in dunklen Zeiten.",
+        "Gilt als einer der am intensivsten produzierten Motown-Hits.",
+        "Refrain: 'I'll be [XXX], with a love that will shelter you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Now if you feel that you can't go on, because all of your hope is gone",
+          "And your life is filled with much confusion, and happiness is just an illusion",
+          "Reach out, reach out for me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AUZ3INx3-KA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-fourtops-reachout.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-fB_lCp_H9Gs",
+      "title": "No Basta (1992 Live Version)",
+      "artist": "Franco de Vita",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Franco de Vita.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: No Basta (1992 Live Version)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fB_lCp_H9Gs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-HfOsu6Lvi6A",
+      "title": "Tan Só lo Tü (Live) ft. Alejandra Guzmán",
+      "artist": "Franco De Vita",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Franco De Vita.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Tan Só lo Tü (Live) ft. Alejandra Guzmán",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HfOsu6Lvi6A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "jazz-sinatra-flyme",
+      "title": "Fly Me to the Moon",
+      "artist": "Frank Sinatra",
+      "year": 1964,
+      "country": "US",
+      "genre": "Vocal Jazz / Swing",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für [XXX]s coolen Swing-Stil der Mitte der 60er.",
+        "Wurde oft mit den Apollo-Mondmissionen assoziiert.",
+        "Thematisiert die Ekstase und Leichtigkeit der Liebe.",
+        "Arrangiert von Quincy Jones mit [XXX]s unvergleichlicher Lässigkeit.",
+        "Refrain: 'Fly me to the [XXX]! Let me play among the stars!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Fly me to the moon, let me play among the stars",
+          "Let me see what spring is like on Jupiter and Mars",
+          "In other words, hold my hand, in other words, darling kiss me"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JYuyWrkwpok"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-sinatra-flyme.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "synth-frankie-relax",
+      "title": "Relax",
+      "artist": "Frankie Goes to Hollywood",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Synthpop / Hi-NRG / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Controversial",
+        "Energy",
+        "Nightlife",
+        "Sarcastic"
+      ],
+      "hints": [
+        "Sorgte durch seinen provokanten Text und das Video für einen riesigen Skandal.",
+        "Wurde von der BBC verboten, was seinen Erfolg nur noch steigerte.",
+        "Inbegriff der opulenten Trevor-Horn-Produktion.",
+        "Die '[XXX] Say [XXX]' T-Shirts waren ein Mode-Phänomen.",
+        "Refrain: '[XXX], don't do it, when you want to go to it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Relax, don't do it, when you want to go to it",
+          "Relax, don't do it, when you want to come",
+          "But when you want to suck it, do it"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Yem_iEHiyJ0",
+        "spotify": "2K22nUTdyr48JDwI5t906t",
+        "amazonMusic": "B07BSPBSZ5"
+      },
+      "coverUrl": "/covers/synth-frankie-relax.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop"
+      ]
+    },
+    {
+      "id": "yt-pJ2L1dh-dSo",
+      "title": "Relax (Come Fighting)",
+      "artist": "Frankie Goes to Hollywood",
+      "year": 1983,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Relax (Come Fighting)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pJ2L1dh-dSo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-franz-ferdinand-take-me-out",
+      "title": "Take Me Out",
+      "artist": "Franz Ferdinand",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Dance",
+        "Cool"
+      ],
+      "hints": [
+        "Bekannt für den plötzlichen Tempowechsel nach dem Intro.",
+        "Die Band aus Glasgow benannte sich nach dem österreichischen Erzherzog.",
+        "Mischte Post-Punk-Einflüsse mit extrem tanzbaren Rhythmen.",
+        "Das Video ist im Stil der russischen Avantgarde gestaltet.",
+        "Refrain: 'I say don't you know, you say you don't know... I'm just a shot away!'"
+      ],
+      "lyrics": {
+        "real": [
+          "So if you're lonely, you know I'm here waiting for you",
+          "I'm just a crosshair, I'm just a shot away from you",
+          "If I move this way, step to the side"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X9jhwR07yk4"
+      },
+      "coverUrl": "/covers/indie-franz-ferdinand-take-me-out.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-OTiba-FqnQQ",
+      "title": "0800 HEAVEN",
+      "artist": "Fred Again & Swedish House Mafia",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: 0800 HEAVEN",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OTiba-FqnQQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-AB_apQgoxTI",
+      "title": "Unforgettable",
+      "artist": "French Montana ft. Swae Lee",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Dance Floor",
+        "Popular"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Unforgettable",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AB_apQgoxTI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "piano-freya-lost",
+      "title": "Lost Without You",
+      "artist": "Freya Ridings",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Soft"
+      ],
+      "hints": [
+        "Besticht durch Freyinas tiefe, soulige Stimme und das minimalistische Klavier.",
+        "Thematisiert die Orientierungslosigkeit nach einem schmerzhaften Verlust.",
+        "Ein Inbegriff für moderne, britische Klavier-Balladen.",
+        "[XXX]s Durchbruch-Hit weltweit.",
+        "Refrain: 'And I'm [XXX]! [XXX] [XXX] you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Standing on the platform, watching you go",
+          "It's funny how the people you love become strangers",
+          "And I'm lost, lost without you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tDPpex1wvOc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-freya-lost.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "class-chopin-nocturne",
+      "title": "Nocturne in E-flat major, Op. 9, No. 2",
+      "artist": "Frédéric Chopin",
+      "year": 1832,
+      "country": "PL/FR",
+      "genre": "Romantic / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Dreamy",
+        "Smooth"
+      ],
+      "hints": [
+        "Inbegriff für romantische Klaviermusik.",
+        "[XXX] komponierte dieses Werk mit nur 20 Jahren.",
+        "Besticht durch die gesangliche (bel-canto) Melodie der rechten Hand.",
+        "Das Standard-Stück für entspannte, nächtliche Atmosphäre."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Singing piano melody",
+          "Melancholy and beauty"
+        ],
+        "fake": "Dancing in the shadow of the broken light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bVeOdm-29pU",
+        "spotify": "1VNvsvEsUpuUCbHpVop1vo",
+        "amazonMusic": "B004GWYMY8"
+      },
+      "coverUrl": "/covers/class-chopin-nocturne.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-fugazi-waiting",
+      "title": "Waiting Room",
+      "artist": "Fugazi",
+      "year": 1988,
+      "country": "US",
+      "genre": "Post-Hardcore",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Confident"
+      ],
+      "hints": [
+        "Besitzt einen der bekanntesten Bassläufe der Independent-Musikgeschichte.",
+        "Thematisiert Geduld und das Warten auf den richtigen Moment.",
+        "Ian MacKaye (ex-Minor Threat) zeigt hier seine musikalische Weiterentwicklung.",
+        "Ein Inbegriff für Integrität und den DIY-Spirit.",
+        "Refrain: 'I am a patient boy! I wait, I wait, I wait, I wait!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I am a patient boy, I wait I wait I wait I wait",
+          "My time is like water down the drain",
+          "Everybody's moving, moving, moving, moving"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "C3LXkdpHNOQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-fugazi-waiting.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "soul-funkadelic-nation",
+      "title": "One Nation Under a Groove",
+      "artist": "Funkadelic",
+      "year": 1978,
+      "country": "US",
+      "genre": "Funk / Rock influence",
+      "difficulty": "medium",
+      "mood": [
+        "Positive",
+        "Energy",
+        "Spiritual"
+      ],
+      "hints": [
+        "Thematisiert die vereinende Kraft der Musik über alle Grenzen hinweg.",
+        "Besticht durch den rollenden Rhythmus und den ekstatischen Gesang.",
+        "Ein Inbegriff für die Philosophie von George Clinton.",
+        "Refrain: 'One [XXX] [XXX] a [XXX]! Gettin' down just for the funk of it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "One nation under a groove, gettin' down just for the funk of it",
+          "Feet, don't fail me now!",
+          "Do you promise to funk, the whole funk and nothing but the funk?"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6AQaLeMZqJU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-funkadelic-nation.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-SZDmuHSqwtg",
+      "title": "Used to This  ft. Drake",
+      "artist": "Future",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Future.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Used to This  ft. Drake",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SZDmuHSqwtg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

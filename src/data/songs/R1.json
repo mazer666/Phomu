@@ -1,0 +1,3666 @@
+{
+  "songs": [
+    {
+      "id": "90s-rem-losing-my-religion",
+      "title": "Losing My Religion",
+      "artist": "R.E.M.",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Classic",
+        "Alternative"
+      ],
+      "hints": [
+        "Der Song ist berühmt für den Einsatz einer Mandoline als Hauptinstrument.",
+        "Der Titel ist eine Südstaaten-Redewendung für 'die Beherrschung verlieren' oder 'am Ende seiner Geduld sein'.",
+        "Das Video ist voller religiöser und klassisch-künstlerischer Anspielungen.",
+        "Sänger Michael Stipe tanzt im Video auf eine sehr markante, energetische Weise.",
+        "Refrain: 'That's me in the corner, that's me in the spotlight, [XXX] my [XXX].'"
+      ],
+      "lyrics": {
+        "real": [
+          "Oh, life is bigger, it's bigger than you and you are not me",
+          "The lengths that I will go to, the distance in your eyes",
+          "Every whisper, every waking hour, I'm choosing my confessions"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xwtdhWltSIg",
+        "spotify": "31AOj9sFz2gM0O3hMARRBx",
+        "amazonMusic": "B01N3LWNKT"
+      },
+      "coverUrl": "/covers/90s-rem-losing-my-religion.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "rock-rem-man-on-the-moon",
+      "title": "Man on the Moon",
+      "artist": "R.E.M.",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Classic",
+        "Alternative"
+      ],
+      "hints": [
+        "Eine Hommage an den exzentrischen Comedian Andy Kaufman.",
+        "Der Titel bezieht sich auf die Verschwörungstheorien zur Mondlandung.",
+        "Wurde als Soundtrack für die gleichnamige Filmbiografie mit Jim Carrey verwendet.",
+        "Michael Stipe imitiert im Song kurzzeitig Elvis Presley.",
+        "Refrain: 'If you believe they put a man on the [XXX]...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Mott the Hoople and the game of Life, yeah, yeah, yeah, yeah",
+          "Andy Kaufman in the wrestling match, yeah, yeah, yeah, yeah",
+          "If you believe they put a man on the moon, if you believe there's nothing up his sleeve"
+        ],
+        "fake": "Walking through the silver forest, listening to the ancient chorus"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dLxpNiF0YKs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-rem-man-on-the-moon.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "indie-rem-shiny",
+      "title": "Shiny Happy People",
+      "artist": "R.E.M.",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Catchy"
+      ],
+      "hints": [
+        "Sänger Michael Stipe hasst diesen Song heute, weil er ihm zu fröhlich und oberflächlich vorkommt.",
+        "Ein Beispiel für den 'sonnigen' Indie-Pop der frühen 90er Jahre.",
+        "Die Gastsängerin im Refrain ist Kate Pierson von den B-52's.",
+        "Der Song war weltweit ein riesiger Charterfolg, obwohl die Band ihn fast nie live spielt.",
+        "Refrain: '[XXX] [XXX] [XXX] holding hands!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Shiny happy people laughing, meet me in the crowd, people, people",
+          "Throw your love around, love me, love me, take it into town, happy, happy",
+          "Put it in your hands, take it, take it, there's no time to cry, happy, happy"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken beat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YYOKMUTTDdA"
+      },
+      "coverUrl": "/covers/indie-rem-shiny.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-iFnwmTeSlAQ",
+      "title": "Down",
+      "artist": "R.K.M, Ken-Y",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von R.K.M, Ken-Y.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Down",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iFnwmTeSlAQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-radiohead-creep",
+      "title": "Creep",
+      "artist": "Radiohead",
+      "year": 1992,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Dark",
+        "Moody",
+        "Rock",
+        "Sad",
+        "Serious"
+      ],
+      "hints": [
+        "Die Band mochte den Song später gar nicht mehr und weigerte sich lange, ihn live zu spielen.",
+        "Berühmt für die plötzlichen, lauten Gitarren-Schläge ('Chuck-chuck') vor dem Refrain.",
+        "Basiert harmonisch auf 'The Air That I Breathe' von den Hollies (was zu Rechtsstreitigkeiten führte).",
+        "Die Hymne für alle Außenseiter und Menschen mit Minderwertigkeitskomplexen.",
+        "Refrain: 'But I'm a [XXX], I'm a weirdo, what the hell am I doing here?'"
+      ],
+      "lyrics": {
+        "real": [
+          "When you were here before, couldn't look you in the eye",
+          "You're just like an angel, your skin makes me cry",
+          "I'm a creep, I'm a weirdo, what the hell am I doing here?"
+        ],
+        "fake": [
+          "We are drunk like a donkey, your fur makes me try",
+          "Because your eyes are like flies, so I'm gonna die",
+          "You're right and just, for you trust, and you never rust"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "XFkzRNyygfk",
+        "spotify": "70LcF3Ym89vR77UAf1Cq7X",
+        "amazonMusic": "B01FFI1PIW"
+      },
+      "coverUrl": "/covers/indie-radiohead-creep.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "unplugged-radiohead-high-dry",
+      "title": "High and Dry",
+      "artist": "Radiohead",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Alternative / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Stammt vom wegweisenden Album 'The Bends'.",
+        "Wurde ursprünglich als Parodie auf eine Rod-Stewart-Ballade geschrieben.",
+        "Thom Yorkes unnachahmlicher Falsett-Gesang im Refrain ist das Herzstück.",
+        "Thematisiert den schnellen Ruhm und das anschließende Fallenlassen.",
+        "Refrain: 'Don't leave me [XXX], don't leave me dry!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Two jumps in a week, I bet you think that's pretty clever don't you boy?",
+          "Flying on your motorcycle, watching all the ground beneath you drop",
+          "Don't leave me high, don't leave me dry, don't leave me high, don't leave me dry"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "rt8AdNwTTUI",
+        "spotify": "2a1iMaoWQ5MnvLFBDv4qkf",
+        "amazonMusic": "B01DPX4BWQ"
+      },
+      "coverUrl": "/covers/unplugged-radiohead-high-dry.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "piano-radio-surprises",
+      "title": "No Surprises",
+      "artist": "Radiohead",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Dreamy"
+      ],
+      "hints": [
+        "Besitzt eine der wunderschönsten, glockenspiel-artigen Melodien (oft am Klavier interpretiert).",
+        "Thematisiert die Erschöpfung durch das moderne Leben und den Wunsch nach Stille.",
+        "Thom Yorkes fragiler Gesang prägt diesen Indie-Klassiker.",
+        "Refrain: 'No alarms and no [XXX]! Please!'"
+      ],
+      "lyrics": {
+        "real": [
+          "A heart that's full up like a landfill, a job that slowly kills you",
+          "Bruises that won't heal",
+          "No alarms and no surprises, please"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "u5CVsCnxyXg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-radio-surprises.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "score-djawadi-got",
+      "title": "Game of Thrones Main Title",
+      "artist": "Ramin Djawadi",
+      "year": 2011,
+      "country": "DE",
+      "genre": "TV Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Powerful"
+      ],
+      "hints": [
+        "Inbegriff für den modernen Fantasy-Soundtrack.",
+        "Besticht durch das markante Cello-Hauptthema und den stampfenden Rhythmus.",
+        "Das visuelle Intro (mechanische Weltkarte) wurde durch diese Musik erst zur Ikone.",
+        "Symbolisiert Verrat, Machtkampf und das Kommen des Winters."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Churning cellos",
+          "Main title progression"
+        ],
+        "fake": "Winter is coming in the middle of the night tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "s7L2PVdrb_8",
+        "spotify": "2q6fxAvSpqXR4jx9Ne7RGz",
+        "amazonMusic": "B01HEYPZO0"
+      },
+      "coverUrl": "/covers/score-djawadi-got.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-rammstein-duhast",
+      "title": "Du Hast",
+      "artist": "Rammstein",
+      "year": 1997,
+      "country": "DE",
+      "genre": "Neue Deutsche Härte / Industrial Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Primary",
+        "Classic"
+      ],
+      "hints": [
+        "Machte [XXX] weltweit (besonders in den USA) zum Phänomen.",
+        "Besticht durch das simple, stampfende Riff und Till Lindemanns tiefe Stimme.",
+        "Basiert auf einem Wortspiel mit den deutschen Hochzeitsgelübden.",
+        "Ein Inbegriff für Industrial-Power aus Deutschland.",
+        "Refrain: 'Du! Du [XXX]! Du [XXX] mich!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Du, du hast, du hast mich",
+          "Du hast mich gefragt, und ich hab nichts gesagt",
+          "Willst du bis der Tod euch scheidet, treu ihr sein für alle Tage?"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "W3q8Od5qJio"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-rammstein-duhast.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "disney-toy-friend",
+      "title": "You've Got a Friend in Me",
+      "artist": "Randy Newman",
+      "year": 1995,
+      "country": "US",
+      "genre": "Soundtrack / Pop / Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Thematisiert die bedingungslose Freundschaft zwischen Andy und seinen Spielzeugen in 'Toy Story'.",
+        "[XXX] [XXX]s charakteristische Stimme und sein Klavierspiel prägen den Song.",
+        "Ein Inbegriff für Loyalität und Zusammenhalt.",
+        "Begleitete alle Teile der 'Toy Story' Saga.",
+        "Refrain: '[XXX] got a [XXX] in me! [XXX] got a [XXX] in me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You've got a friend in me, you've got a friend in me",
+          "When the road looks rough ahead, and you're miles and miles from your nice warm bed",
+          "Just remember what your old pal said, you've got a friend in me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Xv8976X"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-toy-friend.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "disney-cars-highway",
+      "title": "Life Is a Highway",
+      "artist": "Rascal Flatts",
+      "year": 2006,
+      "country": "US",
+      "genre": "Soundtrack / Country Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Eine moderne Pop-Country-Interpretation des Hits von Tom Cochrane für 'Cars'.",
+        "Thematisiert die Reise durch das Leben und den Mut zum Risiko.",
+        "Besticht durch die kraftvolle Produktion und den mitreißenden Rhythmus.",
+        "Ein absoluter Favorit für Roadtrips und Fans von Lightning McQueen.",
+        "Refrain: '[XXX] is a [XXX]! I want to ride it all night long!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Life's like a road that you travel on when there's one day here and the next day gone",
+          "Life is a highway, I want to ride it all night long",
+          "If you're going my way, I want to drive it all night long"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5tXh_MfrMe0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-cars-highway.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "jazz-ray-charles-georgia",
+      "title": "Georgia on My Mind",
+      "artist": "Ray Charles",
+      "year": 1960,
+      "country": "US",
+      "genre": "Soul / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Emotional",
+        "Nostalgic",
+        "Romantic",
+        "Smooth"
+      ],
+      "hints": [
+        "Wurde 1979 zur offiziellen Hymne des US-Bundesstaates [XXX] ernannt.",
+        "Ray [XXX] kombiniert hier meisterhaft Jazz-, Soul- und Gospel-Einflüsse.",
+        "Thematisiert die tiefe Sehnsucht nach der Heimat und einer alten Liebe.",
+        "Seine gefühlvolle Klavierbegleitung und der volle Orchestersound sind legendär.",
+        "Refrain: '[XXX], [XXX], the whole day through, just an old sweet song keeps [XXX] on my [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Georgia, Georgia, the whole day through, just an old sweet song keeps Georgia on my mind",
+          "Other arms reach out to me, other eyes smile tenderly",
+          "Still in peaceful dreams I see, the road leads back to you"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "fRgWBN8yt_E"
+      },
+      "coverUrl": "/covers/jazz-ray-charles-georgia.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "world-raycharles-roadjack",
+      "title": "Hit the Road Jack",
+      "artist": "Ray Charles",
+      "year": 1961,
+      "country": "US",
+      "genre": "R&B / Soul / Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Inbegriff für das humorvolle Zwiegespräch zwischen Ray [XXX] und den Raelettes (Background-Sängerinnen).",
+        "Besticht durch das treibende Klavier-Thema und den mitsing-tauglichen Refrain.",
+        "Thematisiert (humorvoll) den Rauswurf eines Mannes durch seine Partnerin.",
+        "Ray [XXX] gilt als 'The Genius'.",
+        "Refrain: 'Hit the [XXX] [XXX]! And don't you come back no more, no more!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hit the road Jack and don't you come back no more, no more, no more, no more",
+          "Hit the road Jack and don't you come back no more",
+          "What you say?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "uSiHqxgE2d0"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-raycharles-roadjack.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk"
+      ]
+    },
+    {
+      "id": "yt-uSiHqxgE2d0",
+      "title": "Hit The Road Jack (Official Lyrics Video)",
+      "artist": "Ray Charles",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Ray Charles.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Hit The Road Jack (Official Lyrics Video)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uSiHqxgE2d0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "movie-ray-parker-jr-ghostbusters",
+      "title": "Ghostbusters",
+      "artist": "Ray Parker Jr.",
+      "year": 1984,
+      "country": "US",
+      "genre": "Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Catchy",
+        "Halloween"
+      ],
+      "hints": [
+        "Titelsong der gleichnamigen Komödie über Geisterjäger.",
+        "Der ikonische Slogan lautet: 'Who you gonna call?'",
+        "Im Refrain antwortet der Chor lautstark mit dem Filmtitel.",
+        "Wurde von einem Huey Lewis Song ('I Want a New Drug') beeinflusst (und führte zu einem Rechtsstreit).",
+        "Wenn etwas Seltsames in deiner Nachbarschaft passiert, wen rufst du an?"
+      ],
+      "lyrics": {
+        "real": [
+          "If there's something strange in your neighborhood, who you gonna call?",
+          "If there's something weird and it don't look good, who you gonna call?",
+          "I ain't afraid of no ghost"
+        ],
+        "fake": "When the shadows fall and the monsters call for your soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Fe93CLbHjxQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-ray-parker-jr-ghostbusters.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "yt-jZxTMpX13to",
+      "title": "Dime Amor",
+      "artist": "Raymix",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Raymix.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Dime Amor",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jZxTMpX13to"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-x3nIjJthev0",
+      "title": "¿Dónde Estaräs?",
+      "artist": "Raymix",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Raymix.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: ¿Dónde Estaräs?",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x3nIjJthev0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-OqYG87oxlGo",
+      "title": "Another Night",
+      "artist": "Real McCoy",
+      "year": 1993,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Another Night",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OqYG87oxlGo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-YlUKcNNmywk",
+      "title": "Californication  [HD UPGRADE]",
+      "artist": "Red Hot Chili Peppers",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Red Hot Chili Peppers.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Californication  [HD UPGRADE]",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YlUKcNNmywk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-rhcp-under-the-bridge",
+      "title": "Under the Bridge",
+      "artist": "Red Hot Chili Peppers",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Epic"
+      ],
+      "hints": [
+        "Sänger Anthony Kiedis schrieb den Text ursprünglich als Gedicht über seine Einsamkeit und Drogenvergangenheit.",
+        "Thematisiert die Stadt Los Angeles ('City of Angels') als einzigen Freund.",
+        "Das Video von Gus Van Sant fängt die melancholische Stimmung perfekt ein.",
+        "Markante, cleane Gitarren-Akkorde von John Frusciante.",
+        "Refrain: '[XXX] the [XXX] downtown, is where I drew some blood!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes I feel like I don't have a partner, sometimes I feel like my only friend",
+          "Is the city I live in, the city of angels, lonely as I am, together we cry",
+          "Under the bridge downtown, is where I drew some blood"
+        ],
+        "fake": [
+          "In the shadow of the valley, I'm looking for a rally of hope",
+          "Up on the fridge, I see the needle, of a known old friend"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GLvohMXgcBo"
+      },
+      "coverUrl": "/covers/indie-rhcp-under-the-bridge.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-HAlspX_kjL4",
+      "title": "Cotton Eye Joe",
+      "artist": "Rednex",
+      "year": 1994,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Cotton Eye Joe",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HAlspX_kjL4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-hjrZJeXZN0o",
+      "title": "Secrets",
+      "artist": "Regard & RAYE",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Secrets",
+        "Playlist-Tag: Modern Anthems"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hjrZJeXZN0o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-0orWxQAii60",
+      "title": "Read your Mind",
+      "artist": "Regard & Years & Years",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Read your Mind",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0orWxQAii60"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Nb9J8zkY9O4",
+      "title": "\"Bleeding Heart\" [Official Music Video]",
+      "artist": "Regina Spektor",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Regina Spektor.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: \"Bleeding Heart\" [Official Music Video]",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Nb9J8zkY9O4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-QZKrLIoMyxY",
+      "title": "Yo Quisiera (Video)",
+      "artist": "Reik",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Reik.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Yo Quisiera (Video)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QZKrLIoMyxY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Fm4WiX6i1FE",
+      "title": "Calm Down",
+      "artist": "Rema & Selena Gomez",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Happy",
+        "Popular",
+        "Positive",
+        "Smooth"
+      ],
+      "hints": [
+        "Inbegriff für den weltweiten Erfolg des 'Afrobeats' Genres.",
+        "Besticht durch den hypnotischen, entspannten Rhythmus und die süßliche Melodie.",
+        "Thematisiert Flirts und das Genießen des Augenblicks.",
+        "Wurde zu einem der meistgespielten Songs in Clubs und Radios weltweit.",
+        "Refrain: 'Baby [XXX] [XXX]! [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Another banger!",
+          "Baby, calm down, calm down",
+          "Girl, this your body put in my heart, for lockdown, for lockdown, oh, lockdown"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Fm4WiX6i1FE"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-rema-calm.jpg"
+    },
+    {
+      "id": "german-revolverheld-halt-dich",
+      "title": "Halt dich an mir fest",
+      "artist": "Revolverheld ft. Marta Jandová",
+      "year": 2010,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Eines der erfolgreichsten deutschen Duette der 2010er Jahre.",
+        "Thematisiert gegenseitigen [XXX] in schwierigen Zeiten.",
+        "Besticht durch das harmonische Zusammenspiel der beiden Stimmen.",
+        "Ein Dauerbrenner im Radio und bei Hochzeiten.",
+        "Refrain: '[XXX] [XXX] an mir [XXX], wenn du nicht mehr weiterweißt!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lass uns noch ein bisschen bleiben, wir haben uns so viel zu schreiben",
+          "Halt dich an mir fest, ich lass dich nicht allein",
+          "Halt dich an mir fest, wenn du nicht mehr weiterweißt"
+        ],
+        "fake": "In der Mitte der Träume, suchen wir das Licht der Sterne tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4DUUutHHaBg"
+      },
+      "coverUrl": "/covers/german-revolverheld-halt-dich.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "schlager-rex-gildo-fiesta",
+      "title": "Fiesta Mexicana",
+      "artist": "Rex Gildo",
+      "year": 1972,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Verbreitet klischeehafte mexikanische Urlaubsstimmung.",
+        "Bekannt für den markanten Ausruf 'Hossa!' am Anfang.",
+        "Rex [XXX] war einer der größten Stars der Schlager-Ära in den 70ern.",
+        "Ein absoluter Klassiker auf jeder Karnevals- und Faschingsparty.",
+        "Refrain: '[XXX], [XXX] [XXX], heute Abend gibt es eine Riesen-Party!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hossa! Hossa!",
+          "Fiesta, Fiesta Mexicana, heute Abend gibt es eine Riesen-Party",
+          "Fiesta, Fiesta Mexicana, bald wird alles wieder gut"
+        ],
+        "fake": "Unter der Sonne von Mexiko, da sind wir alle froh"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "7h3yvQCmoMU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-rex-gildo-fiesta.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-gJaTmKB47-g",
+      "title": "Stranger",
+      "artist": "Rheingold",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Stranger",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gJaTmKB47-g"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Tt4dcREuYb0",
+      "title": "Acompáñame a Estar Solo",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Acompáñame a Estar Solo",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Tt4dcREuYb0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-LJmb5Xw5k20",
+      "title": "Cavernícolas",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Cavernícolas",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LJmb5Xw5k20"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-vWtJJRTqVSI",
+      "title": "El Amor",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: El Amor",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vWtJJRTqVSI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-I9cCPQVPv8o",
+      "title": "Fuiste tü feat. Gaby Moreno",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Fuiste tü feat. Gaby Moreno",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=I9cCPQVPv8o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt--apU2sviHCM",
+      "title": "Historia De Taxi (Video)",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Historia De Taxi (Video)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-apU2sviHCM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-va5EqA2w7Os",
+      "title": "Lo Poco Que Tengo (Official)",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Lo Poco Que Tengo (Official)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=va5EqA2w7Os"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-F9NezifDe5I",
+      "title": "Pingüinos en la Cama",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Pingüinos en la Cama",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=F9NezifDe5I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-bLMu2W-pRxw",
+      "title": "Quiero (Video)",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Quiero (Video)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bLMu2W-pRxw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-_a2z36c68Bo",
+      "title": "Si Tu No Existieras",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Si Tu No Existieras",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_a2z36c68Bo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-O19yXWxoRU8",
+      "title": "Tocando Fondo",
+      "artist": "Ricardo Arjona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Tocando Fondo",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=O19yXWxoRU8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-nFH2mSDBKSI",
+      "title": "A Ti ([New Version] (Cover Audio))",
+      "artist": "Ricardo Arjona, (Con La Participación De Eros Ramazzotti)",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricardo Arjona, (Con La Participación De Eros Ramazzotti).",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: A Ti ([New Version] (Cover Audio))",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nFH2mSDBKSI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-_D9rN-hX0hE",
+      "title": "Who That Be",
+      "artist": "Rich Brian",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Rich Brian.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Who That Be",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_D9rN-hX0hE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "class-wagner-valkyries",
+      "title": "Ride of the Valkyries",
+      "artist": "Richard Wagner",
+      "year": 1851,
+      "country": "DE",
+      "genre": "Romantic / Opera",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Heroic",
+        "Aggressive"
+      ],
+      "hints": [
+        "Inbegriff für heroischen, lautstarken Orchester-Bombast.",
+        "Wurde durch die Hubschrauber-Szene in 'Apocalypse Now' unsterblich in der Popkultur.",
+        "Das Motiv wird von den Blechbläsern getragen.",
+        "Teil des Opernzyklus 'Der Ring des Nibelungen'."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Opera)",
+          "Dada-da-da-daaa, Dada-da-da-daaa",
+          "Riding through the sky"
+        ],
+        "fake": "Flying to the moon in the middle of the night tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xeRwBiu4wfQ",
+        "spotify": "63ZSow0dnUhOr175IbNZa2",
+        "amazonMusic": "B08599L16J"
+      },
+      "coverUrl": "/covers/class-wagner-valkyries.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchebal Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-W0f7aXfizaU",
+      "title": "My Arms Keep Missing You",
+      "artist": "Rick Astley",
+      "year": 1987,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: My Arms Keep Missing You",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=W0f7aXfizaU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "synth-rick-never",
+      "title": "Never Gonna Give You Up",
+      "artist": "Rick Astley",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Synthpop / Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Energy",
+        "Happy",
+        "Internet Meme",
+        "Meme",
+        "Popular",
+        "Positive"
+      ],
+      "hints": [
+        "Dieser Song wurde Jahre später zum berühmtesten Internet-Streich aller Zeiten.",
+        "Produziert von dem Hit-Trio Stock Aitken Waterman.",
+        "Der Sänger war erst 21 Jahre alt, als er diesen Hit mit seiner tiefen Bariton-Stimme aufnahm.",
+        "Verspricht niemals aufzugeben, niemals zu enttäuschen.",
+        "Meme-Hook: '[XXX] [XXX] [XXX] you up...'"
+      ],
+      "lyrics": {
+        "real": [
+          "We're no strangers to love, you know the rules and so do I",
+          "A full commitment's what I'm thinking of",
+          "Never gonna give you up, never gonna let you down"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dQw4w9WgXcQ",
+        "spotify": "4PTG3Z6ehGkBFwjybzWkR8",
+        "amazonMusic": "B0DZTSF3YS"
+      },
+      "coverUrl": "/covers/synth-rick-never.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop",
+        "youtube-import",
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt-dQw4w9WgXcQ",
+      "title": "Never Gonna Give You Up  (4K Remaster)",
+      "artist": "Rick Astley",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Rick Astley.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Never Gonna Give You Up  (4K Remaster)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-rick-james-super-freak",
+      "title": "Super Freak",
+      "artist": "Rick James",
+      "year": 1981,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Crazy",
+        "Dance",
+        "Energy",
+        "Funk",
+        "Groovy"
+      ],
+      "hints": [
+        "Die Basslinie dieses Songs wurde später berühmt durch MC Hammers 'U Can't Touch This'.",
+        "Der Text handelt von einem Mädchen, das man nicht unbedingt mit nach Hause zu seiner Mutter nehmen sollte.",
+        "Enthält Background-Gesang von der Gruppe 'The Temptations'.",
+        "Ein Meilenstein des Funk und Punk-Funk.",
+        "Refrain: 'She's a very kinky girl... the kind you don't take home to mother.'"
+      ],
+      "lyrics": {
+        "real": [
+          "She's a very kinky girl, the kind you don't take home to mother",
+          "She will never let your spirits down, once you get her off the street",
+          "I like my girls quite a bit, I'll take them all around the world"
+        ],
+        "fake": [
+          "She's stinky, like the milk is on fire and you don't tell you mother",
+          "I will never let my will go down, so that she gets off to the street",
+          "She likes my pills, I'll give it to her, like a super, super freak"
+        ]
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "QYHxGBH6o4M",
+        "spotify": "2dCmGcEOQrMQhMMS8Vj7Ca",
+        "amazonMusic": "B07GLHWHBF"
+      },
+      "coverUrl": "/covers/80s-rick-james-super-freak.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "soul-funk"
+      ]
+    },
+    {
+      "id": "jazz-rickie-chuck",
+      "title": "Chuck E.'s in Love",
+      "artist": "Rickie Lee Jones",
+      "year": 1979,
+      "country": "US",
+      "genre": "Jazz Pop / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Funny",
+        "Chill",
+        "Groovy"
+      ],
+      "hints": [
+        "[XXX] Lee [XXX]' Überraschungshit mit jazzigem Vibe.",
+        "Thematisiert Klatsch und Tratsch über einen gemeinsamen Freund.",
+        "Besticht durch ihren entspannten, beinahe improvisierten Gesangsstil.",
+        "Ein Inbegriff für den coolen West Coast Sound jener Zeit.",
+        "Refrain: '[XXX] E.'s in [XXX]! He-e-e's in [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "How come he don't come and P.L.P. with me down at the beach no more?",
+          "Chuck E.'s in love, he-e-e's in love",
+          "Chuck E.'s in love with the little girl who's singing this song"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OeWKfVkNla4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-rickie-chuck.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-JluQoTEg2gU",
+      "title": "Adiós (Spanish/French)",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Adiós (Spanish/French)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JluQoTEg2gU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-0U3SkZEBGDY",
+      "title": "Disparo al Corazón",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Disparo al Corazón",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0U3SkZEBGDY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-8BkYKwHLXiU",
+      "title": "La Copa de la Vida (Official Video - Spanglish)",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Copa de la Vida (Official Video - Spanglish)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8BkYKwHLXiU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-lBztnahrOFw",
+      "title": "La Mordidita  ft. Yotuel",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Mordidita  ft. Yotuel",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lBztnahrOFw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-p47fEXGabaY",
+      "title": "Livin' La Vida Loca",
+      "artist": "Ricky Martin",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Livin' La Vida Loca",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=p47fEXGabaY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-vCEvCXuglqo",
+      "title": "María",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: María",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vCEvCXuglqo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-oUnOPlQNV24",
+      "title": "Perdóname",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Perdóname",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oUnOPlQNV24"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-1G2-r-5ZwnY",
+      "title": "Pégate",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Pégate",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1G2-r-5ZwnY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-7IPVe1oywh0",
+      "title": "Te Extraño, Te Olvido, Te Amo",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Te Extraño, Te Olvido, Te Amo",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7IPVe1oywh0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-tn5b4-VbULs",
+      "title": "Tu Recuerdo (MTV Unplugged) ft. Chambao, Tommy Torres",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Tu Recuerdo (MTV Unplugged) ft. Chambao, Tommy Torres",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tn5b4-VbULs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-iOe6dI2JhgU",
+      "title": "Vente Pa' Ca  ft. Maluma",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Vente Pa' Ca  ft. Maluma",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iOe6dI2JhgU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-p7QYo-9SlP0",
+      "title": "Vuelve",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Ricky Martin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Vuelve",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=p7QYo-9SlP0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-righeira-playa",
+      "title": "Vamos a la playa",
+      "artist": "Righeira",
+      "year": 1983,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Summer",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Trotz der fröhlichen Melodie handelt der Song eigentlich von einer drohenden nuklearen Katastrophe.",
+        "Inbegriff für den ironischen Italo-Sommerhit.",
+        "Bekannt für den Roboter-artigen '[XXX] a la [XXX]' Ausruf.",
+        "Sorgte weltweit für Strandstimmung.",
+        "Refrain: '[XXX] a la [XXX]! Oh, oh, oh, oh, oh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Vamos a la playa, oh oh oh oh oh",
+          "Vamos a la playa, oh oh oh oh oh",
+          "La bomba estalló"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "k8GNHAQKMKE",
+        "spotify": "3iB7lzsBC7PdJLU9k2nttT",
+        "amazonMusic": "B073WXN8BQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-righeira-playa.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-x0OMFm8FO90",
+      "title": "Vamos a la Playa (1983)",
+      "artist": "Righeira",
+      "year": 1983,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Vamos a la Playa (1983)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x0OMFm8FO90"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-YQo1rF1XbbI",
+      "title": "I Can't Stand...",
+      "artist": "Rihanna",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: I Can't Stand...",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YQo1rF1XbbI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "rihanna-umbrella-2007",
+      "title": "Umbrella",
+      "artist": "Rihanna",
+      "year": 2007,
+      "country": "BB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Party Anthem",
+        "Popular",
+        "Rainy Day"
+      ],
+      "hints": [
+        "Das Stück war ursprünglich für Britney Spears vorgesehen – sie lehnte es ab, und [XXX] nahm es an.",
+        "Der Intro-Rap wurde von Jay-Z spontan hinzugefügt, als er [XXX] beim Aufnehmen im Studio besuchte.",
+        "Erschienen 2007; [XXX]s erster Platz-1-Hit in Deutschland, wo er sich zehn Wochen hielt.",
+        "Dunkler R&B-Sound mit einem eingängigen Refrain, der ein englisches Wort silbenweise zieht.",
+        "[XXX] bietet einer Person Schutz unter ihrem Regenschirm an – egal was passiert, sie wird da sein."
+      ],
+      "lyrics": {
+        "real": [
+          "Now that it's raining more than ever, know that we'll still have each other",
+          "You can stand under my umbrella",
+          "These fancy things will never come in between"
+        ],
+        "fake": "I'll keep you dry until the storm is finally gone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xXD5tltX9Pg"
+      },
+      "coverUrl": "/covers/rihanna-umbrella-2007.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-CvBfHwUxHIk",
+      "title": "Umbrella (Orange Version)  ft. JAŸ-Z",
+      "artist": "Rihanna",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Rihanna.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Umbrella (Orange Version)  ft. JAŸ-Z",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CvBfHwUxHIk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "2000s-rihanna-umbrella",
+      "title": "Umbrella",
+      "artist": "Rihanna ft. Jay-Z",
+      "year": 2007,
+      "country": "BB/US",
+      "genre": "R&B / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Catchy",
+        "Powerful"
+      ],
+      "hints": [
+        "Sollte ursprünglich von Britney Spears oder Mary J. Blige gesungen werden.",
+        "Der Hook wurde zum Markenzeichen der Nuller Jahre.",
+        "Das Video bei dem sie eine silberne Körperfarbe trägt ist legendär.",
+        "Dominierte weltweit für Monate die Charts.",
+        "Refrain: 'Under my [XXX], ella, ella, eh, eh, eh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When the sun shines, we'll shine together, told you I'll be here forever",
+          "Now that it's raining more than ever, know that we'll still have each other",
+          "You can stand under my umbrella, ella, ella, eh, eh, eh"
+        ],
+        "fake": [
+          "Nothing's gonna stop me now, I'm floating in the sky somehow",
+          "When the moon hits the sky, we fall together",
+          "Come here and hear, dream of change togehter"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CvBfHwUxHIk",
+        "spotify": "49FYlytm3dAAraYgpoJZux",
+        "amazonMusic": "B001SWSXAS"
+      },
+      "coverUrl": "/covers/2000s-rihanna-umbrella.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "german-rio-reiser-koenig",
+      "title": "König von Deutschland",
+      "artist": "Rio Reiser",
+      "year": 1986,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Sänger war ursprünglich der Kopf der Polit-Rock-Band 'Ton Steine Scherben'.",
+        "Der Song zählt humorvoll auf, was der Sänger alles tun würde, wenn er [XXX] wäre.",
+        "Ein absoluter Mitsing-Klassiker auf jeder deutschen Party.",
+        "Thematisiert auf spielerische Weise die Sehnsucht nach Macht und Veränderung.",
+        "Refrain: 'Das alles und noch viel mehr, würd' ich machen, wenn ich [XXX] von [XXX] wär!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Jede Nacht um halb eins, wenn das Fernsehen rauscht, leg ich mich aufs Bett und mal mir aus",
+          "Wie es wäre, wenn ich nicht der wäre, der ich bin, sondern Kanzler, Kaiser, König oder Königin",
+          "Das alles und noch viel mehr, würd' ich machen, wenn ich König von Deutschland wär"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "BzGHhaMUqSQ"
+      },
+      "coverUrl": "/covers/german-rio-reiser-koenig.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-ZLyyT9yW9kA",
+      "title": "Rock DJ",
+      "artist": "Robbie Williams",
+      "year": 2000,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Rock DJ",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZLyyT9yW9kA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "blues-robert-cray-smoking-gun",
+      "title": "Smoking Gun",
+      "artist": "Robert Cray",
+      "year": 1986,
+      "country": "US",
+      "genre": "Blues / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Moody",
+        "Cool"
+      ],
+      "hints": [
+        "[XXX] [XXX] modernisierte den Blues in den 80er Jahren mit seinem 'Clean' Gitarrensound.",
+        "Der Song handelt von Eifersucht und einem vermeintlichen Betrug.",
+        "War ein seltener Blues-Hit in den Billboard Pop-Charts.",
+        "Besticht durch sein knackiges, präzises Gitarrenspiel.",
+        "Refrain: 'I'm standing here with a [XXX] gun!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Waiting for the sun to rise, above the mountain top",
+          "I'm standing here with a smoking gun",
+          "And I'm the one who's gonna make you scream"
+        ],
+        "fake": "In the middle of the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2gQEDwjhaDE"
+      },
+      "coverUrl": "/covers/blues-robert-cray-smoking-gun.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues"
+      ]
+    },
+    {
+      "id": "blues-robert-johnson-crossroad",
+      "title": "Cross Road Blues",
+      "artist": "Robert Johnson",
+      "year": 1936,
+      "country": "US",
+      "genre": "Delta Blues",
+      "difficulty": "hard",
+      "mood": [
+        "Classic",
+        "Moody",
+        "Raw",
+        "Spiritual"
+      ],
+      "hints": [
+        "Die Legende besagt, [XXX] [XXX] habe an einer Kreuzung seine Seele dem Teufel verkauft, um Gitarre spielen zu lernen.",
+        "Ein Inbegriff des rohen, akustischen Delta [XXX].",
+        "Beeinflusste Generationen von Rockgitarristen (Eric Clapton, Keith Richards).",
+        "Die Aufnahme besticht durch [XXX]s klagenden Gesang und sein fesselndes Spiel.",
+        "Refrain: 'I went to the [XXX][XXX], fell down on my knees!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I went to the crossroad, fell down on my knees",
+          "I went to the crossroad, fell down on my knees",
+          "Asked the Lord above have mercy, now save poor Bob, if you please"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet and a silver seat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GsB_cGdgPTo"
+      },
+      "coverUrl": "/covers/blues-robert-johnson-crossroad.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "electro-robert-miles-children",
+      "title": "Children",
+      "artist": "Robert Miles",
+      "year": 1995,
+      "country": "IT",
+      "genre": "Dream Trance",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Melancholic"
+      ],
+      "hints": [
+        "Begründete das Genre des 'Dream Trance'.",
+        "Wurde als Reaktion auf tragische Verkehrsunfälle nach Clubbesuchen geschrieben (als Song zum Runterkommen).",
+        "Die einfache, traurige Klavier-Melodie ist das Markenzeichen des Songs.",
+        "Ein Welthit, der in vielen Ländern Platz 1 erreichte.",
+        "Besitzt fast keinen Text, lebt aber von der Atmosphäre."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental piece with iconic piano melody)"
+        ],
+        "fake": "Dancing in the dreams of a broken child"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "eqHlC6Nrr80"
+      },
+      "coverUrl": "/covers/electro-robert-miles-children.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt-CC5ca6Hsb2Q",
+      "title": "Children [Dream Version]",
+      "artist": "Robert Miles",
+      "year": 1985,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Robert Miles.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Children [Dream Version]",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CC5ca6Hsb2Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "schlager-roberto-blanco-spass",
+      "title": "Ein bisschen Spaß muss sein",
+      "artist": "Roberto Blanco",
+      "year": 1972,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Verbreitet unerschütterlichen Optimismus und Lebensfreude.",
+        "[XXX] [XXX] ist bekannt für [XXX] strahlendes Lächeln und [XXX] Temperament.",
+        "Der Song ist das absolute Lebensmotto des Sängers geworden.",
+        "Zählt zu den bekanntesten Gute-Laune-Liedern des Schlagers.",
+        "Refrain: 'Ein [XXX] Spaß [XXX] [XXX], dann ist die Welt voll Sonnenschein!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein",
+          "So wie ein schöner Traum, so wie ein grüner Baum",
+          "Wir nehmen alles nicht so schwer"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "x2dTtjXDIn4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-roberto-blanco-spass.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-7Kae99G-Yqk",
+      "title": "Cama y Mesa (Video En Vivo - Stereo Version)",
+      "artist": "Roberto Carlos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Roberto Carlos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Cama y Mesa (Video En Vivo - Stereo Version)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7Kae99G-Yqk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-T7bKgTeqGSM",
+      "title": "Detalles (Video En Vivo - Stereo Version)",
+      "artist": "Roberto Carlos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Roberto Carlos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Detalles (Video En Vivo - Stereo Version)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T7bKgTeqGSM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Q4nC95SteAU",
+      "title": "El gato que está triste y azul (1979)",
+      "artist": "Roberto Carlos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Roberto Carlos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: El gato que está triste y azul (1979)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Q4nC95SteAU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-t_cG6O0n3y0",
+      "title": "Mi Desengaño (Letra Oficial)",
+      "artist": "Roberto Roena",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Roberto Roena.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Mi Desengaño (Letra Oficial)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=t_cG6O0n3y0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-6qjnZi7OIII",
+      "title": "Wanna Dance",
+      "artist": "Robin S.",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Wanna Dance",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6qjnZi7OIII"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-4ZhaYjtcmf8",
+      "title": "Do It Better (Felix Jaehn Remix)",
+      "artist": "Robin Schulz",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Do It Better (Felix Jaehn Remix)",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4ZhaYjtcmf8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-vSdEdcvkiSo",
+      "title": "DEJAME VIVIR",
+      "artist": "ROCIO DURCAL",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von ROCIO DURCAL.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: DEJAME VIVIR",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vSdEdcvkiSo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-jD6Sb_ENf3g",
+      "title": "Fue Un Placer Conocerte (En Vivo)",
+      "artist": "Rocio Durcal, Juan Gabriel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Rocio Durcal, Juan Gabriel.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Fue Un Placer Conocerte (En Vivo)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jD6Sb_ENf3g"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-rfuMcTohr_Y",
+      "title": "Costumbres ((Cover Audio) (Video))",
+      "artist": "Rocío Dúrcal",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Rocío Dúrcal.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Costumbres ((Cover Audio) (Video))",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rfuMcTohr_Y"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-wIkMTnrK8Kk",
+      "title": "La Gata Bajo la Lluvia ((Cover Audio) (Video))",
+      "artist": "Rocío Dúrcal",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Rocío Dúrcal.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Gata Bajo la Lluvia ((Cover Audio) (Video))",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wIkMTnrK8Kk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disney-hercules-distance",
+      "title": "Go the Distance",
+      "artist": "Roger Bart",
+      "year": 1997,
+      "country": "US",
+      "genre": "Soundtrack / Broadway / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Determined",
+        "Epic",
+        "Classic"
+      ],
+      "hints": [
+        "Hercules' Sehnsuchtslied nach seiner wahren Bestimmung und Herkunft.",
+        "Handelt von Ausdauer, Mut und dem Finden des eigenen Platzes.",
+        "Gewann enorme Popularität, besonders in der Version von Michael Bolton.",
+        "Ein kraftvoller, epischer Disney-Track.",
+        "Refrain: 'I will find my way! I can go the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I have often dreamed of a far off place, where a hero's welcome would be waiting for me",
+          "I will find my way, I can go the distance",
+          "I'll be there someday, if I can be strong"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wdxQc3Ilg-g"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-hercules-distance.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "disney-robin-lally",
+      "title": "Oo-De-Lally",
+      "artist": "Roger Miller",
+      "year": 1973,
+      "country": "US",
+      "genre": "Soundtrack / Folk / Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Chill",
+        "Funny"
+      ],
+      "hints": [
+        "Begleitet Robin Hood und Little John im Sherwood Forest.",
+        "Inbegriff für unbeschwerten Folk-Sound in einem Disney-Film.",
+        "Besticht durch den entspannten Rhythmus und [XXX] [XXX]s sympathische Stimme.",
+        "Ein kurzer, aber extrem einprägsamer Ohrwurm.",
+        "Refrain: 'Oo-de-[XXX], oo-de-[XXX], golly, what a day!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Robin Hood and Little John walkin' through the forest, laughin' back and forth",
+          "Oo-de-lally, oo-de-lally, golly, what a day",
+          "Never mindin' such a triflin' things as a friend or a foe"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "s3OUaBcA-Fo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-robin-lally.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "schlager-roland-kaiser-santa-maria",
+      "title": "Santa Maria",
+      "artist": "Roland Kaiser",
+      "year": 1980,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Dreamy"
+      ],
+      "hints": [
+        "Einer der erfolgreichsten deutschen Schlager überhaupt.",
+        "Thematisiert die Sehnsucht nach einer paradiesischen Insel und einer verlorenen Liebe.",
+        "Der Song ist eine deutsche Version eines italienischen Originals von Oliver Onions.",
+        "[XXX] [XXX]s markante, tiefe Stimme machte das Lied zum Kult.",
+        "Refrain: '[XXX] [XXX], Insel die aus Träumen geboren!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Santa Maria, Insel die aus Träumen geboren",
+          "Santa Maria, ich hab' dich für immer verloren",
+          "Doch im Wind, da hör' ich noch deinen Namen"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0oJ99THF4Rc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-roland-kaiser-santa-maria.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-8iPcqtHoR3U",
+      "title": "Eres Mía",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Eres Mía",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8iPcqtHoR3U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ik0ZM3xbpBs",
+      "title": "La Bella Y La Bestia (Audio)",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Bella Y La Bestia (Audio)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ik0ZM3xbpBs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Hz9lhqxl_gQ",
+      "title": "La Diabla/Mi Santa  ft. Tomatito",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: La Diabla/Mi Santa  ft. Tomatito",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Hz9lhqxl_gQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-_uqZYZxleqA",
+      "title": "Llévame Contigo (Live from Madison Square Garden)",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Llévame Contigo (Live from Madison Square Garden)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_uqZYZxleqA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-5DvPc7lIH0Q",
+      "title": "Mi Santa (Audio) ft. Tomatito",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Mi Santa (Audio) ft. Tomatito",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5DvPc7lIH0Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-W8r-eIhp4j0",
+      "title": "Odio Feat. Drake",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Odio Feat. Drake",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=W8r-eIhp4j0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-Y3XyWhrZnqE",
+      "title": "Promise ft. Usher",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Promise ft. Usher",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y3XyWhrZnqE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-QFs3PIZb3js",
+      "title": "Propuesta Indecente",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Propuesta Indecente",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QFs3PIZb3js"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-5ku6b33rHAA",
+      "title": "Que Se Mueran (Audio)",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Que Se Mueran (Audio)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5ku6b33rHAA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-6vMhhBRj-2Q",
+      "title": "Rival  ft. Mario Domm",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Rival  ft. Mario Domm",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6vMhhBRj-2Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-JBlTChrXAy4",
+      "title": "Soberbio (Audio)",
+      "artist": "Romeo Santos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Romeo Santos.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Soberbio (Audio)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JBlTChrXAy4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-8vMbEKqv8i8",
+      "title": "No Tears",
+      "artist": "Ronny",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: No Tears",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8vMbEKqv8i8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "soul-rose-wash",
+      "title": "Car Wash",
+      "artist": "Rose Royce",
+      "year": 1976,
+      "country": "US",
+      "genre": "Disco / Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Besticht durch den klatschenden Rhythmus und den extrem eingängigen Refrain.",
+        "Zentraler Song des gleichnamigen Films; besingt fröhlich den Arbeitsalltag in einer Waschanlage.",
+        "Refrain: 'At the car [XXX]! Workin' at the car [XXX], yeah!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Workin' at the car wash, workin' at the car wash, yeah",
+          "You might not ever get rich, but let me tell you it's better than diggin' a ditch",
+          "At the car wash"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "IGGiT0-flRE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-rose-wash.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-wwXtPu-iA4Q",
+      "title": "More Than This",
+      "artist": "Roxy Music",
+      "year": 1982,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: More Than This",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wwXtPu-iA4Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "schlager-roy-black-schoen",
+      "title": "Schön ist es auf der Welt zu sein",
+      "artist": "Roy Black & Anita",
+      "year": 1971,
+      "country": "DE/NO",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Ein herzerwärmendes Duett zwischen dem Schlagerstar Roy [XXX] und der kleinen [XXX] Hegerland.",
+        "Der Song verbreitet puren Optimismus und kindliche Freude am Leben.",
+        "Hielt sich monatelang in den Charts und wurde zum Evergreen.",
+        "Die Melodie ist extrem eingängig und fast wie ein Volkslied aufgebaut.",
+        "Refrain: '[XXX] ist es auf der [XXX] zu [XXX], sagt die Biene zu dem Stachelschwein!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Schön ist es auf der Welt zu sein, sagt die Biene zu dem Stachelschwein",
+          "Und wir beide glauben das, denn es macht uns Riesen-Spaß",
+          "Alle Vögel singen heute nur für uns allein"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Hoffnung wieder wach"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "k0cXrif6OQQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-roy-black-schoen.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    }
+  ]
+}

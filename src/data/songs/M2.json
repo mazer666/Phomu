@@ -1,0 +1,782 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-mobbdeep-shookones",
+      "title": "Shook Ones, Pt. II",
+      "artist": "Mobb Deep",
+      "year": 1995,
+      "country": "US",
+      "genre": "Hardcore Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Dark",
+        "Serious",
+        "Raw"
+      ],
+      "hints": [
+        "Bekannt für seinen düsteren, atmosphärischen Sound und die harten Beats.",
+        "Wurde prominent im Finale des Films '8 Mile' mit Eminem verwendet.",
+        "Thematisiert die harten Realitäten und die Angst in den Projekten von Queensbridge.",
+        "Das Klavier-Sample ist eines der ikonischsten im gesamten Hip Hop.",
+        "Refrain: 'To all the [XXX] [XXX], your [XXX] [XXX]...'"
+      ],
+      "lyrics": {
+        "real": [
+          "To all the killers and a hundred dollar billers",
+          "For real niggas who ain't got no feelings",
+          "I got you stuck on the realness, we be the infamous, you heard of us"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your heart"
+      },
+      "links": {
+        "youtube": "yoYZf-lBF_U"
+      },
+      "coverUrl": "/covers/hiphop-mobbdeep-shookones.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "disco-moby-go",
+      "title": "Go",
+      "artist": "Moby",
+      "year": 1991,
+      "country": "US",
+      "genre": "Techno / Rave",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Atmospheric",
+        "Classic"
+      ],
+      "hints": [
+        "Samplet die markante Musik aus der Serie 'Twin Peaks' (Laura Palmer Theme).",
+        "Ein Meilenstein des frühen Rave-Sounds.",
+        "Besticht durch die Kombination aus orchestralen Flächen und treibenden Beats.",
+        "Refrain: 'Go!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Yeah!",
+          "Go!",
+          "Go!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NLCHARjjrws"
+      },
+      "coverUrl": "/covers/disco-moby-go.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "80s-modern-talking-heart",
+      "title": "You're My Heart, You're My Soul",
+      "artist": "Modern Talking",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Euro Disco / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Energy"
+      ],
+      "hints": [
+        "Begründete das Phänomen '[XXX] [XXX]' (Dieter Bohlen und Thomas Anders).",
+        "Besitzt den charakteristischen 'Hohen Chor' im Refrain.",
+        "Einer der erfolgreichsten deutschen Pop-Exporte aller Zeiten.",
+        "Ein Inbegriff für den Euro-Disco-Sound der Mitte der 80er.",
+        "Refrain: '[XXX] my [XXX], [XXX] my [XXX]! I'll keep it shining everywhere I go!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Deep in my heart, there's a fire - a burning heart",
+          "You're my heart, you're my soul, I'll keep it shining everywhere I go",
+          "You're my heart, you're my soul, I'll be holding you forever"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4kHl4FoK1Ys",
+        "spotify": "0Zn63G0XTiXwr1KSmARWz",
+        "amazonMusic": "B004VT9YVW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-modern-talking-heart.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "class-mussorgsky-bald",
+      "title": "Night on Bald Mountain",
+      "artist": "Modest Mussorgsky",
+      "year": 1867,
+      "country": "RU",
+      "genre": "Romantic / Symphonic Poem",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Epic"
+      ],
+      "hints": [
+        "Inbegriff für musikalische Hexensabbat-Darstellung.",
+        "Besticht durch die rasanten Streicher und die bedrohlichen Bläser.",
+        "Wurde weltberühmt durch Disneys 'Fantasia'.",
+        "Die Glocken am Ende läuten den Sonnenaufgang und das Verschwinden der Geister ein."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Poem)",
+          "Swirling winds of the night",
+          "Demonic orchestral chaos"
+        ],
+        "fake": "Dancing on the mountain of the evil king tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iCEDfZgDPS8",
+        "spotify": "6ejFaLGH7F4J5tnaYirs2G",
+        "amazonMusic": "B07CRR1NWV"
+      },
+      "coverUrl": "/covers/class-mussorgsky-bald.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-lhTTkPuWvu8",
+      "title": "Shockwave",
+      "artist": "Modestep",
+      "year": 2012,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Shockwave",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lhTTkPuWvu8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "dance-modjo-lady",
+      "title": "Lady (Hear Me Tonight)",
+      "artist": "Modjo",
+      "year": 2000,
+      "country": "FR",
+      "genre": "French House",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Romantic"
+      ],
+      "hints": [
+        "Basiert auf einem Sample aus dem Song 'Soup for One' von Chic.",
+        "Ein Paradebeispiel für den eleganten French House der Jahrtausendwende.",
+        "Das Video zeigt eine Gruppe von Freunden bei einem Roadtrip.",
+        "Einer der entspanntesten und gleichzeitig tanzbarsten Hits der Ära.",
+        "Refrain: '[XXX], [XXX] me [XXX], 'cause my feeling is just so right!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lady, hear me tonight, 'cause my feeling is just so right",
+          "As we dance by the light, and I'll keep you till the morning light",
+          "Lady, I just feel like I won't get you out of my mind"
+        ],
+        "fake": "When the stars are shining bright, I will hold you through the night"
+      },
+      "links": {
+        "youtube": "mMfxI3r_LyA"
+      },
+      "coverUrl": "/covers/dance-modjo-lady.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "score-bond-theme",
+      "title": "James Bond Theme",
+      "artist": "Monty Norman / John Barry",
+      "year": 1962,
+      "country": "GB",
+      "genre": "Movie Theme / Surf-Jazz influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Aggressive",
+        "Classic"
+      ],
+      "hints": [
+        "Das legendärste Spionage-Thema der Welt.",
+        "Besticht durch das elektrisch-vibrante Gitarren-Riff und die schmetternden Bläser.",
+        "Symbolisiert Weltgewandtheit, Gefahr und britisches Understatement.",
+        "Begleitet Agent 007 seit über 60 Jahren."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Vibrant guitar riff",
+          "Shaken, not stirred"
+        ],
+        "fake": "Licensed to kill in the middle of the night tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Vr6yscEWPYw",
+        "spotify": "2VSFOKsNSH9dBQ8BIZ8o2m",
+        "amazonMusic": "B00IECDXYG"
+      },
+      "coverUrl": "/covers/score-bond-theme.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-morbid-chapel",
+      "title": "Chapel of Ghouls",
+      "artist": "Morbid Angel",
+      "year": 1989,
+      "country": "US",
+      "genre": "Death Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Epic"
+      ],
+      "hints": [
+        "Ein Grundpfeiler des floridischen Death Metal.",
+        "Thematisiert okkulte Beschwörungen und düstere Katakomben.",
+        "Trey Azagthoths verzerrte Soli und David Vincents Gesang sind wegweisend.",
+        "Ein Inbegriff für die düstere Seite des Metal-Underground.",
+        "Refrain: 'Dead! Your God is dead!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ghouls attack the church, desecrate the holy alter",
+          "Dead! Your God is dead! Burn in hell forever",
+          "Sacrifice the blood of the innocent for the ancient ones"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "WOoGlgg5zcE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-morbid-chapel.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "country-wallen-glasses",
+      "title": "Whiskey Glasses",
+      "artist": "Morgan Wallen",
+      "year": 2018,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Sad",
+        "Energy"
+      ],
+      "hints": [
+        "Thematisiert den Versuch, Liebeskummer durch Alkohol zu betäuben.",
+        "[XXX] [XXX]s markante Stimme und der moderne Beat prägten den Sound der späten 2010er.",
+        "Ein absoluter Mega-Hit im Streaming-Bereich.",
+        "Refrain: 'Poor me, pour me another drink! 'Cause I don't wanna feel a thing!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Poor me, pour me another drink, 'cause I don't wanna feel a thing",
+          "I just wanna sipped down, until the sun goes down",
+          "Deep down, whiskey glasses"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FjBp30kjzTc"
+      },
+      "coverUrl": "/covers/country-wallen-glasses.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "metal-motorhead-ace",
+      "title": "Ace of Spades",
+      "artist": "Motörhead",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Heavy Metal / Speed Metal / Rock 'n' Roll",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Fast",
+        "Aggressive"
+      ],
+      "hints": [
+        "Inbegriff für Geschwindigkeit, Lautstärke und Lemmys Reibeisen-Stimme.",
+        "Thematisiert Glücksspiel und die Freiheit des Risikos.",
+        "Besticht durch den rasanten Rhythmus und den verzerrten Bass-Sound.",
+        "Ein Song, der keine Gefangenen macht.",
+        "Refrain: 'The Ace of [XXX]! The Ace of [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "If you like to gamble, I tell you I'm your man",
+          "You win some, lose some, all the same to me",
+          "The Ace of Spades, the Ace of Spades"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "3mbvWn1EY6g"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-motorhead-ace.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-dh7nMtMnXZw",
+      "title": "Koala",
+      "artist": "Mr. Belt & Wezol",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Koala",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dh7nMtMnXZw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-iDNlN-t6IeI",
+      "title": "Wave",
+      "artist": "Mr. Probz",
+      "year": 2013,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Wave",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iDNlN-t6IeI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "blues-muddy-waters-hoochie",
+      "title": "Hoochie Coochie Man",
+      "artist": "Muddy Waters",
+      "year": 1954,
+      "country": "US",
+      "genre": "Chicago Blues",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Confident",
+        "Cool",
+        "Powerful",
+        "Raw"
+      ],
+      "hints": [
+        "Ein Inbegriff des elektrischen Chicago Blues.",
+        "Der Song handelt von Aberglaube, Voodoo und männlichem Selbstbewusstsein.",
+        "[XXX] [XXX] gilt als einer der wichtigsten Einflüsse auf den modernen Rock'n'Roll.",
+        "Bekannt für das markante Stop-and-Go Riff der Mundharmonika und Gitarre.",
+        "Refrain: 'I'm a [XXX] [XXX] man, the whole world knows I'm here!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The gypsy woman told my mother before I was born",
+          "I got a boy child's comin', he's gonna be a son of a gun",
+          "I'm a hoochie coochie man, the whole world knows I'm here"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet and a silver seat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "e_l6A7krjrQ"
+      },
+      "coverUrl": "/covers/blues-muddy-waters-hoochie.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "indie-mumford-lion",
+      "title": "Little Lion Man",
+      "artist": "Mumford & Sons",
+      "year": 2009,
+      "country": "GB",
+      "genre": "Folk Rock / Indie Folk",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Energy",
+        "Powerful",
+        "Raw",
+        "Sad"
+      ],
+      "hints": [
+        "Löste den weltweiten Folk-Rock-Boom der frühen 2010er aus.",
+        "Bekannt für den treibenden Banjo-Rhythmus und Marcus [XXX]s leidenschaftlichen Gesang.",
+        "Thematisiert eigenes Versagen und die damit einhergehende Reue.",
+        "Ein Inbegriff für handgemachte Musik im digitalen Zeitalter.",
+        "Refrain: 'But it was not your fault but mine, and it was your heart on the line!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Weep for yourself, my help, you'll never need it",
+          "But it was not your fault but mine, and it was your heart on the line",
+          "I really fucked it up this time, didn't I, my dear?"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X7bHe--mp1g"
+      },
+      "coverUrl": "/covers/indie-mumford-lion.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "indie-muse-knights-of-cydonia",
+      "title": "Knights of Cydonia",
+      "artist": "Muse",
+      "year": 2006,
+      "country": "GB",
+      "genre": "Space Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Energy"
+      ],
+      "hints": [
+        "Eine wilde Mischung aus Space-Rock, Spaghetti-Western-Sound und Queen-Gesängen.",
+        "Der Songtitel bezieht sich auf eine Region auf dem Mars ([XXX] Mensae).",
+        "Das Video ist ein epischer Sci-Fi-Western-Kurzfilm.",
+        "Handelt vom Kampf für die eigenen Rechte und das Überleben.",
+        "Refrain: 'No one's gonna take me alive, time has come to make things right!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Come ride with me through the veins of history, I'll show you a god who falls asleep on the job",
+          "No one's gonna take me alive, time has come to make things right",
+          "You and I must fight for our rights, you and I must fight to survive"
+        ],
+        "fake": "In the deep of the space, we find the ancient race of the light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "G_sBOsh-vyI"
+      },
+      "coverUrl": "/covers/indie-muse-knights-of-cydonia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-9LjkAjWOZOY",
+      "title": "Know My Name ft. Rich The Kid, RJ",
+      "artist": "Mustard",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Mustard.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Know My Name ft. Rich The Kid, RJ",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9LjkAjWOZOY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-mcr-cancer",
+      "title": "Cancer",
+      "artist": "My Chemical Romance",
+      "year": 2006,
+      "country": "US",
+      "genre": "Gothic Rock / Piano Ballade",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Dark",
+        "Honest"
+      ],
+      "hints": [
+        "Zutiefst schmerzhafter Song aus der Sicht eines Krebspatienten.",
+        "Besticht durch die absolute Zerbrechlichkeit und Gerard Ways wehleidigen Gesang.",
+        "Thematisiert den harten Abschied am Ende eines Lebens.",
+        "Ein Kernstück des 'Black Parade' Albums.",
+        "Refrain: 'The hardest part of this! Is leaving you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Turn away, if you could get me a drink of water 'cause my lips are chapped and faded",
+          "Call my aunt Marie, help her gather all my things",
+          "The hardest part of this, is leaving you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wc2s9skF_58"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-mcr-cancer.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-6i0HqJ1tRn8",
+      "title": "Beggin'",
+      "artist": "Måneskin",
+      "year": 2017,
+      "country": "IT",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Cool",
+        "Dance Floor",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Ein Song von Måneskin.",
+        "Gefunden im Genre Rock.",
+        "Der Titel lautet: Beggin'",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": {
+        "real": [
+          "I am beggin', beggin' you, so put your loving hand out, baby",
+          "I'm beggin', beggin' you, so put your loving hand out, darling",
+          "Riding high, when I was king"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Xg72z08aTXY"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-maneskin-beggin.jpg"
+    }
+  ]
+}

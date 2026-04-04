@@ -1,0 +1,482 @@
+{
+  "songs": [
+    {
+      "id": "country-zacbrown-chicken",
+      "title": "Chicken Fried",
+      "artist": "Zac Brown Band",
+      "year": 2008,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "Besingt die einfachen Freuden des Lebens im US-Süden.",
+        "Thematisiert Essen, Patriotismus und die Liebe zur Heimat.",
+        "Besticht durch den fröhlichen Rhythmus und die wunderbaren Harmonien.",
+        "Ein absoluter Party-Garant auf jedem Country-Festival.",
+        "Refrain: 'You know I like my [XXX] [XXX]! And a cold beer on a Friday night!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You know I like my chicken fried, and a cold beer on a Friday night",
+          "A pair of jeans that fit just right, and the radio up",
+          "Well it's funny how it's the little things in life that mean the most"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Ro4BWhD4uVk"
+      },
+      "coverUrl": "/covers/country-zacbrown-chicken.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "country-zach-orange",
+      "title": "Something in the Orange",
+      "artist": "Zach Bryan",
+      "year": 2022,
+      "country": "US",
+      "genre": "Americana / Country / Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Powerful"
+      ],
+      "hints": [
+        "Wurde zum viralen Streaming-Phänomen und machte [XXX] [XXX] zum Superstar.",
+        "Thematisiert die verzweifelte Sehnsucht und das Ende einer Liebe bei Sonnenuntergang.",
+        "Besticht durch die raue, fast schon ungefilterte Emotionalität und die akustische Klarheit.",
+        "Ein Inbegriff für den Erfolg des authentischen Singer-Songwriter-Stils.",
+        "Refrain: '[XXX] in the [XXX], tells me we're not done!'"
+      ],
+      "lyrics": {
+        "real": [
+          "To you I'm just a man, to me you're all I am",
+          "Something in the orange tells me we're not done",
+          "I miss you in the mornings when I'm walking to the sun"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "lA8F9sIhGdg"
+      },
+      "coverUrl": "/covers/country-zach-orange.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "soul-zapp-bounce",
+      "title": "More Bounce to the Ounce",
+      "artist": "Zapp (Roger Troutman)",
+      "year": 1980,
+      "country": "US",
+      "genre": "Funk / Talkbox focus",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Experimental"
+      ],
+      "hints": [
+        "Besticht durch den exzessiven Einsatz der Talkbox (Vorgänger von Auto-Tune).",
+        "Einer der einflussreichsten Tracks für den späteren G-Funk Sound von Dr. Dre und Snoop Dogg.",
+        "Refrain: '[XXX] [XXX] to the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "More bounce to the ounce!",
+          "(Talkbox Vocals)",
+          "Get on the dancefloor!"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X1ijvN7ADt4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-zapp-bounce.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-_QisiHVVuLA",
+      "title": "On My Love",
+      "artist": "Zara Larsson & MNEK",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: On My Love",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_QisiHVVuLA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "house-zedd-clarity",
+      "title": "Clarity",
+      "artist": "Zedd ft. Foxes",
+      "year": 2012,
+      "country": "DE/GB",
+      "genre": "Electropop / EDM",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Epic",
+        "Happy",
+        "Powerful",
+        "Serious"
+      ],
+      "hints": [
+        "Thematisiert eine komplizierte, fast schon zerstörerische Liebe, die man dennoch braucht.",
+        "Besticht durch die brillante Produktion des deutschen Produzenten [XXX] und [XXX]' leidenschaftliche Stimme.",
+        "Gewann einen Grammy für die beste Dance-Aufnahme.",
+        "Refrain: 'If our love is tragedy, why are you my remedy? 'Cause you are the piece of me I wish I didn't need!'"
+      ],
+      "lyrics": {
+        "real": [
+          "High dive into frozen waves where the past comes back to life",
+          "If our love is tragedy, why are you my remedy?",
+          "If our love is insanity, why are you my clarity?"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "IxxstCcJlsc"
+      },
+      "coverUrl": "/covers/house-zedd-clarity.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt-z5xrhePJHsg",
+      "title": "Embriágame | Video Oficial",
+      "artist": "Zion & Lennox",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Zion & Lennox.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Embriágame | Video Oficial",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=z5xrhePJHsg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ET3cyMpFAOM",
+      "title": "Pierdo La Cabeza Remix | Video Lyric",
+      "artist": "Zion & Lennox Ft Yandel & Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Zion & Lennox Ft Yandel & Farruko.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Pierdo La Cabeza Remix | Video Lyric",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ET3cyMpFAOM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-6R5i6wQCOCQ",
+      "title": "Otra Vez",
+      "artist": "Zion & Lennox ft. J Balvin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Zion & Lennox ft. J Balvin.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Otra Vez",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6R5i6wQCOCQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-tkwjbZEEfk8",
+      "title": "Hoy lo Siento ft. Tony Dize",
+      "artist": "Zion y Lennox",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Zion y Lennox.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Hoy lo Siento ft. Tony Dize",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tkwjbZEEfk8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-gUR6T-xDqQA",
+      "title": "Baila Morena remix",
+      "artist": "Zumba",
+      "year": 2012,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Baila Morena remix",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gUR6T-xDqQA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "rock-zz-top-la-grange",
+      "title": "La Grange",
+      "artist": "ZZ Top",
+      "year": 1973,
+      "country": "US",
+      "genre": "Blues Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Raw",
+        "Classic"
+      ],
+      "hints": [
+        "Bekannt für den 'Tush'-Beat und das unglaubliche Gitarrenspiel von Billy Gibbons.",
+        "Handelt von einem berühmten Etablissement in Texas.",
+        "Die Band ist bekannt für ihre extrem langen Bärte (außer Schlagzeuger Frank Beard!).",
+        "Ein Klassiker des Southern Rock mit viel Groove.",
+        "Refrain: 'A haw, haw, haw, haw! A haw!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Rumor spreadin' 'round in that Texas town, 'bout that shack outside La Grange",
+          "And you know what I'm talkin' about, just introduced which you don't doubt",
+          "They gotta lot of nice girls ah"
+        ],
+        "fake": "Walking down the road, carrying a heavy load of blues"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "aB4nH8qx2IM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-zz-top-la-grange.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "yt-FBMMNBOXins",
+      "title": "Chão de Giz (Ao Vivo 2005) (Clipe Oficial)",
+      "artist": "Zé Ramalho",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Zé Ramalho.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Chão de Giz (Ao Vivo 2005) (Clipe Oficial)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FBMMNBOXins"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-FUz0a2cl_RM",
+      "title": "Sinônimos (Ao Vivo 2005) (Clipe Oficial)",
+      "artist": "Zé Ramalho",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Zé Ramalho.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Sinônimos (Ao Vivo 2005) (Clipe Oficial)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FUz0a2cl_RM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

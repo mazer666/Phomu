@@ -71,8 +71,8 @@ export interface PhomuSong {
    */
   mood: string[];
 
-  /** Which content pack this song belongs to, e.g. 'Global Hits 1950-2026' */
-  pack: string;
+  /** List of content packs this song belongs to, e.g. ['Global Hits 1950-2026', 'Rock Anthems'] */
+  packs: string[];
 
   /**
    * 5 hint strings for Hint-Master mode, ordered from hardest to easiest.

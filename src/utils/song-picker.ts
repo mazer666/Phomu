@@ -1,6 +1,6 @@
 import type { PhomuSong } from '@/types/song';
 import type { GameMode, Difficulty } from '@/config/game-config';
-import { ALL_SONGS } from '@/data/packs';
+import { ALL_SONGS } from '@/data/songs';
 
 interface PickerOptions {
   playedIds: string[];
@@ -23,7 +23,7 @@ export function pickRandomSong({
   
   let basePool = ALL_SONGS;
   if (selectedPacks && selectedPacks.length > 0) {
-    basePool = ALL_SONGS.filter(s => selectedPacks.includes(s.pack));
+    basePool = ALL_SONGS.filter(s => s.packs.some(p => selectedPacks.includes(p)));
   }
   if (basePool.length === 0) basePool = ALL_SONGS; // Absoluter Fallback
 

@@ -1,0 +1,432 @@
+{
+  "songs": [
+    {
+      "id": "yt-SXPbzreFSxw",
+      "title": "Don't Start Now",
+      "artist": "Dua Lipa",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Brachte den Disco-Sound mit moderner Produktion zurück in die Charts.",
+        "Besitzt eine extrem mitreißende Basslinie.",
+        "Handelt davon, dass man über eine alte Liebe hinweg ist und sich nicht mehr stören lässt.",
+        "Ein Paradebeispiel für den Erfolg ihres Albums 'Future Nostalgia'.",
+        "Refrain: '[XXX] show up, [XXX] come out, [XXX] [XXX] caring about me now!'"
+      ],
+      "lyrics": {
+        "real": [
+          "If you don't wanna see me dancing with somebody, if you wanna believe that anything could stop me",
+          "Don't show up, don't come out, don't start caring about me now",
+          "Walk away, you know how, don't start caring about me now"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SXPbzreFSxw"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/dance-dua-lipa-start-now.jpg"
+    },
+    {
+      "id": "dua-lipa-levitating-2020",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Modern",
+        "Modern Hits",
+        "Neon Night",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Das Stück wurde von Clarence Coffee Jr. und Stuart Price mitgeschrieben – beide sind auch für Hits von Ariana Grande bekannt.",
+        "Die Disco-Einflüsse wurden bewusst gewählt: Produzent Stuart Price wollte den Sound der 70er für ein 2020er-Publikum modernisieren.",
+        "Erschienen 2020 auf dem Album 'Future Nostalgia'; das Kritikerliebling-Album des Jahres 2020.",
+        "Funkiger Disco-Pop mit schwebenden Synthesizern, einem treibenden Bass und Dua [XXX]s warmer Stimme.",
+        "Dua [XXX] fühlt sich so verliebt, dass sie das Gefühl hat zu levitieren – zu schweben."
+      ],
+      "lyrics": {
+        "real": [
+          "If you wanna run away with me, I know a galaxy",
+          "And I can take you for a ride",
+          "I'm levitating, the Milky Way, we're renegading"
+        ],
+        "fake": "We're walking on the stars above the city lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UbPrlq52r7Y"
+      },
+      "coverUrl": "/covers/dua-lipa-levitating-2020.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "yt-VMQlEvr42A8",
+      "title": "Training Season",
+      "artist": "Dua Lipa",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: Training Season",
+        "Playlist-Tag: Modern Hits"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMQlEvr42A8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-fWU5TM2fWkY",
+      "title": "Something On My Mind",
+      "artist": "Duke Dumont & Nothing But Thieves",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Something On My Mind",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fWU5TM2fWkY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "jazz-duke-atrain",
+      "title": "Take the 'A' Train",
+      "artist": "Duke Ellington",
+      "year": 1941,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Erkennungsmelodie des [XXX] [XXX] Orchestras.",
+        "Bezieht sich auf die U-Bahn-Linie A nach Harlem.",
+        "Ein Inbegriff für den eleganten und kraftvollen Big Band Sound.",
+        "Besticht durch den feinen Swing und die brillanten Bläser-Sätze.",
+        "Genre-Inhalt: Legendärer Swing-Standard."
+      ],
+      "lyrics": {
+        "real": [
+          "You must take the A train, to go to Sugar Hill way up in Harlem",
+          "If you should take the A train, you'll find the quickest way to get to Harlem",
+          "Hurry, get on now, it's coming"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "D6mFGy4g_n8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-duke-atrain.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-EP_kVaENf6Q",
+      "title": "Girls on Film (2010 Remaster)",
+      "artist": "Duran Duran",
+      "year": 1981,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Girls on Film (2010 Remaster)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EP_kVaENf6Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-duran-wolf",
+      "title": "Hungry Like the Wolf",
+      "artist": "Duran Duran",
+      "year": 1982,
+      "country": "GB",
+      "genre": "New Wave / Synth Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Cool",
+        "Classic"
+      ],
+      "hints": [
+        "Das Video im Indiana-Jones-Stil prägte das Image der Band.",
+        "Besticht durch den treibenden Beat und Simon Le Bons charismatischen Gesang.",
+        "Ein Paradebeispiel für den stylischen 'New Romantic' Sound.",
+        "Half [XXX] [XXX], den US-Markt zu erobern.",
+        "Refrain: 'In touch with the ground, I'm on the hunt, I'm after you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Dark in the city, night is a wire, steam in the subway, earth is afire",
+          "In touch with the ground, I'm on the hunt I'm after you",
+          "Smell like a sound, I'm lost in a crowd and I'm hungry like the wolf"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "oJL-lCzEXgI",
+        "spotify": "39lSeqnyjZJejRuaREfyLL",
+        "amazonMusic": "B002M49SYG"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-duran-wolf.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-rcEWVdL_fIo",
+      "title": "Son Of A Preacher Man",
+      "artist": "Dusty Springfield",
+      "year": 1968,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Son Of A Preacher Man",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rcEWVdL_fIo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disney-moana-welcome",
+      "title": "You're Welcome",
+      "artist": "Dwayne Johnson",
+      "year": 2016,
+      "country": "US",
+      "genre": "Soundtrack / Funny / Rap",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Confident",
+        "Groovy"
+      ],
+      "hints": [
+        "Gesungen von Halbgott Maui ([XXX] 'The Rock' [XXX]).",
+        "Thematisiert Mauis gigantisches Ego und seine Taten für die Menschheit.",
+        "[XXX] [XXX]s charismatischer Gesang (und Rap!) überraschte alle.",
+        "Ein extrem eingängiger Gute-Laune-Track.",
+        "Refrain: 'What can I say except [XXX] [XXX]! For the tides, the sun, the sky!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I see what's happening here, you're face to face with greatness and it's strange",
+          "You're welcome, what can I say except you're welcome",
+          "For the tides, the sun, the sky, hey, it's okay, it's okay, you're welcome"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "79DijItQXMM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-moana-welcome.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-79DijItQXMM",
+      "title": "You're Welcome (from Moana/Official Video)",
+      "artist": "Dwayne Johnson",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Dwayne Johnson.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: You're Welcome (from Moana/Official Video)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=79DijItQXMM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-9C6Y0NzuIis",
+      "title": "Nadie Te Amará Como Yo",
+      "artist": "Dyland & Lenny",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Dyland & Lenny.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Nadie Te Amará Como Yo",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9C6Y0NzuIis"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    }
+  ]
+}

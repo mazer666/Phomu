@@ -1,0 +1,2928 @@
+{
+  "songs": [
+    {
+      "id": "piano-pink-beam",
+      "title": "Beam Me Up",
+      "artist": "P!nk",
+      "year": 2012,
+      "country": "US",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Spiritual",
+        "Emotional"
+      ],
+      "hints": [
+        "Zutiefst persönlicher Song über den Wunsch, für einen Moment mit einem Verstorbenen verbunden zu sein.",
+        "Thematisiert Trauer und die Unmöglichkeit des Loslassens.",
+        "Besticht durch P!nks verletzlichen, fast flüsternden Gesang am Anfang.",
+        "Ein Inbegriff für ihre emotionalen Balladen-Künste.",
+        "Refrain: '[XXX] me up! Let's write our own ending!'"
+      ],
+      "lyrics": {
+        "real": [
+          "There's a whole world out there that I don't want to see",
+          "Beam me up, let's write our own ending",
+          "I'm not ready to be this alone"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "PFYm9LKsuUo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-pink-beam.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-Dc8n7OWQzYU",
+      "title": "Hustle",
+      "artist": "P!nk & Doechii",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Hustle",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Dc8n7OWQzYU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-plion-happy",
+      "title": "Happy Children",
+      "artist": "P. Lion",
+      "year": 1983,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Ein weiterer Meilenstein des Italo Disco der frühen 80er.",
+        "Thematisiert den Wunsch nach einer besseren Welt für Kinder.",
+        "Besticht durch den klirrenden Synthesizer-Sound und die eingängige Melodie.",
+        "P. [XXX] war einer der Pioniere des melodischen Italo Disco.",
+        "Refrain: '[XXX] [XXX]! In the garden of the rising sun!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Happy children, in the garden of the rising sun",
+          "Happy children, they are playing in the light",
+          "Oh, oh, oh, happy children"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "CMQjZIaKBpQ",
+        "spotify": "1Yw03Hk9W9U0YfU18p8n80",
+        "amazonMusic": "B01LZP8ML6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-plion-happy.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-cSUEFDZ3p3k",
+      "title": "Te he echado de menos (Videoclip oficial)",
+      "artist": "Pablo Alborän",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Pablo Alborän.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Te he echado de menos (Videoclip oficial)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cSUEFDZ3p3k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "metal-pantera-walk",
+      "title": "Walk",
+      "artist": "Pantera",
+      "year": 1992,
+      "country": "US",
+      "genre": "Groove Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Heavy"
+      ],
+      "hints": [
+        "Inbegriff für das 'Groove Metal' Genre mit seinem schleppenden, brutalen Riffs.",
+        "Thematisiert Respekt und das Abweisen von falschen Freunden.",
+        "Phil Anselmos aggressiver Gesang und Dimebag Darrells Gitarrenspiel sind unerreicht.",
+        "Ein absolutes Live-Monster.",
+        "Refrain: '[XXX]! What did you say? [XXX]! Are you talking to me?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Respect, walk, what did you say? Respect, walk, are you talking to me?",
+          "No way punk!",
+          "Walk on home boy!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AkFqg5wAuFk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-pantera-walk.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "metal-parkway-carrion",
+      "title": "Carrion",
+      "artist": "Parkway Drive",
+      "year": 2007,
+      "country": "AU",
+      "genre": "Metalcore",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Epic"
+      ],
+      "hints": [
+        "Der Durchbruch-Song des australischen Metalcore-Giganten.",
+        "Besticht durch das heroische Gitarren-Lead und den massiven Breakdown.",
+        "Thematisiert Zerstörung und den Untergang einer Zivilisation.",
+        "Winston McCall's Performance ist pure Energie.",
+        "Refrain: 'In the distance! The sound of the broken world!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Carrion, in the distance, I hear the sound of the end",
+          "We are the survivors of the broken machine",
+          "Parkway Drive for the life!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y9QoYujrQFI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-parkway-carrion.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "soul-parliament-funk",
+      "title": "Give Up the Funk (Tear the Roof Off the Sucker)",
+      "artist": "Parliament",
+      "year": 1976,
+      "country": "US",
+      "genre": "P-Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Party",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für den bombastischen, außerirdischen 'P-[XXX]' Sound von George Clinton.",
+        "Besticht durch die dominanten Chor-Gesänge und den schweren, hypnotischen Groove.",
+        "Refrain: 'We want the [XXX]! Gotta have the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Tear the roof off the sucker, tear the roof off the mother-sucker",
+          "We want the funk, gotta have the funk",
+          "We need the funk, gotta have the funk"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "h_mnrkLg36M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-parliament-funk.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-xwQ5Sw4wxDA",
+      "title": "Passenger | The Wind ( Cat Stevens Cover )",
+      "artist": "Passenger",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Passenger | The Wind ( Cat Stevens Cover )",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xwQ5Sw4wxDA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-SQIYen0KtFo",
+      "title": "Don't Be Afraid (feat. Jungle)",
+      "artist": "Patrick Topping",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Don't Be Afraid (feat. Jungle)",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SQIYen0KtFo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "country-patsy-cline-crazy",
+      "title": "Crazy",
+      "artist": "Patsy Cline",
+      "year": 1961,
+      "country": "US",
+      "genre": "Country / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Romantic",
+        "Sad",
+        "Smooth"
+      ],
+      "hints": [
+        "Geschrieben von dem damals noch unbekannten Willie Nelson.",
+        "[XXX] [XXX]s glasklare, emotionale Stimme ist das Herzstück des Songs.",
+        "Gilt als einer der am häufigsten in Jukeboxen gespielten Songs aller Zeiten.",
+        "Handelt von der Erkenntnis, dass man aus Liebe unvernünftige Dinge tut.",
+        "Refrain: 'I'm [XXX] for feelin' so lonely... [XXX] for feelin' so blue!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm crazy, crazy for feelin' so lonely",
+          "I'm crazy, crazy for feelin' so blue",
+          "I knew you'd love me as long as you wanted, and then some day you'd leave me for somebody new"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YWKeuYcDAoo"
+      },
+      "coverUrl": "/covers/country-patsy-cline-crazy.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "yt-hf6mxXVpmDo",
+      "title": "On My Own",
+      "artist": "Patti LaBelle & Michael McDonald",
+      "year": 1986,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: On My Own",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hf6mxXVpmDo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "electro-paul-kalkbrenner-sky-and-sand",
+      "title": "Sky and Sand",
+      "artist": "Paul Kalkbrenner",
+      "year": 2008,
+      "country": "DE",
+      "genre": "Techno / Deep House",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Melancholic",
+        "Epic"
+      ],
+      "hints": [
+        "Titelsong des Films 'Berlin Calling', in dem [XXX] [XXX] auch die Hauptrolle spielt.",
+        "Hielt sich über 100 Wochen in den deutschen Single-Charts.",
+        "Den Gesang lieferte [XXX]s Bruder Fritz [XXX].",
+        "Wurde zur Hymne des modernen Berliner Nachtlebens.",
+        "Refrain: 'And we build a castle in the sky and in the [XXX]...'"
+      ],
+      "lyrics": {
+        "real": [
+          "A cold wind's blowing and we build a castle in the sky and in the sand",
+          "Design our own world, ain't nobody in the way",
+          "You and me, let's fly away!"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "8ybFb_wKlvQ"
+      },
+      "coverUrl": "/covers/electro-paul-kalkbrenner-sky-and-sand.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt-RYlMBKYFw4U",
+      "title": "Stranger",
+      "artist": "Paul Simon featuring Nico Segal",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Paul Simon featuring Nico Segal.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Stranger",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RYlMBKYFw4U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "electro-paulvandyk-angel",
+      "title": "For an Angel",
+      "artist": "Paul van Dyk",
+      "year": 1994,
+      "country": "DE",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Gilt als einer der einflussreichsten Trance-Tracks aller Zeiten.",
+        "Die euphorische Melodie ist ein Inbegriff für die goldene Ära des Trance.",
+        "[XXX] van Dyk zementierte damit seinen Weltruf als DJ und Produzent.",
+        "Gänsehaut-Garantie auf jedem Rave weltweit.",
+        "Refrain: (Instrumental)"
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental)"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2wnzgR06or0"
+      },
+      "coverUrl": "/covers/electro-paulvandyk-angel.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt-MmPdt4UUsoA",
+      "title": "Farruko Ft. Daddy Yankee, Yomo.",
+      "artist": "Pa´Romper la Discoteca",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Pa´Romper la Discoteca.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Farruko Ft. Daddy Yankee, Yomo.",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MmPdt4UUsoA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "disney-aladdin-world",
+      "title": "A Whole New World",
+      "artist": "Peabo Bryson & Regina Belle",
+      "year": 1992,
+      "country": "US",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Der fliegende Teppich-Song aus 'Aladdin'.",
+        "Thematisiert die Entdeckung neuer Horizonte und die Freiheit der Liebe.",
+        "Ein klassisches Disney-Duett, das weltweit die Charts stürmte.",
+        "Inbegriff für orientalische Disney-Magie.",
+        "Refrain: 'A [XXX] new [XXX]! A new fantastic point of view!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can show you the world, shining, shimmering, splendid",
+          "A whole new world, a new fantastic point of view",
+          "No one to tell us no, or where to go, or say we're only dreaming"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xgvpnpLqyGA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-aladdin-world.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "unplugged-pearl-jam-black",
+      "title": "Black (Unplugged)",
+      "artist": "Pearl Jam",
+      "year": 1992,
+      "country": "US",
+      "genre": "Grunge / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Deep"
+      ],
+      "hints": [
+        "Eddie Vedders Gesang bricht am Ende des Songs fast vor Emotionen.",
+        "Handelt von einem Mann, der an eine verflossene Liebe denkt, die nun ein anderes Leben führt.",
+        "Wurde trotz fehlendem Musikvideo zu einem der größten Songs des Albums 'Ten'.",
+        "Ein zeitloser Klassiker über Verlust und Sehnsucht.",
+        "Refrain: 'I know someday you'll have a beautiful life, I know you'll be a sun...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sheets of empty canvas, untouched sheets of clay, laid spread out before me as her body once did",
+          "I know someday you'll have a beautiful life, I know you'll be a sun in somebody else's sky",
+          "But why, why, why can't it be, can't it be mine?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "qgaRVvAKoqQ",
+        "spotify": "3xIaUb1WsnrqbJo6CsJMLO",
+        "amazonMusic": "B08HNFPM32"
+      },
+      "coverUrl": "/covers/unplugged-pearl-jam-black.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "finale-peggy-nanana",
+      "title": "(It Goes Like) Nanana",
+      "artist": "Peggy Gou",
+      "year": 2023,
+      "country": "KR",
+      "genre": "House / Club",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Club"
+      ],
+      "hints": [
+        "Kombiniert 90er-Jahre Eurodance-Vibes mit moderner Produktion.",
+        "Besticht durch den eingängigen Synthesizer-Loop und den sommerlichen Vibe.",
+        "Wurde zu DER Club-Hymne des Jahres 2023.",
+        "Refrain: 'It [XXX] [XXX] [XXX], [XXX], [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It goes like nanana, nanana, nanana",
+          "I can feel it, can you feel it?",
+          "Nanana!"
+        ],
+        "fake": "Dancing in the stars in the middle of the night tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "sCz5y84dwuA"
+      },
+      "coverUrl": "/covers/finale-peggy-nanana.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-XOsY3W3dlI0",
+      "title": "[It Goes Like] Nanana (Edit)",
+      "artist": "Peggy Gou",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: [It Goes Like] Nanana (Edit)",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XOsY3W3dlI0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "jazz-peggylee-fever",
+      "title": "Fever",
+      "artist": "Peggy Lee",
+      "year": 1958,
+      "country": "US",
+      "genre": "Jazz / Pop / Rhythm & Blues",
+      "difficulty": "easy",
+      "mood": [
+        "Sexy",
+        "Cool",
+        "Minimalist"
+      ],
+      "hints": [
+        "Inbegriff für Minimalismus im Jazz-Pop.",
+        "Besticht durch das fingerschnippende Rhythmus-Gefühl und den tiefen Bass.",
+        "Thematisiert leidenschaftliches Verlangen und Anziehung.",
+        "[XXX] Lees hauchzarter Gesang machte den Song zur Sensation.",
+        "Refrain: '[XXX]! In the morning! [XXX] all through the night!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Never know how much I love you, never know how much I care",
+          "When you put your arms around me, I get a fever that's so hard to bear",
+          "You give me fever, when you kiss me, fever when you hold me tight"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "REryc1TpeY8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-peggylee-fever.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "disney-mercy-tramp",
+      "title": "He's a Tramp",
+      "artist": "Peggy Lee",
+      "year": 1955,
+      "country": "US",
+      "genre": "Soundtrack / Jazz / Blues",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Sultry",
+        "Classic"
+      ],
+      "hints": [
+        "Gesungen von [XXX] (der Hündin) in 'Susi und Strolch'.",
+        "Besticht durch den entspannten, rauchigen Jazz-Sound der 50er Jahre.",
+        "Thematisiert die Faszination für den unkonventionellen Strolch.",
+        "Ein Inbegriff für Disneys frühe meisterhafte Musik-Einlagen.",
+        "Refrain: 'He's a [XXX]! But I love him!'"
+      ],
+      "lyrics": {
+        "real": [
+          "He's a tramp, but I love him, breaks a new heart every day",
+          "He's a tramp, they adore him, and I only hope he'll stay that way",
+          "He's a scamp, he's a wanderer"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "djwsBmqtBTw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mercy-tramp.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-ku7ohU1IGls",
+      "title": "God Rest Ye Merry Gentlemen",
+      "artist": "Pentatonix",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Pentatonix.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: God Rest Ye Merry Gentlemen",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ku7ohU1IGls"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-IjiVcn2sQm8",
+      "title": "Me Vas a Extrañar - Oficial",
+      "artist": "Pepe Aguilar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Pepe Aguilar.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Me Vas a Extrañar - Oficial",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IjiVcn2sQm8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-AB-8gb--bgs",
+      "title": "Perdóname - Oficial",
+      "artist": "Pepe Aguilar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Pepe Aguilar.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Perdóname - Oficial",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AB-8gb--bgs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "synth-petshop-sin",
+      "title": "It's a Sin",
+      "artist": "Pet Shop Boys",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Synthpop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Dramatic",
+        "Energy",
+        "Epic"
+      ],
+      "hints": [
+        "Inbegriff für bombastischen, fast opernhaften Synthpop.",
+        "Thematisiert Neil Tennants religiöse Erziehung und das Gefühl ständiger Schuld.",
+        "Besticht durch die dramatischen Orgelklänge und den treibenden Rhythmus.",
+        "Wurde zu einem ihrer größten Hits weltweit.",
+        "Refrain: 'Everything I've ever done! Everything I ever do! Every place I've ever been! It's a sin!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When I look back upon my life, it's always with a sense of shame",
+          "I've always been the one to blame",
+          "For everything I've ever done, for everything I ever do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "F9dXx6gr9tQ"
+      },
+      "coverUrl": "/covers/synth-petshop-sin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "synth-petshop-girls",
+      "title": "West End Girls",
+      "artist": "Pet Shop Boys",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Electronic",
+        "Nostalgic",
+        "Urban"
+      ],
+      "hints": [
+        "Besticht durch die unterkühlten Sprechgesang-Strophen und das atmosphärische Saxophon.",
+        "Thematisiert soziale Kontraste und das Nachtleben in London.",
+        "Machte Neil Tennant und Chris Lowe weltweit zu Superstars des Synthpop.",
+        "Refrain: 'In a [XXX] End town, a dead end world! The East End [XXX] and [XXX] End [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes you're better off dead, there's a gun in your hand and it's pointing at your head",
+          "You think you're mad, too unstable, kicking in chairs and knocking down tables",
+          "In a West End town, a dead end world"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y0KQNn3aL4Q",
+        "spotify": "5Dqik1P9toCJTLj5rEm78s",
+        "amazonMusic": "B001QARRIQ"
+      },
+      "coverUrl": "/covers/synth-petshop-girls.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop"
+      ]
+    },
+    {
+      "id": "german-peter-fox-haus-am-see",
+      "title": "Haus am See",
+      "artist": "Peter Fox",
+      "year": 2008,
+      "country": "DE",
+      "genre": "Dancehall",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Summer"
+      ],
+      "hints": [
+        "Stammt vom extrem erfolgreichen Soloalbum 'Stadtaffe' des Seeed-Sängers.",
+        "Der Song beschreibt die Vision eines friedlichen Lebens im Alter.",
+        "Die Mischung aus Hip Hop Beats und klassischem Orchester war damals neuartig.",
+        "Wurde zu einem der meistgespielten Songs der späten 2000er.",
+        "Refrain: 'Und am Ende der Straße steht ein [XXX] am See...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hier bin ich geboren, hier werd' ich begraben, doch dazwischen will ich leben",
+          "Und am Ende der Straße steht ein Haus am See",
+          "Ich hab' 20 Kinder, meine Frau ist schön, alle kommen vorbei"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
+      "links": {
+        "youtube": "Vgwkxa-uGcE"
+      },
+      "coverUrl": "/covers/german-peter-fox-haus-am-see.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-J4K4obX3wcs",
+      "title": "Games Without Frontiers",
+      "artist": "Peter Gabriel",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Games Without Frontiers",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=J4K4obX3wcs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "80s-peter-gabriel-sledgehammer",
+      "title": "Sledgehammer",
+      "artist": "Peter Gabriel",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Art Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Creative",
+        "Groovy",
+        "Epic"
+      ],
+      "hints": [
+        "Das Musikvideo hielt lange den Rekord für die meisten VMA-Nominierungen und Siege.",
+        "Enthält Stop-Motion-Animationen von Aardman Animations (Wallace & Gromit).",
+        "Der Song ist stark von klassischem Soul und Bläsersätzen inspiriert.",
+        "Handelt von Metaphern für spirituelle oder physische Kraft.",
+        "Ein audiovisuelles Meisterwerk der 80er."
+      ],
+      "lyrics": {
+        "real": [
+          "You could have a steam train, if you'd just lay down your tracks",
+          "You could have a aeroplane flying, if you bring your blue sky back",
+          "I want to be your sledgehammer, why don't you call my name?"
+        ],
+        "fake": [
+          "You feel the power, you feel the might, make it smash",
+          "Jack and the Hammer, Jack Hammer, blade and fade"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OJWJE0x7T4Q",
+        "spotify": "0Y9uTzWEvUn7bgY96SshNi",
+        "amazonMusic": "B07D1FDNDZ"
+      },
+      "coverUrl": "/covers/80s-peter-gabriel-sledgehammer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "schlager-maffay-bruecken",
+      "title": "Über sieben Brücken mußt du gehn",
+      "artist": "Peter Maffay",
+      "year": 1980,
+      "country": "DE",
+      "genre": "Rock / Schlager",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Serious"
+      ],
+      "hints": [
+        "Ursprünglich von der DDR-Rockband 'Karat' aufgenommen.",
+        "Die Version von [XXX] [XXX] wurde im Westen zu einem riesigen Erfolg.",
+        "Thematisiert die Überwindung von Hindernissen und die Hoffnung auf bessere Zeiten.",
+        "Gilt als einer der emotionalsten und tiefgründigsten Hits dieser Ära.",
+        "Refrain: 'Über [XXX] [XXX] mußt du [XXX], [XXX] dunkle Jahre überstehn!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Manchmal geh' ich meine Straße ohne Blick, manchmal wünsch' ich mir mein Schaukelpferd zurück",
+          "Über sieben Brücken mußt du gehn, sieben dunkle Jahre überstehn",
+          "Siebenmal wirst du die Asche sein, aber einmal auch der helle Schein"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GzCl8DIJCR0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-maffay-bruecken.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "german-peter-schilling-major-tom",
+      "title": "Major Tom (völlig losgelöst)",
+      "artist": "Peter Schilling",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "German New Wave",
+        "Popular",
+        "Space",
+        "Synth"
+      ],
+      "hints": [
+        "Eine inoffizielle Fortsetzung von David Bowies 'Space Oddity'.",
+        "Der Song beschreibt das Verschwinden eines Astronauten im Weltraum.",
+        "Wurde zu einer Hymne der Raumfahrt und der NDW-Ära.",
+        "Bekannt für den Countdown im Refrain: 'Gründlich checkt er alle Instrumente...'.",
+        "Refrain: 'Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Gründlich checkt er alle Instrumente, nur noch ein paar Sekunden bis zum Start",
+          "Mit dem Lichtstrahl deiner Augen blickst du in die Ewigkeit",
+          "Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos"
+        ],
+        "fake": "In den Sternen steht geschrieben, dass wir uns für immer lieben"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xGzkZrMc5vU"
+      },
+      "coverUrl": "/covers/german-peter-schilling-major-tom.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "reggae-peter-tosh-legalize-it",
+      "title": "Legalize It",
+      "artist": "Peter Tosh",
+      "year": 1976,
+      "country": "JM",
+      "genre": "Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Serious"
+      ],
+      "hints": [
+        "[XXX] [XXX] war Gründungsmitglied der Wailers neben Bob Marley.",
+        "Der Song ist das wohl bekannteste Plädoyer für die Legalisierung von Marihuana.",
+        "Thematisiert den rituellen und medizinischen Gebrauch in der Rastafari-Kultur.",
+        "Bekannt für den extrem entspannten 'Lope'-Rhythmus.",
+        "Refrain: '[XXX] it, don't criticize it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Legalize it, don't criticize it, legalize it and I will advertise it",
+          "Singers smoke it, and players of instruments too",
+          "It's good for the flu, it's good for asthma too"
+        ],
+        "fake": "Drinking under the sun, having so much fun with your gun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "i-7paynQS7M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-peter-tosh-legalize-it.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "pharrell-happy-2013",
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "year": 1990,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Legends & Classics",
+        "Party Anthem",
+        "Popular",
+        "Positive",
+        "Summer Vibes",
+        "Upbeat"
+      ],
+      "hints": [
+        "Das Lied war zunächst Teil des Animationsfilm-Soundtracks 'Despicable Me 2' und wurde erst durch ein 24-Stunden-Musikvideo weltweit bekannt.",
+        "Gewann 2014 den Oscar für 'Bestes Originallied' – [XXX] erschien zur Zeremonie mit einem auffällig großen Hut.",
+        "Erschienen 2013; führte in 24 Ländern die Charts an und war 2014 der meistgestreamte Song auf Spotify.",
+        "Funkiger Soul-Pop mit simplen Handclaps, einer eingängigen Melodie und einem Refrain, der kaum aus dem Kopf geht.",
+        "[XXX] [XXX] erklärt sich zum Glücksstück und fordert alle auf mitzumachen – das Gefühl ist ansteckend."
+      ],
+      "lyrics": {
+        "real": [
+          "It might seem crazy what I'm about to say",
+          "Sunshine she's here, you can take a break",
+          "Clap along if you feel like happiness is the truth"
+        ],
+        "fake": "Smile at the world and the world will smile back at you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+        "spotify": "6NPVjNh8Jhru9xOmyQigds",
+        "amazonMusic": "B00GN0S9S8"
+      },
+      "coverUrl": "/covers/pharrell-happy-2013.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "yt-dJqxQzxLbHM",
+      "title": "Happy (From \"Despicable Me 2\")",
+      "artist": "Pharrell Williams",
+      "year": 2013,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Happy (From \"Despicable Me 2\")",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dJqxQzxLbHM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-phil-odds",
+      "title": "Against All Odds (Take a Look at Me Now)",
+      "artist": "Phil Collins",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Pop / Rock Ballad",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
+      "hints": [
+        "Inbegriff für die tief empfundenen Balladen von [XXX] [XXX].",
+        "Thematisiert den Wunsch nach Versöhnung gegen jede Wahrscheinlichkeit.",
+        "Besticht durch das prägnante Klavier und die verzweifelte Steigerung im Gesang.",
+        "Eigens für den gleichnamigen Film geschrieben.",
+        "Refrain: 'So [XXX] a [XXX] at me now! 'Cause there's just an empty space!'"
+      ],
+      "lyrics": {
+        "real": [
+          "How can I just let you walk away, just let you leave without a trace",
+          "So take a look at me now, 'cause there's just an empty space",
+          "And you coming back to me is against all odds"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZJt-A6SYlYA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-phil-odds.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "80s-phil-collins-in-the-air-tonight",
+      "title": "In the Air Tonight",
+      "artist": "Phil Collins",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Drums",
+        "Epic"
+      ],
+      "hints": [
+        "Bekannt für den vielleicht berühmtesten Schlagzeug-Einsatz (Drum Fill) der Welt.",
+        "Wurde oft fälschlicherweise als Song über das Zeuge-Sein an einem Ertrinkungsunfall gedeutet.",
+        "Der Song nutzt einen 'Gated Reverb' Sound auf den Drums, der den 80er Sound definierte.",
+        "Wurde prominent in der ersten Folge von 'Miami Vice' eingesetzt.",
+        "Spürst du es auch schon? 'I can feel it coming in the ...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can feel it coming in the air tonight, oh Lord",
+          "And I've been waiting for this moment, for all my life",
+          "Well, if you told me you were drowning, I would not lend a hand"
+        ],
+        "fake": [
+          "The moon is high and the tide is rising slow tonight",
+          "You need to feel it staying in a chain tonight"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YkADj0TPrJA",
+        "spotify": "18AXbzPzBS8Y3AkgSxzJPb",
+        "amazonMusic": "B014SRJV8C"
+      },
+      "coverUrl": "/covers/80s-phil-collins-in-the-air-tonight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "disney-tarzan-heart",
+      "title": "You'll Be in My Heart",
+      "artist": "Phil Collins",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Protective",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX] schrieb und sang diesen Song für den Film 'Tarzan'.",
+        "Thematisiert die bedingungslose Liebe und den Schutz eines Kindes.",
+        "Gewann den Oscar für den besten Originalsong.",
+        "[XXX] [XXX] nahm den Song in verschiedenen Sprachen auf (auch Deutsch!).",
+        "Refrain: '[XXX] be in my [XXX]! From this day on, now and forever more!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Come stop your crying, it will be alright, just take my hand, hold it tight",
+          "You'll be in my heart, from this day on, now and forever more",
+          "You'll be in my heart, no matter what they say"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "smJU3cSx9F0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-tarzan-heart.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "disney-jungle-bare",
+      "title": "The Bare Necessities",
+      "artist": "Phil Harris & Bruce Reitherman",
+      "year": 1967,
+      "country": "US",
+      "genre": "Soundtrack / Jazz / Happy",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Balus Lebens[XXX]osophie aus 'Das Dschungelbuch'.",
+        "Thematisiert Gelassenheit und die Rückbesinnung auf das Wesentliche.",
+        "Besticht durch den fröhlichen Jazz-Shuffle-Rhythmus.",
+        "Ein Inbegriff für unbeschwerte Disney-Fröhlichkeit.",
+        "Refrain: 'Look for the [XXX] [XXX]! The simple [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Look for the bare necessities, the simple bare necessities",
+          "Forget about your worries and your strife",
+          "I mean the bare necessities, are Mother Nature's recipes"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6BH-Rxd-NBo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-jungle-bare.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "class-glass-opening",
+      "title": "Glassworks (Opening)",
+      "artist": "Philip Glass",
+      "year": 1982,
+      "country": "US",
+      "genre": "Minimalism",
+      "difficulty": "medium",
+      "mood": [
+        "Hypnotic",
+        "Peaceful",
+        "Intelligent"
+      ],
+      "hints": [
+        "Inbegriff für den minimalistischen Stil von [XXX] [XXX].",
+        "Besticht durch den ständigen Wechsel zwischen Duolen und Triolen auf dem Klavier.",
+        "Wirkt hypnotisch, beruhigend und mathematisch präzise zugleich.",
+        "Eines der zugänglichsten Werke der zeitgenössischen E-Musik."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Minimalism)",
+          "Hypnotic arpeggios",
+          "Circular piano patterns"
+        ],
+        "fake": "Dancing in the circles of the mind tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-nBE9U7q1Uc",
+        "spotify": "4gdwUYVnVv8u0t6XaYob4v",
+        "amazonMusic": "B001VFTNSS"
+      },
+      "coverUrl": "/covers/class-glass-opening.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-pnEHsUWFuNM",
+      "title": "Nicky Jam | Video Oficial",
+      "artist": "Piensas En Mi",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Piensas En Mi.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Nicky Jam | Video Oficial",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pnEHsUWFuNM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-VVPFfjYaTpw",
+      "title": "TRUSTFALL",
+      "artist": "Pink",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: TRUSTFALL",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VVPFfjYaTpw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-qs35t2xFqdU",
+      "title": "Another Brick in the Wall Official Music Video (Lyrics In Description)",
+      "artist": "Pink Floyd",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Pink Floyd.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Another Brick in the Wall Official Music Video (Lyrics In Description)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qs35t2xFqdU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "legends-pink-floyd-wish",
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Progressive Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Deep"
+      ],
+      "hints": [
+        "Eine Hommage an das Gründungsmitglied Syd Barrett, der die Band verlassen musste.",
+        "Der Song beginnt mit einem berühmten Radio-Effekt und einem akustischen Intro.",
+        "Handelt von Entfremdung und der Sehnsucht nach echter Verbindung.",
+        "Einer der am meisten geliebten Akustik-Gitarren-Songs der Rockgeschichte.",
+        "Refrain: 'How I [XXX], how I [XXX] you [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "So, so you think you can tell heaven from hell, blue skies from pain?",
+          "Can you tell a green field from a cold steel rail? A smile from a veil?",
+          "How I wish, how I wish you were here"
+        ],
+        "fake": [
+          "Staring at the wall, waiting for the fall of the silent rain",
+          "Can you see a purple sky? A rainbow that wants to cry?"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "89j-6xpdq4",
+        "spotify": "6mFkJmJqdDVQ1REhVfGgd1",
+        "amazonMusic": "B076ZZ9SSG"
+      },
+      "coverUrl": "/covers/legends-pink-floyd-wish.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends"
+      ]
+    },
+    {
+      "id": "yt-aYdRRUs85w8",
+      "title": "Boy's a liar Pt. 2",
+      "artist": "PinkPantheress & Ice Spice",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: Boy's a liar Pt. 2",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aYdRRUs85w8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-HMqgVXSvwGo",
+      "title": "Fireball  ft. John Ryan",
+      "artist": "Pitbull",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Pitbull.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Fireball  ft. John Ryan",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HMqgVXSvwGo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "dance-pitbull-everything",
+      "title": "Give Me Everything",
+      "artist": "Pitbull ft. Ne-Yo, Afrojack & Nayer",
+      "year": 2011,
+      "country": "US/NL",
+      "genre": "Dance-Pop / Electro House",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Party",
+        "Happy"
+      ],
+      "hints": [
+        "Inbegriff des 'Electronic Dance Pop' Booms der frühen 2010er.",
+        "Ne-Yos Hook kombiniert mit [XXX]s Rap-Parts.",
+        "Wurde zu einer der meistverkauften digitalen Singles aller Zeiten.",
+        "Ein absolutes Muss für jede Clubnacht jener Ära.",
+        "Refrain: 'Tonight I want all of you tonight, [XXX] me [XXX] tonight!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Me not working hard? Yeah, right! Picture that with a Kodak!",
+          "Tonight I want all of you tonight, give me everything tonight",
+          "For all we know we might not get tomorrow, let's do it tonight"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0x-FMquRkK0"
+      },
+      "coverUrl": "/covers/dance-pitbull-everything.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "indie-pixies-mind",
+      "title": "Where Is My Mind?",
+      "artist": "Pixies",
+      "year": 1988,
+      "country": "US",
+      "genre": "Indie Rock / Grunge",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Epic",
+        "Strange"
+      ],
+      "hints": [
+        "Wurde weltberühmt durch die Schlussszene des Films 'Fight Club'.",
+        "Sänger Black Francis schrieb den Song nach einem Tauchausflug in der Karibik.",
+        "Bekannt für das markante Gitarren-Riff und die geisterhaften Hintergrund-Gesänge von Kim Deal.",
+        "Thematisiert den Kontrollverlust und das Abgleiten in den Wahnsinn.",
+        "Refrain: '[XXX] is my [XXX] Way out in the water, see it swimming...'"
+      ],
+      "lyrics": {
+        "real": [
+          "With your feet in the air and your head on the ground, try this trick and spin it, yeah",
+          "Your head will collapse but there's nothing in it and you'll ask yourself",
+          "Where is my mind? Way out in the water, see it swimming"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "N3oCS85HvpY"
+      },
+      "coverUrl": "/covers/indie-pixies-mind.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-9FWgcBfs5A0",
+      "title": "Candy",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Candy",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9FWgcBfs5A0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-zt05FqPyvHA",
+      "title": "Choca",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Choca",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zt05FqPyvHA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-fsUP-KYPI98",
+      "title": "Es Un Secreto",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Es Un Secreto",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fsUP-KYPI98"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-QvypZSdjO8M",
+      "title": "Fanatica Sensual Official Video",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Fanatica Sensual Official Video",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QvypZSdjO8M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-SB8-YY2DyHI",
+      "title": "Mi Vecinita",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Mi Vecinita",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SB8-YY2DyHI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-adyZO3E63Gg",
+      "title": "Si No Le Contesto",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Si No Le Contesto",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=adyZO3E63Gg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-sJxxiY9xRXg",
+      "title": "Te Dijeron (La Formula)",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Plan B.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Te Dijeron (La Formula)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sJxxiY9xRXg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "hiphop-post-malone-rockstar",
+      "title": "Rockstar",
+      "artist": "Post Malone ft. 21 Savage",
+      "year": 2017,
+      "country": "US",
+      "genre": "Hip Hop / Trap",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Cool",
+        "Sad"
+      ],
+      "hints": [
+        "Verbindet Rap-Elemente mit einer rockigen Grundstimmung.",
+        "Thematisiert den exzessiven Lebensstil eines modernen [XXX]s.",
+        "[XXX] [XXX]s melodiöser Gesangsstil prägte hiermit ein ganzes Genre.",
+        "Ein globaler Megahit mit einem melancholischen Unterton.",
+        "Refrain: 'I've been fuckin' hoes and poppin' pillies!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've been fuckin' hoes and poppin' pillies, man, I feel just like a rockstar",
+          "All my brothers got that gas and they always be smokin' like a Rasta",
+          "Fuckin' with me, call up on a Uzi, baby, I'm a rockstar"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "UceaB4D0jpo"
+      },
+      "coverUrl": "/covers/hiphop-post-malone-rockstar.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-ApXoWvfEYVU",
+      "title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+      "artist": "Post Malone, Swae Lee",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von Post Malone, Swae Lee.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: Sunflower (Spider-Man: Into the Spider-Verse)",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ApXoWvfEYVU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-zdjo7uSNY3w",
+      "title": "1999 (7\" Stereo Edit) (2019 Remaster)",
+      "artist": "Prince",
+      "year": 1982,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Classic Pop.",
+        "Der Titel lautet: 1999 (7\" Stereo Edit) (2019 Remaster)",
+        "Playlist-Tag: 60s/70s Legends"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zdjo7uSNY3w"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "soul-prince-kiss",
+      "title": "Kiss",
+      "artist": "Prince",
+      "year": 1986,
+      "country": "US",
+      "genre": "Funk / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Sarcastic",
+        "Classic"
+      ],
+      "hints": [
+        "Besticht durch die absolute Reduktion (kein Basslauf!) und [XXX]s extremes Falsett.",
+        "Thematisiert Akzeptanz und Liebe ohne Oberflächlichkeit.",
+        "Einer seiner größten und zugleich ungewöhnlichsten Hits.",
+        "Refrain: 'You don't have to be beautiful, to turn me on!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You don't have to be beautiful to turn me on",
+          "I just need your body baby from dusk 'til dawn",
+          "You don't need experience to turn me out"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "H9tEvfIsDyo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-prince-kiss.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "prince-purple-rain-1984",
+      "title": "Purple Rain",
+      "artist": "Prince",
+      "year": 1984,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Emotional",
+        "Epic",
+        "Heartbreak",
+        "Power Ballad",
+        "Romantic",
+        "Spiritual"
+      ],
+      "hints": [
+        "Das Stück entstand als Live-Improvisation im First Avenue Club in Minneapolis – die Version im Film wurde wirklich live aufgezeichnet.",
+        "Das Stück dauert über acht Minuten; der Gitarrensolo am Ende ist einer der gefeiertsten der Rockgeschichte.",
+        "Titelsong des halbbiografischen Films von 1984; der Film gewann den Oscar für das Beste Originaldrehbuch.",
+        "Kraftvolle Rock-Ballade mit anschwellendem Gitarrensolo, feierlichen Synthesizern und einer emotional aufgeladenen Stimme.",
+        "[XXX] singt über Liebe, Schmerz und das Ende einer Beziehung – unter violettem Regen."
+      ],
+      "lyrics": {
+        "real": [
+          "I never meant to cause you any sorrow",
+          "I never meant to cause you any pain",
+          "I only wanted to one time to see you laughing"
+        ],
+        "fake": "I'm waiting for the sunrise in the morning mist"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TvnYmWpD_T8",
+        "spotify": "1uvyZBs4IZYRebHIB1747m",
+        "amazonMusic": "B002CB214I"
+      },
+      "coverUrl": "/covers/prince-purple-rain-1984.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s-pop",
+        "piano-ballads"
+      ]
+    },
+    {
+      "id": "yt-ZNN7NTl83cI",
+      "title": "Corazon Sin Cara (Official Video High Quality)",
+      "artist": "PRINCE ROYCE",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von PRINCE ROYCE.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Corazon Sin Cara (Official Video High Quality)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZNN7NTl83cI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-bdOXnTbyk0g",
+      "title": "Darte un Beso",
+      "artist": "Prince Royce",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Prince Royce.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Darte un Beso",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bdOXnTbyk0g"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-hpzT6Wq6pKY",
+      "title": "Incondicional (Official Video HD)",
+      "artist": "PRINCE ROYCE",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von PRINCE ROYCE.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Incondicional (Official Video HD)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hpzT6Wq6pKY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ROzZSmaxDz8",
+      "title": "Las Cosas Pequeñas (Official HD Video)",
+      "artist": "PRINCE ROYCE",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von PRINCE ROYCE.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Las Cosas Pequeñas (Official HD Video)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ROzZSmaxDz8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-aN8IiYilntE",
+      "title": "Nada",
+      "artist": "Prince Royce",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Prince Royce.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Nada",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aN8IiYilntE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ihQQSB-R18o",
+      "title": "Soy el Mismo",
+      "artist": "Prince Royce",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Prince Royce.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Soy el Mismo",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ihQQSB-R18o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-foyH-TEs9D0",
+      "title": "Stand By Me (Music Video)",
+      "artist": "Prince Royce",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Prince Royce.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Stand By Me (Music Video)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=foyH-TEs9D0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-yUAZxs3qY3Y",
+      "title": "Te Robaré",
+      "artist": "Prince Royce",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von Prince Royce.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: Te Robaré",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yUAZxs3qY3Y"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-eO12mAwhXHo",
+      "title": "Duel (Stephen Lipson's Digital Variation)",
+      "artist": "Propaganda",
+      "year": 1985,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Duel (Stephen Lipson's Digital Variation)",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eO12mAwhXHo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-bf9VrwsQsDQ",
+      "title": "Shadows",
+      "artist": "Protoculture",
+      "year": 2012,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Electronic.",
+        "Der Titel lautet: Shadows",
+        "Playlist-Tag: Dance Floor"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bf9VrwsQsDQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-9MOL0M8_TYU",
+      "title": "things change (D-PRYDE ARCHIVE)",
+      "artist": "pryde",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Song von pryde.",
+        "Gefunden im Genre Latin Pop.",
+        "Der Titel lautet: things change (D-PRYDE ARCHIVE)",
+        "Playlist-Tag: Latin Heat"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9MOL0M8_TYU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "psy-gangnam-style-2012",
+      "title": "Gangnam Style",
+      "artist": "PSY",
+      "year": 2012,
+      "country": "KR",
+      "genre": "K-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Party Anthem",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "[XXX] ist ein wohlhabender Bezirk in Seoul – vergleichbar mit Beverly Hills; PSY parodiert satirisch dessen Life[XXX].",
+        "Das Musikvideo war das erste YouTube-Video überhaupt, das die Marke von einer Milliarde Aufrufen knackte.",
+        "Erschienen 2012; führte den Begriff 'K-Pop' einem globalen Massenpublikum ein und veränderte die Musikindustrie.",
+        "Hyper-energetischer K-Pop mit einem unvermeidbaren Synthesizer-Hook und einem Tanz, der einen Reiter imitiert.",
+        "PSY tanzt im Pferdestil durch Seoul und singt über das extravagante Leben im [XXX]-Bezirk."
+      ],
+      "lyrics": {
+        "real": [
+          "Oppan Gangnam style",
+          "Eh- Sexy Lady, op, op, op, op, Oppan Gangnam style",
+          "A girl who is warm and humanly during the day"
+        ],
+        "fake": "Dancing in the city where the neon lights are bright"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "9bZkp7q19f0"
+      },
+      "coverUrl": "/covers/psy-gangnam-style-2012.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-cGc_NfiTxng",
+      "title": "GANGNAM STYLE [Original Video]",
+      "artist": "PSY",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Ein Song von PSY.",
+        "Gefunden im Genre All-Time.",
+        "Der Titel lautet: GANGNAM STYLE [Original Video]",
+        "Playlist-Tag: Legends & Classics"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cGc_NfiTxng"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-fqe_XtjYhcg",
+      "title": "Pretty In Pink",
+      "artist": "Psychedelic Furs",
+      "year": 1981,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre NDW.",
+        "Der Titel lautet: Pretty In Pink",
+        "Playlist-Tag: German New Wave"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fqe_XtjYhcg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "hiphop-public-enemy-fight-power",
+      "title": "Fight the Power",
+      "artist": "Public Enemy",
+      "year": 1989,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Powerful",
+        "Aggressive"
+      ],
+      "hints": [
+        "Wurde für den Film 'Do the Right Thing' von Spike Lee geschrieben.",
+        "Ein kraftvoller Protestsong gegen Rassismus und soziale Ungerechtigkeit.",
+        "Enthält eine Unmenge an Samples, die einen dichten, fast chaotischen Sound erzeugen.",
+        "Chuck D liefert die politischen Botschaften, Flavor Flav sorgt für den Hype.",
+        "Refrain: '[XXX] the [XXX]! We got to [XXX] the [XXX]s that be!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Elvis was a hero to most but he never meant shit to me you see",
+          "Straight up racist that sucker was simple and plain",
+          "Fight the power! We got to fight the powers that be!"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "links": {
+        "youtube": "mmo3HFa2vjg"
+      },
+      "coverUrl": "/covers/hiphop-public-enemy-fight-power.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-xQ4xM2XwWGY",
+      "title": "In The Dark",
+      "artist": "Purple Disco Machine",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein Song von Various Artists.",
+        "Gefunden im Genre Pop.",
+        "Der Titel lautet: In The Dark",
+        "Playlist-Tag: 80s Flashback"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xQ4xM2XwWGY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "class-tchaikovsky-swan",
+      "title": "Swan Lake (Theme)",
+      "artist": "Pyotr Ilyich Tchaikovsky",
+      "year": 1876,
+      "country": "RU",
+      "genre": "Romantic / Ballet",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Sad",
+        "Elegant"
+      ],
+      "hints": [
+        "Das berühmteste Ballett-Thema der Welt (Oboe spielt die Schwanenmelodie).",
+        "Thematisiert die tragische Geschichte der in einen Schwan verwandelten Prinzessin Odette.",
+        "Besticht durch die sehnsuchtsvolle, fast schwebende Melodie.",
+        "Ein Inbegriff für den russischen Spät-Romantik-Sound."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Ballet)",
+          "Haunting oboe melody",
+          "Swans on the lake"
+        ],
+        "fake": "Dancing on the water under the moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "9cNQFB0TDfY",
+        "spotify": "1TQ2UYCN7nhfj3cfcFC76V",
+        "amazonMusic": "B0DNG58SX3"
+      },
+      "coverUrl": "/covers/class-tchaikovsky-swan.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    }
+  ]
+}
