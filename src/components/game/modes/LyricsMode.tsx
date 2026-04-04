@@ -12,7 +12,6 @@
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore } from '@/stores/game-store';
 import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
@@ -62,12 +61,8 @@ function LyricsQuestion({
   onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
   onReveal: () => void;
 }) {
-  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [selected, setSelected] = useState<number | null>(null);
   const [isRevealing, setIsRevealing] = useState(false);
-  const [cheatActive, setCheatActive] = useState(false);
-
-  const currentPlayerId = turnOrder[currentTurnIndex];
 
   // 3 echte + 1 fake Zeile mischen — einmalig stabilisiert
   const options = useMemo(() => {
@@ -100,15 +95,32 @@ function LyricsQuestion({
     onReveal();
   }
 
-  function handleCheat() {
-    if (cheatActive || isRevealing || !currentPlayerId) return;
-    setCheatActive(true);
-    // Sofortiger Abzug von 2 Punkten für den Musik-Cheat
-    awardPoints(currentPlayerId, -2);
-  }
-
   return (
     <div className="flex flex-col px-4 py-6 gap-5 max-w-lg mx-auto">
+
+      {/* Modus-Banner */}
+      <div className="flex items-center justify-between bg-orange-500/10 border border-orange-500/20 rounded-2xl px-4 py-2.5">
+        <span className="text-[10px] font-black uppercase tracking-widest text-orange-400">📝 Lyrics Labyrinth</span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-orange-400/60">Einer von uns lügt</span>
+      </div>
+
+      {/* Musik — läuft sofort, blurred bis Reveal */}
+      <div className="w-full">
+        <MusicPlayer
+          songId={song.id}
+          songTitle={song.title}
+          songArtist={song.artist}
+          songPack={song.packs[0]}
+          youtubeLink={song.links.youtube}
+          youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
+          spotifyLink={song.links.spotify}
+          spotifyFreePreview={song.links.spotifyFreePreview}
+          amazonMusicLink={song.links.amazonMusic}
+          amazonPrimePreview={song.links.amazonPrimePreview}
+          startSeconds={song.previewTimestamp?.start ?? 0}
+          blurred={!isRevealing}
+        />
+      </div>
 
       {/* Artist-Hinweis */}
       <motion.div
@@ -122,42 +134,6 @@ function LyricsQuestion({
         <p className="text-sm opacity-60 mt-1 font-medium">
           Welche Zeile ist <span style={{ color: 'var(--color-error)' }}>NICHT echt</span>?
         </p>
-
-        {/* Cheat-Button */}
-        {!isRevealing && !cheatActive && !config.noCheatMode && (
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleCheat}
-            className="mt-4 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full border border-red-500/30 text-red-500/60 hover:text-red-500 hover:bg-red-500/10 transition-all mx-auto"
-          >
-            🔍 Musik hören (-2 Pkt)
-          </motion.button>
-        )}
-
-        {/* Cheat Player */}
-        {cheatActive && !isRevealing && (
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="w-full max-w-xs mx-auto mt-2"
-          >
-            <MusicPlayer 
-              songId={song.id}
-              songTitle={song.title}
-              songArtist={song.artist}
-              songPack={song.packs[0]}
-              youtubeLink={song.links.youtube}
-              youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
-              spotifyLink={song.links.spotify}
-              spotifyFreePreview={song.links.spotifyFreePreview}
-              amazonMusicLink={song.links.amazonMusic}
-              amazonPrimePreview={song.links.amazonPrimePreview}
-              startSeconds={song.previewTimestamp?.start ?? 0}
-              blurred={false}
-            />
-          </motion.div>
-        )}
       </motion.div>
 
       {/* Lyrics-Optionen */}
@@ -208,23 +184,6 @@ function LyricsQuestion({
              Bestätigen & Auflösen
            </button>
         </motion.div>
-      )}
-
-      {isRevealing && (
-        <div style={{ display: 'none' }}>
-           <MusicPlayer
-             songId={song.id}
-             songTitle={song.title}
-             songArtist={song.artist}
-             songPack={song.packs[0]}
-             youtubeLink={song.links.youtube}
-             youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
-             spotifyLink={song.links.spotify}
-             spotifyFreePreview={song.links.spotifyFreePreview}
-             amazonMusicLink={song.links.amazonMusic}
-             amazonPrimePreview={song.links.amazonPrimePreview}
-           />
-        </div>
       )}
 
       {isRevealing && (

@@ -10,7 +10,6 @@
 
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '@/stores/game-store';
 import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
@@ -37,27 +36,15 @@ interface VibeCheckModeProps {
 }
 
 export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
-  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
-  const [cheatActive, setCheatActive] = useState(false);
-
-  const currentPlayerId = turnOrder[currentTurnIndex];
 
   function handleSelect(mood: string) {
     if (answered) return;
     const isCorrect = song.mood.includes(mood);
     setSelected(mood);
     setAnswered(true);
-    // Vibe-Check: 2 Punkte Basis — Cheats wurden bereits abgezogen
     onAnswer(isCorrect, isCorrect ? 2 : 0);
-  }
-
-  function handleCheat() {
-    if (cheatActive || answered || !currentPlayerId) return;
-    setCheatActive(true);
-    // Sofortiger Abzug von 1 Punkt
-    awardPoints(currentPlayerId, -1);
   }
 
   // Sechs zufällige Stimmungen (inkl. mind. einer richtigen) — einmalig stabilisiert
@@ -72,6 +59,32 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
+
+      {/* Modus-Banner */}
+      <div className="w-full max-w-sm flex items-center justify-between bg-teal-500/10 border border-teal-500/20 rounded-2xl px-4 py-2.5">
+        <span className="text-[10px] font-black uppercase tracking-widest text-teal-400">😎 Vibe Check</span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-teal-400/60">Welche Stimmung?</span>
+      </div>
+
+      {/* Musik — läuft sofort, unverdeckt */}
+      {!answered && (
+        <div className="w-full max-w-sm mx-auto">
+          <MusicPlayer
+            songId={song.id}
+            songTitle={song.title}
+            songArtist={song.artist}
+            songPack={song.packs[0]}
+            youtubeLink={song.links.youtube}
+            youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
+            spotifyLink={song.links.spotify}
+            spotifyFreePreview={song.links.spotifyFreePreview}
+            amazonMusicLink={song.links.amazonMusic}
+            amazonPrimePreview={song.links.amazonPrimePreview}
+            startSeconds={song.previewTimestamp?.start ?? 0}
+            blurred={false}
+          />
+        </div>
+      )}
 
       {/* Artist-Info */}
       <motion.div
@@ -99,42 +112,6 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
       >
         Welche Stimmung passt zu diesem Song?
       </motion.p>
-
-      {/* Cheat-Button */}
-      {!answered && !cheatActive && !config.noCheatMode && (
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={handleCheat}
-          className="text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full border border-red-500/30 text-red-500/60 hover:text-red-500 hover:bg-red-500/10 transition-all"
-        >
-          🔍 Musik hören & sehen (-1 Punkt)
-        </motion.button>
-      )}
-
-      {/* Cheat Player */}
-      {cheatActive && !answered && (
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="w-full max-w-xs"
-        >
-          <MusicPlayer 
-            songId={song.id}
-            songTitle={song.title}
-            songArtist={song.artist}
-            songPack={song.packs[0]}
-            youtubeLink={song.links.youtube}
-            youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
-            spotifyLink={song.links.spotify}
-            spotifyFreePreview={song.links.spotifyFreePreview}
-            amazonMusicLink={song.links.amazonMusic}
-            amazonPrimePreview={song.links.amazonPrimePreview}
-            startSeconds={song.previewTimestamp?.start ?? 0}
-            blurred={false}
-          />
-        </motion.div>
-      )}
 
       {/* Stimmungs-Grid */}
       <motion.div

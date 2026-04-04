@@ -2,7 +2,7 @@
  * Hint-Master-Modus (Refined Phase 5)
  *
  * Zeigt bis zu 5 Hinweise.
- * Ab Hinweis 4 kann Musik abgespielt werden.
+ * Ab Hinweis 2 läuft Musik automatisch (blurred).
  * Kein Tippen mehr nötig — der Spieler klickt auf "Lösung" und entscheidet selbst.
  */
 'use client';
@@ -39,8 +39,8 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
   const handleNextHint = useCallback(() => {
     if (shownHints < maxHints) {
       setShownHints((n) => n + 1);
-      // Ab Hinweis 4 Musik erlauben (oder automatisch abspielen)
-      if (shownHints + 1 >= 4) setShowMusic(true);
+      // Ab Hinweis 2 läuft Musik automatisch (blurred bis Reveal)
+      if (shownHints + 1 >= 2) setShowMusic(true);
     }
   }, [shownHints, maxHints]);
 
@@ -172,8 +172,8 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               </button>
             )}
 
-            {/* Music Cheat Button (Only if music not already shown) */}
-            {!showMusic && shownHints < 4 && !config.noCheatMode && (
+            {/* Music Cheat Button (nur bei Level 1, bevor Musik automatisch startet) */}
+            {!showMusic && shownHints === 1 && !config.noCheatMode && (
               <button
                 onClick={handleCheat}
                 className="w-full py-2 rounded-xl border border-red-500/10 text-[9px] font-black uppercase tracking-[0.2em] opacity-30 hover:opacity-100 hover:bg-red-500/5 text-red-500 transition-all mb-1"

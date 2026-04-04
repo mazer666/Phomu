@@ -13,10 +13,9 @@
  */
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAllSongs } from '@/utils/song-picker';
-import { useGameStore } from '@/stores/game-store';
 import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
@@ -32,17 +31,12 @@ interface CoverConfusionModeProps {
 }
 
 export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionModeProps) {
-  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [hintsUsed, setHintsUsed] = useState(0);
   const [phase, setPhase] = useState<Phase>('listening');
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
-  const [cheatActive, setCheatActive] = useState(false);
-
-  const currentPlayerId = turnOrder[currentTurnIndex];
 
   // 50% chance for "Original or Cover" variation - stabilized in state
   const [variation] = useState(() => Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover');
-  const [isCoverGuess, setIsCoverGuess] = useState<boolean | null>(null);
 
   const points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)];
   const playLink = song.links.coverLink || song.links.youtube;
@@ -81,14 +75,6 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
     setPhase('done');
   }
 
-  function handleCheat() {
-    if (cheatActive || phase !== 'listening' || !currentPlayerId) return;
-    setPhase('self-assess');
-    setCheatActive(true);
-    // Sofortiger Abzug von 2 Punkten für den Musik-Cheat
-    awardPoints(currentPlayerId, -2);
-  }
-
   function handleChoiceVariation(guessCover: boolean) {
     const actuallyCover = !!song.links.coverLink;
     const correct = guessCover === actuallyCover;
@@ -100,30 +86,12 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
   return (
     <div className="flex flex-col px-4 py-6 gap-5 max-w-xl mx-auto pb-44">
 
-      {/* Header */}
-      <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/10">
-        <div>
-          <p className="text-[10px] font-black uppercase opacity-40">Cover Confusion 🎭</p>
-          <p className="text-sm font-bold opacity-60">Wer ist der Original-Interpret?</p>
-        </div>
-        <div className="text-right relative">
-          <p className="text-[10px] font-black uppercase opacity-40">Punkte möglich</p>
-          <p className="text-xl font-black text-[var(--color-accent)]">
-            {phase === 'done' ? (wasCorrect ? `+${points}` : '0') : `+${points}`}
-          </p>
-          {cheatActive && (
-            <span
-              className="absolute -top-1 -right-1 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none"
-              style={{
-                backgroundColor: '#ef4444',
-                transform: 'rotate(-5deg)',
-                boxShadow: '0 2px 10px rgba(239,68,68,0.7)',
-              }}
-            >
-              -2 PKT CHEAT
-            </span>
-          )}
-        </div>
+      {/* Modus-Banner mit Variante */}
+      <div className="w-full flex items-center justify-between bg-purple-500/10 border border-purple-500/20 rounded-2xl px-4 py-2.5">
+        <span className="text-[10px] font-black uppercase tracking-widest text-purple-400">🎭 Cover Confusion</span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-purple-400/80">
+          {variation === 'who-is-it' ? '👤 Wer ist das Original?' : '💿 Cover oder Original?'}
+        </span>
       </div>
 
       {/* Music Player — gebluurt bis Antwort gegeben (Swipe zum Enthüllen) */}
@@ -196,18 +164,6 @@ export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionM
                   : `Letzter Hinweis: 3 Künstler zur Wahl → ${POINTS_BY_HINTS[3]} Pkt`}
               </button>
 
-              {/* Music Cheat Button */}
-              {!config.noCheatMode && (
-                <motion.button
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 0.4 }}
-                  whileHover={{ opacity: 1, scale: 1.05 }}
-                  onClick={handleCheat}
-                  className="text-[10px] font-black uppercase tracking-widest border border-red-500/10 text-red-500 py-2 rounded-xl hover:bg-red-500/5 transition-all mt-2 w-full"
-                >
-                  🕵️ Musik-Cheat: Artist enthüllen (-2 Pkt)
-                </motion.button>
-              )}
             </>
           ) : (
             <div className="bg-white/5 p-6 rounded-[2rem] border border-white/10 text-center space-y-6">
