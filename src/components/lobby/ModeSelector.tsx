@@ -91,7 +91,7 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
         </div>
         <button
           onClick={() => onChange(allSelected ? [MODES[0]!.id] : MODES.map(m => m.id))}
-          className="text-[10px] font-black uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity border border-white/10 px-3 py-1.5 rounded-full hover:bg-white/5"
+          className="text-[10px] font-black uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity border border-white/10 px-4 py-2.5 rounded-full hover:bg-white/5 min-h-[44px]"
         >
           {allSelected ? 'Abwählen' : 'Alle wählen'}
         </button>

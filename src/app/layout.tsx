@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Providers from '@/components/Providers';
 import { ConditionalNavBar } from '@/components/ui/ConditionalNavBar';
 import './globals.css';
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
       { url: '/favicon.png', sizes: '180x180' },
     ],
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover', // Notch/Dynamic Island support
 };
 
 export default function RootLayout({

@@ -126,7 +126,7 @@ export function GameHeader({
 
   return (
     <header
-      className="flex flex-col sticky top-0 z-40 backdrop-blur-md"
+      className="flex flex-col sticky top-0 z-40 backdrop-blur-md pt-safe"
       style={{
         backgroundColor: 'rgba(0,0,0,0.7)',
         borderColor: 'var(--color-border)',
@@ -147,7 +147,7 @@ export function GameHeader({
         {/* Exit-Button */}
         <button
           onClick={handleExit}
-          className="text-lg opacity-40 hover:opacity-100 transition-opacity shrink-0 pr-1"
+          className="w-11 h-11 flex items-center justify-center rounded-xl opacity-60 hover:opacity-100 hover:bg-white/10 transition-all shrink-0"
           aria-label="Spiel verlassen"
           title="Zur Lobby"
         >

@@ -125,7 +125,7 @@ export default function LobbyPage() {
     <main className="max-w-2xl mx-auto px-4 md:px-8 overflow-x-hidden min-h-screen flex flex-col">
 
       {/* Header mit Progress — sticky so only content scrolls */}
-      <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-4 md:pt-6 pb-4 flex flex-col gap-3">
+      <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-safe pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black">🕹️ Lobby</h1>
           <div className="flex items-center gap-3">
@@ -281,7 +281,7 @@ export default function LobbyPage() {
                         <button
                           key={mode}
                           onClick={() => setConfig({ endingCondition: mode })}
-                          className={`py-3 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${config.endingCondition === mode ? 'bg-[var(--color-accent)] text-white shadow-lg' : 'opacity-40 hover:opacity-100'}`}
+                          className={`py-3.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${config.endingCondition === mode ? 'bg-[var(--color-accent)] text-white shadow-lg' : 'opacity-40 hover:opacity-100'}`}
                         >
                           {mode === 'points' ? '🏆 Punkte' : mode === 'rounds' ? '🔄 Runden' : '⏱️ Zeit'}
                         </button>
@@ -291,20 +291,20 @@ export default function LobbyPage() {
 
                   <div className="space-y-4">
                     {config.endingCondition === 'points' && (
-                      <div className="grid grid-cols-4 gap-2">
+                      <div className="grid grid-cols-2 xs:grid-cols-4 gap-2">
                         {[50, 100, 200, 500].map(v => (
                           <button key={v} onClick={() => setConfig({ targetPoints: v, winCondition: v })}
-                            className={`py-2 rounded-xl text-xs font-bold border transition-all ${config.targetPoints === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
+                            className={`py-3 rounded-xl text-sm font-bold border transition-all ${config.targetPoints === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
                             {v}
                           </button>
                         ))}
                       </div>
                     )}
                     {config.endingCondition === 'rounds' && (
-                      <div className="grid grid-cols-4 gap-2">
+                      <div className="grid grid-cols-2 xs:grid-cols-4 gap-2">
                         {[5, 10, 15, 20].map(v => (
                           <button key={v} onClick={() => setConfig({ targetRounds: v, roundsToPlay: v })}
-                            className={`py-2 rounded-xl text-xs font-bold border transition-all ${config.targetRounds === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
+                            className={`py-3 rounded-xl text-sm font-bold border transition-all ${config.targetRounds === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
                             {v}
                           </button>
                         ))}
@@ -314,7 +314,7 @@ export default function LobbyPage() {
                       <div className="grid grid-cols-4 gap-2">
                         {[30, 60, 90, 120, 150, 180, 210, 240].map(v => (
                           <button key={v} onClick={() => setConfig({ targetTimeMinutes: v })}
-                            className={`py-2 rounded-xl text-[10px] font-bold border transition-all ${config.targetTimeMinutes === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
+                            className={`py-3 rounded-xl text-xs font-bold border transition-all ${config.targetTimeMinutes === v ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 opacity-60'}`}>
                             {v < 60 ? `${v}m` : `${v / 60}h`}
                           </button>
                         ))}
@@ -717,21 +717,21 @@ export default function LobbyPage() {
               <button
                 onClick={() => goTo(step + 1)}
                 disabled={!canGoNext}
-                className="flex-[2] py-4 rounded-2xl bg-white/10 border border-white/10 font-black disabled:opacity-20 transition-all flex items-center justify-center gap-2"
+                className="flex-[2] py-4 rounded-2xl bg-white/10 border border-white/10 font-black disabled:opacity-30 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
               >
                 {canGoNext ? 'Weiter →' : 'Bitte wählen...'}
               </button>
             )}
           </div>
 
-          <div className="flex justify-between items-center px-2">
+          <div className="flex justify-between items-center px-1">
             {players.length > 0 && step === 1 && (
-              <button onClick={() => goTo(TOTAL_STEPS)} className="text-[10px] font-black uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-[var(--color-accent)] transition-all">
+              <button onClick={() => goTo(TOTAL_STEPS)} className="py-2 px-3 text-[10px] font-black uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-[var(--color-accent)] transition-all rounded-xl min-h-[36px]">
                 Schnell-Setup →
               </button>
             )}
-            <button onClick={() => { initSession(); goTo(1); }} className="text-[10px] font-black uppercase tracking-widest opacity-20 hover:opacity-100 hover:text-red-500 transition-all ml-auto">
-              Reset Lobby ↺
+            <button onClick={() => { initSession(); goTo(1); }} className="py-2 px-3 text-[10px] font-black uppercase tracking-widest opacity-30 hover:opacity-100 hover:text-red-500 transition-all ml-auto rounded-xl min-h-[36px]">
+              Reset ↺
             </button>
           </div>
         </div>

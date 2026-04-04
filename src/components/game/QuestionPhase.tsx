@@ -105,7 +105,7 @@ export function QuestionPhase({
       {onReroll && (
         <button
           onClick={onReroll}
-          className="mt-12 mb-8 px-4 py-2 rounded-lg border border-white/5 text-[10px] font-black uppercase tracking-widest text-white/20 hover:text-white/60 hover:bg-white/5 transition-all"
+          className="mt-12 mb-8 px-5 py-3 rounded-xl border border-white/10 text-[10px] font-black uppercase tracking-widest text-white/40 hover:text-white/80 hover:bg-white/5 hover:border-white/20 transition-all min-h-[44px]"
         >
           🎲 Video kaputt? Neu würfeln
         </button>
