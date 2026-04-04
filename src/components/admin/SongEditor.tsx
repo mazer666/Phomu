@@ -39,7 +39,7 @@ export function SongEditor({ song, onSave, onCancel, variant = 'modal' }: SongEd
   }
 
   function handleSave() {
-    const hasLyrics = lyricsReal0.trim() || lyricsReal1.trim() || lyricsReal2.trim() || lyricsFake.trim();
+    const hasLyrics = lyricsReal0.trim() || lyricsReal1.trim() || lyricsReal2.trim() || (typeof lyricsFake === 'string' ? lyricsFake.trim() : lyricsFake.length > 0);
     const lyrics = hasLyrics ? { real: [lyricsReal0, lyricsReal1, lyricsReal2] as [string, string, string], fake: lyricsFake } : null;
     const mood = moodInput.split(',').map((m) => m.trim()).filter(Boolean);
     const supportedModes = supportedModesInput.split(',').map((m) => m.trim()).filter(Boolean);
