@@ -28,6 +28,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
   const [showMusic, setShowMusic] = useState(false);
   const [done, setDone] = useState(false);
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
+  const [knewWhat, setKnewWhat] = useState<'both' | 'artist' | 'title' | 'none' | null>(null);
   const [cheatUsed, setCheatUsed] = useState(false);
 
   const currentPlayerId = turnOrder[currentTurnIndex];
@@ -43,13 +44,14 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
     }
   }, [shownHints, maxHints]);
 
-  const handleFinalDecision = (isCorrect: boolean) => {
+  const handleFinalDecision = (knew: 'both' | 'artist' | 'title' | 'none') => {
     if (done) return;
+    const isCorrect = knew !== 'none';
+    const awardedPoints = knew === 'both' ? points : knew === 'none' ? 0 : Math.ceil(points / 2);
     setWasCorrect(isCorrect);
+    setKnewWhat(knew);
     setDone(true);
-    
-    // HintMaster: Punkte für die aktuelle Ebene (Cheats wurden bereits abgezogen)
-    onAnswer(isCorrect, isCorrect ? points : 0);
+    onAnswer(isCorrect, awardedPoints);
   };
 
   const handleCheat = () => {
@@ -62,6 +64,16 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
 
   return (
     <div className="flex flex-col px-6 gap-6 pt-4 max-w-lg mx-auto min-h-[50vh]">
+
+      {/* Aufgaben-Anzeige */}
+      {!isRevealed && !done && (
+        <div className="text-center py-3 px-4 rounded-2xl bg-[var(--color-accent)]/5 border border-[var(--color-accent)]/20">
+          <p className="text-[9px] font-black uppercase tracking-[0.25em] opacity-40 mb-1">Gesucht wird</p>
+          <p className="text-base font-black uppercase tracking-wide">
+            🎵 Titel &amp; Künstler des Songs
+          </p>
+        </div>
+      )}
 
       {/* Header Info */}
       <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/10">
@@ -192,19 +204,39 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
             </div>
 
             <div className="space-y-3">
-              <p className="text-xs font-bold italic opacity-60">Hast du es gewusst?</p>
-              <div className="flex gap-4">
+              <p className="text-xs font-bold italic opacity-60">Was hast du gewusst?</p>
+              <div className="grid grid-cols-2 gap-3">
                 <button
-                  onClick={() => handleFinalDecision(true)}
-                  className="flex-1 py-4 bg-green-500 rounded-2xl font-black text-white shadow-lg shadow-green-500/20 active:scale-95 transition-all"
+                  onClick={() => handleFinalDecision('both')}
+                  className="py-4 px-3 bg-green-500 rounded-2xl font-black text-white text-xs shadow-lg shadow-green-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
                 >
-                  JA ✅
+                  <span className="text-lg">✅</span>
+                  <span>Beides</span>
+                  <span className="text-[10px] opacity-70">+{points} Pkt</span>
                 </button>
                 <button
-                  onClick={() => handleFinalDecision(false)}
-                  className="flex-1 py-4 bg-red-500 rounded-2xl font-black text-white shadow-lg shadow-red-500/20 active:scale-95 transition-all"
+                  onClick={() => handleFinalDecision('artist')}
+                  className="py-4 px-3 bg-yellow-500/80 rounded-2xl font-black text-white text-xs shadow-lg shadow-yellow-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
                 >
-                  NEIN ❌
+                  <span className="text-lg">👤</span>
+                  <span>Nur Künstler</span>
+                  <span className="text-[10px] opacity-70">+{Math.ceil(points / 2)} Pkt</span>
+                </button>
+                <button
+                  onClick={() => handleFinalDecision('title')}
+                  className="py-4 px-3 bg-yellow-500/80 rounded-2xl font-black text-white text-xs shadow-lg shadow-yellow-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
+                >
+                  <span className="text-lg">🎵</span>
+                  <span>Nur Titel</span>
+                  <span className="text-[10px] opacity-70">+{Math.ceil(points / 2)} Pkt</span>
+                </button>
+                <button
+                  onClick={() => handleFinalDecision('none')}
+                  className="py-4 px-3 bg-red-500 rounded-2xl font-black text-white text-xs shadow-lg shadow-red-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
+                >
+                  <span className="text-lg">❌</span>
+                  <span>Nichts</span>
+                  <span className="text-[10px] opacity-70">+0 Pkt</span>
                 </button>
               </div>
             </div>
@@ -229,13 +261,15 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               {getSpicyMessage(wasCorrect!, song.id)}
             </p>
             <p className="text-xs font-bold opacity-60">
-              {wasCorrect ? 'Gewusst! ✨' : 'Nicht gewusst 🌧️'}
+              {knewWhat === 'both' ? 'Alles gewusst! ✨' : knewWhat === 'artist' ? 'Künstler gewusst 👤' : knewWhat === 'title' ? 'Titel gewusst 🎵' : 'Nicht gewusst 🌧️'}
             </p>
             <p className="text-sm opacity-60">
               {song.title} &middot; {song.artist}
             </p>
-            {wasCorrect && (
-              <p className="text-xs font-black text-[var(--color-accent)]">+{points} Punkte</p>
+            {knewWhat !== 'none' && (
+              <p className="text-xs font-black text-[var(--color-accent)]">
+                +{knewWhat === 'both' ? points : Math.ceil(points / 2)} Punkte
+              </p>
             )}
           </motion.div>
         )}
