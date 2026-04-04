@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useGameStore } from '@/stores/game-store';
 import type { MusicProvider } from '@/config/game-config';
 
@@ -13,6 +13,8 @@ const PROVIDERS: Array<{ value: MusicProvider; label: string; note: string }> = 
 
 export default function SettingsAudioPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const fromLobby = searchParams.get('from') === 'lobby';
   const {
     preferredMusicProvider,
     setPreferredMusicProvider,
@@ -29,7 +31,13 @@ export default function SettingsAudioPage() {
 
   return (
     <main className="min-h-screen max-w-4xl mx-auto p-4 md:p-8 space-y-6">
-      <Header title="🔊 Audio & Provider" onBack={() => router.push('/settings')} gameIsActive={gameIsActive} onBackToGame={() => router.push('/game')} />
+      <Header
+        title="🔊 Audio & Provider"
+        onBack={() => router.push(fromLobby ? '/lobby' : '/settings')}
+        backLabel={fromLobby ? '← Zurück zur Lobby' : 'Zur Übersicht'}
+        gameIsActive={gameIsActive}
+        onBackToGame={() => router.push('/game')}
+      />
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-5 space-y-4">
         <p className="text-xs uppercase tracking-widest font-black opacity-60">Musik-Anbieter</p>
@@ -102,7 +110,7 @@ export default function SettingsAudioPage() {
   );
 }
 
-function Header({ title, onBack, gameIsActive, onBackToGame }: { title: string; onBack: () => void; gameIsActive?: boolean; onBackToGame?: () => void }) {
+function Header({ title, onBack, backLabel = 'Zur Übersicht', gameIsActive, onBackToGame }: { title: string; onBack: () => void; backLabel?: string; gameIsActive?: boolean; onBackToGame?: () => void }) {
   return (
     <header className="rounded-3xl border border-white/10 bg-white/5 p-5 flex items-center justify-between gap-3">
       <h1 className="text-2xl font-black">{title}</h1>
@@ -113,7 +121,7 @@ function Header({ title, onBack, gameIsActive, onBackToGame }: { title: string; 
           </button>
         )}
         <button onClick={onBack} className="px-4 py-2 rounded-xl border border-white/15 text-white text-sm font-black hover:bg-white/5">
-          Zur Übersicht
+          {backLabel}
         </button>
       </div>
     </header>

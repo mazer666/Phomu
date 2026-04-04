@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import { useGameStore } from '@/stores/game-store';
 
 interface InGameSettingsPanelProps {
@@ -47,6 +48,7 @@ export function InGameSettingsPanel({
   onLeaveParty,
   onOpenFullSettings,
 }: InGameSettingsPanelProps) {
+  const router = useRouter();
   const {
     preferredPlayer,
     setPreferredPlayer,
@@ -190,6 +192,12 @@ export function InGameSettingsPanel({
                 className="py-2.5 rounded-xl border border-white/15 text-xs font-black hover:bg-white/5"
               >
                 Erweiterte Settings
+              </button>
+              <button
+                onClick={() => { onClose(); router.push('/settings/game-rules'); }}
+                className="py-2.5 rounded-xl border border-white/15 text-xs font-black hover:bg-white/5 sm:col-span-3"
+              >
+                🎮 Modi &amp; Packs ändern
               </button>
               <button
                 onClick={onLeaveParty}

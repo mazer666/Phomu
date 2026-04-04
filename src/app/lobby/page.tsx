@@ -128,7 +128,16 @@ export default function LobbyPage() {
       <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black">🕹️ Lobby</h1>
-          <span className="text-sm font-bold opacity-30">Schritt {step} von {TOTAL_STEPS}</span>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => router.push('/settings/audio?from=lobby')}
+              className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-xs font-black opacity-50 hover:opacity-100 transition-all"
+              title="Audio & Provider"
+            >
+              🔊 Audio
+            </button>
+            <span className="text-sm font-bold opacity-30">Schritt {step} von {TOTAL_STEPS}</span>
+          </div>
         </div>
         <div className="h-2 bg-white/10 rounded-full overflow-hidden">
           <motion.div
