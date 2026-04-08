@@ -24,8 +24,7 @@
         "real": [
           "Can I kick it? (Yes you can!)",
           "Can I kick it? (Yes you can!)",
-          "Can I kick it? (Yes you can!)",
-          "Well, then I'm gone!"
+          "Can I kick it? (Yes you can!)"
         ],
         "fake": "Dancing in the light, feeling so right, all through the night"
       },
@@ -141,12 +140,7 @@
           "See that girl, watch that scene, digging the dancing queen",
           "Friday night and the lights are low, looking out for a place to go"
         ],
-        "fake": [
-          "Saturday lights and you are bright and flow, fading on a stair to show",
-          "Kiss the girl, stare into the lights, glowing, becoming the dancing queen",
-          "Loving you, missing you, driving fully insane",
-          "Like the wind, as you are, a shooting star"
-        ]
+        "fake": "Saturday lights and you are bright and flow, fading on a stair to show"
       },
       "isOneHitWonder": false,
       "links": {
@@ -376,7 +370,7 @@
       "title": "We Don't Talk About Bruno",
       "artist": "Adassa, Stephanie Beatriz, Mauro Castillo, Rhenzy Feliz, Carolina Gaitán, Diane Guerrero",
       "year": 2021,
-      "country": "US/CO",
+      "country": "US",
       "genre": "Soundtrack / Salsa / Pop",
       "difficulty": "hard",
       "mood": [
@@ -758,7 +752,7 @@
       "title": "Feels This Good",
       "artist": "Afrojack",
       "year": 2022,
-      "country": "INT",
+      "country": "NL",
       "genre": "Electronic",
       "difficulty": "medium",
       "mood": [
@@ -1082,7 +1076,7 @@
       "title": "Dark",
       "artist": "Alan Walker & tomine harket",
       "year": 2021,
-      "country": "INT",
+      "country": "NO",
       "genre": "Electronic",
       "difficulty": "medium",
       "mood": [
@@ -1165,7 +1159,7 @@
       "title": "Volverte a Amar (En Vivo)",
       "artist": "Alejandra Guzmán, Camila",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1200,7 +1194,7 @@
       "title": "Abrázame (Audio Oficial)",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1235,7 +1229,7 @@
       "title": "Como Quien Pierde Una Estrella",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1270,7 +1264,7 @@
       "title": "Hoy Tengo Ganas De Ti ft. Christina Aguilera",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1305,7 +1299,7 @@
       "title": "Me Dedique A Perderte",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1340,7 +1334,7 @@
       "title": "Me Hace Tanto Bien",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1375,7 +1369,7 @@
       "title": "Mátalas (En Vivo)[Un Azteca en el Azteca]",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1410,7 +1404,7 @@
       "title": "No Sé Olvidar",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1445,7 +1439,7 @@
       "title": "Que Voy A Hacer Con Mi Amor (En Vivo / Audio Oficial)",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1480,7 +1474,7 @@
       "title": "Se Me Va La Voz",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1515,7 +1509,7 @@
       "title": "Si Tü Supieras",
       "artist": "Alejandro Fernández",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1550,7 +1544,7 @@
       "title": "\"Amiga Mia\"",
       "artist": "Alejandro Sanz",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1585,7 +1579,7 @@
       "title": "A la primera persona (videoclip oficial)",
       "artist": "Alejandro Sanz",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1620,7 +1614,7 @@
       "title": "Corazon Partio [Latin Mix]",
       "artist": "Alejandro Sanz",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1655,7 +1649,7 @@
       "title": "No Me Compares",
       "artist": "Alejandro Sanz",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1690,7 +1684,7 @@
       "title": "Y ¿Si Fuera Ella? (videoclip oficial)",
       "artist": "Alejandro Sanz",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1773,7 +1767,7 @@
       "title": "Tumba La Casa Remix ft. Daddy, Nicky Jam, Arcangel, Ñengo Flow, Zion, Farruko, De la Ghetto",
       "artist": "ALEXIO",
       "year": 2016,
-      "country": "INT",
+      "country": "DO",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1808,7 +1802,7 @@
       "title": "Camuflaje (Audio)",
       "artist": "Alexis & Fido",
       "year": 2016,
-      "country": "INT",
+      "country": "CU",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -1960,11 +1954,7 @@
           "I never loved someone the way that I love you",
           "Oh, oh, I never felt this way"
         ],
-        "fake": [
-          "I am hitting the floor, because I am so much in love with you",
-          "I change the way I dress to impress",
-          "Ah, ah, I could fly another away"
-        ]
+        "fake": "I am hitting the floor, because I am so much in love with you"
       },
       "isOneHitWonder": false,
       "links": {
@@ -2087,7 +2077,7 @@
       "title": "Party On My Own (feat. FAULHABER)",
       "artist": "Alle Farben",
       "year": 2021,
-      "country": "INT",
+      "country": "DE",
       "genre": "Electronic",
       "difficulty": "medium",
       "mood": [
@@ -2122,7 +2112,7 @@
       "title": "Head Shoulders Knees & Toes (feat. Norma Jean Martine)",
       "artist": "Alle Farben & Janieck",
       "year": 2019,
-      "country": "INT",
+      "country": "DE",
       "genre": "Electronic",
       "difficulty": "medium",
       "mood": [
@@ -2157,7 +2147,7 @@
       "title": "Panda Remix (feat. Farruko, Daddy Yankee & Cosculluela) [Official Audio]",
       "artist": "Almighty",
       "year": 2016,
-      "country": "INT",
+      "country": "DO",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2279,7 +2269,7 @@
       "title": "El Mismo Sol",
       "artist": "Alvaro Soler",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2314,7 +2304,7 @@
       "title": "Audio",
       "artist": "Amiga, Maelo Ruiz",
       "year": 2016,
-      "country": "INT",
+      "country": "PR",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2497,7 +2487,7 @@
       "title": "Bandido",
       "artist": "Ana Bárbara",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2532,7 +2522,7 @@
       "title": "Lo Busque",
       "artist": "Ana Bárbara",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2663,7 +2653,7 @@
       "title": "Aeon Of Revenge (Original Mix)",
       "artist": "Andrew Rayel",
       "year": 2022,
-      "country": "INT",
+      "country": "MD",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [
@@ -2698,7 +2688,7 @@
       "title": "Serenity (Andrew Rayel Aether Remix)",
       "artist": "Andrew Rayel",
       "year": 2013,
-      "country": "INT",
+      "country": "MD",
       "genre": "Electronic",
       "difficulty": "medium",
       "mood": [
@@ -2733,7 +2723,7 @@
       "title": "Son De Amores",
       "artist": "Andy & Lucas",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2768,7 +2758,7 @@
       "title": "Tanto La Queria (Videoclip)",
       "artist": "Andy & Lucas",
       "year": 2016,
-      "country": "INT",
+      "country": "ES",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -2803,7 +2793,7 @@
       "title": "Trilogie, Pt. 2",
       "artist": "Angèle",
       "year": 2021,
-      "country": "INT",
+      "country": "BE",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [
@@ -2886,7 +2876,7 @@
       "title": "Sleeper In Metropolis",
       "artist": "Anne Clark",
       "year": 1985,
-      "country": "INT",
+      "country": "GB",
       "genre": "NDW",
       "difficulty": "medium",
       "mood": [
@@ -2921,7 +2911,7 @@
       "title": "ANOHNI: MARROW",
       "artist": "ANOHNI",
       "year": 2016,
-      "country": "INT",
+      "country": "GB",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [
@@ -2956,7 +2946,7 @@
       "title": "Un Poco Loco",
       "artist": "Anthony Gonzalez & Gael García Bernal",
       "year": 2017,
-      "country": "US/MX",
+      "country": "US",
       "genre": "Soundtrack / Mariachi",
       "difficulty": "medium",
       "mood": [
@@ -3052,7 +3042,7 @@
       "title": "Triste Recuerdo",
       "artist": "Antonio Aguilar",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3087,7 +3077,7 @@
       "title": "Un Puño De Tierra",
       "artist": "Antonio Aguilar",
       "year": 2016,
-      "country": "INT",
+      "country": "MX",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3170,7 +3160,7 @@
       "title": "Ayer ft. Dj Nelson",
       "artist": "Anuel",
       "year": 2016,
-      "country": "INT",
+      "country": "PR",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3205,7 +3195,7 @@
       "title": "Nacimos Pa Morir  ft. Jory",
       "artist": "Anuel",
       "year": 2016,
-      "country": "INT",
+      "country": "PR",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3240,7 +3230,7 @@
       "title": "Barbie Girl",
       "artist": "Aqua",
       "year": 1997,
-      "country": "INT",
+      "country": "DK",
       "genre": "Classic Pop",
       "difficulty": "medium",
       "mood": [
@@ -3502,7 +3492,7 @@
       "title": "50 Sombras de Austin",
       "artist": "Arcángel",
       "year": 2016,
-      "country": "INT",
+      "country": "PR",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3537,7 +3527,7 @@
       "title": "Hace Mucho Tiempo",
       "artist": "Arcángel",
       "year": 2016,
-      "country": "INT",
+      "country": "PR",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3572,7 +3562,7 @@
       "title": "Flow Cabrón",
       "artist": "Arcángel, Tali",
       "year": 2016,
-      "country": "INT",
+      "country": "PR",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3664,7 +3654,7 @@
       "title": "Into You",
       "artist": "Ariana Grande",
       "year": 2016,
-      "country": "INT",
+      "country": "US",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [
@@ -3699,7 +3689,7 @@
       "title": "no tears left to cry",
       "artist": "Ariana Grande",
       "year": 2018,
-      "country": "INT",
+      "country": "US",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [
@@ -3734,7 +3724,7 @@
       "title": "Side To Side ft. Nicki Minaj",
       "artist": "Ariana Grande",
       "year": 2016,
-      "country": "INT",
+      "country": "US",
       "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
@@ -3769,7 +3759,7 @@
       "title": "yes, and?",
       "artist": "Ariana Grande",
       "year": 2024,
-      "country": "INT",
+      "country": "US",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [

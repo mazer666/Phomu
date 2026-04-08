@@ -115,13 +115,13 @@ export function validateSong(song: unknown): SongValidationResult {
     errors.push(err(songId, 'artist', 'Pflichtfeld fehlt: artist muss ein nicht-leerer String sein'));
   }
 
-  // year: muss eine Zahl zwischen 1900 und aktuellem Jahr + 1 sein
+  // year: muss eine Zahl zwischen 1500 und aktuellem Jahr + 1 sein (1500 erlaubt Klassik/Barockmusik)
   if (typeof s['year'] !== 'number') {
     errors.push(err(songId, 'year', 'Pflichtfeld fehlt: year muss eine Zahl sein'));
   } else {
     const currentYear = new Date().getFullYear();
-    if (s['year'] < 1900 || s['year'] > currentYear + 1) {
-      errors.push(err(songId, 'year', `Ungültiges Jahr: ${s['year']} (erwartet: 1900–${currentYear + 1})`));
+    if (s['year'] < 1500 || s['year'] > currentYear + 1) {
+      errors.push(err(songId, 'year', `Ungültiges Jahr: ${s['year']} (erwartet: 1500–${currentYear + 1})`));
     }
   }
 
