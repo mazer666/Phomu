@@ -3,14 +3,14 @@
 Phomu ist ein Open-Source Partyspiel, das Musikquiz, Social-Gaming und physische QR-Karten kombiniert.
 Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (Lobby → Spiel → Game Over), 6 spielbaren Modi, mehreren Themes und einem großen Song-Katalog.
 
-## Produktstatus (Stand: 2. April 2026)
+## Produktstatus (Stand: 8. April 2026)
 - **Framework:** Next.js 16 + React 19 + TypeScript.
 - **State:** Zustand-Store mit Session-/Runden-/Scoring-Logik.
 - **Modi:** 6 aktiv im Game-Flow.
-- **Packs:** 27 Packs / 1.915 Songs im Katalog.
-- **Build / Typecheck / Tests:** grün.
+- **Packs:** 37 Packs / 1.629 Songs im Katalog (laut aktuellem Catalog-Report).
+- **Build / Typecheck / Tests:** Build + Typecheck + Unit-Tests + E2E-Smoke grün; Lint aktuell mit Errors.
 - **Admin-API-Security:** Bearer-Token-Guard (`x-admin-token` via `ADMIN_API_TOKEN`) + Input-/URL-Validierung für Cover-Endpoints.
-- **Bekannte Quality-Gaps:** viele Lint-Warnungen, Katalog-Duplikate, fehlende Jahresabdeckung 1952/2025/2026.
+- **Bekannte Quality-Gaps:** Lint-Errors, Song-Validierungsfehler in A1, hohe Schema-Warnungslast im Katalog.
 
 ---
 
@@ -51,7 +51,7 @@ Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (L
 
 ### Bereits aktiv
 - `npm run typecheck`
-- `npm run lint` (derzeit nur Warnungen, keine Errors)
+- `npm run lint` (aktuell nicht grün: Errors + Warnings vorhanden)
 - `npm run test`
 - `npm run test:e2e:install` (installiert Playwright Chromium)
 - `npm run test:e2e:install:linux` (installiert notwendige Linux-Systemlibs für Playwright)
@@ -70,7 +70,7 @@ Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (L
 ## Dokumentations-Index (aktualisiert)
 
 - **Komplettes Multi-Rollen-Audit:** `specifications/full_audit_2026-04-02.md`
-- **Projektstatus (Snapshot):** `specifications/current_status_2026-04-02.md`
+- **Projektstatus (Snapshot):** `specifications/current_status_2026-04-08.md`
 - **Roadmap + Arbeitspakete + Abnahmekriterien:** `specifications/project_roadmap.md`
 - **Teststrategie (QA-Update):** `specifications/test_strategy.md`
 - **Security-Policy (überarbeitet):** `SECURITY.md`

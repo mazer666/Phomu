@@ -17,3 +17,4 @@ Dieser Ordner enthält ältere, nicht mehr aktive Dokumentstände.
 - `current_status_2026-03-30.md`
 - `current_status_2026-03-31.md`
 - `current_status_2026-04-01.md`
+- `current_status_2026-04-02_archivstand_2026-04-08.md`

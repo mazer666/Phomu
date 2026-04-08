@@ -1,6 +1,18 @@
-# Phomu Roadmap 2026 (aktualisiert am 2. April 2026)
+# Phomu Roadmap 2026 (aktualisiert am 8. April 2026)
 
 Diese Roadmap ersetzt die ältere Fassung als operative Planungsgrundlage.
+
+---
+
+
+## Status-Update 08.04.2026 (operativer Fokus)
+
+- **Stabilitäts-Checks**: Build, Typecheck, Unit-Tests und E2E-Smoke sind aktuell grün.
+- **Quality-Bremsen**: Lint ist aktuell nicht grün (Errors in Privacy/Terms + Hook-Dependency-Warnung).
+- **Katalog-Gate**: Baseline wird weiterhin eingehalten (Schema-Fehler deutlich unter historischer Baseline), aber Warnungsmenge bleibt hoch.
+- **Song-Validation**: A1 enthält weiterhin harte Datenfehler (Country/ Lyrics/ Link-Format) und ist als kurzfristiger Sanierungsblock zu behandeln.
+
+**Roadmap-Entscheidung:** Bis zur nächsten Feature-Erweiterung gilt „Quality First“ (Lint + Datenqualität + Testtiefe) als priorisierte Leitlinie.
 
 ---
 

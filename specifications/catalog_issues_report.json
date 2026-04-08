@@ -1,12 +1,89 @@
 {
-  "generatedAt": "2026-04-02T16:14:20.431Z",
-  "packs": 27,
-  "songs": 1918,
-  "schemaErrors": 1236,
-  "schemaWarnings": 4639,
-  "duplicateGroups": 0,
-  "allowedDuplicateGroups": 173,
-  "ignoredSecondaryDuplicateGroups": 49,
+  "generatedAt": "2026-04-08T13:50:21.876Z",
+  "packs": 37,
+  "songs": 1629,
+  "schemaErrors": 1015,
+  "schemaWarnings": 4786,
+  "duplicateGroups": 4,
+  "allowedDuplicateGroups": 1,
+  "ignoredSecondaryDuplicateGroups": 0,
   "missingYears": [],
-  "topDuplicateGroups": []
+  "topDuplicateGroups": [
+    {
+      "key": "empire cast::mama jussie smollett::2016",
+      "songs": [
+        {
+          "id": "yt--6INQkOSo9w",
+          "artist": "Empire Cast",
+          "title": "Mama (Pseudo Video) ft. Jussie Smollett",
+          "year": 2016,
+          "packFile": "E.json"
+        },
+        {
+          "id": "yt-CYOtW11fUVo",
+          "artist": "Empire Cast",
+          "title": "Mama (Stripped Down Version) ft. Jussie Smollett",
+          "year": 2016,
+          "packFile": "E.json"
+        }
+      ]
+    },
+    {
+      "key": "gilberto santa rosa::conciencia::2016",
+      "songs": [
+        {
+          "id": "yt-7kbjKCj-rMQ",
+          "artist": "Gilberto Santa Rosa",
+          "title": "Conciencia",
+          "year": 2016,
+          "packFile": "G.json"
+        },
+        {
+          "id": "yt-SV2k9llA6FY",
+          "artist": "Gilberto Santa Rosa",
+          "title": "Conciencia (Live Version (Cover Audio))",
+          "year": 2016,
+          "packFile": "G.json"
+        }
+      ]
+    },
+    {
+      "key": "orchestral manoeuvres in the dark::enola gay::1980",
+      "songs": [
+        {
+          "id": "yt-n4mqwJ569_M",
+          "artist": "Orchestral Manoeuvres in the Dark",
+          "title": "Enola Gay (Remastered 2003)",
+          "year": 1980,
+          "packFile": "O.json"
+        },
+        {
+          "id": "synth-omd-enola",
+          "artist": "Orchestral Manoeuvres in the Dark (OMD)",
+          "title": "Enola Gay",
+          "year": 1980,
+          "packFile": "O.json"
+        }
+      ]
+    },
+    {
+      "key": "the chainsmokers halsey::closer::2016",
+      "songs": [
+        {
+          "id": "yt-r7zTKRonHXM",
+          "artist": "The Chainsmokers & Halsey",
+          "title": "Closer",
+          "year": 2016,
+          "packFile": "T1.json"
+        },
+        {
+          "id": "house-chain-closer",
+          "artist": "The Chainsmokers ft. Halsey",
+          "title": "Closer",
+          "year": 2016,
+          "packFile": "T1.json"
+        }
+      ]
+    }
+  ]
 }
