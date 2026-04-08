@@ -5,11 +5,14 @@
  * Punkte gibt es, wenn mindestens eine gewählte Stimmung in song.mood steht.
  * Alle 6 Stimmungs-Optionen werden angezeigt, damit kein Hinweis durch
  * eine reduzierte Liste entsteht.
+ *
+ * Cheat: Optionen halbieren (6 → 3), aber max. +1 Pkt statt +2 Pkt.
  */
 'use client';
 
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
 import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
@@ -36,26 +39,38 @@ interface VibeCheckModeProps {
 }
 
 export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
+  const { config } = useGameStore();
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
+  const [cheatUsed, setCheatUsed] = useState(false);
+
+  function handleCheat() {
+    if (cheatUsed || answered) return;
+    setCheatUsed(true);
+  }
 
   function handleSelect(mood: string) {
     if (answered) return;
     const isCorrect = song.mood.includes(mood);
     setSelected(mood);
     setAnswered(true);
-    onAnswer(isCorrect, isCorrect ? 2 : 0);
+    const points = isCorrect ? (cheatUsed ? 1 : 2) : 0;
+    onAnswer(isCorrect, points);
   }
 
-  // Sechs zufällige Stimmungen (inkl. mind. einer richtigen) — einmalig stabilisiert
-  const options = useMemo(() => {
+  // Vorab zwei Optionslisten berechnen — stabil für diesen Song
+  const { fullOptions, halfOptions } = useMemo(() => {
     const correctMood = song.mood[0];
     const wrong = ALL_MOODS.filter((m) => !song.mood.includes(m));
-    const shuffled = [...wrong].sort(() => Math.random() - 0.5).slice(0, 5);
-    return [...shuffled, correctMood].sort(() => Math.random() - 0.5);
+    const shuffledWrong = [...wrong].sort(() => Math.random() - 0.5);
+    const full = [...shuffledWrong.slice(0, 5), correctMood].sort(() => Math.random() - 0.5);
+    const half = [...shuffledWrong.slice(0, 2), correctMood].sort(() => Math.random() - 0.5);
+    return { fullOptions: full, halfOptions: half };
   // song.id ist stabil solange derselbe Song angezeigt wird
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [song.id]);
+
+  const options = cheatUsed ? halfOptions : fullOptions;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
@@ -94,7 +109,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
       >
         <div className="flex justify-center mb-3">
           <span className="px-3 py-1 rounded-full border border-[var(--color-accent)]/40 text-[10px] font-black uppercase tracking-widest text-[var(--color-accent)]">
-            +2 Pkt bei richtiger Stimmung
+            {cheatUsed ? '+1 Pkt bei richtiger Stimmung' : '+2 Pkt bei richtiger Stimmung'}
           </span>
         </div>
         <p className="text-xs uppercase tracking-widest opacity-50 mb-2">Song Info</p>
@@ -113,12 +128,39 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         Welche Stimmung passt zu diesem Song?
       </motion.p>
 
+      {/* Cheat-Button */}
+      <AnimatePresence>
+        {!answered && !config.noCheatMode && (
+          cheatUsed ? (
+            <motion.div
+              key="cheat-active"
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="w-full max-w-sm py-2 rounded-xl border border-yellow-500/30 bg-yellow-500/5 text-center text-[9px] font-black uppercase tracking-[0.2em] text-yellow-500/70"
+            >
+              ✂️ Optionen halbiert — max. +1 Pkt
+            </motion.div>
+          ) : (
+            <motion.button
+              key="cheat-btn"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.3 }}
+              whileHover={{ opacity: 1 }}
+              onClick={handleCheat}
+              className="w-full max-w-sm py-2 rounded-xl border border-yellow-500/20 text-[9px] font-black uppercase tracking-[0.2em] text-yellow-500 hover:bg-yellow-500/5 transition-all"
+            >
+              ✂️ Cheat: Optionen halbieren (nur +1 Pkt)
+            </motion.button>
+          )
+        )}
+      </AnimatePresence>
+
       {/* Stimmungs-Grid */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25 }}
-        className="grid grid-cols-2 sm:grid-cols-3 gap-2 w-full max-w-sm"
+        className={`grid gap-2 w-full max-w-sm ${cheatUsed ? 'grid-cols-3' : 'grid-cols-2 sm:grid-cols-3'}`}
       >
         {options.map((mood) => {
           const isSelected = selected === mood;
@@ -154,9 +196,9 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
               disabled={answered}
               animate={{ scale, opacity: (answered && !isCorrectMood && !isSelected) ? 0.3 : 1 }}
               className="py-4 px-2 rounded-2xl border text-sm font-black transition-colors disabled:cursor-default"
-              style={{ 
-                backgroundColor: bgColor, 
-                borderColor, 
+              style={{
+                backgroundColor: bgColor,
+                borderColor,
                 color: textColor,
                 boxShadow: shadow
               }}
@@ -192,8 +234,8 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
                 </motion.span>
               ))}
             </div>
-            
-            <p 
+
+            <p
               className="mt-6 text-xl font-black uppercase italic tracking-tighter"
               style={{ color: getSpicyColor(song.mood.includes(selected ?? ''), song.id) }}
             >
@@ -201,8 +243,8 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
             </p>
 
             <p className="mt-2 text-sm font-bold opacity-60">
-              {song.mood.includes(selected ?? '') 
-                ? '😎 Volltreffer! Dein Vibe-Check war spot-on.' 
+              {song.mood.includes(selected ?? '')
+                ? '😎 Volltreffer! Dein Vibe-Check war spot-on.'
                 : '🌑 Fast... Dein Gefühl war ein anderes.'}
             </p>
           </div>
