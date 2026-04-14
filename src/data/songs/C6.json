@@ -1,0 +1,524 @@
+{
+  "songs": [
+    {
+      "id": "yt-1a1WSYajmNY",
+      "title": "Players",
+      "artist": "Coi Leray",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1a1WSYajmNY",
+        "spotify": "6UN73IYd0hZxLi8wFPMQij",
+        "amazonMusic": "B0BN6WYD6D"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/coi-leray-players.jpg"
+    },
+    {
+      "id": "yt-KdSzq2DICz4",
+      "title": "Higher Power",
+      "artist": "Coldplay",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KdSzq2DICz4",
+        "spotify": "0939D7aT18uBDS2MTjWzct",
+        "amazonMusic": "B0933QRP18"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/coldplay-higher-power.jpg"
+    },
+    {
+      "id": "yt-dF4yuBOg44A",
+      "title": "Magic",
+      "artist": "Coldplay",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dF4yuBOg44A",
+        "spotify": "23khhseCLQqVMCIT1WMAns",
+        "amazonMusic": "B00NQH01S0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/coldplay-magic.jpg"
+    },
+    {
+      "id": "piano-coldplay-scientist",
+      "title": "The Scientist",
+      "artist": "Coldplay",
+      "year": 2002,
+      "country": "GB",
+      "genre": "Piano Rock / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Thematisiert den Wunsch, in einer Beziehung zum Anfang zurückzukehren.",
+        "Besticht durch den markanten, fast schon schlichten Klavier-Loop.",
+        "Das Musikvideo wurde rückwärts gedreht, Chris Martin musste den Text phonetisch rückwärts lernen.",
+        "Ein Inbegriff für den melancholischen [XXX]-Sound der frühen 2000er.",
+        "Refrain: 'Nobody said it was easy! No one ever said it would be this hard!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Come up to meet you, tell you I'm sorry, you don't know how lovely you are",
+          "I had to find you, tell you I need you, tell you I set you apart",
+          "Nobody said it was easy"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "RB-RcX5DS5A",
+        "spotify": "75JFxkI2RXiU7L9VXzMkle",
+        "amazonMusic": "B00KI46VN8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-coldplay-scientist.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-y4zdDXPYo0I",
+      "title": "Viva la Vida (Lyrics)",
+      "artist": "Coldplay",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=y4zdDXPYo0I",
+        "spotify": "3Fcfwhm8oRrBvBZ8KGhtea",
+        "amazonMusic": "B00KI46QEM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/coldplay-viva-la-vida--lyrics-.jpg"
+    },
+    {
+      "id": "coldplay-yellow-2000",
+      "title": "Yellow",
+      "artist": "Coldplay",
+      "year": 2000,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Heartbreak",
+        "Rainy Day",
+        "Road Trip",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Titel '[XXX]' entstand, weil ein Telefonbuch '[XXX] Pages' während einer Aufnahmepause im Studio herumlag.",
+        "Das Musikvideo wurde in einer einzigen Kameraeinstellung am Strand von Studland Bay in Dorset gedreht.",
+        "Erschienen 2000 auf dem Debütalbum 'Parachute'; der Durchbruch für [XXX] in Großbritannien.",
+        "Melancholischer britischer Indie-Rock mit einem Gitarren-Arpeggio-Intro und einem gefühlvollen, anschwellenden Refrain.",
+        "[XXX]-Sänger Chris Martin besingt die Sterne und eine Person, für die er alles tun würde – alles in Gelb."
+      ],
+      "lyrics": {
+        "real": [
+          "Look at the stars, look how they shine for you",
+          "And everything you do, yeah they were all yellow",
+          "I came along, I wrote a song for you"
+        ],
+        "fake": "The world is sleeping while we're walking home"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "yKNxeF4KMsY",
+        "spotify": "3AJwUDP919kvQ9QcozQPxg",
+        "amazonMusic": "B00KICEPHY"
+      },
+      "coverUrl": "/covers/coldplay-yellow-2000.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "yt-Mtckm-2lfQY",
+      "title": "A-Sides Session: Colony House “You & I” (9.30.16)",
+      "artist": "Colony House",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Mtckm-2lfQY",
+        "spotify": "7yhNr2wj7mZcpRG5K2Zgj6",
+        "amazonMusic": "B01HC8NE1Y"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/colony-house-a-sides-session--colony-house--you---i---9-30-16-.jpg"
+    },
+    {
+      "id": "country-colter-devil",
+      "title": "The Devil Wears a Suit and Tie",
+      "artist": "Colter Wall",
+      "year": 2015,
+      "country": "CA",
+      "genre": "Western / Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Deep",
+        "Dark"
+      ],
+      "hints": [
+        "Besticht durch [XXX] [XXX]s unglaublich tiefe, raue Baritonstimme.",
+        "Thematisiert okkulte Begegnungen und den Teufel in modernem Gewand.",
+        "Kombiniert archetypische Western-Themen mit minimalistischem Picking.",
+        "Ein Inbegriff für den düsteren 'Real Country' Revitalisierungstrend.",
+        "Refrain: 'But the [XXX] [XXX] a [XXX] and tie!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I met a man at the crossroads, he was looking for a soul to buy",
+          "Well the devil wears a suit and tie",
+          "He's better than you think he is"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "H3FZztHrCMM",
+        "spotify": "43UV5Uk0ntzH6MP8Rx1RKh",
+        "amazonMusic": "B0CFZKG87T"
+      },
+      "coverUrl": "/covers/country-colter-devil.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "movie-coolio-gangstas-paradise",
+      "title": "Gangsta's Paradise",
+      "artist": "Coolio",
+      "year": 1995,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Serious",
+        "Classic"
+      ],
+      "hints": [
+        "Aus dem Film 'Dangerous Minds' mit Michelle Pfeiffer.",
+        "Basiert auf einem Sample von Stevie Wonders 'Pastime [XXX]'.",
+        "Thematisiert das harte Leben in den Ghettos und die Hoffnungslosigkeit.",
+        "Das Video zeigt [XXX] im Dialog mit Michelle Pfeiffer.",
+        "Refrain: 'As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left.'"
+      ],
+      "lyrics": {
+        "real": [
+          "As I walk through the valley of the shadow of death, I take a look at my life and realize there's nothing left",
+          "Cause I've been blasting and laughing so long that even my mama thinks that my mind is gone",
+          "Tell me why are we so blind to see that the ones we hurt are you and me?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SQCSxqScSVQ",
+        "spotify": "1JE59uUu6v4XFrY9zSreZ8",
+        "amazonMusic": "B0767PFPRC"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-coolio-gangstas-paradise.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "dance-corona-rhythm-of-the-night",
+      "title": "The Rhythm of the Night",
+      "artist": "Corona",
+      "year": 1993,
+      "country": "IT",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Dance",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Klassiker des italienischen Eurodance-Booms.",
+        "Die Sängerin im Video (Olga de Souza) lieh nur ihr Gesicht, die Stimme stammte von Jenny B.",
+        "Wurde oft missverstanden als 'This is the Reebok or the Nike'.",
+        "Refrain: 'This is the [XXX] of the [XXX], the [XXX], oh yeah.'",
+        "Erreichte Jahre später durch den Film 'The Last Workshop' und Memes erneut Popularität."
+      ],
+      "lyrics": {
+        "real": [
+          "This is the rhythm of the night, the night, oh yeah",
+          "The rhythm of the night, this is the rhythm of my life",
+          "My life, oh yeah, the rhythm of the night"
+        ],
+        "fake": "Dancing to the beat, moving my feet, in the summer heat"
+      },
+      "links": {
+        "youtube": "OnT58cIJSpw",
+        "spotify": "5UCPOJs8VJARoIX6acKRuJ",
+        "amazonMusic": "B0FD484FCZ"
+      },
+      "coverUrl": "/covers/dance-corona-rhythm-of-the-night.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-QfL8QksXOT4",
+      "title": "BLACK OPS",
+      "artist": "Cosculluela",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QfL8QksXOT4",
+        "spotify": "4XMBx2vCJId16XGTdc5ZtO",
+        "amazonMusic": "B0BB12CG9Z"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cosculluela-black-ops.jpg"
+    },
+    {
+      "id": "yt-oiGCL2Ld534",
+      "title": "La Boda",
+      "artist": "Cosculluela",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oiGCL2Ld534"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cosculluela-la-boda.jpg"
+    },
+    {
+      "id": "yt-sosF0xP57HE",
+      "title": "Manicomio",
+      "artist": "Cosculluela",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sosF0xP57HE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cosculluela-manicomio.jpg"
+    }
+  ]
+}

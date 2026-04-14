@@ -28,7 +28,14 @@ import B6 from './B6.json';
 import B7 from './B7.json';
 import B8 from './B8.json';
 import B9 from './B9.json';
-import C from './C.json';
+import C1 from './C1.json';
+import C2 from './C2.json';
+import C3 from './C3.json';
+import C4 from './C4.json';
+import C5 from './C5.json';
+import C6 from './C6.json';
+import C7 from './C7.json';
+import C8 from './C8.json';
 import D1 from './D1.json';
 import D2 from './D2.json';
 import D3 from './D3.json';
@@ -166,7 +173,14 @@ export const ALL_SONGS: PhomuSong[] = [
   ...( B7.songs as PhomuSong[] ),
   ...( B8.songs as PhomuSong[] ),
   ...( B9.songs as PhomuSong[] ),
-  ...( C.songs as PhomuSong[] ),
+  ...( C1.songs as PhomuSong[] ),
+  ...( C2.songs as PhomuSong[] ),
+  ...( C3.songs as PhomuSong[] ),
+  ...( C4.songs as PhomuSong[] ),
+  ...( C5.songs as PhomuSong[] ),
+  ...( C6.songs as PhomuSong[] ),
+  ...( C7.songs as PhomuSong[] ),
+  ...( C8.songs as PhomuSong[] ),
   ...( D1.songs as PhomuSong[] ),
   ...( D2.songs as PhomuSong[] ),
   ...( D3.songs as PhomuSong[] ),

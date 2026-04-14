@@ -1,0 +1,539 @@
+{
+  "songs": [
+    {
+      "id": "country-stapleton-whiskey",
+      "title": "Tennessee Whiskey",
+      "artist": "Chris Stapleton",
+      "year": 2015,
+      "country": "US",
+      "genre": "Country / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Powerful"
+      ],
+      "hints": [
+        "Eine Coverversion des David Allan Coe/George Jones Klassikers mit Soul-Einschlag.",
+        "[XXX] [XXX]s gewaltige Stimme und das reduzierte Blues-Riff sind ikonisch.",
+        "Thematisiert die heilende und berauschende Kraft einer neuen Liebe.",
+        "Wurde zu einem der meistgespielten modernen Country-Songs.",
+        "Refrain: 'You're as smooth as [XXX] [XXX]! You're as sweet as strawberry wine!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I used to spend my nights out in a barroom, liquor was the only love I'd known",
+          "You're as smooth as Tennessee whiskey",
+          "You're as sweet as strawberry wine"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4zAThXFOy2c",
+        "spotify": "3u9Cps3pU7Z8D2H4aU6m2u",
+        "amazonMusic": "B0182E93HM"
+      },
+      "coverUrl": "/covers/country-stapleton-whiskey.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "piano-xtina-beautiful",
+      "title": "Beautiful",
+      "artist": "Christina Aguilera",
+      "year": 2002,
+      "country": "US",
+      "genre": "Pop / Power Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Positive",
+        "Confident",
+        "Emotional"
+      ],
+      "hints": [
+        "Inbegriff für Empowerment-Songs und Selbstakzeptanz.",
+        "Geschrieben von Linda Perry; besticht durch Xtinas beeindruckende Stimmkontrolle.",
+        "Thematisiert innere Schönheit gegen Kritik von außen.",
+        "Wurde zu einer Hymne für die LGBTQ+ Community.",
+        "Refrain: 'I am [XXX]! No matter what they say!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Don't look at me!",
+          "Every day is so wonderful, then suddenly it's hard to breathe",
+          "I am beautiful, no matter what they say"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eAfyFTzZDMM",
+        "spotify": "2goLsvvODILDzeeiT4dAoR",
+        "amazonMusic": "B001SLZS2K"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-xtina-beautiful.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-Frw7U5X8dhg",
+      "title": "Let's Twist Again",
+      "artist": "Chubby Checker",
+      "year": 1961,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Frw7U5X8dhg",
+        "spotify": "0ZUo4YjG4saFnEJhdWp9Bt",
+        "amazonMusic": "B0032S87X2"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/chubby-checker-let-s-twist-again.jpg"
+    },
+    {
+      "id": "yt--CCgDvUM4TM",
+      "title": "The Twist",
+      "artist": "Chubby Checker",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-CCgDvUM4TM",
+        "spotify": "1jEBSDN5vYViJQr78W7jr2",
+        "amazonMusic": "B09QHBB9D3"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/chubby-checker-the-twist.jpg"
+    },
+    {
+      "id": "chuck-berry-johnny-b-goode-1958",
+      "title": "Johnny B. Goode",
+      "artist": "Chuck Berry",
+      "year": 1958,
+      "country": "US",
+      "genre": "Rock'n'Roll",
+      "difficulty": "medium",
+      "mood": [
+        "Road Trip",
+        "Nostalgic",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Das Eröffnungs-Gitarrenriff gilt als eines der einflussreichsten aller Zeiten und war [XXX]s Hommage an seinen Mentor Carl Hogan.",
+        "Dieser Song ist einer der wenigen Rock'n'Roll-Titel auf der Voyager Golden Record, die 1977 ins All geschickt wurde.",
+        "Erschienen 1958 auf Chess Records; die Hauptfigur basiert lose auf [XXX] [XXX] selbst.",
+        "Mitreißendes Gitarrenintro, das direkt in einen treibenden 12-Takt-Blues übergeht.",
+        "[XXX] [XXX] singt über einen Jungen aus Louisiana namens [XXX], der ein großer Rock'n'Roll-Star werden soll."
+      ],
+      "lyrics": {
+        "real": [
+          "Deep down in Louisiana close to New Orleans",
+          "Way back up in the woods among the evergreens",
+          "There stood a log cabin made of earth and wood"
+        ],
+        "fake": "He played a silver guitar under the morning sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y-9Y4CCIWnM",
+        "spotify": "2goLsvvODILDzeeiT4dAoR",
+        "amazonMusic": "B08LBZ83PW"
+      },
+      "coverUrl": "/covers/chuck-berry-johnny-b-goode-1958.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "catalog-coverage-ciara-ecstasy-2025",
+      "title": "Ecstasy",
+      "artist": "Ciara",
+      "year": 2025,
+      "country": "US",
+      "genre": "R&B",
+      "difficulty": "hard",
+      "mood": [
+        "Modern Hits",
+        "Dance Floor",
+        "Energetic"
+      ],
+      "hints": [
+        "R&B-Single aus 2025 und Lead-Track eines Studioalbums mit dem Titel \"CiCi\".",
+        "Das Musikvideo erschien am selben Tag wie die Single und wurde von Diane Martel inszeniert.",
+        "Später erschien eine Remix-Version mit Normani und Teyana Taylor.",
+        "Sinnlicher Midtempo-Groove mit klarer Club-Ästhetik und moderner R&B-Produktion.",
+        "Der Titel beschreibt einen intensiven Gefühlszustand – derselbe wie im Songnamen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "rKMM14qvkwg",
+        "spotify": "5YJtMNWKe55yr49cyJgxva",
+        "amazonMusic": "B0D5B5B5B5"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "survivor"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/ciara-ecstasy.jpg"
+    },
+    {
+      "id": "yt-9alAlD059hc",
+      "title": "Whatever",
+      "artist": "Cid & ANOTR",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9alAlD059hc",
+        "spotify": "2U3HjK8jAdYJ0rzycQljr5",
+        "amazonMusic": "B07ZMHGPHW"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "class-debussy-lune",
+      "title": "Clair de Lune",
+      "artist": "Claude Debussy",
+      "year": 1905,
+      "country": "FR",
+      "genre": "Impressionism / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Peaceful",
+        "Dreamy",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Song mit charakteristischen Impressionism -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Soft moonlight over the water",
+          "Gentle piano chords"
+        ],
+        "fake": "Watching the moon in the middle of the night tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-Bxpm0EmOMU",
+        "spotify": "6kf7ZCJjEbjZXikivKOsvJ",
+        "amazonMusic": "B002G71OV4"
+      },
+      "coverUrl": "/covers/class-debussy-lune.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-dHdMAdh4Xgc",
+      "title": "Rather Be (feat. Jess Glynne)",
+      "artist": "Clean Bandit",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dHdMAdh4Xgc",
+        "spotify": "0ZUo4YjG4saFnEJhdWp9Bt",
+        "amazonMusic": "B00HBWTV7K"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/clean-bandit-rather-be--feat--jess-glynne-.jpg"
+    },
+    {
+      "id": "yt-papuvlVeZg8",
+      "title": "Rockabye (feat. Sean Paul & Anne-Marie)",
+      "artist": "Clean Bandit",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=papuvlVeZg8",
+        "spotify": "5YJtMNWKe55yr49cyJgxva",
+        "amazonMusic": "B01M3N7H9I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/clean-bandit-rockabye--feat--sean-paul---anne-marie-.jpg"
+    },
+    {
+      "id": "yt-GvdKeZO8IzM",
+      "title": "Solo (feat. Demi Lovato)",
+      "artist": "Clean Bandit",
+      "year": 2018,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GvdKeZO8IzM",
+        "spotify": "2U3HjK8jAdYJ0rzycQljr5",
+        "amazonMusic": "B07D9B9B9B"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/clean-bandit-solo--feat--demi-lovato-.jpg"
+    },
+    {
+      "id": "disney-pinocchio-wish",
+      "title": "When You Wish Upon a Star",
+      "artist": "Cliff Edwards",
+      "year": 1940,
+      "country": "US",
+      "genre": "Soundtrack / Classical / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Dreamy",
+        "Iconic",
+        "Classic"
+      ],
+      "hints": [
+        "Wurde zur inoffiziellen Hymne des gesamten Disney-Konzerns.",
+        "Gesungen von Jiminy Cricket (Grille) in 'Pinocchio'.",
+        "Thematisiert Hoffnung, Träume und Magie.",
+        "Der Anfang des Songs wird oft vor Disney-Filmen gespielt.",
+        "Refrain: '[XXX] you [XXX] [XXX] a [XXX]! Makes no difference who you are!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When you wish upon a star, makes no difference who you are",
+          "Anything your heart desires, will come to you",
+          "If your heart is in your dream, no request is too extreme"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "oTot6Kr2Q6s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-pinocchio-wish.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "score-clint-aeterna",
+      "title": "Lux Aeterna (Requiem for a Dream)",
+      "artist": "Clint Mansell",
+      "year": 2000,
+      "country": "GB",
+      "genre": "Modern Classical / Movie Theme",
+      "difficulty": "medium",
+      "mood": [
+        "Tense",
+        "Epic",
+        "Powerful"
+      ],
+      "hints": [
+        "Song mit charakteristischen Modern Classical -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Urgent repetitive strings",
+          "Tension and release"
+        ],
+        "fake": "Running from the shadows in the middle of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "aOHmfq2AUaU",
+        "spotify": "62Da3JOu9H9EIgmqV7DoLG",
+        "amazonMusic": "B002LMSPMA"
+      },
+      "coverUrl": "/covers/score-clint-aeterna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    }
+  ]
+}

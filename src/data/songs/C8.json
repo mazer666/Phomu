@@ -1,0 +1,337 @@
+{
+  "songs": [
+    {
+      "id": "dance-culture-beat-mr-vain",
+      "title": "Mr. Vain",
+      "artist": "Culture Beat",
+      "year": 1993,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Fast",
+        "Energy",
+        "Dance"
+      ],
+      "hints": [
+        "Produziert vom Frankfurter DJ Torsten Fenslau.",
+        "Thematisiert Eitelkeit und Selbstverliebtheit auf der Tanzfläche.",
+        "Der Song hat ein sehr schnelles Tempo und einen treibenden Bass.",
+        "War 1993 die erfolgreichste Single in Europa.",
+        "Refrain: 'Call him Mr. [XXX], call him Mr. Wrong, call him Mr. Insane!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Call him Mr. Vain, call him Mr. Wrong, call him Mr. Insane",
+          "I know what I want and I want it now, I want you cause I'm Mr. Vain",
+          "He'd say: I know what I want and I want it now!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm the king of the night somehow"
+      },
+      "links": {
+        "youtube": "ZMtf_ouMTHw",
+        "spotify": "2rTYgHxgcndkUrRoU7x0Sv",
+        "amazonMusic": "B001SCV8RE"
+      },
+      "coverUrl": "/covers/dance-culture-beat-mr-vain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "80s-culture-chameleon",
+      "title": "Karma Chameleon",
+      "artist": "Culture Club",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Pop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff der farbenfrohen und androgynen Ära von Boy George.",
+        "Besitzt ein markantes Mundharmonika-Solo.",
+        "Handelt von Identität, Verstellung und Liebe.",
+        "War ein globaler Nummer-Eins-Hit.",
+        "Refrain: '[XXX] [XXX] [XXX] [XXX] [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Desert loving in your eyes all the way, if I listen to your lies would you say",
+          "Karma, karma, karma, karma, karma chameleon",
+          "You come and go, you come and go"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JmcA9LIIXWw",
+        "spotify": "3XDeeP9wBZzGhIPZmLfEEx",
+        "amazonMusic": "B001QNVLR6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-culture-chameleon.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "soul-curtis-move",
+      "title": "Move On Up",
+      "artist": "Curtis Mayfield",
+      "year": 1970,
+      "country": "US",
+      "genre": "Soul / Funk / Cinematic",
+      "difficulty": "medium",
+      "mood": [
+        "Positive",
+        "Energy",
+        "Powerful"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soul -Elementen.",
+        "Thematisiert Tanzen und Bewegung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Hush now child, and don't you cry, your folks might understand you by and by",
+          "Move on up, toward your destination",
+          "You may find from time to time, complication"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6Z66",
+        "spotify": "0MHXrqn909p0LRTPsNsGEi",
+        "amazonMusic": "B000X9QY1A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-curtis-move.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "cyndi-lauper-girls-just-want-1983",
+      "title": "Girls Just Want to Have Fun",
+      "artist": "Cyndi Lauper",
+      "year": 1983,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Nostalgic",
+        "Party",
+        "Party Anthem",
+        "Popular",
+        "Upbeat"
+      ],
+      "hints": [
+        "Das Original dieses Liedes war ein Rocksong, der 1979 von Robert Hazard aus einer männlichen Perspektive geschrieben wurde.",
+        "Das Musikvideo gehörte zu den ersten, die auf MTV massiv rotierten und half, den Sender zu etablieren.",
+        "Erschienen 1983 auf [XXX]s Debütalbum 'She's So Unusual'; lief über 40 Wochen in den Billboard Hot 100.",
+        "Bubblegum-Synthie-Pop der 80er mit einer gespielten, nasalen Stimme und einem Refrain, der zur Mädchen-Hymne wurde.",
+        "[XXX] [XXX] singt, dass Mädchen am Ende des Tages einfach nur Spaß haben wollen."
+      ],
+      "lyrics": {
+        "real": [
+          "I come home in the morning light",
+          "My mother says when you gonna live your life right?",
+          "Oh girls, they wanna have fun"
+        ],
+        "fake": "Dancing through the hallway until the sun goes down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "PIb6AZdTr-A",
+        "spotify": "4y69R83J37wz9J9C7AnAnz",
+        "amazonMusic": "B00138CWCY"
+      },
+      "coverUrl": "/covers/cyndi-lauper-girls-just-want-1983.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s-pop",
+        "youtube-import",
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt-7wBgcalM4c4",
+      "title": "Time After Time",
+      "artist": "Cyndi Lauper",
+      "year": 1983,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7wBgcalM4c4",
+        "spotify": "7o9uu2GDtVDr9nsR7ZRN73",
+        "amazonMusic": "B00138F92M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cyndi-lauper-time-after-time.jpg"
+    },
+    {
+      "id": "hiphop-cypress-insane",
+      "title": "Insane in the Brain",
+      "artist": "Cypress Hill",
+      "year": 1993,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Fast",
+        "Crazy"
+      ],
+      "hints": [
+        "Bekannt für die nasale Stimme von B-Real und die markanten Samples.",
+        "Der Song wurde oft als Hymne für den Cannabiskonsum interpretiert, handelt aber eigentlich von Respekt in der Gangsta-Szene.",
+        "Das charakteristische 'Wiehern' am Anfang ist weltbekannt.",
+        "Ein Klassiker der Latino-Hip-Hop-Szene aus LA.",
+        "Refrain: '[XXX] in the [XXX]! [XXX] in the membrane!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Who you tryin' to get crazy with, ése? Don't you know I'm loco?",
+          "Insane in the brain! Insane in the membrane!",
+          "Think I'm going crazy? No, I'm just getting started"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the broken soul"
+      },
+      "links": {
+        "youtube": "RijB8wnJCN0",
+        "spotify": "1oTHtemSpxp7XSTfyXv98p",
+        "amazonMusic": "B0894ZCFWR"
+      },
+      "coverUrl": "/covers/hiphop-cypress-insane.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "disney-beauty-beast",
+      "title": "Beauty and the Beast",
+      "artist": "Céline Dion & Peabo Bryson",
+      "year": 1991,
+      "country": "CA/US",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Classic"
+      ],
+      "hints": [
+        "Titelsong aus 'Die Schöne und das Biest'.",
+        "Thematisiert die Entdeckung innerer Werte und die Überwindung von Urteilen.",
+        "[XXX] [XXX]s großer internationaler Durchbruch.",
+        "Ein zeitloses Märchen-Duett.",
+        "Refrain: 'Tale as old as time! Song as old as rhyme! [XXX] and the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Tale as old as time, true as it can be",
+          "Beauty and the beast, just a little change, small to say the least",
+          "Both a little scared, neither one prepared, beauty and the beast"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ippaCca4L6A",
+        "spotify": "7B3UAPLYAbwXVgbHSKEaTw",
+        "amazonMusic": "B00GZ0T7W0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-beauty-beast.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    }
+  ]
+}

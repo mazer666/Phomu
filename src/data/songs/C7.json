@@ -1,0 +1,511 @@
+{
+  "songs": [
+    {
+      "id": "yt-iwgu9WISwXI",
+      "title": "A Donde Voy (Letra Oficial)",
+      "artist": "Cosculluela ft. Daddy Yankee",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iwgu9WISwXI",
+        "spotify": "7vL2aPZzHh0GAt9Y7L2Xrk",
+        "amazonMusic": "B01G5A9A9A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cosculluela-ft--daddy-yankee-a-donde-voy--letra-oficial-.jpg"
+    },
+    {
+      "id": "yt-Gd_tCTtJhSE",
+      "title": "Te Busco (Audio Oficial) [2016]",
+      "artist": "Cosculluela, Nicky Jam",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gd_tCTtJhSE",
+        "spotify": "4kH0XhA6B8Ua0A0A0A0A0B",
+        "amazonMusic": "B00NQH01S0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cosculluela--nicky-jam-te-busco--audio-oficial---2016-.jpg"
+    },
+    {
+      "id": "schlager-costa-cordalis-anita",
+      "title": "Anita",
+      "artist": "Costa Cordalis",
+      "year": 1976,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX] brachte griechisches Flair in den deutschen Schlager.",
+        "Der Song ist eine Liebeserklärung an eine mysteriöse Frau namens [XXX].",
+        "Ein absoluter Klassiker, der auf keiner Party fehlen darf.",
+        "Bekannt für den markanten Call-and-Response im Refrain.",
+        "Refrain: 'Ich fand sie irgendwo, allein in Mexiko, [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich fand sie irgendwo, allein in Mexiko, Anita",
+          "Schwarz war ihr Haar, die Augen wie Sterne so klar",
+          "Anita, Anita! Ich liebe dich so!"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "b58_FSpSWhw",
+        "spotify": "0ZUo4YjG4saFnEJhdWp9Bt",
+        "amazonMusic": "B0032S87X2"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-costa-cordalis-anita.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "jazz-countbasie-oneoclock",
+      "title": "One O'Clock Jump",
+      "artist": "Count Basie",
+      "year": 1937,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Explosive",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für [XXX] [XXX]s 'Kansas City Style' Jazz.",
+        "Besticht durch die sparsamen Klavier-Einwürfe und den exzellenten Rhythmus-Satz.",
+        "Ein Paradebeispiel für die treibende Kraft der Swing-Ära.",
+        "War einer der wichtigsten Songs für [XXX]s weltweiten Erfolg.",
+        "Genre-Inhalt: Explosive Bläser-Antworten."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - but the rhythm talks to you!)",
+          "(The foundation of the Count Basie sound)",
+          "(Pure Swing Energy)"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bVZLx-Y4OV8",
+        "spotify": "1jEBSDN5vYViJQr78W7jr2",
+        "amazonMusic": "B09QHBB9D3"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-countbasie-oneoclock.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "90s-counting-crows-mr-jones",
+      "title": "Mr. Jones",
+      "artist": "Counting Crows",
+      "year": 1993,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Pop"
+      ],
+      "hints": [
+        "Der Song handelt von zwei Musikern, die davon träumen, berühmt zu werden, um mehr Aufmerksamkeit von Frauen zu bekommen.",
+        "Adam Duritz, der Sänger mit den markanten Dreadlocks, singt den Song mit viel Leidenschaft.",
+        "Mr. [XXX] ist ein echter Freund des Sängers (Marty [XXX]).",
+        "Enthält viele Referenzen an Kunst und Berühmtheit.",
+        "Refrain: 'Mr. [XXX] and me tell each other fairy tales...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I was down at the New Amsterdam staring at this yellow-haired girl",
+          "Mr. Jones strikes up a conversation with a black-haired flamenco dancer",
+          "She dances while his father plays guitar"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sea"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-oqAU5VxFWs",
+        "spotify": "5DiXcVovI0FcY2s0icWWUu",
+        "amazonMusic": "B001SPX4RM"
+      },
+      "coverUrl": "/covers/90s-counting-crows-mr-jones.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-TOGusJon6qw",
+      "title": "Crazy Frog In The House Official Video",
+      "artist": "Crazy Frog",
+      "year": 2005,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2000er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TOGusJon6qw",
+        "spotify": "2goLsvvODILDzeeiT4dAoR",
+        "amazonMusic": "B001SLZS2K"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/crazy-frog-crazy-frog-in-the-house-official-video.jpg"
+    },
+    {
+      "id": "yt-Tu5tt_l_YEw",
+      "title": "Nunca Voy a Olvidarte (Audio)",
+      "artist": "Cristian Castro",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Tu5tt_l_YEw",
+        "spotify": "43UV5Uk0ntzH6MP8Rx1RKh",
+        "amazonMusic": "B0CFZKG87T"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cristian-castro-nunca-voy-a-olvidarte--audio-.jpg"
+    },
+    {
+      "id": "yt-ho8KxDgO9DY",
+      "title": "Caso Indefinido (Continua - Vídeo Oficial)",
+      "artist": "Cristiano Araújo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ho8KxDgO9DY",
+        "spotify": "1JE59uUu6v4XFrY9zSreZ8",
+        "amazonMusic": "B0767PFPRC"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cristiano-araújo-caso-indefinido--continua---vídeo-oficial-.jpg"
+    },
+    {
+      "id": "yt-0qMJ_zhat_E",
+      "title": "Cê Que Sabe (Vídeo Oficial)",
+      "artist": "Cristiano Araújo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0qMJ_zhat_E",
+        "spotify": "5UCPOJs8VJARoIX6acKRuJ",
+        "amazonMusic": "B0FD484FCZ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cristiano-araújo-cê-que-sabe--vídeo-oficial-.jpg"
+    },
+    {
+      "id": "yt-nf3igFRSDsA",
+      "title": "Hoje Eu Tô Terrível (In The Cities - Ao Vivo)",
+      "artist": "Cristiano Araújo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nf3igFRSDsA",
+        "spotify": "4XMBx2vCJId16XGTdc5ZtO",
+        "amazonMusic": "B0BB12CG9Z"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cristiano-araújo-hoje-eu-tô-terrível--in-the-cities---ao-vivo-.jpg"
+    },
+    {
+      "id": "yt-0ZrH5yyWHqE",
+      "title": "Maus Bocados (Continua - Vídeo Oficial)",
+      "artist": "Cristiano Araújo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0ZrH5yyWHqE",
+        "spotify": "1Tditr5KyzStSK3GiO6Xlj",
+        "amazonMusic": "B00OZGSYZ8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cristiano-araújo-maus-bocados--continua---vídeo-oficial-.jpg"
+    },
+    {
+      "id": "yt--KY0RMhwjz4",
+      "title": "É Com Ela Que Eu Estou (In The Cities - Ao Vivo)",
+      "artist": "Cristiano Araüjo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-KY0RMhwjz4",
+        "spotify": "07NSyHtBkMt2pb9sJoZxUB",
+        "amazonMusic": "B00OZGT5CE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/cristiano-araüjo-é-com-ela-que-eu-estou--in-the-cities---ao-vivo-.jpg"
+    },
+    {
+      "id": "metal-cromags-know",
+      "title": "We Gotta Know",
+      "artist": "Cro-Mags",
+      "year": 1986,
+      "country": "US",
+      "genre": "Hardcore Punk / Crossover",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Traditional"
+      ],
+      "hints": [
+        "Eröffnungssong des wegweisenden Albums 'The Age of Quarrel'.",
+        "Verbindet Hardcore-Aggression mit Metal-Riffs.",
+        "Thematisiert (inspiriert vom Hare Krishna Glauben) spirituelle Suche und Rebellion.",
+        "Ein Inbegriff für den frühen New Yorker Crossover-Sound.",
+        "Refrain: 'We [XXX] [XXX]! We [XXX] [XXX] the truth!'"
+      ],
+      "lyrics": {
+        "real": [
+          "We gotta know, we gotta know the truth about the life",
+          "Running through the streets, dodging the strife",
+          "Age of quarrel is upon us now!"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Wo-z58xLoe8",
+        "spotify": "7l2DMJS7sdl5na5yDKrm1x",
+        "amazonMusic": "B07VQW1J4G"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-cromags-know.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    }
+  ]
+}
