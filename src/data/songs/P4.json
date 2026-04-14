@@ -1,0 +1,472 @@
+{
+  "songs": [
+    {
+      "id": "disney-jungle-bare",
+      "title": "The Bare Necessities",
+      "artist": "Phil Harris & Bruce Reitherman",
+      "year": 1967,
+      "country": "US",
+      "genre": "Soundtrack / Jazz / Happy",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Balus Lebens[XXX]osophie aus 'Das Dschungelbuch'.",
+        "Thematisiert Gelassenheit und die Rückbesinnung auf das Wesentliche.",
+        "Besticht durch den fröhlichen Jazz-Shuffle-Rhythmus.",
+        "Ein Inbegriff für unbeschwerte Disney-Fröhlichkeit.",
+        "Refrain: 'Look for the [XXX] [XXX]! The simple [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Look for the bare necessities, the simple bare necessities",
+          "Forget about your worries and your strife",
+          "I mean the bare necessities, are Mother Nature's recipes"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6BH-Rxd-NBo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-jungle-bare.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "class-glass-opening",
+      "title": "Glassworks (Opening)",
+      "artist": "Philip Glass",
+      "year": 1982,
+      "country": "US",
+      "genre": "Minimalism",
+      "difficulty": "medium",
+      "mood": [
+        "Hypnotic",
+        "Peaceful",
+        "Intelligent"
+      ],
+      "hints": [
+        "Song mit charakteristischen Minimalism-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Minimalism)",
+          "Hypnotic arpeggios",
+          "Circular piano patterns"
+        ],
+        "fake": "Dancing in the circles of the mind tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-nBE9U7q1Uc",
+        "spotify": "4gdwUYVnVv8u0t6XaYob4v",
+        "amazonMusic": "B001VFTNSS"
+      },
+      "coverUrl": "/covers/class-glass-opening.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-pnEHsUWFuNM",
+      "title": "Nicky Jam | Video Oficial",
+      "artist": "Piensas En Mi",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pnEHsUWFuNM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/piensas-en-mi-nicky-jam---video-oficial.jpg"
+    },
+    {
+      "id": "yt-VVPFfjYaTpw",
+      "title": "TRUSTFALL",
+      "artist": "Pink",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VVPFfjYaTpw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/pink-trustfall.jpg"
+    },
+    {
+      "id": "yt-qs35t2xFqdU",
+      "title": "Another Brick in the Wall Official Music Video (Lyrics In Description)",
+      "artist": "Pink Floyd",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qs35t2xFqdU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/pink-floyd-another-brick-in-the-wall-official-music-video--lyrics-in-description-.jpg"
+    },
+    {
+      "id": "legends-pink-floyd-wish",
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Progressive Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Deep"
+      ],
+      "hints": [
+        "Eine Hommage an das Gründungsmitglied Syd Barrett, der die Band verlassen musste.",
+        "Der Song beginnt mit einem berühmten Radio-Effekt und einem akustischen Intro.",
+        "Handelt von Entfremdung und der Sehnsucht nach echter Verbindung.",
+        "Einer der am meisten geliebten Akustik-Gitarren-Songs der Rockgeschichte.",
+        "Refrain: 'How I [XXX], how I [XXX] you [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "So, so you think you can tell heaven from hell, blue skies from pain?",
+          "Can you tell a green field from a cold steel rail? A smile from a veil?",
+          "How I wish, how I wish you were here"
+        ],
+        "fake": [
+          "Staring at the wall, waiting for the fall of the silent rain",
+          "Can you see a purple sky? A rainbow that wants to cry?"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "89j-6xpdq4",
+        "spotify": "6mFkJmJqdDVQ1REhVfGgd1",
+        "amazonMusic": "B076ZZ9SSG"
+      },
+      "coverUrl": "/covers/legends-pink-floyd-wish.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends"
+      ]
+    },
+    {
+      "id": "yt-aYdRRUs85w8",
+      "title": "Boy's a liar Pt. 2",
+      "artist": "PinkPantheress & Ice Spice",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aYdRRUs85w8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/pinkpantheress---ice-spice-boy-s-a-liar-pt--2.jpg"
+    },
+    {
+      "id": "yt-HMqgVXSvwGo",
+      "title": "Fireball  ft. John Ryan",
+      "artist": "Pitbull",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HMqgVXSvwGo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/pitbull-fireball--ft--john-ryan.jpg"
+    },
+    {
+      "id": "dance-pitbull-everything",
+      "title": "Give Me Everything",
+      "artist": "Pitbull ft. Ne-Yo, Afrojack & Nayer",
+      "year": 2011,
+      "country": "US/NL",
+      "genre": "Dance-Pop / Electro House",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Party",
+        "Happy"
+      ],
+      "hints": [
+        "Inbegriff des 'Electronic Dance Pop' Booms der frühen 2010er.",
+        "Ne-Yos Hook kombiniert mit [XXX]s Rap-Parts.",
+        "Wurde zu einer der meistverkauften digitalen Singles aller Zeiten.",
+        "Ein absolutes Muss für jede Clubnacht jener Ära.",
+        "Refrain: 'Tonight I want all of you tonight, [XXX] me [XXX] tonight!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Me not working hard? Yeah, right! Picture that with a Kodak!",
+          "Tonight I want all of you tonight, give me everything tonight",
+          "For all we know we might not get tomorrow, let's do it tonight"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0x-FMquRkK0"
+      },
+      "coverUrl": "/covers/dance-pitbull-everything.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "indie-pixies-mind",
+      "title": "Where Is My Mind?",
+      "artist": "Pixies",
+      "year": 1988,
+      "country": "US",
+      "genre": "Indie Rock / Grunge",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Epic",
+        "Strange"
+      ],
+      "hints": [
+        "Wurde weltberühmt durch die Schlussszene des Films 'Fight Club'.",
+        "Sänger Black Francis schrieb den Song nach einem Tauchausflug in der Karibik.",
+        "Bekannt für das markante Gitarren-Riff und die geisterhaften Hintergrund-Gesänge von Kim Deal.",
+        "Thematisiert den Kontrollverlust und das Abgleiten in den Wahnsinn.",
+        "Refrain: '[XXX] is my [XXX] Way out in the water, see it swimming...'"
+      ],
+      "lyrics": {
+        "real": [
+          "With your feet in the air and your head on the ground, try this trick and spin it, yeah",
+          "Your head will collapse but there's nothing in it and you'll ask yourself",
+          "Where is my mind? Way out in the water, see it swimming"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "N3oCS85HvpY"
+      },
+      "coverUrl": "/covers/indie-pixies-mind.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-9FWgcBfs5A0",
+      "title": "Candy",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9FWgcBfs5A0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/plan-b-candy.jpg"
+    },
+    {
+      "id": "yt-zt05FqPyvHA",
+      "title": "Choca",
+      "artist": "Plan B",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zt05FqPyvHA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/plan-b-choca.jpg"
+    }
+  ]
+}

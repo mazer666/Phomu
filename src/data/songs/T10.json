@@ -1,0 +1,502 @@
+{
+  "songs": [
+    {
+      "id": "finale-tom-love",
+      "title": "Another Love (resurgence)",
+      "artist": "Tom Odell",
+      "year": 2013,
+      "country": "GB",
+      "genre": "Indie Pop / Piano Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
+      "hints": [
+        "Song mit charakteristischen Indie Pop -Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "And if somebody hurts you, I wanna fight, but my hands been broken one too many times",
+          "I wanna take you somewhere so you know I care",
+          "But it's so cold and I don't know where"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MwpMEbgC7DA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ],
+      "coverUrl": "/covers/tom-odell-another-love--resurgence-.jpg"
+    },
+    {
+      "id": "yt-zIDPPzCT4Ew",
+      "title": "Silhouette",
+      "artist": "Tom Odell",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zIDPPzCT4Ew"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tom-odell-silhouette.jpg"
+    },
+    {
+      "id": "yt-Ivdf_W02ucg",
+      "title": "What's The Time Where You Are?",
+      "artist": "Tom Walker",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ivdf_W02ucg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tom-walker-what-s-the-time-where-you-are-.jpg"
+    },
+    {
+      "id": "yt-ycrfb1r2NL0",
+      "title": "Million Dollar Baby",
+      "artist": "Tommy Richman",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ycrfb1r2NL0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tommy-richman-million-dollar-baby.jpg"
+    },
+    {
+      "id": "yt-szPIgrYCxSY",
+      "title": "El Doctorado",
+      "artist": "Tony Dize",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=szPIgrYCxSY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tony-dize-el-doctorado.jpg"
+    },
+    {
+      "id": "yt-e8w6cLVxAjA",
+      "title": "Mi Amor es Pobre ft. Ken-Y",
+      "artist": "Tony Dize",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e8w6cLVxAjA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tony-dize-mi-amor-es-pobre-ft--ken-y.jpg"
+    },
+    {
+      "id": "yt-9PSGoOcwOWM",
+      "title": "Permitame ft. Yandel",
+      "artist": "Tony Dize",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9PSGoOcwOWM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tony-dize-permitame-ft--yandel.jpg"
+    },
+    {
+      "id": "metal-tool-schism",
+      "title": "Schism",
+      "artist": "Tool",
+      "year": 2001,
+      "country": "US",
+      "genre": "Progressive Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Complex",
+        "Intelligent",
+        "Deep"
+      ],
+      "hints": [
+        "Berühmt für seinen komplexen Basslauf und die ständig wechselnden Taktarten.",
+        "Thematisiert die Kommunikation und das Auseinanderdriften von Beziehungen.",
+        "Maynard James Keenans Gesang ist hier von beinahe meditativer Kraft.",
+        "Ein Inbegriff für intellektuellen, spirituellen Metal.",
+        "Refrain: 'I know the pieces fit 'cause I watched them tumble down!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I know the pieces fit 'cause I watched them tumble down",
+          "No fault, none to blame, it doesn't mean I don't desire",
+          "Between supposed lovers, between supposed brothers"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MM62wjLrgmA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-tool-schism.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "reggae-toots-maytals-54-46",
+      "title": "54-46 Was My Number",
+      "artist": "Toots & The Maytals",
+      "year": 1968,
+      "country": "JM",
+      "genre": "Rocksteady / Reggae",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Raw"
+      ],
+      "hints": [
+        "[XXX] Hibbert schrieb diesen Song nach seiner zweijährigen Gefängnisstrafe.",
+        "Die Nummer im Titel war seine Häftlingsnummer.",
+        "Einer der wichtigsten Songs für den Übergang von Rocksteady zu Reggae.",
+        "Bekannt für den energischen 'One-Drop' Beat.",
+        "Refrain: '54-46 was my [XXX], right now someone else has that [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "54-46 was my number, right now someone else has that number",
+          "Give it to me one time, give it to me two times, give it to me three times",
+          "I said give it to me!"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "yjg6u_hEY8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-toots-maytals-54-46.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "yt-ltl6A-A01Pg",
+      "title": "Breaking Me",
+      "artist": "Topic & A7S",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ltl6A-A01Pg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/topic---a7s-breaking-me.jpg"
+    },
+    {
+      "id": "unplugged-tori-amos-crucify",
+      "title": "Crucify",
+      "artist": "Tori Amos",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Intelligent"
+      ],
+      "hints": [
+        "[XXX] [XXX] ist bekannt für ihr virtuoses Klavierspiel und provokante Texte.",
+        "Handelt von Selbstbestrafung und dem Erwartungsdruck der Gesellschaft.",
+        "Ihre Stimme wechselt oft zwischen fragilem Flüstern und kraftvollem Gesang.",
+        "Ein Meilenstein des Introspektiven Folk-Pop der 90er.",
+        "Refrain: 'Why do we [XXX] ourselves? Every day...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Every finger in the room is pointing at me, I wanna spit in their faces then I get afraid of what that could bring",
+          "I got a bowling ball in my stomach, I got a desert in my mouth",
+          "Why do we crucify ourselves every day? I through with guilt, I through with guilt"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dGBwsC0yJ8o",
+        "spotify": "23XtNOaLoZKhhKZe6Vz5Y8",
+        "amazonMusic": "B00VKECVXY"
+      },
+      "coverUrl": "/covers/unplugged-tori-amos-crucify.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "80s-toto-africa",
+      "title": "Africa",
+      "artist": "Toto",
+      "year": 1982,
+      "country": "US",
+      "genre": "Soft Rock / Pop",
+      "difficulty": "hard",
+      "mood": [
+        "Atmospheric",
+        "Deep",
+        "Classic"
+      ],
+      "hints": [
+        "Besticht durch seine komplexe Perkussion und die harmonischen Gesänge.",
+        "Thematisiert Sehnsucht und die Idealisierung eines Kontinents.",
+        "Erlebte als Internet-Kultsong ein gigantisches Comeback.",
+        "Ein handwerklich perfekt produzierter Song der 'Studiomusiker-Supergroup'.",
+        "Refrain: 'It's gonna take a lot to drag me away from you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The wild dogs cry out in the night, as they grow restless longing for some solitary company",
+          "It's gonna take a lot to drag me away from you",
+          "There's nothing that a hundred men or more could ever do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FTQbiNvZqaY",
+        "spotify": "2374M0fQpWi3dLnB54qaLX",
+        "amazonMusic": "B001VFGAS4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-toto-africa.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-GMsok5m5yD4",
+      "title": "True Disaster (Part of Fairy Dust)",
+      "artist": "Tove Lo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GMsok5m5yD4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tove-lo-true-disaster--part-of-fairy-dust-.jpg"
+    }
+  ]
+}

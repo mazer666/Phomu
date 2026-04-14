@@ -1,0 +1,175 @@
+{
+  "songs": [
+    {
+      "id": "indie-21pilots-stressed",
+      "title": "Stressed Out",
+      "artist": "Twenty One Pilots",
+      "year": 2015,
+      "country": "US",
+      "genre": "Alternative Hip Hop / Indie Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Serious",
+        "Indie"
+      ],
+      "hints": [
+        "Thematisiert die Sehnsucht nach der Kindheit und den Druck des Erwachsenwerdens.",
+        "Der 'Blurryface'-Charakter ist eine Metapher für Unsicherheit.",
+        "Verbindet meisterhaft Rap-Parts mit einem melodischen Refrain.",
+        "Wurde zur Hymne einer ganzen Generation von Jugendlichen.",
+        "Refrain: 'Wish we could turn back time, to the good old days!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I wish I found some better sounds no one's ever heard",
+          "Wish we could turn back time, to the good old days",
+          "When our mamma sang us to sleep but now we're stressed out"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pXRviuL6vMY"
+      },
+      "coverUrl": "/covers/indie-21pilots-stressed.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-Q10AqolSgQg",
+      "title": "$ [Music Video]",
+      "artist": "Ty Dolla $ign",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Q10AqolSgQg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ty-dolla--ign----music-video-.jpg"
+    },
+    {
+      "id": "finale-tyla-water",
+      "title": "Water",
+      "artist": "Tyla",
+      "year": 2023,
+      "country": "ZA",
+      "genre": "Amapiano / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Modern"
+      ],
+      "hints": [
+        "Song mit charakteristischen Amapiano -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Make me sweat, make me hotter, make me lose my breath, make me water",
+          "Can you handle the heat?",
+          "Make me water"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "wlmUnWLaeog"
+      },
+      "coverUrl": "/covers/finale-tyla-water.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "country-tyler-road",
+      "title": "Whitehouse Road",
+      "artist": "Tyler Childers",
+      "year": 2017,
+      "country": "US",
+      "genre": "Americana / Country",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Honest",
+        "Moody"
+      ],
+      "hints": [
+        "Inbegriff für den Erfolg des unabhängigen Americana-Sounds ohne Nashville-Hochglanz.",
+        "Thematisiert das Leben am Rande der Gesellschaft und die Flucht vor dem Alltag.",
+        "Besticht durch [XXX] [XXX]' leidenschaftliche, raue Stimme.",
+        "Wurde zu einer modernen Hymne der Country-Underground-Szene.",
+        "Refrain: 'Keep your nose on the grindstone and out of the coke!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lord have mercy on my soul, for the life I've chosen to live",
+          "Keep your nose on the grindstone and out of the coke",
+          "Get you a girl with a heart of gold"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "LjftvOLs0Y0"
+      },
+      "coverUrl": "/covers/country-tyler-road.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    }
+  ]
+}

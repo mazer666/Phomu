@@ -1,0 +1,526 @@
+{
+  "songs": [
+    {
+      "id": "yt-r0eIhlsks4s",
+      "title": "La De La Mala Suerte",
+      "artist": "JESSE & JOY",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=r0eIhlsks4s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jesse---joy-la-de-la-mala-suerte.jpg"
+    },
+    {
+      "id": "disney-encanto-pressure",
+      "title": "Surface Pressure",
+      "artist": "Jessica Darrow",
+      "year": 2021,
+      "country": "US/CO",
+      "genre": "Soundtrack / Reggaeton / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Groovy"
+      ],
+      "hints": [
+        "Thematisiert den enormen Druck und die Erwartungshaltung an die starke Schwester Luisa.",
+        "Besitzt einen treibenden Reggaeton-Beat.",
+        "Lines wie 'Under the [XXX]' wurden zur Metapher für psychische Belastung.",
+        "Inbegriff für Disneys modernere, tiefgründigere Texte.",
+        "Refrain: 'Under the [XXX]! I'm pretty sure I'm worthless if I can't be of service!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm the strong one, I'm not nervous, I'm as tough as the crust of the Earth is",
+          "Under the surface, I feel shattered like a glass or a bubble",
+          "Pressure like a drip, drip, drip that'll never stop, woah"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tQwVKr8rCYw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-encanto-pressure.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-bSjjqhQ_99g",
+      "title": "\"Décalé Gwada\"",
+      "artist": "JESSY MATADOR",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Essentials"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bSjjqhQ_99g"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jessy-matador--décalé-gwada-.jpg"
+    },
+    {
+      "id": "90s-jewel-who-will-save-your-soul",
+      "title": "Who Will Save Your Soul",
+      "artist": "Jewel",
+      "year": 1995,
+      "country": "US",
+      "genre": "Folk Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Soulful",
+        "Acoustic",
+        "Alternative"
+      ],
+      "hints": [
+        "Der erste große Hit der Sängerin, die zeitweise in ihrem Auto lebte, bevor sie berühmt wurde.",
+        "Bekannt für den fast gejodelten Gesangsstil der Strophen.",
+        "Das Video zeigt die Sängerin in einer öffentlichen Toilette singend (Symbol für Einsamkeit).",
+        "Thematisiert die Oberflächlichkeit und Sinnsuche in der Gesellschaft.",
+        "Refrain: 'Who [XXX] [XXX] your [XXX] after all the lies that you told?'"
+      ],
+      "lyrics": {
+        "real": [
+          "People living their lives for you on TV, they say they're better than you and you agree",
+          "You say: Please, please, someone help me, but who will save your soul?",
+          "We try to hustle them, try to bustle them, try to cussle them"
+        ],
+        "fake": "Nothing's gonna change my world, you're the only special girl"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0wBDDAZkNtk",
+        "spotify": "0OH8dSQmKm2zjhqRPYsk1h",
+        "amazonMusic": "B09B5RDPLG"
+      },
+      "coverUrl": "/covers/90s-jewel-who-will-save-your-soul.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-h2c1t9tNpso",
+      "title": "[YouTube Nashville Sessions] Jilian Linklater, Jessica Martindale, Bay Brooks \"Holding On\"",
+      "artist": "Jilian Linklater",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Country",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Country-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=h2c1t9tNpso"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jilian-linklater--youtube-nashville-sessions--jilian-linklater--jessica-martindale--bay-brooks--holding-on-.jpg"
+    },
+    {
+      "id": "folk-jim-bottle",
+      "title": "Time in a Bottle",
+      "artist": "Jim Croce",
+      "year": 1972,
+      "country": "US",
+      "genre": "Folk / Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Zutiefst romantische Ballade über den Wunsch, Zeit einzufrieren.",
+        "Jim [XXX] schrieb das Stück für seinen neugeborenen Sohn kurz vor seinem tödlichen Flugzeugabsturz.",
+        "Besticht durch das zerbrechliche Gitarrenpicking und die unschuldige Melodie.",
+        "Thematisiert Vergänglichkeit und tiefe persönliche Bindung.",
+        "Refrain: 'If I could save [XXX] in a [XXX]! The first thing that I'd like to do!'"
+      ],
+      "lyrics": {
+        "real": [
+          "If I could save time in a bottle, the first thing that I'd like to do",
+          "Is to save every day, till eternity passes away",
+          "Just to spend them with you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "i6rLH-X5fR8"
+      },
+      "coverUrl": "/covers/folk-jim-bottle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "disney-lion-prepared",
+      "title": "Be Prepared",
+      "artist": "Jim Cummings",
+      "year": 1994,
+      "country": "US",
+      "genre": "Soundtrack / Villain / Powerful",
+      "difficulty": "easy",
+      "mood": [
+        "Dark",
+        "Powerful",
+        "Theatrical"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soundtrack -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I know that your powers of retention, are as wet as a warthog's backside",
+          "Be prepared! Our teeth and ambitions are bared!",
+          "Be prepared!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5WsZdDDQ8b0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-lion-prepared.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-5lpppPsc2n4",
+      "title": "Like Crazy",
+      "artist": "Jimin",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5lpppPsc2n4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jimin-like-crazy.jpg"
+    },
+    {
+      "id": "world-jimmycliff-clearly",
+      "title": "I Can See Clearly Now",
+      "artist": "Jimmy Cliff",
+      "year": 1993,
+      "country": "JM",
+      "genre": "Reggae / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Eine Cover-Version des Hits von Johnny Nash.",
+        "Wurde durch den Film 'Cool Runnings' weltweit erneut zum Hit.",
+        "Thematisiert die Erleichterung und Klarheit nach einer schwierigen Zeit.",
+        "Besticht durch die fröhliche Marimba-Melodie und [XXX] [XXX]s optimistischen Gesang.",
+        "Refrain: 'I can see [XXX] now, the rain is gone!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can see clearly now the rain is gone, I can see all obstacles in my way",
+          "Gone are the dark clouds that had me blind",
+          "It's gonna be a bright, bright sun-shiny day"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "lJErpOGN-HU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-jimmycliff-clearly.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "reggae-jimmy-cliff-rivers",
+      "title": "Many Rivers to Cross",
+      "artist": "Jimmy Cliff",
+      "year": 1969,
+      "country": "JM",
+      "genre": "Reggae / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Classic",
+        "Powerful"
+      ],
+      "hints": [
+        "Thematisiert die harten Kämpfe und Hindernisse im Leben eines Musikers.",
+        "[XXX] [XXX] gilt als einer der wichtigsten Pioniere des Reggae vor Bob Marley.",
+        "Der Song besticht durch seine tiefe Emotionalität und fast gospelartige Intensität.",
+        "Wurde durch den Film 'The Harder They Come' weltbekannt.",
+        "Refrain: '[XXX] [XXX] to [XXX], but I can't seem to find my way over!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Many rivers to cross, but I can't seem to find my way over",
+          "Wandering, I am lost, as I travel along the White Cliffs of Dover",
+          "And this loneliness won't leave me alone"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "twf7LhQIBkQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-jimmy-cliff-rivers.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "yt-8EopL19YjNg",
+      "title": "Goldener Reiter",
+      "artist": "Joachim Witt",
+      "year": 1980,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8EopL19YjNg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/joachim-witt-goldener-reiter.jpg"
+    },
+    {
+      "id": "folk-joan-rust",
+      "title": "Diamonds & Rust",
+      "artist": "Joan Baez",
+      "year": 1975,
+      "country": "US",
+      "genre": "Folk",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Poetic",
+        "Emotional"
+      ],
+      "hints": [
+        "[XXX] [XXX] blickt in diesem Song auf ihre Beziehung zu Bob Dylan zurück.",
+        "Besticht durch die feine Akustikgitarre und die literarische Brillanz der Lyrics.",
+        "Thematisiert Nostalgie, Zeit und den Schmerz früherer Lieben.",
+        "Inbegriff für den anspruchsvollen Singer-Songwriter Folk der 70er.",
+        "Refrain: '[XXX] and [XXX]! Yes, I've seen it all!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Well, I'll be damned, here comes your ghost again",
+          "Yes, I'm thinking of the night we met",
+          "Our love was a poem, diamonds and rust"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "IrVD0bP_ybg"
+      },
+      "coverUrl": "/covers/folk-joan-rust.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-l8YX24eruWs",
+      "title": "AMOR LIMOSNERO JOAN SEBASTIAN",
+      "artist": "Joan Sebastian",
+      "year": 2003,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=l8YX24eruWs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/joan-sebastian-amor-limosnero-joan-sebastian.jpg"
+    }
+  ]
+}

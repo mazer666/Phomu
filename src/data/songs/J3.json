@@ -1,0 +1,515 @@
+{
+  "songs": [
+    {
+      "id": "folk-james-rain",
+      "title": "Fire and Rain",
+      "artist": "James Taylor",
+      "year": 1970,
+      "country": "US",
+      "genre": "Folk / Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
+      "hints": [
+        "Zutiefst persönlicher Song über persönliche Kämpfe und den Verlust einer Freundin.",
+        "Besticht durch das feine Gitarrenpicking und [XXX] [XXX]s beruhigende Stimme.",
+        "Thematisiert Verzweiflung, Hoffnung und die Suche nach Führung.",
+        "Ein Kernstück des 'Gentle Folk' der frühen 70er.",
+        "Ref[XXX]: 'I've seen [XXX] and I've seen [XXX]! I've seen sunny days that I thought would never end!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Just yesterday morning, they let me know you were gone",
+          "Suzanne, the plans they made put an end to you",
+          "I've seen fire and I've seen rain"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "EbD7lfrsY2s"
+      },
+      "coverUrl": "/covers/folk-james-rain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-Ryi20DglVJM",
+      "title": "Get Low",
+      "artist": "James Vincent McMorrow",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ryi20DglVJM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/james-vincent-mcmorrow-get-low.jpg"
+    },
+    {
+      "id": "german-jan-delay-jonny",
+      "title": "Oh Jonny",
+      "artist": "Jan Delay",
+      "year": 2009,
+      "country": "DE",
+      "genre": "Funk / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Happy",
+        "Energy"
+      ],
+      "hints": [
+        "Jan [XXX] erfand sich hiermit als Funk-Showmaster mit seiner Band 'Disko No. 1' neu.",
+        "Handelt von einem coolen Charakter namens [XXX], der jede Party rockt.",
+        "Der Bläsersatz und Jan [XXX]s nasale Stimme sind das Markenzeichen.",
+        "Ein Inbegriff für modernen deutschen Funk.",
+        "Refrain: 'Oh [XXX], oh [XXX], oh [XXX], oh [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Es war ein harter Tag, doch jetzt bin ich hier, Oh Jonny",
+          "Du bist die Sonne, du bist das Licht, wenn du tanzt sieht man es nicht",
+          "Oh Jonny, oh Jonny, oh Jonny, oh Jonny"
+        ],
+        "fake": "Nichts kann uns stoppen, wenn wir durch die Nacht fliegen irgendwie"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kW7u7ptj-j4"
+      },
+      "coverUrl": "/covers/german-jan-delay-jonny.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-79L1ZKAlV_k",
+      "title": "1000x  ft. Broods",
+      "artist": "Jarryd James",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=79L1ZKAlV_k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jarryd-james-1000x--ft--broods.jpg"
+    },
+    {
+      "id": "disney-lion-king-ready",
+      "title": "I Just Can't Wait to Be King",
+      "artist": "Jason Weaver, Rowan Atkinson & Laura Williams",
+      "year": 1994,
+      "country": "US/GB",
+      "genre": "Soundtrack / Happy / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Confident"
+      ],
+      "hints": [
+        "Simba's fröhliches Lied über seine Zukunft als alleiniger Herrscher.",
+        "Besticht durch den quirligen Rhythmus und [XXX] [XXX]s (Zazu) humorvolle Einwürfe.",
+        "Inbegriff für kindliche Naivität und Vorfreude.",
+        "Besitzt einen frischen, afrikanisch inspirierten Pop-Sound.",
+        "Refrain: 'Oh, I [XXX] [XXX] [XXX] to be [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm gonna be a mighty king, so enemies beware!",
+          "Oh, I just can't wait to be king!",
+          "No one saying 'do this', no one saying 'be there'"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "INugjPMaOWs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-lion-king-ready.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-RmwZ8wXlsjk",
+      "title": "Where Did You Go?",
+      "artist": "Jax Jones & MNEK",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RmwZ8wXlsjk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jax-jones---mnek-where-did-you-go-.jpg"
+    },
+    {
+      "id": "yt-58w0VgL9BYs",
+      "title": "You Don't Know Me (Radio Edit)",
+      "artist": "Jax Jones ft. Raye",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=58w0VgL9BYs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jax-jones-ft--raye-you-don-t-know-me--radio-edit-.jpg"
+    },
+    {
+      "id": "hiphop-jayz-empire",
+      "title": "Empire State of Mind",
+      "artist": "Jay-Z ft. Alicia Keys",
+      "year": 2009,
+      "country": "US",
+      "genre": "Hip Hop / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Inspirational",
+        "Powerful"
+      ],
+      "hints": [
+        "Die moderne Hymne auf die Stadt New York City.",
+        "[XXX] [XXX]' gewaltiger Refrain macht den Song zum Stadion-Hit.",
+        "Thematisiert den Aufstieg vom kargen Leben zum globalen Business-Mogul.",
+        "Wurde zu einem der größten kommerziellen Erfolge von [XXX]-Z.",
+        "Refrain: 'In New York! Concrete jungle where dreams are made of!'"
+      ],
+      "lyrics": {
+        "real": [
+          "In New York, concrete jungle where dreams are made of, there's nothing you can't do",
+          "Now you're in New York, these streets will make you feel brand new",
+          "Big lights will inspire you, let's hear it for New York"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vk6014HuxcE"
+      },
+      "coverUrl": "/covers/hiphop-jayz-empire.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "class-sibelius-finlandia",
+      "title": "Finlandia",
+      "artist": "Jean Sibelius",
+      "year": 1899,
+      "country": "FI",
+      "genre": "Romantic / Symphonic Poem",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Heroic",
+        "Nationalistic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Poem)",
+          "Stolzer Hymnen-Gesang",
+          "Spirit of Finland"
+        ],
+        "fake": "Watching the light over the northern ice tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "fE0RbPsC9uE",
+        "spotify": "6BywXdPigCH0sgHlJ98kuQ",
+        "amazonMusic": "B00367OY9M"
+      },
+      "coverUrl": "/covers/class-sibelius-finlandia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-GSLSwwkLRW0",
+      "title": "Ain't It Funny",
+      "artist": "Jennifer Lopez",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GSLSwwkLRW0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jennifer-lopez-ain-t-it-funny.jpg"
+    },
+    {
+      "id": "yt--rbe6YT_t0c",
+      "title": "No Me Ames",
+      "artist": "Jennifer Lopez",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-rbe6YT_t0c"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jennifer-lopez-no-me-ames.jpg"
+    },
+    {
+      "id": "yt-hiUDwauo6Uc",
+      "title": "Olvídame y Pega la Vuelta (Tropical Version - Audio)",
+      "artist": "Jennifer Lopez, Marc Anthony",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hiUDwauo6Uc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jennifer-lopez--marc-anthony-olvídame-y-pega-la-vuelta--tropical-version---audio-.jpg"
+    },
+    {
+      "id": "score-trek-theme",
+      "title": "Star Trek (Main Theme)",
+      "artist": "Jerry Goldsmith",
+      "year": 1979,
+      "country": "US",
+      "genre": "Movie Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Adventurous",
+        "Positive"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "To boldly go where no man has gone before",
+          "Final frontier!"
+        ],
+        "fake": "Sailing through the stars in the middle of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "zI9YYe-jgHI",
+        "spotify": "6C6UppMmnhp4DY4oyG823S",
+        "amazonMusic": "B001S5Z3ZI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/score-trek-theme.jpg",
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    }
+  ]
+}

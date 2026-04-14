@@ -1,0 +1,131 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-public-enemy-fight-power",
+      "title": "Fight the Power",
+      "artist": "Public Enemy",
+      "year": 1989,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Powerful",
+        "Aggressive"
+      ],
+      "hints": [
+        "Wurde für den Film 'Do the Right Thing' von Spike Lee geschrieben.",
+        "Ein kraftvoller Protestsong gegen Rassismus und soziale Ungerechtigkeit.",
+        "Enthält eine Unmenge an Samples, die einen dichten, fast chaotischen Sound erzeugen.",
+        "Chuck D liefert die politischen Botschaften, Flavor Flav sorgt für den Hype.",
+        "Refrain: '[XXX] the [XXX]! We got to [XXX] the [XXX]s that be!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Elvis was a hero to most but he never meant shit to me you see",
+          "Straight up racist that sucker was simple and plain",
+          "Fight the power! We got to fight the powers that be!"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "links": {
+        "youtube": "mmo3HFa2vjg"
+      },
+      "coverUrl": "/covers/hiphop-public-enemy-fight-power.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-xQ4xM2XwWGY",
+      "title": "In The Dark",
+      "artist": "Purple Disco Machine",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert Nachtleben und Dunkelheit durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xQ4xM2XwWGY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/purple-disco-machine-in-the-dark.jpg"
+    },
+    {
+      "id": "class-tchaikovsky-swan",
+      "title": "Swan Lake (Theme)",
+      "artist": "Pyotr Ilyich Tchaikovsky",
+      "year": 1876,
+      "country": "RU",
+      "genre": "Romantic / Ballet",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Sad",
+        "Elegant"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Ballet)",
+          "Haunting oboe melody",
+          "Swans on the lake"
+        ],
+        "fake": "Dancing on the water under the moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "9cNQFB0TDfY",
+        "spotify": "1TQ2UYCN7nhfj3cfcFC76V",
+        "amazonMusic": "B0DNG58SX3"
+      },
+      "coverUrl": "/covers/class-tchaikovsky-swan.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    }
+  ]
+}

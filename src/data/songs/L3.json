@@ -1,0 +1,571 @@
+{
+  "songs": [
+    {
+      "id": "legends-led-zeppelin-stairway",
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "year": 1971,
+      "country": "GB",
+      "genre": "Hard Rock / Folk Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Dramatic",
+        "Epic",
+        "Legends & Classics",
+        "Moody",
+        "Mystical",
+        "Popular"
+      ],
+      "hints": [
+        "Gilt oft als der beste Rock-Song aller Zeiten, obwohl er nie als Single veröffentlicht wurde.",
+        "Der Song baut sich langsam von einer akustischen Folk-Ballade zu einer Hard-Rock-Hymne auf.",
+        "Gitarrist Jimmy Page spielt eines der am meisten bewunderten Solos der Musikgeschichte.",
+        "Thematisiert eine Frau, die glaubt, sich einen Weg in den Himmel kaufen zu können.",
+        "In vielen Musikgeschäften ist das Anspielen dieses Songs verboten, weil es jeder tut."
+      ],
+      "lyrics": {
+        "real": [
+          "There's a lady who's sure all that glitters is gold, and she's buying a stairway to heaven",
+          "When she gets there she knows, if the stores are all closed, with a word she can get what she came for",
+          "And it makes me wonder..."
+        ],
+        "fake": [
+          "Walking down the silver path under the dragon's wrath up to the sky",
+          "Where she gets the gold, and the stores are not closed",
+          "And I am afraid..."
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "QkF3oxziUI4",
+        "spotify": "5CQ30WqJwcep0pYcV4AMNc",
+        "amazonMusic": "B00M8AHW74"
+      },
+      "coverUrl": "/covers/legends-led-zeppelin-stairway.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "jazz-morgan-sidewinder",
+      "title": "The Sidewinder",
+      "artist": "Lee Morgan",
+      "year": 1964,
+      "country": "US",
+      "genre": "Jazz / Hard Bop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Kombiniert Blues, Soul und Jazz in einem extrem eingängigen Format.",
+        "Besticht durch den typischen 'Boogaloo' Rhythmus der 60er.",
+        "Ein Inbegriff für den Blue Note Sound jener Ära.",
+        "Der Trompeter war ein Wunderkind – er spielte bereits mit 18 Jahren auf Miles Davis-Alben.",
+        "Der Titel bezeichnet eine Schlangenart – und der Groove schlängelt sich genauso unaufhaltsam vorwärts."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental - legendary for its dancing groove)",
+          "(Morgan's biggest commercial success)",
+          "(The sound of cool 60s Jazz)"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NHN6-yWFKPc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-morgan-sidewinder.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-kdk8t9sr0yo",
+      "title": "Don't Want You Back",
+      "artist": "Leela James",
+      "year": 2016,
+      "country": "US",
+      "genre": "Soul/R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Soulful"
+      ],
+      "hints": [
+        "Eine US-amerikanische Soul-Sängerin aus Los Angeles, bekannt für ihre kraftvolle Retro-Soul-Stimme.",
+        "Oft verglichen mit Aretha Franklin und Etta James – ein Kompliment, dem sie gerecht wird.",
+        "Der Song ist eine selbstbewusste Absage an einen Ex-Partner.",
+        "Moderner Soul mit klassischem Feeling – wie aus den 60ern, aber frisch produziert.",
+        "Refrain: 'I [XXX] [XXX] you [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kdk8t9sr0yo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/leela-james-don-t-want-you-back.jpg"
+    },
+    {
+      "id": "yt-OO_j8pV3JOw",
+      "title": "More Than I Can Say",
+      "artist": "Leo Sayer",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein britisch-australischer Sänger, bekannt für seine ungewöhnlich hohe Tenorstimme.",
+        "Das Lied ist ein Cover – das Original stammt aus den frühen 60ern.",
+        "Erschienen 1980 – einer seiner letzten großen Charterfolge.",
+        "Ein klassischer Liebessong: die Gefühle sind so groß, dass Worte nicht reichen.",
+        "Refrain: 'I love you [XXX] than I can [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OO_j8pV3JOw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/leo-sayer-more-than-i-can-say.jpg"
+    },
+    {
+      "id": "yt-i8TKoBPkZQo",
+      "title": "Lessons In Love",
+      "artist": "Level 42",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Funk Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Eine britische Band, die Funk, Jazz und Pop zu einem unverwechselbaren Sound verschmolz.",
+        "Der Bassist der Band gilt als einer der technisch versiertesten seiner Generation.",
+        "Erschienen 1986 – einer ihrer größten Charterfolge in UK und Europa.",
+        "Der Song hat einen typisch cleanen, tanzbaren 80er-Funk-Sound.",
+        "Refrain: '[XXX] in [XXX], over and over again...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "i8TKoBPkZQo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/level-42-lessons-in-love.jpg"
+    },
+    {
+      "id": "piano-lewis-loved",
+      "title": "Someone You Loved",
+      "artist": "Lewis Capaldi",
+      "year": 2018,
+      "country": "GB",
+      "genre": "Soul / Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
+      "hints": [
+        "Wochenlang auf Platz 1 weltweit – der Durchbruch eines schottischen Singer-Songwriters.",
+        "Thematisiert den herben Verlust und das Gefühl, ohne jemanden ungeschützt zu sein.",
+        "Besticht durch die raue, leidenschaftliche Stimme und den herzzerreißenden Refrain.",
+        "Das Video thematisiert Organspende auf sehr berührende Weise.",
+        "Refrain: 'Now the day [XXX], into [XXX]fall! And you're not [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm going under and this time I fear there's no one to save me",
+          "This all or nothing really got a way of driving me crazy",
+          "I need somebody to heal, somebody to know, somebody to have"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "zABLecsR5UE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lewis-loved.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "piano-lifehouse-youandme",
+      "title": "You and Me",
+      "artist": "Lifehouse",
+      "year": 2005,
+      "country": "US",
+      "genre": "Alt-Rock / Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
+      "hints": [
+        "Sehr beliebter Hochzeit-Song in den USA.",
+        "Thematisiert den Moment, in dem die Welt um einen herum verschwindet.",
+        "Besticht durch das schlichte Arrangement und die ehrliche Performance.",
+        "Ein Inbegriff für den romantischen US-Alternative-Sound.",
+        "Refrain: 'It's [XXX] and [XXX], and all of the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "What day is it? And in what month? This clock never seemed so alive",
+          "It's you and me, and all of the people with nothing to do",
+          "Nothing to lose"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ac3HkriqdGQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lifehouse-youandme.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-oz0Oz5tBOg8",
+      "title": "MONTERO (Call Me By Your Name)",
+      "artist": "Lil Nas X",
+      "year": 2021,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Modern",
+        "Modern Anthems",
+        "Popular",
+        "Provocative"
+      ],
+      "hints": [
+        "Das Musikvideo zeigte den Sänger auf einem Striptease-Pole direkt in die Hölle – ein weltweiter Skandal.",
+        "Der Künstler outete sich öffentlich als schwul – dieser Song war sein Statement dazu.",
+        "Der Untertitel des Songs ist inspiriert von einem oscarnominierten Liebesfilm aus dem Jahr 2017.",
+        "Erschienen 2021 – sofort auf Platz 1 in über 30 Ländern.",
+        "Refrain: '[XXX] me by your [XXX], tell me you love me in [XXX]...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not phased, only here to sin",
+          "Call me by your name, tell me you love me in private",
+          "Call me by your name, I don't care if you're lying"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6swmTBVI83k"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-lilnas-montero.jpg"
+    },
+    {
+      "id": "lilnasx-oldtown-2019",
+      "title": "Old Town Road",
+      "artist": "Lil Nas X ft. Billy Ray Cyrus",
+      "year": 2019,
+      "country": "US",
+      "genre": "Country Rap / Hip-Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Hielt mit 19 Wochen den Rekord für die längste Nummer 1 in den US-Charts.",
+        "Löste eine Debatte darüber aus, was 'echter' Country ist.",
+        "Kombiniert Banjo-Samples mit schweren Trap-Beats.",
+        "War ein massiver viraler Erfolg auf Plattformen wie TikTok.",
+        "Refrain: 'I'm gonna take my horse to the [XXX] [XXX] [XXX]! I'm gonna ride 'til I can't no more!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm gonna take my horse to the old town road",
+          "I'm gonna ride 'til I can't no more",
+          "I got the horses in the back, horse tack is attached"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "r7qovpFAGrQ"
+      },
+      "coverUrl": "/covers/lilnasx-oldtown-2019.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Hip Hop Essentials",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-UTHLKHL_whs",
+      "title": "INDUSTRY BABY",
+      "artist": "Lil Nas X, Jack Harlow",
+      "year": 2021,
+      "country": "US",
+      "genre": "Hip-Hop/Trap",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Ein Kollabo zwischen zwei der erfolgreichsten Rap-Newcomer der frühen 2020er.",
+        "Das Musikvideo spielt in einem Gefängnis – eine Anspielung auf gesellschaftliche Ungerechtigkeit.",
+        "Der Song ist eine triumphale Antwort auf alle, die an ihm gezweifelt haben.",
+        "Produziert von Kanye West und Take a Daytrip – ein massiver Trap-Beat.",
+        "Refrain: 'I told you long ago, on the [XXX] [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "UTHLKHL_whs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lil-nas-x--jack-harlow-industry-baby.jpg"
+    },
+    {
+      "id": "rock-linkin-park-in-the-end",
+      "title": "In the End",
+      "artist": "Linkin Park",
+      "year": 2000,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Intense",
+        "Modern Rock",
+        "Moody",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Einer der definierenden Songs des Nu-Metal-Genres mit einer Mischung aus Rap und Gesang.",
+        "Der Sänger mochte den Song anfangs gar nicht und wollte ihn nicht auf dem Album haben – ein Glück, dass er überstimmt wurde.",
+        "Das Musikvideo nutzt für die damalige Zeit wegweisendes CGI in einer Wüstenwelt.",
+        "Thematisiert das Scheitern von Bemühungen und das Gefühl der Vergeblichkeit.",
+        "Refrain: 'I tried so hard and got so far, but [XXX] the [XXX] it doesn't even matter!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It starts with one thing, I don't know why, it doesn't even matter how hard you try",
+          "Keep that in mind, I designed this rhyme to explain in due time",
+          "I tried so hard and got so far, but in the end it doesn't even matter"
+        ],
+        "fake": "Nothing's gonna change the way I feel about the things we did for real"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eVTXPUF4Oz4"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-linkin-park-in-the-end.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "rock-linkin-park-numb",
+      "title": "Numb",
+      "artist": "Linkin Park",
+      "year": 2003,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Intense",
+        "Rock"
+      ],
+      "hints": [
+        "Das Musikvideo wurde teilweise in Prag gedreht (Karlsbrücke, Veitsdom).",
+        "Einer der erfolgreichsten Songs der Band, der oft mit Jay-Z gemixt wurde ('Encore').",
+        "Thematisiert den Druck, den Erwartungen anderer gerecht werden zu müssen.",
+        "Ikonisches Synthesizer-Intro und die kraftvolle, emotionale Stimme des Sängers.",
+        "Refrain: 'I've become so [XXX], I can't feel you there!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm tired of being what you want me to be, feeling so faithless, lost under the surface",
+          "Don't know what you're expecting of me, put under the pressure of walking in your shoes",
+          "I've become so numb, I can't feel you there, become so tired, so much more aware"
+        ],
+        "fake": "Taking my chances, making my moves, I've got nothing left to lose"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kXYiU_JCYtU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-linkin-park-numb.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "piano-lp-onemore",
+      "title": "One More Light",
+      "artist": "Linkin Park",
+      "year": 2017,
+      "country": "US",
+      "genre": "Pop / Electronic / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
+      "hints": [
+        "Zutiefst bewegender Song über Mitgefühl und den Wert eines einzelnen Lebens.",
+        "Wurde nach dem tragischen Tod des Sängers 2017 zur Hymne für die Trauerarbeit der Fans weltweit.",
+        "Besticht durch die zerbrechliche Produktion und den intimen Gesang.",
+        "Thematisiert die Frage: Wer kümmert sich, wenn ein weiteres Licht erlischt?",
+        "Refrain: 'Who cares if one [XXX] [XXX] goes out? Well I do!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Should've stayed, were there signs I ignored?",
+          "Can I help you, not to hurt, anymore?",
+          "Who cares if one more light goes out, well I do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Tm8LGxTLtQk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lp-onemore.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    }
+  ]
+}

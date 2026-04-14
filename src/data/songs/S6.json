@@ -1,0 +1,549 @@
+{
+  "songs": [
+    {
+      "id": "metal-soia-stepdown",
+      "title": "Step Down",
+      "artist": "Sick of It All",
+      "year": 1994,
+      "country": "US",
+      "genre": "New York Hardcore",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Bekannt für das humorvolle Musikvideo, das Mosh-Tanzstile erklärt.",
+        "Thematisiert Fehlverhalten und den Wunsch nach Veränderung in der Szene.",
+        "[XXX] of It All sind Urgesteine des NYHC.",
+        "Besitzt einen extrem mitreißenden Groove.",
+        "Refrain: 'You better [XXX] [XXX]! You better think twice!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You better step down, you better think twice, for the sake of the life",
+          "We don't need your hate, we don't need your lies",
+          "NYHC for the world to see!"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MavzT_FUiuM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-soia-stepdown.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "german-sido-bilder",
+      "title": "Bilder im Kopf",
+      "artist": "Sido",
+      "year": 2012,
+      "country": "DE",
+      "genre": "Hip Hop / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Thoughtful",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Markierte [XXX]s Wandel vom 'Masken-Rapper' zum ernstzunehmenden Künstler.",
+        "Handelt von den Erinnerungen und Erfahrungen, die einen Menschen prägen.",
+        "Besitzt eine extrem eingängige Melodie und einen nachdenklichen Text.",
+        "Einer der erfolgreichsten deutschen Rap-Songs aller Zeiten im Mainstream.",
+        "Refrain: 'Ich kuck' zurück auf eine wunderschöne Zeit!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich hab' das alles mal gelernt, doch wieder vergessen",
+          "Ich kuck zurück auf eine wunderschöne Zeit",
+          "Und ich hab diese Bilder im Kopf, die mir keiner nehmen kann"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my life tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "RveIJFR7LV4"
+      },
+      "coverUrl": "/covers/german-sido-bilder.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-ycqk0gfpyxQ",
+      "title": "Hoppípolla (Planet Earth II Mix)",
+      "artist": "Sigur Rös",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ycqk0gfpyxQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sigur-rös-hoppípolla--planet-earth-ii-mix-.jpg"
+    },
+    {
+      "id": "german-silbermond-das-beste",
+      "title": "Das Beste",
+      "artist": "Silbermond",
+      "year": 2006,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Serious"
+      ],
+      "hints": [
+        "Eine der erfolgreichsten deutschen Balladen der 2000er Jahre.",
+        "Der Song ist ein Liebesgeständnis und wird oft auf Hochzeiten gespielt.",
+        "Die Band stammt aus Bautzen in Sachsen.",
+        "Gewann mehrere Echos und blieb monatelang in den Charts.",
+        "Refrain: 'Du bist das [XXX], was mir je passiert ist, es tut so gut, wie du mich liebst.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich habe dich gefunden, ich hab' dich gesucht, ich hab' dich gesehen",
+          "Du bist das Beste, was mir je passiert ist, es tut so gut, wie du mich liebst",
+          "Ich sag's dir viel zu selten, doch ich mein's genau so wie ich's sag"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
+      "links": {
+        "youtube": "LyYAQHDMqfA"
+      },
+      "coverUrl": "/covers/german-silbermond-das-beste.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "finale-silksonic-leave",
+      "title": "Leave the Door Open",
+      "artist": "Silk Sonic (Bruno Mars & Anderson .Paak)",
+      "year": 2021,
+      "country": "US",
+      "genre": "Soul / R&B / Retro",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Perfekte Hommage an den Philly Soul der 70er Jahre.",
+        "Besticht durch die makellosen Harmonien und den geschmeidigen Groove.",
+        "Thematisiert (mit viel Schmelz in der Stimme) die Einladung zu einem romantischen Abend.",
+        "Gewann mehrere Grammys, inklusive Song des Jahres.",
+        "Refrain: 'I'm lascia' the [XXX] [XXX]! (I'm lascia' the [XXX] [XXX])'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm a-leaving the door open, I'm a-leaving the door open",
+          "I'm a-leaving the door open, girl, hoping that you feel the way I feel",
+          "And you want me like I want you tonight"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "adLGHcj_fmA"
+      },
+      "coverUrl": "/covers/finale-silksonic-leave.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-BDQ17frLWYQ",
+      "title": "Cómo Lo Hizo (Vídeo Oficial en Vivo)",
+      "artist": "Silvestre Dangond",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BDQ17frLWYQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/silvestre-dangond-cómo-lo-hizo--vídeo-oficial-en-vivo-.jpg"
+    },
+    {
+      "id": "yt-xjWb_xeP1pA",
+      "title": "Niégame Tres Veces (Vídeo Oficial en Vivo)",
+      "artist": "Silvestre Dangond",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xjWb_xeP1pA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/silvestre-dangond-niégame-tres-veces--vídeo-oficial-en-vivo-.jpg"
+    },
+    {
+      "id": "legends-simon-garfunkel-bridge",
+      "title": "Bridge Over Troubled Water",
+      "artist": "Simon & Garfunkel",
+      "year": 1970,
+      "country": "US",
+      "genre": "Folk Rock / Gospel",
+      "difficulty": "medium",
+      "mood": [
+        "Inspiring",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Die wohl berühmteste Klavier-Ballade der US-Folk-Geschichte.",
+        "Besticht durch den unglaublichen Gesang von Art.",
+        "Wurde zu einer Hymne für Beistand und Hilfe in schwierigen Zeiten.",
+        "Gewann fünf Grammys im Jahr 1971.",
+        "Refrain: 'Like a [XXX] [XXX] [XXX] [XXX], I will lay me down!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When you're weary, feeling small, when tears are in your eyes, I will dry them all",
+          "I'm on your side when times get rough and friends just can't be found",
+          "Like a bridge over troubled water, I will lay me down"
+        ],
+        "fake": [
+          "In the middle of the island, we're looking for the silent sun",
+          "I will dry them all, with my empty hands",
+          "Like a fridge in the winter sun, I will feed you all"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4G-YQA_bsOU",
+        "spotify": "6l8EbYRtQMgKOyc1gcDHF9",
+        "amazonMusic": "B001UW13A8"
+      },
+      "coverUrl": "/covers/legends-simon-garfunkel-bridge.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends"
+      ]
+    },
+    {
+      "id": "country-simon-silence",
+      "title": "The Sound of Silence",
+      "artist": "Simon & Garfunkel",
+      "year": 1964,
+      "country": "US",
+      "genre": "Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Die ultimative Folk-Ballade über mangelnde Kommunikation.",
+        "Besticht durch die perfekten Harmonien der beiden Sänger.",
+        "Wurde zum Inbegriff für die Nachdenklichkeit der Mittsechziger Jahre.",
+        "Berühmt als Teil des [XXX]tracks zum Film 'The Graduate'.",
+        "Refrain: 'Hello darkness, my old friend! I've come to talk with you again!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hello darkness, my old friend, I've come to talk with you again",
+          "Because a vision softly creeping, left its seeds while I was sleeping",
+          "And the vision that was planted in my brain, still remains"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NAEppFUWLfc"
+      },
+      "coverUrl": "/covers/country-simon-silence.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "80s-simple-minds-forget",
+      "title": "Don't You (Forget About Me)",
+      "artist": "Simple Minds",
+      "year": 1985,
+      "country": "GB",
+      "genre": "New Wave / Synth Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Happy",
+        "Inspirational",
+        "Inspiring"
+      ],
+      "hints": [
+        "Wurde durch den Eröffnungs- und Abspann von 'The Breakfast Club' unsterblich.",
+        "Die Band '[XXX] [XXX]' wollte den Song erst gar nicht aufnehmen.",
+        "Die berühmten 'La-la-la-la'-Gesänge am Ende sind weltbekannt.",
+        "Das Symbol für das Teenager-Lebensgefühl der 80er Jahre.",
+        "Wer erinnert sich an die erhobene Faust am Ende?"
+      ],
+      "lyrics": {
+        "real": [
+          "Hey, hey, hey, hey! Oh oh oh oh!",
+          "Don't you forget about me, don't don't don't don't",
+          "Will you stand above me, look my way, never love me?"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CdqoNKCCt7A",
+        "spotify": "5Y8Rj0s6wuM5DlQdllYiWl",
+        "amazonMusic": "B002L4U5RG"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-simple-minds-forget.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "Movie Hits",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-simple-perfect",
+      "title": "Perfect",
+      "artist": "Simple Plan",
+      "year": 2002,
+      "country": "CA",
+      "genre": "Pop-Punk / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Honest",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff für jugendliche Protest-Balladen gegen elterliche Erwartungen.",
+        "Thematisiert den Schmerz, nicht 'perfekt' genug zu sein.",
+        "Besticht durch das melancholische Piano und die ehrlichen Shouts.",
+        "Wurde zu einer Hymne der Emo-Ära.",
+        "Refrain: 'I'm sorry I can't be [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hey dad, look at me, think back and talk to me",
+          "And now I try hard to make it, I just want to make you proud",
+          "I'm sorry I can't be perfect"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "RUi54JTgL5s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-simple-perfect.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-G1ajxH07b7w",
+      "title": "Perfectly Perfect",
+      "artist": "Simple Plan",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=G1ajxH07b7w"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/simple-plan-perfectly-perfect.jpg"
+    },
+    {
+      "id": "yt-swloMVFALXw",
+      "title": "'52) - Gene Kelly - Musical Romantic Comedies - 1950s Movies",
+      "artist": "Singin' in the Rain (Full Song/Dance",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=swloMVFALXw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/singin--in-the-rain--full-song-dance--52----gene-kelly---musical-romantic-comedies---1950s-movies.jpg"
+    }
+  ]
+}

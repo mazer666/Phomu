@@ -1,0 +1,538 @@
+{
+  "songs": [
+    {
+      "id": "finale-sanchez-found",
+      "title": "Until I Found You",
+      "artist": "Stephen Sanchez",
+      "year": 2021,
+      "country": "US",
+      "genre": "Soul-Pop / Retro",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soul-Pop -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Georgia, wrap me up in all your, I want you in my arms",
+          "I would never fall in love again until I found her",
+          "I said I would never fall in love again until I found her"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MlThQTo6D8A"
+      },
+      "coverUrl": "/covers/finale-sanchez-found.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-1E2ihUl6ed4",
+      "title": "Bad Habit",
+      "artist": "Steve Lacy",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1E2ihUl6ed4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/steve-lacy-bad-habit.jpg"
+    },
+    {
+      "id": "jazz-wonder-sirduke",
+      "title": "Sir Duke",
+      "artist": "Stevie Wonder",
+      "year": 1977,
+      "country": "US",
+      "genre": "Funk / Soul / Jazz influence",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "[XXX] [XXX]s Hommage an [XXX] Ellington und die Giganten des Jazz.",
+        "Besticht durch die explosiven, präzisen Bläser-Riffs.",
+        "Ein Inbegriff für Lebensfreude durch Musik.",
+        "Zentraler Track des Albums 'Songs in the Key of Life'.",
+        "Refrain: 'You can feel it all over! You can feel it all over, people!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Music is a world within itself, with a language we all understand",
+          "But you can feel it all over, you can feel it all over people",
+          "For there's Basie, Miller, Satchmo and the king of all Sir Duke"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ETFvmkIA6S4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-wonder-sirduke.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-ftdZ363R9kQ",
+      "title": "Superstition",
+      "artist": "Stevie Wonder",
+      "year": 1972,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Energy",
+        "Groovy",
+        "Legends & Classics",
+        "Popular"
+      ],
+      "hints": [
+        "Besticht durch das markante Clavinet-Riff, das sofort ins Ohr geht.",
+        "Thematisiert den kritischen Umgang mit Aberglauben und irrationalen Ängsten.",
+        "[XXX] [XXX] spielte fast alle Instrumente auf der Aufnahme selbst.",
+        "Ein Inbegriff für den innovativen Funk-Sound der 70er.",
+        "Refrain: 'When you believe in things that you don't understand! Then you suffer!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Very superstitious, writing's on the wall, very superstitious, ladders 'bout to fall",
+          "Thirteen month old baby, broke the lookin' glass",
+          "Seven years of bad luck, the good things in your past"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ftdZ363R9kQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "World, Reggae & Soul",
+        "soul-funk"
+      ],
+      "coverUrl": "/covers/world-stevie-superstition.jpg"
+    },
+    {
+      "id": "yt-f8L7dPatsHQ",
+      "title": "REMINISCE",
+      "artist": "StoneBridge & Crystal Waters",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=f8L7dPatsHQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "yt-qSEdhB9faEs",
+      "title": "Radio Kids",
+      "artist": "Strand of Oaks",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qSEdhB9faEs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/strand-of-oaks-radio-kids.jpg"
+    },
+    {
+      "id": "stromae-alors-on-danse-2010",
+      "title": "Alors on Danse",
+      "artist": "Stromae",
+      "year": 2010,
+      "country": "BE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Neon Night",
+        "Chill"
+      ],
+      "hints": [
+        "[XXX] ist ein belgischer Künstler mit ruandischen Wurzeln; sein Künstlername ist das rückwärts gelesene Wort für 'Maestro'.",
+        "Das Stück wurde zunächst in Belgien veröffentlicht und erst durch einen Remix von Kanye West international bekannt.",
+        "Erschienen 2010; in über 25 Ländern auf Platz 1 und machte [XXX] weltweit über Nacht berühmt.",
+        "Treibender Electro-Beat, melancholische Synthies und ein Sprechgesang auf Französisch über moderne Alltagsprobleme.",
+        "[XXX] singt auf Französisch: Wenn Probleme sich häufen, tanzt man einfach weiter – und dann tanzt man noch mehr."
+      ],
+      "lyrics": {
+        "real": [
+          "Alors on danse, alors on danse",
+          "Qui dit étude dit travail, qui dit travail dit les deniers",
+          "Qui dit amour dit les gosses, dit toujours et dit divorce"
+        ],
+        "fake": "On oublie tout quand la musique commence à jouer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "VHoT4N43jK8"
+      },
+      "coverUrl": "/covers/stromae-alors-on-danse-2010.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "country-sturgill-turtles",
+      "title": "Turtles All the Way Down",
+      "artist": "Sturgill Simpson",
+      "year": 2014,
+      "country": "US",
+      "genre": "Psychedelic Country",
+      "difficulty": "medium",
+      "mood": [
+        "Spiritual",
+        "Moody",
+        "Intelligent"
+      ],
+      "hints": [
+        "Revolutionierte den Country durch die Einbeziehung von transzendentalen und metaphysischen Themen.",
+        "Thematisiert spirituelle Erfahrungen (und psychedelische Drogen) als Weg zur Erkenntnis.",
+        "Besticht durch den entspannten, klassischen Waylon-Jennings-Vibe mit modernen Inhalten.",
+        "Ein Inbegriff für den Aufstieg des intelligenten Country.",
+        "Refrain: '[XXX] all the way [XXX]! It's [XXX] all the way [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've seen Jesus in a tortilla, and the Buddha in a dream",
+          "You don't have to look too far to find the truth",
+          "Love is the only thing that saves us from ourselves"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5XzDDRZo7CY"
+      },
+      "coverUrl": "/covers/country-sturgill-turtles.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-893Hji9r8sI",
+      "title": "Redlight",
+      "artist": "Sub Focus",
+      "year": 2013,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=893Hji9r8sI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sub-focus-redlight.jpg"
+    },
+    {
+      "id": "yt-N3d5foMJCCk",
+      "title": "Still Got Love",
+      "artist": "Sub Focus",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert Liebe und emotionale Bindung durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=N3d5foMJCCk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sub-focus-still-got-love.jpg"
+    },
+    {
+      "id": "yt-i0JXpEjBS_I",
+      "title": "God Mode",
+      "artist": "Sub Focus & Metrik",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=i0JXpEjBS_I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sub-focus---metrik-god-mode.jpg"
+    },
+    {
+      "id": "movie-survivor-burning-heart",
+      "title": "Burning Heart",
+      "artist": "Survivor",
+      "year": 1985,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Inspiring",
+        "Rock"
+      ],
+      "hints": [
+        "Wurde für den Film 'Rocky IV' geschrieben (Kampf gegen Ivan Drago).",
+        "Thematisiert den Konflikt zwischen Ost und West während des Kalten Krieges.",
+        "Erreichte Platz 2 der US-Billboard-Charts.",
+        "Ein klassischer Motivations-Song für Heldenreisen.",
+        "Refrain: 'In the [XXX] [XXX], just about to burst!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Two worlds collide, rival nations",
+          "It's a primitive clash, venting years of frustrations",
+          "In the burning heart, just about to burst, there's a quest for satisfaction"
+        ],
+        "fake": "Fighting for the right, in the middle of the night, shining bright"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Kc71KZG87X4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-survivor-burning-heart.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "80s-survivor-tiger",
+      "title": "Eye of the Tiger",
+      "artist": "Survivor",
+      "year": 1982,
+      "country": "US",
+      "genre": "Rock / Arena Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Inspiring",
+        "Legends & Classics",
+        "Popular",
+        "Powerful",
+        "Rock",
+        "Training"
+      ],
+      "hints": [
+        "Titelsong des Films 'Rocky III' (Wunsch von Sylvester Stallone).",
+        "Der Inbegriff für Motivation und Kämpfergeist.",
+        "Besticht durch das markante, rhythmische Gitarren-Riff am Anfang.",
+        "Ein absoluter Klassiker, der weltweit als Motivations-Song bekannt ist.",
+        "Refrain: 'It's the eye of the [XXX]! It's the thrill of the fight!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Rising up, back on the street, did my time, took my chances",
+          "It's the eye of the tiger, it's the thrill of the fight",
+          "Risin' up to the challenge of our rival"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "btPJPFnesV4",
+        "spotify": "2KH16WveTQWT6KOG9Rg6e2",
+        "amazonMusic": "B0013832A8"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-survivor-tiger.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "youtube-import",
+        "80s Flashback"
+      ]
+    }
+  ]
+}

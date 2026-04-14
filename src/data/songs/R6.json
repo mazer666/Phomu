@@ -1,0 +1,484 @@
+{
+  "songs": [
+    {
+      "id": "2000s-rihanna-umbrella",
+      "title": "Umbrella",
+      "artist": "Rihanna ft. Jay-Z",
+      "year": 2007,
+      "country": "BB/US",
+      "genre": "R&B / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Catchy",
+        "Powerful"
+      ],
+      "hints": [
+        "Sollte ursprünglich von Britney Spears oder Mary J. Blige gesungen werden.",
+        "Der Hook wurde zum Markenzeichen der Nuller Jahre.",
+        "Das Video bei dem sie eine silberne Körperfarbe trägt ist legendär.",
+        "Dominierte weltweit für Monate die Charts.",
+        "Refrain: 'Under my [XXX], ella, ella, eh, eh, eh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When the sun shines, we'll shine together, told you I'll be here forever",
+          "Now that it's raining more than ever, know that we'll still have each other",
+          "You can stand under my umbrella, ella, ella, eh, eh, eh"
+        ],
+        "fake": [
+          "Nothing's gonna stop me now, I'm floating in the sky somehow",
+          "When the moon hits the sky, we fall together",
+          "Come here and hear, dream of change togehter"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CvBfHwUxHIk",
+        "spotify": "49FYlytm3dAAraYgpoJZux",
+        "amazonMusic": "B001SWSXAS"
+      },
+      "coverUrl": "/covers/2000s-rihanna-umbrella.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "german-rio-reiser-koenig",
+      "title": "König von Deutschland",
+      "artist": "Rio Reiser",
+      "year": 1986,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Sänger war ursprünglich der Kopf der Polit-Rock-Band 'Ton Steine Scherben'.",
+        "Der Song zählt humorvoll auf, was der Sänger alles tun würde, wenn er [XXX] wäre.",
+        "Ein absoluter Mitsing-Klassiker auf jeder deutschen Party.",
+        "Thematisiert auf spielerische Weise die Sehnsucht nach Macht und Veränderung.",
+        "Refrain: 'Das alles und noch viel mehr, würd' ich machen, wenn ich [XXX] von [XXX] wär!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Jede Nacht um halb eins, wenn das Fernsehen rauscht, leg ich mich aufs Bett und mal mir aus",
+          "Wie es wäre, wenn ich nicht der wäre, der ich bin, sondern Kanzler, Kaiser, König oder Königin",
+          "Das alles und noch viel mehr, würd' ich machen, wenn ich König von Deutschland wär"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "BzGHhaMUqSQ"
+      },
+      "coverUrl": "/covers/german-rio-reiser-koenig.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-ZLyyT9yW9kA",
+      "title": "Rock DJ",
+      "artist": "Robbie Williams",
+      "year": 2000,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZLyyT9yW9kA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/robbie-williams-rock-dj.jpg"
+    },
+    {
+      "id": "blues-robert-cray-smoking-gun",
+      "title": "Smoking Gun",
+      "artist": "Robert Cray",
+      "year": 1986,
+      "country": "US",
+      "genre": "Blues / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Moody",
+        "Cool"
+      ],
+      "hints": [
+        "[XXX] [XXX] modernisierte den Blues in den 80er Jahren mit seinem 'Clean' Gitarrensound.",
+        "Der Song handelt von Eifersucht und einem vermeintlichen Betrug.",
+        "War ein seltener Blues-Hit in den Billboard Pop-Charts.",
+        "Besticht durch sein knackiges, präzises Gitarrenspiel.",
+        "Refrain: 'I'm standing here with a [XXX] gun!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Waiting for the sun to rise, above the mountain top",
+          "I'm standing here with a smoking gun",
+          "And I'm the one who's gonna make you scream"
+        ],
+        "fake": "In the middle of the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2gQEDwjhaDE"
+      },
+      "coverUrl": "/covers/blues-robert-cray-smoking-gun.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues"
+      ]
+    },
+    {
+      "id": "blues-robert-johnson-crossroad",
+      "title": "Cross Road Blues",
+      "artist": "Robert Johnson",
+      "year": 1936,
+      "country": "US",
+      "genre": "Delta Blues",
+      "difficulty": "hard",
+      "mood": [
+        "Classic",
+        "Moody",
+        "Raw",
+        "Spiritual"
+      ],
+      "hints": [
+        "Die Legende besagt, [XXX] [XXX] habe an einer Kreuzung seine Seele dem Teufel verkauft, um Gitarre spielen zu lernen.",
+        "Ein Inbegriff des rohen, akustischen Delta [XXX].",
+        "Beeinflusste Generationen von Rockgitarristen (Eric Clapton, Keith Richards).",
+        "Die Aufnahme besticht durch [XXX]s klagenden Gesang und sein fesselndes Spiel.",
+        "Refrain: 'I went to the [XXX][XXX], fell down on my knees!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I went to the crossroad, fell down on my knees",
+          "I went to the crossroad, fell down on my knees",
+          "Asked the Lord above have mercy, now save poor Bob, if you please"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet and a silver seat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GsB_cGdgPTo"
+      },
+      "coverUrl": "/covers/blues-robert-johnson-crossroad.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "electro-robert-miles-children",
+      "title": "Children",
+      "artist": "Robert Miles",
+      "year": 1995,
+      "country": "IT",
+      "genre": "Dream Trance",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Melancholic"
+      ],
+      "hints": [
+        "Begründete das Genre des 'Dream Trance'.",
+        "Wurde als Reaktion auf tragische Verkehrsunfälle nach Clubbesuchen geschrieben (als Song zum Runterkommen).",
+        "Die einfache, traurige Klavier-Melodie ist das Markenzeichen des Songs.",
+        "Ein Welthit, der in vielen Ländern Platz 1 erreichte.",
+        "Besitzt fast keinen Text, lebt aber von der Atmosphäre."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental piece with iconic piano melody)"
+        ],
+        "fake": "Dancing in the dreams of a broken child"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "eqHlC6Nrr80"
+      },
+      "coverUrl": "/covers/electro-robert-miles-children.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt-CC5ca6Hsb2Q",
+      "title": "Children [Dream Version]",
+      "artist": "Robert Miles",
+      "year": 1985,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1980er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CC5ca6Hsb2Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/robert-miles-children--dream-version-.jpg"
+    },
+    {
+      "id": "schlager-roberto-blanco-spass",
+      "title": "Ein bisschen Spaß muss sein",
+      "artist": "Roberto Blanco",
+      "year": 1972,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Verbreitet unerschütterlichen Optimismus und Lebensfreude.",
+        "[XXX] [XXX] ist bekannt für [XXX] strahlendes Lächeln und [XXX] Temperament.",
+        "Der Song ist das absolute Lebensmotto des Sängers geworden.",
+        "Zählt zu den bekanntesten Gute-Laune-Liedern des Schlagers.",
+        "Refrain: 'Ein [XXX] Spaß [XXX] [XXX], dann ist die Welt voll Sonnenschein!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ein bisschen Spaß muss sein, dann ist die Welt voll Sonnenschein",
+          "So wie ein schöner Traum, so wie ein grüner Baum",
+          "Wir nehmen alles nicht so schwer"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "x2dTtjXDIn4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-roberto-blanco-spass.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-7Kae99G-Yqk",
+      "title": "Cama y Mesa (Video En Vivo - Stereo Version)",
+      "artist": "Roberto Carlos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7Kae99G-Yqk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/roberto-carlos-cama-y-mesa--video-en-vivo---stereo-version-.jpg"
+    },
+    {
+      "id": "yt-T7bKgTeqGSM",
+      "title": "Detalles (Video En Vivo - Stereo Version)",
+      "artist": "Roberto Carlos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T7bKgTeqGSM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/roberto-carlos-detalles--video-en-vivo---stereo-version-.jpg"
+    },
+    {
+      "id": "yt-Q4nC95SteAU",
+      "title": "El gato que está triste y azul (1979)",
+      "artist": "Roberto Carlos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Q4nC95SteAU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/roberto-carlos-el-gato-que-está-triste-y-azul--1979-.jpg"
+    },
+    {
+      "id": "yt-t_cG6O0n3y0",
+      "title": "Mi Desengaño (Letra Oficial)",
+      "artist": "Roberto Roena",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=t_cG6O0n3y0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/roberto-roena-mi-desengaño--letra-oficial-.jpg"
+    }
+  ]
+}

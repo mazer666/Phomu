@@ -1,0 +1,487 @@
+{
+  "songs": [
+    {
+      "id": "synth-nena-luft",
+      "title": "99 Luftballons",
+      "artist": "Nena",
+      "year": 1983,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle / Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Electronic",
+        "Energy",
+        "German New Wave",
+        "Popular",
+        "Serious",
+        "Upbeat"
+      ],
+      "hints": [
+        "Der weltweit erfolgreichste deutschsprachige Titel des Synth-orientierten New Wave.",
+        "Thematisiert (im Schatten des Kalten Krieges) die Gefahr eines versehentlich ausgelösten Atomkriegs.",
+        "Besticht durch den energetischen Basslauf und [XXX]s charakteristische Stimme.",
+        "Ein Inbegriff für den deutschen Musik-Export der 80er.",
+        "Refrain: '99 [XXX]! Auf ihrem Weg zum Horizont!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hast du etwas Zeit für mich? Dann singe ich ein Lied für dich",
+          "Von 99 Luftballons auf ihrem Weg zum Horizont",
+          "Denkst du vielleicht gerade an mich? Dann singe ich ein Lied für dich"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Fpu5a0Bl8eY",
+        "spotify": "4ZhPLoMzZwewHLLjV1J15c",
+        "amazonMusic": "B0DZWGLXFP"
+      },
+      "coverUrl": "/covers/synth-nena-luft.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "German Classics",
+        "80s-pop",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-JnyzK8NIwog",
+      "title": "Hohe Berge",
+      "artist": "Nena",
+      "year": 1983,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JnyzK8NIwog"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nena-hohe-berge.jpg"
+    },
+    {
+      "id": "yt-NBnYK9-Ti0o",
+      "title": "Ohne Dich (schlaf' ich heut' Nacht nicht ein)",
+      "artist": "Nena",
+      "year": 1984,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NBnYK9-Ti0o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nena-ohne-dich--schlaf--ich-heut--nacht-nicht-ein-.jpg"
+    },
+    {
+      "id": "yt-hZXxmhok1AU",
+      "title": "Age of Consent (2020 Remaster) [Official Music Video]",
+      "artist": "New Order",
+      "year": 1982,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hZXxmhok1AU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/new-order-age-of-consent--2020-remaster---official-music-video-.jpg"
+    },
+    {
+      "id": "synth-neworder-monday",
+      "title": "Blue Monday",
+      "artist": "New Order",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Synthpop / New Wave / Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Club",
+        "Cool",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Einer der einflussreichsten Dance-Tracks aller Zeiten.",
+        "Besticht durch den maschinenhaften Basslauf und den charakteristischen Drum-Computer-Einstieg.",
+        "New [XXX] formierten sich aus den verbliebenen Mitgliedern von Joy Division.",
+        "Die 12-Zoll-Single war so aufwendig gestaltet, dass das Label pro verkauftem Exemplar Geld verlor.",
+        "Refrain: 'How does it feel! To treat me like you do!'"
+      ],
+      "lyrics": {
+        "real": [
+          "How does it feel, to treat me like you do?",
+          "When you've laid your hands upon me, and told me who you are",
+          "I thought I was mistaken, I thought I heard your words"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FYH8DsU2WCk",
+        "spotify": "6hHc7Pks7wtBIW8Z6A0iFq",
+        "amazonMusic": "B001SLQMJ8"
+      },
+      "coverUrl": "/covers/synth-neworder-monday.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-ic1l36GrNOU",
+      "title": "This Town (Official Lyric Video)",
+      "artist": "Niall Horan",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ic1l36GrNOU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/niall-horan-this-town--official-lyric-video-.jpg"
+    },
+    {
+      "id": "yt-Are2FK_P3xY",
+      "title": "The Mercy Seat",
+      "artist": "Nick Cave and the Bad Seeds",
+      "year": 1988,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Are2FK_P3xY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nick-cave-and-the-bad-seeds-the-mercy-seat.jpg"
+    },
+    {
+      "id": "yt-MkDoeLyIQh8",
+      "title": "Super Freaky Girl",
+      "artist": "Nicki Minaj",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MkDoeLyIQh8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nicki-minaj-super-freaky-girl.jpg"
+    },
+    {
+      "id": "yt-7T_09ueky2o",
+      "title": "Voy a Beber | Vídeo Oficial",
+      "artist": "Nicky Jam",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7T_09ueky2o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nicky-jam-voy-a-beber---vídeo-oficial.jpg"
+    },
+    {
+      "id": "yt-7ex4dje0Lzw",
+      "title": "Can’t Forget You (feat. James Blunt)",
+      "artist": "Nicky Romero",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7ex4dje0Lzw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nicky-romero-can-t-forget-you--feat--james-blunt-.jpg"
+    },
+    {
+      "id": "yt-0ZA4flUQz_k",
+      "title": "In My Zone",
+      "artist": "Nicky Romero",
+      "year": 2015,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0ZA4flUQz_k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nicky-romero-in-my-zone.jpg"
+    },
+    {
+      "id": "yt-4mzRpACtJS4",
+      "title": "Piece of Art",
+      "artist": "Nico Santos",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4mzRpACtJS4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nico-santos-piece-of-art.jpg"
+    },
+    {
+      "id": "schlager-nicole-frieden",
+      "title": "Ein bißchen Frieden",
+      "artist": "Nicole",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Inspiring",
+        "Classic"
+      ],
+      "hints": [
+        "Der erste deutsche Sieg beim Eurovision Song Contest überhaupt.",
+        "[XXX] trat mit einer weißen Gitarre im Sitzen auf.",
+        "Das Lied wurde in sieben verschiedenen Sprachen aufgenommen.",
+        "Thematisiert den Wunsch nach Welt[XXX] in Zeiten des Kalten Krieges.",
+        "Refrain: 'Ein [XXX] [XXX], ein [XXX] Sonne, für diese Erde auf der wir wohnen!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Wie eine Blume am Winterrand, wie ein Feuer im eisigen Wind",
+          "Ein bißchen Frieden, ein bißchen Sonne, für diese Erde auf der wir wohnen",
+          "Sing' mit mir ein kleines Lied, dass die Welt in Frieden lebt"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "hp_b-095yPc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-nicole-frieden.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    }
+  ]
+}

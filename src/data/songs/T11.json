@@ -1,0 +1,503 @@
+{
+  "songs": [
+    {
+      "id": "soul-tower-hip",
+      "title": "What Is Hip?",
+      "artist": "Tower of Power",
+      "year": 1973,
+      "country": "US",
+      "genre": "Funk / R&B",
+      "difficulty": "hard",
+      "mood": [
+        "Energy",
+        "Busy",
+        "Intelligent"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "So you're shooting for the stars, and you're thinking of the moon",
+          "But you're just a little bit out of tune",
+          "What is hip? Tell me, tell me, if you think you know"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "o1KCoX_dDBE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-tower-hip.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "country-townes-pancho",
+      "title": "Pancho and Lefty",
+      "artist": "Townes Van Zandt",
+      "year": 1972,
+      "country": "US",
+      "genre": "Folk / Country / Storytelling",
+      "difficulty": "hard",
+      "mood": [
+        "Melancholic",
+        "Poetic",
+        "Dark"
+      ],
+      "hints": [
+        "Inbegriff für poetisches Country-Storytelling über zwei Outlaws.",
+        "Thematisiert Verrat, Einsamkeit und das bittere Ende einer Freundschaft.",
+        "Besonders populär durch das Cover von Willie Nelson und Waylon Jennings.",
+        "[XXX] Van [XXX] gilt als einer der brillantesten Texter seiner Generation.",
+        "Refrain: 'All the Federales say, they could've had him any day!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Living on the road, my friend, was gonna keep you free and clean",
+          "Pancho was a bandit, boy, his horse was fast as polished steel",
+          "Lefty, he can't sing the blues all night long like he used to"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "cOctHMWoYyc"
+      },
+      "coverUrl": "/covers/country-townes-pancho.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "soul-tracy-chapman-fast-car",
+      "title": "Fast Car",
+      "artist": "Tracy Chapman",
+      "year": 1988,
+      "country": "US",
+      "genre": "Folk / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Classic"
+      ],
+      "hints": [
+        "Thematisiert die Hoffnung auf ein besseres Leben und den Teufelskreis der Armut.",
+        "[XXX] [XXX]s tiefe, warme Stimme und das einfache Gitarren-Riff sind ikonisch.",
+        "Wurde durch ihren Auftritt beim Nelson Mandela 70th Birthday Tribute weltberühmt.",
+        "Ein zeitloser Klassiker über Träume und harte Realität.",
+        "Refrain: 'You got a [XXX] car, is it [XXX] enough so we can fly away?'"
+      ],
+      "lyrics": {
+        "real": [
+          "You got a fast car, is it fast enough so we can fly away?",
+          "We gotta make a decision, leave tonight or live and die this way",
+          "I remember we were driving in your car, speed so fast it felt like I was drunk"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DwrHwZyFN7M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-tracy-chapman-fast-car.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "yt-BznFZN573Ig",
+      "title": "Zumba® Fitness - Romy Sibel CHILE choreography",
+      "artist": "Travesura",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BznFZN573Ig"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "yt-OxxggwHFj7M",
+      "title": "Nicky Jam | Video Oficial",
+      "artist": "Travesuras",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OxxggwHFj7M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "hiphop-travis-rockstar",
+      "title": "SICKO MODE",
+      "artist": "Travis Scott",
+      "year": 2018,
+      "country": "US",
+      "genre": "Trap / Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Energy",
+        "Electronic"
+      ],
+      "hints": [
+        "Bekannt für seine drei verschiedenen Beat-Wechsel innerhalb eines Songs.",
+        "Ein Inbegriff für den [XXX]rnen Trap-Sound und [XXX] [XXX]s kreatives Chaos.",
+        "Sorgte bei Konzerten regelmäßig für enorme Energieausbrüche.",
+        "Alicia Keys war ursprünglich nicht für den Gesang vorgesehen (Spaß!).",
+        "Refrain: 'Sun is down, freezin' cold, that's how we already know winter's here!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sun is down, freezin' cold, that's how we already know winter's here",
+          "My dawg would probably do it for a Louis belt",
+          "SICKO MODE, SICKO MODE, SICKO MODE"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6ONRf7h3Mdk"
+      },
+      "coverUrl": "/covers/hiphop-travis-rockstar.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-D8t2C7QV-Xo",
+      "title": "Past Life",
+      "artist": "Trevor Daniel & Selena Gomez",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D8t2C7QV-Xo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/trevor-daniel---selena-gomez-past-life.jpg"
+    },
+    {
+      "id": "yt-zwqrmEMB0wc",
+      "title": "Velha Infancia",
+      "artist": "Tribalistas",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zwqrmEMB0wc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/tribalistas-velha-infancia.jpg"
+    },
+    {
+      "id": "german-trio-da-da-da",
+      "title": "Da Da Da",
+      "artist": "Trio",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle",
+      "difficulty": "easy",
+      "mood": [
+        "Catchy",
+        "Classic",
+        "Fun",
+        "Funny",
+        "Minimalist"
+      ],
+      "hints": [
+        "Ein Beispiel für den extremen Minimalismus der NDW-Ära.",
+        "Wurde durch den Rhythmus eines billigen Casio-Keyboards (VL-1) weltberühmt.",
+        "Handelt von einer kaputten Beziehung, die mit fast schon gelangweilten Worten beendet wird.",
+        "Der Text besteht fast nur aus der titelgebenden Phrase und 'Ich lieb' dich nicht, du liebst mich nicht'.",
+        "Refrain: 'Da da da, ich lieb' dich nicht, du liebst mich nicht, aha aha aha!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Was ist hier los? Was ist passiert? Ich hab' dich geliebt, du hast mich beschissen",
+          "Da da da, ich lieb' dich nicht, du liebst mich nicht, aha aha aha",
+          "Ich lieb' dich nicht, du liebst mich nicht, da da da"
+        ],
+        "fake": "In der kleinen Stadt, wo man keine Träume hat, stehen wir stramm"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "ZviYmTMpBXE",
+        "spotify": "4HCdu48LScraIfJ7Ik7EhE",
+        "amazonMusic": "B09P425PP2"
+      },
+      "coverUrl": "/covers/german-trio-da-da-da.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "80s-pop"
+      ]
+    },
+    {
+      "id": "yt-Q6nYWvLVaQs",
+      "title": "Da Da Da ich lieb dich nicht du liebst mich nicht Aha Aha Aha (Lange Version)",
+      "artist": "Trio",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Q6nYWvLVaQs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/trio-da-da-da-ich-lieb-dich-nicht-du-liebst-mich-nicht-aha-aha-aha--lange-version-.jpg"
+    },
+    {
+      "id": "yt-U_K8958FqoM",
+      "title": "Junge Roemer",
+      "artist": "Trio",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=U_K8958FqoM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/trio-junge-roemer.jpg"
+    },
+    {
+      "id": "yt-sd2yqDVt030",
+      "title": "Arkansas",
+      "artist": "Troy Cartwright",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sd2yqDVt030"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/troy-cartwright-arkansas.jpg"
+    },
+    {
+      "id": "yt-x_uuWhEtm4k",
+      "title": "Deixa em Off (XV Anos Ao Vivo)",
+      "artist": "Turma do Pagode",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x_uuWhEtm4k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/turma-do-pagode-deixa-em-off--xv-anos-ao-vivo-.jpg"
+    }
+  ]
+}

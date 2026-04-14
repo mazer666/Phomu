@@ -1,0 +1,218 @@
+{
+  "songs": [
+    {
+      "id": "piano-bruno-man",
+      "title": "When I Was Your Man",
+      "artist": "Bruno Mars",
+      "year": 2012,
+      "country": "US",
+      "genre": "Pop / Piano Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
+      "hints": [
+        "Inbegriff für Reue und das Eingeständnis eigener Fehler nach einer Trennung.",
+        "Besticht durch die Reduktion auf Stimme und Klavier.",
+        "Thematisiert all die Dinge, die man hätte tun sollen (Blumen kaufen, Hand halten).",
+        "Wurde zu einem der meistgestreamten Piano-Hits der 2010er.",
+        "Refrain: 'I should've bought you flowers! And held your hand!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Same bed but it feels just a little bit bigger now",
+          "Our song on the radio but it don't sound the same",
+          "I should've bought you flowers, and held your hand"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ekzHIouo8Q4",
+        "spotify": "0nJW01T7XtvILxQgC5J7Wh",
+        "amazonMusic": "B07VZTGYSR"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-bruno-man.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-IYFqc9gk4qI",
+      "title": "Leave The Door Open",
+      "artist": "Bruno Mars & Anderson .Paak",
+      "year": 2021,
+      "country": "INT",
+      "genre": "R&B / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "R&B-Ballade mit Silky-Strings-Arrangement und Soul-Vocals.",
+        "Collaboration zweier Genre-Legenden mit klassischen Soul-Elementen.",
+        "Thematisiert die Hoffnung auf zweite Chancen und offene Türen in Liebe.",
+        "Produziert mit zeitlosem Soul-Sound der 60er/70er, aber moderne Qualität.",
+        "Der Refrain ist eine sanfte Bitte: Beziehung nicht komplett beenden, Möglichkeit offen halten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IYFqc9gk4qI",
+        "spotify": "4pryE6cN2gFL1FVF5fYINl",
+        "amazonMusic": "B09TDBSLQ7"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bruno-mars---anderson--paak-leave-the-door-open.jpg"
+    },
+    {
+      "id": "yt-LCpjdohpuEE",
+      "title": "Permission to Dance",
+      "artist": "BTS",
+      "year": 2021,
+      "country": "KR",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Feel-good Pop-Anthem mit optimistischer Botschaft und eingängigem Hook.",
+        "Thematisiert die Freiheit zu tanzen trotz oder ohne Musik – metaphorisch für Befreiung.",
+        "Leichte, zugängliche Produktion ohne aggressiven Sound – inklusiv gemacht.",
+        "Besticht durch die Sing-Along-Qualität und positive Energy.",
+        "Wurde zur globalen Hymne für Hoffnung und Zusammenhalt in schwierigen Zeiten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LCpjdohpuEE",
+        "spotify": "3XYRV7ZSHqIRDG87DKTtry",
+        "amazonMusic": "B09MZWK3JT"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bts-permission-to-dance.jpg"
+    },
+    {
+      "id": "world-bvsc-chan-chan",
+      "title": "Chan Chan",
+      "artist": "Buena Vista Social Club",
+      "year": 1997,
+      "country": "CU",
+      "genre": "Son Cubano",
+      "difficulty": "medium",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Melancholic"
+      ],
+      "hints": [
+        "Kubanisches Son-Lied mit nostalgischer, melancholischer Atmosphäre.",
+        "Akustische Gitarren mit traditioneller kubanischer Instrumentation und Arrangement.",
+        "Thematisiert Reisen, Begegnung und verlorene Liebe in romantischer Weise.",
+        "Charakteristisch für kubanische Musik-Tradition der 50er Jahre, modern neu aufgelegt.",
+        "Der Song wurde zum Symbol für die Wiederentdeckung der kubanischen Musikgeschichte global."
+      ],
+      "lyrics": {
+        "real": [
+          "De Alto Cedro voy para Marcané, llego a Cueto voy para Mayarí",
+          "El cariño que te tengo no te lo puedo negar",
+          "Se me sale la babita, yo no lo puedo evitar"
+        ],
+        "fake": "Bajo la luna de Cuba, cantamos con mucha fortuna"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tGbRZ73NvlY",
+        "spotify": "3bxZhauuIU4ubctdRZwPYW",
+        "amazonMusic": "B0DZW26TRH"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-bvsc-chan-chan.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "hiphop-busta-woohah",
+      "title": "Woo Hah!! Got You All in Check",
+      "artist": "Busta Rhymes",
+      "year": 1996,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Energy",
+        "Crazy",
+        "Fun"
+      ],
+      "hints": [
+        "Energetischer Hip-Hop-Track mit schnellem Rhyme-Delivery und Funk-Sample.",
+        "Besticht durch die rhythmische Komplexität und die aggressive Vocal-Präsenz.",
+        "Thematisiert Dominanz, Kompetenz und Selbstbewusstsein im Club/Party-Setting.",
+        "Der Production-Style kombiniert Funk-Samples mit modernem 90er Hip-Hop-Sound.",
+        "Der Song etablierte einen neuen Standard für energetische, technisch anspruchsvolle Rap-Performance."
+      ],
+      "lyrics": {
+        "real": [
+          "Woo-hah!! Got you all in check!",
+          "Woo-hah!! Got you all in check!",
+          "Yeah, yeah, yeah, check it out, I'm the one who's gonna make you scream"
+        ],
+        "fake": "Moving to the left, moving to the right, in the neon light"
+      },
+      "links": {
+        "youtube": "EQzvQO2LcA4",
+        "spotify": "09WxJCWFMWAxTHBLLelpDS",
+        "amazonMusic": "B00FYJHSRA"
+      },
+      "coverUrl": "/covers/hiphop-busta-woohah.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    }
+  ]
+}

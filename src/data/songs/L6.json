@@ -1,0 +1,463 @@
+{
+  "songs": [
+    {
+      "id": "class-beethoven-5",
+      "title": "Symphony No. 5 (Fate)",
+      "artist": "Ludwig van Beethoven",
+      "year": 1808,
+      "country": "DE",
+      "genre": "Classical / Romantic",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Dramatic",
+        "Classic"
+      ],
+      "hints": [
+        "Bekannt für das berühmteste Vier-Noten-Motiv der Musikgeschichte ('Da-da-da-duuum').",
+        "Thematisiert (laut Legende) das Schicksal, das an die Pforte klopft.",
+        "Der Komponist schrieb dieses Werk während seiner fortschreitenden Ertaubung – ein Triumph über das Schicksal.",
+        "Ein Inbegriff für die Wucht der klassischen Symphonie.",
+        "Das Eröffnungsmotiv – drei kurze, ein langer Ton – ist das bekannteste der Musikgeschichte."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Masterpiece)",
+          "Da-da-da-duuum",
+          "Da-da-da-duuum"
+        ],
+        "fake": "Singing in the rain tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "jamsU8wICr0",
+        "spotify": "0eBr9W1GE5nou99gRdy02J",
+        "amazonMusic": "B001SWMB0G"
+      },
+      "coverUrl": "/covers/class-beethoven-5.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-_fWiSYBFn8M",
+      "title": "Yo No Sé Mañana",
+      "artist": "Luis Enrique",
+      "year": 2001,
+      "country": "NI",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein nicaraguanischer Salsa-Sänger, der in Miami zur Latin-Pop-Größe wurde.",
+        "Der Titel bedeutet 'Ich weiß nicht, was morgen ist' – ein Liebessong über Ungewissheit.",
+        "Ein romantischer Latin-Pop-Song mit Salsa-Einflüssen.",
+        "Erschienen 2001 – einer seiner bekanntesten Hits.",
+        "Refrain: 'Yo no sé [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "_fWiSYBFn8M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/luis-enrique-yo-no-se-mañana.jpg"
+    },
+    {
+      "id": "yt-EsfSuL-VFBw",
+      "title": "Aquí Estoy Yo",
+      "artist": "Luis Fonsi ft. Aleks Syntek, Noel Schajris, David Bisbal",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Sänger, der später mit einem der meistgestreamten Songs aller Zeiten weltberühmt werden sollte.",
+        "Eine Kollabo mit gleich drei weiteren Latin-Pop-Stars aus verschiedenen Ländern.",
+        "Der Titel bedeutet 'Hier bin ich' – eine Liebeserklärung voller Treue.",
+        "Ein sanfter, mitreißender Latin-Pop-Song, der zum Mitsingen einlädt.",
+        "Refrain: '[XXX] [XXX] [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "EsfSuL-VFBw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-fonsi-aqui-estoy-yo-ft--aleks-syntek--noel-schajris--david-bisbal.jpg"
+    },
+    {
+      "id": "yt-dgFgGrljh1I",
+      "title": "Llueve Por Dentro",
+      "artist": "Luis Fonsi",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der puerto-ricanische Sänger, der später 'Despacito' veröffentlichen sollte.",
+        "Der Titel ist eine poetische Metapher für inneren Schmerz – 'es regnet innen'.",
+        "Eine emotionale Latin-Pop-Ballade über Herzschmerz.",
+        "Typischer weicher, romantischer Sound mit Bläsern und Piano.",
+        "Refrain: '[XXX] por [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dgFgGrljh1I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-fonsi-llueve-por-dentro.jpg"
+    },
+    {
+      "id": "yt-8hRGBcr_gJc",
+      "title": "No Me Doy Por Vencido",
+      "artist": "Luis Fonsi",
+      "year": 2009,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein puerto-ricanischer Latin-Pop-Sänger, der für seine romantischen Balladen bekannt ist.",
+        "Der Titel bedeutet 'Ich gebe nicht auf' – ein Liebesbekenntnis trotz allem.",
+        "Ein mitreißender Latin-Pop-Song über Hartnäckigkeit in der Liebe.",
+        "Erschienen 2009 – einer seiner bekanntesten Songs vor dem Despacito-Durchbruch.",
+        "Refrain: 'No me [XXX] por [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "8hRGBcr_gJc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-fonsi-no-me-doy-por-vencido.jpg"
+    },
+    {
+      "id": "yt-YDswuo2dIvY",
+      "title": "Échame La Culpa",
+      "artist": "Luis Fonsi & Demi Lovato",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Kollabo zwischen einem lateinamerikanischen und einem US-amerikanischen Pop-Star.",
+        "Der Titel bedeutet 'Gib mir die Schuld' – eine selbstironische Aussage nach einer Trennung.",
+        "Erschienen 2017 auf der Welle des Latin-Pop-Booms – ein bewusst zweisprachiger Song.",
+        "Wechselt nahtlos zwischen Spanisch und Englisch.",
+        "Refrain: '[XXX] la [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YDswuo2dIvY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-fonsi---demi-lovato-échame-la-culpa.jpg"
+    },
+    {
+      "id": "luis-fonsi-despacito-2017",
+      "title": "Despacito",
+      "artist": "Luis Fonsi ft. Daddy Yankee",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "easy",
+      "mood": [
+        "Summer Vibes",
+        "Dance Floor",
+        "Road Trip"
+      ],
+      "hints": [
+        "Das Musikvideo wurde in La Perla gedreht – einem historischen, damals als gefährlich geltenden Viertel von San Juan, Puerto Rico.",
+        "Die Remix-Version mit Justin Bieber machte den Song weltweit noch populärer, obwohl das Original bereits ein Mega-Hit war.",
+        "Erschienen 2017; erster hauptsächlich spanischsprachiger Nummer-1-Hit in den USA seit 'Macarena' im Jahr 1996.",
+        "Akustische Gitarre trifft auf Reggaeton-Rhythmus – eine unerwartete, aber perfekte Kombination.",
+        "Der Song ist eine langsame, behutsame Annäherung – der Titel beschreibt das Tempo des Liedes selbst."
+      ],
+      "lyrics": {
+        "real": [
+          "Despacito, quiero respirar tu cuello despacito",
+          "Deja que te diga cosas al oído para que te acuerdes si no estás conmigo",
+          "Pasito a pasito, suave suavecito"
+        ],
+        "fake": "Bailando juntos unter der Sonne"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kJQP7kiw5Fk"
+      },
+      "coverUrl": "/covers/luis-fonsi-despacito-2017.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-D79-FN99dRI",
+      "title": "Fría Como El Viento",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Einer der meistverehrten lateinamerikanischen Sänger überhaupt – bekannt als 'El Sol de México'.",
+        "Der Titel ist eine Metapher für eine Person, die emotional kalt und unnahbar ist.",
+        "Erschienen 2016 als Teil seines Comebacks nach Jahren Pause.",
+        "Ein dramatischer Balladen-Sound mit üppigen Streicher-Arrangements – typisch für seine Produktionen.",
+        "Refrain: '[XXX] como el [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "D79-FN99dRI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-miguel--fría-como-el-viento-.jpg"
+    },
+    {
+      "id": "yt-wOjzo02Tmck",
+      "title": "La Incondicional",
+      "artist": "Luis Miguel",
+      "year": 1989,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mexikanischer Superstar, der seit den 80ern die Latin-Pop-Charts dominiert.",
+        "Der Titel bedeutet 'Die Bedingungslose' – ein Lobgesang auf eine Frau, die immer da ist.",
+        "Erschienen 1989 – eines seiner ikonischsten Lieder.",
+        "Ein romantischer Bolero-Pop-Song, der Generationen von Lateinamerikanern bewegt hat.",
+        "Refrain: 'La [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wOjzo02Tmck"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-miguel--la-incondicional-.jpg"
+    },
+    {
+      "id": "yt-giAE7Yz7gHI",
+      "title": "Por Debajo de la Mesa",
+      "artist": "Luis Miguel",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Einer der erfolgreichsten lateinamerikanischen Sänger – mit Netflix-Serie über sein Leben.",
+        "Der Titel ist eine Metapher für eine geheime, verbotene Beziehung.",
+        "Ein Bolero-Pop-Song über eine heimliche Liebe.",
+        "Typisch für seinen romantischen, eleganten Stil der späten 80er/frühen 90er.",
+        "Refrain: '[XXX] de la [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "giAE7Yz7gHI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-miguel--por-debajo-de-la-mesa-.jpg"
+    },
+    {
+      "id": "yt-OThKTAVrUMQ",
+      "title": "Tengo Todo Excepto A Ti",
+      "artist": "Luis Miguel",
+      "year": 1992,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mexikanischer Superstar, bekannt für seinen unverkennbaren romantischen Stil.",
+        "Der Titel fasst den Schmerz perfekt zusammen: alles haben, aber die eine Person fehlt.",
+        "Ein klassischer Latin-Pop-Liebessong über Einsamkeit trotz äußerem Erfolg.",
+        "Erschienen 1992 – Teil seiner erfolgreichsten Schaffensphase.",
+        "Refrain: 'Tengo [XXX] excepto a [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OThKTAVrUMQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-miguel--tengo-todo-excepto-a-ti-.jpg"
+    },
+    {
+      "id": "yt-ETVV404OzTA",
+      "title": "Entrégate",
+      "artist": "Luis Miguel",
+      "year": 1987,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Noch ein Klassiker des mexikanischen Superstars – diesmal ein leidenschaftlicher Appell.",
+        "Der Titel bedeutet 'Gib dich hin' – eine direkte Aufforderung zur Liebe.",
+        "Ein eleganter Bolero-Pop-Song mit romantischer Dramatik.",
+        "Erschienen 1987 – aus seiner erfolgreichsten frühen Schaffensphase.",
+        "Refrain: '[XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ETVV404OzTA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luis-miguel-entregate.jpg"
+    },
+    {
+      "id": "yt-eRj0mVmzT5s",
+      "title": "You're Not There",
+      "artist": "Lukas Graham",
+      "year": 2016,
+      "country": "DK",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional"
+      ],
+      "hints": [
+        "Eine dänische Band, bekannt für emotionale, persönliche Texte über Verlust und Familie.",
+        "Der Song handelt vom Verlust eines geliebten Menschen – geschrieben über seinen verstorbenen Vater.",
+        "Erschienen 2016 auf dem Album '3' – benannt nach der Hausnummer seines Elternhauses.",
+        "Eine melancholische Pop-Ballade mit eindringlichem Gesang.",
+        "Refrain: 'You're [XXX] [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eRj0mVmzT5s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lukas-graham-you-re-not-there--lyric-video-.jpg"
+    }
+  ]
+}

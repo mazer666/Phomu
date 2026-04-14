@@ -1,0 +1,552 @@
+{
+  "songs": [
+    {
+      "id": "dance-scatman-john-scatman",
+      "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+      "artist": "Scatman John",
+      "year": 1994,
+      "country": "US",
+      "genre": "Eurodance",
+      "difficulty": "hard",
+      "mood": [
+        "Fun",
+        "Fast",
+        "Creative"
+      ],
+      "hints": [
+        "Der Sänger war ein Jazz-Pianist, der zeitlebens stotterte und dies zu seinem Markenzeichen machte.",
+        "Der Song vermischt Scat-Gesang mit Eurodance-Beats.",
+        "Thematisiert den Umgang mit Stottern und die Überwindung von Hindernissen.",
+        "Wurde im Alter von 52 Jahren zum Weltstar.",
+        "Refrain: 'I'm the [XXX]! Ski-ba-bop-ba-dop-bop!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm the Scatman! Ski-ba-bop-ba-dop-bop!",
+          "Everybody stutters one way or the other, so check out my message to you",
+          "Matter of fact, don't let nothing hold you back, if the Scatman can do it, so can you"
+        ],
+        "fake": "Moving to the left, moving to the right, in the blue light"
+      },
+      "links": {
+        "youtube": "Hy8kmNEo1i8"
+      },
+      "coverUrl": "/covers/dance-scatman-john-scatman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "rock-scorpions-wind-of-change",
+      "title": "Wind of Change",
+      "artist": "Scorpions",
+      "year": 1990,
+      "country": "DE",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Melancholic",
+        "Inspiring",
+        "Peace"
+      ],
+      "hints": [
+        "Wurde zur inoffiziellen Hymne des Mauerfalls und des Endes des Kalten Krieges.",
+        "Gilt als eine der meistverkauften deutschen Singles aller Zeiten.",
+        "Das charakteristische Pfeifen am Anfang ist weltweit bekannt.",
+        "Die Band wurde zu diesem Song durch den Besuch beim 'Moscow Music Peace Festival' inspiriert.",
+        "Sänger Klaus Meine schrieb den Song sowohl auf Englisch als auch auf Russisch."
+      ],
+      "lyrics": {
+        "real": [
+          "I follow the Moskva down to Gorky Park, listening to the wind of change",
+          "An August summer night, soldiers passing by, listening to the wind of change",
+          "The world is closing in, did you ever think that we could be so close like brothers?"
+        ],
+        "fake": "Berlin is calling, the wall is falling, see the people stand as one"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "n4RjJKxsamQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-scorpions-wind-of-change.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "movie-seal-kiss-from-a-rose",
+      "title": "Kiss from a Rose",
+      "artist": "Seal",
+      "year": 1994,
+      "country": "GB",
+      "genre": "Soul-pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Moody"
+      ],
+      "hints": [
+        "Wurde ein Welthit durch den Soundtrack von 'Batman Forever'.",
+        "Der Sänger [XXX] hielt den Song anfangs für 'peinlich' und wollte ihn wegwerfen.",
+        "Der Song gewann drei Grammys, darunter Record and Song of the Year.",
+        "Bekannt für seine komplexen Harmonien und Folk-Einflüsse.",
+        "Refrain: 'But did you know that when it snows, my eyes become large and the light that you shine can be seen?'"
+      ],
+      "lyrics": {
+        "real": [
+          "There used to be a greying tower alone on the sea",
+          "You became the light on the dark side of me",
+          "Love remained a drug that's the high and not the pill"
+        ],
+        "fake": "In the middle of the night, I will hold you tight and treat you right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "hDd2G_V1rzc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-seal-kiss-from-a-rose.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "reggae-sean-paul-get-busy",
+      "title": "Get Busy",
+      "artist": "Sean Paul",
+      "year": 2002,
+      "country": "JM",
+      "genre": "Dancehall",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Dance",
+        "Club"
+      ],
+      "hints": [
+        "Basiert auf dem legendären 'Diwali Riddim'.",
+        "[XXX] [XXX] brachte den jamaikanischen Dancehall-Sound damit endgültig in den globalen Mainstream.",
+        "Bekannt für den extrem treibenden, rhythmischen Klatsch-Sound.",
+        "Wurde zu einer absoluten Party-Hymne der frühen 2000er.",
+        "Refrain: 'Shake that thing Miss Cana Cana!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Shake that thing Miss Cana Cana, shake that thing Miss Sugar Sugar",
+          "Get busy, get busy, get busy, get busy",
+          "Just shake that thing, girl, I wanna see you go down"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "o0aGL298y9Q"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-sean-paul-get-busy.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "german-seeed-dickes-b",
+      "title": "Dickes B",
+      "artist": "Seeed",
+      "year": 2001,
+      "country": "DE",
+      "genre": "Reggae/Dancehall",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Cool",
+        "Groovy"
+      ],
+      "hints": [
+        "Eine Liebeserklärung an die Stadt Berlin ([XXX] B).",
+        "Die Band besteht aus 11 Mitgliedern und kombiniert Reggae mit Dancehall und Bläsern.",
+        "Sänger Peter Fox feierte hier seinen ersten großen Erfolg.",
+        "Der Song fängt den rauen, aber herzlichen Vibe der Hauptstadt perfekt ein.",
+        "Refrain: '[XXX] B, oben an der Spree, im Sommer tust du gut und im Winter tut's weh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Guten Morgen Berlin, du hast mir gefehlt, ich hab' dich so lange nicht gesehen",
+          "Dickes B, oben an der Spree, im Sommer tust du gut und im Winter tut's weh",
+          "Berlin, Berlin, du bist so wunderbar, Berlin, Berlin!"
+        ],
+        "fake": "Wir tanzen im Regen, dem Glück entgegen auf allen Wegen"
+      },
+      "links": {
+        "youtube": "GYK-NfOo7b4"
+      },
+      "coverUrl": "/covers/german-seeed-dickes-b.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "german-seeed-ding",
+      "title": "Ding",
+      "artist": "Seeed",
+      "year": 2005,
+      "country": "DE",
+      "genre": "Dancehall / Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Dance",
+        "Funny"
+      ],
+      "hints": [
+        "[XXX] brachten mit diesem Track den Berliner Dancehall-Sound auf ein neues Level.",
+        "Thematisiert den Reiz und die Gefahr von Seitensprüngen in der Nacht.",
+        "Bekannt für den treibenden Beat und die markante Bläser-Sektion.",
+        "Gewann den Bundesvision Song Contest 2006.",
+        "Refrain: 'Du hast da so ein [XXX] am Laufen!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich seh mein Schicksal in dei'm Ausschnitt, es ist heiß und es ist Zeit für den nächsten Schritt",
+          "Du hast da so ein Ding am Laufen, mit mir und ein paar andern Typen draußen",
+          "Ich schau dich an, und ich weiß genau was du denkst"
+        ],
+        "fake": "Tanzen auf der Straβe, im Rhythmus des Herzens heute"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "_yWU0lFghxU"
+      },
+      "coverUrl": "/covers/german-seeed-ding.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-dvfZ95ueOcQ",
+      "title": "Amor Prohibido",
+      "artist": "Selena",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dvfZ95ueOcQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/selena-amor-prohibido.jpg"
+    },
+    {
+      "id": "yt-cGIe4x1Xntg",
+      "title": "Single Soon",
+      "artist": "Selena Gomez",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cGIe4x1Xntg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/selena-gomez-single-soon.jpg"
+    },
+    {
+      "id": "yt-JsUt2jsLM1k",
+      "title": "Como La Flor",
+      "artist": "Selena Y Los Dinos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JsUt2jsLM1k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/selena-y-los-dinos-como-la-flor.jpg"
+    },
+    {
+      "id": "90s-semisonic-closing-time",
+      "title": "Closing Time",
+      "artist": "Semisonic",
+      "year": 1998,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Classic",
+        "Anthem"
+      ],
+      "hints": [
+        "Handelt vordergründig vom Schließen einer Bar, aber eigentlich von der Geburt des ersten Kindes des Sängers.",
+        "Wird oft in Bars als letztes Lied des Abends gespielt.",
+        "Bekannt für den Spruch: 'You don't have to go home, but you can't stay here.'",
+        "Ein One-Hit-Wonder der späten 90er Jahre.",
+        "Refrain: '[XXX] [XXX], open all the doors and let you out into the world.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Closing time, open all the doors and let you out into the world",
+          "Closing time, turn the bright lights on over every boy and every girl",
+          "I know who I want to take me home"
+        ],
+        "fake": "Walking through the silver screen, looking for the girl I've seen"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "xGytDsqkQY8",
+        "spotify": "1A5V1sxyCLpKJezp75tUXn",
+        "amazonMusic": "B0DN3ZCKPZ"
+      },
+      "coverUrl": "/covers/90s-semisonic-closing-time.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "metal-sepultura-roots",
+      "title": "Roots Bloody Roots",
+      "artist": "Sepultura",
+      "year": 1996,
+      "country": "BR",
+      "genre": "Groove Metal / Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Primary",
+        "Powerful",
+        "Aggressive"
+      ],
+      "hints": [
+        "Verbindet Thrash/Groove Metal mit brasilianischen Tribal-Rhythmen.",
+        "Thematisiert kulturelle Identität und Rebellion.",
+        "Max Cavaleras gutturaler Gesang ist hier auf seinem Höhepunkt.",
+        "Ein bahnbrechender Song für den modernen Metal.",
+        "Refrain: '[XXX]! [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Roots bloody roots, roots bloody roots",
+          "I believe in our fate, we don't need to fake",
+          "It's all we wanna be, that's what we're gonna be"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nUCodt4zVw4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-sepultura-roots.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-Vs64cZbeY88",
+      "title": "Clean Ver.",
+      "artist": "Seven (feat. Latto)",
+      "year": 1968,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Vs64cZbeY88"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/seven--feat--latto--clean-ver-.jpg"
+    },
+    {
+      "id": "reggae-shaggy-wasnt-me",
+      "title": "It Wasn't Me",
+      "artist": "Shaggy",
+      "year": 2000,
+      "country": "JM",
+      "genre": "Reggae Fusion",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Handelt von einem Mann, der beim Fremdgehen erwischt wurde und den absurden Rat erhält, alles zu leugnen.",
+        "[XXX]s tiefe, raue Stimme kontrastiert perfekt mit RikRoks melodischem Gesang.",
+        "Wurde zu einem der größten Reggae-Pop-Hits der 2000er Jahre.",
+        "Bekannt für den humorvollen und fast schon legendären Text.",
+        "Refrain: 'But she caught me on the counter... It [XXX] me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "But she caught me on the counter (It wasn't me), saw me bangin' on the sofa (It wasn't me)",
+          "I even had her in the shower (It wasn't me), she even caught me on camera (It wasn't me)",
+          "She saw the marks on my shoulder (It wasn't me), heard the words that I told her (It wasn't me)"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2g5Hz17h0W4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-shaggy-wasnt-me.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    }
+  ]
+}

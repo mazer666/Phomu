@@ -1,0 +1,537 @@
+{
+  "songs": [
+    {
+      "id": "dance-haddaway-what-is-love",
+      "title": "What Is Love",
+      "artist": "Haddaway",
+      "year": 1993,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Classic",
+        "Fun"
+      ],
+      "hints": [
+        "Unsterblich geworden durch den 'Night at the Roxbury'-Sketch bei SNL (mit dem seitlichen Kopf-Nicken).",
+        "Der Sänger stammt aus Trinidad und Tobago, startete seine Karriere aber in Köln.",
+        "Der Song war ein Nummer-1-Hit in fast ganz Europa.",
+        "Refrain: '[XXX] is [XXX]? Baby don't hurt me, don't hurt me, no more.'",
+        "Wurde Jahre später durch Internet-Memes erneut zum Kult."
+      ],
+      "lyrics": {
+        "real": [
+          "What is love? Baby don't hurt me, don't hurt me, no more",
+          "I don't know why you're not there, I give you my love but you don't care",
+          "What is right and what is wrong? Give me a sign"
+        ],
+        "fake": "Looking for a heart, falling apart, right from the start"
+      },
+      "links": {
+        "youtube": "HEXWRTEbj1I"
+      },
+      "coverUrl": "/covers/dance-haddaway-what-is-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "catalog-coverage-hank-williams-jambalaya-1952",
+      "title": "Jambalaya (On the Bayou)",
+      "artist": "Hank Williams",
+      "year": 1952,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "medium",
+      "mood": [
+        "Road Trip",
+        "Nostalgic",
+        "Feel Good"
+      ],
+      "hints": [
+        "Ein Country-Klassiker aus den frühen 1950ern mit starkem Cajun-Einfluss.",
+        "Der Refrain zählt südliche US-Orte und Speisen auf.",
+        "Der Titel enthält ein Gericht aus der kreolischen Küche Louisianas.",
+        "Fiddle, Akustikgitarre und ein treibender Two-Step-Rhythmus prägen den Sound.",
+        "Der Song beginnt mit einem Gruß an \"my ma cher amio\"."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nG7-tsqDRYE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "survivor"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/hank-williams-jambalaya--on-the-bayou-.jpg"
+    },
+    {
+      "id": "country-hank-heart",
+      "title": "Your Cheatin' Heart",
+      "artist": "Hank Williams",
+      "year": 1953,
+      "country": "US",
+      "genre": "Honky Tonk / Country",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Traditional",
+        "Classic"
+      ],
+      "hints": [
+        "Einer der wichtigsten Songs der Country-Geschichte.",
+        "[XXX] [XXX] prophezeit seinem untreuen Partner schlaflose Nächte voller Reue.",
+        "Besticht durch die weinerliche Steel-Gitarre und [XXX]' ehrliche Emotion.",
+        "Ein Inbegriff für den Honky-Tonk Sound.",
+        "Refrain: 'Your [XXX] [XXX]! Will tell on you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Your cheatin' heart will tell on you, you'll cry and cry the whole night through",
+          "When tears come down like falling rain",
+          "You'll toss around and call my name"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "UxlmdknsB5M"
+      },
+      "coverUrl": "/covers/country-hank-heart.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "score-zimmer-time",
+      "title": "Time (Inception)",
+      "artist": "Hans Zimmer",
+      "year": 2010,
+      "country": "DE/US",
+      "genre": "Movie Score / Modern Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Atmospheric",
+        "Powerful"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Washed out piano melody",
+          "Building wall of sound"
+        ],
+        "fake": "Dream within a dream in the middle of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "c56t7upa8Bk",
+        "spotify": "6ZFbXIJkuI1dVNWvzJzown",
+        "amazonMusic": "B003VOBJOS"
+      },
+      "coverUrl": "/covers/score-zimmer-time.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "score-zimmer-pirate",
+      "title": "He's a Pirate",
+      "artist": "Hans Zimmer / Klaus Badelt",
+      "year": 2003,
+      "country": "DE/US",
+      "genre": "Movie Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Heroic",
+        "Exciting"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Pumping cello rhythm",
+          "Swashbuckling melody"
+        ],
+        "fake": "Sailing through the ocean in the middle of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "jtGUQFky0KI",
+        "spotify": "4AD2dterIUjNt1LFNI9Bvi",
+        "amazonMusic": "B0BTM6MGV7"
+      },
+      "coverUrl": "/covers/score-zimmer-pirate.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-4-B-0hBwhbc",
+      "title": "Call Your Name",
+      "artist": "Hardwell & Maddix",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4-B-0hBwhbc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/hardwell---maddix-call-your-name.jpg"
+    },
+    {
+      "id": "movie-harold-faltermeyer-axel-f",
+      "title": "Axel F",
+      "artist": "Harold Faltermeyer",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Synth-pop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Electronic",
+        "Classic"
+      ],
+      "hints": [
+        "Das instrumentale Hauptthema aus 'Beverly Hills Cop'.",
+        "Benannt nach der Hauptfigur des Films, [XXX] Foley (gespielt von Eddie Murphy).",
+        "Der deutsche Komponist [XXX] [XXX] schuf diesen Pionier-Song des Synthesizer-Pop.",
+        "Wurde Jahre später durch ein nerviges animiertes Maskottchen (Crazy Frog) erneut zum Hit.",
+        "Ein absolutes Muss-Riff für jeden Keyboarder der 80er."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "V4kWpi2HnPU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-harold-faltermeyer-axel-f.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "harry-styles-as-it-was-2022",
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "year": 1990,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Atmospheric",
+        "Happy",
+        "Heartbreak",
+        "Legends & Classics",
+        "Modern",
+        "Nostalgic",
+        "Popular",
+        "Rainy Day",
+        "Road Trip"
+      ],
+      "hints": [
+        "Das Stück wurde in zwei Stunden am ersten Tag der Aufnahmesessions für das Album '[XXX]'s House' fertiggestellt.",
+        "Das Intro des Songs beginnt mit der Stimme von Kid Harpoons Tochter, die [XXX] auf Englisch nach Hause ruft.",
+        "Erschienen 2022; laut Spotify das meistgestreamte Lied des gesamten Jahres weltweit.",
+        "Melancholischer 80er-inspirierter Synth-Pop mit Gitarren-Arpeggio und einem euphorisch-traurigen Refrain.",
+        "[XXX] [XXX] singt, dass er nicht allein zu Hause sein soll – und dass nichts mehr so ist wie es war."
+      ],
+      "lyrics": {
+        "real": [
+          "Hold out your hand and you'll find me there",
+          "In this world, it's just us, you know it's not the same as it was",
+          "Answer the phone, 'Harry, you're no good alone, why are you sitting at home?'"
+        ],
+        "fake": "The road is long but I will find my way back to you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nujn6wbr-e8",
+        "spotify": "4Dvkj6JhhA12EX05fT7y2e",
+        "amazonMusic": "B09WTTL96T"
+      },
+      "coverUrl": "/covers/harry-styles-as-it-was-2022.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "yt-ls6XtAmqERc",
+      "title": "Late Night Talking",
+      "artist": "Harry Styles",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert Nachtleben und Dunkelheit in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ls6XtAmqERc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/harry-styles-late-night-talking.jpg"
+    },
+    {
+      "id": "yt-KPM_BYl-EaQ",
+      "title": "Watermelon Sugar",
+      "artist": "Harry Styles",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KPM_BYl-EaQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/harry-styles-watermelon-sugar.jpg"
+    },
+    {
+      "id": "metal-hatebreed-heard",
+      "title": "I Will Be Heard",
+      "artist": "Hatebreed",
+      "year": 2002,
+      "country": "US",
+      "genre": "Hardcore Metal / Metalcore",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Confident"
+      ],
+      "hints": [
+        "Einer der motivierendsten Songs der Hardcore-Geschichte.",
+        "Thematisiert Durchhaltevermögen und das Finden der eigenen Stimme.",
+        "Jamey Jastas Shouts sind voller positiver Aggression.",
+        "Zentraler Song für die Verbindung von Metal-Produktion und Hardcore-Attitüde.",
+        "Refrain: 'I [XXX] be [XXX]! NOW IS THE TIME FOR ME TO RISE!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Now is the time for me to rise, leave the past behind",
+          "I will be heard, I will be heard!",
+          "No one can stop me from rising again!"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DBwgX8yBqsw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-hatebreed-heard.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-_PCFdX_JRDg",
+      "title": "Cumbia sonidera #cumbiasonidera #sonideros #cumbiarebajada #cumbiacolombiana",
+      "artist": "Hechiceria",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_PCFdX_JRDg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "yt-7cvyIovPttA",
+      "title": "Ella Mintio",
+      "artist": "Hector Lavoe",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7cvyIovPttA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/hector-lavoe-ella-mintio.jpg"
+    }
+  ]
+}

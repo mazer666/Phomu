@@ -1,0 +1,260 @@
+{
+  "songs": [
+    {
+      "id": "rock-gnr-sweet-child-o-mine",
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Epic",
+        "Legends & Classics",
+        "Popular",
+        "Rock",
+        "Romantic"
+      ],
+      "hints": [
+        "Das ikonische Intro-Riff begann als eine Art Fingerübung (Warm-up) von Gitarrist Slash.",
+        "Sänger Axl Rose schrieb den Text für seine damalige Freundin Erin Everly.",
+        "Einer der wenigen Hard-Rock-Hits, der Platz 1 der US-Pop-Charts erreichte.",
+        "Die Frage 'Where do we go now?' am Ende entstand, weil der Band kein Schluss einfiel.",
+        "Gehört zu den meistgespielten Rock-Songs auf YouTube."
+      ],
+      "lyrics": {
+        "real": [
+          "She's got a smile that it seems to me reminds me of childhood memories",
+          "Where everything was as fresh as the bright blue sky",
+          "Now and then when I see her face she takes me away to that special place"
+        ],
+        "fake": "In the shadow of the night, I will hold you tight and make it right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oMfMUfgjiLg"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-gnr-sweet-child-o-mine.jpg",
+      "packs": [
+        "Rock Anthems",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "rock-gnr-jungle",
+      "title": "Welcome to the Jungle",
+      "artist": "Guns N' Roses",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hard Rock / Glam Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Dangerous",
+        "Classic"
+      ],
+      "hints": [
+        "Der ultimative Opener von 'Appetite for Destruction'.",
+        "Axl [XXX] Schrei am Anfang zementierte seinen Status als Rockstar.",
+        "Handelt von den harten Realitäten und der Gefahr des Lebens in Los Angeles.",
+        "Slashs Riffs und Soli definieren den Sound einer ganzen Generation.",
+        "Refrain: '[XXX] to the [XXX], we've got fun and games!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Welcome to the jungle, we've got fun and games",
+          "We got everything you want, honey, we know the names",
+          "In the jungle, welcome to the jungle, watch it bring you to your sha-na-na-na-na-na-na-na-knees, knees"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "o1tj2zJ2Wvg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-gnr-jungle.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "class-holst-mars",
+      "title": "The Planets (Mars, the Bringer of War)",
+      "artist": "Gustav Holst",
+      "year": 1914,
+      "country": "GB",
+      "genre": "Modern Classical / Suite",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Epic",
+        "Tense"
+      ],
+      "hints": [
+        "Song mit charakteristischen Modern Classical -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Suite)",
+          "Menacing 5/4 rhythm",
+          "Drums of war"
+        ],
+        "fake": "Marching to the darkness under the red sky tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "cXOanvv4plU",
+        "spotify": "1C3RIRKQZhSk5d2iioIhkg",
+        "amazonMusic": "B001SSKCFG"
+      },
+      "coverUrl": "/covers/class-holst-mars.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-juN8L5mdXu4",
+      "title": "Que Pena Que Acabou - DVD 50/50 (Vídeo Oficial)",
+      "artist": "Gusttavo Lima",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=juN8L5mdXu4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gusttavo-lima-que-pena-que-acabou---dvd-50-50--vídeo-oficial-.jpg"
+    },
+    {
+      "id": "yt-oFJIenHfjK0",
+      "title": "BALADA (TCHÊ TCHERERE TCHÊ TCHÊ)",
+      "artist": "Gusttavo Lima & Neymar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oFJIenHfjK0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "country-guyclark-train",
+      "title": "Desperados Waiting for a Train",
+      "artist": "Guy Clark",
+      "year": 1975,
+      "country": "US",
+      "genre": "Country / Folk / Storytelling",
+      "difficulty": "hard",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Zutiefst bewegende Ode an einen alten Mann, der dem jungen Songwriter die Welt erklärte.",
+        "Thematisiert Generationenbindung, Altern und den unvermeidlichen Abschied.",
+        "Besticht durch die bildstarke Sprache und das ehrliche Gefühl.",
+        "Ein Meilenstein des progressiven Country.",
+        "Refrain: 'Like [XXX] [XXX] for a [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I was only a kid, and he was an old man, we used to drink whiskey like water",
+          "He's a desperado waiting for a train",
+          "He looked like an old friend I hadn't seen in years"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "9hbNwnnExTQ"
+      },
+      "coverUrl": "/covers/country-guyclark-train.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    }
+  ]
+}

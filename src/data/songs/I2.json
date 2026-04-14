@@ -1,0 +1,131 @@
+{
+  "songs": [
+    {
+      "id": "rock-iron-maiden-trooper",
+      "title": "The Trooper",
+      "artist": "Iron Maiden",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Heavy Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Epic",
+        "Powerful"
+      ],
+      "hints": [
+        "Basiert auf der Attacke der Leichten Brigade im Krimkrieg (1854).",
+        "Das melodiöse Gitarren-Harmonie-Riff ist das Erkennungsmerkmal der Band.",
+        "Bruce Dickinsons Gesang und die galoppierende Basslinie von Steve Harris.",
+        "Ein Inbegriff des 'New Wave of British Heavy Metal'.",
+        "Refrain: (Gitarren-Melodie) - 'Woah-oh-oh-oh-oh-oh-oh-oh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The bugle sounds, the charge begins, but on this battlefield no one wins",
+          "You'll take my life but I'll take yours too, you fire your musket but I'll run you through",
+          "When you're waiting for the next attack, you better stand there's no turning back"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X4bgXH3sJ2Q"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-iron-maiden-trooper.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore"
+      ]
+    },
+    {
+      "id": "soul-isaac-shaft",
+      "title": "Theme from Shaft",
+      "artist": "Isaac Hayes",
+      "year": 1971,
+      "country": "US",
+      "genre": "Funk / Cinematic",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Epic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Who's the black private dick that's a sex machine to all the chicks? (Shaft!)",
+          "You're damn right",
+          "Who is the man that would risk his life for his brother man? (Shaft!)"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "fTU_9T5ufzY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Soul & Funk Grooves"
+      ],
+      "coverUrl": "/covers/isaac-hayes-theme-from-shaft.jpg"
+    },
+    {
+      "id": "yt-rg6vQh9OfBY",
+      "title": "Yo Quiero Bailar",
+      "artist": "Ivy Queen",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rg6vQh9OfBY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ivy-queen-yo-quiero-bailar.jpg"
+    }
+  ]
+}

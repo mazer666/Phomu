@@ -1,0 +1,552 @@
+{
+  "songs": [
+    {
+      "id": "disco-chem-heyboy",
+      "title": "Hey Boy Hey Girl",
+      "artist": "The Chemical Brothers",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Big Beat / Electronic",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Club",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Groovy"
+      ],
+      "hints": [
+        "Besitzt einen der minimalistischsten und effektivsten Vocals der Dance-Geschichte.",
+        "Der Track ist ein Paradebeispiel für die hypnotische Kraft von Big Beat.",
+        "Wurde zu einem festen Bestandteil jeder Clubnacht um die Jahrtausendwende.",
+        "Das Video mit den tanzenden Skeletten ist legendär.",
+        "Refrain: 'Hey boy, hey [XXX]! Superstar DJs, here we go!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hey boy, hey girl, superstar DJs, here we go",
+          "Hey boy, hey girl, superstar DJs, here we go",
+          "Superstar DJs, here we go"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tpKCqp9CALQ"
+      },
+      "coverUrl": "/covers/disco-chem-heyboy.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "country-chicks-earl",
+      "title": "Goodbye Earl",
+      "artist": "The Chicks",
+      "year": 2000,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Energy",
+        "Aggressive"
+      ],
+      "hints": [
+        "Humorvoller (aber dunkel-thematischer) Song über die Entsorgung eines gewalttätigen Ehemanns.",
+        "Besticht durch die freche Attitüde und das rasante Musikvideo.",
+        "Thematisiert weibliche Freundschaft und Gerechtigkeit.",
+        "Ein absoluter Klassiker des Trios.",
+        "Refrain: '[XXX] [XXX]! We need a break!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Mary Anne and Wanda were the best of friends, all through their high school days",
+          "Earl had to die, goodbye Earl",
+          "We needed a break, and it's time for Earl to go"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Gw7gNf_9njs"
+      },
+      "coverUrl": "/covers/country-chicks-earl.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-PKnPrbPK5vA",
+      "title": "Mister Sandman",
+      "artist": "The Chordettes",
+      "year": 1954,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PKnPrbPK5vA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-chordettes-mister-sandman.jpg"
+    },
+    {
+      "id": "yt-yne6Gq_ghXA",
+      "title": "Rock the Casbah",
+      "artist": "The Clash",
+      "year": 1982,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yne6Gq_ghXA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-clash-rock-the-casbah.jpg"
+    },
+    {
+      "id": "soul-commodores-brick",
+      "title": "Brick House",
+      "artist": "The Commodores",
+      "year": 1977,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "She's a brick house, she's mighty-mighty, just lettin' it all hang out",
+          "She's a brick house, that lady's stacked and that's a fact",
+          "Ain't holding nothing back"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ukW6ZRaPWYk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-commodores-brick.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "unplugged-cranberries-linger",
+      "title": "Linger",
+      "artist": "The Cranberries",
+      "year": 1993,
+      "country": "IE",
+      "genre": "Alternative / Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Classic"
+      ],
+      "hints": [
+        "Dolores O'Riordans erste Single mit der Band und ihr großer Durchbruch.",
+        "Thematisiert den Schmerz einer ersten großen Liebe und das Unvermögen, loszulassen.",
+        "Das Streicher-Arrangement und der sanfte Rhythmus sind unvergesslich.",
+        "Ein Inbegriff des irischen Alternative-Sounds der 90er.",
+        "Refrain: 'You know I'm such a fool for you, you've got me wrapped around your finger!'"
+      ],
+      "lyrics": {
+        "real": [
+          "If you, if you could return, don't let it burn, don't let it fade",
+          "But I'm in so deep, you know I'm such a fool for you",
+          "You've got me wrapped around your finger, do you have to, do you have to let it linger?"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "G6Kspj3OO0s",
+        "spotify": "0gEyKnHvgkrkBM6fbeHdwK",
+        "amazonMusic": "B001SVKPK0"
+      },
+      "coverUrl": "/covers/unplugged-cranberries-linger.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-6Ejga4kJUts",
+      "title": "Zombie",
+      "artist": "The Cranberries",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Alternative",
+        "Legends & Classics",
+        "Popular",
+        "Powerful",
+        "Serious"
+      ],
+      "hints": [
+        "Ein Protestsong gegen den Nordirlandkonflikt nach einem Bombenattentat.",
+        "Der markante Jodel-Gesang von Dolores O'Riordan im Refrain ist unverwechselbar.",
+        "Das Video zeigt die Sängerin goldbemalt vor einem Kreuz im Kreis von Kindern.",
+        "Einer der meistgespielten Rocksongs der 90er Jahre.",
+        "Refrain: 'In your head, in your head, [XXX], [XXX], [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Another head hangs lowly, child is slowly taken",
+          "And the violence caused such silence, who are we mistaken?",
+          "But you see, it's not me, it's not my family"
+        ],
+        "fake": "Walking through the ruins of a town that used to be so bright"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6Ejga4kJUts",
+        "spotify": "49wOjOkS4pBK3PQnPnNYjb",
+        "amazonMusic": "B001SVMW60"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "90s Unplugged"
+      ],
+      "coverUrl": "/covers/90s-cranberries-zombie.jpg"
+    },
+    {
+      "id": "yt-UL6_xt_dWvQ",
+      "title": "A Forest",
+      "artist": "The Cure",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UL6_xt_dWvQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-cure-a-forest.jpg"
+    },
+    {
+      "id": "yt-latEhwt1uis",
+      "title": "Boys Don't Cry",
+      "artist": "The Cure",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=latEhwt1uis"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-cure-boys-don-t-cry.jpg"
+    },
+    {
+      "id": "indie-the-cure-friday",
+      "title": "Friday I'm in Love",
+      "artist": "The Cure",
+      "year": 1992,
+      "country": "GB",
+      "genre": "New Wave / Indie Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Fun"
+      ],
+      "hints": [
+        "Robert Smith hielt den Song anfangs für so gut, dass er dachte, er hätte ihn versehentlich geklaut.",
+        "Ein untypisch fröhlicher Hit für die sonst eher düstere Band.",
+        "Der Song zählt die Wochentage auf und feiert den Freitag.",
+        "Bekannt für den glockigen Gitarrensound und Robert Smiths verspielten Gesang.",
+        "Refrain: 'I don't care if Monday's blue, Tuesday's gray and Wednesday too!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I don't care if Monday's blue, Tuesday's gray and Wednesday too",
+          "Thursday I don't care about you, it's Friday I'm in love",
+          "Saturday wait, and Sunday always comes too late"
+        ],
+        "fake": [
+          "I just can't give it love today, I'm not in the mood",
+          "Friday is my favourite, it's the best day of the week"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "mGgMZpGYiy8"
+      },
+      "coverUrl": "/covers/indie-the-cure-friday.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-e7v51klIPaQ",
+      "title": "Just Like Heaven",
+      "artist": "The Cure",
+      "year": 1987,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e7v51klIPaQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-cure-just-like-heaven.jpg"
+    },
+    {
+      "id": "jazz-brubeck-takefive",
+      "title": "Take Five",
+      "artist": "The Dave Brubeck Quartet",
+      "year": 1959,
+      "country": "US",
+      "genre": "Jazz / Cool Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Intelligent",
+        "Classic"
+      ],
+      "hints": [
+        "Bekannt für seinen ungewöhnlichen 5/4-Takt.",
+        "Einer der wenigen Jazz-Instrumental-Hits, die weltweit in den Charts waren.",
+        "Paul Desmonds luftiges Altsaxophon-Solo ist legendär.",
+        "Das Schlagzeug-Solo von Joe Morello ist ein Meisterwerk der Präzision.",
+        "Genre-Inhalt: Unvergesslicher Klavier-Vamp."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental - focused on the unique 5/4 time signature)",
+          "(Cool Jazz anthem)",
+          "(Paul Desmond's signature melody)"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Nacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vmDDOFXSgAs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-brubeck-takefive.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "piano-fray-howtosave",
+      "title": "How to Save a Life",
+      "artist": "The Fray",
+      "year": 2005,
+      "country": "US",
+      "genre": "Piano Rock / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Powerful"
+      ],
+      "hints": [
+        "Besitzt eines der markantesten Klavier-Riffs der 2000er Jahre.",
+        "Thematisiert den Versuch, jemandem in einer Krise beizustehen.",
+        "Zentraler Song für die Serie 'Grey's Anatomy' und viele andere dramatische TV-Momente.",
+        "Ein Inbegriff für melancholischen Piano-Rock.",
+        "Refrain: 'Where did I go wrong? I lost a friend!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Step one, you say we need to talk, he walks, you say sit down it's just a talk",
+          "Where did I go wrong? I lost a friend",
+          "Somewhere along in the bitterness"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "cjVQ36NhbMk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-fray-howtosave.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "songs": [
+    {
+      "id": "yt-GIt01DTdqpg",
+      "title": "That's My Girl (Live at the AMA's)",
+      "artist": "Fifth Harmony",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GIt01DTdqpg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/fifth-harmony-that-s-my-girl--live-at-the-ama-s-.jpg"
+    },
+    {
+      "id": "piano-fff-100years",
+      "title": "100 Years",
+      "artist": "Five for Fighting",
+      "year": 2003,
+      "country": "US",
+      "genre": "Piano Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Thoughtful",
+        "Nostalgic",
+        "Soft"
+      ],
+      "hints": [
+        "Song mit charakteristischen Piano Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm fifteen for a moment, caught in between ten and twenty",
+          "I'm thirty-three for a moment, I'm still the man I thought I'd be",
+          "Hundred years to go and I'm still counting"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GRz4FY0ZcwI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-fff-100years.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "country-earl-breakdown",
+      "title": "Foggy Mountain Breakdown",
+      "artist": "Flatt & Scruggs (Earl Scruggs)",
+      "year": 1949,
+      "country": "US",
+      "genre": "Bluegrass Instrumental",
+      "difficulty": "hard",
+      "mood": [
+        "Fast",
+        "Energy",
+        "Skillful"
+      ],
+      "hints": [
+        "Besticht durch das bahnbrechende Drei-Finger-Picking von [XXX] [XXX] auf dem Banjo.",
+        "Ein Instrumentaltitel, der zur Standard-Referenz für Banjo-Virtuosität wurde.",
+        "Oft verwendet für rasante Verfolgungsjagden im Film (z.B. Bonnie and Clyde).",
+        "Ein Inbegriff für den High-Speed Bluegrass.",
+        "Besonderheit: Keine Lyrics, nur rasantes Banjo-Zupfen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Fast Banjo Instrumental)"
+        ],
+        "fake": "Dancing to the rhythm of the wind tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "z_Y3mnj-8lA"
+      },
+      "coverUrl": "/covers/country-earl-breakdown.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "legends-fleetwood-mac-dreams",
+      "title": "Dreams",
+      "artist": "Fleetwood Mac",
+      "year": 1977,
+      "country": "GB/US",
+      "genre": "Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Dreamy",
+        "Moody",
+        "Smooth"
+      ],
+      "hints": [
+        "Stammt vom legendären Album 'Rumours', das während heftiger bandinterner Trennungen entstand.",
+        "Der Text wurde in nur 10 Minuten in einem kleinen Nebenraum im Studio geschrieben.",
+        "Bekannt für den schwebenden, zweistimmigen Basslauf und die ätherische Atmosphäre.",
+        "Erlebte ein massives Revival durch ein virales TikTok-Video mit Cranberry-Saft.",
+        "Refrain: 'Thunder only happens when it's raining!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Now here you go again, you say you want your freedom, well who am I to keep you down?",
+          "Thunder only happens when it's raining, players only love you when they're playing",
+          "Say, women, they will come and they will go"
+        ],
+        "fake": [
+          "Now you kick it low, you stay for Joe, well who do you think you are",
+          "Lightning only strikes, on the fields of love, playing for a change of hearts"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y3ywicffOj4",
+        "spotify": "0ofHAoxe9vBkTCp2UQIavz",
+        "amazonMusic": "B00B2O141W"
+      },
+      "coverUrl": "/covers/legends-fleetwood-mac-dreams.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "yt-LHUB7H87dr0",
+      "title": "NIGGA TE QUIERO original videoclip (FLEX)",
+      "artist": "Flex (Nigga)",
+      "year": 2004,
+      "country": "PA",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LHUB7H87dr0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "yt-MNSC0AWu5S0",
+      "title": "Good Feeling",
+      "artist": "Flo Rida",
+      "year": 2011,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MNSC0AWu5S0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/flo-rida-good-feeling.jpg"
+    },
+    {
+      "id": "indie-florence-dogdays",
+      "title": "Dog Days Are Over",
+      "artist": "Florence + The Machine",
+      "year": 2008,
+      "country": "GB",
+      "genre": "Indie Rock / Baroque Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Happy"
+      ],
+      "hints": [
+        "[XXX] Welchs gewaltige Stimme steht hier im Mittelpunkt.",
+        "Besticht durch das markante Händeklatschen und die Harfenklänge.",
+        "Thematisiert den plötzlichen Einbruch von Glück in ein schwieriges Leben.",
+        "Ein Inbegriff für theatralischen, mitreißenden Indie-Pop.",
+        "Refrain: 'Run fast for your mother, run fast for your father!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Happiness, hit her like a train on a track",
+          "Coming towards her, stuck in the light",
+          "The dog days are over, the dog days are done, can you hear the horses? 'Cause here they come"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iWOyfLBYtuU"
+      },
+      "coverUrl": "/covers/indie-florence-dogdays.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-LuEyDGugQvk",
+      "title": "TRUST feat. Isabella Manfredi",
+      "artist": "Flume",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LuEyDGugQvk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/flume-trust-feat--isabella-manfredi.jpg"
+    },
+    {
+      "id": "yt-00QVU7voMq8",
+      "title": "Eres Mi Sueño",
+      "artist": "Fonseca",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=00QVU7voMq8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/fonseca-eres-mi-sueño.jpg"
+    },
+    {
+      "id": "rock-foo-fighters-everlong",
+      "title": "Everlong",
+      "artist": "Foo Fighters",
+      "year": 1997,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Driving",
+        "Rock"
+      ],
+      "hints": [
+        "Wurde von Dave Grohl nach dem Ende seiner Ehe geschrieben.",
+        "Gilt als einer der emotionalsten und stärksten Songs der Band.",
+        "Das surreale Musikvideo wurde von Michel Gondry gedreht.",
+        "Bekannt für seine treibende Energie und die verzerrten Gitarren.",
+        "Refrain: 'And I wonder when I sing along with you, if everything could ever feel this real forever?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hello, I've waited here for you, everlong",
+          "Tonight I throw myself into, and out of the red, out of her head she sang",
+          "If everything could ever feel this real forever, if anything could ever be this good again"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eBG7P-K-r1Y"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-foo-fighters-everlong.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "80s-foreigner-i-want-to-know-what-love-is",
+      "title": "I Want to Know What Love Is",
+      "artist": "Foreigner",
+      "year": 1984,
+      "country": "US",
+      "genre": "Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
+      "hints": [
+        "Enthält einen Background-Chor der New Jersey Mass Choir.",
+        "Gilt als eine der größten Power-Balladen aller Zeiten.",
+        "Der Song erreichte Platz 1 in den USA und in Großbritannien.",
+        "Thematisiert die Suche nach wahrer Liebe und emotionaler Tiefe.",
+        "Refrain: 'I [XXX] to [XXX] [XXX] [XXX] is, I [XXX] you to show me.'"
+      ],
+      "lyrics": {
+        "real": [
+          "I gotta take a little time, a little time to think things over",
+          "I better read between the lines, in case I need it when I'm older",
+          "I want to know what love is, I want you to show me"
+        ],
+        "fake": [
+          "I have a plan, a littel plan to expand, to make it last",
+          "I should draw the lines, so that you see what I mean",
+          "You could show me the way, that you want me to take"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "r3Pr1_v7hsw",
+        "spotify": "04OjLvOApQve45B0ISx4XN",
+        "amazonMusic": "B07YNB5L8W"
+      },
+      "coverUrl": "/covers/80s-foreigner-i-want-to-know-what-love-is.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt-RIXgWIwtSnU",
+      "title": "The Flame Still Burns",
+      "artist": "Foreigner",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RIXgWIwtSnU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/foreigner-the-flame-still-burns.jpg"
+    },
+    {
+      "id": "indie-foster-the-people-pumped-up-kicks",
+      "title": "Pumped Up Kicks",
+      "artist": "Foster The People",
+      "year": 2010,
+      "country": "US",
+      "genre": "Indie Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Moody",
+        "Serious"
+      ],
+      "hints": [
+        "Klingt wie ein fröhlicher Popsong, hat aber einen sehr dunklen Text über Amokläufe an Schulen.",
+        "Die '[XXX] up [XXX]' im Titel beziehen sich auf teure Markenschuhe.",
+        "Wurde durch virale Verbreitung im Internet zu einem der größten Indie-Pop-Hits des Jahrzehnts.",
+        "Der Refrain hat eine fast hypnotische, entspannte Melodie.",
+        "Refrain: 'All the other kids with the [XXX] up [XXX], you better run, better run...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Robert's got a quick hand, he'll look around the room, he won't tell you his plan",
+          "All the other kids with the pumped up kicks, you better run, better run, outrun my gun",
+          "Daddy works a long day, he be coming home late, he's coming home late"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SDTZ7iX4vTQ"
+      },
+      "coverUrl": "/covers/indie-foster-the-people-pumped-up-kicks.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    }
+  ]
+}

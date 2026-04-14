@@ -1,883 +1,271 @@
 {
   "songs": [
     {
-      "id": "yt-KWx1PmZk6PM",
-      "title": "All Or Nothing",
-      "artist": "ATB",
-      "year": 1999,
-      "country": "INT",
-      "genre": "Electronic",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Dance Floor"
-      ],
-      "hints": [
-        "Ein weiterer Trance-Klassiker des deutschen DJs, der Ende der 90er die Tanzflächen dominierte.",
-        "Der Titel 'Alles oder Nichts' steht für die kompromisslose Energie des Tracks.",
-        "Erschienen 1999 – ein typisches Beispiel für den eingängigen Melodic-Trance-Sound der Ära.",
-        "Besticht durch einen mitreißenden Synthesizer-Melodiebogen und druckvolle Beats.",
-        "Ein Track, der zeigt: Im Trance gibt es keine Halbheiten – nur volle Hingabe."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "KWx1PmZk6PM",
-        "spotify": "0vF1CszQ1UqB2jscNfJ8Qe",
-        "amazonMusic": "B0BPK9NMNW"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/atb-all-or-nothing.jpg"
-    },
-    {
-      "id": "disney-moana-far",
-      "title": "How Far I'll Go",
-      "artist": "Auli'i Cravalho",
-      "year": 2016,
-      "country": "US",
-      "genre": "Soundtrack / Inspirational",
-      "difficulty": "easy",
-      "mood": [
-        "Powerful",
-        "Determined",
-        "Classic"
-      ],
-      "hints": [
-        "Die Hymne aus 'Vaiana' (Moana).",
-        "Thematisiert den Drang nach Abenteuer und das Verlassen der Komfortzone.",
-        "Die kraftvolle Stimme der jungen Hauptdarstellerin trägt den Song mit bemerkenswerter Reife.",
-        "Inbegriff für modernen Disney-Heldinnen-Pop.",
-        "Refrain: 'See the line where the sky meets the sea? It calls me!'"
-      ],
-      "lyrics": {
-        "real": [
-          "I've been staring at the edge of the water, 'long as I can remember",
-          "See the line where the sky meets the sea? It calls me",
-          "And no one knows, how far it goes"
-        ],
-        "fake": "Walking down the street with a rhythm in my feet tonight tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "cPAbx5kgCJo",
-        "spotify": "3KzemxaWSSiYtnzOokd0Rs",
-        "amazonMusic": "B01M71EYMH"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/disney-moana-far.jpg",
-      "packs": [
-        "Kids & Disney Magic"
-      ]
-    },
-    {
-      "id": "yt-3RMAUNjdHjY",
-      "title": "EveryTime I Cry",
-      "artist": "Ava Max",
-      "year": 2021,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "80s Flashback"
-      ],
-      "hints": [
-        "Synth-Pop mit 80er-inspirierten Drum Machines und reverb-getränktem, vulnerablem Gesang.",
-        "Thematisiert emotionale Wiederholung – Liebe führt immer wieder zu denselben Tränen.",
-        "Lush Synthesizer-Betten mit Vocals in hoher Lage, melancholisch und exponiert.",
-        "Der Sound pendelt zwischen Zerbrechlichkeit und Selbstbehauptung – innerer Konflikt.",
-        "Moderne Produktion mit 80er Nostalgie-Appeal – typisch für heutigen Retro-Pop."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=3RMAUNjdHjY",
-        "spotify": "0mV43B6pJWRjcM5TmzNe6d",
-        "amazonMusic": "B094WZ2YFT"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/ava-max-everytime-i-cry.jpg"
-    },
-    {
-      "id": "yt-BjIrWwtjbeE",
-      "title": "girl$",
-      "artist": "Ava Max",
-      "year": 2024,
-      "country": "INT",
-      "genre": "Electronic",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Dance Floor"
-      ],
-      "hints": [
-        "Party-Antheme über finanzielle Unabhängigkeit und Autonomie mit feministischem Subtext.",
-        "Poppiger EDM-Synthie-Sound mit tanzbarem 4/4-Rhythmus und Hook-fokussiertem Design.",
-        "Der Dollar-Sign im Titel ist bewusst provokativ – Frauen als ökonomische Subjekte, nicht Objekte.",
-        "Spielerische, leicht sarkastische Tonalität ohne aggressiv oder bitter zu wirken.",
-        "Dance-Floor-optimiert: Eingängiger Pre-Chorus und mehrere Hook-Wiederholungen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=BjIrWwtjbeE",
-        "spotify": "4fkM7M4Uo5AUASnnsRC7EZ",
-        "amazonMusic": "B07GDVWPQK"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/ava-max-girl-.jpg"
-    },
-    {
-      "id": "yt-b8tqMLd4Jog",
-      "title": "Kings & Queens",
-      "artist": "Ava Max",
-      "year": 2020,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "80s Flashback"
-      ],
-      "hints": [
-        "Feminist Power-Anthem mit pulsierenden Synthies, Strobes und aufbauender Dynamik.",
-        "Umgedrehte Machtsymbolik: Traditionelle Herrschersymbole werden zur weiblichen Hymne.",
-        "Produziert mit mehreren Breakdown-Pausen, die emotionale Intensität aufbauen.",
-        "Zentrale Botschaft: Innere Stärke, nicht äußerliche Schönheit oder Unterwerfung.",
-        "Chart-Hit mit globaler LGBTQ+ Community-Resonanz – wurde zur Community-Hymne."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=b8tqMLd4Jog",
-        "spotify": "7a53HqqArd4b9NF4XAmlbI",
-        "amazonMusic": "B08MBJHKD8"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/ava-max-kings---queens.jpg"
-    },
-    {
-      "id": "yt-kfauyGbueR0",
-      "title": "Maybe You’re The Problem",
-      "artist": "Ava Max",
-      "year": 2023,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Modern Hits"
-      ],
-      "hints": [
-        "Post-Breakup-Track mit sarkastischem Dreh – Selbstschutz durch Projektion und Ironie.",
-        "Melancholische, dunklere Synthesizer-Atmosphäre als andere Pop-Hits.",
-        "Emotionaler Gesang über ungelöste Konflikte und gegenseitige Schuldzuweisung.",
-        "Die Produktion balanciert Verwundbarkeit mit Sarcasm – nicht naiv, aber auch nicht hartherzig.",
-        "Thematisiert psychologische Abwehrmechanismen in gescheiterten Beziehungen – realistisch."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=kfauyGbueR0",
-        "spotify": "6WDG2ybdV3SBXV0lwBGu4D",
-        "amazonMusic": "B09XZQGYK9"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/ava-max-maybe-you-re-the-problem.jpg"
-    },
-    {
-      "id": "yt-cTr-aGK-LpA",
-      "title": "My Head & My Heart",
-      "artist": "Ava Max",
-      "year": 2021,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "80s Flashback"
-      ],
-      "hints": [
-        "Innerer Konflikt zwischen Verstand und Gefühl in kritischen Liebesentscheidungen.",
-        "Melancholischer Electronic-Pop mit lush Synthesizer-Atmosphäre und gefühlvollem Gesang.",
-        "Minimales Arrangement – nicht überproduziert, emotionale Vulnerability im Fokus.",
-        "Reflektive, introspektive Dynamik ohne Aggression oder Drama-Overdose.",
-        "Das Thema ist universell – jeder kennt den Kopf vs. Herz Konflikt in Liebe."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=cTr-aGK-LpA",
-        "spotify": "1KixkQVDUHggZMU9dUobgm",
-        "amazonMusic": "B08MBJR4Q9"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/ava-max-my-head---my-heart.jpg"
-    },
-    {
-      "id": "yt-_FTgm0-ZKbg",
-      "title": "So Am I",
-      "artist": "Ava Max",
-      "year": 2019,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Modern Hits"
-      ],
-      "hints": [
-        "Empowerment-Pop über Andersartigkeit und Selbstakzeptanz trotz Druck zur Konformität.",
-        "Eingängiger Hook mit einfacher, aber kraftvoller Botschaft – nicht überanalysiert.",
-        "Wurde zur Community-Hymne für marginalisierte Gruppen weltweit.",
-        "Mainstream-Zugänglichkeit gepaart mit echtem sozialen Statement – selten gelungen.",
-        "Sing-along Moment: Chorus ist extrem repetitiv und einprägsam – Zweck."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=_FTgm0-ZKbg",
-        "spotify": "2Xnv3GntqbBH1juvUYSpHG",
-        "amazonMusic": "B07PB9C1KK"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/ava-max-so-am-i.jpg"
-    },
-    {
-      "id": "metal-avenged-nightmare",
-      "title": "Nightmare",
-      "artist": "Avenged Sevenfold",
-      "year": 2010,
-      "country": "US",
-      "genre": "Heavy Metal",
+      "id": "movie-adele-skyfall",
+      "title": "Skyfall",
+      "artist": "Adele",
+      "year": 2012,
+      "country": "GB",
+      "genre": "Soul-pop",
       "difficulty": "medium",
       "mood": [
         "Dark",
-        "Energy",
+        "Epic",
+        "Cinematic"
+      ],
+      "hints": [
+        "Das Titellied zum gleichnamigen James-Bond-Abenteuer mit Daniel Craig.",
+        "War das erste Bond-Thema, das einen Oscar, einen Golden Globe und einen Brit Award gewann.",
+        "Enthält typische Bond-Klänge wie dramatische Streicher und Bläser.",
+        "Der Text nutzt die Metapher des 'Himmelseinsturzes' für den Zusammenbruch einer Welt.",
+        "Refrain: 'Let the [XXX] crumble, we will stand tall, face it all together – at [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "This is the end, hold your breath and count to ten",
+          "Feel the earth move and then, hear my heart burst again",
+          "For this is the end, I've drowned and dreamt this moment"
+        ],
+        "fake": "Diamonds are forever, they're the only thing that's gonna stay through time"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DeumyOzKqgI",
+        "spotify": "6VObnIkLVruX4UVyxWhlqm",
+        "amazonMusic": "B07C1DN16Z"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-adele-skyfall.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "piano-adele-someone",
+      "title": "Someone Like You",
+      "artist": "Adele",
+      "year": 2011,
+      "country": "GB",
+      "genre": "Pop / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
         "Powerful"
       ],
       "hints": [
-        "Erster Major-Track nach großem Band-Umbruch – Rückkehr mit verstärkter künstlerischer Vision.",
-        "Cineastischer Song-Aufbau: Intro-Spannung → Breakdown → Explosive Chorus.",
-        "Thematisiert Angst, innere Dämonen und den Eintritt in die eigene psychologische Hölle.",
-        "Vocals variieren zwischen Whisper und kraftvollen Schreien – technisch anspruchsvoll und abwechslungsreich.",
-        "Moderner Metal-Dauerbrenner in Playlists und Live-Setlisten."
+        "Zutiefst bewegende Ballade über das Loslassen einer großen Liebe, die nicht mehr erwidert wird.",
+        "Besticht durch das schlichte Klavier-Arrangement und die außergewöhnliche Stimme der britischen Sängerin.",
+        "Wurde zu einer globalen Hymne für Herzschmerz.",
+        "Die Live-Performance der Sängerin bei den BRIT Awards 2011 machte den Song zur Legende.",
+        "Refrain: 'Nevermind, I'll find [XXX] [XXX] you! I wish nothing but the best for you too!'"
       ],
       "lyrics": {
         "real": [
-          "Nightmare! Now your nightmare comes to life",
-          "Dragged you down below down to the devil's show",
-          "To be his guest forever (Peace of mind is less than never)"
-        ],
-        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "94bGzWyHbu0",
-        "spotify": "4UEo1b0wWrtHMC8bVqPiH8",
-        "amazonMusic": "B003VE62FO"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/metal-avenged-nightmare.jpg",
-      "packs": [
-        "Metal & Hardcore Fury"
-      ]
-    },
-    {
-      "id": "yt-hPT2FGoSOr8",
-      "title": "Amor De Madre",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Bachata-Ballad über bedingungslose Mutterliebe, Opfer und generationale Dankbarkeit.",
-        "Traditionelle Bachata-Gitarren mit melancholischen, gefühlvollen Vocals im mittleren Register.",
-        "Modernes Produktions-Arrangement ohne traditionelle Instrumentation zu verlieren.",
-        "Kultureller Kontext: Bachata oft als marginalisiertes Genre – dieses Lied verleiht ihm Würde.",
-        "Universelles Thema mit spezifisch Latino-kulturellem Ausdruck."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=hPT2FGoSOr8",
-        "spotify": "0iEit4v7n5T99F7uI9i261",
-        "amazonMusic": "B00G00451U"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-amor-de-madre.jpg"
-    },
-    {
-      "id": "yt-0XCot42qTvA",
-      "title": "Dile Al Amor",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Romantische Bachata über Liebesbotschaften und emotionale Vermittlung zwischen Personen.",
-        "Intimate Vocals über orchestrale Bachata-Instrumentation – keine Aggression, nur Weichheit.",
-        "Meta-Ebene: Der Song spricht mit dem Publikum, als würde er Liebe weitergeben.",
-        "Raue, charaktervolle Stimme kontrastiert mit eleganter, melancholischer Melodie.",
-        "Song-Struktur: Langer emotionaler Aufbau ohne traditionellen Chorus-Knall."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=0XCot42qTvA",
-        "spotify": "0UByJq85o7i2Yvsh6eUaUp",
-        "amazonMusic": "B0029A79UI"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-dile-al-amor.jpg"
-    },
-    {
-      "id": "yt-6WeMiC-CJHA",
-      "title": "El Malo",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Schnellere Bachata-Variante mit punchigem Rhythmus, Bläser-Stabs und Tanzbarkeit.",
-        "Thematisiert Selbst-Etiketierung als 'der Böse' in gescheiterter Liebe – Schuld und Reue.",
-        "Männliche Perspektive auf Versagen in Beziehungen – vulnerable Masculinity.",
-        "Marktiert sich als Club-Hit für Latino Tanzszene – Tanzbarkeit ist zentral.",
-        "Bachata-Variante: Schneller als klassisch, moderner als akustisch."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=6WeMiC-CJHA",
-        "spotify": "0E83d4L8pW1U0Wk62J8Zg2",
-        "amazonMusic": "B0029A78Z4"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-el-malo.jpg"
-    },
-    {
-      "id": "yt-elGZbcpGzdU",
-      "title": "El Perdedor",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Melancholische Bachata über Unterlegensein und emotionale Niederlage in Liebe.",
-        "Minimal orchestrierte Arrangement – Piano, Strings, Vocals – Fokus auf emotionale Tiefe.",
-        "Behandelt Verlust mit Würde statt reiner Traurigkeit oder Selbstmitleid.",
-        "Psychologische Komplexität: 'Der Verlierer ist immer der, der mehr liebt.'",
-        "Universelles Thema: Asynchrone Liebe – eine Person liebt mehr als die andere."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=elGZbcpGzdU",
-        "spotify": "27ze5t5tIDPlVits0KRbxT",
-        "amazonMusic": "B01AJKK53M"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-el-perdedor.jpg"
-    },
-    {
-      "id": "yt-zEEu2cseSWg",
-      "title": "Enséñame a Olvidar (Sold Out at Madison Square Garden)",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Live-Aufnahme vom ausverkauften Madison Square Garden Concert – historischer Moment.",
-        "Thematisiert 'Vergessen als Lernprozess' – nicht sofortiges Vergessen, sondern graduelles Loslassen.",
-        "Live-Version mit Audience-Interaktionen verstärkt emotionale Energie und Authentizität.",
-        "Zentrale Metapher: Der Körper und Name der Geliebten sind in Erinnerung verankert.",
-        "Performance-Qualität: Das Konzert-Setting verleiht dem Song zusätzliche Dramatik."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=zEEu2cseSWg",
-        "spotify": "79MlVxKj43tDISSISiVHJM",
-        "amazonMusic": "B00W8O3G70"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-enséñame-a-olvidar--sold-out-at-madison-square-garden-.jpg"
-    },
-    {
-      "id": "yt-mVYQSAm8hB0",
-      "title": "Hermanita",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Familie-orientierte Bachata über emotionale Bindung zwischen Geschwistern – seltenes Thema.",
-        "Warme, zärtliche Melodie mit gefühlvollen Vocals und traditioneller Bachata-Gitarre.",
-        "Thematisiert Schutz, Loyalität und emotionale Verantwortung gegenüber Familie.",
-        "Diminutiv-Endung als Term of Endearment, nicht als Schwächung – liebevoll.",
-        "Kultureller Kontext: Familie ist in Latino-Kultur zentral – nicht sentimentales Add-on."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=mVYQSAm8hB0",
-        "spotify": "6ExIo2QuQcqkJKYRIfNtNE",
-        "amazonMusic": "B001S4I5T0"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-hermanita.jpg"
-    },
-    {
-      "id": "yt-XFRfrPkfghY",
-      "title": "La Boda",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Bachata über Hochzeits-Szenarien – Kontrast zwischen öffentlicher Freude und privater Melancholie.",
-        "Festliches, aber sentimental getöntes Arrangement – nicht fröhlich, sondern wehmütig.",
-        "Reflektiert die Bedeutung von Ceremonien und Commitment in Liebesgeschichten.",
-        "Typisches Aventura-Thema: Glück anderer verstärkt den eigenen Trennungsschmerz.",
-        "Szenario-fokussiert: Das Lied malt Bilder von Hochzeits-Atmosphäre."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=XFRfrPkfghY",
-        "spotify": "2jQeX1fMZo5z82w3BviN5x",
-        "amazonMusic": "B00W8OOC7S"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-la-boda.jpg"
-    },
-    {
-      "id": "yt-z2pt4CN4rhc",
-      "title": "Mi corazoncito",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Zärtliche Bachata mit Diminutiv-Titel – liebevolle, intime Anrede an Partnerin.",
-        "Softeres Arrangement mit melancholischen Streichern und gefühlvollem Gesang ohne Aggression.",
-        "'Kleines Herz' als Metapher für emotionalen Kern, Verwundbarkeit und tiefe Liebe.",
-        "Balanciert zwischen kitschiger Sprache und echtem emotionalem Gewicht – funktioniert.",
-        "Minimalistische Produktion fokussiert auf Stimme und emotionale Nuance."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=z2pt4CN4rhc",
-        "spotify": "5I76YtdZkFQReVgKppRd78",
-        "amazonMusic": "B01AJKL5K4"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-mi-corazoncito.jpg"
-    },
-    {
-      "id": "yt-GHLVjriwzFg",
-      "title": "Por Un Segundo",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Sehnsucht nach flüchtigen Momenten intensiver Nähe in einer unmöglichen oder vorbei Liebe.",
-        "Melancholischer Sound mit verzögerter Gitarre und rauerem, verletzlichem Gesang.",
-        "Psychologisches Theme: Moment-Intensität vs. Dauerhaftigkeit – das menschliche Dilemma.",
-        "Das 'Eine Sekunde' ist Metapher für unerreichbare, aber obsessive Nähe.",
-        "Song-Struktur: Langsam aufbauend, nie explosiv – Spannung statt Release."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=GHLVjriwzFg",
-        "spotify": "2MioxSroS0g1mi24LLfcnq",
-        "amazonMusic": "B01AJKKLEU"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-por-un-segundo.jpg"
-    },
-    {
-      "id": "yt-fY36BMNDqbg",
-      "title": "Su Veneno (Version Bachata)",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Bachata-Interpretation eines Lieds über 'toxische Liebe' – das Gift als Metapher für Sucht.",
-        "Die Bachata-Version verlangsamt das Original ins Genre – mehr Melancholie, weniger Energie.",
-        "Das 'Gift' ist die Liebe selbst: schädlich physiologisch, aber psychologisch irresistibel.",
-        "Contrasts der Interpretation: Original könnte punkiger sein, Bachata ist introspektiv.",
-        "Produziert als Liebes-Ballade statt Uptempo – anderer emotionaler Rahmen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=fY36BMNDqbg",
-        "spotify": "709hAukJxapqTU9VhsiQm0",
-        "amazonMusic": "B0029A1NW8"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-su-veneno--version-bachata-.jpg"
-    },
-    {
-      "id": "yt-kADoBrj4934",
-      "title": "Todavia Me Amas",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Thema: Die unbewusste, anhaltende Liebe trotz Trennung – oft unausgesprochen.",
-        "Intimate Vocals über orchestralen Bachata-Instrumenten – elegant, nicht laut.",
-        "Emotionale Spannung zwischen Trennungswirklichkeit und anhaltenden tiefen Gefühlen.",
-        "Eine zentrale Wiederholung durchzieht das Lied – grammatikalisch und emotional das Herzstück.",
-        "Universelles Erlebnis: Liebe endet nicht mit Trennung, sondern transformiert sich."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=kADoBrj4934",
-        "spotify": "0wJTj7BfrMEJ30x63A1lh4",
-        "amazonMusic": "B00W8O2V2G"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-todavia-me-amas.jpg"
-    },
-    {
-      "id": "yt-uBwk106e3es",
-      "title": "Un Beso",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Sehnsucht nach einem einzigen Kuss als Akt der Vergebung, Heilung oder letzter Nähe.",
-        "Soft, intimes Arrangement mit gefühlvollen Vocals und minimaler, aber effektiver Instrumentation.",
-        "Ein Kuss als Metapher für emotionale Heilung und Versöhnung – körperlich repräsentiert psychisch.",
-        "Der einfache Titel kontrastiert mit psychologischer Komplexität und emotionaler Last.",
-        "Song-Fokus: Nicht das Küssen selbst, sondern das Sehnen danach – Verlangen statt Aktion."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=uBwk106e3es",
-        "spotify": "1SaEt8dwTuLDzenUu5BqI6",
-        "amazonMusic": "B01AIWLOAY"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-un-beso.jpg"
-    },
-    {
-      "id": "yt-vM-1lBb3bqw",
-      "title": "Yo Quisiera Amarla [con letras]",
-      "artist": "Aventura",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Melodramatische Bachata über das Begehren zu lieben, aber unfähig zu sein – psychische Blockade.",
-        "Orchestrale Instrumentation unterstreicht innere psychologische Konflikte – nicht einfach traurig.",
-        "Der Konjunktiv drückt unrealisierte Gefühle und emotionale Lähmung aus – nicht Tatsache, sondern Wunsch.",
-        "Thematisiert emotionale Unfähigkeit – nicht mangelnde Liebe, sondern mangelnde Kapazität.",
-        "Drama-intensiv: Das Lied baut sich zu keinem Release-Moment auf – Spannung bleibt."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=vM-1lBb3bqw",
-        "spotify": "7Ln0OEpEiFDMwxHfEMP5aM",
-        "amazonMusic": "B01AJKL3ME"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/aventura-yo-quisiera-amarla--con-letras-.jpg"
-    },
-    {
-      "id": "soul-awb-pieces",
-      "title": "Pick Up the Pieces",
-      "artist": "Average White Band (AWB)",
-      "year": 1974,
-      "country": "GB",
-      "genre": "Funk / instrumental focus",
-      "difficulty": "medium",
-      "mood": [
-        "Cool",
-        "Energy",
-        "Classic"
-      ],
-      "hints": [
-        "Besticht durch das messerscharfe Saxophon-Motiv und den coolen Groove.",
-        "Obwohl die [XXX] aus Schottland stammt, klangen sie so authentisch nach US-Funk, dass sie weltweit für Sensation sorgten.",
-        "Ein Inbegriff für den tighten, instrumentalen Funk.",
-        "Refrain: (Wird gerufen): '[XXX] up the [XXX]!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Pick up the pieces!",
-          "(Saxophone Instrumental)",
-          "Pick up the pieces!"
-        ],
-        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "MfAJLGFWxYo",
-        "spotify": "2H5nsVLjDwWsxfyajm0lVS",
-        "amazonMusic": "B0FFNJBG1H"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/soul-awb-pieces.jpg",
-      "packs": [
-        "Soul & Funk Grooves"
-      ]
-    },
-    {
-      "id": "disco-avicii-levels",
-      "title": "Levels",
-      "artist": "Avicii",
-      "year": 2011,
-      "country": "SE",
-      "genre": "EDM / Progressive House",
-      "difficulty": "easy",
-      "mood": [
-        "Happy",
-        "Energy",
-        "Club"
-      ],
-      "hints": [
-        "Definierender Track des weltweiten EDM-Booms der frühen 2010er – Game-Changer Moment.",
-        "Samplet eine ikonische Soul-Stimme aus einem Klassiker – respektvolle Neuinterpretation elektronischer Musik.",
-        "Charakteristisches hochgepitchtes Synthesizer-Thema – energetisch und sofort erkennbar.",
-        "Der Track wurde zum globalen Superstar-Maker für den Produzenten trotz anfänglicher Skepsis.",
-        "Produziert mit modernen EDM-Techniken, aber respektful zum Vintage-Sample."
-      ],
-      "lyrics": {
-        "real": [
-          "Oh, sometimes I get a good feeling, yeah",
-          "I get a feeling that I never, never, never had before, no no",
-          "I get a good feeling, yeah"
+          "I heard that you're settled down, that you found a girl and you're married now",
+          "I hate to turn up out of the blue, uninvited, but I couldn't stay away",
+          "Nevermind, I'll find someone like you"
         ],
         "fake": "In the shadow of the night, we're looking for the light tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "_ovdm2yX4MA",
-        "spotify": "5UqCQaDshqbIk3pkhy4Pjg",
-        "amazonMusic": "B0060LHSKI"
+        "youtube": "hLQl3WQQoQ0",
+        "spotify": "3bNv3VuUOKgrf5hu3YcuRo",
+        "amazonMusic": "B004I1NA90"
       },
-      "coverUrl": "/covers/disco-avicii-levels.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-adele-someone.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "disney-snowwhite-someday",
+      "title": "Someday My Prince Will Come",
+      "artist": "Adriana Caselotti",
+      "year": 1937,
+      "country": "US",
+      "genre": "Soundtrack / Classical",
+      "difficulty": "easy",
+      "mood": [
+        "Dreamy",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Stammt aus 'Schneewittchen und die sieben Zwerge', dem ersten abendfüllenden Zeichentrickfilm.",
+        "Inbegriff für Sehnsucht und märchenhafte Romantik.",
+        "Die charakteristisch hohe Sopranstimme der Sängerin wurde zur Blaupause für Disney-Prinzessinnen.",
+        "Wurde später oft von Jazz-Musikern gecovert.",
+        "Refrain: '[XXX] my [XXX] [XXX] [XXX]! [XXX] we'll meet again!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Someday my prince will come, someday we'll meet again",
+          "And away to his castle we'll go, to be happy forever I know",
+          "Someday when spring is here, we'll find our love anew"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "KrtWu8eBBek",
+        "spotify": "0E2ARPr6Anq8l4dwsu8hbP",
+        "amazonMusic": "B004B5T4CK"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-snowwhite-someday.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "rock-aerosmith-dream-on",
+      "title": "Dream On",
+      "artist": "Aerosmith",
+      "year": 1973,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Dramatic",
+        "Epic",
+        "Moody",
+        "Rock"
+      ],
+      "hints": [
+        "Ein Klassiker über das Älterwerden und das Festhalten an Träumen trotz vergehender Zeit.",
+        "Besticht durch das Barock-inspirierte Klavier-Intro und den legendären Schrei am Ende.",
+        "Thematisiert den Lauf der Zeit und den Drang, seinen Weg zu gehen.",
+        "Ein Meilenstein des Hard Rock, der die Band berühmt machte.",
+        "Refrain: '[XXX] on, [XXX] on, [XXX] on! [XXX] until your [XXX]s come true!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Every time that I look in the mirror, all these lines on my face getting clearer",
+          "The past is gone, it went by like dusk to dawn",
+          "Isn't that the way? Everybody's got their dues to pay"
+        ],
+        "fake": "Walking through the silver screen, looking for the girl I've seen"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "hHRNSeuvzlM",
+        "spotify": "2K2Ji4ca76JNgoO6xG2QKm",
+        "amazonMusic": "B084P7KGQW"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-aerosmith-dream-on.jpg",
+      "packs": [
+        "Rock Anthems",
+        "piano-ballads",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-MhxCFXmR0E8",
+      "title": "Feels This Good",
+      "artist": "Afrojack",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein energiegeladener Dance-Track des niederländischen DJs und Produzenten.",
+        "Erschienen 2022 – typisch moderner EDM mit treibenden Beats und eingängiger Melodie.",
+        "Besticht durch eingängige Melodiebögen und einen druckvollen Drop – typisch für modernen EDM.",
+        "Der Track stammt aus den Niederlanden, einem der Epizentren der globalen EDM-Szene.",
+        "Der Titel sagt alles: pure, unbeschwerte Euphorie auf der Tanzfläche."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MhxCFXmR0E8",
+        "spotify": "5JL0aPP9mvMHx0IGXqcI5C",
+        "amazonMusic": "B0BZ9HM51N"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/afrojack-feels-this-good.jpg"
+    },
+    {
+      "id": "house-afrojack-control",
+      "title": "Take Over Control",
+      "artist": "Afrojack ft. Eva Simons",
+      "year": 2010,
+      "country": "NL",
+      "genre": "Electro House",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Club",
+        "Nightlife"
+      ],
+      "hints": [
+        "Inbegriff für den 'Dutch House' Sound mit hohem Synthesizer-Thema.",
+        "Machte den Interpreten weltweit bekannt.",
+        "Besticht durch die kraftvolle Club-Stimme der Sängerin.",
+        "Erschienen 2010 als einer der prägenden Tracks der Electro-House-Ära aus den Niederlanden.",
+        "Refrain: 'I want you to [XXX] [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I want you to take over control, for tonight, for tonight",
+          "Take over control, of my body and soul",
+          "Everything will be alright"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "adGVpCsf9N4",
+        "spotify": "5DdDbJvoaT8fqQMJkiGg4T",
+        "amazonMusic": "B0C8PJJXMM"
+      },
+      "coverUrl": "/covers/house-afrojack-control.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",
@@ -892,110 +280,86 @@
       ]
     },
     {
-      "id": "yt-W4C-NEWrnSQ",
-      "title": "The Nights",
-      "artist": "Avicii",
-      "year": 2014,
-      "country": "INT",
-      "genre": "Electronic",
-      "difficulty": "medium",
+      "id": "metal-agnostic-go",
+      "title": "Gotta Go",
+      "artist": "Agnostic Front",
+      "year": 1998,
+      "country": "US",
+      "genre": "New York Hardcore",
+      "difficulty": "easy",
       "mood": [
-        "Popular",
-        "Modern Hits"
-      ],
-      "hints": [
-        "EDM-Uplifter über das Feiern der Jugend und das Bewahren von Freiheit und Freundschaft.",
-        "Progressive House-Struktur mit gefühlvollen Vocals und aufbauenden Synthesizern – emotional.",
-        "Thematisiert nächtliche Feiern als Metapher für Jugend, Abenteuer und idealisierte Vergangenheit.",
-        "Festival-Hymne: Der Song wurde zur Quintessenz von Nachtleben und Tanzkultur.",
-        "Produziert mit Raum für emotionale Entfaltung – nicht nur Club-Sound, auch Gefühl."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=W4C-NEWrnSQ",
-        "spotify": "0ct6r3EGTcMLPtrXHDvVjc",
-        "amazonMusic": "B00PU10HL6"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/avicii-the-nights.jpg"
-    },
-    {
-      "id": "yt-iR1sAex__VA",
-      "title": "Waiting For Love",
-      "artist": "Avicii",
-      "year": 2015,
-      "country": "INT",
-      "genre": "Electronic",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Dance Floor"
-      ],
-      "hints": [
-        "Melancholische EDM-Ballade über emotionale Sehnsucht und menschliche Verbindung.",
-        "Piano-getriebenes Intro mit aufbauenden elektronischen Elementen – emotional und progressiv.",
-        "Thematisiert moderne Einsamkeit in einer vernetzten, aber isolierenden Welt.",
-        "Synthesizer-getriebene Produktion verwebt mit organischem Piano – Hybrid-Sound.",
-        "Dance-Musik, die zum Nachdenken einlädt – selten gelungen, ein Signature-Style dieses Künstlers."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=iR1sAex__VA",
-        "spotify": "2P4OICZRVAQcYAV2JReRfj",
-        "amazonMusic": "B0F2BDZL4Z"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/avicii-waiting-for-love.jpg"
-    },
-    {
-      "id": "yt-2NiyrtYegso",
-      "title": "Wake Me Up",
-      "artist": "Avicii",
-      "year": 2013,
-      "country": "INT",
-      "genre": "Classic Pop",
-      "difficulty": "medium",
-      "mood": [
-        "60s/70s Legends",
         "Energy",
         "Happy",
-        "Popular",
-        "Summer"
+        "Positive"
       ],
       "hints": [
-        "Mischte als einer der ersten Songs EDM-Beats mit Country- und Folk-Elementen.",
-        "Der Soulig-Gesang stammt von Aloe Blacc.",
-        "Wurde nach der Premiere beim Ultra Music Festival 2013 zunächst skeptisch aufgenommen, bevor er zum Welthit wurde.",
-        "Thematisiert das Erwachsenwerden und die Sinnsuche.",
-        "Refrain: 'So [XXX] me up when it's all over, when I'm wiser and I'm older!'"
+        "Die ultimative Mitsing-Hymne des New York Hardcore.",
+        "Thematisiert Aufbruch, Loyalität und die Wurzeln in der Lower East Side.",
+        "Besticht durch den eingängigen Chorus und die pure Spielfreude.",
+        "Die rauhe, markante Stimme des Frontsängers ist seit Jahrzehnten das Aushängeschild des New York Hardcore.",
+        "Refrain: '[XXX], [XXX], [XXX] go! Oi! Oi! Oi!'"
       ],
       "lyrics": {
         "real": [
-          "Feeling my way through the darkness, guided by a beating heart",
-          "I can't tell where the journey will end, but I know where to start",
-          "So wake me up when it's all over, when I'm wiser and I'm older"
+          "From the East Coast to the West Coast, we got the sound",
+          "Gotta, gotta, gotta go! NYHC is coming through",
+          "Stand for the truth, stand for our brothers"
         ],
-        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=2NiyrtYegso",
-        "spotify": "0nrRP2bk19rLc0orkWPQk2",
-        "amazonMusic": "B0F1X2NKYZ"
+        "youtube": "ocIT67BAL4k",
+        "spotify": "5gP99M7O33N3qO37u362uB",
+        "amazonMusic": "B07ZMJK3CF"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-agnostic-go.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "soul-al-green-stay-together",
+      "title": "Let's Stay Together",
+      "artist": "Al Green",
+      "year": 1971,
+      "country": "US",
+      "genre": "Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Romantic",
+        "Smooth"
+      ],
+      "hints": [
+        "Einer der wohl leidenschaftlichsten und glattesten Soul-Songs aller Zeiten.",
+        "Die weiche, fast flüsternde Stimme des Interpreten ist das Markenzeichen des Stücks.",
+        "Erschienen 1971 und bis heute eines der meistgecoverten Soul-Stücke – u.a. von Tina Turner und Al Jarreau.",
+        "Ein zeitloser Klassiker über die Beständigkeit der Liebe.",
+        "Refrain: '[XXX], [XXX] [XXX] [XXX]! Lovin' you whether high or low, happy or blue!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm so in love with you, whatever you want to do is all right with me",
+          "Let's, let's stay together, lovin' you whether, whether times are good or bad, happy or sad",
+          "Why, oh why can people never see that I'm so in love with you"
+        ],
+        "fake": "Under the stars of the night, I'm feeling so right with you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "XXx6RDzR6eM",
+        "spotify": "63xdwScd1Ai1GigAwQxE8y",
+        "amazonMusic": "B06XG24B2X"
       },
       "supportedModes": [
         "cover-confusion",
@@ -1006,47 +370,95 @@
         "vibe-check"
       ],
       "isQRCompatible": true,
+      "coverUrl": "/covers/soul-al-green-stay-together.jpg",
       "packs": [
-        "YouTube Collection",
-        "Electronic & Techno"
-      ],
-      "coverUrl": "/covers/electro-avicii-wake-me-up.jpg"
+        "World, Reggae & Soul",
+        "soul-funk"
+      ]
     },
     {
-      "id": "dance-avicii-wake-me",
-      "title": "Wake Me Up",
-      "artist": "Avicii ft. Aloe Blacc",
-      "year": 2013,
-      "country": "SE/US",
-      "genre": "Folk-House / EDM",
+      "id": "jazz-jarreau-love",
+      "title": "We're in This Love Together",
+      "artist": "Al Jarreau",
+      "year": 1981,
+      "country": "US",
+      "genre": "Jazz / Pop / R&B",
       "difficulty": "easy",
       "mood": [
         "Happy",
-        "Inspirational",
-        "Energy"
+        "Romantic",
+        "Soft"
       ],
       "hints": [
-        "Revolutionärer EDM-Track: Erste Fusion von Dance-Beats mit Country/Folk-Gitarren.",
-        "Eine markante Soul-Stimme über treibendem Synthesizer-Beat – unerwartete Genre-Alchemie.",
-        "Thematisiert Erwachsenwerden, Sinnsuche und die Angst, die Zeit zu verschwenden.",
-        "Premiere beim Ultra Music Festival 2013 wurde initial skeptisch aufgenommen, dann zum Welthit.",
-        "Bahnbrechende musikalische Vision des Produzenten: Genre-Grenzen ignorieren, Gefühl bewahren."
+        "Inbegriff für den Status des Interpreten als König des Smooth Jazz Pop.",
+        "Besticht durch seinen einzigartigen, akrobatischen Gesangsstil.",
+        "Thematisiert feste Partnerschaft und gemeinsames Glück.",
+        "Ein absoluter Radio-Klassiker der frühen 80er.",
+        "Refrain: '[XXX] in this [XXX] [XXX]! Just a second out of time!'"
       ],
       "lyrics": {
         "real": [
-          "Feeling my way through the darkness, guided by a beating heart",
-          "I can't tell where the journey will end, but I know where to start",
-          "So wake me up when it's all over, when I'm wiser and I'm older"
+          "It's like a diamond ring, it's a precious thing, and we never want to lose it",
+          "We're in this love together, we got the kind that lasts forever",
+          "We're in this love together, just a second out of time"
         ],
-        "fake": "Walking down the street with a rhythm in my feet tonight"
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "IcrbM1l_BoI",
-        "spotify": "0nrRP2bk19rLc0orkWPQk2",
-        "amazonMusic": "B0F1X2NKYZ"
+        "youtube": "otVH5cv9z1A",
+        "spotify": "1Let4BYaYSum46nAGO1i6v",
+        "amazonMusic": "B002G2CN2S"
       },
-      "coverUrl": "/covers/dance-avicii-wake-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-jarreau-love.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "country-jackson-chattahoochee",
+      "title": "Chattahoochee",
+      "artist": "Alan Jackson",
+      "year": 1992,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Besticht durch den rasanten Uptempo-Beat und das humorvolle Musikvideo (Der Sänger auf Wasserski).",
+        "Thematisiert Jugendstreiche und das Erwachsenwerden am Fluss.",
+        "Ein Inbegriff für den fröhlichen Country-Sound der frühen 90er.",
+        "Gewann mehrere Country Music Awards als 'Single des Jahres'.",
+        "Refrain: 'Way down yonder on the [XXX]! It gets hotter than a hoochie coochie!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Way down yonder on the Chattahoochee, it gets hotter than a hoochie coochie",
+          "We learned a lot about livin' and a little 'bout lovin'",
+          "Yeah way down yonder on the Chattahoochee"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JW5UEW2kYvc",
+        "spotify": "59kHPbwyyCApYA8RQQEuXm",
+        "amazonMusic": "B001SP3R2E"
+      },
+      "coverUrl": "/covers/country-jackson-chattahoochee.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",
@@ -1057,14 +469,62 @@
       ],
       "isQRCompatible": true,
       "packs": [
-        "Dance Floor Fillers"
+        "Country & Folk Classics"
       ]
     },
     {
-      "id": "yt-kkIG5tddy9U",
-      "title": "One in a Million",
-      "artist": "Axwell & Ingrosso",
-      "year": 2017,
+      "id": "score-silvestri-bttf",
+      "title": "Back to the Future Theme",
+      "artist": "Alan Silvestri",
+      "year": 1985,
+      "country": "US",
+      "genre": "Movie Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Heroic",
+        "Exciting",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für das Gefühl von Zeitreise und Abenteuer.",
+        "Besticht durch die triumphalen Blechbläser und die rhythmische Präzision.",
+        "Wurde zu einem der bekanntesten Songs der 80er Jahre Kino-Ära.",
+        "Eng verbunden mit dem DeLorean und Doktor Brown.",
+        "Der Komponist schrieb den Score in nur wenigen Wochen auf Wunsch von Regisseur Robert Zemeckis."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Triumphant fanfare",
+          "Time travel energy"
+        ],
+        "fake": "Great Scott! We're going back in time tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MxjbI294h0s",
+        "spotify": "1FI5hblwy9ZwyPg4Jr5hni",
+        "amazonMusic": "B01BPJB17U"
+      },
+      "coverUrl": "/covers/score-silvestri-bttf.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-bPJnv_fHs3Y",
+      "title": "Dark",
+      "artist": "Alan Walker & tomine harket",
+      "year": 2021,
       "country": "INT",
       "genre": "Electronic",
       "difficulty": "medium",
@@ -1073,18 +533,18 @@
         "Dance Floor"
       ],
       "hints": [
-        "Progressive House-Track über das Finden eines einzigartigen Menschen in Masse.",
-        "Großzügiges, aufbauendes Arrangement mit Raum für emotionale Entwicklung vor dem Drop.",
-        "Thematisiert menschliche Einzigartigkeit in einer Welt, die Konformität erzwingt.",
-        "Soulful Vocals über minimalistischem, aber pulsierendem EDM-Rhythmus – Dance mit Herz.",
-        "Typisch für Swedish House Mafia Era: Melodisch, emotional, aber für Clubs optimiert."
+        "Ein atmosphärischer Electronic-Track mit melancholischer, eindringlicher Grundstimmung.",
+        "Erschienen 2021 – verbindet treibende Beats mit einer emotionalen Gesangslinie.",
+        "Der Titel beschreibt die Stimmung treffend: dunkel, eindringlich und zugleich mitreißend.",
+        "Der Produzent ist ein norwegischer DJ, bekannt für seinen Dropstil und seine Maske als ikonisches Markenzeichen.",
+        "Die Sängerin ist die Tochter eines der bekanntesten skandinavischen Rockstars."
       ],
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=kkIG5tddy9U",
-        "spotify": "3YfGTvsTAWGC2lgoDOikUz",
-        "amazonMusic": "B0CD386J4H"
+        "youtube": "bPJnv_fHs3Y",
+        "spotify": "6SRWhUJcD2YKahCwHavz3X",
+        "amazonMusic": "B07FPXFK5Z"
       },
       "supportedModes": [
         "timeline"
@@ -1093,42 +553,7 @@
       "packs": [
         "YouTube Collection"
       ],
-      "coverUrl": "/covers/axwell---ingrosso-one-in-a-million.jpg"
-    },
-    {
-      "id": "yt-tEVyDmcF7u0",
-      "title": "La Bomba (Music Video)",
-      "artist": "Azul Azul",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Eurodance / Latin-Pop mit explosiven, tanzbaren Rhythmen und karibischem Flavor.",
-        "'La Bomba' (Die Bombe) ist Metapher für etwas Explosives, Wildes und Aufregendes.",
-        "Das Music Video ist zentral für den künstlerischen Eindruck – nicht nur Audio-fokussiert.",
-        "Charakteristisch für Late-90s / Early-2000s Eurodance-Eurodisco-Sound – Nostalgie-Appeal.",
-        "Tanzbar optimiert: Rhythmischer Fokus auf Hüften und Body-Movement."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=tEVyDmcF7u0",
-        "spotify": "0Tl84qfow6Dv0PM60zoBhb",
-        "amazonMusic": "B00A16YWUM"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/azul-azul-la-bomba--music-video-.jpg"
+      "coverUrl": "/covers/alan-walker---tomine-harket-dark.jpg"
     }
   ]
 }

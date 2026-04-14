@@ -1,0 +1,539 @@
+{
+  "songs": [
+    {
+      "id": "jazz-benson-broadway",
+      "title": "On Broadway",
+      "artist": "George Benson",
+      "year": 1978,
+      "country": "US",
+      "genre": "Jazz / Pop / Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Confident"
+      ],
+      "hints": [
+        "[XXX] [XXX]s Live-Version wurde zum absoluten Welthit.",
+        "Kombiniert virtuoses Gitarrenspiel mit [XXX]s Soul-Gesang.",
+        "Thematisiert den Traum vom Erfolg im Showbusiness.",
+        "Ein Inbegriff für den Jazz-Pop der späten 70er Jahre.",
+        "Refrain: 'They say the neon lights are bright on [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "They say the neon lights are bright on Broadway",
+          "They say there's always magic in the air",
+          "But when you're walking down that street, and you ain't had enough to eat"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "EAIp7yFk0tk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-benson-broadway.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "class-handel-hallelujah",
+      "title": "Hallelujah Chorus",
+      "artist": "George Frideric Handel",
+      "year": 1741,
+      "country": "DE/GB",
+      "genre": "Baroque / Oratorio",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Epic",
+        "Religious"
+      ],
+      "hints": [
+        "Song mit charakteristischen Baroque -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Hallelujah! Hallelujah! Hallelujah! Hallelujah! Hallelujah!",
+          "For the Lord God Omnipotent reigneth",
+          "Hallelujah! Hallelujah!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gFRI-Ar5hTs",
+        "spotify": "4TNCQyG2gmepsGoeLdRKn4",
+        "amazonMusic": "B001SV31GK"
+      },
+      "coverUrl": "/covers/class-handel-hallelujah.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "george-michael-careless-whisper-1984",
+      "title": "Careless Whisper",
+      "artist": "George Michael",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dance Floor",
+        "Emotional",
+        "Heartbreak",
+        "Legends & Classics",
+        "Nostalgic",
+        "Popular",
+        "Romantic"
+      ],
+      "hints": [
+        "[XXX] [XXX] schrieb diesen Song im Alter von 17 Jahren – die Melodie fiel ihm ein, während er in einem Bus saß.",
+        "Das berühmte Saxofon-Riff zu Beginn gilt als eines der bekanntesten Einstiege in der gesamten Popgeschichte.",
+        "Erschienen 1984; in Großbritannien war es die meistverkaufte Single des gesamten Jahres.",
+        "Langsame Ballade mit einem elegischen, sofort erkennbaren Saxofon-Intro, das in einen gefühlvollen Soul-Gesang übergeht.",
+        "[XXX] [XXX] bereut eine Untreue und singt über schuldbewusste Füße, die keinen Rhythmus mehr finden."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm never gonna dance again, guilty feet have got no rhythm",
+          "Though it's easy to pretend, I know you're not a fool",
+          "I should've known better than to cheat a friend"
+        ],
+        "fake": "So I'll stay here in the silence of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "izGwDsrQ1eQ",
+        "spotify": "5WDLRQ3VCdVrKw0njWe5E5",
+        "amazonMusic": "B01EY4Q9W0"
+      },
+      "coverUrl": "/covers/george-michael-careless-whisper-1984.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s-pop",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "country-strait-amarillo",
+      "title": "Amarillo by Morning",
+      "artist": "George Strait",
+      "year": 1982,
+      "country": "US",
+      "genre": "Country / Western",
+      "difficulty": "medium",
+      "mood": [
+        "Nostalgic",
+        "Professional",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für den Sound des Rodeo-Lebens.",
+        "Besticht durch das wunderschöne Fiddle-Solo und [XXX]s perfekten Country-Gesang.",
+        "Thematisiert die Härte und die Schönheit des Lebens als Cowboy.",
+        "[XXX] [XXX] gilt als der 'King of Country'.",
+        "Refrain: '[XXX] by [XXX]! Up from San Antone!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Amarillo by morning, up from San Antone",
+          "Everything that I've got, is just what I've got on",
+          "I ain't got a dime, but what I got is mine"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FbVISS-lEAc"
+      },
+      "coverUrl": "/covers/country-strait-amarillo.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "class-bizet-carmen",
+      "title": "Carmen (Habanera)",
+      "artist": "Georges Bizet",
+      "year": 1875,
+      "country": "FR",
+      "genre": "Romantic / Opera",
+      "difficulty": "easy",
+      "mood": [
+        "Seductive",
+        "Confident",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "L'amour est un oiseau rebelle que nul ne peut apprivoiser",
+          "Et c'est bien en vain qu'on l'appelle",
+          "S'il lui convient de refuser"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "EuEBZImVupQ",
+        "spotify": "2r1FiNXh5mDNEP8K07YRVp",
+        "amazonMusic": "B001SID0W8"
+      },
+      "coverUrl": "/covers/class-bizet-carmen.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-65uN9uxaf9k",
+      "title": "Gerardo Ortiz Fuiste Mía Vídeo Oficial",
+      "artist": "Gerardo Ortiz",
+      "year": 2013,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=65uN9uxaf9k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gerardo-ortiz-gerardo-ortiz-fuiste-mía-vídeo-oficial.jpg"
+    },
+    {
+      "id": "yt-Jy7WGe3Kucg",
+      "title": "Perdóname",
+      "artist": "Gerardo Ortiz",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Jy7WGe3Kucg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gerardo-ortiz-perdóname.jpg"
+    },
+    {
+      "id": "yt-Rgrt_8mXrK8",
+      "title": "feat. Pharrell Williams and Nile Rodgers)",
+      "artist": "Get Lucky (Radio Edit",
+      "year": 1968,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Rgrt_8mXrK8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/get-lucky--radio-edit-feat--pharrell-williams-and-nile-rodgers-.jpg"
+    },
+    {
+      "id": "class-puccini-dorma",
+      "title": "Nessun Dorma (Turandot)",
+      "artist": "Giacomo Puccini",
+      "year": 1926,
+      "country": "IT",
+      "genre": "Romantic / Opera",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Nessun dorma! Nessun dorma! Tu pure, o Principessa",
+          "Nella tua fredda stanza guardi le stelle",
+          "Vincerò! Vincerò! Vincerò!"
+        ],
+        "fake": "Singing in the morning with the rising sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MuQsFy1GdN0",
+        "spotify": "3uX11UryFh2ujpeZBWYgkv",
+        "amazonMusic": "B001SN9LMQ"
+      },
+      "coverUrl": "/covers/class-puccini-dorma.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "soul-gilscott-rev",
+      "title": "The Revolution Will Not Be Televised",
+      "artist": "Gil Scott-Heron",
+      "year": 1970,
+      "country": "US",
+      "genre": "Soul / Jazz / Spoken Word",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Cool",
+        "Political"
+      ],
+      "hints": [
+        "Inbegriff für gesellschaftskritischen Spoken Word Soul.",
+        "Thematisiert den oberflächlichen Konsumismus gegen den notwendigen gesellschaftlichen Wandel.",
+        "Besticht durch den minimalistischen Bass-Loop und [XXX]'s prophetische Stimme.",
+        "Gilt als einer der wichtigsten Vorläufer des Hip Hop.",
+        "Refrain: 'The [XXX] [XXX] not be [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You will not be able to stay home, brother",
+          "You will not be able to plug in, turn on and cop out",
+          "The revolution will not be televised"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vwSRqaZGsPw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gilscott-rev.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-Z3PTekF31bc",
+      "title": "Drão",
+      "artist": "Gilberto Gil",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z3PTekF31bc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gilberto-gil-drão.jpg"
+    },
+    {
+      "id": "yt-7kbjKCj-rMQ",
+      "title": "Conciencia",
+      "artist": "Gilberto Santa Rosa",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7kbjKCj-rMQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gilberto-santa-rosa-conciencia.jpg"
+    },
+    {
+      "id": "yt-SV2k9llA6FY",
+      "title": "Conciencia (Live Version (Cover Audio))",
+      "artist": "Gilberto Santa Rosa",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SV2k9llA6FY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gilberto-santa-rosa-conciencia--live-version--cover-audio--.jpg"
+    }
+  ]
+}

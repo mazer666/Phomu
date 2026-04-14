@@ -1,0 +1,516 @@
+{
+  "songs": [
+    {
+      "id": "yt-8bKJYsd1_cg",
+      "title": "Sommersprossen",
+      "artist": "Klaus Nomi",
+      "year": 1983,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8bKJYsd1_cg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/generic-music.jpg"
+    },
+    {
+      "id": "piano-kodaline-all-i-want",
+      "title": "All I Want",
+      "artist": "Kodaline",
+      "year": 2013,
+      "country": "IE",
+      "genre": "Indie Pop / Rock Influence",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Epic"
+      ],
+      "hints": [
+        "Thematisiert die Sehnsucht nach einer Rückkehr des geliebten Menschen.",
+        "Besticht durch den dramatischen Aufbau und die wunderschönen Harmonien.",
+        "Bekannt durch seine emotionale Verwendung in Filmen wie 'The Fault in Our Stars'.",
+        "Ein Inbegriff für irischen Indie-Rock mit Herz.",
+        "Refrain: 'All I [XXX] is nothing more! To hear you knocking on my door!'"
+      ],
+      "lyrics": {
+        "real": [
+          "All I want is nothing more, to hear you knocking on my door",
+          "But you're not here, I'm not alright",
+          "If I could see you for the first time, oh what a feeling"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "jGUASAxXwg4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-kodaline-all-i-want.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "soul-koolgang-celebration",
+      "title": "Celebration",
+      "artist": "Kool & The Gang",
+      "year": 1980,
+      "country": "US",
+      "genre": "Funk / Disco-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Celebrate good times, come on! (Let's celebrate)",
+          "There's a party goin' on right here, a celebration to last throughout the years",
+          "Bring your good times, and your laughter too"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "C1hp04_zEWk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-koolgang-celebration.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "metal-korn-freak",
+      "title": "Freak on a Leash",
+      "artist": "Korn",
+      "year": 1998,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Deep"
+      ],
+      "hints": [
+        "Inbegriff für den '[XXX]-Sound' mit tiefgestimmten 7-Saiter-Gitarren.",
+        "Besticht durch Jonathan Davis' emotionalen Gesang und den Scat-Breakdown.",
+        "Thematisiert Ausnutzung und psychische Verletzlichkeit.",
+        "Besitzt ein visuell bahnbrechendes Musikvideo.",
+        "Refrain: 'Something takes a part of me! You and I were meant to be!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Something takes a part of me, you and I were meant to be",
+          "A cheap fuck for me to lay, something takes a part of me",
+          "I'm on a leash, you're on a leash, we're all on a leash"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Yed3-mayC6U"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Metal & Hardcore Fury"
+      ],
+      "coverUrl": "/covers/korn-freak-on-a-leash.jpg"
+    },
+    {
+      "id": "yt-7MrxZ9y6I2o",
+      "title": "Computer Liebe (2009 Remaster)",
+      "artist": "Kraftwerk",
+      "year": 1981,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7MrxZ9y6I2o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kraftwerk-computer-liebe--2009-remaster-.jpg"
+    },
+    {
+      "id": "synth-kraftwerk-model",
+      "title": "Das Model",
+      "artist": "Kraftwerk",
+      "year": 1978,
+      "country": "DE",
+      "genre": "Electronic / Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Electronic",
+        "Minimalist",
+        "Retro"
+      ],
+      "hints": [
+        "[XXX]s größter kommerzieller Erfolg und ein Meilenstein des Synthpop.",
+        "Besticht durch das unterkühlte, repetitive Synthesizer-Thema.",
+        "Thematisiert den Glamour und die Distanziertheit der Modewelt.",
+        "Pioniere aus Düsseldorf, die den Einsatz von Computern in der Musik revolutionierten.",
+        "Refrain: 'Sie ist ein [XXX] und sie sieht gut aus! Ich nehm' sie heut' gerne mit zu mir nach Haus!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sie ist ein Model und sie sieht gut aus",
+          "Ich nehm' sie heut' gerne mit zu mir nach Haus",
+          "Sie wirkt so kühl, an sie kommt niemand ran",
+          "Doch vor der Kamera, da zeigt sie, was sie kann"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GEnx9xS79Lc"
+      },
+      "coverUrl": "/covers/synth-kraftwerk-model.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-H0KNa9y0nS0",
+      "title": "Tour de France (2009 Remaster)",
+      "artist": "Kraftwerk",
+      "year": 1983,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=H0KNa9y0nS0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kraftwerk-tour-de-france--2009-remaster-.jpg"
+    },
+    {
+      "id": "country-kris-mcgee",
+      "title": "Me and Bobby McGee",
+      "artist": "Kris Kristofferson",
+      "year": 1970,
+      "country": "US",
+      "genre": "Country / Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Romantic",
+        "Epic"
+      ],
+      "hints": [
+        "[XXX]s Meisterwerk über Freiheit und das Loslassen.",
+        "Unsterblich gemacht durch die Coverversion von Janis Joplin.",
+        "Thematisiert eine Reise per Anhalter und die Einsicht, dass Freiheit nur ein anderes Wort für 'nichts zu verlieren' ist.",
+        "Ein Inbegriff für den Geist der frühen 70er Jahre.",
+        "Refrain: 'Freedom's just another word for nothin' left to lose!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Busted flat in Baton Rouge, waitin' for a train, I was feeling nearly as faded as my jeans",
+          "Freedom's just another word for nothin' left to lose",
+          "Nothin' don't mean nothin' honey, if it ain't free"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "k5qfT--sfE8"
+      },
+      "coverUrl": "/covers/country-kris-mcgee.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "disney-frozen-forever",
+      "title": "For the First Time in Forever",
+      "artist": "Kristen Bell & Idina Menzel",
+      "year": 2013,
+      "country": "US",
+      "genre": "Soundtrack / Broadway",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Excited"
+      ],
+      "hints": [
+        "Thematisiert Annas Vorfreude auf die Krönung und das Wiedersehen mit ihrer Schwester.",
+        "Besticht durch den quirligen Rhythmus und den humorvollen Text.",
+        "Kombiniert Broadway-Elemente mit modernem Disney-Storytelling.",
+        "Ein wichtiger Wendepunkt in der Geschichte von 'Eiskönigin'.",
+        "Refrain: 'Cause for the [XXX] [XXX] in [XXX]! There'll be music, there'll be light!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The window is open, so's that door, I didn't know they did that anymore",
+          "Cause for the first time in forever, there'll be music, there'll be light",
+          "For the first time in forever, I'll be dancing through the night"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wmoR82v6G5o"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-frozen-forever.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-WLVf9VMNPk0",
+      "title": "Creep (Radiohead Cover) (FREE DOWNLOAD)",
+      "artist": "KSHMR",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WLVf9VMNPk0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kshmr-creep--radiohead-cover---free-download-.jpg"
+    },
+    {
+      "id": "yt-sDhZPkqUJYA",
+      "title": "It Took Me So Long To Get Here, But Here I Am",
+      "artist": "KT Tunstall",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sDhZPkqUJYA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kt-tunstall-it-took-me-so-long-to-get-here--but-here-i-am.jpg"
+    },
+    {
+      "id": "yt-e-XLPi09lvY",
+      "title": "Rica Y Apretadita",
+      "artist": "Kumbia All Starz",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e-XLPi09lvY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kumbia-all-starz-rica-y-apretadita.jpg"
+    },
+    {
+      "id": "yt-L8F_Q0BCAqg",
+      "title": "Clouds",
+      "artist": "Kygo",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=L8F_Q0BCAqg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kygo-clouds.jpg"
+    }
+  ]
+}

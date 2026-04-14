@@ -1,0 +1,519 @@
+{
+  "songs": [
+    {
+      "id": "yt-QDYfEBY9NM4",
+      "title": "Let It Be (Remastered 2009)",
+      "artist": "The Beatles",
+      "year": 1970,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QDYfEBY9NM4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-beatles-let-it-be--remastered-2009-.jpg"
+    },
+    {
+      "id": "yt-jenWdylTtzs",
+      "title": "The Beatles - I Want To Hold Your Hand (Live on The Ed Sullivan Show)",
+      "artist": "The Beatles",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jenWdylTtzs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-beatles-the-beatles---i-want-to-hold-your-hand--live-on-the-ed-sullivan-show-.jpg"
+    },
+    {
+      "id": "yt-2RicaUqd9Hg",
+      "title": "Twist And Shout (Remastered 2009)",
+      "artist": "The Beatles",
+      "year": 1963,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2RicaUqd9Hg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-beatles-twist-and-shout--remastered-2009-.jpg"
+    },
+    {
+      "id": "2000s-bep-feeling",
+      "title": "I Gotta Feeling",
+      "artist": "The Black Eyed Peas",
+      "year": 2009,
+      "country": "US",
+      "genre": "Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Party"
+      ],
+      "hints": [
+        "Produziert von David Guetta, war es der perfekte Soundtrack für das Ende des Jahrzehnts.",
+        "Gilt als einer der erfolgreichsten Party-Songs aller Zeiten.",
+        "Die Gruppe vermittelt puren Optimismus für eine großartige Nacht.",
+        "Hielt sich monatelang an der Spitze der weltweiten Charts.",
+        "Refrain: 'I [XXX] [XXX] that tonight's gonna be a good night!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I gotta feeling that tonight's gonna be a good night",
+          "That tonight's gonna be a good night",
+          "Tonight's the night, let's live it up, I got my money, let's spend it up"
+        ],
+        "fake": [
+          "The night we are feeling so right, all through the night",
+          "A feeling to be jumping. Dancing and fainting",
+          "A night to remember that we felt alright"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "uSD4vsh1zDA",
+        "spotify": "4kLLWz7srcuLKA7Et40PQR",
+        "amazonMusic": "B002UPXLCC"
+      },
+      "coverUrl": "/covers/2000s-bep-feeling.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-calling-wherever",
+      "title": "Wherever You Will Go",
+      "artist": "The Calling",
+      "year": 2001,
+      "country": "US",
+      "genre": "Alt-Rock / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Energy",
+        "Powerful"
+      ],
+      "hints": [
+        "Inbegriff für die tiefen-Stimmen-Balladen der frühen 2000er.",
+        "Thematisiert bedingungslose Liebe über den Tod hinaus.",
+        "Besticht durch den kraftvollen, mitreißenden Refrain.",
+        "Alex Bands markante Stimme machte den Song zum Kulthit.",
+        "Refrain: 'If I could then I would! I'll go [XXX] you [XXX] go!'"
+      ],
+      "lyrics": {
+        "real": [
+          "So lately, been wondering who will be there to take my place",
+          "If I could, then I would, I'll go wherever you will go",
+          "Way up high or down low, I'll go wherever you will go"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "W0zfldDxdn8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-calling-wherever.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "jazz-adderley-mercy",
+      "title": "Mercy, Mercy, Mercy",
+      "artist": "The Cannonball Adderley Quintet",
+      "year": 1966,
+      "country": "US",
+      "genre": "Jazz / Soul Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein riesiger Crossover-Hit der 60er Jahre.",
+        "Besticht durch den Einsatz des Wurlitzer E-Pianos (gespielt von Joe Zawinul).",
+        "Thematisiert Lockerheit, Soul-Feeling und Lebensfreude.",
+        "Ein Inbegriff für die Öffnung des Jazz zum Pop und R&B.",
+        "Genre-Inhalt: Soul-Jazz mit Hit-Charakter."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental - but often introduced with a long speech about soul)",
+          "(Zawinul's soulful electric piano)",
+          "(Cannonball at his most accessible)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "s4rXEKtC8iY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-adderley-mercy.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "country-carter-family-circle",
+      "title": "Can the Circle Be Unbroken",
+      "artist": "The Carter Family",
+      "year": 1935,
+      "country": "US",
+      "genre": "Country / Gospel",
+      "difficulty": "hard",
+      "mood": [
+        "Sad",
+        "Classic",
+        "Spiritual"
+      ],
+      "hints": [
+        "Einer der einflussreichsten Songs in der Geschichte der Country-Musik.",
+        "Besticht durch den typischen 'Three-Part Harmony' Gesang der [XXX]s.",
+        "Thematisiert den Abschied von einer geliebten Person und die Hoffnung auf ein Wiedersehen im Jenseits.",
+        "Wurde von unzähligen Künstlern (z.B. Johnny Cash) gecovert.",
+        "Refrain: 'Will the [XXX] be [XXX], by and by, Lord, by and by?'"
+      ],
+      "lyrics": {
+        "real": [
+          "I was standing by my window, on one cold and cloudy day",
+          "Will the circle be unbroken, by and by, Lord, by and by",
+          "There's a better home a-waiting, in the sky, Lord, in the sky"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pEFTdmk9g1c"
+      },
+      "coverUrl": "/covers/country-carter-family-circle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues"
+      ]
+    },
+    {
+      "id": "yt-RK4Vplud0SM",
+      "title": "#SELFIE",
+      "artist": "The Chainsmokers",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RK4Vplud0SM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-chainsmokers--selfie.jpg"
+    },
+    {
+      "id": "yt-PT2_F-1esPk",
+      "title": "Closer (Lyric) ft. Halsey",
+      "artist": "The Chainsmokers",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PT2_F-1esPk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-chainsmokers-closer--lyric--ft--halsey.jpg"
+    },
+    {
+      "id": "yt-r7zTKRonHXM",
+      "title": "Closer",
+      "artist": "The Chainsmokers & Halsey",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=r7zTKRonHXM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-chainsmokers---halsey-closer.jpg"
+    },
+    {
+      "id": "house-chain-closer",
+      "title": "Closer",
+      "artist": "The Chainsmokers ft. Halsey",
+      "year": 2016,
+      "country": "US",
+      "genre": "Future Bass / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Future Bass -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Hey, I was doing just fine before I met you",
+          "I drink too much and that's an issue, but I'm okay",
+          "So baby pull me closer in the back seat of your Rover"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0zGcUoRlhmw"
+      },
+      "coverUrl": "/covers/house-chain-closer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "yt-3lJ7_5UBJ0A",
+      "title": "This Feeling",
+      "artist": "The Chainsmokers ft. Kelsea Ballerini",
+      "year": 2018,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3lJ7_5UBJ0A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-chainsmokers-ft--kelsea-ballerini-this-feeling.jpg"
+    },
+    {
+      "id": "disco-chem-galvanize",
+      "title": "Galvanize",
+      "artist": "The Chemical Brothers",
+      "year": 2005,
+      "country": "GB",
+      "genre": "Big Beat / World influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Powerful"
+      ],
+      "hints": [
+        "Mischt elektronische Beats mit arabischen Saiteninstrumenten (Qanun).",
+        "Der Rap-Gesang stammt von Q-Tip (A Tribe Called Quest).",
+        "Gewann den Grammy für die beste Dance-Aufnahme 2006.",
+        "Ein extrem kraftvoller Song, der oft in der Werbung und bei Sportevents genutzt wird.",
+        "Refrain: 'World, the time has come to... [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Don't hold back, solve the problem, solve the problem",
+          "World, the time has come to, galvanize!",
+          "Don't hold back"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Xu3FTEmN-eg"
+      },
+      "coverUrl": "/covers/disco-chem-galvanize.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno"
+      ]
+    }
+  ]
+}

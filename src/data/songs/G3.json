@@ -1,0 +1,590 @@
+{
+  "songs": [
+    {
+      "id": "class-rossini-william",
+      "title": "William Tell Overture",
+      "artist": "Gioachino Rossini",
+      "year": 1829,
+      "country": "IT",
+      "genre": "Classical / Opera Overture",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Heroic",
+        "Fast"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classical -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Galopp)",
+          "Ba-da-bam, ba-da-bam, ba-da-bam-bam-bam",
+          "Ba-da-bam, ba-da-bam, ba-da-bam-bam-bam"
+        ],
+        "fake": "Riding on the horse through the fields of gold tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SAogRjTBP4Y",
+        "spotify": "45SmnjVvKJ2OZEo2EScn32",
+        "amazonMusic": "B001SIEAJU"
+      },
+      "coverUrl": "/covers/class-rossini-william.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "class-verdi-donna",
+      "title": "La Donna è Mobile (Rigoletto)",
+      "artist": "Giuseppe Verdi",
+      "year": 1851,
+      "country": "IT",
+      "genre": "Romantic / Opera",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Lively",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "La donna è mobile qual piuma al vento",
+          "Muta d'accento e di pensiero",
+          "Sempre un amabile, leggiadro viso"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SrQV5x1sczs",
+        "spotify": "50KVOLNNqft8SJr5ybrv8G",
+        "amazonMusic": "B001SR2RVO"
+      },
+      "coverUrl": "/covers/class-verdi-donna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "soul-gladys-train",
+      "title": "Midnight Train to Georgia",
+      "artist": "Gladys Knight & The Pips",
+      "year": 1973,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Honest",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soul -Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "L.A. proved too much for the man, so he's leavin' the life he's come to know",
+          "He's leaving on that midnight train to Georgia",
+          "I'd rather live in his world than live without him in mine"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "A0F9lh8TiSM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gladys-train.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "glass-animals-heat-waves-2020",
+      "title": "Heat Waves",
+      "artist": "Glass Animals",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Indie Pop",
+      "difficulty": "hard",
+      "mood": [
+        "60s/70s Legends",
+        "Chill",
+        "Dreamy",
+        "Heartbreak",
+        "Modern",
+        "Nostalgic",
+        "Popular",
+        "Rainy Day"
+      ],
+      "hints": [
+        "Sänger Dave Bayley schrieb den Song auf Wunsch eines Freundes als Tribut an eine Person, die er sehr vermisste.",
+        "Das Stück wurde durch TikTok-Nutzung wiederentdeckt und erreichte erst 2022 Platz 1 in den USA – anderthalb Jahre nach Release.",
+        "Erschienen 2020 auf dem Album 'Dreamland'; einer der seltenen Songs, der einen verzögerten globalen Durchbruch erlebte.",
+        "Traumhafter Indie-Pop mit schwimmenden Synthesizern, einem emotionalen Refrain und einem fast hypnotischen Groove.",
+        "[XXX] [XXX] singen von Hitzewellen und dem schmerzhaften Vermissen einer Person – sogar in Träumen."
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes all I think about is you, late nights in the middle of June",
+          "Heat waves been faking me out, can't make you happier now",
+          "I just wonder what you're dreaming of"
+        ],
+        "fake": "The winter cold is coming to take my breath away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XDjB9E3YtUE"
+      },
+      "coverUrl": "/covers/glass-animals-heat-waves-2020.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "jazz-glennmiller-mood",
+      "title": "In the Mood",
+      "artist": "Glenn Miller",
+      "year": 1939,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Vielleicht der populärste Swing-Song aller Zeiten.",
+        "Besticht durch das einprägsame 'Call and Response' Thema der Bläser.",
+        "Besitzt ein berühmtes Saxophon-Solo und die typischen [XXX]s-Harmonien.",
+        "Ein Inbegriff für die Tanzbegeisterung der späten 30er und 40er Jahre.",
+        "Genre-Inhalt: Fröhlicher, mitreißender Big Band Sound."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental - but everybody chants the rhythm!)",
+          "(The most famous Swing tune ever)",
+          "(Glenn Miller Orchestra signature)"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dVh3ZzVDZik"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-glennmiller-mood.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "gloria-gaynor-i-will-survive-1978",
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "year": 1978,
+      "country": "US",
+      "genre": "Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Heartbreak",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Dieses Stück wurde ursprünglich als B-Seite veröffentlicht und erst durch Proteste von Diskjockeys zur A-Seite befördert.",
+        "[XXX] [XXX] nahm den Song auf, während sie mit einem Rückengips im Studio saß – direkt nach einer OP.",
+        "Gewann 1980 den Grammy für 'Best Disco Recording' – bisher der einzige Preisträger dieser einmalig vergebenen Kategorie.",
+        "Charakteristische Disco-Streicher im Intro, die in einen treibenden Viervierteltakt und eine kraftvolle Stimme übergehen.",
+        "[XXX] [XXX] singt nach einer schmerzhaften Trennung: Sie hat überlebt und braucht ihren Ex nicht mehr."
+      ],
+      "lyrics": {
+        "real": [
+          "At first I was afraid, I was petrified",
+          "Kept thinking I could never live without you by my side",
+          "I've got all my life to live, and I've got all my love to give"
+        ],
+        "fake": "So I walked out that door and I never looked back at you"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "5LDGBO11RaQ"
+      },
+      "coverUrl": "/covers/gloria-gaynor-i-will-survive-1978.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "soul-gnarls-crazy",
+      "title": "Crazy",
+      "artist": "Gnarls Barkley",
+      "year": 2006,
+      "country": "US",
+      "genre": "Neo-Soul / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Intelligent"
+      ],
+      "hints": [
+        "Song mit charakteristischen Neo-Soul -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I remember when, I remember, I remember when I lost my mind",
+          "There was something so pleasant about that place",
+          "Does that make me crazy? Probably"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "-N4jf6rtyuw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gnarls-crazy.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-bYBLt_1HcQE",
+      "title": "home ft. johnny yukon [music video]",
+      "artist": "gnash",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bYBLt_1HcQE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gnash-home-ft--johnny-yukon--music-video-.jpg"
+    },
+    {
+      "id": "metal-gojira-stranded",
+      "title": "Stranded",
+      "artist": "Gojira",
+      "year": 2016,
+      "country": "FR",
+      "genre": "Progressive Metal / Groove Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Besticht durch die markanten Whammy-Pedal-Gitarreneffekte.",
+        "Thematisiert Gefühle von Isolation und Verlassenheit.",
+        "[XXX] brachten hiermit anspruchsvollen Metal in den Mainstream.",
+        "Ein Inbegriff für modernen, technisch innovativen Metal aus Frankreich.",
+        "Refrain: '[XXX]! Lying on the ground!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm stranded, I'm stranded, I'm stranded, in the cold",
+          "Stranded, and you're far away",
+          "I'm stranded, in the middle of nowhere"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FNdC_3LR2AI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-gojira-stranded.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "90s-goo-goo-dolls-iris",
+      "title": "Iris",
+      "artist": "Goo Goo Dolls",
+      "year": 1998,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
+      "hints": [
+        "Wurde für den Soundtrack des Films 'Stadt der Engel' (City of Angels) geschrieben.",
+        "Bekannt für seine ungewöhnliche Gitarrenstimmung (fast alle Saiten auf D).",
+        "Hielt jahrelang den Rekord für die meisten Wochen auf Platz 1 der Radio-Charts.",
+        "Der Text drückt das Verlangen aus, von jemandem wirklich 'gesehen' zu werden.",
+        "Refrain: 'I just want you to know who I am!'"
+      ],
+      "lyrics": {
+        "real": [
+          "And I'd give up forever to touch you, 'cause I know that you feel me somehow",
+          "You're the closest to heaven that I'll ever be, and I don't want to go home right now",
+          "And I don't want the world to see me, 'cause I don't think that they'd understand"
+        ],
+        "fake": "In the shadow of the night, I will hold you tight and treat you right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NdYWuo9OFAw",
+        "spotify": "6Qyc6fS4DsZjB2mRW9DsQs",
+        "amazonMusic": "B001RN2H96"
+      },
+      "coverUrl": "/covers/90s-goo-goo-dolls-iris.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-OJG0EXOVqpE",
+      "title": "Over and Over [Official Music Video]",
+      "artist": "Goo Goo Dolls",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OJG0EXOVqpE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/goo-goo-dolls-over-and-over--official-music-video-.jpg"
+    },
+    {
+      "id": "folk-gordon-sundown",
+      "title": "Sundown",
+      "artist": "Gordon Lightfoot",
+      "year": 1974,
+      "country": "CA",
+      "genre": "Folk / Country influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX]s größter Erfolg, geprägt von einem dunklen, fast bedrohlichen Beat.",
+        "Thematisiert Eifersucht und Misstrauen in einer Beziehung.",
+        "Besticht durch den charakteristischen akustischen Groove und [XXX]s Bariton.",
+        "Ein Inbegriff für den kanadischen Folk-Exporthit.",
+        "Refrain: '[XXX], you better take care! If I find you been creepin' 'round my back stairs!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sundown, you better take care, if I find you've been creepin' round my back stairs",
+          "She's been lookin' like a queen in a town that's been eatin' from her hand",
+          "I can see her lookin' in the dark"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "1IBdZ645S-o"
+      },
+      "coverUrl": "/covers/folk-gordon-sundown.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "indie-gorillaz-feel-good-inc",
+      "title": "Feel Good Inc.",
+      "artist": "Gorillaz",
+      "year": 2005,
+      "country": "GB",
+      "genre": "Alternative Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Electronic"
+      ],
+      "hints": [
+        "Eine virtuelle Band, erschaffen von Damon Albarn (Blur) und Jamie Hewlett.",
+        "Der markante Lacher zu Beginn stammt von De La Soul.",
+        "Thematisiert den Kontrast zwischen Hedonismus und Isolation.",
+        "Mischte Alternative Rock, Rap und Funk zu einem völlig neuen Sound.",
+        "Das Video zeigt die animierte Band in einer schwebenden Windmühle."
+      ],
+      "lyrics": {
+        "real": [
+          "City's breaking down on a camel's back, they just gotta go 'cause they don't know whack",
+          "So while you fill the streets, it's appealing to see, you won't get out the county, 'cause you're bad and free",
+          "Feel good, shake it, shake it, feel good"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "HyHNuVaZJ-k"
+      },
+      "coverUrl": "/covers/indie-gorillaz-feel-good-inc.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    }
+  ]
+}

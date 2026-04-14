@@ -1,0 +1,574 @@
+{
+  "songs": [
+    {
+      "id": "synth-petshop-sin",
+      "title": "It's a Sin",
+      "artist": "Pet Shop Boys",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Synthpop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Dramatic",
+        "Energy",
+        "Epic"
+      ],
+      "hints": [
+        "Inbegriff für bombastischen, fast opernhaften Synthpop.",
+        "Thematisiert Neil Tennants religiöse Erziehung und das Gefühl ständiger Schuld.",
+        "Besticht durch die dramatischen Orgelklänge und den treibenden Rhythmus.",
+        "Wurde zu einem ihrer größten Hits weltweit.",
+        "Refrain: 'Everything I've ever done! Everything I ever do! Every place I've ever been! It's a sin!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When I look back upon my life, it's always with a sense of shame",
+          "I've always been the one to blame",
+          "For everything I've ever done, for everything I ever do"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "F9dXx6gr9tQ"
+      },
+      "coverUrl": "/covers/synth-petshop-sin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "synth-petshop-girls",
+      "title": "West End Girls",
+      "artist": "Pet Shop Boys",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Electronic",
+        "Nostalgic",
+        "Urban"
+      ],
+      "hints": [
+        "Song mit charakteristischen Synthpop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes you're better off dead, there's a gun in your hand and it's pointing at your head",
+          "You think you're mad, too unstable, kicking in chairs and knocking down tables",
+          "In a West End town, a dead end world"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y0KQNn3aL4Q",
+        "spotify": "5Dqik1P9toCJTLj5rEm78s",
+        "amazonMusic": "B001QARRIQ"
+      },
+      "coverUrl": "/covers/synth-petshop-girls.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop"
+      ]
+    },
+    {
+      "id": "german-peter-fox-haus-am-see",
+      "title": "Haus am See",
+      "artist": "Peter Fox",
+      "year": 2008,
+      "country": "DE",
+      "genre": "Dancehall",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Summer"
+      ],
+      "hints": [
+        "Stammt vom extrem erfolgreichen Soloalbum 'Stadtaffe' des Seeed-Sängers.",
+        "Der Song beschreibt die Vision eines friedlichen Lebens im Alter.",
+        "Die Mischung aus Hip Hop Beats und klassischem Orchester war damals neuartig.",
+        "Wurde zu einem der meistgespielten Songs der späten 2000er.",
+        "Refrain: 'Und am Ende der Straße steht ein [XXX] am See...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hier bin ich geboren, hier werd' ich begraben, doch dazwischen will ich leben",
+          "Und am Ende der Straße steht ein Haus am See",
+          "Ich hab' 20 Kinder, meine Frau ist schön, alle kommen vorbei"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
+      "links": {
+        "youtube": "Vgwkxa-uGcE"
+      },
+      "coverUrl": "/covers/german-peter-fox-haus-am-see.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-J4K4obX3wcs",
+      "title": "Games Without Frontiers",
+      "artist": "Peter Gabriel",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=J4K4obX3wcs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/peter-gabriel-games-without-frontiers.jpg"
+    },
+    {
+      "id": "80s-peter-gabriel-sledgehammer",
+      "title": "Sledgehammer",
+      "artist": "Peter Gabriel",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Art Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Creative",
+        "Groovy",
+        "Epic"
+      ],
+      "hints": [
+        "Das Musikvideo hielt lange den Rekord für die meisten VMA-Nominierungen und Siege.",
+        "Enthält Stop-Motion-Animationen von Aardman Animations (Wallace & Gromit).",
+        "Der Song ist stark von klassischem Soul und Bläsersätzen inspiriert.",
+        "Handelt von Metaphern für spirituelle oder physische Kraft.",
+        "Ein audiovisuelles Meisterwerk der 80er."
+      ],
+      "lyrics": {
+        "real": [
+          "You could have a steam train, if you'd just lay down your tracks",
+          "You could have a aeroplane flying, if you bring your blue sky back",
+          "I want to be your sledgehammer, why don't you call my name?"
+        ],
+        "fake": [
+          "You feel the power, you feel the might, make it smash",
+          "Jack and the Hammer, Jack Hammer, blade and fade"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OJWJE0x7T4Q",
+        "spotify": "0Y9uTzWEvUn7bgY96SshNi",
+        "amazonMusic": "B07D1FDNDZ"
+      },
+      "coverUrl": "/covers/80s-peter-gabriel-sledgehammer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "schlager-maffay-bruecken",
+      "title": "Über sieben Brücken mußt du gehn",
+      "artist": "Peter Maffay",
+      "year": 1980,
+      "country": "DE",
+      "genre": "Rock / Schlager",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Serious"
+      ],
+      "hints": [
+        "Ursprünglich von der DDR-Rockband 'Karat' aufgenommen.",
+        "Die Version von [XXX] [XXX] wurde im Westen zu einem riesigen Erfolg.",
+        "Thematisiert die Überwindung von Hindernissen und die Hoffnung auf bessere Zeiten.",
+        "Gilt als einer der emotionalsten und tiefgründigsten Hits dieser Ära.",
+        "Refrain: 'Über [XXX] [XXX] mußt du [XXX], [XXX] dunkle Jahre überstehn!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Manchmal geh' ich meine Straße ohne Blick, manchmal wünsch' ich mir mein Schaukelpferd zurück",
+          "Über sieben Brücken mußt du gehn, sieben dunkle Jahre überstehn",
+          "Siebenmal wirst du die Asche sein, aber einmal auch der helle Schein"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GzCl8DIJCR0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-maffay-bruecken.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "german-peter-schilling-major-tom",
+      "title": "Major Tom (völlig losgelöst)",
+      "artist": "Peter Schilling",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "German New Wave",
+        "Popular",
+        "Space",
+        "Synth"
+      ],
+      "hints": [
+        "Eine inoffizielle Fortsetzung von David Bowies 'Space Oddity'.",
+        "Der Song beschreibt das Verschwinden eines Astronauten im Weltraum.",
+        "Wurde zu einer Hymne der Raumfahrt und der NDW-Ära.",
+        "Bekannt für den Countdown im Refrain: 'Gründlich checkt er alle Instrumente...'.",
+        "Refrain: 'Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Gründlich checkt er alle Instrumente, nur noch ein paar Sekunden bis zum Start",
+          "Mit dem Lichtstrahl deiner Augen blickst du in die Ewigkeit",
+          "Völlig losgelöst von der Erde schwebt das Raumschiff völlig schwerelos"
+        ],
+        "fake": "In den Sternen steht geschrieben, dass wir uns für immer lieben"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xGzkZrMc5vU"
+      },
+      "coverUrl": "/covers/german-peter-schilling-major-tom.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "reggae-peter-tosh-legalize-it",
+      "title": "Legalize It",
+      "artist": "Peter Tosh",
+      "year": 1976,
+      "country": "JM",
+      "genre": "Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Serious"
+      ],
+      "hints": [
+        "[XXX] [XXX] war Gründungsmitglied der Wailers neben Bob Marley.",
+        "Der Song ist das wohl bekannteste Plädoyer für die Legalisierung von Marihuana.",
+        "Thematisiert den rituellen und medizinischen Gebrauch in der Rastafari-Kultur.",
+        "Bekannt für den extrem entspannten 'Lope'-Rhythmus.",
+        "Refrain: '[XXX] it, don't criticize it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Legalize it, don't criticize it, legalize it and I will advertise it",
+          "Singers smoke it, and players of instruments too",
+          "It's good for the flu, it's good for asthma too"
+        ],
+        "fake": "Drinking under the sun, having so much fun with your gun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "i-7paynQS7M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-peter-tosh-legalize-it.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "pharrell-happy-2013",
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "year": 1990,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Legends & Classics",
+        "Party Anthem",
+        "Popular",
+        "Positive",
+        "Summer Vibes",
+        "Upbeat"
+      ],
+      "hints": [
+        "Das Lied war zunächst Teil des Animationsfilm-Soundtracks 'Despicable Me 2' und wurde erst durch ein 24-Stunden-Musikvideo weltweit bekannt.",
+        "Gewann 2014 den Oscar für 'Bestes Originallied' – [XXX] erschien zur Zeremonie mit einem auffällig großen Hut.",
+        "Erschienen 2013; führte in 24 Ländern die Charts an und war 2014 der meistgestreamte Song auf Spotify.",
+        "Funkiger Soul-Pop mit simplen Handclaps, einer eingängigen Melodie und einem Refrain, der kaum aus dem Kopf geht.",
+        "[XXX] [XXX] erklärt sich zum Glücksstück und fordert alle auf mitzumachen – das Gefühl ist ansteckend."
+      ],
+      "lyrics": {
+        "real": [
+          "It might seem crazy what I'm about to say",
+          "Sunshine she's here, you can take a break",
+          "Clap along if you feel like happiness is the truth"
+        ],
+        "fake": "Smile at the world and the world will smile back at you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+        "spotify": "6NPVjNh8Jhru9xOmyQigds",
+        "amazonMusic": "B00GN0S9S8"
+      },
+      "coverUrl": "/covers/pharrell-happy-2013.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Movie Hits",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "piano-phil-odds",
+      "title": "Against All Odds (Take a Look at Me Now)",
+      "artist": "Phil Collins",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Pop / Rock Ballad",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
+      "hints": [
+        "Inbegriff für die tief empfundenen Balladen von [XXX] [XXX].",
+        "Thematisiert den Wunsch nach Versöhnung gegen jede Wahrscheinlichkeit.",
+        "Besticht durch das prägnante Klavier und die verzweifelte Steigerung im Gesang.",
+        "Eigens für den gleichnamigen Film geschrieben.",
+        "Refrain: 'So [XXX] a [XXX] at me now! 'Cause there's just an empty space!'"
+      ],
+      "lyrics": {
+        "real": [
+          "How can I just let you walk away, just let you leave without a trace",
+          "So take a look at me now, 'cause there's just an empty space",
+          "And you coming back to me is against all odds"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZJt-A6SYlYA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-phil-odds.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "80s-phil-collins-in-the-air-tonight",
+      "title": "In the Air Tonight",
+      "artist": "Phil Collins",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Drums",
+        "Epic"
+      ],
+      "hints": [
+        "Bekannt für den vielleicht berühmtesten Schlagzeug-Einsatz (Drum Fill) der Welt.",
+        "Wurde oft fälschlicherweise als Song über das Zeuge-Sein an einem Ertrinkungsunfall gedeutet.",
+        "Der Song nutzt einen 'Gated Reverb' Sound auf den Drums, der den 80er Sound definierte.",
+        "Wurde prominent in der ersten Folge von 'Miami Vice' eingesetzt.",
+        "Spürst du es auch schon? 'I can feel it coming in the ...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can feel it coming in the air tonight, oh Lord",
+          "And I've been waiting for this moment, for all my life",
+          "Well, if you told me you were drowning, I would not lend a hand"
+        ],
+        "fake": [
+          "The moon is high and the tide is rising slow tonight",
+          "You need to feel it staying in a chain tonight"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YkADj0TPrJA",
+        "spotify": "18AXbzPzBS8Y3AkgSxzJPb",
+        "amazonMusic": "B014SRJV8C"
+      },
+      "coverUrl": "/covers/80s-phil-collins-in-the-air-tonight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "disney-tarzan-heart",
+      "title": "You'll Be in My Heart",
+      "artist": "Phil Collins",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Protective",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX] schrieb und sang diesen Song für den Film 'Tarzan'.",
+        "Thematisiert die bedingungslose Liebe und den Schutz eines Kindes.",
+        "Gewann den Oscar für den besten Originalsong.",
+        "[XXX] [XXX] nahm den Song in verschiedenen Sprachen auf (auch Deutsch!).",
+        "Refrain: '[XXX] be in my [XXX]! From this day on, now and forever more!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Come stop your crying, it will be alright, just take my hand, hold it tight",
+          "You'll be in my heart, from this day on, now and forever more",
+          "You'll be in my heart, no matter what they say"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "smJU3cSx9F0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-tarzan-heart.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    }
+  ]
+}

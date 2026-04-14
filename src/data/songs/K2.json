@@ -1,0 +1,524 @@
+{
+  "songs": [
+    {
+      "id": "disco-kavinsky-nightcall",
+      "title": "Nightcall",
+      "artist": "Kavinsky",
+      "year": 2010,
+      "country": "FR",
+      "genre": "Synthwave / Electronic",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Cool",
+        "Nightlife"
+      ],
+      "hints": [
+        "Song mit charakteristischen Synthwave -Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm giving you a nightcall to tell you how I feel",
+          "I'm gonna drive you through the night, down the hills",
+          "I'm gonna tell you something you don't want to hear"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "46qo_V1zcOM"
+      },
+      "coverUrl": "/covers/disco-kavinsky-nightcall.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "yt-87tOJc724rE",
+      "title": "Get Down Tonight (Original Long Version)",
+      "artist": "KC & The Sunshine Band",
+      "year": 1975,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=87tOJc724rE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kc---the-sunshine-band-get-down-tonight--original-long-version-.jpg"
+    },
+    {
+      "id": "yt-14cjzntN_58",
+      "title": "I'm Your Boogie Man",
+      "artist": "KC & The Sunshine Band",
+      "year": 1976,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=14cjzntN_58"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kc---the-sunshine-band-i-m-your-boogie-man.jpg"
+    },
+    {
+      "id": "movie-showman-this-is-me",
+      "title": "This Is Me",
+      "artist": "Keala Settle / The Greatest Showman Cast",
+      "year": 2017,
+      "country": "US",
+      "genre": "Showtune / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Inspirational",
+        "Epic"
+      ],
+      "hints": [
+        "Eine gewaltige Hymne auf Selbstakzeptanz und Stolz.",
+        "Der emotionale Höhepunkt des Films 'The [XXX] [XXX]'.",
+        "Wurde weltweit zu einem Symbol für Inklusion und Empowerment.",
+        "Besticht durch den kraftvollen Chor und die mitreißende Energie.",
+        "Refrain: 'I am brave, I am bruised, I am who I'm meant to be, this is me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not a stranger to the dark, hide away, they say, 'cause we don't want your broken parts",
+          "I am brave, I am bruised, I am who I'm meant to be, this is me",
+          "Look out 'cause here I come, and I'm marching on to the beat I drum"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CjxugyZCfuw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-showman-this-is-me.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "piano-keane-somewhere",
+      "title": "Somewhere Only We Know",
+      "artist": "Keane",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Piano Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Epic",
+        "Positive"
+      ],
+      "hints": [
+        "Besticht durch das kraftvolle, hämmernde Klavier und den monumentalen Refrain.",
+        "[XXX] verzichteten (damals ungewöhnlich) komplett auf E-Gitarren.",
+        "Thematisiert die Suche nach einem Rückzugsort und Beständigkeit.",
+        "Ein Inbegriff für britischen Piano-Rock.",
+        "Refrain: 'And if you have a minute, why don't we go! Talk about it [XXX] [XXX] we [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I walked across an empty land, I knew the pathway like the back of my hand",
+          "Oh simple thing where have you gone?",
+          "Talk about it somewhere only we know"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xFGE8BuOn0g"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-keane-somewhere.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-Iex8rNqygAE",
+      "title": "Celle qu'il te faut ( clip officiel )",
+      "artist": "Keen'V feat Glory",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Iex8rNqygAE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/keen-v-feat-glory-celle-qu-il-te-faut---clip-officiel--.jpg"
+    },
+    {
+      "id": "piano-keenan-scars",
+      "title": "Scars",
+      "artist": "Keenan Te",
+      "year": 2023,
+      "country": "AU",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Sad",
+        "Honest"
+      ],
+      "hints": [
+        "Song mit charakteristischen Pop Ballade-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "If I could hold you for a second, I would never let you go",
+          "I'll give you all my scars, even though they're made of glass",
+          "I'm falling for you faster than I ever have before"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bWxtqDV4gTU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-keenan-scars.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-A1waZCoYbts",
+      "title": "Advice",
+      "artist": "Kehlani",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A1waZCoYbts"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kehlani-advice.jpg"
+    },
+    {
+      "id": "yt-HPHbeSGVKJo",
+      "title": "Distraction [Official Music Video]",
+      "artist": "Kehlani",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HPHbeSGVKJo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kehlani-distraction--official-music-video-.jpg"
+    },
+    {
+      "id": "disney-princess-frog-friends",
+      "title": "Friends on the Other Side",
+      "artist": "Keith David",
+      "year": 2009,
+      "country": "US",
+      "genre": "Soundtrack / Villain / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Magic",
+        "Groovy"
+      ],
+      "hints": [
+        "Der Song des Voodoo-Meisters Dr. Facilier.",
+        "Besticht durch den düsteren, aber extrem groovigen 'Voodoo' Sound.",
+        "[XXX] [XXX]s tiefe, charismatische Stimme ist das Highlight.",
+        "Einer der visuell spektakulärsten Villain-Songs.",
+        "Refrain: 'Are you ready? (Are you ready?)!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Don't you disrespect me little man, don't you derogate or deride",
+          "I got friends on the other side (He's got friends on the other side)",
+          "Sit down at my table, put your minds at ease"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "1BgfG4qEdxg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-princess-frog-friends.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-XKst2XCjRms",
+      "title": "Jealous",
+      "artist": "Keke Palmer",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XKst2XCjRms"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/keke-palmer-jealous.jpg"
+    },
+    {
+      "id": "hiphop-kendrick-humble",
+      "title": "HUMBLE.",
+      "artist": "Kendrick Lamar",
+      "year": 2017,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Cool"
+      ],
+      "hints": [
+        "Ein kraftvoller Track mit einem minimalistischen, aber wuchtigen Piano-Beat.",
+        "Thematisiert Erfolg und die Notwendigkeit, trotz allem bescheiden zu bleiben.",
+        "Das Musikvideo ist voller religiöser und kultureller Anspielungen.",
+        "Wurde zu einem der ikonischsten Songs der späten 2010er Jahre.",
+        "Refrain: 'Bitch, be [XXX]! Sit down!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I remember syrup sandwiches and crime allowances",
+          "Finesse a nigga with some counterfeits, but now I'm countin' this",
+          "Bitch, be humble, sit down, be humble, sit down"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tvTRZJ-4EyI"
+      },
+      "coverUrl": "/covers/hiphop-kendrick-humble.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "movie-top-gun-danger-zone",
+      "title": "Danger Zone",
+      "artist": "Kenny Loggins",
+      "year": 1986,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Action"
+      ],
+      "hints": [
+        "Untrennbar verbunden mit den Luftkampf-Szenen aus 'Top Gun'.",
+        "Wurde zu einem der Markenzeichen des 80er-Jahre-Actionkinos.",
+        "[XXX] [XXX] lieferte hiermit einen der meistgespielten Soundtracks jener Dekade.",
+        "Erlebte ein Comeback im Sequel 'Top Gun: Maverick'.",
+        "Refrain: 'Highway to the [XXX] [XXX]! Ride into the [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Revvin' up your engine, listen to her howlin' roar",
+          "Metal under tension, beggin' you to touch and go",
+          "Highway to the danger zone, ride into the danger zone"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "siwpn14IE7E"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-top-gun-danger-zone.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    }
+  ]
+}

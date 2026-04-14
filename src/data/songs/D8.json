@@ -1,0 +1,576 @@
+{
+  "songs": [
+    {
+      "id": "yt-U319ke4jEGU",
+      "title": "Sing Hallelujah",
+      "artist": "Dr. Alban",
+      "year": 1993,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1990er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=U319ke4jEGU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/dr--alban-sing-hallelujah.jpg"
+    },
+    {
+      "id": "hiphop-drdre-gthang",
+      "title": "Nuthin' but a 'G' Thang",
+      "artist": "Dr. Dre ft. Snoop Dogg",
+      "year": 1992,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Inbegriff des G-Funk-Sounds der frühen 90er Jahre.",
+        "Markierte den weltweiten Durchbruch von [XXX] [XXX].",
+        "Basiert auf einem entspannten Sample von Leon Haywood.",
+        "Der Text dreht sich um das Leben in Long Beach und LA.",
+        "Refrain: 'It's like this and like that and like this and a...'"
+      ],
+      "lyrics": {
+        "real": [
+          "One, two, three and to the four, Snoop Doggy Dogg and Dr. Dre is at the door",
+          "Ready to make an entrance, so back on up",
+          "It's like this and like that and like this and a"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "links": {
+        "youtube": "8GliyDgAGQI"
+      },
+      "coverUrl": "/covers/hiphop-drdre-gthang.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "hiphop-dre-still-dre",
+      "title": "Still D.R.E.",
+      "artist": "Dr. Dre ft. Snoop Dogg",
+      "year": 1999,
+      "country": "US",
+      "genre": "West Coast Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Classic",
+        "Energy"
+      ],
+      "hints": [
+        "Markierte Dr. Dres triumphale Rückkehr mit dem Album '2001'.",
+        "Das unverwechselbare Klavier-Riff wurde von Scott Storch eingespielt.",
+        "Thematisiert, dass Dre trotz Erfolg und Zeit immer noch derselbe ist.",
+        "Einer der am meisten gespielten Rap-Songs aller Zeiten.",
+        "Refrain: '[XXX] taking my time to perfect the beat!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm representing for them gangstas all across the world",
+          "Still hitting them corners in them low-lows, girl",
+          "Still, taking my time to perfect the beat, and I still got love for the streets"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "_CL6n0FJZpk"
+      },
+      "coverUrl": "/covers/hiphop-dre-still-dre.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "hiphop-drake-plan",
+      "title": "God's Plan",
+      "artist": "Drake",
+      "year": 2018,
+      "country": "CA",
+      "genre": "Hip Hop / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Grateful",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Song über Schicksal, Erfolg und die Neider.",
+        "Das Musikvideo zeigt [XXX], wie er fast eine Million Dollar an bedürftige Menschen verschenkt.",
+        "Wurde zu einem der meistgestreamten Songs aller Zeiten.",
+        "Besticht durch den entspannten Beat und [XXX]s eingängige Lyrik.",
+        "Refrain: 'I only love my bed and my momma, I'm sorry!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I only love my bed and my momma, I'm sorry",
+          "Imagine if I never met the broskis",
+          "God's plan, God's plan, God's plan"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xpVvxpE"
+      },
+      "coverUrl": "/covers/hiphop-drake-plan.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "modern-drake-one-dance",
+      "title": "One Dance",
+      "artist": "Drake ft. Wizkid & Kyla",
+      "year": 2016,
+      "country": "CA/NG/GB",
+      "genre": "Dancehall / Afrobeats",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Groovy",
+        "Catchy"
+      ],
+      "hints": [
+        "[XXX] kombinierte hier Hip-Hop mit jamaikanischem [XXX]hall und nigerianischem Afrobeat.",
+        "War über Monate der meistgestreamte Song auf Spotify überhaupt.",
+        "Das Klavier-Sample stammt von [XXX]s 'Do You Mind'.",
+        "Thematisiert den Wunsch nach einem letzten Tanz vor dem Clubbesuch.",
+        "Refrain: 'I need a one [XXX], got a Hennessy in my hand!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Baby, I like your style, grips on your waist, front way, back way",
+          "I need a one dance, got a Hennessy in my hand, one more time 'fore I go",
+          "Higher powers taking a hold on me"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "mym4sKoAnKs",
+        "spotify": "1zi7xx7UVEFkmKfv06H8x0",
+        "amazonMusic": "B01F5XNXKK"
+      },
+      "coverUrl": "/covers/modern-drake-one-dance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "metal-dreamtheater-pullme",
+      "title": "Pull Me Under",
+      "artist": "Dream Theater",
+      "year": 1992,
+      "country": "US",
+      "genre": "Progressive Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Complex",
+        "Epic",
+        "Powerful"
+      ],
+      "hints": [
+        "Der einzige echte Radio-Hit des Progressive-Metal-Aushängeschilds.",
+        "Besticht durch technische Brillanz und den dramatischen Song-Aufbau.",
+        "Thematisiert (inspiriert von Shakespeare) den Tod und das Unberechenbare.",
+        "Ein Inbegriff für die Verschmelzung von Hard Rock und hoher Musikalität.",
+        "Refrain: '[XXX] me [XXX]! [XXX] me [XXX]! [XXX] me [XXX], I'm not afraid!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lost in the sky, clouds roll by and I roll with them",
+          "Pull me under, pull me under, pull me under I'm not afraid",
+          "All that I am, all that I was"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "mipc-JxrhRk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-dreamtheater-pullme.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "schlager-dschinghis-khan-khan",
+      "title": "Dschinghis Khan",
+      "artist": "Dschinghis Khan",
+      "year": 1979,
+      "country": "DE",
+      "genre": "Disco / Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Energy"
+      ],
+      "hints": [
+        "Wurde für den Eurovision Song Contest 1979 geschrieben (4. Platz).",
+        "Thematisiert den legendären mongolischen Herrscher auf humorvolle Weise.",
+        "Bekannt für die aufwendigen Kostüme und die energiegeladene Choreografie.",
+        "Ein Welthit, der besonders in Japan und der Sowjetunion extrem populär war.",
+        "Refrain: 'Dsching, Dsching, [XXX] [XXX]! He Reiter, Ho Reiter, He Reiter, immer weiter!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sie ritten um die Wette mit dem Steppenwind, tausend Mann",
+          "Und einer ritt voran, dem folgten alle blind, Dschinghis Khan",
+          "Dsching, Dsching, Dschinghis Khan! He Reiter, Ho Reiter, He Reiter, immer weiter"
+        ],
+        "fake": "Wir fliegen durch die Nacht, bis der helle Tag erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DAr7KaxzfpA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-dschinghis-khan-khan.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "finale-dua-barbie",
+      "title": "Dance The Night",
+      "artist": "Dua Lipa",
+      "year": 2023,
+      "country": "GB",
+      "genre": "Disco-Pop / Movie Theme",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Song mit charakteristischen Disco-Pop -Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Watch me dance, dance the night away, my heart could be burning but you won't see it on my face",
+          "Watch me dance, dance the night away",
+          "I'll still keep the party running"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "hCLkVrp_4CE"
+      },
+      "coverUrl": "/covers/finale-dua-barbie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-SXPbzreFSxw",
+      "title": "Don't Start Now",
+      "artist": "Dua Lipa",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Brachte den Disco-Sound mit moderner Produktion zurück in die Charts.",
+        "Besitzt eine extrem mitreißende Basslinie.",
+        "Handelt davon, dass man über eine alte Liebe hinweg ist und sich nicht mehr stören lässt.",
+        "Ein Paradebeispiel für den Erfolg ihres Albums 'Future Nostalgia'.",
+        "Refrain: '[XXX] show up, [XXX] come out, [XXX] [XXX] caring about me now!'"
+      ],
+      "lyrics": {
+        "real": [
+          "If you don't wanna see me dancing with somebody, if you wanna believe that anything could stop me",
+          "Don't show up, don't come out, don't start caring about me now",
+          "Walk away, you know how, don't start caring about me now"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SXPbzreFSxw"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/dance-dua-lipa-start-now.jpg"
+    },
+    {
+      "id": "dua-lipa-levitating-2020",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Modern",
+        "Modern Hits",
+        "Neon Night",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Das Stück wurde von Clarence Coffee Jr. und Stuart Price mitgeschrieben – beide sind auch für Hits von Ariana Grande bekannt.",
+        "Die Disco-Einflüsse wurden bewusst gewählt: Produzent Stuart Price wollte den Sound der 70er für ein 2020er-Publikum modernisieren.",
+        "Erschienen 2020 auf dem Album 'Future Nostalgia'; das Kritikerliebling-Album des Jahres 2020.",
+        "Funkiger Disco-Pop mit schwebenden Synthesizern, einem treibenden Bass und Dua [XXX]s warmer Stimme.",
+        "Dua [XXX] fühlt sich so verliebt, dass sie das Gefühl hat zu levitieren – zu schweben."
+      ],
+      "lyrics": {
+        "real": [
+          "If you wanna run away with me, I know a galaxy",
+          "And I can take you for a ride",
+          "I'm levitating, the Milky Way, we're renegading"
+        ],
+        "fake": "We're walking on the stars above the city lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UbPrlq52r7Y"
+      },
+      "coverUrl": "/covers/dua-lipa-levitating-2020.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "yt-VMQlEvr42A8",
+      "title": "Training Season",
+      "artist": "Dua Lipa",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMQlEvr42A8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/dua-lipa-training-season.jpg"
+    },
+    {
+      "id": "yt-fWU5TM2fWkY",
+      "title": "Something On My Mind",
+      "artist": "Duke Dumont & Nothing But Thieves",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fWU5TM2fWkY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/duke-dumont---nothing-but-thieves-something-on-my-mind.jpg"
+    },
+    {
+      "id": "jazz-duke-atrain",
+      "title": "Take the 'A' Train",
+      "artist": "Duke Ellington",
+      "year": 1941,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Erkennungsmelodie des [XXX] [XXX] Orchestras.",
+        "Bezieht sich auf die U-Bahn-Linie A nach Harlem.",
+        "Ein Inbegriff für den eleganten und kraftvollen Big Band Sound.",
+        "Besticht durch den feinen Swing und die brillanten Bläser-Sätze.",
+        "Genre-Inhalt: Legendärer Swing-Standard."
+      ],
+      "lyrics": {
+        "real": [
+          "You must take the A train, to go to Sugar Hill way up in Harlem",
+          "If you should take the A train, you'll find the quickest way to get to Harlem",
+          "Hurry, get on now, it's coming"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "D6mFGy4g_n8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-duke-atrain.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    }
+  ]
+}

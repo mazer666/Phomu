@@ -1,0 +1,498 @@
+{
+  "songs": [
+    {
+      "id": "folk-don-pie",
+      "title": "American Pie",
+      "artist": "Don McLean",
+      "year": 1971,
+      "country": "US",
+      "genre": "Folk / Pop influence",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Epic",
+        "Classic"
+      ],
+      "hints": [
+        "Epischer Song über den Tod von Buddy Holly ('The Day the Music Died').",
+        "Thematisiert den Wandel der amerikanischen Kultur der 50er und 60er Jahre.",
+        "Besticht durch den mitsing-tauglichen Refrain und die symbolreichen Strophen.",
+        "Einer der längsten und berühmtesten Songs der Musikgeschichte.",
+        "Refrain: 'Bye, bye, Miss [XXX] Pie! Drove my Chevy to the levee!'"
+      ],
+      "lyrics": {
+        "real": [
+          "A long long time ago, I can still remember, how that music used to make me smile",
+          "Bye, bye, Miss American Pie",
+          "Drove my Chevy to the levee, but the levee was dry"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "PRpiBpDy7MQ"
+      },
+      "coverUrl": "/covers/folk-don-pie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-KgWWfOupBKo",
+      "title": "Pa Que Me Dan De Eso",
+      "artist": "Don Miguelo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KgWWfOupBKo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-miguelo-pa-que-me-dan-de-eso.jpg"
+    },
+    {
+      "id": "yt-8einbrSxt0M",
+      "title": "Angelito",
+      "artist": "Don Omar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8einbrSxt0M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-omar-angelito.jpg"
+    },
+    {
+      "id": "yt-x622Sqjub-s",
+      "title": "Dutty Love  ft. Natti Natasha",
+      "artist": "Don Omar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x622Sqjub-s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-omar-dutty-love--ft--natti-natasha.jpg"
+    },
+    {
+      "id": "yt-SMM1WhmlQzI",
+      "title": "Hasta Abajo",
+      "artist": "Don Omar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SMM1WhmlQzI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-omar-hasta-abajo.jpg"
+    },
+    {
+      "id": "yt-Z-3su2ov8Vg",
+      "title": "Salio El Sol",
+      "artist": "Don Omar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z-3su2ov8Vg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-omar-salio-el-sol.jpg"
+    },
+    {
+      "id": "yt-lRWqYR3e7xE",
+      "title": "Taboo",
+      "artist": "Don Omar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lRWqYR3e7xE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-omar-taboo.jpg"
+    },
+    {
+      "id": "yt-8HpG0l9cLos",
+      "title": "Zumba Campaign Video",
+      "artist": "Don Omar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8HpG0l9cLos"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/don-omar-zumba-campaign-video.jpg"
+    },
+    {
+      "id": "disney-tangled-mother",
+      "title": "Mother Knows Best",
+      "artist": "Donna Murphy",
+      "year": 2010,
+      "country": "US",
+      "genre": "Soundtrack / Broadway / Villain",
+      "difficulty": "medium",
+      "mood": [
+        "Manipulative",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song der Antagonistin Mutter Gothel.",
+        "Thematisiert manipulative Fürsorge und das Säen von Angst.",
+        "[XXX] [XXX]s theatralische Performance ist Broadway-Niveau.",
+        "Ein Paradebeispiel für Disneys starke Bösewicht-Songs.",
+        "Refrain: '[XXX] [XXX] [XXX]! Listen to your [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Mother knows best, listen to your mother, it's a scary world out there",
+          "Mother knows best, one way or another, something will go wrong, I swear",
+          "Rapunzel, Rapunzel, let down your hair!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-7jWt3JvJto"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-tangled-mother.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-tJxOXzE5A8w",
+      "title": "Hot Stuff (12\" Version)",
+      "artist": "Donna Summer",
+      "year": 1979,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tJxOXzE5A8w"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/donna-summer-hot-stuff--12--version-.jpg"
+    },
+    {
+      "id": "soul-donna-love",
+      "title": "I Feel Love",
+      "artist": "Donna Summer",
+      "year": 1977,
+      "country": "US",
+      "genre": "Electronic Disco / Hi-NRG",
+      "difficulty": "medium",
+      "mood": [
+        "Mysterious",
+        "Atmospheric",
+        "Energy"
+      ],
+      "hints": [
+        "Song mit charakteristischen Electronic Disco -Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Ooh, it's so good, it's so good, it's so good",
+          "Ooh, Heaven knows, Heaven knows, Heaven knows",
+          "I feel love, I feel love, I feel love"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nTNcCKq6V2c"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-donna-love.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "disney-mulan-manout",
+      "title": "I'll Make a Man Out of You",
+      "artist": "Donny Osmond",
+      "year": 1998,
+      "country": "US",
+      "genre": "Soundtrack / Energy / Epic",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Funny"
+      ],
+      "hints": [
+        "Die ultimative Trainings-Hymne aus 'Mulan'.",
+        "Besticht durch den kraftvollen, beinahe kriegerischen Rhythmus und humorvolle Einsprengsel.",
+        "Thematisiert Überwindung, Disziplin und das Finden der eigenen Stärke.",
+        "Ein extrem beliebter Song, der oft als Motivations-Track genutzt wird.",
+        "Refrain: 'I'll [XXX] a man out of you! (Be a man!)'"
+      ],
+      "lyrics": {
+        "real": [
+          "Let's get down to business to defeat the Huns",
+          "You must be swift as the coursing river (Be a man)",
+          "With all the force of a great typhoon (Be a man)"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "elBKil5zE2g"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mulan-manout.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "dance-dr-alban-its-my-life",
+      "title": "It's My Life",
+      "artist": "Dr. Alban",
+      "year": 1992,
+      "country": "SE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dance"
+      ],
+      "hints": [
+        "Gesungen von einem gelernten Zahnarzt aus Schweden (mit nigerianischen Wurzeln).",
+        "Der Song ruft dazu auf, sein eigenes Leben zu leben und sich nicht reinreden zu lassen.",
+        "Markanter Refrain mit der Zeile 'It's my [XXX], take it or leave it'.",
+        "Wurde in einer berühmten Tampon-Werbung in Deutschland verwendet.",
+        "Refrain: 'Stop bugging me, stop bothering me, stop bugging me, stop forcing me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's my life, take it or leave it, set me free, what's that you say?",
+          "It's my life, my problems, it's my life, my worries",
+          "It's my life, take it or leave it, it's my life, my way"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the beat"
+      },
+      "links": {
+        "youtube": "oW0VovnyjPY"
+      },
+      "coverUrl": "/covers/dance-dr-alban-its-my-life.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    }
+  ]
+}

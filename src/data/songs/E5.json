@@ -1,0 +1,184 @@
+{
+  "songs": [
+    {
+      "id": "yt-Pb0CePILF8M",
+      "title": "Missing (Todd Terry Club Mix)",
+      "artist": "Everything But The Girl",
+      "year": 1994,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1990er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Pb0CePILF8M"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/everything-but-the-girl-missing--todd-terry-club-mix-.jpg"
+    },
+    {
+      "id": "yt-c7BIT7UKEwQ",
+      "title": "Ba-Ba Banküberfall",
+      "artist": "Extrabreit",
+      "year": 1980,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=c7BIT7UKEwQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/generic-music.jpg"
+    },
+    {
+      "id": "yt-KADRYcVP7KA",
+      "title": "Hurra, hurra, die Schule brennt",
+      "artist": "Extrabreit",
+      "year": 1981,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KADRYcVP7KA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/extrabreit-hurra--hurra--die-schule-brennt.jpg"
+    },
+    {
+      "id": "yt-ShPkW-JIlA4",
+      "title": "Zu spät",
+      "artist": "Extrabreit",
+      "year": 1980,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ShPkW-JIlA4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/extrabreit-zu-spät.jpg"
+    },
+    {
+      "id": "90s-extreme-more-than-words",
+      "title": "More Than Words",
+      "artist": "Extreme",
+      "year": 1990,
+      "country": "US",
+      "genre": "Acoustic Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Acoustic",
+        "Classic"
+      ],
+      "hints": [
+        "Wurde oft fälschlicherweise für einen Song einer reinen Akustik-Band gehalten, obwohl [XXX] eigentlich eine Funk-Metal-Band waren.",
+        "Der Song handelt davon, Liebe durch Taten statt durch bloße Worte zu beweisen.",
+        "Ein reines Duett aus Akustikgitarre und zweistimmigem Gesang.",
+        "Das Video zeigt die Bandmitglieder entspannt sitzend beim Spielen.",
+        "Refrain: '[XXX] [XXX] [XXX] to show you feel that your love for me is real.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Saying I love you is not the words I want to hear from you",
+          "It's not that I want you not to say, but if you only knew",
+          "How easy it would be to show me how you feel"
+        ],
+        "fake": "I'm looking for a reason to believe in the season of love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "UrIiLvg58SY",
+        "spotify": "1gVgkQFOKa8Wc1HYsJtPdH",
+        "amazonMusic": "B0DYK9SMFF"
+      },
+      "coverUrl": "/covers/90s-extreme-more-than-words.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    }
+  ]
+}

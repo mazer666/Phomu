@@ -1,0 +1,522 @@
+{
+  "songs": [
+    {
+      "id": "metal-manson-beautiful",
+      "title": "The Beautiful People",
+      "artist": "Marilyn Manson",
+      "year": 1996,
+      "country": "US",
+      "genre": "Industrial Metal / Shock Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff für das Image und den Sound von [XXX] [XXX] Mitte der 90er.",
+        "Besticht durch den stampfenden Rhythmus und die gesellschaftskritischen Texte.",
+        "Produziert von Trent Reznor.",
+        "Wurde zur Hymne für Outsider und Kritiker der Schönheitsideale.",
+        "Refrain: 'The [XXX] [XXX]! The [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The beautiful people, the beautiful people, it's all relative to the size of your steeple",
+          "You can't see the forest for the trees, you can't smell your own shit on your knees",
+          "The beautiful people, the beautiful people"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Ypkv0HeUvTc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-manson-beautiful.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "german-westernhagen-freiheit",
+      "title": "Freiheit",
+      "artist": "Marius Müller-Westernhagen",
+      "year": 1987,
+      "country": "DE",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Serious"
+      ],
+      "hints": [
+        "Wurde zu einer Hymne der deutschen Wiedervereinigung, obwohl der Text älter ist.",
+        "Handelt von der Bedeutung und Zerbrechlichkeit der [XXX].",
+        "Besonders beeindruckend ist der Einsatz eines großen Chors am Ende des Liedes.",
+        "Wurde oft bei großen politischen Umbrüchen im Radio rauf und runter gespielt.",
+        "Refrain: '[XXX], [XXX], ist die einzige, die zählt!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Die Verträge sind gemacht und es wurde viel gelacht, was aus uns geworden ist",
+          "Freiheit, Freiheit, ist die einzige, die zählt",
+          "Der Mensch ist leider nicht gut, er hat nur Blut und Wut in seinem Bauch"
+        ],
+        "fake": "In den Gassen dieser Stadt, gibt es keinen der uns satt macht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "agKE1TuUOuM"
+      },
+      "coverUrl": "/covers/german-westernhagen-freiheit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "mark-ronson-uptown-funk-2014",
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "year": 2014,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Energy",
+        "Groovy",
+        "Happy",
+        "Party Anthem",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Das Stück referenziert so viele [XXX]- und Soul-Künstler der 70er, dass mehrere Musiker dieser Ära nachträglich als Mitautoren gelistet wurden.",
+        "[XXX] [XXX] und [XXX] [XXX] arbeiteten sieben Monate an dem Song, bevor sie mit dem Ergebnis zufrieden waren.",
+        "Erschienen 2014; hielt sich 14 Wochen auf Platz 1 der Billboard Hot 100 – die längste Platz-1-Serie der 2010er Jahre.",
+        "Retro-[XXX] mit Blechbläsern, einem federnden Bass und [XXX] [XXX]' charakteristischer Soul-Stimme – direkt aus den 70ern entlehnt.",
+        "[XXX] [XXX] und [XXX] [XXX] aus dem [XXX] sind zu [XXX]y für deine Kommentare und zu heiß für dich."
+      ],
+      "lyrics": {
+        "real": [
+          "This hit, that ice cold, Michelle Pfeiffer, that white gold",
+          "This one for them hood girls, them good girls, straight masterpieces",
+          "Uptown funk you up, uptown funk you up"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OPf0YbXqDm0"
+      },
+      "coverUrl": "/covers/mark-ronson-uptown-funk-2014.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "Dance Floor Fillers",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-1Ss0wzeoqHU",
+      "title": "Ich will Spass",
+      "artist": "Markus",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1Ss0wzeoqHU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/markus-ich-will-spass.jpg"
+    },
+    {
+      "id": "yt-lNilb-EaTOU",
+      "title": "Memories",
+      "artist": "Maroon 5",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lNilb-EaTOU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/maroon-5-memories.jpg"
+    },
+    {
+      "id": "dance-maroon5-jagger",
+      "title": "Moves Like Jagger",
+      "artist": "Maroon 5 ft. Christina Aguilera",
+      "year": 2011,
+      "country": "US",
+      "genre": "Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Dance"
+      ],
+      "hints": [
+        "Eine Hommage an die Tanzbewegungen von Mick [XXX].",
+        "Besticht durch den markanten Pfeif-Hook am Anfang.",
+        "Die Zusammenarbeit zwischen Adam Levine und [XXX] [XXX] war ein Megahit.",
+        "Vermittelt ein Gefühl von Lockerheit und Selbstbewusstsein.",
+        "Refrain: 'I got the [XXX] [XXX] [XXX], I got the [XXX] [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Just shoot for the stars, if it feels right, and aim for my heart if you feel like",
+          "You wanna steer, but I'm taking ownership, I'm taking control",
+          "And it goes like this, I got the moves like Jagger"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iEPTlhBmwRg"
+      },
+      "coverUrl": "/covers/dance-maroon5-jagger.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "electro-marshmello-happier",
+      "title": "Happier",
+      "artist": "Marshmello ft. Bastille",
+      "year": 2018,
+      "country": "US",
+      "genre": "Future Bass / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "[XXX] tritt immer mit einer weißen, marshmallow-förmigen Maske auf.",
+        "Das Musikvideo über ein Mädchen und ihren Hund rührte Millionen zu Tränen.",
+        "Thematisiert den schmerzhaften Entschluss, jemanden gehen zu lassen, damit er glücklicher wird.",
+        "Kombiniert [XXX]s Indie-Pop-Sound mit modernem EDM.",
+        "Refrain: 'Then only for a minute, I want to change my mind...'"
+      ],
+      "lyrics": {
+        "real": [
+          "When the morning comes, when we see what we've become",
+          "In the cold light of day, we're a flame in the wind",
+          "I want you to be happier, I want you to be happier"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "m7Bc3pLyij0"
+      },
+      "coverUrl": "/covers/electro-marshmello-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "yt-mL208l_Ho4s",
+      "title": "Echo Beach",
+      "artist": "Martha and the Muffins",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mL208l_Ho4s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/martha-and-the-muffins-echo-beach.jpg"
+    },
+    {
+      "id": "house-garrix-animals",
+      "title": "Animals",
+      "artist": "Martin Garrix",
+      "year": 2013,
+      "country": "NL",
+      "genre": "Big Room House / EDM",
+      "difficulty": "easy",
+      "mood": [
+        "Club",
+        "Energy",
+        "Powerful",
+        "Wild"
+      ],
+      "hints": [
+        "Machte den damals erst 17-jährigen [XXX] zum Weltstar.",
+        "Der 'Plonk'-Drop ist eines der bekanntesten Geräusche der EDM-Geschichte.",
+        "Thematisiert den animalischen Trieb auf der Tanzfläche.",
+        "Wurde zur Hymne der 'Big Room House'-Ära.",
+        "Völlig instrumental im Hauptteil, unterbricht nur durch ein kurzes Sprach-Sample."
+      ],
+      "lyrics": {
+        "real": [
+          "We're the f'ing animals!",
+          "(Drop)",
+          "(Drop)"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gCYcHz2k5x0"
+      },
+      "coverUrl": "/covers/house-garrix-animals.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "yt-vFFT1iAUNDE",
+      "title": "Scared to Be Lonely",
+      "artist": "Martin Garrix & Dua Lipa",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vFFT1iAUNDE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/martin-garrix---dua-lipa-scared-to-be-lonely.jpg"
+    },
+    {
+      "id": "yt-e0YQLOJgeqs",
+      "title": "Real Love",
+      "artist": "Martin Garrix & Lloyiso",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert Liebe und emotionale Bindung durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e0YQLOJgeqs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/martin-garrix---lloyiso-real-love.jpg"
+    },
+    {
+      "id": "yt-Cj43PTCpHzA",
+      "title": "Dive",
+      "artist": "Martin Garrix & Loopers",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Cj43PTCpHzA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/martin-garrix---loopers-dive.jpg"
+    },
+    {
+      "id": "yt-bz6taI5pDl0",
+      "title": "Carry You",
+      "artist": "Martin Garrix & Nicky Romero & USHER",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bz6taI5pDl0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/martin-garrix---nicky-romero---usher-carry-you.jpg"
+    }
+  ]
+}

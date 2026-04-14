@@ -1,0 +1,503 @@
+{
+  "songs": [
+    {
+      "id": "country-willie-nelson-road-again",
+      "title": "On the Road Again",
+      "artist": "Willie Nelson",
+      "year": 1980,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Road Trip"
+      ],
+      "hints": [
+        "Die ultimative Hymne für das Leben auf Tournee.",
+        "Besticht durch den entspannten Shuffel-Rhythmus und [XXX]s markantes Gitarrenspiel.",
+        "Thematisiert die Freiheit und die Liebe zur Bühne und zu Freunden.",
+        "Ein Inbegriff für den Lebensgeist des Outlaw Country.",
+        "Refrain: 'On the [XXX] [XXX]! Goin' places that I've never been!'"
+      ],
+      "lyrics": {
+        "real": [
+          "On the road again, just can't wait to get on the road again",
+          "The life I love is making music with my friends",
+          "And I can't wait to get on the road again"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dBN86y30Ufc",
+        "spotify": "1PGYt9lz64wlqKVNGu0rWO",
+        "amazonMusic": "B004J8HE08"
+      },
+      "coverUrl": "/covers/country-willie-nelson-road-again.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "german-helden-denkmal",
+      "title": "Denkmal",
+      "artist": "Wir sind Helden",
+      "year": 2003,
+      "country": "DE",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Creative",
+        "Unique"
+      ],
+      "hints": [
+        "Der Song handelt davon, kein offizielles [XXX] zu wollen, sondern lieber das Leben zu genießen.",
+        "Die Band um Judith Holofernes war prägend für den deutschen Indie-Pop der 2000er.",
+        "Der Text ist voller cleverer Wortspielereien und Energie.",
+        "Refrain: 'Hol den Vorschlaghammer! Sie haben uns ein [XXX] gebaut...'",
+        "Gilt als einer der bedeutendsten Indie-Hits dieser Ära."
+      ],
+      "lyrics": {
+        "real": [
+          "Hol den Vorschlaghammer! Sie haben uns ein Denkmal gebaut",
+          "Und jeder Vollidiot weiß, dass das die Liebe nicht ersetzt",
+          "Komm mal her, ich will dir was sagen, es ist nicht so wie du denkst"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Welt wieder wach"
+      },
+      "links": {
+        "youtube": "aC872j2-PDw"
+      },
+      "coverUrl": "/covers/german-helden-denkmal.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-ME2Hufquz0k",
+      "title": "Adrenalina  ft. Jennifer Lopez, Ricky Martin",
+      "artist": "Wisin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ME2Hufquz0k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin-adrenalina--ft--jennifer-lopez--ricky-martin.jpg"
+    },
+    {
+      "id": "yt-NlerzWub428",
+      "title": "Corazón Acelerao",
+      "artist": "Wisin",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NlerzWub428"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin-corazón-acelerao.jpg"
+    },
+    {
+      "id": "yt-whBcmlaSLJM",
+      "title": "Estoy Enamorado",
+      "artist": "Wisin & Yandel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=whBcmlaSLJM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin---yandel-estoy-enamorado.jpg"
+    },
+    {
+      "id": "yt-lMi4QmNHSDg",
+      "title": "Prometiste (MTV Unplugged) [En Vivo]",
+      "artist": "Wisin & Yandel",
+      "year": 2011,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lMi4QmNHSDg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin---yandel-prometiste--mtv-unplugged---en-vivo-.jpg"
+    },
+    {
+      "id": "yt-yfCZGk8eCUk",
+      "title": "Sexy Movimiento",
+      "artist": "Wisin & Yandel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yfCZGk8eCUk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin---yandel-sexy-movimiento.jpg"
+    },
+    {
+      "id": "yt-SKWxOsbt9gU",
+      "title": "Te Siento",
+      "artist": "Wisin & Yandel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SKWxOsbt9gU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin---yandel-te-siento.jpg"
+    },
+    {
+      "id": "yt-Xmap94TcDNs",
+      "title": "Follow The Leader  ft. Jennifer Lopez",
+      "artist": "Wisin & Yandel, Jennifer Lopez",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Xmap94TcDNs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin---yandel--jennifer-lopez-follow-the-leader--ft--jennifer-lopez.jpg"
+    },
+    {
+      "id": "yt-wZRWpr1G1Qw",
+      "title": "Nota de Amor  ft. Daddy Yankee",
+      "artist": "Wisin, Carlos Vives",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wZRWpr1G1Qw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/wisin--carlos-vives-nota-de-amor--ft--daddy-yankee.jpg"
+    },
+    {
+      "id": "class-mozart-nacht",
+      "title": "Eine kleine Nachtmusik",
+      "artist": "Wolfgang Amadeus Mozart",
+      "year": 1787,
+      "country": "AT",
+      "genre": "Classical / Serenade",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Elegant",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] der bekanntesten Serenaden der Musikgeschichte.",
+        "Besticht durch die heitere, elegante und vollkommen ausgewogene Melodieführung.",
+        "Wurde ursprünglich für ein Streichquintett geschrieben.",
+        "Ein Inbegriff für den leichten, Wiener Klassik Sound.",
+        "Thematisiert (laut Titel) [XXX] abendliche Unterhaltungsmusik."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Serenade)",
+          "Tadi-da-da-da-da-da-da",
+          "Tadi-da-da-da-da-da-da"
+        ],
+        "fake": "Dancing stars in the night so bright"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ECAK9XHakW4",
+        "spotify": "5nVahCoRVadqiNLZ8pbmrG",
+        "amazonMusic": "B001SVEZOM"
+      },
+      "coverUrl": "/covers/class-mozart-nacht.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "schlager-wolgang-petry-verlieben",
+      "title": "Verlieben, verloren, vergessen, verzeih'n",
+      "artist": "Wolfgang Petry",
+      "year": 1992,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Sing-along"
+      ],
+      "hints": [
+        "Markierte das große Comeback von 'Wolle' [XXX] in den 90ern.",
+        "Bekannt durch seine vielen Freundschaftsbänder am Arm.",
+        "Der Song ist ein absoluter Party-Garant in jedem Festzelt.",
+        "Zählt vier Stadien einer gescheiterten und wiederbelebten Liebe auf.",
+        "Refrain: '[XXX], [XXX], [XXX], [XXX], verdammt es war Glück und verdammt war es schön!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Verlieben, verloren, vergessen, verzeih'n",
+          "Verdammt, es war Glück und verdammt war es schön",
+          "Ich weiß nicht wohin, aber ich weiß wo ich bin"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Mlt2xg_j5AY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-wolgang-petry-verlieben.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "hiphop-wutang-cream",
+      "title": "C.R.E.A.M.",
+      "artist": "Wu-Tang Clan",
+      "year": 1993,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Raw",
+        "Moody"
+      ],
+      "hints": [
+        "Das Akronym steht für 'Cash Rules Everything Around Me'.",
+        "Thematisiert den Kampf um Geld und Überleben in den gefährlichen Vierteln von Staten Island.",
+        "Basiert auf einem traurigen Klavier-Sample von The Charmels.",
+        "Ein Paradebeispiel für den rohen, unverfälschten Sound des Wu-[XXX] [XXX]s.",
+        "Refrain: 'Cash rules everything around me, [XXX] get the money!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Cash rules everything around me, C.R.E.A.M. get the money",
+          "Dollar dollar bill y'all!",
+          "I grew up on the crime side, the New York Times side"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "links": {
+        "youtube": "PBwAxmrE194"
+      },
+      "coverUrl": "/covers/hiphop-wutang-cream.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    }
+  ]
+}

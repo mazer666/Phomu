@@ -1,0 +1,350 @@
+{
+  "songs": [
+    {
+      "id": "schlager-howard-carpendale-hello",
+      "title": "Hello Again",
+      "artist": "Howard Carpendale",
+      "year": 1984,
+      "country": "ZA/DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Emotional"
+      ],
+      "hints": [
+        "[XXX] [XXX] stammt ursprünglich aus Südafrika.",
+        "Der Song handelt von einem unverhofften Wiedersehen nach langer Zeit.",
+        "Ein Paradebeispiel für den gefühlvollen Balladen-Schlager der 80er.",
+        "Besitzt eine sehr markante Textpassage, in der das Telefon klingelt.",
+        "Refrain: '[XXX] [XXX]! Ich sag' einfach [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hello again! Ich sag' einfach hello again",
+          "Es ist schon lange her, seit wir uns sahen",
+          "Du hast dich kaum verändert, bist immer noch schön"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "8rRgfq5X7DY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-howard-carpendale-hello.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "score-shore-hobbits",
+      "title": "Concerning Hobbits (LOTR)",
+      "artist": "Howard Shore",
+      "year": 2001,
+      "country": "CA",
+      "genre": "Movie Score / Celtic influence",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Smooth",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Gentle flute melody",
+          "Smell of old Toby and green grass"
+        ],
+        "fake": "In the shadow of the mountain looking for the one ring tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CL_3mlOPnGI",
+        "spotify": "644es5aYPJghtZLjM1rmSP",
+        "amazonMusic": "B00FWBUIU4"
+      },
+      "coverUrl": "/covers/score-shore-hobbits.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "blues-howlin-wolf-smokestack",
+      "title": "Smokestack Lightnin'",
+      "artist": "Howlin' Wolf",
+      "year": 1956,
+      "country": "US",
+      "genre": "Chicago Blues",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Moody",
+        "Powerful",
+        "Raw"
+      ],
+      "hints": [
+        "Besticht durch den hypnotischen, eintönigen Blues-Riff und [XXX]s [XXX]sgeheul-Gesang.",
+        "Thematisiert Sehnsucht und das Beobachten von Zügen in der Nacht.",
+        "[XXX] [XXX]s gewaltige Präsenz prägt diesen Klassiker.",
+        "Ein Inbegriff für den düsteren, kraftvollen Blues.",
+        "Refrain: 'Oh-whooooo, [XXX] [XXX]! Shinin' just like gold!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ah-whoooo, smokestack lightnin', shinin' just like gold",
+          "Don't you hear me cryin'?",
+          "Whoo-hooo, tell me baby, where did you stay last night?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of the broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "VMUt8KdDtTY"
+      },
+      "coverUrl": "/covers/blues-howlin-wolf-smokestack.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "yt-mBntcHLiXmk",
+      "title": "Farruko Ft. Daddy Yankee, Jory & J Alvarez ◄NEW ® 2011",
+      "artist": "Hoy (Remix)",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mBntcHLiXmk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/hoy--remix--farruko-ft--daddy-yankee--jory---j-alvarez--new---2011.jpg"
+    },
+    {
+      "id": "finale-hozier-sweet",
+      "title": "Too Sweet",
+      "artist": "Hozier",
+      "year": 2024,
+      "country": "IE",
+      "genre": "Indie Rock / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Song mit charakteristischen Indie Rock -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I think I'll take my whiskey neat, my coffee black and my bed at three",
+          "You're too sweet for me",
+          "I think I'll take my whiskey neat"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NTpbbQUBbuo"
+      },
+      "coverUrl": "/covers/finale-hozier-sweet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-co5tV9VW9o8",
+      "title": "Sternenhimmel",
+      "artist": "Hubert Kah",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=co5tV9VW9o8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/hubert-kah-sternenhimmel.jpg"
+    },
+    {
+      "id": "movie-huey-lewis-power-of-love",
+      "title": "The Power of Love",
+      "artist": "Huey Lewis & The News",
+      "year": 1985,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Classic"
+      ],
+      "hints": [
+        "Wurde durch den Film 'Zurück in die Zukunft' (Back to the Future) zum Welthit.",
+        "Der Sänger hat im Film einen Cameo-Auftritt als Lehrer, der die Band auditioniert.",
+        "Nominiert für den Oscar als bester Filmsong.",
+        "Der Text preist die Kraft der Liebe, die weder Geld noch Ruhm braucht.",
+        "Ikonisches Album-Cover mit der Silhouette eines DeLoreans (indirekt)."
+      ],
+      "lyrics": {
+        "real": [
+          "The power of love is a curious thing, make a one man weep, make another man sing",
+          "Change a hawk to a little white dove, more than a feeling: that's the power of love",
+          "Tougher than diamonds, rich like cream! Stronger and harder than a bad girl's dream"
+        ],
+        "fake": "Running back in time, try to find a rhyme, through the middle of the crime"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wBl2QGAIx1s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-huey-lewis-power-of-love.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "movie-hugh-jackman-greatest-show",
+      "title": "The Greatest Show",
+      "artist": "Hugh Jackman",
+      "year": 2017,
+      "country": "US",
+      "genre": "Soundtrack",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Epic",
+        "Happy"
+      ],
+      "hints": [
+        "Der Eröffnungssong des Filmmusicals 'The [XXX] [XXX]man'.",
+        "Wurde von den 'La La Land'-Komponisten Pasek & Paul geschrieben.",
+        "Ein kraftvoller Mix aus modernem Pop und klassischer Musical-Struktur.",
+        "[XXX] [XXX] singt hier die Rolle des P.T. Barnum.",
+        "Refrain: 'Whoa, this is the [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa",
+          "Ladies and gents, this is the moment you've waited for",
+          "Searching in the dark, your curtains down and empty sheets"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken beat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NyVYXRD1Ans"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-hugh-jackman-greatest-show.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    }
+  ]
+}
