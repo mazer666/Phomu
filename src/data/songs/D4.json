@@ -1,0 +1,589 @@
+{
+  "songs": [
+    {
+      "id": "rock-deeppurple-highwaystar",
+      "title": "Highway Star",
+      "artist": "Deep Purple",
+      "year": 1972,
+      "country": "GB",
+      "genre": "Hard Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Fast",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Gilt als einer der wichtigsten Songs für die Entwicklung des Speed Metal.",
+        "Das Gitarren- und Orgel-Solo sind legendär.",
+        "Entstand während einer Busfahrt, als ein Journalist fragte, wie die Band ihre Songs schreibt.",
+        "Ein absoluter Klassiker für Autofahrten.",
+        "Refrain: 'I'm a [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm a highway star, I'm a highway star",
+          "I'm a highway star, I'm a highway star"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AqEW53Ui2no",
+        "spotify": "3uMmllZo1AfoEnVT4ENCD3",
+        "amazonMusic": "B001RS7U5Y"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-deeppurple-highwaystar.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "rock-deep-purple-smoke-on-the-water",
+      "title": "Smoke on the Water",
+      "artist": "Deep Purple",
+      "year": 1972,
+      "country": "GB",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Rock",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song hat das - für Anfänger - bekannteste Gitarrenriff der Welt (4 Töne).",
+        "Der Text beschreibt einen echten Brand im Casino von Montreux während eines Frank-Zappa-Konzerts.",
+        "Der Titel bezieht sich auf den Rauch, der über den Genfer See zog.",
+        "Die Band nahm das Album 'Machine Head' in den Trümmern des ausgebrannten Casinos auf.",
+        "Ein absoluter Pflichtsong für jeden angehenden Gitarristen."
+      ],
+      "lyrics": {
+        "real": [
+          "We all came out to Montreux on the Lake Geneva shoreline",
+          "To make records with a mobile, we didn't have much time",
+          "Smoke on the water, fire in the sky"
+        ],
+        "fake": "Running for the mountain, looking for a fountain of eternal life"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Q2FzZSBD5LE",
+        "spotify": "5MMnwYs0hIxkENRsbkWJ2G",
+        "amazonMusic": "B001RS8EYI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-deep-purple-smoke-on-the-water.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "80s-dennie-williams-lets-hear-it-for-the-boy",
+      "title": "Let's Hear It for the Boy",
+      "artist": "Deniece Williams",
+      "year": 1984,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Movie",
+        "Upbeat"
+      ],
+      "hints": [
+        "Wurde durch den Film 'Footloose' weltberühmt.",
+        "Der Song feiert einen Freund, der zwar nicht perfekt ist, aber ehrlich liebt.",
+        "War ein Nummer-1-Hit in den USA.",
+        "Ein Paradebeispiel für den hellen, perkussiven 80er-Pop-Sound.",
+        "Refrain: '[XXX] [XXX] it for the boy, oh, [XXX] give the boy a hand!'"
+      ],
+      "lyrics": {
+        "real": [
+          "My baby, he don't talk sweet, he ain't got much to say",
+          "But he loves me, loves me, loves me, I know that he loves me anyway",
+          "Let's hear it for the boy, oh, let's give the boy a hand"
+        ],
+        "fake": [
+          "My darling, you are sweet, you are kind, what do you have on your mind?",
+          "He has fallen in love with me. I know it like the sea in my mind",
+          "Listen to the beat of you heart, and give me your hand"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gI7YHZVc7mM",
+        "spotify": "0YByunSgZfXmXzXN9YAL6X",
+        "amazonMusic": "B003YNT2SQ"
+      },
+      "coverUrl": "/covers/80s-dennie-williams-lets-hear-it-for-the-boy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt-hBYP9f1LAHY",
+      "title": "Five More Hours",
+      "artist": "Deorro & Chris Brown",
+      "year": 2014,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hBYP9f1LAHY",
+        "spotify": "6YwLgicpvVuMt1eE2OldwQ",
+        "amazonMusic": "B00U3Q0LNC"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/deorro---chris-brown-five-more-hours.jpg"
+    },
+    {
+      "id": "synth-depeche-silence",
+      "title": "Enjoy the Silence",
+      "artist": "Depeche Mode",
+      "year": 1990,
+      "country": "GB",
+      "genre": "Synthpop / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Dark",
+        "Epic"
+      ],
+      "hints": [
+        "Inbegriff für den ausgereiften [XXX]-[XXX]-Sound der frühen 90er.",
+        "Besticht durch das ikonische Gitarren-Riff über elektronischen Beats.",
+        "Thematisiert die Überflüssigkeit von Worten gegenüber tiefen Gefühlen.",
+        "Das Video (Dave Gahan als König mit Klappstuhl) ist legendär.",
+        "Refrain: 'All I ever wanted! All I ever needed! Is here in my arms!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Words like violence, break the silence, come crashing in into my little world",
+          "All I ever wanted, all I ever needed, is here in my arms",
+          "Words are very unnecessary, they can only do harm"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "aGSKrC7dGcY",
+        "spotify": "6WK9dVrRABMkUXFLNlgWFh",
+        "amazonMusic": "B00B99B78I"
+      },
+      "coverUrl": "/covers/synth-depeche-silence.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "80s-depeche-enough",
+      "title": "Just Can't Get Enough",
+      "artist": "Depeche Mode",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Synth Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Electronic",
+        "Energy",
+        "German New Wave",
+        "Happy",
+        "Popular"
+      ],
+      "hints": [
+        "Früher Hit der Band aus der Ära von Vince Clarke.",
+        "Viel fröhlicher und poppiger als ihr späterer dunkler Sound.",
+        "Thematisiert die Ekstase und Aufregung einer neuen Liebe.",
+        "Ein unverzichtbarer Song für jede Synth-Pop-Party.",
+        "Refrain: 'And I [XXX] [XXX] get [XXX]! And I [XXX] [XXX] get [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When I'm with you baby, I go out of my head, and I just can't get enough",
+          "We walk together, we're walking down the street",
+          "And I just can't get enough, I just can't get enough"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "_6FBfAQ-NDE",
+        "spotify": "4DAEaxpxKJy0Hq5mAiEnOO",
+        "amazonMusic": "B00DLRI1C8"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-depeche-enough.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-F3EE_ENosLI",
+      "title": "Never Let Me Down",
+      "artist": "Depeche Mode",
+      "year": 1987,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1980er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=F3EE_ENosLI",
+        "spotify": "3QqONU0GW4byIClquChyf0",
+        "amazonMusic": "B00DLRY0OG"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/depeche-mode-never-let-me-down.jpg"
+    },
+    {
+      "id": "synth-depeche-jesus",
+      "title": "Personal Jesus",
+      "artist": "Depeche Mode",
+      "year": 1989,
+      "country": "GB",
+      "genre": "Synthpop / Blues influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Dark",
+        "Energy",
+        "German New Wave",
+        "Popular"
+      ],
+      "hints": [
+        "Besticht durch das markante Blues-Gitarren-Riff über einem harten elektronischen Beat.",
+        "Thematisiert die Rolle einer Person als spiritueller Anker für eine andere ('Reach out and touch faith').",
+        "Wurde durch unzählige Coverversionen (z.B. Johnny Cash) zum kulturellen Erbe.",
+        "Ein Inbegriff für den raueren, dunkleren Sound der Band Ende der 80er.",
+        "Refrain: 'Reach out and touch faith!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Reach out and touch faith!",
+          "Your own personal Jesus, someone to hear your prayers, someone who cares",
+          "Your own personal Jesus, someone to hear your prayers"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s_VPmgxBMQI",
+        "spotify": "2wUlYDGGXlSvm2NkGj0Qio",
+        "amazonMusic": "B01N3LMT2B"
+      },
+      "coverUrl": "/covers/synth-depeche-jesus.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-qwagjFlvv_s",
+      "title": "Sorriso Maroto",
+      "artist": "Dependente",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qwagjFlvv_s",
+        "spotify": "2xOa2qPj8kDnlj8Nr1D07s",
+        "amazonMusic": "B01GWC0K7Y"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/dependente-sorriso-maroto.jpg"
+    },
+    {
+      "id": "yt-NiZErygnITo",
+      "title": "Lost",
+      "artist": "Dermot Kennedy",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NiZErygnITo",
+        "spotify": "0QrUw86ZKRgNGGgrvC5yC5",
+        "amazonMusic": "B07Z8L3J8S"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/dermot-kennedy-lost.jpg"
+    },
+    {
+      "id": "80s-dexys-midnight-runners-come-on-eileen",
+      "title": "Come On Eileen",
+      "artist": "Dexys Midnight Runners",
+      "year": 1982,
+      "country": "GB",
+      "genre": "Celtic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Fast",
+        "Sing-along"
+      ],
+      "hints": [
+        "Bekannt für den Einsatz von Geigen und einen Folk-beeinflussten Sound.",
+        "Die Band trägt im Video Latzhosen und sieht eher wie Farmarbeiter aus.",
+        "Der Song wird gegen Ende immer schneller, was oft zu Tanz-Chaos führt.",
+        "Dankte der Protagonistin '[XXX]', dass sie alles so viel besser mache.",
+        "Ein Klassiker auf jeder Hochzeit und 80er-Party."
+      ],
+      "lyrics": {
+        "real": [
+          "Come on Eileen, oh I swear (what he means) at this moment, you mean everything",
+          "You in that dress, my thoughts I confess, verge on dirty",
+          "Ah, come on Eileen"
+        ],
+        "fake": [
+          "Come on, come on, oh I hear your scream, that you live in the moment and see everything",
+          "In my suit, my shoes, my socks, I'm ready to confess",
+          "Oh, come on, come on, oh oh no, oh oh no"
+        ]
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "pq1ybbixmro",
+        "spotify": "3MrWxJaD2AT0W9DjWF64Vm",
+        "amazonMusic": "B082XQDW5F"
+      },
+      "coverUrl": "/covers/80s-dexys-midnight-runners-come-on-eileen.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "jazz-dianakrall-look",
+      "title": "The Look of Love",
+      "artist": "Diana Krall",
+      "year": 2001,
+      "country": "CA",
+      "genre": "Jazz / Vocal",
+      "difficulty": "easy",
+      "mood": [
+        "Sexy",
+        "Romantic",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Eine moderne, sinnliche Interpretation des Klassikers von Burt Bacharach.",
+        "Inbegriff für [XXX] [XXX]s Status als moderne Jazz-Ikone.",
+        "Besticht durch die orchestrale Begleitung und ihren hauchzarten Gesang.",
+        "Perfekt für entspannte, romantische Abende.",
+        "Refrain: 'The [XXX] of [XXX]... is in your eyes!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The look of love, is in your eyes, a look your smile can't disguise",
+          "The look of love, it's saying so much more than just words could ever say",
+          "And what my heart has heard, well it takes my breath away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Yr8xDSPjII8",
+        "spotify": "3CDHydgW0ssTh59f0jy1y3",
+        "amazonMusic": "B00005NDFE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-dianakrall-look.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "soul-dianaross-comingout",
+      "title": "I'm Coming Out",
+      "artist": "Diana Ross",
+      "year": 1980,
+      "country": "US",
+      "genre": "Disco / Funk-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
+      "hints": [
+        "Besticht durch das triumphale Posaunen-Intro und Nile Rodgers' markante Funk-Gitarre.",
+        "Thematisiert Selbstbefreiung und Stolz.",
+        "Wurde zu einer der wichtigsten Hymnen für die LGBTQ+ Community.",
+        "Ein Inbegriff für [XXX] [XXX]' erfolgreiche Solo-Karriere.",
+        "Refrain: 'I'm [XXX] out! I want the world to know! Got to let it show!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm coming out, I want the world to know, got to let it show",
+          "There's a new me coming out, and I just had to live",
+          "I want the world to know, got to let it show"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6CHdKORwPEQ",
+        "spotify": "3SnGymj6ijE2iuUfWxLo1q",
+        "amazonMusic": "B000026G9U"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-dianaross-comingout.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "songs": [
+    {
+      "id": "soul-war-lowrider",
+      "title": "Low Rider",
+      "artist": "War",
+      "year": 1975,
+      "country": "US",
+      "genre": "Funk / Latin influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Relaxed",
+        "Funny"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "All my friends know the low rider, the low rider is a little higher",
+          "Low rider drives a little slower, low rider is a real goer",
+          "Take a little trip, take a little trip with me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "tTuoLdIZsrk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-war-lowrider.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "hiphop-warreng-regulate",
+      "title": "Regulate",
+      "artist": "Warren G ft. Nate Dogg",
+      "year": 1994,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Smooth"
+      ],
+      "hints": [
+        "Einer der entspanntesten G-Funk-Tracks überhaupt.",
+        "Basiert auf einem Sample von Michael McDonalds 'I Keep Forgettin''.",
+        "Erzählt eine Geschichte über einen Überfall und die anschließende Rettung in Long Beach.",
+        "[XXX] [XXX]s tiefe, melodische Stimme im Refrain ist das Markenzeichen.",
+        "Refrain: 'Regulators! We [XXX] any stealing of his property!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Regulators! We regulate any stealing of his property",
+          "And we're damn good too, but you can't be any geek off the street",
+          "You gotta be handy with the steel if you know what I mean, earn your keep"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the broken soul"
+      },
+      "links": {
+        "youtube": "1plPyJdXKIY"
+      },
+      "coverUrl": "/covers/hiphop-warreng-regulate.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "country-waylon-cowboys",
+      "title": "Mammas Don't Let Your Babies Grow Up to Be Cowboys",
+      "artist": "Waylon Jennings & Willie Nelson",
+      "year": 1978,
+      "country": "US",
+      "genre": "Outlaw Country",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Cool",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für den harten, ungeschönten Outlaw-Sound.",
+        "Thematisiert (mit Augenzwinkern) das unstete und schwierige Leben eines Ranchers.",
+        "Besticht durch den charakteristischen federnden Rhythmus und die rauen Stimmen des Duos.",
+        "Ein Song voller purer Western-Attitüde.",
+        "Refrain: '[XXX] [XXX] let your [XXX] [XXX] up to be [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Cowboys ain't easy to love and they're harder to hold",
+          "Mammas don't let your babies grow up to be cowboys",
+          "Make 'em be doctors and lawyers and such"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Ufjv0SRZ-IY"
+      },
+      "coverUrl": "/covers/country-waylon-cowboys.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "jazz-montgomery-round",
+      "title": "'Round Midnight (Guitar Version)",
+      "artist": "Wes Montgomery",
+      "year": 1959,
+      "country": "US",
+      "genre": "Jazz / Guitar",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für Wes [XXX]s revolutionäres Oktav-Spiel auf der Gitarre.",
+        "Besticht durch den extrem warmen, vollen Sound seiner Gibson L-5.",
+        "Seine Interpretation von Monks Ballade gilt als wegweisend für Jazz-Gitarristen.",
+        "Ein absoluter 'Late Night' Klassiker.",
+        "Genre-Inhalt: Lyrische Jazz-Gitarre."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental - Montgomery's thumb-picking magic)",
+          "(Warm and soulful guitar interpretation)",
+          "(The genius of octave playing)"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "PvnP5CiRvZI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-montgomery-round.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "80s-wham-wake-me-up-before-you-go-go",
+      "title": "Wake Me Up Before You Go-Go",
+      "artist": "Wham!",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Dance-pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Pop"
+      ],
+      "hints": [
+        "Das Duo bestand aus George Michael und Andrew Ridgeley.",
+        "Der Titel entstand durch eine krakelige Notiz, die Andrew an George schrieb.",
+        "Im Musikvideo tragen alle 'CHOOSE LIFE' T-Shirts.",
+        "Beginnt mit dem ikonischen viermaligen Schnipsen und 'Jitterbug'.",
+        "Eine der fröhlichsten Hymnen der 80er Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "You put the boom-boom into my heart, you send my soul sky high when your lovin' starts",
+          "Jitterbug into my brain, goes a bang-bang-bang till my feet do the same",
+          "Wake me up before you go-go, don't leave me hanging on like a solo"
+        ],
+        "fake": [
+          "Sun is coming up and we're dancing till the light of day",
+          "Jitterbug freezing your brain, drumming bang bang with your fingers",
+          "Staying up until the dawn, so you pretend to be drawn"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pIgZ7gMze7A",
+        "spotify": "0ikz6tENMONtK6qGkOrU3c",
+        "amazonMusic": "B00136RVDY"
+      },
+      "coverUrl": "/covers/80s-wham-wake-me-up-before-you-go-go.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-mNotrnObDMU",
+      "title": "Hold Back Your Love",
+      "artist": "White Lies",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mNotrnObDMU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/white-lies-hold-back-your-love.jpg"
+    },
+    {
+      "id": "80s-whitney-dance",
+      "title": "I Wanna Dance with Somebody",
+      "artist": "Whitney Houston",
+      "year": 1987,
+      "country": "US",
+      "genre": "Pop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Confident",
+        "Dance",
+        "Energy",
+        "Happy",
+        "Party"
+      ],
+      "hints": [
+        "Wurde oft mit Cyndi Laupers Stil verglichen, entwickelte sich aber zum Signatur-Hit der Sängerin.",
+        "Die Sängerin gewann damit 1988 den Grammy für die beste weibliche Pop-Vocal-Performance.",
+        "Das Video zeigt die Sängerin in einer bunten Kulisse mit markanter Dauerwelle.",
+        "Der Text drückt den Wunsch aus, jemanden zum Tanzen zu finden, der einen liebt.",
+        "Ein Meilenstein der 80er Tanz-Pop-Geschichte."
+      ],
+      "lyrics": {
+        "real": [
+          "Clock strikes upon the hour and the sun begins to fade",
+          "Oh, I wanna dance with somebody, I wanna feel the heat with somebody",
+          "Yeah, I wanna dance with somebody, with somebody who loves me"
+        ],
+        "fake": [
+          "See the time run out, hour after hour, day after day",
+          "Oh, I need to grab someone, so I can feel the heart with the full beat",
+          "Yeah, I can dream of somebody, somebody to dance with"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eH3giaIzONA",
+        "spotify": "2tUBqZG2AbRi7Q0BIrVrEj",
+        "amazonMusic": "B00IZE58IM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-whitney-dance.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "80s Flashback",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "whitney-houston-i-will-always-love-you-1992",
+      "title": "I Will Always Love You",
+      "artist": "Whitney Houston",
+      "year": 1992,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Epic",
+        "Heartbreak",
+        "Power Ballad",
+        "Powerful",
+        "Romantic"
+      ],
+      "hints": [
+        "Das Original wurde 1974 von Country-Legende Dolly Parton geschrieben – als Abschied an ihren damaligen Manager.",
+        "Produzent David Foster schlug vor, die Einleitung völlig ohne Musikbegleitung zu singen – a cappella.",
+        "Aus dem Soundtrack des Films 'Bodyguard' (1992) mit Kevin Costner; 14 Wochen auf Platz 1 der US-Charts.",
+        "Beginnt a cappella, baut sich langsam auf und entfaltet sich dann zu einer bombastischen Power-Ballade.",
+        "[XXX] [XXX] singt mit einer der mächtigsten Stimmen der Popgeschichte über unvergängliche Liebe."
+      ],
+      "lyrics": {
+        "real": [
+          "If I should stay, I would only be in your way",
+          "So I'll go, but I know I'll think of you every step of the way",
+          "And I will always love you"
+        ],
+        "fake": "But now I must leave this town and find my own road"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "H9nPf7w7pDI"
+      },
+      "coverUrl": "/covers/whitney-houston-i-will-always-love-you-1992.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "piano-ballads",
+        "Movie Hits",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "soul-wildcherry-funky",
+      "title": "Play That Funky Music",
+      "artist": "Wild Cherry",
+      "year": 1976,
+      "country": "US",
+      "genre": "Funk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk Rock-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Play that funky music white boy, play that funky music right",
+          "Play that funky music white boy, lay down the boogie and play that funky music",
+          "Till you die!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "JTvlujbJ5vg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-wildcherry-funky.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-Var251O2AEM",
+      "title": "El Gran Varon (salsa)",
+      "artist": "Willie Colon",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Var251O2AEM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/willie-colon-el-gran-varon--salsa-.jpg"
+    },
+    {
+      "id": "yt-eOU5B7sttHw",
+      "title": "Gitana",
+      "artist": "Willie Colon",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eOU5B7sttHw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/willie-colon-gitana.jpg"
+    },
+    {
+      "id": "yt-Y1BDGjPPCwg",
+      "title": "IDILIO WILLIE COLON LYRICS",
+      "artist": "Willie Colón",
+      "year": 1977,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y1BDGjPPCwg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/willie-colón-idilio-willie-colon-lyrics.jpg"
+    },
+    {
+      "id": "yt-TyNe7VomtQk",
+      "title": "Talento De Televisión (Audio)",
+      "artist": "Willie Colón",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TyNe7VomtQk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/willie-colón-talento-de-televisión--audio-.jpg"
+    }
+  ]
+}

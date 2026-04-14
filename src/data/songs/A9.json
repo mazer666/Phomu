@@ -1,0 +1,450 @@
+{
+  "songs": [
+    {
+      "id": "yt-KWx1PmZk6PM",
+      "title": "All Or Nothing",
+      "artist": "ATB",
+      "year": 1999,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein weiterer Trance-Klassiker des deutschen DJs, der Ende der 90er die Tanzflächen dominierte.",
+        "Der Titel 'Alles oder Nichts' steht für die kompromisslose Energie des Tracks.",
+        "Erschienen 1999 – ein typisches Beispiel für den eingängigen Melodic-Trance-Sound der Ära.",
+        "Besticht durch einen mitreißenden Synthesizer-Melodiebogen und druckvolle Beats.",
+        "Ein Track, der zeigt: Im Trance gibt es keine Halbheiten – nur volle Hingabe."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "KWx1PmZk6PM",
+        "spotify": "0vF1CszQ1UqB2jscNfJ8Qe",
+        "amazonMusic": "B0BPK9NMNW"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/atb-all-or-nothing.jpg"
+    },
+    {
+      "id": "disney-moana-far",
+      "title": "How Far I'll Go",
+      "artist": "Auli'i Cravalho",
+      "year": 2016,
+      "country": "US",
+      "genre": "Soundtrack / Inspirational",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Determined",
+        "Classic"
+      ],
+      "hints": [
+        "Die Hymne aus 'Vaiana' (Moana).",
+        "Thematisiert den Drang nach Abenteuer und das Verlassen der Komfortzone.",
+        "Die kraftvolle Stimme der jungen Hauptdarstellerin trägt den Song mit bemerkenswerter Reife.",
+        "Inbegriff für modernen Disney-Heldinnen-Pop.",
+        "Refrain: 'See the line where the sky meets the sea? It calls me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've been staring at the edge of the water, 'long as I can remember",
+          "See the line where the sky meets the sea? It calls me",
+          "And no one knows, how far it goes"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "cPAbx5kgCJo",
+        "spotify": "3KzemxaWSSiYtnzOokd0Rs",
+        "amazonMusic": "B01M71EYMH"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-moana-far.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-3RMAUNjdHjY",
+      "title": "EveryTime I Cry",
+      "artist": "Ava Max",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Synth-Pop mit 80er-inspirierten Drum Machines und reverb-getränktem, vulnerablem Gesang.",
+        "Thematisiert emotionale Wiederholung – Liebe führt immer wieder zu denselben Tränen.",
+        "Lush Synthesizer-Betten mit Vocals in hoher Lage, melancholisch und exponiert.",
+        "Der Sound pendelt zwischen Zerbrechlichkeit und Selbstbehauptung – innerer Konflikt.",
+        "Moderne Produktion mit 80er Nostalgie-Appeal – typisch für heutigen Retro-Pop."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3RMAUNjdHjY",
+        "spotify": "0mV43B6pJWRjcM5TmzNe6d",
+        "amazonMusic": "B094WZ2YFT"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ava-max-everytime-i-cry.jpg"
+    },
+    {
+      "id": "yt-BjIrWwtjbeE",
+      "title": "girl$",
+      "artist": "Ava Max",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Party-Antheme über finanzielle Unabhängigkeit und Autonomie mit feministischem Subtext.",
+        "Poppiger EDM-Synthie-Sound mit tanzbarem 4/4-Rhythmus und Hook-fokussiertem Design.",
+        "Der Dollar-Sign im Titel ist bewusst provokativ – Frauen als ökonomische Subjekte, nicht Objekte.",
+        "Spielerische, leicht sarkastische Tonalität ohne aggressiv oder bitter zu wirken.",
+        "Dance-Floor-optimiert: Eingängiger Pre-Chorus und mehrere Hook-Wiederholungen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BjIrWwtjbeE",
+        "spotify": "4fkM7M4Uo5AUASnnsRC7EZ",
+        "amazonMusic": "B07GDVWPQK"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ava-max-girl-.jpg"
+    },
+    {
+      "id": "yt-b8tqMLd4Jog",
+      "title": "Kings & Queens",
+      "artist": "Ava Max",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Feminist Power-Anthem mit pulsierenden Synthies, Strobes und aufbauender Dynamik.",
+        "Umgedrehte Machtsymbolik: Traditionelle Herrschersymbole werden zur weiblichen Hymne.",
+        "Produziert mit mehreren Breakdown-Pausen, die emotionale Intensität aufbauen.",
+        "Zentrale Botschaft: Innere Stärke, nicht äußerliche Schönheit oder Unterwerfung.",
+        "Chart-Hit mit globaler LGBTQ+ Community-Resonanz – wurde zur Community-Hymne."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=b8tqMLd4Jog",
+        "spotify": "7a53HqqArd4b9NF4XAmlbI",
+        "amazonMusic": "B08MBJHKD8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ava-max-kings---queens.jpg"
+    },
+    {
+      "id": "yt-kfauyGbueR0",
+      "title": "Maybe You’re The Problem",
+      "artist": "Ava Max",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Post-Breakup-Track mit sarkastischem Dreh – Selbstschutz durch Projektion und Ironie.",
+        "Melancholische, dunklere Synthesizer-Atmosphäre als andere Pop-Hits.",
+        "Emotionaler Gesang über ungelöste Konflikte und gegenseitige Schuldzuweisung.",
+        "Die Produktion balanciert Verwundbarkeit mit Sarcasm – nicht naiv, aber auch nicht hartherzig.",
+        "Thematisiert psychologische Abwehrmechanismen in gescheiterten Beziehungen – realistisch."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kfauyGbueR0",
+        "spotify": "6WDG2ybdV3SBXV0lwBGu4D",
+        "amazonMusic": "B09XZQGYK9"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ava-max-maybe-you-re-the-problem.jpg"
+    },
+    {
+      "id": "yt-cTr-aGK-LpA",
+      "title": "My Head & My Heart",
+      "artist": "Ava Max",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Innerer Konflikt zwischen Verstand und Gefühl in kritischen Liebesentscheidungen.",
+        "Melancholischer Electronic-Pop mit lush Synthesizer-Atmosphäre und gefühlvollem Gesang.",
+        "Minimales Arrangement – nicht überproduziert, emotionale Vulnerability im Fokus.",
+        "Reflektive, introspektive Dynamik ohne Aggression oder Drama-Overdose.",
+        "Das Thema ist universell – jeder kennt den Kopf vs. Herz Konflikt in Liebe."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cTr-aGK-LpA",
+        "spotify": "1KixkQVDUHggZMU9dUobgm",
+        "amazonMusic": "B08MBJR4Q9"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ava-max-my-head---my-heart.jpg"
+    },
+    {
+      "id": "yt-_FTgm0-ZKbg",
+      "title": "So Am I",
+      "artist": "Ava Max",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Empowerment-Pop über Andersartigkeit und Selbstakzeptanz trotz Druck zur Konformität.",
+        "Eingängiger Hook mit einfacher, aber kraftvoller Botschaft – nicht überanalysiert.",
+        "Wurde zur Community-Hymne für marginalisierte Gruppen weltweit.",
+        "Mainstream-Zugänglichkeit gepaart mit echtem sozialen Statement – selten gelungen.",
+        "Sing-along Moment: Chorus ist extrem repetitiv und einprägsam – Zweck."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_FTgm0-ZKbg",
+        "spotify": "2Xnv3GntqbBH1juvUYSpHG",
+        "amazonMusic": "B07PB9C1KK"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ava-max-so-am-i.jpg"
+    },
+    {
+      "id": "metal-avenged-nightmare",
+      "title": "Nightmare",
+      "artist": "Avenged Sevenfold",
+      "year": 2010,
+      "country": "US",
+      "genre": "Heavy Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Energy",
+        "Powerful"
+      ],
+      "hints": [
+        "Erster Major-Track nach großem Band-Umbruch – Rückkehr mit verstärkter künstlerischer Vision.",
+        "Cineastischer Song-Aufbau: Intro-Spannung → Breakdown → Explosive Chorus.",
+        "Thematisiert Angst, innere Dämonen und den Eintritt in die eigene psychologische Hölle.",
+        "Vocals variieren zwischen Whisper und kraftvollen Schreien – technisch anspruchsvoll und abwechslungsreich.",
+        "Moderner Metal-Dauerbrenner in Playlists und Live-Setlisten."
+      ],
+      "lyrics": {
+        "real": [
+          "Nightmare! Now your nightmare comes to life",
+          "Dragged you down below down to the devil's show",
+          "To be his guest forever (Peace of mind is less than never)"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "94bGzWyHbu0",
+        "spotify": "4UEo1b0wWrtHMC8bVqPiH8",
+        "amazonMusic": "B003VE62FO"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-avenged-nightmare.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-hPT2FGoSOr8",
+      "title": "Amor De Madre",
+      "artist": "Aventura",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Bachata-Ballad über bedingungslose Mutterliebe, Opfer und generationale Dankbarkeit.",
+        "Traditionelle Bachata-Gitarren mit melancholischen, gefühlvollen Vocals im mittleren Register.",
+        "Modernes Produktions-Arrangement ohne traditionelle Instrumentation zu verlieren.",
+        "Kultureller Kontext: Bachata oft als marginalisiertes Genre – dieses Lied verleiht ihm Würde.",
+        "Universelles Thema mit spezifisch Latino-kulturellem Ausdruck."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hPT2FGoSOr8",
+        "spotify": "0iEit4v7n5T99F7uI9i261",
+        "amazonMusic": "B00G00451U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/aventura-amor-de-madre.jpg"
+    },
+    {
+      "id": "yt-0XCot42qTvA",
+      "title": "Dile Al Amor",
+      "artist": "Aventura",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Romantische Bachata über Liebesbotschaften und emotionale Vermittlung zwischen Personen.",
+        "Intimate Vocals über orchestrale Bachata-Instrumentation – keine Aggression, nur Weichheit.",
+        "Meta-Ebene: Der Song spricht mit dem Publikum, als würde er Liebe weitergeben.",
+        "Raue, charaktervolle Stimme kontrastiert mit eleganter, melancholischer Melodie.",
+        "Song-Struktur: Langer emotionaler Aufbau ohne traditionellen Chorus-Knall."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0XCot42qTvA",
+        "spotify": "0UByJq85o7i2Yvsh6eUaUp",
+        "amazonMusic": "B0029A79UI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/aventura-dile-al-amor.jpg"
+    },
+    {
+      "id": "yt-6WeMiC-CJHA",
+      "title": "El Malo",
+      "artist": "Aventura",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Schnellere Bachata-Variante mit punchigem Rhythmus, Bläser-Stabs und Tanzbarkeit.",
+        "Thematisiert Selbst-Etiketierung als 'der Böse' in gescheiterter Liebe – Schuld und Reue.",
+        "Männliche Perspektive auf Versagen in Beziehungen – vulnerable Masculinity.",
+        "Marktiert sich als Club-Hit für Latino Tanzszene – Tanzbarkeit ist zentral.",
+        "Bachata-Variante: Schneller als klassisch, moderner als akustisch."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6WeMiC-CJHA",
+        "spotify": "0E83d4L8pW1U0Wk62J8Zg2",
+        "amazonMusic": "B0029A78Z4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/aventura-el-malo.jpg"
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "songs": [
+    {
+      "id": "yt-akmfOOxUiBo",
+      "title": "Still (Audio)",
+      "artist": "G-Eazy",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=akmfOOxUiBo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/g-eazy-still--audio-.jpg"
+    },
+    {
+      "id": "yt-Qvu033SBMYU",
+      "title": "Freed From Desire",
+      "artist": "Gala",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Anthem",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Wurde Jahrzehnte später zur Hymne in Fußball- und Dartstadien ('Will Grigg's on fire').",
+        "Die Sängerin [XXX] stammt aus Italien und schrieb den Song über buddhistische Themen.",
+        "Der eingängige 'Na-na-na-na-na-na-na'-Teil ist das Markenzeichen des Songs.",
+        "Ein Song über die Freiheit von materialistischen Begierden.",
+        "Refrain: '[XXX] from [XXX], mind and senses purified!'"
+      ],
+      "lyrics": {
+        "real": [
+          "My love has got no money, he's got his strong beliefs",
+          "My love has got no power, he's got his strong beliefs",
+          "Wanting more and more, people just want more and more"
+        ],
+        "fake": "Dancing in the fire, taking it higher, higher and higher"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Qvu033SBMYU"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/dance-gala-freed-from-desire.jpg"
+    },
+    {
+      "id": "country-garth-brooks-friends",
+      "title": "Friends in Low Places",
+      "artist": "Garth Brooks",
+      "year": 1990,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Happy",
+        "Party",
+        "Sing-along"
+      ],
+      "hints": [
+        "Die ultimative Kneipen-Hymne der 90er Jahre.",
+        "Thematisiert das Gefühl, sich in bodenständiger Umgebung wohler zu fühlen als in der High Society.",
+        "Besticht durch den eingängigen Chorus und [XXX] [XXX]' charismatische Stimme.",
+        "Ein Inbegriff für den massiven Erfolg des modernen Country.",
+        "Refrain: 'I got [XXX] in low [XXX]! Where the whiskey drowns and the beer chases!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Blame it all on my roots, I showed up in boots, and ruined your black tie affair",
+          "I've got friends in low places, where the whiskey drowns and the beer chases",
+          "And my blues away, and I'll be okay"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "mvCgSqPZ4EM"
+      },
+      "coverUrl": "/covers/country-garth-brooks-friends.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "piano-jules-madworld",
+      "title": "Mad World",
+      "artist": "Gary Jules",
+      "year": 2001,
+      "country": "US",
+      "genre": "Piano Ballade",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Dark"
+      ],
+      "hints": [
+        "Song mit charakteristischen Piano Ballade-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "All around me are familiar faces, worn out places, worn out faces",
+          "And I find it kind of funny, I find it kind of sad",
+          "The dreams in which I'm dying are the best I've ever had"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "etSbOs3aUqI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-jules-madworld.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-LrjM8Fi7J58",
+      "title": "Cars (Remastered 2009)",
+      "artist": "Gary Numan",
+      "year": 1979,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LrjM8Fi7J58"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gary-numan-cars--remastered-2009-.jpg"
+    },
+    {
+      "id": "finale-gayle-abcdefu",
+      "title": "abcdefu",
+      "artist": "GAYLE",
+      "year": 2021,
+      "country": "US",
+      "genre": "Pop-Rock / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Angry",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Song mit charakteristischen Pop-Rock -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "A-B-C-D-E, F-U and your mom and your sister and your job",
+          "And your broke-ass car and the shit you call art",
+          "Fuck you and your friends that I'll never see again"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "NaFd8ucHLuo"
+      },
+      "coverUrl": "/covers/finale-gayle-abcdefu.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "80s-gazebo-chopin",
+      "title": "I Like Chopin",
+      "artist": "Gazebo",
+      "year": 1983,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Dreamy"
+      ],
+      "hints": [
+        "Inbegriff des Italo Disco mit einem Hauch von Melancholie.",
+        "Thematisiert die zeitlose Kraft der Musik von Frédéric [XXX].",
+        "Besticht durch den sanften Synthesizer-Sound und die verträumte Melodie.",
+        "Ein Welthit, der Italo Disco in den Mainstream brachte.",
+        "Refrain: 'I [XXX] [XXX]! Love the way you celebrate!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Remember that piano, so delightful unusual",
+          "I like Chopin, love the way you celebrate",
+          "Rainy days never say goodbye"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our happy love"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "4mTMj-NWa0U",
+        "spotify": "2FHnN5ELL83TGbtXMDzoiJ",
+        "amazonMusic": "B079SYBFGT"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-gazebo-chopin.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-R_7T7-pa9NA",
+      "title": "Bruttosozialprodukt",
+      "artist": "Geier Sturzflug",
+      "year": 1983,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=R_7T7-pa9NA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/geier-sturzflug-bruttosozialprodukt.jpg"
+    },
+    {
+      "id": "yt-yvhx5gMmSPs",
+      "title": "Algo Contigo",
+      "artist": "Gente de Zona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yvhx5gMmSPs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gente-de-zona-algo-contigo.jpg"
+    },
+    {
+      "id": "yt-VMp55KH_3wo",
+      "title": "La Gozadera  ft. Marc Anthony",
+      "artist": "Gente de Zona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMp55KH_3wo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gente-de-zona-la-gozadera--ft--marc-anthony.jpg"
+    },
+    {
+      "id": "yt-8BMnz4i2dM8",
+      "title": "Mas Macarena  ft. Los Del Rio",
+      "artist": "Gente de Zona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8BMnz4i2dM8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gente-de-zona-mas-macarena--ft--los-del-rio.jpg"
+    },
+    {
+      "id": "yt-_oMfwHYSRIk",
+      "title": "Traidora  ft. Marc Anthony",
+      "artist": "Gente de Zona",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_oMfwHYSRIk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gente-de-zona-traidora--ft--marc-anthony.jpg"
+    },
+    {
+      "id": "soul-george-night",
+      "title": "Give Me the Night",
+      "artist": "George Benson",
+      "year": 1980,
+      "country": "US",
+      "genre": "Soul / Funk / Jazz focus",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Nightlife"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soul -Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Whenever dark is hanging round, you'll be finding your way on the street",
+          "Take a look at the girls around you, coming out from the cold into the heat",
+          "Give me the night"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Omnpu8mzX4c"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-george-night.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    }
+  ]
+}

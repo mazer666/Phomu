@@ -1,0 +1,197 @@
+{
+  "songs": [
+    {
+      "id": "disney-hercules-inlove",
+      "title": "I Won't Say (I'm in Love)",
+      "artist": "Susan Egan",
+      "year": 1997,
+      "country": "US",
+      "genre": "Soundtrack / Pop / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Determined",
+        "Romantic"
+      ],
+      "hints": [
+        "Megaras (Meg) Weigerung, sich ihre Gefühle für Hercules einzugestehen.",
+        "Besitzt einen stylischen, souligen Backing-Chor (die Musen).",
+        "Thematisiert Verdrängung und die Angst vor einer neuen Verletzung der Liebe.",
+        "Ein cooler und moderner Disney-Song.",
+        "Refrain: 'I [XXX] say I'm in [XXX]... (No chance, no way)'"
+      ],
+      "lyrics": {
+        "real": [
+          "If there's a prize for rotten judgment, I guess I've already won that",
+          "I won't say I'm in love (No chance no way, I won't say it)",
+          "It's too cliché, I won't say I'm in love"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DPMjsfJwUow"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-hercules-inlove.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "disco-swedish-child",
+      "title": "Don't You Worry Child",
+      "artist": "Swedish House Mafia",
+      "year": 2012,
+      "country": "SE",
+      "genre": "EDM / Progressive House",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Energy",
+        "Epic",
+        "Happy"
+      ],
+      "hints": [
+        "War die Abschiedssingle der Gruppe vor ihrer vorübergehenden Auflösung.",
+        "Besticht durch den euphorischen Refrain und die kraftvolle Stimme von John Martin.",
+        "Thematisiert Ratschläge des Vaters an seinen Sohn in schwierigen Zeiten.",
+        "Ein Paradebeispiel für den Stadion-EDM-Sound der frühen 2010er.",
+        "Refrain: '[XXX] you [XXX], [XXX] you [XXX], [XXX]! See, heaven's got a plan for you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "There was a time, I used to look into my father's eyes",
+          "Don't you worry, don't you worry child",
+          "See heaven's got a plan for you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "1y6smkh6c-0"
+      },
+      "coverUrl": "/covers/disco-swedish-child.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "metal-soad-chopsuey",
+      "title": "Chop Suey!",
+      "artist": "System of a Down",
+      "year": 2001,
+      "country": "US/AM",
+      "genre": "Alternative Metal / Nu Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Crazy",
+        "Energy",
+        "Powerful"
+      ],
+      "hints": [
+        "Besticht durch die rasanten Wechsel zwischen Chaos und Melodik.",
+        "Thematisiert (vage) Suizid und gesellschaftlichen Wahnsinn.",
+        "Serj Tankians charismatischer Gesangsstil ist absolut einzigartig.",
+        "Wurde zu einer Hymne für eine ganze Generation.",
+        "Refrain: 'Wake up! (Wake up!) Grab a brush and put a little makeup!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Wake up (Wake up), grab a brush and put a little makeup",
+          "Why'd you leave the keys upon the table? Here you go create another fable",
+          "I don't think you trust, in my, self-righteous suicide"
+        ],
+        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Nacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CSvFpBOe8eY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-soad-chopsuey.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "sza-killbill-2023",
+      "title": "Kill Bill",
+      "artist": "SZA",
+      "year": 2022,
+      "country": "US",
+      "genre": "R&B / Soul",
+      "difficulty": "medium",
+      "mood": [
+        " moody",
+        "Dark",
+        "Honest",
+        "Modern",
+        "Modern Anthems",
+        "Moody",
+        "Popular"
+      ],
+      "hints": [
+        "Inbegriff für SZAs ehrlichen, fast schon provokanten Storytelling-Stil.",
+        "Spielt mit der Ästhetik des gleichnamigen Quentin-Tarantino-Films.",
+        "Besticht durch die unterkühlten Beats und die sanfte R&B-Vibe.",
+        "Thematisiert extreme Eifersucht nach einer Trennung.",
+        "Refrain: 'I might [XXX] my ex! Not the best idea!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I might kill my ex, not the best idea",
+          "His new girlfriend's next, how'd I get here?",
+          "I'd rather be in jail than alone"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AdEKgwUqPKI"
+      },
+      "coverUrl": "/covers/sza-killbill-2023.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "grand-finale"
+      ]
+    }
+  ]
+}

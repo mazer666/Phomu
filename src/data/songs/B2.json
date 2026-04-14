@@ -1,30 +1,126 @@
 {
   "songs": [
     {
-      "id": "yt-cy6Arnjp-hQ",
-      "title": "Treasure",
-      "artist": "Bruno Mars",
-      "year": 2012,
+      "id": "80s-baltimora-tarzan",
+      "title": "Tarzan Boy",
+      "artist": "Baltimora",
+      "year": 1985,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Bekannt für den markanten 'Dschungel-Schrei' im Refrain.",
+        "Inbegriff für den verspielten und fröhlichen Italo Disco der Mitte der 80er.",
+        "Wurde Jahrzehnte später durch Filme und Werbung erneut zum Hit.",
+        "Ein absoluter Ohrwurm.",
+        "Refrain: 'Woah-oh-oh-oh-oh-oh-oh-oh-oh-oh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Jungle life, I'm far away from nowhere",
+          "Woah-oh-oh-oh-oh-oh-oh-oh-oh-oh",
+          "Jungle life, I'm living in the city"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "--6CdAypJsQ",
+        "spotify": "6FwMGM0Dtmf0vz6BdIc8uP",
+        "amazonMusic": "B004B3DL1C"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-baltimora-tarzan.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "80s-bananarama-venus",
+      "title": "Venus",
+      "artist": "Bananarama",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Eine moderne Pop-Interpretation des Hits von Shocking Blue.",
+        "Die Sängerinnen präsentierten sich hiermit als coole, moderne Frauen-Gruppe.",
+        "Besticht durch den treibenden Euro-Dance-Beat.",
+        "Ein Inbegriff für den fröhlichen Sound der Mitte der 80er.",
+        "Refrain: 'She's got it! Yeah, baby, she's got it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "She's got it, yeah baby, she's got it",
+          "I'm your Venus, I'm your fire at your desire",
+          "Well, I'm your Venus, I'm your fire at your desire"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "d4-1ASpdT1Y",
+        "spotify": "4XX1pFUkQOZTYp6Hb6a6Ae",
+        "amazonMusic": "B076SX3DSR"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-bananarama-venus.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-y9gjVvz2EE4",
+      "title": "¿Desde Cuándo No Me Quieres?",
+      "artist": "Banda Carnaval",
+      "year": 2016,
       "country": "INT",
-      "genre": "Pop",
+      "genre": "Latin Pop",
       "difficulty": "medium",
       "mood": [
         "Popular",
-        "Modern Hits"
+        "Latin Heat"
       ],
       "hints": [
-        "Funk-inspirierter Pop-Hit mit Bläser-Stabs und Rhythmik-Fokus.",
-        "Samplet die Atmosphäre von 70er Funk-Soul-Musik modern interpretiert.",
-        "Thematisiert eine Partnerin als wertvollster 'Schatz' – romantisch ohne kitschig.",
-        "Besticht durch den eingängigen, unvergesslichen Haupt-Hook.",
-        "Musikvideo mit aufwendiger Choreografie und visueller Energie."
+        "Banda-Reggaeton Fusion: Traditionelle Banda meets Urban Rhythmus.",
+        "Melancholische Liebes-Narrative über Sehnsucht und Trauer.",
+        "Charakteristische Banda-Instrumentation mit modernem Beat.",
+        "Thematisiert Leid in Liebesbeziehungen – kulturelle Authentizität.",
+        "Produziert für Dance-Clubs und sentimentale Momente."
       ],
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=cy6Arnjp-hQ",
-        "spotify": "0hSaWzV3wlmgNUMSspN9Pv",
-        "amazonMusic": "B00AHWF7JU"
+        "youtube": "https://www.youtube.com/watch?v=y9gjVvz2EE4",
+        "spotify": "3bU7G5W29tzMJObwKpCvEn",
+        "amazonMusic": "B015QHFD4Y"
       },
       "supportedModes": [
         "timeline"
@@ -33,41 +129,251 @@
       "packs": [
         "YouTube Collection"
       ],
-      "coverUrl": "/covers/bruno-mars-treasure.jpg"
+      "coverUrl": "/covers/banda-carnaval--desde-cuándo-no-me-quieres-.jpg"
     },
     {
-      "id": "piano-bruno-man",
-      "title": "When I Was Your Man",
-      "artist": "Bruno Mars",
-      "year": 2012,
-      "country": "US",
-      "genre": "Pop / Piano Ballade",
-      "difficulty": "easy",
+      "id": "yt-9UqW25sCEDg",
+      "title": "Entonces Que Somos",
+      "artist": "Banda El Recodo De Cruz Lizärraga",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
       "mood": [
-        "Sad",
-        "Emotional",
-        "Honest"
+        "Popular",
+        "Latin Heat"
       ],
       "hints": [
-        "Inbegriff für Reue und das Eingeständnis eigener Fehler nach einer Trennung.",
-        "Besticht durch die Reduktion auf Stimme und Klavier.",
-        "Thematisiert all die Dinge, die man hätte tun sollen (Blumen kaufen, Hand halten).",
-        "Wurde zu einem der meistgestreamten Piano-Hits der 2010er.",
-        "Refrain: 'I should've bought you flowers! And held your hand!'"
+        "Banda Sinaloense: Traditionelle mexikanische Regional-Musik.",
+        "Orchestrale Bläser-Arrangements kombiniert mit elektronischen Beats.",
+        "Thematisiert Familie, Treue und emotionale Bindung.",
+        "Charakteristisch für mexikanische Popular Music – kulturelle Wurzeln.",
+        "Live-Instrumente über Digital-Produktion."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9UqW25sCEDg",
+        "spotify": "1uuSdSMqWzZdXXzDFbViSO",
+        "amazonMusic": "B00FWT75TS"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/banda-el-recodo-de-cruz-lizärraga-entonces-que-somos.jpg"
+    },
+    {
+      "id": "yt-NtoIB8KZANI",
+      "title": "Al Rescate",
+      "artist": "Banda Los Recoditos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Banda-Musik mit akkordion-zentriertem Sound.",
+        "Melancholische Erzählung über Liebe, Verlust und Sehnsucht.",
+        "Charakteristische Banda-Instrumentation mit moderner Produktion.",
+        "Emotionale Tiefe in traditioneller musikalischer Form.",
+        "Gefühlvolle Vocal-Techniken mit dramatischer Delivery."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NtoIB8KZANI",
+        "spotify": "6RYkjZLxo7xZSR9LNr57K9",
+        "amazonMusic": "B0192L0G1A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/banda-los-recoditos-al-rescate.jpg"
+    },
+    {
+      "id": "yt-ekb-DWRXB3U",
+      "title": "Me Está Gustando",
+      "artist": "Banda Los Recoditos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Banda-Musik mit schnellerem Rhythmus und tanzbarer Energie.",
+        "Thematisiert Verlangen und physische Anziehung direkt.",
+        "Instrumente: Trompeten, Tuba, Akkordion – klassische Banda-Besetzung.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Optimiert für Live-Auftritte und Dance-Floor-Momente."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ekb-DWRXB3U",
+        "spotify": "1PPswVdqYYvfBIk5MdB4Lo",
+        "amazonMusic": "B0192L0FYY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/banda-los-recoditos-me-está-gustando.jpg"
+    },
+    {
+      "id": "yt-0sXd26YTnNc",
+      "title": "Me Sobrabas Tü",
+      "artist": "Banda Los Recoditos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Banda-Musik mit energetischem Rhythmus und feierlichem Tempo.",
+        "Thematisiert Partys, Feste und Feierlichkeiten.",
+        "Blech-lastige Instrumentation mit unterlegtem elektronischen Beat.",
+        "Charakteristisch für mexikanische Fest- und Hochzeitskulturen.",
+        "Rhythmische Komplexität und Live-Energie."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0sXd26YTnNc",
+        "spotify": "2bhNKmse4k9amaD6dzM7YH",
+        "amazonMusic": "B0FTZS33ZB"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/banda-los-recoditos-me-sobrabas-tü.jpg"
+    },
+    {
+      "id": "yt-7fwgsEykpCw",
+      "title": "Pistearé",
+      "artist": "Banda Los Recoditos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Banda mit melancholischerem Ton und introspektivem Thema.",
+        "Traditionelle Banda-Bläser über modernem Produktions-Framework.",
+        "Thematisiert Reue, Vergebung und zweite Chancen in Liebe.",
+        "Gefühlvoller Gesang mit dramatischen dynamischen Schwankungen.",
+        "Ballade-Struktur statt Party-Energy."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7fwgsEykpCw",
+        "spotify": "0LCMFLgIISg4Mab1YL5shU",
+        "amazonMusic": "B0192LYF7O"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/banda-los-recoditos-pistearé.jpg"
+    },
+    {
+      "id": "yt-03j7wTQm7KQ",
+      "title": "Me Gusta Todo De Ti",
+      "artist": "Banda Sinaloense El Recodo De Cruz Lizarraga",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Banda-Pop-Hybrid: Regional Mexico meets Contemporary Pop Production.",
+        "Schnappige Melodien über traditioneller Banda-Instrumentation.",
+        "Thematisiert moderne Liebes-Szenarien mit kulturellem Twist.",
+        "Charakteristisch für neuere Banda-Generationen.",
+        "Optimiert für Radio und Youth-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=03j7wTQm7KQ",
+        "spotify": "0lQw1AoV5ZUAatpZN0Lrl5",
+        "amazonMusic": "B00CHX2G4G"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/banda-sinaloense-el-recodo-de-cruz-lizarraga-me-gusta-todo-de-ti.jpg"
+    },
+    {
+      "id": "soul-barry-enough",
+      "title": "Can't Get Enough of Your Love, Babe",
+      "artist": "Barry White",
+      "year": 1974,
+      "country": "US",
+      "genre": "Soul / Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Classic"
+      ],
+      "hints": [
+        "Besticht durch die tiefste, samtigste Bass-Stimme der Musikgeschichte.",
+        "Inbegriff für das 'Love Man' Image des Sängers mit der tiefen Stimme.",
+        "Thematisiert grenzenlose Sehnsucht und Leidenschaft.",
+        "Refrain: 'I've got so much of your [XXX] to give!'",
+        "Ein vielseitiger Track mit klassischen Elementen und moderner Relevanz."
       ],
       "lyrics": {
         "real": [
-          "Same bed but it feels just a little bit bigger now",
-          "Our song on the radio but it don't sound the same",
-          "I should've bought you flowers, and held your hand"
+          "I've heard people say that too much of anything is not good for you, baby",
+          "But I don't know about that",
+          "Can't get enough of your love, babe"
         ],
         "fake": "Dancing in the STARS, playing my guitars tonight tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "ekzHIouo8Q4",
-        "spotify": "0nJW01T7XtvILxQgC5J7Wh",
-        "amazonMusic": "B07VZTGYSR"
+        "youtube": "rTVjnBo8",
+        "spotify": "3mWpUEBYnv9SIFWfixSJFx",
+        "amazonMusic": "B001T6I1I2"
       },
       "supportedModes": [
         "timeline",
@@ -78,163 +384,46 @@
         "lyrics-labyrinth"
       ],
       "isQRCompatible": true,
-      "coverUrl": "/covers/piano-bruno-man.jpg",
+      "coverUrl": "/covers/soul-barry-enough.jpg",
       "packs": [
-        "Piano & Power Ballads"
+        "Soul & Funk Grooves"
       ]
     },
     {
-      "id": "yt-IYFqc9gk4qI",
-      "title": "Leave The Door Open",
-      "artist": "Bruno Mars & Anderson .Paak",
-      "year": 2021,
-      "country": "INT",
-      "genre": "R&B / Soul",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "60s/70s Legends"
-      ],
-      "hints": [
-        "R&B-Ballade mit Silky-Strings-Arrangement und Soul-Vocals.",
-        "Collaboration zweier Genre-Legenden mit klassischen Soul-Elementen.",
-        "Thematisiert die Hoffnung auf zweite Chancen und offene Türen in Liebe.",
-        "Produziert mit zeitlosem Soul-Sound der 60er/70er, aber moderne Qualität.",
-        "Der Refrain ist eine sanfte Bitte: Beziehung nicht komplett beenden, Möglichkeit offen halten."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=IYFqc9gk4qI",
-        "spotify": "4pryE6cN2gFL1FVF5fYINl",
-        "amazonMusic": "B09TDBSLQ7"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/bruno-mars---anderson--paak-leave-the-door-open.jpg"
-    },
-    {
-      "id": "yt-LCpjdohpuEE",
-      "title": "Permission to Dance",
-      "artist": "BTS",
-      "year": 2021,
-      "country": "KR",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "80s Flashback"
-      ],
-      "hints": [
-        "Feel-good Pop-Anthem mit optimistischer Botschaft und eingängigem Hook.",
-        "Thematisiert die Freiheit zu tanzen trotz oder ohne Musik – metaphorisch für Befreiung.",
-        "Leichte, zugängliche Produktion ohne aggressiven Sound – inklusiv gemacht.",
-        "Besticht durch die Sing-Along-Qualität und positive Energy.",
-        "Wurde zur globalen Hymne für Hoffnung und Zusammenhalt in schwierigen Zeiten."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=LCpjdohpuEE",
-        "spotify": "3XYRV7ZSHqIRDG87DKTtry",
-        "amazonMusic": "B09MZWK3JT"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/bts-permission-to-dance.jpg"
-    },
-    {
-      "id": "world-bvsc-chan-chan",
-      "title": "Chan Chan",
-      "artist": "Buena Vista Social Club",
-      "year": 1997,
-      "country": "CU",
-      "genre": "Son Cubano",
-      "difficulty": "medium",
-      "mood": [
-        "Chill",
-        "Classic",
-        "Melancholic"
-      ],
-      "hints": [
-        "Kubanisches Son-Lied mit nostalgischer, melancholischer Atmosphäre.",
-        "Akustische Gitarren mit traditioneller kubanischer Instrumentation und Arrangement.",
-        "Thematisiert Reisen, Begegnung und verlorene Liebe in romantischer Weise.",
-        "Charakteristisch für kubanische Musik-Tradition der 50er Jahre, modern neu aufgelegt.",
-        "Der Song wurde zum Symbol für die Wiederentdeckung der kubanischen Musikgeschichte global."
-      ],
-      "lyrics": {
-        "real": [
-          "De Alto Cedro voy para Marcané, llego a Cueto voy para Mayarí",
-          "El cariño que te tengo no te lo puedo negar",
-          "Se me sale la babita, yo no lo puedo evitar"
-        ],
-        "fake": "Bajo la luna de Cuba, cantamos con mucha fortuna"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "tGbRZ73NvlY",
-        "spotify": "3bxZhauuIU4ubctdRZwPYW",
-        "amazonMusic": "B0DZW26TRH"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/world-bvsc-chan-chan.jpg",
-      "packs": [
-        "World, Reggae & Soul"
-      ]
-    },
-    {
-      "id": "hiphop-busta-woohah",
-      "title": "Woo Hah!! Got You All in Check",
-      "artist": "Busta Rhymes",
-      "year": 1996,
-      "country": "US",
-      "genre": "Hip Hop",
-      "difficulty": "hard",
+      "id": "indie-bastille-pompeii",
+      "title": "Pompeii",
+      "artist": "Bastille",
+      "year": 2013,
+      "country": "GB",
+      "genre": "Indie Pop / Synth Pop",
+      "difficulty": "easy",
       "mood": [
         "Energy",
-        "Crazy",
-        "Fun"
+        "Epic",
+        "Singalong"
       ],
       "hints": [
-        "Energetischer Hip-Hop-Track mit schnellem Rhyme-Delivery und Funk-Sample.",
-        "Besticht durch die rhythmische Komplexität und die aggressive Vocal-Präsenz.",
-        "Thematisiert Dominanz, Kompetenz und Selbstbewusstsein im Club/Party-Setting.",
-        "Der Production-Style kombiniert Funk-Samples mit modernem 90er Hip-Hop-Sound.",
-        "Der Song etablierte einen neuen Standard für energetische, technisch anspruchsvolle Rap-Performance."
+        "Besticht durch den markanten Männer-Chor am Anfang ('Eh-eho, eh-eho').",
+        "Thematisiert den Untergang der altrömischen Stadt als Metapher für Stillstand.",
+        "Dan Smiths Gesang trägt den Song durch seine dynamischen Steigerungen.",
+        "Ein Welthit, der Indie-Elemente perfekt in den Pop integrierte.",
+        "Refrain: 'But if you close your eyes, does it almost feel like nothing changed at all?'"
       ],
       "lyrics": {
         "real": [
-          "Woo-hah!! Got you all in check!",
-          "Woo-hah!! Got you all in check!",
-          "Yeah, yeah, yeah, check it out, I'm the one who's gonna make you scream"
+          "I was left to my own devices, many days fell away with nothing to show",
+          "But if you close your eyes, does it almost feel like nothing changed at all?",
+          "And if you close your eyes, does it almost feel like you've been here before?"
         ],
-        "fake": "Moving to the left, moving to the right, in the neon light"
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
       },
+      "isOneHitWonder": false,
       "links": {
-        "youtube": "EQzvQO2LcA4",
-        "spotify": "09WxJCWFMWAxTHBLLelpDS",
-        "amazonMusic": "B00FYJHSRA"
+        "youtube": "F90Cw4l-8NY",
+        "spotify": "6fNhZRFEkBfgW39W3wKARJ",
+        "amazonMusic": "B00GZ90P2Y"
       },
-      "coverUrl": "/covers/hiphop-busta-woohah.jpg",
+      "coverUrl": "/covers/indie-bastille-pompeii.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",
@@ -244,10 +433,44 @@
         "lyrics-labyrinth"
       ],
       "isQRCompatible": true,
-      "isOneHitWonder": false,
       "packs": [
-        "Hip Hop Essentials"
+        "Indie & Alternative"
       ]
+    },
+    {
+      "id": "yt-Yy9h2q_dr9k",
+      "title": "Bela Lugosi's Dead (Official Version)",
+      "artist": "Bauhaus",
+      "year": 1979,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Goth-Rock Klassiker mit experimenteller Instrumentation.",
+        "Ethereale, dramatische Atmosphäre mit Horror-Vibes.",
+        "Samplet klassische Horror-Ästhetik und Dunkelheit.",
+        "Psychologische Intensität und Sound-Design.",
+        "Cult-Status: Einflussreich auf die Goth-Bewegung."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Yy9h2q_dr9k",
+        "spotify": "1wyVyr8OhYsC9l0WgPPbh8",
+        "amazonMusic": "B095XCWPCY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bauhaus-bela-lugosi-s-dead--official-version-.jpg"
     }
   ]
 }

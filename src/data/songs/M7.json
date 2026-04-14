@@ -1,0 +1,573 @@
+{
+  "songs": [
+    {
+      "id": "disney-up-life",
+      "title": "Married Life",
+      "artist": "Michael Giacchino",
+      "year": 2009,
+      "country": "US",
+      "genre": "Soundtrack / Instrumental / Waltz",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Nostalgic",
+        "Epic"
+      ],
+      "hints": [
+        "Obwohl weitestgehend instrumental, ist dieser Song die Seele des Zeichentrickfilms 'Oben' (Up).",
+        "Begleitet die unvergessliche Eröffnungssequenz der Lebensgeschichte von Carl und Ellie.",
+        "Besticht durch den sanften Walzer-Sound und die emotionale Achterbahnfahrt.",
+        "Ein Inbegriff für meisterhafte filmmusikalische Erzählkunst.",
+        "Genre-Inhalt: Nostalgischer Klavier- und Akkordeon-Sound."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - but everybody knows the feeling!)",
+          "(Emotional journey through life and love)",
+          "(The heart of UP)"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TLFo1WA2KF4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-up-life.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "score-up-married",
+      "title": "Up (Main Theme - Married Life)",
+      "artist": "Michael Giacchino",
+      "year": 2009,
+      "country": "US",
+      "genre": "Movie Score / Jazz influence",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Sad",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Whimsical piano waltz",
+          "Memory of a lifetime"
+        ],
+        "fake": "Floating with the balloons in the blue sky tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "S1uWHjhluTI",
+        "spotify": "2FcIkhwW4Uv6I0WtxD1yWd",
+        "amazonMusic": "B002GSP9G4"
+      },
+      "coverUrl": "/covers/score-up-married.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "80s-mj-billiejean",
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "year": 1982,
+      "country": "US",
+      "genre": "Pop / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "80s Flashback",
+        "Classic",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Groovy",
+        "Legends & Classics",
+        "Popular"
+      ],
+      "hints": [
+        "In diesem Musikvideo leuchten die Bodenplatten unter den Füßen des Sängers auf.",
+        "Der Song handelt von einer Frau, die behauptet, der Sänger sei der Vater ihres Sohnes.",
+        "Bei der Aufführung dieses Songs bei 'Motown 25' zeigte der Sänger zum ersten Mal seinen ikonischen Walk.",
+        "Das markante Schlagzeug-Intro wurde wochenlang abgemischt, bis es perfekt klang.",
+        "Einer der erfolgreichsten Solo-Songs des 'King of Pop'."
+      ],
+      "lyrics": {
+        "real": [
+          "She was more like a beauty queen from a movie scene",
+          "Billie Jean is not my lover, she's just a girl who claims that I am the one",
+          "But the kid is not my son"
+        ],
+        "fake": [
+          "She was a tramp and a hooker from the wild and bright city light",
+          "So she grew up with a beaty queen like she got herself clean",
+          "Be a friend to the kid, so he remains a friend"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Kr4EQDVETuA",
+        "spotify": "5ChkMS8OtdzJeqyybCc9R5",
+        "amazonMusic": "B00BXH882G"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-mj-billiejean.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "youtube-import",
+        "80s Flashback",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "soul-mj-dontstop",
+      "title": "Don't Stop 'Til You Get Enough",
+      "artist": "Michael Jackson",
+      "year": 1979,
+      "country": "US",
+      "genre": "Disco / Funk-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Disco -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "You know, I was wondering, can we keep on, because the force, it's got a lot of power",
+          "Don't stop 'til you get enough",
+          "Keep on with the force don't stop"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "yURRmWtbTbo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-mj-dontstop.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "mj-thriller-1982",
+      "title": "Thriller",
+      "artist": "Michael Jackson",
+      "year": 1982,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Epic",
+        "Neon Night",
+        "Party",
+        "Party Anthem",
+        "Spooky"
+      ],
+      "hints": [
+        "Das 14-minütige Musikvideo wurde von Horror-Regisseur John Landis inszeniert und kostete damals 500.000 Dollar.",
+        "Horror-Schauspieler Vincent Price sprach den berühmten Rap-Teil am Ende des Songs ein.",
+        "Das gleichnamige Album ist mit über 70 Millionen verkauften Exemplaren das meistverkaufte Album aller Zeiten.",
+        "Synthie-Streicher, knallende Snare und Schritte in der Dunkelheit – der Aufbau erzeugt echte Gänsehaut.",
+        "[XXX] [XXX] tanzt mit Untoten in einem der berühmtesten Musikvideos aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "It's close to midnight and something evil's lurking in the dark",
+          "You start to freeze as horror looks you right between the eyes",
+          "You're fighting for your life inside a killer, thriller tonight"
+        ],
+        "fake": "The shadow of the night is chasing every step you take"
+      },
+      "isOneHitWonder": false,
+      "previewTimestamp": {
+        "start": 40,
+        "end": 100
+      },
+      "links": {
+        "youtube": "sOnqjkJTMaA",
+        "spotify": "3S2R0EVwBSAVMd5UMgKTL0",
+        "amazonMusic": "B00BXH882G"
+      },
+      "coverUrl": "/covers/mj-thriller-1982.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt-hcm55lU9knw",
+      "title": "Ai Se Eu Te Pego - Video Oficial (Assim vocë me mata)",
+      "artist": "Michel Teló",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hcm55lU9knw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/michel-teló-ai-se-eu-te-pego---video-oficial--assim-vocë-me-mata-.jpg"
+    },
+    {
+      "id": "yt-9t5OWixuUI8",
+      "title": "Beds Are Burning (Remastered)",
+      "artist": "Midnight Oil",
+      "year": 1987,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9t5OWixuUI8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/midnight-oil-beds-are-burning--remastered-.jpg"
+    },
+    {
+      "id": "yt-esKJ8BbauGk",
+      "title": "Sure Thing",
+      "artist": "Miguel",
+      "year": 2010,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=esKJ8BbauGk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/miguel-sure-thing.jpg"
+    },
+    {
+      "id": "yt-w8fTEnJmhJI",
+      "title": "Culpable Remix [Feat Anuel AA, Noriel, Darkiel, Bryant Myers, Kevin Roldan]",
+      "artist": "Mike Duran",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=w8fTEnJmhJI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/mike-duran-culpable-remix--feat-anuel-aa--noriel--darkiel--bryant-myers--kevin-roldan-.jpg"
+    },
+    {
+      "id": "yt-_-fr5i2dtME",
+      "title": "Moonlight Shadow (Original Mix)",
+      "artist": "Mike Oldfield",
+      "year": 1983,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1980er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_-fr5i2dtME"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/mike-oldfield-moonlight-shadow--original-mix-.jpg"
+    },
+    {
+      "id": "jazz-miles-davis-so-what",
+      "title": "So What",
+      "artist": "Miles Davis",
+      "year": 1959,
+      "country": "US",
+      "genre": "Modal Jazz",
+      "difficulty": "hard",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Cool",
+        "Intelligent"
+      ],
+      "hints": [
+        "Eröffnungstrack des meistverkauften Jazzalbums aller Zeiten, 'Kind of Blue'.",
+        "Ein Meilenstein des modalen Jazz, der völlig neue Ausdrucksmöglichkeiten schuf.",
+        "Besticht durch den entspannten Basslauf zu Beginn und die kühle Trompete von [XXX].",
+        "Völlig ohne Text (Instrumental), lebt aber von der Improvisationskunst.",
+        "Der 'So [XXX]'-Ruf des Pianos am Anfang ist ein Klassiker der Jazzgeschichte."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental piece with iconic bass and trumpet lines)"
+        ],
+        "fake": "Walking in the stars with a melody from Mars"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ylXk1LBvIqU"
+      },
+      "coverUrl": "/covers/jazz-miles-davis-so-what.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "miley-cyrus-flowers-2023",
+      "title": "Flowers",
+      "artist": "Miley Cyrus",
+      "year": 2023,
+      "country": "US",
+      "genre": "Pop / Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Confident",
+        "Modern",
+        "Modern Hits",
+        "Popular",
+        "Positive",
+        "Powerful",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Wurde am Geburtstag ihres Ex-Mannes Liam Hemsworth veröffentlicht.",
+        "Handelt von Selbstliebe und der Erkenntnis, dass man niemanden braucht, um glücklich zu sein.",
+        "Basiert musikalisch auf einer interpolierten Antwort auf Bruno Mars' 'When I Was Your Man'.",
+        "Ein massiver Welthit, der Wochen an der Spitze der Charts stand.",
+        "Refrain: 'I can buy myself [XXX], write my name in the sand!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can buy myself flowers, write my name in the sand",
+          "Talk to myself for hours, say things you don't understand",
+          "I can take myself dancing, and I can hold my own hand"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BkSSOGNeWTM",
+        "spotify": "7DSAEUvxU8FajXtRloy8M0",
+        "amazonMusic": "B0BS2SQ5BW"
+      },
+      "coverUrl": "/covers/miley-cyrus-flowers-2023.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "grand-finale"
+      ]
+    },
+    {
+      "id": "metal-ministry-jesus",
+      "title": "Jesus Built My Hotrod",
+      "artist": "Ministry",
+      "year": 1991,
+      "country": "US",
+      "genre": "Industrial Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Crazy",
+        "Energy",
+        "Fast"
+      ],
+      "hints": [
+        "Kombiniert rasanten Metal mit Industrial-Chaos und dem Irrsinn von Gibby Haynes (Butthole Surfers).",
+        "Thematisiert Autos, Rebellion und pure Absurdität.",
+        "Ein Inbegriff für den extremen Sound der frühen 90er Industrial-Szene.",
+        "Besitzt einen extrem einprägsamen, beinahe dadaistischen Gesangsteil.",
+        "Refrain: 'Ding-a-ding-dang-my-dang-along-ling-long!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Soon I discovered that this rock thing was true, Jerry Lee Lewis was the devil",
+          "Jesus built my hotrod, it's a love affair, mainly Jesus and my hotrod",
+          "Ding-a-ding-dang-my-dang-along-ling-long"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GXCh9OhDiCI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-ministry-jesus.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    }
+  ]
+}

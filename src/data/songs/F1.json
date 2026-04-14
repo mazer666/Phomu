@@ -1,0 +1,500 @@
+{
+  "songs": [
+    {
+      "id": "yt-GhciBgYbA74",
+      "title": "Tito Nieves",
+      "artist": "Fabricando Fantasías",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GhciBgYbA74"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/fabricando-fantasías-tito-nieves.jpg"
+    },
+    {
+      "id": "country-faith-breathe",
+      "title": "Breathe",
+      "artist": "Faith Hill",
+      "year": 1999,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Emotional"
+      ],
+      "hints": [
+        "Ein massiver Crossover-Erfolg, der wochenlang die Pop-Charts dominierte.",
+        "[XXX] [XXX]s sanfte, aber kraftvolle Stimme steht im Zentrum dieser Ballade.",
+        "Thematisiert die Magie eines intimen Moments mit dem geliebten Menschen.",
+        "Besticht durch das elegante Arrangement und die romantische Stimmung.",
+        "Refrain: 'I can feel you [XXX]! It's washing over me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can feel you breathe, it's washing over me",
+          "Suddenly I'm melting into you",
+          "There's nothing left to prove"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "yCmsZUN4r_s"
+      },
+      "coverUrl": "/covers/country-faith-breathe.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "disco-faithless-insomnia",
+      "title": "Insomnia",
+      "artist": "Faithless",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Progressive House / Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Dark",
+        "Energy",
+        "Epic",
+        "Mysterious",
+        "Night",
+        "Nightlife"
+      ],
+      "hints": [
+        "In diesem Song geht es um die Qualen der Schlaflosigkeit.",
+        "Der 'Mond-Drop' (das Einsetzen der Synthesizer-Melodie nach der langen Steigerung) ist legendär.",
+        "Sänger Maxi Jazz (R.I.P.) lieferte die markanten Spoken-Word-Strophen.",
+        "Einer der einflussreichsten Dance-Tracks aller Zeiten.",
+        "Refrain: 'I can't get no sleep!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Deep in the bosom of the gentle night",
+          "I can't get no sleep",
+          "I need to sleep, I can't get no sleep"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "P8JEm4d6Wu4"
+      },
+      "coverUrl": "/covers/disco-faithless-insomnia.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-YHjAVcif8I8",
+      "title": "Revelations",
+      "artist": "Faithless",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 1990er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YHjAVcif8I8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/faithless-revelations.jpg"
+    },
+    {
+      "id": "yt-kHuw4sAZFZA",
+      "title": "Voodoo",
+      "artist": "Faithless",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 1990er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kHuw4sAZFZA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/faithless-voodoo.jpg"
+    },
+    {
+      "id": "yt-svvGcuMA_MI",
+      "title": "Yeah The Girls",
+      "artist": "Faithless",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 1990er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=svvGcuMA_MI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/faithless-yeah-the-girls.jpg"
+    },
+    {
+      "id": "80s-falco-kommissar",
+      "title": "Der Kommissar",
+      "artist": "Falco",
+      "year": 1981,
+      "country": "AT",
+      "genre": "Pop / Rap / Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Energy",
+        "German New Wave",
+        "Popular"
+      ],
+      "hints": [
+        "Einer der ersten globalen Erfolge, die Rap-Elemente mit weißem Pop kombinierten.",
+        "Besitzt einen extrem einprägsamen Synthesizer-Basslauf.",
+        "Thematisiert das Nachtleben und die drohende Polizeikontrolle.",
+        "Zementierte [XXX]s Ruf als 'erster weißer Rapper'.",
+        "Refrain: 'Drah' di net um, oh, oh, oh! Schau, schau, der [XXX] geht um!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Zwei, drei, vier, eins, zwei, drei, na es ist nichts dabei",
+          "Drah' di net um, oh, oh, oh, schau schau, der Kommissar geht um",
+          "Wenn er dich anspricht, und du weißt warum"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eKaGZdY2WTU",
+        "spotify": "3TBRJsLCcwroEkA3tD4u2N",
+        "amazonMusic": "B01N4N147T"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-falco-kommissar.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "synth-falco-amadeus",
+      "title": "Rock Me Amadeus",
+      "artist": "Falco",
+      "year": 1985,
+      "country": "AT",
+      "genre": "Synth-Rap / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Epic",
+        "German New Wave",
+        "Popular"
+      ],
+      "hints": [
+        "Der einzige deutschsprachige Song, der jemals Platz 1 der US-Billboard-Charts erreichte.",
+        "Eine moderne Hommage an das Wunderkind Wolfgang [XXX] Mozart.",
+        "Der Sänger [XXX] war ein Pionier des weißen Raps in Europa.",
+        "Das Video zeigt [XXX] in Rokoko-Kleidung kombiniert mit 80er-Styling.",
+        "Refrain: '[XXX], [XXX], [XXX], [XXX], [XXX], oh oh oh [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Er war ein Genie und wir alle liebten ihn",
+          "Er hatte Schulden, denn er trank, doch er war ein Superstar",
+          "Rock me Amadeus"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "cVikZ8Oe_XA"
+      },
+      "coverUrl": "/covers/synth-falco-amadeus.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "German Classics",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-E-kkX2UuBcg",
+      "title": "Besas Tan Bien",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=E-kkX2UuBcg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/farruko-besas-tan-bien.jpg"
+    },
+    {
+      "id": "yt-VceA2FfMkFk",
+      "title": "Cositas Que Haciamos [Official Music Video]",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VceA2FfMkFk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/farruko-cositas-que-haciamos--official-music-video-.jpg"
+    },
+    {
+      "id": "yt-Gco5eX2D89Q",
+      "title": "Hola Beba",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gco5eX2D89Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/farruko-hola-beba.jpg"
+    },
+    {
+      "id": "yt--M_V4cNzY2U",
+      "title": "Liberace (feat. Anuel AA) [Trap Ficante]",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-M_V4cNzY2U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/farruko-liberace--feat--anuel-aa---trap-ficante-.jpg"
+    },
+    {
+      "id": "yt-lkN51aqPOzU",
+      "title": "Obsesionado",
+      "artist": "Farruko",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lkN51aqPOzU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/farruko-obsesionado.jpg"
+    }
+  ]
+}

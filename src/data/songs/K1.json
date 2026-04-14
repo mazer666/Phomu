@@ -1,0 +1,533 @@
+{
+  "songs": [
+    {
+      "id": "country-kacey-arrow",
+      "title": "Follow Your Arrow",
+      "artist": "Kacey Musgraves",
+      "year": 2013,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
+      "hints": [
+        "Besticht durch seine liberale, für Country-Verhältnisse progressive Botschaft.",
+        "Thematisiert Akzeptanz, Individualität und das Gehen des eigenen Weges.",
+        "[XXX] [XXX]' entspannter Gesang und der Akustik-Groove sind das Markenzeichen.",
+        "Ein Inbegriff für den modernen, weltoffenen Country-Stil.",
+        "Refrain: '[XXX] your [XXX] wherever it points!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You're damned if you do and you're damned if you don't",
+          "So just do what you want, follow your arrow wherever it points",
+          "And if you want to make out with a girl, that's okay too"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Lnsuek0FLqM"
+      },
+      "coverUrl": "/covers/country-kacey-arrow.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-iB3O1zZ4JVU",
+      "title": "Mo Money Mo Problems",
+      "artist": "Kamaiyah",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iB3O1zZ4JVU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kamaiyah-mo-money-mo-problems.jpg"
+    },
+    {
+      "id": "yt-QeYK59vx_oE",
+      "title": "Alguien (Short Form Version)",
+      "artist": "Kany García",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QeYK59vx_oE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kany-garcía-alguien--short-form-version-.jpg"
+    },
+    {
+      "id": "yt-8bAfqhjQTb4",
+      "title": "Hoy Ya Me Voy (Video)",
+      "artist": "Kany García",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8bAfqhjQTb4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kany-garcía-hoy-ya-me-voy--video-.jpg"
+    },
+    {
+      "id": "hiphop-kanye-stronger",
+      "title": "Stronger",
+      "artist": "Kanye West",
+      "year": 2007,
+      "country": "US",
+      "genre": "Hip Hop / Electronic",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Electronic"
+      ],
+      "hints": [
+        "Samplet 'Harder, Better, Faster, [XXX]' von Daft Punk.",
+        "Verbindet Hip Hop mit futuristischen, elektronischen Klängen.",
+        "Basiert auf Nietzsches Zitat 'Was mich nicht umbringt, macht mich stärker'.",
+        "Das Video wurde unter anderem in Tokio gedreht.",
+        "Refrain: 'That that don't kill me can only make me [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "N-n-now th-th-that don't kill me can only make me stronger",
+          "I need you to hurry up now, 'cause I can't wait much longer",
+          "I know I got to be right now, 'cause I can't get much wronger"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ts3OiGYxUsQ"
+      },
+      "coverUrl": "/covers/hiphop-kanye-stronger.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "world-kaoma-lambada",
+      "title": "Lambada",
+      "artist": "Kaoma",
+      "year": 1989,
+      "country": "FR",
+      "genre": "Zouk / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Dance",
+        "Summer"
+      ],
+      "hints": [
+        "Verlöste den weltweiten [XXX]-Tanzboom der späten 80er Jahre aus.",
+        "Der Song basiert auf einem bolivianischen Volkslied (Llorando se fue).",
+        "Wurde von einer französischen Gruppe mit brasilianischen Sängern aufgenommen.",
+        "Besticht durch das markante Panflöten-Intro und den Sommer-Vibe.",
+        "Refrain: 'Chorando se foi quem um dia só me fez chorar!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Chorando se foi quem um dia só me fez chorar",
+          "Chorando estará ao lembrar de um amor que um dia não soube cuidar",
+          "A recordação vai estar com ele aonde for"
+        ],
+        "fake": "Bajo la luna de plata, bailamos con mucha fortuna"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iyLdoQGBchQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-kaoma-lambada.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "class-jenkins-palladio",
+      "title": "Palladio (Diamond Music)",
+      "artist": "Karl Jenkins",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Contemporary Classical / Neo-Baroque",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Rhythmic",
+        "Elegant"
+      ],
+      "hints": [
+        "Song mit charakteristischen Contemporary Classical -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Neo-Baroque)",
+          "Pulsing staccato strings",
+          "Shiny like diamonds"
+        ],
+        "fake": "Forever in the light of the broken star tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "8-X_J36zxeg",
+        "spotify": "3fF6yZByL2vG5V7m4uXoU5",
+        "amazonMusic": "B07MNMHJ6D"
+      },
+      "coverUrl": "/covers/class-jenkins-palladio.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-K92U_9gKfas",
+      "title": "Atmosphere",
+      "artist": "Kaskade",
+      "year": 2008,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2000er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=K92U_9gKfas"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kaskade-atmosphere.jpg"
+    },
+    {
+      "id": "yt-_256xd9N27o",
+      "title": "And Dream of Sheep (Live) - Official Video",
+      "artist": "Kate Bush",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_256xd9N27o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kate-bush-and-dream-of-sheep--live----official-video.jpg"
+    },
+    {
+      "id": "yt-D1Fw6CbGAX4",
+      "title": "Running Up That Hill (A Deal With God)",
+      "artist": "Kate Bush",
+      "year": 1985,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "German New Wave",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Erlebte 2022 durch die Serie 'Stranger Things' ein beispielloses globales Comeback.",
+        "Thematisiert den Wunsch, die Rollen mit dem Partner zu tauschen, um sich besser zu verstehen.",
+        "Besticht durch den hypnotischen Drum-Beat und [XXX] [XXX]s leidenschaftlichen Gesang.",
+        "Ein Inbegriff für den intelligenten Pop der 80er.",
+        "Refrain: 'And if I only could! I'd make a [XXX] with God!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It doesn't hurt me, do you want to feel how it feels?",
+          "Do you want to know that it doesn't hurt me?",
+          "And if I only could, I'd make a deal with God"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D1Fw6CbGAX4"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-katebush-running.jpg"
+    },
+    {
+      "id": "schlager-katja-ebstein-wunder",
+      "title": "Wunder gibt es immer wieder",
+      "artist": "Katja Ebstein",
+      "year": 1970,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Inspiring",
+        "Classic"
+      ],
+      "hints": [
+        "Belegte den dritten Platz beim Eurovision Song Contest 1970.",
+        "Der Song ist eine zeitlose Hymne auf die Hoffnung und den Optimismus.",
+        "[XXX] [XXX] gilt als eine der profiliertesten deutschen Künstlerinnen ihrer Zeit.",
+        "Besitzt ein sehr markantes, modulationsreiches Arrangement.",
+        "Refrain: '[XXX] [XXX] es [XXX] [XXX], heute oder morgen können sie geschehen!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Wunder gibt es immer wieder, heute oder morgen können sie geschehen",
+          "Wunder gibt es immer wieder, wenn sie dir begegnen, musst du sie auch sehen",
+          "Frag' nicht nach dem Sonnenschein, wenn es einmal regnet"
+        ],
+        "fake": "In den Gassen der Nacht, da wird die Hoffnung wieder wach"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Ny7yzW1Ejno"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-katja-ebstein-wunder.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-QGJuMBdaqIw",
+      "title": "Firework",
+      "artist": "Katy Perry",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Inspirational",
+        "Legends & Classics",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Eine Hymne auf Selbstwertgefühl und die eigene Einzigartigkeit.",
+        "[XXX] [XXX]s erfolgreichster Song, der oft bei großen Events gespielt wird.",
+        "Der Refrain baut eine gewaltige Energie auf, die zur Explosion passt.",
+        "Wurde zu einem festen Bestandteil von Silvester-Playlists weltweit.",
+        "Refrain: 'Cause baby, you're a [XXX]! Come on, show 'em what you're worth!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Do you ever feel like a plastic bag, drifting through the wind, wanting to start again?",
+          "You just gotta ignite the light, and let it shine",
+          "Cause baby, you're a firework, come on, show 'em what you're worth"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm floating in the sky somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QGJuMBdaqIw"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/dance-katy-perry-firework.jpg"
+    },
+    {
+      "id": "yt-wvYit4jmj6U",
+      "title": "When I'm Gone",
+      "artist": "Katy Perry & Alesso",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wvYit4jmj6U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/katy-perry---alesso-when-i-m-gone.jpg"
+    }
+  ]
+}

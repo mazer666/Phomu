@@ -1,0 +1,576 @@
+{
+  "songs": [
+    {
+      "id": "80s-kenny-loggins-footloose",
+      "title": "Footloose",
+      "artist": "Kenny Loggins",
+      "year": 1984,
+      "country": "US",
+      "genre": "Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Energy",
+        "Happy",
+        "Upbeat"
+      ],
+      "hints": [
+        "Titelsong des gleichnamigen Films mit Kevin Bacon.",
+        "Handelt von einer Stadt, in der das Tanzen verboten ist.",
+        "Der Sänger ist auch als 'King of the Movie Soundtrack' bekannt.",
+        "Fordert dazu auf, die Schuhe auszuziehen und loszutanzen ('Kick off your Sunday shoes').",
+        "Ein absoluter Tanzklassiker der 80er Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "I've been working so hard, I'm punching my card",
+          "Loose, footloose, kick off your Sunday shoes",
+          "Please, Louise, pull me off of my knees"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ltrMfT4Qz5Y",
+        "spotify": "6W2VbtvMrDXm5vYeB7amkO",
+        "amazonMusic": "B003YNUSCK"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-kenny-loggins-footloose.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "country-kenny-rogers-gambler",
+      "title": "The Gambler",
+      "artist": "Kenny Rogers",
+      "year": 1978,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Serious",
+        "Storytelling"
+      ],
+      "hints": [
+        "Erzählt die Geschichte einer Begegnung mit einem alten Spieler in einem Zug.",
+        "Der Text enthält lebensweise Ratschläge, die auf das Leben und das Pokerspiel übertragen werden können.",
+        "War ein riesiger Crossover-Hit in den Country- und Pop-Charts.",
+        "Markierte den endgültigen Durchbruch für [XXX] [XXX].",
+        "Refrain: 'You got to know when to hold 'em, know when to fold 'em!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You got to know when to hold 'em, know when to fold 'em",
+          "Know when to walk away, and know when to run",
+          "You never count your money when you're sittin' at the table"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "7hx4gdlfamo",
+        "spotify": "5KqldkCunQ2rWxruMEtGh0",
+        "amazonMusic": "B07PQ9DWCH"
+      },
+      "coverUrl": "/covers/country-kenny-rogers-gambler.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "yt-RCaoGyIXI6Y",
+      "title": "Strangers",
+      "artist": "Kenya Grace",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Dreamy",
+        "Electronic",
+        "Modern Anthems",
+        "Moody",
+        "Popular"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": {
+        "real": [
+          "And I'm staring at the ceiling, thinking 'bout the way you feel",
+          "We'll just be strangers again",
+          "In the morning when we wake up"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RCaoGyIXI6Y"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-kenya-strangers.jpg"
+    },
+    {
+      "id": "yt-KVH5hMrRbIo",
+      "title": "Obsesión (Audio officiel)",
+      "artist": "Kenza Farah et Lucenzo",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Essentials"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KVH5hMrRbIo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kenza-farah-et-lucenzo-obsesión--audio-officiel-.jpg"
+    },
+    {
+      "id": "yt-74RELSR7Q34",
+      "title": "Nunca Imagine Ft. J Quiles",
+      "artist": "KEVIN ROLDAN",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=74RELSR7Q34"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kevin-roldan-nunca-imagine-ft--j-quiles.jpg"
+    },
+    {
+      "id": "metal-killswitch-curse",
+      "title": "My Curse",
+      "artist": "Killswitch Engage",
+      "year": 2006,
+      "country": "US",
+      "genre": "Metalcore",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Romantic"
+      ],
+      "hints": [
+        "Paradebeispiel für Metalcore mit emotionaler Tiefe.",
+        "Kombiniert brutale Verse mit einem extrem melodischen Refrain.",
+        "Thematisiert Sehnsucht nach einer verlorenen Liebe.",
+        "Howard Jones' kraftvoller Bariton macht diesen Song unvergesslich.",
+        "Refrain: 'There is love! There is love! Watching you from the shadows!'"
+      ],
+      "lyrics": {
+        "real": [
+          "This is my curse, the longing in my heart",
+          "Watching you from the shadows, praying for the light",
+          "I will wait for you forever, no matter what they say"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SLyKWxC4MRg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-killswitch-curse.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-aoov4k6_1-Y",
+      "title": "I See a Victory (Lyric)",
+      "artist": "Kim Burrell, Pharrell Williams",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aoov4k6_1-Y"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/kim-burrell--pharrell-williams-i-see-a-victory--lyric-.jpg"
+    },
+    {
+      "id": "yt-qAqXDZoa624",
+      "title": "Bette Davis Eyes",
+      "artist": "Kim Carnes",
+      "year": 1981,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Classic",
+        "Cool",
+        "Moody",
+        "Popular"
+      ],
+      "hints": [
+        "Bekannt für die extrem raue, heisere Stimme der Sängerin.",
+        "Der Song wurde ursprünglich schon 1974 als Country-Song geschrieben.",
+        "Die namensgebende Dame selbst bedankte sich bei der Sängerin, weil sie sie 'modern' gemacht habe.",
+        "Der Synthesizer-Sound wurde durch das Klatschen auf ein Klaviergehäuse ergänzt.",
+        "Sie wird dich verzaubern mit ihren '[XXX] [XXX] [XXX]'."
+      ],
+      "lyrics": {
+        "real": [
+          "Her hair is Harlow gold, her lips surprise",
+          "Her hands are never cold, she's got Bette Davis eyes",
+          "She'll tease you, she'll unease you, all the better just to please you"
+        ],
+        "fake": [
+          "Her eyes are pure water, her smile is pure delight",
+          "Her feet are velvet, her skin is silk",
+          "She might please you, she might ease you"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qAqXDZoa624",
+        "spotify": "0odIT9B9BvOCnXfS0e4lB5",
+        "amazonMusic": "B000VLX5R6"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/80s-kim-carnes-bette-davis-eyes.jpg"
+    },
+    {
+      "id": "yt-tkd1tFuqkVY",
+      "title": "Crying On The Dancefloor",
+      "artist": "Kim Petras",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit energetischer-Rhythmus.",
+        "Thematisiert Tanzen und Bewegung durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tkd1tFuqkVY"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "synth-kim-kids",
+      "title": "Kids in America",
+      "artist": "Kim Wilde",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Happy",
+        "Urban",
+        "Young"
+      ],
+      "hints": [
+        "Kim [XXX]s Debütsingle, die sie über Nacht zum Pop-Star machte.",
+        "Thematisiert das Lebensgefühl und die Energie der Jugendkultur.",
+        "Besticht durch den frischen, elektronischen Sound der frühen 80er.",
+        "Ein zeitloser Klassiker, der bis heute in Clubs gespielt wird.",
+        "Refrain: 'Woah-oh! We're the [XXX] in [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Looking out a dirty window, story of a lonely guy",
+          "I see the brightest lights from a messy room",
+          "We're the kids in America (Whoa-oh)"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "80TfG7C9azA",
+        "spotify": "3LaHsdzzmvhx6TJedpomVy",
+        "amazonMusic": "B0D9P5146H"
+      },
+      "coverUrl": "/covers/synth-kim-kids.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-kol-sex-on-fire",
+      "title": "Sex on Fire",
+      "artist": "Kings of Leon",
+      "year": 2008,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Powerful"
+      ],
+      "hints": [
+        "Machte die Followill-Brüder zu weltweiten Stadion-Rockstars.",
+        "Der Titel war ursprünglich gar nicht so geplant und entstand eher durch Zufall im Studio.",
+        "Besticht durch den rauen Gesang von Caleb Followill.",
+        "Ein absoluter Klassiker in jeder Indie-Disco.",
+        "Refrain: 'You, your sex is on [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lay where you're laying, don't make a sound, I know they're watching, they're watching",
+          "All the commotion, the kiddie-like pride, it has you taking the light",
+          "You, your sex is on fire!"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken beat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "RF0HhrwIwp0"
+      },
+      "coverUrl": "/covers/indie-kol-sex-on-fire.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "indie-kings-of-leon-somebody",
+      "title": "Use Somebody",
+      "artist": "Kings of Leon",
+      "year": 2008,
+      "country": "US",
+      "genre": "Indie Rock / Arena Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Classic"
+      ],
+      "hints": [
+        "Die Band besteht aus drei Brüdern und einem Cousin.",
+        "Caleb Followills raue Stimme trägt die Sehnsucht des Songs perfekt.",
+        "Wurde zu einem globalen Radio-Dauerbrenner und gewann mehrere Grammys.",
+        "Ein Inbegriff für emotionalen Indie-Rock mit Stadion-Faktor.",
+        "Refrain: 'I've been roaming around, always looking down at all I see!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've been roaming around, always looking down at all I see",
+          "Painted faces fill the places I can't reach",
+          "You know that I could use somebody, someone like you and all you know and how you speak"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gnhXHvRoUd0"
+      },
+      "coverUrl": "/covers/indie-kings-of-leon-somebody.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "rock-kiss-rock-nite",
+      "title": "Rock and Roll All Nite",
+      "artist": "KISS",
+      "year": 1975,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Party",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Die ultimative Party-Hymne der [XXX]-Welt.",
+        "Mitglieder der Band traten stets in extremer Schminke und Kostümen auf.",
+        "Wurde zu einer Hymne des Hedonismus und der guten Laune.",
+        "Ein unverzichtbarer Song für jedes [XXX]-Konzert.",
+        "Refrain: 'I wanna [XXX] and [XXX] all [XXX], and party every day!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You say you wanna stand by my side, darlin', your love's something I can't hide",
+          "You drive me wild, we'll drive me crazy",
+          "I wanna rock and roll all nite, and party every day"
+        ],
+        "fake": "Nothing's gonna stop us now, we're playing in the clouds somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "K9paKQ9VdRA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-kiss-rock-nite.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    }
+  ]
+}

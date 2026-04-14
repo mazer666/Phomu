@@ -1,0 +1,547 @@
+{
+  "songs": [
+    {
+      "id": "soul-fourtops-reachout",
+      "title": "Reach Out I'll Be There",
+      "artist": "Four Tops",
+      "year": 1966,
+      "country": "US",
+      "genre": "Soul / Motown",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Urgent",
+        "Epic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soul -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Now if you feel that you can't go on, because all of your hope is gone",
+          "And your life is filled with much confusion, and happiness is just an illusion",
+          "Reach out, reach out for me"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AUZ3INx3-KA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-fourtops-reachout.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-fB_lCp_H9Gs",
+      "title": "No Basta (1992 Live Version)",
+      "artist": "Franco de Vita",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fB_lCp_H9Gs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/franco-de-vita-no-basta--1992-live-version-.jpg"
+    },
+    {
+      "id": "yt-HfOsu6Lvi6A",
+      "title": "Tan Só lo Tü (Live) ft. Alejandra Guzmán",
+      "artist": "Franco De Vita",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HfOsu6Lvi6A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/franco-de-vita-tan-só-lo-tü--live--ft--alejandra-guzmán.jpg"
+    },
+    {
+      "id": "jazz-sinatra-flyme",
+      "title": "Fly Me to the Moon",
+      "artist": "Frank Sinatra",
+      "year": 1964,
+      "country": "US",
+      "genre": "Vocal Jazz / Swing",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für [XXX]s coolen Swing-Stil der Mitte der 60er.",
+        "Wurde oft mit den Apollo-Mondmissionen assoziiert.",
+        "Thematisiert die Ekstase und Leichtigkeit der Liebe.",
+        "Arrangiert von Quincy Jones mit [XXX]s unvergleichlicher Lässigkeit.",
+        "Refrain: 'Fly me to the [XXX]! Let me play among the stars!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Fly me to the moon, let me play among the stars",
+          "Let me see what spring is like on Jupiter and Mars",
+          "In other words, hold my hand, in other words, darling kiss me"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JYuyWrkwpok"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-sinatra-flyme.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "synth-frankie-relax",
+      "title": "Relax",
+      "artist": "Frankie Goes to Hollywood",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Synthpop / Hi-NRG / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Controversial",
+        "Energy",
+        "Nightlife",
+        "Sarcastic"
+      ],
+      "hints": [
+        "Sorgte durch seinen provokanten Text und das Video für einen riesigen Skandal.",
+        "Wurde von der BBC verboten, was seinen Erfolg nur noch steigerte.",
+        "Inbegriff der opulenten Trevor-Horn-Produktion.",
+        "Die '[XXX] Say [XXX]' T-Shirts waren ein Mode-Phänomen.",
+        "Refrain: '[XXX], don't do it, when you want to go to it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Relax, don't do it, when you want to go to it",
+          "Relax, don't do it, when you want to come",
+          "But when you want to suck it, do it"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Yem_iEHiyJ0",
+        "spotify": "2K22nUTdyr48JDwI5t906t",
+        "amazonMusic": "B07BSPBSZ5"
+      },
+      "coverUrl": "/covers/synth-frankie-relax.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-franz-ferdinand-take-me-out",
+      "title": "Take Me Out",
+      "artist": "Franz Ferdinand",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Dance",
+        "Cool"
+      ],
+      "hints": [
+        "Bekannt für den plötzlichen Tempowechsel nach dem Intro.",
+        "Die Band aus Glasgow benannte sich nach dem österreichischen Erzherzog.",
+        "Mischte Post-Punk-Einflüsse mit extrem tanzbaren Rhythmen.",
+        "Das Video ist im Stil der russischen Avantgarde gestaltet.",
+        "Refrain: 'I say don't you know, you say you don't know... I'm just a shot away!'"
+      ],
+      "lyrics": {
+        "real": [
+          "So if you're lonely, you know I'm here waiting for you",
+          "I'm just a crosshair, I'm just a shot away from you",
+          "If I move this way, step to the side"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X9jhwR07yk4"
+      },
+      "coverUrl": "/covers/indie-franz-ferdinand-take-me-out.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-OTiba-FqnQQ",
+      "title": "0800 HEAVEN",
+      "artist": "Fred Again & Swedish House Mafia",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OTiba-FqnQQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/fred-again---swedish-house-mafia-0800-heaven.jpg"
+    },
+    {
+      "id": "yt-AB_apQgoxTI",
+      "title": "Unforgettable",
+      "artist": "French Montana ft. Swae Lee",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Dance Floor",
+        "Popular"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AB_apQgoxTI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/french-montana-ft--swae-lee-unforgettable.jpg"
+    },
+    {
+      "id": "piano-freya-lost",
+      "title": "Lost Without You",
+      "artist": "Freya Ridings",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Soft"
+      ],
+      "hints": [
+        "Besticht durch Freyinas tiefe, soulige Stimme und das minimalistische Klavier.",
+        "Thematisiert die Orientierungslosigkeit nach einem schmerzhaften Verlust.",
+        "Ein Inbegriff für moderne, britische Klavier-Balladen.",
+        "[XXX]s Durchbruch-Hit weltweit.",
+        "Refrain: 'And I'm [XXX]! [XXX] [XXX] you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Standing on the platform, watching you go",
+          "It's funny how the people you love become strangers",
+          "And I'm lost, lost without you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tDPpex1wvOc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-freya-lost.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "class-chopin-nocturne",
+      "title": "Nocturne in E-flat major, Op. 9, No. 2",
+      "artist": "Frédéric Chopin",
+      "year": 1832,
+      "country": "PL/FR",
+      "genre": "Romantic / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Dreamy",
+        "Smooth"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Piano)",
+          "Singing piano melody",
+          "Melancholy and beauty"
+        ],
+        "fake": "Dancing in the shadow of the broken light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bVeOdm-29pU",
+        "spotify": "1VNvsvEsUpuUCbHpVop1vo",
+        "amazonMusic": "B004GWYMY8"
+      },
+      "coverUrl": "/covers/class-chopin-nocturne.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-fugazi-waiting",
+      "title": "Waiting Room",
+      "artist": "Fugazi",
+      "year": 1988,
+      "country": "US",
+      "genre": "Post-Hardcore",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Confident"
+      ],
+      "hints": [
+        "Besitzt einen der bekanntesten Bassläufe der Independent-Musikgeschichte.",
+        "Thematisiert Geduld und das Warten auf den richtigen Moment.",
+        "Ian MacKaye (ex-Minor Threat) zeigt hier seine musikalische Weiterentwicklung.",
+        "Ein Inbegriff für Integrität und den DIY-Spirit.",
+        "Refrain: 'I am a patient boy! I wait, I wait, I wait, I wait!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I am a patient boy, I wait I wait I wait I wait",
+          "My time is like water down the drain",
+          "Everybody's moving, moving, moving, moving"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "C3LXkdpHNOQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-fugazi-waiting.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "soul-funkadelic-nation",
+      "title": "One Nation Under a Groove",
+      "artist": "Funkadelic",
+      "year": 1978,
+      "country": "US",
+      "genre": "Funk / Rock influence",
+      "difficulty": "medium",
+      "mood": [
+        "Positive",
+        "Energy",
+        "Spiritual"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "One nation under a groove, gettin' down just for the funk of it",
+          "Feet, don't fail me now!",
+          "Do you promise to funk, the whole funk and nothing but the funk?"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6AQaLeMZqJU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-funkadelic-nation.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-SZDmuHSqwtg",
+      "title": "Used to This  ft. Drake",
+      "artist": "Future",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SZDmuHSqwtg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/future-used-to-this--ft--drake.jpg"
+    }
+  ]
+}

@@ -1,174 +1,16 @@
 {
   "songs": [
     {
-      "id": "yt-5mfEJa7ydCQ",
-      "title": "Hey! (taken from \"Starry Nights\" concert DVD)",
-      "artist": "Julio Iglesias",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=5mfEJa7ydCQ"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/julio-iglesias-hey---taken-from--starry-nights--concert-dvd-.jpg"
-    },
-    {
-      "id": "finale-jungkook-seven",
-      "title": "Seven",
-      "artist": "Jung Kook ft. Latto",
-      "year": 2023,
-      "country": "KR/US",
-      "genre": "Pop / UK Garage influence",
-      "difficulty": "easy",
-      "mood": [
-        "Happy",
-        "Energy",
-        "Modern"
-      ],
-      "hints": [
-        "Song mit charakteristischen Pop -Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": {
-        "real": [
-          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
-          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
-          "Every night I'll be loving you right"
-        ],
-        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "KjK32vDk7mA"
-      },
-      "coverUrl": "/covers/finale-jungkook-seven.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "The Grand Finale: 2020s & Legends"
-      ]
-    },
-    {
-      "id": "disco-justice-dance",
-      "title": "D.A.N.C.E.",
-      "artist": "Justice",
-      "year": 2007,
-      "country": "FR",
-      "genre": "Electro House / Nu-Disco",
-      "difficulty": "easy",
-      "mood": [
-        "Happy",
-        "Energy",
-        "Cool"
-      ],
-      "hints": [
-        "Song mit charakteristischen Electro House -Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": {
-        "real": [
-          "The way you move is an indication, of how you're going to help your generation",
-          "Under the spotlight, neither black nor white, it's as easy as ABC",
-          "1-2-3-4-5, stick to the B-E-A-T"
-        ],
-        "fake": "In the middle of the street, you can feel the heat tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "sy1dYFGkPUE"
-      },
-      "coverUrl": "/covers/disco-justice-dance.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "Electronic & Synthpop Voyage"
-      ]
-    },
-    {
-      "id": "yt-tkaEpUBUQDw",
-      "title": "Fire",
-      "artist": "Justice",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=tkaEpUBUQDw"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justice-fire.jpg"
-    },
-    {
-      "id": "yt-v6HFc5I0hr8",
-      "title": "Ghost",
-      "artist": "Justin Bieber",
-      "year": 2021,
+      "id": "yt-pn8psTdqrY0",
+      "title": "First Class",
+      "artist": "Jack Harlow",
+      "year": 2022,
       "country": "INT",
       "genre": "Pop",
       "difficulty": "medium",
       "mood": [
         "Popular",
-        "Modern Hits"
+        "Modern Anthems"
       ],
       "hints": [
         "Pop-Song mit melancholischer Melodien und modernem Appeal.",
@@ -180,7 +22,7 @@
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=v6HFc5I0hr8"
+        "youtube": "https://www.youtube.com/watch?v=pn8psTdqrY0"
       },
       "supportedModes": [
         "timeline"
@@ -189,23 +31,23 @@
       "packs": [
         "YouTube Collection"
       ],
-      "coverUrl": "/covers/justin-bieber-ghost.jpg"
+      "coverUrl": "/covers/jack-harlow-first-class.jpg"
     },
     {
-      "id": "finale-justin-peaches",
-      "title": "Peaches",
-      "artist": "Justin Bieber ft. Daniel Caesar & Giveon",
-      "year": 2021,
-      "country": "CA/US",
-      "genre": "R&B / Pop",
+      "id": "finale-jack-lovin",
+      "title": "Lovin On Me",
+      "artist": "Jack Harlow",
+      "year": 2023,
+      "country": "US",
+      "genre": "Hip Hop / Pop",
       "difficulty": "easy",
       "mood": [
-        "Smooth",
+        "Cool",
         "Happy",
-        "Relaxed"
+        "Modern"
       ],
       "hints": [
-        "Song mit charakteristischen R&B -Elementen.",
+        "Song mit charakteristischen Hip Hop -Elementen.",
         "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
         "Moderne Produktion kombiniert mit traditionellem Sound.",
         "Eingängige Melodien und emotionale Tiefe.",
@@ -213,17 +55,17 @@
       ],
       "lyrics": {
         "real": [
-          "I got my peaches out in Georgia (oh, yeah, shit)",
-          "I get my weed from California (that's that shit)",
-          "I took my chick up to the North, yeah"
+          "I'm not on you, I'm just lovin' on me",
+          "Whatever you do, I'm just lovin' on me",
+          "Whatcha doin'?"
         ],
-        "fake": "In the shadow of the night, we're looking for the light tonight"
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "tQ0yjYUFKAE"
+        "youtube": "VJA43ZH4-Ak"
       },
-      "coverUrl": "/covers/finale-justin-peaches.jpg",
+      "coverUrl": "/covers/finale-jack-lovin.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",
@@ -238,9 +80,9 @@
       ]
     },
     {
-      "id": "yt-eeA9WIVOSfE",
-      "title": "Desaparecida [Video Official]",
-      "artist": "Justin Quiles",
+      "id": "yt-cSPOvHZ16Oo",
+      "title": "I'm Yours",
+      "artist": "Jack Savoretti",
       "year": 2016,
       "country": "INT",
       "genre": "Latin Pop",
@@ -259,7 +101,7 @@
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=eeA9WIVOSfE"
+        "youtube": "https://www.youtube.com/watch?v=cSPOvHZ16Oo"
       },
       "supportedModes": [
         "timeline"
@@ -268,310 +110,344 @@
       "packs": [
         "YouTube Collection"
       ],
-      "coverUrl": "/covers/justin-quiles-desaparecida--video-official-.jpg"
+      "coverUrl": "/covers/jack-savoretti-i-m-yours.jpg"
     },
     {
-      "id": "yt-Kso9VtVWVPE",
-      "title": "Egoista [Official Audio]",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=Kso9VtVWVPE"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-egoista--official-audio-.jpg"
-    },
-    {
-      "id": "yt-kN_RciDPwfo",
-      "title": "Esta Noche ft. Farruko (Remake)",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=kN_RciDPwfo"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-esta-noche-ft--farruko--remake-.jpg"
-    },
-    {
-      "id": "yt-DS8bYJg3gFI",
-      "title": "Nos Envidian (DAY 5)",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=DS8bYJg3gFI"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-nos-envidian--day-5-.jpg"
-    },
-    {
-      "id": "yt-qfl8aYbB1jE",
-      "title": "Orgullo Ft. J Balvin (Remix)",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=qfl8aYbB1jE"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-orgullo-ft--j-balvin--remix-.jpg"
-    },
-    {
-      "id": "yt-Ko-C-dlzBYw",
-      "title": "Otra Copa ft. Farruko [Official Audio]",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=Ko-C-dlzBYw"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-otra-copa-ft--farruko--official-audio-.jpg"
-    },
-    {
-      "id": "yt-VBis3lgUnos",
-      "title": "Si El Mundo Se Acabara [Official Audio]",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=VBis3lgUnos"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-si-el-mundo-se-acabara--official-audio-.jpg"
-    },
-    {
-      "id": "yt-vNaXGhS6fGc",
-      "title": "Si Ella Quisiera [Official Audio]",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=vNaXGhS6fGc"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-si-ella-quisiera--official-audio-.jpg"
-    },
-    {
-      "id": "yt-zJIbeMPcFD8",
-      "title": "Sustancia (DAY 6)",
-      "artist": "Justin Quiles",
-      "year": 2016,
-      "country": "INT",
-      "genre": "Latin Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Latin Heat"
-      ],
-      "hints": [
-        "Song mit charakteristischen Latin Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=zJIbeMPcFD8"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-quiles-sustancia--day-6-.jpg"
-    },
-    {
-      "id": "justin-timberlake-cant-stop-the-feeling-2016",
-      "title": "Can't Stop the Feeling!",
-      "artist": "Justin Timberlake",
-      "year": 2016,
+      "id": "soul-j5-iwantyouback",
+      "title": "I Want You Back",
+      "artist": "Jackson 5",
+      "year": 1969,
       "country": "US",
-      "genre": "Pop",
+      "genre": "Soul / Bubblegum Pop",
       "difficulty": "easy",
       "mood": [
-        "Dance",
-        "Dance Floor",
-        "Energy",
         "Happy",
-        "Party Anthem",
-        "Positive",
-        "Summer",
-        "Summer Vibes"
+        "Energy",
+        "Classic"
       ],
       "hints": [
-        "Das Stück entstand für den Animationsfilm 'Trolls' und begann auf einer Ukulele, auf der Produzent Max Martin herumgespielt hatte.",
-        "Gewann 2017 den Grammy für 'Bestes Lied, das für visuelle Medien geschrieben wurde'.",
-        "Erschienen 2016; einer der wenigen Songs, der seit dem Jahr 2000 in Deutschland Platz 1 der Charts erreichte.",
-        "Sonniger Funk-Pop mit Handclaps, einem positiven Refrain und einem unwiderstehlichen Groove, der gute Laune verbreitet.",
-        "[XXX] [XXX] singt über ein gutes Gefühl auf der Tanzfläche, das er einfach nicht [XXX]pen kann – niemand kann es."
+        "Machte den damals 11-jährigen Michael [XXX] über Nacht zum Weltstar.",
+        "Besticht durch den unglaublichen Basslauf und den vorwitzigen, kraftvollen Gesang.",
+        "Thematisiert die Reue über das Ende einer Jugendliebe.",
+        "Ein Inbegriff für pure Musik-Energie.",
+        "Refrain: 'Oh baby, give me one more chance! Won't you please let me [XXX] in your heart!'"
       ],
       "lyrics": {
         "real": [
-          "I got this feeling inside my bones",
-          "It goes electric, wavy when I turn it on",
-          "Nothing I can see but you when you dance, dance, dance"
+          "When I had you to myself, I didn't want you around",
+          "Those pretty faces always made you stand out in a crowd",
+          "Oh baby, give me one more chance"
         ],
-        "fake": "The stars are shining on the floor where we stand"
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "ru0K8uYEZWw"
+        "youtube": "s3Q8as"
       },
-      "coverUrl": "/covers/justin-timberlake-cant-stop-the-feeling-2016.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-j5-iwantyouback.jpg",
+      "packs": [
+        "Soul & Funk Grooves",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-sBfmkwkN28g",
+      "title": "Mutual",
+      "artist": "Jacob Latimore",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sBfmkwkN28g"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jacob-latimore-mutual.jpg"
+    },
+    {
+      "id": "yt-0YS1M7F68hQ",
+      "title": "Noite Fracassada (CLIPE OFICIAL)",
+      "artist": "Jads & Jadson",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0YS1M7F68hQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jads---jadson-noite-fracassada--clipe-oficial-.jpg"
+    },
+    {
+      "id": "yt-59Q_lhgGANc",
+      "title": "Makeba",
+      "artist": "Jain",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=59Q_lhgGANc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jain-makeba.jpg"
+    },
+    {
+      "id": "yt-hnS8NtrBKTg",
+      "title": "Put Out The Fire",
+      "artist": "Jake Bugg",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hnS8NtrBKTg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jake-bugg-put-out-the-fire.jpg"
+    },
+    {
+      "id": "yt-blns6JYReY8",
+      "title": "New Tattoo",
+      "artist": "James Arthur",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=blns6JYReY8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/james-arthur-new-tattoo.jpg"
+    },
+    {
+      "id": "piano-james-gowont",
+      "title": "Say You Won't Let Go",
+      "artist": "James Arthur",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Pop / Acoustic Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Soft"
+      ],
+      "hints": [
+        "Inbegriff für moderne Liebeslieder über das gemeinsame Altern.",
+        "Besticht durch das feine Gitarrenpicking (oft am Klavier interpretiert) und [XXX]s raue Stimme.",
+        "Thematisiert den Schutz und die Beständigkeit in einer Beziehung.",
+        "Machte den X-Factor-Gewinner weltweit zum Star.",
+        "Refrain: 'I'll carry you across the threshold! I'm so in love with you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I met you in the dark, you lit me up",
+          "You made me feel as though I was enough",
+          "I want to live with you, even when we're ghosts"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0yW7w8F2TVA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-james-gowont.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "piano-blunt-goodbye",
+      "title": "Goodbye My Lover",
+      "artist": "James Blunt",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
+      "hints": [
+        "Song mit charakteristischen Pop Ballade-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Goodbye my lover, goodbye my friend, you have been the one",
+          "I'm so hollow, baby, I'm so hollow",
+          "I've seen you cry, I've seen you smile"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wVyggTKDcOE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-blunt-goodbye.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "world-jamesbrown-feelgood",
+      "title": "I Got You (I Feel Good)",
+      "artist": "James Brown",
+      "year": 1965,
+      "country": "US",
+      "genre": "Funk / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Happy"
+      ],
+      "hints": [
+        "Der Inbegriff für explosive Energie des 'Godfather of Soul'.",
+        "Bekannt für den markanten Schrei am Anfang und die knackigen Bläser.",
+        "Vermittelt pure, unverfälschte Lebensfreude.",
+        "Zementierte [XXX] [XXX]s Status als revolutionärer Künstler.",
+        "Refrain: 'I [XXX] [XXX]! I knew that I would!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Woah! I feel good, I knew that I would, now",
+          "I feel good, I knew that I would, now",
+          "So good, so good, I got you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pTdihu-mp90"
+      },
       "supportedModes": [
         "cover-confusion",
         "hint-master",
@@ -581,240 +457,47 @@
         "vibe-check"
       ],
       "isQRCompatible": true,
+      "coverUrl": "/covers/world-jamesbrown-feelgood.jpg",
       "packs": [
-        "Global Hits 1950-2026",
-        "Dance Floor Fillers",
-        "Movie Hits"
+        "World, Reggae & Soul",
+        "soul-funk"
       ]
     },
     {
-      "id": "2000s-timberlake-cry-me-river",
-      "title": "Cry Me a River",
-      "artist": "Justin Timberlake",
-      "year": 2002,
+      "id": "score-horner-rose",
+      "title": "Rose (Titanic Theme)",
+      "artist": "James Horner",
+      "year": 1997,
       "country": "US",
-      "genre": "R&B / Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Emotional",
-        "Cool",
-        "Moody"
-      ],
-      "hints": [
-        "Bekannt für den Beat-Box-Rhythmus und die Regen-Sounds.",
-        "Handelt von der schmerzhaften Trennung von seiner Ex-Freundin Britney Spears.",
-        "Das Musikvideo zeigt ihn, wie er in das Haus seiner Ex einbricht.",
-        "Markierte den endgültigen Durchbruch als ernstzunehmender Solo-Künstler nach 'N Sync.",
-        "Refrain: 'You don't have to say what you did, I already know!'"
-      ],
-      "lyrics": {
-        "real": [
-          "You told me you loved me, why did you leave me all alone?",
-          "You don't have to say what you did, I already know, I found out from him",
-          "Now there's just no chance for you and me, there'll never be"
-        ],
-        "fake": [
-          "Walking through the rain, I'm calling out your name in vain",
-          "You fold me in a way, we did not mean so say"
-        ]
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "DksSPZTZES0",
-        "spotify": "7Lf7oSEVdzZqTA0kEDSlS5",
-        "amazonMusic": "B001VFGEVM"
-      },
-      "coverUrl": "/covers/2000s-timberlake-cry-me-river.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "2000s Pop & RnB"
-      ]
-    },
-    {
-      "id": "yt-c7JEPbT6W0w",
-      "title": "Like I Love You",
-      "artist": "Justin Timberlake",
-      "year": 2002,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "80s Flashback"
-      ],
-      "hints": [
-        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
-        "Charakteristisch für 2000er zeitgenössischen Pop-Sound.",
-        "Thematisiert Liebe und emotionale Bindung in zugänglicher Form.",
-        "Hook-fokussiert mit eingängigem Chorus.",
-        "Optimiert für Streaming und Radio-Appeal."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=c7JEPbT6W0w"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-timberlake-like-i-love-you.jpg"
-    },
-    {
-      "id": "yt-7EJbFg_LxjY",
-      "title": "Rock Your Body",
-      "artist": "Justin Timberlake",
-      "year": 2003,
-      "country": "INT",
-      "genre": "Classic Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "60s/70s Legends"
-      ],
-      "hints": [
-        "Song mit charakteristischen Classic Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=7EJbFg_LxjY"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-timberlake-rock-your-body.jpg"
-    },
-    {
-      "id": "yt-K7dmbMmzf9Q",
-      "title": "Iko Iko (My Bestie)",
-      "artist": "Justin Wellington",
-      "year": 2021,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "80s Flashback"
-      ],
-      "hints": [
-        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
-        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
-        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
-        "Hook-fokussiert mit eingängigem Chorus.",
-        "Optimiert für Streaming und Radio-Appeal."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=K7dmbMmzf9Q"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/justin-wellington-iko-iko--my-bestie-.jpg"
-    },
-    {
-      "id": "finale-jvke-golden",
-      "title": "golden hour",
-      "artist": "JVKE",
-      "year": 2022,
-      "country": "US",
-      "genre": "Indie Pop / Piano focus",
-      "difficulty": "medium",
-      "mood": [
-        "Dreamy",
-        "Beautiful",
-        "Romantic"
-      ],
-      "hints": [
-        "Song mit charakteristischen Indie Pop -Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": {
-        "real": [
-          "It's your golden hour, what a beautiful sight",
-          "Don't you ever look away",
-          "I see the light in your eyes"
-        ],
-        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
-      },
-      "isOneHitWonder": true,
-      "links": {
-        "youtube": "PEM0Vs8jf1w"
-      },
-      "coverUrl": "/covers/finale-jvke-golden.jpg",
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "The Grand Finale: 2020s & Legends"
-      ]
-    },
-    {
-      "id": "schlager-juergen-drews-bett",
-      "title": "Ein Bett im Kornfeld",
-      "artist": "Jürgen Drews",
-      "year": 1976,
-      "country": "DE",
-      "genre": "Schlager",
+      "genre": "Movie Score / Celtic influence",
       "difficulty": "easy",
       "mood": [
-        "Happy",
-        "Classic",
-        "Summer"
+        "Romantic",
+        "Sad",
+        "Epic"
       ],
       "hints": [
-        "Der Song ist eine Coverversion von 'Let Your Love Flow' der Bellamy Brothers.",
-        "Machte [XXX] [XXX] zum 'König von Mallorca' (obwohl der Song viel älter ist).",
-        "Thematisiert die Freiheit und Romantik des sommerlichen Landlebens.",
-        "Ein Lied, das fast jeder in Deutschland mitsingen kann.",
-        "Refrain: 'Ein [XXX] im [XXX], das ist immer frei!'"
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
       ],
       "lyrics": {
         "real": [
-          "Ein Bett im Kornfeld, das ist immer frei",
-          "Denn es ist Sommer, und was ist schon dabei",
-          "Die Grillen singen und es duftet nach Heu"
+          "(Instrumental Score)",
+          "Ethereal vocalise",
+          "Soul of the ocean"
         ],
-        "fake": "Wir springen ins Glück, schauen niemals zurück"
+        "fake": "I'll never let go in the middle of the sea tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "XqX0720VTRY"
+        "youtube": "iUH0dEe1jvA",
+        "spotify": "2yEt5pA29CwKNXSplwnhgn",
+        "amazonMusic": "B01ESPDF2C"
       },
+      "coverUrl": "/covers/score-horner-rose.jpg",
       "supportedModes": [
         "timeline",
         "hint-master",
@@ -824,9 +507,8 @@
         "lyrics-labyrinth"
       ],
       "isQRCompatible": true,
-      "coverUrl": "/covers/schlager-juergen-drews-bett.jpg",
       "packs": [
-        "Schlager & Evergreens"
+        "Classical & Orchestral Masterpieces"
       ]
     }
   ]

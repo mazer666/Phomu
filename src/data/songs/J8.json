@@ -1,0 +1,537 @@
+{
+  "songs": [
+    {
+      "id": "disney-pocahontas-colors",
+      "title": "Colors of the Wind",
+      "artist": "Judy Kuhn",
+      "year": 1995,
+      "country": "US",
+      "genre": "Soundtrack / Broadway / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Inspirational",
+        "Serene"
+      ],
+      "hints": [
+        "Inbegriff für Pocahontas' Verbindung zur Natur und ihre Weisheit.",
+        "Thematisiert Toleranz, Respekt vor der Umwelt und die Vielfalt des Lebens.",
+        "Gewann den Oscar für den besten Song.",
+        "Besticht durch die bildhafte Sprache und die orchestrale Weite.",
+        "Refrain: 'Can you paint with all the [XXX] of the [XXX]?'"
+      ],
+      "lyrics": {
+        "real": [
+          "You think I'm an ignorant savage, and you've been so many places",
+          "Can you paint with all the colors of the wind?",
+          "You can own the earth and still, all you'll own is earth until"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "hcmpj5HPue0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-pocahontas-colors.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-8jsFGdeWNPo",
+      "title": "Nicky Jam | Video Oficial",
+      "artist": "Juegos Prohibidos",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8jsFGdeWNPo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "german-juli-perfekte-welle",
+      "title": "Perfekte Welle",
+      "artist": "Juli",
+      "year": 2004,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Pop"
+      ],
+      "hints": [
+        "Wurde zu einer Hymne des Aufbruchs und des Glücksmoments.",
+        "Nach der Tsunami-Katastrophe Ende 2004 wurde der Song vorübergehend nicht im Radio gespielt.",
+        "Einer der Hits der 'neuen deutschen Pop[XXX]'.",
+        "Handelt davon, den Moment zu nutzen, wenn alles perfekt zusammenpasst.",
+        "Refrain: 'Das ist die [XXX] [XXX], das ist der [XXX] Tag!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Du hast gewartet auf diesen Moment, du hast gehofft, dass er niemals endet",
+          "Das ist die perfekte Welle, das ist der perfekte Tag",
+          "Lass dich einfach von der Strömung treiben, du wirst sehen"
+        ],
+        "fake": "Wir springen ins kalte Wasser, um die Welt zu sehen"
+      },
+      "links": {
+        "youtube": "ad8ukI7Z-b8"
+      },
+      "coverUrl": "/covers/german-juli-perfekte-welle.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "schlager-juliane-werding-conny",
+      "title": "Am Tag, als Conny Kramer starb",
+      "artist": "Juliane Werding",
+      "year": 1972,
+      "country": "DE",
+      "genre": "Schlager / Storytelling",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Moody"
+      ],
+      "hints": [
+        "Thematisiert auf sehr direkte Weise den Drogentod eines Freundes.",
+        "Basiert auf der Melodie von 'The Night They Drove Old Dixie Down' von The Band.",
+        "War einer der ersten Schlager, der ein so ernstes und damals noch tabuisiertes Thema ansprach.",
+        "Machte die erst 15-jährige [XXX] [XXX] über Nacht zum Star.",
+        "Refrain: 'Am Tag, als [XXX] [XXX] [XXX], und alle Glocken läuteten...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Wir lagen träumend im Gras, die Köpfe voll verrückter Ideen",
+          "Am Tag, als Conny Kramer starb, und alle Glocken läuteten",
+          "Es war ein langer Weg zurück, doch wir haben ihn nicht mehr gesehen"
+        ],
+        "fake": "Unter den Sternen der Nacht, bin ich allein erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OD8-q-Zey7Q"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-juliane-werding-conny.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "disney-poppins-sugar",
+      "title": "A Spoonful of Sugar",
+      "artist": "Julie Andrews",
+      "year": 1964,
+      "country": "GB/US",
+      "genre": "Soundtrack / Classical / Happy",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Mary Poppins' Art, unangenehme Aufgaben spaßig zu gestalten.",
+        "Thematisiert Optimismus und eine gesunde Einstellung zum Leben.",
+        "Inbegriff für Mary Poppins' magische Ausstrahlung.",
+        "Besticht durch den hüpfenden Rhythmus und den klaren Gesang.",
+        "Refrain: 'A [XXX] of [XXX] helps the medicine go down!'"
+      ],
+      "lyrics": {
+        "real": [
+          "In every job that must be done, there is an element of fun",
+          "A spoonful of sugar helps the medicine go down, the medicine go down, medicine go down",
+          "Just a spoonful of sugar helps the medicine go down"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dKzqc54g0z4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-poppins-sugar.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "disney-poppins-supercali",
+      "title": "Supercalifragilisticexpialidocious",
+      "artist": "Julie Andrews & Dick Van Dyke",
+      "year": 1964,
+      "country": "GB/US",
+      "genre": "Soundtrack / Funny",
+      "difficulty": "hard",
+      "mood": [
+        "Fast",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Vielleicht das bekannteste Kunstwort der Musikgeschichte.",
+        "Begleitet die animierte Jahrmarkt-Sequenz in 'Mary Poppins'.",
+        "Besticht durch das rasante Tempo und die humorvolle Wortakrobatik.",
+        "Ein Inbegriff für unbeschwerte Disney-Phantasie.",
+        "Refrain: '[XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Supercalifragilisticexpialidocious! Even though the sound of it is something quite atrocious",
+          "If you say it loud enough, you'll always sound precocious",
+          "Supercalifragilisticexpialidocious!"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2Yq9Ebipbb8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-poppins-supercali.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "jazz-julie-river",
+      "title": "Cry Me a River",
+      "artist": "Julie London",
+      "year": 1955,
+      "country": "US",
+      "genre": "Jazz / Vocal / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Sexy"
+      ],
+      "hints": [
+        "[XXX] [XXX]s rauchiger Gesang prägt diesen melancholischen Klassiker.",
+        "Thematisiert späte Reue und die Unnahbarkeit nach einer Enttäuschung.",
+        "Inbegriff für den 'Torch Song' Stil der 50er Jahre.",
+        "Besitzt ein extrem reduziertes, elegantes Gitarren- und Bass-Arrangement.",
+        "Refrain: 'Cry me a [XXX]! I cried a [XXX] over you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Now you say you're lonely, you cried a long night through",
+          "Well, you can cry me a river, cry me a river",
+          "I cried a river over you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MkD_kYkRk3c"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-julie-river.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-tIpzfs5tBJU",
+      "title": "Limon Y Sal (Video)",
+      "artist": "Julieta Venegas",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tIpzfs5tBJU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/julieta-venegas-limon-y-sal--video-.jpg"
+    },
+    {
+      "id": "yt-y8rBC6GCUjg",
+      "title": "Me Voy (Video Stereo)",
+      "artist": "Julieta Venegas",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=y8rBC6GCUjg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/julieta-venegas-me-voy--video-stereo-.jpg"
+    },
+    {
+      "id": "yt-5mfEJa7ydCQ",
+      "title": "Hey! (taken from \"Starry Nights\" concert DVD)",
+      "artist": "Julio Iglesias",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5mfEJa7ydCQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/julio-iglesias-hey---taken-from--starry-nights--concert-dvd-.jpg"
+    },
+    {
+      "id": "finale-jungkook-seven",
+      "title": "Seven",
+      "artist": "Jung Kook ft. Latto",
+      "year": 2023,
+      "country": "KR/US",
+      "genre": "Pop / UK Garage influence",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Song mit charakteristischen Pop -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
+          "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday (A week)",
+          "Every night I'll be loving you right"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "KjK32vDk7mA"
+      },
+      "coverUrl": "/covers/finale-jungkook-seven.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "disco-justice-dance",
+      "title": "D.A.N.C.E.",
+      "artist": "Justice",
+      "year": 2007,
+      "country": "FR",
+      "genre": "Electro House / Nu-Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Cool"
+      ],
+      "hints": [
+        "Song mit charakteristischen Electro House -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "The way you move is an indication, of how you're going to help your generation",
+          "Under the spotlight, neither black nor white, it's as easy as ABC",
+          "1-2-3-4-5, stick to the B-E-A-T"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "sy1dYFGkPUE"
+      },
+      "coverUrl": "/covers/disco-justice-dance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "yt-tkaEpUBUQDw",
+      "title": "Fire",
+      "artist": "Justice",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tkaEpUBUQDw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/justice-fire.jpg"
+    }
+  ]
+}

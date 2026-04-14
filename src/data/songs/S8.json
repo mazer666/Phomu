@@ -1,0 +1,572 @@
+{
+  "songs": [
+    {
+      "id": "yt-WaMHEe4yL6U",
+      "title": "Muévelo ft. Wisin [Official Music Video]",
+      "artist": "Sofia Reyes",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WaMHEe4yL6U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sofia-reyes-muévelo-ft--wisin--official-music-video-.jpg"
+    },
+    {
+      "id": "synth-softcell-love",
+      "title": "Tainted Love",
+      "artist": "Soft Cell",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Energy",
+        "Moody",
+        "Nightlife"
+      ],
+      "hints": [
+        "Ursprünglich ein Northern-Soul-Song von Gloria Jones.",
+        "Die Synthesizer-Version von [XXX] [XXX] definierte den Sound des frühen Jahrzehnts.",
+        "Bekannt für den markanten 'Dink-Dink' Synthesizer-Schlag.",
+        "Thematisiert eine toxische, komplizierte Liebe.",
+        "Refrain: 'Sometimes I feel I've got to run away! I've got to get away!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes I feel I've got to run away, I've got to get away",
+          "From the pain you drive into the heart of me",
+          "The love we share seems to go nowhere"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "XZVpR3Pk-r8",
+        "spotify": "58E1XVmZTODC67YNjneuXM",
+        "amazonMusic": "B003S51BHK"
+      },
+      "coverUrl": "/covers/synth-softcell-love.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-kAKVT1HWNsg",
+      "title": "A Puro Dolor (Video)",
+      "artist": "Son By Four",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kAKVT1HWNsg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/son-by-four-a-puro-dolor--video-.jpg"
+    },
+    {
+      "id": "yt-TEGkUHzd8hI",
+      "title": "Murder On The Dancefloor",
+      "artist": "Sophie Ellis-Bextor",
+      "year": 2001,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit energetischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2000er zeitgenössischen Pop-Sound.",
+        "Thematisiert Tanzen und Bewegung in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TEGkUHzd8hI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sophie-ellis-bextor-murder-on-the-dancefloor.jpg"
+    },
+    {
+      "id": "90s-soul-asylum-runaway-train",
+      "title": "Runaway Train",
+      "artist": "Soul Asylum",
+      "year": 1992,
+      "country": "US",
+      "genre": "Acoustic Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Powerful"
+      ],
+      "hints": [
+        "Bekannt durch das Musikvideo, das echte vermisste Kinder zeigte (viele wurden dadurch gefunden).",
+        "Thematisiert Depression und das Gefühl, die Kontrolle über sein Leben zu verlieren.",
+        "Gewann den Grammy für den Best Rock Song 1994.",
+        "Ein Meilenstein des gefühlvollen Alternative Rock der frühen 90er.",
+        "Refrain: '[XXX] [XXX], never going back, wrong way on a one-way track.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Call you up in the middle of the night, like a firefly without a light",
+          "You were there like a blowtorch burning, I was a key that could use some turning",
+          "Runaway train, never going back, wrong way on a one-way track"
+        ],
+        "fake": "In the cold of the winter, I'm looking for a splinter of light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NRtvqT_wMeY",
+        "spotify": "3Ib3SJV8ZXuLvDiDb2w1As",
+        "amazonMusic": "B001SNJEEQ"
+      },
+      "coverUrl": "/covers/90s-soul-asylum-runaway-train.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "80s-spandau-ballet-true",
+      "title": "True",
+      "artist": "Spandau Ballet",
+      "year": 1983,
+      "country": "GB",
+      "genre": "New Wave / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Chill",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff des 'Sophisti-Pop' mit seinem sanften Saxophon und den souligen Harmonien.",
+        "Thematisiert Ehrlichkeit und tiefe Gefühle in der Liebe.",
+        "Wird oft als eine der besten Liebeserklärungen der 80er Jahre bezeichnet.",
+        "Besticht durch Gary Kemps meisterhaftes Songwriting.",
+        "Refrain: 'I know this much is [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "So true, funny how it seems always in time, but never in line for dreams",
+          "Head over heels, I'm slipping in between",
+          "I know this much is true"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AR8D2yqgQ1U",
+        "spotify": "4q2lRiodoQnyFO65watkse",
+        "amazonMusic": "B004CYKUWI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-spandau-ballet-true.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "spice-girls-wannabe-1996",
+      "title": "Wannabe",
+      "artist": "Spice Girls",
+      "year": 1990,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Legends & Classics",
+        "Party Anthem",
+        "Pop",
+        "Popular",
+        "Rebel"
+      ],
+      "hints": [
+        "Das Stück wurde an einem einzigen Tag aufgenommen; der Nonsens-Begriff im Refrain wurde nie offiziell erklärt.",
+        "Das Musikvideo entstand in einer einzigen Kameraeinstellung in einem Londoner Hotel und kostete nur 25.000 Pfund.",
+        "Debütsingle der [XXX] [XXX] (1996); direkt auf Platz 1 in 37 Ländern eingestiegen – Rekord für eine Debütsingle.",
+        "Energetischer Girl-Power-Pop mit stampfendem Beat, Rap-Einwürfen und einem mehrstimmigen Refrain.",
+        "Die [XXX] [XXX] erklären, was sie wirklich wirklich wollen – und betonen dabei die Bedeutung von Freundschaft."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo, I'll tell you what I want, what I really, really want",
+          "If you want my future, forget my past",
+          "If you wanna be my lover, you gotta get with my friends"
+        ],
+        "fake": "We're going to the party and we're never coming home"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tscL_I2v7pU"
+      },
+      "coverUrl": "/covers/spice-girls-wannabe-1996.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "german-spider-murphy-skandal",
+      "title": "Skandal im Sperrbezirk",
+      "artist": "Spider Murphy Gang",
+      "year": 1981,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "German New Wave",
+        "Happy",
+        "Popular",
+        "Rock'n'Roll"
+      ],
+      "hints": [
+        "Bayerischer Rock'n'Roll gepaart mit NDW-Elementen.",
+        "Handelt von einer Prostituierten namens Rosi, die im Münchener [XXX] arbeitet.",
+        "Wurde wegen des Textes (insbesondere 'Nutte') anfangs im Radio teilweise zensiert.",
+        "Die Nummer '32 16 8' (die Rosi anruft) war in München jahrelang vergeben und verursachte viele Scherzanrufe.",
+        "Refrain: '[XXX] im [XXX]! [XXX] um Rosi!'"
+      ],
+      "lyrics": {
+        "real": [
+          "In München steht ein Hofbräuhaus, doch Freudenhäuser müssen raus",
+          "Draußen vor der Stadt, in einer Sperrbezirkstraße, da wohnt die Rosi",
+          "Und wer sie sehen will, der muss im Telefonbuch graben"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=t5AKhZHjSU0"
+      },
+      "coverUrl": "/covers/german-spider-murphy-skandal.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "german-sportfreunde-kompliment",
+      "title": "Ein Kompliment",
+      "artist": "Sportfreunde Stiller",
+      "year": 2002,
+      "country": "DE",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Sing-along"
+      ],
+      "hints": [
+        "Das ultimative 'Unplugged'-Lied für Lagerfeuer und Festivals.",
+        "Der Text ist eine Aneinanderreihung von wunderbaren [XXX]en.",
+        "Die Band stammt aus Germering bei München.",
+        "War ursprünglich kein großer Charterfolg, wurde aber über die Jahre zum Kult-Hit.",
+        "Refrain: 'Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Wenn man mich fragen würde, was ich am meisten mag, dann wärst du es",
+          "Ich wollte dir nur mal eben sagen, dass du das Größte für mich bist",
+          "Ich wollte dir nur mal eben sagen, dass ich froh bin, dass es dich gibt"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe"
+      },
+      "links": {
+        "youtube": "C4uXGzFZjqw"
+      },
+      "coverUrl": "/covers/german-sportfreunde-kompliment.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "jazz-jobim-desafinado",
+      "title": "Desafinado",
+      "artist": "Stan Getz & Charlie Byrd",
+      "year": 1962,
+      "country": "BR/US",
+      "genre": "Bossa Nova / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Chill",
+        "Sophisticated",
+        "Classic"
+      ],
+      "hints": [
+        "Ein programmatischer Song, der die Ästhetik des Bossa Nova verteidigt.",
+        "Der Titel bedeutet so viel wie 'verstimmt' oder 'unharmonisch'.",
+        "Besticht durch den federleichten Rhythmus und die elegante Melodie.",
+        "Ein Schlüsselwerk des Jazz-Bossa-Booms der 60er Jahre.",
+        "Genre-Inhalt: Lyrisches Tenorsaxophon."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental piece - representing the Soul of Bossa Nova)",
+          "(Defending the new sound of Brazil)",
+          "(Stan Getz' signature sound)"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "L7lmMNweUVU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-jobim-desafinado.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "jazz-getz-ipanema",
+      "title": "The Girl from Ipanema",
+      "artist": "Stan Getz, João Gilberto & Astrud Gilberto",
+      "year": 1964,
+      "country": "BR/US",
+      "genre": "Bossa Nova",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Dreamy",
+        "Sexy"
+      ],
+      "hints": [
+        "Machte den Bossa Nova weltweit populär.",
+        "Besticht durch [XXX] [XXX]s schlichten, fast teilnahmslosen Gesang.",
+        "Thematisiert die Bewunderung einer schönen Frau am Strand von Rio.",
+        "[XXX] [XXX]' warmes Saxophon-Spiel ist das Markenzeichen dieses Welthits.",
+        "Refrain: 'Tall and tan and young and lovely! The [XXX] from [XXX] goes walking!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Tall and tan and young and lovely, the girl from Ipanema goes walking",
+          "And when she passes, each one she passes goes - ah",
+          "When she walks, she's like a samba, that swings so cool and sways so gentle"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "sx0TLkdWFEU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-getz-ipanema.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-Hqb3EaWoyUw",
+      "title": "Rewind",
+      "artist": "Stan Sono",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Hqb3EaWoyUw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/stan-sono-rewind.jpg"
+    },
+    {
+      "id": "jazz-steelydan-doitagain",
+      "title": "Do It Again",
+      "artist": "Steely Dan",
+      "year": 1972,
+      "country": "US",
+      "genre": "Jazz Rock / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Atmospheric",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für den unterkühlten, perfekt produzierten Jazz-Rock von [XXX] Dan.",
+        "Besticht durch das außergewöhnliche Sitar-Solo und die Latin-Percussion.",
+        "Thematisiert den ewigen Kreislauf von Fehlern und Sucht.",
+        "Ein Meisterwerk an präzisem Recording und Musikalität.",
+        "Refrain: 'Go back, Jack, do it [XXX]! Wheels turnin' 'round and 'round!'"
+      ],
+      "lyrics": {
+        "real": [
+          "In the morning you go gunnin' for the man who stole your water",
+          "Go back, Jack, do it again, wheels turnin' 'round and 'round",
+          "You been broken down and you've been runnin' hot"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Qb1wNA5PnKQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-steelydan-doitagain.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    }
+  ]
+}

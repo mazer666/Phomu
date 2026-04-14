@@ -1,0 +1,550 @@
+{
+  "songs": [
+    {
+      "id": "yt-A4MrL7ncX9M",
+      "title": "Heart Of Glass (Single Version / Remastered)",
+      "artist": "Blondie",
+      "year": 1979,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Synth-Pop/New Wave mit emotionaler Ballade-Struktur.",
+        "Sanfte Synthesizer-Textur mit gefühlvollen Vocals.",
+        "Thematisiert Fragilität von Liebe und Beziehung.",
+        "Charakteristisch für 1980er New Wave.",
+        "Melancholische, zeitlose Melodie."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A4MrL7ncX9M",
+        "spotify": "0spSRHFS4zF4Imvz9sJcfL",
+        "amazonMusic": "B001UO9FUQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/blondie-heart-of-glass--single-version---remastered-.jpg"
+    },
+    {
+      "id": "jazz-blood-spinning",
+      "title": "Spinning Wheel",
+      "artist": "Blood, Sweat & Tears",
+      "year": 1969,
+      "country": "US",
+      "genre": "Jazz Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Mischte Jazz-Big-Band-Techniken mit zeitgenössischem Rock.",
+        "David Clayton-Thomas' markante Stimme prägt den Hit.",
+        "Thematisiert die Unbeständigkeit des Schicksals.",
+        "Ein Inbegriff für aufwendig produzierten Brass-Rock.",
+        "Refrain: 'What goes up must come down! [XXX] got to go 'round!'"
+      ],
+      "lyrics": {
+        "real": [
+          "What goes up must come down, spinnin' wheel got to go 'round",
+          "Talkin' 'bout your troubles, it's a cryin' sin",
+          "Ride a painted pony, let the spinnin' wheel spin"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SFEewD4EVwU",
+        "spotify": "0spSRHFS4zF4Imvz9sJcfL",
+        "amazonMusic": "B001UO9FUQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-blood-spinning.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "rock-blur-song-2",
+      "title": "Song 2",
+      "artist": "Blur",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Fast",
+        "Aggressive"
+      ],
+      "hints": [
+        "Bekannt für den berühmten 'Woo-hoo!'-Schrei.",
+        "War ursprünglich als Parodie auf die US-Grunge-Szene gedacht, wurde aber der größte Hit der Band.",
+        "Dauert genau zwei Minuten und zwei Sekunden und ist Lied Nummer zwei auf dem Album.",
+        "Ein absoluter Klassiker in FIFA-Videospielen und Stadien.",
+        "Refrain: 'Woo-hoo! When I feel heavy-metal...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Woo-hoo! When I feel heavy-metal, woo-hoo! And I'm pins and I'm needles",
+          "Woo-hoo! Well, I lie and I'm easy, all of the time but I'm never blue",
+          "I got my head checked by a jumbo jet"
+        ],
+        "fake": "In the middle of the night, searching for a fight in the neon light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SSbBvKaM6sk",
+        "spotify": "3GfOAdcoc3X5GPiiXmpBjK",
+        "amazonMusic": "B008E4LUZ8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-blur-song-2.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "country-dylan-blowing",
+      "title": "Blowin' in the Wind",
+      "artist": "Bob Dylan",
+      "year": 1963,
+      "country": "US",
+      "genre": "Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Serious",
+        "Spiritual",
+        "Classic"
+      ],
+      "hints": [
+        "Die Protesthymne der Bürgerrechts- und Friedensbewegung schlechthin.",
+        "Thematisiert essenzielle menschliche Fragen nach Freiheit und Gerechtigkeit.",
+        "Die akustische Gitarre und die Mundharmonika sind ikonisch.",
+        "Ein Inbegriff für den intellektuellen Folk der 60er Jahre.",
+        "Refrain: 'The answer, my friend, is [XXX] in the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "How many roads must a man walk down, before you call him a man?",
+          "The answer, my friend, is blowin' in the wind",
+          "The answer is blowin' in the wind"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MMFj8uDubsE",
+        "spotify": "18GiV1vqzZ0SNRyR7vW6R1",
+        "amazonMusic": "B00GOYJI8G"
+      },
+      "coverUrl": "/covers/country-dylan-blowing.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "reggae-bob-marley-no-woman",
+      "title": "No Woman, No Cry",
+      "artist": "Bob Marley",
+      "year": 1974,
+      "country": "JM",
+      "genre": "Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Inspirational"
+      ],
+      "hints": [
+        "Die Live-Version aus dem Lyceum Theatre in London ist die bekannteste Fassung.",
+        "Thematisiert die harte Zeit im Ghetto von Trenchtown und den Trost durch Gemeinschaft.",
+        "Der Sänger wollte seine Frau trösten.",
+        "Wurde zu einer weltweiten Hymne des Reggae und der Hoffnung.",
+        "Refrain: 'No [XXX], no [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "No woman, no cry, no woman, no cry",
+          "Little darling, don't shed no tears, no woman, no cry",
+          "Everything's gonna be alright, everything's gonna be alright"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "jGqrvn3q1oo",
+        "spotify": "5rPnv4gceOGKCqbN06F2aJ",
+        "amazonMusic": "B07FQHT89S"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-bob-marley-no-woman.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "world-marley-threebirds",
+      "title": "Three Little Birds",
+      "artist": "Bob Marley & The Wailers",
+      "year": 1977,
+      "country": "JM",
+      "genre": "Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Chill"
+      ],
+      "hints": [
+        "Einer der optimistischsten Songs der Musikgeschichte.",
+        "Thematisiert die Überzeugung, dass am Ende alles gut werden wird.",
+        "Bekannt für den extrem entspannten Rhythmus und die eingängige Botschaft.",
+        "Ein Inbegriff für die spirituelle und positive Ausstrahlung des Sängers.",
+        "Refrain: 'Don't worry about a thing! 'Cause every [XXX] thing's gonna be alright!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Don't worry about a thing, 'cause every little thing's gonna be alright",
+          "Singin', 'Don't worry about a thing, 'cause every little thing's gonna be alright!'",
+          "Rise up this mornin', smiled with the risin' sun"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZA_7X_",
+        "spotify": "7vggqxNKwd6xdRoYS0pQtM",
+        "amazonMusic": "B07FQL67PH"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-marley-threebirds.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "disney-peterpan-fly",
+      "title": "You Can Fly! You Can Fly! You Can Fly!",
+      "artist": "Bobby Driscoll",
+      "year": 1953,
+      "country": "US",
+      "genre": "Soundtrack / Happy",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Magic"
+      ],
+      "hints": [
+        "Begleitet die fliegenden Kinder auf ihrem Weg nach Nimmerland.",
+        "Vermittelt pure Freiheit und Abenteuerlust.",
+        "Besticht durch den optimistischen Rhythmus und den Chor-Gesang.",
+        "Zentraler Song für die Vorstellungskraft des Films 'Peter Pan'.",
+        "Refrain: 'Think of a wonderful thought! Any happy little thought!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Think of a wonderful thought, any happy little thought",
+          "You can fly! You can fly! You can fly!",
+          "Just a little bit of pixie dust!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our happy love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "kyd1j3mRsw4",
+        "spotify": "2P8GtZGLXffCXcaETbzSPy",
+        "amazonMusic": "B07RR8DBBM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-peterpan-fly.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "soul-womack-110th",
+      "title": "Across 110th Street",
+      "artist": "Bobby Womack",
+      "year": 1972,
+      "country": "US",
+      "genre": "Soul / Cinematic",
+      "difficulty": "medium",
+      "mood": [
+        "Serious",
+        "Tough",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Besingt die harte Realität in Harlem jenseits der 110. Straße.",
+        "Besticht durch das dramatische Orchester-Arrangement und die raue Stimme des Sängers.",
+        "Wurde Jahrzehnte später durch Quentin Tarantinos 'Jackie Brown' zum Kulthit.",
+        "Refrain: 'In every city you'll find the same thing going down!'",
+        "Ein vielseitiger Track mit klassischen Elementen und moderner Relevanz."
+      ],
+      "lyrics": {
+        "real": [
+          "I was the third brother of five, doing whatever I had to do to survive",
+          "Across 110th Street, pimps trying to catch a woman that's weak",
+          "Across 110th Street, pushed by the back against the wall"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JxCsIX6iU5o",
+        "spotify": "2zyTP97uGsIc1C4KNNEkyn",
+        "amazonMusic": "B001QNPECE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-womack-110th.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "rock-bon-jovi-its-my-life",
+      "title": "It's My Life",
+      "artist": "Bon Jovi",
+      "year": 2000,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Inspiring",
+        "Rock"
+      ],
+      "hints": [
+        "Markierte das große Comeback der Band im neuen Jahrtausend.",
+        "Enthält eine Text-Referenz an den früheren Hit 'Livin' on a Prayer' ('For Tommy and Gina...').",
+        "Nutzt wie der 80er-Hit 'Livin' on a Prayer' eine Talkbox (Gitarreneffekt).",
+        "Eine Hymne auf Selbstbestimmung und das Leben im Hier und Jetzt.",
+        "Refrain: '[XXX]! It's now or never!'"
+      ],
+      "lyrics": {
+        "real": [
+          "This ain't a song for the broken-hearted, no silent prayer for the faith-departed",
+          "I ain't gonna be just a face in the crowd, you're gonna hear my voice when I shout it out loud",
+          "It's my life, it's now or never, I ain't gonna live forever"
+        ],
+        "fake": "Taking my chances, making my moves, I've got nothing left to lose"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vx2u5uUu3DE",
+        "spotify": "0v1XpBHnsbkCn7iJ9Ucr1l",
+        "amazonMusic": "B07K1V2CNF"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-bon-jovi-its-my-life.jpg",
+      "packs": [
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "yt-YBdyc1WDlBQ",
+      "title": "Livin' On A Prayer",
+      "artist": "Bon Jovi",
+      "year": 1986,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Inspiring",
+        "Legends & Classics",
+        "Popular",
+        "Sing-along",
+        "Stadium Rock"
+      ],
+      "hints": [
+        "In diesem Song wird eine Talkbox verwendet, um dem Gitarrensound eine 'sprechende' Stimme zu verleihen.",
+        "Der Text handelt von einem Paar namens Tommy und Gina.",
+        "Gilt als die ultimative Hymne der Arbeiterklasse in New Jersey.",
+        "Der ikonische Tonartwechsel im letzten Refrain ist berüchtigt für seine Höhe.",
+        "Ein absoluter Klassiker in jeder Karaokebar."
+      ],
+      "lyrics": {
+        "real": [
+          "Tommy used to work on the docks, union's been on strike",
+          "Gina works the diner all day, working for her man",
+          "She says: We've gotta hold on to what we've got"
+        ],
+        "fake": [
+          "He dreams of a future where the sun don't shine no more",
+          "Tommy hits the gym, showing Gina what he prepares",
+          "They've gotta grow old togehter, so they stay strong"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YBdyc1WDlBQ",
+        "spotify": "37ZJ0p5Jm13JPevGcx4SkF",
+        "amazonMusic": "B0DX58WKTK"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "youtube-import",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/80s-bon-jovi-livin-on-a-prayer.jpg"
+    },
+    {
+      "id": "yt-bvbAZ2w-ggE",
+      "title": "Scars On This Guitar",
+      "artist": "Bon Jovi",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Rock/Metal mit emotionalen Vocals und Storytelling.",
+        "Schnelle, energetische Instrumentation.",
+        "Thematisiert persönliche Narben und Heilung.",
+        "Charakteristisch für 2010er Rock.",
+        "Dynamische Song-Struktur mit emotionalem Aufbau."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bvbAZ2w-ggE",
+        "spotify": "24xBDBBnYx5CAVhik8UcLI",
+        "amazonMusic": "B079VFVBCM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bon-jovi-scars-on-this-guitar.jpg"
+    },
+    {
+      "id": "yt-7raxxqP6DSU",
+      "title": "Aquecimento das Maravilhas (CLIPE OFICIAL)",
+      "artist": "Bonde das Maravilhas",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Funk/Samba-Fusion mit humorvollem, spielerischem Ansatz.",
+        "Schneller Rhythmus mit energetischen Vocals.",
+        "Thematisiert Partys und Nachtleben mit Freude.",
+        "Charakteristisch für brasilianische Pop-Musik.",
+        "Optimiert für Tanzbarkeit und Groove."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7raxxqP6DSU",
+        "spotify": "2XuKjeAR5Uj4NAPAyiiZxL",
+        "amazonMusic": "B0BYTJG3RL"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bonde-das-maravilhas-aquecimento-das-maravilhas--clipe-oficial-.jpg"
+    }
+  ]
+}

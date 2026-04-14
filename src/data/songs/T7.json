@@ -1,0 +1,571 @@
+{
+  "songs": [
+    {
+      "id": "80s-police-roxanne",
+      "title": "Roxanne",
+      "artist": "The Police",
+      "year": 1978,
+      "country": "GB",
+      "genre": "Reggae Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Rock"
+      ],
+      "hints": [
+        "Obwohl 1978 veröffentlicht, war es ein definierender Hit für die frühen 80er Jahre.",
+        "Der Song handelt von einem Mann, der sich in eine Prostituierte verliebt.",
+        "Das ikonische Lachen zu Beginn entstand, weil Sting sich versehentlich auf ein Klavier setzte.",
+        "Die Band verbindet hier Reggae-Rhythmen mit Punk-Energie.",
+        "Du musst das rote Licht nicht anmachen: '..., you don't have to put on the red light!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Roxanne, you don't have to put on the red light",
+          "Those days are over, you don't have to sell your body to the night",
+          "Roxanne, you don't have to wear that dress tonight"
+        ],
+        "fake": [
+          "Walking the streets of Paris, looking for a sign of love",
+          "Roxanne, I sit on your bed, your pillows are red",
+          "Roxanne, you should not stress this topic tonight"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "3T1c7GkzRQQ",
+        "spotify": "3S998fWun9i5z7K2iRptk3",
+        "amazonMusic": "B07QMMW7NF"
+      },
+      "coverUrl": "/covers/80s-police-roxanne.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "disco-prodigy-fire",
+      "title": "Firestarter",
+      "artist": "The Prodigy",
+      "year": 1996,
+      "country": "GB",
+      "genre": "Breakbeat / Punk-Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Classic",
+        "Dark",
+        "Energy",
+        "Raw"
+      ],
+      "hints": [
+        "Das Video in einem verlassenen U-Bahn-Tunnel schockierte damals viele Eltern.",
+        "Keith Flint wurde durch diesen Song zum Gesicht der Band und zur Punk-Ikone des Dance.",
+        "Mischt intensive Breakbeats mit aggressiven Synthesizern.",
+        "Ein markantes Sample stammt von der Rockband 'Breeders'.",
+        "Refrain: 'I'm the trouble starter, punkin' instigator!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm the trouble starter, punkin' instigator",
+          "I'm the fear addicted, danger illustrated",
+          "I'm the firestarter, twisted firestarter"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wmin5WkOuPw"
+      },
+      "coverUrl": "/covers/disco-prodigy-fire.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-GQbnRe1Y_q0",
+      "title": "Jump The Next Train (Slow Train Version)",
+      "artist": "The Prodigy",
+      "year": 2004,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2000er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GQbnRe1Y_q0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-prodigy-jump-the-next-train--slow-train-version-.jpg"
+    },
+    {
+      "id": "legends-stones-satisfaction",
+      "title": "(I Can't Get No) Satisfaction",
+      "artist": "The Rolling Stones",
+      "year": 1965,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Energy",
+        "Raw",
+        "Rebellious"
+      ],
+      "hints": [
+        "Keith Richards träumte das Riff und nahm es nachts auf einem Kassettenrekorder auf.",
+        "Einer der ersten Songs, der einen Fuzz-Effekt für die Gitarre prominent einsetzte.",
+        "Der Text kritisiert die Konsumgesellschaft und sexuelle Frustration.",
+        "Machte die [XXX] endgültig zu Rivalen der Beatles.",
+        "Refrain: 'I [XXX] get no [XXX], 'cause I try and I try...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I can't get no satisfaction, I can't get no satisfaction",
+          "Cause I try, and I try, and I try, and I try",
+          "I can't get no, I can't get no!"
+        ],
+        "fake": [
+          "Oh, ho, I forget no! I forget no!",
+          "Cause you fry, and I cry and I cry and I cry"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nrIPxlFzDi0",
+        "spotify": "2PzU4IB8Dr6mxV3lHuaG34",
+        "amazonMusic": "B004QCAIBY"
+      },
+      "coverUrl": "/covers/legends-stones-satisfaction.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "indie-the-smiths-light",
+      "title": "There Is a Light That Never Goes Out",
+      "artist": "The Smiths",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Thematisiert die Sehnsucht nach Zugehörigkeit und den Wunsch, nie wieder nach Hause zu müssen.",
+        "Morrisseys Texte werden hier perfekt durch Johnny Marrs orchestrale Gitarren-Arrangements ergänzt.",
+        "Die Zeile über einen Autounfall gilt als eine der berühmtesten im Indie-Bereich.",
+        "Ein Song über Isolation, Liebe und den Drang, der Enge der Vorstadt zu entfliehen.",
+        "Refrain: 'And if a ten-ton truck kills the both of us, to die by your side is such a heavenly way to die!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Take me out tonight, where there's music and there's people and they're young and alive",
+          "And if a ten-ton truck kills the both of us",
+          "To die by your side is such a heavenly way to die"
+        ],
+        "fake": "Walking through the city, feeling so pretty, in the middle of a pity"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "siO6dkqidc4"
+      },
+      "coverUrl": "/covers/indie-the-smiths-light.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-OYYZFx7_DS8",
+      "title": "This Charming Man (2011 Remaster)",
+      "artist": "The Smiths",
+      "year": 1983,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OYYZFx7_DS8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-smiths-this-charming-man--2011-remaster-.jpg"
+    },
+    {
+      "id": "soul-staple-there",
+      "title": "I'll Take You There",
+      "artist": "The Staple Singers",
+      "year": 1972,
+      "country": "US",
+      "genre": "Soul / Gospel / Reggae influence",
+      "difficulty": "easy",
+      "mood": [
+        "Positive",
+        "Spiritual",
+        "Relaxed"
+      ],
+      "hints": [
+        "Song mit charakteristischen Soul -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I know a place, ain't nobody crying, ain't nobody worried",
+          "Ain't no smiling faces lying to the races",
+          "I'll take you there"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "IhHBr7nMMio"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-staple-there.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-Qca9ByvLhBA",
+      "title": "Golden Brown",
+      "artist": "The Stranglers",
+      "year": 1981,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Qca9ByvLhBA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-stranglers-golden-brown.jpg"
+    },
+    {
+      "id": "hiphop-sugarhill-rappers-delight",
+      "title": "Rapper's Delight",
+      "artist": "The Sugarhill Gang",
+      "year": 1979,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Fun",
+        "Classic",
+        "Old School"
+      ],
+      "hints": [
+        "Gilt als der Song, der Hip Hop weltweit bekannt gemacht hat.",
+        "Basiert auf einem prominenten Sample von 'Good Times' der Band Chic.",
+        "Der Text beginnt mit 'I said a hip hop, hippie to the hippie, to the hip, hip hop...'.",
+        "Dauert in der Originallänge fast 15 Minuten.",
+        "Ein Meilenstein des frühen Rap-Sounds."
+      ],
+      "lyrics": {
+        "real": [
+          "I said a hip hop, hippie to the hippie, to the hip, hip hop, you don't stop",
+          "Rock it out with the bang bang boogie, say up jump the boogie, to the rhythm of the boogie, the beat",
+          "Now what you hear is not a test, I'm rapping to the beat"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "links": {
+        "youtube": "mcCK99wHrk0"
+      },
+      "coverUrl": "/covers/hiphop-sugarhill-rappers-delight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-I6T_ZAP52xM",
+      "title": "Stop! In The Name Of Love",
+      "artist": "The Supremes",
+      "year": 1965,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=I6T_ZAP52xM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-supremes-stop--in-the-name-of-love.jpg"
+    },
+    {
+      "id": "soul-supremes-hurrylove",
+      "title": "You Can't Hurry Love",
+      "artist": "The Supremes",
+      "year": 1966,
+      "country": "US",
+      "genre": "Soul / Motown-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für das perfekte Zusammenspiel von Diana Ross und den [XXX].",
+        "Besticht durch den treibenden 'Hollies'-artigen Beat und die ohrwurm-taugliche Melodie.",
+        "Thematisiert mütterliche Weisheit über das Abwarten in der Liebe.",
+        "Wurde Jahre später durch Phil Collins erneut zum Welthit.",
+        "Refrain: 'You [XXX] [XXX] [XXX]! No, you just have to wait!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I need love, love to ease my mind, I need to find, find someone to call mine",
+          "Mama said you can't hurry love, no you just have to wait",
+          "She said love don't come easy"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ovoBi3pXD_A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-supremes-hurrylove.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "soul-temptations-mygirl",
+      "title": "My Girl",
+      "artist": "The Temptations",
+      "year": 1964,
+      "country": "US",
+      "genre": "Soul / Motown",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für die Perfektion des 'Motown Sound'.",
+        "Besticht durch das markante Bass-Thema am Anfang und die eleganten Harmonien.",
+        "Thematisiert das Gefühl, dass eine geliebte Person wie Sonnenschein an einem bewölkten Tag ist.",
+        "Geschrieben von Smokey Robinson.",
+        "Refrain: 'I guess you'd say! What can make me feel this way? My [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've got sunshine on a cloudy day, when it's cold outside I've got the month of May",
+          "I guess you'd say what can make me feel this way?",
+          "My girl, my girl, my girl"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "C_CSjLiA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-temptations-mygirl.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "90s-verve-bitter-sweet-symphony",
+      "title": "Bitter Sweet Symphony",
+      "artist": "The Verve",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Britpop",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Das berühmte Streicher-Sample stammt aus einer Orchesterversion eines Rolling-Stones-Songs.",
+        "Im Video läuft der Sänger Richard Ashcroft stoisch geradeaus über den Bürgersteig und rammt Passanten.",
+        "Es gab jahrelange Rechtsstreitigkeiten um die Urheberrechte (die erst 2019 beigelegt wurden).",
+        "Thematisiert die menschliche Existenz als einen ständigen Kampf um Geld und Überleben.",
+        "Hörst du die Geigen? 'No change, I can change, I can change...'"
+      ],
+      "lyrics": {
+        "real": [
+          "'Cause it's a bittersweet symphony, this life",
+          "Try to make ends meet, you're a slave to money then you die",
+          "I'll take you down the only road I've ever been down"
+        ],
+        "fake": "Looking for the sun in the middle of a run in the light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "1lyu1KKwC74",
+        "spotify": "1WYEDcS7WGjv0rG7rmMX3o",
+        "amazonMusic": "B001QIB1FS"
+      },
+      "coverUrl": "/covers/90s-verve-bitter-sweet-symphony.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "songs": [
+    {
+      "id": "soul-gap-bomb",
+      "title": "You Dropped a Bomb on Me",
+      "artist": "The Gap Band",
+      "year": 1982,
+      "country": "US",
+      "genre": "Funk / Synth-Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Cool",
+        "Nightlife"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "You dropped a bomb on me, baby, you dropped a bomb on me",
+          "I was happy as I could be, until you came around",
+          "You dropped a bomb on me"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vEcV9E91gCw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gap-bomb.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "synth-humanleague-me",
+      "title": "Don't You Want Me",
+      "artist": "The Human League",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Drama",
+        "Dramatic",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Handelt von einem Dialog zwischen einem Entdecker und seiner ehemaligen Muse.",
+        "Inbegriff der frühen MTV-Ära mit seinem theatralischen Musikvideo.",
+        "Besticht durch den klaren, poppigen Synthesizer-Sound.",
+        "Der Refrain ist eine der stärksten Hooklines des Jahrzehnts.",
+        "Refrain: '[XXX] you [XXX] me baby? [XXX] you [XXX] me, oh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You were working as a waitress in a cocktail bar, when I met you",
+          "I picked you out, I shook you up, and turned you around",
+          "Don't you want me baby?"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "uPudE8nDog0",
+        "spotify": "3L7RtEcu1Hw3OXrpnthngx",
+        "amazonMusic": "B01M0E7QOA"
+      },
+      "coverUrl": "/covers/synth-humanleague-me.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "80s-pop",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "soul-isley-shout",
+      "title": "Shout",
+      "artist": "The Isley Brothers",
+      "year": 1959,
+      "country": "US",
+      "genre": "Soul / Rock and Roll / Gospel",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für den Call-and-Response-Stil des frühen Soul.",
+        "Besticht durch die unglaubliche Energie und den ständigen Aufbau der Intensität.",
+        "Thematisiert die Ekstase beim Tanzen und Singen.",
+        "Wurde zu einer festen Größe auf jeder Party weltweit.",
+        "Refrain: 'You know you make me wanna [XXX]! Throw my hands back and [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Well, you know you make me wanna shout, throw my hands back and shout",
+          "Kick my heels back and shout, come on now, don't forget to say you will",
+          "Shout! Shout! Shout!"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DPVf01jXL7M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-isley-shout.jpg",
+      "packs": [
+        "Soul & Funk Grooves",
+        "YouTube Collection"
+      ]
+    },
+    {
+      "id": "yt-I6etAHfECXc",
+      "title": "Stay",
+      "artist": "The Kid LAROI & Justin Bieber",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Modern Hits",
+        "Popular"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=I6etAHfECXc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/the-kid-laroi---justin-bieber-stay.jpg"
+    },
+    {
+      "id": "yt-kTJczUoc26U",
+      "title": "STAY",
+      "artist": "The Kid LAROI, Justin Bieber",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kTJczUoc26U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-kid-laroi--justin-bieber-stay.jpg"
+    },
+    {
+      "id": "indie-killers-brightside",
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "year": 2003,
+      "country": "US",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Sad",
+        "Sing-along"
+      ],
+      "hints": [
+        "Hält den Rekord für die meisten Wochen in den britischen Top 100 Charts.",
+        "Handelt von Eifersucht und der Paranoia nach dem Betrug einer Freundin.",
+        "Sänger Brandon Flower schrieb den Text in einem Casino in Las Vegas.",
+        "Beginnt mit dem markanten Gitarren-Arpeggio.",
+        "In britischen Bars ist es fast Gesetz, diesen Song laut mitzusingen."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm coming out of my cage and I've been doing just fine",
+          "Gotta gotta be down because I want it all",
+          "It started out with a kiss, how did it end up like this?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gGdGFtwCNBE"
+      },
+      "coverUrl": "/covers/indie-killers-brightside.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "indie-killers-somebody-told-me",
+      "title": "Somebody Told Me",
+      "artist": "The Killers",
+      "year": 2004,
+      "country": "US",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Electronic"
+      ],
+      "hints": [
+        "Ein Paradebeispiel für den Dance-Rock-Sound der frühen 2000er.",
+        "Der kryptische Text über eine Freundin, die wie ein Freund aussieht, ist weltberühmt.",
+        "Die Band stammt aus Las Vegas und kombiniert New-Wave-Einflüsse mit Rock.",
+        "Das Video zeigt die Band vor einer riesigen LED-Wand in der Wüste.",
+        "Refrain: '[XXX] [XXX] me that you had a boyfriend who looked like a girlfriend that I had in February of last year!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm breaking my back just to know your name, seventeen tracks and I've had it with this game",
+          "Somebody told me that you had a boyfriend who looked like a girlfriend that I had in February of last year",
+          "It's not confidential, I've got potential!"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y5fBdpreJiU"
+      },
+      "coverUrl": "/covers/indie-killers-somebody-told-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-fOGMRnKl5co",
+      "title": "All Day And All Of The Night",
+      "artist": "The Kinks",
+      "year": 1968,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fOGMRnKl5co"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-kinks-all-day-and-all-of-the-night.jpg"
+    },
+    {
+      "id": "yt-bZ4uGV6Goy0",
+      "title": "You Really Got Me",
+      "artist": "The Kinks",
+      "year": 1964,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bZ4uGV6Goy0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-kinks-you-really-got-me.jpg"
+    },
+    {
+      "id": "indie-lumineers-hohey",
+      "title": "Ho Hey",
+      "artist": "The Lumineers",
+      "year": 2012,
+      "country": "US",
+      "genre": "Indie Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Romantic",
+        "Singalong",
+        "Soft"
+      ],
+      "hints": [
+        "Bekannt für den markanten 'Ho!' und 'Hey!' Mitmach-Ruf.",
+        "Thematisiert Sehnsucht nach einer früheren Liebe und einfache Zweisamkeit.",
+        "Besticht durch das minimalistische Arrangement (Akustikgitarre, Tamburin).",
+        "Ein Inbegriff für den Erfolg des modernen, bodenständigen Folk.",
+        "Refrain: 'I belong with you, you belong with me! You're my sweetheart!'"
+      ],
+      "lyrics": {
+        "real": [
+          "(Ho!) I've been trying to do it right, (Hey!) I've been living a lonely life",
+          "I belong with you, you belong with me, you're my sweetheart",
+          "I belong with you, you belong with me, you're my sweet (Ho!)"
+        ],
+        "fake": "Dancing in the light, feeling so right, tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "zvCBSSwgtg4"
+      },
+      "coverUrl": "/covers/indie-lumineers-hohey.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "yt-4PQAqprjOuA",
+      "title": "I'm a Believer",
+      "artist": "The Monkees",
+      "year": 1966,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4PQAqprjOuA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/the-monkees-i-m-a-believer.jpg"
+    },
+    {
+      "id": "hiphop-bigg-juicy",
+      "title": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "year": 1994,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Inspirational",
+        "Classic",
+        "Groovy"
+      ],
+      "hints": [
+        "Eine 'Rags-to-Riches'-Geschichte über den Aufstieg vom Drogendealer zum Rap-Superstar.",
+        "Basiert auf dem '[XXX] Fruit'-Sample der Band Mtume.",
+        "Beginnt mit der berühmten Widmung: 'To all the teachers that told me I'd never amount to nothing'.",
+        "Ein absoluter Meilenstein des East Coast Hip Hop.",
+        "Refrain: 'It was all a dream, I used to read Word Up! magazine!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It was all a dream, I used to read Word Up! magazine",
+          "Salt-n-Pepa and Heavy D up in the limousine",
+          "Hangin' pictures on my wall, every Saturday Rap Attack, Mr. Magic, Marley Marl"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "links": {
+        "youtube": "_JZom_gVfuw"
+      },
+      "coverUrl": "/covers/hiphop-bigg-juicy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "80s-police-breath",
+      "title": "Every Breath You Take",
+      "artist": "The Police",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Pop / Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "German New Wave",
+        "Moody",
+        "Obsessive",
+        "Popular"
+      ],
+      "hints": [
+        "Wird oft fälschlicherweise als Liebeslied gespielt, handelt aber eigentlich von Besessenheit und Überwachung.",
+        "Geschrieben von Sting nach seiner Trennung.",
+        "Der meistgespielte Song in der Geschichte des Radios (laut BMI).",
+        "Die berühmte Gitarrenfigur wird oft nachgeahmt, ist aber schwer perfekt zu spielen.",
+        "Ich werde dich beobachten: '[XXX] [XXX] you [XXX], [XXX] move you make...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Every breath you take, and every move you make",
+          "Every bond you break, every step you take, I'll be watching you",
+          "Every single day, and every word you say, every game you play, every night you stay"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of your broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OMOGaugKpzs",
+        "spotify": "1JSTJqkT5qHq8MDJnJbRE1",
+        "amazonMusic": "B0040BRK3U"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-police-breath.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "youtube-import",
+        "80s Flashback"
+      ]
+    }
+  ]
+}

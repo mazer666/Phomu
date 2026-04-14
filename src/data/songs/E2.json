@@ -1,0 +1,517 @@
+{
+  "songs": [
+    {
+      "id": "yt-uTK_7MOFV4s",
+      "title": "Paco El Marinero | El Reino Infantil",
+      "artist": "El Marinero Baila",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uTK_7MOFV4s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/el-marinero-baila-paco-el-marinero---el-reino-infantil.jpg"
+    },
+    {
+      "id": "yt-5FVhN8F8qxs",
+      "title": "Numb",
+      "artist": "Elderbrook",
+      "year": 2024,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5FVhN8F8qxs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/elderbrook-numb.jpg"
+    },
+    {
+      "id": "yt-k0h82h3wbco",
+      "title": "Dirty Dancing",
+      "artist": "Electric Callboy",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=k0h82h3wbco"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "metal-callboy-moves",
+      "title": "We Got the Moves",
+      "artist": "Electric Callboy",
+      "year": 2021,
+      "country": "DE",
+      "genre": "Electronicore / Party Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Happy",
+        "Energy"
+      ],
+      "hints": [
+        "Machte die Band zum globalen viralen Phänomen (samt Pilz-Frisuren).",
+        "Kombiniert extrem harte Breakdowns mit Eurodance-Clubsound.",
+        "Thematisiert unbeschwertes Feiern und Spaß an der Musik.",
+        "Ein Inbegriff für 'Party-Metal' aus Deutschland.",
+        "Refrain: 'Döp, döp, döp, döp, döp, döp, döp, döp! We've got the [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Summer is calling, we're ready to dance",
+          "Döp döp döp döp baby, we got the moves",
+          "Best time of our lives, right here right now"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "D1NdGBldg3w"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-callboy-moves.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "jazz-fitzgerald-summertime",
+      "title": "Summertime",
+      "artist": "Ella Fitzgerald & Louis Armstrong",
+      "year": 1957,
+      "country": "US",
+      "genre": "Jazz / Vocal",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Standard aus der Oper 'Porgy and Bess' von George Gershwin.",
+        "Die Version von [XXX] und [XXX] gilt als eine der vollkommensten Interpretationen.",
+        "Besticht durch die sommerliche Ruhe und die harmonischen Stimmen.",
+        "Handelt von einem Wiegenlied in einer heißen Sommernacht.",
+        "Refrain: '[XXX]... and the livin' is easy!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Summertime, and the livin' is easy, fish are jumpin' and the cotton is high",
+          "Oh your daddy's rich and your ma is good lookin'",
+          "So hush little baby, don't you cry"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2HJCN3upMHE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-fitzgerald-summertime.jpg",
+      "packs": [
+        "Jazz & Blues Classics",
+        "Country, Jazz & Blues"
+      ]
+    },
+    {
+      "id": "disney-lion-love",
+      "title": "Can You Feel the Love Tonight",
+      "artist": "Elton John",
+      "year": 1994,
+      "country": "GB",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Disney",
+        "Emotional",
+        "Epic",
+        "Romantic"
+      ],
+      "hints": [
+        "Dieser Song ist das Herzstück des Disney-Animationsfilms 'Der König der Löwen'.",
+        "Wurde ursprünglich für die Charaktere Timon und Pumbaa geschrieben, aber [XXX] [XXX] wollte eine ernsthafte Ballade.",
+        "Gewann den Oscar für den Besten Originalsong 1995.",
+        "Refrain: 'And can you [XXX] the [XXX] [XXX]? It is where we are.'",
+        "Besonders bewegend im Zusammenspiel mit Hans Zimmers Filmmusik."
+      ],
+      "lyrics": {
+        "real": [
+          "There's a calm surrender to the rush of day",
+          "And can you feel the love tonight? It is where we are",
+          "It's enough for this wide-eyed wanderer that we got this far"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "KjgWWjkNbhU"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-lion-love.jpg",
+      "packs": [
+        "Kids & Disney Magic",
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "yt-gpRxyIPqVDw",
+      "title": "Sacrifice",
+      "artist": "Elton John",
+      "year": 1989,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1980er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gpRxyIPqVDw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/elton-john-sacrifice.jpg"
+    },
+    {
+      "id": "piano-elton-yoursong",
+      "title": "Your Song",
+      "artist": "Elton John",
+      "year": 1970,
+      "country": "GB",
+      "genre": "Pop / Piano Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX]s erster großer Welthit, geschrieben mit Bernie Taupin.",
+        "Besticht durch seine unschuldige, ehrliche Liebeserklärung.",
+        "Thematisiert das Schenken eines [XXX]s als Ausdruck tiefster Zuneigung.",
+        "Bernie Taupin schrieb den Text angeblich am Frühstückstisch.",
+        "Refrain: 'And you can tell everybody! This is your [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's a little bit funny, this feeling inside",
+          "I'm not one of those who can easily hide",
+          "I know it's not much, but it's the best I can do",
+          "My gift is my song, and this one's for you"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GlPlfCy1urI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-elton-yoursong.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt--A1tuJSRBJQ",
+      "title": "Hold Me Closer",
+      "artist": "Elton John & Britney Spears",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-A1tuJSRBJQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/elton-john---britney-spears-hold-me-closer.jpg"
+    },
+    {
+      "id": "finale-elton-dua-cold",
+      "title": "Cold Heart (PNAU Remix)",
+      "artist": "Elton John & Dua Lipa",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Disco-Pop / Remix",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Mashup aus mehreren [XXX] [XXX] Klassikern (Rocket Man, Sacrifice, Kiss the Bride).",
+        "Kombiniert zwei Generationen der britischen Pop-Elite.",
+        "Besticht durch den entspannten Disco-Groove und den nostalgischen Charme.",
+        "Bescherte [XXX] [XXX] seinen ersten Nummer-1-Hit seit Jahrzehnten.",
+        "Refrain: 'And I think it's gonna be a long, long time!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's a human sign when things go wrong, when the scent of her lingers and temptation's strong",
+          "And I think it's gonna be a long, long time",
+          "Cold cold heart, hardened by you"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YjEqEHTgXLk"
+      },
+      "coverUrl": "/covers/finale-elton-dua-cold.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "movie-lion-king-circle",
+      "title": "Circle of Life",
+      "artist": "Elton John / Carmen Twillie",
+      "year": 1994,
+      "country": "US/ZA",
+      "genre": "Pop / World",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Titelsong des Disney-Klassikers 'Der König der Löwen'.",
+        "Beginnt mit dem berühmten Zulu-Gesang von Lebo M. ('Nants ingonyama bagithi baba').",
+        "Thematisiert den Kreislauf des Lebens in der afrikanischen Savanne.",
+        "Geschrieben von [XXX] [XXX] und Tim Rice.",
+        "Ein Symbol für Hoffnung und generationsübergreifende Verantwortung."
+      ],
+      "lyrics": {
+        "real": [
+          "Nants ingonyama bagithi baba, sithi uhm ingonyama",
+          "It's the circle of life, and it moves us all",
+          "Through despair and hope, through faith and love"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "GibiNy4d4gc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-lion-king-circle.jpg",
+      "packs": [
+        "Movie Hits",
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt--esD-o4XrJ0",
+      "title": "Don't Go Breaking My Heart (with RuPaul)",
+      "artist": "Elton John, RuPaul",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-esD-o4XrJ0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/elton-john--rupaul-don-t-go-breaking-my-heart--with-rupaul-.jpg"
+    },
+    {
+      "id": "yt-WPiEbYSF9kE",
+      "title": "Suavemente",
+      "artist": "Elvis Crespo",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WPiEbYSF9kE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/elvis-crespo-suavemente.jpg"
+    }
+  ]
+}

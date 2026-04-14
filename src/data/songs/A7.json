@@ -1,0 +1,502 @@
+{
+  "songs": [
+    {
+      "id": "metal-anthrax-madhouse",
+      "title": "Madhouse",
+      "artist": "Anthrax",
+      "year": 1985,
+      "country": "US",
+      "genre": "Thrash Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Crazy",
+        "Aggressive"
+      ],
+      "hints": [
+        "Vereint Thrash-Energie mit einem fast schon poppigen Hook.",
+        "Thematisiert Wahnsinn und den Aufenthalt in einer psychiatrischen Anstalt.",
+        "Besticht durch den klaren, fast melodischen Gesang des Frontsängers und die druckvolle Produktion.",
+        "Einer der 'Big Four' des Thrash Metal.",
+        "Refrain: 'It's a [XXX]! Or so they say!'"
+      ],
+      "lyrics": {
+        "real": [
+          "White coats, to Bind me, Out of control",
+          "It's a madhouse, or so they say",
+          "It's a madhouse, oh am I the one who's crazy?"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Zl2-SYkMtPA",
+        "spotify": "76BYv24CcZt2u94JRjmATX",
+        "amazonMusic": "B017NC8W70"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-anthrax-madhouse.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-faFVSS6OllQ",
+      "title": "Triste Recuerdo",
+      "artist": "Antonio Aguilar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine melancholische Ranchera über schmerzhafte Erinnerungen an eine verlorene Liebe.",
+        "Der Titel bedeutet 'Traurige Erinnerung' – ein Klassiker der mexikanischen Volksmusik.",
+        "Der Sänger gilt als einer der größten Legenden der mexikanischen Ranchera-Musik.",
+        "Besticht durch Mariachi-Klänge und die kraftvolle, raue Stimme des Interpreten.",
+        "Ein zeitloser Ausdruck von Schmerz und Nostalgie, tief verwurzelt in der mexikanischen Kultur."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "faFVSS6OllQ",
+        "spotify": "5wLqk86XlgZCzP8mMG9PrF",
+        "amazonMusic": "B084V6ZGM1"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/antonio-aguilar-triste-recuerdo.jpg"
+    },
+    {
+      "id": "yt-Iv3T2Y1QJ7M",
+      "title": "Un Puño De Tierra",
+      "artist": "Antonio Aguilar",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine tiefgründige Ranchera über die Vergänglichkeit des Lebens und den Tod.",
+        "Der Titel bedeutet 'Eine Handvoll Erde' – eine Metapher für das, was nach dem Tod bleibt.",
+        "Der Sänger war eine lebende Legende der mexikanischen Volksmusik und des Charro-Stils.",
+        "Besticht durch einen feierlichen, fast zeremoniellen Ton und ein volles Mariachi-Arrangement.",
+        "Ein Song, der in Mexiko regelmäßig bei Beerdigungen und Gedenkfeiern gespielt wird."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Iv3T2Y1QJ7M",
+        "spotify": "3u7O19xI9Y9O7E7O9Y7O8Y",
+        "amazonMusic": "B08473PCN9"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/antonio-aguilar-un-puño-de-tierra.jpg"
+    },
+    {
+      "id": "class-vivaldi-spring",
+      "title": "The Four Seasons (Spring)",
+      "artist": "Antonio Vivaldi",
+      "year": 1725,
+      "country": "IT",
+      "genre": "Baroque",
+      "difficulty": "easy",
+      "mood": [
+        "Positive",
+        "Lively",
+        "Classic"
+      ],
+      "hints": [
+        "Inbegriff für Programmmusik: Die Geige imitiert Vögel, Bäche und Gewitter.",
+        "Besticht durch das fröhliche, beschwingte Hauptthema der Streicher.",
+        "Der Komponist verfasste zu jedem Satz ein erklärendes Sonett.",
+        "Eines der meistgespielten Werke der Barockmusik.",
+        "Entstand um 1725 und ist über 300 Jahre später noch immer in Fahrstühlen, Werbespots und Konzerthäusern zu hören."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Baroque)",
+          "Spring has come with joy",
+          "The birds greet it with their song"
+        ],
+        "fake": "Flowers bloom in the garden of love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "41IOkVjy3MM",
+        "spotify": "103vQxq8idZLN0n0j5Xunl",
+        "amazonMusic": "B0GQJM27H8"
+      },
+      "coverUrl": "/covers/class-vivaldi-spring.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-AnKdQ5p5Ks8",
+      "title": "Ayer ft. Dj Nelson",
+      "artist": "Anuel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein früher Latin-Trap-Track des puertoricanischen Künstlers, der sein Genre mitprägte.",
+        "Der Titel bedeutet 'Gestern' – ein Blick zurück auf eine vergangene Liebe oder ein vergangenes Leben.",
+        "Der Sänger ist bekannt für seinen düsteren, straßenorientierten Trap-Stil.",
+        "Besticht durch einen treibenden Trap-Beat und die raue, authentische Stimmführung.",
+        "Ein typisches Beispiel für den Latino-Trap-Sound, der Mitte der 2010er international durchbrach."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AnKdQ5p5Ks8",
+        "spotify": "7z6OmOXckAgyfXf5UJ7M5L",
+        "amazonMusic": "B06XZ42TLH"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/anuel-ayer-ft--dj-nelson.jpg"
+    },
+    {
+      "id": "yt-NsOHFQSdt78",
+      "title": "Nacimos Pa Morir  ft. Jory",
+      "artist": "Anuel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein düsterer Latin-Trap-Track über das Leben auf der Straße und die Allgegenwart des Todes.",
+        "Der Titel bedeutet 'Wir wurden geboren, um zu sterben' – eine existenzielle Aussage.",
+        "Verbindet urbanen Trap-Sound mit dem pessimistischen Weltbild des Straßenlebens.",
+        "Besticht durch einen schweren Beat und die kompromisslose Direktheit der Texte.",
+        "Ein Duett zweier Latin-Trap-Künstler, das die Ernsthaftigkeit des Genres unterstreicht."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NsOHFQSdt78",
+        "spotify": "3tEJZO2wMtvhQH5EKfKbkh",
+        "amazonMusic": "B07N8XCBCB"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/anuel-nacimos-pa-morir--ft--jory.jpg"
+    },
+    {
+      "id": "yt-77zog6Up_Yg",
+      "title": "Barbie Girl",
+      "artist": "Aqua",
+      "year": 1997,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Einer der bekanntesten Eurodance-Hits der 90er – kitschig, bunt und unwiderstehlich.",
+        "Löste einen Rechtsstreit mit dem Spielzeughersteller aus – und gewann damit noch mehr Aufmerksamkeit.",
+        "Das dänisch-norwegische Quartett wurde mit diesem Song weltweit berühmt.",
+        "Besticht durch den Wechsel zwischen der piepsigen Frauenstimme und dem tiefen Männerpart.",
+        "Refrain: 'I'm a [XXX] [XXX], in a [XXX] world!'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "77zog6Up_Yg",
+        "spotify": "5ZrDlcxIDZyjOzHdYW1ydr",
+        "amazonMusic": "B0C6WLY85C"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/aqua-barbie-girl.jpg"
+    },
+    {
+      "id": "indie-arcade-fire-wake-up",
+      "title": "Wake Up",
+      "artist": "Arcade Fire",
+      "year": 2004,
+      "country": "CA",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Powerful"
+      ],
+      "hints": [
+        "Bekannt für den riesigen 'Whoa-oh-oh'-Chor, der am Anfang des Liedes einsetzt.",
+        "Wurde oft von David Bowie gelobt, der sogar mit der Band auftrat.",
+        "Handelt vom schmerzhaften Übergang zum Erwachsenwerden und dem Verlust der Unschuld.",
+        "Wurde als Eröffnungssong für den Film 'Where the Wild Things Are' verwendet.",
+        "Refrain: 'If the children don't grow up, our bodies get bigger but our hearts get torn up!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Something filled up my heart with nothing, someone told me not to cry",
+          "But now that I'm older, my heart's colder and I can't look you in the eye",
+          "If the children don't grow up, our bodies get bigger but our hearts get torn up"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "sJRPPUr1yic",
+        "spotify": "6Hmj7SrLRbreLVfVS7mV1S",
+        "amazonMusic": "B071KP7H63"
+      },
+      "coverUrl": "/covers/indie-arcade-fire-wake-up.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-RcmhoqMm7G0",
+      "title": "ARCANGEL FT. DADDY YANKEE | GUAYA (Audio Oficial)",
+      "artist": "Arcangel & Daddy Yankee",
+      "year": 2012,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mitreißender Reggaeton-Track aus Puerto Rico mit zwei der bekanntesten Namen des Genres.",
+        "Der Titel ist puertoricanischer Slang für das aufreizende Tanzen auf einer Party.",
+        "Erschienen 2012 als Kollaboration zweier Reggaeton-Schwergewichte.",
+        "Besticht durch einen treibenden Dembow-Rhythmus und die dynamische Chemie der beiden Rapper.",
+        "Ein typisches Beispiel für den urbanen Reggaeton-Sound der frühen 2010er Jahre."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "RcmhoqMm7G0",
+        "spotify": "6qVxcpqKeVDxcT0eMMWtyN",
+        "amazonMusic": "B00GQ7OM5U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/arcangel---daddy-yankee-arcangel-ft--daddy-yankee---guaya--audio-oficial-.jpg"
+    },
+    {
+      "id": "metal-architects-doomsday",
+      "title": "Doomsday",
+      "artist": "Architects",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Metalcore / Progressive Metalcore",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Zutiefst emotionaler Song, geschrieben nach dem Krebstod von Gitarrist Tom Searle.",
+        "Thematisiert Trauer, Erinnerung und das Weiterleben.",
+        "Besticht durch das komplexe Riffing und den leidenschaftlichen, emotionalen Gesang des Frontsängers.",
+        "Ein Meilenstein des modernen Metalcore.",
+        "Refrain: 'They say the ocean's blue! But it's black as the night!'"
+      ],
+      "lyrics": {
+        "real": [
+          "They say the ocean's blue, but it's black as the night",
+          "I'm still searching for the light in the dark",
+          "Every word I say is a prayer for you"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "RvWbcK3YQ_o",
+        "spotify": "75R95k0ICuZBFVEjBauOtt",
+        "amazonMusic": "B07ZMHQ1JD"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-architects-doomsday.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "indie-arctic-monkeys-do-i-wanna-know",
+      "title": "Do I Wanna Know?",
+      "artist": "Arctic Monkeys",
+      "year": 2013,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Sexy",
+        "Moody"
+      ],
+      "hints": [
+        "Das markante, schleppende Riff wurde sofort zum Klassiker des modernen Rock.",
+        "Der Frontsänger liefert einen unterkühlten, fast flüsternden Gesang, der perfekt zur schleppenden Rhythmik passt.",
+        "Das Musikvideo zeigt hypnotische, fließende Linien-Animationen.",
+        "Thematisiert die Unsicherheit und Sehnsucht nach einer alten Flamme.",
+        "Refrain: 'Do I [XXX] [XXX] If this feeling flows both ways?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Have you got colour in your cheeks? Do you ever get that fear that you can't shift the tide?",
+          "Crawling back to you, ever thought of calling when you've had a few?",
+          "Do I wanna know? If this feeling flows both ways?"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bpOSxM0rNPM",
+        "spotify": "5FVjtM5XPrpXjXWkPzJ0X9",
+        "amazonMusic": "B00EXX5J88"
+      },
+      "coverUrl": "/covers/indie-arctic-monkeys-do-i-wanna-know.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "finale-arctic-yours",
+      "title": "I Wanna Be Yours",
+      "artist": "Arctic Monkeys",
+      "year": 2013,
+      "country": "GB",
+      "genre": "Indie Rock / Classic (resurgence)",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Romantic",
+        "Cool"
+      ],
+      "hints": [
+        "Erlebte 2023 durch Social Media ein beispielloses globales Comeback.",
+        "Basiert auf einem Gedicht von John Cooper Clarke.",
+        "Besticht durch den schleppenden Rhythmus und den unterkühlten Charme des Frontsängers.",
+        "Erschienen 2013, aber erst 2023 durch TikTok zum globalen Phänomen geworden.",
+        "Refrain: 'I [XXX] be your vacuum cleaner! Breathing in your dust!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I wanna be your vacuum cleaner, breathing in your dust",
+          "I wanna be your Ford Cortina, I will never rust",
+          "I just wanna be yours"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "nyuo9-OjNNg",
+        "spotify": "5XeFesFbtLpXzIVDNQP22n",
+        "amazonMusic": "B00EXX5QEK"
+      },
+      "coverUrl": "/covers/finale-arctic-yours.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    }
+  ]
+}

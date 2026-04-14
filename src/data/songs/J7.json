@@ -1,0 +1,487 @@
+{
+  "songs": [
+    {
+      "id": "80s-journey-believin",
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "year": 1981,
+      "country": "US",
+      "genre": "Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Happy",
+        "Inspirational",
+        "Inspiring",
+        "Legends & Classics",
+        "Popular",
+        "Positive",
+        "Rock",
+        "Sing-along"
+      ],
+      "hints": [
+        "Dieser Song erlebte durch die Serie 'The Sopranos' und 'Glee' ein riesiges Comeback.",
+        "Der 'South Detroit', von dem im Text die Rede ist, existiert geografisch eigentlich gar nicht.",
+        "Gilt als der meistverkaufte digitale Song des 20. Jahrhunderts.",
+        "Die Hymne für alle 'Small Town Girls' und 'City Boys'.",
+        "Refrain: '[XXX] [XXX] [XXX], hold on to that feelin''"
+      ],
+      "lyrics": {
+        "real": [
+          "Just a small town girl, livin' in a lonely world",
+          "Don't stop believin', hold on to that feelin'",
+          "Streetlights, people, oh-oh-oh"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "x3idGV-7kSQ",
+        "spotify": "77NNZQSqzLNqh2A9JhLRkg",
+        "amazonMusic": "B00137GHF6"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-journey-believin.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "Rock Anthems",
+        "youtube-import",
+        "80s Flashback",
+        "piano-ballads"
+      ]
+    },
+    {
+      "id": "yt-M-9TLTtqQnU",
+      "title": "Un Poquito Na Mas ft. Tego Calderon [Official Audio]",
+      "artist": "Jowell y Randy",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=M-9TLTtqQnU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/jowell-y-randy-un-poquito-na-mas-ft--tego-calderon--official-audio-.jpg"
+    },
+    {
+      "id": "80s-joy-japanese",
+      "title": "Japanese Girls",
+      "artist": "Joy",
+      "year": 1986,
+      "country": "AT",
+      "genre": "Euro Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Österreichischer Euro-Disco-Beitrag zum weltweiten Erfolg.",
+        "Thematisiert die Faszination für ferne Länder und deren Bewohner.",
+        "Besonders in Asien wurde der Song zu einem gigantischen Erfolg.",
+        "Ein Inbegriff für unbeschwerten 80er-Jahre-Tanzsound.",
+        "Refrain: '[XXX] [XXX]! Oh, oh, oh, oh!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Japanese girls, Japanese girls, I love you Japanese girls",
+          "In the land of the rising sun, she's the one and only one",
+          "Japanese girls, oh oh oh oh"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ye7SNKVu8Cw",
+        "spotify": "1OOTrXdIA0YlPo9J8J42SR",
+        "amazonMusic": "B00J7EG5S6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-joy-japanese.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-sZ7jPM6_H9g",
+      "title": "Transmission",
+      "artist": "Joy Division",
+      "year": 1979,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische klassischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sZ7jPM6_H9g"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/joy-division-transmission.jpg"
+    },
+    {
+      "id": "yt-uZrRfOSG0Vg",
+      "title": "\"Deixa A Gente Quieto\" Part. Henrique e Juliano (Oficial)",
+      "artist": "João Bosco e Vinicius",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uZrRfOSG0Vg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/joão-bosco-e-vinicius--deixa-a-gente-quieto--part--henrique-e-juliano--oficial-.jpg"
+    },
+    {
+      "id": "yt-_tNVEhSelH0",
+      "title": "Abrázame Muy Fuerte (En Vivo Desde Bellas Artes, México/ 2013)",
+      "artist": "Juan Gabriel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_tNVEhSelH0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juan-gabriel-abrázame-muy-fuerte--en-vivo-desde-bellas-artes--méxico--2013-.jpg"
+    },
+    {
+      "id": "yt-ga5Bo4YdgH4",
+      "title": "Hasta Que Te Conocí (En Vivo [Desde el Instituto Nacional de Bellas Artes])",
+      "artist": "Juan Gabriel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ga5Bo4YdgH4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juan-gabriel-hasta-que-te-conocí--en-vivo--desde-el-instituto-nacional-de-bellas-artes--.jpg"
+    },
+    {
+      "id": "yt-SSNSRcpuchw",
+      "title": "No Tengo Dinero (Cover Audio)",
+      "artist": "Juan Gabriel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SSNSRcpuchw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juan-gabriel-no-tengo-dinero--cover-audio-.jpg"
+    },
+    {
+      "id": "yt-g5rsnxJWNkM",
+      "title": "Se Me Olvidó Otra Vez (En Vivo [Desde el Instituto Nacional de Bellas Artes])",
+      "artist": "Juan Gabriel",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=g5rsnxJWNkM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juan-gabriel-se-me-olvidó-otra-vez--en-vivo--desde-el-instituto-nacional-de-bellas-artes--.jpg"
+    },
+    {
+      "id": "yt-w4yjZEVQnr0",
+      "title": "El Destino",
+      "artist": "Juan Gabriel Dueto con Rocio Durcal",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=w4yjZEVQnr0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juan-gabriel-dueto-con-rocio-durcal-el-destino.jpg"
+    },
+    {
+      "id": "yt-kRt2sRyup6A",
+      "title": "La Camisa Negra",
+      "artist": "Juanes",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kRt2sRyup6A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juanes-la-camisa-negra.jpg"
+    },
+    {
+      "id": "yt-ihE74nG8ioc",
+      "title": "Volverte A Ver",
+      "artist": "Juanes",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ihE74nG8ioc"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/juanes-volverte-a-ver.jpg"
+    },
+    {
+      "id": "metal-priest-breaking",
+      "title": "Breaking the Law",
+      "artist": "Judas Priest",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Heavy Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Aggressive",
+        "Classic"
+      ],
+      "hints": [
+        "Besitzt eines der bekanntesten Metal-Riffs der Musikgeschichte.",
+        "Thematisiert Frustration und den Ausbruch aus dem grauen Alltag.",
+        "Rob Halfords kraftvoller, schneidender Gesang ist legendär.",
+        "Ein absoluter Party- und Live-Klassiker.",
+        "Refrain: '[XXX] the law! [XXX] the law!'"
+      ],
+      "lyrics": {
+        "real": [
+          "There I was completely wasted, out of work and down",
+          "I couldn't take it any longer, there was no more to be found",
+          "Breaking the law, breaking the law"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "L397TWLwrUU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-priest-breaking.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    }
+  ]
+}

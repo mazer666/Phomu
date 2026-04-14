@@ -1,0 +1,162 @@
+{
+  "songs": [
+    {
+      "id": "country-combs-hurricane",
+      "title": "Hurricane",
+      "artist": "Luke Combs",
+      "year": 2016,
+      "country": "US",
+      "genre": "Country / Rock influence",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Energy"
+      ],
+      "hints": [
+        "Thematisiert das plötzliche Wiedersehen mit einer verflossenen Liebe als Naturereignis.",
+        "Der Sänger hat eine kraftvolle, ehrliche Stimme – sie machte ihn zum Gesicht des modernen Country.",
+        "Besticht durch den treibenden Rhythmus und den eingängigen Chorus.",
+        "Ein Inbegriff für den Erfolg des 'Everyman' Country.",
+        "Refrain: 'Then you rolled in with your hair in the wind! Just like a [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The moon went hiding, a lonely night driving",
+          "Then you rolled in with your hair in the wind, just like a hurricane",
+          "You wrecked my whole world, girl"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "BixwVsiDdZM"
+      },
+      "coverUrl": "/covers/country-combs-hurricane.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "yt-tSamjnqHgIw",
+      "title": "Mayor Que Yo 3",
+      "artist": "Luny Tunes, Daddy Yankee, Wisin, Don Omar, Yandel",
+      "year": 2007,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Fünf der größten Reggaeton-Stars der 2000er auf einem einzigen Track.",
+        "Produziert von Luny Tunes – dem einflussreichsten Reggaeton-Produktionsduo seiner Zeit.",
+        "Der Titel bedeutet 'Älter als ich' – der Song dreht sich um eine reifere Frau.",
+        "Teil einer Reihe – diese ist die dritte Version mit dem bekanntesten Line-up.",
+        "Refrain: 'Ella es [XXX] que [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tSamjnqHgIw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/luny-tunes--daddy-yankee--wisin--don-omar--yandel-mayor-que-yo-3.jpg"
+    },
+    {
+      "id": "soul-luther-toomuch",
+      "title": "Never Too Much",
+      "artist": "Luther Vandross",
+      "year": 1981,
+      "country": "US",
+      "genre": "R&B / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Sänger gilt als einer der größten Soul-Stimmen aller Zeiten – bekannt für seinen seidenweichen Gesang.",
+        "Thematisiert den unstillbaren Hunger nach der Anwesenheit der geliebten Person.",
+        "Ein Inbegriff für den polierten R&B-Sound der frühen 80er.",
+        "Refrain: 'A thousand kisses from you is [XXX] too [XXX]!'",
+        "Debütsingle des Künstlers – und sofort ein Klassiker."
+      ],
+      "lyrics": {
+        "real": [
+          "I can't fool myself, I don't want nobody else to ever love me",
+          "A thousand kisses from you is never too much",
+          "And I just don't wanna stop"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pNj9bXKGOiI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-luther-toomuch.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt--p8GXZcdrIk",
+      "title": "Sweet Home Alabama",
+      "artist": "Lynyrd Skynyrd",
+      "year": 1974,
+      "country": "US",
+      "genre": "Southern Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Erschienen 1974 – einer der meistgespielten Rock-Songs im US-Radio aller Zeiten.",
+        "Ursprünglich als Antwort auf Neil Youngs kritische Songs über den amerikanischen Süden geschrieben.",
+        "Das gitarrenlastige Intro ist eines der ikonischsten der Rockgeschichte.",
+        "Ironischerweise stammt die Band gar nicht aus dem Ort, den sie im Song besingt.",
+        "Refrain: '[XXX] [XXX] [XXX], where the skies are so [XXX]!'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-p8GXZcdrIk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lynyrd-skynyrd-sweet-home-alabama.jpg"
+    }
+  ]
+}

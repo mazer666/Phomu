@@ -1,0 +1,505 @@
+{
+  "songs": [
+    {
+      "id": "dance-la-bouche-be-my-lover",
+      "title": "Be My Lover",
+      "artist": "La Bouche",
+      "year": 1995,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
+      "hints": [
+        "Dieser Eurodance-Hit kam aus Deutschland, klingt aber wie purer amerikanischer Pop.",
+        "Produziert von Frank Farian – dem Mann hinter Boney M. und Milli Vanilli.",
+        "Die Sängerin verstarb tragisch 2001 bei einem Flugzeugabsturz – ihr Erbe lebt in diesem Song.",
+        "Der Song startet mit einer einprägsamen Silben-Melodie, die sofort ohrwurmartig wirkt.",
+        "Refrain: 'Be my [XXX], wanna be my [XXX], go and be my [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "La da da dee da da da da, be my lover",
+          "Wanna be my lover, looking back on all the time we spent together",
+          "You oughta know by now if you wanna be my lover"
+        ],
+        "fake": "Sun is coming up and we're dancing till the light of day"
+      },
+      "links": {
+        "youtube": "ViP87WipSm0"
+      },
+      "coverUrl": "/covers/dance-la-bouche-be-my-lover.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-6nl5U0O5nOU",
+      "title": "Perdóname",
+      "artist": "La Factoría ft. Eddy Lover",
+      "year": 2006,
+      "country": "PA",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Diese Gruppe kommt aus Panama und singt über Herzschmerz.",
+        "Ein Reggaeton-Song über Untreue – einer bittet, der andere ist verletzt.",
+        "Das Feature kommt von einem Landsmann: Eddy Lover.",
+        "Der Titel ist ein einziges spanisches Wort – eine direkte Entschuldigung.",
+        "Refrain: '[XXX]me, [XXX]me...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6nl5U0O5nOU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-factoria-perdoname-ft--eddy-lover.jpg"
+    },
+    {
+      "id": "yt-XngTiXBPmEE",
+      "title": "La Ocasión",
+      "artist": "De La Ghetto, Arcangel, Ozuna, Anuel AA, DJ Luian, Mambo Kingz",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Trap",
+      "difficulty": "medium",
+      "mood": [
+        "Trap",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Sechs der größten Namen des Latin Trap auf einem einzigen Track.",
+        "Produziert von DJ Luian und Mambo Kingz – die Hitschmiede hinter vielen Reggaeton-Klassikern.",
+        "Ozuna und Anuel AA waren damals noch keine Superstars – ein früher Karriere-Meilenstein beider.",
+        "Der Titel bedeutet 'die Gelegenheit' – und alle sechs Künstler nutzten sie.",
+        "Refrain: 'Esta es la [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "XngTiXBPmEE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-ocasión-de-la-ghetto--arcangel--ozuna--anuel-aa--dj-luian--mambo-kingz.jpg"
+    },
+    {
+      "id": "yt-X05T3FmRzZ0",
+      "title": "Recuérdame",
+      "artist": "La Quinta Estación ft. Marc Anthony",
+      "year": 2016,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine spanische Pop-Gruppe trifft auf einen der größten Salsa-Stars der Welt.",
+        "Das Feature ist ein New Yorker Latino-Superstar, bekannt für dramatische Liebessongs.",
+        "Der Titel ist eine Bitte – 'Vergiss mich nicht' auf Spanisch.",
+        "Der Song dreht sich um den Schmerz des Vergessens – und die Angst, selbst vergessen zu werden.",
+        "Refrain: '[XXX]me, [XXX]me...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X05T3FmRzZ0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-quinta-estación-recuerdame-ft--marc-anthony.jpg"
+    },
+    {
+      "id": "yt-OOJ0OP0viVM",
+      "title": "Sueños Rotos",
+      "artist": "La Quinta Estación",
+      "year": 2016,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine spanische Pop-Gruppe, die mit ihrer Musik ganz Lateinamerika eroberte.",
+        "Der Titel ist eine Metapher für gescheiterte Hoffnungen.",
+        "Ein melancholischer Latin-Pop-Song über das Ende einer Beziehung.",
+        "Die Band wurde 1996 in Madrid gegründet und hat mehrere Latin Grammy-Nominierungen erhalten.",
+        "Titel-Übersetzung: '[XXX] [XXX]' – zwei Wörter, ein Bild."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "OOJ0OP0viVM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-quinta-estación-sueños-rotos.jpg"
+    },
+    {
+      "id": "yt-MbhfiEhlDNg",
+      "title": "Cumbia Barulera ft. Jorge Muñiz",
+      "artist": "La Sonora Dinamita",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Cumbia",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine der bekanntesten Cumbia-Bands Lateinamerikas – seit den 1960ern aktiv.",
+        "Gegründet in Kolumbien, dem Ursprungsland der Cumbia.",
+        "Der Songtitel beschreibt einen weiblichen Charakter – lebenslustig und laut.",
+        "Das Feature ist ein mexikanischer Ranchera-Sänger – ein ungewöhnliches Genre-Crossover.",
+        "Eine tanzbare Cumbia, die zum Mitfeiern einlädt."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MbhfiEhlDNg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-sonora-dinamita-cumbia-barulera-ft--jorge-muñiz.jpg"
+    },
+    {
+      "id": "yt-s37GxC9Xho8",
+      "title": "La Parabólica",
+      "artist": "La Sonora Dinamita ft. El Bebeto",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Cumbia",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine der ältesten und bekanntesten Cumbia-Bands Kolumbiens – bis heute aktiv.",
+        "Das Feature ist ein mexikanischer Sänger, der für seinen romantischen Cumbia-Stil bekannt ist.",
+        "Der Songtitel ist ein alltägliches Objekt – eine Empfangsanlage für TV-Signale.",
+        "Typischer Cumbia-Humor: alltägliche Dinge werden in Tanzmusik verwandelt.",
+        "Eine Party-Cumbia mit eingängigem Rhythmus und viel Bläser-Sound."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "s37GxC9Xho8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-sonora-dinamita-la-parabólica-ft--el-bebeto.jpg"
+    },
+    {
+      "id": "yt-0nBFWzpWXuM",
+      "title": "La Vida Es Un Carnaval",
+      "artist": "Celia Cruz",
+      "year": 1998,
+      "country": "CU",
+      "genre": "Salsa",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Sängerin gilt als die 'Königin der Salsa' – eine Ikone der kubanischen Musik.",
+        "Sie floh als junge Frau aus Kuba und wurde in den USA zur Weltberühmtheit.",
+        "Der Song ist eine Lebenshymne: trotz aller Probleme soll man feiern und tanzen.",
+        "Erschienen 1998 – eines ihrer bekanntesten Lieder überhaupt.",
+        "Refrain: 'La [XXX] es un [XXX], hay que [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0nBFWzpWXuM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/la-vida-es-un-carnaval-celia-cruz.jpg"
+    },
+    {
+      "id": "lady-gaga-bad-romance-2009",
+      "title": "Bad Romance",
+      "artist": "Lady Gaga",
+      "year": 2009,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dance Floor",
+        "Energy",
+        "Legends & Classics",
+        "Neon Night",
+        "Party Anthem",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Ausruf ganz am Anfang des Songs entstand spontan bei einer Probe und wurde so beliebt, dass er blieb.",
+        "Das Musikvideo spielt in einem futuristischen weißen Raum und war zu seiner Zeit eine der teuersten Pop-Produktionen aller Zeiten.",
+        "Erschienen 2009 als erste Single aus der 'The Fame Monster' EP; sofort auf Platz 1 in über 20 Ländern.",
+        "Elektronischer Synth-Pop mit einer eingängigen Silbenfolge im Intro, pulsierendem Bass und dramatischen Strophen.",
+        "Die Sängerin beschreibt eine obsessive, ungesunde Liebesbeziehung voller Drama – sie will alles von dieser Person."
+      ],
+      "lyrics": {
+        "real": [
+          "I want your ugly, I want your disease",
+          "I want your everything as long as it's free",
+          "You and me could write a bad romance"
+        ],
+        "fake": "I'm lost in the rhythm of a heart that's made of stone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "qrO4YZeyl0I"
+      },
+      "coverUrl": "/covers/lady-gaga-bad-romance-2009.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-en2D_5TzXCA",
+      "title": "Million Reasons",
+      "artist": "Lady Gaga",
+      "year": 2016,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Honest",
+        "Melancholic",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Eine ungewöhnlich ruhige, country-beeinflusste Seite einer eigentlich für Electro-Pop bekannten Sängerin.",
+        "Erschienen 2016 auf dem Album 'Joanne' – benannt nach ihrer verstorbenen Tante.",
+        "Eine emotionale Abrechnung mit einer Beziehung, die nicht mehr funktioniert.",
+        "Der Song wurde live beim Super Bowl 2017 aufgeführt – als ruhiger Kontrapunkt zur Energie der Show.",
+        "Refrain: 'You're giving me a [XXX] [XXX] to let you go...'"
+      ],
+      "lyrics": {
+        "real": [
+          "You're giving me a million reasons to let you go",
+          "You're giving me a million reasons to quit the show",
+          "I've got a hundred million reasons to walk away"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "en2D_5TzXCA"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/piano-gaga-reasons.jpg"
+    },
+    {
+      "id": "yt-oG-4Uvhm4lI",
+      "title": "Poker Face",
+      "artist": "Lady Gaga",
+      "year": 2008,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Catchy",
+        "Electronic",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Zementierte ihren Status als neue Queen of Pop am Ende der Dekade.",
+        "Thematisiert Bisexualität und das Verstecken von Gefühlen hinter einer Maske.",
+        "Erschienen 2008, war es ihre zweite Single und verkaufte sich über 14 Millionen Mal – einer der meistverkauften Singles aller Zeiten.",
+        "Der 'Ma-ma-ma-ma'-Hook ist unvergesslich.",
+        "Refrain: 'Can't read my, can't read my, no he can't read my [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I wanna hold 'em like they do in Texas, please, fold 'em, let 'em hit me, raise it, baby, stay with me",
+          "Can't read my, can't read my, no he can't read my poker face",
+          "P-p-p-poker face, p-p-p-poker face"
+        ],
+        "fake": [
+          "Draw the card, p-p-p poker face, don't cheat and repeat",
+          "I don't want to fold, make me break, my p-p-p poker face",
+          "Control, cold and win the gold, with my p-p-p poker face"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "oG-4Uvhm4lI",
+        "spotify": "1QV6tiMFM6fSOKOGLMHYYg",
+        "amazonMusic": "B001SWKSNS"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/2000s-lady-gaga-poker-face.jpg"
+    },
+    {
+      "id": "yt-R5RRHt-sSX8",
+      "title": "Stupid Love",
+      "artist": "Lady Gaga",
+      "year": 2020,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Energy",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Erster Vorgeschmack auf ihr 2020er Album 'Chromatica' – eine Rückkehr zu purem Dance-Pop.",
+        "Das Musikvideo zeigt kämpfende Stämme in pinken Kostümen auf einem fremden Planeten.",
+        "Nach Jahren mit ernsterem Material wollte sie wieder einfach Spaß haben.",
+        "Ein eingängiger Electro-Pop-Ohrwurm mit simplem, aber treffsicherem Refrain.",
+        "Refrain: 'All I ever wanted was [XXX] [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "R5RRHt-sSX8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lady-gaga-stupid-love.jpg"
+    },
+    {
+      "id": "yt-DXnS8mqUDyQ",
+      "title": "Rain On Me",
+      "artist": "Lady Gaga & Ariana Grande",
+      "year": 2020,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Energy",
+        "Modern Anthems",
+        "Powerful"
+      ],
+      "hints": [
+        "Ein Duett zweier Pop-Superstars, die beide persönliche Traumata in diesem Song verarbeiten.",
+        "Eine der beiden Sängerinnen hatte zuvor einen Terroranschlag in Manchester überlebt – der Song half ihr, darüber zu sprechen.",
+        "Erschienen 2020 auf 'Chromatica' – gewann den Grammy für Best Pop Duo/Group Performance.",
+        "Ein euphorischer Dance-Pop-Song, der Schmerz in Stärke verwandelt.",
+        "Refrain: '[XXX] on me, [XXX] on me...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DXnS8mqUDyQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lady-gaga---ariana-grande-rain-on-me.jpg"
+    }
+  ]
+}

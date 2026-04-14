@@ -1,0 +1,532 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-nwa-straight-outta-compton",
+      "title": "Straight Outta Compton",
+      "artist": "N.W.A.",
+      "year": 1988,
+      "country": "US",
+      "genre": "Gangsta Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Serious",
+        "Raw"
+      ],
+      "hints": [
+        "Der Song, der Gangsta Rap in den Mainstream katapultierte.",
+        "Die Gruppe bestand aus Legenden wie Dr. Dre, Ice Cube und Eazy-E.",
+        "Thematisiert die Polizeigewalt und das Leben in der kalifornischen Stadt [XXX].",
+        "Wurde wegen der expliziten Texte vom FBI beobachtet.",
+        "Refrain: 'You are now about to witness the strength of street knowledge.'"
+      ],
+      "lyrics": {
+        "real": [
+          "You are now about to witness the strength of street knowledge",
+          "Straight outta Compton, crazy motherfucker named Ice Cube",
+          "From the gang called Niggas With Attitudes"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your soul"
+      },
+      "links": {
+        "youtube": "TMZi25Pq3T8"
+      },
+      "coverUrl": "/covers/hiphop-nwa-straight-outta-compton.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-aUzW9io-Om0",
+      "title": "Pra Vocë Guardei O Amor (Nando Reis e Ana Cañas)",
+      "artist": "Nando Reis & Ana Cañas",
+      "year": 2011,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aUzW9io-Om0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nando-reis---ana-cañas-pra-vocë-guardei-o-amor--nando-reis-e-ana-cañas-.jpg"
+    },
+    {
+      "id": "metal-napalm-suffer",
+      "title": "You Suffer",
+      "artist": "Napalm Death",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Grindcore",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Fast",
+        "Funny"
+      ],
+      "hints": [
+        "Hält den Guinness-Weltrekord für den kürzesten Song aller Zeiten (ca. 1,3 Sekunden).",
+        "Ein Inbegriff für den radikalen Grindcore-Stil der Band.",
+        "Thematisiert (ironisch kurz) menschliches Leid.",
+        "Besteht nur aus dem Wort 'You [XXX] - but why?'.",
+        "Refrain: 'YOU [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You suffer",
+          "But why?"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "_-ywSPWu3K8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-napalm-suffer.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "jazz-nat-king-cole-love",
+      "title": "L-O-V-E",
+      "artist": "Nat King Cole",
+      "year": 1964,
+      "country": "US",
+      "genre": "Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Positive",
+        "Romantic"
+      ],
+      "hints": [
+        "Buchstabiert die Essenz der Liebe auf charmante Weise.",
+        "Nat [XXX] [XXX]s samtige Stimme macht den Song zum zeitlosen Evergreen.",
+        "Ein Inbegriff für unbeschwerten, eleganten Swing.",
+        "War [XXX]s letzter großer internationaler Hit vor seinem Tod.",
+        "Refrain: 'L is for the way you look at me! O is for the only one I see!'"
+      ],
+      "lyrics": {
+        "real": [
+          "L is for the way you look at me, O is for the only one I see",
+          "V is very, very extraordinary, E is even more than anyone that you adore",
+          "Love was made for me and you"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ir_LJ5dvS2w"
+      },
+      "coverUrl": "/covers/jazz-nat-king-cole-love.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "yt-JFyuOEovTOE",
+      "title": "Unforgettable",
+      "artist": "Nat King Cole",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JFyuOEovTOE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nat-king-cole-unforgettable.jpg"
+    },
+    {
+      "id": "90s-natalie-imbruglia-torn",
+      "title": "Torn",
+      "artist": "Natalie Imbruglia",
+      "year": 1997,
+      "country": "AU",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Classic",
+        "Pop"
+      ],
+      "hints": [
+        "Ist eigentlich ein Cover (Original von der Band Ednaswap).",
+        "Wurde zu einem der meistgespielten Songs im Radio der späten 90er.",
+        "Das Video zeigt die Sängerin in einer sich ständig verändernden Filmset-Kulisse.",
+        "Thematisiert die Desillusionierung nach einer gescheiterten Beziehung.",
+        "Refrain: 'I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor.'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm all out of faith, this is how I feel, I'm cold and I am shamed lying naked on the floor",
+          "Illusion never changed into something real, I'm wide awake and I can see the perfect sky is torn",
+          "You're a little late, I'm already torn"
+        ],
+        "fake": "Take a look at me now, there's nothing left but memories"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "VV1XWJN3nJo",
+        "spotify": "1Jaah2tmN9Hv81A87KZ1MU",
+        "amazonMusic": "B004NHDULW"
+      },
+      "coverUrl": "/covers/90s-natalie-imbruglia-torn.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-iKejQrGq04w",
+      "title": "Unwritten",
+      "artist": "Natasha Bedingfield",
+      "year": 2004,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2000er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iKejQrGq04w"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/natasha-bedingfield-unwritten.jpg"
+    },
+    {
+      "id": "disney-lion-matata",
+      "title": "Hakuna Matata",
+      "artist": "Nathan Lane, Ernie Sabella, Jason Weaver & Joseph Williams",
+      "year": 1994,
+      "country": "US",
+      "genre": "Soundtrack / Happy / Funny",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Chill"
+      ],
+      "hints": [
+        "Timon und Pumbas Lebensmotto, das weltweit Kult wurde.",
+        "Thematisiert Gelassenheit und das Vergessen von Sorgen.",
+        "Ein Inbegriff für Freundschaft und gute Laune.",
+        "Besitzt einen extrem einprägsamen Mitsing-Refrain.",
+        "Refrain: '[XXX] [XXX]! What a wonderful phrase!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hakuna Matata! What a wonderful phrase",
+          "Hakuna Matata! Ain't no passing craze",
+          "It means no worries, for the rest of your days"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "WeLG1kg3Jz8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-lion-matata.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-oLBWVRUwdPo",
+      "title": "Christmas Prayers",
+      "artist": "Neil Diamond",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oLBWVRUwdPo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/neil-diamond-christmas-prayers.jpg"
+    },
+    {
+      "id": "yt-4F_RCWVoL4s",
+      "title": "Sweet Caroline (Audio)",
+      "artist": "Neil Diamond",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4F_RCWVoL4s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/neil-diamond-sweet-caroline--audio-.jpg"
+    },
+    {
+      "id": "folk-neil-gold",
+      "title": "Heart of Gold",
+      "artist": "Neil Young",
+      "year": 1972,
+      "country": "CA",
+      "genre": "Folk Rock / Country Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Soft",
+        "Searching",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX]s einziger Nummer-1-Hit in den USA.",
+        "Besticht durch die Mundharmonika und den entspannten Akustik-Groove.",
+        "Thematisiert die Suche nach einem reinen Herzen und Beständigkeit im Leben.",
+        "Ein absoluter Meilenstein der Musikgeschichte.",
+        "Refrain: 'And I'm gettin' old! Searchin' for a [XXX] of [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've been to Hollywood, I've been to Redwood, I crossed the ocean for a heart of gold",
+          "It's such a fine line that keeps me in the sun",
+          "I'm searching for a heart of gold"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "WZn9QZykx10"
+      },
+      "coverUrl": "/covers/folk-neil-gold.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "2000s-nelly-dilemma",
+      "title": "Dilemma",
+      "artist": "Nelly ft. Kelly Rowland",
+      "year": 2002,
+      "country": "US",
+      "genre": "R&B / Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Classic"
+      ],
+      "hints": [
+        "Basiert auf einem Sample von Patti LaBelle ('Love, Need and Want You').",
+        "Bekannt für das Video, in dem versucht wird, eine SMS in einer Microsoft Excel Tabelle zu schreiben.",
+        "Einer der erfolgreichsten R&B-Songs der kompletten Dekade.",
+        "Kombiniert als Duett Rap mit sanftem Gesang.",
+        "Refrain: 'No matter what I do, all I think about is you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I love you, and I need you, Nelly I love you, I do, need you",
+          "No matter what I do, all I think about is you",
+          "Even when I'm with my boo, boy, you know I'm crazy over you"
+        ],
+        "fake": [
+          "You think you're big, but I choose to hit",
+          "So you dream to be a cheer, but all I know is I love you"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "8WYHDfJDPDc",
+        "spotify": "0ARK753YaiJbpLUk7z5yIM",
+        "amazonMusic": "B001SPYFVG"
+      },
+      "coverUrl": "/covers/2000s-nelly-dilemma.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "yt-nVq_Gua4wsQ",
+      "title": "Maneater",
+      "artist": "Nelly Furtado",
+      "year": 2006,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nVq_Gua4wsQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nelly-furtado-maneater.jpg"
+    }
+  ]
+}

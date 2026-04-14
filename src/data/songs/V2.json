@@ -1,0 +1,297 @@
+{
+  "songs": [
+    {
+      "id": "schlager-vicky-leandros-leben",
+      "title": "Ich liebe das Leben",
+      "artist": "Vicky Leandros",
+      "year": 1975,
+      "country": "GR/DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Inspirational"
+      ],
+      "hints": [
+        "Ein Song über Abschied, Loslassen und den unerschütterlichen [XXX]smut.",
+        "[XXX] [XXX] ist eine der international erfolgreichsten Schlagersängerinnen.",
+        "Wird oft auf Partys am Ende gespielt, wenn die Stimmung ihren Höhepunkt erreicht.",
+        "Besitzt eine sehr festliche, fast orchestrale Steigerung.",
+        "Refrain: 'Ich [XXX] das [XXX]! Irgendwann fängt alles an!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Das Karussell wird sich weiterdrehen, auch wenn wir auseinandergehen",
+          "Ich liebe das Leben, es war viel zu schön um wahr zu sein",
+          "Nein, weine nicht, wenn es kein Morgen gibt"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "7_FsW8RPCTc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-vicky-leandros-leben.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-CS9OO0S5w2k",
+      "title": "YMCA (OFFICIAL Music Video 1978)",
+      "artist": "Village People",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CS9OO0S5w2k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/village-people-ymca--official-music-video-1978-.jpg"
+    },
+    {
+      "id": "yt-Bam_KHI-lSQ",
+      "title": "Drums",
+      "artist": "Vince Clarke",
+      "year": 2023,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Bam_KHI-lSQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "yt-ySeKRfdwi8A",
+      "title": "Eternity",
+      "artist": "Vintage Culture & Elder Island",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ySeKRfdwi8A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vintage-culture---elder-island-eternity.jpg"
+    },
+    {
+      "id": "synth-visage-grey",
+      "title": "Fade to Grey",
+      "artist": "Visage",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Romantic",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Cool",
+        "German New Wave",
+        "Popular",
+        "Retro"
+      ],
+      "hints": [
+        "Inbegriff für die 'New Romantic' Bewegung Anfang der 80er.",
+        "Besticht durch die französischsprachigen Flüstermomente und den kühlen Beat.",
+        "Thematisiert die Monotonie und das Verschwinden der Farben im Leben.",
+        "Steve Strange wurde durch das exzentrische Musikvideo zur Stilikone.",
+        "Refrain: 'Ah, we [XXX] to [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "One man on a lonely platform, one case on a lonely station",
+          "One way ticket to a city of light, shadows in the rain",
+          "Fade to grey"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CL39eozQqdI"
+      },
+      "coverUrl": "/covers/synth-visage-grey.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-sRTGhPR-fWQ",
+      "title": "Mind Of A Toy",
+      "artist": "Visage",
+      "year": 1981,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sRTGhPR-fWQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/visage-mind-of-a-toy.jpg"
+    },
+    {
+      "id": "yt-4a7nNZxEUgw",
+      "title": "Breathe (feat. Jesse Jo Stark)",
+      "artist": "Volbeat",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4a7nNZxEUgw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/volbeat-breathe--feat--jesse-jo-stark-.jpg"
+    },
+    {
+      "id": "yt-TuY1py-wPl4",
+      "title": "Si Tú Me Besas",
+      "artist": "Víctor Manuelle",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TuY1py-wPl4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/víctor-manuelle-si-tú-me-besas.jpg"
+    }
+  ]
+}

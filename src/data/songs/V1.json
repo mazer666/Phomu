@@ -1,0 +1,472 @@
+{
+  "songs": [
+    {
+      "id": "yt-73sbW7gjBeo",
+      "title": "Beijinho No Ombro",
+      "artist": "Valesca Popozuda",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=73sbW7gjBeo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/valesca-popozuda-beijinho-no-ombro.jpg"
+    },
+    {
+      "id": "piano-vanessa-miles",
+      "title": "A Thousand Miles",
+      "artist": "Vanessa Carlton",
+      "year": 2002,
+      "country": "US",
+      "genre": "Pop / Piano Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dreamy"
+      ],
+      "hints": [
+        "Bekannt für das virtuose, helle Klavier-Intro, das sofort gute Laune verbreitet.",
+        "Wurde durch den Film 'White Chicks' zu einem Internet-Mem und Kulthit.",
+        "Thematisiert die Bereitschaft, lange Wege für die Liebe auf sich zu nehmen.",
+        "Ein Inbegriff für den euphorischen Piano-Pop der 2000er.",
+        "Refrain: 'If I could fall into the sky! Do you think time would pass me by?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Making my way downtown, walking fast, faces pass and I'm home bound",
+          "If I could fall into the sky, do you think time would pass me by?",
+          "'Cause you know I'd walk a thousand miles"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "Cwkej79U3ek"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-vanessa-miles.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-rlxjuG9YHkM",
+      "title": "Comadreja Bachata Congress 2015 ~ Social ~ Desirée Guidonet & Daniel Sánchez ~ V",
+      "artist": "Various",
+      "year": 2015,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rlxjuG9YHkM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "dance-vengaboys-boom-boom",
+      "title": "Boom, Boom, Boom, Boom!!",
+      "artist": "Vengaboys",
+      "year": 1998,
+      "country": "NL",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Party"
+      ],
+      "hints": [
+        "Die Band ist bekannt für ihr buntes Venga-Mobil und ihre schrillen Outfits.",
+        "Der Song handelt vom Wunsch, die Nacht gemeinsam im Schlafzimmer zu verbringen.",
+        "Ein absoluter Party-Garant auf jeder 90er-Feier.",
+        "Der Refrain hat einen extrem eingängigen Rhythmus, den man sofort mitschreit.",
+        "Refrain: '[XXX], [XXX], [XXX], [XXX]! I want you in my room!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Boom, boom, boom, boom! I want you in my room, let's spend the night together",
+          "From now until forever, boom, boom, boom, boom! I wanna go boom boom",
+          "Let's spend the night together together in my room"
+        ],
+        "fake": "Moving to the left, moving to the right, in the neon light"
+      },
+      "links": {
+        "youtube": "gD8UfYKZ9qk"
+      },
+      "coverUrl": "/covers/dance-vengaboys-boom-boom.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-KRQPDlKoaWk",
+      "title": "We Like To Party! (The Vengabus)",
+      "artist": "Vengaboys",
+      "year": 1999,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Song mit charakteristischen Classic Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KRQPDlKoaWk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vengaboys-we-like-to-party---the-vengabus-.jpg"
+    },
+    {
+      "id": "disney-cindy-bibbidi",
+      "title": "Bibbidi-Bobbidi-Boo",
+      "artist": "Verna Felton",
+      "year": 1950,
+      "country": "US",
+      "genre": "Soundtrack / Magic",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Magic",
+        "Classic"
+      ],
+      "hints": [
+        "Cinderellas Zauberspruch-Song der Guten Fee.",
+        "Thematisiert Verwandlung und Hoffnung durch Magie.",
+        "Besticht durch den lautmalerischen Refrain und den verspielten Rhythmus.",
+        "Ein Inbegriff für Disneys frühe Animations-Highlights.",
+        "Refrain: 'Salagadoola mechicka boola! [XXX]-[XXX]-boo!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Salagadoola mechicka boola, bibbidi-bobbidi-boo",
+          "Put them together and what have you got? Bibbidi-bobbidi-boo",
+          "It'll do magic, believe it or not"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5dv6pOGeuGs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-cindy-bibbidi.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-x07SLQtlypo",
+      "title": "Estos Celos",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x07SLQtlypo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-estos-celos.jpg"
+    },
+    {
+      "id": "yt-oq70h9XBj_0",
+      "title": "Hermoso Cariño (Oficial En Vivo)",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oq70h9XBj_0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-hermoso-cariño--oficial-en-vivo-.jpg"
+    },
+    {
+      "id": "yt-Byeu5C9FS6s",
+      "title": "La Ley del Monte (En Vivo)",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Byeu5C9FS6s"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-la-ley-del-monte--en-vivo-.jpg"
+    },
+    {
+      "id": "yt-xa2GLqL12Zk",
+      "title": "Mujeres Divinas (Oficial En Vivo)",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xa2GLqL12Zk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-mujeres-divinas--oficial-en-vivo-.jpg"
+    },
+    {
+      "id": "yt-Y0U12sjwseU",
+      "title": "Para Siempre",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y0U12sjwseU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-para-siempre.jpg"
+    },
+    {
+      "id": "yt-gfm2zSgQ8cQ",
+      "title": "Por Tu Maldito Amor",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gfm2zSgQ8cQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-por-tu-maldito-amor.jpg"
+    },
+    {
+      "id": "yt-AOU_025VwDU",
+      "title": "Que De Raro Tiene ((Cover Audio La Leyenda Viviente) (Video))",
+      "artist": "Vicente Fernández",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AOU_025VwDU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/vicente-fernández-que-de-raro-tiene---cover-audio-la-leyenda-viviente---video--.jpg"
+    }
+  ]
+}

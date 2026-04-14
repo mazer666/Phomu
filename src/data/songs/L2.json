@@ -1,0 +1,521 @@
+{
+  "songs": [
+    {
+      "id": "yt-UsCXul-7YS8",
+      "title": "Sour Candy",
+      "artist": "Lady Gaga & BLACKPINK",
+      "year": 2020,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Energy",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein Crossover zwischen einer US-Pop-Ikone und der weltweit erfolgreichsten K-Pop-Gruppe.",
+        "Erschienen 2020 auf 'Chromatica' – der Feature-Part wechselt zwischen Englisch und Koreanisch.",
+        "Der Titel ist eine Metapher: außen hart und sauer, innen süß und verletzlich.",
+        "Das Lied hat einen eingängigen, zuckersüßen Electropop-Sound mit K-Pop-Einflüssen.",
+        "Refrain: 'I'm tough but I'm [XXX] [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "UsCXul-7YS8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lady-gaga---blackpink-sour-candy.jpg"
+    },
+    {
+      "id": "movie-lady-gaga-shallow",
+      "title": "Shallow",
+      "artist": "Lady Gaga & Bradley Cooper",
+      "year": 2018,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Soulful"
+      ],
+      "hints": [
+        "Das Herzstück des Films 'A Star Is Born'.",
+        "Gewann den Oscar für den Besten Originalsong 2019.",
+        "Ein kraftvolles Duett zwischen einer Popsängerin und einem Schauspieler.",
+        "Bekannt für den intensiven Gesang am Ende des Liedes.",
+        "Refrain: 'I'm off the deep end, watch as I dive in, I'll never meet the ground.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Tell me something, girl, are you happy in this modern world?",
+          "Or do you need more? Is there something else you're searching for?",
+          "I'm falling, in all the good times I find myself longing for change"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "bo_efYhYU2A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-lady-gaga-shallow.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "yt-DlFXDl_ROAM",
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga & Bruno Mars",
+      "year": 2024,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Powerful",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Zwei der größten Pop-Stars der Gegenwart vereint in einer romantischen Ballade.",
+        "Erschienen 2024 – einer der meistgestreamten Songs des Jahres weltweit.",
+        "Der Titel klingt morbide, meint aber das Gegenteil: in Glück sterben, nicht in Reue.",
+        "Ein klassischer Balladenaufbau – ruhiger Anfang, dramatischer Höhepunkt.",
+        "Refrain: 'I don't wanna be [XXX] or [XXX] today, if you don't mind, I'd like to [XXX] with a [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DlFXDl_ROAM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lady-gaga---bruno-mars-die-with-a-smile.jpg"
+    },
+    {
+      "id": "score-lalo-mission",
+      "title": "Mission: Impossible Theme",
+      "artist": "Lalo Schifrin",
+      "year": 1966,
+      "country": "AR/US",
+      "genre": "Movie Theme / Jazz-Funk focus",
+      "difficulty": "medium",
+      "mood": [
+        "Urgent",
+        "Cool",
+        "Fast"
+      ],
+      "hints": [
+        "Besticht durch den ungewöhnlichen 5/4-Takt, der an brennende Zündschnüre erinnert.",
+        "Komponiert von einem argentinischen Jazz-Pianisten, der in Hollywood zur Legende wurde.",
+        "Wurde durch die Neuinterpretationen für die Tom Cruise-Filme erneut zum Welthit.",
+        "Das Stück beginnt mit einem unverwechselbaren Rhythmus auf gedämpften Trommeln.",
+        "Der Komponist stammte aus Buenos Aires und studierte bei Olivier Messiaen in Paris."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Burning fuse rhythm",
+          "5/4 time signature"
+        ],
+        "fake": "Accepting the mission in the shadow of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "O07WucFwdq8",
+        "spotify": "0VlxbRzdOyA56BviBK9vkc",
+        "amazonMusic": "B01IVFMUEO"
+      },
+      "coverUrl": "/covers/score-lalo-mission.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-lamb-redneck",
+      "title": "Redneck",
+      "artist": "Lamb of God",
+      "year": 2006,
+      "country": "US",
+      "genre": "Groove Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Powerful",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff für den modernen US-Groove-Metal (NWOAHM).",
+        "Thematisiert Arroganz und das Entlarven von Schwätzern.",
+        "Besticht durch Randy Blythes gewaltige Stimme und den massiven Groove.",
+        "Der Songtitel klingt provokant – aber das Stück richtet sich gegen Angeber und Wichtigtuer.",
+        "Refrain: 'This is an [XXX]! To the [XXX] of [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "This is an invitation, to the end of everything",
+          "You're a person but you don't even know it",
+          "Now it's time to pay the price for your own lies"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "oqdZpxkzNvc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-lamb-redneck.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-vTyIRz9XGsQ",
+      "title": "Asking",
+      "artist": "Lane 8 & POLIÇA",
+      "year": 2018,
+      "country": "US",
+      "genre": "Deep House",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Kollabo zwischen einem Deep-House-DJ und einer Indie-Electronic-Band aus Minneapolis.",
+        "Lane 8 ist bekannt für sein Label 'This Never Happened' und seine alkoholfreien Shows.",
+        "Der Song hat eine melancholische, introspektive Stimmung – typisch für Lane 8s Sound.",
+        "Die Sängerin des Features ist bekannt für ihren stark verfremdeten, fast unmenschlich klingenden Gesang.",
+        "Ein langsam aufbauender Dancefloor-Track, der Emotion vor Energie stellt."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vTyIRz9XGsQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "80s-laura-branigan-selfcontrol",
+      "title": "Self Control",
+      "artist": "Laura Branigan",
+      "year": 1984,
+      "country": "US",
+      "genre": "Synth Pop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Eine moderne Interpretation des Hits von Raf.",
+        "Die Sängerin war für ihre außergewöhnlich kraftvolle Stimme bekannt – ein seltenes Talent ihrer Generation.",
+        "Thematisiert das nächtliche Leben und den Kontrollverlust.",
+        "Ein Inbegriff für mysteriösen und zugleich tanzbaren 80er-Pop.",
+        "Refrain: 'You take my [XXX], you take my [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I live among the creatures of the night, I haven't got the will to try and fight",
+          "You take my self, you take my self control",
+          "I, I live among the creatures of the night"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "FQD0yGuZ2N8",
+        "spotify": "6JNJERZGJwDVgkmbohBw7u",
+        "amazonMusic": "B001O7WLUU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-laura-branigan-selfcontrol.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "yt-eCS4OTgaHeM",
+      "title": "Soothing",
+      "artist": "Laura Marling",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Folk",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Intimate"
+      ],
+      "hints": [
+        "Eine britische Singer-Songwriterin, die für ihren literarisch geprägten Folkstil bekannt ist.",
+        "Erschienen 2016 auf ihrem Album 'Short Movie' – einem ihrer kritisch gefeiertsten Werke.",
+        "Der Titel verspricht Ruhe und Trost – ein zartes, intimes Stück.",
+        "Ihr Gitarrenspiel ist komplex und klassisch beeinflusst – keine typische Pop-Produktion.",
+        "Eine Stimme, die an Nick Drake und Joni Mitchell erinnert."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eCS4OTgaHeM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/laura-marling-soothing.jpg"
+    },
+    {
+      "id": "yt-S39NaDPNDtk",
+      "title": "O Superman",
+      "artist": "Laurie Anderson",
+      "year": 1981,
+      "country": "US",
+      "genre": "Avantgarde",
+      "difficulty": "medium",
+      "mood": [
+        "Experimental",
+        "Melancholic"
+      ],
+      "hints": [
+        "Eine US-amerikanische Performance-Künstlerin, die mit diesem Stück unerwartet die Mainstream-Charts stürmte.",
+        "Der Song basiert auf einer Arie von Jules Massenet und einer Phrase von Charles Ives.",
+        "Fast 9 Minuten lang – ungewöhnlich für einen Charterfolg.",
+        "Geprägt von einem hypnotischen, elektronisch verfremdeten Atem-Loop.",
+        "Thematisiert Technologie, Krieg und die Entfremdung in der modernen Gesellschaft."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "S39NaDPNDtk"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/laurie-anderson-o-superman.jpg"
+    },
+    {
+      "id": "hiphop-lauryn-doowop",
+      "title": "Doo Wop (That Thing)",
+      "artist": "Lauryn Hill",
+      "year": 1998,
+      "country": "US",
+      "genre": "Soul/Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Groovy",
+        "Powerful",
+        "Serious",
+        "Soulful"
+      ],
+      "hints": [
+        "Die erste Solo-Single einer Sängerin, die zuvor Teil eines der einflussreichsten Hip-Hop-Trios der 90er war.",
+        "Gibt Ratschläge an Männer und Frauen, sich nicht für oberflächliche Dinge auszunutzen.",
+        "Kombiniert Doo-Wop-Harmonien aus den 60ern mit modernem Hip-Hop.",
+        "Gewann den Grammy für den besten R&B-Song und die beste weibliche R&B-Aufnahme.",
+        "Refrain: '[XXX] you know you better watch out... [XXX] you know you better watch out!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's been three weeks since you were looking for your friend",
+          "But you're really not looking for no friend",
+          "Guys you know you better watch out, some girls, some girls are only about that thing"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "links": {
+        "youtube": "T6QKqFPRZSA"
+      },
+      "coverUrl": "/covers/hiphop-lauryn-doowop.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "yt-Ahm7myXatco",
+      "title": "All 4 Nothing (I'm So In Love)",
+      "artist": "Lauv",
+      "year": 2022,
+      "country": "US",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Ein US-amerikanischer Indie-Pop-Künstler, bekannt für emotionale, introspektive Songs.",
+        "Erschienen 2022 auf seinem Album 'All 4 Nothing'.",
+        "Der Titel verrät schon alles: totale Hingabe an eine Liebesbeziehung.",
+        "Ein eingängiger Synthpop-Song mit klarem, schwebenden Klang.",
+        "Refrain: 'All 4 [XXX], I'm so in [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Ahm7myXatco"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lauv-all-4-nothing--i-m-so-in-love-.jpg"
+    },
+    {
+      "id": "yt-SzQG_qK4LVo",
+      "title": "Steal The Show",
+      "artist": "Lauv",
+      "year": 2023,
+      "country": "US",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Erschienen 2023 als Teil des Soundtracks zum Animationsfilm 'Elemental' von Pixar.",
+        "Ein emotionaler Indie-Pop-Song über das Rampenlicht – und darum, sich endlich zu zeigen.",
+        "Der Film handelt von Elementen, die sich verlieben – der Song spiegelt dieses Thema perfekt.",
+        "Der Song wurde speziell für einen Animationsfilm geschrieben – eine ungewöhnliche Auftragsarbeit für einen Indie-Pop-Künstler.",
+        "Refrain: 'I just want to [XXX] the [XXX]...'"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "SzQG_qK4LVo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/lauv-steal-the-show.jpg"
+    },
+    {
+      "id": "disney-mulan-reflection",
+      "title": "Reflection",
+      "artist": "Lea Salonga",
+      "year": 1998,
+      "country": "US/PH",
+      "genre": "Soundtrack / Broadway / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Serene",
+        "Classic"
+      ],
+      "hints": [
+        "Mulans Lied über Identität und den Wunsch nach Anerkennung ihres wahren Ichs.",
+        "Thematisiert die innere Zerrissenheit zwischen Tradition und persönlicher Wahrheit.",
+        "Die Sängerin stammt aus den Philippinen und ist eine der bekanntesten Musical-Stimmen Asiens.",
+        "Ein Inbegriff für die emotionale Reife des Disney-Songwritings.",
+        "Refrain: 'When will my [XXX] show... who I am inside?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Look at me, you may think you see who I really am, but you'll never know me",
+          "When will my reflection show, who I am inside?",
+          "Why must we all conceal what we think, how we feel?"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NTlSFWHkJgk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mulan-reflection.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    }
+  ]
+}

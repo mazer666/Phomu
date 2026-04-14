@@ -1,0 +1,554 @@
+{
+  "songs": [
+    {
+      "id": "metal-minorthreat-straight",
+      "title": "Straight Edge",
+      "artist": "Minor Threat",
+      "year": 1981,
+      "country": "US",
+      "genre": "Hardcore Punk",
+      "difficulty": "easy",
+      "mood": [
+        "Serious",
+        "Energy",
+        "Confident"
+      ],
+      "hints": [
+        "Begründete die '[XXX] [XXX]' Lebensweise (kein Alkohol, keine Drogen).",
+        "Thematisiert bewusste Entscheidung gegen Exzess.",
+        "Ian MacKaye schrie seine Überzeugung in weniger als einer Minute heraus.",
+        "Ein kurzer, aber weltgeschichtlich bedeutsamer Punk-Song.",
+        "Refrain: 'I've got the [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm a person just like you, but I've got better things to do",
+          "I've got the straight edge, I don't need no drugs to be happy",
+          "I've got the straight edge!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gsAu-nOg3Tw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-minorthreat-straight.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "yt-5Rhhve-hwYE",
+      "title": "We Should Be Friends (Audio)",
+      "artist": "Miranda Lambert",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5Rhhve-hwYE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/miranda-lambert-we-should-be-friends--audio-.jpg"
+    },
+    {
+      "id": "world-miriam-makeba-pata-pata",
+      "title": "Pata Pata",
+      "artist": "Miriam Makeba",
+      "year": 1967,
+      "country": "ZA",
+      "genre": "Afropop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Dance"
+      ],
+      "hints": [
+        "[XXX] [XXX] wurde auch 'Mama Africa' genannt.",
+        "[XXX] [XXX] bezieht sich auf einen Tanzstil aus den Townships von Johannesburg.",
+        "Der Text ist in Xhosa verfasst, eine Sprache mit markanten Klicklauten.",
+        "Einer der ersten afrikanischen Songs, die weltweit Platz 1 der Charts erreichten.",
+        "Ein absolutes Symbol für Lebensfreude trotz aller Widrigkeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "Saguquka sathi bheka, nantsi Pata Pata",
+          "Yiyo mama, yiyo mama, nantsi Pata Pata",
+          "A-yi-ma, a-yi-ma, nantsi Pata Pata"
+        ],
+        "fake": "Dancing in the sun, having so much fun with everyone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "y1FHfcaWPoM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-miriam-makeba-pata-pata.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "yt-0CbLBYJRgCQ",
+      "title": "Scandalous",
+      "artist": "Mis-Teeq",
+      "year": 2003,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2000er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0CbLBYJRgCQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/mis-teeq-scandalous.jpg"
+    },
+    {
+      "id": "hiphop-missy-freakon",
+      "title": "Get Ur Freak On",
+      "artist": "Missy Elliott",
+      "year": 2001,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Strange",
+        "Dance"
+      ],
+      "hints": [
+        "Ein futuristischer Track mit indischen Bhangra-Einflüssen.",
+        "Produziert vom legendären Timbaland.",
+        "[XXX] [XXX] gilt als eine der kreativsten und einflussreichsten Frauen im Hip Hop.",
+        "Bekannt für die markante Basslinie und die experimentellen Sounds.",
+        "Refrain: 'Get your [XXX] on! Get your [XXX] on!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Me-he-he-he, me-he-he-he, get your freak on!",
+          "Holla! Get your freak on!",
+          "Copy that! I'm the one who's gonna make you dance"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the beat"
+      },
+      "links": {
+        "youtube": "FPoKiGQzbSQ"
+      },
+      "coverUrl": "/covers/hiphop-missy-freakon.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "finale-mitski-love",
+      "title": "My Love Mine All Mine",
+      "artist": "Mitski",
+      "year": 2023,
+      "country": "US",
+      "genre": "Chamber Pop / Indie",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Spiritual"
+      ],
+      "hints": [
+        "Inbegriff für traurigen, atmosphärischen Indie-Pop der 2020er.",
+        "Thematisiert den Wunsch, die eigene Liebe als bleibendes Erbe im Universum zu hinterlassen.",
+        "Besticht durch das sanfte Klavier und [XXX]s zerbrechliche Stimme.",
+        "Wurde zum Kult-Soundtrack für emotionale Momente online.",
+        "Refrain: 'Nothing in the world belongs to me! But my [XXX], [XXX], all [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Moon, a hole of light, through the big blue net in the sky",
+          "Nothing in the world belongs to me but my love, mine, all mine",
+          "I love my love, mine, all mine"
+        ],
+        "fake": "In the shadow of the mountain looking for the one tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vx4kLgnFexo"
+      },
+      "coverUrl": "/covers/finale-mitski-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-EaWWVsu0Xuo",
+      "title": "Rhyme Dust",
+      "artist": "MK & Dom Dolla",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EaWWVsu0Xuo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/mk---dom-dolla-rhyme-dust.jpg"
+    },
+    {
+      "id": "hiphop-mobbdeep-shookones",
+      "title": "Shook Ones, Pt. II",
+      "artist": "Mobb Deep",
+      "year": 1995,
+      "country": "US",
+      "genre": "Hardcore Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Dark",
+        "Serious",
+        "Raw"
+      ],
+      "hints": [
+        "Bekannt für seinen düsteren, atmosphärischen Sound und die harten Beats.",
+        "Wurde prominent im Finale des Films '8 Mile' mit Eminem verwendet.",
+        "Thematisiert die harten Realitäten und die Angst in den Projekten von Queensbridge.",
+        "Das Klavier-Sample ist eines der ikonischsten im gesamten Hip Hop.",
+        "Refrain: 'To all the [XXX] [XXX], your [XXX] [XXX]...'"
+      ],
+      "lyrics": {
+        "real": [
+          "To all the killers and a hundred dollar billers",
+          "For real niggas who ain't got no feelings",
+          "I got you stuck on the realness, we be the infamous, you heard of us"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your heart"
+      },
+      "links": {
+        "youtube": "yoYZf-lBF_U"
+      },
+      "coverUrl": "/covers/hiphop-mobbdeep-shookones.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "disco-moby-go",
+      "title": "Go",
+      "artist": "Moby",
+      "year": 1991,
+      "country": "US",
+      "genre": "Techno / Rave",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Atmospheric",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Techno -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Yeah!",
+          "Go!",
+          "Go!"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NLCHARjjrws"
+      },
+      "coverUrl": "/covers/disco-moby-go.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "80s-modern-talking-heart",
+      "title": "You're My Heart, You're My Soul",
+      "artist": "Modern Talking",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Euro Disco / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Energy"
+      ],
+      "hints": [
+        "Begründete das Phänomen '[XXX] [XXX]' (Dieter Bohlen und Thomas Anders).",
+        "Besitzt den charakteristischen 'Hohen Chor' im Refrain.",
+        "Einer der erfolgreichsten deutschen Pop-Exporte aller Zeiten.",
+        "Ein Inbegriff für den Euro-Disco-Sound der Mitte der 80er.",
+        "Refrain: '[XXX] my [XXX], [XXX] my [XXX]! I'll keep it shining everywhere I go!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Deep in my heart, there's a fire - a burning heart",
+          "You're my heart, you're my soul, I'll keep it shining everywhere I go",
+          "You're my heart, you're my soul, I'll be holding you forever"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4kHl4FoK1Ys",
+        "spotify": "0Zn63G0XTiXwr1KSmARWz",
+        "amazonMusic": "B004VT9YVW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-modern-talking-heart.jpg",
+      "packs": [
+        "80s Pop Hits"
+      ]
+    },
+    {
+      "id": "class-mussorgsky-bald",
+      "title": "Night on Bald Mountain",
+      "artist": "Modest Mussorgsky",
+      "year": 1867,
+      "country": "RU",
+      "genre": "Romantic / Symphonic Poem",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Epic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert Nachtleben und Dunkelheit durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Poem)",
+          "Swirling winds of the night",
+          "Demonic orchestral chaos"
+        ],
+        "fake": "Dancing on the mountain of the evil king tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iCEDfZgDPS8",
+        "spotify": "6ejFaLGH7F4J5tnaYirs2G",
+        "amazonMusic": "B07CRR1NWV"
+      },
+      "coverUrl": "/covers/class-mussorgsky-bald.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-lhTTkPuWvu8",
+      "title": "Shockwave",
+      "artist": "Modestep",
+      "year": 2012,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lhTTkPuWvu8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "dance-modjo-lady",
+      "title": "Lady (Hear Me Tonight)",
+      "artist": "Modjo",
+      "year": 2000,
+      "country": "FR",
+      "genre": "French House",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Romantic"
+      ],
+      "hints": [
+        "Basiert auf einem Sample aus dem Song 'Soup for One' von Chic.",
+        "Ein Paradebeispiel für den eleganten French House der Jahrtausendwende.",
+        "Das Video zeigt eine Gruppe von Freunden bei einem Roadtrip.",
+        "Einer der entspanntesten und gleichzeitig tanzbarsten Hits der Ära.",
+        "Refrain: '[XXX], [XXX] me [XXX], 'cause my feeling is just so right!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lady, hear me tonight, 'cause my feeling is just so right",
+          "As we dance by the light, and I'll keep you till the morning light",
+          "Lady, I just feel like I won't get you out of my mind"
+        ],
+        "fake": "When the stars are shining bright, I will hold you through the night"
+      },
+      "links": {
+        "youtube": "mMfxI3r_LyA"
+      },
+      "coverUrl": "/covers/dance-modjo-lady.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    }
+  ]
+}

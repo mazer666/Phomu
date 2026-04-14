@@ -1,0 +1,492 @@
+{
+  "songs": [
+    {
+      "id": "country-billy-dust",
+      "title": "Dust in a Baggie",
+      "artist": "Billy Strings",
+      "year": 2017,
+      "country": "US",
+      "genre": "Modern Bluegrass / Jamgrass",
+      "difficulty": "hard",
+      "mood": [
+        "Fast",
+        "Energy",
+        "Skillful"
+      ],
+      "hints": [
+        "Inbegriff für das Genre-Update des Bluegrass durch den Sänger.",
+        "Thematisiert Drogenproblematik und Gefängnis auf fast schon fröhlich rasantem Tempo.",
+        "Besticht durch die unglaubliche Geschwindigkeit und Präzision an der Gitarre.",
+        "Ein viraler Hit, der das Genre für ein junges Publikum öffnete.",
+        "Refrain: 'Twenty-five to life for a [XXX]y [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've got a little dust in a baggie, for the blue eyes to see",
+          "Twenty-five to life in the joint, for a dusty baggie!",
+          "I'm a lonesome man with a heavy hand"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "qan4VRikfz8",
+        "spotify": "11KsuX39LqYp89OfMndrYm",
+        "amazonMusic": "B0D9CJ79RM"
+      },
+      "coverUrl": "/covers/country-billy-dust.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "piano-birdy-skinny",
+      "title": "Skinny Love",
+      "artist": "Birdy",
+      "year": 2011,
+      "country": "GB",
+      "genre": "Folk / Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Soft",
+        "Fragile",
+        "Sad"
+      ],
+      "hints": [
+        "Hauchzarte Coverversion des Bon Iver Songs, aufgenommen als sie erst 14 Jahre alt war.",
+        "Thematisiert eine zerbrechliche, dem Untergang geweihte Beziehung.",
+        "Besticht durch den klaren, fragilen Gesang und das schlichte Klavierspiel.",
+        "Machte sie weltweit über Nacht berühmt.",
+        "Refrain: 'Come on [XXX] just last the year! Pour a little salt we were never here!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Come on skinny love just last the year, pour a little salt we were never here",
+          "Staring at the sink of blood and crushed veneer",
+          "Who will love you? Who will fight?"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "aNzCDt2eidg",
+        "spotify": "4RL77hMWUq35NYnPLXBpih",
+        "amazonMusic": "B00LZEUK2I"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-birdy-skinny.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-B9a7yDxLpO0",
+      "title": "Life",
+      "artist": "Bisa Kdei x Patoranking",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "West African Music mit internationalem Appeal.",
+        "Melodische, eingängige Struktur.",
+        "Thematisiert Hoffnung und positive Lebenseinstellung.",
+        "Charakteristische afrikanische Musik-Elemente.",
+        "Moderne globale Produktion."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=B9a7yDxLpO0",
+        "spotify": "1N0GdFeRwgEeiDqkX0m4HB",
+        "amazonMusic": "B01N6V7823"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "yt-TtVKvDUGocI",
+      "title": "Dead Man's Arms",
+      "artist": "Bishop Briggs",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Alternative/Indie mit emotionalen Vocals und Drama.",
+        "Modern-alternative Sound-Design.",
+        "Thematisiert emotionale Intensität und Verwundbarkeit.",
+        "Charakteristisch für 2010er Alternative.",
+        "Dynamische, aufbauende Song-Struktur."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TtVKvDUGocI",
+        "spotify": "318CwhlHyuxroBtuoeh3oR",
+        "amazonMusic": "B06Y3WWJ2K"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bishop-briggs-dead-man-s-arms.jpg"
+    },
+    {
+      "id": "yt-W3Ad0K11mcM",
+      "title": "RITMO (Bad Boys For Life)",
+      "artist": "Black Eyed Peas & J Balvin",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Urban/Hip-Hop Collaboration mit Latin-Elementen.",
+        "Energetischer Rhythmus mit eingängigem Hook.",
+        "Thematisiert Bewegung und Aktion.",
+        "Charakteristische Urban-Production.",
+        "Optimiert für Club-Appeal und Tanz."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=W3Ad0K11mcM",
+        "spotify": "5NyS3oxTlos3Agl2YtZwrC",
+        "amazonMusic": "B07YY2CB37"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/black-eyed-peas---j-balvin-ritmo--bad-boys-for-life-.jpg"
+    },
+    {
+      "id": "yt-sr7K3jog-DQ",
+      "title": "DON'T YOU WORRY",
+      "artist": "Black Eyed Peas & Shakira & David Guetta",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Electronic/Synth-Pop mit Dance-Floor-Fokus.",
+        "Melodische Synthies über modernem Rhythmus.",
+        "Thematisiert positive Botschaft und Ermutigung.",
+        "Charakteristische zeitgenössische elektronische Produktion.",
+        "Optimiert für globales Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sr7K3jog-DQ",
+        "spotify": "0gYXw7aPoybWFfB7btQ0eM",
+        "amazonMusic": "B0B4153RNG"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/black-eyed-peas---shakira---david-guetta-don-t-you-worry.jpg"
+    },
+    {
+      "id": "metal-blackflag-tvparty",
+      "title": "TV Party",
+      "artist": "Black Flag",
+      "year": 1981,
+      "country": "US",
+      "genre": "Hardcore Punk",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Happy",
+        "Sarcastic"
+      ],
+      "hints": [
+        "Ironischer Song über Passivität und TV-Konsum.",
+        "Besticht durch den mitgröhl-tauglichen Chorus.",
+        "Henry Rollins' Energie prägt auch die humorvolleren Tracks der Band.",
+        "Ein Inbegriff für L.A. Hardcore mit einem Augenzwinkern.",
+        "Refrain: 'We're gonna have a [XXX] tonight!'"
+      ],
+      "lyrics": {
+        "real": [
+          "We're gonna have a TV party tonight, we're gonna have a TV party alright",
+          "My favorite show is coming on, don't forget the beer",
+          "TV party tonight!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "psUOyXGacL0",
+        "spotify": "4DA95pyBe6QORPGvTEuMWQ",
+        "amazonMusic": "B004163GE6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-blackflag-tvparty.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "rock-sabbath-paranoid",
+      "title": "Paranoid",
+      "artist": "Black Sabbath",
+      "year": 1970,
+      "country": "GB",
+      "genre": "Heavy Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dark",
+        "Powerful",
+        "Raw",
+        "Short"
+      ],
+      "hints": [
+        "Gilt als einer der Gründungs-Songs des Heavy Metal.",
+        "Das markante Riff wurde angeblich in nur wenigen Minuten geschrieben.",
+        "Thematisiert psychische Instabilität und Isolation.",
+        "Die klagende Stimme des Sängers prägt diesen Klassiker.",
+        "Refrain: 'Finished with my woman 'cause she couldn't help me with my mind!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Finished with my woman 'cause she couldn't help me with my mind",
+          "People think I'm insane because I am frowning all the time",
+          "All day long I think of things but nothing seems to satisfy"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0qanF-91aJo",
+        "spotify": "2z71jdeVcC782NgsYZ6N8q",
+        "amazonMusic": "B0DZVJVM2P"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-sabbath-paranoid.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore"
+      ]
+    },
+    {
+      "id": "yt-QmdxRSBQ2G0",
+      "title": "Living On the Ceiling",
+      "artist": "Blancmange",
+      "year": 1982,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Synth-Pop/New Wave mit dancefloor-Fokus.",
+        "Repetitive, hypnotische Melodien über modernem Production.",
+        "Thematisiert oberflächliche Gesellschaft mit Ironie.",
+        "Charakteristische 1980er Synth-Ästhetik.",
+        "Eingängiger, ohrwurmiger Chorus."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QmdxRSBQ2G0",
+        "spotify": "7ygp7PFQu9oYlV72tSd2Wz",
+        "amazonMusic": "B078BD59VF"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/blancmange-living-on-the-ceiling.jpg"
+    },
+    {
+      "id": "yt-dgWxCWNkiqI",
+      "title": "Waves",
+      "artist": "Blancmange",
+      "year": 1983,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Synth-Pop mit emotionaler Tiefe und Melancholie.",
+        "Synthesizer-Pads und Drum Machines über Balade-Struktur.",
+        "Thematisiert fragile menschliche Beziehungen.",
+        "Charakteristisch für 1980er New Wave.",
+        "Elektronischer Sound mit emotionalen Vocals."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dgWxCWNkiqI",
+        "spotify": "210fuXISFCXQCvRvWzoXgW",
+        "amazonMusic": "B07GTKT7LJ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/blancmange-waves.jpg"
+    },
+    {
+      "id": "90s-blind-melon-no-rain",
+      "title": "No Rain",
+      "artist": "Blind Melon",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Summer"
+      ],
+      "hints": [
+        "Berühmt durch das Musikvideo mit dem 'Bee-Girl' im Bienenkostüm.",
+        "Ein großer Hit der Hippie-beeinflussten Alternative-Szene der frühen 90er.",
+        "Der Sänger Shannon Hoon starb tragischerweise kurz nach dem Erfolg der Band.",
+        "Der Text drückt das Gefühl aus, sich in seiner eigenen kleinen Welt wohler zu fühlen.",
+        "'And I wonder if you'll notice me when I'm gone...'"
+      ],
+      "lyrics": {
+        "real": [
+          "All I can say is that my life is pretty plain, I like watching the puddles gather rain",
+          "And all I can do is just pour some tea for two and speak my point of view",
+          "I just want someone to say to me: I'll always be there when you wake"
+        ],
+        "fake": "Dancing with the bees under the ancient trees in the breeze"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "3qVPNONdF58",
+        "spotify": "6txWz9UapYHVxEd7dDIHXT",
+        "amazonMusic": "B001QC90SY"
+      },
+      "coverUrl": "/covers/90s-blind-melon-no-rain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-T3oJsjbmV7k",
+      "title": "Atomic (Remastered 2001)",
+      "artist": "Blondie",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Synth-Disco/New Wave Hybrid mit dancefloor-Energy.",
+        "Elektronische Synthies über schnellem, pulsierendem Beat.",
+        "Thematisiert Emanzipation und Freiheit.",
+        "Charakteristische 1980er Produktion-Ästhetik.",
+        "Eingängiger, memorialer Hook."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T3oJsjbmV7k",
+        "spotify": "5QIbR39hAEDIOkr4ggh4xc",
+        "amazonMusic": "B001QAIKEG"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/blondie-atomic--remastered-2001-.jpg"
+    }
+  ]
+}

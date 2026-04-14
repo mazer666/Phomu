@@ -1,0 +1,564 @@
+{
+  "songs": [
+    {
+      "id": "movie-pulp-fiction-misirlou",
+      "title": "Misirlou",
+      "artist": "Dick Dale & The Del-Tones",
+      "year": 1962,
+      "country": "US",
+      "genre": "Surf Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Raw",
+        "Cool"
+      ],
+      "hints": [
+        "Das furiose Instrumental-Intro von Quentin Tarantinos 'Pulp Fiction'.",
+        "[XXX] [XXX] mischte hier einen nahöstlichen Volks-Song mit Surf-Rock-Energie.",
+        "Bekannt für das extrem schnelle Tremolo-Picking auf der Gitarre.",
+        "Der Sound ist untrennbar mit dem Coolness-Faktor des Films verbunden.",
+        "Refrain: (Instrumental) - 'DA-DA-DA-DA-DA-DA-DA...'"
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental)"
+        ],
+        "fake": "Singing along with the rhythm of the ocean"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZIU0RMV_II8",
+        "spotify": "6S79K4aOf8A9eonS3mXGv9",
+        "amazonMusic": "B077SXDXBL"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-pulp-fiction-misirlou.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "disney-poppins-chim",
+      "title": "Chim Chim Cher-ee",
+      "artist": "Dick Van Dyke",
+      "year": 1964,
+      "country": "GB/US",
+      "genre": "Soundtrack / Waltz",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Gesungen von Schornsteinfeger Bert in 'Mary Poppins'.",
+        "Besticht durch den sanften Walzertakt und den mysteriösen Charme.",
+        "Thematisiert Glück und den Blick über die Dä[XXX] von London.",
+        "Gewann den Oscar für den besten Song.",
+        "Refrain: '[XXX] [XXX]iney, [XXX] [XXX]iney, [XXX] [XXX] [XXX]-oo!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Chim chiminey, chim chiminey, chim chim cher-oo!",
+          "A sweep is as lucky as lucky can be",
+          "Chim chiminey, chim chiminey, chim chim cher-ee!"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Mp4UPCs_jsA",
+        "spotify": "6S9S7fX4F6kU5m0j6zG2mW",
+        "amazonMusic": "B001T9O66E"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-poppins-chim.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "german-fanta4-die-da",
+      "title": "Die da!?!",
+      "artist": "Die Fantastischen Vier",
+      "year": 1992,
+      "country": "DE",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Markierte den kommerziellen Durchbruch von deutschem Hip Hop.",
+        "Der Text dreht sich um eine mysteriöse Frau, die allen Bandmitgliedern den Kopf verdreht.",
+        "Der Refrain ist extrem eingängig und wurde zum geflügelten Wort.",
+        "Die Band stammt aus Stuttgart (Fanta 4).",
+        "Refrain: 'Ist es die da, die da am Eingang steht? Nein, es ist die da, die an der Ecke steht!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Freitagabend, es ist wieder Zeit für 'ne Party, wir haben richtig Bock und gehen steil",
+          "Wir stehen am Eingang und wer kommt da rein? Die da!",
+          "Ist es die da, die da am Eingang steht? Nein, es ist die da, die an der Ecke steht"
+        ],
+        "fake": "Walking through the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "h6W0BDdMG8I",
+        "spotify": "3tZIs4EaG46mO0NLoNf90N",
+        "amazonMusic": "B001SLY0S6"
+      },
+      "coverUrl": "/covers/german-fanta4-die-da.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "german-hosen-hier-kommt-alex",
+      "title": "Hier kommt Alex",
+      "artist": "Die Toten Hosen",
+      "year": 1988,
+      "country": "DE",
+      "genre": "Punk Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Energy"
+      ],
+      "hints": [
+        "Thematisiert den Protagonisten [XXX] aus dem Roman/Film 'A Clockwork Orange'.",
+        "Handelt von sinnloser Gewalt und der Ohnmacht der Gesellschaft.",
+        "Ein Klassiker des deutschen Punk-Rock mit einer sehr markanten Basslinie.",
+        "Wurde oft im Rahmen von Theateraufführungen des Stoffs verwendet.",
+        "Refrain: 'In einer Welt, in der man nur noch lebt, damit man täglich arbeiten geht...'"
+      ],
+      "lyrics": {
+        "real": [
+          "In einer Welt, in der man nur noch lebt, damit man täglich arbeiten geht",
+          "Wo man sich nur noch sieht, damit man sich nicht mehr versteht",
+          "Und wer den Wahnsinn nicht mehr packt, der haut sich völlig nackt ans Kreuz"
+        ],
+        "fake": "Wir rennen durch die Straßen, um den Moment niemals zu verpassen"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "6z8o7qAIlIU",
+        "spotify": "1zs0BxFFLfbJQTSo84rkhy",
+        "amazonMusic": "B001T9O27G"
+      },
+      "coverUrl": "/covers/german-hosen-hier-kommt-alex.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "german-hosen-tage",
+      "title": "Tage wie diese",
+      "artist": "Die Toten Hosen",
+      "year": 2012,
+      "country": "DE",
+      "genre": "Punk Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Die erfolgreichste Single in der Geschichte der Band um Campino.",
+        "Wurde zu einer Hymne für große Siege, Feiern und Gemeinschaft.",
+        "Der Song fängt die Euphorie eines besonderen Augenblicks perfekt ein.",
+        "Ein moderner Klassiker des deutschsprachigen Rock.",
+        "Refrain: 'An [XXX]n wie [XXX]n, wünscht man sich Unendlichkeit!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich warte seit Wochen auf diesen Tag, und tanz' vor Freude über den Asphalt",
+          "An Tagen wie diesen, wünscht man sich Unendlichkeit",
+          "An Tagen wie diesen, haben wir noch ewig Zeit"
+        ],
+        "fake": "Nichts kann uns stoppen, wir fliegen durch die Wolken irgendwie"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "j09hpp3AxIE",
+        "spotify": "2lYsCjTvXIHOqT8xSbK2jq",
+        "amazonMusic": "B007XBRI72"
+      },
+      "coverUrl": "/covers/german-hosen-tage.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "german-aerzte-zu-spaet",
+      "title": "Zu spät",
+      "artist": "Die Ärzte",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Punk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Fun"
+      ],
+      "hints": [
+        "Handelt von einem Jungen, der von einem Mädchen wegen eines reicheren Jungen verlassen wird.",
+        "Die Band prophezeit im Song ihren eigenen späteren Ruhm ('Eines Tages werde ich mich rächen...').",
+        "Einer der ersten großen Hits der 'besten Band der Welt'.",
+        "Bekannt für den humorvollen Text und das Mitsing-Potenzial.",
+        "Refrain: 'Eines Tages werde ich mich rächen, ich werde die Herzen aller Mädchen brechen!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Du glaubst, du bist was Besseres, weil du einen Freund hast, der Geld hat",
+          "Ich hab' zwar kein Auto, aber ich bin nicht so wie er",
+          "Doch eines Tages werde ich mich rächen, ich werde die Herzen aller Mädchen brechen"
+        ],
+        "fake": "In der Schule warst du schon die Königin, und ich hatte nur meinen Sinn"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "X648-JAusbg",
+        "spotify": "5FFGr69nqIPiNn9MTaHXKb",
+        "amazonMusic": "B08KFWT5XN"
+      },
+      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics"
+      ]
+    },
+    {
+      "id": "yt-Nb1VOQRs-Vs",
+      "title": "Color Esperanza",
+      "artist": "Diego Torres",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Nb1VOQRs-Vs",
+        "spotify": "3T07pNAEVr9adeIG9i1ex4",
+        "amazonMusic": "B0BHTV9LVC"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/diego-torres-color-esperanza.jpg"
+    },
+    {
+      "id": "yt-QAwmqirO6TQ",
+      "title": "Keep Calm And Baila Reggaeton",
+      "artist": "Dile",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QAwmqirO6TQ",
+        "spotify": "57Yc562FwF6DK6FcZwr1Q0",
+        "amazonMusic": "B00BS4232K"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/dile-keep-calm-and-baila-reggaeton.jpg"
+    },
+    {
+      "id": "yt-UWV41yEiGq0",
+      "title": "Bad Bunny, Ozuna, Farruko, Arcangel, Ñengo Flow",
+      "artist": "Diles",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UWV41yEiGq0",
+        "spotify": "6C1RD7YQVvt3YQj0CmuTeu",
+        "amazonMusic": "B01L0SHFXK"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/diles-bad-bunny--ozuna--farruko--arcangel--ñengo-flow.jpg"
+    },
+    {
+      "id": "jazz-dinah-daymade",
+      "title": "What a Diff'rence a Day Made",
+      "artist": "Dinah Washington",
+      "year": 1959,
+      "country": "US",
+      "genre": "Jazz / Vocal / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "[XXX] [XXX]s größter Hit und herrlich optimistisch.",
+        "Thematisiert die plötzliche Veränderung des Lebens durch die Liebe.",
+        "Besticht durch das elegante Arrangement und ihre klare Stimme.",
+        "Ein Inbegriff für den Übergang von Jazz zu Pop in den späten 50ern.",
+        "Refrain: '[XXX] a [XXX] a day [XXX]! Twenty-four little hours!'"
+      ],
+      "lyrics": {
+        "real": [
+          "What a diff'rence a day made, twenty-four little hours",
+          "Brought the sun and the flowers, where there used to be rain",
+          "My yesterday was blue dear, today I'm a part of you dear"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "upJ3OgMRiUA",
+        "spotify": "66iKqUazBbTlAEjcZrpDkD",
+        "amazonMusic": "B07H1JF8WM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-dinah-daymade.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-XUgoCqbVt5I",
+      "title": "Dialeto",
+      "artist": "Diogo Piçarra",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XUgoCqbVt5I",
+        "spotify": "7MWkiMxhOIAqajKsQwDdWi",
+        "amazonMusic": "B076LQDMJL"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/diogo-piçarra-dialeto.jpg"
+    },
+    {
+      "id": "80s-dire-straits-money-for-nothing",
+      "title": "Money for Nothing",
+      "artist": "Dire Straits",
+      "year": 1985,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Rock",
+        "Electronic"
+      ],
+      "hints": [
+        "Das Musikvideo war eines der ersten mit computeranimierten 3D-Figuren.",
+        "Mark Knopflers Gitarrenriff ist einer der markantesten der Rockgeschichte.",
+        "Sting singt im Hintergrund die Zeilen 'I want my MTV'.",
+        "Der Text ist aus der Sicht von Arbeitern geschrieben, die Musiker im Fernsehen beobachten.",
+        "Hörst du die Drums? 'I want my MTV...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I want my MTV, I want my MTV",
+          "Now look at them yo-yos that's the way you do it, you play the guitar on the MTV",
+          "That ain't working, that's the way you do it, money for nothing and your chicks for free"
+        ],
+        "fake": [
+          "Working all day in the factory line, dreaming of the summer time",
+          "I gave away my radio, to that MTV can come to me",
+          "It is screaming, it is spinning, that's my way, so that you see me play"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "wTP2RUD_cL0",
+        "spotify": "4y1Ls7v9TevNiTqy9u9SME",
+        "amazonMusic": "B0CP4F2RGD"
+      },
+      "coverUrl": "/covers/80s-dire-straits-money-for-nothing.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "yt--IOIsq7zsvM",
+      "title": "One By One (feat. Oaks)",
+      "artist": "Disciples",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-IOIsq7zsvM",
+        "spotify": "2D1P2Y9RUxZW2Ch9A1rwHA",
+        "amazonMusic": "B0CQTNR8TX"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/disciples-one-by-one--feat--oaks-.jpg"
+    }
+  ]
+}

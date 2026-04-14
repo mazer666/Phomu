@@ -1,0 +1,552 @@
+{
+  "songs": [
+    {
+      "id": "disney-zootopia-try",
+      "title": "Try Everything",
+      "artist": "Shakira",
+      "year": 2016,
+      "country": "CO/US",
+      "genre": "Soundtrack / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "Titelsong aus 'Zoomania' (Zootopia).",
+        "Gesungen von Popstar Gazelle ([XXX]).",
+        "Thematisiert Ausdauer, Mut und den Glauben an sich selbst.",
+        "Ein moderner, kraftvoller Radio-Popsong.",
+        "Refrain: 'I won't give up, no I won't give in! Till I reach the end and then I'll start again!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I messed up tonight, I lost another fight, I still mess up but I'll just start again",
+          "I won't give up, no I won't give in, till I reach the end and then I'll start again",
+          "Birds don't just fly, they fall down and get up"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "c6rP-YP4c5I"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-zootopia-try.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "shakira-waka-waka-2010",
+      "title": "Waka Waka (This Time for Africa)",
+      "artist": "Shakira",
+      "year": 2010,
+      "country": "CO",
+      "genre": "World",
+      "difficulty": "easy",
+      "mood": [
+        "Summer Vibes",
+        "Dance Floor",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Der Titel '[XXX] [XXX]' leitet sich von einem Lied der kamerunischen Gruppe Golden Sounds ab, das [XXX] als musikalische Basis verwendete.",
+        "Offizieller Song der FIFA Fußball-Weltmeisterschaft 2010 in Südafrika; [XXX] spielte ihn bei der Eröffnungsfeier live.",
+        "Erschienen 2010; das Musikvideo gehört zu den meistgesehenen aller Zeiten auf YouTube.",
+        "Afropop-Rhythmen, lebhafter Groove und [XXX]s unverwechselbarer Gesang, gemischt mit südafrikanischen Percussion-Elementen.",
+        "[XXX] feuert Fußballer an: Diesmal für Afrika – mit einem Hüftschwung, der die Welt begeisterte."
+      ],
+      "lyrics": {
+        "real": [
+          "Tsamina mina, zangalewa, 'cause this is Africa",
+          "Tsamina mina, eh eh, waka waka, eh eh",
+          "You're a good soldier, choosing your battles"
+        ],
+        "fake": "Let the rhythm take you to the place where dreams are born"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pRpeEdMmmQ0"
+      },
+      "coverUrl": "/covers/shakira-waka-waka-2010.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "2000s-shakira-whenever",
+      "title": "Whenever, Wherever",
+      "artist": "Shakira",
+      "year": 2001,
+      "country": "CO",
+      "genre": "Latin-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "War ihr erster großer Hit in englischer Sprache, sonst sang sie nur spanisch.",
+        "Bekannt für den Einsatz von Panflöten und lateinamerikanischen Rhythmen.",
+        "Thematisiert den Willen, für die Liebe überallhin zu folgen.",
+        "Das Video zeigt sie, wie sie aus dem Wasser steigt und mit Pferden tanzt.",
+        "Refrain: '[XXX], [XXX], we're meant to be together!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Lucky you were born that far away so so we could both make fun of distance",
+          "Whenever, wherever, we're meant to be together",
+          "I'll be there, and you'll be near, and that's the deal, my dear"
+        ],
+        "fake": [
+          "I'll breake a tear, so you can't bring it to me",
+          "I make you dream of everything, so that you fall in love again",
+          "Whereever you go, whenever you think, we need to be one pair"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "weRHyjj34ZE",
+        "spotify": "2lnzGkdtDj5mtlcOW2yRtG",
+        "amazonMusic": "B00IVHGQGQ"
+      },
+      "coverUrl": "/covers/2000s-shakira-whenever.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "country-shania-twain-woman",
+      "title": "Man! I Feel Like a Woman!",
+      "artist": "Shania Twain",
+      "year": 1997,
+      "country": "CA",
+      "genre": "Country Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Confident",
+        "Energy",
+        "Happy",
+        "Pop"
+      ],
+      "hints": [
+        "Mischte Country-Elemente mit modernem Pop-Rock zu einem weltweiten Phänomen.",
+        "Wurde zu einer Hymne der weiblichen Selbstbestimmung und Freude.",
+        "Das Musikvideo mit der Band im Hintergrund ist eine Hommage an Robert Palmers 'Addicted to Love'.",
+        "Besticht durch das markante Gitarren-Intro und den energischen Refrain.",
+        "Refrain: 'Let's go girls! Man! I [XXX] [XXX] a [XXX]'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm going out tonight, I'm feeling alright, gonna let it all hang out",
+          "The best thing about being a woman is the prerogative to have a little fun",
+          "Let's go girls! Man! I feel like a woman!"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZJL4UGSbeFg"
+      },
+      "coverUrl": "/covers/country-shania-twain-woman.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk"
+      ]
+    },
+    {
+      "id": "yt-PU3Dwi-hXBw",
+      "title": "Treat You Better / Mercy (Live From the AMA's/2016)",
+      "artist": "Shawn Mendes",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PU3Dwi-hXBw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/shawn-mendes-treat-you-better---mercy--live-from-the-ama-s-2016-.jpg"
+    },
+    {
+      "id": "yt-FMZ7lS_Lc2Q",
+      "title": "When You're Gone",
+      "artist": "Shawn Mendes",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FMZ7lS_Lc2Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/shawn-mendes-when-you-re-gone.jpg"
+    },
+    {
+      "id": "90s-sheryl-crow-all-i-wanna-do",
+      "title": "All I Wanna Do",
+      "artist": "Sheryl Crow",
+      "year": 1993,
+      "country": "US",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Summer",
+        "Casual"
+      ],
+      "hints": [
+        "Basiert auf einem Gedicht namens 'Fun' von Wyn Cooper.",
+        "Der Song fängt das entspannte Lebensgefühl von LA ein ('All I [XXX] do is have some fun').",
+        "Gewann den Grammy für den Record of the Year 1995.",
+        "Das Video zeigt die Sängerin entspannt in einer Bar und auf den Straßen.",
+        "Refrain: 'All I [XXX] do is have some fun, I got a feeling I'm not the only one.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hit it! This ain't no disco, it ain't no country club either",
+          "All I wanna do is have some fun until the sun comes up over Santa Monica Boulevard",
+          "I like a good beer buzz early in the morning"
+        ],
+        "fake": "Dancing all alone, far away from home, in the neon zone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ClbmWkbocoY",
+        "spotify": "3ZpQiJ78LKINrW9SQTgbXd",
+        "amazonMusic": "B002VICG88"
+      },
+      "coverUrl": "/covers/90s-sheryl-crow-all-i-wanna-do.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-nyqOWhYsRb4",
+      "title": "Lenny Tavárez Ft Cosculluela",
+      "artist": "Si Tu Cama Hablara",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nyqOWhYsRb4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/si-tu-cama-hablara-lenny-tavárez-ft-cosculluela.jpg"
+    },
+    {
+      "id": "yt-s2b-bB1MnXg",
+      "title": "Nicky Jam Ft De la Ghetto | Video Oficial",
+      "artist": "Si Tu No Estas",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s2b-bB1MnXg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-pop.jpg"
+    },
+    {
+      "id": "yt-znvu2yiTkQg",
+      "title": "Alive",
+      "artist": "Sia",
+      "year": 2015,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=znvu2yiTkQg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sia-alive.jpg"
+    },
+    {
+      "id": "piano-sia-breathe",
+      "title": "Breathe Me",
+      "artist": "Sia",
+      "year": 2004,
+      "country": "AU",
+      "genre": "Indie Pop / Downtempo",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Spiritual"
+      ],
+      "hints": [
+        "Unvergesslich durch das Serienfinale von 'Six Feet Under'.",
+        "Thematisiert den Wunsch nach Hilfe und Geborgenheit in dunklen Zeiten.",
+        "Besticht durch das schleppende Klavier und Sias verletzlichen Gesang.",
+        "Ein Inbegriff für atmosphärischen, traurigen Piano-Indie.",
+        "Refrain: 'Help, I have done it again! I have been here many times before!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Help, I have done it again, I have been here many times before",
+          "Hurt myself again today, and the worst part is there's no one else to blame",
+          "Be my friend, hold me, wrap me up"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "-Lec-zqp76g"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-sia-breathe.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "sia-chandelier-2014",
+      "title": "Chandelier",
+      "artist": "Sia",
+      "year": 2014,
+      "country": "AU",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Epic",
+        "Heartbreak",
+        "Power Ballad",
+        "Powerful"
+      ],
+      "hints": [
+        "[XXX] schrieb diesen Song über ihren Kampf gegen Alkoholsucht; der Kronleuchter steht symbolisch für ein ausschweifendes Partyleben.",
+        "Im Musikvideo tanzt die damals elfjährige Maddie Ziegler in einem leeren Haus mit Perücke – eine der ikonischsten Choreografien des Jahrzehnts.",
+        "Erschienen 2014 auf dem Album '1000 Forms of Fear'; machte [XXX] nach Jahren als anonyme Songwriterin selbst weltberühmt.",
+        "Langsamer Aufbau, der in einen bombastischen Refrain mit Sias dramatischer Vierokaven-Stimme explodiert.",
+        "[XXX] schwingt wie ein Kronleuchter – eine Hymne über Vergessen, Feiern und den schmerzhaften Morgen danach."
+      ],
+      "lyrics": {
+        "real": [
+          "Party girls don't get hurt, can't feel anything, when will I learn?",
+          "I'm gonna swing from the chandelier",
+          "I'm gonna live like tomorrow doesn't exist"
+        ],
+        "fake": "Dancing in the shadows until the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "2vjPBrBU-TM",
+        "spotify": "2s1sdSqGcKxpPr5lCl7jAV",
+        "amazonMusic": "B00KMZI49M"
+      },
+      "coverUrl": "/covers/sia-chandelier-2014.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "finale-sia-unstoppable",
+      "title": "Unstoppable (resurgence)",
+      "artist": "Sia",
+      "year": 2016,
+      "country": "AU",
+      "genre": "Pop / Empowerment",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "Song mit charakteristischen Pop -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm unstoppable, I'm a Porsche with no brakes",
+          "I'm invincible, yeah, I win every single game",
+          "I'm so powerful, I don't need batteries to play"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YaEG2aWJnZ8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ],
+      "coverUrl": "/covers/sia-unstoppable--resurgence-.jpg"
+    }
+  ]
+}

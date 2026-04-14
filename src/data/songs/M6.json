@@ -1,0 +1,526 @@
+{
+  "songs": [
+    {
+      "id": "piano-meatloaf-anything",
+      "title": "I'd Do Anything for Love (But I Won't Do That)",
+      "artist": "Meat Loaf",
+      "year": 1993,
+      "country": "US",
+      "genre": "Rock / Opera influence",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Inbegriff für den bombastischen Rock-Opern-Stil von Jim Steinman.",
+        "Besticht durch das dramatische Klavierspiel und den epischen Aufbau über 12 Minuten (Albumversion).",
+        "Thematisiert grenzenlose Hingabe, aber mit einer mysteriösen Einschränkung.",
+        "Wurde zu [XXX] [XXX]s größtem kommerziellen Erfolg weltweit.",
+        "Refrain: 'I'd do [XXX] for [XXX]! But I [XXX] do that!'"
+      ],
+      "lyrics": {
+        "real": [
+          "And I would do anything for love, I'd run right into hell and back",
+          "But I won't do that, no I won't do that",
+          "As long as the wheels are turning"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DzOHGzM5W_Y"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-meatloaf-anything.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "metal-megadeth-holywars",
+      "title": "Holy Wars... The Punishment Due",
+      "artist": "Megadeth",
+      "year": 1990,
+      "country": "US",
+      "genre": "Thrash Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Complex",
+        "Powerful"
+      ],
+      "hints": [
+        "Ein technisches Meisterwerk des Thrash Metal aus dem Album 'Rust in Peace'.",
+        "Thematisiert religiöse Konflikte und politische Gewalt.",
+        "Dave Mustaines präzise Riffs und die komplexen Tempowechsel sind ikonisch.",
+        "Gilt als einer der besten Metal-Songs aller Zeiten.",
+        "Refrain: '[XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Brother will kill brother, spilling blood across the land",
+          "Fools like me, who cross the sea and bring back many scars",
+          "Holy wars"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "M42_EBAmcLk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-megadeth-holywars.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "hiphop-megan-savage",
+      "title": "Savage",
+      "artist": "Megan Thee Stallion",
+      "year": 2020,
+      "country": "US",
+      "genre": "Hip Hop / Trap",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Confident"
+      ],
+      "hints": [
+        "Besonders durch eine TikTok-Tanz-Challenge weltweit bekannt geworden.",
+        "Feiert Selbstbewusstsein und verschiedene Facetten der eigenen Persönlichkeit.",
+        "[XXX] [XXX] [XXX]s technisches Können als Rapperin ist hier deutlich spürbar.",
+        "Ein Inbegriff für modernen, selbstbewussten weiblichen Rap.",
+        "Refrain: 'I'm a [XXX]! Classy, bougie, ratchet!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm a savage, classy, bougie, ratchet, sassy, moody, nasty",
+          "Acting stupid, what's happening? Bitch, what's happening?",
+          "I'm a savage, classy, bougie, ratchet"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eJEKHdvntPI"
+      },
+      "coverUrl": "/covers/hiphop-megan-savage.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-pkCyfBibIbI",
+      "title": "Better When I'm Dancin'",
+      "artist": "Meghan Trainor",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pkCyfBibIbI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/meghan-trainor-better-when-i-m-dancin-.jpg"
+    },
+    {
+      "id": "yt-wkri1NUq9ro",
+      "title": "Mrs. Potato Head",
+      "artist": "Melanie Martinez",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wkri1NUq9ro"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/melanie-martinez-mrs--potato-head.jpg"
+    },
+    {
+      "id": "country-merle-mama",
+      "title": "Mama Tried",
+      "artist": "Merle Haggard",
+      "year": 1968,
+      "country": "US",
+      "genre": "Bakersfield Country",
+      "difficulty": "medium",
+      "mood": [
+        "Serious",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Reflektiert [XXX]s eigene Zeit im Gefängnis und seine Reue.",
+        "Besticht durch den typischen Bakersfield-Sound (klirrende Gitarren).",
+        "Thematisiert jugendliche Rebellion trotz aller mütterlichen Bemühungen.",
+        "Ein Grundpfeiler des ehrlichen, harten Country.",
+        "Refrain: 'And I turned twenty-one in prison doing life without parole!'"
+      ],
+      "lyrics": {
+        "real": [
+          "The first thing I remember knowing, was a lonesome whistle blowing",
+          "Mama tried to raise me better, but her pleading I denied",
+          "I turned twenty-one in prison, doing life without parole"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "loT_pYzi3Vw"
+      },
+      "coverUrl": "/covers/country-merle-mama.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "rock-metallica-enter-sandman",
+      "title": "Enter Sandman",
+      "artist": "Metallica",
+      "year": 1991,
+      "country": "US",
+      "genre": "Heavy Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Energy",
+        "Heavy",
+        "Powerful"
+      ],
+      "hints": [
+        "Das Lied, das [XXX] endgültig in den Mainstream katapultierte (The Black Album).",
+        "Handelt von Albträumen und der Angst eines Kindes vor der Dunkelheit.",
+        "Das ikonische Gitarrenriff am Anfang ist eines der bekanntesten Metal-Riffs.",
+        "Enthält ein gesprochenes Gebet im Mittelteil ('Now I lay me down to sleep...').",
+        "Vergiss dein Nachtgebet nicht: 'Sleep with one eye open, gripping your pillow tight!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Say your prayers, little one, don't forget, my son, to include everyone",
+          "Tuck you in, warm within, keep you free from sin till the sandman he comes",
+          "Exit: light, Enter: night, Take my hand, we're off to never-never land"
+        ],
+        "fake": "In the middle of the shadow, I'm looking for the golden arrow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CD-E-LDc384"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-metallica-enter-sandman.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore"
+      ]
+    },
+    {
+      "id": "yt-LK0d4ATFN30",
+      "title": "November 5, 2016)",
+      "artist": "Metallica: Orion (San José, Costa Rica",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LK0d4ATFN30"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/metallica--orion--san-josé--costa-rica-november-5--2016-.jpg"
+    },
+    {
+      "id": "yt-VYsr8v1jMHI",
+      "title": "Creepin'",
+      "artist": "Metro Boomin & The Weeknd & 21 Savage",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VYsr8v1jMHI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/metro-boomin---the-weeknd---21-savage-creepin-.jpg"
+    },
+    {
+      "id": "indie-mgmt-kids",
+      "title": "Kids",
+      "artist": "MGMT",
+      "year": 2007,
+      "country": "US",
+      "genre": "Indie Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Electronic",
+        "Catchy"
+      ],
+      "hints": [
+        "Ein Meilenstein des Synth-lastigen Indie-Pop der späten 2000er.",
+        "Die eingängige Synthesizer-Melodie klingt fast wie ein Kinderlied.",
+        "Das Musikvideo mit dem Monster und dem schreienden Kleinkind war damals sehr umstritten.",
+        "Thematisiert Nostalgie und das Erwachsenwerden.",
+        "Refrain: 'Control yourself, take only what you need from it!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You were a child, crawling on your knees toward it, making momma so proud",
+          "Control yourself, take only what you need from it",
+          "A family of trees wanting to be haunted"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "fe4EK4HSPkI"
+      },
+      "coverUrl": "/covers/indie-mgmt-kids.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "yt-q2r8rLSKNs0",
+      "title": "Sonora Dinamita (vídeo oficial)",
+      "artist": "MI CUCU",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=q2r8rLSKNs0"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/mi-cucu-sonora-dinamita--vídeo-oficial-.jpg"
+    },
+    {
+      "id": "jazz-buble-feeling",
+      "title": "Feeling Good",
+      "artist": "Michael Bublé",
+      "year": 2005,
+      "country": "CA",
+      "genre": "Jazz / Pop / Big Band",
+      "difficulty": "easy",
+      "mood": [
+        "Confident",
+        "Powerful",
+        "Energy"
+      ],
+      "hints": [
+        "[XXX] [XXX]s moderne Big-Band-Version des Nina Simone Klassikers.",
+        "Machte den Song für eine völlig neue Generation populär.",
+        "Besticht durch den powervollen Gesang und die bombastische Produktion.",
+        "Ein Inbegriff für den Erfolg des 'Modern Crooner' Stils.",
+        "Refrain: 'It's a new dawn, it's a new day!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Birds flying high you know how I feel, sun in the sky you know how I feel",
+          "It's a new dawn, it's a new day, it's a new life for me",
+          "And I'm feeling good"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Edwsf-8F3sI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-buble-feeling.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "yt-kX1p57JL3Bs",
+      "title": "Home",
+      "artist": "Michael Bublé",
+      "year": 2005,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2000er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kX1p57JL3Bs"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/michael-bublé-home.jpg"
+    }
+  ]
+}

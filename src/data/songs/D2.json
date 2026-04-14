@@ -1,92 +1,43 @@
 {
   "songs": [
     {
-      "id": "yt-SXPbzreFSxw",
-      "title": "Don't Start Now",
-      "artist": "Dua Lipa",
-      "year": 2019,
-      "country": "INT",
-      "genre": "Classic Pop",
-      "difficulty": "medium",
+      "id": "disco-daft-lucky",
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams",
+      "year": 2013,
+      "country": "FR",
+      "genre": "Funk / Nu-Disco",
+      "difficulty": "easy",
       "mood": [
-        "60s/70s Legends",
-        "Cool",
-        "Dance",
-        "Energy",
-        "Popular"
-      ],
-      "hints": [
-        "Brachte den Disco-Sound mit moderner Produktion zurück in die Charts.",
-        "Besitzt eine extrem mitreißende Basslinie.",
-        "Handelt davon, dass man über eine alte Liebe hinweg ist und sich nicht mehr stören lässt.",
-        "Ein Paradebeispiel für den Erfolg ihres Albums 'Future Nostalgia'.",
-        "Refrain: '[XXX] show up, [XXX] come out, [XXX] [XXX] caring about me now!'"
-      ],
-      "lyrics": {
-        "real": [
-          "If you don't wanna see me dancing with somebody, if you wanna believe that anything could stop me",
-          "Don't show up, don't come out, don't start caring about me now",
-          "Walk away, you know how, don't start caring about me now"
-        ],
-        "fake": "In the middle of the island, we're looking for the silent sun"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=SXPbzreFSxw"
-      },
-      "supportedModes": [
-        "cover-confusion",
-        "hint-master",
-        "lyrics-labyrinth",
-        "survivor",
-        "timeline",
-        "vibe-check"
-      ],
-      "isQRCompatible": true,
-      "packs": [
-        "YouTube Collection",
-        "Dance Floor Fillers"
-      ],
-      "coverUrl": "/covers/dance-dua-lipa-start-now.jpg"
-    },
-    {
-      "id": "dua-lipa-levitating-2020",
-      "title": "Levitating",
-      "artist": "Dua Lipa",
-      "year": 2020,
-      "country": "GB",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
+        "Classic",
         "Dance Floor",
         "Energy",
         "Happy",
-        "Modern",
-        "Modern Hits",
         "Neon Night",
-        "Popular",
         "Summer Vibes"
       ],
       "hints": [
-        "Das Stück wurde von Clarence Coffee Jr. und Stuart Price mitgeschrieben – beide sind auch für Hits von Ariana Grande bekannt.",
-        "Die Disco-Einflüsse wurden bewusst gewählt: Produzent Stuart Price wollte den Sound der 70er für ein 2020er-Publikum modernisieren.",
-        "Erschienen 2020 auf dem Album 'Future Nostalgia'; das Kritikerliebling-Album des Jahres 2020.",
-        "Funkiger Disco-Pop mit schwebenden Synthesizern, einem treibenden Bass und Dua [XXX]s warmer Stimme.",
-        "Dua [XXX] fühlt sich so verliebt, dass sie das Gefühl hat zu levitieren – zu schweben."
+        "Das Duo [XXX] [XXX] trat während dieser Ära fast ausschließlich in ihren ikonischen Roboterhelmen auf.",
+        "Gitarrist Nile Rodgers (Chic) spielt den prägenden Funk-Rhythmus, den er in nur einer Studio-Session einspielte.",
+        "Erschienen 2013 auf dem Album 'Random Access Memories'; gewann den Grammy für die Aufnahme des Jahres.",
+        "Moderner Nu-Disco mit einem unwiderstehlichen Basslauf, Vocoder-Stimmen und [XXX]s souligem Gesang.",
+        "[XXX] [XXX] und [XXX] [XXX] besingen eine Nacht, in der man lange aufbleibt, um Glück zu finden."
       ],
       "lyrics": {
         "real": [
-          "If you wanna run away with me, I know a galaxy",
-          "And I can take you for a ride",
-          "I'm levitating, the Milky Way, we're renegading"
+          "Like the legend of the phoenix, all ends with beginnings",
+          "We've come too far to give up who we are",
+          "We're up all night to get lucky"
         ],
-        "fake": "We're walking on the stars above the city lights"
+        "fake": "In the shadow of the night, we're looking for the light tonight"
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=UbPrlq52r7Y"
+        "youtube": "CCHdMIEGaaM",
+        "spotify": "69vToOV96pSTubqs57S3Mc",
+        "amazonMusic": "B00CS36FSI"
       },
-      "coverUrl": "/covers/dua-lipa-levitating-2020.jpg",
+      "coverUrl": "/covers/disco-daft-lucky.jpg",
       "supportedModes": [
         "cover-confusion",
         "hint-master",
@@ -97,288 +48,14 @@
       ],
       "isQRCompatible": true,
       "packs": [
-        "Global Hits 1950-2026",
-        "youtube-import",
-        "grand-finale"
+        "Electronic & Synthpop Voyage",
+        "Global Hits 1950-2026"
       ]
     },
     {
-      "id": "yt-VMQlEvr42A8",
-      "title": "Training Season",
-      "artist": "Dua Lipa",
-      "year": 2024,
-      "country": "INT",
-      "genre": "Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Modern Hits"
-      ],
-      "hints": [
-        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
-        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
-        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
-        "Hook-fokussiert mit eingängigem Chorus.",
-        "Optimiert für Streaming und Radio-Appeal."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=VMQlEvr42A8"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/dua-lipa-training-season.jpg"
-    },
-    {
-      "id": "yt-fWU5TM2fWkY",
-      "title": "Something On My Mind",
-      "artist": "Duke Dumont & Nothing But Thieves",
-      "year": 2020,
-      "country": "INT",
-      "genre": "Electronic",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "Dance Floor"
-      ],
-      "hints": [
-        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
-        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
-        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
-        "Optimiert für Radio-Kontext."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=fWU5TM2fWkY"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/duke-dumont---nothing-but-thieves-something-on-my-mind.jpg"
-    },
-    {
-      "id": "jazz-duke-atrain",
-      "title": "Take the 'A' Train",
-      "artist": "Duke Ellington",
-      "year": 1941,
-      "country": "US",
-      "genre": "Swing / Big Band",
-      "difficulty": "medium",
-      "mood": [
-        "Happy",
-        "Energy",
-        "Classic"
-      ],
-      "hints": [
-        "Erkennungsmelodie des [XXX] [XXX] Orchestras.",
-        "Bezieht sich auf die U-Bahn-Linie A nach Harlem.",
-        "Ein Inbegriff für den eleganten und kraftvollen Big Band Sound.",
-        "Besticht durch den feinen Swing und die brillanten Bläser-Sätze.",
-        "Genre-Inhalt: Legendärer Swing-Standard."
-      ],
-      "lyrics": {
-        "real": [
-          "You must take the A train, to go to Sugar Hill way up in Harlem",
-          "If you should take the A train, you'll find the quickest way to get to Harlem",
-          "Hurry, get on now, it's coming"
-        ],
-        "fake": "In the middle of the island, we're looking for the silent sun tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "D6mFGy4g_n8"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/jazz-duke-atrain.jpg",
-      "packs": [
-        "Jazz & Blues Classics"
-      ]
-    },
-    {
-      "id": "yt-EP_kVaENf6Q",
-      "title": "Girls on Film (2010 Remaster)",
-      "artist": "Duran Duran",
-      "year": 1981,
-      "country": "INT",
-      "genre": "NDW",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "German New Wave"
-      ],
-      "hints": [
-        "Song mit charakteristischen NDW-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=EP_kVaENf6Q"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/duran-duran-girls-on-film--2010-remaster-.jpg"
-    },
-    {
-      "id": "80s-duran-wolf",
-      "title": "Hungry Like the Wolf",
-      "artist": "Duran Duran",
-      "year": 1982,
-      "country": "GB",
-      "genre": "New Wave / Synth Pop",
-      "difficulty": "easy",
-      "mood": [
-        "Energy",
-        "Cool",
-        "Classic"
-      ],
-      "hints": [
-        "Das Video im Indiana-Jones-Stil prägte das Image der Band.",
-        "Besticht durch den treibenden Beat und Simon Le Bons charismatischen Gesang.",
-        "Ein Paradebeispiel für den stylischen 'New Romantic' Sound.",
-        "Half [XXX] [XXX], den US-Markt zu erobern.",
-        "Refrain: 'In touch with the ground, I'm on the hunt, I'm after you!'"
-      ],
-      "lyrics": {
-        "real": [
-          "Dark in the city, night is a wire, steam in the subway, earth is afire",
-          "In touch with the ground, I'm on the hunt I'm after you",
-          "Smell like a sound, I'm lost in a crowd and I'm hungry like the wolf"
-        ],
-        "fake": "Dancing in the stars, playing my guitars tonight"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "oJL-lCzEXgI",
-        "spotify": "39lSeqnyjZJejRuaREfyLL",
-        "amazonMusic": "B002M49SYG"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/80s-duran-wolf.jpg",
-      "packs": [
-        "80s Pop Hits"
-      ]
-    },
-    {
-      "id": "yt-rcEWVdL_fIo",
-      "title": "Son Of A Preacher Man",
-      "artist": "Dusty Springfield",
-      "year": 1968,
-      "country": "INT",
-      "genre": "Classic Pop",
-      "difficulty": "medium",
-      "mood": [
-        "Popular",
-        "60s/70s Legends"
-      ],
-      "hints": [
-        "Song mit charakteristischen Classic Pop-Elementen.",
-        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
-        "Moderne Produktion kombiniert mit traditionellem Sound.",
-        "Eingängige Melodien und emotionale Tiefe.",
-        "Zeitloser Appeal mit klassischen Produktionselementen."
-      ],
-      "lyrics": null,
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "https://www.youtube.com/watch?v=rcEWVdL_fIo"
-      },
-      "supportedModes": [
-        "timeline"
-      ],
-      "isQRCompatible": false,
-      "packs": [
-        "YouTube Collection"
-      ],
-      "coverUrl": "/covers/dusty-springfield-son-of-a-preacher-man.jpg"
-    },
-    {
-      "id": "disney-moana-welcome",
-      "title": "You're Welcome",
-      "artist": "Dwayne Johnson",
-      "year": 2016,
-      "country": "US",
-      "genre": "Soundtrack / Funny / Rap",
-      "difficulty": "easy",
-      "mood": [
-        "Funny",
-        "Confident",
-        "Groovy"
-      ],
-      "hints": [
-        "Gesungen von Halbgott Maui ([XXX] 'The Rock' [XXX]).",
-        "Thematisiert Mauis gigantisches Ego und seine Taten für die Menschheit.",
-        "[XXX] [XXX]s charismatischer Gesang (und Rap!) überraschte alle.",
-        "Ein extrem eingängiger Gute-Laune-Track.",
-        "Refrain: 'What can I say except [XXX] [XXX]! For the tides, the sun, the sky!'"
-      ],
-      "lyrics": {
-        "real": [
-          "I see what's happening here, you're face to face with greatness and it's strange",
-          "You're welcome, what can I say except you're welcome",
-          "For the tides, the sun, the sky, hey, it's okay, it's okay, you're welcome"
-        ],
-        "fake": "Tanzen im Licht, wir vergessen dich nicht heute Abend"
-      },
-      "isOneHitWonder": false,
-      "links": {
-        "youtube": "79DijItQXMM"
-      },
-      "supportedModes": [
-        "timeline",
-        "hint-master",
-        "vibe-check",
-        "cover-confusion",
-        "survivor",
-        "lyrics-labyrinth"
-      ],
-      "isQRCompatible": true,
-      "coverUrl": "/covers/disney-moana-welcome.jpg",
-      "packs": [
-        "Kids & Disney Magic",
-        "YouTube Collection"
-      ]
-    },
-    {
-      "id": "yt-9C6Y0NzuIis",
-      "title": "Nadie Te Amará Como Yo",
-      "artist": "Dyland & Lenny",
+      "id": "yt-6qVVkzpEBps",
+      "title": "Change Your Life (You Can Do It) (James Nasty Remix)",
+      "artist": "Dan Deacon",
       "year": 2016,
       "country": "INT",
       "genre": "Latin Pop",
@@ -397,7 +74,9 @@
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=9C6Y0NzuIis"
+        "youtube": "https://www.youtube.com/watch?v=6qVVkzpEBps",
+        "spotify": "0vj09u6f3N60rS4P5v8uK2",
+        "amazonMusic": "B01LY7S9O2"
       },
       "supportedModes": [
         "timeline"
@@ -406,7 +85,475 @@
       "packs": [
         "YouTube Collection"
       ],
-      "coverUrl": "/covers/dyland---lenny-nadie-te-amará-como-yo.jpg"
+      "coverUrl": "/covers/dan-deacon-change-your-life--you-can-do-it---james-nasty-remix-.jpg"
+    },
+    {
+      "id": "yt-VRhGMCYvWQ4",
+      "title": "Confiésale (Bachata)",
+      "artist": "Dani J",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VRhGMCYvWQ4",
+        "spotify": "7zMvY5iYw6UfJ7zU9HlZ0H",
+        "amazonMusic": "B01FK3D652"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/dani-j-confiésale--bachata-.jpg"
+    },
+    {
+      "id": "piano-powter-badday",
+      "title": "Bad Day",
+      "artist": "Daniel Powter",
+      "year": 2005,
+      "country": "CA",
+      "genre": "Piano Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Funny"
+      ],
+      "hints": [
+        "Der ultimative Motivations-Song nach einem schlechten Erlebnis.",
+        "Hatte einen massiven Erfolg als 'Rauswurf-Song' bei American Idol.",
+        "Besticht durch den spritzigen Piano-Beat und den mitsing-tauglichen Refrain.",
+        "Ein Inbegriff für sonnigen Piano-Pop aus den 2000ern.",
+        "Refrain: 'You had a bad day! You're taking one down!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You had a bad day, you're taking one down, you sing a sad song just to turn it around",
+          "You say you don't know, you tell me don't lie",
+          "You work at a smile and you go for a ride"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "gH476CxJxfg",
+        "spotify": "0mUyMawtxj1CJ76kn9gIZK",
+        "amazonMusic": "B003X1J89C"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-powter-badday.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-cpYPPXf63a4",
+      "title": "Lento - Kizomba (Official Video HD)",
+      "artist": "Daniel Santacruz",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cpYPPXf63a4",
+        "spotify": "3YhXfOisBms5vT7I2eI9p2",
+        "amazonMusic": "B00IM9D0YI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/daniel-santacruz-lento---kizomba--official-video-hd-.jpg"
+    },
+    {
+      "id": "score-elfman-batman",
+      "title": "Batman Theme (1989)",
+      "artist": "Danny Elfman",
+      "year": 1989,
+      "country": "US",
+      "genre": "Movie Score / Dark Orchestral",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Epic",
+        "Serious"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Score -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Dark brass anthem",
+          "Vigilante of the night"
+        ],
+        "fake": "In the shadow of the city looking for the joker tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "YoaU3kRFvLg",
+        "spotify": "50csT5Qb2qOF7lHdDQ1Sbx",
+        "amazonMusic": "B0040XF828"
+      },
+      "coverUrl": "/covers/score-elfman-batman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "metal-darktran-misery",
+      "title": "Misery's Crown",
+      "artist": "Dark Tranquillity",
+      "year": 2007,
+      "country": "SE",
+      "genre": "Melodic Death Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Powerful",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Einer der bekanntesten Songs der Genre-Pioniere aus Göteborg.",
+        "Besticht durch den melancholischen Klavier-Sound und Mikael Stannes Klargesang im Refrain.",
+        "Thematisiert Stolz, Schmerz und das Tragen der eigenen Last.",
+        "Ein Inbegriff für atmosphärischen, intelligenten Metal.",
+        "Refrain: 'To the end we will go! To the end of the world!'"
+      ],
+      "lyrics": {
+        "real": [
+          "To the end we will go, to the end of the world",
+          "Wearing misery's crown, for the whole world to see",
+          "I seek the light where darkness leads"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NKjzDU7V7es",
+        "spotify": "1yTAsz71jE0vR6zO4p5Xv8",
+        "amazonMusic": "B001T9O27G"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-darktran-misery.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "electro-darude-sandstorm",
+      "title": "Sandstorm",
+      "artist": "Darude",
+      "year": 1999,
+      "country": "FI",
+      "genre": "Trance",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Electronic",
+        "Energy",
+        "Fast",
+        "Speed"
+      ],
+      "hints": [
+        "Das vielleicht bekannteste instrumentale Dance-Stück der Welt.",
+        "Im Internet ist es ein Dauer-Meme, auf die Frage nach einem Songtitel immer mit diesem Namen zu antworten.",
+        "Das Video zeigt eine Verfolgungsjagd durch die Straßen von Helsinki.",
+        "Ein Klassiker bei Sportveranstaltungen und E-Sport-Turnieren.",
+        "Die Melodie geht etwa so: 'Du-du-du-du-du...'"
+      ],
+      "lyrics": {
+        "real": [
+          "(Fast-paced electronic instrumental with distorted synth lead)"
+        ],
+        "fake": "Running through the sand under the desert moon"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "y6120QOlsfU",
+        "spotify": "6sy3uByjr0t0m46oXvU9pW",
+        "amazonMusic": "B001SB1H5U"
+      },
+      "coverUrl": "/covers/electro-darude-sandstorm.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-wBDD37Xv6A0",
+      "title": "Ashes to Ashes (Single Version) [2017 Remaster]",
+      "artist": "David Bowie",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wBDD37Xv6A0",
+        "spotify": "37CRPk0L5ZpfPeePEPwE0t",
+        "amazonMusic": "B07VV3GX27"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/david-bowie-ashes-to-ashes--single-version---2017-remaster-.jpg"
+    },
+    {
+      "id": "david-bowie-lets-dance-1983",
+      "title": "Let's Dance",
+      "artist": "David Bowie",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Nostalgic",
+        "Neon Night"
+      ],
+      "hints": [
+        "Gitarrist Stevie Ray Vaughan spielte die prägenden Gitarrenparts – obwohl er damals noch völlig unbekannt war.",
+        "Produziert von Nile Rodgers (Chic), der [XXX] überredete, einen einfacheren, kommerzielleren Sound auszuprobieren.",
+        "Erschienen auf dem Album '[XXX] [XXX]' (1983); es war [XXX]s meistverkauftes Album zu Lebzeiten.",
+        "Funkiger Groove, strahlende Blechbläser und eine einladende Gitarre – deutlich tanzbarder als [XXX]s frühere Werke.",
+        "[XXX] [XXX] lädt unter dem Licht eines fremden Mondes und einem roten Schuh zum Tanzen ein."
+      ],
+      "lyrics": {
+        "real": [
+          "Let's dance, put on your red shoes and dance the blues",
+          "Let's sway, while color lights up your face",
+          "Under the moonlight, the serious moonlight"
+        ],
+        "fake": "Swing with me beneath the golden sky tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "VbD_kBJc_gI",
+        "spotify": "4cVHMHgmWgudD399ZdhQ3L",
+        "amazonMusic": "B002JB8U7S"
+      },
+      "coverUrl": "/covers/david-bowie-lets-dance-1983.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "legends-bowie-space-oddity",
+      "title": "Space Oddity",
+      "artist": "David Bowie",
+      "year": 1969,
+      "country": "GB",
+      "genre": "Glam Rock / Art Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Sad",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Wurde zeitgleich mit der ersten Mondlandung (Apollo 11) veröffentlicht.",
+        "Erzählt die Geschichte von einem Astronauten, der den Kontakt zur Erde verliert.",
+        "Der Star erfand hiermit die Kunstfigur, die seine Karriere maßgeblich prägte.",
+        "Besitzt einen ikonischen 'Countdown' zu Beginn des Songs.",
+        "Refrain: 'Ground Control to Major Tom! Your circuit's dead, there's something wrong!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ground Control to Major Tom, Ground Control to Major Tom",
+          "Check ignition and may God's love be with you",
+          "This is Ground Control to Major Tom, you've really made the grade"
+        ],
+        "fake": [
+          "Flying to the sun, we're love to have so much fun with no one",
+          "Fuel up, and pray to moon, so we will be there soon",
+          "This is Agent Bravo to Major Tom, your signal is weak, shouldn't we meet?"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iYYRH4apXDo",
+        "spotify": "72Z17vmmeQKAg8bptWvpVG",
+        "amazonMusic": "B015DB3A0C"
+      },
+      "coverUrl": "/covers/legends-bowie-space-oddity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends"
+      ]
+    },
+    {
+      "id": "yt-O_d3DXVb430",
+      "title": "Memories (feat. Kid Cudi)",
+      "artist": "David Guetta",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=O_d3DXVb430",
+        "spotify": "7LzbEOBOae9lUnOwr7Tse",
+        "amazonMusic": "B003BBXXH2"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/david-guetta-memories--feat--kid-cudi-.jpg"
+    },
+    {
+      "id": "yt-eBz7wmPeKFs",
+      "title": "Who's That Chick? (feat. Rihanna)",
+      "artist": "David Guetta",
+      "year": 2010,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2010er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eBz7wmPeKFs",
+        "spotify": "7e1h7rqNB0BBC2fUuWEEFe",
+        "amazonMusic": "B004DPGM9Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/david-guetta-who-s-that-chick---feat--rihanna-.jpg"
     }
   ]
 }

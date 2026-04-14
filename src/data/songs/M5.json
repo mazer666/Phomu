@@ -1,0 +1,560 @@
+{
+  "songs": [
+    {
+      "id": "soul-marvin-gaye-whats-going-on",
+      "title": "What's Going On",
+      "artist": "Marvin Gaye",
+      "year": 1971,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Serious",
+        "Spiritual",
+        "Thoughtful"
+      ],
+      "hints": [
+        "Ein Protestsong gegen den Vietnamkrieg und soziale Ungerechtigkeit.",
+        "Der Song beginnt mit Partygeräuschen und lockeren Gesprächen im Hintergrund.",
+        "[XXX] [XXX] musste hart dafür kämpfen, diesen sozialkritischen Song bei seinem Label Motown zu veröffentlichen.",
+        "Gilt als einer der einflussreichsten Soul-Tracks der Musikgeschichte.",
+        "Refrain: 'Mother, mother, there's too many of you crying...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Mother, mother, there's too many of you crying",
+          "Brother, brother, brother, there's far too many of you dying",
+          "You know we've got to find a way to bring some lovin' here today"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of the broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "H-kA3UtBj4M"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-marvin-gaye-whats-going-on.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk"
+      ]
+    },
+    {
+      "id": "disney-sleeping-dream",
+      "title": "Once Upon a Dream",
+      "artist": "Mary Costa & Bill Shirley",
+      "year": 1959,
+      "country": "US",
+      "genre": "Soundtrack / Classical / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Basierend auf dem berühmten Walzer aus Tschaikowskis Ballett für 'Dornröschen'.",
+        "Begleitet das erste Treffen von Aurora und Prinz Phillip im Wald.",
+        "Thematisiert die Vorbestimmtheit der Liebe durch gemeinsame Träume.",
+        "Ein Inbegriff für die klassische Disney-Operetten-Ära.",
+        "Refrain: 'I know you! I walked with you [XXX] [XXX] a [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I know you, I walked with you once upon a dream",
+          "I know you, the gleam in your eyes is so familiar a gleam",
+          "Yet I know it's true, that visions are seldom all they seem"
+        ],
+        "fake": "Dancing in the stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TXbHShUnwxY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-sleeping-dream.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "yt-a8dS0aQ03ZI",
+      "title": "Las Que Se Ponen Bien la Falda ft. Ivy Queen",
+      "artist": "María José",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=a8dS0aQ03ZI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/maría-josé-las-que-se-ponen-bien-la-falda-ft--ivy-queen.jpg"
+    },
+    {
+      "id": "yt-5-FGxUINL-Q",
+      "title": "Astronaut In The Ocean",
+      "artist": "Masked Wolf",
+      "year": 2019,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5-FGxUINL-Q"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/masked-wolf-astronaut-in-the-ocean.jpg"
+    },
+    {
+      "id": "disco-massive-sympathy",
+      "title": "Unfinished Sympathy",
+      "artist": "Massive Attack",
+      "year": 1991,
+      "country": "GB",
+      "genre": "Trip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Atmospheric",
+        "Serious"
+      ],
+      "hints": [
+        "Song mit charakteristischen Trip Hop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I've been looking for you baby, I've been looking for you baby",
+          "You're the book that I have opened, and now I've got to know",
+          "Like a soul without a mind, in a body without a heart"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZWmrfgj0MZI"
+      },
+      "coverUrl": "/covers/disco-massive-sympathy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "metal-mastodon-thunder",
+      "title": "Blood and Thunder",
+      "artist": "Mastodon",
+      "year": 2004,
+      "country": "US",
+      "genre": "Sludge Metal / Progressive Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Epic"
+      ],
+      "hints": [
+        "Inbegriff für das [XXX]-Konzeptalbum 'Leviathan' (basierend auf Moby Dick).",
+        "Besticht durch das donnernde Riffing und die kraftvolle Performance.",
+        "Thematisiert den hasserfüllten Kampf gegen das Unausweichliche.",
+        "Besitzt einen Gast-Gesang von Neil Fallon (Clutch).",
+        "Refrain: 'White whale! Holy grail!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I think that someone is trying to kill me, infecting my blood and destroying my mind",
+          "Split your lungs with blood and thunder when you see the white whale",
+          "Break your backs and crack your oars men if you wish to prevail"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TsdIO8RHMTc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-mastodon-thunder.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "piano-matchbox-unwell",
+      "title": "Unwell",
+      "artist": "Matchbox Twenty",
+      "year": 2003,
+      "country": "US",
+      "genre": "Alt-Rock / Pop influence",
+      "difficulty": "easy",
+      "mood": [
+        "Honest",
+        "Energy",
+        "Thoughtful"
+      ],
+      "hints": [
+        "Song mit charakteristischen Alt-Rock -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "All day staring at the ceiling, making friends with shadows on my wall",
+          "I'm not crazy, I'm just a little unwell",
+          "I know, right now you can't tell"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "VfDwWEpuxfM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-matchbox-unwell.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-BkpqU3gdjlw",
+      "title": "Que Sorte A Nossa",
+      "artist": "Matheus & Kauan",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BkpqU3gdjlw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/matheus---kauan-que-sorte-a-nossa.jpg"
+    },
+    {
+      "id": "schlager-reim-verdammt",
+      "title": "Verdammt, ich lieb' Dich",
+      "artist": "Matthias Reim",
+      "year": 1990,
+      "country": "DE",
+      "genre": "Schlager / Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Hielt sich 16 Wochen lang auf Platz 1 der deutschen Charts.",
+        "Kombiniert Rock-Elemente mit Schlager-Gefühlen (Pop-Rock).",
+        "Thematisiert die Unsicherheit und Verwirrung der [XXX]e am Telefon.",
+        "Ein absoluter Meilenstein der deutschen Pop-Geschichte der Nachwendezeit.",
+        "Refrain: '[XXX], ich [XXX] [XXX], ich [XXX] [XXX] nicht!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich zieh' dich aus, mit meinen Blicken, und dann leg' ich dich wieder an",
+          "Verdammt, ich lieb' dich, ich lieb' dich nicht",
+          "Verdammt, ich brauch' dich, ich brauch' dich nicht"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "x6q0ciiqyG0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-reim-verdammt.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "class-ravel-bolero",
+      "title": "Boléro",
+      "artist": "Maurice Ravel",
+      "year": 1928,
+      "country": "FR",
+      "genre": "Impressionism / Ballet",
+      "difficulty": "medium",
+      "mood": [
+        "Hypnotic",
+        "Powerful",
+        "Lively"
+      ],
+      "hints": [
+        "Song mit charakteristischen Impressionism -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Ballet)",
+          "Hypnotic snare drum beat",
+          "Slowly building fire"
+        ],
+        "fake": "Dancing in the heat of the burning sun tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "r30D3SW4OVw",
+        "spotify": "37S1zxrr5IBLlrTPmnQGv3",
+        "amazonMusic": "B002980KGU"
+      },
+      "coverUrl": "/covers/class-ravel-bolero.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-OGt7paSOZCU",
+      "title": "White Lies",
+      "artist": "Max Frost",
+      "year": 2017,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 2010er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OGt7paSOZCU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/max-frost-white-lies.jpg"
+    },
+    {
+      "id": "class-richter-daylight",
+      "title": "On the Nature of Daylight",
+      "artist": "Max Richter",
+      "year": 2004,
+      "country": "DE/GB",
+      "genre": "Post-Minimalism",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Song mit charakteristischen Post-Minimalism-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Minimalism)",
+          "Heavy weeping cellos",
+          "Floating layers of sadness"
+        ],
+        "fake": "In the shadow of the rising sun tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "InyT9Gyoz_o",
+        "spotify": "56oRehy4aLBp917BF9xFpX",
+        "amazonMusic": "B07BYBSVY6"
+      },
+      "coverUrl": "/covers/class-richter-daylight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-gDCRrvtY78g",
+      "title": "U Can't Touch This",
+      "artist": "MC Hammer",
+      "year": 1990,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Dance",
+        "Fun",
+        "Popular"
+      ],
+      "hints": [
+        "Bekannt durch die weiten Pluderhosen ('[XXX] Pants') und die markanten Tanzschritte.",
+        "Basiert auf einem prominenten Sample von Rick James' 'Super Freak'.",
+        "Wurde zu einem der bekanntesten Lieder der Popkultur.",
+        "Gewann zwei Grammys, darunter Best R&B Song.",
+        "Refrain: 'Stop! [XXX] Time!'"
+      ],
+      "lyrics": {
+        "real": [
+          "U can't touch this, u can't touch this",
+          "My-my-my-my music hits me so hard makes me say oh my Lord",
+          "Stop! Hammer time!"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of the broken soul"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gDCRrvtY78g"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "Hip Hop Essentials"
+      ],
+      "coverUrl": "/covers/hiphop-mchammer-touchthis.jpg"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "songs": [
+    {
+      "id": "synth-omd-enola",
+      "title": "Enola Gay",
+      "artist": "Orchestral Manoeuvres in the Dark (OMD)",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Thinking",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Synthpop -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Enola Gay, you should have stayed at home yesterday",
+          "Aha words can't describe the feeling and the way you lied",
+          "It should never have ended this way"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "d5XJ2GiR6Bo"
+      },
+      "coverUrl": "/covers/synth-omd-enola.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage"
+      ]
+    },
+    {
+      "id": "soul-otis-redding-dock-bay",
+      "title": "(Sittin' On) The Dock of the Bay",
+      "artist": "Otis Redding",
+      "year": 1968,
+      "country": "US",
+      "genre": "Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Melancholic",
+        "Relaxed"
+      ],
+      "hints": [
+        "Wurde nur wenige Tage vor [XXX] [XXX]s tragischem Flugzeugabsturz aufgenommen.",
+        "Bekannt für das entspannte Pfeif-Solo am Ende des Songs.",
+        "Thematisiert das Gefühl von Rastlosigkeit und das Beobachten der Schiffe in der Bucht von San Francisco.",
+        "Erreichte als erster Song postum Platz 1 der US-Charts.",
+        "Refrain: '[XXX]' on the [XXX] of the bay, wastin' time!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Sittin' in the morning sun, I'll be sittin' when the evening comes",
+          "Watching the ships roll in, and then I watch 'em roll away again, yeah",
+          "Sittin' on the dock of the bay, watching the tide roll away"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "rTVjnBo96Ug"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-otis-redding-dock-bay.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk"
+      ]
+    },
+    {
+      "id": "outkast-hey-ya-2003",
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "year": 2003,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Party Anthem",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "André 3000 schrieb und produzierte das Stück allein und spielte fast alle Instrumente selbst ein.",
+        "Der Song mischt Funk, Rock, Country und Hip-Hop auf eine Weise, die kein Genre eindeutig benennen kann.",
+        "Erschienen 2003 auf dem Doppelalbum 'Speakerboxxx/The Love Below'; eines der meistgespielten Lieder des Jahrzehnts.",
+        "Spritziger, sonniger Sound mit Handclaps, einer Blechgitarre und einem fast paradox fröhlichen Ton trotz komplexer Liebesfragen.",
+        "[XXX] fordern das Publikum auf zu schütteln – und vergleichen dabei alte Fotoentwicklungstechnik mit modernen Beziehungen."
+      ],
+      "lyrics": {
+        "real": [
+          "My baby don't mess around because she loves me so",
+          "And this I know for sho",
+          "Shake it like a Polaroid picture"
+        ],
+        "fake": "Jump around until you feel the morning breeze"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=voP2ynsSwzc"
+      },
+      "coverUrl": "/covers/outkast-hey-ya-2003.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "hiphop-outkast-ms-jackson",
+      "title": "Ms. Jackson",
+      "artist": "OutKast",
+      "year": 2000,
+      "country": "US",
+      "genre": "Southern Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Eine Entschuldigung an die Mutter der Ex-Partnerin (Erykah Badu).",
+        "Bekannt für den melodischen Refrain und den einzigartigen Südstaaten-Flow.",
+        "Besticht durch den entspannten Beat und die ehrlichen Texte.",
+        "Wurde zu einem der größten Hits der Gruppe.",
+        "Refrain: 'I'm sorry Ms. [XXX]! I am for real!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm sorry Ms. Jackson, I am for real",
+          "Never meant to make your daughter cry, I apologize a trillion times",
+          "I'm sorry Ms. Jackson, I am for real"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "MYxAiK6VnXw"
+      },
+      "coverUrl": "/covers/hiphop-outkast-ms-jackson.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-WAcnWtZjDWE",
+      "title": "Dile Que Tu Me Quieres  | Odisea",
+      "artist": "Ozuna",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WAcnWtZjDWE"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ozuna-dile-que-tu-me-quieres----odisea.jpg"
+    },
+    {
+      "id": "yt-cNhXH1etCwM",
+      "title": "En La Intimidad",
+      "artist": "Ozuna",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cNhXH1etCwM"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ozuna-en-la-intimidad.jpg"
+    },
+    {
+      "id": "yt-rAb13TXc6mQ",
+      "title": "Si Tu Marido No Te Quiere (Official Lyric Video)",
+      "artist": "Ozuna",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rAb13TXc6mQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ozuna-si-tu-marido-no-te-quiere--official-lyric-video-.jpg"
+    }
+  ]
+}

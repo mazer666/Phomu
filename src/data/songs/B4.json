@@ -1,0 +1,470 @@
+{
+  "songs": [
+    {
+      "id": "movie-berlin-take-my-breath-away",
+      "title": "Take My Breath Away",
+      "artist": "Berlin",
+      "year": 1986,
+      "country": "US",
+      "genre": "Synth-pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Classic"
+      ],
+      "hints": [
+        "Das Liebesthema aus dem Film 'Top Gun'.",
+        "Gewann den Oscar für den Besten Originalsong.",
+        "Wurde von Giorgio Moroder und Tom Whitlock geschrieben.",
+        "Der markante Bass-Synthesizer leitet den atmosphärischen Song ein.",
+        "Ein absolutes Highlight für Sonnenuntergänge und Kampfjets."
+      ],
+      "lyrics": {
+        "real": [
+          "Watching every motion in my foolish lover's game",
+          "On this endless ocean, finally abandoned all my shame",
+          "Take my breath away"
+        ],
+        "fake": "Flying high above the clouds, away from all the noisy crowds"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Bx51eegLTY8",
+        "spotify": "069Cis99nOAt67mCHubS0A",
+        "amazonMusic": "B0040O2Q0E"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-berlin-take-my-breath-away.jpg",
+      "packs": [
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "score-herrmann-psycho",
+      "title": "Psycho (The Murder)",
+      "artist": "Bernard Herrmann",
+      "year": 1960,
+      "country": "US",
+      "genre": "Movie Score / Thriller",
+      "difficulty": "hard",
+      "mood": [
+        "Tense",
+        "Aggressive",
+        "Scary"
+      ],
+      "hints": [
+        "Inbegriff für akustischen Horror (die 'Dusch-Szene').",
+        "Besticht durch die kreischenden, staccato-haft gespielten Streicher.",
+        "Der Komponist nutzte bewusst nur Streichinstrumente, um einen kalten Sound zu erzeugen.",
+        "Hitchcock gab zu, dass die Musik die Wirkung des Films verdoppelt hat.",
+        "Ein vielseitiger Track mit klassischen Elementen und moderner Relevanz."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Screeching violins",
+          "Knife-like string stabs"
+        ],
+        "fake": "Alone in the shower in the middle of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "gcQVMhL-PgY",
+        "spotify": "7eugz8On8t2FhApRpqgQRu",
+        "amazonMusic": "B09K4R2TJN"
+      },
+      "coverUrl": "/covers/score-herrmann-psycho.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "yt-e_aT9pAGQo8",
+      "title": "ALIEN SUPERSTAR (Official Lyric Video)",
+      "artist": "Beyoncé",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Contemporary R&B/Pop mit moderner Produktion.",
+        "Selbstbewusster, empowerment-fokussierter Text.",
+        "Thematisiert Unabhängigkeit und Authentizität.",
+        "Prägnante Vocal-Performance.",
+        "Optimiert für Dance-Clubs und Streaming."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e_aT9pAGQo8",
+        "spotify": "1Hohk6AufHZOrrhMXZppax",
+        "amazonMusic": "B0B4KW7865"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/beyoncé-alien-superstar--official-lyric-video-.jpg"
+    },
+    {
+      "id": "yt-gM89Q5Eng_M",
+      "title": "All Night (Video)",
+      "artist": "Beyoncé",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Urban R&B mit modernem Hip-Hop-Einfluss.",
+        "Sinnliche, nachts-fokussierte Atmosphäre.",
+        "Thematisiert Intimität und Verlangen.",
+        "Contemporary R&B-Produktion.",
+        "Hook-fokussiert für eingängige Wiedererkennbarkeit."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gM89Q5Eng_M",
+        "spotify": "7oAuqs6akGnPU3Tb00ZmyM",
+        "amazonMusic": "B07QVD9DDN"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/beyoncé-all-night--video-.jpg"
+    },
+    {
+      "id": "yt-y6dw-v4BH-Y",
+      "title": "BREAK MY SOUL",
+      "artist": "Beyoncé",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Contemporary Soul/R&B-Ballade mit emotionalen Vocals.",
+        "Verletzliche, introspektive lyrische Perspektive.",
+        "Thematisiert innere Transformation und Befreiung.",
+        "Authentische emotionale Präsenz.",
+        "Moderner Soul-Ansatz in Produktion."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=y6dw-v4BH-Y",
+        "spotify": "5pyoxDZ1PX0KxBxiRVxA4U",
+        "amazonMusic": "B0B4KRTNKV"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/beyoncé-break-my-soul.jpg"
+    },
+    {
+      "id": "yt-ViwtNLUqkMY",
+      "title": "Crazy In Love ft. JAY Z",
+      "artist": "Beyoncé",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Classic Soul/Disco Anthem mit Hook-Potential.",
+        "Optimistischer, energetischer Aufbau und Rhythmus.",
+        "Thematisiert Liebe und Anerkennung.",
+        "Charakteristisch für Disco-Ära Production-Stil.",
+        "Eingängiger Chorus und Tanzbarkeit."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ViwtNLUqkMY",
+        "spotify": "0TwBtDAWpkpM3srywFVOV5",
+        "amazonMusic": "B00B9CI29O"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/beyoncé-crazy-in-love-ft--jay-z.jpg"
+    },
+    {
+      "id": "yt-AUnzoN7pFE0",
+      "title": "CUFF IT",
+      "artist": "Beyoncé",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Energetischer Dance-Pop-Track mit funkigen Bläser-Elementen und Club-Appeal.",
+        "Besticht durch den punchy Rhythmus und die selbstbewusste Vocal-Performance.",
+        "Thematisiert spielerische Verführung und Kontrolle in emotionaler und physischer Form.",
+        "Der Hook ist eingängig und memboriabel – optimiert für Tanzflächen.",
+        "Produziert mit modernem Funk-Einfluss, aber zeitgenössischem Pop-Sound."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AUnzoN7pFE0",
+        "spotify": "1xzi1Jcr7mEi9K2RfzLOqS",
+        "amazonMusic": "B0B4KTW8PB"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/beyoncé-cuff-it.jpg"
+    },
+    {
+      "id": "yt-pCMEvXPmfP4",
+      "title": "VIRGO'S GROOVE",
+      "artist": "Beyoncé",
+      "year": 2022,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Funkiger, groovy Pop-Track mit selbstbewusstem Fokus auf physische Präsenz.",
+        "Thematisiert die Anziehungskraft und sexuelle Konfidenz aus astrologischer Perspektive.",
+        "Der Song hat einen minimalistischen, aber pulsierenden Beat mit Funk-Elementen.",
+        "Vocals sind spielerisch-selbstbewusst, nicht aggressiv – Verführung statt Konfrontation.",
+        "Der Song ist rhythmisch gebaut für körperliche Bewegung und Tänzbarkeit – nicht nur auditiv."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pCMEvXPmfP4",
+        "spotify": "0Fl4eWzVaMUOdXcOrj6F1q",
+        "amazonMusic": "B0B4KT8NZ4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/beyoncé-virgo-s-groove.jpg"
+    },
+    {
+      "id": "beyonce-crazy-in-love-2003",
+      "title": "Crazy in Love",
+      "artist": "Beyoncé ft. Jay-Z",
+      "year": 2003,
+      "country": "US",
+      "genre": "R&B",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Dance Floor",
+        "Energy",
+        "Party Anthem",
+        "Popular",
+        "Powerful",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Das markante Horn-Sample stammt aus dem Song 'Are You My Woman? (Tell Me So)' der Chi-Lites aus dem Jahr 1970.",
+        "Der Song enthält das erste öffentliche Duett der beiden Sänger – kurz nach ihrer Beziehungsbekanntmachung.",
+        "Erschienen 2003 auf ihrem erstem Soloalbum 'Dangerously in Love'; gewann vier Grammys.",
+        "Mitreißende Brass-Fanfare zu Beginn, die sofort den Ton für einen R&B-Banger mit Rap-Einwürfen setzt.",
+        "Die Beiden singen über eine Liebe, die sie so verrückt macht, dass sie die Kontrolle verlieren."
+      ],
+      "lyrics": {
+        "real": [
+          "I look so deep in your eyes, I touch on you more and more every time",
+          "When you leave I'm begging you not to go",
+          "Got me looking so crazy in love"
+        ],
+        "fake": "You're the only one who knows my secret heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5BnF0_LksYI",
+        "spotify": "0TwBtDAWpkpM3srywFVOV5",
+        "amazonMusic": "B00B9CI29O"
+      },
+      "coverUrl": "/covers/beyonce-crazy-in-love-2003.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "yt-_DTmvMsEbE4",
+      "title": "Re-arrange",
+      "artist": "Biffy Clyro",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Alternative Rock mit melancholischen, expressiven Vocals und kraftvollem Arrangement.",
+        "Schnelle, energetische Instrumentation mit emotionalen Höhepunkten.",
+        "Thematisiert die Notwendigkeit, Beziehungen oder Lebenssituationen neu zu ordnen.",
+        "Der Song wechselt zwischen introspektiven Verses und explosiven Choruses.",
+        "Charakteristisch für schottische Alternative-Rock-Bewegung der 2010er."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_DTmvMsEbE4",
+        "spotify": "3VAvS6hbvz0mjFT1TmLNdd",
+        "amazonMusic": "B07VWBCXZ9"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/biffy-clyro-re-arrange.jpg"
+    },
+    {
+      "id": "yt-phr1pOFK1V8",
+      "title": "Bounce Back",
+      "artist": "Big Sean",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Hip-Hop / Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Hip-Hop/Trap-Track mit schnappigen Rhymes und modernem Production.",
+        "Thematisiert Resilienz und Comeback nach Rückschlägen oder Verletzungen.",
+        "Besticht durch den Flow-Wechsel und die rhythmische Komplexität der Lyrics.",
+        "Der Beat ist minimal, aber pulsierend – Fokus auf Vocal-Performance.",
+        "Charakteristisch für moderne Rap-Ästhetik und Detroit Hip-Hop-Scene."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=phr1pOFK1V8",
+        "spotify": "0SGkqnVQo9KPytSri1H6cF",
+        "amazonMusic": "B01N4FAO71"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/big-sean-bounce-back.jpg"
+    },
+    {
+      "id": "yt-GhbPqpJwUvU",
+      "title": "Pleasure Toy ft. Big K.R.I.T.",
+      "artist": "Bilal",
+      "year": 2016,
+      "country": "INT",
+      "genre": "R&B / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "R&B/Soul-Track mit sinnlichen Vocals und smoothem, funkigem Production.",
+        "Thematisiert Verlangen, Vergnügen und physische Anziehung ohne Beschönigung.",
+        "Nutzt klassische Soul/R&B-Produktionselemente für authentischen, warmen Sound.",
+        "Die Feature ergänzt die Lead-Vocals perfekt – Dual-Perspektive auf Thema.",
+        "Produziert für intime, nächtliche Hörer-Kontexte – Atmosphäre vor Dramatik."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GhbPqpJwUvU",
+        "spotify": "2DcorHDaDFNf8rJrynOZEd",
+        "amazonMusic": "B0D4G64KKX"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/bilal-pleasure-toy-ft--big-k-r-i-t-.jpg"
+    }
+  ]
+}

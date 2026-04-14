@@ -1,0 +1,564 @@
+{
+  "songs": [
+    {
+      "id": "80s-billmedley-time-of-life",
+      "title": "(I've Had) The Time of My Life",
+      "artist": "Bill Medley & Jennifer Warnes",
+      "year": 1987,
+      "country": "US",
+      "genre": "Pop / Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Romantic"
+      ],
+      "hints": [
+        "Unvergesslicher Schlusssong des Films 'Dirty Dancing'.",
+        "Thematisiert das vollkommene Glück in einem besonderen Augenblick.",
+        "Besticht durch das harmonische Zusammenspiel der beiden Stimmen.",
+        "Einer der meistgespielten 'Hochzeitstanz'-Songs weltweit.",
+        "Refrain: 'I've had the [XXX] of my [XXX]! And I owe it all to you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I've had the time of my life, and I owe it all to you",
+          "I've had the time of my life, and I've never felt this way before",
+          "With my body and soul, I want you more than you'll ever know"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4BQLE_RrTSU",
+        "spotify": "6W7ztLBiRzBN46ZaPAcQ0F",
+        "amazonMusic": "B00137GF6M"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-billmedley-time-of-life.jpg",
+      "packs": [
+        "80s Pop Hits",
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "country-billmonroe-blue",
+      "title": "Blue Moon of Kentucky",
+      "artist": "Bill Monroe",
+      "year": 1946,
+      "country": "US",
+      "genre": "Bluegrass",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Traditional",
+        "Fast"
+      ],
+      "hints": [
+        "Inbegriff für den Bluegrass-Sound (Acoustic instruments, fast tempo).",
+        "Thematisiert Herzschmerz unter dem blauen Mond eines US Bundesstaats.",
+        "Weltbekannt geworden auch durch die Rockabilly-Version von Elvis Presley.",
+        "Der Sänger gilt als der 'Father of Bluegrass'.",
+        "Refrain: '[XXX] [XXX] of [XXX] keep on shining!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Blue moon of Kentucky keep on shining, shine on the one that's gone and left me blue",
+          "I said blue moon of Kentucky keep on shining",
+          "Shine on the one that's gone and left me blue"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4syA9aNnNa0",
+        "spotify": "50csDQPBwpjCSv5DgVl6vO",
+        "amazonMusic": "B0FPNGNKRB"
+      },
+      "coverUrl": "/covers/country-billmonroe-blue.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country & Folk Classics"
+      ]
+    },
+    {
+      "id": "disney-alice-late",
+      "title": "I'm Late",
+      "artist": "Bill Thompson",
+      "year": 1951,
+      "country": "US",
+      "genre": "Soundtrack / Fast / Classic",
+      "difficulty": "easy",
+      "mood": [
+        "Fast",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Gesungen vom Weißen Hasen in 'Alice im Wunderland'.",
+        "Thematisiert Zeitnot und Hektik in einer absurden Welt.",
+        "Besticht durch das schnelle Tempo und die tickenden Geräusche.",
+        "Ein Inbegriff für den schrägen Charme des Films.",
+        "Refrain: 'I'm [XXX]! I'm [XXX]! For a very important date!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm late, I'm late, for a very important date",
+          "No time to say hello, goodbye, I'm late, I'm late, I'm late",
+          "I'm overdue, I'm really in a stew"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "LcXOX9x0TYA",
+        "spotify": "1Y3L9vzf6VRVZ0UZO82ZZB",
+        "amazonMusic": "B0023B6SE6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-alice-late.jpg",
+      "packs": [
+        "Kids & Disney Magic"
+      ]
+    },
+    {
+      "id": "soul-bill-withers-sunshine",
+      "title": "Ain't No Sunshine",
+      "artist": "Bill Withers",
+      "year": 1971,
+      "country": "US",
+      "genre": "Soul / Blues",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Emotional",
+        "Sad",
+        "Short"
+      ],
+      "hints": [
+        "Bekannt für die repetitive Passage 'I know, I know, I know...' (26 Mal!).",
+        "Der Sänger arbeitete damals noch in einer Fabrik für Flugzeugteile.",
+        "Thematisiert die Ohnmacht und Einsamkeit nach einem Abschied.",
+        "Ein extrem kurzer, aber gewaltiger Klassiker der Soulgeschichte.",
+        "Refrain: '[XXX] [XXX] [XXX] when she's gone!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Ain't no sunshine when she's gone, it's not warm when she's away",
+          "Ain't no sunshine when she's gone, and she's always gone too long",
+          "I know, I know, I know, I know, I know..."
+        ],
+        "fake": "Dancing in the rain, following the train to the plain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Nuanwn3v-2I",
+        "spotify": "1k1Bqnv2R0uJXQN4u6LKYt",
+        "amazonMusic": "B001V6RVP4"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-bill-withers-sunshine.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk"
+      ]
+    },
+    {
+      "id": "soul-billwithers-lovely",
+      "title": "Lovely Day",
+      "artist": "Bill Withers",
+      "year": 1977,
+      "country": "US",
+      "genre": "Soul / Pop influence",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Bekannt für den extrem lang gehaltenen Ton des Sängers am Ende (über 18 Sekunden).",
+        "Besticht durch die warme Atmosphäre und den optimistischen Grundton.",
+        "Thematisiert die heilende Kraft der Liebe an einem schwierigen Tag.",
+        "Refrain: 'A [XXX] day! ([XXX] day, [XXX] day, [XXX] day, [XXX] day)'",
+        "Ein vielseitiger Track mit klassischen Elementen und moderner Relevanz."
+      ],
+      "lyrics": {
+        "real": [
+          "When I wake up in the morning, love, and the sunlight hurts my eyes",
+          "And something without warning, love, bears heavy on my mind",
+          "Then I look at you, and the world's alright with me"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "sYi7uEvEEmk",
+        "spotify": "0bRXwKfigvpKZUurwqAlEh",
+        "amazonMusic": "B00WOLWFOW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-billwithers-lovely.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "billie-eilish-bad-guy-2019",
+      "title": "bad guy",
+      "artist": "Billie Eilish",
+      "year": 2019,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Chill",
+        "Cool",
+        "Dark",
+        "Electronic",
+        "Neon Night",
+        "Rebel"
+      ],
+      "hints": [
+        "Die Sängerin und ihr Bruder nahmen den Song im Schlafzimmer ihres Elternhauses auf – mit selbstgebautem Acoustic Treatment.",
+        "Das Stück verwendet einen Trap-Hi-Hat-Rhythmus, der für das Genre ungewöhnlich leise und minimalistisch eingesetzt wird.",
+        "Erschienen 2019 auf dem Debütalbum 'When We All Fall Asleep, Where Do We Go?'; gewann fünf Grammys.",
+        "Flüsteriger Gesang über einem minimalistischen Bass-Drop – ironisch, selbstbewusst und kühl.",
+        "Die Sängerin behauptet ironisch, sie sei die Böse – und unterläuft damit alle Erwartungen an einen Pop-Star."
+      ],
+      "lyrics": {
+        "real": [
+          "White shirt now red, my bloody nose",
+          "Sleeping, you're on your tippy toes, creeping around like no one knows",
+          "So you're a tough guy, like it really rough guy"
+        ],
+        "fake": "I'm sitting in the dark and waiting for you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "DyDfgMOUjCI",
+        "spotify": "2Fxmhks0bxGSBdJ92vM42m",
+        "amazonMusic": "B07N7VNZLY"
+      },
+      "coverUrl": "/covers/billie-eilish-bad-guy-2019.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "finale-billie-happier",
+      "title": "Happier Than Ever",
+      "artist": "Billie Eilish",
+      "year": 2021,
+      "country": "US",
+      "genre": "Alternative Pop / Jazz Influence / Rock Finale",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Modern"
+      ],
+      "hints": [
+        "Besticht durch den extremen Kontrast zwischen leisem Ukulelen-Beginn und lautem Rock-Finale.",
+        "Thematisiert die Befreiung aus einer toxischen Beziehung.",
+        "Inbegriff für die musikalische Weiterentwicklung der Künstlerin.",
+        "Refrain: 'When I'm away from you, I'm [XXX] [XXX] [XXX]!'",
+        "Ein vielseitiger Track mit klassischen Elementen und moderner Relevanz."
+      ],
+      "lyrics": {
+        "real": [
+          "When I'm away from you, I'm happier than ever",
+          "I wish I could explain it better",
+          "I wish it wasn't true"
+        ],
+        "fake": "Dancing in the shadow of the broken light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "5GJWxDKyk3A",
+        "spotify": "4RVwu0g32PAqgUiJoXsdF8",
+        "amazonMusic": "B093JHTCX7"
+      },
+      "coverUrl": "/covers/finale-billie-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-hG4lT4fxj8M",
+      "title": "Ocean Eyes (Dance Performance Video)",
+      "artist": "Billie Eilish",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Soul/Funk mit cineastischem Drama.",
+        "Raue, authentische Stimme über orchestralen Strings.",
+        "Thematisiert urbane Realität und Überlebenskampf.",
+        "Soziale Relevanz und musikalische Intensität.",
+        "Film-Soundtrack mit standalone Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hG4lT4fxj8M",
+        "spotify": "7hDVYcQq6MxkdJGweuCtl9",
+        "amazonMusic": "B01N8Q9P5I"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/billie-eilish-ocean-eyes--dance-performance-video-.jpg"
+    },
+    {
+      "id": "finale-billie-barbie",
+      "title": "What Was I Made For?",
+      "artist": "Billie Eilish",
+      "year": 2023,
+      "country": "US",
+      "genre": "Sad Pop / Movie Theme",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Thinking",
+        "Emotional"
+      ],
+      "hints": [
+        "Sorgte im Barbie-Film für den emotionalen Höhepunkt.",
+        "Fragt nach dem Sinn des Daseins und der eigenen Identität jenseits der Erwartungen.",
+        "Besticht durch den gehauchten Gesang und das minimalistische Klavier.",
+        "Gewann den Oscar für den besten Filmsong.",
+        "Refrain: 'I used to float, now I just fall down! I used to know, but I'm not sure now!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I used to float, now I just fall down",
+          "I used to know, but I'm not sure now",
+          "What was I made for?"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "dpnTd9Dx2OM",
+        "spotify": "6wf7Yu7cxBSPrRlWeSeK0Q",
+        "amazonMusic": "B0CBL9HXWR"
+      },
+      "coverUrl": "/covers/finale-billie-barbie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "jazz-billie-holiday-fruit",
+      "title": "Strange Fruit",
+      "artist": "Billie Holiday",
+      "year": 1939,
+      "country": "US",
+      "genre": "Jazz",
+      "difficulty": "hard",
+      "mood": [
+        "Classic",
+        "Deep",
+        "Powerful",
+        "Sad",
+        "Serious"
+      ],
+      "hints": [
+        "Ein erschütternder Protestsong gegen den Rassismus und die Lynchjustiz in den USA.",
+        "Die 'seltsamen Früchte' im Titel sind eine Metapher für gelynchte Schwarze an Bäumen.",
+        "Sie riskierte mit der Aufführung des Songs ihre Karriere und Sicherheit.",
+        "Wurde 1999 vom Time Magazine zum 'Song des Jahrhunderts' gekürt.",
+        "Ein extrem wichtiges und bedrückendes Dokument der Zeitgeschichte."
+      ],
+      "lyrics": {
+        "real": [
+          "Southern trees bear a strange fruit",
+          "Blood on the leaves and blood at the root",
+          "Black bodies swinging in the southern breeze"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of the broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Web007rzSOI",
+        "spotify": "1CTex49P0iWwzUGsMNjgaV",
+        "amazonMusic": "B07L1QWQ6Y"
+      },
+      "coverUrl": "/covers/jazz-billie-holiday-fruit.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "yt-T0nsabCHj14",
+      "title": "White Wedding – Part 1",
+      "artist": "Billy Idol",
+      "year": 1982,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Rock/Punk mit humorvollem Sarcasm und Rebellentum.",
+        "Schnelle, energetische Instrumentation.",
+        "Thematisiert Hochzeits-Absurdität als Gesellschaftskritik.",
+        "Charakteristisch für 1980er Punk-New Wave.",
+        "Eingängiger Chorus und Attitüde."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T0nsabCHj14",
+        "spotify": "35i19j4Zz7WaL5KozRHjyQ",
+        "amazonMusic": "B071YNQSKV"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/billy-idol-white-wedding---part-1.jpg"
+    },
+    {
+      "id": "piano-joel-pianoman",
+      "title": "Piano Man",
+      "artist": "Billy Joel",
+      "year": 1973,
+      "country": "US",
+      "genre": "Pop / Piano Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Storytelling",
+        "Classic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Inbegriff für Storytelling am Klavier über die Gäste einer Bar.",
+        "Besticht durch den charakteristischen Walzer-Takt und die Mundharmonika.",
+        "Basiert auf der echten Erfahrung des Songswriters als Klavierspieler in der 'Executive Room' Bar.",
+        "Ein absoluter Klassiker, der weltweit in jeder Kneipe mitgesungen wird.",
+        "Refrain: 'Sing us a song, you're the [XXX] [man]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "It's nine o'clock on a Saturday, the regular crowd shuffles in",
+          "There's an old man sitting next to me, makin' love to his tonic and gin",
+          "Sing us a song, you're the piano man"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "QwVjTlTdIDQ",
+        "spotify": "70C4NyhjD5OZUMzvWZ3njJ",
+        "amazonMusic": "B07R6PM55N"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-joel-pianoman.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    }
+  ]
+}

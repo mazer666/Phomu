@@ -1,0 +1,514 @@
+{
+  "songs": [
+    {
+      "id": "yt-B2mmDEv0OEk",
+      "title": "September",
+      "artist": "Earth, Wind & Fire",
+      "year": 1978,
+      "country": "INT",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Dance",
+        "Energy",
+        "Happy",
+        "Popular"
+      ],
+      "hints": [
+        "Ein zeitloser Party-Klassiker mit komplexem Jazz-Harmonie-Hintergrund.",
+        "Besticht durch den treibenden Rhythmus und Maurice Whites charismatischen Gesang.",
+        "Thematisiert nostalgische Gefühle und eine goldene Nacht im [XXX].",
+        "Ein Inbegriff für die Perfektion schwarzer Popmusik der 70er.",
+        "Refrain: 'Do you remember! The 21st night of [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Do you remember, the 21st night of September?",
+          "Love was changing the mind of pretenders, while chasing the clouds away",
+          "Ba de ya, say do you remember?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of our happy heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=B2mmDEv0OEk"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "jazz-blues",
+        "soul-funk"
+      ],
+      "coverUrl": "/covers/jazz-ewf-september.jpg"
+    },
+    {
+      "id": "yt-jOcW-VIrv_U",
+      "title": "Lips Like Sugar",
+      "artist": "Echo & The Bunnymen",
+      "year": 1987,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jOcW-VIrv_U"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/echo---the-bunnymen-lips-like-sugar.jpg"
+    },
+    {
+      "id": "yt-aVD1HRV8NqA",
+      "title": "The Killing Moon",
+      "artist": "Echo & The Bunnymen",
+      "year": 1984,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aVD1HRV8NqA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/echo---the-bunnymen-the-killing-moon.jpg"
+    },
+    {
+      "id": "yt-hJWSZDJb-W4",
+      "title": "Bad Habits",
+      "artist": "Ed Sheeran",
+      "year": 2021,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für zeitgenössischen zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hJWSZDJb-W4"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/ed-sheeran-bad-habits.jpg"
+    },
+    {
+      "id": "ed-sheeran-shape-of-you-2017",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Catchy",
+        "Dance Floor",
+        "Groovy",
+        "Happy",
+        "Popular",
+        "Road Trip",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "[XXX] schrieb diesen Song eigentlich für Rihanna – sie lehnte ihn ab, und er behielt ihn für sich selbst.",
+        "Die Marimba-artige Melodie zu Beginn wurde mit einem Marimba-Synthesizer-Preset in der DAW GarageBand erzeugt.",
+        "Erschienen 2017 auf dem Album '÷' (Divide); mit über fünf Milliarden Streams einer der meistgestreamten Songs aller Zeiten.",
+        "Eingängiger Marimba-Loop, ein tropisch beeinflusster Pop-Groove und [XXX]s Sprechgesang-Stil.",
+        "Ed [XXX] verliebt sich in einem Fitnessstudio – und besingt seine Lieblingsform."
+      ],
+      "lyrics": {
+        "real": [
+          "The club isn't the best place to find a lover, so the bar is where I go",
+          "I'm in love with the shape of you, we push and pull like a magnet do",
+          "Every day discovering something brand new"
+        ],
+        "fake": "We walked for hours through the city streets"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xTvyyoF_LZY",
+        "spotify": "7qiZfU4dY1lWllzX7mPBI3",
+        "amazonMusic": "B01N214BDK"
+      },
+      "coverUrl": "/covers/ed-sheeran-shape-of-you-2017.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "finale-ed-shivers",
+      "title": "Shivers",
+      "artist": "Ed Sheeran",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Pop / Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Song mit charakteristischen Pop -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I took a arrow to the heart, I never kissed a mouth that tastes like yours",
+          "Strawberries and somethin' more",
+          "Ooh, I love it when you do it like that"
+        ],
+        "fake": "In the middle of the street, you can feel the heat tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Il0S8BoucSA"
+      },
+      "coverUrl": "/covers/finale-ed-shivers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "yt-Qfp0msG77bA",
+      "title": "Ocean Drive Boulevard (Original Mix)",
+      "artist": "Eddie Thoneick",
+      "year": 2007,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische 2000er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Qfp0msG77bA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/genre-electronic.jpg"
+    },
+    {
+      "id": "yt-YSUYbiOe0-k",
+      "title": "Sapequinha (Videoclipe)",
+      "artist": "Eduardo Costa",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YSUYbiOe0-k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/eduardo-costa-sapequinha--videoclipe-.jpg"
+    },
+    {
+      "id": "class-grieg-mountain",
+      "title": "In the Hall of the Mountain King",
+      "artist": "Edvard Grieg",
+      "year": 1875,
+      "country": "NO",
+      "genre": "Romantic / Suite",
+      "difficulty": "medium",
+      "mood": [
+        "Tense",
+        "Fast",
+        "Aggressive"
+      ],
+      "hints": [
+        "Song mit charakteristischen Romantic -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Suite)",
+          "Tiptoeing through the dark",
+          "Faster and faster away from the trolls"
+        ],
+        "fake": "Running through the trees in the middle of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Y9dzyLvvIRs",
+        "spotify": "5EoVSMIVYqF4gOsQ9jn3JR",
+        "amazonMusic": "B001SIE7JS"
+      },
+      "coverUrl": "/covers/class-grieg-mountain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "dance-eiffel-65-blue",
+      "title": "Blue (Da Ba Dee)",
+      "artist": "Eiffel 65",
+      "year": 1998,
+      "country": "IT",
+      "genre": "Italo Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Electronic",
+        "Catchy"
+      ],
+      "hints": [
+        "In diesem Song dreht sich alles (wirklich alles) um die Farbe Blau.",
+        "Das Video zeigt computeranimierte Außerirdische auf einem blauen Planeten.",
+        "Der markante Autotune-Effekt auf der Stimme war damals wegweisend für das Genre.",
+        "Wurde zu einem der größten globalen Chart-Erfolge für eine italienische Band.",
+        "Refrain: 'I'm [XXX], da ba dee da ba di...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm blue, da ba dee da ba di, da ba dee da ba di, da ba dee da ba di",
+          "I have a blue house with a blue window, blue is the color of all that I wear",
+          "Blue are the streets and all the trees are too"
+        ],
+        "fake": "Dancing in the sky, where the birds learn to fly, so high"
+      },
+      "links": {
+        "youtube": "68ugkg9RePc"
+      },
+      "coverUrl": "/covers/dance-eiffel-65-blue.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers"
+      ]
+    },
+    {
+      "id": "yt-FEvFjiYRZ7A",
+      "title": "Move Your Body (D.J.Gabry Ponte Original Radio Edit)",
+      "artist": "Eiffel 65",
+      "year": 1999,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit energetischer-Rhythmus.",
+        "Thematisiert Tanzen und Bewegung durch elektronische Ästhetik.",
+        "Charakteristische 1990er-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FEvFjiYRZ7A"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/eiffel-65-move-your-body--d-j-gabry-ponte-original-radio-edit-.jpg"
+    },
+    {
+      "id": "yt-4H2bYIEAFsU",
+      "title": "Yü-gung (Fütter mein ego)",
+      "artist": "Einstürzende Neubauten",
+      "year": 1985,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4H2bYIEAFsU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/einstürzende-neubauten-yü-gung--fütter-mein-ego-.jpg"
+    },
+    {
+      "id": "yt-cBhYqbDtjrQ",
+      "title": "Banda De Camion (NUEVO 2016)",
+      "artist": "El Alfa El Jefe",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cBhYqbDtjrQ"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/el-alfa-el-jefe-banda-de-camion--nuevo-2016-.jpg"
+    }
+  ]
+}

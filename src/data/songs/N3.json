@@ -1,0 +1,536 @@
+{
+  "songs": [
+    {
+      "id": "jazz-nina-simone-feeling-good",
+      "title": "Feeling Good",
+      "artist": "Nina Simone",
+      "year": 1965,
+      "country": "US",
+      "genre": "Jazz / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Confident",
+        "Inspiring",
+        "Powerful"
+      ],
+      "hints": [
+        "Stammt ursprünglich aus dem Musical 'The Roar of the Greasepaint – The Smell of the Crowd'.",
+        "[XXX] [XXX]s Version gilt als die kraftvollste und bekannteste Interpretation.",
+        "Thematisiert den Neuanfang und die Befreiung der Seele.",
+        "Die Kombination aus [XXX]s stolzem Gesang und den mächtigen Bläsern ist grandios.",
+        "Refrain: 'It's a new dawn, it's a new day, it's a new life for me... and I'm [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Birds flying high, you know how I feel, sun in the sky, you know how I feel",
+          "It's a new dawn, it's a new day, it's a new life for me",
+          "And I'm feeling good!"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "oHRNrgDIJfo"
+      },
+      "coverUrl": "/covers/jazz-nina-simone-feeling-good.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "jazz-nina-simone-baby",
+      "title": "My Baby Just Cares for Me",
+      "artist": "Nina Simone",
+      "year": 1958,
+      "country": "US",
+      "genre": "Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Elegant"
+      ],
+      "hints": [
+        "Wurde erst 30 Jahre nach Release durch eine Parfüm-Werbung (Chanel No. 5) zum Welthit.",
+        "[XXX] [XXX] zeigt hier ihre meisterhafte Verbindung von Piano-Spiel und Jazz-Gesang.",
+        "Der Text zählt scherzhaft Dinge auf, die ihren Partner NICHT interessieren.",
+        "Ein zeitloser, eleganter Jazz-Klassiker.",
+        "Refrain: 'My [XXX] don't care for furs and laces, my [XXX] don't care for high-tone places!'"
+      ],
+      "lyrics": {
+        "real": [
+          "My baby don't care for furs and laces, my baby don't care for high-tone places",
+          "My baby don't care for rings, or other expensive things",
+          "She's sensible as can be, my baby just cares for me"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "eBabguLSZJ0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-nina-simone-baby.jpg",
+      "packs": [
+        "World, Reggae & Soul"
+      ]
+    },
+    {
+      "id": "metal-nin-closer",
+      "title": "Closer",
+      "artist": "Nine Inch Nails",
+      "year": 1994,
+      "country": "US",
+      "genre": "Industrial Rock / Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Sexy",
+        "Dark",
+        "Powerful"
+      ],
+      "hints": [
+        "Trent Reznors provokatives Meisterwerk über Obsession und Selbsthass.",
+        "Besticht durch den unterkühlten Beat und den aggressiven Industrial-Sound.",
+        "Wurde trotz des expliziten Textes zu einem MTV-Dauerbrenner.",
+        "Ein Inbegriff für die dunkle Seite der 90er Jahre.",
+        "Refrain: 'I want to fuck you like an animal!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You let me violate you, you let me desecrate you",
+          "I want to fuck you like an animal, I want to feel you from the inside",
+          "You get me closer to God"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of our love tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "9-5IIx4R6E8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-nin-closer.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "score-nino-godfather",
+      "title": "The Godfather (Main Title)",
+      "artist": "Nino Rota",
+      "year": 1972,
+      "country": "IT",
+      "genre": "Movie Theme / Italian Folk influence",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Serious",
+        "Epic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Movie Theme -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Theme)",
+          "Lonely trumpet call",
+          "Sicilian melody"
+        ],
+        "fake": "An offer you can't refuse in the shadow of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "4HtPc9jzFuU",
+        "spotify": "3WoSJF85H0qywD4qLp4HDd",
+        "amazonMusic": "B001SPXPBM"
+      },
+      "coverUrl": "/covers/score-nino-godfather.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Classical & Orchestral Masterpieces"
+      ]
+    },
+    {
+      "id": "indie-nirvana-come-as-you-are",
+      "title": "Come As You Are",
+      "artist": "Nirvana",
+      "year": 1991,
+      "country": "US",
+      "genre": "Grunge",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Classic",
+        "Serious"
+      ],
+      "hints": [
+        "Das markante Bass-Riff wurde oft mit 'Eighties' von Killing Joke verglichen.",
+        "Einer der wenigen Songs der Band mit einem optimistischeren Unterton.",
+        "Das Video zeigt die Band in einem dunklen, wässrigen Setting.",
+        "Kurt Cobains Stimme ist hier besonders kehlig und melancholisch.",
+        "Refrain: 'And I swear that I don't have a gun, no I don't have a gun...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Come as you are, as you were, as I want you to be",
+          "As a friend, as a friend, as a known enemy",
+          "Take your time, hurry up, choice is yours, don't be late"
+        ],
+        "fake": [
+          "To be free, free as a bird, in the yard for the herd",
+          "As a fiend, as a fellow, as a strange new dream",
+          "Be a clock, take a step, judge it now, don't be late"
+        ]
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "vabnZ9-ex7o"
+      },
+      "coverUrl": "/covers/indie-nirvana-come-as-you-are.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative"
+      ]
+    },
+    {
+      "id": "nirvana-smells-like-teen-spirit-1991",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "year": 1990,
+      "country": "US",
+      "genre": "Grunge",
+      "difficulty": "easy",
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Epic",
+        "Grunge",
+        "Legends & Classics",
+        "Party Anthem",
+        "Popular",
+        "Rebel"
+      ],
+      "hints": [
+        "Der Titel entstand, weil jemand an Kurt Cobains Zimmerwand schrieb, er rieche nach einem Deo der Marke '[XXX] [XXX]'.",
+        "Die Gitarre ist ungewöhnlich tief gestimmt (Bb-Stimmung), was dem Riff seinen besonders schweren, bedrohlichen Klang gibt.",
+        "Erschienen auf dem Album 'Nevermind' (1991); das Album verdrängte Michael Jacksons 'Dangerous' von Platz 1.",
+        "Beginnt mit einem Vier-Noten-Gitarrenriff, wird ruhig bei der Strophe, explodiert dann in einem massiven Refrain.",
+        "[XXX] spielen in einem Musikvideo in einer Schulsporthalle, während alles um sie herum zunehmend chaotisch wird."
+      ],
+      "lyrics": {
+        "real": [
+          "Load up on guns, bring your friends",
+          "It's fun to lose and to pretend",
+          "With the lights out, it's less dangerous, here we are now, entertain us"
+        ],
+        "fake": "Sing along with the shadows in the hall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hTWKbfoikeg"
+      },
+      "coverUrl": "/covers/nirvana-smells-like-teen-spirit-1991.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Rock Anthems",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "90s-no-doubt-dont-speak",
+      "title": "Don't Speak",
+      "artist": "No Doubt",
+      "year": 1995,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Thematisiert die Trennung zwischen Sängerin Gwen Stefani und dem Bassisten Tony Kanal.",
+        "Im Video sieht man die Spannungen innerhalb der Band während ihres Aufstiegs zum Ruhm.",
+        "Markierte den weltweiten Durchbruch der Ska-beeinflussten Band.",
+        "Bekannt für das melancholische Gitarren-Solo und Gwens emotionalen Gesang.",
+        "Refrain: '[XXX] [XXX], I know just what you're saying, so please stop explaining...'"
+      ],
+      "lyrics": {
+        "real": [
+          "You and me, we used to be together, every day together, always",
+          "I really feel that I'm losing my best friend, I can't believe this could be the end",
+          "Don't speak, I know just what you're saying, so please stop explaining"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "TR3Vdo5etCQ",
+        "spotify": "6urCAbunOQI4bLhmGpX7iS",
+        "amazonMusic": "B07GVP63M1"
+      },
+      "coverUrl": "/covers/90s-no-doubt-dont-speak.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-nzQDQcELNuU",
+      "title": "Where Do You Go",
+      "artist": "No Mercy",
+      "year": 1996,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Pop-Song mit melancholischer Melodien und modernem Appeal.",
+        "Charakteristisch für 1990er zeitgenössischen Pop-Sound.",
+        "Thematisiert menschliche Gefühle und Beziehungen in zugänglicher Form.",
+        "Hook-fokussiert mit eingängigem Chorus.",
+        "Optimiert für Streaming und Radio-Appeal."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nzQDQcELNuU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/no-mercy-where-do-you-go.jpg"
+    },
+    {
+      "id": "yt-vXyBcKV0UIo",
+      "title": "Make Me (Cry)",
+      "artist": "Noah Cyrus, Labrinth",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vXyBcKV0UIo"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/noah-cyrus--labrinth-make-me--cry-.jpg"
+    },
+    {
+      "id": "finale-noah-stick",
+      "title": "Stick Season",
+      "artist": "Noah Kahan",
+      "year": 2022,
+      "country": "US",
+      "genre": "Folk-Pop / Indie Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Nostalgic",
+        "Modern"
+      ],
+      "hints": [
+        "Besticht durch die akustische Gitarre und [XXX] [XXX]s herzzerreißendes Songwriting.",
+        "Inbegriff für das Folk-Revival der frühen 2020er Jahre.",
+        "Thematisiert Heimatgefühle, Einsamkeit und den grauen Übergang zwischen Herbst und Winter in Vermont.",
+        "Wurde zum Globalhit durch seine ehrliche, bodenständige Art.",
+        "Refrain: 'And I'll dream each night of some version of you!'"
+      ],
+      "lyrics": {
+        "real": [
+          "And I'll dream each night of some version of you",
+          "That I might not have, but I did not lose",
+          "And I'm stuck with your ghost in a towns that I love"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "iWG6apzIWAk"
+      },
+      "coverUrl": "/covers/finale-noah-stick.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "The Grand Finale: 2020s & Legends"
+      ]
+    },
+    {
+      "id": "jazz-norah-jones-dont-know-why",
+      "title": "Don't Know Why",
+      "artist": "Norah Jones",
+      "year": 2002,
+      "country": "US",
+      "genre": "Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Romantic",
+        "Smooth",
+        "Soft"
+      ],
+      "hints": [
+        "[XXX] [XXX]' großer Durchbruch und Inbegriff für modernen 'Soft Jazz'.",
+        "Thematisiert Bedauern und die Unfähigkeit, eine Chance in der Liebe zu nutzen.",
+        "Ihre sanfte Stimme und das schlichte Klavierspiel verzauberten Millionen.",
+        "Gewann mehrere Grammys, u.a. 'Song des Jahres'.",
+        "Refrain: 'I [XXX] [XXX] why I didn't come! I left you by the house of fun!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I waited 'til I saw the sun, I don't know why I didn't come",
+          "I left you by the house of fun, I don't know why I didn't come",
+          "My heart is drenched in wine, but you'll be on my mind forever"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "tO4dxvguQDk"
+      },
+      "coverUrl": "/covers/jazz-norah-jones-dont-know-why.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ]
+    },
+    {
+      "id": "yt-NFAfwFf9aM8",
+      "title": "Bien Loco",
+      "artist": "Nova Y Jory",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NFAfwFf9aM8"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/nova-y-jory-bien-loco.jpg"
+    }
+  ]
+}

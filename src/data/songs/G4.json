@@ -1,0 +1,528 @@
+{
+  "songs": [
+    {
+      "id": "indie-gotye-somebody",
+      "title": "Somebody That I Used To Know",
+      "artist": "Gotye ft. Kimbra",
+      "year": 2011,
+      "country": "AU/NZ",
+      "genre": "Indie Pop / Art Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Heartbreak",
+        "Rainy Day",
+        "Sad",
+        "Unique"
+      ],
+      "hints": [
+        "Das Sample, das die Grundlage des Songs bildet, stammt von der brasilianischen Komponistin Luiz Bonfá aus ihrem Stück 'Seville'.",
+        "Das Musikvideo, in dem Körper in ein Tapetenmuster übergehen, entstand mit echter Körperbemalung – ohne digitale Effekte.",
+        "Erschienen 2011 auf dem australischen Album 'Making Mirrors'; in über 25 Ländern auf Platz 1.",
+        "Minimalistischer Indie-Pop mit gezupfter Gitarre und einem Xylofon-ähnlichen Riff, der sich zu einem emotionalen Duett aufbaut.",
+        "Ein australischer Künstler und eine Sängerin aus Neuseeland singen über eine Beziehung, die sie nun zu Fremden gemacht hat."
+      ],
+      "lyrics": {
+        "real": [
+          "Now and then I think of when we were together, like when you said you felt so happy you could die",
+          "But you didn't have to cut me off, make out like it never happened and that we were nothing",
+          "Now you're just somebody that I used to know"
+        ],
+        "fake": "In the shadow of the night, I'm looking for the light of your broken soul"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "8UVNT4wvIGY"
+      },
+      "coverUrl": "/covers/indie-gotye-somebody.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-XGlKvBtoWjI",
+      "title": "I Don't Know My Name (Lyric)",
+      "artist": "Grace VanderWaal",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XGlKvBtoWjI"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/grace-vanderwaal-i-don-t-know-my-name--lyric-.jpg"
+    },
+    {
+      "id": "hiphop-grandmaster-the-message",
+      "title": "The Message",
+      "artist": "Grandmaster Flash & The Furious Five",
+      "year": 1982,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Serious",
+        "Socially Conscious",
+        "Classic"
+      ],
+      "hints": [
+        "War einer der ersten Hip-Hop-Songs mit einer sozialkritischen Botschaft.",
+        "Thematisiert das harte Leben und den Überlebenskampf in den Ghettos von NYC.",
+        "Bekannt für den Refrain: 'It's like a jungle sometimes, it makes me wonder how I keep from going under'.",
+        "Wurde 2002 als erster Hip-Hop-Song in das nationale Register der Library of Congress aufgenommen.",
+        "Ein Meilenstein des Conscious Rap."
+      ],
+      "lyrics": {
+        "real": [
+          "It's like a jungle sometimes, it makes me wonder how I keep from going under",
+          "Broken glass everywhere, people pissing on the stairs, you know they just don't care",
+          "Don't push me 'cause I'm close to the edge, I'm trying not to lose my head"
+        ],
+        "fake": "Walking through the rain, I'm calling out your name in vain"
+      },
+      "links": {
+        "youtube": "PobrSpMwKk4"
+      },
+      "coverUrl": "/covers/hiphop-grandmaster-the-message.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials"
+      ]
+    },
+    {
+      "id": "yt-gQR8R29jXKA",
+      "title": "Eisbär",
+      "artist": "Grauzone",
+      "year": 1981,
+      "country": "CH",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gQR8R29jXKA"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/grauzone-eisbär.jpg"
+    },
+    {
+      "id": "yt-Soa3gO7tL-c",
+      "title": "Boulevard Of Broken Dreams [Official Music Video] [4K Upgrade]",
+      "artist": "Green Day",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Soa3gO7tL-c"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/green-day-boulevard-of-broken-dreams--official-music-video---4k-upgrade-.jpg"
+    },
+    {
+      "id": "piano-greenday-september",
+      "title": "Wake Me Up When September Ends",
+      "artist": "Green Day",
+      "year": 2005,
+      "country": "US",
+      "genre": "Alt-Rock / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Billie Joe Armstrong schrieb den Song über den frühen Tod seines Vaters.",
+        "Wurde nach Hurrikan Katrina zu einer Hymne für Trauer und Neuanfang.",
+        "Besticht durch den akustischen Beginn und die dramatische Steigerung.",
+        "Ein Inbegriff für den emotionalen Kern der Punk-Rock-Band.",
+        "Refrain: '[XXX] me up! [XXX] [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Summer has come and passed, the innocent can never last",
+          "Wake me up when September ends",
+          "Like my fathers come to pass, seven years has gone so fast"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "pGhwBFYtn1s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-greenday-september.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "jazz-gregporter-laura",
+      "title": "Hey Laura",
+      "artist": "Gregory Porter",
+      "year": 2013,
+      "country": "US",
+      "genre": "Jazz / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Emotional",
+        "Warm"
+      ],
+      "hints": [
+        "[XXX] [XXX]s warmer, tiefer Bariton prägt diesen modernen Jazz-Hit.",
+        "Thematisiert Sehnsucht und das Hoffen auf eine Chance bei einer alten Liebe.",
+        "[XXX] [XXX] wurde hiermit zum globalen Star des modernen Jazz.",
+        "Einfaches, aber extrem gefühlvolles Arrangement.",
+        "Refrain: 'Hey [XXX], it's me! Sorry but I had to ring your doorbell!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Hey Laura, it's me, sorry but I had to ring your doorbell",
+          "I had to see if you were home, I had to see you alone",
+          "And tell me that I'm not the only one"
+        ],
+        "fake": "Dancing in the Stars, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "ZWUAKq-reLQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-gregporter-laura.jpg",
+      "packs": [
+        "Jazz & Blues Classics"
+      ]
+    },
+    {
+      "id": "soul-grover-justtwo",
+      "title": "Just the Two of Us",
+      "artist": "Grover Washington Jr. ft. Bill Withers",
+      "year": 1980,
+      "country": "US",
+      "genre": "Smooth Jazz / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Song mit charakteristischen Smooth Jazz -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "I see the crystal raindrops fall, and the beauty of it all is when the sun comes shining through",
+          "To make those rainbows in my mind, when I think of you sometime",
+          "Just the two of us, we can make it if we try"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "Uw5OLnN7UvM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-grover-justtwo.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-dCYSfOyFOjg",
+      "title": "La Última Canción",
+      "artist": "Grupo Bryndis",
+      "year": 2016,
+      "country": "INT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Song mit charakteristischen Latin Pop-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dCYSfOyFOjg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/grupo-bryndis-la-última-canción.jpg"
+    },
+    {
+      "id": "yt-nhkBXEdUa9o",
+      "title": "Talk It Over",
+      "artist": "Gryffin & Calle Lehmann",
+      "year": 2020,
+      "country": "INT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Elektronische Musik mit Synthie-Fokus und modernem Sound-Design.",
+        "Synthesizer-getriebene Produktion mit melancholischer-Rhythmus.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch elektronische Ästhetik.",
+        "Charakteristische zeitgenössischen-Elektronik-Produktion.",
+        "Optimiert für Radio-Kontext."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nhkBXEdUa9o"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/gryffin---calle-lehmann-talk-it-over.jpg"
+    },
+    {
+      "id": "schlager-guildo-horn-lieb",
+      "title": "Guildo hat euch lieb!",
+      "artist": "Guildo Horn",
+      "year": 1998,
+      "country": "DE",
+      "genre": "Schlager / Comedy",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Crazy"
+      ],
+      "hints": [
+        "Sollte den Staub vom ESC wischen und sorgte für Sensation in Deutschland (7. Platz).",
+        "Geschrieben von Stefan Raab (unter dem Pseudonym Alf Igel).",
+        "Bekannt für [XXX]s exzessive Bühnenshow mit Nussecken und Klettereinlagen.",
+        "Ironisierte den klassischen Schlager, wurde aber selbst zum Riesen-Hit.",
+        "Refrain: '[XXX] hat [XXX] [XXX]'"
+      ],
+      "lyrics": {
+        "real": [
+          "Wenn die Welt voll Kummer ist und der Regen fällt auf dein Gesicht",
+          "Guildo hat euch lieb!",
+          "Und wenn ihr einmal traurig seid, dann kommt zu mir!"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "HPZX7EZIFD0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-guildo-horn-lieb.jpg",
+      "packs": [
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "piano-gnr-rain",
+      "title": "November Rain",
+      "artist": "Guns N' Roses",
+      "year": 1991,
+      "country": "US",
+      "genre": "Hard Rock / Power Ballad",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
+      "hints": [
+        "Das Opus Magnum von Axl Rose, der jahrelang an diesem Song arbeitete.",
+        "Besticht durch das klassische Klavier-Arrangement, Orchesterklänge und Slashs monumentales Solo.",
+        "Thematisiert die harten Zeiten und die Kälte, die in eine Beziehung einkehren kann.",
+        "Wurde durch sein episches Musikvideo (Hochzeit und Beerdigung) zum Kult.",
+        "Ref[XXX]: 'Nothing lasts forever! Even cold [XXX] [XXX]!'"
+      ],
+      "lyrics": {
+        "real": [
+          "When I look into your eyes, I can see a love restrained",
+          "But darlin' when I hold you, don't you know I feel the same",
+          "Nothing lasts forever, even cold November rain"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "8SbUC-UaAxE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-gnr-rain.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    },
+    {
+      "id": "yt-Rbm6GXllBiw",
+      "title": "Paradise City",
+      "artist": "Guns N' Roses",
+      "year": 1990,
+      "country": "INT",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Song mit charakteristischen All-Time-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Rbm6GXllBiw"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/guns-n--roses-paradise-city.jpg"
+    }
+  ]
+}

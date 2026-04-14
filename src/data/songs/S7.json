@@ -1,0 +1,572 @@
+{
+  "songs": [
+    {
+      "id": "90s-sinéad-oconnor-nothing-compares",
+      "title": "Nothing Compares 2 U",
+      "artist": "Sinéad O'Connor",
+      "year": 1990,
+      "country": "IE",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Epic",
+        "Soulful"
+      ],
+      "hints": [
+        "Wurde ursprünglich von Prince geschrieben.",
+        "Das Video besteht fast nur aus einer extremen Nahaufnahme des Gesichts der Sängerin.",
+        "Die Sängerin zerreißt am Ende des Videos fast symbolisch ein Bild des Papstes (in einer späteren Live-Version).",
+        "Thematisiert den Schmerz nach einer Trennung und die Unmöglichkeit, jemanden zu ersetzen.",
+        "Besonders bewegend: Die echte Träne, die der Sängerin im Video über die Wange läuft."
+      ],
+      "lyrics": {
+        "real": [
+          "It's been seven hours and fifteen days since you took your love away",
+          "I go out every night and sleep all day since you took your love away",
+          "Nothing compares, nothing compares to you"
+        ],
+        "fake": "In the middle of the night, I'm looking for a light that shines so bright"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "0-EF60neguk",
+        "spotify": "5GHY1DFWKz3Prg2V0Iodqo",
+        "amazonMusic": "B0B3SH1TPH"
+      },
+      "coverUrl": "/covers/90s-sinéad-oconnor-nothing-compares.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "yt-Ruq33iAxL5k",
+      "title": "Cities In Dust",
+      "artist": "Siouxsie and the Banshees",
+      "year": 1985,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ruq33iAxL5k"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/siouxsie-and-the-banshees-cities-in-dust.jpg"
+    },
+    {
+      "id": "yt-37PKcsvD0hg",
+      "title": "Happy House",
+      "artist": "Siouxsie and the Banshees",
+      "year": 1980,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=37PKcsvD0hg"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/siouxsie-and-the-banshees-happy-house.jpg"
+    },
+    {
+      "id": "soul-sister-family",
+      "title": "We Are Family",
+      "artist": "Sister Sledge",
+      "year": 1979,
+      "country": "US",
+      "genre": "Disco / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
+      "hints": [
+        "Wurde zur Hymne für Zusammenhalt und weibliche Stärke.",
+        "Produziert von Nile Rodgers und Bernard Edwards (Chic).",
+        "Besticht durch den mitreißenden Refrain und die warmen Vocals.",
+        "Wurde zum Erkennungslied für Sportteams und Bewegungen weltweit.",
+        "Refrain: 'We are [XXX]! I got all my [XXX]s with me!'"
+      ],
+      "lyrics": {
+        "real": [
+          "We are family, I got all my sisters with me",
+          "We are family, get up everybody and sing",
+          "Everyone can see we're together as we walk on by"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "uyGY2NfYpeE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-sister-family.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-wWEY0dh1sgU",
+      "title": "Temple of Love (1992)",
+      "artist": "Sisters of Mercy",
+      "year": 1992,
+      "country": "INT",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Song mit charakteristischen NDW-Elementen.",
+        "Thematisiert Liebe und emotionale Bindung durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wWEY0dh1sgU"
+      },
+      "supportedModes": [
+        "timeline"
+      ],
+      "isQRCompatible": false,
+      "packs": [
+        "YouTube Collection"
+      ],
+      "coverUrl": "/covers/sisters-of-mercy-temple-of-love--1992-.jpg"
+    },
+    {
+      "id": "90s-sixpence-kiss-me",
+      "title": "Kiss Me",
+      "artist": "Sixpence None the Richer",
+      "year": 1997,
+      "country": "US",
+      "genre": "Dream Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Soft"
+      ],
+      "hints": [
+        "Wurde weltberühmt durch die Teenie-Komödie 'Eine wie keine' (She's All That).",
+        "Ein Paradebeispiel für den unbeschwerten, akustischen Pop-Sound der späten 90er.",
+        "Die Band hat einen religiösen Hintergrund, was man dem Song aber nicht direkt anhört.",
+        "Der Refrain fordert zu einem Kuss unter dem 'Milchlicht' (milky twilight) auf.",
+        "Refrain: '[XXX] me out of the bearded barley...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Kiss me out of the bearded barley, nighty, beside the green, green grass",
+          "Swing, swing, swing the spinning step, you wear those shoes and I will wear that dress",
+          "Oh, kiss me, beneath the milky twilight"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent sun"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "hII0JXUJNDo",
+        "spotify": "754kgU5rWscRTfvlsuEwFp",
+        "amazonMusic": "B07VRV4ZC6"
+      },
+      "coverUrl": "/covers/90s-sixpence-kiss-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged"
+      ]
+    },
+    {
+      "id": "disco-skrillex-scary",
+      "title": "Scary Monsters and Nice Sprites",
+      "artist": "Skrillex",
+      "year": 2010,
+      "country": "US",
+      "genre": "Dubstep / Electro House",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Cool",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Machte das 'Dubstep' Genre im Mainstream populär.",
+        "Besticht durch den extremen Kontrast zwischen melodiösen Parts und den harten 'Bass-Drops'.",
+        "Wurde zu einem massiven popkulturellen Phänomen.",
+        "Samplet einen Schrei aus einem YouTube-Video ('YES, OH MY GOD!').",
+        "Besonderheit: Bekannt für den 'Wobble-Bass' Sound."
+      ],
+      "lyrics": {
+        "real": [
+          "Yes, oh my god!",
+          "(Dubstep Drop)",
+          "(Dubstep Drop)"
+        ],
+        "fake": "Dancing in the shadow of the night tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "WSeNSzJ2-Jw"
+      },
+      "coverUrl": "/covers/disco-skrillex-scary.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Synthpop Voyage",
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "metal-slayer-raining",
+      "title": "Raining Blood",
+      "artist": "Slayer",
+      "year": 1986,
+      "country": "US",
+      "genre": "Thrash Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Powerful"
+      ],
+      "hints": [
+        "Ein Inbegriff für die Brutalität und Präzision des Thrash Metal.",
+        "Besticht durch das unheimliche Regen-Intro und die rasanten Riffs.",
+        "Thematisiert dunkle okkulte Themen und Zerstörung.",
+        "Das Songwriting von Jeff Hanneman prägte den extremen Metal.",
+        "Refrain: '[XXX] [XXX]! From a lacerated sky!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Trapped in purgatory, a lifeless object, alive",
+          "Raining blood, from a lacerated sky",
+          "Bleeding its horror, creating my structure, now I shall reign in blood"
+        ],
+        "fake": "Nothing's gonna stop me now, I'm king of the town somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "CkaE237oiwE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-slayer-raining.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "metal-slipknot-bleed",
+      "title": "Wait and Bleed",
+      "artist": "Slipknot",
+      "year": 1999,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Dark"
+      ],
+      "hints": [
+        "Der Durchbruch-Hit der maskierten Neun aus Iowa.",
+        "Kombiniert brutale Aggression mit einem extrem eingängigen Melodie-Refrain.",
+        "Thematisiert Isolation und psychischen Schmerz.",
+        "Ein Inbegriff für den Erfolg des Nu Metal um die Jahrtausendwende.",
+        "Refrain: 'I felt the hate rise up in me! Kneel down and clear the stone of leaves!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I felt the hate rise up in me, kneel down and clear the stone of leaves",
+          "I won't let you get me, keep it inside and wait and bleed",
+          "I wander through my mind and find it out"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xAUaEfzt_VU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-slipknot-bleed.jpg",
+      "packs": [
+        "Metal & Hardcore Fury"
+      ]
+    },
+    {
+      "id": "soul-sly-affair",
+      "title": "Family Affair",
+      "artist": "Sly & The Family Stone",
+      "year": 1971,
+      "country": "US",
+      "genre": "Funk / Minimalist",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Intelligent"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk -Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "It's a family affair, it's a family affair",
+          "One child grows up to be somebody that just loves to learn",
+          "And another child grows up to be somebody you'd just love to burn"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "xag5RKD0VHk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-sly-affair.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "soul-sly-thankyou",
+      "title": "Thank You (Falettinme Be Mice Elf Agin)",
+      "artist": "Sly & The Family Stone",
+      "year": 1969,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "hard",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Experimental"
+      ],
+      "hints": [
+        "Song mit charakteristischen Funk-Elementen.",
+        "Thematisiert menschliche Gefühle und Beziehungen durch Instrument-fokussierte Produktion.",
+        "Moderne Produktion kombiniert mit traditionellem Sound.",
+        "Eingängige Melodien und emotionale Tiefe.",
+        "Zeitloser Appeal mit klassischen Produktionselementen."
+      ],
+      "lyrics": {
+        "real": [
+          "Lookin' at the devil, grinnin' at his gun",
+          "Fingers happy, trigger pullin' on a cloud of fear",
+          "Thank you falettinme be mice elf agin"
+        ],
+        "fake": "In the middle of the island, we're looking for the silent moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "NOa5UOHdwnc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-sly-thankyou.jpg",
+      "packs": [
+        "Soul & Funk Grooves"
+      ]
+    },
+    {
+      "id": "yt-JYIaWeVL1JM",
+      "title": "Rhythm Is A Dancer",
+      "artist": "SNAP!",
+      "year": 1985,
+      "country": "INT",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Classic",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Einer der erfolgreichsten Eurodance-Songs der 90er Jahre, produziert in Deutschland.",
+        "Der Rap-Teil enthält die (berühmt-berüchtigte) Zeile: 'I'm serious as cancer when I say [XXX] is a [XXX]'.",
+        "Der Song basiert auf einem Sample von 'Automan' von Newcleus.",
+        "Das Video spielt in einem futuristischen Space-Setting mit viel Nebel.",
+        "Refrain: '[XXX] is a [XXX], it's a soul's companion...'"
+      ],
+      "lyrics": {
+        "real": [
+          "Rhythm is a dancer, it's a soul's companion, you can feel it everywhere",
+          "Lift your hands and voices, free your mind and join us, you can feel it in the air",
+          "Oh, it's a passion, oh, you can feel it in your soul"
+        ],
+        "fake": "Dancing in the light, feeling so right, all through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "JYIaWeVL1JM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics-labyrinth",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "YouTube Collection",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/dance-snap-rhythm-is-a-dancer.jpg"
+    },
+    {
+      "id": "piano-snow-run",
+      "title": "Run (Piano Version)",
+      "artist": "Snow Patrol",
+      "year": 2003,
+      "country": "GB",
+      "genre": "Indie Rock / Anthem",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Thematisiert Zusammenhalt und den Wunsch, den Schmerz eines anderen zu teilen.",
+        "Besticht durch den bombastischen Refrain und die epische Melodie.",
+        "Wurde oft gecovert (z.B. von Leona Lewis) und dadurch noch bekannter.",
+        "Ein Inbegriff für den Stadion-Indie-Sound.",
+        "Refrain: 'Light up, light up! As if you have a choice!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'll sing it one last time for you, then we really have to go",
+          "You've been the only thing that's right in all I've done",
+          "Light up, light up, as if you have a choice"
+        ],
+        "fake": "Dancing in the STARS, playing my guitars tonight tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "AOBs8dU4Pb8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics-labyrinth"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-snow-run.jpg",
+      "packs": [
+        "Piano & Power Ballads"
+      ]
+    }
+  ]
+}
