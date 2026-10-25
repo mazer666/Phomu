@@ -15,6 +15,7 @@
 import { useEffect, useState, useCallback, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import { GameHeader } from '@/components/game/GameHeader';
 import { Scoreboard } from '@/components/game/Scoreboard';
@@ -27,9 +28,9 @@ import type { PlayerAnswer } from '@/types/game-state';
 // ─── Übergangsanimation ───────────────────────────────────────────
 
 const PHASE_VARIANTS = {
-  initial:  { opacity: 0, y: 24 },
-  animate:  { opacity: 1, y: 0 },
-  exit:     { opacity: 0, y: -16 },
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -16 },
 };
 
 // ─── Game-Seite ───────────────────────────────────────────────────
@@ -44,6 +45,7 @@ import { useGameAudioCues } from '@/hooks/useGameAudioCues';
 
 export default function GamePage() {
   const router = useRouter();
+  const { t } = useTranslation();
   const {
     players,
     teams,
@@ -74,9 +76,9 @@ export default function GamePage() {
   const [showInGameSettings, setShowInGameSettings] = useState(false);
   const [now, setNow] = useState(() => Date.now());
   const [isRerolling, setIsRerolling] = useState(false);
-  const [lastRoundBannerMsg, setLastRoundBannerMsg] = useState<LastRoundMessage | null>(null);
+  const [lastRoundBannerMsg, setLastRoundBannerMsg] =
+    useState<LastRoundMessage | null>(null);
   const lastRoundBannerShown = useRef(false);
-
 
   // ── Zeit-Updater für Progress-Bar ─────────────────────────────
   useEffect(() => {
@@ -105,34 +107,52 @@ export default function GamePage() {
   const pilot = isTeamTurn
     ? teams.find((t) => t.id === pilotId)
     : players.find((p) => p.id === pilotId);
-  const nextPilotId = turnOrder.length > 1
-    ? turnOrder[(currentTurnIndex + 1) % turnOrder.length]
-    : undefined;
+  const nextPilotId =
+    turnOrder.length > 1
+      ? turnOrder[(currentTurnIndex + 1) % turnOrder.length]
+      : undefined;
   const nextPilot = isTeamTurn
     ? teams.find((t) => t.id === nextPilotId)
     : players.find((p) => p.id === nextPilotId);
 
-  const pilotAvatar = !isTeamTurn && pilot && 'avatar' in pilot ? pilot.avatar : '👥';
+  const pilotAvatar =
+    !isTeamTurn && pilot && 'avatar' in pilot ? pilot.avatar : '👥';
 
   // ── Handler: Karte gezogen ─────────────────────────────────────
   const handleCardDrawn = useCallback(
     (song: PhomuSong) => {
       drawSong(song);
     },
-    [drawSong],
+    [drawSong]
   );
 
   // ── Handler: Spieler hat geantwortet ──────────────────────────
   const handleAnswered = useCallback(
-    (isCorrect: boolean, basePointsAwarded: number, answeredInSeconds?: number) => {
+    (
+      isCorrect: boolean,
+      basePointsAwarded: number,
+      answeredInSeconds?: number
+    ) => {
       if (!pilotId) return;
 
       let pointsAwarded = basePointsAwarded;
-      if (isCorrect && config.timeDecayEnabled && typeof answeredInSeconds === 'number') {
-        const overtime = Math.max(0, answeredInSeconds - config.timeDecayGraceSeconds);
-        const decaySteps = Math.floor(overtime / Math.max(1, config.timeDecayStepSeconds));
+      if (
+        isCorrect &&
+        config.timeDecayEnabled &&
+        typeof answeredInSeconds === 'number'
+      ) {
+        const overtime = Math.max(
+          0,
+          answeredInSeconds - config.timeDecayGraceSeconds
+        );
+        const decaySteps = Math.floor(
+          overtime / Math.max(1, config.timeDecayStepSeconds)
+        );
         const decayPoints = decaySteps * config.timeDecayStepPoints;
-        pointsAwarded = Math.max(config.minPointsPerCorrect, basePointsAwarded - decayPoints);
+        pointsAwarded = Math.max(
+          config.minPointsPerCorrect,
+          basePointsAwarded - decayPoints
+        );
       }
 
       const answer: PlayerAnswer = {
@@ -157,7 +177,7 @@ export default function GamePage() {
       config.minPointsPerCorrect,
       submitAnswer,
       awardPoints,
-    ],
+    ]
   );
 
   // ── Handler: Reveal starten ────────────────────────────────────
@@ -173,7 +193,7 @@ export default function GamePage() {
     if (config.endingCondition === 'rounds') {
       const totalTurns = config.targetRounds * turnOrder.length;
       // Nächste Runde (currentRound + 1) wäre in der letzten Rotation
-      return (currentRound + 1) >= (totalTurns - turnOrder.length + 1);
+      return currentRound + 1 >= totalTurns - turnOrder.length + 1;
     }
     return false;
   }, [config, currentRound, turnOrder, gameStartTime, now]);
@@ -192,11 +212,12 @@ export default function GamePage() {
     }
   }, [isLastRotation, isGameOver, nextRound]);
 
-
   // ── Power User: Antwort overrulen ─────────────────────────────
   const handleOverrideCorrect = useCallback(() => {
     if (!pilotId) return;
-    const alreadyCorrect = currentAnswers.some((a) => a.playerId === pilotId && a.isCorrect);
+    const alreadyCorrect = currentAnswers.some(
+      (a) => a.playerId === pilotId && a.isCorrect
+    );
     if (alreadyCorrect) return;
 
     const points = Math.max(1, config.minPointsPerCorrect);
@@ -207,7 +228,13 @@ export default function GamePage() {
       pointsAwarded: points,
     });
     awardPoints(pilotId, points);
-  }, [pilotId, currentAnswers, config.minPointsPerCorrect, submitAnswer, awardPoints]);
+  }, [
+    pilotId,
+    currentAnswers,
+    config.minPointsPerCorrect,
+    submitAnswer,
+    awardPoints,
+  ]);
 
   // ── Power User: Runde verwerfen / neu ziehen ───────────────────
   const handleOverrideRedraw = useCallback(() => {
@@ -222,11 +249,11 @@ export default function GamePage() {
 
   // ── Handler: Exit (Sicherheitsfrage) ──────────────────────────
   const handleExit = useCallback(() => {
-    if (confirm('Spiel abbrechen und zur Lobby zurückkehren?')) {
+    if (confirm(t('game.page.exitConfirm'))) {
       initSession();
       router.push('/lobby');
     }
-  }, [initSession, router]);
+  }, [initSession, router, t]);
 
   // ── Timer abgelaufen ──────────────────────────────────────────
   const handleTimeUp = useCallback(() => {
@@ -244,7 +271,6 @@ export default function GamePage() {
       setIsRerolling(false);
     }, 2000);
   }, [skipBrokenSong]);
-
 
   const lastAnswer = currentAnswers[currentAnswers.length - 1];
 
@@ -270,21 +296,33 @@ export default function GamePage() {
       percentage = (currentRound / totalTurns) * 100;
       targetLabel = `${totalTurns}`;
     } else if (config.endingCondition === 'points') {
-      const topScore = config.teamMode === 'individual'
-        ? Math.max(...players.map(p => p.score), 0)
-        : Math.max(...teams.map(t => t.score), 0);
+      const topScore =
+        config.teamMode === 'individual'
+          ? Math.max(...players.map((p) => p.score), 0)
+          : Math.max(...teams.map((t) => t.score), 0);
       percentage = (topScore / config.targetPoints) * 100;
-      targetLabel = `${config.targetPoints} Pkt`;
+      targetLabel = t('game.page.targetPoints', { count: config.targetPoints });
       currentVal = topScore;
     } else if (config.endingCondition === 'time' && gameStartTime) {
       const elapsedMs = now - gameStartTime;
       const targetMs = config.targetTimeMinutes * 60 * 1000;
       percentage = (elapsedMs / targetMs) * 100;
-      targetLabel = `${config.targetTimeMinutes} Min`;
+      targetLabel = t('game.page.targetMinutes', {
+        count: config.targetTimeMinutes,
+      });
       currentVal = Math.floor(elapsedMs / 60000);
     }
     return { percentage, targetLabel, currentVal };
-  }, [config, currentRound, turnOrder.length, players, teams, gameStartTime, now]);
+  }, [
+    config,
+    currentRound,
+    turnOrder.length,
+    players,
+    teams,
+    gameStartTime,
+    now,
+    t,
+  ]);
 
   // Noch nicht bereit → nichts rendern (Redirect läuft)
   if (currentRound === 0 || players.length === 0) {
@@ -304,7 +342,10 @@ export default function GamePage() {
       <DiceAnimation isVisible={isRerolling} />
       <LastRoundBanner
         message={lastRoundBannerMsg}
-        onDismiss={() => { setLastRoundBannerMsg(null); nextRound(); }}
+        onDismiss={() => {
+          setLastRoundBannerMsg(null);
+          nextRound();
+        }}
       />
 
       {/* Header */}
@@ -314,7 +355,9 @@ export default function GamePage() {
         pilotName={pilot?.name}
         pilotAvatar={pilotAvatar}
         pilotColor={pilot?.color}
-        timeLimitSeconds={roundPhase === 'question' ? config.timeLimitSeconds : null}
+        timeLimitSeconds={
+          roundPhase === 'question' ? config.timeLimitSeconds : null
+        }
         progressPercentage={progressData.percentage}
         targetLabel={progressData.targetLabel}
         onTimeUp={handleTimeUp}
@@ -326,20 +369,26 @@ export default function GamePage() {
         onClick={() => setShowScoreboard(true)}
         className="fixed bottom-4 right-4 z-30 px-4 py-2 rounded-full text-sm font-bold
                    shadow-lg transition-opacity hover:opacity-90"
-        style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)' }}
-        aria-label="Punktestand anzeigen"
+        style={{
+          backgroundColor: 'var(--color-bg-card)',
+          border: '1px solid var(--color-border)',
+        }}
+        aria-label={t('game.page.showScoreboardAria')}
       >
-        🏆 Punkte
+        {t('game.page.pointsButton')}
       </button>
 
       {/* In-Game Settings (jederzeit erreichbar) */}
       <button
         onClick={() => setShowInGameSettings(true)}
         className="fixed bottom-4 left-4 z-30 px-4 py-2 rounded-full text-sm font-bold shadow-lg transition-opacity hover:opacity-90"
-        style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)' }}
-        aria-label="Spiel-Einstellungen öffnen"
+        style={{
+          backgroundColor: 'var(--color-bg-card)',
+          border: '1px solid var(--color-border)',
+        }}
+        aria-label={t('game.page.openSettingsAria')}
       >
-        ⚙️ Settings
+        {t('game.page.settingsButton')}
       </button>
 
       {/* Scoreboard Overlay */}
@@ -377,7 +426,9 @@ export default function GamePage() {
                 playedSongIds={playedSongIds}
                 pilotName={pilot?.name}
                 pilotColor={pilot?.color}
-                nextPilotName={turnOrder.length > 1 ? nextPilot?.name : undefined}
+                nextPilotName={
+                  turnOrder.length > 1 ? nextPilot?.name : undefined
+                }
                 nextPilotColor={nextPilot?.color}
                 onCardDrawn={handleCardDrawn}
               />
@@ -395,8 +446,10 @@ export default function GamePage() {
               className="flex flex-col items-center justify-center min-h-[60vh] gap-4 px-6"
             >
               <p className="text-6xl">🏁</p>
-              <h2 className="text-3xl font-black text-center">Spiel beendet!</h2>
-              <p className="opacity-60">Weiterleitung …</p>
+              <h2 className="text-3xl font-black text-center">
+                {t('game.page.gameOver')}
+              </h2>
+              <p className="opacity-60">{t('game.page.redirecting')}</p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -409,57 +462,59 @@ export default function GamePage() {
           (roundPhase === 'question' ||
             roundPhase === 'locked-in' ||
             roundPhase === 'reveal') && (
-          <motion.div
-            variants={PHASE_VARIANTS}
-            initial="initial"
-            animate="animate"
-            transition={{ duration: 0.3 }}
-          >
-            {/* QuestionPhase: versteckt (nicht unmountet) während Reveal */}
-            <div
-              style={roundPhase === 'reveal' ? { display: 'none' } : undefined}
-              className="pt-2"
+            <motion.div
+              variants={PHASE_VARIANTS}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.3 }}
             >
-              <QuestionPhase
-                song={currentSong}
-                currentMode={currentMode}
-                onAnswered={handleAnswered}
-                onReveal={handleReveal}
-                onReroll={handleReroll}
-              />
-            </div>
+              {/* QuestionPhase: versteckt (nicht unmountet) während Reveal */}
+              <div
+                style={
+                  roundPhase === 'reveal' ? { display: 'none' } : undefined
+                }
+                className="pt-2"
+              >
+                <QuestionPhase
+                  song={currentSong}
+                  currentMode={currentMode}
+                  onAnswered={handleAnswered}
+                  onReveal={handleReveal}
+                  onReroll={handleReroll}
+                />
+              </div>
 
-            {/* RevealPhase: überlagert, eigene Einblend-Animation */}
-            <AnimatePresence>
-              {roundPhase === 'reveal' && (
-                <motion.div
-                  key="reveal"
-                  variants={PHASE_VARIANTS}
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                  transition={{ duration: 0.3 }}
-                >
-                  <RevealPhase
-                    song={currentSong}
-                    currentMode={currentMode}
-                    answers={currentAnswers}
-                    players={players}
-                    teams={teams}
-                    winCondition={config.winCondition}
-                    endingCondition={config.endingCondition}
-                    isGameOver={isGameOver}
-                    onNextRound={handleNextRound}
-                    onEndGame={handleEndGame}
-                    onOverrideCorrect={handleOverrideCorrect}
-                    onOverrideRedraw={handleOverrideRedraw}
-                    overrideGovernance={config.overrideGovernance}
-                  />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </motion.div>
-        )}
+              {/* RevealPhase: überlagert, eigene Einblend-Animation */}
+              <AnimatePresence>
+                {roundPhase === 'reveal' && (
+                  <motion.div
+                    key="reveal"
+                    variants={PHASE_VARIANTS}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    transition={{ duration: 0.3 }}
+                  >
+                    <RevealPhase
+                      song={currentSong}
+                      currentMode={currentMode}
+                      answers={currentAnswers}
+                      players={players}
+                      teams={teams}
+                      winCondition={config.winCondition}
+                      endingCondition={config.endingCondition}
+                      isGameOver={isGameOver}
+                      onNextRound={handleNextRound}
+                      onEndGame={handleEndGame}
+                      onOverrideCorrect={handleOverrideCorrect}
+                      onOverrideRedraw={handleOverrideRedraw}
+                      overrideGovernance={config.overrideGovernance}
+                    />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          )}
       </main>
     </div>
   );

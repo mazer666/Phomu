@@ -3,12 +3,15 @@
  *
  * Zeigt das Endergebnis mit Podest (Platz 1–3) und vollständiger Tabelle.
  * Optionen: "Nochmal spielen" (Lobby behalten) oder "Neu starten" (alles reset).
+ *
+ * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/gameover.{de,en}.json`.
  */
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 
 // ─── Podest-Konfiguration ─────────────────────────────────────────
@@ -22,6 +25,7 @@ const PODEST_CONFIG = [
 // ─── Seite ────────────────────────────────────────────────────────
 
 export default function GameOverPage() {
+  const { t, i18n } = useTranslation();
   const router = useRouter();
   const {
     players,
@@ -30,8 +34,14 @@ export default function GameOverPage() {
     totalXP,
     initSession,
     startGame,
-    resetScores
+    resetScores,
   } = useGameStore();
+
+  // Zahlenformat der aktiven Sprache
+  const numberFormat = useMemo(
+    () => new Intl.NumberFormat(i18n.language),
+    [i18n.language]
+  );
 
   const sessionXP = players.reduce((sum, p) => sum + p.score, 0);
   const previousTotalXP = totalXP - sessionXP;
@@ -64,36 +74,46 @@ export default function GameOverPage() {
       >
         <div className="relative inline-block">
           <span className="text-8xl select-none">🏆</span>
-          <motion.div 
+          <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
             className="absolute inset-0 border-4 border-dashed border-[var(--color-accent)] rounded-full opacity-20 scale-150"
           />
         </div>
-        <h1 className="text-4xl font-black mt-6" style={{ color: 'var(--color-secondary)' }}>
-          {winner?.name} gewinnt!
+        <h1
+          className="text-4xl font-black mt-6"
+          style={{ color: 'var(--color-secondary)' }}
+        >
+          {t('gameover.winner', { winner: winner?.name ?? '' })}
         </h1>
         <p className="opacity-40 font-bold uppercase tracking-tighter text-xs mt-1">
-          {currentRound - 1} Runden gerockt • {sessionXP} XP verdient
+          {t('gameover.summary', {
+            count: currentRound - 1,
+            xp: numberFormat.format(sessionXP),
+          })}
         </p>
       </motion.div>
 
       {/* NEU: XP / Progression Fortschrittsbalken */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
         className="w-full max-w-sm bg-white/5 p-6 rounded-3xl border border-white/10 mb-8 space-y-4"
       >
         <div className="flex justify-between items-end">
-          <h2 className="text-xs font-black uppercase opacity-60">Level {currentLevel}</h2>
-          <p className="text-2xl font-black font-mono">+{sessionXP} XP</p>
+          <h2 className="text-xs font-black uppercase opacity-60">
+            {t('gameover.level', { level: numberFormat.format(currentLevel) })}
+          </h2>
+          <p className="text-2xl font-black font-mono">
+            {t('gameover.xpGained', { xp: numberFormat.format(sessionXP) })}
+          </p>
         </div>
-        
+
         <div className="h-4 bg-black/40 rounded-full border border-white/5 overflow-hidden">
-          <motion.div 
-            initial={{ width: `${(previousTotalXP % 100)}%` }}
-            animate={{ width: `${(totalXP % 100)}%` }}
+          <motion.div
+            initial={{ width: `${previousTotalXP % 100}%` }}
+            animate={{ width: `${totalXP % 100}%` }}
             className="h-full bg-[var(--color-accent)] shadow-[0_0_15px_rgba(var(--color-accent-rgb),0.5)]"
           />
         </div>
@@ -101,13 +121,13 @@ export default function GameOverPage() {
         {/* Level Up / Unlock Alert */}
         <AnimatePresence>
           {didLevelUp && (
-            <motion.div 
+            <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               className="bg-[var(--color-accent)]/20 p-3 rounded-xl border border-[var(--color-accent)]/30 text-center"
             >
               <p className="text-[var(--color-accent)] font-black text-xs uppercase animate-bounce">
-                🎉 LEVEL UP! NEUE PACKS FREIGESCHALTET! 🎉
+                {t('gameover.levelUp')}
               </p>
             </motion.div>
           )}
@@ -124,12 +144,25 @@ export default function GameOverPage() {
               key={rank}
               style={{ order }}
               initial={{ height: 0 }}
-              animate={{ height: heightClass.includes('24') ? '100px' : heightClass.includes('16') ? '70px' : '50px' }}
+              animate={{
+                height: heightClass.includes('24')
+                  ? '100px'
+                  : heightClass.includes('16')
+                    ? '70px'
+                    : '50px',
+              }}
               className="flex-1 bg-white/5 rounded-t-2xl border-2 border-white/10 flex flex-col items-center justify-center relative pt-4"
             >
-              <span className="absolute -top-6 text-2xl" aria-hidden>{icon}</span>
+              <span className="absolute -top-6 text-2xl" aria-hidden>
+                {icon}
+              </span>
               <span className="text-2xl mb-1">{p.avatar}</span>
-              <p className="text-[10px] font-black uppercase text-center px-1 truncate w-full" style={{ color: p.color }}>{p.name}</p>
+              <p
+                className="text-[10px] font-black uppercase text-center px-1 truncate w-full"
+                style={{ color: p.color }}
+              >
+                {p.name}
+              </p>
             </motion.div>
           );
         })}
@@ -145,7 +178,7 @@ export default function GameOverPage() {
           }}
           className="w-full py-5 rounded-3xl text-2xl font-black bg-[var(--color-accent)] text-white hover:scale-105 active:scale-95 transition-all shadow-xl shadow-[var(--color-accent)]/20"
         >
-          🔄 NOCHMAL SPIELEN
+          {t('gameover.playAgain')}
         </button>
 
         <button
@@ -155,14 +188,14 @@ export default function GameOverPage() {
           }}
           className="w-full py-4 rounded-3xl text-sm font-black border border-white/10 hover:bg-white/5 transition-all"
         >
-          NEUE LOBBY STARTEN
+          {t('gameover.newLobby')}
         </button>
 
         <button
           onClick={() => router.push('/')}
           className="text-[10px] uppercase font-black opacity-30 hover:opacity-100 transition-opacity text-center mt-4 tracking-widest"
         >
-          Zurück zum Hauptmenü
+          {t('gameover.backToMenu')}
         </button>
       </div>
     </main>

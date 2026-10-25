@@ -1,6 +1,13 @@
 import { NextResponse } from 'next/server';
 
-import { assertAdminAccess, boundedText, fetchWithTimeout } from '@/admin-api/_lib/security';
+import {
+  AdminRequestError,
+  MAX_JSON_BYTES,
+  assertAdminAccess,
+  assertRateLimit,
+  boundedText,
+  fetchWithTimeout,
+} from '@/admin-api/_lib/security';
 
 interface SearchResult {
   id: string;
@@ -32,6 +39,9 @@ interface DeezerTrack {
   };
 }
 
+/** Rate limit for the cover search (each request costs two third-party calls). */
+const SEARCH_RATE_LIMIT = { limit: 30, windowMs: 60_000 };
+
 function uniqueResults(results: SearchResult[]): SearchResult[] {
   const seen = new Set<string>();
   return results.filter((item) => {
@@ -46,17 +56,35 @@ export async function GET(request: Request) {
   const authError = assertAdminAccess(request);
   if (authError) return authError;
 
+  const rateLimitError = assertRateLimit(
+    request,
+    'cover-search',
+    SEARCH_RATE_LIMIT
+  );
+  if (rateLimitError) return rateLimitError;
+
   try {
     const { searchParams } = new URL(request.url);
-    const artist = boundedText(searchParams.get('artist'), 'artist', 120);
-    const title = boundedText(searchParams.get('title'), 'title', 120);
+    let artist: string;
+    let title: string;
+    try {
+      artist = boundedText(searchParams.get('artist'), 'artist', 120);
+      title = boundedText(searchParams.get('title'), 'title', 120);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Invalid input';
+      throw new AdminRequestError(message, 400);
+    }
 
     const results: SearchResult[] = [];
 
     const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(`${artist} ${title}`)}&entity=musicTrack&limit=5`;
-    const itunesRes = await fetchWithTimeout(itunesUrl);
+    const itunesRes = await fetchWithTimeout(itunesUrl, 7000, {
+      maxBytes: MAX_JSON_BYTES,
+    });
     if (itunesRes.ok) {
-      const itunesData = (await itunesRes.json()) as { results?: ItunesTrack[] };
+      const itunesData = (await itunesRes.json()) as {
+        results?: ItunesTrack[];
+      };
       for (const track of itunesData.results ?? []) {
         if (!track.artworkUrl100) continue;
         results.push({
@@ -72,7 +100,9 @@ export async function GET(request: Request) {
     }
 
     const deezerUrl = `https://api.deezer.com/search?q=${encodeURIComponent(`track:"${title}" artist:"${artist}"`)}&limit=5`;
-    const deezerRes = await fetchWithTimeout(deezerUrl);
+    const deezerRes = await fetchWithTimeout(deezerUrl, 7000, {
+      maxBytes: MAX_JSON_BYTES,
+    });
     if (deezerRes.ok) {
       const deezerData = (await deezerRes.json()) as { data?: DeezerTrack[] };
       for (const track of deezerData.data ?? []) {
@@ -92,7 +122,20 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ results: uniqueResults(results).slice(0, 10) });
   } catch (error) {
-    const message = error instanceof Error ? error.message : 'Cover search failed';
-    return NextResponse.json({ error: message }, { status: 400 });
+    if (error instanceof AdminRequestError) {
+      return NextResponse.json(
+        { error: error.message },
+        { status: error.status }
+      );
+    }
+
+    // A rejected input (missing or too long search term) is reported as a
+    // 400. Every other error is logged server-side and reported without
+    // details - the message can contain internal information.
+    console.error(
+      '[admin-api] cover search failed:',
+      error instanceof Error ? error.message : 'unknown error'
+    );
+    return NextResponse.json({ error: 'Cover search failed' }, { status: 500 });
   }
 }

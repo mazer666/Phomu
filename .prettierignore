@@ -1,0 +1,26 @@
+# Generierte Dateien — werden nicht formatiert, sondern erzeugt.
+#
+# Wer sie umschreibt, überschreibt den Generator. Die Quelle ist jeweils im
+# Kopfkommentar der Datei genannt.
+
+# Übersetzung: erzeugt aus den Teildateien bzw. vom Seed-Skript
+src/i18n/locales/
+
+# Typisierte Schlüssellisten: erzeugt aus src/i18n/locales/de.json
+src/i18n/variant-keys.ts
+
+# Songkatalog: erzeugt aus den Pack-JSONs
+src/data/
+
+# Coverbilder
+public/covers/
+
+# Berichte und Messdaten
+specifications/*.json
+youtube-official-audit-report.json
+broken-links-report.json
+corrections.json
+spreadsheet_data.json
+
+# Abhängigkeiten
+package-lock.json

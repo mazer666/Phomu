@@ -7,6 +7,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 interface PlayerCardProps {
   name: string;
@@ -20,7 +21,15 @@ interface PlayerCardProps {
   onRemove: () => void;
 }
 
-export function PlayerCard({ name, avatar, color, isPilot, onRemove }: PlayerCardProps) {
+export function PlayerCard({
+  name,
+  avatar,
+  color,
+  isPilot,
+  onRemove,
+}: PlayerCardProps) {
+  const { t } = useTranslation();
+
   // Halbtransparente Varianten der Spielerfarbe für Hintergrund und Rahmen
   const borderColor = color ? `${color}55` : 'rgba(255,255,255,0.2)';
   const bgColor = color ? `${color}1a` : 'rgba(255,255,255,0.07)';
@@ -55,7 +64,7 @@ export function PlayerCard({ name, avatar, color, isPilot, onRemove }: PlayerCar
         </p>
         {isPilot && (
           <span className="text-xs opacity-60 flex items-center gap-1 mt-0.5">
-            🎮 <span>Pilot</span>
+            🎮 <span>{t('lobby.player.pilot')}</span>
           </span>
         )}
       </div>
@@ -65,8 +74,8 @@ export function PlayerCard({ name, avatar, color, isPilot, onRemove }: PlayerCar
         onClick={onRemove}
         className="shrink-0 w-11 h-11 flex items-center justify-center text-lg rounded-xl
                    text-red-400 hover:text-red-300 hover:bg-red-400/20 active:scale-90 transition-all"
-        aria-label={`${name} entfernen`}
-        title={`${name} entfernen`}
+        aria-label={t('lobby.player.removeAria', { name })}
+        title={t('lobby.player.removeAria', { name })}
       >
         ✕
       </button>

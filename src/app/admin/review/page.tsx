@@ -12,7 +12,14 @@
  *  - Vollexport: komplettes Pack als JSON herunterladen
  */
 
-import { useState, useMemo, useCallback, useEffect, type ReactNode } from 'react';
+import {
+  useState,
+  useMemo,
+  useCallback,
+  useEffect,
+  type ReactNode,
+} from 'react';
+import { useTranslation } from 'react-i18next';
 import type { PhomuSong } from '@/types/song';
 import { ALL_SONGS, AVAILABLE_PACKS } from '@/data/songs';
 
@@ -45,7 +52,11 @@ function isComplete(song: PhomuSong): boolean {
 }
 
 function hasYoutube(song: PhomuSong): boolean {
-  return !!(song.links.youtube && !song.links.youtube.startsWith('TODO') && song.links.youtube !== '');
+  return !!(
+    song.links.youtube &&
+    !song.links.youtube.startsWith('TODO') &&
+    song.links.youtube !== ''
+  );
 }
 
 function hasHints(song: PhomuSong): boolean {
@@ -88,10 +99,12 @@ function mergeSong(baseline: PhomuSong, edits: Edits): PhomuSong {
 // ─── Unterkomponenten ─────────────────────────────────────────────────────────
 
 function StatusDot({ ok }: { ok: boolean }) {
+  const { t } = useTranslation();
+
   return (
     <span
       className={`inline-block w-2 h-2 rounded-full ${ok ? 'bg-green-500' : 'bg-gray-300'}`}
-      title={ok ? 'vorhanden' : 'fehlt'}
+      title={ok ? t('admin.review.present') : t('admin.review.missing')}
     />
   );
 }
@@ -111,7 +124,9 @@ function Badge({
     orange: 'bg-orange-100 text-orange-700',
   }[color];
   return (
-    <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${cls}`}>
+    <span
+      className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${cls}`}
+    >
       {children}
     </span>
   );
@@ -128,8 +143,11 @@ function InlineEditor({
   onSave: (id: string, delta: Partial<PhomuSong>) => void;
   onClose: () => void;
 }) {
+  const { t } = useTranslation();
   const [youtube, setYoutube] = useState(song.links.youtube ?? '');
-  const [difficulty, setDifficulty] = useState<PhomuSong['difficulty']>(song.difficulty);
+  const [difficulty, setDifficulty] = useState<PhomuSong['difficulty']>(
+    song.difficulty
+  );
   const [isOneHitWonder, setIsOneHitWonder] = useState(song.isOneHitWonder);
   const [country, setCountry] = useState(song.country);
   const [genre, setGenre] = useState(song.genre);
@@ -155,19 +173,19 @@ function InlineEditor({
           {/* YouTube */}
           <div>
             <label className="block text-xs font-semibold text-gray-600 mb-1">
-              YouTube-ID / URL
+              {t('admin.review.fieldYoutube')}
             </label>
             <input
               value={youtube}
               onChange={(e) => setYoutube(e.target.value)}
-              placeholder="z. B. dQw4w9WgXcQ"
+              placeholder={t('admin.review.youtubePlaceholder')}
               className="w-full border border-gray-300 rounded px-2 py-1 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
           {/* Country */}
           <div>
             <label className="block text-xs font-semibold text-gray-600 mb-1">
-              Land (ISO)
+              {t('admin.review.fieldCountry')}
             </label>
             <input
               value={country}
@@ -179,7 +197,9 @@ function InlineEditor({
           </div>
           {/* Genre */}
           <div>
-            <label className="block text-xs font-semibold text-gray-600 mb-1">Genre</label>
+            <label className="block text-xs font-semibold text-gray-600 mb-1">
+              {t('admin.review.fieldGenre')}
+            </label>
             <input
               value={genre}
               onChange={(e) => setGenre(e.target.value)}
@@ -189,16 +209,20 @@ function InlineEditor({
           {/* Difficulty */}
           <div>
             <label className="block text-xs font-semibold text-gray-600 mb-1">
-              Schwierigkeit
+              {t('admin.review.fieldDifficulty')}
             </label>
             <select
               value={difficulty}
-              onChange={(e) => setDifficulty(e.target.value as PhomuSong['difficulty'])}
+              onChange={(e) =>
+                setDifficulty(e.target.value as PhomuSong['difficulty'])
+              }
               className="w-full border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
+              <option value="easy">{t('admin.review.difficultyEasy')}</option>
+              <option value="medium">
+                {t('admin.review.difficultyMedium')}
+              </option>
+              <option value="hard">{t('admin.review.difficultyHard')}</option>
             </select>
           </div>
           {/* OneHitWonder */}
@@ -211,18 +235,20 @@ function InlineEditor({
               className="w-4 h-4 accent-blue-600"
             />
             <label htmlFor={`ohw-${song.id}`} className="text-sm text-gray-700">
-              One-Hit-Wonder
+              {t('admin.review.fieldOneHitWonder')}
             </label>
           </div>
           {/* Hints */}
           <div className="col-span-2">
             <label className="block text-xs font-semibold text-gray-600 mb-1">
-              Hints (Level 1 = schwer → Level 5 = leicht)
+              {t('admin.review.fieldHints')}
             </label>
             <div className="space-y-1">
               {hints.map((h, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <span className="text-xs text-gray-400 w-6 shrink-0">L{i + 1}</span>
+                  <span className="text-xs text-gray-400 w-6 shrink-0">
+                    {t('admin.review.hintPlaceholder', { level: i + 1 })}
+                  </span>
                   <input
                     value={h}
                     onChange={(e) => {
@@ -230,7 +256,9 @@ function InlineEditor({
                       next[i] = e.target.value;
                       setHints(next);
                     }}
-                    placeholder={`Hint Ebene ${i + 1}`}
+                    placeholder={t('admin.review.hintPlaceholder', {
+                      level: i + 1,
+                    })}
                     className="flex-1 border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
                 </div>
@@ -243,13 +271,13 @@ function InlineEditor({
             onClick={handleSave}
             className="px-4 py-1.5 bg-blue-600 text-white text-sm rounded font-semibold hover:bg-blue-700"
           >
-            Speichern
+            {t('common.save')}
           </button>
           <button
             onClick={onClose}
             className="px-4 py-1.5 border border-gray-300 text-gray-600 text-sm rounded hover:bg-gray-50"
           >
-            Abbrechen
+            {t('common.cancel')}
           </button>
         </div>
       </td>
@@ -276,6 +304,7 @@ function SongRow({
   onClose: () => void;
   onClearEdit: () => void;
 }) {
+  const { t } = useTranslation();
   const complete = isComplete(song);
   const yt = hasYoutube(song);
   const hints = hasHints(song);
@@ -292,31 +321,44 @@ function SongRow({
         <td className="px-3 py-2 font-medium text-gray-900 max-w-[160px] truncate">
           {song.artist}
         </td>
-        <td className="px-3 py-2 text-gray-700 max-w-[220px] truncate" title={song.title}>
+        <td
+          className="px-3 py-2 text-gray-700 max-w-[220px] truncate"
+          title={song.title}
+        >
           {song.title}
         </td>
-        <td className="px-3 py-2 text-gray-500 text-xs max-w-[120px] truncate" title={song.packs.join(', ')}>
+        <td
+          className="px-3 py-2 text-gray-500 text-xs max-w-[120px] truncate"
+          title={song.packs.join(', ')}
+        >
           {song.packs[0]}
-          {song.packs.length > 1 && ` (+${song.packs.length - 1})`}
+          {song.packs.length > 1 &&
+            ` ${t('admin.review.additionalPacks', { count: song.packs.length - 1 })}`}
         </td>
         <td className="px-3 py-2">
           <div className="flex gap-2 items-center">
-            <span title="YouTube"><StatusDot ok={yt} /></span>
-            <span title="Hints"><StatusDot ok={hints} /></span>
-            <span title="Lyrics"><StatusDot ok={song.lyrics !== null} /></span>
+            <span title={t('admin.review.columnYoutube')}>
+              <StatusDot ok={yt} />
+            </span>
+            <span title={t('admin.review.columnHints')}>
+              <StatusDot ok={hints} />
+            </span>
+            <span title={t('admin.review.columnLyrics')}>
+              <StatusDot ok={song.lyrics !== null} />
+            </span>
           </div>
         </td>
         <td className="px-3 py-2">
           {complete ? (
-            <Badge color="green">Fertig</Badge>
+            <Badge color="green">{t('admin.review.statusComplete')}</Badge>
           ) : stub ? (
-            <Badge color="orange">Stub</Badge>
+            <Badge color="orange">{t('admin.review.statusStub')}</Badge>
           ) : (
-            <Badge color="yellow">Unvollst.</Badge>
+            <Badge color="yellow">{t('admin.review.statusIncomplete')}</Badge>
           )}
           {isModified && (
             <span className="ml-1">
-              <Badge color="blue">Geändert</Badge>
+              <Badge color="blue">{t('admin.review.statusModified')}</Badge>
             </span>
           )}
         </td>
@@ -326,13 +368,13 @@ function SongRow({
               onClick={onEdit}
               className="px-2 py-0.5 text-xs border border-blue-300 text-blue-700 rounded hover:bg-blue-50"
             >
-              {isEditing ? 'Schließen' : 'Bearbeiten'}
+              {isEditing ? t('common.close') : t('admin.review.edit')}
             </button>
             {isModified && (
               <button
                 onClick={onClearEdit}
                 className="px-2 py-0.5 text-xs border border-gray-300 text-gray-500 rounded hover:bg-gray-50"
-                title="Lokale Änderung zurücksetzen"
+                title={t('admin.review.resetEditTitle')}
               >
                 ×
               </button>
@@ -350,6 +392,7 @@ function SongRow({
 // ─── Haupt-Seite ───────────────────────────────────────────────────────────────
 
 export default function AdminReviewPage() {
+  const { t, i18n } = useTranslation();
   const [edits, setEdits] = useState<Edits>({});
   const [editingId, setEditingId] = useState<string | null>(null);
   const [sortField, setSortField] = useState<SortField>('year');
@@ -365,10 +408,7 @@ export default function AdminReviewPage() {
   }, []);
 
   // All available packs
-  const availablePacks = useMemo(
-    () => AVAILABLE_PACKS.sort(),
-    []
-  );
+  const availablePacks = useMemo(() => AVAILABLE_PACKS.sort(), []);
 
   // Merged songs (baseline + edits)
   const mergedSongs = useMemo(
@@ -380,12 +420,15 @@ export default function AdminReviewPage() {
   const displaySongs = useMemo(() => {
     let list = mergedSongs;
 
-    if (filterPack !== 'all') list = list.filter((s) => s.packs.includes(filterPack));
+    if (filterPack !== 'all')
+      list = list.filter((s) => s.packs.includes(filterPack));
 
     if (filterStatus === 'complete') list = list.filter(isComplete);
-    else if (filterStatus === 'incomplete') list = list.filter((s) => !isComplete(s));
+    else if (filterStatus === 'incomplete')
+      list = list.filter((s) => !isComplete(s));
     else if (filterStatus === 'stub') list = list.filter(isStub);
-    else if (filterStatus === 'modified') list = list.filter((s) => !!edits[s.id]);
+    else if (filterStatus === 'modified')
+      list = list.filter((s) => !!edits[s.id]);
 
     if (search) {
       const q = search.toLowerCase();
@@ -402,10 +445,19 @@ export default function AdminReviewPage() {
       if (sortField === 'year') cmp = a.year - b.year;
       else if (sortField === 'artist') cmp = a.artist.localeCompare(b.artist);
       else if (sortField === 'title') cmp = a.title.localeCompare(b.title);
-      else if (sortField === 'pack') cmp = (a.packs[0] || '').localeCompare(b.packs[0] || '');
+      else if (sortField === 'pack')
+        cmp = (a.packs[0] || '').localeCompare(b.packs[0] || '');
       return sortDir === 'asc' ? cmp : -cmp;
     });
-  }, [mergedSongs, edits, filterPack, filterStatus, search, sortField, sortDir]);
+  }, [
+    mergedSongs,
+    edits,
+    filterPack,
+    filterStatus,
+    search,
+    sortField,
+    sortDir,
+  ]);
 
   // Stats
   const stats = useMemo(() => {
@@ -420,15 +472,18 @@ export default function AdminReviewPage() {
   }, [mergedSongs, edits]);
 
   // Save edit
-  const handleSave = useCallback((id: string, delta: Partial<PhomuSong>) => {
-    setEdits((prev) => {
-      const next = { ...prev, [id]: delta };
-      saveEdits(next);
-      return next;
-    });
-    setSavedMsg('Änderung gespeichert');
-    setTimeout(() => setSavedMsg(''), 2500);
-  }, []);
+  const handleSave = useCallback(
+    (id: string, delta: Partial<PhomuSong>) => {
+      setEdits((prev) => {
+        const next = { ...prev, [id]: delta };
+        saveEdits(next);
+        return next;
+      });
+      setSavedMsg(t('admin.review.savedMessage'));
+      setTimeout(() => setSavedMsg(''), 2500);
+    },
+    [t]
+  );
 
   // Clear single edit
   const handleClearEdit = useCallback((id: string) => {
@@ -460,7 +515,7 @@ export default function AdminReviewPage() {
   function handleExportDelta() {
     const changedIds = Object.keys(edits);
     if (changedIds.length === 0) {
-      alert('Keine lokalen Änderungen vorhanden.');
+      alert(t('admin.review.noChangesAlert'));
       return;
     }
 
@@ -470,7 +525,7 @@ export default function AdminReviewPage() {
       if (edits[s.id]) {
         // Delta export should probably go into all its packs or just a "review" pack.
         // For simplicity, we'll keep the first pack as the target for the delta.
-        const targetPack = s.packs[0] || 'Unassigned';
+        const targetPack = s.packs[0] || t('admin.review.unassigned');
         if (!byPack[targetPack]) byPack[targetPack] = [];
         byPack[targetPack].push(s);
       }
@@ -506,7 +561,11 @@ export default function AdminReviewPage() {
       },
       songs,
     };
-    const filename = packName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') + '-export.json';
+    const filename =
+      packName
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-]/g, '') + '-export.json';
     downloadJson(exportData, filename);
   }
 
@@ -538,14 +597,17 @@ export default function AdminReviewPage() {
 
   // Reset all edits
   function handleResetAll() {
-    if (!confirm('Alle lokalen Änderungen verwerfen?')) return;
+    if (!confirm(t('admin.review.resetConfirm'))) return;
     setEdits({});
     saveEdits({});
-    setSavedMsg('Alle Änderungen zurückgesetzt');
+    setSavedMsg(t('admin.review.resetMessage'));
     setTimeout(() => setSavedMsg(''), 2500);
   }
 
   // ─── Render ───────────────────────────────────────────────────────────────────
+
+  // Zahlen werden lokalisiert formatiert (Intl, aktive Sprache)
+  const numberFormat = new Intl.NumberFormat(i18n.language);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -553,9 +615,11 @@ export default function AdminReviewPage() {
       <header className="bg-white border-b border-gray-200 px-6 py-4 sticky top-0 z-10">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between flex-wrap gap-3">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">Phomu Admin – Song-Review</h1>
+            <h1 className="text-2xl font-bold text-gray-900">
+              {t('admin.review.title')}
+            </h1>
             <p className="text-sm text-gray-500 mt-0.5">
-              Songs prüfen, bearbeiten und Änderungen exportieren
+              {t('admin.review.subtitle')}
             </p>
           </div>
           <div className="flex gap-2 flex-wrap items-center">
@@ -569,7 +633,7 @@ export default function AdminReviewPage() {
                 onClick={handleResetAll}
                 className="px-3 py-1.5 text-sm border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50"
               >
-                ↺ Reset ({stats.modified})
+                {t('admin.review.resetButton', { count: stats.modified })}
               </button>
             )}
             <button
@@ -579,16 +643,16 @@ export default function AdminReviewPage() {
                   ? 'bg-amber-500 text-white hover:bg-amber-600'
                   : 'bg-gray-100 text-gray-400 cursor-not-allowed'
               }`}
-              title="Nur die lokal geänderten Songs exportieren"
+              title={t('admin.review.exportDeltaTitle')}
             >
-              ⬇ Delta ({stats.modified})
+              {t('admin.review.deltaButton', { count: stats.modified })}
             </button>
             <button
               onClick={handleExportAll}
               className="px-3 py-1.5 text-sm bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors"
-              title="Alle Songs aller Packs exportieren"
+              title={t('admin.review.exportAllTitle')}
             >
-              ⬇ Alle Songs
+              {t('admin.review.exportAllButton')}
             </button>
           </div>
         </div>
@@ -598,15 +662,42 @@ export default function AdminReviewPage() {
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
           {[
-            { label: 'Songs gesamt', value: stats.total, color: 'text-gray-900' },
-            { label: 'Vollständig', value: `${stats.complete} / ${stats.total}`, color: 'text-green-700' },
-            { label: 'YouTube OK', value: `${stats.withYT} / ${stats.total}`, color: 'text-blue-700' },
-            { label: 'Stubs (leer)', value: stats.stubs, color: 'text-orange-600' },
-            { label: 'Geändert', value: stats.modified, color: 'text-amber-700' },
+            {
+              label: t('admin.review.statTotal'),
+              value: numberFormat.format(stats.total),
+              color: 'text-gray-900',
+            },
+            {
+              label: t('admin.review.statComplete'),
+              value: `${numberFormat.format(stats.complete)} / ${numberFormat.format(stats.total)}`,
+              color: 'text-green-700',
+            },
+            {
+              label: t('admin.review.statYoutube'),
+              value: `${numberFormat.format(stats.withYT)} / ${numberFormat.format(stats.total)}`,
+              color: 'text-blue-700',
+            },
+            {
+              label: t('admin.review.statStubs'),
+              value: numberFormat.format(stats.stubs),
+              color: 'text-orange-600',
+            },
+            {
+              label: t('admin.review.statModified'),
+              value: numberFormat.format(stats.modified),
+              color: 'text-amber-700',
+            },
           ].map((stat) => (
-            <div key={stat.label} className="bg-white rounded-xl border border-gray-200 p-4">
-              <p className="text-xs text-gray-500 uppercase font-semibold">{stat.label}</p>
-              <p className={`text-2xl font-bold mt-1 ${stat.color}`}>{stat.value}</p>
+            <div
+              key={stat.label}
+              className="bg-white rounded-xl border border-gray-200 p-4"
+            >
+              <p className="text-xs text-gray-500 uppercase font-semibold">
+                {stat.label}
+              </p>
+              <p className={`text-2xl font-bold mt-1 ${stat.color}`}>
+                {stat.value}
+              </p>
             </div>
           ))}
         </div>
@@ -615,7 +706,7 @@ export default function AdminReviewPage() {
         <div className="flex flex-wrap gap-3 mb-4">
           <input
             type="search"
-            placeholder="Suche nach Titel, Artist, ID…"
+            placeholder={t('admin.review.searchPlaceholder')}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 min-w-[200px] border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -625,18 +716,20 @@ export default function AdminReviewPage() {
             onChange={(e) => setFilterStatus(e.target.value as FilterStatus)}
             className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            <option value="all">Alle Status</option>
-            <option value="stub">Stubs (leer)</option>
-            <option value="incomplete">Unvollständig</option>
-            <option value="complete">Fertig</option>
-            <option value="modified">Geändert (lokal)</option>
+            <option value="all">{t('admin.review.filterAllStatus')}</option>
+            <option value="stub">{t('admin.review.filterStub')}</option>
+            <option value="incomplete">
+              {t('admin.review.filterIncomplete')}
+            </option>
+            <option value="complete">{t('admin.review.filterComplete')}</option>
+            <option value="modified">{t('admin.review.filterModified')}</option>
           </select>
           <select
             value={filterPack}
             onChange={(e) => setFilterPack(e.target.value)}
             className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 max-w-[260px]"
           >
-            <option value="all">Alle Packs</option>
+            <option value="all">{t('admin.review.filterAllPacks')}</option>
             {availablePacks.map((p) => (
               <option key={p} value={p}>
                 {p}
@@ -647,9 +740,9 @@ export default function AdminReviewPage() {
             <button
               onClick={() => handleExportPack(filterPack)}
               className="px-3 py-2 text-sm bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
-              title={`Komplettes Pack "${filterPack}" exportieren`}
+              title={t('admin.review.exportPackTitle', { pack: filterPack })}
             >
-              ⬇ Pack exportieren
+              {t('admin.review.exportPackButton')}
             </button>
           )}
         </div>
@@ -663,38 +756,43 @@ export default function AdminReviewPage() {
                   className="px-3 py-2 cursor-pointer hover:text-gray-800 select-none"
                   onClick={() => handleSort('year')}
                 >
-                  Jahr <SortIcon field="year" />
+                  {t('admin.review.columnYear')} <SortIcon field="year" />
                 </th>
                 <th
                   className="px-3 py-2 cursor-pointer hover:text-gray-800 select-none"
                   onClick={() => handleSort('artist')}
                 >
-                  Artist <SortIcon field="artist" />
+                  {t('admin.review.columnArtist')} <SortIcon field="artist" />
                 </th>
                 <th
                   className="px-3 py-2 cursor-pointer hover:text-gray-800 select-none"
                   onClick={() => handleSort('title')}
                 >
-                  Titel <SortIcon field="title" />
+                  {t('admin.review.columnTitle')} <SortIcon field="title" />
                 </th>
                 <th
                   className="px-3 py-2 cursor-pointer hover:text-gray-800 select-none"
                   onClick={() => handleSort('pack')}
                 >
-                  Pack <SortIcon field="pack" />
+                  {t('admin.review.columnPack')} <SortIcon field="pack" />
                 </th>
                 <th className="px-3 py-2">
-                  <span title="YouTube · Hints · Lyrics">YT·H·L</span>
+                  <span title={t('admin.review.columnYoutube')}>
+                    {t('admin.review.columnMedia')}
+                  </span>
                 </th>
-                <th className="px-3 py-2">Status</th>
-                <th className="px-3 py-2">Aktion</th>
+                <th className="px-3 py-2">{t('admin.review.columnStatus')}</th>
+                <th className="px-3 py-2">{t('admin.review.columnAction')}</th>
               </tr>
             </thead>
             <tbody>
               {displaySongs.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="px-4 py-10 text-center text-gray-400 text-sm">
-                    Keine Songs gefunden.
+                  <td
+                    colSpan={7}
+                    className="px-4 py-10 text-center text-gray-400 text-sm"
+                  >
+                    {t('admin.review.noSongs')}
                   </td>
                 </tr>
               ) : (
@@ -704,7 +802,9 @@ export default function AdminReviewPage() {
                     song={song}
                     isModified={!!edits[song.id]}
                     isEditing={editingId === song.id}
-                    onEdit={() => setEditingId(editingId === song.id ? null : song.id)}
+                    onEdit={() =>
+                      setEditingId(editingId === song.id ? null : song.id)
+                    }
                     onSave={handleSave}
                     onClose={() => setEditingId(null)}
                     onClearEdit={() => handleClearEdit(song.id)}
@@ -715,16 +815,20 @@ export default function AdminReviewPage() {
           </table>
           <div className="px-4 py-2 border-t border-gray-100 text-xs text-gray-400 flex items-center justify-between">
             <span>
-              {displaySongs.length} von {mergedSongs.length} Songs
+              {t('admin.review.songCount', {
+                count: displaySongs.length,
+                shown: displaySongs.length,
+                total: mergedSongs.length,
+              })}
             </span>
             <span className="flex gap-4">
               <span>
                 <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-1" />
-                vorhanden
+                {t('admin.review.present')}
               </span>
               <span>
                 <span className="inline-block w-2 h-2 rounded-full bg-gray-300 mr-1" />
-                fehlt
+                {t('admin.review.missing')}
               </span>
             </span>
           </div>
@@ -733,20 +837,24 @@ export default function AdminReviewPage() {
         {/* Legende */}
         <div className="mt-4 flex flex-wrap gap-3 text-xs text-gray-500">
           <span className="flex items-center gap-1">
-            <Badge color="orange">Stub</Badge> Neu hinzugefügt, noch leer
+            <Badge color="orange">{t('admin.review.statusStub')}</Badge>{' '}
+            {t('admin.review.legendStub')}
           </span>
           <span className="flex items-center gap-1">
-            <Badge color="yellow">Unvollst.</Badge> Teilweise ausgefüllt
+            <Badge color="yellow">{t('admin.review.statusIncomplete')}</Badge>{' '}
+            {t('admin.review.legendIncomplete')}
           </span>
           <span className="flex items-center gap-1">
-            <Badge color="green">Fertig</Badge> YouTube + Hints + Lyrics vorhanden
+            <Badge color="green">{t('admin.review.statusComplete')}</Badge>{' '}
+            {t('admin.review.legendComplete')}
           </span>
           <span className="flex items-center gap-1">
-            <Badge color="blue">Geändert</Badge> Lokale Änderung (noch nicht im Repo)
+            <Badge color="blue">{t('admin.review.statusModified')}</Badge>{' '}
+            {t('admin.review.legendModified')}
           </span>
           <span className="ml-auto">
-            <strong>Delta-Export</strong>: Nur lokal geänderte Songs → als JSON herunterladen →
-            in Repo einfügen
+            <strong>{t('admin.review.legendExportLabel')}</strong>{' '}
+            {t('admin.review.legendExport')}
           </span>
         </div>
       </div>
