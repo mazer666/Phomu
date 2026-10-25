@@ -1,0 +1,10 @@
+
+> phomu@0.1.0 lint
+> eslint .
+
+
+/run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/repos/Phomu-measure/playwright.config.ts
+  1:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+✖ 1 problem (0 errors, 1 warning)
+

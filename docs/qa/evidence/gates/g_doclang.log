@@ -1,0 +1,6 @@
+
+> phomu@0.1.0 check:doc-language
+> node scripts/check-doc-language.mjs
+
+
+Markdown files checked: 53 — findings: 0

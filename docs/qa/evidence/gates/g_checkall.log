@@ -1,0 +1,71 @@
+
+> phomu@0.1.0 check:all
+> node scripts/check-all.mjs
+
+
+========================================================================
+GATE: i18n completeness  (scripts/check-i18n-completeness.mjs)
+========================================================================
+=== i18n completeness gate ===
+OK — no violations.
+Literal texts in checked TSX files: 0
+TSX files checked: 48
+
+========================================================================
+GATE: Doc link check  (scripts/check-doc-links.mjs)
+========================================================================
+Phomu quality gate: doc link check
+Scanned tree: /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/repos/Phomu-measure
+Markdown files checked: 70
+✅ No dead links found.
+
+========================================================================
+GATE: File size  (scripts/check-file-size.mjs)
+========================================================================
+Phomu quality gate: file size
+Source files checked under src/: 90
+Limits: target 400 lines (warning), maximum 550 lines (error)
+
+Skipped (generated): 2
+   src/data/songs/index.ts (297 lines, generated)
+   src/i18n/variant-keys.ts (492 lines, generated)
+
+Known legacy files (documented exceptions): 8
+   src/app/admin/review/page.tsx: 863 lines — known legacy file above 550 (exception, refactoring still open: Admin review page (GAP-007): split into song list + editor) — +108 lines versus the exception state (755)
+   src/app/browse/page.tsx: 767 lines — known legacy file above 550 (exception, refactoring still open: Browse page (GAP-007): separate search field, list and filters) — +195 lines versus the exception state (572)
+   src/app/lobby/page.tsx: 1050 lines — known legacy file above 550 (exception, refactoring still open: Lobby page (GAP-007): split into lobby, player list, mode selection) — +306 lines versus the exception state (744)
+   src/components/game/MusicPlayer.tsx: 783 lines — known legacy file above 550 (exception, refactoring still open: MusicPlayer (GAP-007): extract the provider adapter) — +153 lines versus the exception state (630)
+   src/components/game/RevealPhase.tsx: 697 lines — known legacy file above 550 (exception, refactoring still open: Reveal phase (GAP-007): separate logic and rendering) — +26 lines versus the exception state (671)
+   src/components/game/modes/TimelineMode.tsx: 680 lines — known legacy file above 550 (exception, refactoring still open: Timeline mode (GAP-007): separate mode logic and UI) — +101 lines versus the exception state (579)
+   src/stores/game-store.ts: 640 lines — known legacy file above 550 (exception, refactoring still open: State store (GAP-007): split into sub-stores) — state unchanged
+   src/utils/validate-song-data.ts: 817 lines — known legacy file above 550 (exception, refactoring still open: Schema and limit checks (GAP-007): split into schema, limit and catalog validation) — +315 lines versus the exception state (502)
+
+⚠️  10 warning(s):
+   src/app/admin/review/page.tsx: 863 lines — above the hard limit (550) and 108 lines more than the recorded exception state (755) — backlog is growing, refactoring still open: Admin review page (GAP-007): split into song list + editor
+   src/app/admin/songs/page.tsx: 544 lines — above the soft target (400) by 144 lines
+   src/app/browse/page.tsx: 767 lines — above the hard limit (550) and 195 lines more than the recorded exception state (572) — backlog is growing, refactoring still open: Browse page (GAP-007): separate search field, list and filters
+   src/app/game/page.tsx: 521 lines — above the soft target (400) by 121 lines
+   src/app/lobby/page.tsx: 1050 lines — above the hard limit (550) and 306 lines more than the recorded exception state (744) — backlog is growing, refactoring still open: Lobby page (GAP-007): split into lobby, player list, mode selection
+   src/app/projector/page.tsx: 434 lines — above the soft target (400) by 34 lines
+   src/components/game/MusicPlayer.tsx: 783 lines — above the hard limit (550) and 153 lines more than the recorded exception state (630) — backlog is growing, refactoring still open: MusicPlayer (GAP-007): extract the provider adapter
+   src/components/game/RevealPhase.tsx: 697 lines — above the hard limit (550) and 26 lines more than the recorded exception state (671) — backlog is growing, refactoring still open: Reveal phase (GAP-007): separate logic and rendering
+   src/components/game/modes/TimelineMode.tsx: 680 lines — above the hard limit (550) and 101 lines more than the recorded exception state (579) — backlog is growing, refactoring still open: Timeline mode (GAP-007): separate mode logic and UI
+   src/utils/validate-song-data.ts: 817 lines — above the hard limit (550) and 315 lines more than the recorded exception state (502) — backlog is growing, refactoring still open: Schema and limit checks (GAP-007): split into schema, limit and catalog validation
+
+✅ Gate passed — 0 errors, 10 warning(s), 8 known legacy file(s).
+
+========================================================================
+GATE: Documentation language  (scripts/check-doc-language.mjs)
+========================================================================
+
+Markdown files checked: 53 — findings: 0
+
+========================================================================
+SUMMARY OF THE QUALITY GATES
+========================================================================
+  [PASS] i18n completeness (exit code 0)
+  [PASS] Doc link check (exit code 0)
+  [PASS] File size (exit code 0)
+  [PASS] Documentation language (exit code 0)
+
+✅ All 4 gates passed.

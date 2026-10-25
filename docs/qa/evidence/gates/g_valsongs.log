@@ -1,0 +1,18 @@
+
+> phomu@0.1.0 validate-songs
+> npx tsx src/utils/validate-song-data.ts
+
+Lese Datei: /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/repos/Phomu-measure/src/data/songs/A1.json
+
+[1m🎵 Phomu Song-Validierung[0m
+[2mFile: Unbekanntes Pack[0m
+────────────────────────────────────────────────────────────
+
+📊 Zusammenfassung:
+   Gesamt:       12 Songs
+   Gültig:       [32m12[0m / 12
+   Vollständig:  [32m12[0m / 12
+
+────────────────────────────────────────────────────────────
+[32m✓ Alle Songs sind gültig![0m
+

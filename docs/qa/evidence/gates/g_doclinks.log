@@ -1,0 +1,8 @@
+
+> phomu@0.1.0 check:doc-links
+> node scripts/check-doc-links.mjs
+
+Phomu quality gate: doc link check
+Scanned tree: /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/repos/Phomu-measure
+Markdown files checked: 70
+✅ No dead links found.

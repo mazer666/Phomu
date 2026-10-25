@@ -1,0 +1,13 @@
+npm warn deprecated ytsr@3.8.4: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+> phomu@0.1.0 postinstall
+> node scripts/setup-git-hooks.js
+
+Setting up Git hooks for Phomu...
+❌ Failed to create .git/hooks directory: ENOTDIR: not a directory, mkdir '/run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/repos/Phomu-measure/.git/hooks'
+npm error code 1
+npm error path /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/repos/Phomu-measure
+npm error command failed
+npm error command sh -c node scripts/setup-git-hooks.js
+npm error A complete log of this run can be found in: /workspace/.home/.npm/_logs/2026-10-25T11_50_00_047Z-debug-0.log
+EXIT=1

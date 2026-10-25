@@ -1,0 +1,8 @@
+
+> phomu@0.1.0 check:i18n
+> node scripts/check-i18n-completeness.mjs
+
+=== i18n completeness gate ===
+OK — no violations.
+Literal texts in checked TSX files: 0
+TSX files checked: 48

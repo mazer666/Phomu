@@ -1,0 +1,15 @@
+
+> phomu@0.1.0 validate-catalog
+> npx tsx src/utils/validate-song-catalog.ts
+
+🎛️  Phomu Katalog-Qualitätsgate
+Packs: 135
+Songs: 1615
+Schema-Fehler: 0
+Schema-Warnungen: 126
+Duplicate-Gruppen: 0
+Erlaubte Dubletten (Allowlist): 4
+Ignorierte Secondary-Dubletten: 0
+Fehlende Jahre (1950-2026): 0
+
+✅ Katalog-Gate bestanden (keine Regression gegen Baseline).

@@ -1,0 +1,52 @@
+
+> phomu@0.1.0 build
+> next build
+
+▲ Next.js 16.4.3 (Turbopack)
+⚠ Specified "headers" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+✓ Running next.config.ts took 575ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 31.6s
+  Running TypeScript ...
+  Finished TypeScript in 28.2s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/21) ...
+  Generating static pages using 1 worker (5/21) 
+  Generating static pages using 1 worker (10/21) 
+  Generating static pages using 1 worker (15/21) 
+✓ Generating static pages using 1 worker (21/21) in 1768ms
+  Finalizing page optimization ...
+⚠ rewrites, redirects, and headers are not applied when exporting your application, detected (headers). See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /admin/review
+├ ○ /admin/songs
+├ ○ /apple-icon.png
+├ ○ /browse
+├ ○ /game
+├ ○ /game-over
+├ ○ /guide
+├ ○ /icon.png
+├ ○ /lobby
+├ ○ /privacy
+├ ○ /projector
+├ ○ /settings
+├ ○ /settings/account
+├ ○ /settings/audio
+├ ○ /settings/game-rules
+├ ○ /settings/governance
+├ ○ /settings/profile
+└ ○ /terms
+
+
+○  (Static)  prerendered as static content
+
+EXIT=0
