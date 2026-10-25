@@ -30,7 +30,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=9mMNnfh2vGo"
+        "youtube": "https://www.youtube.com/watch?v=9mMNnfh2vGo",
+        "spotify": "https://open.spotify.com/track/2w780pCHPCVOVo32GxSeXp",
+        "amazonMusic": "https://music.amazon.com/tracks/B0FNS3Y35M"
       },
       "supportedModes": [
         "timeline",
@@ -85,7 +87,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=HBGnU4Q5pRg"
+        "youtube": "https://www.youtube.com/watch?v=HBGnU4Q5pRg",
+        "spotify": "https://open.spotify.com/track/5RrSsFmFQSduqROoydKvmq",
+        "amazonMusic": "https://music.amazon.com/tracks/B003A9GH9G"
       },
       "supportedModes": [
         "timeline",
@@ -140,7 +144,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=haECT-SerHk"
+        "youtube": "https://www.youtube.com/watch?v=haECT-SerHk",
+        "spotify": "https://open.spotify.com/track/4ApkMDSR5HORKLRNwt2xhb",
+        "amazonMusic": "https://music.amazon.com/tracks/B00H4OZF82"
       },
       "supportedModes": [
         "timeline",
@@ -196,7 +202,8 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=gmvFLIuVAbA"
+        "youtube": "https://www.youtube.com/watch?v=gmvFLIuVAbA",
+        "spotify": "https://open.spotify.com/track/4lbPwb1Beo7JU2VwuJRTeR"
       },
       "supportedModes": [
         "timeline",
@@ -358,7 +365,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=wDoDYEFIMas",
-        "spotify": "https://open.spotify.com/track/0juPSJLFnLFim7BK6VzTes"
+        "spotify": "https://open.spotify.com/track/0juPSJLFnLFim7BK6VzTes",
+        "amazonMusic": "https://music.amazon.com/tracks/B00R96S2K8"
       },
       "coverUrl": "/covers/score-henry-panther.jpg",
       "supportedModes": [
@@ -415,7 +423,9 @@
         "youtube": "https://www.youtube.com/watch?v=QvUxi7X6lBg",
         "youtubeAlternatives": [
           "https://www.youtube.com/watch?v=_IZsxfo8ITw"
-        ]
+        ],
+        "spotify": "https://open.spotify.com/track/2PfEAFaaLabTXfmlV58LIj",
+        "amazonMusic": "https://music.amazon.com/tracks/B07CJYL29N"
       },
       "coverUrl": "/covers/german-groenemeyer-maenner.jpg",
       "supportedModes": [
@@ -463,7 +473,9 @@
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=otFVFLtRF_s"
+        "youtube": "https://www.youtube.com/watch?v=otFVFLtRF_s",
+        "spotify": "https://open.spotify.com/track/0IMMvCEW3pEoZDHN62wAnS",
+        "amazonMusic": "https://music.amazon.com/tracks/B000SZFFRA"
       },
       "supportedModes": [
         "cover-confusion",
@@ -517,7 +529,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=fV4DiAyExN0"
+        "youtube": "https://www.youtube.com/watch?v=fV4DiAyExN0",
+        "spotify": "https://open.spotify.com/track/58AwxWLaRHn2lTqqH9dLkU",
+        "amazonMusic": "https://music.amazon.com/tracks/B07NRTBRXY"
       },
       "supportedModes": [
         "timeline",
@@ -621,7 +635,9 @@
       "lyrics": null,
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=mKf1x3CALAE"
+        "youtube": "https://www.youtube.com/watch?v=mKf1x3CALAE",
+        "spotify": "https://open.spotify.com/track/1CDBaGlisZlOJzvx88lL8A",
+        "amazonMusic": "https://music.amazon.com/tracks/B000TE30HW"
       },
       "supportedModes": [
         "cover-confusion",
@@ -676,7 +692,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=XhzpxjuwZy0",
         "spotify": "https://open.spotify.com/track/6JymsaWDHk2Yj4e0yNBIFH",
-        "amazonMusic": "https://music.amazon.com/albums/B0766VVSR4?trackAsin=B0766P5HWK"
+        "amazonMusic": "https://music.amazon.com/tracks/B0766P5HWK"
       },
       "coverUrl": "/covers/hiphop-houseofpain-jump.jpg",
       "supportedModes": [

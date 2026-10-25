@@ -94,7 +94,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=tATPzYQC4Oo",
         "spotify": "https://open.spotify.com/track/7lyarQsQCt9chiplvFWoNJ",
-        "amazonMusic": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0D3M67C67",
         "fallbackYoutubeId": "2sevsQORWME"
       },
       "supportedModes": [
@@ -211,7 +211,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=ruAi4VBoBSM",
         "spotify": "https://open.spotify.com/track/10yY7i70r9wtllofw0GIpx",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B000SX8D6W"
       },
       "coverUrl": "/covers/disco-fatboy-praise.jpg",
       "supportedModes": [
@@ -268,7 +268,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=ub747pprmJ8",
         "spotify": "https://open.spotify.com/track/2y46a3OM1iEwIdHaArRf32",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B000SYYWV6"
       },
       "coverUrl": "/covers/electro-fatboy-righthere.jpg",
       "supportedModes": [
@@ -324,7 +324,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=FMrIy9zm7QY",
         "spotify": "https://open.spotify.com/track/6uJrLZzBxS4JewGnihjNzM",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B000SXBSV4"
       },
       "coverUrl": "/covers/fatboy-slim-the-rockafeller-skank-single.jpg",
       "supportedModes": [
@@ -380,8 +380,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=YBTLqg4iTrg",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/0w7JPlp7eEQI2EKW3ayXrv",
+        "amazonMusic": "https://music.amazon.com/tracks/B0BN9NHJMW"
       },
       "supportedModes": [
         "timeline",
@@ -492,8 +492,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=MCUZzNX6tys",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/6mMUoEgOl1yuGMJ6dfHzh6",
+        "amazonMusic": "https://music.amazon.com/tracks/B073TC71T9"
       },
       "supportedModes": [
         "timeline",
@@ -605,8 +605,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=RHR0tKRxiyY",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/5rkaipGsbnd4eZTPx33NHt",
+        "amazonMusic": "https://music.amazon.com/tracks/B073Q2THJN"
       },
       "supportedModes": [
         "timeline",
@@ -661,8 +661,8 @@
       },
       "links": {
         "youtube": "https://www.youtube.com/watch?v=tcV7VN3l3bY",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/0llxnKwB2eKrVEUxBWuHgR",
+        "amazonMusic": "https://music.amazon.com/tracks/B0FR8XWX12"
       },
       "coverUrl": "/covers/german-fettes-brot-jein.jpg",
       "supportedModes": [
@@ -712,7 +712,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=eRsSxEVmSnw",
         "spotify": "https://open.spotify.com/track/0f2aRDI1S47Wn2NQbCQ7qx",
-        "amazonMusic": "https://music.amazon.com/albums/B01L99EOMU?trackAsin=B01L99EPS8"
+        "amazonMusic": "https://music.amazon.com/tracks/B01L99EPS8"
       },
       "supportedModes": [
         "timeline",

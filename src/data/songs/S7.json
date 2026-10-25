@@ -32,7 +32,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=0-EF60neguk",
         "spotify": "https://open.spotify.com/track/5GHY1DFWKz3Prg2V0Iodqo",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B0B4PVC8TB"
       },
       "coverUrl": "/covers/90s-sinéad-oconnor-nothing-compares.jpg",
       "supportedModes": [
@@ -89,7 +89,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=Ruq33iAxL5k",
         "spotify": "https://open.spotify.com/track/5bA7ihqYlbybYEI2j2Kwfn",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B001W5O292"
       },
       "supportedModes": [
         "timeline",
@@ -147,7 +147,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=37PKcsvD0hg",
         "spotify": "https://open.spotify.com/track/09LikVa6VgPYcsChqn1N0U",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B07TKWYMPB"
       },
       "supportedModes": [
         "timeline",
@@ -205,7 +205,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=uyGY2NfYpeE",
         "spotify": "https://open.spotify.com/track/5IKLwqBQG6KU6MP2zP80Nu",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B002QWMYW2"
       },
       "supportedModes": [
         "timeline",
@@ -320,7 +320,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=hII0JXUJNDo",
         "spotify": "https://open.spotify.com/track/754kgU5rWscRTfvlsuEwFp",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B0CM14X5JQ"
       },
       "coverUrl": "/covers/90s-sixpence-kiss-me.jpg",
       "supportedModes": [
@@ -377,8 +377,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=WSeNSzJ2-Jw",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/4rwpZEcnalkuhPyGkEdhu0",
+        "amazonMusic": "https://music.amazon.com/tracks/B004GGJ8KM"
       },
       "coverUrl": "/covers/disco-skrillex-scary.jpg",
       "supportedModes": [
@@ -436,7 +436,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=CkaE237oiwE",
         "spotify": "https://open.spotify.com/track/01Mpj13vURSO3cCLprPt5T",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B00GBMINM8"
       },
       "supportedModes": [
         "timeline",
@@ -493,8 +493,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=xAUaEfzt_VU",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/2gscB6kDOmrv1P6qs2KXE3",
+        "amazonMusic": "https://music.amazon.com/tracks/B07VRG47Z6"
       },
       "supportedModes": [
         "timeline",
@@ -550,7 +550,7 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=xag5RKD0VHk",
-        "spotify": "",
+        "spotify": "https://open.spotify.com/track/2GVEs1sn5Q1jB1976vQoAX",
         "amazonMusic": ""
       },
       "supportedModes": [
@@ -607,7 +607,7 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=NOa5UOHdwnc",
-        "spotify": "",
+        "spotify": "https://open.spotify.com/track/74iQ3gahRTOGc19bYadBE3",
         "amazonMusic": ""
       },
       "supportedModes": [
@@ -666,8 +666,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=JYIaWeVL1JM",
-        "spotify": "",
-        "amazonMusic": ""
+        "spotify": "https://open.spotify.com/track/5mFQCdbvuzVATC7tP7XsPp",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DZW28SG8"
       },
       "supportedModes": [
         "cover-confusion",
@@ -723,7 +723,9 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=AOBs8dU4Pb8"
+        "youtube": "https://www.youtube.com/watch?v=AOBs8dU4Pb8",
+        "spotify": "https://open.spotify.com/track/6kesIBNAY17BoAz28pnWMC",
+        "amazonMusic": "https://music.amazon.com/tracks/B01AYRVB0G"
       },
       "supportedModes": [
         "timeline",
