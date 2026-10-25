@@ -1,0 +1,82 @@
+  ... 25/250
+  ... 50/250
+  ... 75/250
+  ... 100/250
+  ... 125/250
+  ... 150/250
+  ... 175/250
+  ... 200/250
+  ... 225/250
+  ... 250/250
+── Phomu link verification ──
+catalogue songs        : 1615
+songs in this run      : 250
+duration               : 147s
+cache hits / misses    : 0 / 990
+spotify : checked 245, ok 186, warn 0, mismatch 58, unreachable 1, not checked 5
+amazon  : checked 245, ok 181, warn 21, mismatch 38, unreachable 5, not checked 5
+youtube : checked 250, ok 236, warn 0, mismatch 14, unreachable 0, not checked 0
+songs with a mismatch  : 71
+  - hiphop-warreng-regulate [spotify] "Regulate" / Warren G ft. Nate Dogg: runtime deviation 8.2s > 3s
+  - hiphop-warreng-regulate [amazon] "Regulate" / Warren G ft. Nate Dogg: provider title names a different recording ("Regulate [feat. Nate Dogg] [Explicit]"); runtime deviation 10.2s > 3s
+  - yt-Uq9gPaIzbe8 [spotify] "Unholy" / Sam Smith & Kim Petras: provider title names a different recording ("Unholy (feat. Kim Petras)")
+  - yt-wPA9a2KOZBI [spotify] "Vamo Que Vamo" / Thiaguinho: title-score 0.750 < 0.95
+  - yt-wPA9a2KOZBI [amazon] "Vamo Que Vamo" / Thiaguinho: provider title names a different recording ("Vamo Que Vamo (Ao Vivo)")
+  - score-silvestri-bttf [spotify] "Back to the Future Theme" / Alan Silvestri: title-score 0.400 < 0.95
+  - score-silvestri-bttf [amazon] "Back to the Future Theme" / Alan Silvestri: title-score 0.622 < 0.95
+  - score-silvestri-bttf [youtube] "Back to the Future Theme" / Alan Silvestri: video title ""Suite" - Back to the Future (Alan Silvestri) - Film Symphony Orchestra" does not contain "Back to the Future Theme"
+  - class-beethoven-5 [spotify] "Symphony No. 5 (Fate)" / Ludwig van Beethoven: title-score 0.429 < 0.95
+  - class-beethoven-5 [amazon] "Symphony No. 5 (Fate)" / Ludwig van Beethoven: title-score 0.462 < 0.95
+  - class-beethoven-5 [youtube] "Symphony No. 5 (Fate)" / Ludwig van Beethoven: video title "Beethoven || Symphony No.5 || 432Hz" does not contain "Symphony No. 5 (Fate)"
+  - yt-c-03LZrmMvA [spotify] "Side To Side ft. Nicki Minaj" / Ariana Grande: title-score 0.571 < 0.95
+  - yt-c-03LZrmMvA [amazon] "Side To Side ft. Nicki Minaj" / Ariana Grande: title-score 0.571 < 0.95
+  - yt-WaMHEe4yL6U [spotify] "Muévelo ft. Wisin" / Sofia Reyes: title-score 0.500 < 0.95
+  - yt-WaMHEe4yL6U [amazon] "Muévelo ft. Wisin" / Sofia Reyes: title-score 0.500 < 0.95
+  - yt-tn5b4-VbULs [spotify] "Tu Recuerdo (MTV Unplugged) ft. Chambao, Tommy Torres" / Ricky Martin: title-score 0.400 < 0.95
+  - yt-tn5b4-VbULs [amazon] "Tu Recuerdo (MTV Unplugged) ft. Chambao, Tommy Torres" / Ricky Martin: title-score 0.500 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - yt-OK848_DSj6k [spotify] "It Ain't Me" / Kygo & Selena Gomez: provider title names a different recording ("It Ain’t Me (with Selena Gomez)")
+  - 80s-cccatch-canlose [spotify] "I Can Lose My Heart Tonight" / C.C. Catch: title-score 0.857 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - 80s-cccatch-canlose [amazon] "I Can Lose My Heart Tonight" / C.C. Catch: title-score 0.923 < 0.95
+  - 80s-duran-wolf [spotify] "Hungry Like the Wolf" / Duran Duran: title-score 0.750 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - chuck-berry-johnny-b-goode-1958 [youtube] "Johnny B. Goode" / Chuck Berry: video title "Johnny Be Goode" does not contain "Johnny B. Goode"
+  - yt-uTK_7MOFV4s [amazon] "El Marinero Baila" / Paco El Marinero: provider title names a different recording ("El Marinero Baila (Single)"); artist-score 0.333 < 0.90
+  - yt-iwgu9WISwXI [amazon] "A Donde Voy" / Cosculluela ft. Daddy Yankee: provider title names a different recording ("A dónde voy (feat. Daddy Yankee)")
+  - unplugged-aic-nutshell [spotify] "Nutshell (Unplugged)" / Alice in Chains: title-score 0.222 < 0.95; runtime deviation 24.7s > 3s
+  - unplugged-aic-nutshell [amazon] "Nutshell (Unplugged)" / Alice in Chains: runtime deviation 4.4s > 3s
+  - unplugged-aic-nutshell [youtube] "Nutshell (Unplugged)" / Alice in Chains: video title "Alice In Chains - Nutshell (Official Audio)" does not contain "Nutshell (Unplugged)"
+  - yt-DkFJE8ZdeG8 [spotify] "Latinoamérica" / Calle 13: provider title names a different recording ("Latinoamérica (feat. Totó la Momposina, Susana Baca & Maria Rita)")
+  - yt-T7bKgTeqGSM [spotify] "Detalles" / Roberto Carlos: provider title names a different recording ("Detalles (Detalhes)")
+  - yt-T7bKgTeqGSM [amazon] "Detalles" / Roberto Carlos: provider title names a different recording ("Detalles (Detalhes)")
+  - finale-eminem-mockingbird [youtube] "Mockingbird (resurgence)" / Eminem: video title "Eminem - Mockingbird [Official Music Video]" does not contain "Mockingbird (resurgence)"
+  - yt-H0KNa9y0nS0 [spotify] "Tour de France" / Kraftwerk: title-score 0.750 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - disco-disclosure-latch [amazon] "Latch" / Disclosure ft. Sam Smith: provider title names a different recording ("Latch [feat. Sam Smith]")
+  - rock-deep-purple-smoke-on-the-water [spotify] "Smoke on the Water" / Deep Purple: title-score 0.667 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - reggae-bob-marley-no-woman [spotify] "No Woman, No Cry" / Bob Marley & The Wailers: title-score 0.667 < 0.95; runtime deviation 202.3s > 3s
+  - jazz-monk-round [amazon] "'Round Midnight" / Thelonious Monk: provider title names a different recording ("'Round Midnight (Take 2)")
+  - 80s-sandra-magdalena [youtube] "(I'll Never Be) Maria Magdalena" / Sandra: video title "Sandra - Maria Magdalena (Official Music Video)" does not contain "(I'll Never Be) Maria Magdalena"
+  - yt-kbn4lB07gm0 [spotify] "Una Cita Remix" / Alkilados: provider title names a different recording ("Una Cita - Remix")
+  - yt-kbn4lB07gm0 [amazon] "Una Cita Remix" / Alkilados: title-score 0.800 < 0.95
+  - yt-Y3XyWhrZnqE [spotify] "Promise ft. Usher" / Romeo Santos: title-score 0.500 < 0.95
+  - yt-Y3XyWhrZnqE [amazon] "Promise ft. Usher" / Romeo Santos: title-score 0.500 < 0.95
+  - jazz-miles-davis-so-what [spotify] "So What" / Miles Davis: provider title names a different recording ("So What (feat. John Coltrane, Cannonball Adderley & Bill Evans)")
+  - yt-MNmc_XJp5rI [spotify] "Passion Whine ft. Sean Paul" / Farruko: title-score 0.571 < 0.95
+  - yt-MNmc_XJp5rI [amazon] "Passion Whine ft. Sean Paul" / Farruko: title-score 0.571 < 0.95
+  - yt-wvYit4jmj6U [spotify] "When I'm Gone" / Katy Perry & Alesso: provider title names a different recording ("When I’m Gone (with Katy Perry)")
+  - yt-Dsp_8Lm1eSk [spotify] "La Tortura" / Shakira ft. Alejandro Sanz: provider title names a different recording ("La Tortura (feat. Alejandro Sanz)")
+  - yt-75ANiLU38mA [spotify] "As It Is (In Heaven)" / Hillsong Worship: title-score 0.857 < 0.95
+  - yt-75ANiLU38mA [amazon] "As It Is (In Heaven)" / Hillsong Worship: title-score 0.091 < 0.95
+  - jazz-getz-ipanema [spotify] "The Girl from Ipanema" / Stan Getz, João Gilberto & Astrud Gilberto: title-score 0.750 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - jazz-getz-ipanema [amazon] "The Girl from Ipanema" / Stan Getz, João Gilberto & Astrud Gilberto: provider title names a different recording ("The Girl From Ipanema (Single Version) [feat. Astrud Gilberto & Antonio Carlos Jobim]")
+  - yt-kTJczUoc26U [spotify] "Stay" / The Kid LAROI & Justin Bieber: provider title names a different recording ("STAY (with Justin Bieber)")
+  - yt-hXI8RQYC36Q [spotify] "El Perdón" / Nicky Jam & Enrique Iglesias: provider title names a different recording ("El Perdón (with Enrique Iglesias)")
+  - yt-hXI8RQYC36Q [amazon] "El Perdón" / Nicky Jam & Enrique Iglesias: provider title names a different recording ("El Perdón (with Enrique Iglesias)")
+  - yt-4DO8GsIYfhQ [amazon] "Cuando Me Enamoro" / Enrique Iglesias, Juan Luis Guerra: provider title names a different recording ("Cuando Me Enamoro [feat. Juan Luis Guerra]")
+  - yt-YeiD9eC76oQ [spotify] "Vuelvo a Verte ft. Pablo Alborán" / Malü: title-score 0.571 < 0.95
+  - yt-YeiD9eC76oQ [youtube] "Vuelvo a Verte ft. Pablo Alborán" / Malü: video title "Malú - Vuelvo A Verte (Acústico)" does not contain "Vuelvo a Verte ft. Pablo Alborán"
+  - yt-jenWdylTtzs [spotify] "I Want to Hold Your Hand" / The Beatles: title-score 0.833 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - piano-keenan-scars [amazon] "Scars" / Keenan Te: provider title names a different recording ("Scars (with Peder Elias)")
+  - synth-petshop-sin [spotify] "It's a Sin" / Pet Shop Boys: title-score 0.667 < 0.95; provider uses a new edition of the recording (remaster/anniversary)
+  - unplugged-pearl-jam-black [spotify] "Black (Unplugged)" / Pearl Jam: title-score 0.400 < 0.95
+  - unplugged-pearl-jam-black [amazon] "Black (Unplugged)" / Pearl Jam: provider title names a different recording ("Black (Live MTV Unplugged)")
+  - unplugged-pearl-jam-black [youtube] "Black (Unplugged)" / Pearl Jam: video title "Pearl Jam - Black (Official Audio)" does not contain "Black (Unplugged)"
+report                 : docs/qa/evidence/links/verify-links-sample-250.json

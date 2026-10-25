@@ -52,7 +52,7 @@ impl AbiVersion {
 impl std::fmt::Display for AbiVersion {
     /// The version as the string the bindings carry.
     ///
-    /// EXAMPLE: `AbiVersion::VERSION.to_string()` is `"1.0.0"`.
+    /// EXAMPLE: `AbiVersion::VERSION.to_string()` is `"1.1.0"`.
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "{}.{}.{}", self.major, self.minor, self.patch)
     }

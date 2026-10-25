@@ -71,7 +71,7 @@ pub const EXPORTED_TYPES: &[&str] = &[
 /// fingerprint has to change when a symbol is added, renamed or removed — and
 /// nothing else.
 ///
-/// EXAMPLE: the fingerprint of the surface of version 1.0.0 is
+/// EXAMPLE: the fingerprint of the surface of version 1.1.0 is
 /// `0x2e486765000e97b0`.
 pub fn surface_fingerprint() -> u64 {
     let mut hash: u64 = 0xcbf2_9ce4_8422_2325;

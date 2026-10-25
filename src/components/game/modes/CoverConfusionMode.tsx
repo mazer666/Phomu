@@ -18,21 +18,17 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { getAllSongs } from '@/utils/song-picker';
 import { getSpicyColor } from '@/utils/feedback-messages';
-import type { PhomuSong } from '@/types/song';
+import type { RoundQuestion, SongIdentity } from '@/core/types';
+import { submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
-import {
-  coverConfusionAward,
-  coverConfusionPoints,
-  coverConfusionVariationAward,
-} from '@/utils/mode-rules';
+import { coverConfusionPoints } from '@/utils/mode-rules';
 
 type Phase = 'listening' | 'self-assess' | 'choice' | 'done';
 
 interface CoverConfusionModeProps {
-  song: PhomuSong;
+  question: RoundQuestion;
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -42,7 +38,7 @@ interface CoverConfusionModeProps {
 }
 
 export function CoverConfusionMode({
-  song,
+  question,
   onAnswer,
   onReveal,
 }: CoverConfusionModeProps) {
@@ -50,6 +46,7 @@ export function CoverConfusionMode({
   const [hintsUsed, setHintsUsed] = useState(0);
   const [phase, setPhase] = useState<Phase>('listening');
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
+  const [identity, setIdentity] = useState<SongIdentity | null>(null);
 
   // 50% chance for "Original or Cover" variation - stabilized in state
   const [variation] = useState(() =>
@@ -57,8 +54,8 @@ export function CoverConfusionMode({
   );
 
   const points = coverConfusionPoints(hintsUsed);
-  const playLink = song.links.coverLink || song.links.youtube;
-  const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
+  const playLink = question.media.coverLink || question.media.youtube;
+  const spicyMessage = useSpicyMessage(wasCorrect!, question.songId);
 
   // Number format of the active locale
   const numberFormat = useMemo(
@@ -66,18 +63,9 @@ export function CoverConfusionMode({
     [i18n.language]
   );
 
-  // 3 artists for multiple-choice: correct + 2 random wrong - stabilized
-  const [choiceOptions] = useState(() => {
-    const others = Array.from(
-      new Set(
-        getAllSongs()
-          .map((s) => s.artist)
-          .filter((a) => a !== song.artist)
-      )
-    );
-    const wrong = [...others].sort(() => Math.random() - 0.5).slice(0, 2);
-    return [...wrong, song.artist].sort(() => Math.random() - 0.5);
-  });
+  // The artists of the multiple choice come from the core: the core knows
+  // which one of them is the original artist.
+  const choiceOptions = question.options;
 
   function handleGetHint() {
     if (hintsUsed < 2) {
@@ -89,30 +77,41 @@ export function CoverConfusionMode({
     }
   }
 
-  function handleSelfAssess(correct: boolean) {
+  async function handleSelfAssess(correct: boolean) {
     setWasCorrect(correct);
-    // CoverConfusion: points based on the hints (cheats were already deducted)
-    const outcome = coverConfusionAward(hintsUsed, correct);
-    onAnswer(outcome.isCorrect, outcome.points);
+    // The core evaluates the answer — the shell does not know the rules of
+    // the mode a second time.
+    const result = await submit({
+      kind: 'cover-confusion',
+      hintsUsed,
+      selfAssess: correct,
+    });
+    setIdentity(result.feedback.identity);
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded);
     setPhase('done');
   }
 
-  function handleChoice(artist: string) {
-    const correct = artist === song.artist;
-    setWasCorrect(correct);
-    // CoverConfusion: points based on the hints (cheats were already deducted)
-    const outcome = coverConfusionAward(hintsUsed, correct);
-    onAnswer(outcome.isCorrect, outcome.points);
+  async function handleChoice(artist: string) {
+    // The core compares the picked artist with the original one.
+    const result = await submit({
+      kind: 'cover-confusion',
+      hintsUsed,
+      pickedArtist: artist,
+    });
+    setWasCorrect(result.score.isCorrect);
+    setIdentity(result.feedback.identity);
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded);
     setPhase('done');
   }
 
-  function handleChoiceVariation(guessCover: boolean) {
-    const outcome = coverConfusionVariationAward(
+  async function handleChoiceVariation(guessCover: boolean) {
+    const result = await submit({
+      kind: 'cover-confusion-variation',
       guessCover,
-      Boolean(song.links.coverLink)
-    );
-    setWasCorrect(outcome.isCorrect);
-    onAnswer(outcome.isCorrect, outcome.points); // 3 pts for the variation
+    });
+    setWasCorrect(result.score.isCorrect);
+    setIdentity(result.feedback.identity);
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded); // 3 pts for the variation
     setPhase('done');
   }
 
@@ -132,27 +131,20 @@ export function CoverConfusionMode({
 
       {/* Music player — blurred until the answer is given (swipe to reveal) */}
       <MusicPlayer
-        songId={song.id}
-        songTitle={song.title}
-        songArtist={song.artist}
-        songPack={song.packs[0]}
+        songId={question.songId}
+        songPack={question.context.pack ?? undefined}
         youtubeLink={playLink}
         youtubeAlternatives={
-          song.links.coverLink
-            ? undefined
-            : (song.links.youtubeAlternatives ??
-              (song.links.fallbackYoutubeId
-                ? [song.links.fallbackYoutubeId]
-                : undefined))
+          question.media.coverLink ? undefined : question.media.youtubeAlternatives
         }
-        spotifyLink={song.links.spotify}
-        spotifyFreePreview={song.links.spotifyFreePreview}
-        amazonMusicLink={song.links.amazonMusic}
-        amazonPrimePreview={song.links.amazonPrimePreview}
-        startSeconds={song.previewTimestamp?.start ?? 0}
+        spotifyLink={question.media.spotify ?? undefined}
+        spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+        amazonMusicLink={question.media.amazonMusic ?? undefined}
+        amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
+        startSeconds={question.media.startSeconds}
         blurred={phase !== 'done'}
       />
-      {song.links.coverLink && (
+      {question.media.coverLink && (
         <p className="text-[10px] text-center -mt-2 font-black uppercase text-[var(--color-accent)] animate-pulse">
           {t('modes.cover-confusion.coverActive')}
         </p>
@@ -162,7 +154,7 @@ export function CoverConfusionMode({
       <AnimatePresence initial={false}>
         {hintsUsed > 0 && hintsUsed <= 2 && (
           <div className="space-y-2">
-            {song.hints.slice(0, hintsUsed).map((hint, i) => (
+            {question.hints.slice(0, hintsUsed).map((hint, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 8 }}
@@ -254,9 +246,9 @@ export function CoverConfusionMode({
             <p className="text-[10px] font-black uppercase opacity-40 mb-2">
               {t('modes.cover-confusion.originalArtistWas')}
             </p>
-            <h3 className="text-2xl font-black">{song.artist}</h3>
+            <h3 className="text-2xl font-black">{identity?.artist}</h3>
             <p className="text-xs opacity-40 mt-1">
-              {song.title} &middot; {song.year}
+              {identity?.title} &middot; {identity?.year}
             </p>
           </div>
 
@@ -318,7 +310,7 @@ export function CoverConfusionMode({
         >
           <p
             className="text-xl font-black uppercase italic tracking-tighter mb-1"
-            style={{ color: getSpicyColor(wasCorrect!, song.id) }}
+            style={{ color: getSpicyColor(wasCorrect!, question.songId) }}
           >
             {spicyMessage}
           </p>
@@ -329,7 +321,7 @@ export function CoverConfusionMode({
           </p>
           <p className="text-sm opacity-60">
             {t('modes.cover-confusion.originalLabel')}{' '}
-            <span className="font-bold text-white">{song.artist}</span>
+            <span className="font-bold text-white">{identity?.artist}</span>
           </p>
           {wasCorrect && (
             <p className="text-xs font-black text-[var(--color-accent)]">

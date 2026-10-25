@@ -2,15 +2,14 @@
 /**
  * Quality gate: combined run (check:all)
  * -------------------------------------------------------------------------
- * Runs the three gates of CONTRACT §6 one after another:
- *   1. i18n completeness    -> scripts/check-i18n-completeness.mjs
- *   2. Doc link check       -> scripts/check-doc-links.mjs
- *   3. File size            -> scripts/check-file-size.mjs
+ * Runs the gates of CONTRACT §6 one after another:
+ *   1. i18n completeness      -> scripts/check-i18n-completeness.mjs
+ *   2. Doc link check         -> scripts/check-doc-links.mjs
+ *   3. File size              -> scripts/check-file-size.mjs
  *   4. Documentation language -> scripts/check-doc-language.mjs
- *   5. Crate boundaries      -> scripts/check-crate-boundaries.mjs
- *   6. Licence consistency   -> scripts/check-license.mjs
- *   5. Licence consistency   -> scripts/check-license.mjs
- *   5. Crate boundaries      -> scripts/check-crate-boundaries.mjs
+ *   5. Crate boundaries       -> scripts/check-crate-boundaries.mjs
+ *   6. Module boundaries      -> scripts/check-module-boundaries.mjs
+ *   7. Licence consistency    -> scripts/check-license.mjs
  *
  * Unlike an `&&` chain, **all** gates run through: the report shows the
  * state of every single gate, even if one of them fails. The exit code is 1
@@ -31,6 +30,7 @@ const GATES = [
   { name: 'File size', script: 'check-file-size.mjs' },
   { name: 'Documentation language', script: 'check-doc-language.mjs' },
   { name: 'Crate boundaries', script: 'check-crate-boundaries.mjs' },
+  { name: 'Module boundaries', script: 'check-module-boundaries.mjs' },
   { name: 'Licence consistency', script: 'check-license.mjs' },
 ];
 

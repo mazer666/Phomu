@@ -1,0 +1,19 @@
+{
+  "$comment": [
+    "The recorded violations of the module-boundary gate.",
+    "Source of truth: docs/adr/ADR-0001 (layers and dependency direction) and",
+    "docs/qa/QA-09-REMEDIATION-BACKLOG.md item 2.4.",
+    "The gate scripts/check-module-boundaries.mjs reads this table and rewrites",
+    "it when a violation is gone. A violation that is not recorded here is an",
+    "error.",
+    "Remove an entry only together with the change that removes the violation."
+  ],
+  "schemaVersion": 1,
+  "exceptions": {
+    "src/app/admin/review/page.tsx#MB-RAW-CATALOGUE": {
+      "rule": "MB-RAW-CATALOGUE",
+      "imports": 1,
+      "reason": "The page reads the whole record of a song to edit it. It migrates to `loadAdminRecords()` of `@/data/catalogue` in the stream that owns `src/app/**`; until then the violation is recorded here so that the gate can see every new violation."
+    }
+  }
+}

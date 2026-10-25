@@ -152,9 +152,34 @@ export function buildSituation(vector: Vector): void {
   if (given.currentSong) {
     const song = songs.get(given.currentSong);
     if (song) {
-      useGameStore
-        .getState()
-        .drawSong(song, given.currentSongSource ?? 'random');
+      useGameStore.getState().setQuestion({
+        phase: 'question',
+        roundNumber: 0,
+        mode: useGameStore.getState().currentMode,
+        hints: song.hints,
+        options: [],
+        identity: null,
+        pointsPossible: 0,
+        answersLocked: false,
+        songId: song.id,
+        media: {
+          youtube: song.links.youtube,
+          youtubeAlternatives: song.links.youtubeAlternatives ?? [],
+          spotify: song.links.spotify ?? null,
+          spotifyFreePreview: song.links.spotifyFreePreview ?? null,
+          amazonMusic: song.links.amazonMusic ?? null,
+          amazonPrimePreview: song.links.amazonPrimePreview ?? null,
+          coverLink: song.links.coverLink ?? null,
+          startSeconds: song.previewTimestamp?.start ?? 0,
+          endSeconds: song.previewTimestamp?.end ?? 0,
+        },
+        context: {
+          timelineYears: [],
+          timelineSlots: [],
+          genre: song.genre,
+          pack: song.packs[0] ?? null,
+        },
+      });
     }
   }
 

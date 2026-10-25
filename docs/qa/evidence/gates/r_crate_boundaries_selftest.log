@@ -1,0 +1,73 @@
+=== COMMAND: npm run check:crate-boundaries:test (the negative self-test of the boundary gate) ===
+=== BASELINE: working tree (scripts/ and core/ are at HEAD except for a parallel refactor of core/phomu-conformance) ===
+=== DATE: 2026-10-25T16:59:10Z ===
+Self-test of the crate-boundary gate
+========================================================================
+  [PASS] the fixture "ok" is green
+  [PASS] the fixture "violation" is red and names the edge
+  [PASS] the fixture "shell-direct-core" is red and names the edge
+  [PASS] the fixture "format-cross-area" is red and names the edge
+  [PASS] the fixture "errors-not-leaf" is red and names the edge
+  [PASS] the fixture "include-outside" is red and names the edge
+  [PASS] the fixture "abi-mismatch" is red and names the edge
+  [PASS] a tree without a Cargo workspace is skipped with exit code 0
+  [PASS] the repository matches the state the gate reports
+
+--- temporary violation in the repository -------------------
+  manifest: tools/catalog-tool/Cargo.toml
+  added:    phomu-ffi = { path = "../../platform/phomu-ffi" }
+
+--- the gate, with the violation (must be red) -------------
+Crate boundary gate
+========================================================================
+root:    /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/github/Phomu
+rules:   /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/github/Phomu/scripts/crate-boundaries.rules.json
+crates:  13
+edges:   23
+
+1 boundary violation(s) found:
+  [R-TOOLS-TO-PLATFORM] crate tools/catalog-tool depends on crate platform/phomu-ffi, which is not allowed
+      tools/catalog-tool/Cargo.toml:17
+      a tool is build-time code and must not depend on a crate in platform/ (BUILD-CONTRACT §1.1)
+--- exit code: 1 -------------------------------
+
+  [PASS] the temporary violation turns the gate red
+--- the gate, with the violation undone (must be green) ----
+Crate boundary gate
+========================================================================
+root:    /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/github/Phomu
+rules:   /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/github/Phomu/scripts/crate-boundaries.rules.json
+crates:  13
+edges:   22
+
+No boundary violations found.
+  ok  core/phomu-conformance -> core/phomu-core (normal)
+  ok  core/phomu-core -> core/phomu-catalog (normal)
+  ok  core/phomu-core -> core/phomu-config (normal)
+  ok  core/phomu-core -> core/phomu-errors (normal)
+  ok  core/phomu-core -> core/phomu-i18n (normal)
+  ok  core/phomu-core -> core/phomu-media (normal)
+  ok  platform/phomu-capi -> platform/phomu-ffi (normal)
+  ok  platform/phomu-ffi -> core/phomu-catalog (normal)
+  ok  platform/phomu-ffi -> core/phomu-core (normal)
+  ok  platform/phomu-ffi -> core/phomu-errors (normal)
+  ok  platform/phomu-ffi -> core/phomu-i18n (normal)
+  ok  platform/phomu-ffi -> core/phomu-media (normal)
+  ok  platform/phomu-wasm -> core/phomu-catalog (normal)
+  ok  platform/phomu-wasm -> core/phomu-core (dev)
+  ok  platform/phomu-wasm -> core/phomu-core (normal)
+  ok  platform/phomu-wasm -> core/phomu-errors (normal)
+  ok  platform/phomu-wasm -> core/phomu-i18n (normal)
+  ok  tools/catalog-tool -> core/phomu-catalog (normal)
+  ok  tools/catalog-tool -> core/phomu-config (normal)
+  ok  tools/conformance-runner -> core/phomu-conformance (normal)
+  ok  tools/media-report -> core/phomu-catalog (normal)
+  ok  tools/media-report -> core/phomu-media (normal)
+--- exit code: 0 -------------------------------
+
+  [PASS] the undone violation turns the gate green again
+  [PASS] the manifest is byte identical to the original
+
+========================================================================
+✅ All 12 assertions passed.
+=== EXIT CODE: 0 ===

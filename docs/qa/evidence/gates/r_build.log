@@ -1,0 +1,95 @@
+=== COMMAND: cargo build --workspace ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout of HEAD via git archive) ===
+=== DATE: 2026-10-25T16:48:37Z ===
+=== TOOLCHAIN: cargo 1.99.1 (5f94df478 2026-08-27) / rustc 1.99.1 (58cf8f9c3 2026-10-13) ===
+=== TARGET DIR: /tmp/phomu-qa-target3 (empty at the start — a cold build) ===
+   Compiling unicode-ident v1.0.27
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling syn v3.0.9
+   Compiling serde v1.0.229
+   Compiling serde_derive v1.0.229
+   Compiling serde_core v1.0.229
+   Compiling memchr v2.8.3
+   Compiling zmij v1.0.23
+   Compiling syn v2.0.119
+   Compiling serde_json v1.0.154
+   Compiling itoa v1.0.18
+   Compiling anyhow v1.0.104
+   Compiling libc v0.2.191
+   Compiling cfg-if v1.0.5
+   Compiling once_cell v1.21.4
+   Compiling rustix v1.1.5
+   Compiling getrandom v0.4.3
+   Compiling equivalent v1.0.3
+   Compiling bitflags v2.13.2
+   Compiling phomu-catalog v0.1.0 (/tmp/phomu-qa-src/core/phomu-catalog)
+   Compiling heck v0.5.0
+   Compiling linux-raw-sys v0.12.1
+   Compiling hashbrown v0.17.1
+   Compiling indexmap v2.14.2
+   Compiling fastrand v2.5.0
+   Compiling tempfile v3.27.0
+   Compiling uniffi_internal_macros v0.29.5
+   Compiling phomu-config v0.1.0 (/tmp/phomu-qa-src/core/phomu-config)
+   Compiling phomu-media v0.1.0 (/tmp/phomu-qa-src/core/phomu-media)
+   Compiling autocfg v1.5.1
+   Compiling fs-err v2.11.0
+   Compiling uniffi_pipeline v0.29.5
+   Compiling minimal-lexical v0.2.1
+   Compiling siphasher v0.3.11
+   Compiling camino v1.2.6
+   Compiling thiserror v2.0.21
+   Compiling winnow v0.7.15
+   Compiling askama_parser v0.13.0
+   Compiling uniffi_meta v0.29.5
+   Compiling nom v7.1.3
+   Compiling basic-toml v0.1.10
+   Compiling scroll_derive v0.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling phomu-errors v0.1.0 (/tmp/phomu-qa-src/core/phomu-errors)
+   Compiling rustc-hash v2.1.3
+   Compiling phomu-i18n v0.1.0 (/tmp/phomu-qa-src/core/phomu-i18n)
+   Compiling smawk v0.3.3
+   Compiling textwrap v0.16.4
+   Compiling phomu-core v0.1.0 (/tmp/phomu-qa-src/core/phomu-core)
+   Compiling askama_derive v0.13.1
+   Compiling scroll v0.12.0
+   Compiling weedle2 v5.0.0
+   Compiling cargo-platform v0.1.9
+   Compiling semver v1.0.28
+   Compiling anstyle v1.0.14
+   Compiling wasm-bindgen-shared v0.2.129
+   Compiling strsim v0.11.1
+   Compiling plain v0.2.3
+   Compiling clap_lex v1.1.1
+   Compiling log v0.4.34
+   Compiling goblin v0.8.2
+   Compiling clap_builder v4.6.7
+   Compiling cargo_metadata v0.19.2
+   Compiling uniffi_udl v0.29.5
+   Compiling askama v0.13.1
+   Compiling clap_derive v4.6.7
+   Compiling toml v0.5.11
+   Compiling bytes v1.12.1
+   Compiling glob v0.3.4
+   Compiling static_assertions v1.1.0
+   Compiling rustversion v1.0.23
+   Compiling uniffi_core v0.29.5
+   Compiling uniffi_bindgen v0.29.5
+   Compiling uniffi_macros v0.29.5
+   Compiling clap v4.6.7
+   Compiling uniffi v0.29.5
+   Compiling bumpalo v3.20.3
+   Compiling wasm-bindgen-macro-support v0.2.129
+   Compiling wasm-bindgen v0.2.129
+   Compiling phomu-ffi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-ffi)
+   Compiling phomu-conformance v0.1.0 (/tmp/phomu-qa-src/core/phomu-conformance)
+   Compiling wasm-bindgen-macro v0.2.129
+   Compiling phomu-capi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-capi)
+   Compiling media-report v0.1.0 (/tmp/phomu-qa-src/tools/media-report)
+   Compiling catalog-tool v0.1.0 (/tmp/phomu-qa-src/tools/catalog-tool)
+   Compiling phomu-conformance-runner v0.1.0 (/tmp/phomu-qa-src/tools/conformance-runner)
+   Compiling phomu-wasm v0.1.0 (/tmp/phomu-qa-src/platform/phomu-wasm)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 6m 43s
+=== EXIT CODE: 0 ===

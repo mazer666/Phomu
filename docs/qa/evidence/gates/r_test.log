@@ -1,0 +1,581 @@
+=== COMMAND: cargo test --workspace ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout of HEAD via git archive) ===
+=== DATE: 2026-10-25T16:48:39Z ===
+=== TOOLCHAIN: cargo 1.99.1 (5f94df478 2026-08-27) / rustc 1.99.1 (58cf8f9c3 2026-10-13) ===
+warning: failed to save last-use data
+This may prevent cargo from accurately tracking what is being used in its global cache. This information is used for automatically removing unused data in the cache.
+
+database is locked
+
+Caused by:
+  Error code 5: database is locked
+   Compiling catalog-tool v0.1.0 (/tmp/phomu-qa-src/tools/catalog-tool)
+   Compiling media-report v0.1.0 (/tmp/phomu-qa-src/tools/media-report)
+   Compiling phomu-wasm v0.1.0 (/tmp/phomu-qa-src/platform/phomu-wasm)
+   Compiling phomu-conformance v0.1.0 (/tmp/phomu-qa-src/core/phomu-conformance)
+   Compiling phomu-conformance-runner v0.1.0 (/tmp/phomu-qa-src/tools/conformance-runner)
+   Compiling phomu-capi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-capi)
+   Compiling phomu-ffi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-ffi)
+   Compiling phomu-core v0.1.0 (/tmp/phomu-qa-src/core/phomu-core)
+   Compiling phomu-errors v0.1.0 (/tmp/phomu-qa-src/core/phomu-errors)
+   Compiling phomu-media v0.1.0 (/tmp/phomu-qa-src/core/phomu-media)
+   Compiling phomu-i18n v0.1.0 (/tmp/phomu-qa-src/core/phomu-i18n)
+   Compiling phomu-config v0.1.0 (/tmp/phomu-qa-src/core/phomu-config)
+   Compiling phomu-catalog v0.1.0 (/tmp/phomu-qa-src/core/phomu-catalog)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 19s
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/catalog_tool-614fd411100a8268)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/tmp/phomu-qa-target2/debug/deps/catalog_tool-05e0f3d3b69c4745)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/media_report-65d7aae8665b5f97)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/tmp/phomu-qa-target2/debug/deps/media_report-b605053799b06fdc)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_capi-657929a253fccfb0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/bin/generate-header.rs (/tmp/phomu-qa-target2/debug/deps/phomu_capi_header-18982636ee5fcb85)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/capi.rs (/tmp/phomu-qa-target2/debug/deps/capi-5a8945a91a7b8071)
+
+running 5 tests
+test a_failure_crosses_the_c_abi_with_its_code_and_its_key ... ok
+test a_round_runs_over_the_c_abi ... ok
+test the_abi_version_is_in_the_library ... ok
+test the_header_carries_the_version_of_the_library ... ok
+test the_message_key_crosses_the_c_abi ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_catalog-ebdc13d8e261e498)
+
+running 44 tests
+test limits::tests::a_value_above_the_limit_is_a_violation ... ok
+test limits::tests::a_value_at_the_limit_is_not_a_violation ... ok
+test limits::tests::the_known_modes_are_the_six_game_modes ... ok
+test model::tests::the_confidence_round_trips ... ok
+test model::tests::the_difficulty_round_trips ... ok
+test model::tests::the_relation_type_round_trips ... ok
+test selection::tests::a_pack_filter_without_a_match_falls_back_to_the_whole_catalogue ... ok
+test selection::tests::an_empty_catalogue_yields_no_selection ... ok
+test selection::tests::an_empty_pack_selection_uses_the_whole_catalogue ... ok
+test selection::tests::played_songs_are_avoided ... ok
+test selection::tests::the_difficulty_filter_is_a_soft_fallback ... ok
+test selection::tests::the_draw_is_deterministic ... ok
+test selection::tests::the_legacy_pack_identifiers_are_mapped ... ok
+test selection::tests::the_lyrics_mode_falls_back_to_the_songs_with_lyrics ... ok
+test selection::tests::the_mode_filter_is_a_soft_fallback_for_every_other_mode ... ok
+test selection::tests::the_mode_filter_selects_only_matching_songs ... ok
+test selection::tests::the_pack_filter_selects_only_matching_songs ... ok
+test selection::tests::the_qr_filter_is_a_soft_fallback ... ok
+test selection::tests::the_qr_filter_keeps_the_compatible_songs ... ok
+test selection::tests::when_everything_was_played_the_last_five_are_allowed_again ... ok
+test song_limits::tests::a_long_link_is_a_violation ... ok
+test song_limits::tests::a_short_song_has_no_violation ... ok
+test song_limits::tests::an_unknown_mode_is_a_violation ... ok
+test text::tests::the_country_code_needs_two_upper_case_letters ... ok
+test text::tests::the_normalisation_removes_diacritics_and_punctuation ... ok
+test text::tests::the_url_predicate_needs_a_scheme ... ok
+test text::tests::the_youtube_predicates_match_the_reference ... ok
+test validation::tests::a_complete_song_is_valid_and_complete ... ok
+test validation::tests::a_country_code_must_be_two_upper_case_letters ... ok
+test validation::tests::a_duplicate_identifier_is_reported ... ok
+test validation::tests::a_hint_evidence_that_is_no_url_is_a_warning ... ok
+test validation::tests::a_hint_with_the_artist_in_it_is_a_warning ... ok
+test validation::tests::a_missing_youtube_link_is_an_error ... ok
+test validation::tests::a_placeholder_youtube_link_is_only_a_warning ... ok
+test validation::tests::a_preview_timestamp_without_a_duration_is_an_error ... ok
+test validation::tests::a_song_with_one_real_line_is_invalid ... ok
+test validation::tests::a_song_without_lyrics_is_only_a_warning ... ok
+test validation::tests::a_too_long_title_is_a_limit_violation ... ok
+test validation::tests::a_valid_preview_timestamp_is_accepted ... ok
+test validation::tests::a_year_above_the_upper_bound_is_an_error ... ok
+test validation::tests::a_year_below_the_lower_bound_is_an_error ... ok
+test validation::tests::an_unexpected_youtube_shape_is_only_a_warning ... ok
+test validation::tests::an_unknown_mode_is_a_limit_violation ... ok
+test validation::tests::the_bounds_allow_the_current_year_plus_one ... ok
+
+test result: ok. 44 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_config-963901641a8562e7)
+
+running 4 tests
+test tests::cover_confusion_points_run_from_five_down_to_two ... ok
+test tests::hint_master_points_run_from_five_down_to_one ... ok
+test tests::the_lobby_round_preset_below_the_minimum_is_documented ... ok
+test tests::the_score_floor_is_zero ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_conformance-4fc85c0e17ed1700)
+
+running 1 test
+test vector::tests::every_vector_is_valid_json ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/conformance.rs (/tmp/phomu-qa-target2/debug/deps/conformance-0a7f0e5b86b18604)
+
+running 3 tests
+test every_documented_difference_names_a_reason ... ok
+test every_vector_of_the_base_passes ... ok
+test the_corpus_of_the_web_shell_differs_only_in_the_documented_places ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/main.rs (/tmp/phomu-qa-target2/debug/deps/phomu_conformance_runner-e71bb58a43fd8e7e)
+
+running 3 tests
+test corpus::tests::every_vector_has_an_identifier_and_an_area ... ok
+test corpus::tests::the_corpus_is_not_empty ... ok
+test corpus::tests::the_identifiers_of_the_vectors_are_unique ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_core-5ef1f96155c0630a)
+
+running 104 tests
+test abi::tests::the_bracket_accepts_the_current_version ... ok
+test abi::tests::the_bracket_rejects_a_newer_major_version ... ok
+test abi::tests::the_parts_of_the_version_are_the_declared_constants ... ok
+test abi::tests::the_version_is_formatted_as_three_numbers ... ok
+test modes::cover_confusion::tests::a_correct_answer_is_worth_the_points_of_the_hints ... ok
+test modes::cover_confusion::tests::a_wrong_answer_is_worth_nothing ... ok
+test modes::cover_confusion::tests::more_hints_do_not_raise_the_points ... ok
+test modes::cover_confusion::tests::the_points_run_from_five_down_to_two ... ok
+test modes::cover_confusion::tests::the_variant_is_stable_for_the_same_draw ... ok
+test modes::cover_confusion::tests::the_variation_is_worth_three_points ... ok
+test modes::hint_master::tests::a_level_above_five_is_worth_one_point ... ok
+test modes::hint_master::tests::a_level_below_one_is_worth_one_point ... ok
+test modes::hint_master::tests::a_partial_answer_gives_half_the_points_rounded_up ... ok
+test modes::hint_master::tests::both_gives_the_full_amount ... ok
+test modes::hint_master::tests::nothing_is_worth_nothing_and_is_wrong ... ok
+test modes::hint_master::tests::the_audio_grows_with_the_level ... ok
+test modes::hint_master::tests::the_levels_run_from_five_down_to_one ... ok
+test modes::lyrics::tests::a_real_line_is_worth_nothing ... ok
+test modes::lyrics::tests::the_bonus_round_is_worth_two_points ... ok
+test modes::lyrics::tests::the_fake_line_is_worth_four_points ... ok
+test modes::lyrics::tests::the_options_contain_three_real_and_one_fake_line ... ok
+test modes::lyrics::tests::the_order_is_stable_for_the_same_draw ... ok
+test modes::survivor::tests::a_correct_judgement_is_worth_three_points ... ok
+test modes::survivor::tests::a_mainstay_guess_is_correct_for_a_mainstay ... ok
+test modes::survivor::tests::a_wrong_judgement_is_worth_nothing ... ok
+test modes::survivor::tests::the_artist_stays_hidden_until_the_answer_or_the_cheat ... ok
+test modes::tests::a_vibe_check_answer_is_worth_two_points ... ok
+test modes::tests::a_wrong_answer_is_worth_nothing ... ok
+test modes::tests::an_answer_of_the_wrong_mode_is_refused ... ok
+test modes::tests::only_the_timeline_measures_the_answer_time ... ok
+test modes::tests::only_the_vibe_check_discloses_the_identity ... ok
+test modes::tests::the_hint_master_halves_the_points_for_a_partial_answer ... ok
+test modes::tests::the_mode_identifiers_round_trip ... ok
+test modes::tests::the_shuffle_is_deterministic ... ok
+test modes::tests::there_are_six_modes ... ok
+test modes::timeline::tests::a_duplicate_accepts_the_slot_before_and_the_slot_after ... ok
+test modes::timeline::tests::a_duplicate_is_removed_immediately ... ok
+test modes::timeline::tests::a_year_without_a_duplicate_accepts_one_slot ... ok
+test modes::timeline::tests::from_more_than_ten_years_one_may_be_removed ... ok
+test modes::timeline::tests::the_canonical_slot_is_the_first_greater_year ... ok
+test modes::timeline::tests::the_joker_is_not_offered_with_few_slots ... ok
+test modes::timeline::tests::the_joker_only_removes_wrong_slots ... ok
+test modes::timeline::tests::the_points_grow_with_the_timeline_and_are_capped ... ok
+test modes::vibe_check::tests::a_correct_mood_is_worth_two_points ... ok
+test modes::vibe_check::tests::a_wrong_mood_is_worth_nothing ... ok
+test modes::vibe_check::tests::the_cheat_halves_the_options ... ok
+test modes::vibe_check::tests::the_cheat_lowers_the_win_to_one_point ... ok
+test modes::vibe_check::tests::the_known_moods_are_twelve ... ok
+test modes::vibe_check::tests::the_options_contain_the_first_mood_of_the_song ... ok
+test rules::phase::tests::a_locked_round_accepts_no_further_answer ... ok
+test rules::phase::tests::only_the_reveal_shows_the_solution ... ok
+test rules::phase::tests::the_normal_path_runs_through_the_locked_in_phase ... ok
+test rules::phase::tests::the_phase_identifiers_match_the_reference ... ok
+test rules::phase::tests::the_scoring_phase_is_the_end ... ok
+test rules::phase::tests::there_are_five_phases ... ok
+test rules::scoring::tests::a_disabled_decay_leaves_the_points_untouched ... ok
+test rules::scoring::tests::a_score_never_becomes_negative ... ok
+test rules::scoring::tests::a_step_width_of_zero_does_not_divide_by_zero ... ok
+test rules::scoring::tests::a_wrong_answer_is_never_deducted ... ok
+test rules::scoring::tests::an_answer_without_a_time_is_never_deducted ... ok
+test rules::scoring::tests::every_full_step_deducts_one_point ... ok
+test rules::scoring::tests::the_decay_never_falls_below_the_minimum ... ok
+test rules::scoring::tests::the_grace_period_is_free ... ok
+test rules::teams::tests::a_player_below_the_threshold_is_eliminated ... ok
+test rules::teams::tests::a_single_team_is_not_redistributed ... ok
+test rules::teams::tests::the_individual_mode_orders_the_players ... ok
+test rules::teams::tests::the_redistribution_recomputes_the_team_scores ... ok
+test rules::teams::tests::the_redistribution_spreads_the_players_over_the_teams ... ok
+test rules::teams::tests::the_team_modes_order_the_teams ... ok
+test rules::teams::tests::without_a_rule_nobody_is_eliminated ... ok
+test rules::winner::tests::the_check_happens_only_at_the_end_of_a_rotation ... ok
+test rules::winner::tests::the_points_condition_names_the_leader ... ok
+test rules::winner::tests::the_rounds_condition_counts_per_player ... ok
+test rules::winner::tests::the_time_condition_counts_from_the_start_of_the_game ... ok
+test rules::winner::tests::without_a_start_time_the_time_condition_does_not_end_the_game ... ok
+test session::config::tests::many_devices_expect_one_answer_per_player ... ok
+test session::config::tests::one_device_expects_one_answer_per_round ... ok
+test session::config::tests::the_defaults_match_the_reference_implementation ... ok
+test session::config::tests::the_difficulty_filter_defaults_to_every_difficulty ... ok
+test session::model::tests::a_new_player_has_the_default_values ... ok
+test session::model::tests::a_new_team_is_empty ... ok
+test session::model::tests::the_source_identifiers_are_stable ... ok
+test session::persist::tests::every_persistable_field_is_reported_as_persistable ... ok
+test session::persist::tests::the_ephemeral_fields_are_not_persistable ... ok
+test session::persist::tests::the_persistable_set_matches_the_reference_implementation ... ok
+test session::persist::tests::the_song_is_not_persistable ... ok
+test session::rng::tests::a_bound_of_zero_does_not_divide_by_zero ... ok
+test session::rng::tests::different_seeds_produce_different_sequences ... ok
+test session::rng::tests::the_bound_is_respected ... ok
+test session::rng::tests::the_mixing_function_is_stable ... ok
+test session::rng::tests::the_same_seed_produces_the_same_sequence ... ok
+test session::rng::tests::the_state_can_be_restored ... ok
+test spoiler::censor::tests::a_hint_without_the_answer_stays_untouched ... ok
+test spoiler::censor::tests::a_short_name_is_censored_only_when_it_is_an_exception ... ok
+test spoiler::censor::tests::a_short_name_that_is_no_exception_stays ... ok
+test spoiler::censor::tests::a_short_token_respects_the_word_boundary ... ok
+test spoiler::censor::tests::an_empty_hint_stays_empty ... ok
+test spoiler::censor::tests::the_artist_in_the_hint_is_censored ... ok
+test spoiler::censor::tests::the_censoring_ignores_the_case ... ok
+test spoiler::censor::tests::the_ignore_list_is_honoured ... ok
+test spoiler::censor::tests::the_title_in_the_hint_is_censored ... ok
+test spoiler::view::tests::the_disclosed_prompt_carries_the_identity ... ok
+test spoiler::view::tests::the_question_payload_has_no_solution ... ok
+test spoiler::view::tests::the_reveal_payload_carries_the_solution ... ok
+
+test result: ok. 104 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/anti_spoiler.rs (/tmp/phomu-qa-target2/debug/deps/anti_spoiler-b18ea11ccd9f3126)
+
+running 8 tests
+test the_hints_of_the_question_are_censored ... ok
+test the_persistable_set_contains_no_field_of_the_song ... ok
+test the_persistable_set_holds_the_expected_fields ... ok
+test the_question_payload_hides_the_artist_in_every_mode_but_the_declared_ones ... ok
+test the_question_payload_never_contains_the_title_or_the_year ... ok
+test the_question_view_has_no_field_for_the_solution ... ok
+test the_reveal_payload_carries_the_solution ... ok
+test the_vibe_check_declares_that_it_discloses_the_identity ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/cross_crate.rs (/tmp/phomu-qa-target2/debug/deps/cross_crate-0ca32a9f548239eb)
+
+running 7 tests
+test every_error_code_belongs_to_the_closed_key_space ... ok
+test every_error_key_is_used_by_an_error_code ... ok
+test every_game_event_has_a_key ... ok
+test the_base_carries_no_text_but_only_keys ... ok
+test the_catalogue_knows_exactly_the_six_modes ... ok
+test the_config_holds_the_values_the_rules_expect ... ok
+test the_mode_identifiers_match_the_catalogue ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/modes.rs (/tmp/phomu-qa-target2/debug/deps/modes-2e737090f3f698c0)
+
+running 18 tests
+test an_answer_of_the_wrong_mode_is_refused ... ok
+test every_mode_has_a_session_that_answers_it ... ok
+test the_cover_confusion_pays_by_the_number_of_hints ... ok
+test the_cover_confusion_refuses_an_answer_without_a_choice ... ok
+test the_cover_confusion_variation_is_worth_three_points ... ok
+test the_hint_master_halves_the_points_for_a_partial_answer ... ok
+test the_hint_master_refuses_a_level_outside_the_scale ... ok
+test the_lyrics_bonus_round_is_worth_two_points ... ok
+test the_lyrics_reward_the_invented_line ... ok
+test the_mode_of_the_question_is_the_mode_of_the_session ... ok
+test the_song_of_the_answer_is_the_song_of_the_round ... ok
+test the_survivor_rewards_the_right_judgement ... ok
+test the_timeline_accepts_the_canonical_slot ... ok
+test the_timeline_points_are_capped ... ok
+test the_timeline_refuses_a_slot_outside_the_timeline ... ok
+test the_timeline_refuses_a_wrong_slot ... ok
+test the_vibe_check_refuses_a_mood_that_is_not_on_the_song ... ok
+test the_vibe_check_rewards_a_mood_of_the_song ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/round_automaton.rs (/tmp/phomu-qa-target2/debug/deps/round_automaton-e312fdbb2c22f182)
+
+running 18 tests
+test a_broken_song_goes_back_to_the_drawing_phase ... ok
+test a_locked_round_accepts_no_second_answer ... ok
+test a_new_session_is_in_the_drawing_phase ... ok
+test a_round_that_ended_accepts_no_further_answer ... ok
+test a_round_without_a_song_is_not_logged ... ok
+test a_scanned_card_is_not_drawn_automatically ... ok
+test a_song_cannot_be_drawn_twice ... ok
+test drawing_a_song_opens_the_question_phase ... ok
+test the_answer_locks_the_round_in ... ok
+test the_game_cannot_start_without_players ... ok
+test the_game_starts_in_the_drawing_phase ... ok
+test the_next_round_logs_the_round_and_starts_a_new_one ... ok
+test the_reveal_after_the_lock_shows_the_solution ... ok
+test the_reveal_is_refused_before_the_answers_are_locked_in ... ok
+test the_reveal_lock_refuses_the_transition_of_the_question_phase ... ok
+test the_timeout_is_a_command_of_its_own ... ok
+test the_timeout_reveals_the_round_without_a_score ... ok
+test the_turn_moves_to_the_next_player ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/scoring.rs (/tmp/phomu-qa-target2/debug/deps/scoring-21bf7b47ecae49cb)
+
+running 11 tests
+test a_cheat_can_be_used_only_once_per_round ... ok
+test a_cheat_costs_points_and_never_pushes_the_score_below_zero ... ok
+test a_correct_answer_raises_the_score_of_the_pilot ... ok
+test a_duplicate_year_is_removed_again_immediately ... ok
+test a_wrong_answer_does_not_change_the_score ... ok
+test the_cheat_is_refused_in_the_mode_without_cheats ... ok
+test the_points_flow_to_the_team_of_the_player ... ok
+test the_time_decay_does_not_apply_without_a_time ... ok
+test the_time_decay_lowers_the_points_of_a_late_answer ... ok
+test the_timeline_grows_with_a_correct_answer ... ok
+test the_timeline_needs_three_distinct_years ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/session.rs (/tmp/phomu-qa-target2/debug/deps/session-294ca9d37a6a3262)
+
+running 7 tests
+test a_player_who_joins_a_team_leaves_the_old_one ... ok
+test a_removed_team_leaves_its_players_without_a_team ... ok
+test the_credit_of_points_to_an_unknown_entity_is_refused ... ok
+test the_end_of_the_game_awards_the_sum_of_the_player_scores ... ok
+test the_redistribution_of_the_shifting_teams_recomputes_the_team_scores ... ok
+test the_reset_clears_the_scores_and_keeps_the_experience_points ... ok
+test the_turn_order_of_the_team_modes_names_the_teams ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_errors-d8350cd5c1c87ae8)
+
+running 5 tests
+test tests::context_is_replaced_instead_of_duplicated ... ok
+test tests::display_contains_code_key_and_context ... ok
+test tests::every_code_has_a_distinct_number ... ok
+test tests::every_code_has_a_unique_message_key ... ok
+test tests::every_code_is_listed_in_all ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_ffi-ba598cc63b55dc85)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/uniffi-bindgen.rs (/tmp/phomu-qa-target2/debug/deps/uniffi_bindgen-6f2b79d96cb3b55a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/generated_bindings.rs (/tmp/phomu-qa-target2/debug/deps/generated_bindings-ec65ae3bf575983b)
+
+running 5 tests
+test the_bindings_are_marked_as_generated ... ok
+test the_kotlin_bindings_carry_the_whole_error_hierarchy ... ok
+test the_kotlin_bindings_carry_the_whole_surface ... ok
+test the_swift_bindings_carry_the_whole_error_hierarchy ... ok
+test the_swift_bindings_carry_the_whole_surface ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/roundtrip.rs (/tmp/phomu-qa-target2/debug/deps/roundtrip-ddb2dd9f39642153)
+
+running 10 tests
+test a_failure_crosses_the_bridge_with_its_code_and_its_key ... ok
+test a_round_runs_over_the_bridge ... ok
+test the_abi_version_is_part_of_the_surface ... ok
+test the_capabilities_of_the_shell_are_reduced_to_what_the_base_knows ... ok
+test the_catalogue_crosses_the_bridge ... ok
+test the_game_can_be_ended ... ok
+test the_media_plan_crosses_the_bridge ... ok
+test the_message_key_crosses_the_bridge ... ok
+test the_reveal_hands_out_the_solution ... ok
+test the_surface_fingerprint_is_stable ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_i18n-943b5dab455fc6d0)
+
+running 10 tests
+test events::tests::every_event_has_a_key ... ok
+test events::tests::the_media_events_are_distinct ... ok
+test events::tests::the_phase_events_map_onto_the_phase_keys ... ok
+test keys::tests::every_key_string_is_unique ... ok
+test keys::tests::every_variant_is_listed_in_all ... ok
+test keys::tests::the_error_keys_use_the_error_namespace ... ok
+test tests::every_event_maps_onto_a_key ... ok
+test tests::every_key_is_dot_separated_and_camel_case ... ok
+test tests::the_key_space_is_closed ... ok
+test tests::the_locale_is_parsed_by_its_primary_subtag ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_media-591cc301908f79e8)
+
+running 16 tests
+test failure::tests::a_countdown_keeps_its_length ... ok
+test failure::tests::a_countdown_of_zero_skips_immediately ... ok
+test failure::tests::every_failure_continues_with_the_next_provider ... ok
+test failure::tests::the_failure_identifiers_are_stable ... ok
+test failure::tests::the_four_failures_are_declared ... ok
+test plan::tests::a_song_without_any_source_produces_an_empty_plan ... ok
+test plan::tests::an_exhausted_chain_has_no_next_candidate ... ok
+test plan::tests::the_fallback_stays_inside_the_kind ... ok
+test plan::tests::the_preferred_provider_comes_first ... ok
+test plan::tests::the_preferred_source_is_not_repeated ... ok
+test plan::tests::the_youtube_chain_is_the_universal_fallback ... ok
+test provider::tests::only_the_preview_and_the_deep_link_are_portable ... ok
+test provider::tests::the_provider_identifiers_round_trip ... ok
+test provider::tests::the_provider_kinds_match_the_sources ... ok
+test provider::tests::the_six_providers_are_declared ... ok
+test provider::tests::the_sources_have_the_expected_kind ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/tmp/phomu-qa-target2/debug/deps/phomu_wasm-727ca32b03672341)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/roundtrip.rs (/tmp/phomu-qa-target2/debug/deps/roundtrip-a6b9b7eaaa0ddb2f)
+
+running 3 tests
+test a_failure_crosses_the_bridge_with_its_code_and_its_key ... ok
+test a_round_runs_over_the_wasm_bridge ... ok
+test the_version_is_part_of_the_module ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests catalog_tool
+
+running 2 tests
+test tools/catalog-tool/src/catalogue.rs - catalogue (line 16) ... ok
+test tools/catalog-tool/src/lib.rs - (line 15) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+all doctests ran in 1.77s; merged doctests compilation took 1.72s
+   Doc-tests media_report
+
+running 1 test
+test tools/media-report/src/lib.rs - (line 14) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 1.13s; merged doctests compilation took 1.11s
+   Doc-tests phomu_capi
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests phomu_catalog
+
+running 2 tests
+test core/phomu-catalog/src/lib.rs - (line 17) ... ok
+test core/phomu-catalog/src/validation/mod.rs - validation (line 22) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+all doctests ran in 1.06s; merged doctests compilation took 1.03s
+   Doc-tests phomu_config
+
+running 1 test
+test core/phomu-config/src/lib.rs - (line 28) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.79s; merged doctests compilation took 0.78s
+   Doc-tests phomu_conformance
+
+running 1 test
+test core/phomu-conformance/src/lib.rs - (line 19) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+all doctests ran in 1.21s; merged doctests compilation took 1.20s
+   Doc-tests phomu_core
+
+running 2 tests
+test core/phomu-core/src/facade.rs - facade (line 34) ... ok
+test core/phomu-core/src/lib.rs - (line 20) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+all doctests ran in 1.02s; merged doctests compilation took 0.98s
+   Doc-tests phomu_errors
+
+running 2 tests
+test core/phomu-errors/src/lib.rs - (line 31) ... ok
+test core/phomu-errors/src/lib.rs - PhomuError (line 243) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+all doctests ran in 0.89s; merged doctests compilation took 0.88s
+   Doc-tests phomu_ffi
+
+running 8 tests
+test platform/phomu-ffi/src/abi.rs - abi (line 14) ... ok
+test platform/phomu-ffi/src/answer.rs - answer (line 14) ... ok
+test platform/phomu-ffi/src/core_api.rs - core_api (line 13) ... ok
+test platform/phomu-ffi/src/dto.rs - dto (line 14) ... ok
+test platform/phomu-ffi/src/error.rs - error (line 21) ... ok
+test platform/phomu-ffi/src/lib.rs - (line 28) ... ok
+test platform/phomu-ffi/src/surface.rs - surface (line 14) ... ok
+test platform/phomu-ffi/src/view.rs - view (line 13) ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+all doctests ran in 2.87s; merged doctests compilation took 2.63s
+   Doc-tests phomu_i18n
+
+running 1 test
+test core/phomu-i18n/src/lib.rs - (line 21) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.66s; merged doctests compilation took 0.64s
+   Doc-tests phomu_media
+
+running 1 test
+test core/phomu-media/src/lib.rs - (line 20) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.72s; merged doctests compilation took 0.72s
+   Doc-tests phomu_wasm
+
+running 1 test
+test platform/phomu-wasm/src/json.rs - json (line 14) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 1.21s; merged doctests compilation took 1.20s
+=== EXIT CODE: 0 ===

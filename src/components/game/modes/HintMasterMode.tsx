@@ -14,19 +14,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import { getSpicyColor } from '@/utils/feedback-messages';
-import type { PhomuSong } from '@/types/song';
+import type { RoundQuestion, SongIdentity } from '@/core/types';
+import { disclose, submit } from '@/core/session-service';
 import { PHOMU_CONFIG } from '@/config/game-config';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
-import { censorHint } from '@/utils/censor-utils';
 import {
   CHEAT_PENALTY_HINT_MASTER_MUSIC,
-  hintMasterAward,
   hintMasterPoints,
 } from '@/utils/mode-rules';
 
 interface HintMasterModeProps {
-  song: PhomuSong;
+  question: RoundQuestion;
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -34,7 +33,7 @@ interface HintMasterModeProps {
   ) => void;
 }
 
-export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
+export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
   const { t, i18n } = useTranslation();
   const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
   const [shownHints, setShownHints] = useState(1);
@@ -46,12 +45,13 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
     'both' | 'artist' | 'title' | 'none' | null
   >(null);
   const [cheatUsed, setCheatUsed] = useState(false);
+  const [identity, setIdentity] = useState<SongIdentity | null>(null);
 
   const currentPlayerId = turnOrder[currentTurnIndex];
-  const maxHints = song.hints.length;
+  const maxHints = question.hints.length;
   const points = hintMasterPoints(shownHints);
-  const startSecs = song.previewTimestamp?.start ?? 0;
-  const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
+  const startSecs = question.media.startSeconds;
+  const spicyMessage = useSpicyMessage(wasCorrect!, question.songId);
 
   // Number format of the active locale
   const numberFormat = useMemo(
@@ -67,13 +67,22 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
     }
   }, [shownHints, maxHints]);
 
-  const handleFinalDecision = (knew: 'both' | 'artist' | 'title' | 'none') => {
+  const handleFinalDecision = async (knew: 'both' | 'artist' | 'title' | 'none') => {
     if (done) return;
-    const outcome = hintMasterAward(shownHints, knew);
-    setWasCorrect(outcome.isCorrect);
+    // The core evaluates the answer: the shell does not know the points of
+    // the mode and does not have to keep the rules a second time.
+    const result = await submit({ kind: 'hint-master', level: shownHints, knew });
+    setWasCorrect(result.score.isCorrect);
     setKnewWhat(knew);
     setDone(true);
-    onAnswer(outcome.isCorrect, outcome.points);
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded);
+  };
+
+  // The pilot may show the solution: the base releases the identity of the
+  // song on an explicit command — the question never carries it.
+  const handleShowSolution = async () => {
+    setIdentity(await disclose());
+    setIsRevealed(true);
   };
 
   const handleCheat = () => {
@@ -156,21 +165,14 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               </div>
               <MusicPlayer
                 key={`${shownHints}-${isRevealed}`}
-                songId={song.id}
-                songTitle={song.title}
-                songArtist={song.artist}
-                songPack={song.packs[0]}
-                youtubeLink={song.links.youtube}
-                youtubeAlternatives={
-                  song.links.youtubeAlternatives ??
-                  (song.links.fallbackYoutubeId
-                    ? [song.links.fallbackYoutubeId]
-                    : undefined)
-                }
-                spotifyLink={song.links.spotify}
-                spotifyFreePreview={song.links.spotifyFreePreview}
-                amazonMusicLink={song.links.amazonMusic}
-                amazonPrimePreview={song.links.amazonPrimePreview}
+                songId={question.songId}
+                songPack={question.context.pack ?? undefined}
+                youtubeLink={question.media.youtube}
+                youtubeAlternatives={question.media.youtubeAlternatives}
+                spotifyLink={question.media.spotify ?? undefined}
+                spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+                amazonMusicLink={question.media.amazonMusic ?? undefined}
+                amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
                 startSeconds={startSecs}
                 endSeconds={
                   isRevealed || shownHints === 5
@@ -194,7 +196,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
       {/* Hint list */}
       <div className="space-y-3">
         <AnimatePresence initial={false}>
-          {song.hints.slice(0, shownHints).map((hint, i) => (
+          {question.hints.slice(0, shownHints).map((hint, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 10 }}
@@ -204,7 +206,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               <span className="font-black opacity-20 mr-3 text-xs">
                 0{i + 1}
               </span>
-              {censorHint(hint, song.artist, song.title)}
+              {hint}
             </motion.div>
           ))}
         </AnimatePresence>
@@ -238,7 +240,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
             )}
 
             <button
-              onClick={() => setIsRevealed(true)}
+              onClick={handleShowSolution}
               className="w-full py-5 rounded-3xl bg-[var(--color-accent)] font-black text-lg shadow-xl shadow-[var(--color-accent)]/20 hover:scale-[1.02] active:scale-95 transition-all"
             >
               {t('modes.hint-master.showSolution')}
@@ -256,8 +258,8 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               <p className="text-[10px] font-black uppercase opacity-40 mb-2">
                 {t('modes.hint-master.theAnswerWas')}
               </p>
-              <h3 className="text-2xl font-black">{song.title}</h3>
-              <p className="text-sm opacity-60">{song.artist}</p>
+              <h3 className="text-2xl font-black">{identity?.title}</h3>
+              <p className="text-sm opacity-60">{identity?.artist}</p>
             </div>
 
             <div className="space-y-3">
@@ -329,7 +331,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
           >
             <p
               className="text-lg font-black uppercase italic tracking-tighter"
-              style={{ color: getSpicyColor(wasCorrect!, song.id) }}
+              style={{ color: getSpicyColor(wasCorrect!, question.songId) }}
             >
               {spicyMessage}
             </p>
@@ -343,7 +345,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
                     : t('modes.hint-master.resultNothing')}
             </p>
             <p className="text-sm opacity-60">
-              {song.title} &middot; {song.artist}
+              {identity?.title} &middot; {identity?.artist}
             </p>
             {knewWhat !== 'none' && (
               <p className="text-xs font-black text-[var(--color-accent)]">

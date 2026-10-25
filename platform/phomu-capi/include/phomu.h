@@ -24,7 +24,7 @@ extern "C" {
 
 /* The version of the exported surface. */
 #define PHOMU_ABI_VERSION_MAJOR 1
-#define PHOMU_ABI_VERSION_MINOR 0
+#define PHOMU_ABI_VERSION_MINOR 1
 #define PHOMU_ABI_VERSION_PATCH 0
 
 /* A failure of the base: the stable code, the i18n key and the context.

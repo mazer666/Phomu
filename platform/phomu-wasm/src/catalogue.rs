@@ -5,6 +5,14 @@
 //! WHY the shell hands over the bytes: the base performs no file system
 //! access and no network access; the catalogue arrives as bytes
 //! (docs/design/BUILD-CONTRACT.md § 1.2, rule 1).
+//!
+//! WHY the artefact is compressed: the catalogue is the answer key of the
+//! game. A shell that holds it can solve every round offline. The bytes
+//! therefore travel compressed, and only the bridge inflates them — the
+//! shell never sees a title, an artist or a lyric line
+//! (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+
+use std::io::Read;
 
 use phomu_catalog::{
     Confidence, CoverMode, Difficulty, Links, Lyrics, Pack, PreviewTimestamp, RelationType, Song,
@@ -18,6 +26,48 @@ fn invalid(reason: &str) -> crate::BridgeError {
         message_key: "errors.invalidSongData".to_string(),
         context: std::collections::HashMap::from([("reason".to_string(), reason.to_string())]),
     }
+}
+
+/// The failure of a catalogue that cannot be inflated.
+fn corrupt(reason: &str) -> crate::BridgeError {
+    crate::BridgeError {
+        code: 1203,
+        message_key: "errors.invalidSongData".to_string(),
+        context: std::collections::HashMap::from([("reason".to_string(), reason.to_string())]),
+    }
+}
+
+/// Reads a compressed catalogue artefact.
+///
+/// WHY the artefact is compressed: the catalogue is the answer key. It must
+/// not lie around in the build output as plain text, and it must not reach
+/// the shell in plain text either — the bridge inflates it and hands the
+/// songs to the base (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+///
+/// EXAMPLE: the bytes of `public/data/catalogue.json.gz` become the songs
+/// of the session.
+///
+/// # Errors
+/// Returns the failure of the base when the bytes are not a gzip stream, not
+/// a JSON document or not a catalogue.
+pub fn read_catalogue(compressed: &[u8]) -> Result<Vec<Song>, crate::BridgeError> {
+    let mut plain = Vec::new();
+    let mut decoder = flate2::read::GzDecoder::new(compressed);
+    decoder
+        .read_to_end(&mut plain)
+        .map_err(|reason| corrupt(&format!("the catalogue is not gzip: {reason}")))?;
+    let value: Value = serde_json::from_slice(&plain)
+        .map_err(|reason| corrupt(&format!("the catalogue is not JSON: {reason}")))?;
+    let songs = value
+        .get("songs")
+        .and_then(Value::as_array)
+        .cloned()
+        .unwrap_or_default();
+    let mut parsed = Vec::with_capacity(songs.len());
+    for song in &songs {
+        parsed.push(read_song(song)?);
+    }
+    Ok(parsed)
 }
 
 /// Read one song of the artefact.
@@ -215,3 +265,133 @@ pub fn packs_of(catalogue: &[Song]) -> Vec<Pack> {
     }
     packs
 }
+
+/// The full entry of a song, as the reveal phase needs it.
+///
+/// WHY the reveal carries the whole entry: the reveal is the phase in which
+/// the solution is released. The entry is therefore handed out here and not
+/// before — the question phase never sees it
+/// (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+///
+/// EXAMPLE: the reveal of a Lyrics Labyrinth round shows which line was the
+/// invented one.
+pub fn song_to_json(song: &Song) -> Value {
+    json!({
+        "id": song.id,
+        "title": song.title,
+        "artist": song.artist,
+        "year": song.year,
+        "country": song.country,
+        "genre": song.genre,
+        "coverUrl": song.cover_url,
+        "difficulty": song.difficulty.as_str(),
+        "mood": song.mood,
+        "packs": song.packs,
+        "hints": song.hints,
+        "hintEvidence": song.hint_evidence,
+        "lyrics": song.lyrics.as_ref().map(|lyrics| json!({
+            "real": lyrics.real,
+            "fake": lyrics.fake,
+        })),
+        "isOneHitWonder": song.is_one_hit_wonder,
+        "coverMode": song.cover_mode.as_ref().map(|cover| json!({
+            "relationType": cover.relation_type.as_str(),
+            "originalSongId": cover.original_song_id,
+            "originalArtist": cover.original_artist,
+            "coverArtist": cover.cover_artist,
+            "coverYear": cover.cover_year,
+            "revealPrompt": cover.reveal_prompt,
+            "confidence": cover.confidence.as_str(),
+        })),
+        "previewTimestamp": song.preview_timestamp.map(|window| json!({
+            "start": window.start,
+            "end": window.end,
+        })),
+        "supportedModes": song.supported_modes,
+        "isQRCompatible": song.is_qr_compatible,
+        "links": json!({
+            "youtube": song.links.youtube,
+            "coverLink": song.links.cover_link,
+            "fallbackYoutubeId": song.links.fallback_youtube_id,
+            "youtubeAlternatives": song.links.youtube_alternatives,
+            "spotify": song.links.spotify,
+            "spotifyFreePreview": song.links.spotify_free_preview,
+            "appleMusic": song.links.apple_music,
+            "amazonMusic": song.links.amazon_music,
+            "amazonPrimePreview": song.links.amazon_prime_preview,
+        }),
+    })
+}
+
+/// The entry of a song, as the catalogue browser needs it.
+///
+/// WHY no hints and no lyrics: the browser shows what a visitor may see —
+/// the title, the artist and the cover. The hints and the lyric lines are
+/// the question and the answer of the game and stay in the base
+/// (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+///
+/// EXAMPLE: the browser lists a song with its title and its cover.
+pub fn browse_of(song: &Song) -> Value {
+    json!({
+        "id": song.id,
+        "title": song.title,
+        "artist": song.artist,
+        "year": song.year,
+        "country": song.country,
+        "genre": song.genre,
+        "coverUrl": song.cover_url,
+        "difficulty": song.difficulty.as_str(),
+        "mood": song.mood,
+        "packs": song.packs,
+        "supportedModes": song.supported_modes,
+        "isQRCompatible": song.is_qr_compatible,
+        "hasLyrics": song.has_lyrics(),
+        "links": json!({
+            "youtube": song.links.youtube,
+            "coverLink": song.links.cover_link,
+            "spotify": song.links.spotify,
+            "spotifyFreePreview": song.links.spotify_free_preview,
+            "appleMusic": song.links.apple_music,
+            "amazonMusic": song.links.amazon_music,
+            "amazonPrimePreview": song.links.amazon_prime_preview,
+        }),
+    })
+}
+
+/// The artists of the catalogue, without duplicates.
+///
+/// WHY the pool exists: the Cover Confusion mode offers the artist of the
+/// song and two other artists of the catalogue. The pool therefore belongs
+/// to the catalogue and not to the shell
+/// (`core/phomu-core/src/session/prompt.rs`).
+///
+/// EXAMPLE: the pool of a catalogue of two songs is `["A", "B"]`.
+pub fn artist_pool(catalogue: &[Song]) -> Vec<String> {
+    let mut artists: Vec<String> = Vec::new();
+    for song in catalogue {
+        if !artists.iter().any(|artist| artist == &song.artist) {
+            artists.push(song.artist.clone());
+        }
+    }
+    artists
+}
+
+/// The years of the catalogue, without duplicates and in ascending order.
+///
+/// WHY the scale exists: the Timeline mode draws its axis from the years of
+/// the catalogue. The scale is the same for every round and therefore
+/// carries no information about the round that is running.
+///
+/// EXAMPLE: the scale of a catalogue with the years 1990 and 1985 is
+/// `[1985, 1990]`.
+pub fn year_scale(catalogue: &[Song]) -> Vec<i32> {
+    let mut years: Vec<i32> = Vec::new();
+    for song in catalogue {
+        if !years.contains(&song.year) {
+            years.push(song.year);
+        }
+    }
+    years.sort_unstable();
+    years
+}
+

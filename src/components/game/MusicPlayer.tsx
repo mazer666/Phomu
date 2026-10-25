@@ -10,6 +10,30 @@ import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
+import {
+  extractAmazonTrackId,
+  extractSpotifyTrackId,
+  extractYouTubeId,
+} from './music/media-links';
+import {
+  EMPTY_REPORT_STORAGE,
+  HOUR_MS,
+  MAX_REPORTS_PER_HOUR,
+  buildMissingReportPayload,
+  evaluateMissingReport,
+  missingReportBody,
+  missingReportTitle,
+  type ReportStatus,
+} from './music/missing-report';
+
+/**
+ * The resolution of the Amazon Music links.
+ *
+ * WHY the re-export: the resolver is a pure function of the catalogue, and
+ * the tests of the player address it under the name of the player. The
+ * function itself lives in `music/media-links.ts`.
+ */
+export { extractAmazonTrackId };
 
 interface MusicPlayerProps {
   songId?: string;
@@ -66,65 +90,6 @@ declare global {
   }
 }
 
-/**
- * Helper function for extracting the YouTube video ID
- */
-function extractYouTubeId(url: string): string | null {
-  if (!url) return null;
-  const match = url.match(
-    /(?:youtu\.be\/|youtube\.com\/(?:.*v=|.*\/|.*embed\/|.*vi?\/))([^?&"'>]+)/
-  );
-  return match ? match[1] : url.length === 11 ? url : null;
-}
-
-function extractSpotifyTrackId(value?: string): string | null {
-  if (!value) return null;
-  if (value.startsWith('spotify:track:'))
-    return value.replace('spotify:track:', '').trim() || null;
-  const match = value.match(/open\.spotify\.com\/track\/([a-zA-Z0-9]+)/);
-  return match ? match[1] : null;
-}
-
-/**
- * Extracts the Amazon Music track ASIN from different link shapes.
- *
- * Supported shapes (all of them occur in the catalog):
- *   - https://music.amazon.com/tracks/<ASIN>          (standard shape for a track)
- *   - https://music.amazon.com/albums/<ALBUM>?trackAsin=<ASIN>  (preferred: album + track)
- *   - https://music.amazon.com/albums/<ASIN>            (only if it really is a track)
- *   - https://www.amazon.de/dp/<ASIN>                   (retail link to the track)
- *   - <ASIN>                                           (bare ASIN, as delivered by the old import)
- *
- * Important: an ALBUM ASIN at this position would be found, but the embed
- * then runs into the void. That is why /albums/<ASIN> without trackAsin is
- * only returned when no better shape is available.
- */
-export function extractAmazonTrackId(url?: string): string | null {
-  if (!url) return null;
-
-  // 1) Album page with an explicit track anchor - the most reliable shape
-  const trackAsinMatch = url.match(/trackAsin=([a-zA-Z0-9]{10})/);
-  if (trackAsinMatch) return trackAsinMatch[1];
-
-  // 2) Direkte Track-Seite
-  const tracksMatch = url.match(/\/tracks\/([a-zA-Z0-9]{10})/);
-  if (tracksMatch) return tracksMatch[1];
-
-  // 3) Retail-Link /dp/<ASIN>
-  const dpMatch = url.match(/\/dp\/([a-zA-Z0-9]{10})/);
-  if (dpMatch) return dpMatch[1];
-
-  // 4) Album page without a track anchor - only use it if there is nothing else
-  const albumsMatch = url.match(/\/albums\/([a-zA-Z0-9]{10})/);
-  if (albumsMatch) return albumsMatch[1];
-
-  // 5) Bare ASIN (the old import delivered the ASIN without a URL)
-  const bareMatch = url.trim().match(/^([a-zA-Z0-9]{10})$/);
-  if (bareMatch) return bareMatch[1];
-
-  return null;
-}
-
 export function MusicPlayer({
   songId,
   songTitle,
@@ -175,9 +140,7 @@ export function MusicPlayer({
   const [autoSkipCountdown, setAutoSkipCountdown] = useState<number | null>(
     null
   );
-  const [reportStatus, setReportStatus] = useState<
-    'idle' | 'sent' | 'rate-limited' | 'duplicate'
-  >('idle');
+  const [reportStatus, setReportStatus] = useState<ReportStatus>('idle');
   const skipTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const spotifyFreeAudioRef = useRef<HTMLAudioElement | null>(null);
   const amazonPrimeAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -202,8 +165,6 @@ export function MusicPlayer({
     if (typeof window === 'undefined' || !songId) return;
     const DEVICE_KEY = 'phomu-device-id';
     const REPORT_KEY = 'phomu-missing-report-state-v1';
-    const HOUR_MS = 60 * 60 * 1000;
-    const MAX_PER_HOUR = 5;
 
     const deviceId = localStorage.getItem(DEVICE_KEY) ?? crypto.randomUUID();
     localStorage.setItem(DEVICE_KEY, deviceId);
@@ -215,15 +176,14 @@ export function MusicPlayer({
           timestamps: number[];
           songs: Record<string, number>;
         })
-      : { timestamps: [], songs: {} };
-    const recent = parsed.timestamps.filter((ts) => now - ts < HOUR_MS);
+      : EMPTY_REPORT_STORAGE;
 
-    if (parsed.songs[songId]) {
+    const decision = evaluateMissingReport(parsed, songId, now);
+    if (decision.kind === 'duplicate') {
       setReportStatus('duplicate');
       return;
     }
-
-    if (recent.length >= MAX_PER_HOUR) {
+    if (decision.kind === 'rate-limited') {
       setReportStatus('rate-limited');
       return;
     }
@@ -231,11 +191,11 @@ export function MusicPlayer({
     const region = (
       navigator.language.split('-')[1] ?? 'unknown'
     ).toUpperCase();
-    const issuePayload = {
+    const issuePayload = buildMissingReportPayload({
       songId,
-      songTitle: songTitle ?? null,
-      songArtist: songArtist ?? null,
-      songPack: songPack ?? null,
+      songTitle,
+      songArtist,
+      songPack,
       preferredMusicProvider,
       hasYoutube: !!youtubeLink,
       hasSpotify: !!spotifyLink,
@@ -246,26 +206,14 @@ export function MusicPlayer({
       locale: navigator.language,
       region,
       deviceId,
-      timestamp: new Date(now).toISOString(),
-    };
+      now,
+    });
 
     const issueUrlBase = process.env.NEXT_PUBLIC_GITHUB_ISSUE_URL;
     if (issueUrlBase) {
       const issueUrl = new URL(issueUrlBase);
-      issueUrl.searchParams.set(
-        'title',
-        `[Missing Link] ${songArtist ?? 'Unknown Artist'} - ${songTitle ?? songId}`
-      );
-      issueUrl.searchParams.set(
-        'body',
-        [
-          '## Missing Playback Report (Auto-generated)',
-          '',
-          '```json',
-          JSON.stringify(issuePayload, null, 2),
-          '```',
-        ].join('\n')
-      );
+      issueUrl.searchParams.set('title', missingReportTitle(issuePayload));
+      issueUrl.searchParams.set('body', missingReportBody(issuePayload));
       window.open(issueUrl.toString(), '_blank', 'noopener,noreferrer');
     } else {
       void navigator.clipboard?.writeText(
@@ -273,6 +221,7 @@ export function MusicPlayer({
       );
     }
 
+    const recent = parsed.timestamps.filter((ts) => now - ts < HOUR_MS);
     localStorage.setItem(
       REPORT_KEY,
       JSON.stringify({

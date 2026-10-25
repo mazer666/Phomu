@@ -29,6 +29,7 @@ import type {
 } from '@/types/game-state';
 import type { Player, Team } from '@/types/player';
 import type { PhomuSong } from '@/types/song';
+import type { RoundQuestion } from '@/core/types';
 import { censorHint } from '@/utils/censor-utils';
 import { buildSituation, buildSong, toModeSong } from './situation';
 import { filterSongs } from '@/utils/song-picker';
@@ -111,7 +112,8 @@ function applyOp(op: VectorOp, vector: Vector): void {
           `the vector has no song "${op.songId}"`
         );
       }
-      store.drawSong(buildSong(fixture), op.source ?? 'random');
+      drawnSong = buildSong(fixture);
+      store.setQuestion(questionOf(drawnSong, store.currentMode));
       return;
     }
     case 'advancePhase':
@@ -232,7 +234,7 @@ function applyAnswer(
     return;
   }
 
-  const song = state.currentSong;
+  const song = drawnSong;
   if (!song) {
     throw new VectorError(
       'NO_CURRENT_SONG',
@@ -325,7 +327,7 @@ function observe(
     phases,
     currentRound: state.currentRound,
     currentMode: state.currentMode,
-    currentSongId: state.currentSong?.id ?? null,
+    currentSongId: drawnSong?.id ?? null,
     currentSongSource: state.currentSongSource,
     autoDrawIntent: state.autoDrawIntent,
     playerScores,
@@ -353,6 +355,55 @@ function observe(
  * @param vector - the vector to run
  * @returns the observation of the vector
  */
+/**
+ * The song of the running round.
+ *
+ * WHY the harness keeps it next to the store: the store no longer holds the
+ * song of the round — the question view model of the core has no field for
+ * the solution (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001). The
+ * reference implementation still needs the song to evaluate the rules of a
+ * mode, so it keeps it in the harness.
+ */
+let drawnSong: PhomuSong | null = null;
+
+/**
+ * The question of a round, as the store expects it.
+ *
+ * WHY the harness builds one: the reference implementation replays the
+ * vectors without the core. The question carries the identifier of the song
+ * and the mode of the round — the rest is not read by the vectors.
+ */
+function questionOf(song: PhomuSong, mode: GameState['currentMode']): RoundQuestion {
+  return {
+    phase: 'question',
+    roundNumber: 0,
+    mode,
+    hints: song.hints,
+    options: [],
+    identity: null,
+    pointsPossible: 0,
+    answersLocked: false,
+    songId: song.id,
+    media: {
+      youtube: song.links.youtube,
+      youtubeAlternatives: song.links.youtubeAlternatives ?? [],
+      spotify: song.links.spotify ?? null,
+      spotifyFreePreview: song.links.spotifyFreePreview ?? null,
+      amazonMusic: song.links.amazonMusic ?? null,
+      amazonPrimePreview: song.links.amazonPrimePreview ?? null,
+      coverLink: song.links.coverLink ?? null,
+      startSeconds: song.previewTimestamp?.start ?? 0,
+      endSeconds: song.previewTimestamp?.end ?? 0,
+    },
+    context: {
+      timelineYears: [],
+      timelineSlots: [],
+      genre: song.genre,
+      pack: song.packs[0] ?? null,
+    },
+  };
+}
+
 export function runVector(vector: Vector): Observation {
   installEnvironment();
   buildSituation(vector);

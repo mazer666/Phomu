@@ -8,27 +8,12 @@ import type { PhomuSong } from '@/types/song';
 import { SongCard } from '@/components/browse/SongCard';
 import { SongEditor } from '@/components/admin/SongEditor';
 import { useGameStore } from '@/stores/game-store';
-import { ALL_SONGS as DATA_SONGS } from '@/data/songs';
+import { useCatalogueRecords } from '@/hooks/useCatalogueRecords';
+import { readStoredSongs, writeStoredSongs } from '@/utils/song-storage';
 
 // ─── Load data & storage ──────────────────────────────────────────────────
 
-const STORAGE_KEY = 'phomu-admin-songs';
 const PAGE_SIZE_OPTIONS = [8, 24, 48, 96, 'all'] as const;
-
-/** Loads songs from localStorage or falls back to the JSON */
-function loadSongs(): PhomuSong[] {
-  if (typeof window === 'undefined') return DATA_SONGS;
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
-  } catch {}
-  return DATA_SONGS;
-}
-
-/** Speichert Songs in localStorage */
-function saveSongsToStorage(songs: PhomuSong[]) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(songs));
-}
 
 // ─── Helper functions ─────────────────────────────────────────────────────────
 
@@ -54,7 +39,11 @@ export default function BrowsePage() {
   const router = useRouter();
   const startQuickGame = useGameStore((state) => state.startQuickGame);
 
-  const [allSongs, setAllSongs] = useState<PhomuSong[]>(loadSongs);
+  // The catalogue comes from the base: it is the answer key of the game and
+  // it must not be part of the bundle (docs/qa/QA-02-SPOILER-FREENESS.md,
+  // QA-SPO-001).
+  const { records, isLoading } = useCatalogueRecords();
+  const [allSongs, setAllSongs] = useState<PhomuSong[]>([]);
   const [adminMode, setAdminMode] = useState(false);
   const [editingSong, setEditingSong] = useState<PhomuSong | null>(null);
   const [showHints, setShowHints] = useState(false);
@@ -76,6 +65,13 @@ export default function BrowsePage() {
   // Pagination State
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState<number | 'all'>(24);
+
+  // The list is filled when the records of the base arrive. The edits of the
+  // browser win over the catalogue — they are the newer state.
+  useEffect(() => {
+    if (records.length === 0) return;
+    setAllSongs(readStoredSongs() ?? records);
+  }, [records]);
 
   // Reset page when filters change
   useEffect(() => {
@@ -163,7 +159,7 @@ export default function BrowsePage() {
       const next = isExisting
         ? prev.map((s) => (s.id === updated.id ? updated : s))
         : [...prev, updated];
-      saveSongsToStorage(next);
+      writeStoredSongs(next);
       return next;
     });
     setEditingSong(null);
@@ -171,7 +167,7 @@ export default function BrowsePage() {
 
   const handlePlaySong = useCallback(
     (song: PhomuSong) => {
-      startQuickGame(song);
+      startQuickGame(song.id);
       router.push('/game');
     },
     [startQuickGame, router]

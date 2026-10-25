@@ -1,0 +1,50 @@
+{
+  "$comment": [
+    "The recorded state of every known legacy file above the soft limit.",
+    "Source of truth: ARCHITECTURE.md §6.1, REQUIREMENTS.md NFR-009 / GAP-007.",
+    "The gate scripts/check-file-size.mjs reads this table and rewrites it",
+    "when a legacy file shrinks. A new file above the soft limit is an error",
+    "and is therefore never recorded here.",
+    "Change a recorded state upward only together with an ADR."
+  ],
+  "schemaVersion": 1,
+  "softLimit": 400,
+  "hardLimit": 550,
+  "exceptions": {
+    "src/app/admin/review/page.tsx": {
+      "lines": 863,
+      "reason": "Admin review page (GAP-007, QA-09 item 2.2): split into the song list and the song editor.",
+      "history": "The exception was introduced with 755 lines; the file grew by 108 lines before the gate was able to fail (QA-ARC-001)."
+    },
+    "src/app/browse/page.tsx": {
+      "lines": 763,
+      "reason": "Browse page (GAP-007, QA-09 item 2.2): separate the search field, the list and the filters.",
+      "history": "The exception was introduced with 572 lines; the file grew by 195 lines before the gate was able to fail (QA-ARC-001)."
+    },
+    "src/app/lobby/page.tsx": {
+      "lines": 1050,
+      "reason": "Lobby page (GAP-007, QA-09 item 2.2): split into the lobby, the player list and the mode selection.",
+      "history": "The exception was introduced with 744 lines; the file grew by 306 lines before the gate was able to fail (QA-ARC-001)."
+    },
+    "src/app/projector/page.tsx": {
+      "lines": 434,
+      "reason": "Projector page (QA-09 item 2.2): split into the projector view and the projector controls.",
+      "history": "The file was already above the soft limit when the gate became able to fail (QA-ARC-001)."
+    },
+    "src/components/game/MusicPlayer.tsx": {
+      "lines": 732,
+      "reason": "MusicPlayer (GAP-007, QA-09 item 2.2): extract one provider adapter per provider.",
+      "history": "The exception was introduced with 630 lines; the file grew by 153 lines before the gate was able to fail (QA-ARC-001)."
+    },
+    "src/utils/mode-rules.ts": {
+      "lines": 416,
+      "reason": "Mode rules (QA-09 item 2.2): split into one rule module per game mode.",
+      "history": "The file was already above the soft limit when the gate became able to fail (QA-ARC-001)."
+    },
+    "src/utils/validate-song-data.ts": {
+      "lines": 817,
+      "reason": "Schema and limit checks (GAP-007, QA-09 item 2.2): split into song schema, song limits and catalogue validation.",
+      "history": "The exception was introduced with 502 lines; the file grew by 315 lines before the gate was able to fail (QA-ARC-001)."
+    }
+  }
+}

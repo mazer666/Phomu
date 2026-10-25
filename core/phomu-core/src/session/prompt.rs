@@ -159,6 +159,25 @@ impl Session {
         }
     }
 
+    /// The identity of the song of the round, if there is one.
+    ///
+    /// WHY the identity leaves the base on an explicit command: the
+    /// Hint-Master lets the pilot show the solution before the table
+    /// answers, and the Survivor lets a player buy the name of the artist.
+    /// The identity therefore never travels with the question view model —
+    /// it is released when the round asks for it
+    /// (docs/design/PLATFORM-ARCHITECTURE.md § 10.2, rule C-1).
+    ///
+    /// EXAMPLE: the pilot of a Hint-Master round asks for the identity and
+    /// gets the title and the artist of the song.
+    pub fn disclose_identity(&self) -> Option<SongIdentity> {
+        self.state.round.song.as_ref().map(|song| SongIdentity {
+            title: song.title.clone(),
+            artist: song.artist.clone(),
+            year: song.year,
+        })
+    }
+
     /// The view model of the drawing phase.
     ///
     /// WHY: the drawing phase knows nothing about the song; the shell only

@@ -12,24 +12,31 @@
 //! module, and the format is the same as the one of the C-ABI bridge, so
 //! that the two profiles of the wire model agree (BRIDGE-110).
 //!
-//! WHY this crate is not in the application yet: the migration of the web
-//! shell onto the shared base is a separate step
-//! (docs/design/PLATFORM-ARCHITECTURE.md § 5.3). The crate is the
-//! foundation of that step.
+//! WHY the crate is in the application now: the web shell runs on the base
+//! since the remediation of the answer key
+//! (docs/qa/QA-09-REMEDIATION-BACKLOG.md § 1.1). The shell loads the
+//! module as a static asset and plays every round through it.
 //!
 //! EXAMPLE:
 //!
 //! ```text
-//! wasm-pack build platform/phomu-wasm --target web
+//! node scripts/build-wasm.mjs
 //! ```
 
 #![forbid(unsafe_code)]
 #![deny(missing_docs)]
 
+pub mod answer;
 pub mod catalogue;
+pub mod catalogue_exports;
+pub mod catalogue_view;
 pub mod config;
+pub mod exports;
 pub mod json;
+pub mod round;
 pub mod session;
+pub mod session_answers;
+pub mod session_commands;
 
 use std::cell::RefCell;
 use std::collections::HashMap;
@@ -57,13 +64,13 @@ pub struct SessionEntry {
 }
 
 /// Take the next free identifier of the registry.
-fn take_id(registry: &mut Registry) -> u64 {
+pub(crate) fn take_id(registry: &mut Registry) -> u64 {
     registry.next_id += 1;
     registry.next_id
 }
 
 thread_local! {
-    static REGISTRY: RefCell<Registry> = RefCell::new(Registry::default());
+    pub(crate) static REGISTRY: RefCell<Registry> = RefCell::new(Registry::default());
 }
 
 /// The failure of the bridge, as the browser sees it.
@@ -76,6 +83,18 @@ pub struct BridgeError {
     pub message_key: String,
     /// The context of the failure.
     pub context: HashMap<String, String>,
+}
+
+impl From<BridgeError> for JsValue {
+    /// The failure as the browser sees it.
+    ///
+    /// WHY a JSON document: the wire format of the bridge is JSON
+    /// (BRIDGE-110). The browser therefore reads the code, the key and the
+    /// context of the failure out of the document.
+    fn from(failure: BridgeError) -> Self {
+        let document = serde_json::to_string(&failure).unwrap_or_default();
+        JsValue::from_str(&document)
+    }
 }
 
 impl From<&phomu_errors::PhomuError> for BridgeError {
@@ -92,129 +111,45 @@ impl From<&phomu_errors::PhomuError> for BridgeError {
     }
 }
 
-/// The version of the exported surface.
-#[wasm_bindgen]
-pub fn phomu_abi_version() -> String {
-    phomu_core::facade::abi_version()
-}
-
-/// Every major version of the surface the base still serves.
-#[wasm_bindgen]
-pub fn phomu_abi_versions() -> Vec<String> {
-    phomu_core::facade::abi_versions()
-}
-
-/// Open a catalogue and return its handle.
-///
-/// # Errors
-/// Returns the failure of the base when the artefact cannot be read.
-pub fn phomu_catalog_open(source: &str) -> Result<u64, BridgeError> {
-    let value: serde_json::Value = serde_json::from_str(source).map_err(|reason| BridgeError {
+/// The failure of a document that is not JSON.
+pub(crate) fn broken_document(reason: String) -> BridgeError {
+    BridgeError {
         code: 1203,
         message_key: "errors.invalidSongData".to_string(),
-        context: HashMap::from([("reason".to_string(), reason.to_string())]),
-    })?;
-    let songs = value
-        .get("songs")
+        context: HashMap::from([("reason".to_string(), reason)]),
+    }
+}
+
+/// The list of a JSON document.
+pub(crate) fn list_of(source: &str, field: &str) -> Result<Vec<serde_json::Value>, BridgeError> {
+    let value: serde_json::Value =
+        serde_json::from_str(source).map_err(|reason| broken_document(reason.to_string()))?;
+    Ok(value
+        .get(field)
         .and_then(serde_json::Value::as_array)
         .cloned()
-        .unwrap_or_default();
-    let mut parsed = Vec::with_capacity(songs.len());
-    for song in &songs {
-        parsed.push(catalogue::read_song(song)?);
+        .unwrap_or_default())
+}
+
+/// The document of a JSON text.
+pub(crate) fn document_of(source: &str) -> Result<serde_json::Value, BridgeError> {
+    serde_json::from_str(source).map_err(|reason| broken_document(reason.to_string()))
+}
+
+/// The failure of a session the registry does not know.
+pub(crate) fn unknown_session(handle: u64) -> BridgeError {
+    BridgeError {
+        code: 1001,
+        message_key: "errors.invalidConfiguration".to_string(),
+        context: HashMap::from([("session".to_string(), handle.to_string())]),
     }
-    Ok(REGISTRY.with(|registry| {
-        let mut registry = registry.borrow_mut();
-        let id = take_id(&mut registry);
-        registry.catalogues.insert(id, parsed);
-        id
-    }))
 }
 
-/// The songs of an open catalogue.
-///
-/// # Errors
-/// Returns the failure of the base when the handle is unknown.
-pub fn phomu_catalog_songs(handle: u64) -> Result<Vec<serde_json::Value>, BridgeError> {
-    REGISTRY.with(|registry| {
-        let registry = registry.borrow();
-        let Some(catalogue) = registry.catalogues.get(&handle) else {
-            return Err(BridgeError {
-                code: 1001,
-                message_key: "errors.invalidConfiguration".to_string(),
-                context: HashMap::from([("catalogue".to_string(), handle.to_string())]),
-            });
-        };
-        Ok(catalogue.iter().map(catalogue::summary_of).collect())
-    })
-}
-
-/// The packs of an open catalogue.
-///
-/// # Errors
-/// Returns the failure of the base when the handle is unknown.
-pub fn phomu_catalog_packs(handle: u64) -> Result<Vec<serde_json::Value>, BridgeError> {
-    session::packs(handle)
-}
-
-/// The state of a session.
-///
-/// # Errors
-/// Returns the failure of the base when the handle is unknown.
-pub fn phomu_session_snapshot(handle: u64) -> Result<serde_json::Value, BridgeError> {
-    session::snapshot(handle)
-}
-
-/// The JSON of the plan of the media of the running round.
-///
-/// # Errors
-/// Returns the failure of the base when no song is drawn.
-pub fn phomu_media_plan(handle: u64) -> Result<serde_json::Value, BridgeError> {
-    REGISTRY.with(|registry| {
-        let registry = registry.borrow();
-        let Some(entry) = registry.sessions.get(&handle) else {
-            return Err(BridgeError {
-                code: 1001,
-                message_key: "errors.invalidConfiguration".to_string(),
-                context: HashMap::from([("session".to_string(), handle.to_string())]),
-            });
-        };
-        let state = entry.session.state();
-        let Some(song) = state.round.song.as_ref() else {
-            return Err(BridgeError {
-                code: 1103,
-                message_key: "errors.noSongDrawn".to_string(),
-                context: HashMap::new(),
-            });
-        };
-        let sources = phomu_core::facade::MediaSources {
-            youtube: Some(song.links.youtube.clone()).filter(|link| !link.is_empty()),
-            youtube_alternatives: song.links.youtube_alternatives.clone(),
-            spotify_embed: song.links.spotify.clone(),
-            spotify_preview: song.links.spotify_free_preview.clone(),
-            amazon_embed: song.links.amazon_music.clone(),
-            amazon_preview: song.links.amazon_prime_preview.clone(),
-            apple_music: song.links.apple_music.clone(),
-        };
-        let plan = phomu_core::facade::MediaPlan::build(
-            state.config.preferred_music_provider,
-            &sources,
-            phomu_core::facade::PlaybackWindow::default(),
-        );
-        Ok(json::media_plan(&plan))
-    })
-}
-
-/// The i18n key of a game event.
-#[wasm_bindgen]
-pub fn phomu_message_key(event: &str) -> String {
-    phomu_core::facade::GameEvent::ALL
-        .iter()
-        .find(|candidate| format!("{candidate:?}") == event)
-        .map(|candidate| {
-            phomu_core::facade::message_key(*candidate)
-                .as_str()
-                .to_string()
-        })
-        .unwrap_or_default()
+/// The failure of a catalogue the registry does not know.
+pub(crate) fn unknown_catalogue(handle: u64) -> BridgeError {
+    BridgeError {
+        code: 1001,
+        message_key: "errors.invalidConfiguration".to_string(),
+        context: HashMap::from([("catalogue".to_string(), handle.to_string())]),
+    }
 }

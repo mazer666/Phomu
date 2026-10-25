@@ -86,6 +86,11 @@ async function main() {
     fs.mkdirSync(COVERS_DIR, { recursive: true });
   }
 
+  // The naming rule is shared with scripts/rename-covers.mjs (ESM module).
+  const { coverFileName } = await import(
+    require('node:url').pathToFileURL(path.join(__dirname, 'lib/cover-name.mjs')).href
+  );
+
   const jsonFiles = fs.readdirSync(PACKS_DIR).filter(f => f.endsWith('.json'));
   console.log(`\n🚀 Phomu Cover Art Fetcher`);
   console.log(`📁 Scanning ${jsonFiles.length} packs...\n`);
@@ -106,7 +111,10 @@ async function main() {
     for (const song of pack.songs) {
       if (processedCount >= LIMIT) break;
 
-      const coverFilename = `${song.id}.jpg`;
+      // The file name is opaque: it is derived from the song id, never from
+      // the artist or the title (QA-SPO-002). The rule lives in
+      // scripts/lib/cover-name.mjs and is shared with the rename script.
+      const coverFilename = coverFileName(song.id);
       const coverPath = path.join(COVERS_DIR, coverFilename);
       const relativePath = `/covers/${coverFilename}`;
 

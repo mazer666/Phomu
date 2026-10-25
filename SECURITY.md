@@ -35,6 +35,16 @@ The only server-side boundary in the project is the admin API
 (`src/admin-api/**`). The game does not use it and it is currently not reachable
 (see section 5, item 1).
 
+**Status of the admin API — blocked, with a condition.** The code of the admin
+API is hardened and tested; the **endpoints are not registered in the delivered
+build**. The decision — wire it up (needs the server of the hosting decision)
+or remove the module — belongs to the owner and is recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
+Every statement in section 4 about the admin API therefore describes **code**,
+not a running service. The single test that states the measured reachability is
+`src/admin-api/admin-api-reachability.test.ts`; it turns red as soon as the
+architecture changes.
+
 ---
 
 ## 2. Trust boundaries
@@ -51,7 +61,14 @@ The only server-side boundary in the project is the admin API
 
 The admin API is the only place where Phomu *changes* data. It is protected via the
 header `x-admin-token` against the environment variable
-`ADMIN_API_TOKEN` (`src/admin-api/_lib/security.ts:61-79`).
+`ADMIN_API_TOKEN` (`src/admin-api/_lib/security.ts:81-112`).
+
+**This boundary does not exist in the delivered build.** The two handlers lie in
+`src/admin-api/`, not below `src/app/`, and are therefore not registered by the
+App Router; in addition the build is a static export (`output: 'export'`), which
+cannot execute a route handler at all. The controls below are implemented and
+tested, but there is no reachable endpoint at which they could take effect.
+See F-01 and section 5, item 1.
 
 ### TB-2 — Catalog and cover data against the admin
 
@@ -91,11 +108,11 @@ last one explicitly as *not supported*).
 
 | Attack surface | Attacker | Entry point | Damage potential | Countermeasure | Status |
 |---|---|---|---|---|---|
-| Admin API: token brute force (**F-04**) | Unauthorised party on the internet | `x-admin-token` on every admin route | Full access to cover import and catalog mutation | Token comparison in constant time (`security.ts:47-51`), minimum length 32 (`security.ts:7`, `:66`), failed attempts are counted per client and globally (`security.ts:84-100`) | **secured (rate limit only per instance)** |
-| Admin API: SSRF via cover URL (**F-02**) | Attacker with a valid token or a compromised cover host | `imageUrl` in `POST /admin/covers/save` | Access to internal services (metadata endpoint, internal APIs) of the admin server | HTTPS mandatory, host allowlist, **check of every redirect hop**, maximum 3 hops (`security.ts:280-310`) | **secured** (previously only the first URL was checked) |
-| Admin API: DoS through a large file (**F-03**) | Attacker with a valid token | Cover download | Filling up the memory and disk of the server | Streaming read with a hard limit of 5 MB (`security.ts:211-250`), JSON responses limited to 512 KB (`search/route.ts:77`, `:95`) | **secured** |
-| Admin API: lock deadlock (**F-11**) | Crash of the process during a save operation | `.covers-save.lock` | Cover saving permanently blocked (503) | A stale lock (older than 120 s) is detected and released (`save/route.ts:31`, `:69-77`) | **secured** |
-| Admin API: error information (**F-10**) | Attacker with a valid token | Error responses of the routes | Disclosure of internal paths, file names, stack parts | Unexpected errors are logged server-side and answered without a detailed response (`save/route.ts:165-167`, `search/route.ts:121-123`) | **secured** |
+| Admin API: token brute force (**F-04**) | Unauthorised party on the internet | `x-admin-token` on every admin route | Full access to cover import and catalog mutation | Token comparison in constant time (`security.ts:63-67`), minimum length 32 (`security.ts:25`), failed attempts are counted per client and globally (`security.ts:118-141`) | **secured in the code, not reachable in the delivered build (F-01)** |
+| Admin API: SSRF via cover URL (**F-02**) | Attacker with a valid token or a compromised cover host | `imageUrl` in `POST /admin/covers/save` | Access to internal services (metadata endpoint, internal APIs) of the admin server | HTTPS mandatory, host allowlist, **check of every redirect hop**, maximum 3 hops (`security.ts:306-330`) | **secured in the code, not reachable in the delivered build (F-01)** |
+| Admin API: DoS through a large file (**F-03**) | Attacker with a valid token | Cover download, oversized request body | Filling up the memory and disk of the server | Streaming read with a hard limit of 5 MB (`hard-limits.ts:52-95`), request body capped at 16 KB (`hard-limits.ts:20`), JSON responses limited to 512 KB (`hard-limits.ts:26`) | **secured in the code, not reachable in the delivered build (F-01)** |
+| Admin API: lock deadlock (**F-11**) | Crash of the process during a save operation | `.covers-save.lock` | Cover saving permanently blocked (503) | A stale lock (older than 120 s) is detected and released (`save/route.ts:37`, `:78-86`) | **secured in the code, not reachable in the delivered build (F-01)** |
+| Admin API: error information (**F-10**) | Attacker with a valid token | Error responses of the routes | Disclosure of internal paths, file names, stack parts | Unexpected errors are logged server-side and answered without a detailed response (`save/route.ts:194-201`, `search/route.ts:156-162`); a missing token and a wrong token produce byte-identical answers, and the two misconfigurations produce byte-identical answers (`admin-api-hardening.test.ts`) | **secured in the code, not reachable in the delivered build (F-01)** |
 | Browser: XSS via catalog or player data (**F-12**) | Attacker who gets data into the catalog or into the local state | Song titles, player names, hints | Execution of scripts in the context of the user | React escapes all text output; `object-src 'none'` in the CSP; no `dangerouslySetInnerHTML` in the project (`grep -rn "dangerouslySetInnerHTML" src` → 0 hits) | **partially secured** (see section 4) |
 | Browser: manipulated game state (**F-15**) | Participant of a party session | `localStorage["phomu-game-state"]` | Manipulate score, players, game mode, XP | None. The server does not know the game state. | **not secured (design)** |
 | Browser: QR code of an attacker | Anyone with access to the camera | `parseQrIntent` | Arbitrarily long strings in the user interface; pack selection | No length limit in `parseQrIntent` | **not secured** (finding **F-06**) |
@@ -112,7 +129,7 @@ part of the handover to the owner. Only the assignment is listed here:
 
 | ID | Short title | Severity | State |
 |---|---|---|---|
-| **F-01** | Admin API is not reachable (no effective token protection) | High | open, deliberately not fixed |
+| **F-01** | Admin API is not reachable (no effective token protection) | High | **blocked** — owner decision, see `docs/cr/CR-0002-admin-api-entscheidung.md`; the decision falls with the hosting decision (QA-09 item 2.6) or with the owner's confirmation that Phomu stays a static export |
 | **F-02** | SSRF via redirect during the cover download | Medium | **fixed** |
 | **F-03** | DoS through an unthrottled download body | Medium | **fixed** |
 | **F-04** | No rate limiting on the admin API | Medium | **fixed** (only effective per instance) |
@@ -128,6 +145,9 @@ part of the handover to the owner. Only the assignment is listed here:
 | **F-14** | Admin token is written to stdout when generated | Info | deliberate, with a note |
 | **F-15** | Game state is manipulable by the user | Info | design decision |
 | **F-16** | Outdated catalog audit report (`specifications/catalog_issues_report.json`) | Info | open, file outside the workspace |
+| **F-17** | The request body of the cover save route was read without a size limit (`request.json()`) | Medium | **fixed** — the body is streamed and cut off at 16 KB (`src/admin-api/_lib/hard-limits.ts`, `readCappedJsonBody`); negative test `refuses an oversized request body with 413 before it is parsed` |
+| **F-18** | The fields of the third-party answer were handed back without a length limit | Low | **fixed** — every field is cut off at 300 characters (`boundedOutputText`); negative test `cuts a field of the third-party answer off at the hard limit` |
+| **F-19** | The two misconfigurations of the server answered with different texts and therefore disclosed whether a usable secret exists | Low | **fixed** — both answer with 503 and the same body (`ADMIN_UNAVAILABLE_MESSAGE`); the reason goes into the log. Negative test `answers a missing configuration and a too short token identically` |
 
 ---
 
@@ -136,17 +156,26 @@ part of the handover to the owner. Only the assignment is listed here:
 All statements with file and line. The negative tests can be found under
 `src/admin-api/*.test.ts` and `src/utils/validate-song-limits.test.ts`.
 
+**Read this first:** sections 4.1 to 4.3 describe the **code** of the admin
+API. The endpoints it describes are **not registered in the delivered build**
+(F-01, section 5 item 1). A control that guards a route nobody can call
+protects nothing today — it is nevertheless the control that becomes effective
+the moment the admin API is wired up, and it is tested against the real
+attack so that it is effective on the day it is switched on.
+
 ### 4.1 Token gate of the admin API
 
 | Measure | Location | Negative test |
 |---|---|---|
-| Missing token → **401** | `src/admin-api/_lib/security.ts:71-74` | `src/admin-api/admin-token-guard.test.ts` → `rejects a request without a token (401)` |
-| Wrong token → **401** | `src/admin-api/_lib/security.ts:71-74` | `src/admin-api/admin-token-guard.test.ts` → `rejects a request with a wrong token (401)` |
-| Not configured → **503** (fail closed) | `src/admin-api/_lib/security.ts:62-64` | `src/admin-api/admin-token-guard.test.ts` → `fail-closed: without a configured env variable the API responds with 503` |
-| Token shorter than 32 characters → **503** | `src/admin-api/_lib/security.ts:66-68` | `src/admin-api/admin-token-guard.test.ts` → `fail-closed: a too short token responds with 503` |
-| Comparison in constant time (`crypto.timingSafeEqual` over SHA-256 digests, so that the buffers are always the same length) | `src/admin-api/_lib/security.ts:47-51` | `src/admin-api/admin-token-guard.test.ts` → `compares the token with timingSafeEqual instead of ===` and `rejects a token with only one correct character (401)` |
-| **No token in the log and no token values in error messages** | `src/admin-api/_lib/security.ts:84-100` (the message contains neither token nor IP) | `src/admin-api/admin-token-guard.test.ts` → `keeps the token value out of responses and logs` |
-| Token only as a server environment variable, **no** `NEXT_PUBLIC_*` | `src/admin-api/_lib/security.ts:62` | `grep -rn "NEXT_PUBLIC" src` → only `MusicPlayer.tsx` (`NEXT_PUBLIC_GITHUB_ISSUE_URL`, issue URL, no token) |
+| Missing token → **401** | `src/admin-api/_lib/security.ts:104-109` | `src/admin-api/admin-token-guard.test.ts` → `rejects a request without a token (401)` |
+| Wrong token → **401** | `src/admin-api/_lib/security.ts:104-109` | `src/admin-api/admin-token-guard.test.ts` → `rejects a request with a wrong token (401)` |
+| Not configured → **503** (fail closed) | `src/admin-api/_lib/security.ts:83-91` | `src/admin-api/admin-token-guard.test.ts` → `fail-closed: without a configured env variable the API responds with 503` |
+| Token shorter than 32 characters → **503** | `src/admin-api/_lib/security.ts:92-101` | `src/admin-api/admin-token-guard.test.ts` → `fail-closed: a too short token responds with 503` |
+| Comparison in constant time (`crypto.timingSafeEqual` over SHA-256 digests, so that the buffers are always the same length) | `src/admin-api/_lib/security.ts:63-67` | `src/admin-api/admin-token-guard.test.ts` → `compares the token with timingSafeEqual instead of ===` and `rejects a token with only one correct character (401)` |
+| **No token in the log and no token values in error messages** | `src/admin-api/_lib/security.ts:86`, `:96` (the message contains neither token nor IP) | `src/admin-api/admin-token-guard.test.ts` → `keeps the token value out of responses and logs`; `src/admin-api/admin-api-hardening.test.ts` → `never writes the token into a log line` and `never writes the token into a log line when the token is too short` |
+| **The answer does not tell whether a token exists**: a missing token and a wrong token produce byte-identical answers | `src/admin-api/_lib/security.ts:104-109` | `src/admin-api/admin-api-hardening.test.ts` → `answers a missing token and a wrong token identically` |
+| **The answer does not disclose the state of the server**: "not configured" and "token too short" produce byte-identical answers; the reason goes into the log | `src/admin-api/_lib/security.ts:83-101`, `src/admin-api/_lib/errors.ts:34` | `src/admin-api/admin-api-hardening.test.ts` → `answers a missing configuration and a too short token identically` |
+| Token only as a server environment variable, **no** `NEXT_PUBLIC_*` | `src/admin-api/_lib/security.ts:82` | `grep -rn "NEXT_PUBLIC" src` → only `MusicPlayer.tsx` (`NEXT_PUBLIC_GITHUB_ISSUE_URL`, issue URL, no token) |
 | Token generation with 32 random bytes, minimum length 16 bytes | `scripts/generate-admin-token.js:4-10` | — |
 
 > **Note on the `.env.example`:** The placeholder
@@ -159,29 +188,32 @@ All statements with file and line. The negative tests can be found under
 
 | Measure | Location | Negative test |
 |---|---|---|
-| Failed attempts per client: 10 every 5 minutes | `src/admin-api/_lib/security.ts:19`, `:85` | `src/admin-api/admin-token-guard.test.ts` → `limits brute-force attempts per client (429 after 10 failed attempts)` |
-| Failed attempts globally per instance: 100 every 5 minutes — not circumventable via forged `x-forwarded-for` headers | `src/admin-api/_lib/security.ts:25`, `:86` | `src/admin-api/admin-token-guard.test.ts` → `limits brute-force attempts even when x-forwarded-for is forged` |
-| Cover search: 30 requests per minute and client | `src/admin-api/admin/covers/search/route.ts:43`, `:59` | `src/admin-api/admin-routes-hardening.test.ts` → `responds with 429 when there are too many search requests` |
-| Cover saving: 10 requests per minute and client | `src/admin-api/admin/covers/save/route.ts:34`, `:121` | `src/admin-api/admin-routes-hardening.test.ts` → `responds with 429 when there are too many save requests` |
+| Failed attempts per client: 10 every 5 minutes | `src/admin-api/_lib/security.ts:36`, `:119` | `src/admin-api/admin-token-guard.test.ts` → `limits brute-force attempts per client (429 after 10 failed attempts)` |
+| Failed attempts globally per instance: 100 every 5 minutes — not circumventable via forged `x-forwarded-for` headers | `src/admin-api/_lib/security.ts:49`, `:124` | `src/admin-api/admin-token-guard.test.ts` → `limits brute-force attempts even when x-forwarded-for is forged` |
+| Cover search: 30 requests per minute and client | `src/admin-api/admin/covers/search/route.ts:46`, `:72` | `src/admin-api/admin-routes-hardening.test.ts` → `responds with 429 when there are too many search requests` |
+| Cover saving: 10 requests per minute and client | `src/admin-api/admin/covers/save/route.ts:40`, `:136` | `src/admin-api/admin-routes-hardening.test.ts` → `responds with 429 when there are too many save requests` |
 | The number of stored buckets is limited (10 000), an attacker cannot inflate the memory without bounds | `src/admin-api/_lib/rate-limit.ts:43`, `:65-77` | `src/admin-api/admin-rate-limit.test.ts` → `limits the number of stored keys (no unbounded growth)` |
-| Response with `Retry-After` | `src/admin-api/_lib/security.ts:96-100`, `:104-117` | `src/admin-api/admin-rate-limit.test.ts` → `responds with 429 and Retry-After when the limit is exceeded` |
+| Response with `Retry-After` | `src/admin-api/_lib/security.ts:126-129`, `:147-160` | `src/admin-api/admin-rate-limit.test.ts` → `responds with 429 and Retry-After when the limit is exceeded` |
 
 ### 4.3 Input validation of the admin API
 
 | Measure | Location | Negative test |
 |---|---|---|
-| `songId`: only letters, digits, `-`, `_`; 3–120 characters — **no `.`, no `/`**, so that no path traversal is possible | `src/admin-api/_lib/security.ts:125-130` | `src/admin-api/admin-routes-hardening.test.ts` → `rejects a songId with path segments` |
-| Cover URL: only `https:` | `src/admin-api/_lib/security.ts:155` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a different scheme (file:, data:, javascript:)`, `src/admin-api/admin-routes-hardening.test.ts` → `rejects a plaintext URL` |
-| Cover URL: no embedded credentials (`user:pass@…`) | `src/admin-api/_lib/security.ts:157` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects embedded credentials` |
-| Cover URL: host allowlist (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`) including subdomains | `src/admin-api/_lib/security.ts:136-143`, `src/admin-api/admin/covers/save/route.ts:18` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a URL with a host that is not allowlisted`, `rejects a URL whose host only matches as a suffix` |
-| Internal addresses (`localhost`, `127.0.0.1`, `169.254.169.254`, `[::1]`) are not on the allowlist | `src/admin-api/_lib/security.ts:136-143` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects localhost and internal addresses` |
-| **Redirects are followed manually, every hop is checked again**, maximum 3 hops | `src/admin-api/_lib/security.ts:280-310` | `src/admin-api/cover-fetch-guard.test.ts` → `aborts a redirect into the internal network (SSRF)`, `aborts a redirect to a host that is not allowlisted`, `aborts a redirect to plaintext HTTP`, `follows a redirect within the allowlist`, `aborts a redirect loop at the hop limit` |
-| Response must be `image/*` | `src/admin-api/_lib/security.ts:311-314` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a response that is not an image` |
-| Hard size limit 5 MB, checked **while streaming** (also without `content-length`) | `src/admin-api/_lib/security.ts:13`, `:211-250` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects an oversized file that declares its own size`, `rejects an oversized file that sends no content-length` |
-| JSON responses of the search API limited to 512 KB | `src/admin-api/_lib/security.ts:16`, `search/route.ts:77`, `:95` | — (the mechanism is the same as for the image, tested in `cover-fetch-guard.test.ts`) |
-| Search terms limited to 120 characters, required fields checked | `src/admin-api/_lib/security.ts:118-123`, `search/route.ts:64-73` | `src/admin-api/admin-routes-hardening.test.ts` → `rejects a missing search field with 400`, `rejects an overlong search field with 400` |
-| **Unexpected errors** are answered without a detailed response (500, generic text), details only in the server log | `src/admin-api/admin/covers/save/route.ts:159-168`, `src/admin-api/admin/covers/search/route.ts:114-124` | — (no test; the routes answer with 400/401/429 in the tests above and do not disclose internal paths) |
-| Mutations of the catalog are serialised via a file lock; an orphaned lock (older than 120 s) is released | `src/admin-api/admin/covers/save/route.ts:31`, `:69-77` | — |
+| `songId`: only letters, digits, `-`, `_`; 3–120 characters — **no `.`, no `/`**, so that no path traversal is possible | `src/admin-api/_lib/security.ts:175-180` | `src/admin-api/admin-routes-hardening.test.ts` → `rejects a songId with path segments` |
+| Cover URL: only `https:` | `src/admin-api/_lib/security.ts:214-215` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a different scheme (file:, data:, javascript:)`, `src/admin-api/admin-routes-hardening.test.ts` → `rejects a plaintext URL` |
+| Cover URL: no embedded credentials (`user:pass@…`) | `src/admin-api/_lib/security.ts:216-217` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects embedded credentials` |
+| Cover URL: host allowlist (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`) including subdomains | `src/admin-api/_lib/security.ts:187-190`, `src/admin-api/admin/covers/save/route.ts:19-24` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a URL with a host that is not allowlisted`, `rejects a URL whose host only matches as a suffix` |
+| Internal addresses (`localhost`, `127.0.0.1`, `169.254.169.254`, `[::1]`) are not on the allowlist | `src/admin-api/_lib/security.ts:187-190` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects localhost and internal addresses` |
+| **Redirects are followed manually, every hop is checked again**, maximum 3 hops | `src/admin-api/_lib/security.ts:306-330` | `src/admin-api/cover-fetch-guard.test.ts` → `aborts a redirect into the internal network (SSRF)`, `aborts a redirect to a host that is not allowlisted`, `aborts a redirect to plaintext HTTP`, `follows a redirect within the allowlist`, `aborts a redirect loop at the hop limit` |
+| Response must be `image/*` | `src/admin-api/_lib/security.ts:338-340` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a response that is not an image` |
+| Hard size limit 5 MB, checked **while streaming** (also without `content-length`) | `src/admin-api/_lib/hard-limits.ts:23`, `:52-95` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects an oversized file that declares its own size`, `rejects an oversized file that sends no content-length` |
+| JSON responses of the search API limited to 512 KB | `src/admin-api/_lib/hard-limits.ts:26`, `search/route.ts:94-96`, `:117-119` | — (the mechanism is the same as for the image, tested in `cover-fetch-guard.test.ts`) |
+| Search terms limited to 120 characters, required fields checked | `src/admin-api/_lib/security.ts:164-172`, `search/route.ts:82-89` | `src/admin-api/admin-routes-hardening.test.ts` → `rejects a missing search field with 400`, `rejects an overlong search field with 400` |
+| **Unexpected errors** are answered without a detailed response (500, generic text), details only in the server log | `src/admin-api/admin/covers/save/route.ts:186-202`, `src/admin-api/admin/covers/search/route.ts:148-162` | `src/admin-api/admin-api-hardening.test.ts` → `refuses a malformed request body with 400` and `refuses an oversized request body with 413 before it is parsed` (the routes answer with 400/401/413/429 in the tests above and do not disclose internal paths) |
+| **The request body** of the cover save route is read under a hard limit of 16 KB, before a field is looked at | `src/admin-api/_lib/hard-limits.ts:20`, `:108-120` | `src/admin-api/admin-api-hardening.test.ts` → `refuses an oversized request body with 413 before it is parsed` |
+| **The URL** of a cover is limited to 2048 characters | `src/admin-api/_lib/hard-limits.ts:32`, `src/admin-api/_lib/security.ts:205-206` | `src/admin-api/admin-api-hardening.test.ts` → `refuses an overlong image URL with 400` and `refuses an overlong image URL in the validator itself` |
+| **Every field of the answer** of the search route is cut off at 300 characters; the answer holds at most 10 results, at most 25 entries of a provider are inspected | `src/admin-api/_lib/hard-limits.ts:29`, `:135-141`, `src/admin-api/admin/covers/search/route.ts:53`, `:56`, `:146` | `src/admin-api/admin-api-hardening.test.ts` → `cuts a field of the third-party answer off at the hard limit` and `answers with at most ten results` |
+| Mutations of the catalog are serialised via a file lock; an orphaned lock (older than 120 s) is released | `src/admin-api/admin/covers/save/route.ts:37`, `:78-86` | — |
 
 ### 4.4 Hard limits in the song catalog
 
@@ -264,9 +296,11 @@ This list is the honest other side of section 4.
 
 1. **The admin API is currently not reachable (F-01).** `src/admin-api/**` lies
    outside of `src/app/`. Next.js only registers route handlers below the app
-   router directory; in addition `output: 'export'` excludes route handlers in
-   general. The production build lists 21 static routes — **none** of them is an
-   admin API route:
+   router directory (`node_modules/next/dist/lib/find-pages-dir.js`:
+   `findDir(dir, 'app')` → `<root>/app` or `<root>/src/app`); in addition
+   `output: 'export'` excludes route handlers in general. The production build
+   prints a route list of 20 static routes — **none** of them is an admin API
+   route:
 
    ```
    Route (app)
@@ -293,6 +327,30 @@ This list is the honest other side of section 4.
    protects nothing, because there is no route that reaches it. Anyone who
    changes the catalog today does so via files in the repository — there **no**
    token applies, but the write permission in the repository.
+
+   **The measured evidence (2026-10-25):**
+
+   | # | Measurement | Command | Result |
+   |---|---|---|---|
+   | 1 | The route handlers | `find src -name "route.ts"` | the two admin handlers in `src/admin-api/`, **none** below `src/app/` |
+   | 2 | The route tree of the build | `npm run build` | a printed route list of 20 entries, **none** of them an admin API route |
+   | 3 | The route manifest | `cat .next/app-path-routes-manifest.json` | 21 entries, **no** admin API entry |
+   | 4 | The compiled route handlers | `find .next/server/app -name "route.js"` | only `apple-icon.png/route.js` and `icon.png/route.js` |
+   | 5 | The published artefact | `grep -rn "admin/covers" out/` | **0 hits** |
+   | 6 | Consumers of the module | `grep -rn "admin-api" src/ \| grep -v "^src/admin-api/"` | **0 hits** |
+   | 7 | Calls from the admin user interface | `grep -rn "fetch(" src/app/admin/` | **0 hits** — the pages work on `localStorage` only |
+
+   **The condition under which this item is resolved:** the decision — wire the
+   API up (needs the server of the hosting decision, QA-09 item 2.6) or remove
+   `src/admin-api/` and its test files — belongs to the owner and is recorded
+   in
+   [`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
+   It falls automatically when the hosting model is decided for a host that
+   executes route handlers, or when the owner confirms in writing that Phomu
+   stays a static export without a server. Until then the state is **blocked**,
+   not open and not done. The single test that states the measured reachability
+   is `src/admin-api/admin-api-reachability.test.ts`; it turns red when the
+   architecture changes.
 
 2. **The headers are not delivered (F-05).** See 4.6.
 
@@ -366,8 +424,8 @@ location.
 | `https://music.amazon.com` | Amazon Music embed frame | `src/components/game/MusicPlayer.tsx`, `src={`https://music.amazon.com/embed/track/${amazonTrackId}…`}` |
 | `https://p.scdn.co` | Spotify preview audio (`<audio src=…>`) | `src/components/game/MusicPlayer.tsx`, `<audio src={spotifyFreePreview}>`; host from the catalog, e.g. `src/data/songs/E4.json` |
 | `https://music.amazon.com` | Amazon Prime preview audio (`<audio src=…>`) | `src/components/game/MusicPlayer.tsx`, `<audio src={amazonPrimePreview}>` |
-| `https://itunes.apple.com` | Cover search (only **server-side**, in the admin API) | `src/admin-api/admin/covers/search/route.ts:75` |
-| `https://api.deezer.com` | Cover search (only **server-side**, in the admin API) | `src/admin-api/admin/covers/search/route.ts:92` |
+| `https://itunes.apple.com` | Cover search (only **server-side**, in the admin API — an endpoint that is not registered in the delivered build, see F-01) | `src/admin-api/admin/covers/search/route.ts:93` |
+| `https://api.deezer.com` | Cover search (only **server-side**, in the admin API — an endpoint that is not registered in the delivered build, see F-01) | `src/admin-api/admin/covers/search/route.ts:116` |
 
 **Deliberately not included:**
 
@@ -457,7 +515,7 @@ open gap (section 5, item 7).
 | Security headers in `next.config.ts` | That the headers are **delivered**. With `output: 'export'` they are not. See section 4.6. |
 | Hard limits in the validator | No check of the **contentual** correctness of a song (title, lyrics, links). The validator checks form and size, not truth. |
 | `npm audit --omit=dev` | No statement about the dev dependencies (there are 14 findings there). |
-| Tests of the admin API | No statement about the routes being reachable or correctly configured in operation — the tests call the handlers directly. |
+| Tests of the admin API | No statement about the routes being reachable or correctly configured in operation — the tests call the handlers directly. The single exception is `src/admin-api/admin-api-reachability.test.ts`, which measures the reachability itself and asserts the measured verdict. |
 
 ---
 
@@ -467,5 +525,7 @@ open gap (section 5, item 7).
 - `src/app/privacy/page.tsx`, `src/app/terms/page.tsx` — the version that the user
   reads in the browser.
 - `ARCHITECTURE.md` §6.1 — the admin API boundary and its (missing) reachability.
+- [`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md) — the decision template for the fate of the admin API (wire it up or remove it) and the condition under which the decision falls.
+- `REQUIREMENTS.md`, gap **GAP-030** — the same state in the requirement catalogue.
 - `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md` §5 —
   the security audit the open points come from.

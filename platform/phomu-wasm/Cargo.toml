@@ -24,6 +24,10 @@ phomu-i18n = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 wasm-bindgen = { workspace = true }
+# The catalogue is the answer key of the game. It travels compressed, and only
+# the bridge inflates it — the shell never holds a title, an artist or a lyric
+# line (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
 
 [dev-dependencies]
 phomu-core = { workspace = true }

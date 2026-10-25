@@ -260,6 +260,14 @@ therefore currently **not reachable**; there is also no client call
 (`grep -rn "x-admin-token" src` hits only `security.ts` and the
 two `route.ts`). See §6.1.
 
+**Status: blocked — owner decision.** The two causes are independent: the
+handlers are outside the app directory (the App Router collects only
+`src/app/`), and the build is a static export (which cannot execute a route
+handler at all). The decision — wire it up or remove the module — is recorded
+in [`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md);
+the measured reachability is asserted by
+`src/admin-api/admin-api-reachability.test.ts`.
+
 ### 3.4 Notable but compliant couplings
 
 | Coupling | File | Assessment |
@@ -405,14 +413,16 @@ in the game session and need file system write access.
 | Game state (store, `currentSong`, points, rounds) | The store is the only writing state holder (§4.1). An API that changes the game state creates a second truth. |
 | Catalogue mutation without token | `assertAdminAccess` (`src/admin-api/_lib/security.ts:13-28`) enforces `x-admin-token` against `process.env.ADMIN_API_TOKEN` with `timingSafeEqual` and a minimum length of 32. |
 | Unlimited or unvalidated inputs | `parseSongId` (`:37`), `parseHttpUrl` (`:44`, HTTPS only, allowlist hosts only), `boundedText` (`:30`) |
-| Foreign hosts / arbitrary URLs | `ALLOWED_IMAGE_HOSTS` (`src/admin-api/admin/covers/save/route.ts:11`) |
-| Unlimited file sizes | `MAX_IMAGE_BYTES = 5 * 1024 * 1024` with header **and** content check (`route.ts:10`, `:56-63`) |
+| Foreign hosts / arbitrary URLs | `ALLOWED_IMAGE_HOSTS` (`src/admin-api/admin/covers/save/route.ts:19-24`) |
+| Unlimited file sizes | `MAX_IMAGE_BYTES = 5 * 1024 * 1024` with header **and** content check (`src/admin-api/_lib/hard-limits.ts:23`, `:52-95`); the request body is capped at 16 KB (`:20`) |
 | Database / cloud access | The app is a static export; there is no server database. |
-| Delivering the token to the client | `ADMIN_API_TOKEN` is a server env variable (`security.ts:14`), not a `NEXT_PUBLIC_*`. A client that needs the admin API needs a server-side proxy. |
+| Delivering the token to the client | `ADMIN_API_TOKEN` is a server env variable (`src/admin-api/_lib/security.ts:82`), not a `NEXT_PUBLIC_*`. A client that needs the admin API needs a server-side proxy. |
 
 **Actual status (measured):** `src/admin-api/` contains 3 files, has **0 consumers**
 and is **not reachable** — there is no `route.ts` under `src/app/` and
-`next.config.ts:4` sets `output: 'export'`. See §3.3 A4.
+`next.config.ts:4` sets `output: 'export'`. See §3.3 A4. The fate of the module
+is an open decision of the owner, recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
 
 ### 5.2 i18n boundary
 
@@ -648,7 +658,7 @@ palettes, mode labels. The complete list of locations is in
 | 1 | No `answersLocked`; phase `'locked-in'` is never set | `src/stores/game-store.ts:439`, `src/types/game-state.ts:31` | The reveal is not coupled to "all answers submitted" (ADR-0003) | **open** |
 | 2 | `advancePhase` checks nothing | `src/stores/game-store.ts:439-441` | Every component can switch to every phase | **open** |
 | 3 | `overrideGovernance` is not enforced | `src/types/game-state.ts:93`, `src/app/game/page.tsx:197-210` | The power user menu (`src/components/game/RevealPhase.tsx:604-634`) is reachable for everyone | **open** |
-| 4 | `admin-api/` has 0 consumers and is not reachable | §3.3 A4 | Cover search/save does not work | **open** |
+| 4 | `admin-api/` has 0 consumers and is not reachable | §3.3 A4 | Cover search/save does not work | **blocked** — owner decision, `docs/cr/CR-0002-admin-api-entscheidung.md` |
 | 5 | 56 of 73 source files contain German UI literals | §5.2 | The English interface is incomplete | **resolved** on 2026-10-25: 0 literal texts in 48 checked TSX files (`npm run check:i18n`) |
 | 6 | `scripts/check-file-size.mjs` is missing | `ls scripts/` | The file size gate does not exist; 7 hard violations are unenforced | **resolved** on 2026-10-25: gate exists, 7 legacy debts are recorded as documented exceptions |
 | 7 | `scripts/check-i18n-completeness.mjs` is missing | `ls scripts/` | The completeness of the translation is not checked | **resolved** on 2026-10-25: gate exists, 1231 keys parallel in DE and EN |

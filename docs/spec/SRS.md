@@ -457,9 +457,17 @@ programme.
 
 The admin API is a **web/server** interface: two Next.js route handlers under
 `src/admin-api/admin/covers/`, protected by the `x-admin-token` header with a
-timing-safe comparison (`SEC-001`, `SEC-002`, `src/admin-api/_lib/security.ts:47-78`).
+timing-safe comparison (`SEC-001`, `SEC-002`, `src/admin-api/_lib/security.ts:63-112`).
 It is **not** part of the native shells and not part of the core: the native
 shells consume the catalogue artefact, they do not maintain it (§ 4.7).
+
+**Availability: blocked.** The two handlers are not registered by the App
+Router (they lie outside `src/app/`) and the build is a static export, so there
+is no reachable endpoint. The decision — wire it up or remove the module —
+belongs to the owner and is recorded in
+[`../../docs/cr/CR-0002-admin-api-entscheidung.md`](../../docs/cr/CR-0002-admin-api-entscheidung.md);
+the measured reachability is asserted by
+`src/admin-api/admin-api-reachability.test.ts`.
 
 ### 6.6 Telemetry — the null interface
 

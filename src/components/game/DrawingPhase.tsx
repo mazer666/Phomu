@@ -12,8 +12,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import type { GameMode } from '@/config/game-config';
-import type { PhomuSong } from '@/types/song';
-import { pickRandomSong } from '@/utils/song-picker';
 import {
   DRAW_LABEL_KEYS,
   PILOT_LABEL_KEYS,
@@ -82,7 +80,7 @@ interface DrawingPhaseProps {
   nextPilotName?: string;
   nextPilotColor?: string;
   /** Called when a card has been drawn */
-  onCardDrawn: (song: PhomuSong) => void;
+  onDraw: () => void;
 }
 
 // ─── Component ───────────────────────────────────────────────────
@@ -94,11 +92,11 @@ export function DrawingPhase({
   pilotColor,
   nextPilotName,
   nextPilotColor,
-  onCardDrawn,
+  onDraw,
 }: DrawingPhaseProps) {
   const meta = MODE_META[currentMode];
   const { t } = useTranslation();
-  const { autoDrawIntent, config } = useGameStore();
+  const { autoDrawIntent } = useGameStore();
   const [isDrawing, setIsDrawing] = useState(false);
   const [error, setError] = useState('');
 
@@ -119,25 +117,14 @@ export function DrawingPhase({
     setIsDrawing(true);
     setError('');
 
-    const song = pickRandomSong({
-      playedIds: playedSongIds,
-      selectedPacks: config.selectedPacks,
-      difficulty: config.difficulty,
-      onlyQRCompatible: config.onlyQRCompatible,
-      currentMode: currentMode,
-    });
-    if (!song) {
-      setError(t('game.drawing.noSongsError'));
-      setIsDrawing(false);
-      return;
-    }
-
-    // Short delay for the animation, then hand the song to the parent
+    // Short delay for the animation, then let the core draw the song. The
+    // core owns the catalogue — the shell never holds it
+    // (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
     setTimeout(() => {
-      onCardDrawn(song);
+      onDraw();
       setIsDrawing(false);
     }, 600);
-  }, [isDrawing, playedSongIds, onCardDrawn, config, currentMode, t]);
+  }, [isDrawing, onDraw]);
 
   // AUTO-DRAW: if we arrive here after a skip, draw automatically
   useEffect(() => {

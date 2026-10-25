@@ -6,6 +6,20 @@ import {
   getClientKey,
   type RateLimitOptions,
 } from './rate-limit';
+import {
+  ADMIN_UNAVAILABLE_MESSAGE,
+  AdminRequestError,
+} from './errors';
+import {
+  MAX_IMAGE_BYTES,
+  MAX_JSON_BYTES,
+  MAX_REQUEST_BODY_BYTES,
+  MAX_RESULT_FIELD_LENGTH,
+  MAX_URL_LENGTH,
+  boundedOutputText,
+  readCappedBody,
+  readCappedJsonBody,
+} from './hard-limits';
 
 const DEFAULT_TIMEOUT_MS = 7000;
 const MIN_ADMIN_TOKEN_LENGTH = 32;
@@ -13,11 +27,18 @@ const MIN_ADMIN_TOKEN_LENGTH = 32;
 /** Maximum number of redirects that are followed for an external image. */
 export const MAX_REDIRECTS = 3;
 
-/** Hard limit for a downloaded cover image (5 MB). */
-export const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
-
-/** Hard limit for a JSON answer of a third-party search API (512 KB). */
-export const MAX_JSON_BYTES = 512 * 1024;
+// The public surface of the admin API is re-exported from one place, so
+// that a route never has to know in which module a limit lives.
+export { AdminRequestError };
+export {
+  MAX_IMAGE_BYTES,
+  MAX_JSON_BYTES,
+  MAX_REQUEST_BODY_BYTES,
+  MAX_RESULT_FIELD_LENGTH,
+  MAX_URL_LENGTH,
+  boundedOutputText,
+  readCappedJsonBody,
+};
 
 /** Failed authentication attempts per client and window. */
 const AUTH_FAILURE_LIMIT: RateLimitOptions = {
@@ -33,21 +54,6 @@ const AUTH_FAILURE_GLOBAL_LIMIT: RateLimitOptions = {
   limit: 100,
   windowMs: 5 * 60_000,
 };
-
-/**
- * Error with an explicit HTTP status. The message of this error is safe to
- * return to the caller - it never contains a token, a path of the server
- * or a value of the request.
- */
-export class AdminRequestError extends Error {
-  status: number;
-
-  constructor(message: string, status: number) {
-    super(message);
-    this.name = 'AdminRequestError';
-    this.status = status;
-  }
-}
 
 /**
  * Compares two tokens without leaking their common prefix through the
@@ -67,18 +73,30 @@ function timingSafeEqual(a: string, b: string): boolean {
  * The token is never written to a log, an error message or a response
  * body. A rejected request only reports *why* it was rejected
  * ("missing", "invalid", "rate limited") - never a token value.
+ *
+ * A missing token and a wrong token produce the **same** status and the
+ * **same** body. The answer therefore does not tell an unauthenticated
+ * caller whether a token exists at all.
  */
 export function assertAdminAccess(request: Request): NextResponse | null {
   const expectedToken = process.env.ADMIN_API_TOKEN;
   if (!expectedToken) {
+    // The reason goes into the log, the answer stays uniform. The log
+    // carries no token value - the token is not set.
+    console.warn('[admin-api] ADMIN_API_TOKEN is not configured');
     return NextResponse.json(
-      { error: 'Admin API not configured' },
+      { error: ADMIN_UNAVAILABLE_MESSAGE },
       { status: 503 }
     );
   }
   if (expectedToken.length < MIN_ADMIN_TOKEN_LENGTH) {
+    // The reason goes into the log, the answer stays uniform. Only the
+    // length is logged, never the value.
+    console.warn(
+      `[admin-api] ADMIN_API_TOKEN is too short (${expectedToken.length} characters, ${MIN_ADMIN_TOKEN_LENGTH} required)`
+    );
     return NextResponse.json(
-      { error: 'Admin API token too short' },
+      { error: ADMIN_UNAVAILABLE_MESSAGE },
       { status: 503 }
     );
   }
@@ -175,8 +193,17 @@ export function assertAllowedHost(url: URL, allowHosts: string[]): void {
   if (!hostAllowed) throw new Error('Image host not allowed');
 }
 
+/**
+ * Parses an image URL and checks it against the allowlist.
+ *
+ * The length of the URL is limited as well: a URL is a string that the
+ * caller controls, and a 2 MB URL would be copied into every log line and
+ * into every upstream request.
+ */
 export function parseHttpUrl(raw: unknown, allowHosts: string[]): URL {
   if (typeof raw !== 'string') throw new Error('imageUrl must be a string');
+  if (raw.length > MAX_URL_LENGTH)
+    throw new Error('imageUrl is too long');
 
   let parsed: URL;
   try {
@@ -239,56 +266,6 @@ export async function fetchWithTimeout(
   } finally {
     clearTimeout(timeout);
   }
-}
-
-/**
- * Reads a response body and aborts as soon as more than `maxBytes` bytes
- * arrive. The body is streamed instead of buffered completely, so a server
- * that omits `content-length` cannot exhaust the memory of the process.
- */
-async function readCappedBody(
-  response: Response,
-  maxBytes: number
-): Promise<ArrayBuffer> {
-  const lengthHeader = response.headers.get('content-length');
-  if (lengthHeader) {
-    const declared = Number(lengthHeader);
-    if (Number.isFinite(declared) && declared > maxBytes) {
-      throw new AdminRequestError('Payload too large', 413);
-    }
-  }
-
-  if (!response.body) return new ArrayBuffer(0);
-
-  const reader = response.body.getReader();
-  const chunks: Uint8Array[] = [];
-  let total = 0;
-
-  try {
-    for (;;) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      if (!value) continue;
-
-      total += value.byteLength;
-      if (total > maxBytes) {
-        await reader.cancel().catch(() => undefined);
-        throw new AdminRequestError('Payload too large', 413);
-      }
-      chunks.push(value);
-    }
-  } finally {
-    reader.releaseLock();
-  }
-
-  const result = new ArrayBuffer(total);
-  const view = new Uint8Array(result);
-  let offset = 0;
-  for (const chunk of chunks) {
-    view.set(chunk, offset);
-    offset += chunk.byteLength;
-  }
-  return result;
 }
 
 export interface GuardedBinaryOptions {

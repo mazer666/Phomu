@@ -410,7 +410,7 @@ The web shell keeps everything that is a surface concern:
 | i18next + react-i18next, the locale files | [`../../src/i18n/config.ts`](../../src/i18n/config.ts), 1,258 keys per locale |
 | The Zustand store — **reduced to a projection** of the base's session snapshot | [`../../src/stores/game-store.ts`](../../src/stores/game-store.ts) |
 | The catalogue delivery (as a fetched asset instead of a bundled JSON import) | [`../../src/data/songs/index.ts`](../../src/data/songs/index.ts) (297 lines, generated) |
-| The admin API boundary and the localStorage keys | [`../../src/admin-api/_lib/security.ts`](../../src/admin-api/_lib/security.ts) |
+| The admin API boundary and the localStorage keys | [`../../src/admin-api/_lib/security.ts`](../../src/admin-api/_lib/security.ts) — the boundary is hardened, but it is **not reachable** in the delivered build: the handlers live outside `src/app/` and the build is a static export. See [`../../SECURITY.md`](../../SECURITY.md) §5 item 1 and [`../cr/CR-0002-admin-api-entscheidung.md`](../cr/CR-0002-admin-api-entscheidung.md) |
 
 ### 5.2 What migrates into the base
 

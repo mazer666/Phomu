@@ -10,6 +10,7 @@ import {
   fetchGuardedBinary,
   parseHttpUrl,
   parseSongId,
+  readCappedJsonBody,
 } from '@/admin-api/_lib/security';
 
 const PACKS_DIR = path.join(process.cwd(), 'src/data/songs');
@@ -140,7 +141,10 @@ export async function POST(request: Request) {
   if (rateLimitError) return rateLimitError;
 
   try {
-    const body = (await request.json()) as {
+    // The body is read under a hard size limit. `request.json()` would
+    // put an arbitrarily large body into the memory of the process before
+    // a single field is looked at.
+    const body = (await readCappedJsonBody(request)) as {
       songId?: unknown;
       imageUrl?: unknown;
     };

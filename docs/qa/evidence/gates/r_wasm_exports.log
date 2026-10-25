@@ -1,0 +1,36 @@
+=== MEASUREMENT: the export section of the compiled WebAssembly module ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout of HEAD) ===
+=== ARTIFACT: /tmp/phomu-qa-target3/wasm32-unknown-unknown/release/phomu_wasm.wasm ===
+=== DATE: 2026-10-25T17:02:20Z ===
+=== METHOD: the export section (section id 7) of the wasm binary is parsed directly.
+=== The wasm-bindgen mangling appends a hash; the prefix is the symbol name.
+
+artifact: /tmp/phomu-qa-target3/wasm32-unknown-unknown/release/phomu_wasm.wasm 45529 bytes
+total export entries: 76 | exported functions: 73
+
+The 'phomu_*' functions the module exports to JavaScript:
+    phomu_abi_version_b6e0a3915819d4dd
+    phomu_abi_versions_b6e0a3915819d4dd
+    phomu_message_key_b6e0a3915819d4dd
+
+The 'phomu_*' functions the crate declares for the shell:
+   phomu_abi_version        EXPORTED
+   phomu_abi_versions       EXPORTED
+   phomu_catalog_open       NOT EXPORTED
+   phomu_catalog_packs      NOT EXPORTED
+   phomu_catalog_songs      NOT EXPORTED
+   phomu_session_snapshot   NOT EXPORTED
+   phomu_media_plan         NOT EXPORTED
+   phomu_message_key        EXPORTED
+
+The game loop of platform/phomu-wasm/src/session.rs — no 'phomu_' prefix, no #[wasm_bindgen]:
+   new_session              NOT EXPORTED
+   start_game               NOT EXPORTED
+   draw_song                NOT EXPORTED
+   submit_answer            NOT EXPORTED
+   reveal                   NOT EXPORTED
+   next_round               NOT EXPORTED
+   end_game                 NOT EXPORTED
+   snapshot                 NOT EXPORTED
+   packs                    NOT EXPORTED
+=== EXIT CODE: 0 ===

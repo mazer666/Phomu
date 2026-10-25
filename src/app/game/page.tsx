@@ -14,24 +14,14 @@
 
 import { useEffect, useState, useCallback, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
+import { useCoreRound } from '@/hooks/useCoreSession';
 import { GameHeader } from '@/components/game/GameHeader';
+import { GamePhaseArea } from '@/components/game/GamePhaseArea';
 import { Scoreboard } from '@/components/game/Scoreboard';
-import { DrawingPhase } from '@/components/game/DrawingPhase';
-import { QuestionPhase } from '@/components/game/QuestionPhase';
-import { RevealPhase } from '@/components/game/RevealPhase';
-import type { PhomuSong } from '@/types/song';
 import type { PlayerAnswer } from '@/types/game-state';
-
-// ─── Transition animation ───────────────────────────────────────────
-
-const PHASE_VARIANTS = {
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -16 },
-};
+import { computeRoundProgress } from '@/utils/game-progress';
 
 // ─── Game page ───────────────────────────────────────────────────
 
@@ -42,7 +32,7 @@ import { InGameSettingsPanel } from '@/components/game/InGameSettingsPanel';
 import { pickLastRoundMessage } from '@/utils/last-round-messages';
 import type { LastRoundMessage } from '@/utils/last-round-messages';
 import { useGameAudioCues } from '@/hooks/useGameAudioCues';
-import { answerLabel, resolveAnswerPoints } from '@/utils/mode-rules';
+import { answerLabel } from '@/utils/mode-rules';
 
 export default function GamePage() {
   const router = useRouter();
@@ -54,14 +44,14 @@ export default function GamePage() {
     currentRound,
     roundPhase,
     currentMode,
-    currentSong,
+    currentQuestion,
+    currentReveal,
     currentAnswers,
     playedSongIds,
     turnOrder,
     currentTurnIndex,
     isGameOver,
     gameStartTime,
-    drawSong,
     advancePhase,
     submitAnswer,
     awardPoints,
@@ -80,6 +70,11 @@ export default function GamePage() {
   const [lastRoundBannerMsg, setLastRoundBannerMsg] =
     useState<LastRoundMessage | null>(null);
   const lastRoundBannerShown = useRef(false);
+
+  // The core owns the round: it draws the songs, evaluates the answers and
+  // releases the solution. The shell never holds the catalogue
+  // (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+  const { drawCard, releaseSolution, closeRound } = useCoreRound();
 
   // ── Time updater for the progress bar ─────────────────────────────
   useEffect(() => {
@@ -120,28 +115,20 @@ export default function GamePage() {
     !isTeamTurn && pilot && 'avatar' in pilot ? pilot.avatar : '👥';
 
   // ── Handler: card drawn ─────────────────────────────────────
-  const handleCardDrawn = useCallback(
-    (song: PhomuSong) => {
-      drawSong(song);
-    },
-    [drawSong]
-  );
+  // The core draws the song and hands over the question of the round — the
+  // question has no field for the solution.
+  const handleCardDrawn = useCallback(async () => {
+    await drawCard();
+  }, [drawCard]);
 
   // ── Handler: player has answered ──────────────────────────
   const handleAnswered = useCallback(
     (
       isCorrect: boolean,
-      basePointsAwarded: number,
+      pointsAwarded: number,
       answeredInSeconds?: number
     ) => {
       if (!pilotId) return;
-
-      const pointsAwarded = resolveAnswerPoints(
-        basePointsAwarded,
-        isCorrect,
-        answeredInSeconds,
-        config
-      );
 
       const answer: PlayerAnswer = {
         playerId: pilotId,
@@ -156,13 +143,16 @@ export default function GamePage() {
         awardPoints(pilotId, pointsAwarded);
       }
     },
-    [pilotId, config, submitAnswer, awardPoints]
+    [pilotId, submitAnswer, awardPoints]
   );
 
   // ── Handler: start the reveal ────────────────────────────────────
-  const handleReveal = useCallback(() => {
+  // The reveal is the phase that releases the solution. The core hands it
+  // over — the shell had no field for it before.
+  const handleReveal = useCallback(async () => {
+    await releaseSolution();
     advancePhase('reveal');
-  }, [advancePhase]);
+  }, [advancePhase, releaseSolution]);
 
   // ── Detect the last rotation ──────────────────────────────────
   const isLastRotation = useMemo(() => {
@@ -178,18 +168,18 @@ export default function GamePage() {
   }, [config, currentRound, turnOrder, gameStartTime, now]);
 
   // ── Handler: next round ─────────────────────────────────────
-  const handleNextRound = useCallback(() => {
+  const handleNextRound = useCallback(async () => {
     if (isLastRotation && !isGameOver && !lastRoundBannerShown.current) {
       lastRoundBannerShown.current = true;
       setLastRoundBannerMsg(pickLastRoundMessage());
       setTimeout(() => {
         setLastRoundBannerMsg(null);
-        nextRound();
+        void closeRound();
       }, 3400);
     } else {
-      nextRound();
+      void closeRound();
     }
-  }, [isLastRotation, isGameOver, nextRound]);
+  }, [isLastRotation, isGameOver, closeRound]);
 
   // ── Power user: override the answer ─────────────────────────────
   const handleOverrideCorrect = useCallback(() => {
@@ -207,18 +197,12 @@ export default function GamePage() {
       pointsAwarded: points,
     });
     awardPoints(pilotId, points);
-  }, [
-    pilotId,
-    currentAnswers,
-    config.minPointsPerCorrect,
-    submitAnswer,
-    awardPoints,
-  ]);
+  }, [pilotId, currentAnswers, config.minPointsPerCorrect, submitAnswer, awardPoints]);
 
   // ── Power user: discard the round / draw again ───────────────────
   const handleOverrideRedraw = useCallback(() => {
-    nextRound();
-  }, [nextRound]);
+    void closeRound();
+  }, [closeRound]);
 
   // ── Handler: end the game ─────────────────────────────────────
   const handleEndGame = useCallback(() => {
@@ -265,43 +249,30 @@ export default function GamePage() {
   });
 
   // ── Progress calculation (progress bar) ─────────────────────
-  const progressData = useMemo(() => {
-    let percentage = 0;
-    let targetLabel = '';
-    let currentVal = currentRound;
-
-    if (config.endingCondition === 'rounds') {
-      const totalTurns = config.targetRounds * turnOrder.length;
-      percentage = (currentRound / totalTurns) * 100;
-      targetLabel = `${totalTurns}`;
-    } else if (config.endingCondition === 'points') {
-      const topScore =
-        config.teamMode === 'individual'
-          ? Math.max(...players.map((p) => p.score), 0)
-          : Math.max(...teams.map((t) => t.score), 0);
-      percentage = (topScore / config.targetPoints) * 100;
-      targetLabel = t('game.page.targetPoints', { count: config.targetPoints });
-      currentVal = topScore;
-    } else if (config.endingCondition === 'time' && gameStartTime) {
-      const elapsedMs = now - gameStartTime;
-      const targetMs = config.targetTimeMinutes * 60 * 1000;
-      percentage = (elapsedMs / targetMs) * 100;
-      targetLabel = t('game.page.targetMinutes', {
-        count: config.targetTimeMinutes,
-      });
-      currentVal = Math.floor(elapsedMs / 60000);
-    }
-    return { percentage, targetLabel, currentVal };
-  }, [
-    config,
-    currentRound,
-    turnOrder.length,
-    players,
-    teams,
-    gameStartTime,
-    now,
-    t,
-  ]);
+  const progressData = useMemo(
+    () =>
+      computeRoundProgress({
+        config,
+        currentRound,
+        turnOrderLength: turnOrder.length,
+        players,
+        teams,
+        gameStartTime,
+        now,
+        targetPointsLabel: (count) => t('game.page.targetPoints', { count }),
+        targetMinutesLabel: (count) => t('game.page.targetMinutes', { count }),
+      }),
+    [
+      config,
+      currentRound,
+      turnOrder.length,
+      players,
+      teams,
+      gameStartTime,
+      now,
+      t,
+    ]
+  );
 
   // Not ready yet → render nothing (the redirect is running)
   if (currentRound === 0 || players.length === 0) {
@@ -388,113 +359,30 @@ export default function GamePage() {
       />
 
       {/* Phase content with transition animation */}
-      <main className="flex-1 overflow-y-auto">
-        {/* ── Drawing + scoring: normal AnimatePresence ─────── */}
-        <AnimatePresence mode="wait">
-          {roundPhase === 'drawing' && (
-            <motion.div
-              key="drawing"
-              variants={PHASE_VARIANTS}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={{ duration: 0.3 }}
-            >
-              <DrawingPhase
-                currentMode={currentMode}
-                playedSongIds={playedSongIds}
-                pilotName={pilot?.name}
-                pilotColor={pilot?.color}
-                nextPilotName={
-                  turnOrder.length > 1 ? nextPilot?.name : undefined
-                }
-                nextPilotColor={nextPilot?.color}
-                onCardDrawn={handleCardDrawn}
-              />
-            </motion.div>
-          )}
-
-          {roundPhase === 'scoring' && (
-            <motion.div
-              key="scoring"
-              variants={PHASE_VARIANTS}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={{ duration: 0.3 }}
-              className="flex flex-col items-center justify-center min-h-[60vh] gap-4 px-6"
-            >
-              <p className="text-6xl">🏁</p>
-              <h2 className="text-3xl font-black text-center">
-                {t('game.page.gameOver')}
-              </h2>
-              <p className="opacity-60">{t('game.page.redirecting')}</p>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        {/* ── Question + reveal: QuestionPhase stays mounted ─
-            So that the MusicPlayer (YouTube iframe) does not restart when
-            switching to the RevealPhase.
-            display:none keeps the iframe alive — the audio keeps playing. */}
-        {currentSong !== null &&
-          (roundPhase === 'question' ||
-            roundPhase === 'locked-in' ||
-            roundPhase === 'reveal') && (
-            <motion.div
-              variants={PHASE_VARIANTS}
-              initial="initial"
-              animate="animate"
-              transition={{ duration: 0.3 }}
-            >
-              {/* QuestionPhase: hidden (not unmounted) during the reveal */}
-              <div
-                style={
-                  roundPhase === 'reveal' ? { display: 'none' } : undefined
-                }
-                className="pt-2"
-              >
-                <QuestionPhase
-                  song={currentSong}
-                  currentMode={currentMode}
-                  onAnswered={handleAnswered}
-                  onReveal={handleReveal}
-                  onReroll={handleReroll}
-                />
-              </div>
-
-              {/* RevealPhase: overlaid, with its own reveal animation */}
-              <AnimatePresence>
-                {roundPhase === 'reveal' && (
-                  <motion.div
-                    key="reveal"
-                    variants={PHASE_VARIANTS}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    transition={{ duration: 0.3 }}
-                  >
-                    <RevealPhase
-                      song={currentSong}
-                      currentMode={currentMode}
-                      answers={currentAnswers}
-                      players={players}
-                      teams={teams}
-                      winCondition={config.winCondition}
-                      endingCondition={config.endingCondition}
-                      isGameOver={isGameOver}
-                      onNextRound={handleNextRound}
-                      onEndGame={handleEndGame}
-                      onOverrideCorrect={handleOverrideCorrect}
-                      onOverrideRedraw={handleOverrideRedraw}
-                      overrideGovernance={config.overrideGovernance}
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          )}
-      </main>
+      <GamePhaseArea
+        roundPhase={roundPhase}
+        currentMode={currentMode}
+        currentQuestion={currentQuestion}
+        currentReveal={currentReveal}
+        currentAnswers={currentAnswers}
+        players={players}
+        teams={teams}
+        config={config}
+        isGameOver={isGameOver}
+        playedSongIds={playedSongIds}
+        pilotName={pilot?.name}
+        pilotColor={pilot?.color}
+        nextPilotName={turnOrder.length > 1 ? nextPilot?.name : undefined}
+        nextPilotColor={nextPilot?.color}
+        onDraw={handleCardDrawn}
+        onAnswered={handleAnswered}
+        onReveal={handleReveal}
+        onReroll={handleReroll}
+        onNextRound={handleNextRound}
+        onEndGame={handleEndGame}
+        onOverrideCorrect={handleOverrideCorrect}
+        onOverrideRedraw={handleOverrideRedraw}
+      />
     </div>
   );
 }

@@ -1,0 +1,33 @@
+=== COMMAND: cargo build --target wasm32-unknown-unknown -p phomu-wasm --release ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout) ===
+=== DATE: 2026-10-25T17:00:07Z ===
+=== TOOLCHAIN: cargo 1.99.1 (5f94df478 2026-08-27) / rustc 1.99.1 (58cf8f9c3 2026-10-13) ===
+=== NOTE: this target is NOT built by .github/workflows/ci.yml ===
+   Compiling unicode-ident v1.0.27
+   Compiling proc-macro2 v1.0.107
+   Compiling wasm-bindgen-shared v0.2.129
+   Compiling quote v1.0.47
+   Compiling syn v3.0.9
+   Compiling rustversion v1.0.23
+   Compiling serde_core v1.0.229
+   Compiling bumpalo v3.20.3
+   Compiling zmij v1.0.23
+   Compiling wasm-bindgen-macro-support v0.2.129
+   Compiling wasm-bindgen v0.2.129
+   Compiling serde v1.0.229
+   Compiling serde_json v1.0.154
+   Compiling wasm-bindgen-macro v0.2.129
+   Compiling serde_derive v1.0.229
+   Compiling phomu-media v0.1.0 (/tmp/phomu-qa-src/core/phomu-media)
+   Compiling memchr v2.8.3
+   Compiling phomu-i18n v0.1.0 (/tmp/phomu-qa-src/core/phomu-i18n)
+   Compiling phomu-errors v0.1.0 (/tmp/phomu-qa-src/core/phomu-errors)
+   Compiling phomu-config v0.1.0 (/tmp/phomu-qa-src/core/phomu-config)
+   Compiling once_cell v1.21.4
+   Compiling itoa v1.0.18
+   Compiling cfg-if v1.0.5
+   Compiling phomu-catalog v0.1.0 (/tmp/phomu-qa-src/core/phomu-catalog)
+   Compiling phomu-core v0.1.0 (/tmp/phomu-qa-src/core/phomu-core)
+   Compiling phomu-wasm v0.1.0 (/tmp/phomu-qa-src/platform/phomu-wasm)
+    Finished `release` profile [optimized] target(s) in 1m 56s
+=== EXIT CODE: 0 ===

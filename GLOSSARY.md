@@ -16,6 +16,12 @@ It is protected by the header `x-admin-token`, whose value is compared with
 `ADMIN_API_TOKEN` from the environment.
 *Implementation:* `src/admin-api/_lib/security.ts`, `src/admin-api/admin/covers/search/route.ts`,
 `src/admin-api/admin/covers/save/route.ts`
+*Status:* **not reachable** — the handlers live outside the app directory and
+the build is a static export, so the App Router registers no admin API route.
+The decision (wire it up or remove it) is recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md);
+the measured reachability is asserted by
+`src/admin-api/admin-api-reachability.test.ts`.
 
 **Anti-Spoiler** — The property of the game flow that before the reveal neither  
 *Requirement:* CORE-005, GAME-002, MEDIA-015, UI-006 in [`REQUIREMENTS.md`](REQUIREMENTS.md)

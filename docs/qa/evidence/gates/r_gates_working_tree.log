@@ -1,0 +1,47 @@
+=== The two gates that are red in the working tree, measured at the pinned commit ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout) ===
+=== DATE: 2026-10-25T17:09:02Z ===
+
+--- 1. file-size gate at the pinned commit ---
+   src/utils/validate-song-data.ts: 817 lines — above the hard limit (550) and 315 lines more than the recorded exception state (502) — backlog is growing, refactoring still open: Schema and limit checks (GAP-007): split into schema, limit and catalog validation
+
+✅ Gate passed — 0 errors, 11 warning(s), 8 known legacy file(s).
+EXIT CODE: 0
+
+--- 2. i18n completeness gate at the pinned commit ---
+=== i18n completeness gate ===
+OK — no violations.
+Literal texts in checked TSX files: 0
+TSX files checked: 48
+EXIT CODE: 0
+
+--- 3. the same two gates in the working tree ---
+(the working tree contains concurrent work by other agents; the findings name files this assessment never touched)
+❌ 3 error(s):
+   src/stores/game-store.ts: 636 lines — grew by 9 lines beyond its recorded state (627) — the legacy file must not grow; refactoring still open: State store (GAP-007, QA-09 item 2.2): split into sub-stores.
+   platform/phomu-wasm/src/lib.rs: 466 lines — new file above the soft limit (400) by 66 lines
+   platform/phomu-wasm/src/session.rs: 524 lines — new file above the soft limit (400) by 124 lines
+[literal-text] 1×
+  src/components/ui/Tooltip.test.tsx:47  jsx-text: Ausloeser
+
+TOTAL: 1 violations, 1 literal texts.
+TSX files checked: 49
+
+--- 4. the files the findings name, as git sees them ---
+ M platform/phomu-wasm/Cargo.toml
+ M platform/phomu-wasm/src/catalogue.rs
+ M platform/phomu-wasm/src/lib.rs
+ M platform/phomu-wasm/src/session.rs
+ M platform/phomu-wasm/tests/roundtrip.rs
+ M scripts/check-file-size.mjs
+ M src/stores/game-store.ts
+?? platform/phomu-wasm/src/answer.rs
+?? platform/phomu-wasm/src/round.rs
+?? scripts/file-size.exceptions.json
+?? src/components/ui/Tooltip.test.tsx
+
+--- 5. the gates that cover this assessment's own files ---
+Markdown files checked: 92
+✅ No dead links found.
+
+Markdown files checked: 75 — findings: 0

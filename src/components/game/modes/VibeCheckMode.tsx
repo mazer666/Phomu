@@ -18,10 +18,10 @@ import { useTranslation } from 'react-i18next';
 import type { TFunction } from 'i18next';
 import { useGameStore } from '@/stores/game-store';
 import { getSpicyColor } from '@/utils/feedback-messages';
-import type { PhomuSong } from '@/types/song';
+import type { RoundQuestion } from '@/core/types';
+import { applyCheat, submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
-import { vibeCheckAward } from '@/utils/mode-rules';
 
 // ─── Design constants (colours, no text) ─────────────────────────
 
@@ -34,27 +34,6 @@ const MOOD_CORRECT_SHADOW = '0 0 20px rgba(34,197,94,0.3)';
 const MOOD_WRONG_BG = 'rgba(239,68,68,0.2)';
 
 // ─── Moods ───────────────────────────────────────────────────
-
-/**
- * All possible moods (from the PhomuSong schema).
- * These are catalog values — they must match `song.mood` unchanged.
- */
-function getAllMoods(): string[] {
-  return [
-    'Dance Floor',
-    'Nostalgic',
-    'Party Anthem',
-    'Heartbreak',
-    'Epic',
-    'Chill',
-    'Rebellious',
-    'Euphoric',
-    'Melancholic',
-    'Feel Good',
-    'Dark',
-    'Romantic',
-  ];
-}
 
 /** Translates a mood value into the display label (fallback: the raw value). */
 function moodLabel(mood: string, t: TFunction): string {
@@ -89,7 +68,7 @@ function moodLabel(mood: string, t: TFunction): string {
 }
 
 interface VibeCheckModeProps {
-  song: PhomuSong;
+  question: RoundQuestion;
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -97,16 +76,16 @@ interface VibeCheckModeProps {
   ) => void;
 }
 
-export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
+export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
   const { t, i18n } = useTranslation();
   const { config } = useGameStore();
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [cheatUsed, setCheatUsed] = useState(false);
-  const spicyMessage = useSpicyMessage(
-    song.mood.includes(selected ?? ''),
-    song.id
-  );
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [correctMood, setCorrectMood] = useState('');
+  const [cheatedOptions, setCheatedOptions] = useState<string[]>([]);
+  const spicyMessage = useSpicyMessage(isCorrect, question.songId);
 
   // Year without a thousands separator (a year is not a quantity)
   const yearFormat = useMemo(
@@ -114,36 +93,29 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
     [i18n.language]
   );
 
-  function handleCheat() {
+  async function handleCheat() {
     if (cheatUsed || answered) return;
     setCheatUsed(true);
+    // The base builds the shortened list: it has to keep the correct mood
+    // of the song, and only the base knows it.
+    const outcome = await applyCheat('vibe-check-options');
+    setCheatedOptions(outcome.options);
   }
 
-  function handleSelect(mood: string) {
+  async function handleSelect(mood: string) {
     if (answered) return;
-    const outcome = vibeCheckAward(song.mood, mood, cheatUsed);
+    const result = await submit({ kind: 'vibe-check', mood, cheatUsed });
     setSelected(mood);
     setAnswered(true);
-    onAnswer(outcome.isCorrect, outcome.points);
+    setIsCorrect(result.score.isCorrect);
+    setCorrectMood(result.feedback.detail.correctMood ?? '');
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded);
   }
 
-  // Precompute two option lists — stable for this song
-  const { fullOptions, halfOptions } = useMemo(() => {
-    const correctMood = song.mood[0];
-    const wrong = getAllMoods().filter((m) => !song.mood.includes(m));
-    const shuffledWrong = [...wrong].sort(() => Math.random() - 0.5);
-    const full = [...shuffledWrong.slice(0, 5), correctMood].sort(
-      () => Math.random() - 0.5
-    );
-    const half = [...shuffledWrong.slice(0, 2), correctMood].sort(
-      () => Math.random() - 0.5
-    );
-    return { fullOptions: full, halfOptions: half };
-    // song.id is stable as long as the same song is displayed
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [song.id]);
-
-  const options = cheatUsed ? halfOptions : fullOptions;
+  // The options come from the core — the core knows the correct mood.
+  const options = cheatUsed && cheatedOptions.length > 0
+    ? cheatedOptions
+    : question.options;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
@@ -161,22 +133,15 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
       {!answered && (
         <div className="w-full max-w-sm mx-auto">
           <MusicPlayer
-            songId={song.id}
-            songTitle={song.title}
-            songArtist={song.artist}
-            songPack={song.packs[0]}
-            youtubeLink={song.links.youtube}
-            youtubeAlternatives={
-              song.links.youtubeAlternatives ??
-              (song.links.fallbackYoutubeId
-                ? [song.links.fallbackYoutubeId]
-                : undefined)
-            }
-            spotifyLink={song.links.spotify}
-            spotifyFreePreview={song.links.spotifyFreePreview}
-            amazonMusicLink={song.links.amazonMusic}
-            amazonPrimePreview={song.links.amazonPrimePreview}
-            startSeconds={song.previewTimestamp?.start ?? 0}
+            songId={question.songId}
+            songPack={question.context.pack ?? undefined}
+            youtubeLink={question.media.youtube}
+            youtubeAlternatives={question.media.youtubeAlternatives}
+            spotifyLink={question.media.spotify ?? undefined}
+            spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+            amazonMusicLink={question.media.amazonMusic ?? undefined}
+            amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
+            startSeconds={question.media.startSeconds}
             blurred={false}
           />
         </div>
@@ -198,11 +163,17 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         <p className="text-xs uppercase tracking-widest opacity-50 mb-2">
           {t('modes.vibe-check.songInfo')}
         </p>
-        <h3 className="text-3xl font-black mb-1">{song.artist}</h3>
-        <p className="text-xl font-bold opacity-80">{song.title}</p>
+        <h3 className="text-3xl font-black mb-1">
+          {question.identity?.artist}
+        </h3>
+        <p className="text-xl font-bold opacity-80">
+          {question.identity?.title}
+        </p>
         <p className="opacity-50 text-sm mt-1">
           {t('modes.decade', {
-            decade: yearFormat.format(Math.floor(song.year / 10) * 10),
+            decade: yearFormat.format(
+              Math.floor((question.identity?.year ?? 0) / 10) * 10
+            ),
           })}
         </p>
       </motion.div>
@@ -253,7 +224,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
       >
         {options.map((mood) => {
           const isSelected = selected === mood;
-          const isCorrectMood = song.mood.includes(mood);
+          const isCorrectMood = answered && mood === correctMood;
 
           let bgColor = MOOD_IDLE_BG;
           let borderColor = MOOD_IDLE_BORDER;
@@ -316,7 +287,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
               {t('modes.vibe-check.theVibeIs')}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {song.mood.map((m, i) => (
+              {[correctMood].filter(Boolean).map((m, i) => (
                 <motion.span
                   key={m}
                   initial={{ scale: 0, rotate: -10 }}
@@ -332,17 +303,14 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
             <p
               className="mt-6 text-xl font-black uppercase italic tracking-tighter"
               style={{
-                color: getSpicyColor(
-                  song.mood.includes(selected ?? ''),
-                  song.id
-                ),
+                color: getSpicyColor(isCorrect, question.songId),
               }}
             >
               {spicyMessage}
             </p>
 
             <p className="mt-2 text-sm font-bold opacity-60">
-              {song.mood.includes(selected ?? '')
+              {isCorrect
                 ? t('modes.vibe-check.perfect')
                 : t('modes.vibe-check.almost')}
             </p>
@@ -351,31 +319,24 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
           {/* Music Integration */}
           <div className="p-1.5 bg-gradient-to-b from-white/10 to-transparent rounded-[2rem] border border-white/10 shadow-inner">
             <MusicPlayer
-              songId={song.id}
-              songTitle={song.title}
-              songArtist={song.artist}
-              songPack={song.packs[0]}
-              youtubeLink={song.links.youtube}
-              youtubeAlternatives={
-                song.links.youtubeAlternatives ??
-                (song.links.fallbackYoutubeId
-                  ? [song.links.fallbackYoutubeId]
-                  : undefined)
-              }
-              spotifyLink={song.links.spotify}
-              spotifyFreePreview={song.links.spotifyFreePreview}
-              amazonMusicLink={song.links.amazonMusic}
-              amazonPrimePreview={song.links.amazonPrimePreview}
-              startSeconds={song.previewTimestamp?.start ?? 0}
-              endSeconds={(song.previewTimestamp?.start ?? 0) + 120}
+              songId={question.songId}
+              songPack={question.context.pack ?? undefined}
+              youtubeLink={question.media.youtube}
+              youtubeAlternatives={question.media.youtubeAlternatives}
+              spotifyLink={question.media.spotify ?? undefined}
+              spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+              amazonMusicLink={question.media.amazonMusic ?? undefined}
+              amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
+              startSeconds={question.media.startSeconds}
+              endSeconds={question.media.startSeconds + 120}
               blurred={false}
             />
           </div>
 
           <div className="text-center pt-2">
             <p className="text-[10px] font-black uppercase tracking-widest opacity-30">
-              {song.title} &middot; {song.artist} (
-              {yearFormat.format(song.year)})
+              {question.identity?.title} &middot; {question.identity?.artist} (
+              {yearFormat.format(question.identity?.year ?? 0)})
             </p>
           </div>
         </motion.div>

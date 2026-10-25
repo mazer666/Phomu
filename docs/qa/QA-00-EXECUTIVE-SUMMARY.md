@@ -26,9 +26,10 @@
 | [QA-08](QA-08-DOCUMENTATION-AND-LICENSING.md) | Documentation traceability & GPL compliance |
 | [QA-09](QA-09-REMEDIATION-BACKLOG.md) | **The action plan** — 28 items, phased, with acceptance criteria |
 | [QA-10](QA-10-EVIDENCE-LOG.md) | Every command that was run, with its real output |
+| [QA-11](QA-11-RUST-BASE.md) | **The shared Rust base** — the crates, the rules, the bridges, the gates — closes the scope gap of § 0b |
 | `evidence/gates/` | Raw captured output of all 13 gate runs |
 
-> **Scope:** the measured baseline is the Next.js/TypeScript **web shell** at `9639c762`. The Rust base that landed during the assessment is **not** audited — see § 0b for what is known about it and what remains open.
+> **Scope:** the measured baseline of QA-01 … QA-10 is the Next.js/TypeScript **web shell** at `9639c762`. The Rust base that landed during the assessment is audited separately in **[QA-11](QA-11-RUST-BASE.md)** — the scope gap of § 0b is **closed**.
 
 ---
 
@@ -77,7 +78,33 @@ That said, three things about the Rust base are directly relevant to the finding
 2. **The file-size gate does not cover Rust.** `scripts/check-file-size.mjs` matches no `.rs` extension, and two new files already exceed the project's own hard limit: `core/phomu-conformance/src/runner.rs` (**1,022 lines**) and `core/phomu-conformance/src/vector.rs` (**794 lines**). This is new finding **QA-ARC-007**.
 3. **The CI pipeline grew, and the Rust side is better gated than the TypeScript side.** `rust-core` runs build, test, clippy, fmt and doc; `rust-boundaries` enforces the crate topology; `conformance` runs the conformance suite. The workspace denies `unsafe`, `unwrap`, `expect`, `indexing_slicing`, `panic`, `todo` and `unimplemented` workspace-wide. The TypeScript findings in QA-05 (no E2E in CI, no format gate, no audit gate) are unchanged — they apply to the web shell.
 
-**A dedicated audit of the Rust base is still outstanding and is not covered by this report.** It should be a separate pass with a Rust toolchain; it is listed as a gap in QA-09, item 2.9.
+**A dedicated audit of the Rust base was outstanding at the time this section was written, and was not covered by this report.** It needed a separate pass with a Rust toolchain. **That pass has since been made — see § 0b.1 and [QA-11](QA-11-RUST-BASE.md).** The item in QA-09 that asked for it is **2.10**; item 2.9 asks for the file-size gate to be extended to Rust.
+
+### 0b.1 The scope gap is closed — QA-11
+
+**The gap described above is now closed.** [`QA-11-RUST-BASE.md`](QA-11-RUST-BASE.md) audits the Rust base with a Rust toolchain against the pinned commit `0903997a`, with the raw output of every command in `docs/qa/evidence/gates/`. It is a separate report because the base is a separate subject; it is listed in the report index above.
+
+What the dedicated pass measured, against `0903997a0df38cfb1fe465c47f0958bbb5a63188` with `cargo 1.99.1` / `rustc 1.99.1`:
+
+| | |
+|---|---|
+| `cargo build --workspace` | exit 0, cold build 6 m 43 s |
+| `cargo test --workspace` | exit 0, **304 tests**, 0 failed, 0 ignored |
+| `cargo clippy --workspace --all-targets -- -D warnings` | exit 0, **0 warnings** |
+| `cargo fmt --check` | exit 0 |
+| `cargo doc --workspace --no-deps` | exit 0, 0 warnings |
+| Crate-boundary gate and its negative self-test | exit 0, 13 crates, 22 edges, 0 violations, 12 of 12 assertions |
+| `npm run check:conformance` | exit 0 — 64 portable vectors compared, 36 identical, 0 deviating, 28 intentional deviations, 6 documented |
+
+**The three statements of § 0b above survive the audit, with one correction.**
+
+1. The anti-spoiler contract is real and it is **in the state machine**, not in the rendering: the reveal is refused with `AnswersNotLocked` until the answers are locked in, and 8 tests walk every mode. But the claim that `platform/phomu-wasm` *"publishes the `#[wasm_bindgen]` exports"* needs a correction: the compiled module exports **three** functions (`phomu_abi_version`, `phomu_abi_versions`, `phomu_message_key`) — the whole game loop carries no `#[wasm_bindgen]` attribute and is therefore **not reachable from JavaScript**. The fix for QA-SPO-001 exists in the **core**; the bridge the web shell would consume does not yet carry it. This is **QA-RST-001 (P1)**.
+2. The file-size gate does not cover Rust. Measured: **2** files over the 550-line hard limit, **0** of them seen by the gate. This is QA-ARC-007, restated with an exact number as QA-RST-006.
+3. The Rust side is better gated than the TypeScript side — that holds. The deny list of the workspace is not merely declared, it is enforced: **0** `unwrap`, `expect`, `panic!`, `todo!` or `unimplemented!` on a reachable production path, and **0** `unsafe` outside the C-ABI bridge.
+
+**The base is not the problem; the distance between the base and the shell is.** QA-11 reports **11 findings** (3 × P1, 5 × P2, 3 × P3). The three P1 findings are all about the same thing: the rules exist in the base and the bridges do not let a shell reach them — the WebAssembly module exports no game, an unanswered round cannot be closed through the exported surface, and **20 of the 32** public operations of the session are unreachable from every shell. The rules themselves are the strongest part of the repository.
+
+**Correction to a pointer in this section:** the gap above was listed in QA-09 as **item 2.9**; the item that asks for this report is **item 2.10**. Item 2.9 asks for the file-size gate to be extended to Rust.
 
 ---
 

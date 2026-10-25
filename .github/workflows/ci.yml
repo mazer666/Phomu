@@ -2,13 +2,16 @@
 #
 # This workflow is the binding technical acceptance. Every job checks
 # exactly one property and fails on a real violation.
-# There is deliberately no `continue-on-error` and no `|| true`: a violation
-# has to turn the job red.
+# There is deliberately no `|| true` in a step: a violation has to turn the
+# job red. The single exception is the `format` job, which is marked
+# `continue-on-error: true` and therefore does not block the pipeline yet —
+# the comment on that job states when the exception ends.
 #
 # Gates (CONTRACT.md §6, QUALITY.md §2):
 #   - Typecheck          -> scripts: typecheck
 #   - Lint               -> scripts: lint
 #   - Unit Tests         -> scripts: test (Vitest + Coverage)
+#   - End-to-End Smoke   -> scripts: test:e2e:smoke (Playwright)
 #   - Catalog Validation -> scripts: validate-songs, validate-catalog
 #   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size,
 #                         check:doc-language, check:license
@@ -16,6 +19,8 @@
 #   - Rust Boundaries     -> scripts/check-crate-boundaries.mjs (the dependency rule)
 #   - Conformance         -> npm run check:conformance (shared core against the web shell)
 #   - Build              -> scripts: build (next build, output: 'export')
+#   - Format             -> scripts: format:check (not switched on yet, see the job)
+#   - Dependency Audit   -> npm audit --omit=dev --audit-level=moderate
 #
 # Node version: 22 — the version with which the reference measurement of
 # this round was made (node v22.19.0). Next.js 16 requires >= 20.9.0,
@@ -94,6 +99,46 @@ jobs:
         with:
           name: coverage-report
           path: coverage/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  e2e:
+    name: End-to-end smoke (Playwright)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install the Playwright browser
+        run: npx playwright install --with-deps chromium
+      - name: Playwright smoke test
+        # The HTML reporter is added so that the uploaded report is a real
+        # one; `list` keeps the console output readable in the job log.
+        run: npm run test:e2e:smoke -- --reporter=html,list
+        env:
+          # The report must never try to open a browser on the runner.
+          PLAYWRIGHT_HTML_OPEN: 'never'
+      - name: Upload the Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Upload the Playwright test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-test-results
+          path: test-results/
           if-no-files-found: ignore
           retention-days: 7
 
@@ -256,3 +301,58 @@ jobs:
           path: out/
           if-no-files-found: error
           retention-days: 7
+
+  format:
+    name: Prettier format check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # NOT SWITCHED ON YET — this job does not block the pipeline.
+    #
+    # `npm run format:check` is red today: the repository was never
+    # Prettier-formatted, and a blanket `prettier --write .` produced 30-60 %
+    # longer files in an earlier round. The repository is therefore formatted
+    # module by module — with `typecheck && lint && test` green after every
+    # module — and only when the last module is done is this flag removed
+    # and the job allowed to turn the pipeline red.
+    #
+    # Until then the job runs and reports the real state of the formatting
+    # without blocking anything. Switching it on before that would only
+    # produce a permanently red job that somebody has to disable again.
+    #
+    # Backlog: QA-09 remediation backlog, item 1.8 (the ordering rule for the
+    # formatter) and QA-05 §QA-TST-002 ("On the formatter — do this in the
+    # right order"), which describes the module-by-module procedure. The
+    # procedure itself is a separate, named measure and is not part of this
+    # change.
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Prettier format check
+        run: npm run format:check
+
+  dependency-audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      # Only the runtime dependencies are audited: the build and test tools
+      # are replaced on a regular basis and do not ship to the players.
+      - name: Audit the runtime dependencies
+        run: npm audit --omit=dev --audit-level=moderate

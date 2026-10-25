@@ -105,8 +105,8 @@ fn teams() -> Vec<PhomuTeam> {
 
 #[test]
 fn the_abi_version_is_part_of_the_surface() {
-    assert_eq!(phomu_abi_version(), "1.0.0");
-    assert_eq!(phomu_abi_versions(), vec!["1.0.0".to_string()]);
+    assert_eq!(phomu_abi_version(), "1.1.0");
+    assert_eq!(phomu_abi_versions(), vec!["1.1.0".to_string()]);
     assert!(phomu_abi_accepts(1, 0, 0, 1, 99, 0));
     assert!(!phomu_abi_accepts(2, 0, 0, 2, 99, 0));
     assert!(!phomu_abi_accepts(0, 1, 0, 0, 99, 0));

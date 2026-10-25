@@ -3,8 +3,11 @@ import { NextResponse } from 'next/server';
 import {
   AdminRequestError,
   MAX_JSON_BYTES,
+  MAX_RESULT_FIELD_LENGTH,
+  MAX_URL_LENGTH,
   assertAdminAccess,
   assertRateLimit,
+  boundedOutputText,
   boundedText,
   fetchWithTimeout,
 } from '@/admin-api/_lib/security';
@@ -41,6 +44,16 @@ interface DeezerTrack {
 
 /** Rate limit for the cover search (each request costs two third-party calls). */
 const SEARCH_RATE_LIMIT = { limit: 30, windowMs: 60_000 };
+
+/**
+ * Hard limit for the number of third-party entries that are looked at per
+ * provider. The answer of the provider is capped as a whole (512 KB), but
+ * the loop over its entries must not run over thousands of items either.
+ */
+const MAX_PROVIDER_ENTRIES = 25;
+
+/** Hard limit for the number of results in the answer of the route. */
+const MAX_RESULTS = 10;
 
 function uniqueResults(results: SearchResult[]): SearchResult[] {
   const seen = new Set<string>();
@@ -85,16 +98,22 @@ export async function GET(request: Request) {
       const itunesData = (await itunesRes.json()) as {
         results?: ItunesTrack[];
       };
-      for (const track of itunesData.results ?? []) {
+      for (const track of (itunesData.results ?? []).slice(
+        0,
+        MAX_PROVIDER_ENTRIES
+      )) {
         if (!track.artworkUrl100) continue;
         results.push({
           id: `itunes-${track.trackId}`,
-          url: track.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg'),
-          thumbnail: track.artworkUrl100,
+          url: boundedOutputText(
+            track.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg'),
+            MAX_URL_LENGTH
+          ),
+          thumbnail: boundedOutputText(track.artworkUrl100, MAX_URL_LENGTH),
           source: 'iTunes',
-          album: track.collectionName,
-          artist: track.artistName,
-          title: track.trackName,
+          album: boundedOutputText(track.collectionName),
+          artist: boundedOutputText(track.artistName),
+          title: boundedOutputText(track.trackName),
         });
       }
     }
@@ -105,22 +124,27 @@ export async function GET(request: Request) {
     });
     if (deezerRes.ok) {
       const deezerData = (await deezerRes.json()) as { data?: DeezerTrack[] };
-      for (const track of deezerData.data ?? []) {
+      for (const track of (deezerData.data ?? []).slice(
+        0,
+        MAX_PROVIDER_ENTRIES
+      )) {
         const bestCover = track.album.cover_xl || track.album.cover_big;
         if (!bestCover || !track.album.cover_small) continue;
         results.push({
           id: `deezer-${track.id}`,
-          url: bestCover,
-          thumbnail: track.album.cover_small,
+          url: boundedOutputText(bestCover, MAX_URL_LENGTH),
+          thumbnail: boundedOutputText(track.album.cover_small, MAX_URL_LENGTH),
           source: 'Deezer',
-          album: track.album.title,
-          artist: track.artist.name,
-          title: track.title,
+          album: boundedOutputText(track.album.title),
+          artist: boundedOutputText(track.artist.name),
+          title: boundedOutputText(track.title),
         });
       }
     }
 
-    return NextResponse.json({ results: uniqueResults(results).slice(0, 10) });
+    return NextResponse.json({
+      results: uniqueResults(results).slice(0, MAX_RESULTS),
+    });
   } catch (error) {
     if (error instanceof AdminRequestError) {
       return NextResponse.json(

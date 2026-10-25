@@ -1,0 +1,34 @@
+
+> phomu@0.1.0 check:crate-boundaries
+> node scripts/check-crate-boundaries.mjs
+
+Crate boundary gate
+========================================================================
+root:    /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/github/Phomu
+rules:   /run/csi/mount-root/nas/eab0d61a99b6696edb3d2aff87b585e8/github/Phomu/scripts/crate-boundaries.rules.json
+crates:  13
+edges:   22
+
+No boundary violations found.
+  ok  core/phomu-conformance -> core/phomu-core (normal)
+  ok  core/phomu-core -> core/phomu-catalog (normal)
+  ok  core/phomu-core -> core/phomu-config (normal)
+  ok  core/phomu-core -> core/phomu-errors (normal)
+  ok  core/phomu-core -> core/phomu-i18n (normal)
+  ok  core/phomu-core -> core/phomu-media (normal)
+  ok  platform/phomu-capi -> platform/phomu-ffi (normal)
+  ok  platform/phomu-ffi -> core/phomu-catalog (normal)
+  ok  platform/phomu-ffi -> core/phomu-core (normal)
+  ok  platform/phomu-ffi -> core/phomu-errors (normal)
+  ok  platform/phomu-ffi -> core/phomu-i18n (normal)
+  ok  platform/phomu-ffi -> core/phomu-media (normal)
+  ok  platform/phomu-wasm -> core/phomu-catalog (normal)
+  ok  platform/phomu-wasm -> core/phomu-core (dev)
+  ok  platform/phomu-wasm -> core/phomu-core (normal)
+  ok  platform/phomu-wasm -> core/phomu-errors (normal)
+  ok  platform/phomu-wasm -> core/phomu-i18n (normal)
+  ok  tools/catalog-tool -> core/phomu-catalog (normal)
+  ok  tools/catalog-tool -> core/phomu-config (normal)
+  ok  tools/conformance-runner -> core/phomu-conformance (normal)
+  ok  tools/media-report -> core/phomu-catalog (normal)
+  ok  tools/media-report -> core/phomu-media (normal)

@@ -73,3 +73,6 @@ apps/android/*.iml
 # The generated UniFFI bindings and the JNI library are build output.
 apps/android/app/src/main/jniLibs/
 apps/android/bindings/
+
+# Alte Next.js-Builds (Backup-Verzeichnis eines Builds)
+.next.old/

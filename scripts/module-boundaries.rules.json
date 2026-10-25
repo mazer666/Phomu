@@ -1,0 +1,53 @@
+{
+  "$comment": [
+    "The rule table of the module-boundary gate.",
+    "Source of truth: ARCHITECTURE.md §2 (the layers), docs/adr/ADR-0001",
+    "(layers and dependency direction) and docs/qa/QA-09-REMEDIATION-BACKLOG.md",
+    "item 2.4 (closes QA-ARC-005 and QA-ARC-006).",
+    "",
+    "The boundary is data, not code: the gate reads this table and knows",
+    "nothing about the layers of the shell itself.",
+    "",
+    "Matching:",
+    "  sources  - the files the rule applies to. A glob with '*' (one path",
+    "            segment) and '**' (any number of segments), relative to the",
+    "            root of the repository.",
+    "  targets  - the modules the sources must not import. A target matches",
+    "            the module itself and everything below it.",
+    "            A module that re-exports a target is a target as well -",
+    "            the gate computes that closure itself, so a proxy barrel",
+    "            cannot be used to smuggle the catalogue into a component.",
+    "",
+    "Change this file only together with an ADR."
+  ],
+  "schemaVersion": 1,
+  "alias": {
+    "@/": "src/"
+  },
+  "rules": [
+    {
+      "id": "MB-RAW-CATALOGUE",
+      "description": "No component and no page may import the raw song catalogue.",
+      "sources": ["src/components/**", "src/app/**"],
+      "targets": ["src/data/songs"],
+      "reason": "The raw catalogue carries the answers of the round (hints, lyrics) and the whole catalogue at once. A component that imports it pulls the answer key into the browser bundle (QA-SPO-001) and couples the presentation to the storage format of the catalogue (QA-ARC-006).",
+      "remediation": "Import the narrow interface of the catalogue instead: `import { loadCatalogue, loadPack } from '@/data/catalogue'`."
+    },
+    {
+      "id": "MB-CONFIG-UI",
+      "description": "The configuration must not import from the components.",
+      "sources": ["src/config/**"],
+      "targets": ["src/components"],
+      "reason": "The configuration is the leaf of the shell: it holds the constants of the game and must be readable without any part of the user interface. An import of a component inverts the dependency direction of ADR-0001 and makes the constants untestable without a DOM.",
+      "remediation": "Move the value into `src/config/` or into `src/types/`, or read it from the store at the call site."
+    },
+    {
+      "id": "MB-UTILS-STORE",
+      "description": "The pure helpers must not import from the store.",
+      "sources": ["src/utils/**"],
+      "targets": ["src/stores"],
+      "reason": "The helpers of `src/utils/` are pure functions without a state. An import of the store makes them depend on the session and therefore untestable in isolation - the reason why the helpers of this directory have their own unit tests.",
+      "remediation": "Pass the state as an argument, or move the function into `src/stores/` where the state belongs."
+    }
+  ]
+}

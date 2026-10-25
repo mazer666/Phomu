@@ -10,6 +10,12 @@
  * - lyrics         → Lyrics Labyrinth mode (real vs fake)
  * - mood           → Vibe-Check mode (mood matching)
  * - isOneHitWonder → Survivor mode (career prediction)
+ *
+ * WHY the lists are not tuples: the catalogue reaches the shell as a record
+ * that the Rust base hands over (docs/qa/QA-09-REMEDIATION-BACKLOG.md
+ * § 1.1). The base knows the length of a list and the shell does not have
+ * to repeat it in the type. The length is checked where the catalogue is
+ * built (`src/utils/validate-song-data.ts`).
  */
 
 /** ISO 3166-1 alpha-2 country code, e.g. 'US', 'DE', 'GB' */
@@ -82,13 +88,13 @@ export interface PhomuSong {
    * [3] = Level 4 (2 pts) — Audio snippet description
    * [4] = Level 5 (1 pt)  — Nearly a giveaway
    */
-  hints: [string, string, string, string, string];
+  hints: string[];
 
   /**
    * Verifiable sources per hint (e.g. Wikipedia/Discogs/official notes).
    * Optional for legacy data, recommended as mandatory for new AI hints.
    */
-  hintEvidence?: [string, string, string, string, string];
+  hintEvidence?: string[] | null;
 
   /**
    * Lyrics data for Lyrics Labyrinth mode.
@@ -96,7 +102,7 @@ export interface PhomuSong {
    */
   lyrics: {
     /** Exactly 3 real lyric lines from the actual song */
-    real: [string, string, string];
+    real: string[];
     /** 1 or 4 AI-generated fake lyric lines that sound plausible but are wrong */
     fake: string | string[];
   } | null;

@@ -134,6 +134,31 @@ impl Session {
         Ok(penalty)
     }
 
+    /// The decade of the year of the song — the hint of the Timeline mode.
+    ///
+    /// WHY the base computes it: the year of the song is the answer of the
+    /// Timeline mode. Only the base may turn it into a hint, because only
+    /// the base knows the year.
+    ///
+    /// EXAMPLE: the song of 1985 offers the hint `1980`.
+    pub fn decade_hint(&self) -> Option<i32> {
+        self.state.round.song.as_ref().map(|song| song.decade())
+    }
+
+    /// The options of the Vibe-Check with the cheat applied.
+    ///
+    /// WHY the base builds them: the cheated list has to keep the correct
+    /// mood of the song, and only the base knows which mood that is.
+    ///
+    /// EXAMPLE: the cheated list of the Vibe-Check has three options.
+    pub fn vibe_options_with_cheat(&mut self) -> Vec<String> {
+        let Some(song) = self.state.round.song.as_ref() else {
+            return Vec::new();
+        };
+        let draw = self.rng.next_u64();
+        crate::modes::vibe_check::build_options(&song.mood, true, draw)
+    }
+
     /// Removes a year from the timeline.
     ///
     /// WHY: from more than ten years on the player may remove one year

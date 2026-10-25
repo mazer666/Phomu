@@ -14,7 +14,7 @@ use crate::session::kind_of;
 
 /// The version of the exported surface.
 ///
-/// EXAMPLE: `"1.0.0"`.
+/// EXAMPLE: `"1.1.0"`.
 #[uniffi::export]
 pub fn phomu_abi_version() -> String {
     VERSION.to_string()

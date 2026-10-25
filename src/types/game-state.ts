@@ -6,7 +6,7 @@
  * it syncs via Supabase Realtime.
  */
 import type { Player, Team, TeamMode } from './player';
-import type { PhomuSong } from './song';
+import type { RoundQuestion, RoundReveal, SongIdentity } from '@/core/types';
 import type { GameMode, MusicProvider, Difficulty } from '@/config/game-config';
 
 
@@ -130,7 +130,14 @@ export interface PlayerAnswer {
 export interface GameRound {
   roundNumber: number;
   mode: GameMode;
-  song: PhomuSong;
+  /**
+   * The identity of the song of the round.
+   *
+   * WHY the identity and not the song: the history keeps what the round was
+   * about. It is written when the round is over, and then the solution has
+   * been released (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+   */
+  identity: SongIdentity | null;
   answers: PlayerAnswer[];
   completedAt: string; // ISO timestamp
 }
@@ -163,8 +170,21 @@ export interface GameState {
   /** What phase this round is in */
   roundPhase: RoundPhase;
 
-  /** The song currently being played */
-  currentSong: PhomuSong | null;
+  /**
+   * The question of the running round.
+   *
+   * WHY a question and not a song: the question view model of the base has
+   * no field for the solution. The shell therefore cannot show the title, the
+   * artist or the year of the song before the reveal — not because it hides
+   * them, but because it does not have them
+   * (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+   */
+  currentQuestion: RoundQuestion | null;
+
+  /**
+   * The reveal of the running round — the phase that releases the solution.
+   */
+  currentReveal: RoundReveal | null;
 
   /** Which game mode is active for this round */
   currentMode: GameMode;

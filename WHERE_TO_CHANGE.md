@@ -132,10 +132,16 @@ The catalogue is in `src/data/songs/`, one file per letter bucket
    npm run validate-catalog                                  # catalogue gate over all files
    ```
 
-5. **Get the cover.** The retrieval runs through the admin API (see below):
-   `scripts/fetch-covers.js` searches covers via iTunes and Deezer — the script
-   still targets the old directory `src/data/packs/` and has to be switched to
-   `src/data/songs/` before it finds data again.
+5. **Get the cover.** The retrieval runs **offline**, through the tooling in
+   `scripts/` — `scripts/fetch-covers.js` searches covers via iTunes and Deezer
+   and writes them into `public/covers/`. The script still targets the old
+   directory `src/data/packs/` and has to be switched to `src/data/songs/`
+   before it finds data again. The server-side admin API
+   (`GET /admin/covers/search`, `POST /admin/covers/save`) would do the same
+   job from the browser, but it is **not reachable** in the delivered build
+   (see the section "I want to change the admin API" below). The file name is derived from
+   the song id, never from the artist or the title
+   (`scripts/lib/cover-name.mjs`): a deployed cover must not name the answer.
 6. **Commit.** According to `docs/DOCUMENTATION_POLICY.md` the documentation
    belongs in the same commit; for a new song that is usually the catalogue
    report.
@@ -247,10 +253,24 @@ progress.
 
 ## I want to change the admin API
 
-The admin API lives under `src/admin-api/` and is **not** part of the static
-export: `next.config.ts` sets `output: 'export'`. The routes therefore only
-work while the app runs via `next dev` or `next start`, not in the exported
-static build.
+The admin API lives under `src/admin-api/` and is **not registered** by the
+App Router: Next.js collects pages and route handlers only from the app
+directory (`src/app/`), so a handler outside of it is never reachable — not in
+the static export, and not in a server build. In addition `next.config.ts`
+sets `output: 'export'`, and a static export cannot execute a route handler at
+all.
+
+Measured (2026-10-25): `npm run build` prints a route list of 20 entries and
+none of them is an admin API route; `.next/app-path-routes-manifest.json` has
+21 entries and no admin API entry; `grep -rn "admin/covers" out/` returns
+0 hits. The single test that states this is
+`src/admin-api/admin-api-reachability.test.ts`.
+
+Whether the admin API will be wired up to a server or removed is an **open
+decision of the owner**, recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
+Until that decision falls, the module stays where it is and the documentation
+states that it is not reachable.
 
 | Route | File | Purpose |
 |---|---|---|
@@ -302,8 +322,13 @@ Alternatively by hand: `openssl rand -hex 32`. The script
 
 The minimum length is **32 characters** (`MIN_ADMIN_TOKEN_LENGTH` in
 `src/admin-api/_lib/security.ts`). If `ADMIN_API_TOKEN` is not set, the API
-answers with **503** ("Admin API not configured"), with a token that is too
-short also **503**, with a wrong token **401**.
+answers with **503**, with a token that is too short also **503** (both answers
+are identical, so that the answer does not disclose whether a usable secret
+exists), with a wrong token **401**.
+
+Remember: the token only matters once the admin API is reachable. Today it is
+not — see the section above and
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
 
 **Commands:**
 

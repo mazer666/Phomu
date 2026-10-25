@@ -80,6 +80,38 @@ The cover download via the admin interface (`/Phomu/admin/review` or
 `/Phomu/admin/songs`) is the practical way to get album covers — the cover
 images are in `public/covers/` afterwards.
 
+### 3.1 The cover file names on disk are opaque
+
+The cover files are **not** named after the artist or the title. The name is
+derived from the song id:
+
+```text
+public/covers/69b3b801841d.jpg      # the cover of the song "hiphop-tribe-ickit"
+```
+
+The reason is the spoiler boundary: the deployed directory is public, and a
+file name such as `2000s-britney-toxic.jpg` is the answer to the question — in
+a directory listing, in the browser history, in the access log of the host and
+in a search engine index.
+
+**The printed card may therefore carry the artist and the title, the deployed
+file may not.** The descriptive name lives in the catalogue and on the card,
+not in the URL of the image.
+
+| What | Where |
+|---|---|
+| The image file | `public/covers/<hash>.jpg` |
+| The mapping song → file | `scripts/cover-name-map.json` |
+| The rule | `scripts/lib/cover-name.mjs` — `sha256(songId)`, first 12 hex characters |
+
+```bash
+node scripts/rename-covers.mjs           # apply the rule to the whole catalogue
+node scripts/rename-covers.mjs --check   # verify that every name still matches
+```
+
+When the cards are prepared, take the image from `public/covers/<hash>.jpg`
+and print the title and the artist as text on the card.
+
 ---
 
 ## 4. Which QR code goes on the card

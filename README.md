@@ -42,12 +42,16 @@ npm run dev
 
 The app then runs on `http://localhost:3000`.
 
-The admin interface needs a token:
+The admin interface runs entirely in the browser: it edits songs in
+`localStorage` and exports them as JSON. It needs **no** token and no server.
 
-```bash
-cp .env.example .env.local
-npm run security:rotate-admin-token   # writes a token to .env.local
-```
+The server-side admin API (`src/admin-api/**`) — the hardened endpoints for
+cover search and cover save — is **not registered in the published build**: the
+project is a static export and the handlers live outside the app directory.
+Whether it will be wired up to a server or removed is an open decision of the
+owner, recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
+Until that decision falls, no document claims that it is reachable.
 
 Detailed instructions including troubleshooting:
 [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md).

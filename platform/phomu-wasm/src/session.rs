@@ -6,30 +6,13 @@
 //! and the format is the same as the one of the C-ABI bridge, so that the
 //! two profiles of the wire model agree (BRIDGE-110).
 
-use phomu_core::facade::{ModeAnswer, Session, SongSource, select_song};
+use phomu_core::facade::{Session, SongSource, select_song};
 use serde_json::Value;
 use std::collections::HashMap;
 
-use crate::json::{round_view, score_snapshot, session_snapshot};
-use crate::{BridgeError, SessionEntry, take_id};
-
-/// The failure of a session the registry does not know.
-fn unknown_session(handle: u64) -> BridgeError {
-    BridgeError {
-        code: 1001,
-        message_key: "errors.invalidConfiguration".to_string(),
-        context: HashMap::from([("session".to_string(), handle.to_string())]),
-    }
-}
-
-/// The failure of a catalogue the registry does not know.
-fn unknown_catalogue(handle: u64) -> BridgeError {
-    BridgeError {
-        code: 1001,
-        message_key: "errors.invalidConfiguration".to_string(),
-        context: HashMap::from([("catalogue".to_string(), handle.to_string())]),
-    }
-}
+use crate::json::session_snapshot;
+use crate::round::round_payload;
+use crate::{BridgeError, SessionEntry, take_id, unknown_catalogue, unknown_session};
 
 /// Create a session and return its handle.
 ///
@@ -95,11 +78,18 @@ pub fn new_session(
         })
         .collect();
 
+    let artist_pool = crate::REGISTRY.with(|registry| {
+        let registry = registry.borrow();
+        catalogue
+            .and_then(|handle| registry.catalogues.get(&handle))
+            .map(|songs| crate::catalogue::artist_pool(songs))
+            .unwrap_or_default()
+    });
     let session = Session::new(
         core_config,
         core_players,
         core_teams,
-        Vec::new(),
+        artist_pool,
         seed,
         now_ms,
     )
@@ -133,7 +123,7 @@ pub fn start_game(handle: u64, now_ms: u64) -> Result<Value, BridgeError> {
             .session
             .start_game(now_ms)
             .map_err(|failure| BridgeError::from(&failure))?;
-        Ok(round_view(&view))
+        Ok(round_payload(&view, &entry.session))
     })
 }
 
@@ -187,29 +177,51 @@ pub fn draw_song(handle: u64, source: &str) -> Result<Value, BridgeError> {
             .session
             .draw_song(song, core_source)
             .map_err(|failure| BridgeError::from(&failure))?;
-        Ok(round_view(&view))
+        Ok(round_payload(&view, &entry.session))
     })
 }
 
-/// Submit the answer of the active player.
+/// Draw a song by its identifier and open the question phase.
+///
+/// WHY the QR flow needs it: a scanned card names a song. The shell hands
+/// the identifier over and the base decides whether the song exists and
+/// whether it may be played.
 ///
 /// # Errors
-/// Returns the failure of the base when the answer does not fit the round.
-pub fn submit_answer(
-    handle: u64,
-    answer: &ModeAnswer,
-    answered_in_seconds: Option<u32>,
-) -> Result<Value, BridgeError> {
+/// Returns the failure of the base when the handle is unknown or when the
+/// catalogue does not know the song.
+pub fn draw_song_by_id(handle: u64, song_id: &str) -> Result<Value, BridgeError> {
     crate::REGISTRY.with(|registry| {
         let mut registry = registry.borrow_mut();
+        let catalogue_id = registry
+            .sessions
+            .get(&handle)
+            .and_then(|entry| entry.catalogue_id);
+        let Some(catalogue_id) = catalogue_id else {
+            return Err(BridgeError {
+                code: 1201,
+                message_key: "errors.catalogueEmpty".to_string(),
+                context: HashMap::new(),
+            });
+        };
+        let Some(songs) = registry.catalogues.get(&catalogue_id) else {
+            return Err(unknown_catalogue(catalogue_id));
+        };
+        let Some(song) = songs.iter().find(|song| song.id == song_id).cloned() else {
+            return Err(BridgeError {
+                code: 1204,
+                message_key: "errors.unknownSong".to_string(),
+                context: HashMap::from([("songId".to_string(), song_id.to_string())]),
+            });
+        };
         let Some(entry) = registry.sessions.get_mut(&handle) else {
             return Err(unknown_session(handle));
         };
-        let snapshot = entry
+        let view = entry
             .session
-            .submit_answer(answer, answered_in_seconds)
+            .draw_song(song, SongSource::Qr)
             .map_err(|failure| BridgeError::from(&failure))?;
-        Ok(score_snapshot(&snapshot))
+        Ok(round_payload(&view, &entry.session))
     })
 }
 
@@ -227,7 +239,7 @@ pub fn reveal(handle: u64) -> Result<Value, BridgeError> {
             .session
             .reveal()
             .map_err(|failure| BridgeError::from(&failure))?;
-        Ok(round_view(&view))
+        Ok(round_payload(&view, &entry.session))
     })
 }
 
@@ -245,7 +257,7 @@ pub fn next_round(handle: u64, now_ms: u64) -> Result<Value, BridgeError> {
             .session
             .next_round(now_ms)
             .map_err(|failure| BridgeError::from(&failure))?;
-        Ok(round_view(&view))
+        Ok(round_payload(&view, &entry.session))
     })
 }
 
@@ -282,25 +294,3 @@ pub fn snapshot(handle: u64) -> Result<Value, BridgeError> {
     })
 }
 
-/// The packs of a catalogue.
-///
-/// # Errors
-/// Returns the failure of the base when the handle is unknown.
-pub fn packs(handle: u64) -> Result<Vec<Value>, BridgeError> {
-    crate::REGISTRY.with(|registry| {
-        let registry = registry.borrow();
-        let Some(catalogue) = registry.catalogues.get(&handle) else {
-            return Err(unknown_catalogue(handle));
-        };
-        Ok(crate::catalogue::packs_of(catalogue)
-            .into_iter()
-            .map(|pack| {
-                serde_json::json!({
-                    "id": pack.id,
-                    "name": pack.name,
-                    "taglineKey": pack.tagline_key,
-                })
-            })
-            .collect())
-    })
-}

@@ -1,0 +1,29 @@
+=== COMMAND: cargo doc --workspace --no-deps ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout of HEAD via git archive) ===
+=== DATE: 2026-10-25T16:56:01Z ===
+=== TOOLCHAIN: cargo 1.99.1 (5f94df478 2026-08-27) / rustc 1.99.1 (58cf8f9c3 2026-10-13) ===
+    Checking phomu-catalog v0.1.0 (/tmp/phomu-qa-src/core/phomu-catalog)
+    Checking phomu-media v0.1.0 (/tmp/phomu-qa-src/core/phomu-media)
+    Checking phomu-config v0.1.0 (/tmp/phomu-qa-src/core/phomu-config)
+    Checking phomu-errors v0.1.0 (/tmp/phomu-qa-src/core/phomu-errors)
+    Checking phomu-i18n v0.1.0 (/tmp/phomu-qa-src/core/phomu-i18n)
+    Checking phomu-core v0.1.0 (/tmp/phomu-qa-src/core/phomu-core)
+    Checking phomu-ffi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-ffi)
+    Checking phomu-conformance v0.1.0 (/tmp/phomu-qa-src/core/phomu-conformance)
+ Documenting phomu-capi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-capi)
+    Checking phomu-capi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-capi)
+ Documenting phomu-ffi v0.1.0 (/tmp/phomu-qa-src/platform/phomu-ffi)
+ Documenting phomu-conformance-runner v0.1.0 (/tmp/phomu-qa-src/tools/conformance-runner)
+ Documenting phomu-wasm v0.1.0 (/tmp/phomu-qa-src/platform/phomu-wasm)
+ Documenting phomu-conformance v0.1.0 (/tmp/phomu-qa-src/core/phomu-conformance)
+ Documenting phomu-core v0.1.0 (/tmp/phomu-qa-src/core/phomu-core)
+ Documenting catalog-tool v0.1.0 (/tmp/phomu-qa-src/tools/catalog-tool)
+ Documenting media-report v0.1.0 (/tmp/phomu-qa-src/tools/media-report)
+ Documenting phomu-i18n v0.1.0 (/tmp/phomu-qa-src/core/phomu-i18n)
+ Documenting phomu-config v0.1.0 (/tmp/phomu-qa-src/core/phomu-config)
+ Documenting phomu-media v0.1.0 (/tmp/phomu-qa-src/core/phomu-media)
+ Documenting phomu-catalog v0.1.0 (/tmp/phomu-qa-src/core/phomu-catalog)
+ Documenting phomu-errors v0.1.0 (/tmp/phomu-qa-src/core/phomu-errors)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 25.63s
+   Generated /tmp/phomu-qa-target2/doc/catalog_tool/index.html and 14 other files
+=== EXIT CODE: 0 ===

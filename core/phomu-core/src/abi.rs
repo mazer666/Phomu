@@ -18,7 +18,7 @@ pub const ABI_VERSION_MAJOR: u16 = 1;
 ///
 /// A change of the minor version means that an export was added or that an
 /// optional field of a DTO was added.
-pub const ABI_VERSION_MINOR: u16 = 0;
+pub const ABI_VERSION_MINOR: u16 = 1;
 
 /// The patch version of the exported surface.
 ///
@@ -31,7 +31,7 @@ pub const ABI_VERSION_PATCH: u16 = 0;
 /// WHY: the shell reads the version at start-up and compares it with the
 /// bracket it was written for (docs/design/BUILD-CONTRACT.md § 3.2).
 ///
-/// EXAMPLE: `abi_version()` is `"1.0.0"`.
+/// EXAMPLE: `abi_version()` is `"1.1.0"`.
 pub fn abi_version() -> String {
     format!("{ABI_VERSION_MAJOR}.{ABI_VERSION_MINOR}.{ABI_VERSION_PATCH}")
 }
@@ -41,7 +41,7 @@ pub fn abi_version() -> String {
 /// WHY: a shell that supports several major versions needs the list of them
 /// to build its bracket.
 ///
-/// EXAMPLE: `abi_versions()` is `["1.0.0"]`.
+/// EXAMPLE: `abi_versions()` is `["1.1.0"]`.
 pub fn abi_versions() -> Vec<String> {
     vec![abi_version()]
 }
@@ -110,7 +110,7 @@ mod tests {
 
     #[test]
     fn the_version_is_formatted_as_three_numbers() {
-        assert_eq!(abi_version(), "1.0.0");
+        assert_eq!(abi_version(), "1.1.0");
     }
 
     #[test]
@@ -128,7 +128,7 @@ mod tests {
     #[test]
     fn the_parts_of_the_version_are_the_declared_constants() {
         assert_eq!(ABI_VERSION_MAJOR, 1);
-        assert_eq!(ABI_VERSION_MINOR, 0);
+        assert_eq!(ABI_VERSION_MINOR, 1);
         assert_eq!(ABI_VERSION_PATCH, 0);
     }
 }

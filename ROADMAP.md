@@ -1080,6 +1080,20 @@ The remaining desktop platforms.
 Pending.
 
 
+# The QA remediation as a work stream
+
+The independent QA assessment of 25 October 2026 ([`docs/qa/`](docs/qa/))
+raised 48 findings and produced a 28-item plan
+([`docs/qa/QA-09-REMEDIATION-BACKLOG.md`](docs/qa/QA-09-REMEDIATION-BACKLOG.md)).
+It is worked as its own stream, in the stages the plan names: recover, close the
+release blockers, build the core, polish.
+
+The execution record — what is done, what is in flight, what the owner has to
+decide — is in
+[`docs/remediation/STATUS.md`](docs/remediation/STATUS.md). Two items are
+**owner decisions**, because they change what the product is and not only how it
+is built: the **hosting model** (2.6) and the **fate of the admin API** (1.6).
+
 # Known gaps
 
 Prioritized by impact on the acceptance readiness. Each gap names the

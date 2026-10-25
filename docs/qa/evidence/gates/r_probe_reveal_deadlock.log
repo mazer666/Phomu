@@ -1,0 +1,20 @@
+=== PROBE: is an unanswered round closable through the commands the bridges export? ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout) ===
+=== The probe file core/phomu-core/tests/qa_probe.rs exists ONLY in /tmp/phomu-qa-src,
+=== the repository was not modified. ===
+=== DATE: 2026-10-25T16:58:49Z ===
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.22s
+     Running tests/qa_probe.rs (/tmp/phomu-qa-target2/debug/deps/qa_probe-acecc87e029036e7)
+
+running 1 test
+test an_unanswered_round_can_be_revealed_through_the_public_commands ... PROBE phase after one answer: question
+PROBE reveal() -> Some("errors.answersNotLocked (1102) phase=question")
+PROBE next_round() -> Some("errors.notAvailableInPhase (1101) phase=question")
+PROBE advance_phase(reveal) -> Some("errors.answersNotLocked (1102) answers=1 expected=3")
+PROBE force_reveal() -> None
+PROBE phase after force_reveal: reveal
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+=== EXIT CODE: 0 ===

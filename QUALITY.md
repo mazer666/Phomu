@@ -4,8 +4,10 @@ A Phomu feature is not “done” because the happy path worked once.
 
 Every substantial feature is accepted across **eight dimensions**. The model is
 modelled on the Vocument house style, but adapted to the reality of a web app:
-there is no native bridge, but there is browser autoplay, client state and an
-admin API.
+there is no native bridge, but there is browser autoplay, client state and a
+local admin tool. The server-side admin API is a separate matter: it is
+hardened, but it is **not reachable** in the delivered build
+([`SECURITY.md`](SECURITY.md) §5 item 1).
 
 ---
 

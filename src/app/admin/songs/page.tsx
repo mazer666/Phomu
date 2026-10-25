@@ -10,243 +10,57 @@
  *  - save the data in localStorage
  *  - export as JSON
  *  - filter by pack and completeness
+ *
+ * WHAT this file holds: the state of the tool — the songs, the selection and
+ * the message of the last save — and the three actions of the header: save,
+ * export and reset. The list lives in `_components/song-list.tsx`, the editor
+ * in `_components/song-editor-panel.tsx`, the rules in
+ * `_lib/admin-song-model.ts` and the overlay of the browser in
+ * `_lib/admin-song-storage.ts`.
+ *
+ * WHY the split: the page had grown beyond the limit of the quality gate
+ * (scripts/check-file-size.mjs). The gate is right — a page that carries the
+ * list, the editor and the rules at the same time is a page that cannot be
+ * read at a glance. The page now orchestrates; it does not draw the list and
+ * it does not know the rules of a song.
  */
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { PhomuSong } from '@/types/song';
-import { ALL_SONGS } from '@/data/songs';
-import { SongEditor } from '@/components/admin/SongEditor';
+import { useCatalogueRecords } from '@/hooks/useCatalogueRecords';
+import { SongList } from '@/app/admin/songs/_components/song-list';
+import { SongEditorPanel } from '@/app/admin/songs/_components/song-editor-panel';
+import {
+  duplicateKey,
+  hasHintSpoiler,
+  hasVerifiableHints,
+  isSongComplete,
+  type AdminSong,
+} from '@/app/admin/songs/_lib/admin-song-model';
+import {
+  clearAdminSongs,
+  loadSongsFromStorage,
+  saveSongsToStorage,
+} from '@/app/admin/songs/_lib/admin-song-storage';
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-/**
- * In the admin tool we use PhomuSong, but lyrics may be null.
- * This version is stored locally and exported.
- */
-type AdminSong = PhomuSong;
-
-type FilterCompleteness = 'all' | 'complete' | 'incomplete';
-type FilterPack = 'all' | string;
-
-// ─── Constants ───────────────────────────────────────────────────────────────
-
-const STORAGE_KEY = 'phomu-admin-songs';
-
-/** Empty song template for a new form */
-const EMPTY_SONG: AdminSong = {
-  id: '',
-  title: '',
-  artist: '',
-  year: new Date().getFullYear(),
-  country: '',
-  genre: '',
-  difficulty: 'medium',
-  mood: [],
-  packs: ['Global Hits 1950-2026'],
-  hints: ['', '', '', '', ''],
-  hintEvidence: ['', '', '', '', ''],
-  lyrics: null,
-  isOneHitWonder: false,
-  links: {
-    youtube: '',
-    spotify: '',
-    spotifyFreePreview: '',
-    amazonMusic: '',
-    amazonPrimePreview: '',
-  },
-  supportedModes: [
-    'timeline',
-    'hint-master',
-    'lyrics',
-    'vibe-check',
-    'cover-confusion',
-    'survivor',
-  ],
-  isQRCompatible: true,
-};
-
-// ─── Helper functions ─────────────────────────────────────────────────────────
-
-/** Checks whether a song is complete (no null fields, all required fields present) */
-function isSongComplete(song: AdminSong): boolean {
-  if (!song.id || !song.title || !song.artist) return false;
-  if (!song.links.youtube || song.links.youtube.startsWith('TODO:'))
-    return false;
-  if (!song.lyrics) return false;
-  if (!song.hints.every((h) => h.trim() !== '')) return false;
-  return true;
-}
-
-function normalizeText(value: string): string {
-  return value
-    .normalize('NFKD')
-    .replace(/\p{Diacritic}/gu, '')
-    .toLowerCase()
-    .replace(/\(.*?\)/g, ' ')
-    .replace(
-      /\b(feat\.?|ft\.?|featuring|remaster(ed)?|version|edit|radio mix|live)\b/g,
-      ' '
-    )
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
-
-function duplicateKey(song: AdminSong): string {
-  return `${normalizeText(song.artist)}::${normalizeText(song.title)}::${song.year}`;
-}
-
-function hasHintSpoiler(song: AdminSong): boolean {
-  const tokens = new Set([
-    ...normalizeText(song.title)
-      .split(' ')
-      .filter((t) => t.length >= 4),
-    ...normalizeText(song.artist)
-      .split(' ')
-      .filter((t) => t.length >= 4),
-  ]);
-
-  return song.hints.some((hint) => {
-    const h = normalizeText(hint);
-    return [...tokens].some((token) => token && h.includes(token));
-  });
-}
-
-function hasVerifiableHints(song: AdminSong): boolean {
-  if (!song.hintEvidence || song.hintEvidence.length !== 5) return false;
-  return song.hintEvidence.every(
-    (url) => typeof url === 'string' && /^https?:\/\//.test(url)
-  );
-}
-
-/** Loads songs from localStorage (if present), otherwise from the JSON */
-function loadSongsFromStorage(): AdminSong[] {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      return JSON.parse(raw) as AdminSong[];
-    }
-  } catch {
-    // localStorage unavailable or corrupted → fall back to the JSON
-  }
-  // Type conversion: the JSON has lyrics: null, which our type allows
-  return (ALL_SONGS as unknown as AdminSong[]) || [];
-}
-
-/** Saves songs in localStorage */
-function saveSongsToStorage(songs: AdminSong[]): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(songs));
-  } catch {
-    console.error('[Admin] Konnte nicht in localStorage speichern.');
-  }
-}
-
-// ─── Sub-components ─────────────────────────────────────────────────────────
-
-/** Badge: shows whether a song is complete or incomplete */
-function CompletenessBadge({ complete }: { complete: boolean }) {
-  const { t } = useTranslation();
-
-  return (
-    <span
-      className={`inline-block px-2 py-0.5 rounded text-xs font-semibold ${
-        complete
-          ? 'bg-green-100 text-green-800'
-          : 'bg-yellow-100 text-yellow-800'
-      }`}
-    >
-      {complete
-        ? t('admin.songs.statusComplete')
-        : t('admin.songs.statusIncomplete')}
-    </span>
-  );
-}
-
-/** A single row in the song overview */
-function SongRow({
-  song,
-  isSelected,
-  onSelect,
-}: {
-  song: AdminSong;
-  isSelected: boolean;
-  onSelect: () => void;
-}) {
-  const { t } = useTranslation();
-  const complete = isSongComplete(song);
-  const hasLyrics = song.lyrics !== null;
-  const hasYoutube =
-    !!song.links.youtube && !song.links.youtube.startsWith('TODO:');
-
-  return (
-    <tr
-      onClick={onSelect}
-      className={`cursor-pointer border-b border-gray-100 hover:bg-blue-50 transition-colors ${
-        isSelected ? 'bg-blue-100' : ''
-      }`}
-    >
-      <td className="px-3 py-2 text-sm font-medium text-gray-900 max-w-[200px] truncate">
-        {song.title}
-      </td>
-      <td className="px-3 py-2 text-sm text-gray-600 max-w-[150px] truncate">
-        {song.artist}
-      </td>
-      <td className="px-3 py-2 text-sm text-gray-500">{song.year}</td>
-      <td className="px-3 py-2 text-sm text-gray-500">
-        {song.packs[0] || t('admin.songs.unassigned')}
-      </td>
-      <td className="px-3 py-2">
-        <CompletenessBadge complete={complete} />
-      </td>
-      <td className="px-3 py-2">
-        <span
-          className={`text-xs ${hasLyrics ? 'text-green-600' : 'text-gray-400'}`}
-        >
-          {hasLyrics ? '✓' : '✗'} {t('admin.songs.lyricsLabel')}
-        </span>
-        {'  '}
-        <span
-          className={`text-xs ${hasYoutube ? 'text-green-600' : 'text-gray-400'}`}
-        >
-          {hasYoutube ? '✓' : '✗'} {t('admin.songs.youtubeShort')}
-        </span>
-      </td>
-    </tr>
-  );
-}
-// ─── Main page ───────────────────────────────────────────────────────────────
+// ─── Main page ─────────────────────────────────────────────────────────────────
 
 export default function AdminSongsPage() {
   const { t, i18n } = useTranslation();
-  const [songs, setSongs] = useState<AdminSong[]>(() => loadSongsFromStorage());
+  // The catalogue comes from the base: it is the answer key of the game and
+  // it must not be part of the bundle (docs/qa/QA-02-SPOILER-FREENESS.md,
+  // QA-SPO-001).
+  const { records } = useCatalogueRecords();
+  const [songs, setSongs] = useState<AdminSong[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [filterCompleteness, setFilterCompleteness] =
-    useState<FilterCompleteness>('all');
-  const [filterPack, setFilterPack] = useState<FilterPack>('all');
-  const [searchQuery, setSearchQuery] = useState('');
   const [savedMessage, setSavedMessage] = useState('');
 
-  // Determine all available packs from the songs
-  const availablePacks = Array.from(new Set(songs.flatMap((s) => s.packs)));
-
-  // Filtered song list
-  const filteredSongs = songs.filter((song) => {
-    if (filterPack !== 'all' && !song.packs.includes(filterPack)) return false;
-    if (filterCompleteness === 'complete' && !isSongComplete(song))
-      return false;
-    if (filterCompleteness === 'incomplete' && isSongComplete(song))
-      return false;
-    if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-      return (
-        song.title.toLowerCase().includes(q) ||
-        song.artist.toLowerCase().includes(q) ||
-        song.id.toLowerCase().includes(q)
-      );
-    }
-    return true;
-  });
+  // The list is filled when the records of the base arrive. The edits of the
+  // browser win over the catalogue — they are the newer state.
+  useEffect(() => {
+    if (records.length === 0) return;
+    setSongs(loadSongsFromStorage(records));
+  }, [records]);
 
   // Save song (update in the list)
   const handleSave = useCallback(
@@ -317,10 +131,21 @@ export default function AdminSongsPage() {
   // Reset localStorage (to the JSON source data)
   function handleReset() {
     if (!confirm(t('admin.songs.resetConfirm'))) return;
-    localStorage.removeItem(STORAGE_KEY);
-    setSongs(ALL_SONGS as unknown as AdminSong[]);
+    clearAdminSongs();
+    setSongs(records);
     setSelectedId(null);
   }
+
+  // A new song enters the list as a draft; it is stored when it is saved.
+  const handleCreate = useCallback((draft: AdminSong) => {
+    setSongs((prev) => [draft, ...prev]);
+    setSelectedId(draft.id);
+  }, []);
+
+  // The selection is a toggle: a second click on the song closes the editor.
+  const handleSelect = useCallback((songId: string) => {
+    setSelectedId((current) => (current === songId ? null : songId));
+  }, []);
 
   const selectedSong = songs.find((s) => s.id === selectedId) ?? null;
   const completeCount = songs.filter(isSongComplete).length;
@@ -407,135 +232,20 @@ export default function AdminSongsPage() {
         <div className="flex gap-6">
           {/* Left column: list + filters */}
           <div className="flex-1 min-w-0">
-            {/* Filter bar */}
-            <div className="flex gap-3 mb-4">
-              <input
-                type="search"
-                placeholder={t('admin.songs.searchPlaceholder')}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-              <select
-                value={filterCompleteness}
-                onChange={(e) =>
-                  setFilterCompleteness(e.target.value as FilterCompleteness)
-                }
-                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-              >
-                <option value="all">{t('common.all')}</option>
-                <option value="incomplete">
-                  {t('admin.songs.filterIncomplete')}
-                </option>
-                <option value="complete">
-                  {t('admin.songs.filterComplete')}
-                </option>
-              </select>
-              <select
-                value={filterPack}
-                onChange={(e) => setFilterPack(e.target.value)}
-                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-              >
-                <option value="all">{t('admin.songs.filterAllPacks')}</option>
-                {availablePacks.map((pack) => (
-                  <option key={pack} value={pack}>
-                    {pack}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Song-Tabelle */}
-            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-              <table className="w-full text-left">
-                <thead className="bg-gray-50 border-b border-gray-200">
-                  <tr>
-                    <th className="px-3 py-2 text-xs font-semibold text-gray-600 uppercase">
-                      {t('admin.songs.columnTitle')}
-                    </th>
-                    <th className="px-3 py-2 text-xs font-semibold text-gray-600 uppercase">
-                      {t('admin.songs.columnArtist')}
-                    </th>
-                    <th className="px-3 py-2 text-xs font-semibold text-gray-600 uppercase">
-                      {t('admin.songs.columnYear')}
-                    </th>
-                    <th className="px-3 py-2 text-xs font-semibold text-gray-600 uppercase">
-                      {t('admin.songs.columnPack')}
-                    </th>
-                    <th className="px-3 py-2 text-xs font-semibold text-gray-600 uppercase">
-                      {t('admin.songs.columnStatus')}
-                    </th>
-                    <th className="px-3 py-2 text-xs font-semibold text-gray-600 uppercase">
-                      {t('admin.songs.columnDetails')}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filteredSongs.length === 0 ? (
-                    <tr>
-                      <td
-                        colSpan={6}
-                        className="px-4 py-8 text-center text-gray-400 text-sm"
-                      >
-                        {t('admin.songs.noSongs')}
-                      </td>
-                    </tr>
-                  ) : (
-                    filteredSongs.map((song) => (
-                      <SongRow
-                        key={song.id}
-                        song={song}
-                        isSelected={selectedId === song.id}
-                        onSelect={() =>
-                          setSelectedId(selectedId === song.id ? null : song.id)
-                        }
-                      />
-                    ))
-                  )}
-                </tbody>
-              </table>
-              <div className="px-3 py-2 border-t border-gray-100 text-xs text-gray-400">
-                {t('admin.songs.songCount', {
-                  count: filteredSongs.length,
-                  shown: filteredSongs.length,
-                  total: songs.length,
-                })}
-              </div>
-            </div>
+            <SongList
+              songs={songs}
+              selectedId={selectedId}
+              onSelect={handleSelect}
+            />
           </div>
 
           <div className="w-[480px] shrink-0">
-            {selectedSong ? (
-              <SongEditor
-                key={selectedSong.id}
-                song={selectedSong}
-                onSave={handleSave}
-                onCancel={() => setSelectedId(null)}
-                variant="inline"
-              />
-            ) : (
-              <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
-                <p className="text-4xl mb-3">🎵</p>
-                <p className="font-medium">{t('admin.songs.noSelection')}</p>
-                <p className="text-sm mt-1">
-                  {t('admin.songs.noSelectionHint')}
-                </p>
-                <button
-                  onClick={() => {
-                    const draftSong: AdminSong = {
-                      ...EMPTY_SONG,
-                      id: `draft-${Date.now()}`,
-                      title: t('admin.songs.draftTitle'),
-                    };
-                    setSongs((prev) => [draftSong, ...prev]);
-                    setSelectedId(draftSong.id);
-                  }}
-                  className="mt-4 px-4 py-2 text-sm bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  {t('admin.songs.createNew')}
-                </button>
-              </div>
-            )}
+            <SongEditorPanel
+              song={selectedSong}
+              onSave={handleSave}
+              onCancel={() => setSelectedId(null)}
+              onCreate={handleCreate}
+            />
           </div>
         </div>
       </div>

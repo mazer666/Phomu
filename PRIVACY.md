@@ -35,7 +35,7 @@ following checks were run on 2026-10-25 against the state of the repository:
 |---|---|---|
 | No analytics/tracking SDK in the dependencies | `grep -nE "analytics\|sentry\|posthog\|mixpanel\|amplitude\|hotjar\|gtag" package.json` | **0 hits** |
 | No analytics/tracking code in the source | `grep -rniE "google-analytics\|gtag\|googletagmanager\|sentry\|datadog\|hotjar\|matomo\|plausible\|mixpanel\|segment\.io\|posthog\|amplitude\|clarity\.ms\|fbq" src/` | **0 hits** in code (the only hits are song texts in `src/data/songs/J1.json` and `src/data/songs/W2.json`, which mention "Facebook" and "Twitter" respectively in the lyrics) |
-| No external requests from the browser code | `grep -rn "fetch(" src --include='*.ts' --include='*.tsx'` | **0 hits** outside `src/admin-api/**` (server side) |
+| No external requests from the browser code | `grep -rn "fetch(" src --include='*.ts' --include='*.tsx'` | **0 hits** outside `src/admin-api/**` (server side) — and the admin API itself is not registered in the delivered build, so today no browser code makes any request at all |
 | No external fonts | `grep -rn "next/font\|fonts.googleapis\|fonts.gstatic" src/` | **0 hits**; `src/app/globals.css` contains only `@import "tailwindcss"` — the font ships with the app |
 | No external `<script>` tags in the JSX | `grep -rn "<script" src --include='*.tsx'` | **0 hits**; the only external script is loaded by the app itself at runtime: the YouTube IFrame API script (`src/components/game/MusicPlayer.tsx`, `loadApi()`) |
 | No cookies | `grep -rn "document.cookie\|setCookie\|sendBeacon" src/` | **0 hits** |
@@ -102,7 +102,20 @@ therefore cannot be circumvented by restarting.
 
 The admin API (`src/admin-api/**`) is the only place where Phomu processes data on
 a server — and it currently has **no consumer** and no reachable endpoint (see
-`SECURITY.md`, section 5, item 1). In case it is enabled later:
+`SECURITY.md`, section 5, item 1). Measured: the build registers no admin API
+route, the published export contains no admin API artefact, and the admin pages
+call no endpoint at all.
+
+**Status: blocked.** Whether it will be wired up to a server or removed is an
+open decision of the owner, recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
+It falls automatically when the hosting model is decided for a host that
+executes route handlers, or when the owner confirms that Phomu stays a static
+export without a server. **No privacy promise is made for either outcome** — the
+data flows below describe what would happen *if* the API is enabled, and nothing
+of it happens today.
+
+In case it is enabled later:
 
 - It only answers requests with a valid token (`x-admin-token`).
 - For the cover search it calls `https://itunes.apple.com/search` and
@@ -219,11 +232,19 @@ local game state — it leaves the device only if the user exports it themselves
   (`grep -rn "NEXT_PUBLIC" src` → only the issue URL in
   `src/components/game/MusicPlayer.tsx`).
 - It is never delivered to the browser, never logged and never written into an
-  error message (`src/admin-api/_lib/security.ts:84-100`; test:
+  error message (`src/admin-api/_lib/security.ts:86`, `:96`; tests:
   `src/admin-api/admin-token-guard.test.ts` →
-  `keeps the token value out of responses and logs`).
+  `keeps the token value out of responses and logs`, and
+  `src/admin-api/admin-api-hardening.test.ts` →
+  `never writes the token into a log line`).
 - It must be at least 32 characters long, otherwise the API answers with 503
-  (`src/admin-api/_lib/security.ts:66-68`).
+  (`src/admin-api/_lib/security.ts:25`, `:92-101`).
+- The answer of the API does not disclose whether a usable token exists: a
+  missing token and a wrong token produce byte-identical answers, and the two
+  misconfigurations of the server produce byte-identical answers
+  (`src/admin-api/admin-api-hardening.test.ts` →
+  `answers a missing token and a wrong token identically`,
+  `answers a missing configuration and a too short token identically`).
 - Generate: `npm run security:rotate-admin-token`
   (`scripts/generate-admin-token.js`) — the token is printed to the console and
   then belongs in the operator's secret store, **not** in the repository.
@@ -261,16 +282,22 @@ An honest list of the limits of this policy:
    are configured in `next.config.ts`, but they are not delivered with the static
    export (`SECURITY.md`, section 4.6). That is why section 3.1 says "limited"
    with a reference to the limitation, and not "blocked".
-3. **There is no data about the past of the project.** This policy describes the
+3. **The admin API is not reachable, and no promise is made for it.** The
+   endpoints of `src/admin-api/**` are not registered in the delivered build
+   (`SECURITY.md`, section 5, item 1). Section 3.3 therefore describes what
+   *would* happen if the API is switched on — not what happens today. The
+   decision is recorded in
+   [`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md).
+4. **There is no data about the past of the project.** This policy describes the
    state as of 2026-10-25. Whether there was a phase with server operation in the
    past cannot be proven from the repository — there is no database, no migration
    and no user directory in the repository.
-4. **The GitHub issues contain user content.** A reported missing link ends up in
+5. **The GitHub issues contain user content.** A reported missing link ends up in
    a public repository issue. Anyone who uses `Fehlenden Link melden` ("report
    missing link") publishes the information listed in section 3.4 with it —
    including time zone, locale, region and device ID. That is a deliberate
    decision by the user, but it cannot be undone once the issue exists.
-5. **The accesses of the third parties are not measurable.** How many users use
+6. **The accesses of the third parties are not measurable.** How many users use
    Phomu, how long they play and which songs they choose is **not** measurable —
    precisely because there is no telemetry. That is not a defect but the chosen
    state.

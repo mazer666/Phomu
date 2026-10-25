@@ -4,7 +4,11 @@
  * Three real lines and one AI-generated fake line are mixed.
  * The player has to identify the FAKE line.
  *
- * If song.lyrics is null: a bonus round without lyrics data.
+ * The four options come from the core. The core builds them and it decides
+ * which one was the invented line — the shell never learns it. The player
+ * sends the line they picked, the core answers with the points.
+ *
+ * If the song has no lyric lines: a bonus round without lyrics data.
  *
  * Score: 4 points for correctly detecting the fake.
  *
@@ -12,26 +16,19 @@
  */
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { getSpicyColor } from '@/utils/feedback-messages';
-import type { PhomuSong } from '@/types/song';
+import type { AnswerFeedback, RoundQuestion } from '@/core/types';
+import { submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
-import { lyricsAward, lyricsBonusAward } from '@/utils/mode-rules';
-
-// ─── Props ────────────────────────────────────────────────────────
-
-/** Shuffles an array randomly */
-function shuffle<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5);
-}
 
 // ─── Props ────────────────────────────────────────────────────────
 
 interface LyricsModeProps {
-  song: PhomuSong;
+  question: RoundQuestion;
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -42,18 +39,18 @@ interface LyricsModeProps {
 
 // ─── Main component ──────────────────────────────────────────────
 
-export function LyricsMode({ song, onAnswer, onReveal }: LyricsModeProps) {
-  const lyrics = song.lyrics;
+export function LyricsMode({ question, onAnswer, onReveal }: LyricsModeProps) {
+  const options = question.options;
 
-  // Fallback when no lyrics are present
-  if (!lyrics) {
-    return <BonusRound song={song} onAnswer={onAnswer} onReveal={onReveal} />;
+  // Fallback when the song has no lyric lines
+  if (options.length === 0) {
+    return <BonusRound question={question} onAnswer={onAnswer} onReveal={onReveal} />;
   }
 
   return (
     <LyricsQuestion
-      song={song}
-      lyrics={lyrics}
+      question={question}
+      options={options}
       onAnswer={onAnswer}
       onReveal={onReveal}
     />
@@ -62,16 +59,14 @@ export function LyricsMode({ song, onAnswer, onReveal }: LyricsModeProps) {
 
 // ─── Lyrics question (when data is present) ─────────────────────────
 
-type SongLyrics = NonNullable<PhomuSong['lyrics']>;
-
 function LyricsQuestion({
-  song,
-  lyrics,
+  question,
+  options,
   onAnswer,
   onReveal,
 }: {
-  song: PhomuSong;
-  lyrics: SongLyrics;
+  question: RoundQuestion;
+  options: string[];
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -82,40 +77,28 @@ function LyricsQuestion({
   const { t } = useTranslation();
   const [selected, setSelected] = useState<number | null>(null);
   const [isRevealing, setIsRevealing] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [inventedLine, setInventedLine] = useState<string | null>(null);
 
-  // Mix 3 real + 1 fake line — stabilised once
-  const options = useMemo(() => {
-    // If several fakes are present, pick one at random
-    const selectedFake = Array.isArray(lyrics.fake)
-      ? lyrics.fake[Math.floor(Math.random() * lyrics.fake.length)]
-      : lyrics.fake;
-
-    const items = [
-      { text: lyrics.real[0], isFake: false },
-      { text: lyrics.real[1], isFake: false },
-      { text: lyrics.real[2], isFake: false },
-      { text: selectedFake, isFake: true },
-    ];
-    return shuffle(items);
-    // song.id is stable as long as the same song is displayed
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [song.id]);
-
-  const spicyMessage = useSpicyMessage(
-    options[selected!]?.isFake ?? false,
-    song.id
-  );
+  const spicyMessage = useSpicyMessage(isCorrect, question.songId);
 
   function handleSelect(index: number) {
     setSelected(index);
   }
 
-  function handleConfirm() {
+  async function handleConfirm() {
     if (selected === null || isRevealing) return;
     setIsRevealing(true);
-    const outcome = lyricsAward(options[selected]?.isFake ?? false);
+    const picked = options[selected] ?? '';
+    // The core decides whether the picked line was the invented one: the
+    // shell does not know it and must not learn it
+    // (docs/qa/QA-09-REMEDIATION-BACKLOG.md § 1.2).
+    const result = await submit({ kind: 'lyrics', line: picked });
+    const feedback: AnswerFeedback = result.feedback;
+    setIsCorrect(result.score.isCorrect);
+    setInventedLine(feedback.detail.inventedLine ?? null);
     // Lyrics Labyrinth: 4 points base score (cheats were already deducted)
-    onAnswer(outcome.isCorrect, outcome.points);
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded);
     onReveal();
   }
 
@@ -134,27 +117,20 @@ function LyricsQuestion({
       {/* Music — starts immediately, blurred until the reveal */}
       <div className="w-full">
         <MusicPlayer
-          songId={song.id}
-          songTitle={song.title}
-          songArtist={song.artist}
-          songPack={song.packs[0]}
-          youtubeLink={song.links.youtube}
-          youtubeAlternatives={
-            song.links.youtubeAlternatives ??
-            (song.links.fallbackYoutubeId
-              ? [song.links.fallbackYoutubeId]
-              : undefined)
-          }
-          spotifyLink={song.links.spotify}
-          spotifyFreePreview={song.links.spotifyFreePreview}
-          amazonMusicLink={song.links.amazonMusic}
-          amazonPrimePreview={song.links.amazonPrimePreview}
-          startSeconds={song.previewTimestamp?.start ?? 0}
+          songId={question.songId}
+          songPack={question.context.pack ?? undefined}
+          youtubeLink={question.media.youtube}
+          youtubeAlternatives={question.media.youtubeAlternatives}
+          spotifyLink={question.media.spotify ?? undefined}
+          spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+          amazonMusicLink={question.media.amazonMusic ?? undefined}
+          amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
+          startSeconds={question.media.startSeconds}
           blurred={!isRevealing}
         />
       </div>
 
-      {/* Artist hint */}
+      {/* Artist hint — the mode discloses the identity of the song */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
@@ -163,8 +139,10 @@ function LyricsQuestion({
         <p className="text-xs uppercase tracking-widest opacity-50 mb-1">
           {t('modes.lyrics.songLabel')}
         </p>
-        <h3 className="text-2xl font-black">{song.artist}</h3>
-        <p className="text-lg font-bold opacity-70 mb-2">{song.title}</p>
+        <h3 className="text-2xl font-black">{question.identity?.artist}</h3>
+        <p className="text-lg font-bold opacity-70 mb-2">
+          {question.identity?.title}
+        </p>
         <p className="text-sm opacity-60 mt-1 font-medium">
           {t('modes.lyrics.questionIntro')}{' '}
           <span style={{ color: 'var(--color-error)' }}>
@@ -178,6 +156,7 @@ function LyricsQuestion({
       <div className="grid grid-cols-1 gap-3">
         {options.map((option, i) => {
           const isSelected = selected === i;
+          const isInvented = isRevealing && option === inventedLine;
 
           return (
             <motion.button
@@ -202,7 +181,12 @@ function LyricsQuestion({
               <span className="font-sans font-bold opacity-40 mr-2 text-xs">
                 {String.fromCharCode(65 + i)}.
               </span>
-              &ldquo;{option.text}&rdquo;
+              &ldquo;{option}&rdquo;
+              {isInvented && (
+                <span className="block font-sans font-black text-xs uppercase tracking-widest text-orange-400">
+                  {t('modes.lyrics.fakeLine')}
+                </span>
+              )}
             </motion.button>
           );
         })}
@@ -232,19 +216,12 @@ function LyricsQuestion({
         >
           <p
             className="text-2xl font-black uppercase italic tracking-tighter mb-1"
-            style={{
-              color: getSpicyColor(
-                options[selected!]?.isFake ?? false,
-                song.id
-              ),
-            }}
+            style={{ color: getSpicyColor(isCorrect, question.songId) }}
           >
             {spicyMessage}
           </p>
           <p className="text-sm font-bold opacity-60">
-            {options[selected!]?.isFake
-              ? t('modes.lyrics.correct')
-              : t('modes.lyrics.wrong')}
+            {isCorrect ? t('modes.lyrics.correct') : t('modes.lyrics.wrong')}
           </p>
         </motion.div>
       )}
@@ -255,11 +232,11 @@ function LyricsQuestion({
 // ─── Bonus round (no lyrics present) ────────────────────────
 
 function BonusRound({
-  song,
+  question,
   onAnswer,
   onReveal,
 }: {
-  song: PhomuSong;
+  question: RoundQuestion;
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -278,7 +255,7 @@ function BonusRound({
           {t('modes.lyrics.bonusTitle')}
         </h3>
         <p className="opacity-60 text-sm max-w-xs leading-relaxed">
-          {t('modes.lyrics.bonusText', { artist: song.artist })}
+          {t('modes.lyrics.bonusText', { artist: question.identity?.artist ?? '' })}
           <br className="my-1" />
           {t('modes.lyrics.bonusReward')}
         </p>
@@ -286,10 +263,10 @@ function BonusRound({
       {!claimed ? (
         <div className="flex gap-3">
           <button
-            onClick={() => {
+            onClick={async () => {
               setClaimed(true);
-              const outcome = lyricsBonusAward(true);
-              onAnswer(outcome.isCorrect, outcome.points);
+              const result = await submit({ kind: 'lyrics-bonus', claimed: true });
+              onAnswer(result.score.isCorrect, result.score.pointsAwarded);
               onReveal();
             }}
             className="px-6 py-3 rounded-xl font-black"
@@ -298,10 +275,10 @@ function BonusRound({
             {t('modes.lyrics.bonusClaim')}
           </button>
           <button
-            onClick={() => {
+            onClick={async () => {
               setClaimed(true);
-              const outcome = lyricsBonusAward(false);
-              onAnswer(outcome.isCorrect, outcome.points);
+              const result = await submit({ kind: 'lyrics-bonus', claimed: false });
+              onAnswer(result.score.isCorrect, result.score.pointsAwarded);
               onReveal();
             }}
             className="px-6 py-3 rounded-xl font-bold border"

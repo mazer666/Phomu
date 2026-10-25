@@ -20,6 +20,7 @@
 //! | [`RoundPhase`] | the phase of the round |
 //! | [`FieldId`] | the fields a shell may persist |
 //! | [`censor_hint`] | the censoring of a hint |
+//! | [`valid_slots`], [`canonical_slot`], [`apply_year`] | the slots of the Timeline mode |
 //! | [`abi_version`] | the version of the surface |
 //!
 //! ## What is not exported
@@ -64,6 +65,7 @@ pub use crate::abi::{
 pub use crate::modes::{
     GameMode, KnewWhat, ModeAnswer, ModeContext, ModeOutcome, evaluate_mode_answer,
 };
+pub use crate::modes::timeline::{TimelineEffect, apply_year, canonical_slot, valid_slots};
 pub use crate::rules::phase::RoundPhase;
 pub use crate::rules::scoring::TimeDecayConfig;
 pub use crate::rules::teams::{EliminationRule, TeamMode};

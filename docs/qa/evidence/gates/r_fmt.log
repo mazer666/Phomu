@@ -1,0 +1,5 @@
+=== COMMAND: cargo fmt --check ===
+=== BASELINE: 0903997a0df38cfb1fe465c47f0958bbb5a63188 (pristine checkout of HEAD via git archive) ===
+=== DATE: 2026-10-25T16:55:52Z ===
+=== TOOLCHAIN: cargo 1.99.1 (5f94df478 2026-08-27) / rustc 1.99.1 (58cf8f9c3 2026-10-13) ===
+=== EXIT CODE: 0 ===

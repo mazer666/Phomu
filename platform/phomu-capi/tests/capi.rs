@@ -56,9 +56,9 @@ fn failure(error: &PhomuErrorC) -> (u16, String) {
 #[test]
 fn the_abi_version_is_in_the_library() {
     assert_eq!(phomu_abi_version_major(), 1);
-    assert_eq!(phomu_abi_version_minor(), 0);
+    assert_eq!(phomu_abi_version_minor(), 1);
     assert_eq!(phomu_abi_version_patch(), 0);
-    assert_eq!(text(phomu_abi_version_string()), "1.0.0");
+    assert_eq!(text(phomu_abi_version_string()), "1.1.0");
 }
 
 #[test]
@@ -68,7 +68,7 @@ fn the_header_carries_the_version_of_the_library() {
     )
     .expect("the header exists");
     assert!(header.contains("#define PHOMU_ABI_VERSION_MAJOR 1"));
-    assert!(header.contains("#define PHOMU_ABI_VERSION_MINOR 0"));
+    assert!(header.contains("#define PHOMU_ABI_VERSION_MINOR 1"));
     assert!(header.contains("#define PHOMU_ABI_VERSION_PATCH 0"));
 }
 

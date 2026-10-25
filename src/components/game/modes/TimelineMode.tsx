@@ -12,130 +12,34 @@
 'use client';
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import type { TFunction } from 'i18next';
-import type { PhomuSong } from '@/types/song';
-import { getAllSongs } from '@/utils/song-picker';
+import type { RoundQuestion, SongIdentity } from '@/core/types';
+import { applyCheat, submit, yearScale } from '@/core/session-service';
 import { useGameStore } from '@/stores/game-store';
-import { getSpicyColor } from '@/utils/feedback-messages';
-import {
-  CHEAT_PENALTY_TIMELINE_DECADE,
-  CHEAT_PENALTY_TIMELINE_JOKER,
-  timelineAnswerEffect,
-  timelineCanonicalSlot,
-  timelinePoints,
-  timelineValidSlots,
-} from '@/utils/mode-rules';
 import { MusicPlayer } from '../MusicPlayer';
-import { useSpicyMessage } from '../useSpicyMessage';
-
-// ─── Decade hints for the cheat ────────────────────────────────────────────
-
-/**
- * Hint pool per decade — one key per variant.
- * The texts live in `src/i18n/locales/parts/modes.{de,en}.json`.
- */
-function getDecadeHintPool(decade: number, t: TFunction): string[] {
-  switch (decade) {
-    case 1950:
-      return [
-        t('modes.timeline.decadeHints.1950.first'),
-        t('modes.timeline.decadeHints.1950.second'),
-        t('modes.timeline.decadeHints.1950.third'),
-        t('modes.timeline.decadeHints.1950.fourth'),
-      ];
-    case 1960:
-      return [
-        t('modes.timeline.decadeHints.1960.first'),
-        t('modes.timeline.decadeHints.1960.second'),
-        t('modes.timeline.decadeHints.1960.third'),
-        t('modes.timeline.decadeHints.1960.fourth'),
-      ];
-    case 1970:
-      return [
-        t('modes.timeline.decadeHints.1970.first'),
-        t('modes.timeline.decadeHints.1970.second'),
-        t('modes.timeline.decadeHints.1970.third'),
-        t('modes.timeline.decadeHints.1970.fourth'),
-      ];
-    case 1980:
-      return [
-        t('modes.timeline.decadeHints.1980.first'),
-        t('modes.timeline.decadeHints.1980.second'),
-        t('modes.timeline.decadeHints.1980.third'),
-        t('modes.timeline.decadeHints.1980.fourth'),
-        t('modes.timeline.decadeHints.1980.fifth'),
-      ];
-    case 1990:
-      return [
-        t('modes.timeline.decadeHints.1990.first'),
-        t('modes.timeline.decadeHints.1990.second'),
-        t('modes.timeline.decadeHints.1990.third'),
-        t('modes.timeline.decadeHints.1990.fourth'),
-        t('modes.timeline.decadeHints.1990.fifth'),
-      ];
-    case 2000:
-      return [
-        t('modes.timeline.decadeHints.2000.first'),
-        t('modes.timeline.decadeHints.2000.second'),
-        t('modes.timeline.decadeHints.2000.third'),
-        t('modes.timeline.decadeHints.2000.fourth'),
-        t('modes.timeline.decadeHints.2000.fifth'),
-      ];
-    case 2010:
-      return [
-        t('modes.timeline.decadeHints.2010.first'),
-        t('modes.timeline.decadeHints.2010.second'),
-        t('modes.timeline.decadeHints.2010.third'),
-        t('modes.timeline.decadeHints.2010.fourth'),
-        t('modes.timeline.decadeHints.2010.fifth'),
-      ];
-    case 2020:
-      return [
-        t('modes.timeline.decadeHints.2020.first'),
-        t('modes.timeline.decadeHints.2020.second'),
-        t('modes.timeline.decadeHints.2020.third'),
-        t('modes.timeline.decadeHints.2020.fourth'),
-      ];
-    default:
-      return [];
-  }
-}
-
-function getDecadeHint(year: number, t: TFunction): string {
-  const decade = Math.floor(year / 10) * 10;
-  const pool = getDecadeHintPool(decade, t);
-  if (pool.length === 0)
-    return t('modes.timeline.decadeHints.fallback', { decade });
-  return pool[Math.floor(Math.random() * pool.length)]!;
-}
-
-function randomInitialYears(count: number): number[] {
-  const all = [...new Set(getAllSongs().map((s) => s.year))];
-  const shuffled = all.sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count).sort((a, b) => a - b);
-}
-
-/**
- * Returns all accepted slot indexes.
- * If the year already occurs in the timeline, both slots around
- * the duplicate (before and after) count as correct.
- *
- * The rule itself lives in `@/utils/mode-rules` so that the conformance
- * runner can execute it without React.
- */
-function getValidSlots(songYear: number, sortedYears: number[]): Set<number> {
-  return timelineValidSlots(songYear, sortedYears);
-}
-
-/** Canonical slot for the display (green hint on a wrong answer) */
-function canonicalSlot(songYear: number, sortedYears: number[]): number {
-  return timelineCanonicalSlot(songYear, sortedYears);
-}
+import { TimelineHeader } from './TimelineHeader';
+import { TimelineSlots } from './TimelineSlots';
+import {
+  DECADE_HINT_FALLBACK_KEY,
+  decadeOf,
+  pickDecadeHintKey,
+} from './timeline-hints';
+import {
+  TIMELINE_CHEAT_PENALTIES,
+  TIMELINE_INITIAL_YEAR_COUNT,
+  describeTimelineSlot,
+  isTimelineSlotCorrect,
+  nextTimelineSlot,
+  randomInitialYears,
+  resolveTimelineOutcome,
+  slotFromNumberKey,
+  timelineAnswerSeconds,
+  timelinePointBudget,
+  timelineSlotCount,
+} from './timeline-logic';
 
 interface TimelineModeProps {
-  song: PhomuSong;
+  question: RoundQuestion;
   onAnswer: (
     isCorrect: boolean,
     pointsAwarded: number,
@@ -146,7 +50,7 @@ interface TimelineModeProps {
 
 type RemovalState = 'none' | 'choosing' | 'done';
 
-export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
+export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps) {
   const { t, i18n } = useTranslation();
   const {
     timelineYears,
@@ -171,35 +75,51 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     [i18n.language]
   );
 
-  // Initialise once, when the timeline is still empty
+  // The scale of the catalogue — the years the timeline may start with.
+  const [scale, setScale] = useState<number[]>([]);
+
   useEffect(() => {
-    if (timelineYears.length === 0) {
-      initTimeline(randomInitialYears(3));
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const years = await yearScale();
+        if (!cancelled) setScale(years);
+      } catch (failure) {
+        console.error('the year scale could not be loaded', failure);
+      }
+    };
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (timelineYears.length === 0 && scale.length > 0) {
+      initTimeline(randomInitialYears(scale, TIMELINE_INITIAL_YEAR_COUNT));
     }
-  }, [initTimeline, timelineYears.length]);
+  }, [initTimeline, timelineYears.length, scale]);
 
+  // The slots come from the core: they depend on the year of the song, and
+  // the year is the answer of the mode.
   const validSlotSet = useMemo(
-    () => getValidSlots(song.year, timelineYears),
-    [song.year, timelineYears]
-  );
-  const correct = useMemo(
-    () => canonicalSlot(song.year, timelineYears),
-    [song.year, timelineYears]
+    () => new Set(question.context.timelineSlots),
+    [question.context.timelineSlots]
   );
 
-  const points = timelinePoints(timelineYears.length, config.timelineMaxPoints); // more years = more points, but capped
+  // The base owns the award; the shell shows the budget of the round.
+  const points = timelinePointBudget(question.pointsPossible);
 
   const questionStartedAt = useRef<number>(Date.now());
 
   useEffect(() => {
     questionStartedAt.current = Date.now();
-  }, [song.id]);
+  }, [question.songId]);
 
   const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
-  const spicyMessage = useSpicyMessage(
-    validSlotSet.has(selectedSlot!),
-    song.id
-  );
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [identity, setIdentity] = useState<SongIdentity | null>(null);
+  const [correctSlot, setCorrectSlot] = useState<number | null>(null);
   const [isRevealed, setIsRevealed] = useState(false);
   const [removalState, setRemovalState] = useState<RemovalState>('none');
   const [cheatActive, setCheatActive] = useState(false);
@@ -207,45 +127,52 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
   const [jokerUsed, setJokerUsed] = useState(false);
   const [jokerSlot, setJokerSlot] = useState<number | null>(null);
 
-  const numSlots = timelineYears.length + 1;
+  const numSlots = timelineSlotCount(timelineYears.length);
 
   // After a correct answer: add the year + removal logic if applicable
-  const handleReveal = useCallback(() => {
+  const handleReveal = useCallback(async () => {
     if (selectedSlot === null || isRevealed) return;
-    const isCorrect = validSlotSet.has(selectedSlot);
     setIsRevealed(true);
-    const answeredInSeconds = Math.max(
-      1,
-      Math.round((Date.now() - questionStartedAt.current) / 1000)
+    const answeredInSeconds = timelineAnswerSeconds(
+      Date.now() - questionStartedAt.current
     );
 
+    // The core evaluates the answer: the year of the song is the answer of
+    // the mode, and only the core knows it.
+    const result = await submit(
+      { kind: 'timeline', slot: selectedSlot },
+      answeredInSeconds
+    );
+    const detail = result.feedback.detail;
+    setIsCorrect(result.score.isCorrect);
+    setIdentity(result.feedback.identity);
+    setCorrectSlot(detail.slot ?? null);
+
     // Timeline: points based on complexity (cheats/joker were already deducted)
-    onAnswer(isCorrect, isCorrect ? points : 0, answeredInSeconds);
+    onAnswer(result.score.isCorrect, result.score.pointsAwarded, answeredInSeconds);
 
-    if (!isCorrect) return;
+    // The base decides what happens with the timeline; the pure layer turns
+    // its decision into the steps the shell carries out.
+    const outcome = resolveTimelineOutcome(result.score.isCorrect, detail);
 
-    const newYear = song.year;
-    const effect = timelineAnswerEffect(timelineYears, newYear);
-
-    addTimelineYear(newYear);
-
-    if (effect.isDuplicate) {
+    if (outcome.kind === 'add-year' || outcome.kind === 'duplicate') {
+      addTimelineYear(outcome.year);
+    }
+    if (outcome.kind === 'duplicate') {
       // Duplicate → remove it right away, no intervention needed
-      removeTimelineYear(newYear);
-    } else if (effect.removalOffered) {
+      removeTimelineYear(outcome.year);
+    }
+    if (outcome.kind === 'removal-offered') {
       // More than 10 years → the player may optionally remove one
       setRemovalState('choosing');
     }
   }, [
     selectedSlot,
     isRevealed,
-    song.year,
     timelineYears,
     addTimelineYear,
     removeTimelineYear,
     onAnswer,
-    points,
-    validSlotSet,
   ]);
 
   function handleRemoveYear(year: number) {
@@ -253,27 +180,36 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     setRemovalState('done');
   }
 
-  function handleCheat() {
+  async function handleCheat() {
     if (cheatActive || isRevealed || !currentPlayerId) return;
     setCheatActive(true);
-    setCheatHint(getDecadeHint(song.year, t));
+    // The base computes the decade: the year of the song is the answer of
+    // the mode.
+    const outcome = await applyCheat('timeline-decade-hint');
+    if (outcome.decadeHint === null) {
+      setCheatHint('');
+    } else {
+      const key = pickDecadeHintKey(outcome.decadeHint);
+      setCheatHint(
+        key === DECADE_HINT_FALLBACK_KEY
+          ? t(key, { decade: decadeOf(outcome.decadeHint) })
+          : t(key)
+      );
+    }
     // Immediate deduction of 2 points for the decade hint
-    awardPoints(currentPlayerId, CHEAT_PENALTY_TIMELINE_DECADE);
+    awardPoints(currentPlayerId, TIMELINE_CHEAT_PENALTIES['timeline-decade-hint']);
   }
 
-  function handleJoker() {
+  async function handleJoker() {
     if (jokerUsed || isRevealed || !currentPlayerId) return;
-    // Find all wrong slots (not in validSlotSet)
-    const wrongSlots: number[] = [];
-    for (let i = 0; i < numSlots; i++) {
-      if (!validSlotSet.has(i)) wrongSlots.push(i);
-    }
-    if (wrongSlots.length === 0) return;
-    const pick = wrongSlots[Math.floor(Math.random() * wrongSlots.length)]!;
+    // The base draws the slot: it knows which slots are correct.
+    const outcome = await applyCheat('timeline-joker');
+    const pick = outcome.jokerSlot;
+    if (pick === null) return;
     setJokerSlot(pick);
     setJokerUsed(true);
     // Immediate deduction of 1 point for the joker
-    awardPoints(currentPlayerId, CHEAT_PENALTY_TIMELINE_JOKER);
+    awardPoints(currentPlayerId, TIMELINE_CHEAT_PENALTIES['timeline-joker']);
     // Clear selection if the joker removed the selected slot
     if (selectedSlot === pick) setSelectedSlot(null);
   }
@@ -284,12 +220,12 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (isRevealed) return;
-      const n = parseInt(e.key);
-      if (!isNaN(n) && n >= 1 && n <= numSlots) setSelectedSlot(n - 1);
+      const slot = slotFromNumberKey(e.key, numSlots);
+      if (slot !== null) setSelectedSlot(slot);
       if (e.key === 'ArrowUp' || e.key === 'ArrowLeft')
-        setSelectedSlot((p) => (p === null || p === 0 ? numSlots - 1 : p - 1));
+        setSelectedSlot((p) => nextTimelineSlot(p, numSlots, 'up'));
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight')
-        setSelectedSlot((p) => (p === null || p === numSlots - 1 ? 0 : p + 1));
+        setSelectedSlot((p) => nextTimelineSlot(p, numSlots, 'down'));
       if ((e.key === 'Enter' || e.key === ' ') && selectedSlot !== null)
         handleReveal();
     };
@@ -313,150 +249,34 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       </div>
 
       {/* Musik Player */}
-      {song.links?.youtube && (
+      {question.media.youtube && (
         <MusicPlayer
-          songId={song.id}
-          songTitle={song.title}
-          songArtist={song.artist}
-          songPack={song.packs[0]}
-          youtubeLink={song.links.youtube}
-          youtubeAlternatives={
-            song.links.youtubeAlternatives ??
-            (song.links.fallbackYoutubeId
-              ? [song.links.fallbackYoutubeId]
-              : undefined)
-          }
-          spotifyLink={song.links.spotify}
-          spotifyFreePreview={song.links.spotifyFreePreview}
-          amazonMusicLink={song.links.amazonMusic}
-          amazonPrimePreview={song.links.amazonPrimePreview}
+          songId={question.songId}
+          songPack={question.context.pack ?? undefined}
+          youtubeLink={question.media.youtube}
+          youtubeAlternatives={question.media.youtubeAlternatives}
+          spotifyLink={question.media.spotify ?? undefined}
+          spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+          amazonMusicLink={question.media.amazonMusic ?? undefined}
+          amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
           blurred={!isRevealed}
         />
       )}
 
       {/* Header */}
-      <div className="text-center space-y-1">
-        <h2 className="text-2xl font-black uppercase tracking-tight">
-          {!isRevealed ? (
-            t('modes.timeline.question')
-          ) : (
-            <>
-              <p
-                className="text-xl font-black uppercase italic tracking-tighter mb-1"
-                style={{
-                  color: getSpicyColor(
-                    validSlotSet.has(selectedSlot!),
-                    song.id
-                  ),
-                }}
-              >
-                {spicyMessage}
-              </p>
-              <p className="text-sm opacity-60">
-                {validSlotSet.has(selectedSlot!)
-                  ? t('modes.timeline.correct')
-                  : t('modes.timeline.wrong')}
-              </p>
-            </>
-          )}
-        </h2>
-
-        {/* Cheat Button */}
-        {!isRevealed && !cheatActive && !config.noCheatMode && (
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.3 }}
-            whileHover={{ opacity: 1, scale: 1.05 }}
-            onClick={handleCheat}
-            className="text-[10px] font-black uppercase tracking-widest border border-red-500/20 py-1.5 px-3 rounded-full hover:bg-red-500/5 text-red-500 transition-all mb-2"
-          >
-            {t('modes.timeline.decadeHintButton')}
-          </motion.button>
-        )}
-
-        {/* Cheat Hint Bubble */}
-        {!isRevealed && cheatActive && (
-          <motion.div
-            initial={{ opacity: 0, y: -6, scale: 0.92 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            className="mx-auto mt-1 mb-1 px-4 py-2 rounded-2xl text-center max-w-xs"
-            style={{
-              background: 'rgba(251,146,60,0.12)',
-              border: '1.5px solid rgba(251,146,60,0.4)',
-            }}
-          >
-            <p className="text-[11px] font-black italic text-orange-300 leading-snug">
-              🕵️ {cheatHint}
-            </p>
-          </motion.div>
-        )}
-
-        {/* Joker Button */}
-        {!isRevealed && !jokerUsed && numSlots > 3 && !config.noCheatMode && (
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.3 }}
-            whileHover={{ opacity: 1, scale: 1.05 }}
-            onClick={handleJoker}
-            className="text-[10px] font-black uppercase tracking-widest border border-orange-500/20 py-1.5 px-3 rounded-full hover:bg-orange-500/5 transition-all mb-1"
-            style={{ color: '#f97316' }}
-          >
-            {t('modes.timeline.jokerButton')}
-          </motion.button>
-        )}
-
-        {/* Joker Used Badge */}
-        {!isRevealed && jokerUsed && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
-            animate={{ opacity: 1, scale: 1, rotate: -4 }}
-            className="mx-auto mt-1 mb-1 px-3 py-1 rounded-xl text-[10px] font-black uppercase tracking-tight text-black inline-block"
-            style={{
-              backgroundColor: '#fbbf24',
-              boxShadow: '0 2px 10px rgba(251,191,36,0.6)',
-            }}
-          >
-            {t('modes.timeline.jokerUsed')}
-          </motion.div>
-        )}
-
-        <div className="flex items-center justify-center gap-2">
-          <p className="opacity-40 text-[9px] font-black uppercase tracking-[0.2em]">
-            {!isRevealed
-              ? t('modes.timeline.slots', {
-                  count: numSlots,
-                  points: numberFormat.format(points),
-                })
-              : t('modes.timeline.solution')}
-          </p>
-          {cheatActive && (
-            <span
-              className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none"
-              style={{
-                backgroundColor: '#ef4444',
-                transform: 'rotate(4deg)',
-                boxShadow: '0 2px 10px rgba(239,68,68,0.7)',
-                display: 'inline-block',
-              }}
-            >
-              {t('modes.timeline.cheatBadge')}
-            </span>
-          )}
-          {jokerUsed && (
-            <span
-              className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none ml-2"
-              style={{
-                backgroundColor: '#f97316',
-                transform: 'rotate(-3deg)',
-                boxShadow: '0 2px 10px rgba(249,115,22,0.7)',
-                display: 'inline-block',
-              }}
-            >
-              {t('modes.timeline.jokerBadge')}
-            </span>
-          )}
-        </div>
-      </div>
+      <TimelineHeader
+        isRevealed={isRevealed}
+        isCorrect={isCorrect}
+        songId={question.songId}
+        cheatActive={cheatActive}
+        cheatHint={cheatHint}
+        jokerUsed={jokerUsed}
+        numSlots={numSlots}
+        noCheatMode={config.noCheatMode}
+        points={points}
+        onCheat={handleCheat}
+        onJoker={handleJoker}
+      />
 
       {/* Optional: remove a year after a correct guess */}
       {removalState === 'choosing' && (
@@ -487,159 +307,16 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       )}
 
       {/* Timeline */}
-      <div className="w-full flex flex-col">
-        {Array.from({ length: numSlots }, (_, slotIdx) => {
-          const isTarget = selectedSlot === slotIdx;
-          const yearAfter = timelineYears[slotIdx];
-          const isAnswerCorrect =
-            selectedSlot !== null && validSlotSet.has(selectedSlot);
-          const isJokerSlot = jokerSlot === slotIdx && !isRevealed;
-
-          // Joker slot: render as a visually removed / crossed-out slot, non-interactive
-          if (isJokerSlot) {
-            return (
-              <div key={slotIdx} className="flex flex-col">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 shrink-0 flex flex-col items-center">
-                    <div className="w-0.5 flex-1 bg-white/5 min-h-[8px]" />
-                    <div className="w-2 h-2 rounded-full bg-yellow-500/20 my-0.5 shrink-0" />
-                    <div className="w-0.5 flex-1 bg-white/5 min-h-[8px]" />
-                  </div>
-                  <div
-                    className={`flex-1 rounded-xl border-2 border-dashed flex items-center justify-center opacity-30 ${
-                      numSlots <= 5 ? 'h-20' : numSlots <= 7 ? 'h-16' : 'h-12'
-                    }`}
-                    style={{
-                      borderColor: '#fbbf24',
-                      background: 'rgba(251,191,36,0.05)',
-                    }}
-                  >
-                    <span
-                      className="text-[10px] font-black uppercase tracking-widest"
-                      style={{ color: '#fbbf24' }}
-                    >
-                      {t('modes.timeline.jokerSlot')}
-                    </span>
-                  </div>
-                </div>
-                {yearAfter !== undefined && (
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 shrink-0 flex justify-center py-0.5">
-                      <div className="px-2.5 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
-                        <p className="text-[11px] font-black text-white leading-none">
-                          {yearFormat.format(yearAfter)}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex-1 h-px bg-white/5" />
-                  </div>
-                )}
-              </div>
-            );
-          }
-
-          return (
-            <div key={slotIdx} className="flex flex-col">
-              {/* Slot row */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 shrink-0 flex flex-col items-center">
-                  <div className="w-0.5 flex-1 bg-white/10 min-h-[8px]" />
-                  <div className="w-2 h-2 rounded-full bg-white/20 my-0.5 shrink-0" />
-                  <div className="w-0.5 flex-1 bg-white/10 min-h-[8px]" />
-                </div>
-
-                <button
-                  onClick={() => handleDrop(slotIdx)}
-                  disabled={isRevealed}
-                  className={[
-                    'flex-1 rounded-xl border-2 border-dashed flex items-center justify-center transition-all focus:outline-none',
-                    numSlots <= 5 ? 'h-20' : numSlots <= 7 ? 'h-16' : 'h-12',
-                    isTarget && !isRevealed
-                      ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10'
-                      : '',
-                    !isTarget && !isRevealed
-                      ? 'border-white/10 bg-white/[0.02] hover:border-white/20'
-                      : '',
-                    // Correct: green only where user placed
-                    isRevealed && isTarget && isAnswerCorrect
-                      ? 'border-green-500 bg-green-500/10'
-                      : '',
-                    // Wrong: red where user placed, dim green hint on canonical slot
-                    isRevealed && isTarget && !isAnswerCorrect
-                      ? 'border-red-500 bg-red-500/10'
-                      : '',
-                    isRevealed &&
-                    !isTarget &&
-                    slotIdx === correct &&
-                    !isAnswerCorrect
-                      ? 'border-green-500/50 bg-green-500/5'
-                      : '',
-                    isRevealed &&
-                    !isTarget &&
-                    !(slotIdx === correct && !isAnswerCorrect)
-                      ? 'border-white/5 bg-transparent'
-                      : '',
-                  ].join(' ')}
-                >
-                  {isTarget && !isRevealed && (
-                    <div className="flex items-center gap-2 px-3">
-                      <span className="text-sm">🎵</span>
-                      <p className="text-[10px] font-black uppercase tracking-widest">
-                        {t('modes.timeline.placed')}
-                      </p>
-                    </div>
-                  )}
-                  {isTarget && isRevealed && (
-                    <div className="flex items-center gap-3 px-3 text-left">
-                      <div>
-                        <p className="text-xs font-black uppercase truncate max-w-[160px]">
-                          {song.artist}
-                        </p>
-                        <p className="text-[9px] opacity-40 uppercase truncate max-w-[160px] leading-none mb-0.5">
-                          {song.title}
-                        </p>
-                        <p className="text-lg font-black">
-                          {yearFormat.format(song.year)}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                  {!isTarget && !isRevealed && (
-                    <span className="text-[9px] font-black opacity-10 uppercase tracking-widest">
-                      {numberFormat.format(slotIdx + 1)}
-                    </span>
-                  )}
-                  {isRevealed &&
-                    !isTarget &&
-                    slotIdx === correct &&
-                    !isAnswerCorrect && (
-                      <div className="flex items-center gap-2 text-green-400 font-black px-3">
-                        <span>←</span>
-                        <span className="text-[10px] uppercase tracking-widest">
-                          {t('modes.timeline.here')}
-                        </span>
-                      </div>
-                    )}
-                </button>
-              </div>
-
-              {/* Year between the slots */}
-              {yearAfter !== undefined && (
-                <div className="flex items-center gap-3">
-                  <div className="w-12 shrink-0 flex justify-center py-0.5">
-                    <div className="px-2.5 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
-                      <p className="text-[11px] font-black text-white leading-none">
-                        {yearFormat.format(yearAfter)}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex-1 h-px bg-white/5" />
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
+      <TimelineSlots
+        timelineYears={timelineYears}
+        selectedSlot={selectedSlot}
+        jokerSlot={jokerSlot}
+        correctSlot={correctSlot}
+        validSlotSet={validSlotSet}
+        isRevealed={isRevealed}
+        identity={identity}
+        onSelect={handleDrop}
+      />
 
       {/* Footer */}
       <footer className="fixed bottom-0 left-0 right-0 px-4 pb-6 pt-8 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/90 to-transparent z-[60]">

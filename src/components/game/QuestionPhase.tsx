@@ -10,7 +10,7 @@ import { useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
-import type { PhomuSong } from '@/types/song';
+import type { RoundQuestion } from '@/core/types';
 import { SurvivorMode } from './modes/SurvivorMode';
 import { VibeCheckMode } from './modes/VibeCheckMode';
 import { HintMasterMode } from './modes/HintMasterMode';
@@ -21,7 +21,15 @@ import { CoverConfusionMode } from './modes/CoverConfusionMode';
 // ─── Props ────────────────────────────────────────────────────────
 
 interface QuestionPhaseProps {
-  song: PhomuSong;
+  /**
+   * The question of the round.
+   *
+   * WHY a question and not a song: the question view model of the core has
+   * no field for the solution. The phase therefore cannot show the title,
+   * the artist or the year of the song — it does not have them
+   * (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
+   */
+  question: RoundQuestion;
   currentMode: GameMode;
   /** Called when the player is done: isCorrect + points */
   onAnswered: (
@@ -47,7 +55,7 @@ const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
 // ─── Komponente ───────────────────────────────────────────────────
 
 export function QuestionPhase({
-  song,
+  question,
   currentMode,
   onAnswered,
   onReveal,
@@ -66,32 +74,36 @@ export function QuestionPhase({
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
       {/* Modus-spezifischer Inhalt */}
       {currentMode === 'survivor' && (
-        <SurvivorMode song={song} onAnswer={handleAnswered} />
+        <SurvivorMode question={question} onAnswer={handleAnswered} />
       )}
 
       {currentMode === 'vibe-check' && (
-        <VibeCheckMode song={song} onAnswer={handleAnswered} />
+        <VibeCheckMode question={question} onAnswer={handleAnswered} />
       )}
 
       {currentMode === 'hint-master' && (
-        <HintMasterMode song={song} onAnswer={handleAnswered} />
+        <HintMasterMode question={question} onAnswer={handleAnswered} />
       )}
 
       {currentMode === 'timeline' && (
         <TimelineMode
-          song={song}
+          question={question}
           onAnswer={handleAnswered}
           onReveal={onReveal}
         />
       )}
 
       {currentMode === 'lyrics' && (
-        <LyricsMode song={song} onAnswer={handleAnswered} onReveal={onReveal} />
+        <LyricsMode
+          question={question}
+          onAnswer={handleAnswered}
+          onReveal={onReveal}
+        />
       )}
 
       {currentMode === 'cover-confusion' && (
         <CoverConfusionMode
-          song={song}
+          question={question}
           onAnswer={handleAnswered}
           onReveal={onReveal}
         />

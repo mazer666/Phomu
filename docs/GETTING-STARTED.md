@@ -104,9 +104,21 @@ The complete flow is in the user guide:
 
 ## 5. Environment variables: `.env.local` and `ADMIN_API_TOKEN`
 
-The admin API (`/admin/covers/search`, `/admin/covers/save`) is protected with a
-token. For **playing** the token is **not** needed — only for catalogue
-maintenance.
+**You do not need a token to play.** The admin interface (`/admin/songs`,
+`/admin/review`) works entirely in the browser: it edits songs in
+`localStorage` and exports them as JSON.
+
+The token belongs to the **admin API** — the server-side endpoints
+`GET /admin/covers/search` and `POST /admin/covers/save` in
+`src/admin-api/**`. **These endpoints are not registered in the published
+build**: the project is a static export (`next.config.ts`, `output: 'export'`)
+and the handlers live outside the app directory, so the App Router does not
+pick them up. Whether the admin API will be wired up to a server or removed is
+an open decision of the owner, recorded in
+[`docs/cr/CR-0002-admin-api-entscheidung.md`](cr/CR-0002-admin-api-entscheidung.md).
+
+The section below is therefore a preparation, not a step that is needed today.
+It becomes necessary the moment the admin API is switched on.
 
 ```bash
 cp .env.example .env.local
@@ -151,8 +163,10 @@ Rules:
   the API answers with **503**.
 - `.env.local` is excluded from version control via `.gitignore` (`*.env*.local`).
   **A token never belongs into the repository.**
-- Without `ADMIN_API_TOKEN` the admin API answers with **503** ("Admin API not
-  configured"), with a wrong token with **401**.
+- Without `ADMIN_API_TOKEN` the admin API answers with **503**, with a token
+  that is too short also **503** (both answers are identical, so that the
+  answer does not disclose whether a usable secret exists), with a wrong token
+  **401**.
 
 ---
 
@@ -290,10 +304,12 @@ needs **root**:
 sudo npm run test:e2e:install:linux
 ```
 
-### "Admin API not configured" (HTTP 503)
+### "Admin API unavailable" (HTTP 503)
 
-The admin API was called without `ADMIN_API_TOKEN`. The token is missing in the
-environment or is shorter than 32 characters.
+The admin API was called without a usable `ADMIN_API_TOKEN`. The token is
+missing in the environment or is shorter than 32 characters. The answer is the
+same in both cases — the concrete reason is in the server log, not in the
+response.
 
 ```bash
 # check whether the token is set (print the length only, not the value)

@@ -42,7 +42,7 @@
 ### CORE-002 — Free open source without a forced account
 
 **Preset:** Preset
-**Requirement:** Phomu is licensed under AGPL-3.0-or-later. There is no registration, no subscription, no advertising and no forced coupling to a service. All core features — lobby, game, catalogue, admin API — work without a user account.
+**Requirement:** Phomu is licensed under AGPL-3.0-or-later. There is no registration, no subscription, no advertising and no forced coupling to a service. All core features — lobby, game, catalogue, the local admin tool — work without a user account.
 **Rationale:** The game is played in bars, at birthday parties and in clubs. A mandatory sign-up would be an obstacle precisely where the product is supposed to work.
 **Acceptance:** `LICENSE` contains AGPL-3.0-or-later; `package.json` lists `"license": "AGPL-3.0-or-later"`; there is no auth provider and no login route in `src/app/`.
 **Verification:** `cat LICENSE | head -3`; `grep -rn '"license"' package.json`; `ls src/app/` contains no `login`/`signup` route.
@@ -1196,31 +1196,37 @@
 
 # 8. Security, privacy and admin API (SEC)
 
-> **State 25.10.2026:** The admin API area is hardened in parallel by the security role (`src/admin-api/_lib/security.ts` and `src/admin-api/_lib/rate-limit.ts` were extended on the same day by rate limiting, redirect guard, size caps and error statuses). The line references in this section relate to this state. What remains open is the wiring of the new helpers into the routes — see [GAP-029](#open-gaps).
+> **State 25.10.2026:** The admin API area is hardened in parallel by the security role (`src/admin-api/_lib/security.ts` and `src/admin-api/_lib/rate-limit.ts` were extended the same day by rate limiting, redirect guard, size caps and error statuses). The line references in this section relate to this state.
+>
+> **Operational status of this section — blocked, with a condition:** The requirements SEC-001 … SEC-018 describe the **code** of the admin API and are valid. They do **not** describe a running endpoint: the two handlers lie in `src/admin-api/` and are therefore not registered by the App Router, and `next.config.ts` sets `output: 'export'`, a static export that cannot execute a route handler at all. Measured: `npm run build` prints a route list of 20 entries, none of them an admin API route; `.next/app-path-routes-manifest.json` has 21 entries and no admin API entry; `grep -rn "admin/covers" out/` returns 0 hits; nothing outside `src/admin-api/` imports the module and `src/app/admin/` contains no `fetch()` call. The single test that states this is `src/admin-api/admin-api-reachability.test.ts`; it turns red as soon as the architecture changes.
+>
+> The decision — wire the API up (needs the server of the hosting decision, QA-09 item 2.6) or remove it — is an **owner decision** and is recorded in [`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md). Until it falls, this section is **blocked**; it is not open in the sense of "not started" and not done. See [GAP-030](#open-gaps).
+>
+> What was open before this entry — that the hardened helpers were not yet used by the routes — is closed: the routes use `fetchGuardedBinary`, `assertRateLimit`, `MAX_JSON_BYTES` and the credential-free URL check. The remaining hard limits live in `src/admin-api/_lib/hard-limits.ts`.
 
 ### SEC-001 — The admin API is token-protected
 
 **Preset:** Preset
 **Requirement:** Every admin API route demands the header `x-admin-token`. Without a valid token the answer is `401 Unauthorized`.
 **Rationale:** The cover API writes files into the repository; it must not stand open on the internet.
-**Acceptance:** `assertAdminAccess` (`src/admin-api/_lib/security.ts:61-78`); call in `src/admin-api/admin/covers/search/route.ts:46-47` and `src/admin-api/admin/covers/save/route.ts:119-120`.
-**Verification:** `grep -rn "assertAdminAccess" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `assertAdminAccess` (`src/admin-api/_lib/security.ts:81-112`); call in `src/admin-api/admin/covers/search/route.ts:69-70` and `src/admin-api/admin/covers/save/route.ts:133-134`.
+**Verification:** `grep -rn "assertAdminAccess" src/admin-api/`; the negative tests are in `src/admin-api/admin-token-guard.test.ts` and `src/admin-api/admin-api-hardening.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-002 — The token comparison is time-constant
 
 **Preset:** Preset
 **Requirement:** The token comparison happens via `crypto.timingSafeEqual` on SHA-256 hashes and thus without a measurable side channel. Both hashes have the same length, so that the comparison cannot throw.
 **Rationale:** A simple string comparison reveals the length and position of the token via the response time.
-**Acceptance:** `timingSafeEqual` (`src/admin-api/_lib/security.ts:47-51`), use in `assertAdminAccess` (`:71`).
-**Verification:** `grep -n "timingSafeEqual" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `timingSafeEqual` (`src/admin-api/_lib/security.ts:63-67`), use in `assertAdminAccess` (`:105`).
+**Verification:** `grep -n "timingSafeEqual" src/admin-api/_lib/security.ts`; the negative test is `compares the token with timingSafeEqual instead of ===` in `src/admin-api/admin-token-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-003 — Missing or too short configuration leads to 503, not to open access
 
 **Preset:** Preset
 **Requirement:** If `ADMIN_API_TOKEN` is not set or is shorter than 32 characters, the API answers with `503` — in no case with access.
 **Rationale:** A failed deployment must not lead to an unlimited write API.
-**Acceptance:** `src/admin-api/_lib/security.ts:62-68` — `MIN_ADMIN_TOKEN_LENGTH = 32` (`:7`), error texts "Admin API not configured" and "Admin API token too short" with status 503.
-**Verification:** `grep -n "MIN_ADMIN_TOKEN_LENGTH\|503" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `src/admin-api/_lib/security.ts:83-101` — `MIN_ADMIN_TOKEN_LENGTH = 32` (`:25`). Both misconfigurations answer with status 503 and the **same** body (`ADMIN_UNAVAILABLE_MESSAGE`, `src/admin-api/_lib/errors.ts:34`), so that the answer does not disclose whether a usable secret exists; the concrete reason goes into the server log.
+**Verification:** `grep -n "MIN_ADMIN_TOKEN_LENGTH\|503" src/admin-api/_lib/security.ts`; the negative tests are `fail-closed: without a configured env variable the API responds with 503` and `fail-closed: a too short token responds with 503` in `src/admin-api/admin-token-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-004 — The token is generated locally and not checked in
 
@@ -1235,56 +1241,56 @@
 **Preset:** Preset
 **Requirement:** A cover URL must use `https:` and lie on one of four permitted hosts (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`); subdomains of the permitted hosts are allowed. All other URLs are rejected with `400`.
 **Rationale:** A URL freely chosen by the client is an SSRF vector (access to internal networks) and a file type vector.
-**Acceptance:** `assertAllowedHost` (`src/admin-api/_lib/security.ts:136-143`), `parseHttpUrl` (`:145-162`), allowlist `src/admin-api/admin/covers/save/route.ts:11`, call `:128`, error handling `:126-132` → HTTP 400.
-**Verification:** `grep -n "ALLOWED_IMAGE_HOSTS\|Only HTTPS" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `assertAllowedHost` (`src/admin-api/_lib/security.ts:187-190`), `parseHttpUrl` (`:203-223`), allowlist `src/admin-api/admin/covers/save/route.ts:19-24`, call `:155-156`, error handling `:154-160` → HTTP 400.
+**Verification:** `grep -n "ALLOWED_IMAGE_HOSTS\|Only HTTPS" src/admin-api/`; the negative tests are in `src/admin-api/cover-fetch-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-006 — The download is limited in time, type and size
 
 **Preset:** Preset
 **Requirement:** The cover download aborts after 10 seconds, accepts only responses with `content-type` beginning with `image/`, and rejects files over 5 MiB (both via `content-length` and via the actual byte count). Failed downloads deliver `502`, oversized files `413`.
 **Rationale:** An unlimited download is a denial-of-service surface.
-**Acceptance:** `downloadCover` (`src/admin-api/admin/covers/save/route.ts:32-69`), `MAX_IMAGE_BYTES = 5 * 1024 * 1024` (`:10`; centrally also in `src/admin-api/_lib/security.ts:13`), status mapping `:46-63` and `:149-156`.
-**Verification:** `grep -n "MAX_IMAGE_BYTES\|content-type\|10_000" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `fetchGuardedBinary` (`src/admin-api/_lib/security.ts:287-347`), `MAX_IMAGE_BYTES = 5 * 1024 * 1024` (`src/admin-api/_lib/hard-limits.ts:23`), the streaming reader with the hard limit (`src/admin-api/_lib/hard-limits.ts:52-95`), the call site `src/admin-api/admin/covers/save/route.ts:170-174`.
+**Verification:** `grep -n "MAX_IMAGE_BYTES\|content-type\|10_000" src/admin-api/`; the negative tests are `rejects an oversized file that declares its own size` and `rejects an oversized file that sends no content-length` in `src/admin-api/cover-fetch-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-007 — Search requests of the cover API are length-limited and time-limited
 
 **Preset:** Preset
 **Requirement:** `artist` and `title` of the cover search are limited to 120 characters and must not be empty. External retrievals abort after 7,000 ms and run without cache (`cache: 'no-store'`).
 **Rationale:** Unlimited inputs and hanging upstreams block the server.
-**Acceptance:** `boundedText` (`src/admin-api/_lib/security.ts:118-123`), call `src/admin-api/admin/covers/search/route.ts:51-52`; `fetchWithTimeout` with `DEFAULT_TIMEOUT_MS = 7000` (`src/admin-api/_lib/security.ts:6`, `:173-204`).
-**Verification:** `grep -n "boundedText\|DEFAULT_TIMEOUT_MS" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `boundedText` (`src/admin-api/_lib/security.ts:164-172`), call `src/admin-api/admin/covers/search/route.ts:85-86`; `fetchWithTimeout` with `DEFAULT_TIMEOUT_MS = 7000` (`src/admin-api/_lib/security.ts:24`, `:235-265`).
+**Verification:** `grep -n "boundedText\|DEFAULT_TIMEOUT_MS" src/admin-api/`; the negative tests are `rejects a missing search field with 400` and `rejects an overlong search field with 400` in `src/admin-api/admin-routes-hardening.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-008 — The cover search uses two fixed external sources
 
 **Preset:** Preset
 **Requirement:** The cover search queries exclusively the search interfaces of the iTunes Search API and Deezer, each with `limit=5`. The results are deduplicated and limited to 10.
 **Rationale:** A fixed, documented catalogue protects against unexpected data sources and keeps the behaviour traceable.
-**Acceptance:** `src/admin-api/admin/covers/search/route.ts:56-93` — both retrievals, `uniqueResults` (`:35-43`), `slice(0, 10)` (`:93`).
-**Verification:** `grep -n "itunes.apple.com\|api.deezer.com" src/admin-api/admin/covers/search/route.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `src/admin-api/admin/covers/search/route.ts:93-143` — both retrievals, `uniqueResults` (`:58-65`), `slice(0, MAX_RESULTS)` (`:146`). The answer is bounded per field (`boundedOutputText`, `src/admin-api/_lib/hard-limits.ts:135-141`) and per number of inspected entries (`MAX_PROVIDER_ENTRIES`, `src/admin-api/admin/covers/search/route.ts:53`).
+**Verification:** `grep -n "itunes.apple.com\|api.deezer.com" src/admin-api/admin/covers/search/route.ts`; the negative test is `uses the third-party results as text only` in `src/admin-api/admin-routes-hardening.test.ts`; the hard limit of the answer is proven by `cuts a field of the third-party answer off at the hard limit` in `src/admin-api/admin-api-hardening.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-009 — Write accesses to the catalogue are serialised
 
 **Preset:** Preset
 **Requirement:** The updating of the pack files happens under an exclusive lock file `.covers-save.lock` (flag `wx`). At most 30 attempts are made at intervals of 60 ms; if this fails, the API answers with `503`.
 **Rationale:** Two parallel cover saves must not overwrite each other's JSON file.
-**Acceptance:** `withPacksLock` (`src/admin-api/admin/covers/save/route.ts:71-94`), constants `:9`, `:12-13`, error "Cover save is temporarily busy" (`:85`).
-**Verification:** `grep -n "withPacksLock\|LOCK_RETRIES" src/admin-api/admin/covers/save/route.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `withPacksLock` (`src/admin-api/admin/covers/save/route.ts:88-104`), constants `:25-26`, `:37`, error "Cover save is temporarily busy" (`:92-95`).
+**Verification:** `grep -n "withPacksLock\|LOCK_RETRIES" src/admin-api/admin/covers/save/route.ts`; the negative test is `responds with 429 when there are too many save requests` in `src/admin-api/admin-routes-hardening.test.ts`; the stale lock is documented in `src/admin-api/admin/covers/save/route.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-010 — Unknown song IDs are not created
 
 **Preset:** Preset
 **Requirement:** If a `songId` is passed that occurs in no pack file, the API answers with `404` and changes no pack file. The format of the ID is restricted to `[a-z0-9][a-z0-9-_]{2,120}`.
 **Rationale:** An unchecked ID is a way to generate arbitrary file names.
-**Acceptance:** `parseSongId` (`src/admin-api/_lib/security.ts:125-130`), search over all pack files and 404 answer (`src/admin-api/admin/covers/save/route.ts:106-146`).
-**Verification:** `grep -n "not found in any pack" src/admin-api/admin/covers/save/route.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `parseSongId` (`src/admin-api/_lib/security.ts:175-180`), search over all pack files and 404 answer (`src/admin-api/admin/covers/save/route.ts:106-130`, `:177-183`).
+**Verification:** `grep -n "not found in any pack" src/admin-api/admin/covers/save/route.ts`; no test exists for the 404 answer — see [GAP-005](#open-gaps) (open for this single case).
 
 ### SEC-011 — Errors of the admin API do not disclose internal details
 
 **Preset:** Preset
 **Requirement:** Error responses contain a message and a status code; unexpected errors deliver `500` with generic text. Internal stack traces, paths or token values are not output.
 **Rationale:** Error messages of the admin API are an information leak.
-**Acceptance:** `src/admin-api/admin/covers/save/route.ts:149-156`, `src/admin-api/admin/covers/search/route.ts:94-97`; the error class documents the promise explicitly (`src/admin-api/_lib/security.ts:27-40`).
-**Verification:** `grep -n "status: 500" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `src/admin-api/admin/covers/save/route.ts:186-202`, `src/admin-api/admin/covers/search/route.ts:148-162`; the error class documents the promise explicitly (`src/admin-api/_lib/errors.ts:9-20`).
+**Verification:** `grep -n "status: 500" src/admin-api/`; the negative test is `refuses a malformed request body with 400` and `refuses an oversized request body with 413 before it is parsed` in `src/admin-api/admin-api-hardening.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-012 — No personal data in the disclosure channel
 
@@ -1307,40 +1313,40 @@
 **Preset:** Preset
 **Requirement:** Failed token checks are counted: 10 attempts per client and 100 attempts globally per 5-minute window. If a limit is exceeded, the API answers with `429` and a `Retry-After` header. The bucket per client is hard-limited (at most 10,000 keys), so that spoofed keys cannot fill up the memory.
 **Rationale:** Without a limit the token is a brute-force surface.
-**Acceptance:** `enforceAuthFailureLimit` (`src/admin-api/_lib/security.ts:84-98`), limits `:19` and `:25`, `checkRateLimit`/`getClientKey` (`src/admin-api/_lib/rate-limit.ts:13-48`, `MAX_TRACKED_KEYS = 10.000` in `:43`). The limitation acts **per instance** and is not a distributed DoS protection — that is documented explicitly in `src/admin-api/_lib/rate-limit.ts:4-11`.
-**Verification:** `grep -n "AUTH_FAILURE_LIMIT\|AUTH_FAILURE_GLOBAL_LIMIT\|429" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `enforceAuthFailureLimit` (`src/admin-api/_lib/security.ts:118-141`), limits `:36` and `:49`, `checkRateLimit`/`getClientKey` (`src/admin-api/_lib/rate-limit.ts:13-48`, `MAX_TRACKED_KEYS = 10.000` in `:43`). The limitation acts **per instance** and is not a distributed DoS protection — that is documented explicitly in `src/admin-api/_lib/rate-limit.ts:4-11`.
+**Verification:** `grep -n "AUTH_FAILURE_LIMIT\|AUTH_FAILURE_GLOBAL_LIMIT\|429" src/admin-api/_lib/security.ts`; the negative tests are `limits brute-force attempts per client (429 after 10 failed attempts)` and `limits brute-force attempts even when x-forwarded-for is forged` in `src/admin-api/admin-token-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-015 — Redirects are followed manually and checked per hop
 
 **Preset:** Preset
 **Requirement:** Binary downloads follow redirects manually, at most three hops. Every hop is checked again against the protocol (`https:`) and the host allowlist; a redirect without a target, into an internal network or to a non-permitted host is rejected with `400`.
 **Rationale:** An automatically followed redirect is the usual way to bypass the allowlist (`http://169.254.169.254/`).
-**Acceptance:** `fetchGuardedBinary` (`src/admin-api/_lib/security.ts:268-322`), `MAX_REDIRECTS = 3` (`:10`), hop check `:285-307`.
-**Verification:** `grep -n "fetchGuardedBinary\|MAX_REDIRECTS" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `fetchGuardedBinary` (`src/admin-api/_lib/security.ts:287-347`), `MAX_REDIRECTS = 3` (`:28`), hop check `:306-330`.
+**Verification:** `grep -n "fetchGuardedBinary\|MAX_REDIRECTS" src/admin-api/_lib/security.ts`; the negative tests are in `src/admin-api/cover-fetch-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-016 — Response bodies of external services are size-limited
 
 **Preset:** Preset
 **Requirement:** The body of external responses is streamed and aborted as soon as it exceeds the configured limit (5 MiB for images, 512 KiB for JSON responses). A server without `content-length` can therefore not exhaust the memory of the process.
 **Rationale:** `arrayBuffer()` without a limit is a memory disaster with malicious or broken upstreams.
-**Acceptance:** `readCappedBody` (`src/admin-api/_lib/security.ts:211-250`), `MAX_IMAGE_BYTES` (`:13`), `MAX_JSON_BYTES = 512 * 1024` (`:16`), integration in `fetchWithTimeout` (`:191-200`).
-**Verification:** `grep -n "readCappedBody\|MAX_JSON_BYTES" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `readCappedBody` (`src/admin-api/_lib/hard-limits.ts:52-95`), `readCappedJsonBody` (`:108-120`), `MAX_IMAGE_BYTES` (`:23`), `MAX_JSON_BYTES = 512 * 1024` (`:26`), integration in `fetchWithTimeout` (`src/admin-api/_lib/security.ts:252-255`). The **request** body of the save route is read under the same hard limit (`MAX_REQUEST_BODY_BYTES = 16 * 1024`, `src/admin-api/_lib/hard-limits.ts:20`; call `src/admin-api/admin/covers/save/route.ts:147`).
+**Verification:** `grep -n "readCappedBody\|MAX_JSON_BYTES" src/admin-api/_lib/security.ts`; the negative tests are `refuses an oversized request body with 413 before it is parsed` and `cuts a field of the third-party answer off at the hard limit` in `src/admin-api/admin-api-hardening.test.ts`; the reader lives in `src/admin-api/_lib/hard-limits.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-017 — Credentials in URLs are forbidden
 
 **Preset:** Preset
 **Requirement:** A cover URL with `username` or `password` is rejected.
 **Rationale:** Embedded credentials end up in logs, in error messages and in upstream requests.
-**Acceptance:** `src/admin-api/_lib/security.ts:156-157`.
-**Verification:** `grep -n "Credentials in URL" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `src/admin-api/_lib/security.ts:211-212` (the length of the URL is limited as well — `MAX_URL_LENGTH = 2048`, `src/admin-api/_lib/hard-limits.ts:32`).
+**Verification:** `grep -n "Credentials in URL" src/admin-api/_lib/security.ts`; the negative test is `rejects embedded credentials` in `src/admin-api/cover-fetch-guard.test.ts` — see [GAP-005](#open-gaps) (closed).
 
 ### SEC-018 — Errors of the admin API carry an explicit HTTP status
 
 **Preset:** Preset
 **Requirement:** Errors of the admin API are carried by a dedicated error class with status code (`AdminRequestError`), so that status and message cannot drift apart via error texts.
 **Rationale:** String matching on error texts is error-prone and untestable.
-**Acceptance:** `src/admin-api/_lib/security.ts:32-40` (class), `:216`, `:235`, `:287`, `:293`, `:297`, `:302`, `:310`, `:315`, `:321` (status mapping).
-**Verification:** `grep -n "AdminRequestError" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+**Acceptance:** `src/admin-api/_lib/errors.ts:14-22` (class), `src/admin-api/_lib/hard-limits.ts:60`, `:118`, `src/admin-api/_lib/security.ts:309`, `:315`, `:319`, `:324`, `:332`, `:340`, `:346` (status mapping).
+**Verification:** `grep -n "AdminRequestError" src/admin-api/_lib/security.ts`; the negative test is `carries the error status in the AdminRequestError` in `src/admin-api/cover-fetch-guard.test.ts`; the class lives in `src/admin-api/_lib/errors.ts` — see [GAP-005](#open-gaps) (closed).
 
 ---
 
@@ -1531,7 +1537,7 @@ Every gap names the affected requirements and the question of whether it is a **
 | GAP-002 | No tests for the store transitions: `startGame`, `nextRound`, end conditions, team mixing, scoring, pilot handover. | GAME-001 … GAME-015, GAME-039, GAME-041, LOBBY-003 … LOBBY-012 | **Requirement** | `src/stores/game-store.ts` |
 | GAP-003 | No tests for `pickRandomSong` (pack/difficulty/QR/mode filters and their fallback chain) and for `normalizePackIds`. | GAME-043 … GAME-045, LOBBY-017 | **Requirement** | `src/utils/song-picker.ts` |
 | GAP-004 | No tests for `censorHint` (spoiler censorship in hints). | CAT-011, CAT-012 | **Requirement** | `src/utils/censor-utils.ts` |
-| GAP-005 | No tests for the admin API: token check, SSRF allowlist, size limit, content type check, lock mechanism. | SEC-001 … SEC-011 | **Requirement** | `src/admin-api/**` |
+| GAP-005 | No tests for the admin API: token check, SSRF allowlist, size limit, content type check, lock mechanism. | SEC-001 … SEC-011 | **Requirement** — **closed**: 78 test cases in 7 files under `src/admin-api/` (token gate, SSRF allowlist with per-hop revalidation, size caps, content type, rate limit, lock, hard limits, reachability) | `src/admin-api/admin-token-guard.test.ts`, `admin-rate-limit.test.ts`, `cover-fetch-guard.test.ts`, `admin-routes-hardening.test.ts`, `security-headers.test.ts`, `admin-api-hardening.test.ts`, `admin-api-reachability.test.ts` |
 | GAP-006 | The i18n gate is **created** (`scripts/check-i18n-completeness.mjs`), but not yet wired (`npm run check:i18n` is missing in `package.json`, no run in `scripts/local-ci.sh`). The core of the gap remains: 935 hard-coded literal texts in 47 files are not translated (among others in `src/app/lobby`, `src/app/game`, `src/app/projector`, `src/app/settings`, `src/components/game/**`). | I18N-004, I18N-005, I18N-006, I18N-007, NFR-010 | **Requirement** | `node scripts/check-i18n-completeness.mjs --count` → `Summe Literaltexte: 935`, `Dateien geprüft: 47`; `grep -rn "useTranslation" src/` → 1 hit (`src/app/page.tsx`) |
 | GAP-007 | No file size gate; 5 files over 550 lines, 5 more over 400 lines. | NFR-009 | **Requirement** | `src/app/admin/review/page.tsx` (755), `src/app/lobby/page.tsx` (744), `src/components/game/RevealPhase.tsx` (671), `src/stores/game-store.ts` (640), `src/components/game/MusicPlayer.tsx` (630) |
 | GAP-008 | No doc link check gate. | NFR-011 | **Requirement** | `scripts/` contains no `check-doc-links.mjs` |
@@ -1559,7 +1565,8 @@ Every gap names the affected requirements and the question of whether it is a **
 
 | GAP-027 | The new entry card `LLM.md:37-39` demands that before locking the answers neither title nor artist nor cover may lie `im DOM oder im Zustand` (in the DOM or in the state). The code keeps the complete song (including `title`, `artist`, `year`, `coverUrl`) in `currentSong` and renders the YouTube iframe in the DOM. The rule is therefore **not** met in the product code. | CORE-005, MEDIA-015, W-34 | **Requirement** (implementation: display song without metadata) or **decision by the owner** (sharpen the rule to "not visible") | `src/stores/game-store.ts:394-402`; `src/components/game/MusicPlayer.tsx:425-429`; `LLM.md:37-39` |
 | GAP-028 | `src/data/songs/packs.json` is outdated as metadata source: For "Global Hits 1950-2026" it states `songCount: 59`, the pack actually contains 1,107 songs. Several entries are moreover empty objects (`{}`), e. g. `electronic-synth`, `80s-pop`, `kids-disney`. | CAT-003, W-15 | **Requirement** (metadata maintenance) or **Later** (remove the source) | `src/data/songs/packs.json`; measured via `src/data/songs/*.json` |
-| GAP-029 | The hardened helpers of the admin API (`fetchGuardedBinary`, `assertRateLimit`, `MAX_JSON_BYTES`, credential-free URLs) are not used by the routes yet: `src/admin-api/admin/covers/save/route.ts:37-44` still downloads with `redirect: 'follow'` and its own `downloadCover` function, `src/admin-api/admin/covers/search/route.ts:57` and `:75` call `fetchWithTimeout` without `maxBytes`. Thus the redirect guard and the JSON size cap do not take effect in the operational case. | SEC-006, SEC-007, SEC-015, SEC-016, SEC-017 | **Requirement** | `src/admin-api/admin/covers/save/route.ts:32-69`; `src/admin-api/admin/covers/search/route.ts:57`, `:75` |
+| GAP-029 | The hardened helpers of the admin API (`fetchGuardedBinary`, `assertRateLimit`, `MAX_JSON_BYTES`, credential-free URLs) are not used by the routes yet: `src/admin-api/admin/covers/save/route.ts:37-44` still downloads with `redirect: 'follow'` and its own `downloadCover` function, `src/admin-api/admin/covers/search/route.ts:57` and `:75` call `fetchWithTimeout` without `maxBytes`. Thus the redirect guard and the JSON size cap do not take effect in the operational case. | SEC-006, SEC-007, SEC-015, SEC-016, SEC-017 | **Requirement** — **closed**: both routes use `fetchGuardedBinary` (redirect checked per hop), `assertRateLimit` (429 with `Retry-After`), `MAX_JSON_BYTES` (512 KB) and the credential-free URL check; the remaining hard bounds live in `src/admin-api/_lib/hard-limits.ts` | `src/admin-api/admin/covers/save/route.ts`; `src/admin-api/admin/covers/search/route.ts`; `src/admin-api/_lib/hard-limits.ts` |
+| GAP-030 | The admin API is **not reachable**: the two handlers lie in `src/admin-api/` and are therefore not registered by the App Router (which collects only `src/app/`), and `next.config.ts` sets `output: 'export'`, a static export that cannot execute a route handler. Measured: `npm run build` prints a route list of 20 entries, none of them an admin API route; `.next/app-path-routes-manifest.json` has 21 entries and no admin API entry; `find .next/server/app -name route.js` yields only the two icon routes; `grep -rn "admin/covers" out/` returns 0 hits; nothing outside `src/admin-api/` imports the module; `src/app/admin/` contains no `fetch()` call. The hardening of the module therefore protects a surface that no caller can reach. | SEC-001 … SEC-018 | **Owner decision — blocked**: wire it up (needs the server of the hosting decision, QA-09 item 2.6) or remove `src/admin-api/` and its test files. The decision is recorded in [`docs/cr/CR-0002-admin-api-entscheidung.md`](docs/cr/CR-0002-admin-api-entscheidung.md); it falls automatically as soon as the hosting model is decided for a host that executes route handlers, or as soon as the owner confirms that Phomu stays a static export without a server. Until then the state is **blocked**, not open and not done. The single test that states the measured reachability is `src/admin-api/admin-api-reachability.test.ts`; it turns red when the architecture changes. | `src/admin-api/admin-api-reachability.test.ts`; `src/admin-api/admin/covers/{search,save}/route.ts`; `next.config.ts`; `docs/cr/CR-0002-admin-api-entscheidung.md` |
 
 # Project status file (`project/project.yaml`)
 

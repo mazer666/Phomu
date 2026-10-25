@@ -53,11 +53,22 @@ platforms:
     rendering: "static export (next.config.ts: output 'export')"
     base_path: "/Phomu"
     routing:
-      registered_routes: 23
-      # Source: .next/app-path-routes-manifest.json (23 entries, build of 2026-10-25)
-      note: "The admin API handlers live under src/admin-api/ and are not
-        registered by the App Router; a static export cannot execute route
-        handlers in any case. See ROADMAP.md, gap GAP-22."
+      registered_routes: 21
+      # Source: .next/app-path-routes-manifest.json (21 entries, build of
+      # 2026-10-25; the route list that `npm run build` prints has 20
+      # entries - the manifest additionally holds the internal
+      # /_global-error).
+      note: >
+        The admin API handlers live under src/admin-api/ and are not
+        registered by the App Router, which collects pages and route
+        handlers only from src/app/. A static export cannot execute route
+        handlers in any case. Measured 2026-10-25: no admin API entry in
+        .next/app-path-routes-manifest.json, no admin API artefact in out/,
+        0 importers of src/admin-api/ outside of the module, 0 fetch() calls
+        in src/app/admin/. The state is blocked; the decision (wire it up
+        or remove it) is recorded in
+        docs/cr/CR-0002-admin-api-entscheidung.md. See ROADMAP.md, gap
+        GAP-22, and REQUIREMENTS.md, gap GAP-030.
   mobile:
     kind: "the same web application, designed mobile-first"
     native_app: false
@@ -150,6 +161,29 @@ modules:
       guard. Not registered in the App Router (see platforms.web.routing.note).
     may_depend_on: ["config", "types"]
     must_not_depend_on: ["components", "app"]
+    status: "blocked"
+    status_note: >
+      The code is hardened and tested, but the endpoints are not reachable
+      in the delivered build. The decision (wire it up or remove the
+      module) belongs to the owner and is recorded in
+      docs/cr/CR-0002-admin-api-entscheidung.md.
+    reachability: "unreachable"
+    reachability_measured_at: "2026-10-25"
+    reachability_evidence:
+      - "npm run build -> the printed route list has 20 entries, none of them an admin API route"
+      - ".next/app-path-routes-manifest.json -> 21 entries, no admin API entry"
+      - "find .next/server/app -name route.js -> only apple-icon.png/route.js and icon.png/route.js"
+      - "grep -rn \"admin/covers\" out/ -> 0 hits"
+      - "grep -rn \"admin-api\" src/ | grep -v \"^src/admin-api/\" -> 0 hits"
+      - "grep -rn \"fetch(\" src/app/admin/ -> 0 hits"
+      - "src/admin-api/admin-api-reachability.test.ts -> asserts the measured verdict"
+    resolution_condition: >
+      The decision falls automatically when the hosting model (QA-09 item
+      2.6) is decided for a host that executes route handlers (then the
+      handlers move below src/app/), or when the owner confirms that Phomu
+      stays a static export without a server (then the module and its test
+      files are deleted). Until then the state is blocked - not open, not
+      done.
 
 requirements:
   # Counted on 2026-10-25T08:58:04Z from REQUIREMENTS.md (blocks
@@ -480,6 +514,16 @@ open_owner_decisions:
     question: "The admin routes are not in the route tree and cannot run
       under a static export. Should the admin API be dropped, moved to a Node
       server, or relocated into the export as a build step?"
+    status: "blocked - decision template is ready"
+    decision_record: "docs/cr/CR-0002-admin-api-entscheidung.md"
+    recommendation: >
+      Option A (wire it up) together with the hosting decision of item 2.6;
+      Option B (remove it) if Phomu stays a static export without a server.
+    condition: >
+      The decision falls automatically when the hosting model is decided for
+      a host that executes route handlers, or when the owner confirms in
+      writing that Phomu stays a static export without a server. Until then
+      no document may claim that the admin API is reachable.
   - id: "D-4"
     topic: "Coverage target"
     question: "Is the target of 60 % lines for the coverage scope
