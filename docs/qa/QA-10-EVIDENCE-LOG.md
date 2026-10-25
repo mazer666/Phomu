@@ -517,6 +517,33 @@ project/project.yaml:17
 
 ---
 
+## 7b. A false positive in the documentation-language gate
+
+The first push of this report turned the **Quality Gates** job red. The cause is worth
+recording, because it is a property of the gate rather than of the report.
+
+`scripts/check-doc-language.mjs` checks prose for German markers. Its word list contains
+the German word `phase` — which is also a perfectly ordinary English word. Every heading
+of the form `## Phase 2 — …` in this report was therefore reported as German prose.
+
+Nine findings, all the same token, in otherwise entirely English text. The German
+*quotations* in the report (the catalogue hint, the German commit messages) were **not**
+flagged: the gate already skips fenced code blocks, inline code spans, link targets and
+HTML comments, so verbatim source literals are treated as technical literal and left
+alone — exactly as intended.
+
+**This report was corrected by rewording, not by weakening the gate.** The audit's own
+work stages are now called *stages*, and the observation is recorded here in inline code
+so that it does not trip the gate itself.
+
+**Recommendation for the gate owner (not part of this audit's scope):** remove `phase`
+from the German word list, or require that it only matches when it is not preceded by
+"the"/"a"/"in" and followed by a number. The same check probably misfires on other
+English-German cognates — `memory`, `event`, `location`, `service`, `material` — and
+each false positive makes the gate a reason to stop writing documentation in it.
+
+---
+
 ## 8. Re-verification checklist
 
 To confirm the findings are fixed, run these in order:

@@ -8,7 +8,7 @@
 
 ## Effort summary
 
-| Phase | Content | Items | Effort | Blocking |
+| Stage | Content | Items | Effort | Blocking |
 |---|---|---|---|---|
 | **0 — Recover** | The branch and the install | 2 | ~1 h | Release |
 | **1 — Close the blockers** | Spoilers, lyrics, headers, admin API, coverage, CI | 8 | 5–7 d | Public beta |
@@ -17,11 +17,11 @@
 
 **Total:** 28 items covering 50 findings, roughly **18–26 working days** including verification.
 
-The single highest-leverage decision is **the hosting model** (Phase 2, item 6). Moving from GitHub Pages to a host that can serve headers *and* run API routes fixes QA-SEC-001, QA-SEC-002 and QA-SPO-001 together. Everything else is independent of it.
+The single highest-leverage decision is **the hosting model** (Stage 2, item 6). Moving from GitHub Pages to a host that can serve headers *and* run API routes fixes QA-SEC-001, QA-SEC-002 and QA-SPO-001 together. Everything else is independent of it.
 
 ---
 
-## Phase 0 — Recover (do this first, today)
+## Stage 0 — Recover (do this first, today)
 
 > The reform commits are unreferenced and eligible for GitHub's garbage collection. **Nothing else matters until they are preserved.**
 
@@ -70,7 +70,7 @@ The four consuming scripts (`scripts/fix-links.js`, `scripts/fix-youtube-links.j
 
 ---
 
-## Phase 1 — Close the release blockers
+## Stage 1 — Close the release blockers
 
 ### 1.1 — Stop shipping the answer key · closes QA-SPO-001 · ~3 d
 
@@ -165,7 +165,7 @@ Order matters for the formatter: format the repository module by module, with `t
 
 ---
 
-## Phase 2 — Best-in-class core
+## Stage 2 — Best-in-class core
 
 ### 2.1 — Make the file-size gate able to fail · closes QA-ARC-001 · ~0.5 d
 
@@ -289,7 +289,7 @@ A dedicated pass should cover: the crate topology and the dependency direction t
 
 ---
 
-## Phase 3 — Excellence
+## Stage 3 — Excellence
 
 ### 3.1 — Make the gates self-verifying · closes QA-DOC-003 · ~1 d
 
@@ -377,7 +377,7 @@ These are the points where the audit found a genuine fork in the road. Each has 
 
 | # | Decision | Options | Recommendation | Impact if changed |
 |---|---|---|---|---|
-| **D1** | Where does the catalogue live? | Bundle it / per-pack files / API | **API** (Phase 2, item 2.6) | Bundling keeps the P0 open. Per-pack files reduce the leak but do not close it. |
+| **D1** | Where does the catalogue live? | Bundle it / per-pack files / API | **API** (Stage 2, item 2.6) | Bundling keeps the P0 open. Per-pack files reduce the leak but do not close it. |
 | **D2** | Where is the app hosted? | GitHub Pages / Cloudflare Pages / Workers / Vercel | **Cloudflare Pages** | GitHub Pages cannot deliver headers or API routes — QA-SEC-001 and QA-SPO-001 both stay open. |
 | **D3** | Is the admin UI a product feature? | Keep and wire it / remove it | **Decide explicitly** — do not leave it half-wired | Removing it deletes 63 tests and the admin pages; keeping it requires the server. |
 | **D4** | Is the catalogue content localised? | German only / DE+EN | **DE+EN** | The project promises a complete English UI; leaving the content German-only makes the promise hollow. |
@@ -398,4 +398,4 @@ These are the points where the audit found a genuine fork in the road. Each has 
 
 ## Suggested next step
 
-Close **Phase 0** first and re-run the gate suite on the restored `main`. That produces a trustworthy CI baseline, and the six green jobs then become the acceptance evidence for Phase 1 — rather than the current situation, where the last green CI run belongs to a commit that is no longer on the branch.
+Close **Stage 0** first and re-run the gate suite on the restored `main`. That produces a trustworthy CI baseline, and the six green jobs then become the acceptance evidence for Stage 1 — rather than the current situation, where the last green CI run belongs to a commit that is no longer on the branch.

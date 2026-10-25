@@ -136,7 +136,7 @@ So the situation is:
 - The admin API exists and is **very well hardened**.
 - **Nothing connects them**, and the API is **not deployed**.
 
-`MEMORY` of the project (`project/project.yaml`, `ARCHITECTURE.md`) describes the admin API as a Phase-1 deliverable. The reality is a hardened component with no consumer.
+The project's own status file (`project/project.yaml`) and `ARCHITECTURE.md` describe the admin API as a first-milestone deliverable. The reality is a hardened component with no consumer.
 
 ### Why this is a finding and not a nit
 
