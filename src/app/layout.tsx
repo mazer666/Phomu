@@ -1,19 +1,47 @@
 import type { Metadata, Viewport } from 'next';
 import Providers from '@/components/Providers';
 import { ConditionalNavBar } from '@/components/ui/ConditionalNavBar';
+import { LanguageHtmlAttribute } from '@/components/LanguageHtmlAttribute';
+import de from '@/i18n/locales/de.json';
 import './globals.css';
 
+/**
+ * Reads a dotted translation path from a locale resource.
+ *
+ * Works both with flat dot-path resources (target format per CONTRACT §5) and
+ * with nested resources (current format of de.json). This keeps the file
+ * functional before and after the merge of `locales/parts/*.json`.
+ */
+function readTranslation(resources: unknown, key: string): string {
+  if (typeof resources !== 'object' || resources === null) return key;
+
+  const flat = (resources as Record<string, unknown>)[key];
+  if (typeof flat === 'string') return flat;
+
+  let current: unknown = resources;
+  for (const segment of key.split('.')) {
+    if (typeof current !== 'object' || current === null) return key;
+    current = (current as Record<string, unknown>)[segment];
+  }
+  return typeof current === 'string' ? current : key;
+}
+
+/**
+ * Server-side fallback language (DE is the primary language, see CONTRACT §1).
+ * The static export bakes one language into the HTML head; the client side
+ * (NavBar) keeps `document.title` and `<html lang>` in sync with the active
+ * i18next language.
+ */
+const appTitle = readTranslation(de, 'app.title');
+const appSubtitle = readTranslation(de, 'app.subtitle');
+const appDescription = readTranslation(de, 'app.description');
+
 export const metadata: Metadata = {
-  title: 'Phomu - The Modular Music Party Platform',
-  description:
-    'An open-source hybrid party game that bridges physical cards and digital music experiences.',
+  title: `${appTitle} – ${appSubtitle}`,
+  description: appDescription,
   icons: {
-    icon: [
-      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
-    ],
-    apple: [
-      { url: '/favicon.png', sizes: '180x180' },
-    ],
+    icon: [{ url: '/favicon.png', type: 'image/png', sizes: '32x32' }],
+    apple: [{ url: '/favicon.png', sizes: '180x180' }],
   },
 };
 
@@ -32,6 +60,7 @@ export default function RootLayout({
     <html lang="de" data-theme="jackbox" suppressHydrationWarning>
       <body>
         <Providers>
+          <LanguageHtmlAttribute />
           <ConditionalNavBar />
           {children}
         </Providers>

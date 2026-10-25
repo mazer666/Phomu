@@ -11,7 +11,7 @@
 #   - Unit Tests         -> scripts: test (Vitest + Coverage)
 #   - Catalog Validation -> scripts: validate-songs, validate-catalog
 #   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size,
-#                         check:doc-language
+#                         check:doc-language, check:license
 #   - Rust Core           -> cargo build, test, clippy, fmt, doc (the shared base)
 #   - Rust Boundaries     -> scripts/check-crate-boundaries.mjs (the dependency rule)
 #   - Conformance         -> npm run check:conformance (shared core against the web shell)
@@ -144,6 +144,9 @@ jobs:
       - name: Gate — documentation language
         if: always()
         run: npm run check:doc-language
+      - name: Gate — licence consistency
+        if: always()
+        run: npm run check:license
 
   rust-core:
     name: Rust Core

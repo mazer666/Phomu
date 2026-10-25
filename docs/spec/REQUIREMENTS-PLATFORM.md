@@ -219,12 +219,12 @@ A requirement may name a subset. The per-track acceptance matrices in §8 cover 
 **Acceptance:** _(Security/Privacy, Technical)_ The dependency tree of core and shells contains no telemetry crate; the shipped binary contains no telemetry endpoint string.
 **Verification:** `command:` `grep -Ei "analytics|sentry|posthog|telemetry|mixpanel" crates/*/Cargo.toml apps/*/Cargo.toml` must be empty; `to be written:` `scripts/check-no-telemetry.sh` inspects the built artefact.
 
-### CORE-116 — The core carries the GPL-3.0-or-later licence
+### CORE-116 — The core carries the AGPL-3.0-or-later licence
 
 **Preset:** Preset · **Track:** All · **Status:** Planned
-**Requirement:** `phomu-core` and the bridge are licensed GPL-3.0-or-later, the licence text travels with the source and the artefacts, and every shell that links the core is GPL-3.0-or-later as well. If the owner ratifies the _Phomu App Store Exception_ proposed in [`../licensing/APPLE-LICENSING.md`](../licensing/APPLE-LICENSING.md), it is added as a GPL-3.0 §7 additional permission **on top of** GPL-3.0-or-later — the licence is not changed, relaxed or dual-licensed.
-**Rationale:** The whole product is GPL-3.0-or-later (`CORE-002`, `LICENSE`, `package.json`). A native shell that links the core must not weaken that. The exception is a narrow, additional permission for the app-store channels, not a different licence.
-**Acceptance:** _(Documentation, Technical)_ `Cargo.toml` declares `license = "GPL-3.0-or-later"`; `LICENSE` is present in the crate; the store metadata of every track declares the same licence; if the exception is ratified, its text and its scope are shipped with the artefact.
+**Requirement:** `phomu-core` and the bridge are licensed AGPL-3.0-or-later, the licence text travels with the source and the artefacts, and every shell that links the core is AGPL-3.0-or-later as well. If the owner ratifies the _Phomu App Store Exception_ proposed in [`../licensing/APPLE-LICENSING.md`](../licensing/APPLE-LICENSING.md), it is added as a AGPL-3.0 §7 additional permission **on top of** AGPL-3.0-or-later — the licence is not changed, relaxed or dual-licensed.
+**Rationale:** The whole product is AGPL-3.0-or-later (`CORE-002`, `LICENSE`, `package.json`). A native shell that links the core must not weaken that. The exception is a narrow, additional permission for the app-store channels, not a different licence.
+**Acceptance:** _(Documentation, Technical)_ `Cargo.toml` declares `license = "AGPL-3.0-or-later"`; `LICENSE` is present in the crate; the store metadata of every track declares the same licence; if the exception is ratified, its text and its scope are shipped with the artefact.
 **Verification:** `command:` `cargo metadata --format-version 1 | jq '.packages[] | select(.name=="phomu-core") | .license'`; `to be written:` `scripts/check-license-metadata.sh` checks the store listings.
 
 ---
@@ -867,7 +867,7 @@ A requirement may name a subset. The per-track acceptance matrices in §8 cover 
 ### REL-118 — The store policy compliance of every track is checked before submission
 
 **Preset:** Preset · **Track:** All · **Status:** Planned
-**Requirement:** Before a submission, the track is checked against the store policies that apply to it: no account required (`A-12`), no advertising, no tracking, no data collection, GPL-3.0-or-later licence, the licence conditions of the track (`B-09`) and — where the store requires it — an export-compliance declaration.
+**Requirement:** Before a submission, the track is checked against the store policies that apply to it: no account required (`A-12`), no advertising, no tracking, no data collection, AGPL-3.0-or-later licence, the licence conditions of the track (`B-09`) and — where the store requires it — an export-compliance declaration.
 **Rationale:** The product promises freedom from accounts and ads (`CORE-002`). A store that demands a privacy policy must get one that says the truth, and the export rules (encryption, in particular) must be answered correctly for a GPL distribution.
 **Acceptance:** _(Documentation, Security/Privacy)_ The check list is part of the Beta acceptance document and is signed off by the owner.
 **Verification:** `existing:` [`../releases/RELEASE-PLAN.md`](../releases/RELEASE-PLAN.md) § 4.1 (`A-12`) and § 4.2 (`B-09`, `B-12`); `acceptance:` the signed checklist in the acceptance document.

@@ -2,6 +2,8 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 
 interface InGameSettingsPanelProps {
@@ -16,17 +18,21 @@ function Slider({
   value,
   onChange,
   disabled,
+  percentLabel,
 }: {
   label: string;
   value: number;
   onChange: (value: number) => void;
   disabled?: boolean;
+  percentLabel: string;
 }) {
   return (
     <label className={`block ${disabled ? 'opacity-40' : ''}`}>
       <div className="flex items-center justify-between mb-2">
-        <span className="text-xs font-black uppercase tracking-widest opacity-70">{label}</span>
-        <span className="text-xs font-black tabular-nums">{Math.round(value * 100)}%</span>
+        <span className="text-xs font-black uppercase tracking-widest opacity-70">
+          {label}
+        </span>
+        <span className="text-xs font-black tabular-nums">{percentLabel}</span>
       </div>
       <input
         type="range"
@@ -35,7 +41,9 @@ function Slider({
         step={1}
         disabled={disabled}
         value={Math.round(value * 100)}
-        onChange={(e) => onChange(Math.max(0, Math.min(1, Number(e.target.value) / 100)))}
+        onChange={(e) =>
+          onChange(Math.max(0, Math.min(1, Number(e.target.value) / 100)))
+        }
         className="w-full accent-[var(--color-accent)]"
       />
     </label>
@@ -49,6 +57,17 @@ export function InGameSettingsPanel({
   onOpenFullSettings,
 }: InGameSettingsPanelProps) {
   const router = useRouter();
+  const { t, i18n } = useTranslation();
+
+  // Format the percentage with the active locale (Intl, no toLocaleString without a locale)
+  const percentFormatter = useMemo(
+    () =>
+      new Intl.NumberFormat(i18n.language, {
+        style: 'percent',
+        maximumFractionDigits: 0,
+      }),
+    [i18n.language]
+  );
   const {
     preferredPlayer,
     setPreferredPlayer,
@@ -82,8 +101,14 @@ export function InGameSettingsPanel({
             className="w-full max-w-lg rounded-3xl border border-white/10 bg-[#111217] text-white p-5 sm:p-6 shadow-2xl"
           >
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-lg font-black uppercase tracking-wider">⚙ Spiel-Einstellungen</h2>
-              <button onClick={onClose} className="text-xl opacity-50 hover:opacity-100" aria-label="Schließen">
+              <h2 className="text-lg font-black uppercase tracking-wider">
+                {t('game.settings.title')}
+              </h2>
+              <button
+                onClick={onClose}
+                className="text-xl opacity-50 hover:opacity-100"
+                aria-label={t('game.settings.closeAriaLabel')}
+              >
                 ✕
               </button>
             </div>
@@ -91,17 +116,24 @@ export function InGameSettingsPanel({
             <div className="space-y-5">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4 space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-black uppercase tracking-widest">Hintergrundmusik</span>
+                  <span className="text-xs font-black uppercase tracking-widest">
+                    {t('game.settings.backgroundMusic')}
+                  </span>
                   <button
-                    onClick={() => setAudioSettings({ musicEnabled: !musicEnabled })}
+                    onClick={() =>
+                      setAudioSettings({ musicEnabled: !musicEnabled })
+                    }
                     className={`px-3 py-1.5 rounded-xl text-xs font-black ${musicEnabled ? 'bg-green-500/20 text-green-300 border border-green-400/30' : 'bg-white/10 text-white/70 border border-white/15'}`}
                   >
-                    {musicEnabled ? 'AN' : 'AUS'}
+                    {musicEnabled
+                      ? t('game.settings.on')
+                      : t('game.settings.off')}
                   </button>
                 </div>
                 <Slider
-                  label="Musik-Lautstärke"
+                  label={t('game.settings.musicVolume')}
                   value={musicVolume}
+                  percentLabel={percentFormatter.format(musicVolume)}
                   disabled={!musicEnabled}
                   onChange={(value) => setAudioSettings({ musicVolume: value })}
                 />
@@ -109,24 +141,33 @@ export function InGameSettingsPanel({
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4 space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-black uppercase tracking-widest">Soundeffekte</span>
+                  <span className="text-xs font-black uppercase tracking-widest">
+                    {t('game.settings.soundEffects')}
+                  </span>
                   <button
-                    onClick={() => setAudioSettings({ sfxEnabled: !sfxEnabled })}
+                    onClick={() =>
+                      setAudioSettings({ sfxEnabled: !sfxEnabled })
+                    }
                     className={`px-3 py-1.5 rounded-xl text-xs font-black ${sfxEnabled ? 'bg-green-500/20 text-green-300 border border-green-400/30' : 'bg-white/10 text-white/70 border border-white/15'}`}
                   >
-                    {sfxEnabled ? 'AN' : 'AUS'}
+                    {sfxEnabled
+                      ? t('game.settings.on')
+                      : t('game.settings.off')}
                   </button>
                 </div>
                 <Slider
-                  label="SFX-Lautstärke"
+                  label={t('game.settings.sfxVolume')}
                   value={sfxVolume}
+                  percentLabel={percentFormatter.format(sfxVolume)}
                   disabled={!sfxEnabled}
                   onChange={(value) => setAudioSettings({ sfxVolume: value })}
                 />
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-xs font-black uppercase tracking-widest opacity-70 mb-2">Musik-Anbieter</p>
+                <p className="text-xs font-black uppercase tracking-widest opacity-70 mb-2">
+                  {t('game.settings.musicProvider')}
+                </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
                   <button
                     onClick={() => setPreferredMusicProvider('youtube')}
@@ -153,19 +194,21 @@ export function InGameSettingsPanel({
                     Amazon Prime
                   </button>
                 </div>
-                <p className="text-xs font-black uppercase tracking-widest opacity-70 mb-2">YouTube Player</p>
+                <p className="text-xs font-black uppercase tracking-widest opacity-70 mb-2">
+                  {t('game.settings.youtubePlayer')}
+                </p>
                 <div className="flex bg-black/30 p-1 rounded-xl">
                   <button
                     onClick={() => setPreferredPlayer('standard')}
                     className={`flex-1 py-2 rounded-lg text-xs font-black ${preferredPlayer === 'standard' ? 'bg-[var(--color-accent)] text-white' : 'opacity-50 hover:opacity-100'}`}
                   >
-                    Standard
+                    {t('game.settings.playerStandard')}
                   </button>
                   <button
                     onClick={() => setPreferredPlayer('music')}
                     className={`flex-1 py-2 rounded-lg text-xs font-black ${preferredPlayer === 'music' ? 'bg-[var(--color-accent)] text-white' : 'opacity-50 hover:opacity-100'}`}
                   >
-                    Music
+                    {t('game.settings.playerMusic')}
                   </button>
                 </div>
               </div>
@@ -173,14 +216,22 @@ export function InGameSettingsPanel({
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-xs font-black uppercase tracking-widest">Strict Mode</span>
-                    <p className="text-[10px] opacity-40 mt-0.5">Deaktiviert alle Cheats &amp; Joker</p>
+                    <span className="text-xs font-black uppercase tracking-widest">
+                      {t('game.settings.strictMode')}
+                    </span>
+                    <p className="text-[10px] opacity-40 mt-0.5">
+                      {t('game.settings.strictModeHint')}
+                    </p>
                   </div>
                   <button
-                    onClick={() => setConfig({ noCheatMode: !config.noCheatMode })}
+                    onClick={() =>
+                      setConfig({ noCheatMode: !config.noCheatMode })
+                    }
                     className={`px-3 py-1.5 rounded-xl text-xs font-black ${config.noCheatMode ? 'bg-red-500/20 text-red-300 border border-red-400/30' : 'bg-white/10 text-white/70 border border-white/15'}`}
                   >
-                    {config.noCheatMode ? 'AN' : 'AUS'}
+                    {config.noCheatMode
+                      ? t('game.settings.on')
+                      : t('game.settings.off')}
                   </button>
                 </div>
               </div>
@@ -191,31 +242,34 @@ export function InGameSettingsPanel({
                 onClick={onOpenFullSettings}
                 className="py-2.5 rounded-xl border border-white/15 text-xs font-black hover:bg-white/5"
               >
-                Erweiterte Settings
+                {t('game.settings.advancedSettings')}
               </button>
               <button
-                onClick={() => { onClose(); router.push('/settings/game-rules'); }}
+                onClick={() => {
+                  onClose();
+                  router.push('/settings/game-rules');
+                }}
                 className="py-2.5 rounded-xl border border-white/15 text-xs font-black hover:bg-white/5 sm:col-span-2"
               >
-                🎮 Modi &amp; Packs ändern
+                {t('game.settings.changeModesPacks')}
               </button>
               <button
                 onClick={() => window.open('/projector', '_blank')}
                 className="py-2.5 rounded-xl border border-white/15 text-xs font-black hover:bg-white/5 sm:col-span-3"
               >
-                📺 Projector-Modus öffnen
+                {t('game.settings.openProjector')}
               </button>
               <button
                 onClick={onLeaveParty}
                 className="py-2.5 rounded-xl border border-red-400/30 text-red-300 text-xs font-black hover:bg-red-500/10"
               >
-                Party verlassen
+                {t('game.settings.leaveParty')}
               </button>
               <button
                 onClick={onClose}
                 className="py-2.5 rounded-xl bg-[var(--color-accent)] text-white text-xs font-black"
               >
-                Zurück zum Spiel
+                {t('game.settings.backToGame')}
               </button>
             </div>
           </motion.div>

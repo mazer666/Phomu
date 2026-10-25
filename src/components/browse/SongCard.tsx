@@ -3,69 +3,83 @@
 /**
  * SongCard
  *
- * Zeigt alle öffentlichen Daten eines Songs als Karte an.
- * Wird auf der Browse-Seite (/browse) verwendet.
+ * Displays all public data of a song as a card.
+ * Used on the browse page (/browse).
  *
- * Lyrics werden NICHT angezeigt (das wäre Spoiler!).
+ * Lyrics are NOT displayed (that would be a spoiler!).
  */
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useMemo } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import type { PhomuSong } from '@/types/song';
 
-// ─── Hilfsfunktionen ─────────────────────────────────────────────────────────
+// ─── Helper functions ─────────────────────────────────────────────────────────
 
-/** Mapt Schwierigkeit auf ein Label + Farbe */
-function difficultyStyle(difficulty: PhomuSong['difficulty']) {
-  switch (difficulty) {
-    case 'easy':
-      return { label: 'Leicht', className: 'bg-green-100 text-green-800' };
-    case 'medium':
-      return { label: 'Mittel', className: 'bg-yellow-100 text-yellow-800' };
-    case 'hard':
-      return { label: 'Schwer', className: 'bg-red-100 text-red-800' };
-  }
+/** Returns the decade of a song as a number, e.g. 1980 */
+function getDecade(year: number): number {
+  return Math.floor(year / 10) * 10;
 }
 
-/** Gibt das Jahrzehnt eines Songs zurück, z.B. "80er" */
-function getDecade(year: number): string {
-  const decade = Math.floor(year / 10) * 10;
-  const short = decade % 100;
-  return `${short}er`;
-}
+/** Translation keys of the difficulty levels */
+const DIFFICULTY_LABELS = {
+  easy: 'browse.difficultyEasy',
+  medium: 'browse.difficultyMedium',
+  hard: 'browse.difficultyHard',
+} as const;
 
-/** Erstellt die YouTube-URL aus ID oder vorhandener URL */
+/** Builds the YouTube URL from an ID or an existing URL */
 function buildYoutubeUrl(youtube: string): string | null {
   if (!youtube || youtube.startsWith('TODO:')) return null;
   if (youtube.includes('youtube.com') || youtube.includes('youtu.be')) {
     return youtube;
   }
-  // Annahme: 11-stellige Video-ID
+  // Assumption: 11-character video ID
   return `https://www.youtube.com/watch?v=${youtube}`;
 }
 
-// ─── Komponente ───────────────────────────────────────────────────────────────
+// ─── Component ───────────────────────────────────────────────────────────────
 
 interface SongCardProps {
   song: PhomuSong;
-  /** Ob die Hints aufgeklappt angezeigt werden sollen (Standard: false) */
+  /** Whether the hints should be shown expanded (default: false) */
   showHints?: boolean;
-  /** Admin-Modus aktiv? */
+  /** Admin mode active? */
   isAdmin?: boolean;
-  /** Callback zum Bearbeiten */
+  /** Callback for editing */
   onEdit?: (song: PhomuSong) => void;
-  /** Callback zum sofortigen Spielen */
+  /** Callback for playing immediately */
   onPlay?: (song: PhomuSong) => void;
 }
 
-export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onPlay }: SongCardProps) {
-  const diff = difficultyStyle(song.difficulty);
+export function SongCard({
+  song,
+  showHints = false,
+  isAdmin = false,
+  onEdit,
+  onPlay,
+}: SongCardProps) {
+  const { t, i18n } = useTranslation();
   const youtubeUrl = buildYoutubeUrl(song.links.youtube);
-  const decade = getDecade(song.year);
+  const decade = t('browse.decade', { decade: getDecade(song.year) });
   const hasLyrics = song.lyrics !== null;
   const [hovering, setHovering] = useState(false);
   const hoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  /** Hint level as a two-digit number, formatted for the active locale */
+  const hintLevelFormatter = useMemo(
+    () => new Intl.NumberFormat(i18n.language, { minimumIntegerDigits: 2 }),
+    [i18n.language]
+  );
+
+  const difficultyClass = {
+    easy: 'bg-green-100 text-green-800',
+    medium: 'bg-yellow-100 text-yellow-800',
+    hard: 'bg-red-100 text-red-800',
+  }[song.difficulty];
+
+  const difficultyLabel = DIFFICULTY_LABELS[song.difficulty];
 
   const handleMouseEnter = useCallback(() => {
     // Small delay to avoid accidental triggers when scrolling
@@ -78,7 +92,7 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
   }, []);
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -8 }}
@@ -92,7 +106,13 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
         <iframe
           src={`https://www.youtube.com/embed/${song.links.youtube}?autoplay=1&start=${song.previewTimestamp?.start ?? 30}&controls=0&showinfo=0&modestbranding=1&rel=0&enablejsapi=1`}
           allow="autoplay"
-          style={{ position: 'absolute', width: 1, height: 1, opacity: 0, pointerEvents: 'none' }}
+          style={{
+            position: 'absolute',
+            width: 1,
+            height: 1,
+            opacity: 0,
+            pointerEvents: 'none',
+          }}
           tabIndex={-1}
           aria-hidden
         />
@@ -100,9 +120,9 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
       {/* Cover Image Header */}
       <div className="relative aspect-[4/5] overflow-hidden bg-gray-900">
         {song.coverUrl ? (
-          <Image 
-            src={`/Phomu${song.coverUrl}`} 
-            alt={song.title} 
+          <Image
+            src={`/Phomu${song.coverUrl}`}
+            alt={song.title}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -110,18 +130,22 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
         ) : (
           <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
             <span className="text-5xl opacity-10 mb-4">🎵</span>
-            <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-20">No Cover</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-20">
+              {t('browse.noCover')}
+            </p>
           </div>
         )}
-        
+
         {/* Top-Badges */}
         <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
-           <span className={`px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-widest backdrop-blur-md border border-white/10 shadow-lg ${diff.className}`}>
-            {diff.label}
+          <span
+            className={`px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-widest backdrop-blur-md border border-white/10 shadow-lg ${difficultyClass}`}
+          >
+            {t(difficultyLabel)}
           </span>
           {song.isOneHitWonder && (
             <span className="bg-orange-500/80 backdrop-blur-md text-white px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-widest shadow-lg border border-orange-400/20">
-              ⭐ One-Hit
+              {t('browse.oneHitBadge')}
             </span>
           )}
         </div>
@@ -137,11 +161,16 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-4 backdrop-blur-[1px]">
           {onPlay && (
             <button
-              onClick={(e) => { e.stopPropagation(); onPlay(song); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                onPlay(song);
+              }}
               className="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group/btn"
-              title="Sofort spielen"
+              title={t('browse.playNowTitle')}
             >
-              <span className="text-2xl group-hover:scale-125 transition-transform">▶️</span>
+              <span className="text-2xl group-hover:scale-125 transition-transform">
+                ▶️
+              </span>
             </button>
           )}
           {youtubeUrl && (
@@ -151,16 +180,19 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
               className="w-12 h-12 bg-red-600/90 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all border border-red-500/50"
-              title="Original-Video"
+              title={t('browse.originalVideoTitle')}
             >
               <span className="text-lg">📺</span>
             </a>
           )}
           {isAdmin && onEdit && (
             <button
-              onClick={(e) => { e.stopPropagation(); onEdit(song); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                onEdit(song);
+              }}
               className="w-12 h-12 bg-blue-600/90 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all border border-blue-500/50"
-              title="Edit Song"
+              title={t('browse.editSongTitle')}
             >
               <span className="text-lg">✏️</span>
             </button>
@@ -174,7 +206,9 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
           <h3 className="font-black text-white text-xl leading-tight line-clamp-2 group-hover:text-blue-400 transition-colors uppercase tracking-tight">
             {song.title}
           </h3>
-          <p className="text-xs font-black text-white/40 uppercase tracking-[0.2em] mt-1">{song.artist}</p>
+          <p className="text-xs font-black text-white/40 uppercase tracking-[0.2em] mt-1">
+            {song.artist}
+          </p>
         </div>
 
         <div className="flex flex-wrap gap-2 mt-auto">
@@ -192,7 +226,10 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
         {/* Moods */}
         <div className="flex flex-wrap gap-1.5 mt-4">
           {song.mood.map((m) => (
-            <span key={m} className="text-[8px] font-black text-white/30 border border-white/5 px-2 py-0.5 rounded-md uppercase tracking-wider">
+            <span
+              key={m}
+              className="text-[8px] font-black text-white/30 border border-white/5 px-2 py-0.5 rounded-md uppercase tracking-wider"
+            >
               {m}
             </span>
           ))}
@@ -202,28 +239,40 @@ export function SongCard({ song, showHints = false, isAdmin = false, onEdit, onP
       {/* Indicators Footer */}
       <div className="px-6 py-4 border-t border-white/5 bg-black/20 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className={`text-[8px] font-black uppercase tracking-widest flex items-center gap-1.5 ${hasLyrics ? 'text-green-500' : 'text-white/20'}`}>
-            <span className={`w-1.5 h-1.5 rounded-full ${hasLyrics ? 'bg-green-500 animate-pulse' : 'bg-white/10'}`}></span>
-            Lyrics
+          <span
+            className={`text-[8px] font-black uppercase tracking-widest flex items-center gap-1.5 ${hasLyrics ? 'text-green-500' : 'text-white/20'}`}
+          >
+            <span
+              className={`w-1.5 h-1.5 rounded-full ${hasLyrics ? 'bg-green-500 animate-pulse' : 'bg-white/10'}`}
+            ></span>
+            {t('browse.lyricsLabel')}
           </span>
-          <span className={`text-[8px] font-black uppercase tracking-widest flex items-center gap-1.5 ${song.isQRCompatible ? 'text-blue-500' : 'text-white/20'}`}>
-            <span className={`w-1.5 h-1.5 rounded-full ${song.isQRCompatible ? 'bg-blue-500' : 'bg-white/10'}`}></span>
-            QR
+          <span
+            className={`text-[8px] font-black uppercase tracking-widest flex items-center gap-1.5 ${song.isQRCompatible ? 'text-blue-500' : 'text-white/20'}`}
+          >
+            <span
+              className={`w-1.5 h-1.5 rounded-full ${song.isQRCompatible ? 'bg-blue-500' : 'bg-white/10'}`}
+            ></span>
+            {t('browse.qrLabel')}
           </span>
         </div>
       </div>
 
       {/* Hints Expansion */}
       {showHints && (
-        <motion.div 
+        <motion.div
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: 'auto', opacity: 1 }}
           className="bg-black/40 border-t border-white/5 p-6 space-y-3"
         >
           {song.hints.map((h, i) => (
             <div key={i} className="flex gap-4">
-              <span className="text-[9px] font-black text-white/10 w-4 pt-0.5">0{song.hints.length - i}</span>
-              <p className="text-[11px] text-white/50 leading-relaxed italic">&quot;{h}&quot;</p>
+              <span className="text-[9px] font-black text-white/10 w-4 pt-0.5">
+                {hintLevelFormatter.format(song.hints.length - i)}
+              </span>
+              <p className="text-[11px] text-white/50 leading-relaxed italic">
+                &quot;{h}&quot;
+              </p>
             </div>
           ))}
         </motion.div>

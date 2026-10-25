@@ -1,6 +1,6 @@
 /**
- * Prueft, ob jede `coverUrl` im Katalog auf eine existierende Datei zeigt.
- * Aufruf: npx tsx src/utils/check-covers.ts
+ * Checks whether every `coverUrl` in the catalog points to an existing file.
+ * Usage: npx tsx src/utils/check-covers.ts
  */
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -14,7 +14,7 @@ interface SongLike {
 }
 
 function main(): void {
-  // Alle Song-Dateien dynamisch erfassen (A.json, A1.json, A10.json, ... NUMBERS.json, Ñ.json)
+  // Collect all song files dynamically (A.json, A1.json, A10.json, ... NUMBERS.json, Ñ.json)
   const files = existsSync(SONGS_DIR)
     ? readdirSync(SONGS_DIR)
         .filter((f) => f.endsWith('.json'))

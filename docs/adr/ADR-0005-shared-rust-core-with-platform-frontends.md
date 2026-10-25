@@ -195,7 +195,7 @@ decided in [`ADR-0006`](../adr/ADR-0006-binding-platform-track-order.md).
   over. A period in which both exist is explicitly forbidden, because it
   would make the conformance vectors prove only that one of two
   implementations is right.
-- **The base inherits the repository's GPL-3.0 licence**
+- **The base inherits the repository's AGPL-3.0-or-later licence**
   ([`../../package.json`](../../package.json):4). Whether that is compatible
   with the app-store distribution channels is a legal question this ADR does
   not answer; it is open decision **O-3** in

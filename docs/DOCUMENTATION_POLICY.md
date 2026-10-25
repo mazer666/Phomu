@@ -179,7 +179,7 @@ Rules:
 | **Explanations for every single commit** | `CHANGELOG.md` summarises the changes. The full log lies in the version control. |
 | **Values that are measured but never claimed anywhere** | What was not measured is "not measured" — see [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md). |
 | **Personal data of players** | Names, avatars and scores stay in the browser of the device. They belong into no file and into no log. |
-| **Third-party content** | Music tracks, cover images and video links belong to third parties. The project provides software under GPL-3.0, not the contents. |
+| **Third-party content** | Music tracks, cover images and video links belong to third parties. The project provides software under AGPL-3.0-or-later, not the contents. |
 
 ---
 

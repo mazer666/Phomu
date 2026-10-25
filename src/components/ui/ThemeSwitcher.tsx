@@ -9,14 +9,9 @@
 import { useTheme } from '@/contexts/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import { PHOMU_CONFIG, type ThemeName } from '@/config/game-config';
+import { THEME_COLORS, THEME_LABEL_KEYS } from '@/config/themes';
 
 /** Color dots representing each theme's primary color */
-const THEME_COLORS: Record<ThemeName, string> = {
-  jackbox: '#ff6b35',
-  spotify: '#1db954',
-  youtube: '#ff0000',
-  musicwall: '#fe2c55',
-};
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
@@ -35,7 +30,7 @@ export default function ThemeSwitcher() {
           <button
             key={themeName}
             onClick={() => setTheme(themeName)}
-            title={t(`themes.${themeName}`)}
+            title={t(THEME_LABEL_KEYS[themeName])}
             className="flex h-8 w-8 items-center justify-center rounded-full transition-all"
             style={{
               backgroundColor: THEME_COLORS[themeName],
@@ -45,7 +40,7 @@ export default function ThemeSwitcher() {
                   : '3px solid transparent',
               transform: theme === themeName ? 'scale(1.15)' : 'scale(1)',
             }}
-            aria-label={t(`themes.${themeName}`)}
+            aria-label={t(THEME_LABEL_KEYS[themeName])}
             aria-pressed={theme === themeName}
           />
         ))}

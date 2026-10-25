@@ -37,15 +37,23 @@
 **Requirement:** The behaviour of Phomu is defined by the requirement IDs in this document. Every ID is referenced in the code, in tests and in the documentation; an ID is never reused.
 **Rationale:** Without stable IDs it cannot be checked whether a change violates a requirement. The ID schemes (`CORE`, `GAME`, `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `NFR`) are fixed in the reform contract.
 **Acceptance:** Every requirement block in this document carries an ID from the `<DOMAIN>-<NNN>` scheme with three digits; the IDs are consecutive and gapless per domain.
-**Verification:** `grep -c '^### ' REQUIREMENTS.md` counts all requirement blocks (current state: 174); the uniqueness of the IDs is checked with `grep -o '^### [A-Z]*-[0-9]*' REQUIREMENTS.md | sort | uniq -d` (empty = no duplicate).
+**Verification:** `grep -c '^### ' REQUIREMENTS.md` counts all requirement blocks (current state: 175); the uniqueness of the IDs is checked with `grep -o '^### [A-Z]*-[0-9]*' REQUIREMENTS.md | sort | uniq -d` (empty = no duplicate).
 
 ### CORE-002 — Free open source without a forced account
 
 **Preset:** Preset
-**Requirement:** Phomu is licensed under GPL-3.0. There is no registration, no subscription, no advertising and no forced coupling to a service. All core features — lobby, game, catalogue, admin API — work without a user account.
+**Requirement:** Phomu is licensed under AGPL-3.0-or-later. There is no registration, no subscription, no advertising and no forced coupling to a service. All core features — lobby, game, catalogue, admin API — work without a user account.
 **Rationale:** The game is played in bars, at birthday parties and in clubs. A mandatory sign-up would be an obstacle precisely where the product is supposed to work.
-**Acceptance:** `LICENSE` contains GPL-3.0; `package.json` lists `"license": "GPL-3.0"`; there is no auth provider and no login route in `src/app/`.
+**Acceptance:** `LICENSE` contains AGPL-3.0-or-later; `package.json` lists `"license": "AGPL-3.0-or-later"`; there is no auth provider and no login route in `src/app/`.
 **Verification:** `cat LICENSE | head -3`; `grep -rn '"license"' package.json`; `ls src/app/` contains no `login`/`signup` route.
+
+### CORE-002a — The source of the deployed version is offered to the network users
+
+**Preset:** Preset
+**Requirement:** Everyone who interacts with Phomu over a network can obtain the complete corresponding source of the version they are interacting with. This is the obligation of AGPL-3.0 §13 and it applies to every distribution channel.
+**Rationale:** The AGPL was chosen over the GPL because a party game is played through a browser as often as on a phone: the users of the web application are users of a modified version, and they are entitled to its source. The obligation is satisfied by making the source easy to find, not by adding a new account or a new dialog.
+**Acceptance:** The legal pages name the repository and offer the source (`src/app/terms/page.tsx`, `src/app/privacy/page.tsx`, `src/i18n/locales/de.json` → `legal.terms.section5.body`, `legal.privacy.section5.body`); the footer carries the licence name (`landing.footerTagline`); `LICENSE.md` explains how the obligation is met per channel. The web shell has no server-side component that runs the program, so the deployed version is the version in the repository.
+**Verification:** `grep -n "github.com/mazer666/Phomu" src/i18n/locales/de.json src/i18n/locales/en.json`; `grep -n "footerTagline" src/i18n/locales/de.json`; `ls LICENSE.md`.
 
 ### CORE-003 — Local-first and data-minimising
 
@@ -1561,7 +1569,7 @@ Every gap names the affected requirements and the question of whether it is a **
 
 | Section | Content | Source of the values |
 |---|---|---|
-| `project` | Name, licence (GPL-3.0), baseline version, status | `package.json`, `LICENSE`, head of this document |
+| `project` | Name, licence (AGPL-3.0-or-later), baseline version, status | `package.json`, `LICENSE`, head of this document |
 | `stack` | Next.js 16 (App Router), React 19, TypeScript strict, Tailwind CSS 4, Framer Motion, Zustand, i18next, Playwright, Vitest | `package.json` |
 | `milestones` | Current milestone, completed milestones, each with evidence | `specifications/project_roadmap.md`, `specifications/current_status_2026-04-08.md` |
 | `domains` | The nine requirement domains with their ID ranges and number of requirements | This document |
@@ -1579,4 +1587,4 @@ Every gap names the affected requirements and the question of whether it is a **
 
 | Date | Change | Evidence |
 |---|---|---|
-| 2026-10-25 | Baseline 0.1 created: 174 requirements derived from the code, 36 contradictions, 29 open gaps | Commit `d5b6422`; `npm run typecheck` (green), `npm run lint` (0 errors), `npx vitest run` (21 tests), `npm run validate-catalog` (135 packs / 1,615 songs), `node scripts/check-i18n-completeness.mjs --count` (935 literal texts in 47 files) |
+| 2026-10-25 | Baseline 0.1 created: 175 requirements derived from the code, 36 contradictions, 29 open gaps (CORE-002a added for AGPL §13) | Commit `d5b6422`; `npm run typecheck` (green), `npm run lint` (0 errors), `npx vitest run` (21 tests), `npm run validate-catalog` (135 packs / 1,615 songs), `node scripts/check-i18n-completeness.mjs --count` (935 literal texts in 47 files) |

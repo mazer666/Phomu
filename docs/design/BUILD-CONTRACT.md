@@ -480,7 +480,7 @@ exists and, where it helps, a short example.
 ## 11. Licensing
 
 - The whole workspace inherits the repository's licence. The repository is
-  licensed **GPL-3.0** ([`../../package.json`](../../package.json):4). Every
+  licensed **AGPL-3.0-or-later** ([`../../package.json`](../../package.json):4). Every
   `Cargo.toml` inherits it — never a literal.
 - Every source file that carries a licence header carries the same header.
 - Third-party code keeps its own licence and is listed in the third-party

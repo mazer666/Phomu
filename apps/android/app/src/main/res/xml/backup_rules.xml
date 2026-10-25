@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The rules of the backup of the application.
+
+  WHY the session is not backed up: the session of a running game belongs to
+  the device it is played on, and a backup would restore a session into a
+  game that no longer exists. The catalogue is an asset of the application
+  and is not backed up either.
+-->
+<full-backup-content>
+    <exclude domain="file" path="." />
+    <exclude domain="database" path="." />
+    <exclude domain="sharedpref" path="." />
+    <exclude domain="external" path="." />
+</full-backup-content>

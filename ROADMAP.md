@@ -408,7 +408,7 @@ moment.
 
 | Item | Evidence |
 |---|---|
-| Requirements | `REQUIREMENTS.md` contains **174** requirement blocks in nine domains (counted at 2026-10-25T08:56:58Z via `### <DOMÄNE>-<NNN>`), no ID duplicated |
+| Requirements | `REQUIREMENTS.md` contains **175** requirement blocks in nine domains (counted at 2026-10-25T08:56:58Z via `### <DOMÄNE>-<NNN>`), no ID duplicated |
 | i18n key space | `src/i18n/locales/de.json` and `en.json`: keys parallel, no empty values, 7 identical values (only proper names like "Spotify", "Jackbox Party") |
 | Literal text measurement | `npm run check:i18n`: **6** literal texts in 47 files (2026-10-25T08:59Z) — at the start of the round it was 935 (08:34:52Z). The remaining 6: four theme proper names in `src/app/lobby/page.tsx:77–82` ("Phomu Blue", "Neon Purple", "Cyber Pink", "Gold Rush"), a status prefix `` `draft- ` `` in `src/app/admin/songs/page.tsx:444` and an emoji symbol in `src/app/settings/game-rules/page.tsx:63`. The gate is therefore **almost** green, but still exit 1 |
 | Gate scripts present | `scripts/check-i18n-completeness.mjs`, `scripts/check-doc-links.mjs` and `scripts/check-file-size.mjs` exist; `package.json` lists them as `check:i18n`, `check:doc-links`, `check:file-size`, `check:all`; `scripts/local-ci.sh:78` calls `npm run check:all` blocking |
@@ -1041,7 +1041,7 @@ The tablet as the second screen and the phone as the remote.
 ### Acceptance criteria
 
 - The Apple release gate is met
-- The GPL obligations are met for the shipped binary
+- The AGPL obligations are met for the shipped binary
 
 ### QA evidence
 

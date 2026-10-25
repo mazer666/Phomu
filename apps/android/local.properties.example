@@ -1,0 +1,22 @@
+# The local configuration of the Android build.
+#
+# WHY this file is not committed: the paths of the SDK and of the NDK belong
+# to the machine of the developer, and the file is created by the Android
+# Studio or by the script that builds the shell. Copy the file, adjust the
+# two paths, and the build finds the toolchain.
+#
+#   cp local.properties.example local.properties
+
+# The root of the Android SDK. On macOS with the SDK manager of Android
+# Studio this is usually
+#   ~/Library/Android/sdk
+# and on Linux and Windows
+#   $HOME/Android/Sdk
+sdk.dir=/path/to/the/android-sdk
+
+# The root of the NDK. The shell is built with NDK r27c; the Android SDK
+# manager installs it with
+#   sdkmanager "ndk;27.3.13750724"
+# and the path is then
+#   <sdk.dir>/ndk/27.3.13750724
+ndk.dir=/path/to/the/android-sdk/ndk/27.3.13750724

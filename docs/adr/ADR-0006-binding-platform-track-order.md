@@ -49,7 +49,7 @@ not "can we build an Android app" — that is routine — but:
   the YouTube policies on 2025-01-23
   (<https://developers.google.com/youtube/terms/revision-history>). Whether a
   WebView-hosted embed satisfies the YouTube rules on a TV is **unverified**.
-- **Can the iOS shell ship at all?** The repository is licensed GPL-3.0
+- **Can the iOS shell ship at all?** The repository is licensed AGPL-3.0-or-later
   ([`../../package.json`](../../package.json):4), and the App Review
   Guidelines state that streaming third-party media may violate the service's
   terms and must be checked beforehand, and that Apple Music or iTunes preview
@@ -77,7 +77,7 @@ shells depend on it
 |---|---|
 | one team, one review capacity | no parallel tracks |
 | the media feasibility on a TV is unknown | it must be retired early, not last |
-| the Apple guidelines and the GPL question are unresolved | iOS must not be first, and must not start before the legal answer exists |
+| the Apple guidelines and the AGPL question are unresolved | iOS must not be first, and must not start before the legal answer exists |
 | the desktop shell is the cheapest but proves the least | it is not first |
 | the Android shell proves the bridge for the widest set of later tracks | it is first |
 | the base must be proven before it is multiplied | the web shell adopts the base before the native tracks begin |
@@ -217,7 +217,7 @@ capability value that the shell reports and the base reacts to
   architecture is the wrong first track.
 
 - **iOS first.** *Rejected:* it is the track with the highest legal and
-  provider risk (the App Review Guidelines, the GPL question, the absence of
+  provider risk (the App Review Guidelines, the AGPL question, the absence of
   a verified media path). Starting with it would let an unresolved legal
   question block the entire programme, and the first track would be the one
   most likely to be rejected on review.

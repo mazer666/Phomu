@@ -4,10 +4,10 @@ import { PHOMU_CONFIG } from '@/config/game-config';
 import { ALL_SONGS } from '@/data/songs';
 
 /**
- * Alte Lobby-Pack-IDs (z. B. 'global-hits') auf die aktuellen Pack-Keys
- * abbilden. Die IDs sind in keinem Song als `packs`-Eintrag vorhanden und
- * lieferten im Filter daher leere Auswahlen. Gespeicherte Spielstaende
- * aus aelteren Versionen enthalten sie noch.
+ * Maps old lobby pack IDs (e.g. 'global-hits') to the current pack keys.
+ * The IDs do not occur as a `packs` entry in any song and therefore produced
+ * empty selections in the filter. Saved game states from older versions
+ * still contain them.
  */
 function normalizePackIds(packIds: string[]): string[] {
   const aliases = PHOMU_CONFIG.PACK_ALIASES as Record<string, string>;
@@ -23,68 +23,108 @@ interface PickerOptions {
 }
 
 /**
- * Gibt einen zufälligen Song zurück, der den Kriterien entspricht.
+ * Returns the songs that match the criteria — the filter chain without the
+ * random draw.
+ *
+ * WHY: the chain (pack → QR → difficulty → mode, each with a soft fallback)
+ * is a rule that the Rust core has to reproduce. It is separated from the
+ * random draw so that a second implementation can be compared with it
+ * without depending on a random number generator.
+ *
+ * The chain is applied in this order:
+ *  1. pack filter (absolute fallback to the whole catalogue if it is empty)
+ *  2. QR filter (soft fallback — ignored if it would empty the pool)
+ *  3. difficulty filter (soft fallback — ignored if it would empty the pool)
+ *  4. mode filter (hard fallback for `lyrics`, soft fallback otherwise)
+ *
+ * EXAMPLE: a catalogue of two songs, one with lyrics and one without, in the
+ *          mode `lyrics` → only the song with lyrics is returned.
  */
-export function pickRandomSong({ 
-  playedIds, 
-  selectedPacks, 
-  difficulty = 'all', 
-  onlyQRCompatible = false, 
-  currentMode 
-}: PickerOptions): PhomuSong | null {
-  
-  let basePool = ALL_SONGS;
+export function filterSongs(
+  catalogue: PhomuSong[],
+  {
+    selectedPacks,
+    difficulty = 'all',
+    onlyQRCompatible = false,
+    currentMode,
+  }: Omit<PickerOptions, 'playedIds'>
+): PhomuSong[] {
+  let basePool = catalogue;
   if (selectedPacks && selectedPacks.length > 0) {
     const packIds = normalizePackIds(selectedPacks);
-    basePool = ALL_SONGS.filter(s => s.packs.some(p => packIds.includes(p)));
+    basePool = catalogue.filter((s) =>
+      s.packs.some((p) => packIds.includes(p))
+    );
   }
-  if (basePool.length === 0) basePool = ALL_SONGS; // Absoluter Fallback
+  if (basePool.length === 0) basePool = catalogue; // Absolute fallback
 
   let pool = basePool;
 
-  // Optionale Filter (Difficulty, QR) anwenden. Falls diese zu 0 Songs führen, ignorieren wir sie (Soft-Fallback)
+  // Apply the optional filters (difficulty, QR). If these lead to 0 songs we ignore them (soft fallback)
   if (onlyQRCompatible) {
-    const qrPool = pool.filter(s => s.isQRCompatible);
+    const qrPool = pool.filter((s) => s.isQRCompatible);
     if (qrPool.length > 0) pool = qrPool;
   }
-  
+
   if (difficulty !== 'all') {
-    const diffPool = pool.filter(s => s.difficulty === difficulty);
+    const diffPool = pool.filter((s) => s.difficulty === difficulty);
     if (diffPool.length > 0) pool = diffPool;
   }
 
-  // 2. Modus-Spezifische Filter (z.B. Lyrics Labyrinth braucht zwingend Lyrics)
+  // Mode-specific filters (e.g. Lyrics Labyrinth strictly requires lyrics)
   let modePool = pool;
   if (currentMode === 'lyrics') {
-    modePool = pool.filter(s => s.lyrics !== null);
+    modePool = pool.filter((s) => s.lyrics !== null);
   } else if (currentMode) {
-    modePool = pool.filter(s => s.supportedModes?.includes(currentMode as GameMode));
+    modePool = pool.filter((s) =>
+      s.supportedModes?.includes(currentMode as GameMode)
+    );
   }
 
   if (modePool.length > 0) {
     pool = modePool;
   } else if (currentMode === 'lyrics') {
-     // Hard-Fallback für Lyrics: Wenn der Pool 0 ist, müssen wir zwingend auf die BasePool (ignorierte Difficulty/QR) zurückgreifen
-     const absoluteLyricsPool = basePool.filter(s => s.lyrics !== null);
-     if (absoluteLyricsPool.length > 0) pool = absoluteLyricsPool;
+    // Hard fallback for lyrics: if the pool is 0 we strictly have to fall back to the base pool (ignored difficulty/QR)
+    const absoluteLyricsPool = basePool.filter((s) => s.lyrics !== null);
+    if (absoluteLyricsPool.length > 0) pool = absoluteLyricsPool;
   }
 
-  // 3. Noch nicht gespielte Songs bevorzugen
+  return pool;
+}
+
+/**
+ * Returns a random song that matches the criteria.
+ */
+export function pickRandomSong({
+  playedIds,
+  selectedPacks,
+  difficulty = 'all',
+  onlyQRCompatible = false,
+  currentMode,
+}: PickerOptions): PhomuSong | null {
+  const pool = filterSongs(ALL_SONGS, {
+    selectedPacks,
+    difficulty,
+    onlyQRCompatible,
+    currentMode,
+  });
+
+  // Prefer songs that have not been played yet
   const available = pool.filter((s) => !playedIds.includes(s.id));
 
-  // Wenn alles gespielt wurde, ignorieren wir playedIds für ältere Songs
+  // If everything has been played we ignore playedIds for older songs
   if (available.length === 0) {
     const recentlyPlayed = playedIds.slice(-5);
     const fallback = pool.filter((s) => !recentlyPlayed.includes(s.id));
     const finalPool = fallback.length > 0 ? fallback : pool;
-    if (finalPool.length === 0) return null; // Extrem unwahrscheinlich
+    if (finalPool.length === 0) return null; // Extremely unlikely
     return finalPool[Math.floor(Math.random() * finalPool.length)] ?? null;
   }
 
   return available[Math.floor(Math.random() * available.length)] ?? null;
 }
 
-/** Alle verfügbaren Songs (für Tests/Debugging) */
+/** All available songs (for tests/debugging) */
 export function getAllSongs(): PhomuSong[] {
   return ALL_SONGS;
 }

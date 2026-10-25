@@ -59,7 +59,7 @@ treats this correctly.
 
 ## 1. The problem in two sentences
 
-Phomu is licensed GPL-3.0-or-later [R1], and the Apple App Store imposes usage
+Phomu is licensed AGPL-3.0-or-later [R1], and the Apple App Store imposes usage
 rules and DRM on every app delivered through it — the combination the Free
 Software Foundation identified as incompatible with the GPL in 2010 and that the
 VLC project had to resolve by relicensing in order to return to the store
@@ -73,26 +73,26 @@ acquires an Apple Developer account.
 
 ## 2. Legal framework
 
-### 2.1 What GPL-3.0 permits
+### 2.1 What AGPL-3.0-or-later permits
 
-**Terminology.** The heading of GPL-3.0 §7 is *"Additional Terms"* [S9]; the FSF
+**Terminology.** The heading of AGPL-3.0 §7 is *"Additional Terms"* [S9]; the FSF
 and the GPL FAQ refer to the same mechanism as an *"additional permission under
 section 7"* [S10]. Both names are used below; they mean the same thing.
 
-**Fact.** GPL-3.0 §7 ("Additional Terms") permits the copyright holders to
+**Fact.** AGPL-3.0 §7 ("Additional Terms") permits the copyright holders to
 supplement the licence: *"Additional permissions" are terms that supplement the
 terms of this License by making exceptions from one or more of its
 conditions*; they may be stated *"in the form of a separately written license,
 or stated as exceptions"* [S9].
 
-**Fact.** GPL-3.0 §7 also states that *"All other non-permissive additional
+**Fact.** AGPL-3.0 §7 also states that *"All other non-permissive additional
 terms are considered 'further restrictions' within the meaning of section 10"*
 and that *"If the Program as you received it, or any part of it, contains a
 notice stating that it is governed by this License along with a term that is a
 further restriction, you may remove that term"* [S9]. The copyright holder can
 therefore waive a restriction imposed by a third party's terms.
 
-**Fact.** GPL-3.0 §10 forbids imposing further restrictions on the exercise of
+**Fact.** AGPL-3.0-or-later §10 forbids imposing further restrictions on the exercise of
 the rights granted; the FSF's analysis of the App Store conflict rests on that
 clause and states that it *"prevents distributors from using separate legal
 agreements, like Terms of Service or NDAs, to take away the freedoms that the
@@ -178,7 +178,7 @@ re-verifying it independently.*
 2. The App Store's Terms of Service, Usage Rules and FairPlay DRM impose legal
    and technical restrictions on the recipient that go beyond the GPL's
    permissions [S1][S2][S4][S17].
-3. GPL-3.0 §10 forbids a distributor from imposing such further restrictions
+3. AGPL-3.0-or-later §10 forbids a distributor from imposing such further restrictions
    [S2]; §7 lets the copyright holder waive them [S9][S10].
 
 **Interpretation.** The decisive legal question is therefore **who holds the
@@ -213,9 +213,9 @@ that review and does not claim to.
 Reach figures are Apple's own published limits. "Account" means an Apple
 membership, not an Apple Account.
 
-| Channel | Compliant with GPL-3.0? | Reach | Account needed? | Effort | Risk |
+| Channel | Compliant with AGPL-3.0-or-later? | Reach | Account needed? | Effort | Risk |
 |---|---|---|---|---|---|
-| **Apple App Store** (public) | **Only with** a GPL-3.0 §7 additional permission from every copyright holder. Without it: not compliant [S1][S2][S4][S9] | Global; the only channel with worldwide iOS/iPadOS reach | Apple Developer Program — **99 USD/yr** [S19][S20] | **High** — native app + Rust core + review + annual maintenance | **Medium** — copyright/consent position, App Review 4.2 [S32], possible takedown if a rights holder objects [S3][S7] |
+| **Apple App Store** (public) | **Only with** a AGPL-3.0 §7 additional permission from every copyright holder. Without it: not compliant [S1][S2][S4][S9] | Global; the only channel with worldwide iOS/iPadOS reach | Apple Developer Program — **99 USD/yr** [S19][S20] | **High** — native app + Rust core + review + annual maintenance | **Medium** — copyright/consent position, App Review 4.2 [S32], possible takedown if a rights holder objects [S3][S7] |
 | **TestFlight** (beta, Apple-distributed) | Same legal situation as the App Store: Apple is the distributor and the Usage Rules apply. The exception is required **before upload**, not before submission | Up to **100 internal** testers; up to **10,000 external** testers per app; **100** builds shareable; **30** devices per tester; builds expire after **90 days**; up to **6** builds into Beta App Review per 24 h [S25][S26][S27] | Same 99 USD/yr [S19] | **Medium** — same build pipeline, plus Beta App Review | **Medium** — same as App Store; first build of each version is reviewed [S25] |
 | **EU alternative app marketplace** (AltStore PAL, Epic Games Store, Aptoide) | *Interpretation:* the App Store Usage Rules do not bind apps distributed here, and notarization is a signing/scan step rather than DRM [S29] — so GPL delivery is plausible **without** an exception. **Not settled in public sources.** | **EU only**; requires an EU Apple Account and EU residency [S28] | 99 USD/yr + Apple's authorisation criteria [S19][S28] | **Medium–High** — notarisation, entitlement, marketplace onboarding | **High** — Apple's authorisation criteria are hard to meet for an individual (see below) |
 | **EU Web Distribution** (direct from the project's own website) | *Interpretation:* the developer distributes to the user directly under the GPL, so no third-party further restriction is imposed. **Not settled in public sources.** | **EU only**; minimum **iOS 17.5 / iPadOS 18** [S29] | 99 USD/yr + Apple's authorisation criteria [S19][S28] | **High** — notarisation, web distribution entitlement, own hosting | **High** — eligibility criteria (below) |
@@ -267,8 +267,8 @@ licensing decision, and it is listed as an open decision in [§9](#9-open-decisi
 
 ### 4.1 The recommendation
 
-> **Recommendation.** Keep the entire Phomu codebase under **GPL-3.0-or-later**
-> and add exactly one narrowly-scoped **GPL-3.0 §7 additional permission** —
+> **Recommendation.** Keep the entire Phomu codebase under **AGPL-3.0-or-later**
+> and add exactly one narrowly-scoped **AGPL-3.0 §7 additional permission** —
 > the *Phomu App Store Exception* — that permits conveying the covered work
 > through app-store channels (Apple App Store, Google Play, and alternative
 > app marketplaces) notwithstanding those channels' DRM and usage rules, while
@@ -294,9 +294,9 @@ licensing decision, and it is listed as an open decision in [§9](#9-open-decisi
   by making exceptions from one or more of its conditions" [S9][S10].
 - *Fact.* It is in active use for precisely this purpose by other free-software
   projects: Haven ships an "App store distribution exception" as an AGPL-3.0
-  §7 additional permission [S13]; Litter ships an equivalent GPL-3.0 §7
+  §7 additional permission [S13]; Litter ships an equivalent AGPL-3.0 §7
   permission for Apple App Store and Google Play [S14].
-- *Fact.* It preserves the project's identity. The work stays GPL-3.0-or-later;
+- *Fact.* It preserves the project's identity. The work stays AGPL-3.0-or-later;
   only the conflict with one distribution channel's terms is removed.
 - *Interpretation.* It is revocable per copy and per contributor: §7 states that
   when conveying a copy, *"you may at your option remove any additional
@@ -323,7 +323,7 @@ licensing decision, and it is listed as an open decision in [§9](#9-open-decisi
 - The problem being solved is a *distribution-channel* problem, and a
   distribution-channel problem deserves a distribution-channel exception.
 
-**Why not dual-license (GPL-3.0-or-later OR a proprietary/App-Store licence).**
+**Why not dual-license (AGPL-3.0-or-later OR a proprietary/App-Store licence).**
 
 - It achieves the same legal outcome with strictly more paperwork, and it
   introduces the possibility of a proprietary downstream fork that the §7
@@ -357,7 +357,7 @@ licensing decision, and it is listed as an open decision in [§9](#9-open-decisi
 | **B. No App Store: ad-hoc + sideloading only** | Compliant without any exception | 100 devices/product family/yr [S23]; 3 devices with 7-day expiry via free account [S22] | Low cash cost, high manual effort | No visibility; contradicts the goal of the track |
 | **C. App Store without an exception** | **Not compliant** [S1][S2][S4] | Global | — | Relies on nobody enforcing the GPL; the VLC precedent shows enforcement is real [S3][S7] |
 | **D. Relicense the core permissively** (`MIT/Apache-2.0`) | Compliant | Global | Contributor consent required | Abandons the project's licence identity |
-| **E. Dual licence (GPL-3.0-or-later OR commercial)** | Compliant | Global | Contributor consent + a second licence to maintain | Same outcome as A with more machinery |
+| **E. Dual licence (AGPL-3.0-or-later OR commercial)** | Compliant | Global | Contributor consent + a second licence to maintain | Same outcome as A with more machinery |
 | **F. Apple channel under a commercial licence, other channels GPL** | Compliant | Global | Full contributor consent | Same as D/E, with the added asymmetry of two licence regimes |
 | **G. LGPL core + GPL app** | Contested; LGPL's linking exception does not survive a locked-down platform [S16] | Global | Contributor consent | Does not actually solve the problem |
 | **H. Enterprise program** | Program terms prohibit the use case [S24] | n/a | 299 USD/yr + ineligible | Ineligible |
@@ -379,7 +379,7 @@ if a stage cannot start.
 | A3 | Choose a contributor agreement and add it to `CONTRIBUTING.md` — **CLA recommended**, DCO acceptable | Owner | `CONTRIBUTING.md` states the inbound licence *and* §7 consent |
 | A4 | Obtain retroactive §7 consent (or copyright assignment) from existing contributors | Owner | Signed consent from the contributors measured in [R5] |
 | A5 | Define the Rust core crate boundary and its dependency rules (see [§6](#6-the-rust-specific-part)) | Chief Architect | The boundary is written into `ARCHITECTURE.md` — **note: `ARCHITECTURE.md` is owned by another worker; see [§13](#13-items-outside-this-workers-scope)** |
-| A6 | Decide the Rust crate's licence metadata (`license = "GPL-3.0-or-later"` plus a pointer to the exception) | Chief Architect | `Cargo.toml` and the crate README agree |
+| A6 | Decide the Rust crate's licence metadata (`license = "AGPL-3.0-or-later"` plus a pointer to the exception) | Chief Architect | `Cargo.toml` and the crate README agree |
 
 **Entry condition for Stage B:** A1 accepted **and** A4 at least started.
 The §7 exception must exist in writing **before** anything is uploaded to
@@ -561,24 +561,54 @@ compile probe, and is not relied upon in this document.
 
 ## 7. Licence structure in the repository
 
-**Recommendation.** Phomu stays **GPL-3.0-or-later** for the whole work. The
+**Recommendation.** Phomu stays **AGPL-3.0-or-later** for the whole work. The
 only licence change is one **additional permission** granted under §7,
 published as a separate file, plus a `NOTICE`.
 
 Proposed layout:
 
 ```text
-LICENSE                              # unchanged: GPL-3.0-or-later (full text)
+LICENSE                              # the AGPL-3.0 full text (changed on 2026-10-25
+                                     # from GPL-3.0 to AGPL-3.0-or-later)
 NOTICE                               # new: copyright holders, third-party components,
                                      #       pointer to the App Store Exception
 LICENSES/
-  APP-STORE-EXCEPTION.md             # new: the GPL-3.0 §7 additional permission
-  GPL-3.0-or-later.txt               # optional: verbatim licence text as shipped
+  APP-STORE-EXCEPTION.md             # new: the AGPL-3.0 §7 additional permission
+  AGPL-3.0-or-later.txt               # optional: verbatim licence text as shipped
 ```
+
+### 7.0 What the AGPL adds over the GPL: §13 Remote Network Interaction
+
+**Fact.** AGPL-3.0 §13 requires that, if the program is used over a network,
+the users interacting with it are offered the **complete corresponding source**
+of the running version [S9][S45]. The GPL has no equivalent rule.
+
+**Why this matters for Phomu.** The licence change from GPL-3.0-or-later to
+AGPL-3.0-or-later was decided by the owner on 2026-10-25. It does not change
+the App Store analysis — §7 exists in the AGPL exactly as in the GPL, and the
+Haven precedent is an AGPL §7 grant as well [S13]. What it changes is the
+**network** obligation.
+
+**Interpretation.** Phomu's web application is a **static client**: the
+repository at `https://github.com/mazer666/Phomu` holds the whole application,
+there is no server-side component that runs a modified version of the program,
+and the deployed artefact is a static export. §13 is therefore satisfied in the
+simplest possible way — the source of the deployed version is the source in the
+repository, and the application links to it.
+
+**What still has to be true.** If a future version introduces a server that
+runs Phomu code — a session service, a synchronisation endpoint, a hosted
+catalogue — that server becomes the "modified version" of the program and §13
+applies to it in full: the source of the running server must be offered to
+every user who interacts with it.
+
+**Recommendation.** The web shell keeps a **visible source link** (in the
+legal pages and in the navigation). The native shells are unaffected: they
+distribute the source with the binary, which is what §13 also asks for.
 
 ### 7.1 What `LICENSES/APP-STORE-EXCEPTION.md` must contain
 
-GPL-3.0 §7 requires that the additional terms be either stated *"in the form of
+AGPL-3.0 §7 requires that the additional terms be either stated *"in the form of
 a separately written license, or stated as exceptions"* and that *"you must
 place, in the relevant source files, a statement of the additional terms that
 apply to those files, or a notice indicating where to find the applicable
@@ -586,7 +616,8 @@ terms"* [S9].
 
 Minimum content:
 
-1. **The grant.** *"Additional permission under GNU GPL version 3 section 7: The
+1. **The grant.** *"Additional permission under GNU Affero General Public License
+   version 3 section 7: The
    copyright holders grant permission to convey the covered work through
    application distribution services operated by third parties — including but
    not limited to the Apple App Store, Google Play and alternative app
@@ -612,7 +643,7 @@ Minimum content:
 ### 7.2 What `NOTICE` must contain
 
 - The copyright line(s) and the years.
-- A statement that the work is licensed GPL-3.0-or-later and that the App
+- A statement that the work is licensed AGPL-3.0-or-later and that the App
   Store Exception is an additional permission, not a change of licence.
 - A pointer to the complete corresponding source (the Git repository is the
   canonical source, with a release tag per shipped version).
@@ -633,7 +664,7 @@ revocable without litigation.
 **Recommendation — the contributor agreement.** Add a CLA (recommended) or a
 DCO (acceptable) to `CONTRIBUTING.md` that does two things:
 
-1. Licences the contribution under GPL-3.0-or-later.
+1. Licences the contribution under AGPL-3.0-or-later.
 2. **Expressly consents to the §7 additional permission** (or assigns the
    copyright to the project, which lets the project grant it).
 
@@ -681,7 +712,7 @@ consent problem harder to solve with every new contributor.
 
 | # | Decision | Recommendation | Why |
 |---|---|---|---|
-| **D1** | Adopt the GPL-3.0 §7 App Store Exception as Phomu's Apple-channel instrument? | **Yes** | Keeps GPL-3.0; removes exactly one conflict; matches an established pattern [S13][S14]. Alternative: never ship on the App Store, which forfeits the track's entire purpose |
+| **D1** | Adopt the AGPL-3.0 §7 App Store Exception as Phomu's Apple-channel instrument? | **Yes** | Keeps AGPL-3.0-or-later; removes exactly one conflict; matches an established pattern [S13][S14]. Alternative: never ship on the App Store, which forfeits the track's entire purpose |
 | **D2** | CLA or DCO for contributions? | **CLA** (Apache-2.0-style, individual) | Only a CLA (or assignment) gives the project standing to grant §7 permissions and to relicence later. A DCO records intent but leaves copyright with each contributor |
 | **D3** | Individual or organisation enrolment? | **Individual now** | Fastest path, no D-U-N-S number, legal name as the seller [S20]. Convert to an organisation later if a legal entity is formed. Organisation enrolment requires a D-U-N-S number and Apple verification [S20] |
 | **D4** | Should a non-profit / educational entity be formed? | **Evaluate later; not a blocker** | It is the one realistic route to Apple's fee waiver [S19] and to the "government entity, educational institution, or non-profit" authorisation criterion for EU Web Distribution [S28]. It is a registry decision with real obligations — not a licensing question |
@@ -748,12 +779,12 @@ All external sources retrieved **2026-10-25** unless otherwise stated.
 | S6 | Wikipedia, *GPL compatibility* — <https://en.wikipedia.org/wiki/GPL_compatibility> | The "legal barrier to application stores" framing; Apple's DRM requirement as the specific cause |
 | S7 | Wikipedia, *Software relicensing* (VLC) — <https://en.wikipedia.org/wiki/Software_relicensing> | VLC: GPLv2 → LGPLv2 (Oct 2011) → MPL app (Jul 2013) |
 | S8 | Wikipedia, *App Store (Apple)* — <https://en.wikipedia.org/wiki/App_Store_(Apple)> | Mac App Store regulations; Apple's removal of GPL-only software |
-| S9 | GNU, *GNU General Public License v3* — <https://www.gnu.org/licenses/gpl-3.0.en.html> | §7 Additional Terms (verbatim); the "further restrictions" definition; the §7 revocation right; the notice requirement |
+| S9 | GNU, *GNU Affero General Public License v3* — <https://www.gnu.org/licenses/gpl-3.0.en.html> | §7 Additional Terms (verbatim); the "further restrictions" definition; the §7 revocation right; the notice requirement |
 | S10 | GNU, *Frequently Asked Questions about the GNU Licenses* — <https://www.gnu.org/licenses/gpl-faq.en.html> | The §7 additional-permission mechanism; "notwithstanding any other provision" |
 | S11 | Apple, *Apple Media Services Terms and Conditions* (Standard EULA) — <https://www.apple.com/legal/internet-services/itunes/us/terms.html> | The EULA's no-modification clause **and its open-source carve-out** |
 | S12 | Apple, *Schedule 2 and 3* (Developer agreement schedules), §4.2 — <https://developer.apple.com/support/downloads/terms/schedules/Schedule-2-and-3-English-UK.pdf> | The right to deliver a Custom EULA |
 | S13 | Haven, `LICENSE-EXCEPTIONS.md` — <https://github.com/blaineam/Haven/blob/main/LICENSE-EXCEPTIONS.md> | The working §7 "App store distribution exception" pattern |
-| S14 | Litter, `LICENSE` — <https://github.com/0xSero/litter/blob/main/LICENSE> | A second working GPL-3.0 §7 app-store permission |
+| S14 | Litter, `LICENSE` — <https://github.com/0xSero/litter/blob/main/LICENSE> | A second working AGPL-3.0 §7 app-store permission |
 | S15 | E. Lazer-Walker, *Picking an OSS license for your iOS app*, 2015 — <https://blog.lazerwalker.com/cortado/2015/07/05/open-source-licenses.html> | Dual licensing requires holding the rights; the contributor problem |
 | S16 | LWN, *LGPL and app store*, 2012 — <https://lwn.net/Articles/526355/> | Why LGPL's linking exception does not survive a locked-down platform |
 | S17 | Corellium, *How To Install Apps* — <https://support.corellium.com/features/apps/testing-ios-apps> | App Store binaries are FairPlay-encrypted and bound to the device/Apple Account |
@@ -806,8 +837,8 @@ All external sources retrieved **2026-10-25** unless otherwise stated.
 
 | ID | Artefact | What it shows |
 |---|---|---|
-| R1 | [`LICENSE`](../../LICENSE) | "This project (Phomu) is licensed under GPL-3.0." The file points to the full GPL-3.0 text rather than embedding it |
-| R2 | [`CONTRIBUTING.md`](../../CONTRIBUTING.md) | Line 5: *"Phomu is an open-source party game under **GPL-3.0-or-later**."* — verified by `grep -c -i "gpl" CONTRIBUTING.md` → **1**. There is **no** CLA, DCO, sign-off or copyright-assignment clause in the file |
+| R1 | [`LICENSE`](../../LICENSE) | "This project (Phomu) is licensed under AGPL-3.0-or-later." The file points to the full AGPL-3.0-or-later text rather than embedding it |
+| R2 | [`CONTRIBUTING.md`](../../CONTRIBUTING.md) | Line 5: *"Phomu is an open-source party game under **AGPL-3.0-or-later**."* — verified by `grep -c -i "gpl" CONTRIBUTING.md` → **1**. There is **no** CLA, DCO, sign-off or copyright-assignment clause in the file |
 | R3 | [`docs/BEST_IN_CLASS.md`](../BEST_IN_CLASS.md) §3 | Static export **147 MB**, of which **142 MB** are cover images (1,649 files) |
 | R4 | [`PRIVACY.md`](../../PRIVACY.md), [`SECURITY.md`](../../SECURITY.md) | No accounts, no analytics, no tracking, no telemetry; game state in `localStorage`; all network requests go to third-party music providers, not to a Phomu server |
 | R5 | `git shortlog -sne --all` (run 2026-10-25) | Two contributors in the repository history: `mazer666` (2 commits), `Mavis` (1 commit) |

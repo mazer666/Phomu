@@ -2,7 +2,7 @@
   "name": "phomu",
   "version": "0.1.0",
   "private": true,
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,7 +24,20 @@
     "security:rotate-admin-token": "node scripts/generate-admin-token.js",
     "phase1:acceptance": "npm run typecheck && npm run validate-catalog:report && npm run test:e2e:smoke && node scripts/check-phase1-acceptance.js",
     "local-ci": "bash scripts/local-ci.sh",
-    "postinstall": "node scripts/setup-git-hooks.js"
+    "check:i18n": "node scripts/check-i18n-completeness.mjs",
+    "check:doc-links": "node scripts/check-doc-links.mjs",
+    "check:file-size": "node scripts/check-file-size.mjs",
+    "check:doc-language": "node scripts/check-doc-language.mjs",
+    "check:license": "node scripts/check-license.mjs",
+    "check:crate-boundaries": "node scripts/check-crate-boundaries.mjs",
+    "check:crate-boundaries:test": "node scripts/check-crate-boundaries.test.mjs",
+    "check:conformance": "node scripts/verify-conformance.mjs",
+    "check:all": "node scripts/check-all.mjs",
+    "postinstall": "node scripts/setup-git-hooks.js",
+    "generate:variant-keys": "node scripts/generate-variant-keys.mjs",
+    "seed:shared-keys": "node scripts/seed-shared-keys.mjs",
+    "verify:i18n-keys": "node scripts/verify-used-i18n-keys.mjs",
+    "merge:i18n-parts": "node scripts/merge-i18n-parts.mjs"
   },
   "dependencies": {
     "@emnapi/core": "^1.9.1",
@@ -51,13 +64,12 @@
     "@vitest/coverage-v8": "^4.1.2",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.1",
-    "postcss": "^8.5.10",
     "playwright": "^1.59.1",
+    "postcss": "^8.5.10",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "vitest": "^4.1.2",
-    "youtube-search-without-api-key": "^2.0.7",
     "ytsr": "^3.8.4"
   },
   "overrides": {

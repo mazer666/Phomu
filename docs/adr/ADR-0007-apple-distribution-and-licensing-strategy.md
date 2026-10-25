@@ -14,9 +14,16 @@
 
 ## Context
 
-Phomu is licensed GPL-3.0-or-later. `LICENSE` states "This project (Phomu) is
-licensed under GPL-3.0", `README.md` says "GPL-3.0-or-later", and
-`package.json` carries `"license": "GPL-3.0"` — the version statement is
+> **Licence change, 2026-10-25.** The owner moved the project from
+> GPL-3.0-or-later to **AGPL-3.0-or-later**. The analysis below was redone for
+> the AGPL: §7 (additional permissions) exists there unchanged, the Haven
+> precedent is an AGPL grant as well, and the **App Store conflict is
+> identical** — what the AGPL adds is §13 (Remote Network Interaction), which
+> the web shell satisfies by publishing the source of the deployed version.
+
+Phomu is licensed AGPL-3.0-or-later. `LICENSE` states "This project (Phomu) is
+licensed under AGPL-3.0-or-later", `README.md` says "AGPL-3.0-or-later", and
+`package.json` carries `"license": "AGPL-3.0-or-later"` — the version statement is
 already inconsistent across the repository.
 
 The planned iOS/iPadOS track is the **fourth of five** platform tracks
@@ -27,7 +34,7 @@ web app exists, works, and is a static export on GitHub Pages
 is `false` today. The project owner **does not hold an Apple Developer
 account** and intends to acquire one.
 
-The tension is specific and well documented. GPL-3.0 §10 forbids imposing
+The tension is specific and well documented. AGPL-3.0-or-later §10 forbids imposing
 further restrictions on the exercise of the granted rights; the Free Software
 Foundation identified the App Store's Usage Rules and FairPlay DRM as exactly
 such restrictions in the 2010 GNU Go case, and VLC was removed from the App
@@ -36,12 +43,12 @@ conflict by relicensing its library from GPLv2 to LGPLv2 (October 2011) and
 its application to the MPL (July 2013) — i.e. by abandoning copyleft, not by
 obtaining an exception.
 
-A narrow instrument exists for the alternative: GPL-3.0 §7 lets the copyright
+A narrow instrument exists for the alternative: AGPL-3.0 §7 lets the copyright
 holders grant additional permissions that "supplement the terms of this License
 by making exceptions from one or more of its conditions", and §7 itself defines
 non-permissive additional terms as "further restrictions". Working examples of
 a §7 app-store exception exist in the wild (Haven's "App store distribution
-exception" under AGPL-3.0 §7; Litter's app-store permission under GPL-3.0 §7).
+exception" under AGPL-3.0 §7; Litter's app-store permission under AGPL-3.0 §7).
 
 The decisive practical constraint is that **Apple's App Store is the only
 distribution channel for iOS/iPadOS with global reach**. The DMA alternatives
@@ -62,12 +69,12 @@ fact/interpretation/recommendation separation — is in
 
 ## Decision
 
-**Phomu stays licensed GPL-3.0-or-later in its entirety; the Apple track is
+**Phomu stays licensed AGPL-3.0-or-later in its entirety; the Apple track is
 built as a native iOS/iPadOS application on a shared Rust core and is
 distributed through the Apple App Store, with TestFlight as the first
 distribution step and the existing web app remaining the primary and
 fallback channel.** To make App Store distribution lawful, the project grants
-exactly one additional permission under GPL-3.0 §7 — the *Phomu App Store
+exactly one additional permission under AGPL-3.0 §7 — the *Phomu App Store
 Exception*, published in `LICENSES/APP-STORE-EXCEPTION.md` — which permits
 conveying the covered work through app-store distribution services
 notwithstanding their DRM and usage rules, while leaving every copyleft
@@ -88,7 +95,7 @@ other tracks, and the Apple app stays "designed, not shipped".
 
 ### Positive
 
-- **The licence model survives intact.** The work remains GPL-3.0-or-later; only
+- **The licence model survives intact.** The work remains AGPL-3.0-or-later; only
   one distribution channel's conflicting terms are neutralised, through the
   mechanism the licence itself provides.
 - **Visibility is preserved.** The App Store is the only channel with global
@@ -103,7 +110,7 @@ other tracks, and the Apple app stays "designed, not shipped".
 - **The web app remains the fallback.** With no Apple account the web app and
   the other three tracks are unaffected; the plan degrades safely instead of
   blocking.
-- **The exception is revocable.** GPL-3.0 §7 lets a recipient remove an
+- **The exception is revocable.** AGPL-3.0 §7 lets a recipient remove an
   additional permission from a copy, so a dissenting contributor can withdraw
   consent for their own contribution without a licence change for the project.
 - **The decision is documented before it is needed.** The legal analysis, the
@@ -150,13 +157,13 @@ other tracks, and the Apple app stays "designed, not shipped".
 
 ### What the decision makes impossible
 
-- **Shipping a GPL-3.0 build through the App Store without the §7 exception**
+- **Shipping a AGPL-3.0-or-later build through the App Store without the §7 exception**
   is no longer an option this project may choose. If consent is refused, the
   App Store channel is closed and the Apple track must fall back to
   ad-hoc/sideloading or be dropped.
 - **Relicensing the core permissively** (MIT, Apache-2.0, BSD) is off the
   table for this project.
-- **Dual licensing** (GPL-3.0-or-later *or* a proprietary/App-Store
+- **Dual licensing** (AGPL-3.0-or-later *or* a proprietary/App-Store
   licence) is off the table; the §7 exception is the only additional
   permission Phomu will grant.
 - **Using LGPL for the core** is off the table: the LGPL's linking exception
@@ -190,9 +197,9 @@ audience, which contradicts the purpose of a platform track.
 **What it costs to keep as a fallback.** Nothing — it remains the documented
 fallback if the account never materialises.
 
-### 2. Ship through the App Store under plain GPL-3.0, without an exception — *rejected*
+### 2. Ship through the App Store under plain AGPL-3.0-or-later, without an exception — *rejected*
 
-**What it is.** Submit the GPL-3.0 app and rely on the fact that Apple accepts
+**What it is.** Submit the AGPL-3.0-or-later app and rely on the fact that Apple accepts
 GPL apps in practice.
 
 **Why rejected.** This is the option the FSF identified as non-compliant in
@@ -240,7 +247,7 @@ distribute a public open-source app to the public would breach the
 programme's terms, and Apple does verify and continuously evaluate enterprise
 enrolments.
 
-### 6. Dual licensing (GPL-3.0-or-later **or** a proprietary/App-Store licence) — *rejected*
+### 6. Dual licensing (AGPL-3.0-or-later **or** a proprietary/App-Store licence) — *rejected*
 
 **What it is.** The copyright holder sells a proprietary licence for the
 App-Store build; everyone else gets the GPL.
@@ -274,9 +281,9 @@ checkable once the corresponding work has happened.
 
 | Check | Command / location | Expected result |
 |---|---|---|
-| The project licence is unchanged by this ADR | `grep -n "GPL" LICENSE` | Still GPL-3.0; the exception lives in `LICENSES/APP-STORE-EXCEPTION.md`, not in `LICENSE` |
+| The project licence is unchanged by this ADR | `grep -n "GPL" LICENSE` | Still AGPL-3.0-or-later; the exception lives in `LICENSES/APP-STORE-EXCEPTION.md`, not in `LICENSE` |
 | The exception is a §7 additional permission, not a licence change | `grep -n "section 7" LICENSES/APP-STORE-EXCEPTION.md` | One §7 permission, scoped to app-store channels only |
-| The licence version statement is consistent | `grep -rn "GPL-3.0" LICENSE README.md package.json CONTRIBUTING.md` | One version statement everywhere (currently inconsistent — see [§7](#7-deviations-from-the-template-and-from-existing-requirements)) |
+| The licence version statement is consistent | `grep -rn "AGPL-3.0-or-later" LICENSE README.md package.json CONTRIBUTING.md` | One version statement everywhere (currently inconsistent — see [§7](#7-deviations-from-the-template-and-from-existing-requirements)) |
 | The contributor agreement grants §7 consent | `grep -n "section 7\|Additional permission" CONTRIBUTING.md` | Inbound licence **and** §7 consent are both stated |
 | The core builds for the Apple target | `cargo build --target aarch64-apple-ios` in the Rust core crate | Succeeds with the full standard library available |
 | The core spawns no processes and loads no code at runtime | `cargo tree` of the core crate | No `std::process`, no `tokio::process`, no process-spawning dependency |
@@ -295,5 +302,5 @@ checkable once the corresponding work has happened.
 | **Language** | `docs/DOCUMENTATION_POLICY.md` §3 and **CORE-012** require German for `docs/`. This ADR and `docs/licensing/APPLE-LICENSING.md` are in English because the assignment required English. | Owner: either translate both documents, or amend CORE-012 / the policy to permit English for licensing documents (which quote English-language legal sources verbatim and are harder to keep authoritative in translation). **CORE-012 must not be silently violated.** |
 | **ADR role list** | `docs/adr/ADR_TEMPLATE.md` lists eight roles; none is a licensing/legal role. This ADR is owned by the project owner with the Chief Architect. | Owner / Docs Lead: extend the template's role list. |
 | **Requirement IDs** | No existing requirement covers platform distribution or licensing; the domains are CAT, CORE, GAME, LOBBY, MEDIA, NFR, SEC, UI. | Product Manager: create distribution/licensing requirement IDs and link them here. This ADR deliberately references only IDs that exist today (CORE-002, CORE-003, CORE-011, CORE-012). |
-| **Licence version statement** | `LICENSE` and `package.json` say "GPL-3.0"; `README.md` (licence section) and `CONTRIBUTING.md` say "GPL-3.0-or-later". | Owner / Docs: settle on "GPL-3.0-or-later" before the exception is published, so that the §7 permission applies to a defined licence range. |
+| **Licence version statement** | `LICENSE` and `package.json` say "AGPL-3.0-or-later"; `README.md` (licence section) and `CONTRIBUTING.md` say "AGPL-3.0-or-later". | Owner / Docs: settle on "AGPL-3.0-or-later" before the exception is published, so that the §7 permission applies to a defined licence range. |
 | **Outside this worker's scope** | `LICENSE`, `CONTRIBUTING.md`, `README.md`, `docs/README.md`, `ARCHITECTURE.md`, `project/project.yaml`, `REQUIREMENTS.md`, `ROADMAP.md`, `docs/design/**`, `SECURITY.md`, `PRIVACY.md` were **not** modified. The required follow-ups are listed in `docs/licensing/APPLE-LICENSING.md` §13. | Respective owners. |

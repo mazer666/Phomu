@@ -1,76 +1,67 @@
 /**
  * DrawingPhase
  *
- * Die "Karte-Ziehen"-Phase am Beginn jeder Runde.
- * Zeigt den aktiven Spielmodus und einen großen Button,
- * der eine zufällige Spielkarte (Song) zieht und die Runde startet.
+ * The "card drawing" phase at the beginning of every round.
+ * Shows the active game mode and a large button
+ * that draws a random game card (song) and starts the round.
  */
 'use client';
 
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import type { GameMode } from '@/config/game-config';
 import type { PhomuSong } from '@/types/song';
 import { pickRandomSong } from '@/utils/song-picker';
+import {
+  DRAW_LABEL_KEYS,
+  PILOT_LABEL_KEYS,
+  type TranslationKey,
+} from '@/i18n/variant-keys';
 
-// ─── Juicy Text-Varianten ─────────────────────────────────────────
+// ─── Juicy text variants ─────────────────────────────────────────
+// The variants are typed key lists (see `src/i18n/variant-keys.ts`).
+// The number of variants is therefore contained in the list and is not maintained
+// in two places.
 
-const DRAW_BUTTON_LABELS = [
-  '🃏 Karte ziehen',
-  '🎴 Karte auf den Tisch!',
-  '🎲 Schicksal herausfordern',
-  '🎵 Song aufdecken',
-  '🔮 Was kommt als nächstes?',
-  '💥 Los geht\'s!',
-  '🎯 Ran an die Karte',
-  '🤞 Drück das Glück',
-];
+// ─── Mode metadata ──────────────────────────────────────────────
 
-const PILOT_LABELS = [
-  (name: string) => `🎮 ${name} ist am Zug`,
-  (name: string) => `🎯 ${name}, du bist dran!`,
-  (name: string) => `🎤 Vorhang auf für ${name}!`,
-  (name: string) => `👑 ${name} übernimmt das Steuer`,
-  (name: string) => `🚀 ${name} — jetzt oder nie`,
-  (name: string) => `🃏 ${name} zieht die Karte`,
-];
-
-// ─── Modus-Metadaten ──────────────────────────────────────────────
-
-const MODE_META: Record<GameMode, { icon: string; title: string; instruction: string }> = {
+const MODE_META: Record<
+  GameMode,
+  { icon: string; titleKey: TranslationKey; instructionKey: TranslationKey }
+> = {
   timeline: {
     icon: '📅',
-    title: 'Chronologische Timeline',
-    instruction: 'Ordne die Karte an der richtigen Stelle in deiner Zeitlinie ein!',
+    titleKey: 'game.drawing.modeTitle.timeline',
+    instructionKey: 'game.drawing.modeInstruction.timeline',
   },
   'hint-master': {
     icon: '🕵️',
-    title: 'Hint-Master',
-    instruction: 'Erkenne den Song so früh wie möglich — je früher, desto mehr Punkte!',
+    titleKey: 'game.drawing.modeTitle.hintMaster',
+    instructionKey: 'game.drawing.modeInstruction.hintMaster',
   },
   lyrics: {
     icon: '📝',
-    title: 'Lyrics Labyrinth',
-    instruction: 'Welcher Liedtext ist echt? Finde die echten Lyrics!',
+    titleKey: 'game.drawing.modeTitle.lyrics',
+    instructionKey: 'game.drawing.modeInstruction.lyrics',
   },
   'vibe-check': {
     icon: '😎',
-    title: 'Vibe-Check',
-    instruction: 'Welche Stimmung passt zu diesem Song? Einigt euch!',
+    titleKey: 'game.drawing.modeTitle.vibeCheck',
+    instructionKey: 'game.drawing.modeInstruction.vibeCheck',
   },
   survivor: {
     icon: '🏆',
-    title: 'Survivor',
-    instruction: 'One-Hit-Wonder oder Dauerstar? Was glaubst du?',
+    titleKey: 'game.drawing.modeTitle.survivor',
+    instructionKey: 'game.drawing.modeInstruction.survivor',
   },
   'cover-confusion': {
     icon: '🖼️',
-    title: 'Cover Confusion',
-    instruction: 'Welches Cover passt zu diesem Song? Finde es heraus!',
+    titleKey: 'game.drawing.modeTitle.coverConfusion',
+    instructionKey: 'game.drawing.modeInstruction.coverConfusion',
   },
 };
-
 
 function deterministicIndex(seed: string, length: number): number {
   if (length <= 1) return 0;
@@ -90,11 +81,11 @@ interface DrawingPhaseProps {
   pilotColor?: string;
   nextPilotName?: string;
   nextPilotColor?: string;
-  /** Wird aufgerufen, wenn eine Karte gezogen wurde */
+  /** Called when a card has been drawn */
   onCardDrawn: (song: PhomuSong) => void;
 }
 
-// ─── Komponente ───────────────────────────────────────────────────
+// ─── Component ───────────────────────────────────────────────────
 
 export function DrawingPhase({
   currentMode,
@@ -106,19 +97,22 @@ export function DrawingPhase({
   onCardDrawn,
 }: DrawingPhaseProps) {
   const meta = MODE_META[currentMode];
+  const { t } = useTranslation();
   const { autoDrawIntent, config } = useGameStore();
   const [isDrawing, setIsDrawing] = useState(false);
   const [error, setError] = useState('');
 
   const drawLabel = useMemo(() => {
     const seed = `${currentMode}:${playedSongIds.length}`;
-    return DRAW_BUTTON_LABELS[deterministicIndex(seed, DRAW_BUTTON_LABELS.length)]!;
-  }, [currentMode, playedSongIds.length]);
+    const index = deterministicIndex(seed, DRAW_LABEL_KEYS.length);
+    return t(DRAW_LABEL_KEYS[index]!);
+  }, [currentMode, playedSongIds.length, t]);
 
   const pilotLabel = useMemo(() => {
     const seed = `${pilotName ?? 'pilot'}:${currentMode}`;
-    return PILOT_LABELS[deterministicIndex(seed, PILOT_LABELS.length)]!;
-  }, [pilotName, currentMode]);
+    const index = deterministicIndex(seed, PILOT_LABEL_KEYS.length);
+    return t(PILOT_LABEL_KEYS[index]!, { name: pilotName ?? '' });
+  }, [pilotName, currentMode, t]);
 
   const handleDraw = useCallback(() => {
     if (isDrawing) return;
@@ -130,22 +124,22 @@ export function DrawingPhase({
       selectedPacks: config.selectedPacks,
       difficulty: config.difficulty,
       onlyQRCompatible: config.onlyQRCompatible,
-      currentMode: currentMode
+      currentMode: currentMode,
     });
     if (!song) {
-      setError('Keine Songs verfügbar. Bitte prüfe dein Song-Pack.');
+      setError(t('game.drawing.noSongsError'));
       setIsDrawing(false);
       return;
     }
 
-    // Kurze Delay für Animation, dann Song an Parent übergeben
+    // Short delay for the animation, then hand the song to the parent
     setTimeout(() => {
       onCardDrawn(song);
       setIsDrawing(false);
     }, 600);
-  }, [isDrawing, playedSongIds, onCardDrawn, config, currentMode]);
+  }, [isDrawing, playedSongIds, onCardDrawn, config, currentMode, t]);
 
-  // AUTO-DRAW: Wenn wir nach einem Skip hier ankommen, automatisch ziehen
+  // AUTO-DRAW: if we arrive here after a skip, draw automatically
   useEffect(() => {
     if (!autoDrawIntent || isDrawing) return;
 
@@ -158,8 +152,7 @@ export function DrawingPhase({
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 text-center">
-
-      {/* Modus-Icon mit Puls-Animation */}
+      {/* Mode icon with pulse animation */}
       <motion.div
         initial={{ scale: 0, rotate: -10 }}
         animate={{ scale: 1, rotate: 0 }}
@@ -170,27 +163,27 @@ export function DrawingPhase({
         {meta.icon}
       </motion.div>
 
-      {/* Modus-Name */}
+      {/* Mode name */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
         className="text-3xl font-black mb-3"
       >
-        {meta.title}
+        {t(meta.titleKey)}
       </motion.h2>
 
-      {/* Spielanweisung */}
+      {/* Game instruction */}
       <motion.p
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25 }}
         className="text-base opacity-70 max-w-sm mb-2"
       >
-        {meta.instruction}
+        {t(meta.instructionKey)}
       </motion.p>
 
-      {/* Pilot-Info */}
+      {/* Pilot info */}
       {pilotName && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -198,18 +191,24 @@ export function DrawingPhase({
           transition={{ delay: 0.35 }}
           className="flex flex-col items-center gap-1 mb-10"
         >
-          <p className="text-sm font-black" style={{ color: pilotColor ?? 'inherit' }}>
-            {pilotLabel(pilotName)}
+          <p
+            className="text-sm font-black"
+            style={{ color: pilotColor ?? 'inherit' }}
+          >
+            {pilotLabel}
           </p>
           {nextPilotName && (
             <p className="text-xs opacity-40">
-              Danach: <span style={{ color: nextPilotColor ?? 'inherit' }}>{nextPilotName}</span>
+              {t('game.drawing.nextPilotLabel')}{' '}
+              <span style={{ color: nextPilotColor ?? 'inherit' }}>
+                {nextPilotName}
+              </span>
             </p>
           )}
         </motion.div>
       )}
 
-      {/* Karte-Ziehen-Button */}
+      {/* Card drawing button */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -243,7 +242,7 @@ export function DrawingPhase({
         </AnimatePresence>
       </motion.div>
 
-      {/* Fehlermeldung */}
+      {/* Error message */}
       {error && (
         <p className="mt-4 text-sm" style={{ color: 'var(--color-error)' }}>
           {error}

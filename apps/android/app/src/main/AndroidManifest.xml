@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The manifest of the Android shell.
+
+  WHY there is no permission in the manifest: the core game needs no
+  permission at all (docs/spec/REQUIREMENTS-PLATFORM.md, PLAT-109). The
+  camera is only needed for the QR scan, and the QR scan is switched off in
+  this milestone because the bridge exports no entry point for the intent of
+  a card. A permission that nothing uses would be a permission the store
+  asks about.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- WHY the network permission exists: the preview audio of a provider
+         is fetched from the network. There is no telemetry, no analytics and
+         no account (docs/spec/REQUIREMENTS-PLATFORM.md, PLAT-118). -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".PhomuApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_launcher"
+        android:label="Phomu"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Phomu">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+            android:exported="true"
+            android:label="Phomu"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

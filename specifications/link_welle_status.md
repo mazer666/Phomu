@@ -1,86 +1,101 @@
-# Link-Welle: Spotify- und Amazon-Music-Links für den Katalog
+# Link wave: Spotify and Amazon Music links for the catalogue
 
-Stand: 25.10.2025 · Katalog: 1.615 Songs · Bezugspfad `src/data/songs/**`
+**Status:** 25 October 2026 · **Catalogue:** 1,615 songs · **Path:** `src/data/songs/**`
 
-## Ergebnis
+---
 
-| Anbieter | vorher | nachher | Abdeckung |
+## Result
+
+| Provider | Before | After | Coverage |
 |---|---|---|---|
-| Spotify (`links.spotify`) | 734 | 1.591 | 98,5 % |
-| Amazon Music (`links.amazonMusic`) | 381 | 1.575 | 97,5 % |
-| beide | — | 1.568 | 97,1 % |
+| Spotify (`links.spotify`) | 734 | 1,591 | 98.5 % |
+| Amazon Music (`links.amazonMusic`) | 381 | 1,575 | 97.5 % |
+| Both | — | 1,568 | 97.1 % |
 
-Offen bleiben 24 Spotify- und 40 Amazon-Links: bei diesen Songs ließ sich **kein
-belegbar passender Track** finden (Dienst führt den Track nicht, oder die
-Zuordnung bleibt mehrdeutig). Diese Felder bleiben bewusst leer – ein geratener
-Link wäre schlechter als keiner.
+**24 Spotify links and 40 Amazon Music links remain open**: for these songs no
+**provably matching track** could be found (the service does not carry the
+track, or the assignment stays ambiguous). These fields stay empty on
+purpose — a guessed link is worse than none.
 
-## Methodik
+---
 
-Jeder gesetzte Link ist belegt, nicht geraten:
+## Method
 
-1. **iTunes-Referenz** – `itunes.apple.com/search` liefert Titel, Artist, Album,
-   Laufzeit und Jahr des Original-Releases (je nach Katalog-Land, plus US/DE/GB).
-2. **Kandidaten** – Spotify über die Feldsyntax des Webplayers
-   (`track:"Titel" artist:"Artist"`), Amazon über die Künstlerseite
+Every link that was set is evidenced, not guessed:
+
+1. **iTunes reference** — `itunes.apple.com/search` delivers title, artist,
+   album, runtime and year of the original release (per catalogue country, plus
+   US/DE/GB).
+2. **Candidates** — Spotify through the web player's field syntax
+   (`track:"Title" artist:"Artist"`), Amazon through the artist page
    (`searchArtists` → `artist.tracks` → `artist.albums` → `album.tracks`).
-3. **Match-Gate** – Kerntitel ≥ 0,95, Artist ≥ 0,9 (≥ 0,85 bei Ensemble-Credits),
-   Laufzeit zur Referenz ≤ 3 s **oder** eindeutiger Treffer (kein Konkurrent mit
-   gleichem Titel/Artist und > 12 % abweichender Laufzeit). Live-/Remix-/Acoustic-
-   Fassungen nur, wenn der Katalogsong selbst diese Version ist.
-4. **Direkt-Lookup** – der gesetzte Link wird zurückgelesen (Titel, Artists, Album,
-   Laufzeit, Jahr) und gegen die Referenz geprüft.
-5. **Unabhängige Prüfung** – ein zweiter Agent prüft jeden gesetzten Link erneut
-   und entfernt Falschzuordnungen. Das war keine Formsache: von 339 gesetzten
-   Links wurden 6 entfernt (falsche Aufnahme, Live-Titel als Studio-Fassung,
-   Kinder-Cover statt Original, nicht-kanonische ASIN).
+3. **Match gate** — core title ≥ 0.95, artist ≥ 0.9 (≥ 0.85 for ensemble
+   credits), runtime within ≤ 3 s of the reference **or** a unique hit (no
+   competitor with the same title/artist and a runtime differing by more than
+   12 %). Live/remix/acoustic versions only when the catalogue song *is* that
+   version.
+4. **Direct lookup** — the link that was set is read back (title, artists,
+   album, runtime, year) and checked against the reference.
+5. **Independent review** — a second agent checks every link that was set again
+   and removes false assignments. This was not a formality: of 339 links that
+   were set, **6 were removed** (wrong recording, live title instead of the
+   studio version, children's cover instead of the original, non-canonical
+   ASIN).
 
-## Werkzeuge
+---
 
-Die Recherche-Werkzeuge liegen bewusst **außerhalb** des Repos, weil sie keine
-App-Code sind:
+## Tools
+
+The research tools deliberately live **outside** the repository, because they are
+not application code:
 
 ```
 /workspace/.mavis/plans/phomu-data-enrichment/links/
-  common.py          Katalog-Loader, Titel-/Artist-Matching, Cache, HTTP mit Retry
-  itunes_api.py      Referenzquelle (Laufzeit, Album, Jahr)
-  spotify_api.py     Feldsyntax-Suche + Embed-Lookup
-  amazon_api.py      GraphQL des Webplayers (Künstler → Tracks → Alben → Tracks)
-  resolve.py         Orchestrierung, Status je Song (matched/verified/uncertain/missing)
-  apply.py           schreibt Links in den Katalog (nur das Link-Feld)
-  check_links.py     Gate: Format, Link-Duplikate, unveränderter YouTube-Link
-  review_queue.py    Review-Queue für die offenen Fälle
+  common.py          catalogue loader, title/artist matching, cache, HTTP with retry
+  itunes_api.py      reference source (runtime, album, year)
+  spotify_api.py     field-syntax search + embed lookup
+  amazon_api.py      web player GraphQL (artist → tracks → albums → tracks)
+  resolve.py         orchestration, status per song (matched/verified/uncertain/missing)
+  apply.py           writes the links into the catalogue (only the link field)
+  check_links.py     gate: format, duplicate links, unchanged YouTube link
+  review_queue.py    review queue for the open cases
 ```
 
-Gate-Aufruf je Batch:
+Gate invocation per batch:
 
 ```
 python3 check_links.py --ids-from <batch>.json --baseline youtube_baseline.json
 ```
 
-## Linkformen
+---
 
-- `links.spotify` → `https://open.spotify.com/track/<22 Zeichen base62>`
+## Link forms
+
+- `links.spotify` → `https://open.spotify.com/track/<22 characters base62>`
 - `links.amazonMusic` → `https://music.amazon.com/tracks/<ASIN>`
-  (die ältere Form `albums/<ALBUM>?trackAsin=<TRACK>` wurde normalisiert)
+  (the older form `albums/<ALBUM>?trackAsin=<TRACK>` was normalised)
 
-## Abmachung zwischen parallelen Sessions
+---
 
-Beide Sessions arbeiten an diesem Repository, aber an **verschiedenen
-Pfadbereichen**:
+## The arrangement between the parallel sessions
 
-- **Diese Welle**: ausschließlich `src/data/songs/**` (Katalogdaten, Link-Felder)
-- **Plattform-/Doku-Welle**: `core/`, `platform/`, `tools/`, `docs/`, `src/app/**`,
-  `src/components/**`, `src/i18n/**`, `specifications/`
+Both sessions work on this repository, but on **different path ranges**:
 
-Damit es nicht zu stillen Verlusten kommt:
+- **This wave**: exclusively `src/data/songs/**` (catalogue data, link fields)
+- **Platform/documentation wave**: `core/`, `platform/`, `tools/`, `docs/`,
+  `src/app/**`, `src/components/**`, `src/i18n/**`, `specifications/`
 
-1. **Vor jedem Push** `git fetch origin` und prüfen, ob der Remote-Stand Dateien
-   enthält, die der eigene Stand nicht hat. Diese Dateien übernehmen, nicht
-   überschreiben.
-2. **Als Kette pushen**, nicht als Root-Commit: der neue Commit bekommt den
-   aktuellen Remote-Commit als Eltern. Dann bleibt die Historie nachvollziehbar
-   und nichts verschwindet unbemerkt.
-3. `merge_remote.sh <fremder-commit> <gemeinsamer-basis-commit>` baut genau das:
-   Basis ist der fremde Commit, übernommen wird nur, was die eine Seite seit dem
-   gemeinsamen Basis-Commit wirklich geändert hat.
+So that nothing is lost silently:
+
+1. **Before every push**, `git fetch origin` and check whether the remote state
+   contains files the local state does not have. **Take those files over, do
+   not overwrite them.**
+2. **Push as a chain, not as a root commit**: the new commit gets the current
+   remote commit as its parent. The history stays traceable and nothing
+   disappears unnoticed.
+3. `merge_remote.sh <foreign-commit> <shared-base-commit>` builds exactly that:
+   the base is the foreign commit, and only what one side actually changed
+   since the shared base is taken over.
+
+The same split is recorded for the repository as a whole in
+[`docs/COORDINATION.md`](../docs/COORDINATION.md).

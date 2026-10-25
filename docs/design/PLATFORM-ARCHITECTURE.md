@@ -1259,8 +1259,8 @@ An architecture that claims everything delivers nothing.
    signing identities, seven update channels.
 8. **No independent catalogue update on iOS.** The bundle is immutable
    without an app update, unless on-demand resources are used.
-9. **No solved GPL-3.0 store-distribution question.** The repository is
-   licensed GPL-3.0 ([`../../package.json`](../../package.json):4). The
+9. **No solved AGPL-3.0-or-later store-distribution question.** The repository is
+   licensed AGPL-3.0-or-later ([`../../package.json`](../../package.json):4). The
    compatibility of that licence with the store distribution channels is a
    legal question that this document does not answer (§15, O-3).
 10. **No solution to the cover-image problem.** 1,649 images at 142 MB are a
@@ -1281,7 +1281,7 @@ An architecture that claims everything delivers nothing.
 |---|---|---|---|---|
 | **O-1** | Move the Next.js app to `apps/web`? | A: keep it at the repository root, name it logically `apps/web`; B: move the whole application | **A now.** B buys no architectural property and costs 23 build/CI files, 29 documentation links and the deployment path, in the phase with the most churn. Trigger in §5.4. | the creation of the Cargo workspace |
 | **O-2** | Do the Rust shells go through the C-ABI? | A: a direct Cargo dependency on `core/phomu-core`; B: the C-ABI | **A.** The compiler checks the types; the C-ABI adds marshalling, duplicated DTOs and a version skew for no benefit. The C-ABI stays the external embedder surface. | `apps/linux` |
-| **O-3** | The licence strategy for the base under GPL-3.0 in the store channels | A: obtain a legal opinion and keep GPL-3.0; B: re-licence the base to a permissive licence; C: add an explicit linking exception | **B or C, decided by legal counsel.** The repository is GPL-3.0 today ([`../../package.json`](../../package.json):4). This document does not answer the legal question; it only states that it exists and that it gates a track. | the **iOS/iPadOS track** (track 4) |
+| **O-3** | The licence strategy for the base under AGPL-3.0-or-later in the store channels | A: obtain a legal opinion and keep AGPL-3.0-or-later; B: re-licence the base to a permissive licence; C: add an explicit linking exception | **B or C, decided by legal counsel.** The repository is AGPL-3.0-or-later today ([`../../package.json`](../../package.json):4). This document does not answer the legal question; it only states that it exists and that it gates a track. | the **iOS/iPadOS track** (track 4) |
 | **O-4** | Which media providers are in scope for the native shells? | A: preview-audio + deeplink only; B: additionally a WebView-hosted YouTube embed; C: additionally Spotify full playback | **B, with a spike.** A is safe but weak. C is out of scope until a written Spotify agreement exists. The TV feasibility of B is unverified and is the TV track's first spike. | the **Android track** (track 1) |
 | **O-5** | The catalogue delivery: one artefact or per pack? | A: one monolithic artefact; B: per-pack artefacts plus a manifest | **B.** Only the selected packs are transferred, and the selection is always a pack selection. | step S2 (§5.3) |
 | **O-6** | When does the web shell adopt the base? | A: the web shell first, as the first consumer of the base; B: Android first, the web shell later | **A.** The web shell is the only shell that exists today; adopting the base there proves the base before four other shells depend on it, and it removes the rule duplication earliest. | step S4 (§5.3) |

@@ -1,13 +1,14 @@
 /**
  * QuestionPhase
  *
- * Router-Komponente für die Fragerunde.
- * Leitet je nach aktivem Spielmodus an die passende Modus-Komponente weiter.
+ * Router component for the question round.
+ * Forwards to the matching mode component depending on the active game mode.
  */
 'use client';
 
 import { useCallback } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
 import type { PhomuSong } from '@/types/song';
 import { SurvivorMode } from './modes/SurvivorMode';
@@ -22,21 +23,25 @@ import { CoverConfusionMode } from './modes/CoverConfusionMode';
 interface QuestionPhaseProps {
   song: PhomuSong;
   currentMode: GameMode;
-  /** Wird aufgerufen, wenn der Spieler fertig ist: isCorrect + Punkte */
-  onAnswered: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
-  /** Wird aufgerufen, wenn alle bereit sind zum Reveal */
+  /** Called when the player is done: isCorrect + points */
+  onAnswered: (
+    isCorrect: boolean,
+    pointsAwarded: number,
+    answeredInSeconds?: number
+  ) => void;
+  /** Called when everyone is ready for the reveal */
   onReveal: () => void;
-  /** Wird aufgerufen, wenn das Video defekt ist oder neu gewürfelt werden soll */
+  /** Called when the video is broken or should be re-rolled */
   onReroll?: () => void;
 }
 
-/** Modi, bei denen der "Alle fertig → Reveal"-Button angezeigt wird */
+/** Modes in which the "everyone done → reveal" button is shown */
 const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
   'survivor',
   'vibe-check',
   'hint-master',
   'timeline',
-  // lyrics und cover-confusion haben eigene Buttons im Modus
+  // lyrics and cover-confusion have their own buttons in the mode
 ];
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -48,11 +53,13 @@ export function QuestionPhase({
   onReveal,
   onReroll,
 }: QuestionPhaseProps) {
+  const { t } = useTranslation();
+
   const handleAnswered = useCallback(
     (isCorrect: boolean, points: number, answeredInSeconds?: number) => {
       onAnswered(isCorrect, points, answeredInSeconds);
     },
-    [onAnswered],
+    [onAnswered]
   );
 
   return (
@@ -71,7 +78,11 @@ export function QuestionPhase({
       )}
 
       {currentMode === 'timeline' && (
-        <TimelineMode song={song} onAnswer={handleAnswered} onReveal={onReveal} />
+        <TimelineMode
+          song={song}
+          onAnswer={handleAnswered}
+          onReveal={onReveal}
+        />
       )}
 
       {currentMode === 'lyrics' && (
@@ -79,10 +90,14 @@ export function QuestionPhase({
       )}
 
       {currentMode === 'cover-confusion' && (
-        <CoverConfusionMode song={song} onAnswer={handleAnswered} onReveal={onReveal} />
+        <CoverConfusionMode
+          song={song}
+          onAnswer={handleAnswered}
+          onReveal={onReveal}
+        />
       )}
 
-      {/* Alle-fertig-Button → Reveal für alle Modi */}
+      {/** Everyone-done button → reveal for all modes */}
       {MODES_WITH_REVEAL_BUTTON.includes(currentMode) && (
         <motion.div
           className="flex justify-center mt-6"
@@ -96,7 +111,7 @@ export function QuestionPhase({
                        transition-opacity text-sm"
             style={{ borderColor: 'var(--color-border)' }}
           >
-            Alle fertig → Reveal
+            {t('game.question.allDoneReveal')}
           </button>
         </motion.div>
       )}
@@ -107,7 +122,7 @@ export function QuestionPhase({
           onClick={onReroll}
           className="mt-12 mb-8 px-5 py-3 rounded-xl border border-white/10 text-[10px] font-black uppercase tracking-widest text-white/40 hover:text-white/80 hover:bg-white/5 hover:border-white/20 transition-all min-h-[44px]"
         >
-          🎲 Video kaputt? Neu würfeln
+          {t('game.question.reroll')}
         </button>
       )}
     </div>

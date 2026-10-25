@@ -51,8 +51,8 @@ macOS and Linux → iPadOS and iOS → Windows. A track only starts once the
 previous one has a green release candidate.
 
 The **Apple licensing question** is answered rather than dodged: the whole
-codebase stays under GPL-3.0-or-later, and exactly one narrowly scoped
-GPL-3.0 §7 additional permission — the *Phomu App Store Exception* — removes
+codebase stays under AGPL-3.0-or-later, and exactly one narrowly scoped
+AGPL-3.0 §7 additional permission — the *Phomu App Store Exception* — removes
 the conflict with app-store distribution channels while leaving every copyleft
 obligation intact. The iOS/iPadOS track is **blocked** until the owner has an
 Apple Developer Program account; the web application keeps working without one.
@@ -97,6 +97,36 @@ core, the bridges and the proof that both play the same game.
 - The **E2E smoke test** no longer fails intermittently: the Playwright
   timeout was 30 s, which is too tight on a slow file system (limitation L5 in
   [`docs/acceptance/M0-ACCEPTANCE.md`](docs/acceptance/M0-ACCEPTANCE.md)).
+
+### Changed — the licence is now AGPL-3.0-or-later
+
+The project moved from **GPL-3.0-or-later** to **AGPL-3.0-or-later** by owner
+decision on 2026-10-25. This is not a relicensing of the work by its
+contributors — it is the adoption of a licence the work was already compatible
+with, plus one obligation the GPL does not have.
+
+- **`LICENSE`** now carries the full AGPL-3.0 text and the project notice.
+- **`LICENSE.md`** (new) explains what changed, what §13 adds, and how every
+  distribution channel is covered.
+- **`package.json`, `Cargo.toml`** and every crate manifest declare
+  `"AGPL-3.0-or-later"`.
+- **The documentation and the user interface** name the same licence — including
+  the German and English terms in the application.
+- **`CORE-002a`** (new requirement) records the AGPL §13 obligation: everyone
+  who interacts with Phomu over a network can obtain the source of the version
+  they are interacting with. The web shell is a static client without a
+  server-side component, so the source of the deployed version is the source in
+  the repository; the legal pages link to it.
+- **The Apple analysis was redone for the AGPL** in
+  [`docs/licensing/APPLE-LICENSING.md`](docs/licensing/APPLE-LICENSING.md) and
+  [`docs/adr/ADR-0007-apple-distribution-and-licensing-strategy.md`](docs/adr/ADR-0007-apple-distribution-and-licensing-strategy.md):
+  §7 works exactly as in the GPL, the App Store conflict is identical, and the
+  Haven precedent is an AGPL grant as well. New section 7.0 covers §13.
+- **`scripts/check-license.mjs`** (new gate) verifies that the licence
+  statement is identical in the licence file, both package manifests, every
+  crate, the documentation and the user interface. Its negative test — a
+  deliberately wrong identifier in `package.json` — turns the gate red and
+  green again after the fix.
 
 ### Added — Documentation language gate
 

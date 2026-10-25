@@ -35,7 +35,7 @@ project:
     - "M3"
     - "M6"
 
-  license: "GPL-3.0-or-later"
+  license: "AGPL-3.0-or-later"
   # No DCO or CLA process is documented in the repository:
   # grep -i "DCO|Developer Certificate" over the root documents finds nothing.
   contribution_model: null
@@ -157,7 +157,7 @@ requirements:
   # If REQUIREMENTS.md changes, these numbers must be brought up to date.
   count_source: "REQUIREMENTS.md"
   count_measured_at: "2026-10-25T08:58:04Z"
-  total: 174
+  total: 175
   CORE: 12
   GAME: 45
   LOBBY: 24

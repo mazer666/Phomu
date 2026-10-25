@@ -27,7 +27,7 @@ verified* rather than estimated.
 
 ## 2. The licence of the project
 
-**Phomu is free software under the GNU General Public License, version 3 or
+**Phomu is free software under the GNU Affero General Public License, version 3 or
 later.**
 
 The binding text is [`LICENSE`](../../LICENSE) in the repository root. The
@@ -36,12 +36,12 @@ are **not currently consistent**:
 
 | File | What it says |
 |---|---|
-| [`LICENSE`](../../LICENSE) | "This project (Phomu) is licensed under GPL-3.0." — the file points to the full GPL-3.0 text rather than embedding it |
-| [`README.md`](../../README.md) (licence section) | "GPL-3.0-or-later" |
-| [`CONTRIBUTING.md`](../../CONTRIBUTING.md) | "GPL-3.0-or-later" |
-| [`package.json`](../../package.json) | `"license": "GPL-3.0"` |
+| [`LICENSE`](../../LICENSE) | "This project (Phomu) is licensed under AGPL-3.0-or-later." — the file points to the full AGPL-3.0-or-later text rather than embedding it |
+| [`README.md`](../../README.md) (licence section) | "AGPL-3.0-or-later" |
+| [`CONTRIBUTING.md`](../../CONTRIBUTING.md) | "AGPL-3.0-or-later" |
+| [`package.json`](../../package.json) | `"license": "AGPL-3.0-or-later"` |
 
-**Open point.** The version statement must be settled on **"GPL-3.0-or-later"**
+**Open point.** The version statement must be settled on **"AGPL-3.0-or-later"**
 before any additional permission is published, so that the permission applies
 to a defined licence range. This is recorded in ADR-0007 §7 and is an owner
 decision.
@@ -49,17 +49,17 @@ decision.
 ### 2.1 The planned additional permission
 
 The decision in ADR-0007 is to grant exactly **one** additional permission
-under **GPL-3.0 §7** — the *Phomu App Store Exception* — which permits
+under **AGPL-3.0 §7** — the *Phomu App Store Exception* — which permits
 conveying the covered work through app-store distribution services
 notwithstanding their DRM and usage rules. It is **not** a licence change: the
-work stays GPL-3.0-or-later, and every copyleft obligation remains in force.
+work stays AGPL-3.0-or-later, and every copyleft obligation remains in force.
 
 The exception is **not yet written**. The proposed file layout, the mandatory
 contents of the exception text and the consequences for contributors are
 specified in `APPLE-LICENSING.md` §7.
 
 **The exception may only be published once every copyright holder has
-consented.** GPL-3.0 §7 lets the copyright holders grant additional
+consented.** AGPL-3.0 §7 lets the copyright holders grant additional
 permissions, and it lets a recipient remove an additional permission from a
 copy. A contributor who has not consented can therefore object to App Store
 distribution of the combined work. `CONTRIBUTING.md` currently contains no
@@ -83,7 +83,7 @@ contributor or a maintainer can be held to.
 
 | Rule | Where it lives | Binding on |
 |---|---|---|
-| The licence grant and its conditions | [`LICENSE`](../../LICENSE) → [GPL-3.0 text](https://www.gnu.org/licenses/gpl-3.0.en.html) | Everyone who conveys or modifies the work |
+| The licence grant and its conditions | [`LICENSE`](../../LICENSE) → [AGPL-3.0-or-later text](https://www.gnu.org/licenses/gpl-3.0.en.html) | Everyone who conveys or modifies the work |
 | The recorded platform/licensing decision | [`../adr/ADR-0007-apple-distribution-and-licensing-strategy.md`](../adr/ADR-0007-apple-distribution-and-licensing-strategy.md) | The Apple track and any future licence change |
 | Product requirements that depend on the licence | [`../../REQUIREMENTS.md`](../../REQUIREMENTS.md) — **CORE-002** (free open source without a forced account), **CORE-003** (local-first, data-minimising), **CORE-011** (no telemetry) | The product |
 | How contributions are licensed | [`../../CONTRIBUTING.md`](../../CONTRIBUTING.md) | Contributors — currently states the inbound licence only, **no CLA/DCO** |
@@ -96,12 +96,12 @@ contributor or a maintainer can be held to.
 ## 4. How to ask a licence question
 
 1. **Check whether it is already answered.** `APPLE-LICENSING.md` covers the
-   platform/distribution questions. `LICENSE` and the GPL text cover the
+   platform/distribution questions. `LICENSE` and the AGPL text cover the
    licence itself.
 2. **Write the question as a scenario, not as a licence name.** "Can we ship
-   Phomu on platform X?" is answerable. "Is MIT compatible with GPL?" is
+   Phomu on platform X?" is answerable. "Is MIT compatible with AGPL?" is
    usually the wrong question — the right one is "does the platform's terms
-   impose restrictions that go beyond the GPL's permissions, and who holds the
+   impose restrictions that go beyond the AGPL's permissions, and who holds the
    copyright we would need to act on?"
 3. **Separate the three layers** before answering:
    - **Fact** — what does a primary source actually say? Cite it with a URL
@@ -126,14 +126,14 @@ contributor or a maintainer can be held to.
 
 ## 5. Contributing under this licence
 
-Contributions are accepted under GPL-3.0-or-later. **Before the first App
+Contributions are accepted under AGPL-3.0-or-later. **Before the first App
 Store upload, the project needs every copyright holder to consent to the
 §7 additional permission** (ADR-0007, decision and §7 of
 `APPLE-LICENSING.md`). The proposed instrument is a CLA; the DCO is the
 accepted fallback.
 
 Until the contributor agreement is in place, a contributor can choose to
-license their contribution under GPL-3.0-or-later **and** additionally consent
+license their contribution under AGPL-3.0-or-later **and** additionally consent
 to the Phomu App Store Exception — a single sentence in the pull request is
 sufficient, provided it names the exception. The maintainers should record
 that consent.
