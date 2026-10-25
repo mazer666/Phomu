@@ -7,9 +7,17 @@
  */
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import type { LastRoundMessage } from '@/utils/last-round-messages';
+import { useTranslation } from 'react-i18next';
+import {
+  LAST_ROUND_MESSAGES,
+  type LastRoundMessage,
+} from '@/utils/last-round-messages';
+import {
+  LAST_ROUND_HEADLINE_KEYS,
+  LAST_ROUND_SUBLINE_KEYS,
+} from '@/i18n/variant-keys';
 
 interface LastRoundBannerProps {
   message: LastRoundMessage | null;
@@ -19,6 +27,33 @@ interface LastRoundBannerProps {
 const DISPLAY_MS = 3200;
 
 export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
+  const { t } = useTranslation();
+
+  // Headline/Subline kommen aus der Übersetzung. Der Originaltext aus
+  // src/utils/last-round-messages.ts dient nur als Fallback.
+  const translated = useMemo(() => {
+    if (!message) return null;
+    const index = LAST_ROUND_MESSAGES.findIndex(
+      (entry) => entry.headline === message.headline
+    );
+    if (index < 0) return message;
+    return {
+      emoji: message.emoji,
+      headline: t(
+        LAST_ROUND_HEADLINE_KEYS[index % LAST_ROUND_HEADLINE_KEYS.length]!,
+        {
+          defaultValue: message.headline,
+        }
+      ),
+      subline: t(
+        LAST_ROUND_SUBLINE_KEYS[index % LAST_ROUND_SUBLINE_KEYS.length]!,
+        {
+          defaultValue: message.subline,
+        }
+      ),
+    };
+  }, [message, t]);
+
   useEffect(() => {
     if (!message) return;
 
@@ -31,14 +66,17 @@ export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
 
   return (
     <AnimatePresence>
-      {message && (
+      {translated && (
         <motion.div
-          key={`${message.headline}-${message.emoji}`}
+          key={`${translated.headline}-${translated.emoji}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.4 } }}
           className="fixed inset-0 z-[200] flex flex-col items-center justify-center pointer-events-none"
-          style={{ backgroundColor: 'rgba(0,0,0,0.88)', backdropFilter: 'blur(12px)' }}
+          style={{
+            backgroundColor: 'rgba(0,0,0,0.88)',
+            backdropFilter: 'blur(12px)',
+          }}
         >
           {/* Glowing ring */}
           <motion.div
@@ -53,24 +91,35 @@ export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
           <motion.div
             initial={{ scale: 0, rotate: -30 }}
             animate={{ scale: 1, rotate: 0 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 18, delay: 0.1 }}
+            transition={{
+              type: 'spring',
+              stiffness: 500,
+              damping: 18,
+              delay: 0.1,
+            }}
             className="text-7xl mb-6 select-none relative z-10"
           >
-            {message.emoji}
+            {translated.emoji}
           </motion.div>
 
           {/* Headline */}
           <motion.h1
             initial={{ scale: 0.3, opacity: 0, y: 40 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
-            transition={{ type: 'spring', stiffness: 600, damping: 22, delay: 0.15 }}
+            transition={{
+              type: 'spring',
+              stiffness: 600,
+              damping: 22,
+              delay: 0.15,
+            }}
             className="text-5xl sm:text-7xl font-black italic uppercase tracking-tighter text-center px-4 relative z-10"
             style={{
               color: '#facc15',
-              textShadow: '0 0 40px rgba(250,204,21,0.6), 0 4px 0 rgba(0,0,0,0.8)',
+              textShadow:
+                '0 0 40px rgba(250,204,21,0.6), 0 4px 0 rgba(0,0,0,0.8)',
             }}
           >
-            {message.headline}
+            {translated.headline}
           </motion.h1>
 
           {/* Subline */}
@@ -80,7 +129,7 @@ export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
             transition={{ delay: 0.45, duration: 0.4 }}
             className="text-base sm:text-lg font-bold text-center max-w-sm px-6 mt-4 opacity-70 relative z-10"
           >
-            {message.subline}
+            {translated.subline}
           </motion.p>
 
           {/* Progress bar */}

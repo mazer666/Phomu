@@ -1,0 +1,367 @@
+# Phomu — maschinenlesbarer Projektzustand
+#
+# Diese Datei ist die EINZIGE Wahrheit für Werte, die mehrere Dokumente
+# betreffen (Status, Meilensteine, Schwellen, Anforderungszahlen).
+# Die Root-Dokumente (ROADMAP.md, REQUIREMENTS.md, ARCHITECTURE.md, QUALITY.md)
+# verweisen hierher und wiederholen keine Zahlen ohne Quelle.
+#
+# Regel für jede Zeile: ein Wert steht hier, weil er gemessen oder abgeleitet
+# wurde. Wo etwas unbekannt ist, steht `null` mit einem Kommentar — nicht eine
+# plausible Zahl.
+#
+# Stand: 2026-10-25, Branch feature/vocument-style-docs-and-i18n, Commit d5b6422
+
+project:
+  name: "Phomu"
+  description: "Hybrides Musik-Partyspiel: physische QR-Karten plus Web-App."
+  baseline_version: "0.1"
+
+  # Kurzstatus für Werkzeuge. Setzt sich aus completed_milestones und
+  # milestones[].status zusammen (siehe unten).
+  product_status: "m0-complete-m1-in-progress-m2-in-progress-m3-in-progress"
+
+  current_milestone: "M3"
+  current_milestone_name: "Doku-, Anforderungs- und i18n-Reform"
+
+  # Nur Meilensteine, deren Gates vollständig erfüllt und belegt sind.
+  # Grundlage: ROADMAP.md, Abschnitt "QA-Evidenz" je Meilenstein.
+  completed_milestones:
+    - "M0"
+
+  # Meilensteine, die begonnen sind, aber mindestens ein offenes Gate haben.
+  in_progress_milestones:
+    - "M1"
+    - "M2"
+    - "M3"
+    - "M6"
+
+  license: "GPL-3.0-or-later"
+  # Kein DCO- oder CLA-Prozess im Repository dokumentiert:
+  # grep -i "DCO|Developer Certificate" über die Root-Dokumente findet nichts.
+  contribution_model: null
+
+  languages:
+    documentation: "de"
+    code_and_identifiers: "en"
+    user_interface_primary: "de"
+    user_interface_secondary: "en"
+
+platforms:
+  web:
+    kind: "responsive web application"
+    framework: "Next.js 16 (App Router), React 19, TypeScript strict, Tailwind CSS 4"
+    rendering: "static export (next.config.ts: output 'export')"
+    base_path: "/Phomu"
+    routing:
+      registered_routes: 23
+      # Quelle: .next/app-path-routes-manifest.json (23 Einträge, Build vom 2026-10-25)
+      note: "Die Admin-API-Handler liegen unter src/admin-api/ und werden vom
+        App Router nicht registriert; ein Static Export kann Route-Handler
+        ohnehin nicht ausführen. Siehe ROADMAP.md, Lücke GAP-22."
+  mobile:
+    kind: "dieselbe Web-Anwendung, mobilfirst gestaltet"
+    native_app: false
+    evidence:
+      - "src/app/layout.tsx — viewport: width device-width, viewportFit 'cover'"
+      - "src/app/globals.css:109-139 — CSS-Variablen --sat/--sar/--sab/--sal
+        und Utility-Klassen .pt-safe/.pb-safe/.pl-safe/.pr-safe"
+    # Es existiert keine Geräte- oder Browser-Matrix (ROADMAP.md, GAP-08).
+    tested_device_matrix: null
+  deployment:
+    target: "GitHub Pages"
+    pipeline: ".github/workflows/deploy.yml"
+    trigger: "Push auf main oder manueller Start (workflow_dispatch)"
+    # Die Workflow führt kein einziges Qualitätsgate aus (kein typecheck,
+    # lint, test, build-Gate). Siehe ROADMAP.md, Lücke GAP-18.
+    quality_gates_in_pipeline: []
+  supported_browsers:
+    # Es ist keine Browser-Matrix dokumentiert und keine browserslist-
+    # Konfiguration vorhanden. Belegbar ist nur, welcher Browser im E2E-Lauf
+    # tatsächlich verwendet wurde.
+    e2e_browser: "chromium (Playwright 1.59.1, playwright.config.ts)"
+    documented_matrix: null
+
+modules:
+  # Abhängigkeitsrichtung: jeder Eintrag darf nur auf die darunter genannten
+  # Bereiche zugreifen. „Darf nicht dependieren von" ist die harte Grenze.
+  - name: "config"
+    path: "src/config/"
+    responsibility: >
+      Alle Spielkonstanten: Modi, Punkte, Grenzwerte, Themes, Sprachen,
+      Spoiler-Ausnahmen, Jahresbereich des Katalogs. Eine Zahl, eine Stelle.
+    may_depend_on: []
+    must_not_depend_on: ["types", "data", "utils", "stores", "hooks", "components", "app", "i18n"]
+  - name: "types"
+    path: "src/types/"
+    responsibility: "Typdefinitionen für Spieler, Teams, Sitzung, Spielzustand, Song, Musikprovider."
+    may_depend_on: ["config"]
+    must_not_depend_on: ["data", "utils", "stores", "hooks", "components", "app"]
+  - name: "data"
+    path: "src/data/"
+    responsibility: "Song-Katalog als JSON-Packs plus generierter Loader (src/data/songs/index.ts)."
+    may_depend_on: ["config", "types"]
+    must_not_depend_on: ["utils", "stores", "hooks", "components", "app"]
+  - name: "utils"
+    path: "src/utils/"
+    responsibility: >
+      Reine Funktionen ohne React-Abhängigkeit: Schema- und Katalogvalidierung,
+      Song-Auswahl, QR-Intent-Parsing, Spoiler-Zensur, Audio-Cue-Pfade,
+      Feedback- und Rundenmeldungen.
+    may_depend_on: ["config", "types", "data"]
+    must_not_depend_on: ["stores", "hooks", "components", "app"]
+  - name: "stores"
+    path: "src/stores/"
+    responsibility: >
+      Zustand-Spielzustand (Lobby, Spieler, Teams, Runden, Punkte, Verlauf),
+      persistiert in localStorage unter dem Schlüssel 'phomu-game-state'.
+    may_depend_on: ["config", "types", "utils"]
+    must_not_depend_on: ["hooks", "components", "app"]
+  - name: "hooks"
+    path: "src/hooks/"
+    responsibility: "React-Hooks mit Seiteneffekt (derzeit useGameAudioCues)."
+    may_depend_on: ["config", "types", "utils", "stores"]
+    must_not_depend_on: ["components", "app"]
+  - name: "contexts"
+    path: "src/contexts/"
+    responsibility: "ThemeContext: aktives Design, gespeichert in localStorage, als data-theme am <html>."
+    may_depend_on: ["config", "types"]
+    must_not_depend_on: ["stores", "components", "app"]
+  - name: "i18n"
+    path: "src/i18n/"
+    responsibility: >
+      i18next-Konfiguration, Spracherkennung, Locale-Dateien de.json und en.json.
+      Die Übersetzung passiert an dieser Grenze, nicht in den Komponenten.
+    may_depend_on: []
+    must_not_depend_on: ["stores", "components", "app"]
+  - name: "components"
+    path: "src/components/"
+    responsibility: "Oberfläche: Spielphasen, Spielmodi, Lobby, Browse, Admin-Werkzeuge, UI-Bausteine."
+    may_depend_on: ["config", "types", "data", "utils", "stores", "hooks", "contexts", "i18n"]
+    must_not_depend_on: ["app"]
+  - name: "app"
+    path: "src/app/"
+    responsibility: "Next.js-Routen (Seiten), Layout, globales Stylesheet, Themes."
+    may_depend_on: ["config", "types", "data", "utils", "stores", "hooks", "contexts", "components", "i18n"]
+    must_not_depend_on: []
+  - name: "admin-api"
+    path: "src/admin-api/"
+    responsibility: >
+      Admin-Endpunkte für Cover-Suche und Cover-Speicherung samt Token-Guard.
+      Nicht im App-Router registriert (siehe platforms.web.routing.note).
+    may_depend_on: ["config", "types"]
+    must_not_depend_on: ["components", "app"]
+
+requirements:
+  # Gezählt am 2026-10-25T08:58:04Z aus REQUIREMENTS.md (Blöcke "### <DOMÄNE>-<NNN>").
+  # Wenn REQUIREMENTS.md sich ändert, sind diese Zahlen nachzuziehen.
+  count_source: "REQUIREMENTS.md"
+  count_measured_at: "2026-10-25T08:58:04Z"
+  total: 174
+  CORE: 12
+  GAME: 45
+  LOBBY: 24
+  MEDIA: 18
+  UI: 18
+  I18N: 7
+  CAT: 16
+  SEC: 18
+  NFR: 16
+
+quality_thresholds:
+  file_size:
+    soft_limit_lines: 400
+    hard_limit_lines: 550
+    scope: "src/**/*.{ts,tsx}"
+    gate_script: "scripts/check-file-size.mjs"
+    gate_script_exists: true
+    gate_command: "npm run check:file-size"
+    # Ausgangslage des Gates: 0 Fehler, 8 Warnungen, 7 dokumentierte Altlasten
+    # (gemessen 2026-10-25T08:58:43Z, ROADMAP.md GAP-11).
+    measured_at: "2026-10-25T08:58:43Z"
+    measured_errors: 0
+    measured_warnings: 8
+    documented_exceptions: 7
+    current_violations:
+      over_hard_limit:
+        - "src/app/lobby/page.tsx (801)"
+        - "src/app/admin/review/page.tsx (767)"
+        - "src/components/game/MusicPlayer.tsx (641)"
+        - "src/stores/game-store.ts (640)"
+        - "src/components/game/modes/TimelineMode.tsx (617)"
+        - "src/components/game/RevealPhase.tsx (596)"
+        - "src/app/browse/page.tsx (575)"
+      over_soft_limit:
+        - "src/utils/validate-song-data.ts (502)"
+        - "src/app/game/page.tsx (468)"
+        - "src/app/admin/songs/page.tsx (461)"
+  test_coverage:
+    # Zielwerte. Der Ist-Zustand liegt darunter; das ist eine offene Lücke
+    # (ROADMAP.md, GAP-06), kein Grund, das Ziel zu senken.
+    target_lines_percent: 60
+    target_branches_percent: 50
+    target_statements_percent: 60
+    # Ist-Zustand aus `npm run test` (2026-10-25). Der Coverage-Scope der
+    # Vitest-Konfiguration umfasst nur src/utils/** (vitest.config.ts).
+    # Gemessen am Commit-Stand d5b6422 (isoliert) und im Arbeitsstand.
+    measured_lines_percent: 24.94
+    measured_branches_percent: 28.4
+    measured_statements_percent: 23.29
+    measured_scope: "src/utils/**/*.ts"
+    measured_at: "2026-10-25 (Commit-Stand d5b6422)"
+    measured_working_tree:
+      lines_percent: 33.77
+      branches_percent: 34.6
+      statements_percent: 32.33
+      test_files: 10
+      tests: 97
+      measured_at: "2026-10-25T08:41:51Z"
+    coverage_scope_is_complete: false
+  i18n_completeness:
+    required_ratio: 1.0
+    meaning: "jeder Schlüssel existiert in de.json und en.json, kein leerer Wert,
+      Pluralformen in beiden Sprachen identisch, kein sichtbarer Literaltext im JSX"
+    gate_script: "scripts/check-i18n-completeness.mjs"
+    gate_script_exists: true
+    # Ist-Zustand 2026-10-25T08:59Z: 6 Literaltexte in 47 Dateien sind noch
+    # nicht übersetzt (ROADMAP.md, GAP-09). Zu Beginn der Runde waren es 935
+    # (2026-10-25T08:34:52Z).
+    measured_literal_texts: 6
+    measured_files_with_literals: 47
+    measured_at: "2026-10-25T08:59Z"
+    measured_at_round_start: "2026-10-25T08:34:52Z"
+    measured_literal_texts_at_round_start: 935
+  gates:
+    typecheck: "npm run typecheck"
+    lint: "npm run lint"
+    unit_tests: "npm run test"
+    build: "npm run build"
+    song_validation: "npm run validate-songs"
+    catalog_validation: "npm run validate-catalog"
+    e2e_smoke: "npm run test:e2e:smoke"
+    dependency_audit: "npm audit --omit=dev --audit-level=moderate"
+    i18n_completeness: "npm run check:i18n"
+    doc_links: "npm run check:doc-links"
+    file_size: "npm run check:file-size"
+    all_new_gates: "npm run check:all"
+    local_ci: "npm run local-ci"
+
+milestones:
+  # Status: COMPLETE | IN PROGRESS | PLANNED
+  # Grundlage ist die Evidenz in ROADMAP.md je Meilenstein.
+  M0:
+    name: "Stabilisierung & Qualitätsbaseline"
+    status: "COMPLETE"
+    evidence: "docs/acceptance/M0-ACCEPTANCE.md"
+  M1:
+    name: "Katalog- und Datenqualität"
+    status: "IN PROGRESS"
+    evidence: "ROADMAP.md#m1--katalog--und-datenqualität"
+  M2:
+    name: "Testabdeckung & QA-Reife"
+    status: "IN PROGRESS"
+    evidence: "ROADMAP.md#m2--testabdeckung--qa-reife"
+  M3:
+    name: "Doku-, Anforderungs- und i18n-Reform"
+    status: "IN PROGRESS"
+    evidence: "docs/cr/CR-0001-dokumentations-und-agentenstruktur-reform.md"
+  M4:
+    name: "Musikzentrierte UX & Spielgefühl"
+    status: "PLANNED"
+    evidence: "ROADMAP.md#m4--musikzentrierte-ux--spielgefühl"
+  M5:
+    name: "Mobile UX Excellence"
+    status: "PLANNED"
+    evidence: "ROADMAP.md#m5--mobile-ux-excellence"
+  M6:
+    name: "Security-Hardening"
+    status: "IN PROGRESS"
+    evidence: "ROADMAP.md#m6--security-hardening"
+  M7:
+    name: "Realtime & Multi-Gerät"
+    status: "PLANNED"
+    evidence: "ROADMAP.md#m7--realtime--multi-gerät"
+  M8:
+    name: "Launch Readiness & Live Ops"
+    status: "PLANNED"
+    evidence: "ROADMAP.md#m8--launch-readiness--live-ops"
+
+i18n:
+  languages:
+    - "de"
+    - "en"
+  primary_language: "de"
+  fallback_language: "de"
+  detection_order: ["localStorage", "navigator"]
+  persistence: "localStorage"
+  detection_source: "src/i18n/config.ts"
+  completeness_requirement: 1.0
+  completeness_meaning: >
+    de.json und en.json sind vollständig parallel; jeder sichtbare Text der
+    Oberfläche kommt aus der Übersetzung; eigene Namen (Spotify, YouTube,
+    Jackbox, Phomu, Modusnamen) bleiben in beiden Sprachen identisch.
+  current_state:
+    locale_files: ["src/i18n/locales/de.json", "src/i18n/locales/en.json"]
+    leaf_keys: 1182
+    keys_only_in_one_language: 0
+    empty_values: 0
+    identical_values: 155
+    identical_values_note: "Eigennamen, Modusnamen, Länder- und Sprachkürzel"
+    # Während der Migration existiert zusätzlich ein parts/-Verzeichnis;
+    # der Endzustand verlangt eine Datei je Sprache (ROADMAP.md, GAP-12).
+    parts_directory_exists: true
+    parts_files: 24
+    measured_at: "2026-10-25T08:58:04Z"
+
+catalog:
+  # Gemessen mit `npm run validate-catalog` (2026-10-25).
+  pack_files: 135
+  songs: 1615
+  schema_errors: 0
+  schema_warnings: 126
+  duplicate_groups: 0
+  allowed_duplicates: 4
+  missing_years: 0
+  cover_files: 1649
+  baseline_file: "specifications/quality-baseline.json"
+  allowlist_file: "specifications/duplicate-allowlist.json"
+  report_file: "specifications/catalog_issues_report.json"
+  measured_at: "2026-10-25"
+  # Die README nennt 37 Packs und 1.629 Songs; das widerspricht der Messung
+  # (ROADMAP.md, Lücke GAP-19).
+  documented_in_readme: "37 Packs / 1.629 Songs"
+
+documentation:
+  requirements_version: "0.1"
+  architecture_version: "0.1"
+  roadmap_version: "0.1"
+  quality_version: "0.1"
+  acceptance_template: "docs/acceptance/ACCEPTANCE_TEMPLATE.md"
+  change_request_template: "docs/cr/CR_TEMPLATE.md"
+  adr_directory: "docs/adr/"
+  # Die Vorgänger-Dokumentation ist archiviert, nicht gelöscht.
+  legacy_documentation: "specifications/"
+  legacy_archive: "specifications/archive/"
+
+# Offene Entscheidungen des Owners. Die vollständige, priorisierte Liste
+# steht im Übergabedokument des Product Managers; hier nur die Kurzform.
+open_owner_decisions:
+  - id: "D-1"
+    topic: "Meilenstein-Nummerierung nach der Reform"
+    question: "Bleiben M0–M8 aus der Roadmap-Phase 1–5 erhalten, oder wird
+      M3 (Doku-Reform) als M0 zum neuen Anfang?"
+  - id: "D-2"
+    topic: "Verhältnis von MEILENSTEIN und PRODUCT_STATUS"
+    question: "product_status ist ein Fließtext aus den Meilensteinstatus.
+      Soll stattdessen ein reines Token-Schema (complete/in-progress/planned)
+      verwendet werden?"
+  - id: "D-3"
+    topic: "Admin-API"
+    question: "Die Admin-Routen sind nicht im Route-Baum und können unter
+      Static Export nicht laufen. Soll die Admin-API entfallen, auf einen
+      Node-Server umgestellt oder als Build-Schritt in den Export verlagert
+      werden?"
+  - id: "D-4"
+    topic: "Coverage-Ziel"
+    question: "Ist das Ziel von 60 % Lines für den Coverage-Scope
+      src/utils/** richtig, oder soll der Scope zuerst auf store/components
+      erweitert werden?"

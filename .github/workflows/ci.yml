@@ -1,0 +1,163 @@
+# Phomu — CI (Continuous Integration)
+#
+# Dieser Workflow ist die verbindliche technische Abnahme. Jeder Job prüft
+# genau eine Eigenschaft und schlägt bei einem echten Verstoß fehl.
+# Es gibt bewusst kein `continue-on-error` und kein `|| true`: ein Verstoß
+# muss den Job rot machen.
+#
+# Gates (CONTRACT.md §6, QUALITY.md §2):
+#   - Typecheck          -> scripts: typecheck
+#   - Lint               -> scripts: lint
+#   - Unit Tests         -> scripts: test (Vitest + Coverage)
+#   - Catalog Validation -> scripts: validate-songs, validate-catalog
+#   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size
+#   - Build              -> scripts: build (next build, output: 'export')
+#
+# Node-Version: 22 — die Version, mit der die Referenzmessung dieser Runde
+# durchgeführt wurde (node v22.19.0). Next.js 16 verlangt >= 20.9.0,
+# Vitest 4 unterstützt 20/22/24.
+
+name: CI
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+
+# Nur lesen — der Workflow baut nichts und veröffentlicht nichts.
+permissions:
+  contents: read
+
+# Pro Branch wird nur der jeweils neueste Lauf gerechnet.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  typecheck:
+    name: Typecheck
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: TypeScript typecheck
+        run: npm run typecheck
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: ESLint
+        run: npm run lint
+
+  unit-tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Vitest (with coverage)
+        run: npm run test
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  catalog-validation:
+    name: Catalog Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Song schema validation
+        run: npm run validate-songs
+      - name: Catalog quality validation
+        run: npm run validate-catalog
+
+  quality-gates:
+    name: Quality Gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      # `if: always()` sorgt dafür, dass alle drei Gates berichtet werden —
+      # ein fehlgeschlagenes Gate macht den Job trotzdem rot.
+      - name: Gate — i18n completeness
+        if: always()
+        run: npm run check:i18n
+      - name: Gate — documentation link check
+        if: always()
+        run: npm run check:doc-links
+      - name: Gate — source file size
+        if: always()
+        run: npm run check:file-size
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Next.js production build
+        run: npm run build
+      - name: Upload static export
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-export
+          path: out/
+          if-no-files-found: error
+          retention-days: 7

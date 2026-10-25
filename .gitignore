@@ -51,3 +51,6 @@ song_database_export.csv
 /src/utils/tmp-*.test.ts
 /*.txt
 /ytsearch.mjs
+
+# Rekonstruktion der Sprachdateien (Zwischenstand der i18n-Migration)
+.locale-recovery/

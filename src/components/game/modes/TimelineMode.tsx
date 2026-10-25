@@ -6,11 +6,15 @@
  * Ab 10 Jahreszahlen: Spieler darf eine entfernen.
  *   - Duplikat entstanden → wird automatisch entfernt
  *   - Kein Duplikat → Spieler wählt selbst
+ *
+ * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 'use client';
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 import type { PhomuSong } from '@/types/song';
 import { getAllSongs } from '@/utils/song-picker';
 import { useGameStore } from '@/stores/game-store';
@@ -19,63 +23,82 @@ import { MusicPlayer } from '../MusicPlayer';
 
 // ─── Jahrzehnt-Hints für den Cheat ────────────────────────────────────────────
 
-function getDecadeHint(year: number): string {
+/**
+ * Hinweis-Pool je Dekade — ein Schlüssel pro Variante.
+ * Die Texte liegen in `src/i18n/locales/parts/modes.{de,en}.json`.
+ */
+function getDecadeHintPool(decade: number, t: TFunction): string[] {
+  switch (decade) {
+    case 1950:
+      return [
+        t('modes.timeline.decadeHints.1950.first'),
+        t('modes.timeline.decadeHints.1950.second'),
+        t('modes.timeline.decadeHints.1950.third'),
+        t('modes.timeline.decadeHints.1950.fourth'),
+      ];
+    case 1960:
+      return [
+        t('modes.timeline.decadeHints.1960.first'),
+        t('modes.timeline.decadeHints.1960.second'),
+        t('modes.timeline.decadeHints.1960.third'),
+        t('modes.timeline.decadeHints.1960.fourth'),
+      ];
+    case 1970:
+      return [
+        t('modes.timeline.decadeHints.1970.first'),
+        t('modes.timeline.decadeHints.1970.second'),
+        t('modes.timeline.decadeHints.1970.third'),
+        t('modes.timeline.decadeHints.1970.fourth'),
+      ];
+    case 1980:
+      return [
+        t('modes.timeline.decadeHints.1980.first'),
+        t('modes.timeline.decadeHints.1980.second'),
+        t('modes.timeline.decadeHints.1980.third'),
+        t('modes.timeline.decadeHints.1980.fourth'),
+        t('modes.timeline.decadeHints.1980.fifth'),
+      ];
+    case 1990:
+      return [
+        t('modes.timeline.decadeHints.1990.first'),
+        t('modes.timeline.decadeHints.1990.second'),
+        t('modes.timeline.decadeHints.1990.third'),
+        t('modes.timeline.decadeHints.1990.fourth'),
+        t('modes.timeline.decadeHints.1990.fifth'),
+      ];
+    case 2000:
+      return [
+        t('modes.timeline.decadeHints.2000.first'),
+        t('modes.timeline.decadeHints.2000.second'),
+        t('modes.timeline.decadeHints.2000.third'),
+        t('modes.timeline.decadeHints.2000.fourth'),
+        t('modes.timeline.decadeHints.2000.fifth'),
+      ];
+    case 2010:
+      return [
+        t('modes.timeline.decadeHints.2010.first'),
+        t('modes.timeline.decadeHints.2010.second'),
+        t('modes.timeline.decadeHints.2010.third'),
+        t('modes.timeline.decadeHints.2010.fourth'),
+        t('modes.timeline.decadeHints.2010.fifth'),
+      ];
+    case 2020:
+      return [
+        t('modes.timeline.decadeHints.2020.first'),
+        t('modes.timeline.decadeHints.2020.second'),
+        t('modes.timeline.decadeHints.2020.third'),
+        t('modes.timeline.decadeHints.2020.fourth'),
+      ];
+    default:
+      return [];
+  }
+}
+
+function getDecadeHint(year: number, t: TFunction): string {
   const decade = Math.floor(year / 10) * 10;
-  const hints: Record<number, string[]> = {
-    1950: [
-      'Rock\'n\'Roll, Petticoats und Jukebox-Vibes.',
-      'Als Grease noch Realität war.',
-      'Vor dem Beatlemania. Klar vor dem Beatlemania.',
-      'Die Fünfziger rufen. Haartolle inklusive.',
-    ],
-    1960: [
-      'Flower Power, Mondlandung oder beides.',
-      'Irgendwas mit langen Haaren und Aufbruch.',
-      'Die 60er. Wahrscheinlich mit Gitarre.',
-      'British Invasion? Oder Summer of Love? Oder beides.',
-    ],
-    1970: [
-      'Disco, Glam oder Punk — die 70er hatten alles.',
-      'Schlaghosen-Ära. Keine Fragen.',
-      'Boogie Wonderland ruft — irgendwo in den 70ern.',
-      'Saturday Night Fever ist auch irgendwo in dieser Dekade.',
-    ],
-    1980: [
-      'Synthesizer, Schulterpolster, Schnurrbart.',
-      'Irgendwas mit Neonlicht und New Wave.',
-      'Die Achtziger. Definitiv die Achtziger.',
-      'Wenn du Cassettenspieler kannst, weißt du wo das hingehört.',
-      'MTV hat gerade erst erfunden was Musikvideo bedeutet.',
-    ],
-    1990: [
-      'Grunge ODER Eurodance ODER beides gleichzeitig.',
-      'Irgendwo zwischen Kurt Cobain und den Backstreet Boys.',
-      'Die Neunziger. Schnauzbart optional.',
-      'CD-Player, Discman, total analog aufgewachsen.',
-      'Britpop oder Techno? Genau — die 90er.',
-    ],
-    2000: [
-      'Nuller-Jahre. Tiefgeschnittene Jeans und Motorola Razr.',
-      'Als MySpace noch cool war.',
-      'Irgendwo in den 2000ern. iPod-Ära.',
-      'Pop-Punk oder R&B — auf jeden Fall Anfang des Jahrtausends.',
-      'Vor Spotify. Als Limewire noch das Ding war.',
-    ],
-    2010: [
-      'Zehnerjahre. EDM-Drop incoming.',
-      'Irgendwas mit Snapchat und Festival-Armbändern.',
-      'Die Zehner — zwischen Dubstep und Streaming-Boom.',
-      'Als alle plötzlich Bärte hatten.',
-      'Post-Gangnam Style Ära. Irgendwo in den 2010s.',
-    ],
-    2020: [
-      'Pandemie-Ära oder danach. Sehr frisch.',
-      'Neulich. Richtig neulich.',
-      'TikTok-Zeitalter — das ist aktuell.',
-      'Streaming only. Definitiv nach 2019.',
-    ],
-  };
-  const pool = hints[decade] ?? [`Irgendwann in den ${decade}ern.`];
+  const pool = getDecadeHintPool(decade, t);
+  if (pool.length === 0)
+    return t('modes.timeline.decadeHints.fallback', { decade });
   return pool[Math.floor(Math.random() * pool.length)]!;
 }
 
@@ -124,16 +147,40 @@ function canonicalSlot(songYear: number, sortedYears: number[]): number {
 
 interface TimelineModeProps {
   song: PhomuSong;
-  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
+  onAnswer: (
+    isCorrect: boolean,
+    pointsAwarded: number,
+    answeredInSeconds?: number
+  ) => void;
   onReveal?: () => void;
 }
 
 type RemovalState = 'none' | 'choosing' | 'done';
 
 export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
-  const { timelineYears, initTimeline, addTimelineYear, removeTimelineYear, config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
+  const { t, i18n } = useTranslation();
+  const {
+    timelineYears,
+    initTimeline,
+    addTimelineYear,
+    removeTimelineYear,
+    config,
+    awardPoints,
+    turnOrder,
+    currentTurnIndex,
+  } = useGameStore();
 
   const currentPlayerId = turnOrder[currentTurnIndex];
+
+  // Zahlenformate der aktiven Sprache (Jahre ohne Tausendertrennung)
+  const numberFormat = useMemo(
+    () => new Intl.NumberFormat(i18n.language),
+    [i18n.language]
+  );
+  const yearFormat = useMemo(
+    () => new Intl.NumberFormat(i18n.language, { useGrouping: false }),
+    [i18n.language]
+  );
 
   // Einmalig initialisieren, wenn Timeline noch leer ist
   useEffect(() => {
@@ -144,15 +191,14 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
 
   const validSlotSet = useMemo(
     () => getValidSlots(song.year, timelineYears),
-    [song.year, timelineYears],
+    [song.year, timelineYears]
   );
   const correct = useMemo(
     () => canonicalSlot(song.year, timelineYears),
-    [song.year, timelineYears],
+    [song.year, timelineYears]
   );
 
   const points = Math.min(timelineYears.length + 1, config.timelineMaxPoints); // mehr Jahre = mehr Punkte, aber gecappt
-
 
   const questionStartedAt = useRef<number>(Date.now());
 
@@ -175,8 +221,11 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     if (selectedSlot === null || isRevealed) return;
     const isCorrect = validSlotSet.has(selectedSlot);
     setIsRevealed(true);
-    const answeredInSeconds = Math.max(1, Math.round((Date.now() - questionStartedAt.current) / 1000));
-    
+    const answeredInSeconds = Math.max(
+      1,
+      Math.round((Date.now() - questionStartedAt.current) / 1000)
+    );
+
     // Timeline: Punkte basierend auf Komplexität (Cheats/Joker wurden bereits abgezogen)
     onAnswer(isCorrect, isCorrect ? points : 0, answeredInSeconds);
 
@@ -195,15 +244,15 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       setRemovalState('choosing');
     }
   }, [
-    selectedSlot, 
-    isRevealed, 
-    song.year, 
-    timelineYears, 
-    addTimelineYear, 
+    selectedSlot,
+    isRevealed,
+    song.year,
+    timelineYears,
+    addTimelineYear,
     removeTimelineYear,
     onAnswer,
     points,
-    validSlotSet
+    validSlotSet,
   ]);
 
   function handleRemoveYear(year: number) {
@@ -214,7 +263,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
   function handleCheat() {
     if (cheatActive || isRevealed || !currentPlayerId) return;
     setCheatActive(true);
-    setCheatHint(getDecadeHint(song.year));
+    setCheatHint(getDecadeHint(song.year, t));
     // Sofortiger Abzug von 2 Punkten für den Dekaden-Hint
     awardPoints(currentPlayerId, -2);
   }
@@ -248,7 +297,8 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
         setSelectedSlot((p) => (p === null || p === 0 ? numSlots - 1 : p - 1));
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight')
         setSelectedSlot((p) => (p === null || p === numSlots - 1 ? 0 : p + 1));
-      if ((e.key === 'Enter' || e.key === ' ') && selectedSlot !== null) handleReveal();
+      if ((e.key === 'Enter' || e.key === ' ') && selectedSlot !== null)
+        handleReveal();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -256,12 +306,16 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
 
   return (
     <div className="flex flex-col px-4 py-6 gap-5 max-w-xl mx-auto pb-44">
-
       {/* Modus-Banner */}
       <div className="w-full flex items-center justify-between bg-cyan-500/10 border border-cyan-500/20 rounded-2xl px-4 py-2.5">
-        <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400">📅 Timeline</span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400">
+          {t('modes.timeline.banner')}
+        </span>
         <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400/60">
-          {timelineYears.length} Jahreszahlen · {points} Pkt möglich
+          {t('modes.timeline.stats', {
+            count: timelineYears.length,
+            points: numberFormat.format(points),
+          })}
         </span>
       </div>
 
@@ -273,7 +327,12 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
           songArtist={song.artist}
           songPack={song.packs[0]}
           youtubeLink={song.links.youtube}
-          youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
+          youtubeAlternatives={
+            song.links.youtubeAlternatives ??
+            (song.links.fallbackYoutubeId
+              ? [song.links.fallbackYoutubeId]
+              : undefined)
+          }
           spotifyLink={song.links.spotify}
           spotifyFreePreview={song.links.spotifyFreePreview}
           amazonMusicLink={song.links.amazonMusic}
@@ -285,25 +344,30 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       {/* Header */}
       <div className="text-center space-y-1">
         <h2 className="text-2xl font-black uppercase tracking-tight">
-          {!isRevealed
-            ? 'Wann war dieser Song?'
-            : (
-              <>
-                <p 
-                  className="text-xl font-black uppercase italic tracking-tighter mb-1"
-                  style={{ color: getSpicyColor(validSlotSet.has(selectedSlot!), song.id) }}
-                >
-                  {getSpicyMessage(validSlotSet.has(selectedSlot!), song.id)}
-                </p>
-                <p className="text-sm opacity-60">
-                  {validSlotSet.has(selectedSlot!)
-                    ? 'Goldrichtig! ✨'
-                    : 'Leider daneben... 🌧️'}
-                </p>
-              </>
-            )}
+          {!isRevealed ? (
+            t('modes.timeline.question')
+          ) : (
+            <>
+              <p
+                className="text-xl font-black uppercase italic tracking-tighter mb-1"
+                style={{
+                  color: getSpicyColor(
+                    validSlotSet.has(selectedSlot!),
+                    song.id
+                  ),
+                }}
+              >
+                {getSpicyMessage(validSlotSet.has(selectedSlot!), song.id)}
+              </p>
+              <p className="text-sm opacity-60">
+                {validSlotSet.has(selectedSlot!)
+                  ? t('modes.timeline.correct')
+                  : t('modes.timeline.wrong')}
+              </p>
+            </>
+          )}
         </h2>
-        
+
         {/* Cheat Button */}
         {!isRevealed && !cheatActive && !config.noCheatMode && (
           <motion.button
@@ -313,7 +377,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
             onClick={handleCheat}
             className="text-[10px] font-black uppercase tracking-widest border border-red-500/20 py-1.5 px-3 rounded-full hover:bg-red-500/5 text-red-500 transition-all mb-2"
           >
-            🕵️ Jahrzehnt-Hint (-2 Pkt)
+            {t('modes.timeline.decadeHintButton')}
           </motion.button>
         )}
 
@@ -323,7 +387,10 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
             initial={{ opacity: 0, y: -6, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             className="mx-auto mt-1 mb-1 px-4 py-2 rounded-2xl text-center max-w-xs"
-            style={{ background: 'rgba(251,146,60,0.12)', border: '1.5px solid rgba(251,146,60,0.4)' }}
+            style={{
+              background: 'rgba(251,146,60,0.12)',
+              border: '1.5px solid rgba(251,146,60,0.4)',
+            }}
           >
             <p className="text-[11px] font-black italic text-orange-300 leading-snug">
               🕵️ {cheatHint}
@@ -341,7 +408,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
             className="text-[10px] font-black uppercase tracking-widest border border-orange-500/20 py-1.5 px-3 rounded-full hover:bg-orange-500/5 transition-all mb-1"
             style={{ color: '#f97316' }}
           >
-            🃏 Joker: Falschen Slot entfernen (-1 Pkt)
+            {t('modes.timeline.jokerButton')}
           </motion.button>
         )}
 
@@ -351,17 +418,23 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
             initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
             animate={{ opacity: 1, scale: 1, rotate: -4 }}
             className="mx-auto mt-1 mb-1 px-3 py-1 rounded-xl text-[10px] font-black uppercase tracking-tight text-black inline-block"
-            style={{ backgroundColor: '#fbbf24', boxShadow: '0 2px 10px rgba(251,191,36,0.6)' }}
+            style={{
+              backgroundColor: '#fbbf24',
+              boxShadow: '0 2px 10px rgba(251,191,36,0.6)',
+            }}
           >
-            🃏 Joker eingesetzt — 1 Slot weg
+            {t('modes.timeline.jokerUsed')}
           </motion.div>
         )}
 
         <div className="flex items-center justify-center gap-2">
           <p className="opacity-40 text-[9px] font-black uppercase tracking-[0.2em]">
             {!isRevealed
-              ? `${numSlots} Positionen · ${points} Punkte`
-              : 'Das war die Lösung'}
+              ? t('modes.timeline.slots', {
+                  count: numSlots,
+                  points: numberFormat.format(points),
+                })
+              : t('modes.timeline.solution')}
           </p>
           {cheatActive && (
             <span
@@ -373,21 +446,21 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                 display: 'inline-block',
               }}
             >
-              -2 PKT CHEAT
+              {t('modes.timeline.cheatBadge')}
             </span>
           )}
           {jokerUsed && (
-             <span
-             className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none ml-2"
-             style={{
-               backgroundColor: '#f97316',
-               transform: 'rotate(-3deg)',
-               boxShadow: '0 2px 10px rgba(249,115,22,0.7)',
-               display: 'inline-block',
-             }}
-           >
-             -1 PKT JOKER
-           </span>
+            <span
+              className="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-white shadow-lg pointer-events-none ml-2"
+              style={{
+                backgroundColor: '#f97316',
+                transform: 'rotate(-3deg)',
+                boxShadow: '0 2px 10px rgba(249,115,22,0.7)',
+                display: 'inline-block',
+              }}
+            >
+              {t('modes.timeline.jokerBadge')}
+            </span>
           )}
         </div>
       </div>
@@ -396,7 +469,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       {removalState === 'choosing' && (
         <div className="bg-[var(--color-bg-card)] border border-white/10 rounded-2xl p-4 space-y-3">
           <p className="text-xs font-black uppercase tracking-widest text-center opacity-60">
-            Eine Jahreszahl entfernen? (Optional)
+            {t('modes.timeline.removePrompt')}
           </p>
           <div className="flex flex-wrap gap-2 justify-center">
             {timelineYears.map((year: number, i: number) => (
@@ -405,7 +478,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                 onClick={() => handleRemoveYear(year)}
                 className="px-4 py-2 rounded-xl border border-white/20 font-black text-sm hover:bg-red-500/20 hover:border-red-500/50 transition-all active:scale-95"
               >
-                {year}
+                {yearFormat.format(year)}
               </button>
             ))}
           </div>
@@ -415,7 +488,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       {removalState === 'done' && (
         <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-3 text-center">
           <p className="text-xs font-black uppercase tracking-widest text-green-400">
-            Jahreszahl entfernt ✓
+            {t('modes.timeline.removed')}
           </p>
         </div>
       )}
@@ -425,7 +498,8 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
         {Array.from({ length: numSlots }, (_, slotIdx) => {
           const isTarget = selectedSlot === slotIdx;
           const yearAfter = timelineYears[slotIdx];
-          const isAnswerCorrect = selectedSlot !== null && validSlotSet.has(selectedSlot);
+          const isAnswerCorrect =
+            selectedSlot !== null && validSlotSet.has(selectedSlot);
           const isJokerSlot = jokerSlot === slotIdx && !isRevealed;
 
           // Joker slot: render as a visually removed / crossed-out slot, non-interactive
@@ -442,10 +516,16 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                     className={`flex-1 rounded-xl border-2 border-dashed flex items-center justify-center opacity-30 ${
                       numSlots <= 5 ? 'h-20' : numSlots <= 7 ? 'h-16' : 'h-12'
                     }`}
-                    style={{ borderColor: '#fbbf24', background: 'rgba(251,191,36,0.05)' }}
+                    style={{
+                      borderColor: '#fbbf24',
+                      background: 'rgba(251,191,36,0.05)',
+                    }}
                   >
-                    <span className="text-[10px] font-black uppercase tracking-widest" style={{ color: '#fbbf24' }}>
-                      🃏 Joker
+                    <span
+                      className="text-[10px] font-black uppercase tracking-widest"
+                      style={{ color: '#fbbf24' }}
+                    >
+                      {t('modes.timeline.jokerSlot')}
                     </span>
                   </div>
                 </div>
@@ -453,7 +533,9 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                   <div className="flex items-center gap-3">
                     <div className="w-12 shrink-0 flex justify-center py-0.5">
                       <div className="px-2.5 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
-                        <p className="text-[11px] font-black text-white leading-none">{yearAfter}</p>
+                        <p className="text-[11px] font-black text-white leading-none">
+                          {yearFormat.format(yearAfter)}
+                        </p>
                       </div>
                     </div>
                     <div className="flex-1 h-px bg-white/5" />
@@ -493,10 +575,15 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                     isRevealed && isTarget && !isAnswerCorrect
                       ? 'border-red-500 bg-red-500/10'
                       : '',
-                    isRevealed && !isTarget && slotIdx === correct && !isAnswerCorrect
+                    isRevealed &&
+                    !isTarget &&
+                    slotIdx === correct &&
+                    !isAnswerCorrect
                       ? 'border-green-500/50 bg-green-500/5'
                       : '',
-                    isRevealed && !isTarget && !(slotIdx === correct && !isAnswerCorrect)
+                    isRevealed &&
+                    !isTarget &&
+                    !(slotIdx === correct && !isAnswerCorrect)
                       ? 'border-white/5 bg-transparent'
                       : '',
                   ].join(' ')}
@@ -504,8 +591,8 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                   {isTarget && !isRevealed && (
                     <div className="flex items-center gap-2 px-3">
                       <span className="text-sm">🎵</span>
-                      <p className="text-[10px] font-black uppercase tracking-widest animate-pulse">
-                        Eingesetzt
+                      <p className="text-[10px] font-black uppercase tracking-widest">
+                        {t('modes.timeline.placed')}
                       </p>
                     </div>
                   )}
@@ -518,21 +605,28 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                         <p className="text-[9px] opacity-40 uppercase truncate max-w-[160px] leading-none mb-0.5">
                           {song.title}
                         </p>
-                        <p className="text-lg font-black">{song.year}</p>
+                        <p className="text-lg font-black">
+                          {yearFormat.format(song.year)}
+                        </p>
                       </div>
                     </div>
                   )}
                   {!isTarget && !isRevealed && (
                     <span className="text-[9px] font-black opacity-10 uppercase tracking-widest">
-                      {slotIdx + 1}
+                      {numberFormat.format(slotIdx + 1)}
                     </span>
                   )}
-                  {isRevealed && !isTarget && slotIdx === correct && !isAnswerCorrect && (
-                    <div className="flex items-center gap-2 text-green-400 font-black px-3">
-                      <span>←</span>
-                      <span className="text-[10px] uppercase tracking-widest">Hier</span>
-                    </div>
-                  )}
+                  {isRevealed &&
+                    !isTarget &&
+                    slotIdx === correct &&
+                    !isAnswerCorrect && (
+                      <div className="flex items-center gap-2 text-green-400 font-black px-3">
+                        <span>←</span>
+                        <span className="text-[10px] uppercase tracking-widest">
+                          {t('modes.timeline.here')}
+                        </span>
+                      </div>
+                    )}
                 </button>
               </div>
 
@@ -541,7 +635,9 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                 <div className="flex items-center gap-3">
                   <div className="w-12 shrink-0 flex justify-center py-0.5">
                     <div className="px-2.5 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
-                      <p className="text-[11px] font-black text-white leading-none">{yearAfter}</p>
+                      <p className="text-[11px] font-black text-white leading-none">
+                        {yearFormat.format(yearAfter)}
+                      </p>
                     </div>
                   </div>
                   <div className="flex-1 h-px bg-white/5" />
@@ -565,7 +661,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                 : 'bg-white/5 opacity-20 text-white/40 cursor-not-allowed',
             ].join(' ')}
           >
-            {isRevealed ? 'WEITER →' : 'AUFLÖSEN'}
+            {isRevealed ? t('modes.continue') : t('modes.timeline.reveal')}
           </button>
         </div>
       </footer>
