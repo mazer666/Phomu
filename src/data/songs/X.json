@@ -1,0 +1,121 @@
+{
+  "songs": [
+    {
+      "id": "german-xavier-naidoo-dieser-weg",
+      "title": "Dieser Weg",
+      "artist": "Xavier Naidoo",
+      "year": 2005,
+      "country": "DE",
+      "genre": "Soul/Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Serious",
+        "Inspiring",
+        "Moody"
+      ],
+      "hints": [
+        "Der Sänger schrieb das Lied ursprünglich für seinen dreijährigen Patensohn Elijah – als kleine Liedbotschaft, die ihm zugleich selbst galt.",
+        "Im Musikvideo spielen Esther Schweins und Steffen Wink; bis September 2023 zählte es über 32 Millionen YouTube-Aufrufe.",
+        "Die Single erschien am 4. November 2005, das zugehörige Album 'Telegramm für X' folgte am 25. November 2005.",
+        "In den deutschen Singlecharts kam der Song auf Platz 2 und blieb 80 Wochen in den Liste, im Jahreschart 2006 landete er auf Platz 10.",
+        "Beim Weltmeisterschafts-Sommer 2006 wurde das Lied zur inoffiziellen Hymne der deutschen Nationalmannschaft: Nationalspieler Gerald Asamoah, inoffizieller Discjockey der Kabine, legte es vor den Spielen auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Dieser Weg wird kein leichter sein",
+          "Dieser Weg wird steinig und schwer",
+          "Nicht mit vielen wirst du dir einig sein"
+        ],
+        "fake": "Im Morgengrauen zieht der Nebel über die endlose Weite"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9o4fDVYc_cQ",
+        "youtubeAlternatives": [
+          "VS4fyxuFZvA"
+        ]
+      },
+      "coverUrl": "/covers/german-xavier-naidoo-dieser-weg.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Dieser_Weg",
+        "https://de.wikipedia.org/wiki/Telegramm_f%C3%BCr_X",
+        "https://itunes.apple.com/search?term=Xavier+Naidoo+Dieser+Weg&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Xavier%20Naidoo/Dieser%20Weg",
+        "https://music.apple.com/us/album/dieser-weg/1654044800"
+      ]
+    },
+    {
+      "id": "yt-yp-WJXOb2V4",
+      "title": "Making Plans For Nigel",
+      "artist": "XTC",
+      "year": 1979,
+      "country": "GB",
+      "genre": "New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "New Wave",
+        "Nostalgic",
+        "Melancholic"
+      ],
+      "hints": [
+        "2026 sorgte ein Social-Media-Post mit dem Refrain des Songs und einem Bild einer Guillotine für einen Polizeivorgang: Die Londoner Polizei teilte mit, dass sie keine weiteren Maßnahmen ergreife.",
+        "Der Bassist schrieb das Lied über einen stillen Jungen aus seiner Schulzeit, der gehänselt wurde; die Bandmitglieder wuchsen als vier Jungen aus einem Arbeiterviertel auf.",
+        "Aufgenommen wurde es in den neu eröffneten Townhouse Studios in London, produziert von Steve Lillywhite und mit Hugh Padgham am Pult; den halligen Dub-Klangmix inspirierte Andy Partridge bei David Essex' 'Rock On'.",
+        "Die Single erschien am 14. September 1979 als erste Auskopplung des Albums 'Drums and Wires' bei Virgin; in Großbritannien erreichte sie Platz 17, außerdem war sie in Kanada, Australien und Neuseeland in den Charts.",
+        "Aus der Sicht überfürsorglicher Eltern erzählt der Text, wie sie für ihren Sohn das Leben im staatlichen Stahlwerk planen - 'British Steel' stand damals mitten in den britischen Arbeitskämpfen."
+      ],
+      "lyrics": {
+        "real": [
+          "We're only making plans for Nigel",
+          "He has his future in a British steel",
+          "Nigel's whole future is as good as sealed"
+        ],
+        "fake": "Wir bauen ein Haus aus Papier und der Wind pfeift durch jede Tür"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yp-WJXOb2V4",
+        "youtubeAlternatives": [
+          "n-X3Wy-svIY"
+        ]
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/xtc-making-plans-for-nigel.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Making_Plans_for_Nigel",
+        "https://en.wikipedia.org/wiki/Drums_and_Wires",
+        "https://www.loudersound.com/bands-artists/interviews/xtc-making-plans-for-nigel",
+        "https://www.bbc.co.uk/news/articles/cwylrnxxl77o",
+        "https://api.lyrics.ovh/v1/XTC/Making%20Plans%20For%20Nigel"
+      ]
+    }
+  ]
+}

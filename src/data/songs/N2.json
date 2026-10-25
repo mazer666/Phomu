@@ -1,0 +1,773 @@
+{
+  "songs": [
+    {
+      "id": "synth-nena-luft",
+      "title": "99 Luftballons",
+      "artist": "Nena",
+      "year": 1983,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle / Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Electronic",
+        "Energy",
+        "German New Wave",
+        "Popular",
+        "Serious",
+        "Upbeat"
+      ],
+      "hints": [
+        "Die Idee entstand am 8. Juni 1982 bei einem Rolling-Stones-Konzert in der Waldbühne Berlin, als der Gitarrist der Band bunte Ballons in den Himmel steigen sah.",
+        "Einer der erfolgreichsten Popsongs in deutscher Sprache: Der Text erzählt, wie Objekte am Himmel für UFOs gehalten werden und daraufhin ein General eine Fliegerstaffel losschickt.",
+        "Besticht durch den energetischen Basslauf und die charakteristische Stimme der Sängerin.",
+        "Das Video entstand im niederländischen Militärlager Harskamp für die Musiksendung TopPop und wurde am 13. März 1983 ausgestrahlt.",
+        "Refrain: '99 Ballons, auf ihrem Weg zum Horizont' - die Zahl 99 und der aufsteigende Ballon sind zugleich Titel und Motto des Songs."
+      ],
+      "lyrics": {
+        "real": [
+          "Dann singe ich ein Lied für dich",
+          "Auf ihrem Weg zum Horizont",
+          "Und dass sowas von sowas kommt"
+        ],
+        "fake": "Über den Dächern steigen bunte Ballons empor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Fpu5a0Bl8eY",
+        "spotify": "https://open.spotify.com/track/4ZhPLoMzZwewHLLjV1J15c",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DZWGLXFP"
+      },
+      "coverUrl": "/covers/synth-nena-luft.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "German Classics",
+        "80s-pop",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/99_Luftballons",
+        "https://en.wikipedia.org/wiki/99_Luftballons",
+        "https://en.wikipedia.org/wiki/Nena_(album)",
+        "https://en.wikipedia.org/wiki/Nena_(band)",
+        "https://en.wikipedia.org/wiki/99_Luftballons_(album)"
+      ]
+    },
+    {
+      "id": "yt-JnyzK8NIwog",
+      "title": "Hohe Berge",
+      "artist": "Frl. Menke",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Titel in einem 16-Spur-Studiodom im Keller des Elternhauses - das Studio betrieb der Vater, ein Musiker und Produzent.",
+        "Den Text schrieb die Sängerin gemeinsam mit Harald 'Harry' Gutowski, dem Bassisten von Joachim Witt.",
+        "Die Single erschien im April 1982 bei Polydor und erreichte in der deutschen Hitparade Platz 10.",
+        "Mit 2,5 Millionen verkauften Exemplaren gehört der Titel zu den erfolgreichsten Songs der Neuen Deutschen Welle.",
+        "Die Sängerin trat damit im Dirndl in der ZDF-Hitparade auf - am 5. Juli 1982."
+      ],
+      "lyrics": {
+        "real": [
+          "Ich sitz im Sessellift und freu mich schon",
+          "Denk ich an Trenker, werde ich aktiv",
+          "Jetzt noch den Stempel in den Wanderpass"
+        ],
+        "fake": "Oh-oh, Mond im August, wir sind so froh"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JnyzK8NIwog",
+        "spotify": "https://open.spotify.com/track/14IrL5IJwuMIRjFA8XjNbA",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "German Classics",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/frl-menke-hohe-berge.jpg",
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Hohe_Berge",
+        "https://de.wikipedia.org/wiki/Frl._Menke",
+        "https://de.wikipedia.org/wiki/Harry_Gutowski",
+        "https://de.wikipedia.org/wiki/Neue_Deutsche_Welle",
+        "https://de.wikipedia.org/wiki/ZDF-Hitparade/Episodenliste"
+      ]
+    },
+    {
+      "id": "yt-NBnYK9-Ti0o",
+      "title": "Ohne Dich (schlaf' ich heut' Nacht nicht ein)",
+      "artist": "Münchener Freiheit",
+      "year": 1985,
+      "country": "DE",
+      "genre": "Pop-Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "80s Pop",
+        "Upbeat"
+      ],
+      "hints": [
+        "Die Band veröffentlichte den Titel nach einer Deutschlandtournee mit über 80 Konzerten zum Jahresende 1985 als Single.",
+        "Die Single erreichte Platz 2 in Deutschland sowie Platz 1 in der Schweiz und in Österreich.",
+        "Den Songtext schrieb Michael Kunze, die Musik Aron Strobel und Stefan Zauner.",
+        "Die zugehörige Kompilation 'Von Anfang an' erschien im Februar 1986; Single und Album wurden mit Gold ausgezeichnet.",
+        "Bei der ZDF-Hitparade erreichte das Lied am 15. Januar 1986 den ersten Platz der TED-Abstimmung."
+      ],
+      "lyrics": {
+        "real": [
+          "Ich will mich nicht verändern",
+          "Das, was ich will, bist du",
+          "Will mit dir was erleben"
+        ],
+        "fake": "Im Morgengrauen seh ich dein Gesicht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NBnYK9-Ti0o",
+        "spotify": "https://open.spotify.com/track/7JM1dFLOa1kI5MqGnDufiY",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "German Classics",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/muenchner-freiheit-ohne-dich-schlaf-ich-heut-nacht-nicht-ein.jpg",
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Ohne_dich_(schlaf_ich_heut_Nacht_nicht_ein)",
+        "https://de.wikipedia.org/wiki/M%C3%BCnchener_Freiheit_(Band)",
+        "https://de.wikipedia.org/wiki/ZDF-Hitparade/Episodenliste",
+        "https://de.wikipedia.org/wiki/Michael_Kunze_(Librettist)",
+        "https://de.wikipedia.org/wiki/Von_Anfang_an"
+      ]
+    },
+    {
+      "id": "yt-hZXxmhok1AU",
+      "title": "Age of Consent",
+      "artist": "New Order",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Synth-Pop / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Post-Punk",
+        "Electronic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Das Schlagzeugmuster orientiert sich an Martin Hannetts Studio-Version von 'Love Will Tear Us Apart' - Schlagzeuger Stephen Morris bestätigte das 2020.",
+        "Aufgenommen wurde der Song im März 1982 in den Britannia Row Studios in London.",
+        "Der Titel eröffnet das zweite Studioalbum der Band, 'Power, Corruption & Lies'.",
+        "Die Band tourte den Song ab 30. August 1982; bis Mai 2024 wurde er 287 Mal live gespielt.",
+        "Das Stück ist mehrfach gecovert worden - unter anderem von Arcade Fire, Buffalo Tom und Built to Spill."
+      ],
+      "lyrics": {
+        "real": [
+          "I saw you this morning",
+          "And I'm not the kind that likes to tell you",
+          "Crucial point one day becomes a crime"
+        ],
+        "fake": "The neon signs are burning in the rain tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hZXxmhok1AU",
+        "spotify": "https://open.spotify.com/track/4cctjbKxlDxTzAIpRon5tV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/new-order-age-of-consent--2020-remaster---official-music-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Age_of_Consent_(song)",
+        "https://en.wikipedia.org/wiki/Power,_Corruption_%26_Lies",
+        "https://en.wikipedia.org/wiki/New_Order_(band)",
+        "https://en.wikipedia.org/wiki/Factory_Records",
+        "https://en.wikipedia.org/wiki/Britannia_Row_Studios"
+      ]
+    },
+    {
+      "id": "synth-neworder-monday",
+      "title": "Blue Monday",
+      "artist": "New Order",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Synthpop / New Wave / Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Club",
+        "Cool",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Einer der einflussreichsten Dance-Tracks aller Zeiten.",
+        "Besticht durch den maschinenhaften Basslauf und den charakteristischen Drum-Computer-Einstieg.",
+        "Die Band formierte sich 1980 aus den verbliebenen Mitgliedern von Joy Division, nachdem Sänger Ian Curtis gestorben war.",
+        "Die 12-Zoll-Single war so aufwendig gestaltet, dass das Label pro verkauftem Exemplar Geld verlor.",
+        "Refrain: 'How does it feel - to treat me like you do?'"
+      ],
+      "lyrics": {
+        "real": [
+          "When you've laid your hands upon me",
+          "I thought I was mistaken",
+          "I see a ship in the harbor"
+        ],
+        "fake": "The bassline shakes the windows of the sleeping town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=c1GxjzHm5us",
+        "spotify": "https://open.spotify.com/track/6hHc7Pks7wtBIW8Z6A0iFq",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SLQMJ8"
+      },
+      "coverUrl": "/covers/synth-neworder-monday.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s-pop",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Blue_Monday_(New_Order_song)",
+        "https://en.wikipedia.org/wiki/Power,_Corruption_%26_Lies",
+        "https://en.wikipedia.org/wiki/New_Order_(band)",
+        "https://en.wikipedia.org/wiki/Factory_Records",
+        "https://en.wikipedia.org/wiki/Peter_Saville_(graphic_designer)"
+      ]
+    },
+    {
+      "id": "yt-ic1l36GrNOU",
+      "title": "This Town",
+      "artist": "Niall Horan",
+      "year": 2016,
+      "country": "IE",
+      "genre": "Pop / Singer-Songwriter",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Acoustic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Live-Debüt in der britischen Talkshow am 22. Oktober 2016 - weitere Auftritte folgten bei Ellen und Late Late Show.",
+        "Der Titel erschien zusammen mit einem Live-Mitschnitt am 29. September 2016 als erste Solosingle.",
+        "Produziert wurde das Stück von Greg Kurstin; den Text schrieb der Sänger gemeinsam mit Jamie Scott, Mike Needle und Daniel Bryer.",
+        "In A-Dur gehalten, mit 112 Schlägen pro Minute - ein akustischer Song über das, was man einer verlorenen Liebe nie sagen konnte.",
+        "Platz 9 in Großbritannien und Platz 20 in den US-Charts - die erste Solosingle nach der Bandpause."
+      ],
+      "lyrics": {
+        "real": [
+          "Waking up to kiss you and nobody's there",
+          "The words I never got to say the first time around",
+          "Everything comes back to you"
+        ],
+        "fake": "Meet me where the ocean meets the sand tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ic1l36GrNOU",
+        "spotify": "https://open.spotify.com/track/5dTJMpqiELczVuHJP3OAEu",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/niall-horan-this-town--official-lyric-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/This_Town_(Niall_Horan_song)",
+        "https://en.wikipedia.org/wiki/Flicker_(album)",
+        "https://en.wikipedia.org/wiki/Niall_Horan",
+        "https://en.wikipedia.org/wiki/One_Direction",
+        "https://en.wikipedia.org/wiki/Greg_Kurstin"
+      ]
+    },
+    {
+      "id": "yt-Are2FK_P3xY",
+      "title": "The Mercy Seat",
+      "artist": "Nick Cave and the Bad Seeds",
+      "year": 1988,
+      "country": "AU",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Dramatic",
+        "Haunting",
+        "Cinematic",
+        "Classic"
+      ],
+      "hints": [
+        "Der Text entstand während der Arbeit an einem australischen Gefängnisfilm, bei dem der Sänger selbst mitspielte, am Drehbuch mitwirkte und die Musik schrieb.",
+        "Der Erzähler ist ein zum Tode verurteilter Häftling – sein letzter Wunsch gilt dem Gericht und der Gnade.",
+        "Die Titelgabe meint den biblischen 'Gnadenstuhl', den Ort, an dem Gottes Gegenwart und Gericht zusammenfallen.",
+        "Der Song erschien 1988 als Single auf dem Label Mute und eröffnete im selben Jahr das Album 'Tender Prey'.",
+        "NME wählte den Track zur Single des Jahres, er zählt heute zu den größten Songs aller Zeit – und Johnny Cash hat ihn später aufgenommen."
+      ],
+      "lyrics": {
+        "real": [
+          "They came and took me from my home",
+          "Of which I am nearly wholly innocent of, you know",
+          "I am not afraid to die"
+        ],
+        "fake": "The midnight train is leaving without me again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Are2FK_P3xY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s-pop",
+        "80s Flashback",
+        "Rock Anthems",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/nick-cave-and-the-bad-seeds-the-mercy-seat.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Mercy_Seat_(song)",
+        "https://en.wikipedia.org/wiki/Tender_Prey",
+        "https://en.wikipedia.org/wiki/Nick_Cave_and_the_Bad_Seeds",
+        "https://en.wikipedia.org/wiki/Nick_Cave",
+        "https://en.wikipedia.org/wiki/Mute_Records"
+      ]
+    },
+    {
+      "id": "yt-MkDoeLyIQh8",
+      "title": "Super Freaky Girl",
+      "artist": "Nicki Minaj",
+      "year": 2022,
+      "country": "TT",
+      "genre": "Pop Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Upbeat",
+        "Bold",
+        "Playful",
+        "Party",
+        "Pop Rap"
+      ],
+      "hints": [
+        "Die Rapperin veröffentlichte den Track am 12. August 2022 über Republic Records als Lead-Single ihres fünften Albums.",
+        "Der Beat sampelt einen US-Funk-Klassiker von 1981, gesungen von Rick James – seine markante Phrase taucht im Refrain wieder auf.",
+        "Beim Debüt brach der Song den Spotify-Rekord für den größten Start einer Solo-Rapperin und stieg in den USA direkt auf Platz 1.",
+        "In den USA war es die dritte Nummer eins der Rapperin und zugleich die erste als Solo-Künstlerin; in Australien und Neuseeland erreichte sie ebenfalls Platz 1.",
+        "Produziert wurde der Track u. a. von Dr. Luke, geschrieben hat ihn die Sängerin gemeinsam mit dem Produzenten LunchMoney Lewis."
+      ],
+      "lyrics": {
+        "real": [
+          "I got a princess face, a killer body, samurai mind",
+          "They can't be Nicki, they so stupid, I just laugh when they try",
+          "And every time he leave me 'lone, he always tell me he miss it"
+        ],
+        "fake": "Midnight in the city, telephone still ringing"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MkDoeLyIQh8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/nicki-minaj-super-freaky-girl.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Super_Freaky_Girl",
+        "https://en.wikipedia.org/wiki/Pink_Friday_2",
+        "https://en.wikipedia.org/wiki/Nicki_Minaj",
+        "https://en.wikipedia.org/wiki/Rick_James",
+        "https://en.wikipedia.org/wiki/Billboard_Hot_100"
+      ]
+    },
+    {
+      "id": "yt-7T_09ueky2o",
+      "title": "Voy a Beber",
+      "artist": "Nicky Jam",
+      "year": 2013,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Latin",
+        "Party",
+        "Sultry",
+        "Upbeat",
+        "Dance"
+      ],
+      "hints": [
+        "Der Track erschien im April 2013 als Single und ist später auf dem Kompilationsalbum 'Greatest Hits, Vol. 1' des US-Sängers enthalten.",
+        "Der spanischsprachige Song erzählt vom Trinken und Feiern – und davon, wie der Sänger nach einer durchzechten Nacht anruft, um die Geliebte für sich zu gewinnen.",
+        "Zwischen den gesungenen Strophen rappt er über Nachtclubs, Wodka und die Suche nach der passenden Begleitung für die Nacht.",
+        "Der Sänger gehört zu den erfolgreichsten Acts des lateinischen Pop – 'El Perdón' und 'Hasta el Amanecer' machten ihn weltweit bekannt.",
+        "Der Song ist ein typischer Vertreter des lateinischen Urban-Pop der frühen 2010er-Jahre: komplett auf Spanisch, mit Party-Stimmung und einer eingängigen Refrainzeile."
+      ],
+      "lyrics": {
+        "real": [
+          "Hoy voy a beber y sé",
+          "Y te llamaré después",
+          "Cuando tomo pienso en usted"
+        ],
+        "fake": "Bailamos en la playa hasta que amanezca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7T_09ueky2o",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/nicky-jam-voy-a-beber---vídeo-oficial.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nicky_Jam",
+        "https://en.wikipedia.org/wiki/Nicky_Jam_discography",
+        "https://es.wikipedia.org/wiki/Nicky_Jam",
+        "https://en.wikipedia.org/wiki/Reggaeton",
+        "https://music.apple.com/us/album/voy-a-beber-single/1790288002"
+      ]
+    },
+    {
+      "id": "yt-7ex4dje0Lzw",
+      "title": "Can't Forget You (feat. James Blunt)",
+      "artist": "James Carter & Ofenbach",
+      "year": 2023,
+      "country": "FR",
+      "genre": "Dance / Electro Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Romantic",
+        "Nostalgic",
+        "Upbeat",
+        "Club"
+      ],
+      "hints": [
+        "Der Track erschien am 7. April 2023 als Single und bringt ein französisches DJ-Duo mit zwei britischen Stimmen zusammen.",
+        "Das Duo mischt House-Produktion mit Rock- und Soul-Elementen – elektronische Beats treffen bei ihnen auf echte Instrumente.",
+        "Der Gast-Sänger ist ein britischer Soulsänger, der weltweit mit 'You're Beautiful' durchbrach.",
+        "Für den Song erschienen neben dem Original auch eine Akustik-Version und mehrere VIP-Remixes.",
+        "Im Text geht es um eine Nacht, in der man so tut, als sei die Begegnung bedeutungslos – während man die Person nicht loslassen kann."
+      ],
+      "lyrics": {
+        "real": [
+          "Down, down, down like I never met ya",
+          "Round, round, round but I can't forget ya",
+          "Sinning like I'm single on a Sunday night"
+        ],
+        "fake": "Hold me closer like we are dancing in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7ex4dje0Lzw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/nicky-romero-can-t-forget-you--feat--james-blunt-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ofenbach",
+        "https://en.wikipedia.org/wiki/James_Blunt",
+        "https://en.wikipedia.org/wiki/House_music",
+        "https://en.wikipedia.org/wiki/Dance_music",
+        "https://music.apple.com/us/album/1678420606"
+      ]
+    },
+    {
+      "id": "yt-0ZA4flUQz_k",
+      "title": "In My Zone",
+      "artist": "Tungevaag",
+      "year": 2022,
+      "country": "NO",
+      "genre": "Progressive House / Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Melodic",
+        "Uplifting",
+        "Euphoric",
+        "Club"
+      ],
+      "hints": [
+        "Der norwegische Producer veröffentlichte den Titel am 28. Januar 2022 als Single.",
+        "Er kommt aus Ålesund an der norwegischen Westküste und zählte 2023 zu den Top-100-DJs der Welt.",
+        "Schon 2021 landete einer seiner Tracks in den niederländischen Top 40 und stieg dort bis auf Platz 19.",
+        "Für die Tanzfläche erschien außerdem eine Extended-Mix-Version des Titels.",
+        "Im Refrain singt die Stimme wiederholt, sie sei in ihrem eigenen Bereich angekommen – genau diese Formulierung gibt dem Titel seinen Namen."
+      ],
+      "lyrics": {
+        "real": [
+          "I just wanna let you know",
+          "I know what you want, what you need",
+          "Gotta take my hand and I'll take you higher"
+        ],
+        "fake": "We were driving through the neon lights all night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0ZA4flUQz_k",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/nicky-romero-in-my-zone.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tungevaag",
+        "https://en.wikipedia.org/wiki/DJ_Mag",
+        "https://en.wikipedia.org/wiki/Dutch_Top_40",
+        "https://en.wikipedia.org/wiki/Dance_music",
+        "https://music.apple.com/us/album/in-my-zone-single/1603083449"
+      ]
+    },
+    {
+      "id": "yt-4mzRpACtJS4",
+      "title": "Piece of Art",
+      "artist": "Kryder",
+      "year": 2021,
+      "country": "NL",
+      "genre": "Trance / Uplifting Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Melodic",
+        "Euphoric",
+        "Uplifting",
+        "Dreamy",
+        "Dance"
+      ],
+      "hints": [
+        "Der Producer veröffentlichte den Titel am 19. November 2021 als Single bei Armada Music.",
+        "Der 1980 in England geborene Produzent ist seit 2011 aktiv und besonders für seinen melodischen Trance-Sound bekannt.",
+        "Sein bekanntester Track von 2011 heißt 'K2', weitere Veröffentlichungen erschienen bei Axtone, Spinnin' und Black Hole Recordings.",
+        "Der Song erschien später auf der Compilation 'A State of Trance 2022' von Armin van Buuren.",
+        "Im Text beschreibt der Sänger die Liebe als etwas Einmaliges, das man wie ein Kunstwerk betrachten kann – genau dieser Vergleich gibt dem Titel seinen Namen."
+      ],
+      "lyrics": {
+        "real": [
+          "I don't remember how this love started",
+          "I belong right here painted in your arms",
+          "Nothing else compare's"
+        ],
+        "fake": "We drove all night until the sunrise broke"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4mzRpACtJS4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/nico-santos-piece-of-art.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kryder",
+        "https://en.wikipedia.org/wiki/Armada_Music",
+        "https://en.wikipedia.org/wiki/A_State_of_Trance",
+        "https://en.wikipedia.org/wiki/Armin_van_Buuren",
+        "https://music.apple.com/us/album/piece-of-art-single/1592510706"
+      ]
+    },
+    {
+      "id": "schlager-nicole-frieden",
+      "title": "Ein bißchen Frieden",
+      "artist": "Nicole",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Inspiring",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Lied aus den frühen 1980ern, das bei einem internationalen Musikwettbewerb in England den ersten Titel für Deutschland holte.",
+        "Im Refrain antwortet ein Chor der Sängerin, während sie die Hörer direkt anspricht.",
+        "Das Lied entstand vor dem Hintergrund des Falklandkriegs und der Debatte über die Nachrüstung.",
+        "Bei der Aufführung trat die Sängerin sitzend auf und begleitete sich selbst auf einer weißen Gitarre.",
+        "Text: Bernd Meinunger, Musik: Ralph Siegel; die Single erschien am 22. März 1982 beim Label Jupiter Records."
+      ],
+      "lyrics": {
+        "real": [
+          "Wie eine Blume am Winterbeginn",
+          "Wie eine Puppe, die keiner mehr mag",
+          "Für diese Erde, auf der wir wohnen"
+        ],
+        "fake": "Am Fluss entlang spielt ein Junge seine Flöte"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hp_b-095yPc",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=-uTFiYO_ptE"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-nicole-frieden.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "80s-pop",
+        "80s Flashback",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Ein_bi%C3%9Fchen_Frieden",
+        "https://en.wikipedia.org/wiki/A_Little_Peace",
+        "https://de.wikipedia.org/wiki/Eurovision_Song_Contest_1982",
+        "https://www.eurovisionworld.com/1982",
+        "https://api.lyrics.ovh/v1/Nicole/Ein%20bi%C3%9Fchen%20Frieden"
+      ]
+    }
+  ]
+}

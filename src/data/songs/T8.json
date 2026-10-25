@@ -1,0 +1,723 @@
+{
+  "songs": [
+    {
+      "id": "yt-MSDyiUBrUSk",
+      "title": "Goodnight Irene",
+      "artist": "The Weavers",
+      "year": 1950,
+      "country": "US",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Der Text stammt von einem schwarzen Blues-Musiker, der 1933 im Zuchthaus Angola im US-Bundesstaat Louisiana aufgenommen wurde; der Folklorist John Lomax hatte ihn dort für die Library of Congress aufgenommen.",
+        "Die vierköpfige Gruppe aus dem Greenwich Village in New York wurde 1948 gegründet und sang traditionelle Volkslieder, Blues, Gospel und Arbeitslieder; ihre Plattenlabel waren Decca und Vanguard.",
+        "Als B-Seite wurde der 1941 entstandene Song 'Tzena, Tzena, Tzena' verwendet, der selbst zum Bestseller wurde; entdeckt hatte die Gruppe der Arrangeur und Bandleader Gordon Jenkins.",
+        "Ihre Aufnahme von 1950 blieb 13 Wochen auf Platz 1 der US-Charts – der erste Folk-Titel, der die Pop-Charts anführte; die Platte verkaufte sich 1950 eine Million Mal.",
+        "Der Refrain ist ein Abschiedsgruß, der mit dem Versprechen endet, sich im Traum wiederzusehen; eine Strophe droht dem Erzähler sogar, in den Fluss zu springen."
+      ],
+      "lyrics": {
+        "real": [
+          "Now me and my wife are parted",
+          "I'm gonna take another stroll downtown",
+          "Go home to your wife and your family"
+        ],
+        "fake": "Meet me by the riverbank before the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MSDyiUBrUSk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "country-folk",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/the-weavers-goodnight-irene.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Weavers",
+        "https://en.wikipedia.org/wiki/Lead_Belly",
+        "https://api.lyrics.ovh/v1/The%20Weavers/Goodnight%20Irene",
+        "https://itunes.apple.com/search?term=The+Weavers+Goodnight+Irene&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=MSDyiUBrUSk"
+      ]
+    },
+    {
+      "id": "the-weeknd-blinding-lights-2019",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "year": 2019,
+      "country": "CA",
+      "genre": "Synth-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Energy",
+        "Fast",
+        "Legends & Classics",
+        "Modern",
+        "Neon Night",
+        "Nightlife",
+        "Nostalgic",
+        "Popular",
+        "Road Trip"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song im Februar 2019 in einem Studio in Los Angeles und einem in New York; veröffentlicht wurde er am 29. November 2019 als zweite Single des vierten Studioalbums.",
+        "Fünf Autoren stehen auf dem Papier – neben dem Sänger der textexterne Hitproduzent Max Martin und der Produzent DaHeala; produziert wurde die Nummer von Martin, Oscar Holter und dem Sänger selbst.",
+        "Klanglich mischt der Track Synth-Pop, Electropop, Dance-Pop und New Wave; Kritiker lobten die bewusste Neigung zu den Achtzigern, eine '80s-Pastiche'.",
+        "In den US-Charts stand er vier Wochen auf Platz 1, es war der fünfte Nummer-eins-Hit des kanadischen Sängers; zugleich hält er den Rekord für die meisten Wochen in den Top 5 und Top 10.",
+        "Die IFPI kürzte ihn zum meistverkauften globalen Digitallied des Jahres 2020, Spotify zum meistgestreamten Song des Jahres 2020 – mit fast 1,6 Milliarden Streams."
+      ],
+      "lyrics": {
+        "real": [
+          "I've been on my own for long enough",
+          "You can turn me on with just a touch, baby",
+          "I can't see clearly when you're gone"
+        ],
+        "fake": "Neon signs are fading while the city holds its breath tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4NRXx6U8ABQ"
+      },
+      "coverUrl": "/covers/the-weeknd-blinding-lights-2019.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "grand-finale",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Blinding_Lights",
+        "https://en.wikipedia.org/wiki/After_Hours_(The_Weeknd_album)",
+        "https://api.lyrics.ovh/v1/The%20Weeknd/Blinding%20Lights",
+        "https://newsroom.spotify.com/2020-12-01/the-trends-that-shaped-streaming-in-2020/",
+        "https://itunes.apple.com/search?term=The+Weeknd+Blinding+Lights&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "dance-weeknd-feel-face",
+      "title": "Can't Feel My Face",
+      "artist": "The Weeknd",
+      "year": 2015,
+      "country": "CA",
+      "genre": "Pop / Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Dance"
+      ],
+      "hints": [
+        "In a-Moll bei 108 Schlägen pro Minute bewegt sich die Stimme von E3 bis E5; Kritiker stellten den trockenen, funkigen Groove neben den Sound von Michael Jackson.",
+        "Fünf Autoren schrieben den Song, produziert wurde er von Max Martin und Ali Payami; die Aufnahme entstand in Studios in Los Angeles und Stockholm.",
+        "Das Lob war enorm: 'Rolling Stone' wählte die Nummer zum besten Song des Jahres 2015, es folgten zwei Grammy-Nominierungen – unter anderem für die Platte des Jahres.",
+        "Die Single erschien am 8. Juni 2015 als dritte Auskopplung des zweiten Studioalbums; zuvor war der Song Ende Mai geleakt worden und wurde am selben Tag live beim Entwicklerforum WWDC von Apple performt.",
+        "Mehrere Medien lasen den Text als Beschreibung einer Droge – der Sänger bestätigte das in einem anderen Song mit einer Anspielung auf Kokain."
+      ],
+      "lyrics": {
+        "real": [
+          "And I know she'll be the death of me, at least we'll both be numb",
+          "And she'll always get the best of me, the worst is yet to come",
+          "I can't feel my face when I'm with you"
+        ],
+        "fake": "I keep the radio on so the quiet doesn't get too loud"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KEI4qSrkPAs",
+        "spotify": "https://open.spotify.com/track/6RsWqX8zABZLhZydXxEFOm"
+      },
+      "coverUrl": "/covers/dance-weeknd-feel-face.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Can't_Feel_My_Face",
+        "https://api.lyrics.ovh/v1/The%20Weeknd/Can't%20Feel%20My%20Face",
+        "https://open.spotify.com/track/6RsWqX8zABZLhZydXxEFOm",
+        "https://itunes.apple.com/search?term=The+Weeknd+Can't+Feel+My+Face&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=KEI4qSrkPAs"
+      ]
+    },
+    {
+      "id": "yt-kBsycvSU6r8",
+      "title": "M A N I A",
+      "artist": "The Weeknd",
+      "year": 2016,
+      "country": "CA",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song ist der Titelsong des 12-minütigen Kurzfilms, mit dem der kanadische Sänger sein drittes Studioalbum im November 2016 bewarb; die Regie führte Grant Singer, der auch das Video zum Albumtitelsong drehte.",
+        "Der Film spielt im 'Starboy'-Universum: Es beginnt mit einem großen Raubtier in einem Raum, dann fährt der Sänger Auto, und im Club endet die Geschichte in einer blutigen Szene.",
+        "Die Filmmusik kombiniert 'All I Know' mit Future, 'Sidewalks' mit Kendrick Lamar und 'Party Monster' mit Lana Del Rey – zum Schluss läuft 'I Feel It Coming' mit Daft Punk.",
+        "Das Album erschien am 25. November 2016, debütierte auf Platz 1 der Billboard 200 mit 348.000 verkauften Einheiten und war das dritte Studioalbum des Sängers.",
+        "Im Kurzfilm stand der Sänger selbst vor der Kamera; das französische Model Anais Mali trat im November 2016 in dem Video auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Tell me what you really like",
+          "And the heat between your legs",
+          "I feel it coming, I feel it coming, babe"
+        ],
+        "fake": "Take me dancing where the velvet night never ends"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kBsycvSU6r8"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/the-weeknd-m-a-n-i-a.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Starboy_(album)",
+        "https://en.wikipedia.org/wiki/The_Weeknd",
+        "https://pitchfork.com/news/69997-watch-the-weeknds-new-short-film-mania/",
+        "https://www.youtube.com/watch?v=kBsycvSU6r8",
+        "https://en.wikipedia.org/wiki/Anais_Mali"
+      ]
+    },
+    {
+      "id": "yt-2yqYAsUpdSc",
+      "title": "Out of Time",
+      "artist": "The Weeknd",
+      "year": 2022,
+      "country": "CA",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Die dritte Single des fünften Studioalbums 'Dawn FM' (Januar 2022) entstand mit dem Produzenten Oneohtrix Point Never; Max Martin und Oscar Holter steuerten weitere Produktion bei, Jim Carrey liefert die Erzählstimme des Albums.",
+        "Der Song sampelt 'Midnight Pretenders' von Tomoko Aran aus dem Jahr 1983; die Autoren des Originals erhielten dafür eigens Songwriter-Credits.",
+        "Klanglich ist das Stück eine R&B- und City-Pop-Ballade mit Boogie-Elementen in c-Moll bei 93 Schlägen pro Minute; die Aufnahme dauert 3:34.",
+        "Lyrisch schildert der Song, wie die Traumata früherer Beziehungen seine Fähigkeit zerstören, die Liebschaft zu einer früheren Partnerin noch zu retten; 2022 gewann er den MTV Video Music Award für das beste R&B-Video.",
+        "Das Video erschien am 5. April 2022, gedreht von Cliqua mit der Schauspielerin HoYeon Jung: Die beiden feiern in einem leeren Hotel, stehlen ein Karaoke-Gerät und tanzen; am Ende setzt Jim Carrey dem Sänger im Operationssaal eine Maske auf, Rolling Stone sah Parallelen zu Sofia Coppolas 'Lost in Translation'."
+      ],
+      "lyrics": {
+        "real": [
+          "The last few months, I've been workin' on me, baby",
+          "And I remember when I held you",
+          "Say I love you, girl, but I'm out of time"
+        ],
+        "fake": "I keep counting hours till you call me back again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2yqYAsUpdSc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/the-weeknd-out-of-time.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Out_of_Time_(The_Weeknd_song)",
+        "https://en.wikipedia.org/wiki/Dawn_FM",
+        "https://api.lyrics.ovh/v1/The%20Weeknd/Out%20of%20Time",
+        "https://itunes.apple.com/search?term=The+Weeknd+Out+of+Time&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=2yqYAsUpdSc"
+      ]
+    },
+    {
+      "id": "yt-RmYCOm4ehKs",
+      "title": "Save Your Tears",
+      "artist": "The Weeknd",
+      "year": 2020,
+      "country": "CA",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song im Juli 2019 in Studios in Los Angeles, New York und Stockholm; veröffentlicht wurde er am 9. August 2020 als fünfte und letzte Single des vierten Studioalbums.",
+        "Geschrieben und produziert wurde er vom Sänger selbst, von Max Martin und Oscar Holter; zusätzliche Songwriter-Credits haben Belly und DaHeala.",
+        "Klanglich ist es ein Synth-Rock- und Synth-Pop-Stück in C-Dur, Allegro moderato bei 118 Schlägen pro Minute; die Stimme reicht von G3 bis A4, die Kritik lobte helle Synthesizer, düstere Melodien und Echos von Depeche Mode und Wham!.",
+        "Die Solo-Fassung erreichte Platz 4 der US-Charts, die Remix-Fassung mit der US-Sängerin Ariana Grande im April 2021 Platz 1 – für beide der jeweils sechste Nummer-eins-Hit; die IFPI kürzte den Song zum meistverkauften globalen Digitallied des Jahres 2021.",
+        "Das Video erschien im Januar 2021: Der Sänger trägt Kunstprothesen und steht in einem Maskenball, angelehnt an Kubricks 'Eyes Wide Shut'; live spielte er den Song bei der Super-Bowl-Halftime-Show 2021 und bei den Brit Awards 2021."
+      ],
+      "lyrics": {
+        "real": [
+          "I saw you dancing in a crowded room",
+          "You could've asked me why I broke your heart",
+          "Save your tears for another day"
+        ],
+        "fake": "I'll keep your photograph folded in my wallet till the end"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RmYCOm4ehKs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/the-weeknd-save-your-tears.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Save_Your_Tears",
+        "https://en.wikipedia.org/wiki/After_Hours_(The_Weeknd_album)",
+        "https://api.lyrics.ovh/v1/The%20Weeknd/Save%20Your%20Tears",
+        "https://itunes.apple.com/search?term=The+Weeknd+Save+Your+Tears&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=RmYCOm4ehKs"
+      ]
+    },
+    {
+      "id": "weeknd-ariana-tears-2021",
+      "title": "Save Your Tears",
+      "artist": "The Weeknd & Ariana Grande",
+      "year": 2021,
+      "country": "US",
+      "genre": "Synth-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Melancholic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Fünfte und letzte Auskopplung aus dem vierten Studioalbum eines kanadischen Sängers, das im März 2020 erschien.",
+        "Die zweite Stimme auf der Remix-Fassung stammt von einer US-Sängerin und hat im Original noch keine Entsprechung.",
+        "Die Kollaboration erreichte in 18 Ländern die Spitzenposition der Verkaufscharts.",
+        "Laut IFPI war sie die weltweit meistverkaufte Single des Jahres 2021.",
+        "Der Titel ist eine Aufforderung, Tränen für einen anderen Tag aufzuheben."
+      ],
+      "lyrics": {
+        "real": [
+          "I saw you dancing in a crowded room",
+          "Save your tears for another day",
+          "I said some things that I should never say"
+        ],
+        "fake": "Streetlights blur into gold while the last teardrop slips away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LIIDh-qI9oI"
+      },
+      "coverUrl": "/covers/weeknd-ariana-tears-2021.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Save_Your_Tears",
+        "https://en.wikipedia.org/wiki/After_Hours_(The_Weeknd_album)",
+        "https://en.wikipedia.org/wiki/List_of_best-selling_singles",
+        "https://www.songfacts.com/facts/the-weeknd/save-your-tears",
+        "https://api.lyrics.ovh/v1/The%20Weeknd/Save%20Your%20Tears"
+      ]
+    },
+    {
+      "id": "indie-white-stripes-fell-in-love",
+      "title": "Fell in Love with a Girl",
+      "artist": "The White Stripes",
+      "year": 2001,
+      "country": "US",
+      "genre": "Garage Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Fast",
+        "Raw"
+      ],
+      "hints": [
+        "Aufgenommen wurde das Stück 2001 in Memphis im US-Bundesstaat Tennessee - in nur drei Produktionstagen für das ganze Album.",
+        "Das Musikvideo ist eine Lego-Animation im Stop-Motion-Verfahren, gehalten in Rot, Weiß und Schwarz.",
+        "Regie führte Michel Gondry, das Video gewann bei den MTV Video Music Awards 2002 drei Preise.",
+        "Als Single erschien der Song im Januar 2002, das Album mit ihm ein Jahr zuvor.",
+        "Im Text geht es um eine Begegnung am Fluss, wo der Sänger von zwei Freunden beraten wird."
+      ],
+      "lyrics": {
+        "real": [
+          "Red hair with a curl",
+          "I said I must be fine",
+          "Fell in love with a girl"
+        ],
+        "fake": "Then I saw her face, now I'm a believer in the ancient race"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fTH71AAxXmM"
+      },
+      "coverUrl": "/covers/indie-white-stripes-fell-in-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fell_in_Love_with_a_Girl",
+        "https://en.wikipedia.org/wiki/White_Blood_Cells_(album)",
+        "https://en.wikipedia.org/wiki/Michel_Gondry",
+        "https://www.songfacts.com/facts/the-white-stripes/fell-in-love-with-a-girl",
+        "https://api.lyrics.ovh/v1/The%20White%20Stripes/Fell%20in%20Love%20with%20a%20Girl"
+      ]
+    },
+    {
+      "id": "rock-white-stripes-seven-nation-army",
+      "title": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "year": 2003,
+      "country": "US",
+      "genre": "Garage Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Energy",
+        "Rock"
+      ],
+      "hints": [
+        "Der tiefe Basslauf entsteht, weil die Gitarre über ein Pitch-Shifter-Pedal (DigiTech Whammy) eine Oktave tiefer klingt.",
+        "Aufgenommen wurde das Stück 2002 in einem Londoner Studio im Stadtteil Hackney.",
+        "Die Riff-Idee entstand Anfang 2002 in einem Eckrestaurant während einer Tournee durch Australien.",
+        "Der Titel geht auf eine falsch verstandene Kindheitserinnerung an eine christliche Heilsorganisation zurück.",
+        "Das Stück gilt als eine der weltweit bekanntesten Sport-Hymnen und wird bei Fußballspielen mitgesungen."
+      ],
+      "lyrics": {
+        "real": [
+          "Taking their time right behind my back",
+          "And the feeling coming from my bones",
+          "Right before the lord"
+        ],
+        "fake": "Walking down the dusty road, carrying a heavy load"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0J2QdDbelmY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-white-stripes-seven-nation-army.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Seven_Nation_Army",
+        "https://en.wikipedia.org/wiki/Elephant_(album)",
+        "https://en.wikipedia.org/wiki/Toe_Rag_Studios",
+        "https://www.songfacts.com/facts/the-white-stripes/seven-nation-army",
+        "https://www.npr.org/2018/07/11/626288758/american-anthem-world-cup-white-stripes-seven-nation-army"
+      ]
+    },
+    {
+      "id": "rock-the-who-riley",
+      "title": "Baba O'Riley",
+      "artist": "The Who",
+      "year": 1971,
+      "country": "GB",
+      "genre": "Hard Rock / Prog Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Electronic",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand für eine Rockoper, die nach dem Scheitern nur in Fragmenten auf ein Album kam.",
+        "Das Keyboard-Intro entstand auf einer Lowrey-Orgel, deren Marimba-Repetition die Grundlage bildet.",
+        "Der Titel verbindet einen indischen spirituellen Lehrer mit einem amerikanischen Minimalisten.",
+        "Das Stück eröffnet das fünfte Album der Band aus dem Jahr 1971 und erschien zunächst als Single in mehreren europäischen Ländern.",
+        "Der Refrain warnt davor, zu weinen und die Augen nicht zu heben - er spricht von einem 'Jugendlichen Ödland'."
+      ],
+      "lyrics": {
+        "real": [
+          "Out here in the fields",
+          "I fight for my meals",
+          "It's only teenage wasteland"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gu9HhYv0C7E"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-the-who-riley.jpg",
+      "packs": [
+        "Rock Anthems",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Baba_O%27Riley",
+        "https://en.wikipedia.org/wiki/Who%27s_Next",
+        "https://en.wikipedia.org/wiki/Lifehouse_(rock_opera)",
+        "https://en.wikipedia.org/wiki/Meher_Baba",
+        "https://api.lyrics.ovh/v1/The%20Who/Baba%20O%27Riley"
+      ]
+    },
+    {
+      "id": "yt-MgJ9K7cPRKk",
+      "title": "My Generation",
+      "artist": "The Who",
+      "year": 1965,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Classic",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Der Text soll auf einem Zug entstanden sein.",
+        "Als Vorbilder gelten ein US-Blues-Sänger und ein alter Leichenwagen, der einer königlichen Dame den Weg versperrte.",
+        "Aufgenommen wurde der Song am 13. Oktober 1965 in London, produziert von Shel Talmy.",
+        "Als Single erschien er am 29. Oktober 1965 in Großbritannien und erreichte dort Platz zwei.",
+        "Berühmt ist die Zeile, in der der Sänger hofft, vor dem Älterwerden zu sterben."
+      ],
+      "lyrics": {
+        "real": [
+          "I hope I die before I get old",
+          "This is my generation, baby",
+          "Just because we get around"
+        ],
+        "fake": "We are the youth that never sleeps, we run the streets till morning"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MgJ9K7cPRKk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/the-who-my-generation--stereo-version-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/My_Generation",
+        "https://en.wikipedia.org/wiki/My_Generation_(album)",
+        "https://en.wikipedia.org/wiki/Pete_Townshend",
+        "https://www.songfacts.com/facts/the-who/my-generation",
+        "https://api.lyrics.ovh/v1/The%20Who/My%20Generation"
+      ]
+    },
+    {
+      "id": "yt-blJKoXWlqJk",
+      "title": "On Hold",
+      "artist": "The xx",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Groovy",
+        "Chill",
+        "Romantic"
+      ],
+      "hints": [
+        "Das Instrumental sampelt einen Soul-Klassiker von 1981.",
+        "Produziert wurde das Stück von einem Bandmitglied zusammen mit einem langjährigen Produzenten.",
+        "Der Leadgesang wechselt zwischen Sängerin und Sänger.",
+        "Das Video entstand in Marfa im US-Bundesstaat Texas und zeigt die Band auf dem Gelände einer Highschool.",
+        "Die Single erschien am 10. November 2016 als erste Auskopplung des dritten Albums."
+      ],
+      "lyrics": {
+        "real": [
+          "When and where did we go cold?",
+          "My young heart chose to believe",
+          "We got carried away"
+        ],
+        "fake": "Every single night we drive into the city lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=blJKoXWlqJk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/the-xx-on-hold.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/On_Hold",
+        "https://en.wikipedia.org/wiki/I_See_You_(The_xx_album)",
+        "https://en.wikipedia.org/wiki/I_Can%27t_Go_for_That_(No_Can_Do)",
+        "https://www.songfacts.com/facts/the-xx/on-hold",
+        "https://api.lyrics.ovh/v1/The%20xx/On%20Hold"
+      ]
+    },
+    {
+      "id": "jazz-monk-round",
+      "title": "'Round Midnight",
+      "artist": "Thelonious Monk",
+      "year": 1944,
+      "country": "US",
+      "genre": "Jazz / Ballad",
+      "difficulty": "hard",
+      "mood": [
+        "Deep",
+        "Atmospheric",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Standard, der als das meistaufgenommene Werk eines Jazz-Musikers gilt – eine melancholische Ballade mit spätem Feierabend-Gefühl, die seit 1949 auch gesungen wird, seit Textautor Bernie Hanighen den Text geschrieben hatte.",
+        "Urheberrechtlich wurde das Stück 1943 unter dem Titel 'I Need You So' angemeldet, zusammen mit einem Text, den eine Freundin des Komponisten geschrieben hatte.",
+        "Die erste Aufnahme entstand am 22. August 1944: Der Trompeter Cootie Williams nahm das Stück auf, nachdem Pianist Bud Powell ihn überredet hatte.",
+        "Der Urheber selbst nahm das Stück am 21. November 1947 mit seiner Band in New York auf; die Platte erschien noch im selben Jahr als Single und später auf dem Blue-Note-Album 'Genius of Modern Music'.",
+        "Der berühmte Einleitungs-Doppelschlag stammt nicht vom Urheber, sondern vom Trompeter Dizzy Gillespie, der ihn 1946 für seine Big-Band-Fassung schrieb; ein US-Film von 1986 mit Dexter Gordon in der Hauptrolle trägt den Titel des Stücks."
+      ],
+      "lyrics": {
+        "real": [
+          "I do pretty well 'til after sundown",
+          "Suppertime I'm feeling sad",
+          "Haven't got the heart to stand those memories"
+        ],
+        "fake": "The last bus leaves the corner and the streetlights hum a lonely tune"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-yg7aZpIXRI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-monk-round.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://www.jazzstandards.com/compositions-0/roundmidnight.htm",
+        "https://en.wikipedia.org/wiki/%27Round_Midnight_(song)",
+        "https://en.wikipedia.org/wiki/Genius_of_Modern_Music,_Vols._One_%26_Two",
+        "https://en.wikipedia.org/wiki/Round_Midnight_(film)",
+        "https://lrclib.net/api/get/37010777"
+      ]
+    }
+  ]
+}

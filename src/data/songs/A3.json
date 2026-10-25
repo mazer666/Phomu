@@ -1,0 +1,663 @@
+{
+  "songs": [
+    {
+      "id": "90s-alanis-morissette-ironic",
+      "title": "Ironic",
+      "artist": "Alanis Morissette",
+      "year": 1995,
+      "country": "CA",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sassy",
+        "Sing-along",
+        "Pop"
+      ],
+      "hints": [
+        "Die Beispiele im Text wirken erst hinterher komisch: Jeder Fall ist eigentlich nur Pech, das die Sängerin nachträglich als Ironie etikettiert.",
+        "Geschrieben und produziert hat das Stück derselbe Mann, der auch das Album produzierte, auf dem es erschien.",
+        "Der Song erschien 1995 auf einem Studioalbum und wurde 1996 als vierte Single daraus ausgekoppelt.",
+        "In den USA kam er auf Platz 4 der Billboard Hot 100, in Kanada sechs Wochen lang auf Platz 1.",
+        "Der Refrain stellt eine Gegenfrage ans Publikum: 'Und ist das nicht ironisch, glaubst du?'"
+      ],
+      "lyrics": {
+        "real": [
+          "He won the lottery and died the next day",
+          "It's like rain on your wedding day",
+          "And isn't it ironic, don't you think?"
+        ],
+        "fake": "Walking down the street with shoes on my feet, feeling incomplete"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Jne9t8sHpUc"
+      },
+      "coverUrl": "/covers/90s-alanis-morissette-ironic.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ironic_(song)",
+        "https://en.wikipedia.org/wiki/Jagged_Little_Pill",
+        "https://en.wikipedia.org/wiki/Alanis_Morissette",
+        "https://www.songfacts.com/facts/alanis-morissette/ironic",
+        "https://music.apple.com/us/album/ironic/1031419290?i=1031419968"
+      ]
+    },
+    {
+      "id": "yt-KuL9h67ZsZg",
+      "title": "Volverte a Amar",
+      "artist": "Alejandra Guzmán, Camila",
+      "year": 2006,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine Live-Fassung, in der eine mexikanische Rock-Ikone ihre Stimme mit der einer jungen Pop-Sängerin mischt.",
+        "Der Song entstand aus der Feder von Mario Domm und der Sängerin selbst.",
+        "Sie erschien 2006 als erste Single des Albums 'Indeleble'.",
+        "In Mexiko erreichte sie Platz 1, in den USA Platz 6 der Billboard-Latin-Hitparade.",
+        "Für den Latin Grammy 2006 war das Lied als 'Bester Rocksong' nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Y es que se que soy parte de ti",
+          "Y reconozco el miedo en tu mirada",
+          "Tengo tanto tanto miedo de volverte a amar"
+        ],
+        "fake": "Camino por la arena mientras el sol se derrama en el mar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KuL9h67ZsZg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/alejandra-guzmán--camila-volverte-a-amar--en-vivo-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Volverte_a_amar",
+        "https://en.wikipedia.org/wiki/Volverte_a_Amar",
+        "https://es.wikipedia.org/wiki/Indeleble",
+        "https://es.wikipedia.org/wiki/Alejandra_Guzm%C3%A1n",
+        "https://www.youtube.com/watch?v=KuL9h67ZsZg"
+      ]
+    },
+    {
+      "id": "yt-yt8Ki-RSIyA",
+      "title": "Abrázame",
+      "artist": "Alejandro Fernández",
+      "year": 1996,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein einziges Wort im Titel – und zugleich eine Bitte: Der Sänger bittet schlicht um eine Umarmung.",
+        "Der Song kam 1996 mit einem Doppel-Platin-Album heraus, das den Sänger auch über die lateinamerikanischen Grenzen hinaus bekannt machte.",
+        "Im selben Jahr sang er den Titelsong der Olympischen Sommerspiele in Atlanta – zusammen mit Gloria Estefan, Jon Secada und Ricky Martin.",
+        "Der Interpret ist Sohn einer mexikanischen Musiklegende, vierfacher Latin-Grammy-Preisträger und Träger eines Sterns auf dem Hollywood Walk of Fame.",
+        "Im Refrain schlägt die Bitte in eine Warnung um: Geht sie, bleibt dir nur die Stille."
+      ],
+      "lyrics": {
+        "real": [
+          "Y no me digas nada, sólo abrázame",
+          "Como si fuera ahora la primera vez",
+          "Te olvidarás que un día hace tiempo ya"
+        ],
+        "fake": "Dejaste tus llaves sobre la mesa y no tornaste más"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yt8Ki-RSIyA",
+        "spotify": "https://open.spotify.com/track/69eGsmBys3tALmQnSSm6xq"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-abrázame--audio-oficial-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.vagalume.com.br/alejandro-fernandez/abrazame.html",
+        "https://music.apple.com/us/album/abr%C3%A1zame/302589659?i=302589811",
+        "https://www.youtube.com/watch?v=yt8Ki-RSIyA"
+      ]
+    },
+    {
+      "id": "yt-MXlwuZ_nEk0",
+      "title": "Como Quien Pierde Una Estrella",
+      "artist": "Alejandro Fernández",
+      "year": 1995,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine Ranchera über den Verlust einer großen Liebe, geschrieben von Áureo Baqueiro und Leonel García.",
+        "Sie erschien 1995 auf einem Studioalbum und wurde im Januar 1996 als fünfte Single daraus ausgekoppelt.",
+        "Später nahm der Interpret den Titel mit einem Flamenco-Star in einer schnellen Version neu auf.",
+        "Der Sänger hat mehr als 20 Millionen Platten verkauft und einen Stern auf dem Hollywood Walk of Fame.",
+        "Im Refrain wird der Verlust mit einem Bild beschrieben, das für alle Zeiten ins Unendliche entschwindet."
+      ],
+      "lyrics": {
+        "real": [
+          "Lo digo como un lamento",
+          "Que pena haberte perdido",
+          "Quiero que se oiga mi llanto"
+        ],
+        "fake": "Silencio en la habitación y tu nombre en la ventana"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MXlwuZ_nEk0",
+        "spotify": "https://open.spotify.com/track/4tfawx7oL39IUS0GyOlmcP"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-como-quien-pierde-una-estrella.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Como_quien_pierde_una_estrella",
+        "https://es.wikipedia.org/wiki/Que_seas_muy_feliz",
+        "https://en.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.vagalume.com.br/alejandro-fernandez/como-quien-pierde-una-estrella.html",
+        "https://music.apple.com/us/album/como-quien-pierde-una-estrella/322103991?i=322104112"
+      ]
+    },
+    {
+      "id": "yt-Z81hsLIY1sQ",
+      "title": "Hoy Tengo Ganas De Ti",
+      "artist": "Alejandro Fernández, Christina Aguilera",
+      "year": 2013,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der spanische Originaltitel bedeutet 'Heute habe ich Lust auf dich' und stammt von einem Cantautor, dessen zweites Album 1976 erschien.",
+        "Neue Versionen entstanden 1996 von Azúcar Moreno und 2007 von Ricardo Montaner.",
+        "Die Fassung mit der US-Pop-Diva erschien 2013 als Single auf dem Album 'Confidencias' und wurde von Phil Ramone produziert.",
+        "Das Duett erreichte Platz 1 in Mexiko und Venezuela, Platz 4 in Spanien und Platz 5 in der US-Latin-Liste.",
+        "Im Refrain wiederholt sich die Sehnsucht zweimal: 'Heute habe ich Lust auf dich'."
+      ],
+      "lyrics": {
+        "real": [
+          "Fuiste ave de paso y no sé porque razón",
+          "Los dos inventamos la aventura del amor",
+          "Hoy tengo ganas de ti, hoy tengo ganas de ti"
+        ],
+        "fake": "Guardé tu carta en el cajón más profundo del armario"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z81hsLIY1sQ",
+        "spotify": "https://open.spotify.com/track/0qO4GfXADY9QfgcgtrasT9"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-hoy-tengo-ganas-de-ti-ft--christina-aguilera.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Hoy_tengo_ganas_de_ti",
+        "https://en.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://en.wikipedia.org/wiki/Christina_Aguilera",
+        "https://www.azlyrics.com/lyrics/alejandrofernandez/hoytengoganasdeti.html"
+      ]
+    },
+    {
+      "id": "yt-05dcxPp62BQ",
+      "title": "Me Dediqué A Perderte",
+      "artist": "Alejandro Fernández",
+      "year": 2004,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel bedeutet 'Ich widmete mich dem, dich zu verlieren' – ein Geständnis, das den Abschied als bewusste Entscheidung schildert.",
+        "Das Lied erschien 2004 als erste Single eines Albums, das 'A corazón abierto' heißt und von Kike Santander produziert wurde.",
+        "Bei seiner Tournee 'México – Madrid' 2005 sang die Frontfrau einer spanischen Band das Duett mit ihm.",
+        "Der Sänger ist Sohn einer mexikanischen Musiklegende, hat mehr als 20 Millionen Platten verkauft und vier Latin Grammys gewonnen.",
+        "Die Zeile 'Y cuando regresé, te había perdido para siempre' fasst die Selbstaufgabe des Textes zusammen."
+      ],
+      "lyrics": {
+        "real": [
+          "Porque no te besé en el alma",
+          "Y yo que no me daba cuenta",
+          "Y me encerré en mi mundo"
+        ],
+        "fake": "El reloj de la cocina marca las tres de la madrugada"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=05dcxPp62BQ",
+        "spotify": "https://open.spotify.com/track/4NUt1fcnO9aQAELBgXq3Kr"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-me-dedique-a-perderte.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://en.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.azlyrics.com/lyrics/alejandrofernandez/medediquaperderte.html",
+        "https://music.apple.com/us/album/me-dediqu%C3%A9-a-perderte/382216270?i=382216275",
+        "https://www.youtube.com/watch?v=05dcxPp62BQ"
+      ]
+    },
+    {
+      "id": "yt-6r8mlDvfyZI",
+      "title": "Me Hace Tanto Bien",
+      "artist": "Alejandro Fernández",
+      "year": 2010,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Ranchera-Popsänger veröffentlichte den Titel im Januar 2010 als zweite Single-Auskopplung seines 17. Studioalbums.",
+        "Am Text waren Donato Póveda, Pedro Dabdoub und Carlos Law beteiligt, produziert wurde der Song von Áureo Baqueiro.",
+        "Das Musikvideo entstand in einem Autódromo in der mexikanischen Hauptstadt – der Sänger fährt dort selbst Rennen.",
+        "Die Aufnahme erschien auf dem Doppelalbum 'Dos Mundos: Evolución + Tradición', das im Dezember 2009 veröffentlicht wurde.",
+        "Ein leichtes, tanzbares Latin-Pop-Stück, dessen Refrain eine einzige Zeile mehrfach wiederholt: Deine Liebe tut mir so gut."
+      ],
+      "lyrics": {
+        "real": [
+          "Tu amor me hace tanto bien",
+          "Cierro los ojos quiero tenerte cerca sentir tu cuerpo",
+          "La hoja que lleva el viento que va volando a tu alrededor"
+        ],
+        "fake": "En la terraza cantamos hasta que salía el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6r8mlDvfyZI",
+        "spotify": "https://open.spotify.com/track/2mDLrugtj3r6XpH3SdlLGB"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-me-hace-tanto-bien.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Me_hace_tanto_bien",
+        "https://es.wikipedia.org/wiki/Dos_mundos_(evoluci%C3%B3n_+_tradici%C3%B3n)",
+        "https://music.apple.com/us/album/me-hace-tanto-bien/1443614121?i=1443614133",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.youtube.com/watch?v=6r8mlDvfyZI"
+      ]
+    },
+    {
+      "id": "yt-dpiBMVGdFvc",
+      "title": "Mátalas",
+      "artist": "Alejandro Fernández",
+      "year": 2003,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel erschien 2003 als zweite Single des zehnten Studioalbums eines mexikanischen Ranchera-Popsängers.",
+        "Er war das Schlussstück der gleichnamigen mexikanischen Telenovela, die 2003 im Fernsehen lief.",
+        "In der Live-Fassung sang der Sänger das Stück 2016 beim Abschiedskonzert seines Vaters im Azteca-Stadion von Mexiko-Stadt.",
+        "Der Rat, den der Text gibt, ist gefährlich mild: Er rät, die Frauen mit Zärtlichkeit, Blumen und Liedern zu erobern.",
+        "Der Titel ist Slang und bedeutet so viel wie 'Richte sie aus' – der Text nimmt das Ganze ironisch zurück."
+      ],
+      "lyrics": {
+        "real": [
+          "Con una sobredosis de ternura",
+          "Que no hay una mujer en este mundo",
+          "Que pueda resistirse a los detalles"
+        ],
+        "fake": "Caminamos por el camino real bajo un sol ardiente"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dpiBMVGdFvc",
+        "spotify": "https://open.spotify.com/track/5ez63ZPxXYYeNXFpJfpDYx"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-mátalas--en-vivo--un-azteca-en-el-azteca-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Ni%C3%B1a_amada_m%C3%ADa_(%C3%A1lbum)",
+        "https://es.wikipedia.org/wiki/Ni%C3%B1a_amada_m%C3%ADa",
+        "https://music.apple.com/us/album/m%C3%A1talas/168981956?i=168982759",
+        "https://es.wikipedia.org/wiki/Un_Azteca_en_el_Azteca",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez"
+      ]
+    },
+    {
+      "id": "yt-oZSFyIeabYU",
+      "title": "No Sé Olvidar",
+      "artist": "Alejandro Fernández",
+      "year": 1997,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel erschien 1997 als dritte Single des sechsten Studioalbums eines mexikanischen Ranchera-Popsängers.",
+        "Text und Produktion lagen bei Kike Santander, der auch das Album produzierte.",
+        "Die Ballade verbindet Pop latino mit Bolero-Ranchera und wurde in einem Studio in Miami aufgenommen.",
+        "In den USA stieg sie auf Platz 1 der Hot Latin Tracks und blieb dort acht Wochen; 1998 wurde sie für 'Video del Año' nominiert.",
+        "Eine verzweifelte Klage darüber, dass sich die Vergangenheit nicht aus dem Herzen bekommt."
+      ],
+      "lyrics": {
+        "real": [
+          "No sé resignarme",
+          "Ya lo ves, te amé",
+          "Te has quedado clavada en mi pecho como si fuera ayer"
+        ],
+        "fake": "Guardo tu carta entre las páginas de un libro viejo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oZSFyIeabYU",
+        "spotify": "https://open.spotify.com/track/3T9vhAX8yaBAdEFJa4yy2b"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-no-sé-olvidar.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/No_s%C3%A9_olvidar",
+        "https://es.wikipedia.org/wiki/Me_estoy_enamorando",
+        "https://music.apple.com/us/album/no-s%C3%A9-olv%C3%ADdar/251445181?i=251445191",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.youtube.com/watch?v=oZSFyIeabYU"
+      ]
+    },
+    {
+      "id": "yt-PsFQyHXfwbs",
+      "title": "Qué Voy A Hacer Con Mi Amor",
+      "artist": "Alejandro Fernández",
+      "year": 2004,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ranchera-Ballade erschien 2005 als vierte Single des elften Studioalbums eines mexikanischen Sängers, das im September 2004 auf den Markt kam.",
+        "Text und Produktion lagen bei Pedro Ramírez, mitgeschrieben haben Luis Carlos Monroy und Raúl Ornelas.",
+        "In den USA stieg der Titel in der Hot Latin Songs von Platz 49 über Platz 14 auf Platz 3 und blieb 20 Wochen in den Charts.",
+        "Der Refrain stellt eine Frage, auf die niemand antwortet: Was soll ich mit der großen Liebe anfangen?",
+        "Im selben Refrain klagt der Sänger, dass diese Liebe in seiner Brust keinen Platz findet und in einem Meer aus Schmerz ertrinkt."
+      ],
+      "lyrics": {
+        "real": [
+          "Le bajé las estrellas de un solo golpe",
+          "¿Qué voy a hacer con todo este amor?",
+          "Que se ahoga en este mar de dolor"
+        ],
+        "fake": "Mi guitarra se rompe y no vuelve a sonar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PsFQyHXfwbs",
+        "spotify": "https://open.spotify.com/track/5JpOkusDXbxrcPj1Kd0O2Q"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernandez-que-voy-a-hacer-con-mi-amor.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Qu%C3%A9_voy_a_hacer_con_mi_amor",
+        "https://es.wikipedia.org/wiki/A_coraz%C3%B3n_abierto_(%C3%A1lbum)",
+        "https://music.apple.com/us/album/qu%C3%A9-voy-a-hacer-con-mi-amor/382216270?i=382216280",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.youtube.com/watch?v=PsFQyHXfwbs"
+      ]
+    },
+    {
+      "id": "yt-9BLLdXNdr4I",
+      "title": "Se Me Va La Voz",
+      "artist": "Alejandro Fernández",
+      "year": 2009,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel erschien 2009 als erste Single-Auskopplung des 17. Studioalbums eines mexikanischen Ranchera-Popsängers.",
+        "Geschrieben hat Roy Tavaré, produziert wurde der Song von Áureo Baqueiro.",
+        "Das Album 'Dos Mundos: Evolución + Tradición' erschien am 8. Dezember 2009; auf der 'Tradición'-Scheibe produzierte Joan Sebastian.",
+        "Das Musikvideo setzt ein anderes Video fort und erzählt zwei Liebesgeschichten über Karma; mitwirkten der puerto-rikanische Schauspieler Luis Roberto Guzmán und die mexikanische Schauspielerin Aislinn Derbez.",
+        "Das Stück beginnt mit einem gesungenen 'Na-ra-na' und erzählt, warum dem Sänger die Stimme versagt, wenn die Geliebte fehlt."
+      ],
+      "lyrics": {
+        "real": [
+          "¡Cómo duele hoy!",
+          "En una noche fría",
+          "El sabor de lo prohibido"
+        ],
+        "fake": "Toco tu puerta y el perro ya no ladra"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9BLLdXNdr4I",
+        "spotify": "https://open.spotify.com/track/4QubLlsaYXoQH3CxGxuTry"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernández-se-me-va-la-voz.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Se_me_va_la_voz",
+        "https://es.wikipedia.org/wiki/Dos_mundos_(evoluci%C3%B3n_+_tradici%C3%B3n)",
+        "https://music.apple.com/us/album/se-me-va-la-voz/1443614121?i=1443614139",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.youtube.com/watch?v=9BLLdXNdr4I"
+      ]
+    },
+    {
+      "id": "yt-ElF_NuB3LHc",
+      "title": "Si Tú Supieras",
+      "artist": "Alejandro Fernández",
+      "year": 1997,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel erschien 1997 als Leit-Single des sechsten Studioalbums eines mexikanischen Ranchera-Popsängers.",
+        "Geschrieben hat Kike Santander, produziert wurde der Song von Emilio Estefan.",
+        "Die Ballade war das Hauptthema einer mexikanischen Telenovela von 1997 mit Adela Noriega in der Hauptrolle.",
+        "In den USA stand sie sechs Wochen lang auf Platz 1 der Hot Latin Tracks; 1998 gewann sie den Lo Nuestro als Pop-Song des Jahres.",
+        "Ein eindringliches Flehen an die Geliebte, die nicht ahnt, was in ihm vorgeht – Wenn du nur wüsstest."
+      ],
+      "lyrics": {
+        "real": [
+          "Que tu recuerdo me acaricia como el viento",
+          "Que está mi vida en cada beso para darte",
+          "Mientras me clama el corazón por ser tu dueño"
+        ],
+        "fake": "Dejo las llaves sobre la mesa y no miro atrás"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ElF_NuB3LHc",
+        "spotify": "https://open.spotify.com/track/3PHD1o4vP68uLbExcqUl1x"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/alejandro-fernandez-si-tu-supieras.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Si_t%C3%BA_supieras",
+        "https://es.wikipedia.org/wiki/Me_estoy_enamorando",
+        "https://music.apple.com/us/album/si-t%C3%BA-supieras/251445181?i=251445189",
+        "https://es.wikipedia.org/wiki/Alejandro_Fern%C3%A1ndez",
+        "https://www.youtube.com/watch?v=ElF_NuB3LHc"
+      ]
+    }
+  ]
+}

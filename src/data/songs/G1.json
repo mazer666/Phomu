@@ -1,0 +1,729 @@
+{
+  "songs": [
+    {
+      "id": "yt-akmfOOxUiBo",
+      "title": "Still",
+      "artist": "G-Eazy",
+      "year": 2016,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der US-Rapper aus Oakland veröffentlichte den Track 2016 als eigene Single.",
+        "Im Text beschreibt er den Neustart: 'I took some time off, it's time I start rappin' again'.",
+        "Thematisch kreist das Stück um die Frage, ob Geld wirklich Glück bringt.",
+        "Der Song entstand in der Phase zwischen den Alben 'When It's Dark Out' (2015) und 'The Beautiful & Damned' (2017).",
+        "Der Titel besteht aus einem einzigen englischen Wort und bedeutet so viel wie 'weiterhin'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/G-Eazy",
+        "https://en.wikipedia.org/wiki/When_It%27s_Dark_Out",
+        "https://musicbrainz.org/ws/2/release/efa4fb84-41fa-489f-9bfb-d6f0763fd670?fmt=json&inc=artist-credits+media",
+        "https://en.wikipedia.org/wiki/Oakland,_California",
+        "https://lrclib.net/api/get?artist_name=G-Eazy&track_name=Still"
+      ],
+      "lyrics": {
+        "real": [
+          "I took some time off, it's time I start rappin' again",
+          "I was broke two years ago, was I happier then?",
+          "But money can't buy you happiness, and that's just the thing"
+        ],
+        "fake": "Riding through the midnight, chasing neon lights along the freeway again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=akmfOOxUiBo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/g-eazy-still--audio-.jpg"
+    },
+    {
+      "id": "yt-Qvu033SBMYU",
+      "title": "Freed From Desire",
+      "artist": "Gala",
+      "year": 1996,
+      "country": "IT",
+      "genre": "Eurodance",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Anthem",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Eurodance-Hymne von 1996, die in Belgien und Frankreich die Charts anführte.",
+        "Die Sängerin, 1975 in Mailand geboren, mischt Dance-Pop mit buddhistischer Philosophie.",
+        "Der Text räumt mit dem ewigen Begehren nach mehr auf – ein 'Fight-the-Power'-Song.",
+        "Debütalbum 'Come into My Life'; später wurde das Stück zur Tormusik bei der Fußball-WM 2022.",
+        "Refrain: 'Mind and senses purified' – begleitet vom ikonischen 'Na-Na-Na-Na'-Gesang."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Freed_from_Desire",
+        "https://en.wikipedia.org/wiki/Gala_(singer)",
+        "https://www.songfacts.com/facts/gala/freed-from-desire",
+        "https://en.wikipedia.org/wiki/Eurodance",
+        "https://lrclib.net/api/get?artist_name=Gala&track_name=Freed%20from%20Desire"
+      ],
+      "lyrics": {
+        "real": [
+          "My love has got no money, he's got his strong beliefs",
+          "My love has got no power, he's got his strong beliefs",
+          "Freedom and love, what he's looking for"
+        ],
+        "fake": "Dancing in the fire, taking it higher, higher and higher"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Qvu033SBMYU",
+        "spotify": "https://open.spotify.com/track/2mcciKrwXL9mqXQL4jT7Hv"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/dance-gala-freed-from-desire.jpg"
+    },
+    {
+      "id": "country-garth-brooks-friends",
+      "title": "Friends in Low Places",
+      "artist": "Garth Brooks",
+      "year": 1990,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Happy",
+        "Party",
+        "Sing-along"
+      ],
+      "hints": [
+        "Die Working-Class-Hymne, die 1990 als Leit-Single erschien und vier Wochen auf Platz 1 der Country-Charts stand.",
+        "Geschrieben von den Nashville-Autoren Bud Lee und Dewayne Blackwell.",
+        "Der Titel fiel beim Mittagessen in einem Restaurant, als einer der Autoren kein Geld für die Rechnung hatte.",
+        "Eine frühere Aufnahme von Mark Chesnutt aus 'Too Cold at Home' hatte dem Sänger die Idee erst geliefert.",
+        "Refrain: 'Where the whiskey drowns and the beer chases' – der Kneipen-Standard schlechthin."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Friends_in_Low_Places",
+        "https://www.songfacts.com/facts/garth-brooks/friends-in-low-places",
+        "https://en.wikipedia.org/wiki/Garth_Brooks",
+        "https://en.wikipedia.org/wiki/No_Fences",
+        "https://www.lyrics.com/lyric/3686672/Garth+Brooks/Friends+in+Low+Places"
+      ],
+      "lyrics": {
+        "real": [
+          "Blame it all on my roots, I showed up in boots, and ruined your black tie affair",
+          "I've got friends in low places, where the whiskey drowns and the beer chases",
+          "My blues away, and I'll be okay"
+        ],
+        "fake": "Neon beer signs buzzing low above the empty dance floor tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mvCgSqPZ4EM"
+      },
+      "coverUrl": "/covers/country-garth-brooks-friends.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "piano-jules-madworld",
+      "title": "Mad World",
+      "artist": "Gary Jules",
+      "year": 2001,
+      "country": "US",
+      "genre": "Piano Ballade",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Dark"
+      ],
+      "hints": [
+        "2001 erschien eine reduzierte Klavier-Fassung eines neunzehn Jahre älteren Synthpop-Klassikers.",
+        "Die Vorlage stammt von einer britischen Band aus Bath.",
+        "Die Aufnahme entstand für den Soundtrack eines düsteren Science-Fiction-Thrillers mit Zeitreise-Handlung.",
+        "Statt Synthesizern und Schlagzeug hört man Klavier-Akkorde, ein Mellotron, das eine Cello imitiert, und Electric Piano – die Fassung dauert gut drei Minuten (3:04).",
+        "Im Refrain wiederholt die Stimme zuletzt den Titel – davor fällt die Zeile 'When people run in circles'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mad_World",
+        "https://en.wikipedia.org/wiki/Tears_for_Fears",
+        "https://en.wikipedia.org/wiki/Donnie_Darko",
+        "https://lrclib.net/api/get?artist_name=Gary%20Jules&track_name=Mad%20World",
+        "https://en.wikipedia.org/wiki/Gary_Jules"
+      ],
+      "lyrics": {
+        "real": [
+          "All around me are familiar faces, worn out places, worn out faces",
+          "And I find it kind of funny, I find it kind of sad",
+          "The dreams in which I'm dying are the best I've ever had"
+        ],
+        "fake": "The autumn leaves are falling and the world keeps turning hollow"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=etSbOs3aUqI",
+        "spotify": "https://open.spotify.com/track/3JOVTQ5h8HGFnDdp4VT3MP"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-jules-madworld.jpg",
+      "packs": [
+        "piano-ballads",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-LrjM8Fi7J58",
+      "title": "Cars (Remastered)",
+      "artist": "Gary Numan",
+      "year": 1979,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der britische Synthpop-Klassiker, mit dem der Musiker 1979 erstmals solo die UK-Charts anführte.",
+        "In den USA erreichte der Song Platz 9, in Großbritannien war er ein Nummer-eins-Hit.",
+        "Der Text thematisiert Technologie und Wohlstand als Mittel, sich von anderen Menschen abzuschotten.",
+        "Die Idee entstand bei einer Autofahrt, als der Musiker das Auto als 'Panzer der modernen Gesellschaft' beschrieb.",
+        "Das Stück wurde später vom DJ Chicane in 'Hiding All the Stars' gesampelt."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cars_(song)",
+        "https://www.songfacts.com/facts/gary-numan/cars",
+        "https://en.wikipedia.org/wiki/Gary_Numan",
+        "https://lrclib.net/api/get?artist_name=Gary%20Numan&track_name=Cars",
+        "https://en.wikipedia.org/wiki/Tubeway_Army"
+      ],
+      "lyrics": {
+        "real": [
+          "Here in my car, I feel safest of all",
+          "I can lock all my doors, it's the only way to live in cars",
+          "Where the image breaks down, will you visit me, please"
+        ],
+        "fake": "Burning through the night, chasing taillights on the highway again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LrjM8Fi7J58"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/gary-numan-cars--remastered-2009-.jpg"
+    },
+    {
+      "id": "finale-gayle-abcdefu",
+      "title": "abcdefu",
+      "artist": "GAYLE",
+      "year": 2021,
+      "country": "US",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Angry",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Der Debüt-Track einer 17-jährigen US-Sängerin, erschienen im August 2021.",
+        "Mit zwölf Jahren wurde sie nach Nashville umgesiedelt, wo Kara DioGuardi sie entdeckte.",
+        "Der Text ist eine wütende Abrechnung mit dem Ex-Partner – entstanden aus dem gescheiterten Versuch, die nette Verliererin zu sein.",
+        "Platz 1 in den globalen Billboard-Charts, Platz 3 in den US-Hot-100 – und in 16 Ländern auf Platz 1.",
+        "Der Titel ist ein Buchstaben-Akrostichum: 'A-B-C-D-E, F-U'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/ABCDEFU",
+        "https://en.wikipedia.org/wiki/Gayle_(singer)",
+        "https://www.songfacts.com/facts/gayle/abcdefu",
+        "https://www.officialcharts.com/chart-news/who-is-gayle-the-17-year-old-teen-tearing-up-the-charts-with-debut-smash-abcdefu__34570/",
+        "https://lrclib.net/api/get?artist_name=GAYLE&track_name=abcdefu"
+      ],
+      "lyrics": {
+        "real": [
+          "A-B-C-D-E, F-U and your mom and your sister and your job",
+          "And your broke-ass car and that shit you call art",
+          "Fuck you and your friends that I'll never see again"
+        ],
+        "fake": "Twenty six letters and not one of them says what you really mean"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NaFd8ucHLuo"
+      },
+      "coverUrl": "/covers/finale-gayle-abcdefu.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "80s-gazebo-chopin",
+      "title": "I Like Chopin",
+      "artist": "Gazebo",
+      "year": 1983,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Dreamy"
+      ],
+      "hints": [
+        "Italo-Disco-Hymne, die 1983/84 in Deutschland, Österreich, der Schweiz, Finnland, Spanien, Portugal und Dänemark auf Platz 1 der Single-Charts stand.",
+        "Der Titel verspricht einen berühmten Klavierkomponisten, doch die Musik enthält bewusst keine Motive von ihm – komponiert und produziert hat Pierluigi Giombini.",
+        "Die Single erschien im September 1983 beim Mailänder Label Baby Records – ein Jahr nach der Debüt-Single 'Masterpiece'.",
+        "Die Single-Fassung dauert gut vier Minuten, die 12-Zoll-Maxi-Version 7:40 Minuten.",
+        "Der Text beginnt mit einem Klavier, das 'so delightful unusual' wirkt, und erzählt von Regentagen, die kein Abschied nehmen."
+      ],
+      "lyrics": {
+        "real": [
+          "Remember that piano, so delightful unusual",
+          "I like Chopin, love me now and again",
+          "Rainy days never say goodbye"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our happy love"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4mTMj-NWa0U",
+        "spotify": "https://open.spotify.com/track/2FHnN5ELL83TGbtXMDzoiJ",
+        "amazonMusic": "https://music.amazon.com/tracks/B079SYBFGT"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-gazebo-chopin.jpg",
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Like_Chopin",
+        "https://de.wikipedia.org/wiki/I_Like_Chopin",
+        "https://en.wikipedia.org/wiki/Gazebo_(musician)",
+        "https://en.wikipedia.org/wiki/Pierluigi_Giombini",
+        "https://lrclib.net/api/get?artist_name=Gazebo&track_name=I%20Like%20Chopin"
+      ]
+    },
+    {
+      "id": "yt-R_7T7-pa9NA",
+      "title": "Bruttosozialprodukt",
+      "artist": "Geier Sturzflug",
+      "year": 1983,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "NDW-Klassiker einer Band aus Bochum, der in Deutschland, Österreich und der Schweiz auf Platz 1 der Single-Charts stand.",
+        "Der Titel nimmt den volkswirtschaftlichen Begriff für die gesamte Wirtschaftsleistung eines Staates ironisch aufs Korn.",
+        "Der Text schildert Fabrikarbeiter-Alltag: Werksirene am Morgen, Stechuhr, Neonsonne und ein Gabelstaplerführer, der mit der Stapelgabel prahlt.",
+        "1983 erschien das Stück auf dem zweiten Album 'Heiße Zeiten' – im selben Jahr trat die Band in der ZDF-Hitparade auf und belegte dort den ersten Platz.",
+        "Eine Textzeile über die Müllabfuhr sorgte live für Ärger – im Fernsehen wurde aus 'holt den ganzen Plunder' die Variante 'holt sich einen runter'."
+      ],
+      "lyrics": {
+        "real": [
+          "Wenn früh am Morgen die Werksirene dröhnt",
+          "Wir steigern das Bruttosozialprodukt",
+          "Und am Mittwoch kommt die Müllabfuhr und holt den ganzen Plunder"
+        ],
+        "fake": "Wir tanzen im Regen, die Stadt schläft und die Lichter gehen aus"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=R_7T7-pa9NA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "German Classics",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/geier-sturzflug-bruttosozialprodukt.jpg",
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Geier_Sturzflug",
+        "https://de.wikipedia.org/wiki/Friedel_Geratsch",
+        "https://de.wikipedia.org/wiki/Neue_Deutsche_Welle",
+        "https://de.wikipedia.org/wiki/Bruttoinlandsprodukt",
+        "https://lrclib.net/api/get?artist_name=Geier%20Sturzflug&track_name=Bruttosozialprodukt"
+      ]
+    },
+    {
+      "id": "yt-yvhx5gMmSPs",
+      "title": "Algo Contigo",
+      "artist": "Gente de Zona",
+      "year": 2016,
+      "country": "CU",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die kubanische Duo-Formation aus Havanna wurde 2014 mit 'Bailando' weltberühmt.",
+        "Der Song ist die zweite Spur des dritten Albums 'Visualízate', das am 22. April 2016 bei Sony Music Latin erschien – das 'internationale Debüt' des kubanischen Duos.",
+        "Das dritte Album gewann einen Latin Grammy für das beste Tropical-Fusion-Album.",
+        "Der Text ist eine reine Tanznummer: 'Mueve tu cintura' und 'Estamos bailando, tú y yo gozando'.",
+        "Ihr Welthit 'Bailando' war das erste spanischsprachige Lied, das eine Milliarde YouTube-Aufrufe erreichte."
+      ],
+      "lyrics": {
+        "real": [
+          "Mueve tu cintura, que tú sabes que es lo que quiero yo",
+          "Estamos bailando, tú y yo gozando",
+          "Para quitarnos las ganas, para meternos en líos"
+        ],
+        "fake": "Bailamos en la arena, con el sol en la cara, cantamos hasta el final"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yvhx5gMmSPs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/gente-de-zona-algo-contigo.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Gente_de_Zona",
+        "https://en.wikipedia.org/wiki/Visual%C3%ADzate",
+        "https://music.apple.com/us/album/visual%C3%ADzate/1097132800",
+        "https://es.wikipedia.org/wiki/Gente_de_Zona",
+        "https://lrclib.net/api/get?artist_name=Gente%20de%20Zona&track_name=Algo%20Contigo"
+      ]
+    },
+    {
+      "id": "yt-VMp55KH_3wo",
+      "title": "La Gozadera",
+      "artist": "Gente de Zona",
+      "year": 2015,
+      "country": "CU",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die kubanische Duo-Formation feierte 2015 ihren internationalen Durchbruch – der Song wurde von vielen zur inoffiziellen Hymne Lateinamerikas ernannt.",
+        "Die Single erschien am 30. April 2015 als Lead-Single des dritten Albums 'Visualízate' bei Sony Music Latin.",
+        "Der Titel bedeutet übersetzt so viel wie 'gute Party' – gefeiert wird die Vielfalt der Karibik von Miami über Puerto Rico bis zur Dominikanischen Republik.",
+        "Produzent war Motiff; später kam eine Salsa-Version von Sergio George dazu.",
+        "Im Refrain reihnen sich die Länder aneinander: 'Perú con Hondura', 'Chile con Argentina', 'Panamá trae la zandunga'."
+      ],
+      "lyrics": {
+        "real": [
+          "Miami me lo confirmó gente de zona",
+          "Puerto Rico me lo regaló Marc Anthony",
+          "El mundo se está sumando a la fiesta de los latinos"
+        ],
+        "fake": "Caminando por la playa, con la luna encendida, me dices que me quieres"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMp55KH_3wo",
+        "spotify": "https://open.spotify.com/track/0OMRAvrtLWE2TvcXorRiB9"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/gente-de-zona-la-gozadera-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Gozadera",
+        "https://en.wikipedia.org/wiki/Gente_de_Zona",
+        "https://en.wikipedia.org/wiki/Visual%C3%ADzate",
+        "https://en.wikipedia.org/wiki/Marc_Anthony",
+        "https://lrclib.net/api/get?artist_name=Gente%20de%20Zona&track_name=La%20Gozadera"
+      ]
+    },
+    {
+      "id": "yt-8BMnz4i2dM8",
+      "title": "Más Macarena",
+      "artist": "Gente de Zona",
+      "year": 2016,
+      "country": "CU",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die kubanische Band coverte den spanischen Party-Klassiker von Los del Río, dessen Original 1993 erschien.",
+        "Das spanische Duo hatte mit dem Original Weltruhm – erst der Remix von den Bayside Boys (1995) machte den Song weltweit zum Tanzhit.",
+        "Die Cover-Version erschien 2016 als Single der kubanischen Band.",
+        "Im Text spielt die Begegnung in Havanna – die Band bringt den spanischen Klassiker in ihre Heimatstadt.",
+        "Erzählt wird von einer dunkelhaarigen Freundin namens 'Andalucía' und von einem Rhythmus, den niemand aufhalten kann."
+      ],
+      "lyrics": {
+        "real": [
+          "Dale a tu cuerpo alegría, que tu cuerpo es pa' darle alegría y cosa buena",
+          "Ay, yo no sé lo que es la pena, y vivo hoy contigo alegría",
+          "Que tengo una novia morena, que se llama Andalucía"
+        ],
+        "fake": "Salimos a bailar, con la música en alto, hasta que amanezca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8BMnz4i2dM8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/gente-de-zona-más-macarena.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Gente_de_Zona",
+        "https://en.wikipedia.org/wiki/En_Letra_de_Otro_(Gente_de_Zona_album)",
+        "https://en.wikipedia.org/wiki/Los_del_R%C3%ADo",
+        "https://es.wikipedia.org/wiki/Los_del_R%C3%ADo",
+        "https://lrclib.net/api/get?artist_name=Gente%20de%20Zona&track_name=M%C3%A1s%20Macarena"
+      ]
+    },
+    {
+      "id": "yt-_oMfwHYSRIk",
+      "title": "Traidora",
+      "artist": "Gente de Zona",
+      "year": 2015,
+      "country": "CU",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die kubanische Band veröffentlichte den Song am 13. November 2015 bei Sony Music Latin – ein halbes Jahr nach ihrem Welthit vom 30. April 2015.",
+        "Er erschien als Auskopplung des dritten Albums 'Visualízate', das im April 2016 folgte.",
+        "Reggaeton und Salsa mischen sich hier: eine Ballade über Verlust, Sehnsucht und die Angst, allein gelassen zu werden.",
+        "Im Text singt der Sänger: 'Yo solo quiero darte amor' und bittet darum, nicht mehr allein zu sein.",
+        "Refrainzeile: 'Porque sé que te perdí' – dazwischen ein langgezogenes 'Uoh-oh'."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo solo quiero darte amor",
+          "Porque sé que te perdí",
+          "No puedo ni quiero sacarte de mi corazón"
+        ],
+        "fake": "Caminando por la arena, con el sol cayendo, la música se va despacio"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_oMfwHYSRIk",
+        "spotify": "https://open.spotify.com/track/7Fl3wSxRqBljyQH8dJSz9c"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/gente-de-zona-traidora-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Traidora",
+        "https://en.wikipedia.org/wiki/Gente_de_Zona",
+        "https://en.wikipedia.org/wiki/Visual%C3%ADzate",
+        "https://en.wikipedia.org/wiki/Marc_Anthony",
+        "https://lrclib.net/api/get?artist_name=Gente%20de%20Zona&track_name=Traidora"
+      ]
+    },
+    {
+      "id": "soul-george-night",
+      "title": "Give Me the Night",
+      "artist": "George Benson",
+      "year": 1980,
+      "country": "US",
+      "genre": "Soul / Funk / Jazz focus",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Nightlife"
+      ],
+      "hints": [
+        "Nach einem Monat Studiozeit wollte der Gitarrist nach Hause – der Produzent rief ihn zurück, und die Aufnahme entstand in nur einem Tag. Die Gitarrenphrase aus der Mitte legte er anschließend über den kompletten Track, auch über das Intro.",
+        "Der Songwriter war Keyboarder der Band Heatwave und hatte schon Hits für Michael Jackson geschrieben; der Produzent holte ihn für sein neues Label ins Studio, und der Gitarrist hatte sich vorher das von demselben Produzenten produzierte 'Off the Wall' angehört.",
+        "Im Studio stand eine Garde von Sessionmusikern: E-Piano von Herbie Hancock, Synth-Bass von Richard Tee, Percussion von Paulinho da Costa, eine zweite Gitarre von Lee Ritenour – und im Hintergrund scattete Patti Austin.",
+        "Die Single erschien im Juni 1980 bei Warner Bros. als erste Auskopplung des achtzehnten Studioalbums des Gitarristen. Sie war die erste Nummer eins des Interpreten in den US-R&B-Charts (drei Wochen), kam in den US-Hot-100-Charts auf Platz vier und in der Disco-Charta auf Platz zwei.",
+        "Das Musikvideo zeigt den Gitarristen in Rollschuhen auf dem Boardwalk von Venice Beach bei Sonnenuntergang, daneben eine Band auf der Bühne. 2021 wurde die Nummer nachträglich dem 'Yacht Rock' zugerechnet."
+      ],
+      "lyrics": {
+        "real": [
+          "You need the evening action",
+          "On a ride through paradise",
+          "Don't you know we can fly"
+        ],
+        "fake": "Lonely hearts in a crowded room, waiting for the midnight train"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Omnpu8mzX4c",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-george-night.jpg",
+      "packs": [
+        "soul-funk",
+        "jazz-blues",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Give_Me_the_Night_(song)",
+        "https://www.theguardian.com/culture/2019/apr/30/george-benson-how-we-made-give-me-the-night-quincy-jones",
+        "https://www.songfacts.com/facts/george-benson/give-me-the-night",
+        "https://en.wikipedia.org/wiki/George_Benson",
+        "https://itunes.apple.com/search?term=George+Benson+Give+Me+the+Night&limit=5&entity=song"
+      ]
+    }
+  ]
+}

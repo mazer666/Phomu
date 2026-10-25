@@ -1,0 +1,732 @@
+{
+  "songs": [
+    {
+      "id": "soul-marvin-gaye-whats-going-on",
+      "title": "What's Going On",
+      "artist": "Marvin Gaye",
+      "year": 1971,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Serious",
+        "Spiritual",
+        "Thoughtful"
+      ],
+      "hints": [
+        "Inspiriert von einem Polizeieinsatz bei einer Anti-Kriegs-Demo in Berkeley im Mai 1969, den ein Motown-Sänger miterlebte und nie wieder vergaß.",
+        "Der Song entstand aus einer gemeinsamen Skizze zweier Motown-Musiker, die der Sänger später umschrieb und selbst produzierte - ein Bruch mit dem bisherigen Motown-Klang.",
+        "Der Labelchef lehnte das Stück ab und nannte es das Schlechteste, was er je gehört habe; der Sänger verweigerte weitere Aufnahmen, bis die Veröffentlichung freigegeben wurde.",
+        "Die Aufnahme entstand 1970 im Motown-Studio Hitsville USA; im Hintergrund sind Partymusik und aus dem Gespräch gerissene Stimmen zweier Spieler der Detroit Lions zu hören, mit denen der Sänger gut befreundet war.",
+        "Refrain: 'Mother, mother, there's too many of you crying' - die Zeile wurde zu einer Ikone der Soul-Geschichte."
+      ],
+      "lyrics": {
+        "real": [
+          "There's too many of you crying",
+          "War is not the answer",
+          "For only love can conquer hate"
+        ],
+        "fake": "Pick up the pieces, gather the crowd, the whole world's a stage and the lights are burning down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=H-kA3UtBj4M",
+        "spotify": "https://open.spotify.com/track/7Mu6XXQ6PHvMeVEMGN78Oi",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-marvin-gaye-whats-going-on.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/What's_Going_On_(song)",
+        "https://en.wikipedia.org/wiki/What's_Going_On_(album)",
+        "https://en.wikipedia.org/wiki/Marvin_Gaye",
+        "https://www.songfacts.com/facts/marvin-gaye/whats-going-on",
+        "https://lrclib.net/api/get?artist_name=Marvin%20Gaye&track_name=What%27s%20Going%20On"
+      ]
+    },
+    {
+      "id": "disney-sleeping-dream",
+      "title": "Once Upon a Dream",
+      "artist": "Mary Costa & Bill Shirley",
+      "year": 1959,
+      "country": "US",
+      "genre": "Soundtrack / Classical / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand für Disneys Zeichentrickfilm 'Dornröschen' und erschien als Single im Januar 1959.",
+        "Die Musik adaptierte der Disney-Komponist George Bruns, den Text schrieben Jack Lawrence und Sammy Fain.",
+        "Die Melodie stammt aus Tschaikowskis Ballett 'Dornröschen' op. 66 von 1889 - die Filmmusik folgt dem Ballett.",
+        "Die Aufnahme erreichte in den USA Gold-Status; gesungen wurde die Szene von den Synchronsprechern der beiden Hauptfiguren des Films.",
+        "Refrain: 'I know you, I walked with you...' - das Traumduett wurde zu einem der bekanntesten Disney-Gesänge."
+      ],
+      "lyrics": {
+        "real": [
+          "I know you, I walked with you once upon a dream",
+          "I know you, the gleam in your eyes is so familiar a gleam",
+          "Yet I know it's true that visions are seldom all they seem"
+        ],
+        "fake": "Dancing in the moonlight, spinning with you until the morning comes"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TXbHShUnwxY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/mary-costa---bill-shirley-once-upon-a-dream-single.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Once_Upon_a_Dream_(Sleeping_Beauty_song)",
+        "https://en.wikipedia.org/wiki/Sleeping_Beauty_(1959_film)",
+        "https://en.wikipedia.org/wiki/Mary_Costa",
+        "https://www.songfacts.com/facts/mary-costa-and-bill-shirley/once-upon-a-dream",
+        "https://lrclib.net/api/get?artist_name=Mary%20Costa&track_name=Once%20Upon%20a%20Dream"
+      ]
+    },
+    {
+      "id": "yt-a8dS0aQ03ZI",
+      "title": "Las Que Se Ponen Bien la Falda ft. Ivy Queen",
+      "artist": "María José",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track erschien 2016 auf dem Album 'Habla Ahora' der mexikanischen Sängerin.",
+        "Gast ist die puertorikanische Reggaetonerin, die sich im Song selbst vorstellt und später auch im Refrain namentlich erwähnt wird.",
+        "Der Text richtet sich an Frauen, die sich nicht auf ihr Äußeres reduzieren lassen wollen - es geht um Selbstbewusstsein und Wut.",
+        "Die Single erschien im Mai 2016 über das mexikanische Label OCESA Seitrack als erster Auszug aus dem Album; das Video wurde in Miami gedreht.",
+        "Im Refrain zählen die Frauen an, die den Rock tragen und die es heute an die Macht schicken - eine Battle-Anrede zwischen den beiden MCs."
+      ],
+      "lyrics": {
+        "real": [
+          "Nosotras somos mucho más que sexo",
+          "Bajo el cabello tenemos cerebro",
+          "Un corazón pa' sentir"
+        ],
+        "fake": "Baila conmigo, apache, prende la ciudad, somos las reinas de la noche"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=a8dS0aQ03ZI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/maría-josé-las-que-se-ponen-bien-la-falda-ft--ivy-queen.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Las_que_se_ponen_bien_la_falda",
+        "https://es.wikipedia.org/wiki/Ivy_Queen",
+        "https://lrclib.net/api/get?artist_name=Mar%C3%ADa%20Jos%C3%A9&track_name=Las%20Que%20Se%20Ponen%20Bien%20la%20Falda",
+        "https://itunes.apple.com/search?term=Mar%C3%ADa%20Jos%C3%A9%20Las%20Que%20Se%20Ponen%20Bien%20la%20Falda&limit=3&entity=song",
+        "https://musicbrainz.org/ws/2/release-group/?query=releasegroup:%22Habla%20Ahora%22%20AND%20artist:%22Mar%C3%ADa%20Jos%C3%A9%22&fmt=json"
+      ]
+    },
+    {
+      "id": "yt-5-FGxUINL-Q",
+      "title": "Astronaut In The Ocean",
+      "artist": "Masked Wolf",
+      "year": 2019,
+      "country": "AU",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Der australische Rapper veröffentlicht den Track 2019 über sein eigenes Label Teamwrk - erst die Wiederveröffentlichung 2021 nach einem Wechsel zu Elektra Records machte ihn zum Erfolg.",
+        "Produzent war Tyron Hapi aus Melbourne, der zuvor mit 'Anyway' (2017) auffiel; davor arbeitete der Rapper im Vertrieb und nahm Hunderte eigene Songs auf.",
+        "Der Text verarbeitet Depression und Angst - der Rapper sprach von einem Ort, an dem er sich festgefangen und niedrig gefühlt habe.",
+        "Das Video entstand in einem Studio in Sydney in weniger als einem halben Tag, mit Retro-Projektion auf einer Rundhorizont-Bühne; die Animationen kamen aus Melbourne.",
+        "Der Refrain wiederholt die Frage 'What you know about rollin' down in the deep' - daraus wurde ein TikTok-Meme, das den Song 2021 in die Charts brachte."
+      ],
+      "lyrics": {
+        "real": [
+          "What you know about rollin' down in the deep?",
+          "When your brain goes numb, you can call that mental freeze",
+          "I believe in G-O-D (Ayy)"
+        ],
+        "fake": "Rolling through the city with the windows down, chasing every dollar in this town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5-FGxUINL-Q",
+        "spotify": "https://open.spotify.com/track/3VT8hOC5vuDXBsHrR53WFh",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Hip Hop Essentials"
+      ],
+      "coverUrl": "/covers/masked-wolf-astronaut-in-the-ocean.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Astronaut_in_the_Ocean",
+        "https://en.wikipedia.org/wiki/Masked_Wolf",
+        "https://www.songfacts.com/facts/masked-wolf/astronaut-in-the-ocean",
+        "https://lrclib.net/api/get?artist_name=Masked%20Wolf&track_name=Astronaut%20In%20The%20Ocean",
+        "https://musicbrainz.org/ws/2/release-group/?query=releasegroup:%22Astronomical%22%20AND%20artist:%22Masked%20Wolf%22&fmt=json"
+      ]
+    },
+    {
+      "id": "disco-massive-sympathy",
+      "title": "Unfinished Sympathy",
+      "artist": "Massive Attack",
+      "year": 1991,
+      "country": "GB",
+      "genre": "Trip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Atmospheric",
+        "Serious"
+      ],
+      "hints": [
+        "Der Track erschien 1991 auf dem Debütalbum eines britischen Trip-Hop-Trios, das sich aus drei Produzenten zusammensetzte.",
+        "Die Sängerin Shara Nelson ist auch auf 'Safe From Harm' zu hören - hier schildert sie eine Sehnsucht, die von einer früheren Verletzung überschattet wird.",
+        "Die Rhythmusspur sampelt die Glocken aus 'Take Me To The Mardi Gras' von Bob James aus dem Jahr 1975, die männliche Stimme stammt von John McLaughlins 'Planetary Citizen'.",
+        "Das Video entstand als einziger durchgehender Take auf dem West Pico Boulevard in Los Angeles, gedreht von Baillie Walsh.",
+        "Refrain: 'You're the book that I have opened' - 1996 coverte Tina Turner den Song auf 'Wildest Dreams'."
+      ],
+      "lyrics": {
+        "real": [
+          "You're the book that I have opened",
+          "Like a soul without a mind",
+          "In a body without a heart"
+        ],
+        "fake": "Down on the river where the neon bleeds, we trade our shadows for the other's needs"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZWmrfgj0MZI",
+        "spotify": "https://open.spotify.com/track/7s2zwn3fplqvKHHdR2CAgx",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/disco-massive-sympathy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Global Hits 1950-2026",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Unfinished_Sympathy",
+        "https://en.wikipedia.org/wiki/Blue_Lines",
+        "https://en.wikipedia.org/wiki/Massive_Attack",
+        "https://www.songfacts.com/facts/massive-attack/unfinished-sympathy",
+        "https://lrclib.net/api/get?artist_name=Massive%20Attack&track_name=Unfinished%20Sympathy"
+      ]
+    },
+    {
+      "id": "metal-mastodon-thunder",
+      "title": "Blood and Thunder",
+      "artist": "Mastodon",
+      "year": 2004,
+      "country": "US",
+      "genre": "Sludge Metal / Progressive Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Epic"
+      ],
+      "hints": [
+        "Eroeffnet das Konzeptalbum 'Leviathan' von 2004, das sich an Herman Melvilles Roman 'Moby-Dick' orientiert.",
+        "Besticht durch das donnernde Riffing und die kraftvolle Performance.",
+        "Thematisiert den hasserfüllten Kampf gegen das Unausweichliche.",
+        "Besitzt einen Gast-Gesang von Neil Fallon (Clutch).",
+        "Refrain: 'White whale! Holy grail!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I think that someone is trying to kill me",
+          "What remorseless emperor commands me",
+          "The fight for this fish is a fight to the death"
+        ],
+        "fake": "Sail through the endless grey, the captain's voice is fading away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TsdIO8RHMTc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-mastodon-thunder.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Blood_and_Thunder_(song)",
+        "https://en.wikipedia.org/wiki/Leviathan_(Mastodon_album)",
+        "https://en.wikipedia.org/wiki/Mastodon_(band)",
+        "https://www.songfacts.com/facts/mastodon/blood-and-thunder",
+        "https://lrclib.net/api/get?artist_name=Mastodon&track_name=Blood%20and%20Thunder"
+      ]
+    },
+    {
+      "id": "piano-matchbox-unwell",
+      "title": "Unwell",
+      "artist": "Matchbox Twenty",
+      "year": 2003,
+      "country": "US",
+      "genre": "Alt-Rock / Pop influence",
+      "difficulty": "easy",
+      "mood": [
+        "Honest",
+        "Energy",
+        "Thoughtful"
+      ],
+      "hints": [
+        "Der Sänger schrieb das Stück als Metapher für die Menschheit allgemein - für alle, die sich kaputt fühlen und damit allein sind.",
+        "18 Wochen lang stand es an der Spitze der US Adult-Top-40-Liste, zwei weitere Wochen auf Platz 1 der AC-Charts; in den Billboard Hot 100 kam es auf Rang 5.",
+        "Aufgenommen wurde der Song in den Bearsville Studios im Bundesstaat New York sowie im Hit Factory in Manhattan, produziert von Matt Serletic.",
+        "Das Video drehte Meiert Avis, es war 2003 bei VH1 die meistgespielte der Top 40, und 2011 zählte VH1 den Song zu den 82 besten Liedern der 2000er.",
+        "Für 2004 wurde das Stück in der Kategorie 'Best Pop Performance by a Duo or Group with Vocals' für den Grammy nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Friends with shadows on my wall",
+          "I'm not crazy, I'm just a little unwell",
+          "I know, right now you can't tell"
+        ],
+        "fake": "Dancing in the dark with my guitar under the neon lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VfDwWEpuxfM",
+        "spotify": "https://open.spotify.com/track/6Bm6qUCSatPAqkQllFL7oA",
+        "amazonMusic": "https://music.amazon.com/tracks/B0011Z8PMS"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-matchbox-unwell.jpg",
+      "packs": [
+        "piano-ballads",
+        "2000s Pop & RnB",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Unwell_(song)",
+        "https://en.wikipedia.org/wiki/More_Than_You_Think_You_Are",
+        "https://en.wikipedia.org/wiki/Matchbox_Twenty",
+        "https://www.songfacts.com/facts/matchbox-twenty/unwell",
+        "https://lrclib.net/api/get?artist_name=Matchbox%20Twenty&track_name=Unwell"
+      ]
+    },
+    {
+      "id": "yt-BkpqU3gdjlw",
+      "title": "Que Sorte A Nossa",
+      "artist": "Matheus & Kauan",
+      "year": 2015,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein brasilianisches Bruderduo aus Itapuranga im Bundesstaat Goiás mischt Sertanejo und Pop; ihr erstes Album finanzierten sie, indem sie das Auto der Familie verkauften.",
+        "Der Durchbruch kam mit ihrer Coverversion von Paula Mattos' Song - sie erreichte 2015 mehr als 200 Millionen YouTube-Aufrufe.",
+        "Im Text dreht sich alles um Blicke und Lächeln - die Zeile 'Tantos sorrisos por aí, você querendo o meu' beschreibt das gegenseitige Begehren.",
+        "Zusammen mit Anitta nahmen sie 'Ao Vivo e a Cores' auf, das fast zwei Monate an der Spitze der brasilianischen Spotify-Charts stand.",
+        "Weitere Duette gab es mit Luan Santana und Michel Teló; die Cover-Version 'Coisas de Quem Ama' machten später Jorge & Mateus."
+      ],
+      "lyrics": {
+        "real": [
+          "Diz que pensa tanto em mim",
+          "Tantos sorrisos por aí, você querendo o meu",
+          "Eu não duvido não, que não foi por acaso"
+        ],
+        "fake": "A lua se acendeu no céu de agosto e o teu beijo tem gosto de café"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BkpqU3gdjlw",
+        "spotify": "https://open.spotify.com/track/44pllb9f5QwcrD2kKc0gS0",
+        "amazonMusic": "https://music.amazon.com/tracks/B0863SQ59R"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/matheus---kauan-que-sorte-a-nossa.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Matheus_%26_Kauan",
+        "https://pt.wikipedia.org/wiki/Paula_Mattos",
+        "https://en.wikipedia.org/wiki/Sertanejo_universit%C3%A1rio",
+        "https://lrclib.net/api/get?artist_name=Matheus%20%26%20Kauan&track_name=Que%20Sorte%20A%20Nossa",
+        "https://pt.wikipedia.org/wiki/Que_Sorte_a_Nossa"
+      ]
+    },
+    {
+      "id": "schlager-reim-verdammt",
+      "title": "Verdammt, ich lieb' Dich",
+      "artist": "Matthias Reim",
+      "year": 1990,
+      "country": "DE",
+      "genre": "Schlager / Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Autoren waren der Sänger selbst und Bernd Dietrich, der den Song auch produzierte; die Single erschien 1990 über Polydor, auf der B-Seite stand 'Maskenball'.",
+        "16 Wochen lang stand der Song auf Platz 1 der deutschen Media-Control-Charts und war der erfolgreichste Hit des Jahres 1990 in der BR Deutschland.",
+        "Auch in Österreich, Belgien, den Niederlanden und der Schweiz erreichte er die Spitze der Verkaufscharts.",
+        "Neben der englischen Fassung 'I Think I Love You' entstanden Cover in Französisch, Italienisch und Spanisch - 2021 nahm der Sänger eine neue englische Version mit David Hasselhoff auf.",
+        "Aus der ersten Strophe: 'Ich ziehe durch die Straßen bis nach Mitternacht' - nachts sitzt der Erzähler in einer Kneipe und denkt an die frühere Partnerin."
+      ],
+      "lyrics": {
+        "real": [
+          "Ich ziehe durch die Straßen bis nach Mitternacht",
+          "Verdammt, ich lieb' dich, ich lieb' dich nicht",
+          "Verdammt, ich brauch' dich, ich brauch' dich nicht"
+        ],
+        "fake": "Im Dunkeln lachst du, und der Regen trommelt aufs Dach, wir tanzen, bis der Morgen wieder hell wird"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x6q0ciiqyG0",
+        "spotify": "https://open.spotify.com/track/2XEwnFyQhDBHq6rFEaAOQj",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DZTGHGY8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-reim-verdammt.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "80s-pop",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://api.lyrics.ovh/v1/Matthias%20Reim/Verdammt%2C%20ich%20lieb%27%20Dich",
+        "https://en.wikipedia.org/wiki/Matthias_Reim",
+        "https://de.wikipedia.org/wiki/Verdammt,_ich_lieb%E2%80%99_Dich",
+        "https://en.wikipedia.org/wiki/Polydor_Records",
+        "https://music.apple.com/us/album/reim-expanded-edition/1611040986"
+      ]
+    },
+    {
+      "id": "class-ravel-bolero",
+      "title": "Boléro",
+      "artist": "Maurice Ravel",
+      "year": 1928,
+      "country": "FR",
+      "genre": "Impressionism / Ballet",
+      "difficulty": "medium",
+      "mood": [
+        "Hypnotic",
+        "Powerful",
+        "Lively"
+      ],
+      "hints": [
+        "Auslöser war die Tänzerin Ida Rubinstein: Sie wollte zunächst sechs Stücke aus Albéniz' Iberia für großes Orchester instrumentiert haben - als der Komponist erfuhr, dass dies schon geschehen war, schrieb er stattdessen ein völlig neues Werk nach dem Prinzip des spanischen Tanzes.",
+        "Der Komponist improvisierte die Melodie mit einem Finger am Klavier in Saint-Jean-de-Luz und sagte zu einem Freund, er wolle das Thema ohne Entwicklung wiederholen und das Orchester nach und nach verstärken.",
+        "Uraufführung am 22. November 1928 in der Pariser Oper, choreografiert von Bronislava Nijinska, mit Bühnenbild und Handlung von Alexandre Benois; dirigiert wurde Walther Straram.",
+        "Die Erstaufnahme entstand am 13. Januar 1930 bei der Gramophone Company mit Piero Coppola, am Folgetag dirigierte der Komponist das Orchestre Lamoureux für Polydor.",
+        "Über einem ostinaten Rhythmus, der 169 Mal wiederholt wird, steigt das Werk von Pianissimo bis zum Fortissimo an; im Orchester ist eine Sopranino-Saxofonpartie vorgesehen, die es eigentlich gar nicht gibt."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=r30D3SW4OVw",
+        "spotify": "https://open.spotify.com/track/37S1zxrr5IBLlrTPmnQGv3",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/class-ravel-bolero.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bol%C3%A9ro",
+        "https://en.wikipedia.org/wiki/Maurice_Ravel",
+        "https://en.wikipedia.org/wiki/Ida_Rubinstein",
+        "https://en.wikipedia.org/wiki/Palais_Garnier",
+        "https://music.apple.com/us/album/sommernachtskonzert-2016/1117389004"
+      ]
+    },
+    {
+      "id": "yt-DDeV0sEjplI",
+      "title": "White Lies",
+      "artist": "Max Frost",
+      "year": 2013,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Der texanische Sänger schrieb den Song im Sommer 2012 und stellte ihn im März 2013 auf SoundCloud - nach über 1.000 Download-Meldungen wurde er zum meistgeladenen Track auf Blogs, woraufhin ein Plattenlabel ihn unter Vertrag nahm.",
+        "Im Dezember 2013 lief der Song in einem Werbespot für Kopfhörer von Beats Electronics; in den US-Charts für Adult Alternative erreichte er Platz 29.",
+        "Sein Debüt-EP 'Low High Low' erschien 2013, sein erstes Studioalbum 'Gold Rush' 2018 - dazwischen veröffentlichte er 'Good Morning', das zum Werbemotiv für ein Mineralwasser wurde.",
+        "Der Künstler mischt Soul und Blues mit Hip-Hop-Elementen und nennt Austin, seine Heimatstadt, den Ort, an dem alle Stile verschmelzen.",
+        "Refrain-Zeile: 'You got your red dress on' - im Text geht es um Misstrauen und darum, der Partnerin auf der Spur zu bleiben."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm picking up really sketch vibes",
+          "My woman's been telling me lies",
+          "You got your red dress on and you wanna play"
+        ],
+        "fake": "Neon signs are flashing on the boulevard while we chase the midnight in a rented car"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DDeV0sEjplI",
+        "spotify": "https://open.spotify.com/track/6dg4jncA9hbthBGFVo2djw",
+        "amazonMusic": "https://music.amazon.com/tracks/B00F94SPZE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/max-frost-white-lies.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Max_Frost",
+        "https://en.wikipedia.org/wiki/Atlantic_Records",
+        "https://en.wikipedia.org/wiki/Beats_By_Dre",
+        "https://en.wikipedia.org/wiki/Austin,_Texas",
+        "https://music.apple.com/us/album/low-high-low-ep/697917897"
+      ]
+    },
+    {
+      "id": "class-richter-daylight",
+      "title": "On the Nature of Daylight",
+      "artist": "Max Richter",
+      "year": 2004,
+      "country": "DE",
+      "genre": "Post-Minimalism",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Der deutsch-britische Komponist schrieb das Stück als Protest gegen den Irakkrieg 2003 und wollte das Album als 'Anti-Kriegs-Album' verstanden wissen - einen leisen Protest gegen die laute Rhetorik des Krieges.",
+        "Aufgenommen wurde es im Februar 2003 in London, in den Studios Eastcote und Hear No Evil.",
+        "Geschrieben ist es für ein Streichquintett - zwei Violinen, zwei Celli und eine Bratsche; es beginnt mit den tiefen Streichern, bevor die Geigen mit einer elegischen Melodie einsetzen, die sich wieder auflöst.",
+        "Das Stück gehört zu den meistgenutzten Musikstücken der Moderne - der Film 'Arrival' nutzte es so zentral, dass er dadurch für den Oscar in der Kategorie beste Originalmusik nicht mehr infrage kam.",
+        "Zum 15. und zum 20. Jubiläum veröffentlichte der Komponist Orchestralfassungen, die das Original für ein großes Streichorchester neu setzen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=InyT9Gyoz_o",
+        "spotify": "https://open.spotify.com/track/56oReVXIfUO9xkX7pHmEU0",
+        "amazonMusic": "https://music.amazon.com/tracks/B0FV4Q8H2Z"
+      },
+      "coverUrl": "/covers/class-richter-daylight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Global Hits 1950-2026",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/On_the_Nature_of_Daylight",
+        "https://en.wikipedia.org/wiki/The_Blue_Notebooks",
+        "https://en.wikipedia.org/wiki/Max_Richter",
+        "https://en.wikipedia.org/wiki/Arrival_(film)",
+        "https://en.wikipedia.org/wiki/Hamnet_(film)"
+      ]
+    },
+    {
+      "id": "yt-gDCRrvtY78g",
+      "title": "U Can't Touch This",
+      "artist": "MC Hammer",
+      "year": 1990,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Dance",
+        "Fun",
+        "Popular"
+      ],
+      "hints": [
+        "Der Urheber des geklauten Rhythmus klagte gegen den Interpreten; der Vergleich endete mit dem Eingeständnis eines Songwriter-Anteils und Tantiemen in Millionenhöhe.",
+        "Das Stück ruht auf dem markanten Opening-Riff eines Soul-Hits von 1981 - dessen Urheber und ein weiterer Musiker stehen heute als Songwriter in den Credits.",
+        "Die Single erschien 1990 bei Capitol Records als dritte Single des dritten Albums des Künstlers, das im Februar 1990 veröffentlicht wurde und im Juni 1990 auf Platz 1 der US-Albumcharts landete.",
+        "Das Stück gewann zwei Grammys - darunter den damals neu eingeführten Preis für die beste Rap-Solodarbietung - und war der erste Rap-Song, der für den Grammy-Preis 'Record of the Year' nominiert wurde; bei den MTV-Video-Music-Awards 1990 holte es den besten Rap- und den besten Tanzclip.",
+        "Das Musikvideo zeigt den Rapper in überweiten Hosen bei seinen Signatur-Tänzen; sein Refrain - der Stopp-Befehl zusammen mit dem Künstlernamen - wurde zum geflügelten Ausdruck und später zum Titel einer Reality-Show."
+      ],
+      "lyrics": {
+        "real": [
+          "Give me a song or rhythm",
+          "Bust a few moves",
+          "Dance to this and you're gonna get thinner"
+        ],
+        "fake": "Bounce your sneakers on the parquet while the saxophone wails"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gDCRrvtY78g",
+        "youtubeAlternatives": [
+          "otCpCn0l4Wo"
+        ],
+        "spotify": "https://open.spotify.com/track/1B75hgRqe7A4fwee3g3Wmu",
+        "amazonMusic": "https://music.amazon.com/albums/B000TEPEOY?trackAsin=B000TECDFM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/hiphop-mchammer-touchthis.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/U_Can%27t_Touch_This",
+        "https://en.wikipedia.org/wiki/Please_Hammer_Don%27t_Hurt_%27Em",
+        "https://en.wikipedia.org/wiki/MC_Hammer",
+        "https://www.songfacts.com/facts/mc-hammer/u-cant-touch-this",
+        "https://lrclib.net/api/get?artist_name=MC%20Hammer&track_name=U%20Can%27t%20Touch%20This"
+      ]
+    }
+  ]
+}

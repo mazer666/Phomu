@@ -1,0 +1,689 @@
+{
+  "songs": [
+    {
+      "id": "score-bond-theme",
+      "title": "James Bond Theme",
+      "artist": "Monty Norman / John Barry",
+      "year": 1962,
+      "country": "GB",
+      "genre": "Movie Theme / Big Band & Surf-Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Aggressive",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Instrumental-Stueck mit schillerndem Big-Band-Klang, das ueber Jahrzehnte ein ganzes Filmimpränt geprägt hat.",
+        "Der Komponist steuerte Melodie und Text bei, das Orchester des Filmstudios arrangierte daraus ein exotisches Arrangement mit Flöten und Blechbläsern.",
+        "Die Aufnahme entstand 1962 in den CTS Lansdowne Studios; produziert wurde die Single für das Label United Artists.",
+        "Die Melodie steht in E-Moll, das Stück ist nur 1:48 Minuten lang und erschien 1962 als 7-Zoll-Single in Großbritannien.",
+        "Das Instrumental debütierte 1962 mit dem ersten Film der Agentenreihe und erklingt bis heute in jedem Teil – das bekannteste Soundtrack-Motiv der Popkultur."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Vr6yscEWPYw",
+        "spotify": "https://open.spotify.com/track/2VSFOKsNSH9dBQ8BIZ8o2m",
+        "amazonMusic": "https://music.amazon.com/tracks/B00IECDXYG"
+      },
+      "coverUrl": "/covers/score-bond-theme.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "classical-orchestral"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/James_Bond_Theme",
+        "https://en.wikipedia.org/wiki/John_Barry_(composer)",
+        "https://en.wikipedia.org/wiki/Monty_Norman",
+        "https://en.wikipedia.org/wiki/Dr._No_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Dr._No_(film)"
+      ]
+    },
+    {
+      "id": "metal-morbid-chapel",
+      "title": "Chapel of Ghouls",
+      "artist": "Morbid Angel",
+      "year": 1989,
+      "country": "US",
+      "genre": "Death Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Epic"
+      ],
+      "hints": [
+        "Ein knapp fünfminütiger Death-Metal-Track, der auf dem Debütalbum einer Band aus Tampa, Florida erschien.",
+        "Die Aufnahmen entstanden 1989 bei Morrisound Recording in Tampa, produziert hat sie Scott Burns.",
+        "Der Text erzählt von einem Angriff auf eine Kirche, von erschlagenen Priestern und von Gläubigen, die auf dem Altar geopfert werden.",
+        "Im Refrain wird der Tod des göttlichen Schutzherrn besungen – die Band nennt ihn tot und verflucht seine Gebete.",
+        "Der Song gilt als einer der frühen Höhepunkte des floridischen Death Metal und prägte die Szene nachhaltig."
+      ],
+      "lyrics": {
+        "real": [
+          "Ghouls attack the church",
+          "Dead - your god is dead",
+          "Demons attack with hate"
+        ],
+        "fake": "Blood on the altar while the ghoulish choir screams"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WOoGlgg5zcE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-morbid-chapel.jpg",
+      "packs": [
+        "Rock Anthems",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "metal-hardcore"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Altars_of_Madness",
+        "https://en.wikipedia.org/wiki/Morbid_Angel",
+        "https://en.wikipedia.org/wiki/Scott_Burns_(record_producer)",
+        "https://api.lyrics.ovh/v1/Morbid%20Angel/Chapel%20of%20Ghouls",
+        "https://musicbrainz.org/release/9447f210-4700-46e1-b670-0606df67c18e"
+      ]
+    },
+    {
+      "id": "country-wallen-glasses",
+      "title": "Whiskey Glasses",
+      "artist": "Morgan Wallen",
+      "year": 2018,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Sad",
+        "Energy"
+      ],
+      "hints": [
+        "Ein Country-Song, der das Betäuben eines Herzschmerzes mit starkem Alkohol beschreibt.",
+        "Geschrieben haben den Song Ben Burgess und Kevin Kadish, produziert hat Joey Moi.",
+        "Der Track erschien 2018 als dritte Single vom Debütalbum „If I Know Me“ beim Label Big Loud.",
+        "Bereits 2015 geschrieben, war der Song zuerst auf der EP „The Way I Talk“ von 2016 zu hören.",
+        "Das Glas, aus dem getrunken wird, ist das Leitmotiv des Titels – im Refrain taucht es gleich mehrfach auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Pour me, pour me another drink",
+          "'Cause I don't wanna feel a thing",
+          "I'm gonna need some whiskey glasses"
+        ],
+        "fake": "Ice clinks in the glass while the jukebox keeps on playing"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FjBp30kjzTc",
+        "spotify": "https://open.spotify.com/track/6foY66mWZN0pSRjZ408c00",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-wallen-glasses.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Whiskey_Glasses",
+        "https://en.wikipedia.org/wiki/If_I_Know_Me_(album)",
+        "https://en.wikipedia.org/wiki/Morgan_Wallen",
+        "https://api.lyrics.ovh/v1/Morgan%20Wallen/Whiskey%20Glasses",
+        "https://musicbrainz.org/recording/fac61a09-4c85-4583-8786-ad7c41b00c48"
+      ]
+    },
+    {
+      "id": "metal-motorhead-ace",
+      "title": "Ace of Spades",
+      "artist": "Motörhead",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Heavy Metal / Speed Metal / Rock 'n' Roll",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Fast",
+        "Aggressive"
+      ],
+      "hints": [
+        "Ein knapp zweieinhalbminütiger Speed-Metal-Track, der 1980 als Single das gleichnamige Album der Band vorwegnahm.",
+        "Aufgenommen wurde der Song zwischen August und September 1980 in den Jackson's Studios in Rickmansworth, England.",
+        "Produzent war Vic Maile, das Label hieß Bronze.",
+        "Die Single erschien am 17. Oktober 1980, auf der Rückseite stand „Dirty Love“.",
+        "Der Text dreht sich durchgehend ums Glücksspiel – Karten, Chips und die Chance, alles zu verlieren; das Blatt, das alles entscheidet, prägt auch den Titel."
+      ],
+      "lyrics": {
+        "real": [
+          "If you like to gamble, I tell you I'm your man",
+          "You win some, lose some, it's all the same to me",
+          "The Ace Of Spades, The Ace Of Spades"
+        ],
+        "fake": "Cards on the table while the engine screams for more"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3mbvWn1EY6g",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-motorhead-ace.jpg",
+      "packs": [
+        "Rock Anthems",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "metal-hardcore"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ace_of_Spades_(song)",
+        "https://en.wikipedia.org/wiki/Ace_of_Spades_(Motörhead_album)",
+        "https://en.wikipedia.org/wiki/Motörhead",
+        "https://api.lyrics.ovh/v1/Motörhead/Ace%20of%20Spades",
+        "https://en.wikipedia.org/wiki/Lemmy"
+      ]
+    },
+    {
+      "id": "yt-dh7nMtMnXZw",
+      "title": "Koala",
+      "artist": "Galantis",
+      "year": 2023,
+      "country": "SE",
+      "genre": "Electronic / Electro House",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein knapp zweieinhalbminütiger Dance-Track, dessen Text nur aus einem wiederholten Kinderspruch besteht.",
+        "Das Coverbild zeigt ein pelziges Tier, das sich an einen Motorradhelm schmiegt – die Farbwelt ist Pink und Türkis.",
+        "Der Text preist die Treue: „I ain't never gon' leave your side“ – mehr gibt die gesungene Zeile nicht her.",
+        "Das schwedische Duo veröffentlichte den Track 2023 als Single und nahm ihn später auf dem Album „Rx“ erneut auf.",
+        "Der Titel ist der Name des Tieres auf dem Cover – und zugleich der einzige Satz, den die Stimme im Refrain wiederholt."
+      ],
+      "lyrics": {
+        "real": [
+          "Koala, koala, yeah",
+          "I'll never leave you",
+          "When I'm with you, I tell no lies"
+        ],
+        "fake": "Cuddle up close little friend and the whole night sings"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dh7nMtMnXZw",
+        "spotify": "https://open.spotify.com/track/1MfYktsPqiYCevuTxQ8Wlf",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/galantis-koala.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=dh7nMtMnXZw&format=json",
+        "https://musicbrainz.org/artist/a7229e38-bab7-48c1-9f35-9b4c49738b0f",
+        "https://itunes.apple.com/lookup?id=1703155780&entity=song",
+        "https://api.lyrics.ovh/v1/Galantis/Koala",
+        "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d1/45/7f/d1457f55-5d00-6880-2e1e-4eaa661e6141/075679675644.jpg/600x600bb.jpg"
+      ]
+    },
+    {
+      "id": "yt-iDNlN-t6IeI",
+      "title": "Wave",
+      "artist": "FAST BOY & Raf",
+      "year": 2024,
+      "country": "DE",
+      "genre": "Pop / Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein gut zweieinhalbminütiger Pop-Rap-Track, in dem eine heimlich Liebende immer wieder auftaucht und wieder verschwindet.",
+        "Der Text zeichnet das Taumeln einer Nacht: rote Lippen, blaue Himmel, Champagner und die Angst, zugrunde zu gehen.",
+        "Im Refrain wiederholt sich eine Wendung, in der die Liebende mit einem Naturphänomen verglichen wird; das Titelbild zeigt ein gemaltes Gesicht in tiefem Blau.",
+        "Die Single erschien 2024 und wurde noch im selben Jahr für einen Remix vom italienischen DJ Agatino Romero neu abgemischt.",
+        "Die Single erschien am 12. Juli 2024 und liegt mit knapp zweieinhalb Minuten im Rahmen moderner Dance- und Pop-Rap-Produktionen; im Text geht es um die Angst, von jemandem mitgerissen zu werden."
+      ],
+      "lyrics": {
+        "real": [
+          "She got red lips under blue skies",
+          "I'm drownin', riskin' my life",
+          "But she's breakin' me, she's like a wave"
+        ],
+        "fake": "She pulls me under where the current turns to gold"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iDNlN-t6IeI",
+        "spotify": "https://open.spotify.com/track/5msO1c9VNP14k2t4EvXEsi",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/fast-boy-raf-wave.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=iDNlN-t6IeI&format=json",
+        "https://itunes.apple.com/lookup?id=1755202139&entity=song",
+        "https://itunes.apple.com/lookup?id=1778072333&entity=song",
+        "https://api.lyrics.ovh/v1/Fast%20Boy/Wave",
+        "https://musicbrainz.org/artist/c6488b75-835d-417c-b7e6-efb7ec050029"
+      ]
+    },
+    {
+      "id": "blues-muddy-waters-hoochie",
+      "title": "Hoochie Coochie Man",
+      "artist": "Muddy Waters",
+      "year": 1954,
+      "country": "US",
+      "genre": "Chicago Blues",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Confident",
+        "Cool",
+        "Powerful",
+        "Raw"
+      ],
+      "hints": [
+        "Ein Blues-Standard, der Aberglauben und schwarze Magie mit wölkendem Selbstbewusstsein des Sängers verknüpft.",
+        "Die Textwelt speist sich aus Hoodoo: Eine Wahrsagerin kündigt der Mutter des Sängers einen künftigen Sohn an, der alles mit sich reißen wird.",
+        "Die Aufnahme entstand Anfang 1954 in Chicago und erschien als 7-Zoll-Single auf dem Label Chess; B-Seite war 'She's So Pretty'.",
+        "Das markante Stop-Time-Riff aus Mundharmonika und Gitarre wurde zum Baustein des Blues - später adaptierte Bo Diddley die Phrase für 'I'm a Man'.",
+        "Der Refrain ist eine Ansage an die ganze Welt; im Text tauchen ein schwarzer Katzenknochen, ein Mojo und 'John the Conqueror' auf. Die Originalaufnahme erschien 1958 auf einer bekannten Compilation des Interpreten."
+      ],
+      "lyrics": {
+        "real": [
+          "The gypsy woman told my mother",
+          "I got a black cat bone",
+          "Lead me by my hand"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet and a silver seat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e_l6A7krjrQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/blues-muddy-waters-hoochie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hoochie_Coochie_Man",
+        "https://en.wikipedia.org/wiki/Muddy_Waters",
+        "https://en.wikipedia.org/wiki/Willie_Dixon",
+        "https://api.lyrics.ovh/v1/Muddy%20Waters/Hoochie%20Coochie%20Man",
+        "https://lrclib.net/api/get?artist_name=Muddy%20Waters&track_name=Hoochie%20Coochie%20Man"
+      ]
+    },
+    {
+      "id": "indie-mumford-lion",
+      "title": "Little Lion Man",
+      "artist": "Mumford & Sons",
+      "year": 2009,
+      "country": "GB",
+      "genre": "Folk Rock / Indie Folk",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Energy",
+        "Powerful",
+        "Raw",
+        "Sad"
+      ],
+      "hints": [
+        "Ein englisches Folk-Rock-Debuet, das den banjo-getriebenen Sound der späten 2000er für ein internationales Publikum öffnete.",
+        "Der Frontmann nennt den Text eine sehr persönliche Geschichte und beschreibt das Schreiben als 'a conundrum' aus Gefühl und Selbstverständigung.",
+        "Die Single erschien am 11. August 2009 als Lead-Single des Debütalbums 'Sigh No More' bei Island und Glassnote, produziert von Markus Dravs.",
+        "Die Single erreichte Platz 3 in Australien, führte die australische Hottest-100-Liste 2009 an und wurde für den Grammy 'Best Rock Song' nominiert.",
+        "Der Refrain gesteht die Schuld an und endet mit einer Frage: 'Didn't I, my dear?' - der Song beginnt mit dem Aufruf, sich selbst zu weinen."
+      ],
+      "lyrics": {
+        "real": [
+          "You're not as brave as you were at the start",
+          "Take all the courage you have left",
+          "And it was your heart on the line"
+        ],
+        "fake": "The lion in the meadow keeps a heavy head"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=X7bHe--mp1g",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/indie-mumford-lion.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "country-folk",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Little_Lion_Man",
+        "https://en.wikipedia.org/wiki/Mumford_%26_Sons",
+        "https://en.wikipedia.org/wiki/Sigh_No_More_(Mumford_%26_Sons_album)",
+        "https://api.lyrics.ovh/v1/Mumford%20%26%20Sons/Little%20Lion%20Man",
+        "https://lrclib.net/api/get?artist_name=Mumford%20%26%20Sons&track_name=Little%20Lion%20Man"
+      ]
+    },
+    {
+      "id": "indie-muse-knights-of-cydonia",
+      "title": "Knights of Cydonia",
+      "artist": "Muse",
+      "year": 2006,
+      "country": "GB",
+      "genre": "Space Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Energy"
+      ],
+      "hints": [
+        "Abschluss-Track eines Albums, das zwischen progressivem Pop, Art-Rock und Spaghetti-Western-Klang pendelt - 6:07 in der Albumversion, 3:58 als Radio-Edit.",
+        "Der Titel verweist auf eine Region auf dem Mars, die durch die optische Täuschung eines Gesichts Berühmtheit erlangte.",
+        "Das Musikvideo ist ein in fünf Tagen gedrehter Kurzfilm im Stil eines postapokalyptischen Western mit Anfang und Endcredits - inszeniert von Joseph Kahn.",
+        "Das Intro zitiert die fünfstufige Solresol-Tonfolge aus 'Close Encounters of the Third Kind', das Gitarrenriff klingt nach dem 'Telstar'-Titel von 1962.",
+        "Die Band wechselt zwischen Growls und hellem Falsett; im Refrain geht es um den Kampf ums Überleben: 'You and I must fight to survive'."
+      ],
+      "lyrics": {
+        "real": [
+          "No one's gonna take me alive",
+          "Time has come to make things right",
+          "You and I must fight to survive"
+        ],
+        "fake": "In the deep of the space, we find the ancient race of the light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=G_sBOsh-vyI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/indie-muse-knights-of-cydonia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Knights_of_Cydonia",
+        "https://en.wikipedia.org/wiki/Muse_(band)",
+        "https://en.wikipedia.org/wiki/Black_Holes_and_Revelations",
+        "https://en.wikipedia.org/wiki/Cydonia_(Mars)",
+        "https://lrclib.net/api/get?artist_name=Muse&track_name=Knights%20of%20Cydonia"
+      ]
+    },
+    {
+      "id": "yt-9LjkAjWOZOY",
+      "title": "Know My Name ft. Rich The Kid, RJ",
+      "artist": "Mustard",
+      "year": 2016,
+      "country": "US",
+      "genre": "Hip-Hop / Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Party Anthem",
+        "Dance Floor",
+        "Rebellious"
+      ],
+      "hints": [
+        "US-Rap-Kollaboration zwischen einem US-Produzenten aus Los Angeles und zwei jungen Rappern.",
+        "Der Track erschien am 30. September 2016 und ist knapp dreieinhalb Minuten lang.",
+        "Der Text reiht Luxus-Marker aneinander: ein gerade gekaufter Wagen, ein Wraith aus der Fantasie, eine Kette und Bargeld in der Tuer.",
+        "Ein Basketball-Vergleich setzt den Protagonisten mit einer Basketball-Ikone gleich - der Text steckt voller Selbstbehauptung.",
+        "Der Refrain funktioniert wie ein Erkennungswort: Nur wer das Wort korrekt wiedergibt, wird belohnt und darf mit Papier rechnen."
+      ],
+      "lyrics": {
+        "real": [
+          "I ain't lying, spend a grip on my wrist",
+          "If she bad I might take her to the red carpet",
+          "Tell your man don't do you right"
+        ],
+        "fake": "I put the Range Rover on the lease but the engine keep it sneezing"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9LjkAjWOZOY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/mustard-know-my-name-ft--rich-the-kid--rj.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mustard_(record_producer)",
+        "https://en.wikipedia.org/wiki/Rich_the_Kid",
+        "https://en.wikipedia.org/wiki/RJ_(rapper)",
+        "https://itunes.apple.com/search?term=Mustard+Know+My+Name&limit=4&entity=song",
+        "https://lrclib.net/api/get?artist_name=Mustard&track_name=Know%20My%20Name"
+      ]
+    },
+    {
+      "id": "piano-mcr-cancer",
+      "title": "Cancer",
+      "artist": "My Chemical Romance",
+      "year": 2006,
+      "country": "US",
+      "genre": "Gothic Rock / Piano Ballade",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Dark",
+        "Honest"
+      ],
+      "hints": [
+        "Eine Piano-Ballade, die Frontmann und Produzent am Klavier in nur acht Minuten komponierten - aufgenommen und fertiggestellt wurde sie eine halbe Stunde später.",
+        "Der Text erzählt aus der Sicht des sterbenden Protagonisten des Konzeptalbums, wie er Abschied von Geschwistern und Geliebten nimmt.",
+        "Aufgenommen wurde sie 2006 in Burbank und Hollywood, produziert von Rob Cavallo; die Streicher kamen in den Capitol Studios dazu.",
+        "In den USA mit Gold, in Großbritannien mit Silber zertifiziert; 2016 coverte das Duo Twenty One Pilots den Song.",
+        "Der Frontmann nannte das Stück seinen dunkelsten Song und sagte 2019, es sei 'zu schwer' zu spielen - 2022 wurde es bei der Reunion-Tour erstmals seit zehn Jahren wieder live gespielt."
+      ],
+      "lyrics": {
+        "real": [
+          "Help her gather all my things",
+          "And bury me in all my favorite colors",
+          "Baby, I'm just soggy from the chemo"
+        ],
+        "fake": "The curtains draw and the piano hums a last goodnight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wc2s9skF_58",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-mcr-cancer.jpg",
+      "packs": [
+        "piano-ballads",
+        "Rock Anthems",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cancer_(song)",
+        "https://en.wikipedia.org/wiki/The_Black_Parade",
+        "https://en.wikipedia.org/wiki/Gerard_Way",
+        "https://en.wikipedia.org/wiki/Rob_Cavallo",
+        "https://lrclib.net/api/get?artist_name=My%20Chemical%20Romance&track_name=Cancer"
+      ]
+    },
+    {
+      "id": "yt-Xg72z08aTXY",
+      "title": "Beggin'",
+      "artist": "Måneskin",
+      "year": 2017,
+      "country": "IT",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Cool",
+        "Dance Floor",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Eine italienische Band coverte 2017 einen Soul-Klassiker von 1967, der ursprünglich für eine US-Vokalgruppe geschrieben wurde.",
+        "Das Original stammt aus der Northern-Soul-Ära und kehrte 2007 mit einem französischen DJ-Remix noch einmal in die Charts zurück.",
+        "Die Cover-Version erschien zunächst auf dem Debüt-EP der Band und wurde nach dem ESC-Erfolg 2021 zu einem weltweiten TikTok-Hit.",
+        "Nach dem ESC-Sieg erreichte die Single in neun europäischen Ländern Platz 1, darunter Deutschland, Österreich, Portugal und Griechenland.",
+        "Der Refrain bittet darum, die liebende Hand ausgestreckt zu bekommen - der Text stammt aus dem Jahr 1967 und wurde inzwischen vielfach gecovert."
+      ],
+      "lyrics": {
+        "real": [
+          "Put your loving hand out, baby",
+          "I played it hard and fast, 'cause I had everything",
+          "Tried so hard to be your man"
+        ],
+        "fake": "Down on the sidewalk where the streetlights start to glow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Xg72z08aTXY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "grand-finale",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/finale-maneskin-beggin.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Beggin%27",
+        "https://en.wikipedia.org/wiki/Beggin%27_(M%C3%A5neskin_cover)",
+        "https://en.wikipedia.org/wiki/M%C3%A5neskin",
+        "https://en.wikipedia.org/wiki/The_Four_Seasons_(band)",
+        "https://lrclib.net/api/get?artist_name=M%C3%A5neskin&track_name=Beggin%27"
+      ]
+    }
+  ]
+}

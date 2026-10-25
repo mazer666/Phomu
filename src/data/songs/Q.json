@@ -1,0 +1,345 @@
+{
+  "songs": [
+    {
+      "id": "yt-uHgnebZ_jYo",
+      "title": "Que Tengo Que Hacer",
+      "artist": "Daddy Yankee",
+      "year": 2008,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track entstand 2008 als vierte und letzte Single des Soundtrack-Albums zum gleichnamigen Kinofilm einer Reggaeton-Ikone aus Puerto Rico.",
+        "Der Sound wird als Dancehall-Nummer beschrieben, der Künstler selbst mischt dort Hip-Hop mit lateinamerikanischen Rhythmen.",
+        "Der Refrain fragt immer wieder, was er tun muss, damit die Geliebte wieder zu ihm zurückkehrt.",
+        "Im Text heißt es: Nach dem Hurrikan kommt die Ruhe – der Sänger kann weder schlafen noch essen.",
+        "Die Single erschien 2009 und schaffte es bis auf Platz 11 der Billboard-Charts für Latin-Rhythm-Airplay."
+      ],
+      "lyrics": {
+        "real": [
+          "Despues Del Huracan Viene La Calma",
+          "Para Mi La Vida No Tiene Sentido",
+          "No Puedo Comer No Puedo Dormir"
+        ],
+        "fake": "Te esperé bajo la lluvia toda la noche"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uHgnebZ_jYo",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0H5T9H2X8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/que-tengo-que-hacer-daddy-yankee.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Talento_de_Barrio_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Daddy_Yankee",
+        "https://en.wikipedia.org/wiki/Talento_de_barrio",
+        "https://en.wikipedia.org/wiki/Daddy_Yankee_discography",
+        "https://api.lyrics.ovh/v1/Daddy%20Yankee/Que%20Tengo%20Que%20Hacer"
+      ]
+    },
+    {
+      "id": "yt-rY0WxgSXdEE",
+      "title": "Another One Bites the Dust",
+      "artist": "Queen",
+      "year": 1980,
+      "country": "GB",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Legends & Classics",
+        "Popular",
+        "Rock"
+      ],
+      "hints": [
+        "Dieser Song hat eine der am meisten wiedererkannten Basslinien der Musikgeschichte.",
+        "Wurde inspiriert vom Funk-Stil der Band 'Chic'.",
+        "Der Text handelt von einem Gangster-Szenario mit Maschinengewehren.",
+        "Wird oft in der Ersten Hilfe verwendet, um den Takt für die Herzdruckmassage zu halten.",
+        "Die Single stand drei Wochen an der Spitze der US-Hitparade und gilt als bestverkaufte Single der Band."
+      ],
+      "lyrics": {
+        "real": [
+          "Ain't no sound but the sound of his feet",
+          "Out of the doorway the bullets rip",
+          "Are you hanging on the edge of your seat?"
+        ],
+        "fake": "Frankie leaps from his chair with his hat and the cat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rY0WxgSXdEE",
+        "spotify": "https://open.spotify.com/track/5vdp5UmvTsnMEMESIF2Ym7",
+        "amazonMusic": "https://music.amazon.com/tracks/B004G94WSM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/queen-another-one-bites-the-dust-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Another_One_Bites_the_Dust",
+        "https://en.wikipedia.org/wiki/The_Game_(Queen_album)",
+        "https://www.songfacts.com/facts/queen/another-one-bites-the-dust",
+        "https://en.wikipedia.org/wiki/John_Deacon",
+        "https://en.wikipedia.org/wiki/Chic_(band)"
+      ]
+    },
+    {
+      "id": "queen-bohemian-rhapsody-1975",
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Nostalgic",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Der Sänger schrieb den Text allein – laut Brian May kam er mit ganzen Notizzetteln ins Studio und hämmerte am Klavier.",
+        "Die Oper-Sektion in der Mitte enthält das arabische Wort 'Bismillah', das Freddie Mercury bewusst einbaute.",
+        "Mit fast sechs Minuten galt das Stück als zu lang für eine Single – Radiomoderatoren spielten es trotzdem in Dauerschleife.",
+        "Das Stück wechselt zwischen stiller Ballade, Oper und hartem Rock – kein anderer Song klingt so.",
+        "Der Refrain stellt die Frage, ob es sich um echtes Leben oder nur um Fantasie handelt; die Band selbst nannte das Stück eine 'Mock Opera'."
+      ],
+      "lyrics": {
+        "real": [
+          "Is this the real life? Is this just fantasy?",
+          "Caught in a landslide, no escape from reality",
+          "Mama, just killed a man"
+        ],
+        "fake": "I'm just a lonely boy in a lonely world"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0H5M5B984"
+      },
+      "coverUrl": "/covers/queen-bohemian-rhapsody-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody",
+        "https://en.wikipedia.org/wiki/A_Night_at_the_Opera_(Queen_album)",
+        "https://www.songfacts.com/facts/queen/bohemian-rhapsody",
+        "https://en.wikipedia.org/wiki/Freddie_Mercury",
+        "https://en.wikipedia.org/wiki/Rockfield_Studios"
+      ]
+    },
+    {
+      "id": "piano-queen-bohemian",
+      "title": "Bohemian Rhapsody (Piano Part)",
+      "artist": "Queen",
+      "year": 1975,
+      "country": "GB",
+      "genre": "Art Rock / Opera",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
+      "hints": [
+        "Der Leadsänger komponierte und schrieb den Text allein – er sang auch die Oper-Passage in vielen Overdubs ein.",
+        "Besticht durch das unverwechselbare Klavier-Balladen-Intro vor dem opernhaften Mittelteil.",
+        "Thematisiert (evtl. metaphorisch) Reue, Mord und Schicksalsergebung.",
+        "Ein Inbegriff für musikalische Grenzenlosigkeit.",
+        "Refrain: 'Mama, just killed a man' – die Balladen-Passage, die nach der Oper-Passage wiederkehrt."
+      ],
+      "lyrics": {
+        "real": [
+          "Mama, just killed a man, put a gun against his head, pulled my trigger, now he's dead",
+          "Mama, life had just begun",
+          "But now I've gone and thrown it all away"
+        ],
+        "fake": "Every broken note still echoes through the empty marble hall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=a7vqHDWG8y0",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0H5M5B984"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-queen-bohemian.jpg",
+      "packs": [
+        "Rock Anthems",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody",
+        "https://en.wikipedia.org/wiki/A_Night_at_the_Opera_(Queen_album)",
+        "https://www.songfacts.com/facts/queen/bohemian-rhapsody",
+        "https://en.wikipedia.org/wiki/Freddie_Mercury",
+        "https://en.wikipedia.org/wiki/Rockfield_Studios"
+      ]
+    },
+    {
+      "id": "rock-queen-we-will-rock-you",
+      "title": "We Will Rock You",
+      "artist": "Queen",
+      "year": 1977,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Stadium Rock"
+      ],
+      "hints": [
+        "Berühmt durch den simplen Rhythmus aus Stampfen und Klatschen, den das Publikum inzwischen überall mitspielt.",
+        "Brian May wollte einen Song schreiben, bei dem das Publikum maximal mitmachen kann.",
+        "Wurde oft zusammen mit 'We Are the Champions' gespielt.",
+        "Aufgenommen wurde der Song in den Wessex Sound Studios in London – bis auf die letzten 30 Sekunden mit Gitarrensolo ist er komplett a cappella.",
+        "Ein absoluter Klassiker bei Sportveranstaltungen weltweit."
+      ],
+      "lyrics": {
+        "real": [
+          "Buddy you're a boy make a big noise",
+          "You got mud on yo' face",
+          "Kickin' your can all over the place"
+        ],
+        "fake": "Marching to the beat, feeling the heat of the broken street"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-tJYN-eG1zk",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0H5NMVTX4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/queen-we-will-rock-you-single.jpg",
+      "packs": [
+        "Rock Anthems",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/We_Will_Rock_You",
+        "https://en.wikipedia.org/wiki/News_of_the_World_(album)",
+        "https://www.songfacts.com/facts/queen/we-will-rock-you",
+        "https://en.wikipedia.org/wiki/Brian_May",
+        "https://en.wikipedia.org/wiki/We_Are_the_Champions"
+      ]
+    },
+    {
+      "id": "yt-VFFRyLyE7BI",
+      "title": "Quiet Life",
+      "artist": "Japan",
+      "year": 1979,
+      "country": "GB",
+      "genre": "New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "New Romantic",
+        "Nostalgic",
+        "Popular"
+      ],
+      "hints": [
+        "Der Titelsong ist die dritte Studioplatte einer Londoner Band, die 1979 erstmals in die Charts kam.",
+        "Der Text wurde von Sänger David Sylvian geschrieben, der auf der Platte mit seiner Baritonstimme auffällt.",
+        "Produzent war John Punter, dessen Arbeit mit Roxy Music den Klang der Platte geprägt hat.",
+        "Die Single erschien 1979 zuerst im asiatischen Markt, 1980 in Europa und 1981 in Großbritannien.",
+        "Ausschnitt aus dem Refrain: 'Here we are stranded, somehow it seems the same, beware'."
+      ],
+      "lyrics": {
+        "real": [
+          "Here we are stranded",
+          "Somehow it seems the same, beware",
+          "Boys, do you recognise the signs?"
+        ],
+        "fake": "The neon rain is falling on a lonely midnight street"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VFFRyLyE7BI",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DZTVZK25"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/quiet-life--2020-remaster-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Quiet_Life_(song)",
+        "https://en.wikipedia.org/wiki/Quiet_Life",
+        "https://www.songfacts.com/facts/japan/quiet-life",
+        "https://en.wikipedia.org/wiki/Japan_(band)",
+        "https://en.wikipedia.org/wiki/David_Sylvian"
+      ]
+    }
+  ]
+}

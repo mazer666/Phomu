@@ -1,0 +1,22 @@
+/**
+ * Music Wall / TikTok Vibe Theme
+ * White/light background, tile grid, album covers dominant.
+ * Clean, modern, content-forward design.
+ */
+[data-theme='musicwall'] {
+  --color-bg: #f5f5f5;
+  --color-bg-secondary: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-primary: #fe2c55;
+  --color-primary-hover: #e5284d;
+  --color-secondary: #25f4ee;
+  --color-accent: #fe2c55;
+  --color-success: #4caf50;
+  --color-error: #ff5252;
+  --color-border: #e0e0e0;
+  --font-heading: 'system-ui', sans-serif;
+  --font-body: 'system-ui', sans-serif;
+  --radius: 16px;
+}

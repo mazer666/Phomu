@@ -1,0 +1,411 @@
+{
+  "songs": [
+    {
+      "id": "synth-omd-enola",
+      "title": "Enola Gay",
+      "artist": "Orchestral Manoeuvres in the Dark (OMD)",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Thinking",
+        "Classic"
+      ],
+      "hints": [
+        "Anti-Kriegs-Song über den Atombombenabwurf auf Hiroshima am 6. August 1945, geschrieben vom Sänger und Bassisten der Band.",
+        "Der Refrain wird nicht gesungen, sondern von einer melodischen Synthesizer-Passage ersetzt – ein Kennzeichen der frühen Singles des britischen Synthpop-Duos.",
+        "Einzige Single-Auskopplung des zweiten Studioalbums 'Organisation' von 1980.",
+        "Platz 8 der britischen Single-Charts und erster Top-10-Erfolg der Band; in Italien, Portugal und Spanien stand die Single an der Spitze.",
+        "Die Gruppe entstand 1978 in Meols an der englischen Küste und gilt als Wegbereiter des Synthpop; weltweit verkaufte sich die Single mehr als fünf Millionen Mal."
+      ],
+      "lyrics": {
+        "real": [
+          "You should have stayed at home yesterday",
+          "It shouldn't ever have to end this way",
+          "Is mother proud of little boy today"
+        ],
+        "fake": "Riding through the desert in a second-hand car tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=d5XJ2GiR6Bo",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B003ITI3NG"
+      },
+      "coverUrl": "/covers/synth-omd-enola.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Enola_Gay_(song)",
+        "https://en.wikipedia.org/wiki/Enola_Gay",
+        "https://en.wikipedia.org/wiki/Orchestral_Manoeuvres_in_the_Dark",
+        "https://itunes.apple.com/lookup?id=714776989&entity=song",
+        "https://lrclib.net/api/get?artist_name=Orchestral%20Manoeuvres%20in%20the%20Dark&track_name=Enola%20Gay"
+      ]
+    },
+    {
+      "id": "soul-otis-redding-dock-bay",
+      "title": "(Sittin' On) The Dock of the Bay",
+      "artist": "Otis Redding",
+      "year": 1968,
+      "country": "US",
+      "genre": "Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Melancholic",
+        "Relaxed"
+      ],
+      "hints": [
+        "Der Sänger nahm die Aufnahme nur drei Tage vor seinem Tod bei einem Flugzeugabsturz auf – posthum wurde sie zur ersten Nummer-eins-Single der US-Geschichte.",
+        "Der Song entstand im August 1967 auf einem gecharterten Hausboot in Sausalito, Kalifornien, und wurde später in Memphis fertiggestellt.",
+        "Geschrieben wurde er mit Steve Cropper, dem Gitarristen und Produzenten der Stax-Records, der auch in der Band Booker T. & the M.G.'s spielte.",
+        "Der Song beginnt mit Pfiffen und Meeresrauschen; in Großbritannien erreichte die Single Platz drei, das zugehörige Album wurde als erstes posthum veröffentlichtes Album überhaupt zur Nummer eins.",
+        "Die Aufnahme entstand am 7. Dezember 1967 in den Stax-Studios in Memphis, Tennessee, dauert 2:38 Minuten und erschien 1968 auf dem Volt-Label."
+      ],
+      "lyrics": {
+        "real": [
+          "Sittin' in the morning sun",
+          "Watching the ships roll in",
+          "Watching the tide roll away"
+        ],
+        "fake": "The gulls are crying and the ferry is leaving soon"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rTVjnBo96Ug",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B001OGNJZ2"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-otis-redding-dock-bay.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Country, Jazz & Blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/(Sittin%27_On)_The_Dock_of_the_Bay",
+        "https://en.wikipedia.org/wiki/Otis_Redding",
+        "https://en.wikipedia.org/wiki/Steve_Cropper",
+        "https://itunes.apple.com/lookup?id=995809798&entity=song",
+        "https://lrclib.net/api/get?artist_name=Otis%20Redding&track_name=(Sittin'%20On)%20The%20Dock%20of%20the%20Bay"
+      ]
+    },
+    {
+      "id": "outkast-hey-ya-2003",
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "year": 2003,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Party Anthem",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Der Kopf des Duos schrieb den Song 2000 und nahm ihn ab Dezember 2002 in den Stankonia Studios in Atlanta auf – orientiert an den Ramones, den Buzzcocks, The Smiths und besonders den Hives.",
+        "Veröffentlicht am 25. August 2003 bei Arista Records als zweite Single des Doppelalbums 'Speakerboxxx/The Love Below'; der Partnertrack 'The Way You Move' mit Sleepy Brown stammt ebenfalls von diesem Album.",
+        "Der Song erreichte in den USA, Australien, Kanada, der Tschechischen Republik, Norwegen und Schweden die Nummer eins.",
+        "2021 belegte der Track bei Rolling Stone den zehnten Platz der '500 Greatest Songs of All Time'.",
+        "Im Text erzählt der Sänger von einer Liebe, die trotz guter Absichten immer wieder zerbricht – dazwischen ruft ein Background-Chorus den Titel des Songs dutzendfach."
+      ],
+      "lyrics": {
+        "real": [
+          "My baby don't mess around",
+          "Because she loves me so",
+          "You think you've got it"
+        ],
+        "fake": "Jump around until you feel the morning breeze"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=voP2ynsSwzc",
+        "spotify": "https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM",
+        "amazonMusic": "https://music.amazon.com/tracks/B001411WRE"
+      },
+      "coverUrl": "/covers/outkast-hey-ya-2003.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Hip Hop Essentials",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hey_Ya!",
+        "https://en.wikipedia.org/wiki/Speakerboxxx/The_Love_Below",
+        "https://en.wikipedia.org/wiki/Andr%C3%A9_3000",
+        "https://itunes.apple.com/lookup?id=1774799818&entity=song",
+        "https://lrclib.net/api/get?artist_name=OutKast&track_name=Hey%20Ya!"
+      ]
+    },
+    {
+      "id": "hiphop-outkast-ms-jackson",
+      "title": "Ms. Jackson",
+      "artist": "OutKast",
+      "year": 2000,
+      "country": "US",
+      "genre": "Southern Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Eine Entschuldigung an die Mutter der Ex-Freundin – geschrieben von den beiden Duo-Mitgliedern und produziert von Earthtone III.",
+        "Der Clip inszeniert von F. Gary Gray zeigt Tiere, die im Takt wippen, und gewann den BET Award für das Video des Jahres sowie den MTV-Video-Music-Award für den besten Hip-Hop-Clip.",
+        "Veröffentlicht am 24. Oktober 2000 als zweite Single des vierten Albums 'Stankonia'; aufgenommen wurde der Song im Stankonia-Studio in Atlanta.",
+        "Eine Woche lang stand der Track am 17. Februar 2001 an der Spitze der US-Hot-100 und war auch in Deutschland, den Niederlanden, Norwegen und Schweden Nummer eins.",
+        "Der Song gewann den Grammy für die beste Rap-Darbietung eines Duos oder einer Gruppe; Rolling Stone zählte ihn 2011 zu den besten 100 Songs der 2000er (Platz 55)."
+      ],
+      "lyrics": {
+        "real": [
+          "Never meant to make your daughter cry",
+          "That's my house, I'll disconnect the cable and turn the lights out",
+          "She need to get a piece of the American pie and take her bite out"
+        ],
+        "fake": "The beat is running and the whole room is moving"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MYxAiK6VnXw",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B0013D8C94"
+      },
+      "coverUrl": "/covers/hiphop-outkast-ms-jackson.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ms._Jackson",
+        "https://en.wikipedia.org/wiki/Stankonia",
+        "https://en.wikipedia.org/wiki/F._Gary_Gray",
+        "https://itunes.apple.com/lookup?id=1536682928&entity=song",
+        "https://lrclib.net/api/get?artist_name=OutKast&track_name=Ms.%20Jackson"
+      ]
+    },
+    {
+      "id": "yt-WAcnWtZjDWE",
+      "title": "Dile Que Tu Me Quieres",
+      "artist": "Ozuna",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der puertoricanische Sänger veröffentlichte den Song 2016 als eine der erfolgreichsten Singles des Jahres – in der Jahresbilanz der Billboard-Latin-Charts belegte er Platz 13.",
+        "Der Track erschien als dritte Single des Debütalbums 'Odisea' bei Sony Latin; eine Remix-Version mit Yandel folgte im März 2017.",
+        "Der Künstler, am 13. März 1992 in San Juan geboren, debütierte 2012 mit 'Imaginando' und wurde von Sony Music Latin unter Vertrag genommen, der auch sein Debütalbum finanzierte.",
+        "Im Text bittet der Sänger die Eltern der Frau, ihre Vorbehalte zu übergehen, und betont, dass die beiden Tag für Tag ineinander verliebt sind.",
+        "Im Refrain dreht sich alles um die Bitte, die Zweifel der anderen zu ignorieren; später im Text verspricht er, sie trotz aller Vorbehalte ihrer Familie zu lieben."
+      ],
+      "lyrics": {
+        "real": [
+          "No te quieren conmigo",
+          "No sé si será por mis tatuajes",
+          "Que no le haga caso a lo que le digan"
+        ],
+        "fake": "Le canto a tu silencio cuando el mundo se apaga"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WAcnWtZjDWE",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B074NC5D3L"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/ozuna-dile-que-tu-me-quieres----odisea.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dile_que_t%C3%BA_me_quieres",
+        "https://en.wikipedia.org/wiki/Ozuna",
+        "https://en.wikipedia.org/wiki/Odisea_(album)",
+        "https://itunes.apple.com/lookup?id=1269286851&entity=song",
+        "https://lrclib.net/api/get?artist_name=Ozuna&track_name=Dile%20Que%20Tu%20Me%20Quieres"
+      ]
+    },
+    {
+      "id": "yt-cNhXH1etCwM",
+      "title": "En La Intimidad",
+      "artist": "Ozuna",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der puertoricanische Künstler kam 2016 mit diesem Track in die Top-30 der Jahresbilanz der Billboard-Latin-Charts.",
+        "Der 1992 in San Juan geborene Sänger debütierte 2012 mit 'Imaginando' und wurde später von Sony Music Latin unter Vertrag genommen, der auch sein Debütalbum finanzierte.",
+        "Der Track erschien als eigenständige Single mit rund vier Minuten Laufzeit und ist darüber hinaus auf dem Kompilationsalbum 'Todos los Exitos' enthalten.",
+        "Der Text ist explizit und kreist um die Frage, wie sich das Zusammensein mit der Geliebten anfühlt – im Refrain wird genau diese Frage gestellt.",
+        "Zu Beginn des Tracks werden die Namen 'Yampi' und 'Hi Flow' gerufen, bevor der Sänger über die intimen Momente mit der Geliebten rappt."
+      ],
+      "lyrics": {
+        "real": [
+          "A vece' hacemo' cosa' de má'",
+          "Me pide que la lleve a mi cama",
+          "Su teléfono apaga"
+        ],
+        "fake": "Caminamos hacia el mar con la luna encendida"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cNhXH1etCwM",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B01K0VEGLM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/ozuna-en-la-intimidad.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ozuna",
+        "https://en.wikipedia.org/wiki/Odisea_(album)",
+        "https://lrclib.net/api/get?artist_name=Ozuna&track_name=En%20La%20Intimidad",
+        "https://lrclib.net/api/search?track_name=En+La+Intimidad&artist_name=Ozuna",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=cNhXH1etCwM&format=json"
+      ]
+    },
+    {
+      "id": "yt-rAb13TXc6mQ",
+      "title": "Si Tu Marido No Te Quiere",
+      "artist": "Ozuna",
+      "year": 2014,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der puertorikanische Sänger veröffentlichte den Track zunächst nur auf Streaming-Plattformen unter einem deutlich kürzeren Titel und zog die Fassung zurück, als das Lied 2015 in die Radiorotation kam.",
+        "In der Originalfassung tritt der puertorikanische Rapper D.OZi mit auf; eine spätere Remix-Fassung holte Arcángel und Farruko dazu.",
+        "Der Text erzählt von einer langen Nacht mit Freunden: Es geht um Flaschen, Discothek und darum, den Partner abzuheben, während man bis zum Sonnenaufgang durchhält.",
+        "In den US-Charts für lateinische Musik erreichte der Track eine Höchstplatzierung von 19 und blieb zwölf Wochen in den Listen.",
+        "Der Song ist Teil des Studioalbums 'Odisea' von 2017 und erschien bereits im Oktober 2014 als Single mit einem kürzeren Titel."
+      ],
+      "lyrics": {
+        "real": [
+          "Porque esta noche sí se bebe, bebe, baby",
+          "Nos vamos hasta que el sol salga",
+          "Dile a ese bobo que deje de engañarte"
+        ],
+        "fake": "Bailamos hasta que se apague la última vela"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rAb13TXc6mQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/ozuna-si-tu-marido-no-te-quiere-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ozuna",
+        "https://en.wikipedia.org/wiki/Ozuna_discography",
+        "https://www.billboard.com/artist/ozuna/chart-history/htl/",
+        "https://lrclib.net/api/get?artist_name=Ozuna&track_name=Si%20Tu%20Marido%20No%20Te%20Quiere",
+        "https://itunes.apple.com/search?term=Ozuna+Si+Tu+Marido+No+Te+Quiere&limit=5&entity=song"
+      ]
+    }
+  ]
+}

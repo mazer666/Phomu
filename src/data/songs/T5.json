@@ -1,0 +1,725 @@
+{
+  "songs": [
+    {
+      "id": "disco-chem-heyboy",
+      "title": "Hey Boy Hey Girl",
+      "artist": "The Chemical Brothers",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Big Beat / Electronic",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Club",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Groovy"
+      ],
+      "hints": [
+        "Der Beat sampelt 'The Roof Is on Fire' von Rock Master Scott & the Dynamic Three - tatsächlich stammt das Riff aus 'I Can't Wait' von Armand van Helden.",
+        "Der Song war die erste offizielle Single des dritten Studioalbums 'Surrender' und erschien am 26. Mai 1999.",
+        "In der britischen Single-Chart erreichte er Platz 3; das Album selbst kam am 7. Juni 1999 in Japan und am 21. Juni 1999 in Großbritannien heraus.",
+        "Das Video von Dom und Nic zeigt ein Mädchen, das alle Menschen nur als Skelette sieht - Schauplatze sind ein Schulbus, das Natural History Museum und ein Club im Südwesten Londons.",
+        "Der Refrain ruft die Superstars direkt an: 'Superstar DJs, here we go' - mehr gesungener Text gibt es kaum."
+      ],
+      "lyrics": {
+        "real": [
+          "Superstar DJs",
+          "Hey girls",
+          "Here we go"
+        ],
+        "fake": "Dancing through the city lights, we're burning up the midnight sky"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tpKCqp9CALQ"
+      },
+      "coverUrl": "/covers/disco-chem-heyboy.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hey_Boy_Hey_Girl",
+        "https://en.wikipedia.org/wiki/Surrender_(The_Chemical_Brothers_album)",
+        "https://itunes.apple.com/search?term=The+Chemical+Brothers+Hey+Boy+Hey+Girl&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Chemical+Brothers&track_name=Hey+Boy+Hey+Girl",
+        "https://api.lyrics.ovh/v1/The%20Chemical%20Brothers/Hey%20Boy%20Hey%20Girl"
+      ]
+    },
+    {
+      "id": "country-chicks-earl",
+      "title": "Goodbye Earl",
+      "artist": "The Chicks",
+      "year": 2000,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Energy",
+        "Aggressive"
+      ],
+      "hints": [
+        "Der Text nennt ländliche Institutionen - die Mitgliedschaft im 4-H-Club und die FFA - und ein Bewerbungsgespräch nach dem Schulabschluss.",
+        "Zwei Frauen aus einer Kleinstadt: Mary Anne fliegt per Nachtflug aus Atlanta herbei, um ihrer Freundin Wanda zu helfen.",
+        "Ein 'Country-Murder-Ballad' von Dennis Linde: Der Song erschien 1999 auf dem Album 'Fly' und wurde am 28. Februar 2000 als dritte Single des Albums ausgekoppelt.",
+        "Er erreichte Platz 13 der Billboard-Hot-Country-Charts, und 2021 landete er auf Platz 469 der Rolling-Stone-Liste '500 Greatest Songs of All Time'.",
+        "Die Pointe: Die beiden Freundinnen töten den missbrauchenden Ehemann - und eröffnen danach einen Stand am Highway 109."
+      ],
+      "lyrics": {
+        "real": [
+          "Mary Anne and Wanda were the best of friends",
+          "All through their high school days",
+          "Ain't it dark"
+        ],
+        "fake": "The lonely hearts highway is calling out your name tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gw7gNf_9njs"
+      },
+      "coverUrl": "/covers/country-chicks-earl.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Goodbye_Earl",
+        "https://en.wikipedia.org/wiki/Fly_(Dixie_Chicks_album)",
+        "https://itunes.apple.com/search?term=The+Chicks+Goodbye+Earl&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Chicks&track_name=Goodbye+Earl",
+        "https://api.lyrics.ovh/v1/The%20Chicks/Goodbye%20Earl"
+      ]
+    },
+    {
+      "id": "yt-PKnPrbPK5vA",
+      "title": "Mister Sandman",
+      "artist": "The Chordettes",
+      "year": 1954,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Den Text schrieb Pat Ballard; zuerst nahm der Sänger Vaughn Monroe das Stück im Mai 1954 mit seinem Orchester auf.",
+        "Die Aufnahme erschien 1954 beim Label Cadence - Label-Gründer und Produzent Archie Bleyer markierte den Rhythmus mit seinen Knien, in der dritten Strophe ist seine Stimme mit einem kurzen 'Yes?' zu hören.",
+        "Die Frauenquartett kam aus Sheboygan in Wisconsin und sang Barbershop, Doo-wop und Traditional Pop.",
+        "Der markante Einsatz 'bom, bom, bom, bom' am Anfang ist ein Arpeggio aus reinen Gesangsstimmen, das später von mehreren Genres gesampelt wurde - 2002 kam die Platte in die Grammy Hall of Fame.",
+        "Im Text tauchen die Oper 'Pagliacci' und der Pianist Liberace auf - der Traum soll einem einsamen Typen mit welligem Haar und einem einsamen Herzen einherhelfen."
+      ],
+      "lyrics": {
+        "real": [
+          "Mr. Sandman, bring me a dream",
+          "Give him a lonely heart like Pagliacci",
+          "And lots of wavy hair like Liberace"
+        ],
+        "fake": "Turn the radio on and we will dance the night away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PKnPrbPK5vA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/the-chordettes-mister-sandman.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mr._Sandman",
+        "https://en.wikipedia.org/wiki/The_Chordettes",
+        "https://itunes.apple.com/search?term=The+Chordettes+Mister+Sandman&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Chordettes&track_name=Mister+Sandman",
+        "https://en.wikipedia.org/wiki/Pat_Ballard"
+      ]
+    },
+    {
+      "id": "yt-yne6Gq_ghXA",
+      "title": "Rock the Casbah",
+      "artist": "The Clash",
+      "year": 1982,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Text erzählt in einer Fabel von einem König, der den Boogie-Sound verbietet, und von einem Würdenträger, der den Klang nicht leiden kann.",
+        "Die Musik entstand aus einer Klavier-Figur, die der Schlagzeuger allein im Studio einspielte - ohne seine Bandkollegen legte er Schlagzeug, Klavier und Bass selbst übereinander.",
+        "Der Song erschien am 11. Juni 1982 als zweite Single des fünften Studioalbums der Band und ist ihr einziger Top-10-Treffer in den USA.",
+        "Im Text tauchen Kamele, Minarete und Jet-Piloten auf, die am Ende im Cockpit-Radio genau den verbotenen Beat spielen.",
+        "Das Video drehte Don Letts am 8. und 9. Juni 1982 in Austin, Texas: Ein Muslim und ein hasidischer Limousinenfahrer freunden sich an und tanzen zu einem Konzert; ein Camouflage-Hut verhüllt fast das ganze Gesicht des Gitarristen."
+      ],
+      "lyrics": {
+        "real": [
+          "We ban that boogie sound",
+          "Degenerate the faithful",
+          "The electric camel drum"
+        ],
+        "fake": "Dancing on the rooftops of the neon city tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yne6Gq_ghXA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Rock Anthems",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/the-clash-rock-the-casbah.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rock_the_Casbah",
+        "https://en.wikipedia.org/wiki/Combat_Rock",
+        "https://itunes.apple.com/search?term=The+Clash+Rock+the+Casbah&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Clash&track_name=Rock+the+Casbah",
+        "https://api.lyrics.ovh/v1/The%20Clash/Rock%20the%20Casbah"
+      ]
+    },
+    {
+      "id": "soul-commodores-brick",
+      "title": "Brick House",
+      "artist": "The Commodores",
+      "year": 1977,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Der Text preist die Masse einer Frau - die Zahlen '36-24-36' stehen im Refrain, dazu der Vergleich, sie sei 'built like an Amazon'.",
+        "Sechs Leute haben das Stück geschrieben, darunter Lionel Richie, Walter Orange und Ronald LaPread; produziert wurde es von James Anthony Carmichael und der Band selbst.",
+        "Die Single erschien am 26. August 1977 auf Motown und erreichte Platz 5 in den USA sowie Platz 32 der britischen Single-Chart.",
+        "Sie stand auf dem selbstbetitelten Album von 1977, das in Großbritannien unter dem Titel 'Zoom' erschien.",
+        "Der Text ist eine Hommage an eine Frau, die sich 'mighty, mighty' rühmt und 'just lettin' it all hang out'; laut Lionel Richie ist der Titel ein Wortspiel zu einer bekannten Redensart über eine gut gebaute Frau."
+      ],
+      "lyrics": {
+        "real": [
+          "She knows she's got everything",
+          "This is how the story goes",
+          "Ain't holding nothing back"
+        ],
+        "fake": "Dancing in the moonlight, singing loud and clear for everyone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZdJmXeod0RE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-commodores-brick.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Brick_House_(song)",
+        "https://en.wikipedia.org/wiki/Commodores_(album)",
+        "https://itunes.apple.com/search?term=The+Commodores+Brick+House&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Commodores&track_name=Brick+House",
+        "https://api.lyrics.ovh/v1/Commodores/Brick%20House"
+      ]
+    },
+    {
+      "id": "unplugged-cranberries-linger",
+      "title": "Linger",
+      "artist": "The Cranberries",
+      "year": 1993,
+      "country": "IE",
+      "genre": "Alternative / Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Classic"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song 1993 im Windmill Lane Studio in Dublin; produziert hat Stephen Street, geschrieben haben Dolores O'Riordan und Noel Hogan.",
+        "Die Single erschien am 15. Februar 1993 als zweite und letzte Single des Debütalbums und wurde am 31. Januar 1994 noch einmal ausgekoppelt.",
+        "Der Song ist akustisch mit Streichersatz aufgebaut und wurde zum ersten großen Charterfolg der Band: Platz 3 in Irland, Platz 8 in den USA, Platz 14 in Großbritannien.",
+        "Das Video drehte Melodie McDaniel, lief vielfach auf MTV und wurde 1994 für die Billboard Music Video Awards nominiert; in Australien wählten die Hörer der Triple J den Song auf Platz 3 ihrer Hottest-100-Liste von 1993.",
+        "Ein Jahr später kam mit 'Zombie' der Welterfolg - dieser Song war der Durchbruch der irischen Band."
+      ],
+      "lyrics": {
+        "real": [
+          "You know I'm such a fool for you",
+          "You got me wrapped around your finger",
+          "Do you have to let it linger?"
+        ],
+        "fake": "Every night is a highway, every heart is a fire that never dies"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=G6Kspj3OO0s",
+        "spotify": "https://open.spotify.com/track/0gEyKnHvgkrkBM6fbeHdwK",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SVKPK0"
+      },
+      "coverUrl": "/covers/unplugged-cranberries-linger.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Linger_(The_Cranberries_song)",
+        "https://en.wikipedia.org/wiki/Everybody_Else_Is_Doing_It,_So_Why_Can't_We?",
+        "https://itunes.apple.com/search?term=The+Cranberries+Linger&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Cranberries&track_name=Linger",
+        "https://api.lyrics.ovh/v1/The%20Cranberries/Linger"
+      ]
+    },
+    {
+      "id": "yt-6Ejga4kJUts",
+      "title": "Zombie",
+      "artist": "The Cranberries",
+      "year": 1994,
+      "country": "IE",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Alternative",
+        "Legends & Classics",
+        "Popular",
+        "Powerful",
+        "Serious"
+      ],
+      "hints": [
+        "Ein Protestlied gegen den Nordirlandkonflikt, ausgelöst durch einen Anschlag der IRA in Warrington (England) am 20. März 1993, bei dem zwei Kinder getötet wurden.",
+        "Die Sängerin erklärte, das Stück sei für den Frieden zwischen England und Irland geschrieben worden - im Text taucht die Jahreszahl 1916 auf.",
+        "In den USA erschien es nicht als Single und war damit nicht für die Hot 100 wert: Die Airplay-Charts erreichte es auf Platz 22; das Album, aus dem die Single stammt, verkaufte sich dort über sieben Millionen Mal.",
+        "Das offizielle Video drehte Samuel Bayer kurz vor der Waffenruhe in Belfast: Die Sängerin stand goldbemalt an einem Kreuz, vergoldete Kinder und echte britische Soldaten sind zu sehen.",
+        "Am 31. August 1994, wenige Wochen nach der Veröffentlichung, rief die IRA nach 25 Jahren Konflikt eine Waffenruhe aus."
+      ],
+      "lyrics": {
+        "real": [
+          "Another head hangs lowly",
+          "And the violence caused such silence",
+          "But you see, it's not me, it's not my family"
+        ],
+        "fake": "Walking through the ruins of a town that used to be so bright"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6Ejga4kJUts",
+        "spotify": "https://open.spotify.com/track/49wOjOkS4pBK3PQnPnNYjb",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SVMW60"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Rock Anthems",
+        "90s Unplugged",
+        "World, Reggae & Soul",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/90s-cranberries-zombie.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/the-cranberries/zombie",
+        "https://en.wikipedia.org/wiki/Zombie_(The_Cranberries_song)",
+        "https://www.wikidata.org/wiki/Q169298",
+        "https://api.lyrics.ovh/v1/The%20Cranberries/Zombie",
+        "https://itunes.apple.com/search?term=The+Cranberries+Zombie&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-UL6_xt_dWvQ",
+      "title": "A Forest",
+      "artist": "The Cure",
+      "year": 1980,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Laut einem Interview von 1984 inspirierte den Sänger den Text seine Kindheitserinnerung, sich als Junge im Wald verlaufen zu haben; später hat er diese Deutung allerdings bestritten.",
+        "Ursprünglich trug das Stück den Titel 'Into The Trees'; frühe Fassungen hatten ein spürbar höheres Tempo.",
+        "Aufgenommen und gemischt wurde das Album in nur sieben Tagen; produziert haben Mike Hedges und der Sänger selbst.",
+        "Die Single erschien am 8. April 1980, debütierte am 12. April in den britischen Single-Charts und erreichte nach acht Wochen Platz 31.",
+        "Beim Festival in Werchter 1981 sorgte ein Streit mit dem Management von Robert Palmer für eine außergewöhnlich lange Zugabe von neun Minuten."
+      ],
+      "lyrics": {
+        "real": [
+          "Come closer and see",
+          "See into the trees",
+          "I hear her voice"
+        ],
+        "fake": "I hear the rain falling on the empty street tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UL6_xt_dWvQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Indie & Alternative",
+        "electronic-synth",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/the-cure-a-forest.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/the-cure/a-forest",
+        "https://en.wikipedia.org/wiki/A_Forest",
+        "https://api.lyrics.ovh/v1/The%20Cure/A%20Forest",
+        "https://lrclib.net/api/get?artist_name=The+Cure&track_name=A+Forest",
+        "https://itunes.apple.com/search?term=The+Cure+A+Forest&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-latEhwt1uis",
+      "title": "Boys Don't Cry",
+      "artist": "The Cure",
+      "year": 1979,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Text erzählt von jemandem, der seine Tränen hinter einem Lachen versteckt, obwohl die geliebte Person längst gegangen ist.",
+        "Als eigenständige Single erschien das Stück am 12. Juni 1979; auf der Rückseite stand 'Plastic Passion'.",
+        "In den USA erschien eine Kompilation unter demselben Titel, die den Song als Titeltrack übernahm - das amerikanische Gegenstück zu einem britischen Album der Band.",
+        "Sieben Jahre später kam eine Neufassung mit frisch eingesungenem Gesang und neuem Mix; sie erreichte am 21. April 1986 Platz 22 der britischen Single-Charts.",
+        "Der US-Spielfilm von 1999 mit demselben Titel übernahm den Song als Titelthema; die Hauptdarstellerin gewann dafür den Oscar als beste Hauptdarstellerin."
+      ],
+      "lyrics": {
+        "real": [
+          "I would say I'm sorry",
+          "I try to laugh about it",
+          "Cover it all up with lies"
+        ],
+        "fake": "I never wanted you to leave, I just needed time to think"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=latEhwt1uis"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Indie & Alternative",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/the-cure-boys-don-t-cry.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/the-cure/boys-dont-cry",
+        "https://en.wikipedia.org/wiki/Boys_Don%27t_Cry_(The_Cure_song)",
+        "https://www.wikidata.org/wiki/Q1823033",
+        "https://api.lyrics.ovh/v1/The%20Cure/Boys%20Don%27t%20Cry",
+        "https://itunes.apple.com/search?term=The+Cure+Boys+Don't+Cry&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "indie-the-cure-friday",
+      "title": "Friday I'm in Love",
+      "artist": "The Cure",
+      "year": 1992,
+      "country": "GB",
+      "genre": "New Wave / Indie Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Fun"
+      ],
+      "hints": [
+        "Die Eröffnungszeile verweist auf den New-Order-Hit 'Blue Monday'.",
+        "Aufgenommen wurde das Stück im The Manor Studio bei Oxford, das Labelchef Richard Branson einst an Bands vermietete.",
+        "Der Sänger hatte den Song in Tonart D aufgenommen, vergaß aber die Geschwindigkeitsregelung und beschleunigte ihn versehentlich um einen Viertelton.",
+        "Das Video, inszeniert von Tim Pope, gewann 1992 den MTV-Preis für das beste Musikvideo.",
+        "In den britischen Charts erreichte der Song Platz 6, in den US-Charts Platz 18 - damit war es der bis dahin zweitgrößte Charterfolg der Band in Großbritannien."
+      ],
+      "lyrics": {
+        "real": [
+          "I don't care if Monday's blue",
+          "Saturday, wait",
+          "And Sunday always comes too late"
+        ],
+        "fake": "Leave all your worries, the weekend is calling for you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mGgMZpGYiy8"
+      },
+      "coverUrl": "/covers/indie-the-cure-friday.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Dance Floor Fillers",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/the-cure/friday-im-in-love",
+        "https://en.wikipedia.org/wiki/Friday_I%27m_in_Love",
+        "https://api.lyrics.ovh/v1/The%20Cure/Friday%20I%27m%20in%20Love",
+        "https://lrclib.net/api/get?artist_name=The+Cure&track_name=Friday+I%27m+in+Love",
+        "https://itunes.apple.com/search?term=The+Cure+Friday+I'm+in+Love&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-e7v51klIPaQ",
+      "title": "Just Like Heaven",
+      "artist": "The Cure",
+      "year": 1987,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Text erzählt von einem Traum an der Meeresküste, der am Morgen in einem Alleinsein endet.",
+        "Die erste Demo trug den Titel 'Shivers'; im Aufbau ähnelt das Stück 'Another Girl, Another Planet' von The Only Ones.",
+        "Aufgenommen wurde der Song 1987 im französischen Studio Miraval; die Frauen im Control-Raum beeinflussten den Klang.",
+        "Das Video, inszeniert von Tim Pope, entstand an den englischen Klippen, die den Text inspirierten; die spätere Ehefrau des Sängers tanzt darin mit ihm.",
+        "Die Single erschien als dritte Auskopplung des siebten Albums der Band und erreichte in den US-Charts Platz 40."
+      ],
+      "lyrics": {
+        "real": [
+          "I kissed her face and kissed her head",
+          "Daylight licked me into shape",
+          "I opened up my eyes"
+        ],
+        "fake": "I see your face in every cloud that drifts across the sky"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e7v51klIPaQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Indie & Alternative",
+        "Movie Hits",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/the-cure-just-like-heaven.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/the-cure/just-like-heaven",
+        "https://en.wikipedia.org/wiki/Just_like_Heaven_(The_Cure_song)",
+        "https://www.wikidata.org/wiki/Q956305",
+        "https://api.lyrics.ovh/v1/The%20Cure/Just%20Like%20Heaven",
+        "https://itunes.apple.com/search?term=The+Cure+Just+Like+Heaven&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "jazz-brubeck-takefive",
+      "title": "Take Five",
+      "artist": "The Dave Brubeck Quartet",
+      "year": 1959,
+      "country": "US",
+      "genre": "Jazz / Cool Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Intelligent",
+        "Classic"
+      ],
+      "hints": [
+        "Geschrieben hat das Stück der Altsaxophonist der Band - der Pianist hatte ihn darum gebeten, eine Melodie in einem ungeraden Takt zu schreiben.",
+        "Das Album von 1959 gibt jedem Titel einen anderen Takt, was für Jazz dieser Zeit ungewöhnlich war.",
+        "In den US-Charts stieg der Titel 1961 bis auf Platz 25 der Hot 100 - für ein Jazz-Instrumental ein außergewöhnlicher Erfolg.",
+        "Das Schlagzeugsolo des Schlagzeugers zählt zu den besten Drumsolos aller Zeiten.",
+        "Die Band trat mit dem Stück 1962 in der legendären 'Ed Sullivan Show' auf."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vmDDOFXSgAs"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-brubeck-takefive.jpg",
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues",
+        "Global Hits 1950-2026",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/the-dave-brubeck-quartet/take-five",
+        "https://en.wikipedia.org/wiki/Take_Five",
+        "https://lrclib.net/api/get?artist_name=The+Dave+Brubeck+Quartet&track_name=Take+Five",
+        "https://itunes.apple.com/search?term=The+Dave+Brubeck+Quartet+Take+Five&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=vmDDOFXSgAs"
+      ]
+    },
+    {
+      "id": "piano-fray-howtosave",
+      "title": "How to Save a Life",
+      "artist": "The Fray",
+      "year": 2005,
+      "country": "US",
+      "genre": "Piano Rock / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Sänger schrieb das Stück nach einem Wochenende in einem Jugend-Wohnheim in Denver, wo er gemeinsam mit einem Bandkollegen einen Teenager mit Drogenproblemen betreute.",
+        "Der Song erschien 2005 auf dem Debütalbum der Band bei Epic Records; als eigenständige Single wurde er erst 2006 ausgekoppelt.",
+        "Bei den Grammy Awards 2007 war das Stück für den besten Rockgesang nominiert, unterlag aber 'Dani California'.",
+        "In den US-Charts erreichte es Platz 3 der Hot 100 und zählte 58 Wochen zu den längsten Chartläufen der Geschichte.",
+        "Nach dem Einsatz in der Arztsoap 'Grey's Anatomy' wurde der Song zu deren inoffiziellem Leitmotiv und für die dritte Staffel im Hauptwerbe-Trailer genutzt."
+      ],
+      "lyrics": {
+        "real": [
+          "Where did I go wrong? I lost a friend",
+          "Somewhere along in the bitterness",
+          "He smiles politely back at you"
+        ],
+        "fake": "You told me everything was fine"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cjVQ36NhbMk",
+        "spotify": "https://open.spotify.com/track/1EOHawnOZGTjwl2y3lDoW7",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-fray-howtosave.jpg",
+      "packs": [
+        "piano-ballads",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/How_to_Save_a_Life",
+        "https://en.wikipedia.org/wiki/How_to_Save_a_Life_(album)",
+        "https://www.songfacts.com/facts/the-fray/how-to-save-a-life",
+        "https://itunes.apple.com/search?term=The+Fray+How+to+Save+a+Life&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/The%20Fray/How%20to%20Save%20a%20Life"
+      ]
+    }
+  ]
+}

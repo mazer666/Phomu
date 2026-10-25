@@ -1,0 +1,730 @@
+{
+  "songs": [
+    {
+      "id": "yt-U319ke4jEGU",
+      "title": "Sing Hallelujah",
+      "artist": "Dr. Alban",
+      "year": 1993,
+      "country": "SE",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Der Interpret wurde 1957 in Nigeria geboren und kam mit 23 nach Schweden, um Zahnmedizin zu studieren - sein Künstlername ist eine Anspielung auf dieses Studium.",
+        "Bevor der Durchbruch kam, finanzierte er sein Studium als DJ in einem Stockholmer Club; 1990 lernte er den Produzenten kennen, mit dem er seine erste Platte aufnahm.",
+        "Das Stück erschien 1993 als Auskopplung und war neben 'It's My Life' einer der erfolgreichsten Titel des Albums 'One Love', des zweiten Albums des Künstlers.",
+        "Der Text stellt das abc-Alphabet als Rhythmus dar: Die Buchstaben A B C werden mit den Zahlen 1 2 3 gleichgesetzt, später folgt D E F.",
+        "Der Refrain ruft die ganze Party zum Mitrufen auf - englischsprachig, mit typisch schwedischem Party-Pop-Charakter."
+      ],
+      "lyrics": {
+        "real": [
+          "D E F is like 4 5 6",
+          "Happy people, come on",
+          "Wicked and wild, oh Lord"
+        ],
+        "fake": "Come on everybody, the good times never end tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=U319ke4jEGU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/dr--alban-sing-hallelujah.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dr._Alban",
+        "https://www.azlyrics.com/lyrics/dralban/singhallelujah.html",
+        "https://api.lyrics.ovh/v1/Dr.%20Alban/Sing%20Hallelujah",
+        "https://music.apple.com/us/album/one-love-second-edition/1614626876?i=1614626880",
+        "https://music.apple.com/us/album/sing-hallelujah/880954186?i=880954193"
+      ]
+    },
+    {
+      "id": "hiphop-drdre-gthang",
+      "title": "Nuthin' but a 'G' Thang",
+      "artist": "Dr. Dre ft. Snoop Dogg",
+      "year": 1992,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Die Grundlage war eine Kassette mit Demo-Aufnahmen, die der Produzent einem jungen Gast-Rapper vorspielte; die erste Gesangsversion entstand per Knasttelefon, die Haftgeräusche sind im Original hörbar.",
+        "Das Fundament ist ein Sample aus den 70er-Jahren - ein Funk-Klassiker von Leon Haywood aus dem Jahr 1975.",
+        "Die Auskopplung erschien im Januar 1993 als erste Single des Debütalbums, erreichte in den USA Platz 2 der Billboard Hot 100 und Platz 1 der R&B-/Hip-Hop-Liste; in Großbritannien kam sie auf Platz 31.",
+        "Die Rock and Roll Hall of Fame führt das Stück in ihrer Liste '500 Songs That Shaped Rock and Roll'; das Musikvideo inszeniert eine Blockparty in Long Beach und wurde vom Produzenten selbst inszeniert.",
+        "Der Refrain wiederholt eine dreiteilige Formel ('It's like this and like that and like this and a'), die mitten im Wort abbricht."
+      ],
+      "lyrics": {
+        "real": [
+          "Compton and Long Beach together, now you know you in trouble",
+          "Dre, creep to the mic like a phantom",
+          "Ready to make an entrance, so back on up"
+        ],
+        "fake": "Slow rolling through the boulevard on a lazy summer groove"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8GliyDgAGQI"
+      },
+      "coverUrl": "/covers/hiphop-drdre-gthang.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nuthin%27_but_a_%27G%27_Thang",
+        "https://www.songfacts.com/facts/dr-dre/nuthin-but-a-g-thang",
+        "https://www.billboard.com/artist/dr-dre/chart-history/hsi/",
+        "https://www.azlyrics.com/lyrics/drdre/nuthinbutagthang.html",
+        "https://en.wikipedia.org/wiki/The_Chronic"
+      ]
+    },
+    {
+      "id": "hiphop-dre-still-dre",
+      "title": "Still D.R.E.",
+      "artist": "Dr. Dre ft. Snoop Dogg",
+      "year": 1999,
+      "country": "US",
+      "genre": "West Coast Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Classic",
+        "Energy"
+      ],
+      "hints": [
+        "Den Text schrieb ein Gaststar aus New York - er soll die Reime in einer knappen halben Stunde in einem Studio in Los Angeles geschrieben haben.",
+        "Die Melodie entstand nachts in den A&M Studios: Der Tastenspieler lieferte die Keyboard-Figur, danach kamen die Drum-Patterns und der Feinschliff vom Produzenten.",
+        "Die Auskopplung erschien am 28. September 1999 als Leitstück des zweiten Soloalbums; in Großbritannien erreichte sie Platz 6, in den USA zunächst nur Platz 93.",
+        "Das Video inszeniert eine Fahrt in Lowridern durch Los Angeles und erreichte im Februar 2022 die Marke von einer Milliarde Aufrufen.",
+        "Die Hook-Zeile verspricht, sich beim Bau des Beats noch immer Zeit zu lassen - der Titel ist eine Reminiszenz an das Comeback des Produzenten."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm representing for them gangstas all across the world",
+          "Still taking my time to perfect the beat",
+          "Still waters run deep"
+        ],
+        "fake": "Taking my time on the beat while the low end keeps on rolling"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_CL6n0FJZpk"
+      },
+      "coverUrl": "/covers/hiphop-dre-still-dre.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Still_D.R.E.",
+        "https://www.songfacts.com/facts/dr-dre/still-dre",
+        "https://www.billboard.com/artist/dr-dre/chart-history/hsi/",
+        "https://www.azlyrics.com/lyrics/drdre/stilldre.html",
+        "https://en.wikipedia.org/wiki/2001_(Dr._Dre_album)"
+      ]
+    },
+    {
+      "id": "hiphop-drake-plan",
+      "title": "God's Plan",
+      "artist": "Drake",
+      "year": 2018,
+      "country": "CA",
+      "genre": "Hip Hop / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Grateful",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Das Musikvideo entstand mit einem Budget von 996.631,90 Dollar, das laut Einblendung vollständig für wohltätige Zwecke ausgegeben wurde.",
+        "Der Beat lag zunächst als halbfertiger Loop vor, den ein Toronto-Produzent mit Schlagzeug und Percussion erst zum tanzbaren Groove ausbaute.",
+        "Die Auskopplung erschien am 19. Januar 2018 zusammen mit einem zweiten Titel auf einer EP, die nur zwei Songs enthält.",
+        "In den USA führte das Lied die Billboard Hot 100 an - zehn Wochen lang. Für den Interpreten war es nach 'One Dance' der zweite solche Erfolg; 2019 gewann der Song den Grammy für den besten Rap-Song.",
+        "In den ersten 24 Stunden nach der Veröffentlichung brach das Stück in den USA den Tagesrekord des Streaming-Dienstes - mit über 4,3 Millionen Wiedergaben."
+      ],
+      "lyrics": {
+        "real": [
+          "Fifty Dub, I even got it tatted on me",
+          "Don't pull up at 6 AM to cuddle with me",
+          "I been movin' calm, don't start no trouble with me"
+        ],
+        "fake": "Counting up my blessings while the whole city wakes around me"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xpVfcZ0ZcFM"
+      },
+      "coverUrl": "/covers/hiphop-drake-plan.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/God%27s_Plan_(song)",
+        "https://www.songfacts.com/facts/drake/gods-plan",
+        "https://www.billboard.com/artist/drake/chart-history/hsi/",
+        "https://www.azlyrics.com/lyrics/drake/godsplan.html",
+        "https://music.apple.com/us/album/gods-plan/1406109769?i=1406109863"
+      ]
+    },
+    {
+      "id": "modern-drake-one-dance",
+      "title": "One Dance",
+      "artist": "Drake ft. Wizkid & Kyla",
+      "year": 2016,
+      "country": "CA",
+      "genre": "Dancehall / Afrobeats",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Groovy",
+        "Catchy"
+      ],
+      "hints": [
+        "Die Grundlage ist eine britische Clubnummer von 2008, die in ihrer Heimat nur auf Platz 140 der Single-Charts kam.",
+        "Die Aufnahme entstand 2015 und erschien am 5. April 2016 als eine von zwei Auskopplungen, die zeitgleich kamen.",
+        "Das Stück führte in 15 Ländern die Hitparade an - darunter Großbritannien, Deutschland, Frankreich und Kanada; in Großbritannien blieb es 15 Wochen auf Platz 1.",
+        "Es war die erste Nummer-eins-Auskopplung des Interpreten als alleiniger Lead-Act in den USA.",
+        "Der Text verbindet Tanz, Wein und Cognac: Im Refrain geht es um einen letzten Tanz mit einem Glas in der Hand, daneben tauchen afrikanische Wendungen und ein englisches 'One more time' auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby, I like your style",
+          "Got a Hennessy in my hand",
+          "Higher powers taking a hold on me"
+        ],
+        "fake": "Pouring up the cognac while the whole crowd moves with me"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mym4sKoAnKs",
+        "spotify": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
+        "amazonMusic": "https://music.amazon.com/tracks/B01F5XNXKK"
+      },
+      "coverUrl": "/covers/modern-drake-one-dance.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/One_Dance",
+        "https://www.songfacts.com/facts/drake/one-dance",
+        "https://www.billboard.com/artist/drake/chart-history/hsi/",
+        "https://www.azlyrics.com/lyrics/drake/onedance.html",
+        "https://music.apple.com/us/album/one-dance-feat-wizkid-kyla/1440841363?i=1440841384"
+      ]
+    },
+    {
+      "id": "metal-dreamtheater-pullme",
+      "title": "Pull Me Under",
+      "artist": "Dream Theater",
+      "year": 1992,
+      "country": "US",
+      "genre": "Progressive Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Complex",
+        "Epic",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Text greift ein Drama von Shakespeare auf und zitiert daraus am Ende wörtlich eine Zeile; die Handlung kreist um Rache und den drohenden Verlust des Verstandes.",
+        "Der Arbeitstitel des Stücks war eine Hommage an den A&R-Manager, der die Band bei ihrem Label betreute.",
+        "Den Text schrieb der Keyboarder der Band, während Gitarre und Schlagzeug von den beiden anderen Mitgliedern gespielt werden.",
+        "Das Stück ist über acht Minuten lang und bricht mitten im Ton ab - die Band übernahm dafür das abrupte Ende eines Beatles-Klassikers von 1969.",
+        "Als Auskopplung erreichte es Platz 10 der US-Rock-Rangliste - der einzige echte Radio-Hit der Band, was später zum Anlass für die Kompilation 'Greatest Hit (...and 21 Other Pretty Cool Songs)' wurde."
+      ],
+      "lyrics": {
+        "real": [
+          "Lost in the sky",
+          "Clouds roll by and I roll with them",
+          "Pull me under, I'm not afraid"
+        ],
+        "fake": "Calling from the shadows where the falling stars run down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mipc-JxrhRk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-dreamtheater-pullme.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "metal-hardcore"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Pull_Me_Under",
+        "https://www.songfacts.com/facts/dream-theater/pull-me-under",
+        "https://www.billboard.com/artist/dream-theater/chart-history/rtt/",
+        "https://api.lyrics.ovh/v1/Dream%20Theater/Pull%20Me%20Under",
+        "https://music.apple.com/us/album/pull-me-under/282703578?i=282703594"
+      ]
+    },
+    {
+      "id": "schlager-dschinghis-khan-khan",
+      "title": "Dschinghis Khan",
+      "artist": "Dschinghis Khan",
+      "year": 1979,
+      "country": "DE",
+      "genre": "Disco / Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Energy"
+      ],
+      "hints": [
+        "Die Musik komponierte Ralph Siegel, den Text schrieb Bernd Meinunger – das Duo stand auch hinter zahlreichen anderen deutschen Schlagerhits.",
+        "Aufgenommen wurde das Stück 1979 im Olympia Studio in München und veröffentlicht über das Label Jupiter Records.",
+        "Das Lied war die erste Single des gleichnamigen Debütalbums; auf der Rückseite erschien 'Sahara', international 'Desert Land'.",
+        "In Westdeutschland war der Song ein Nummer-eins-Hit, außerdem kam er in Österreich, Finnland, Norwegen und der Schweiz in die Top 10.",
+        "Beim Eurovision Song Contest 1979 in Jerusalem belegte die Band mit 86 Punkten den vierten Platz."
+      ],
+      "lyrics": {
+        "real": [
+          "Die Hufe ihrer Pferde durchpeitschten den Sand",
+          "Er zeugte sieben Kinder in einer Nacht",
+          "Und über seine Feinde hat er nur gelacht"
+        ],
+        "fake": "Wir fliegen durch die Nacht, bis der helle Tag erwacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DAr7KaxzfpA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-dschinghis-khan-khan.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "grand-finale",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dschinghis_Khan_(song)",
+        "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_1979",
+        "https://en.wikipedia.org/wiki/Ralph_Siegel",
+        "https://en.wikipedia.org/wiki/Bernd_Meinunger",
+        "https://lrclib.net/api/get?artist_name=Dschinghis%20Khan&track_name=Dschinghis%20Khan"
+      ]
+    },
+    {
+      "id": "finale-dua-barbie",
+      "title": "Dance The Night",
+      "artist": "Dua Lipa",
+      "year": 2023,
+      "country": "GB",
+      "genre": "Disco-Pop / Movie Theme",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Die Sängerin schrieb das Stück mit Caroline Ailin, Mark Ronson und Andrew Wyatt; produziert wurde es von Ronson, Wyatt und den Picard Brothers.",
+        "Der Song entstand 2022 und erschien am 25. Mai 2023 als erste Single zum Soundtrack des Barbie-Films.",
+        "Bei den 66. Grammy Awards war der Song in zwei Kategorien nominiert: Song of the Year und Best Song Written for Visual Media.",
+        "Das Stück ist ein Disco- und Synth-Pop-Song mit einer Länge von 2 Minuten und 56 Sekunden.",
+        "Der Song führte die Charts in mehreren Ländern an, unter anderem im Vereinigten Königreich."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby, you can find me under the lights",
+          "My heart could be burnin', but you won't see it on my face",
+          "I'll still keep the party runnin', not one hair out of place"
+        ],
+        "fake": "Sequins and disco lights are swinging while the whole room moves"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OiC1rgCPmUQ",
+        "spotify": "https://open.spotify.com/track/11C4y2Yz1XbHmaQwO06s9f"
+      },
+      "coverUrl": "/covers/dua-lipa-dance-the-night.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "Movie Hits",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dance_the_Night",
+        "https://en.wikipedia.org/wiki/Barbie_the_Album",
+        "https://en.wikipedia.org/wiki/Barbie_(film)",
+        "https://en.wikipedia.org/wiki/66th_Annual_Grammy_Awards",
+        "https://lrclib.net/api/get?artist_name=Dua%20Lipa&track_name=Dance%20the%20Night"
+      ]
+    },
+    {
+      "id": "yt-SXPbzreFSxw",
+      "title": "Don't Start Now",
+      "artist": "Dua Lipa",
+      "year": 2019,
+      "country": "GB",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Der Song entstand im Juli 2019 in den Studios TaP in London und Zenseven in Los Angeles.",
+        "Geschrieben wurde er mit Caroline Ailin, Emily Warren und Produzent Ian Kirkpatrick.",
+        "Es ist ein Nu-Disco-Stück mit einer Funk-Basslinie, angelehnt an die Bee Gees und Daft Punk; die Cowbell im Refrain erinnert an Two Door Cinema Club.",
+        "Bei den 63. Grammy Awards war der Song in drei Kategorien nominiert: Record of the Year, Song of the Year und Best Pop Solo Performance.",
+        "Er erreichte Platz zwei in den britischen Single-Charts und in den US-Billboard-Hot-100 und gewann den American Music Award für Favorite Pop/Rock Song."
+      ],
+      "lyrics": {
+        "real": [
+          "If you don't wanna see me dancing with somebody",
+          "Don't show up, don't come out",
+          "Walk away, you know how"
+        ],
+        "fake": "Put your hands up in the air and let the bassline pull you in"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SXPbzreFSxw",
+        "spotify": "https://open.spotify.com/track/3oRWl1wBZo9KjZRAwvOFJv"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "electronic-synth"
+      ],
+      "coverUrl": "/covers/dance-dua-lipa-start-now.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_Start_Now",
+        "https://en.wikipedia.org/wiki/Future_Nostalgia",
+        "https://en.wikipedia.org/wiki/63rd_Annual_Grammy_Awards",
+        "https://en.wikipedia.org/wiki/2020_American_Music_Awards",
+        "https://lrclib.net/api/get?artist_name=Dua%20Lipa&track_name=Don%27t%20Start%20Now"
+      ]
+    },
+    {
+      "id": "dua-lipa-levitating-2020",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Modern",
+        "Modern Hits",
+        "Neon Night",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song am 28. August 2018 in London und Toronto, produziert von Stephen Kozmeniuk und Stuart Price.",
+        "Das Stück erschien am 1. Oktober 2020 als fünfte Single des Albums Future Nostalgia.",
+        "Eine Remix-Version mit Madonna und Missy Elliott erschien bereits am 13. August 2020 – sieben Wochen vor der Original-Single.",
+        "Der Song belegte Platz zwei in den US-Billboard-Hot-100 und führte im Jahr 2021 die Jahrescharts der Hitliste an.",
+        "Der Text beschreibt das Gefühl, beim Verlieben zu schweben, und steckt voller Verweise auf den Weltraum."
+      ],
+      "lyrics": {
+        "real": [
+          "If you wanna run away with me, I know a galaxy",
+          "I believe that you're for me, I feel it in our energy",
+          "My sugarboo, I'm levitating"
+        ],
+        "fake": "We're walking on the stars above the city lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UbPrlq52r7Y",
+        "spotify": "https://open.spotify.com/track/58SZgPQmD9wdxkpY0tTPIc"
+      },
+      "coverUrl": "/covers/dua-lipa-levitating-2020.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "grand-finale",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Levitating_(song)",
+        "https://en.wikipedia.org/wiki/Future_Nostalgia",
+        "https://en.wikipedia.org/wiki/Club_Future_Nostalgia",
+        "https://en.wikipedia.org/wiki/Stuart_Price",
+        "https://lrclib.net/api/get?artist_name=Dua%20Lipa&track_name=Levitating"
+      ]
+    },
+    {
+      "id": "yt-VMQlEvr42A8",
+      "title": "Training Season",
+      "artist": "Dua Lipa",
+      "year": 2024,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song in London, in Malibu und im Home-Studio von Produzent Kevin Parker.",
+        "Kevin Parker steuerte die Produktion, mitwirkten unter anderem Tobias Jesso Jr. und Caroline Ailin.",
+        "Das Stück erschien am 15. Februar 2024 als zweite Single des Albums Radical Optimism.",
+        "In den Airplay-Charts belegte der Song in Lettland, Litauen, in der Türkei und in den GUS-Staaten den ersten Platz.",
+        "Der Song startete in den britischen Single-Charts auf Platz vier und erreichte in den USA Platz 27 der Billboard Hot 100."
+      ],
+      "lyrics": {
+        "real": [
+          "Need someone to hold me close",
+          "Whose love feels like a rodeo",
+          "Are you somebody who can go there?"
+        ],
+        "fake": "We are the champions of the training ground tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMQlEvr42A8",
+        "spotify": "https://open.spotify.com/track/5Ud34aZM8XxuJGPqnY5Bds"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "electronic-synth"
+      ],
+      "coverUrl": "/covers/dua-lipa-training-season.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Training_Season",
+        "https://en.wikipedia.org/wiki/Radical_Optimism",
+        "https://en.wikipedia.org/wiki/Kevin_Parker_(musician)",
+        "https://en.wikipedia.org/wiki/Dua_Lipa",
+        "https://lrclib.net/api/get?artist_name=Dua%20Lipa&track_name=Training%20Season"
+      ]
+    },
+    {
+      "id": "yt-fWU5TM2fWkY",
+      "title": "Something On My Mind",
+      "artist": "Purple Disco Machine, Duke Dumont & Nothing But Thieves",
+      "year": 2023,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die Musik schrieben der deutsche DJ Tino Schmidt, bürgerlich Tino Piontek, und der britische DJ Adam Dyment.",
+        "Den Text verfassten drei Mitglieder einer britischen Band, die auch am Gesang des Tracks beteiligt waren.",
+        "Der Track erschien am 8. September 2023 bei Columbia, einer Division von Sony Music Entertainment Germany.",
+        "In den flämischen Charts erreichte die Single Platz vier, in den Niederlanden verfehlte sie die Top 100 und kam dort nur auf die 'Single Tip'-Liste.",
+        "Die Single läuft nicht ganz vier Minuten."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not interested in love in a soundbite",
+          "Don't wanna cut down to the obvious highlights",
+          "You've gone too long unsatisfied"
+        ],
+        "fake": "We are dancing through the city under neon skies"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fWU5TM2fWkY",
+        "spotify": "https://open.spotify.com/track/2h0eAlykWAzP08fEgxFDYt"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "electronic-synth",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/purple-disco-machine-duke-dumont---nothing-but-thieves-something-on-my-mind.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Purple_Disco_Machine",
+        "https://en.wikipedia.org/wiki/Nothing_but_Thieves",
+        "https://en.wikipedia.org/wiki/Duke_Dumont",
+        "https://www.youtube.com/watch?v=fWU5TM2fWkY",
+        "https://lrclib.net/api/get?artist_name=Purple%20Disco%20Machine&track_name=Something%20On%20My%20Mind"
+      ]
+    },
+    {
+      "id": "jazz-duke-atrain",
+      "title": "Take the 'A' Train",
+      "artist": "Duke Ellington",
+      "year": 1941,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Komponist war ein junger Musiker, den der Bandleader 1939 nach New York holte – die U-Bahn-Anweisungen, die dieser für den Weg zu seinem Haus bekam, lieferten die Idee für den Titel.",
+        "Das Stück verweist auf die U-Bahn-Linie A der New Yorker Subway, die von Brooklyn über die Eighth Avenue Line hinauf nach Harlem und in das Viertel Sugar Hill fährt.",
+        "Ein Streit um Rundfunk-Lizenzgebühren der ASCAP im Jahr 1940 ließ den Bandleader nach einem neuen Signaturstück suchen – dieses wurde es, und Ray Nance trug die berühmte Trompetensolo vor.",
+        "Die ersten gesungenen Texte stammten von den Delta Rhythm Boys; die später vom Orchester gesungenen Worte schrieb 1944 die 20-jährige Joya Sherrill in Detroit.",
+        "Die Melodie steht in C-Dur und folgt dem Schema AABA; die Aufnahme von 1941 kam 1976 in die Grammy Hall of Fame, und 1999 wählte NPR das Stück zu den hundert wichtigsten amerikanischen Werken des 20. Jahrhunderts."
+      ],
+      "lyrics": {
+        "real": [
+          "You must take the \"A\" train",
+          "To go Sugar Hill 'way up in Harlem",
+          "Hurry, get on now it's coming"
+        ],
+        "fake": "Riding the midnight train up to the lights of Sugar Hill"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D6mFGy4g_n8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-duke-atrain.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Take_the_%22A%22_Train",
+        "https://www.songfacts.com/facts/duke-ellington/take-the-a-train",
+        "https://www.jazzstandards.com/compositions-0/taketheatrain.htm",
+        "https://www.pbs.org/wnet/americanmasters/the-story-of-take-the-a-train/13781/",
+        "https://en.wikipedia.org/wiki/Billy_Strayhorn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "songs": [
+    {
+      "id": "soul-war-lowrider",
+      "title": "Low Rider",
+      "artist": "War",
+      "year": 1975,
+      "country": "US",
+      "genre": "Funk / Latin influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Relaxed",
+        "Funny"
+      ],
+      "hints": [
+        "Der Song entstand aus der Feder von Jerry Goldstein, dem Produzenten der Band, und erschien 1975 auf ihrem siebten Studioalbum.",
+        "Die Aufnahme entstand 1974 im Sound City Studio in Van Nuys, Kalifornien - das Album entstand im gleichen Jahr.",
+        "Ein Basslauf von B. B. Dickerson trägt die Nummer, Charles Miller steuert das Alt-Saxophon, LeOskar verdoppelt die Melodie auf der Mundharmonika.",
+        "Platz 1 in den US-R&B-Charts, Platz 7 in den Hot 100 und Platz 12 im Vereinigten Königreich.",
+        "Refrain: 'Take a little trip, take a little trip' - die nummerierte Ich-Form erzählt von Ausflügen durch die Stadt."
+      ],
+      "lyrics": {
+        "real": [
+          "All my friends know the low rider",
+          "The low rider is a little higher",
+          "Low rider drives a little slower"
+        ],
+        "fake": "Every night we cruise the boulevard until the morning light is gone"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tTuoLdIZsrk",
+        "spotify": "https://open.spotify.com/track/4E374eiIlJ3WJNaDzO6Pbu"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-war-lowrider.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Low_Rider",
+        "https://en.wikipedia.org/wiki/Why_Can%27t_We_Be_Friends%3F",
+        "https://www.songfacts.com/facts/war/low-rider",
+        "https://api.lyrics.ovh/v1/War/Low%20Rider",
+        "https://itunes.apple.com/search?term=War+Low+Rider&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "hiphop-warreng-regulate",
+      "title": "Regulate",
+      "artist": "Warren G ft. Nate Dogg",
+      "year": 1994,
+      "country": "US",
+      "genre": "G-Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Smooth"
+      ],
+      "hints": [
+        "Der Track ist eine Eigenkomposition des Westküsten-Rappers und erschien 1994 als Titeltrack eines G-Funk-Albums - zugleich auf dem Soundtrack zum Basketballfilm 'Above the Rim'.",
+        "Vier Takte des Rhythmus von Michael McDonalds 'I Keep Forgettin'' bilden das Sample; der Autor hörte den Song einst in Chicken 'N Waffles in Hollywood.",
+        "Die Geschichte spielt in Long Beach: Erzähler und Komplizin werden ausgeraubt, bis der Freund mit geladener Waffe zurückschlägt.",
+        "Platz 2 in den US-Hot-100-Charts und Platz 8 in den R&B-/Hip-Hop-Charts; die Single startete mit Platz 57.",
+        "Der Refrain beginnt mit dem Ruf 'Regulators' - gleich danach die Zeile 'We're damn good too'."
+      ],
+      "lyrics": {
+        "real": [
+          "We regulate any stealin' of his property",
+          "We're damn good too",
+          "But you can't be any geek off the street"
+        ],
+        "fake": "Sirens on the corner and the whole block knows my name"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1plPyJdXKIY"
+      },
+      "coverUrl": "/covers/hiphop-warreng-regulate.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026",
+        "90s Unplugged"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Regulate_(song)",
+        "https://en.wikipedia.org/wiki/Warren_G",
+        "https://en.wikipedia.org/wiki/Nate_Dogg",
+        "https://api.lyrics.ovh/v1/Warren%20G/Regulate",
+        "https://itunes.apple.com/search?term=Warren+G+Regulate&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "country-waylon-cowboys",
+      "title": "Mammas Don't Let Your Babies Grow Up to Be Cowboys",
+      "artist": "Waylon Jennings & Willie Nelson",
+      "year": 1978,
+      "country": "US",
+      "genre": "Outlaw Country",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Cool",
+        "Classic"
+      ],
+      "hints": [
+        "Das Lied wurde 1975 von dem texanischen Songwriter Ed Bruce und seiner Frau Patsy geschrieben; Ed nahm es als Erstausleger auf.",
+        "Die Erstaufnahme des Songwriters erreichte 1975 Platz 15 in den US-Country-Charts.",
+        "Die vorliegende Duett-Fassung erschien als Single im Januar 1978 auf RCA Victor; B-Seite ist 'I Can Get Off on You'.",
+        "2024 setzte das US-Magazin Rolling Stone den Song auf Platz 69 seiner Liste der 200 größten Country-Songs aller Zeiten.",
+        "Refrain: 'Let 'em be doctors and lawyers and such' - statt des Westernlebens wünscht die besorgte Mutter einen bürgerlichen Beruf."
+      ],
+      "lyrics": {
+        "real": [
+          "Cowboys ain't easy to love and they're harder to hold",
+          "They'd rather give you a song than diamonds or gold",
+          "Let 'em be doctors and lawyers and such"
+        ],
+        "fake": "Diesel smoke rolls down the highway till the morning comes around"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ufjv0SRZ-IY"
+      },
+      "coverUrl": "/covers/country-waylon-cowboys.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mammas_Don%27t_Let_Your_Babies_Grow_Up_to_Be_Cowboys",
+        "https://en.wikipedia.org/wiki/Waylon_Jennings",
+        "https://en.wikipedia.org/wiki/Willie_Nelson",
+        "https://api.lyrics.ovh/v1/Waylon%20Jennings/Mammas%20Don%27t%20Let%20Your%20Babies%20Grow%20Up%20to%20Be%20Cowboys",
+        "https://itunes.apple.com/search?term=Waylon+Jennings+Willie+Nelson+Mammas+Dont+Let+Your+Babies+Grow+Up+To+Be+Cowboys&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "jazz-montgomery-round",
+      "title": "'Round Midnight",
+      "artist": "Wes Montgomery",
+      "year": 1959,
+      "country": "US",
+      "genre": "Jazz / Guitar",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Gitarrist 'Wes' wurde 1923 in Indianapolis geboren und starb dort 1968 - Gitarre war sein einziges Instrument.",
+        "Die Aufnahme entstand 1959 mit einem Trio aus Gitarre, Hammond-Orgel und Schlagzeug und erschien auf einem gleichnamigen Album.",
+        "Die Komposition stammt von Thelonious Monk, der das Stück 1944 schrieb - einer der meistgespielten Standards der Jazz-Gitarre.",
+        "Weltberühmt wurde der Gitarrist für sein Oktavspiel und dafür, dass er den Daumen statt eines Plektrums einsetzte.",
+        "Instrumental: reine Gitarre, Hammond-Orgel und Schlagzeug, ohne einen einzigen gesungenen Text."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PvnP5CiRvZI"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-montgomery-round.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wes_Montgomery",
+        "https://en.wikipedia.org/wiki/Thelonious_Monk",
+        "https://en.wikipedia.org/wiki/%27Round_Midnight_(song)",
+        "https://musicbrainz.org/ws/2/release/aef4368a-15de-4a47-8654-10b08fc777d3?inc=recordings+artist-credits&fmt=json",
+        "https://itunes.apple.com/search?term=Wes+Montgomery+Round+Midnight&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "80s-wham-wake-me-up-before-you-go-go",
+      "title": "Wake Me Up Before You Go-Go",
+      "artist": "Wham!",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Dance-pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Pop"
+      ],
+      "hints": [
+        "Das Duo bestand aus George Michael und Andrew Ridgeley.",
+        "Der Titel entstand durch eine krakelige Notiz, die Andrew an George schrieb.",
+        "Im Musikvideo tragen alle 'CHOOSE LIFE' T-Shirts.",
+        "Beginnt mit viermal 'Jitterbug', dazwischen jeweils ein Fingerschnipsen.",
+        "Eine der fröhlichsten Hymnen der 80er Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "You put the boom-boom into my heart",
+          "Jitterbug into my brain",
+          "Wake me up before you go-go"
+        ],
+        "fake": "Sun is coming up and we're dancing till the light of day"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pIgZ7gMze7A",
+        "spotify": "https://open.spotify.com/track/0ikz6tENMONtK6qGkOrU3c"
+      },
+      "coverUrl": "/covers/80s-wham-wake-me-up-before-you-go-go.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
+        "https://en.wikipedia.org/wiki/Wham!",
+        "https://en.wikipedia.org/wiki/Make_It_Big",
+        "https://www.songfacts.com/facts/wham/wake-me-up-before-you-go-go",
+        "https://api.lyrics.ovh/v1/Wham!/Wake%20Me%20Up%20Before%20You%20Go-Go"
+      ]
+    },
+    {
+      "id": "yt-mNotrnObDMU",
+      "title": "Hold Back Your Love",
+      "artist": "White Lies",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Dreamy",
+        "Melancholic",
+        "Night Drive",
+        "Synth"
+      ],
+      "hints": [
+        "Das Duo aus Ealing startete 2007 unter dem Namen Fear of Flying und unterschrieb bei Fiction Records.",
+        "Der Song erschien am 29. September 2016 als dritte Single des Albums 'Friends', das am 7. Oktober 2016 bei BMG veröffentlicht wurde.",
+        "Aufgenommen wurde in Studio One in London und im Distillery Studio in Bath; produziert hat die Band gemeinsam mit Richard Wilkinson.",
+        "Der Text erzählt von einer Person, die in einer herzlosen Stadt ohne jemanden lebt und ihre Gefühle zurückhält.",
+        "Aus dem Refrain: 'Every feeling is streaming out' - zuvor die Bitte, die eigenen Zweifel zu zeigen."
+      ],
+      "lyrics": {
+        "real": [
+          "For a heart in a heartless town",
+          "Every feeling is streaming out",
+          "Now you know that I mean it"
+        ],
+        "fake": "Every shadow on the street is waiting for the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mNotrnObDMU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/white-lies-hold-back-your-love.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/White_Lies_(band)",
+        "https://en.wikipedia.org/wiki/Friends_(White_Lies_album)",
+        "https://api.lyrics.ovh/v1/White%20Lies/Hold%20Back%20Your%20Love",
+        "https://lrclib.net/api/get?artist_name=White%20Lies&track_name=Hold%20Back%20Your%20Love",
+        "https://itunes.apple.com/search?term=White+Lies+Hold+Back+Your+Love&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "80s-whitney-dance",
+      "title": "I Wanna Dance with Somebody",
+      "artist": "Whitney Houston",
+      "year": 1987,
+      "country": "US",
+      "genre": "Pop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Confident",
+        "Dance",
+        "Energy",
+        "Happy",
+        "Party"
+      ],
+      "hints": [
+        "Die Musikkritiker verglichen die Klavier-Arrangements mit dem enthusiastischen Stil von 'Girls Just Want to Have Fun'.",
+        "Die Sängerin gewann mit dem Song 1988 den Grammy für die beste weibliche Pop-Vocal-Performance.",
+        "Das Video entstand im März 1987 in New York und wurde 1988 für den Soul Train Music Award als bestes Video nominiert.",
+        "Der Refrain beschreibt die Sehnsucht, nachts jemanden zu finden, der diese Sehnsucht teilt.",
+        "Die Single führte in 17 Ländern die Hitparaden an und zählt zu den meistverkauften Titeln der 80er-Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "Clock strikes upon the hour",
+          "I wanna feel the heat with somebody",
+          "With somebody who loves me"
+        ],
+        "fake": "Take me to the dancefloor where the neon glows"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eH3giaIzONA",
+        "spotify": "https://open.spotify.com/track/2tUBqZG2AbRi7Q0BIrVrEj",
+        "amazonMusic": "https://music.amazon.com/tracks/B00IZE58IM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-whitney-dance.jpg",
+      "packs": [
+        "80s-pop",
+        "80s Flashback",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Wanna_Dance_with_Somebody_(Who_Loves_Me)",
+        "https://www.songfacts.com/facts/whitney-houston/i-wanna-dance-with-somebody-who-loves-me",
+        "https://api.lyrics.ovh/v1/Whitney%20Houston/I%20Wanna%20Dance%20with%20Somebody",
+        "https://lrclib.net/api/get?artist_name=Whitney%20Houston&track_name=I%20Wanna%20Dance%20with%20Somebody",
+        "https://itunes.apple.com/search?term=Whitney+Houston+I+Wanna+Dance+with+Somebody&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "whitney-houston-i-will-always-love-you-1992",
+      "title": "I Will Always Love You",
+      "artist": "Whitney Houston",
+      "year": 1992,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Epic",
+        "Heartbreak",
+        "Power Ballad",
+        "Powerful",
+        "Romantic"
+      ],
+      "hints": [
+        "Das Original schrieb die Country-Legende Dolly Parton 1973 als Abschied von ihrem Mentor und langjährigen Partner Porter Wagoner.",
+        "Produzent David Foster legte fest, dass die ersten Zeilen ohne jede Instrumentalmusik gesungen werden.",
+        "Die Sängerin sang den Song 1992 für den Soundtrack des Films 'The Bodyguard', in dem sie ihr Filmdebüt gab.",
+        "Die Single stand 14 Wochen auf Platz 1 der US-Charts – ein Rekord, der erst 1995 gebrochen wurde.",
+        "Mit über 24 Millionen verkauften Einheiten gilt sie als die erfolgreichste Single einer Solistin aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "If I should stay",
+          "I'll think of you every step of the way",
+          "Bittersweet memories"
+        ],
+        "fake": "But now I must leave this town and find my own road"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3JWTaaS7LdU",
+        "spotify": "https://open.spotify.com/track/4eHbdreAnSOrDDsFfc4Fpm"
+      },
+      "coverUrl": "/covers/whitney-houston-i-will-always-love-you-1992.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "piano-ballads",
+        "Movie Hits",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Will_Always_Love_You",
+        "https://www.songfacts.com/facts/whitney-houston/i-will-always-love-you",
+        "https://api.lyrics.ovh/v1/Whitney%20Houston/I%20Will%20Always%20Love%20You",
+        "https://lrclib.net/api/get?artist_name=Whitney%20Houston&track_name=I%20Will%20Always%20Love%20You",
+        "https://itunes.apple.com/search?term=Whitney+Houston+I+Will+Always+Love+You&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "soul-wildcherry-funky",
+      "title": "Play That Funky Music",
+      "artist": "Wild Cherry",
+      "year": 1976,
+      "country": "US",
+      "genre": "Funk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Die Band kam aus Cleveland und veröffentlichte den Song 1976 als erste Single über das Label Sweet City, vertrieben von Epic.",
+        "Geschrieben und produziert hat den Song der Gitarrist Rob Parissi – in einem Club in Pittsburgh schrieb er ihn in etwa fünf Minuten.",
+        "Die Band war zunächst eine Hardrock-Cover-Band, die im Disco-Zeitalter kaum Engagements bekam, weil sie sich nicht als Disco-Act etikettieren wollte.",
+        "Die Single belegte 1976 zeitweise Platz 1 der US-Hitparade.",
+        "2018 zählte das Billboard den Song zu den 100 erfolgreichsten Liedern aller Zeiten – es war der einzige Top-40-Treffer der Band."
+      ],
+      "lyrics": {
+        "real": [
+          "Play that funky music right",
+          "To disco down and check out the show",
+          "So still I kept on fighting"
+        ],
+        "fake": "Bass line running and the whole floor starts to shake"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JTvlujbJ5vg",
+        "spotify": "https://open.spotify.com/track/5uuJruktM9fMdN9Va0DUMl"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-wildcherry-funky.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Play_That_Funky_Music",
+        "https://en.wikipedia.org/wiki/Wild_Cherry_(band)",
+        "https://www.songfacts.com/facts/wild-cherry/play-that-funky-music",
+        "https://api.lyrics.ovh/v1/Wild%20Cherry/Play%20That%20Funky%20Music",
+        "https://itunes.apple.com/search?term=Wild+Cherry+Play+That+Funky+Music&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-Var251O2AEM",
+      "title": "El Gran Varon",
+      "artist": "Willie Colón",
+      "year": 1989,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text erzählt von Simón, der vom eigenen Vater verstoßen wird und am Ende allein in einem Krankenhaus stirbt.",
+        "Es ist der erste spanischsprachige Song, der das Thema AIDS berührt – die Krankheit wird aber nicht beim Namen genannt.",
+        "Geschrieben hat den Song 1986 der panamische Komponist Omar Alfanno, gesungen mit der Band Legal Alien.",
+        "Die Aufnahme erschien 1989 auf dem letzten Fania-Album, wurde mehrfach ausgezeichnet und für den Grammy nominiert.",
+        "Die Single erreichte Platz 13 der US-Charts für Latin Pop und zählt zu den 50 besten Latin-Songs aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "En la sala de un hospital",
+          "No se puede corregir a la naturaleza",
+          "Fue criado como los demás"
+        ],
+        "fake": "Bailan todos en la plaza mientras suena la banda"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Var251O2AEM",
+        "spotify": "https://open.spotify.com/track/3TyMFBLPobtMaH8oeY0sMP"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/willie-colon-el-gran-varon--salsa-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/El_gran_var%C3%B3n",
+        "https://en.wikipedia.org/wiki/Willie_Col%C3%B3n",
+        "https://lrclib.net/api/get?artist_name=Willie%20Col%C3%B3n&track_name=El%20Gran%20Varon",
+        "https://api.lyrics.ovh/v1/Willie%20Colon/El%20Gran%20Varon",
+        "https://itunes.apple.com/search?term=Willie+Colon+El+Gran+Varon&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-eOU5B7sttHw",
+      "title": "Gitana",
+      "artist": "Willie Colón",
+      "year": 1983,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text erzählt von einer Frau, die einst die Geliebte war, von der er heute aber nur noch ein Stück seines Herzens besitzt.",
+        "Der Refrain preist ihr Haar und ihr Gesicht – so hält er die Erinnerung an sie fest.",
+        "Die Aufnahme erschien 1983 auf dem vierten Studioalbum des Künstlers, das Salsa mit Plena und einer Flöte verband.",
+        "Dieses Album war das erfolgreichste, das er für Fania Records aufnahm.",
+        "Die Titelspur des Albums war damals ein Protestlied gegen den Vietnamkrieg."
+      ],
+      "lyrics": {
+        "real": [
+          "Que sepas lo mucho que te quiero",
+          "Sé que nunca fuiste mía",
+          "Por si un día me muero"
+        ],
+        "fake": "La noche se quedó sin luna y el mar no quiso cantar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eOU5B7sttHw",
+        "spotify": "https://open.spotify.com/track/4VTb5wB46sZDsfL8XgroGt"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/willie-colon-gitana.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tiempo_Pa%27_Matar",
+        "https://en.wikipedia.org/wiki/Willie_Col%C3%B3n",
+        "https://lrclib.net/api/get?artist_name=Willie%20Col%C3%B3n&track_name=Gitana",
+        "https://itunes.apple.com/search?term=Willie+Colon+Gitana&limit=3&entity=song",
+        "https://musicbrainz.org/ws/2/release/?query=release%3A%22Tiempo%20pa%27%20Matar%22&fmt=json&limit=5"
+      ]
+    },
+    {
+      "id": "yt-Y1BDGjPPCwg",
+      "title": "Idilio",
+      "artist": "Willie Colón",
+      "year": 1993,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel bedeutet auf Deutsch 'Idyll' und verspricht ein romantisches, ungetrübtes Miteinander.",
+        "Der spanische Text ist in Strophen und einem wiederholten Refrain aufgebaut.",
+        "Die Aufnahme erschien 1993 auf 'Hecho en Puerto Rico' und wurde später in zahlreichen Salsa-Sammlungen neu veröffentlicht.",
+        "Der Künstler gilt als Pionier des Salsa, wuchs in der Bronx auf und begann als Posaunist.",
+        "Der Refrain beschreibt den Wunsch, den Tag mit Küssen zu beginnen und die Nacht gemeinsam zu verbringen."
+      ],
+      "lyrics": {
+        "real": [
+          "Solo me alienta el deseo divino de hacerte mía",
+          "Que a besos yo te levante al rayar el día",
+          "Y se me agota ya la paciencia por ti esperando"
+        ],
+        "fake": "Por las calles de mi puerto cantaremos hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y1BDGjPPCwg",
+        "spotify": "https://open.spotify.com/track/5iwgEFKEktjBBZV3C9TTZj"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/willie-colón-idilio-willie-colon-lyrics.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Willie_Col%C3%B3n",
+        "https://api.lyrics.ovh/v1/Willie%20Colon/Idilio",
+        "https://lrclib.net/api/get?artist_name=Willie%20Col%C3%B3n&track_name=Idilio",
+        "https://itunes.apple.com/search?term=Willie+Colon+Idilio&limit=3&entity=song",
+        "https://musicbrainz.org/ws/2/recording/bc49b8ea-c956-4264-b308-1c51f336f7e5?inc=releases+release-groups&fmt=json"
+      ]
+    },
+    {
+      "id": "yt-TyNe7VomtQk",
+      "title": "Talento De Televisión",
+      "artist": "Willie Colón",
+      "year": 1995,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Salsa aus der Karibik, gesungen auf Spanisch – heute eines der bekanntesten Stücke dieser Gattung in Lateinamerika.",
+        "Der Interpret wurde in der South Bronx in New York geboren und wuchs mit puertorikanischen Wurzeln auf; er lernte zuerst Trompete und wechselte dann zur Posaune.",
+        "Den Text schrieb ein Songwriter aus Venezuela; der Interpret ist nicht nur Sänger, sondern auch Posaunist, Arrangeur und Komponist.",
+        "Das Stück erschien im Januar 1995 auf dem Kollaborationsalbum mit einem panamanischen Songwriter; die Aufnahmen entstanden zuvor in einem New Yorker Studio.",
+        "Im Text wird einer Frau nachgesagt, ihr Äußeres ersetze ihre Leistung – sie erregt bei anderen Künstlern Bewunderung und Neid."
+      ],
+      "lyrics": {
+        "real": [
+          "No tiene talento, pero muy buena moza",
+          "Muy poderosa en televisión",
+          "Causo, entre los actores gran simpatía por su esplendor"
+        ],
+        "fake": "No tiene oficio, pero su voz es una promesa"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TyNe7VomtQk",
+        "spotify": "https://open.spotify.com/track/3fRIuTih8bzc0vtY9fHhvF"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/willie-colon-talento-de-television.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tras_La_Tormenta",
+        "https://itunes.apple.com/lookup?id=314619448&entity=song",
+        "https://es.wikipedia.org/wiki/Talento_de_televisi%C3%B3n",
+        "https://en.wikipedia.org/wiki/Willie_Col%C3%B3n",
+        "https://lrclib.net/api/get?artist_name=Willie%20Col%C3%B3n&track_name=Talento%20de%20televisi%C3%B3n"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "generatedAt": "2026-04-01T09:36:05.790Z",
+  "counts": {
+    "unreachable": 47,
+    "invalid_id": 3
+  },
+  "results": [
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-britney-toxic",
+      "artist": "Britney Spears",
+      "title": "Toxic",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-timberlake-cry-me-river",
+      "artist": "Justin Timberlake",
+      "title": "Cry Me a River",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-rihanna-umbrella",
+      "artist": "Rihanna ft. Jay-Z",
+      "title": "Umbrella",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-beyonce-crazy-in-love",
+      "artist": "Beyoncé ft. Jay-Z",
+      "title": "Crazy In Love",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-shakira-whenever",
+      "artist": "Shakira",
+      "title": "Whenever, Wherever",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-lady-gaga-poker-face",
+      "artist": "Lady Gaga",
+      "title": "Poker Face",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-bep-feeling",
+      "artist": "The Black Eyed Peas",
+      "title": "I Gotta Feeling",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-nelly-dilemma",
+      "artist": "Nelly ft. Kelly Rowland",
+      "title": "Dilemma",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-alicia-keys-fallin",
+      "artist": "Alicia Keys",
+      "title": "Fallin'",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2000s-pop-rnb.json",
+      "id": "2000s-coldplay-yellow",
+      "artist": "Coldplay",
+      "title": "Yellow",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-ed-sheeran-shape",
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-taylor-swift-shake",
+      "artist": "Taylor Swift",
+      "title": "Shake It Off",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-adele-rolling-deep",
+      "artist": "Adele",
+      "title": "Rolling in the Deep",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-drake-one-dance",
+      "artist": "Drake ft. Wizkid & Kyla",
+      "title": "One Dance",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-billie-eilish-bad-guy",
+      "artist": "Billie Eilish",
+      "title": "Bad guy",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-harry-styles-as-it-was",
+      "artist": "Harry Styles",
+      "title": "As It Was",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-miley-cyrus-flowers",
+      "artist": "Miley Cyrus",
+      "title": "Flowers",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-the-weeknd-blinding-lights",
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-pharrell-happy",
+      "artist": "Pharrell Williams",
+      "title": "Happy",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "2010s-2020s-hits.json",
+      "id": "modern-sia-chandelier",
+      "artist": "Sia",
+      "title": "Chandelier",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-beatles-hey-jude",
+      "artist": "The Beatles",
+      "title": "Hey Jude",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-stones-satisfaction",
+      "artist": "The Rolling Stones",
+      "title": "(I Can't Get No) Satisfaction",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-elvis-suspicious-minds",
+      "artist": "Elvis Presley",
+      "title": "Suspicious Minds",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-abba-dancing-queen",
+      "artist": "ABBA",
+      "title": "Dancing Queen",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-bee-gees-stayin-alive",
+      "artist": "Bee Gees",
+      "title": "Stayin' Alive",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-led-zeppelin-stairway",
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-pink-floyd-wish",
+      "artist": "Pink Floyd",
+      "title": "Wish You Were Here",
+      "status": "invalid_id",
+      "details": "links.youtube ohne gültige ID"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-fleetwood-mac-dreams",
+      "artist": "Fleetwood Mac",
+      "title": "Dreams",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-bowie-space-oddity",
+      "artist": "David Bowie",
+      "title": "Space Oddity",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "60s-70s-legends.json",
+      "id": "legends-simon-garfunkel-bridge",
+      "artist": "Simon & Garfunkel",
+      "title": "Bridge Over Troubled Water",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-aha-take-on-me",
+      "artist": "A-ha",
+      "title": "Take on Me",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-michael-jackson-thriller",
+      "artist": "Michael Jackson",
+      "title": "Thriller",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-queen-another-one-bites-the-dust",
+      "artist": "Queen",
+      "title": "Another One Bites the Dust",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-cyndi-lauper-girls-just-want-to-have-fun",
+      "artist": "Cyndi Lauper",
+      "title": "Girls Just Want to Have Fun",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-journeys-dont-stop-believin",
+      "artist": "Journey",
+      "title": "Don't Stop Believin'",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-bon-jovi-livin-on-a-prayer",
+      "artist": "Bon Jovi",
+      "title": "Livin' on a Prayer",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-phil-collins-in-the-air-tonight",
+      "artist": "Phil Collins",
+      "title": "In the Air Tonight",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-eurythmics-sweet-dreams",
+      "artist": "Eurythmics",
+      "title": "Sweet Dreams (Are Made of This)",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "8s-tina-turner-whats-love-got-to-do-with-it",
+      "artist": "Tina Turner",
+      "title": "What's Love Got to Do with It",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-police-every-breath-you-take",
+      "artist": "The Police",
+      "title": "Every Breath You Take",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-rick-astley-never-gonna-give-you-up",
+      "artist": "Rick Astley",
+      "title": "Never Gonna Give You Up",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-michael-jackson-billie-jean",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-madonna-like-a-virgin",
+      "artist": "Madonna",
+      "title": "Like a Virgin",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-tears-for-fears-everybody-wants-to-rule",
+      "artist": "Tears for Fears",
+      "title": "Everybody Wants to Rule the World",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-wham-wake-me-up-before-you-go-go",
+      "artist": "Wham!",
+      "title": "Wake Me Up Before You Go-Go",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-whitney-houston-dance-with-somebody",
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-survivor-eye-of-the-tiger",
+      "artist": "Survivor",
+      "title": "Eye of the Tiger",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-rick-james-super-freak",
+      "artist": "Rick James",
+      "title": "Super Freak",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-dexys-midnight-runners-come-on-eileen",
+      "artist": "Dexys Midnight Runners",
+      "title": "Come On Eileen",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    },
+    {
+      "file": "80s-flashback.json",
+      "id": "80s-madonna-material-girl",
+      "artist": "Madonna",
+      "title": "Material Girl",
+      "status": "unreachable",
+      "details": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca h"
+    }
+  ]
+}

@@ -1,0 +1,744 @@
+{
+  "songs": [
+    {
+      "id": "country-willie-nelson-road-again",
+      "title": "On the Road Again",
+      "artist": "Willie Nelson",
+      "year": 1980,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Road Trip"
+      ],
+      "hints": [
+        "Der Text entstand an Bord eines Flugzeugs auf einer Krankheitstüte, weil Regisseur Jerry Schatzberg und Produzent Sydney Pollack ein Lied für den Soundtrack des Films 'Honeysuckle Rose' brauchten.",
+        "Die Melodie entstand erst Monate später, einen Tag vor der Aufnahme im Studio.",
+        "Die endgültige Aufnahme entstand live in einem Club in Austin, Texas, samt hörbarem Publikumsgeräusch.",
+        "Im November 1980 wurde der Song zum neunten Nummer-eins-Hit in den US-Country-Charts und kam auf der Hot 100 auf Platz 20.",
+        "Der Song gewann den Grammy für den besten Country-Song, wurde für den Oscar nominiert und ist auch im Soundtrack von 'Forrest Gump' zu hören."
+      ],
+      "lyrics": {
+        "real": [
+          "The life I love is making music with my friends",
+          "Goin' places that I've never been.",
+          "And I can't wait to get on the road again."
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dBN86y30Ufc",
+        "spotify": "https://open.spotify.com/track/1PGYt9lz64wlqKVNGu0rWO",
+        "amazonMusic": "https://music.amazon.com/tracks/B004J8HE08"
+      },
+      "coverUrl": "/covers/country-willie-nelson-road-again.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/On_the_Road_Again_(Willie_Nelson_song)",
+        "https://en.wikipedia.org/wiki/Honeysuckle_Rose_(film)",
+        "https://en.wikipedia.org/wiki/Honeysuckle_Rose_(album)",
+        "https://www.songfacts.com/facts/willie-nelson/on-the-road-again",
+        "https://api.lyrics.ovh/v1/Willie%20Nelson/On%20the%20Road%20Again"
+      ]
+    },
+    {
+      "id": "german-helden-denkmal",
+      "title": "Denkmal",
+      "artist": "Wir sind Helden",
+      "year": 2003,
+      "country": "DE",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Creative",
+        "Unique"
+      ],
+      "hints": [
+        "Die Sängerin erfand den Text bei der Liedermacherakademie 'Sago', deren Jahresaufgabe 1998 ein steinernes Ehrenmal vorschrieb.",
+        "Die Melodie ist an Pixies' 'Where Is My Mind?' von 1988 angelehnt, produziert hat Patrik Majer.",
+        "Das Debütalbum erschien im Juli 2003 und belegte in Deutschland Platz 2; der Song wurde 2023 mit einer Goldenen Schallplatte für mehr als 150.000 Verkäufe ausgezeichnet.",
+        "Die Single erreichte in Deutschland Platz 26 und blieb 20 Wochen in den Top 100, in Österreich belegte sie Platz 41.",
+        "Im Refrain ruft die Band nach dem Vorschlaghammer, um das steinerne Standbild selbst zu zerstören."
+      ],
+      "lyrics": {
+        "real": [
+          "Hol den Vorschlaghammer!",
+          "Sie haben uns ein Denkmal gebaut",
+          "Dass das die Liebe versaut"
+        ],
+        "fake": "In der Mitte der Nacht, da wird die Welt wieder wach"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aC872j2-PDw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-helden-denkmal.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Indie & Alternative",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Denkmal_(Lied)",
+        "https://de.wikipedia.org/wiki/Die_Reklamation",
+        "https://api.lyrics.ovh/v1/Wir%20sind%20Helden/Denkmal",
+        "https://lrclib.net/api/get?artist_name=Wir%20sind%20Helden&track_name=Denkmal",
+        "https://music.apple.com/us/album/denkmal/723748769?i=723748842"
+      ]
+    },
+    {
+      "id": "yt-ME2Hufquz0k",
+      "title": "Adrenalina ft. Jennifer Lopez, Ricky Martin",
+      "artist": "Wisin",
+      "year": 2014,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Zwei international bekannte Gäste übernehmen abwechselnd ganze Strophen im Spanischen.",
+        "Der Text dreht sich um die körperliche Anziehung, die beim Tanzen mit einer begehrten Frau entsteht.",
+        "Der Song erschien 2014 auf dem Album 'El Regreso del Sobreviviente' des puerto-rikanischen Duos.",
+        "Das offizielle Musikvideo auf dem Kanal des Sängers ist mit beiden Gaststars im Titel ausgewiesen und dauert rund viereinhalb Minuten.",
+        "Der Titel steht für das Stresshormon, das bei Nervenkitzel und Küssen den Puls hochjagen lässt."
+      ],
+      "lyrics": {
+        "real": [
+          "Un beso tuyo es como mi medicina",
+          "Cuando me tocas yo comienzo a temblar",
+          "Cuando empezamos no puedo parar"
+        ],
+        "fake": "Caminamos por la playa mientras el sol se apaga en el horizonte"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ME2Hufquz0k",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/wisin-adrenalina--ft--jennifer-lopez--ricky-martin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/El_Regreso_del_Sobreviviente",
+        "https://music.apple.com/us/album/adrenalina-feat-jennifer-lopez-ricky-martin/820448940?i=820449021",
+        "https://musicbrainz.org/ws/2/recording/6b6d1459-d782-42cf-80b2-c7c99b121c44?fmt=json&inc=releases",
+        "https://api.lyrics.ovh/v1/Wisin/Adrenalina",
+        "https://www.youtube.com/watch?v=ME2Hufquz0k"
+      ]
+    },
+    {
+      "id": "yt-NlerzWub428",
+      "title": "Corazón Acelerao",
+      "artist": "Wisin",
+      "year": 2015,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text erzählt von einer Nacht, die endgültig eskaliert, und von einem Herz, das rast.",
+        "Die Hookline wiederholt einen Halbsatz, dazwischen ertönt ein kurzes 'Uoh'.",
+        "Der Song erschien 2015 auf dem Album 'Los Vaqueros: La Trilogía' des puerto-rikanischen Duos.",
+        "Das offizielle Musikvideo auf dem Kanal des Sängers dauert gut vier Minuten und damit etwas länger als die Albumfassung.",
+        "Der Titel bedeutet so viel wie 'beschleunigtes Herz'."
+      ],
+      "lyrics": {
+        "real": [
+          "Contigo quiero escaparme",
+          "Me estoy muriendo",
+          "Por el vaivén que trae tu cuerpo"
+        ],
+        "fake": "La noche es nuestra y el mundo se detiene a nuestro alrededor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NlerzWub428",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/wisin-corazón-acelerao.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://music.apple.com/us/album/coraz%C3%B3n-acelerao/1028658586?i=1028659769",
+        "https://lrclib.net/api/get?artist_name=Wisin&track_name=Coraz%C3%B3n+Acelerao",
+        "https://musicbrainz.org/ws/2/recording/d6ce6bc0-83ec-4168-8b7e-9a1f5abdcf6b?fmt=json&inc=releases",
+        "https://api.lyrics.ovh/v1/Wisin/Coraz%C3%B3n%20Acelerao",
+        "https://www.youtube.com/watch?v=NlerzWub428"
+      ]
+    },
+    {
+      "id": "yt-whBcmlaSLJM",
+      "title": "Estoy Enamorado",
+      "artist": "Wisin & Yandel",
+      "year": 2010,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text ist ein Liebeslied, das mit einem Traum von einem gemeinsagen Morgen beginnt.",
+        "Im Refrain gesteht der Sänger seine Gefühle und kündigt an, niemanden mehr loszulassen.",
+        "Der Song erschien 2010 als Single des puerto-rikanischen Duos.",
+        "Das offizielle Musikvideo auf dem gemeinsamen Kanal des Duos dauert über fünf Minuten und damit länger als die knapp viertelstündige Albumfassung.",
+        "Der Titel ist eine Liebeserklärung, die im Refrain in kurzen Zeilen immer wiederkehrt."
+      ],
+      "lyrics": {
+        "real": [
+          "Una nueva mañana",
+          "Quisiera estar siempre a tu lado",
+          "Te lo quiero confesar"
+        ],
+        "fake": "La ciudad se duerme pero nosotros seguimos despiertos hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=whBcmlaSLJM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/wisin---yandel-estoy-enamorado.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://music.apple.com/us/album/estoy-enamorado/1445837184?i=1445837288",
+        "https://lrclib.net/api/get?artist_name=Wisin%20%26%20Yandel&track_name=Estoy%20Enamorado",
+        "https://musicbrainz.org/ws/2/recording/caf4e913-92b1-422c-a9aa-fe3187522cc4?fmt=json&inc=releases",
+        "https://api.lyrics.ovh/v1/Wisin%20%26%20Yandel/Estoy%20Enamorado",
+        "https://www.youtube.com/watch?v=whBcmlaSLJM"
+      ]
+    },
+    {
+      "id": "yt-lMi4QmNHSDg",
+      "title": "Prometiste (MTV Unplugged)",
+      "artist": "Pepe Aguilar",
+      "year": 2007,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Diese Aufnahme ist ein Cover: Der mexikanische Sänger interpretiert einen Song, der ursprünglich vom puerto-rikanischen Duo aufgenommen wurde.",
+        "Der Text ist ein Abschiedsbrief an eine Liebe, an der ein Paar Versprechen zerbrochen ist.",
+        "Im Refrain zählt der Sänger auf, was ihm einst versprochen wurde und was der andere vergessen hat.",
+        "Die Aufnahme entstand für eine akustische Fernsehsession, auf der auch Gäste mitsangen.",
+        "Der Titel ist eine Anklage: 'Du hast es versprochen' – genau diese zwei Wörter beenden den Refrain."
+      ],
+      "lyrics": {
+        "real": [
+          "Quédate un poquito más",
+          "Todavía no es hora de abordar",
+          "Y escucha estas palabras como despedida"
+        ],
+        "fake": "El viento sopla entre las ramas y nadie recuerda nuestra historia"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lMi4QmNHSDg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/pepe-aguilar-prometiste-mtv-unplugged-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=lMi4QmNHSDg",
+        "https://music.apple.com/us/album/prometiste-en-vivo-feat-melissa-%C3%A1ngela-aguilar-la-marisoul/1714021801?i=1714022188",
+        "https://music.apple.com/us/album/mtv-unplugged-en-vivo/1714021801",
+        "https://lrclib.net/api/get?artist_name=Pepe%20Aguilar&track_name=Prometiste&album_name=MTV%20Unplugged%20(En%20Vivo)",
+        "https://lrclib.net/api/get?artist_name=Rolo%20y%20Los%20Impecables&track_name=Prometiste"
+      ],
+      "coverMode": {
+        "relationType": "cover",
+        "originalArtist": "Wisin & Yandel",
+        "coverArtist": "Pepe Aguilar",
+        "coverYear": 2007,
+        "confidence": "medium",
+        "revealPrompt": "Cover-Version: Der mexikanische Sänger auf dieser Karte interpretiert den Song, den ursprünglich das puerto-rikanische Duo Wisin & Yandel aufnahm."
+      }
+    },
+    {
+      "id": "yt-yfCZGk8eCUk",
+      "title": "Sexy Movimiento",
+      "artist": "Wisin & Yandel",
+      "year": 2007,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Single erschien am 31. August 2007 als erste Auskopplung des fünften Studioalbums eines puerto-rikanischen Reggaeton-Duos.",
+        "Aufgenommen wurde sie am 17. Mai 2007 in New York, produziert von Victor 'El Nasi', Nesty 'La Mente Maestra' und Marioso.",
+        "Bereits im Januar 2008 stand der Song auf Platz 1 der Billboard-Hot-Latin-Tracks in den USA.",
+        "Eine Remix-Fassung mit Nelly Furtado erschien auf der Sonderausgabe 'Otra Dimensión'; weitere Remixes fertigten Julio Voltio, Daddy Yankee sowie Mega & Kenai an.",
+        "Das Stück ist im Videospiel 'Grand Theft Auto IV' im Radiosender 'San Juan Sounds' zu hören; das Album gewann 2009 den Grammy für das beste Latin-Urban-Album."
+      ],
+      "lyrics": {
+        "real": [
+          "Quisiera, sentir tu cuerpo",
+          "Es el momento",
+          "Me desespero"
+        ],
+        "fake": "Die Sonne geht auf über den Dächern von San Juan"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yfCZGk8eCUk",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B006YTIF76"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/wisin---yandel-sexy-movimiento.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sexy_Movimiento",
+        "https://en.wikipedia.org/wiki/Wisin_vs._Yandel:_Los_Extraterrestres",
+        "https://music.apple.com/us/album/sexy-movimiento/1443892098?i=1443892117",
+        "https://api.lyrics.ovh/v1/Wisin%20%26%20Yandel/Sexy%20Movimiento",
+        "https://www.youtube.com/watch?v=yfCZGk8eCUk"
+      ]
+    },
+    {
+      "id": "yt-SKWxOsbt9gU",
+      "title": "Te Siento",
+      "artist": "Wisin & Yandel",
+      "year": 2009,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien am 15. Dezember 2009 als dritte Single-Auskopplung auf der Neuauflage 'La Revolución: Evolution'.",
+        "Der spanische Titel bedeutet so viel wie 'Ich fühle dich'.",
+        "Am 5. November 2009 wurde erstmals ein Teil des Songs bei den Latin Grammy Awards 2009 live performt, zusammen mit 'Abusadora'.",
+        "Das Musikvideo entstand im Oktober 2009 in Los Angeles und wurde von Jessy Terrero inszeniert.",
+        "In den US-Charts erreichte der Song Platz 16 der Hot Latin Songs und Platz 4 der Tropical Airplay-Liste."
+      ],
+      "lyrics": {
+        "real": [
+          "Sigo sintiendo ese cosquilleo",
+          "No hay medicina que pueda a mí curarme",
+          "Empiezas tú a desnudarte"
+        ],
+        "fake": "Ich denke an dich, wenn die Stadt im Dunkeln schläft"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SKWxOsbt9gU",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B006PYCZDK"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/wisin---yandel-te-siento.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Te_Siento",
+        "https://en.wikipedia.org/wiki/La_Revoluci%C3%B3n",
+        "https://music.apple.com/us/album/te-siento/1469556542?i=1469557496",
+        "https://api.lyrics.ovh/v1/Wisin%20%26%20Yandel/Te%20Siento",
+        "https://www.youtube.com/watch?v=SKWxOsbt9gU"
+      ]
+    },
+    {
+      "id": "yt-Xmap94TcDNs",
+      "title": "Follow The Leader ft. Jennifer Lopez",
+      "artist": "Wisin & Yandel, Jennifer Lopez",
+      "year": 2012,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Zusammenarbeit zwischen einem puerto-rikanischen Reggaeton-Duo und einer US-Schauspielerin wurde am 24. Januar 2012 online angekündigt.",
+        "Die Single erschien am 10. April 2012 und war die zweite Auskopplung des achten Studioalbums 'Líderes', das am 3. Juli 2012 erschien.",
+        "Produziert wurde der Song von Jonas Saeed und Niclas Kings für das schwedische Produzententeam Cave Music, den Text schrieb das jamaikanische Team Bloodline.",
+        "Das Video entstand in Acapulco in Mexiko und wurde von Jessy Terrero und Casper Smart inszeniert; Premiere war am 3. Mai 2012 auf Twitter und im offiziellen VEVO-Kanal.",
+        "Die beiden führten den Song beim Finale der elften Staffel von 'American Idol' auf und erreichten in den US-Charts Platz 1 der Hot Latin Songs."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby, the way that I'm working my body",
+          "Tu pelo, tu piel y tu boca",
+          "Dicen que la música sigue y no para"
+        ],
+        "fake": "Im Dunkeln der Nacht tanzt die Stadt am Fluss entlang"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Xmap94TcDNs",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B007TNEWS2"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/wisin---yandel--jennifer-lopez-follow-the-leader--ft--jennifer-lopez.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Follow_the_Leader_(Wisin_%26_Yandel_song)",
+        "https://en.wikipedia.org/wiki/L%C3%ADderes",
+        "https://music.apple.com/us/album/follow-the-leader-feat-jennifer-lopez/1444322550?i=1444322552",
+        "https://api.lyrics.ovh/v1/Wisin%20%26%20Yandel/Follow%20the%20Leader",
+        "https://www.youtube.com/watch?v=Xmap94TcDNs"
+      ]
+    },
+    {
+      "id": "yt-wZRWpr1G1Qw",
+      "title": "Nota de Amor ft. Daddy Yankee",
+      "artist": "Wisin, Carlos Vives",
+      "year": 2015,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Single erschien am 3. Februar 2015 als Leadsingle des dritten Soloalbums eines puerto-rikanischen Rappers, der auch als Teil eines Duos erfolgreich war.",
+        "Den Text schrieben der Rapper selbst, sein kolumbianischer Gast, der Produzent JY und Andrés Castro; produziert wurde der Song von JY und Los Legendarios.",
+        "Das Album 'Los Vaqueros: La Trilogía' erschien am 4. September 2015 bei Sony Music Latin, nachdem es bereits Ende August online geleakt worden war.",
+        "In den Billboard-Charts erreichte der Song Platz 5 der Hot Latin Songs sowie jeweils Platz 1 der Latin Airplay- und der Latin-Rhythm-Liste.",
+        "In Kolumbien stieg die Single auf Platz 2 der nationalen Liste, in der Dominikanischen Republik auf Platz 3 und in Mexiko auf Platz 41."
+      ],
+      "lyrics": {
+        "real": [
+          "Hoy te tengo que decir",
+          "Que el amor en ti encontré",
+          "Me cura el dolor, mi otra mitad"
+        ],
+        "fake": "Der Wind trägt deinen Namen über das weite Feld"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wZRWpr1G1Qw",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B07ZMJ5KVT"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/wisin-carlos-vives-nota-de-amor-ft-daddy-yankee-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nota_de_Amor",
+        "https://en.wikipedia.org/wiki/Los_Vaqueros:_La_Trilog%C3%ADa",
+        "https://music.apple.com/us/album/nota-de-amor-feat-daddy-yankee/1028658586?i=1028659443",
+        "https://api.lyrics.ovh/v1/Wisin/Nota%20de%20Amor",
+        "https://www.youtube.com/watch?v=wZRWpr1G1Qw"
+      ]
+    },
+    {
+      "id": "class-mozart-nacht",
+      "title": "Eine kleine Nachtmusik",
+      "artist": "Wolfgang Amadeus Mozart",
+      "year": 1787,
+      "country": "AT",
+      "genre": "Classical / Serenade",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Elegant",
+        "Classic"
+      ],
+      "hints": [
+        "Das Werk entstand 1787 in Wien, während der Komponist gleichzeitig an der Oper 'Don Giovanni' arbeitete.",
+        "Es trägt die Werkverzeichnis-Nummer 525, ist die Serenade Nr. 13 in G-Dur und dauert rund 17 Minuten.",
+        "Vier Sätze – Allegro, Romanze, Menuett und Finale – bilden das Stück; nach Angaben des Komponisten umfasste es ursprünglich fünf Sätze, im Autograph fehlen entsprechende Seiten.",
+        "Der Titel geht auf den Eintrag im persönlichen Werkverzeichnis des Komponisten zurück, der den Gattungsbegriff 'Serenade' ins Deutsche übersetzte und das Werk als abendliche Unterhaltungsmusik auswies.",
+        "Das Werk ist für zwei Violinen, Bratsche, Violoncello und Kontrabass geschrieben, die Stimmen werden heute meist mehrfach besetzt; Aufführungen zu Lebzeiten des Komponisten sind nicht belegt."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QZWKUszkbXU",
+        "spotify": "https://open.spotify.com/track/5nVahCoRVadqiNLZ8pbmrG",
+        "amazonMusic": "https://music.amazon.com/tracks/B07LDW3RQL"
+      },
+      "coverUrl": "/covers/class-mozart-nacht.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Eine_kleine_Nachtmusik",
+        "https://de.wikipedia.org/wiki/Eine_kleine_Nachtmusik",
+        "https://en.wikipedia.org/wiki/Serenade",
+        "https://music.apple.com/us/album/mozart:-eine-kleine-nachtmusik---pachelbel:-canon/1452536848?i=1452537423",
+        "https://www.youtube.com/watch?v=QZWKUszkbXU"
+      ]
+    },
+    {
+      "id": "schlager-wolgang-petry-verlieben",
+      "title": "Verlieben, verloren, vergessen, verzeih'n",
+      "artist": "Wolfgang Petry",
+      "year": 1992,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Sing-along"
+      ],
+      "hints": [
+        "Nachdem es Ende der 1980er Jahre stiller um den Kölner Schlagersänger geworden war, markierte die Single sein Comeback in den 90er-Jahren.",
+        "Den Song hatte man zuvor Jürgen Drews angeboten, der die Nummer jedoch ablehnte.",
+        "Bekannt ist der Sänger außerdem für seine zahlreichen Freundschaftsbänder, von denen er sich 2002 zugunsten der Opfer des Hochwassers trennte.",
+        "Der Text erzählt aus der Sicht des lyrischen Ichs, dass einst alles vorhanden war und es heute zu spät ist, weil die Geliebte einen anderen liebt.",
+        "2025 erschien eine Neuveröffentlichung des Titels gemeinsam mit der deutschen Frauen-Nationalmannschaft."
+      ],
+      "lyrics": {
+        "real": [
+          "Verlieben, verloren, vergessen, verzeih'n",
+          "Verdammt war ich glücklich, verdammt bin ich frei",
+          "Ich hatte doch alles, alles was zählt"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Mlt2xg_j5AY",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B01AMO9AQS"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-wolgang-petry-verlieben.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Verlieben,_verloren,_vergessen,_verzeih%E2%80%99n",
+        "https://de.wikipedia.org/wiki/Wolfgang_Petry",
+        "https://lrclib.net/api/get?artist_name=Wolfgang%20Petry&track_name=Verlieben%2C%20verloren%2C%20vergessen%2C%20verzeih'n",
+        "https://music.apple.com/us/album/40-jahre---40-hits/1074872379?i=1074872677",
+        "https://www.youtube.com/watch?v=Mlt2xg_j5AY"
+      ]
+    },
+    {
+      "id": "hiphop-wutang-cream",
+      "title": "C.R.E.A.M.",
+      "artist": "Wu-Tang Clan",
+      "year": 1993,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Raw",
+        "Moody"
+      ],
+      "hints": [
+        "Die Band formierte sich 1992 in Staten Island, New York, und ihr Name geht auf einen Shaolin-Kampffilm zurück.",
+        "Der Beat stammt aus einer alten Sammlung des Produzenten, der ihn schon Jahre vor dem Debüt der Gruppe aufbewahrte; die beiden Strophen erzählen autobiografische Geschichten über das Aufwachsen in New York.",
+        "Das tragende Piano-Loop stammt aus 'As Long As I've Got You' von den Charmels aus dem Jahr 1967 – daher der melancholische Soultouch trotz Hip-Hop.",
+        "Den Refrain singt Method Man, die Strophen liefern Raekwon und Inspectah Deck; das Musikvideo zeigt den Weg vom Projektaufbau zum Champagner-Lifestyle.",
+        "Der Refrain besteht aus den Merkzeilen 'Cash rules everything around me' und 'Dollar, dollar bill, y'all'."
+      ],
+      "lyrics": {
+        "real": [
+          "Cash rules everything around me",
+          "I grew up on the crime side, the New York Times side",
+          "So then we moved to Shaolin land"
+        ],
+        "fake": "Money on the table and the whole crew counting green"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PBwAxmrE194",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-wutang-cream.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+        "https://en.wikipedia.org/wiki/C.R.E.A.M.",
+        "https://www.songfacts.com/facts/wu-tang-clan/cream",
+        "https://en.wikipedia.org/wiki/Enter_the_Wu-Tang_(36_Chambers)",
+        "https://api.lyrics.ovh/v1/Wu-Tang%20Clan/C.R.E.A.M."
+      ]
+    }
+  ]
+}

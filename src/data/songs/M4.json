@@ -1,0 +1,766 @@
+{
+  "songs": [
+    {
+      "id": "metal-manson-beautiful",
+      "title": "The Beautiful People",
+      "artist": "Marilyn Manson",
+      "year": 1996,
+      "country": "US",
+      "genre": "Industrial Metal / Shock Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Energy"
+      ],
+      "hints": [
+        "Führende Single des zweiten Studioalbums einer US-Band, veröffentlicht im September 1996.",
+        "Der Titel geht auf ein Buch einer US-Journalistin von 1967 zurück, das die Jet-Set-Welt und ihre Schönheitsideale entlarvte.",
+        "Produziert von Trent Reznor, Dave Ogilvie und dem Frontmann selbst – aufgenommen wurde im Nothing Studio in New Orleans.",
+        "Die Single erschien beim Label Nothing Records, das Trent Reznor gemeinsam mit John Malm jr. betrieb.",
+        "Die Single erreichte Platz 18 der britischen Singlecharts mit Höhepunkt am 7. Juni 1997 und Platz 42 in Australien; der Refrain stellt Schönheit und Ausgrenzung ironisch gegenüber."
+      ],
+      "lyrics": {
+        "real": [
+          "It's all relative to the size of your steeple",
+          "The weak ones are there to justify the strong",
+          "Hey you, what do you see?"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ypkv0HeUvTc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-manson-beautiful.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Beautiful_People_(song)",
+        "https://en.wikipedia.org/wiki/Marylin_Bender",
+        "https://en.wikipedia.org/wiki/Antichrist_Superstar",
+        "https://en.wikipedia.org/wiki/Nothing_Records",
+        "https://api.lyrics.ovh/v1/Marilyn%20Manson/The%20Beautiful%20People"
+      ]
+    },
+    {
+      "id": "german-westernhagen-freiheit",
+      "title": "Freiheit",
+      "artist": "Marius Müller-Westernhagen",
+      "year": 1987,
+      "country": "DE",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Serious"
+      ],
+      "hints": [
+        "Rockballade auf dem elften Studioalbum eines deutschen Rocksingers, erschienen am 25. September 1987.",
+        "Der Text entstand, ohne dass der Autor an den Fall der Mauer oder die Wiedervereinigung dachte – so hat er es später beschrieben.",
+        "Live aufgenommen am 20. Dezember 1989 in der Dortmunder Westfalenhalle; als Single erschien sie am 18. September 1990, zwei Wochen vor der deutschen Wiedervereinigung.",
+        "Im Text tauchen Kapelle, Papst und Nachbar auf; der Refrain dreht sich um das einzige, was fehlt.",
+        "Obwohl das Stück klagt, wurde es zu einer Art Hymne der Befreiung von der DDR-Diktatur."
+      ],
+      "lyrics": {
+        "real": [
+          "Freiheit, Freiheit",
+          "Ist die einzige, die fehlt",
+          "Und der Papst war auch schon da"
+        ],
+        "fake": "In den Gassen dieser Stadt, gibt es keinen der uns satt macht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=agKE1TuUOuM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-westernhagen-freiheit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Freiheit_(M%C3%BCller-Westernhagen-Lied)",
+        "https://de.wikipedia.org/wiki/Live_(Marius-M%C3%BCller-Westernhagen-Album)",
+        "https://de.wikipedia.org/wiki/Marius_M%C3%BCller-Westernhagen",
+        "https://www.tz.de/stars/mueller-westernhagen-diese-besondere-bedeutung-hat-lied-freiheit-zr-8499224.html",
+        "https://api.lyrics.ovh/v1/Westernhagen/Freiheit"
+      ]
+    },
+    {
+      "id": "mark-ronson-uptown-funk-2014",
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "year": 2014,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Energy",
+        "Groovy",
+        "Happy",
+        "Party Anthem",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Führende Single des vierten Studioalbums eines britisch-amerikanischen DJs, veröffentlicht am 10. November 2014.",
+        "Der Song entstand spontan in einer Jam-Session auf Tour; aufgenommen wurde er in sechs Studios in den USA, Kanada und Großbritannien.",
+        "In den USA belegte er 14 Wochen lang Platz 1 der Billboard Hot 100, in Großbritannien war er sieben Wochen an der Spitze; die Single führte die Charts in 19 Ländern an.",
+        "Als Stilrichtungen werden Soul, Boogie, Disco-Pop und der Minneapolis Sound geführt – entstanden ist eine Mixtur aus Blechbläsern, synkopiertem Bass und einer charakteristischen Gesangsstimme.",
+        "Der Merksatz des Songs lautet 'Don't believe me, just watch', begleitet von einem monotonen Sprechgesang ('Doh-doh-doh')."
+      ],
+      "lyrics": {
+        "real": [
+          "This hit, that ice cold",
+          "Michelle Pfeiffer, that white gold",
+          "Them good girls, straight masterpieces"
+        ],
+        "fake": "Walking down the street with a rhythm in my feet"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/mark-ronson-uptown-funk-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Uptown_Funk",
+        "https://en.wikipedia.org/wiki/Uptown_Special",
+        "https://en.wikipedia.org/wiki/Mark_Ronson",
+        "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_number-one_singles_of_2015",
+        "https://api.lyrics.ovh/v1/Mark%20Ronson/Uptown%20Funk"
+      ]
+    },
+    {
+      "id": "yt-1Ss0wzeoqHU",
+      "title": "Ich will Spaß",
+      "artist": "Markus",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "NDW-Single, veröffentlicht im Juni 1982, die im August 1982 Platz 1 der deutschen Singlecharts erreichte.",
+        "Die Musik stammt vom Produzenten Axel Klopprogge, der nach einem Punk-Konzert die Idee zu einer NDW-Band mit dem Sänger hatte.",
+        "Nachts heimlich in einem Tonstudio in Frankfurt-Oberrad aufgenommen – der Studiobesitzer verlangte dafür 15.000 Mark.",
+        "Eine Textzeile war ursprünglich 'Rosi, Rosi spürst Du mich?' und wurde geändert, nachdem die Spider Murphy Gang den Namen Rosi besungen hatte.",
+        "Der Refrain erzählt von Leichtsinn, Benzin und einem Sportwagen; die Idee zur ersten Strophe kam, als die beiden auf der Autobahn von einem gut gelaunten Fahrer überholt wurden."
+      ],
+      "lyrics": {
+        "real": [
+          "Mein Maserati fährt 210",
+          "Und kost' Benzin auch drei Mark zehn",
+          "Der Tankwart ist mein bester Freund"
+        ],
+        "fake": "Die Sonne scheint, der Motor heult, wir fahren einfach durch die Nacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1Ss0wzeoqHU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "German Classics",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/markus-ich-will-spass.jpg",
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Ich_will_Spa%C3%9F",
+        "https://de.wikipedia.org/wiki/Markus_(Musiker)",
+        "https://de.wikipedia.org/wiki/Spider_Murphy_Gang",
+        "https://www.spiegel.de/geschichte/helden-der-achtziger-a-949592.html",
+        "https://lrclib.net/api/get?artist_name=Markus&track_name=Ich%20will%20Spa%C3%9F"
+      ]
+    },
+    {
+      "id": "yt-lNilb-EaTOU",
+      "title": "Memories",
+      "artist": "Maroon 5",
+      "year": 2019,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Führende Single des siebten Studioalbums einer US-Band, veröffentlicht am 20. September 2019.",
+        "Harmonisch aufgebaut ist das Stück auf Pachelbels 'Kanon in D' – der Song klingt deshalb ungewöhnlich barock.",
+        "Reggae-Pop-Anmutung, aufgenommen in den EastWest Studios in Hollywood.",
+        "Der Text erinnert an einen Menschen, der nicht mehr da ist, und an gemeinsam getrunkene Gläser auf vergangene Zeiten.",
+        "Die Kritik fiel gemischt aus: Das US-Magazin 'Spin' zählte den Song zu einem der schlechtesten Lieder des Jahres 2019."
+      ],
+      "lyrics": {
+        "real": [
+          "There's a time that I remember when I never felt so lost",
+          "Now my heart feel like an ember and it's lighting up the dark",
+          "Everybody hurts sometimes"
+        ],
+        "fake": "Golden light on the dashboard, radio on low, driving till the sunrise"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lNilb-EaTOU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/maroon-5-memories.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Memories_(Maroon_5_song)",
+        "https://en.wikipedia.org/wiki/Canon_in_D",
+        "https://en.wikipedia.org/wiki/Jordi_(Maroon_5_album)",
+        "https://en.wikipedia.org/wiki/EastWest_Studios",
+        "https://api.lyrics.ovh/v1/Maroon%205/Memories"
+      ]
+    },
+    {
+      "id": "dance-maroon5-jagger",
+      "title": "Moves Like Jagger",
+      "artist": "Maroon 5 ft. Christina Aguilera",
+      "year": 2011,
+      "country": "US",
+      "genre": "Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Dance"
+      ],
+      "hints": [
+        "Vierte und letzte Single aus der Neuveröffentlichung des dritten Studioalbums einer US-Band, veröffentlicht am 21. Juni 2011.",
+        "Der Text vergleicht die Tanzbewegungen des Sängers mit denen des Frontmanns der Rolling Stones.",
+        "Geschrieben von Adam Levine, Ammar Malik, Shellback und Benny Blanco; produziert von Shellback und Benny Blanco.",
+        "Electropop mit modernen Disco-Elementen, Synthesizern und elektronischen Drums – aufgenommen in Los Angeles im Mai 2011.",
+        "Der Refrain kündigt wortwörtlich an, dass der Sänger die Tanzbewegungen des Stones-Frontmanns beherrscht; in den USA stieg der Song am 10. September 2011 auf Platz 1 der Hot-100-Liste."
+      ],
+      "lyrics": {
+        "real": [
+          "Just shoot for the stars",
+          "I swear I'll behave",
+          "Look into my eyes and I'll own you"
+        ],
+        "fake": "Silver in the spotlight and I never lose my cool"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iEPTlhBmwRg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/dance-maroon5-jagger.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Moves_like_Jagger",
+        "https://en.wikipedia.org/wiki/Hands_All_Over_(album)",
+        "https://en.wikipedia.org/wiki/Mick_Jagger",
+        "https://en.wikipedia.org/wiki/Shellback_(music_producer)",
+        "https://api.lyrics.ovh/v1/Maroon%205/Moves%20Like%20Jagger"
+      ]
+    },
+    {
+      "id": "electro-marshmello-happier",
+      "title": "Happier",
+      "artist": "Marshmello ft. Bastille",
+      "year": 2018,
+      "country": "US",
+      "genre": "Future Bass / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Am 16. August 2018 erschien der Song über das US-Label Astralwerks; in Großbritannien und in den USA erreichte er jeweils Platz 2 der Singlecharts.",
+        "Der Sänger der britischen Band hatte den Text ursprünglich für Justin Bieber geschrieben, bevor das Team ihn für sich behielt; der Song blieb sechs Monate in den US-Top 10.",
+        "Der US-DJ aus Philadelphia trägt bei öffentlichen Auftritten und in Musikvideos einen weißen Helm, der an eine Marshmallow-Zuckerwatte erinnert.",
+        "Das offizielle Musikvideo zeigt die Schauspielerin Miranda Cosgrove in der Rolle eines Mädchens mit Zahnspange und ihrem Hund.",
+        "Refrain: 'Then only for a minute' – für einen Augenblick soll die Trennung zurückgenommen werden."
+      ],
+      "lyrics": {
+        "real": [
+          "When we see what we've become",
+          "I want to change my mind",
+          "I want to raise your spirits"
+        ],
+        "fake": "Every single heartbeat is a little brighter tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=m7Bc3pLyij0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/electro-marshmello-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Happier_(Marshmello_and_Bastille_song)",
+        "https://www.bbc.com/news/entertainment-arts-48066591",
+        "https://en.wikipedia.org/wiki/Marshmello",
+        "https://www.billboard.com/articles/news/dance/8476511/marshmello-bastille-video-happier",
+        "https://api.lyrics.ovh/v1/Marshmello/Happier"
+      ]
+    },
+    {
+      "id": "yt-lpqDTQOFvf0",
+      "title": "Echo Beach",
+      "artist": "Martha and the Muffins",
+      "year": 1980,
+      "country": "CA",
+      "genre": "New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "New Wave",
+        "Retro"
+      ],
+      "hints": [
+        "Die Single erschien im Februar 1980 über das kanadische Label Dindisc; aufgenommen wurde sie im August 1979. Der Ort im Titel ist nicht real – Mark Gane dachte beim Komponieren an einen Sommerabend am Ontariosee in Toronto.",
+        "Die Band entstand 1977 in Toronto; nach einem ersten Independent-Single 1978 unterschrieb sie bei der Dindisc-Auslabelierung von Virgin Records und reiste 1979 nach England, um ihr Debütalbum aufzunehmen.",
+        "Das Debütalbum erschien im Februar 1980 auf Dindisc; die Single kam am 8. Februar 1980 in den Handel, erreichte in Großbritannien Platz 10 und in den USA Platz 37 der Dance-Charts.",
+        "Der Song gewann den Juno Award für Single of the Year.",
+        "Refrainzeile: 'I watch the sun go down' – nach der Arbeit wartet der Sänger auf den Sonnenuntergang."
+      ],
+      "lyrics": {
+        "real": [
+          "I know it's out of fashion",
+          "I'm a romantic fool",
+          "To watch the sun go down"
+        ],
+        "fake": "Neon lights on the boardwalk, endless nights and the roar of the sea"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lpqDTQOFvf0",
+        "youtubeAlternatives": [
+          "mL208l_Ho4s"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Indie & Alternative",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/martha-and-the-muffins-echo-beach.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Echo_Beach",
+        "https://en.wikipedia.org/wiki/Martha_and_the_Muffins",
+        "https://en.wikipedia.org/wiki/Metro_Music",
+        "https://en.wikipedia.org/wiki/Juno_Award_for_Single_of_the_Year",
+        "https://api.lyrics.ovh/v1/Martha%20and%20the%20Muffins/Echo%20Beach"
+      ]
+    },
+    {
+      "id": "house-garrix-animals",
+      "title": "Animals",
+      "artist": "Martin Garrix",
+      "year": 2013,
+      "country": "NL",
+      "genre": "Big Room House / EDM",
+      "difficulty": "easy",
+      "mood": [
+        "Club",
+        "Energy",
+        "Powerful",
+        "Wild"
+      ],
+      "hints": [
+        "Der Track erschien im Juni 2013 als digitale Veröffentlichung über das Label Spinnin' Records; in Großbritannien, Belgien und der französischsprachigen Schweiz stieg er auf Platz 1 der Singlecharts, in den USA auf Platz 21 der Hot-100-Liste.",
+        "Als der Track erschien, war der niederländische Produzent gerade 17 Jahre alt geworden; heute steht er mehrfach an der Spitze der DJ-Mag-Bestenliste.",
+        "Der Track erschien später auf dem Debüt-EP 'Gold Skies' (2014), dessen erste Single er war.",
+        "In den USA erschien der Track über Casablanca/Republic und war der erste Hot-100-Eintrag des Produzenten.",
+        "Fast vollständig instrumentell: Die einzige gesungene Stelle ist eine tiefe, von einem Freund des Produzenten gesprochene Zeile, die genau zweimal erklingt."
+      ],
+      "lyrics": {
+        "real": [
+          "We're the fuckin' animals",
+          "We’re the fuckin animals",
+          "We're the fucking animals"
+        ],
+        "fake": "Fangs bared in the strobe light, we run through the dark"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gCYcHz2k5x0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/house-garrix-animals.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Animals_(Martin_Garrix_song)",
+        "https://en.wikipedia.org/wiki/Martin_Garrix",
+        "https://en.wikipedia.org/wiki/Gold_Skies_(EP)",
+        "https://www.songfacts.com/facts/martin-garrix/animals",
+        "https://api.lyrics.ovh/v1/Martin%20Garrix/Animals"
+      ]
+    },
+    {
+      "id": "yt-e2vBLd5Egnk",
+      "title": "Scared to Be Lonely",
+      "artist": "Martin Garrix & Dua Lipa",
+      "year": 2017,
+      "country": "NL",
+      "genre": "Future Bass / Electro",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Melancholic",
+        "Dance"
+      ],
+      "hints": [
+        "Die Single erschien am 27. Januar 2017 über STMPD RCRDS und Epic Records; in den Niederlanden erreichte sie Platz 3, in Großbritannien Platz 14 und in den USA Platz 76 der Singlecharts.",
+        "Der niederländische Produzent spielte den Song erstmals am 31. Dezember 2016 live in Myanmar und sang ihn im März 2017 gemeinsam mit der britischen Sängerin in einer US-Fernsehnachtshow.",
+        "Die beiden traten 2018 gemeinsam beim Konzert zum Singapore Grand Prix auf.",
+        "Das Video, inszeniert von Blake Claridge, entstand in Schottland und wurde mit Drohnen gedreht.",
+        "Refrainzeile: 'Are we both losing our minds?' – die Frage nach dem Grund, warum zwei Menschen trotz allem zusammengehören wollen."
+      ],
+      "lyrics": {
+        "real": [
+          "It was great at the very start",
+          "Couldn't stand to be far apart",
+          "Are we both losing our minds?"
+        ],
+        "fake": "Neon streets and empty trains, we're chasing shadows in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e2vBLd5Egnk",
+        "youtubeAlternatives": [
+          "vFFT1iAUNDE"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/martin-garrix---dua-lipa-scared-to-be-lonely.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Scared_to_Be_Lonely",
+        "https://en.wikipedia.org/wiki/Martin_Garrix",
+        "https://en.wikipedia.org/wiki/Dua_Lipa",
+        "https://www.shots.net/news/view/drones-light-the-scottish-sky-as-martin-garrix-launches-scared-to-be-lonely-visual",
+        "https://api.lyrics.ovh/v1/Martin%20Garrix/Scared%20to%20Be%20Lonely"
+      ]
+    },
+    {
+      "id": "yt-aDNRphs9MiY",
+      "title": "Real Love",
+      "artist": "Martin Garrix & Lloyiso",
+      "year": 2023,
+      "country": "NL",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Song kam nicht in die niederländische Top 100, erreichte aber Platz 27 der Single-Tip-Charts.",
+        "Der südafrikanische Sänger war 2015 Kandidat bei 'Idols South Africa' und veröffentlichte im März 2023 mit 'Seasons' sein Debüt-EP.",
+        "Die Single erschien am 22. September 2023 als Zusammenarbeit zwischen einem niederländischen EDM-Produzenten und einem südafrikanischen Sänger.",
+        "Das offizielle Musikvideo wurde auf dem eigenen Kanal des EDM-Produzenten veröffentlicht.",
+        "Refrainzeile: 'When you smile, you can light up the sky' – die Zeile, in der der Sänger das Licht der Partnerin preist."
+      ],
+      "lyrics": {
+        "real": [
+          "When you smile, you can light up the sky",
+          "Yeah, I was too afraid to open up my heart",
+          "And get lost in your ocean eyes"
+        ],
+        "fake": "Neon signs in the pouring rain, we're strangers in another town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aDNRphs9MiY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/martin-garrix---lloyiso-real-love.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Martin_Garrix_discography",
+        "https://en.wikipedia.org/wiki/Lloyiso",
+        "https://music.apple.com/us/album/real-love/1703795022?i=1703795121",
+        "https://www.youtube.com/watch?v=aDNRphs9MiY",
+        "https://api.lyrics.ovh/v1/Martin%20Garrix/Real%20Love"
+      ]
+    },
+    {
+      "id": "yt-ywQvbGcCIEk",
+      "title": "Dive",
+      "artist": "Lost Frequencies & Tom Gregory",
+      "year": 2023,
+      "country": "BE",
+      "genre": "Dance / Deep House",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "Chill"
+      ],
+      "hints": [
+        "Der belgische DJ mischt Deep House und Tropical House; 2014 brachte er mit 'Are You with Me' weltweite Bekanntheit.",
+        "Der Song kam nicht in die niederländische Top 100, erreichte aber Platz 30 der Single-Tip-Charts.",
+        "Die Single erschien am 1. September 2023 als Zusammenarbeit zwischen einem belgischen DJ und einem Sänger.",
+        "Der Track erschien später auch auf dem Studioalbum 'All Stand Together' (2023).",
+        "Refrainzeile: 'I can live in this moment for the rest of time' – der Wunsch, einen Sommermoment festzuhalten."
+      ],
+      "lyrics": {
+        "real": [
+          "I just can't get enough of all these summer skies",
+          "I can live in this moment for the rest of time",
+          "So stay a little longer, my love"
+        ],
+        "fake": "Golden hour on the rooftop, the city sleeps but we stay awake"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ywQvbGcCIEk",
+        "youtubeAlternatives": [
+          "Cj43PTCpHzA"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/lost-frequencies---tom-gregory-dive.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lost_Frequencies",
+        "https://en.wikipedia.org/wiki/Lost_Frequencies_discography",
+        "https://music.apple.com/us/album/dive/1700695867?i=1700695874",
+        "https://music.apple.com/us/album/dive/1732710652?i=1732710666",
+        "https://api.lyrics.ovh/v1/Lost%20Frequencies/Dive"
+      ]
+    },
+    {
+      "id": "yt-bz6taI5pDl0",
+      "title": "Carry You",
+      "artist": "Martin Garrix, Third ≡ Party & Oaks feat. Declan J Donovan",
+      "year": 2024,
+      "country": "NL",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Hinter der Nummer stehen zwei Produzenten: einer davon hat das Label STMPD RCRDS gegründet, gemischt und gemastert haben beide gemeinsam.",
+        "Die Single erschien 2024 und ist gut dreieinhalb Minuten lang.",
+        "Zwei weitere Stimmen tragen den Gesang, eine von ihnen hat auch den Text geschrieben; einer der beteiligten Musikverlage wird von Sony Music Publishing verwaltet.",
+        "Musikalisch ist der Song dem Genre Dance zuzuordnen, und im Text wechseln sich die beiden Singstimmen gegenseitig ab.",
+        "Ein elektronischer Clubtrack mit englischem Text, dessen Refrain eine tröstende Zusage macht: Eine Person verspricht, die andere durch dunkle Zeiten zu begleiten."
+      ],
+      "lyrics": {
+        "real": [
+          "We are never going home",
+          "Let me ease your pain",
+          "And we could light up the sky of tomorrow"
+        ],
+        "fake": "We are the ones who never sleep tonight, chasing neon signs across the empty town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bz6taI5pDl0",
+        "spotify": "https://open.spotify.com/track/31ZO9XuKt48Qb2eUTBynd2",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "electronic-synth",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/martin-garrix---nicky-romero---usher-carry-you.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=bz6taI5pDl0",
+        "https://itunes.apple.com/lookup?id=1727698271&entity=song",
+        "https://api.lyrics.ovh/v1/Martin%20Garrix/Carry%20You",
+        "https://lrclib.net/api/get?artist_name=Martin%20Garrix&track_name=Carry%20You",
+        "https://en.wikipedia.org/wiki/Martin_Garrix"
+      ]
+    }
+  ]
+}

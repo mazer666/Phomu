@@ -1,0 +1,747 @@
+{
+  "songs": [
+    {
+      "id": "disney-zootopia-try",
+      "title": "Try Everything",
+      "artist": "Shakira",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Soundtrack / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "Geschrieben hat das Stück die australische Sängerin Sia gemeinsam mit dem norwegischen Autoren-Duo Stargate, das auch Rihannas 'Diamonds' geschrieben hat.",
+        "Bei den 59. Grammy Awards 2017 war der Song in der Kategorie 'Best Song Written for Visual Media' nominiert.",
+        "Der Soundtrack mit Michael Giacchinos Filmmusik erschien am 4. März 2016 digital bei Walt Disney Records.",
+        "Die Kolumbianerin leiht der Disney-Figur Gazelle im Animationsfilm 'Zootopia' (2016) nicht nur die Stimme, sondern singt den Titelsong.",
+        "Refrain: 'I won't give up, no I won't give in! Till I reach the end and then I'll start again!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I still mess up but I'll just start again",
+          "Birds don't just fly",
+          "Till I reach the end"
+        ],
+        "fake": "I'll ride the lightning, never land, a midnight parade of neon hands"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=c6rP-YP4c5I",
+        "spotify": "https://open.spotify.com/track/4nI5Ep2zQKDjJl4Sol94af",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-zootopia-try.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Try_Everything",
+        "https://en.wikipedia.org/wiki/Zootopia_(soundtrack)",
+        "https://www.songfacts.com/facts/shakira/try-everything",
+        "https://api.lyrics.ovh/v1/Shakira/Try%20Everything",
+        "https://open.spotify.com/embed/track/4nI5Ep2zQKDjJl4Sol94af"
+      ]
+    },
+    {
+      "id": "shakira-waka-waka-2010",
+      "title": "Waka Waka (This Time for Africa)",
+      "artist": "Shakira",
+      "year": 2010,
+      "country": "CO",
+      "genre": "World",
+      "difficulty": "easy",
+      "mood": [
+        "Summer Vibes",
+        "Dance Floor",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Der Song interpoliert den kamerunischen Makossa-Klassiker 'Zamina mina (Zangaléwa)' der Band Golden Sounds.",
+        "Aufgenommen wurde er im Februar 2010 in Studios in Punta del Este (Uruguay), Nassau, New York und Miami.",
+        "Im Musikvideo tanzen die Sängerin, Kinder und Tänzer gemeinsam; als Gäste erscheinen Cristiano Ronaldo und Lionel Messi.",
+        "Offizieller Song der Fußball-Weltmeisterschaft 2010 in Südafrika: Die Sängerin sang ihn am 10. Juni zur Eröffnungsfeier und am 11. Juli zur Schlussfeier.",
+        "Refrain: 'You're a good soldier, choosing your battles'."
+      ],
+      "lyrics": {
+        "real": [
+          "Tsamina mina",
+          "Zangalewa",
+          "You're a good soldier"
+        ],
+        "fake": "Golden sun over the open sea, we are dancing where we should not be"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pRpeEdMmmQ0",
+        "spotify": "https://open.spotify.com/track/2Cd9iWfcOpGDHLz6tVA3G4",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/shakira-waka-waka-2010.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Waka_Waka_(This_Time_for_Africa)",
+        "https://en.wikipedia.org/wiki/Zamina_mina_(Zangal%C3%A9wa)",
+        "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup",
+        "https://api.lyrics.ovh/v1/Shakira/Waka%20Waka",
+        "https://open.spotify.com/embed/track/2Cd9iWfcOpGDHLz6tVA3G4"
+      ]
+    },
+    {
+      "id": "2000s-shakira-whenever",
+      "title": "Whenever, Wherever",
+      "artist": "Shakira",
+      "year": 2001,
+      "country": "CO",
+      "genre": "Latin-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Die spanische Originalfassung heißt 'Suerte'; die englische Textfassung adaptierte Gloria Estefan.",
+        "Aufgenommen wurde der Song 2001 in den Criteria Studios in Miami und im Compass Point Studio auf den Bahamas.",
+        "Die Musik mischt Latinomusik mit Worldbeat und ist stark von andiner Musik geprägt; im Text tauchen Kolumbien, die Anden und Argentinien auf.",
+        "In den USA erreichte die Single Platz 6 der Billboard Hot 100, weltweit führte sie die Charts in 22 Ländern an.",
+        "Refrain: 'Can't you see? I'm at your feet'."
+      ],
+      "lyrics": {
+        "real": [
+          "Lucky you were born that far away so",
+          "We're meant to be together",
+          "Ten million ways to love somebody"
+        ],
+        "fake": "Dancing in the neon rain, we will meet again in the subway"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=weRHyjj34ZE",
+        "spotify": "https://open.spotify.com/track/2lnzGkdtDj5mtlcOW2yRtG",
+        "amazonMusic": "https://music.amazon.com/tracks/B00IVHGQGQ"
+      },
+      "coverUrl": "/covers/2000s-shakira-whenever.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Whenever,_Wherever",
+        "https://en.wikipedia.org/wiki/Laundry_Service_(album)",
+        "https://en.wikipedia.org/wiki/Shakira",
+        "https://api.lyrics.ovh/v1/Shakira/Whenever%2C%20Wherever",
+        "https://open.spotify.com/embed/track/2lnzGkdtDj5mtlcOW2yRtG"
+      ]
+    },
+    {
+      "id": "country-shania-twain-woman",
+      "title": "Man! I Feel Like a Woman!",
+      "artist": "Shania Twain",
+      "year": 1997,
+      "country": "CA",
+      "genre": "Country Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Confident",
+        "Energy",
+        "Happy",
+        "Pop"
+      ],
+      "hints": [
+        "Die Idee entstand aus einem riff, den ihr langjähriger Produzent 'Mutt' Lange vorspielte; den Text schrieb die Sängerin selbst.",
+        "Anregung war die Zeit, in der sie als Teenager in einem Resort in Huntsville, Ontario, ihre Geschwister unterstützen musste.",
+        "Als Single ihres Albums 'Come On Over' kam der Song im März 1999 in den nordamerikanischen Country-Rundfunk.",
+        "Das am 3. März 1999 veröffentlichte Musikvideo zitiert den Clip von Robert Palmers 'Addicted to Love' und zeigt die Sängerin tanzend vor ausdruckslosen Models.",
+        "Refrain-Anfang: 'Let's go girls'."
+      ],
+      "lyrics": {
+        "real": [
+          "Let's go girls",
+          "Gonna let it all hang out",
+          "The best thing about being a woman"
+        ],
+        "fake": "A rodeo dream in a pickup van, silver lightning across the prairie land"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZJL4UGSbeFg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-shania-twain-woman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Man!_I_Feel_Like_a_Woman!",
+        "https://en.wikipedia.org/wiki/Come_On_Over_(Shania_Twain_album)",
+        "https://en.wikipedia.org/wiki/Addicted_to_Love_(Robert_Palmer_song)",
+        "https://www.songfacts.com/facts/shania-twain/man-i-feel-like-a-woman",
+        "https://api.lyrics.ovh/v1/Shania%20Twain/Man!%20I%20Feel%20Like%20a%20Woman!"
+      ]
+    },
+    {
+      "id": "yt-PU3Dwi-hXBw",
+      "title": "Treat You Better / Mercy",
+      "artist": "Shawn Mendes",
+      "year": 2016,
+      "country": "CA",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Emotional",
+        "Romantic"
+      ],
+      "hints": [
+        "Beide Stücke erschienen 2016 auf dem zweiten Studioalbum 'Illuminate' des Kanadiers.",
+        "Das zweite Stück entstand in h-Moll mit einem Tempo zwischen 144 und 152 Schlägen pro Minute.",
+        "Im Clip von 2016 werden die beiden Titel bei den American Music Awards zu einer Medley verbunden.",
+        "Die erste Single erreichte Platz 6 der US-Charts, das zweite Platz 15; das Video zur ersten Single thematisiert eine gewalttätige Beziehung.",
+        "Textzeile: 'Tell me why are we wasting time'."
+      ],
+      "lyrics": {
+        "real": [
+          "I know he's just not right for you",
+          "Tell me why are we wasting time",
+          "Take it easy on my heart"
+        ],
+        "fake": "Neon hearts and midnight drives, we were the kings of the summer skies"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PU3Dwi-hXBw",
+        "spotify": "https://open.spotify.com/track/4bpQqWyEPdWJu2qmYGpXs4",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shawn-mendes-treat-you-better---mercy--live-from-the-ama-s-2016-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Treat_You_Better_(Shawn_Mendes_song)",
+        "https://en.wikipedia.org/wiki/Mercy_(Shawn_Mendes_song)",
+        "https://en.wikipedia.org/wiki/Illuminate_(Shawn_Mendes_album)",
+        "https://api.lyrics.ovh/v1/Shawn%20Mendes/Treat%20You%20Better",
+        "https://api.lyrics.ovh/v1/Shawn%20Mendes/Mercy"
+      ]
+    },
+    {
+      "id": "yt-FMZ7lS_Lc2Q",
+      "title": "When You're Gone",
+      "artist": "Shawn Mendes",
+      "year": 2022,
+      "country": "CA",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Sad",
+        "Emotional"
+      ],
+      "hints": [
+        "Die Single erschien am 31. März 2022 über Island Records.",
+        "Der Song wurde vom Sänger selbst mit Jonah Shy produziert, Scott Harris wirkte als Co-Produzent mit.",
+        "Erstmals live gespielt wurde das Stück am 19. März 2022 bei einem Auftritt in Austin, Texas.",
+        "Vor der Ankündigung postete der Kanadier jeweils kleine Textfragmente auf TikTok.",
+        "Textzeile: 'I don't wanna move on'."
+      ],
+      "lyrics": {
+        "real": [
+          "I don't wanna move on",
+          "You're slipping through my fingertips",
+          "It's hard for me to let go of you"
+        ],
+        "fake": "Golden hour on an empty road, a thousand echoes in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FMZ7lS_Lc2Q",
+        "spotify": "https://open.spotify.com/track/3dYbiHl81L5KactNNXVmSU",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shawn-mendes-when-you-re-gone.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/When_You%27re_Gone_(Shawn_Mendes_song)",
+        "https://en.wikipedia.org/wiki/Shawn_Mendes",
+        "https://en.wikipedia.org/wiki/Wonder_(Shawn_Mendes_album)",
+        "https://api.lyrics.ovh/v1/Shawn%20Mendes/When%20You%27re%20Gone",
+        "https://www.songfacts.com/facts/shawn-mendes/when-youre-gone"
+      ]
+    },
+    {
+      "id": "90s-sheryl-crow-all-i-wanna-do",
+      "title": "All I Wanna Do",
+      "artist": "Sheryl Crow",
+      "year": 1993,
+      "country": "US",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Summer",
+        "Casual"
+      ],
+      "hints": [
+        "Der Text geht auf ein Gedicht von 1987 zurück: Der Produzent der Aufnahme entdeckte das Gedichtbuch eines fast unbekannten Autors in einem Antiquariat in Pasadena und adaptierte dessen Verse für die Sängerin.",
+        "Die Single erschien 1994 bei A&M Records und war der Durchbruchhit ihres 1993 erschienenen Debütalbums 'Tuesday Night Music Club'; geschrieben wurde sie von der Sängerin, David Baerwald, Bill Bottrell und Kevin Gilbert.",
+        "Das Video drehten David Hogan und Roman Coppola in Clarksville im US-Bundesstaat Tennessee; es gewann 1994 den Billboard-Musikvideo-Preis in der Kategorie 'Best New Artist Clip'.",
+        "Der Song gewann 1995 den Grammy für den Jahresrekord, stand sechs Wochen lang auf Platz zwei der US-Hot-100-Liste und war in Australien wie in Kanada die Nummer eins.",
+        "Refrain-Zeile: 'I got a feeling I'm not the only one' - davor singt sie, dass es heute vor allem um Spaß geht, und der Refrain endet mit dem Sonnenaufgang über dem Santa Monica Boulevard."
+      ],
+      "lyrics": {
+        "real": [
+          "I got a feeling I'm not the only one",
+          "It ain't no country club either",
+          "I like a good beer buzz early in the morning"
+        ],
+        "fake": "Dancing all alone, far away from home, in the neon zone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ClbmWkbocoY",
+        "spotify": "https://open.spotify.com/track/3ZpQiJ78LKINrW9SQTgbXd",
+        "amazonMusic": "https://music.amazon.com/tracks/B002VICG88"
+      },
+      "coverUrl": "/covers/90s-sheryl-crow-all-i-wanna-do.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/All_I_Wanna_Do_(Sheryl_Crow_song)",
+        "https://en.wikipedia.org/wiki/Wyn_Cooper",
+        "https://en.wikipedia.org/wiki/Tuesday_Night_Music_Club",
+        "https://www.songfacts.com/facts/sheryl-crow/all-i-wanna-do",
+        "https://api.lyrics.ovh/v1/Sheryl%20Crow/All%20I%20Wanna%20Do"
+      ]
+    },
+    {
+      "id": "yt-nyqOWhYsRb4",
+      "title": "Si Tu Cama Hablara",
+      "artist": "Lenny Tavárez ft. Cosculluela",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Gast rappt die Strophen und ist als 'Fürst der Verse' bekannt - sein 2009 erschienenes Debütalbum erreichte in den Billboard-Charts für Lateinische Alben Platz drei.",
+        "Der Sänger ist puerto-rikanisch, wurde 1987 in San Juan geboren und startete 2013 seine Solokarriere, nachdem sich sein Duo aufgelöst hatte.",
+        "Die Beats baute King Swift, veröffentlicht wurde über Limitless Records und Hollywood Squad; im Rap-Outro kündigt der Gast sich mit dem Spitznamen 'El Mueka' an.",
+        "Der Gast veröffentlichte über sein eigenes Label 'Rottweilas' die Alben 'El Príncipe' (2009), 'El Niño' (2011) und 'Blanco Perla' (2016).",
+        "Textzeile: 'Y no es Cinderella, su piel de color canela' - die Frauengestalt ist im Text zur Prinzessin geworden, die gerade ihr eigenes Schloss bezogen hat."
+      ],
+      "lyrics": {
+        "real": [
+          "Lo que me niegas lo confirmo cuando te sonrojo",
+          "Y no es Cinderella, su piel de color canela",
+          "Te encierras en el cuarto y pones pestillo, la princesa ya llegó a su castillo"
+        ],
+        "fake": "Caminando por la playa con tu nombre tatuado en mi brazo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nyqOWhYsRb4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/si-tu-cama-hablara-lenny-tavárez-ft-cosculluela.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lenny_Tav%C3%A1rez",
+        "https://en.wikipedia.org/wiki/Cosculluela",
+        "https://music.apple.com/us/album/si-tu-cama-hablara-feat-cosculluela/1157005363",
+        "https://lrclib.net/api/get?artist_name=Lenny%20Tavarez&track_name=Si%20Tu%20Cama%20Hablara",
+        "https://www.youtube.com/watch?v=nyqOWhYsRb4"
+      ]
+    },
+    {
+      "id": "yt-s2b-bB1MnXg",
+      "title": "Si Tu No Estas",
+      "artist": "Nicky Jam ft. De la Ghetto",
+      "year": 2014,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der zweite Rapper des Duos mit Arcángel wurde 1984 im New Yorker Stadtteil The Bronx geboren und mischt Hip-Hop mit Latin-Trap-Rhythmen.",
+        "Der Sänger wurde 1981 in Lawrence im US-Bundesstaat Massachusetts geboren, zog mit zehn Jahren nach San Juan und siedelte 2007 nach Medellín um, wo er den Drogenkonsum beendete.",
+        "Der Track eröffnet die Kompilation 'Greatest Hits, Vol. 1', die am 4. November 2014 bei Sony Music Latin erschien; die Single kam am 13. September 2014 in den Handel.",
+        "Die Beats stammen von Denni Way und DJ Blass; das Video entstand in einem luxuriösen Haus und einer Diskothek in Medellín und liegt auf dem offiziellen Kanal des Sängers.",
+        "Textzeile: 'Yo no voy a llorar por ti' - der Text erzählt von einem Mann, der nach dem Beziehungsende nicht weint, sondern nachts feiern geht und weiterlebt."
+      ],
+      "lyrics": {
+        "real": [
+          "Dicen que todo lo cura el tiempo",
+          "Yo no voy a llorar por ti",
+          "Mientras te voy olvidando, yo sigo rumbeando"
+        ],
+        "fake": "Bailamos en la piscina hasta que amanezca el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s2b-bB1MnXg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/yt-s2b-bB1MnXg.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Si_tu%CC%81_no_esta%CC%81s_(cancio%CC%81n_de_Nicky_Jam)",
+        "https://es.wikipedia.org/wiki/Greatest_Hits,_Vol._1",
+        "https://en.wikipedia.org/wiki/Nicky_Jam",
+        "https://en.wikipedia.org/wiki/De_la_Ghetto",
+        "https://lrclib.net/api/get?artist_name=Nicky%20Jam&track_name=Si%20Tu%20No%20Estas"
+      ]
+    },
+    {
+      "id": "yt-t2NgsJrrAyM",
+      "title": "Alive",
+      "artist": "Sia",
+      "year": 2015,
+      "country": "AU",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die Single erschien am 25. September 2015 als Titelsingle des siebten Studioalbums 'This Is Acting' und wurde von Jesse Shatkin produziert.",
+        "Den Text schrieb die australische Sängerin gemeinsam mit Adele und Tobias Jesso Jr.; ursprünglich war das Stück für Adeles drittes Album '25' gedacht, das Adele in letzter Minute ablehnte - auch Rihanna hatte das Angebot zuvor abgelehnt.",
+        "Eine Midtempo-Power-Ballade in fis-Moll mit 100 Schlägen pro Minute und 4:23 Länge, aufgenommen in den Studios Harmony, Hot Closet und The Rib Cage in Los Angeles; Rolling Stone sprach von einer 'devastating, electrifying' Stimme.",
+        "Das Clip drehten die Sängerin und Daniel Askill in Japan; es zeigt den karatekämpfenden Kinderstar Mahiro Takano in der schwarz-blonden Perücke, und die japanische Fassung mit Schauspielerin Tao Tsuchiya erreichte im März 2016 Platz 1 der Billboard-Japan-Hot-Overseas-Liste.",
+        "In den USA debütierte die Single mit Platz 56 der Billboard Hot 100, in Großbritannien erreichte sie Platz 30, in Australien Platz 10 mit Platin. Textzeile: 'And you're taught to cry in your pillow'."
+      ],
+      "lyrics": {
+        "real": [
+          "I was born in a thunderstorm",
+          "Where the wind don't change",
+          "I'm alive"
+        ],
+        "fake": "Neon rain on the highway, we burn the midnight away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=t2NgsJrrAyM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/sia-alive.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Alive_(Sia_song)",
+        "https://en.wikipedia.org/wiki/This_Is_Acting",
+        "https://www.songfacts.com/facts/sia/alive",
+        "https://www.theguardian.com/music/musicblog/2015/sep/25/sias-new-single-alive-was-written-for-adele-and-offered-to-rihanna-listen",
+        "https://api.lyrics.ovh/v1/Sia/Alive"
+      ]
+    },
+    {
+      "id": "piano-sia-breathe",
+      "title": "Breathe Me",
+      "artist": "Sia",
+      "year": 2004,
+      "country": "AU",
+      "genre": "Indie Pop / Downtempo",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Spiritual"
+      ],
+      "hints": [
+        "Das Musikvideo wurde an drei Tagen in einem thematisierten Londoner Hotel gedreht und besteht aus über 2.500 einzelnen Polaroid-Fotos.",
+        "Die Single erschien am 19. April 2004 als Vorab-Single zu ihrem dritten Studioalbum 'Colour the Small One'; auf der Rückseite stand der Song 'Sea Shells'.",
+        "Den Text schrieben die Sängerin gemeinsam mit Dan Carey, produziert hat das Stück Jimmy Hogarth; die Single läuft 4:32 Minuten.",
+        "Der Song ist untrennbar mit dem Finale der Serie 'Six Feet Under' verbunden und wurde später auch im Fernsehfilm 'Cyberbully' verwendet.",
+        "Refrain-Zeile: 'Help, I have done it again' - die Australierin singt davon, sich selbst verloren zu haben und nirgends zu finden."
+      ],
+      "lyrics": {
+        "real": [
+          "Help, I have done it again",
+          "I have been here many times before",
+          "Hurt myself again today"
+        ],
+        "fake": "Paper-thin and trembling, I let the quiet swallow me whole"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ghPcYqn0p4Y",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-sia-breathe.jpg",
+      "packs": [
+        "piano-ballads",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Breathe_Me",
+        "https://en.wikipedia.org/wiki/Colour_the_Small_One",
+        "https://en.wikipedia.org/wiki/Six_Feet_Under_(TV_series)",
+        "https://www.songfacts.com/facts/sia/breathe-me",
+        "https://api.lyrics.ovh/v1/Sia/Breathe%20Me"
+      ]
+    },
+    {
+      "id": "sia-chandelier-2014",
+      "title": "Chandelier",
+      "artist": "Sia",
+      "year": 2014,
+      "country": "AU",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Epic",
+        "Heartbreak",
+        "Power Ballad",
+        "Powerful"
+      ],
+      "hints": [
+        "Die Single erschien am 17. März 2014 als Titelsingle des sechsten Studioalbums '1000 Forms of Fear'.",
+        "Das Stück entstand aus einer Jam-Session, bei der die Sängerin am Klavier und Jesse Shatkin am Marimbophon spielte; produziert haben Shatkin und Greg Kurstin.",
+        "Das Video inszenierten die Sängerin und Daniel Askill, die Choreografie stammt von Ryan Heffington - im leeren Haus tanzt die US-Tänzerin Maddie Ziegler, damals noch ein Kind.",
+        "In den USA erreichte der Song Platz 8 der Billboard-Hot-100-Liste und war die erste Lead-Single der Sängerin, die es in die Top 100 schaffte; das Video wurde mehr als 2,8 Milliarden Mal angesehen.",
+        "Bei den Grammys 2015 war der Song in vier Kategorien nominiert, darunter Song of the Year und Record of the Year; Billboard kürzte ihn zum besten Song des Jahres 2014."
+      ],
+      "lyrics": {
+        "real": [
+          "Party girls don't get hurt",
+          "I'm gonna live like tomorrow doesn't exist",
+          "Gotta get out now, gotta run from this"
+        ],
+        "fake": "Silk sheets and cold champagne, dancing till the lights go blue"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2vjPBrBU-TM",
+        "spotify": "https://open.spotify.com/track/2s1sdSqGcKxpPr5lCl7jAV",
+        "amazonMusic": "https://music.amazon.com/tracks/B00KMZI49M"
+      },
+      "coverUrl": "/covers/sia-chandelier-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Chandelier_(song)",
+        "https://en.wikipedia.org/wiki/1000_Forms_of_Fear",
+        "https://en.wikipedia.org/wiki/Maddie_Ziegler",
+        "https://www.songfacts.com/facts/sia/chandelier",
+        "https://api.lyrics.ovh/v1/Sia/Chandelier"
+      ]
+    },
+    {
+      "id": "finale-sia-unstoppable",
+      "title": "Unstoppable (resurgence)",
+      "artist": "Sia",
+      "year": 2016,
+      "country": "AU",
+      "genre": "Pop / Empowerment",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "Geschrieben hat das Stück die Leadsängerin gemeinsam mit dem Songwriter Chris Braide.",
+        "Die Single erschien 2016 zusammen mit dem Album 'This Is Acting' (2016); der Song hat eine Länge von 3:37 Minuten.",
+        "Für die Gillette-Kampagne 'Perfect Isn't Pretty' zu den Olympischen Spielen 2016 in Rio remixte Ariel Rechtshaid den Song: Die afro-brasilianische Marschkapelle Olodum lieferte die Percussion, Rapper Pusha T steuerte eine eigene Strophe, im Werbespot waren unter anderem Neymar, Ashton Eaton, Ning Zetao und Andy Tennant zu sehen.",
+        "Erst 2022 kehrte der Titel zurück: Im Juli 2022 schaffte er erstmals den Einstieg in die Billboard Hot 100, nachdem er in TV-Spots für das Samsung Galaxy S22 Ultra zu hören war; in der Billboard-Adult-Contemporary-Liste erreichte er die 100. Woche (Ausgabe vom 11. Mai) und war damit erst der vierte Song mit dieser Marke - davor hatten nur 'I Knew I Loved You' (124 Wochen), 'Truly Madly Deeply' (123 Wochen) und 'I Need You' (104 Wochen) so lange dort gestanden.",
+        "Der Refrain preist Selbstsicherheit mit einer Autovergleichs-Metapher: 'I'm a Porsche with no brakes'."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm a Porsche with no brakes",
+          "Yeah, I win every single game",
+          "I don't need batteries to play"
+        ],
+        "fake": "Silver engine roaring, I don't ask the highway for permission"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YaEG2aWJnZ8",
+        "spotify": "https://open.spotify.com/track/4W7uMjg5a9ZqgNZzpY6ekk",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/sia-unstoppable--resurgence-.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/sia/unstoppable",
+        "https://music.apple.com/us/album/unstoppable/1055074478?i=1055074639",
+        "https://api.lyrics.ovh/v1/Sia/Unstoppable",
+        "https://open.spotify.com/embed/track/4W7uMjg5a9ZqgNZzpY6ekk",
+        "https://musicbrainz.org/ws/2/work/c663fee4-5807-4887-af18-9678aa14348c?inc=artist-rels&fmt=json"
+      ]
+    }
+  ]
+}

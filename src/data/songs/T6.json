@@ -1,0 +1,677 @@
+{
+  "songs": [
+    {
+      "id": "soul-gap-bomb",
+      "title": "You Dropped a Bomb on Me",
+      "artist": "The Gap Band",
+      "year": 1982,
+      "country": "US",
+      "genre": "Funk / Synth-Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Cool",
+        "Nightlife"
+      ],
+      "hints": [
+        "Den Synthesizer-Part spielte der Studiosaxophonist John Barnes; sein Pfeifen imitiert eine aus großer Höhe fallende Sprengladung und setzt unmittelbar vor der ersten Strophe ein, dazu kommen Paukenwirbel.",
+        "Die Single erschien im August 1982 über Total Experience, das eigene Label des Produzenten Lonnie Simmons, und war zugleich auf dem sechsten Studioalbum der Gruppe aus Tulsa enthalten.",
+        "In den USA erreichte der Track Platz 2 der R&B-Liste, Platz 31 der allgemeinen Hitparade und Platz 39 der Dance-Disco-Liste.",
+        "Vier Jahrzehnte später leading die Redaktion von Rolling Stone den Song 2024 in ihrer Liste der 100 größten \"Jock Jams\" als Synth-Funk-Meisterwerk mit dem pfeifenden Sound-Effekt auf.",
+        "Ein jahrzehntelang kursierendes Gerücht, der Song sei vom Massaker in der Heimatstadt Tulsa 1921 inspiriert, widerlegte Frontmann Charlie Wilson 2021 selbst."
+      ],
+      "lyrics": {
+        "real": [
+          "You were the girl that changed my world",
+          "You lit the fuse, I stand accused",
+          "You dropped a bomb on me, baby"
+        ],
+        "fake": "Baby, you set my heart on fire, baby, you set my heart on fire tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=17lkdqoLt44"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gap-bomb.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "Dance Floor Fillers",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You_Dropped_a_Bomb_on_Me",
+        "https://en.wikipedia.org/wiki/Gap_Band_IV",
+        "https://www.songfacts.com/facts/the-gap-band/you-dropped-a-bomb-on-me",
+        "https://www.billboard.com/lists/best-jock-jams-sports-songs-all-time/",
+        "https://abcnews.go.com/US/gap-band-leader-discusses-hit-songs-connection-1921/story?id=76886953"
+      ]
+    },
+    {
+      "id": "synth-humanleague-me",
+      "title": "Don't You Want Me",
+      "artist": "The Human League",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Drama",
+        "Dramatic",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Das Video inszenierte der irisch-britische Regisseur Steve Barron; es ist als Making-of-Clip gestaltet, in dem Crew und Kamera sichtbar bleiben, und er nannte Truffauts \"Day for Night\" als Vorbild.",
+        "Die Single erschien am 27. November 1981 bei Virgin Records als vierte Single des dritten Studioalbums der Sheffield-Gruppe; aufgenommen wurde sie 1981 im Studio Genetic Sound in Streatley.",
+        "Sie war das meistverkaufte britische Single des Jahres 1981 und zugleich die Weihnachts-Nummer eins der britischen Liste.",
+        "In den USA stand sie ab dem 3. Juli 1982 drei Wochen an der Spitze der Billboard Hot 100.",
+        "Im Refrain endet die Titelzeile abwechselnd mit \"baby\" und einem kurzen \"oh\"."
+      ],
+      "lyrics": {
+        "real": [
+          "You were working as a waitress in a cocktail bar",
+          "Turned you into someone new",
+          "Don't you want me, baby?"
+        ],
+        "fake": "Leave me hanging on the telephone line, leave me hanging in the neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uPudE8nDog0",
+        "spotify": "https://open.spotify.com/track/3L7RtEcu1Hw3OXrpnthngx",
+        "amazonMusic": "https://music.amazon.com/tracks/B01M0E7QOA"
+      },
+      "coverUrl": "/covers/synth-humanleague-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "Electronic & Techno",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_You_Want_Me",
+        "https://en.wikipedia.org/wiki/Dare_(album)",
+        "https://www.officialcharts.com/chart-news/the-official-top-50-best-selling-songs-of-1981__32604/",
+        "https://www.billboard.com/artist/the-human-league/chart-history/hsi/",
+        "https://lrclib.net/api/get?artist_name=The%20Human%20League&track_name=Don%27t%20You%20Want%20Me"
+      ]
+    },
+    {
+      "id": "soul-isley-shout",
+      "title": "Shout",
+      "artist": "The Isley Brothers",
+      "year": 1959,
+      "country": "US",
+      "genre": "Soul / Rock and Roll / Gospel",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Die Aufnahme entstand am 29. Juli 1959 in den RCA-Victor-Studios in New York und wurde von Hugo & Luigi produziert; der Organist Herman Stephens war von der Gruppe selbst eingeladen.",
+        "Die Single erschien im August 1959 bei RCA Victor und war über beide Plattenseiten verteilt: Teil 1 vorne, Teil 2 hinten.",
+        "Das Stück war die vierte Single der Gruppe und die erste, die überhaupt in die Billboard Hot 100 chartete; den Text schrieben drei der Brüder.",
+        "Rolling Stone zählte den Song 2003 mit Platz 119 zu den 500 besten Liedern aller Zeiten.",
+        "Die von der Schottenin Lulu aufgenommene Version erreichte 1964 in Großbritannien die Top 10 der Single-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "You know you make me wanna",
+          "Don't forget to say you will",
+          "When you used to be nine years old"
+        ],
+        "fake": "Now baby, raise your voice and let the whole town hear you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DPVf01jXL7M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-isley-shout.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Shout_(Isley_Brothers_song)",
+        "https://itunes.apple.com/lookup?id=1030461597&entity=song",
+        "https://en.wikipedia.org/wiki/The_Isley_Brothers",
+        "https://www.rollingstone.com/music/music-lists/500-greatest-songs-of-all-time-151127/the-isley-brothers-shout-parts-1-and-2-170267/",
+        "https://en.wikipedia.org/wiki/Lulu_(singer)"
+      ]
+    },
+    {
+      "id": "yt-kTJczUoc26U",
+      "title": "Stay",
+      "artist": "The Kid LAROI & Justin Bieber",
+      "year": 2021,
+      "country": "AU",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Die Grundidee entstand 2020 bei einem Treffen von Produzenten im Haus von Blake Slatkin: Charlie Puth legte die Melodie am Keyboard vor, der australische Sänger übertrug sie anschließend in eine Produktions-Software.",
+        "Ein aufwärts springendes Keyboard-Riff auf einem Roland Juno-60 ist das Rückgrat des Stücks und wandert später in den Refrain.",
+        "Nach 118 Tagen erreichte der Track die Marke von einer Milliarde Spotify-Streams und war damit der schnellste Titel zu dieser Marke; 2021 stand er drei Wochen an der Spitze der Billboard Hot 100 und verdrängte dort die koreanische Boygroup BTS.",
+        "Bei den ARIA Music Awards 2021 gewann das Stück den Preis für den besten Pop-Release; beide Sänger nahmen zusätzlich den Künstlerpreis entgegen.",
+        "Im Video steht eine ganze Stadt still, während die beiden Sänger durch die Straßen gehen; im letzten Refrain legen sich ihre Stimmen übereinander."
+      ],
+      "lyrics": {
+        "real": [
+          "I do the same thing I told you that I never would",
+          "I told you I'd change, even when I knew I never could",
+          "Ain't no way that I can leave you stranded"
+        ],
+        "fake": "I'm counting every star in the sky, waiting for the daylight to come around"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kTJczUoc26U"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/the-kid-laroi--justin-bieber-stay.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stay_(The_Kid_Laroi_and_Justin_Bieber_song)",
+        "https://variety.com/2021/music/news/blake-slatkin-producer-lil-nas-x-kid-laroi-1235075810/",
+        "https://www.billboard.com/music/pop/kid-laroi-stay-single-justin-bieber-9595581/",
+        "https://www.aria.com.au/awards/past-winners/2021",
+        "https://www.vulture.com/2021/07/watch-justin-bieber-the-kid-laroi-stay-music-video.html"
+      ]
+    },
+    {
+      "id": "indie-killers-brightside",
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "year": 2003,
+      "country": "US",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Sad",
+        "Sing-along"
+      ],
+      "hints": [
+        "Der Text entstand am Ende der ersten ernsten Beziehung des Sängers, der damals 19 oder 20 Jahre alt war: In einem Pub in Las Vegas, dem \"Crown and Anchor\", sah er die Freundin mit einem anderen Mann.",
+        "Die Single erschien am 29. September 2003; das Debütalbum mit dem Song kam im Juni 2004 in Großbritannien und in den USA.",
+        "Mit über 500 Wochen auf der britischen Top-100-Liste ist der Song der am längsten gechartete Single der Liste.",
+        "2016 wurde das Stück allein im Vereinigten Königreich 26 Millionen Mal gestreamt; das brachte der Band laut Branchenverband BPI rund 150.000 US-Dollar an Tantiemen.",
+        "Für den US-Markt entstand ein zweites Video in Los Angeles, inszeniert von Sophie Muller, in dem der Sänger mit Izabella Miko und Eric Roberts ein Liebesdreieck spielt."
+      ],
+      "lyrics": {
+        "real": [
+          "Gotta, gotta be down because I want it all",
+          "It started out with a kiss, how did it end up like this?",
+          "Now they're goin' to bed and my stomach is sick"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gGdGFtwCNBE"
+      },
+      "coverUrl": "/covers/indie-killers-brightside.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://www.bbc.com/news/entertainment-arts-56601090",
+        "https://en.wikipedia.org/wiki/Hot_Fuss",
+        "https://www.officialcharts.com/artist/23332/killers/",
+        "https://www.bbc.com/news/entertainment-arts-39952980",
+        "https://en.wikipedia.org/wiki/Mr._Brightside"
+      ]
+    },
+    {
+      "id": "indie-killers-somebody-told-me",
+      "title": "Somebody Told Me",
+      "artist": "The Killers",
+      "year": 2004,
+      "country": "US",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Electronic"
+      ],
+      "hints": [
+        "Die Band entstand 2001 in Las Vegas und unterschrieb zuerst bei einem britischen Label; erst im Sommer 2004 übernahm Island Records die Verteilung für den US-Markt.",
+        "Es ist die zweite Single des Debütalbums, aufgenommen in einem Studio in Berkeley, das die Band \"The Hearse\" nannte, und produziert von Jeff Saltzman.",
+        "Das Video drehte der US-Regisseur Brett Simon im Februar 2004 in der kalifornischen Wüste vor einer riesigen LED-Wand; es ist eine Hommage an das Video zu \"Crystal\" von New Order, nach dessen fiktiver Band sich die Gruppe benannte.",
+        "In Großbritannien erreichte der Song nach seiner Neuveröffentlichung Anfang 2005 Platz 3, in den USA kam er dagegen nur auf Platz 51 der Billboard Hot 100.",
+        "Brandon Flowers nannte als musikalische Vorbilder Pulp und David Bowie, und als eines der wenigen Stücke teilen sich alle vier Bandmitglieder die Songwriting-Credits."
+      ],
+      "lyrics": {
+        "real": [
+          "Breaking my back just to know your name",
+          "Never thought I'd let a rumor ruin my moonlight",
+          "It's not confidential, I've got potential"
+        ],
+        "fake": "I can hear the echo of a breaking heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y5fBdpreJiU"
+      },
+      "coverUrl": "/covers/indie-killers-somebody-told-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Somebody_Told_Me",
+        "https://www.songfacts.com/facts/the-killers/somebody-told-me",
+        "https://en.wikipedia.org/wiki/Hot_Fuss",
+        "https://en.wikipedia.org/wiki/The_Killers",
+        "https://americansongwriter.com/behind-the-band-name-the-killers/"
+      ]
+    },
+    {
+      "id": "yt-fOGMRnKl5co",
+      "title": "All Day And All Of The Night",
+      "artist": "The Kinks",
+      "year": 1964,
+      "country": "GB",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ray Davies schrieb das Stück, Shel Talmy produzierte es; aufgenommen wurde es am 24. September 1964 in den Pye Studios in London, veröffentlicht am 23. Oktober 1964 bei Pye, B-Seite \"I Gotta Move\".",
+        "Das Label drängte die Band, nach dem ersten Erfolg rasch einen Nachfolger zu liefern; Ray Davies bezeichnete das Ergebnis später als \"a neurotic song - youthful, obsessive and sexually possessive\".",
+        "In Großbritannien erreichte die Single Platz 2, in den USA kam sie 1965 auf Platz 7 der Billboard Hot 100; in Neuseeland stand sie auf Platz 5, in Westdeutschland auf Platz 22.",
+        "Bis heute wird das Stück mit \"Hello, I Love You\" von den Doors aus dem Jahr 1968 verglichen; Ray Davies erzählte 1981, sein Verlag habe die Rechtsverfolgung wollen, er selbst habe aber keinen Prozess angestrengt.",
+        "Die Band The Stranglers coverte das Lied 1987 und landete damit auf Platz 7 der britischen Liste; in Großbritannien wurde die Single 2005 nachträglich mit Gold ausgezeichnet."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not content to be with you in the daytime",
+          "The only time I feel alright is by your side",
+          "I believe that you and me last forever"
+        ],
+        "fake": "Meet me by the riverside at half past nine"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fOGMRnKl5co"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/the-kinks-all-day-and-all-of-the-night.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/All_Day_and_All_of_the_Night",
+        "https://www.songfacts.com/facts/the-kinks/all-day-and-all-of-the-night",
+        "https://en.wikipedia.org/wiki/The_Kinks",
+        "https://en.wikipedia.org/wiki/Kinks-Size",
+        "https://en.wikipedia.org/wiki/Dave_Davies"
+      ]
+    },
+    {
+      "id": "yt-bZ4uGV6Goy0",
+      "title": "You Really Got Me",
+      "artist": "The Kinks",
+      "year": 1964,
+      "country": "GB",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Ray Davies schrieb das Stück Anfang 1964 am Klavier im Frontzimmer des Elternhauses; aufgenommen wurde es am 13. Juli 1964 in den IBC Studios in London, produziert von Shel Talmy, veröffentlicht am 4. August 1964 bei Pye.",
+        "Dave Davies erzeugte den schmutzigen Gitarrklang, indem er mit einem Rasiermesser den Lautsprecherkonus eines Elpico-Verstärkers aufschlitzte; das Ergebnis gilt als erster großer Hit mit Verzerrung.",
+        "In Großbritannien stand die Single zwei Wochen auf Platz 1, in den USA erschien sie am 2. September 1964 bei Reprise und erreichte Platz 7; einen Monat später kam das selbstbetitelte Debütalbum heraus.",
+        "Das Solo aus Quinten und Oktaven prägte nachhaltig den Sound von Heavy Metal und Punk; Ray Davies nannte den Text \"a love song for street kids\".",
+        "Van Halen coverte das Stück 1978 als erste Single des Debütalbums und kam damit auf Platz 36 der US-Hitparade; dass Jimmy Page das Solo gespielt hätte, ist ein widerlegtes Gerücht."
+      ],
+      "lyrics": {
+        "real": [
+          "Girl, you really got me goin'",
+          "You got me so I can't sleep at night",
+          "See, don't ever set me free"
+        ],
+        "fake": "I'm driving down the highway in a borrowed car"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bZ4uGV6Goy0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/the-kinks-you-really-got-me-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You_Really_Got_Me",
+        "https://www.songfacts.com/facts/the-kinks/you-really-got-me",
+        "https://en.wikipedia.org/wiki/Kinks_(album)",
+        "https://en.wikipedia.org/wiki/Van_Halen_(album)",
+        "https://en.wikipedia.org/wiki/Dave_Davies"
+      ]
+    },
+    {
+      "id": "indie-lumineers-hohey",
+      "title": "Ho Hey",
+      "artist": "The Lumineers",
+      "year": 2012,
+      "country": "US",
+      "genre": "Indie Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Romantic",
+        "Singalong",
+        "Soft"
+      ],
+      "hints": [
+        "Wesley Schultz und Schlagzeuger Jeremiah Fraites schrieben das Stück 2009 in New York als \"kiss-off\" gegen unaufmerksame Konzertbesucher in Brooklyn – die Rufe im Song waren ihr Mittel, Aufmerksamkeit zu erzwingen.",
+        "Nach dem Umzug nach Denver kam die dritte Bandmitglied Neyla Pekarek dazu, die sie über Craigslist fanden; aufgenommen wurde das Debütalbum 2011 in Seattle und veröffentlicht im April 2012 bei Dualtone.",
+        "Die Single erschien am 4. Juni 2012, das Musikvideo bereits am 11. März; das Stück schrieben Schultz und Fraites, produziert hat Julius Gatuma.",
+        "Vor der Veröffentlichung lief eine zarte Klavier-Version, die in der Serie \"Hart Of Dixie\" zu hören war; danach stieg der Song langsam bis auf Platz 3 der Billboard Hot 100.",
+        "Bei den Rock-Charts stand er 18 nicht zusammenhängende Wochen auf Platz 1, bei den Adult-Pop-Charts acht Wochen – zugleich war es die erste Single der Band mit einer US-Auszeichnung."
+      ],
+      "lyrics": {
+        "real": [
+          "I belong with you, you belong with me",
+          "You're my sweetheart",
+          "Love, we need it now"
+        ],
+        "fake": "Rollin' down the highway with the windows wide open"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zvCBSSwgtg4"
+      },
+      "coverUrl": "/covers/indie-lumineers-hohey.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ho_Hey",
+        "https://www.songfacts.com/facts/the-lumineers/ho-hey",
+        "https://en.wikipedia.org/wiki/The_Lumineers_(album)",
+        "https://en.wikipedia.org/wiki/The_Lumineers",
+        "https://en.wikipedia.org/wiki/Wesley_Schultz"
+      ]
+    },
+    {
+      "id": "yt-4PQAqprjOuA",
+      "title": "I'm a Believer",
+      "artist": "The Monkees",
+      "year": 1966,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Neil Diamond schrieb das Stück; nachdem sein \"Cherry, Cherry\" bei Plattenboss Don Kirshner aufgefallen war, bekam die Band den Song für ihre Fernsehserie.",
+        "Aufgenommen wurde im Oktober 1966 in den RCA-Studios A und B in New York, produziert von Jeff Barry, veröffentlicht im November 1966 bei Colgems, B-Seite \"(I'm Not Your) Steppin' Stone\".",
+        "Die Band sang das Stück in der 13. Folge ihrer Serie, ausgestrahlt am 5. Dezember 1966; am 31. Dezember stand die Single auf Platz 1 der Billboard Hot 100 und blieb dort sieben Wochen.",
+        "Es war der letzte Nummer-eins-Hit des Jahres 1966 und stand laut den Billboard-Jahrescharts 1967 auf Platz 5; in Großbritannien war sie von Januar bis Februar 1967 vier Wochen auf Platz 1.",
+        "Die Band entstand aus der gleichnamigen Fernsehserie und ließ die Aufnahme von Sessionmusikern einspielen; Gitarrist Michael Nesmith zweifelte am Erfolg, der Produzent sperrte ihn deshalb aus dem Studio, während Micky Dolenz den Lead sang."
+      ],
+      "lyrics": {
+        "real": [
+          "Then I saw her face, now I'm a believer",
+          "Disappointment haunted all my dreams",
+          "I couldn't leave her if I tried."
+        ],
+        "fake": "The winter rain is falling on the empty street"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4PQAqprjOuA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/the-monkees-i-m-a-believer.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I%27m_a_Believer",
+        "https://www.songfacts.com/facts/the-monkees/im-a-believer",
+        "https://en.wikipedia.org/wiki/More_of_the_Monkees",
+        "https://en.wikipedia.org/wiki/The_Monkees",
+        "https://en.wikipedia.org/wiki/Neil_Diamond"
+      ]
+    },
+    {
+      "id": "hiphop-bigg-juicy",
+      "title": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "year": 1994,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Inspirational",
+        "Classic",
+        "Groovy"
+      ],
+      "hints": [
+        "Die Single erschien am 9. August 1994 als erste Auskopplung des Debütalbums, aufgenommen in der Hit Factory in New York und produziert von Poke von den Trackmasters sowie von Sean Combs.",
+        "Der Beat samplet einen Track der Funkgruppe Mtume aus dem Jahr 1983, im Refrain singen die Girl-Group Total und Combs mit.",
+        "Vier Tage vor der Veröffentlichung heiratete der Rapper die Sängerin Faith Evans; später wirft Produzent Pete Rock Combs vor, ihm den Beat weggenommen zu haben.",
+        "Eine Zeile über das \"World Trade\" spielt auf den Bombenanschlag vom 26. Februar 1993 an; nach den Anschlägen 2001 strichen Radiosender die Stelle, Billboard forderte 2017 die Rücknahme dieser Zensur.",
+        "Bei einer BBC-Umfrage 2019 wurde der Song zum besten Hip-Hop-Song aller Zeiten gewählt, knapp vor \"Fight The Power\" von Public Enemy; in den USA kam er auf Platz 27 der Billboard Hot 100 und auf Platz 1 der Hot Rap Singles."
+      ],
+      "lyrics": {
+        "real": [
+          "It was all a dream, I used to read Word Up! magazine",
+          "Salt-n-Pepa and Heavy D up in the limousine",
+          "Time to get paid, blow up like the World Trade"
+        ],
+        "fake": "Crib on the hill with the lights turned low"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_JZom_gVfuw"
+      },
+      "coverUrl": "/covers/hiphop-bigg-juicy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026",
+        "90s Unplugged"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Juicy_(The_Notorious_B.I.G._song)",
+        "https://www.songfacts.com/facts/the-notorious-big/juicy",
+        "https://en.wikipedia.org/wiki/Ready_to_Die",
+        "https://en.wikipedia.org/wiki/Juicy_Fruit_(Mtume_song)",
+        "https://www.billboard.com/music/rb-hip-hop/notorious-big-juicy-biggie-9-11-radio-censorship-7767469/"
+      ]
+    },
+    {
+      "id": "80s-police-breath",
+      "title": "Every Breath You Take",
+      "artist": "The Police",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Pop / Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "German New Wave",
+        "Moody",
+        "Obsessive",
+        "Popular"
+      ],
+      "hints": [
+        "Den Text und die Melodie fand der Sänger in einer halben Stunde am Klavier - nachts auf Jamaika, an dem Schreibpult, das einst Ian Fleming gehörte; er erklärte später, er habe dabei an 'Big Brother' und an Überwachung gedacht.",
+        "Aufgenommen wurde das Stück in den AIR Studios auf der Karibikinsel Montserrat, zwischen Dezember 1982 und Februar 1983; rund sechs Wochen lang entstanden nur Schlagzeug und Bass, und weil es in einem Nebenraum des Studios unerträglich heiß war, klebte der Schlagzeuger seine Sticks an die Hände.",
+        "Die berühmte Gitarrenfigur erfand der Gitarrist unter dem Eindruck von Violinduetten des ungarischen Komponisten Béla Bartók und spielte sie in einem einzigen Durchgang ein - daraus wurde das Markenzeichen der Band.",
+        "Das Video in Schwarz-Weiß mit blauem Stich - die Band spielt in einem abgedunkelten Saal, während ein Mann das bodentiefe Fenster hinter ihnen putzt - wurde von Godley & Creme inszeniert; der Kameramann gewann damit den ersten MTV-Preis für die beste Kameraarbeit.",
+        "Der Song stand vier Wochen auf Platz 1 der britischen Hitparade und acht Wochen auf Platz 1 der US-Hitparade, war der größte US-Hit des Jahres 1983, und 2019 wurde er von BMI zum meistgespielten Song der Radio-Geschichte gekürt."
+      ],
+      "lyrics": {
+        "real": [
+          "And every move you make",
+          "I'll be watching you",
+          "Since you've gone, I've been lost without a trace"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of your broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OMOGaugKpzs",
+        "spotify": "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-police-breath.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Every_Breath_You_Take",
+        "https://en.wikipedia.org/wiki/Synchronicity_(The_Police_album)",
+        "https://www.songfacts.com/facts/the-police/every-breath-you-take",
+        "https://en.wikipedia.org/wiki/Godley_%26_Creme",
+        "https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_1983"
+      ]
+    }
+  ]
+}

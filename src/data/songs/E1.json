@@ -1,0 +1,759 @@
+{
+  "songs": [
+    {
+      "id": "yt-Gs069dndIYk",
+      "title": "September",
+      "artist": "Earth, Wind & Fire",
+      "year": 1978,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Dance",
+        "Energy",
+        "Happy",
+        "Popular"
+      ],
+      "hints": [
+        "Der Song wurde ursprünglich als zweite Single einer Greatest-Hits-Compilation im Spätherbst 1978 veröffentlicht und gehört zu den meistgespielten Funk-Klassikern aller Zeiten.",
+        "Co-Autorin Allee Willis verriet 2019, dass die im Text genannte Tageszahl rein willkürlich gewählt sei – sie habe schlicht am besten geklungen.",
+        "Mit den Gründern Maurice und Verdine White am Gesang beziehungsweise Bass sowie einem charakteristischen Bläsersatz katapultierte sich der Titel in den USA auf Platz eins der R&B-Charts.",
+        "Das ikonische Musikvideo zeigt die Band in weißen Anzügen beim Tanzen – der Song erreichte in den USA 6-fachen Platin-Status und steht auf Rolling-Stone-Listen der 500 größten Hits aller Zeiten.",
+        "Der Refrain fragt 'Do you remember? The 21st night of…' und nennt damit das präzise Datum einer einzigen Herbstnacht – der Songtitel fällt im Text nie."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/September_(song)",
+        "https://en.wikipedia.org/wiki/The_Best_of_Earth,_Wind_%26_Fire,_Vol._1",
+        "https://en.wikipedia.org/wiki/Earth,_Wind_%26_Fire",
+        "https://en.wikipedia.org/wiki/Maurice_White",
+        "https://en.wikipedia.org/wiki/Allee_Willis"
+      ],
+      "lyrics": {
+        "real": [
+          "Do you remember, the 21st night of September?",
+          "Love was changing the mind of pretenders, while chasing the clouds away",
+          "Ba de ya, say do you remember?"
+        ],
+        "fake": "Brass and strings in the spotlight while the whole room starts to move"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gs069dndIYk",
+        "spotify": "https://open.spotify.com/track/2grjqo0Frpf2okIBiifQKs",
+        "amazonMusic": "https://music.amazon.com/tracks/B07C7HW29C"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/jazz-ewf-september.jpg"
+    },
+    {
+      "id": "yt-9hGcJA8fXvU",
+      "title": "Lips Like Sugar",
+      "artist": "Echo & The Bunnymen",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Post-Punk / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Indie & Alternative",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Ein federleichtes, schimmerndes Gitarrenstück vom Ende der 80er Jahre, irgendwo zwischen Post-Punk und stadionreifem Pop-Gefühl.",
+        "Die zweite ausgekoppelte Single aus einem selbstbetitelten Album, das im Sommer 1987 auf WEA erschien und Platz vier der UK-Album-Charts erreichte.",
+        "Das von Anton Corbijn inszenierte Schwarz-Weiß-Video wurde ein Dauerbrenner auf MTVs '120 Minutes' und machte den Song in den USA zum heimlichen Klassiker.",
+        "Eine treibende Hookline über einer fließenden Gitarrenlinie, eingespielt mit dem Schlagzeuger, der 1989 bei einem Motorradunfall ums Leben kam.",
+        "Seal coverte den Song mit dem Reggae-Sänger Mikey Dread für den Soundtrack des Films '50 First Dates' (2004) – einer der bekanntesten Coversongs der Liverpooler Band."
+      ],
+      "lyrics": {
+        "real": [
+          "She floats like a swan, grace on the water",
+          "Lips like sugar, sugar kisses",
+          "She'll be my mirror, reflect what I am"
+        ],
+        "fake": "I kissed the moonlight through the silver rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9hGcJA8fXvU",
+        "spotify": "https://open.spotify.com/track/5uyK1WM8qe14n70kvh3IUM",
+        "amazonMusic": "https://music.amazon.com/albums/B001229GRS?trackAsin=B001227JZ4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/echo---the-bunnymen-lips-like-sugar.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lips_Like_Sugar",
+        "https://en.wikipedia.org/wiki/Echo_%26_the_Bunnymen_(album)",
+        "https://en.wikipedia.org/wiki/Lips_Like_Sugar",
+        "https://en.wikipedia.org/wiki/Echo_%26_the_Bunnymen",
+        "https://www.songfacts.com/facts/echo-the-bunnymen/lips-like-sugar"
+      ]
+    },
+    {
+      "id": "yt-LWz0JC7afNQ",
+      "title": "The Killing Moon",
+      "artist": "Echo & The Bunnymen",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Post-Punk / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Indie & Alternative",
+        "Dark",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Ein kammersinfonischer Track mit orchestralen Streichern, der bis heute als eine der schönsten Hymnen des britischen Post-Punk gilt.",
+        "Ian McCulloch schrieb den Text angeblich in einer einzigen Nacht – er wachte mit der Zeile 'Fate up against your will' auf, ohne vorher darüber nachgedacht zu haben.",
+        "Lead-Single des vierten Studioalbums der Liverpooler Band, das im Mai 1984 auf dem Korova-Label erschien und auf Platz 4 der UK-Album-Charts kletterte.",
+        "Der Song eröffnet Richard Kellys Mystery-Film 'Donnie Darko' aus dem Jahr 2001 – ein Eckpfeiler des alternativen Filmsounds der frühen 2000er.",
+        "Die US-Indie-Band Pavement coverte das Stück 1997 für eine BBC-Session – die Aufnahme landete später auf dem Major-Leagues-EP und gilt als einer der bekanntesten Post-Punk-Cover der 90er."
+      ],
+      "lyrics": {
+        "real": [
+          "Under blue moon I saw you, so soon you'll take me",
+          "Fate, up against your will, through the thick and thin",
+          "In starlit nights I saw you, so cruelly you kissed me"
+        ],
+        "fake": "Your heart was a lantern, burning out in my hands"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LWz0JC7afNQ",
+        "spotify": "https://open.spotify.com/track/0cOf4csnt4DeXSkFmBjULw",
+        "amazonMusic": "https://music.amazon.com/tracks/B09SM3KNYF"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/echo---the-bunnymen-the-killing-moon.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Killing_Moon",
+        "https://en.wikipedia.org/wiki/The_Killing_Moon",
+        "https://en.wikipedia.org/wiki/Ocean_Rain",
+        "https://en.wikipedia.org/wiki/Donnie_Darko",
+        "https://en.wikipedia.org/wiki/The_Killing_Moon"
+      ]
+    },
+    {
+      "id": "yt-hJWSZDJb-W4",
+      "title": "Bad Habits",
+      "artist": "Ed Sheeran",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems",
+        "Dance Floor",
+        "Energy"
+      ],
+      "hints": [
+        "Der Track wurde am 25. Juni 2021 als Lead-Single des fünften Studioalbums eines britischen Singer-Songwriters veröffentlicht; die Plattenfirma ist eine Tochter von Warner Music.",
+        "Im offiziellen Musikvideo tritt der Interpret als Vampir auf, der nachts durch eine Großstadt zieht; Regie führte der US-Amerikaner Dave Meyers, der zuvor für ähnliche Großproduktionen verantwortlich zeichnete.",
+        "Co-Produzent war der britische Dance-Produzent Fred Again, dessen pulsierende Synth-Loops dem Song seinen charakteristischen treibenden Sound verliehen – das Stück markierte die Rückkehr des Sängers nach vier Jahren Pause ohne Album.",
+        "Der Refrain beginnt mit einem zweimaligen englischen Schuldeingeständnis: 'My bad…' – gefolgt von einem Hauptwort, das Verhaltensmuster beschreibt und gleichzeitig als Albumtitel eines Konzeptwerks dient.",
+        "Die zentrale Textzeile 'My bad … lead to late nights endin' alone, conversations with a stranger I barely know' beschreibt ungesunde nächtliche Routinen – der dazugehörige Ohrwurm erreichte in Großbritannien Platz eins und stand monatelang in den internationalen Top 10."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bad_Habits_(Ed_Sheeran_song)",
+        "https://en.wikipedia.org/wiki/%3D_(album)",
+        "https://en.wikipedia.org/wiki/Ed_Sheeran",
+        "https://en.wikipedia.org/wiki/Fred_Again",
+        "https://en.wikipedia.org/wiki/Dave_Meyers_(director)"
+      ],
+      "lyrics": {
+        "real": [
+          "My bad habits lead to late nights endin' alone",
+          "Every time you come around, you know I can't say no",
+          "Conversations with a stranger I barely know"
+        ],
+        "fake": "I wake up in the morning with a stranger's name on my lips"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hJWSZDJb-W4",
+        "spotify": "https://open.spotify.com/track/6PQ88X9TkUIAUIZJHW2upE",
+        "amazonMusic": "https://music.amazon.com/tracks/B09CKWVXVQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ed-sheeran-bad-habits.jpg"
+    },
+    {
+      "id": "ed-sheeran-shape-of-you-2017",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Catchy",
+        "Dance Floor",
+        "Groovy",
+        "Happy",
+        "Popular",
+        "Road Trip",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Der Song wurde am 6. Januar 2017 als Doppel-Auskopplung mit 'Castle on the Hill' veröffentlicht und stammt vom dritten Studioalbum des britischen Singer-Songwriters.",
+        "Co-Produzent Steve Mac startete die Session am Keyboard, während der Co-Autor mit Percussion auf der Gitarre einfing – ein marimbaartiger Loop entstand.",
+        "Wegen einer melodischen Anleihe beim 90er-Hit 'No Scrubs' von TLC sind auch dessen Autorinnen als Songschreiberinnen mit aufgeführt – ein Vergleich beendete das Verfahren.",
+        "Die tropisch-marimbaartige Hookline, eine moderne Pop-Produktion und die charismatische Stimme des Briten katapultierten den Titel auf Platz eins der Charts in dutzenden Ländern.",
+        "Im Refrain gesteht ein Sänger: 'I'm in love with the…' – auf Deutsch sinngemäß: 'Ich bin verliebt in deine Körperform' – und genau dieser geometrische Begriff steht im Songtitel."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Shape_of_You",
+        "https://en.wikipedia.org/wiki/%C3%B7_(album)",
+        "https://en.wikipedia.org/wiki/Ed_Sheeran",
+        "https://en.wikipedia.org/wiki/Steve_Mac",
+        "https://en.wikipedia.org/wiki/Johnny_McDaid"
+      ],
+      "lyrics": {
+        "real": [
+          "The club isn't the best place to find a lover, so the bar is where I go",
+          "I'm in love with the shape of you, we push and pull like a magnet do",
+          "Every day discovering something brand new"
+        ],
+        "fake": "We walked for hours through the city streets"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+        "spotify": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
+        "amazonMusic": "https://music.amazon.com/tracks/B01N214BDK"
+      },
+      "coverUrl": "/covers/ed-sheeran-shape-of-you-2017.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "finale-ed-shivers",
+      "title": "Shivers",
+      "artist": "Ed Sheeran",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Pop / Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Der Song erschien am 10. September 2021 als zweite Single des fünften Studioalbums des britischen Singer-Songwriters – direkt nach dem Hit 'Bad Habits'.",
+        "Mitproduzent Steve Mac und der britische Produzent Fred Again steuerten Dance-Pop-Beats bei, die den Song international an die Chartspitze in Großbritannien, Irland und Deutschland hievten.",
+        "Im offiziellen Video trifft der Brite die US-Schauspielerin AnnaSophia Robb in einem Diner und durchlebt mit ihr Fantasie-Sequenzen – Regie führte wie schon beim Vorgänger 'Bad Habits' Dave Meyers.",
+        "Der Refrain zelebriert eine heiße Romanze mit Schmetterlingen im Bauch: 'Ooh, I love it when you do it like that and when you're closer, give me the…'",
+        "Die emotionale Kernaussage des Refrains lautet sinngemäß: 'Du machst mich…' – ein englisches Wort für das, was bei Gänsehaut passiert."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Shivers_(Ed_Sheeran_song)",
+        "https://en.wikipedia.org/wiki/=_(album)",
+        "https://en.wikipedia.org/wiki/Ed_Sheeran",
+        "https://www.officialcharts.com/songs/ed-sheeran-shivers/",
+        "https://en.wikipedia.org/wiki/Fred_Again"
+      ],
+      "lyrics": {
+        "real": [
+          "I took a arrow to the heart, I never kissed a mouth that tastes like yours",
+          "Strawberries and somethin' more",
+          "Ooh, I love it when you do it like that"
+        ],
+        "fake": "Cold coffee and a diner booth and I am running out of words"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Il0S8BoucSA",
+        "spotify": "https://open.spotify.com/track/6bQfNiqyCX7UaQSvVVGo4I",
+        "amazonMusic": "https://music.amazon.com/tracks/B09DT8MPKF"
+      },
+      "coverUrl": "/covers/finale-ed-shivers.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-Qfp0msG77bA",
+      "title": "Ocean Drive Boulevard (Original Mix)",
+      "artist": "Eddie Thoneick",
+      "year": 2007,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Energy",
+        "Night Drive"
+      ],
+      "hints": [
+        "Der Instrumental-Titel wurde als Teil des Albums 'Pictures' auf dem niederländischen 2-Play-Label in Zusammenarbeit mit Spinnin' Records veröffentlicht – der Komponist stammt aus der niederländischen Provinz.",
+        "Im Frühjahr 2008 wurde der Track live bei der großen 'Armin Only'-Show in der Jaarbeurs Utrecht vor tausenden Fans aufgelegt – ein Ritterschlag für den damaligen Aufsteiger.",
+        "Die Produktion folgt dem klassischen Vocal-Trance-Schema der späten 2000er – treibende 138-BPM-Kicks, schwebende Pads und eine markante, sich stetig steigernde Synth-Hookline.",
+        "Das siebeneinhalbminütige Stück enthält weder Vocals noch Samples, sondern besteht ausschließlich aus Synthesizern, Basslines und einer orchestral anmutenden Bridge im Mittelteil.",
+        "Der Refrain setzt auf eine zweistimmige Synth-Fläche, die sich langsam nach oben schraubt und in einem ekstatischen Ausklang mündet – der Track avancierte zu einem der meistgespielten Trance-Hits der späten 2000er und wurde in dutzenden Compilations und DJ-Sets gefeatured."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Leon_Bolier",
+        "https://de.wikipedia.org/wiki/Leon_Bolier",
+        "https://en.wikipedia.org/wiki/Pictures_(Leon_Bolier_album)",
+        "https://en.wikipedia.org/wiki/Spinnin%27_Records",
+        "https://en.wikipedia.org/wiki/Armin_van_Buuren"
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Trance)",
+          "Euphoric synth pads building slowly",
+          "Driving 138-BPM climax"
+        ],
+        "fake": "Vocal chants fade into the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Qfp0msG77bA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/eddie-thoneick-ocean-drive-boulevard-original-mix.jpg"
+    },
+    {
+      "id": "yt-YSUYbiOe0-k",
+      "title": "Sapequinha (Videoclipe)",
+      "artist": "Eduardo Costa",
+      "year": 2016,
+      "country": "BR",
+      "genre": "Sertanejo",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Happy",
+        "Dance"
+      ],
+      "hints": [
+        "Der Track wurde am 10. Juli 2015 als erste Singleauskopplung aus dem brasilianischen Sertanejo-Album 'Vivendo e Aprendendo' eines beliebten brasilianischen Sängers veröffentlicht.",
+        "Die Komposition kombiniert typische Sertanejo-Instrumente – Akustikgitarre, Akkordeon und Caipira-Percussion – mit einer eingängigen animierten Hookline und erreichte im August 2015 Platz eins der Billboard Brasil Hot 100 Airplay.",
+        "Im Text geht es um eine spielerische brasilianische Naturmetapher – ein kleines Amphib fällt in den See des Sängers, der daraufhin zum Kaiman wird.",
+        "Der Refrain wiederholt eine typische Caipira-Refrainfigur mit den Worten 'Pensa num trem doido que é gostoso' – und mündet in einem neckischen Wortspiel um 'heute bin ich ein Kaiman'.",
+        "Die zentrale Textzeile 'Se essa … cair na minha lagoa, hoje eu sou jacaré' beschreibt eine neckische Liebeserklärung – das mehrsilbige portugiesische Hauptwort im Titel ist eine Verkleinerungsform mit spielerischer Bedeutung."
+      ],
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Sapequinha",
+        "https://en.wikipedia.org/wiki/Eduardo_Costa",
+        "https://en.wikipedia.org/wiki/Sertanejo_music",
+        "https://www.letras.mus.br/eduardo-costa/sapequinha/",
+        "https://music.apple.com/br/album/vivendo-e-aprendendo/1019820353"
+      ],
+      "lyrics": {
+        "real": [
+          "Pensa num trem doido que é gostoso",
+          "Hoje não tem choro, nem migué",
+          "Se essa sapequinha cair na minha lagoa"
+        ],
+        "fake": "De madrugada eu pego a viola e vou cantar na roça"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YSUYbiOe0-k",
+        "spotify": "https://open.spotify.com/track/1o2NMgTejI2XkR5vzuULNI",
+        "amazonMusic": "https://music.amazon.com/tracks/B011EDBRWQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/eduardo-costa-sapequinha--videoclipe-.jpg"
+    },
+    {
+      "id": "class-grieg-mountain",
+      "title": "In the Hall of the Mountain King",
+      "artist": "Edvard Grieg",
+      "year": 1875,
+      "country": "NO",
+      "genre": "Romantic / Suite",
+      "difficulty": "medium",
+      "mood": [
+        "Tense",
+        "Fast",
+        "Aggressive",
+        "Dramatic"
+      ],
+      "hints": [
+        "Das Werk wurde 1875 vom führenden norwegischen Komponisten der Romantik als Bühnenmusik zu Henrik Ibsens dramatischem Versepos 'Peer Gynt' komponiert und erschien später als vierter Satz der 'Peer-Gynt-Suite Nr. 1', op. 46.",
+        "Im dritten Akt des Ibsen-Stücks wird der Titelheld Peer vom Trollkönig in die unterirdischen Felshöhlen gelockt – die Szene verlangt eine stetig schneller und lauter werdende Orchestermusik.",
+        "Berühmte Einspielungen existieren u.a. von Karajan mit den Berliner Philharmonikern, von Bernstein mit den New Yorkern sowie unzähligen weiteren Orchestern weltweit.",
+        "Das Stück wird bis heute in unzähligen Cartoons, Filmen und Werbespots als komödiantischer Spannungsverstärker eingesetzt – etwa in 'Die Muppet Show' (1979) oder in zahlreichen Animationsfilmen.",
+        "Das Hauptthema beginnt leise im Pianissimo in den tiefen Streichern und Bässen und steigert sich über wenige Minuten zum ekstatischen Forte – ein dramatisches Crescendo, das jeder Hörer sofort wiedererkennt."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/In_the_Hall_of_the_Mountain_King",
+        "https://en.wikipedia.org/wiki/Peer_Gynt_(Grieg)",
+        "https://en.wikipedia.org/wiki/Edvard_Grieg",
+        "https://en.wikipedia.org/wiki/Herbert_von_Karajan",
+        "https://en.wikipedia.org/wiki/Peer_Gynt"
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Suite)",
+          "Slagt ham! Kristenmands søn har dåret Dovregubbens veneste mø!",
+          "Slagt ham! Slagt ham!"
+        ],
+        "fake": "Peer runs through the forest in the dark of night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GXTgLvL9un4",
+        "spotify": "https://open.spotify.com/track/5EoVSMIVYqF4gOsQ9jn3JR",
+        "amazonMusic": "https://music.amazon.com/tracks/B0GHPW4MG4"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/class-grieg-mountain.jpg"
+    },
+    {
+      "id": "dance-eiffel-65-blue",
+      "title": "Blue (Da Ba Dee)",
+      "artist": "Eiffel 65",
+      "year": 1998,
+      "country": "IT",
+      "genre": "Italo Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Electronic",
+        "Catchy"
+      ],
+      "hints": [
+        "Der Track wurde im Oktober 1998 in Italien als Lead-Single des 'Europop'-Albums veröffentlicht und ist einer der meistverkauften Eurodance-Tracks aller Zeiten.",
+        "Das computergenerierte Musikvideo zeigt eine außerirdische Lebensform auf einem Planeten, dessen Farbschema vollständig dem Titelkonzept folgt – komplett monochrom in einer einzigen Grundfarbe.",
+        "Komponiert wurde der Track von Sänger Jeffrey Jey, Keyboarder Maurizio Lobina und Produzent Massimo Gabutti – alle drei bilden das Kern-Trio der Gruppe.",
+        "In mindestens 18 Ländern erreichte der Song die Chartspitze, in den USA immerhin Platz 6 der Billboard Hot 100 – ein für ein italienisches Dance-Projekt außergewöhnlicher Erfolg.",
+        "Der Refrain besteht fast ausschließlich aus der gleichen Phrase: 'I'm…' – gefolgt von einer englischen Farbbezeichnung und einer 'Da-ba-dee'-Silbenkette, die nahtlos in die nächste Runde überleitet."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Blue_(Da_Ba_Dee)",
+        "https://en.wikipedia.org/wiki/Europop_(album)",
+        "https://en.wikipedia.org/wiki/Eiffel_65",
+        "https://en.wikipedia.org/wiki/Gabry_Ponte",
+        "https://de.wikipedia.org/wiki/Blue_(Da_Ba_Dee)"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm blue, da ba dee da ba di, da ba dee da ba di, da ba dee da ba di",
+          "I have a blue house with a blue window, blue is the color of all that I wear",
+          "Blue are the streets and all the trees are too"
+        ],
+        "fake": "Dancing in the sky, where the birds learn to fly, so high"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=68ugkg9RePc",
+        "spotify": "https://open.spotify.com/track/4GewRLEiI4BDTQsoH8BRVV",
+        "amazonMusic": "https://music.amazon.com/tracks/B08QW67S2T"
+      },
+      "coverUrl": "/covers/dance-eiffel-65-blue.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-zQ6HBbyJR34",
+      "title": "Move Your Body (D.J.Gabry Ponte Original Radio Edit)",
+      "artist": "Eiffel 65",
+      "year": 1999,
+      "country": "IT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Der Titel erschien am 4. November 1999 als dritte Single des 'Europop'-Albums der italienischen Dance-Gruppe und wurde weltweit ein Top-10-Hit.",
+        "Mitproduzenten waren Keyboarder Maurizio Lobina und DJ Roberto Molinaro – alle Aufnahmen entstanden in den Studios der Mailänder Plattenfirma Bliss Corporation.",
+        "Der Refrain setzt sich aus einer simplen imperativischen Aufforderung zusammen, gefolgt vom englischen Wort für 'alle' – dieser Sechs-Sekunden-Hook wiederholt sich dutzende Male.",
+        "Der Song ist eine reine Studio-Konstruktion mit starken Synth-Elementen und einem treibenden 130-BPM-Beat – bewusst auf kommerzielle Club-Tauglichkeit und kompakte Spielzeit optimiert.",
+        "Die zentrale Botschaft des Songs ist eine simple englische Aufforderung an die Tanzfläche – 'Bewege deinen Körper!' – und die meisten Hörer tun es instinktiv."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Move_Your_Body_(Eiffel_65_song)",
+        "https://en.wikipedia.org/wiki/Europop_(album)",
+        "https://en.wikipedia.org/wiki/Eiffel_65",
+        "https://en.wikipedia.org/wiki/Gabry_Ponte",
+        "https://de.wikipedia.org/wiki/Gabry_Ponte"
+      ],
+      "lyrics": {
+        "real": [
+          "Move your body, move your body, everybody come on now everybody",
+          "You want to move the world, start with your body",
+          "If you wanna move your mind, just move your body"
+        ],
+        "fake": "Dancing through the midnight hours until the morning light arrives"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zQ6HBbyJR34",
+        "spotify": "https://open.spotify.com/track/6wPqK0huNYjdSQ5wqRCLvO",
+        "amazonMusic": "https://music.amazon.com/tracks/B08QW893FW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/eiffel-65-move-your-body--d-j-gabry-ponte-original-radio-edit-.jpg"
+    },
+    {
+      "id": "yt-4H2bYIEAFsU",
+      "title": "Yü-gung (Fütter mein ego)",
+      "artist": "Einstürzende Neubauten",
+      "year": 1985,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave",
+        "Dark",
+        "Experimental"
+      ],
+      "hints": [
+        "Der Track erschien im September 1985 auf dem dritten Studioalbum einer legendären deutschen Industrial-Band aus West-Berlin, die seit 1980 das Genre mitprägt und mit selbstgebauten Instrumenten experimentiert.",
+        "Die siebenminütige Komposition verbindet klassische Industrial-Klangexperimente – Metall, Schrott, Lärm – mit einem tanzbaren elektronischen Beat und brach so mit der reinen Geräusch-Ästhetik der frühen Bandphase.",
+        "Im Text geht es um die Einnahme von Aufputschmitteln und die damit verbundene Euphorie, Paranoia und Größenwahn – die englische Übersetzung des Refrain-Hakens lautet in etwa 'feed my ego'.",
+        "Der Hauptteil des Songs besteht aus einer repetitiven dreigliedrigen deutschen Phrase – ständig wiederholt, mal flüsternd, mal aggressiv skandiert, mit einer einzelnen englischen Vokabel als Abschluss.",
+        "Das Stück wurde in der britischen Some-Bizzare-Records-Edition des Albums veröffentlicht, die in Deutschland über das Label 'What's So Funny About' erschien – die meisten Hörer erkennen die Stelle, in der der Sänger ausruft, 'sechs', 'neun' und 'zwölf' Meter groß zu sein."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Halber_Mensch",
+        "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+        "https://de.wikipedia.org/wiki/%C2%BD_Mensch",
+        "https://genius.com/Einsturzende-neubauten-yu-gung-futter-mein-ego-lyrics",
+        "https://www.discogs.com/release/502732-Einst%C3%BCrzende-Neubauten-Halber-Mensch"
+      ],
+      "lyrics": {
+        "real": [
+          "Ich bin das ganze chinesische Volk",
+          "Yü-Gung kann Berge versetzen",
+          "Russische Vitamine"
+        ],
+        "fake": "Berlin brennt und die Nacht ist kalt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4H2bYIEAFsU",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/albums/B07J47RFLF?trackAsin=B07J568FZV"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Indie & Alternative",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/einstürzende-neubauten-yü-gung--fütter-mein-ego-.jpg"
+    },
+    {
+      "id": "yt-cBhYqbDtjrQ",
+      "title": "Banda De Camion (NUEVO 2016)",
+      "artist": "El Alfa El Jefe",
+      "year": 2016,
+      "country": "DO",
+      "genre": "Dembow",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Party",
+        "Street"
+      ],
+      "hints": [
+        "Der Track wurde in Santo Domingo als Single des dortigen 'Königs des Dembow' veröffentlicht, der in Bajos de Haina aufwuchs – die Aufnahme gilt als Durchbruch des TrapBow-Genres, einer Mischung aus Dembow und amerikanischem Trap.",
+        "Das Stück wurde gemeinsam mit Produzent Chael eingespielt und avancierte in der Dominikanischen Republik und in Puerto Rico zu einem der meistgespielten urbanen Hits des Jahres.",
+        "Der Refrain besteht aus einer Wortspiel-Kette: '…de bicicleta? No. …de carro? No. …de avioneta? No. …de barco? No. …' – gefolgt von der Auflösung mit einem mehrsilbigen spanischen Hauptwort, das die Antwort bildet.",
+        "Im offiziellen Videoclip posiert der Interpret in urbanen Szenen der Dominikanischen Republik; das Video wurde auf dem offiziellen YouTube-Kanal des Künstlers hochgeladen und erreichte hunderte Millionen Aufrufe.",
+        "Die zentrale Refrainphrase 'A mí hay que darme … de …' ist bis heute einer der meistzitierten Sätze der lateinamerikanischen Dembow-Szene und wurde in zahlreichen Remixen und TikTok-Trends aufgegriffen."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/El_Alfa",
+        "https://en.wikipedia.org/wiki/Dembow_beat",
+        "https://en.wikipedia.org/wiki/Chael_Produciendo",
+        "https://music.apple.com/es/song/banda-de-cami%C3%B3n/1695676557",
+        "https://www.musixmatch.com/lyrics/El-Alfa/Banda-de-Camion/translation/english"
+      ],
+      "lyrics": {
+        "real": [
+          "A mí hay que darme banda de camión",
+          "Tú no te busca' cualto ni con la ubicación po'l GPS",
+          "La mujere' mueven la nalga' como Shakira"
+        ],
+        "fake": "Dembow pa'l mundo entero hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cBhYqbDtjrQ",
+        "spotify": "https://open.spotify.com/track/5LBt5wnLq6q1OM7isIcdJT",
+        "amazonMusic": "https://music.amazon.com/tracks/B08CXYW5GD"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Hip Hop Essentials",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/el-alfa-el-jefe-banda-de-camion--nuevo-2016-.jpg"
+    }
+  ]
+}

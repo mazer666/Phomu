@@ -1,0 +1,737 @@
+{
+  "songs": [
+    {
+      "id": "world-shaggy-itwasntme",
+      "title": "It Wasn't Me",
+      "artist": "Shaggy ft. Rikrok",
+      "year": 2000,
+      "country": "JM",
+      "genre": "Reggae Fusion",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Am 7. November 2000 erschien der Track als erste Auskopplung des fünften Albums des in Jamaica geborenen Reggae-Künstlers.",
+        "Der Gastbeitrag stammt von einem britisch-jamaikanischen Rapper, der im Refrain den ertappten Freund mimt.",
+        "Produzent war Shaun 'Sting' Pizzonia, aufgenommen wurde im Ranch-Studio von Valley Stream im US-Bundesstaat New York.",
+        "Am 3. Februar 2001 stieg der Song auf Platz eins der US-Singlecharts und verdrängte dort 'Independent Women Part I'.",
+        "In Großbritannien war er das meistverkaufte Lied des Jahres 2001."
+      ],
+      "lyrics": {
+        "real": [
+          "But she caught me on the counter (It wasn't me)",
+          "I even had her in the shower (It wasn't me)",
+          "Honey came in and she caught me red-handed"
+        ],
+        "fake": "Lime and rum on the veranda while the bassline rolls tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2g5Hz17C4is",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-shaggy-itwasntme.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/It_Wasn%27t_Me",
+        "https://en.wikipedia.org/wiki/Hot_Shot_(Shaggy_album)",
+        "https://www.songfacts.com/facts/shaggy/it-wasnt-me",
+        "https://api.lyrics.ovh/v1/Shaggy/It%20Wasn%27t_Me",
+        "https://itunes.apple.com/search?term=Shaggy+It+Wasn%27t+Me&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "yt-MntbN1DdEP0",
+      "title": "Addicted to You",
+      "artist": "Shakira",
+      "year": 2012,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Weil sie den Merengue ihrer Kindheit vermisste, reiste die kolumbianische Sängerin nach Santo Domingo und sang im winzigen Studio des dominikanischen Produzenten El Cata.",
+        "Geschrieben haben den Song die Sängerin selbst, El Cata, John Hill und Luis Fernando Ochoa.",
+        "Die Single erschien am 13. März 2012 als fünfte und letzte Auskopplung des Albums 'Sale el Sol'.",
+        "In Mexiko führte der Track die Monitor-Latino-Liste an und wurde mit Platin ausgezeichnet, in den US-Charts erreichte er Platz neun der Hot Latin Songs.",
+        "Das Musikvideo von Anthony Mandler wurde mit über 100 Millionen Aufrufen Vevo-zertifiziert."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm addicted to you, porque es un vicio tu piel",
+          "Debe ser el perfume que usas",
+          "Esa areta verdosa"
+        ],
+        "fake": "Baby, I am dancing on the ocean floor with you tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MntbN1DdEP0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-addicted-to-you.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Addicted_to_You_(Shakira_song)",
+        "https://en.wikipedia.org/wiki/Sale_el_Sol",
+        "https://api.lyrics.ovh/v1/Shakira/Addicted%20to%20You",
+        "https://itunes.apple.com/search?term=Shakira+Addicted+to+You&limit=1&entity=song",
+        "https://music.apple.com/us/album/addicted-to-you/888878323?i=888878390"
+      ]
+    },
+    {
+      "id": "yt-pWgVRK_Ggww",
+      "title": "Antología",
+      "artist": "Shakira",
+      "year": 1997,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ballade entstand 1995 in den Studios Sonido Azulado in Bogotá und Ocean V.U. in Miami und erschien am 8. Januar 1997 als fünfte Single des Albums 'Pies Descalzos'.",
+        "Geschrieben und produziert wurde sie von der Sängerin gemeinsam mit Luis Fernando Ochoa, die Laufzeit beträgt 4:18 Minuten.",
+        "Der Text dankt dem ersten großen Liebespartner der Sängerin und zählt auf, was er ihr alles beigebracht hat.",
+        "Ein eigenes Musikvideo entstand nie, der offizielle YouTube-Clip ist ein Konzertmitschnitt vom Dezember 2006 aus Miami.",
+        "Die kolumbianische Sängerin zählt die Ballade bis heute zu ihren schönsten Liedern."
+      ],
+      "lyrics": {
+        "real": [
+          "Para amarte necesito una razon",
+          "Y aprendi a quitarle al tiempo los segundos",
+          "Y fue por ti que descubri lo que es amar"
+        ],
+        "fake": "Cada noche cuando me quedo sola sueño con la playa y el mar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pWgVRK_Ggww",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/shakira-antología--official-live-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Antolog%C3%ADa_(song)",
+        "https://en.wikipedia.org/wiki/Pies_Descalzos",
+        "https://api.lyrics.ovh/v1/Shakira/Antolog%C3%ADa",
+        "https://itunes.apple.com/search?term=Shakira+Antolog%C3%ADa&limit=1&entity=song",
+        "https://music.apple.com/us/album/antolog%C3%ADa/193662156?i=193662184"
+      ]
+    },
+    {
+      "id": "yt-B3gbisdtJnA",
+      "title": "Ciega, Sordomuda",
+      "artist": "Shakira",
+      "year": 1998,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Pop-Rock-Track mit Mariachi-Trompeten entstand in den Crescent Moon Studios in Miami und dauert 4:28 Minuten.",
+        "Gemeinsam mit dem kolumbianischen Musiker Estéfano komponierte die Sängerin den Song, produziert wurde er von ihr und Lester Méndez.",
+        "Als Führersingle erschien er am 7. September 1998 auf dem Album 'Dónde Están los Ladrones?'.",
+        "Das Video inszenierte Gustavo Garzón in Los Angeles und zeigt das Paar auf der Flucht vor Polizeirobotern.",
+        "2000 erhielt der Song einen BMI Latin Award, 1999 war er für den Pop-Song des Jahres bei den Lo Nuestro Awards nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Bruta, ciega, sordomuda",
+          "Torpe, traste y testaruda",
+          "Se me acaba el argumento y la metodología"
+        ],
+        "fake": "Cada mañana te preparo el desayuno y te espero en la puerta"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=B3gbisdtJnA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/shakira-ciega--sordomuda--official-hd-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ciega,_Sordomuda",
+        "https://en.wikipedia.org/wiki/D%C3%B3nde_Est%C3%A1n_los_Ladrones%3F",
+        "https://api.lyrics.ovh/v1/Shakira/Ciega%2C%20Sordomuda",
+        "https://itunes.apple.com/search?term=Shakira+Ciega+Sordomuda&limit=1&entity=song",
+        "https://music.apple.com/us/album/ciega-sordomuda/192682818?i=192682831"
+      ]
+    },
+    {
+      "id": "yt-NmJHH026X0c",
+      "title": "Estoy Aquí",
+      "artist": "Shakira",
+      "year": 1995,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Latin-House-Track mit markanter Gitarre entstand 1995 in Bogotá und Miami und dauert 3:55 Minuten.",
+        "Die Sängerin schrieb den Text gemeinsam mit ihrem Produzenten Luis Fernando Ochoa, der auch die Musik komponierte.",
+        "Am 29. August 1995 erschien er als Leit-Single des Albums 'Pies Descalzos'.",
+        "Das Video zeigt die Sängerin mit Gitarre in einer Scheune, es war ihr erstes offizielles Musikvideo.",
+        "Der Song wurde zu ihrem ersten internationalen Erfolg und erreichte in Spanien Platz fünf."
+      ],
+      "lyrics": {
+        "real": [
+          "Lo que nos pasó no repetirá jamás",
+          "Mil años no me alcanzarán",
+          "Para borrarte y olvidar"
+        ],
+        "fake": "Cuando llega la mañana te busco en el portal de la escuela"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NmJHH026X0c",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/shakira-estoy-aquí--official-hd-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Estoy_Aqu%C3%AD",
+        "https://en.wikipedia.org/wiki/Pies_Descalzos",
+        "https://api.lyrics.ovh/v1/Shakira/Estoy%20Aqu%C3%AD",
+        "https://itunes.apple.com/search?term=Shakira+Estoy+Aqu%C3%AD&limit=1&entity=song",
+        "https://music.apple.com/us/album/estoy-aqu%C3%AD/193662156?i=193662167"
+      ]
+    },
+    {
+      "id": "yt-DUT5rEU6pqM",
+      "title": "Hips Don't Lie",
+      "artist": "Shakira ft. Wyclef Jean",
+      "year": 2006,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track mischt den Rhythmus Kawina aus Suriname mit Salsa- und Cumbia-Elementen und wurde 2004 zunächst unter dem Titel 'Dance Like This' aufgenommen.",
+        "Die Single erschien am 28. Februar 2006 auf dem Album 'Oral Fixation, Vol. 2' und ist 3:38 Minuten lang.",
+        "Aufgenommen wurde sie unter anderem in den Criteria Studios in Miami sowie in den Olympic Studios in London.",
+        "Der Song erreichte in 18 Ländern Platz eins und war der erste und einzige US-Nummer-eins-Hit der kolumbianischen Sängerin.",
+        "Das Video von Sophie Muller zeigt die Trachten des Karnevals von Barranquilla und gewann einen MTV-Preis für die beste Choreografie."
+      ],
+      "lyrics": {
+        "real": [
+          "You know my hips don't lie (No fighting)",
+          "She make a man wanna speak Spanish",
+          "All the attraction, the tension"
+        ],
+        "fake": "Every night we dance together until the sunrise comes around"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DUT5rEU6pqM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-hips-don-t-lie--featuring-wyclef-jean---official-4k-video--ft--wyclef-jean.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hips_Don%27t_Lie",
+        "https://en.wikipedia.org/wiki/Oral_Fixation,_Vol._2",
+        "https://www.songfacts.com/facts/shakira/hips-dont-lie",
+        "https://api.lyrics.ovh/v1/Shakira/Hips%20Don%27t%20Lie",
+        "https://itunes.apple.com/search?term=Shakira+Hips+Don%27t+Lie&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "yt-Dsp_8Lm1eSk",
+      "title": "La Tortura",
+      "artist": "Shakira ft. Alejandro Sanz",
+      "year": 2005,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song in den Compass Point Studios auf den Bahamas, das Mixing fand in Miami statt, das Mastering in New York.",
+        "Geschrieben haben den Song die Sängerin und Luis Fernando Ochoa, produziert wurde er von ihr und Lester Mendez; der spanische Gast spielte die kubanische Tres Cubano.",
+        "Die Single erschien am 11. April 2005, das Album 'Fijación Oral, Vol. 1' folgte im Juni desselben Jahres.",
+        "Sie führte 25 Wochen mit Unterbrechungen die US-Charts der Latin-Songs an und kam in Spanien, Ungarn und Venezuela auf Platz eins, in den US-Hot-100 auf Platz 23.",
+        "Der Titel steht für eine schmerzhafte Trennung – 2006 gewann der Song den Latin Grammy für den Song des Jahres."
+      ],
+      "lyrics": {
+        "real": [
+          "No puedo pedirle lo eterno a un simple mortal",
+          "No puedo pedir a los olmos que entreguen peras",
+          "Mejor te guardas todo eso"
+        ],
+        "fake": "Dime que mañana vuelves y que el perdón llega con la luz"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Dsp_8Lm1eSk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-la-tortura-feat-alejandro-sanz-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Tortura",
+        "https://en.wikipedia.org/wiki/Fijaci%C3%B3n_Oral,_Vol._1",
+        "https://api.lyrics.ovh/v1/Shakira/La%20Tortura",
+        "https://itunes.apple.com/search?term=Shakira+La+Tortura&limit=1&entity=song",
+        "https://music.apple.com/us/album/fijaci%C3%B3n-oral-volumen-1-expanded-edition/1817217210?i=1817217220"
+      ]
+    },
+    {
+      "id": "yt-XAhTt60W7qo",
+      "title": "Loca",
+      "artist": "Shakira ft. El Cata",
+      "year": 2010,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track geht auf eine frühere Version des dominikanischen Gastes zurück, geschrieben haben ihn die Sängerin, der Gast und der US-Rapper Pitbull, produziert hat die Sängerin.",
+        "Die spanische Fassung erschien am 10. September 2010 und ist 3:05 Minuten lang, die englische Version mit dem britischen Rapper Dizzee Rascal drei Tage später.",
+        "In Spanien stand die spanische Fassung zwölf Wochen auf Platz eins, insgesamt blieb sie 47 Wochen in den Charts und wurde dort doppelt platin ausgezeichnet.",
+        "Das Video entstand am 19. August 2010 im Barceloneser Viertel La Barceloneta unter der Regie von Jaume de Laiguana und zeigt die Sängerin im goldenen Bikini vor dem Meer.",
+        "Ein US-Richter sprach 2014 der Sängerin und ihrem Label die unrechtmäßige Nutzung des Songs des dominikanischen Komponisten Ramon 'Arias' Vasquez zu, 2015 hob er das Urteil auf, nachdem sich die von Vasquez vorgelegte Aufnahme als gefälscht erwiesen hatte."
+      ],
+      "lyrics": {
+        "real": [
+          "Me dicen que tu novia anda con un rifle",
+          "Yo te llevo al malecón por un caminito",
+          "Mientras ella te complace con todos tus caprichos"
+        ],
+        "fake": "Cuando suene la música baila conmigo y no te escondas"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XAhTt60W7qo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-loca--spanish-version--ft--el-cata.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Loca_(Shakira_song)",
+        "https://www.billboard.com/music/music-news/tale-of-the-tape-judge-rules-shakiras-loca-is-no-copycat-6671424/",
+        "https://www.foxnews.com/entertainment/u-s-judge-dismisses-plagiarism-case-against-shakira-and-her-loca-song",
+        "https://de.wikipedia.org/wiki/Loca_(Lied)",
+        "https://en.wikipedia.org/wiki/Album_(The_Best_of_Shakira)"
+      ]
+    },
+    {
+      "id": "yt-sPTn0QEhxds",
+      "title": "Me Enamoré",
+      "artist": "Shakira",
+      "year": 2017,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Essentials"
+      ],
+      "hints": [
+        "Der Song erzählt von einer Begegnung 2010 am Set des offiziellen WM-Song-Videos, bei der die Sängerin ihren damaligen Partner kennenlernte.",
+        "Das Coverbild ist ein privater Schnappschuss von 2010, auf dem die Sängerin einen Baum umarmt, angekündigt wurde die Single mit Postkarten an die Fans.",
+        "Die Single erschien am 7. April 2017 als zweite Vorab-Auskopplung des elften Albums 'El Dorado' bei Sony Music Latin und ist 3:45 Minuten lang.",
+        "Die Musik komponierte die Sängerin mit Rayito, produziert wurde der Track von ihr, Rayito, den Rudeboyz und A.C.",
+        "Im Video erscheint ihr damaliger Partner, es wurde ihr 21. Vevo-zertifiziertes Video; in den USA erreichte die Single Platz 83 der Hot 100 und Platz 4 der Hot Latin Songs."
+      ],
+      "lyrics": {
+        "real": [
+          "La vida me empezó a cambiar",
+          "Un mojito, dos mojitos",
+          "Lo vi solito y me lancé"
+        ],
+        "fake": "Bailamos hasta el amanecer y el mundo se quedó en silencio"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sPTn0QEhxds",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-me-enamoré.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Me_Enamor%C3%A9_(Shakira_song)",
+        "https://en.wikipedia.org/wiki/El_Dorado_(Shakira_album)",
+        "https://api.lyrics.ovh/v1/Shakira/Me%20Enamor%C3%A9",
+        "https://itunes.apple.com/search?term=Shakira+Me+Enamore&limit=1&entity=song",
+        "https://music.apple.com/us/album/el-dorado/1234665555?i=1234665567"
+      ]
+    },
+    {
+      "id": "yt-_KiRbcvdUCM",
+      "title": "Moscas en la Casa",
+      "artist": "Shakira",
+      "year": 1998,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ballade entstand 1998 in den Crescent Moon Studios in Miami, produziert wurde sie von der Sängerin und Lester Mendez.",
+        "Der Text schildert eine verlassene Wohnung mit Abfall auf dem Boden und Tagen ohne Anfang und Ende, während sie auf seine Rückkehr wartet.",
+        "Die Single erschien am 10. Dezember 1999 als sechste und letzte Auskopplung des Albums 'Dónde Están los Ladrones?'.",
+        "In Kolumbien erreichte sie Platz eins, in Argentinien, Bolivien, Chile, Ecuador und Peru kam sie in die Top 10, in den USA auf Platz 25 der Hot Latin Songs und Platz 10 der Latin-Pop-Liste.",
+        "Der Titel ist eine wörtliche Übersetzung: Wegen der leeren Wohnung voller Fliegen entstand nie ein eigenes Musikvideo, es gibt nur die unplugged-Aufführung von 1999."
+      ],
+      "lyrics": {
+        "real": [
+          "Mis días sin ti son tan oscuros",
+          "Mis días sin ti son como un cielo",
+          "Que siempre repite la misma canción"
+        ],
+        "fake": "Silencio en el pasillo y la radio sigue sonando"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_KiRbcvdUCM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "90s Unplugged",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-moscas-en-la-casa-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Moscas_en_la_Casa",
+        "https://en.wikipedia.org/wiki/D%C3%B3nde_Est%C3%A1n_los_Ladrones%3F",
+        "https://api.lyrics.ovh/v1/Shakira/Moscas%20En%20La%20Casa",
+        "https://itunes.apple.com/search?term=Shakira+Moscas+En+La+Casa&limit=1&entity=song",
+        "https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818?i=192682983"
+      ]
+    },
+    {
+      "id": "yt-WhoPPnDiY5c",
+      "title": "No",
+      "artist": "Shakira ft. Gustavo Cerati",
+      "year": 2005,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ballade entstand in den Henson Recording Studios in Hollywood, die Musik schrieben die Sängerin und Lester Mendez.",
+        "Der argentinische Gast steuerte Gitarre und Backgroundgesang bei und wirkte zusätzlich als Co-Produzent mit.",
+        "Die Single erschien am 2. Juli 2005 als zweite Auskopplung von 'Fijación Oral, Vol. 1' und ist 4:45 Minuten lang.",
+        "In den USA erreichte sie Platz elf der Hot Latin Songs und Platz zwei der Latin Pop Songs, in der Jahresliste der Hot Latin Songs landete sie auf Rang acht.",
+        "Der Clip zeigt die Sängerin in einem stillgelegten Werftgelände in Barcelona, wie sie Schmetterlingsflügel bastelt."
+      ],
+      "lyrics": {
+        "real": [
+          "No, no intentes disculparte",
+          "La retórica es tu arma más letal",
+          "Pesa más la rabia que el cemento"
+        ],
+        "fake": "Cierra la puerta y no mires atrás, mañana empieza de nuevo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WhoPPnDiY5c",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-no--official-hd-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/No_(Shakira_song)",
+        "https://en.wikipedia.org/wiki/Fijaci%C3%B3n_Oral,_Vol._1",
+        "https://api.lyrics.ovh/v1/Shakira/No",
+        "https://itunes.apple.com/search?term=Shakira+No+Gustavo+Cerati&limit=1&entity=song",
+        "https://music.apple.com/us/album/fijaci%C3%B3n-oral-volumen-1-expanded-edition/1817217210?i=1817217224"
+      ]
+    },
+    {
+      "id": "yt-0Z9w8s2l8NM",
+      "title": "Ojos Así",
+      "artist": "Shakira",
+      "year": 1998,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text ist zweisprachig, neben den spanischen Strophen singt ein arabischer Refrainchor im Hintergrund mit.",
+        "Die Sängerin schrieb, komponierte und produzierte den Track gemeinsam mit Pablo Flores und Javier Garza in den Crescent Moon Studios in Miami.",
+        "Der Song erschien 1998 auf dem Album 'Dónde Están los Ladrones?' und wurde erst im Juli 1999 als fünfte Single veröffentlicht.",
+        "Beim ersten Latin Grammy 2000 gewann die Sängerin damit den Preis für den besten weiblichen Pop-Gesang, 2002 erhielt der Song außerdem einen BMI Latin Award.",
+        "Die US-Sängerin Gloria Estefan sang den Song 2001 auf ihrem englischen Debütalbum 'Laundry Service' als 'Eyes Like Yours', das Original erreichte in den USA Platz 22 der Hot Latin Songs."
+      ],
+      "lyrics": {
+        "real": [
+          "Ayer conocí un cielo sin sol",
+          "le pido al cielo sólo un deseo",
+          "fuí desde el norte hasta el polo sur"
+        ],
+        "fake": "Caminé por el desierto contando las estrellas sin dormir"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0Z9w8s2l8NM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-ojos-asi-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ojos_As%C3%AD",
+        "https://en.wikipedia.org/wiki/D%C3%B3nde_Est%C3%A1n_los_Ladrones%3F",
+        "https://api.lyrics.ovh/v1/Shakira/Ojos%20As%C3%AD",
+        "https://itunes.apple.com/search?term=Shakira+Ojos+Asi&limit=1&entity=song",
+        "https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818?i=192683270"
+      ]
+    },
+    {
+      "id": "yt-a5irTX82olg",
+      "title": "Rabiosa (English Version)",
+      "artist": "Shakira ft. Pitbull",
+      "year": 2010,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die kolumbianische Sängerin reiste 2010 nach Santo Domingo, um dort mit einem Merengue-Produzenten in einem winzigen Studio zu arbeiten - dieser Rhythmus fehlte ihr auf den eigenen Platten seit Kindertagen.",
+        "Für die zweite Fassung des Songs rappt ein US-Rapper aus Miami im Wechsel mit der Sängerin, während der Refrain weiterhin auf Spanisch gesungen wird; geschrieben haben das Stück die Sängerin, der Rapper und der Dominikaner, produziert wurde unter anderem von Josh Abraham.",
+        "Das Video inszenierte Jaume de Laiguana als Party in einem Untergrundclub mit Pole-Dance-Szenen; es premiere am 7. Juni 2011 auf der offiziellen Website der Sängerin, wurde zwei Tage später viral und später als 'Vevo Certified' mit über 100 Millionen Aufrufen ausgezeichnet.",
+        "Kritiker lobten den Sound als unwiderstehlichen Merengue-Hybrid: Die Boston Globe nannte die Stimme der Sängerin 'sly and vampy', die Stanford Daily hörte in ihren Vocals 'sultry' und in denen des Rappers 'raspy'.",
+        "Als dritte Single erschien das Lied am 8. April 2011 bei Epic Records; die Fassung mit dem US-Rapper führte in Spanien und Portugal an den Charts, kam in den USA auf Platz 8 der Hot Latin Songs und in zehn weiteren Ländern in die Top 10."
+      ],
+      "lyrics": {
+        "real": [
+          "Oye papi if you like it mocha",
+          "come get a little closer",
+          "and bite me en la boca."
+        ],
+        "fake": "Por la arena de la playa bailando salsa hasta que se va el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=a5irTX82olg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/shakira-rabiosa-feat-pitbull-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rabiosa_(song)",
+        "https://en.wikipedia.org/wiki/Sale_el_Sol",
+        "https://www.songfacts.com/facts/shakira/rabiosa",
+        "https://api.lyrics.ovh/v1/Shakira/Rabiosa%20%28English%20Version%29",
+        "https://itunes.apple.com/search?term=Shakira+Rabiosa+feat+Pitbull&limit=1&entity=song"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "songs": [
+    {
+      "id": "piano-bruno-man",
+      "title": "When I Was Your Man",
+      "artist": "Bruno Mars",
+      "year": 2012,
+      "country": "US",
+      "genre": "Pop / Piano Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
+      "hints": [
+        "Aufnahme in den Studios Levcon in Los Angeles; produziert wurde der Titel vom Smeezingtons-Team.",
+        "Am Text beteiligt waren neben dem Interpreten auch Philip Lawrence, Ari Levine und Andrew Wyatt.",
+        "Der Titel erschien am 3. Dezember 2012 zuerst als Promo-Single und stand auf dem vier Tage später veröffentlichten zweiten Album des Künstlers.",
+        "Das Video zeigt den Interpreten in Sonnenbrille am Klavier mit einem Glas Whiskey; Regie führten Cameron Duddy und er selbst.",
+        "Die Ballade brauchte 16 Wochen, um die US-Charts zu erklimmen, und war dort erst der zweite Number-One-Hit mit Klavier und Stimme allein nach Adele."
+      ],
+      "lyrics": {
+        "real": [
+          "Same bed but it feels just a little bit bigger now",
+          "Our song on the radio but it don't sound the same",
+          "I should've bought you flowers, and held your hand"
+        ],
+        "fake": "I wear your old sweater and it still smells like smoke"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ekzHIouo8Q4",
+        "spotify": "https://open.spotify.com/track/0nJW01T7XtvILxQgC5J7Wh",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-bruno-man.jpg",
+      "packs": [
+        "piano-ballads",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/When_I_Was_Your_Man",
+        "https://en.wikipedia.org/wiki/Unorthodox_Jukebox",
+        "https://en.wikipedia.org/wiki/Bruno_Mars",
+        "https://www.songfacts.com/facts/bruno-mars/when-i-was-your-man",
+        "https://lrclib.net/api/get?artist_name=Bruno%20Mars&track_name=When%20I%20Was%20Your%20Man"
+      ]
+    },
+    {
+      "id": "yt-CuklIb9d3fI",
+      "title": "Permission to Dance",
+      "artist": "BTS",
+      "year": 2021,
+      "country": "KR",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Der Song entstand im Februar 2021, noch vor den Aufnahmen der vorangehenden Single.",
+        "Am Text und an der Produktion waren Ed Sheeran, Johnny McDaid, Steve Mac, Jenna Andrews und Stephen Kirk beteiligt.",
+        "Die Single erschien am 9. Juli 2021 als eigenständige Veröffentlichung und war zugleich auf der CD zur vorangehenden Single enthalten.",
+        "Das Video spielt in einer Wüstenlandschaft, zeigt maskierte Servicekräfte, die zurück an die Arbeit kehren, und erreichte in 24 Stunden 72,3 Millionen Aufrufe.",
+        "In den US-Charts stieg der Titel direkt auf Platz eins ein, löste den eigenen Vorgänger ab und war der fünfte Nummer-eins-Hit der Band innerhalb von zehn Monaten."
+      ],
+      "lyrics": {
+        "real": [
+          "Ain't nothing that can stop how we move, yeah",
+          "Don't need to talk the talk, just walk the walk tonight",
+          "I wanna dance, the music's got me going"
+        ],
+        "fake": "Take my hand, we will never grow old"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CuklIb9d3fI",
+        "spotify": "https://open.spotify.com/track/3XYRV7ZSHqIRDG87DKTtry",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/bts-permission-to-dance.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Permission_to_Dance",
+        "https://en.wikipedia.org/wiki/Butter_(song)",
+        "https://en.wikipedia.org/wiki/BTS",
+        "https://www.songfacts.com/facts/bts/permission-to-dance",
+        "https://lrclib.net/api/get?artist_name=BTS&track_name=Permission%20to%20Dance"
+      ]
+    },
+    {
+      "id": "world-bvsc-chan-chan",
+      "title": "Chan Chan",
+      "artist": "Buena Vista Social Club",
+      "year": 1997,
+      "country": "CU",
+      "genre": "Son Cubano",
+      "difficulty": "medium",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Melancholic"
+      ],
+      "hints": [
+        "Ein kubanischer Komponist schrieb das Stück in den 1980er-Jahren für sich selbst und sang es auch eigenständig.",
+        "Die Sessions dauerten nur sechs Tage, aufgenommen wurde im März 1996 in den EGREM-Studios von Havanna.",
+        "Zwanzig Musiker waren beteiligt, organisiert vom Labelchef Nick Gold und produziert vom US-Gitarristen Ry Cooder.",
+        "Musikalisch ist es ein viersaitiger Son mit den Akkorden Dm, F, Gm und A7; der Text erzählt von zwei Figuren, die Sand aus dem Meer sieben.",
+        "Das Album gewann 1998 den Grammy für das beste traditionelle tropische lateinische Album; in Deutschland erreichte es Platz 1, in den USA Platz 80 der Billboard 200."
+      ],
+      "lyrics": {
+        "real": [
+          "De Alto Cedro voy para Marcané, llego a Cueto voy para Mayarí",
+          "El cariño que te tengo no te lo puedo negar",
+          "Se me sale la babita, yo no lo puedo evitar"
+        ],
+        "fake": "Bajo la luna de Cuba, cantamos con mucha fortuna"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tGbRZ73NvlY",
+        "spotify": "https://open.spotify.com/track/3bxZhauuIU4ubctdRZwPYW",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-bvsc-chan-chan.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "Country, Jazz & Blues",
+        "jazz-blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Buena_Vista_Social_Club",
+        "https://en.wikipedia.org/wiki/Buena_Vista_Social_Club_(album)",
+        "https://en.wikipedia.org/wiki/Compay_Segundo",
+        "https://www.songfacts.com/facts/buena-vista-social-club/chan-chan",
+        "https://lrclib.net/api/get?artist_name=Buena%20Vista%20Social%20Club&track_name=Chan%20Chan"
+      ]
+    },
+    {
+      "id": "hiphop-busta-woohah",
+      "title": "Woo Hah!! Got You All in Check",
+      "artist": "Busta Rhymes",
+      "year": 1996,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Energy",
+        "Crazy",
+        "Fun"
+      ],
+      "hints": [
+        "Aufgenommen wurde im Sommer 1995 in New York; das Sample stammt aus einem Instrumentaltitel von 1968.",
+        "Der Refrain interpoliert eine Zeile aus einem Song der Sugarhill Gang von 1980.",
+        "Teile des Textes stammen aus einem Battle gegen Ol' Dirty Bastard von 1994; die Single erschien 1996 als Debütsingle des Labels Flipmode.",
+        "Das Video inszenierte Hype Williams und wurde bei den MTV Video Music Awards 1996 als 'Breakthrough Video' nominiert.",
+        "Der Song erreichte Platz 8 der US-Charts, kam in Neuseeland und Großbritannien in die Top 10 und war für den Grammy als bester Solo-Rap nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Woo-hah! Got you all in check",
+          "I got that head-nod shit that make you break your neck",
+          "Throw your hands up in the air and never disrespect"
+        ],
+        "fake": "Kick the drum so hard that the whole room starts to shake"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EQzvQO2LcA4",
+        "spotify": "https://open.spotify.com/track/09WxJCWFMWAxTHBLLelpDS",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-busta-woohah.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Woo-Hah!!_Got_You_All_in_Check",
+        "https://en.wikipedia.org/wiki/The_Coming",
+        "https://en.wikipedia.org/wiki/Busta_Rhymes",
+        "https://en.wikipedia.org/wiki/Rampage_(rapper)",
+        "https://lrclib.net/api/get?artist_name=Busta%20Rhymes&track_name=Woo%20Hah!!%20Got%20You%20All%20in%20Check"
+      ]
+    }
+  ]
+}

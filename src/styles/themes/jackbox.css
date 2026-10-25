@@ -1,0 +1,22 @@
+/**
+ * Jackbox Party Theme (Default)
+ * Colorful, bold, fun typography, party arcade feel.
+ * Inspired by Jackbox Games' vibrant party aesthetic.
+ */
+[data-theme='jackbox'] {
+  --color-bg: #1a0a2e;
+  --color-bg-secondary: #2d1b4e;
+  --color-bg-card: #3b2766;
+  --color-text: #ffffff;
+  --color-text-secondary: #c4b5d9;
+  --color-primary: #ff6b35;
+  --color-primary-hover: #ff8c5a;
+  --color-secondary: #f7c948;
+  --color-accent: #e040fb;
+  --color-success: #4caf50;
+  --color-error: #ff5252;
+  --color-border: #5a3d8a;
+  --font-heading: 'system-ui', sans-serif;
+  --font-body: 'system-ui', sans-serif;
+  --radius: 12px;
+}

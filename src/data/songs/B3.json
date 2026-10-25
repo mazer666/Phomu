@@ -1,0 +1,688 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-beastie-fight-right",
+      "title": "(You Gotta) Fight for Your Right (To Party!)",
+      "artist": "Beastie Boys",
+      "year": 1986,
+      "country": "US",
+      "genre": "Rap Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Fun",
+        "Aggressive"
+      ],
+      "hints": [
+        "Die Rock and Roll Hall of Fame würdigte den Song als eines von 500 Liedern, die den Rock geprägt haben.",
+        "Die Band kam 1981 aus New York, wechselte vom Hardcore-Punk zum Rap-Rock; Rick Rubin produzierte den Song.",
+        "Der Song erschien im Dezember 1986 als vierte Single des Debütalbums und erreichte im März 1987 als einziger Top-10-Hit der Band Platz 7 der US-Charts.",
+        "Der Refrain war als Parodie auf Feier-Hymnen der 80er-Jahre gedacht – unfreiwillig wurde der Song selbst zum Festhit.",
+        "Im Video eskaliert eine Hausfeier bei Jugendlichen bis zu einer Tortenschlacht, inszeniert von Ric Menello und Adam Dubin."
+      ],
+      "lyrics": {
+        "real": [
+          "You gotta fight for your right to party!",
+          "Your mom busted in and said WHAT'S THAT NOISE!?!?",
+          "You wake up late for school man you don't wanna go"
+        ],
+        "fake": "In the middle of the night, we're looking for a fight in the neon light"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eBShN8qT4lk",
+        "spotify": "https://open.spotify.com/track/5ODVxUulyknEVXwjDaZpkp",
+        "amazonMusic": "https://music.amazon.com/tracks/B000WDY7A6"
+      },
+      "coverUrl": "/covers/hiphop-beastie-fight-right.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "80s Flashback",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/(You_Gotta)_Fight_for_Your_Right_(To_Party!)",
+        "https://en.wikipedia.org/wiki/Licensed_to_Ill",
+        "https://en.wikipedia.org/wiki/Beastie_Boys",
+        "https://www.songfacts.com/facts/beastie-boys/you-gotta-fight-for-your-right-to-party",
+        "https://api.lyrics.ovh/v1/Beastie%20Boys/Fight%20for%20Your%20Right"
+      ]
+    },
+    {
+      "id": "indie-beck-loser",
+      "title": "Loser",
+      "artist": "Beck",
+      "year": 1993,
+      "country": "US",
+      "genre": "Indie / Slacker Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Modern Hits",
+        "Moody",
+        "Popular",
+        "Strange"
+      ],
+      "hints": [
+        "In rund sechs Stunden entstand der Song – und wurde zum Synonym für die Slacker-Generation der 90er.",
+        "Das Stück mischt Gitarren, Samples und Hip-Hop-Raps; die Texte sind laut Kritik weitgehend nonsensisch.",
+        "Als 12-Zoll-Single im März 1993 auf dem Label Bong Load erschienen, wurde der Song nach dem Erfolg 1994 vom Majorlabel DGC neu veröffentlicht.",
+        "Im April 1994 erreichte der Song Platz 10 der US-Charts und wurde RIAA-Gold mit 600.000 verkauften Exemplaren.",
+        "1994 gewann das Lied die Pazz-&-Jop-Kritikerumfrage des Village Voice; das Video entstand für rund 14.300 Dollar."
+      ],
+      "lyrics": {
+        "real": [
+          "In the time of chimpanzees I was a monkey",
+          "Soy un perdedor, I'm a loser baby, so why don't you kill me?",
+          "Forces of evil on a bozo nightmare"
+        ],
+        "fake": "Coffee in a paper cup and a map I never bother to read"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YgSPaXgAdzE",
+        "spotify": "https://open.spotify.com/track/5NTZM8YYeKM2YsGSffVIge",
+        "amazonMusic": "https://music.amazon.com/tracks/B01MAZK3DU"
+      },
+      "coverUrl": "/covers/indie-beck-loser.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Loser_(Beck_song)",
+        "https://en.wikipedia.org/wiki/Mellow_Gold",
+        "https://en.wikipedia.org/wiki/Beck",
+        "https://www.songfacts.com/facts/beck/loser",
+        "https://api.lyrics.ovh/v1/Beck/Loser"
+      ]
+    },
+    {
+      "id": "yt-TyCjOfZJujg",
+      "title": "Thank You (Not So Bad)",
+      "artist": "VIZE & felix jaehn",
+      "year": 2020,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Der Refrain sampelt die Zeilen eines britischen Pop-Hits von 1999, dessen Original auf dem Debütalbum 'No Angel' erschien.",
+        "Einer der beiden Künstler ist ein Hamburger DJ, der 2015 mit dem Remix eines Karibik-Hits die US-Charts anführte.",
+        "Der Track erschien 2020 als Single und später auf dem Album 'BREATHE' des Produzenten.",
+        "Der Text kehrt die Melancholie des Originals ins Positive: 'It reminds me that it's not so bad'.",
+        "Der Hook wiederholt am Ende nur noch 'Bad, bad, bad' – mehr braucht der Refrain des Dance-Tracks nicht."
+      ],
+      "lyrics": {
+        "real": [
+          "My tea's gone cold, I'm wondering why I",
+          "It reminds me that it's not so bad",
+          "Not so bad, not so bad"
+        ],
+        "fake": "We are burning up the dancefloor tonight, chasing all the neon lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TyCjOfZJujg",
+        "spotify": "https://open.spotify.com/track/4AqN8IdKCfItCSbuaFch81",
+        "amazonMusic": "https://music.amazon.com/tracks/B084F115W7"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/becky-hill---david-guetta-thank-you--not-so-bad-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Felix_Jaehn",
+        "https://en.wikipedia.org/wiki/No_Angel",
+        "https://music.apple.com/us/album/thank-you-not-so-bad/1496622671?i=1496622676",
+        "https://open.spotify.com/track/4AqN8IdKCfItCSbuaFch81",
+        "https://musicbrainz.org/ws/2/release/e15d6b6f-f39f-405f-a8e1-d83e6ff4ee18?fmt=json"
+      ]
+    },
+    {
+      "id": "movie-snf-night-fever",
+      "title": "Night Fever",
+      "artist": "Bee Gees",
+      "year": 1977,
+      "country": "GB",
+      "genre": "Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Dance"
+      ],
+      "hints": [
+        "Der Soundtrack-Film bekam seinen Namen erst durch diesen Song – der Produzent hatte zuvor einen anderen Arbeitstitel im Sinn.",
+        "Das Streicher-Intro zitiert das Orchesterstück 'Theme from A Summer Place' von Percy Faith; den Text schrieben die Brüder auf einer Treppe.",
+        "Mit diesem Soundtrack landete die Band sechs Singles in Folge auf Platz 1 der US-Charts.",
+        "Der Refrain endet mit den Worten 'We know how to do it' – im Text geht es um Sehnsucht, Hitze und die Tanzfläche.",
+        "Acht Wochen lang stand der Song 1978 auf Platz 1 der US-Charts und zwei Wochen auf Platz 1 der britischen Hitparade."
+      ],
+      "lyrics": {
+        "real": [
+          "Listen to the ground, there is movement all around",
+          "Here I am, prayin' for this moment to last, livin' on the music so fine",
+          "Night fever, night fever, we know how to do it"
+        ],
+        "fake": "Dancing on the rooftops of the city, celebrating till the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SkypZuY6ZvA",
+        "spotify": "https://open.spotify.com/track/0qemIQjSxcKyf42VPfZnfa",
+        "amazonMusic": "https://music.amazon.com/tracks/B0761MJQ49"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-snf-night-fever.jpg",
+      "packs": [
+        "Movie Hits",
+        "60s & 70s Soul & Rock Legends",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Night_Fever",
+        "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Bee_Gees",
+        "https://www.songfacts.com/facts/bee-gees/night-fever",
+        "https://www.azlyrics.com/lyrics/beegees/nightfever.html"
+      ]
+    },
+    {
+      "id": "legends-bee-gees-stayin-alive",
+      "title": "Stayin' Alive",
+      "artist": "Bee Gees",
+      "year": 1977,
+      "country": "GB",
+      "genre": "Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Dance",
+        "Energy",
+        "Groovy",
+        "Legends & Classics",
+        "Popular"
+      ],
+      "hints": [
+        "Der Rhythmus ist kein echtes Schlagzeug: Die Gruppe loopte zwei Takte des bereits aufgenommenen Drums von 'Night Fever' und schrieb einen erfundenen Schlagzeuger in die Credits.",
+        "Der Song stand 1978 vier Wochen auf Platz 1 der US-Charts und 2021 auf Platz 99 der Rolling-Stone-Liste der 500 größten Songs.",
+        "Der Refrain wechselt komplett ins hohe Falsett – die Brüder sangen die ganze Nummer so, bis auf eine einzige Zeile.",
+        "Rund 103 Beats pro Minute machen den Song bis heute zum Rhythmus-Training für die Herzdruckmassage.",
+        "Der Track war nicht als Leit-Single geplant: Fans riefen nach den Trailern des Films bei den Radiosendern an, danach wurde er doch zuerst veröffentlicht."
+      ],
+      "lyrics": {
+        "real": [
+          "Well, you can tell by the way I use my walk, I'm a woman's man, no time to talk",
+          "Music loud and women warm, I've been kicked around since I was born",
+          "Ah, ha, ha, ha, stayin' alive, stayin' alive"
+        ],
+        "fake": "Bassline running through the floor while the crowd keeps swaying tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fNFzfwLM72c",
+        "spotify": "https://open.spotify.com/track/5ubvP9oKmxLUVq506fgLhk",
+        "amazonMusic": "https://music.amazon.com/tracks/B01NBNQS7A"
+      },
+      "coverUrl": "/covers/legends-bee-gees-stayin-alive.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "youtube-import",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stayin%27_Alive",
+        "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Bee_Gees",
+        "https://www.songfacts.com/facts/bee-gees/stayin-alive",
+        "https://www.azlyrics.com/lyrics/beegees/stayinalive.html"
+      ]
+    },
+    {
+      "id": "metal-behemoth-lucifer",
+      "title": "Ora Pro Nobis Lucifer",
+      "artist": "Behemoth",
+      "year": 2014,
+      "country": "PL",
+      "genre": "Blackened Death Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Epic"
+      ],
+      "hints": [
+        "Die Band aus Gdańsk wurde 1991 gegründet und zählt zu den prägendsten Bands des polnischen Blackened-Death-Metal.",
+        "Der Song ist Teil des zehnten Studioalbums der Band, das 2014 erschien – aufgenommen wurde er 2013 in Białystok und Gdańsk, gemixt von Matt Hyde.",
+        "Die Band veröffentlichte den Song am 3. Dezember 2014 auch als Single; ein offizielles Lyric-Video war bereits im Januar 2014 erschienen.",
+        "Der Text mischt Latein mit archaisch anmutendem Englisch ('ov' statt 'of') und endet mit dem Ruf nach dem 'Satan ov Elohim'.",
+        "Am Anfang intoniert der Chor den lateinischen Anruf, der dem Song den Titel gab – der Refrain antwortet mit 'For thine is the kingdom, and the power'."
+      ],
+      "lyrics": {
+        "real": [
+          "Voice ov an Aeon, Angelus Satani",
+          "Ora pro nobis Lucifer",
+          "For thine is the kingdom, and the power, and the glory, forever"
+        ],
+        "fake": "We are the chosen children of the endless winter, crowned in the flames of the abyss"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Cx01fOYsc6E",
+        "amazonMusic": "https://music.amazon.com/tracks/B07QF46KFM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-behemoth-lucifer.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Satanist_(album)",
+        "https://en.wikipedia.org/wiki/Behemoth_(band)",
+        "https://en.wikipedia.org/wiki/Blackened_death_metal",
+        "https://www.azlyrics.com/lyrics/behemoth/orapronobislucifer.html",
+        "https://api.lyrics.ovh/v1/Behemoth/Ora%20Pro%20Nobis%20Lucifer"
+      ]
+    },
+    {
+      "id": "80s-belinda-heaven",
+      "title": "Heaven Is a Place on Earth",
+      "artist": "Belinda Carlisle",
+      "year": 1987,
+      "country": "US",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Die Sängerin spielte 1977 in der Punkband The Germs Schlagzeug und wurde danach Leadsängerin von The Go-Go's, bevor sie 1985 ihre Solokarriere startete.",
+        "Geschrieben und produziert wurde das Stück von Rick Nowels und Ellen Shipley; aufgenommen wurde es im Ocean Way Studio in Hollywood.",
+        "Ein britisches Musikmagazin zählte 2017 den dramatischen Tonartwechsel des Refrains zu den größten der Musikgeschichte.",
+        "Bei den Grammy Awards war das Lied 1988 für den besten weiblichen Pop-Gesang nominiert, die Auszeichnung ging aber an Whitney Houston.",
+        "Die Single erschien am 14. September 1987 als Titelstück des zweiten Soloalbums, erreichte am 5. Dezember 1987 die Spitze der US-Hot-100-Liste und stand zwei Wochen an der Spitze der britischen Single-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "They say in Heaven, love comes first",
+          "We'll make Heaven a place on Earth",
+          "With the sound of kids on the street outside"
+        ],
+        "fake": "Oh, sweetheart, do you know what dreams are made of? Sweet love is waiting in the moonlight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=j2F4INQFjEI",
+        "spotify": "https://open.spotify.com/track/1ryT9eOWD1JuxPD5ew53SJ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-belinda-heaven.jpg",
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "piano-ballads"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Heaven_Is_a_Place_on_Earth",
+        "https://en.wikipedia.org/wiki/Belinda_Carlisle",
+        "https://en.wikipedia.org/wiki/Heaven_on_Earth_(Belinda_Carlisle_album)",
+        "https://music.apple.com/us/album/heaven-is-a-place-on-earth/1440770890?i=1440771048",
+        "https://api.lyrics.ovh/v1/Belinda%20Carlisle/Heaven%20Is%20a%20Place%20on%20Earth"
+      ]
+    },
+    {
+      "id": "world-beneking-standbyme",
+      "title": "Stand By Me",
+      "artist": "Ben E. King",
+      "year": 1961,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Der Titel greift ein Spiritual auf, das die Soul Stirrers mit Johnnie Taylor aufgenommen hatten und das Sam Cooke mit J. W. Alexander geschrieben hatte.",
+        "Produziert wurde die Aufnahme von Jerry Leiber und Mike Stoller, die im Textcredit das Pseudonym 'Elmo Glick' benutzten.",
+        "Aufgenommen wurde der Song am 27. Oktober 1960 und erschien 1961 als Single beim Label Atco.",
+        "2015 wurde die Aufnahme in die National Recording Registry der Library of Congress aufgenommen.",
+        "Die Aufnahme führte 1961 die R&B-Charts an und erreichte Platz 4 der US-Hot-100-Liste; nach der Neuveröffentlichung 1986 führte sie zwei Wochen die britische Single-Charts an."
+      ],
+      "lyrics": {
+        "real": [
+          "When the night has come",
+          "And the moon is the only light we'll see",
+          "Oh, I won't be afraid"
+        ],
+        "fake": "When the rain is falling we will shelter in the arms of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMNKlr_MCdM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-beneking-standbyme.jpg",
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "soul-funk",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stand_by_Me_(Ben_E._King_song)",
+        "https://en.wikipedia.org/wiki/Ben_E._King",
+        "https://en.wikipedia.org/wiki/Stand_by_Me_(film)",
+        "https://music.apple.com/us/album/stand-by-me/68211636?i=68210790",
+        "https://api.lyrics.ovh/v1/Ben%20E.%20King/Stand%20By%20Me"
+      ]
+    },
+    {
+      "id": "disney-coco-rememberme",
+      "title": "Remember Me",
+      "artist": "Benjamin Bratt",
+      "year": 2017,
+      "country": "US",
+      "genre": "Soundtrack / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song ist der Titelsong eines Animationsfilms von Pixar und Disney, der 2017 in den Kinos lief.",
+        "Musik und Text stammen vom Ehepaar Robert und Kristen Anderson-Lopez.",
+        "Die spanische Fassung trägt den Titel 'Recuérdame' und wurde vom Sänger Carlos Rivera aufgenommen.",
+        "Im Film wurde das Stück von mehreren Synchronsprechern gesungen; eine Pop-Fassung mit Miguel und Natalia Lafourcade erklang im Abspann.",
+        "2018 gewann das Lied den Oscar für den besten Originalsong, der Film selbst den für den besten Animationsfilm."
+      ],
+      "lyrics": {
+        "real": [
+          "Don't let it make you cry",
+          "Each time you hear a sad guitar",
+          "Until you're in my arms again"
+        ],
+        "fake": "Keep my name inside your heart when the evening falls and the city sleeps"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YexJzu9aSZ0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-coco-rememberme.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "piano-ballads"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Remember_Me_(Coco_song)",
+        "https://en.wikipedia.org/wiki/Coco_(2017_film)",
+        "https://en.wikipedia.org/wiki/90th_Academy_Awards",
+        "https://music.apple.com/us/album/remember-me-ernesto-de-la-cruz/1440671241?i=1440671244",
+        "https://api.lyrics.ovh/v1/Benjamin%20Bratt/Remember%20Me"
+      ]
+    },
+    {
+      "id": "jazz-bennygoodman-sing",
+      "title": "Sing, Sing, Sing",
+      "artist": "Benny Goodman",
+      "year": 1937,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "hard",
+      "mood": [
+        "Energy",
+        "Explosive",
+        "Classic"
+      ],
+      "hints": [
+        "Louis Prima schrieb das Stück und nahm es 1936 mit seiner New Orleans Gang für Brunswick auf.",
+        "Die Big-Band-Fassung wurde am 6. Juli 1937 in Hollywood eingespielt, arrangiert von Jimmy Mundy.",
+        "Der Schlagzeuger Gene Krupa steuerte die ersten ausgedehnten Schlagzeugsoli, die je kommerziell aufgenommen wurden.",
+        "Die Aufnahme dauerte 8 Minuten und 43 Sekunden und belegte beide Seiten einer 12-Zoll-Schallplatte.",
+        "Beim Konzert in der Carnegie Hall am 16. Januar 1938 dehnte sich das Stück auf über zwölf Minuten aus; die Aufnahme von 1937 wurde 1982 in die Grammy Hall of Fame aufgenommen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=u_E0UVNtJ9Y",
+        "spotify": "https://open.spotify.com/track/2haqPCPMNy1HfcWhPzC0mJ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-bennygoodman-sing.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sing,_Sing,_Sing_(with_a_Swing)",
+        "https://en.wikipedia.org/wiki/Benny_Goodman",
+        "https://en.wikipedia.org/wiki/Gene_Krupa",
+        "https://en.wikipedia.org/wiki/The_Famous_1938_Carnegie_Hall_Jazz_Concert",
+        "https://music.apple.com/us/album/sing-sing-sing/299607882?i=299608012"
+      ]
+    },
+    {
+      "id": "yt-eLhSxOAaWmg",
+      "title": "Beautiful Things",
+      "artist": "Benson Boone",
+      "year": 2024,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Modern",
+        "Modern Anthems",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Song entstand im September 2023 in Los Angeles, kurz nachdem der Sänger dorthin umgezogen war.",
+        "Anfangs entstanden an zwei aufeinanderfolgenden Abenden zwei verschiedene Songs, bis Jack LaFrantz vorschlug, daraus einen zu machen.",
+        "Geschrieben wurde das Stück gemeinsam mit Jack LaFrantz und Evan Blair, der es auch produzierte.",
+        "Der Song erschien im Januar 2024 als erste Single des Debütalbums des Sängers.",
+        "Er erreichte Platz 2 der US-Hot-100-Liste und führte die Global 200 an; das Video entstand nahe St. George in Utah und gewann einen MTV-VMA."
+      ],
+      "lyrics": {
+        "real": [
+          "For a while there it was rough",
+          "But lately, I've been doin' better",
+          "I found a girl my parents love"
+        ],
+        "fake": "I know the road is long and heavy but your hand is warm and I'm not weary"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eLhSxOAaWmg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/finale-benson-beautiful.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Beautiful_Things_(Benson_Boone_song)",
+        "https://en.wikipedia.org/wiki/Benson_Boone",
+        "https://en.wikipedia.org/wiki/Fireworks_%26_Rollerblades",
+        "https://music.apple.com/us/album/beautiful-things/1724488123?i=1724488124",
+        "https://api.lyrics.ovh/v1/Benson%20Boone/Beautiful%20Things"
+      ]
+    },
+    {
+      "id": "yt-M_s1KEX3uvM",
+      "title": "Metro",
+      "artist": "Berlin",
+      "year": 1983,
+      "country": "US",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die US-Band entstand 1978 in Los Angeles aus dem Vorläufer 'The Toys' und wählte ihren Namen bewusst europäisch-exotisch.",
+        "Der Song erschien zuerst als Doppel-A-Seite mit 'Tell Me Why' beim Independent-Label Enigma.",
+        "Die zugehörige EP entstand für nur 2.900 US-Dollar; Geffen nahm sie 1983 weltweit neu auf.",
+        "Der Text spielt in Bildern von Reisen und Erinnerung: Paris, London, die Seine und ein Soldat.",
+        "Die Band wurde 1986 mit dem Oscar-preisgekrönten Song 'Take My Breath Away' aus 'Top Gun' weltberühmt."
+      ],
+      "lyrics": {
+        "real": [
+          "I was on a Paris train I emerged in London rain",
+          "I remember searching for the perfect words",
+          "Years have passed and still the hurt"
+        ],
+        "fake": "I was on a night train heading south when the summer light dissolved"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=M_s1KEX3uvM",
+        "spotify": "https://open.spotify.com/track/3Mp0s4jN8X7J74Qt6sgDXl",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "German Classics",
+        "80s Flashback",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/berlin-metro.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Berlin_(band)",
+        "https://en.wikipedia.org/wiki/Pleasure_Victim",
+        "https://en.wikipedia.org/wiki/Love_Life_(Berlin_album)",
+        "https://en.wikipedia.org/wiki/Berlin_discography",
+        "https://api.lyrics.ovh/v1/Berlin/Metro"
+      ]
+    }
+  ]
+}

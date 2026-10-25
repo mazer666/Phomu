@@ -1,0 +1,694 @@
+{
+  "songs": [
+    {
+      "id": "80s-billmedley-time-of-life",
+      "title": "(I've Had) The Time of My Life",
+      "artist": "Bill Medley & Jennifer Warnes",
+      "year": 1987,
+      "country": "US",
+      "genre": "Pop / Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Text stammt von Franke Previte, der 1981 mit 'Sweetheart' in die Top 10 kam; die Musik schrieben John DeNicola und Don Markowitz.",
+        "Produzent Jimmy Ienner bat Previte um Lieder für einen kleinen Spielfilm - Previte lehnte zuerst ab, weil er den Titel für einen Pornofilm hielt.",
+        "Für die Schlussszene war eigentlich ein Lionel-Richie-Stück vorgesehen; Choreograf Kenny Ortega und Miranda Garrison wählten stattdessen diesen Song, dessen Demo die Tänzer hörten.",
+        "Die Single erschien am 10. Juli 1987 bei RCA Records; die ursprüngliche Fassung von 6:46 Minuten kürzten die Produzenten auf 4:50 für den Rundfunk.",
+        "Der Song ist der Schlusssong des Tanzfilms 'Dirty Dancing', gewann einen Oscar, einen Grammy und einen Golden Globe - das American Film Institute führt ihn auf Platz 86 seiner Liste der 100 besten Filmsongs."
+      ],
+      "lyrics": {
+        "real": [
+          "I've had the time of my life, and I owe it all to you",
+          "No, I never felt like this before",
+          "With my body and soul, I want you more than you'll ever know"
+        ],
+        "fake": "We spin across the floor and the whole night is turning with you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4BQLE_RrTSU",
+        "spotify": "https://open.spotify.com/track/6W7ztLBiRzBN46ZaPAcQ0F",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-billmedley-time-of-life.jpg",
+      "packs": [
+        "Movie Hits",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/%28I%27ve_Had%29_The_Time_of_My_Life",
+        "https://www.songfacts.com/facts/bill-medley-jennifer-warnes/ive-had-the-time-of-my-life",
+        "https://www.theguardian.com/music/2019/apr/09/how-we-made-dirty-dancing-ive-had-the-time-of-my-life",
+        "https://www.theringer.com/movies/2020/8/20/21376386/dirty-dancing-song-time-of-my-life-history",
+        "https://www.afi.com/afis-100-years-100-songs/"
+      ]
+    },
+    {
+      "id": "country-billmonroe-blue",
+      "title": "Blue Moon of Kentucky",
+      "artist": "Bill Monroe",
+      "year": 1947,
+      "country": "US",
+      "genre": "Bluegrass",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Traditional",
+        "Fast"
+      ],
+      "hints": [
+        "Der Komponist schrieb das Stück 1945; seine Band nahm es 1946 in Chicago für Columbia auf, veröffentlicht wurde es 1947.",
+        "Auf der Aufnahme spielten Lester Flatt an der Gitarre und Earl Scruggs am Banjo mit, die später als Foggy Mountain Boys erfolgreich wurden.",
+        "Der Rock'n'Roll-König nahm das Stück 1954 auf; danach änderte der Komponist die Anordnung - langsam beginnend, dann in den schnellen 4/4-Takt.",
+        "2002 nimmt die Library of Congress die Aufnahme in das National Recording Registry auf, 2003 landet der Song bei CMT auf Platz 11 der 100 größten Country-Titel.",
+        "Das Stück gilt als das offizielle Genre-Lied des US-Bundesstaats, dessen Name im Titel steckt, und als Wegweiser für die Musik, die der Sänger begründete."
+      ],
+      "lyrics": {
+        "real": [
+          "Blue moon of Kentucky, keep on shinin', shine on the one that's gone and left me blue",
+          "It was on a moonlight night, the star is shinin' bright",
+          "Shine on the one that's gone and said good-bye"
+        ],
+        "fake": "Moonlight on the ridge, the fiddle wails a lonesome bluegrass tune"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4syA9aNnNa0",
+        "spotify": "https://open.spotify.com/track/50csDQPBwpjCSv5DgVl6vO",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-billmonroe-blue.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "jazz-blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Blue_Moon_of_Kentucky",
+        "https://en.wikipedia.org/wiki/Bill_Monroe",
+        "https://www.songfacts.com/facts/bill-monroe/blue-moon-of-kentucky",
+        "https://lrclib.net/api/get?artist_name=Bill%20Monroe&track_name=Blue%20Moon%20of%20Kentucky",
+        "https://en.wikipedia.org/wiki/National_Recording_Registry"
+      ]
+    },
+    {
+      "id": "disney-alice-late",
+      "title": "I'm Late",
+      "artist": "Bill Thompson",
+      "year": 1951,
+      "country": "US",
+      "genre": "Soundtrack / Fast / Classic",
+      "difficulty": "easy",
+      "mood": [
+        "Fast",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Text und Musik schrieben Sammy Fain und Bob Hilliard - das Duo zeichnete auch für 'In a World of My Own' und 'The Caucus Race' verantwortlich.",
+        "Der Interpret war ein US-Radio-Moderator aus Chicago, der seit 1934 in der Sendung 'Breakfast Club' als Mr. Wimple bekannt war; später sprach er für Disney den weißen Hasen und den Dodo.",
+        "Der Film hatte am 26. Juli 1951 im Leicester Square Theatre in London Weltpremiere und war ein Flop: 2,4 Millionen Dollar Einspiel in den USA.",
+        "1974 kam eine Neuauswertung, die deutlich besser anschlug; 1954 lief der Film stark verkürzt als zweite Folge der Fernsehreihe 'Disneyland'.",
+        "Das Lied, in dem der weiße Hase atemlos von einem sehr wichtigen Termin erzählt, gehört zu den bekanntesten Musiknummern des Films und wurde auch zweimal in der Bühnenfassung 'Alice in Wonderland, Jr.' neu aufgenommen."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm late, I'm late, for a very important date",
+          "No time to say hello, goodbye, I'm late, I'm late, I'm late",
+          "I'm overdue, I'm nearly in a stew"
+        ],
+        "fake": "I hurry down the hallway and the door swings open wide"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6cI1OUyOXtM",
+        "spotify": "https://open.spotify.com/track/1Y3L9vzf6VRVZ0UZO82ZZB",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-alice-late.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)",
+        "https://en.wikipedia.org/wiki/Bill_Thompson_(voice_actor)",
+        "https://music.apple.com/us/album/im-late/1440747273?i=1440747559",
+        "https://lrclib.net/api/get?artist_name=Bill%20Thompson&track_name=I'm%20Late",
+        "https://music.apple.com/us/album/im-late/1440747273"
+      ]
+    },
+    {
+      "id": "soul-bill-withers-sunshine",
+      "title": "Ain't No Sunshine",
+      "artist": "Bill Withers",
+      "year": 1971,
+      "country": "US",
+      "genre": "Soul / Blues",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Emotional",
+        "Sad",
+        "Short"
+      ],
+      "hints": [
+        "Den Text inspirierte der Film 'Days of Wine and Roses' (1962), in dem zwei Alkoholiker immer tiefer abrutschen.",
+        "Als er das Stück schrieb, war der Sänger 31 Jahre alt und arbeitete in einer Fabrik, die Toilettenschüsseln für Boeing-747-Triebwerke baute.",
+        "Die Brücke war als Textstelle mit mehr Worten geplant; auf Rat der Musiker im Studio blieb es bei 26mal 'I know'.",
+        "Producer Booker T. Jones leitete die Session: Al Jackson Jr. am Schlagzeug, Donald 'Duck' Dunn am Bass, Stephen Stills an der Gitarre; aufgenommen wurde in Los Angeles mit Overdubs in Memphis.",
+        "Die Single erschien im Juli 1971 als B-Seite von 'Harlem', wurde aber zum Durchbruch und erreichte Platz 3 der US-Hot-100; als sie Gold wurde, schenkte die Plattenfirma dem Sänger einen goldenen Toilettensitz."
+      ],
+      "lyrics": {
+        "real": [
+          "Ain't no sunshine when she's gone, it's not warm when she's away",
+          "Ain't no sunshine when she's gone, and she's always gone too long",
+          "I know, I know, I know, I know, I know..."
+        ],
+        "fake": "Dancing in the rain, following the train to the plain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YuKfiH0Scao",
+        "spotify": "https://open.spotify.com/track/1k1Bqnv2R0uJXQN4u6LKYt",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-bill-withers-sunshine.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "60s & 70s Soul & Rock Legends",
+        "jazz-blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ain%27t_No_Sunshine",
+        "https://www.songfacts.com/facts/bill-withers/aint-no-sunshine",
+        "https://en.wikipedia.org/wiki/Bill_Withers",
+        "https://lrclib.net/api/get?artist_name=Bill%20Withers&track_name=Ain%27t%20No%20Sunshine",
+        "https://music.apple.com/us/album/aint-no-sunshine/293521570?i=293521573"
+      ]
+    },
+    {
+      "id": "soul-billwithers-lovely",
+      "title": "Lovely Day",
+      "artist": "Bill Withers",
+      "year": 1977,
+      "country": "US",
+      "genre": "Soul / Pop influence",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song erschien 1977 bei Columbia auf dem sechsten Album des Sängers; Text und Musik schrieb er gemeinsam mit Skip Scarborough.",
+        "Arrangiert und produziert wurde er von Clarence McDonald, der auch die Tasten spielte; daneben waren Ray Parker Jr. an der Gitarre, Jerry Knight am Bass und Russ Kunkel an den drums.",
+        "Am Ende hält der Sänger einen hohen Ton 18 Sekunden lang - die längste Note, die je in einer US-Top-40-Hit gehalten wurde.",
+        "Anfang 1978 erreichte der Song Platz 30 in den US-Hot-100-Charts und Platz 6 in den R&B-Charts; in Großbritannien kam er auf Platz 7.",
+        "Der Remix 'Sunshine Mix' von Ben Liebrand stürmte 1988 auf Platz 4 der britischen Liste; 2021 sang Demi Lovato das Stück bei der Amtseinführung von Joe Biden in Washington."
+      ],
+      "lyrics": {
+        "real": [
+          "When I wake up in the morning, love, and the sunlight hurts my eyes",
+          "And something without warning, love, bears heavy on my mind",
+          "Then I look at you, and the world's alright with me"
+        ],
+        "fake": "The city hums in harmony and the morning air is warm and gold"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QCgeitX5xg0",
+        "spotify": "https://open.spotify.com/track/0bRXwKfigvpKZUurwqAlEh",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-billwithers-lovely.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lovely_Day",
+        "https://en.wikipedia.org/wiki/Bill_Withers",
+        "https://www.songfacts.com/facts/bill-withers/lovely-day",
+        "https://music.apple.com/us/album/lovely-day/989376625?i=989376634",
+        "https://lrclib.net/api/get?artist_name=Bill%20Withers&track_name=Lovely%20Day"
+      ]
+    },
+    {
+      "id": "billie-eilish-bad-guy-2019",
+      "title": "bad guy",
+      "artist": "Billie Eilish",
+      "year": 2019,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Chill",
+        "Cool",
+        "Dark",
+        "Electronic",
+        "Neon Night",
+        "Rebel"
+      ],
+      "hints": [
+        "Die Sängerin und ihr Bruder nahmen den Song im Schlafzimmer im Haus der Eltern in Highland Park bei Los Angeles auf - Logic Pro, ein Apollo-8-Interface und zwei Yamaha-Monitore waren die gesamte Technik.",
+        "Der minimalistische Beat besteht aus Synth-Bass, Kick-Drum, verstärkten Fingerschnipsen und 808-Bass; die Presse nannte das Stück Pop-Trap.",
+        "Die Single erschien am 29. März 2019 als fünfte Auskopplung des Debütalbums 'When We All Fall Asleep, Where Do We Go?' und gewann bei den 62. Grammys 2020 den Record und den Song des Jahres.",
+        "Die Sängerin flüstert ihre Parts so nonchalant und selbstironisch, dass Kritiker den Track einen 'low-key Banger' nannten.",
+        "Im Text spottet sie über den vermeintlich harten Kerl und stellt sich selbst als diejenige dar, die die stärkere Rolle spielt - eine Umkehrung, die das gewohnte Rollenbild im Pop auflöst."
+      ],
+      "lyrics": {
+        "real": [
+          "White shirt now red, my bloody nose",
+          "Sleepin', you're on your tippy-toes, creepin' around like no one knows",
+          "So you're a tough guy, like it really rough guy"
+        ],
+        "fake": "I'm sitting in the dark and waiting for you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DyDfgMOUjCI",
+        "spotify": "https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/billie-eilish-bad-guy-2019.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bad_Guy_(Billie_Eilish_song)",
+        "https://en.wikipedia.org/wiki/When_We_All_Fall_Asleep,_Where_Do_We_Go%3F",
+        "https://www.songfacts.com/facts/billie-eilish/bad-guy",
+        "https://lrclib.net/api/get?artist_name=Billie%20Eilish&track_name=bad%20guy",
+        "https://music.apple.com/us/album/when-we-all-fall-asleep-where-do-we-go/1450695723?i=1450695739"
+      ]
+    },
+    {
+      "id": "finale-billie-happier",
+      "title": "Happier Than Ever",
+      "artist": "Billie Eilish",
+      "year": 2021,
+      "country": "US",
+      "genre": "Alternative Pop / Jazz Influence / Rock Finale",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Modern"
+      ],
+      "hints": [
+        "Das Stück startet zart und akustisch und kippt nach wenigen Takten in eine laute, verzerrte Rocknummer.",
+        "Geschrieben und produziert hat es ihr Bruder Finneas O'Connell – es war das erste Lied, das die beiden für ihr zweites Album schrieben.",
+        "Der Arbeitstitel lautete 'Away from Me': Der Song erzählt von der Befreiung aus einer toxischen Beziehung, in der die Sängerin gedemütigt wurde.",
+        "Die Single erschien am 30. Juli 2021 als sechste Auskopplung des gleichnamigen Albums und erreichte in den USA Platz 11 der Billboard Hot 100.",
+        "Das offizielle Musikvideo zeigt die Sängerin zuerst im Telefonat und später tanzend im Regen auf einem Flachdach; der Titel des Refrains bedeutet sinngemäß: fernab von dir geht es mir nie besser."
+      ],
+      "lyrics": {
+        "real": [
+          "When I'm away from you",
+          "Wish I could explain it better",
+          "I wish it wasn't true"
+        ],
+        "fake": "Everything's on mute, I'm listening to the ceiling fan"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5GJWxDKyk3A",
+        "spotify": "https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8",
+        "amazonMusic": "https://music.amazon.com/tracks/B093JHTCX7"
+      },
+      "coverUrl": "/covers/finale-billie-happier.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Happier_Than_Ever_(song)",
+        "https://en.wikipedia.org/wiki/Happier_Than_Ever",
+        "https://www.songfacts.com/facts/billie-eilish/happier-than-ever",
+        "https://www.npr.org/2021/08/01/1022878842/billie-eilish-interview-happier-than-ever",
+        "https://www.rollingstone.com/music/music-features/billie-eilish-new-album-happier-than-ever-tour-1183156/"
+      ]
+    },
+    {
+      "id": "yt-hG4lT4fxj8M",
+      "title": "Ocean Eyes",
+      "artist": "Billie Eilish",
+      "year": 2016,
+      "country": "US",
+      "genre": "Alternative Hip-Hop / Dream Pop / Synth-Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dreamy",
+        "Night Drive",
+        "Melancholic"
+      ],
+      "hints": [
+        "Der Track entstand zunächst als SoundCloud-Debüt, wurde viral und brachte die Sängerin schon vor ihrem großen Label-Debüt in die Charts.",
+        "Geschrieben und produziert hat das Stück ihr Bruder Finneas – eigentlich hatte er es für seine eigene Band geschrieben, dann passte es besser zu ihrer Stimme.",
+        "Ein Tanzvideo, das die Sängerin bei einem choreografierten Auftritt zeigt, erschien am 22. November 2016 auf ihrem offiziellen YouTube-Kanal.",
+        "Die kommerzielle Single erschien am 18. November 2016 als Leitstück der ersten EP der Sängerin; in den US-Charts tauchte der Song erst 2018 auf (Platz 84).",
+        "Der Song schaffte es auch auf den Soundtrack zum Spielfilm 'Everything, Everything' und erreichte 2018 in Großbritannien Platz 72."
+      ],
+      "lyrics": {
+        "real": [
+          "Burning cities and napalm skies",
+          "You really know how to make me cry",
+          "I've never fallen from quite this high"
+        ],
+        "fake": "Silver lanterns on a midnight shore"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hG4lT4fxj8M",
+        "spotify": "https://open.spotify.com/track/7hDVYcQq6MxkdJGweuCtl9",
+        "amazonMusic": "https://music.amazon.com/tracks/B01N8Q9P5I"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/billie-eilish-ocean-eyes--dance-performance-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ocean_Eyes_(song)",
+        "https://en.wikipedia.org/wiki/Don%27t_Smile_at_Me",
+        "https://www.songfacts.com/facts/billie-eilish/ocean-eyes",
+        "https://www.stereogum.com/1867003/billie-eilish-ocean-eyes-video-stereogum-premiere/mp3s/",
+        "https://www.npr.org/2019/10/13/769911963/billie-eilish-all-i-can-say-is-be-patient"
+      ]
+    },
+    {
+      "id": "finale-billie-barbie",
+      "title": "What Was I Made For?",
+      "artist": "Billie Eilish",
+      "year": 2023,
+      "country": "US",
+      "genre": "Sad Pop / Movie Theme",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Thinking",
+        "Emotional"
+      ],
+      "hints": [
+        "Der Song entstand im Januar 2023 für den Soundtrack zum Barbie-Film, nur wenige Wochen später wurde er im Studio aufgenommen.",
+        "Regie und Drehbuch lagen bei Greta Gerwig, die den beiden Geschwistern den Rohschnitt zeigte – den Song schrieben sie in einer einzigen Nacht in ihrem Studio in Los Angeles.",
+        "Im Film begleitet der Song die Szene, in der die Puppe auf den Geist ihrer Schöpferin trifft.",
+        "Die Single erschien am 13. Juli 2023 als fünfte Auskopplung des Soundtrack-Albums und erreichte in fünf Ländern Platz 1.",
+        "2024 gewann der Song den Oscar für den besten Originalsong – die Sängerin wurde zur jüngsten Person, die diesen Preis zweimal in derselben Kategorie erhielt."
+      ],
+      "lyrics": {
+        "real": [
+          "I used to float, now I just fall down",
+          "I used to know, but I'm not sure now",
+          "What was I made for?"
+        ],
+        "fake": "Golden light on the pink horizon, spinning through the endless sky"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dpnTd9Dx2OM",
+        "spotify": "https://open.spotify.com/track/6wf7Yu7cxBSPrRlWeSeK0Q",
+        "amazonMusic": "https://music.amazon.com/tracks/B0CBL9HXWR"
+      },
+      "coverUrl": "/covers/finale-billie-barbie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "Movie Hits",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/What_Was_I_Made_For%3F",
+        "https://en.wikipedia.org/wiki/Barbie_the_Album",
+        "https://www.songfacts.com/facts/billie-eilish/what-was-i-made-for",
+        "https://www.stereogum.com/2229962/billie-eilish-what-was-i-made-for/music/",
+        "https://en.wikipedia.org/wiki/96th_Academy_Awards"
+      ]
+    },
+    {
+      "id": "jazz-billie-holiday-fruit",
+      "title": "Strange Fruit",
+      "artist": "Billie Holiday",
+      "year": 1939,
+      "country": "US",
+      "genre": "Jazz",
+      "difficulty": "hard",
+      "mood": [
+        "Classic",
+        "Deep",
+        "Powerful",
+        "Sad",
+        "Serious"
+      ],
+      "hints": [
+        "Ein erschütternder Protestsong gegen den Rassismus und die Lynchjustiz im Süden der USA.",
+        "Die 'seltsamen Früchte' im Titel sind eine Metapher für gelynchte Schwarze, die an Bäumen hingen.",
+        "Der Text stammt aus einem Gedicht, das ein weißer, jüdischer Lehrer und Gewerkschafter 1937 in einer Gewerkschaftszeitschrift veröffentlichte – der Komponist war Abel Meeropol.",
+        "Ihr damaliges Label Columbia verweigerte die Aufnahme aus Angst vor der Reaktion im Süden, deshalb nahm die Sängerin den Song bei Commodore Records auf.",
+        "Aufgenommen wurde das Lied 1939; später kam es 1978 in die Grammy Hall of Fame und 2002 in die National Recording Registry der Library of Congress."
+      ],
+      "lyrics": {
+        "real": [
+          "Southern trees bear a strange fruit",
+          "Blood on the leaves and blood at the root",
+          "Here is a strange and bitter crop"
+        ],
+        "fake": "The river runs red through the cotton fields tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Web007rzSOI",
+        "spotify": "https://open.spotify.com/track/1CTex49P0iWwzUGsMNjgaV",
+        "amazonMusic": "https://music.amazon.com/tracks/B07L1QWQ6Y"
+      },
+      "coverUrl": "/covers/jazz-billie-holiday-fruit.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Strange_Fruit",
+        "https://www.songfacts.com/facts/billie-holiday/strange-fruit",
+        "https://www.bbc.com/culture/story/20190415-strange-fruit-the-most-shocking-song-of-all-time",
+        "https://www.npr.org/2012/09/05/158933012/the-strange-story-of-the-man-behind-strange-fruit",
+        "https://www.theguardian.com/commentisfree/cifamerica/2010/sep/18/strange-fruit-song-today"
+      ]
+    },
+    {
+      "id": "yt-T0nsabCHj14",
+      "title": "White Wedding",
+      "artist": "Billy Idol",
+      "year": 1982,
+      "country": "GB",
+      "genre": "New Wave / Post-Punk",
+      "difficulty": "medium",
+      "mood": [
+        "Rebellious",
+        "Ironic",
+        "Nightlife"
+      ],
+      "hints": [
+        "Der Song erzählt von einer Hochzeit, die nie stattfand: 'kleine Schwester' ist hier Slang für die Geliebte, die einen anderen heiratet.",
+        "Anlass war die Hochzeit der Schwester des Sängers, die bereits ein Kind erwartete – er nannte es später eine Zwangshochzeit.",
+        "Die britische Musikpresse urteilte 1982 scharf: 'hopelessly cobbled together' – produziert wurde das Stück von Keith Forsey.",
+        "In den USA kam die Single erst 1983 in die Hot 100 und erreichte dort Platz 36; in Großbritannien war es 1985 Platz 6.",
+        "Das Video inszeniert eine gruselige Trauung in schwarzer Gotik-Optik und machte den Sänger weltberühmt."
+      ],
+      "lyrics": {
+        "real": [
+          "It's a nice day to start again",
+          "I've been away for so long",
+          "I let you go for so long"
+        ],
+        "fake": "Silver linings on a rainy September night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T0nsabCHj14",
+        "spotify": "https://open.spotify.com/track/35i19j4Zz7WaL5KozRHjyQ",
+        "amazonMusic": "https://music.amazon.com/tracks/B071YNQSKV"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "metal-hardcore",
+        "80s Flashback",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/billy-idol-white-wedding---part-1.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/White_Wedding_(song)",
+        "https://en.wikipedia.org/wiki/Billy_Idol_(album)",
+        "https://www.songfacts.com/facts/billy-idol/white-wedding",
+        "https://www.udiscovermusic.com/stories/billy-idol-rebel-yell-feature/",
+        "https://www.officialcharts.com/songs/billy-idol-white-wedding/"
+      ]
+    },
+    {
+      "id": "piano-joel-pianoman",
+      "title": "Piano Man",
+      "artist": "Billy Joel",
+      "year": 1973,
+      "country": "US",
+      "genre": "Pop / Piano Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Storytelling",
+        "Classic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der Song erzählt aus der Sicht des Musikanten, der nachts in einer Bar die Stammgäste beobachtet und begleitet.",
+        "Grundlage ist die echte Erfahrung des Songwriters, der 1972 nach Los Angeles zog und unter dem Namen 'Bill Martin' in der Bar 'Executive Room' spielte.",
+        "Im Refrain fordern die Gäste den Musiker auf, ihnen ein Lied vorzusingen – dieser Moment gibt dem Stück seinen Namen.",
+        "Der Song kam 1974 als Single in den USA heraus und war der erste große Charterfolg des Songwriters; 1973 war er auf dem gleichnamigen Album erschienen, im April 1974 erreichte er Platz 25 der Billboard Hot 100.",
+        "Instrumental beginnt das Stück mit einem jazzigen Solopart, danach kommen Klavier und Mundharmonika; produziert hat es Michael Stewart."
+      ],
+      "lyrics": {
+        "real": [
+          "It's nine o'clock on a Saturday",
+          "Now John at the bar is a friend of mine",
+          "He gets me my drinks for free"
+        ],
+        "fake": "The waitress calls my name as the last cigarette burns down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QwVjTlTdIDQ",
+        "spotify": "https://open.spotify.com/track/70C4NyhjD5OZUMzvWZ3njJ",
+        "amazonMusic": "https://music.amazon.com/tracks/B07R6PM55N"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-joel-pianoman.jpg",
+      "packs": [
+        "piano-ballads",
+        "Schlager & Evergreens",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Piano_Man",
+        "https://en.wikipedia.org/wiki/Piano_Man_(Billy_Joel_album)",
+        "https://www.songfacts.com/facts/billy-joel/piano-man",
+        "https://ultimateclassicrock.com/billy-joel-piano-man/",
+        "https://www.musicradar.com/news/its-in-68-time-which-is-a-waltz-its-a-long-song-and-the-topic-is-a-bit-depressing-billy-joel-ponders-surprising-new-interpretations-of-his-much-loved-track-piano-man"
+      ]
+    }
+  ]
+}

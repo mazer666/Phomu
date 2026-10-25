@@ -1,0 +1,719 @@
+{
+  "songs": [
+    {
+      "id": "dance-haddaway-what-is-love",
+      "title": "What Is Love",
+      "artist": "Haddaway",
+      "year": 1993,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Classic",
+        "Fun"
+      ],
+      "hints": [
+        "Der Sänger wurde 1965 auf Trinidad und Tobago geboren, wuchs in den USA auf und startete seine Solokarriere in Deutschland.",
+        "Die weibliche Stimme im Refrain ist kein Original, sondern ein Sample aus einer britischen Sampler-CD von 1991.",
+        "Das Stück erschien am 18. Januar 1993 als Debütsingle und war die Titelsingle des ersten Albums des Sängers.",
+        "Geschrieben und produziert wurde es von zwei Produzenten aus Hennef bei Köln.",
+        "1994 gewann der Song gleich zwei deutsche Musikpreise: den für den besten nationalen Single und den für den besten nationalen Dance-Track."
+      ],
+      "lyrics": {
+        "real": [
+          "What is love? Baby don't hurt me, don't hurt me, no more",
+          "I don't know why you're not there, I give you my love but you don't care",
+          "So what is right and what is wrong? Gimme a sign"
+        ],
+        "fake": "Looking for a heart, falling apart, right from the start"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HEXWRTEbj1I"
+      },
+      "coverUrl": "/covers/dance-haddaway-what-is-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "youtube-import",
+        "90s Unplugged"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/What_Is_Love",
+        "https://www.songfacts.com/facts/haddaway/what-is-love",
+        "https://en.wikipedia.org/wiki/Haddaway",
+        "https://en.wikipedia.org/wiki/The_Album_(Haddaway_album)",
+        "https://music.apple.com/us/album/what-is-love-7-mix/1731384161?i=1731384547"
+      ]
+    },
+    {
+      "id": "catalog-coverage-hank-williams-jambalaya-1952",
+      "title": "Jambalaya (On the Bayou)",
+      "artist": "Hank Williams",
+      "year": 1952,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "medium",
+      "mood": [
+        "Road Trip",
+        "Nostalgic",
+        "Feel Good"
+      ],
+      "hints": [
+        "Ein Country-Klassiker aus den frühen 1950ern mit starkem Cajun-Einfluss.",
+        "Der Text erzählt von einer Kahnfahrt mit der Geliebten zu einem Fest am Fluss, wo es Krabbenpastete und Filé-Gumbo gibt.",
+        "Der Titel nennt ein Gericht aus der kreolischen Küche Louisianas.",
+        "Fiddle, Akustikgitarre und ein treibender Two-Step-Rhythmus prägen den Sound.",
+        "Im Refrain taucht die Cajun-Floskel 'ma cher amio' für die Geliebte des Erzählers auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Me gotta go pole the pirogue down the bayou",
+          "Jambalaya and a crawfish pie and filé gumbo",
+          "Cause tonight I'm gonna see my ma cher amio"
+        ],
+        "fake": "I left my old life in the city and I am never coming back no more"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Mc_2sOWVTxI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "country-folk",
+        "Country, Jazz & Blues"
+      ],
+      "coverUrl": "/covers/hank-williams-jambalaya--on-the-bayou-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jambalaya_(On_the_Bayou)",
+        "https://www.azlyrics.com/lyrics/hankwilliams/jambalayaonthebayou.html",
+        "https://en.wikipedia.org/wiki/Hank_Williams",
+        "https://www.lyrics.com/lyric/9860744/Hank+Williams/Jambalaya",
+        "https://music.apple.com/us/album/jambalaya-on-the-bayou/1434632702?i=1434632868"
+      ]
+    },
+    {
+      "id": "country-hank-heart",
+      "title": "Your Cheatin' Heart",
+      "artist": "Hank Williams",
+      "year": 1953,
+      "country": "US",
+      "genre": "Honky Tonk / Country",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Traditional",
+        "Classic"
+      ],
+      "hints": [
+        "Einer der wichtigsten Songs der Country-Geschichte – veröffentlicht im Januar 1953, wenige Wochen nach dem Tod des Sängers.",
+        "Der Text entstand 1952 auf einer Autofahrt nach Shreveport, Louisiana; die Worte diktierte der Sänger in wenigen Minuten.",
+        "Besticht durch die weinerliche Steel-Gitarre und die ehrliche Emotion des Sängers.",
+        "Der Song leadete sechs Wochen die Country-Charts an und wurde mehr als eine Million Mal verkauft.",
+        "Refrain-Zeile: '... will tell on you' – der Betrug fliegt dem Treulosen irgendwann auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Your cheatin' heart will tell on you, you'll cry and cry the whole night through",
+          "When tears come down like falling rain",
+          "You'll toss around and call my name"
+        ],
+        "fake": "Pickup truck is idling while the jukebox plays us one more song"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UxlmdknsB5M"
+      },
+      "coverUrl": "/covers/country-hank-heart.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Your_Cheatin%27_Heart",
+        "https://www.azlyrics.com/lyrics/hankwilliams/yourcheatinheart.html",
+        "https://www.songfacts.com/facts/hank-williams/your-cheatin-heart",
+        "https://en.wikipedia.org/wiki/Hank_Williams",
+        "https://music.apple.com/us/album/your-cheatin-heart/1434632702?i=1434632703"
+      ]
+    },
+    {
+      "id": "score-zimmer-time",
+      "title": "Time (Inception)",
+      "artist": "Hans Zimmer",
+      "year": 2010,
+      "country": "DE",
+      "genre": "Movie Score / Modern Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Atmospheric",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Soundtrack zu einem Nolan-Film von 2010 erschien am 13. Juli 2010 bei Reprise Records.",
+        "Der Komponist las für die Inspiration 'Gödel, Escher, Bach' von Douglas Hofstadter.",
+        "Für die Gitarrenparts verpflichtete er den Gitarristen Johnny Marr, der vier Tage zu je zwölf Stunden auf einer Zwölfsaitengitarre spielte.",
+        "Die Trailer des Films liefen mit eigens komponierter Musik, die nicht auf dem Album erscheint.",
+        "Der Titel ist ein englisches Wort, das zugleich die Einheit misst, die eine Sanduhr anzeigt."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=c56t7upa8Bk",
+        "spotify": "https://open.spotify.com/track/6ZFbXIJkuI1dVNWvzJzown",
+        "amazonMusic": "https://music.amazon.com/tracks/B003VOBJOS"
+      },
+      "coverUrl": "/covers/score-zimmer-time.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Inception_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Inception",
+        "https://music.apple.com/us/album/time/380349905?i=380350246",
+        "https://www.youtube.com/watch?v=c56t7upa8Bk",
+        "https://en.wikipedia.org/wiki/Hans_Zimmer"
+      ]
+    },
+    {
+      "id": "score-zimmer-pirate",
+      "title": "He's a Pirate",
+      "artist": "Hans Zimmer / Klaus Badelt",
+      "year": 2003,
+      "country": "DE",
+      "genre": "Movie Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Heroic",
+        "Exciting"
+      ],
+      "hints": [
+        "Das Hauptthema aus dem ersten Teil einer Disney-Fantasyreihe um Freibeuter, Seegeister und verfluchte Schätze.",
+        "Ein Komponist war mit einem anderen Großfilm beschäftigt und übergab den Auftrag an einen Kollegen; das Thema entstand in einer Synth-Demo in nur einer Nacht.",
+        "Der Track eröffnet den Abspann des Films und wurde später von mehreren DJs neu gemixt.",
+        "Ein US-Footballverein nutzte das Stück als Spiel-Hymne in seinen Heim- und Auswärtsspielen.",
+        "Der Titel ist die englische Anrede, mit der ein Seemann seine Kameraden begrüßt."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BuYf0taXoNw",
+        "spotify": "https://open.spotify.com/track/4AD2dterIUjNt1LFNI9Bvi",
+        "amazonMusic": "https://music.amazon.com/tracks/B0BTM6MGV7"
+      },
+      "coverUrl": "/covers/score-zimmer-pirate.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/He%27s_a_Pirate",
+        "https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean:_The_Curse_of_the_Black_Pearl_(soundtrack)",
+        "https://music.apple.com/us/album/hes-a-pirate/1440649561?i=1440650203",
+        "https://www.youtube.com/watch?v=BuYf0taXoNw",
+        "https://www.classicfm.com/composers/badelt/pirates-of-the-caribbean-soundtrack-composers/"
+      ]
+    },
+    {
+      "id": "yt-4-B-0hBwhbc",
+      "title": "Call Your Name",
+      "artist": "Alesso & John Newman",
+      "year": 2023,
+      "country": "SE",
+      "genre": "Dance / Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "Festival"
+      ],
+      "hints": [
+        "Der Song erschien 2023 als Kollaboration zwischen einem schwedischen DJ und einem US-Sänger.",
+        "Der Text kreist um Sehnsucht und Einsamkeit: 'I can't eat, I can't sleep, I'm going out my mind'.",
+        "Der Refrain wiederholt sich mehrfach und steigert sich am Ende in eine reine Silbenkette.",
+        "Im selben Jahr erschien ein EP mit mehreren Remixen des Songs.",
+        "Der Titel ist die englische Anrede, mit der man jemanden am Telefon oder per Funk ruft."
+      ],
+      "lyrics": {
+        "real": [
+          "You showed me your light, then left me in the dark",
+          "The words you thought you heard are words I never said",
+          "I wanna call your na-a-ame when I'm lost in the heat of the moment"
+        ],
+        "fake": "I keep on dreaming of the summer nights we used to spend by the sea"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4-B-0hBwhbc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/hardwell---maddix-call-your-name.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Alesso_discography",
+        "https://www.azlyrics.com/lyrics/alesso/callyourname.html",
+        "https://music.apple.com/us/album/call-your-name/1698289186?i=1698289200",
+        "https://www.youtube.com/watch?v=4-B-0hBwhbc",
+        "https://en.wikipedia.org/wiki/Alesso"
+      ]
+    },
+    {
+      "id": "movie-harold-faltermeyer-axel-f",
+      "title": "Axel F",
+      "artist": "Harold Faltermeyer",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Synth-pop",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Electronic",
+        "Classic"
+      ],
+      "hints": [
+        "Ein rein instrumentales Synth-Pop-Stück, das als Titelmelodie eines Kinofilms von 1984 diente.",
+        "Der Titel leitet sich von der Hauptfigur des Films ab, die Eddie Murphy verkörpert.",
+        "Der westdeutsche Komponist, der auch den kompletten Filmscore schrieb, steckt hinter dem Stück.",
+        "2004 kehrte der Beat als Basis für den weltweiten Charterfolg der animierten Maskotte 'Crazy Frog' zurück.",
+        "Das Instrumental leadete 1985 in den USA die Billboard-Hot-Dance-Club-Play-Charts an und erreichte in Irland Platz 1."
+      ],
+      "lyrics": {
+        "real": [
+          "Ring ding ding daa baa",
+          "Baa aramba baa bom baa barooumba",
+          "Ring ding ding ding ding ding"
+        ],
+        "fake": "Ding dong, the whole city is dancing tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=L2cstHtZ4gQ",
+        "spotify": "https://open.spotify.com/track/3pgTnWleIriTapci1F71Fz"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-harold-faltermeyer-axel-f.jpg",
+      "packs": [
+        "Movie Hits",
+        "80s Flashback",
+        "Electronic & Techno",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Axel_F",
+        "https://www.songfacts.com/facts/harold-faltermeyer/axel-f",
+        "https://en.wikipedia.org/wiki/Beverly_Hills_Cop",
+        "https://en.wikipedia.org/wiki/Harold_Faltermeyer",
+        "https://music.apple.com/us/album/axel-f/1458388091?i=1458388103"
+      ]
+    },
+    {
+      "id": "harry-styles-as-it-was-2022",
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "year": 2022,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Atmospheric",
+        "Happy",
+        "Heartbreak",
+        "Legends & Classics",
+        "Modern",
+        "Nostalgic",
+        "Popular",
+        "Rainy Day",
+        "Road Trip"
+      ],
+      "hints": [
+        "Der Song entstand 2020 im Henson-Studio in Hollywood und erschien zunächst am 1. April 2022 als Promo-Single.",
+        "Den Song eröffnet eine aufgenommene Kinderstimme - das Patenkind des Sängers, die Tochter des Produzenten Ben Winston.",
+        "Er brach den Rekord für die meisten Spotify-Streams innerhalb von 24 Stunden bei einem männlichen Künstler.",
+        "Ein wehmütiger Synth-Pop mit 80er-Vorbildern und fröhlichem Instrumentalsatz, der die nachdenklichen Texte konterkariert.",
+        "Der Sänger singt, dass er nicht allein zu Hause sein soll - und dass nichts mehr so ist wie es war."
+      ],
+      "lyrics": {
+        "real": [
+          "I want you to hold out the palm of your hand",
+          "In this world, it's just us, you know it's not the same as it was",
+          "Answer the phone, Harry, you're no good alone, why are you sitting at home on the floor?"
+        ],
+        "fake": "The road is long but I will find my way back to you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nujn6wbr-e8",
+        "spotify": "https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e",
+        "amazonMusic": "https://music.amazon.com/tracks/B09WTTL96T"
+      },
+      "coverUrl": "/covers/harry-styles-as-it-was-2022.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/As_It_Was",
+        "https://www.songfacts.com/facts/harry-styles/as-it-was",
+        "https://en.wikipedia.org/wiki/Harry%27s_House",
+        "https://music.apple.com/us/album/as-it-was/1615584999?i=1615585008",
+        "https://www.youtube.com/watch?v=H5v3kku4y6Q"
+      ]
+    },
+    {
+      "id": "yt-ls6XtAmqERc",
+      "title": "Late Night Talking",
+      "artist": "Harry Styles",
+      "year": 2022,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Der Song entstand am ersten Studio-Tag des dritten Soloalbums - Kid Harpoon spielte sämtliche Instrumente.",
+        "Er erschien 2022 als zweite Single des Albums und wurde zunächst an US-Radio Rotation genommen.",
+        "Das Video vom 13. Juli 2022 zeigt den Sänger, der einem Portal in seinem Bett folgt und durch London reist.",
+        "Die Kritik lobt einen glänzenden R&B-Sound, in dem selbst die Gesangspartien Blechbläser nachahmen.",
+        "Der Refrain dreht sich darum, für die Geliebte da zu sein: 'I just wanna make you happier, baby'."
+      ],
+      "lyrics": {
+        "real": [
+          "Things haven't been quite the same, there's a haze on the horizon, babe",
+          "If you're feeling down, I just wanna make you happier, baby",
+          "You stub your toe, I break your camera, I'd do everything I can to help you through"
+        ],
+        "fake": "Neon lights and city rain, we dance forever on the train again tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ls6XtAmqERc",
+        "spotify": "https://open.spotify.com/track/1qEmFfgcLObUfQm0j1W2CK"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "youtube-import",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/harry-styles-late-night-talking-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Late_Night_Talking",
+        "https://www.songfacts.com/facts/harry-styles/late-night-talking",
+        "https://en.wikipedia.org/wiki/Harry%27s_House",
+        "https://music.apple.com/us/album/late-night-talking/1615584999?i=1615585006",
+        "https://www.youtube.com/watch?v=4VaqA-5aQTM"
+      ]
+    },
+    {
+      "id": "yt-KPM_BYl-EaQ",
+      "title": "Watermelon Sugar",
+      "artist": "Harry Styles",
+      "year": 2019,
+      "country": "GB",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Der Song entstand 2017 während der Tournee zum ersten Soloalbum - in Nashville spontan geschrieben.",
+        "Musikalisch eine Funk-Pop-Nummer mit Einflüssen der 70er-Jahre, Blechbläsern und Gitarren.",
+        "Aufgenommen wurde er unter anderem im Real-World-Studio in Bath, im RAK-Studio in London und im The Cave in Nashville.",
+        "Das Video vom 18. Mai 2020 wurde von Bradley & Pablo in Malibu gedreht.",
+        "2020 wurde er die erste US-Nummer-eins-Hit des Sängers, 2021 gewann er den Grammy für den besten Pop-Solopart."
+      ],
+      "lyrics": {
+        "real": [
+          "Tastes like strawberries on a summer evenin'",
+          "Breathe me in, breathe me out, I don't know if I could ever go without",
+          "I want your belly and that summer feelin', getting washed away in you"
+        ],
+        "fake": "Rolling down the dusty road, we chase the stars until the morning"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KPM_BYl-EaQ",
+        "spotify": "https://open.spotify.com/track/1e9oZCCiX42nJl0AcqriVo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "coverUrl": "/covers/harry-styles-watermelon-sugar.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Watermelon_Sugar",
+        "https://www.songfacts.com/facts/harry-styles/watermelon-sugar",
+        "https://en.wikipedia.org/wiki/Fine_Line_(Harry_Styles_album)",
+        "https://music.apple.com/us/album/watermelon-sugar/1485802965?i=1485802967",
+        "https://en.wikipedia.org/wiki/63rd_Annual_Grammy_Awards"
+      ]
+    },
+    {
+      "id": "metal-hatebreed-heard",
+      "title": "I Will Be Heard",
+      "artist": "Hatebreed",
+      "year": 2002,
+      "country": "US",
+      "genre": "Hardcore Metal / Metalcore",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Confident"
+      ],
+      "hints": [
+        "Ein Metalcore-Track, der 2002 auf dem zweiten Album der Band erschien, das bei Universal veröffentlicht wurde.",
+        "Produziert wurde das Album von Matt Hyde.",
+        "Sänger Jamey Jasta singt über Entschlossenheit - davon, das eigene Leben zurückzuerobern.",
+        "Der Song wurde bereits 2001 vorab als Single ausgekoppelt.",
+        "Refrain: 'Now is the time for me to rise to my feet' - mit wütender, flehender Stimme geschrieben."
+      ],
+      "lyrics": {
+        "real": [
+          "Now is the time for me to rise to my feet, wipe your spit from my face",
+          "I've got to take my life back, one chance to make it right",
+          "I've been tried and tested, but I won't accept defeat"
+        ],
+        "fake": "Chains are heavy but my voice cuts through the deafening roar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HB3tmC2f3t0",
+        "spotify": "https://open.spotify.com/track/3EPQeSbWt7vrHmnJMwo6v6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-hatebreed-heard.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Perseverance_(Hatebreed_album)",
+        "https://www.songfacts.com/facts/hatebreed/i-will-be-heard",
+        "https://en.wikipedia.org/wiki/Hatebreed",
+        "https://music.apple.com/us/album/i-will-be-heard/1440787464?i=1440787474",
+        "https://en.wikipedia.org/wiki/Jamey_Jasta"
+      ]
+    },
+    {
+      "id": "yt-_PCFdX_JRDg",
+      "title": "Cumbia sonidera",
+      "artist": "Hechiceria",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Karnevalstracker, dessen Rhythmus auf der charakteristischen 'chu-chucu-chu'-Figur der Guacharaca aufbaut und der Trommeln, Flöten und Bläser kombiniert.",
+        "Die Aufnahme erschien 2021 auf einem Compilation-Album, das mehrere Titel derselben Richtung bündelt; die Laufzeit beträgt 3:57.",
+        "Das Video, das den Track ursprünglich vorstellt, bewirbt ihn mit Hashtags zur kolumbianischen Herkunft und zur entspannten Variante der Richtung.",
+        "Die Wurzeln des Stils liegen in den afrikanisch-kolumbianischen Bestattungstraditionen, aus denen er sich in der Kolonialzeit entwickelte.",
+        "Das Originalvideo nennt im Titel bereits die Herkunft aus Kolumbien und den Namen der Richtung."
+      ],
+      "lyrics": {
+        "real": [
+          "Que vas hacer con este negro muchacha",
+          "Es la hechicería",
+          "Hechicería que me da la alegría"
+        ],
+        "fake": "Baila conmigo hasta que amanezca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_PCFdX_JRDg"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "youtube-import",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/hechiceria-cumbia-sonidera.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cumbia",
+        "https://en.wikipedia.org/wiki/Colombia",
+        "https://en.wikipedia.org/wiki/Guacharaca",
+        "https://music.apple.com/us/album/hechiceria/1595809654?i=1595810334",
+        "https://www.youtube.com/watch?v=_PCFdX_JRDg"
+      ]
+    },
+    {
+      "id": "yt-7cvyIovPttA",
+      "title": "Ella Mintió",
+      "artist": "Hector Lavoe",
+      "year": 1987,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Salsa-Song, der 1987 bei Fania Records erschien.",
+        "Die Session fand im März 1986 statt: Gespielt wurden 16 Titel, von denen Sänger, Bandleader Willie Colón und Fania-Chef Jerry Masucci gemeinsam acht für die Platte auswählten.",
+        "Das Album führt acht Titel; der gesuchte steht an fünfter Stelle und läuft in der Studioaufnahme 4:46 Minuten.",
+        "Im Refrain wiederholt sich der Titel dreimal, dazwischen singt der Sänger die Zeile 'Era un juego y nada más'.",
+        "Der Titel ist das spanische Verb 'lügen' in der Vergangenheitsform – die Titelheldin hat den Sänger nur belogen."
+      ],
+      "lyrics": {
+        "real": [
+          "Ella dijo que me amaba y no era verdad",
+          "Con el corazón destrozado y el rostro mojado",
+          "Mentiras, todo era mentiras, palabras al viento"
+        ],
+        "fake": "Caminé por la playa jurando que volvería contigo otra vez"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7cvyIovPttA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/hector-lavoe-ella-mintio.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/H%C3%A9ctor_Lavoe",
+        "https://es.wikipedia.org/wiki/H%C3%A9ctor_Lavoe",
+        "https://itunes.apple.com/lookup?id=1464281419&entity=song",
+        "https://lrclib.net/api/get?artist_name=Hector%20Lavoe&track_name=Ella%20Mintio",
+        "https://www.youtube.com/watch?v=7cvyIovPttA"
+      ]
+    }
+  ]
+}

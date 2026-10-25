@@ -1,0 +1,338 @@
+{
+  "songs": [
+    {
+      "id": "rock-gnr-sweet-child-o-mine",
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Epic",
+        "Legends & Classics",
+        "Popular",
+        "Rock",
+        "Romantic"
+      ],
+      "hints": [
+        "Das berühmte Intro-Riff entstand beim Aufwärmen: Der Gitarrist spielte eine Zirkusmelodie, aus der erst später der Song wurde.",
+        "Der Sänger schrieb den Text für seine damalige Freundin, die Tochter des Duos The Everly Brothers.",
+        "Das Musikvideo entstand 1987: Die Band probt darin in einem Ballroom in Kalifornien, und die Freundinnen aller Musiker sind zu sehen.",
+        "1988 erschien der Song als dritte Single des Debütalbums und stieg auf Platz 1 der US-Singlecharts – der einzige Nummer-eins-Hit der Band.",
+        "Das einleitende Riff wurde 2004 von den Lesern des britischen Magazins 'Total Guitar' zum besten Riff aller Zeiten gewählt."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sweet_Child_o'_Mine",
+        "https://en.wikipedia.org/wiki/Appetite_for_Destruction",
+        "https://en.wikipedia.org/wiki/Guns_N'_Roses",
+        "https://www.songfacts.com/facts/guns-n-roses/sweet-child-o-mine",
+        "https://news.bbc.co.uk/2/hi/entertainment/3677965.stm"
+      ],
+      "lyrics": {
+        "real": [
+          "She's got a smile that it seems to me",
+          "Where everything was as fresh as the bright blue sky",
+          "Now and then when I see her face"
+        ],
+        "fake": "In the shadow of the night, I will hold you tight and make it right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oMfMUfgjiLg",
+        "spotify": "https://open.spotify.com/track/7snQQk1zcKl8gZ92AnueZW",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/guns-n--roses-sweet-child-o-mine-single.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Rock Anthems",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "rock-gnr-jungle",
+      "title": "Welcome to the Jungle",
+      "artist": "Guns N' Roses",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hard Rock / Glam Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Dangerous",
+        "Classic"
+      ],
+      "hints": [
+        "Er eröffnet das Debütalbum der Band und erschien 1987 als zweite Single.",
+        "Das Video (Regie: Nigel Dick) wurde nur einmal und nachts um fünf ausgestrahlt – danach war es MTVs meistgefragtes Video.",
+        "In den USA erreichte der Song Platz 7 der Singlecharts, in Großbritannien Platz 24.",
+        "Das Breakdown basiert auf einem Stück, das der Bassist schon 1978 für seine Punkband geschrieben hatte.",
+        "2009 wählte der Musiksender VH1 den Song zum besten Hard-Rock-Song aller Zeiten."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Welcome_to_the_Jungle",
+        "https://en.wikipedia.org/wiki/Appetite_for_Destruction",
+        "https://en.wikipedia.org/wiki/Guns_N'_Roses",
+        "https://en.wikipedia.org/wiki/Nigel_Dick",
+        "https://www.songfacts.com/facts/guns-n-roses/welcome-to-the-jungle"
+      ],
+      "lyrics": {
+        "real": [
+          "We got everything you want, honey, we know the names",
+          "If you got the money, honey, we got your disease",
+          "And you're a very sexy girl, who's very hard to please"
+        ],
+        "fake": "Smoke in the air and the crowd moves like a hungry snake"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=o1tj2zJ2Wvg",
+        "spotify": "https://open.spotify.com/track/0G21yYKMZoHa30cYVi1iA8",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/guns-n--roses-welcome-to-the-jungle-single.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Rock Anthems",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "class-holst-mars",
+      "title": "The Planets (Mars, the Bringer of War)",
+      "artist": "Gustav Holst",
+      "year": 1914,
+      "country": "GB",
+      "genre": "Modern Classical / Suite",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Epic",
+        "Tense"
+      ],
+      "hints": [
+        "Der erste von sieben Sätzen einer Orchestersuite, die zwischen 1914 und 1917 entstand, steht im ungewöhnlichen 5/4-Takt.",
+        "Jeder Satz ist einem Planeten gewidmet und folgt dessen astrologischer Bedeutung.",
+        "Die Uraufführung fand 1918 in der Queen's Hall in London statt, dirigiert von Adrian Boult vor rund 250 geladenen Gästen.",
+        "Der Satz beginnt leise mit Schlagzeug, Harfe und col legno-Streichern und steigert sich bis zum vierfachen Fortissimo.",
+        "Der Komponist nannte das Werk ursprünglich 'Sieben Stücke für großes Orchester'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Planets",
+        "https://en.wikipedia.org/wiki/Mars_(Holst)",
+        "https://en.wikipedia.org/wiki/Gustav_Holst",
+        "https://en.wikipedia.org/wiki/Adrian_Boult",
+        "https://en.wikipedia.org/wiki/List_of_compositions_by_Gustav_Holst"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cXOanvv4plU",
+        "spotify": "https://open.spotify.com/track/1C3RIRKQZhSk5d2iioIhkg",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SSKCFG"
+      },
+      "coverUrl": "/covers/class-holst-mars.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "yt-juN8L5mdXu4",
+      "title": "Que Pena Que Acabou - DVD 50/50",
+      "artist": "Gusttavo Lima",
+      "year": 2016,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Idee zum Stück entstand während der Aufzeichnung eines Live-Albums: Das Publikum sang den Refrain so laut, dass der Sänger ihn danach aufnehmen ließ.",
+        "Geschrieben wurde der Song von vier Autoren, produziert hat ihn Dudu Borges.",
+        "Das Live-Album entstand im März 2016 in Caldas Novas im brasilianischen Bundesstaat Goiás; sein Titel steht für die Mischung aus romantischen Songs und Balladen.",
+        "Der Song belegte fünf nicht aufeinanderfolgende Wochen Platz 1 der brasilianischen Airplay-Charts.",
+        "Der Text schildert das Ende einer Beziehung – zurück bleiben der Duft der gemeinsamen Bettwäsche und die Erinnerungen."
+      ],
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Que_Pena_Que_Acabou",
+        "https://pt.wikipedia.org/wiki/50/50_(%C3%A1lbum)",
+        "https://pt.wikipedia.org/wiki/Gusttavo_Lima",
+        "https://en.wikipedia.org/wiki/Gusttavo_Lima",
+        "https://pt.wikipedia.org/wiki/Billboard_Brasil"
+      ],
+      "lyrics": {
+        "real": [
+          "Ainda não tive coragem de arrumar a cama",
+          "O seu cheiro está entre os nossos lençóis",
+          "Sera que você ainda pensa em mim"
+        ],
+        "fake": "Eu danço na chuva só pra te ver sorrir"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=juN8L5mdXu4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/gusttavo-lima-que-pena-que-acabou---dvd-50-50--vídeo-oficial-.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "yt-oFJIenHfjK0",
+      "title": "BALADA (TCHÊ TCHERERE TCHÊ TCHÊ)",
+      "artist": "Gusttavo Lima & Neymar",
+      "year": 2011,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger wollte das Stück anfangs nicht aufnehmen – erst sein Manager setzte es durch.",
+        "Cássio Sampaio schrieb den Song, produziert wurde er von Dudu Borges.",
+        "Das Video entstand 2011 bei einem Fest in Patos de Minas vor rund 60.000 Zuschauern.",
+        "Als Single erschien er 2011, erreichte in Brasilien Platz 3 der Airplay-Charts und in den Niederlanden und Belgien die Top 10.",
+        "In Frankreich kam das Stück in die Top 25, und in Amsterdam gewann es einen Preis bei den Top 40 Awards."
+      ],
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Balada_(can%C3%A7%C3%A3o)",
+        "https://pt.wikipedia.org/wiki/Gusttavo_Lima_e_Voc%C3%AA",
+        "https://en.wikipedia.org/wiki/Gusttavo_Lima",
+        "https://pt.wikipedia.org/wiki/Gusttavo_Lima",
+        "https://pt.wikipedia.org/wiki/Patos_de_Minas"
+      ],
+      "lyrics": {
+        "real": [
+          "Eu já lavei o meu carro, regulei o som",
+          "Menina, fica à vontade, entre e faça a festa",
+          "Dançar, pular até o sol raiar"
+        ],
+        "fake": "Eu compro teu amor com o primeiro salário da vida"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oFJIenHfjK0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/gusttavo-lima-neymar-balada.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "country-guyclark-train",
+      "title": "Desperados Waiting for a Train",
+      "artist": "Guy Clark",
+      "year": 1975,
+      "country": "US",
+      "genre": "Country / Folk / Storytelling",
+      "difficulty": "hard",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song erzählt von einem alten Mann, der im Leben der Freund der Großmutter des Songwriters war.",
+        "Geschrieben wurde das Stück 1973 und zuerst von Jerry Jeff Walker aufgenommen; der Songwriter veröffentlichte seine eigene Version zwei Jahre später auf seinem Debütalbum.",
+        "Der Song wurde von vielen Größen des Genres nachgespielt, unter anderem von Steve Earle, Jerry Jeff Walker, Nanci Griffith und Brian Jones.",
+        "1985 nahmen die Highwaymen den Song auf; ihre Single erreichte Platz 15 der US-Country-Charts.",
+        "Die Western Writers of America wählten das Lied zu den 100 besten Westerntiteln aller Zeiten."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Desperados_Waiting_for_a_Train",
+        "https://en.wikipedia.org/wiki/Guy_Clark",
+        "https://en.wikipedia.org/wiki/Old_No._1",
+        "https://en.wikipedia.org/wiki/Jerry_Jeff_Walker",
+        "https://en.wikipedia.org/wiki/The_Highwaymen_(country_supergroup)"
+      ],
+      "lyrics": {
+        "real": [
+          "Run his fingers through seventy years of livin'",
+          "He taught me how to drive his car when he was too drunk to",
+          "One day I looked up and he's pushin' eighty"
+        ],
+        "fake": "Waiting on the platform with a ticket in my dusty coat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9hbNwnnExTQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-guyclark-train.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ]
+    }
+  ]
+}

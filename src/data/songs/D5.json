@@ -1,0 +1,741 @@
+{
+  "songs": [
+    {
+      "id": "movie-pulp-fiction-misirlou",
+      "title": "Misirlou",
+      "artist": "Dick Dale & The Del-Tones",
+      "year": 1962,
+      "country": "US",
+      "genre": "Surf Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Raw",
+        "Cool"
+      ],
+      "hints": [
+        "Ein Instrumental aus der kalifornischen Surfszene der frühen 1960er.",
+        "Die Melodie stammt aus dem östlichen Mittelmeerraum und wurde erstmals 1927 von einem Rebetiko-Musiker auf Schallplatte aufgenommen.",
+        "Als Single erschien der Titel 1962 auf Deltone Records, auf der Rückseite stand Eight Till Midnight.",
+        "Ein Tarantino-Film von 1994 machte die Aufnahme weltberühmt – sie läuft im Vorspann.",
+        "Bereits 1941 hatte ein in den USA lebender griechischstämmiger Arrangeur die Melodie als Jazz-Version veröffentlicht und gilt bis heute als Komponist."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZIU0RMV_II8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-pulp-fiction-misirlou.jpg",
+      "packs": [
+        "Movie Hits",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Misirlou",
+        "https://en.wikipedia.org/wiki/Pulp_Fiction",
+        "https://en.wikipedia.org/wiki/Dick_Dale",
+        "https://lrclib.net/api/get?artist_name=Dick%20Dale%20%26%20The%20Del-Tones&track_name=Misirlou",
+        "https://music.apple.com/us/album/misirlou/1599279849?i=1599280029"
+      ]
+    },
+    {
+      "id": "disney-poppins-chim",
+      "title": "Chim Chim Cher-ee",
+      "artist": "Dick Van Dyke",
+      "year": 1964,
+      "country": "US",
+      "genre": "Soundtrack / Waltz",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Walzer über einen Schornsteinfeger, dem die Menschen seit alters her Glück nachsagen.",
+        "Die Inspiration lieferte eine Zeichnung des Drehbuchautors, die einen glückbringenden Schornsteinfeger zeigte.",
+        "Die Komponisten schrieben das Stück für einen Disney-Film von 1964, in dem die Titelmelodie über den Ziegeln von London erklingt.",
+        "Für den Walzer-Takt gewannen die Autoren 1965 den Oscar für den besten Song.",
+        "Im Film singen zwei Stars den Refrain gemeinsam – einer davon gewann ein Jahr später den Oscar als beste Hauptdarstellerin."
+      ],
+      "lyrics": {
+        "real": [
+          "A sweep is as lucky as lucky can be",
+          "Good luck will rub off",
+          "Or blow me a kiss and that's lucky too"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Mp4UPCs_jsA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-poppins-chim.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Chim_Chim_Cher-ee",
+        "https://en.wikipedia.org/wiki/Mary_Poppins_(film)",
+        "https://en.wikipedia.org/wiki/Sherman_Brothers",
+        "https://api.lyrics.ovh/v1/Julie%20Andrews/Chim%20Chim%20Cher-ee",
+        "https://music.apple.com/us/album/chim-chim-cher-ee/1440796512?i=1440796680"
+      ]
+    },
+    {
+      "id": "german-fanta4-die-da",
+      "title": "Die da!?!",
+      "artist": "Die Fantastischen Vier",
+      "year": 1992,
+      "country": "DE",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Zwei Bandmitglieder erzählen sich gegenseitig von derselben Frau, die beiden den Kopf verdreht.",
+        "Der Titel gilt als einer der ersten kommerziell erfolgreichen Deutschrap-Songs.",
+        "Erschienen am 7. September 1992 war er die erste Singleauskopplung des zweiten Albums der Band.",
+        "Die Produktion sampelt Asha Puthli und Grover Washington Jr., und im Text erklingt eine synchronisierte Filmstimme aus einem Science-Fiction-Klassiker.",
+        "Im Refrain geht es um eine Frau, die am Eingang steht und freitags keine Zeit hat."
+      ],
+      "lyrics": {
+        "real": [
+          "Am Wochenende hab ich mir den Kopf verdreht",
+          "Es ist schon wieder Freitag, es ist wieder diese Bar",
+          "Wir gingen mal ins Kino hatten noch ein Rendezvous"
+        ],
+        "fake": "Walking through the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VUosAGDM8Sg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-fanta4-die-da.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Die_da!%3F!",
+        "https://de.wikipedia.org/wiki/4_gewinnt_(Album)",
+        "https://api.lyrics.ovh/v1/Die%20Fantastischen%20Vier/Die%20da%21%3F%21",
+        "https://lrclib.net/api/get?artist_name=Die%20Fantastischen%20Vier&track_name=Die%20da%21%3F%21",
+        "https://music.apple.com/us/album/die-da/267706467?i=267706518"
+      ]
+    },
+    {
+      "id": "german-hosen-hier-kommt-alex",
+      "title": "Hier kommt Alex",
+      "artist": "Die Toten Hosen",
+      "year": 1988,
+      "country": "DE",
+      "genre": "Punk Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Energy"
+      ],
+      "hints": [
+        "Der Text erzählt von einer gewalttätigen Jugendbande, die jeden Abend Jagd auf wehrlose Bürger macht.",
+        "Als Bühnenmusik zu einer Inszenierung eines dystopischen Romans entstand die Nummer und wurde zum Durchbruch der Band.",
+        "Roman und Verfilmung erschienen 1962 und 1971.",
+        "Den Text schrieb der Sänger, die Musik stammt von einem langjährigen Bandmitglied.",
+        "Der Song erschien 1988 als erster Titel des Albums 'Ein kleines bißchen Horrorschau'."
+      ],
+      "lyrics": {
+        "real": [
+          "Jeder Mensch lebt wie ein Uhrwerk",
+          "In kleinen Banden sammeln sie sich",
+          "Damit man täglich roboten geht"
+        ],
+        "fake": "Wir rennen durch die Straßen, um den Moment niemals zu verpassen"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6z8o7qAIlIU",
+        "spotify": "https://open.spotify.com/track/1zs0BxFFLfbJQTSo84rkhy",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-hosen-hier-kommt-alex.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Rock Anthems",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Hier_kommt_Alex",
+        "https://de.wikipedia.org/wiki/Uhrwerk_Orange_(Roman)",
+        "https://en.wikipedia.org/wiki/A_Clockwork_Orange_(novel)",
+        "https://lrclib.net/api/get?artist_name=Die%20Toten%20Hosen&track_name=Hier%20kommt%20Alex",
+        "https://music.apple.com/us/album/hier-kommt-alex/478013590?i=478013601"
+      ]
+    },
+    {
+      "id": "german-hosen-tage",
+      "title": "Tage wie diese",
+      "artist": "Die Toten Hosen",
+      "year": 2012,
+      "country": "DE",
+      "genre": "Punk Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Jubelsong über einen ganz besonderen Tag, auf den man seelenlang gewartet hat.",
+        "Die Musik entstand 2010 als schnelle Demo in einem Kellerstudio, der Text folgte erst ein Jahr später.",
+        "Den Text schrieb der Sänger gemeinsam mit seiner Freundin, die Musik stammt vom Gitarristen.",
+        "Veröffentlicht am 23. März 2012 erschien das Stück als erste Singleauskopplung vor dem Album 'Ballast der Republik'.",
+        "Der Refrain preist die Ewigkeit: Er singt vom Wunsch nach Unendlichkeit und davon, dass man noch ewig Zeit hat."
+      ],
+      "lyrics": {
+        "real": [
+          "An Tagen wie diesen, wünscht man sich Unendlichkeit",
+          "An Tagen wie diesen, haben wir noch ewig Zeit",
+          "Ich wart seit Wochen, auf diesen Tag"
+        ],
+        "fake": "Nichts kann uns stoppen, wir fliegen durch die Wolken irgendwie"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=j09hpp3AxIE",
+        "spotify": "https://open.spotify.com/track/2lYsCjTvXIHOqT8xSbK2jq",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-hosen-tage.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "2010s & 2020s Chart Toppers",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Tage_wie_diese",
+        "https://de.wikipedia.org/wiki/Ballast_der_Republik",
+        "https://lrclib.net/api/get?artist_name=Die%20Toten%20Hosen&track_name=Tage%20wie%20diese",
+        "https://api.lyrics.ovh/v1/Die%20Toten%20Hosen/Tage%20wie%20diese",
+        "https://music.apple.com/us/album/tage-wie-diese/507180801?i=507180915"
+      ]
+    },
+    {
+      "id": "german-aerzte-zu-spaet",
+      "title": "Zu spät",
+      "artist": "Die Ärzte",
+      "year": 1985,
+      "country": "DE",
+      "genre": "Punk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Fun"
+      ],
+      "hints": [
+        "Ein spleeniger Rocksong über eine Frau, die einen reicheren Mann einem ärmeren vorzieht.",
+        "Der Textautor ist zugleich der Sänger der Band und schrieb das Lied für das Debütalbum.",
+        "Der Protagonist vergleicht seine Mittel mit den Luxusgütern des Rivalen und bringt dessen Karate-Künste ins Spiel.",
+        "Im Refrain kündigt er seinen Plan an und träumt davon, eines Tages in der Zeitung zu stehen.",
+        "Das Lied erschien zuerst auf dem 1984 veröffentlichten Debütalbum, die daraus gelöste Single kam 1985 und verfehlte die Charts, bis die Live-Version 1989 traf."
+      ],
+      "lyrics": {
+        "real": [
+          "Doch eines Tages werd' ich mich rächen",
+          "Ich werd' die Herzen aller Mädchen brechen",
+          "Ich bin arm und er hat Geld"
+        ],
+        "fake": "In der Schule warst du schon die Königin, und ich hatte nur meinen Sinn"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ShPkW-JIlA4",
+        "spotify": "https://open.spotify.com/track/5FFGr69nqIPiNn9MTaHXKb",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-aerzte-zu-spaet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Rock Anthems",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Zu_sp%C3%A4t_(Lied)",
+        "https://de.wikipedia.org/wiki/Debil_(Album)",
+        "https://de.wikipedia.org/wiki/Die_%C3%84rzte",
+        "https://music.apple.com/us/album/zu-sp%C3%A4t/1533957895?i=1533958035",
+        "https://open.spotify.com/track/5FFGr69nqIPiNn9MTaHXKb"
+      ]
+    },
+    {
+      "id": "yt-Nb1VOQRs-Vs",
+      "title": "Color Esperanza",
+      "artist": "Diego Torres",
+      "year": 2001,
+      "country": "AR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text stammt vom argentinischen Komponisten Coti Sorokin, gemeinsam mit Cachorro López; produziert wurde der Song für Sony Music Latin.",
+        "Aufgenommen wurde das Stück im Herbst 2001 in Studios in Buenos Aires, Madrid und Miami.",
+        "Es ist der zweite Single des Albums 'Un mundo diferente' von 2001; als Single erschien er im Januar 2002.",
+        "Der Sänger sang den Song später auch vor Papst Johannes Paul II, und 2004 gab es eine 'MTV Unplugged'-Fassung.",
+        "Der Titel bedeutet sinngemäß 'Farbe der Hoffnung' – der Refrain malt das Leben bunt. 2020 erschien dazu eine Benefiz-Fassung mit Global Citizen für die Panamerikanische Gesundheitsorganisation."
+      ],
+      "lyrics": {
+        "real": [
+          "Sé que hay en tus ojos con solo mirar",
+          "Sentirás que el alma vuela",
+          "Vale más poder brillar"
+        ],
+        "fake": "Amanecerá el mundo con tu risa en la boca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Nb1VOQRs-Vs",
+        "spotify": "https://open.spotify.com/track/3T07pNAEVr9adeIG9i1ex4",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "country-folk",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/diego-torres-color-esperanza.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Color_esperanza",
+        "https://music.apple.com/us/album/color-esperanza/1308787068?i=1308787070",
+        "https://www.paho.org/es/noticias/17-5-2020-sony-music-latin-global-citizen-lanzan-nueva-version-color-esperanza-beneficio",
+        "https://www.youtube.com/watch?v=Nb1VOQRs-Vs",
+        "https://api.lyrics.ovh/v1/Diego%20Torres/Color%20Esperanza"
+      ]
+    },
+    {
+      "id": "yt-QAwmqirO6TQ",
+      "title": "Dile",
+      "artist": "Varios",
+      "year": 2013,
+      "country": "MX",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track ist Teil einer mexikanischen Reggaeton-Kompilation, die 2013 bei den Labels Prodisc und NMR Digital erschien.",
+        "Auf dem Album stehen weitere Titel wie 'Chupa Chupa (Remix)' und 'Mujeres Bailando'.",
+        "Die Kompilation erschien am 15. Februar 2013; die Rechte hält die mexikanische Firma Alternativa Representa.",
+        "Der Titel ist keinem einzelnen Interpreten zugeordnet, sondern läuft unter einem Sammelnamen – die Platte vereint viele Acts der Latin Szene.",
+        "Der Titel besteht aus einem einzigen spanischen Verb in der Anredeform – ein typischer Reggaeton-Titel, der die Tänzer direkt anspricht."
+      ],
+      "lyrics": {
+        "real": [
+          "Dile que bailando te conocí",
+          "Cuéntale que te conocí bailando",
+          "Cuéntale que soy mejor que él"
+        ],
+        "fake": "El perreo me salva y se me olvida tu nombre"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QAwmqirO6TQ",
+        "spotify": "https://open.spotify.com/track/57Yc562FwF6DK6FcZwr1Q0",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/dile-keep-calm-and-baila-reggaeton.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=oHOc8-tqTUs",
+        "https://www.youtube.com/watch?v=4dfAS343opg",
+        "https://open.spotify.com/embed/track/57Yc562FwF6DK6FcZwr1Q0",
+        "https://www.youtube.com/watch?v=QAwmqirO6TQ",
+        "https://www.youtube.com/watch?v=VIRQgP3fCJM"
+      ]
+    },
+    {
+      "id": "yt-UWV41yEiGq0",
+      "title": "Diles",
+      "artist": "Bad Bunny, Ozuna, Farruko, Arcángel, Ñengo Flow",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Trap / Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "DJ Luian und Mambo Kingz haben den Beat produziert, auf dem fünf Acts nacheinander zu Wort kommen.",
+        "Das Mash-up erschien am 26. August 2016 beim Label Hear This Music unter exklusiver Lizenz von Rimas Entertainment.",
+        "Der Text wechselt zwischen den Strophen der beteiligten Sänger; eine Zeile kehrt dabei mehrfach als Refrain wieder.",
+        "Das Stück erschien 2017 auch auf einem weiteren Release namens 'El conejo malo'.",
+        "Fünf Acts, ein Beat: Alle Beteiligten kommen aus Puerto Rico und prägten den Latin Trap."
+      ],
+      "lyrics": {
+        "real": [
+          "Que te hablo malo y que eso te excita",
+          "Tú me llamas con la necesidad",
+          "Porque te gusta cómo te doy"
+        ],
+        "fake": "Yo te cuido la noche, no te duermas"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UWV41yEiGq0",
+        "spotify": "https://open.spotify.com/track/6C1RD7YQVvt3YQj0CmuTeu",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/bad-bunny-ozuna-farruko-arcangel-nengo-flow-diles.jpg",
+      "hintEvidence": [
+        "https://open.spotify.com/embed/track/6C1RD7YQVvt3YQj0CmuTeu",
+        "https://www.youtube.com/watch?v=UWV41yEiGq0",
+        "https://api.lyrics.ovh/v1/%C3%91engo%20Flow/Diles",
+        "https://musicbrainz.org/ws/2/release/49a3b524-4ce1-4e66-acdc-0136a7375148?fmt=json&inc=recordings+labels+artist-credits",
+        "https://musicbrainz.org/ws/2/recording/?query=recording:%22Diles%22%20AND%20date:2016&fmt=json"
+      ]
+    },
+    {
+      "id": "jazz-dinah-daymade",
+      "title": "What a Diff'rence a Day Made",
+      "artist": "Dinah Washington",
+      "year": 1959,
+      "country": "US",
+      "genre": "Jazz / Vocal / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Der spanische Originaltext stammt von der mexikanischen Songwriterin María Grever und entstand 1934 unter dem Titel 'Cuando vuelva a tu lado'.",
+        "Den englischen Text schrieb Stanley Adams, veröffentlicht wurde er Ende 1934; den ersten Tonrecorder legte Jimmy Ague im selben Jahr ab.",
+        "Bereits 1934 nahmen die Dorsey Brothers den Song mit Bob Crosby auf; 1964 sangen Eydie Gormé und Los Panchos die spanische Fassung.",
+        "Die Sängerin gewann 1959 den Grammy für die beste Rhythm-&-Blues-Darbietung, 1998 wurde das Stück in die Grammy Hall of Fame aufgenommen.",
+        "Der Refrain stellt einen trüben gestrigen Tag einem hellen, verheißungsvollen heute gegenüber – 24 Stunden machen den Unterschied."
+      ],
+      "lyrics": {
+        "real": [
+          "Brought the sun and the flowers",
+          "My yesterday was blue, dear",
+          "There's a rainbow before me"
+        ],
+        "fake": "Shadows fall softly on an empty street tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=upJ3OgMRiUA",
+        "spotify": "https://open.spotify.com/track/66iKqUazBbTlAEjcZrpDkD",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-dinah-daymade.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/What_a_Diff%27rence_a_Day_Makes",
+        "https://en.wikipedia.org/wiki/Dinah_Washington",
+        "https://en.wikipedia.org/wiki/What_a_Diff%27rence_a_Day_Makes!",
+        "https://music.apple.com/us/album/what-a-diffrence-a-day-made-single-version/1434896695?i=1434896962",
+        "https://api.lyrics.ovh/v1/Dinah%20Washington/What%20a%20Diff'rence%20a%20Day%20Made"
+      ]
+    },
+    {
+      "id": "yt-XUgoCqbVt5I",
+      "title": "Dialeto",
+      "artist": "Diogo Piçarra",
+      "year": 2016,
+      "country": "PT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger kommt aus Faro, wurde 1990 geboren und gewann 2012 die fünfte Staffel der Castingshow 'Ídolos Portugal'.",
+        "Musik, Text und Produktion lagen beim Sänger selbst; für Mixing und Mastering zeichnete Karetus verantwortlich.",
+        "Die Idee und das Konzept des Songs entstanden gemeinsam mit Ricardo Reis und Lilia Costa, die auch Regie und künstlerische Leitung des Clips übernahmen.",
+        "Der Song erschien am 12. Juli 2016 als Single über Universal Music Portugal.",
+        "Im Refrain singt der Sänger davon, was sein eigener Dialekt ist – der Titel meint die regionale Färbung seiner Sprache."
+      ],
+      "lyrics": {
+        "real": [
+          "Fugir como sempre que o amor nos pede",
+          "Às vezes sou mais do que aquilo que pedes",
+          "Eu sei que falas só para mim"
+        ],
+        "fake": "A lua aparece quando o dia se despede"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XUgoCqbVt5I",
+        "spotify": "https://open.spotify.com/track/7MWkiMxhOIAqajKsQwDdWi",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/diogo-piçarra-dialeto.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Diogo_Pi%C3%A7arra",
+        "https://music.apple.com/us/album/dialeto/1445313011?i=1445313017",
+        "https://www.youtube.com/watch?v=XUgoCqbVt5I",
+        "https://open.spotify.com/oembed?url=https://open.spotify.com/track/7MWkiMxhOIAqajKsQwDdWi",
+        "https://api.lyrics.ovh/v1/Diogo%20Pi%C3%A7arra/Dialeto"
+      ]
+    },
+    {
+      "id": "80s-dire-straits-money-for-nothing",
+      "title": "Money for Nothing",
+      "artist": "Dire Straits",
+      "year": 1985,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Rock",
+        "Electronic"
+      ],
+      "hints": [
+        "Das Musikvideo war eines der ersten mit computeranimierten 3D-Figuren.",
+        "Mark Knopflers Gitarrenriff ist einer der markantesten der Rockgeschichte.",
+        "Sting singt im Hintergrund die Zeilen 'I want my MTV'.",
+        "Der Text ist aus der Sicht von Arbeitern geschrieben, die Musiker im Fernsehen beobachten.",
+        "Der Song stand drei Wochen auf Platz 1 der US-Billboard-Hot-100 und brachte der Band 1986 den Grammy für den besten Rockgesang."
+      ],
+      "lyrics": {
+        "real": [
+          "I want my MTV",
+          "Now look at them yo-yos, that's the way you do it",
+          "You play the guitar on the MTV"
+        ],
+        "fake": "I work the night shift, counting coins in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wTP2RUD_cL0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/80s-dire-straits-money-for-nothing.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Money_for_Nothing",
+        "https://en.wikipedia.org/wiki/Brothers_in_Arms_(album)",
+        "https://www.songfacts.com/facts/dire-straits/money-for-nothing",
+        "https://www.grammy.com/artists/dire-straits/10580",
+        "https://api.lyrics.ovh/v1/Dire%20Straits/Money%20for%20Nothing"
+      ]
+    },
+    {
+      "id": "yt--IOIsq7zsvM",
+      "title": "One By One (feat. Oaks)",
+      "artist": "Robin Schulz & Topic",
+      "year": 2024,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Euphoric",
+        "Romantic"
+      ],
+      "hints": [
+        "Ein elektronischer Tanztrack, dessen Text sich um Erinnerungen an eine lange Nacht dreht.",
+        "Der Refrain besteht aus einem kurzen Satz, der im Lied mehrfach wiederholt wird.",
+        "Die Stimme im Refrain gehört einer Schwedin, die unter mehreren Namen auftritt.",
+        "Der Main Act ist ein 1987 in Osnabrück geborener deutscher DJ, dessen Stil zwischen Deep und Tropical House liegt.",
+        "Die Single erschien am 19. Januar 2024, läuft 2:41 Minuten und entstand mit zwei weiteren Künstlern."
+      ],
+      "lyrics": {
+        "real": [
+          "Pour up the memories one by one",
+          "Dancing in the dark to your heartbeat, heartbeat",
+          "Neon lights all up and down the street"
+        ],
+        "fake": "Chasing silver clouds across a diamond sky"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-IOIsq7zsvM",
+        "spotify": "https://open.spotify.com/track/2D1P2Y9RUxZW2Ch9A1rwHA",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/disciples-one-by-one--feat--oaks-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Robin_Schulz",
+        "https://en.wikipedia.org/wiki/Robin_Schulz_discography",
+        "https://en.wikipedia.org/wiki/Winona_Oak",
+        "https://music.apple.com/us/album/one-by-one-feat-oaks/1722659597?i=1722659598",
+        "https://lrclib.net/api/get?artist_name=Robin%20Schulz&track_name=One%20By%20One"
+      ]
+    }
+  ]
+}

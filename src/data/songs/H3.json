@@ -1,0 +1,453 @@
+{
+  "songs": [
+    {
+      "id": "schlager-howard-carpendale-hello",
+      "title": "Hello Again",
+      "artist": "Howard Carpendale",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Classic",
+        "Emotional"
+      ],
+      "hints": [
+        "Der Interpret wurde in Durban in Südafrika geboren und gilt heute als deutsch-südafrikanischer Schlagersänger.",
+        "Der Song entstand 1984 gemeinsam mit Irma Holder und Joachim Horn-Bernges, produziert von Dieter Weidenfeld.",
+        "Ursprünglich trug der Song einen anderen englischen Titel; erst eine Anekdote des Autors gab ihm seinen endgültigen Namen.",
+        "Im Januar 1984 bei EMI erschienen, erreichte er in Deutschland Platz fünf der Charts und gewann den Silbernen Löwen von Radio Luxemburg.",
+        "Der Text beginnt damit, dass der Sänger ein Jahr lang ohne die Geliebte war und nun zurückkehrt."
+      ],
+      "lyrics": {
+        "real": [
+          "Vielleicht wird uns noch viel verbinden",
+          "Ich will dir gegenüber stehn, viel zu lang war die Zeit",
+          "Noch ein paar Stufen bis zur Tür, ich spür ein wenig Angst in mir"
+        ],
+        "fake": "Am Hafen pfeift der Wind und ich warte auf dein Schiff"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8rRgfq5X7DY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-howard-carpendale-hello.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Hello_Again_(Howard-Carpendale-Lied)",
+        "https://de.wikipedia.org/wiki/Howard_Carpendale",
+        "https://en.wikipedia.org/wiki/Hello_Again",
+        "https://lrclib.net/api/get?artist_name=Howard%20Carpendale&track_name=Hello%20Again",
+        "https://itunes.apple.com/search?term=Howard%20Carpendale%20Hello%20Again&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "score-shore-hobbits",
+      "title": "Concerning Hobbits (LOTR)",
+      "artist": "Howard Shore",
+      "year": 2001,
+      "country": "CA",
+      "genre": "Movie Score / Celtic influence",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Smooth",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der Komponist ist Kanadier und schrieb die Musik für die Verfilmung eines bekannten Fantasy-Zyklus.",
+        "Das Stück entstand 2001 für den Soundtrack zum ersten Film der Reihe und ist auf dessen Soundtrack-Album enthalten.",
+        "Es handelt sich um eine Konzertsuite, die die Musik der frühen Szenen in der friedlichen Heimat der kleinen Wesen bündelt.",
+        "Die Suite ist darauf angelegt, ein Gefühl von Frieden und Ruhe hervorzurufen, und greift auf die Leitmotive der Landschaft zurück.",
+        "Ausschnitte daraus sind auch in einer längeren Szene des 2012 gedrehten ersten Films der Fortsetzungsreihe zu hören."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CL_3mlOPnGI",
+        "spotify": "https://open.spotify.com/track/644es5aYPJghtZLjM1rmSP",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/score-shore-hobbits.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Concerning_Hobbits",
+        "https://open.spotify.com/embed/track/644es5aYPJghtZLjM1rmSP",
+        "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring_(soundtrack)",
+        "https://itunes.apple.com/search?term=Howard%20Shore%20Concerning%20Hobbits&limit=3&entity=song",
+        "https://itunes.apple.com/lookup?id=323714096&entity=song"
+      ]
+    },
+    {
+      "id": "blues-howlin-wolf-smokestack",
+      "title": "Smokestack Lightnin'",
+      "artist": "Howlin' Wolf",
+      "year": 1956,
+      "country": "US",
+      "genre": "Chicago Blues",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Moody",
+        "Powerful",
+        "Raw"
+      ],
+      "hints": [
+        "Der Bluesmann hatte den Titel bereits in den 1930er-Jahren gemeinsam mit Charley Patton im Mississippi-Delta gespielt.",
+        "Die Aufnahme entstand im Januar 1956 im Chess-Studio in Chicago und erschien im März 1956 als Single.",
+        "Die B-Seite heißt 'You Can't Be Beat'; produziert wurde die Platte von Leonard Chess, Phil Chess und Willie Dixon.",
+        "Das Stück ist ein eindringlicher Ein-Akkord-Ton, in dem es um einen armen Sänger geht, der auf einen vorbeifahrenden Zug warten muss.",
+        "Der Text kreist um die Frage, wo die Geliebte in der letzten Nacht geblieben ist."
+      ],
+      "lyrics": {
+        "real": [
+          "Shining just like gold",
+          "Why don't you hear me cryin'?",
+          "Where did you spend last night"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of the broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VMUt8KdDtTY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/blues-howlin-wolf-smokestack.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Smokestack_Lightning",
+        "https://www.songfacts.com/facts/howlin-wolf/smokestack-lightnin",
+        "https://lrclib.net/api/get?artist_name=Howlin%27%20Wolf&track_name=Smokestack%20Lightning",
+        "https://itunes.apple.com/lookup?id=1425203551&entity=song",
+        "https://itunes.apple.com/search?term=Howlin%27%20Wolf%20Smokestack%20Lightning&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-mBntcHLiXmk",
+      "title": "Hoy (Remix)",
+      "artist": "Farruko feat. Daddy Yankee, Jory & J Alvarez",
+      "year": 2011,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger kommt aus Puerto Rico; der Song erschien 2011 zunächst ohne Gäste als Solo-Single.",
+        "In der bekannten Version wirken drei weitere Rapper mit, die gemeinsam mit dem Sänger auftreten.",
+        "Der Text ist komplett auf Spanisch und erzählt von einer leidenschaftlichen Begegnung.",
+        "Der Refrain wiederholt dreimal das spanische Wort für 'heute' und kündigt dabei ein 'duro castigo' an.",
+        "Der Titel ist ein spanisches Wort und bedeutet 'heute'."
+      ],
+      "lyrics": {
+        "real": [
+          "Hoy hoy hoy te voy a dar duro castigo",
+          "Hoy hoy hoy quiero una noche contigo",
+          "Tu me dices mama si tu quiere"
+        ],
+        "fake": "Yo te juro que mi vida sin ti no tiene ningun sentido"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mBntcHLiXmk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/hoy--remix--farruko-ft--daddy-yankee--jory---j-alvarez--new---2011.jpg",
+      "hintEvidence": [
+        "https://music.apple.com/us/album/hoy/787313797",
+        "https://itunes.apple.com/lookup?id=854641726&entity=song",
+        "https://itunes.apple.com/search?term=Farruko%20Hoy%20Remix&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Farruko&track_name=Hoy",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=mBntcHLiXmk&format=json"
+      ]
+    },
+    {
+      "id": "finale-hozier-sweet",
+      "title": "Too Sweet",
+      "artist": "Hozier",
+      "year": 2024,
+      "country": "IE",
+      "genre": "Indie Rock / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Modern"
+      ],
+      "hints": [
+        "Der Song entstand für ein 2023 erschienenes Album, blieb dort aber unerschienden und wurde stattdessen solo veröffentlicht.",
+        "Der Text klagt über eine Partnerin, die zu früh aufsteht, zu früh zu Bett geht und zu vernünftig lebt.",
+        "Im Refrain nennt der Sänger seinen eigenen Rhythmus: ein Drink, schwarzer Kaffee und Schlaf um drei.",
+        "Der Titel erschien im Frühjahr 2024 auf der EP 'Unheard' mit zusätzlichen Strophen.",
+        "In Großbritannien stieg er im April 2024 auf Platz eins, in den USA war es sein erster Sieg an der Hot-100-Spitze."
+      ],
+      "lyrics": {
+        "real": [
+          "I think I'll take my whiskey neat",
+          "My coffee black and my bed at three",
+          "You're too sweet for me"
+        ],
+        "fake": "I watch the streetlights fade and think of how you left"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NTpbbQUBbuo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/finale-hozier-sweet.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/hozier/too-sweet",
+        "https://www.officialcharts.com/songs/hozier-too-sweet/",
+        "https://en.wikipedia.org/wiki/Too_Sweet",
+        "https://api.lyrics.ovh/v1/Hozier/Too%20Sweet",
+        "https://itunes.apple.com/search?term=Hozier%20Too%20Sweet&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-co5tV9VW9o8",
+      "title": "Sternenhimmel",
+      "artist": "Hubert Kah",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Musiker ist deutscher Herkunft und wurde mit seinem Trio zu Zeiten der Neuen Deutschen Welle bekannt.",
+        "1982 hatte das Trio mit mehreren Singles kommerziellen Erfolg, darunter 'Rosemarie'.",
+        "Der Text beginnt mit einem Traum davon, mit der Geliebten am Abendhimmel zu stehen.",
+        "Der Refrain ruft die Sterne dreimal an und endet mit einem 'oh oh'.",
+        "Der wiederholte Refrain nennt ein Bild aus Sternen und Himmel."
+      ],
+      "lyrics": {
+        "real": [
+          "Mit dir in der Südsee stehn",
+          "In den Abendhimmel sehn",
+          "Die Melodie brauch ich zum Glücklichsein"
+        ],
+        "fake": "Der Regen faellt so warm, wir bleiben Hand in Hand"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=co5tV9VW9o8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "German Classics",
+        "80s Flashback",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/hubert-kah-sternenhimmel.jpg",
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Hubert_Kah",
+        "https://lrclib.net/api/get?artist_name=Hubert%20Kah&track_name=Sternenhimmel",
+        "https://api.lyrics.ovh/v1/Hubert%20Kah/Sternenhimmel",
+        "https://musicbrainz.org/ws/2/release/?query=release%3A%22Sternenhimmel%22%20AND%20artist%3A%22Hubert%20Kah%22&fmt=json",
+        "https://itunes.apple.com/search?term=Hubert%20Kah%20Sternenhimmel&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "movie-huey-lewis-power-of-love",
+      "title": "The Power of Love",
+      "artist": "Huey Lewis & The News",
+      "year": 1985,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Upbeat",
+        "Classic"
+      ],
+      "hints": [
+        "Das Stück entstand als Auftragskomposition für den Soundtrack eines Science-Fiction-Klassikers, dessen Regisseur dem Sänger freistellte, über welchen Titel er schreiben wollte.",
+        "Geschrieben wurde der Song von dem Sänger und zwei Bandkollegen, produziert hat die Band ihn selbst; die Single erschien am 17. Juni 1985 bei Chrysalis Records.",
+        "Die Aufnahme entstand Ende Mai 1985, die Single wurde der erste Nummer-eins-Hit der Band in den USA und erreichte auch die Mainstream-Rock-Charts.",
+        "Bei der 58. Oscar-Verleihung war das Lied für den besten Originalsong nominiert, bei der 13. American Music Awards gewann es gleich in zwei Kategorien.",
+        "Im zugehörigen Kinofilm spielt der Sänger selbst den Juror, der eine Schul-Band beim Vorsprechen mit dem Spruch 'too darn loud' abweist."
+      ],
+      "lyrics": {
+        "real": [
+          "The power of love is a curious thing",
+          "Tougher than diamonds, rich like cream",
+          "Stronger and harder than a bad girl's dream"
+        ],
+        "fake": "Dancing on the midnight line, silver moon is making me shine"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wBl2QGAIx1s",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/albums/B000TE0PVG?trackAsin=B000TE0PVG"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-huey-lewis-power-of-love.jpg",
+      "packs": [
+        "Movie Hits",
+        "80s Flashback",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Power_of_Love_(Huey_Lewis_and_the_News_song)",
+        "https://en.wikipedia.org/wiki/Back_to_the_Future",
+        "https://en.wikipedia.org/wiki/Back_to_the_Future:_Music_from_the_Motion_Picture_Soundtrack",
+        "https://api.lyrics.ovh/v1/Huey%20Lewis%20and%20the%20News/The%20Power%20of%20Love",
+        "https://itunes.apple.com/search?term=Huey+Lewis+and+the+News+The+Power+of+Love&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "movie-hugh-jackman-greatest-show",
+      "title": "The Greatest Show",
+      "artist": "Hugh Jackman",
+      "year": 2017,
+      "country": "US",
+      "genre": "Soundtrack",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Epic",
+        "Happy"
+      ],
+      "hints": [
+        "Text und Musik schrieben zwei Autoren, die zuvor das Musical 'La La Land' geschrieben und dafür den Oscar für den besten Originalsong gewonnen hatten.",
+        "Der Soundtrack, auf dem der Song erscheint, gewann den Grammy für die beste kompilierte Film-Soundtrack-Zusammenstellung.",
+        "Der zugehörige Kinofilm wurde am 8. Dezember 2017 in New York an Bord eines Kreuzfahrtschiffs premiered und startete am 20. Dezember 2017 in den US-Kinos.",
+        "Der australische Hauptdarsteller des Films wurde für seine Rolle bei den Golden Globes in der Kategorie 'Bester Schauspieler' nominiert.",
+        "Der Refrain preist den großen Moment, in dem die Manege zum Mittelpunkt wird, und endet mit dem Satz, dass die Sonne niemanden aufhalten kann."
+      ],
+      "lyrics": {
+        "real": [
+          "Don't fight it, it's coming for you, running at ya",
+          "Where it's covered in all the colored lights",
+          "And the sun can't stop us now"
+        ],
+        "fake": "Diamonds in the moonlight, a thousand candles in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NyVYXRD1Ans",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/albums/B07H9FGRKB?trackAsin=B07H9FGRKB"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-hugh-jackman-greatest-show.jpg",
+      "packs": [
+        "Movie Hits",
+        "2010s & 2020s Chart Toppers",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Greatest_Showman",
+        "https://en.wikipedia.org/wiki/The_Greatest_Show",
+        "https://en.wikipedia.org/wiki/Pasek_and_Paul",
+        "https://api.lyrics.ovh/v1/Hugh%20Jackman/The%20Greatest%20Show",
+        "https://itunes.apple.com/search?term=Hugh+Jackman+The+Greatest+Show&limit=3&entity=song"
+      ]
+    }
+  ]
+}

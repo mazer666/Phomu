@@ -1,0 +1,722 @@
+{
+  "songs": [
+    {
+      "id": "class-beethoven-5",
+      "title": "Symphony No. 5 (Fate)",
+      "artist": "Ludwig van Beethoven",
+      "year": 1808,
+      "country": "DE",
+      "genre": "Classical / Romantic",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Dramatic",
+        "Classic"
+      ],
+      "hints": [
+        "Zwischen 1804 und 1808 entstand das Werk in c-Moll, op. 67, mit vier Sätzen und 30 bis 40 Minuten Spieldauer – komponiert in einer Zeit zunehmender Ertaubung des Komponisten.",
+        "Die Widmung der Erstausgabe von April 1809 nennt Joseph Franz von Lobkowitz und Andrei Rasumowski.",
+        "Der dritte Satz ist ein Scherzo – diese Satzform hatte der Komponist ab seiner zweiten Sinfonie statt des Menuetts eingeführt.",
+        "Uraufführung am 22. Dezember 1808 im Wiener Theater an der Wien – dirigiert vom Komponisten selbst.",
+        "Das Werk eröffnet mit dem berühmtesten Motiv der Musikgeschichte: drei kurze Töne, dann ein langer – 'das Schicksal klopft an die Tür'."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jamsU8wICr0",
+        "spotify": "https://open.spotify.com/track/0eBr9W1GE5nou99gRdy02J",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SWMB0G"
+      },
+      "coverUrl": "/covers/class-beethoven-5.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Symphony_No._5_(Beethoven)",
+        "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven",
+        "https://en.wikipedia.org/wiki/Joseph_Franz_von_Lobkowitz",
+        "https://en.wikipedia.org/wiki/Andrey_Razumovsky",
+        "https://en.wikipedia.org/wiki/Theater_an_der_Wien"
+      ]
+    },
+    {
+      "id": "yt-_fWiSYBFn8M",
+      "title": "Yo No Sé Mañana",
+      "artist": "Luis Enrique",
+      "year": 2009,
+      "country": "NI",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel wurde von Jorge Villamizar mitgeschrieben und von Bob Benozzo produziert.",
+        "Der Sänger aus Nicaragua veröffentlichte ihn bei Top Stop Music in zwei Fassungen: einer Salsa-Version von 4:19 Minuten und einer Pop-Ballade von 3:51.",
+        "Der Song erschien am 23. März 2009 als erste Singleausgabe des 17. Studioalbums des Künstlers.",
+        "Er erreichte Platz 6 der Billboard-Charts für Latin Songs – die höchste Platzierung eines Hits des Künstlers seit 1992 – und war seine erste Nummer eins in den Latin Tropical Airplay-Charts seit 1994.",
+        "Der Titel bedeutet 'Ich weiß nicht, was morgen ist' – ein Salsa-Liebeslied über die Ungewissheit, was der nächste Tag bringt."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo no sé mañana, yo no sé mañana",
+          "Todo lo que ves es lo que soy",
+          "Aquí estamos solos tú y yo"
+        ],
+        "fake": "Yo no sé si el mundo se acaba contigo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_fWiSYBFn8M",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/luis-enrique-yo-no-se-mañana.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Yo_No_S%C3%A9_Ma%C3%B1ana",
+        "https://es.wikipedia.org/wiki/Yo_no_s%C3%A9_ma%C3%B1ana",
+        "https://en.wikipedia.org/wiki/Ciclos_(Luis_Enrique_album)",
+        "https://en.wikipedia.org/wiki/Luis_Enrique_(singer)",
+        "https://lrclib.net/api/get?artist_name=Luis%20Enrique&track_name=Yo%20No%20S%C3%A9%20Ma%C3%B1ana"
+      ]
+    },
+    {
+      "id": "yt-EsfSuL-VFBw",
+      "title": "Aquí Estoy Yo",
+      "artist": "Luis Fonsi ft. Aleks Syntek, Noel Schajris, David Bisbal",
+      "year": 2008,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel wurde von dem Sänger selbst, der argentinischen Songwriterin Claudia Brant und Gen Reuben geschrieben und von Sebastián Krys produziert.",
+        "Die Single ist die zweite Auskopplung des siebten Studioalbums des Sängers, das am 26. August 2008 bei Universal Music Latin erschien.",
+        "In der Ballade spielt die polnische Schauspielerin Ludwika Paleta im Musikvideo mit.",
+        "Der Titel blieb mehr als 30 Wochen in den Billboard-Charts für Latin Pop und ist 4:11 lang.",
+        "Der Titel bedeutet 'Hier bin ich' – der Sänger bietet der Geliebten im Refrain seine Kraft, seinen Atem und seine Heilung an."
+      ],
+      "lyrics": {
+        "real": [
+          "Aquí estoy yo para hacerte reír una vez más",
+          "Aquí estoy yo con un beso quemándome los labios",
+          "Dame tus alas, las voy a curar"
+        ],
+        "fake": "Aquí estoy yo para traerte la luz de la mañana"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EsfSuL-VFBw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/luis-fonsi-aqui-estoy-yo-ft--aleks-syntek--noel-schajris--david-bisbal.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Aqu%C3%AD_Estoy_Yo",
+        "https://es.wikipedia.org/wiki/Aqu%C3%AD_estoy_yo_(canci%C3%B3n_de_Luis_Fonsi)",
+        "https://en.wikipedia.org/wiki/Palabras_del_Silencio",
+        "https://en.wikipedia.org/wiki/Claudia_Brant",
+        "https://lrclib.net/api/get?artist_name=Luis%20Fonsi&track_name=Aqu%C3%AD%20Estoy%20Yo"
+      ]
+    },
+    {
+      "id": "yt-dgFgGrljh1I",
+      "title": "Llueve Por Dentro",
+      "artist": "Luis Fonsi",
+      "year": 2008,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ballade wurde von dem Sänger gemeinsam mit dem Songwriter Amaury Gutiérrez geschrieben und von Armando Ávila produziert.",
+        "Der Titel ist der dritte Singleauszug aus dem siebten Studioalbum des Sängers, das am 26. August 2008 erschien.",
+        "Die Single trägt das Erscheinungsdatum 18. Mai 2009; Ende Juni wurde der Song über die offizielle Website des Künstlers angekündigt.",
+        "In den Billboard-Charts erreichte der Titel Platz 33 der Latin Songs und Platz 24 der Latin Pop Songs.",
+        "Der Titel bedeutet 'Es regnet innen' – die Ballade beschreibt, wie es im Herzen regnet, wenn die Geliebte fehlt."
+      ],
+      "lyrics": {
+        "real": [
+          "Atravieso el cielo por ti",
+          "Se inunda el corazón mientras te pienso",
+          "Cuando tú no estás llueve por dentro"
+        ],
+        "fake": "Cuando tú no estás, se derrumba el cielo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dgFgGrljh1I",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/luis-fonsi-llueve-por-dentro-single.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Llueve_por_dentro",
+        "https://en.wikipedia.org/wiki/Palabras_del_Silencio",
+        "https://en.wikipedia.org/wiki/Amaury_Guti%C3%A9rrez",
+        "https://music.apple.com/us/album/palabras-del-silencio/1440799493",
+        "https://lrclib.net/api/get?artist_name=Luis%20Fonsi&track_name=Llueve%20Por%20Dentro"
+      ]
+    },
+    {
+      "id": "yt-8hRGBcr_gJc",
+      "title": "No Me Doy Por Vencido",
+      "artist": "Luis Fonsi",
+      "year": 2008,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel wurde von dem Sänger und Claudia Brant geschrieben und von Armando Ávila produziert.",
+        "Er erschien am 2. Juni 2008 zunächst auf der Benefiz-Kompilation 'AT&T Team USA Soundtrack' und war die Leadsingle des siebten Studioalbums des Sängers.",
+        "Der Titel stieg im September 2008 auf Platz 1 der Billboard-Charts für Latin Songs und hielt die Spitze 17 von 19 Wochen.",
+        "In Spanien erreichte er Platz 4 und verkaufte sich 50.000 Mal; in Mexiko, Panama und Venezuela war er die Nummer eins. Zum viertbesten Latin-Pop-Song des Jahrzehnts bis zum 31. Dezember 2009 wurde er gekürt.",
+        "Der Titel bedeutet 'Ich gebe nicht auf' – eine Ballade, in der der Sänger seiner Geliebten die ewige Treue schwört."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo no me doy por vencido",
+          "Yo quiero un mundo contigo",
+          "Y te lo digo a los gritos"
+        ],
+        "fake": "Te esperaré por siempre, aunque el mundo se me oponga"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8hRGBcr_gJc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/luis-fonsi-no-me-doy-por-vencido-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/No_Me_Doy_por_Vencido",
+        "https://es.wikipedia.org/wiki/No_me_doy_por_vencido",
+        "https://en.wikipedia.org/wiki/Palabras_del_Silencio",
+        "https://en.wikipedia.org/wiki/Claudia_Brant",
+        "https://lrclib.net/api/get?artist_name=Luis%20Fonsi&track_name=No%20Me%20Doy%20Por%20Vencido"
+      ]
+    },
+    {
+      "id": "yt-YDswuo2dIvY",
+      "title": "Échame La Culpa",
+      "artist": "Luis Fonsi & Demi Lovato",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel erschien am 17. November 2017 bei Universal Music Latin, Republic Records und Island Records.",
+        "Es war die zweite Singleausgabe des zehnten Studioalbums des puerto-rikanischen Sängers, das 2019 erschien.",
+        "Die US-Sängerin kündigte den Videodreh schon im Oktober 2017 auf Instagram an, das Duett erschien daraufhin im November 2017.",
+        "Der Titel erreichte in 16 Ländern Platz 1, kam auf Platz 47 der US-Hot-100 und Platz 46 im Vereinigten Königreich; in zwölf Ländern ist er Platin oder höher, in Frankreich, Mexiko und Polen sogar Diamant.",
+        "Der Titel bedeutet 'Gib mir die Schuld' – der spanische Teil wird vom Sänger, der englische von der US-Sängerin gesungen; der englische Remix 'Not on You' erschien am 2. März 2018."
+      ],
+      "lyrics": {
+        "real": [
+          "No te quiero hacer sufrir",
+          "Solamente te falta un beso",
+          "Échame la culpa"
+        ],
+        "fake": "Dime que la culpa es toda mía"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YDswuo2dIvY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/luis-fonsi---demi-lovato-échame-la-culpa.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/%C3%89chame_la_Culpa",
+        "https://es.wikipedia.org/wiki/%C3%89chame_la_culpa",
+        "https://en.wikipedia.org/wiki/Vida_(Luis_Fonsi_album)",
+        "https://www.youtube.com/watch?v=YDswuo2dIvY",
+        "https://lrclib.net/api/get?artist_name=Luis%20Fonsi&track_name=%C3%89chame%20La%20Culpa"
+      ]
+    },
+    {
+      "id": "luis-fonsi-despacito-2017",
+      "title": "Despacito",
+      "artist": "Luis Fonsi ft. Daddy Yankee",
+      "year": 2017,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "easy",
+      "mood": [
+        "Summer Vibes",
+        "Dance Floor",
+        "Road Trip"
+      ],
+      "hints": [
+        "Das Musikvideo wurde in La Perla gedreht – dem Viertel von Old San Juan, in dem auch die Bar La Factoría zu sehen ist.",
+        "Die Remix-Version mit Justin Bieber machte den Song weltweit noch populärer, obwohl das Original bereits ein Mega-Hit war.",
+        "Erschienen 2017; erster hauptsächlich spanischsprachiger Nummer-1-Hit in den USA seit 'Macarena' im Jahr 1996.",
+        "Akustische Gitarre trifft auf Reggaeton-Rhythmus – eine unerwartete, aber perfekte Kombination.",
+        "Der Song ist eine langsame, behutsame Annäherung – der Titel beschreibt das Tempo des Liedes selbst."
+      ],
+      "lyrics": {
+        "real": [
+          "Despacito, quiero respirar tu cuello despacito",
+          "Deja que te diga cosas al oído para que te acuerdes si no estás conmigo",
+          "Pasito a pasito, suave suavecito"
+        ],
+        "fake": "Bailando juntos unter der Sonne"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/luis-fonsi-ft--daddy-yankee-despacito-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Despacito",
+        "https://en.wikipedia.org/wiki/Luis_Fonsi",
+        "https://en.wikipedia.org/wiki/Daddy_Yankee",
+        "https://en.wikipedia.org/wiki/Vida_(Luis_Fonsi_album)",
+        "https://lrclib.net/api/get?artist_name=Luis%20Fonsi&track_name=Despacito"
+      ]
+    },
+    {
+      "id": "yt-D79-FN99dRI",
+      "title": "Fría Como El Viento",
+      "artist": "Luis Miguel",
+      "year": 1988,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mexikanischer Superstar, der als 'El Sol de México' gilt und bereits 1987 mit 'Ahora Te Puedes Marchar' seinen ersten Nummer-eins-Hit in den US-Charts feierte.",
+        "Der Song war die erste Single des Albums 'Busca una Mujer' (1988), das für einen Latin Grammy nominiert war.",
+        "Text, Musik und Arrangement stammen von Juan Carlos Calderón, dem spanischen Komponisten, der auch das Album produzierte.",
+        "Die Aufnahme entstand zwischen 1987 und 1988 – in Studios in Hollywood, Madrid und auf Ibiza.",
+        "Er wurde die dritte Nummer-eins-Hit des Sängers in den Billboard-Hot-Latin-Songs und blieb sieben Monate in den Top Ten lateinamerikanischer Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "Te recuerdo así",
+          "Fría como el viento",
+          "Eres como un potro sin domar"
+        ],
+        "fake": "Caminamos juntos por la arena bajo la luna llena"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D79-FN99dRI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/luis-miguel--fría-como-el-viento-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fr%C3%ADa_Como_el_Viento",
+        "https://en.wikipedia.org/wiki/Busca_una_Mujer",
+        "https://en.wikipedia.org/wiki/Juan_Carlos_Calder%C3%B3n",
+        "https://en.wikipedia.org/wiki/Luis_Miguel",
+        "https://lrclib.net/api/get?artist_name=Luis%20Miguel&track_name=Fr%C3%ADa%20Como%20el%20Viento"
+      ]
+    },
+    {
+      "id": "yt-wOjzo02Tmck",
+      "title": "La Incondicional",
+      "artist": "Luis Miguel",
+      "year": 1989,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien 1989 als dritte Single des Albums 'Busca una Mujer' bei WEA Latina.",
+        "Geschrieben, produziert und arrangiert hat ihn der Spanier Juan Carlos Calderón.",
+        "Aufgenommen wurde er 1988 in Studios in Hollywood, Madrid und auf Ibiza.",
+        "Er war der zweite Nummer-eins-Hit des mexikanischen Sängers in den Billboard-Hot-Latin-Songs und führte die Charts in Mexiko, Chile und Peru an – in Mexiko wurde er zum Hit des Jahres.",
+        "2008 wählte VH1 Latin America den Song zum besten spanischsprachigen Hit der 1980er, 1990 gewann er bei den Premios Lo Nuestro den Preis 'Pop Song of the Year'."
+      ],
+      "lyrics": {
+        "real": [
+          "Tú, mi sombra has sido tú",
+          "No existe un lazo entre tú y yo",
+          "Tú, la misma de ayer"
+        ],
+        "fake": "Te esperaré bajo la lluvia hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wOjzo02Tmck",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/luis-miguel-la-incondicional-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Incondicional",
+        "https://en.wikipedia.org/wiki/Busca_una_Mujer",
+        "https://en.wikipedia.org/wiki/Juan_Carlos_Calder%C3%B3n",
+        "https://en.wikipedia.org/wiki/Luis_Miguel",
+        "https://lrclib.net/api/get?artist_name=Luis%20Miguel&track_name=La%20Incondicional"
+      ]
+    },
+    {
+      "id": "yt-giAE7Yz7gHI",
+      "title": "Por Debajo de la Mesa",
+      "artist": "Luis Miguel",
+      "year": 1997,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mexikanischer Superstar, der als 'El Sol de México' gilt, veröffentlichte 1997 ein reines Bolero-Album.",
+        "Den Text schrieb der mexikanische Komponist und Songwriter Armando Manzanero.",
+        "Arrangiert hat den Song Bebo Silvetti, produziert wurde er vom Sänger selbst.",
+        "Die Single erschien 1997 als erste Veröffentlichung des Albums 'Romances' bei WEA Latina.",
+        "Er war der dreizehnte Nummer-eins-Hit des Sängers in den Billboard-Hot-Latin-Songs; das Musikvideo zeigt ihn in einem gehobenen Restaurant in New York."
+      ],
+      "lyrics": {
+        "real": [
+          "Y es que no sabes lo que tú me haces sentir",
+          "Que no hay momento que yo pueda estar sin ti",
+          "Si contengo mis instintos o jamás te dejo ir"
+        ],
+        "fake": "Escuchamos la lluvia desde el balcón"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=giAE7Yz7gHI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/luis-miguel--por-debajo-de-la-mesa-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "90s Unplugged"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Por_Debajo_de_la_Mesa",
+        "https://en.wikipedia.org/wiki/Romances_(Luis_Miguel_album)",
+        "https://en.wikipedia.org/wiki/Armando_Manzanero",
+        "https://en.wikipedia.org/wiki/Luis_Miguel",
+        "https://lrclib.net/api/get?artist_name=Luis%20Miguel&track_name=Por%20Debajo%20de%20la%20Mesa"
+      ]
+    },
+    {
+      "id": "yt-OThKTAVrUMQ",
+      "title": "Tengo Todo Excepto A Ti",
+      "artist": "Luis Miguel",
+      "year": 1990,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mexikanischer Superstar, der als 'El Sol de México' gilt und mit dem Album '20 Años' (1990) das Erwachsenwerden musikalisch thematisierte.",
+        "Der Song war die Titelsingle des Albums und erschien am 16. April 1990 bei WEA Latina.",
+        "Text, Musik und Arrangement schrieb Juan Carlos Calderón, der auch das Album produzierte.",
+        "Aufgenommen wurde der Song 1989 und 1990 in den Sunset Sound Studios in Hollywood.",
+        "Er erreichte in ganz Ibero-Amerika Platz eins, war der vierte Nummer-eins-Hit des Sängers in den Billboard-Hot-Latin-Songs und wurde 1991 für den Lo-Nuestro-Preis 'Pop Song of the Year' nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Se ve que no te voy",
+          "Bella como el sol de abril",
+          "Me sobra juventud"
+        ],
+        "fake": "Caminamos de la mano por la avenida"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OThKTAVrUMQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/luis-miguel--tengo-todo-excepto-a-ti-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tengo_Todo_Excepto_a_Ti",
+        "https://en.wikipedia.org/wiki/20_A%C3%B1os_(Luis_Miguel_album)",
+        "https://en.wikipedia.org/wiki/Juan_Carlos_Calder%C3%B3n",
+        "https://en.wikipedia.org/wiki/Luis_Miguel",
+        "https://lrclib.net/api/get?artist_name=Luis%20Miguel&track_name=Tengo%20Todo%20Excepto%20a%20Ti"
+      ]
+    },
+    {
+      "id": "yt-ETVV404OzTA",
+      "title": "Entrégate",
+      "artist": "Luis Miguel",
+      "year": 1990,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein mexikanischer Superstar, der als 'El Sol de México' gilt und mit '20 Años' (1990) das Erwachsenwerden musikalisch thematisierte.",
+        "Der Song war die zweite Single des Albums '20 Años' und erschien am 3. September 1990 bei WEA Latina.",
+        "Geschrieben, produziert und arrangiert hat ihn Juan Carlos Calderón.",
+        "Aufgenommen wurde er 1989 und 1990 in den Sunset Sound Studios in Hollywood.",
+        "Er war der fünfte Nummer-eins-Hit des Sängers in den Billboard-Top-Latin-Songs; sechs Singles des Albums stiegen gleichzeitig in die mexikanischen Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "Mía, hoy serás mía por fin",
+          "La pasión no espera",
+          "Se acostumbre a mi calor"
+        ],
+        "fake": "Prometo cuidarte hasta el final de la noche"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ETVV404OzTA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/luis-miguel-entregate-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Entr%C3%A9gate",
+        "https://en.wikipedia.org/wiki/20_A%C3%B1os_(Luis_Miguel_album)",
+        "https://en.wikipedia.org/wiki/Juan_Carlos_Calder%C3%B3n",
+        "https://en.wikipedia.org/wiki/Luis_Miguel",
+        "https://lrclib.net/api/get?artist_name=Luis%20Miguel&track_name=Entr%C3%A9gate"
+      ]
+    },
+    {
+      "id": "yt-IC-bSbXZBcU",
+      "title": "You're Not There",
+      "artist": "Lukas Graham",
+      "year": 2016,
+      "country": "DK",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional"
+      ],
+      "hints": [
+        "Dänische Soul-Pop-Band aus Kopenhagen, aktiv seit 2011, bis heute von Sänger und Schlagzeuger getragen.",
+        "Der Song ist eine Trauerklage: Er widmet sich einer geliebten Person, die der Frontmann verloren hat.",
+        "Er ist ein Brief an den verstorbenen Vater des Frontmanns, der 2012 starb.",
+        "Die Single erschien am 13. Mai 2016 über Copenhagen Records und Warner Bros. als vierte Single des zweiten Albums der Band.",
+        "In den USA erreichte sie Platz 25 der Bubbling-Under-100-Liste, bei den Adult-Pop-Songs Platz 20 und in Belgien/Wallonien Platz 2."
+      ],
+      "lyrics": {
+        "real": [
+          "And remember you and I, when I'm awake at night",
+          "Now I'm terrified to face it on my own",
+          "To celebrate the man that you made"
+        ],
+        "fake": "I still hear your footsteps echoing down the hall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IC-bSbXZBcU",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=eRj0mVmzT5s"
+        ]
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/lukas-graham-you-re-not-there--lyric-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You're_Not_There",
+        "https://en.wikipedia.org/wiki/Lukas_Graham",
+        "https://www.billboard.com/music/rock/lukas-graham-youre-not-there-father-music-video-7595882/",
+        "https://en.wikipedia.org/wiki/Lukas_Graham_(2015_album)",
+        "https://lrclib.net/api/get?artist_name=Lukas%20Graham&track_name=You're%20Not%20There"
+      ]
+    }
+  ]
+}

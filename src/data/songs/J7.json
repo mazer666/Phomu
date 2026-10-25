@@ -1,0 +1,752 @@
+{
+  "songs": [
+    {
+      "id": "80s-journey-believin",
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "year": 1981,
+      "country": "US",
+      "genre": "Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Happy",
+        "Inspirational",
+        "Inspiring",
+        "Legends & Classics",
+        "Popular",
+        "Positive",
+        "Rock",
+        "Sing-along"
+      ],
+      "hints": [
+        "Dieser Song erlebte durch die Serie 'The Sopranos' und die Erfolgsserie 'Glee' ein riesiges Comeback.",
+        "Der 'South Detroit', von dem im Text die Rede ist, existiert geografisch eigentlich gar nicht.",
+        "2012 galt er als bestverkauftes digitales Lied des 20. Jahrhunderts - bis 2017 mit über sieben Millionen Downloads.",
+        "Die Hymne für alle 'Small Town Girls' und 'City Boys'.",
+        "Der Refrain kommt erst bei 3:21 von 4:11 Minuten - davor liegen drei Strophen und zwei Pre-Chorusse."
+      ],
+      "lyrics": {
+        "real": [
+          "Just a small town girl, livin' in a lonely world",
+          "Don't stop believin', hold on to that feelin'",
+          "Streetlights, people, oh-oh-oh"
+        ],
+        "fake": "Spotlights on the stage and the whole world is waiting for the show"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x3idGV-7kSQ",
+        "spotify": "https://open.spotify.com/track/77NNZQSqzLNqh2A9JhLRkg",
+        "amazonMusic": "https://music.amazon.com/tracks/B00137GHF6"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-journey-believin.jpg",
+      "packs": [
+        "80s-pop",
+        "Rock Anthems",
+        "youtube-import",
+        "80s Flashback",
+        "piano-ballads"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_Stop_Believin%27",
+        "https://en.wikipedia.org/wiki/Escape_(Journey_album)",
+        "https://en.wikipedia.org/wiki/Journey_(band)",
+        "https://en.wikipedia.org/wiki/Made_in_America_(The_Sopranos)",
+        "https://itunes.apple.com/search?term=Journey+Don%27t+Stop+Believin%27&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "yt-M-9TLTtqQnU",
+      "title": "Un Poquito Na Mas",
+      "artist": "Jowell & Randy",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Duo stammt aus Puerto Rico und gilt seit den frühen 2000ern als eines der erfolgreichsten Acts der Reggaeton-Szene.",
+        "Der Gaststar ist der puertoricanische Rapper Tego Calderon: 1972 geboren, startete er 1996 als 'Tego Tec' und veröffentlichte 2002 sein Debütalbum 'El Abayarde'.",
+        "Die Single erschien im April 2016 auf dem Album 'La Alcaldía Del Perreo'.",
+        "Der Titel ist eine Zeile aus dem Refrain und beschreibt eine Wunschliste, die im Text immer wieder aufgegriffen wird.",
+        "Im März 2016 waren die beiden die ersten Reggaeton-Acts, die in Monaco auftraten - bei einem Wohltätigkeitsball."
+      ],
+      "lyrics": {
+        "real": [
+          "Un poquito na más es lo que quiero",
+          "si tu supieras cuanto yo a ti te deseo",
+          "un poquito, en esta pista de perreo"
+        ],
+        "fake": "Bailando bajo la lluvia con la tropa en la azotea"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=M-9TLTtqQnU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/jowell-y-randy-un-poquito-na-mas-ft--tego-calderon--official-audio-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jowell_%26_Randy",
+        "https://en.wikipedia.org/wiki/Tego_Calder%C3%B3n",
+        "https://en.wikipedia.org/wiki/Perreo",
+        "https://itunes.apple.com/search?term=Jowell+%26+Randy+Un+Poquito+Na+Mas&limit=3&entity=song",
+        "https://lrclib.net/api/search?track_name=Un%20Poquito%20Na%20Mas"
+      ]
+    },
+    {
+      "id": "80s-joy-japanese",
+      "title": "Japanese Girls",
+      "artist": "Joy",
+      "year": 1986,
+      "country": "AT",
+      "genre": "Euro Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Das Trio aus Bad Aussee wurde 1984 von drei Schulabsolventen gegründet und nahm zunächst bei OK-Musica unter Vertrag.",
+        "1986 gewann die Band den Titel des beliebtesten internationalen Acts in Südkorea.",
+        "Auf ihrer Asientournee im Januar und Februar 1987 spielten sie in Bangkok, Hongkong, Singapur, Taiwan und Seoul - über 60.000 Zuschauer kamen zu den Konzerten.",
+        "Zweimal traten sie im ausverkauften Jamsil-Olympiastadion in Seoul vor jeweils 12.000 Menschen auf; dort spielten sie den Titel in einer umbenannten Fassung, in der das erste Wort des Titels durch 'Korean' ersetzt wurde.",
+        "Das zweite Album 'Joy and Tears' erreichte Platz 14 in den österreichischen Hitparaden."
+      ],
+      "lyrics": {
+        "real": [
+          "Japanese girls, Japanese girls, I love you Japanese girls",
+          "In the land of the rising sun, she's the one and only one",
+          "Japanese girls, oh oh oh oh"
+        ],
+        "fake": "Lanterns on the harbor where the neon reflections dance across the tide"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SKEA-JBw0AU",
+        "spotify": "https://open.spotify.com/track/1OOTrXdIA0YlPo9J8J42SR",
+        "amazonMusic": "https://music.amazon.com/tracks/B00J7EG5S6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-joy-japanese.jpg",
+      "packs": [
+        "80s-pop",
+        "80s Flashback",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Joy_(Austrian_band)",
+        "https://en.wikipedia.org/wiki/Touch_by_Touch_(Joy_song)",
+        "https://en.wikipedia.org/wiki/Bad_Aussee",
+        "https://en.wikipedia.org/wiki/Euro_disco",
+        "https://itunes.apple.com/search?term=Joy+Japanese+Girls&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-6dBt3mJtgJc",
+      "title": "Transmission",
+      "artist": "Joy Division",
+      "year": 1979,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die Single erschien am 7. Oktober 1979 auf dem Label Factory Records und war das Debüt der Band.",
+        "Produzent war Martin Hannett - er betreute auch die beiden Studioalben der Band.",
+        "Eine erste, langsamere Fassung entstand schon 1978 für ein nie veröffentlichtes selbstbetiteltes Album; ein Jahr später nahmen die Musiker den Song in schnellerem Tempo neu auf.",
+        "Pitchfork zählte den Song 2016 zu den 200 besten Titeln der 1970er, NME setzte ihn 2007 auf Platz 20 der 'Greatest Indie Anthems'.",
+        "20 Sekunden des Songs zeigt der Anton-Corbijn-Film 'Control' (2007), der auf der Biografie 'Touching from a Distance' von Deborah Curtis beruht."
+      ],
+      "lyrics": {
+        "real": [
+          "Dance, dance, dance, dance, dance, to the radio.",
+          "Listen to the silence, let it ring on.",
+          "No language, just sound, that's all we need know,"
+        ],
+        "fake": "Midnight highway, the neon burning in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6dBt3mJtgJc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "Electronic & Techno",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "coverUrl": "/covers/joy-division-transmission.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Transmission_(song)",
+        "https://en.wikipedia.org/wiki/Joy_Division",
+        "https://en.wikipedia.org/wiki/Unknown_Pleasures",
+        "https://en.wikipedia.org/wiki/Control_(2007_film)",
+        "https://en.wikipedia.org/wiki/Factory_Records"
+      ]
+    },
+    {
+      "id": "yt-uZrRfOSG0Vg",
+      "title": "Deixa A Gente Quieto",
+      "artist": "João Bosco e Vinicius",
+      "year": 2016,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die beiden Musiker nahmen den Song live für ihr Projekt 'Céu de São Paulo' auf - ein Live-Album, das 2016 erschien.",
+        "Als Gäste sind Henrique & Juliano dabei - ein Duo aus dem brasilianischen Bundesstaat Tocantins, das seit 2008 aktiv ist.",
+        "Die Aufnahme entstand live, weshalb der Track in den Streaming-Diensten den Zusatz 'Ao Vivo' traegt.",
+        "Im Refrain wird das Publikum direkt angesprochen - der Titel steckt in einem lateinamerikanischen Ausruf, der mehrfach wiederholt wird.",
+        "Das Genre ist brasilianischer Sertanejo - Volksmusik aus dem Bundesstaat São Paulo, die in den 1920ern populär wurde."
+      ],
+      "lyrics": {
+        "real": [
+          "Quer saber, que se dane esse povo todo",
+          "Nosso amor não precisa de platéia",
+          "Ô povo curioso, deixa a gente quieto, uôô"
+        ],
+        "fake": "Caminhando pela praia de Santos, a saudade bateu no peito"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uZrRfOSG0Vg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "country-folk",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/joão-bosco-e-vinicius--deixa-a-gente-quieto--part--henrique-e-juliano--oficial-.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/search?term=Joao+Bosco+e+Vinicius+Deixa+a+Gente+Quieto&limit=3&entity=song",
+        "https://lrclib.net/api/search?track_name=Deixa%20a%20Gente%20Quieto",
+        "https://en.wikipedia.org/wiki/Sertanejo_music",
+        "https://pt.wikipedia.org/wiki/Henrique_%26_Juliano",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=uZrRfOSG0Vg&format=json"
+      ]
+    },
+    {
+      "id": "yt-_tNVEhSelH0",
+      "title": "Abrázame Muy Fuerte",
+      "artist": "Juan Gabriel",
+      "year": 2000,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song wurde für eine gleichnamige mexikanische Telenovela geschrieben und erschien im Juni 2000 als Lead-Single einer Compilation.",
+        "Produzent war Bebu Silvetti, der auch die großen Studio-Produktionen des mexikanischen Stars betreute.",
+        "2002 gewann der Titel bei den Latin Billboard Music Awards den Preis 'Hot Latin Song of the Year'.",
+        "Es war die siebte Nummer-eins-Single des Sängers in den Billboard Hot Latin Songs und das erfolgreichste Latin-Single des Jahres 2001.",
+        "2015 nahm der Sänger den Titel mit Laura Pausini für sein Duett-Album 'Los Dúo' neu auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Abrázame que el tiempo pasa y el nunca perdona",
+          "Abrázame fuerte, muy fuerte, más fuerte que nunca",
+          "Abrázame muy fuerte amor, mantenme así a tu lado"
+        ],
+        "fake": "Caminando entre la bruma del asfalto, el eco me trae tu nombre otra vez"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_tNVEhSelH0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/juan-gabriel-abrázame-muy-fuerte--en-vivo-desde-bellas-artes--méxico--2013-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Abr%C3%A1zame_Muy_Fuerte_(song)",
+        "https://en.wikipedia.org/wiki/Abr%C3%A1zame_Muy_Fuerte_(album)",
+        "https://en.wikipedia.org/wiki/Juan_Gabriel",
+        "https://en.wikipedia.org/wiki/Los_D%C3%BAo",
+        "https://itunes.apple.com/search?term=Juan+Gabriel+Abrazame+Muy+Fuerte&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-ga5Bo4YdgH4",
+      "title": "Hasta Que Te Conocí",
+      "artist": "Juan Gabriel",
+      "year": 1986,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Star schrieb und produzierte den Titel selbst; er erschien 1986 als dritte Single aus seinem zwanzigsten Studioalbum und erreichte in den Billboard Hot Latin Songs Platz zwei.",
+        "Das Album entstand 1986 in den RCA Studios B in Nashville, Tennessee – weit von der mexikanischen Hauptstadt entfernt.",
+        "Der vorliegende Live-Mitschnitt stammt vom Live-Album von 1990, das in den Hot Latin Songs bis auf Platz zehn kam.",
+        "Bekannte Interpreten wie Marc Anthony, Raúl di Blasio oder die Band Maná nahmen den Song später für eigene Alben auf.",
+        "Im Text erzählt ein Erzähler, der zuvor sorgenlos lebte, wie eine Begegnung ihm erstmals Schmerz und Einsamkeit nahebrachte."
+      ],
+      "lyrics": {
+        "real": [
+          "No sabía de tristezas",
+          "Vi la vida con dolor",
+          "Y muy tarde comprendí"
+        ],
+        "fake": "Caminando por el centro al son de la banda hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ga5Bo4YdgH4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s-pop",
+        "World, Reggae & Soul",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/juan-gabriel-hasta-que-te-conocí--en-vivo--desde-el-instituto-nacional-de-bellas-artes--.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hasta_Que_Te_Conoc%C3%AD",
+        "https://en.wikipedia.org/wiki/Pensamientos",
+        "https://en.wikipedia.org/wiki/Juan_Gabriel",
+        "https://es.wikipedia.org/wiki/Juan_Gabriel_en_el_Palacio_de_Bellas_Artes",
+        "https://itunes.apple.com/search?term=Juan+Gabriel+Hasta+Que+Te+Conoci&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-SSNSRcpuchw",
+      "title": "No Tengo Dinero",
+      "artist": "Juan Gabriel",
+      "year": 1971,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Star veröffentlichte den Titel am 14. Mai 1971 auf RCA - der Song wurde mit sofortigem Erfolg zum ersten Hit des Sängers.",
+        "Der Song erschien als zweite Single auf dem Debütalbum des Sängers, das 1971 bei RCA veröffentlicht wurde.",
+        "Text und Musik stammen aus eigener Feder - der Song ist eine Originalkomposition des Sängers.",
+        "2003 nahmen die Kumbia Kings aus Corpus Christi den Song als erste Single ihres Albums '4' auf; die mexikanische Version erreichte Platz fünf der Billboard Latin Songs.",
+        "Im Text gesteht der Erzähler seiner Geliebten, dass er arm ist und ihr nichts geben kann – sein einziger Reichtum sei die Liebe."
+      ],
+      "lyrics": {
+        "real": [
+          "No tengo dinero ni nada que dar",
+          "Lo único que tengo es amor para amar",
+          "Y yo le contesto que soy pobre"
+        ],
+        "fake": "El café de la esquina sigue abierto hasta la madrugada"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SSNSRcpuchw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/juan-gabriel-no-tengo-dinero--cover-audio-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/No_Tengo_Dinero_(Juan_Gabriel_song)",
+        "https://en.wikipedia.org/wiki/El_Alma_Joven...",
+        "https://en.wikipedia.org/wiki/Juan_Gabriel",
+        "https://en.wikipedia.org/wiki/Kumbia_Kings",
+        "https://lrclib.net/api/search?track_name=No%20Tengo%20Dinero&artist_name=Juan%20Gabriel"
+      ]
+    },
+    {
+      "id": "yt-g5rsnxJWNkM",
+      "title": "Se Me Olvidó Otra Vez",
+      "artist": "Juan Gabriel",
+      "year": 1975,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ranchera entstand für das vierte Studioalbum des mexikanischen Stars von 1974 – als Leit-Single erschien sie ein Jahr später.",
+        "Sie entstand auf dem Album, das mit dem Mariachi Vargas de Tecalitlán aufgenommen wurde - einer der bekanntesten Gruppen des Genres.",
+        "Die mexikanische Band Maná coverte das Stück 1999 als Cumbia mit Reggae-Einfluss und gewann damit 2000 den Latin Grammy für den besten Pop-Auftritt einer Gruppe.",
+        "2015 nahm der Sänger das Lied für sein Duett-Album 'Los Dúo' mit Marco Antonio Solís neu auf.",
+        "Der Text erzählt von einer Frau, die sich nicht mehr an den Wartenden erinnert, während er treu an seiner Hoffnung festhält."
+      ],
+      "lyrics": {
+        "real": [
+          "Y mientras tanto yo",
+          "Te seguiré esperando",
+          "No me he querido ir"
+        ],
+        "fake": "Caminando entre la bruma del asfalto, el eco me trae tu nombre de nuevo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=g5rsnxJWNkM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends",
+        "country-folk",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/juan-gabriel-se-me-olvidó-otra-vez--en-vivo--desde-el-instituto-nacional-de-bellas-artes--.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Se_Me_Olvid%C3%B3_Otra_Vez",
+        "https://en.wikipedia.org/wiki/Juan_Gabriel_con_el_Mariachi_Vargas_de_Tecalitl%C3%A1n",
+        "https://en.wikipedia.org/wiki/Man%C3%A1",
+        "https://en.wikipedia.org/wiki/Los_D%C3%BAo",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=g5rsnxJWNkM&format=json"
+      ]
+    },
+    {
+      "id": "yt-w4yjZEVQnr0",
+      "title": "El Destino",
+      "artist": "Juan Gabriel y Rocío Dúrcal",
+      "year": 1997,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Cantautor und die spanische Sängerin nahmen das Duett 1996/97 auf - es war die erste Single ihres gemeinsamen Albums.",
+        "Die Single erschien am 31. März 1997 und stieg auf Platz eins der US Hot Latin Songs.",
+        "Bei los Premios Lo Nuestro 1998 war das Stück als 'Pop-Song des Jahres' nominiert; den Preis gewann Alejandro Fernández.",
+        "ASCAP Latin ehrte die Komposition 1998 mit dem Preis für den besten Pop-Balladentracks des Jahres.",
+        "Das Duett klingt verspielt und warm: Zwei Stimmen versprechen sich gegenseitig Liebe und zählen auf, wie lange sie sich schon kennen."
+      ],
+      "lyrics": {
+        "real": [
+          "Por ti yo siento un cariño",
+          "Es tan hermoso saber",
+          "Tú cuentas conmigo"
+        ],
+        "fake": "La brisa del puerto me recuerda tus ojos de marinero"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=w4yjZEVQnr0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "90s Unplugged",
+        "World, Reggae & Soul",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/juan-gabriel-dueto-con-rocio-durcal-el-destino.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/El_destino_(canci%C3%B3n)",
+        "https://en.wikipedia.org/wiki/Juntos_Otra_Vez_(Juan_Gabriel_and_Roc%C3%ADo_D%C3%BArcal_album)",
+        "https://en.wikipedia.org/wiki/Juan_Gabriel",
+        "https://en.wikipedia.org/wiki/Roc%C3%ADo_D%C3%BArcal",
+        "https://lrclib.net/api/get/36678631"
+      ]
+    },
+    {
+      "id": "yt-kRt2sRyup6A",
+      "title": "La Camisa Negra",
+      "artist": "Juanes",
+      "year": 2005,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der kolumbianische Sänger schrieb das Lied gemeinsam mit Octavio Mesa und produzierte es mit Gustavo Santaolalla.",
+        "Die Single erschien am 24. Januar 2005 als dritte Auskopplung aus dem im September 2004 erschienenen Album 'Mi Sangre'.",
+        "An den Produktionen des Albums waren außerdem David Heuer und Aníbal Kerpel beteiligt.",
+        "Das Stück bewegt sich zwischen Cumbia, Alternative Rock und Latin Pop.",
+        "Im Text wird ein dunkles Kleidungsstück zum Trauerzeichen des Erzählers, der von der Trennung durch seine Geliebte erzählt."
+      ],
+      "lyrics": {
+        "real": [
+          "Tengo la camisa negra",
+          "Hoy tengo en el alma una pena",
+          "Hoy sé que tú ya no me quieres"
+        ],
+        "fake": "Salí a la plaza con la guitarra rota y la lluvia"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kRt2sRyup6A",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/juanes-la-camisa-negra.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Camisa_Negra",
+        "https://en.wikipedia.org/wiki/Mi_Sangre",
+        "https://en.wikipedia.org/wiki/Juanes",
+        "https://en.wikipedia.org/wiki/Gustavo_Santaolalla",
+        "https://lrclib.net/api/search?track_name=La%20Camisa%20Negra&artist_name=Juanes"
+      ]
+    },
+    {
+      "id": "yt-ihE74nG8ioc",
+      "title": "Volverte a Ver",
+      "artist": "Juanes",
+      "year": 2004,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der kolumbianische Sänger schrieb das Lied allein und produzierte es mit Gustavo Santaolalla.",
+        "Der Song erschien im November 2004 als zweite Radio-Single aus dem Album 'Mi Sangre'.",
+        "Das Video entstand unter der Regie von Gustavo Garzón.",
+        "Für dieses Video gewann der Sänger 2005 den Latin Grammy in der Kategorie 'Best Short Form Music Video'.",
+        "Im spanischen Original schwört der Erzähler, alles zu geben – sein Leben, sein Gewehr, seine Stiefel und seinen Glauben –, um sie wiedersehen zu können."
+      ],
+      "lyrics": {
+        "real": [
+          "Daría lo que fuera por volverte a ver",
+          "Daría hasta mi vida y mi fusil, mis botas y mi fe",
+          "Por eso en la trinchera de mi soledad"
+        ],
+        "fake": "Caminando por el camino real, la luna ilumina mi sendero"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ihE74nG8ioc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/juanes-volverte-a-ver-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Volverte_a_Ver",
+        "https://en.wikipedia.org/wiki/Mi_Sangre",
+        "https://en.wikipedia.org/wiki/Juanes",
+        "https://en.wikipedia.org/wiki/Latin_Grammy_Award_for_Best_Short_Form_Music_Video",
+        "https://lrclib.net/api/get/36277210"
+      ]
+    },
+    {
+      "id": "metal-priest-breaking",
+      "title": "Breaking the Law",
+      "artist": "Judas Priest",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Heavy Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Aggressive",
+        "Classic"
+      ],
+      "hints": [
+        "Frust, Arbeitslosigkeit und Trotz: Der Text schildert jemanden, der es leid ist, alles mitzumachen, und deshalb bereit ist, alles zu riskieren.",
+        "Der Sänger schrieb die Worte nach eigener Aussage, weil ihn die hohe Arbeitslosigkeit und der politische Kurs der damaligen Regierung in Großbritannien aufbrachten.",
+        "Aufgenommen wurde der Song Anfang 1980 in einem Studio in Ascot, produziert hat ihn Tom Allom.",
+        "Das Video inszenierte Julien Temple: Die Band überfällt eine Bank, holt sich dort eine Auszeichnung und flieht im alten Cadillak.",
+        "Der Song beginnt mit einem der berühmtesten Gitarrenriffs der Metal-Geschichte; 2023 setzte das Magazin Rolling Stone ihn auf Platz vier seiner 100 besten Heavy-Metal-Songs."
+      ],
+      "lyrics": {
+        "real": [
+          "There I was completely wasting, out of work and down",
+          "I've had every promise broken, there's anger in my heart",
+          "Breaking the law, breaking the law"
+        ],
+        "fake": "Chrome on the highway and the sirens fade into the rain tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=L397TWLwrUU",
+        "spotify": "https://open.spotify.com/track/2RaA6kIcvomt77qlIgGhCT"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-priest-breaking.jpg",
+      "packs": [
+        "metal-hardcore",
+        "80s-pop"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Breaking_the_Law",
+        "https://www.songfacts.com/facts/judas-priest/breaking-the-law",
+        "https://en.wikipedia.org/wiki/British_Steel_(album)",
+        "https://en.wikipedia.org/wiki/Judas_Priest",
+        "https://lrclib.net/api/get?artist_name=Judas%20Priest&track_name=Breaking%20the%20Law"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "songs": [
+    {
+      "id": "synth-petshop-sin",
+      "title": "It's a Sin",
+      "artist": "Pet Shop Boys",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Synthpop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Dramatic",
+        "Energy",
+        "Epic"
+      ],
+      "hints": [
+        "Der Song entstand bereits 1982 in einem Studio in Camden Town und blieb fünf Jahre lang unveröffentlicht.",
+        "Im Coda lateinisch: Der Sänger spricht einen Teil des Beichtgottesdienstes.",
+        "Die Hintergrundgeräusche der Brücke entstanden in einer katholischen Kirche in London.",
+        "In Großbritannien stand die Single auf Platz 1, in den USA erreichte sie Platz 9.",
+        "Das Musikvideo inszeniert eine Hexenverhandlung und wurde vom Experimentalfilmer Derek Jarman gedreht."
+      ],
+      "lyrics": {
+        "real": [
+          "When I look back upon my life",
+          "I've always been the one to blame",
+          "At school they taught me how to be"
+        ],
+        "fake": "Down on the empty streets we are chasing the neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=F9dXx6gr9tQ",
+        "spotify": "https://open.spotify.com/track/6IDHh3FcwLVcG5NsmpQgg2",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/synth-petshop-sin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Electronic & Techno",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/It%27s_a_Sin",
+        "https://de.wikipedia.org/wiki/It%E2%80%99s_a_Sin",
+        "https://api.lyrics.ovh/v1/Pet%20Shop%20Boys/It%27s%20a%20Sin",
+        "https://www.songfacts.com/facts/pet-shop-boys/its-a-sin",
+        "https://lrclib.net/api/get?artist_name=Pet%20Shop%20Boys&track_name=It%27s%20a%20Sin"
+      ]
+    },
+    {
+      "id": "synth-petshop-girls",
+      "title": "West End Girls",
+      "artist": "Pet Shop Boys",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Electronic",
+        "Nostalgic",
+        "Urban"
+      ],
+      "hints": [
+        "Die ersten Aufnahmen entstanden 1983 und 1984 in New York, produziert von Bobby Orlando.",
+        "Den Jazz-Riff am Ende hat der Produzent selbst gespielt, der Drum-Part ist 'Billie Jean' entlehnt.",
+        "Der Text greift T. S. Eliot's Gedicht 'The Waste Land' von 1922 auf.",
+        "1987 gewann die Single den Brit Award für die beste Single, 2020 wählte eine Guardian-Umfrage sie zum größten britischen Nummer-eins-Hit.",
+        "Im Refrain wiederholt sich die Zeile 'a dead end world' – ein Bild für die Enge des Großstadtlebens."
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes you're better off dead",
+          "You think you're mad, too unstable",
+          "Kicking in chairs and knocking down tables"
+        ],
+        "fake": "Cash in a paper bag and a red plastic dream"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y0KQNn3aL4Q",
+        "spotify": "https://open.spotify.com/track/5Dqik1P9toCJTLj5rEm78s",
+        "amazonMusic": "https://music.amazon.com/tracks/B001QARRIQ",
+        "youtubeAlternatives": [
+          "p3j2NYZ8FKs"
+        ]
+      },
+      "coverUrl": "/covers/synth-petshop-girls.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Electronic & Techno",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/West_End_Girls",
+        "https://de.wikipedia.org/wiki/West_End_Girls",
+        "https://api.lyrics.ovh/v1/Pet%20Shop%20Boys/West%20End%20Girls",
+        "https://www.songfacts.com/facts/pet-shop-boys/west-end-girls",
+        "https://lrclib.net/api/get?artist_name=Pet%20Shop%20Boys&track_name=West%20End%20Girls"
+      ]
+    },
+    {
+      "id": "german-peter-fox-haus-am-see",
+      "title": "Haus am See",
+      "artist": "Peter Fox",
+      "year": 2008,
+      "country": "DE",
+      "genre": "Electronic / Hip-Hop / Reggae / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Summer"
+      ],
+      "hints": [
+        "Die Musik entstand zuerst, der Text kam später – eigentlich sollte CeeLo Green den Song singsen.",
+        "Die Musik wurde vom Filmorchester Babelsberg eingespielt, ohne den Song zu überladen.",
+        "Die Single erschien am 17. Oktober 2008 als Auskopplung des Debütalbums 'Stadtaffe'.",
+        "In Deutschland stand der Song 70 Wochen in den Charts und erreichte Platz 8.",
+        "2022 wurde der Song mit der fünffachen Goldenen Schallplatte für über 750.000 verkaufte Einheiten ausgezeichnet."
+      ],
+      "lyrics": {
+        "real": [
+          "Hier bin ich geboren und laufe durch die Straßen",
+          "Und am Ende der Straße steht ein Haus am See",
+          "Orangenbaumblätter liegen auf dem Weg"
+        ],
+        "fake": "Ich flöge hoch hinaus, aus diesem alten Haus, direkt ins Paradies"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Vgwkxa-uGcE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-peter-fox-haus-am-see.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Haus_am_See",
+        "https://de.wikipedia.org/wiki/Haus_am_See_(Lied)",
+        "https://api.lyrics.ovh/v1/Peter%20Fox/Haus%20am%20See",
+        "https://lrclib.net/api/get?artist_name=Peter%20Fox&track_name=Haus%20am%20See",
+        "https://de.wikipedia.org/wiki/Stadtaffe"
+      ]
+    },
+    {
+      "id": "yt-J4K4obX3wcs",
+      "title": "Games Without Frontiers",
+      "artist": "Peter Gabriel",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Art Rock / Synth-Pop / Pop / New Wave / Progressive Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Song entstand 1979 und erschien am 25. Januar 1980 als erste Single des dritten Soloalbums.",
+        "Im Refrain singt Kate Bush mit - die Plattenfirma verschwieg ihre Beteiligung, bis die Single erfolgreich war.",
+        "Das Musikvideo zeigt Szenen aus dem Schulfilm 'Duck and Cover' von 1951.",
+        "Der Titel greift die Fernsehshow 'Jeux sans frontières' auf, deren britische Fassung 'It's a Knockout' hieß.",
+        "In Großbritannien war es die erste Top-Ten-Single des Sängers, mit Platz 4."
+      ],
+      "lyrics": {
+        "real": [
+          "If looks could kill, they probably will",
+          "It's a knockout",
+          "War without tears"
+        ],
+        "fake": "Every border is a promise, every soldier is a friend"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=J4K4obX3wcs",
+        "youtubeAlternatives": [
+          "3xZmlUV8muY"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Electronic & Techno",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/peter-gabriel-games-without-frontiers.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Games_Without_Frontiers_(song)",
+        "https://de.wikipedia.org/wiki/Games_Without_Frontiers",
+        "https://api.lyrics.ovh/v1/Peter%20Gabriel/Games%20Without%20Frontiers",
+        "https://www.songfacts.com/facts/peter-gabriel/games-without-frontiers",
+        "https://lrclib.net/api/get?artist_name=Peter%20Gabriel&track_name=Games%20Without%20Frontiers"
+      ]
+    },
+    {
+      "id": "80s-peter-gabriel-sledgehammer",
+      "title": "Sledgehammer",
+      "artist": "Peter Gabriel",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Art Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Creative",
+        "Groovy",
+        "Epic"
+      ],
+      "hints": [
+        "Das Musikvideo gewann 1987 einen Rekord von neun MTV Video Music Awards.",
+        "Das Video mischt Claymation, Pixilation und Stop-Motion von Aardman Animations und den Brothers Quay.",
+        "Der Song erschien am 14. April 1986 als erste Single des Albums 'So'.",
+        "Produziert wurde das Stück gemeinsam mit Daniel Lanois, aufgenommen wurde es in Ashcombe House bei Bath.",
+        "In den USA und in Kanada stand er wochenlang auf Platz 1 der Singlecharts."
+      ],
+      "lyrics": {
+        "real": [
+          "I'll be anything you need",
+          "I've been feeding the rhythm",
+          "All you do is call me"
+        ],
+        "fake": "You feel the power, you feel the might, make it smash"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OJWJE0x7T4Q",
+        "spotify": "https://open.spotify.com/track/0Y9uTzWEvUn7bgY96SshNi",
+        "amazonMusic": "https://music.amazon.com/tracks/B07D1FDNDZ"
+      },
+      "coverUrl": "/covers/80s-peter-gabriel-sledgehammer.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sledgehammer_(Peter_Gabriel_song)",
+        "https://de.wikipedia.org/wiki/Sledgehammer_(Peter-Gabriel-Lied)",
+        "https://api.lyrics.ovh/v1/Peter%20Gabriel/Sledgehammer",
+        "https://www.songfacts.com/facts/peter-gabriel/sledgehammer",
+        "https://lrclib.net/api/get?artist_name=Peter%20Gabriel&track_name=Sledgehammer"
+      ]
+    },
+    {
+      "id": "schlager-maffay-bruecken",
+      "title": "Über sieben Brücken mußt du gehn",
+      "artist": "Peter Maffay",
+      "year": 1980,
+      "country": "DE",
+      "genre": "Rock / Schlager",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Serious"
+      ],
+      "hints": [
+        "Das Lied entstand aus einer 1975 geschriebenen Liebesgeschichte von einer unglücklichen Liebe zwischen einer Polin und einem Deutschen.",
+        "Die DDR-Gruppe Karat gewann mit dem Stück 1978 beim Internationalen Schlagerfestival in Dresden den Grand Prix.",
+        "Die Neuaufnahme von 1980 entstand mit einem Saxophon-Solo, ihr Album 'Revanche' verkaufte sich mehr als zwei Millionen Mal.",
+        "In den westdeutschen Singlecharts landete die Neuversion 1981 auf Platz 4, das Original der DDR-Gruppe erreichte erst danach Platz 15.",
+        "Der gleichnamige Fernsehfilm wurde am 30. April 1978 erstmals ausgestrahlt, aus ihm entstand die Idee zum Titellied."
+      ],
+      "lyrics": {
+        "real": [
+          "Manchmal geh ich meine Straße ohne Blick",
+          "Manchmal wünsch ich mir mein Schaukelpferd zurück",
+          "Aber einmal auch der helle Schein"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GzCl8DIJCR0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-maffay-bruecken.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/%C3%9Cber_sieben_Br%C3%BCcken_mu%C3%9Ft_du_gehn",
+        "https://de.wikipedia.org/wiki/Karat_(Band)",
+        "https://de.wikipedia.org/wiki/Revanche_(Album)",
+        "https://musicbrainz.org/ws/2/recording/a938c84f-39f0-47d9-bc56-bd59c46fd3e7?fmt=json&inc=artist-credits",
+        "https://lrclib.net/api/get?artist_name=Peter%20Maffay&track_name=%C3%9Cber%20sieben%20Br%C3%BCcken%20mu%C3%9Ft%20du%20gehn"
+      ]
+    },
+    {
+      "id": "german-peter-schilling-major-tom",
+      "title": "Major Tom (völlig losgelöst)",
+      "artist": "Peter Schilling",
+      "year": 1982,
+      "country": "DE",
+      "genre": "Neue Deutsche Welle",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "German New Wave",
+        "Popular",
+        "Space",
+        "Synth"
+      ],
+      "hints": [
+        "Der Song erzählt von einem Astronauten, der die Erde verlässt und in den Weltraum driftet, während der Funkkontakt zur Bodenstation abreißt.",
+        "Die Geschichte ist eine Hommage an den Kosmonaten aus David Bowies 'Space Oddity' von 1969 - eine offizielle Verbindung zwischen beiden Figuren gibt es nicht.",
+        "Die deutsche Fassung erschien 1982 in Europa, die englische Version 1983 in den USA als erste Single des Albums 'Error in the System'.",
+        "Die deutsche Edit-Fassung misst 4:33 Minuten, die englische 5:00 - produziert hat der Sänger gemeinsam mit Armin Sabol, released bei Elektra und WEA.",
+        "Der Refrain, in dem das Raumschiff schwerelos von der Erde schwebt, gehört bis heute zu den prägendsten Momenten der Neuen Deutschen Welle."
+      ],
+      "lyrics": {
+        "real": [
+          "Der Countdown läuft",
+          "Schwebt das Raumschiff",
+          "Grüßt mir meine Frau!"
+        ],
+        "fake": "In den Sternen steht geschrieben, dass wir uns für immer lieben"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xGzkZrMc5vU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-peter-schilling-major-tom.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "electronic-synth",
+        "Schlager & Evergreens",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Major_Tom_(Coming_Home)",
+        "https://en.wikipedia.org/wiki/Space_Oddity",
+        "https://en.wikipedia.org/wiki/David_Bowie",
+        "https://en.wikipedia.org/wiki/Error_in_the_System",
+        "https://en.wikipedia.org/wiki/Peter_Schilling"
+      ]
+    },
+    {
+      "id": "reggae-peter-tosh-legalize-it",
+      "title": "Legalize It",
+      "artist": "Peter Tosh",
+      "year": 1976,
+      "country": "JM",
+      "genre": "Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Classic",
+        "Serious"
+      ],
+      "hints": [
+        "Das Stück ist das namensgebende Titelstück des ersten Soloalbums eines früheren Wailers-Mitglieds.",
+        "Das Album erschien im Juni 1976, aufgenommen wurde es 1975 und 1976 in den Studios Treasure Isle und Randy's in Kingston.",
+        "Politischer Hintergrund: Der Text entstand als Reaktion auf die systematische Benachteiligung der Rastafarier durch die jamaikanische Polizei und fordert die Legalisierung von Cannabis - auch aus medizinischen Gründen.",
+        "Das Album ist 39:04 Minuten lang, erschien bei Virgin und Columbia und wurde vom Interpreten selbst produziert.",
+        "Im Refrain fordert der Sänger, das Kraut zu legalisieren und nicht zu kritisieren - der Titel ist zugleich sein Programm."
+      ],
+      "lyrics": {
+        "real": [
+          "Singers smoke it",
+          "And players of instruments too",
+          "It's good for the flu"
+        ],
+        "fake": "Drinking under the sun, having so much fun with your gun"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=i-7paynQS7M",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/reggae-peter-tosh-legalize-it.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Legalize_It",
+        "https://en.wikipedia.org/wiki/Peter_Tosh",
+        "https://en.wikipedia.org/wiki/The_Wailers",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis",
+        "https://en.wikipedia.org/wiki/Reggae"
+      ]
+    },
+    {
+      "id": "pharrell-happy-2013",
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "year": 2013,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Legends & Classics",
+        "Party Anthem",
+        "Popular",
+        "Positive",
+        "Summer Vibes",
+        "Upbeat"
+      ],
+      "hints": [
+        "Der Song entstand im Februar 2013 in Miami und war zunächst nur Soundtrack-Musik für den Animationsfilm 'Despicable Me 2'.",
+        "Als Single erschien er am 21. November 2013 - zeitgleich startete ein 24 Stunden langes Musikvideo, das als weltweit erstes Video dieser Art gilt.",
+        "Er fuehrte in den USA, Großbritannien, Kanada, Irland, Neuseeland und 19 weiteren Ländern die Charts an und war mit 6,45 Millionen Verkäufen das meistverkaufte Lied des Jahres 2014 in den USA.",
+        "Bei der 86. Oscar-Verleihung 2014 war der Song für den besten Originalsong nominiert, gewann aber nicht - 'Let It Go' aus 'Frozen' holte den Preis.",
+        "Der Refrain lädt zum Mitklatschen ein: Wer spürt, dass ein Raum ohne Dach genau das richtige Gefühl ist, soll einstimmen."
+      ],
+      "lyrics": {
+        "real": [
+          "Sunshine she's here, you can take a break",
+          "Clap along if you feel like a room without a roof",
+          "Clap along if you feel like happiness is the truth"
+        ],
+        "fake": "Smile at the world and the world will smile back at you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+        "spotify": "https://open.spotify.com/track/6NPVjNh8Jhru9xOmyQigds",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/pharrell-happy-2013.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Movie Hits",
+        "soul-funk",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Happy_(Pharrell_Williams_song)",
+        "https://en.wikipedia.org/wiki/Despicable_Me_2_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Pharrell_Williams",
+        "https://en.wikipedia.org/wiki/86th_Academy_Awards",
+        "https://en.wikipedia.org/wiki/Despicable_Me_2"
+      ]
+    },
+    {
+      "id": "piano-phil-odds",
+      "title": "Against All Odds (Take a Look at Me Now)",
+      "artist": "Phil Collins",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Pop / Rock Ballad",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Song entstand 1983 für den Soundtrack eines Films mit demselben Namen und ist eine klassische Power-Ballade.",
+        "Die Single erschien im Februar 1984 in den USA und am 26. März 1984 in Großbritannien, produziert von Arif Mardin.",
+        "In den USA stand sie auf Platz 1 der Billboard Hot 100 - die erste von sieben Nummer-eins-Hits des Sängers als Solist - und erreichte auch in Kanada, Irland und Norwegen die Spitze.",
+        "In Großbritannien kam sie auf Platz 2; später machten Mariah Carey und Westlife das Stück im Jahr 2000 zur britischen Nummer eins.",
+        "Höhepunkt ist der Refrain, in dem er die verlorene Liebe bittet, sich die nun leere Stelle im Raum anzusehen - Klavier, breit gesungener Refrain, hohe Tenorstimme."
+      ],
+      "lyrics": {
+        "real": [
+          "How can I just let you walk away?",
+          "You're the only one who really knew me at all",
+          "I wish I could just make you turn around"
+        ],
+        "fake": "I'll keep on walking till the sunrise finds me here alone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wuvtoyVi7vY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/piano-phil-odds.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "Movie Hits",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Against_All_Odds_(Take_a_Look_at_Me_Now)",
+        "https://en.wikipedia.org/wiki/Against_All_Odds_(1984_film)",
+        "https://en.wikipedia.org/wiki/Phil_Collins",
+        "https://en.wikipedia.org/wiki/Arif_Mardin",
+        "https://en.wikipedia.org/wiki/Against_All_Odds_(soundtrack)"
+      ]
+    },
+    {
+      "id": "80s-phil-collins-in-the-air-tonight",
+      "title": "In the Air Tonight",
+      "artist": "Phil Collins",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Drums",
+        "Epic"
+      ],
+      "hints": [
+        "Der Song entstand nach der Trennung von der ersten Ehefrau 1980; den Text improvisierte der Musiker spontan im Studio.",
+        "Musikalisch trägt ein Sequential Circuits Prophet-5 über einer Roland-CR-78-Drumbox, dazu vocodierte Stimmen - d-Moll, 96 Schläge pro Minute.",
+        "Erst in der zweiten Hälfte bricht das legendäre Schlagzeug-Solo durch, aufgenommen mit Hugh Padgham im Londoner Townhouse-Studio.",
+        "Die Single erreichte Platz 2 der britischen Charts und Platz 1 in Österreich, Schweden, der Schweiz und der BRD, in den USA Platz 19 der Hot 100.",
+        "Das Schlagzeug-Break gilt als ikonisch: 2006 landete der Song auf Platz 35 der VH1-Liste '100 Greatest Songs of the 80s'."
+      ],
+      "lyrics": {
+        "real": [
+          "Well, if you told me you were drowning",
+          "I would not lend a hand",
+          "I've seen your face before my friend"
+        ],
+        "fake": "The city sleeps beneath a sky of endless rain tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YkADj0TPrJA",
+        "spotify": "https://open.spotify.com/track/18AXbzPzBS8Y3AkgSxzJPb",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/80s-phil-collins-in-the-air-tonight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "electronic-synth"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/In_the_Air_Tonight",
+        "https://en.wikipedia.org/wiki/Face_Value_(album)",
+        "https://en.wikipedia.org/wiki/Hugh_Padgham",
+        "https://en.wikipedia.org/wiki/Phil_Collins",
+        "https://en.wikipedia.org/wiki/Townhouse_Studios"
+      ]
+    },
+    {
+      "id": "disney-tarzan-heart",
+      "title": "You'll Be in My Heart",
+      "artist": "Phil Collins",
+      "year": 1999,
+      "country": "GB",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Protective",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand für den Disney-Animationsfilm 'Tarzan' von 1999 und erschien am 19. Mai 1999 als Single.",
+        "Ursprünglich hieß das Stück 'Lullaby' und war für die zehnjährige Tochter des Sängers geschrieben - eingesetzt in der Szene, in der die Gorillamutter ihr Baby beruhigt.",
+        "Für die internationalen Fassungen nahm der Interpret den Song in Französisch, Deutsch, Italienisch und Spanisch auf; die deutsche Fassung heißt 'Dir gehört mein Herz'.",
+        "Der Song gewann den Oscar für den besten Originalsong bei der 72. Oscar-Verleihung sowie den Golden Globe und wurde für den Grammy nominiert.",
+        "Der Refrain ist eine Zusage, die 'ab diesem Tag und für immer' gilt - geschrieben für ein Kind, das Schutz sucht."
+      ],
+      "lyrics": {
+        "real": [
+          "Come stop your crying",
+          "Just take my hand",
+          "No matter what they say"
+        ],
+        "fake": "Dancing in the moonlight, humming your name all through the town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0S_fTDauV34",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/disney-tarzan-heart.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Movie Hits",
+        "piano-ballads",
+        "90s Unplugged",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You'll_Be_in_My_Heart",
+        "https://en.wikipedia.org/wiki/Tarzan_(1999_soundtrack)",
+        "https://en.wikipedia.org/wiki/Tarzan_(1999_film)",
+        "https://en.wikipedia.org/wiki/72nd_Academy_Awards",
+        "https://en.wikipedia.org/wiki/Lily_Collins"
+      ]
+    }
+  ]
+}

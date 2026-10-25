@@ -1,0 +1,730 @@
+{
+  "songs": [
+    {
+      "id": "metal-soia-stepdown",
+      "title": "Step Down",
+      "artist": "Sick of It All",
+      "year": 1994,
+      "country": "US",
+      "genre": "New York Hardcore",
+      "difficulty": "easy",
+      "mood": [
+        "Rebellious",
+        "Dark",
+        "Epic"
+      ],
+      "hints": [
+        "Das Video inszeniert einen Reporter, der die Hardcore-Szene erkundet – gespielt von Sandor Weisberger, einem Synchronsprecher, der in den 1960er- und 1970er-Jahren Hörspiele mit Judson Fountain produzierte.",
+        "Die Band hielt den Song anfangs für eine lustige Jam-Session-Nummer; East West Records wollte ihn überraschend als Single mit Video veröffentlichen. Der Track ist von Oi!-Klängen, Gang-Vocals und melodiösen Passagen geprägt.",
+        "Der Song erschien 1994 auf dem dritten Album der Band bei East West Records, aufgenommen mit Tontechniker Tom Soares im Normandy Sound in Warren, Rhode Island.",
+        "Das Album erreichte Platz 67 der deutschen Albumcharts, wurde bis 1997 rund 250.000 Mal verkauft und 2012 in die Hall of Fame des Decibel-Magazins aufgenommen; das Video lief 1995 bei MTVs '120 Minutes'.",
+        "Im Refrain fällt der Satz 'It's a golden day' – die Band feiert damit einen 'goldenen Tag' für die Untergrund-Szene."
+      ],
+      "lyrics": {
+        "real": [
+          "In the underground, integrity lies within",
+          "Caught up in a trap of media crap, God, that's no way to live",
+          "It's a golden day, we can force them to step down"
+        ],
+        "fake": "We step down for nobody, we hold the line together"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MavzT_FUiuM",
+        "spotify": "https://open.spotify.com/track/0S3YlKnOR7F6T8t20gLhf0",
+        "amazonMusic": "https://music.amazon.com/albums/B079Y6QFYQ?trackAsin=B079YB96QS"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-soia-stepdown.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "metal-hardcore"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Scratch_the_Surface",
+        "https://en.wikipedia.org/wiki/Sick_of_It_All",
+        "https://www.loudersound.com/features/sick-of-it-all-the-story-behind-step-down",
+        "https://www.decibelmagazine.com/2012/08/28/sick-of-it-all-scratch-the-surface/",
+        "https://lrclib.net/api/get?artist_name=Sick%20of%20It%20All&track_name=Step%20Down"
+      ]
+    },
+    {
+      "id": "german-sido-bilder",
+      "title": "Bilder im Kopf",
+      "artist": "Sido",
+      "year": 2012,
+      "country": "DE",
+      "genre": "Hip Hop / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Thoughtful",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Der Rapper erzählt von einem schwarzen Fotoalbum mit silbernem Knopf, in dem er seine Kindheit und Jugend im Osten Berlins ablegt.",
+        "In einer Strophe greift er 32 Jahre zurück, als seine Mutter schwanger war und er geboren wurde – bis er neun war, wuchs er zwischen orangenem Licht und grauen Häusern auf.",
+        "Der Refrain kehrt immer wieder zurück wie ein Archiv: Alles wird nummeriert, paraphiert und aufbewahrt, bis die Erinnerung wieder auftaucht.",
+        "Der Song erschien 2012 als Single in Deutschland und wurde im selben Jahr auf die Compilation '#Beste' des Labels Aggro BMW aufgenommen.",
+        "Das offizielle Musikvideo wurde über den Kanal von Aggro TV veröffentlicht und inszeniert die Erinnerungen als bewegte Fotowelten."
+      ],
+      "lyrics": {
+        "real": [
+          "In einem schwarzen Fotoalbum mit 'nem silbernen Knopf",
+          "Bewahr' ich alle diese Bilder im Kopf",
+          "Ich weiß noch, damals als ich jung und wild war im Block"
+        ],
+        "fake": "Nachts ziehen die alten Bilder an mir vorbei"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RveIJFR7LV4"
+      },
+      "coverUrl": "/covers/german-sido-bilder.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Sido&track_name=Bilder%20im%20Kopf",
+        "https://www.youtube.com/watch?v=RveIJFR7LV4",
+        "https://music.apple.com/de/album/bilder-im-kopf/1440823001?i=1440823414",
+        "https://itunes.apple.com/lookup?id=1440823414&entity=song",
+        "https://en.wikipedia.org/wiki/Sido_(rapper)"
+      ]
+    },
+    {
+      "id": "yt-ycqk0gfpyxQ",
+      "title": "Hoppípolla (Planet Earth II Mix)",
+      "artist": "Sigur Rös",
+      "year": 2016,
+      "country": "IS",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Band ist ein Quartett aus Reykjavík und gilt als eine der Wegbereiter des Post-Rock.",
+        "Der Text besteht fast nur aus isländischen Wörtern, die zusammen eine erfundene Sprache ergeben, die die Band selbst 'Hopelandic' nannte.",
+        "Das Stück erschien 2005 auf dem Studioalbum 'Takk...' der Band und wurde ihr erfolgreichster Single.",
+        "In Großbritannien erreichte der Song im Mai 2006 Platz 24 der Singlecharts.",
+        "Für die Trailer der zweiten Staffel einer britischen Tierdokumentationsreihe nahm die Band 2016 eine neue Version des Stücks auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Hendumst í hringi",
+          "Allur heimurinn óskýr",
+          "Engin gúmmístígvél"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my life tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ycqk0gfpyxQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/sigur-rös-hoppípolla--planet-earth-ii-mix-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hoppípolla",
+        "https://en.wikipedia.org/wiki/Sigur_R%C3%B3s",
+        "https://www.bbc.co.uk/mediacentre/latestnews/2016/planet-earth-hoppipolla",
+        "https://pitchfork.com/news/70024-sigur-ros-share-hoppipolla-new-version-for-planet-earth-ii-tv-series-listen/",
+        "https://lrclib.net/api/get?artist_name=Sigur%20R%C3%B3s&track_name=Hopp%C3%ADpolla"
+      ]
+    },
+    {
+      "id": "german-silbermond-das-beste",
+      "title": "Das Beste",
+      "artist": "Silbermond",
+      "year": 2006,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Serious"
+      ],
+      "hints": [
+        "Die Band aus Bautzen in Sachsen mischt Pop-Rock mit eingängigen Balladen.",
+        "Der Song erschien 2006 als Single in Deutschland und ist bis heute eine der prägendsten Balladen der Band.",
+        "Der Text erzählt von einem Schatz, der so wertvoll ist, dass ihn kein Geld der Welt bezahlen könnte.",
+        "Im Refrain dankt der Sänger der Geliebten dafür, dass sie in sein Leben kam – ihr Lachen macht ihn süchtig.",
+        "In der Schlussstrophe ist sie seine Ruhe, seine Zuflucht und die Reise ohne Ende."
+      ],
+      "lyrics": {
+        "real": [
+          "Du bist das Beste, was mir je passiert ist",
+          "Es tut so gut, wie du mich liebst",
+          "Dein Lachen macht süchtig"
+        ],
+        "fake": "Wenn du lachst, dreht sich die Welt für einen Moment"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LyYAQHDMqfA"
+      },
+      "coverUrl": "/covers/german-silbermond-das-beste.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics",
+        "Schlager & Evergreens",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Silbermond&track_name=Das%20Beste",
+        "https://www.youtube.com/watch?v=LyYAQHDMqfA",
+        "https://music.apple.com/de/album/das-beste/194566118?i=194566230",
+        "https://itunes.apple.com/lookup?id=194566230&entity=song&country=DE",
+        "https://en.wikipedia.org/wiki/Silbermond"
+      ]
+    },
+    {
+      "id": "yt-adLGHcj_fmA",
+      "title": "Leave the Door Open",
+      "artist": "Silk Sonic (Bruno Mars & Anderson .Paak)",
+      "year": 2021,
+      "country": "US",
+      "genre": "Soul / R&B / Retro",
+      "difficulty": "medium",
+      "mood": [
+        "Smooth",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Ein gefeiertes Superduo veröffentlichte 2021 sein erstes gemeinsames Album und gewann damit prompt den Grammy für den Song des Jahres.",
+        "Der Song ist ein 'slow jam' und wurde von D'Mile und einem der beiden Sänger produziert.",
+        "Auf dem Debütalbum wird der Funk-Musiker Bootsy Collins als Gastmoderator geführt – er gab dem Duo seinen Namen.",
+        "Das Retro-Video wurde von einem der beiden Sänger und von Florent Dechard inszeniert und zeigt das Duo mit seinem Begleitband vor tanzenden Frauen.",
+        "Der Refrain ist eine Einladung, die Tür einen Moment angelehnt zu lassen, während beide Stimmen abwechselnd die Sehnsucht singen."
+      ],
+      "lyrics": {
+        "real": [
+          "I'ma leave the door open",
+          "That you feel the way I feel",
+          "And you want me like I want you tonight, baby"
+        ],
+        "fake": "Leave a light on in the window, I will find my way back"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=adLGHcj_fmA",
+        "spotify": "https://open.spotify.com/track/4pryE6cN2gFL1FVF5fYINl"
+      },
+      "coverUrl": "/covers/silk-sonic-leave-the-door-open.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "60s & 70s Soul & Rock Legends",
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Leave_the_Door_Open_(song)",
+        "https://en.wikipedia.org/wiki/Silk_Sonic",
+        "https://www.songfacts.com/facts/silk-sonic/leave-the-door-open",
+        "https://lrclib.net/api/get?artist_name=Silk%20Sonic&track_name=Leave%20the%20Door%20Open",
+        "https://music.apple.com/us/album/leave-the-door-open/1612867237?i=1612867242"
+      ]
+    },
+    {
+      "id": "yt-BDQ17frLWYQ",
+      "title": "Cómo lo Hizo",
+      "artist": "Silvestre Dangond",
+      "year": 2014,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der kolumbianische Sänger veröffentlichte den Track 2014 auf seinem Studioalbum 'Sigo Invicto'.",
+        "Der Text ist eine verzweifelte Frage: Wie konnte sie so lange hinter ihm stehen, ohne dass er etwas bemerkte?",
+        "In der Titelzeile steckt die ganze Handlung – er fragt sich bis heute, wie sie es so lange verheimlichen konnte.",
+        "Die Liveversion im offiziellen Kanal des Künstlers zeigt den Sänger bei einem Konzert in Lateinamerika.",
+        "Eine Liveaufnahme des Stücks erschien 2015 auf dem Live-Album 'Mucho + Que Sigo Invicto'."
+      ],
+      "lyrics": {
+        "real": [
+          "Ay, ¿cómo lo hizo? si siempre estaba conmigo",
+          "¿Cómo lo hizo? sin sospechas sin testigos",
+          "¿En qué momento, ella me convirtió en su amante?"
+        ],
+        "fake": "No sé de dónde sale tu hechizo, dime cómo lo hiciste"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=BDQ17frLWYQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/silvestre-dangond-cómo-lo-hizo--vídeo-oficial-en-vivo-.jpg",
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Silvestre%20Dangond&track_name=C%C3%B3mo%20lo%20Hizo",
+        "https://www.youtube.com/watch?v=BDQ17frLWYQ",
+        "https://music.apple.com/es/album/c%C3%B3mo-lo-hizo/935722053?i=935722117",
+        "https://music.apple.com/es/album/c%C3%B3mo-lo-hizo-en-vivo/986945729?i=986946307",
+        "https://en.wikipedia.org/wiki/Silvestre_Dangond"
+      ]
+    },
+    {
+      "id": "yt-xjWb_xeP1pA",
+      "title": "Niégame Tres Veces",
+      "artist": "Silvestre Dangond",
+      "year": 2014,
+      "country": "CO",
+      "genre": "Latin Pop / Vallenato",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Werk eines kolumbianischen Sängers aus Valledupar, der den Vallenato-Sound in den Mainstream der Latino-Popmusik brachte.",
+        "Der Titel bedeutet übersetzt so viel wie 'verleugne mich dreimal' - thematisch kreist das Stück um Abweisung und zerbrochenes Vertrauen.",
+        "Der Song erschien 2014 auf dem Album 'Sigo Invicto' und liegt mit rund viereinhalb Minuten Laufzeit im Original.",
+        "Die Lyrik malt den Beziehungswirbel in Bildern aus Fußball, Bienenwaben und Engeln - jede Strophe dreht sich um das Leugnen.",
+        "Der offizielle Videoclip ist eine Live-Aufnahme im spanischen Original und liegt im Kanal des Interpreten."
+      ],
+      "lyrics": {
+        "real": [
+          "Si alguien pregunta por mí, niega",
+          "Que se acabó este cariño",
+          "Que soy un panal que nunca tuvo miel"
+        ],
+        "fake": "Si me buscas en la noche, no me vas a encontrar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xjWb_xeP1pA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/silvestre-dangond-niegame-tres-veces.jpg",
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Silvestre+Dangond&track_name=Ni%C3%A9game+Tres+Veces",
+        "https://musicbrainz.org/release-group/734f7c79-3f30-4723-a3e7-88aa9c1aa458",
+        "https://itunes.apple.com/lookup?id=935722121",
+        "https://es.wikipedia.org/wiki/Silvestre_Dangond",
+        "https://www.youtube.com/watch?v=xjWb_xeP1pA"
+      ]
+    },
+    {
+      "id": "legends-simon-garfunkel-bridge",
+      "title": "Bridge Over Troubled Water",
+      "artist": "Simon & Garfunkel",
+      "year": 1970,
+      "country": "US",
+      "genre": "Folk Rock / Gospel",
+      "difficulty": "medium",
+      "mood": [
+        "Inspiring",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Die wohl berühmteste Klavier-Ballade der US-Folk-Geschichte.",
+        "Der Solist wollte das Stück ursprünglich nicht singen - er fühlte sich für die hohe Stimme des Stücks nicht berufen.",
+        "Der Titel greift eine Zeile aus einem Gospel-Song von 1959 auf.",
+        "Gewann fünf Grammys im Jahr 1971.",
+        "Führte sechs Wochen die US-Hot-100 an und war laut Billboard der Song des Jahres 1970."
+      ],
+      "lyrics": {
+        "real": [
+          "When tears are in your eyes",
+          "Like a bridge over troubled water",
+          "I will lay me down"
+        ],
+        "fake": "Like a lantern in the storm, I will guide you home"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4G-YQA_bsOU",
+        "spotify": "https://open.spotify.com/track/6l8EbYRtQMgKOyc1gcDHF9"
+      },
+      "coverUrl": "/covers/legends-simon-garfunkel-bridge.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bridge_over_Troubled_Water_(song)",
+        "https://en.wikipedia.org/wiki/Bridge_over_Troubled_Water",
+        "https://en.wikipedia.org/wiki/Simon_%26_Garfunkel",
+        "https://lrclib.net/api/get?artist_name=Simon+%26+Garfunkel&track_name=Bridge+Over+Troubled+Water",
+        "https://musicbrainz.org/release-group/c39f7f80-d42f-3669-9653-230f8e922083"
+      ]
+    },
+    {
+      "id": "country-simon-silence",
+      "title": "The Sound of Silence",
+      "artist": "Simon & Garfunkel",
+      "year": 1964,
+      "country": "US",
+      "genre": "Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Die ultimative Folk-Ballade über mangelnde Kommunikation.",
+        "Besticht durch die perfekten Harmonien der beiden Sänger.",
+        "Der Songwriter schrieb den Text mit 21 Jahren im Badezimmer bei Licht aus.",
+        "Berühmt als Teil der Filmmusik zum Film 'The Graduate' (1967) - dort läuft das Stück unter Vor- und Abspanntiteln.",
+        "Die akustische Erstfassung von 1964 war ein Flop - erst die 1965 elektrisch überarbeitete Version wurde zum Welthit."
+      ],
+      "lyrics": {
+        "real": [
+          "Because a vision softly creeping",
+          "And the vision that was planted in my brain",
+          "And touched the sound of silence"
+        ],
+        "fake": "The city sleeps in silence while the river keeps its secrets"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NAEppFUWLfc"
+      },
+      "coverUrl": "/covers/country-simon-silence.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Sound_of_Silence",
+        "https://en.wikipedia.org/wiki/Sounds_of_Silence",
+        "https://en.wikipedia.org/wiki/Simon_%26_Garfunkel",
+        "https://lrclib.net/api/get?artist_name=Simon+%26+Garfunkel&track_name=The+Sound+of+Silence",
+        "https://musicbrainz.org/release-group/499a8142-b8a7-3ab1-a3db-641a41860afb"
+      ]
+    },
+    {
+      "id": "80s-simple-minds-forget",
+      "title": "Don't You (Forget About Me)",
+      "artist": "Simple Minds",
+      "year": 1985,
+      "country": "GB",
+      "genre": "New Wave / Synth Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Happy",
+        "Inspirational",
+        "Inspiring"
+      ],
+      "hints": [
+        "Wurde durch die Schlussszene des Films 'The Breakfast Club' (1985) unsterblich.",
+        "Die schottische Band wollte das Stück eigentlich nicht aufnehmen - erst als auch andere Acts absagten, sagte sie zu.",
+        "Die berühmten 'La-la-la'-Gesänge am Ende des Lieds sind weltbekannt.",
+        "Geschrieben und produziert wurde das Stück von Keith Forsey, der es eigens für den Film komponierte.",
+        "Der Titel-Song erreichte in den USA und in Kanada Platz 1 und kam 1985 in Großbritannien auf Platz 7."
+      ],
+      "lyrics": {
+        "real": [
+          "Don't you forget about me",
+          "Look my way, never love me",
+          "Will you call my name?"
+        ],
+        "fake": "Turn around and call my name before the morning fades"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CdqoNKCCt7A",
+        "spotify": "https://open.spotify.com/track/5Y8Rj0s6wuM5DlQdllYiWl"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-simple-minds-forget.jpg",
+      "packs": [
+        "80s Flashback",
+        "Movie Hits",
+        "youtube-import",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don't_You_(Forget_About_Me)",
+        "https://en.wikipedia.org/wiki/The_Breakfast_Club",
+        "https://en.wikipedia.org/wiki/Simple_Minds",
+        "https://lrclib.net/api/get?artist_name=Simple+Minds&track_name=Don't+You+(Forget+About+Me)",
+        "https://musicbrainz.org/release-group/8b184afd-58a6-3626-a4c6-67089ab88734"
+      ]
+    },
+    {
+      "id": "piano-simple-perfect",
+      "title": "Perfect",
+      "artist": "Simple Plan",
+      "year": 2002,
+      "country": "CA",
+      "genre": "Pop-Punk / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Honest",
+        "Energy"
+      ],
+      "hints": [
+        "Inbegriff für jugendliche Protest-Balladen gegen elterliche Erwartungen.",
+        "Thematisiert den Schmerz, den Ansprüchen des Vaters nicht genügen zu können.",
+        "Besticht durch das melancholische Piano und die ehrlichen Shouts.",
+        "Der Song erschien 2002 auf dem Debütalbum der kanadischen Band aus Montreal.",
+        "Die B-Seite der Single war ein Cover von 'Happy Together' (1967), das zuvor im Film 'Freaky Friday' (2003) zu hören war."
+      ],
+      "lyrics": {
+        "real": [
+          "Hey, dad, look at me",
+          "And now I try hard to make it",
+          "I'm never gonna be good enough for you"
+        ],
+        "fake": "I wrote you a hundred lines that you never even read"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RUi54JTgL5s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-simple-perfect.jpg",
+      "packs": [
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Perfect_(Simple_Plan_song)",
+        "https://en.wikipedia.org/wiki/No_Pads,_No_Helmets...Just_Balls",
+        "https://en.wikipedia.org/wiki/Simple_Plan",
+        "https://lrclib.net/api/get?artist_name=Simple+Plan&track_name=Perfect",
+        "https://itunes.apple.com/lookup?id=1355149527"
+      ]
+    },
+    {
+      "id": "yt-G1ajxH07b7w",
+      "title": "Perfectly Perfect",
+      "artist": "Simple Plan",
+      "year": 2016,
+      "country": "CA",
+      "genre": "Pop-Rock / Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Happy",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Liebesballade einer kanadischen Band aus Montreal, die sich seit ihren Anfängen dem Pop-Punk verschrieben hat.",
+        "Der Song entstand für das fünfte Studioalbum der Band, das im Februar 2016 erschien.",
+        "Die Aufnahmen entstanden 2015 in Studios in Kalifornien, produziert von Howard Benson.",
+        "Der Text preist die Liebste so, wie sie ist - er will ihr die Selbstzweifel nehmen, die sie in den Spiegel setzt.",
+        "Das Stück erschien als dritte Single des Albums und wurde mit einem offiziellen Video begleitet."
+      ],
+      "lyrics": {
+        "real": [
+          "You might not think you're a supermodel",
+          "Your smile lights up the room",
+          "You're perfectly perfect to me"
+        ],
+        "fake": "You're the only story that I will never get right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=G1ajxH07b7w"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/simple-plan-perfectly-perfect.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Taking_One_for_the_Team",
+        "https://en.wikipedia.org/wiki/Simple_Plan",
+        "https://lrclib.net/api/get?artist_name=Simple+Plan&track_name=Perfectly+Perfect",
+        "https://musicbrainz.org/release-group/4a5b17c4-e622-415a-91b5-8e927ff0edcd",
+        "https://www.youtube.com/watch?v=G1ajxH07b7w"
+      ]
+    },
+    {
+      "id": "yt-swloMVFALXw",
+      "title": "Singin' in the Rain",
+      "artist": "Gene Kelly",
+      "year": 1952,
+      "country": "US",
+      "genre": "Soundtrack / Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Nostalgic",
+        "Romantic",
+        "Feel Good"
+      ],
+      "hints": [
+        "Längst gemeinfrei: Am 1. Januar 2025 fiel das Lied in den USA in die öffentliche Domain – geschrieben hatte man es bereits 1929.",
+        "Bereits 1929 brachte Doris Eaton Travis den Song auf die Broadway-Bühne; weltberühmt wurde er durch Cliff Edwards und die Brox Sisters im Revue-Film ‘The Hollywood Revue of 1929’.",
+        "Die berühmte Tanzszene entstand unter widrigsten Bedingungen: Der Hauptdarsteller war erkältet und litt über zwei Drehtage hinweg an 39,4 Grad Celsius (103 Grad Fahrenheit) Fieber.",
+        "Ein hartnäckiges Gerücht behauptet, die Flüssigkeit habe Milch enthalten, damit sie vor der Kamera sichtbar werde – der Hauptdarsteller verwies stattdessen auf geschicktes Gegenlicht; das zugehörige Soundtrack kam 1952 bei den meistverkauften Pop-Alben auf Platz zwei.",
+        "Der Film selbst erschien 1952 in den USA und belegte in der AFI-Liste der 100 besten US-Filme 2007 den fünften Platz; die Titelmelodie kam in der AFI-Songliste auf Platz drei, und der Tänzer erhielt 1952 einen Ehren-Oscar für seine Choreografie."
+      ],
+      "lyrics": {
+        "real": [
+          "What a glorious feeling",
+          "The sun's in my heart",
+          "And I'm ready for love"
+        ],
+        "fake": "Riding on a chrome motorcycle through the desert tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=swloMVFALXw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/singin--in-the-rain--full-song-dance--52----gene-kelly---musical-romantic-comedies---1950s-movies.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Singin%27_in_the_Rain",
+        "https://en.wikipedia.org/wiki/Singin%27_in_the_Rain_(song)",
+        "https://en.wikipedia.org/wiki/Singin%27_in_the_Rain_(soundtrack)",
+        "https://www.songfacts.com/facts/gene-kelly/singin-in-the-rain",
+        "https://en.wikipedia.org/wiki/Gene_Kelly"
+      ]
+    }
+  ]
+}

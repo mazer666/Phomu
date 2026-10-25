@@ -1,0 +1,749 @@
+{
+  "songs": [
+    {
+      "id": "indie-oasis-dont-look-back",
+      "title": "Don't Look Back in Anger",
+      "artist": "Oasis",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Britpop",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Classic",
+        "Anthem"
+      ],
+      "hints": [
+        "Einer der wenigen Hits, bei denen Noel Gallagher den Lead-Gesang übernimmt.",
+        "Das Klavier-Intro ahmt das Klavierriff von John Lennons 'Imagine' nach - Gallagher räumte die Ähnlichkeit in einem Interview offen ein.",
+        "Nach dem Anschlag in Manchester 2017 wurde der Song zu einer inoffiziellen Hymne der Stadt.",
+        "Die Person 'Sally', die im Refrain auftaucht, existiert laut Noel gar nicht.",
+        "Refrain: 'And So Sally can wait, she knows it's too late as we're walking on by'"
+      ],
+      "lyrics": {
+        "real": [
+          "Slip inside the eye of your mind",
+          "A better place to play",
+          "Stand up beside the fireplace"
+        ],
+        "fake": "On your search for a place, you can stay, so you play for a while"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bDvy4VD6Dq8",
+        "spotify": "https://open.spotify.com/track/12dU3vAh6AFoJkisorfoUl",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/indie-oasis-dont-look-back.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_Look_Back_in_Anger",
+        "https://www.songfacts.com/facts/oasis/dont-look-back-in-anger",
+        "https://en.wikipedia.org/wiki/Imagine_%28song%29",
+        "https://en.wikipedia.org/wiki/Manchester_Arena_bombing",
+        "https://api.lyrics.ovh/v1/Oasis/Don%27t%20Look%20Back%20in%20Anger"
+      ]
+    },
+    {
+      "id": "90s-oasis-wonderwall",
+      "title": "Wonderwall",
+      "artist": "Oasis",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Britpop",
+      "difficulty": "easy",
+      "mood": [
+        "Sing-along",
+        "Acoustic",
+        "Classic"
+      ],
+      "hints": [
+        "Noel Gallagher wollte den Song ursprünglich selbst singen und überließ die Lead-Partie dann seinem Bruder Liam.",
+        "Die Aufnahme entstand 1995 in den Rockfield Studios in Wales.",
+        "Der Titel des Songs stammt von einem Soundtrack-Album, das George Harrison 1968 für einen gleichnamigen psychedelischen Film komponierte.",
+        "Das Musikvideo drehte Nigel Dick im September 1995 in London - komplett in Schwarz-Weiß gehalten.",
+        "Der Song erreichte Platz 2 der britischen Single-Charts und wurde neunmal platin ausgezeichnet."
+      ],
+      "lyrics": {
+        "real": [
+          "Today is gonna be the day that they're gonna throw it back to you",
+          "And all the roads we have to walk are winding",
+          "I don't believe that anybody feels the way I do about you now"
+        ],
+        "fake": "Walking through the park in the middle of the dark, feeling free"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6hzrDeceEKc",
+        "spotify": "https://open.spotify.com/track/1qPbGZqppFwLwcBC1JQ6Vr",
+        "amazonMusic": "https://music.amazon.com/tracks/B073Q9TTTF"
+      },
+      "coverUrl": "/covers/90s-oasis-wonderwall.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wonderwall",
+        "https://www.songfacts.com/facts/oasis/wonderwall",
+        "https://en.wikipedia.org/wiki/Rockfield_Studios",
+        "https://en.wikipedia.org/wiki/Wonderwall_Music",
+        "https://lrclib.net/api/get?artist_name=Oasis&track_name=Wonderwall"
+      ]
+    },
+    {
+      "id": "yt-CR4qiP1tUgA",
+      "title": "Space Case",
+      "artist": "Armin van Buuren",
+      "year": 2023,
+      "country": "NL",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Euphoric",
+        "Dance Floor",
+        "Night Drive"
+      ],
+      "hints": [
+        "Die Aufnahme erschien 2023 als Single und wurde später auch auf das Album 'Breathe' des niederländischen DJs übernommen.",
+        "Die Spielzeit liegt bei gut dreieinhalb Minuten - einer der kürzeren Tracks des Produzenten.",
+        "Der Text klingt wie ein Funkspruch im Äther: 'John, please come in' - wenige gesprochene Zeilen, dann ein ständig wiederholter Refrain.",
+        "Das Video im Netz ist ein reines 'Topic'-Upload ohne eigenes Musikvideo.",
+        "Der Refrain besteht aus nichts weiter als der mehrfach wiederholten Titelfrase."
+      ],
+      "lyrics": {
+        "real": [
+          "John, please come in",
+          "Copy guys, sorry, static on the line",
+          "John, we're still waiting on an update"
+        ],
+        "fake": "We drift through the silence, out of the blue"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CR4qiP1tUgA",
+        "spotify": "https://open.spotify.com/track/1fG0S5CgMMHQ4SJkXd6ueH",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/yt-CR4qiP1tUgA.jpg",
+      "hintEvidence": [
+        "https://music.apple.com/us/album/space-case/1698500848?i=1698500850",
+        "https://music.apple.com/us/album/breathe/1811431893",
+        "https://en.wikipedia.org/wiki/Armin_van_Buuren",
+        "https://en.wikipedia.org/wiki/Armin_van_Buuren_discography",
+        "https://api.lyrics.ovh/v1/Armin%20van%20Buuren/Space%20Case"
+      ]
+    },
+    {
+      "id": "yt-dFRywBkXgdA",
+      "title": "We Sink",
+      "artist": "Of Monsters and Men",
+      "year": 2015,
+      "country": "IS",
+      "genre": "Indie Folk",
+      "difficulty": "medium",
+      "mood": [
+        "Dreamy",
+        "Anthemic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Die Band kommt aus Island und wurde 2010 in Garðabær gegründet.",
+        "Der Song erschien 2015 auf dem zweiten Album der Band - es erreichte Platz 3 der US-Albumcharts.",
+        "Der Text handelt vom Ertrinken und davon, dass man den Blick abwenden soll, statt zu schauen.",
+        "Das Video im Netz ist ein offizielles Lyric-Video der Band.",
+        "Der Song beginnt mit den Worten 'All those eyes on me'."
+      ],
+      "lyrics": {
+        "real": [
+          "All those eyes on me",
+          "As I sink into the open sea",
+          "So please look away, don't look at me"
+        ],
+        "fake": "We are the dreamers, we let the fire burn"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dFRywBkXgdA",
+        "spotify": "https://open.spotify.com/track/0KtQxdGPKzeAwKBt3LrD24",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/of-monsters-and-men-we-sink--official-lyric-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Of_Monsters_and_Men",
+        "https://en.wikipedia.org/wiki/Beneath_the_Skin_(Of_Monsters_and_Men_album)",
+        "https://music.apple.com/us/album/we-sink/1440827807?i=1440828706",
+        "https://www.youtube.com/watch?v=dFRywBkXgdA",
+        "https://api.lyrics.ovh/v1/Of%20Monsters%20and%20Men/We%20Sink"
+      ]
+    },
+    {
+      "id": "soul-ohio-roller",
+      "title": "Love Rollercoaster",
+      "artist": "Ohio Players",
+      "year": 1975,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song erschien 1975 auf dem Album 'Honey' und wurde von Bandmitgliedern wie Leroy Bonner komponiert.",
+        "Das Album erreichte Platz 2 der US-Albumcharts und war das dritte Album der Band, das die Soul- und Black-Album-Charts anführte.",
+        "Um das Cover-Modell Ester Cordet ranken sich Gerüchte, sie sei beim Aufnehmen verletzt oder sogar getötet worden - die Geschichten sind falsch.",
+        "Im Text fordert der Sänger die Geliebte auf, mitzufahren und mitzuschwingen.",
+        "Refrain-Zeile: 'All you do is ride'."
+      ],
+      "lyrics": {
+        "real": [
+          "All you do is ride",
+          "Don't you wanna ride girl?",
+          "Rollercoaster of love"
+        ],
+        "fake": "Hey sugar, we shake it up till the horns blow out"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JLzblwij078",
+        "spotify": "https://open.spotify.com/track/1hRDHWWealh2Pk3fnpIe75",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-ohio-roller.jpg",
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Love_Rollercoaster",
+        "https://en.wikipedia.org/wiki/Honey_%28Ohio_Players_album%29",
+        "https://music.apple.com/us/album/love-rollercoaster/1434909253?i=1434909266",
+        "https://api.lyrics.ovh/v1/Ohio%20Players/Love%20Rollercoaster",
+        "https://lrclib.net/api/get?artist_name=Ohio%20Players&track_name=Love%20Rollercoaster"
+      ]
+    },
+    {
+      "id": "yt-9cF8XQPQ1lU",
+      "title": "Dead Man's Party",
+      "artist": "Oingo Boingo",
+      "year": 1985,
+      "country": "US",
+      "genre": "New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Energetic",
+        "Eerie",
+        "Celebration"
+      ],
+      "hints": [
+        "Der Song erschien 1985 auf dem gleichnamigen Album der US-Band - das Cover huldigt dem mexikanischen Feiertag 'Día de los Muertos'.",
+        "Geschrieben und produziert wurde er von Danny Elfman, der auch den Lead-Gesang übernahm.",
+        "Die Zeile über den Chauffeur, der vor der Tür steht, greift auf die Kurzgeschichte 'The Bus-Conductor' von E. F. Benson aus dem Jahr 1906 zurück.",
+        "Die Band trat mit dem Song selbst in einem Kinofilm auf - als Cameo in 'Back to School'.",
+        "Die Albumfassung dauert über sechs Minuten, die im Video geschnittene nur knapp vier."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm all dressed up with nowhere to go",
+          "Walkin' with a dead man over my shoulder",
+          "Goin' to a party where no one's still alive"
+        ],
+        "fake": "I'm dressed for the wedding with nobody to impress, walkin' with a dead man, cold as the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9cF8XQPQ1lU",
+        "spotify": "https://open.spotify.com/track/2h47SG8bNphmicAll4H9RV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Movie Hits",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/oingo-boingo-dead-man-s-party.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dead_Man%27s_Party_(song)",
+        "https://en.wikipedia.org/wiki/Dead_Man%27s_Party_(album)",
+        "https://en.wikipedia.org/wiki/Danny_Elfman",
+        "https://en.wikipedia.org/wiki/Back_to_School",
+        "https://api.lyrics.ovh/v1/Oingo%20Boingo/Dead%20Man%27s%20Party"
+      ]
+    },
+    {
+      "id": "yt-QvW61K2s0tA",
+      "title": "The One Moment",
+      "artist": "OK Go",
+      "year": 2016,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Aufgenommen 2013/2014 in den Tarbox Road Studios im US-Bundesstaat New York, produziert von Dave Fridmann.",
+        "Das Musikvideo entstand in rund sieben Wochen und zeigt 4,2 Sekunden Echtzeit, in denen 325 Ereignisse ablaufen - zeitweise bis zu 20.000-fach verlangsamt.",
+        "Der Clip entstand im Rahmen der Kampagne 'Walk Her Walk' des Salzherstellers Morton Salt, der die Produktion finanzierte.",
+        "Der Song ist die vierte Single des Albums 'Hungry Ghosts' von 2014 und ist 3:43 Minuten lang.",
+        "Das offizielle Video erschien am 23. November 2016 und zeigt die Band vor einem weißen Set mit bunten Ballons, die in Zeitlupe platzen."
+      ],
+      "lyrics": {
+        "real": [
+          "There's nothing more lovely",
+          "This will be the reason to battle",
+          "So open your arms to me"
+        ],
+        "fake": "I packed my bags and left the city lights behind"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QvW61K2s0tA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/ok-go-ok-go---the-one-moment---official-video.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_One_Moment",
+        "https://en.wikipedia.org/wiki/Hungry_Ghosts_(album)",
+        "https://en.wikipedia.org/wiki/Dave_Fridmann",
+        "https://en.wikipedia.org/wiki/Morton_Salt",
+        "https://itunes.apple.com/search?term=OK+Go+The+One+Moment&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "country-oldcrow-wagon",
+      "title": "Wagon Wheel",
+      "artist": "Old Crow Medicine Show",
+      "year": 2004,
+      "country": "US",
+      "genre": "Folk / Bluegrass",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Der Refrain entstand 1973 während einer Studio-Session, die weiteren Textzeilen kamen 25 Jahre später dazu.",
+        "Ein Bandmitglied brachte von einer Familienreise nach London ein Bob-Dylan-Bootleg mit, auf dem Dylans fertiger Refrain zu hören war.",
+        "Aufgenommen wurde die Fassung 2003 in der RCA Studio B in Nashville, produziert von David Rawlings; die RIAA zertifizierte sie 2023 dreifach als Platin.",
+        "Sie erschien als erste Single zwei Wochen vor dem Major-Debuet 'O.C.M.S.'; eine frühere Fassung stand bereits auf der EP 'Troubles Up and Down the Road' von 2001.",
+        "Das offizielle Video erschien am 7. September 2006 und zeigt die Band als Begleitung eines Jahrmarkt-Programms, in dem der Produzent selbst als Kassierer auftritt."
+      ],
+      "lyrics": {
+        "real": [
+          "Headed down south to the land of the pines",
+          "I made it down the coast in seventeen hours",
+          "And I'm a-hopin' for Raleigh"
+        ],
+        "fake": "Waiting by the county line with a fiddle by the fire"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1gX1EP6mG-E",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-oldcrow-wagon.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wagon_Wheel_(song)",
+        "https://en.wikipedia.org/wiki/Old_Crow_Medicine_Show_(album)",
+        "https://en.wikipedia.org/wiki/David_Rawlings",
+        "https://en.wikipedia.org/wiki/Pat_Garrett_%26_Billy_the_Kid_(album)",
+        "https://itunes.apple.com/search?term=Old+Crow+Medicine+Show+Wagon+Wheel&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "olivia-rodrigo-drivers-license-2021",
+      "title": "drivers license",
+      "artist": "Olivia Rodrigo",
+      "year": 2021,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Heartbreak",
+        "Modern",
+        "Rainy Day",
+        "Road Trip",
+        "Sad"
+      ],
+      "hints": [
+        "Aufgenommen 2020 im Studio 'Amusement' in Los Angeles, produziert von Dan Nigro.",
+        "Die Sängerin teaserte den Song über Monate hinweg und kündigte ihn am 4. Januar 2021 an; veröffentlicht wurde er am 8. Januar 2021.",
+        "Am vierten Tag nach der Veröffentlichung brach der Song den Rekord für die meisten Einzeltages-Streams eines Nicht-Weihnachtslieds, die erste Woche war die erfolgreichste Song-Woche bei Spotify und Amazon Music.",
+        "Acht Wochen lang stand das Lied an der Spitze der US-Heat-100; die Sängerin wurde dadurch zur jüngsten Künstlerin, die dort je debütierte.",
+        "2022 gewann der Song den Grammy für den besten Pop-Solotitel und war außerdem für den Song des Jahres nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Just like we always talked about",
+          "She's so much older than me",
+          "Guess you didn't mean what you wrote in that song about me"
+        ],
+        "fake": "I bought a new car and drove it down the coast today"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZmDBbnmKpqQ",
+        "spotify": "https://open.spotify.com/track/5wANPM4fQCJwkGd4rN57mH",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/olivia-rodrigo-drivers-license-2021.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Drivers_License_(song)",
+        "https://en.wikipedia.org/wiki/Sour_(album)",
+        "https://en.wikipedia.org/wiki/64th_Annual_Grammy_Awards",
+        "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_number-one_singles_of_the_2020s",
+        "https://itunes.apple.com/search?term=Olivia+Rodrigo+drivers+license&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-Bc9ijogGmtU",
+      "title": "good 4 u",
+      "artist": "Olivia Rodrigo",
+      "year": 2021,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Aufgenommen 2020 im Studio 'Amusement' in Los Angeles, produziert von Dan Nigro; der Song ist 2:58 Minuten lang.",
+        "Die Band Paramore ist mit zwei Songcredits beteiligt, weil das Stück Ähnlichkeiten zu deren 'Misery Business' aufweist.",
+        "Es ist eine bittere Abrechnung: Der Ex-Partner hat schnell eine neue Freundin gefunden, während die Sängerin die Nacht weinend auf dem Badezimmerboden verbrachte.",
+        "Der Song stieg direkt auf Platz 1 der US-Heat-100 und war in 23 Ländern ein Nummer-eins-Hit, darunter Deutschland, das Vereinigte Königreich und Australien.",
+        "Bei den Grammys 2022 war er für den besten Musikvideos nominiert; das Debütalbum wurde das erste in der Chartgeschichte mit zwei Songs an der Heat-100-Spitze."
+      ],
+      "lyrics": {
+        "real": [
+          "You found a new girl and it only took a couple weeks",
+          "I guess that therapist I found for you, she really helped",
+          "You bought a new car and your career's really takin' off"
+        ],
+        "fake": "I drove down to the ocean with the windows rolled down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Bc9ijogGmtU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/olivia-rodrigo-good-4-u.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Good_4_U",
+        "https://en.wikipedia.org/wiki/Sour_(album)",
+        "https://en.wikipedia.org/wiki/Paramore",
+        "https://en.wikipedia.org/wiki/64th_Annual_Grammy_Awards",
+        "https://lrclib.net/api/get?artist_name=Olivia%20Rodrigo&track_name=good%204%20u"
+      ]
+    },
+    {
+      "id": "yt-_GWKkqNoyEA",
+      "title": "Counting Stars",
+      "artist": "OneRepublic",
+      "year": 2013,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Aufgenommen im August 2012, zuerst im Black Rock Studio auf Santorin, später in den Patriot Studios in Denver.",
+        "Der Refrain dreht sich darum, das Zählen von Geld aufzugeben und stattdessen etwas zu zählen, das nicht in Scheinen liegt.",
+        "Der Song erschien am 14. Juni 2013 als zweite Single des Albums 'Native' und ist 4:17 Minuten lang.",
+        "Er wurde die erfolgreichste Single der Band: Platz 1 in Kanada und im Vereinigten Königreich, Platz 2 in den USA.",
+        "Das Video wurde am 10. Mai 2013 in New Orleans gedreht und am 31. Mai 2013 veröffentlicht; 2015 war es das erste Musikvideo einer Band mit einer Milliarde Views."
+      ],
+      "lyrics": {
+        "real": [
+          "Lately, I've been, I've been losin' sleep",
+          "I see this life, like a swinging vine",
+          "I feel something so right doin' the wrong thing"
+        ],
+        "fake": "We sold the farm and bought a sailboat for the sea"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_GWKkqNoyEA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/onerepublic-counting-stars.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Counting_Stars",
+        "https://en.wikipedia.org/wiki/Native_(album)",
+        "https://en.wikipedia.org/wiki/OneRepublic",
+        "https://itunes.apple.com/search?term=OneRepublic+Counting+Stars&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=OneRepublic&track_name=Counting%20Stars"
+      ]
+    },
+    {
+      "id": "metal-opeth-perdition",
+      "title": "Ghost of Perdition",
+      "artist": "Opeth",
+      "year": 2005,
+      "country": "SE",
+      "genre": "Progressive Death Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Complex",
+        "Dark",
+        "Epic"
+      ],
+      "hints": [
+        "Eröffnungstrack eines Albums von 2005, aufgenommen zwischen 15. März und 1. Juni 2005 im Fascination Street Studio in Örebro.",
+        "Der Text erzählt vom Tod einer Mutter und von der Frage, ob man wirklich leben muss.",
+        "Das Stück wechselt zwischen brüllenden Growls und sauberem Falsett - die Band verbindet beide Stilrichtungen bis heute.",
+        "Produziert wurde das Album von Mikael Åkerfeldt und Jens Bogren; es war das erste Album der Band nach dem Wechsel zu Roadrunner Records.",
+        "Das Album war ursprünglich als Konzeptalbum über einen Mann gedacht, der seine eigene Mutter tötet."
+      ],
+      "lyrics": {
+        "real": [
+          "Twisted face upon the head",
+          "A warning no one read",
+          "Why would we really need to live?"
+        ],
+        "fake": "In the shadow of the valley, I'm looking for a rally of hope tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MDBykpSXsSE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-opeth-perdition.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ghost_Reveries",
+        "https://en.wikipedia.org/wiki/Opeth",
+        "https://en.wikipedia.org/wiki/Mikael_%C3%85kerfeldt",
+        "https://itunes.apple.com/search?term=Opeth+Ghost+of+Perdition&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Opeth&track_name=Ghost%20of%20Perdition"
+      ]
+    },
+    {
+      "id": "yt-n4mqwJ569_M",
+      "title": "Enola Gay",
+      "artist": "Orchestral Manoeuvres in the Dark",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synth-Pop / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Atmospheric",
+        "Melancholic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der Song thematisiert den Abwurf der ersten Atombombe im Zweiten Weltkrieg und gilt heute als Anti-Kriegs-Klassiker des britischen Synth-Pop.",
+        "Die Band entstand 1978 im englischen Wirral aus zwei Musikern, die sich bereits in der Grundschule kannten; Bassist und Sänger schrieb den Text, das zweite Album erschien noch im selben Jahr.",
+        "Der Text spielt auf die Detonation über Hiroshima an: 8:15 Uhr japanischer Zeit, dazu eine Anspielung auf den Spitznamen der Uranbombe – und die Frage, ob der Einsatz nötig war.",
+        "Technisch ungewöhnlich: Der Song hat keinen gesungenen Refrain, die Hookline trägt ein Korg Micro-Preset, und durchgehend spielt derselbe Vier-Akkord-Fortschritt; aufgenommen wurde in Ridge Farm bei Dorking.",
+        "Die Single erreichte Platz 8 der britischen Single-Charts (der vierte Charterfolg der Band), war in Italien, Portugal und Spanien Nummer eins, verkaufte sich mehr als fünf Millionen Mal und lief 2012 bei der Eröffnungsfeier der Olympischen Spiele in London."
+      ],
+      "lyrics": {
+        "real": [
+          "You should have stayed at home yesterday",
+          "The feeling and the way you lied",
+          "Is mother proud of little boy today?"
+        ],
+        "fake": "You can hear the engines screaming over the sleeping city tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=n4mqwJ569_M",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=d5XJ2GiR6Bo"
+        ],
+        "spotify": "https://open.spotify.com/track/3NYCaxkggl0Hh8vQptSUvV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/orchestral-manoeuvres-in-the-dark-enola-gay--remastered-2003-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Enola_Gay_(song)",
+        "https://en.wikipedia.org/wiki/Orchestral_Manoeuvres_in_the_Dark",
+        "https://en.wikipedia.org/wiki/Organisation_(album)",
+        "https://www.theguardian.com/music/2013/jan/07/orchestral-manoeuvres-dark-enola-gay",
+        "https://lrclib.net/api/get?artist_name=Orchestral%20Manoeuvres%20in%20the%20Dark&track_name=Enola%20Gay"
+      ]
+    }
+  ]
+}

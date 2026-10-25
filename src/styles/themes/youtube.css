@@ -1,0 +1,22 @@
+/**
+ * YouTube Theme
+ * Dark with red accents, modern card layouts.
+ * Inspired by YouTube's dark mode.
+ */
+[data-theme='youtube'] {
+  --color-bg: #0f0f0f;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-card: #272727;
+  --color-text: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  --color-primary: #ff0000;
+  --color-primary-hover: #cc0000;
+  --color-secondary: #ff4444;
+  --color-accent: #ff0000;
+  --color-success: #4caf50;
+  --color-error: #ff5252;
+  --color-border: #3f3f3f;
+  --font-heading: 'system-ui', sans-serif;
+  --font-body: 'system-ui', sans-serif;
+  --radius: 12px;
+}

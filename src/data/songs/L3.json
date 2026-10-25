@@ -1,0 +1,744 @@
+{
+  "songs": [
+    {
+      "id": "legends-led-zeppelin-stairway",
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "year": 1971,
+      "country": "GB",
+      "genre": "Hard Rock / Folk Rock",
+      "difficulty": "hard",
+      "mood": [
+        "Dramatic",
+        "Epic",
+        "Legends & Classics",
+        "Moody",
+        "Mystical",
+        "Popular"
+      ],
+      "hints": [
+        "Gilt oft als der beste Rock-Song aller Zeiten, obwohl er nie als Single veröffentlicht wurde.",
+        "Der Song baut sich langsam von einer akustischen Folk-Ballade zu einer Hard-Rock-Hymne auf.",
+        "Gitarrist Jimmy Page spielt eines der am meisten bewunderten Solos der Musikgeschichte.",
+        "Thematisiert eine Frau, die glaubt, sich einen Weg in den Himmel kaufen zu können.",
+        "Über acht Minuten Länge und 2004 von Rolling Stone auf Platz 31 der 500 besten Songs aller Zeiten gewählt."
+      ],
+      "lyrics": {
+        "real": [
+          "And she's buying a stairway to heaven",
+          "With a word she can get what she came for",
+          "Sometimes all of our thoughts are misgiven"
+        ],
+        "fake": "Riding on a midnight train to the place where the rivers bend"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QkF3oxziUI4",
+        "spotify": "https://open.spotify.com/track/5CQ30WqJwcep0pYcV4AMNc"
+      },
+      "coverUrl": "/covers/legends-led-zeppelin-stairway.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stairway_to_Heaven",
+        "https://en.wikipedia.org/wiki/Led_Zeppelin_IV",
+        "https://en.wikipedia.org/wiki/Led_Zeppelin",
+        "https://www.songfacts.com/facts/led-zeppelin/stairway-to-heaven",
+        "https://lrclib.net/api/get?artist_name=Led%20Zeppelin&track_name=Stairway%20to%20Heaven"
+      ]
+    },
+    {
+      "id": "jazz-morgan-sidewinder",
+      "title": "The Sidewinder",
+      "artist": "Lee Morgan",
+      "year": 1964,
+      "country": "US",
+      "genre": "Jazz / Hard Bop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein reines Instrumental: Über zehn Minuten Trompete, Tenorsaxophon und Rhythmusgruppe, ohne ein einziges gesungenes Wort.",
+        "Der Titel ist eine Eigenkomposition des Trompeters – benannt nach der 'bösen Figur' im Fernsehen und nicht nach dem Reptil.",
+        "Der Groove schlug so ein, dass das Label danach andere Bands aufforderte, den Beat zu kopieren.",
+        "Der Musiker war ein Wunderkind: Mit 18 Jahren spielte er bereits im Big Band von Dizzy Gillespie.",
+        "Der Song wurde zum Soundtrack eines US-Werbespots einer Automarke – gegen die Nutzung ging der Trompeter rechtlich vor."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NHN6-yWFKPc",
+        "spotify": "https://open.spotify.com/track/79Db5gRaKqndxCMvAShXcQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-morgan-sidewinder.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Sidewinder",
+        "https://en.wikipedia.org/wiki/The_Sidewinder_(composition)",
+        "https://en.wikipedia.org/wiki/Lee_Morgan",
+        "https://www.bluenote.com/artist/lee-morgan/",
+        "https://music.apple.com/us/album/the-sidewinder/1458548311"
+      ]
+    },
+    {
+      "id": "yt-kdk8t9sr0yo",
+      "title": "Don't Want You Back",
+      "artist": "Leela James",
+      "year": 2016,
+      "country": "US",
+      "genre": "Soul/R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Soulful"
+      ],
+      "hints": [
+        "Die US-Sängerin wurde 1983 in Los Angeles geboren und sang schon 2000 am Soundtrack eines Hollywood-Films mit.",
+        "Ihr 2005 erschienenes Debütalbum enthielt Cover-Versionen von Pop-Hits – darunter einen Soul-Klassiker.",
+        "Die Single erschien 2016 und erreichte 2017 Platz 1 der Billboard-Charts für Adult R&B-Songs – ihr erfolgreichster Titel.",
+        "Der Text erzählt von einer neuen Liebe, die den Platz des Ex-Partners eingenommen hat.",
+        "Der Refrain ist eine klare Absage: 'Ich bin weitergezogen, ich will dich nicht zurück.'"
+      ],
+      "lyrics": {
+        "real": [
+          "Two o'clock in the morning",
+          "I've moved on, and I don't want you back",
+          "You had a good thing, you had a good thing, yeah"
+        ],
+        "fake": "You left the radio on and the old song keeps on playing"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kdk8t9sr0yo",
+        "spotify": "https://open.spotify.com/track/04wfsaYaXrpfuagA7ewhNQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/leela-james-don-t-want-you-back.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Leela_James",
+        "https://en.wikipedia.org/wiki/Did_It_for_Love_(album)",
+        "https://music.apple.com/us/album/did-it-for-love/1675492593",
+        "https://www.leelajames.com/",
+        "https://lrclib.net/api/get?artist_name=Leela%20James&track_name=Don%27t%20Want%20You%20Back"
+      ]
+    },
+    {
+      "id": "yt-OO_j8pV3JOw",
+      "title": "More Than I Can Say",
+      "artist": "Leo Sayer",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Ein britisch-australischer Sänger mit einer außergewöhnlich hohen Tenorstimme.",
+        "Das Stück ist ein Cover: Das Original stammt von 1960 und wurde von zwei Mitgliedern einer US-Band geschrieben.",
+        "Der Sänger coverte den Song Ende der 1970er – auch eine US-Popsängerin hatte ihn zuvor aufgenommen.",
+        "In Großbritannien und in den USA erreichte seine Version jeweils Platz 2 der Single-Charts.",
+        "Der Refrain ist ein Schwur: Ich liebe dich mehr, als ich sagen kann – und morgen doppelt so sehr."
+      ],
+      "lyrics": {
+        "real": [
+          "I love you more than I can say",
+          "I'll love you twice as much tomorrow",
+          "Why must my life be filled with sorrow?"
+        ],
+        "fake": "You took my heart and left me standing in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OO_j8pV3JOw",
+        "spotify": "https://open.spotify.com/track/4IPIBUz5SU0xVbgVetqPVo",
+        "amazonMusic": "https://music.amazon.com/tracks/B00123JHUS"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/leo-sayer-more-than-i-can-say.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Leo_Sayer",
+        "https://en.wikipedia.org/wiki/More_Than_I_Can_Say",
+        "https://en.wikipedia.org/wiki/The_Crickets",
+        "https://www.songfacts.com/facts/leo-sayer/more-than-i-can-say",
+        "https://lrclib.net/api/get?artist_name=Leo%20Sayer&track_name=More%20Than%20I%20Can%20Say"
+      ],
+      "coverMode": {
+        "relationType": "cover",
+        "originalArtist": "the Crickets",
+        "coverArtist": "Leo Sayer",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "yt-i8TKoBPkZQo",
+      "title": "Lessons In Love",
+      "artist": "Level 42",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Funk Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Die Melodie entstand 1985 als Idee für den Schluss einer Live-Sendung im britischen Fernsehen.",
+        "Die Band um den Bassisten Mark King verband Jazz-Funk mit Pop und schrieb das Stück mit Producer Wally Badarou.",
+        "Der Song erschien 1986 als erste Single eines Albums, das erst im Jahr darauf veröffentlicht wurde.",
+        "In Großbritannien erreichte er Platz 3, in den USA kam er auf Platz 12 der Hitparade.",
+        "Er wurde international zum Publikumserfolg und erreichte in sechs Ländern die Spitze der Hitparade."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not proud, I was wrong and the truth is hard to take",
+          "I felt sure we had enough but our love went overboard",
+          "Lifeboat lies lost at sea I've been trying to reach your shore"
+        ],
+        "fake": "Dancing on the empty floor where the old photographs are fading"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=i8TKoBPkZQo",
+        "spotify": "https://open.spotify.com/track/3EGI5qmVmGlfgy9BmNb1R8",
+        "amazonMusic": "https://music.amazon.com/tracks/B0101KNUVY"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/level-42-lessons-in-love.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lessons_in_Love_(Level_42_song)",
+        "https://en.wikipedia.org/wiki/Level_42",
+        "https://en.wikipedia.org/wiki/Running_in_the_Family",
+        "https://www.songfacts.com/facts/level-42/lessons-in-love",
+        "https://lrclib.net/api/get?artist_name=Level%2042&track_name=Lessons%20In%20Love"
+      ]
+    },
+    {
+      "id": "piano-lewis-loved",
+      "title": "Someone You Loved",
+      "artist": "Lewis Capaldi",
+      "year": 2018,
+      "country": "GB",
+      "genre": "Soul / Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Honest"
+      ],
+      "hints": [
+        "Der schottische Singer-Songwriter veröffentlichte sein Debütalbum erst 2019 – obwohl er schon 2018 einen Welthit landete.",
+        "Geschrieben wurde das Stück mit dem britischen Produzententeam TMS.",
+        "Es war das meistverkaufte Lied des Jahres 2019 in Großbritannien.",
+        "In den USA brauchte es 24 Wochen bis zur Spitze der Billboard Hot 100 – einer der längsten Aufstiege der Chartgeschichte.",
+        "Ein erstes Video entstand mit einer Organspende-Organisation und zeigt einen trauernden Witwer, der den Herzschlag der Spenderin hört."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm going under and this time I fear there's no one to save me",
+          "This all or nothing really got a way of driving me crazy",
+          "Now the day bleeds into nightfall"
+        ],
+        "fake": "You said you'd meet me at the station, but the platform was empty"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zABLecsR5UE",
+        "spotify": "https://open.spotify.com/track/2TIlqbIneP0ZY1O0EzYLlc",
+        "amazonMusic": "https://music.amazon.com/tracks/B07K8SF3PC"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lewis-loved.jpg",
+      "packs": [
+        "piano-ballads",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Someone_You_Loved",
+        "https://en.wikipedia.org/wiki/Lewis_Capaldi",
+        "https://en.wikipedia.org/wiki/Divinely_Uninspired_to_a_Hellish_Extent",
+        "https://www.songfacts.com/facts/lewis-capaldi/someone-you-loved",
+        "https://lrclib.net/api/get?artist_name=Lewis%20Capaldi&track_name=Someone%20You%20Loved"
+      ]
+    },
+    {
+      "id": "piano-lifehouse-youandme",
+      "title": "You and Me",
+      "artist": "Lifehouse",
+      "year": 2005,
+      "country": "US",
+      "genre": "Alt-Rock / Soft Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song erschien 2005 zunächst als Digital-Download und war die erste Single des dritten Studioalbums der Band.",
+        "Geschrieben hat das Stück Sänger Jason Wade gemeinsam mit Produzent Jude Cole; aufgenommen wurde es bei John Alagía in dessen Heimplattstudio in Easton, Maryland.",
+        "Eine spezielle Hochzeitsfassung erschien noch im selben Jahr – Kritiker priesen das Lied als perfekte Begleitung für eine Hochzeit.",
+        "In den USA erreichte er Platz 5 der Hot-100-Charts, führte die Adult-Charts an und wurde von der RIAA mit Gold ausgezeichnet.",
+        "Das Musikvideo spielt in einem Bahnhof in Los Angeles und hatte bei MTV.com am 21. März 2005 Premiere."
+      ],
+      "lyrics": {
+        "real": [
+          "What day is it?",
+          "This clock never seemed so alive",
+          "Nothing to lose"
+        ],
+        "fake": "The old radio is playing our song again tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ac3HkriqdGQ",
+        "spotify": "https://open.spotify.com/track/0815caqt2Lytro5EIzMufT",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lifehouse-youandme.jpg",
+      "packs": [
+        "piano-ballads",
+        "2000s Pop & RnB",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You_and_Me_(Lifehouse_song)",
+        "https://en.wikipedia.org/wiki/Lifehouse_(band)",
+        "https://en.wikipedia.org/wiki/Lifehouse_(album)",
+        "https://music.apple.com/us/album/you-and-me/1443833959?i=1443833976",
+        "https://lrclib.net/api/get?artist_name=Lifehouse&track_name=You%20and%20Me"
+      ]
+    },
+    {
+      "id": "yt-6swmTBVI83k",
+      "title": "MONTERO (Call Me By Your Name)",
+      "artist": "Lil Nas X",
+      "year": 2021,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Modern",
+        "Modern Anthems",
+        "Popular",
+        "Provocative"
+      ],
+      "hints": [
+        "Der Untertitel verweist auf einen Liebesfilm aus dem Jahr 2017, der den Oscar für das beste adaptierte Drehbuch gewann.",
+        "Das Video zeigt den Rapper auf einer Tanzstange in der Hölle – Regie führten Tanu Muino und der Künstler selbst.",
+        "Der Song stieg in den USA direkt an die Spitze der Hot-100-Charts – die zweite Nummer eins des Künstlers nach seinem Debüt-Hit von 2019.",
+        "Kritiker lobten den Clip für seine queeren Bezüge, während er bei konservativen Kreisen in den USA auf scharfe Kritik stieß.",
+        "Das Video gewann 2021 den MTV Video Music Award in der Kategorie Video des Jahres und war 2022 für den Grammy in der Kategorie Beste Musikvideo nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Call me when you want, call me when you need",
+          "You live in the dark, boy, I cannot pretend",
+          "If Eve ain't in your garden, you know that you can"
+        ],
+        "fake": "I'm chasing neon signs down the boulevard tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6swmTBVI83k",
+        "spotify": "https://open.spotify.com/track/67BtfxlNbhBmCDR2L2l8qd",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/finale-lilnas-montero.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Montero_(Call_Me_by_Your_Name)",
+        "https://en.wikipedia.org/wiki/Call_Me_by_Your_Name_(film)",
+        "https://en.wikipedia.org/wiki/Lil_Nas_X",
+        "https://music.apple.com/us/album/montero-call-me-by-your-name/1559318717?i=1559318719",
+        "https://lrclib.net/api/get?artist_name=Lil%20Nas%20X&track_name=MONTERO%20%28Call%20Me%20By%20Your%20Name%29"
+      ]
+    },
+    {
+      "id": "lilnasx-oldtown-2019",
+      "title": "Old Town Road",
+      "artist": "Lil Nas X ft. Billy Ray Cyrus",
+      "year": 2019,
+      "country": "US",
+      "genre": "Country Rap / Hip-Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Ursprünglich erschien der Song am 3. Dezember 2018 als Single – die spätere Version mit einem COUNTRY-Star kam am 5. April 2019.",
+        "Der Track verbindet gespielten Banjo mit Trap-Drums und stand im März 2019 gleichzeitig in den Billboard-Charts für Hot 100, Country und R&B/Hip-Hop.",
+        "In den US-Charts blieb er 19 Wochen in Folge auf Platz 1 – ein Rekord, der den vorherigen Höchstwert von 16 Wochen übertraf.",
+        "Die Nominierung in der Kategorie 'Song des Jahres' sorgte für Debatten – die Recording Academy verschob den Song in die Kategorie Pop-Duo/Gruppe, in der er gewann.",
+        "Bei den Grammys 2020 gewann die Version mit dem COUNTRY-Sänger außerdem den Grammy für das beste Musikvideo."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm gonna ride 'til I can't no more",
+          "I got the horses in the back",
+          "Cowboy hat from Gucci"
+        ],
+        "fake": "We rode past the neon signs until the morning came"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=r7qovpFAGrQ",
+        "spotify": "https://open.spotify.com/track/2YpeDb67231RjR0MgVLzsG",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/lilnasx-oldtown-2019.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Hip Hop Essentials",
+        "youtube-import",
+        "country-folk"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Old_Town_Road",
+        "https://en.wikipedia.org/wiki/7_(Lil_Nas_X_EP)",
+        "https://en.wikipedia.org/wiki/Lil_Nas_X",
+        "https://music.apple.com/us/album/old-town-road-feat-billy-ray-cyrus-remix/1468166325?i=1468166326",
+        "https://lrclib.net/api/get?artist_name=Lil%20Nas%20X&track_name=Old%20Town%20Road"
+      ]
+    },
+    {
+      "id": "yt-UTHLKHL_whs",
+      "title": "INDUSTRY BABY",
+      "artist": "Lil Nas X, Jack Harlow",
+      "year": 2021,
+      "country": "US",
+      "genre": "Hip-Hop/Trap",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Der Song erschien am 23. Juli 2021 über Columbia Records und ist die dritte Single des Debütalbums des Künstlers.",
+        "Produziert wurde er vom Duo Take a Daytrip; Kanye West und das Duo Ojivolta legten später weitere Tonspuren über das Instrumental.",
+        "Nach dem Debüt auf Platz 2 erreichte der Track am 23. Oktober 2021 die Spitze der US-Hot-100-Charts – die dritte Nummer eins für den einen, die erste für den anderen Sänger.",
+        "Im Video brechen die beiden Rapper aus einem Gefängnis aus – Regie führte Christian Breslauer.",
+        "Das Lied wurde für den Grammy in der Kategorie Bester melodischer Rap nominiert; zugleich startete mit dem Clip eine Spendenaktion für die Abschaffung der Kaution im US-Gefängnis."
+      ],
+      "lyrics": {
+        "real": [
+          "And this one is for the champions",
+          "I told you long ago on the road",
+          "City talkin', we takin' notes"
+        ],
+        "fake": "I bought the whole city and I paid it back in gold, ayy"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=UTHLKHL_whs",
+        "spotify": "https://open.spotify.com/track/27NovPIUIRrOZoCHxABJwK",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "grand-finale",
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/lil-nas-x--jack-harlow-industry-baby.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Industry_Baby",
+        "https://en.wikipedia.org/wiki/Montero_(album)",
+        "https://en.wikipedia.org/wiki/Lil_Nas_X",
+        "https://music.apple.com/us/album/industry-baby/1577414584?i=1577414972",
+        "https://lrclib.net/api/get?artist_name=Lil%20Nas%20X&track_name=INDUSTRY%20BABY"
+      ]
+    },
+    {
+      "id": "rock-linkin-park-in-the-end",
+      "title": "In the End",
+      "artist": "Linkin Park",
+      "year": 2000,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Intense",
+        "Modern Rock",
+        "Moody",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Der Song erschien 2000 auf dem Debütalbum der US-Band und wurde erst 2001 als Single veröffentlicht.",
+        "Der Sänger mochte das Stück anfangs überhaupt nicht und wollte es nicht auf dem Album – heute gilt es als der bekannteste Treffer der Band.",
+        "In den USA kam der Song im März 2002 bis auf Platz 2 der Hot-100-Charts und war der siebtbeste Hit des Jahres 2002.",
+        "Das Musikvideo kombiniert eine in einer kalifornischen Wüste gedrehte Kulisse mit massiven CGI-Effekten und erreichte 2020 die Marke von einer Milliarde Aufrufe.",
+        "2021 wurde er als erster Nu-Metal-Song der Welt mehr als eine Milliarde Mal auf Spotify gestreamt."
+      ],
+      "lyrics": {
+        "real": [
+          "It starts with one",
+          "It doesn't even matter how hard you try",
+          "I tried so hard and got so far"
+        ],
+        "fake": "Everything we built together is burning down to ash tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
+        "spotify": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-linkin-park-in-the-end.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/In_the_End",
+        "https://en.wikipedia.org/wiki/Hybrid_Theory",
+        "https://en.wikipedia.org/wiki/Linkin_Park",
+        "https://music.apple.com/us/album/in-the-end/590431776?i=590431785",
+        "https://lrclib.net/api/get?artist_name=Linkin%20Park&track_name=In%20the%20End"
+      ]
+    },
+    {
+      "id": "rock-linkin-park-numb",
+      "title": "Numb",
+      "artist": "Linkin Park",
+      "year": 2003,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Intense",
+        "Rock"
+      ],
+      "hints": [
+        "Die Single erschien 2003 als dritte Single des zweiten Albums der US-Band und ist der letzte Track des Albums.",
+        "An der Spitze der Billboard-Charts für Modern Rock stand der Song insgesamt zwölf Wochen, in den Mainstream-Rock-Charts drei Wochen.",
+        "Im Video, das im Juni 2003 in Prag gedreht wurde, zeigt die Handlung eine Außenseiterin, die sich mit selbst zugefügten Schnitten ein Wort auf die Arme schreibt.",
+        "2018 erreichte schon das Video die Marke von einer Milliarde Aufrufe, 2022 wurde die Aufnahme als zweiter Song der Band bei Spotify zur Milliarde gestreamt.",
+        "Aus dem Song entstand eine Kollaboration mit einem US-Rapper, die auf einer EP erschien und den Grammy für die beste Rap-/Gesangszusammenarbeit gewann."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm tired of being what you want me to be",
+          "Feeling so faithless, lost under the surface",
+          "Every step that I take is another mistake to you"
+        ],
+        "fake": "The weight of the world is heavy but I'll carry it alone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+        "spotify": "https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-linkin-park-numb.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Numb_(Linkin_Park_song)",
+        "https://en.wikipedia.org/wiki/Meteora_(album)",
+        "https://en.wikipedia.org/wiki/Linkin_Park",
+        "https://music.apple.com/us/album/numb/590423275?i=590423552",
+        "https://lrclib.net/api/get?artist_name=Linkin%20Park&track_name=Numb"
+      ]
+    },
+    {
+      "id": "piano-lp-onemore",
+      "title": "One More Light",
+      "artist": "Linkin Park",
+      "year": 2017,
+      "country": "US",
+      "genre": "Pop / Electronic / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
+      "hints": [
+        "Ein zutiefst bewegendes Balladenstück über Mitgefühl, Verlust und den Wert eines einzelnen Lebens.",
+        "Die US-Rockband veröffentlichte den Song im Oktober 2017 als dritten und letzten Single ihres siebten Studioalbums – nur drei Monate nach dem Tod ihres Sängers.",
+        "Der Song entstand nach dem Tod einer langjährigen Label-Kollegin, die 2015 an Krebs verstarb; bei „Jimmy Kimmel Live!“ wurde er dem einen Tag zuvor verstorbenen Chris Cornell gewidmet.",
+        "In den USA kam er auf Platz 6 der Billboard-Rock-Charts, in Deutschland auf Platz 51 der Singlecharts – und das Musikvideo wurde 2018 für den MTV-Preis „Best Rock Video with a Message“ nominiert.",
+        "Der Refrain stellt die Frage, ob es jemanden kümmert, wenn ein weiteres Licht am Himmel erlischt – die Antwort des Sängers: „Well, I do“."
+      ],
+      "lyrics": {
+        "real": [
+          "Should've stayed, were there signs I ignored?",
+          "Can I help you not to hurt anymore?",
+          "We saw brilliance when the world was asleep"
+        ],
+        "fake": "The evening keeps the promise of a fading day"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Tm8LGxTLtQk",
+        "spotify": "https://open.spotify.com/track/3xXBsjrbG1xQIm1xv1cKOt"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-lp-onemore.jpg",
+      "packs": [
+        "piano-ballads",
+        "Rock Anthems",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/One_More_Light_(song)",
+        "https://en.wikipedia.org/wiki/One_More_Light",
+        "https://en.wikipedia.org/wiki/Chester_Bennington",
+        "https://en.wikipedia.org/wiki/2018_MTV_Video_Music_Awards",
+        "https://lrclib.net/api/get?artist_name=Linkin%20Park&track_name=One%20More%20Light"
+      ]
+    }
+  ]
+}

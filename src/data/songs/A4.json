@@ -1,0 +1,667 @@
+{
+  "songs": [
+    {
+      "id": "yt-44Qh0p9xE6o",
+      "title": "Amiga Mía",
+      "artist": "Alejandro Sanz",
+      "year": 1997,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Inspiration war eine wahre Begegnung: Der spanische Cantautor schrieb das Lied über eine Freundin, die sich heimlich in einen anderen Mann verliebt hatte.",
+        "Aufgenommen wurde die Ballade 1997, veröffentlicht als dritte Single des Albums 'Más' am 5. Januar 1998.",
+        "Der Titel ist der achte von zehn Songs auf 'Más' – einem Album mit über 7 Millionen Verkaufszahlen und dem erfolgreichsten Album der spanischen Musikgeschichte.",
+        "Das Musikvideo entstand Anfang 1998 an der Amalfiküste in Italien, Regie führte Ambrogio Lo Giudice: Im Video steht der Sänger auf einer Dachterrasse über dem Meer.",
+        "Der Titel bedeutet 'Meine Freundin' – die Single war das erste Lied des Cantors, das die US-Charts für Latin Pop anführte."
+      ],
+      "lyrics": {
+        "real": [
+          "Amiga mía, lo sé",
+          "Que es con tu piel con quién sueña de noche",
+          "Ay, amiga mía, lo sé y él también"
+        ],
+        "fake": "Caminando por la playa, te busco entre la gente sin que lo veas"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=44Qh0p9xE6o",
+        "spotify": "https://open.spotify.com/track/6kQYMqjobmB8MkWwa9OUyA",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/alejandro-sanz--amiga-mia-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Amiga_m%C3%ADa_(canci%C3%B3n_de_Alejandro_Sanz)",
+        "https://es.wikipedia.org/wiki/M%C3%A1s_(%C3%A1lbum)",
+        "https://en.wikipedia.org/wiki/Alejandro_Sanz",
+        "https://music.apple.com/us/album/mas-bonus-version/193410821?i=193410987",
+        "https://es.wikipedia.org/wiki/Alejandro_Sanz"
+      ]
+    },
+    {
+      "id": "yt-w6NwGXcCO88",
+      "title": "A la primera persona",
+      "artist": "Alejandro Sanz",
+      "year": 2006,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Text ist eine Hommage an die Empathie: Er fragt, wer ihm helfen soll, wieder zu fühlen.",
+        "Aufgenommen wurde das Lied zwischen 2004 und 2006 und ging am 25. September 2006 weltweit in die Radios – als Leit-Single des achten Studioalbums.",
+        "Das Video wurde in den Straßen von New York gedreht, Regie führte Jaume De Laiguana: Der Sänger läuft durch die Stadt, hebt eine Gitarre auf und wird von seiner Freundin erkannt.",
+        "Der Sänger schrieb und produzierte das Lied gemeinsam mit Lulo Pérez, der auch am Sound des Albums beteiligt war.",
+        "Platz 1 in den US-Charts für Latin-Songs und in Argentinien, Platz 7 in Spanien, Platz 20 in Chile und Mexiko – und Platz 100 der US-Hot-100."
+      ],
+      "lyrics": {
+        "real": [
+          "Pienso entregarle mi vida, pienso entregarle mi fe",
+          "El oro pa' quien lo quiera pero si hablamos de ayer",
+          "Yo no pido que las cosas me salgan siempre bien"
+        ],
+        "fake": "Por la ventana entra el sol y me devuelve la memoria de otro verano"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=w6NwGXcCO88",
+        "spotify": "https://open.spotify.com/track/6mXHxE2BEafOgdWoFvc6mF",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/alejandro-sanz-a-la-primera-persona--videoclip-oficial-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/A_la_primera_persona",
+        "https://es.wikipedia.org/wiki/El_tren_de_los_momentos",
+        "https://en.wikipedia.org/wiki/El_tren_de_los_momentos",
+        "https://en.wikipedia.org/wiki/Alejandro_Sanz",
+        "https://music.apple.com/us/album/el-tren-de-los-momentos/202964451?i=202964459"
+      ]
+    },
+    {
+      "id": "yt-ZMUqIoDtSwc",
+      "title": "Corazón Partío",
+      "artist": "Alejandro Sanz",
+      "year": 1997,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Flamenco-Gitarre im Song spielt Vicente Amigo, einer der wichtigsten Instrumentalisten des spanischen Flamenco.",
+        "Die Ballade erschien am 3. November 1997 als zweite Single des Albums 'Más'.",
+        "Das Musikvideo wurde in einer Bar in Madrid gedreht: In schwarz-weißen Szenen steht der Sänger mit der Gitarre, in Farbe tanzt das Publikum.",
+        "Der Refrain übersetzt sich mit 'Pflaster für dieses gebrochene Herz' – das Bild des zerbrochenen Porzellans prägt den ganzen Song.",
+        "Das Lied blieb in Spanien, Mexiko und Argentinien über 70 Wochen in den Charts und gilt als der wichtigste Song des spanischen Cantors."
+      ],
+      "lyrics": {
+        "real": [
+          "Ya lo ves, que no hay dos sin tres",
+          "Que la vida va y viene y que no se detiene",
+          "Es corazón que no siente"
+        ],
+        "fake": "Bailamos en la arena mientras el mar se despide de la noche"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZMUqIoDtSwc",
+        "spotify": "https://open.spotify.com/track/0wQCKR9OFjYu5Kzrk7WivJ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/alejandro-sanz-corazon-partio--latin-mix-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Coraz%C3%B3n_part%C3%ADo",
+        "https://es.wikipedia.org/wiki/Vicente_Amigo",
+        "https://es.wikipedia.org/wiki/M%C3%A1s_(%C3%A1lbum)",
+        "https://en.wikipedia.org/wiki/Alejandro_Sanz",
+        "https://music.apple.com/us/album/mas-bonus-version/193410821?i=193410897"
+      ]
+    },
+    {
+      "id": "yt-vpUDf_ITZLg",
+      "title": "No Me Compares",
+      "artist": "Alejandro Sanz",
+      "year": 2012,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Idee entstand aus dem Eröffnungsthema einer mexikanischen Telenovela, die 2012 lief.",
+        "Der Song erschien am 25. Juni 2012 als Leit-Single des neunten Studioalbums 'La música no se toca'.",
+        "Das Video wurde in Miami gedreht, Regie führte Ethan Lader – es zeigt Surfer, die mit den Erinnerungen an die Kindheit ans Ufer treiben.",
+        "Der Refrain ist eine Kette von Vergleichen: 'Ich komme von der Luft, die deine Haut trocknete' – der Sänger preist seine Herkunft als etwas Einzigartiges.",
+        "Das Lied war bei den Latin Grammy Awards 2012 für den Song des Jahres und die Aufnahme des Jahres nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "Vengo del aire",
+          "Soy de la calle",
+          "Ahora que crujen las patas de la mecedora"
+        ],
+        "fake": "Caminamos de la mano por la orilla mientras suena la guitarra"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vpUDf_ITZLg",
+        "spotify": "https://open.spotify.com/track/6pZmdSXGVzlYG2FJvSOZod",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/alejandro-sanz-no-me-compares.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/No_Me_Compares",
+        "https://es.wikipedia.org/wiki/La_m%C3%BAsica_no_se_toca",
+        "https://es.wikipedia.org/wiki/Amores_verdaderos",
+        "https://en.wikipedia.org/wiki/Alejandro_Sanz",
+        "https://music.apple.com/us/album/la-musica-no-se-toca/1443236403?i=1443236410"
+      ]
+    },
+    {
+      "id": "yt-A-fgpP6fOEA",
+      "title": "Y, ¿Si Fuera Ella?",
+      "artist": "Alejandro Sanz",
+      "year": 1997,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Musikvideo entstand in einem Madrider Atelier: Der Sänger tritt in schwarzer Kleidung auf, umgeben von einem weiblichen Ensemble in Schwarz, Violett und Weiß.",
+        "Die Ballade erschien am 4. August 1997 als erste Single des Albums 'Más'.",
+        "In den US-Charts landete sie auf Platz 13 der Hot Latin Songs, Platz 3 der Latin Pop Airplay und Platz 9 der Tropical Airplay.",
+        "Der Text kreist um eine Gestalt, die erscheint und verschwindet, Frage und Antwort zugleich ist – 'meine Rivalin, meine Gefährtin'.",
+        "Der Titel ist eine Frage, die ins Leere läuft: 'Und wenn sie es wäre?'"
+      ],
+      "lyrics": {
+        "real": [
+          "Mi rival, mi compañera",
+          "Por este loco, ciego y loco corazón",
+          "Lo que quiera Dios que sea"
+        ],
+        "fake": "Te esperaré en la estación con dos cafés y ninguna prisa"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A-fgpP6fOEA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/alejandro-sanz-y--si-fuera-ella---videoclip-oficial-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Y,_%C2%BFsi_fuera_ella%3F",
+        "https://es.wikipedia.org/wiki/M%C3%A1s_(%C3%A1lbum)",
+        "https://en.wikipedia.org/wiki/Alejandro_Sanz",
+        "https://music.apple.com/us/album/mas-bonus-version/193410821?i=193410828",
+        "https://es.wikipedia.org/wiki/Alejandro_Sanz"
+      ]
+    },
+    {
+      "id": "score-shape-water",
+      "title": "The Shape of Water",
+      "artist": "Alexandre Desplat",
+      "year": 2017,
+      "country": "FR",
+      "genre": "Movie Score / Waltz",
+      "difficulty": "easy",
+      "mood": [
+        "Dreamy",
+        "Whimsical",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Komponist schrieb die Partitur in nur sechs Wochen – bewusst klein, zart und ohne großes Orchester.",
+        "Es war die erste Zusammenarbeit mit Regisseur Guillermo del Toro, dessen Fantasy-Film 2017 den Oscar für den Besten Film gewann.",
+        "Für die Unterwasserszenen ließ er über zwölf Flöten, ein Fender-Piano und ein Bandoneon einsetzen, damit alles verschwommen und träumerisch klingt.",
+        "Zwei Themen erklingen am Filmende ineinander: Die Hauptmelodie verschmilzt im Finale mit dem zweiten Motiv, das die Titelheldin trägt.",
+        "Der Komponist gewann damit seinen zweiten Oscar für die beste Filmmusik – nach dem Film 'The Grand Budapest Hotel'."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HA8dDFFvOUw",
+        "spotify": "https://open.spotify.com/track/1VCQFcGqPx94xe3RtCroAQ",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/score-shape-water.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Shape_of_Water_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Alexandre_Desplat",
+        "https://en.wikipedia.org/wiki/The_Shape_of_Water",
+        "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Original_Score"
+      ]
+    },
+    {
+      "id": "yt-Exgc-QKA22Q",
+      "title": "Tumba La Casa Remix ft. Daddy, Nicky Jam, Arcangel, Ñengo Flow, Zion, Farruko, De la Ghetto",
+      "artist": "ALEXIO",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Grundlage ist ein lateinamerikanischer Tanzhit von 1996 – das Produzentenduo, das 2015 sein Debütalbum 'Orión' veröffentlichte, nahm den Track damals mit dem puertorikanischen Gast neu auf.",
+        "Die Aufnahme dauert knapp acht Minuten und ist damit rund anderthalb Mal so lang wie der Klassiker von 1996 mit gut fünf Minuten.",
+        "Sieben Gäste wechseln sich auf dem Track ab, darunter eine der größten Stimmen des puerto-ricanischen Reggaetons.",
+        "Im Text mischen sich spanische Zeilen mit englischen Wendungen, und die Karibikinsel Puerto Rico wird mehrfach direkt erwähnt.",
+        "Die Macher des Tracks sind dasselbe Produzentenduo, das auch die mixtape-Reihe 'El Imperio Nazza' zwischen 2012 und 2016 produzierte."
+      ],
+      "lyrics": {
+        "real": [
+          "Alerta de terremoto con eso sacude el building",
+          "No puedo mentir, tengo que decir, lo voy a admitir",
+          "Tiraron por los celus, por las redes y los escaners"
+        ],
+        "fake": "Voy subiendo por las escaleras hasta que se me caigan los zapatos"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Exgc-QKA22Q",
+        "spotify": "https://open.spotify.com/track/0Wow8A03JUTTeaMuYexCwi",
+        "amazonMusic": "https://music.amazon.com/tracks/B0BPF65KKP"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/alexio-tumba-la-casa-remix-ft--daddy--nicky-jam--arcangel--ñengo-flow--zion--farruko--de-la-ghetto.jpg",
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Alexio&track_name=Tumba%20La%20Casa",
+        "https://music.apple.com/us/album/tumba-la-casa-feat-alexio/1020429386?i=1020429390",
+        "https://itunes.apple.com/lookup?id=115692434&entity=song",
+        "https://itunes.apple.com/lookup?id=724342588&entity=song",
+        "https://es.wikipedia.org/wiki/Music%C3%B3logo_%26_Menes"
+      ]
+    },
+    {
+      "id": "yt-KB-i6BTLcKo",
+      "title": "Camuflaje",
+      "artist": "Alexis & Fido",
+      "year": 2011,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track ist Teil des Albums 'Perreología', das im Frühjahr 2011 erschien und 14 Titel mit mehreren Gästen enthält.",
+        "Das puertorikanische Duo trat früher auch unter den Namen 'Los Pitbulls' und 'Los Reyes del Perreo' auf und gründete 2006 das eigene Label Wild Dogz.",
+        "Die beiden Künstler wurden in den späten 1970er-Jahren geboren und gelten als Wegbereiter des urbanen Latin-Sounds.",
+        "Der Text erzählt von einer Frau, die sich vor ihrem Partner hinter einer Maske versteckt – ihr wahres Wesen kommt erst im Refrain zum Vorschein.",
+        "Der knapp dreieinhalbminütige Song bringt karibische Wendungen und einen wiederkehrenden Zurruf der Gruppe mit."
+      ],
+      "lyrics": {
+        "real": [
+          "A quien conoces por Sofía, la conozco por Estrella",
+          "Usa su disfraz pa' esconder lo que en verdad no conocen de ella",
+          "Me encanta cómo se lo hago porque mi swagger es de gang"
+        ],
+        "fake": "Bailamos en la discoteca mientras suena la musica del sur"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KB-i6BTLcKo",
+        "spotify": "https://open.spotify.com/track/20fQVuio8RcGPleqONoGx6",
+        "amazonMusic": "https://music.amazon.com/tracks/B004RPNV14"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/alexis---fido-camuflaje--audio-.jpg",
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Alexis%20y%20Fido&track_name=Camuflaje",
+        "https://itunes.apple.com/lookup?id=419758276&entity=song",
+        "https://en.wikipedia.org/wiki/Alexis_%26_Fido",
+        "https://es.wikipedia.org/wiki/Alexis_y_Fido",
+        "https://music.apple.com/us/album/perreolog%C3%ADa/419758276"
+      ]
+    },
+    {
+      "id": "dance-alice-deejay-better-off-alone",
+      "title": "Better Off Alone",
+      "artist": "Alice Deejay",
+      "year": 1998,
+      "country": "NL",
+      "genre": "Trance",
+      "difficulty": "easy",
+      "mood": [
+        "Electronic",
+        "Moody",
+        "Dance"
+      ],
+      "hints": [
+        "Der Track entstand 1997 in den Studios 4045 im niederländischen Hilversum – zuerst erschien er als reine Instrumental-Version eines DJs, der nur 500 Schallplatten pressen ließ.",
+        "Die Gesangszeile entstand in der Post-Produktion, als der Produzent Sebastiaan Molijn nach dem Ende einer Beziehung eine Melodie summte; gesungen hat später Judith Pronk.",
+        "Mit Gesang erschien die Single im Dezember 1998, das Debütalbum des Projekts folgte im März 2000.",
+        "In Großbritannien erreichte der Song Platz zwei, verkaufte dort mehr als 600.000 Exemplare und zählte 1999 zu den meistverkauften Singles des Landes.",
+        "2023 und 2025 setzte das US-Fachmagazin den Track auf seine Listen der besten Pop- und Dance-Songs aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "Do you think you're better off alone?",
+          "Do you think you're better off alone?",
+          "Talk to me, ooh, talk to me"
+        ],
+        "fake": "Lower the lights and dance till the morning light"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Lgs9QUtWc3M",
+        "spotify": "https://open.spotify.com/track/5XVjNRubJUW0iPhhSWpLCj",
+        "amazonMusic": "https://music.amazon.com/tracks/B0B516PWWC"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "Electronic & Techno",
+        "90s Unplugged"
+      ],
+      "coverUrl": "/covers/dance-alice-deejay-better-off-alone.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Better_Off_Alone",
+        "https://en.wikipedia.org/wiki/Alice_Deejay",
+        "https://en.wikipedia.org/wiki/Who_Needs_Guitars_Anyway%3F",
+        "https://www.billboard.com/lists/best-pop-songs-all-time-hits/alice-deejay-better-off-alone/",
+        "https://www.billboard.com/lists/best-dance-songs-all-time/"
+      ]
+    },
+    {
+      "id": "unplugged-aic-nutshell",
+      "title": "Nutshell (Unplugged)",
+      "artist": "Alice in Chains",
+      "year": 1996,
+      "country": "US",
+      "genre": "Grunge / Acoustic",
+      "difficulty": "hard",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Powerful"
+      ],
+      "hints": [
+        "Das Stück entstand 1993 im Studio in Seattle und erschien zwei Jahre später auf einer akustischen EP – die als erste EP überhaupt auf Platz eins der US-Albumcharts debütierte.",
+        "Den Text schrieb der Sänger, die Musik die übrigen Bandmitglieder.",
+        "Die akustische Session fand am 10. April 1996 im Majestic Theatre in Brooklyn statt und erschien im Juli 1996 als Live-Album.",
+        "Es war das erste Konzert der Band seit Anfang 1994 – der Sänger kämpfte zu dieser Zeit mit einer schweren Sucht.",
+        "Seit 2011 widmet der Gitarrist das Stück bei Konzerten seinen verstorbenen Bandkollegen; die Aufnahme erschien später auch auf einem Box-Set von 1999."
+      ],
+      "lyrics": {
+        "real": [
+          "We chase misprinted lies, we face the path of time",
+          "And yet I fight, and yet I fight, this battle all alone",
+          "No one to cry to, no place to call home"
+        ],
+        "fake": "Ashes in the ashtray and the telephone rings again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=G23iLGhh9lo",
+        "spotify": "https://open.spotify.com/track/3QAE7ypzhNZzQxOjKCGHD9",
+        "amazonMusic": "https://music.amazon.com/tracks/B004HAMX2W"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/unplugged-aic-nutshell.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nutshell_(song)",
+        "https://en.wikipedia.org/wiki/Unplugged_(Alice_in_Chains_album)",
+        "https://en.wikipedia.org/wiki/Jar_of_Flies",
+        "https://itunes.apple.com/lookup?id=388143873&entity=song",
+        "https://en.wikipedia.org/wiki/Music_Bank_(album)"
+      ]
+    },
+    {
+      "id": "2000s-alicia-keys-fallin",
+      "title": "Fallin'",
+      "artist": "Alicia Keys",
+      "year": 2001,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Classic"
+      ],
+      "hints": [
+        "Die Sängerin war erst 20 Jahre alt, als ihr erster großer Charterfolg erschien – geboren am 25. Januar 1981 in New York, war sie eine klassisch ausgebildete Pianistin.",
+        "Die Single erschien am 28. März 2001 und war die Leadsingle des Debütalbums, das im Juni desselben Jahres folgte.",
+        "Geschrieben und produziert hat die Sängerin den Song selbst, aufgenommen wurde er in ihrem eigenen Studio in New York, die B-Seite hieß 'Rear View Mirror'.",
+        "Die Single führte die US-Charts an und gewann 2002 drei Grammys, darunter den Song of the Year.",
+        "Neun Jahre später zählte das US-Fachmagazin den Song zu den 29 erfolgreichsten Titeln des Jahrzehnts; das offizielle Remix holte zwei Rapper ins Boot."
+      ],
+      "lyrics": {
+        "real": [
+          "I keep on fallin' in and out of love with you",
+          "I never loved someone the way that I love you",
+          "Oh, oh, I never felt this way"
+        ],
+        "fake": "You are the reason I cannot sleep at night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Urdlvw0SSEc",
+        "spotify": "https://open.spotify.com/track/0KQx6HOpJueiSkztcS0r7D",
+        "amazonMusic": "https://music.amazon.com/tracks/B001V5SH80"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/2000s-alicia-keys-fallin.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fallin%27_(Alicia_Keys_song)",
+        "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+        "https://en.wikipedia.org/wiki/Alicia_Keys",
+        "https://en.wikipedia.org/wiki/44th_Annual_Grammy_Awards",
+        "https://itunes.apple.com/search?term=Alicia+Keys+Fallin&entity=song&limit=5"
+      ]
+    },
+    {
+      "id": "piano-alicia-gotyou",
+      "title": "If I Ain't Got You",
+      "artist": "Alicia Keys",
+      "year": 2003,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Powerful",
+        "Classic"
+      ],
+      "hints": [
+        "Die Sängerin schrieb das Stück als eines der ersten für ihr zweites Album – die Idee kam ihr im Flugzeug, nachdem sie vom Tod einer befreundeten Kollegin bei einem Flugzeugabsturz erfahren hatte.",
+        "Aufgenommen wurde der Song 2003 im New Yorker Kampo Studio; geschrieben und produziert hat ihn die Sängerin allein.",
+        "Der Song ist eine Torch-Song-Ballade, die materiellen Wohlstand dem Gefühl gegenüberstellt – jazzige Klaviersätze prägen den Sound.",
+        "Als zweite Single erschien er im Februar 2004 und erreichte Platz vier in den US-Charts – die dritte Top-Ten-Platzierung der Sängerin.",
+        "2024 erklang der Song beim Super-Bowl-Halftime-Show, wo die Sängerin ihn vor ihrem Duett mit Usher sang."
+      ],
+      "lyrics": {
+        "real": [
+          "Some people live for the fortune",
+          "Some people want it all",
+          "If I ain't got you, baby"
+        ],
+        "fake": "I just need your voice when the daylight fades"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ju8Hr50Ckwk",
+        "spotify": "https://open.spotify.com/track/3XVBdLihbNbxUwZosxcGuJ",
+        "amazonMusic": "https://music.amazon.com/tracks/B001VFGBEW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/piano-alicia-gotyou.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/If_I_Ain%27t_Got_You",
+        "https://en.wikipedia.org/wiki/The_Diary_of_Alicia_Keys",
+        "https://en.wikipedia.org/wiki/Alicia_Keys",
+        "https://en.wikipedia.org/wiki/Aaliyah",
+        "https://itunes.apple.com/search?term=Alicia+Keys+If+I+Aint+Got+You&entity=song&limit=5"
+      ]
+    }
+  ]
+}

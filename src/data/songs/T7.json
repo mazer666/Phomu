@@ -1,0 +1,751 @@
+{
+  "songs": [
+    {
+      "id": "80s-police-roxanne",
+      "title": "Roxanne",
+      "artist": "The Police",
+      "year": 1978,
+      "country": "GB",
+      "genre": "Reggae Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Rock"
+      ],
+      "hints": [
+        "Der Titel geht auf eine Theaterfigur zurück, deren Plakat im Hotelfoyer der Band hing, als sie 1977 in Paris gastierten.",
+        "Eigentlich als Bossa Nova konzipiert – die endgültige Taktform brachte erst der Drummer der Band ins Studio.",
+        "Beim Aufnehmen setzte sich der Sänger versehentlich auf eine Tastatur: Diese Atonalität und das Lachen sind bis heute im Intro zu hören.",
+        "Die Debütsingle erschien 1978 zunächst ohne Chartplatz in Großbritannien; die britische Wiederveröffentlichung 1979 brachte es auf Platz 12.",
+        "Der Text erzählt von einer Nacht, in der es ausdrücklich nicht nötig ist, 'das rote Licht anzumachen'."
+      ],
+      "lyrics": {
+        "real": [
+          "You don't have to put on the red light",
+          "You don't have to sell your body to the night",
+          "You don't have to wear that dress tonight"
+        ],
+        "fake": "Walking the streets of Paris, looking for a sign of love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3T1c7GkzRQQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/the-police-roxanne-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Roxanne_(The_Police_song)",
+        "https://en.wikipedia.org/wiki/Outlandos_d%27Amour",
+        "https://www.songfacts.com/facts/the-police/roxanne",
+        "https://itunes.apple.com/lookup?id=1440797616&entity=song",
+        "https://lrclib.net/api/get?artist_name=The%20Police&track_name=Roxanne"
+      ]
+    },
+    {
+      "id": "disco-prodigy-fire",
+      "title": "Firestarter",
+      "artist": "The Prodigy",
+      "year": 1996,
+      "country": "GB",
+      "genre": "Breakbeat / Punk-Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Classic",
+        "Dark",
+        "Energy",
+        "Raw"
+      ],
+      "hints": [
+        "Das Video entstand in einem stillgelegten Londoner U-Bahn-Tunnel und wurde nach einem 'Top of the Pops'-Einsatz vom BBC verboten.",
+        "Das prägende Gitarrenriff ist gesampelt - die Schreibrechte liegen deshalb bei der Sängerin der Band The Breeders.",
+        "Keith Flint wurde durch diesen Song zum Gesicht der Band und zur Ikone des harten, düsteren Dance.",
+        "Mischt intensive Breakbeats mit aggressiven Synthesizern - das Schlagzeug stammt aus einem Remix von 'Devotion'.",
+        "Refrain: 'I'm the trouble starter, punkin' instigator!'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm the trouble starter, punkin' instigator",
+          "I'm a firestarter, twisted firestarter",
+          "I'm the one infected, twisted animator"
+        ],
+        "fake": "I'm the midnight arsonist, feral and inflamed"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wmin5WkOuPw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/disco-prodigy-fire.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Firestarter_(The_Prodigy_song)",
+        "https://en.wikipedia.org/wiki/The_Fat_of_the_Land",
+        "https://www.songfacts.com/facts/the-prodigy/firestarter",
+        "https://itunes.apple.com/lookup?id=500162235&entity=song",
+        "https://lrclib.net/api/get?artist_name=The%20Prodigy&track_name=Firestarter"
+      ]
+    },
+    {
+      "id": "yt-GQbnRe1Y_q0",
+      "title": "Jump The Next Train (Slow Train Version)",
+      "artist": "Young Parisians",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Energy",
+        "Raw"
+      ],
+      "hints": [
+        "Die Erstpressung erschien am 30. Oktober 2004 als deutsche 12-Zoll-Vinyl beim Label euphonic und enthielt nur Remixfassungen.",
+        "Die Single wurde von Kyau vs. Albert, Probspot, Bobina und Vadim Zhukov remixt.",
+        "Der Track erschien neben der Single auch auf der offiziellen Compilation 'Trance: The Vocal Session 2005'.",
+        "Die offizielle digitale Veröffentlichung von 2012 führt den Song in zwei unterschiedlich getakteten Kurzfassungen sowie in acht Remixen und Dub-Fassungen.",
+        "Der gesungene Text ist düster: Er kreist um Verzweiflung, Selbsttötung und Gewalt zwischen Menschen."
+      ],
+      "lyrics": {
+        "real": [
+          "Either way is suicide (echo)",
+          "I'll love you 'till I'm dead inside (echo)",
+          "Modern girl, it's time to go (echo)"
+        ],
+        "fake": "Riding on the last train home, never leaving this town again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GQbnRe1Y_q0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/the-prodigy-jump-the-next-train--slow-train-version-.jpg",
+      "hintEvidence": [
+        "https://musicbrainz.org/ws/2/release/b9e2e776-0621-44a9-9b12-7dc7f0f5b967?inc=recordings+media+labels&fmt=json",
+        "https://musicbrainz.org/ws/2/release/40fa09a4-4ac2-48a6-8a2e-9f82f8565824?inc=recordings+media+labels&fmt=json",
+        "https://musicbrainz.org/ws/2/release/1df108c3-5ed4-4544-91a2-faa9a7be3e8b?inc=recordings+media+labels&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Young+Parisians&track_name=Jump+The+Next+Train",
+        "https://itunes.apple.com/lookup?id=535488633&entity=song"
+      ]
+    },
+    {
+      "id": "legends-stones-satisfaction",
+      "title": "(I Can't Get No) Satisfaction",
+      "artist": "The Rolling Stones",
+      "year": 1965,
+      "country": "GB",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Energy",
+        "Raw",
+        "Rebellious"
+      ],
+      "hints": [
+        "Keith Richards träumte das Riff und nahm es nachts auf einem Kassettenrekorder auf.",
+        "Einer der ersten Songs, der einen Fuzz-Effekt für die Gitarre prominent einsetzte.",
+        "Der Text kritisiert die Konsumgesellschaft und sexuelle Frustration.",
+        "Die Single erschien erst im August 1965 in Großbritannien und stand dort zwei Wochen auf Platz 1 - in den USA war sie schon im Juni erschienen.",
+        "Refrain: 'Cause I try, and I try, and I try, and I try' – eine mehrfach wiederholte Klage darüber, dass trotz aller Versuche nichts erreicht wird."
+      ],
+      "lyrics": {
+        "real": [
+          "I can't get no satisfaction",
+          "And that man comes on the radio",
+          "About some useless information"
+        ],
+        "fake": "Cause you fry, and I cry and I cry and I cry"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nrIPxlFzDi0",
+        "spotify": "https://open.spotify.com/track/2PzU4IB8Dr6mxV3lHuaG34",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/legends-stones-satisfaction.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/(I_Can%27t_Get_No)_Satisfaction",
+        "https://www.songfacts.com/facts/the-rolling-stones/i-cant-get-no-satisfaction",
+        "https://itunes.apple.com/lookup?id=1440743544&entity=song",
+        "https://lrclib.net/api/get?artist_name=The%20Rolling%20Stones&track_name=%28I+Can%27t+Get+No%29+Satisfaction",
+        "https://www.youtube.com/watch?v=nrIPxlFzDi0"
+      ]
+    },
+    {
+      "id": "indie-the-smiths-light",
+      "title": "There Is a Light That Never Goes Out",
+      "artist": "The Smiths",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Thematisiert die Sehnsucht nach Zugehörigkeit und den Wunsch, nie wieder nach Hause zu müssen.",
+        "Morrisseys Texte trägt eine von Johnny Marr geschriebene Gitarre - die Streifenbegleitung entstand am Emulator, die Flötenmelodie spielte Marr selbst.",
+        "Die Zeile über einen Autounfall gilt als eine der berühmtesten im Indie-Bereich.",
+        "Ein Song über Isolation, Liebe und den Drang, der Enge der Vorstadt zu entfliehen.",
+        "Refrain: 'And if a ten-ton truck kills the both of us, to die by your side is such a heavenly way to die!'"
+      ],
+      "lyrics": {
+        "real": [
+          "Take me out tonight",
+          "To die by your side",
+          "Is such a heavenly way to die"
+        ],
+        "fake": "Walking through the city, feeling so pretty, in the middle of a pity"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=siO6dkqidc4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/indie-the-smiths-light.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/There_Is_a_Light_That_Never_Goes_Out",
+        "https://en.wikipedia.org/wiki/The_Queen_Is_Dead",
+        "https://www.songfacts.com/facts/the-smiths/there-is-a-light-that-never-goes-out",
+        "https://itunes.apple.com/lookup?id=800157892&entity=song",
+        "https://lrclib.net/api/get?artist_name=The%20Smiths&track_name=There+Is+a+Light+That+Never+Goes+Out"
+      ]
+    },
+    {
+      "id": "yt-OYYZFx7_DS8",
+      "title": "This Charming Man",
+      "artist": "The Smiths",
+      "year": 1983,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Song entstand für eine Session im britischen John-Peel-Radio; die Plattenfirmenleitung hörte ihn dort und machte ihn statt eines anderen geplanten Titels zur Single.",
+        "Die im September 1983 in London aufgenommene Studioversion fiel unzufrieden aus; die bekannte A-Seite entstand erst im Oktober 1983 in einem Studio in Stockport.",
+        "Das Schlagzeug lief auf einem programmierten Linn LM-1, das die Samples der echten Trommeln auslöste und einen Bass im Motown-Stil unterlegte.",
+        "Eine Zeile des Textes ist einem Kriminalfilm von 1972 entlehnt, in dem Laurence Olivier und Michael Caine die Hauptrollen spielen.",
+        "1983 erreichte der Song nur Platz 25 der britischen Single-Charts, bei der Neuveröffentlichung 1992 dann Platz 8."
+      ],
+      "lyrics": {
+        "real": [
+          "Punctured bicycle on a hillside desolate",
+          "I would go out tonight",
+          "A jumped-up pantry boy who never knew his place"
+        ],
+        "fake": "This charming man, this charming van, driving through the rain again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OYYZFx7_DS8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/the-smiths-this-charming-man--2011-remaster-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/This_Charming_Man",
+        "https://en.wikipedia.org/wiki/The_Smiths",
+        "https://www.songfacts.com/facts/the-smiths/this-charming-man",
+        "https://itunes.apple.com/lookup?id=799995891&entity=song",
+        "https://lrclib.net/api/get?artist_name=The%20Smiths&track_name=This+Charming+Man"
+      ]
+    },
+    {
+      "id": "soul-staple-there",
+      "title": "I'll Take You There",
+      "artist": "The Staple Singers",
+      "year": 1972,
+      "country": "US",
+      "genre": "Soul / Gospel / Reggae influence",
+      "difficulty": "easy",
+      "mood": [
+        "Positive",
+        "Spiritual",
+        "Relaxed"
+      ],
+      "hints": [
+        "Der Song wurde von Al Bell geschrieben und produziert und erschien 1972 bei Stax auf dem Album 'Be Altitude: Respect Yourself'.",
+        "Die Aufnahme entstand in den Muscle Shoals Sound Studios in Sheffield, Alabama; Bläser und Streicher wurden in Detroit arrangiert, abgemischt wurde in Memphis.",
+        "Das Stück kennt nur zwei Akkorde (C und F) und besteht fast vollständig aus einem Ruf-und-Antwort-Prinzip.",
+        "Einleitung und Bassfigur sind ohne Nennung dem Reggae-Hit 'The Liquidator' von 1969 entnommen.",
+        "Die Single stand eine Woche auf Platz 1 der US-Popcharts und vier Wochen auf Platz 1 der R&B-Liste; bis Dezember 1972 verkaufte sie sich zwei Millionen Mal."
+      ],
+      "lyrics": {
+        "real": [
+          "I know a place",
+          "Ain't nobody worried",
+          "Lyin' to the races"
+        ],
+        "fake": "Silver moon above the city, calling out my name tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IhHBr7nMMio",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-staple-there.jpg",
+      "packs": [
+        "soul-funk",
+        "World, Reggae & Soul",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I%27ll_Take_You_There",
+        "https://en.wikipedia.org/wiki/Be_Altitude:_Respect_Yourself",
+        "https://en.wikipedia.org/wiki/The_Liquidator",
+        "https://api.lyrics.ovh/v1/The%20Staple%20Singers/I%27ll%20Take%20You%20There",
+        "https://lrclib.net/api/get?artist_name=The%20Staple%20Singers&track_name=I%27ll%20Take%20You%20There"
+      ]
+    },
+    {
+      "id": "yt-Qca9ByvLhBA",
+      "title": "Golden Brown",
+      "artist": "The Stranglers",
+      "year": 1981,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Song erschien als zweite Single des sechsten Studioalbums einer britischen Band; das Album war bereits im November 1981 erschienen, die Single folgte im Januar 1982.",
+        "Das Leitinstrument ist ein Cembalo: Die Melodie ist als Walzer in Dreiertakt angelegt, die Phrasen summieren sich auf dreizehn Schläge, notiert in 6/8- und 7/8-Takten.",
+        "Die Musik stammt aus einer ungenutzten Partie von 'Second Coming' auf dem Vorgängeralbum; den Text schrieb der Sänger Hugh Cornwell.",
+        "Das Video zeigt die Band als Entdecker im Ägypten der 1920er-Jahre vor einem fiktiven 'Radio Kairo'; gedreht wurde im Leighton House Museum in London.",
+        "In Großbritannien erreichte der Song Platz 2 der Hitparade - die höchste Chartposition der Band im eigenen Land."
+      ],
+      "lyrics": {
+        "real": [
+          "Golden brown texture like sun",
+          "Lays me down with my mind she runs",
+          "Never a frown with golden brown"
+        ],
+        "fake": "Amber rivers in the moonlight, she takes my hand and we drift away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Qca9ByvLhBA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/the-stranglers-golden-brown.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Golden_Brown",
+        "https://en.wikipedia.org/wiki/La_folie_(album)",
+        "https://www.goldradiouk.com/news/music/stranglers-golden-brown-lyrics-meaning-waltz/",
+        "https://api.lyrics.ovh/v1/The%20Stranglers/Golden%20Brown",
+        "https://www.officialcharts.com/charts/singles-chart/19820214/7501/"
+      ]
+    },
+    {
+      "id": "hiphop-sugarhill-rappers-delight",
+      "title": "Rapper's Delight",
+      "artist": "The Sugarhill Gang",
+      "year": 1979,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Fun",
+        "Classic",
+        "Old School"
+      ],
+      "hints": [
+        "Die Single erschien im September 1979 und gilt als der erste kommerzielle Rap-Song, der ein breites Publikum erreichte.",
+        "Sie interpoliert die Basslinie von 'Good Times' der Band Chic; nach einem Rechtsstreit wurden die beiden Autoren des Originals als Mit-Autoren eingetragen.",
+        "Die Aufnahme entstand in einem einzigen Take; den Sänger hatte die Produzentin zuvor in einer Pizzeria entdeckt.",
+        "In den USA erschien der Song zunächst nur als 12-Zoll-Version; die längste Fassung dauert 14 Minuten und 37 Sekunden.",
+        "Die Single erreichte Platz 36 in den US-Charts, Platz 1 in Kanada, Platz 1 in den Niederlanden und Platz 3 in Großbritannien."
+      ],
+      "lyrics": {
+        "real": [
+          "To the rhythm of the boogie, the beat",
+          "And me, the groove, and my friends are gonna try to move your feet",
+          "Check it out, I'm the C-A-S-AN, the O-V-A and the rest is F-L-Y"
+        ],
+        "fake": "Riding down the boulevard at midnight, silver chains and a golden hat"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mcCK99wHrk0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-sugarhill-rappers-delight.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rapper%27s_Delight",
+        "https://en.wikipedia.org/wiki/Good_Times_(Chic_song)",
+        "https://www.theguardian.com/music/2017/may/02/sugarhill-gang-how-we-made-rappers-delight-interview",
+        "https://api.lyrics.ovh/v1/The%20Sugarhill%20Gang/Rapper%27s%20Delight",
+        "https://lrclib.net/api/get?artist_name=The%20Sugarhill%20Gang&track_name=Rapper%27s%20Delight"
+      ]
+    },
+    {
+      "id": "yt-I6T_ZAP52xM",
+      "title": "Stop! In The Name Of Love",
+      "artist": "The Supremes",
+      "year": 1965,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Die Aufnahme entstand Anfang Januar 1965 im Motown-Studio Hitsville U.S.A. und erschien im Februar 1965 als Single.",
+        "Geschrieben und produziert wurde das Stück von Motowns Produzententeam Holland-Dozier-Holland.",
+        "Die Choreografie sah eine Hand auf der Hüfte und die andere weit ausgestreckt; die Gruppe trat damit in der ABC-Varietyshow 'Shindig!' auf.",
+        "Die Single belegte zwei Wochen lang Platz 1 der US-Popcharts und erreichte auf der Soul-Liste Platz 2; für den Grammy 1966 wurde sie nominiert.",
+        "Der Refrain mündet in den Rat, erst einmal in Ruhe nachzudenken - ein Text, der bis heute eng mit der Gruppe verbunden ist."
+      ],
+      "lyrics": {
+        "real": [
+          "Before you break my heart",
+          "I'm aware of where you go",
+          "Each time you leave my door"
+        ],
+        "fake": "Please don't walk away, tell me where you went last night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=I6T_ZAP52xM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/the-supremes-stop--in-the-name-of-love.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stop!_In_the_Name_of_Love",
+        "https://en.wikipedia.org/wiki/More_Hits_by_The_Supremes",
+        "https://en.wikipedia.org/wiki/Holland%E2%80%93Dozier%E2%80%93Holland",
+        "https://api.lyrics.ovh/v1/The%20Supremes/Stop!%20In%20The%20Name%20Of%20Love",
+        "https://lrclib.net/api/get?artist_name=The%20Supremes&track_name=Stop!%20In%20The%20Name%20Of%20Love"
+      ]
+    },
+    {
+      "id": "soul-supremes-hurrylove",
+      "title": "You Can't Hurry Love",
+      "artist": "The Supremes",
+      "year": 1966,
+      "country": "US",
+      "genre": "Soul / Motown-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Die Aufnahme entstand im Juni und Juli 1966 im Motown-Studio Hitsville U.S.A. und erschien im Juli 1966 als zweite Single des Albums 'A' Go-Go'.",
+        "Vorbild war ein 1950er-Gospel-Song darüber, dass man auf Gottes Zeitplan vertrauen soll - die Motown-Fassung überträgt die Botschaft auf die Gefühle.",
+        "Sechzehn Jahre später machte eine Neuaufnahme des Songs Phil Collins zum Nummer-eins-Hit in Großbritannien.",
+        "Die Single belegte zwei Wochen lang Platz 1 der US-Popcharts und zwei Wochen Platz 1 der Soul-Liste; es war der siebte Nummer-eins-Hit der Gruppe.",
+        "Die Kernbotschaft steckt in einer simplen Alltagsweisheit: Erst abwarten, dann kommt die große Liebe von ganz allein - die Gruppe sang den Song auch auf Italienisch."
+      ],
+      "lyrics": {
+        "real": [
+          "I need love, love",
+          "No, you just have to wait",
+          "No matter how long it takes"
+        ],
+        "fake": "Mama said the boy next door would come back around in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ovoBi3pXD_A",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-supremes-hurrylove.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You_Can%27t_Hurry_Love",
+        "https://en.wikipedia.org/wiki/The_Supremes_A%27_Go-Go",
+        "https://en.wikipedia.org/wiki/Hello%2C_I_Must_Be_Going!",
+        "https://api.lyrics.ovh/v1/The%20Supremes/You%20Can%27t%20Hurry%20Love",
+        "https://lrclib.net/api/get?artist_name=The+Supremes&track_name=You+Can%27t+Hurry+Love"
+      ]
+    },
+    {
+      "id": "soul-temptations-mygirl",
+      "title": "My Girl",
+      "artist": "The Temptations",
+      "year": 1964,
+      "country": "US",
+      "genre": "Soul / Motown",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song im September und November 1964 im Motown-Studio Hitsville U.S.A.; die Single erschien im Dezember 1964.",
+        "Geschrieben und produziert wurde er von Smokey Robinson und Ronnie White von den Miracles - der Band, die ihn eigentlich nehmen wollte.",
+        "Es war die erste Single der Band mit David Ruffin am Mikrofon; Robinson schrieb das Stück extra für seine raue, tiefe Stimme.",
+        "Die markante Bassfigur am Anfang spielte James Jamerson, das Gitarrenriff Robert White von den Funk Brothers.",
+        "Der Text preist die Geliebte als Sonne an einem bewölkten Tag - eines der eingängigsten Motown-Motive der 1960er-Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "I've got sunshine on a cloudy day",
+          "What can make me feel this way?",
+          "I've got a sweeter song than the birds in the trees"
+        ],
+        "fake": "Walking through the park with the radio in my ear, singing loud so the whole street can hear"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kyd2L4Xa-j0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-temptations-mygirl.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/My_Girl_(The_Temptations_song)",
+        "https://en.wikipedia.org/wiki/The_Temptations_Sing_Smokey",
+        "https://en.wikipedia.org/wiki/Smokey_Robinson",
+        "https://api.lyrics.ovh/v1/The%20Temptations/My%20Girl",
+        "https://lrclib.net/api/get?artist_name=The%20Temptations&track_name=My%20Girl"
+      ]
+    },
+    {
+      "id": "90s-verve-bitter-sweet-symphony",
+      "title": "Bitter Sweet Symphony",
+      "artist": "The Verve",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Britpop",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Thematisiert die menschliche Existenz als einen ständigen Kampf um Geld und Überleben.",
+        "Das berühmte Streicher-Sample stammt aus einer Orchesterversion eines Rolling-Stones-Songs.",
+        "Im Video läuft der Sänger Richard Ashcroft stoisch geradeaus über den Bürgersteig und rammt Passanten.",
+        "Es gab jahrelange Rechtsstreitigkeiten um die Urheberrechte (die erst 2019 beigelegt wurden).",
+        "Hörst du die Geigen? 'No change, I can change, I can change...'"
+      ],
+      "lyrics": {
+        "real": [
+          "I'll take you down the only road I've ever been down",
+          "I need to hear some sounds that recognize the pain in me, yeah",
+          "I let the melody shine, let it cleanse my mind, I feel free now"
+        ],
+        "fake": "Looking for the sun in the middle of a run in the light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1lyu1KKwC74",
+        "spotify": "https://open.spotify.com/track/1WYEDcS7WGjv0rG7rmMX3o",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/90s-verve-bitter-sweet-symphony.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Indie & Alternative",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bitter_Sweet_Symphony",
+        "https://www.songfacts.com/facts/the-verve/bitter-sweet-symphony",
+        "https://en.wikipedia.org/wiki/Urban_Hymns",
+        "https://itunes.apple.com/lookup?id=1443258189&entity=song",
+        "https://lrclib.net/api/get?artist_name=The+Verve&track_name=Bitter+Sweet+Symphony"
+      ]
+    }
+  ]
+}

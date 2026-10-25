@@ -1,0 +1,445 @@
+{
+  "songs": [
+    {
+      "id": "schlager-vicky-leandros-leben",
+      "title": "Ich liebe das Leben",
+      "artist": "Vicky Leandros",
+      "year": 1975,
+      "country": "GR",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Inspirational"
+      ],
+      "hints": [
+        "Der deutsche Schlager erschien 1975 auf dem elften Studioalbum einer griechisch-deutschen Sängerin, die 1967 und 1972 beim Eurovision Song Contest antrat und 1972 gewann.",
+        "In Deutschland belegte das Lied Platz 10 und blieb 19 Wochen in der Hitparade, in den Niederlanden stand es auf Platz 18.",
+        "Der Text erzählt von einer Trennung: Die Sängerin tröstet den Partner und verweist darauf, dass das Karussell weiterdreht.",
+        "Text und Musik stammen von Klaus Munro, produziert wurde der Song von ihrem Vater; spätere Cover legten Andrea Berg, Ina Colada und Betontod auf.",
+        "Der Refrain setzt mit 'Nein, sorg dich nicht um mich' ein und mündet in den titelgebenden Ausbruch, der das Stück zu einem Evergreen machte."
+      ],
+      "lyrics": {
+        "real": [
+          "Nein, sorg dich nicht um mich",
+          "Das Karussell wird sich weiterdrehen",
+          "Auch wenn wir auseinandergehen"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7_FsW8RPCTc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-vicky-leandros-leben.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Ich_liebe_das_Leben",
+        "https://de.wikipedia.org/wiki/Vicky_Leandros",
+        "https://api.lyrics.ovh/v1/Vicky%20Leandros/Ich%20liebe%20das%20Leben",
+        "https://www.youtube.com/watch?v=7_FsW8RPCTc",
+        "https://itunes.apple.com/search?term=Vicky+Leandros+Ich+liebe+das+Leben&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-CS9OO0S5w2k",
+      "title": "YMCA",
+      "artist": "Village People",
+      "year": 1978,
+      "country": "US",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Der Disco-Klassiker erschien 1978 als einzige Single vom dritten Studioalbum der Band und wurde von Jacques Morali und Victor Willis geschrieben.",
+        "In den USA erreichte das Lied Platz 2 der Billboard-Hot-100, in Großbritannien stand es 1979 auf Platz 1 und verkaufte sich weltweit 12 Millionen Mal.",
+        "Das Video wurde 1978 in New York gedreht und zeigt die Band tanzend durch die Stadt.",
+        "Die berühmte Handzeichen-Choreografie entstand am 6. Januar 1979 in der US-Fernsehshow 'American Bandstand'.",
+        "2024 stand das Lied sechs Wochen auf Platz 1 der Billboard-Charts für digitale Dance- und Electro-Verkäufe."
+      ],
+      "lyrics": {
+        "real": [
+          "It's fun to stay at the Y.M.C.A.",
+          "They have everything for young men to enjoy",
+          "You can hang out with all the boys"
+        ],
+        "fake": "Riding on the midnight train to a town that never sleeps"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CS9OO0S5w2k"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/village-people-ymca--official-music-video-1978-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Y.M.C.A._(song)",
+        "https://en.wikipedia.org/wiki/Village_People",
+        "https://api.lyrics.ovh/v1/Village%20People/YMCA",
+        "https://www.youtube.com/watch?v=CS9OO0S5w2k",
+        "https://itunes.apple.com/search?term=Village+People+YMCA&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-Bam_KHI-lSQ",
+      "title": "Drums",
+      "artist": "James Hype & Kim Petras",
+      "year": 2023,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Der britische DJ veröffentlichte 2023 eine Kollaboration, die Justin Timberlakes erstes Solo-Hit samplet.",
+        "Der Song verbindet den Dance-Beat mit einem kraftvollen Schlagzeug-Pattern und einer kurzen, gesungenen Hook-Zeile.",
+        "2024 erschienen Remixes von Tiësto und Felix Jaehn.",
+        "Die Hook-Zeile lautet wörtlich 'The less you give to me, the more I want it'.",
+        "Der Refrain besteht praktisch nur aus dieser einen Zeile, die über einem stampfenden Perkussions-Break wiederholt wird."
+      ],
+      "lyrics": {
+        "real": [
+          "The less you give to me, the more I want it",
+          "You push me back until I'm two steps forward",
+          "I never thought it'd end up this way"
+        ],
+        "fake": "Every heartbeat counts when the spotlight turns on"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Bam_KHI-lSQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/james-hype-kim-petras-drums.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/James_Hype",
+        "https://musicbrainz.org/recording/343e8185-7976-4008-abc5-77b76a4c8d50",
+        "https://itunes.apple.com/search?term=James+Hype+Drums&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/James%20Hype/Drums",
+        "https://www.youtube.com/watch?v=Bam_KHI-lSQ"
+      ]
+    },
+    {
+      "id": "yt-ySeKRfdwi8A",
+      "title": "Eternity",
+      "artist": "Anyma & Chris Avantgarde",
+      "year": 2023,
+      "country": "IT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Der melodisch-techno Track erschien 2023 auf dem Debütalbum 'Genesys' eines DJ-Projekts vom Label Afterlife.",
+        "Das Album erreichte Platz 5 der britischen Dance-Album-Charts, 2023 wurde das Projekt zum erfolgreichsten Beatport-Künstler.",
+        "Der gesungene Teil besteht aus nur zwei englischen Zeilen über Ewigkeit und Verbundenheit.",
+        "Im Refrain wiederholt sich die Zeile 'A bond, forever and beyond'.",
+        "Der gesamte gesungene Text besteht aus zwei Zeilen, die mehrfach wiederholt werden - mehr Worte hat der Track nicht."
+      ],
+      "lyrics": {
+        "real": [
+          "A reflection of eternity",
+          "A bond, forever and beyond",
+          "A reflection of eternity"
+        ],
+        "fake": "Dancing through the midnight rain in a city made of glass"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ySeKRfdwi8A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/vintage-culture---elder-island-eternity.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Anyma",
+        "https://en.wikipedia.org/wiki/Genesys_(album)",
+        "https://itunes.apple.com/search?term=Anyma+Eternity&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Anyma/Eternity",
+        "https://www.youtube.com/watch?v=ySeKRfdwi8A"
+      ]
+    },
+    {
+      "id": "synth-visage-grey",
+      "title": "Fade to Grey",
+      "artist": "Visage",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Romantic",
+      "difficulty": "easy",
+      "mood": [
+        "Atmospheric",
+        "Cool",
+        "German New Wave",
+        "Popular",
+        "Retro"
+      ],
+      "hints": [
+        "Der Sänger wurde zur Leitfigur der Neuen Romantik, der Song erschien 1980 als zweite Single des Debütalbums bei Polydor.",
+        "In Großbritannien erreichte er Platz 8, in der Bundesrepublik und in der Schweiz war er Nummer eins.",
+        "Der Song wird auf Englisch gesungen und im Französischen gesprochen - die gesprochene französische Stimme kam von einer Studentin aus Luxemburg.",
+        "Das Musikvideo war eines der ersten des Regisseurduos Godley & Creme.",
+        "Der Refrain wiederholt dreimal dieselbe kurze englische Phrase, die den Titel des Stücks nennt."
+      ],
+      "lyrics": {
+        "real": [
+          "One man on a lonely platform",
+          "Two eyes staring cold and silent",
+          "Ohhhh ohh we fade to grey (fade to grey)"
+        ],
+        "fake": "Rain on the station glass while the timetable turns to dust"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CL39eozQqdI",
+        "spotify": "https://open.spotify.com/track/3yobQNuKVJ62WDU7h725Fu"
+      },
+      "coverUrl": "/covers/synth-visage-grey.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fade_to_Grey_(Visage_song)",
+        "https://de.wikipedia.org/wiki/Fade_to_Grey",
+        "https://api.lyrics.ovh/v1/Visage/Fade%20to%20Grey",
+        "https://open.spotify.com/track/3yobQNuKVJ62WDU7h725Fu",
+        "https://www.youtube.com/watch?v=CL39eozQqdI"
+      ]
+    },
+    {
+      "id": "yt-sRTGhPR-fWQ",
+      "title": "Mind Of A Toy",
+      "artist": "Visage",
+      "year": 1980,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die Aufnahme entstand 1980 in den Genetic Studios und erschien auf dem Debütalbum der britischen Synth-Pop-Band.",
+        "Als dritte Single erschien sie 1981 bei Polydor, also nach dem Debütalbum von 1980, auf dem sie erstmals zu hören war.",
+        "Die Texte stammen von Steve Strange, Midge Ure, Billy Currie, John McGeoch, Rusty Egan und Dave Formula.",
+        "Das Musikvideo inszenierten Godley & Creme, die Idee zum kindlichen Lord-Look stammt von Steve Strange.",
+        "Der Text erzählt von einer Puppe, die von einem Fremden an Schnüren gelenkt wird und deren gemalte Haut bereits rissig ist."
+      ],
+      "lyrics": {
+        "real": [
+          "My painted face",
+          "Is chipped and cracked",
+          "When a child throws out a toy"
+        ],
+        "fake": "The neon lights are fading in the summer rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sRTGhPR-fWQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/visage-mind-of-a-toy.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mind_of_a_Toy",
+        "https://en.wikipedia.org/wiki/Visage_(Visage_album)",
+        "https://en.wikipedia.org/wiki/Visage_(band)",
+        "https://api.lyrics.ovh/v1/Visage/Mind%20Of%20A%20Toy",
+        "https://www.youtube.com/watch?v=sRTGhPR-fWQ"
+      ]
+    },
+    {
+      "id": "yt-4a7nNZxEUgw",
+      "title": "Breathe (feat. Jesse Jo Stark)",
+      "artist": "DVBBS",
+      "year": 2023,
+      "country": "CA",
+      "genre": "Electronic / House",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Das kanadische Produktionsduo aus Orangeville in Ontario besteht aus den Brüdern Christopher und Alexandre van den Hoef, startete 2012 mit der Debüt-EP 'Initio' und ist unter anderem bei Spinnin' Records unter Vertrag.",
+        "Bekannt wurde das Duo 2013 mit einem weltweiten Charterfolg, der inzwischen über eine Milliarde Streams verzeichnet und mehrfach platin ausgezeichnet wurde.",
+        "2023 erschien die Single mit Vocals der US-Sängerin und Schauspielerin aus Los Angeles, die im Titel als Gast-Artist genannt wird.",
+        "Der gesungene Teil besteht im Kern aus nur zwei englischen Zeilen, die über einer treibenden EDM-Produktion mehrfach wiederholt werden.",
+        "Die wiederkehrende Zeile lautet wörtlich 'Don't hold your breath, move slowly'."
+      ],
+      "lyrics": {
+        "real": [
+          "Don't hold your breath, move slowly",
+          "Can you see what I see?",
+          "Don't hold your breath"
+        ],
+        "fake": "The city lights are fading out but I can still feel you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4a7nNZxEUgw",
+        "fallbackYoutubeId": "r2ESyUK30h0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/volbeat-breathe--feat--jesse-jo-stark-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dvbbs",
+        "https://en.wikipedia.org/wiki/Tsunami_(Dvbbs_and_Borgeous_song)",
+        "https://en.wikipedia.org/wiki/Jesse_Jo_Stark",
+        "https://itunes.apple.com/lookup?id=1704139027",
+        "https://api.lyrics.ovh/v1/DVBBS/Breathe"
+      ]
+    },
+    {
+      "id": "yt-TuY1py-wPl4",
+      "title": "Si Tú Me Besas",
+      "artist": "Víctor Manuelle",
+      "year": 2011,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger, 1968 in New York geboren und in Isabela auf Puerto Rico aufgewachsen, veröffentlichte das Album 'Busco un pueblo' bei Sony Music Latin.",
+        "Der Titel ist die erste Single des Albums und stammt aus der Feder von Oscar 'Oscarcito' Hernández.",
+        "Der Song verbindet Salsa mit der romantischen Ballade des Sängers und erzählt in einem dichten spanischen Text von Küssen und Nähe.",
+        "Der Refrain besteht aus drei kurzen Zeilen, die alle mit 'Bésame' beginnen, gefolgt von 'Hasta que se vayan las horas'.",
+        "Wörtlich lautet die markanteste Refrainzeile 'Bésame sensacional'."
+      ],
+      "lyrics": {
+        "real": [
+          "No prometo devolverte tu boca",
+          "Júrame no devolverme la mía",
+          "Haré que el mundo se te olvide"
+        ],
+        "fake": "La noche se vuelve de oro cuando me miras de cerca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TuY1py-wPl4",
+        "spotify": "https://open.spotify.com/track/5981zpjMYeKGoEQ6K9794L"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/víctor-manuelle-si-tú-me-besas.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/V%C3%ADctor_Manuelle",
+        "https://itunes.apple.com/search?term=V%C3%ADctor+Manuelle+Si+T%C3%BA+Me+Besas&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/V%C3%ADctor%20Manuelle/Si%20T%C3%BA%20Me%20Besas",
+        "https://lrclib.net/api/get?artist_name=V%C3%ADctor%20Manuelle&track_name=Si%20T%C3%BA%20Me%20Besas",
+        "https://www.youtube.com/watch?v=TuY1py-wPl4"
+      ]
+    }
+  ]
+}

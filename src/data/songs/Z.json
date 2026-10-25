@@ -1,0 +1,745 @@
+{
+  "songs": [
+    {
+      "id": "country-zacbrown-chicken",
+      "title": "Chicken Fried",
+      "artist": "Zac Brown Band",
+      "year": 2008,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Positive"
+      ],
+      "hints": [
+        "Der Frontmann schrieb den Text gemeinsam mit Wyatt Durrette - sie lernten sich in einer Kneipe in Atlanta kennen, und der Song entstand über mehrere Jahre hinweg.",
+        "Eine erste Aufnahme entstand bereits 2003 und erschien 2005 auf einem selbst veröffentlichten Album; die heute bekannte Fassung kam 2008.",
+        "Der dritte Vers wurde nach den Anschlägen vom September 2001 geschrieben und bringt den patriotischen Teil des Textes zum Ausdruck.",
+        "Im Winter 2008 stieg der Song auf Platz 1 der US-Country-Charts - der erste Nummer-eins-Hit der Gruppe - sowie auf Platz 20 der allgemeinen US-Hot-100.",
+        "Der Text preist die kleinen Freuden des Lebens im Süden: Pfirsiche, Pecan-Pie, süßer Tee, Radio und die Liebe zu Familie und Heimat."
+      ],
+      "lyrics": {
+        "real": [
+          "You know I like my chicken fried",
+          "A pair of jeans that fit just right",
+          "Well I was raised up beneath the shade of a Georgia Pine"
+        ],
+        "fake": "Neon lights are burning while the highway calls my name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e4ujS1er1r0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-zacbrown-chicken.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Chicken_Fried",
+        "https://itunes.apple.com/search?term=Zac+Brown+Band+Chicken+Fried&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Zac%20Brown%20Band/Chicken%20Fried",
+        "https://www.songfacts.com/facts/zac-brown-band/chicken-fried",
+        "https://www.youtube.com/watch?v=e4ujS1er1r0"
+      ]
+    },
+    {
+      "id": "country-zach-orange",
+      "title": "Something in the Orange",
+      "artist": "Zach Bryan",
+      "year": 2022,
+      "country": "US",
+      "genre": "Americana / Country / Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Künstler erzählte einem Country-Radio, er habe das Stück in einer Hütte in Wisconsin geschrieben.",
+        "Die Single erschien am 22. April 2022 als zweite Single des dritten Studioalbums und wurde ein Jahr später für den Grammy in der Kategorie 'Best Country Solo Performance' nominiert.",
+        "Produzent Ryan Hadlock nahm den Track im Bear Creek Studio auf; parallel erschien eine völlig andere Version nur mit Klavier und Stimme.",
+        "Nach ersten Social-Media-Auszügen im Dezember 2021 kam der Song 2022 in die Top 10 der US-Hot-100.",
+        "2023 coverte der irische Sänger Niall Horan das Stück in seiner Live-Serie; das Video besteht ausschließlich aus von Fans aufgenommenem Material."
+      ],
+      "lyrics": {
+        "real": [
+          "But I miss you in the mornings when I see the sun",
+          "Something in the orange tells me we're not done",
+          "I poisoned myself again"
+        ],
+        "fake": "Rooftop lights are calling and the midnight train won't wait"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lA8F9sIhGdg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-zach-orange.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Something_in_the_Orange",
+        "https://itunes.apple.com/search?term=Zach+Bryan+Something+in+the+Orange&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Zach%20Bryan/Something%20in%20the%20Orange",
+        "https://en.wikipedia.org/wiki/American_Heartbreak",
+        "https://www.youtube.com/watch?v=lA8F9sIhGdg"
+      ]
+    },
+    {
+      "id": "soul-zapp-bounce",
+      "title": "More Bounce to the Ounce",
+      "artist": "Zapp (Roger Troutman)",
+      "year": 1980,
+      "country": "US",
+      "genre": "Funk / Talkbox focus",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Experimental"
+      ],
+      "hints": [
+        "Die Gruppe entstand 1977 in Dayton, Ohio, übernahm den Spitznamen des Bruders ihres Frontmanns und wurde für ihre Talkbox-Effekte bekannt.",
+        "Der Song eröffnet das selbst benannte Debütalbum, das 1980 bei Warner Bros. erschien; die Single kam im September 1980.",
+        "Geschrieben und arrangiert hat den Track der Frontmann gemeinsam mit Bootsy Collins, der auch als Produzent beteiligt war.",
+        "Die Single erreichte Platz 2 der US-R&B-Charts und Platz 86 der allgemeinen Billboard-Hot-100.",
+        "Der Titel ist eine Anspielung auf eine Pepsi-Werbekampagne der 1950er-Jahre; spätere Hits anderer Künstler sampelten den Track."
+      ],
+      "lyrics": {
+        "real": [
+          "Get on the dance floor, baby",
+          "I never seen a sexy thing like you, baby",
+          "More bounce to the ounce, much more bounce"
+        ],
+        "fake": "Silver chains on a midnight train heading out to the sea"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=X1ijvN7ADt4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/soul-zapp-bounce.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/More_Bounce_to_the_Ounce",
+        "https://en.wikipedia.org/wiki/Zapp",
+        "https://itunes.apple.com/search?term=Zapp+More+Bounce+to+the+Ounce&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Zapp/More%20Bounce%20to%20the%20Ounce",
+        "https://www.youtube.com/watch?v=X1ijvN7ADt4"
+      ]
+    },
+    {
+      "id": "yt-Gudx8Bvnqsg",
+      "title": "On My Love",
+      "artist": "Zara Larsson & David Guetta",
+      "year": 2023,
+      "country": "SE",
+      "genre": "Dance-Pop / EDM",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die schwedische Sängerin kündigte den Track am 7. September 2023 an; erschienen ist er am 15. September 2023 bei Epic Records.",
+        "Das Stück entstand in Zusammenarbeit mit einem französischen DJ und Produzenten und ist die dritte Single des vierten Albums der Sängerin.",
+        "Die Sängerin widmete das Lied ihrer Schwester Hanna; im Musikvideo reiten die beiden Schwestern gemeinsam Motorräder.",
+        "Der Song ist in B-Dur-Moll gehalten und läuft mit 123 Beats pro Minute.",
+        "Charttechnisch kam das Lied in Lettland und Schweden in die Top 3, in Norwegen und Tschechien in die Top 10."
+      ],
+      "lyrics": {
+        "real": [
+          "Hear my pain, can you hear my prayer?",
+          "Take my breath, can you take me there?",
+          "Whether it's wrong, whether it's right, I will follow"
+        ],
+        "fake": "Neon signs are flashing while the midnight city sleeps"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Gudx8Bvnqsg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/zara-larsson---mnek-on-my-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/On_My_Love",
+        "https://itunes.apple.com/search?term=Zara+Larsson+David+Guetta+On+My+Love&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Zara%20Larsson/On%20My%20Love",
+        "https://en.wikipedia.org/wiki/Zara_Larsson",
+        "https://www.youtube.com/watch?v=Gudx8Bvnqsg"
+      ]
+    },
+    {
+      "id": "house-zedd-clarity",
+      "title": "Clarity",
+      "artist": "Zedd ft. Foxes",
+      "year": 2012,
+      "country": "DE",
+      "genre": "Electropop / EDM",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Epic",
+        "Happy",
+        "Powerful",
+        "Serious"
+      ],
+      "hints": [
+        "Anton Zaslavski, der deutsche DJ, veröffentlichte den Track am 14. November 2012 als dritte Single seines Debütalbums.",
+        "Die Melodie des Refrains hatte der Songwriter Matthew Koma ursprünglich für einen anderen Track des Produzenten geschrieben.",
+        "Erst wenige Tage vor der Abgabefrist fand der Produzent die passende Stimme - die britische Sängerin Louisa Rose Allen.",
+        "Das Stück läuft mit 128 Beats pro Minute in A♭-Dur; den Leadgesang nahm Jonny Harris auf, der unter dem Künstlernamen 'Ghostwriter' credited ist.",
+        "Nach einem Auftritt von Michelle Chamuel in 'The Voice' USA im Juni 2013 sprang der Song in der US-Hot-100 von Platz 24 auf 14; 2014 gewann er den Grammy für den besten Dance-Track."
+      ],
+      "lyrics": {
+        "real": [
+          "High dive into frozen waves",
+          "Fight fear for the selfish pain",
+          "Where the past comes back to life"
+        ],
+        "fake": "Golden horses run along the neon rivers of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IxxstCcJlsc",
+        "spotify": "https://open.spotify.com/track/0VGrgE7GbWaINRnh1bR4k9",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/house-zedd-clarity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Clarity_(Zedd_song)",
+        "https://en.wikipedia.org/wiki/Clarity_(Zedd_album)",
+        "https://itunes.apple.com/search?term=Zedd+Foxes+Clarity&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Zedd/Clarity",
+        "https://www.youtube.com/watch?v=IxxstCcJlsc"
+      ]
+    },
+    {
+      "id": "yt-z5xrhePJHsg",
+      "title": "Embriágame",
+      "artist": "Zion & Lennox",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Reggaeton / Latin Urban",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Duo aus Carolina, Puerto Rico, veröffentlichte den Track 2016 auf dem Album 'Motivan2'.",
+        "Die beiden Künstler lernten sich 1998 als Nachbarn kennen, traten 2001 erstmals gemeinsam auf und veröffentlichten 2004 ihr Debütalbum.",
+        "Der spanische Text preist Schönheit und Sinnlichkeit der Partnerin und singt von einer letzten gemeinsamen Nacht.",
+        "Die Gruppe gewann drei Jahre in Folge den Billboard Latin Music Award in der Kategorie 'Best Latin Rhythm Artist of the Year, Duo or Group'.",
+        "Nach 'Los Verdaderos' (2010) und 'El Sistema' (2021) trennten sich die beiden Partner 2024."
+      ],
+      "lyrics": {
+        "real": [
+          "Tu belleza me ciega",
+          "Me descontrola el sistema",
+          "Juguemos al amor como dos amantes"
+        ],
+        "fake": "Caminamos por la arena mientras el mar se aleja"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=z5xrhePJHsg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/zion---lennox-embriágame---video-oficial.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Zion_%26_Lennox",
+        "https://itunes.apple.com/search?term=Zion+Lennox+Embriagame&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Zion+%26+Lennox&track_name=Embri%C3%A1game",
+        "https://itunes.apple.com/lookup?id=1148108790&entity=song",
+        "https://www.youtube.com/watch?v=z5xrhePJHsg"
+      ]
+    },
+    {
+      "id": "yt-ET3cyMpFAOM",
+      "title": "Pierdo la Cabeza (Remix)",
+      "artist": "Zion & Lennox ft. Yandel & Farruko",
+      "year": 2015,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Original erschien am 11. Oktober 2014 als Single des puertorikanischen Duos; später legten die beiden die Neuaufnahme mit zwei Gästen vor.",
+        "Die Neuaufnahme mit den beiden Gästen erreichte mehr Wiedergaben als die Erstfassung - rund 113 Millionen bis Dezember 2018.",
+        "In Kolumbien stand der Song auf Platz 1 der Top-Urban-Liste, in Spanien erreichte er Platz 8 der Promusicae-Charts.",
+        "Die US-Auszeichnung RIAA verlieh der Single zweifachen Platinschatz.",
+        "Der Text erzählt, dass die Geliebte einem so sehr den Kopf verdreht, dass man fast den Verstand verliert."
+      ],
+      "lyrics": {
+        "real": [
+          "Tú me dices que no sientes nada",
+          "Tengo tu foto en mi teléfono y las ganas de volverte a ver",
+          "Baby lo nuestro es como una aventura"
+        ],
+        "fake": "Subo el volumen y me pierdo entre tus manos otra vez"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ET3cyMpFAOM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/zion---lennox-ft-yandel---farruko-pierdo-la-cabeza-remix---video-lyric.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Pierdo_la_cabeza",
+        "https://es.wikipedia.org/wiki/Zion_%26_Lennox",
+        "https://en.wikipedia.org/wiki/Zion_%26_Lennox",
+        "https://itunes.apple.com/lookup?id=1244878453",
+        "https://lrclib.net/api/get/31771055"
+      ]
+    },
+    {
+      "id": "yt-6R5i6wQCOCQ",
+      "title": "Otra Vez",
+      "artist": "Zion & Lennox ft. J Balvin",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Zusammenarbeit wurde im März 2016 angekündigt und weltweit am 5. August desselben Jahres veröffentlicht.",
+        "Das Stück erschien auf dem dritten Studioalbum des Duos, das am 30. September 2016 in den Latin-Album-Charts auf Platz 1 stand.",
+        "Der kolumbianische Gast rappt in der zweiten Hälfte, im Text fällt mehrfach eine Hafenstadt an der Karibik.",
+        "Das Duo gewann 2016 bei den Billboard Latin Music Awards den Preis als bestes urbane Duo.",
+        "Der Text erzählt, dass sich das Paar in einer Discothek wiedersieht und die Nacht wieder von vorn beginnt."
+      ],
+      "lyrics": {
+        "real": [
+          "De solo verte me dan ganas",
+          "No es casualidad que nos viéramos en la misma disco",
+          "Hoy vuelve a aparecer bajo la luna llena"
+        ],
+        "fake": "Caminamos por la arena mientras suena el mar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6R5i6wQCOCQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/zion---lennox-ft--j-balvin-otra-vez.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Otra_vez_(canci%C3%B3n)",
+        "https://es.wikipedia.org/wiki/Motivan2",
+        "https://es.wikipedia.org/wiki/Zion_%26_Lennox",
+        "https://itunes.apple.com/lookup?id=1148109206",
+        "https://api.lyrics.ovh/v1/Zion%20%26%20Lennox/Otra%20Vez"
+      ]
+    },
+    {
+      "id": "yt-tkwjbZEEfk8",
+      "title": "Hoy lo Siento",
+      "artist": "Zion & Lennox ft. Tony Dize",
+      "year": 2010,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song entstand für das Debütalbum des Duos, das im November 2010 erschien.",
+        "Ein Blick in die Trackliste des Albums zeigt: Der Gastkünstler ist mit einem eigenen Song ebenfalls vertreten.",
+        "Der Text ist eine Abrechnung: Die Geliebte hat dem Sänger die Lebenszeit genommen, er will sie loswerden.",
+        "Im Refrain bereut der Sänger seine Entscheidung, geliebt zu haben, ohne wirklich zu leben.",
+        "Der Sänger fordert sie auf, ihre Koffer zu packen und zu gehen - der Song endet als Abschiedserklärung."
+      ],
+      "lyrics": {
+        "real": [
+          "Tú me robaste la vida,",
+          "Recoge tus maletas y vete de aquí",
+          "Veras que me arrepiento por yo decidir,"
+        ],
+        "fake": "Camino por la playa buscando un nuevo comienzo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tkwjbZEEfk8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/zion-y-lennox-hoy-lo-siento-ft--tony-dize.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Zion_%26_Lennox",
+        "https://en.wikipedia.org/wiki/Zion_%26_Lennox",
+        "https://en.wikipedia.org/wiki/Tony_Dize",
+        "https://itunes.apple.com/lookup?id=1811694322",
+        "https://api.lyrics.ovh/v1/Zion%20%26%20Lennox/Hoy%20lo%20Siento"
+      ]
+    },
+    {
+      "id": "yt-gUR6T-xDqQA",
+      "title": "Baila Morena",
+      "artist": "Lucenzo",
+      "year": 2010,
+      "country": "FR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der portugiesischsprachige Track erschien am 13. Dezember 2010 und war die Nachfolgesingle zu zwei großen Dancing-Hits.",
+        "In Frankreich erreichte der Song Platz 9 der Single-Charts und blieb 37 Wochen in den Top 100.",
+        "Das Musikvideo spielt in einer Wüstenlandschaft: Der Sänger folgt verschiedenen Liebesinteressen, repariert sein Auto in einer Garage und wird in einem Restaurant bedient.",
+        "Die Single erschien bei Yanis Records in Zusammenarbeit mit der Universal Music Group.",
+        "Der Refrain fordert die Zuhörer direkt auf, mitzutanzen und mitzumachen - im portugiesischen Original ruft er 'Dança comigo' und 'Vem mexer comigo'."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby vem dançar",
+          "Como tu danças lady vamos gusar",
+          "Se es um sonho eu não quero acordar"
+        ],
+        "fake": "Caminho sozinho pela praia sem ninguém"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gUR6T-xDqQA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/zumba-baila-morena-remix.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Baila_morena_(Lucenzo_song)",
+        "https://en.wikipedia.org/wiki/Lucenzo",
+        "https://en.wikipedia.org/wiki/Emigrante_del_Mundo",
+        "https://en.wikipedia.org/wiki/Baila_Morena",
+        "https://lrclib.net/api/get/947338"
+      ]
+    },
+    {
+      "id": "rock-zz-top-la-grange",
+      "title": "La Grange",
+      "artist": "ZZ Top",
+      "year": 1973,
+      "country": "US",
+      "genre": "Blues Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Raw",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand in den Ardent Studios in Memphis, Tennessee und wurde von Bill Ham produziert.",
+        "Der Text verweist auf ein Etablissement am Ortsrand im Fayette County, das später 'Chicken Ranch' hieß.",
+        "Der Song erschien 1973 auf dem dritten Studioalbum der Band und wurde erst im Januar 1974 als Single veröffentlicht.",
+        "In den USA stieg der Song im Juni 1974 bis auf Platz 41 der Hot 100.",
+        "Der Refrain besteht aus dem rhythmischen 'A haw, haw, haw, haw, a haw'."
+      ],
+      "lyrics": {
+        "real": [
+          "A haw, haw, haw, haw, a haw.",
+          "Have mercy.",
+          "Well, I hear it's fine if you got the time"
+        ],
+        "fake": "Walking down the road, carrying a heavy load of blues"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aB4nH8qx2IM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-zz-top-la-grange.jpg",
+      "packs": [
+        "Rock Anthems",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Grange_(song)",
+        "https://en.wikipedia.org/wiki/ZZ_Top",
+        "https://en.wikipedia.org/wiki/Tres_Hombres",
+        "https://en.wikipedia.org/wiki/Chicken_Ranch",
+        "https://www.songfacts.com/facts/zz-top/la-grange"
+      ]
+    },
+    {
+      "id": "yt-FBMMNBOXins",
+      "title": "Chão de Giz",
+      "artist": "Zé Ramalho",
+      "year": 1978,
+      "country": "BR",
+      "genre": "MPB",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien auf dem ersten Studioalbum des Brasilianers, das 1978 bei Epic/CBS herauskam.",
+        "Später wurde das Stück zum Titellied der brasilianischen Telenovela 'Cordel Encantado'.",
+        "Der Sänger stammt aus dem Nordosten Brasiliens und mischt in seinem Stil Volksmusik, Frevo, Forró und Rock.",
+        "Der Text kreist um Bilder von Einsamkeit: Der Sänger steigt hinab und verteilt Dinge auf einem kreideweißen Boden.",
+        "Gegen Ende kündigt der Sänger an, dass er aufbricht: Er nimmt einen Lastwagen und fährt davon."
+      ],
+      "lyrics": {
+        "real": [
+          "Disparo balas de canhão",
+          "É inútil, pois existe um grão-vizir",
+          "No mais, estou indo embora"
+        ],
+        "fake": "A cidade dorme enquanto eu caminho sozinho"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FBMMNBOXins",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/zé-ramalho-chão-de-giz--ao-vivo-2005---clipe-oficial-.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Z%C3%A9_Ramalho",
+        "https://pt.wikipedia.org/wiki/Z%C3%A9_Ramalho_(%C3%A1lbum)",
+        "https://es.wikipedia.org/wiki/Cordel_Encantado",
+        "https://itunes.apple.com/lookup?id=380227259",
+        "https://lrclib.net/api/get/34710256"
+      ]
+    },
+    {
+      "id": "yt-FUz0a2cl_RM",
+      "title": "Sinônimos",
+      "artist": "Zé Ramalho",
+      "year": 2004,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Brasilianische Sertanejo-Ballade, komponiert von Paulo Sérgio Valle, César Augusto und Cláudio Noam – der Text ist eine poetische Reflexion über die Bedeutung der Liebe.",
+        "Uraufgeführt wurde das Stück von der brasilianischen Duo-Band Chitãozinho & Xororó auf deren Album 'Aqui o Sistema É Bruto' bei Universal Music, produziert von Reinaldo Barriga – der Sänger, um den es hier geht, war als Gast beteiligt.",
+        "Die Single erschien 2004 und war im selben Jahr Soundtrack der Record-Telenovela 'A Escrava Isaura', später auch der Globo-Serie 'A Favorita' (2008).",
+        "2023 nahmen die beiden Hauptsänger das Lied gemeinsam mit Ana Castela neu auf; die Neuaufnahme eröffnete die Globo-Telenovela 'Terra e Paixão'.",
+        "Der Sänger, dessen Live-Fassung von 2005 im Clip zu hören ist, nahm den Titel im März 2005 in São Paulo für sein einziges Solo-Live-Album auf (Laufzeit 6:32, Label Sony BMG) und veröffentlichte ihn 2016 erneut auf 'Voz & Violão - 40 Anos de Música'."
+      ],
+      "lyrics": {
+        "real": [
+          "Quanto o tempo o coração leva pra saber",
+          "No aroma de amores pode haver espinhos",
+          "É como ter mulheres e milhões e ser sozinho"
+        ],
+        "fake": "O fiddle chora baixinho quando o sol se põe no horizonte"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FUz0a2cl_RM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/zé-ramalho-sinônimos--ao-vivo-2005---clipe-oficial-.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Sin%C3%B4nimos",
+        "https://pt.wikipedia.org/wiki/Aqui_o_Sistema_%C3%89_Bruto",
+        "https://pt.wikipedia.org/wiki/Z%C3%A9_Ramalho",
+        "https://itunes.apple.com/lookup?id=1443765575",
+        "https://lrclib.net/api/get/4488030"
+      ]
+    }
+  ]
+}

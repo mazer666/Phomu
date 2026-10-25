@@ -1,0 +1,739 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-nwa-straight-outta-compton",
+      "title": "Straight Outta Compton",
+      "artist": "N.W.A.",
+      "year": 1989,
+      "country": "US",
+      "genre": "Gangsta Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Serious",
+        "Raw"
+      ],
+      "hints": [
+        "Der Song eröffnete das Debütalbum einer US-Westkost-Gruppe, die Gangsta Rap aus der Szene in die Charts holte.",
+        "Dr. Dre intonierte den Intro-Part, die drei Strophen teilten sich Ice Cube, MC Ren und Eazy-E; produziert wurde der Track von Dr. Dre und DJ Yella.",
+        "Der Beat sampelt unter anderem 'West Coast Poplock' von Ronnie Hudson sowie 'Get Me Back on Time, Engine No. 9' von Wilson Pickett.",
+        "Das FBI mahnte das Label Ruthless Records brieflich, weil die Texte Gewalt verherrlichten; MTV sperrte das Musikvideo.",
+        "Das Video, inszeniert von Rupert Wainwright, lief erstmals im Mai 1989; 2015 debütierte der Song auf Platz 38 der Billboard Hot 100 und war damit der erste Top-40-Hit der Band."
+      ],
+      "lyrics": {
+        "real": [
+          "You are now about to witness the strength of street knowledge",
+          "Straight outta Compton, crazy motherfucker named Ice Cube",
+          "When I'm called off, I got a sawed off"
+        ],
+        "fake": "The block stays hot and the sirens never let us sleep"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TMZi25Pq3T8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-nwa-straight-outta-compton.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "80s-pop",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Straight_Outta_Compton_(song)",
+        "https://en.wikipedia.org/wiki/Straight_Outta_Compton",
+        "https://en.wikipedia.org/wiki/N.W.A.",
+        "https://lrclib.net/api/get?artist_name=N.W.A.&track_name=Straight%20Outta%20Compton",
+        "https://music.apple.com/us/song/straight-outta-compton/1478946359"
+      ]
+    },
+    {
+      "id": "yt-aUzW9io-Om0",
+      "title": "Pra Você Guardei o Amor",
+      "artist": "Nando Reis & Ana Cañas",
+      "year": 2009,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein portugiesisches Liebesduett zweier brasilianischer Stimmen, das auf dem Album 'Drês' erschien.",
+        "Der Text erzählt davon, eine Liebe für jemanden aufbewahrt zu haben, die man nie geben konnte.",
+        "Die Sängerin wurde 2019 für den Latin Grammy nominiert, und zwar mit ihrem fünften Album 'Todxs' für das beste zeitgenössische Pop-Album in portugiesischer Sprache.",
+        "Das Album 'Drês' wurde in der brasilianischen Presse als musikalische Rückkehr zu den Klängen der 70er-Jahre beschrieben.",
+        "Der Titel ist zugleich die erste Zeile des Textes und wird im Refrain mehrfach wiederholt."
+      ],
+      "lyrics": {
+        "real": [
+          "Pra você guardei o amor que nunca soube dar",
+          "O amor que tive e vi sem me deixar",
+          "Sentir sem conseguir provar"
+        ],
+        "fake": "Caminhos cruzados na madrugada, o silêncio fala mais que a palavra"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aUzW9io-Om0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/nando-reis---ana-cañas-pra-vocë-guardei-o-amor--nando-reis-e-ana-cañas-.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Nando_Reis",
+        "https://pt.wikipedia.org/wiki/Ana_Cañas",
+        "https://www.gazetadopovo.com.br/caderno-g/nando-reis-se-volta-para-os-anos-70-em-dres-blms2yyw30mb5ekd27tcgndce/",
+        "https://www.youtube.com/watch?v=aUzW9io-Om0",
+        "https://lrclib.net/api/get?artist_name=Nando%20Reis&track_name=Pra%20Voc%C3%AA%20Guardei%20o%20Amor"
+      ]
+    },
+    {
+      "id": "metal-napalm-suffer",
+      "title": "You Suffer",
+      "artist": "Napalm Death",
+      "year": 1987,
+      "country": "GB",
+      "genre": "Grindcore",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Fast",
+        "Funny"
+      ],
+      "hints": [
+        "Das zugehörige Video von 2007 war 1,3 Sekunden lang und brach damit den Weltrekord für das kürzeste Musikvideo; der Track selbst dauert auf der Digital-Version kaum eine Sekunde.",
+        "Er entstand während der Demo-Sessions im März 1986 einer englischen Grindcore-Band und erschien auf deren Debütalbum von 1987.",
+        "Die Band probierte das Stück vor einem Heer von 30 Kindern aus; Justin Broadrick erzählte später, sie hätten es 30 Mal am Stück gespielt.",
+        "1989 kam eine 7-Zoll-Single als Gratiszugabe zur Compilation 'Grindcrusher'; auf der Rückseite lag ein ebenfalls einsenkündiger Song, wodurch die Platte die kürzeste je veröffentlichte Single wurde.",
+        "2023 setzte Rolling Stone den Song auf Platz 72 ihrer Liste der 100 größten Heavy-Metal-Songs aller Zeiten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_-ywSPWu3K8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-napalm-suffer.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "80s-pop"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You_Suffer",
+        "https://en.wikipedia.org/wiki/Scum_(Napalm_Death_album)",
+        "https://en.wikipedia.org/wiki/Napalm_Death",
+        "https://en.wikipedia.org/wiki/Grindcore",
+        "https://lrclib.net/api/get?artist_name=Napalm%20Death&track_name=You%20Suffer"
+      ]
+    },
+    {
+      "id": "jazz-nat-king-cole-love",
+      "title": "L-O-V-E",
+      "artist": "Nat King Cole",
+      "year": 1964,
+      "country": "US",
+      "genre": "Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Positive",
+        "Romantic"
+      ],
+      "hints": [
+        "Ein Buchstabensong der Swing-Ära, der vier Buchstaben des englischen Alphabets als Anfangsbuchstaben von Satzanfängen nutzt.",
+        "Bert Kaempfert komponierte die Melodie, Milt Gabler schrieb den Text, produziert wurde der Song von Lee Gillette; das Trompetensolo spielte Bobby Bryant.",
+        "Aufgenommen wurde das Stück im Juni 1964 für Capitol Records; B-Seite der Single war 'I Don't Want to See Tomorrow'.",
+        "In den USA erreichte die Single Platz 81 der Billboard Hot 100, in Großbritannien wurde sie 2024 nachträglich mit Gold ausgezeichnet.",
+        "Die Fassung von 1964 erschien zuerst als Instrumental auf Bert Kaempferts Album 'Blue Midnight' und wurde später in mehreren Sprachfassungen für den internationalen Markt aufgenommen."
+      ],
+      "lyrics": {
+        "real": [
+          "L is for the way you look at me",
+          "O is for the only one I see",
+          "Love was made for me and you"
+        ],
+        "fake": "Each letter of the word is a promise I keep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gZYtes1RO_w",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/jazz-nat-king-cole-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/L-O-V-E",
+        "https://en.wikipedia.org/wiki/L-O-V-E_(album)",
+        "https://en.wikipedia.org/wiki/Nat_King_Cole",
+        "https://en.wikipedia.org/wiki/Bert_Kaempfert",
+        "https://lrclib.net/api/get?artist_name=Nat%20King%20Cole&track_name=L-O-V-E"
+      ]
+    },
+    {
+      "id": "yt-JFyuOEovTOE",
+      "title": "Unforgettable",
+      "artist": "Nat King Cole",
+      "year": 1951,
+      "country": "US",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Der Song ist eine Ikone des Traditional Pop, wurde von Irving Gordon geschrieben und erschien 1951 als Single bei Capitol Records.",
+        "Der Text beginnt mit dem Wort, das auch den Titel ergibt - unmittelbar danach folgt 'That's what you are', womit die Sängerin die geliebte Person direkt anspricht.",
+        "Die Aufnahme entstand im August 1951 in den Capitol-Studios in Hollywood und dauert gut drei Minuten.",
+        "Vier Jahrzehnte später machte die Tochter des Sängers den Song mit moderner Technik zu einem Duett wieder populär; das Album dazu erreichte Platz 1 in Australien und Kanada und gewann 1992 den Grammy für das Album des Jahres.",
+        "Bei der Grammy-Verleihung 1992 gewann der Song vier weitere Preise: 'Song of the Year', 'Record of the Year', die beste traditionelle Pop-Gesangsdarbietung und das beste Begleitarrangement (Johnny Mandel)."
+      ],
+      "lyrics": {
+        "real": [
+          "Like a song of love that clings to me",
+          "That's why, darling, it's incredible",
+          "Thinks that I am unforgettable too"
+        ],
+        "fake": "The moonlight on the water keeps me thinking of the days we used to know"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JFyuOEovTOE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "jazz-blues"
+      ],
+      "coverUrl": "/covers/nat-king-cole-unforgettable.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Unforgettable_(Nat_King_Cole_song)",
+        "https://en.wikipedia.org/wiki/Unforgettable..._with_Love",
+        "https://en.wikipedia.org/wiki/Nat_King_Cole",
+        "https://en.wikipedia.org/wiki/Natalie_Cole",
+        "https://lrclib.net/api/get?artist_name=Nat%20King%20Cole&track_name=Unforgettable"
+      ]
+    },
+    {
+      "id": "90s-natalie-imbruglia-torn",
+      "title": "Torn",
+      "artist": "Natalie Imbruglia",
+      "year": 1997,
+      "country": "AU",
+      "genre": "Pop Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Classic",
+        "Pop"
+      ],
+      "hints": [
+        "Ist eigentlich ein Cover: Der Song wurde von Scott Cutler, Anne Preven und Phil Thornalley geschrieben und 1993 zuerst von der dänischen Sängerin Lis Sørensen aufgenommen.",
+        "Die Fassung der australischen Sängerin erschien 1997, stand drei Wochen auf Platz 2 der britischen Single-Charts und war in sechs Ländern die Nummer 1.",
+        "Das Video zeigt die Sängerin in einer sich ständig verändernden Filmset-Kulisse.",
+        "Thematisiert die Desillusionierung nach einer gescheiterten Beziehung.",
+        "Refrain: 'I'm all out of faith, this is how I feel'."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm all out of faith, this is how I feel",
+          "Illusion never changed",
+          "You're a little late"
+        ],
+        "fake": "Take a look at me now, there's nothing left but memories"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VV1XWJN3nJo",
+        "spotify": "https://open.spotify.com/track/1Jaah2tmN9Hv81A87KZ1MU",
+        "amazonMusic": "https://music.amazon.com/tracks/B004NHDULW"
+      },
+      "coverUrl": "/covers/90s-natalie-imbruglia-torn.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "90s Unplugged",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Torn_(song)",
+        "https://en.wikipedia.org/wiki/Ednaswap",
+        "https://en.wikipedia.org/wiki/Natalie_Imbruglia",
+        "https://en.wikipedia.org/wiki/Left_of_the_Middle",
+        "https://lrclib.net/api/get?artist_name=Natalie%20Imbruglia&track_name=Torn"
+      ]
+    },
+    {
+      "id": "yt-iKejQrGq04w",
+      "title": "Unwritten",
+      "artist": "Natasha Bedingfield",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Der Song entstand in einer Mischtonart aus F-Mixolydien und wurde an einem Strand in Kalifornien aufgenommen.",
+        "Die britische Sängerin schrieb das Lied mit zwei US-Produzenten, die es auch produzierten – ihr Debütalbum erschien im selben Jahr wie die Single.",
+        "In den USA erreichte der Song Platz 5 der Billboard Hot 100, in Großbritannien Platz 6; die Single wurde in den USA doppelt platinzertifiziert.",
+        "2006 wurde das Lied zur Titelmelodie der MTV-Realityserie 'The Hills' und zählte im US-Radio zu den meistgespielten Stücken des Jahres.",
+        "Zentral im Refrain steht die Zeile 'Today is where your book begins' – die Sängerin erzählte, das Lied sei als Gedicht für ihren 14-jährigen Bruder entstanden."
+      ],
+      "lyrics": {
+        "real": [
+          "Staring at the blank page before you",
+          "Live your life with arms wide open",
+          "Today is where your book begins"
+        ],
+        "fake": "There is a melody hiding somewhere behind the open door"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iKejQrGq04w",
+        "spotify": "https://open.spotify.com/track/6P6ghbY8wMLdMaXb1AuCWr",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/natasha-bedingfield-unwritten.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Unwritten_(song)",
+        "https://en.wikipedia.org/wiki/Unwritten_(album)",
+        "https://en.wikipedia.org/wiki/Natasha_Bedingfield",
+        "https://www.theguardian.com/culture/2024/mar/18/natasha-bedingfield-how-we-made-unwritten",
+        "https://music.apple.com/us/album/unwritten/430514888?i=430514893"
+      ]
+    },
+    {
+      "id": "disney-lion-matata",
+      "title": "Hakuna Matata",
+      "artist": "Nathan Lane, Ernie Sabella, Jason Weaver & Joseph Williams",
+      "year": 1994,
+      "country": "US",
+      "genre": "Soundtrack / Happy / Funny",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Chill"
+      ],
+      "hints": [
+        "Ein Lied aus einem Animationsfilm von 1994, in dem zwei komische Weggefährten einem jungen Löwen das Vergessen der Sorgen predigen.",
+        "Die Musik schrieb Elton John, den Text Tim Rice – beide hatten den afrikanischen Ausdruck in einem Sprachführer gefunden.",
+        "Die beiden Komikerfiguren singen gemeinsam, ein junger und ein erwachsener Löwe ergänzen den Refrain mit ihren Stimmen.",
+        "Der Song war 1995 für den Oscar als bester Originalsong nominiert, verlor aber gegen 'Can You Feel the Love Tonight'; das American Film Institute zählt ihn zu den 100 besten Filmsongs aller Zeiten.",
+        "Der Refrain preist den swahilischen Ausdruck, der 'keine Sorgen' bedeutet, und endet mit den Worten 'It's our problem-free philosophy'."
+      ],
+      "lyrics": {
+        "real": [
+          "It means no worries",
+          "For the rest of your days",
+          "When he was a young warthog"
+        ],
+        "fake": "The sun sinks low and the herd starts to sing"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WeLG1kg3Jz8",
+        "spotify": "https://open.spotify.com/track/5k3U0OGYBccHdKJJu3HrUN",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-lion-hakuna-matata-single.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hakuna_Matata_(song)",
+        "https://en.wikipedia.org/wiki/Hakuna_matata",
+        "https://en.wikipedia.org/wiki/The_Lion_King",
+        "https://en.wikipedia.org/wiki/Tim_Rice",
+        "https://music.apple.com/us/album/hakuna-matata/1445732923?i=1445732931"
+      ]
+    },
+    {
+      "id": "yt-oLBWVRUwdPo",
+      "title": "Christmas Prayers",
+      "artist": "Neil Diamond",
+      "year": 2016,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Nostalgic",
+        "Spiritual",
+        "Soft"
+      ],
+      "hints": [
+        "Ein akustisch arrangiertes Weihnachtslied, das ein US-Sänger 2016 auf einem folkigen Weihnachtsalbum veröffentlichte.",
+        "Die Produzenten des Albums hatten auch das Vorgängeralbum 'Melody Road' produziert; die Aufnahmen entstanden im Stil des 60er-Jahre-Folks mit wenigen Musikern im Kreis um die Mikrofone.",
+        "Der Text erinnert an ein Foto vom Weihnachtstag und an Menschen, die nicht mehr da sind – Großeltern, Eltern und liebe Freunde.",
+        "Das Album erschien 2016 und enthält neben eigenen Kompositionen auch akustische Neuaufnahmen klassischer Weihnachtslieder.",
+        "Im Refrain singt der Künstler, dass die Verstorbenen in seinen weihnachtlichen Wünschen und Träumen weiterleben."
+      ],
+      "lyrics": {
+        "real": [
+          "Reminds me of that photograph",
+          "You're smiling down on me",
+          "My every Christmas prayer"
+        ],
+        "fake": "The snow falls softly on the rooftops while the whole town sleeps"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oLBWVRUwdPo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Schlager & Evergreens",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/neil-diamond-christmas-prayers.jpg",
+      "hintEvidence": [
+        "https://www.rollingstone.com/music/music-news/neil-diamond-preps-folk-inspired-acoustic-christmas-album-124656/",
+        "https://en.wikipedia.org/wiki/A_Neil_Diamond_Christmas",
+        "https://music.apple.com/us/album/christmas-prayers/1440828755?i=1440829290",
+        "https://music.apple.com/us/album/acoustic-christmas/1440828755",
+        "https://lrclib.net/api/get?artist_name=Neil%20Diamond&track_name=Christmas%20Prayers"
+      ]
+    },
+    {
+      "id": "yt-4F_RCWVoL4s",
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "year": 1969,
+      "country": "US",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Der Song erschien 1969 als Single in den USA und war dort wochenlang in den Top 10 der Billboard Hot 100.",
+        "Aufgenommen wurde er im American Sound Studio in Memphis, Tennessee; arrangiert hat Charles Calello.",
+        "Der Text geht auf eine Kindheitserinnerung an die Tochter eines US-Präsidenten zurück; 2007 sang der Künstler das Lied anlässlich ihres 50. Geburtstags.",
+        "In Großbritannien kam die Single erst 1971 auf Platz 8, in den USA wurde sie 1969 mit Gold ausgezeichnet; heute wird sie regelmäßig im Baseballstadion der Boston Red Sox gespielt.",
+        "Der Refrain ruft eine Frau beim Namen und preist die guten Zeiten: 'Good times never seemed so good'."
+      ],
+      "lyrics": {
+        "real": [
+          "And spring became the summer",
+          "And it don't seem so lonely",
+          "I believe they never could"
+        ],
+        "fake": "The evening train is leaving town without me on board tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4F_RCWVoL4s",
+        "spotify": "https://open.spotify.com/track/62AuGbAkt8Ox2IrFFb8GKV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/neil-diamond-sweet-caroline--audio-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sweet_Caroline",
+        "https://en.wikipedia.org/wiki/Neil_Diamond",
+        "https://www.theguardian.com/usa/story/0,,2214419,00.html",
+        "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+        "https://lrclib.net/api/get?artist_name=Neil%20Diamond&track_name=Sweet%20Caroline"
+      ]
+    },
+    {
+      "id": "folk-neil-gold",
+      "title": "Heart of Gold",
+      "artist": "Neil Young",
+      "year": 1972,
+      "country": "CA",
+      "genre": "Folk Rock / Country Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Soft",
+        "Searching",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand 1971 bei den Harvest-Sessions in Nashville und erschien 1972 als Single auf Reprise.",
+        "Im Hintergrund sangen Linda Ronstadt und James Taylor den Chorus, produziert wurde von Elliot Mazer und dem Songwriter selbst.",
+        "Der Text erzählt vom Suchen nach einem reinen Herzen; im Refrain klagt der Sänger darüber, alt zu werden.",
+        "In Kanada stand der Song zweimal auf Platz 1 der RPM-Charts, in den USA blieb er die einzige Nummer-1-Single des Künstlers; Billboard zählt ihn zu den 17 meistgespielten Songs des Jahres 1972.",
+        "2005 wählte das kanadische Radio den Song zum drittbesten kanadischen Lied aller Zeiten, 2006 begleitete Regisseur Jonathan Demme den Künstler mit einem Konzertfilm."
+      ],
+      "lyrics": {
+        "real": [
+          "I've been a miner",
+          "I've been to Hollywood",
+          "And I'm getting old."
+        ],
+        "fake": "Dust on my boots and a pickaxe in my hand"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WZn9QZykx10",
+        "spotify": "https://open.spotify.com/track/1Q1b8eVkUPGlpSArl8JAVw",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/folk-neil-gold.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Schlager & Evergreens",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Heart_of_Gold_(Neil_Young_song)",
+        "https://en.wikipedia.org/wiki/Harvest_(Neil_Young_album)",
+        "https://en.wikipedia.org/wiki/Neil_Young",
+        "https://en.wikipedia.org/wiki/Neil_Young:_Heart_of_Gold",
+        "https://music.apple.com/us/album/heart-of-gold/1015739190?i=1015739546"
+      ]
+    },
+    {
+      "id": "2000s-nelly-dilemma",
+      "title": "Dilemma",
+      "artist": "Nelly ft. Kelly Rowland",
+      "year": 2002,
+      "country": "US",
+      "genre": "R&B / Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Smooth",
+        "Classic"
+      ],
+      "hints": [
+        "Der Beat des US-Rap-Songs interpoliert 'Love, Need and Want You' aus dem Jahr 1983 von Patti LaBelle, geschrieben von Gamble und Huff sowie Bunny Sigler.",
+        "Der Track erschien am 25. Juni 2002 als zweite Single eines Albums und wurde später auch auf das Debütalbum der Sängerin aufgenommen.",
+        "Bekannt ist das Musikvideo, in dem die Antwort auf die Frage der Liebe in einem Tabellenblatt steckt – die Botschaft erscheint erst, wenn man alle Felder per Makro durchsucht.",
+        "Die Single stand 10 nicht zusammenhängende Wochen auf Platz 1 der Billboard Hot 100 und blieb 29 Wochen in den Charts; in Großbritannien fuhrte sie die Hitparade ab Oktober 2002 an.",
+        "Der Refrain wechselt zwischen Rap und Gesang und landet bei den Worten: 'No matter what I do, all I think about is you'."
+      ],
+      "lyrics": {
+        "real": [
+          "I love you and I need you",
+          "No matter what I do",
+          "All I think about is you"
+        ],
+        "fake": "You know my heart is yours, girl, I'm not going nowhere"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8WYHDfJDPDc",
+        "spotify": "https://open.spotify.com/track/0ARK753YaiJbpLUk7z5yIM",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/2000s-nelly-dilemma.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "soul-funk",
+        "Hip Hop Essentials"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dilemma_(Nelly_song)",
+        "https://en.wikipedia.org/wiki/Nellyville",
+        "https://en.wikipedia.org/wiki/Simply_Deep",
+        "https://en.wikipedia.org/wiki/Love,_Need_and_Want_You",
+        "https://lrclib.net/api/get?artist_name=Nelly&track_name=Dilemma"
+      ]
+    },
+    {
+      "id": "yt-nVq_Gua4wsQ",
+      "title": "Maneater",
+      "artist": "Nelly Furtado",
+      "year": 2006,
+      "country": "CA",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "Energy"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Track in Miami; ein Lautsprecherbrand im Kontrollraum des Studios verschreckte die Sängerin so sehr, dass sie sich erst nach mehreren Wochen wieder an den Beat traute.",
+        "Vorbild war das gleichnamige Duett von Hall & Oates aus den 1980ern; produziert wurde der Song von Timbaland und Danja, den Text schrieben die Sängerin selbst, Jim Beanz und das Produzententeam.",
+        "Als erste Single außerhalb Nordamerikas erschien der Song am 26. Mai 2006, das dritte Studioalbum der Sängerin folgte im Juni; Anfang Juni 2006 ging der Track in Großbritannien auf Platz eins.",
+        "Der Song beginnt mit einem kurzen gesprochenen Intro, dann setzt ein treibender Beat im Stil der 80er-Elektro-Synthesizer ein; im Refrain geht es um eine Frau, die ihre Männer arbeiten und ausgeben lässt.",
+        "Das offizielle Video drehte Anthony Mandler in Los Angeles: Nachts folgt die Sängerin ihrem entlaufenen Hund in ein Industriegebäude, tanzt mit einer zwielhaften Party und steht am Ende bei Sonnenaufgang auf dem Dach."
+      ],
+      "lyrics": {
+        "real": [
+          "She's a maneater, make you work hard",
+          "And when she walks, she walks with passion",
+          "When she talks, she talks like she can handle it"
+        ],
+        "fake": "She spends the evening talking to the mirror and calls it a conversation"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PLolag3YSYU",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=nVq_Gua4wsQ"
+        ],
+        "spotify": "https://open.spotify.com/track/0QRtKJGOuFOuLVm2AQk1RD",
+        "amazonMusic": "https://music.amazon.com/tracks/B0HNTXGSSN"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "soul-funk",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/nelly-furtado-maneater.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Maneater_(Nelly_Furtado_song)",
+        "https://www.songfacts.com/facts/nelly-furtado/maneater",
+        "https://en.wikipedia.org/wiki/Loose_(Nelly_Furtado_album)",
+        "https://lrclib.net/api/get?artist_name=Nelly%20Furtado&track_name=Maneater",
+        "https://music.apple.com/us/album/maneater/1442463545?i=1442463828"
+      ]
+    }
+  ]
+}

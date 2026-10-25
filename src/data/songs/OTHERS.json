@@ -1,0 +1,116 @@
+{
+  "songs": [
+    {
+      "id": "yt-t7M89YJAPhM",
+      "title": "Ainda Bem",
+      "artist": "Marisa Monte",
+      "year": 2011,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien 2011 auf einem Studioalbum, das laut einem zeitgenössischen Bericht als das meistverkaufte Album Brasiliens galt.",
+        "Gemeinsam mit Arnaldo Antunes geschrieben und mit Gästen der Band Nação Zumbi aufgenommen.",
+        "Der Text stammt aus der Feder der Sängerin selbst, ursprünglich für die italienische Sängerin Mina, deren Version auf dem Album 'Piccolino' erschien.",
+        "Der Refrain erzählt von einem Herzen, das sich an Einsamkeit gewöhnt hatte, bis die geliebte Person endlich blieb.",
+        "Der portugiesische Titel bedeutet 'Zum Glück', und genau diese Botschaft erklingt in der Soundtrack-Musik der brasilianischen Telenovela 'Amor Eterno Amor'."
+      ],
+      "lyrics": {
+        "real": [
+          "Que agora encontrei você",
+          "O que eu fiz pra merecer você",
+          "Você que me faz cantar assim"
+        ],
+        "fake": "O meu coração já bate por você até o sol raiar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=t7M89YJAPhM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/marisa-monte-ainda-bem.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/O_Que_Voc%C3%AA_Quer_Saber_de_Verdade",
+        "https://en.wikipedia.org/wiki/Marisa_Monte",
+        "https://itunes.apple.com/lookup?id=1511643599",
+        "https://musicbrainz.org/ws/2/release-group/b9d02f7e-16bf-4663-a152-3b838bc264db?fmt=json&inc=releases",
+        "https://lrclib.net/api/get?artist_name=Marisa%20Monte&track_name=Ainda%20Bem"
+      ]
+    },
+    {
+      "id": "yt-MKhuZGk5qZ8",
+      "title": "El Triste",
+      "artist": "José José",
+      "year": 1970,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song entstand für das Festival de la Canción Latina 1970 in Mexiko-Stadt, bei dem der Interpret den dritten Platz belegte, obwohl das Publikum ihn zum Sieger erklären wollte.",
+        "Der Text und die Musik stammen von Roberto Cantoral, der 2010 im Alter von 75 Jahren in Mexiko starb.",
+        "Der spanische Titel bedeutet 'Der Traurige', und noch im selben Jahr wurde der Song zu des Interpreten zweiter Nummer-eins-Hit in den mexikanischen Charts.",
+        "Der als 'Prinz der Canción' bekannte Sänger wurde für seine hohe Stimme und seine Atemtechnik gerühmt; spätere Aufnahmen mit neuem Arrangement und das Duett mit Raúl di Blasio sorgten für weitere Bekanntheit.",
+        "Der Song erschien 1970 auf dem gleichnamigen dritten Studioalbum bei RCA (Mexiko) und gilt heute als kulturelles Icon in Mexiko."
+      ],
+      "lyrics": {
+        "real": [
+          "Qué triste fue decirnos adiós",
+          "Presagiando el final",
+          "La historia de este amor se escribió"
+        ],
+        "fake": "Por siempre vivirás en mi corazón"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MKhuZGk5qZ8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/-hd--jose-jose-el-triste--en-vivo-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/El_Triste",
+        "https://en.wikipedia.org/wiki/Jos%C3%A9_Jos%C3%A9",
+        "https://en.wikipedia.org/wiki/Roberto_Cantoral",
+        "https://musicbrainz.org/ws/2/release/7b37e70a-da05-41ce-b6a9-2b92a934907c?fmt=json&inc=recordings+artist-credits+labels",
+        "https://lrclib.net/api/get?artist_name=Jos%C3%A9%20Jos%C3%A9&track_name=El%20Triste"
+      ]
+    }
+  ]
+}

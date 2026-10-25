@@ -1,0 +1,58 @@
+{
+  "songs": [
+    {
+      "id": "yt-OveahA_AC0U",
+      "title": "Tu Novio No La Hace",
+      "artist": "Ñengo Flow ft. Jory Boy",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Rapper wurde 1981 in San Juan geboren, wuchs in Bayamón auf und trat schon mit 14 Jahren bei einer Gemeinschaftsbewegung in seinem Viertel auf.",
+        "Die Studioalben erschienen über die Jahre verteilt: nach 'Los Reyes del Rap' (2015) folgten 'Real G4 Life, Vol. 3' (2017), 'The Goat' (2020) und 'RealG4Life Vol. 4' (2024).",
+        "Zwei Alben schafften es in die US-Chart 'Top Latin Albums': 'Real G4 Life 2' mit Platz 75, die 2.5-Ausgabe mit Platz 61.",
+        "Das offizielle Audio-Video wurde am 23. August 2016 veröffentlicht, hat dort über 16 Millionen Aufrufe und zeigt, dass neben dem Hauptact ein zweiter Sänger mitrappt.",
+        "Im Refrain adressiert der Sänger die Frauen mit 'baby girl'; die Single läuft knapp viereinhalb Minuten."
+      ],
+      "lyrics": {
+        "real": [
+          "Que se aleje que conmigo estás mejor",
+          "Porque sabes que eres mía",
+          "El no sabe bregar con eso"
+        ],
+        "fake": "Mami, tu viejo se asusta cuando llego yo, le hago olvidar hasta su nombre"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OveahA_AC0U"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ñengo-flow-tu-novio-no-la-hace-ft--jory-boy--official-audio-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ñengo_Flow",
+        "https://music.apple.com/us/artist/%C3%B1engo-flow/889954788",
+        "https://en.wikipedia.org/wiki/Real_G4_Life",
+        "https://www.youtube.com/watch?v=OveahA_AC0U",
+        "https://lrclib.net/api/get/16034386"
+      ]
+    }
+  ]
+}

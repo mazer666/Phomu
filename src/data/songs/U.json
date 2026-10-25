@@ -1,0 +1,580 @@
+{
+  "songs": [
+    {
+      "id": "world-ub40-redwine",
+      "title": "Red Red Wine",
+      "artist": "UB40",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Reggae Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Sad",
+        "Classic"
+      ],
+      "hints": [
+        "Ursprünglich ein Titel des US-Sängers Neil Diamond, dessen akustische Ballade 1967 auf dem Label Bang erschien.",
+        "Eine britische Reggae-Band coverte den Song 1983 für ihr erstes Cover-Album und verband ihn mit gecastetem Reggae-Gesang.",
+        "Nach einer Neuveröffentlichung 1988 stand der Song auch auf Platz 1 der US-Billboard-Hot-100.",
+        "Die Single erreichte im August 1983 Platz 1 der britischen Hitparade und war mit 550.000 Verkäufen der drittbeste Hit des Jahres.",
+        "In Großbritannien verkaufte sich die Single bis 2014 mehr als eine Million Mal; 2023 landete sie auf Platz 134 der erfolgreichsten britischen Singles aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "Red, red wine",
+          "Stay close to me",
+          "Don't let me be alone"
+        ],
+        "fake": "Steel guitar humming in the smoky little bar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zXt56MB-3vc",
+        "spotify": "https://open.spotify.com/track/5lBtQbQJrtNFWyj1wIqQl8",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-ub40-redwine.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Red_Red_Wine",
+        "https://en.wikipedia.org/wiki/Labour_of_Love",
+        "https://musicbrainz.org/ws/2/release/b7d0dffc-5399-4e02-b5a9-1e0ed4f7233d?fmt=json",
+        "https://itunes.apple.com/lookup?id=723495673&entity=song",
+        "https://lrclib.net/api/get?artist_name=UB40&track_name=Red%20Red%20Wine"
+      ]
+    },
+    {
+      "id": "schlager-udo-juergens-wein",
+      "title": "Griechischer Wein",
+      "artist": "Udo Jürgens",
+      "year": 1974,
+      "country": "AT",
+      "genre": "Schlager / Chanson",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Classic",
+        "Sad"
+      ],
+      "hints": [
+        "Ein Titel des österreichischen Sängers und Komponisten, der mit rationalen Texten und großer Melodik den deutschsprachigen Schlager der 1970er-Jahre prägte.",
+        "Der Text erzählt von griechischen Gastarbeitern in Westdeutschland und von ihrem Heimweh in die ferne Heimat.",
+        "Textdichter Michael Kunze nahm ein griechisches Lokal am Rosenheimer Platz in München als Vorbild.",
+        "Die Single erschien im November 1974 beim Label Ariola und erreichte in Deutschland und in der Schweiz Platz eins, in Österreich Platz zwei.",
+        "Später wurde das Stück in Deutschland mit Platin ausgezeichnet (600.000 verkaufte Einheiten) und gilt als eines der bekanntesten Lieder über Migration in der Nachkriegszeit."
+      ],
+      "lyrics": {
+        "real": [
+          "Es war schon dunkel, als ich durch Vorstadtstraßen heimwärts ging",
+          "Da saßen Männer mit braunen Augen und mit schwarzem Haar",
+          "Griechischer Wein ist so wie das Blut der Erde"
+        ],
+        "fake": "Am Hafen sang ein Matrose, bis die Sterne sich verneigten"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D8hAhqDcVRA",
+        "spotify": "https://open.spotify.com/track/6acOaeELSjmb29hNussIXt",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-udo-juergens-wein.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Griechischer_Wein",
+        "https://de.wikipedia.org/wiki/Griechischer_Wein",
+        "https://musicbrainz.org/ws/2/release/7de25c87-902a-3c19-864b-399e6fadf130?fmt=json",
+        "https://itunes.apple.com/lookup?id=1721226578&entity=song",
+        "https://lrclib.net/api/get?artist_name=Udo%20J%C3%BCrgens&track_name=Griechischer%20Wein"
+      ]
+    },
+    {
+      "id": "yt-PSQWUZ8a2Ho",
+      "title": "Dancing with Tears in My Eyes",
+      "artist": "Ultravox",
+      "year": 1984,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Sänger erklärte, die Textvorlage sei der Roman eines australischen Schriftstellers über Menschen gewesen, die auf das Ende der Welt warten.",
+        "Dazu sagte er: Sie wussten, dass es das Ende war, hatten aber noch Zeit zu entscheiden, wie sie ihre letzten Momente verbringen wollten.",
+        "Das Video zeigt keinen Atomkrieg, sondern einen Störfall in einem britischen Kernkraftwerk; Bandmitglieder spielen Arbeiter und Polizisten.",
+        "Am Ende des Videos verbrennen die alten Familienfilme des Erzählers, der zuvor mit seiner Frau tanzt und Champagner trinkt.",
+        "Die Single erreichte 1984 Platz 3 der britischen Hitparade; 1985 war sie das zweite Stück der Band beim Live Aid im Wembley-Stadion."
+      ],
+      "lyrics": {
+        "real": [
+          "Weeping for the memory of a life gone by",
+          "It's five and I'm driving home again",
+          "We drink to forget the coming storm"
+        ],
+        "fake": "The neon lights are burning while the city sleeps in rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PSQWUZ8a2Ho",
+        "spotify": "https://open.spotify.com/track/3or3oEITvJmMwZRYeWSaen",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Electronic & Techno",
+        "Rock Anthems",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ultravox-dancing-with-tears-in-my-eyes.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dancing_with_Tears_in_My_Eyes",
+        "https://en.wikipedia.org/wiki/Lament_(Ultravox_album)",
+        "https://en.wikipedia.org/wiki/On_the_Beach_(novel)",
+        "https://itunes.apple.com/lookup?id=1631051154&entity=song",
+        "https://lrclib.net/api/get?artist_name=Ultravox&track_name=Dancing%20with%20Tears%20in%20My%20Eyes"
+      ]
+    },
+    {
+      "id": "synth-ultravox-vienna",
+      "title": "Vienna",
+      "artist": "Ultravox",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Synthpop / New Wave / Epic",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Komponiert und geschrieben wurde das Stück im Januar 1980; aufgenommen wurde es in den RAK Studios in London.",
+        "Der Text beschreibt eine kurze Liebesaffäre in der österreichischen Hauptstadt.",
+        "Ein dramatisches Klavier, ein Bratschen-Solo, eine Synthesizer-Basslinie und eine Roland-Drum-Machine prägen den Klang.",
+        "Der Produzent Conny Plank riet dem Sänger, die Zeile 'Das bedeutet mir nichts' zu singen - so wurde sie zum wiederkehrenden Refrain.",
+        "Als dritte Single 1981 erschienen, wurde der Titel zum erfolgreichsten Hit der Band und gilt heute als eines der wegweisenden Synthpop-Lieder."
+      ],
+      "lyrics": {
+        "real": [
+          "A voice reaching out in a piercing cry",
+          "The feeling has gone, only you and I",
+          "The warmth of your hand and a cold grey sky"
+        ],
+        "fake": "A midnight tram is rattling down the silent avenue"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EoVBjYpxhF0",
+        "spotify": "https://open.spotify.com/track/7ioy6ppmN9Rn8Pm5axNzUP",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/synth-ultravox-vienna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Electronic & Techno",
+        "Rock Anthems",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Vienna_(Ultravox_song)",
+        "https://en.wikipedia.org/wiki/Vienna_(album)",
+        "https://itunes.apple.com/lookup?id=1630208751&entity=song",
+        "https://lrclib.net/api/get?artist_name=Ultravox&track_name=Vienna",
+        "https://www.youtube.com/watch?v=EoVBjYpxhF0"
+      ]
+    },
+    {
+      "id": "yt-vT0oJWPbIZs",
+      "title": "Un Bellaqueo",
+      "artist": "Ozuna",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel stammt aus der karibischen Party-Sprache und fällt im Refrain mehrfach wieder.",
+        "Die Single erschien 2016 und dauert gut dreieinhalb Minuten.",
+        "Der Text wechselt zwischen spanischen und englischen Wendungen wie 'si escucha mi voice'.",
+        "Eine Strecke rappt über einem tiefen, halb gesprochenen Bass-Flow, in dem es um den Dancefloor und die weibliche Begleitung geht.",
+        "Auf dem Cover ist der Sänger zu sehen, das Stück entstand im karibischen Raum und ist dem Latin-Pop zuzuordnen."
+      ],
+      "lyrics": {
+        "real": [
+          "Un bellaqueo",
+          "E' lo que la beibi pide, quiere que se active",
+          "Beibi, voy por ahí"
+        ],
+        "fake": "Caminando por la playa con tu hermano menor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vT0oJWPbIZs",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/un-bellaqueo-ozuna-feat--pusho--alexio---juanka-el-problematik.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/lookup?id=1470495641&entity=song",
+        "https://musicbrainz.org/ws/2/release/25348a01-df5e-405d-9ba9-8fc93f64eba9?fmt=json",
+        "https://lrclib.net/api/get?artist_name=Ozuna&track_name=Un%20Bellaqueo",
+        "https://www.youtube.com/watch?v=vT0oJWPbIZs",
+        "https://music.apple.com/us/album/1470495639"
+      ]
+    },
+    {
+      "id": "yt-kbn4lB07gm0",
+      "title": "Una Cita Remix",
+      "artist": "Alkilados",
+      "year": 2014,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein spanischer Song, erzählt von einem jungen Mann, der ein Mädchen um ein Treffen bittet.",
+        "Das Original stammt von einer kolumbianischen Partyband und erschien 2014 auf dem Album 'Pura Playa'.",
+        "Die überarbeitete Fassung erschien noch im selben Jahr und holte weitere Gäste ins Boot, jeder bringt seinen eigenen Flow mit.",
+        "Im Refrain bitten die Freunde die Auserwählte, ihm zu verhelfen und ihn zu verlieben.",
+        "Der Titel bedeutet so viel wie 'ein Treffen' und ist der wörtliche Anlass der ganzen Geschichte."
+      ],
+      "lyrics": {
+        "real": [
+          "Llevo mucho tiempo buscando tener una cita con ella",
+          "Díganle que ya le he escrito mil canciones",
+          "Si sales conmigo, una aventura te daré"
+        ],
+        "fake": "Bailando en el techo con la luna encendida"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kbn4lB07gm0",
+        "spotify": "https://open.spotify.com/track/3Ke1NVElHXQpBeuWz6QOt8",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/una-cita-remix-alkilados--videoselfie-oficial--ft--nicky-jam--j--alvarez---roockie.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/lookup?id=1474403717&entity=song",
+        "https://musicbrainz.org/ws/2/release/b19f9ad3-c98d-46fb-9c44-5daaf86caec8?fmt=json",
+        "https://api.lyrics.ovh/v1/Alkilados/Una%20Cita%20Remix",
+        "https://www.youtube.com/watch?v=kbn4lB07gm0",
+        "https://es.wikipedia.org/wiki/Alkilados"
+      ]
+    },
+    {
+      "id": "disco-under-slippy",
+      "title": "Born Slippy (Nuxx)",
+      "artist": "Underworld",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Techno / Progressive House",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Epic",
+        "Night",
+        "Nightlife"
+      ],
+      "hints": [
+        "Der Text entstand nach einer Nacht mit viel Bier in der Wardour Street im Londoner Stadtteil Soho; der Sänger notierte dabei Fragmente, in denen er sich selbst auf 'ein Stück Fleisch' reduzierte.",
+        "Als er bei der Aufnahme seine Stelle im Text verlor, sang er dieselbe Zeile einfach mehrfach hintereinander - so entstand das markersetzende 'lager, lager, lager, lager'.",
+        "Der Track erschien 1995 als B-Seite zu einer anderen Single und wurde 1996 in Großbritannien als eigenständige Single neu ausgegeben, wo er Platz 2 der Hitparade erreichte.",
+        "Die Band verweigerte den Einsatz im britischen Film 'Trainspotting' zunächst, weil sie ihre Musik in negativen Club-Darstellungen nicht mochten; Regisseur Danny Boyle überzeugte sie schließlich mit einem Filmausschnitt.",
+        "Der Song ist Soundtrack des Kultfilms 'Trainspotting' und wurde von 'Melody Maker' zur Single des Jahres 1996 gekürt."
+      ],
+      "lyrics": {
+        "real": [
+          "Drive boy, dog boy, dirty numb angel boy",
+          "In the doorway boy, she was a lipstick boy",
+          "Lager, lager, lager, lager"
+        ],
+        "fake": "Shine boy, sound boy, the whole club turns blue"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XiMrrleH_hI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/disco-under-slippy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Born_Slippy_(Nuxx)",
+        "https://en.wikipedia.org/wiki/Second_Toughest_in_the_Infants",
+        "https://en.wikipedia.org/wiki/Trainspotting_(soundtrack)",
+        "https://www.songfacts.com/facts/underworld/born-slippy",
+        "https://itunes.apple.com/lookup?id=1440837860&entity=song"
+      ]
+    },
+    {
+      "id": "yt--EeH7ox2U_c",
+      "title": "Late Night Jawn",
+      "artist": "Fetty Wap",
+      "year": 2016,
+      "country": "US",
+      "genre": "Trap / Hip-Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Party Anthem",
+        "Energy"
+      ],
+      "hints": [
+        "Die Aufnahme erschien im November 2016 auf einem Mixprojekt mit genau 19 Titeln.",
+        "Der Rapper wurde 1991 in Paterson im US-Bundesstaat New Jersey geboren und wuchs dort auf.",
+        "Sein Künstlername setzt sich aus einem Slang-Ausdruck für Geld und einer Hommage an das Kürzel eines anderen US-Rappers zusammen.",
+        "Bekannt wurde er 2014 mit 'Trap Queen', das auf Platz 2 der US-Billboard-Hot-100-Charts steuerte.",
+        "Der gesuchte Track ist die neunzehnte Nummer des Mixprojekts; das Video dazu wurde Ende November 2016 von einem Kanal veröffentlicht, der die Titel eines Albums durchnummeriert."
+      ],
+      "lyrics": {
+        "real": [
+          "Lurking on your ig baby damn I'm glad you got me",
+          "The club about to end so I know she 'bout to text me",
+          "She heard I'm the man so you know you couldn't neck shorty"
+        ],
+        "fake": "Neon city sleeping while I stack the bands up in my hand"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-EeH7ox2U_c",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/fetty-wap-late-night-jawn.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fetty_Wap",
+        "http://www.xxlmag.com/news/2016/11/fetty-wap-zoovier-mixtape/",
+        "https://musicbrainz.org/ws/2/recording/cb3c30da-37b6-4d09-9b57-574895b776c9?fmt=json&inc=releases+artist-credits",
+        "https://www.songfacts.com/facts/fetty-wap/trap-queen",
+        "https://www.youtube.com/watch?v=-EeH7ox2U_c"
+      ]
+    },
+    {
+      "id": "yt-GxBSyx85Kp8",
+      "title": "Yeah! ft. Lil Jon, Ludacris",
+      "artist": "Usher",
+      "year": 2004,
+      "country": "US",
+      "genre": "R&B / Crunk",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Party Anthem",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die Produktionsgrundlage des Titels war ursprünglich für einen anderen Rapper gedacht: Sie wurde zu 'Freek-a-Leek' von Petey Pablo, bevor der Produzent einen neuen Beat für den Sänger baute.",
+        "Über die Weihnachtspause leakte der Produzent den Track an DJs im ganzen Land - schon im Januar lief er auf Tausenden Radiostationen, obwohl das Label noch nicht beteiligt war.",
+        "Die Mischung aus Crunk und R&B taufte der Produzent 'crunk&B'; das Stück ist in G-Moll mit 105 Schlägen pro Minute gehalten.",
+        "Das Musikvideo wurde von Mr. X in einem Club mit blauen Lasern inszeniert; im Refrain fordert die Frau den Sänger mit 'come get me' und 'baby let's go' heraus.",
+        "Der Song erschien im Januar 2004 als erste Single des Albums 'Confessions', stand danach zwölf Wochen an der Spitze der US-Billboard-Hot-100 und gewann einen Grammy für die beste Rap-/Gesangskollaboration."
+      ],
+      "lyrics": {
+        "real": [
+          "Up in the club with my homies",
+          "Keep it down on the low-key (low-key)",
+          "I seen shawty, she was checkin' up on me"
+        ],
+        "fake": "We cruise the boulevard at midnight in a brand new chrome convertible"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GxBSyx85Kp8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/usher-yeah---ft--lil-jon--ludacris.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Yeah!_(Usher_song)",
+        "https://en.wikipedia.org/wiki/Confessions_(Usher_album)",
+        "https://www.songfacts.com/facts/usher/yeah",
+        "https://itunes.apple.com/lookup?id=386153478&entity=song",
+        "https://lrclib.net/api/get/33481244"
+      ]
+    },
+    {
+      "id": "yt--aWoTDsa56k",
+      "title": "Usted no sabe",
+      "artist": "Alexandre Pires",
+      "year": 2017,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Latin Heat",
+        "Romantic",
+        "Sad"
+      ],
+      "hints": [
+        "Eine Ballade über den Verlust: Der Text schildert, was es bedeutet, eine geliebte Person zu verlieren, und kreist dabei immer wieder um den Schmerz des Abschieds.",
+        "Der Refrain malt den Verlust als Abgrund: Die Zurückgelassene beschreibt, wie sich das endlose Fallen anfühlt und wie ein Abgrund ohne Hoffnung.",
+        "Die Aufnahme erschien auf dem Album 'Necesidad', das ältere Titel des brasilianischen Sängers bündelt.",
+        "Der Sänger wurde 1976 in Uberlândia im brasilianischen Bundesstaat Minas Gerais geboren und war zunächst Frontmann der Pagode-Gruppe 'Só Pra Contrariar'.",
+        "Die spanischsprachige Ballade wurde später mehrfach neu aufgenommen, unter anderem von Salsa-Interpreten und von Karaoke-Produzenten."
+      ],
+      "lyrics": {
+        "real": [
+          "Usted no sabe que se siente perder,",
+          "Como ha destrozado a este corazón,",
+          "Con el sonido de su voz,"
+        ],
+        "fake": "Te esperé en la puerta mientras el sol se escondía"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-aWoTDsa56k",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/usted-no-sabe-alexandre-pires--letra--lyrics-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Alexandre_Pires",
+        "https://en.wikipedia.org/wiki/Alexandre_Pires_discography",
+        "https://itunes.apple.com/lookup?id=1230618917&entity=song",
+        "https://lrclib.net/api/get/9955259",
+        "https://itunes.apple.com/search?term=Alexandre+Pires+Usted+No+Sabe&limit=20&entity=song"
+      ]
+    }
+  ]
+}

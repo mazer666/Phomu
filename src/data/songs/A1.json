@@ -1,0 +1,697 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-tribe-ickit",
+      "title": "Can I Kick It?",
+      "artist": "A Tribe Called Quest",
+      "year": 1990,
+      "country": "US",
+      "genre": "Jazz Rap",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Intelligent"
+      ],
+      "hints": [
+        "Aufgenommen 1989, als die drei Bandmitglieder erst 18 oder 19 Jahre alt waren.",
+        "Der Beat sampelt u.a. 'Walk on the Wild Side' von Lou Reed, 'What a Waste' von Ian Dury and the Blockheads und 'Spinning Wheel' von Dr. Lonnie Smith.",
+        "Die Single erschien im Oktober 1990 bei Jive Records als dritte Single des Debütalbums; auf der B-Seite steht 'If the Papes Come'.",
+        "Das Video drehte Jim Swaffield in New York, zeigt unter anderem Mitglieder von De La Soul und ein fliegendes Plattenspiel für das Sample.",
+        "Der Call-and-response-Refrain beantwortet die Titelzeile mit 'Yes you can!' - 2023 zählte Billboard den Song zu den besten Popsongs, die es nie in die Hot 100 schafften."
+      ],
+      "lyrics": {
+        "real": [
+          "Can I kick it? (Yes, you can!)",
+          "Well, I'm gone (go on then!)",
+          "Rock and roll to the beat of the funk fuzz"
+        ],
+        "fake": "Pull the record on and let the whole room unwind"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=O3pyCGnZzYA",
+        "spotify": "https://open.spotify.com/track/1gSDTZHemEViEBiXysrlo0"
+      },
+      "coverUrl": "/covers/hiphop-tribe-ickit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Can_I_Kick_It%3F",
+        "https://en.wikipedia.org/wiki/People%27s_Instinctive_Travels_and_the_Paths_of_Rhythm",
+        "https://en.wikipedia.org/wiki/Walk_on_the_Wild_Side_(Lou_Reed_song)",
+        "https://en.wikipedia.org/wiki/Lou_Reed",
+        "https://lrclib.net/api/get?artist_name=A%20Tribe%20Called%20Quest&track_name=Can%20I%20Kick%20It%3F"
+      ]
+    },
+    {
+      "id": "synth-aha-take",
+      "title": "Take On Me",
+      "artist": "a-ha",
+      "year": 1985,
+      "country": "NO",
+      "genre": "Synthpop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Classic",
+        "Electronic",
+        "Energy",
+        "Happy",
+        "Neon Night",
+        "Nostalgic",
+        "Popular",
+        "Road Trip",
+        "Upbeat"
+      ],
+      "hints": [
+        "Das Musikvideo entstand in Rotoskopie-Technik: rund 3.000 Einzelbilder wurden Bild für Bild nachgezeichnet - 16 Wochen Arbeit.",
+        "Die norwegische Band formierte sich 1982 in Oslo und zog dann nach London, um Karriere zu machen.",
+        "Die erste Version von 1984 floppte ebenso wie die erste der beiden Veröffentlichungen 1985 - erst die zweite Single-Auflage mit dem neuen Video wurde zum Welthit.",
+        "In den USA blieb der Song 27 Wochen in den Hot 100, erreichte Platz 1 in der Ausgabe vom 19. Oktober 1985 und war die Nummer 10 der Jahrescharts 1985.",
+        "Das berühmte Video wechselt zwischen gezeichneten Comic-Sequenzen und Realfilm; die Schauspielerin Bunty Bailey wurde nach den Drehtagen die Freundin des Sängers."
+      ],
+      "lyrics": {
+        "real": [
+          "Today is another day to find you",
+          "Take on me (take on me)",
+          "I'll be coming for your love, okay?"
+        ],
+        "fake": "Racing through the city in a midnight blue car"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=djV11Xbc914",
+        "spotify": "https://open.spotify.com/track/2WfaOiMkCvy7F5fcp2zZ8L"
+      },
+      "coverUrl": "/covers/synth-aha-take.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Global Hits 1950-2026",
+        "80s-pop",
+        "youtube-import",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Take_On_Me",
+        "https://en.wikipedia.org/wiki/A-ha",
+        "https://en.wikipedia.org/wiki/Hunting_High_and_Low",
+        "https://en.wikipedia.org/wiki/Rotoscoping",
+        "https://lrclib.net/api/get?artist_name=a-ha&track_name=Take%20On%20Me"
+      ]
+    },
+    {
+      "id": "legends-abba-dancing-queen",
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "year": 1976,
+      "country": "SE",
+      "genre": "Disco / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "80s Flashback",
+        "Classic",
+        "Dance",
+        "Dance Floor",
+        "Happy",
+        "Legends & Classics",
+        "Nostalgic",
+        "Popular",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "2015 wurde das Stück in die Grammy Hall of Fame aufgenommen, 2022 erhielt es den BMI-Million-Air-Award.",
+        "1993 sang die Frontfrau das Lied a cappella - gemeinsam mit dem Vokalensemble The Real Group - zum 50. Geburtstag der schwedischen Königin.",
+        "1980 nahm die Band eine spanische Fassung mit dem Titel 'Reina Danzante' auf, die später auch 'La Reina del Baile' hieß.",
+        "Das Stück erschien 1976 als erste Single des vierten Albums 'Arrival', blieb in Schweden 14 Wochen auf Platz 1 und erreichte in den USA als einziger Nummer-eins-Hit der Band Platz 1.",
+        "Am 18. Juni 1976 wurde es bei einer Gala in der Königlichen Oper live gespielt - einen Tag vor der Hochzeit des schwedischen Königs."
+      ],
+      "lyrics": {
+        "real": [
+          "You can dance, you can jive",
+          "See that girl, watch that scene",
+          "Friday night and the lights are low"
+        ],
+        "fake": "Saturday lights and you are bright and flow, fading on a stair to show"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xFrGuyw1V8s",
+        "spotify": "https://open.spotify.com/track/0GjEhVFGZW8afUYGChu3Rr"
+      },
+      "coverUrl": "/covers/legends-abba-dancing-queen.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame",
+        "https://en.wikipedia.org/wiki/Dancing_Queen",
+        "https://en.wikipedia.org/wiki/ABBA",
+        "https://en.wikipedia.org/wiki/Arrival_(ABBA_album)",
+        "https://lrclib.net/api/get?artist_name=ABBA&track_name=Dancing%20Queen"
+      ]
+    },
+    {
+      "id": "yt-2R0a3mCRSpU",
+      "title": "Poison Arrow",
+      "artist": "ABC",
+      "year": 1982,
+      "country": "GB",
+      "genre": "New Wave/Synth-Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Electronic"
+      ],
+      "hints": [
+        "Das Video zeigt den Sänger in drei Rollen - Opernpatron, Kurierjunge und Bandleader; die weibliche Hauptrolle spielte Lisa Vanderpump, später 'Real Housewives'-Darstellerin.",
+        "Produzent war Trevor Horn; am Saxophon und an der Trompete spielten unter anderem Stephen Singleton und John Thirkell.",
+        "Die Single erschien in Großbritannien am 15. Februar 1982 als zweite Single des Debütalbums 'The Lexicon of Love'.",
+        "Das Stück erreichte Platz 6 der britischen Hitparade, in den USA Platz 25 der Billboard Hot 100.",
+        "Der Refrain erzählt von einem Treffer mitten ins Herz - zuvor fragt der Text: 'Who broke my heart? You did, you did'."
+      ],
+      "lyrics": {
+        "real": [
+          "Who broke my heart? You did, you did",
+          "Shoot that poison arrow to my heart",
+          "I thought you loved me, but it seems you don't care"
+        ],
+        "fake": "Underneath the neon rain, I whisper once again to your name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2R0a3mCRSpU",
+        "spotify": "https://open.spotify.com/track/7abGerACQx9G1OBqHYFKAb"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/abc-poison-arrow.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Poison_Arrow",
+        "https://en.wikipedia.org/wiki/The_Lexicon_of_Love",
+        "https://en.wikipedia.org/wiki/ABC_(band)",
+        "https://en.wikipedia.org/wiki/Trevor_Horn",
+        "https://lrclib.net/api/get?artist_name=ABC&track_name=Poison%20Arrow"
+      ]
+    },
+    {
+      "id": "yt-fOVLTlcKEH8",
+      "title": "Drifting",
+      "artist": "Tiësto",
+      "year": 2023,
+      "country": "NL",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Der niederländische DJ veröffentlichte den Track 2023 zusammen mit der Sängerin Poppy Baskcomb.",
+        "Der Song erschien bereits im Frühjahr 2023 auch als Mix auf dem DJ-Mix-Album 'DRIVE' des Künstlers.",
+        "2024 erschienen Remixes von SISTEK und Koven, 2025 folgte eine Version von Arodes.",
+        "Der Refrain kreist um Haltlosigkeit und Verlust: 'say that you won't be there'.",
+        "Der Künstler, geboren 1969 in Breda, gilt als einer der erfolgreichsten DJs der Welt und betreibt mit Musical Freedom sein eigenes Label."
+      ],
+      "lyrics": {
+        "real": [
+          "If I'm drifting, say that you won't be there",
+          "Hope you listen, say your name as my breath",
+          "In the deep end, head above to breathe air"
+        ],
+        "fake": "Burning up the midnight, chasing shadows in the neon light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fOVLTlcKEH8",
+        "spotify": "https://open.spotify.com/track/4EmH2iRucAgCOnhuJRotUi"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/above---beyond-drifting.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ti%C3%ABsto",
+        "https://music.apple.com/us/album/drifting/1691285451",
+        "https://music.apple.com/us/album/drifting-mixed/1694379326",
+        "https://music.apple.com/us/album/drifting-remixes/1761603925",
+        "https://lrclib.net/api/get?artist_name=Ti%C3%ABsto&track_name=Drifting"
+      ]
+    },
+    {
+      "id": "rock-acdc-back-black",
+      "title": "Back In Black",
+      "artist": "AC/DC",
+      "year": 1980,
+      "country": "AU",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Raw",
+        "Classic"
+      ],
+      "hints": [
+        "Der Text entstand in wenigen Minuten: Die Band verlangte eine Zeile, die 'nicht morbid' sein sollte, sondern eine Feier für den verstorbenen Frontmann.",
+        "Aufgenommen wurde das Album sieben Wochen lang von April bis Mai 1980 in den Compass Point Studios auf den Bahamas, produziert von Mutt Lange.",
+        "Das schwarze Cover war ein Zeichen der Trauer: Der im Februar 1980 verstorbene Sänger Bon Scott war die treibende Kraft der Band.",
+        "1981 erreichte der Song Platz 37 der Billboard Hot 100; 2012 kam er in Großbritannien auf Platz 27 und in Australien auf Platz 65.",
+        "Das gleichnamige Album gilt als zweitmeistverkaufte Album der Musikgeschichte - rund 50 Millionen verkaufte Exemplare weltweit."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm just looking at the sky 'cause it's getting me high",
+          "Forget the hearse, 'cause I'll never die",
+          "I got nine lives, cat's eyes"
+        ],
+        "fake": "Gotta leave a light on when the thunder rolls in"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pAgnJDJN4VA",
+        "spotify": "https://open.spotify.com/track/08mG3Y1vljYA6bvDt4Wqkj"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-acdc-back-black.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Back_in_Black_(song)",
+        "https://en.wikipedia.org/wiki/Back_in_Black",
+        "https://en.wikipedia.org/wiki/Bon_Scott",
+        "https://en.wikipedia.org/wiki/Brian_Johnson",
+        "https://lrclib.net/api/get?artist_name=AC%2FDC&track_name=Back%20in%20Black"
+      ]
+    },
+    {
+      "id": "rock-acdc-highway-to-hell",
+      "title": "Highway to Hell",
+      "artist": "AC/DC",
+      "year": 1979,
+      "country": "AU",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Rock"
+      ],
+      "hints": [
+        "Ein australisches Hard-Rock-Duo legte 1979 sein sechstes Studioalbum vor; das Lied eröffnet die Platte und erschien am selben Tag als Single.",
+        "Aufgenommen wurde von Ende März bis Mitte April 1979 in einem Londoner Studio - mit dem neuen Produzenten arbeitete die Band dort rund 15 Stunden am Tag.",
+        "Der Titel ist eine saloppe Umschreibung fürs Tourenleben: Angus Young sprach davon, ständig 'zur Hölle' unterwegs zu sein.",
+        "Die Single blieb 45 Wochen in den deutschen Hitparade und erreichte dort in ihrer 19. Woche Platz 30; in den USA kam sie auf Platz 47 der Billboard Hot 100.",
+        "Es war das letzte Album des charismatischen Sängers Bon Scott, der nur gut sechs Monate später tot in einem Auto aufgefunden wurde; sein Nachfolger Brian Johnson sang seine ersten Studioaufnahmen mit der Band erst auf dem Nachfolgealbum."
+      ],
+      "lyrics": {
+        "real": [
+          "Livin' easy, lovin' free",
+          "Askin' nothin', leave me be",
+          "Don't need reason, don't need rhyme"
+        ],
+        "fake": "Racing through the desert night with the sunrise out of sight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=l482T0yNkeo",
+        "spotify": "https://open.spotify.com/track/2zYzyRzz6pRmhPzyfMEC8s",
+        "amazonMusic": "https://music.amazon.com/tracks/B00O6HNI2K"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-acdc-highway-to-hell.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Highway_to_Hell_(song)",
+        "https://en.wikipedia.org/wiki/Highway_to_Hell",
+        "https://en.wikipedia.org/wiki/Bon_Scott",
+        "https://en.wikipedia.org/wiki/Brian_Johnson",
+        "https://lrclib.net/api/get?artist_name=AC%2FDC&track_name=Highway%20to%20Hell"
+      ]
+    },
+    {
+      "id": "yt-FpkawF5GWMI",
+      "title": "All That She Wants",
+      "artist": "Ace of Base",
+      "year": 1992,
+      "country": "SE",
+      "genre": "Reggae-Pop/Eurodance",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Dance"
+      ],
+      "hints": [
+        "Ein schwedisches Pop-Quartett aus Göteborg legte 1992 sein Debütalbum vor; der Song erschien im August 1992 in Skandinavien als zweite Single des Albums.",
+        "Das Schlagzeug-Riff war nach 'Another Mother' von Kayo Shekoni inspiriert - daher der ungewöhnliche Reggae-Pop-Rhythmus im europäischen Mainstream.",
+        "Zwei Bandmitglieder schrieben den Text, Denniz Pop produzierte; aufgenommen wurde im August 1992 im SweMix-Studio in Stockholm, die B-Seite hieß 'Fashion Party'.",
+        "In Dänemark, Deutschland, Großbritannien und Australien stand die Single auf Platz 1, in den USA kam sie auf Platz 2 der Billboard Hot 100; das Video drehte Matt Broadley in Kopenhagen.",
+        "Im Text ist 'Baby' ein Synonym für 'Freund' - erzählt wird von einer Frau mit wechselnden Liebschaften; das Debütalbum wurde 1995 vom Guinness-Buch als bestes Debütalbum der Musikgeschichte anerkannt."
+      ],
+      "lyrics": {
+        "real": [
+          "She leads a lonely life",
+          "Beware of what is flashing in her eyes",
+          "It is a night for passion"
+        ],
+        "fake": "Dancing on the sunlit shore, looking for a little more"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FpkawF5GWMI",
+        "spotify": "https://open.spotify.com/track/6kWJvPfC4DgUpRsXKNa9z9",
+        "amazonMusic": "https://music.amazon.com/tracks/B013CHW07O"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/ace-of-base-all-that-she-wants.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/All_That_She_Wants",
+        "https://en.wikipedia.org/wiki/Happy_Nation",
+        "https://en.wikipedia.org/wiki/The_Sign_(Ace_of_Base_album)",
+        "https://en.wikipedia.org/wiki/Ace_of_Base",
+        "https://lrclib.net/api/get?artist_name=Ace%20of%20Base&track_name=All%20That%20She%20Wants"
+      ]
+    },
+    {
+      "id": "disney-encanto-bruno",
+      "title": "We Don't Talk About Bruno",
+      "artist": "Adassa, Stephanie Beatriz, Mauro Castillo, Rhenzy Feliz, Carolina Gaitán, Diane Guerrero",
+      "year": 2021,
+      "country": "US",
+      "genre": "Soundtrack / Salsa / Pop",
+      "difficulty": "hard",
+      "mood": [
+        "Complex",
+        "Catchy",
+        "Electronic"
+      ],
+      "hints": [
+        "Aus einem Disney-Animationsfilm von 2021 stammt die einzige Single des Soundtracks; Musik und Text schrieb Lin-Manuel Miranda.",
+        "Jede Strophe erzählt aus der Sicht einer anderen Figur der Familie Madrigal; alle singen dieselbe Akkordfolge in völlig anderem Rhythmus.",
+        "Der Rhythmus ist von Cha-Cha-Chá und Salsa geprägt, dazu kommen kubische Folk- und Hip-Hop-Elemente; die Strophe von Dolores wird ASMR-artig geflüstert.",
+        "Die Single stand fünf Wochen auf Platz 1 der Billboard Hot 100 und führte sieben Wochen die britische Hitparade an - der erste eigene Disney-Song auf Platz 1.",
+        "2023 gewann der Song den Grammy für 'Best Song Written for Visual Media'; bei den Oscars 2022 wurde er live performed, obwohl Disney stattdessen 'Dos Oruguitas' eingereicht hatte."
+      ],
+      "lyrics": {
+        "real": [
+          "It was my wedding day",
+          "We were getting ready",
+          "And there wasn't a cloud in the sky"
+        ],
+        "fake": "Through the glowing hallway nobody says his name"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bvWRMAU6V-c",
+        "spotify": "https://open.spotify.com/track/52xJxFP6TqMuO4Yt0eOkMz",
+        "amazonMusic": "https://music.amazon.com/tracks/B09LSHQ3GR"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-encanto-bruno.jpg",
+      "isOneHitWonder": false,
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/We_Don%27t_Talk_About_Bruno",
+        "https://en.wikipedia.org/wiki/Encanto",
+        "https://en.wikipedia.org/wiki/Lin-Manuel_Miranda",
+        "https://en.wikipedia.org/wiki/65th_Annual_Grammy_Awards",
+        "https://api.lyrics.ovh/v1/Encanto/We%20Don%27t%20Talk%20About%20Bruno"
+      ]
+    },
+    {
+      "id": "finale-adele-easy",
+      "title": "Easy On Me",
+      "artist": "Adele",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Pop / Soul Ballade",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Modern"
+      ],
+      "hints": [
+        "Nach sechs Jahren Pause erschien am 15. Oktober 2021 die erste Single des vierten Albums '30'; geschrieben und produziert hat sie Greg Kurstin.",
+        "Der Text kreist um die Scheidung der Sängerin und bittet ihren Sohn, ihren Ex-Mann und sich selbst um Verständnis; die Verszeilen entstanden laut Sängerin unter der Dusche.",
+        "Das Stück ist eine Ballade, die nahezu ohne Schlagzeug beginnt - nur Klavier, das sich bis zum Refrain steigert.",
+        "In Großbritannien startete sie mit 217.300 verkauften Einheiten auf Platz 1, in den USA blieb sie zehn Wochen an der Spitze der Billboard Hot 100 - die längste Chartkarriere der Sängerin dort.",
+        "2022 gewann der Song den Brit Award für 'Song of the Year', 2023 den Grammy für 'Best Pop Solo Performance'; in Großbritannien war er zudem mit 3,2 Millionen Spotify-Streams der meistgestreamte Song eines Tages."
+      ],
+      "lyrics": {
+        "real": [
+          "There ain't no gold in this river",
+          "Go easy on me, baby",
+          "Didn't get the chance to"
+        ],
+        "fake": "Please come and find me by the river tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=U3ASj1L6_sY",
+        "spotify": "https://open.spotify.com/track/0gplL1WMoJ6iYaPgMCL0gX",
+        "amazonMusic": "https://music.amazon.com/tracks/B09J1HT2D3"
+      },
+      "coverUrl": "/covers/finale-adele-easy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Easy_on_Me",
+        "https://en.wikipedia.org/wiki/30_(album)",
+        "https://en.wikipedia.org/wiki/Adele",
+        "https://en.wikipedia.org/wiki/65th_Annual_Grammy_Awards",
+        "https://lrclib.net/api/get?artist_name=Adele&track_name=Easy%20On%20Me"
+      ]
+    },
+    {
+      "id": "yt-YQHsXMglC9A",
+      "title": "Hello",
+      "artist": "Adele",
+      "year": 2015,
+      "country": "GB",
+      "genre": "Pop/Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional"
+      ],
+      "hints": [
+        "Am 23. Oktober 2015 erschien die Lead-Single des dritten Albums '25'; geschrieben und produziert hat sie Greg Kurstin, aufgenommen wurde sie in den Metropolis Studios in London.",
+        "Das Stück ist eine Soul-Piano-Ballade in f-Moll mit 79 BPM; geschrieben wurde es in Chiswick, obwohl die Sängerin ihre Songs sonst zu Hause entstehen lässt.",
+        "Der Text kreist von Nostalgie und Reue; die Refrainzeile verweist laut der Sängerin auf die andere Seite des Erwachsenwerdens.",
+        "In Großbritannien startete der Song mit 333.000 verkauften Einheiten auf Platz 1; in den USA debütierte er ebenfalls auf Platz 1 und blieb dort zehn Wochen - der längste Charterfolg der Sängerin in den USA.",
+        "Das Video drehte Xavier Dolan und erreichte in 24 Stunden 27,7 Millionen Views - ein Vevo-Rekord; 2017 gewann der Song drei Grammys, darunter 'Song of the Year'."
+      ],
+      "lyrics": {
+        "real": [
+          "I was wondering if after all these years you'd like to meet",
+          "But when I call, you never seem to be home",
+          "To tell you I'm sorry for breaking your heart"
+        ],
+        "fake": "I keep your picture by the door, counting all the days since you left"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YQHsXMglC9A",
+        "spotify": "https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld",
+        "amazonMusic": "https://music.amazon.com/tracks/B0170UNLRQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/adele-hello.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hello_(Adele_song)",
+        "https://en.wikipedia.org/wiki/25_(Adele_album)",
+        "https://en.wikipedia.org/wiki/Adele",
+        "https://en.wikipedia.org/wiki/59th_Annual_Grammy_Awards",
+        "https://lrclib.net/api/get?artist_name=Adele&track_name=Hello"
+      ]
+    },
+    {
+      "id": "adele-rolling-in-the-deep-2010",
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "year": 2010,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Emotional",
+        "Epic",
+        "Heartbreak",
+        "Legends & Classics",
+        "Popular",
+        "Power Ballad",
+        "Powerful"
+      ],
+      "hints": [
+        "Die Lead-Single des zweiten Albums erschien am 29. November 2010; geschrieben und produziert haben sie die Sängerin gemeinsam mit Paul Epworth.",
+        "Epworth und die Sängerin komponierten das Stück an einem einzigen Nachmittag nach dem Ende einer Beziehung - ein 'Fuck dich' an alle, die ihr ein langweiliges Leben vorschrieben.",
+        "Die Sängerin beschreibt das Stück selbst als 'dunkle bluesige Gospel-Disco-Nummer'; martinische Beats, hämmernde Klaviertöne und ein Background-Chorus prägen den Sound.",
+        "Das Video drehte Sam Brown und zeigt Hunderte Gläser, die im Takt des Schlagzeugs vibrieren; bei den MTV Video Music Awards 2011 gewann es dreimal.",
+        "In den USA war es die erste Nummer-eins-Single der Sängerin und blieb sieben Wochen auf Platz 1 der Billboard Hot 100; 2012 gewann es drei Grammys, darunter 'Record of the Year' und 'Song of the Year'."
+      ],
+      "lyrics": {
+        "real": [
+          "There's a fire starting in my heart",
+          "The scars of your love remind me of us",
+          "Baby, I have no story to be told"
+        ],
+        "fake": "I'm crying in the shadows of the love we used to know"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+        "spotify": "https://open.spotify.com/track/4OSBTYWVwsQhGLF9NHvIbR",
+        "amazonMusic": "https://music.amazon.com/tracks/B004I1PAE8"
+      },
+      "coverUrl": "/covers/adele-rolling-in-the-deep-2010.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rolling_in_the_Deep",
+        "https://en.wikipedia.org/wiki/21_(Adele_album)",
+        "https://en.wikipedia.org/wiki/Adele",
+        "https://en.wikipedia.org/wiki/54th_Annual_Grammy_Awards",
+        "https://lrclib.net/api/get?artist_name=Adele&track_name=Rolling%20in%20the%20Deep"
+      ]
+    }
+  ]
+}

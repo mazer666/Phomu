@@ -1,0 +1,706 @@
+{
+  "songs": [
+    {
+      "id": "yt-9mMNnfh2vGo",
+      "title": "Periódico de Ayer",
+      "artist": "Héctor Lavoe",
+      "year": 1976,
+      "country": "PR",
+      "genre": "Salsa",
+      "difficulty": "medium",
+      "mood": [
+        "Latin Heat",
+        "Nostalgia",
+        "Celebration"
+      ],
+      "hints": [
+        "Den Text schrieb Tite Curet Alonso, die Musik Willie Colón.",
+        "Der Sänger sang zuvor im Orchester von Willie Colón und wurde danach Soloist bei Fania.",
+        "Die Aufnahme war ein Nummer-eins-Hit in mexikanischen Charts und stand dort vier Monate auf Platz eins.",
+        "Das Stück erschien 1976 als Leit-Single des zweiten Soloalbums des Sängers bei Fania.",
+        "Der Titel gilt als eine der bekanntesten Salsa-Songs überhaupt."
+      ],
+      "lyrics": {
+        "real": [
+          "Fue titular que alcanzó página entera",
+          "Por eso ya te conocen donde quiera",
+          "Y en el álbum del olvido lo pegué"
+        ],
+        "fake": "El viento se lleva las noticias de ayer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9mMNnfh2vGo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/hector-lavoe-periodico-de-ayer.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/De_Ti_Depende",
+        "https://en.wikipedia.org/wiki/H%C3%A9ctor_Lavoe",
+        "https://en.wikipedia.org/wiki/Tite_Curet_Alonso",
+        "https://musicbrainz.org/ws/2/release/6dd3351d-f157-487b-8d42-e4f0adf900f0?inc=recordings+artist-credits&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Hector+Lavoe&track_name=Peri%C3%B3dico+De+Ayer"
+      ]
+    },
+    {
+      "id": "schlager-heino-enzian",
+      "title": "Blau blüht der Enzian",
+      "artist": "Heino",
+      "year": 1972,
+      "country": "DE",
+      "genre": "Schlager / Volksmusik",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Den Text und die Musik schrieb Adolf von Kleebsattel.",
+        "Das Stück entstand für den Schlagervfilm von Franz Antel, der 1973 in den Kinos lief.",
+        "Die Single erschien im September 1972 bei EMI Columbia; auf der B-Seite stand 'Irgendwann sind alle gleich'.",
+        "Der Sänger stellte den Titel in der 39. Ausgabe der ZDF-Hitparade mit Dieter Thomas Heck vor.",
+        "In der dritten Hütte auf der Alm küsst der Erzähler das Mädchen, und niemand weiß, was danach geschah."
+      ],
+      "lyrics": {
+        "real": [
+          "Mit ihren ro-ro-ro-roten Lippen fing es an",
+          "In der dritten Hütte hab' ich sie geküsst",
+          "Keiner weiß was dann geschehen ist"
+        ],
+        "fake": "Am Seeufer sangen wir die alten Lieder leise"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HBGnU4Q5pRg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-heino-enzian.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Blau_bl%C3%BCht_der_Enzian_(Lied)",
+        "https://de.wikipedia.org/wiki/Blau_bl%C3%BCht_der_Enzian_(Film)",
+        "https://de.wikipedia.org/wiki/Heino",
+        "https://www.youtube.com/watch?v=HBGnU4Q5pRg",
+        "https://api.lyrics.ovh/v1/Heino/Blau%20bl%C3%BCht%20der%20Enzian"
+      ]
+    },
+    {
+      "id": "schlager-helene-fischer-atemlos",
+      "title": "Atemlos durch die Nacht",
+      "artist": "Helene Fischer",
+      "year": 2013,
+      "country": "DE",
+      "genre": "Schlager / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
+      "hints": [
+        "Den Text schrieb Kristina Bach, die den Refrain in zwei Minuten in ihrer Küche auf Band aufnahm.",
+        "Die Single erschien am 29. November 2013 bei Polydor, produziert von Erich Ließmann alias Jean Frankfurter.",
+        "Der Titel war die zweite Singleauskopplung aus dem sechsten Studioalbum 'Farbenspiel'.",
+        "Für den Song erhielt die Sängerin den Echo Pop und den Polyton.",
+        "2023 legte sie den Titel gemeinsam mit Shirin David neu auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Ich schließe meine Augen, lösche jedes Tabu",
+          "Küsse auf der Haut, so wie ein Liebes-Tattoo, oho, oho",
+          "Bilder die man nie vergisst"
+        ],
+        "fake": "Wir tanzen bis zum Morgen durch die Stadt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=haECT-SerHk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-helene-fischer-atemlos.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Atemlos_durch_die_Nacht",
+        "https://de.wikipedia.org/wiki/Helene_Fischer",
+        "https://music.apple.com/us/album/atemlos-durch-die-nacht/1544490480?i=1544490669",
+        "https://music.apple.com/us/album/atemlos-durch-die-nacht-the-radio-mixes/1444888967?i=1444889050",
+        "https://www.youtube.com/watch?v=haECT-SerHk"
+      ]
+    },
+    {
+      "id": "yt-gmvFLIuVAbA",
+      "title": "Suíte 14",
+      "artist": "Henrique & Diego feat. Mc Guime",
+      "year": 2014,
+      "country": "BR",
+      "genre": "Sertanejo",
+      "difficulty": "medium",
+      "mood": [
+        "Brazilian",
+        "Romantic",
+        "Party"
+      ],
+      "hints": [
+        "Die beiden Sänger stammen aus Cuiabá, dem Hauptort des brasilianischen Bundesstaates Mato Grosso.",
+        "Das Genre mischt brasilianischen Sertanejo mit Arrocha und Bachata.",
+        "Der Gast des Duetts war im August 2014 bei einem Konzert in Campo Grande zu sehen.",
+        "Der Titel erschien 2014 zuerst als Remix-Single und später als Live-Aufnahme auf dem Live-Album 'Tempo Certo'.",
+        "Im Refrain wird ein Bad mit Schaum, ein Menü bei Kerzenlicht und Champagner mit Kirschen beschrieben."
+      ],
+      "lyrics": {
+        "real": [
+          "Quando eu não for mais seu cobertor",
+          "Nós dois se amando e a lua por testemunha",
+          "Jantar à luz de vela, champanhe com cereja"
+        ],
+        "fake": "A lua se apaga e o jazz não toca mais"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gmvFLIuVAbA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/henrique---diego--mc-guime-suíte-14--ao-vivo-.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Henrique_%26_Diego",
+        "https://pt.wikipedia.org/wiki/Sertanejo_universit%C3%A1rio",
+        "https://music.apple.com/us/album/su%C3%ADte-14-mister-jam-remix-feat-mc-guime/956292742?i=956292748",
+        "https://music.apple.com/us/album/su%C3%ADte-14-feat-mc-guime-ao-vivo/951158526?i=951158536",
+        "https://lrclib.net/api/get?artist_name=Henrique+%26+Diego&track_name=Su%C3%ADte+14"
+      ]
+    },
+    {
+      "id": "yt-S6JpneypYvc",
+      "title": "Até Você Voltar",
+      "artist": "Henrique e Juliano",
+      "year": 2014,
+      "country": "BR",
+      "genre": "Sertanejo",
+      "difficulty": "medium",
+      "mood": [
+        "Brazilian",
+        "Heartbreak",
+        "Nostalgia"
+      ],
+      "hints": [
+        "Die beiden Sänger sind Brüder und stammen aus Palmeirópolis im brasilianischen Bundesstaat Tocantins.",
+        "Ihr gemeinsames Projekt läuft seit 2008, anfangs unter der Veröffentlichung von Som Livre.",
+        "Der Titel erschien 2014 als erster Auszug des Live-Albums, das in der brasilianischen Hauptstadt aufgezeichnet wurde.",
+        "Im Text sitzt der Erzähler allein am Tisch; nur ein Glas Bier bleibt ihm als Gesellschaft.",
+        "Der Clip zeigt die beiden bei einem Konzert in Brasília."
+      ],
+      "lyrics": {
+        "real": [
+          "Só o copo de cerveja é minha companhia",
+          "E hoje está fazendo um ano",
+          "Como pude acreditar nesse seu juramento?"
+        ],
+        "fake": "O relógio da parede marca a meia-noite"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=S6JpneypYvc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/henrique-e-juliano-até-você-voltar--dvd-ao-vivo-em-brasília---vídeo-oficial-.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Henrique_%26_Juliano",
+        "https://pt.wikipedia.org/wiki/Ao_Vivo_em_Bras%C3%ADlia",
+        "https://music.apple.com/us/album/at%C3%A9-voc%C3%AA-voltar/885319502?i=885319506",
+        "https://lrclib.net/api/get?artist_name=Henrique+e+Juliano&track_name=At%C3%A9+Voc%C3%AA+Voltar+(Ao+Vivo)",
+        "https://www.youtube.com/watch?v=S6JpneypYvc"
+      ]
+    },
+    {
+      "id": "yt-X8jD3F9PI7Q",
+      "title": "Na Hora da Raiva",
+      "artist": "Henrique e Juliano",
+      "year": 2015,
+      "country": "BR",
+      "genre": "Sertanejo",
+      "difficulty": "medium",
+      "mood": [
+        "Brazilian",
+        "Heartbreak",
+        "Nightlife"
+      ],
+      "hints": [
+        "Die beiden Brüder kommen aus dem brasilianischen Bundesstaat Tocantins und sind Söhne des Sertanejo-Genres.",
+        "Der Titel erschien 2015 als Live-Single und war der erste Auszug des Live-Albums 'Novas Histórias'.",
+        "Im Refrain beschreibt der Sänger, wie er in einem Wutanfall alte Erinnerungsstücke zerriss und verklebte.",
+        "Im Konzert in Recife ruft der Sänger die Stadt direkt im Text an.",
+        "Der Clip zeigt die Auftritte der beiden bei einem Konzert in Recife."
+      ],
+      "lyrics": {
+        "real": [
+          "Uma caixinha cheia de relatos",
+          "E eu não sei se eu rasgo ou jogo fora",
+          "A loucura de nossas fotos rasgar"
+        ],
+        "fake": "Eu queimei a carta no fogão da cozinha"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=X8jD3F9PI7Q"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/henrique-e-juliano-na-hora-da-raiva---dvd-novas-histórias---ao-vivo-em-recife.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Henrique_%26_Juliano",
+        "https://pt.wikipedia.org/wiki/Novas_Hist%C3%B3rias",
+        "https://music.apple.com/us/album/na-hora-da-raiva-ao-vivo/1881793435?i=1881793436",
+        "https://lrclib.net/api/get?artist_name=Henrique+e+Juliano&track_name=Na+Hora+da+Raiva+(Ao+Vivo)",
+        "https://www.youtube.com/watch?v=X8jD3F9PI7Q"
+      ]
+    },
+    {
+      "id": "score-henry-panther",
+      "title": "Pink Panther Theme",
+      "artist": "Henry Mancini",
+      "year": 1963,
+      "country": "US",
+      "genre": "Movie Theme / Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Funny",
+        "Smooth"
+      ],
+      "hints": [
+        "Ein Instrumentalstück ohne jeden gesungenen Text – die Melodie entstand für den Vorspann eines Spielfilms, dessen bunte Animationsfigur später in eigenen Zeichentrickshorts weiterlebte.",
+        "Die Komposition entstand 1963 und erschien auf dem Soundtrack-Album des Films bei RCA Victor; die Single in den USA folgte 1964.",
+        "Die Melodie war für eine Oscar-Nominierung in der Kategorie Beste Originalmusik nominiert, verlor in dieser Kategorie aber gegen die Brüder Sherman und 'Mary Poppins'.",
+        "Das Stück erreichte in den US-Charts der Sparte 'Adult Contemporary' die Top 10 und gewann drei Grammys.",
+        "Das markante Tenorsaxofon-Solo der Melodie spielte Plas Johnson, ein viel gebuchter Session-Saxofonist, der auch auf unzähligen Pop- und Jazzproduktionen zu hören ist."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wDoDYEFIMas",
+        "spotify": "https://open.spotify.com/track/0juPSJLFnLFim7BK6VzTes"
+      },
+      "coverUrl": "/covers/score-henry-panther.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Pink_Panther_Theme",
+        "https://en.wikipedia.org/wiki/The_Pink_Panther_(1963_film)",
+        "https://en.wikipedia.org/wiki/Henry_Mancini",
+        "https://en.wikipedia.org/wiki/The_Pink_Panther_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Plas_Johnson"
+      ]
+    },
+    {
+      "id": "german-groenemeyer-maenner",
+      "title": "Männer",
+      "artist": "Herbert Grönemeyer",
+      "year": 1984,
+      "country": "DE",
+      "genre": "Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Moody",
+        "Serious"
+      ],
+      "hints": [
+        "Ein Rocksong, der ironisch und zugleich ehrlich die Erwartungen an das männliche Geschlecht auspackt; der Refrain zählt Zärtlichkeit, Verletzlichkeit und Stärke auf.",
+        "Der Text ging aus einer sehr persönlichen Lebensphase des Sängers hervor: Seine damalige Ehefrau zeigte ihm, wie verletzlich das männliche Selbst sein kann.",
+        "Der Song erschien 1984 auf dem Studioalbum '4630 Bochum' und wurde im darauffolgenden Monat, am 4. Juni 1984, als erste Single des Labels EMI ausgekoppelt.",
+        "In den deutschen Single-Charts erreichte er Platz sieben, blieb 26 Wochen in den Charts und sieben Wochen in den Top 10 – für diese sieben Wochen war er das erfolgreichste deutschsprachige Lied.",
+        "Das Stück gilt heute als Klassiker deutschsprachiger Rock- und Popmusik und war 1984 der erste Single-Charterfolg des Künstlers als Autor, Interpret und Produzent zugleich."
+      ],
+      "lyrics": {
+        "real": [
+          "Männer geben Geborgenheit",
+          "Männer weinen heimlich",
+          "Männer sind auf dieser Welt einfach unersetzlich"
+        ],
+        "fake": "Wir stehen stramm im Wind, weil wir die Stärksten sind"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QvUxi7X6lBg",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=_IZsxfo8ITw"
+        ]
+      },
+      "coverUrl": "/covers/german-groenemeyer-maenner.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s-pop",
+        "German Classics",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/M%C3%A4nner_(Lied)",
+        "https://en.wikipedia.org/wiki/M%C3%A4nner_(song)",
+        "https://en.wikipedia.org/wiki/Herbert_Gr%C3%B6nemeyer",
+        "https://en.wikipedia.org/wiki/4630_Bochum",
+        "https://de.wikipedia.org/wiki/4630_Bochum"
+      ]
+    },
+    {
+      "id": "jazz-hancock-cantaloupe",
+      "title": "Cantaloupe Island",
+      "artist": "Herbie Hancock",
+      "year": 1964,
+      "country": "US",
+      "genre": "Jazz / Hard Bop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Eine reine Instrumental-Nummer ohne jeden Gesang, die allein über ein wiederkehrendes Klavier-Ostinato und einen federnden Groove wirkt.",
+        "Der Pianist war damals Mitglied des berühmten Quintetts, das die Jazzwelt in den 1960ern geprägt hat.",
+        "Die Aufnahme entstand 1964 im Van-Gelder-Studio in Englewood Cliffs, New Jersey, und erschien beim Label Blue Note.",
+        "Im Original wirkten an der Session neben dem Pianisten auch ein Kornettist, ein Bassist und ein Schlagzeuger mit, die später selbst Jazzgeschichte schrieben.",
+        "1993 griff eine britische Jazz-Rap-Gruppe die Melodie für ihren Welthit auf, der es in den US-Charts bis auf Platz neun schaffte."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=otFVFLtRF_s"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-hancock-cantaloupe.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cantaloupe_Island",
+        "https://en.wikipedia.org/wiki/Herbie_Hancock",
+        "https://en.wikipedia.org/wiki/Empyrean_Isles",
+        "https://en.wikipedia.org/wiki/Us3",
+        "https://www.jazzdisco.org/herbie-hancock/discography/"
+      ]
+    },
+    {
+      "id": "piano-hoobastank-reason",
+      "title": "The Reason",
+      "artist": "Hoobastank",
+      "year": 2003,
+      "country": "US",
+      "genre": "Alt-Rock / Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Honest",
+        "Positive",
+        "Energy"
+      ],
+      "hints": [
+        "Eine Power-Ballade, in der ein Sänger seine eigenen Fehler eingesteht und zugibt, dass ihm ein anderer Mensch den Halt gegeben hat, den er gesucht hat.",
+        "Der Gitarrist der Band schickte dem Sänger zunächst nur ein Instrumental-Demo; die Worte entstanden aus alten Notizbuchfragmenten und Gedanken im Kopf.",
+        "Das Stück erschien zuerst auf dem zweiten Album einer US-Band, die 1994 in Agoura Hills, Kalifornien, gegründet wurde, und wurde erst im Januar 2004 als Single an den Radio gesendet.",
+        "In den USA erreichte die Single Platz zwei der Hot 100 und Platz eins der Modern-Rock-Liste; 2005 folgten zwei Grammy-Nominierungen.",
+        "Der Titel beschreibt, was der Sänger empfand: sein Gegenüber ist der Grund dafür, dass er heute ein anderer Mensch ist."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm not a perfect person",
+          "I've found a reason for me",
+          "And the reason is you"
+        ],
+        "fake": "I was a broken compass until you taught me where the north is"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fV4DiAyExN0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-hoobastank-reason.jpg",
+      "packs": [
+        "piano-ballads",
+        "Rock Anthems",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Reason_(Hoobastank_song)",
+        "https://www.songfacts.com/facts/hoobastank/the-reason",
+        "https://en.wikipedia.org/wiki/Hoobastank",
+        "https://en.wikipedia.org/wiki/The_Reason_(Hoobastank_album)",
+        "https://americansongwriter.com/interview-hoobastanks-dan-estrin-on-the-reason-its-a-very-relatable-sentiment/"
+      ]
+    },
+    {
+      "id": "unplugged-hootie-only-wanna",
+      "title": "Only Wanna Be with You",
+      "artist": "Hootie & the Blowfish",
+      "year": 1994,
+      "country": "US",
+      "genre": "Folk Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Popsong, der 1995 als dritte Single eines Debütalbums erschien und in den USA Platz sechs der Billboard-Hot-100-Liste erreichte.",
+        "Der Text ist eine Hommage an Bob Dylan und zitiert dessen Songs, darunter 'Idiot Wind' und 'Tangled Up in Blue'.",
+        "Die Band ist große Fangruppe der Miami Dolphins; im Text klagt der Sänger, die Dolphins machten ihn zum Baby – deren Quarterback taucht im Musikvideo auf.",
+        "Das Album wurde in den USA 22-mal Platin ausgezeichnet und gilt als das erfolgreichste Album in der Geschichte des Labels Atlantic.",
+        "2021 coverte der US-Rapper Post Malone den Song aus Anlass des 25-jährigen Jubiläums der japanischen Pokémon-Reihe."
+      ],
+      "lyrics": {
+        "real": [
+          "We come from different worlds",
+          "You can call me your fool",
+          "Put on a little Dylan"
+        ],
+        "fake": "Two coffee cups on the dashboard and a mile of open road"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ln6WQqRDrCo",
+        "spotify": "https://open.spotify.com/track/1OFKUn2VLafrHj7ybnap0Q"
+      },
+      "coverUrl": "/covers/unplugged-hootie-only-wanna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "90s Unplugged",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Only_Wanna_Be_with_You",
+        "https://www.songfacts.com/facts/hootie-the-blowfish/only-wanna-be-with-you",
+        "https://en.wikipedia.org/wiki/Hootie_%26_the_Blowfish",
+        "https://en.wikipedia.org/wiki/Cracked_Rear_View",
+        "https://en.wikipedia.org/wiki/Darius_Rucker"
+      ]
+    },
+    {
+      "id": "jazz-silver-father",
+      "title": "Song for My Father",
+      "artist": "Horace Silver",
+      "year": 1965,
+      "country": "US",
+      "genre": "Jazz / Hard Bop",
+      "difficulty": "medium",
+      "mood": [
+        "Groovy",
+        "Warm",
+        "Classic"
+      ],
+      "hints": [
+        "Eine reine Instrumental-Nummer ohne jeden Gesang, deren Bassstimme von Teddy Smith gespielt wurde.",
+        "Der Pianist stammt aus Connecticut; sein Vater war auf der kapverdischen Insel Maio geboren und lehrte ihm die Volksmusik seiner Heimat.",
+        "Die Aufnahme entstand am 26. Oktober 1964 im Van-Gelder-Studio in Englewood Cliffs, New Jersey, mit einem Quintett aus Trompete, Tenorsaxofon, Klavier, Bass und Schlagzeug.",
+        "Das Album erreichte 1965 Platz 95 der US-Albumcharts und wurde 1999 in die Grammy Hall of Fame aufgenommen.",
+        "Der Tenorsaxofonist Joe Henderson steuerte auf dem Titelstück ein Solo bei, das in der Fachpresse als wegweisend beschrieben wurde."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mKf1x3CALAE"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-silver-father.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Song_for_My_Father_(composition)",
+        "https://en.wikipedia.org/wiki/Song_for_My_Father_(album)",
+        "https://en.wikipedia.org/wiki/Horace_Silver",
+        "https://www.jazzdisco.org/horace-silver/discography/",
+        "https://en.wikipedia.org/wiki/Joe_Henderson"
+      ]
+    },
+    {
+      "id": "hiphop-houseofpain-jump",
+      "title": "Jump Around",
+      "artist": "House of Pain",
+      "year": 1992,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Die US-Rappergruppe mit irisch-irischer Herkunft veröffentlichte den Song im Mai 1992 als erste Single ihres Debütalbums 'Fine Malt Lyrics'.",
+        "Den Beat produzierte DJ Muggs von Cypress Hill: Er baute ihn zuerst für B-Real, bot ihn dann Ice Cube an - der lehnte ab.",
+        "Das markante hohe Quietschen am Anfang nahezu jeder Taktzeile ertönt in der Aufnahme 66-mal; woher es stammt, ist bis heute umstritten.",
+        "In den USA erreichte die Single Platz 3 der Billboard Hot 100 und wurde platin; nach einer Wiederveröffentlichung 1993 kam sie in Großbritannien auf Platz 8 und erreichte dort doppeltes Platin.",
+        "Das Musikvideo entstand während der Parade zum Sankt-Patricks-Tag 1992 in New York und endet mit einer Widmung an Matt Champy, einen 1992 verstorbenen Freund der Band."
+      ],
+      "lyrics": {
+        "real": [
+          "Pack it up, pack it in, let me begin",
+          "Word to your moms, I came to drop bombs",
+          "Jump up, jump up, and get down"
+        ],
+        "fake": "Kick off your shoes and stomp the floor, everybody jumpin' for a little more"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XhzpxjuwZy0",
+        "spotify": "https://open.spotify.com/track/6JymsaWDHk2Yj4e0yNBIFH",
+        "amazonMusic": "https://music.amazon.com/albums/B0766VVSR4?trackAsin=B0766P5HWK"
+      },
+      "coverUrl": "/covers/hiphop-houseofpain-jump.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": true,
+      "packs": [
+        "grand-finale",
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jump_Around",
+        "https://en.wikipedia.org/wiki/House_of_Pain_(album)",
+        "https://www.theguardian.com/culture/2019/feb/12/how-we-made-cypress-hill-insane-in-the-brain-muggs-sen-dog",
+        "https://faroutmagazine.co.uk/the-mystery-squeal-in-jump-around/",
+        "https://www.songfacts.com/facts/house-of-pain/jump-around"
+      ]
+    }
+  ]
+}

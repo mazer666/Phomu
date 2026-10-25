@@ -1,0 +1,22 @@
+/**
+ * Spotify Theme
+ * Dark, minimal, clean. Green accents.
+ * Inspired by Spotify's dark mode aesthetic.
+ */
+[data-theme='spotify'] {
+  --color-bg: #121212;
+  --color-bg-secondary: #1e1e1e;
+  --color-bg-card: #282828;
+  --color-text: #ffffff;
+  --color-text-secondary: #b3b3b3;
+  --color-primary: #1db954;
+  --color-primary-hover: #1ed760;
+  --color-secondary: #1db954;
+  --color-accent: #1db954;
+  --color-success: #1db954;
+  --color-error: #ff5252;
+  --color-border: #404040;
+  --font-heading: 'system-ui', sans-serif;
+  --font-body: 'system-ui', sans-serif;
+  --radius: 8px;
+}

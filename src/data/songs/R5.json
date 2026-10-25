@@ -1,0 +1,625 @@
+{
+  "songs": [
+    {
+      "id": "yt-lBztnahrOFw",
+      "title": "La Mordidita ft. Yotuel",
+      "artist": "Ricky Martin",
+      "year": 2015,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der kubanische Gastauftritt stammt von einem Sänger, der als Frontmann der Rap-Gruppe Orishas und später als Solist tätig war.",
+        "Die Single erschien am 21. April 2015 als dritte Auskopplung des Albums und erreichte in den USA Platz sechs der Hot Latin Songs.",
+        "Das Album war das zehnte Studioalbum des puerto-rikanischen Sängers, kam 2015 heraus und gewann den Grammy für das beste Latin-Pop-Album.",
+        "Der Sänger sang ab seinem zwölften Lebensjahr in der Boyband Menudo, legte 1991 sein erstes Soloalbum vor und führte 1999 mit einem Latin-Pop-Hit die US- und UK-Charts an.",
+        "Im Refrain dreht sich alles um einen kleinen Bissen auf den Mund der Geliebten."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Yotuel_Romero",
+        "https://en.wikipedia.org/wiki/La_Mordidita",
+        "https://en.wikipedia.org/wiki/A_Quien_Quiera_Escuchar",
+        "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/La%20Mordidita"
+      ],
+      "lyrics": {
+        "real": [
+          "Toda la noche, todito el día",
+          "Vamo' a bañarnos en la orillita",
+          "Fuego en tus pupilas, tu cuerpo destila tequila y miel"
+        ],
+        "fake": "Te beso el cuello mientras suena la batucada en la arena"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lBztnahrOFw",
+        "spotify": "https://open.spotify.com/track/00i0O74dXdaKKdCrqHnfXm",
+        "amazonMusic": "https://music.amazon.com/albums/B00R8JVTC4?trackAsin=B00R8JVZDM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricky-martin-la-mordidita-feat-yotuel-single.jpg"
+    },
+    {
+      "id": "yt-p47fEXGabaY",
+      "title": "Livin' La Vida Loca",
+      "artist": "Ricky Martin",
+      "year": 1999,
+      "country": "PR",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Der Song entstand von zwei Autoren, von denen einer auch für Kiss, Cher, Bon Jovi und Aerosmith schrieb – es war der erste Nummer-eins-Hit, der vollständig digital aufgenommen wurde.",
+        "Die Single ging am 23. März 1999 in die Rotation und stand fünf Wochen in Folge an der Spitze der US-Hot-100.",
+        "Das fünfte Studioalbum des Sängers war sein englischsprachiges Debüt und erschien 1999.",
+        "Der puerto-rikanische Sänger wurde mit dem Song als erster Puerto-Ricaner auf Platz 1 der britischen Charts geführt.",
+        "Im Refrain preist der Sänger das wilde, verrückte Leben an und singt von Teufelslippen und Mocha-Haut."
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/ricky-martin/livin-la-vida-loca",
+        "https://en.wikipedia.org/wiki/Livin%27_la_Vida_Loca",
+        "https://en.wikipedia.org/wiki/Ricky_Martin_(1999_album)",
+        "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Livin%27%20La%20Vida%20Loca"
+      ],
+      "lyrics": {
+        "real": [
+          "She's into superstitions",
+          "Her lips are devil red",
+          "And her skin's the color mocha"
+        ],
+        "fake": "We dance on the rooftops till the city falls asleep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=p47fEXGabaY",
+        "spotify": "https://open.spotify.com/track/3oB03BklBHcPhPKIiTE9wT",
+        "amazonMusic": "https://music.amazon.com/albums/B00138GYH6?trackAsin=B00137QMN8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "Schlager & Evergreens",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricky-martin-livin-la-vida-loca-single.jpg"
+    },
+    {
+      "id": "yt-vCEvCXuglqo",
+      "title": "María",
+      "artist": "Ricky Martin",
+      "year": 1995,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song wurde zum internationalen Durchbruch des Sängers, führte die Charts in 20 Ländern an und wurde als größter Latin-Hit in das Weltrekordbuch aufgenommen.",
+        "Das dritte Studioalbum des Sängers erschien 1995 und war zunächst von Balladen geprägt.",
+        "Der puerto-rikanische Sänger sang ab seinem zwölften Lebensjahr in der Boyband Menudo und legte 1991 sein erstes Soloalbum vor.",
+        "Ein lokaler DJ verwandelte die Ballade in einen flotten Samba mit House-Bass – diese Remix-Version wurde erfolgreicher als das Original und ist im offiziellen Video zu sehen.",
+        "Im Refrain zählt die Titelheldin 'eins, zwei, drei' und fordert den Sänger zum Kuss."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mar%C3%ADa_(Ricky_Martin_song)",
+        "https://en.wikipedia.org/wiki/A_Medio_Vivir",
+        "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "https://www.songfacts.com/facts/ricky-martin/maria",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Mar%C3%ADa"
+      ],
+      "lyrics": {
+        "real": [
+          "Ella es como un pecado mortal",
+          "Pero es veneno si te quieres enamorar",
+          "Que si te la bebes de seguro te va a matar"
+        ],
+        "fake": "Camino por la arena buscandote otra vez"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vCEvCXuglqo",
+        "spotify": "https://open.spotify.com/track/0QQHPRbgLJJ5XNzJV1l9BW",
+        "amazonMusic": "https://music.amazon.com/albums/B004LGZYUA?trackAsin=B004LH1XPO"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "Schlager & Evergreens",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricky-martin-maría.jpg"
+    },
+    {
+      "id": "yt-oUnOPlQNV24",
+      "title": "Perdóname",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Am Text wirkte auch die spanische Sängerin Beatriz Luengo mit, deren Debütalbum sich in Spanien und Frankreich mehr als eine Million Mal verkaufte.",
+        "Die Ballade entstand 2014, erschien am 15. Januar 2016 als vierte Single des Albums und debütierte in den USA auf Platz 46 der Hot Latin Songs.",
+        "Das Album war das zehnte Studioalbum des Sängers, erschien 2015 und gewann den Grammy für das beste Latin-Pop-Album.",
+        "Der Sänger war Mitglied der Boyband Menudo und erlangte 1999 mit seiner ersten englischsprachigen Single den Durchbruch in den USA.",
+        "Im Refrain bittet er um Verzeihung und gibt zu, seine Versprechen nicht eingehalten zu haben."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Beatriz_Luengo",
+        "https://en.wikipedia.org/wiki/Perd%C3%B3name_(Ricky_Martin_song)",
+        "https://en.wikipedia.org/wiki/A_Quien_Quiera_Escuchar",
+        "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Perd%C3%B3name"
+      ],
+      "lyrics": {
+        "real": [
+          "Por no cumplir con las promesas",
+          "Tienes todo lo que pido, pero no eres mi mitad",
+          "Aunque me odies tal vez"
+        ],
+        "fake": "Prometo que la próxima vez no te voy a fallar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oUnOPlQNV24",
+        "spotify": "https://open.spotify.com/track/1mVym6vxBrM1m4pjis7bxq",
+        "amazonMusic": "https://music.amazon.com/albums/B00R8JVTC4?trackAsin=B00R8JVXFW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricky-martin-perdoname-single.jpg"
+    },
+    {
+      "id": "yt-1G2-r-5ZwnY",
+      "title": "Pégate",
+      "artist": "Ricky Martin",
+      "year": 2006,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der puertoricanische Songwriter Tommy Torres schrieb und produzierte den Song – Billboard kürzte ihn 2007 zum erfolgreichsten Produzenten der Hot Latin Tracks.",
+        "Die Aufnahme erreichte in den USA Platz elf der Hot Latin Songs und wurde in Mexiko vierfach als digitaler Single ausgezeichnet.",
+        "Das Album war das erste Live-Album des Sängers, entstand im August 2006 in Miami und erschien als CD und DVD.",
+        "Der puerto-rikanische Sänger sang als Jugendlicher in der Boyband Menudo und kam 1998 mit 'Vuelve' weltweit zu Erfolg.",
+        "Der Rhythmus ist eine traditionelle puertoricanische Volksweise, und im Text heißt es, das Tanzen heile alles, wie es die Mutter einst sagte."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tommy_Torres",
+        "https://en.wikipedia.org/wiki/P%C3%A9gate",
+        "https://en.wikipedia.org/wiki/MTV_Unplugged_(Ricky_Martin_album)",
+        "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/P%C3%A9gate"
+      ],
+      "lyrics": {
+        "real": [
+          "Yo vengo con cosa buena para mi pueblo",
+          "Nada como el repique de mis tambores",
+          "Olvida los temores, que el tiempo se nos va"
+        ],
+        "fake": "La noche es larga y el baile nunca acaba"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1G2-r-5ZwnY",
+        "spotify": "https://open.spotify.com/track/6derJzyW5gcu125FpbsReh",
+        "amazonMusic": "https://music.amazon.com/albums/B00138CUY2?trackAsin=B00137KQDU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "country-folk",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricky-martin-pégate.jpg"
+    },
+    {
+      "id": "yt-7IPVe1oywh0",
+      "title": "Te Extraño, Te Olvido, Te Amo",
+      "artist": "Ricky Martin",
+      "year": 1995,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das offizielle Musikvideo wurde über den Vevo-Kanal des Sängers veröffentlicht.",
+        "Die Single erschien 1995, das erste Video drehte Gustavo Garzón in Los Angeles und gewann den Video-Preis von Lo Nuestro 1996.",
+        "Das dritte Studioalbum des Sängers erschien 1995, das Stück war dessen erste Single und erreichte in den USA Platz neun.",
+        "Der puerto-rikanische Sänger sang ab seinem zwölften Lebensjahr in der Boyband Menudo, legte 1991 sein erstes Soloalbum vor und stellte das Stück 1996 beim Festival in Viña del Mar vor.",
+        "Im Refrain spricht der Sänger von einer Tasche voller Einsamkeit und von einem grauen Foto."
+      ],
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=7IPVe1oywh0",
+        "https://en.wikipedia.org/wiki/Te_Extra%C3%B1o,_Te_Olvido,_Te_Amo",
+        "https://en.wikipedia.org/wiki/A_Medio_Vivir",
+        "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Te%20Extra%C3%B1o%2C%20Te%20Olvido%2C%20Te%20Amo"
+      ],
+      "lyrics": {
+        "real": [
+          "Traigo en los bolsillos tanta soledad",
+          "He perdido todo, hasta la identidad",
+          "Por ti, por ti, por ti,"
+        ],
+        "fake": "Camino solo por la ciudad buscando tu voz"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7IPVe1oywh0",
+        "spotify": "https://open.spotify.com/track/4S1bYWrLOC8smuy8kJzxKQ",
+        "amazonMusic": "https://music.amazon.com/albums/B004LGZYUA?trackAsin=B004LGY1TA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricky-martin-te-extrano-te-olvido-te-amo-single.jpg"
+    },
+    {
+      "id": "yt-tn5b4-VbULs",
+      "title": "Tu Recuerdo (MTV Unplugged) ft. Chambao, Tommy Torres",
+      "artist": "Ricky Martin",
+      "year": 2006,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Ballade entstand für das erste Live-Album des puerto-rikanischen Sängers, aufgenommen am 17. August 2006 in Miami; als Leitstück ging sie am 25. September 2006 in die Rotation.",
+        "Schrift und Produktion lagen bei demselben puertorikanischen Produzenten, der auch die akustische Gitarre spielte – das Stück mischt Flamenco-Klänge mit Gitarre und dem puertorikanischen Instrument 'Cuatro'.",
+        "Die spanische Gastsängerin La Mari und der Produzent waren als Gäste beteiligt – laut Billboard wurde die Kollaboration zum meistapplaudierten neuen Song der akustischen Aufnahme.",
+        "In den USA stieg der Song bis auf Platz eins der Hot Latin Songs – der erste Top-10-Treffer des Produzenten auf dieser Liste.",
+        "Im Refrain vergleicht der Sänger die Erinnerung an die Geliebte mit einem Starkregen, der 'a fuego lento' über ihn hereinbricht und ihn gleichzeitig verbrennt und durchnässt."
+      ],
+      "lyrics": {
+        "real": [
+          "Quema y moja por igual",
+          "Un beso gris, un beso blanco",
+          "Rompe fuerte sobre mi"
+        ],
+        "fake": "Yo te espero bajo la lluvia hasta que amanezca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tn5b4-VbULs",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B00KWMUI6C"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "90s Unplugged",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricky-martin-tu-recuerdo-mtv-unplugged-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tu_Recuerdo_(Ricky_Martin_song)",
+        "https://en.wikipedia.org/wiki/MTV_Unplugged_(Ricky_Martin_album)",
+        "https://en.wikipedia.org/wiki/Tommy_Torres",
+        "https://tidal.com/track/1720284",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Tu%20Recuerdo"
+      ]
+    },
+    {
+      "id": "yt-iOe6dI2JhgU",
+      "title": "Vente Pa' Ca ft. Maluma",
+      "artist": "Ricky Martin",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Single erschien am 23. September 2016 bei Sony Music Latin und war die erste Zusammenarbeit der beiden Sänger.",
+        "Produziert hat sie Alexander Castillo; am Songwriting waren neben den beiden Sängern das Duo Dsign Music und Justin Jesso (bürgerlich Justin Stein) beteiligt.",
+        "Der Clip wurde von Jessy Terrero im SLS South Beach Hotel in Miami Beach gedreht und zeigt Partys an mehreren Orten des Hotels; heute zählt er über 1,9 Milliarden Aufrufe.",
+        "Der Song führte in sieben Ländern die Charts an – unter anderem in Argentinien und Mexiko – und war für den Latin Grammy als Record und Song des Jahres nominiert.",
+        "Im Refrain geht es mit deutlichen Anspielungen um eine versprochene 'noche de placer'; später erschienen englische Fassungen mit Delta Goodrem und mit Wendy aus Red Velvet."
+      ],
+      "lyrics": {
+        "real": [
+          "Ven papi, ven que te voy a regalar",
+          "Apagame la luz",
+          "No tengas miedo a entregarte"
+        ],
+        "fake": "Cierra la puerta y ven a mi lado, que la noche es nuestra"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iOe6dI2JhgU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "electronic-synth"
+      ],
+      "coverUrl": "/covers/ricky-martin-vente-pa--ca--ft--maluma.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Vente_Pa%27_Ca",
+        "https://en.wikipedia.org/wiki/Maluma",
+        "https://en.wikipedia.org/wiki/Delta_Goodrem",
+        "https://en.wikipedia.org/wiki/Latin_Grammy_Awards",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Vente%20Pa%27%20Ca"
+      ]
+    },
+    {
+      "id": "yt-p7QYo-9SlP0",
+      "title": "Vuelve",
+      "artist": "Ricky Martin",
+      "year": 1998,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Power Ballade erschien am 26. Januar 1998 als Leitstück des gleichnamigen vierten Studioalbums, das am 12. Februar 1998 folgte.",
+        "Geschrieben wurde sie von Franco De Vita, der den Song nach eigenen Angaben zehn Jahre lang schrieb; produziert haben K. C. Porter und Draco Rosa.",
+        "Das Stück mischt Latin Pop mit Rock-Harmonien und einem Gospel-Refrain; in den USA stieg es auf Platz eins der Hot Latin Songs – die erste Nummer-eins-Hit des Sängers auf dieser Liste.",
+        "Der Clip wurde von Wayne Isham im Ennis House in Los Angeles gedreht, wo der Sänger im Regen steht; später erschien eine Live-Fassung aus dem akustischen Miami-Konzert von 2006.",
+        "Im Refrain bittet der Sänger die Geliebte zurückzukommen – ohne sie geht ihm das Leben dahin und niemand nimmt ihren Platz ein."
+      ],
+      "lyrics": {
+        "real": [
+          "Vuelve que sin ti la vida se me va",
+          "He perdido las fuerzas, he perdido las ganas",
+          "No es igual, no es lo mismo"
+        ],
+        "fake": "Caminare por la arena hasta que vuelvas a mi lado"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=p7QYo-9SlP0",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B00000I3AL"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricky-martin-vuelve.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Vuelve_(Ricky_Martin_song)",
+        "https://en.wikipedia.org/wiki/Vuelve_(album)",
+        "https://en.wikipedia.org/wiki/Franco_De_Vita",
+        "https://en.wikipedia.org/wiki/Ennis_House",
+        "https://api.lyrics.ovh/v1/Ricky%20Martin/Vuelve"
+      ]
+    },
+    {
+      "id": "80s-righeira-playa",
+      "title": "Vamos a la playa",
+      "artist": "Righeira",
+      "year": 1983,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Summer",
+        "Happy",
+        "Classic"
+      ],
+      "hints": [
+        "Trotz der fröhlichen Melodie handelt der Song von der Detonation einer Atombombe – radioaktive Strahlen bräunen die Haut und färben das Meerwasser blau.",
+        "Das Stück erschien am 5. Mai 1983 bei CGD Records in Italien und war die zweite Single des Debütalbums der Band; in Großbritannien kam es am 19. August 1983 bei A&M heraus. Weltweit wurden mehr als drei Millionen Exemplare verkauft.",
+        "Platz eins in Italien, Argentinien, Uruguay und auf der Schweizer Hitparade, Platz zwei in Belgien und den Niederlanden, Platz drei in Deutschland (18 Chartwochen) und Platz 53 in Großbritannien.",
+        "Der Sänger fand die Melodie Ende 1981 an einer Tastatur in einem Keller, in dem das Duo seinen Auftritt im 'Casablanca' in Florenz vorbereitete – er wollte einen 'post-atomatischen' Strandsong mit viel Elektronik.",
+        "Im Refrain geht es um den Ausflug an den Strand, fünfmal mit 'Oh' – danach berichtet die Stimme, dass die Bombe explodiert ist und die Strahlen das Meerwasser blau färben."
+      ],
+      "lyrics": {
+        "real": [
+          "Y matizan de azul",
+          "Todos con sombrero",
+          "Despeina los cabellos"
+        ],
+        "fake": "Sombrero al viento y el mar pintado de azul"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FH1BiCKCEGA",
+        "spotify": "https://open.spotify.com/track/3iB7lzsBC7PdJLU9k2nttT",
+        "amazonMusic": "https://music.amazon.com/tracks/B073WXN8BQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-righeira-playa.jpg",
+      "packs": [
+        "80s Flashback",
+        "electronic-synth",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Vamos_a_la_playa_(Righeira_song)",
+        "https://en.wikipedia.org/wiki/Righeira_(album)",
+        "https://en.wikipedia.org/wiki/La_Bionda",
+        "https://en.wikipedia.org/wiki/Italo_disco",
+        "https://api.lyrics.ovh/v1/Righeira/Vamos%20a%20la%20playa"
+      ]
+    },
+    {
+      "id": "yt-YQo1rF1XbbI",
+      "title": "I Can't Stand",
+      "artist": "ATB",
+      "year": 2002,
+      "country": "DE",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Electronic",
+        "Nightlife",
+        "Chill Out"
+      ],
+      "hints": [
+        "Der Track ist auf dem dritten Studioalbum 'Dedicated' des deutschen Trance-Produzenten André Tanneberger enthalten; das Album erschien am 28. Januar 2002 bei Kontor Records.",
+        "Der Albumtitel verweist auf die Anschläge vom 11. September; zu den Top-Hits der Platte gehören 'Hold You' und 'You're Not Alone'.",
+        "Der Künstler startete 1998 sein Solo-Projekt unter dem Kürzel 'ATB'; sein erster Track unter diesem Namen war '9 PM (Till I Come)'.",
+        "In den DJ-Mag-Jahrgangslisten belegte er 2009 und 2010 den Platz 11, 2011 führte ihn 'The DJ List' als weltweiten Nummer eins.",
+        "Die Aufnahme dauert gut fünf Minuten; ihr Refrain besteht praktisch aus zwei sich wiederholenden Zeilen über Schmerz und die Unfähigkeit, ihn auszuhalten."
+      ],
+      "lyrics": {
+        "real": [
+          "I can't stand the pain",
+          "I don't think I can stand",
+          "I can't stand the pain"
+        ],
+        "fake": "I am the one who never sleeps beneath the midnight rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YQo1rF1XbbI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/rihanna-i-can-t-stand---.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/ATB_(DJ)",
+        "https://en.wikipedia.org/wiki/Dedicated_(ATB_album)",
+        "https://music.apple.com/us/album/dedicated/305616323",
+        "https://lrclib.net/api/get?artist_name=ATB&track_name=I%20Can%27t%20Stand",
+        "https://api.lyrics.ovh/v1/ATB/I%20Can%27t%20Stand"
+      ]
+    }
+  ]
+}

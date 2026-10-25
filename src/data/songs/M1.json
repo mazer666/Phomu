@@ -1,0 +1,686 @@
+{
+  "songs": [
+    {
+      "id": "indie-m83-midnight-city",
+      "title": "Midnight City",
+      "artist": "M83",
+      "year": 2011,
+      "country": "FR",
+      "genre": "Dream Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Electronic",
+        "Night"
+      ],
+      "hints": [
+        "Synthpop-Nummer einer französischen Band, die ihren Namen nach der Spiralgalaxie Messier 83 in der Wasserkatze ableitet.",
+        "Die Single erschien am 16. August 2011 in Frankreich und war die Leit-Single des sechsten Studioalbums der Band.",
+        "In der Heimat der Band erreichte der Track Platz 8 der Singles-Charts und wurde durch seinen Einsatz als Abschluss-Theme der Fußball-EM 2012 zur Nummer eins der digitalen Charts.",
+        "Das Stück endet mit einem Saxofonsolo, und im Musikvideo fliehen telekinetische Kinder aus einem Kinderheim.",
+        "Im Text wartet der Erzähler nachts im Auto auf die entscheidende Stunde, während die Stadt für ihn wie eine Kirche wirkt."
+      ],
+      "lyrics": {
+        "real": [
+          "Waiting in a car",
+          "Following the neon signs",
+          "Drinking in the lounge"
+        ],
+        "fake": "Neon rain is falling while the skyline forgets my name"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dX3k_QDnzHE",
+        "spotify": "https://open.spotify.com/track/36lqt57OHqk48BVFzPDEKt",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/indie-m83-midnight-city.jpg",
+      "packs": [
+        "Indie & Alternative",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Midnight_City",
+        "https://en.wikipedia.org/wiki/Hurry_Up%2C_We%27re_Dreaming",
+        "https://www.songfacts.com/facts/m83/midnight-city",
+        "https://music.apple.com/us/album/midnight-city/828259375?i=828259377",
+        "https://lrclib.net/api/get?artist_name=M83&track_name=Midnight%20City"
+      ]
+    },
+    {
+      "id": "yt-QpbQ4I3Eidg",
+      "title": "Bad Things",
+      "artist": "Machine Gun Kelly, Camila Cabello",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Latin-gefärbter Pop-Track, in dem ein US-Rapper und eine US-Sängerin im Duett eine gefährliche Liebschaft inszenieren.",
+        "Die Sängerin war bei der Aufnahme noch Mitglied der Mädchenband Fifth Harmony.",
+        "Der Song erschien am 14. Oktober 2016 als Vorab-Single zu 'bloom' und wurde vom US-Produzentenduo The Futuristics produziert.",
+        "In den USA platzierte sich das Stück auf Platz 16 der Hot-100-Charts und auf Platz 4 der Pop-Charts.",
+        "Im Text fragt der Rapper, ob sie den Kopf verloren habe, und beteuert, mit ihr nur die schlechten Dinge tun zu wollen."
+      ],
+      "lyrics": {
+        "real": [
+          "Am I out of my head?",
+          "Don't think that I can explain it",
+          "I only wanna do bad things to you"
+        ],
+        "fake": "Neon streets are calling while we dance until the morning comes"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QpbQ4I3Eidg",
+        "spotify": "https://open.spotify.com/track/3OX2ogl4UfhrQwomAaR867",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/machine-gun-kelly--camila-cabello-bad-things.jpg",
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bad_Things_(Machine_Gun_Kelly_and_Camila_Cabello_song)",
+        "https://www.songfacts.com/facts/machine-gun-kelly/bad-things",
+        "https://music.apple.com/us/album/bad-things/1440889313?i=1440889481",
+        "https://itunes.apple.com/lookup?id=1440889481&entity=song",
+        "https://api.lyrics.ovh/v1/Machine%20Gun%20Kelly/Bad%20Things"
+      ]
+    },
+    {
+      "id": "metal-madball-pride",
+      "title": "Pride (Times Are Changing)",
+      "artist": "Madball",
+      "year": 1994,
+      "country": "US",
+      "genre": "New York Hardcore",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Aggressive",
+        "Traditional"
+      ],
+      "hints": [
+        "Harte New-York-Hardcore-Nummer, die den Alltag zwischen Straße, Familie und selbst gesetzten Regeln beschreibt.",
+        "Die Texte erzählen vom Heranwachsen in einer gewalttätigen Zeit, vom Vertrauen in die eigene Familie und davon, sich selbst durchzuschlagen.",
+        "Der Refrain betont, dass sich die Zeiten verschlechtern, der Optimismus aber nicht verloren gehen darf.",
+        "Die Band gehört zu den prägendsten Gruppen des New-York-Hardcore, und das offizielle Video wurde vom US-Label Roadrunner Records veröffentlicht.",
+        "Der Song ist auch auf der Kompilation 'Demonstrating My Style' von 1996 enthalten und dauert knapp zweieinhalb Minuten."
+      ],
+      "lyrics": {
+        "real": [
+          "Gotta keep a positive outlook",
+          "Growing up in such violent times",
+          "Have some faith and you'll get by"
+        ],
+        "fake": "The silver moon is rising over the empty subway tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wqqwhbs7Qgw",
+        "spotify": "https://open.spotify.com/track/5F0oD2DhV4DQGJpvaiaJQV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-madball-pride.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "metal-hardcore"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Pride_(Madball_song)",
+        "https://music.apple.com/us/album/pride-times-are-changing/216662884?i=216662905",
+        "https://lrclib.net/api/get?artist_name=Madball&track_name=Pride",
+        "https://api.lyrics.ovh/v1/Madball/Pride",
+        "https://www.youtube.com/watch?v=wqqwhbs7Qgw"
+      ]
+    },
+    {
+      "id": "yt-20OGm_-RebE",
+      "title": "Hung Up",
+      "artist": "Madonna",
+      "year": 2005,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Tanzpop-Nummer im Stil der späten 2000er, deren Text von einer Frau erzählt, die vergeblich auf einen Anruf wartet.",
+        "Die Single erschien am 17. Oktober 2005 auf dem Studioalbum 'Confessions on a Dance Floor'.",
+        "Der musikalische Unterbau lehnt sich deutlich an den ABBA-Disco-Hit 'Gimme! Gimme! Gimme! (A Man After Midnight)' an.",
+        "Die Interpretin schrieb persönlich an Björn Ulvaeus und Benny Andersson, um die Erlaubnis für diese Anlehnung zu erhalten.",
+        "Im Refrain wiederholt sie mantra-artig, dass die Zeit nur sehr langsam vergeht."
+      ],
+      "lyrics": {
+        "real": [
+          "Time goes by so slowly",
+          "Ring, ring, ring goes the telephone",
+          "Tick, tick tock it's a quarter to two"
+        ],
+        "fake": "Silver moonlight on the highway while the radio says we're home"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=20OGm_-RebE",
+        "spotify": "https://open.spotify.com/track/3850dYVgOFIXJh5U4BFEWH",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/madonna-hung-up.jpg",
+      "packs": [
+        "2000s Pop & RnB",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hung_Up_(Madonna_song)",
+        "https://en.wikipedia.org/wiki/Confessions_on_a_Dance_Floor",
+        "https://www.songfacts.com/facts/madonna/hung-up",
+        "https://music.apple.com/us/album/hung-up/91992239?i=91989806",
+        "https://lrclib.net/api/get?artist_name=Madonna&track_name=Hung%20Up"
+      ]
+    },
+    {
+      "id": "madonna-like-a-prayer-1989",
+      "title": "Like a Prayer",
+      "artist": "Madonna",
+      "year": 1989,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "60s/70s Legends",
+        "Dance Floor",
+        "Epic",
+        "Party Anthem",
+        "Popular"
+      ],
+      "hints": [
+        "Der Song erschien 1989 auf dem gleichnamigen Studioalbum der US-Sängerin und war in den USA ein Nummer-eins-Hit.",
+        "Bereits vor der Veröffentlichung wurde das Stück in einem Werbespot der Softdrink-Marke Pepsi verwendet – die Sängerin hatte dafür einen Vertrag über fünf Millionen Dollar unterschrieben.",
+        "Der Spot mit dem Titel 'Make A Wish' zeigte die Sängerin tanzend neben einer achtjährigen Version von ihr selbst.",
+        "Der Clip löste heftige Kritik aus, weil er religiöse Motive mit einer expliziten Tanzdarstellung verband und von kirchlichen Kreisen als Blasphemie verurteilt wurde.",
+        "Im Text singt sie davon, beim Namen gerufen zu werden – und dass es sich dabei anfühlt wie ein kleines Gebet."
+      ],
+      "lyrics": {
+        "real": [
+          "Life is a mystery",
+          "Let the choir sing",
+          "I hear your voice, it's like an angel sighin'"
+        ],
+        "fake": "Golden rain is falling on the rooftops of a waking town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ilottRbDnGY",
+        "spotify": "https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/madonna-like-a-prayer-1989.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "Schlager & Evergreens",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Like_a_Prayer_(Madonna_song)",
+        "https://en.wikipedia.org/wiki/Like_a_Prayer_(album)",
+        "https://www.songfacts.com/facts/madonna/like-a-prayer",
+        "https://music.apple.com/us/album/like-a-prayer/83448003?i=83445997",
+        "https://lrclib.net/api/get?artist_name=Madonna&track_name=Like%20a%20Prayer"
+      ]
+    },
+    {
+      "id": "80s-madonna-virgin",
+      "title": "Like a Virgin",
+      "artist": "Madonna",
+      "year": 1984,
+      "country": "US",
+      "genre": "Pop / Dance",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Happy",
+        "Pop"
+      ],
+      "hints": [
+        "US-Pop-Song von 1984, geschrieben von Billy Steinberg und Tom Kelly und produziert von Nile Rodgers.",
+        "Aufgenommen wurde er im April 1984 im Power Station Studio in New York; als Titelsingle erschien er am 6. November 1984.",
+        "Das tiefe Bassmotiv reworked das Motiv der Four Tops, das kurze Gitarrengleiten stammt von Chuck Berry.",
+        "Nach sechs Wochen erreichte der Song Platz 1 der US-Hot-100 und blieb dort sechs weitere Wochen; in Australien war es die erste Nummer-eins-Single der Sängerin.",
+        "Beim ersten MTV Video Music Awards im September 1984 stieg sie in einem weißen Brautkleid auf einem 17 Fuß hohen Hochzeitskuchen aus und rollte über die Bühne."
+      ],
+      "lyrics": {
+        "real": [
+          "I made it through the wilderness",
+          "Somehow I made it through",
+          "Touched for the very first time"
+        ],
+        "fake": "I was a quiet harbor, and you were the tide"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s__rX_WL100",
+        "spotify": "https://open.spotify.com/track/1ZPlNanZsJSPK5h9YZZFbZ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-madonna-virgin.jpg",
+      "packs": [
+        "80s Flashback",
+        "piano-ballads",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Like_a_Virgin_(song)",
+        "https://en.wikipedia.org/wiki/Like_a_Virgin_(album)",
+        "https://www.songfacts.com/facts/madonna/like-a-virgin",
+        "https://lrclib.net/api/get?artist_name=Madonna&track_name=Like%20a%20Virgin",
+        "https://www.youtube.com/watch?v=s__rX_WL100"
+      ]
+    },
+    {
+      "id": "80s-madonna-material-girl",
+      "title": "Material Girl",
+      "artist": "Madonna",
+      "year": 1984,
+      "country": "US",
+      "genre": "Dance-pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sassy",
+        "Catchy",
+        "Classic"
+      ],
+      "hints": [
+        "Synth-Pop-Song von 1984, geschrieben von Peter Brown und Robert Rans und produziert von Nile Rodgers.",
+        "Aufgenommen wurde er im April 1984 in den Power Station Studios in New York; als zweite Single erschien er im Januar 1985.",
+        "Der Sound mischt Synthesizer, New Wave und Disco mit Reggae-Anklängen undrobotischen männlichen Backgroundstimmen.",
+        "In den USA kam er auf Platz 2 der Hot 100 und auf Platz 1 der Dance-Charts; in UK, Australien, Kanada und Neuseeland war er in den Top Ten.",
+        "Das Video rekonstruiert die berühmte Schmuckstein-Szene aus dem Marilyn-Monroe-Film 'Gentlemen Prefer Blondes' von 1953 - in rosa Abendkleid und mit Smoking tragenden Tänzern."
+      ],
+      "lyrics": {
+        "real": [
+          "If they don't give me proper credit",
+          "I just walk away",
+          "'Cause we are living in a material world"
+        ],
+        "fake": "I keep your photograph in a drawer beside the silver spoon"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6p-lDYPR2P8",
+        "spotify": "https://open.spotify.com/track/7bkyXSi4GtVfD7itZRUR3e",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/madonna-material-girl-single.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "electronic-synth",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Material_Girl",
+        "https://en.wikipedia.org/wiki/Like_a_Virgin_(album)",
+        "https://www.songfacts.com/facts/madonna/material-girl",
+        "https://lrclib.net/api/get?artist_name=Madonna&track_name=Material%20Girl",
+        "https://www.youtube.com/watch?v=6p-lDYPR2P8"
+      ]
+    },
+    {
+      "id": "dance-madonna-vogue",
+      "title": "Vogue",
+      "artist": "Madonna",
+      "year": 1990,
+      "country": "US",
+      "genre": "Dance-Pop / House",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Classic",
+        "Dance"
+      ],
+      "hints": [
+        "House-Track mit Disco-Einflüssen, geschrieben und produziert von der Sängerin selbst und Shep Pettibone.",
+        "Die Grundmusik entstand in einem Kellerstudio in der New Yorker West 56th Street mit einem Budget von 5.000 US-Dollar; den Text schrieb die Sängerin auf dem Flug nach New York.",
+        "Inspiriert war sie von einem Tanzstil, der Ende der 80er-Jahre vor allem in Bars und Diskotheken der Schwulenszene in New York gepflegt wurde.",
+        "Der schwarz-weiße Clip wurde von David Fincher in nur 16 Stunden während der Proben zur Blond Ambition Tour gedreht und erhielt neun Nominierungen bei den MTV Video Music Awards 1990.",
+        "Fast ein giveaway: Im Mittelteil rappt die Sängerin eine Namenstafel berühmter Filmschauspieler des alten Hollywood."
+      ],
+      "lyrics": {
+        "real": [
+          "Look around, everywhere you turn is heartache",
+          "I know a place where you can get away",
+          "Strike a pose"
+        ],
+        "fake": "Chandeliers are swinging, every stranger starts to glide"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GuJQSAiODqI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/dance-madonna-vogue.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "electronic-synth",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Vogue_(song)",
+        "https://en.wikipedia.org/wiki/I'm_Breathless",
+        "https://www.songfacts.com/facts/madonna/vogue",
+        "https://lrclib.net/api/get?artist_name=Madonna&track_name=Vogue",
+        "https://www.youtube.com/watch?v=GuJQSAiODqI"
+      ]
+    },
+    {
+      "id": "yt-CyeGqZyw0uc",
+      "title": "Regálame una noche",
+      "artist": "Maelo Ruiz",
+      "year": 2005,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Salsa-Romántica-Song eines puerto-rikanischen Sängers, der 1966 in New York geboren wurde und mit vier Jahren nach Puerto Rico zog.",
+        "Der Titel erschien 2005 auf einem nach ihm benannten Album und ist 4:38 Minuten lang.",
+        "Der Sänger startete im Alter von 16 an der 'Escuela Libre de Música de Caguas' und wurde mit 19 erste Stimme von Pedro Conga and his International Orchestra, bei denen er sieben Jahre lang vier Alben aufnahm.",
+        "Der Text ist ein nächtliches Liebeslied: Er bittet um eine Nacht, in der Leidenschaft und Nähe die einzigen Regeln sind.",
+        "Sein größter Hit mit Pedro Conga, 'No Te Quites La Ropa', verkaufte über 50.000 Einheiten und war die erste Goldene Schallplatte in Puerto Rico."
+      ],
+      "lyrics": {
+        "real": [
+          "Donde te entregues toda",
+          "Que solo sea la luna",
+          "La que acompañe la pasión"
+        ],
+        "fake": "Las olas del mar me traen tu recuerdo en la arena"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CyeGqZyw0uc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/maelo-ruiz-regalame-una-noche-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Maelo_Ruiz",
+        "https://itunes.apple.com/lookup?id=1714490301&entity=song",
+        "https://itunes.apple.com/lookup?id=1714490298&entity=song",
+        "https://lrclib.net/api/get?artist_name=Maelo%20Ruiz&track_name=Regalame%20Una%20Noche",
+        "https://www.youtube.com/watch?v=CyeGqZyw0uc"
+      ]
+    },
+    {
+      "id": "yt-xEMSZyVTefM",
+      "title": "Adicta",
+      "artist": "Maite Perroni",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Mexikanischer Latin-Pop-Song von 2016 einer Sängerin, die zuvor als Frontfrau der Pop-Rock-Gruppe RBD aktiv war.",
+        "Bekannt wurde sie 2004 durch die mexikanische Telenovela 'Rebelde', aus der die Gruppe RBD hervorging; ihr Solo-Debüt 'Eclipse de Luna' erschien 2013.",
+        "Die Single erschien im Juli 2016, das offizielle Video hat über 7,5 Millionen Aufrufe auf YouTube, und die Sängerin performte den Song bei los Premios Juventud 2016.",
+        "Bei den Latin Music Italian Awards 2016 gewann sie mit dem Song den Preis für die beste lateinische Künstlerin und das beste lateinische Video.",
+        "Im Text beschreibt sie eine Abhängigkeit von der Nähe des Geliebten: Jeder Kuss und jede Nacht steigern die Sehnsucht, und sie will nicht aufhören."
+      ],
+      "lyrics": {
+        "real": [
+          "Adicta a lo que tú me das",
+          "Una dosis más sería letal",
+          "Tu cuerpo a mí me va a matar"
+        ],
+        "fake": "El teléfono suena en la madrugada y nadie contesta"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xEMSZyVTefM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/maite-perroni--adicta-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Maite_Perroni",
+        "https://en.wikipedia.org/wiki/RBD",
+        "https://itunes.apple.com/lookup?id=1134617908&entity=song",
+        "https://lrclib.net/api/get?artist_name=Maite%20Perroni&track_name=Adicta",
+        "https://www.youtube.com/watch?v=xEMSZyVTefM"
+      ]
+    },
+    {
+      "id": "yt-wXyQbHfdPqw",
+      "title": "Vas a querer volver",
+      "artist": "Maite Perroni",
+      "year": 2013,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Mexikanischer Latin-Pop-Song, mit dem die Sängerin 2013 ihr Solo-Debüt 'Eclipse de Luna' vorstellte.",
+        "Bekannt wurde sie 2004 durch die mexikanische Telenovela 'Rebelde', aus der die Pop-Rock-Gruppe RBD hervorging; die Band verkaufte weltweit über 15 Millionen Alben.",
+        "Ihr Debüt-Album 'Eclipse de Luna' (August 2013) debütierte auf Platz 3 der mexikanischen AMPROFON-Charts und auf Platz 2 der Billboard Latin Pop Albums.",
+        "Die Single erschien 2013 als zuvor eigenständige Veröffentlichung und wurde später auch auf die Special Edition des Albums aufgenommen.",
+        "Im Text spricht sie einen Ex-Partner an, der sie vergessen hat: Sie zählt ihm all die Liebe auf, die er einst von ihr bekommen hat - und kündigt an, dass er eines Tages zurückkehren wird."
+      ],
+      "lyrics": {
+        "real": [
+          "Se te olvido besarme en estos labios que se han roto",
+          "Se te olvido mi mano al caminar",
+          "Pero algún día vas a querer volver al verme bien"
+        ],
+        "fake": "Las flores del jardín se marchitan sin que nadie las salude"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wXyQbHfdPqw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/maite-perroni--vas-a-querer-volver-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Maite_Perroni",
+        "https://en.wikipedia.org/wiki/RBD",
+        "https://itunes.apple.com/lookup?id=879320865&entity=song",
+        "https://lrclib.net/api/get?artist_name=Maite%20Perroni&track_name=Vas%20A%20Querer%20Volver",
+        "https://www.youtube.com/watch?v=wXyQbHfdPqw"
+      ]
+    },
+    {
+      "id": "yt-O2fU28Pehdc",
+      "title": "Tu y Yo",
+      "artist": "Maite Perroni",
+      "year": 2013,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song ist ein spanischsprachiger Titel aus Latin Pop und Bachata einer mexikanischen Schauspielerin und Sängerin, die nach ihren Jahren in einer Band nun alleine auftritt.",
+        "Die Künstlerin wurde am 9. März 1983 in Mexiko-Stadt geboren und ist seit 2004 im Musikgeschäft; zuvor gehörte sie der mexikanischen Band RBD an, die von 2004 bis 2009 aktiv war.",
+        "Der Song erschien am 17. Juni 2013 als erste Single des Debütalbums 'Eclipse de Luna', das am 23. August 2013 weltweit bei Warner Music veröffentlicht wurde.",
+        "Die Aufnahme ist 3:49 Minuten lang und auf der Special Edition des Albums als zweite Nummer zu hören.",
+        "Im Refrain taucht der Nonsense-Syllabus 'Lerelei' auf; der Text erzählt in der Ich-Form, wie eine Beziehung endet und die Sängerin den anderen desillusioniert."
+      ],
+      "lyrics": {
+        "real": [
+          "Así que nada es suficiente",
+          "Que tú siempre me quisiste",
+          "Que tú nunca hiciste nada"
+        ],
+        "fake": "La brisa del mar me recuerda tu nombre cada mañana"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=O2fU28Pehdc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/maite-perroni-tu-y-yo.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Maite_Perroni",
+        "https://en.wikipedia.org/wiki/RBD",
+        "https://en.wikipedia.org/wiki/Eclipse_de_luna",
+        "https://itunes.apple.com/search?term=Maite+Perroni+Tu+y+Yo&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Maite%20Perroni&track_name=Tu%20y%20Yo"
+      ]
+    }
+  ]
+}

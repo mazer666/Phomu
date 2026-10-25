@@ -1,0 +1,751 @@
+{
+  "songs": [
+    {
+      "id": "80s-kenny-loggins-footloose",
+      "title": "Footloose",
+      "artist": "Kenny Loggins",
+      "year": 1984,
+      "country": "US",
+      "genre": "Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance",
+        "Energy",
+        "Happy",
+        "Upbeat"
+      ],
+      "hints": [
+        "Titelsong des gleichnamigen Films mit Kevin Bacon.",
+        "Handelt von einer Stadt, in der das Tanzen verboten ist.",
+        "Der Sänger ist auch als 'King of the Movie Soundtrack' bekannt.",
+        "Fordert dazu auf, die Schuhe auszuziehen und loszutanzen ('Kick off your Sunday shoes').",
+        "Ein absoluter Tanzklassiker der 80er Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "Kick off your Sunday shoes",
+          "Jack, get back",
+          "Lose your blues"
+        ],
+        "fake": "Somebody's got a hold of my heart, dancing underneath the moonlight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ltrMfT4Qz5Y",
+        "spotify": "https://open.spotify.com/track/6W2VbtvMrDXm5vYeB7amkO",
+        "amazonMusic": "https://music.amazon.com/tracks/B003YNUSCK"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/kenny-loggins-footloose-single.jpg",
+      "packs": [
+        "80s-pop",
+        "Movie Hits",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Footloose_(song)",
+        "https://en.wikipedia.org/wiki/Footloose_(film)",
+        "https://en.wikipedia.org/wiki/Kenny_Loggins",
+        "https://www.songfacts.com/facts/kenny-loggins/footloose",
+        "https://en.wikipedia.org/wiki/Footloose_(1984_soundtrack)"
+      ]
+    },
+    {
+      "id": "country-kenny-rogers-gambler",
+      "title": "The Gambler",
+      "artist": "Kenny Rogers",
+      "year": 1978,
+      "country": "US",
+      "genre": "Country",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Serious",
+        "Storytelling"
+      ],
+      "hints": [
+        "Erzählt die Geschichte einer Begegnung mit einem alten Spieler in einem Zug.",
+        "Der Text enthält lebensweise Ratschläge, die auf das Leben und das Pokerspiel übertragen werden können.",
+        "War ein riesiger Crossover-Hit in den Country- und Pop-Charts.",
+        "Markierte den endgültigen Durchbruch des Sängers und brachte ihm 1980 den Grammy für den besten männlichen Country-Gesang.",
+        "Refrain: 'You got to know when to hold 'em, know when to fold 'em!'"
+      ],
+      "lyrics": {
+        "real": [
+          "You got to know when to hold 'em",
+          "Know when to walk away",
+          "You never count your money"
+        ],
+        "fake": "The cards are shuffled and the night is young, the railroad wheels keep a rolling song"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7hx4gdlfamo",
+        "spotify": "https://open.spotify.com/track/5KqldkCunQ2rWxruMEtGh0",
+        "amazonMusic": "https://music.amazon.com/tracks/B07PQ9DWCH"
+      },
+      "coverUrl": "/covers/country-kenny-rogers-gambler.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Gambler_(song)",
+        "https://en.wikipedia.org/wiki/Kenny_Rogers",
+        "https://en.wikipedia.org/wiki/The_Gambler_(album)",
+        "https://en.wikipedia.org/wiki/Don_Schlitz",
+        "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Male_Country_Vocal_Performance"
+      ]
+    },
+    {
+      "id": "yt-RCaoGyIXI6Y",
+      "title": "Strangers",
+      "artist": "Kenya Grace",
+      "year": 2023,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Dreamy",
+        "Electronic",
+        "Modern Anthems",
+        "Moody",
+        "Popular"
+      ],
+      "hints": [
+        "Der Track erschien im September 2023 als Major-Label-Debüt einer britisch-südafrikanischen Künstlerin.",
+        "Sie schrieb und produzierte den Song vollständig selbst.",
+        "Er erreichte in Großbritannien, Österreich und weiteren europäischen Ländern Platz 1 und war auch in den USA ein Dancefloor-Hit.",
+        "Ein im Juli 2023 veröffentlichtes TikTok-Video brachte den Song viral und ebnete den Weg ins Major-Label.",
+        "Musikalisch verbindet der Track volle Synthesizer-Flächen mit einem Drum-and-Bass-Fundament."
+      ],
+      "lyrics": {
+        "real": [
+          "But every time I meet somebody new",
+          "Every word they say sounds just like him",
+          "We'll talk for hours and lie on the backseat"
+        ],
+        "fake": "You looked me in the eyes and I forgot how the hours go by"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RCaoGyIXI6Y",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/finale-kenya-strangers.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Strangers_(Kenya_Grace_song)",
+        "https://en.wikipedia.org/wiki/Kenya_Grace",
+        "https://www.billboard.com/music/chart-beat/kenya-grace-hot-100-debut-strangers-1235425948/",
+        "https://en.wikipedia.org/wiki/Drum_and_bass",
+        "https://en.wikipedia.org/wiki/Warner_Records"
+      ]
+    },
+    {
+      "id": "yt-KVH5hMrRbIo",
+      "title": "Obsesión",
+      "artist": "Kenza Farah & Lucenzo",
+      "year": 2017,
+      "country": "FR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Essentials"
+      ],
+      "hints": [
+        "Der Song ist eine Neuaufnahme eines Bachata-Klassikers, ursprünglich von der dominikanischen Gruppe Aventura.",
+        "Das Original erschien 2002 auf dem Album 'We Broke the Rules'; die französische Coverversion machte den Song weltweit bekannt.",
+        "Im Refrain schildert der Sänger eine durchwachte Nacht: fünf Uhr morgens, kein Schlaf, nur Sehnsucht.",
+        "Das Stück ist zweisprachig: Die spanischen Parts singt der Rapper, die französischen die Sängerin.",
+        "Der Sound mischt Latin Pop mit Reggaeton-Elementen und einem elektronisch klingenden Beat."
+      ],
+      "lyrics": {
+        "real": [
+          "Son las cinco de la mañana",
+          "El insomnio es mi castigo",
+          "Y hasta que no seas mía"
+        ],
+        "fake": "La ciudad se apaga y tu nombre se mezcla con el viento"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KVH5hMrRbIo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/kenza-farah-et-lucenzo-obsesión--audio-officiel-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Obsesión_(Aventura_song)",
+        "https://en.wikipedia.org/wiki/Kenza_Farah",
+        "https://en.wikipedia.org/wiki/Lucenzo",
+        "https://en.wikipedia.org/wiki/Aventura",
+        "https://www.azlyrics.com/lyrics/lucenzo/obsesion.html"
+      ]
+    },
+    {
+      "id": "yt-74RELSR7Q34",
+      "title": "Nunca Imagine Ft. J Quiles",
+      "artist": "Kevin Roldán",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track erschien als Zusammenarbeit eines kolumbianischen Sängers mit einem puerto-rikanischstämmigen Reggaeton-Künstler.",
+        "Der Sänger wurde 2013 mit dem Dance-Track 'Salgamos' bekannt, der in Kolumbien auf Platz 1 landete.",
+        "Der Refrain ist eine spanische Anrede an eine 'Mamá' und preist deren Autorität.",
+        "Der Text erzählt vom Kennenlernen über eine Nachricht auf Instagram bis zu einem gemeinsamen Abend in der Disco.",
+        "Musikalisch ist es ein Latin-Pop-Track mit Reggaeton-Elementen und einer sehr eingängigen Hook-Melodie."
+      ],
+      "lyrics": {
+        "real": [
+          "Rico cuando me hablas con autoridad",
+          "Siento que he perdido hasta la gravedad",
+          "Ahora soy yo el que la abrazo y la mimo"
+        ],
+        "fake": "Tus ojos brillan como estrellas en la noche tropical"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=74RELSR7Q34",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/kevin-roldan-nunca-imagine-ft--j-quiles.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kevin_Roldán",
+        "https://en.wikipedia.org/wiki/Justin_Quiles",
+        "https://en.wikipedia.org/wiki/Latin_pop",
+        "https://en.wikipedia.org/wiki/Reggaeton",
+        "https://api.lyrics.ovh/v1/KEVIN%20ROLDAN/Nunca%20Imagine"
+      ]
+    },
+    {
+      "id": "metal-killswitch-curse",
+      "title": "My Curse",
+      "artist": "Killswitch Engage",
+      "year": 2006,
+      "country": "US",
+      "genre": "Metalcore",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Song ist die erste Single des vierten Albums einer US-Metalcore-Band aus Westfield im Bundesstaat Massachusetts.",
+        "Er erreichte Platz 21 der US-Rock-Charts und war der bis dahin erfolgreichste Single der Band.",
+        "Im Musikvideo wird der Text überwiegend clean gesungen, auf dem Album wird auch der Refrain geschrien.",
+        "Die Musik schrieb Gitarrist Adam Dutkiewicz, den Text Sänger Howard Jones.",
+        "Refrain: 'There is love burning to find you'."
+      ],
+      "lyrics": {
+        "real": [
+          "I watched you walk away",
+          "There is love burning to find you",
+          "Your silence haunts me"
+        ],
+        "fake": "This is my heart, still burning for you in the dark"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SLyKWxC4MRg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-killswitch-curse.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/My_Curse_(song)",
+        "https://en.wikipedia.org/wiki/As_Daylight_Dies",
+        "https://en.wikipedia.org/wiki/Killswitch_Engage",
+        "https://en.wikipedia.org/wiki/Howard_Jones_(American_singer)",
+        "https://www.azlyrics.com/lyrics/killswitchengage/mycurse.html"
+      ]
+    },
+    {
+      "id": "yt-aoov4k6_1-Y",
+      "title": "I See a Victory",
+      "artist": "Kim Burrell, Pharrell Williams",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Titelsong eines Spielfilms über drei afroamerikanische Mathematikerinnen, die in den 1960er-Jahren bei der NASA arbeiteten.",
+        "Der Produzent des Films hat den Song komponiert und produziert und koordinierte zugleich den kompletten Soundtrack.",
+        "Eine Gospel-Sängerin aus Houston, Texas, führt den Gesang an, ein Gospel-Chor intoniert den Refrain.",
+        "Der Text erinnert daran, dass alles gut wird, und zieht eine Parallele zu den 1960er-Jahren.",
+        "Im Refrain steht der Satz 'They'll call it a mystery' – danach folgt das englische Wort für 'Sieg'."
+      ],
+      "lyrics": {
+        "real": [
+          "They'll call it a mystery",
+          "Don't worry what the doubter's saying",
+          "Watch you work through the masses"
+        ],
+        "fake": "Every dream we had is finally coming true tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aoov4k6_1-Y"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "Movie Hits",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/kim-burrell--pharrell-williams-i-see-a-victory--lyric-.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/pharrell-williams/i-see-a-victory",
+        "https://en.wikipedia.org/wiki/Hidden_Figures",
+        "https://en.wikipedia.org/wiki/Kim_Burrell",
+        "https://en.wikipedia.org/wiki/Pharrell_Williams",
+        "https://api.lyrics.ovh/v1/Pharrell%20Williams/I%20See%20a%20Victory"
+      ]
+    },
+    {
+      "id": "yt-qAqXDZoa624",
+      "title": "Bette Davis Eyes",
+      "artist": "Kim Carnes",
+      "year": 1981,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Classic",
+        "Cool",
+        "Moody",
+        "Popular"
+      ],
+      "hints": [
+        "Der Song wurde 1974 von Donna Weiss und Jackie DeShannon geschrieben, die ihn damals auch schon aufnahm.",
+        "Die Sängerin lehnte das Demo erst ab, bis der Keyboardist Bill Cuomo die Synthesizer-Riff-Brücke fand.",
+        "Die gleichnamige Hollywood-Dame, damals 73, bedankte sich später mit persönlichen Briefen bei der Sängerin.",
+        "Die erste Zeile ist eine Hommage an die Stummfilm-Star Jean Harlow und deren blondes Haar.",
+        "Im Refrain geht es um die Augen einer berühmten Schauspielerin – das englische Wort dafür hat vier Buchstaben."
+      ],
+      "lyrics": {
+        "real": [
+          "Her hair is Harlowe gold",
+          "She's pure as New York snow",
+          "She'll turn her music on you"
+        ],
+        "fake": "Her smile is a warm refrain, her gaze a quiet storm"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qAqXDZoa624",
+        "spotify": "https://open.spotify.com/track/0odIT9B9BvOCnXfS0e4lB5"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/80s-kim-carnes-bette-davis-eyes.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bette_Davis_Eyes",
+        "https://www.songfacts.com/facts/kim-carnes/bette-davis-eyes",
+        "https://en.wikipedia.org/wiki/Kim_Carnes",
+        "https://en.wikipedia.org/wiki/Mistaken_Identity_(Kim_Carnes_album)",
+        "https://api.lyrics.ovh/v1/Kim%20Carnes/Bette%20Davis%20Eyes"
+      ]
+    },
+    {
+      "id": "yt-tkd1tFuqkVY",
+      "title": "Crying On The Dancefloor",
+      "artist": "Sam Feldt",
+      "year": 2023,
+      "country": "NL",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein niederländischer House-DJ legt den Song vor; später veröffentlichen die US-DJs von Krewella aus der Nähe von Chicago eine Single mit demselben Titel.",
+        "Die Band, die den Song später aufnahm, besteht heute nur noch aus zwei Schwestern – ihr drittes früheres Mitglied ist nicht mehr dabei.",
+        "Die Single erschien im März 2023 und ist 2:53 Minuten lang.",
+        "Der Refrain beginnt mit 'Tonight I won't be ...' – und kündigt an, dass heute keine Trauer mehr auf der Tanzfläche folgt.",
+        "Der Refrain klingt nach Feier statt Verzweiflung: 'I ain't got no time for no more sad songs'."
+      ],
+      "lyrics": {
+        "real": [
+          "Tonight I won't be crying on the dancefloor",
+          "I ain't got no time for no more sad songs",
+          "You think I'm alone with tears in my bed"
+        ],
+        "fake": "We are gonna keep on dancing till the sun is up again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tkd1tFuqkVY",
+        "spotify": "https://open.spotify.com/track/09rAJ1Q1NNJSaUKEW3X9P6"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Dance Floor Fillers",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/yt-tkd1tFuqkVY.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sam_Feldt",
+        "https://en.wikipedia.org/wiki/Krewella_discography",
+        "https://en.wikipedia.org/wiki/Krewella",
+        "https://itunes.apple.com/lookup?id=1675462993&entity=song",
+        "https://api.lyrics.ovh/v1/Sam%20Feldt/Crying%20On%20The%20Dancefloor"
+      ]
+    },
+    {
+      "id": "synth-kim-kids",
+      "title": "Kids in America",
+      "artist": "Kim Wilde",
+      "year": 1981,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Happy",
+        "Urban",
+        "Young"
+      ],
+      "hints": [
+        "Die Debütsingle einer britischen Sängerin, die weltweite Karriere einleitete.",
+        "Der Labelchef hörte die Sängerin auf einem Backing-Track ihres Bruders und wollte sie daraufhin verpflichten.",
+        "Der Song entstand an einem einzigen Tag: Die Synth-Titelmelodie orientiert sich an OMD, die Bassfigur an Gary Numan.",
+        "Der Vater der Sängerin schrieb den Refrain erst im Studio – inspiriert von amerikanischen Jugendlichen im Fernsehen.",
+        "Der Refrain beginnt mit 'Whoah-oh! We're the ...' – und meint damit die Jugend der USA."
+      ],
+      "lyrics": {
+        "real": [
+          "Looking out a dirty old window",
+          "I search for the beat in this dirty town",
+          "Down town the young ones are growing"
+        ],
+        "fake": "Saturday night and everybody's dancing under the city lights"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=80TfG7C9azA",
+        "spotify": "https://open.spotify.com/track/3LaHsdzzmvhx6TJedpomVy",
+        "amazonMusic": "https://music.amazon.com/tracks/B0D9P5146H"
+      },
+      "coverUrl": "/covers/synth-kim-kids.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Electronic & Techno"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kids_in_America",
+        "https://www.songfacts.com/facts/kim-wilde/kids-in-america",
+        "https://en.wikipedia.org/wiki/Kim_Wilde",
+        "https://en.wikipedia.org/wiki/Kim_Wilde_(album)",
+        "https://api.lyrics.ovh/v1/Kim%20Wilde/Kids%20In%20America"
+      ]
+    },
+    {
+      "id": "indie-kol-sex-on-fire",
+      "title": "Sex on Fire",
+      "artist": "Kings of Leon",
+      "year": 2008,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Titel war nicht geplant: Ein Tontechniker sprach im Studio einen Spitznamen aus, der zum Running Joke wurde.",
+        "Der Song handelt von der damaligen Freundin des Sängers, die heute seine Frau ist und als Model arbeitet.",
+        "Lead-Single des vierten Albums der Band, aufgenommen in Tennessee.",
+        "Der Frontmann fand den Song zunächst 'furchtbar' und wollte ihn fast verwerfen.",
+        "Der Refrain endet mit 'You, your sex is on ...' – das fehlende englische Wort bedeutet 'Feuer'."
+      ],
+      "lyrics": {
+        "real": [
+          "Lay where you're laying",
+          "All the commotion",
+          "Hot as a fever"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken beat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RF0HhrwIwp0",
+        "spotify": "https://open.spotify.com/track/5A1FmxbYVRZKy4nc16MAue",
+        "amazonMusic": "https://music.amazon.com/albums/B001FXCE46?trackAsin=B001FX9QS8"
+      },
+      "coverUrl": "/covers/indie-kol-sex-on-fire.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "Indie & Alternative",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sex_on_Fire",
+        "https://www.songfacts.com/facts/kings-of-leon/sex-on-fire",
+        "https://api.lyrics.ovh/v1/Kings%20of%20Leon/Sex%20on%20Fire",
+        "https://en.wikipedia.org/wiki/Only_by_the_Night",
+        "https://en.wikipedia.org/wiki/Lily_Aldridge"
+      ]
+    },
+    {
+      "id": "indie-kings-of-leon-somebody",
+      "title": "Use Somebody",
+      "artist": "Kings of Leon",
+      "year": 2008,
+      "country": "US",
+      "genre": "Indie Rock / Arena Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Powerful",
+        "Classic"
+      ],
+      "hints": [
+        "Zweite Single des vierten Albums der Band: Sie kam drei Wochen nach dem Album in die Charts.",
+        "Der Song steht in C-Dur und wurde von den Produzenten Jacquire King und Angelo Petraglia geschmiedet.",
+        "Der Durchbruch in den USA: Erstmals Top 5 der Billboard Hot 100 und 57 Wochen in den Charts.",
+        "Als vierter Song der Chartgeschichte erreichte er gleichzeitig vier US-Charts, darunter Adult Top 40 und Alternative.",
+        "Beim 52. Grammy 2010 gewann der Song die Preise für 'Record of the Year' und 'Best Rock Song'."
+      ],
+      "lyrics": {
+        "real": [
+          "I've been roaming around",
+          "Always looking down at all I see",
+          "Countless lovers under cover of the street"
+        ],
+        "fake": "Worn out shoes and a car radio playing something I almost know"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gnhXHvRoUd0",
+        "spotify": "https://open.spotify.com/track/2TYC9SaRhYypUQzB1ZVTG2",
+        "amazonMusic": "https://music.amazon.com/albums/B001FXCE46?trackAsin=B001FX5V8M"
+      },
+      "coverUrl": "/covers/kings-of-leon-use-somebody-single.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "Indie & Alternative",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Use_Somebody",
+        "https://www.songfacts.com/facts/kings-of-leon/use-somebody",
+        "https://api.lyrics.ovh/v1/Kings%20of%20Leon/Use%20Somebody",
+        "https://en.wikipedia.org/wiki/Only_by_the_Night",
+        "https://en.wikipedia.org/wiki/Grammy_Award_for_Record_of_the_Year"
+      ]
+    },
+    {
+      "id": "rock-kiss-rock-nite",
+      "title": "Rock and Roll All Nite",
+      "artist": "KISS",
+      "year": 1975,
+      "country": "US",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Party",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Vier Musiker aus New York veröffentlichten 1975 eine Hymne, die seither bei fast jedem Konzert das letzte Lied des Abends ist.",
+        "Zwei Bandmitglieder teilten sich die Arbeit am Text: den Refrain schrieb der eine, die Strophen der andere.",
+        "Die Studiofassung erreichte in den US-Charts nur Platz 68 – die später veröffentlichte Live-Fassung kam auf Platz 12.",
+        "Bei der Abschlusszeremonie der Olympischen Winterspiele 2002 in Salt Lake City spielten die vier Musiker den Song – für den Gitarristen war es sein letzter Auftritt mit der Band.",
+        "Aufgenommen wurde das Stück im Februar 1975 im Electric Lady Studio in New York, nachdem der Chef des Plattenlabels von der Band eine Hymne verlangt hatte."
+      ],
+      "lyrics": {
+        "real": [
+          "You show us everything you've got",
+          "You drive us wild, we'll drive you crazy",
+          "I wanna rock and roll all night and party every day"
+        ],
+        "fake": "Nothing's gonna stop us now, we're playing in the clouds somehow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=K9paKQ9VdRA",
+        "spotify": "https://open.spotify.com/track/5besSnKfhBfPrOYxXhsj7X"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-kiss-rock-nite.jpg",
+      "packs": [
+        "Rock Anthems",
+        "grand-finale",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rock_and_Roll_All_Nite",
+        "https://en.wikipedia.org/wiki/Kiss_(band)",
+        "https://en.wikipedia.org/wiki/Dressed_to_Kill_(album)",
+        "https://www.songfacts.com/facts/kiss/rock-and-roll-all-nite",
+        "https://api.lyrics.ovh/v1/KISS/Rock%20and%20Roll%20All%20Nite"
+      ]
+    }
+  ]
+}

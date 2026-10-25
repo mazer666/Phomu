@@ -1,0 +1,732 @@
+{
+  "songs": [
+    {
+      "id": "folk-don-pie",
+      "title": "American Pie",
+      "artist": "Don McLean",
+      "year": 1971,
+      "country": "US",
+      "genre": "Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Epic",
+        "Classic"
+      ],
+      "hints": [
+        "Das Originalmanuskript wurde 2015 bei Christie's in New York für 1,2 Millionen Dollar versteigert – erst dadurch klärten sich viele der rätselhaften Textzeilen.",
+        "Der Refrain-Anfang ist angelehnt an Pete Seegers 'Bye Bye, My Roseanna'.",
+        "Die Aufnahme entstand im Mai 1971 im New Yorker Studio Record Plant und erschien als zweiseitige 7-Zoll-Single.",
+        "Der Text erinnert an den Flugzeugabsturz von 1959 und an den Wandel einer ganzen Generation – im Januar 1972 stand der Song vier Wochen auf Platz 1 der US-Charts.",
+        "Der Refrain erzählt vom Chevy, der zum Deich fährt, doch der Deich war trocken: 'Drove my Chevy to the levee, but the levee was dry'."
+      ],
+      "lyrics": {
+        "real": [
+          "A long, long time ago",
+          "The day the music died",
+          "Drove my Chevy to the levee, but the levee was dry"
+        ],
+        "fake": "We drove the old station wagon down to the county line"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PRpiBpDy7MQ"
+      },
+      "coverUrl": "/covers/folk-don-pie.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "country-folk",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/American_Pie_(song)",
+        "https://en.wikipedia.org/wiki/Don_McLean",
+        "https://en.wikipedia.org/wiki/The_Day_the_Music_Died",
+        "https://www.songfacts.com/facts/don-mclean/american-pie",
+        "https://api.lyrics.ovh/v1/Don%20McLean/American%20Pie"
+      ]
+    },
+    {
+      "id": "yt-KgWWfOupBKo",
+      "title": "Pa Que Me Dan De Eso",
+      "artist": "Don Miguelo",
+      "year": 2014,
+      "country": "DO",
+      "genre": "Dembow / Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Party"
+      ],
+      "hints": [
+        "Der Sänger kommt aus der Dominikanischen Republik und gewann 2006 sowie 2012 jeweils einen Casandra Award.",
+        "Der Track erschien 2014 zunächst als eigenständige Single und wurde später mehrfach remixt – unter anderem mit El Alfa.",
+        "Der Refrain stellt eine Frage, auf die es keine Antwort gibt: 'Ja, eso me pone loquísimo' – der Hook läuft im Dembow-Rhythmus der Karibik.",
+        "Im Text rechnet der Sänger mit Kritikern ab ('El hater que viene y saluda') und verschiebt die Positionen im Club.",
+        "Die Zeile 'Me da pa' quitarme la ropa y la tiro pa'l aire' begründet, warum er die Leiber tatsächlich lockerer trägt."
+      ],
+      "lyrics": {
+        "real": [
+          "Me da pa' quitarme la ropa y la tiro pa'l aire",
+          "El hater que viene y saluda, le hago su desaire",
+          "Por eso e' que no me ligo con ustede'"
+        ],
+        "fake": "Yo soy el rey del barrio y nadie me puede detener"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KgWWfOupBKo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/don-miguelo-pa-que-me-dan-de-eso.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don_Miguelo",
+        "https://en.wikipedia.org/wiki/Dembow",
+        "https://itunes.apple.com/search?term=Don+Miguelo+Pa+Que+Me+Dan+De+Eso&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Don%20Miguelo&track_name=Pa%20Que%20Me%20Dan%20De%20Eso",
+        "https://api.lyrics.ovh/v1/Don%20Miguelo/Pa%20Que%20Me%20Dan%20De%20Eso"
+      ]
+    },
+    {
+      "id": "yt-8einbrSxt0M",
+      "title": "Angelito",
+      "artist": "Don Omar",
+      "year": 2006,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Nostalgic",
+        "Latin Heat",
+        "Classic"
+      ],
+      "hints": [
+        "Die Single erschien am 2. Mai 2006 über das Label Machete Music als erste Single eines Albums, das sich auf Platz sieben der US-Top-200-Charts platzierte.",
+        "Das Musikvideo wurde in Rom gedreht und zeigt historische Schauplätze der Ewigen Stadt.",
+        "Der Text erzählt eine düstere Geschichte: Ein Mädchen holt sich den Tod durch eine Krankheit und stirbt am Ende – der Sänger erzählt sie aus der Rückschau.",
+        "Der Song stieg auf drei Billboard-Charts für lateinische Musik auf Platz eins und erreichte in den USA auch die Top 100.",
+        "Der Refrain ruft das kleine Engelchen zum Fliegen: 'Y vuela, vuela, vuela'."
+      ],
+      "lyrics": {
+        "real": [
+          "Amaneció bajo las alas de la muerte",
+          "Y vuela, vuela, vuela",
+          "Marqué tu partida, angelito"
+        ],
+        "fake": "La ciudad respira distinto cuando tú te vas"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8einbrSxt0M"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/don-omar-angelito.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Angelito_(Don_Omar_song)",
+        "https://en.wikipedia.org/wiki/King_of_Kings_(Don_Omar_album)",
+        "https://en.wikipedia.org/wiki/Don_Omar",
+        "https://en.wikipedia.org/wiki/Don_Omar_discography",
+        "https://lrclib.net/api/get?artist_name=Don%20Omar&track_name=Angelito"
+      ]
+    },
+    {
+      "id": "yt-x622Sqjub-s",
+      "title": "Dutty Love ft. Natti Natasha",
+      "artist": "Don Omar",
+      "year": 2012,
+      "country": "PR",
+      "genre": "Reggaeton / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Track gewann 2013 den Billboard Latin Music Award für den besten Lateinrhythmus-Track des Jahres.",
+        "Er erschien am 9. März 2012 als erste Single des Kompilationsalbums 'Meet the Orphans 2: New Generation' – zuvor war er auf dem ersten Mixtape der Labelgruppe von 2011 zu hören.",
+        "Die zweite Stimme kommt von einer Sängerin aus der Dominikanischen Republik, die später auch solo Karriere machte.",
+        "Die Single stand in vier Billboard-Charts für lateinische Musik auf Platz eins und schaffte es 2012 in die Bubbling Under Hot 100.",
+        "Der Refrain kreist um die Angst, wieder falsch zu liegen: 'Me gustas pero tengo miedo de fallar en el amor'."
+      ],
+      "lyrics": {
+        "real": [
+          "Juré que no volvería a sucederme de nuevo",
+          "Hablando de amar",
+          "Me gustas pero tengo miedo de fallar en el amor"
+        ],
+        "fake": "Guardo tu nombre en un papel dentro de mi cartera"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x622Sqjub-s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/don-omar-dutty-love--ft--natti-natasha.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dutty_Love_(song)",
+        "https://en.wikipedia.org/wiki/Don_Omar",
+        "https://en.wikipedia.org/wiki/Don_Omar_discography",
+        "https://en.wikipedia.org/wiki/Natti_Natasha",
+        "https://lrclib.net/api/get?artist_name=Don%20Omar&track_name=Dutty%20Love"
+      ]
+    },
+    {
+      "id": "yt-SMM1WhmlQzI",
+      "title": "Hasta Abajo",
+      "artist": "Don Omar",
+      "year": 2009,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Latin Heat",
+        "Party"
+      ],
+      "hints": [
+        "Die Promotional-Single erschien am 27. Oktober 2009 über Machete Music und VI Music – gut ein Jahr vor dem dazugehörigen Kompilationsalbum.",
+        "Das Musikvideo wurde im November 2009 in New York City gedreht und war erst im November 2010 zu sehen.",
+        "Die Single war fünf Wochen in Folge Spitzenreiter der Billboard-Charts für Lateinrhythmus.",
+        "Im Text lässt der Sänger einen DJ die Reihenfolge der Party-Nummern vorgeben – es fallen große Namen der Karibik-Szene.",
+        "Der Refrain zählt rhythmisch herunter ('D-D-D') und mündet in einer Zeile, in der der Sänger sich selbst als Mittelpunkt des Geschehens outet."
+      ],
+      "lyrics": {
+        "real": [
+          "Así hasta abajo soy yo",
+          "La noche 'tá pa' un fili, un shot de Henny",
+          "Una buena disco, la música, un buen DJ"
+        ],
+        "fake": "La pista se enciende con la primera copa de la noche"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SMM1WhmlQzI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/don-omar-hasta-abajo.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hasta_Abajo_(Don_Omar_song)",
+        "https://en.wikipedia.org/wiki/Don_Omar_Presents:_Meet_the_Orphans",
+        "https://en.wikipedia.org/wiki/Don_Omar",
+        "https://en.wikipedia.org/wiki/Don_Omar_discography",
+        "https://lrclib.net/api/get?artist_name=Don%20Omar&track_name=Hasta%20Abajo"
+      ]
+    },
+    {
+      "id": "yt-Z-3su2ov8Vg",
+      "title": "Salió el Sol",
+      "artist": "Don Omar",
+      "year": 2006,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Latin Heat",
+        "Summer",
+        "Party"
+      ],
+      "hints": [
+        "Die Single erschien am 5. Oktober 2006 als dritte Single eines Albums, das auf Platz sieben der US-Top-200-Charts und auf Platz eins der Latein-Alben-Charts stieg.",
+        "Der Sänger ist ein Puertoricaner, dessen zweites Studioalbum über die Labelle Machete Music und VI Music erschien.",
+        "Das Musikvideo inszenierte Ron Jaramillo.",
+        "Der Text beginnt mit dem typischen Anruf des Sängers an sein Publikum und erzählt dann von einem Tag, an dem die Sonne scheint und die Frauen tanzen.",
+        "Der Refrain nennt eine Frau beim Namen: 'Julieta' – er will wissen, wie sie tanzt."
+      ],
+      "lyrics": {
+        "real": [
+          "Ella lo vuelve loco como se menea",
+          "La pistola, chambonea.",
+          "Como grande mueve la cola"
+        ],
+        "fake": "Las olas rompen contra la arena de la playa"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z-3su2ov8Vg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/don-omar-salio-el-sol-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/King_of_Kings_(Don_Omar_album)",
+        "https://en.wikipedia.org/wiki/Don_Omar",
+        "https://en.wikipedia.org/wiki/Don_Omar_discography",
+        "https://lrclib.net/api/get?artist_name=Don%20Omar&track_name=Salio%20El%20Sol",
+        "https://api.lyrics.ovh/v1/Don%20Omar/Salio%20El%20Sol"
+      ]
+    },
+    {
+      "id": "yt-lRWqYR3e7xE",
+      "title": "Taboo",
+      "artist": "Don Omar",
+      "year": 2010,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein lateinamerikanischer Pop-Track, der Reggaeton mit elektronischen Klängen und portugiesischen Textzeilen verbindet.",
+        "Der Song erschien auf dem vierten Studioalbum des puertoricanischen Sängers, das am 16. November 2010 über das Label Orfanato Music Group in den Handel kam.",
+        "Die dazugehörige Single erschien erst danach, am 24. Januar 2011.",
+        "Die Aufnahme mischt Spanisch und Portugiesisch: Im Text tauchen Brasiliens Küsten und der Samba von São Paulo auf.",
+        "Im Refrain dreht sich alles um eine heiße Tanzfläche: 'Mi nena, menea / Una cintura prendía en candela'."
+      ],
+      "lyrics": {
+        "real": [
+          "Llorando se fue la que un día me hizo llorar",
+          "Soca en São Paulo, de noche, la luna, las estrellas",
+          "Una sirena que hechiza y que está tomando el sol, uoh-oh-oh"
+        ],
+        "fake": "El autonóvel del barrio resonaba hasta la madrugada"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lRWqYR3e7xE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/don-omar-taboo.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Meet_the_Orphans",
+        "https://en.wikipedia.org/wiki/Don_Omar",
+        "https://itunes.apple.com/search?term=Don+Omar+Taboo&limit=3&entity=song",
+        "https://music.apple.com/us/song/1442784084",
+        "https://lrclib.net/api/get?artist_name=Don%20Omar&track_name=Taboo"
+      ]
+    },
+    {
+      "id": "yt-8HpG0l9cLos",
+      "title": "Zumba",
+      "artist": "Don Omar",
+      "year": 2012,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein lateinamerikanischer Tanz-Track, der Latin Pop mit elektronischen Klängen und karibischem Rhythmus verbindet.",
+        "Der Song erschien auf dem Album 'MTO2: New Generation', das am 1. Mai 2012 veröffentlicht wurde.",
+        "Die Aufnahme dauert gut vier Minuten und dreht sich durchgehend um Bewegung, Tanz und die Energie der Tanzfläche.",
+        "Eine Zeile verbindet den Tanz mit dem Alltag: 'No te canses, ponle ritmo de la vida'.",
+        "Das offizielle Video ist eine Werbekampagne für ein weltweit bekanntes Fitnessprogramm, das seinen Namen von diesem lateinamerikanischen Tanzwort hat."
+      ],
+      "lyrics": {
+        "real": [
+          "Pa' este baile no hay salida que corra el tiempo",
+          "Pégate y zumba conmigo con movimiento",
+          "Todo el mundo con las manos arriba"
+        ],
+        "fake": "Bailamos en la playa hasta que el sol se apaga"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8HpG0l9cLos",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "Dance Floor Fillers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/don-omar-zumba-campaign-video.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don_Omar",
+        "https://itunes.apple.com/search?term=Don+Omar+Zumba&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Don%20Omar/Zumba",
+        "https://lrclib.net/api/get?artist_name=Don%20Omar&track_name=Zumba",
+        "https://musicbrainz.org/ws/2/recording/e92bbb61-af1c-4459-ac89-ff7c313ad37b?inc=releases&fmt=json"
+      ]
+    },
+    {
+      "id": "disney-tangled-mother",
+      "title": "Mother Knows Best",
+      "artist": "Donna Murphy",
+      "year": 2010,
+      "country": "US",
+      "genre": "Soundtrack / Broadway / Villain",
+      "difficulty": "medium",
+      "mood": [
+        "Manipulative",
+        "Funny",
+        "Classic"
+      ],
+      "hints": [
+        "Aus dem Disney-Animationsfilm 'Tangled' (2010) - gesungen von der Synchronsprecherin der bösen Königin Gothel.",
+        "Die Musik schrieb Alan Menken, den Text Glenn Slater; das Lied entstand auf Wunsch der Regisseure Byron Howard und Nathan Greno.",
+        "Der Song erschien am 16. November 2010 auf dem Original-Soundtrack des Films und ist dort 3:10 Minuten lang.",
+        "Die Komponisten schrieben die Nummer bewusst im Stil eines klassischen Broadway-Musicals.",
+        "In der Handlung hält eine übervorsichtige Mutter ihr Kind im Turm fest und warnt vor der bösen Welt draußen - doch der Text kündigt schon ihr eigenes Ende an."
+      ],
+      "lyrics": {
+        "real": [
+          "All I have is one request",
+          "Don't forget it",
+          "You'll regret it"
+        ],
+        "fake": "She hummed a lullaby while the storm rolled over the hills"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-7jWt3JvJto",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-tangled-mother.jpg",
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mother_Knows_Best_(song)",
+        "https://en.wikipedia.org/wiki/Tangled_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Tangled_(2010_film)",
+        "https://itunes.apple.com/search?term=Donna+Murphy+Mother+Knows+Best&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Donna%20Murphy/Mother%20Knows%20Best"
+      ]
+    },
+    {
+      "id": "yt-tJxOXzE5A8w",
+      "title": "Hot Stuff (12\" Version)",
+      "artist": "Donna Summer",
+      "year": 1979,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Die Single ist die Lead-Single des siebten Studioalbums der US-Sängerin und erschien am 13. April 1979 über Casablanca Records.",
+        "Geschrieben wurde sie von Pete Bellotte, Harold Faltermeyer und Keith Forsey, produziert von Pete Bellotte und Giorgio Moroder.",
+        "Der rockige Sound wird durch eine Gitarre geprägt - gespielt von Jeff 'Skunk' Baxter, damals Gitarrist bei den Doobie Brothers.",
+        "Die 12-Zoll-Ausgabe ist eine Doppel-Langfassung: Zuerst läuft die vollständige Fassung von 6:47 Minuten, danach geht es nahtlos in den 4:55-Titel 'Bad Girls' über.",
+        "Das Lied stand drei Wochen auf Platz 1 der US-Hot-100 und verbrachte so viele Wochen in den Top Ten wie kein anderer Hit des Jahres 1979."
+      ],
+      "lyrics": {
+        "real": [
+          "Sittin' here eatin' my heart out waitin'",
+          "Dialed about a thousand numbers lately",
+          "Hot, hot, hot, hot stuff"
+        ],
+        "fake": "She took the night train downtown and never said a word to me"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tJxOXzE5A8w",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "80s Flashback",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/donna-summer-hot-stuff--12--version-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hot_Stuff_(Donna_Summer_song)",
+        "https://www.songfacts.com/facts/donna-summer/hot-stuff",
+        "https://itunes.apple.com/search?term=Donna+Summer+Hot+Stuff&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Donna%20Summer/Hot%20Stuff",
+        "https://lrclib.net/api/get?artist_name=Donna%20Summer&track_name=Hot%20Stuff"
+      ]
+    },
+    {
+      "id": "soul-donna-love",
+      "title": "I Feel Love",
+      "artist": "Donna Summer",
+      "year": 1977,
+      "country": "US",
+      "genre": "Electronic Disco / Hi-NRG",
+      "difficulty": "medium",
+      "mood": [
+        "Mysterious",
+        "Atmospheric",
+        "Energy"
+      ],
+      "hints": [
+        "Der Song entstand für das fünfte Studioalbum der US-Sängerin, das 1977 erschien.",
+        "Statt eines Orchesters setzte die Produktion komplett auf Synthesizer: Ein Moog-Synthesizer und ein Sequencer tragen den Track.",
+        "Weil das Instrument schnell verstimme, wurde die Passage in Blöcken von 20 bis 30 Sekunden aufgenommen und zwischenzeitlich neu gestimmt.",
+        "Das Stück besteht fast nur aus einem wiederholten Wort am Satzende, dazwischen nur 'Ooh' und ein zweites Wort, das niemand mitsingen kann.",
+        "Platz 1 erreichte der Song in Großbritannien, den Niederlanden, Belgien, Österreich und Australien - in der US-Hot-100 stand er nur auf Platz 6."
+      ],
+      "lyrics": {
+        "real": [
+          "it's so good, it's so good",
+          "heaven knows, heaven knows",
+          "I feel love, I feel love"
+        ],
+        "fake": "She danced through the night while the whole city was sleeping"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nTNcCKq6V2c",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-donna-love.jpg",
+      "packs": [
+        "electronic-synth",
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Feel_Love",
+        "https://www.songfacts.com/facts/donna-summer/i-feel-love",
+        "https://itunes.apple.com/search?term=Donna+Summer+I+Feel+Love&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Donna%20Summer/I%20Feel%20Love",
+        "https://lrclib.net/api/get?artist_name=Donna%20Summer&track_name=I%20Feel%20Love"
+      ]
+    },
+    {
+      "id": "disney-mulan-manout",
+      "title": "I'll Make a Man Out of You",
+      "artist": "Donny Osmond",
+      "year": 1998,
+      "country": "US",
+      "genre": "Soundtrack / Energy / Epic",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Funny"
+      ],
+      "hints": [
+        "Aus dem Disney-Animationsfilm 'Mulan' (1998) - gesungen vom Schauspieler, der auch den Offizier Shang spielt.",
+        "Die Musik schrieb und produzierte Matthew Wilder, den Text David Zippel; die Aufnahme erschien am 2. Juni 1998 auf dem Original-Soundtrack.",
+        "Im Film dient die Nummer als Trainingslied, mit dem der Offizier seine Rekruten drillt - Marschrhythmus, dazwischen die Zurufe 'Be a man'.",
+        "Der Text wurde später in Mandarin, Kantonesisch und Spanisch nachgesungen, unter anderem von Jackie Chan und von Cristian Castro.",
+        "Das Lied steht auf den Bestenlisten von 'Total Film' und der 'New York Post' und gilt als eines der stärksten Lieder des Animationsfilms."
+      ],
+      "lyrics": {
+        "real": [
+          "Let's get down to business",
+          "Tranquil as a forest",
+          "But on fire within"
+        ],
+        "fake": "Bold as the morning sun over the pass"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=elBKil5zE2g",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mulan-manout.jpg",
+      "packs": [
+        "piano-ballads",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I%27ll_Make_a_Man_Out_of_You",
+        "https://en.wikipedia.org/wiki/Mulan_(1998_film)",
+        "https://itunes.apple.com/search?term=Donny+Osmond+Make+a+Man+Out+of+You&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Donny%20Osmond/I%27ll%20Make%20a%20Man%20Out%20of%20You",
+        "https://lrclib.net/api/get?artist_name=Donny%20Osmond&track_name=I%27ll%20Make%20a%20Man%20Out%20of%20You"
+      ]
+    },
+    {
+      "id": "dance-dr-alban-its-my-life",
+      "title": "It's My Life",
+      "artist": "Dr. Alban",
+      "year": 1992,
+      "country": "SE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Dance"
+      ],
+      "hints": [
+        "Eurodance-Single der frühen 1990er-Jahre: Eines der prägendsten Songs der \"goldenen Ära\" dieses Genres, 1992 in Schweden beim Label SweMix erschienen.",
+        "Der Interpret wurde in Nigeria geboren, studierte in Schweden Zahnmedizin und finanzierte sein Studium als Disc-Jockey.",
+        "Musik und Produktion lagen beim schwedischen Produzenten Denniz PoP, der das Stück gemeinsam mit dem Sänger schrieb; es war die erste Single des zweiten Studioalbums.",
+        "Die Single erreichte in Österreich, Flandern, Deutschland, Italien, den Niederlanden und Schweden Platz eins, in Großbritannien und Irland Platz zwei - und wurde 1993 wegen eines Werbespots für die Tampon-Marke Tampax neu vermarktet.",
+        "Im Refrain singt er: 'Stop bugging me, stop bothering me'."
+      ],
+      "lyrics": {
+        "real": [
+          "Mind your business and leave my business",
+          "Very little knowledge is dangerous",
+          "What you see is what you get"
+        ],
+        "fake": "Dancing on the boulevard, singing through the night"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oW0VovnyjPY",
+        "spotify": "https://open.spotify.com/track/4TOGkYS141L15SkVosAp7Z",
+        "amazonMusic": "https://music.amazon.com/albums/B00777UFZY?trackAsin=B00777UHPM"
+      },
+      "coverUrl": "/covers/dance-dr-alban-its-my-life.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Dance Floor Fillers",
+        "electronic-synth",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/It's_My_Life_(Dr._Alban_song)",
+        "https://en.wikipedia.org/wiki/Dr._Alban",
+        "https://en.wikipedia.org/wiki/One_Love_(Dr._Alban_album)",
+        "https://en.wikipedia.org/wiki/Eurodance",
+        "https://api.lyrics.ovh/v1/Dr%20Alban/It%27s%20My%20Life"
+      ]
+    }
+  ]
+}

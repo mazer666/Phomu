@@ -1,0 +1,745 @@
+{
+  "songs": [
+    {
+      "id": "class-rossini-william",
+      "title": "William Tell Overture",
+      "artist": "Gioachino Rossini",
+      "year": 1829,
+      "country": "IT",
+      "genre": "Classical / Opera Overture",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Heroic",
+        "Fast"
+      ],
+      "hints": [
+        "Ein rein instrumentales Vorspiel ohne Gesang, das heute vor allem durch seinen Einsatz in Film und Fernsehen bekannt ist.",
+        "Der Komponiker hatte die Oper dafür gehalten, sein Meisterwerk zu werden - sie flopte, berühmt wurde erst das Vorspiel.",
+        "Das Werk entstand kurz vor dem Rückzug des Komponisten von der Bühne, der sich danach dem Kochen widmete.",
+        "Der Mittelteil mit prunkvollem Trompeten-Fanfarensignal leitet in einen atemlosen Galopp mit Piccoloflöte über.",
+        "Der rasante Schlussabschnitt wurde weltweit zum Titelthema einer US-Radioserie um einen einsamen Revolverhelden."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SAogRjTBP4Y",
+        "spotify": "https://open.spotify.com/track/45SmnjVvKJ2OZEo2EScn32",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/class-rossini-william.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/William_Tell_(opera)",
+        "https://www.songfacts.com/facts/gioachino-rossini/william-tell-overture",
+        "https://itunes.apple.com/search?term=William+Tell+Overture+Rossini&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=SAogRjTBP4Y",
+        "https://en.wikipedia.org/wiki/The_Lone_Ranger"
+      ]
+    },
+    {
+      "id": "class-verdi-donna",
+      "title": "La Donna è Mobile (Rigoletto)",
+      "artist": "Giuseppe Verdi",
+      "year": 1851,
+      "country": "IT",
+      "genre": "Romantic / Opera",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Lively",
+        "Classic"
+      ],
+      "hints": [
+        "Eine berühmte Arie für Tenorstimmen, gesungen von einem jungen Fürsten, der seine Liebhaberinnen wechselt.",
+        "Das Stück entstand für eine Uraufführung in Venedig und wurde dort schon am Tag danach auf den Straßen gesungen.",
+        "Der Komponist hielt die Melodie bis wenige Stunden vor der Premiere geheim - Sänger und Orchester sollten sie erst im Theater kennenlernen.",
+        "Die Arie gilt als Prüfstein für jede Tenorstimme; der legendäre Enrico Caruso nahm sie bereits 1902 mit Klavier auf.",
+        "Der Text besingt die Unbeständigkeit der Frauen und endet mit den Worten 'sempre un amabile, leggiadro viso'."
+      ],
+      "lyrics": {
+        "real": [
+          "La donna è mobile, qual piuma al vento",
+          "muta d'accento, e di pensiero",
+          "Sempre un amabile, leggiadro viso"
+        ],
+        "fake": "Cambio volto e vesti, e nessuno se ne accorge"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SrQV5x1sczs",
+        "spotify": "https://open.spotify.com/track/50KVOLNNqft8SJr5ybrv8G",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/class-verdi-donna.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rigoletto",
+        "https://en.wikipedia.org/wiki/Le_roi_s%27amuse",
+        "https://en.wikipedia.org/wiki/Enrico_Caruso",
+        "https://itunes.apple.com/search?term=La+Donna+e+Mobile+Verdi&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=SrQV5x1sczs"
+      ]
+    },
+    {
+      "id": "soul-gladys-train",
+      "title": "Midnight Train to Georgia",
+      "artist": "Gladys Knight & The Pips",
+      "year": 1973,
+      "country": "US",
+      "genre": "Soul / R&B",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Honest",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Soul-Klassiker, der das Scheitern in Los Angeles und den Traum vom Filmruhm erzählt.",
+        "Der Song entstand ursprünglich als Flugsong über Houston - für die Neuaufnahme wurde daraus eine nächtliche Fahrt in den Heimatstaat der Sängerin.",
+        "Die Band verließ Motown und wechselte zu Buddah Records - der erste große Charterfolg kam erst danach.",
+        "Zum ersten Mal stieg die Gruppe damit auf Platz 1 der US-Hot-100 und gewann den Grammy für den besten R&B-Gesang einer Gruppe.",
+        "Der Text erzählt von einem gescheiterten Schauspieler, der nachts zurück in seinen Heimatstaat fährt - sie will ihn begleiten."
+      ],
+      "lyrics": {
+        "real": [
+          "L.A proved too much for the man",
+          "On that midnight train to Georgia",
+          "But he sure found out the hard way"
+        ],
+        "fake": "She counts the miles in silence by the kitchen window"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A0F9lh8TiSM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gladys-train.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Midnight_Train_to_Georgia",
+        "https://www.songfacts.com/facts/gladys-knight-the-pips/midnight-train-to-georgia",
+        "https://itunes.apple.com/search?term=Midnight+Train+to+Georgia+Gladys+Knight&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=A0F9lh8TiSM",
+        "https://en.wikipedia.org/wiki/Jim_Weatherly"
+      ]
+    },
+    {
+      "id": "glass-animals-heat-waves-2020",
+      "title": "Heat Waves",
+      "artist": "Glass Animals",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Indie Pop",
+      "difficulty": "hard",
+      "mood": [
+        "60s/70s Legends",
+        "Chill",
+        "Dreamy",
+        "Heartbreak",
+        "Modern",
+        "Nostalgic",
+        "Popular",
+        "Rainy Day"
+      ],
+      "hints": [
+        "Frontmann Dave Bayley schrieb das Stück in nur einer Stunde - ausgelöst durch den Tod eines Freundes, dessen Geburtstag im Juni liegt.",
+        "Das Stück erschien 2020 auf dem Album 'Dreamland' und blieb zunächst ohne Resonanz.",
+        "Eine TikTok-Welle und ein Einsatz als Soundtrack in einem Fußballspiel brachten das Lied 2021 zurück in die Charts - in den USA brauchte es 59 Wochen bis Platz 1.",
+        "Traumhafter Indie-Pop mit schwimmenden Synthesizern, einem emotionalen Refrain und einem fast hypnotischen Groove.",
+        "Das offizielle Video entstand während der Pandemie mit Handykameras der Nachbarn - ein 'Liebesbrief an die Live-Musik'."
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes all I think about is you, late nights in the middle of June",
+          "Heat waves been faking me out, can't make you happier now",
+          "I just wonder what you're dreaming of"
+        ],
+        "fake": "The winter cold is coming to take my breath away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mRD0-GxqHVo",
+        "spotify": "https://open.spotify.com/track/6CDzDgIUqeDY5g8ujExx2f",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/glass-animals-heat-waves-2020.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Heat_Waves",
+        "https://www.songfacts.com/facts/glass-animals/heat-waves",
+        "https://itunes.apple.com/search?term=Heat+Waves+Glass+Animals&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=mRD0-GxqHVo",
+        "https://www.bbc.com/news/entertainment-arts-56667366"
+      ]
+    },
+    {
+      "id": "jazz-glennmiller-mood",
+      "title": "In the Mood",
+      "artist": "Glenn Miller",
+      "year": 1939,
+      "country": "US",
+      "genre": "Swing / Big Band",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Instrumentalstück ohne Gesang, das zum Standard des Big-Band-Repertoires wurde.",
+        "Der Titel war damals eine gewagte Anspielung - er meint mehr als bloße Stimmung.",
+        "Die Melodie stammt vom Tenorsaxofonisten eines Orchesters, das den Song bereits 1938 für Decca aufnahm.",
+        "Das Stück basiert auf einer Aufnahme von 1930 und wurde 1939 für das Label Bluebird eingespielt.",
+        "Später prägte der Titel den Soundtrack eines US-Filmhits und den Schluss einer britischen Beatles-Single von 1967."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dVh3ZzVDZik",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-glennmiller-mood.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/In_the_Mood",
+        "https://www.songfacts.com/facts/glenn-miller/in-the-mood",
+        "https://itunes.apple.com/search?term=In+the+Mood+Glenn+Miller&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=dVh3ZzVDZik",
+        "https://en.wikipedia.org/wiki/Glenn_Miller"
+      ]
+    },
+    {
+      "id": "gloria-gaynor-i-will-survive-1978",
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "year": 1978,
+      "country": "US",
+      "genre": "Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Heartbreak",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Ein Disco-Klassiker, der inzwischen als Hymne der Selbstermächtigung gilt.",
+        "Der Song entstand aus der Kündigung eines Textautors bei Motown - in diesem Moment reifte die Idee zum Titel.",
+        "Zunächst als B-Seite erschienen, drehten Discotheken-Pioniere die Single um - so wurde daraus ein Welterfolg.",
+        "Das Stück gewann den Grammy in der Kategorie 'Best Disco Recording' - sie wurde nur ein einziges Mal vergeben.",
+        "Die Sängerin sang den Part mit einem Rückengips am Oberkörper - unmittelbar nach einer Wirbelsäulen-OP."
+      ],
+      "lyrics": {
+        "real": [
+          "At first I was afraid, I was petrified",
+          "Kept thinkin' I could never live without you by my side",
+          "I've got all my life to live, and I've got all my love to give"
+        ],
+        "fake": "So I walked out that door and I never looked back at you"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6dYWe1c3OyU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/gloria-gaynor-i-will-survive-1978.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "60s & 70s Soul & Rock Legends",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Will_Survive",
+        "https://www.songfacts.com/facts/gloria-gaynor/i-will-survive",
+        "https://itunes.apple.com/search?term=I+Will+Survive+Gloria+Gaynor&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=6dYWe1c3OyU",
+        "https://en.wikipedia.org/wiki/Love_Tracks_(Gloria_Gaynor_album)"
+      ]
+    },
+    {
+      "id": "soul-gnarls-crazy",
+      "title": "Crazy",
+      "artist": "Gnarls Barkley",
+      "year": 2006,
+      "country": "US",
+      "genre": "Neo-Soul / Alternative",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Intelligent"
+      ],
+      "hints": [
+        "Das Stück leaked bereits Monate vor der offiziellen Veröffentlichung und wurde so zu einem der ersten Leaks, die im Internet ein Chartphänomen auslösten.",
+        "Musikalisch sampelt die Single den Soundtrack eines europäischen Western von 1968 - die Komponisten jenes Films erhalten dafür eine Urheberschaft.",
+        "Der Text entstand aus einem Gespräch darüber, wie man Menschen dazu bringt, einen Künstler ernst zu nehmen - aufgenommen wurde die Nummer in einem einzigen Take.",
+        "Offiziell erschien sie am 13. März 2006 und war die erste Single, die in Großbritannien allein wegen der Downloadzahlen die Hitparade anführte.",
+        "Bei den Grammy Awards gewann das Duo damit den Preis für die beste urbane alternative Darbietung."
+      ],
+      "lyrics": {
+        "real": [
+          "I remember, I remember when I lost my mind",
+          "There was something so pleasant about that place",
+          "I just knew too much"
+        ],
+        "fake": "The penny drops and the old streetlight hums a lullaby"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-N4jf6rtyuw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/soul-gnarls-crazy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "World, Reggae & Soul",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Crazy_(Gnarls_Barkley_song)",
+        "https://en.wikipedia.org/wiki/Gnarls_Barkley",
+        "https://www.songfacts.com/facts/gnarls-barkley/crazy",
+        "https://itunes.apple.com/search?term=Gnarls+Barkley+Crazy&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=-N4jf6rtyuw"
+      ]
+    },
+    {
+      "id": "yt-bYBLt_1HcQE",
+      "title": "home",
+      "artist": "gnash",
+      "year": 2016,
+      "country": "US",
+      "genre": "Pop Rap",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Heartbreak",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der US-Rapper wurde in Los Angeles geboren und nahm seine ersten beiden Mini-Alben in einer Garage auf.",
+        "Der Text erzählt vom Umzug der Familie, von einer Erkrankung des Vaters und davon, dass am Ende nur der Zusammenhalt zählt.",
+        "Sein Durchbruchssong mit der Sängerin Olivia O'Brien erreichte Platz 10 der Billboard-Hot-100 und Nummer 1 in Australien.",
+        "Der Song erschien im Herbst 2016 nur zwei Wochen nach einem Gastauftritt, der es auf Platz 20 der US-Charts brachte.",
+        "Das offizielle Video ist eine Zusammenarbeit mit einem Gastrapper und wurde auf dem eigenen Kanal des Künstlers veröffentlicht."
+      ],
+      "lyrics": {
+        "real": [
+          "Doesn't matter where we are, we are never far apart",
+          "When I'm with you I am home",
+          "If all I have is home, then all I am is happy"
+        ],
+        "fake": "Every night in the city there is a party in my heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bYBLt_1HcQE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/gnash-home-ft--johnny-yukon--music-video-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Gnash_(musician)",
+        "https://itunes.apple.com/lookup?id=1167695282&entity=song",
+        "https://api.lyrics.ovh/v1/gnash/home%20(feat.%20johnny%20yukon)",
+        "https://www.youtube.com/watch?v=bYBLt_1HcQE",
+        "https://en.wikipedia.org/wiki/Lights_Down_Low_(Max_song)"
+      ]
+    },
+    {
+      "id": "metal-gojira-stranded",
+      "title": "Stranded",
+      "artist": "Gojira",
+      "year": 2016,
+      "country": "FR",
+      "genre": "Progressive Metal / Groove Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Die Band aus Südwestfrankreich veröffentlichte den Song im Frühjahr 2016 als erste Auskopplung ihres sechsten Studioalbums.",
+        "Das Album entstand im eigenen Studio in New York, wurde vom Gitarristen und Sänger selbst produziert und von Ted Jensen gemastert.",
+        "Die Platte galt als bewusste Abkehr von den bisherigen Klängen: zugänglicher, atmosphärischer und mit deutlich mehr Clean Vocals.",
+        "Das Riff des Titelsongs landete 2019 auf Platz 8 einer Rangliste der besten Gitarrenriffs des Jahrzehnts.",
+        "Die Band wurde von der Times als die französischen Metal-Meister bezeichnet und vom Magazin Metal Hammer zur Band des Jahrzehnts gekürt."
+      ],
+      "lyrics": {
+        "real": [
+          "A growing sickness in the heart",
+          "Stranded in the night, stranded in the cold",
+          "Don't lock the door on me"
+        ],
+        "fake": "Beneath the ice the earth is groaning, slowly dying"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FNdC_3LR2AI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/metal-gojira-stranded.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Magma_(Gojira_album)",
+        "https://en.wikipedia.org/wiki/Gojira_(band)",
+        "https://itunes.apple.com/search?term=Gojira+Stranded&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=FNdC_3LR2AI",
+        "https://www.azlyrics.com/lyrics/gojira/stranded.html"
+      ]
+    },
+    {
+      "id": "90s-goo-goo-dolls-iris",
+      "title": "Iris",
+      "artist": "Goo Goo Dolls",
+      "year": 1998,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Power Ballad"
+      ],
+      "hints": [
+        "Wurde für den Soundtrack des Films 'Stadt der Engel' (City of Angels) geschrieben.",
+        "Der Gitarrist nutzt eine ungewöhnliche Stimmung: Die tiefste Saite steht auf B, alle anderen auf D in verschiedenen Oktaven.",
+        "Mit 17 Wochen auf Platz 1 der US-Adult-Top-40-Liste war der Song damals ein Rekord, in der reinen Airplay-Liste sogar 18 Wochen lang.",
+        "Der Text drückt das Verlangen aus, von jemandem wirklich 'gesehen' zu werden.",
+        "Refrain: 'I just want you to know who I am!'"
+      ],
+      "lyrics": {
+        "real": [
+          "And I'd give up forever to touch you, 'cause I know that you feel me somehow",
+          "You're the closest to heaven that I'll ever be, and I don't want to go home right now",
+          "And I don't want the world to see me, 'cause I don't think that they'd understand"
+        ],
+        "fake": "In the shadow of the night, I will hold you tight and treat you right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+        "spotify": "https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs",
+        "amazonMusic": "https://music.amazon.com/tracks/B001RN2H96"
+      },
+      "coverUrl": "/covers/90s-goo-goo-dolls-iris.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Movie Hits",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Iris_(song)",
+        "https://en.wikipedia.org/wiki/Goo_Goo_Dolls",
+        "https://itunes.apple.com/search?term=Goo+Goo+Dolls+Iris&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+        "https://www.azlyrics.com/lyrics/googoodolls/iris.html"
+      ]
+    },
+    {
+      "id": "yt-OJG0EXOVqpE",
+      "title": "Over and Over",
+      "artist": "Goo Goo Dolls",
+      "year": 2016,
+      "country": "US",
+      "genre": "Pop Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Heartbreak",
+        "Nostalgic",
+        "Romantic"
+      ],
+      "hints": [
+        "Die Band um John Rzeznik veröffentlichte ihr elftes Studioalbum ohne festen Schlagzeuger - aufgenommen wurde es erstmals zu zweit.",
+        "Der Text handelt von einer zerbrochenen Beziehung, die wieder zusammengesetzt werden soll - vom Aufsammeln der Bruchstücke.",
+        "Aufgenommen wurde das Album in mehreren Studios, unter anderem bei Henson in Hollywood und GCR Audio in Buffalo.",
+        "Der Song erschien im Herbst 2016 als zweite Auskopplung des Albums.",
+        "Das Album erreichte in den USA Platz 27 der Billboard-200-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "Picking up the pieces out they left you in again",
+          "Are ya lost in the past thinking what might have been",
+          "Stare into the mirror but no one that you know is there"
+        ],
+        "fake": "Turn down the lights, I'm waiting on you tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OJG0EXOVqpE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/goo-goo-dolls-over-and-over--official-music-video-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "Rock Anthems",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Boxes_(Goo_Goo_Dolls_album)",
+        "https://en.wikipedia.org/wiki/Goo_Goo_Dolls",
+        "https://itunes.apple.com/search?term=Goo+Goo+Dolls+Over+and+Over&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=OJG0EXOVqpE",
+        "https://api.lyrics.ovh/v1/Goo%20Goo%20Dolls/Over%20and%20Over"
+      ]
+    },
+    {
+      "id": "folk-gordon-sundown",
+      "title": "Sundown",
+      "artist": "Gordon Lightfoot",
+      "year": 1974,
+      "country": "CA",
+      "genre": "Folk / Country influence",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Der kanadische Singer-songwriter nahm das Stück im Herbst 1973 in einem Tonstudio in Toronto auf und veröffentlichte es im Frühjahr 1974 als erste Single seines gleichnamigen Albums.",
+        "Es war das einzige Lied des Künstlers, das in den USA Platz 1 der Billboard-Hot-100 erreichte.",
+        "Der Text schildert eine eifersüchtige Beziehung - der Erzähler droht der untreuen Partnerin.",
+        "Die Gitarren-Soloparts spielte Red Shea auf einer 1969 Gibson Les Paul Custom mit Bigsby-Vibrato.",
+        "Der Refrain warnt: 'you better take care, if I find you been creeping round my back stairs'."
+      ],
+      "lyrics": {
+        "real": [
+          "Sundown, you better take care",
+          "If I find you been creeping 'round my back stairs",
+          "She's a hard loving woman, got me feeling mean"
+        ],
+        "fake": "The highway hums low and the evening settles down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1IBdZ645S-o",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/folk-gordon-sundown.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sundown_(Gordon_Lightfoot_song)",
+        "https://en.wikipedia.org/wiki/Gordon_Lightfoot",
+        "https://itunes.apple.com/search?term=Gordon+Lightfoot+Sundown&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=1IBdZ645S-o",
+        "https://www.azlyrics.com/lyrics/gordonlightfoot/sundown.html"
+      ]
+    },
+    {
+      "id": "indie-gorillaz-feel-good-inc",
+      "title": "Feel Good Inc.",
+      "artist": "Gorillaz",
+      "year": 2005,
+      "country": "GB",
+      "genre": "Alternative Hip Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Groovy",
+        "Electronic"
+      ],
+      "hints": [
+        "Der Text entstand 2003 auf dem Weg zu einem Festival, bei dem der Musiker erstmals eine Talschaft voller Windmühlen sah - daher der Windmühlen-Refrain.",
+        "Das zweite Album der Band erschien im Mai 2005 und wurde vor allem von Danger Mouse produziert; der Song war die erste Single des Albums.",
+        "Die Band ist eine erfundene Zeichenfigur-Gruppe mit vier fiktiven Mitgliedern, 1998 von einem Musiker und einem Cartoonisten gegründet.",
+        "Die US-Hip-Hop-Gruppe aus Amityville auf Long Island rappt im Song mit - und ein Mitglied davon lieferte auch das berühmte Lachen am Anfang.",
+        "Der markante Hook besteht fast nur aus einer rhythmischen Floskel: 'sha, sha ba da, sha ba dak'."
+      ],
+      "lyrics": {
+        "real": [
+          "City's breaking down on a camel's back",
+          "You got a new horizon, it's ephemeral style",
+          "Windmill, windmill for the land"
+        ],
+        "fake": "Concrete blooms in the afternoon, the cracks run deep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cOOKTPfqbX4",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=BRyviMSO9c0",
+          "https://www.youtube.com/watch?v=lyBQR8xrcNE",
+          "https://www.youtube.com/watch?v=MRyPSOyC7_c"
+        ],
+        "spotify": "https://open.spotify.com/track/0d28khcov6AiegSCpG5TuT",
+        "spotifyFreePreview": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DTQCHLHY"
+      },
+      "coverUrl": "/covers/indie-gorillaz-feel-good-inc.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "electronic-synth",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Feel_Good_Inc.",
+        "https://en.wikipedia.org/wiki/Demon_Days",
+        "https://en.wikipedia.org/wiki/Gorillaz",
+        "https://en.wikipedia.org/wiki/De_La_Soul",
+        "https://api.lyrics.ovh/v1/Gorillaz/Feel%20Good%20Inc."
+      ]
+    }
+  ]
+}

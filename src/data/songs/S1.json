@@ -1,0 +1,729 @@
+{
+  "songs": [
+    {
+      "id": "80s-sabrina-boys",
+      "title": "Boys (Summertime Love)",
+      "artist": "Sabrina",
+      "year": 1987,
+      "country": "IT",
+      "genre": "Dance-Pop / Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Summer",
+        "Dance"
+      ],
+      "hints": [
+        "Italo-Disco-Titel einer italienischen Sängerin, erschienen im Mai 1987 als dritte Single ihres ersten Studioalbums.",
+        "Der Track wurde von Komponist und Produzent Claudio Cecchetto geschrieben und produziert.",
+        "In Frankreich, Israel und der Schweiz erreichte er Platz 1, in Österreich, Finnland und Westdeutschland die Top 5.",
+        "Es war die erste Veröffentlichung der Sängerin im Vereinigten Königreich und kam dort im Juni 1988 auf Platz 3.",
+        "Der Refrain preist die heißen Tage am Strand; 1995 und 2003 erschienen in Frankreich zwei weitere Bearbeitungen."
+      ],
+      "lyrics": {
+        "real": [
+          "Boys, boys, boys",
+          "Everybody, summertime love",
+          "Set your body free"
+        ],
+        "fake": "Dancing in the street, moving to the beat of my own drum tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_OIPDU8kCNo",
+        "spotify": "https://open.spotify.com/track/1uI848raFaNWwe9HjHpjQ5",
+        "amazonMusic": "https://music.amazon.com/tracks/B01HIUWQ06"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-sabrina-boys.jpg",
+      "packs": [
+        "80s Flashback",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Boys_(Summertime_Love)",
+        "https://de.wikipedia.org/wiki/Boys_(Summertime_Love)",
+        "https://en.wikipedia.org/wiki/Boys_(Summertime_Love)#Charts",
+        "https://music.apple.com/us/album/sabrina/1164028559",
+        "https://api.lyrics.ovh/v1/Sabrina/Boys%20(Summertime%20Love)"
+      ]
+    },
+    {
+      "id": "yt-eVli-tstM5E",
+      "title": "Espresso",
+      "artist": "Sabrina Carpenter",
+      "year": 2024,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Confident",
+        "Happy",
+        "Modern",
+        "Modern Hits",
+        "Popular"
+      ],
+      "hints": [
+        "US-amerikanische Sängerin, veröffentlicht im April 2024 als erste Single ihres sechsten Studioalbums.",
+        "Die Aufnahme entstand 2023 in den Flow Studios im französischen Dorf Chailland, wo sie nach einem Konzert in Paris blieb.",
+        "Der Track läuft mit 104 Schlägen pro Minute und wurde von Julian Bunetta produziert.",
+        "In den USA kam die Single auf Platz 3 der Billboard Hot 100, die erste Top-5-Platzierung der Sängerin dort.",
+        "In mehr als 20 Ländern stand sie auf Platz 1, darunter Australien, Belgien, Irland, Norwegen und Großbritannien."
+      ],
+      "lyrics": {
+        "real": [
+          "Now he's thinkin' 'bout me every night, oh",
+          "Is it that sweet? I guess so",
+          "That's that me espresso"
+        ],
+        "fake": "Sugar dissolving in the cup while I make him wait outside"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eVli-tstM5E",
+        "spotify": "https://open.spotify.com/track/5KRy7KqBVoxYVSnzdkdq2w"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/finale-sabrina-espresso.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Espresso_(song)",
+        "https://de.wikipedia.org/wiki/Espresso_(Lied)",
+        "https://www.songfacts.com/facts/sabrina-carpenter/espresso",
+        "https://lrclib.net/api/get?artist_name=Sabrina%20Carpenter&track_name=Espresso",
+        "https://api.lyrics.ovh/v1/Sabrina%20Carpenter/Espresso"
+      ]
+    },
+    {
+      "id": "yt-mNHNktxbjdk",
+      "title": "Love On",
+      "artist": "Selena Gomez",
+      "year": 2024,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "US-amerikanische Sängerin, veröffentlicht im Februar 2024 als eigenständige Single über Interscope.",
+        "Der Text entstand gemeinsam mit Julia Michaels, produziert wurde von The Monsters & Strangerz und Isaiah Tejada.",
+        "Das Musikvideo inszeniert eine pariser Liebesgeschichte und erschien am Tag der Veröffentlichung.",
+        "Die Single erreichte in Kanada und auf der US-Billboard-Hot-100 jeweils Platz 56.",
+        "Refrain-Zeile: 'I'm a rollercoaster ride, baby, jump on'."
+      ],
+      "lyrics": {
+        "real": [
+          "Wait 'til I turn my love on",
+          "I'm a rollercoaster ride, baby, jump on",
+          "Slip off your jeans, slide in the sheets"
+        ],
+        "fake": "Neon hearts in the window, we were young and out of control"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mNHNktxbjdk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/sabrina-carpenter-love-on.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Love_On",
+        "https://de.wikipedia.org/wiki/Love_On",
+        "https://www.youtube.com/watch?v=mNHNktxbjdk",
+        "https://lrclib.net/api/get?artist_name=Selena%20Gomez&track_name=Love%20On",
+        "https://api.lyrics.ovh/v1/Selena%20Gomez/Love%20On"
+      ]
+    },
+    {
+      "id": "yt-62yox0F5lcA",
+      "title": "Please Please Please",
+      "artist": "Sabrina Carpenter",
+      "year": 2024,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "US-amerikanische Sängerin, veröffentlicht im Juni 2024 als zweite Single ihres sechsten Studioalbums.",
+        "Aufgenommen wurde der Song in den Electric Lady Studios in New York und produziert von Jack Antonoff.",
+        "Der Text kreist um die Sorge, dass der schlechte Ruf eines Freundes die Beziehung und den eigenen Ruf beschädigt.",
+        "Im Februar 2025 erschien zur Deluxe-Ausgabe des Albums eine Duett-Version mit der US-Country-Ikone Dolly Parton.",
+        "Refrain-Zeile: 'I know I have good judgment, I know I have good taste'."
+      ],
+      "lyrics": {
+        "real": [
+          "I know I have good judgment, I know I have good taste",
+          "It's funny and it's ironic that only I feel that way",
+          "Whatever devil's inside you, don't let him out tonight"
+        ],
+        "fake": "Honey, don't you dare, leave me hanging in the blue"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=62yox0F5lcA",
+        "spotify": "https://open.spotify.com/track/5N3hjp1WNayUPZrA8kJmJP"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/sabrina-carpenter-please-please-please.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Please_Please_Please_(Sabrina_Carpenter_song)",
+        "https://de.wikipedia.org/wiki/Please_Please_Please",
+        "https://www.songfacts.com/facts/sabrina-carpenter/please-please-please",
+        "https://lrclib.net/api/get?artist_name=Sabrina%20Carpenter&track_name=Please%20Please%20Please",
+        "https://api.lyrics.ovh/v1/Sabrina%20Carpenter/Please%20Please%20Please"
+      ]
+    },
+    {
+      "id": "jazz-sade-smooth",
+      "title": "Smooth Operator",
+      "artist": "Sade",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Smooth Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sexy",
+        "Cool",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Britische Band, erschienen im August 1984 als dritte Single des Debütalbums 'Diamond Life'.",
+        "Der Song entstand aus der Feder der Sängerin, des Keyboarders Stuart Matthewman und des Co-Autoren Ray St. John; produziert von Robin Millar.",
+        "In den USA kam der Track im Mai 1985 auf Platz 5 der Billboard Hot 100 und zwei Wochen auf Platz 1 der Adult-Contemporary-Liste.",
+        "In Großbritannien erreichte er Platz 19, in Frankreich Platz 9; das Musikvideo drehte Julien Temple mit Michael Feast in der Hauptrolle.",
+        "Refrain-Zeile: 'Coast to coast, LA to Chicago, western male'."
+      ],
+      "lyrics": {
+        "real": [
+          "We move in space with minimum waste and maximum joy",
+          "He's a smooth operator",
+          "Coast to coast, LA to Chicago, western male"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of our broken dream tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4TYv2PhG89A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-sade-smooth.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Smooth_Operator",
+        "https://de.wikipedia.org/wiki/Smooth_Operator",
+        "https://www.songfacts.com/facts/sade/smooth-operator",
+        "https://lrclib.net/api/get?artist_name=Sade&track_name=Smooth%20Operator",
+        "https://api.lyrics.ovh/v1/Sade/Smooth%20Operator"
+      ]
+    },
+    {
+      "id": "yt-Ypw7cVsnQxU",
+      "title": "Roses (Imanbek Remix)",
+      "artist": "SAINt JHN & Imanbek",
+      "year": 2020,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Der US-Rapper veröffentlichte den Originaltrack 2016 auf seinem Debütalbum 'Collection One'.",
+        "Der kasachische Producer verwandelte den Song 2019 in eine Slap-House-Version mit Disco-Elementen.",
+        "Im März 2020 erreichte die Single Platz 1 der britischen Charts.",
+        "2020 machte ein TikTok-Trend den Track weltweit bekannt; in Deutschland, Österreich und der Schweiz stand er in den Top 10.",
+        "Refrain-Zeile: 'Turn up baby, turn up, when I turn it on'."
+      ],
+      "lyrics": {
+        "real": [
+          "I walked in the corner with the body screaming dolo",
+          "All I need is roses",
+          "Turn up baby, turn up, when I turn it on"
+        ],
+        "fake": "Neon in the mirror, we ride the night away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ypw7cVsnQxU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/saint-jhn---imanbek-roses--imanbek-remix-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Roses_(Saint_Jhn_song)",
+        "https://de.wikipedia.org/wiki/Saint_Jhn",
+        "https://www.songfacts.com/facts/saint-jhn/roses",
+        "https://lrclib.net/api/get?artist_name=SAINt%20JHN&track_name=Roses",
+        "https://api.lyrics.ovh/v1/SAINt%20JHN/Roses"
+      ]
+    },
+    {
+      "id": "hiphop-saltnpepa-pushit",
+      "title": "Push It",
+      "artist": "Salt-N-Pepa",
+      "year": 1987,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Sexy",
+        "Classic"
+      ],
+      "hints": [
+        "Geschrieben wurde das Stück von Hurby Azor gemeinsam mit Ray Davies, dem Frontmann der Kinks; Azor ist im Musikvideo am Keyboard zu sehen.",
+        "In den USA kam die Single auf Platz 19 der Billboard-Hot-100-Liste, in Großbritannien auf Platz 2.",
+        "1987 erschien das Stück zunächst als B-Seite der 12-Zoll-Single 'Tramp'; den Durchbruch brachte erst der Disc-Jockey-Remix von Cameron Paul für die 7-Zoll-Ausgabe.",
+        "Der Text ist bewusst lasziv gehalten und besteht fast nur aus einem wiederkehrenden zweifelhaften Ruf auf der Tanzfläche.",
+        "Auf der Tanzfläche seien nur die 'sexy people' zugelassen, heißt es im Text."
+      ],
+      "lyrics": {
+        "real": [
+          "Get up on this",
+          "This dance ain't for everybody",
+          "Only the sexy people"
+        ],
+        "fake": "Neon lights are flashing while we are moving through the night"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vCadcBR95oU"
+      },
+      "coverUrl": "/covers/hiphop-saltnpepa-pushit.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "80s Flashback",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Push_It_(Salt-n-Pepa_song)",
+        "https://www.songfacts.com/facts/salt-n-pepa/push-it",
+        "https://en.wikipedia.org/wiki/Hot,_Cool_%26_Vicious",
+        "https://lrclib.net/api/get?artist_name=Salt-N-Pepa&track_name=Push%20It",
+        "https://itunes.apple.com/search?term=Salt-N-Pepa+Push+It&entity=song"
+      ]
+    },
+    {
+      "id": "soul-samcooke-change",
+      "title": "A Change Is Gonna Come",
+      "artist": "Sam Cooke",
+      "year": 1964,
+      "country": "US",
+      "genre": "Soul / Civil Rights Anthem",
+      "difficulty": "medium",
+      "mood": [
+        "Serious",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Auslöser war Bob Dylans 'Blowin' in the Wind'; der Interpret wollte etwas Ähnliches schreiben und wunderte sich, dass Dylan das Lied nicht als Schwarzer verfasst hatte.",
+        "Der Interpret litt unter dem Tod seines 1963 ertrunkenen Säuglings und schrieb danach zunehmend introspektive Stücke.",
+        "Der Text ist ein Protestlied, das die Bürgerrechtsbewegung unterstützen sollte; Anlass war ein Motel in Louisiana, in dem die Gruppe abgewiesen wurde.",
+        "Eine leicht gekürzte Fassung erschien am 22. Dezember 1964 als B-Seite von 'Shake' - nach dem Tod des Interpreten.",
+        "In den USA erreichte die Single Platz 31 der Hot-100-Liste und Platz 9 in den R&B-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "I was born by the river",
+          "A change gon' come",
+          "Oh yes, it will"
+        ],
+        "fake": "Rollin' down the highway with the radio loud and the night sky blue"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wEBlaMOmKV4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-samcooke-change.jpg",
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/sam-cooke/a-change-is-gonna-come",
+        "https://en.wikipedia.org/wiki/A_Change_Is_Gonna_Come",
+        "https://en.wikipedia.org/wiki/Sam_Cooke",
+        "https://lrclib.net/api/get?artist_name=Sam%20Cooke&track_name=A%20Change%20Is%20Gonna%20Come",
+        "https://music.apple.com/us/album/aint-that-good-news/1440762537"
+      ]
+    },
+    {
+      "id": "yt-7dP1Vp1E-bo",
+      "title": "Man I Am",
+      "artist": "Sam Smith",
+      "year": 2023,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Der Track erschien am 21. Juli 2023, dem Tag des Kinostarts in Nordamerika, als dritte Promotion-Single zum Soundtrack des Barbie-Films.",
+        "Regisseurin Greta Gerwig und Soundtrack-Produzent Mark Ronson holten den Sänger persönlich dafür, einen Song aus der Sicht der Filmfigur Ken zu schreiben.",
+        "Mark Ronson schrieb und produzierte den Track mit; Klavier, Synthesizer, Gitarre und programmiertes Schlagzeug stammen von Eric Frederic, gemischt hat Manny Marroquin.",
+        "Der Text ist eine augenzwinkernde, halb gerappte Selbstinszenierung in überzeichnetem Macho-Register; ihr Refrain wiederholt 'Super sleazy, sexy and freaky Ken, tonight'.",
+        "Der Song erreichte Platz 58 der britischen Single-Charts; das Soundtrack-Album debütierte zeitgleich in den USA auf Platz 2 und gewann den Grammy für die beste Soundtrack-Zusammenstellung."
+      ],
+      "lyrics": {
+        "real": [
+          "With your greased up and heavy metal toys",
+          "Super sleazy, sexy and freaky Ken, tonight",
+          "And all the papers say that there's no Ken without Barbie"
+        ],
+        "fake": "Rolling through the boulevard with the sunset burning on my side"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7dP1Vp1E-bo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/sam-smith-man-i-am.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Man_I_Am",
+        "https://en.wikipedia.org/wiki/Barbie_the_Album",
+        "https://lrclib.net/api/get?artist_name=Sam%20Smith&track_name=Man%20I%20Am",
+        "https://music.apple.com/us/album/barbie-the-album/1689238301",
+        "https://en.wikipedia.org/wiki/Sam_Smith"
+      ]
+    },
+    {
+      "id": "sam-smith-stay-with-me-2014",
+      "title": "Stay with Me",
+      "artist": "Sam Smith",
+      "year": 2014,
+      "country": "GB",
+      "genre": "Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Heartbreak",
+        "Rainy Day",
+        "Power Ballad"
+      ],
+      "hints": [
+        "Tom Petty und Jeff Lynne wurden nachträglich als Mitautoren anerkannt, weil die Melodie dem Refrain von 'I Won't Back Down' ähnelt.",
+        "Der Interpret erzählte dem NME, das Lied sei in 30 bis 40 Minuten entstanden.",
+        "Der Text erzählt von einer Begegnung für eine Nacht, aus der keine Liebe wurde.",
+        "Das Stück erschien am 14. April 2014 als dritte Single des Albums 'In the Lonely Hour'.",
+        "In Großbritannien stand es auf Platz 1 der Single-Charts, in den USA auf Platz 2."
+      ],
+      "lyrics": {
+        "real": [
+          "Guess it's true, I'm not good at a one-night stand",
+          "But I still need love 'cause I'm just a man",
+          "Oh, won't you stay with me?"
+        ],
+        "fake": "Underneath the city lights we are fading into the crowd"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=pB-5XG-DbAA"
+      },
+      "coverUrl": "/covers/sam-smith-stay-with-me-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stay_with_Me_(Sam_Smith_song)",
+        "https://www.songfacts.com/facts/sam-smith/stay-with-me",
+        "https://lrclib.net/api/get?artist_name=Sam%20Smith&track_name=Stay%20with%20Me",
+        "https://music.apple.com/us/album/in-the-lonely-hour/1440814069",
+        "https://en.wikipedia.org/wiki/In_the_Lonely_Hour"
+      ]
+    },
+    {
+      "id": "piano-sam-wall",
+      "title": "Writing's on the Wall",
+      "artist": "Sam Smith",
+      "year": 2015,
+      "country": "GB",
+      "genre": "Pop / Sam Smith Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Dramatic",
+        "Moody"
+      ],
+      "hints": [
+        "Das Stück entstand im Januar 2015, nachdem der Sänger das Drehbuch von Bond-Produzentin Barbara Broccoli und Regisseur Mendes bekommen hatte.",
+        "Der Sänger erzählte BBC Radio 1, das Lied sei in 20 Minuten geschrieben worden.",
+        "Der Titel ist eine Redensart, die auf die Geschichte von König Belshazzar im Buch Daniel im Alten Testament zurückgeht.",
+        "Der Track ist der Titelsong zum 24. James-Bond-Film 'Spectre' und der erste britische männliche Solo-Künstler, der seit Tom Jones einen Bond-Titel sang.",
+        "Für Film und Song erhielt der Sänger 2016 den Oscar für den besten Originalsong."
+      ],
+      "lyrics": {
+        "real": [
+          "I've been here before",
+          "I've spent a lifetime running",
+          "How do I live? How do I breathe?"
+        ],
+        "fake": "Echoes of an old promise drifting through the hallway of my mind"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8jzDnsjYv9A"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-sam-wall.jpg",
+      "packs": [
+        "Movie Hits",
+        "2010s & 2020s Chart Toppers",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Writing%27s_on_the_Wall_(Sam_Smith_song)",
+        "https://www.songfacts.com/facts/sam-smith/writings-on-the-wall",
+        "https://lrclib.net/api/get?artist_name=Sam%20Smith&track_name=Writing%27s%20On%20the%20Wall",
+        "https://music.apple.com/us/album/writings-on-the-wall-single/1445027918",
+        "https://en.wikipedia.org/wiki/Spectre_(2015_film)"
+      ]
+    },
+    {
+      "id": "yt-Uq9gPaIzbe8",
+      "title": "Unholy",
+      "artist": "Sam Smith & Kim Petras",
+      "year": 2022,
+      "country": "GB",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Dark",
+        "Modern",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Laut den Presseinformationen diente der Stripclub 'The Body Shop' am Sunset Strip in Los Angeles als Vorbild.",
+        "Der Text erzählt von einem verheirateten Mann, der seine Frau hinterm Rücken betrügt; der Sänger spielt den Vertrauten, die deutsche Sängerin die Prostituierte.",
+        "Der Song verbindet Synth-Pop mit Chören und verwendet eine phrygische Dominant-Tonleiter.",
+        "Das Duo gewann 2023 den Grammy für die beste Pop-Duo- und Gruppenperformance.",
+        "Die Single stand vier Wochen auf Platz 1 der britischen Charts und eine Woche auf Platz 1 der US-Hot-100."
+      ],
+      "lyrics": {
+        "real": [
+          "Mummy don't know daddy's getting hot",
+          "At the body shop, doing something unholy",
+          "She got married to a boy like you"
+        ],
+        "fake": "Neon hearts are burning in the midnight rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Uq9gPaIzbe8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/finale-sam-kim-unholy.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Unholy_(Sam_Smith_and_Kim_Petras_song)",
+        "https://www.songfacts.com/facts/sam-smith/unholy",
+        "https://lrclib.net/api/get?artist_name=Sam%20Smith&track_name=Unholy",
+        "https://music.apple.com/us/album/unholy/1643168265?i=1643168566",
+        "https://en.wikipedia.org/wiki/65th_Annual_Grammy_Awards"
+      ]
+    },
+    {
+      "id": "80s-samantha-fox-touchme",
+      "title": "Touch Me (I Want Your Body)",
+      "artist": "Samantha Fox",
+      "year": 1986,
+      "country": "GB",
+      "genre": "Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Confident",
+        "Dance"
+      ],
+      "hints": [
+        "Die 1966 geborene Sängerin wechselte vom Aktfoto-Modell in die Musikbranche, weil eine Plattenfirma auf der Suche nach einer britischen Pop-Diva war.",
+        "Geschrieben wurde der Song von Mark Shreeve, Jon Astrop und Pete Q. Harris, die Produktion lag bei Astrop und Harris.",
+        "Die Single erschien am 10. März 1986 als erster Hit des gleichnamigen Debütalbums, erreichte in Großbritannien Platz 3 und auf der US-Billboard-Hot-100 Platz 4.",
+        "In acht Ländern stand sie auf Platz 1; das Musikvideo zeigt die Sängerin in einer Menschenmenge, aus der sie einen jungen Mann herauszieht.",
+        "Refrain-Zeile: 'This is the night' - im Refrain geht es darum, den Körper des anderen zu spüren."
+      ],
+      "lyrics": {
+        "real": [
+          "This is the night",
+          "I want to feel your body",
+          "Your heart beat next to mine"
+        ],
+        "fake": "Heels and perfume while the strobe light finds us in the crowd"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=W1btg3mpEOc",
+        "spotify": "https://open.spotify.com/track/13s6dCsNpSZflwVu2uzzPi",
+        "amazonMusic": "https://music.amazon.com/tracks/B00137RPUW"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-samantha-fox-touchme.jpg",
+      "packs": [
+        "80s Flashback",
+        "80s-pop",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Touch_Me_(I_Want_Your_Body)",
+        "https://en.wikipedia.org/wiki/Samantha_Fox",
+        "https://itunes.apple.com/lookup?id=551958538&entity=song",
+        "https://api.lyrics.ovh/v1/Samantha%20Fox/Touch%20Me",
+        "https://lrclib.net/api/get?artist_name=Samantha%20Fox&track_name=Touch%20Me%20(I%20Want%20Your%20Body)"
+      ]
+    }
+  ]
+}

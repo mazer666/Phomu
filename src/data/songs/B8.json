@@ -1,0 +1,688 @@
+{
+  "songs": [
+    {
+      "id": "yt-iQEpTa3VqLU",
+      "title": "Daddy Cool",
+      "artist": "Boney M.",
+      "year": 1976,
+      "country": "DE",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Frank Farian, der deutsche Produzent, der die Band gründete und als Hauptsongwriter wirkte, schrieb den Song zusammen mit George Reyam.",
+        "Die vier Gründungsmitglieder der Gruppe kamen sämtlich aus der Karibik, keiner war Deutscher - die Band wurde im Westdeutschen Raum geformt.",
+        "Die Single erschien 1976 beim Label Hansa und war der erste große Welthit der Band.",
+        "Tiefe Männerstimme und mehrstimmiger Frauengesang wechseln sich ab, dazwischen liegt eine gesprochene Passage von Farian.",
+        "Der Song belegte in Österreich und Flandern die Spitze der Single-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "She's crazy like a fool",
+          "I'm crazy like a fool",
+          "Daddy, Daddy Cool"
+        ],
+        "fake": "Dancing in the moonlight, singing all night long"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iQEpTa3VqLU",
+        "spotify": "https://open.spotify.com/track/3WMbD1OyfKuwWDWMNbPQ4g",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "coverUrl": "/covers/boney-m--daddy-cool.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Daddy_Cool_(Boney_M._song)",
+        "https://en.wikipedia.org/wiki/Boney_M.",
+        "https://en.wikipedia.org/wiki/Take_the_Heat_off_Me",
+        "https://www.azlyrics.com/lyrics/boneym/daddycool.html",
+        "https://www.songfacts.com/facts/boney-m/daddy-cool"
+      ]
+    },
+    {
+      "id": "80s-bonnie-tyler-eclipse",
+      "title": "Total Eclipse of the Heart",
+      "artist": "Bonnie Tyler",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Soft Rock / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Dramatic",
+        "Epic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Jim Steinman schrieb den Song für die walisische Sängerin, die zuvor mit Folk-Rock erfolgreich war.",
+        "Besticht durch die raue, leidenschaftliche Stimme der Interpretin und den theatralischen Aufbau.",
+        "Thematisiert Sehnsucht, Einsamkeit und die überwältigende Kraft des Schicksals.",
+        "Die Single von 1983 war die Leitplatte des Albums 'Faster Than the Speed of Night' und verkaufte sich weltweit über 13 Millionen Mal.",
+        "Refrain: 'Turn around, bright eyes, every now and then I fall apart'."
+      ],
+      "lyrics": {
+        "real": [
+          "Every now and then I get a little bit lonely",
+          "Turn around, bright eyes",
+          "Total eclipse of the heart"
+        ],
+        "fake": "The night swallows the town, I lose my way in you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=lcOxhH8N3Bo",
+        "spotify": "https://open.spotify.com/track/7wuJGgpTNzbUyn26IOY6rj",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-bonnie-tyler-eclipse.jpg",
+      "packs": [
+        "80s-pop",
+        "piano-ballads",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Total_Eclipse_of_the_Heart",
+        "https://en.wikipedia.org/wiki/Bonnie_Tyler",
+        "https://en.wikipedia.org/wiki/Faster_Than_the_Speed_of_Night",
+        "https://www.azlyrics.com/lyrics/bonnietyler/totaleclipseoftheheart.html",
+        "https://www.youtube.com/watch?v=lcOxhH8N3Bo"
+      ]
+    },
+    {
+      "id": "metal-bmth-throne",
+      "title": "Throne",
+      "artist": "Bring Me the Horizon",
+      "year": 2015,
+      "country": "GB",
+      "genre": "Alternative Metal / Modern Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Confident",
+        "Powerful"
+      ],
+      "hints": [
+        "Single aus dem Album 'That's the Spirit' (2015), mit dem die Band vom Deathcore-Sound zu Pop und Rock zurückkehrte.",
+        "Thematisiert Widerstandskraft und das Starkwerden durch Niederlagen.",
+        "Besticht durch den massiven elektronischen Hook und Oli Sykes' markante Stimme.",
+        "Die Band belegte damit 2015 die Spitze der britischen Rock- und Metal-Singlecharts.",
+        "Refrain: 'So you can throw me to the wolves / Tomorrow I will come back / Leader of the whole pack'."
+      ],
+      "lyrics": {
+        "real": [
+          "So you can throw me to the wolves",
+          "Leader of the whole pack",
+          "Every scar will build my throne"
+        ],
+        "fake": "They can break my crown, I will wear it again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ow_qI_F2ZJI",
+        "spotify": "https://open.spotify.com/track/0M3adYbGtyRHACP86dey1H",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-bmth-throne.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Throne_(song)",
+        "https://en.wikipedia.org/wiki/Bring_Me_the_Horizon",
+        "https://en.wikipedia.org/wiki/That's_the_Spirit",
+        "https://www.songfacts.com/facts/bring-me-the-horizon/throne",
+        "https://www.youtube.com/watch?v=Ow_qI_F2ZJI"
+      ]
+    },
+    {
+      "id": "britney-spears-baby-one-more-time-1998",
+      "title": "...Baby One More Time",
+      "artist": "Britney Spears",
+      "year": 1998,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Legends & Classics",
+        "Nostalgic",
+        "Party Anthem",
+        "Popular"
+      ],
+      "hints": [
+        "Das Stück wurde ursprünglich für die Jungenband Backstreet Boys und die R&B-Gruppe TLC geschrieben, beide lehnten es ab.",
+        "Das Schulmädchen-Video war die Idee der Sängerin - die Plattenfirma hatte ursprünglich eine Cartoon-Umgebung geplant.",
+        "Die Debütsingle erschien am 29. September 1998 bei Jive und erreichte in über 20 Ländern die Chartspitze.",
+        "Eingängiger Teen-Pop mit Dance-Pop-Elementen, geschrieben von Max Martin und im Stockholmer Cheiron-Studio produziert.",
+        "Die Sängerin fleht in Schuluniform ihren Ex an, zurückzukommen und ihr ein Zeichen zu geben."
+      ],
+      "lyrics": {
+        "real": [
+          "Oh, baby, baby",
+          "I still believe, still believe",
+          "Hit me, baby, one more time"
+        ],
+        "fake": "I'm sitting in my room just waiting for the phone to ring"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=C-u5WLJ9Yk4",
+        "spotify": "https://open.spotify.com/track/69UbAXVf54kgZVy1U7nJY3",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/britney-spears-baby-one-more-time-1998.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/...Baby_One_More_Time",
+        "https://en.wikipedia.org/wiki/Britney_Spears",
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Britney_Spears",
+        "https://www.azlyrics.com/lyrics/britneyspears/babyonemoretime.html",
+        "https://www.youtube.com/watch?v=C-u5WLJ9Yk4"
+      ]
+    },
+    {
+      "id": "yt-2RRY3OVqtwc",
+      "title": "Slumber Party ft. Tinashe",
+      "artist": "Britney Spears",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Geschrieben wurde der Song von Mattias Larsson, Robin Fredriksson, Julia Michaels und Justin Tranter, produziert von Mattman & Robin.",
+        "Die US-Pop-Sängerin veröffentlichte ihn im November 2016 als zweite Single ihres neunten Studioalbums 'Glory'.",
+        "Der Clip wurde im Oktober 2016 gedreht, inszeniert von Colin Tilley und mit einem Filmthema von 1999.",
+        "Im Pre-Chorus verspricht sie, dass die Nacht durchgefeiert wird, im Refrain geht es um Körper und Musik.",
+        "In den USA belegte der Track Platz 86 der Hot-100-Charts und führte die Dance-Club-Charts an."
+      ],
+      "lyrics": {
+        "real": [
+          "We ain't gonna sleep tonight",
+          "Hanging from the ceiling low",
+          "Like a slumber party"
+        ],
+        "fake": "Morning sunlight is breaking, we are running out of time"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2RRY3OVqtwc",
+        "spotify": "https://open.spotify.com/track/4MMpJUEVOmwlY8yoLFoKYJ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/britney-spears-slumber-party-ft--tinashe.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Slumber_Party_(song)",
+        "https://en.wikipedia.org/wiki/Britney_Spears",
+        "https://en.wikipedia.org/wiki/Glory_(Britney_Spears_album)",
+        "https://www.azlyrics.com/lyrics/britneyspears/slumberparty.html",
+        "https://www.youtube.com/watch?v=2RRY3OVqtwc"
+      ]
+    },
+    {
+      "id": "2000s-britney-toxic",
+      "title": "Toxic",
+      "artist": "Britney Spears",
+      "year": 2003,
+      "country": "US",
+      "genre": "Dance-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sexy",
+        "Energy",
+        "Catchy"
+      ],
+      "hints": [
+        "Der schrille Synth-Hook sampelt 'Tere Mere Beech Mein' aus dem indischen Film 'Ek Duuje Ke Liye' (1981).",
+        "Das Musikvideo zeigt die Sängerin als Geheimagentin, die ihren Freund vergiftet, sowie Szenen mit Diamanten auf ihrer Haut.",
+        "Der Track belegte unter anderem in Australien, Kanada, Irland und im Vereinigten Königreich die Chartspitze.",
+        "Der Song gewann den Grammy für den besten Dance-Track - der erste Grammy der Sängerin.",
+        "Refrain: 'With a taste of poison paradise / I'm addicted to you'."
+      ],
+      "lyrics": {
+        "real": [
+          "A guy like you should wear a warning",
+          "With a taste of poison paradise",
+          "Don't you know that you're toxic?"
+        ],
+        "fake": "In the middle of the night, we take control"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
+        "spotify": "https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/2000s-britney-toxic.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Toxic_(song)",
+        "https://en.wikipedia.org/wiki/Britney_Spears",
+        "https://en.wikipedia.org/wiki/In_the_Zone",
+        "https://www.azlyrics.com/lyrics/britneyspears/toxic.html",
+        "https://www.youtube.com/watch?v=LOZuxwVk7TU"
+      ]
+    },
+    {
+      "id": "synth-bronski-boy",
+      "title": "Smalltown Boy",
+      "artist": "Bronski Beat",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Synthpop / High-NRG",
+      "difficulty": "medium",
+      "mood": [
+        "Atmospheric",
+        "Classic",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Der Text erzählt von einem jungen Mann, der sein Zuhause verlässt, nachdem er dort geschlagen und verstoßen wurde.",
+        "Das Musikvideo inszenierte der Regisseur Bernard Rose in einer Freizeitanlage mit Swimmingpool in Ost-London und zeigt, wie der Protagonist von einer Gruppe überfallen wird.",
+        "Produziert hat die Single Mike Thorne, aufgenommen wurde sie in einem Londoner Studio mit dem Namen 'The Garden'.",
+        "2022 wählte das Magazin 'Rolling Stone' den Song auf Platz 163 seiner besten Dance-Titel aller Zeiten aus.",
+        "Die Debüt-Single erschien 1984 beim Londoner Label London Recordings, erreichte in Großbritannien Platz 3 und stand in den Niederlanden sowie in Belgien auf Platz 1."
+      ],
+      "lyrics": {
+        "real": [
+          "You leave in the morning",
+          "In a little black case",
+          "Mother will never understand"
+        ],
+        "fake": "A folded map and a stranger keeping me awake"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=88sARuFu-tc",
+        "spotify": "https://open.spotify.com/track/5vmRQ3zELMLUQPo2FLQ76x",
+        "amazonMusic": "https://music.amazon.com/tracks/B078B55T32"
+      },
+      "coverUrl": "/covers/synth-bronski-boy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Smalltown_Boy",
+        "https://en.wikipedia.org/wiki/Bronski_Beat",
+        "https://en.wikipedia.org/wiki/The_Age_of_Consent_(album)",
+        "https://www.songfacts.com/facts/bronski-beat/smalltown-boy",
+        "https://api.lyrics.ovh/v1/Bronski%20Beat/Smalltown%20Boy"
+      ]
+    },
+    {
+      "id": "rock-springsteen-born-in-the-usa",
+      "title": "Born in the U.S.A.",
+      "artist": "Bruce Springsteen",
+      "year": 1984,
+      "country": "US",
+      "genre": "Heartland Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Stadium Rock"
+      ],
+      "hints": [
+        "Der Song wird oft als patriotische Hymne missverstanden, erzählt aber die Geschichte eines Vietnam-Veteranen, der in seine Heimat zurückkehrt.",
+        "Die Idee entstand schon 1981 als Titelsong für einen geplanten Kinofilm, in dem der Sänger selbst mitspielen sollte.",
+        "Der Synthesizer-Einstieg und die vom Produzenten 'exploding drums' genannten Schlagzeuge entstanden bei den 'Electric Nebraska'-Sessions im Frühjahr 1982 im Power Station Studio in New York.",
+        "Für den charakteristischen Trommelsound schickte der Tontechniker die Schlagzeugmikrofone durch eine Hallplatte und ein Rauschtor.",
+        "Präsident Ronald Reagan wollte den Song 1984 für seinen Wahlkampf nutzen, doch das Management des Sängers lehnte ab - die Single erreichte im Januar 1985 Platz 9 der Billboard-Hot-100."
+      ],
+      "lyrics": {
+        "real": [
+          "Born down in a dead man's town",
+          "The first kick I took was when I hit the ground",
+          "You end up like a dog that's been beat too much"
+        ],
+        "fake": "Stars and stripes are flying high under the bright and morning sky"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EPhWR4d3FJQ",
+        "spotify": "https://open.spotify.com/track/0omgcHy8m87sY4NCfI5iIB",
+        "amazonMusic": "https://music.amazon.com/tracks/B00HFT27IM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-springsteen-born-in-the-usa.jpg",
+      "packs": [
+        "Rock Anthems",
+        "grand-finale",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Born_in_the_U.S.A._(song)",
+        "https://en.wikipedia.org/wiki/Born_in_the_U.S.A.",
+        "https://en.wikipedia.org/wiki/Bruce_Springsteen",
+        "https://www.songfacts.com/facts/bruce-springsteen/born-in-the-usa",
+        "https://api.lyrics.ovh/v1/Bruce%20Springsteen/Born%20in%20the%20U.S.A."
+      ]
+    },
+    {
+      "id": "movie-bruce-springsteen-streets-of-philly",
+      "title": "Streets of Philadelphia",
+      "artist": "Bruce Springsteen",
+      "year": 1994,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Moody"
+      ],
+      "hints": [
+        "Der Song entstand 1993 auf Wunsch des Filmregisseurs, der Titelmusik für ein Drama über einen aidskranken Anwalt brauchte, der gegen seine eigene Kanzlei kämpft.",
+        "Der Regisseur bat den Sänger um einen Song, der 'in den Einkaufszentren laufen' sollte, und bekam ein Demotape, bei dem er und seine Frau 'heulten'.",
+        "Die Single erschien im Februar 1994 und belegte in Deutschland, Frankreich und Österreich den ersten Platz, in Großbritannien den zweiten.",
+        "Das Video inszenierte der Regisseur gemeinsam mit seinem Neffen; es zeigt den Sänger allein auf menschenleeren Straßen, am Ende die Benjamin-Franklin-Brücke im Hintergrund.",
+        "Der Song gewann 1994 den Oscar für den besten Originalsong sowie vier Grammys, unter anderem für den Song des Jahres."
+      ],
+      "lyrics": {
+        "real": [
+          "I was bruised and battered, I couldn't tell what I felt",
+          "I was unrecognizable to myself",
+          "I walked a thousand miles"
+        ],
+        "fake": "I sign my name in pencil on a form that says no"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4z2DtNW79sQ",
+        "spotify": "https://open.spotify.com/track/5Nj8kBJdpJJ4I9wxQyp8JH",
+        "amazonMusic": "https://music.amazon.com/tracks/B07H85VT6H"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-bruce-springsteen-streets-of-philly.jpg",
+      "packs": [
+        "Movie Hits",
+        "piano-ballads",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Streets_of_Philadelphia",
+        "https://en.wikipedia.org/wiki/Philadelphia_(film)",
+        "https://en.wikipedia.org/wiki/66th_Academy_Awards",
+        "https://www.songfacts.com/facts/bruce-springsteen/streets-of-philadelphia",
+        "https://api.lyrics.ovh/v1/Bruce%20Springsteen/Streets%20of%20Philadelphia"
+      ]
+    },
+    {
+      "id": "yt-ttlTus58MNA",
+      "title": "24K Magic",
+      "artist": "Bruno Mars",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song ist eine ausgelassene Party-Hymne über Reichtum, Show und das nächtliche Clubleben.",
+        "Der Titel spielt auf die höchste Reinheitsstufe von Gold an: 24 Karat - auf dem Albumcover in römischen Zahlen geschrieben.",
+        "Die Single erschien im Oktober 2016 als Titeltrack des dritten Albums des Sängers und stand in Neuseeland, Frankreich, Argentinien und Belgien (Flandern) auf Platz 1.",
+        "2018 gewann der Song bei den Grammys den Preis für die beste Aufnahme des Jahres.",
+        "Bei den American Music Awards 2016 im Microsoft Theater in Los Angeles sang der Sänger den Song live - das veröffentlichte Video ist die Aufnahme genau dieser Performance."
+      ],
+      "lyrics": {
+        "real": [
+          "I just want to take you higher",
+          "24-karat magic in the air",
+          "Players, put your pinky rings up to the moon"
+        ],
+        "fake": "Gold on my fingers while the whole city watches me tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ttlTus58MNA",
+        "spotify": "https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
+        "amazonMusic": "https://music.amazon.com/tracks/B01LXS90NQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/bruno-mars-24k-magic--from-the-2016-american-music-awards---official-live-performance-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/24K_Magic_(album)",
+        "https://en.wikipedia.org/wiki/American_Music_Awards_of_2016",
+        "https://en.wikipedia.org/wiki/Bruno_Mars",
+        "https://www.songfacts.com/facts/bruno-mars/24k-magic",
+        "https://api.lyrics.ovh/v1/Bruno%20Mars/24K%20Magic"
+      ]
+    },
+    {
+      "id": "catalog-coverage-bruno-mars-i-just-might-2026",
+      "title": "I Just Might",
+      "artist": "Bruno Mars",
+      "year": 2026,
+      "country": "US",
+      "genre": "Disco-pop",
+      "difficulty": "hard",
+      "mood": [
+        "Neon Night",
+        "Epic",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Die Pointe des Songs: Eine Frau ist erst dann eine Partnerin, wenn sie tanzen kann.",
+        "Der Song beginnt mit einer Vier-Zähl-Taktsumme, bevor der Beat einsetzt.",
+        "Produziert wurde er von dem Sänger selbst und von D'Mile, seinem langjährigen Produktionspartner.",
+        "Die Single erschien am 9. Januar 2026 als erste Auskopplung des vierten Soloalbums, das am 27. Februar 2026 folgte.",
+        "Der Song erreichte in 18 Ländern Platz 1 und in über 25 weiteren Ländern die Top 10."
+      ],
+      "lyrics": {
+        "real": [
+          "You stepped inside with a vibe I ain't never seen",
+          "I just might, I just might make her my baby",
+          "But what good is beauty if your booty can't find the beat?"
+        ],
+        "fake": "You take me places that I never knew that I could go tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mrV8kK5t0V8",
+        "spotify": "https://open.spotify.com/track/12bYYQaLqHliSXvRIYlq8G",
+        "amazonMusic": "https://music.amazon.com/tracks/B0GFQ2S2H6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/bruno-mars-i-just-might.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Just_Might",
+        "https://en.wikipedia.org/wiki/The_Romantic_(album)",
+        "https://en.wikipedia.org/wiki/Bruno_Mars",
+        "https://www.songfacts.com/facts/bruno-mars/i-just-might",
+        "https://api.lyrics.ovh/v1/Bruno%20Mars/I%20Just%20Might"
+      ]
+    },
+    {
+      "id": "yt-cy6Arnjp-hQ",
+      "title": "Treasure",
+      "artist": "Bruno Mars",
+      "year": 2012,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Der Song preist die Geliebte als wertvollsten Besitz und benutzt das Wort 'Schatz' mehrfach als Metapher.",
+        "Der Beat wird von einem kräftigen Bass getragen und erinnert an den Disco-Funk der späten 1970er.",
+        "Geschrieben und produziert wurde er von drei Mitgliedern des Produzentenkollektivs 'The Smeezingtons'.",
+        "Er war die dritte Single des 2012 erschienenen Albums, das mit zwei US-Nummer-eins-Hit-Singles aufwartete.",
+        "In den USA erreichte die Single Platz 5, weltweit war sie in 19 Ländern in den Top 5."
+      ],
+      "lyrics": {
+        "real": [
+          "Honey, you're my golden star",
+          "If you let me treasure you",
+          "I got to tell you a little something about yourself"
+        ],
+        "fake": "Dancing in the moonlight with a silver necklace shining bright"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cy6Arnjp-hQ",
+        "spotify": "https://open.spotify.com/track/0hSaWzV3wlmgNUMSspN9Pv",
+        "amazonMusic": "https://music.amazon.com/tracks/B00AHWF7JU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "survivor",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/bruno-mars-treasure.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Unorthodox_Jukebox",
+        "https://en.wikipedia.org/wiki/Bruno_Mars",
+        "https://www.songfacts.com/facts/bruno-mars/treasure",
+        "https://api.lyrics.ovh/v1/Bruno%20Mars/Treasure",
+        "https://lrclib.net/api/get?artist_name=Bruno%20Mars&track_name=Treasure"
+      ]
+    }
+  ]
+}

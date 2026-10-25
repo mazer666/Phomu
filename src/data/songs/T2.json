@@ -1,0 +1,749 @@
+{
+  "songs": [
+    {
+      "id": "yt-IJnjYpgSfjQ",
+      "title": "Delicate",
+      "artist": "Taylor Swift",
+      "year": 2018,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Das Stück erschien als vierte Single des sechsten Studioalbums der US-Sängerin, das 2017 veröffentlicht wurde und von einem turbulenten Medienrummel um die Sängerin begleitet war.",
+        "Geschrieben und produziert wurde es von der Sängerin selbst gemeinsam mit Max Martin und Shellback; es ist eine Electropop-Ballade mit Vocoder-Stimmen, dichten Synthesizern sowie Elementen aus Tropical House und Dancehall.",
+        "Das Video drehte Joseph Kahn in Los Angeles und wurde am 11. März 2018 bei den iHeartRadio Music Awards uraufgeführt; die Sängerin wird darin unsichtbar und tanzt barfuß durch die Stadt.",
+        "In den USA erreichte die Single Platz 12 der Billboard Hot 100, war auf drei Billboard-Airplay-Listen Nummer eins und wurde von der RIAA doppelt platinertifiziert.",
+        "Im Refrain gesteht sie, dass sie weiß, wie vorsichtig sie sein muss, weil ihre Gefühle für den neuen Menschen so zerbrechlich sind."
+      ],
+      "lyrics": {
+        "real": [
+          "Is it cool that I said all that?",
+          "Dark jeans and your Nikes, look at you",
+          "Is it chill that you're in my head?"
+        ],
+        "fake": "I keep your photograph in a wooden box beneath my bed"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IJnjYpgSfjQ",
+        "spotify": "https://open.spotify.com/track/5sOch9Cf4uxcMtwFzMtNqQ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/taylor-swift-delicate.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Delicate_(Taylor_Swift_song)",
+        "https://en.wikipedia.org/wiki/Reputation_(album)",
+        "https://itunes.apple.com/lookup?id=1440934254&entity=song",
+        "https://lrclib.net/api/get?artist_name=Taylor%20Swift&track_name=Delicate",
+        "https://www.youtube.com/watch?v=IJnjYpgSfjQ"
+      ]
+    },
+    {
+      "id": "yt-f6I-MJCP7uQ",
+      "title": "I Can Do It With a Broken Heart",
+      "artist": "Taylor Swift",
+      "year": 2024,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Modern Hits",
+        "Popular"
+      ],
+      "hints": [
+        "Das Stück erschien am 2. Juli 2024 als zweite und letzte Single des elften Studioalbums der US-Sängerin.",
+        "Geschrieben und produziert wurde es von der Sängerin selbst mit Jack Antonoff; der Text kreist darum, wie sie Depression und Liebeskummer vor ihren Konzerten verbergen muss.",
+        "Der Ton ist unerwartet tanzbar: Electropop, Dance-Pop und Synth-Disco mit hektischem Tempo, pulsierenden Synth-Arpeggien und treibendem Rhythmus.",
+        "In den USA kam die Single auf Platz 3 der Billboard Hot 100 und blieb damit am längsten in den Charts des Albums; weltweit erreichte sie Platz 5 der Global 200.",
+        "Die 'USA Today' wählte den Song zum besten Lied des Jahres 2024; das Musikvideo besteht ausschließlich aus Material ihrer Eras Tour."
+      ],
+      "lyrics": {
+        "real": [
+          "I can read your mind",
+          "There in her glittering prime",
+          "I can show you lies"
+        ],
+        "fake": "I keep the postcards from your last trip lined up on the shelf"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=f6I-MJCP7uQ",
+        "spotify": "https://open.spotify.com/track/2fPvQfGQEZOKtJ9qXeL4x8",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/taylor-swift-i-can-do-it-with-a-broken-heart.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Can_Do_It_with_a_Broken_Heart",
+        "https://en.wikipedia.org/wiki/The_Tortured_Poets_Department",
+        "https://itunes.apple.com/lookup?id=1742074914&entity=song",
+        "https://lrclib.net/api/get?artist_name=Taylor%20Swift&track_name=I%20Can%20Do%20It%20With%20a%20Broken%20Heart",
+        "https://www.youtube.com/watch?v=f6I-MJCP7uQ"
+      ]
+    },
+    {
+      "id": "country-taylor-love",
+      "title": "Love Story",
+      "artist": "Taylor Swift",
+      "year": 2008,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Happy",
+        "Dreamy"
+      ],
+      "hints": [
+        "Das Stück erschien im September 2008 als erste Single des zweiten Studioalbums der US-Sängerin.",
+        "Als Vorlage diente William Shakespeares Tragödie 'Romeo und Julia'; anders als im Stück endet die Geschichte hier mit einem Heiratsantrag.",
+        "Es ist eine Mittelgeschwindigkeits-Country-Pop-Ballade, deren Arrangement von Banjo, Fiedel, Mandoline und Gitarre getragen wird; nach der Bridge wechselt die Tonart.",
+        "Das Video drehte Trey Fanjoy in zwei Tagen im August 2008 in Tennessee; es gewann 2009 bei den CMA Awards und bei den CMT Music Awards den Video des Jahres.",
+        "In den USA erreichte der Song Platz 4 der Billboard Hot 100, war der erste Countrysong, der die Pop-Charts anführte, und wurde achtmal platin zertifiziert."
+      ],
+      "lyrics": {
+        "real": [
+          "We were both young when I first saw you",
+          "I'll be waiting, all there's left to do is run",
+          "You'll be the prince and I'll be the princess"
+        ],
+        "fake": "I keep your picture in a wooden box beneath my bed"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8xg3vE8Ie_E",
+        "spotify": "https://open.spotify.com/track/0kN3oXYWWAk1uC0y2WoyOE",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-taylor-love.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Love_Story_(Taylor_Swift_song)",
+        "https://en.wikipedia.org/wiki/Fearless_(Taylor_Swift_album)",
+        "https://itunes.apple.com/lookup?id=1440924808&entity=song",
+        "https://lrclib.net/api/get?artist_name=Taylor%20Swift&track_name=Love%20Story",
+        "https://www.youtube.com/watch?v=8xg3vE8Ie_E"
+      ]
+    },
+    {
+      "id": "taylor-swift-shake-it-off-2014",
+      "title": "Shake It Off",
+      "artist": "Taylor Swift",
+      "year": 2014,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Party Anthem",
+        "Positive",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Das Stück erschien am 18. August 2014 als erste Single des fünften Studioalbums der US-Sängerin - ihr erstes reines Pop-Album nach Jahren im Country-Bereich.",
+        "Die Texte spiegeln ihren Unmut über negative Berichte der Presse wider; den Text schrieb sie selbst, die Melodie entstand zusammen mit Max Martin und Shellback.",
+        "Es ist ein flotter Dance-Pop-Track mit einer sich wiederholenden Drum-Spur, einer auf einem Mellotron gespielten Saxofonlinie und einer von Handklatschen geprägten Bridge.",
+        "Das Video von Regisseur Mark Romanek zeigt sie als tollpatschige Person, die mehrere Tänze erfolglos versucht.",
+        "In den USA stand der Song vier Wochen an der Spitze der Billboard Hot 100 und wurde von der RIAA als Diamant ausgezeichnet; bei den Grammys 2015 war er dreimal nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "I go on too many dates",
+          "Can't stop, won't stop movin'",
+          "I never miss a beat"
+        ],
+        "fake": "I leave my worries on the dance floor and let the DJ spin them away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+        "spotify": "https://open.spotify.com/track/0cqRj7pUJDkTCEsJkx8snD",
+        "amazonMusic": "https://music.amazon.com/tracks/B00OXUXF64"
+      },
+      "coverUrl": "/covers/taylor-swift-shake-it-off-2014.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Shake_It_Off",
+        "https://en.wikipedia.org/wiki/1989_(album)",
+        "https://itunes.apple.com/lookup?id=1440933651&entity=song",
+        "https://lrclib.net/api/get?artist_name=Taylor%20Swift&track_name=Shake%20It%20Off",
+        "https://www.youtube.com/watch?v=nfWlot6h_JM"
+      ]
+    },
+    {
+      "id": "yt-AiedUZWxGtA",
+      "title": "Te Va a Doler",
+      "artist": "Maelo Ruiz",
+      "year": 2003,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat",
+        "Popular"
+      ],
+      "hints": [
+        "Die Aufnahme stammt aus dem Album 'En Tiempo de Amor', das die Sängerin 2003 veröffentlichte; das Stück läuft knapp fünf Minuten.",
+        "Der spanische Text handelt von einer Frau, die ihrem Partner ankündigt, dass er die Trennung bereuen wird, sobald er sie verlassen hat.",
+        "Die Sängerin wurde in New York geboren, zog aber schon mit vier Jahren nach Puerto Rico um und gilt als Vertreterin des Salsa Romántica.",
+        "Bevor sie solo durchbrach, war sie jahrelang erste Stimme der Bigband von Pedro Conga; mit ihr gewann die Gruppe als erste Goldene Schallplatte in Puerto Rico.",
+        "Im Refrain kündigt sie an, dass es wehtun wird, wenn die Geliebte geht und die neue Liebe sie irgendwann verlassen wird."
+      ],
+      "lyrics": {
+        "real": [
+          "Es una pena que tú seas así",
+          "Tarde o temprano ya verás lo que te toca",
+          "Sé que algún día te hará falta mi amor"
+        ],
+        "fake": "Mientras camino por la playa busco tu nombre en la arena"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AiedUZWxGtA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/maelo-ruiz-te-va-a-doler.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Maelo_Ruiz",
+        "https://musicbrainz.org/ws/2/release/aee2f611-ec56-43cc-a270-62ccc7cd328a?inc=artist-credits+recordings+media&fmt=json",
+        "https://itunes.apple.com/lookup?id=1714488734&entity=song",
+        "https://lrclib.net/api/get?artist_name=Maelo%20Ruiz&track_name=Te%20Va%20A%20Doler",
+        "https://www.youtube.com/watch?v=AiedUZWxGtA"
+      ]
+    },
+    {
+      "id": "synth-tears-rule",
+      "title": "Everybody Wants to Rule the World",
+      "artist": "Tears for Fears",
+      "year": 1985,
+      "country": "GB",
+      "genre": "Synthpop / New Wave",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Driving",
+        "Epic",
+        "Positive",
+        "Synth",
+        "Thinking",
+        "Thoughtful"
+      ],
+      "hints": [
+        "Der Song erschien am 22. März 1985 als dritte Single des zweiten Studioalbums der Band.",
+        "Geschrieben wurde er von Roland Orzabal, Ian Stanley und Chris Hughes, produziert hat ihn Hughes.",
+        "Der Text ist philosophisch angelegt: Er beschreibt den Wunsch der Menschen nach Kontrolle und Macht und das Thema der Korruption.",
+        "Er erreichte Platz 1 in den USA, Kanada und Neuseeland sowie Platz 2 in Großbritannien, Irland und Australien; 1986 gewann er den Brit Award für den besten Single.",
+        "Die Band nahm das Stück 1986 für die Sport-Aid-Kampagne neu auf; die bekannteste spätere Cover-Version stammt von Lorde."
+      ],
+      "lyrics": {
+        "real": [
+          "Even while we sleep",
+          "There's a room where the light won't find you",
+          "So glad we've almost made it"
+        ],
+        "fake": "I drive through the neon rain and chase the fading light downtown"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aGCdLKXNF3w",
+        "spotify": "https://open.spotify.com/track/4RvWPyQ5RL0ao9LPZeSouE",
+        "amazonMusic": "https://music.amazon.com/tracks/B00P1K51XA"
+      },
+      "coverUrl": "/covers/synth-tears-rule.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Electronic & Techno",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Everybody_Wants_to_Rule_the_World",
+        "https://en.wikipedia.org/wiki/Songs_from_the_Big_Chair",
+        "https://itunes.apple.com/lookup?id=1440813515&entity=song",
+        "https://api.lyrics.ovh/v1/Tears%20For%20Fears/Everybody%20Wants%20to%20Rule%20the%20World",
+        "https://www.youtube.com/watch?v=aGCdLKXNF3w"
+      ]
+    },
+    {
+      "id": "synth-tears-mad",
+      "title": "Mad World",
+      "artist": "Tears for Fears",
+      "year": 1982,
+      "country": "GB",
+      "genre": "Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Sad",
+        "Energy"
+      ],
+      "hints": [
+        "Der Komponist der Band schrieb den Text auf einer Akustikgitarre, als er 19 Jahre alt war – in einer Wohnung über einem Pizzarestaurant in Bath.",
+        "Ursprünglich als B-Seite einer anderen Single geplant, wurde der Song dann doch als eigenständige Single veröffentlicht und später mit den Produzenten Ross Cullum und Chris Hughes neu aufgenommen.",
+        "Die Single erschien im November 1982 in Großbritannien und erreichte dort Platz 3 der Hitparade; das Debütalbum 'The Hurting' folgte 1983.",
+        "1986 machte ein Teenie-Klassiker mit Schulausflug das Stück in den Vereinigten Staaten bekannt – die Band dadurch wieder chartrelevant.",
+        "2001 nahmen zwei US-Künstler den Song für den Soundtrack 'Donnie Darko' auf; 2003 stand die Band damit drei Wochen auf Platz 1 der britischen Hitparade."
+      ],
+      "lyrics": {
+        "real": [
+          "All around me are familiar faces",
+          "Worn out places, worn out faces",
+          "And I find it kind of funny"
+        ],
+        "fake": "Cold rain on the boulevard, nobody answers when I call tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=u1ZvPSpLxCg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/synth-tears-mad.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "Electronic & Techno",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mad_World",
+        "https://en.wikipedia.org/wiki/The_Hurting",
+        "https://www.songfacts.com/facts/tears-for-fears/mad-world",
+        "https://en.wikipedia.org/wiki/Ferris_Bueller%27s_Day_Off",
+        "https://en.wikipedia.org/wiki/Donnie_Darko"
+      ]
+    },
+    {
+      "id": "yt-qt94Sx-tcYA",
+      "title": "Shout",
+      "artist": "Tears for Fears",
+      "year": 1984,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "German New Wave",
+        "Popular",
+        "Powerful",
+        "Serious",
+        "Synth"
+      ],
+      "hints": [
+        "Der Frontmann der Band hat das Stück als 'einfaches Protestlied' beschrieben; geschrieben wurde es für das zweite Album 'Songs from the Big Chair'.",
+        "Die Single erschien am 23. November 1984 als zweite Single des Albums 'Songs from the Big Chair'.",
+        "In Großbritannien erreichte die Single im Januar 1985 Platz 4 der Hitparade und war der vierte Top-5-Hit der Band.",
+        "In den USA stand das Stück ab dem 3. August 1985 drei Wochen auf Platz 1 der Billboard Hot 100 und führte auch die Cash-Box-Liste an.",
+        "2010 nahmen Stars wie Dizzee Rascal und James Corden das Stück für die Fußball-WM in Südafrika neu auf - es wurde inoffizieller Anfeuerungs-Hit der englischen Nationalmannschaft."
+      ],
+      "lyrics": {
+        "real": [
+          "You shouldn't have to sell your soul",
+          "I'm talking to you",
+          "You shouldn't have to jump for joy"
+        ],
+        "fake": "Whisper in the dark, try to find a spark in your broken heart"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qt94Sx-tcYA",
+        "spotify": "https://open.spotify.com/track/2gQaQUhDCNGfBVXTvxAmXQ",
+        "amazonMusic": "https://music.amazon.com/tracks/B00O64D4FE"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/tears-for-fears-shout-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Shout_(Tears_for_Fears_song)",
+        "https://en.wikipedia.org/wiki/Songs_from_the_Big_Chair",
+        "https://itunes.apple.com/search?term=Tears+for+Fears+Shout&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Tears%20for%20Fears&track_name=Shout",
+        "https://www.songfacts.com/facts/tears-for-fears/shout"
+      ]
+    },
+    {
+      "id": "yt-AeedWEyMYYo",
+      "title": "Lose Control",
+      "artist": "Teddy Swims",
+      "year": 2023,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Modern",
+        "Modern Anthems",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Der US-Künstler war schon als Jugendlicher von einem Non-Hodgkin-Lymphom betroffen und ließ sich vor Beginn seiner Musikkarriere eine Stammzellentransplantation machen.",
+        "Die Single erschien am 23. Juni 2023 über Warner Records als zweite Single des Debütalbums 'I've Tried Everything but Therapy (Part 1)'.",
+        "Geschrieben und produziert wurde das Stück von einem Team um Mikky Ekko, Julian Bunetta, Joshua Coleman und Marco Rodriguez.",
+        "In den USA debütierte der Song auf Platz 99 der Billboard Hot 100 und brauchte 32 Wochen bis zur Spitze - der längste Aufstieg, den die Chartgeschichte bisher kennt.",
+        "Im Refrain gibt die Stimme zu, ohne die geliebte Person nicht standhaft zu bleiben - das Stück führte 2024 auch die Jahrescharts der USA an."
+      ],
+      "lyrics": {
+        "real": [
+          "I lose control",
+          "When you're not next to me",
+          "I'm fallin' apart right in front of you, can't you see?"
+        ],
+        "fake": "Your hands on my shoulders and I forget where I should go"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AeedWEyMYYo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/finale-teddy-lose.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lose_Control_(Teddy_Swims_song)",
+        "https://en.wikipedia.org/wiki/Teddy_Swims",
+        "https://itunes.apple.com/search?term=Teddy+Swims+Lose+Control&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Teddy%20Swims&track_name=Lose%20Control",
+        "https://www.songfacts.com/facts/teddy-swims/lose-control"
+      ]
+    },
+    {
+      "id": "yt-k6_ANPE2auo",
+      "title": "Vivir Mi Vida",
+      "artist": "Tempo Ft. Farruko",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track bewegt sich im Latin-Pop- und Reggaeton-Umfeld und wurde 2016 als Zusammenarbeit zweier Acts veröffentlicht.",
+        "Die Kollaboration verbindet ein kolumbianisches Duo mit einem puerto-rikanischen Sänger, der bereits zwei Latin Grammy Awards gewonnen hat.",
+        "Die beiden Künstler sind beide in den Streaming-Katalogen mit Alben und Singles vertreten - der puerto-rikanische Gastgeber mit reggaeton- und Latin-Pop-Hits von internationalem Format.",
+        "Offiziell erschien das Stück 2016 zusammen mit einem Lyric-Video, das über den Label-Kanal 'Carbon Fiber Music' auf YouTube veröffentlicht wurde.",
+        "Im Refrain geht es darum, das eigene Leben nach eigenen Regeln zu leben - der Refrain trägt den Titel des Tracks."
+      ],
+      "lyrics": {
+        "real": [
+          "No dejo que nadie me diga",
+          "Como yo tengo que vivir mi vida",
+          "Vacilar y joder."
+        ],
+        "fake": "Cae la lluvia sobre el barrio y yo sigo de pie"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=k6_ANPE2auo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/tempo-ft-farruko-vivir-mi-vida-single.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=k6_ANPE2auo",
+        "https://es.wikipedia.org/wiki/Farruko",
+        "https://en.wikipedia.org/wiki/Latin_pop",
+        "https://en.wikipedia.org/wiki/Reggaeton",
+        "https://itunes.apple.com/search?term=Farruko&limit=5&entity=song"
+      ]
+    },
+    {
+      "id": "yt-kn0VhqRZ3Fo",
+      "title": "Tu Amor No Es De Este Mundo",
+      "artist": "Tercer Cielo",
+      "year": 2010,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Sänger veröffentlichte den gleichnamigen Titel-Track des Albums 'Viaje a las Estrellas'.",
+        "Der Song erschien 2010 und wird in den Streaming-Katalogen je nach Eintrag sowohl als Pop-Latin- als auch als Christian-Titel geführt.",
+        "Die Ballade schildert, wie der Sänger staunt, was die Geliebte dazu bewog, vom Himmel herab zu steigen.",
+        "Im Refrain betont er, dass ihre Liebe größer sei als ein Planet und schöner als ein Stern.",
+        "Der Text handelt von einer Liebe, die es hier auf Erden nicht gibt - er dankt dem Himmel dafür, dass sie sich für ihn entschieden hat."
+      ],
+      "lyrics": {
+        "real": [
+          "Tu amor no es de este mundo",
+          "No hay amor humano comparable al tuyo",
+          "Quiero saber cuál es el motor"
+        ],
+        "fake": "Caminaré por el mar contigo, mi amor, sin final"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kn0VhqRZ3Fo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/tercer-cielo-tu-amor-no-es-de-este-mundo.jpg",
+      "hintEvidence": [
+        "https://lrclib.net/api/get?artist_name=Tercer%20Cielo&track_name=Tu%20Amor%20No%20Es%20De%20Este%20Mundo",
+        "https://lrclib.net/api/search?artist_name=Tercer%20Cielo&track_name=Tu%20Amor%20No%20Es%20De%20Este%20Mundo",
+        "https://itunes.apple.com/search?term=Tercer+Cielo+Tu+Amor+No+Es+De+Este+Mundo&limit=3&entity=song",
+        "https://music.apple.com/mx/album/tu-amor-no-es-de-este-mundo/6818368148?i=6818368351",
+        "https://www.youtube.com/watch?v=kn0VhqRZ3Fo"
+      ]
+    },
+    {
+      "id": "yt-K_5i_UUGGyQ",
+      "title": "Heaven's Air (Fred Baker vs Terry Bones Mix)",
+      "artist": "Jan Vayne",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Die im Katalognamen genannte Bearbeitung ist eine Kollaboration zweier DJs und existiert in mehreren Längen zwischen gut drei und über acht Minuten.",
+        "Der Track erschien 2004 auf Compilations des britischen Labels Armada Music sowie in der Reihe 'Classical Trancelations'.",
+        "In den Streaming-Katalogen wird das Stück als Dance- bzw. Trance-Nummer geführt.",
+        "2016 erschien eine deutlich kürzere Remix-Fassung, die auf Compilations der Trance-Szene weiter kursierte.",
+        "Der Titel verspricht himmlische Leichtigkeit - musikalisch ist das ein ekstatischer Trance-Klassiker mit langem Breakdown."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=K_5i_UUGGyQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Electronic & Techno",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/terry-bones-heaven-s-air--fred-baker-vs-terry-bones-mix-.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/search?term=Jan+Vayne+Heaven%27s+Air&limit=5&entity=song",
+        "https://itunes.apple.com/search?term=Jan+Vayne&limit=5&entity=album",
+        "https://music.apple.com/us/album/heavens-air-fred-baker-vs-terry-bones-mix/312383962?i=312384037",
+        "https://en.wikipedia.org/wiki/Trance_music",
+        "https://www.youtube.com/watch?v=K_5i_UUGGyQ"
+      ]
+    },
+    {
+      "id": "yt-6C_s56iscpQ",
+      "title": "Desde Esa Noche",
+      "artist": "Thalia feat. Maluma",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein lateinamerikanisches Duett, das Latin Pop mit Reggaeton-Bass verbindet und mit Akkordeon, Hörnern und Blechbläsern arbeitet.",
+        "Am 29. Januar 2016 erschien der Song als erste Single des dreizehnten Studioalbums der mexikanischen Sängerin, das bei Sony Music Latin veröffentlicht wurde.",
+        "Die Texte stammen von einem Team um den Produzenten Sergio George, das auch den kolumbianischen Gaststar als Songwriter einband.",
+        "Das Musikvideo drehte Carlos Perez im chinesisch geprägten Viertel von New York und erschien im März 2016.",
+        "Der Refrain kreist um den Moment, in dem die Sängerin ihre Zuneigung zu riskieren wagt, und endet mit der Angst, sich zu verlieben."
+      ],
+      "lyrics": {
+        "real": [
+          "Creo que puedo caer en una adicción, contigo",
+          "No me esperaba jamás una historia así",
+          "Siento mil cosas por ti, siento mil cosas"
+        ],
+        "fake": "Por la luna de plata te esperaré bajo la lluvia infinita"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6C_s56iscpQ",
+        "youtubeAlternatives": [
+          "CkyBXdXkMr8"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/thalia-desde-esa-noche--premio-lo-nuestro-2016--ft--maluma.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Desde_Esa_Noche",
+        "https://itunes.apple.com/lookup?id=1099967882&entity=song",
+        "https://musicbrainz.org/ws/2/recording/5c7e0243-1274-4b60-acc7-89d0affd331b?fmt=json&inc=url-rels+artist-credits+releases",
+        "https://api.lyrics.ovh/v1/Thalia/Desde%20Esa%20Noche",
+        "https://www.youtube.com/watch?v=6C_s56iscpQ"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,736 @@
+{
+  "songs": [
+    {
+      "id": "dance-scatman-john-scatman",
+      "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+      "artist": "Scatman John",
+      "year": 1994,
+      "country": "US",
+      "genre": "Eurodance",
+      "difficulty": "hard",
+      "mood": [
+        "Fun",
+        "Fast",
+        "Creative"
+      ],
+      "hints": [
+        "Der US-Sänger war auch Jazz-Pianist und nutzte sein Stottern bewusst als Bühnenmarke.",
+        "Aufgenommen wurde der Song 1994 bei RCA; die Debütsingle erschien am 30. November 1994.",
+        "Der Text handelt vom Mut zum Stottern: 'Everybody stutters one way or the other'.",
+        "Die Mischung aus Jazz-Scatter, Rap und House-Beats brachte den Song in mindestens zehn Ländern auf Platz eins.",
+        "Die Silben 'Ski-Ba-Bop-Ba-Dop-Bop' im Titel sind das rhythmische Erkennungszeichen des Welterfolgs."
+      ],
+      "lyrics": {
+        "real": [
+          "Everybody stutters one way or the other",
+          "So check out my message to you.",
+          "As a matter of fact don't let nothin' hold you back."
+        ],
+        "fake": "Moving to the left, moving to the right, in the blue light"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Hy8kmNEo1i8",
+        "spotify": "https://open.spotify.com/track/623rRTKwGmgjH6sjE9uWLh"
+      },
+      "coverUrl": "/covers/dance-scatman-john-scatman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Scatman_(Ski-Ba-Bop-Ba-Dop-Bop)",
+        "https://en.wikipedia.org/wiki/Scatman_John",
+        "https://api.lyrics.ovh/v1/Scatman%20John/Scatman",
+        "https://lrclib.net/api/get?artist_name=Scatman%20John&track_name=Scatman",
+        "https://musicbrainz.org/ws/2/artist/9904bde1-04a7-41cf-a2a3-d09a42445145?fmt=json&inc=url-rels"
+      ]
+    },
+    {
+      "id": "rock-scorpions-wind-of-change",
+      "title": "Wind of Change",
+      "artist": "Scorpions",
+      "year": 1990,
+      "country": "DE",
+      "genre": "Hard Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Melancholic",
+        "Inspiring",
+        "Peace"
+      ],
+      "hints": [
+        "Der Sänger schrieb das Stück nach einem Aufenthalt in der Sowjetunion am Ende der 1980er-Jahre.",
+        "Die Idee entstand laut Sänger in einer Sommernacht am Moskwa-Fluss im Gorki-Park.",
+        "Aufgenommen wurde die Power Ballade in den Wisseloord Studios bei Hilversum und in Goodnight LA.",
+        "Der Text preist das Ende des Kalten Krieges: 'That we could be so close like brothers?'",
+        "Mit über 14 Millionen verkauften Exemplaren zählt der Titel zu den bestverkauften Singles der Welt und gilt als Hymne auf den Fall der Mauer."
+      ],
+      "lyrics": {
+        "real": [
+          "Listening to the wind of change",
+          "The future's in the air",
+          "I can feel it everywhere"
+        ],
+        "fake": "Berlin is calling, the wall is falling, see the people stand as one"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=n4RjJKxsamQ",
+        "spotify": "https://open.spotify.com/track/3ovjw5HZZv43SxTwApooCM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-scorpions-wind-of-change.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wind_of_Change_(Scorpions_song)",
+        "https://en.wikipedia.org/wiki/Scorpions_(band)",
+        "https://api.lyrics.ovh/v1/Scorpions/Wind%20of%20Change",
+        "https://lrclib.net/api/get?artist_name=Scorpions&track_name=Wind%20of%20Change",
+        "https://musicbrainz.org/ws/2/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6?fmt=json&inc=url-rels"
+      ]
+    },
+    {
+      "id": "movie-seal-kiss-from-a-rose",
+      "title": "Kiss from a Rose",
+      "artist": "Seal",
+      "year": 1994,
+      "country": "GB",
+      "genre": "Soul-pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Epic",
+        "Moody"
+      ],
+      "hints": [
+        "Der britische Sänger ist durch die auffälligen Narben im Gesicht geprägt, die auf eine Form von Lupus zurückgehen.",
+        "Produziert wurde der Song von Trevor Horn; aufgenommen wurde er in London und im Studio Real World in Wiltshire.",
+        "Die Single erschien 1994 und wurde durch den Soundtrack zum Film 'Batman Forever' zum Welthit.",
+        "Bei den Grammys 1996 gewann sie als Record of the Year, Song of the Year und in der Kategorie Best Male Pop Vocal Performance.",
+        "Auf der B-Seite der Single steht 'The Wind Cries Mary'."
+      ],
+      "lyrics": {
+        "real": [
+          "There used to be a graying tower alone on the sea",
+          "You became the light on the dark side of me",
+          "Love remained a drug that's the high and not the pill"
+        ],
+        "fake": "In the middle of the night, I will hold you tight and treat you right"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hDd2G_V1rzc",
+        "spotify": "https://open.spotify.com/track/3YKptz29AsOlm7WAVnztBh"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-seal-kiss-from-a-rose.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kiss_from_a_Rose",
+        "https://en.wikipedia.org/wiki/Seal_(musician)",
+        "https://api.lyrics.ovh/v1/Seal/Kiss%20from%20a%20Rose",
+        "https://lrclib.net/api/get?artist_name=Seal&track_name=Kiss%20from%20a%20Rose",
+        "https://musicbrainz.org/ws/2/artist/f053ae01-dae6-4aae-9883-e8c279fdbef4?fmt=json&inc=url-rels"
+      ]
+    },
+    {
+      "id": "reggae-sean-paul-get-busy",
+      "title": "Get Busy",
+      "artist": "Sean Paul",
+      "year": 2002,
+      "country": "JM",
+      "genre": "Dancehall",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Dance",
+        "Club"
+      ],
+      "hints": [
+        "Der jamaikanische Dancehall-Musiker veröffentlichte den Track im März 2003 als zweite Single seines Albums 'Dutty Rock'.",
+        "Das Album 'Dutty Rock' war bereits im November 2002 erschienen.",
+        "Der Song ist ein Partysong, der vor allem weibliche Hörer zum Tanzen animiert; im Text werden Frauen namentlich angesprochen.",
+        "In den USA stand der Track drei Wochen auf Platz eins der Billboard-Hot-100-Liste und blieb 32 Wochen in den Top 100.",
+        "In Deutschland startete die Single im Juni 2003 auf Platz zehn und erreichte drei Wochen später Rang drei."
+      ],
+      "lyrics": {
+        "real": [
+          "Shake dat ting miss, Cana, Cana",
+          "Shake dat ting, yo, Annabella",
+          "Jus shake dat booty non-stop"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken drum"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oPQ3o14ksaM",
+        "spotify": "https://open.spotify.com/track/6bK9BH9Ts8Gj5JFvnQkzak"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-sean-paul-get-busy.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Get_Busy",
+        "https://en.wikipedia.org/wiki/Dutty_Rock",
+        "https://api.lyrics.ovh/v1/Sean%20Paul/Get%20Busy",
+        "https://lrclib.net/api/get?artist_name=Sean%20Paul&track_name=Get%20Busy",
+        "https://musicbrainz.org/ws/2/artist/c3da3346-2643-48a7-93cd-011f6834b3d7?fmt=json&inc=url-rels"
+      ]
+    },
+    {
+      "id": "german-seeed-dickes-b",
+      "title": "Dickes B",
+      "artist": "Seeed",
+      "year": 2001,
+      "country": "DE",
+      "genre": "Reggae/Dancehall",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Cool",
+        "Groovy"
+      ],
+      "hints": [
+        "Die Berliner Band veröffentlichte den Song 2001 als dritte Single des Albums 'New Dubby Conquerors'.",
+        "Der Text mischt Deutsch, Englisch und jamaikanisches Patois.",
+        "Den englischen Rap-Part rappt der jamaikanische Dancehall-Deejay Black Kappa, der am Ende seine Crews grüßt.",
+        "Die Band besteht aus elf Mitgliedern, darunter drei Sänger, eine Bläsergruppe und ein DJ.",
+        "Der Refrain besingt die Stadt an der Spree: 'Im Sommer tust du gut und im Winter tut's weh'."
+      ],
+      "lyrics": {
+        "real": [
+          "Im Sommer tust du gut und im Winter tut's weh",
+          "Der Asphaltboden zitterte es wummerte im Ohr",
+          "Wenn ich durch Berlin-City cruise is Reggae mein Motor."
+        ],
+        "fake": "Wir tanzen im Regen, dem Glück entgegen auf allen Wegen"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GYK-NfOo7b4",
+        "spotify": "https://open.spotify.com/track/4eRmCZWJoEtLl0wy7EJPwd"
+      },
+      "coverUrl": "/covers/german-seeed-dickes-b.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Dickes_B",
+        "https://en.wikipedia.org/wiki/Seeed",
+        "https://lrclib.net/api/get?artist_name=Seeed&track_name=Dickes%20B",
+        "https://musicbrainz.org/ws/2/release/79320865-aafc-41e9-97bb-132b0ad9130c?fmt=json&inc=url-rels",
+        "https://musicbrainz.org/ws/2/artist/49c43c49-328d-4b14-8a1d-be99cafaec14?fmt=json&inc=url-rels"
+      ]
+    },
+    {
+      "id": "german-seeed-ding",
+      "title": "Ding",
+      "artist": "Seeed",
+      "year": 2005,
+      "country": "DE",
+      "genre": "Dancehall / Reggae",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Dance",
+        "Funny"
+      ],
+      "hints": [
+        "Die Single erschien 2006, das dritte Album 'Next!' mit dem Song bereits im Oktober 2005.",
+        "Parallel existiert eine englische Fassung des Songs unter dem Titel 'Thing'.",
+        "Die Band verbindet Dancehall, Reggae und deutsches Hip-Hop und arbeitet mit einer Bläsergruppe.",
+        "Der Song gewann den Bundesvision Song Contest.",
+        "Im Refrain steckt der Sänger seinen Ehering weg und kündigt mit 'Klingelingeling' an, dass es heute nur beim Drink bleibt."
+      ],
+      "lyrics": {
+        "real": [
+          "Wo sind die Bräute mit Poser-Auschnitt?",
+          "Oohoohoo, du hübsches Ding",
+          "Du bist Queen und ich bin King"
+        ],
+        "fake": "Tanzen auf der Straße, im Rhythmus des Herzens heute"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_yWU0lFghxU",
+        "spotify": "https://open.spotify.com/track/4i4RFXGR8LjhBjgmIsczzo"
+      },
+      "coverUrl": "/covers/german-seeed-ding.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Ding_(Lied)",
+        "https://en.wikipedia.org/wiki/Seeed",
+        "https://api.lyrics.ovh/v1/Seeed/Ding",
+        "https://lrclib.net/api/get?artist_name=Seeed&track_name=Ding",
+        "https://musicbrainz.org/ws/2/artist/49c43c49-328d-4b14-8a1d-be99cafaec14?fmt=json&inc=url-rels"
+      ]
+    },
+    {
+      "id": "yt-dvfZ95ueOcQ",
+      "title": "Amor Prohibido",
+      "artist": "Selena",
+      "year": 1994,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Sängerin erfand die Geschichte nach den Liebesbriefen ihrer Großmutter, die als Dienstmädchen bei einer wohlhabenden Familie den Sohn des Hauses liebte - eine Verbindung, die die unterschiedliche gesellschaftliche Herkunft verbot.",
+        "Text und Produktion stammen aus dem Kreis der Band: geschrieben haben die Sängerin selbst, ihr Bruder A.B. Quintanilla und Pete Astudillo, aufgenommen wurde 1994 in den AMEN-Studios von Manny Guerra in San Antonio, Texas.",
+        "Der Song war die Leit-Single des vierten und letzten Studioalbums, das die Sängerin im März 1994 bei EMI Latin veröffentlichte.",
+        "Tejano-Cumbia im Stil von 'Bidi Bidi Bom Bom' mit Durmellodie, Synthesizern und einem spanisch gesungenen Refrain, in dem die Sängerin spontan 'Oh, baby' einstreut.",
+        "Der Song führte neun Wochen die US-Charts der Latin-Musik an und war der erfolgreichste US-Latin-Titel des Jahres 1994; spätere Cover stammen von Thalía, Moderatto und Jennifer Lopez."
+      ],
+      "lyrics": {
+        "real": [
+          "Con unas ansias locas quiero verte hoy",
+          "El dinero no importa en ti y en mí",
+          "Oh, baby"
+        ],
+        "fake": "Canta conmigo bajo la luna, nadie nos va a detener"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dvfZ95ueOcQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/selena-amor-prohibido.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Amor_Prohibido_(song)",
+        "https://en.wikipedia.org/wiki/Amor_Prohibido",
+        "https://api.lyrics.ovh/v1/Selena/Amor%20Prohibido",
+        "https://music.apple.com/us/album/amor-prohibido/1703307720?i=1703307732",
+        "https://en.wikipedia.org/wiki/Selena"
+      ]
+    },
+    {
+      "id": "yt-cGIe4x1Xntg",
+      "title": "Single Soon",
+      "artist": "Selena Gomez",
+      "year": 2023,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Im Februar 2023 sprach die Sängerin in einem Vanity-Fair-Interview erstmals von neuer Musik: es gehe um Dinge, die sie wirklich durchlebe, und um 'freedom from relationships, freedom from the darkness'.",
+        "Am 13. August 2023 hingen in mehreren Städten Plakate mit einer Telefonnummer und einer Andeutung, dass sich etwas an ihrem Beziehungsstatus ändert; wer anrief, hörte eine Mailbox, die versicherte, man solle sich um Männer ohnehin keine Sorgen machen.",
+        "Veröffentlicht wurde der Song am 25. August 2023 ohne Albumkontext bei Interscope, produziert von Benny Blanco und Cashmere Cat.",
+        "Synthwave-getriebener Dance-Pop mit Ukulele- und Steel-Drum-Farben; im Clip wechselt die Sängerin zwischen mehreren luxuriösen Outfits und tauscht sich in Chats mit ihrem Ex-Partner.",
+        "Der Song startete in den Top 20 der kanadischen Hot 100, der US-Billboard Hot 100 und der Global 200 und gewann 2024 einen ASCAP-Pop-Award."
+      ],
+      "lyrics": {
+        "real": [
+          "Should I do it on the phone?",
+          "Maybe I'll just disappear",
+          "I don't wanna see a tear"
+        ],
+        "fake": "I'll be dancing on the rooftop till the sunrise, honey"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cGIe4x1Xntg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/selena-gomez-single-soon.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Single_Soon",
+        "https://api.lyrics.ovh/v1/Selena%20Gomez/Single%20Soon",
+        "https://en.wikipedia.org/wiki/Selena_Gomez",
+        "https://music.apple.com/us/album/single-soon/1703517713?i=1703517719",
+        "https://www.capitalfm.com/news/music/selena-gomez-single/"
+      ]
+    },
+    {
+      "id": "yt-JsUt2jsLM1k",
+      "title": "Como la flor",
+      "artist": "Selena Y Los Dinos",
+      "year": 1992,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Angeregt von einem Stand mit Plastikblumen bei einem Konzert 1982 in Sacramento erfand der Bandchef A.B. Quintanilla die Idee; zehn Jahre später, nach einem Auftritt in Bryan, Texas, sprang er unter der Dusche im Hotel ans Keyboard und komponierte die Melodie in 20 Minuten, den Text schrieb Pete Astudillo in einer weiteren Stunde.",
+        "Tejano-Cumbia mit tropischen Cumbia-Rhythmen sowie Reggae- und Pop-Einflüssen; der Text erzählt von einer Frau, die dem früheren Geliebten, der sie für eine andere verlassen hat, von Herzen alles Gute wünscht.",
+        "Die Aufnahme entstand 1992 in den AMEN-Studios von Manny Guerra in San Antonio und erschien als zweite Single des Albums 'Entre a Mi Mundo'.",
+        "Bei Live-Auftritten sang die Sängerin das Stück im trauergesangten Tempo mit einer flammenartigen Handbewegung, rief 'how it hurts me' und schlug sich an die Brust, bevor sie in den flinken Teil wechselte.",
+        "Der Song kam auf Platz 6 der US-Charts der Latin-Musik, erreichte in Mexiko Platz 3, wurde 1993 beim Premio Lo Nuestro zum 'Regional Mexican Song of the Year' gekürt und hält den Weltrekord für die meisten Lip-Sync-Uploads zu einem Lied in einer Stunde."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo sé que tienes un nuevo amor",
+          "Sin embargo, te deseo lo mejor",
+          "Con tu adiós te llevas mi corazón"
+        ],
+        "fake": "Voy a buscar otro camino, otra ciudad, otro amor de verano"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JsUt2jsLM1k",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/selena-y-los-dinos-como-la-flor.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Como_la_Flor",
+        "https://api.lyrics.ovh/v1/Selena%20y%20Los%20Dinos/Como%20la%20flor",
+        "https://en.wikipedia.org/wiki/Selena_y_Los_Dinos",
+        "https://en.wikipedia.org/wiki/Entre_a_Mi_Mundo",
+        "https://music.apple.com/us/album/como-la-flor-remastered-version/1443160824?i=1443161177"
+      ]
+    },
+    {
+      "id": "90s-semisonic-closing-time",
+      "title": "Closing Time",
+      "artist": "Semisonic",
+      "year": 1998,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Classic",
+        "Anthem"
+      ],
+      "hints": [
+        "Der Titel klingt nach Feierabend in einer Bar, der Text erzählt aber vom Ende einer langen Zeit: 'Every new beginning comes from some other beginning's end'.",
+        "Geschrieben und produziert wurde der Song von Dan Wilson; die Aufnahme entstand 1997 im Studio Seedy Underbelly in Minneapolis.",
+        "Er erschien im Februar 1998 als Leadsong des zweiten Albums 'Feeling Strangely Fine', stieg auf Platz 1 der US-Charts für moderne Rockmusik und wurde 1999 für den Grammy 'Best Rock Song' nominiert.",
+        "Nach dreizehn Jahren kehrte der Song 2011 noch einmal in die Charts zurück, weil er im Film 'Friends with Benefits' und in einer Folge der Serie 'The Office' zu hören war.",
+        "Der Refrain öffnet die Tür und schickt alle hinaus in die Welt: 'open all the doors and let you out into the world'."
+      ],
+      "lyrics": {
+        "real": [
+          "You don't have to go home but you can't stay here",
+          "I know who I want to take me home",
+          "Turn all of the lights on over every boy and every girl"
+        ],
+        "fake": "Walking through the silver screen, looking for the girl I've seen"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xGytDsqkQY8",
+        "spotify": "https://open.spotify.com/track/1A5V1sxyCLpKJezp75tUXn",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DN3ZCKPZ"
+      },
+      "coverUrl": "/covers/90s-semisonic-closing-time.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Closing_Time_(Semisonic_song)",
+        "https://en.wikipedia.org/wiki/Feeling_Strangely_Fine",
+        "https://api.lyrics.ovh/v1/Semisonic/Closing%20Time",
+        "https://en.wikipedia.org/wiki/Semisonic",
+        "https://music.apple.com/us/album/closing-time/1443912082?i=1443912092"
+      ]
+    },
+    {
+      "id": "metal-sepultura-roots",
+      "title": "Roots Bloody Roots",
+      "artist": "Sepultura",
+      "year": 1996,
+      "country": "BR",
+      "genre": "Groove Metal / Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Primary",
+        "Powerful",
+        "Aggressive"
+      ],
+      "hints": [
+        "Die Band aus São Paulo mischt Thrash Metal mit brasilianischen Percussion-Elementen; das Video entstand in den Katakomben unter Salvador, in denen einst Sklaven verkauft wurden.",
+        "Der Song erschien im Februar 1996 als Titelsong des sechsten Studioalbums, aufgenommen von Oktober bis Dezember 1995 in den Indigo Ranch Studios in Malibu und produziert von Ross Robinson.",
+        "Der Frontmann verließ die Band nur ein Jahr später und gründete seine eigene Gruppe; heute wird das Stück von beiden Seiten regelmäßig live gespielt.",
+        "Das Video wurde 1996 mit dem Kerrang-'Video of the Year'-Award ausgezeichnet und zeigt die Band in den Katakomben sowie auf den Straßen mit einem Perkussionsistentrek.",
+        "Der Titel des Titelsongs, der bis heute als Zugabe im Konzertrepertoire steht, dreht sich um Wurzeln und Blut."
+      ],
+      "lyrics": {
+        "real": [
+          "Believe In Our Fate",
+          "We Don't Need To Fake",
+          "It's All We Wanna Be"
+        ],
+        "fake": "We ride through the jungle in the rain, the tribal drums are calling our name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nUCodt4zVw4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-sepultura-roots.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Roots_Bloody_Roots",
+        "https://en.wikipedia.org/wiki/Roots_(Sepultura_album)",
+        "https://api.lyrics.ovh/v1/Sepultura/Roots%20Bloody%20Roots",
+        "https://en.wikipedia.org/wiki/Sepultura",
+        "https://music.apple.com/us/album/roots-bloody-roots/576935472?i=576936082"
+      ]
+    },
+    {
+      "id": "yt-Vs64cZbeY88",
+      "title": "Seven",
+      "artist": "Jung Kook ft. Latto",
+      "year": 2023,
+      "country": "KR",
+      "genre": "K-Pop / UK Garage",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Energy"
+      ],
+      "hints": [
+        "Die Veröffentlichung erschien am 14. Juli 2023 als Vorab-Track zum ersten Soloalbum des Sängers und verbindet UK Garage mit Pop: verschleppter Beat, tiefer Bass und ein Refrain, der die Wochentage aufzählt.",
+        "Produziert wurde sie von Andrew Watt und Cirkut, mitgeschrieben haben Jon Bellion, Theron Makiel Thomas und die US-Rapperin der Zusammenarbeit.",
+        "Der Refrain zählt die Wochentage von Montag bis Sonntag durch, bis am Ende eine Zahl steht, die auch den Titel des Songs bildet.",
+        "Die Veröffentlichung stieg in über fünfzig Ländern in die Charts, führte in Indien, Lettland, Malaysia und Singapur und debütierte in Großbritannien auf Platz 3 - ein Rekord für einen Solo-Koreaner.",
+        "Sie stieg auf Platz 1 der US-Billboard Hot 100 und der Global 200 und war das schnellste Lied, das die Marke von einer Milliarde Streams erreichte."
+      ],
+      "lyrics": {
+        "real": [
+          "I must be favored to know ya",
+          "Think I met you in another life",
+          "Weight of the world on your shoulders"
+        ],
+        "fake": "Midnight in the city, we dance till the morning, calling your name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Vs64cZbeY88",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "grand-finale",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/seven--feat--latto--clean-ver-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Seven_(Jung_Kook_song)",
+        "https://api.lyrics.ovh/v1/Jung%20Kook/Seven",
+        "https://en.wikipedia.org/wiki/Golden_(Jung_Kook_album)",
+        "https://en.wikipedia.org/wiki/Jung_Kook",
+        "https://music.apple.com/us/album/seven-clean-ver/1709554767?i=1709555102"
+      ]
+    },
+    {
+      "id": "reggae-shaggy-wasnt-me",
+      "title": "It Wasn't Me",
+      "artist": "Shaggy",
+      "year": 2000,
+      "country": "JM",
+      "genre": "Reggae Fusion",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Groovy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein Mann wird von seiner Freundin beim Fremdgehen ertappt – sein Freund rät ihm, alles zu leugnen, und genau diese Ausrede wird zum wiederkehrenden Running Gag des Songs.",
+        "Zwei Sänger wechseln sich ab: Der Erzähler liefert die Strophen, sein Gegenüber liefert zu jeder Zeile die kurze Antwort, die alles abstreitet.",
+        "Der jamaikanische Dancehall-Künstler brachte den Track 2000 als erste Single seines fünften Albums \"Hot Shot\" heraus, produziert von Shaun \"Sting\" Pizzonia.",
+        "Die Idee hatte einen Vorreiter: Sie entlehnte der Musiker einem Comedy-Bit von Eddie Murphy aus dem Jahr 1987 – später räumte er zudem ein, eine Zeile der Band War interpoliert zu haben.",
+        "Der Song war das meistverkaufte Single des Jahres 2001 in Großbritannien und stand dort sowie in den USA auf Platz 1 der Hitlisten."
+      ],
+      "lyrics": {
+        "real": [
+          "Honey came in and she caught me red-handed",
+          "Creeping with the girl next door",
+          "She stayed until it was over"
+        ],
+        "fake": "Never mind the blame, let the good times roll"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z_4ca8jthAs",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-shaggy-wasnt-me.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/It_Wasn't_Me",
+        "https://en.wikipedia.org/wiki/Hot_Shot_(Shaggy_album)",
+        "https://en.wikipedia.org/wiki/RikRok",
+        "https://www.songfacts.com/facts/shaggy/it-wasnt-me",
+        "https://lrclib.net/api/get?artist_name=Shaggy&track_name=It%20Wasn%27t%20Me"
+      ]
+    }
+  ]
+}

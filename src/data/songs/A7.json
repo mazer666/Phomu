@@ -1,0 +1,676 @@
+{
+  "songs": [
+    {
+      "id": "metal-anthrax-madhouse",
+      "title": "Madhouse",
+      "artist": "Anthrax",
+      "year": 1985,
+      "country": "US",
+      "genre": "Thrash Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Crazy",
+        "Aggressive"
+      ],
+      "hints": [
+        "Der Song wird in einer 2022 erschienenen Kurzgeschichte des Horror-Autors Stephen King namentlich erwähnt.",
+        "Auf der 12-Zoll-Vinyl ist als B-Seite eine Cover-Version des Sex-Pistols-Klassikers 'God Save the Queen' gebunden.",
+        "Das Musikvideo drehte die Band in einer psychiatrischen Anstalt, in der mehrere Patienten im Takt mitschwingen.",
+        "2009 wählte VH1 den Titel auf Platz 46 der besten Hardrock-Songs aller Zeiten; später lief er im Spiel 'Grand Theft Auto: Vice City' und als Cover im Rhythmusspiel 'Guitar Hero II'.",
+        "Der Refrain ruft immer wieder 'It's a ... or so they claim' - das fehlende Wort ist der Titel des Songs und steht im Original in Großbuchstaben."
+      ],
+      "lyrics": {
+        "real": [
+          "White coats to bind me, out of control",
+          "It's a madhouse, or so they claim",
+          "Oh, am I insane?"
+        ],
+        "fake": "Running down the corridors, the white coats fade away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uGHsxMqpL0c",
+        "spotify": "https://open.spotify.com/track/76BYv24CcZt2u94JRjmATX",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-anthrax-madhouse.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Madhouse_(song)",
+        "https://en.wikipedia.org/wiki/Spreading_the_Disease",
+        "https://en.wikipedia.org/wiki/Anthrax_(American_band)",
+        "https://en.wikipedia.org/wiki/Thrash_metal",
+        "https://lrclib.net/api/get?artist_name=Anthrax&track_name=Madhouse"
+      ]
+    },
+    {
+      "id": "yt-faFVSS6OllQ",
+      "title": "Triste Recuerdo",
+      "artist": "Antonio Aguilar",
+      "year": 1991,
+      "country": "MX",
+      "genre": "Ranchera",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Sad"
+      ],
+      "hints": [
+        "Der mexikanische Sänger und Filmschauspieler 'El Charro de México' nahm über 150 Alben auf, die mehr als 25 Millionen Exemplare verkauften.",
+        "Er wurde am 17. Mai 1919 in Villanueva im Bundesstaat Zacatecas geboren und starb am 19. Juni 2007 in Mexiko-Stadt; berühmt wurde er vor allem als Sänger von Corridos.",
+        "Die Ranchera gehört zu den traditionellen Stilen mexikanischer Volksmusik, die älter als die Revolution sind und ihren Namen vom 'rancho' her leiten.",
+        "Im Refrain bittet der Interpret Gott in seinen 'locos desvelos' darum, dass die Geliebte zurückkehrt.",
+        "Der Titel bedeutet 'traurige Erinnerung' - das ganze Stück ist ein flehentlicher Rückblick auf eine verlorene Liebe."
+      ],
+      "lyrics": {
+        "real": [
+          "El tiempo pasa y no te puedo olvidar",
+          "Dime, qué cosa me hiciste, que no te puedo olvidar",
+          "Al escucharla te acuerdes de mí, como me acuerdo de ti"
+        ],
+        "fake": "Te espero en la puerta con un ramo de rosas y un café caliente"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=faFVSS6OllQ",
+        "spotify": "https://open.spotify.com/track/5wLqk86XlgZCzP8mMG9PrF",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "country-folk",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/antonio-aguilar-triste-recuerdo.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Antonio_Aguilar",
+        "https://en.wikipedia.org/wiki/Ranchera",
+        "https://en.wikipedia.org/wiki/Corrido",
+        "https://lrclib.net/api/get?artist_name=Antonio%20Aguilar&track_name=Triste%20Recuerdo",
+        "https://itunes.apple.com/search?term=Antonio+Aguilar+Triste+Recuerdo&limit=2&entity=song"
+      ]
+    },
+    {
+      "id": "yt-Iv3T2Y1QJ7M",
+      "title": "Un Puño de Tierra",
+      "artist": "Antonio Aguilar",
+      "year": 1988,
+      "country": "MX",
+      "genre": "Ranchera",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Sad"
+      ],
+      "hints": [
+        "Der mexikanische Sänger 'The Godfather of Banda Music' nahm über 150 Alben auf und verkaufte mehr als 25 Millionen Schallplatten.",
+        "Zu seinen bekanntesten Titeln zählt dieses Stück - es gehört zu den Klassikern der Ranchera.",
+        "Die Ranchera ist mexikanische Volksmusik, älter als die Revolution, und wurde zum Symbol eines neuen nationalen Bewusstseins; ihr Interpret war vor allem für seine Corridos bekannt.",
+        "Der Text erzählt vom Leben ohne Halt - 'Yo soy un alma sin dueño'; am Ende kündigt der Interpret seinen Tod an und sagt, dass er von der Erde nur eine Handvoll mitnehmen wird.",
+        "Der Titel bedeutet 'eine Handvoll Erde' und ist eine Metapher für das, was von einem Menschen bleibt."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo soy un alma sin dueño",
+          "Lo que pasó en este mundo, nomás el recuerdo queda",
+          "Ya muerto voy a llevarme, nomás un puño de tierra"
+        ],
+        "fake": "Yo planting cafetales para verlos prosperar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Iv3T2Y1QJ7M",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "country-folk",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/antonio-aguilar-un-puño-de-tierra.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Antonio_Aguilar",
+        "https://en.wikipedia.org/wiki/Ranchera",
+        "https://en.wikipedia.org/wiki/Corrido",
+        "https://lrclib.net/api/get?artist_name=Antonio%20Aguilar&track_name=Un%20Pu%C3%B1o%20De%20Tierra",
+        "https://itunes.apple.com/search?term=Antonio+Aguilar+Un+Puno+De+Tierra&limit=2&entity=song"
+      ]
+    },
+    {
+      "id": "class-vivaldi-spring",
+      "title": "The Four Seasons (Spring)",
+      "artist": "Antonio Vivaldi",
+      "year": 1725,
+      "country": "IT",
+      "genre": "Baroque",
+      "difficulty": "easy",
+      "mood": [
+        "Positive",
+        "Lively",
+        "Classic"
+      ],
+      "hints": [
+        "Jedem der Konzerte ist ein Sonett beigegeben, das in drei Abschnitte geteilt ist und genau einem Satz entspricht; wer die Sonette schrieb, ist nicht gesichert.",
+        "Die Konzerte entstanden, als der Komponist Kapellmeister am Hof von Mantua war; 1725 erschienen sie in Amsterdam zusammen mit acht weiteren Konzerten in der Sammlung 'Il cimento dell'armonia e dell'inventione' (Op. 8).",
+        "Der Komponist wurde 1703 im Alter von 25 Jahren zum Priester geweiht und trug den Spitznamen 'il Prete Rosso', der Rote Priester.",
+        "Im zweiten Satz hört man im Viola-Part das Bellen des Hundes, während der Hirte schläft; jedes Konzert gliedert sich in drei Sätze mit schnellem Anlauf und langsamem Mittelteil.",
+        "Das Stück ist rein instrumental - der Titel nennt eine Jahreszeit, doch es handelt sich um ein Konzert für eine Solovioline mit Streichern und Basso continuo, ohne jeden gesungenen Text."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=M9e_sINPL_0",
+        "spotify": "https://open.spotify.com/track/103vQxq8idZLN0n0j5Xunl",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/class-vivaldi-spring.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)",
+        "https://en.wikipedia.org/wiki/Il_cimento_dell%27armonia_e_dell%27inventione",
+        "https://en.wikipedia.org/wiki/Antonio_Vivaldi",
+        "https://en.wikipedia.org/wiki/Baroque_music",
+        "https://en.wikipedia.org/wiki/Program_music"
+      ]
+    },
+    {
+      "id": "yt-AnKdQ5p5Ks8",
+      "title": "Ayer",
+      "artist": "Anuel AA",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Trap",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track erschien als Nicht-Album-Single, erreichte in den Billboard-Charts für lateinische Musik Platz 42 und wurde von der RIAA für den lateinischen Markt mit doppeltem Platin ausgezeichnet.",
+        "Im selben Jahr wurde er wegen illegalen Waffenbesitzes zu 30 Monaten Haft verurteilt und nahm sein Debütalbum im Gefängnis auf.",
+        "Er ist als 'The God of Latin Trap' bekannt - ein Genre, das den US-Trap mit lateinamerikanischen und karibischen Klängen verband.",
+        "Der Gastbeitrag stammt von DJ Nelson, der im gleichen Jahr auch eine Version des Stücks mit Farruko veröffentlichte.",
+        "Der Titel bedeutet 'Gestern' - im Text blickt der Sänger zurück auf eine verlorene Liebesbeziehung."
+      ],
+      "lyrics": {
+        "real": [
+          "Viviendo en este infierno diablita pensando en ti",
+          "Baby esa sonrisa me tiene creyendo en el ayer",
+          "El tiempo no da pa' tras"
+        ],
+        "fake": "Ayer fue el mejor dia, manana va a ser mejor que hoy"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AnKdQ5p5Ks8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/anuel-ayer-ft--dj-nelson.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Anuel_AA",
+        "https://en.wikipedia.org/wiki/Latin_trap",
+        "https://en.wikipedia.org/wiki/DJ_Nelson",
+        "https://lrclib.net/api/get?artist_name=Anuel%20AA&track_name=Ayer",
+        "https://itunes.apple.com/search?term=Anuel+AA+Ayer&limit=5&entity=song"
+      ]
+    },
+    {
+      "id": "yt-NsOHFQSdt78",
+      "title": "Nacimos Pa Morir",
+      "artist": "Anuel AA",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Trap",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das offizielle Video erschien im VEVO-Kanal des Künstlers; nach dem ersten Refrain ruft der Track mit einem 'Pon música!' in die Runde, während die Strophen zwischen den beiden Mitwirkenden wechseln.",
+        "Der Gastbeitrag kommt von Jory, einem der beiden Mitglieder des puerto-ricanischen Duos Nova & Jory, das von 2003 bis 2012 aktiv war.",
+        "Die Single erschien am 10. November 2016 als eigenständiger Release.",
+        "Der Track verbindet den düsteren Trap-Stil des Künstlers mit einer existenziellen Botschaft vom Tod und vom Leben auf der Straße.",
+        "Der Titel bedeutet 'Wir wurden geboren, um zu sterben' - genau diese Botschaft steckt in der Titelzeile des Refrains."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby tu y yo nacimos para morir",
+          "Tus ojos brillan como mis prendas baby",
+          "Yo siento que este mundo va acabarse pronto"
+        ],
+        "fake": "Nacimos para vivir y la vida es una fiesta sin final"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NsOHFQSdt78",
+        "spotify": "https://open.spotify.com/track/3tEJZO2wMtvhQH5EKfKbkh",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/anuel-nacimos-pa-morir--ft--jory.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Anuel_AA",
+        "https://en.wikipedia.org/wiki/Nova_%26_Jory",
+        "https://en.wikipedia.org/wiki/Latin_trap",
+        "https://lrclib.net/api/get?artist_name=Anuel%20AA&track_name=Nacimos%20Pa%20Morir",
+        "https://itunes.apple.com/search?term=Anuel+AA+Nacimos+Pa+Morir&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-77zog6Up_Yg",
+      "title": "Barbie Girl",
+      "artist": "Aqua",
+      "year": 1997,
+      "country": "DK",
+      "genre": "Eurodance",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Die dänisch-norwegische Eurodance-Gruppe entstand 1995 in Kopenhagen und verkaufte nach eigenen Angaben rund 33 Millionen Alben und Singles - damit gilt sie als profitabelste dänische Band der Geschichte.",
+        "Der Puppenhersteller verklagte das Plattenlabel 1997; das Berufungsgericht erklärte den Song 2002 zur Parodie, der Richter riet den Parteien, 'chill' zu bleiben, und der Supreme Court wies das Rechtsmittel 2003 ab.",
+        "Die Single erschien im April 1997 als dritte Auskopplung des Debütalbums, stand vier Wochen auf Platz 1 der britischen Hitparade und erreichte in den USA Platz 7 der Billboard Hot 100.",
+        "Der Text entstand, nachdem ein Bandmitglied eine Ausstellung über Kitsch-Kultur in Dänemark besucht hatte - die Strophe 'Life in plastic, it's fantastic!' preist das Leben aus Plastik.",
+        "2023 sampelten zwei Rapperinnen den Song für den Soundtrack des Kinofilms des Puppenherstellers; im Musikvideo spielt die Sängerin die Plastikpuppe, ihr Partner den männlichen Begleiter, und schon 2009 nahm der Puppenhersteller den Song für eine Werbekampagne mit geändertem Text neu auf."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm a Barbie girl, in a Barbie world",
+          "Life in plastic, it's fantastic!",
+          "Imagination, life is your creation"
+        ],
+        "fake": "Dancing through the shopping mall, we sparkle till we fall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=77zog6Up_Yg",
+        "spotify": "https://open.spotify.com/track/5ZrDlcxIDZyjOzHdYW1ydr",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "90s Unplugged",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/aqua-barbie-girl.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Barbie_Girl",
+        "https://en.wikipedia.org/wiki/Aqua_(band)",
+        "https://en.wikipedia.org/wiki/Mattel,_Inc._v._MCA_Records,_Inc.",
+        "https://en.wikipedia.org/wiki/Barbie_(film)",
+        "https://itunes.apple.com/search?term=Aqua+Barbie+Girl&limit=2&entity=song"
+      ]
+    },
+    {
+      "id": "indie-arcade-fire-wake-up",
+      "title": "Wake Up",
+      "artist": "Arcade Fire",
+      "year": 2004,
+      "country": "CA",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Powerful"
+      ],
+      "hints": [
+        "Die kanadische Indie-Band aus Montreal wurde 2001 von Win Butler und Josh Deu gegründet; ihr Debütalbum entstand in einer Woche im August 2003 im Studio Hotel2Tango und erschien am 14. September 2004.",
+        "Die Single kam am 14. November 2005 als einseitige 7-Zoll auf den Markt, die fünfte und letzte Auskopplung des Debütalbums; die Albumfassung dauert 5:33 Minuten.",
+        "2014 nannte Pitchfork den Refrain einen der aufregendsten Momente der jüngeren Rockgeschichte und schrieb dem 'Woah-oh'-Gesang das populärste stimmliche Mittel des modernen Rock zu.",
+        "2005 trat David Bowie bei der Fashion Rocks-Veranstaltung live mit der Band auf, die Aufnahme erschien auf der EP 'Live at Fashion Rocks'.",
+        "Für den Trailer des Kinderfilms 'Where the Wild Things Are' (2009) nahm die Band eine neue Version auf; beim Super Bowl XLIV lief der Song 2010 im Werbespot, die Erlöse gingen an die Haiti-Hilfsorganisation Partners in Health."
+      ],
+      "lyrics": {
+        "real": [
+          "Someone told me not to cry",
+          "And I can see that it's a lie",
+          "Our bodies get bigger but our hearts get torn up"
+        ],
+        "fake": "The night is over and the thunder calls us out"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sJRPPUr1yic",
+        "spotify": "https://open.spotify.com/track/6Hmj7SrLRbreLVfVS7mV1S",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/indie-arcade-fire-wake-up.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wake_Up_(Arcade_Fire_song)",
+        "https://en.wikipedia.org/wiki/Funeral_(Arcade_Fire_album)",
+        "https://en.wikipedia.org/wiki/Arcade_Fire",
+        "https://en.wikipedia.org/wiki/Where_the_Wild_Things_Are_(film)",
+        "https://api.lyrics.ovh/v1/Arcade%20Fire/Wake%20Up"
+      ]
+    },
+    {
+      "id": "yt-RcmhoqMm7G0",
+      "title": "Guaya",
+      "artist": "Arcangel & Daddy Yankee",
+      "year": 2012,
+      "country": "PR",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der puertoricanische Gast-Star gilt als 'King of Reggaeton'; 2004 brachte sein Album 'Barrio Fino' den Welterfolg 'Gasolina' und wurde zum meistverkauften Latin-Album des Jahrzehnts.",
+        "Die Bezeichnung Reggaeton entstand in Puerto Rico und wurde vor allem durch den Dembow-Beat ab den frühen 2000er-Jahren geprägt.",
+        "Der puertoricanische Rapper unterschrieb 2012 bei Pina Records; sein 2013 erschienenes Album 'Sentimiento, Elegancia & Maldad' mit dem Gast-Star debütierte auf Platz 1 der US-Charts für Latin-Alben.",
+        "Die Aufnahme entstand für das Mixtape 'El Imperio Nazza: The Mixtape' - im Refrain stellen sich die beiden Rapper mit dem Namen des Labels vor, dazwischen schlägt der Dembow-Beat an.",
+        "Im Refrain wird das Titelwort als Verb benutzt: die Sängerin will, dass man auf ihr tanzt, während die Partystimmung mit 'pam pam' angeheizt wird."
+      ],
+      "lyrics": {
+        "real": [
+          "Y como quiera hace mucho calor",
+          "Y así la pasamos mucho mejor",
+          "Y la pasamos muy bien sin inquietudes"
+        ],
+        "fake": "Bailamos en la playa con el sol del Caribe"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RcmhoqMm7G0",
+        "spotify": "https://open.spotify.com/track/6qVxcpqKeVDxcT0eMMWtyN",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/arcangel---daddy-yankee-arcangel-ft--daddy-yankee---guaya--audio-oficial-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Arc%C3%A1ngel",
+        "https://en.wikipedia.org/wiki/Daddy_Yankee",
+        "https://en.wikipedia.org/wiki/Reggaeton",
+        "https://lrclib.net/api/get?artist_name=Arcangel&track_name=Guaya",
+        "https://api.lyrics.ovh/v1/Arcangel/Guaya"
+      ]
+    },
+    {
+      "id": "metal-architects-doomsday",
+      "title": "Doomsday",
+      "artist": "Architects",
+      "year": 2017,
+      "country": "GB",
+      "genre": "Metalcore / Progressive Metalcore",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Die britische Metalcore-Band aus Brighton wurde 2004 von den Zwillingsbrüdern Dan und Tom Searle gegründet; seit 2013 ist sie bei Epitaph Records unter Vertrag.",
+        "Der Gitarrist und Hauptsongwriter starb im August 2016 nach drei Jahren Kampf mit Hautkrebs - das Stück war sein letztes Werk, das sein Bruder Dan Searle vollendete.",
+        "Die Single erschien am 7. September 2017 als eigenständige Veröffentlichung, rund 14 Monate vor dem achten Studioalbum, und chartete auf Platz 17 der britischen Rock- und Metal-Singles; im Dezember 2017 folgte eine auf 1000 Stück limitierte 7-Zoll.",
+        "Im Juli 2018 erschien eine akustische Klavier-Reprise-Version; das Video zeigt den Schlagzeuger vor einem sternenübersäten Hintergrund.",
+        "Kritiker verknüpften die Textzeile 'They say the good die young' direkt mit dem Tod des Gitarristen; laut einem Interview markiert das Stück den Umgang der Band mit extremem Schmerz."
+      ],
+      "lyrics": {
+        "real": [
+          "The cold still burns underneath my skin",
+          "They say the good die young",
+          "Every river flows into the sea"
+        ],
+        "fake": "In the middle of the storm we are chasing the ghost of our youth"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RvWbcK3YQ_o",
+        "spotify": "https://open.spotify.com/track/75R95k0ICuZBFVEjBauOtt",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-architects-doomsday.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Doomsday_(Architects_song)",
+        "https://en.wikipedia.org/wiki/Architects_(British_band)",
+        "https://en.wikipedia.org/wiki/Holy_Hell_(Architects_album)",
+        "https://en.wikipedia.org/wiki/All_Our_Gods_Have_Abandoned_Us",
+        "https://lrclib.net/api/get?artist_name=Architects&track_name=Doomsday"
+      ]
+    },
+    {
+      "id": "indie-arctic-monkeys-do-i-wanna-know",
+      "title": "Do I Wanna Know?",
+      "artist": "Arctic Monkeys",
+      "year": 2013,
+      "country": "GB",
+      "genre": "Indie Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Sexy",
+        "Moody"
+      ],
+      "hints": [
+        "Die Band aus Sheffield formierte sich 2002; ihr fünftes Studioalbum entstand zwischen Januar 2012 und Juni 2013, debütierte am 15. September 2013 auf Platz 1 der britischen Albumcharts und war das erste Debüt eines Independent-Labels an der Spitze.",
+        "Die Single erschien am 19. Juni 2013, aufgenommen in Los Angeles und im Studio Rancho de la Luna in Joshua Tree, produziert von James Ford und Ross Orton.",
+        "Sie stieg mit Platz 11 in die britische Hitparade ein - die höchste Chartposition der Band seit 'Fluorescent Adolescent' (2007) - und blieb 65 Wochen in den Top 100.",
+        "Im Januar 2014 erreichte sie Platz 1 der Billboard Alternative Songs, das erste US-Chartsignal der Band; im März 2014 war sie mit Platz 70 erstmals in den Hot 100.",
+        "Das animierte Video, das mit schwingenden weißen Linien beginnt und auf zwei gekreuzte Ziellinien endet, erreichte 2020 die Marke von einer Milliarde Views - eines von nur zwölf Rockvideos mit dieser Reichweite."
+      ],
+      "lyrics": {
+        "real": [
+          "Have you got colour in your cheeks?",
+          "Crawlin' back to you",
+          "(Do I wanna know?) If this feelin' flows both ways?"
+        ],
+        "fake": "In the middle of the night, we're looking for the light of our soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bpOSxM0rNPM",
+        "spotify": "https://open.spotify.com/track/5FVjtM5XPrpXjXWkPzJ0X9",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/indie-arctic-monkeys-do-i-wanna-know.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Do_I_Wanna_Know%3F",
+        "https://en.wikipedia.org/wiki/AM_(Arctic_Monkeys_album)",
+        "https://en.wikipedia.org/wiki/Arctic_Monkeys",
+        "https://en.wikipedia.org/wiki/Fluorescent_Adolescent",
+        "https://api.lyrics.ovh/v1/Arctic%20Monkeys/Do%20I%20Wanna%20Know%3F"
+      ]
+    },
+    {
+      "id": "finale-arctic-yours",
+      "title": "I Wanna Be Yours",
+      "artist": "Arctic Monkeys",
+      "year": 2013,
+      "country": "GB",
+      "genre": "Indie Rock / Classic (resurgence)",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Romantic",
+        "Cool"
+      ],
+      "hints": [
+        "Der Text stammt nicht von der Band, sondern vom britischen Spoken-Word-Poeten John Cooper Clarke; das Gedicht erschien 1982 auf dessen Album 'Zip Style Method' und stand später im GCSE-Lehrplan.",
+        "Die Band adaptierte das Gedicht als Schlussstück ihres fünften Albums 'AM', das am 6. September 2013 erschien; die Aufnahme wurde nie als Single released.",
+        "Der Autor sagte 2025, er möge die Version der Band lieber als seine eigene mit 'kitschem musalischem Unterbau'; das Stück ist heute ein beliebter Hochzeitsvortrag.",
+        "Der 'Guardian' schrieb im März 2023, das Gedicht sei 'quantifizierbar das beliebteste britische Gedicht der Welt' - es ist der meistgestreamte Song der Band.",
+        "Im Text spielt die Sängerin eine Reihe von Haushaltsgeräten und Autos durch: Staubsauger, Ford Cortina, Kaffeetopf und Heizlüfter - am Ende bleibt nur der Wunsch, dazuzugehören."
+      ],
+      "lyrics": {
+        "real": [
+          "I wanna be your vacuum cleaner",
+          "Breathing in your dust",
+          "I just wanna be yours"
+        ],
+        "fake": "The washing machine hums while you are still asleep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nyuo9-OjNNg",
+        "spotify": "https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/arctic-monkeys-i-wanna-be-yours.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Wanna_Be_Yours",
+        "https://en.wikipedia.org/wiki/John_Cooper_Clarke",
+        "https://en.wikipedia.org/wiki/AM_(Arctic_Monkeys_album)",
+        "https://en.wikipedia.org/wiki/Zip_Style_Method",
+        "https://api.lyrics.ovh/v1/Arctic%20Monkeys/I%20Wanna%20Be%20Yours"
+      ]
+    }
+  ]
+}

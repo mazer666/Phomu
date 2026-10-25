@@ -1,0 +1,687 @@
+{
+  "songs": [
+    {
+      "id": "world-raycharles-roadjack",
+      "title": "Hit the Road Jack",
+      "artist": "Ray Charles",
+      "year": 1961,
+      "country": "US",
+      "genre": "R&B / Soul / Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Energy",
+        "Funny"
+      ],
+      "hints": [
+        "Der Text stammt von Percy Mayfield, der das Lied 1960 zunächst als a-cappella-Demo an den Musikmanager Art Rupe schickte.",
+        "Der Songwriter ist vor allem auch für \"Please Send Me Someone to Love\" bekannt und sang zeitweilig in der Band des Interpreten.",
+        "Die Antwort im Refrain singt Margie Hendrix, Mitgründerin der Raelettes – des weiblichen Backgroundchors des Pianisten.",
+        "Die Single erschien im August 1961 beim Label ABC-Paramount und stand zwei Wochen auf Platz 1 der Billboard Hot 100.",
+        "Das knapp zwei Minuten lange Stück wirkt wie ein Streitgespräch, in dem der Backgroundchor den Sänger abweist und zum sofortigen Aufbruch auffordert."
+      ],
+      "lyrics": {
+        "real": [
+          "Hit the road Jack and don't you come back no more",
+          "What you say?",
+          "I guess if you said so"
+        ],
+        "fake": "Every time I call your name, the line goes dead and there's no sound"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uSiHqxgE2d0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/world-raycharles-roadjack.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "60s & 70s Soul & Rock Legends",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hit_the_Road_Jack",
+        "https://en.wikipedia.org/wiki/Percy_Mayfield",
+        "https://en.wikipedia.org/wiki/Margie_Hendrix",
+        "https://www.songfacts.com/facts/ray-charles/hit-the-road-jack",
+        "https://api.lyrics.ovh/v1/Ray%20Charles/Hit%20the%20Road%20Jack"
+      ]
+    },
+    {
+      "id": "movie-ray-parker-jr-ghostbusters",
+      "title": "Ghostbusters",
+      "artist": "Ray Parker Jr.",
+      "year": 1984,
+      "country": "US",
+      "genre": "Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Fun",
+        "Catchy",
+        "Halloween"
+      ],
+      "hints": [
+        "Der Filmregisseur Ivan Reitman bestand darauf, dass der Filmtitel im Lied vorkommt – der Sänger fand das anfangs kaum lösbar.",
+        "Aufgenommen wurde der Song 1983, veröffentlicht am 8. Juni 1984 über das Label Arista, geschrieben und produziert vom Interpreten selbst.",
+        "Für den Oscar als bester Originalsong nominiert, verlor das Lied jedoch gegen \"I Just Called to Say I Love You\".",
+        "Huey Lewis und seine Band klagten gegen den Interpreten, weil sie eine Melodie aus \"I Want a New Drug\" wiedererkannten – der Fall endete mit einem Vergleich.",
+        "Der Refrain ruft immer wieder den Filmtitel – die Zeile \"Who you gonna call?\" ist weltweit bekannt."
+      ],
+      "lyrics": {
+        "real": [
+          "I ain't afraid of no ghost",
+          "If it's somethin' weird",
+          "An invisible man"
+        ],
+        "fake": "When the shadows fall and the monsters call for your soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Fe93CLbHjxQ",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/movie-ray-parker-jr-ghostbusters.jpg",
+      "packs": [
+        "Movie Hits",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ghostbusters_(song)",
+        "https://en.wikipedia.org/wiki/Ghostbusters",
+        "https://www.songfacts.com/facts/ray-parker-jr/ghostbusters",
+        "https://api.lyrics.ovh/v1/Ray%20Parker%20Jr/Ghostbusters",
+        "https://lrclib.net/api/get?artist_name=Ray%20Parker%20Jr.&track_name=Ghostbusters"
+      ]
+    },
+    {
+      "id": "yt-jZxTMpX13to",
+      "title": "Dime Amor",
+      "artist": "Raymix",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Künstler absolvierte 2013 ein Praktikum bei der US-Weltraumbehörde NASA und gilt als \"König der Electrocumbia\".",
+        "Sein Stil verbindet die mexikanische Cumbia mit elektronischen Genres wie Trance, House, Chill-out und Ambient.",
+        "Der Interpret veröffentlichte den Song als dritte Single seines Debütalbums, am 1. Juli 2016.",
+        "Der spanische Refrain stellt die Frage, warum die Geliebte verschwindet, ohne ihm ein Wort zu sagen.",
+        "Im Text wird die Musikrichtung \"Electro Cumbia\" ausdrücklich genannt."
+      ],
+      "lyrics": {
+        "real": [
+          "¿Dime amor porque te vas?",
+          "Sin decirme nada",
+          "Si un día mi amor te di"
+        ],
+        "fake": "En la ciudad de la luz bailamos hasta que amanezca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jZxTMpX13to",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/raymix-dime-amor.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Raymix",
+        "https://es.wikipedia.org/wiki/Oye_mujer_(canci%C3%B3n)",
+        "https://api.lyrics.ovh/v1/Raymix/Dime%20Amor",
+        "https://lrclib.net/api/get?artist_name=Raymix&track_name=Dime%20Amor",
+        "https://itunes.apple.com/search?term=Raymix+Dime+Amor&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "yt-x3nIjJthev0",
+      "title": "¿Dónde Estarás?",
+      "artist": "Raymix",
+      "year": 2018,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Sänger veröffentlichte die Single 2018 – zwei Jahre zuvor war bereits eine Lyrik-Video-Fassung erschienen.",
+        "In den US-Billboard-Latin-Charts erreichte die Single Platz 28, in Mexiko Platz 21 und bei den regional mexikanischen Airplay-Charts Platz 3.",
+        "Die RIAA zertifizierte den Titel doppelt multi-platin, die mexikanische AMPROFON mit Platin.",
+        "Der knapp vier Minuten lange Song schrieb der Interpret selbst und gehört zum Genre der Electrocumbia.",
+        "Der spanische Text erzählt von einer Liebsten, die verschwunden ist, und endet mit der Frage, wo sie wohl sein könnte."
+      ],
+      "lyrics": {
+        "real": [
+          "Con esta soledad",
+          "Yo no te puedo encontrar, mil montañas subiría para verte",
+          "Quiero que se escuche el amor en esta canción"
+        ],
+        "fake": "Bajaré al puerto a buscarte entre la brisa y la sal"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=x3nIjJthev0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/raymix-donde-estaras-single.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/%C2%BFD%C3%B3nde_estar%C3%A1s%3F",
+        "https://es.wikipedia.org/wiki/Raymix",
+        "https://api.lyrics.ovh/v1/Raymix/%C2%BFD%C3%B3nde%20Estar%C3%A1s%3F",
+        "https://lrclib.net/api/get?artist_name=Raymix&track_name=%C2%BFD%C3%B3nde%20Estar%C3%A1s%3F",
+        "https://itunes.apple.com/search?term=Raymix+Donde+Estaras&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "yt-OqYG87oxlGo",
+      "title": "Another Night",
+      "artist": "Real McCoy",
+      "year": 1993,
+      "country": "DE",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "1992 stellten die Macher des Projekts den Stil von Hip-House auf Eurodance und Pop um.",
+        "Der Text rappt und singt abwechselnd: Den Rap-Part schrieb und sang der deutsche Rapper Olaf Jeglitza, den Gesang übernahm die Studiosängerin Karin Kasar.",
+        "Die Single erschien am 12. Juli 1993 bei Hansa Records und war zunächst nur in Deutschland ein Erfolg mit Platz 18.",
+        "Ein Jahr später erreichte sie Platz 1 in Kanada und Platz 3 in den USA, wo sie 45 Wochen in den Charts blieb und Platin erhielt.",
+        "Der Text erzählt von einer Frau, die sich in jedem Traum nach demselben anonymen Mann sehnt."
+      ],
+      "lyrics": {
+        "real": [
+          "Another night, another dream, but always you",
+          "Just another night, another vision of love",
+          "In the night, in my dreams"
+        ],
+        "fake": "Burning up the midnight, chasing every dollar sign"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OqYG87oxlGo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/real-mccoy-another-night.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Another_Night_(song)",
+        "https://en.wikipedia.org/wiki/Real_McCoy_(band)",
+        "https://api.lyrics.ovh/v1/Real%20McCoy/Another%20Night",
+        "https://lrclib.net/api/get?artist_name=Real%20McCoy&track_name=Another%20Night",
+        "https://itunes.apple.com/search?term=Real+McCoy+Another+Night&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "yt-YlUKcNNmywk",
+      "title": "Californication",
+      "artist": "Red Hot Chili Peppers",
+      "year": 1999,
+      "country": "US",
+      "genre": "All-Time",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Der Text steckt voller Popkultur-Verweise: Kurt Cobain, Bowies \"Station To Station\" und der zerstörte Planet Alderaan aus \"Star Wars\".",
+        "Der Bassist der Band nannte das zugehörige Album das beste in der Bandgeschichte.",
+        "Das Studioalbum, auf dem der Song entstand, erschien 1999 bei Warner und wurde von Rick Rubin produziert.",
+        "Als Single erschien der Song im Juni 2000 und belegte in den USA Platz 69 der Hot 100 – auf den Rock- und Alternative-Charts war er dagegen Nummer eins.",
+        "Im Refrain wird viermal derselbe Traum wiederholt; davor fallen Begriffe wie Surgeon, Prominenz-Haut und ein Stern auf dem Boulevard."
+      ],
+      "lyrics": {
+        "real": [
+          "And buy me a star on the boulevard",
+          "Pay your surgeon very well",
+          "It's the edge of the world"
+        ],
+        "fake": "Static hums across the desert while the neon signs decay"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YlUKcNNmywk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Rock Anthems",
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/red-hot-chili-peppers-californication---hd-upgrade-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Californication_(song)",
+        "https://en.wikipedia.org/wiki/Californication_(album)",
+        "https://www.songfacts.com/facts/red-hot-chili-peppers/californication",
+        "https://lrclib.net/api/get?artist_name=Red%20Hot%20Chili%20Peppers&track_name=Californication",
+        "https://api.lyrics.ovh/v1/Red%20Hot%20Chili%20Peppers/Californication"
+      ]
+    },
+    {
+      "id": "indie-rhcp-under-the-bridge",
+      "title": "Under the Bridge",
+      "artist": "Red Hot Chili Peppers",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Epic"
+      ],
+      "hints": [
+        "Der Sänger schrieb den Text als Gedicht über seine Einsamkeit und darüber, wie er von Drogen loskam, und zeigte ihn zunächst kaum jemandem.",
+        "Für das große Schlussbild holte der Gitarrist seine Mutter und deren Freundin aus einem Chor ins Studio, weil der Produzent einen größeren Chor hören wollte.",
+        "Aufgenommen wurde der Song 1991 im Studio The Mansion in Los Angeles, produziert von Rick Rubin.",
+        "Das Video inszenierte der Filmregisseur Gus Van Sant, der auch das Coverart des Albums gestaltete.",
+        "Die Single erreichte 1992 in den USA Platz 2 der Hot 100 und wurde sechsfach platin ausgezeichnet."
+      ],
+      "lyrics": {
+        "real": [
+          "Sometimes I feel like I don't have a partner",
+          "Lonely as I am, together we cry",
+          "Take me to the place I love, take me all the way"
+        ],
+        "fake": "Down by the overpass, the sodium lights are humming, and I keep walking home"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GLvohMXgcBo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/indie-rhcp-under-the-bridge.jpg",
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Under_the_Bridge",
+        "https://en.wikipedia.org/wiki/Blood_Sugar_Sex_Magik",
+        "https://en.wikipedia.org/wiki/Gus_Van_Sant",
+        "https://api.lyrics.ovh/v1/Red%20Hot%20Chili%20Peppers/Under%20the%20Bridge",
+        "https://itunes.apple.com/search?term=Red+Hot+Chili+Peppers+Under+the+Bridge&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "yt-HAlspX_kjL4",
+      "title": "Cotton Eye Joe",
+      "artist": "Rednex",
+      "year": 1994,
+      "country": "SE",
+      "genre": "Eurodance",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Party"
+      ],
+      "hints": [
+        "Der Song ist eine Techno-Version eines amerikanischen Volkslieds, das schon vor dem Bürgerkrieg entstanden ist.",
+        "Die schwedische Band produzierte den Titel in etwa vier Stunden im Studio Future Crew im US-Bundesstaat Idaho.",
+        "Der Refrain wird von einem männlichen Sänger gesungen, die beiden Strophen von einer Sopranistin – im Video ist der Mann nicht zu sehen.",
+        "Die Single erschien im August 1994 und war in Schweden der erfolgreichste Hit des Jahres.",
+        "In den USA erreichte sie Platz 25 der Billboard Hot 100, in mindestens elf Ländern stand sie auf Platz 1."
+      ],
+      "lyrics": {
+        "real": [
+          "He came to town like a midwinter storm",
+          "His eyes was his tools and his smile was his gun",
+          "I'd been married long time ago"
+        ],
+        "fake": "Riding on a dusty trail with a rifle in my hand"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HAlspX_kjL4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rednex-cotton-eye-joe.jpg",
+      "packs": [
+        "country-folk",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cotton_Eye_Joe_(Rednex_song)",
+        "https://en.wikipedia.org/wiki/Cotton-Eyed_Joe",
+        "https://en.wikipedia.org/wiki/Rednex",
+        "https://api.lyrics.ovh/v1/Rednex/Cotton%20Eye%20Joe",
+        "https://lrclib.net/api/get?artist_name=Rednex&track_name=Cotton%20Eye%20Joe"
+      ]
+    },
+    {
+      "id": "yt-hjrZJeXZN0o",
+      "title": "Secrets",
+      "artist": "Regard & RAYE",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Der DJ aus Ferizaj im Kosovo hatte 2019 mit seinem Cover von 'Ride It' von Jay Sean den weltweiten Durchbruch.",
+        "Die Single erschien am 24. April 2020 bei Ministry of Sound und stammt aus dem Mini-Album 'Euphoric Sad Songs' der Sängerin.",
+        "Das Video ist eine rechnerisch erzeugte Produktion von Harry Lindley und erzählt die Fahrt eines maskierten Motorradfahrers.",
+        "Der Song erreichte Platz 8 in den US-Dance-Charts und stand in Großbritannien, Irland und Polen in den Top 10.",
+        "2021 wurde das Duo damit für den Brit Award in der Kategorie 'Song of the Year' nominiert."
+      ],
+      "lyrics": {
+        "real": [
+          "I don't know 'bout you, 'bout you",
+          "What a way to drop a bombshell baby",
+          "Guess you really didn't think I'd found out"
+        ],
+        "fake": "We danced through the night while the city slept beneath the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hjrZJeXZN0o",
+        "spotify": "https://open.spotify.com/track/66W1rVTnEv86dIkFhoiElg",
+        "amazonMusic": "",
+        "fallbackYoutubeId": "https://www.youtube.com/watch?v=nPLN5HXsq04"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/regard---raye-secrets.jpg",
+      "packs": [
+        "electronic-synth",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Secrets_(Regard_and_Raye_song)",
+        "https://en.wikipedia.org/wiki/Regard_(DJ)",
+        "https://en.wikipedia.org/wiki/Raye",
+        "https://api.lyrics.ovh/v1/Regard/Secrets",
+        "https://itunes.apple.com/search?term=Regard+RAYE+Secrets&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "yt-tVLK-sEk12M",
+      "title": "Years & Years",
+      "artist": "Olly Murs",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Sänger wurde 2009 durch die Talentshow X Factor bekannt, in der er als Zweitplatzierter endete.",
+        "Der Titel erschien 2016 auf dem Album '24 HRS'.",
+        "Der Refrain betont, dass die beiden noch viele Jahre miteinander sein werden.",
+        "Im Text geht es darum, was man vom Leben will und dass die Zeit nur für die beiden zählt.",
+        "Der Sänger stammt aus Witham in Essex und wurde dort 1984 geboren."
+      ],
+      "lyrics": {
+        "real": [
+          "When I'm alone, in the dark",
+          "But I never thought I would find",
+          "Because there you are by my side"
+        ],
+        "fake": "I was driving through the desert with the radio turned down low"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tVLK-sEk12M",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/regard---years---years-read-your-mind.jpg",
+      "packs": [
+        "piano-ballads",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Olly_Murs",
+        "https://en.wikipedia.org/wiki/24_Hrs_(album)",
+        "https://api.lyrics.ovh/v1/Olly%20Murs/Years%20%26%20Years",
+        "https://itunes.apple.com/search?term=Olly+Murs+Years+%26+Years&limit=4&entity=song",
+        "https://www.youtube.com/watch?v=tVLK-sEk12M"
+      ]
+    },
+    {
+      "id": "yt-Nb9J8zkY9O4",
+      "title": "Bleeding Heart",
+      "artist": "Regina Spektor",
+      "year": 2016,
+      "country": "US",
+      "genre": "Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dreamy"
+      ],
+      "hints": [
+        "Die Künstlerin wurde 1980 in Moskau geboren und kam 1989 mit ihrer Familie als Geflüchtete in die USA.",
+        "Der Song eröffnet ihr siebtes Studioalbum 'Remember Us to Life', das am 30. September 2016 erschien.",
+        "Der Albumtitel ist die Übersetzung eines hebräischen Gebetswortes aus den Hohen Feiertagen, das sie in ihrem Gebetbuch fand, als sie schwanger war.",
+        "Auf dem Album wirkte neben ihr der Bassist und Produzent Leo Abrahams mit.",
+        "Die Single kam am 22. Juli 2016 vor dem Album heraus."
+      ],
+      "lyrics": {
+        "real": [
+          "I'll take two of that",
+          "I'm chasing a story I heard",
+          "At the back of the class"
+        ],
+        "fake": "I'll trade my last guitar for a train ticket back to Ohio"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Nb9J8zkY9O4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/regina-spektor--bleeding-heart---official-music-video-.jpg",
+      "packs": [
+        "piano-ballads",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Regina_Spektor",
+        "https://en.wikipedia.org/wiki/Remember_Us_to_Life",
+        "https://api.lyrics.ovh/v1/Regina%20Spektor/Bleeding%20Heart",
+        "https://lrclib.net/api/get?artist_name=Regina%20Spektor&track_name=Bleeding%20Heart",
+        "https://itunes.apple.com/search?term=Regina+Spektor+Bleeding+Heart&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "yt-QZKrLIoMyxY",
+      "title": "Yo Quisiera",
+      "artist": "Reik",
+      "year": 2016,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die mexikanische Band veröffentlichte den Titel bereits auf ihrem selbstbetitelten Debütalbum von 2005.",
+        "Das offizielle Video erschien auf dem VEVO-Kanal der Band.",
+        "Der spanische Text erzählt von einer langen Liebesnacht, in der einer dem anderen als bester Freund und Trost spendet.",
+        "Im Refrain wünscht sich der Sänger, für die Geliebte ihr Leben zu sein.",
+        "Im Text bittet die Liebeste um tausend Ratschläge, um sich vor dem nächsten Treffen zu schützen."
+      ],
+      "lyrics": {
+        "real": [
+          "Me pides mil consejos para protegerte",
+          "De tu próximo encuentro, sabes que te cuido",
+          "Yo quisiera ser tu llanto, ese que viene de tus sentimientos"
+        ],
+        "fake": "Con los ojos de jazmín te escribo un poema de amor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QZKrLIoMyxY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reik-yo-quisiera--video-.jpg",
+      "packs": [
+        "country-folk",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Reik",
+        "https://api.lyrics.ovh/v1/Reik/Yo%20Quisiera",
+        "https://lrclib.net/api/get?artist_name=Reik&track_name=Yo%20Quisiera",
+        "https://itunes.apple.com/search?term=Reik+Yo+Quisiera&limit=4&entity=song",
+        "https://www.youtube.com/watch?v=QZKrLIoMyxY"
+      ]
+    }
+  ]
+}

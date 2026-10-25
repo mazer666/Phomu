@@ -1,0 +1,754 @@
+{
+  "songs": [
+    {
+      "id": "elvis-hound-dog-1956",
+      "title": "Hound Dog",
+      "artist": "Elvis Presley",
+      "year": 1956,
+      "country": "US",
+      "genre": "Rock'n'Roll",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Nostalgic",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Das Stück wurde am 2. Juli 1956 in den RCA-Studios in New York in 31 Takes aufgenommen – die Produzenten brauchten den ganzen Tag, bis das Ergebnis endlich auf Platte passte.",
+        "Zusammen mit 'Don't Be Cruel' am 13. Juli 1956 als Doppel-A-Seite veröffentlicht, hielt sich die Single elf Wochen auf Platz 1 der US-Pop-Charts – dieser Rekord stand 36 Jahre lang.",
+        "Das Original stammt von Blues-Sängerin Big Mama Thornton aus dem Jahr 1952; erst über die Showband 'Freddie Bell and the Bellboys' in Las Vegas fand es den Weg zum jungen Sänger aus Mississippi.",
+        "Stampfendes Schlagzeug, peitschende Gitarrenriffs und ein wütend-energischer Gesang – das Stück gilt als Paradebeispiel früher Verschmelzung von R&B, Country und Pop.",
+        "Die berühmte Zeile 'You ain't nothin' but a ... dog' wird bis heute in Filmen und Werbung zitiert – sie richtet sich an einen untreuen Liebhaber, der nichts Besseres verdient habe."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hound_Dog_(song)",
+        "https://www.graceland.com/blog/posts/elvis-presleys-1-hits-part-3",
+        "https://americansongwriter.com/70-years-ago-today-elvis-presley-recorded-the-controversial-single-that-shattered-records-and-sparked-riots/",
+        "https://www.songfacts.com/facts/elvis-presley/hound-dog",
+        "http://www.rebeatmag.com/songs-made-rock-n-roll-big-mama-thornton-elvis-unleash-howling-hit-hound-dog/"
+      ],
+      "lyrics": {
+        "real": [
+          "You ain't nothin' but a hound dog",
+          "Snoopin' 'round the door",
+          "You ain't never caught a rabbit"
+        ],
+        "fake": "Barking at the moon all night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cYwDUonrGFQ",
+        "spotify": "https://open.spotify.com/track/64Ny7djQ6rNJspquof2KoX",
+        "amazonMusic": "https://music.amazon.com/tracks/B073MTFYM2"
+      },
+      "coverUrl": "/covers/elvis-hound-dog-1956.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-_17kC1nFQzY",
+      "title": "Jailhouse Rock",
+      "artist": "Elvis Presley",
+      "year": 1957,
+      "country": "US",
+      "genre": "Rock'n'Roll",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Legends & Classics"
+      ],
+      "hints": [
+        "Das Stück entstand für den dritten Spielfilm des Interpreten und erschien am 24. September 1957 bei RCA Victor als 45er-Single; die B-Seite war ein zweiter Titel aus demselben Film.",
+        "Die Texter waren Jerry Leiber und Mike Stoller – dasselbe Duo, das zuvor 'Hound Dog' geschrieben hatte und später auch 'Stand by Me' und 'Spanish Harlem' kreierte.",
+        "Aufgenommen wurde die Platte mit Gitarre von Scotty Moore, Bass von Bill Black und Schlagzeug von D. J. Fontana, dazu der Background-Chor der Jordanaires.",
+        "Die Single stand sieben Wochen auf Platz 1 der US-Pop-Charts, führte je eine Woche die Country- und die Rhythm-&-Blues-Charts an und war Anfang 1958 drei Wochen lang UK-Nummer-eins.",
+        "Der Titel wurde in die Auswahl der 500 Stücke aufgenommen, die den Stil der US-Musik geprägt haben, landete bei Rolling Stone auf Platz 67 der 500 größten Songs aller Zeiten und wurde 2016 in die Grammy Hall of Fame aufgenommen."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jailhouse_Rock_(song)",
+        "https://en.wikipedia.org/wiki/Jailhouse_Rock",
+        "https://en.wikipedia.org/wiki/Treat_Me_Nice",
+        "https://en.wikipedia.org/wiki/Jerry_Leiber_and_Mike_Stoller",
+        "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
+      ],
+      "lyrics": {
+        "real": [
+          "The warden threw a party in the county jail",
+          "The whole rhythm section was the Purple Gang",
+          "Sad Sack was sittin' on a block of stone"
+        ],
+        "fake": "Riding on a prison bus down to San Quentin in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=_17kC1nFQzY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/elvis-presley-jailhouse-rock--lyrics-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "Rock Anthems",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "legends-elvis-suspicious-minds",
+      "title": "Suspicious Minds",
+      "artist": "Elvis Presley",
+      "year": 1969,
+      "country": "US",
+      "genre": "Rock / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song wurde am 22. Januar 1969 in den American Sound Studios in Memphis aufgenommen – die Session mit Produzent Chips Moman markierte die kreative Wiederauferstehung des Künstlers nach langer Bühnenpause.",
+        "Inhaltlich geht es um zerbrochenes Vertrauen in einer Beziehung: Der Erzähler will gehen, schafft es aber nicht – Misstrauen und Unfähigkeit, die Liebe zu retten, stehen im Zentrum.",
+        "Berühmt ist die Produktion mit einem mehrmaligen 'Fade-out' und überraschenden 'Fade-in' am Ende – dieser Trick wurde später von vielen Künstlern imitiert.",
+        "Auf der Bühne trug der Sänger später häufig seine mit Strasssteinen besetzten Bühnen-Outfits; die Live-Version zog sich in Las Vegas oft auf bis zu sechs Minuten.",
+        "Der Refrain 'We're caught in a trap, I can't walk out, because I love you too much baby' brachte dem Interpreten in den USA den letzten Nummer-eins-Hit seiner Karriere auf dem Billboard Hot 100."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Suspicious_Minds",
+        "https://www.vintagerockmag.com/2024/06/story-behind-the-song-suspicious-minds/",
+        "https://de.wikipedia.org/wiki/Suspicious_Minds",
+        "https://www.telegraph.co.uk/obituaries/2024/06/15/mark-james-chips-moman-elvis-presley-suspicious-minds/",
+        "https://www.youtube.com/watch?v=WrMGGouem3c"
+      ],
+      "lyrics": {
+        "real": [
+          "We're caught in a trap, I can't walk out, because I love you too much baby",
+          "Why can't you see what you're doing to me, when you don't believe a word I say?",
+          "We can't go on together with suspicious minds"
+        ],
+        "fake": "We fought our love, but we never forgot the taste of your goodbye"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WrMGGouem3c",
+        "spotify": "https://open.spotify.com/track/1H5IfYyIIAlgDX8zguUzns",
+        "amazonMusic": "https://music.amazon.com/tracks/B08C4KT62W"
+      },
+      "coverUrl": "/covers/elvis-presley-suspicious-minds-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "Rock Anthems"
+      ]
+    },
+    {
+      "id": "eminem-lose-yourself-2002",
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "year": 2002,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Legends & Classics",
+        "Popular",
+        "Rebel",
+        "Road Trip"
+      ],
+      "hints": [
+        "Das Stück entstand für den Soundtrack des halbautobiografischen Films '8 Mile' aus dem Jahr 2002, in dem der Interpret selbst die Hauptrolle des weißen Rapper-Nachwuchses B-Rabbit spielt.",
+        "Gewann 2003 den Oscar für 'Bestes Originallied' bei der 75. Academy-Awards-Verleihung – der Hauptdarsteller schlief angeblich zu Hause und erfuhr erst im Nachhinein vom Sieg; Co-Autor Luis Resto nahm den Preis entgegen.",
+        "Hielt sich zwölf Wochen auf Platz 1 der US-Billboard Hot 100 – länger als jeder andere Rap-Song zuvor und der erste Hip-Hop-Titel überhaupt, der einen Oscar für den besten Song gewann.",
+        "Ein hämmerndes Gitarrenriff baut sich auf, die Verse kommen rapide und atemlos, der Refrain ist wie ein Schlachtruf – das Stück wurde zum Signature-Song einer ganzen Rap-Generation.",
+        "Die berühmte Anfangsfrage 'If you had one shot, or one opportunity' handelt davon, eine einmalige Chance im Leben zu ergreifen, statt sie verstreichen zu lassen."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lose_Yourself",
+        "https://en.wikipedia.org/wiki/8_Mile_(film)",
+        "https://en.wikipedia.org/wiki/8_Mile:_Music_from_and_Inspired_by_the_Motion_Picture",
+        "https://de.wikipedia.org/wiki/Lose_Yourself",
+        "https://www.youtube.com/watch?v=xFYQQPAOz7Y"
+      ],
+      "lyrics": {
+        "real": [
+          "Look, if you had one shot or one opportunity",
+          "To seize everything you ever wanted in one moment",
+          "His palms are sweaty, knees weak, arms are heavy"
+        ],
+        "fake": "The stage is calling and the lights are turning red"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xFYQQPAOz7Y",
+        "spotify": "https://open.spotify.com/track/3ZFgRYLNge2s5jxKf3b3eP",
+        "amazonMusic": "https://music.amazon.com/tracks/B000W1597G"
+      },
+      "coverUrl": "/covers/eminem-lose-yourself-2002.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Hip Hop Essentials",
+        "Movie Hits",
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "finale-eminem-mockingbird",
+      "title": "Mockingbird (resurgence)",
+      "artist": "Eminem",
+      "year": 2004,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Modern resurgence"
+      ],
+      "hints": [
+        "Das Stück erschien als fünfte Single-Auskopplung des fünften Studioalbums des Detroit-Rappers und wurde von ihm selbst gemeinsam mit seinem langjährigen Produzenten Luis Resto geschrieben und produziert.",
+        "Der Text ist ein Versprechen an seine beiden Töchter, die zum Zeitpunkt der Veröffentlichung neun und elf Jahre alt waren – er nennt sie beim Namen und schildert die Turbulenzen ihrer Kindheit.",
+        "Der Refrain lehnt sich an das alte Wiegenlied 'Hush, Little Baby' an – die Zeilen des Kinderlieds tauchen im Text des Rappers mehrfach wieder auf; das offizielle Video inszenierte er 2005 gemeinsam mit John 'Quig' Quigley.",
+        "Der Titel erreichte Platz 11 in den US-Pop-Charts und Platz 10 in den Rap-Charts, gewann 2005 den Teen Choice Award für den besten Rap-Titel und war ein Jahr später für den Grammy in der Kategorie 'Bester Solo-Rap-Part' nominiert.",
+        "2023 brachte dem Stück eine Renaissance auf TikTok ein: Es chartete erneut und überschritt am 23. März 2023 die Marke von einer Milliarde Streams bei Spotify; später nahm der Interpret den Titel auch auf seine Greatest-Hits-Compilation 'Curtain Call: The Hits' (2005) auf."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Mockingbird_(Eminem_song)",
+        "https://en.wikipedia.org/wiki/Encore_(Eminem_album)",
+        "https://en.wikipedia.org/wiki/Hush_Little_Baby",
+        "https://en.wikipedia.org/wiki/Curtain_Call:_The_Hits",
+        "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Eminem"
+      ],
+      "lyrics": {
+        "real": [
+          "Hailie, I know you miss your mom, and I know you miss your dad",
+          "Now hush, little baby, don't you cry",
+          "Daddy's here to hold ya through the night"
+        ],
+        "fake": "Burning up the night with the crowd on my side, no one can slow me down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=S9bCLPwzSC0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/eminem-mockingbird--resurgence-.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Hip Hop Essentials",
+        "2000s Pop & RnB",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-wfWIs2gFTAM",
+      "title": "River",
+      "artist": "Eminem ft. Ed Sheeran",
+      "year": 2017,
+      "country": "US",
+      "genre": "Hip-Hop / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Emotional",
+        "Confessional"
+      ],
+      "hints": [
+        "Das Stück steht auf Track 5 des neunten Studioalbums des Detroit-Rappers und wurde vom Produzenten Emile Haynie mitgeschrieben – es ist die zweite Singleauskopplung aus dem 2017er Album.",
+        "Der britische Co-Interpret steuerte den Refrain bei, obwohl er erst kurz vor Veröffentlichung ins Studio kam – der Song kombiniert seine Pop-Stimme mit schnellem US-Rap-Flow.",
+        "Thematisch geht es um Schuld, Affären und zerbrochene Beziehungen: 'All my sins need holy water, feel it washing over me' – das Wasser eines Wasserlaufs als Symbol für Reinigung.",
+        "Das offizielle Musikvideo erschien am 14. Februar 2018 und zeigt eine komplexe Rückblende mit mehreren Charakteren, die alle um Liebe und Vertrauen ringen.",
+        "Im Chorus wird das Bild von fließendem Wasser und spiritueller Reinigung immer wieder aufgegriffen – zwischen den Zeilen geht es um die Sehnsucht, sich von Lügen und Sünden reinwaschen zu können."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/River_(Eminem_song)",
+        "https://en.wikipedia.org/wiki/Revival_(Eminem_album)",
+        "https://it.wikipedia.org/wiki/River_(Eminem)",
+        "https://www.youtube.com/watch?v=wfWIs2gFTAM",
+        "https://open.spotify.com/track/1cS0TgbR263ey9jn0MwD2s"
+      ],
+      "lyrics": {
+        "real": [
+          "I've been a liar, been a thief, been a lover, been a cheat",
+          "All my sins need holy water, feel it washing over me",
+          "So let the river run"
+        ],
+        "fake": "We'll cross the desert hand in hand to find a brand new land"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wfWIs2gFTAM",
+        "spotify": "https://open.spotify.com/track/1cS0TgbR263ey9jn0MwD2s",
+        "amazonMusic": "https://music.amazon.com/tracks/B077YBTXLY"
+      },
+      "coverUrl": "/covers/eminem-ft--ed-sheeran-river.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Hip Hop Essentials",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt--6INQkOSo9w",
+      "title": "Mama (Pseudo Video) ft. Jussie Smollett",
+      "artist": "Empire Cast",
+      "year": 2016,
+      "country": "US",
+      "genre": "R&B / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Emotional",
+        "Soulful"
+      ],
+      "hints": [
+        "Das US-Duo kam 2015 an die Öffentlichkeit und veröffentlichte seine Titel im Umfeld einer Fox-Musikdramaserie.",
+        "Der Gaststar ist US-Schauspieler und Sänger zugleich – von 2015 bis 2019 spielte er in jener Serie den Musiker Jamal Lyon.",
+        "Die Single erschien am 25. November 2016 und ist mit knapp dreieinhalb Minuten Laufzeit die Fassung, die als eigenständige Single im Katalog steht; die offiziellen Credits nennen vier Autoren – Rodney Jerkins, Charles Hilton Jr., Marvin Tony Hemmings und Diarra Wilkerson.",
+        "Der offizielle Clip liegt auf dem VEVO-Kanal des Duos und trägt im Titel eine eigene Zusatzbezeichnung, die ihn von der reduzierten Bearbeitung abhebt.",
+        "Der Text ist eine Liebeserklärung an die Mutter des Sängers: Der Refrain wiederholt mehrfach, wie sehr er sie liebt, und preist sie als Kriegerin, die für die Familie alles gegeben hat."
+      ],
+      "hintEvidence": [
+        "https://www.wikidata.org/wiki/Q139680521",
+        "https://en.wikipedia.org/wiki/Jussie_Smollett",
+        "https://music.apple.com/us/album/mama-feat-jussie-smollett/1175506019",
+        "https://www.youtube.com/watch?v=-6INQkOSo9w",
+        "https://lrclib.net/api/get?track_name=Mama%20(feat.%20Jussie%20Smollett)&artist_name=Empire%20Cast&album_name=Mama%20(feat.%20Jussie%20Smollett)"
+      ],
+      "lyrics": {
+        "real": [
+          "Mama-mama-mama, I do love you",
+          "There's nothing more precious in this whole world",
+          "We are who we are because you loved us from the start"
+        ],
+        "fake": "Mama, I got you, mama, don't you worry 'bout a thing tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-6INQkOSo9w",
+        "spotify": "https://open.spotify.com/track/7zDRg3LJ5nuzT6GP2yl8wx",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/empire-cast-mama--pseudo-video--ft--jussie-smollett.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "yt-CYOtW11fUVo",
+      "title": "Mama (Stripped Down Version) ft. Jussie Smollett",
+      "artist": "Empire Cast",
+      "year": 2016,
+      "country": "US",
+      "genre": "R&B / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Emotional",
+        "Soulful"
+      ],
+      "hints": [
+        "Das US-Duo, das 2015 an die Öffentlichkeit kam, veröffentlichte seine Titel im Umfeld einer Fox-Musikdramaserie – eine abgespeckte Bearbeitung davon schaffte es sogar auf den offiziellen Soundtrack dieser Serie.",
+        "Die reduzierte Fassung ist eine eigene Studio-Aufnahme und keine gekürzte Kopie des Pseudo-Videos: Ihre zweite Strophe berichtet eine andere Biografie, und der gesungene Mittelteil der Vollfassung fehlt hier ganz.",
+        "Genau diese abgespeckte Fassung wurde von der Serie genutzt: Sie steht als fünfter Titel auf dem offiziellen Soundtrack-Album der dritten Staffel, das 14 Titel und 45 Minuten umfasst.",
+        "Die reduzierte Bearbeitung erschien am 25. November 2016 parallel zur vollständigen Fassung als eigene Single und ist mit knapp dreieinhalb Minuten Laufzeit versehen; die offiziellen Credits nennen dieselben vier Autoren.",
+        "Der Text ist eine Huldigung an die Mutter des Sängers: In der reduzierten Fassung erzählt die zweite Strophe, wie die Mutter mit 16 Jahren von ihrem Vater im Stich gelassen wurde, ihn aber noch immer in den Augen des Patrons sieht."
+      ],
+      "hintEvidence": [
+        "https://www.wikidata.org/wiki/Q139680521",
+        "https://en.wikipedia.org/wiki/Jussie_Smollett",
+        "https://music.apple.com/us/album/empire-original-soundtrack-season-3/1243086270",
+        "https://music.apple.com/us/album/mama-stripped-down-version-feat-jussie-smollett/1175494092",
+        "https://lrclib.net/api/get?track_name=Mama%20(feat.%20Jussie%20Smollett)%20-%20Stripped%20Down%20Version&artist_name=Empire%20Cast"
+      ],
+      "lyrics": {
+        "real": [
+          "In love with the thought of becoming queen",
+          "She gave it all so unselfishly",
+          "I never knew someone to sacrifice, everything for love"
+        ],
+        "fake": "Mama, I'm coming home tonight, hold me tight till the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CYOtW11fUVo",
+        "spotify": "https://open.spotify.com/track/1gF2Qbo1lgzsQh4UbbJusQ",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/empire-cast-mama-stripped-down-version-feat-jussie-smollett-single.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ]
+    },
+    {
+      "id": "score-morricone-ugly",
+      "title": "The Good, the Bad and the Ugly",
+      "artist": "Ennio Morricone",
+      "year": 1966,
+      "country": "IT",
+      "genre": "Movie Score / Western",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Epic",
+        "Unique"
+      ],
+      "hints": [
+        "Der Western von 1966 hatte ein Budget von rund 1,2 Millionen US-Dollar und erzielte weltweit 38,9 Millionen US-Dollar, davon 25,1 Millionen in den USA und Kanada; die Partitur ist rein instrumental – der einzige gesungene Song des Films, 'The Story of a Soldier' mit Text von Tommie Connor, wird von den Gefangenen in der Folter-Szene gesungen.",
+        "Die Partitur verkaufte sich weltweit mehr als drei Millionen Mal; für 500.000 verkaufte Exemplare in den USA wurde das Original am 14. August 1968 mit einer Goldenen Schallplatte der RIAA ausgezeichnet.",
+        "Inszeniert hat den Film Sergio Leone, der auch die beiden Vorgänger der Reihe drehte und dem Komponisten schon in der Schulzeit als Klassenkamerad begegnete; sein Stil kontrastiert extreme Nahaufnahmen mit langen Einstellungen.",
+        "Der Film startete am 23. Dezember 1966 in den Kinos; die offizielle Soundtrack-Edition umfasst 21 Titel und liegt auch als erweiterte, neu gemasterte Fassung im Katalog.",
+        "Der Titel ist das Hauptthema eines der bekanntesten Western-Klassiker – das Hauptmotiv besteht aus zwei Tönen, die an das Heulen eines Koyoten erinnern; die Aufnahme liegt über den offiziellen Kanal des Komponisten als Original von 1966 vor."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly",
+        "https://en.wikipedia.org/wiki/Ennio_Morricone",
+        "https://en.wikipedia.org/wiki/Sergio_Leone",
+        "https://music.apple.com/us/album/the-good-the-bad-the-ugly-expanded-edition/715628596",
+        "https://www.youtube.com/watch?v=AkQowzXG5W4"
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Two-note coyote motif",
+          "Spaghetti western main theme"
+        ],
+        "fake": "Riding into the sunset in the middle of the desert tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AkQowzXG5W4",
+        "spotify": "https://open.spotify.com/track/1JSIWsJfxOji0FrxFcxdCK",
+        "amazonMusic": "https://music.amazon.com/tracks/B00OD4XHTA"
+      },
+      "coverUrl": "/covers/score-morricone-ugly.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-r1pHDoFsHXc",
+      "title": "Donde Estan Corazon",
+      "artist": "Enrique Iglesias",
+      "year": 2016,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Nostalgic",
+        "Emotional"
+      ],
+      "hints": [
+        "Die Lead-Single wurde Anfang 2008 aus der Kompilation '95/08 Éxitos' des spanischen Sängers ausgekoppelt und gilt als eine der populärsten spanischsprachigen Balladen der späten 2000er.",
+        "Der Song wurde gemeinsam mit dem argentinischen Produzenten und Texter Coti Sorokin geschrieben; die Produktion leitete Carlos Paucar in den Argentinien-Studios.",
+        "Thematisch geht es um Verlust und Nostalgie: Der Erzähler fragt sich, wohin vergangene Liebe, Lachen und gemeinsame Tage verschwunden sind.",
+        "Die Originalversion des Refrains wiederholt die gleiche zweisilbige Frage immer wieder – der Tropipop-Sound kombiniert sanfte Gitarren mit lateinamerikanischer Percussion.",
+        "Die berühmte Schlusszeile des Refrains stellt rhythmisch die Frage 'Wo sind sie?' – gefolgt von einem spanischen Wort für 'Geliebte' – und endet mit dieser Frage als klanglichem Ausklang."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/%C2%BFD%C3%B3nde_Est%C3%A1n_Coraz%C3%B3n%3F",
+        "https://www.musixmatch.com/es/letras/33492079/9385173",
+        "https://en.wikipedia.org/wiki/Enrique_Iglesias_discography",
+        "https://www.youtube.com/watch?v=r1pHDoFsHXc",
+        "https://soundcharts.com/en/song/11e82616-a173-4976-83dc-a0369fe50396"
+      ],
+      "lyrics": {
+        "real": [
+          "El tiempo que pasó y no supe ver",
+          "Las horas que ya no quieren volver",
+          "Los días que sabíamos amar"
+        ],
+        "fake": "Bajo la luz de la luna yo te esperé hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=r1pHDoFsHXc"
+      },
+      "coverUrl": "/covers/enrique-iglesias-donde-estan-corazon.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-xFutjZEBTXs",
+      "title": "DUELE EL CORAZON ft. Wisin",
+      "artist": "Enrique Iglesias",
+      "year": 2017,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Dance Floor",
+        "Party"
+      ],
+      "hints": [
+        "Die Single wurde am 18. April 2016 über Sony Music Latin veröffentlicht und markierte den ersten Release des spanischen Sängers unter seinem neuen Label-Vertrag.",
+        "Das Stück wurde von einem Trio aus Peru, Venezuela und Ecuador komponiert: Patrick Ingunza, Servando Primera und Juan Carlos Yepez Jr. – es ist eine Mischung aus Latin Pop und Reggaeton.",
+        "Der puerto-ricanische Gastkünstler steuerte einen kurzen Rap-Part in der zweiten Strophe bei; das Video zeigt eine dramatische Entführungs- und Rettungsgeschichte in der Wüste.",
+        "Der Song erreichte auf Anhieb Platz eins der US Latin Pop Songs und später Platz eins der Hot Latin Songs – für den spanischen Interpreten war es bereits der 27. Nummer-eins-Hit in diesen Charts.",
+        "Der eingängige Refrain enthält die direkte Aufforderung 'Si te vas, yo también me voy' (Wenn du gehst, gehe ich auch) und endet mit der Zeile 'Bailamos hasta que duelan los pies'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Duele_el_Coraz%C3%B3n",
+        "https://es.wikipedia.org/wiki/Duele_el_coraz%C3%B3n",
+        "https://nl.wikipedia.org/wiki/Duele_el_Coraz%C3%B3n",
+        "https://www.youtube.com/watch?v=xFutjZEBTXs",
+        "https://open.spotify.com/track/6YZdkObH88npeKrrkb8Ggf"
+      ],
+      "lyrics": {
+        "real": [
+          "Si te vas, yo también me voy",
+          "Si me das, yo también te doy",
+          "Bailamos hasta que duelan los pies"
+        ],
+        "fake": "Yo te esperaré bajo la lluvia hasta que vuelva el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xFutjZEBTXs",
+        "spotify": "https://open.spotify.com/track/6YZdkObH88npeKrrkb8Ggf",
+        "amazonMusic": "https://music.amazon.com/tracks/B07D1B8BVM"
+      },
+      "coverUrl": "/covers/enrique-iglesias-duele-el-corazon-ft--wisin.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "yt-tLcfAnN2QgY",
+      "title": "El Perdedor (Pop) ft. Marco Antonio Solís",
+      "artist": "Enrique Iglesias",
+      "year": 2013,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die spanische Fassung erschien am 28. Oktober 2013 als zweite spanische Single des Studioalbums 'Sex and Love' und war die vierte Singleauskopplung des Albums insgesamt.",
+        "Laut des Interpreten entstand das Stück rund acht Jahre vor der Veröffentlichung und lag jahrelang in einer Schublade – er wollte es einem seiner Vorbilder anbieten, der ihm einst ein Lied für sein Debütalbum geliehen hatte.",
+        "Sie wurde zur Eröffnungsmelodie der mexikanischen Telenovela 'Lo que la vida me robó' – bereits das fünfte Mal, dass ein Titel des spanischen Sängers eine mexikanische Serie eröffnete.",
+        "Das offizielle Video erschien am 20. Januar 2014 auf dem offiziellen Kanal des Interpreten, wurde von Jessy Terrero inszeniert – demselben Regisseur wie 'Dímelo' und 'Cuando Me Enamoro' – und erreichte über eine Milliarde Klicks; die Schauspielerin Sandra Echeverría spielt darin mit.",
+        "Der Titel bedeutet 'Der Verlierer', und genau das ist die Botschaft des Refrains: lieber der Verlorene sein als weiter in einer Lüge zu leben. In den US-Charts für Latin-Songs stieg der Titel bis auf Platz 1, die 24. Nummer-eins-Erfolgsingle des Sängers in dieser Liste."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/El_Perdedor_(Enrique_Iglesias_song)",
+        "https://en.wikipedia.org/wiki/Sex_and_Love",
+        "https://en.wikipedia.org/wiki/Lo_que_la_vida_me_rob%C3%B3",
+        "https://en.wikipedia.org/wiki/Jessy_Terrero",
+        "https://en.wikipedia.org/wiki/Sandra_Echeverr%C3%ADa"
+      ],
+      "lyrics": {
+        "real": [
+          "Prefiero ser el perdedor",
+          "Que me has robado el corazón",
+          "Y no me queda nada más"
+        ],
+        "fake": "Bailamos bajo la lluvia hasta que amanezca en la ciudad"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tLcfAnN2QgY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/enrique-iglesias-el-perdedor--pop--ft--marco-antonio-solís.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB"
+      ]
+    },
+    {
+      "id": "yt-koJlIGDImiU",
+      "title": "Hero",
+      "artist": "Enrique Iglesias",
+      "year": 2001,
+      "country": "ES",
+      "genre": "Latin Pop / Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Romantic",
+        "Ballad",
+        "Emotional"
+      ],
+      "hints": [
+        "Der Song wurde gemeinsam mit dem britischen Produzenten Mark Taylor und dem Texter Paul Barry im Jahr 2001 geschrieben – das Trio hatte zuvor schon 'Bailamos' und 'Be with You' kreiert.",
+        "Die Lead-Single stammt aus dem zweiten englischsprachigen Studioalbum des spanischen Künstlers, das 'Escape' heißt und im Oktober 2001 erschien.",
+        "Thematisch geht es um bedingungslose Liebe: Der Erzähler bietet an, alles zu geben und der 'Retter' der Angebeteten zu sein, falls sie ihm vertraut.",
+        "Mark Taylor produzierte das Stück mit sanften Gitarren, einem orchestralen Arrangement und einer Pop-Balladen-Struktur, die weltweit Radiosender dominierte.",
+        "Der bekannte Refrain beginnt mit 'I can be your ... baby, I can kiss away the pain' – auf Deutsch geht es darum, die Angebetete vor allem Schmerz beschützen zu wollen."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hero_(Enrique_Iglesias_song)",
+        "https://www.songfacts.com/facts/enrique-iglesias/hero",
+        "https://www.musixmatch.com/lyrics/Enrique-Iglesias/Hero",
+        "https://www.youtube.com/watch?v=koJlIGDImiU",
+        "https://open.spotify.com/track/1F8Kjbsswci2kRKpML1Tu0"
+      ],
+      "lyrics": {
+        "real": [
+          "I can be your hero, baby",
+          "I can kiss away the pain",
+          "Would you dance if I asked you to dance?"
+        ],
+        "fake": "We will ride across the stars to find a brand new world tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=koJlIGDImiU",
+        "spotify": "https://open.spotify.com/track/1F8Kjbsswci2kRKpML1Tu0",
+        "amazonMusic": "https://music.amazon.com/tracks/B00Q426V1U"
+      },
+      "coverUrl": "/covers/enrique-iglesias-hero.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026"
+      ]
+    }
+  ]
+}

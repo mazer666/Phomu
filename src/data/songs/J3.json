@@ -1,0 +1,725 @@
+{
+  "songs": [
+    {
+      "id": "folk-james-rain",
+      "title": "Fire and Rain",
+      "artist": "James Taylor",
+      "year": 1970,
+      "country": "US",
+      "genre": "Folk / Soft Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Spiritual"
+      ],
+      "hints": [
+        "Der Text erzählt vom Tod einer Jugendfreundin und von den Kämpfen des Sängers mit Sucht und Ruhm.",
+        "Die Aufnahme entstand im Dezember 1969 in den Sunset Sound Studios in Los Angeles, produziert hat Peter Asher.",
+        "Die Single erschien im August 1970 als zweite Single eines Albums, das bereits im Februar 1970 auf den Markt kam.",
+        "Das Lied erreichte Platz 3 der Billboard Hot 100 und Platz 2 in Kanada – es war der erste Top-Ten-Hit des Sängers.",
+        "Fast ein giveaway: Der Chorus zählt Naturphänomene auf, eines davon steht im Titel."
+      ],
+      "lyrics": {
+        "real": [
+          "Suzanne, the plans they made put an end to you",
+          "I walked out this morning and I wrote down this song",
+          "I've seen fire and I've seen rain"
+        ],
+        "fake": "Rain drums the tin roof while the embers fade in the valley"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EbD7lfrsY2s",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/folk-james-rain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fire_and_Rain_(song)",
+        "https://en.wikipedia.org/wiki/Sweet_Baby_James",
+        "https://lrclib.net/api/get?artist_name=James%20Taylor&track_name=Fire%20and%20Rain",
+        "https://www.youtube.com/watch?v=EbD7lfrsY2s",
+        "https://music.apple.com/us/album/fire-and-rain/1480026454?i=1480026462"
+      ]
+    },
+    {
+      "id": "yt-Ryi20DglVJM",
+      "title": "Get Low",
+      "artist": "James Vincent McMorrow",
+      "year": 2016,
+      "country": "IE",
+      "genre": "Alternative R&B / Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Melancholic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der irische Sänger veröffentlichte 2016 sein drittes Album und öffnete sich dabei dem alternativen R&B.",
+        "Eine im September 2015 in Dublin aufgenommene Variante des Titels kam 2016 auf eine Sammlung mit frühen und alternativen Aufnahmen.",
+        "Der Song erschien auf demselben Album, dessen Special-Edition Aufnahmen aus mehreren Städten sammelt.",
+        "Der Text erzählt von einer angekündigten Hochzeit, von gekauftem Schweigen und vom Wunsch, für andere der richtige Mann zu sein.",
+        "Fast ein giveaway: Zwei englische Wörter bestimmen den Refrain, das zweite ist ein kurzer Befehl."
+      ],
+      "lyrics": {
+        "real": [
+          "Heard you're getting married (Get low)",
+          "Greatest man alive (Get low)",
+          "It can get you so far"
+        ],
+        "fake": "Dancing on the fire while the city sleeps beneath the neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ryi20DglVJM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/james-vincent-mcmorrow-get-low.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/James_Vincent_McMorrow",
+        "https://lrclib.net/api/get?artist_name=James%20Vincent%20McMorrow&track_name=Get%20Low",
+        "https://www.youtube.com/watch?v=Ryi20DglVJM",
+        "https://music.apple.com/us/album/get-low-dublin-september-2015/1725529936?i=1725530336",
+        "https://www.officialcharts.com/artist/6799/james-vincent-mcmorrow/"
+      ]
+    },
+    {
+      "id": "german-jan-delay-jonny",
+      "title": "Oh Jonny",
+      "artist": "Jan Delay",
+      "year": 2009,
+      "country": "DE",
+      "genre": "Funk / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Groovy",
+        "Raw",
+        "Serious"
+      ],
+      "hints": [
+        "2011 trat der Hamburger Musiker mit seiner Band 'Disko No. 1' beim Finale des Eurovision Song Contest in Düsseldorf auf.",
+        "Zu seinen Markenzeichen gehört eine auffällig nasale Stimme sowie wechselnde Künstlernamen wie 'Eißfeldt' oder 'Boba Ffett'.",
+        "In den 90ern wurde er als eines der drei Mitglieder der Wegweiser-Gruppe 'Absolute Beginner' bekannt.",
+        "Der Text rechnet in wütendem Szenen-Rap mit einer Figur ab, die Partys feiert, lügt, betrügt und ihr Gewissen ignoriert.",
+        "Fast ein giveaway: Der Refrain ruft die angeredete Figur mehrfach hintereinander beim Namen, dazwischen immer wieder die Frage nach dem Gewissen."
+      ],
+      "lyrics": {
+        "real": [
+          "Mach wie du meinst, und fühl dich frei",
+          "Oh Jonny, aber hast du kein Gewissen?",
+          "Geh lügen, betrügen, lies BILD"
+        ],
+        "fake": "Nichts kann uns stoppen, wenn wir durch die Nacht fliegen irgendwie"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=kW7u7ptj-j4",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-jan-delay-jonny.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "World, Reggae & Soul",
+        "Hip Hop Essentials"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jan_Delay",
+        "https://lrclib.net/api/get/36930000",
+        "https://www.youtube.com/watch?v=kW7u7ptj-j4",
+        "https://dbpedia.org/data/Beginner_(band).json",
+        "https://musicbrainz.org/ws/2/release/d03f04d5-f236-4dff-a013-0542b48abb91?fmt=json&inc=recordings+artist-credits"
+      ]
+    },
+    {
+      "id": "yt-79L1ZKAlV_k",
+      "title": "1000x ft. Broods",
+      "artist": "Jarryd James",
+      "year": 2016,
+      "country": "AU",
+      "genre": "Alternative R&B / Indie Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Dreamy",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Bevor er selbst die Bühne übernahm, war der australische Sänger und Produzent 2014 als Support einer anderen Band unterwegs.",
+        "Seine erste Solo-Single 2015 stieg in seiner Heimat bis auf Platz 2 der Singlecharts, sein Debütalbum im selben Jahr bis auf Platz 2 der Albumcharts.",
+        "2015 gewann er bei den ARIA Awards die Kategorie 'Best Pop Release'.",
+        "Der Track erschien 2016 als erste Single einer EP, die im Juli 2016 erschien.",
+        "Fast ein giveaway: Der Refrain verspricht, das Ganze tausendmal zu wiederholen, und preist dabei den Mut, die Kontrolle zu verlieren."
+      ],
+      "lyrics": {
+        "real": [
+          "Even if I'm leaving you at the door",
+          "Where you make me lose my mind",
+          "Never would I ever let my love escape"
+        ],
+        "fake": "City lights are fading while we drive through the rain tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=79L1ZKAlV_k",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/jarryd-james-1000x--ft--broods.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jarryd_James",
+        "https://lrclib.net/api/get/37105768",
+        "https://www.youtube.com/watch?v=79L1ZKAlV_k",
+        "https://music.apple.com/us/album/1000x-feat-broods/1443092063?i=1443092074",
+        "https://musicbrainz.org/ws/2/recording/8dc47da1-10d4-485d-851d-0482b9d66f59?fmt=json&inc=artist-credits"
+      ]
+    },
+    {
+      "id": "disney-lion-king-ready",
+      "title": "I Just Can't Wait to Be King",
+      "artist": "Jason Weaver, Rowan Atkinson & Laura Williams",
+      "year": 1994,
+      "country": "US",
+      "genre": "Soundtrack / Happy / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Confident"
+      ],
+      "hints": [
+        "Der Soundtrack gehört zu einem Animationsfilm von 1994, dessen Musik von Hans Zimmer stammt und der weltweit rund 979 Millionen Dollar einspielte.",
+        "Die Nummer ist der zweite Track des Originalsoundtracks und dauert knapp zweieinhalb Minuten.",
+        "Der Refrain ist eine Selbstvergewisserung: Der Text ist eine Anrede an einen jungen Löwen, dem zwei Nebenfiguren immer wieder ins Wort reden.",
+        "Neben der Hauptstimme sind zwei weitere Sänger zu hören; einer von ihnen spottet im Text, der junge Löwe sei noch weit vom Ziel entfernt.",
+        "Fast ein giveaway: Der wiederkehrende Ausruf des jungen Löwen nennt das Amt, das er eines Tages übernehmen will."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm gonna be a mighty king, so enemies beware",
+          "Oh, I just can't wait to be king",
+          "Well, I've never seen a king of beasts with quite so little hair"
+        ],
+        "fake": "Dancing in the street, moving to the beat of the broken heart tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=INugjPMaOWs",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-lion-king-ready.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Lion_King",
+        "https://dbpedia.org/data/Jason_Weaver.json",
+        "https://lrclib.net/api/get/37472119",
+        "https://www.youtube.com/watch?v=INugjPMaOWs",
+        "https://music.apple.com/us/album/i-just-cant-wait-to-be-king/1445732923?i=1445732928"
+      ]
+    },
+    {
+      "id": "yt-RmwZ8wXlsjk",
+      "title": "Where Did You Go?",
+      "artist": "Jax Jones & MNEK",
+      "year": 2022,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Nostalgic",
+        "Popular"
+      ],
+      "hints": [
+        "Der britische DJ fiel 2014 durch einen House-Hit auf, bei dem er als Feature-Partner die UK-Charts anführte.",
+        "Zwei Jahre später kam seine erste Solo-Single, fünf Jahre darauf sein Debütalbum.",
+        "Der Duett-Partner ist ein britischer Sänger, der schon mit Dua Lipa, Clean Bandit und Little Mix zusammenarbeitete und zweimal für den Grammy nominiert wurde.",
+        "Der Text erzählt von einer verschwundenen Liebe, von einem leeren Dancefloor und davon, dass eine einzige Nacht nicht reicht.",
+        "Fast ein giveaway: Der Refrain stellt eine einzige Frage, die im Titel die gleiche lautet wie im Text."
+      ],
+      "lyrics": {
+        "real": [
+          "Oh, my love, where did you go?",
+          "You just have to walk in the place",
+          "Baby, only one night ain't enough"
+        ],
+        "fake": "Dancing on the floor while the DJ keeps spinning the night away"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RmwZ8wXlsjk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/jax-jones---mnek-where-did-you-go-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Jax_Jones",
+        "https://en.wikipedia.org/wiki/MNEK",
+        "https://lrclib.net/api/get/945758",
+        "https://www.youtube.com/watch?v=RmwZ8wXlsjk",
+        "https://music.apple.com/us/album/where-did-you-go/1606770074?i=1606770075"
+      ]
+    },
+    {
+      "id": "yt-WH9C6oLEtOg",
+      "title": "You Don't Know Me",
+      "artist": "Jax Jones ft. Raye",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die Bassline ist einem britischen House-Hit von 2005 entlehnt, der von zwei Acts gemeinsam veröffentlicht wurde.",
+        "Die Single erschien im Dezember 2016 in Großbritannien über das Label Polydor.",
+        "Der britische DJ und Produzent, der den Track bastelte, steht zugleich in der Liste der Komponisten.",
+        "Das Titelbild zeigt eine gezeichnete Figur auf einer Müslischachtel, die eine Frühstücksmarke nachahmt.",
+        "Fast ein giveaway: Der Titel ist eine Abweisung – im Refrain sagt die Sängerin mehrfach, dass man sie nicht kenne."
+      ],
+      "lyrics": {
+        "real": [
+          "See your iPhone camera flashin'",
+          "Cruise through life and I'm feelin' on track",
+          "You don't know me"
+        ],
+        "fake": "Riding through the city lights, watching the neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WH9C6oLEtOg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/jax-jones-ft--raye-you-don-t-know-me--radio-edit-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You_Don%27t_Know_Me_(Jax_Jones_song)",
+        "https://en.wikipedia.org/wiki/Jax_Jones",
+        "https://music.apple.com/gb/album/snacks-supersize/1478299184?i=1478299357",
+        "https://lrclib.net/api/get?artist_name=Jax%20Jones&track_name=You%20Don%27t%20Know%20Me",
+        "https://api.lyrics.ovh/v1/Jax%20Jones/You%20Don%27t%20Know%20Me"
+      ]
+    },
+    {
+      "id": "hiphop-jayz-empire",
+      "title": "Empire State of Mind",
+      "artist": "Jay-Z ft. Alicia Keys",
+      "year": 2009,
+      "country": "US",
+      "genre": "Hip Hop / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Inspirational",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Song entstand 2009 in New York und wurde von Al Shux sowie Janet Sewell-Ulepic und Angela Hunte produziert.",
+        "Die Single erschien im September 2009 über Roc Nation und Atlantic, noch vor dem Album The Blueprint 3.",
+        "In den USA führte der Song fünf Wochen in Folge die Hot 100 an, in Großbritannien erreichte er Platz 2.",
+        "Bei den Grammy Awards 2011 gewann er zwei Preise, darunter den für den besten Rap-Song.",
+        "Fast ein giveaway: Der Refrain feiert New York als Betondschungel, in dem Träume verwirklicht werden."
+      ],
+      "lyrics": {
+        "real": [
+          "Right next to De Niro, but I'll be hood forever",
+          "I'm the new Sinatra, and since I made it here",
+          "I can make it anywhere, yeah, they love me everywhere"
+        ],
+        "fake": "Golden skyline shining on the streets that never sleep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vk6014HuxcE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-jayz-empire.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "Hip Hop Essentials",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Empire_State_of_Mind",
+        "https://en.wikipedia.org/wiki/The_Blueprint_3",
+        "https://en.wikipedia.org/wiki/53rd_Annual_Grammy_Awards",
+        "https://music.apple.com/us/album/the-blueprint-3/1440932009?i=1440932018",
+        "https://lrclib.net/api/get?artist_name=Jay-Z&track_name=Empire%20State%20of%20Mind"
+      ]
+    },
+    {
+      "id": "class-sibelius-finlandia",
+      "title": "Finlandia",
+      "artist": "Jean Sibelius",
+      "year": 1899,
+      "country": "FI",
+      "genre": "Romantic / Symphonic Poem",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Heroic",
+        "Nationalistic"
+      ],
+      "hints": [
+        "Ein rein instrumentales symphonisches Gedicht, 1899 geschrieben und 1900 überarbeitet.",
+        "Die Uraufführung fand im Juli 1900 in Helsinki statt, dirigiert von Robert Kajanus.",
+        "Komponiert wurde das Werk für die Pressefestspiele 1899 – eine getarnte Protestaktion gegen die Zensur des russischen Kaiserreichs.",
+        "Der Mittelteil des Werks wurde zum eigenen Hymnen-Stück, dessen Text 1940 geschrieben wurde und das als eines der bedeutendsten National-Lieder des Landes gilt.",
+        "Fast ein giveaway: Der Titel des Werks ist schlicht der Name des Landes, in dem es entstanden ist."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fE0RbPsC9uE",
+        "spotify": "https://open.spotify.com/track/6BywXdPigCH0sgHlJ98kuQ",
+        "amazonMusic": "https://music.amazon.com/tracks/B00367OY9M"
+      },
+      "coverUrl": "/covers/class-sibelius-finlandia.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Finlandia",
+        "https://en.wikipedia.org/wiki/Jean_Sibelius",
+        "https://en.wikipedia.org/wiki/Finlandia_hymn",
+        "https://open.spotify.com/track/6BywXdPigCH0sgHlJ98kuQ",
+        "https://www.youtube.com/watch?v=fE0RbPsC9uE"
+      ]
+    },
+    {
+      "id": "yt-GSLSwwkLRW0",
+      "title": "Ain't It Funny",
+      "artist": "Jennifer Lopez",
+      "year": 2001,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song in den Sony Music Studios in New York und in den Criteria Studios in Miami.",
+        "Er erschien 2001 als Single zum Album 'J.Lo'; auf der B-Seite steht 'Pleasure Is Mine'.",
+        "Der Text stammt von der Sängerin selbst und von Cory Rooney, der zugleich für die Produktion sorgte.",
+        "In Polen stand der Song acht Wochen auf Platz 1, in Großbritannien wurde er mit Gold ausgezeichnet.",
+        "Fast ein giveaway: Der Titel ist eine Frage, die man mit 'ist das nicht lustig' übersetzen kann."
+      ],
+      "lyrics": {
+        "real": [
+          "I'd live a thousand lives",
+          "But you just set it free",
+          "And yet you stayed with me"
+        ],
+        "fake": "We are dancing in the moonlight, you and I until the end"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GSLSwwkLRW0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/jennifer-lopez-ain-t-it-funny.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ain%27t_It_Funny",
+        "https://en.wikipedia.org/wiki/J.Lo_(album)",
+        "https://music.apple.com/us/album/j-lo/193030491?i=193031426",
+        "https://lrclib.net/api/get?artist_name=Jennifer%20Lopez&track_name=Ain%27t%20It%20Funny",
+        "https://api.lyrics.ovh/v1/Jennifer%20Lopez/Ain%27t%20It%20Funny"
+      ]
+    },
+    {
+      "id": "yt--rbe6YT_t0c",
+      "title": "No Me Ames",
+      "artist": "Jennifer Lopez",
+      "year": 1999,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der spanischsprachige Song erschien 1999 als B-Seite zu 'If You Had My Love' und war Teil des Albums 'On the 6'.",
+        "Aufgenommen wurde er 1998 in den Crescent Moon Studios in Miami sowie in den Sony Music Studios in New York.",
+        "Das Stück ist eine Neuaufnahme des italienischen Titels 'Non amarmi', den Aleandro Baldi mit Francesca Alotta 1992 herausbrachten.",
+        "In den USA führte der Song die Latin-Charts an, in Mexiko wurde er mit Gold ausgezeichnet.",
+        "Fast ein giveaway: Der Titel ist eine Bitte – übersetzt sinngemäß 'Liebt mich nicht'."
+      ],
+      "lyrics": {
+        "real": [
+          "No me ames para estar en tierra",
+          "Pero en este cielo sola no me dejes",
+          "Aunque en el futuro haya un muro enorme"
+        ],
+        "fake": "Camino por la calle sin mirar hacia atrás"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-rbe6YT_t0c",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/jennifer-lopez-no-me-ames.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/No_Me_Ames",
+        "https://en.wikipedia.org/wiki/On_the_6",
+        "https://en.wikipedia.org/wiki/Non_amarmi",
+        "https://lrclib.net/api/get?artist_name=Jennifer%20Lopez&track_name=No%20Me%20Ames",
+        "https://api.lyrics.ovh/v1/Jennifer%20Lopez/No%20Me%20Ames"
+      ]
+    },
+    {
+      "id": "yt-hiUDwauo6Uc",
+      "title": "Olvídame y Pega la Vuelta (Tropical Version)",
+      "artist": "Jennifer Lopez & Marc Anthony",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das spanischsprachige Stück ist eine Neuaufnahme eines argentinischen Duos, geschrieben von Joaquín und Lucía Galán.",
+        "Die Fassung der beiden Stars erschien am 18. November 2016 bei Nuyorican und Sony Latin.",
+        "Produziert wurde sie von Motiff González und Julio Reyes Copello.",
+        "Das Original von 1984 erschien bei CBS Discos.",
+        "Fast ein giveaway: Der Titel bedeutet so viel wie 'Vergiss mich und dreh dich um'."
+      ],
+      "lyrics": {
+        "real": [
+          "En busca de emociones un día marché",
+          "Hace dos años y un día que vivo sin él",
+          "Y al descubrir que era todo una gran fantasía volví"
+        ],
+        "fake": "Caminamos por la arena bajo un sol de verano"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hiUDwauo6Uc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/jennifer-lopez--marc-anthony-olvídame-y-pega-la-vuelta--tropical-version---audio-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Olv%C3%ADdame_y_Pega_la_Vuelta",
+        "https://en.wikipedia.org/wiki/Pimpinela",
+        "https://music.apple.com/us/album/olvidame-y-pega-la-vuelta-tropical-version-single/1179159486?i=1179159571",
+        "https://lrclib.net/api/get?artist_name=Jennifer%20Lopez&track_name=Olv%C3%ADdame%20y%20Pega%20la%20Vuelta",
+        "https://api.lyrics.ovh/v1/Jennifer%20Lopez/Olv%C3%ADdame%20y%20Pega%20la%20Vuelta"
+      ]
+    },
+    {
+      "id": "score-trek-theme",
+      "title": "Star Trek (Main Theme)",
+      "artist": "Jerry Goldsmith",
+      "year": 1979,
+      "country": "US",
+      "genre": "Movie Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Adventurous",
+        "Positive"
+      ],
+      "hints": [
+        "Die erste Fassung des Hauptthemas verwarf der Regisseur Robert Wise, weil sie ihm an Segelschiffe erinnerte; erst der Umbau, der auch mehrere bereits vertonte Szenen betraf, brachte die heute bekannte Melodie in den Film.",
+        "Die letzte Aufnahmesession endete in der Nacht zum 1. Dezember 1979 um zwei Uhr – fünf Tage vor dem Filmanlauf war die Partitur damit fertig.",
+        "Für die Logbucheinträge steuerte Alexander Courage, der auch das Thema der ersten Fernsehstaffel komponierte, die Arrangements bei; elf weitere Cues schrieb Fred Steiner, darunter die Musik zum ersten Zusammentreffen mit der fremden Maschine.",
+        "Ein zwölf bis fünfzehn Fuß langer Metallklaven, gespielt mit einer Panzergranate, kam für die Klänge der fremden Maschine zum Einsatz; daneben arbeiteten Yamaha CS-80, ARP 2600 und Oberheim OB-X.",
+        "Fast ein giveaway: Die Erkennungsmelodie ist die Titelmusik des Science-Fiction-Films, der am 7. Dezember 1979 in den Kinos anlief; die Partitur wurde für den Oscar nominiert und zählt zu den meistverkauften Soundtracks des Komponisten."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zI9YYe-jgHI",
+        "spotify": "https://open.spotify.com/track/6C6UppMmnhp4DY4oyG823S",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/score-trek-theme.jpg",
+      "packs": [
+        "Movie Hits",
+        "classical-orchestral",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Star_Trek:_The_Motion_Picture",
+        "https://en.wikipedia.org/wiki/Jerry_Goldsmith",
+        "https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation",
+        "https://en.wikipedia.org/wiki/Star_Trek_V:_The_Final_Frontier",
+        "https://www.youtube.com/watch?v=zI9YYe-jgHI"
+      ]
+    }
+  ]
+}

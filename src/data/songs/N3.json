@@ -1,0 +1,691 @@
+{
+  "songs": [
+    {
+      "id": "jazz-nina-simone-feeling-good",
+      "title": "Feeling Good",
+      "artist": "Nina Simone",
+      "year": 1965,
+      "country": "US",
+      "genre": "Jazz / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Confident",
+        "Inspiring",
+        "Powerful"
+      ],
+      "hints": [
+        "Die Musik schrieb Anthony Newley, den Text Leslie Bricusse - für ein Musical, das am 3. August 1964 im Theatre Royal in Nottingham eröffnet wurde und am 16. Mai 1965 am Shubert Theatre in New York Premiere feierte.",
+        "Die Fassung der US-Sängerin entstand im Januar 1965 in New York, arrangiert und produziert von Hal Mooney.",
+        "Sie erschien auf dem Album 'I Put a Spell on You' von 1965 und wurde zunächst überhaupt nicht als Single veröffentlicht.",
+        "Ein britischer Werbespot für Volkswagen machte die Aufnahme 1994 bekannt; als Single erreichte sie im Juli 1994 Platz 40 der UK-Charts. Ein offizielles Musikvideo folgte erst 56 Jahre später, im Juni 2021.",
+        "Refrain: 'It's a new dawn, it's a new day, it's a new life for me.'"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Feeling_Good",
+        "https://en.wikipedia.org/wiki/I_Put_a_Spell_on_You_(album)",
+        "https://en.wikipedia.org/wiki/The_Roar_of_the_Greasepaint_%E2%80%93_The_Smell_of_the_Crowd",
+        "https://www.songfacts.com/facts/nina-simone/feeling-good",
+        "https://en.wikipedia.org/wiki/Nina_Simone"
+      ],
+      "lyrics": {
+        "real": [
+          "Sun in the sky, you know how I feel",
+          "Fish in the sea, you know how I feel",
+          "And I'm feeling good"
+        ],
+        "fake": "Chimes on the corner and the morning lets me in"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oHRNrgDIJfo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "coverUrl": "/covers/jazz-nina-simone-feeling-good.jpg"
+    },
+    {
+      "id": "jazz-nina-simone-baby",
+      "title": "My Baby Just Cares for Me",
+      "artist": "Nina Simone",
+      "year": 1958,
+      "country": "US",
+      "genre": "Jazz",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Elegant"
+      ],
+      "hints": [
+        "Ein Jazzstandard von Walter Donaldson mit Text von Gus Kahn, geschrieben für die Filmversion des Musical-Klassikers 'Whoopee!' (1930) - Eddie Cantor machte ihn zu seiner Signaturmelodie.",
+        "Die US-Sängerin nahm die Nummer Ende 1957 für ihr Debütalbum 'Little Girl Blue' auf; die Single erschien 1962 beim Label Bethlehem, der Song blieb zunächst wenig bekannt.",
+        "Erst 1987 machte ein britischer Werbespot für das Parfüm Chanel No. 5 die Aufnahme populär; als Single stieg sie am 31. Oktober 1987 in die UK-Charts und erreichte dort Platz 5.",
+        "Die Aufnahme ist 3:20 Minuten lang und verbindet die markante Klavierbegleitung der Sängerin mit ihrem dunkel gefärbten Jazzgesang.",
+        "Textzeile aus dem Song: 'Liz Taylor is not his style'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/My_Baby_Just_Cares_for_Me",
+        "https://en.wikipedia.org/wiki/Little_Girl_Blue_(Nina_Simone_album)",
+        "https://en.wikipedia.org/wiki/Whoopee!_(film)",
+        "https://www.songfacts.com/facts/nina-simone/my-baby-just-cares-for-me",
+        "https://en.wikipedia.org/wiki/Nina_Simone"
+      ],
+      "lyrics": {
+        "real": [
+          "My baby don't care for shows",
+          "My baby don't care for cars and races",
+          "Liz Taylor is not his style"
+        ],
+        "fake": "Coffee and cigarettes, late night drives, radio hearts and midnight signs"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bJmxK-2gjVE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/jazz-nina-simone-baby.jpg"
+    },
+    {
+      "id": "metal-nin-closer",
+      "title": "Closer",
+      "artist": "Nine Inch Nails",
+      "year": 1994,
+      "country": "US",
+      "genre": "Industrial Rock / Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Sexy",
+        "Dark",
+        "Powerful"
+      ],
+      "hints": [
+        "Aufgenommen wurde die Nummer 1994 in mehreren Studios in Los Angeles, darunter Le Pig an der Cielo Drive; das Schlagzeug-Bett basiert auf einem stark verfremdeten Sample der Bassdrum aus 'Nightclubbing' (1977) von Iggy Pop, gespielt von einer Roland-Drum-Machine.",
+        "Die Single erschien im Mai 1994 als zweite Auskopplung des Albums 'The Downward Spiral' und trug auf den meisten Pressungen einen vom Titel der A-Seite abweichenden Namen; sie war der neunte offizielle Release der Band ('Halo 9').",
+        "In den USA erreichte sie Platz 41 der Billboard Hot 100, in Großbritannien Platz 25 der Singlecharts und in Australien Platz 3.",
+        "Das Video drehte Mark Romanek im April 1994 im stillgelegten Linda Vista Community Hospital in Los Angeles und strahlte es ab dem 12. Mai 1994 aus; die Fernsehfassung war 4:36 Minuten lang.",
+        "Refrain: 'I wanna fuck you like an animal, I wanna feel you from the inside'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Closer_(Nine_Inch_Nails_song)",
+        "https://en.wikipedia.org/wiki/The_Downward_Spiral",
+        "https://en.wikipedia.org/wiki/Nightclubbing_(song)",
+        "https://en.wikipedia.org/wiki/Mark_Romanek",
+        "https://www.songfacts.com/facts/nine-inch-nails/closer"
+      ],
+      "lyrics": {
+        "real": [
+          "You let me violate you",
+          "My whole existence is flawed",
+          "You can have my isolation"
+        ],
+        "fake": "Burning through the night, chasing neon signs, running from the light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PTFwQP86BRs",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/metal-nin-closer.jpg"
+    },
+    {
+      "id": "score-nino-godfather",
+      "title": "The Godfather (Main Title)",
+      "artist": "Nino Rota",
+      "year": 1972,
+      "country": "IT",
+      "genre": "Movie Theme / Italian Folk influence",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Serious",
+        "Epic"
+      ],
+      "hints": [
+        "Der Komponist schrieb die Musik im Herbst 1971 in Rom, nachdem der Regisseur mit einer Kopie des Films zu ihm geflogen war.",
+        "Das Hauptstück entstand auf der Grundlage der Eingangsmelodie der ersten Sinfonie des finnischen Komponisten Jean Sibelius.",
+        "Der Komponist verwendete außerdem Teile seiner eigenen Filmmusik von 1958, um dem Ganzen einen italienischen Charakter zu geben.",
+        "Der Soundtrack erschien 1972 bei Paramount, 1991 auf CD bei MCA, und eröffnet die erste Seite mit einem Stück von 3:05 Minuten Länge.",
+        "Die Musik gewann den Golden Globe für den besten Original-Score, den BAFTA für die beste Filmmusik und den Grammy für den besten Soundtrack; die Oscar-Nominierung für das Liebesduett 'Speak Softly, Love' wurde zurückgezogen, weil sie einer älteren Komposition des Komponisten ähnelte."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Godfather_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Nino_Rota",
+        "https://en.wikipedia.org/wiki/Jean_Sibelius",
+        "https://en.wikipedia.org/wiki/Fortunella_(film)",
+        "https://en.wikipedia.org/wiki/The_Godfather"
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gGqi8J9H4CA",
+        "spotify": "https://open.spotify.com/track/3WoSJF85H0qywD4qLp4HDd",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SPXPBM"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "grand-finale"
+      ],
+      "coverUrl": "/covers/score-nino-godfather.jpg"
+    },
+    {
+      "id": "indie-nirvana-come-as-you-are",
+      "title": "Come As You Are",
+      "artist": "Nirvana",
+      "year": 1991,
+      "country": "US",
+      "genre": "Grunge",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Classic",
+        "Serious"
+      ],
+      "hints": [
+        "Wegen der Ähnlichkeit des markanten Gitarrenriffs zu 'Eighties' von Killing Joke entschieden sich Band und Management erst spät für die Veröffentlichung als zweite Single.",
+        "Aufgenommen wurde der Song im Mai 1991 in den Sound City Studios in Van Nuys, Kalifornien; das zweite Album der Band erschien im September 1991, die Single folgte im Februar 1992.",
+        "In den USA erreichte die Single Platz 32 der Billboard Hot 100, in Großbritannien Platz 9 der Singlecharts; das Stück ist 3:38 Minuten lang.",
+        "Cobain sang nur drei Spuren ein; beim Harmonietracking sang er versehentlich den Satz 'No, I don't have a gun', der erhalten blieb, während der Produzent die Silbe 'memoria' im Hintergrund wiederholt unterlegte.",
+        "Das Musikvideo drehte Kevin Kerslake im Januar 1992; Cobain äußerte nur den Wunsch, das Cover des Albums nachzuempfinden und viele violette und rote Töne zu verwenden."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Come_as_You_Are_(Nirvana_song)",
+        "https://en.wikipedia.org/wiki/Nevermind",
+        "https://en.wikipedia.org/wiki/Eighties_(song)",
+        "https://www.songfacts.com/facts/nirvana/come-as-you-are",
+        "https://en.wikipedia.org/wiki/Sound_City_Studios"
+      ],
+      "lyrics": {
+        "real": [
+          "As a friend, as a friend",
+          "Take your time, hurry up",
+          "Come doused in mud, soaked in bleach"
+        ],
+        "fake": "As a stranger, as a shadow, as a silent lie"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vabnZ9-ex7o",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/indie-nirvana-come-as-you-are.jpg"
+    },
+    {
+      "id": "nirvana-smells-like-teen-spirit-1991",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "year": 1991,
+      "country": "US",
+      "genre": "Grunge",
+      "difficulty": "easy",
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Epic",
+        "Grunge",
+        "Legends & Classics",
+        "Party Anthem",
+        "Popular",
+        "Rebel"
+      ],
+      "hints": [
+        "Der Titel geht auf eine Notiz der Sängerin der feministischen Band Bikini Kill zurück, die an die Wand von Kurt Cobains Zimmer schrieb, er rieche nach dem Deodorant einer Marke, deren Namen sie für einen revolutionären Slogan hielt.",
+        "Im Mai 1991 nahmen die drei die Grundspur in nur drei Takes im Sound City Studio in Van Nuys auf; Cobain sang lediglich drei Spuren ein und der Produzent Butch Vig verschob ein Gitarrensolo in den Refrain.",
+        "Die Single erschien am 10. September 1991 zusammen mit dem zweiten Album der Band und machte Grunge zum Mainstream; die Recording Industry Association of America zählte sie 2001 zu den 80 besten Liedern des Jahrhunderts.",
+        "Das Stück folgt dem Muster leiser, mit Chorus-Effekt gespielter Strophen und lauter, hartcore-inspirierter Refrains - ein Schema, das als Blaupause für alternative Rockmusik galt.",
+        "Das Video drehte Samuel Bayer am 17. August 1991 in Culver City; es zeigt eine Schulveranstaltung, die in ein Chaos kippt, und gewann 1992 zwei MTV-Preise."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Smells_Like_Teen_Spirit",
+        "https://en.wikipedia.org/wiki/Nevermind",
+        "https://en.wikipedia.org/wiki/Teen_Spirit_(deodorant)",
+        "https://www.songfacts.com/facts/nirvana/smells-like-teen-spirit",
+        "https://en.wikipedia.org/wiki/Sound_City_Studios"
+      ],
+      "lyrics": {
+        "real": [
+          "Load up on guns, bring your friends",
+          "It's fun to lose and to pretend",
+          "With the lights out, it's less dangerous"
+        ],
+        "fake": "Sing along with the shadows in the hall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/nirvana-smells-like-teen-spirit-single-1991.jpg"
+    },
+    {
+      "id": "90s-no-doubt-dont-speak",
+      "title": "Don't Speak",
+      "artist": "No Doubt",
+      "year": 1995,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand aus einer zunächst als Liebeslied gedachten Komposition, die die Sängerin nach mehreren Überarbeitungen in eine Trennungsgeschichte über das Ende ihrer Beziehung mit dem Bassisten der Band verwandelte.",
+        "Text und Musik stammen von der Frontfrau und ihrem Bruder, der früher Keyboarder der Band war; produziert hat die Aufnahme Matthew Wilder.",
+        "Der Track erschien 1995 auf dem dritten Studioalbum 'Tragic Kingdom' und wurde im November 1996 in Europa als Single bei Interscope veröffentlicht; die Aufnahme dauert 4:24 Minuten.",
+        "16 Wochen lang führte der Song die US-Radiohitliste 'Hot 100 Airplay' an und stand in mindestens 16 Ländern auf Platz 1; bei den 40. Grammy Awards wurde er für den Song des Jahres und den besten Pop-Gesang einer Gruppe nominiert.",
+        "Das Musikvideo drehte Sophie Muller - die erste Zusammenarbeit der Band mit dieser Regisseurin; eine Textzeile lautet: I can't believe this could be the end."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_Speak",
+        "https://en.wikipedia.org/wiki/Tragic_Kingdom",
+        "https://en.wikipedia.org/wiki/Gwen_Stefani",
+        "https://en.wikipedia.org/wiki/Sophie_Muller",
+        "https://en.wikipedia.org/wiki/40th_Annual_Grammy_Awards"
+      ],
+      "lyrics": {
+        "real": [
+          "We used to be together",
+          "Every day together, always",
+          "I can't believe this could be the end"
+        ],
+        "fake": "We never found the words that would have kept us whole"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TR3Vdo5etCQ",
+        "spotify": "https://open.spotify.com/track/6urCAbunOQI4bLhmGpX7iS",
+        "amazonMusic": "https://music.amazon.com/tracks/B07GVP63M1"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "90s Unplugged",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/90s-no-doubt-dont-speak.jpg"
+    },
+    {
+      "id": "yt-nzQDQcELNuU",
+      "title": "Where Do You Go",
+      "artist": "No Mercy",
+      "year": 1996,
+      "country": "DE",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Den Song schrieben Peter Bischof und Franz Reuther; 1995 nahm ihn die Eurodance-Band La Bouche auf, 1996 coverte ihn das in Deutschland von Producer Frank Farian zusammengestellte Pop-Trio.",
+        "Der Takt schlägt 127 Mal pro Minute und basiert auf einem Sample, das aus dem Todd-Terry-Remix von 'Missing' der Band Everything but the Girl stammt; das Genre wird als Dance-Pop und Eurodance geführt.",
+        "Die Single erschien am 13. Mai 1996 bei MCI und BMG, produziert hat sie Frank Farian; die Albumfassung dauert 4:29 Minuten, die Radio-Edit 4:08 und die Video-Mix 3:50.",
+        "Die Nummer kam in Australien, Österreich, Belgien, Frankreich, Deutschland, Ungarn, Israel, Litauen, der Schweiz, Großbritannien und den USA in die Top 5; das Video drehte Hannes Rossacher in den USA.",
+        "Der Refrain greift einen Hit von Peter Sarstedt aus dem Jahr 1969 auf, dessen Titel mit 'My Lovely' endet."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Where_Do_You_Go_(La_Bouche_song)",
+        "https://en.wikipedia.org/wiki/No_Mercy_(pop_band)",
+        "https://en.wikipedia.org/wiki/La_Bouche",
+        "https://en.wikipedia.org/wiki/Everything_but_the_Girl",
+        "https://en.wikipedia.org/wiki/Where_Do_You_Go_To_(My_Lovely)"
+      ],
+      "lyrics": {
+        "real": [
+          "Where do you go, my lovely?",
+          "I wanna know, my lovely",
+          "You leave without a word, no message, no number"
+        ],
+        "fake": "I keep searching every street for you, my heart is aching still"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=nzQDQcELNuU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "90s Unplugged",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/no-mercy-where-do-you-go.jpg"
+    },
+    {
+      "id": "yt-vXyBcKV0UIo",
+      "title": "Make Me (Cry)",
+      "artist": "Noah Cyrus, Labrinth",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die US-Sängerin veröffentlichte ihren ersten eigenen Hit im November 2016 bei Syco Music und RECORDS; geschrieben haben den Song sie und der britische Produzent Timothy McKenzie, der ihn auch produzierte.",
+        "Aufgenommen wurde die Nummer im September 2016, das Genre ist Electro, die Aufnahme dauert 4:02 Minuten.",
+        "In den norwegischen Single-Charts erreichte sie Platz 6 und in Kanada Platz 46 der Hot 100; in Australien war sie Number One in den Hitseekern, in Neuseeland lag sie auf Platz 5 der Heatseekers.",
+        "Das Musikvideo inszenierte Sophie Muller und erschien am 22. November 2016: Die beiden Sänger wachen in ihren Betten neben den jeweiligen Partnern auf und zerstören im Split-Screen ihr Umfeld.",
+        "Eine Textzeile lautet: I never needed you like I do right now."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Make_Me_(Cry)",
+        "https://en.wikipedia.org/wiki/Noah_Cyrus",
+        "https://en.wikipedia.org/wiki/Labrinth",
+        "https://en.wikipedia.org/wiki/Sophie_Muller",
+        "https://en.wikipedia.org/wiki/Noah_Cyrus_discography"
+      ],
+      "lyrics": {
+        "real": [
+          "I never needed you like I do right now",
+          "I never hated you like I do right now",
+          "You know just how to hold the sucker down"
+        ],
+        "fake": "You turn my tears into a game that you always win"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vXyBcKV0UIo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/noah-cyrus--labrinth-make-me--cry-.jpg"
+    },
+    {
+      "id": "finale-noah-stick",
+      "title": "Stick Season",
+      "artist": "Noah Kahan",
+      "year": 2022,
+      "country": "US",
+      "genre": "Folk-Pop / Indie Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Nostalgic",
+        "Modern"
+      ],
+      "hints": [
+        "Der US-Singer schrieb das Lied 2020 und nahm es 2022 in Nashville in seinem eigenen Studio 'The Study' auf; es erschien am 8. Juli 2022 zunächst als Single und später auf einem Studioalbum.",
+        "Nach dem TikTok-Viral übernahm die US-Sängerin Olivia Rodrigo den Song für ihre BBC-Radio-1-Sendung; danach stand das Lied in Australien, Belgien (Flämisch), Irland, den Niederlanden und Großbritannien auf Platz 1 und in Kanada, Neuseeland und den USA in den Top 10.",
+        "Der Text spielt in dem US-Bundesstaat Vermont; die Aufnahme dauert 3:02 Minuten, produziert hat sie Gabe Simon, erschienen ist sie bei Mercury und Republic.",
+        "Obwohl der Song schon 2022 als Single erschien, wurde er erst durch die TikTok-Verbreitung und die Cover-Versionen zu einem weltweiten Charterfolg.",
+        "Eine Textzeile lautet: And I'll dream each night of some version of you."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stick_Season_(song)",
+        "https://en.wikipedia.org/wiki/Stick_Season_(album)",
+        "https://en.wikipedia.org/wiki/Noah_Kahan",
+        "https://en.wikipedia.org/wiki/Olivia_Rodrigo",
+        "https://en.wikipedia.org/wiki/TikTok"
+      ],
+      "lyrics": {
+        "real": [
+          "And I'll dream each night of some version of you",
+          "That I might not have, but I did not lose",
+          "Now you're tire tracks and one pair of shoes"
+        ],
+        "fake": "Sweaters from the closet and a kettle on the stove"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iWG6apzIWAk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/finale-noah-stick.jpg"
+    },
+    {
+      "id": "jazz-norah-jones-dont-know-why",
+      "title": "Don't Know Why",
+      "artist": "Norah Jones",
+      "year": 2002,
+      "country": "US",
+      "genre": "Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Romantic",
+        "Smooth",
+        "Soft"
+      ],
+      "hints": [
+        "Der US-Sänger-songwriter Jesse Harris schrieb das Lied und nahm es 1999 auf seinem Debütalbum 'Jesse Harris & the Ferdinandos' auf; die Sängerin coverte es für ihr erstes Studioalbum.",
+        "Die Aufnahme entstand in den Studios Sorcerer Sound in New York und Allaire in Shokan, New York; produziert haben sie die Sängerin gemeinsam mit Arif Mardin und Jay Newland, die Aufnahme dauert 3:06 Minuten.",
+        "Als erste Single erschien sie am 28. Januar 2002 bei Blue Note; in den USA erreichte sie Platz 30 der Hot 100, in Australien Platz 5, in Kroatien Platz 6 und in Neuseeland Platz 24.",
+        "Bei den 45. Grammy Awards 2003 gewann sie drei Preise - Record of the Year, Song of the Year und Best Female Pop Vocal Performance; in der Liste '500 Greatest Songs Since You Were Born' der Zeitschrift Blender landete sie auf Platz 459.",
+        "Eine Textzeile lautet: I waited 'til I saw the sun."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_Know_Why",
+        "https://en.wikipedia.org/wiki/Jesse_Harris",
+        "https://en.wikipedia.org/wiki/Come_Away_with_Me",
+        "https://en.wikipedia.org/wiki/45th_Annual_Grammy_Awards",
+        "https://en.wikipedia.org/wiki/Norah_Jones"
+      ],
+      "lyrics": {
+        "real": [
+          "I waited 'til I saw the sun",
+          "I left you by the house of fun",
+          "My heart is drenched in wine"
+        ],
+        "fake": "Moonlight on the empty street, a promise that we never keep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tO4dxvguQDk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/jazz-norah-jones-dont-know-why.jpg"
+    },
+    {
+      "id": "yt-NFAfwFf9aM8",
+      "title": "Bien Loco",
+      "artist": "Nova Y Jory",
+      "year": 2009,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Reggaeton-Duo aus Ponce und Carolina, bekannt als 'La N' und 'La J', startete 2003 und veröffentlichte die Single 2009; der Song wurde zu einem der erfolgreichsten Titel des Jahres und sorgte in Venezuela, Kolumbia, Panama und Chile für ausgedehnte Tourneen.",
+        "Beide veröffentlichten 2011 ihr einziges Studioalbum 'Mucha Calidad'; im Oktober 2012 trennten sie sich einvernehmlich und sind heute als Solokünstler unterwegs.",
+        "Die Aufnahme ist 3:38 Minuten lang und erschien am 26. Juni 2009; die beiden Stücke stammen aus der puerto-ricanischen Reggaeton-Szene, in der sie seit 2003 arbeiteten.",
+        "Der spanische Text erzählt von einem Besuch in einer Diskothek: Der Sänger sieht eine Frau, die allein an der Wand tanzt, und erklärt sie für sich.",
+        "Eine Textzeile lautet: Yo vine y me pegué y contra la pared."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nova_%26_Jory",
+        "https://music.apple.com/us/album/bien-loco/1548844019",
+        "https://itunes.apple.com/search?term=Nova+y+Jory+Bien+Loco&limit=1&entity=song",
+        "https://en.wikipedia.org/wiki/Reggaeton",
+        "https://en.wikipedia.org/wiki/Latin_music"
+      ],
+      "lyrics": {
+        "real": [
+          "Y bien loco, bien loco, bien loco",
+          "Yo vine y me pegué y contra la pared",
+          "Mi mente maquinea"
+        ],
+        "fake": "Salí de la disco sin saber lo que me pasó"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NFAfwFf9aM8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "World, Reggae & Soul",
+        "Hip Hop Essentials",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/nova-y-jory-bien-loco.jpg"
+    }
+  ]
+}

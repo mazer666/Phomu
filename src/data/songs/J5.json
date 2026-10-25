@@ -1,0 +1,715 @@
+{
+  "songs": [
+    {
+      "id": "yt-e7_h4WNnlTU",
+      "title": "Diséñame",
+      "artist": "Joan Sebastian",
+      "year": 2012,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Ranchera-Sänger veröffentlichte das Stück 2012 zunächst als eigenständige Single.",
+        "Im selben Jahr nahm er den Song auch auf sein Studioalbum 'Un Lu*Jo' auf.",
+        "Der spanische Text ist eine Liebeserklärung in Form eines Angebots: Der Sänger bittet die Geliebte, ihn zu formen, wie man Lehm formt.",
+        "Der Künstler wurde 1951 im mexikanischen Bundesstaat Guerrero geboren, komponierte mehr als 1.000 Songs und starb 2015.",
+        "Der Titel ist eine Bitte im Passiv: Der mexikanische Sänger bietet sich an, sich nach den Wünschen der Geliebten formen zu lassen."
+      ],
+      "lyrics": {
+        "real": [
+          "Sé que no soy el príncipe que soñaste",
+          "Quítame o ponme lo que quieras",
+          "Los besos que sellé en el pasaporte"
+        ],
+        "fake": "Caminamos por la playa bajo la luna y el mar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e7_h4WNnlTU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/joan-sebastian-diseñame.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/lookup?id=1625917023&entity=song",
+        "https://musicbrainz.org/ws/2/release-group/79737c8b-bb0f-4515-b301-9ccf42c9bae1?fmt=json",
+        "https://lrclib.net/api/get?artist_name=Joan%20Sebastian&track_name=Dis%C3%A9%C3%B1ame",
+        "https://en.wikipedia.org/wiki/Joan_Sebastian",
+        "https://itunes.apple.com/lookup?id=524486534&entity=song"
+      ]
+    },
+    {
+      "id": "yt-78AhSHXcw6g",
+      "title": "Me Gustas",
+      "artist": "Joan Sebastian",
+      "year": 2000,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Sänger nahm den Song 2000 auf dem Studioalbum 'Secreto de amor' auf.",
+        "Die Studioaufnahme auf dem Album dauert gut dreieinhalb Minuten und gehört zu den Ranchera-Aufnahmen des Sängers.",
+        "Der spanische Text preist Augen, Mund und Hände der Geliebten und schildert, wie er morgens beim Aufwachen an sie denkt.",
+        "Der mexikanische Künstler wurde 1951 in Guerrero geboren, komponierte mehr als 1.000 Songs und wechselte im Lauf seiner Karriere von Latein-Pop zu regionaler mexikanischer Musik.",
+        "Der spanische Text beginnt mit den Worten 'Me gustan tus ojos' - der Titel greift das 'Me gusta' daraus auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Me gustan tus ojos",
+          "Me aloca el roce de tu piel",
+          "Tu alma me gusta"
+        ],
+        "fake": "Bailamos toda la noche bajo las estrellas del mar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=78AhSHXcw6g",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/joan-sebastian-me-gustas-joan-sebastian.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/lookup?id=1495513038&entity=song",
+        "https://musicbrainz.org/ws/2/release-group/45313570-2dc0-37f4-ad02-f48542023ec7?fmt=json",
+        "https://lrclib.net/api/get?artist_name=Joan%20Sebastian&track_name=Me%20Gustas",
+        "https://en.wikipedia.org/wiki/Joan_Sebastian",
+        "https://musicbrainz.org/ws/2/release/0f149cc1-be5b-410a-804f-a96d53ead313?fmt=json"
+      ]
+    },
+    {
+      "id": "yt-Mi3HcFBazug",
+      "title": "Te Irá Mejor Sin Mí",
+      "artist": "Joan Sebastian",
+      "year": 2009,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der mexikanische Sänger veröffentlichte die Single 2009 beim Label Musart-Balboa.",
+        "Kurze Zeit später erschien der Song auch auf dem Album 'Pegadito al corazón'.",
+        "Der spanische Text klingt wie ein eifersüchtiger Abschied: Der Sänger verabschiedet sich und rät der Geliebten, sich nach einem anderen Mann umzusehen.",
+        "Der 1951 im mexikanischen Bundesstaat Guerrero geborene Künstler mischt Ranchera mit Latin-Pop-Elementen und starb 2015.",
+        "Der Titel ist keine Drohung, sondern ein Rat: Der Sänger klingt davon überzeugt, dass es ohne ihn besser wird."
+      ],
+      "lyrics": {
+        "real": [
+          "No quiero que regreses",
+          "Y la pago con creces",
+          "Encuentra un hombre bueno"
+        ],
+        "fake": "En la playa de la luna te esperaré con el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Mi3HcFBazug",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/joan-sebastian-te-ira-mejor-sin-mi.jpg",
+      "hintEvidence": [
+        "https://itunes.apple.com/lookup?id=1495524389&entity=song",
+        "https://itunes.apple.com/lookup?id=1845406317&entity=song",
+        "https://lrclib.net/api/get?artist_name=Joan%20Sebastian&track_name=Te%20Ir%C3%A1%20Mejor%20Sin%20M%C3%AD",
+        "https://en.wikipedia.org/wiki/Joan_Sebastian",
+        "https://musicbrainz.org/ws/2/release-group/33572303-4e19-4e31-9a93-ba2f96f2a948?fmt=json"
+      ]
+    },
+    {
+      "id": "disney-mermaid-world",
+      "title": "Part of Your World",
+      "artist": "Jodi Benson",
+      "year": 1989,
+      "country": "US",
+      "genre": "Soundtrack / Broadway / Ballad",
+      "difficulty": "easy",
+      "mood": [
+        "Dreamy",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Das Sehnsuchtslied der Meeresprinzessin, die von der Welt der Menschen träumen will.",
+        "Geschrieben von Howard Ashman und Alan Menken für den Disney-Animationsfilm von 1989.",
+        "Die US-Schauspielerin und Sängerin, die auch der Figur ihre Stimme leiht, singt die gefühlvolle Powerversion.",
+        "Der Song führte das Kinopublikum in die Disney-Renaissance und wurde von Kritikern als 'Rückkehr der amerikanischen Musicaltradition' gefeiert.",
+        "Refrain: 'I wanna be where the people are, I wanna see, wanna see them dancin''"
+      ],
+      "lyrics": {
+        "real": [
+          "Look at this stuff, isn't it neat?",
+          "Wouldn't you think my collection's complete?",
+          "What do you call 'em? Oh, feet!"
+        ],
+        "fake": "Trade the silver tide for a warm sunrise walk on the shore"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sg1Y6Vxl6Nk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mermaid-world.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Part_of_Your_World",
+        "https://en.wikipedia.org/wiki/The_Little_Mermaid_(1989_film)",
+        "https://en.wikipedia.org/wiki/Jodi_Benson",
+        "https://en.wikipedia.org/wiki/Disney_Renaissance",
+        "https://api.lyrics.ovh/v1/Jodi%20Benson/Part%20of%20Your%20World"
+      ]
+    },
+    {
+      "id": "yt-NLSq2PV2WNg",
+      "title": "Head & Heart (feat. MNEK)",
+      "artist": "Joel Corry",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Der englische Produzent und Sänger kam 2019 mit dem Hit 'Sorry' zu Bekanntheit; 2020 folgten 'Lonely' und dieser Duett-Song.",
+        "Der Gast ist ein britischer Sänger und Songwriter, der unter einem Kürzel auftritt.",
+        "Der Song erobte 2020 die britische Hitparade und blieb dort sechs Wochen auf Platz eins.",
+        "Der Text beschreibt einen inneren Zwiespalt: Der Kopf rät zum Fliehen, das Herz will bleiben.",
+        "Der Titel besteht aus zwei englischen Wörtern für Kopf und Herz - im Text streiten sich genau diese beiden."
+      ],
+      "lyrics": {
+        "real": [
+          "Oh my god, oh my god, this feeling's just begun",
+          "My heart is certain it's more than a crush",
+          "I can't tell them apart"
+        ],
+        "fake": "Dancing in the streets, we're running through the neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NLSq2PV2WNg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/joel-corry-head---heart--feat--mnek-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Joel_Corry",
+        "https://en.wikipedia.org/wiki/MNEK",
+        "https://itunes.apple.com/search?term=Joel+Corry+Head+and+Heart+MNEK&limit=1&entity=song",
+        "https://musicbrainz.org/ws/2/recording/168c30ff-7597-471b-a4c8-31c719f4f8af?fmt=json",
+        "https://api.lyrics.ovh/v1/Joel%20Corry/Head%20%26%20Heart"
+      ]
+    },
+    {
+      "id": "yt-OsMxP_zVVCo",
+      "title": "BED",
+      "artist": "Joel Corry & RAYE & David Guetta",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Der englische Sänger veröffentlichte den Song 2021 als eigenständige Single.",
+        "Gemeinsam mit einer britischen Soulsängerin und einem französischen DJ entstand die Kollaboration.",
+        "Der Text ist eine nächtliche Einladung: Es geht darum, wo man die Nacht verbringt, während man eigentlich schlafen müsste.",
+        "Der britische Sänger hatte 2020 mit dem Duett-Song sechs Wochen die britische Hitparade angeführt; ein Jahr später erschien diese Nacht-Track-Kollaboration.",
+        "Der Titel ist ein englisches Wort und meint das Schlafzimmer - der Refrain dreht sich genau darum."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm callin' your phone 'cause I can't get enough",
+          "And why'd I gotta do this the hard way?",
+          "My body wants to be in your arms, bae, baby"
+        ],
+        "fake": "I'll paint the walls in gold and wait for you in the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OsMxP_zVVCo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/joel-corry---raye---david-guetta-bed.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Joel_Corry",
+        "https://en.wikipedia.org/wiki/Raye",
+        "https://en.wikipedia.org/wiki/David_Guetta",
+        "https://itunes.apple.com/search?term=Joel+Corry+BED+RAYE+David+Guetta&limit=1&entity=song",
+        "https://api.lyrics.ovh/v1/Joel%20Corry/BED"
+      ]
+    },
+    {
+      "id": "class-pachelbel-canon",
+      "title": "Canon in D",
+      "artist": "Johann Pachelbel",
+      "year": 1680,
+      "country": "DE",
+      "genre": "Baroque",
+      "difficulty": "easy",
+      "mood": [
+        "Peaceful",
+        "Romantic",
+        "Harmonious"
+      ],
+      "hints": [
+        "Ein Kanon in Dur für drei Geigen und Basso continuo, dem ein Gigue-Satz folgt.",
+        "Ein achttöniger Ground Bass trägt die Struktur; die drei Stimmen führen den Satz nach Art eines Kanon im Unisono nach.",
+        "Der Komponist war zu Lebzeiten vor allem für Orgel und Tasteninstrumente bekannt – seine Kammermusik geriet fast vollständig in Vergessenheit.",
+        "Erst 1919 erschien das Stück in einer Fachzeitschrift im Druck, in den 1970er-Jahren wurde es weltweit zum Standard.",
+        "Bis heute prägen seine Akkordfolgen unzählige Popproduktionen, und in der westlichen Welt gehört es zum Repertoire bei Hochzeiten und Beerdigungen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JvNQLJ1_HQ0",
+        "spotify": "https://open.spotify.com/track/1c3GkbZBnyrQ1cm4TGHFrK",
+        "amazonMusic": "https://music.amazon.com/tracks/B0D1CG8XNN"
+      },
+      "coverUrl": "/covers/class-pachelbel-canon.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Pachelbel%27s_Canon",
+        "https://en.wikipedia.org/wiki/Johann_Pachelbel",
+        "https://en.wikipedia.org/wiki/List_of_variations_on_Pachelbel%27s_Canon",
+        "https://en.wikipedia.org/wiki/Musikalische_Erg%C3%B6tzung",
+        "https://en.wikipedia.org/wiki/Gigue"
+      ]
+    },
+    {
+      "id": "class-bach-toccata",
+      "title": "Toccata and Fugue in D minor",
+      "artist": "Johann Sebastian Bach",
+      "year": 1704,
+      "country": "DE",
+      "genre": "Baroque / Organ",
+      "difficulty": "hard",
+      "mood": [
+        "Powerful",
+        "Dark",
+        "Epic"
+      ],
+      "hints": [
+        "Ein Orgelwerk BWV 565, geschrieben in der Zeit zwischen 1704 und den 1750er-Jahren und typisch für die norddeutsche Orgelschule.",
+        "Die erhaltene Handschrift stammt von einem namentlich bekannten Kopisten des 18. Jahrhunderts und ist die einzige zeitgenössische Quelle.",
+        "Erst 1833 machte Felix Mendelssohn das Werk durch eine Publikation und eigene Aufführungen bekannt – schon 1829 hatte er mit seiner Matthäus-Passion die Wiederauferstehung der Orgel- und Vokalwerke des Meisters ausgelöst.",
+        "Die 1927 von Leopold Stokowski geschaffene Orchestrierung sorgte dafür, dass es im Disney-Zeichentrickfilm 'Fantasia' von 1940 weltweit präsent wurde.",
+        "Für Klavier existieren Bearbeitungen von Tausig, Busoni und Reger – das Werk gilt als reine Virtuosität."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-UhOPXd-LYY",
+        "spotify": "https://open.spotify.com/track/0BWJNm4TrO6H3qgiCmDBjM",
+        "amazonMusic": "https://music.amazon.com/tracks/B00AFJYR3M"
+      },
+      "coverUrl": "/covers/class-bach-toccata.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Toccata_and_Fugue_in_D_minor,_BWV_565",
+        "https://de.wikipedia.org/wiki/Toccata_und_Fuge_d-Moll_BWV_565",
+        "https://en.wikipedia.org/wiki/Felix_Mendelssohn",
+        "https://en.wikipedia.org/wiki/Fantasia_(1940_film)",
+        "https://en.wikipedia.org/wiki/Ferruccio_Busoni"
+      ]
+    },
+    {
+      "id": "class-strauss-danube",
+      "title": "The Blue Danube",
+      "artist": "Johann Strauss II",
+      "year": 1866,
+      "country": "AT",
+      "genre": "Classical / Waltz",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Elegant",
+        "Flowing"
+      ],
+      "hints": [
+        "Ein Walzer in 3/4-Takt mit der Werknummer 314, entstanden 1866 in Wien.",
+        "Der Komponist schrieb rund 500 Walzer – keiner wurde bekannter als dieser.",
+        "Der Satz beginnt mit einer ruhigen Einleitung in A-Dur, in der Hörner und Tremolostrichter das Thema andeuten, ehe die erste Melodie in D-Dur einsetzt.",
+        "Für einen Männerchor geschrieben, wurde das Werk am 15. Februar 1867 uraufgeführt; den Text dichtete der Chordichter Joseph Weyl, später schrieb Franz von Gernerth 1889 die offiziellen Worte 'Donau so blau'.",
+        "Eine rein instrumentale Fassung brachte das Stück 1867 zur Pariser Weltausstellung und machte es zum Welterfolg; heute wird es am häufigsten ohne Gesang gespielt."
+      ],
+      "lyrics": {
+        "real": [
+          "Donau so blau, so schön und blau",
+          "Durch Tal und Au wogst ruhig du hin",
+          "dich grüßt unser Wien"
+        ],
+        "fake": "Im Morgengrauen zieht der letzte Kahn hinaus in die Nebelflut"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YvFyM1r1v-E",
+        "spotify": "https://open.spotify.com/track/4J0e4gEqaLQlG5EM0wws1K",
+        "amazonMusic": "https://music.amazon.com/tracks/B002980K4W"
+      },
+      "coverUrl": "/covers/class-strauss-danube.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Blue_Danube",
+        "https://de.wikipedia.org/wiki/An_der_sch%C3%B6nen_blauen_Donau",
+        "https://en.wikipedia.org/wiki/Johann_Strauss_II",
+        "https://en.wikipedia.org/wiki/Waltz",
+        "https://de.wikipedia.org/wiki/Franz_von_Gernerth"
+      ]
+    },
+    {
+      "id": "jazz-coltrane-things",
+      "title": "My Favorite Things",
+      "artist": "John Coltrane",
+      "year": 1961,
+      "country": "US",
+      "genre": "Jazz / Post-Bop",
+      "difficulty": "hard",
+      "mood": [
+        "Epic",
+        "Intelligent",
+        "Classic"
+      ],
+      "hints": [
+        "Das Original ist ein Show-Tune aus einem Musical von 1959, komponiert von Richard Rodgers, mit Text von Oscar Hammerstein II.",
+        "Die Jazz-Fassung dauert rund 14 Minuten, steht in e-Moll, wurde im Oktober 1960 aufgenommen und erschien im März 1961 auf einem Album.",
+        "Die Aufnahme machte das Stück zum Jazz-Standard, es steht bis heute im 'Real Book' und wurde 1963 auch live auf 'Newport '63' gespielt.",
+        "Spätere Interpreten nahmen das Stück ebenfalls auf, und die Melodie prägte auch den Pop – Ariana Grande verwebte sie 2019 in '7 Rings'.",
+        "Der Text des Originals erzählt von Winterbildern und kleinen Dingen, die einem viel bedeuten – und wurde dadurch zum Klassiker des Weihnachtsfestivals."
+      ],
+      "lyrics": {
+        "real": [
+          "Raindrops on roses and whiskers on kittens",
+          "Brown paper packages tied up with strings",
+          "These are a few of my favorite things"
+        ],
+        "fake": "Silver bells and winter lights across the frozen town"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JQvc-Gkwhow"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-coltrane-things.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/My_Favorite_Things_(song)",
+        "https://en.wikipedia.org/wiki/My_Favorite_Things_(John_Coltrane_album)",
+        "https://en.wikipedia.org/wiki/John_Coltrane",
+        "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+        "https://en.wikipedia.org/wiki/7_Rings"
+      ]
+    },
+    {
+      "id": "country-john-denver-country-roads",
+      "title": "Take Me Home, Country Roads",
+      "artist": "John Denver",
+      "year": 1971,
+      "country": "US",
+      "genre": "Country / Folk",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Happy",
+        "Nostalgic",
+        "Summer"
+      ],
+      "hints": [
+        "Aufgenommen wurde das Stück im Januar 1971 in New York, veröffentlicht als Single am 12. April aus dem Album 'Poems, Prayers & Promises'.",
+        "Die Co-Autoren Bill Danoff und Taffy Nivert fuhren auf einer Landstraße in Maryland – von dieser Fahrt stammt der Titel des Refrains.",
+        "Das Stück erreichte Platz 2 der US-Popcharts (Ausgabe vom 28. August 1971) und wurde noch im selben Jahr mit Gold ausgezeichnet.",
+        "Der Refrain bittet darum, zurück in die vertraute Heimat geführt zu werden; das Lied wurde durch die erste Strophe zu einem Symbol des Bundesstaates West Virginia.",
+        "2014 wurde es zu einer von vier offiziellen Hymnen dieses Bundesstaates, 2023 nahm die US-Bibliothek die Aufnahme in ihr National Recording Registry auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Almost heaven, West Virginia",
+          "Blue Ridge Mountains, Shenandoah River",
+          "Country roads, take me home"
+        ],
+        "fake": "The old freight train is running late through the canyon again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1vrEljMfXYo",
+        "spotify": "https://open.spotify.com/track/1YYhDizHx7PnDhAhko6cDS",
+        "amazonMusic": "https://music.amazon.com/tracks/B000WP21FU"
+      },
+      "coverUrl": "/covers/country-john-denver-country-roads.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "country-folk"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Take_Me_Home,_Country_Roads",
+        "https://en.wikipedia.org/wiki/John_Denver",
+        "https://en.wikipedia.org/wiki/Poems,_Prayers_%26_Promises",
+        "https://en.wikipedia.org/wiki/Bill_Danoff",
+        "https://en.wikipedia.org/wiki/National_Recording_Registry"
+      ]
+    },
+    {
+      "id": "yt-D1YX2dsZ31w",
+      "title": "Underpass",
+      "artist": "John Foxx",
+      "year": 1980,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Track entstand, als der Sänger noch Frontmann der britischen Band Ultravox war, und erschien als erste Solo-Single am 4. Januar 1980.",
+        "Aufgenommen wurde er im September 1979 im Londoner Studio Pathway, veröffentlicht auf dem Label Virgin Metal Beat.",
+        "In Großbritannien erreichte die Single Platz 31 der Hitparade, das zugehörige Debütalbum kam auf Platz 18.",
+        "Musikalisch kommen nur Synthesizer und elektronische Percussion zum Einsatz, der Refrain besteht aus einem einzigen Wort.",
+        "Der Text beschreibt Erinnerungen, Architektur und Autos in düsterer Zukunftsvision – heute gilt das Stück als Meilenstein des Elektropop."
+      ],
+      "lyrics": {
+        "real": [
+          "Standing in the dark",
+          "Watching you glow",
+          "Lifting a receiver"
+        ],
+        "fake": "Riding through the neon rain toward the morning train"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D1YX2dsZ31w"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/john-foxx-underpass--extended-2018-remastered-version-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Underpass_(song)",
+        "https://en.wikipedia.org/wiki/John_Foxx",
+        "https://en.wikipedia.org/wiki/Metamatic",
+        "https://en.wikipedia.org/wiki/Ultravox",
+        "https://en.wikipedia.org/wiki/John_Foxx_discography"
+      ]
+    },
+    {
+      "id": "piano-legend-allofme",
+      "title": "All of Me",
+      "artist": "John Legend",
+      "year": 2013,
+      "country": "US",
+      "genre": "Soul / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Powerful"
+      ],
+      "hints": [
+        "Die Produktion orientierte sich am Vokal-Effekt-Stück 'Hide and Seek' von Imogen Heap: Producer Dave Tozer sprach von Piano, Vocals, Robot-Harmonien, Synths und Moog-Bass.",
+        "Eine Klavierballade in A♭-Dur bei 63 Schlägen pro Minute, geschrieben von Toby Gad und dem Sänger und gewidmet seiner Braut Chrissy Teigen.",
+        "Die Single erschien am 12. August 2013 als dritte Single des Albums 'Love in the Future'.",
+        "Höchster Erfolg in den USA: drei Wochen an der Spitze der Billboard-Hot-100, 23 Wochen in den Top 10 und 14-fache Platin-Zertifizierung der RIAA.",
+        "Der Refrain lautet: 'Cause all of me loves all of you'."
+      ],
+      "lyrics": {
+        "real": [
+          "'Cause all of me loves all of you",
+          "Give your all to me, I'll give my all to you",
+          "You're my end and my beginning"
+        ],
+        "fake": "Every little breath you take is a promise I keep for you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=450p7goxZqg",
+        "spotify": "https://open.spotify.com/track/3bTZ9geYjyj9uBIT6gL5N6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-legend-allofme.jpg",
+      "packs": [
+        "piano-ballads",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/john-legend/all-of-me",
+        "https://en.wikipedia.org/wiki/All_of_Me_(John_Legend_song)",
+        "https://en.wikipedia.org/wiki/Love_in_the_Future",
+        "https://en.wikipedia.org/wiki/John_Legend",
+        "https://lrclib.net/api/get?artist_name=John%20Legend&track_name=All%20of%20Me"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "songs": [
+    {
+      "id": "finale-tom-love",
+      "title": "Another Love",
+      "artist": "Tom Odell",
+      "year": 2012,
+      "country": "GB",
+      "genre": "Indie Pop / Piano Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Sänger-Songwriter veröffentlichte den Track am 15. Oktober 2012 als Debüt-Single seiner ersten EP – einer vierteiligen Veröffentlichung im akustischen Folk-Stil.",
+        "Im Juni 2013 erschien er auf dem Debütalbum des Sängers, das in Großbritannien auf Platz 1 der Album-Charts stieg.",
+        "In Großbritannien erreichte die Single Platz 10 der Single-Charts und war damit der erste Top-Ten-Hit des Sängers.",
+        "Erst 2021 kehrte der Track in die Charts zurück: Am 24. April 2021 debütierte er auf dem Billboard Global 200 und erreichte dort später Platz 14.",
+        "2022 wurde die Ballade durch TikTok-Videos zur Protesthymne: Bei Demonstrationen in Europa wurde sie gespielt, und der Sänger trat am 12. März 2022 in Bukarest vor ukrainischen Flüchtlingen auf – bis Mai 2025 verzeichnete die Aufnahme mehr als 3,4 Milliarden Spotify-Streams."
+      ],
+      "lyrics": {
+        "real": [
+          "I wanna take you somewhere so you know I care",
+          "And I wanna kiss you, make you feel alright",
+          "But all my tears have been used up"
+        ],
+        "fake": "I drive the same old streets in the rain, calling out your name again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MwpMEbgC7DA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "grand-finale",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Indie & Alternative",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/tom-odell-another-love--resurgence-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Another_Love_(Tom_Odell_song)",
+        "https://en.wikipedia.org/wiki/Songs_from_Another_Love",
+        "https://en.wikipedia.org/wiki/Long_Way_Down_(Tom_Odell_album)",
+        "https://en.wikipedia.org/wiki/Tom_Odell",
+        "https://itunes.apple.com/lookup?id=687867700&entity=song"
+      ]
+    },
+    {
+      "id": "yt-zIDPPzCT4Ew",
+      "title": "Silhouette",
+      "artist": "Tom Odell",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Pop / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Deep"
+      ],
+      "hints": [
+        "Der britische Sänger-Songwriter veröffentlichte den Song im Juni 2016 auf seinem zweiten Studioalbum.",
+        "Es war sein erstes großes Release seit dem international erfolgreichen Debütalbum von 2013.",
+        "Der Text erzählt vom Vermissen einer verlorenen Geliebten: Nachts wacht der Protagonist auf und sieht nur ihren Schatten an der Wand.",
+        "Eine reine Klavier-Fassung erschien im Rahmen der 'East 1st Street Piano Tapes' zum selben Album.",
+        "Im Refrain resümiert der Sänger: 'I should have never let you go'."
+      ],
+      "lyrics": {
+        "real": [
+          "I keep waking at night in the freezing cold",
+          "Staring at the shadows coming up the walls",
+          "But you're just a shadow in my mind"
+        ],
+        "fake": "I'm chasing neon signs across the town, you never looked this beautiful"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zIDPPzCT4Ew",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/tom-odell-silhouette.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wrong_Crowd",
+        "https://en.wikipedia.org/wiki/Tom_Odell",
+        "https://music.apple.com/us/album/silhouette/1095448844?i=1095449161",
+        "https://lrclib.net/api/get?artist_name=Tom%20Odell&track_name=Silhouette",
+        "https://music.apple.com/us/album/wrong-crowd-east-1st-street-piano-tapes/1116685390"
+      ]
+    },
+    {
+      "id": "yt-Ivdf_W02ucg",
+      "title": "What's The Time Where You Are?",
+      "artist": "Troye Sivan",
+      "year": 2023,
+      "country": "AU",
+      "genre": "Electropop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Romantic"
+      ],
+      "hints": [
+        "Der australische Sänger veröffentlichte den Track im Oktober 2023 auf seinem dritten Studioalbum.",
+        "Bekannt wurde er zuvor als Teenager-Postar in Online-Videos und bei australischen Talentwettbewerben.",
+        "Das Album mischt Electropop mit Klavier und Parten in spanischer Sprache.",
+        "Der Text ist an eine geliebte Person am anderen Ende der Welt gerichtet: Er fragt nach Uhrzeit, Nacht und Wetter dort.",
+        "Das Album erschien am 13. Oktober 2023 bei EMI Music Australia und Capitol Records."
+      ],
+      "lyrics": {
+        "real": [
+          "Tokyo just hit me like a wave",
+          "And I spent so long just waiting for the signs",
+          "International straight shot to my heart"
+        ],
+        "fake": "I check the sunrise from a different town, counting all the stars till the sun goes down"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ivdf_W02ucg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/troye-sivan-something-to-give-each-other.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Something_to_Give_Each_Other",
+        "https://en.wikipedia.org/wiki/Troye_Sivan",
+        "https://music.apple.com/us/album/whats-the-time-where-you-are/1696900144?i=1696900155",
+        "https://lrclib.net/api/get?artist_name=Troye%20Sivan&track_name=What%27s%20The%20Time%20Where%20You%20Are%3F",
+        "https://en.wikipedia.org/wiki/Troye_Sivan_discography"
+      ]
+    },
+    {
+      "id": "yt-Zf1d8SGuxfs",
+      "title": "Million Dollar Baby",
+      "artist": "Tommy Richman",
+      "year": 2024,
+      "country": "US",
+      "genre": "Hip-Hop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Raw"
+      ],
+      "hints": [
+        "Der US-Rapper veröffentlichte den Song am 26. April 2024 über ISO Supremacy, PULSE Records und Concord.",
+        "Der Song geht auf einen kurzen Ausschnitt zurück, der auf TikTok viral ging.",
+        "Nach dem Erfolg debütierte die Single direkt auf Platz 2 der US-Hot-100.",
+        "Der Text rappt in einem Atemzug über Ausgeben, Kredite und eine Geliebte, die ihn nicht bemerkt.",
+        "Die Single erschien bewusst in Großbuchstaben gesetzt - ein Design-Signal des Labels."
+      ],
+      "lyrics": {
+        "real": [
+          "I ain't do no wrong",
+          "You rep my city for so damn long",
+          "I could clean up good for you"
+        ],
+        "fake": "I got a mansion on the hill and a Benz on the way, girl"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Zf1d8SGuxfs",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "2010s & 2020s Chart Toppers",
+        "Hip Hop Essentials",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/tommy-richman-million-dollar-baby.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Million_Dollar_Baby_(Tommy_Richman_song)",
+        "https://en.wikipedia.org/wiki/Tommy_Richman",
+        "https://music.apple.com/us/album/million-dollar-baby-single/1749616853?i=1749616863",
+        "https://lrclib.net/api/get?artist_name=Tommy%20Richman&track_name=Million%20Dollar%20Baby",
+        "https://en.wikipedia.org/wiki/Tommy_Richman_discography"
+      ]
+    },
+    {
+      "id": "yt-szPIgrYCxSY",
+      "title": "El Doctorado",
+      "artist": "Tony Dize",
+      "year": 2009,
+      "country": "US",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Raw"
+      ],
+      "hints": [
+        "Der US-Sänger puertoricanischer Herkunft veröffentlichte den Track 2009 auf der 'Updated'-Fassung seines Debütalbums - mit den Gästen Ken-Y und Don Omar.",
+        "Das Debütalbum 'La melodía de la calle' erschien 2008 unter WY Records und Machete Music; die 'Updated'-Fassung mit dem Track folgte am 17. November 2009.",
+        "Produzenten des Tracks sind 'Mambo Kingz' und 'Wise' - im Outro werden sie zusammen mit dem Label 'Pina Records' namentlich aufgerufen.",
+        "Der Text ist eine Ballade über das Alleinsein: 'Teniendo todo nada me queda sin ti'.",
+        "Der Refrain spielt mit dem Bild eines absolvierten Studiums und eines 'graduierten Herzens'."
+      ],
+      "lyrics": {
+        "real": [
+          "Vivo enamorado y loco",
+          "Teniendo todo nada me queda sin ti",
+          "Los mil diplomas, mil honores, de nada me vale"
+        ],
+        "fake": "Caminamos por la playa, tu mano en la mía, sin nada que temer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=szPIgrYCxSY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/tony-dize-el-doctorado.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tony_Dize",
+        "https://es.wikipedia.org/wiki/Tony_Dize",
+        "https://musicbrainz.org/ws/2/release/527f3c47-c7fd-41b1-be6e-131782a1b467?fmt=json",
+        "https://music.apple.com/us/album/la-melod%C3%ADa-de-la-calle-updated/1811233659?i=472136858",
+        "https://lrclib.net/api/get?artist_name=Tony%20Dize&track_name=El%20Doctorado"
+      ]
+    },
+    {
+      "id": "yt-e8w6cLVxAjA",
+      "title": "Mi Amor es Pobre ft. Ken-Y",
+      "artist": "Tony Dize",
+      "year": 2009,
+      "country": "US",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Raw"
+      ],
+      "hints": [
+        "Der US-Sänger puertoricanischer Herkunft veröffentlichte den Track 2009 auf der 'Updated'-Fassung seines Debütalbums - gemeinsam mit Arcángel und Gaststar Ken-Y.",
+        "Das Debütalbum 'La melodía de la calle' erschien 2008 unter WY Records und Machete Music; die überarbeitete 'Updated'-Fassung mit dem Track folgte 2009.",
+        "Der Einstieg kündigt an, dass sich 'tres mentes distintas' im 'lo más débil' vereinen - im Outro tritt einer der beiden Gäste namentlich als 'Arcángel' auf.",
+        "Der Text erzählt von einer großen Liebe, die arm bleibt: kein Haus, kein Geld, nur die Bitte um Nähe.",
+        "Die Strophe des Gastes endet mit dem Bild des Bettlers: 'Pidiendo como un limosnero'."
+      ],
+      "lyrics": {
+        "real": [
+          "Camina por las calles del corazón tuyo",
+          "Pidiendo como un limosnero",
+          "Por eso hoy tres mentes distintas se unen en lo más débil"
+        ],
+        "fake": "Yo trabajo en la fábrica y al final del día me siento en el sofá"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e8w6cLVxAjA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2000s Pop & RnB"
+      ],
+      "coverUrl": "/covers/tony-dize-mi-amor-es-pobre-ft--ken-y-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tony_Dize",
+        "https://es.wikipedia.org/wiki/Tony_Dize",
+        "https://musicbrainz.org/ws/2/release/527f3c47-c7fd-41b1-be6e-131782a1b467?fmt=json",
+        "https://music.apple.com/us/album/mi-amor-es-pobre/1811233659?i=1811233947",
+        "https://lrclib.net/api/get?artist_name=Tony%20Dize&track_name=Mi%20Amor%20Es%20Pobre"
+      ]
+    },
+    {
+      "id": "yt-9PSGoOcwOWM",
+      "title": "Permitame ft. Yandel",
+      "artist": "Tony Dize",
+      "year": 2008,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Party"
+      ],
+      "hints": [
+        "Der Sänger kommt aus Boston, Massachusetts, und brachte 2008 sein Debütalbum 'La Melodía de la Calle' bei WY Records und Machete Music heraus.",
+        "Im Text fragt eine Frau den Sänger nach seinem Namen - er nennt ihn, und sie reagiert mit 'No puede ser'.",
+        "Der Refrain fordert zum Tanzen auf: 'Siente el ritmo, síguele' - die zweite Hälfte schildert, wie der Sänger die Frau in eine Ecke führt, in der sie tanzen muss.",
+        "Im Outro werden die Producer 'Marioso', 'Tainy' und 'Víctor El Nazi' namentlich aufgerufen.",
+        "Der Text spielt mit dem Albumtitel ('ando con la melodía de la calle'); eine überarbeitete Neuauflage des Debütalbums erschien 2009 und enthält den Track ebenfalls."
+      ],
+      "lyrics": {
+        "real": [
+          "Me preguntó como si no supiera nada",
+          "Para mí es un placer conocerte",
+          "A una esquina donde tengas que bailar"
+        ],
+        "fake": "Camino por la playa con la guitarra en la mano"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9PSGoOcwOWM"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/tony-dize-permitame-ft--yandel-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tony_Dize",
+        "https://en.wikipedia.org/wiki/La_Melod%C3%ADa_de_la_Calle",
+        "https://api.lyrics.ovh/v1/Tony%20Dize/Permitame",
+        "https://itunes.apple.com/search?term=Tony+Dize+Permitame&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=9PSGoOcwOWM"
+      ]
+    },
+    {
+      "id": "metal-tool-schism",
+      "title": "Schism",
+      "artist": "Tool",
+      "year": 2001,
+      "country": "US",
+      "genre": "Progressive Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Complex",
+        "Intelligent",
+        "Deep"
+      ],
+      "hints": [
+        "Der Song erschien im Januar 2001 als erste Single der US-Band; das Album dazu folgte im Mai desselben Jahres.",
+        "Aufgenommen wurde das Material von Oktober 2000 bis Januar 2001 in den Cello Studios in Hollywood und in drei weiteren Studios in North Hollywood; produziert hat die Band gemeinsam mit David Bottrill.",
+        "Der Bassist erzählt, die berühmte Figur sei beim Herumspielen entstanden: 'I just play as much as possible, and I don't write stuff down'.",
+        "Der Text thematisiert zerbrochene Kommunikation in Beziehungen; laut dem Produzent wurden die Lyrics kurzfristig umgeschrieben, weil sie zunächst zu direkt auf Spannungen innerhalb der Band bezogen waren.",
+        "2002 gewann die Band damit den Grammy für die beste Metal-Performance; 2005 erschien eine DVD-Single mit einem Remix von Lustmord."
+      ],
+      "lyrics": {
+        "real": [
+          "Mildewed and smoldering. Fundamental differing.",
+          "To bring the pieces back together, rediscover communication",
+          "Finding beauty in the dissonance."
+        ],
+        "fake": "I ride the lightning across the desert sky tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MM62wjLrgmA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-tool-schism.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Schism_(song)",
+        "https://en.wikipedia.org/wiki/Lateralus",
+        "https://api.lyrics.ovh/v1/Tool/Schism",
+        "https://itunes.apple.com/search?term=Tool+Schism&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=MM62wjLrgmA"
+      ]
+    },
+    {
+      "id": "reggae-toots-maytals-54-46",
+      "title": "54-46 Was My Number",
+      "artist": "Toots & The Maytals",
+      "year": 1968,
+      "country": "JM",
+      "genre": "Rocksteady / Reggae",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Classic",
+        "Raw"
+      ],
+      "hints": [
+        "Der Sänger schrieb den Song nach seiner Haft wegen Marihuana-Besitz; die Zahl im Titel war seine Häftlingsnummer.",
+        "Die Aufnahme erschien 1968 auf dem Label Beverley's in Jamaika, in Großbritannien auf Pyramid; produziert hat Leslie Kong.",
+        "Der Song nutzt einen ähnlichen Riddim wie 'Train to Skaville' der Ethiopians, die Zeitgenossen der Band.",
+        "Ein Jahr später erschien eine Folgeversion unter leicht anderem Titel - sie gehörte zu den ersten Reggae-Songs mit weltweiter Bekanntheit.",
+        "Der Song eröffnet den Titelvorspann von Shane Meadows' Film 'This is England' und ist im Soundtrack der Serie 'Narcos: Mexico' zu hören."
+      ],
+      "lyrics": {
+        "real": [
+          "Right now, someone else has that number",
+          "I'm not a fool to hurt myself",
+          "They were wrong (ooh, ooh), oh yeah"
+        ],
+        "fake": "Moonlight on the river, a woman singing in the dark"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=axfkxU1hRZY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/reggae-toots-maytals-54-46.jpg",
+      "packs": [
+        "World, Reggae & Soul",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/54-46_That%27s_My_Number",
+        "https://en.wikipedia.org/wiki/Toots_and_the_Maytals",
+        "https://api.lyrics.ovh/v1/Toots%20%26%20The%20Maytals/54-46%20Was%20My%20Number",
+        "https://itunes.apple.com/search?term=Toots+Maytals+54-46&limit=3&entity=song",
+        "https://www.youtube.com/watch?v=axfkxU1hRZY"
+      ]
+    },
+    {
+      "id": "yt-ltl6A-A01Pg",
+      "title": "Breaking Me",
+      "artist": "Topic & A7S",
+      "year": 2019,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Anthems"
+      ],
+      "hints": [
+        "Die Single erschien im Dezember 2019 bei Virgin Records und Universal; der Solinger DJ produzierte, der schwedische Sänger A7S sang.",
+        "Das Video wurde in Lissabon gedreht - auf der pinken Straße Cais do Sodré, an der Santa Justa Lift und in der LX Factory.",
+        "Die Single stand in Belgien (Wallonien), Israel, Portugal und Rumänien auf Platz 1 und kam in Australien, Kanada, Deutschland, Irland, den Niederlanden, Neuseeland und Großbritannien in die Top 10.",
+        "In den USA erreichte sie Platz 53 der Billboard Hot 100 und dominierte drei Wochen den Dance-Chart.",
+        "Der Refrain besteht fast nur aus einem 'La la la la'-Gesang; dazwischen werden die Strophen englisch gesungen und eine Zeile kehrt mehrfach wieder: 'Call me what you wanna'."
+      ],
+      "lyrics": {
+        "real": [
+          "Call me what you wanna",
+          "I've been here a thousand times",
+          "The rhythm that you play when you're breaking my heart"
+        ],
+        "fake": "I'm a burning shadow dancing in the neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ltl6A-A01Pg",
+        "spotify": "https://open.spotify.com/track/3H7ihDc1dqLriiWXwsc2po"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/topic---a7s-breaking-me.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Breaking_Me",
+        "https://en.wikipedia.org/wiki/Topic_(DJ)",
+        "https://api.lyrics.ovh/v1/Topic%20%26%20A7S/Breaking%20Me",
+        "https://open.spotify.com/track/3H7ihDc1dqLriiWXwsc2po",
+        "https://itunes.apple.com/search?term=Topic+A7S+Breaking+Me&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "unplugged-tori-amos-crucify",
+      "title": "Crucify",
+      "artist": "Tori Amos",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Serious",
+        "Intelligent"
+      ],
+      "hints": [
+        "Die Single erschien im Mai 1992 als fünfte Auskopplung des Debütalbums 'Little Earthquakes'.",
+        "Das Album entstand 1990 und 1991 in den Capitol Studios in Los Angeles sowie in Stag Studios in Großbritannien.",
+        "Der Text kreist um Selbstbestrafung - im Refrain fragt die Sängerin, warum Menschen sich selbst jeden Tag bestrafen.",
+        "Die Platte erreichte in Großbritannien Platz 14 und in den USA die Top 60 der Billboard 200; später wurde sie in den '500 Greatest Albums' des Rolling Stone und in Colin Larkins 'All Time Top 1000 Albums' gewürdigt.",
+        "Bevor sie solo durchbrach, war die US-Sängerin Mitglied einer Synth-Pop-Band, deren 1988 erschienenes Debütalbum sie nach der Auflösung der Band verließ."
+      ],
+      "lyrics": {
+        "real": [
+          "I got a bowling ball in my stomach",
+          "I've been looking for a savior in these dirty streets",
+          "Got a kick for a dog"
+        ],
+        "fake": "Silver moonlight on the harbor, a lighthouse in the fog"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dGBwsC0yJ8o",
+        "spotify": "https://open.spotify.com/track/23XtNOaLoZKhhKZe6Vz5Y8",
+        "amazonMusic": "https://music.amazon.com/tracks/B00VKECVXY"
+      },
+      "coverUrl": "/covers/unplugged-tori-amos-crucify.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Indie & Alternative",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Crucify_(song)",
+        "https://en.wikipedia.org/wiki/Little_Earthquakes",
+        "https://api.lyrics.ovh/v1/Tori%20Amos/Crucify",
+        "https://open.spotify.com/track/23XtNOaLoZKhhKZe6Vz5Y8",
+        "https://itunes.apple.com/search?term=Tori+Amos+Crucify&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "80s-toto-africa",
+      "title": "Africa",
+      "artist": "Toto",
+      "year": 1982,
+      "country": "US",
+      "genre": "Soft Rock / Pop",
+      "difficulty": "hard",
+      "mood": [
+        "Atmospheric",
+        "Deep",
+        "Classic"
+      ],
+      "hints": [
+        "Die Band veröffentlichte das Album im März 1982 bei Columbia Records; aufgenommen wurde es von Juni 1981 bis Januar 1982 in Sunset Sound und Record One in Los Angeles, die Streicher in London.",
+        "Die Single erschien im Juni 1982 in Großbritannien und im Oktober 1982 in den USA - die Aufnahme selbst datiert von Juni 1981.",
+        "Der Keyboardist schrieb den Text nach einer nächtlichen Dokumentation über das Leiden der afrikanischen Bevölkerung: 'I tried to imagine how I'd feel about it if I was there and what I'd do'.",
+        "Die Single erreichte im Februar 1983 Platz 1 der Billboard Hot 100; 2021 landete der Song auf Platz 452 der '500 Greatest Songs of All Time' des Rolling Stone.",
+        "Der Text ist eine Sehnsuchtsgeschichte: Ein Mann schwankt zwischen dem Kontinent, den er verehrt, und der Frau, bei der er bleiben will."
+      ],
+      "lyrics": {
+        "real": [
+          "The wild dogs cry out in the night",
+          "It's gonna take a lot to drag me away from you",
+          "There's nothing that a hundred men or more could ever do"
+        ],
+        "fake": "The midnight train is calling and the river runs south"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FTQbiNvZqaY",
+        "spotify": "https://open.spotify.com/track/2374M0fQpWi3dLnB54qaLX",
+        "amazonMusic": "https://music.amazon.com/tracks/B001VFGAS4"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-toto-africa.jpg",
+      "packs": [
+        "80s Flashback",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Africa_(song)",
+        "https://en.wikipedia.org/wiki/Toto_IV",
+        "https://api.lyrics.ovh/v1/Toto/Africa",
+        "https://open.spotify.com/track/2374M0fQpWi3dLnB54qaLX",
+        "https://itunes.apple.com/search?term=Toto+Africa&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "yt-GMsok5m5yD4",
+      "title": "True Disaster",
+      "artist": "Tove Lo",
+      "year": 2016,
+      "country": "SE",
+      "genre": "Synth-Pop / Electro",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Electronic",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die schwedische Sängerin veröffentlichte den Track als zweite Single ihres zweiten Studioalbums, das am 28. Oktober 2016 bei Island Records erschien und den ersten Teil eines Konzeptalbums über die Höhen und Tiefen einer Beziehung bildet.",
+        "Der Song ist ein düster, pochender Track im Stil der 80er-Jahre-Synth-Pop, gespielt in Gis-Moll mit 96 Beats pro Minute; geschrieben wurde er von der Sängerin gemeinsam mit Oscar Holter, der ihn auch produzierte.",
+        "Inhaltlich geht es um den Schmerz zerstörenderischer Liebe: Die Sängerin singt offen, sie wisse, dass sie verletzt werde, wolle es aber nicht anders. Im Februar 2017 erschien eine Remix-Version von Cut Snake.",
+        "Das Musikvideo ist Teil eines Kurzfilms, der das erste Kapitel des Albums begleitet: Der Film erschien Ende Oktober 2016, das Video selbst als einzige durchgehende Einstellung (One-Shot) am 29. November 2016, inszeniert von Tim Erem.",
+        "Im Clip tanzt die Sängerin in einer choreografierten Einlage auf einer verlassenen, neonbeleuchteten Straße, nachdem es im Video zuvor zu einem Unfall gekommen ist. Die Figur Lorna, das selbstzerstörliche Alter ego, spielt Lina Esco."
+      ],
+      "lyrics": {
+        "real": [
+          "Keep playing my heartstrings faster and faster",
+          "You can be just what I want, my true disaster",
+          "Come on, I know I'm gonna get hurt"
+        ],
+        "fake": "Baby, we burn out slow, I like it when you let me go"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GMsok5m5yD4",
+        "spotify": "https://open.spotify.com/track/1UP5QeusHgerbteiQ7uvWh",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Electronic & Techno",
+        "Indie & Alternative",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/tove-lo-true-disaster--part-of-fairy-dust-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/True_Disaster",
+        "https://en.wikipedia.org/wiki/Lady_Wood",
+        "https://en.wikipedia.org/wiki/Fairy_Dust_(film)",
+        "https://en.wikipedia.org/wiki/Tove_Lo",
+        "https://en.wikipedia.org/wiki/Blue_Lips_(Tove_Lo_album)"
+      ]
+    }
+  ]
+}

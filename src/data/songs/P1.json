@@ -1,0 +1,651 @@
+{
+  "songs": [
+    {
+      "id": "piano-pink-beam",
+      "title": "Beam Me Up",
+      "artist": "P!nk",
+      "year": 2012,
+      "country": "US",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Spiritual",
+        "Emotional"
+      ],
+      "hints": [
+        "Akustische Ballade über den Wunsch, für einen kurzen Moment wieder mit einem verstorbenen Menschen verbunden zu sein.",
+        "Die Sängerin schrieb das Stück \"durch viele Tränen\" – angeregt von einer nahen Freundin, deren Kind gestorben war.",
+        "Neunter Track des sechsten Albums \"The Truth About Love\" (RCA, 14. September 2012) – der ersten US-Nummer-eins-Platte der Sängerin.",
+        "Nach der Schießerei in Sandy Hook, Connecticut, wurde der Song in einer US-Morning-Show täglich gespielt.",
+        "Refrain: \"I'll pick a star and watch you shine\" – die Bitte um ein Zeichen aus der Ferne."
+      ],
+      "lyrics": {
+        "real": [
+          "There's a waltz playing frozen in time",
+          "Give me a minute, I don't know what I'd say in it",
+          "I'll pick a star and watch you shine"
+        ],
+        "fake": "We are the rivers, we are the rain, we come back to the sea again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PFYm9LKsuUo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-pink-beam.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Truth_About_Love",
+        "https://www.songfacts.com/facts/pnk/beam-me-up",
+        "https://itunes.apple.com/search?term=P!nk+Beam+Me+Up&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/P%21nk/Beam%20Me%20Up",
+        "https://lrclib.net/api/get?artist_name=P!nk&track_name=Beam%20Me%20Up"
+      ]
+    },
+    {
+      "id": "yt-Dc8n7OWQzYU",
+      "title": "Hustle",
+      "artist": "SLVR",
+      "year": 2016,
+      "country": "IT",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Italienische Clubmusik: Der Produzent weist sich in den offiziellen Release-Credits selbst als DJ aus.",
+        "Der Track erschien am 16. Dezember 2016 bei Universal Music Italia.",
+        "Das Release lief über das italienische Label Nameless Records.",
+        "Bekannt ist der Künstler außerdem durch den Club-Track \"Lockdown\".",
+        "Das offizielle YouTube-Audio-Video erschien 2018 im automatisch erzeugten Kanal des Künstlers."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Dc8n7OWQzYU"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/slvr-hustle.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=Dc8n7OWQzYU",
+        "https://www.youtube.com/feeds/videos.xml?channel_id=UC_xp3O8ZHyIVf60L_ao-8Cg",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=Dc8n7OWQzYU&format=json",
+        "https://musicbrainz.org/ws/2/recording/86b149aa-40c7-4dcf-82ae-74c72839a1d3?fmt=json&inc=artist-credits+releases",
+        "https://itunes.apple.com/search?term=SLVR+Hustle&country=it&entity=song&limit=6"
+      ]
+    },
+    {
+      "id": "80s-plion-happy",
+      "title": "Happy Children",
+      "artist": "P. Lion",
+      "year": 1983,
+      "country": "IT",
+      "genre": "Italo Disco",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Debüt-Single eines italienischen Sängers, veröffentlicht im September 1983 über Discomagic.",
+        "Der Text beginnt mit dem Jahr 1983 und schildert eine Welt, in der es nur um Geld und Arbeit geht.",
+        "In Italien erschien der Song als 7- und 12-Zoll mit instrumentaler B-Seite, später auch auf dem Album \"Springtime\" (1984).",
+        "Chart-Erfolge: Platz 5 in Flandern, Platz 11 in den Niederlanden und der Schweiz, Platz 15 in Westdeutschland.",
+        "Produzent war David Zambelli – ein Italo-Disco-Klassiker der frühen 80er."
+      ],
+      "lyrics": {
+        "real": [
+          "You are the children",
+          "Your life will be very hard",
+          "But they remain only dreams"
+        ],
+        "fake": "Riding on a silver star, we are coming home from where we are"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CMQjZIaKBpQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/80s-plion-happy.jpg",
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Happy_Children_(song)",
+        "https://itunes.apple.com/search?term=P.+Lion+Happy+Children&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/P.%20Lion/Happy%20Children",
+        "https://lrclib.net/api/get?artist_name=P.%20Lion&track_name=Happy%20Children",
+        "https://www.youtube.com/watch?v=CMQjZIaKBpQ"
+      ]
+    },
+    {
+      "id": "yt-cSUEFDZ3p3k",
+      "title": "Te he echado de menos",
+      "artist": "Pablo Alborän",
+      "year": 2011,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Spanischer Sänger-songwriter aus Málaga, dessen Debütalbum 2011 in Spanien auf Platz 1 debütierte.",
+        "Der Song erschien 2011 auf diesem Debütalbum.",
+        "Ein spanischer Liebes-Song über Sehnsucht und über ein Versprechen, das die beiden sich gaben.",
+        "Im Refrain schwört die Liebste: \"Juramento de sal y limón\" – ein Schwur aus Salz und Zitrone.",
+        "Das offizielle Video liegt auf dem eigenen Kanal des Künstlers."
+      ],
+      "lyrics": {
+        "real": [
+          "Juramento de sal y limón",
+          "Prometimos querernos los dos",
+          "He pensado en tu sonrisa y en tú forma de caminar"
+        ],
+        "fake": "Camino por la arena ardiendo, sin tu nombre en la boca"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cSUEFDZ3p3k"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/pablo-alborän-te-he-echado-de-menos--videoclip-oficial-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Pablo_Albor%C3%A1n_(album)",
+        "https://itunes.apple.com/search?term=Pablo+Alboran+Te+he+echado+de+menos&country=es&entity=song&limit=6",
+        "https://api.lyrics.ovh/v1/Pablo%20Alboran/Te%20he%20echado%20de%20menos",
+        "https://www.youtube.com/watch?v=cSUEFDZ3p3k",
+        "https://en.wikipedia.org/wiki/Pablo_Albor%C3%A1n"
+      ]
+    },
+    {
+      "id": "metal-pantera-walk",
+      "title": "Walk",
+      "artist": "Pantera",
+      "year": 1992,
+      "country": "US",
+      "genre": "Groove Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Aggressive",
+        "Heavy"
+      ],
+      "hints": [
+        "Der Haupt-Riff entstand während eines Soundchecks auf der Tour zu \"Cowboys from Hell\".",
+        "Die Single erschien im Februar 1993 als zweite Single des sechsten Albums der Band.",
+        "Die Single erreichte Platz 35 in den britischen Single-Charts – der erste Top-40-Erfolg der Band dort.",
+        "Das Video entstand im Riviera Theatre in Chicago, wo die Band den Song mehrfach vor Live-Publikum spielte.",
+        "Loudwire führte den Song in seiner Liste der besten Band-Songs auf Rang 1 – später auch Entrance-Music von Rob Van Dam und Edge."
+      ],
+      "lyrics": {
+        "real": [
+          "Respect, walk",
+          "Are you talking to me?",
+          "Be yourself, by yourself"
+        ],
+        "fake": "Bow down to the groove or step out of my way"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AkFqg5wAuFk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-pantera-walk.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Vulgar_Display_of_Power",
+        "https://en.wikipedia.org/wiki/Walk_(Pantera_song)",
+        "https://www.songfacts.com/facts/pantera/walk",
+        "https://itunes.apple.com/search?term=Pantera+Walk&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Pantera/Walk"
+      ]
+    },
+    {
+      "id": "metal-parkway-carrion",
+      "title": "Carrion",
+      "artist": "Parkway Drive",
+      "year": 2007,
+      "country": "AU",
+      "genre": "Metalcore",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Epic"
+      ],
+      "hints": [
+        "Der Track ist die Power-Ballade des australischen Metalcore-Vierers – das Album enthält keinerlei saubere Vocals.",
+        "Die Band entstand 2003 in Byron Bay an der australischen Ostküste.",
+        "Aufgenommen wurde das Album im Mai 2007 in Zing Studios in Westfield, Massachusetts; Produzent war Adam Dutkiewicz.",
+        "Das zweite Studioalbum der Band (6. Oktober 2007) erreichte Platz 6 in den ARIA-Charts und Platz 27 in den US-Top-Heatseekers.",
+        "Die Band tourte im Juli und August 2007 mit dem US-Warped-Tour."
+      ],
+      "lyrics": {
+        "real": [
+          "In a moment I'm lost",
+          "Dying from the inside, her eyes take me away",
+          "Tear me apart from the inside out"
+        ],
+        "fake": "We ride into the fire, burning down the broken wire"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Y9QoYujrQFI"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-parkway-carrion.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Horizons_(Parkway_Drive_album)",
+        "https://en.wikipedia.org/wiki/Parkway_Drive",
+        "https://itunes.apple.com/search?term=Parkway+Drive+Carrion&limit=3&entity=song",
+        "https://lrclib.net/api/get?artist_name=Parkway+Drive&track_name=Carrion",
+        "https://www.youtube.com/watch?v=Y9QoYujrQFI"
+      ]
+    },
+    {
+      "id": "soul-parliament-funk",
+      "title": "Give Up the Funk (Tear the Roof Off the Sucker)",
+      "artist": "Parliament",
+      "year": 1976,
+      "country": "US",
+      "genre": "P-Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Party",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song ist eine Hymne des späten 70er-Jahre-Soul: aufgenommen wurde er 1975, als Single erschien er im April 1976.",
+        "Es war die zweite Single des Albums, das die Band 1975 veröffentlichte – produziert hat sie ihr Bandleader.",
+        "Die Single erreichte Platz 15 in den US-Popcharts und Platz 5 in den Soul-Charts; später wurde sie mit Gold ausgezeichnet.",
+        "Die tiefe Bassstimme am Anfang des Songs singt Ray Davis, ein Sänger der Band.",
+        "Autoren waren drei Mitglieder der Band, das Label war Casablanca."
+      ],
+      "lyrics": {
+        "real": [
+          "Tear the roof off the sucker",
+          "We gotta have that funk",
+          "We need the funk"
+        ],
+        "fake": "Bring the funk to the corner and let the whole block jump"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xNpNTkSkrU8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-parliament-funk.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Give_Up_the_Funk_(Tear_the_Roof_off_the_Sucker)",
+        "https://www.songfacts.com/facts/parliament/give-up-the-funk-tear-the-roof-off-the-sucker",
+        "https://itunes.apple.com/search?term=Parliament+Give+Up+the+Funk&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Parliament/Give%20Up%20the%20Funk%20(Tear%20the%20Roof%20Off%20the%20Sucker)",
+        "https://lrclib.net/api/get?artist_name=Parliament&track_name=Give%20Up%20the%20Funk"
+      ]
+    },
+    {
+      "id": "yt-xwQ5Sw4wxDA",
+      "title": "The Wind (Cat Stevens Cover)",
+      "artist": "Passenger",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Indie",
+        "Melancholic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der Song ist eine Neuaufnahme eines britischen Klassikers von 1971, der als erster Titel auf dem fünften Studioalbum des Urhebers erschien.",
+        "Im Originaltext geht es darum, auf den Gesang der Seele zu hören und der Spiritualität sowie dem Schicksal zu folgen.",
+        "Der Sänger veröffentlichte 2016 sein siebtes Studioalbum, das in Großbritannien die Albumcharts anführte.",
+        "Der britische Indie-Folk-Künstler ist vor allem für seinen Welterfolg 'Let Her Go' (2012) bekannt, der in 16 Ländern die Charts anführte.",
+        "Der Urheber des Originals wandte sich 1977 dem Islam zu und nahm erst in den 2000er-Jahren wieder Konzerte auf."
+      ],
+      "lyrics": {
+        "real": [
+          "I listen to the wind",
+          "I've sat upon the setting sun",
+          "I never wanted water once"
+        ],
+        "fake": "Zwischen den Küsten und dem offenen Horizont zieht ein heller Tag"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xwQ5Sw4wxDA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/passenger-passenger---the-wind---cat-stevens-cover--.jpg",
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/cat-stevens/the-wind",
+        "https://itunes.apple.com/search?term=Cat+Stevens+The+Wind&limit=5&entity=song",
+        "https://en.wikipedia.org/wiki/Young_as_the_Morning,_Old_as_the_Sea",
+        "https://en.wikipedia.org/wiki/Passenger_(singer)",
+        "https://api.lyrics.ovh/v1/Cat%20Stevens/The%20Wind"
+      ]
+    },
+    {
+      "id": "yt-SQIYen0KtFo",
+      "title": "Don't Be Afraid (feat. Jungle)",
+      "artist": "Diplo & Damian Lazarus",
+      "year": 2021,
+      "country": "US",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Energy",
+        "Neon Night"
+      ],
+      "hints": [
+        "Der Track erschien am 23. Juni 2021 über das US-Label Mad Decent, das ihn exklusiv an Because Music vergab.",
+        "Den Gesang steuert ein Londoner Duo bei, das als moderne Soul- und Club-Gruppe gegründet wurde.",
+        "Der gesungene Hook dreht sich um einen nächtlichen Anruf und darum, keine Angst zu haben, allein zu sein.",
+        "Der Titel erschien auf dem selbstbetitelten Album des US-DJs; eine Deluxe-Ausgabe enthält weitere Versionen, darunter einen Remix von Soulwax.",
+        "Die beiden Londoner sind zugleich die Urheber des gesungenen Parts – sie haben den Hook gemeinsam mit dem DJ geschrieben."
+      ],
+      "lyrics": {
+        "real": [
+          "If I'm calling you",
+          "You got my number",
+          "If you're lonely"
+        ],
+        "fake": "Im Morgengrauen rollen die Reifen über den nassen Asphalt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=SQIYen0KtFo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/diplo---damian-lazarus-don-t-be-afraid--feat--jungle-.jpg",
+      "hintEvidence": [
+        "https://www.youtube.com/watch?v=SQIYen0KtFo",
+        "https://itunes.apple.com/search?term=Diplo+Don%27t+Be+Afraid+Jungle&limit=5&entity=song",
+        "https://musicbrainz.org/ws/2/artist/?query=artist:Jungle%20AND%20country:GB&fmt=json&limit=3",
+        "https://musicbrainz.org/ws/2/recording/?query=recording:%22Don%27t%20Be%20Afraid%22%20AND%20artist:%22Diplo%22&fmt=json&limit=5",
+        "https://api.lyrics.ovh/v1/Jungle/Don%27t%20Be%20Afraid"
+      ]
+    },
+    {
+      "id": "country-patsy-cline-crazy",
+      "title": "Crazy",
+      "artist": "Patsy Cline",
+      "year": 1961,
+      "country": "US",
+      "genre": "Country / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Romantic",
+        "Sad",
+        "Smooth"
+      ],
+      "hints": [
+        "Der Song wurde von Willie Nelson geschrieben, der damals als Session-Musiker und Disc-Jockey in Houston lebte.",
+        "Die Aufnahme entstand im August und September 1961 in den Bradley Studios in Nashville und wurde von Owen Bradley produziert.",
+        "Die Single erschien am 16. Oktober 1961, erreichte Platz 2 in den US-Country-Charts und kam auch in die Top 10 der Pop-Charts.",
+        "1996 war der Titel der meistgespielte Song in den Jukeboxen der USA, 2003 wurde die Aufnahme in die National Recording Registry aufgenommen.",
+        "Der Refrain schildert, wie die Erzählerin ohne ihren Geliebten nicht auskommt und sich für ihre Schmerzen selbst verantwortlich fühlt."
+      ],
+      "lyrics": {
+        "real": [
+          "You'd love me as long as you wanted",
+          "You'd leave me for somebody new",
+          "What in the world did I do"
+        ],
+        "fake": "The porch light is burning and the coffee has gone cold"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YWKeuYcDAoo"
+      },
+      "coverUrl": "/covers/country-patsy-cline-crazy.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Crazy_(Willie_Nelson_song)",
+        "https://www.songfacts.com/facts/patsy-cline/crazy",
+        "https://itunes.apple.com/search?term=Patsy+Cline+Crazy&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Patsy%20Cline/Crazy",
+        "https://lrclib.net/api/get?artist_name=Patsy%20Cline&track_name=Crazy"
+      ]
+    },
+    {
+      "id": "yt-hf6mxXVpmDo",
+      "title": "On My Own",
+      "artist": "Patti LaBelle & Michael McDonald",
+      "year": 1986,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Sad",
+        "Smooth"
+      ],
+      "hints": [
+        "Der Song wurde von Burt Bacharach und Carole Bayer Sager geschrieben und produziert.",
+        "Zuerst nahm Dionne Warwick den Titel 1985 für ihr Album 'Friends' auf.",
+        "Die Duett-Fassung erschien 1986 als erste Single des achten Albums der Sängerin.",
+        "Die Sängerin wollte das Lied ursprünglich solo aufnehmen und holte ihren Partner erst für die endgültige Fassung dazu.",
+        "Der Refrain dreht sich darum, allein zurechtzukommen, nachdem die Beziehung zerbrochen ist."
+      ],
+      "lyrics": {
+        "real": [
+          "Said our love would always be true",
+          "Now I know what loving you cost",
+          "Losing you it cut like a knife"
+        ],
+        "fake": "Die Straßenlichter spiegeln sich im Regen der großen Stadt"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hf6mxXVpmDo"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/patti-labelle---michael-mcdonald-on-my-own.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/On_My_Own_(Patti_LaBelle_and_Michael_McDonald_song)",
+        "https://www.songfacts.com/facts/patti-labelle-and-michael-mcdonald/on-my-own",
+        "https://itunes.apple.com/search?term=Patti+LaBelle+On+My+Own&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Patti%20LaBelle/On%20My%20Own",
+        "https://lrclib.net/api/get?artist_name=Patti%20LaBelle&track_name=On%20My%20Own"
+      ]
+    },
+    {
+      "id": "electro-paul-kalkbrenner-sky-and-sand",
+      "title": "Sky and Sand",
+      "artist": "Paul Kalkbrenner",
+      "year": 2008,
+      "country": "DE",
+      "genre": "Techno / Deep House",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Melancholic",
+        "Epic"
+      ],
+      "hints": [
+        "Der Song ist Titelsong des 2008 gedrehten Films 'Berlin Calling', in dem der Produzent selbst die Hauptrolle als DJ 'Ickarus' Karow spielt.",
+        "Zunächst erschien er im Oktober 2008 auf dem Soundtrack zum Film, im Februar 2009 dann als Single.",
+        "In Deutschland blieb er 129 Wochen in den Single-Charts – nur 'Last Christmas' von Wham! hielt sich länger.",
+        "Den Gesang im Refrain singt der Bruder des Produzenten, Fritz.",
+        "Der Refrain beschreibt den Bau von Schlössern in den Wolken und am Strand – dazwischen fällt der Satz 'Design our own world'."
+      ],
+      "lyrics": {
+        "real": [
+          "Design our own world",
+          "Ain't nobody understand",
+          "I found myself alive"
+        ],
+        "fake": "In den Gassen der Stadt, da wird man niemals satt von der Liebe"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8ybFb_wKlvQ"
+      },
+      "coverUrl": "/covers/electro-paul-kalkbrenner-sky-and-sand.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "German Classics",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sky_and_Sand",
+        "https://en.wikipedia.org/wiki/Berlin_Calling",
+        "https://itunes.apple.com/search?term=Paul+Kalkbrenner+Sky+and+Sand&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Paul%20Kalkbrenner/Sky%20and%20Sand",
+        "https://lrclib.net/api/get?artist_name=Paul%20Kalkbrenner&track_name=Sky%20and%20Sand"
+      ]
+    }
+  ]
+}

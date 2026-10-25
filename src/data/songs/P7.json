@@ -1,0 +1,167 @@
+{
+  "songs": [
+    {
+      "id": "hiphop-public-enemy-fight-power",
+      "title": "Fight the Power",
+      "artist": "Public Enemy",
+      "year": 1989,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Powerful",
+        "Aggressive"
+      ],
+      "hints": [
+        "Ein politisches Meisterwerk des 'Golden Age' des Hip-Hop, das die schwarze Bevölkerung zu Selbstbewusstsein und Organisation mobilisieren sollte.",
+        "Der Track entstand 1989 auf Wunsch des Filmemachers Spike Lee und erschien zuerst auf dem Soundtrack zu dessen Film 'Do the Right Thing'.",
+        "Im Film ist die Nummer das Leitmotiv aus dem Boombox eines Boxers, der sie am Ende mit einem Baseballschläger zerschlägt.",
+        "Die Single erschien am 23. Juni 1989 parallel zum Soundtrack, eine Woche vor dem US-Kinostart des Films, und belegte Platz 1 der Hot-Rap-Singles-Liste; die US-Filminstitut-Liste '100 Years...100 Songs' führt den Track auf Platz 40.",
+        "Textlich attackiert der Rapper weiße Ikonen wie Elvis Presley und John Wayne; Chuck D verriet, dass allein in den ersten zehn Sekunden rund 17 Samples stecken."
+      ],
+      "lyrics": {
+        "real": [
+          "Our freedom of speech is freedom or death",
+          "We got to fight the powers that be",
+          "Elvis was a hero to most"
+        ],
+        "fake": "Chanting loud in the street until the whole block understands"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=mmo3HFa2vjg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-public-enemy-fight-power.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Hip Hop Essentials",
+        "Movie Hits",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fear_of_a_Black_Planet",
+        "https://www.songfacts.com/facts/public-enemy/fight-the-power",
+        "https://en.wikipedia.org/wiki/Do_the_Right_Thing",
+        "https://en.wikipedia.org/wiki/Public_Enemy",
+        "https://en.wikipedia.org/wiki/Spike_Lee"
+      ]
+    },
+    {
+      "id": "yt-ZDrlmlzY7cE",
+      "title": "In The Dark",
+      "artist": "Purple Disco Machine",
+      "year": 2022,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Nachtclub",
+        "Tanzbar",
+        "Melancholisch"
+      ],
+      "hints": [
+        "Ein federnder Nachtclub-Track, der 2022 als Kollaboration zwischen einem DJ aus Dresden und einer Band aus England erschien.",
+        "Es ist die zweite Zusammenarbeit des Duos - schon 2020 hatte 'Hypnotized' die beiden zusammengebracht.",
+        "In Deutschland erreichte der Song Platz 12 der Single-Charts und stand an der Spitze der Airplay-Charts.",
+        "Der Text erzählt von einer gescheiterten Liebesbeziehung und davon, nachts allein und ohne Hoffnung zurückgelassen zu werden.",
+        "Das Musikvideo spielt im Berliner Café Keese, wurde von Dimitri Tsvetkov inszeniert und erschien am selben Tag wie die Single."
+      ],
+      "lyrics": {
+        "real": [
+          "I got lost in the wilderness",
+          "The pain you caused cut so deep",
+          "Falling apart and I'm living a lie"
+        ],
+        "fake": "Neon rain is falling on the empty floor of the city"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ZDrlmlzY7cE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/purple-disco-machine-in-the-dark.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/In_the_Dark_(Purple_Disco_Machine_and_Sophie_and_the_Giants_song)",
+        "https://en.wikipedia.org/wiki/Hypnotized_(Purple_Disco_Machine_and_Sophie_and_the_Giants_song)",
+        "https://music.apple.com/us/album/in-the-dark/1601133606?i=1601133607",
+        "https://en.wikipedia.org/wiki/Purple_Disco_Machine",
+        "https://en.wikipedia.org/wiki/Sophie_and_the_Giants"
+      ]
+    },
+    {
+      "id": "class-tchaikovsky-swan",
+      "title": "Swan Lake (Theme)",
+      "artist": "Pyotr Ilyich Tchaikovsky",
+      "year": 1876,
+      "country": "RU",
+      "genre": "Romantic / Ballet",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Sad",
+        "Elegant"
+      ],
+      "hints": [
+        "Ein Ballett aus dem 19. Jahrhundert, dessen Musik zu den weltweit bekanntesten Melodien der Bühnenmusik zählt.",
+        "Die Partitur entstand 1875/76 in Russland, die Uraufführung fand 1877 im Bolschoi-Theater in Moskau - und floppt zunächst.",
+        "Erst die Neuinszenierung von 1895 durch Marius Petipa und Lew Iwanow am Mariinsky-Theater machte das Werk weltberühmt.",
+        "Für diese Fassung schrieb Riccardo Drigo die Partitur um; bis heute spielen Orchester überwiegend seine Bearbeitung.",
+        "Das Stück erzählt von Odette, einer Prinzessin, die der Fluch eines bösen Zauberers in ein Schwan verwandelt - nach Vorbildern aus russischen und deutschen Volksmärchen."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=9cNQFB0TDfY",
+        "spotify": "https://open.spotify.com/track/1TQ2UYCN7nhfj3cfcFC76V",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DNG58SX3"
+      },
+      "coverUrl": "/covers/pyotr-ilyich-tchaikovsky-swan-lake-theme.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Swan_Lake",
+        "https://en.wikipedia.org/wiki/Bolshoi_Theatre",
+        "https://en.wikipedia.org/wiki/Marius_Petipa",
+        "https://en.wikipedia.org/wiki/Lev_Ivanov",
+        "https://en.wikipedia.org/wiki/Swan_Lake_(1895)"
+      ]
+    }
+  ]
+}

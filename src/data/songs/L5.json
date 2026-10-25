@@ -1,0 +1,710 @@
+{
+  "songs": [
+    {
+      "id": "yt-Z7EsuR5I8SE",
+      "title": "Macarena",
+      "artist": "Los Del Rio",
+      "year": 1993,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Dance"
+      ],
+      "hints": [
+        "Der Song gehört zum 1993 erschienenen Album 'A mí me gusta' eines spanischen Duos aus Dos Hermanas in Andalusien, das RCA 1993 als Single in Spanien herausbrachte.",
+        "Die Komposition folgt der Clave-Tradition und liegt in Des-Dur bei 103 Schlägen pro Minute.",
+        "Der Text erzählt von einer Frau, die sich einen treuen Freund wünscht, während ihr Freund sie mit seinen zwei Kumpeln betrügt.",
+        "Der weltweite Durchbruch kam erst mit der englischsprachigen Bearbeitung von 1996: 14 Wochen Platz 1 in den US-Charts und weltweit mehr als 14 Millionen verkaufte Einheiten.",
+        "Der Refrain ruft 'Dale a tu cuerpo alegría' – der spanische Spruch, der bis heute auf Tanzflächen erklingt."
+      ],
+      "lyrics": {
+        "real": [
+          "Dale a tu cuerpo alegría, Macarena",
+          "Que tu cuerpo es pa' darle alegría y cosa buena",
+          "Macarena tiene un novio que se llama"
+        ],
+        "fake": "Mi vida es un baile de principia a fin"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z7EsuR5I8SE",
+        "spotify": "https://open.spotify.com/track/2BC190rwMtan6YbFZGjCON"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "90s Unplugged"
+      ],
+      "coverUrl": "/covers/los-del-rio-macarena.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Macarena",
+        "https://en.wikipedia.org/wiki/Los_del_R%C3%ADo",
+        "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_number-one_singles_of_1996",
+        "https://en.wikipedia.org/wiki/Fangoria_(band)",
+        "https://api.lyrics.ovh/v1/Los%20Del%20Rio/Macarena"
+      ]
+    },
+    {
+      "id": "yt-zWaymcVmJ-A",
+      "title": "Macarena (Bayside Boys Remix)",
+      "artist": "Los Del Rio",
+      "year": 1996,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Dance"
+      ],
+      "hints": [
+        "Zwei Miami-Produzenten, Mike Triay und Carlos de Yarza, bauten 1995 eine englischsprachige Rap-Strophe in den spanischen Originaltrack ein.",
+        "Der Anstoß kam vom Radiomoderator Jammin Johnny Caride vom Sender Power 96 in Miami, der den Song zuvor in seinem Nachtclub gehört hatte.",
+        "Als Basis diente eine Club-Version der spanischen Gruppe Fangoria, die später Plagiatorieträge ankündigte – der Fall blieb jedoch ohne Folgen.",
+        "Die englische Fassung stand 14 Wochen auf Platz 1 der US-Hitparade und führte auch die Cash Box Top 100 an.",
+        "In der englischen Strophe heißt es: 'They all want me, they can't have me'."
+      ],
+      "lyrics": {
+        "real": [
+          "They all want me, they can't have me",
+          "Now don't you worry about my boyfriend",
+          "Move with me, chant with me"
+        ],
+        "fake": "I'm on my way to Las Vegas tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=zWaymcVmJ-A",
+        "spotify": "https://open.spotify.com/track/4oaj36KzXRgDg4McgcTsZK"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "90s Unplugged"
+      ],
+      "coverUrl": "/covers/los-del-rio-macarena--bayside-boys-remix-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Macarena",
+        "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_number-one_singles_of_1996",
+        "https://en.wikipedia.org/wiki/Fangoria_(band)",
+        "https://en.wikipedia.org/wiki/Cash_Box_Top_100_Pop_Singles",
+        "https://lrclib.net/api/get?artist_name=Los+Del+Rio&track_name=Macarena+%28Bayside+Boys+Remix%29"
+      ]
+    },
+    {
+      "id": "yt-A7LMQnYnxmw",
+      "title": "Mi Amigo El De Arriba",
+      "artist": "Los Inquietos Del Norte",
+      "year": 2012,
+      "country": "MX",
+      "genre": "Norteño",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien 2012 als Single und wurde im selben Jahr Teil des Albums 'La Gritera' einer mexikanischen Band, die den Akkordeon-Stil des Landes pflegt.",
+        "Das Akkordeon und das Bajo Sexto sind die charakteristischsten Instrumente dieses mexikanischen Subgenres der Regionalmusik.",
+        "Der Text ist eine Danksagung an Gott, der den Sänger aus der bitteren Armut in ein besseres Leben geholfen habe.",
+        "Die Band veröffentlichte den Song 2012 außerdem auf einer Compilation mit ihren Corrido-Hits.",
+        "Im Refrain dankt der Sänger dem, der 'ganz oben' wohnt – dem höchsten aller Freunde."
+      ],
+      "lyrics": {
+        "real": [
+          "Agradecido con el de arriba, pero el de más arriba",
+          "Me sacó de la pobreza, esa maldita es mi enemiga...",
+          "Cuando naces sin dinero en la maldita pobreza"
+        ],
+        "fake": "Con el de abajo firmamos un pacto de silencio"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A7LMQnYnxmw"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/los-inquietos-del-norte-mi-amigo-el-de-arriba.jpg",
+      "hintEvidence": [
+        "https://musicbrainz.org/ws/2/release-group/e836efb4-f0bf-4afa-a639-c62a0bcdcb9f?fmt=json",
+        "https://musicbrainz.org/ws/2/release/d97a6c88-bc1d-4a98-a0c4-c321a369df38?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Los+Inquietos+del+Norte&track_name=Mi+Amigo+el+de+Arriba",
+        "https://en.wikipedia.org/wiki/Norte%C3%B1o_(music)",
+        "https://itunes.apple.com/lookup?id=1414706447"
+      ]
+    },
+    {
+      "id": "yt-fhzv1nVrTYA",
+      "title": "Y yo que te deseo a morir",
+      "artist": "Los Inquietos del Vallenato",
+      "year": 2004,
+      "country": "CO",
+      "genre": "Vallenato",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine kolumbianische Gruppe, die in den 1990er-Jahren ihren Anfang nahm und die Akkordeon-Musik ihrer Heimatregion pflegte.",
+        "Ihr Genre kombiniert Akkordeon, Guacharaca und Box-Trommel und wurde 2015 von der UNESCO zum immateriellen Kulturerbe der Menschheit erklärt.",
+        "Das Akkordeon kam im 19. Jahrhundert über den Hafen von Riohacha ins Land – gebracht von deutschen Einwanderern.",
+        "Der Titel klingt wie eine Drohung, meint aber eine übertriebene Liebeserklärung.",
+        "Die Musik der Region wird jedes Jahr Ende April beim größten Fest des Genres in Valledupar gefeiert."
+      ],
+      "lyrics": {
+        "real": [
+          "El orgullo puede esperar",
+          "Y muerdes cada parte de mí",
+          "Qué bello cuando me amas así"
+        ],
+        "fake": "Con tu perfume en la piel me vuelve loco"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fhzv1nVrTYA"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/los-inquietos-del-vallenato-y-yo-que-te-deseo-a-morir.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Vallenato",
+        "https://en.wikipedia.org/wiki/Vallenato",
+        "https://musicbrainz.org/ws/2/artist/23bd2a26-6fb2-4f26-b46a-05dc4ec9e7da?fmt=json",
+        "https://www.youtube.com/watch?v=fhzv1nVrTYA",
+        "https://www.vagalume.com.br/los-inquietos-del-vallenato/"
+      ]
+    },
+    {
+      "id": "yt-LWfYwDAcE7I",
+      "title": "Qué de Raro Tiene",
+      "artist": "Los Temerarios",
+      "year": 2004,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die mexikanische Band startete 1977 in Zacatecas unter einem anderen Namen und trat ab 1983 unter dem heutigen Namen auf.",
+        "Der Song stammt aus der Feder von Martín Urieta; das Album sammelt daneben Coverfassungen von Juan Gabriel, Vicente Fernández und Noel Estrada.",
+        "Das Album 'Veintisiete' von 2004 ist eine Hommage an die mexikanische Ranchera und führt den Song in drei verschiedenen Fassungen.",
+        "Der Text ist eine Rechnung mit der Vergangenheit: Der Sänger war ein Talent, das am Schmutz der Welt litt, bis ihn eine Frau ablenkte.",
+        "Im Refrain stellt der Sänger die Frage, was Seltsames an einer Frau sei, die ihn alles kostet."
+      ],
+      "lyrics": {
+        "real": [
+          "A los que al contemplarme rodando en el fango quisieran llorar",
+          "Yo siempre sostuve",
+          "Ellas son la vida, la chispa divina, la razón de ser"
+        ],
+        "fake": "Hoy me levanto temprano a trabajar el campo"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LWfYwDAcE7I"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/los-temerarios-que-de-raro-tiene.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Los_Temerarios",
+        "https://musicbrainz.org/ws/2/release/88c67f07-b6ba-41dd-af27-8ad834293ec5?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Los+Temerarios&track_name=Que+de+Raro+Tiene",
+        "https://en.wikipedia.org/wiki/Ranchera",
+        "https://itunes.apple.com/lookup?id=1022614826"
+      ]
+    },
+    {
+      "id": "yt-yc5UPdpraU0",
+      "title": "Enamorado de Ti",
+      "artist": "Los Temerarios",
+      "year": 1993,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song ist die siebte Nummer auf dem 1993 erschienenen Album 'Tu última canción' einer mexikanischen Band.",
+        "Die Band startete 1977 in Zacatecas unter einem anderen Namen und trat ab 1983 unter dem heutigen Namen auf.",
+        "Den Song schrieb und komponierte Adolfo Ángel Alba, der zugleich die musikalische Leitung des Albums innehatte und die Tasten bediente; die Aufnahmen entstanden zwischen Juli und Oktober 1993.",
+        "Der Text beginnt mit einem Vermisstensein: 'Hoy que no estás aquí'.",
+        "Die Ranchera, das Genre dieses Songs, entstand vor der mexikanischen Revolution und gilt als Symbol einer neuen nationalen Identität."
+      ],
+      "lyrics": {
+        "real": [
+          "Hoy que no estás aquí",
+          "Sin ti, tengo miedo",
+          "Eres tú mi lucero"
+        ],
+        "fake": "Mañana vuelvo a buscarte por el camino"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=yc5UPdpraU0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "country-folk"
+      ],
+      "coverUrl": "/covers/los-temerarios-temerarios-enamorado-de-ti.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Los_Temerarios",
+        "https://musicbrainz.org/ws/2/release/50a45dd6-635c-4fbf-8563-6d07261b42c9?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Los+Temerarios&track_name=Enamorado+de+Ti",
+        "https://en.wikipedia.org/wiki/Ranchera",
+        "https://itunes.apple.com/lookup?id=1022569165"
+      ]
+    },
+    {
+      "id": "yt-u4caKfzCTzY",
+      "title": "Todo me recuerda a ti",
+      "artist": "Los Temerarios",
+      "year": 1995,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Mexikanische Grupera-Band aus Fresnillo (Zacatecas), 1977 von den Brüdern Adolfo und Gustavo Ángel und ihrem Cousin Fernando gegründet.",
+        "Die Band kündigte 2023 ihre Auflösung an; die Abschiedstournee endete im Dezember 2024 im Estadio GNP Seguros in Mexiko-Stadt.",
+        "Der Song erschien auf dem 1995 veröffentlichten Album 'Camino del Amor' beim Label AFG Sigma Records.",
+        "Im Text fragt der Sänger, ob es der Geliebten gut geht, und klagt darüber, dass ihn deswegen alles an sie erinnert.",
+        "Der spanische Titel bedeutet: Alles erinnert mich an dich."
+      ],
+      "lyrics": {
+        "real": [
+          "Me pregunto si estarás sufriendo como yo",
+          "La luna me recuerda a ti, todo me recuerda a ti",
+          "Si pudieras regresar, te extraño tanto, mi amor"
+        ],
+        "fake": "Caminando por el desierto busco una señal de tu voz"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=u4caKfzCTzY"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "piano-ballads",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/los-temerarios-todo-me-recuerda-a-ti----los-temerarios.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Los_Temerarios",
+        "https://es.wikipedia.org/wiki/Los_Temerarios",
+        "https://es.wikipedia.org/wiki/Camino_del_amor",
+        "https://lrclib.net/api/get?artist_name=Los+Temerarios&track_name=Todo+me+recuerda+a+ti",
+        "https://en.wikipedia.org/wiki/Grupera"
+      ]
+    },
+    {
+      "id": "yt-3es727JJxY8",
+      "title": "El Centenario",
+      "artist": "Los Tucanes De Tijuana",
+      "year": 2009,
+      "country": "MX",
+      "genre": "Norteño/Corrido",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Mexikanische Norteño-Band aus Baja California, 1987 gegründet; Frontmann ist Mario Quintero Lara.",
+        "Die Band brachte den raueren Stil der Pazifikküste in die Norteño-Musik und prägte den Sound der Region.",
+        "2012 gewann sie den Latin Grammy für das Album '365 Días'.",
+        "Der Song erzählt von einem Freund, der in die Mafia ging, weil er nicht mehr arm sein wollte.",
+        "Im Refrain preisen alle den auffälligen Schmuck, den der erfolgreiche Freund inzwischen trägt."
+      ],
+      "lyrics": {
+        "real": [
+          "Si eres pobre te humilla la gente",
+          "Por la joya que brilla en su pecho",
+          "En un Corvette se pasea tranquilo"
+        ],
+        "fake": "Por las calles del pueblo suena mi guitarra otra vez"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3es727JJxY8"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/los-tucanes-de-tijuana-el-centenario.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Los_Tucanes_de_Tijuana",
+        "https://en.wikipedia.org/wiki/Norteño_(music)",
+        "https://en.wikipedia.org/wiki/365_Días",
+        "https://lrclib.net/api/get?artist_name=Los+Tucanes+de+Tijuana&track_name=El+Centenario",
+        "https://music.apple.com/us/album/retro-corridos/1301464205"
+      ]
+    },
+    {
+      "id": "yt-PoP2Sa7wYNQ",
+      "title": "Where Are You Now",
+      "artist": "Lost Frequencies ft. Calum Scott",
+      "year": 2021,
+      "country": "BE",
+      "genre": "Deep House",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Zwei Namen auf einem Track: ein belgischer DJ-Produzent und ein englischer Sänger.",
+        "Der Song erschien am 30. Juli 2021 bei Epic Records und wurde vom DJ produziert.",
+        "Der Sänger wurde 2015 in der britischen Talentshow 'Britain's Got Talent' bekannt; sein Cover 'Dancing on My Own' erreichte 2016 Platz zwei der britischen Single-Charts.",
+        "Das Stück kam auf Platz drei der britischen Charts und war bei den Brit Awards 2023 für den besten internationalen Song nominiert.",
+        "Der Refrain stellt die Frage, die schon im Titel steckt: Wo bist du jetzt?"
+      ],
+      "lyrics": {
+        "real": [
+          "You're just like my favorite song going round and round in my head",
+          "Five days on the freeway",
+          "Hey, it's been too long"
+        ],
+        "fake": "We were dancing in the rain on a Saturday night downtown"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=PoP2Sa7wYNQ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/lost-frequencies-ft--calum-scott-where-are-you-now.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Where_Are_You_Now_(Lost_Frequencies_song)",
+        "https://en.wikipedia.org/wiki/Lost_Frequencies",
+        "https://en.wikipedia.org/wiki/Calum_Scott",
+        "https://www.songfacts.com/facts/lost-frequencies/where-are-you-now",
+        "https://api.lyrics.ovh/v1/Lost%20Frequencies%20ft.%20Calum%20Scott/Where%20Are%20You%20Now"
+      ]
+    },
+    {
+      "id": "jazz-louis-armstrong-wonderful",
+      "title": "What a Wonderful World",
+      "artist": "Louis Armstrong",
+      "year": 1967,
+      "country": "US",
+      "genre": "Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dreamy",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Eine Hymne auf den Frieden und die Schönheit der Natur.",
+        "Der Song entstand am 16. August 1967 in Las Vegas, aufgenommen nach Mitternacht im United Recording Studio.",
+        "Der Chef des Labels lehnte den Song ab und verweigerte die Promotion; in den USA verkaufte er sich zunächst kaum 1.000-mal.",
+        "Erst der Vietnam-Kriegs-Film 'Good Morning, Vietnam' machte ihn 1988 zum Hit mit Platz 32 in den US-Charts.",
+        "Im Refrain denkt der Sänger laut nach, wie schön die Welt doch sein kann."
+      ],
+      "lyrics": {
+        "real": [
+          "I see trees of green, red roses too",
+          "I see skies of blue and clouds of white",
+          "I hear babies cry, I watch them grow"
+        ],
+        "fake": "Clouds drifting over the rooftops, the morning light is on my street"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rBrd_3VMC3c"
+      },
+      "coverUrl": "/covers/jazz-louis-armstrong-wonderful.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/What_a_Wonderful_World",
+        "https://en.wikipedia.org/wiki/Good_Morning,_Vietnam",
+        "https://en.wikipedia.org/wiki/Louis_Armstrong",
+        "https://www.songfacts.com/facts/louis-armstrong/what-a-wonderful-world",
+        "https://api.lyrics.ovh/v1/Louis%20Armstrong/What%20a%20Wonderful%20World"
+      ]
+    },
+    {
+      "id": "jazz-louis-jordan-boogie",
+      "title": "Choo Choo Ch'Boogie",
+      "artist": "Louis Jordan",
+      "year": 1946,
+      "country": "US",
+      "genre": "Jump Blues / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Der 'King of the Jukebox' war eine US-Vorreiterfigur des Rhythmus und Blues und landete 18-mal auf Platz eins der R&B-Charts.",
+        "Der Song entstand im Januar 1946 für das Label Decca und wurde von Milt Gabler produziert.",
+        "Ab August 1946 blieb er 18 Wochen auf Platz eins der R&B-Charts – ein Rekord, den nur 'The Honeydripper' erreichte.",
+        "Der Text erzählt von einem Soldaten, der nach dem Zweiten Weltkrieg heimkehrt und zurück in den Zug will.",
+        "Im Refrain wird der Titel rhythmisch gerufen, dazu pfeift eine Dampflokomotive."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm headed for the station with a pack on my back",
+          "I just love the rhythm of the clickety clack",
+          "You reach your destination and alas and alack"
+        ],
+        "fake": "Riding in the moonlight, counting stars until the morning train rolls in"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TftHrHOmSWc"
+      },
+      "coverUrl": "/covers/jazz-louis-jordan-boogie.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Choo_Choo_Ch%27Boogie",
+        "https://en.wikipedia.org/wiki/Louis_Jordan",
+        "https://en.wikipedia.org/wiki/Milt_Gabler",
+        "https://www.rockhall.com/inductees/louis-jordan",
+        "https://api.lyrics.ovh/v1/Louis%20Jordan/Choo%20Choo%20Ch%27Boogie"
+      ]
+    },
+    {
+      "id": "disney-jungle-likeyou",
+      "title": "I Wan'na Be Like You",
+      "artist": "Louis Prima",
+      "year": 1967,
+      "country": "US",
+      "genre": "Soundtrack / Swing / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Energy",
+        "Funny",
+        "Groovy"
+      ],
+      "hints": [
+        "Gesungen von King Louie in Disneys Zeichentrickfilm 'Das Dschungelbuch' von 1967.",
+        "Auf dem Soundtrack stehen fünf Songs der Sherman Brothers – darunter dieser.",
+        "Der Sänger war ein US-Jazz-Musiker italienischer Herkunft aus New Orleans, der die Rolle des King Louie übernahm.",
+        "Die Aufnahme entstand mit Scat-Gesang und Trompete, begleitet von der Band 'Sam Butera & The Witnesses'.",
+        "Der Refrain ist eine Hingabe an das, was die Menschen können und was der Affe nicht kann."
+      ],
+      "lyrics": {
+        "real": [
+          "I've reached the top and had to stop",
+          "Now don't try to kid me, mancub",
+          "So I can be like you"
+        ],
+        "fake": "Swinging through the treetops with the jungle band"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ud5J7Ye332I"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-jungle-likeyou.jpg",
+      "packs": [
+        "jazz-blues",
+        "kids-disney",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Wan%27na_Be_Like_You_(The_Monkey_Song)",
+        "https://en.wikipedia.org/wiki/The_Jungle_Book_(1967_film)",
+        "https://en.wikipedia.org/wiki/Louis_Prima",
+        "https://en.wikipedia.org/wiki/Sherman_Brothers",
+        "https://api.lyrics.ovh/v1/Louis%20Prima/I%20Wan%27na%20Be%20Like%20You"
+      ]
+    },
+    {
+      "id": "class-einaudi-nuvole",
+      "title": "Nuvole Bianche",
+      "artist": "Ludovico Einaudi",
+      "year": 2004,
+      "country": "IT",
+      "genre": "Contemporary Classical / Piano",
+      "difficulty": "medium",
+      "mood": [
+        "Peaceful",
+        "Sad",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Die Aufnahme entstand im Juni 2004 im Piccolo Teatro in Mailand.",
+        "Das Stück ist der zwölfte von dreizehn Titeln auf einem Album von 69 Minuten und 9 Sekunden – der Track selbst dauert knapp sechs Minuten.",
+        "Der Komponist sagte über das Album, es sei eine Sammlung von Stücken, die durch eine Geschichte verbunden seien – in seinen Erinnerungen sprach er dabei von Wolken, die langsam am Himmel dahinziehen.",
+        "Das Stück wurde 2010 für den Horrorfilm 'Insidious' verwendet und später für die britische Fernsehproduktion 'This Is England 86'.",
+        "Der Titel bedeutet 'Weiße Wolken' – die Musik selbst ist eine reine Klavier-Solostimme ohne jeden Gesang."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VUCI-1vIbUo",
+        "spotify": "https://open.spotify.com/track/3weNRklVDqb4Rr5MhKBR3D",
+        "amazonMusic": "https://music.amazon.com/tracks/B001ST9OT0"
+      },
+      "coverUrl": "/covers/class-einaudi-nuvole.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "piano-ballads",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Una_Mattina",
+        "https://www.classicfm.com/composers/einaudi/music/nuvole-bianche/",
+        "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+        "https://lrclib.net/api/get?artist_name=Ludovico%20Einaudi&track_name=Nuvole%20Bianche",
+        "https://itunes.apple.com/lookup?id=1440718584&entity=song"
+      ]
+    }
+  ]
+}

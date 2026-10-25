@@ -1,0 +1,754 @@
+{
+  "songs": [
+    {
+      "id": "disco-kavinsky-nightcall",
+      "title": "Nightcall",
+      "artist": "Kavinsky",
+      "year": 2010,
+      "country": "FR",
+      "genre": "Synthwave / Electronic",
+      "difficulty": "easy",
+      "mood": [
+        "Moody",
+        "Cool",
+        "Nightlife"
+      ],
+      "hints": [
+        "Debüt-Single eines französischen Electro-Pop-Künstlers, dessen bürgerlicher Name Vincent Belorgey laut und dessen Künstlername eine fiktive Figur ist.",
+        "Der Song erschien 2010 als Single und wurde 2011 zum musikalischen Opening des US-Kultfilms 'Drive' mit Ryan Gosling.",
+        "Geschrieben und produziert wurde das Stück gemeinsam mit Guy-Manuel de Homem-Christo, einem der beiden Kopf der französischen Elektronikband Daft Punk.",
+        "Den weiblichen Refrain-Part sang die brasilianische Sängerin Lovefoxxx.",
+        "Im Refrain heißt es, die Leute redeten über ihn, er bleibe aber 'still the same'."
+      ],
+      "lyrics": {
+        "real": [
+          "I'm giving you a night call to tell you how I feel",
+          "I want to drive you through the night, down the hills",
+          "I'm gonna tell you something you don't want to hear"
+        ],
+        "fake": "Neon signs are glowing while we drive through the desert night"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=46qo_V1zcOM",
+        "spotify": "",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/us/album/nightcall/1442447952?i=1442447970"
+      },
+      "coverUrl": "/covers/disco-kavinsky-nightcall.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/kavinsky/nightcall",
+        "https://music.apple.com/us/album/nightcall/1442447952?i=1442447970",
+        "https://api.discogs.com/releases/2261705",
+        "https://lrclib.net/api/get?artist_name=Kavinsky&track_name=Nightcall",
+        "https://www.youtube.com/watch?v=46qo_V1zcOM"
+      ]
+    },
+    {
+      "id": "yt-87tOJc724rE",
+      "title": "Get Down Tonight",
+      "artist": "KC & The Sunshine Band",
+      "year": 1975,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Der Song erschien 1975 auf dem selbstbetitelten Album der Gruppe, das beim Label T.K. Records in den USA erschien.",
+        "Auf derselben Platte steht mit 'That's the Way (I Like It)' auch ihr größter Charterfolg.",
+        "Die Single erschien 1975; die als 'Digital 45' erhältliche Ausgabe führt 'You Don't Know' als zweite Seite.",
+        "In Europa lief die Veröffentlichung 1975 bei Parlophone Records (Warner Music Group), produziert von Harry Wayne Casey und Richard Finch.",
+        "Der Refrain fordert zum Tanzen auf: 'Oh, do a little dance, make a little love'."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby-baby, let's get together",
+          "Honey-honey, me and you",
+          "Oh, do a little dance, make a little love"
+        ],
+        "fake": "Silver disco ball is spinning and everybody is on the floor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=87tOJc724rE",
+        "spotify": "",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/us/album/get-down-tonight/814050390?i=814050540"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/kc---the-sunshine-band-get-down-tonight--original-long-version-.jpg",
+      "hintEvidence": [
+        "https://api.discogs.com/releases/8502522",
+        "https://music.apple.com/us/album/get-down-tonight/814050390?i=814050540",
+        "https://music.apple.com/us/album/get-down-tonight/329749826?i=329749844",
+        "https://www.youtube.com/watch?v=87tOJc724rE",
+        "https://lrclib.net/api/get?artist_name=KC%20%26%20The%20Sunshine%20Band&track_name=Get%20Down%20Tonight"
+      ]
+    },
+    {
+      "id": "yt-14cjzntN_58",
+      "title": "I'm Your Boogie Man",
+      "artist": "KC & The Sunshine Band",
+      "year": 1976,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "60s/70s Legends"
+      ],
+      "hints": [
+        "Der Song erschien 1976 auf einer deutschen 45er-Single von RCA Victor, die eine zweite Discoseite mitbringt.",
+        "Der Text ist eine Huldigung an die Geliebte: Der Sänger schwört, alles zu tun, was sie sich wünscht.",
+        "Der Refrain fordert die Anhörerin direkt auf - 'Turn me on' -, zweimal wiederholt.",
+        "Das Stück beginnt mit einer Ansage: 'One, two, three' - danach setzt die Gruppe direkt mit dem Refrain ein.",
+        "Im Text schlägt der Sänger morgens, am Nachmittag und um Mitternacht vor, wann immer es dem Paar passt."
+      ],
+      "lyrics": {
+        "real": [
+          "One, two, three",
+          "I'm your boogie man, that's what I am",
+          "I'm here to do whatever I can"
+        ],
+        "fake": "We are the champions of the dancefloor, shaking all night long"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=14cjzntN_58",
+        "spotify": "",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/us/album/im-your-boogie-man/27496285?i=27496369"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/kc---the-sunshine-band-i-m-your-boogie-man.jpg",
+      "hintEvidence": [
+        "https://api.discogs.com/releases/5740144",
+        "https://music.apple.com/us/album/im-your-boogie-man/27496285?i=27496369",
+        "https://music.apple.com/us/album/im-your-boogie-man/1344825409?i=1344825429",
+        "https://lrclib.net/api/get?artist_name=KC%20%26%20The%20Sunshine%20Band&track_name=I'm%20Your%20Boogie%20Man",
+        "https://www.youtube.com/watch?v=14cjzntN_58"
+      ]
+    },
+    {
+      "id": "movie-showman-this-is-me",
+      "title": "This Is Me",
+      "artist": "Keala Settle / The Greatest Showman Cast",
+      "year": 2017,
+      "country": "US",
+      "genre": "Showtune / Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Powerful",
+        "Inspirational",
+        "Epic"
+      ],
+      "hints": [
+        "Die Hymne entstand für einen US-Musicalfilm von 2017 über den Zirkusdirektor P. T. Barnum; der Soundtrack erschien 2017 in den USA, Text und Musik stammen von Benj Pasek und Justin Paul.",
+        "Gesungen wird sie von der hawaiianischen Sängerin, die im Film die bärtige Frau Lettie Lutz spielt; der Song gewann 2018 den Golden Globe als bester Originalsong.",
+        "Die Szene, in der der Song erklingt: Barnum schließt die Zirkus-Außenseiter nach der Jenny-Lind-Vorstellung von der Feier aus, und genau dagegen stellt sich die Truppe.",
+        "Der Text handelt von Selbstakzeptanz: Die Sängerin nennt sich 'brave' und 'bruised' und betont, sie sei, wer sie sein soll.",
+        "Der Refrain endet mit den Worten 'Look out 'cause here I come, and I'm marching on to the beat I drum'."
+      ],
+      "lyrics": {
+        "real": [
+          "I am not a stranger to the dark",
+          "I am brave, I am bruised",
+          "And I'm marching on to the beat I drum"
+        ],
+        "fake": "I will take the stage in silver and refuse to disappear"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CjxugyZCfuw",
+        "spotify": "",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/us/album/this-is-me/1299856714?i=1299856916"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/keala-settle-this-is-me.jpg",
+      "packs": [
+        "Movie Hits",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/keala-settle/this-is-me",
+        "https://music.apple.com/us/album/this-is-me/1299856714?i=1299856916",
+        "https://lrclib.net/api/get?artist_name=Keala%20Settle&track_name=This%20Is%20Me",
+        "https://www.youtube.com/watch?v=CjxugyZCfuw",
+        "https://musicbrainz.org/ws/2/recording/2b33e534-36c5-4c15-945d-907076e4c691?inc=artist-credits+releases&fmt=json"
+      ]
+    },
+    {
+      "id": "piano-keane-somewhere",
+      "title": "Somewhere Only We Know",
+      "artist": "Keane",
+      "year": 2004,
+      "country": "GB",
+      "genre": "Piano Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Nostalgic",
+        "Epic",
+        "Positive"
+      ],
+      "hints": [
+        "Der Song wurde vom Pianisten der Band geschrieben, der sich dabei vom David-Bowie-Klassiker 'Heroes' inspirieren ließ.",
+        "Er erschien 2004 auf dem Debütalbum, das im Vereinigten Königreich zum zweitbestverkauften Album des Jahres wurde.",
+        "Die Band wuchs in Battle in East Sussex auf - dort lernten sich Sänger, Schlagzeuger und Pianist schon als Zwölfjährige.",
+        "Es war die erste Veröffentlichung des Trios bei Island Records, die dem Bandnamen einen großen Werbeschub gab.",
+        "Im Refrain fragt der Sänger ein schlichtes Ding, wo es geblieben sei: 'Oh, simple thing, where have you gone?'"
+      ],
+      "lyrics": {
+        "real": [
+          "I walked across an empty land",
+          "I knew the pathway like the back of my hand",
+          "Oh, simple thing, where have you gone?"
+        ],
+        "fake": "I still hear the echo of the streets that we outgrew"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xFGE8BuOn0g",
+        "spotify": "",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/us/album/somewhere-only-we-know/1445286850?i=1445287036"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-keane-somewhere.jpg",
+      "packs": [
+        "2000s Pop & RnB",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/keane/somewhere-only-we-know",
+        "https://music.apple.com/us/album/hopes-and-fears/1440737353",
+        "https://music.apple.com/us/album/somewhere-only-we-know/1445286850?i=1445287036",
+        "https://api.discogs.com/releases/6942219",
+        "https://lrclib.net/api/get?artist_name=Keane&track_name=Somewhere%20Only%20We%20Know"
+      ]
+    },
+    {
+      "id": "yt-Iex8rNqygAE",
+      "title": "Celle qu'il te faut",
+      "artist": "Keen'V feat Glory",
+      "year": 2016,
+      "country": "FR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der französische Rapper veröffentlichte 2016 einen Sommerhit, in dem er einem Freund rät, Platz für seine neue Liebe zu machen.",
+        "Der Song erschien am 10. Juni 2016 als Single bei Warner Music France und ist auch auf dem Album 'Là où le vent me mène' enthalten.",
+        "Im Refrain verspricht der Rapper, das Leben des Freundes in einen Traum zu verwandeln, damit er ein neues Kapitel aufschlagen kann.",
+        "Der Refrain endet mit einer wiederholten Aufforderung, dem Partner das Herz zu schenken: 'Donne moi ton cœur'.",
+        "Der Titel bedeutet wörtlich 'die Frau, die du brauchst' - die Refrainzeile greift ihn auf, indem sie den Freund auffordert, einer anderen Frau den ersten Platz einzuräumen."
+      ],
+      "lyrics": {
+        "real": [
+          "J'ai foi en l'avenir",
+          "Je ne trahirai jamais ta confiance",
+          "Tant notre amour est plus fort que tout"
+        ],
+        "fake": "Je danse sous la pluie, seul dans la nuit sans toi"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Iex8rNqygAE",
+        "spotify": "",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/fr/album/celle-quil-te-faut-feat-glory/1122089626?i=1122089765"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/keen-v-feat-glory-celle-qu-il-te-faut---clip-officiel--.jpg",
+      "hintEvidence": [
+        "https://api.lyrics.ovh/v1/Keen%27V/Celle%20qu%27il%27te%20faut",
+        "https://music.apple.com/fr/album/celle-quil-te-faut-feat-glory/1122089626?i=1122089765",
+        "https://api.discogs.com/releases/16210773",
+        "https://api.discogs.com/releases/12962856",
+        "https://music.apple.com/fr/album/celle-quil-te-faut-feat-glory/1121793652?i=1121794101"
+      ]
+    },
+    {
+      "id": "piano-keenan-scars",
+      "title": "Scars",
+      "artist": "Keenan Te",
+      "year": 2023,
+      "country": "AU",
+      "genre": "Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Emotional",
+        "Sad",
+        "Honest"
+      ],
+      "hints": [
+        "Der australische Sänger wuchs in Melbourne auf und ist vietnamesischer und kambodschanischer Herkunft – seine Klavierballaden wurden über TikTok bekannt.",
+        "Sein Durchbruch kam 2021 mit dem TikTok-Hit 'Dependent'; weitere Singles wie 'Never Let You Go' und 'Forgot About Us' folgten.",
+        "Die Single erschien am 17. Februar 2023 als Eigenveröffentlichung; eine spätere Duett-Version mit Peder Elias kam am 22. Dezember 2023.",
+        "Der Track zählt zu seinen meistgespielten Songs und überschritt dabei die Marke von 80 Millionen Spotify-Streams.",
+        "Typisch für ihn: eine rührende Klavierballade über Verlust und Vergebung – sein Genre wird im Katalog als 'Pop Ballade' geführt."
+      ],
+      "lyrics": {
+        "real": [
+          "We're whispering in circles again",
+          "You know that I've been broken before",
+          "'Cause loving you's worth all the scars"
+        ],
+        "fake": "Paper planes over empty streets, chasing echoes down the hall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bWxtqDV4gTU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-keenan-scars.jpg",
+      "packs": [
+        "piano-ballads",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Keenan_Te",
+        "https://music.apple.com/us/album/scars/1664774948?i=1664774952",
+        "https://music.apple.com/us/album/scars-with-peder-elias/1720472633?i=1720472642",
+        "https://en.wikipedia.org/wiki/TikTok",
+        "https://en.wikipedia.org/wiki/Melbourne"
+      ]
+    },
+    {
+      "id": "yt-A1waZCoYbts",
+      "title": "Advice",
+      "artist": "Kehlani",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die US-Sängerin wurde am 24. April 1995 in Oakland, Kalifornien, geboren und veröffentlichte vor ihrem Debütalbum mehrere selbst produzierte Mixtapes.",
+        "Der Song entstand nach einer für sie schmerzhaften Beziehung – sie erklärte, viele Frauen erlebten dasselbe und hätten einen Rat gebraucht.",
+        "Er wurde am 1. Dezember 2016 bei Zane Lowes Beats-1-Radio als erste Promo-Single des Debütalbums 'SweetSexySavage' premiered.",
+        "Das Album erschien am 27. Januar 2017 bei Atlantic Records und debütierte mit 58.000 Album-Einheiten auf Platz 3 der US-Billboard-200.",
+        "Ein seelischer R&B-Track über eine toxische Liebesbeziehung, dessen Refrain die Sängerin endlich ihren eigenen Rat annehmen lässt."
+      ],
+      "lyrics": {
+        "real": [
+          "You have a way with words",
+          "My swollen heart you curve",
+          "Take my own advice, take my own advice"
+        ],
+        "fake": "Gold and diamonds on a midnight line, every heartbeat asking for more"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=A1waZCoYbts",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/kehlani-advice.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/SweetSexySavage",
+        "https://www.songfacts.com/facts/kehlani/advice",
+        "https://en.wikipedia.org/wiki/Kehlani",
+        "https://music.apple.com/us/album/advice/1179542759?i=1179542897",
+        "https://en.wikipedia.org/wiki/Billboard_200"
+      ]
+    },
+    {
+      "id": "yt-HPHbeSGVKJo",
+      "title": "Distraction",
+      "artist": "Kehlani",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track entstand zuerst als Instagram-Caption und wurde danach in Studios in Philadelphia mit dem Produzenten Pop & Oak zu Song verarbeitet.",
+        "Die Single erschien am 23. Juli 2016 als zweite Auskopplung des Debütalbums 'SweetSexySavage'.",
+        "Das Musikvideo feierte am 22. November 2016 auf dem Kanal der Sängerin Premiere, die Regie führte Yashxani.",
+        "Der Song erreichte Platz 85 der US-Billboard-Hot-100 und war bei den 60. Grammy Awards für die beste R&B-Darstellung nominiert.",
+        "Ein luftiger R&B-Song über eine Affäre mit einer Frau – gewollt ist jemand, der Zeit mitbringt, aber die eigene Arbeit nicht stört."
+      ],
+      "lyrics": {
+        "real": [
+          "Do me a favor, pick me up, take me out later",
+          "My life can get crazy, I deal with shit on the daily",
+          "This life can make you so jaded"
+        ],
+        "fake": "Neon and mirrors in a rented car, running from whoever we are"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=HPHbeSGVKJo",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/kehlani-distraction--official-music-video-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Distraction_(Kehlani_song)",
+        "https://www.songfacts.com/facts/kehlani/distraction",
+        "https://en.wikipedia.org/wiki/SweetSexySavage",
+        "https://en.wikipedia.org/wiki/Kehlani",
+        "https://en.wikipedia.org/wiki/Billboard_Hot_100"
+      ]
+    },
+    {
+      "id": "disney-princess-frog-friends",
+      "title": "Friends on the Other Side",
+      "artist": "Keith David",
+      "year": 2009,
+      "country": "US",
+      "genre": "Soundtrack / Villain / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Magic",
+        "Groovy"
+      ],
+      "hints": [
+        "Der Song stammt aus Disneys Zeichentrickfilm von 2009, in dem eine Kellnerin in New Orleans um 1920 einen verzauberten Prinzen zurückgewinnen will.",
+        "Die Musik und die Songs des Films schrieb der Pixar-Altmeister Randy Newman, die Regie übernahmen John Musker und Ron Clements.",
+        "Gesungen wird er von der tiefen Bassstimme des Synchronsprechers, der in Film und Fernsehen über 400 Rollen gespielt hat.",
+        "Der Filmheld wurde nach Baron Samedi und Ghede Nibo modelliert; Supervising Animator Bruce W. Smith erhielt dafür eine Annie-Award-Nominierung.",
+        "Ein schwungvoller Voodoo-Song des Schurken Dr. Facilier, der dem Publikum seinen Pakt mit den Geistern der anderen Welt anpreist."
+      ],
+      "lyrics": {
+        "real": [
+          "And I got friends on the other side",
+          "I'll look deep into your heart and soul",
+          "Sit down at my table"
+        ],
+        "fake": "Riding a broomstick through the night, silver moonlight burning bright and white"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1BgfG4qEdxg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-princess-frog-friends.jpg",
+      "packs": [
+        "kids-disney",
+        "jazz-blues",
+        "Movie Hits",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Friends_on_the_Other_Side",
+        "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+        "https://en.wikipedia.org/wiki/Keith_David",
+        "https://en.wikipedia.org/wiki/Randy_Newman",
+        "https://en.wikipedia.org/wiki/Baron_Samedi"
+      ]
+    },
+    {
+      "id": "yt-XKst2XCjRms",
+      "title": "Jealous",
+      "artist": "Keke Palmer",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die US-Schauspielerin wurde am 26. August 1993 in Harvey, Illinois, geboren und sang schon als Kind in der Kirche.",
+        "Der Track ist Teil der zweiten EP der Künstlerin, die am 4. November 2016 über Island Records erschien – zeitgleich lief ein 17-minütiger Kurzfilm bei Billboard.",
+        "Die EP debütierte in der Woche des 26. November 2016 auf Platz 18 der US-R&B-Albumcharts, Platz 42 der Top-R&B-/Hip-Hop-Alben und Platz 22 der Heatseekers.",
+        "Der Song ist eine selbstbewusste R&B-Nummer über Eifersucht, in der die Interpretin ihren Status betont und den Nebenmann abwimmelt.",
+        "Die Künstlerin wurde durch ihre Rolle in der Serie 'Scream Queens' bekannt und publizierte 2017 das Buch 'I Don't Belong to You'."
+      ],
+      "lyrics": {
+        "real": [
+          "You say that you promise to love me, love me",
+          "Always wanna share the spotlight",
+          "My type is them boys that got a little street life"
+        ],
+        "fake": "Rooftop antennas in the midnight rain, everybody shouting out my name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XKst2XCjRms",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "soul-funk",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/keke-palmer-jealous.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lauren_(EP)",
+        "https://en.wikipedia.org/wiki/Keke_Palmer",
+        "https://en.wikipedia.org/wiki/Island_Records",
+        "https://en.wikipedia.org/wiki/Heatseekers_Albums",
+        "https://music.apple.com/us/album/jealous/1445034184?i=1445034442"
+      ]
+    },
+    {
+      "id": "hiphop-kendrick-humble",
+      "title": "HUMBLE.",
+      "artist": "Kendrick Lamar",
+      "year": 2017,
+      "country": "US",
+      "genre": "Hip Hop",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Energy",
+        "Cool"
+      ],
+      "hints": [
+        "Der Track erschien am 30. März 2017 zeitgleich mit seinem Video und ist die erste Single des vierten Studioalbums 'DAMN.' vom 14. April 2017.",
+        "Gebaut wurde er von Mike WiLL Made-It, dessen tiefe Klavierfigur und harte 808-Drums den Sound bestimmen.",
+        "Das Video inszenierte Dave Meyers mit dem Regisseurduo 'The Little Homies' und wurde im Park Plaza Hotel in Los Angeles gedreht – der erste Shot zeigt den Rapper im Papstgewand.",
+        "Er war sein erster Number-One-Hit als Lead-Artist in den US-Charts und bei den 60. Grammy Awards vierfach nominiert.",
+        "Ein knapp drei Minuten langer, hymnischer Rap-Track über Bescheidenheit und Macht, gedehnt von einem breiten Stampf-Beat und einem schrillen Chor."
+      ],
+      "lyrics": {
+        "real": [
+          "I get way too petty once you let me do the extras",
+          "My left stroke just went viral",
+          "Show me somethin' natural like afro on Richard Pryor"
+        ],
+        "fake": "I move in silence while the city roars without my name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tvTRZJ-4EyI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/hiphop-kendrick-humble.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Hip Hop Essentials",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Humble_(song)",
+        "https://en.wikipedia.org/wiki/Damn_(album)",
+        "https://en.wikipedia.org/wiki/Kendrick_Lamar",
+        "https://www.songfacts.com/facts/kendrick-lamar/humble",
+        "https://en.wikipedia.org/wiki/60th_Annual_Grammy_Awards"
+      ]
+    },
+    {
+      "id": "movie-top-gun-danger-zone",
+      "title": "Danger Zone",
+      "artist": "Kenny Loggins",
+      "year": 1986,
+      "country": "US",
+      "genre": "Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Powerful",
+        "Action"
+      ],
+      "hints": [
+        "Für die Eröffnungsszenen des Films wurden rund 300 Titel getestet und wieder verworfen, bis der Produzent des Soundtracks selbst ein neues Stück komponierte.",
+        "Der Sänger war erst die letzte Wahl: Toto, Jefferson Starship, REO Speedwagon und Corey Hart hatten das Stück zuvor abgelehnt.",
+        "Der Sänger durfte nicht als Autor geführt werden, weil das Duo sonst die Voraussetzungen für den Oscar in der Kategorie 'Bester Originalsong' nicht erfüllt hätte.",
+        "Das Soundtrack des Films war 1986 das erfolgreichste Album dieses Typs überhaupt, und derselbe Sänger lieferte auch den Song für die Volleyball-Szene.",
+        "Im Sommer 1986 verdrängte Peter Gabriels 'Sledgehammer' den Song in den USA von Platz eins - die zweithöchste Chartposition des Sängers nach zwei Jahren zuvor."
+      ],
+      "lyrics": {
+        "real": [
+          "Revvin' up your engine",
+          "Listen to her howlin' roar",
+          "Metal under tension"
+        ],
+        "fake": "Screaming through the cloud deck with the throttle wide open"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=siwpn14IE7E",
+        "spotify": "https://open.spotify.com/track/34x6hEJgGAOQvmlMql5Ige",
+        "amazonMusic": "",
+        "appleMusic": "https://music.apple.com/us/album/danger-zone/387193895?i=387193955"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/kenny-loggins-danger-zone.jpg",
+      "packs": [
+        "Movie Hits",
+        "80s Flashback",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Danger_Zone_(song)",
+        "https://www.songfacts.com/facts/kenny-loggins/danger-zone",
+        "https://en.wikipedia.org/wiki/Top_Gun_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Kenny_Loggins",
+        "https://lrclib.net/api/get?artist_name=Kenny%20Loggins&track_name=Danger%20Zone"
+      ]
+    }
+  ]
+}

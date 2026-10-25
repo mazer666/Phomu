@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "Phomu",
+    "subtitle": "Die modulare Musik-Party-Plattform",
+    "description": "Ein Open-Source Hybrid-Partyspiel, das physische Karten und digitale Musik-Erlebnisse verbindet."
+  },
+  "landing": {
+    "quickStart": "Schnellstart",
+    "customize": "Anpassen",
+    "quickStartDesc": "3 Klicks und du spielst!",
+    "customizeDesc": "Spieler, Teams, Modi und mehr konfigurieren"
+  },
+  "settings": {
+    "language": "Sprache",
+    "theme": "Design",
+    "musicProvider": "Musik-Anbieter"
+  },
+  "themes": {
+    "jackbox": "Jackbox Party",
+    "spotify": "Spotify",
+    "youtube": "YouTube",
+    "musicwall": "Music Wall"
+  },
+  "modes": {
+    "timeline": "Zeitstrahl",
+    "hintMaster": "Hinweis-Meister",
+    "lyrics": "Lyrics Labyrinth",
+    "vibeCheck": "Vibe-Check",
+    "survivor": "Survivor"
+  },
+  "common": {
+    "play": "Spielen",
+    "back": "Zurueck",
+    "next": "Weiter",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "loading": "Wird geladen..."
+  }
+}

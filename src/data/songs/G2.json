@@ -1,0 +1,690 @@
+{
+  "songs": [
+    {
+      "id": "jazz-benson-broadway",
+      "title": "On Broadway",
+      "artist": "George Benson",
+      "year": 1978,
+      "country": "US",
+      "genre": "Jazz / Pop / Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Confident"
+      ],
+      "hints": [
+        "Vier Autoren schufen das Stück 1963 für den Rhythmus- und Blues der Drifters aus New York: zwei schrieben den Text, zwei die Musik.",
+        "Ein Gitarren-Virtuose nahm sich die Rockversion vor und machte daraus einen Welthit – seine Live-Aufnahme aus dem Roxy Theatre in Los Angeles wurde später mit einem Grammy ausgezeichnet.",
+        "Die Single erschien im März 1978 bei Warner Bros. Records, produziert von Tommy LiPuma, mit 'We As Love' auf der B-Seite – sie war die Nachfolgerin von 'The Greatest Love of All'.",
+        "Funk-Gesang über schimmernder E-Gitarre, dazwischen eine warme Bläser-Ecke – der Refrain dreht sich um das Glück und die Enge des New Yorker Theaterviertels.",
+        "Die Textfigur ist auf dem Weg zu den großen Bühnen, doch am Ende zählt nur noch die Gitarre: 'I won't quit till I'm a star'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/On_Broadway_(song)",
+        "https://en.wikipedia.org/wiki/Weekend_in_L.A.",
+        "https://en.wikipedia.org/wiki/George_Benson",
+        "https://en.wikipedia.org/wiki/The_Drifters",
+        "https://en.wikipedia.org/wiki/Barry_Mann"
+      ],
+      "lyrics": {
+        "real": [
+          "They say the neon lights are bright on Broadway",
+          "They say there's always magic in the air",
+          "But when you're walkin' down that street"
+        ],
+        "fake": "I left my heart in a taxi on a rainy New York street"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EAIp7yFk0tk",
+        "spotify": "https://open.spotify.com/track/2oFxITGDiTZ1JRwP8yinRt"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-benson-broadway.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "class-handel-hallelujah",
+      "title": "Hallelujah Chorus",
+      "artist": "George Frideric Handel",
+      "year": 1741,
+      "country": "DE",
+      "genre": "Baroque / Oratorio",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Epic",
+        "Religious"
+      ],
+      "hints": [
+        "Der Komponist vollendete das Oratorium in nur 24 Tagen, vom 22. bis 14. September 1741 – den Text hatte Charles Jennens aus der King-James-Bibel und dem Common Book of Prayer zusammengestellt.",
+        "Uraufführung war am 13. April 1741 in Dublin, London folgte 1743 – bis heute steht das Publikum für diesen Refrain auf.",
+        "Das Stück hat drei Teile und endet mit dem Ruf, der den allmächtigen Gott preist: 'For the Lord God omnipotent reigneth' – ein kurzer Unisono-Satz, aus dem eine Fuge wächst.",
+        "Zwei Posaunen, Pauken, Oboen und ein prächtiger Orchesterklang – bis heute erklingt diese Stelle bei allen großen Orchestern als Höhepunkt des Barock.",
+        "Der Höhepunkt des ganzen Werks: Der Satz gilt als weltweit bekanntester geistlicher Chorsatz, und die Trompeten, die zwei Teile lang geschwiegen hatten, setzen genau hier mit dem Refrain ein."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Messiah_(Handel)",
+        "https://en.wikipedia.org/wiki/George_Frideric_Handel",
+        "https://en.wikipedia.org/wiki/Hallelujah_Chorus",
+        "https://en.wikipedia.org/wiki/Charles_Jennens",
+        "https://en.wikipedia.org/wiki/King_James_Version"
+      ],
+      "lyrics": {
+        "real": [
+          "Hallelujah! Hallelujah! Hallelujah!",
+          "For the Lord God Omnipotent reigneth",
+          "And He shall reign for ever and ever"
+        ],
+        "fake": "Dancing in the moonlight, sweetheart, the night is young and gay"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gFRI-Ar5hTs",
+        "spotify": "https://open.spotify.com/track/4TNCQyG2gmepsGoeLdRKn4",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SV31GK"
+      },
+      "coverUrl": "/covers/class-handel-hallelujah.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Schlager & Evergreens"
+      ]
+    },
+    {
+      "id": "george-michael-careless-whisper-1984",
+      "title": "Careless Whisper",
+      "artist": "George Michael",
+      "year": 1984,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dance Floor",
+        "Emotional",
+        "Heartbreak",
+        "Legends & Classics",
+        "Nostalgic",
+        "Popular",
+        "Romantic"
+      ],
+      "hints": [
+        "Der Sänger schrieb das Stück mit 17 Jahren in einem Bus, auf dem Weg zu seinem DJ-Job bei einem Restaurant nahe Bushey in Hertfordshire.",
+        "Sein Bandkollege spielte die Akkordfolge auf der Fender Telecaster, die er zu seinem 18. Geburtstag geschenkt bekam – und sang zunächst selbst die Saxofon-Partie.",
+        "Für die Aufnahme wurden elf Saxofonisten vorgehört, bis Steve Gregory die Hauptphrase in einem Atemzug schaffte – aufgenommen wurde 1984 in London, das Musikvideo entstand im Februar 1984 in Miami.",
+        "Die Single kam am 23. Juli 1984 heraus, stand drei Wochen auf Platz 1 der britischen Liste und war das fünftbestverkaufte Lied des Jahres; 1985 führte sie die US-Charts an.",
+        "Im Refrain singt der Sänger von schuldbewussten Füßen, die keinen Rhythmus mehr finden – das Saxofon-Intro wurde zu einer der meistzitierten Melodien der Popgeschichte."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Careless_Whisper",
+        "https://en.wikipedia.org/wiki/Wham!",
+        "https://en.wikipedia.org/wiki/Make_It_Big",
+        "https://en.wikipedia.org/wiki/Steve_Gregory",
+        "https://en.wikipedia.org/wiki/George_Michael"
+      ],
+      "lyrics": {
+        "real": [
+          "I'm never gonna dance again, guilty feet have got no rhythm",
+          "Though it's easy to pretend, I know you're not a fool",
+          "I should've known better than to cheat a friend"
+        ],
+        "fake": "So I'll stay here in the silence of the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=izGwDsrQ1eQ",
+        "spotify": "https://open.spotify.com/track/5WDLRQ3VCdVrKw0njWe5E5",
+        "amazonMusic": "https://music.amazon.com/tracks/B01EY4Q9W0"
+      },
+      "coverUrl": "/covers/george-michael-careless-whisper-1984.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s-pop",
+        "youtube-import",
+        "80s Flashback"
+      ]
+    },
+    {
+      "id": "country-strait-amarillo",
+      "title": "Amarillo by Morning",
+      "artist": "George Strait",
+      "year": 1982,
+      "country": "US",
+      "genre": "Country / Western",
+      "difficulty": "medium",
+      "mood": [
+        "Nostalgic",
+        "Professional",
+        "Classic"
+      ],
+      "hints": [
+        "Den Text schrieben Terry Stafford und Paul Fraser 1973 – Stafford hatte die Idee nach einem Rodeo-Abend in San Antonio und übermittelte den Titel per Telefon.",
+        "Der texanische Sänger nahm den Song am 13. April 1982 im Music City Music Hall in Nashville auf, produziert von Blake Mevis – dasAlbum erschien im Juni 1982.",
+        "Als Single kam er im Januar 1983 auf MCA unter der Katalog-Nummer 52162, erreichte Platz 4 der Billboard-Country-Charts und wurde viermal platinzertifiziert – heute gilt er als eines seiner Signaturlieder.",
+        "1999 weckte der Song den Astronauten Rick Husband während des Shuttle-Flugs STS-96 – und wurde für die ganze Besatzung von STS-114 gespielt, deren Commander aus derselben texanischen Stadt stammte.",
+        "Fiddle, Banjo und ein unaufgeregter, ruhiger Sänger: Der Text erzählt von einem Rodeo-Reiter, der nachts zur Jahresmesse fährt und sein Leben trotz allem für frei hält."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Amarillo_by_Morning_(song)",
+        "https://en.wikipedia.org/wiki/Strait_from_the_Heart",
+        "https://en.wikipedia.org/wiki/Terry_Stafford",
+        "https://en.wikipedia.org/wiki/Rick_Husband",
+        "https://www.songfacts.com/facts/george-strait/amarillo-by-morning"
+      ],
+      "lyrics": {
+        "real": [
+          "Amarillo by morning, up from San Antone",
+          "Everything that I've got is just what I've got on",
+          "I ain't rich, but Lord I'm free"
+        ],
+        "fake": "The neon sign of the old tavern flickers in the rain outside"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=FbVISS-lEAc",
+        "spotify": "https://open.spotify.com/track/4TnUKixNWMfajncgdSwFoi"
+      },
+      "coverUrl": "/covers/country-strait-amarillo.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "class-bizet-carmen",
+      "title": "Carmen (Habanera)",
+      "artist": "Georges Bizet",
+      "year": 1875,
+      "country": "FR",
+      "genre": "Romantic / Opera",
+      "difficulty": "easy",
+      "mood": [
+        "Seductive",
+        "Confident",
+        "Classic"
+      ],
+      "hints": [
+        "Die Arie entstand aus einem spanischen Tanz, den der Komponist für ein altes Volkslied hielt – tatsächlich stammt die Melodie von Sebastián Iradier aus dem Jahr 1863.",
+        "Uraufführung war am 3. März 1875 an der Opéra-Comique in Paris, gesungen von Célestine Galli-Marié, der ersten Stimme der Titelheldin.",
+        "Den Text schrieb der Komponist selbst – während der Proben entfernte er seine erste Fassung der Auftrittsarie und schrieb die Arie mehrere Male neu, bis sie auch der Uraufführungssängerin gefiel.",
+        "Der Rhythmus wechselt zwischen 2/4 und 6/8, die Partitur sieht Flöten, Oboen, Klarinetten, vier Hörner, Pauken, Triangel und vollen Streichersatz vor – Nietzsche lobte die Arie als 'ironisch-provokant'.",
+        "Die Titelheldin betritt mit dieser Arie die Bühne und fordert die Männer heraus: 'L'amour est un oiseau rebelle' – Liebe lässt sich nicht zähmen."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Habanera_(aria)",
+        "https://en.wikipedia.org/wiki/Carmen",
+        "https://en.wikipedia.org/wiki/Georges_Bizet",
+        "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Iradier",
+        "https://www.songfacts.com/facts/georges-bizet/habanera"
+      ],
+      "lyrics": {
+        "real": [
+          "L'amour est un oiseau rebelle que nul ne peut apprivoiser",
+          "Et c'est bien en vain qu'on l'appelle",
+          "S'il lui convient de refuser"
+        ],
+        "fake": "Je marche sous la pluie dans les rues de Paris en pensant à toi"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EuEBZImVupQ",
+        "spotify": "https://open.spotify.com/track/2r1FiNXh5mDNEP8K07YRVp",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SID0W8"
+      },
+      "coverUrl": "/covers/class-bizet-carmen.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ]
+    },
+    {
+      "id": "yt-65uN9uxaf9k",
+      "title": "Gerardo Ortiz Fuiste Mía",
+      "artist": "Gerardo Ortiz",
+      "year": 2015,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger kam 1989 in Kalifornien zur Welt und wuchs mit seinen Eltern im Norden Mexikos auf – heute zählt er zu den erfolgreichsten Interpreten der corridos progresivos.",
+        "Sein erstes Album erschien 2010, es folgten 'Entre Dios y el Diablo' (2011), 'El primer ministro' (2012) und 'Archivos de mi vida' (2013) – 2013 gewann er vier Preise bei den Billboard Music Awards.",
+        "Der Song ist eine Ballade und Track 12 des sechsten Studioalbums, das am 18. Mai 2015 bei DEL Records und Sony Music Latin erschien.",
+        "Im zugehörigen Clip lässt der Sänger seine Partnerin im Streit verheizen – die Aufnahme wurde 2016 weltweit kritisiert; der Sänger wurde daraufhin in Mexiko festgenommen und wegen 'Apologie des Tötungsdelikts' mit einer Geldstrafe belegt.",
+        "Typische regional mexikanische Ballade mit Gitarre und Tuba-Begleitung: Im Refrain beschwört der Sänger rückblickend eine Liebe, die einmal war und ihm alles bedeutet hat."
+      ],
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Gerardo_Ortiz",
+        "https://es.wikipedia.org/wiki/Hoy_m%C3%A1s_fuerte",
+        "https://es.wikipedia.org/wiki/M%C3%BAsica_regional_mexicana",
+        "https://en.wikipedia.org/wiki/Regional_Mexican_music",
+        "https://en.wikipedia.org/wiki/Billboard_Latin_Music_Awards"
+      ],
+      "lyrics": {
+        "real": [
+          "Llegas y me tocas el cuerpo y te llevas mi alma",
+          "Tienes un sabor a mentira que seduce mi vida",
+          "Llegas y me elevas al cielo y me llenas de besos"
+        ],
+        "fake": "Te esperaré en la estación bajo la lluvia de la ciudad"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=65uN9uxaf9k",
+        "spotify": "https://open.spotify.com/track/0QRHEmvbFr73h5Fyk33fji"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/gerardo-ortiz-gerardo-ortiz-fuiste-mía-vídeo-oficial.jpg"
+    },
+    {
+      "id": "yt-Jy7WGe3Kucg",
+      "title": "Perdóname",
+      "artist": "Gerardo Ortiz",
+      "year": 2013,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein Beispiel für die regional mexikanische Musiktradition, die weit über die Grenzen Mexikos hinaus Verbreitung gefunden hat.",
+        "Die Single erschien 2013 auf dem Album 'Archivos de Mi Vida' und wurde vom Label DEL Records sowie Sony Music Latin veröffentlicht.",
+        "Im Text bittet der Sänger die Geliebte um Verzeihung und verspricht ihr, sein Leben und seine ganze Hingabe für sie einzusetzen.",
+        "Auf demselben Album liegt auch eine Variante mit Mariachi-Besetzung, die denselben Song in einer anderen Stilrichtung präsentiert.",
+        "Der Titel ist das einzige Wort, das im Refrain ständig wiederholt wird - eine spanische Bitte um Vergebung."
+      ],
+      "lyrics": {
+        "real": [
+          "Haberle causado tanto daño",
+          "Por mi estúpida locura",
+          "Y te prometo, tú serás la reina"
+        ],
+        "fake": "Caminamos por el mar mientras el sol se esconde, mi amor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Jy7WGe3Kucg",
+        "spotify": "https://open.spotify.com/track/4bjemSdlRBzNqP86omaKbq",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "country-folk",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/gerardo-ortiz-perdóname.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Gerardo_Ort%C3%ADz",
+        "https://es.wikipedia.org/wiki/Archivos_de_mi_vida",
+        "https://itunes.apple.com/search?term=Gerardo+Ortiz+Perdoname&limit=1&entity=song",
+        "https://lrclib.net/api/get?artist_name=Gerardo%20Ortiz&track_name=Perd%C3%B3name",
+        "https://open.spotify.com/track/4bjemSdlRBzNqP86omaKbq"
+      ]
+    },
+    {
+      "id": "yt-5NV6Rdv1a3I",
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams & Nile Rodgers",
+      "year": 2013,
+      "country": "FR",
+      "genre": "Nu-Disco / Funk",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Neon Night",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Ein Comeback, das den Klängen der 70er-Jahre huldigt, brachte eine Nachtstunden-Hymne hervor, die in mehr als 30 Ländern die Charts anführte.",
+        "Die Single erschien am 19. April 2013 als Leadsingle des vierten und letzten Studioalbums der Band; das Album selbst folgte am 17. Mai 2013.",
+        "Die Gitarre spielt ein US-Session-Musiker, der als Mitgründer der Funkband Chic berühmt wurde; am Mikrofon sitzt ein US-Produzent und Sänger.",
+        "Beim 56. Grammy Award 2014 gewann der Song den Preis für den Song des Jahres sowie den für den besten Pop-Duo- und Gruppenauftritt.",
+        "Im Refrain geht es darum, die ganze Nacht wach zu bleiben, weil die Begegnung so günstig war."
+      ],
+      "lyrics": {
+        "real": [
+          "She's up all night 'til the sun",
+          "I'm up all night to get some",
+          "I'm up all night to get lucky"
+        ],
+        "fake": "Hold me closer, we're never coming down tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5NV6Rdv1a3I",
+        "youtubeAlternatives": [
+          "Rgrt_8mXrK8"
+        ],
+        "spotify": "https://open.spotify.com/track/7983M1pifeJy5eaeX1IrAm",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/daft-punk-ft--pharrell-williams--nile-rodgers-get-lucky-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Get_Lucky_(Daft_Punk_song)",
+        "https://en.wikipedia.org/wiki/Random_Access_Memories",
+        "https://en.wikipedia.org/wiki/Nile_Rodgers",
+        "https://en.wikipedia.org/wiki/Daft_Punk",
+        "https://lrclib.net/api/get?artist_name=Daft%20Punk&track_name=Get%20Lucky"
+      ]
+    },
+    {
+      "id": "class-puccini-dorma",
+      "title": "Nessun Dorma (Turandot)",
+      "artist": "Giacomo Puccini",
+      "year": 1926,
+      "country": "IT",
+      "genre": "Romantic / Opera",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Die berühmteste Tenor-Arie der Operngeschichte erklang erstmals am 25. April 1926 an der Scala in Mailand.",
+        "Die Oper war das letzte, unvollendete Werk des Komponisten: Er starb 1924, die Uraufführung dirigierte Arturo Toscanini.",
+        "In der Szene singt der unbekannte Prinz, der der Prinzessin drei Rätsel gelöst hat und nun auf die Morgendämmerung wartet.",
+        "Eine Aufnahme von 1972 machte die Arie zum weltweiten Sportsong: Sie war 1990 Titelmelodie der BBC-Übertragung der Fußball-WM in Italien und erreichte Platz 2 der britischen Single-Charts.",
+        "Im Schlussakt der Arie dreht sich alles darum, dass diese Nacht niemand schlafen soll, weil bis zum Morgengrauen ein Rätsel gelöst werden muss."
+      ],
+      "lyrics": {
+        "real": [
+          "Tu pure, o Principessa,",
+          "Dilegua, o notte!",
+          "Tramontate, stelle!"
+        ],
+        "fake": "Buongiorno, amore mio, il sole già splende sul mare"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cWc7vYjgnTs",
+        "spotify": "https://open.spotify.com/track/3uX11UryFh2ujpeZBWYgkv",
+        "amazonMusic": "https://music.amazon.com/tracks/B001SN9LMQ"
+      },
+      "coverUrl": "/covers/class-puccini-dorma.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nessun_dorma",
+        "https://en.wikipedia.org/wiki/Turandot",
+        "https://en.wikipedia.org/wiki/Giacomo_Puccini",
+        "https://en.wikipedia.org/wiki/Luciano_Pavarotti",
+        "https://en.wikipedia.org/wiki/The_Three_Tenors_in_Concert"
+      ]
+    },
+    {
+      "id": "soul-gilscott-rev",
+      "title": "The Revolution Will Not Be Televised",
+      "artist": "Gil Scott-Heron",
+      "year": 1970,
+      "country": "US",
+      "genre": "Soul / Jazz / Spoken Word",
+      "difficulty": "hard",
+      "mood": [
+        "Serious",
+        "Cool",
+        "Political"
+      ],
+      "hints": [
+        "Ein_programmatisches Gedicht, gesprochen über einen minimalistischen Soul-Beat, gilt als einer der wichtigsten Vorläufer des Rap.",
+        "Die Aufnahme erschien 1970 auf dem Debüt-Live-Album des Künstlers und wurde 1971 mit jazz-funkigem Instrumentalsatz auf seinem ersten Studioalbum wiederholt.",
+        "Ein Kontrabass-Solo von Ron Carter, das kompakte Schlagzeug von Bernard Purdie und eine jazzige Flötenstimme von Hubert Laws tragen das Gedicht.",
+        "Der Titel war eine Formel, die schon Black-Power-Gruppen vor ihm benutzten; der Dichter selbst sagte 1989, die erste Veränderung finde im Kopf statt.",
+        "Der Refrain ist eine rhetorische Abkehrformel: Er listet auf, was der gesellschaftliche Umbruch nicht sein wird - nichts davon kann das Fernsehen zeigen."
+      ],
+      "lyrics": {
+        "real": [
+          "You will not be able to stay home, brother",
+          "You will not be able to plug in, turn on and cop out",
+          "The revolution will not be televised"
+        ],
+        "fake": "The microphone goes quiet but the people keep on singing loud"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vwSRqaZGsPw",
+        "spotify": "https://open.spotify.com/track/7ni78Vjslqo2VxiDOahYlV",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-gilscott-rev.jpg",
+      "packs": [
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul",
+        "Hip Hop Essentials"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Revolution_Will_Not_Be_Televised",
+        "https://en.wikipedia.org/wiki/Pieces_of_a_Man",
+        "https://en.wikipedia.org/wiki/Small_Talk_at_125th_and_Lenox",
+        "https://en.wikipedia.org/wiki/Gil_Scott-Heron",
+        "https://open.spotify.com/track/7ni78Vjslqo2VxiDOahYlV"
+      ]
+    },
+    {
+      "id": "yt-Z3PTekF31bc",
+      "title": "Drão",
+      "artist": "Gilberto Gil",
+      "year": 1982,
+      "country": "BR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein brasilianischer MPB-Klassiker, 1981 komponiert als Hommage an seine damalige Ehefrau, deren Kosename Maria Bethânia prägte.",
+        "Der Song erschien 1982 auf dem zweiten Studioalbum des Künstlers, wurde von Liminha produziert und ist 3:17 Minuten lang.",
+        "Das Lied erzählt vom Korn und vom Samen: Die Liebe muss sterben, um wie ein Keim neu aufzuwachsen.",
+        "2024 wurde das Stück in den Soundtrack der brasilianischen Fernsehserie 'Renascer' aufgenommen, in der es das Thema der Figur Aurora ist.",
+        "2025 sang der Interpret das Lied bei einem Konzert in São Paulo im Duett mit seiner Tochter, die damals gegen den Krebs kämpfte."
+      ],
+      "lyrics": {
+        "real": [
+          "Drão, o amor da gente é como um grão",
+          "Uma semente de ilusão",
+          "Não despedace o coração"
+        ],
+        "fake": "Caminhamos pela praia enquanto o sol se despede, meu amor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Z3PTekF31bc",
+        "spotify": "https://open.spotify.com/track/2MddJi3XeknnPQ0cyfLLIA",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/gilberto-gil-drão.jpg",
+      "hintEvidence": [
+        "https://pt.wikipedia.org/wiki/Dr%C3%A3o",
+        "https://pt.wikipedia.org/wiki/Um_Banda_Um",
+        "https://en.wikipedia.org/wiki/Gilberto_Gil",
+        "https://lrclib.net/api/get?artist_name=Gilberto%20Gil&track_name=Dr%C3%A3o",
+        "https://open.spotify.com/track/2MddJi3XeknnPQ0cyfLLIA"
+      ]
+    },
+    {
+      "id": "yt-7kbjKCj-rMQ",
+      "title": "Conciencia",
+      "artist": "Gilberto Santa Rosa",
+      "year": 1991,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine Salsa-Nummer, in der Gewissen und Herz im Streit liegen: Die Stimme des Gewissens warnt, das Herz drängt und stürmt.",
+        "Der Song erschien 1991 als erste Single des Albums 'Perspectiva', das im Herbst desselben Jahres bei Sony Discos erschien.",
+        "Der Text stammt von Omar Alfanno; das Album weist dem Stück eine Länge von 5:30 Minuten zu.",
+        "Das Album wurde 1993 für den Preis für Salsa- beziehungsweise Tropical-Album des Jahres bei den Lo Nuestro Awards nominiert.",
+        "Der Sänger, der sich 'El Caballero de la Salsa' nennt, sang das Stück 1995 live in der New Yorker Carnegie Hall; die Aufnahme erschien als Album."
+      ],
+      "lyrics": {
+        "real": [
+          "Ella tiene la magia de un instante de amor",
+          "La conciencia me dice que no la debo querer",
+          "Y el corazón me grita que sí debo"
+        ],
+        "fake": "Caminamos por la playa mientras el sol se esconde, mi vida"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7kbjKCj-rMQ",
+        "spotify": "https://open.spotify.com/track/5bccusEjEtnC5cDfWXQ8rf",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/gilberto-santa-rosa-conciencia.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Perspectiva_(album)",
+        "https://en.wikipedia.org/wiki/Gilberto_Santa_Rosa",
+        "https://lrclib.net/api/get?artist_name=Gilberto%20Santa%20Rosa&track_name=Conciencia",
+        "https://open.spotify.com/track/5bccusEjEtnC5cDfWXQ8rf",
+        "https://itunes.apple.com/search?term=Gilberto+Santa+Rosa+Conciencia&limit=1&entity=song"
+      ]
+    }
+  ]
+}

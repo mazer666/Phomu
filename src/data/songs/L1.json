@@ -1,0 +1,759 @@
+{
+  "songs": [
+    {
+      "id": "dance-la-bouche-be-my-lover",
+      "title": "Be My Lover",
+      "artist": "La Bouche",
+      "year": 1995,
+      "country": "DE",
+      "genre": "Eurodance",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Dance",
+        "Energy"
+      ],
+      "hints": [
+        "Eurodance aus Deutschland: der Produzent dahinter brachte auch Boney M. und Milli Vanilli ins Leben.",
+        "Eine Sängerin und ein männlicher Rapper standen der Band vor; sie starb 2001 bei einem Flugzeugabsturz in der Schweiz.",
+        "Der Riesenerfolg kam 1995 als Single und wurde in Deutschland wie in Schweden zur Nummer 1.",
+        "Der Refrain startet mit reiner Silbenmelodie, bevor der überraschend einfache englische Text einsetzt.",
+        "Refrain-Snippet: 'wanna be my ...' – das letzte englische Wort bleibt ausgespart."
+      ],
+      "lyrics": {
+        "real": [
+          "Be my lover",
+          "Wanna be my lover",
+          "Take a chance, my love is like no other"
+        ],
+        "fake": "Baby, I'm your fantasy and I never want this night to end"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ViP87WipSm0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/dance-la-bouche-be-my-lover.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "German Classics"
+      ],
+      "hintEvidence": [
+        "https://www.songfacts.com/facts/la-bouche/be-my-lover",
+        "https://en.wikipedia.org/wiki/Be_My_Lover_(La_Bouche_song)",
+        "https://en.wikipedia.org/wiki/La_Bouche",
+        "https://en.wikipedia.org/wiki/Melanie_Thornton",
+        "https://lrclib.net/api/get?artist_name=La%20Bouche&track_name=Be%20My%20Lover"
+      ]
+    },
+    {
+      "id": "yt-tXzg2ZA-9Us",
+      "title": "Perdóname",
+      "artist": "La Factoría ft. Eddy Lover",
+      "year": 2006,
+      "country": "PA",
+      "genre": "Reggaeton",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein lateinamerikanisches Urban-Pop-Duett: Gruppe und Gastsänger entschuldigen sich im Refrain wortgleich.",
+        "Der Text bekennt einen Verrat: 'fui infiel la noche de ayer' – die Sängerin gesteht, was passiert ist.",
+        "Der Song erschien 2006 und steht auf beiden Seiten: beim Album der Band und beim Album des Gastsängers.",
+        "Die Aufnahme mischt Spanisch mit englischen Zeilen – 'Come back to me, please, I'm sorry'.",
+        "Im Refrain fällt nur ein Wort: die Bitte um Verzeihung, mehrfach wiederholt."
+      ],
+      "lyrics": {
+        "real": [
+          "Mami, yo sé que no estás bien",
+          "Perdóname, perdóname, bebé",
+          "Siempre me arrepentiré, y de rodillas te pido, mujer"
+        ],
+        "fake": "Bailamos hasta el amanecer, mi amor, sin volver"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=tXzg2ZA-9Us",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/la-factoria-perdoname-ft--eddy-lover.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Factor%C3%ADa",
+        "https://es.wikipedia.org/wiki/Perd%C3%B3name_(canci%C3%B3n_de_La_Factor%C3%ADa)",
+        "https://music.apple.com/us/album/perd%C3%B3name-feat-eddy-lover/1565625569?i=1565625570",
+        "https://music.apple.com/us/album/perd%C3%B3name-feat-la-factor%C3%ADa/1565637482?i=1565637483",
+        "https://api.lyrics.ovh/v1/La%20Factor%C3%ADa/Perd%C3%B3name"
+      ]
+    },
+    {
+      "id": "yt-XngTiXBPmEE",
+      "title": "La Ocasión",
+      "artist": "De La Ghetto, Arcangel, Ozuna, Anuel AA, DJ Luian, Mambo Kingz",
+      "year": 2016,
+      "country": "PR",
+      "genre": "Latin Trap",
+      "difficulty": "medium",
+      "mood": [
+        "Trap",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Sechs Acts auf einem Track: zwei Produzenten, ein Rap-Solo-Künstler und drei Gäste aus Puerto Rico.",
+        "Der Beat stammt von einem Produzenten-Duo, das für das Label Hear This Music arbeitet.",
+        "Der Song erschien 2016 – zwei der Gäste waren zu dem Zeitpunkt noch auf dem Weg nach oben.",
+        "Der Text ist erotisch und atmet: 'Quiero que se repita la ...' – die Nacht soll nicht enden.",
+        "Zwei spanische Wörter im Titel – und im Refrain fallen sie immer wieder."
+      ],
+      "lyrics": {
+        "real": [
+          "Quiero que se repita la ocasión",
+          "Yo sé que estás consciente",
+          "Bebé, ¿qué tal si paramos el tiempo"
+        ],
+        "fake": "Mami, tu cuerpo es mi destino, no lo voy a negar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XngTiXBPmEE",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "Hip Hop Essentials"
+      ],
+      "coverUrl": "/covers/la-ocasión-de-la-ghetto--arcangel--ozuna--anuel-aa--dj-luian--mambo-kingz.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/La_Ocasión_(canción)",
+        "https://en.wikipedia.org/wiki/De_La_Ghetto",
+        "https://en.wikipedia.org/wiki/Arcángel",
+        "https://en.wikipedia.org/wiki/Anuel_AA",
+        "https://api.lyrics.ovh/v1/De%20La%20Ghetto/La%20Ocasión"
+      ]
+    },
+    {
+      "id": "yt-X05T3FmRzZ0",
+      "title": "Recuérdame",
+      "artist": "La Quinta Estación ft. Marc Anthony",
+      "year": 2009,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Romantic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine spanische Latin-Pop-Band aus Madrid trifft auf einen Salsa-Star, der in New York geboren wurde.",
+        "Der Titel ist eine Bitte – und der Refrain wiederholt dieses eine Wort unzählige Male.",
+        "Das Duett erschien 2009 auf dem vierten Studioalbum der Band.",
+        "Der Text ist ein Versprechen: Die Seele der Liebenden wird auf der Haut der anderen tätowiert.",
+        "Ein einziges spanisches Wort – und ein Salsa-Star als Gast im Duett."
+      ],
+      "lyrics": {
+        "real": [
+          "Recuérdame cuando duermes y adivino lo que sueñas,",
+          "Esperándote tranquila",
+          "Que mi alma fue tatuada en tu piel."
+        ],
+        "fake": "No puedo olvidar tu risa en la mañana, mi amor verdadero"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=X05T3FmRzZ0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/la-quinta-estación-recuerdame-ft--marc-anthony.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Quinta_Estación",
+        "https://es.wikipedia.org/wiki/La_Quinta_Estación",
+        "https://en.wikipedia.org/wiki/Marc_Anthony",
+        "https://music.apple.com/us/album/recuerdame-a-dueto-con-marc-anthony/305947976?i=305948051",
+        "https://lrclib.net/api/get?artist_name=La%20Quinta%20Estaci%C3%B3n&track_name=Recu%C3%A9rdame"
+      ]
+    },
+    {
+      "id": "yt-OOJ0OP0viVM",
+      "title": "Sueños Rotos",
+      "artist": "La Quinta Estación",
+      "year": 2006,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine Band aus Madrid mit lateinamerikanischem Pop: das dritte Studioalbum erschien 2006.",
+        "Der Titel meint zerbrochene Träume – ein Bild, das im Refrain wieder aufgegriffen wird.",
+        "Im Refrain steht das Versprechen von einem letzten Kaffee, den zwei Verliebte sich einmal schenkten.",
+        "Der Text ist durchzogen von Verlust: 'Dejé el orgullo atrás por un instante' – sie bleibt allein zurück.",
+        "Zwei Wörter im Titel, ein kaputtes Bild – mehr braucht es, um den Song zu erkennen."
+      ],
+      "lyrics": {
+        "real": [
+          "Con un montón de sueños rotos",
+          "Volver a verte otra vez",
+          "Porque habías sido tú mi compañera"
+        ],
+        "fake": "Caminamos juntos por la arena sin mirar atrás"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=OOJ0OP0viVM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/la-quinta-estación-sueños-rotos.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Quinta_Estación",
+        "https://en.wikipedia.org/wiki/El_Mundo_Se_Equivoca",
+        "https://music.apple.com/us/album/sue%C3%B1os-rotos/187480472?i=187480593",
+        "https://lrclib.net/api/get?artist_name=La%20Quinta%20Estaci%C3%B3n&track_name=Sue%C3%B1os%20Rotos",
+        "https://es.wikipedia.org/wiki/La_Quinta_Estación"
+      ]
+    },
+    {
+      "id": "yt-MbhfiEhlDNg",
+      "title": "Cumbia Barulera ft. Jorge Muñiz",
+      "artist": "La Sonora Dinamita",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Cumbia",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Eine lateinamerikanische Tanzband aus Kolumbien, aktiv seit den 1960ern und heute in Mexiko zu Hause.",
+        "Das Genre mischt afrikanische und indigene Rhythmen und kam aus Kolumbien.",
+        "Der Gast ist ein mexikanischer Sänger aus Mexico City, bekannt für sentimentale Balladen.",
+        "Der Titel stammt aus den frühen Jahren der Band und wurde 2016 mit einem mexikanischen Gast neu veröffentlicht.",
+        "Zwei Länder, ein Genre, ein Duett: Die Band kommt aus Kolumbien, der Gast aus Mexiko."
+      ],
+      "lyrics": {
+        "real": [
+          "Mi negra ven a bailar la cumbia barulera",
+          "Bailemos en altamar prendiendo 4 velas",
+          "Que baila mi negra la cumbia barulera"
+        ],
+        "fake": "Ven a bailar conmigo, mi vida, bajo la luz de la luna"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MbhfiEhlDNg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/la-sonora-dinamita-cumbia-barulera-ft--jorge-muñiz.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Sonora_Dinamita",
+        "https://en.wikipedia.org/wiki/Cumbia",
+        "https://en.wikipedia.org/wiki/Jorge_Mu%C3%B1iz",
+        "https://music.apple.com/us/album/cumbia-barulera-feat-jorge-mu%C3%B1iz/1476090788?i=1476091016",
+        "https://lrclib.net/api/get?artist_name=La%20Sonora%20Dinamita&track_name=Cumbia%20Barulera"
+      ]
+    },
+    {
+      "id": "yt-s37GxC9Xho8",
+      "title": "La Parabólica",
+      "artist": "La Sonora Dinamita ft. El Bebeto",
+      "year": 2016,
+      "country": "CO",
+      "genre": "Cumbia",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Band entstand in den 1960ern in Cartagena de Indias und ist seit 1977 in Mexiko zu Hause.",
+        "Der Gast ist ein mexikanischer Sänger aus Puebla, der Ranchera und mexikanische Cumbia aufnimmt.",
+        "Der Song erschien 2016 auf einem 22-Titel-Album voller Kollaborationen mit mexikanischen Gästen.",
+        "Im Text wird die Sängerin mit einer Antenne verglichen, in die alle Fernsehkanäle einlaufen.",
+        "Der Refrain ruft den Titel mehrfach als Silbenkette – wer die Strophen mitsingt, erkennt den Song sofort."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo a ti te comparo",
+          "Que se le meten las señales",
+          "Por toditos los canales"
+        ],
+        "fake": "Canta conmigo, mi amor, que la noche es interminable"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s37GxC9Xho8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/la-sonora-dinamita-la-parabolica-single.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/La_Sonora_Dinamita",
+        "https://es.wikipedia.org/wiki/El_Bebeto",
+        "https://en.wikipedia.org/wiki/Cumbia",
+        "https://music.apple.com/us/album/juntos-por-la-sonora/1440889399",
+        "https://api.lyrics.ovh/v1/La%20Sonora%20Dinamita/La%20Parab%C3%B3lica"
+      ]
+    },
+    {
+      "id": "yt-0nBFWzpWXuM",
+      "title": "La Vida Es Un Carnaval",
+      "artist": "Celia Cruz",
+      "year": 1998,
+      "country": "CU",
+      "genre": "Salsa",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Sängerin stammt aus Havanna, floh nach Miami und wurde in Mexiko als 'Königin der Salsa' bekannt.",
+        "Der Text rät, nicht zu weinen, sondern zu singen – 'no hay que llorar'.",
+        "Der Song erschien 1998 als Leitsong eines Albums der Sängerin; den Text schrieb Víctor Daniel.",
+        "2003 gewann das Lied den Preis für den 'Tropischen Song des Jahres' bei den Premios Lo Nuestro.",
+        "Der Refrain besteht praktisch aus einem einzigen Satz, den die Sängerin mit einem langen 'Ay' einleitet – und den man mitsummen kann."
+      ],
+      "lyrics": {
+        "real": [
+          "Todo aquel que piense que la vida es desigual",
+          "Que la vida es una hermosura, hay que vivirla",
+          "Y es más bello vivir cantando"
+        ],
+        "fake": "Baila la cumbia en la plaza hasta el amanecer"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0nBFWzpWXuM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/la-vida-es-un-carnaval-celia-cruz.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/La_vida_es_un_carnaval",
+        "https://en.wikipedia.org/wiki/Celia_Cruz",
+        "https://en.wikipedia.org/wiki/Salsa_(music)",
+        "https://music.apple.com/us/album/mi-vida-es-cantar/1771348375",
+        "https://lrclib.net/api/get?artist_name=Celia%20Cruz&track_name=La%20Vida%20Es%20Un%20Carnaval"
+      ]
+    },
+    {
+      "id": "lady-gaga-bad-romance-2009",
+      "title": "Bad Romance",
+      "artist": "Lady Gaga",
+      "year": 2009,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dance Floor",
+        "Energy",
+        "Legends & Classics",
+        "Neon Night",
+        "Party Anthem",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Song entstand in Zusammenarbeit mit dem marokkanisch-schwedischen Produzenten RedOne.",
+        "Das Musikvideo spielt in einem surrealen weißen Badehaus – 2010 war es kurz das meistgesehene Musikvideo auf YouTube.",
+        "Erschienen 2009 als erste Single aus der EP 'The Fame Monster' – in über 20 Ländern erreichte sie die Spitze.",
+        "Elektropop mit der Silbenfolge 'Ra ra-ah-ah-ah' zu Beginn und dramatischen Strophen.",
+        "Die Sängerin beschreibt eine obsessive, ungesunde Liebesbeziehung – sie will alles von dieser Person."
+      ],
+      "lyrics": {
+        "real": [
+          "I want your ugly, I want your disease",
+          "I want your everything as long as it's free",
+          "You and me could write a bad romance"
+        ],
+        "fake": "I'm lost in the rhythm of a heart that's made of stone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qrO4YZeyl0I",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/lady-gaga-bad-romance-2009.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "2000s Pop & RnB",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bad_Romance",
+        "https://en.wikipedia.org/wiki/The_Fame_Monster",
+        "https://en.wikipedia.org/wiki/RedOne",
+        "https://www.songfacts.com/facts/lady-gaga/bad-romance",
+        "https://api.lyrics.ovh/v1/Lady%20Gaga/Bad%20Romance"
+      ]
+    },
+    {
+      "id": "yt-en2D_5TzXCA",
+      "title": "Million Reasons",
+      "artist": "Lady Gaga",
+      "year": 2016,
+      "country": "US",
+      "genre": "Country Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Honest",
+        "Melancholic",
+        "Powerful",
+        "Sad"
+      ],
+      "hints": [
+        "Eine ungewöhnlich ruhige, country-beeinflusste Seite einer eigentlich für Electro-Pop bekannten Sängerin.",
+        "Erschienen 2016 auf dem Album 'Joanne' – benannt nach ihrer verstorbenen Tante.",
+        "Eine emotionale Abrechnung mit einer Beziehung, die nicht mehr funktioniert.",
+        "Der Song wurde beim Halftime-Show des Super Bowl LI live aufgeführt.",
+        "Der Refrain zählt immer neue Gründe auf und endet bei 'baby, I just need one good one to stay'."
+      ],
+      "lyrics": {
+        "real": [
+          "You're giving me a million reasons to let you go",
+          "You're giving me a million reasons to quit the show",
+          "I've got a hundred million reasons to walk away"
+        ],
+        "fake": "I count the empty chairs where all my dreams used to be"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=en2D_5TzXCA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "piano-ballads",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/piano-gaga-reasons.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Million_Reasons",
+        "https://en.wikipedia.org/wiki/Joanne_(album)",
+        "https://en.wikipedia.org/wiki/Super_Bowl_LI",
+        "https://www.songfacts.com/facts/lady-gaga/million-reasons",
+        "https://api.lyrics.ovh/v1/Lady%20Gaga/Million%20Reasons"
+      ]
+    },
+    {
+      "id": "yt-oG-4Uvhm4lI",
+      "title": "Poker Face",
+      "artist": "Lady Gaga",
+      "year": 2008,
+      "country": "US",
+      "genre": "Classic Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Catchy",
+        "Electronic",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Der Song kam 2008 als zweite Single des Debütalbums 'The Fame' heraus.",
+        "Thematisiert Bisexualität und das Verstecken von Gefühlen hinter einer Maske.",
+        "Der 'Mum-mum-mum-ma'-Hook ist ein Sample aus Boney M's Hit 'Ma Baker' von 1977.",
+        "Mit über 14 Millionen verkauften Exemplaren zählt er zu den meistverkauften Singles aller Zeiten.",
+        "Im Refrain steht ein Spruch, den sich zwei Zeilen lang wiederholt – danach folgt die Auflösung, die den Titel verrät."
+      ],
+      "lyrics": {
+        "real": [
+          "I wanna hold 'em like they do in Texas, please",
+          "No, he can't read my poker face",
+          "Po-po-po-poker face, fu-fu-fuck her face"
+        ],
+        "fake": "I keep my cards to myself and smile the way I always do"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=oG-4Uvhm4lI",
+        "spotify": "https://open.spotify.com/track/1QV6tiMFM6fSOKOGLMHYYg",
+        "amazonMusic": "https://music.amazon.com/tracks/B001Y5W7RY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "2000s Pop & RnB",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/2000s-lady-gaga-poker-face.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Poker_Face_(Lady_Gaga_song)",
+        "https://en.wikipedia.org/wiki/The_Fame",
+        "https://en.wikipedia.org/wiki/Ma_Baker",
+        "https://www.songfacts.com/facts/lady-gaga/poker-face",
+        "https://api.lyrics.ovh/v1/Lady%20Gaga/Poker%20Face"
+      ]
+    },
+    {
+      "id": "yt-R5RRHt-sSX8",
+      "title": "Stupid Love",
+      "artist": "Lady Gaga",
+      "year": 2020,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Energy",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Erster Vorgeschmack auf ihr 2020er Album 'Chromatica' – eine Rückkehr zu purem Dance-Pop.",
+        "Das Musikvideo wurde komplett mit einem iPhone 11 Pro gedreht und zeigt die Sängerin als pinkhaarige Außerirdische.",
+        "Nach den ruhigeren Jahren davor kehrte sie zu einem ausgelassenen Tanzflur-Hit zurück.",
+        "Ein House-infizierter Electropop-Song mit simplem, aber treffsicherem Refrain.",
+        "Im Refrain wiederholt sich viermal dieselbe Silbenfolge – 'Freak out, freak out, freak out, freak out'."
+      ],
+      "lyrics": {
+        "real": [
+          "You're the one that I've been waiting for",
+          "'Cause all I ever wanted was love",
+          "Now it's time to free me from the shame"
+        ],
+        "fake": "I want your crazy love, love"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=R5RRHt-sSX8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/lady-gaga-stupid-love.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stupid_Love_(Lady_Gaga_song)",
+        "https://en.wikipedia.org/wiki/Chromatica",
+        "https://en.wikipedia.org/wiki/Daniel_Askill",
+        "https://www.songfacts.com/facts/lady-gaga/stupid-love",
+        "https://lrclib.net/api/get?artist_name=Lady%20Gaga&track_name=Stupid%20Love"
+      ]
+    },
+    {
+      "id": "yt-DXnS8mqUDyQ",
+      "title": "Rain On Me",
+      "artist": "Lady Gaga & Ariana Grande",
+      "year": 2020,
+      "country": "US",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Dance",
+        "Dance Floor",
+        "Energy",
+        "Modern Anthems",
+        "Popular",
+        "Powerful"
+      ],
+      "hints": [
+        "Ein Duett zweier US-Popstars, das die Verarbeitung persönlicher Traumata zum Thema macht.",
+        "Eine der beiden Sängerinnen überlebte 2017 den Terroranschlag auf ihr Konzert in Manchester, bei dem 22 Menschen getötet wurden.",
+        "Die Single erschien am 22. Mai 2020 als zweite Auskopplung des Albums 'Chromatica' und gewann 2021 den Grammy für den besten Pop-Duo- und -Gruppenauftritt.",
+        "Ein House- und Disco-Track von 3:02 Minuten, dessen Titel zugleich eine Wettererscheinung benennt.",
+        "Die englische Zeile 'I'd rather be dry, but at least I'm alive' wird im Song immer wieder aufgegriffen."
+      ],
+      "lyrics": {
+        "real": [
+          "I didn't ask for a free ride",
+          "It's coming down on me",
+          "I'd rather be dry, but at least I'm alive"
+        ],
+        "fake": "Burn it down, burn it down, we were never meant to be alone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=DXnS8mqUDyQ",
+        "fallbackYoutubeId": "AoAm4om0wTs",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/albums/B0859XZPF7?trackAsin=B0859X9XF9"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/lady-gaga---ariana-grande-rain-on-me.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rain_on_Me_(Lady_Gaga_and_Ariana_Grande_song)",
+        "https://www.songfacts.com/facts/lady-gaga/rain-on-me",
+        "https://en.wikipedia.org/wiki/Manchester_Arena_bombing",
+        "https://en.wikipedia.org/wiki/Chromatica",
+        "https://lrclib.net/api/get?artist_name=Lady%20Gaga&track_name=Rain%20On%20Me"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "songs": [
+    {
+      "id": "90s-rem-losing-my-religion",
+      "title": "Losing My Religion",
+      "artist": "R.E.M.",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Moody",
+        "Classic",
+        "Alternative"
+      ],
+      "hints": [
+        "Das Hauptmotiv entstand, als der Gitarrist Peter Buck an einer frisch gekauften Mandoline übte – angeregt vom Titelthema des Films 'Merry Christmas Mr. Lawrence' von 1983.",
+        "Aufgenommen wurde die Single im Herbst 1990 in den Bearsville Studios im US-Bundesstaat New York; sie erschien im Februar 1991 als erste Auskopplung des Albums 'Out of Time'.",
+        "Die Titelfrase ist eine Redewendung aus den Südstaaten und bedeutet, die Fassung oder die Geduld zu verlieren – inhaltlich geht es um unerwiderte Liebe.",
+        "Das Video inszenierte der indische Regisseur Tarsem Singh mit religiösen Tableaus und gewann 1991 sechs MTV-Preise.",
+        "Der Refrain beginnt mit den Zeilen 'That's me in the corner' und 'That's me in the spotlight'."
+      ],
+      "lyrics": {
+        "real": [
+          "The lengths that I will go to",
+          "I thought that I heard you laughing",
+          "I'm choosing my confessions"
+        ],
+        "fake": "I'm counting all the words I never said to you"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xwtdhWltSIg",
+        "spotify": "https://open.spotify.com/track/31AOj9sFz2gM0O3hMARRBx",
+        "amazonMusic": "https://music.amazon.com/tracks/B01N3LWNKT"
+      },
+      "coverUrl": "/covers/90s-rem-losing-my-religion.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Losing_My_Religion",
+        "https://www.songfacts.com/facts/rem/losing-my-religion",
+        "https://en.wikipedia.org/wiki/Out_of_Time_(album)",
+        "https://en.wikipedia.org/wiki/Merry_Christmas_Mr._Lawrence_(instrumental)",
+        "https://api.lyrics.ovh/v1/R.E.M./Losing%20My%20Religion"
+      ]
+    },
+    {
+      "id": "rock-rem-man-on-the-moon",
+      "title": "Man on the Moon",
+      "artist": "R.E.M.",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Classic",
+        "Alternative"
+      ],
+      "hints": [
+        "Der Song ist eine Hommage an den exzentrischen Komedian Andy Kaufman (1949-1984), den Sänger Michael Stipe als Jugendlicher in 'Saturday Night Live' sah.",
+        "Der Text zitiert Figuren aus Kaufmans Leben: Moses, Newton, Darwin, das Brettspiel Monopoly und den Wrestler Fred Blassie; das Lied erschien 1992 als zweite Auskopplung des Albums 'Automatic for the People'.",
+        "Titel und Refrain spielen auf die Verschwörungstheorien zur Mondlandung an; das schwarz-weiße Video entstand in Kalifornien.",
+        "1999 erschien ein Kinofilm über Andy Kaufman mit Jim Carrey, dessen Soundtrack das Lied prominent enthält.",
+        "Der Refrain endet mit den Worten 'nothing is cool'."
+      ],
+      "lyrics": {
+        "real": [
+          "Andy Kaufman in the wrestling match",
+          "Moses went walking with the staff of wood",
+          "Tell me, are you locked in the punch?"
+        ],
+        "fake": "Walking through the silver forest, listening to the ancient chorus"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dLxpNiF0YKs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-rem-man-on-the-moon.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "90s Unplugged"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Man_on_the_Moon_(R.E.M._song)",
+        "https://www.songfacts.com/facts/rem/man-on-the-moon",
+        "https://en.wikipedia.org/wiki/Automatic_for_the_People",
+        "https://en.wikipedia.org/wiki/Man_on_the_Moon_(film)",
+        "https://lrclib.net/api/get?artist_name=R.E.M.&track_name=Man%20on%20the%20Moon"
+      ]
+    },
+    {
+      "id": "indie-rem-shiny",
+      "title": "Shiny Happy People",
+      "artist": "R.E.M.",
+      "year": 1991,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Catchy"
+      ],
+      "hints": [
+        "Titel und Refrainzeile greifen ein chinesisches Propagandaposter auf – die Sloganzeile wird im Song ironisch umgedeutet.",
+        "Die zweite Single vom Album 'Out of Time' erschien im Mai 1991 und ist der Gegenpol zum düsteren Vorgängersong.",
+        "Die Gastsängerin im Refrain ist Kate Pierson von den B-52's, die 1991 auf 'Out of Time' sang.",
+        "Sänger Michael Stipe hat den Song später als 'fruity, kind of bubblegum song' bezeichnet und mochte seinen großen Erfolg nicht.",
+        "Der Refrain endet mit den Zeile 'Gold and silver shine'."
+      ],
+      "lyrics": {
+        "real": [
+          "Put it in the ground",
+          "Where tomorrow shines",
+          "Where the flowers grow"
+        ],
+        "fake": "In the middle of the street, you can feel the heat of the broken beat"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YYOKMUTTDdA"
+      },
+      "coverUrl": "/covers/indie-rem-shiny.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "90s Unplugged"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Shiny_Happy_People",
+        "https://www.songfacts.com/facts/rem/shiny-happy-people",
+        "https://en.wikipedia.org/wiki/Out_of_Time_(album)",
+        "https://en.wikipedia.org/wiki/Kate_Pierson",
+        "https://api.lyrics.ovh/v1/R.E.M./Shiny%20Happy%20People"
+      ]
+    },
+    {
+      "id": "yt-iFnwmTeSlAQ",
+      "title": "Down",
+      "artist": "R.K.M, Ken-Y",
+      "year": 2006,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Duett entstand in Gurabo auf Puerto Rico; R.K.M (früher 'Rakim') und Ken-Y arbeiteten seit 2003 zusammen.",
+        "Die Single erschien 2006 als erste Auskopplung des Debütalbums 'Masterpiece' und debütierte auf Platz 1 der Billboard-Hot-Latin-Songs-Charts.",
+        "Der spanischsprachige Text erzählt vom Verlust: Der Sänger wacht allein auf, dreht sich im Bett und kann nicht schlafen.",
+        "Im Refrain wechselt die Sprache ins Englische – 'Girl, I'm dying for your love' und 'I can't handle it anymore'.",
+        "Der Song gewann 2007 den Preis für den besten Reggaeton-Song bei den Billboard Latin Music Awards."
+      ],
+      "lyrics": {
+        "real": [
+          "Hoy he desperta'o",
+          "Acariciando la noticia de que tú no volverás",
+          "Entiéndanme, los hombres también lloran"
+        ],
+        "fake": "Sin hacer ruido la noche me recuerda tu voz"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iFnwmTeSlAQ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/r-k-m--ken-y-down.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/R.K.M_%26_Ken-Y",
+        "https://en.wikipedia.org/wiki/Masterpiece_(Rakim_y_Ken-Y_album)",
+        "https://lrclib.net/api/get?artist_name=R.K.M&track_name=Down",
+        "https://music.apple.com/us/album/down/1172991607?i=1172991900",
+        "https://music.apple.com/us/album/masterpiece-nuestra-obra-maestra/1172991607"
+      ]
+    },
+    {
+      "id": "indie-radiohead-creep",
+      "title": "Creep",
+      "artist": "Radiohead",
+      "year": 1992,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Dark",
+        "Moody",
+        "Rock",
+        "Sad",
+        "Serious"
+      ],
+      "hints": [
+        "Thom Yorke schrieb das Stück als Student an der University of Exeter, lange bevor die Band ihren späteren Namen bekam.",
+        "Aufgenommen wurde die Single 1992 in den Chipping Norton Studios in Oxfordshire, produziert von Sean Slade und Paul Kolderie.",
+        "Die Band übernahm Elemente aus 'The Air That I Breathe' von 1972 – nach einem Rechtsstreit teilten sich die Songwriter die Tantiemen.",
+        "Erst nach der erneuten Veröffentlichung 1993 wurde die Single zum internationalen Hit und erreichte in Großbritannien Platz 7.",
+        "Im Refrain singt Yorke die Zeile 'What the hell am I doing here?'."
+      ],
+      "lyrics": {
+        "real": [
+          "When you were here before",
+          "Your skin makes me cry",
+          "I don't belong here"
+        ],
+        "fake": "We are drunk like a donkey, your fur makes me try"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XFkzRNyygfk",
+        "spotify": "https://open.spotify.com/track/70LcF3Ym89vR77UAf1Cq7X",
+        "amazonMusic": "https://music.amazon.com/tracks/B01FFI1PIW"
+      },
+      "coverUrl": "/covers/indie-radiohead-creep.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Creep_(Radiohead_song)",
+        "https://www.songfacts.com/facts/radiohead/creep",
+        "https://en.wikipedia.org/wiki/Pablo_Honey",
+        "https://en.wikipedia.org/wiki/The_Air_That_I_Breathe",
+        "https://api.lyrics.ovh/v1/Radiohead/Creep"
+      ]
+    },
+    {
+      "id": "unplugged-radiohead-high-dry",
+      "title": "High and Dry",
+      "artist": "Radiohead",
+      "year": 1995,
+      "country": "GB",
+      "genre": "Alternative / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Moody",
+        "Classic"
+      ],
+      "hints": [
+        "Die erste Strophe spielt auf die riskanten Motorrad-Sprünge des amerikanischen Stuntmanns Evel Knievel an.",
+        "Thom Yorke schrieb das Stück als Student in Exeter und bezeichnete es später in einem Interview als 'not bad... it's very bad'.",
+        "Aufgenommen wurde der Song 1993 in den Courtyard Studios in Oxfordshire; das EMI-Label drängte Yorke zur Veröffentlichung.",
+        "Der Jazzsänger Jamie Cullum nahm 2002 eine eigene Version auf, die zu einem seiner bekanntesten Live-Stücke wurde.",
+        "Im Text heißt es 'You're turning into something you are not' – der Song kreist um Risiko und Enttäuschung."
+      ],
+      "lyrics": {
+        "real": [
+          "Two jumps in a week",
+          "You just sit there wishing you could still make love",
+          "You're turning into something you are not"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your broken soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=rt8AdNwTTUI",
+        "spotify": "https://open.spotify.com/track/2a1iMaoWQ5MnvLFBDv4qkf",
+        "amazonMusic": "https://music.amazon.com/tracks/B01DPX4BWQ"
+      },
+      "coverUrl": "/covers/unplugged-radiohead-high-dry.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Indie & Alternative",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/High_and_Dry_/_Planet_Telex",
+        "https://en.wikipedia.org/wiki/The_Bends_(album)",
+        "https://www.songfacts.com/facts/radiohead/high-and-dry",
+        "https://en.wikipedia.org/wiki/Evel_Knievel",
+        "https://lrclib.net/api/get?artist_name=Radiohead&track_name=High%20and%20Dry"
+      ]
+    },
+    {
+      "id": "piano-radio-surprises",
+      "title": "No Surprises",
+      "artist": "Radiohead",
+      "year": 1997,
+      "country": "GB",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Atmospheric",
+        "Dreamy"
+      ],
+      "hints": [
+        "Der Sänger schrieb das Stück 1995, während die Band gemeinsam mit R.E.M. auf Tournee war, und stellte es beiden Bands in einer Garderobe in Oslo vor.",
+        "Die Aufnahme entstand im Juli 1996 im Studio Canned Applause in Didcot, England – produziert vom langjährigen Vertrauten Nigel Godrich.",
+        "Die Single erschien im Januar 1998 als vierte und letzte Auskopplung des dritten Studioalbums, das bereits ein Jahr zuvor veröffentlicht worden war.",
+        "Das Video zeigt den Sänger mit einem Helm, der sich langsam mit Wasser füllt – Regie führte Grant Gee, der dafür die Idee der Unterwasser-Flucht aufgriff.",
+        "In Großbritannien stieg der Song bis auf Platz vier der Single-Charts; musikalisch prägen eine Glockenspiel-Melodie und der Einfluss des Beach-Boys-Albums von 1966 den Klang."
+      ],
+      "lyrics": {
+        "real": [
+          "A heart that's full up like a landfill",
+          "Bruises that won't heal",
+          "No alarms and no surprises please"
+        ],
+        "fake": "A quiet town, a steady job and a kettle singing on the shelf"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=u5CVsCnxyXg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-radio-surprises.jpg",
+      "packs": [
+        "90s Unplugged",
+        "Indie & Alternative",
+        "piano-ballads"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/No_Surprises",
+        "https://en.wikipedia.org/wiki/OK_Computer",
+        "https://en.wikipedia.org/wiki/Pet_Sounds",
+        "https://www.songfacts.com/facts/radiohead/no-surprises",
+        "https://api.lyrics.ovh/v1/Radiohead/No%20Surprises"
+      ]
+    },
+    {
+      "id": "score-djawadi-got",
+      "title": "Game of Thrones Main Title",
+      "artist": "Ramin Djawadi",
+      "year": 2011,
+      "country": "DE",
+      "genre": "TV Score / Orchestral",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Moody",
+        "Powerful"
+      ],
+      "hints": [
+        "Für die Pilotfolge war ursprünglich ein anderer Komponist vorgesehen, der das Projekt jedoch verließ; vorgeschlagen wurde der jetzige Komponist daraufhin von der Musikaufsicht der Serie.",
+        "Die Macher baten den Komponisten, auf Flöten und reinen Sologesang zu verzichten – stattdessen wurde das Cello zum Leitinstrument gewählt.",
+        "Die Produzenten wollten ein Thema über eine Reise; zuvor sah sich der Komponist die noch in Arbeit befindlichen Animationsbilder der Titelsequenz an.",
+        "Mit einer Länge von 1:46 ist das Stück ungewöhnlich lang für eine Serie; es beginnt in Moll und wechselt mehrfach zwischen den zugehörigen Dur- und Moll-Tonarten.",
+        "Seit 2011 erklingt die Melodie bei jedem Vorspann – inzwischen auch im Vorspann der Vorgängerserie und in zahlreichen Cover-Versionen, etwa von 2Cellos."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=s7L2PVdrb_8",
+        "spotify": "https://open.spotify.com/track/2q6fxAvSpqXR4jx9Ne7RGz",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/score-djawadi-got.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Movie Hits",
+        "classical-orchestral",
+        "grand-finale"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Game_of_Thrones_Theme",
+        "https://en.wikipedia.org/wiki/Music_of_Game_of_Thrones",
+        "https://en.wikipedia.org/wiki/Ramin_Djawadi",
+        "https://en.wikipedia.org/wiki/Game_of_Thrones",
+        "https://itunes.apple.com/search?term=Ramin+Djawadi+Game+of+Thrones+Main+Title&limit=4&entity=song"
+      ]
+    },
+    {
+      "id": "metal-rammstein-duhast",
+      "title": "Du Hast",
+      "artist": "Rammstein",
+      "year": 1997,
+      "country": "DE",
+      "genre": "Neue Deutsche Härte / Industrial Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Powerful",
+        "Primary",
+        "Classic"
+      ],
+      "hints": [
+        "Aufgenommen wurde das Stück 1996 und 1997 im Studio 'Temple' auf der Insel Malta sowie in Mistra – die Band reiste dafür eigens nach Südeuropa.",
+        "Den Klangklang lieferte ein Instrumentalist, das Gitarrenriff dagegen der Gitarrist; das riff erinnert deutlich an 'Just One Fix' von Ministry.",
+        "Der Titel ist ein Wortspiel: zwei gleich klingende Verben – 'haben' und 'hassen' – werden im Text gegeneinander gestellt.",
+        "Die Single erschien am 19. Juli 1997 als zweite Auskopplung des zweiten Albums; es gibt eine rein deutsche Fassung und eine Variante mit englischen Passagen.",
+        "Bis heute ist das Stück in zahlreichen Soundtracks zu hören, unter anderem in 'The Matrix', und tauchte in den Rhythmusspielen Guitar Hero 5 und Rock Band 3 auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Du, du hast, du hast mich",
+          "Du hast mich gefragt und ich hab' nichts gesagt",
+          "Willst du bis der Tod euch scheidet"
+        ],
+        "fake": "Asche und Feuer, wir warten auf die Nacht"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=W3q8Od5qJio",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-rammstein-duhast.jpg",
+      "packs": [
+        "German Classics",
+        "metal-hardcore",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Du_hast",
+        "https://en.wikipedia.org/wiki/Sehnsucht_(Rammstein_album)",
+        "https://www.songfacts.com/facts/rammstein/du-hast",
+        "https://api.lyrics.ovh/v1/Rammstein/Du%20Hast",
+        "https://itunes.apple.com/search?term=Rammstein+Du+Hast&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "disney-toy-friend",
+      "title": "You've Got a Friend in Me",
+      "artist": "Randy Newman",
+      "year": 1995,
+      "country": "US",
+      "genre": "Soundtrack / Pop / Country",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Aufgenommen wurde das Stück 1995; es erklingt bereits im Vorspann des ersten Pixar-Kinofilms und wurde später zum Leitmotiv der gesamten Filmreihe.",
+        "Für den Oscar in der Kategorie 'Bester Originalsong' und für den Golden Globe wurde das Lied nominiert.",
+        "Als Single erschien es am 12. April 1996 als Duett mit dem Country-Sänger Lyle Lovett; die reine Soloversion dauert 2:04 Minuten.",
+        "Im dritten Film bricht das Lied im Refrain abrupt ab, als die Spielzeugwelt in die Gegenwart springt und die verwaisten Spielsachen des Jungen gezeigt werden.",
+        "Im Trailer des fünften Teils wurde das Stück verwendet, im Film selbst erklang stattdessen ein ganz anderer Song."
+      ],
+      "lyrics": {
+        "real": [
+          "You've got a friend in me",
+          "When the road looks rough ahead",
+          "You just remember what your old pal said"
+        ],
+        "fake": "A tin robot and a wooden horse, we raced the hallway every day"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1MPZRcyTrcU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-toy-friend.jpg",
+      "packs": [
+        "Movie Hits",
+        "grand-finale",
+        "piano-ballads"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/You%27ve_Got_a_Friend_in_Me",
+        "https://en.wikipedia.org/wiki/Toy_Story_(soundtrack)",
+        "https://www.songfacts.com/facts/randy-newman/youve-got-a-friend-in-me",
+        "https://api.lyrics.ovh/v1/Randy%20Newman/You%27ve%20Got%20a%20Friend%20in%20Me",
+        "https://itunes.apple.com/search?term=Randy+Newman+You%27ve+Got+a+Friend+in+Me&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "disney-cars-highway",
+      "title": "Life Is a Highway",
+      "artist": "Rascal Flatts",
+      "year": 2006,
+      "country": "US",
+      "genre": "Soundtrack / Country Rock / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Positive"
+      ],
+      "hints": [
+        "Der Song ist eine Neufassung eines Titels, der 1991 für das zweite Album des kanadischen Sängers Tom Cochrane entstand und damals in Kanada auf Platz 1 stand.",
+        "Die Idee entstand schon in den 1970ern in der Band Red Rider; vollendet wurde das Stück erst nach einer humanitären Reise nach Ostafrika.",
+        "2016 wurde ein 322 Kilometer langer Abschnitt der Manitoba Provincial Road 391 in Kanada nach dem Song umbenannt.",
+        "Die aktuelle Version von 2006 entstand für den Soundtrack des Animationsfilms 'Cars'; das Original von 1991 hatte es in den US-Charts nur auf Platz sechs gebracht.",
+        "Der Refrain handelt davon, die ganze Nacht durchzufahren – genau diese Zeile macht den Song bis heute zum Roadtrip-Klassiker."
+      ],
+      "lyrics": {
+        "real": [
+          "Life's like a road that you travel on",
+          "Life is a highway",
+          "I wanna ride it all night long"
+        ],
+        "fake": "Dashboard crumbs and a beat-up old car, chasing the sunrise with the radio loud"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5tXh_MfrMe0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-cars-highway.jpg",
+      "packs": [
+        "Movie Hits",
+        "country-folk",
+        "2000s Pop & RnB"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Life_Is_a_Highway",
+        "https://en.wikipedia.org/wiki/Cars_(film)",
+        "https://www.songfacts.com/facts/rascal-flatts/life-is-a-highway",
+        "https://api.lyrics.ovh/v1/Rascal%20Flatts/Life%20Is%20a%20Highway",
+        "https://itunes.apple.com/search?term=Rascal+Flatts+Life+Is+a+Highway&limit=3&entity=song"
+      ]
+    },
+    {
+      "id": "jazz-ray-charles-georgia",
+      "title": "Georgia on My Mind",
+      "artist": "Ray Charles",
+      "year": 1960,
+      "country": "US",
+      "genre": "Soul / Jazz",
+      "difficulty": "medium",
+      "mood": [
+        "Classic",
+        "Emotional",
+        "Nostalgic",
+        "Romantic",
+        "Smooth"
+      ],
+      "hints": [
+        "Das Stück stammt aus dem Jahr 1930 und wurde zuerst von einem anderen Interpreten aufgenommen – erst 30 Jahre später machte die Version des Sängers das Lied berühmt.",
+        "Die Musik schrieb Hoagy Carmichael, den Text Stuart Gorrell; die ersten beiden Worte des Titels lieferte der Saxophonist Frankie Trumbbauer.",
+        "Im April 1979 wurde die Aufnahme des Sängers vom Parlament eines südöstlichen US-Bundesstaates zur offiziellen Landes-Hymne erklärt – er spielte das Stück danach vor den Abgeordneten.",
+        "Die Aufnahme von 1960 war der erste von drei Nummer-eins-Hits des Sängers in den US-Charts und brachte ihm 1961 zwei Grammy-Auszeichnungen ein.",
+        "2026 zählte CBS News das Lied zu den 250 wichtigsten amerikanischen Songs der vergangenen 250 Jahre."
+      ],
+      "lyrics": {
+        "real": [
+          "Other eyes smile tenderly",
+          "The road leads back to you",
+          "As moonlight through the pines"
+        ],
+        "fake": "A restless wind keeps whispering my name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ggGzE5KfCio",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/jazz-ray-charles-georgia.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Country, Jazz & Blues",
+        "jazz-blues",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Georgia_on_My_Mind",
+        "https://en.wikipedia.org/wiki/Ray_Charles",
+        "https://www.songfacts.com/facts/ray-charles/georgia-on-my-mind",
+        "https://api.lyrics.ovh/v1/Ray%20Charles/Georgia%20on%20My%20Mind",
+        "https://itunes.apple.com/search?term=Ray+Charles+Georgia+on+My+Mind&limit=3&entity=song"
+      ]
+    }
+  ]
+}

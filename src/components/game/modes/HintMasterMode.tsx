@@ -1,0 +1,279 @@
+/**
+ * Hint-Master-Modus (Refined Phase 5)
+ *
+ * Zeigt bis zu 5 Hinweise.
+ * Ab Hinweis 2 läuft Musik automatisch (blurred).
+ * Kein Tippen mehr nötig — der Spieler klickt auf "Lösung" und entscheidet selbst.
+ */
+'use client';
+
+import { useState, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useGameStore } from '@/stores/game-store';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import type { PhomuSong } from '@/types/song';
+import { PHOMU_CONFIG } from '@/config/game-config';
+import { MusicPlayer } from '../MusicPlayer';
+import { censorHint } from '@/utils/censor-utils';
+
+interface HintMasterModeProps {
+  song: PhomuSong;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
+}
+
+export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
+  const { config, awardPoints, turnOrder, currentTurnIndex } = useGameStore();
+  const [shownHints, setShownHints] = useState(1);
+  const [isRevealed, setIsRevealed] = useState(false);
+  const [showMusic, setShowMusic] = useState(false);
+  const [done, setDone] = useState(false);
+  const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
+  const [knewWhat, setKnewWhat] = useState<'both' | 'artist' | 'title' | 'none' | null>(null);
+  const [cheatUsed, setCheatUsed] = useState(false);
+
+  const currentPlayerId = turnOrder[currentTurnIndex];
+  const maxHints = song.hints.length;
+  const points = PHOMU_CONFIG.HINT_MASTER_POINTS[shownHints - 1] ?? 1;
+  const startSecs = song.previewTimestamp?.start ?? 0;
+
+  const handleNextHint = useCallback(() => {
+    if (shownHints < maxHints) {
+      setShownHints((n) => n + 1);
+      // Ab Hinweis 2 läuft Musik automatisch (blurred bis Reveal)
+      if (shownHints + 1 >= 2) setShowMusic(true);
+    }
+  }, [shownHints, maxHints]);
+
+  const handleFinalDecision = (knew: 'both' | 'artist' | 'title' | 'none') => {
+    if (done) return;
+    const isCorrect = knew !== 'none';
+    const awardedPoints = knew === 'both' ? points : knew === 'none' ? 0 : Math.ceil(points / 2);
+    setWasCorrect(isCorrect);
+    setKnewWhat(knew);
+    setDone(true);
+    onAnswer(isCorrect, awardedPoints);
+  };
+
+  const handleCheat = () => {
+    if (showMusic || cheatUsed || isRevealed || !currentPlayerId) return;
+    setShowMusic(true);
+    setCheatUsed(true);
+    // Sofortiger Abzug von 2 Punkten für den Musik-Cheat
+    awardPoints(currentPlayerId, -2);
+  };
+
+  return (
+    <div className="flex flex-col px-6 gap-6 pt-4 max-w-lg mx-auto min-h-[50vh]">
+
+      {/* Aufgaben-Anzeige */}
+      {!isRevealed && !done && (
+        <div className="text-center py-3 px-4 rounded-2xl bg-[var(--color-accent)]/5 border border-[var(--color-accent)]/20">
+          <p className="text-[9px] font-black uppercase tracking-[0.25em] opacity-40 mb-1">Gesucht wird</p>
+          <p className="text-base font-black uppercase tracking-wide">
+            🎵 Titel &amp; Künstler des Songs
+          </p>
+        </div>
+      )}
+
+      {/* Header Info */}
+      <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/10">
+        <div>
+          <p className="text-[10px] font-black uppercase opacity-40">Ebene</p>
+          <p className="text-xl font-black">{shownHints} <span className="text-xs opacity-30">/ {maxHints}</span></p>
+        </div>
+        <div className="text-right relative">
+          <p className="text-[10px] font-black uppercase opacity-40">Mögliche Punkte</p>
+          <p className="text-xl font-black text-[var(--color-accent)]">
+            +{points}
+          </p>
+          {cheatUsed && (
+            <span
+              className="absolute -top-1 -right-1 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-tight text-black shadow-lg pointer-events-none"
+              style={{
+                backgroundColor: '#ef4444',
+                transform: 'rotate(-5deg)',
+                boxShadow: '0 2px 10px rgba(239,68,68,0.7)',
+              }}
+            >
+              -2 PKT CHEAT
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Musik-Hinweis (Triggered @ 4 or 5 OR upon manual reveal) */}
+      <AnimatePresence>
+        {(showMusic || isRevealed) && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            className="overflow-hidden"
+          >
+            <div className={`p-4 border rounded-2xl space-y-3 transition-colors ${isRevealed ? 'bg-green-500/10 border-green-500/20' : 'bg-[var(--color-accent)]/10 border-[var(--color-accent)]/20'}`}>
+              <div className="flex items-center gap-2">
+                <span className="text-lg">{isRevealed ? '🎵' : '🔊'}</span>
+                <p className={`text-[10px] font-black uppercase tracking-widest ${isRevealed ? 'text-green-500' : 'text-[var(--color-accent)]'}`}>
+                  {isRevealed ? 'Offizielle Auflösung' : 'Audio-Hinweis Aktiv'}
+                </p>
+              </div>
+              <MusicPlayer
+                key={`${shownHints}-${isRevealed}`}
+                songId={song.id}
+                songTitle={song.title}
+                songArtist={song.artist}
+                songPack={song.packs[0]}
+                youtubeLink={song.links.youtube}
+                youtubeAlternatives={song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined)}
+                spotifyLink={song.links.spotify}
+                spotifyFreePreview={song.links.spotifyFreePreview}
+                amazonMusicLink={song.links.amazonMusic}
+                amazonPrimePreview={song.links.amazonPrimePreview}
+                startSeconds={startSecs}
+                endSeconds={(isRevealed || shownHints === 5) ? startSecs + 180 : startSecs + 30}
+                blurred={!isRevealed}
+              />
+              {!isRevealed && (
+                <p className="text-[9px] opacity-50 italic text-center">
+                  {shownHints === 5 ? 'Ebene 5: Audio läuft weiter...' : 'Spielt 30 Sek. ab Anfang · Restart bei jedem Tipp'}
+                </p>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Hinweis-Liste */}
+      <div className="space-y-3">
+        <AnimatePresence initial={false}>
+          {song.hints.slice(0, shownHints).map((hint, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className={`p-5 rounded-2xl text-sm leading-relaxed border transition-all ${i === shownHints - 1 ? 'border-[var(--color-accent)] bg-white/5' : 'border-white/5 opacity-40'}`}
+            >
+              <span className="font-black opacity-20 mr-3 text-xs">0{i + 1}</span>
+              {censorHint(hint, song.artist, song.title)}
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </div>
+
+      {/* Navigation & Actions */}
+      <div className="mt-auto space-y-4 pb-10">
+        {!isRevealed && (
+          <div className="grid grid-cols-1 gap-3">
+            {shownHints < maxHints && (
+              <button
+                onClick={handleNextHint}
+                className="w-full py-4 rounded-2xl border-2 border-white/10 font-black uppercase text-xs tracking-widest hover:bg-white/5 transition-all outline-none"
+              >
+                Nächster Hinweis → {PHOMU_CONFIG.HINT_MASTER_POINTS[shownHints] ?? 1} Pkt
+              </button>
+            )}
+
+            {/* Music Cheat Button (nur bei Level 1, bevor Musik automatisch startet) */}
+            {!showMusic && shownHints === 1 && !config.noCheatMode && (
+              <button
+                onClick={handleCheat}
+                className="w-full py-2 rounded-xl border border-red-500/10 text-[9px] font-black uppercase tracking-[0.2em] opacity-30 hover:opacity-100 hover:bg-red-500/5 text-red-500 transition-all mb-1"
+              >
+                🕵️ Musik-Cheat: Audio jetzt (-2 Pkt)
+              </button>
+            )}
+
+            <button
+              onClick={() => setIsRevealed(true)}
+              className="w-full py-5 rounded-3xl bg-[var(--color-accent)] font-black text-lg shadow-xl shadow-[var(--color-accent)]/20 hover:scale-[1.02] active:scale-95 transition-all"
+            >
+              LÖSUNG ZEIGEN
+            </button>
+          </div>
+        )}
+
+        {isRevealed && !done && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-center p-6 bg-white/5 rounded-3xl border border-white/10 space-y-6"
+          >
+            <div>
+              <p className="text-[10px] font-black uppercase opacity-40 mb-2">Die Antwort war</p>
+              <h3 className="text-2xl font-black">{song.title}</h3>
+              <p className="text-sm opacity-60">{song.artist}</p>
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-xs font-bold italic opacity-60">Was hast du gewusst?</p>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  onClick={() => handleFinalDecision('both')}
+                  className="py-4 px-3 bg-green-500 rounded-2xl font-black text-white text-xs shadow-lg shadow-green-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
+                >
+                  <span className="text-lg">✅</span>
+                  <span>Beides</span>
+                  <span className="text-[10px] opacity-70">+{points} Pkt</span>
+                </button>
+                <button
+                  onClick={() => handleFinalDecision('artist')}
+                  className="py-4 px-3 bg-yellow-500/80 rounded-2xl font-black text-white text-xs shadow-lg shadow-yellow-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
+                >
+                  <span className="text-lg">👤</span>
+                  <span>Nur Künstler</span>
+                  <span className="text-[10px] opacity-70">+{Math.ceil(points / 2)} Pkt</span>
+                </button>
+                <button
+                  onClick={() => handleFinalDecision('title')}
+                  className="py-4 px-3 bg-yellow-500/80 rounded-2xl font-black text-white text-xs shadow-lg shadow-yellow-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
+                >
+                  <span className="text-lg">🎵</span>
+                  <span>Nur Titel</span>
+                  <span className="text-[10px] opacity-70">+{Math.ceil(points / 2)} Pkt</span>
+                </button>
+                <button
+                  onClick={() => handleFinalDecision('none')}
+                  className="py-4 px-3 bg-red-500 rounded-2xl font-black text-white text-xs shadow-lg shadow-red-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
+                >
+                  <span className="text-lg">❌</span>
+                  <span>Nichts</span>
+                  <span className="text-[10px] opacity-70">+0 Pkt</span>
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {done && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className={[
+              'text-center p-5 rounded-3xl border space-y-2',
+              wasCorrect
+                ? 'border-green-500/30 bg-green-500/10'
+                : 'border-red-500/30 bg-red-500/10',
+            ].join(' ')}
+          >
+            <p 
+              className="text-lg font-black uppercase italic tracking-tighter"
+              style={{ color: getSpicyColor(wasCorrect!, song.id) }}
+            >
+              {getSpicyMessage(wasCorrect!, song.id)}
+            </p>
+            <p className="text-xs font-bold opacity-60">
+              {knewWhat === 'both' ? 'Alles gewusst! ✨' : knewWhat === 'artist' ? 'Künstler gewusst 👤' : knewWhat === 'title' ? 'Titel gewusst 🎵' : 'Nicht gewusst 🌧️'}
+            </p>
+            <p className="text-sm opacity-60">
+              {song.title} &middot; {song.artist}
+            </p>
+            {knewWhat !== 'none' && (
+              <p className="text-xs font-black text-[var(--color-accent)]">
+                +{knewWhat === 'both' ? points : Math.ceil(points / 2)} Punkte
+              </p>
+            )}
+          </motion.div>
+        )}
+      </div>
+    </div>
+  );
+}

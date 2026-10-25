@@ -1,0 +1,652 @@
+{
+  "songs": [
+    {
+      "id": "yt-ql2ap3aKJXc",
+      "title": "Lo Busque",
+      "artist": "Ana Bárbara",
+      "year": 2004,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Sängerin wurde 1971 in Río Verde im mexikanischen Bundesstaat San Luis Potosí geboren und gilt als 'La Reina Grupera'.",
+        "Bei den Latin Grammy Awards 2005 gewann sie mit diesem Album den Preis für das beste Grupero-Album und trat dort mit einer Medley aus dem Titelsong und 'Loca' auf.",
+        "In den US-Charts erschienen mehr als 40 Titel der Künstlerin, das Stück dominierte die Airwaves in Südamerika, Mexiko und den USA sowie die Billboard Hot Latin Tracks.",
+        "Der Refrain erzählt von einer wörtlichen Suche: Am Ende findet sie unter dem Bett nur 'Pedazos de mi alma' - Splitter ihrer Seele.",
+        "Der Titel bedeutet so viel wie 'ich habe ihn gesucht' - eine Ballade über die Sehnsucht nach der großen Liebe."
+      ],
+      "lyrics": {
+        "real": [
+          "Y lo busqué, hasta debajo de la cama",
+          "Y encontré pedazos de mi alma",
+          "Desangrándose no le importó buscar doctor"
+        ],
+        "fake": "En la playa del sur te esperaré, mis estrellas te van a mirar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ql2ap3aKJXc",
+        "spotify": "https://open.spotify.com/track/7ceiXwNZ2DwNIJ54tsJwRY"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ana-bárbara-lo-busque.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Ana_B%C3%A1rbara",
+        "https://en.wikipedia.org/wiki/Ana_B%C3%A1rbara",
+        "https://music.apple.com/us/album/loca-de-amar/1443547566",
+        "https://lrclib.net/api/get/39105235",
+        "https://www.youtube.com/watch?v=ql2ap3aKJXc"
+      ]
+    },
+    {
+      "id": "schlager-andrea-berg-liebe",
+      "title": "Du hast mich tausendmal belogen",
+      "artist": "Andrea Berg",
+      "year": 2001,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Serious",
+        "Sing-along"
+      ],
+      "hints": [
+        "Die Refrainzeilen entstanden 2001 spontan während einer Autofahrt: Die Interpretin kam selbst darauf, weil sie sich mit den ursprünglichen Texten nicht anfreunden konnte.",
+        "Geschrieben wurde das Stück von Irma Holder und Eugen Römer, produziert hat es Römer - derselbe, der auch das Album 'Wo liegt das Paradies' betreute.",
+        "Im März 2001 erschien der Song als Promo-Single bei Jupiter Records/BMG, die offizielle Single bei Juke Records hatte einen Partymix als B-Seite.",
+        "Das Stück galt jahrelang als meistverkaufte Schlager-Single Deutschlands und wurde 2026 mit Platin für mehr als 600.000 verkaufte Exemplare ausgezeichnet.",
+        "Bekannt wurde der Song vor allem durch zahlreiche Cover-Versionen - etwa von Laura Lynn, die damit in den Niederlanden und Belgien chartete."
+      ],
+      "lyrics": {
+        "real": [
+          "Du hast mich tausendmal belogen",
+          "Ich bin mit dir so hoch geflogen",
+          "Du warst der Wind in meinen Flügeln"
+        ],
+        "fake": "Ein Versprechen zerbrach im Staub, und die Nächte waren ohne dich"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wCON7JlxuEI",
+        "spotify": "https://open.spotify.com/track/65wKbNqjUTmdyk47Z31Czm"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-andrea-berg-liebe.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "German Classics",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Du_hast_mich_tausendmal_belogen",
+        "https://de.wikipedia.org/wiki/Andrea_Berg",
+        "https://de.wikipedia.org/wiki/Wo_liegt_das_Paradies",
+        "https://lrclib.net/api/get/16134469",
+        "https://www.youtube.com/watch?v=wCON7JlxuEI"
+      ]
+    },
+    {
+      "id": "german-bourani-auf-uns",
+      "title": "Auf uns",
+      "artist": "Andreas Bourani",
+      "year": 2014,
+      "country": "DE",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Inspiring",
+        "Epic"
+      ],
+      "hints": [
+        "Der Refrain entstand schon vor der WM: Der Sänger erzählte, er habe die Zeile nach einem Abend mit Freunden im Kopf gehabt, weil sie gemeinsam angestoßen hatten.",
+        "Die Single erschien zwei Wochen vor dem zweiten Studioalbum, am 25. April 2014, und erreichte in Deutschland und Österreich Platz eins.",
+        "Die ARD wählte den Song zum WM-Song ihrer Berichterstattung; nach dem Endspiel im Maracanã wurde er dort gespielt.",
+        "Ausgezeichnet wurde das Stück mit Gold, Platin und Diamant - 2018 erhielt es für über eine Million verkaufte Exemplare in Deutschland die Diamantene Schallplatte.",
+        "Das Video drehten Regisseur Kim Frank und sein Team in Berlin und Hamburg; es startete am 23. April 2014 auf YouTube."
+      ],
+      "lyrics": {
+        "real": [
+          "Wer friert uns diesen Moment ein?",
+          "Ein Hoch auf uns, uns",
+          "Ein Hoch auf das, was vor uns liegt"
+        ],
+        "fake": "Wir springen ins Glück, schauen niemals zurück, Stück für Stück"
+      },
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=k9EYjn5f_nE",
+        "spotify": "https://open.spotify.com/track/6dXt4t5jgySnVTeTpT4C0l"
+      },
+      "coverUrl": "/covers/german-bourani-auf-uns.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "isOneHitWonder": false,
+      "packs": [
+        "German Classics",
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Auf_uns",
+        "https://de.wikipedia.org/wiki/Andreas_Bourani",
+        "https://de.wikipedia.org/wiki/Hey_(Album)",
+        "https://lrclib.net/api/get/37508416",
+        "https://www.youtube.com/watch?v=k9EYjn5f_nE"
+      ]
+    },
+    {
+      "id": "yt-ACFwKYEC5rw",
+      "title": "Aeon Of Revenge (Original Mix)",
+      "artist": "Andrew Rayel",
+      "year": 2012,
+      "country": "MD",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Der Künstler, ein moldawischer DJ, wurde in der DJ-Mag-Top-100 2012 auf Platz 77 geführt.",
+        "Ein Jahr später stieg er auf Platz 28 ('highest climber'), 2014 sogar auf Platz 24 der Liste.",
+        "Der Track erschien 2012 als Titelstück einer EP der Label-Schmiede Armada Music, die nach den beiden enthaltenen Titeln benannt ist.",
+        "Die auf der EP veröffentlichte Langfassung dauert knapp 7:45, die Radio-Edit-Fassung dagegen nur 3:47.",
+        "Der englische Titel kündigt die epische Dramatik des Stücks an - sinngemäß 'Äon der Rache'."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ACFwKYEC5rw",
+        "spotify": "https://open.spotify.com/track/0LrgY33jyzTjHjqE4z5k9R"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/andrew-rayel-aeon-of-revenge--original-mix-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Andrew_Rayel",
+        "https://music.apple.com/us/album/aeon-of-revenge-original-mix/534192637?i=534192679",
+        "https://lrclib.net/api/get/37671554",
+        "https://itunes.apple.com/lookup?id=534192679&entity=song",
+        "https://www.youtube.com/watch?v=ACFwKYEC5rw"
+      ]
+    },
+    {
+      "id": "yt-5-MZ_ZTM1tE",
+      "title": "Serenity (Andrew Rayel Aether Remix)",
+      "artist": "Andrew Rayel",
+      "year": 2012,
+      "country": "MD",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Der Produzent war 2013 DJ-Mag-'Highest Climber' auf Platz 28 und ist 1992 in Călărași in Moldau geboren.",
+        "Das Stück entstand 2012 als Bearbeitung eines Originals von Armin van Buuren mit der Sängerin Jan Vayne und erschien auf einer eigenen EP mit mehreren Versionen.",
+        "Die längste Fassung dauert 7:15, die Radio-Version 3:57 - beide liegen auf derselben EP.",
+        "Bereits 2012 nutzte derselbe Produzent dasselbe Verfahren für 'Kepler 22' von Fady & Mina.",
+        "Der Titel steht für Ruhe, doch die Musik ist ein treibender Dancefloor-Track; das offizielle Video liegt beim Topic-Kanal des Original-Künstlers."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5-MZ_ZTM1tE",
+        "spotify": "https://open.spotify.com/track/4MdRFjY8h9S9Z6JR664GqO"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/andrew-rayel-serenity--andrew-rayel-aether-remix-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Andrew_Rayel",
+        "https://music.apple.com/us/album/serenity-andrew-rayel-aether-remix/580850415?i=580850933",
+        "https://lrclib.net/api/get/38311584",
+        "https://itunes.apple.com/lookup?id=580850933&entity=song",
+        "https://www.youtube.com/watch?v=5-MZ_ZTM1tE"
+      ]
+    },
+    {
+      "id": "yt-n-zHCwxtpec",
+      "title": "Son De Amores",
+      "artist": "Andy & Lucas",
+      "year": 2003,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das spanische Duo veröffentlichte 2003 bei Sony BMG sein erstes Album, produziert von Alejo Stivel; das Stück erschien bereits im April 2003 als Auskopplung.",
+        "In Spanien erreichte der Song Platz 6, das Album verkaufte sich mehr als 200.000 Einheiten und wurde viermal mit Platin ausgezeichnet.",
+        "Später trat das Duo mit einem Live-DVD in Barcelona in Erscheinung und gewann einen Preis für den besten Neuling; das zweite Album war für einen Latin Grammy nominiert.",
+        "In den US-Billboard-Hot-Latin-Tracks stieg der Song bis auf Platz 1.",
+        "Nach über zwanzig Jahren gemeinsamer Karriere kündigte das Duo 2023 eine Pause an, weil eines der beiden Mitglieder eine Herzkrankheit hatte."
+      ],
+      "lyrics": {
+        "real": [
+          "Son de amores, amores que matan",
+          "Amores que ríen, amores que lloran, amores que amargan",
+          "Deja de llorar y sécate esas lagrimillas de cristal"
+        ],
+        "fake": "Caminamos por la playa con la guitarra y el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=n-zHCwxtpec",
+        "spotify": "https://open.spotify.com/track/7BCer0V0I1CZDI6S6kYD44"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/andy---lucas-son-de-amores.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Andy_y_Lucas",
+        "https://es.wikipedia.org/wiki/Andy_%26_Lucas_(%C3%A1lbum)",
+        "https://en.wikipedia.org/wiki/Andy_%26_Lucas",
+        "https://lrclib.net/api/get/9049246",
+        "https://www.youtube.com/watch?v=n-zHCwxtpec"
+      ]
+    },
+    {
+      "id": "yt-b81kOviE7EI",
+      "title": "Tanto La Queria",
+      "artist": "Andy & Lucas",
+      "year": 2003,
+      "country": "ES",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Zwei junge Musiker aus Cádiz veröffentlichten 2003 bei Sony BMG ihr erstes gemeinsames Album – es wurde mehrfach mit Platin ausgezeichnet.",
+        "Für ihr zweites Album erhielt das Duo eine Nominierung bei den Latin Grammy Awards in der Kategorie für den besten Pop-Act mit Gesang.",
+        "Im Refrenchorus heißt es, die Geliebte sei die Königin der Inspiration und dass er für sie gestorben sei.",
+        "Ein spanischer Liebesballaden-Track mit sanften Gitarren und warmem Duettgesang, dessen Text von verschwendeter Liebe und Sehnsucht handelt.",
+        "2023 kündigten die beiden in einer spanischen Talkshow eine Pause ihrer Zusammenarbeit an – heute treten sie getrennt auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Envidio a todo aquel que el amor ha encontrado",
+          "Porque eres la cuna que mece sin nada",
+          "Por ella moría"
+        ],
+        "fake": "Caminaré por tus calles buscándote entre la lluvia y el mar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=b81kOviE7EI",
+        "spotify": "https://open.spotify.com/track/2VSGzQqy9nqJefcYGJNWst",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "youtube-import",
+        "World, Reggae & Soul"
+      ],
+      "coverUrl": "/covers/andy-lucas-tanto-la-queria-single.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Andy_%26_Lucas",
+        "https://lrclib.net/api/get?artist_name=Andy%20%26%20Lucas&track_name=Tanto%20la%20Quer%C3%ADa",
+        "https://music.apple.com/us/album/tanto-la-queria/187478397?i=187478646",
+        "https://music.apple.com/us/album/andy-lucas/187478397",
+        "https://www.youtube.com/watch?v=b81kOviE7EI"
+      ]
+    },
+    {
+      "id": "yt-fHGIsiKi0fI",
+      "title": "Trilogie, Pt. 2",
+      "artist": "ATB",
+      "year": 2003,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Der deutsche Trance-DJ André Tanneberger startete 1999 mit Movin' Melodies und dem Erfolgssong '9 PM (Till I Come)'.",
+        "Nach den Alben 'Two Worlds' (2000) und 'Dedicated' (2002) erschien der Track im Jahr 2003 auf einer Compilation des DJs.",
+        "Fünf Jahre später nahm er das Stück auf dem Jubiläumsalbum 'Seven Years 1998-2005' erneut auf.",
+        "Der Song kommt ohne Gesang aus – anders als viele Titel derselben Compilation ist kein Gastvokalist angegeben.",
+        "Der Namensstamm des Tracktitels taucht 2007 nochmals als Titel eines Albums des DJs auf."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=fHGIsiKi0fI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/atb-trilogie-pt-2.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/ATB_(DJ)",
+        "https://music.apple.com/us/album/trilogie-pt-2/559981973?i=559982550",
+        "https://music.apple.com/us/album/trilogie-pt-2/67702633?i=67701396",
+        "https://music.apple.com/us/album/all-the-best/559981973",
+        "https://www.youtube.com/watch?v=fHGIsiKi0fI"
+      ]
+    },
+    {
+      "id": "disney-princess-frog-almost",
+      "title": "Almost There",
+      "artist": "Anika Noni Rose",
+      "year": 2009,
+      "country": "US",
+      "genre": "Soundtrack / Jazz / Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Determined",
+        "Happy",
+        "Jazzy"
+      ],
+      "hints": [
+        "Der Film ist ein Disney-Zeichentrick-Klassiker von 2009, dessen Geschichte im New Orleans der 1920er-Jahre spielt.",
+        "Die Traumsequenz des Titelsongs war die einzige Szene, die nicht in der klassischen Disney-Pipeline gezeichnet wurde – sie nutzt einen Art-Deco-Stil nach Vorlagen des Harlem-Renaissance-Malers Aaron Douglas.",
+        "Der Song war für den Oscar in der Kategorie Bester Originalsong nominiert – zusammen mit einem zweiten Song aus demselben Film.",
+        "Die Sängerin spielte die Hauptrolle im Oscar-prämierten Film 'Dreamgirls' und gewann 2004 den Tony Award als beste weibliche Nebenrolle in einem Musical.",
+        "Der Refrain verspricht das Ziel, das die Serviererin nicht aufgibt: 'Ich bin gleich da!' – und dass die Leute hier unten sie für verrückt halten."
+      ],
+      "lyrics": {
+        "real": [
+          "Mama, I don't have time for dancing",
+          "And I'm almost there, I'm almost there",
+          "People down here think I'm crazy, but I don't care"
+        ],
+        "fake": "The Mississippi hums my name and the river lights the way"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ThMwHKfzz1I",
+        "spotify": "https://open.spotify.com/track/2GLyruWagsv8o7aGNXboH1",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-princess-frog-almost.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "jazz-blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+        "https://en.wikipedia.org/wiki/Anika_Noni_Rose",
+        "https://lrclib.net/api/get/1651067",
+        "https://music.apple.com/us/album/almost-there/1417397114?i=1417397131",
+        "https://www.youtube.com/watch?v=ThMwHKfzz1I"
+      ]
+    },
+    {
+      "id": "yt-EQOAxhZNRUY",
+      "title": "Sleeper In Metropolis",
+      "artist": "Anne Clark",
+      "year": 1983,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die britische Spoken-Word-Künstlerin aus Croydon veröffentlichte 1983 mit David Harrow und Vini Reilly ihr erstes LP 'Changing Places'.",
+        "Auf diesem Debütalbum erschien das Stück in Erstfassung – eine spätere Remix-Fassung mit David Harrow kam 1985 als Single.",
+        "Bereits in den 1980er-Jahren wurde ihre Arbeit als Vokalistin mit der von Patti Smith verglichen – sie gilt als Mitbegründerin des gesprochenen Wortes im Pop.",
+        "Im gesprochenen Text wird die Großstadt zur Krankheit erklärt: Der Kontakt zwischen Liebenden reduziert sich auf Handschuhe und Trennwände.",
+        "Das Stück erschien auch auf dem Live-LP 'R.S.V.P.' von 1988, das in England bei Ten und in Deutschland bei Virgin erschien."
+      ],
+      "lyrics": {
+        "real": [
+          "Dreams become entangled in the system",
+          "The harder we fight",
+          "The warmth of your contact"
+        ],
+        "fake": "Walking the neon streets, I wait for a train that never comes"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EQOAxhZNRUY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/anne-clark-sleeper-in-metropolis.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Anne_Clark",
+        "https://lrclib.net/api/get/2555774",
+        "https://music.apple.com/us/album/sleeper-in-metropolis/724112607?i=724112773",
+        "https://music.apple.com/us/album/changing-places/724112607",
+        "https://www.youtube.com/watch?v=EQOAxhZNRUY"
+      ]
+    },
+    {
+      "id": "yt-Rb9XECErMlc",
+      "title": "ANOHNI: MARROW",
+      "artist": "ANOHNI",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Solodebut der englischen Künstlerin erschien 2016 und wurde für den Mercury Music Prize nominiert.",
+        "Zuvor sang die in Chichester geborene Künstlerin unter dem Namen Antony und die Johnsons – ihr zweites Album gewann den Mercury Music Prize.",
+        "Das Album thematisiert Überwachung, Drohnenangriffe und die Ausbeutung von Land und Rohstoffen.",
+        "Der Text ist ein schneidender Angriff auf Konsum, Öl und Geld – er mündet in den wiederholten Ausruf, am Ende seien alle Amerikaner.",
+        "Die Sängerin sang 2008 auf fünf Tracks des selbstbetitelten Disco-Albums eines elektronischen Musikprojekts."
+      ],
+      "lyrics": {
+        "real": [
+          "All Americans now",
+          "With chemotherapies",
+          "Of her bones"
+        ],
+        "fake": "Dancing in the moonlight, we are young and free tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Rb9XECErMlc",
+        "spotify": "https://open.spotify.com/track/0ZnRtaQzlAq54uN8s2wPGv",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Indie & Alternative",
+        "Electronic & Techno"
+      ],
+      "coverUrl": "/covers/anohni-anohni--marrow.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Anohni",
+        "https://en.wikipedia.org/wiki/Mercury_Prize",
+        "https://en.wikipedia.org/wiki/Hopelessness_(album)",
+        "https://lrclib.net/api/get?artist_name=ANOHNI&track_name=Marrow",
+        "https://music.apple.com/us/album/marrow/1084753880?i=1084754252"
+      ]
+    },
+    {
+      "id": "disney-coco-loco",
+      "title": "Un Poco Loco",
+      "artist": "Anthony Gonzalez & Gael García Bernal",
+      "year": 2017,
+      "country": "US",
+      "genre": "Soundtrack / Mariachi",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Cultural"
+      ],
+      "hints": [
+        "Der Pixar-Animationsfilm erzählt von einer mexikanischen Familie, die beim Feiern des Tages der Toten vom Erinnerungsverlust durch einen Fluch betroffen ist – er startete 2017 im Kino.",
+        "Die Musik komponierte Michael Giacchino, das Drehbuch schrieben Adrian Molina und Matthew Aldrich, produziert wurde der Film von Darla K. Anderson.",
+        "Die beiden Sänger sind zugleich die Synchronsprecher der Hauptfiguren im Originalton des Films.",
+        "Der Film gewann bei den 90. Oscar-Verleihungen in zwei Kategorien und wurde vom National Board of Review zum besten Animationsfilm des Jahres gewählt.",
+        "Der Refrain ist eine mexikanische Lebensfreude-Feier: Einer der beiden Sänger bekommt wegen der anderen 'ein bisschen verrückt' – der Titel ist eine spanische Wendung."
+      ],
+      "lyrics": {
+        "real": [
+          "What color is the sky",
+          "The way you keep me guessing",
+          "I'm nodding and I'm yessing"
+        ],
+        "fake": "Under the marigolds we dance until the moon says hello"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MalsRkzmnWU",
+        "spotify": "https://open.spotify.com/track/0OFknyqxmSQ42SoKxWVTok",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-coco-loco.jpg",
+      "packs": [
+        "Movie Hits",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Coco_(2017_film)",
+        "https://en.wikipedia.org/wiki/Day_of_the_Dead",
+        "https://lrclib.net/api/get/4434102",
+        "https://music.apple.com/us/album/un-poco-loco/1440671241?i=1440671253",
+        "https://www.youtube.com/watch?v=MalsRkzmnWU"
+      ]
+    }
+  ]
+}

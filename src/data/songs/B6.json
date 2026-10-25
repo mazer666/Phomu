@@ -1,0 +1,690 @@
+{
+  "songs": [
+    {
+      "id": "country-billy-dust",
+      "title": "Dust in a Baggie",
+      "artist": "Billy Strings",
+      "year": 2016,
+      "country": "US",
+      "genre": "Modern Bluegrass / Jamgrass",
+      "difficulty": "hard",
+      "mood": [
+        "Fast",
+        "Energy",
+        "Skillful",
+        "Raw"
+      ],
+      "hints": [
+        "Der Song erschien zuerst als sechster und letzter Titel einer EP.",
+        "Der Musiker war bei dieser Veröffentlichung 23 Jahre alt; 2017 zählte Rolling Stone ihn zu den zehn wichtigsten neuen Country-Künstlern.",
+        "Der Text erzählt in der Ich-Form von Drogensucht, Gefängnis und Reue.",
+        "Eine Live-Fassung erschien schon 2013 auf einem Duett-Album, die Studio-Single drei Jahre später.",
+        "Ein knapp drei Minuten langer Bluegrass-Track in atemberaubendem Tempo."
+      ],
+      "lyrics": {
+        "real": [
+          "I ain't slept in seven days, haven't ate in three",
+          "Methamphetamine has got a damn good hold of me",
+          "I got 20 years to sit and think of what I've done"
+        ],
+        "fake": "Riding the neon train to the end of the day, we are dancing in the rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qan4VRikfz8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-billy-dust.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Billy_Strings",
+        "https://music.apple.com/us/album/dust-in-a-baggie/1115080846?i=1115080870",
+        "https://musicbrainz.org/ws/2/release/5c2891a4-894a-4ffb-856f-a53c623d8670?inc=recordings&fmt=json",
+        "https://musicbrainz.org/ws/2/release/5babf3d6-b740-48e8-b72f-d989a9289566?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Billy%20Strings&track_name=Dust%20in%20a%20Baggie"
+      ]
+    },
+    {
+      "id": "piano-birdy-skinny",
+      "title": "Skinny Love",
+      "artist": "Birdy",
+      "year": 2011,
+      "country": "GB",
+      "genre": "Folk / Pop Ballade",
+      "difficulty": "easy",
+      "mood": [
+        "Soft",
+        "Fragile",
+        "Sad"
+      ],
+      "hints": [
+        "Die Sängerin veröffentlichte die Cover-Version im Januar 2011 im Alter von 14 Jahren.",
+        "Das Original stammt vom US-Indie-Projekt Bon Iver und ist dort zuerst aufgenommen worden.",
+        "In Großbritannien erreichte die Cover-Version Platz 17 der Single-Charts.",
+        "Das Musikvideo inszenierte Sophie Muller - es war das erste Clip der Sängerin.",
+        "In einer Folge der US-Serie 'The Vampire Diaries' wurde die Cover-Version verwendet."
+      ],
+      "lyrics": {
+        "real": [
+          "Pour a little salt, we were never here",
+          "Staring at the sink of blood and crushed veneer",
+          "And in the morning, I'll be with you"
+        ],
+        "fake": "Neon rain is falling, we are flying through the city lights tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=aNzCDt2eidg",
+        "spotify": "https://open.spotify.com/track/4RL77hMWUq35NYnPLXBpih",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-birdy-skinny.jpg",
+      "packs": [
+        "piano-ballads",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Birdy_(singer)",
+        "https://www.songfacts.com/facts/birdy/skinny-love",
+        "https://music.apple.com/us/album/skinny-love/855455368?i=855455561",
+        "https://musicbrainz.org/ws/2/release/6441c032-9f42-4bc0-a79a-e763035473f5?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Birdy&track_name=Skinny%20Love"
+      ]
+    },
+    {
+      "id": "yt-B9a7yDxLpO0",
+      "title": "Life",
+      "artist": "Bisa Kdei x Patoranking",
+      "year": 2016,
+      "country": "GH",
+      "genre": "Highlife / Afrobeats",
+      "difficulty": "medium",
+      "mood": [
+        "Warm",
+        "Dance",
+        "Afrobeat",
+        "Celebration"
+      ],
+      "hints": [
+        "Der ghanische Sänger veröffentlichte den Song als Single mit dem nigerianischen Rap-Star, der als ausgezeichneter Künstler gilt.",
+        "Die Single erschien am 15. November 2016.",
+        "Der Text mischt Twi, Pidgin und Englisch; beide Parts wechseln sich im Refrain ab.",
+        "Die Aufnahme dauert knapp dreieinhalb Minuten.",
+        "Der Song ist auch auf einem Album des Künstlers mit 15 Titeln zu finden, das 2018 erschien."
+      ],
+      "lyrics": {
+        "real": [
+          "I remember when food no dey pot",
+          "But God don bless me ee",
+          "I dey do my dancing like shoobi"
+        ],
+        "fake": "Diamond in the sky, we are shining till the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=B9a7yDxLpO0",
+        "spotify": "https://open.spotify.com/track/1N0GdFeRwgEeiDqkX0m4HB",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/bisa-kdei-x-patoranking-life.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bisa_Kdei",
+        "https://music.apple.com/us/album/life-feat-patoranking/1175714580?i=1175714703",
+        "https://music.apple.com/us/album/life-feat-patoranking/1370518613?i=1370520571",
+        "https://musicbrainz.org/ws/2/artist/e6ef3328-309c-4227-8c42-43b0ccf93433?fmt=json",
+        "https://lrclib.net/api/get?artist_name=Bisa%20Kdei&track_name=Life%20(feat.%20Patoranking)"
+      ]
+    },
+    {
+      "id": "yt-TtVKvDUGocI",
+      "title": "Dead Man's Arms",
+      "artist": "Bishop Briggs",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Alternative Rock / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Soulful",
+        "Gothic",
+        "Raw"
+      ],
+      "hints": [
+        "Die Sängerin veröffentlichte den Song auf einer EP, die im November 2016 erschien und auch 'River' enthält.",
+        "Die Sängerin wurde 1992 in London geboren.",
+        "Der Text ist eine düstere Ballade über den Tod und darüber, dass in den Toten noch Liebe wohnt.",
+        "Im April 2017 erschien eine weitere EP mit demselben Titel, die den Song ebenfalls enthält.",
+        "Die Aufnahme dauert gut vier Minuten."
+      ],
+      "lyrics": {
+        "real": [
+          "Falling on the deafest ears",
+          "You got more bones than a graveyard",
+          "But a heart needs blood to love"
+        ],
+        "fake": "Golden sunrise over the highway, we are driving into the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TtVKvDUGocI",
+        "spotify": "https://open.spotify.com/track/318CwhlHyuxroBtuoeh3oR",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "jazz-blues",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/bishop-briggs-dead-man-s-arms.jpg",
+      "hintEvidence": [
+        "https://musicbrainz.org/ws/2/release/147f77f8-1079-4920-b094-f0dd60879f05?inc=recordings&fmt=json",
+        "https://musicbrainz.org/ws/2/artist/ee0c82bb-85ca-4a3c-94b8-d7221e74333f?fmt=json",
+        "https://musicbrainz.org/ws/2/release/10a7d00b-7c7f-46c5-a58d-f4a9536faa3d?inc=recordings&fmt=json",
+        "https://music.apple.com/us/album/dead-mans-arms/1440895050?i=1440895637",
+        "https://lrclib.net/api/get?artist_name=Bishop%20Briggs&track_name=Dead%20Man%27s%20Arms"
+      ]
+    },
+    {
+      "id": "yt-EzKkl64rRbM",
+      "title": "RITMO (Bad Boys For Life)",
+      "artist": "Black Eyed Peas & J Balvin",
+      "year": 2019,
+      "country": "US",
+      "genre": "Latin Pop / Urban",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Latin Heat",
+        "Energetic"
+      ],
+      "hints": [
+        "Die Single erschien im Oktober 2019.",
+        "Der Song ist Titelsong zum Soundtrack eines US-Films.",
+        "Der Refrain wechselt zwischen Englisch und Spanisch.",
+        "In der zweiten Strophe wird auf Spanisch gerappt - Reebook und Nike werden da verneint.",
+        "Die Studiofassung eröffnet auch das Album 'TRANSLATION' der Band."
+      ],
+      "lyrics": {
+        "real": [
+          "This is the rhythm, rhythm, rhythm, rhythm, rhythm of the night",
+          "Styles upon styles upon styles, I got several",
+          "Born to be wild 'cause I live like a dead devil"
+        ],
+        "fake": "Silver bullet in the air, we are flying over the city tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=EzKkl64rRbM",
+        "spotify": "https://open.spotify.com/track/5NyS3oxTlos3Agl2YtZwrC",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Movie Hits",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/black-eyed-peas---j-balvin-ritmo--bad-boys-for-life-.jpg",
+      "hintEvidence": [
+        "https://music.apple.com/us/album/ritmo-bad-boys-for-life/1495128539?i=1495128542",
+        "https://music.apple.com/us/album/ritmo-bad-boys-for-life/1517676907?i=1517676910",
+        "https://musicbrainz.org/ws/2/release/98f9894a-4cda-4899-80c5-74d3a91c3cd6?inc=recordings&fmt=json",
+        "https://musicbrainz.org/ws/2/release/ded17885-9766-44c1-95b6-d97c306f1b89?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Black%20Eyed%20Peas&track_name=RITMO"
+      ]
+    },
+    {
+      "id": "yt-me19SUmWu2s",
+      "title": "DON'T YOU WORRY",
+      "artist": "Black Eyed Peas & Shakira & David Guetta",
+      "year": 2022,
+      "country": "US",
+      "genre": "Pop / Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Dance Floor",
+        "Positive",
+        "Summer"
+      ],
+      "hints": [
+        "Die Single erschien am 17. Juni 2022.",
+        "Der Song erschien später auch auf dem Album der Band, das im November 2022 veröffentlicht wurde.",
+        "Der Text handelt von Zuversicht: Man soll sich keine Sorgen machen, alles werde gut.",
+        "Im zweiten Teil wechselt die Band ins Spanische.",
+        "Auf dem Album steht der Song als vorletzter Titel."
+      ],
+      "lyrics": {
+        "real": [
+          "It's gon' be al-, be alright, thumbs up vibe",
+          "'Bout to take a flight, get higher than a kite",
+          "I feel so alive, I'ma live my best life"
+        ],
+        "fake": "Rolling in the deep, we are singing till the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=me19SUmWu2s",
+        "spotify": "https://open.spotify.com/track/0gYXw7aPoybWFfB7btQ0eM",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/black-eyed-peas---shakira---david-guetta-don-t-you-worry.jpg",
+      "hintEvidence": [
+        "https://music.apple.com/us/album/dont-you-worry/1627755177?i=1627755178",
+        "https://music.apple.com/us/album/elevation/1654234859",
+        "https://musicbrainz.org/ws/2/release/da5551e9-8ac0-4e6f-8923-1f15579513f8?inc=recordings&fmt=json",
+        "https://musicbrainz.org/ws/2/release/3b926985-8eda-45e5-b2de-90e91b4a09e6?inc=recordings&fmt=json",
+        "https://lrclib.net/api/get?artist_name=Black%20Eyed%20Peas&track_name=DON%27T%20YOU%20WORRY"
+      ]
+    },
+    {
+      "id": "metal-blackflag-tvparty",
+      "title": "TV Party",
+      "artist": "Black Flag",
+      "year": 1981,
+      "country": "US",
+      "genre": "Hardcore Punk",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Happy",
+        "Sarcastic"
+      ],
+      "hints": [
+        "Der Groove wird vor allem vom Baß der Band getragen – laut Kritik stärker als von der Gitarre.",
+        "Der Song wurde dreimal aufgenommen, und jede Fassung nennt andere Fernsehshows ihrer Epoche.",
+        "Sänger Henry Rollins bezeichnete den Text als Satire auf Menschen, die in einer TV-Welt zu Hause bleiben.",
+        "Ein Video zeigt Band und Freunde vor einem Fernseher mit Bier; Regie führte der Fotograf Glen E. Friedman.",
+        "Das Musikmagazin 'Billboard' empfahl den Song in der Ausgabe vom 1. Mai 1982 in der Rubrik 'Top Singles'."
+      ],
+      "lyrics": {
+        "real": [
+          "We're gonna have a TV party tonight",
+          "We sit glued to the TV set all night",
+          "Why go into the outside world at all"
+        ],
+        "fake": "Static on the screen and the whole street falls asleep"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=psUOyXGacL0",
+        "spotify": "https://open.spotify.com/track/4DA95pyBe6QORPGvTEuMWQ",
+        "amazonMusic": "https://music.amazon.com/tracks/B004163GE6"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-blackflag-tvparty.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/TV_Party_(EP)",
+        "https://en.wikipedia.org/wiki/Damaged_(Black_Flag_album)",
+        "https://en.wikipedia.org/wiki/Black_Flag_(band)",
+        "https://api.lyrics.ovh/v1/Black%20Flag/TV%20Party",
+        "https://lrclib.net/api/get?artist_name=Black%20Flag&track_name=TV%20Party"
+      ]
+    },
+    {
+      "id": "rock-sabbath-paranoid",
+      "title": "Paranoid",
+      "artist": "Black Sabbath",
+      "year": 1970,
+      "country": "GB",
+      "genre": "Heavy Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dark",
+        "Powerful",
+        "Raw",
+        "Short"
+      ],
+      "hints": [
+        "Der Titelsong des zweiten Albums entstand beiläufig: Der Gitarrist spielte nur das Riff, der Rest entstand in rund zwei Stunden.",
+        "Das Album entstand in nur zwei Studio-Tagen im Juni 1970 in London, produziert von Rodger Bain.",
+        "Bassist Geezer Butler sagte 2013, der Text handele von Depression, die er von Verfolgungswahn nicht unterscheiden konnte.",
+        "Das Schwein mit dem Schwert auf dem Cover stammt von einer Idee Tony Iommis; fotografiert hat Keef in Buckinghamshire.",
+        "Als Single erschien der Song im August 1970 und erreichte Platz 4 der britischen Charts – die einzige Top-10-Platzierung der Band."
+      ],
+      "lyrics": {
+        "real": [
+          "Finished with my woman 'cause she couldn't help me with my mind",
+          "People think I'm insane because I am frowning all the time",
+          "All day long I think of things but nothing seems to satisfy"
+        ],
+        "fake": "Whispers in the hallway that nobody else can hear at night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0qanF-91aJo",
+        "spotify": "https://open.spotify.com/track/2z71jdeVcC782NgsYZ6N8q",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DZVJVM2P"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/rock-sabbath-paranoid.jpg",
+      "packs": [
+        "Rock Anthems",
+        "metal-hardcore",
+        "60s & 70s Soul & Rock Legends"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Paranoid_(album)",
+        "https://en.wikipedia.org/wiki/Black_Sabbath",
+        "https://www.songfacts.com/facts/black-sabbath/paranoid",
+        "https://www.black-sabbath.com/discography/blacksabbath/paranoid/",
+        "https://api.lyrics.ovh/v1/Black%20Sabbath/Paranoid"
+      ]
+    },
+    {
+      "id": "yt-QmdxRSBQ2G0",
+      "title": "Living On the Ceiling",
+      "artist": "Blancmange",
+      "year": 1982,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Eine indische Tabla und ein Sitar prägen den Klang und geben dem Song eine exotische Färbung.",
+        "Das Video wurde in Kairo gedreht und von Clive Richardson inszeniert.",
+        "Für 'Top of the Pops' und den Rundfunk musste eine Textzeile entschärft werden.",
+        "Die Single erschien im Oktober 1982 als dritte Veröffentlichung des britischen Synth-Pop-Duos.",
+        "In Großbritannien erreichte die Single Platz 7, in Australien Platz 5."
+      ],
+      "lyrics": {
+        "real": [
+          "You keep me running round and round",
+          "Up and down, I'm up the wall",
+          "I'm up the bloody tree"
+        ],
+        "fake": "I am a satellite spinning round the earth tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=QmdxRSBQ2G0",
+        "spotify": "https://open.spotify.com/track/7ygp7PFQu9oYlV72tSd2Wz",
+        "amazonMusic": "https://music.amazon.com/tracks/B078BD59VF"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/blancmange-living-on-the-ceiling.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Living_on_the_Ceiling",
+        "https://en.wikipedia.org/wiki/Blancmange_(band)",
+        "https://en.wikipedia.org/wiki/Happy_Families_(album)",
+        "https://www.officialcharts.com/artist/19533/blancmange/",
+        "https://api.lyrics.ovh/v1/Blancmange/Living%20On%20the%20Ceiling"
+      ]
+    },
+    {
+      "id": "yt-dgWxCWNkiqI",
+      "title": "Waves",
+      "artist": "Blancmange",
+      "year": 1983,
+      "country": "GB",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Der Sänger schrieb den Song in einem Sommerjob, in dem er in einem Wohnwagen saß und Betonplatten an Bauarbeiter verteilte.",
+        "Die Streichung auf dem Song arrangierte Linton Naiff, im Hintergrund sangen Madeline Bell und Stevie Lange.",
+        "Auf dem 12-Zoll-Format erschien eine Dance-Version von 8:34 Minuten.",
+        "Die Single erreichte Platz 19 der britischen Charts und blieb neun Wochen in den Listen.",
+        "Es war die vierte und letzte Single des Debütalbums 'Happy Families'."
+      ],
+      "lyrics": {
+        "real": [
+          "I live in a wafer thin dream",
+          "It's just a wave passing over me",
+          "It must be my destiny"
+        ],
+        "fake": "The tide is turning as the moonlight starts to shine upon the shore"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=dgWxCWNkiqI",
+        "spotify": "https://open.spotify.com/track/210fuXISFCXQCvRvWzoXgW",
+        "amazonMusic": "https://music.amazon.com/tracks/B07GTKT7LJ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/blancmange-waves.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Waves_(Blancmange_song)",
+        "https://en.wikipedia.org/wiki/Blancmange_(band)",
+        "https://en.wikipedia.org/wiki/Happy_Families_(album)",
+        "https://www.officialcharts.com/artist/19533/blancmange/",
+        "https://lrclib.net/api/get?artist_name=Blancmange&track_name=Waves"
+      ]
+    },
+    {
+      "id": "90s-blind-melon-no-rain",
+      "title": "No Rain",
+      "artist": "Blind Melon",
+      "year": 1992,
+      "country": "US",
+      "genre": "Alternative Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Happy",
+        "Classic",
+        "Summer"
+      ],
+      "hints": [
+        "Das Video inszenierte Samuel Bayer; die Bienenkostüm-Figur orientierte sich am Coverbild des Debütalbums.",
+        "Aufgenommen wurde der Song in den London Bridge Studios in Seattle.",
+        "Die Single erschien 1993 als zweite Auskopplung des Debütalbums und wurde von MTV stark gespielt.",
+        "In den USA erreichte der Song Platz 20 der Hot 100 und jeweils Platz 1 der Rock- und Alternative-Listen.",
+        "Frontmann Shannon Hoon starb 1995 im Alter von 28 Jahren, nur drei Jahre nach dem Debütalbum."
+      ],
+      "lyrics": {
+        "real": [
+          "All I can say is that my life is pretty plain",
+          "I like watching the puddles gather rain",
+          "And speak my point of view"
+        ],
+        "fake": "Dancing with the bees under the ancient trees in the breeze"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3qVPNONdF58",
+        "spotify": "https://open.spotify.com/track/6txWz9UapYHVxEd7dDIHXT",
+        "amazonMusic": "https://music.amazon.com/tracks/B001QC90SY"
+      },
+      "coverUrl": "/covers/90s-blind-melon-no-rain.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "soul-funk",
+        "90s Unplugged",
+        "Indie & Alternative"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/No_Rain",
+        "https://en.wikipedia.org/wiki/Blind_Melon",
+        "https://en.wikipedia.org/wiki/Blind_Melon_(album)",
+        "https://en.wikipedia.org/wiki/Samuel_Bayer",
+        "https://api.lyrics.ovh/v1/Blind%20Melon/No%20Rain"
+      ]
+    },
+    {
+      "id": "yt-T3oJsjbmV7k",
+      "title": "Atomic",
+      "artist": "Blondie",
+      "year": 1980,
+      "country": "US",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die Albumversion beginnt mit einer Anspielung auf ein Kinderlied und enthält ein Solo der Bassgitarre.",
+        "Die 7-Zoll-Version wurde von Mike Chapman gemixt und lässt die Kinderlied-Einleitung weg.",
+        "Die B-Seite war ein reggae-beeinflusstes Stück, und die britische 12-Zoll-Ausgabe enthielt eine Live-Cover-Version von David Bowies 'Heroes'.",
+        "Die Band nahm den Song 2014 für die Compilation 'Greatest Hits Deluxe Redux' zum 40-jährigen Bestehen neu auf.",
+        "In Großbritannien stand die Single zwei Wochen auf Platz 1 der Single-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "Your hair is beautiful",
+          "Make me tonight",
+          "Tonight make it magnificent"
+        ],
+        "fake": "I was born in the night and I'm a rocket in flight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T3oJsjbmV7k",
+        "spotify": "https://open.spotify.com/track/5QIbR39hAEDIOkr4ggh4xc",
+        "amazonMusic": "https://music.amazon.com/tracks/B001QAIKEG"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "80s Flashback",
+        "Dance Floor Fillers",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/blondie-atomic--remastered-2001-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Atomic_(song)",
+        "https://en.wikipedia.org/wiki/Blondie_(band)",
+        "https://en.wikipedia.org/wiki/Eat_to_the_Beat",
+        "https://www.officialcharts.com/artist/16742/blondie/",
+        "https://lrclib.net/api/get?artist_name=Blondie&track_name=Atomic"
+      ]
+    }
+  ]
+}

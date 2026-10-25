@@ -1,0 +1,740 @@
+{
+  "songs": [
+    {
+      "id": "yt-8bKJYsd1_cg",
+      "title": "Sommersprossen",
+      "artist": "UKW",
+      "year": 1982,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die Band war nur wenige Jahre aktiv: von 1979 bis 1983.",
+        "Die Single erschien 1982 bei Telefunken als 7-Zoll in Deutschland.",
+        "Der Text erzählt von einer Radtour durch den Grunewald, einem Strandkorb am Wannsee und von Sonnencreme gegen den Sonnenbrand.",
+        "Im Refrain schwört der Sänger der Frau seine Liebe und vergleicht sie mit einem Fisch.",
+        "Refrain-Zeile: 'Ich bin ja so verschossen'."
+      ],
+      "lyrics": {
+        "real": [
+          "Durch den Grunewald zum Badestrande",
+          "Wir beide radeln Hand in Hand",
+          "Schau Tina, deine zarte Haut"
+        ],
+        "fake": "Wir bleiben heute zu Hause, denn es regnet den ganzen Tag"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=8bKJYsd1_cg"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "80s Flashback",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ukw-sommersprossen-single.jpg",
+      "hintEvidence": [
+        "https://musicbrainz.org/release/ff271c45-d793-440b-a496-7115bf09ad10",
+        "https://musicbrainz.org/artist/07f79846-fb0b-439a-b492-12ea55615984",
+        "https://www.discogs.com/release/698891",
+        "https://api.lyrics.ovh/v1/UKW/Sommersprossen",
+        "https://www.youtube.com/watch?v=8bKJYsd1_cg"
+      ]
+    },
+    {
+      "id": "piano-kodaline-all-i-want",
+      "title": "All I Want",
+      "artist": "Kodaline",
+      "year": 2013,
+      "country": "IE",
+      "genre": "Indie Pop / Rock Influence",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Emotional",
+        "Epic"
+      ],
+      "hints": [
+        "Die Aufnahme entstand 2012 und erschien im Oktober 2013 als vierte Single des Debütalbums einer irischen Band aus Dublin.",
+        "In den irischen Single-Charts erreichte der Track Platz 15, in Großbritannien Platz 67.",
+        "Das Musikvideo inszenierte der irische Regisseur Stevie Russell und erschien in zwei Teilen.",
+        "Der Song lief im Soundtrack des 2014er Kinofilms 'The Fault in Our Stars' nach John Green.",
+        "Refrain-Zeile: 'I died a little bit inside'."
+      ],
+      "lyrics": {
+        "real": [
+          "All I want is nothing more",
+          "To hear you knocking at my door",
+          "I died a little bit inside"
+        ],
+        "fake": "We danced through the empty streets until the morning came around"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=jGUASAxXwg4",
+        "spotify": "https://open.spotify.com/track/0NlGoUyOJSuSHmngoibVAs"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers",
+        "Movie Hits",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/piano-kodaline-all-i-want.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/All_I_Want_(Kodaline_song)",
+        "https://en.wikipedia.org/wiki/In_a_Perfect_World_(Kodaline_album)",
+        "https://en.wikipedia.org/wiki/Kodaline",
+        "https://www.songfacts.com/facts/kodaline/all-i-want",
+        "https://en.wikipedia.org/wiki/The_Fault_in_Our_Stars_(film)"
+      ]
+    },
+    {
+      "id": "soul-koolgang-celebration",
+      "title": "Celebration",
+      "artist": "Kool & The Gang",
+      "year": 1980,
+      "country": "US",
+      "genre": "Funk / Disco-Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song erschien im Oktober 1980 als erste Single vom zwölften Studioalbum einer US-Funkband aus Jersey City.",
+        "Veröffentlicht wurde er bei De-Lite, jenem R&B-Label, bei dem die Band bereits zu Beginn unterschrieben hatte.",
+        "Anfang 1981 stand der Track zwei Wochen auf Platz 1 der Billboard Hot 100, bis Dolly Partons \"9 to 5\" ihn ablöste.",
+        "Bis Ende 1980 führte er außerdem die Hot-Dance- und die R&B-Charts an.",
+        "Refrain-Zeile: 'Let's all celebrate and have a good time'."
+      ],
+      "lyrics": {
+        "real": [
+          "A celebration to last throughout the years",
+          "We gonna celebrate your party with you",
+          "It's time to come together"
+        ],
+        "fake": "The band plays on and the dancers keep moving all night long"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=C1hp04_zEWk"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "soul-funk"
+      ],
+      "coverUrl": "/covers/soul-koolgang-celebration.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Celebration_(Kool_%26_the_Gang_song)",
+        "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+        "https://en.wikipedia.org/wiki/De-Lite_Records",
+        "https://music.apple.com/us/album/celebration-single-version/1444107292?i=1444107530",
+        "https://music.apple.com/us/album/celebrate/1444107292"
+      ]
+    },
+    {
+      "id": "metal-korn-freak",
+      "title": "Freak on a Leash",
+      "artist": "Korn",
+      "year": 1998,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Aggressive",
+        "Deep"
+      ],
+      "hints": [
+        "Der Song erschien im Februar 1999 als Single zum dritten Studioalbum einer US-Nu-Metal-Band aus Bakersfield, Kalifornien.",
+        "Das Album erschien am 18. August 1998 und stieg mit 268.000 verkauften Einheiten in der ersten Woche auf Platz 1 der Billboard 200.",
+        "Der Text kommentiert die Musikindustrie, die den Künstler wie einen Hund an der Leine hält.",
+        "Der Clip enthält animierte Passagen des Zeichners Todd McFarlane und war für neun MTV Video Music Awards nominiert.",
+        "2000 gewann das Video außerdem den Grammy für das beste kurze Musikvideo."
+      ],
+      "lyrics": {
+        "real": [
+          "Something takes a part of me",
+          "You'll never see me fall from grace",
+          "Something lost and never seen"
+        ],
+        "fake": "The mirror on the wall shows a stranger wearing my face"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Yed3-mayC6U"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Rock Anthems",
+        "metal-hardcore"
+      ],
+      "coverUrl": "/covers/korn-freak-on-a-leash.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Follow_the_Leader_(Korn_album)",
+        "https://en.wikipedia.org/wiki/Korn",
+        "https://www.songfacts.com/facts/korn/freak-on-a-leash",
+        "https://en.wikipedia.org/wiki/Todd_McFarlane",
+        "https://music.apple.com/us/album/freak-on-a-leash/1831584251?i=1831584743"
+      ]
+    },
+    {
+      "id": "yt-7MrxZ9y6I2o",
+      "title": "Computer Liebe",
+      "artist": "Kraftwerk",
+      "year": 1981,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die rheinische Band veröffentlichte das Album 1981 bei Kling Klang und EMI; die Aufnahmen entstanden zwischen 1979 und 1981 im eigenen Studio in Düsseldorf.",
+        "Der Song erschien 1981 als Single und wurde in Großbritannien mit 'The Model' als B-Seite veröffentlicht.",
+        "Der Text erzählt von einer Person, die abends allein vor dem Bildschirm sitzt und ein Rendezvous per Bildschirmtext sucht.",
+        "Nach einem ersten Platz 36 wurde die Single im Dezember 1981 mit beiden Titeln neu verpackt und stieg daraufhin auf Platz 1 der britischen Hitparade.",
+        "Refrain-Zeile: 'Ich brauch ein Rendezvous, Rendezvous'."
+      ],
+      "lyrics": {
+        "real": [
+          "Ich bin allein, mal wieder ganz allein",
+          "Starr auf den Fernsehschirm, den Fernsehschirm",
+          "Ich brauch ein Rendezvous, Rendezvous"
+        ],
+        "fake": "Am Morgen klingelt das Telefon, doch niemand spricht mit mir"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7MrxZ9y6I2o"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "German Classics",
+        "80s Flashback",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/kraftwerk-computer-liebe--2009-remaster-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Computer_Love_(Kraftwerk_song)",
+        "https://en.wikipedia.org/wiki/Kraftwerk",
+        "https://en.wikipedia.org/wiki/Computer_World",
+        "https://music.apple.com/us/album/computer-love/830083942?i=830083954",
+        "https://api.lyrics.ovh/v1/Kraftwerk/Computer%20Liebe"
+      ]
+    },
+    {
+      "id": "synth-kraftwerk-model",
+      "title": "Das Model",
+      "artist": "Kraftwerk",
+      "year": 1978,
+      "country": "DE",
+      "genre": "Electronic / Synthpop",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Cool",
+        "Electronic",
+        "Minimalist",
+        "Retro"
+      ],
+      "hints": [
+        "Die rheinische Band veröffentlichte 1978 eine Single zum Album 'Die Mensch-Maschine'.",
+        "Die englische Fassung erreichte in Großbritannien Platz 1 der Hitparade.",
+        "Der Song entstand nach dem Vorbild der Mannequins, die im Kölner Nachtclub 'The Bagel' arbeiteten.",
+        "Der deutsche Text karikiert, wie Schönheit vermarktet wird: Die Frau wird zur Ware und ihr Titelbild ist fabelhaft.",
+        "Refrain-Zeile: 'Sie wirkt so kühl, an sie kommt niemand ran'."
+      ],
+      "lyrics": {
+        "real": [
+          "Sie wirkt so kühl, an sie kommt niemand ran",
+          "Im Scheinwerferlicht ihr junges Lächeln strahlt",
+          "Sie stellt sich zur Schau für das Konsumprodukt"
+        ],
+        "fake": "Immer wenn die Lichter ausgehen, fängt der Film von vorne an"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GEnx9xS79Lc"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "youtube-import",
+        "German Classics"
+      ],
+      "coverUrl": "/covers/synth-kraftwerk-model.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Das_Model",
+        "https://en.wikipedia.org/wiki/The_Man-Machine",
+        "https://en.wikipedia.org/wiki/Kraftwerk",
+        "https://www.songfacts.com/facts/kraftwerk/the-model",
+        "https://lrclib.net/api/get?artist_name=Kraftwerk&track_name=Das%20Model"
+      ]
+    },
+    {
+      "id": "yt-H0KNa9y0nS0",
+      "title": "Tour de France",
+      "artist": "Kraftwerk",
+      "year": 1983,
+      "country": "DE",
+      "genre": "NDW",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die Musik zitiert den Beginn von Paul Hindemiths Sonate für Flöte und Klavier ('Heiter Bewegt').",
+        "Den Text schrieben Ralf Hütter und Maxime Schmitt – letzterer war ein französischer Label-Mitarbeiter der Band.",
+        "Die Single erschien im Juli 1983 bei Kling Klang in Düsseldorf, genau zum 80. Jahrestag der ersten Radrennfahrt.",
+        "In Großbritannien erreichte sie am 21. August 1983 Platz 22 der Hitparade; das Cover-Motiv stammt aus einem ungarischen Briefmarkenentwurf von 1953.",
+        "1984 kam eine neue Version des Stücks heraus, die im US-Clubchart Platz 4 belegte – im selben Jahr lief der Song im Film 'Breakin''."
+      ],
+      "lyrics": {
+        "real": [
+          "En danseuse jusqu'au sommet",
+          "Pédaler en grand braquet",
+          "Camarades et amitié"
+        ],
+        "fake": "La lune éclaire la place où les vans répètent leurs pas"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=H0KNa9y0nS0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "electronic-synth",
+        "German Classics",
+        "80s Flashback"
+      ],
+      "coverUrl": "/covers/kraftwerk-tour-de-france--2009-remaster-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Tour_de_France_(song)",
+        "https://en.wikipedia.org/wiki/Tour_de_France_Soundtracks",
+        "https://www.songfacts.com/facts/kraftwerk/tour-de-france",
+        "https://music.apple.com/us/album/tour-de-france-2003/726341054?i=726341452",
+        "https://api.lyrics.ovh/v1/Kraftwerk/Tour%20de%20France"
+      ]
+    },
+    {
+      "id": "country-kris-mcgee",
+      "title": "Me and Bobby McGee",
+      "artist": "Kris Kristofferson",
+      "year": 1970,
+      "country": "US",
+      "genre": "Country / Folk Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Romantic",
+        "Epic"
+      ],
+      "hints": [
+        "Die Idee für den Titel kam von Labelchef Fred Foster; Namensgeberin war eine Studio-Assistentin, deren Nachname der Autor falsch verstanden hatte.",
+        "Der Text erzählt von zwei Vagabunden, die per Anhalter durch den südlichen Teil der USA ziehen, nach Kalifornien weiterfahren und sich nahe Salinas trennen.",
+        "Uraufführung: Roger Miller nahm den Song 1969 auf und kam damit auf Platz 12 der US-Countrycharts; Gordon Lightfoots Version wurde 1970 in Kanada Nummer eins.",
+        "Die posthum veröffentlichte Aufnahme von Janis Joplin stieg 1971 auf Platz 1 der Billboard Hot 100 – die zweite Nummer-eins-Single einer Verstorbenen in der US-Chartgeschichte.",
+        "Die eigene Version erschien 1970 auf dem Debütalbum des Autors und wurde im Roadmovie 'Two-Lane Blacktop' von Monte Hellman verwendet."
+      ],
+      "lyrics": {
+        "real": [
+          "Bobby thumbed a diesel down just before it rained",
+          "Freedom's just another word for nothin' left to lose",
+          "Nothin' ain't worth nothin' but it's free"
+        ],
+        "fake": "I left my old life in the dust and I'm not coming back"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=k5qfT--sfE8",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/country-kris-mcgee.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "country-folk",
+        "Country, Jazz & Blues",
+        "60s & 70s Soul & Rock Legends",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Me_and_Bobby_McGee",
+        "https://www.songfacts.com/facts/janis-joplin/me-and-bobby-mcgee",
+        "https://en.wikipedia.org/wiki/Kris_Kristofferson",
+        "https://music.apple.com/us/album/me-and-bobby-mcgee/1011273584?i=1011273588",
+        "https://api.lyrics.ovh/v1/Kris%20Kristofferson/Me%20and%20Bobby%20McGee"
+      ]
+    },
+    {
+      "id": "disney-frozen-forever",
+      "title": "For the First Time in Forever",
+      "artist": "Kristen Bell & Idina Menzel",
+      "year": 2013,
+      "country": "US",
+      "genre": "Soundtrack / Broadway",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Excited"
+      ],
+      "hints": [
+        "Der Song entstand erst im Juni 2013, also wenige Monate vor dem Kinostart; gesungen wurde er von den beiden Synchronsprechern, die auch Anna und Elsa sprechen.",
+        "Eine Textzeile aus der allerersten Fassung fiel bei Disney durch – die Tochter der Komponisten schlug die Ersatzzeile vor, die heute im Film zu hören ist.",
+        "Die Single erschien am 25. November 2013 bei Walt Disney Records, zwei Tage vor dem Kinostart des Animationsfilms.",
+        "Der Song erreichte in Japan und Südkorea die Top 20; später kehrte er als Reprise zurück, als die Geschwister sich im Eispalast gegenüberstehen.",
+        "Für die Broadway-Fassung musste die erste Strophe umgeschrieben werden, weil die Ausstattung dort keine Küchenutensilien vorsah."
+      ],
+      "lyrics": {
+        "real": [
+          "The window is open, so's that door",
+          "Who knew we owned eight thousand salad plates?",
+          "I wanna stuff some chocolate in my face"
+        ],
+        "fake": "The snow is melting and the sun is calling out my name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wmoR82v6G5o",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/kristen-bell-idina-menzel-for-the-first-time-in-forever.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "piano-ballads",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/For_the_First_Time_in_Forever",
+        "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+        "https://en.wikipedia.org/wiki/Frozen_(soundtrack)",
+        "https://music.apple.com/us/album/frozen-original-motion-picture-soundtrack/1440618177?i=1440618186",
+        "https://api.lyrics.ovh/v1/Kristen%20Bell/For%20the%20First%20Time%20in%20Forever"
+      ]
+    },
+    {
+      "id": "yt-WLVf9VMNPk0",
+      "title": "Creep",
+      "artist": "KSHMR",
+      "year": 2016,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Produzent ist ein US-DJ, der früher als Teil eines Produzentenduos unter anderem den Chart-Hit 'Like a G6' mitkreditierte.",
+        "Die Veröffentlichung erfolgte 2016 zunächst als kostenloser Download auf dem eigenen Videokanal des Produzenten.",
+        "Der Produzent zählte 2016 und 2017 zu den zwölf bestplatzierten DJs der Welt und gründete 2017 mit 'Dharma' ein eigenes Plattenlabel.",
+        "Das englische Original erschien 1992 auf dem Debütalbum der britischen Band, erreichte in Großbritannien Platz 78 und nach einer Reissue 1993 nochmal Platz 7.",
+        "Der Song ist eine Neuinterpretation des Gitarren-Klassikers von Radiohead – laut Rolling Stone eines der besten Debüt-Singles aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "When you were here before",
+          "Your skin makes me cry",
+          "What the hell am I doing here?"
+        ],
+        "fake": "We ride the neon highways till the morning light is gone"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WLVf9VMNPk0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "electronic-synth",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers"
+      ],
+      "coverUrl": "/covers/kshmr-creep--radiohead-cover---free-download-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Creep_(Radiohead_song)",
+        "https://en.wikipedia.org/wiki/Kshmr",
+        "https://www.songfacts.com/facts/radiohead/creep",
+        "https://www.youtube.com/watch?v=WLVf9VMNPk0",
+        "https://api.lyrics.ovh/v1/Radiohead/Creep"
+      ]
+    },
+    {
+      "id": "yt-sDhZPkqUJYA",
+      "title": "It Took Me So Long To Get Here, But Here I Am",
+      "artist": "KT Tunstall",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Die Aufnahme entstand 2015 und 2016 in mehreren Studios in Atwater Village, einem Viertel von Los Angeles, und wurde von Tony Hoffer produziert.",
+        "Der Song ist die dritte Single des fünften Albums einer Schottenin; das Album erschien am 9. September 2016.",
+        "Das Album erreichte in Großbritannien und Schottland Platz 7 der Albumcharts.",
+        "Die Single erschien am 29. November 2016 und war die dritte von vier Singles des Albums.",
+        "Zwei Jahre vor der Veröffentlichung hatte die Sängerin erwogen, die Musikkarriere aufzugeben und stattdessen Filmmusik zu schreiben."
+      ],
+      "lyrics": {
+        "real": [
+          "I took it all, all on my back",
+          "I picked it up on my shoulders",
+          "And it was better, it was better than nothing"
+        ],
+        "fake": "The city sleeps beneath the rain and I am still awake"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=sDhZPkqUJYA",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "piano-ballads",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/kt-tunstall-it-took-me-so-long-to-get-here--but-here-i-am.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kin_(KT_Tunstall_album)",
+        "https://en.wikipedia.org/wiki/KT_Tunstall",
+        "https://www.songfacts.com/facts/kt-tunstall/it-took-me-so-long-to-get-here-but-here-i-am",
+        "https://en.wikipedia.org/wiki/Tony_Hoffer",
+        "https://api.lyrics.ovh/v1/KT%20Tunstall/It%20Took%20Me%20So%20Long%20To%20Get%20Here%2C%20But%20Here%20I%20Am"
+      ]
+    },
+    {
+      "id": "yt-e-XLPi09lvY",
+      "title": "Rica y Apretadita",
+      "artist": "Kumbia All Starz",
+      "year": 2008,
+      "country": "US",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Das Original stammt vom panamaischen Reggaeton-Sänger El General und erschien 1995 auf dem Album 'Es Mundial'.",
+        "Die texanische Cover-Version erschien am 20. Mai 2008 als zweite Single des zweiten Albums der Gruppe.",
+        "Produziert wurde sie von A.B. Quintanilla III und Luigi Giraldo; den Gesang übernahmen Ricky Rick und Melissa Jiménez.",
+        "In den US-Charts erreichte die Single Platz 50 der Hot Latin Songs, Platz 17 der Latin Rhythm Airplay und Platz 34 der Regional Mexican Airplay.",
+        "Die Gruppe entstand 2006 in Corpus Christi, Texas, und legte noch im selben Jahr ein Debütalbum vor, das Platz 1 der Latin-Pop-Charts erreichte."
+      ],
+      "lyrics": {
+        "real": [
+          "Digo mi mamita porque eres rica",
+          "No como las otras que pierden su figura",
+          "Comen y comen parecen una bola"
+        ],
+        "fake": "Voy a dormir en el mar con la luna en la piel"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=e-XLPi09lvY",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "country-folk",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/kumbia-all-starz-rica-y-apretadita.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rica_y_Apretadita",
+        "https://en.wikipedia.org/wiki/Kumbia_All_Starz",
+        "https://en.wikipedia.org/wiki/Planeta_Kumbia",
+        "https://music.apple.com/us/album/planeta-kumbia/714158876?i=714159037",
+        "https://lrclib.net/api/get/7697879"
+      ]
+    },
+    {
+      "id": "yt-L8F_Q0BCAqg",
+      "title": "Clouds",
+      "artist": "BUNT. & Nate Traveller",
+      "year": 2023,
+      "country": "DE",
+      "genre": "Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Ein Deep-House-Titel aus der elektronischen Volksmusik, der Anfang Januar 2023 über Arista Records erschien.",
+        "Das Cover zeigt eine schwarz-weiße Küstenszene, in der eine Gestalt ins Wasser läuft; der Titel steht in Handschrift daneben.",
+        "Im Text kehrt der Rat 'Take it easy' mehrfach wieder, dazwischen versichert eine Stimme, sie habe nie aufgehört zu lieben.",
+        "Die Single erschien außerdem auf dem EP 'Love' und auf dem 2024er Album 'Levi Don't Do It'.",
+        "Hinter dem Projekt steckt Levi Wijk, ein am 3. Januar 1996 in Stuttgart geborener Producer, der bis 2021 gemeinsam mit Nico Crispin auftrat."
+      ],
+      "lyrics": {
+        "real": [
+          "Take it easy",
+          "I never meant to fall out of love with you",
+          "Because I truly did love you"
+        ],
+        "fake": "We drift through endless summer while the horizon burns gold"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=L8F_Q0BCAqg",
+        "spotify": "https://open.spotify.com/track/5UXlDFlgxnEKSgCnMQX9XM",
+        "amazonMusic": "https://music.amazon.com/albums/B0BT8P32K5?trackAsin=B0BT8NHRZX"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "electronic-synth",
+        "Electronic & Techno",
+        "Country, Jazz & Blues"
+      ],
+      "coverUrl": "/covers/kygo-clouds.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Bunt_(DJ)",
+        "https://music.apple.com/us/album/clouds/1668459006",
+        "https://api.lyrics.ovh/v1/BUNT/Clouds",
+        "https://www.youtube.com/watch?v=HvvECHLHKrM",
+        "https://itunes.apple.com/search?term=BUNT.+Clouds+Nate+Traveller&limit=5&entity=song"
+      ]
+    }
+  ]
+}

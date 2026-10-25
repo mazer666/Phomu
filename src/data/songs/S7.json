@@ -1,0 +1,753 @@
+{
+  "songs": [
+    {
+      "id": "90s-sinéad-oconnor-nothing-compares",
+      "title": "Nothing Compares 2 U",
+      "artist": "Sinéad O'Connor",
+      "year": 1990,
+      "country": "IE",
+      "genre": "Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Sad",
+        "Epic",
+        "Soulful"
+      ],
+      "hints": [
+        "Der Song wurde von Prince komponiert und erschien 1985 auf dem Album 'The Family' seiner Funkband.",
+        "Die irische Sängerin veröffentlichte sie am 8. Januar 1990 als Vorabsingle ihres im März 1990 erschienenen Albums 'I Do Not Want What I Haven't Got'.",
+        "Das Musikvideo zeigt sie fast nur in Nahaufnahme; am Ende rollen ihr zwei Tränen über die Wangen.",
+        "Der Clip gewann bei den MTV Video Music Awards 1990 dreimal, darunter 'Video of the Year' – als erste Frau erhielt sie diesen Preis.",
+        "In den USA stand sie vier Wochen an der Spitze der Billboard Hot 100."
+      ],
+      "lyrics": {
+        "real": [
+          "I go out every night and sleep all day",
+          "Since you been gone, I can do whatever I want",
+          "I can eat my dinner in a fancy restaurant"
+        ],
+        "fake": "I keep your photograph beside the firelight, counting every shadow on the wall"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=0-EF60neguk",
+        "spotify": "https://open.spotify.com/track/5GHY1DFWKz3Prg2V0Iodqo",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/90s-sinéad-oconnor-nothing-compares.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Nothing_Compares_2_U",
+        "https://de.wikipedia.org/wiki/Nothing_Compares_2_U",
+        "https://www.songfacts.com/facts/sinead-oconnor/nothing-compares-2-u",
+        "https://lrclib.net/api/get?artist_name=Sin%C3%A9ad%20O%27Connor&track_name=Nothing%20Compares%202%20U",
+        "https://itunes.apple.com/search?term=Sin%C3%A9ad+O%27Connor+Nothing+Compares+2+U&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "yt-Ruq33iAxL5k",
+      "title": "Cities in Dust",
+      "artist": "Siouxsie and the Banshees",
+      "year": 1985,
+      "country": "GB",
+      "genre": "Post-Punk / Goth",
+      "difficulty": "medium",
+      "mood": [
+        "Post-Punk",
+        "Epic",
+        "Dark"
+      ],
+      "hints": [
+        "Der Text erzählt von der durch den Vulkanausbruch von 79 n. Chr. zerstörten römischen Stadt Pompeii.",
+        "Er erwähnt auch einen Schrein zu den 'Lares Familiares', den Schutzgöttern der Römer.",
+        "Es war die Leit-Single des Albums 'Tinderbox' und erschien am 18. Oktober 1985 – noch vor dem Album im April 1986.",
+        "In den USA erschien die Single 1986 über Geffen; auf der 12-Zoll-Version lag ein Remix von Bob Rock.",
+        "In Großbritannien erreichte der Song Platz 21 der Single-Charts; eine Cover-Version lief im Trailer zur vierten Staffel von 'Game of Thrones'."
+      ],
+      "lyrics": {
+        "real": [
+          "Water was running, children were running",
+          "Under the mountain, a golden fountain",
+          "We found you hiding, we found you lying"
+        ],
+        "fake": "We ride the midnight train to nowhere, chasing ghosts along the empty line"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Ruq33iAxL5k",
+        "spotify": "https://open.spotify.com/track/5bA7ihqYlbybYEI2j2Kwfn",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/siouxsie-and-the-banshees-cities-in-dust.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cities_in_Dust",
+        "https://en.wikipedia.org/wiki/Tinderbox_(Siouxsie_and_the_Banshees_album)",
+        "https://api.lyrics.ovh/v1/Siouxsie%20and%20the%20Banshees/Cities%20in%20Dust",
+        "https://lrclib.net/api/get?artist_name=Siouxsie%20and%20the%20Banshees&track_name=Cities%20in%20Dust",
+        "https://itunes.apple.com/search?term=Siouxsie+and+the+Banshees+Cities+In+Dust&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "yt-37PKcsvD0hg",
+      "title": "Happy House",
+      "artist": "Siouxsie and the Banshees",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Post-Punk / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Post-Punk",
+        "Ironic",
+        "Nostalgic"
+      ],
+      "hints": [
+        "Der Song entstand, nachdem zwei neue Musiker zur Band gestoßen waren: Schlagzeuger Budgie (zuvor bei The Slits) und Gitarrist John McGeoch (zuvor bei Magazine).",
+        "Er erschien am 7. März 1980 bei Polydor als erste Single des dritten Albums 'Kaleidoscope'.",
+        "Die Sängerin erklärte den Song für satirisch: Er karikiert das Werbebild der perfekten, glücklichen Familie.",
+        "In Großbritannien erreichte die Single Platz 17 der Hitparade.",
+        "Das markante Gitarrenriff wurde 1993 von der Eurodance-Gruppe Cappella für 'U Got 2 Know' übernommen und 2000 von Mindless Self Indulgence für 'Bitches' gesampelt."
+      ],
+      "lyrics": {
+        "real": [
+          "We've come to play in the happy house",
+          "We've come to scream in the happy house",
+          "We've done no wrong with our blinkers on"
+        ],
+        "fake": "Every room is a mirror, and every mirror tells a different story"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=37PKcsvD0hg",
+        "spotify": "https://open.spotify.com/track/09LikVa6VgPYcsChqn1N0U",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Indie & Alternative"
+      ],
+      "coverUrl": "/covers/siouxsie-and-the-banshees-happy-house.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Happy_House",
+        "https://api.lyrics.ovh/v1/Siouxsie%20and%20the%20Banshees/Happy%20House",
+        "https://lrclib.net/api/get?artist_name=Siouxsie%20and%20the%20Banshees&track_name=Happy%20House",
+        "https://itunes.apple.com/search?term=Siouxsie+and+the+Banshees+Happy+House&limit=1&entity=song",
+        "https://en.wikipedia.org/wiki/Kaleidoscope_(Siouxsie_and_the_Banshees_album)"
+      ]
+    },
+    {
+      "id": "soul-sister-family",
+      "title": "We Are Family",
+      "artist": "Sister Sledge",
+      "year": 1979,
+      "country": "US",
+      "genre": "Disco / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Confident",
+        "Positive"
+      ],
+      "hints": [
+        "Der Song war das erste Werk, das Nile Rodgers und Bernard Edwards (Chic) für eine andere Band schrieben.",
+        "Aufgenommen wurde er im New Yorker Studio 'The Power Station' und erschien im April 1979 auf dem Label Cotillion.",
+        "Der Leadgesang der Gruppe wurde in nur einem einzigen Take eingespielt – die Sängerin war damals 19 Jahre alt.",
+        "1979 stand der Song in den USA auf Platz 1 der R&B- und auf Platz 2 der Pop-Charts.",
+        "2017 wählte die US-Bibliothek Library of Congress den Song für das 'National Recording Registry' aus."
+      ],
+      "lyrics": {
+        "real": [
+          "I got all my sisters with me",
+          "Get up everybody and sing",
+          "All of the people around us they say"
+        ],
+        "fake": "I learned to carry the sunrise in my pocket, just in case the day went wrong"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uyGY2NfYpeE",
+        "spotify": "https://open.spotify.com/track/5IKLwqBQG6KU6MP2zP80Nu",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-sister-family.jpg",
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/We_Are_Family_(song)",
+        "https://www.songfacts.com/facts/sister-sledge/we-are-family",
+        "https://api.lyrics.ovh/v1/Sister%20Sledge/We%20Are%20Family",
+        "https://lrclib.net/api/get?artist_name=Sister%20Sledge&track_name=We%20Are%20Family",
+        "https://en.wikipedia.org/wiki/We_Are_Family_(album)"
+      ]
+    },
+    {
+      "id": "yt-wWEY0dh1sgU",
+      "title": "Temple of Love (1992)",
+      "artist": "Sisters of Mercy",
+      "year": 1992,
+      "country": "GB",
+      "genre": "Gothic Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Gothic",
+        "Epic",
+        "Dramatic"
+      ],
+      "hints": [
+        "Der Song erschien ursprünglich 1983 als Nicht-Album-Single auf dem Label Merciful Release.",
+        "Die spätere Neufassung entstand mit der israelischen Sängerin Ofra Haza.",
+        "Sie wurde von Andrew Eldritch produziert, mit Unterstützung von Ian Stanley, dem früheren Keyboardisten von Tears for Fears.",
+        "In Großbritannien erreichte die Neufassung Platz 3 der Single-Charts, in Deutschland die Top 5.",
+        "Das Original von 1983 kam nie in die Mainstream-Charts, dafür eine Woche lang auf Platz 1 der UK-Indie-Charts – und blieb dort 36 Wochen."
+      ],
+      "lyrics": {
+        "real": [
+          "With the fire from the fireworks up above me",
+          "With a gun for a lover and a shot for the pain at hand",
+          "You run for cover in the temple of love"
+        ],
+        "fake": "The cathedral of the highway hums a low and ancient melody"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wWEY0dh1sgU",
+        "spotify": "https://open.spotify.com/track/1sTBgoilMy9KnQSftwcjeJ",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/sisters-of-mercy-temple-of-love--1992-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Temple_of_Love_(The_Sisters_of_Mercy_song)",
+        "https://api.lyrics.ovh/v1/The%20Sisters%20of%20Mercy/Temple%20of%20Love",
+        "https://lrclib.net/api/get?artist_name=The%20Sisters%20of%20Mercy&track_name=Temple%20of%20Love",
+        "https://itunes.apple.com/search?term=Sisters+of+Mercy+Temple+of+Love+1992&limit=1&entity=song",
+        "https://musicbrainz.org/ws/2/release/32d584f2-f75d-478d-b4a8-3be0d3bed6b1?fmt=json"
+      ]
+    },
+    {
+      "id": "90s-sixpence-kiss-me",
+      "title": "Kiss Me",
+      "artist": "Sixpence None the Richer",
+      "year": 1997,
+      "country": "US",
+      "genre": "Dream Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Romantic",
+        "Soft"
+      ],
+      "hints": [
+        "Der Song wurde von Matt Slocum geschrieben und von Steve Taylor produziert; aufgenommen wurde er im Studio 'The White House' in Nashville.",
+        "Eine christliche Alternative-Rock-Band veröffentlichte ihn 1997 als Leadsingle ihres selbstbetitelten dritten Albums.",
+        "Am 14. Juli 1998 kam er in die US-Alternative-Rotation, physisch erschien die Single am 12. August 1998.",
+        "In den USA erreichte er Platz 2 der Billboard Hot 100 und war das sechtsuccessfulste Single des Jahres 1999; weltweit stand er in 16 Ländern in den Top 10.",
+        "Das Video huldigt dem französischen Film 'Jules and Jim'; durch den Soundtrack zur Teenie-Komödie 'Eine wie keine' wurde der Song 1999 weltberühmt."
+      ],
+      "lyrics": {
+        "real": [
+          "Oh, kiss me beneath the milky twilight",
+          "Lead me out on the moonlit floor",
+          "Swing, swing, swing the spinning step"
+        ],
+        "fake": "I wrote your name in the margin of a rainy afternoon"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hII0JXUJNDo",
+        "spotify": "https://open.spotify.com/track/754kgU5rWscRTfvlsuEwFp",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/90s-sixpence-kiss-me.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kiss_Me_(Sixpence_None_the_Richer_song)",
+        "https://www.songfacts.com/facts/sixpence-none-the-richer/kiss-me",
+        "https://api.lyrics.ovh/v1/Sixpence%20None%20the%20Richer/Kiss%20Me",
+        "https://lrclib.net/api/get?artist_name=Sixpence%20None%20the%20Richer&track_name=Kiss%20Me",
+        "https://itunes.apple.com/search?term=Sixpence+None+the+Richer+Kiss+Me&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "disco-skrillex-scary",
+      "title": "Scary Monsters and Nice Sprites",
+      "artist": "Skrillex",
+      "year": 2010,
+      "country": "US",
+      "genre": "Dubstep / Electro House",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Cool",
+        "Electronic",
+        "Energy"
+      ],
+      "hints": [
+        "Der Beat entstand 2010 in der Vocal-Box des holländischen Electronik-Trios Noisia und war ursprünglich nur ein Test eines FM8-Synthesizers.",
+        "Der Titel ist eine Anspielung auf ein David-Bowie-Album aus dem Jahr 1980.",
+        "In der Originalfassung ist der Aufschrei 'Yes, oh my gosh!' zu hören; er stammt aus einem YouTube-Video einer Becher-Stacking-Weltmeisterin, die von der Nutzung überrascht war.",
+        "Bei den Grammy Awards 2012 gewann der Track den Preis für den besten Dance-Track.",
+        "Der Beat ist der zweite Titel der gleichnamigen EP, die am 22. Oktober 2010 über Mau5trap und Big Beat erschien."
+      ],
+      "lyrics": {
+        "real": [
+          "Yes, oh my god",
+          "Look at this, I'm a coward too",
+          "You don't need to hide, my friend"
+        ],
+        "fake": "Dancing on the empty highway under neon rain"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WSeNSzJ2-Jw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/disco-skrillex-scary.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Scary_Monsters_and_Nice_Sprites_(song)",
+        "https://en.wikipedia.org/wiki/Scary_Monsters_and_Nice_Sprites",
+        "https://www.songfacts.com/facts/skrillex/scary-monsters-and-nice-sprites",
+        "https://lrclib.net/api/get?artist_name=Skrillex&track_name=Scary%20Monsters%20and%20Nice%20Sprites",
+        "https://itunes.apple.com/search?term=Skrillex+Scary+Monsters+and+Nice+Sprites&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "metal-slayer-raining",
+      "title": "Raining Blood",
+      "artist": "Slayer",
+      "year": 1986,
+      "country": "US",
+      "genre": "Thrash Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Aggressive",
+        "Dark",
+        "Powerful"
+      ],
+      "hints": [
+        "Der Song beginnt mit 33 Sekunden Regen-Soundeffekten und endet nach einer vollen Minute weiterer Regengeräusche.",
+        "Die Musik schrieb Gitarrist Jeff Hanneman allein, den Text gemeinsam mit Kerry King; das Konzept erzählt von einer aus dem Himmel verbannten Seele, die auf Rache sinnt.",
+        "Aufgenommen wurde das Stück 1986 bei Hit City West in Los Angeles und produziert von Rick Rubin für das Label Def Jam.",
+        "Der Song ist der Abschlussstück des dritten Albums der Band und gilt als eines der bekanntesten Riffs der Metal-Geschichte.",
+        "Das Magazin Revolver führt den Mittelteil des Stücks als frühestes bekanntes Beispiel eines 'Breakdowns' an."
+      ],
+      "lyrics": {
+        "real": [
+          "Trapped in purgatory",
+          "From a lacerated sky",
+          "Now I shall reign in blood"
+        ],
+        "fake": "The crowd goes wild as the lightning cracks the sky tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CkaE237oiwE",
+        "spotify": "https://open.spotify.com/track/01Mpj13vURSO3cCLprPt5T",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-slayer-raining.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026",
+        "80s Flashback"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Raining_Blood",
+        "https://en.wikipedia.org/wiki/Reign_in_Blood",
+        "https://www.songfacts.com/facts/slayer/raining-blood",
+        "https://lrclib.net/api/get?artist_name=Slayer&track_name=Raining%20Blood",
+        "https://itunes.apple.com/search?term=Slayer+Raining+Blood&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "metal-slipknot-bleed",
+      "title": "Wait and Bleed",
+      "artist": "Slipknot",
+      "year": 1999,
+      "country": "US",
+      "genre": "Nu Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Aggressive",
+        "Energy",
+        "Dark"
+      ],
+      "hints": [
+        "Die Musik schrieb Sänger Joey Jordison allein, den Text improvisierte Corey Taylor in kurzer Zeit im Übungsraum.",
+        "Aufgenommen wurde das Stück bei Indigo Ranch in Malibu und produziert von Ross Robinson.",
+        "Das Video entstand als Claymation, in der die maskierte Bandfigur von Shawn Crahan als Puppe inszeniert ist.",
+        "Nach einer Remix-Fassung mit gesungenem statt geschrienem Gesang erschien der Song im Juli 1999 als Debüt-Single des selbstbetitelten Albums.",
+        "In den USA erreichte er Platz 34 der Mainstream-Rock-Charts, in Großbritannien Platz 27 der Single-Charts."
+      ],
+      "lyrics": {
+        "real": [
+          "I've felt the hate rise up in me",
+          "Kneel down and clear the stone of leaves",
+          "I wander out where you can't see"
+        ],
+        "fake": "I hear the sirens calling, we ride into the endless night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xAUaEfzt_VU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-slipknot-bleed.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Wait_and_Bleed",
+        "https://en.wikipedia.org/wiki/Slipknot_(album)",
+        "https://www.songfacts.com/facts/slipknot/wait-and-bleed",
+        "https://lrclib.net/api/get?artist_name=Slipknot&track_name=Wait%20and%20Bleed",
+        "https://itunes.apple.com/search?term=Slipknot+Wait+and+Bleed&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "soul-sly-affair",
+      "title": "Family Affair",
+      "artist": "Sly & The Family Stone",
+      "year": 1971,
+      "country": "US",
+      "genre": "Funk / Minimalist",
+      "difficulty": "medium",
+      "mood": [
+        "Cool",
+        "Moody",
+        "Intelligent"
+      ],
+      "hints": [
+        "Die Gitarren wurden fast vollständig aus dem Mix entfernt; übrig blieb ein Hohner-Pianet von Billy Preston über einer Trommelmaschine, die so klang wie ein Herzschlag.",
+        "Laut der Autobiografie des Frontmanns speist sich der Text weniger aus der eigenen Verwandtschaft als aus der späteren Ehefrau Kathy Silva und deren Schwester.",
+        "Die Single erschien am 6. November 1971 auf Epic als erstes neues Material seit rund zwei Jahren.",
+        "Sie stand drei Wochen auf Platz 1 der Billboard Hot 100 und fünf Wochen auf Platz 1 der R&B-Liste und war der dritte und letzte Nummer-eins-Hit der Band.",
+        "Eine gecoverte Fassung mit John Legend und Van Hunt gewann 2007 den Grammy für den besten R&B-Gesang einer Gruppe."
+      ],
+      "lyrics": {
+        "real": [
+          "It's a family affair, it's a family affair",
+          "Mom loves the both of them",
+          "One child grows up to be"
+        ],
+        "fake": "Dancing among the stars, playing my guitars tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xag5RKD0VHk",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-sly-affair.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Family_Affair_(Sly_and_the_Family_Stone_song)",
+        "https://en.wikipedia.org/wiki/There's_a_Riot_Goin'_On",
+        "https://www.songfacts.com/facts/sly-the-family-stone/family-affair",
+        "https://lrclib.net/api/get?artist_name=Sly%20and%20the%20Family%20Stone&track_name=Family%20Affair",
+        "https://itunes.apple.com/search?term=Sly+and+the+Family+Stone+Family+Affair&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "soul-sly-thankyou",
+      "title": "Thank You (Falettinme Be Mice Elf Agin)",
+      "artist": "Sly & The Family Stone",
+      "year": 1969,
+      "country": "US",
+      "genre": "Funk",
+      "difficulty": "hard",
+      "mood": [
+        "Cool",
+        "Energy",
+        "Experimental"
+      ],
+      "hints": [
+        "Larry Graham wird zugeschrieben, mit seinem E-Bass die Slap-Technik eingeführt zu haben; sie ist auf dem Track durchgehend zu hören.",
+        "In der dritten Strophe nennt der Text die früheren Erfolgssingles der Band: 'Dance to the Music', 'Everyday People', 'Sing a Simple Song' und 'You Can Make It If You Try'.",
+        "Die Single erschien im Dezember 1969 auf Epic als Doppel-A-Seite mit 'Everybody Is a Star'.",
+        "Sie erreichte im Februar 1970 zwei Wochen lang Platz 1 der Billboard Hot 100 und stand fünf Wochen an der Spitze der Soul-Single-Liste.",
+        "Ein Gitarren-Sample aus dem Stück steckt im 1989er-Hit 'Rhythm Nation' von Janet Jackson; 2017 wurde der Song in die Grammy Hall of Fame aufgenommen."
+      ],
+      "lyrics": {
+        "real": [
+          "Lookin' at the devil",
+          "Grinnin' at his gun",
+          "I want to thank you for lettin' me be myself again"
+        ],
+        "fake": "Shining on the dance floor till the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NOa5UOHdwnc",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/soul-sly-thankyou.jpg",
+      "packs": [
+        "soul-funk",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Thank_You_(Falettinme_Be_Mice_Elf_Agin)",
+        "https://en.wikipedia.org/wiki/Greatest_Hits_(Sly_and_the_Family_Stone_album)",
+        "https://www.songfacts.com/facts/sly-the-family-stone/thank-you-falettinme-be-mice-elf-agin",
+        "https://lrclib.net/api/get?artist_name=Sly%20and%20the%20Family%20Stone&track_name=Thank%20You%20(Falettinme%20Be%20Mice%20Elf%20Agin)",
+        "https://itunes.apple.com/search?term=Sly+and+the+Family+Stone+Thank+You+Falettinme&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "yt-JYIaWeVL1JM",
+      "title": "Rhythm Is A Dancer",
+      "artist": "SNAP!",
+      "year": 1992,
+      "country": "DE",
+      "genre": "Pop",
+      "difficulty": "medium",
+      "mood": [
+        "80s Flashback",
+        "Classic",
+        "Dance",
+        "Energy",
+        "Popular"
+      ],
+      "hints": [
+        "Die Single entstand in Deutschland und wurde von den Produzenten Michael Münzing und Luca Anzilotti geschrieben, die sich hinter den Pseudonymen Benito Benites und John 'Virgo' Garrett III verbargen.",
+        "Der Beat basiert auf einem Sample aus 'Automan' von Newcleus, einem Track von 1984.",
+        "Sängerin Thea Austin und Rapper Turbo B übernehmen die Parts; Turbo B wollte die berüchtigte Zeile 'I'm serious as cancer' zunächst nicht singen.",
+        "Die Single erschien am 30. März 1992 bei Arista und Logic als zweite Single des Albums 'The Madman's Return'.",
+        "Sie stand sechs Wochen auf Platz 1 der britischen Single-Charts, vom 2. August bis 13. September 1992, und erreichte in elf Ländern die Spitze."
+      ],
+      "lyrics": {
+        "real": [
+          "It's a soul's companion",
+          "You can feel it everywhere",
+          "Lift your hands and voices"
+        ],
+        "fake": "Racing through the neon streets till the daylight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JYIaWeVL1JM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Dance Floor Fillers",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/dance-snap-rhythm-is-a-dancer.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Rhythm_Is_a_Dancer",
+        "https://en.wikipedia.org/wiki/The_Madman's_Return",
+        "https://www.songfacts.com/facts/snap/rhythm-is-a-dancer",
+        "https://lrclib.net/api/get?artist_name=Snap%21&track_name=Rhythm%20Is%20a%20Dancer",
+        "https://itunes.apple.com/search?term=Snap+Rhythm+Is+A+Dancer+Madman's+Return&limit=1&entity=song"
+      ]
+    },
+    {
+      "id": "piano-snow-run",
+      "title": "Run (Piano Version)",
+      "artist": "Snow Patrol",
+      "year": 2003,
+      "country": "GB",
+      "genre": "Indie Rock / Anthem",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Powerful",
+        "Emotional"
+      ],
+      "hints": [
+        "Der Sänger schrieb den Song im Jahr 2000, nachdem er nachts in der Bar der Glasgow School of Art eine ganze Treppe hinuntergefallen war - geschrieben auf einer kleinen, kaputten Gitarre.",
+        "Aufgenommen wurde die Nummer 2003 in Britannia Row Studios in London sowie in einem Studio in Glasgow; sie erschien auf dem dritten Album der Band, das 2003 in Grossbritannien veröffentlicht wurde.",
+        "In Grossbritannien kam der Song 2004 auf Platz 5 der Single-Charts, in den USA erreichte er Platz 15 der Alternative-Charts.",
+        "Eine Sängerin coverte den Song 2008 für die Deluxe-Edition ihres Debütalbums; ihre Fassung stieg in Grossbritannien auf Platz 1 und war der schnellste jemals verkaufte Download.",
+        "Im Refrain rufen die Bandmitglieder immer wieder 'Light up, light up! As if you have a choice!' - der ikonische Moment dieser britischen Power-Ballade."
+      ],
+      "lyrics": {
+        "real": [
+          "I'll sing it one last time for you",
+          "Even if you cannot hear my voice",
+          "And we'll run for our lives"
+        ],
+        "fake": "Frost on the pavement while the piano plays it slow"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AOBs8dU4Pb8"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-snow-run.jpg",
+      "packs": [
+        "piano-ballads",
+        "Indie & Alternative",
+        "Global Hits 1950-2026",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Run_(Snow_Patrol_song)",
+        "https://en.wikipedia.org/wiki/Snow_Patrol",
+        "https://www.songfacts.com/facts/snow-patrol/run",
+        "https://lrclib.net/api/get?artist_name=Snow%20Patrol&track_name=Run",
+        "https://itunes.apple.com/search?term=Snow+Patrol+Run&limit=1&entity=song"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "songs": [
+    {
+      "id": "yt-Fm4WiX6i1FE",
+      "title": "Calm Down",
+      "artist": "Rema & Selena Gomez",
+      "year": 2022,
+      "country": "NG",
+      "genre": "Afrobeats",
+      "difficulty": "medium",
+      "mood": [
+        "60s/70s Legends",
+        "Happy",
+        "Popular",
+        "Positive",
+        "Smooth"
+      ],
+      "hints": [
+        "Afrobeats trifft Afropop: Der Rhythmus kommt aus Westafrika, gesungen wird in Englisch und nigerianischem Pidgin.",
+        "Der Song erschien als zweite Single des 2022 veröffentlichten Debütalbums eines nigerianischen Nachwuchstalents.",
+        "Für die spätere Remix-Version steuerte die US-Schauspielerin eine zusätzliche Strophe bei, geschrieben von der Songwriterin Kiddo AI.",
+        "Rekord: 58 Wochen auf Platz 1 der US-Afrobeats-Charts, zehn Wochen auf Platz 1 der US-Radio-Charts und Platz 3 in den Hot 100 - die höchste Platzierung, die ein Afrobeats-Act dort je erreichte.",
+        "Laut IFPI war die Kollaboration die zweitbestverkaufte Single der Welt des Jahres 2023; das Video erreichte eine Milliarde YouTube-Aufrufe."
+      ],
+      "lyrics": {
+        "real": [
+          "Baby, calm down, calm down",
+          "I see this fine girl, for my party she wear yellow",
+          "Because e get many girls wey put my heart for pain"
+        ],
+        "fake": "Girl, you sweet like ice cream, ooh, ice cream, ooh"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Fm4WiX6i1FE",
+        "spotify": "https://open.spotify.com/track/10XGH7wB1KnMFaAnPQhzFo",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/finale-rema-calm.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Calm_Down_(Rema_song)",
+        "https://www.billboard.com/music/chart-beat/rema-selena-gomez-calm-down-afrobeats-hot-100-five-burning-questions-1235352658/",
+        "https://www.billboard.com/music/music-news/rema-selena-gomez-calm-down-listen-1235131194/",
+        "https://music.apple.com/us/album/calm-down-single/1640501237",
+        "https://open.spotify.com/track/10XGH7wB1KnMFaAnPQhzFo"
+      ]
+    },
+    {
+      "id": "german-revolverheld-halt-dich",
+      "title": "Halt dich an mir fest",
+      "artist": "Revolverheld ft. Marta Jandová",
+      "year": 2010,
+      "country": "DE",
+      "genre": "Pop Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Emotional",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Die Band entstand 2002 in Hamburg unter einem anderen Namen und benannte sich 2004 nach der Flutkatastrophe im Indischen Ozean um.",
+        "Die Duett-Partnerin wurde durch die Castingshow 'Popstars' bekannt, in der sie als Jurorin wirkte.",
+        "Die Aufnahme erschien im November 2010 als Single zum dritten Album der Band - und war deren erste Gold-Auszeichnung in Deutschland.",
+        "Platz 8 in den deutschen Single-Charts; auch das Album wurde im Mai 2011 mit Gold ausgezeichnet.",
+        "Der Titel ist eine Aufforderung: im schweren Moment an den anderen klammern - gesungen von zwei Stimmen im Wechsel."
+      ],
+      "lyrics": {
+        "real": [
+          "Halt dich an mir fest, wenn dein Leben dich zerreißt",
+          "Halt dich an mir fest, wenn du nicht mehr weiter weißt",
+          "Ich lass dich nicht gehen"
+        ],
+        "fake": "Wir tanzen bis zum Morgen, die Stadt gehört nur uns zwei"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=4DUUutHHaBg",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/german-revolverheld-halt-dich.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "German Classics",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Revolverheld_(Band)",
+        "https://de.wikipedia.org/wiki/Marta_Jandov%C3%A1",
+        "https://music.apple.com/us/album/halt-dich-an-mir-fest-feat-marta-jandov%C3%A1-duett-version/400253391?i=400253400",
+        "https://open.spotify.com/track/10XGH7wB1KnMFaAnPQhzFo",
+        "https://de.wikipedia.org/wiki/Popstars_(Castingshow)"
+      ]
+    },
+    {
+      "id": "schlager-rex-gildo-fiesta",
+      "title": "Fiesta Mexicana",
+      "artist": "Rex Gildo",
+      "year": 1972,
+      "country": "DE",
+      "genre": "Schlager",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Fun",
+        "Classic"
+      ],
+      "hints": [
+        "Der Refrain beschreibt ein Abschiedsfest, bei dem 'Tequila, der glücklich sein lässt' getrunken wird - die Formulierung stammt direkt aus dem Liedtext.",
+        "Text und Musik stammen von einem Komponisten, der das Stück selbst produzierte und später auch den Welterfolg 'Ein bißchen Frieden' schrieb.",
+        "September 1972 bei Label Ariola: Es war die erste Komposition des Komponisten, die es in die Top Ten des deutschsprachigen Raums schaffte.",
+        "Platz 5 der deutschen Charts in 29 Chartwochen - und das bekannteste Lied des Sängers, das bis heute als Stimmungs- und Karnevalslied dient.",
+        "Der markante Ausruf am Anfang ist eine deutsche Erfindung: Im Spanischen gibt es dieses Wort gar nicht - der Komponist hat es sich ausgedacht."
+      ],
+      "lyrics": {
+        "real": [
+          "HOSSA! HOSSA! HOSSA! HOSSA!",
+          "Es gibt viel Tequila, der glücklich sein lässt",
+          "Adio, Adio Mexiko"
+        ],
+        "fake": "Die Palmen rauschen, die Bongos spielen, wir tanzen bis zum Sonnenaufgang"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=7h3yvQCmoMU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/schlager-rex-gildo-fiesta.jpg",
+      "packs": [
+        "Schlager & Evergreens",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Fiesta_Mexicana",
+        "https://de.wikipedia.org/wiki/Rex_Gildo",
+        "https://de.wikipedia.org/wiki/Ralph_Siegel",
+        "https://music.apple.com/us/album/fiesta-mexicana/402658107?i=402658123",
+        "https://open.spotify.com/track/10XGH7wB1KnMFaAnPQhzFo"
+      ]
+    },
+    {
+      "id": "yt-gJaTmKB47-g",
+      "title": "Stranger",
+      "artist": "Clan of Xymox",
+      "year": 1985,
+      "country": "NL",
+      "genre": "Dark Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "German New Wave"
+      ],
+      "hints": [
+        "Die Band entstand 1984 in Nijmegen und produzierte ihr Debütalbum 1985 in einem Londoner Studio.",
+        "Das zweite Album machte die Gruppe weltweit bekannt; Titel wie 'Louise' und 'Back Door' wurden zu Hits, und die Band trat in britischen und niederländischen Fernsehsendungen auf.",
+        "Der Song erschien 1985 auf einer EP mit zwei Titeln und war das zweite Stück darauf.",
+        "Genau dieser Track untermalte die letzte Szene der 21. Folge einer düsteren Krimiserie der 1980er.",
+        "Der Text singt auf Englisch von Entfremdung und Nähe - bis am Ende nur noch Schweigen bleibt."
+      ],
+      "lyrics": {
+        "real": [
+          "Now I am feeling me a stranger",
+          "When I looked into your eyes",
+          "Just walk, don't talk"
+        ],
+        "fake": "The neon lights are calling me back to the old town again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gJaTmKB47-g",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/rheingold-stranger.jpg",
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Clan_of_Xymox",
+        "https://music.apple.com/us/album/stranger/251637455?i=251637629",
+        "https://musicbrainz.org/release/797dbca4-6046-4d97-bd4a-e7e09ab65dc4",
+        "https://open.spotify.com/track/10XGH7wB1KnMFaAnPQhzFo",
+        "https://musicbrainz.org/artist/1fc54353-dcd0-47b1-bb59-7bd2974df829"
+      ]
+    },
+    {
+      "id": "yt-Tt4dcREuYb0",
+      "title": "Acompáñame a Estar Solo",
+      "artist": "Ricardo Arjona",
+      "year": 2005,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song war die erste Single des zehnten Studioalbums eines guatemaltekischen Cantautors, das 2005 bei Sony BMG Norte erschien.",
+        "Zwischen 2004 und 2005 wurde die Ballade in Studios in Mexiko, Hollywood und Miami aufgenommen.",
+        "Produziert wurde sie vom Cantautor selbst sowie von Dan Warner, von Lee Levin und vom puertorrikanischen Tommy Torres.",
+        "Bei den Latin Grammy Awards 2006 war das Lied für 'Grabación del Año' und 'Canción del Año' nominiert - Shakira gewann beide Kategorien.",
+        "Das Video entstand in zwei Drehtagen in Mexiko-Stadt, in Schwarz-Weiß: Der Sänger sitzt am Klavier, begleitet von einer Frau in Weiß."
+      ],
+      "lyrics": {
+        "real": [
+          "Acompáñame a estar solo",
+          "Acompáñame al silencio",
+          "A saber que estás ahí y yo a tu lado"
+        ],
+        "fake": "Sin prisa, la distancia se vuelve compañía"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=Tt4dcREuYb0",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-acompáñame-a-estar-solo.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Acomp%C3%A1%C3%B1ame_a_estar_solo",
+        "https://es.wikipedia.org/wiki/Adentro",
+        "https://es.wikipedia.org/wiki/Ricardo_Arjona",
+        "https://music.apple.com/us/album/acomp%C3%A1%C3%B1ame-a-estar-solo/1789203530?i=1789204168",
+        "https://musicbrainz.org/release/f87f8d6a-7df2-4b86-9d77-138ff771f352"
+      ]
+    },
+    {
+      "id": "yt-LJmb5Xw5k20",
+      "title": "Cavernícolas",
+      "artist": "Ricardo Arjona",
+      "year": 2014,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song ist der zweite Titel des vierzehnten Studioalbums eines guatemaltekischen Cantautors, das 2014 über das eigene Label Metamorfosis erschien.",
+        "Als dritte Single des Albums kam er im Januar 2015 in den Handel.",
+        "Zwischen 2013 und 2014 entstand das Album, produziert vom Cantautor selbst sowie von Dan Warner, Lee Levin und Tommy Torres.",
+        "Der Titel beschreibt zwei Menschen, die sich in ihre eigene Höhle zurückziehen: ohne Vaterland, ohne Zukunft, ohne Zuhause.",
+        "Das Album erreichte in Argentinien Platz 1; das Video des Cantautors liegt auf dem offiziellen Vevo-Kanal."
+      ],
+      "lyrics": {
+        "real": [
+          "Y burlábamos la ley de gravedad",
+          "Sin patria sin futuro sin hogar",
+          "La cueva se convirtió en casa"
+        ],
+        "fake": "Nos fugamos al campo, donde nadie nos encuentra"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=LJmb5Xw5k20",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-cavernícolas.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Viaje_(%C3%A1lbum_de_Ricardo_Arjona)",
+        "https://es.wikipedia.org/wiki/Ricardo_Arjona",
+        "https://music.apple.com/us/album/cavern%C3%ADcolas/1790445160?i=1790445164",
+        "https://musicbrainz.org/release/85371873-8861-4892-9cf2-dc21ede2c2da",
+        "https://open.spotify.com/track/10XGH7wB1KnMFaAnPQhzFo"
+      ]
+    },
+    {
+      "id": "yt-vWtJJRTqVSI",
+      "title": "El Amor",
+      "artist": "Ricardo Arjona",
+      "year": 2011,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger aus Guatemala veröffentlichte den Song als erste Single eines Albums, das er über sein eigenes Label herausbrachte.",
+        "Die Single erschien 2011 - laut Veröffentlichungsdaten vom 23. August - als digitaler Download und auf CD.",
+        "Der Sänger schrieb den Text, um die guten und die schlechten Seiten der großen Gefühle gegenüberzustellen.",
+        "Der Regisseur drehte das Video im September 2011 in Schwarz-Weiß: Der Sänger singt bei einer Hochzeit in einer Kapelle.",
+        "Es war das vierte Stück des Sängers, das die Billboard-Chart 'Top Latin Songs' anführte - und das erste, das auf den Tropical Songs ganz oben stand."
+      ],
+      "lyrics": {
+        "real": [
+          "El amor tiene firma de autor en las causas perdidas",
+          "Es un acto profundo de fe que huele a mentira",
+          "Es el tiempo más lento del mundo cuando va de prisa"
+        ],
+        "fake": "Por las calles de la ciudad nadie dice nada"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=vWtJJRTqVSI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-el-amor.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/El_amor_(canción_de_Ricardo_Arjona)",
+        "https://music.apple.com/us/album/el-amor/1789236206?i=1789236215",
+        "https://itunes.apple.com/lookup?id=1789236215&entity=song",
+        "https://www.youtube.com/watch?v=vWtJJRTqVSI",
+        "https://es.wikipedia.org/wiki/Ricardo_Arjona"
+      ]
+    },
+    {
+      "id": "yt-I9cCPQVPv8o",
+      "title": "Fuiste Tú",
+      "artist": "Ricardo Arjona feat. Gaby Moreno",
+      "year": 2011,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien 2011 auf einer digitalen Sammlung mit 14 Titeln.",
+        "Er ist ein Latin-Pop-Song über das Vermissen, aufgenommen mit einer Duettpartnerin.",
+        "Die Duettpartnerin ist eine in Guatemala geborene Sängerin und Gitarristin, die zwischen Blues, Jazz, Soul und R&B spielt und 2024 einen Grammy für ein akustisches Album gewann.",
+        "Der Refrain spricht die Geliebte direkt an und erzählt von einer Fotografie, die im Portemonnaie bleibt.",
+        "Das offizielle Video liegt auf dem eigenen Kanal des Sängers."
+      ],
+      "lyrics": {
+        "real": [
+          "Tenerte fue una foto tuya puesta en mi cartera",
+          "Verte llegar fue luz",
+          "O aprendes a querer la espina o no aceptes rosas"
+        ],
+        "fake": "Cada mañana al despertar busco tu voz"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=I9cCPQVPv8o",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-fuiste-tu-feat-gaby-moreno-single.jpg",
+      "hintEvidence": [
+        "https://musicbrainz.org/ws/2/release/c14d9f75-a909-4b37-a750-384a20f506b7?inc=recordings&fmt=json",
+        "https://itunes.apple.com/lookup?id=1789236223&entity=song",
+        "https://es.wikipedia.org/wiki/Gaby_Moreno",
+        "https://lrclib.net/api/get?artist_name=Ricardo%20Arjona&track_name=Fuiste%20T%C3%BA",
+        "https://www.youtube.com/watch?v=I9cCPQVPv8o"
+      ]
+    },
+    {
+      "id": "yt--apU2sviHCM",
+      "title": "Historia de Taxi",
+      "artist": "Ricardo Arjona",
+      "year": 1994,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger aus Guatemala veröffentlichte den Song 1994 als vierte Single; die Aufnahme entstand 1993 im Dallas Sound Lab in Texas.",
+        "Das offizielle Video wurde auf dem offiziellen Vevo-Kanal des Sängers veröffentlicht.",
+        "Der Text beginnt mit einem mageren Arbeitstag: Der Fahrer hat an diesem Abend kaum Fahrgäste.",
+        "2007 verwandelte der Sänger den Song für eine Compilation in eine Salsa-Fassung mit Marc Anthony.",
+        "Zum Schluss kehren die beiden in die Kneipe zurück, in der die Fahrt begann: Dort umarmt der Mann der Begleiterin eine andere Frau - und der Fahrer erkennt in ihr seine eigene Frau."
+      ],
+      "lyrics": {
+        "real": [
+          "Eran las diez de la noche, piloteaba mi nave",
+          "Era mi taxi un VolksWagen del año 68",
+          "Me dijo: \"me llamo Norma\" mientras cruzaba la pierna"
+        ],
+        "fake": "Nos despedimos en la estación bajo la lluvia"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-apU2sviHCM",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "90s Unplugged",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-historia-de-taxi--video-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Historia_de_taxi",
+        "https://es.wikipedia.org/wiki/Quién_dijo_ayer",
+        "https://music.apple.com/us/album/historia-de-taxi/322117336?i=322117341",
+        "https://itunes.apple.com/lookup?id=322117341&entity=song",
+        "https://www.youtube.com/watch?v=-apU2sviHCM"
+      ]
+    },
+    {
+      "id": "yt-va5EqA2w7Os",
+      "title": "Lo Poco Que Tengo",
+      "artist": "Ricardo Arjona",
+      "year": 2014,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Sänger aus Guatemala veröffentlichte den Song am 7. Juli 2014 als zweite Single des Albums 'Viaje'.",
+        "Das Album erschien am 29. April 2014 über das eigene Label Metamorfosis und erreichte Platin.",
+        "Der Song eröffnet das Album und ist mit Calipso-Arrangements versehen.",
+        "Im Video spielt der Sänger am Strand Ukulele; die Aufnahme entstand auf der honduranischen Insel Roatán.",
+        "Das Album entstand in Zusammenarbeit mit Dan Warner, Lee Levin und Tommy Torres."
+      ],
+      "lyrics": {
+        "real": [
+          "Yo tengo una guitarra vieja",
+          "Amigos que nunca aconsejan",
+          "Lo poco que tengo es tan poco que vale un millón"
+        ],
+        "fake": "Salgo a pescar temprano con mi viejo vecino"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=va5EqA2w7Os",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-lo-poco-que-tengo-single.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Lo_poco_que_tengo_(canción)",
+        "https://es.wikipedia.org/wiki/Viaje_(álbum_de_Ricardo_Arjona)",
+        "https://music.apple.com/us/album/lo-poco-que-tengo/1790445160?i=1790445161",
+        "https://itunes.apple.com/lookup?id=1790445161&entity=song",
+        "https://www.youtube.com/watch?v=va5EqA2w7Os"
+      ]
+    },
+    {
+      "id": "yt-F9NezifDe5I",
+      "title": "Pingüinos en la Cama",
+      "artist": "Ricardo Arjona",
+      "year": 2005,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song entstand auf dem zehnten Studioalbum des Sängers aus Guatemala, das am 6. Dezember 2005 bei Sony BMG Norte erschien.",
+        "Er ist die vierte Nummer des Albums und wurde zusätzlich in einer Klavier-und-Streich-Fassung aufgenommen.",
+        "Eine Remix-Fassung mit der spanischen Sängerin Chenoa erschien als zweite Single des Albums.",
+        "Das Video wurde 2006 in Buenos Aires gedreht, die Regie führte Nahuel Lerena.",
+        "Das Album gewann 2007 den Grammy für das beste lateinische Popalbum, den es sich mit einem Album einer mexikanischen Sängerin teilte."
+      ],
+      "lyrics": {
+        "real": [
+          "Vamos aclarando este asuntico",
+          "Yo no soy tu propiedad",
+          "Que el amor sin libertad dura lo que un estornudo"
+        ],
+        "fake": "Me fui de viaje con mi hermano a la costa"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=F9NezifDe5I",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-pinguinos-en-la-cama-single.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Pingüinos_en_la_cama",
+        "https://es.wikipedia.org/wiki/Adentro",
+        "https://music.apple.com/us/album/ping%C3%BCinos-en-la-cama/1789203530?i=1789203811",
+        "https://itunes.apple.com/lookup?id=1789203811&entity=song",
+        "https://www.youtube.com/watch?v=F9NezifDe5I"
+      ]
+    },
+    {
+      "id": "yt-bLMu2W-pRxw",
+      "title": "Quiero",
+      "artist": "Ricardo Arjona",
+      "year": 2007,
+      "country": "GT",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Song erschien 2007 als zweite und letzte Single der Kompilation 'Quién dijo ayer'.",
+        "Aufgenommen wurde er in Studios in Miami und Mexiko-Stadt, gemischt und gemastert in New York.",
+        "Kritiker nannten das Stück 'bohemian' - der Text erzählt eine Liebesgeschichte, die nicht von der Liebe handelt.",
+        "In den Billboard-Charts kam der Song auf Platz 8 der Latin Pop Songs und Platz 12 der Top Latin Songs.",
+        "Die American Society of Composers, Authors and Publishers kürte ihn zur Pop- und Ballade des Jahres."
+      ],
+      "lyrics": {
+        "real": [
+          "Quiero cometer el error más grande del mundo",
+          "Quiero tomarme un café viendo el Mediterráneo",
+          "Quiero inventarle otra letra al abecedario"
+        ],
+        "fake": "Cada noche encendía la radio para dormir"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=bLMu2W-pRxw",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "vibe-check",
+        "cover-confusion"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2000s Pop & RnB",
+        "piano-ballads"
+      ],
+      "coverUrl": "/covers/ricardo-arjona-quiero--video-.jpg",
+      "hintEvidence": [
+        "https://es.wikipedia.org/wiki/Quiero_(canción_de_Ricardo_Arjona)",
+        "https://es.wikipedia.org/wiki/Quién_dijo_ayer",
+        "https://es.wikipedia.org/wiki/Ricardo_Arjona",
+        "https://musicbrainz.org/ws/2/release/899d2671-04c0-4108-aa9d-943fb4b5efbd?inc=recordings&fmt=json",
+        "https://www.youtube.com/watch?v=bLMu2W-pRxw"
+      ]
+    }
+  ]
+}

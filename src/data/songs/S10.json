@@ -1,0 +1,237 @@
+{
+  "songs": [
+    {
+      "id": "disney-hercules-inlove",
+      "title": "I Won't Say (I'm in Love)",
+      "artist": "Susan Egan",
+      "year": 1997,
+      "country": "US",
+      "genre": "Soundtrack / Pop / Soul",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Nostalgic",
+        "Feel Good"
+      ],
+      "hints": [
+        "Ein Song aus einem Disney-Animationsfilm von 1997, in dem eine weibliche Figur ihre Gefühle strikt leugnet.",
+        "Der Text handelt vom inneren Widerstand gegen neue Gefühle: Die Hauptfigur will sich nicht festlegen und fürchtet, erneut verletzt zu werden.",
+        "Fünf weitere Sängerinnen bilden den antwortenden Chorus und treiben die Hauptfigur am Ende zur Ehrlichkeit.",
+        "Alan Menken komponierte, David Zippel schrieb den Text - Mid-Tempo-Pop mit Motown- und Gospel-Elementen im Klang der 1960er-Girlgroups.",
+        "Der Refrain leugnet die Gefühle mit 'No chance, no way' - doch am Ende geben die Musen doch nach."
+      ],
+      "lyrics": {
+        "real": [
+          "No man is worth the aggravation",
+          "That's ancient history, been there, done that",
+          "Face it like a grown-up"
+        ],
+        "fake": "I keep it a secret but the whole town can plainly see"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ljPqUYkEXFQ",
+        "youtubeAlternatives": [
+          "CGoOnJ2TlJk"
+        ],
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/susan-egan-i-wont-say-im-in-love-single.jpg",
+      "packs": [
+        "Movie Hits",
+        "youtube-import",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/I_Won%27t_Say_(I%27m_in_Love)",
+        "https://itunes.apple.com/search?term=Susan+Egan+I+Wont+Say+Im+In+Love&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Susan%20Egan/I%20Won%27t%20Say%20(I%27m%20in%20Love)",
+        "https://lrclib.net/api/get?artist_name=Susan%20Egan&track_name=I%20Won%27t%20Say%20(I%27m%20in%20Love)",
+        "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+      ]
+    },
+    {
+      "id": "disco-swedish-child",
+      "title": "Don't You Worry Child",
+      "artist": "Swedish House Mafia",
+      "year": 2012,
+      "country": "SE",
+      "genre": "EDM / Progressive House",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Euphoric",
+        "Feel Good"
+      ],
+      "hints": [
+        "Ein elektronischer Song eines Supergroups, veröffentlicht 2012.",
+        "Der Refrain entstand 2010 in Stockholm und geht auf den Rat des Vaters eines Mitautors zurück.",
+        "Die Single erreichte in Großbritannien Platz 1 der Verkaufshitliste und in den USA Platz 6 der Hot 100.",
+        "Die Gruppe löste sich danach für mehrere Jahre auf - dieser Song war ihre letzte Single vor der Pause.",
+        "Im Refrain tröstet die Sängerin ein Kind mit den Worten 'See heaven's got a plan for you'."
+      ],
+      "lyrics": {
+        "real": [
+          "Don't you worry, don't you worry child",
+          "See heaven's got a plan for you",
+          "That's where I had my first heartbreak"
+        ],
+        "fake": "Rooftops are glowing and the whole town sings along tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1y6smkh6c-0",
+        "spotify": "https://open.spotify.com/track/043bfUkTydw0xJ5JjOT91w",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/disco-swedish-child.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "youtube-import",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don%27t_You_Worry_Child",
+        "https://itunes.apple.com/search?term=Swedish+House+Mafia+Dont+You+Worry+Child&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/Swedish%20House%20Mafia/Don%27t%20You%20Worry%20Child",
+        "https://lrclib.net/api/get?artist_name=Swedish%20House%20Mafia&track_name=Don%27t%20You%20Worry%20Child",
+        "https://www.songfacts.com/facts/swedish-house-mafia/dont-you-worry-child"
+      ]
+    },
+    {
+      "id": "metal-soad-chopsuey",
+      "title": "Chop Suey!",
+      "artist": "System of a Down",
+      "year": 2001,
+      "country": "US",
+      "genre": "Alternative Metal / Nu Metal",
+      "difficulty": "hard",
+      "mood": [
+        "Rebellious",
+        "Epic",
+        "Party Anthem"
+      ],
+      "hints": [
+        "Ein Metal-Song von 2001, dessen Stil zwischen aggressiver Härte und melodischem Refrain pendelt.",
+        "Er erschien als erste Single des zweiten Albums der Band, aufgenommen in Hollywood.",
+        "Der Mittelteil zitiert die Bibelstelle aus Psalm 22 - den Text dazu nahm der Sänger aus einem Buch in der Sammlung des Produzenten.",
+        "Nach Angaben des Produzenten hieß der Song ursprünglich 'Self-Righteous Suicide' und wurde auf Druck des Plattenlabels umbenannt.",
+        "Der Titel steht für ein asiatisches Gericht, das im Musikvideo kurz als Essen auftaucht."
+      ],
+      "lyrics": {
+        "real": [
+          "Why'd you leave the keys upon the table?",
+          "I don't think you trust",
+          "Father, into your hands I commend my spirit"
+        ],
+        "fake": "Every blade is sharpened for the show that never ends"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CSvFpBOe8eY",
+        "spotify": "https://open.spotify.com/track/2DlHlPMa4M17kufBvI2lEN",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-soad-chopsuey.jpg",
+      "packs": [
+        "Rock Anthems",
+        "Indie & Alternative",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Chop_Suey!",
+        "https://itunes.apple.com/search?term=System+of+a+Down+Chop+Suey&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/System%20of%20a%20Down/Chop%20Suey!",
+        "https://lrclib.net/api/get?artist_name=System%20of%20a%20Down&track_name=Chop%20Suey!",
+        "https://www.songfacts.com/facts/system-of-a-down/chop-suey"
+      ]
+    },
+    {
+      "id": "sza-killbill-2023",
+      "title": "Kill Bill",
+      "artist": "SZA",
+      "year": 2022,
+      "country": "US",
+      "genre": "R&B / Soul",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Melancholic",
+        "Rebellious"
+      ],
+      "hints": [
+        "Ein R&B-Track aus dem Jahr 2022, entstanden auf dem zweiten Album einer US-Sängerin.",
+        "Der Text erzählt von eifersüchtigen Rachegedanken gegenüber dem Ex-Partner und dessen neuer Freundin.",
+        "Das Video im Stil eines Tarantino-Films zeigt die Sängerin als Kämpferin mit Schwert - mit einem Gastauftritt von Vivica A. Fox.",
+        "Die Single erreichte 2023 nach acht Wochen auf Platz zwei endlich die Spitze der US-Hitparade.",
+        "Auf der US-R&B-Liste stand sie 21 Wochen auf Platz eins und brach damit den Rekord von 'Old Town Road'."
+      ],
+      "lyrics": {
+        "real": [
+          "I might kill my ex, not the best idea",
+          "His new girlfriend's next, how'd I get here?",
+          "Rather be in jail than alone"
+        ],
+        "fake": "Burning every letter that his name is written on"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MSRcC626prw",
+        "fallbackYoutubeId": "AdEKgwUqPKI",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/sza-killbill-2023.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Kill_Bill_(song)",
+        "https://itunes.apple.com/search?term=SZA+Kill+Bill&limit=3&entity=song",
+        "https://api.lyrics.ovh/v1/SZA/Kill%20Bill",
+        "https://lrclib.net/api/get?artist_name=SZA&track_name=Kill%20Bill",
+        "https://www.songfacts.com/facts/sza/kill-bill"
+      ]
+    }
+  ]
+}

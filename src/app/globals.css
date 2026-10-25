@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* ─── Theme: Jackbox Party (Default) ─── */
+[data-theme='jackbox'] {
+  --color-bg: #1a0a2e;
+  --color-bg-secondary: #2d1b4e;
+  --color-bg-card: #3b2766;
+  --color-text: #ffffff;
+  --color-text-secondary: #c4b5d9;
+  --color-primary: #ff6b35;
+  --color-primary-hover: #ff8c5a;
+  --color-secondary: #f7c948;
+  --color-accent: #e040fb;
+  --color-success: #4caf50;
+  --color-error: #ff5252;
+  --color-border: #5a3d8a;
+  --radius: 12px;
+}
+
+/* ─── Theme: Spotify ─── */
+[data-theme='spotify'] {
+  --color-bg: #121212;
+  --color-bg-secondary: #1e1e1e;
+  --color-bg-card: #282828;
+  --color-text: #ffffff;
+  --color-text-secondary: #b3b3b3;
+  --color-primary: #1db954;
+  --color-primary-hover: #1ed760;
+  --color-secondary: #1db954;
+  --color-accent: #1db954;
+  --color-success: #1db954;
+  --color-error: #ff5252;
+  --color-border: #404040;
+  --radius: 8px;
+}
+
+/* ─── Theme: YouTube ─── */
+[data-theme='youtube'] {
+  --color-bg: #0f0f0f;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-card: #272727;
+  --color-text: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  --color-primary: #ff0000;
+  --color-primary-hover: #cc0000;
+  --color-secondary: #ff4444;
+  --color-accent: #ff0000;
+  --color-success: #4caf50;
+  --color-error: #ff5252;
+  --color-border: #3f3f3f;
+  --radius: 12px;
+}
+
+/* ─── Theme: Music Wall / TikTok Vibe ─── */
+[data-theme='musicwall'] {
+  --color-bg: #f5f5f5;
+  --color-bg-secondary: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-primary: #fe2c55;
+  --color-primary-hover: #e5284d;
+  --color-secondary: #25f4ee;
+  --color-accent: #fe2c55;
+  --color-success: #4caf50;
+  --color-error: #ff5252;
+  --color-border: #e0e0e0;
+  --radius: 16px;
+}
+
+/* ─── Global Form Element Fixes ─── */
+select, option, input, textarea {
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+/* Ensure options are readable on all systems */
+option {
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+}
+
+/* Specific fix for Music Wall (Light Theme) */
+[data-theme='musicwall'] select, 
+[data-theme='musicwall'] option,
+[data-theme='musicwall'] input {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #e0e0e0;
+}
+
+/* ─── Global Accessibility & Interaction ─── */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+  transition: outline-offset 0.2s ease;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ─── Safe-Area (iPhone Notch / Dynamic Island / Home Indicator) ─── */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+}
+
+/* ─── Base Layout ────────────────────────────────────────────────── */
+/* Apply theme background to html+body so no white shows through,    */
+/* and clip horizontal Framer Motion overflow on both to keep         */
+/* position:fixed elements working correctly on iOS Safari.           */
+html {
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ─── Safe-Area Utility Classes ─────────────────────────────────── */
+.pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+.pl-safe { padding-left: env(safe-area-inset-left, 0px); }
+.pr-safe { padding-right: env(safe-area-inset-right, 0px); }
+
+/* Sticky headers behind notch */
+.top-safe { top: env(safe-area-inset-top, 0px); }
+.sticky-safe {
+  padding-top: calc(env(safe-area-inset-top, 0px) + 1rem);
+}
+
+/* Hide scrollbars on elements that use overflow-y:auto but still allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

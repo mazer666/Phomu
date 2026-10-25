@@ -1,0 +1,748 @@
+{
+  "songs": [
+    {
+      "id": "disco-daft-lucky",
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams",
+      "year": 2013,
+      "country": "FR",
+      "genre": "Nu-Disco / Funk",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Dance Floor",
+        "Energy",
+        "Happy",
+        "Neon Night",
+        "Summer Vibes"
+      ],
+      "hints": [
+        "Ein butterweicher Basslauf trifft auf den unverkennbaren Sound einer legendären Funk-Gitarre.",
+        "Der Song war 2013 der Soundtrack des Sommers und markierte das Comeback analoger Instrumentierung in der Elektronik.",
+        "Eine hochkarätige Kollaboration zwischen französischen Robotern, einem US-Superproduzenten und dem Gründer von Chic.",
+        "Das Coverartwork zeigt die Band vor einer untergehenden Sonne – und im Video tanzt eine illustre Schar von Stars.",
+        "Der Refrain dreht sich darum, die ganze Nacht durchzufeiern statt aufzugeben – und die Messlatte höher zu legen."
+      ],
+      "lyrics": {
+        "real": [
+          "Like the legend of the phoenix",
+          "We've come too far to give up who we are",
+          "We're up all night to get lucky"
+        ],
+        "fake": "Everybody in the club is chasing butterflies tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=CCHdMIEGaaM",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B00CS36FSI"
+      },
+      "coverUrl": "/covers/disco-daft-lucky.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Global Hits 1950-2026",
+        "Electronic & Techno",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Get_Lucky_(Daft_Punk_song)",
+        "https://www.songfacts.com/facts/daft-punk/get-lucky",
+        "https://api.lyrics.ovh/v1/Daft%20Punk/Get%20Lucky",
+        "https://music.apple.com/us/album/get-lucky/617154241?i=617154366",
+        "https://lrclib.net/api/get?artist_name=Daft%20Punk&track_name=Get%20Lucky"
+      ]
+    },
+    {
+      "id": "yt-6qVVkzpEBps",
+      "title": "Change Your Life (You Can Do It)",
+      "artist": "Dan Deacon",
+      "year": 2016,
+      "country": "US",
+      "genre": "Indietronica / Art Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Electronic"
+      ],
+      "hints": [
+        "Ein euphorischer, fast schon manischer Schwall aus Synthesizern und geschichteten Vocals.",
+        "Der Künstler kommt aus Baltimore und ist für Live-Shows bekannt, bei denen die ganze Halle mitspielt – eher Happening als Konzert.",
+        "Der Sound mischt schrille DIY-Elektronik mit orchestralem Bombast; der Musiker komponiert nebenbei auch Filmmusik.",
+        "Der Song wirkt wie eine spirituelle Motivationsrede, die in einem elektronischen Gewitter explodiert.",
+        "Das Stück besteht fast nur aus einem einzigen, immer wiederholten Satz – ein Mantra zum Mitsingen."
+      ],
+      "lyrics": {
+        "real": [
+          "You can do it, you can do it, you can do it, you can do it",
+          "Tonight's the night, you're gonna change your life",
+          "Your life, your life, your life, your life, your life, your life, your life"
+        ],
+        "fake": "Every single heartbeat is calling out your name"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=6qVVkzpEBps",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B01LY7S9O2"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "Indie & Alternative",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/dan-deacon-change-your-life--you-can-do-it---james-nasty-remix-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Dan_Deacon",
+        "https://lrclib.net/api/get/34764585",
+        "https://music.apple.com/us/album/change-your-life-you-can-do-it/1087381490?i=1087381504",
+        "https://music.apple.com/us/song/change-your-life-you-can-do-it/1087381504",
+        "https://www.youtube.com/watch?v=6qVVkzpEBps"
+      ]
+    },
+    {
+      "id": "yt-VRhGMCYvWQ4",
+      "title": "Confiésale",
+      "artist": "Dani J",
+      "year": 2016,
+      "country": "ES",
+      "genre": "Bachata",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein trockenes Gitarren-Gezupfe und ein sanfter Bongo-Rhythmus bestimmen diesen lateinamerikanischen Tanz-Track.",
+        "Der Titel erschien 2016 auf dem EP 'Quitémonos la Ropa' des spanischen Labels Doble Music.",
+        "Der Gesang ist hochemotional und transportiert die typische Amargue-Stimmung von Sehnsucht und Schmerz.",
+        "Im Refrain beschwört der Sänger die leidenschaftliche Bitte an seine Geliebte, ihm endlich die Wahrheit zu gestehen.",
+        "Trotz aller Überschneidungen bleibt am Ende nur ein einziges Wort übrig, das im Refrain endlos wiederholt wird."
+      ],
+      "lyrics": {
+        "real": [
+          "Se que prometimos despedirnos para siempre",
+          "Dile que me perteneces aun que estes con él",
+          "Por que eres mi mujer"
+        ],
+        "fake": "Por la noche bailamos hasta perder la nocion"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VRhGMCYvWQ4",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B01FK3D652"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers"
+      ],
+      "coverUrl": "/covers/dani-j-confiésale--bachata-.jpg",
+      "hintEvidence": [
+        "https://api.lyrics.ovh/v1/Dani%20J/Confi%C3%A9sale",
+        "https://music.apple.com/us/album/confi%C3%A9sale/1113420465?i=1113421229",
+        "https://music.apple.com/us/album/confi%C3%A9sale/1113420465",
+        "https://itunes.apple.com/search?term=Dani+J+Confi%C3%A9sale&entity=song&limit=3",
+        "https://music.apple.com/us/artist/dani-j/397301612"
+      ]
+    },
+    {
+      "id": "piano-powter-badday",
+      "title": "Bad Day",
+      "artist": "Daniel Powter",
+      "year": 2005,
+      "country": "CA",
+      "genre": "Piano Pop",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Positive",
+        "Funny"
+      ],
+      "hints": [
+        "Ein freundliches Klavier-Riff leitet diesen Song ein, der trotz seines Titels eine seltsam aufmunternde Wirkung hat.",
+        "Wurde weltberühmt als musikalisches 'Trostpflaster' für ausgeschiedene Kandidaten in der fünften Staffel einer großen US-Castingshow.",
+        "Ein klassisches One-Hit-Wonder der 2000er Jahre mit einem Refrain, den fast jeder mitsingen kann.",
+        "Regie führte Marc Webb, der den Clip in einem als New York getarnten Los Angeles an einem einzigen Tag drehte.",
+        "Ein Song für jene Momente, in denen man das Gefühl hat, das Schicksal habe sich für den heutigen Tag gegen einen verschworen."
+      ],
+      "lyrics": {
+        "real": [
+          "You sing a sad song just to turn it around",
+          "You had a bad day, the camera don't lie",
+          "Where is the moment we needed the most?"
+        ],
+        "fake": "Riding through the rain with a smile on my face tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=gH476CxJxfg",
+        "spotify": "https://open.spotify.com/track/0mUyMawtxj1CJ76kn9gIZK",
+        "amazonMusic": "https://music.amazon.com/tracks/B003X1J89C"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-powter-badday.jpg",
+      "packs": [
+        "piano-ballads",
+        "2000s Pop & RnB",
+        "Schlager & Evergreens",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Daniel_Powter",
+        "https://www.songfacts.com/facts/daniel-powter/bad-day",
+        "https://api.lyrics.ovh/v1/Daniel%20Powter/Bad%20Day",
+        "https://lrclib.net/api/get?artist_name=Daniel%20Powter&track_name=Bad%20Day",
+        "https://music.apple.com/us/album/bad-day/63816246?i=63816165"
+      ]
+    },
+    {
+      "id": "yt-cpYPPXf63a4",
+      "title": "Lento",
+      "artist": "Daniel Santacruz",
+      "year": 2014,
+      "country": "DO",
+      "genre": "Kizomba / Bachata",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Ein sehr ruhiger, fast schon hypnotischer Beat mit tiefen, rollenden Bässen.",
+        "Ein dominikanischer Songwriter mischt hier den angolanisch geprägten Kizomba-Tanz mit der weichen Wärme der karibischen Tropenmusik.",
+        "Der Künstler zählt zu den erfolgreichsten Songwritern der Latein-Pop-Szene – sein Kizomba-Hit ist inzwischen über 100 Millionen Mal auf YouTube zu sehen.",
+        "Die Atmosphäre des Songs ist extrem intim und perfekt für die späten Stunden in einem dunklen Club.",
+        "Hier wird bewusst auf das Gaspedal verzichtet – die Bewegung folgt einem fast schon gedehnten, sinnlichen Zeitgefühl."
+      ],
+      "lyrics": {
+        "real": [
+          "No quiero separarme de ti",
+          "¡Ay! Llévame despacio que no hay prisa",
+          "Lento, baílame lento"
+        ],
+        "fake": "Mientras la ciudad duerme te beso sin parar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=cpYPPXf63a4",
+        "spotify": "",
+        "amazonMusic": "https://music.amazon.com/tracks/B00IM9D0YI"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "youtube-import",
+        "World, Reggae & Soul",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026"
+      ],
+      "coverUrl": "/covers/daniel-santacruz-lento---kizomba--official-video-hd-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Daniel_Santacruz",
+        "https://en.wikipedia.org/wiki/Kizomba",
+        "https://lrclib.net/api/get?artist_name=Daniel%20Santacruz&track_name=Lento",
+        "https://music.apple.com/us/album/lento/1632262366?i=1632262367",
+        "https://music.apple.com/us/album/lento/1632262366"
+      ]
+    },
+    {
+      "id": "score-elfman-batman",
+      "title": "Batman Theme (1989)",
+      "artist": "Danny Elfman",
+      "year": 1989,
+      "country": "US",
+      "genre": "Orchestral Soundtrack",
+      "difficulty": "medium",
+      "mood": [
+        "Dark",
+        "Epic",
+        "Serious"
+      ],
+      "hints": [
+        "Tiefe, bedrohliche Bläser kündigen den Auftritt eines dunklen, unerbittlichen Helden an.",
+        "Die Komposition setzte neue Maßstäbe für das Superhelden-Genre und verdrängte den bunten Camp-Stil früherer Jahrzehnte.",
+        "Geschaffen von einem Komponisten, der auch für das gelbe Familien-Thema aus Springfield bekannt ist.",
+        "Die Musik fängt die düstere, fast sakrale Gothic-Atmosphäre einer fiktiven Metropole perfekt ein.",
+        "Dieses Thema begleitet den maskierten Rächer, wenn sein leuchtendes Zeichen am dunklen Nachthimmel erscheint."
+      ],
+      "lyrics": {
+        "real": [
+          "(Instrumental Score)",
+          "Dark brass anthem",
+          "Vigilante of the night"
+        ],
+        "fake": "In the shadow of the city looking for the joker tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=YoaU3kRFvLg",
+        "spotify": "https://open.spotify.com/track/50csT5Qb2qOF7lHdDQ1Sbx",
+        "amazonMusic": "https://music.amazon.com/tracks/B0040XF828"
+      },
+      "coverUrl": "/covers/score-elfman-batman.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "classical-orchestral",
+        "Movie Hits",
+        "80s Flashback",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Batman_(1989_film)",
+        "https://en.wikipedia.org/wiki/Danny_Elfman",
+        "https://en.wikipedia.org/wiki/The_Simpsons_Theme",
+        "https://music.apple.com/us/album/the-batman-theme/41229136?i=41229142",
+        "https://music.apple.com/us/album/batman-original-motion-picture-score/41229136"
+      ]
+    },
+    {
+      "id": "metal-darktran-misery",
+      "title": "Misery's Crown",
+      "artist": "Dark Tranquillity",
+      "year": 2007,
+      "country": "SE",
+      "genre": "Melodic Death Metal",
+      "difficulty": "medium",
+      "mood": [
+        "Melancholic",
+        "Powerful",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song im Herbst 2006 im Studio Fredman in Göteborg, produziert vom Produzenten Tue Madsen.",
+        "Die Band wurde 1989 in Göteborg gegründet und gilt als Wegbereiter des dort entstandenen \"Gothenburg Sound\".",
+        "Es ist die achte Studioaufnahme der Band, veröffentlicht über das Label Napalm Records.",
+        "Auf dieser Platte kehrt der Sänger erstmals seit \"Emptier Still\" (2000) zu reinem Klargesang zurück – direkt neben seinen Growls.",
+        "Der wiederholte Refrain kreist um die Frage, das eigene Unglück nicht auf andere Menschen abzuwälzen."
+      ],
+      "lyrics": {
+        "real": [
+          "Freedom is an illusion",
+          "I build my fences high",
+          "Wear misery's crown"
+        ],
+        "fake": "Build your throne of ashes and let the weary kings kneel"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=NKjzDU7V7es",
+        "spotify": "https://open.spotify.com/track/6NeUmwrvmkIuTO9dh3qOwT",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-darktran-misery.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fiction_(Dark_Tranquillity_album)",
+        "https://en.wikipedia.org/wiki/Dark_Tranquillity",
+        "https://en.wikipedia.org/wiki/Studio_Fredman",
+        "https://en.wikipedia.org/wiki/Melodic_death_metal",
+        "https://lrclib.net/api/get?artist_name=Dark%20Tranquillity&track_name=Misery%27s%20Crown"
+      ]
+    },
+    {
+      "id": "electro-darude-sandstorm",
+      "title": "Sandstorm",
+      "artist": "Darude",
+      "year": 1999,
+      "country": "FI",
+      "genre": "Trance",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Electronic",
+        "Energy",
+        "Fast",
+        "Speed"
+      ],
+      "hints": [
+        "Der Track entstand als Kollaboration mit JS16, dem finnischen DJ und Produzenten hinter der Hip-Hop-Gruppe Bomfunk MC's.",
+        "Aufgenommen wurde er im Herbst 1999 im Studio \"JS16\" in Finnland.",
+        "Die Single erschien am 26. Oktober 1999 zunächst nur in Finnland über das Label 16 Inch, weltweit folgte sie erst 2000.",
+        "Er war eines der ersten Stücke, die über das Internet eine weltweite Zuhörerschaft fanden – zunächst kursierte eine 60 Sekunden lange Audiodatei im Web.",
+        "Das Stück ist ein reines Instrumental: kein einziger gesungener Text, nur Synthesizer und ein treibender Beat."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=y6120QOlsfU",
+        "spotify": "",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/electro-darude-sandstorm.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "electronic-synth"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sandstorm_(instrumental)",
+        "https://www.songfacts.com/facts/darude/sandstorm",
+        "https://en.wikipedia.org/wiki/Darude",
+        "https://en.wikipedia.org/wiki/Before_the_Storm_(Darude_album)",
+        "https://en.wikipedia.org/wiki/JS16"
+      ]
+    },
+    {
+      "id": "yt-wBDD37Xv6A0",
+      "title": "Ashes to Ashes",
+      "artist": "David Bowie",
+      "year": 1980,
+      "country": "GB",
+      "genre": "Art Pop / New Wave",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Art Rock"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song zwischen Februar und April 1980 im Power Station in New York sowie in Good Earth Studios in London.",
+        "Das Stück entstand als erste Single des 14. Studioalbums und erschien am 1. August 1980 auf RCA.",
+        "Getragen wird der Track von einem mit Flanger-Effekt verzerrten Klavier-Riff, den markanten Gitarren-Synthesizer spielte Chuck Hammer.",
+        "Das Video inszeniert den Künstler als Clown, als Astronaut und als Insassen einer Anstalt – es war damals das teuerste je produzierte Musikvideo.",
+        "Der Text setzt die Geschichte von 1969 fort: Der damalige Astronaut ist nun drogenabhängig und völlig abgeschnitten von der Erde."
+      ],
+      "lyrics": {
+        "real": [
+          "But the little green wheels are following me",
+          "We know Major Tom's a junkie",
+          "Want an axe to break the ice"
+        ],
+        "fake": "Silver shoes are calling and we ride the neon rain tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=wBDD37Xv6A0",
+        "spotify": "https://open.spotify.com/track/37CRPk0L5ZpfPeePEPwE0t",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "electronic-synth",
+        "Rock Anthems"
+      ],
+      "coverUrl": "/covers/david-bowie-ashes-to-ashes--single-version---2017-remaster-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Ashes_to_Ashes_(David_Bowie_song)",
+        "https://en.wikipedia.org/wiki/Scary_Monsters_(and_Super_Creeps)",
+        "https://en.wikipedia.org/wiki/Space_Oddity",
+        "https://en.wikipedia.org/wiki/David_Bowie",
+        "https://lrclib.net/api/get?artist_name=David%20Bowie&track_name=Ashes%20to%20Ashes"
+      ]
+    },
+    {
+      "id": "david-bowie-lets-dance-1983",
+      "title": "Let's Dance",
+      "artist": "David Bowie",
+      "year": 1983,
+      "country": "GB",
+      "genre": "Dance-Pop / Funk-Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Dance Floor",
+        "Nostalgic",
+        "Neon Night"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song in den ersten drei Wochen des Dezember 1982 im Power Station in New York; Tontechniker war Bob Clearmountain.",
+        "Produziert wurde das Stück gemeinsam mit Nile Rodgers, der nebenbei den Rhythmusgitarren-Part von Carlos Alomar übernahm.",
+        "Der Blues-Gitarrist Stevie Ray Vaughan steuerte als damals noch unbekannter 28-Jähriger eine zusätzliche Gitarren-Spur bei – der Sänger hatte ihn 1982 beim Montreux Jazz Festival entdeckt.",
+        "Der Clip wurde im Februar 1983 in Australien gedreht und zeigt ein junges Paar aus der indigenen Tanzszene; inszeniert hat ihn der Sänger gemeinsam mit seinem Stamm-Regisseur Mallet.",
+        "Die Single erschien am 14. März 1983 als erste Auskopplung des Albums und war die einzige Nummer-eins des Künstlers auf beiden Seiten des Atlantiks."
+      ],
+      "lyrics": {
+        "real": [
+          "Because my love for you",
+          "And tremble like a flower",
+          "Let's dance"
+        ],
+        "fake": "Swing with me beneath the golden sky tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VbD_kBJc_gI",
+        "spotify": "https://open.spotify.com/track/4cVHMHgmWgudD399ZdhQ3L",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/david-bowie-lets-dance-1983.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "80s Flashback",
+        "soul-funk"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Let%27s_Dance_(David_Bowie_song)",
+        "https://en.wikipedia.org/wiki/Let%27s_Dance_(David_Bowie_album)",
+        "https://www.songfacts.com/facts/david-bowie/lets-dance",
+        "https://en.wikipedia.org/wiki/Nile_Rodgers",
+        "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan"
+      ]
+    },
+    {
+      "id": "legends-bowie-space-oddity",
+      "title": "Space Oddity",
+      "artist": "David Bowie",
+      "year": 1969,
+      "country": "GB",
+      "genre": "Psychedelic Rock / Folk Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Sad",
+        "Atmospheric"
+      ],
+      "hints": [
+        "Aufgenommen wurde der Song am 20. Juni 1969 in den Trident Studios in London, die Produktion lag bei Gus Dudgeon.",
+        "Die 7-Zoll-Single erschien am 11. Juli 1969 bei Philips in Großbritannien und bei Mercury in den USA.",
+        "Der Track entstand mit einem Stylophone, einem damals neuen elektronischen Instrument, das vor allem für Kinder vermarktet wurde.",
+        "Das Label presste die Veröffentlichung extra vor, um den bemannten Mondflug von Apollo 11 zu begleiten – die BBC nutzte den Song als Hintergrundmusik zur Landung.",
+        "Er erzählt die Geschichte eines fiktiven Astronauten, der nach einer langen Reise allein in einer Blechdose über der Erde treibt."
+      ],
+      "lyrics": {
+        "real": [
+          "Take your protein pills and put your helmet on",
+          "And the papers want to know whose shirts you wear",
+          "Though I'm past one hundred thousand miles"
+        ],
+        "fake": "Drifting through the silence, watching starlight fade behind me"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=iYYRH4apXDo",
+        "spotify": "https://open.spotify.com/track/72Z17vmmeQKAg8bptWvpVG",
+        "amazonMusic": ""
+      },
+      "coverUrl": "/covers/legends-bowie-space-oddity.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026",
+        "country-folk"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Space_Oddity",
+        "https://en.wikipedia.org/wiki/David_Bowie_(1969_album)",
+        "https://en.wikipedia.org/wiki/Stylophone",
+        "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+        "https://www.songfacts.com/facts/david-bowie/space-oddity"
+      ]
+    },
+    {
+      "id": "yt-O_d3DXVb430",
+      "title": "Memories",
+      "artist": "David Guetta ft. Kid Cudi",
+      "year": 2010,
+      "country": "FR",
+      "genre": "Electro House",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Der Song entstand im April 2009 und erschien im Februar 2010 als vierte Single des Albums \"One Love\".",
+        "Das Video wurde am 4. Januar 2010 in Miami gedreht, die Clubszenen entstanden im Club Nocturnal.",
+        "Geschrieben wurde der Track vom französischen DJ gemeinsam mit Frédéric Riesterer, der ihn auch mitproduzierte.",
+        "In den USA erreichte er Platz 46 der Billboard Hot 100 und wurde dort platin-zertifiziert.",
+        "Der Refrain dreht sich darum, die wilden Nächte loszulassen – während der Corona-Lockdowns wurde dieses Motto auf TikTok noch einmal zum Trend."
+      ],
+      "lyrics": {
+        "real": [
+          "All the crazy shit I did tonight",
+          "Those would be the best memories",
+          "I just wanna let it go for the night"
+        ],
+        "fake": "All the wild things we did right, running through the neon light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=O_d3DXVb430",
+        "spotify": "https://open.spotify.com/track/2urC4Hsw4xuZZDGVnpNEjz",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "electronic-synth",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/david-guetta-memories--feat--kid-cudi-.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Memories_(David_Guetta_song)",
+        "https://en.wikipedia.org/wiki/One_Love_(David_Guetta_album)",
+        "https://www.songfacts.com/facts/david-guetta/memories",
+        "https://en.wikipedia.org/wiki/David_Guetta",
+        "https://en.wikipedia.org/wiki/Kid_Cudi"
+      ]
+    },
+    {
+      "id": "yt-eBz7wmPeKFs",
+      "title": "Who's That Chick?",
+      "artist": "David Guetta ft. Rihanna",
+      "year": 2010,
+      "country": "FR",
+      "genre": "Dance-Pop / Electro House",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits"
+      ],
+      "hints": [
+        "Die Single war Teil einer weltweiten Kampagne eines Snacks-Herstellers, die das Publikum per Augmented Reality einband – der Start lief über Spezial-Beutel der Marke.",
+        "Der Song verarbeitet den Dance-Track eines anderen Stars von 1987 und war ursprünglich für das neue Studioalbum der Sängerin geplant.",
+        "Die Single erschien am 22. November 2010 als zweite Single einer erweiterten Album-Neuauflage; zum Song existieren ein Tag- und ein Nacht-Video.",
+        "Der Song leakte vor dem offiziellen Release am 17. September 2010 ins Netz; in Großbritannien erreichte er Platz 6, in den US-Charts Platz 51.",
+        "Ein französischer DJ-Produzent und eine karibische Superstarin liefern sich 2010 einen Dance-Pop-Track, der auf einer erweiterten Album-Neuauflage erschien."
+      ],
+      "hintEvidence": [
+        "https://www.prnewswire.com/news-releases/rihanna-doritos-unveil-interactive-musical-experience-for-fans-worldwide-features-debut-of-new-single-whos-that-chick-105242638.html",
+        "https://simple.wikipedia.org/wiki/Who%27s_That_Chick%3F",
+        "https://en.wikipedia.org/wiki/One_Love_(David_Guetta_album)",
+        "https://www.songfacts.com/facts/rihanna/whos-that-chick",
+        "https://en.wikipedia.org/wiki/Who%27s_That_Chick%3F"
+      ],
+      "lyrics": {
+        "real": [
+          "Too cold for you to keep her",
+          "Too hot for you to leave her",
+          "Music is all I need"
+        ],
+        "fake": "She's a midnight magnet, every heart in the room"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=eBz7wmPeKFs",
+        "youtubeAlternatives": [
+          "https://www.youtube.com/watch?v=EvulQKVHoGc"
+        ],
+        "spotify": "https://open.spotify.com/track/7e1h7rqNB0BBC2fUuWEEFe",
+        "amazonMusic": ""
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "electronic-synth",
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/david-guetta-who-s-that-chick---feat--rihanna-.jpg"
+    }
+  ]
+}

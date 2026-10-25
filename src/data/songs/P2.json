@@ -1,0 +1,613 @@
+{
+  "songs": [
+    {
+      "id": "yt-RYlMBKYFw4U",
+      "title": "Stranger",
+      "artist": "Paul Simon featuring Nico Segal",
+      "year": 2016,
+      "country": "US",
+      "genre": "Folk Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Nostalgic",
+        "Classic",
+        "Popular"
+      ],
+      "hints": [
+        "Die Aufnahme entstand über Jahre hinweg in einer Hütte des Liedermachers in Connecticut sowie an der Montclair State University in New Jersey.",
+        "Für die Klänge wurden Instrumente verwendet, die der Komponist Harry Partch eigens für seine Zwecke baute - darunter die Cloud-Chamber Bowls und das Chromelodeon.",
+        "Drei Titel des Albums entstanden in Zusammenarbeit mit dem italienischen Elektronikkünstler Clap! Clap!; die Begegnung kam 2011 in Italien zustande, vermittelt durch den Sohn des Liedermachers.",
+        "Das Album erreichte Platz 1 der britischen Albumcharts und den mit Platz 3 höchsten Einstieg in der Billboard-200-Charts des Künstlers.",
+        "Im Refrain singt der Liedermacher davon, wie es wäre, sich noch einmal in jemanden zu verlieben, dem man erst kürzlich begegnet ist."
+      ],
+      "lyrics": {
+        "real": [
+          "Certain melodies tear your heart apart",
+          "I can't wait to see you walk across my doorway",
+          "Reconstruction is a lonesome art"
+        ],
+        "fake": "I'll be playing my guitar by the river tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=RYlMBKYFw4U"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/paul-simon-featuring-nico-segal-stranger.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Stranger_to_Stranger",
+        "https://en.wikipedia.org/wiki/Harry_Partch",
+        "https://en.wikipedia.org/wiki/Paul_Simon",
+        "https://en.wikipedia.org/wiki/Clap!_Clap!",
+        "https://api.lyrics.ovh/v1/Paul%20Simon/Stranger"
+      ]
+    },
+    {
+      "id": "electro-paulvandyk-angel",
+      "title": "For an Angel",
+      "artist": "Paul van Dyk",
+      "year": 1994,
+      "country": "DE",
+      "genre": "Trance",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "In einem Interview im August 2024 verriet der Produzent, dass er den Track mit einem Roland Juno-60, einem Roland Juno-106, einem Roland JX-1 und einem Roland TR-808 gebaut hat.",
+        "2013 wählten die Leser des britischen Magazins Mixmag den Track auf Platz acht der besten Dance-Records aller Zeiten.",
+        "1998 erschien eine Remix-Version auf dem Label Deviant Records, die mehrere Wochen auf Platz 1 der britischen Dance-Charts stand - eine Hommage an den Club, in dem der DJ Resident war.",
+        "Der Track erschien 1994 auf dem Debütalbum des Künstlers beim Label MFS und gilt als sein erfolgreichstes Werk.",
+        "Für den Song existieren drei Musikvideos, eines davon von 1998 an der Riviera Maya in Mexiko."
+      ],
+      "lyrics": null,
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=1BUk1q-NKtY"
+      },
+      "coverUrl": "/covers/electro-paulvandyk-angel.jpg",
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Global Hits 1950-2026",
+        "90s Unplugged",
+        "Dance Floor Fillers"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/For_an_Angel",
+        "https://en.wikipedia.org/wiki/45_RPM_(album)",
+        "https://en.wikipedia.org/wiki/Paul_van_Dyk",
+        "https://en.wikipedia.org/wiki/MFS_(label)",
+        "https://en.wikipedia.org/wiki/E-Werk_(Berlin)"
+      ]
+    },
+    {
+      "id": "yt-MmPdt4UUsoA",
+      "title": "Pa' Romper la Discoteca",
+      "artist": "Farruko feat. Daddy Yankee & Yomo",
+      "year": 2011,
+      "country": "PR",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Track stammt aus der Album-Reihe des Nazza-Kollektivs von Musicologo y Menes, zu der auch das 2011 veröffentlichte Album 'Carnal' gehört.",
+        "Der Titel klingt nach Party, meint aber: In dieser Nacht wird der Club 'abgerissen'.",
+        "Der Refrain dreht sich um einen Abend, an dem nur Frauen ohne festen Partner im Saal stehen und der DJ die Musik lauter drehen soll.",
+        "Einer der beiden Gäste gilt als 'King of Reggaeton' und kommt aus Puerto Rico.",
+        "Der Track gehört zum lateinischsprachigen Urban-Pop und verbindet US-Southern-Trap-Produktion mit Reggaeton-Rhythmus."
+      ],
+      "lyrics": {
+        "real": [
+          "Preparen los motores, let's go",
+          "Vamos directo y rumbo al club",
+          "Ahora que está full, la pista completa"
+        ],
+        "fake": "Bailamos hasta el amanecer con la música a todo volumen"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=MmPdt4UUsoA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "2010s & 2020s Chart Toppers",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/farruko-feat-daddy-yankee-yomo-pa-romper-la-discoteca.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_album_appearances_by_Daddy_Yankee",
+        "https://en.wikipedia.org/wiki/Daddy_Yankee",
+        "https://en.wikipedia.org/wiki/Reggaeton",
+        "https://en.wikipedia.org/wiki/Trap_music",
+        "https://lrclib.net/api/get?artist_name=Musicologo%20Y%20Menes%2C%20Farruko%2C%20Zion%2C%20Lenox%2C%20DY&track_name=Romper%20La%20Disco"
+      ]
+    },
+    {
+      "id": "disney-aladdin-world",
+      "title": "A Whole New World",
+      "artist": "Peabo Bryson & Regina Belle",
+      "year": 1992,
+      "country": "US",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Epic",
+        "Romantic",
+        "Classic"
+      ],
+      "hints": [
+        "Die Melodie entstand 1991 für einen Animationsfilm, in dem ein verzauberter Teppich die beiden Hauptfiguren in die Luft entführt.",
+        "Musik und Text stammen von Alan Menken und Tim Rice - beide erhielten dafür den Oscar für den Besten Originalsong.",
+        "Die Pop-Version entstand von zwei US-Singern, die den Song auch auf ihren Soloalben von 1993 und 1994 nahmen.",
+        "Mit einer einzigen Woche auf Platz 1 der US-Hot-100 war es der erste Song eines Disney-Animationsfilms, der die Charts anführte - bis 'We Don't Talk About Bruno' 2022 kam.",
+        "Die Single-Version dauert 4:03, wurde in den USA vergoldet und erreichte in Großbritannien Platz 12."
+      ],
+      "lyrics": {
+        "real": [
+          "Shining, shimmering, splendid",
+          "On a magic carpet ride",
+          "No one to tell us no"
+        ],
+        "fake": "Silver lanterns glow above a kingdom made of song"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xgvpnpLqyGA"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-aladdin-world.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/A_Whole_New_World",
+        "https://en.wikipedia.org/wiki/Aladdin_(1992_Disney_film)",
+        "https://en.wikipedia.org/wiki/Alan_Menken",
+        "https://en.wikipedia.org/wiki/Tim_Rice",
+        "https://en.wikipedia.org/wiki/Aladdin_(1992_soundtrack)"
+      ]
+    },
+    {
+      "id": "unplugged-pearl-jam-black",
+      "title": "Black (Unplugged)",
+      "artist": "Pearl Jam",
+      "year": 1992,
+      "country": "US",
+      "genre": "Grunge / Rock",
+      "difficulty": "medium",
+      "mood": [
+        "Sad",
+        "Powerful",
+        "Deep"
+      ],
+      "hints": [
+        "Die Gitarren-Ballade wurde im Oktober 1990 zum ersten Mal live in einem Café in Seattle gespielt.",
+        "Das Label drängte die Band auf eine Single, doch die Musiker lehnten ab - so erreichte der Song dennoch Platz 3 der US-Rock-Charts und Platz 20 der US-Modern-Rock-Charts.",
+        "Bei der MTV-Akustiksession im März 1992 in Queens, New York, entstand die Akustik-Version, die auf dem zugehörigen Live-Album 5:31 Minuten dauert.",
+        "Der Frontsänger sagte zum Song: 'Zerbrechliche Songs werden von der Musikindustrie zerstört' - er fürchtete, ein Musikvideo würde die emotionale Wucht nehmen.",
+        "In einer Leserumfrage des US-Magazins Rolling Stone zählte der Song zu den besten Balladen aller Zeiten."
+      ],
+      "lyrics": {
+        "real": [
+          "Sheets of empty canvas, untouched sheets of clay",
+          "All the pictures have all been washed in black",
+          "I take a walk outside, I'm surrounded by some kids at play"
+        ],
+        "fake": "In the shadow of the night, we're looking for the light of your soul"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qgaRVvAKoqQ",
+        "spotify": "https://open.spotify.com/track/3xIaUb1WsnrqbJo6CsJMLO",
+        "amazonMusic": "https://music.amazon.com/tracks/B08HNFPM32"
+      },
+      "coverUrl": "/covers/unplugged-pearl-jam-black.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "90s Unplugged",
+        "Rock Anthems",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Black_(Pearl_Jam_song)",
+        "https://en.wikipedia.org/wiki/MTV_Unplugged_(Pearl_Jam_album)",
+        "https://en.wikipedia.org/wiki/Ten_(Pearl_Jam_album)",
+        "https://en.wikipedia.org/wiki/Pearl_Jam",
+        "https://lrclib.net/api/get?artist_name=Pearl%20Jam&track_name=Black"
+      ]
+    },
+    {
+      "id": "yt-XOsY3W3dlI0",
+      "title": "(It Goes Like) Nanana",
+      "artist": "Peggy Gou",
+      "year": 2023,
+      "country": "KR",
+      "genre": "House / Club",
+      "difficulty": "easy",
+      "mood": [
+        "Energy",
+        "Happy",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Die Künstlerin wurde 1991 in Südkorea geboren und arbeitet als DJ und Produzentin.",
+        "Die Single erschien am 15. Juni 2023 über das britische Label XL Recordings.",
+        "Die auf 3:51 gekürzte Fassung ist die Veröffentlichungsversion; die längere Originalfassung dauert 6:07 und erschien 2024 auf dem Debütalbum 'I Hear You'.",
+        "Der Durchbruch kam über ein Video vom Lost-Nomads-Festival vor Marrakesch, das auf TikTok viral ging - die Künstlerin hatte dort gar kein eigenes Konto.",
+        "Der Sound verbindet Eurodance mit House und Dance-Pop; die Single debütierte auf Platz 14 der britischen Hitparade und eine Woche später in den Top 10."
+      ],
+      "lyrics": {
+        "real": [
+          "I can't explain",
+          "It's just the feeling that I won't, won't leave behind",
+          "Because it's something that is on, it's on my mind"
+        ],
+        "fake": "Dancing in the stars in the middle of the night tonight"
+      },
+      "isOneHitWonder": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=XOsY3W3dlI0",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DG5YM1FK",
+        "spotify": "https://open.spotify.com/track/6IqEKvoHDM0koaHxHuOvWp"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "grand-finale",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/finale-peggy-nanana.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/(It_Goes_Like)_Nanana",
+        "https://en.wikipedia.org/wiki/Peggy_Gou",
+        "https://en.wikipedia.org/wiki/I_Hear_You",
+        "https://en.wikipedia.org/wiki/XL_Recordings",
+        "https://api.lyrics.ovh/v1/Peggy%20Gou/Nanana"
+      ]
+    },
+    {
+      "id": "jazz-peggylee-fever",
+      "title": "Fever",
+      "artist": "Peggy Lee",
+      "year": 1958,
+      "country": "US",
+      "genre": "Jazz / Pop / Rhythm & Blues",
+      "difficulty": "easy",
+      "mood": [
+        "Sexy",
+        "Cool",
+        "Minimalist"
+      ],
+      "hints": [
+        "Der Titel kam 1956 durch Little Willie John in den US-Charts und belegte dort Platz 1 bei den von Disc-Jockeys meistgespielten R&B-Titeln.",
+        "Die Sängerin nahm ihre eigene Fassung im Mai 1958 in Hollywood auf - Studio Capitol Records.",
+        "Als B-Seite erschien 'You Don't Know'; die Single kam im Juni 1958 und ist 3:21 lang.",
+        "Zu den Produzenten und Mit-Autoren zählten neben Eddie Cooley und Otis Blackwell, damals John Davenport, auch die Sängerin selbst.",
+        "In den von ihr selbst geschriebenen Strophen tauchen Romeo und Julia sowie Captain Smith und Pocahontas auf."
+      ],
+      "lyrics": {
+        "real": [
+          "Never know how much I love you",
+          "Sun lights up the day time",
+          "Moon lights up the night"
+        ],
+        "fake": "Your skin is warm and the whole room sways"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=REryc1TpeY8",
+        "amazonMusic": "https://music.amazon.com/tracks/B00O9NIY2K"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-peggylee-fever.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Fever_(Little_Willie_John_song)",
+        "https://en.wikipedia.org/wiki/Peggy_Lee",
+        "https://en.wikipedia.org/wiki/Capitol_Records",
+        "https://en.wikipedia.org/wiki/Otis_Blackwell",
+        "https://api.lyrics.ovh/v1/Peggy%20Lee/Fever"
+      ]
+    },
+    {
+      "id": "disney-mercy-tramp",
+      "title": "He's a Tramp",
+      "artist": "Peggy Lee",
+      "year": 1955,
+      "country": "US",
+      "genre": "Soundtrack / Jazz / Blues",
+      "difficulty": "easy",
+      "mood": [
+        "Cool",
+        "Sultry",
+        "Classic"
+      ],
+      "hints": [
+        "Der Song entstand für einen Disney-Zeichentrickfilm von 1955, dessen Filmmusik Oliver Wallace komponierte - sein letzter Score für Disney.",
+        "Text und Musik stammen von Sonny Burke, dem A&R-Mann von Decca Records, der die Sängerin für das Projekt anwarb.",
+        "Beide wurden 1952 mit je 1.000 US-Dollar Pauschale bezahlt; von den zehn gewonnenen Titeln fanden nur sechs Verwendung im Film.",
+        "Die Aufnahme erschien als Single bei Decca Records, knapp ein Jahr später das Vinyl-Album mit den Songs aus dem Film.",
+        "Im Film singt die Sängerin das Lied gemeinsam mit den Mellomen; die Stimme der weiblichen Hauptfigur spricht Barbara Luddy."
+      ],
+      "lyrics": {
+        "real": [
+          "And I only hope he'll stay that way",
+          "He gives you plenty of trouble",
+          "I guess he's just a no-count pup"
+        ],
+        "fake": "He wags his tail and he owns the block"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=djwsBmqtBTw",
+        "amazonMusic": "https://music.amazon.com/tracks/B0023ATKKQ",
+        "spotify": "https://open.spotify.com/track/5RiwytnIjXpmur5Ypry5VJ"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/disney-mercy-tramp.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "jazz-blues",
+        "Global Hits 1950-2026"
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Lady_and_the_Tramp",
+        "https://en.wikipedia.org/wiki/Peggy_Lee",
+        "https://en.wikipedia.org/wiki/Sonny_Burke",
+        "https://en.wikipedia.org/wiki/Decca_Records",
+        "https://api.lyrics.ovh/v1/Peggy%20Lee/He%27s%20a%20Tramp"
+      ]
+    },
+    {
+      "id": "yt-ku7ohU1IGls",
+      "title": "God Rest Ye Merry Gentlemen",
+      "artist": "Pentatonix",
+      "year": 2016,
+      "country": "US",
+      "genre": "Christmas / A Cappella",
+      "difficulty": "medium",
+      "mood": [
+        "Festive",
+        "Classic",
+        "Warm"
+      ],
+      "hints": [
+        "Die US-A-Cappella-Gruppe wurde durch ihren Erfolg in der TV-Show 'The Sing-Off' 2011 bekannt.",
+        "Die Aufnahme erschien 2016 auf dem Weihnachtsalbum der Gruppe und dauert rund zweieinhalb Minuten.",
+        "Der Text des englischen Weihnachtslieds geht auf die Weihnachtserzählung nach Lukas 2 zurück; der Versmaß ist 8.6.8.6.8.6 mit Refrain.",
+        "Eine der frühesten gedruckten Fassungen findet sich auf einem Flugblatt von etwa 1760; verbreitet wurde das Lied durch William Sandys, der es 1833 in London herausgab.",
+        "Der Refrain dankt am Ende für Trost und Freude - die Zeile 'O, tidings of comfort and joy' ist weltbekannt."
+      ],
+      "lyrics": {
+        "real": [
+          "Let nothing you dismay",
+          "Remember, Christ, our Saviour",
+          "O, tidings of comfort and joy"
+        ],
+        "fake": "The snow is falling softly on the windowsill tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ku7ohU1IGls",
+        "spotify": "https://open.spotify.com/track/02ibK22WhjAVzKBm7da7lm",
+        "amazonMusic": "https://music.amazon.com/tracks/B0HJDHDBDL"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/pentatonix-god-rest-ye-merry-gentlemen.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/God_Rest_Ye_Merry,_Gentlemen",
+        "https://en.wikipedia.org/wiki/A_Pentatonix_Christmas",
+        "https://en.wikipedia.org/wiki/Pentatonix",
+        "https://itunes.apple.com/search?term=Pentatonix+God+Rest+Ye+Merry+Gentlemen&limit=2&entity=song",
+        "https://lrclib.net/api/get?artist_name=Pentatonix&track_name=God%20Rest%20Ye%20Merry%20Gentlemen"
+      ]
+    },
+    {
+      "id": "yt-IjiVcn2sQm8",
+      "title": "Me Vas a Extrañar",
+      "artist": "Pepe Aguilar",
+      "year": 2001,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Interpret ist ein mexikanischer Sänger und Sohn des bekannten Ranchera-Liedermachers.",
+        "Der Titel erschien 2001 auf dem Album 'Lo mejor de nosotros'.",
+        "Die Aufnahme dauert gut vier Minuten und ist eine balladenartige Liebesklage.",
+        "Im Text kündigt der Sprecher an, für das Leben der Geliebten zu bleiben, auch wenn sie ihn verflucht.",
+        "Der Refrain beschwört, dass die Geliebte ihn vermissen und bei einem anderen weinen werde."
+      ],
+      "lyrics": {
+        "real": [
+          "Lo puedo jurar",
+          "Porque yo fui, lo sigo siendo y lo seré",
+          "El amor de tu vida"
+        ],
+        "fake": "Caminamos juntos por la playa bajo el sol"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=IjiVcn2sQm8",
+        "amazonMusic": "https://music.amazon.com/tracks/B0CMGVXBG5"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/pepe-aguilar-me-vas-a-extrañar---oficial.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Pepe_Aguilar",
+        "https://en.wikipedia.org/wiki/Antonio_Aguilar",
+        "https://musicbrainz.org/ws/2/release/968426ac-539b-4569-b0fa-28b2d7ca09ed?fmt=json&inc=recordings",
+        "https://lrclib.net/api/get?artist_name=Pepe%20Aguilar&track_name=Me%20Vas%20a%20Extra%C3%B1ar",
+        "https://itunes.apple.com/search?term=Pepe+Aguilar&limit=25&entity=song&country=mx"
+      ]
+    },
+    {
+      "id": "yt-AB-8gb--bgs",
+      "title": "Perdóname",
+      "artist": "Pepe Aguilar",
+      "year": 1999,
+      "country": "MX",
+      "genre": "Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat"
+      ],
+      "hints": [
+        "Der Titel erschien 1999 auf dem Album 'Por una mujer bonita'.",
+        "Die Aufnahme dauert dreieinhalb Minuten und gehört zur mexikanischen Regionalmusik.",
+        "Der Text ist eine Bitte um Verzeihung, weil der Sänger die Geliebte verletzt hat, obwohl er sie nur beschützen wollte.",
+        "Der Refrain endet mit einem Gebet darum, dass die Zeit die Wunden heilt.",
+        "Der Song erschien später auch auf mehreren Kompilationsalben des Künstlers, unter anderem auf 'Mi historia' von 2005."
+      ],
+      "lyrics": {
+        "real": [
+          "Jamás pensé que amarte fuera malo",
+          "Solo quise cuidarte mimarte adorarte",
+          "Quiera Dios que los años te curen las heridas"
+        ],
+        "fake": "Te esperaré bajo la lluvia con un ramo de rosas"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=AB-8gb--bgs",
+        "amazonMusic": "https://music.amazon.com/tracks/B0C9LDZPBP"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "lyrics",
+        "vibe-check",
+        "cover-confusion",
+        "survivor"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Global Hits 1950-2026",
+        "World, Reggae & Soul",
+        "Schlager & Evergreens"
+      ],
+      "coverUrl": "/covers/pepe-aguilar-perdóname---oficial.jpg",
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Pepe_Aguilar",
+        "https://musicbrainz.org/ws/2/release/44f9b4db-ff54-42f2-b21b-78eded17e73c?fmt=json&inc=recordings",
+        "https://musicbrainz.org/ws/2/release/3c9e19fb-ac4d-4f70-b360-df331566cc2c?fmt=json&inc=recordings",
+        "https://lrclib.net/api/get?artist_name=Pepe%20Aguilar&track_name=Perd%C3%B3name",
+        "https://itunes.apple.com/search?term=Pepe+Aguilar&limit=25&entity=song&country=mx"
+      ]
+    }
+  ]
+}

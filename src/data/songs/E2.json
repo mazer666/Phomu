@@ -1,0 +1,748 @@
+{
+  "songs": [
+    {
+      "id": "yt-uTK_7MOFV4s",
+      "title": "El Marinero Baila",
+      "artist": "Paco El Marinero",
+      "year": 2016,
+      "country": "ES",
+      "genre": "Latin Pop / Children's",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Kids"
+      ],
+      "hints": [
+        "Lateinamerikanischer Kindersong, in dem ein kleiner Seemann mit immer neuen Körperteilen das Tanzen lernt.",
+        "Bekanntes Mitmach-Lied aus dem spanischen Sprachraum, das in Kindergärten und auf Kindergeburtstagen gesungen wird.",
+        "Die Hauptfigur stammt aus einer argentinischen Kinderserie, die mit Millionen Kindern auf der ganzen Welt ein Millionenpublikum auf YouTube erreicht.",
+        "Im Refrain wird 'Suave' bzw. das Mitklatschen der Körperteile immer wiederholt — bis am Ende der ganze Körper tanzt.",
+        "Bekannteste Version stammt vom YouTube-Kanal 'El Reino Infantil', gegründet 2011 in Buenos Aires, mit über 50 Millionen Abonnenten."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/El_Reino_Infantil",
+        "https://es.wikipedia.org/wiki/El_Reino_Infantil",
+        "https://www.reasonwhy.es/actualidad/digital/llega-espana-el-canal-de-entretenimiento-lider-entre-los-ninos-de-habla-hispana",
+        "https://elreinoinfantil.fandom.com/wiki/Paco_El_Marinero_songs",
+        "https://www.youtube.com/watch?v=uTK_7MOFV4s"
+      ],
+      "lyrics": {
+        "real": [
+          "El marinero baila, baila, baila, baila",
+          "El marinero baila, baila con el dedo",
+          "Con el dedo, dedo, dedo, así baila el marinero"
+        ],
+        "fake": "Paco baila sin cesar junto al mar y quiere navegar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=uTK_7MOFV4s"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/el-marinero-baila-paco-el-marinero---el-reino-infantil.jpg"
+    },
+    {
+      "id": "yt-5FVhN8F8qxs",
+      "title": "Numb",
+      "artist": "Elderbrook",
+      "year": 2020,
+      "country": "GB",
+      "genre": "Electronic / Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "Emotional"
+      ],
+      "hints": [
+        "Elektronische Produktion über emotionale Taubheit und das Gefühl, allein durch die Welt zu gehen.",
+        "Der britische Künstler schrieb den Song laut eigener Aussage während einer Tournee, in der ihn die Einsamkeit des Reisens überkam.",
+        "Das offizielle Musikvideo spielt mit dem Gedanken, dass jeder Mensch im Inneren einsam ist — und uns das verbindet.",
+        "Der eingängige Refrain wiederholt ein einziges englisches Wort sechs Mal, das den emotionalen Zustand der Hauptfigur beschreibt.",
+        "Single aus dem Frühjahr 2020 mit prominenten Remixen, unter anderem von Joris Voorn — vor dem Debütalbum des Londoner Produzenten."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Elderbrook",
+        "https://genius.com/Elderbrook-numb-lyrics",
+        "https://www.musixmatch.com/lyrics/Elderbrook-2/Numb",
+        "https://soundcloud.com/elderbrook/numb",
+        "https://music.apple.com/us/album/numb/1498975161?i=1498975173"
+      ],
+      "lyrics": {
+        "real": [
+          "Oh, that's just how it goes",
+          "Risin', risin' up, right until we fall",
+          "And the feeling's gone, but I'm still numb"
+        ],
+        "fake": "I'm dancing all alone under the silver moon tonight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=5FVhN8F8qxs",
+        "spotify": "https://open.spotify.com/track/14QtCWJaRgMj6dkUs6dkcT"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Electronic & Techno",
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/elderbrook-numb.jpg"
+    },
+    {
+      "id": "yt-ndeNSvvL2-c",
+      "title": "Dirty Dancing",
+      "artist": "Glockenbach & ÁSDÍS",
+      "year": 2022,
+      "country": "DE",
+      "genre": "Pop / Electronic",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Dance Floor",
+        "80s Flashback"
+      ],
+      "hints": [
+        "Modern produzierter Dance-Track mit Retro-Anleihen an die 1980er Jahre und einem energiegeladenen Mitgröhl-Refrain.",
+        "Das deutsche Musikprojekt ist bekannt für seine anonymen Auftritte mit schwarzer Maske und überlässt ganz der Musik die Bühne.",
+        "Eine isländische Sängerin steuert die Vocals bei, die vom ersten Takt an zum Mitmachen animieren.",
+        "Im Refrain wird der englische Songtitel als Ruf mitgesungen, die Pre-Chorus-Zählung 'five, six, seven, eight' klingt wie aus dem Üben eines Tanzsaals.",
+        "Veröffentlicht im Juni 2022, benannt nach dem gleichnamigen Münchener Szeneviertel, aus dem die Produzenten stammen."
+      ],
+      "hintEvidence": [
+        "https://de.wikipedia.org/wiki/Glockenbach_(Musikprojekt)",
+        "https://genius.com/Glockenbach-dirty-dancing-lyrics",
+        "https://en.wikipedia.org/wiki/Glockenbach",
+        "https://music.apple.com/us/album/dirty-dancing-feat-%C3%A1sd%C3%ADs/1626387063?i=1626387524",
+        "https://www.youtube.com/watch?v=ndeNSvvL2-c"
+      ],
+      "lyrics": {
+        "real": [
+          "Let's keep dirty-dancin' right here 'til the sunrise",
+          "Are we everlastin' or is it the last time",
+          "Old-school kinda lovin', that's all that I want"
+        ],
+        "fake": "Dirty dancing by the lake, where the summer dreams awake"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=ndeNSvvL2-c"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/glockenbach-asdis-dirty-dancing.jpg"
+    },
+    {
+      "id": "metal-callboy-moves",
+      "title": "We Got the Moves",
+      "artist": "Electric Callboy",
+      "year": 2021,
+      "country": "DE",
+      "genre": "Electronicore / Party Metal",
+      "difficulty": "easy",
+      "mood": [
+        "Funny",
+        "Happy",
+        "Energy"
+      ],
+      "hints": [
+        "Verschmilzt harte Metalcore-Riffs mit tanzbaren Eurodance-Klängen zu einer ungewöhnlichen Mixtur.",
+        "Die Interpreten kommen aus dem Ruhrgebiet und stehen für unbeschwerte Party-Musik mit ironischem Augenzwinkern.",
+        "Das offizielle Musikvideo brach YouTube-Rekorde und entwickelte sich zur globalen Festival-Hymne.",
+        "Markenzeichen der Gruppe sind bunte Pilz-Perücken und schrille Disco-Bühnen-Outfits mit Eurodance-Ästhetik.",
+        "Ein prägender Refrain mit rhythmischem 'Döp-dödödö-döp'-Gesang dominiert den gesamten Track."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/We_Got_the_Moves",
+        "https://en.wikipedia.org/wiki/Electric_Callboy",
+        "https://en.wikipedia.org/wiki/Tekkno_(album)",
+        "https://en.wikipedia.org/wiki/Metalcore",
+        "https://en.wikipedia.org/wiki/Castrop-Rauxel"
+      ],
+      "lyrics": {
+        "real": [
+          "Summer mood, hot sand under my feet",
+          "Sipping on booze on a sunny beach",
+          "Döp-dödödö-döp, döp-dödödö-döp"
+        ],
+        "fake": "Sand between our toes and the bassline in our bones"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=D1NdGBldg3w",
+        "spotify": "https://open.spotify.com/track/4EFb9FhLyFiDbYKwBwDZre",
+        "amazonMusic": "https://music.amazon.com/tracks/B09XJF6YVK"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/metal-callboy-moves.jpg",
+      "packs": [
+        "metal-hardcore",
+        "Rock Anthems",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers"
+      ]
+    },
+    {
+      "id": "jazz-fitzgerald-summertime",
+      "title": "Summertime",
+      "artist": "Ella Fitzgerald & Louis Armstrong",
+      "year": 1957,
+      "country": "US",
+      "genre": "Jazz / Vocal",
+      "difficulty": "easy",
+      "mood": [
+        "Chill",
+        "Dreamy",
+        "Classic"
+      ],
+      "hints": [
+        "Bekannt aus einer berühmten 30er-Jahre Oper, die im fiktiven Viertel Catfish Row in South Carolina spielt.",
+        "Komponiert wurde das Stück von einem legendären US-Musicalschaffenden des 20. Jahrhunderts.",
+        "Die Aufnahme mit zwei Jazz-Legenden entstand am 18. August 1957 in einem Studio in Los Angeles.",
+        "Eine träumerische Wiegenlied-Hymne, die die Sehnsucht nach Ruhe und Geborgenheit besingt.",
+        "Der berühmte Eröffnungsvers beginnt mit dem englischen Wort für die wärmste Jahreszeit und endet mit 'and the livin' is easy'."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Summertime_(George_Gershwin_song)",
+        "https://en.wikipedia.org/wiki/Porgy_and_Bess_(Ella_Fitzgerald_and_Louis_Armstrong_album)",
+        "https://en.wikipedia.org/wiki/Porgy_and_Bess",
+        "https://en.wikipedia.org/wiki/George_Gershwin",
+        "https://en.wikipedia.org/wiki/Ella_Fitzgerald"
+      ],
+      "lyrics": {
+        "real": [
+          "Summertime, and the livin' is easy, fish are jumpin' and the cotton is high",
+          "Oh your daddy's rich and your ma is good lookin'",
+          "So hush little baby, don't you cry"
+        ],
+        "fake": "The lazy sun is melting on a hammock full of dreams"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=2HJCN3upMHE",
+        "spotify": "https://open.spotify.com/track/2gNjmvuQiEd2z9SqyYi8HH",
+        "amazonMusic": "https://music.amazon.com/tracks/B07GHQZQSX"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/jazz-fitzgerald-summertime.jpg",
+      "packs": [
+        "jazz-blues",
+        "Country, Jazz & Blues",
+        "Global Hits 1950-2026",
+        "60s & 70s Soul & Rock Legends"
+      ]
+    },
+    {
+      "id": "disney-lion-love",
+      "title": "Can You Feel the Love Tonight",
+      "artist": "Elton John",
+      "year": 1994,
+      "country": "GB",
+      "genre": "Pop / Ballad / Soundtrack",
+      "difficulty": "easy",
+      "mood": [
+        "Classic",
+        "Disney",
+        "Emotional",
+        "Epic",
+        "Romantic"
+      ],
+      "hints": [
+        "Aus dem Soundtrack eines preisgekrönten Disney-Trickfilms aus dem Jahr 1994.",
+        "Eine zärtliche Pianoballade, die die aufkeimende Romanze zwischen zwei Königskindern begleitet.",
+        "Das Stück wurde mit dem Oscar für den Besten Filmsong bei der 67. Oscarverleihung 1995 ausgezeichnet.",
+        "Die Single-Version wurde am 2. Mai 1994 veröffentlicht und erreichte Platz 4 in den US-Charts.",
+        "Im Film erklingt der Refrain 'And can you ...' – die zentrale Frage des gesamten Songs."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Can_You_Feel_the_Love_Tonight",
+        "https://en.wikipedia.org/wiki/The_Lion_King_(1994_film)",
+        "https://en.wikipedia.org/wiki/Tim_Rice",
+        "https://en.wikipedia.org/wiki/67th_Academy_Awards",
+        "https://en.wikipedia.org/wiki/Hans_Zimmer"
+      ],
+      "lyrics": {
+        "real": [
+          "There's a calm surrender to the rush of day",
+          "And can you feel the love tonight? It is where we are",
+          "It's enough for this wide-eyed wanderer that we got this far"
+        ],
+        "fake": "Stars burn low over the savanna while we hold on tight"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KjgWWjkNbhU",
+        "spotify": "https://open.spotify.com/track/67HKtdqchK0rmODxsBeWT8",
+        "amazonMusic": "https://music.amazon.com/tracks/B073HPWBHZ"
+      },
+      "supportedModes": [
+        "cover-confusion",
+        "hint-master",
+        "lyrics",
+        "survivor",
+        "timeline",
+        "vibe-check"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/elton-john-can-you-feel-the-love-tonight-single.jpg",
+      "packs": [
+        "kids-disney",
+        "Movie Hits",
+        "90s Unplugged",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-VafTMsrnSTU",
+      "title": "Sacrifice",
+      "artist": "The Weeknd",
+      "year": 2022,
+      "country": "CA",
+      "genre": "Pop / R&B",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Dark"
+      ],
+      "hints": [
+        "Elektronisch geprägter Dance-Track mit Post-Disco-Elementen, der das hedonistische Nachtleben einer Großstadt besingt.",
+        "Der kanadische Künstler verarbeitet darin das Spannungsfeld zwischen bedingungsloser Liebe und unbedingter Freiheit.",
+        "Single aus dem Januar 2022, aufgenommen mit schwedischen Top-Produzenten und einem ikonischen Soul-Sample.",
+        "Trotz der eingängigen Hook wird im Refrain das wiederholte Bekenntnis abgelegt, sich nicht dauerhaft an einen Menschen zu binden.",
+        "Track erschien als zweite Single seines Konzeptalbums über ein fiktives Radioprogramm, das nachts durch die Stadt sendet."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Sacrifice_(The_Weeknd_song)",
+        "https://en.wikipedia.org/wiki/Dawn_FM",
+        "https://en.wikipedia.org/wiki/The_Weeknd",
+        "https://genius.com/The-weeknd-sacrifice-lyrics",
+        "https://www.youtube.com/watch?v=VafTMsrnSTU"
+      ],
+      "lyrics": {
+        "real": [
+          "I was born in a city where the winter nights don't ever sleep",
+          "I don't want to sacrifice for your love",
+          "But I love my time"
+        ],
+        "fake": "I see the daylight fading, my heart is just parading through the night"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=VafTMsrnSTU",
+        "spotify": "https://open.spotify.com/track/1nH2PkJL1XoUq8oE6tBZoU"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "Electronic & Techno",
+        "2010s & 2020s Chart Toppers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/the-weeknd-sacrifice.jpg"
+    },
+    {
+      "id": "piano-elton-yoursong",
+      "title": "Your Song",
+      "artist": "Elton John",
+      "year": 1970,
+      "country": "GB",
+      "genre": "Pop / Piano Rock",
+      "difficulty": "easy",
+      "mood": [
+        "Romantic",
+        "Soft",
+        "Classic"
+      ],
+      "hints": [
+        "Eine unschuldige Liebeserklärung mit Klavierbegleitung und Streichern aus dem Jahr 1970.",
+        "Erster großer Welthit des britischen Künstlers, der später für seine extravagante Bühnenshow berühmt wurde.",
+        "Der Texter schrieb die Zeilen an einem Frühstückstisch in der Wohnung der Mutter des Künstlers in London.",
+        "Aufgenommen am 22. Januar 1970 in den legendären Trident Studios in London.",
+        "Refrain: 'You can tell everybody' – eine der schönsten Liebeserklärungen der Pop-Geschichte."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Your_Song",
+        "https://en.wikipedia.org/wiki/Elton_John_(album)",
+        "https://en.wikipedia.org/wiki/Bernie_Taupin",
+        "https://en.wikipedia.org/wiki/Elton_John",
+        "https://en.wikipedia.org/wiki/Trident_Studios"
+      ],
+      "lyrics": {
+        "real": [
+          "It's a little bit funny, this feeling inside",
+          "I know it's not much, but it's the best I can do",
+          "My gift is my song, and this one's for you"
+        ],
+        "fake": "Just a room, a piano and the rain against the glass"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GlPlfCy1urI",
+        "spotify": "https://open.spotify.com/track/38zsOOcu31XbbYj9BIPUF1",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DQ6FGH9K"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/piano-elton-yoursong.jpg",
+      "packs": [
+        "piano-ballads",
+        "60s & 70s Soul & Rock Legends",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt-qExVlz3zb0k",
+      "title": "Hold Me Closer",
+      "artist": "Elton John & Britney Spears",
+      "year": 2022,
+      "country": "GB",
+      "genre": "Pop / Dance",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Modern Hits",
+        "Dance Floor"
+      ],
+      "hints": [
+        "Up-tempo-Cover mehrerer älterer Hits, das im Sommer 2022 als erste neue Single einer US-Sängerin nach jahrelanger Pause veröffentlicht wurde.",
+        "Ein britischer Pianist und ein US-Popstar verschmelzen die Hooks dreier Songs des Pianisten zu einer neuen Tanz-Hymne.",
+        "Eine Zeile aus einer 1971er Ballade über einen reisenden Tänzer gibt dem Refrain seinen Titel.",
+        "Der Song markierte die musikalische Rückkehr der US-Sängerin nach dem Ende einer jahrelangen, kontrovers diskutierten Vormundschaft.",
+        "Erreichte im September 2022 Platz drei der britischen Charts und wurde in fünf Ländern auf Anhieb Nummer eins."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Hold_Me_Closer_(Elton_John_and_Britney_Spears_song)",
+        "https://en.wikipedia.org/wiki/The_Lockdown_Sessions",
+        "https://en.wikipedia.org/wiki/Elton_John",
+        "https://en.wikipedia.org/wiki/Britney_Spears",
+        "https://genius.com/Elton-john-and-britney-spears-hold-me-closer-lyrics"
+      ],
+      "lyrics": {
+        "real": [
+          "Hold me closer, tiny dancer",
+          "Count the headlights on the highway",
+          "Lay me down in sheets of linen"
+        ],
+        "fake": "Closer, baby, hold me tight, dancing till the morning light"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qExVlz3zb0k",
+        "spotify": "https://open.spotify.com/track/72yP0DUlWPyH8P7IoxskwN"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "Dance Floor Fillers",
+        "2010s & 2020s Chart Toppers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/elton-john---britney-spears-hold-me-closer.jpg"
+    },
+    {
+      "id": "finale-elton-dua-cold",
+      "title": "Cold Heart (PNAU Remix)",
+      "artist": "Elton John & Dua Lipa",
+      "year": 2021,
+      "country": "GB",
+      "genre": "Disco-Pop / Remix",
+      "difficulty": "easy",
+      "mood": [
+        "Happy",
+        "Energy",
+        "Classic"
+      ],
+      "hints": [
+        "Ein australisches Produzenten-Trio verwebt vier ältere Hits zu einem modernen Disco-Track.",
+        "Kombiniert 'Rocket Man', 'Sacrifice', 'Kiss the Bride' und 'Where's the Shoorah?' zu einer neuen Tanz-Hymne.",
+        "Erster Nummer-eins-Hit im Vereinigten Königreich für den britischen Künstler seit über 16 Jahren.",
+        "Entstand während der COVID-19-Pandemie für das Album 'The Lockdown Sessions' (2021).",
+        "Erreichte Platz eins in Australien, Kanada, Neuseeland und Großbritannien."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Cold_Heart_(Pnau_remix)",
+        "https://en.wikipedia.org/wiki/The_Lockdown_Sessions",
+        "https://en.wikipedia.org/wiki/Elton_John",
+        "https://en.wikipedia.org/wiki/Pnau",
+        "https://en.wikipedia.org/wiki/Dua_Lipa"
+      ],
+      "lyrics": {
+        "real": [
+          "It's a human sign",
+          "And I think it's gonna be a long, long time",
+          "Cold cold heart, hard done by you"
+        ],
+        "fake": "Your frozen heart is melting on the midnight dance floor"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=qod03PVTLqk",
+        "spotify": "https://open.spotify.com/track/6zSpb8dQRaw0M1dK8PBwQz",
+        "amazonMusic": "https://music.amazon.com/tracks/B0DQ6FSS6R"
+      },
+      "coverUrl": "/covers/finale-elton-dua-cold.jpg",
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "grand-finale",
+        "2010s & 2020s Chart Toppers",
+        "Dance Floor Fillers",
+        "Electronic & Techno"
+      ]
+    },
+    {
+      "id": "movie-lion-king-circle",
+      "title": "Circle of Life",
+      "artist": "Elton John / Carmen Twillie",
+      "year": 1994,
+      "country": "GB",
+      "genre": "Pop / World",
+      "difficulty": "medium",
+      "mood": [
+        "Epic",
+        "Emotional",
+        "Classic"
+      ],
+      "hints": [
+        "Eröffnungssong eines preisgekrönten Disney-Trickfilms aus dem Jahr 1994, der in Afrika spielt.",
+        "Beginnt mit einem kraftvollen Zulu-Ritualgesang eines bekannten südafrikanischen Sängers.",
+        "Komponiert vom britischen Pianisten zusammen mit dem deutschen Filmkomponisten Hans Zimmer.",
+        "Symbolisiert den ewigen Kreislauf von Geburt, Tod und Wiedergeburt in der Wildnis.",
+        "Wurde zur generationsübergreifenden Hymne für Hoffnung und Verantwortung."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Circle_of_Life",
+        "https://en.wikipedia.org/wiki/The_Lion_King_(1994_film)",
+        "https://en.wikipedia.org/wiki/Carmen_Twillie",
+        "https://en.wikipedia.org/wiki/Lebo_M",
+        "https://en.wikipedia.org/wiki/Tim_Rice"
+      ],
+      "lyrics": {
+        "real": [
+          "Nants ingonyama bagithi baba, sithi uhm ingonyama",
+          "It's the circle of life, and it moves us all",
+          "Through despair and hope, through faith and love"
+        ],
+        "fake": "Everything that roams this earth comes back around again"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=GibiNy4d4gc",
+        "spotify": "https://open.spotify.com/track/0HU5JnVaKNTWf6GykV9Zn8",
+        "amazonMusic": "https://music.amazon.com/tracks/B073SYQP5H"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "coverUrl": "/covers/elton-john-carmen-twillie-circle-of-life.jpg",
+      "packs": [
+        "Movie Hits",
+        "kids-disney",
+        "90s Unplugged",
+        "Global Hits 1950-2026"
+      ]
+    },
+    {
+      "id": "yt--esD-o4XrJ0",
+      "title": "Don't Go Breaking My Heart (with RuPaul)",
+      "artist": "Elton John, RuPaul",
+      "year": 2016,
+      "country": "GB",
+      "genre": "Pop / Disco",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "80s Flashback",
+        "Happy"
+      ],
+      "hints": [
+        "Disco-Duett aus einem Kollaborationsalbum, das im offiziellen Musikvideo diverse berühmte Filmpaare imitiert.",
+        "Ein britischer Pianist und eine US-Drag-Ikone singen sich die Bälle zu — wie einst der Pianist mit einer anderen britischen Sängerin.",
+        "Der Refrain fordert den Partner auf, das eigene Herz nicht zu brechen — und verspricht im Gegenzug das Gleiche.",
+        "Die Aufnahme wurde in den frühen 1990ern produziert, das offizielle Video dazu aber erst über zwanzig Jahre später veröffentlicht.",
+        "Diese besondere Cover-Version erschien als Single eines Duett-Albums, dessen Original 1976 zur Nummer eins in den USA und UK wurde."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Don't_Go_Breaking_My_Heart",
+        "https://en.wikipedia.org/wiki/Elton_John",
+        "https://en.wikipedia.org/wiki/RuPaul",
+        "https://en.wikipedia.org/wiki/Duets_(Elton_John_album)",
+        "https://genius.com/Elton-john-and-rupaul-dont-go-breaking-my-heart-lyrics"
+      ],
+      "lyrics": {
+        "real": [
+          "Don't go breaking my heart",
+          "I couldn't if I tried",
+          "I gave you my heart"
+        ],
+        "fake": "I will always love you under the silver moon dancing till the dawn"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=-esD-o4XrJ0"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "80s Flashback",
+        "Global Hits 1950-2026",
+        "Dance Floor Fillers",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/elton-john--rupaul-don-t-go-breaking-my-heart--with-rupaul-.jpg"
+    },
+    {
+      "id": "yt-WPiEbYSF9kE",
+      "title": "Suavemente",
+      "artist": "Elvis Crespo",
+      "year": 1998,
+      "country": "DO",
+      "genre": "Merengue / Latin Pop",
+      "difficulty": "medium",
+      "mood": [
+        "Popular",
+        "Latin Heat",
+        "Romantic"
+      ],
+      "hints": [
+        "Sommerlich-heißer Merengue-Klassiker, der seit seinem Erscheinen auf keiner Latin-Party in der Karibik und Lateinamerika mehr fehlt.",
+        "Der Interpret singt auf Spanisch — bittet um sanfte, langsame Küsse und vergleicht das Gefühl mit dem Schweben in der Luft.",
+        "Die Leadsingle des Debütalbums kletterte 1998 bis auf Platz eins der US-Latin-Charts und hielt sich dort sechs Wochen am Stück.",
+        "Im Refrain wird immer wieder ein einzelnes spanisches Adjektiv gerufen, das zugleich Titel und Tempo des Songs vorgibt.",
+        "Berichten zufolge wurde das Stück 2016 von Astronauten einer Space-Shuttle-Mission während ihres Mondflugs gehört."
+      ],
+      "hintEvidence": [
+        "https://en.wikipedia.org/wiki/Suavemente_(Elvis_Crespo_song)",
+        "https://en.wikipedia.org/wiki/Elvis_Crespo",
+        "https://en.wikipedia.org/wiki/Suavemente",
+        "https://genius.com/Elvis-crespo-suavemente-lyrics",
+        "https://tidal.com/magazine/article/elvis-crespos-suavemente-turns-20/1-54834"
+      ],
+      "lyrics": {
+        "real": [
+          "Suavemente, bésame, que quiero sentir tus labios",
+          "Bésame otra vez",
+          "Bésame un poquito, bésame otro ratito"
+        ],
+        "fake": "Suavemente quiero cantar junto al mar y bailar sin parar"
+      },
+      "isOneHitWonder": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=WPiEbYSF9kE",
+        "spotify": "https://open.spotify.com/track/1YwPNemawMgGe6sF4U0FTE"
+      },
+      "supportedModes": [
+        "timeline",
+        "hint-master",
+        "vibe-check",
+        "cover-confusion",
+        "survivor",
+        "lyrics"
+      ],
+      "isQRCompatible": true,
+      "packs": [
+        "World, Reggae & Soul",
+        "Dance Floor Fillers",
+        "Global Hits 1950-2026",
+        "youtube-import"
+      ],
+      "coverUrl": "/covers/elvis-crespo-suavemente.jpg"
+    }
+  ]
+}
