@@ -10,10 +10,10 @@ import type { PhomuSong } from './song';
 import type { GameMode, MusicProvider, Difficulty } from '@/config/game-config';
 
 
-/** Who is allowed to perform override actions in the game */
+/** Wer Override-Aktionen im Spiel ausführen darf */
 export type OverrideGovernance = 'host' | 'co-host' | 'majority';
 
-/** Publication policy for AI-generated hints */
+/** Veröffentlichungspolitik für KI-generierte Hints */
 export type HintReleasePolicy = 'auto-publish' | 'manual-review';
 
 /** Verhalten bei API-Blocking/Rate-Limit */
@@ -68,34 +68,34 @@ export interface GameConfig {
   /** Song difficulty filter */
   difficulty: Difficulty | 'all';
 
-  /** Standard number of rounds (product requirement: at least 10) (legacy/alias for targetRounds) */
+  /** Standard-Rundenanzahl (Produktanforderung: mindestens 10) (Legacy/Alias for targetRounds) */
   roundsToPlay: number;
 
-  /** Maximum points in timeline mode */
+  /** Maximale Punkte im Timeline-Modus */
   timelineMaxPoints: number;
 
-  /** Optional: answering later = fewer points */
+  /** Optional: später antworten = weniger Punkte */
   timeDecayEnabled: boolean;
 
-  /** From when the time penalty kicks in */
+  /** Ab wann der Zeitabzug greift */
   timeDecayGraceSeconds: number;
 
-  /** Every X seconds 1 point is deducted */
+  /** Alle X Sekunden wird 1 Punkt abgezogen */
   timeDecayStepSeconds: number;
 
-  /** How many points are deducted per step */
+  /** Wie viele Punkte pro Schritt abgezogen werden */
   timeDecayStepPoints: number;
 
-  /** Minimum for a correct answer despite the time penalty */
+  /** Minimum für richtige Antwort trotz Zeitabzug */
   minPointsPerCorrect: number;
 
-  /** Governance for hidden override actions */
+  /** Governance für versteckte Override-Aktionen */
   overrideGovernance: OverrideGovernance;
 
-  /** Publication of AI hints after passed checks */
+  /** Veröffentlichung von KI-Hints nach bestandenen Checks */
   hintReleasePolicy: HintReleasePolicy;
 
-  /** Behaviour on AI blocking (queue + retry + pending recommended) */
+  /** Verhalten bei KI-Blocking (Queue + Retry + Pending empfohlen) */
   aiQueueStrategy: AIQueueStrategy;
 
   /** Whether chips/betting mechanic is active */
@@ -184,36 +184,36 @@ export interface GameState {
   /** ID of the winning player or team (set when isGameOver = true) */
   winnerId?: string;
 
-  // ─── Global progression (phase 5) ──────────────────────────
+  // ─── Global Progression (Phase 5) ──────────────────────────
 
   /** Total XP earned across all sessions */
   totalXP: number;
 
-  /** Preferred player type (standard YouTube vs YouTube Music) */
+  /** Bevorzugter Player-Typ (Standard YouTube vs YouTube Music) */
   preferredPlayer: 'standard' | 'music';
 
-  /** Preferred music provider (YouTube stays the default) */
+  /** Bevorzugter Musikanbieter (YouTube bleibt Standard) */
   preferredMusicProvider: MusicProvider;
 
-  /** Whether background music should be played */
+  /** Ob Hintergrundmusik abgespielt werden soll */
   musicEnabled: boolean;
 
-  /** Volume for background music (0..1) */
+  /** Lautstärke für Hintergrundmusik (0..1) */
   musicVolume: number;
 
-  /** Whether short sound effects should be played */
+  /** Ob kurze Soundeffekte abgespielt werden sollen */
   sfxEnabled: boolean;
 
-  /** Volume for sound effects (0..1) */
+  /** Lautstärke für Soundeffekte (0..1) */
   sfxVolume: number;
 
-  /** Where the current song comes from (random draw vs QR scan) */
+  /** Woher der aktuelle Song kommt (Zufallswahl vs QR-Scan) */
   currentSongSource: 'random' | 'qr' | null;
 
-  /** Whether the drawing phase should trigger automatically (e.g. after an auto-skip) */
+  /** Ob die Drawing-Phase automatisch triggern soll (z.B. nach Auto-Skip) */
   autoDrawIntent: boolean;
 
-  /** Years on the shared timeline (grows with correct answers) */
+  /** Jahreszahlen auf der gemeinsamen Timeline (wächst mit richtigen Antworten) */
   timelineYears: number[];
 
   /** Timestamp when the game started (for time-based ending condition) */

@@ -1,46 +1,12 @@
 'use client';
 
-import { Fragment, type ReactNode } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-
-/** Date of the privacy notice. */
-const LAST_UPDATED = new Date('2026-04-03T12:00:00Z');
-
-/** Allows **bold** and `code` markup in translation texts. */
-const INLINE_PATTERN = /(\*\*[^*]+\*\*|`[^`]+`)/g;
-
-/**
- * Renders a translation text with simple markup:
- * **Text** → <strong>, `Text` → <code>
- */
-function renderInline(text: string): ReactNode[] {
-  return text
-    .split(INLINE_PATTERN)
-    .filter((part) => part.length > 0)
-    .map((part, index) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={index}>{part.slice(2, -2)}</strong>;
-      }
-      if (part.startsWith('`') && part.endsWith('`')) {
-        return <code key={index}>{part.slice(1, -1)}</code>;
-      }
-      return <Fragment key={index}>{part}</Fragment>;
-    });
-}
 
 export default function PrivacyPage() {
-  const { t, i18n } = useTranslation();
-
-  // The legal page is deliberately bilingual: the active language comes first.
-  const date = new Intl.DateTimeFormat(i18n.language, {
-    dateStyle: 'long',
-  }).format(LAST_UPDATED);
-
   return (
     <main className="min-h-screen bg-[var(--color-bg)] py-12 px-6 sm:px-10 text-[var(--color-text)]">
-      <motion.div
+      <motion.div 
         className="max-w-4xl mx-auto space-y-12"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -49,29 +15,27 @@ export default function PrivacyPage() {
         {/* Header */}
         <header className="space-y-4 border-b border-[var(--color-border)] pb-8">
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-[var(--color-primary)]">
-            {t('legal.privacy.title')}
+            Privacy Notice
           </h1>
           <p className="text-lg font-bold opacity-70">
-            {t('legal.privacy.subtitle', { date })}
+            Datenschutzhinweise (Stand: April 3, 2026)
           </p>
         </header>
 
         {/* Section 1: Data Localization */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
           <section className="space-y-3">
-            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">
-              {t('legal.privacy.section1.title')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">1. Data Storage & Localization</h2>
             <p className="text-sm leading-relaxed opacity-90">
-              {renderInline(t('legal.privacy.section1.body'))}
+              Phomu prioritizes data minimization. Most application data, such as game progress, scores, and preferences, is stored **locally on your device** via the browser&apos;s <code>localStorage</code>. 
+              No user accounts are required, and no persistent personal profiles are created on our servers.
             </p>
           </section>
           <section className="space-y-3 border-l-0 md:border-l border-[var(--color-border)] md:pl-8">
-            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">
-              {t('legal.privacy.section1.titleAlt')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">1. Datenspeicherung & Lokalisierung</h2>
             <p className="text-sm leading-relaxed opacity-70 italic">
-              {renderInline(t('legal.privacy.section1.bodyAlt'))}
+              Phomu legt Wert auf Datenminimierung. Die meisten Anwendungsdaten, wie Spielfortschritte, Spielstände und Einstellungen, werden **lokal auf Ihrem Gerät** über den <code>localStorage</code> des Browsers gespeichert. 
+              Es sind keine Benutzerkonten erforderlich, und es werden keine dauerhaften persönlichen Profile auf unseren Servern erstellt.
             </p>
           </section>
         </div>
@@ -79,19 +43,17 @@ export default function PrivacyPage() {
         {/* Section 2: Technical Metadata */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <section className="space-y-3">
-            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">
-              {t('legal.privacy.section2.title')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">2. Technical Metadata</h2>
             <p className="text-sm leading-relaxed opacity-90">
-              {renderInline(t('legal.privacy.section2.body'))}
+              When using features like &quot;Report Missing Link&quot;, technical metadata (such as provider name, locale, and song ID) may be transmitted to improve the service. 
+              We explicitly **avoid free-text fields** in these flows to prevent accidental transmission of Personally Identifiable Information (PII).
             </p>
           </section>
           <section className="space-y-3 border-l-0 md:border-l border-[var(--color-border)] md:pl-8">
-            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">
-              {t('legal.privacy.section2.titleAlt')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">2. Technische Metadaten</h2>
             <p className="text-sm leading-relaxed opacity-70 italic">
-              {renderInline(t('legal.privacy.section2.bodyAlt'))}
+              Bei der Nutzung von Funktionen wie &quot;Fehlenden Link melden&quot; können technische Metadaten (wie Providername, Gebietsschema und Song-ID) übertragen werden, um den Dienst zu verbessern. 
+              Wir **vermeiden ausdrücklich Freitextfelder** in diesen Abläufen, um die versehentliche Übertragung von personenbezogenen Daten (PII) zu verhindern.
             </p>
           </section>
         </div>
@@ -99,19 +61,19 @@ export default function PrivacyPage() {
         {/* Section 3: Third Party Services */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <section className="space-y-3">
-            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">
-              {t('legal.privacy.section3.title')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">3. Third-Party Services (GDPR/CCPA)</h2>
             <p className="text-sm leading-relaxed opacity-90">
-              {renderInline(t('legal.privacy.section3.body'))}
+              Phomu integrates official media players from third parties (YouTube IFrame API, Spotify Web Playback, Amazon Music Embeds). 
+              By interacting with these players, your data (e.g., IP address, cookies) is subject to the privacy policies of those providers. 
+              Phomu does not control or store this interaction data.
             </p>
           </section>
           <section className="space-y-3 border-l-0 md:border-l border-[var(--color-border)] md:pl-8">
-            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">
-              {t('legal.privacy.section3.titleAlt')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">3. Drittanbieter (DSGVO/CCPA)</h2>
             <p className="text-sm leading-relaxed opacity-70 italic">
-              {renderInline(t('legal.privacy.section3.bodyAlt'))}
+              Phomu integriert offizielle Mediaplayer von Drittanbietern (YouTube IFrame API, Spotify Web Playback, Amazon Music Embeds). 
+              Durch die Interaktion mit diesen Playern unterliegen Ihre Daten (z. B. IP-Adresse, Cookies) den Datenschutzbestimmungen dieser Anbieter. 
+              Phomu kontrolliert oder speichert diese Interaktionsdaten nicht.
             </p>
           </section>
         </div>
@@ -119,19 +81,19 @@ export default function PrivacyPage() {
         {/* Section 4: Your Rights */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <section className="space-y-3">
-            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">
-              {t('legal.privacy.section4.title')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">4. Your Rights & Control</h2>
             <p className="text-sm leading-relaxed opacity-90">
-              {renderInline(t('legal.privacy.section4.body'))}
+              Under GDPR (Art. 15-21) and CCPA, you have the right to access, rectify, or delete your data. 
+              Since Phomu stores data locally, you can exercise these rights at any time by **clearing your browser&apos;s site data/cache**. 
+              This will permanently remove all game-related information from your device.
             </p>
           </section>
           <section className="space-y-3 border-l-0 md:border-l border-[var(--color-border)] md:pl-8">
-            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">
-              {t('legal.privacy.section4.titleAlt')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">4. Ihre Rechte & Kontrolle</h2>
             <p className="text-sm leading-relaxed opacity-70 italic">
-              {renderInline(t('legal.privacy.section4.bodyAlt'))}
+              Gemäß DSGVO (Art. 15-21) und CCPA haben Sie das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten. 
+              Da Phomu Daten lokal speichert, können Sie diese Rechte jederzeit ausüben, indem Sie die **Webseitendaten/Cache Ihres Browsers löschen**. 
+              Dadurch werden alle spielbezogenen Informationen dauerhaft von Ihrem Gerät entfernt.
             </p>
           </section>
         </div>
@@ -139,32 +101,24 @@ export default function PrivacyPage() {
         {/* Section 5: Inquiries */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <section className="space-y-3">
-            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">
-              {t('legal.privacy.section5.title')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider text-[var(--color-accent)]">5. Inquiries & Contact</h2>
             <p className="text-sm leading-relaxed opacity-90">
-              {renderInline(t('legal.privacy.section5.body'))}
+              For any privacy-related questions or inquiries, please contact the project maintainers via the official GitHub repository. 
+              We use GitHub Issues as a transparent communication channel for technical and legal feedback.
               <br />
-              <Link
-                href="https://github.com/mazer666/Phomu"
-                className="underline font-bold hover:text-[var(--color-primary)]"
-              >
-                {t('legal.footer.repoLabel')}
+              <Link href="https://github.com/mazer666/Phomu" className="underline font-bold hover:text-[var(--color-primary)]">
+                github.com/mazer666/Phomu
               </Link>
             </p>
           </section>
           <section className="space-y-3 border-l-0 md:border-l border-[var(--color-border)] md:pl-8">
-            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">
-              {t('legal.privacy.section5.titleAlt')}
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-wider opacity-60">5. Anfragen & Kontakt</h2>
             <p className="text-sm leading-relaxed opacity-70 italic">
-              {renderInline(t('legal.privacy.section5.bodyAlt'))}
+              Bei datenschutzbezogenen Fragen oder Anliegen wenden Sie sich bitte über das offizielle GitHub-Repository an die Projektverantwortlichen. 
+              Wir nutzen GitHub Issues als transparenten Kommunikationskanal für technisches und rechtliches Feedback.
               <br />
-              <Link
-                href="https://github.com/mazer666/Phomu"
-                className="underline font-bold hover:text-[var(--color-primary)]"
-              >
-                {t('legal.footer.repoLabel')}
+              <Link href="https://github.com/mazer666/Phomu" className="underline font-bold hover:text-[var(--color-primary)]">
+                github.com/mazer666/Phomu
               </Link>
             </p>
           </section>
@@ -172,14 +126,11 @@ export default function PrivacyPage() {
 
         {/* Footer Navigation */}
         <footer className="pt-12 flex items-center justify-between border-t border-[var(--color-border)]">
-          <Link
-            href="/"
-            className="text-sm font-bold opacity-60 hover:opacity-100 hover:text-[var(--color-primary)] transition-all"
-          >
-            {t('legal.footer.backHome')}
+          <Link href="/" className="text-sm font-bold opacity-60 hover:opacity-100 hover:text-[var(--color-primary)] transition-all">
+            ← Back to Home / Zurück
           </Link>
           <p className="text-xs opacity-40 font-mono">
-            {t('legal.footer.privacyVersion')}
+            Phomu // Privacy Shield v1.2
           </p>
         </footer>
       </motion.div>

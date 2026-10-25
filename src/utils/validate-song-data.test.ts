@@ -1,20 +1,20 @@
 /**
- * Tests for the year validation in the song catalog.
+ * Tests für die Jahres-Validierung im Song-Katalog.
  *
- * Important: the catalog also contains classical works (Vivaldi, Bach,
- * Mozart ...) whose composition years lie before 1900. These must be
- * valid – see src/config/song-year-range.ts.
+ * Wichtig: Der Katalog enthält auch klassische Werke (Vivaldi, Bach,
+ * Mozart ...), deren Kompositionsjahre vor 1900 liegen. Diese müssen
+ * gültig sein – siehe src/config/song-year-range.ts.
  */
 import { describe, it, expect } from 'vitest';
 import { validateSong } from './validate-song-data';
 import { MIN_SONG_YEAR, MAX_SONG_YEAR_OFFSET, isValidSongYear } from '../config/song-year-range';
 
-/** Builds a minimal but otherwise valid song entry. */
+/** Baut einen minimalen, ansonsten gültigen Song-Eintrag. */
 function makeSong(overrides: Record<string, unknown> = {}) {
   return {
     id: 'test-song',
-    title: 'Test Title',
-    artist: 'Test Artist',
+    title: 'Testtitel',
+    artist: 'Testartist',
     year: 1985,
     country: 'DE',
     genre: 'Pop',
@@ -22,13 +22,13 @@ function makeSong(overrides: Record<string, unknown> = {}) {
     mood: ['Pop'],
     packs: ['Global Hits 1950-2026'],
     hints: [
-      'First hint without a spoiler token.',
-      'Second hint without a spoiler token.',
-      'Third hint without a spoiler token.',
-      'Fourth hint without a spoiler token.',
-      'Fifth hint without a spoiler token.',
+      'Erster Hinweis ohne Spoiler-Token.',
+      'Zweiter Hinweis ohne Spoiler-Token.',
+      'Dritter Hinweis ohne Spoiler-Token.',
+      'Vierter Hinweis ohne Spoiler-Token.',
+      'Fünfter Hinweis ohne Spoiler-Token.',
     ],
-    lyrics: { real: ['Line one', 'Line two', 'Line three'], fake: 'Invented line' },
+    lyrics: { real: ['Zeile eins', 'Zeile zwei', 'Zeile drei'], fake: 'Erfundene Zeile' },
     isOneHitWonder: false,
     links: { youtube: 'https://www.youtube.com/watch?v=aaaaaaaaaaa' },
     supportedModes: ['timeline'],
@@ -37,51 +37,51 @@ function makeSong(overrides: Record<string, unknown> = {}) {
   };
 }
 
-describe('Year validation', () => {
-  it('accepts a modern release year', () => {
+describe('Jahres-Validierung', () => {
+  it('akzeptiert ein modernes Release-Jahr', () => {
     const result = validateSong(makeSong({ year: 1985 }));
     expect(result.errors.filter((e) => e.field === 'year')).toHaveLength(0);
   });
 
-  it('accepts classical composition years before 1900', () => {
-    // Vivaldi: "The Four Seasons" ("Die Vier Jahreszeiten", 1725), Bach: Toccata and Fugue in D minor (1704)
+  it('akzeptiert klassische Kompositionsjahre vor 1900', () => {
+    // Vivaldi: "Die Vier Jahreszeiten" (1725), Bach: Toccata und Fuge (1704)
     for (const year of [1725, 1704, 1832, 1867, 1899]) {
       const result = validateSong(makeSong({ year }));
       expect(
         result.errors.filter((e) => e.field === 'year'),
-        `Year ${year} should be valid`
+        `Jahr ${year} sollte gültig sein`
       ).toHaveLength(0);
     }
   });
 
-  it('accepts the lower bound', () => {
+  it('akzeptiert die Untergrenze', () => {
     const result = validateSong(makeSong({ year: MIN_SONG_YEAR }));
     expect(result.errors.filter((e) => e.field === 'year')).toHaveLength(0);
   });
 
-  it('rejects unrealistically early years', () => {
+  it('lehnt unrealistisch frühe Jahre ab', () => {
     const result = validateSong(makeSong({ year: MIN_SONG_YEAR - 1 }));
     expect(result.errors.filter((e) => e.field === 'year').length).toBeGreaterThan(0);
   });
 
-  it('rejects future years beyond +1', () => {
+  it('lehnt Zukunftsjahre jenseits +1 ab', () => {
     const currentYear = new Date().getFullYear();
     const result = validateSong(makeSong({ year: currentYear + 2 + MAX_SONG_YEAR_OFFSET }));
     expect(result.errors.filter((e) => e.field === 'year').length).toBeGreaterThan(0);
   });
 
-  it('does not reject announced releases (+1)', () => {
+  it('lehnt angekündigte Releases (+1) nicht ab', () => {
     const currentYear = new Date().getFullYear();
     const result = validateSong(makeSong({ year: currentYear + 1 }));
     expect(result.errors.filter((e) => e.field === 'year')).toHaveLength(0);
   });
 
-  it('rejects non-integers', () => {
+  it('lehnt Nicht-Ganzzahlen ab', () => {
     const result = validateSong(makeSong({ year: 1985.5 }));
     expect(result.errors.filter((e) => e.field === 'year').length).toBeGreaterThan(0);
   });
 
-  it('isValidSongYear mirrors the same logic', () => {
+  it('isValidSongYear spiegelt dieselbe Logik', () => {
     const currentYear = new Date().getFullYear();
     expect(isValidSongYear(1725)).toBe(true);
     expect(isValidSongYear(MIN_SONG_YEAR - 1)).toBe(false);

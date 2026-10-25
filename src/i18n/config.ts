@@ -11,11 +11,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import de from './locales/de.json';
 import en from './locales/en.json';
 
-import './types';
-
-export const SUPPORTED_LANGUAGES = ['de', 'en'] as const;
-export const DEFAULT_LANGUAGE = 'de';
-
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -24,12 +19,7 @@ i18n
       de: { translation: de },
       en: { translation: en },
     },
-    fallbackLng: DEFAULT_LANGUAGE,
-    supportedLngs: [...SUPPORTED_LANGUAGES],
-    // A regional variant such as "de-DE" must resolve to the language we
-    // actually ship, not to a namespace we do not have.
-    load: 'languageOnly',
-    nonExplicitSupportedLngs: true,
+    fallbackLng: 'de',
     interpolation: {
       escapeValue: false, // React already handles XSS protection
     },

@@ -1,36 +1,27 @@
 /**
  * PlayerCard
  *
- * Displays a single player in the lobby overview.
- * Contains name, emoji avatar, colour, pilot badge and a remove button.
+ * Zeigt einen einzelnen Spieler in der Lobby-Übersicht.
+ * Enthält Name, Emoji-Avatar, Farbe, Pilot-Badge und einen Entfernen-Button.
  */
 'use client';
 
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 interface PlayerCardProps {
   name: string;
-  /** Emoji avatar of the player, e.g. '🎸' */
+  /** Emoji-Avatar des Spielers, z. B. '🎸' */
   avatar?: string;
-  /** Hex colour for visual distinction, e.g. '#FF6B35' */
+  /** Hex-Farbe für die visuelle Unterscheidung, z. B. '#FF6B35' */
   color?: string;
-  /** Whether this player currently is the pilot (game master) */
+  /** Ob dieser Spieler gerade der Pilot (Spielleiter) ist */
   isPilot: boolean;
-  /** Called when the player clicks the remove button */
+  /** Wird aufgerufen, wenn der Spieler auf den Entfernen-Button klickt */
   onRemove: () => void;
 }
 
-export function PlayerCard({
-  name,
-  avatar,
-  color,
-  isPilot,
-  onRemove,
-}: PlayerCardProps) {
-  const { t } = useTranslation();
-
-  // Semi-transparent variants of the player colour for background and border
+export function PlayerCard({ name, avatar, color, isPilot, onRemove }: PlayerCardProps) {
+  // Halbtransparente Varianten der Spielerfarbe für Hintergrund und Rahmen
   const borderColor = color ? `${color}55` : 'rgba(255,255,255,0.2)';
   const bgColor = color ? `${color}1a` : 'rgba(255,255,255,0.07)';
   const avatarBg = color ? `${color}33` : 'rgba(255,255,255,0.15)';
@@ -45,7 +36,7 @@ export function PlayerCard({
       className="relative flex items-center gap-3 rounded-xl p-3 border"
       style={{ borderColor, backgroundColor: bgColor }}
     >
-      {/* Avatar circle */}
+      {/* Avatar-Kreis */}
       <div
         className="text-2xl w-10 h-10 rounded-full flex items-center justify-center shrink-0 select-none"
         style={{ backgroundColor: avatarBg }}
@@ -54,7 +45,7 @@ export function PlayerCard({
         {avatar ?? '🎵'}
       </div>
 
-      {/* Name + pilot badge */}
+      {/* Name + Pilot-Badge */}
       <div className="flex-1 min-w-0">
         <p
           className="font-bold truncate leading-tight"
@@ -64,18 +55,18 @@ export function PlayerCard({
         </p>
         {isPilot && (
           <span className="text-xs opacity-60 flex items-center gap-1 mt-0.5">
-            🎮 <span>{t('lobby.player.pilot')}</span>
+            🎮 <span>Pilot</span>
           </span>
         )}
       </div>
 
-      {/* Remove button */}
+      {/* Entfernen-Button */}
       <button
         onClick={onRemove}
         className="shrink-0 w-11 h-11 flex items-center justify-center text-lg rounded-xl
                    text-red-400 hover:text-red-300 hover:bg-red-400/20 active:scale-90 transition-all"
-        aria-label={t('lobby.player.removeAria', { name })}
-        title={t('lobby.player.removeAria', { name })}
+        aria-label={`${name} entfernen`}
+        title={`${name} entfernen`}
       >
         ✕
       </button>

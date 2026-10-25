@@ -193,7 +193,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=ACFwKYEC5rw",
-        "spotify": "https://open.spotify.com/track/0LrgY33jyzTjHjqE4z5k9R"
+        "spotify": "https://open.spotify.com/track/0LrgY33jyzTjHjqE4z5k9R",
+        "amazonMusic": "https://music.amazon.com/tracks/B008OPEEXM"
       },
       "supportedModes": [
         "cover-confusion",
@@ -241,7 +242,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=5-MZ_ZTM1tE",
-        "spotify": "https://open.spotify.com/track/4MdRFjY8h9S9Z6JR664GqO"
+        "spotify": "https://open.spotify.com/track/4MdRFjY8h9S9Z6JR664GqO",
+        "amazonMusic": "https://music.amazon.com/tracks/B073P4BYMF"
       },
       "supportedModes": [
         "cover-confusion",
@@ -627,7 +629,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=MalsRkzmnWU",
         "spotify": "https://open.spotify.com/track/0OFknyqxmSQ42SoKxWVTok",
-        "amazonMusic": ""
+        "amazonMusic": "https://music.amazon.com/tracks/B07JBJPKB7"
       },
       "supportedModes": [
         "timeline",

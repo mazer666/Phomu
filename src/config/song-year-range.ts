@@ -1,32 +1,34 @@
 /**
- * Valid year range for song entries in the Phomu catalog.
+ * Gültiger Jahresbereich für Song-Einträge im Phomu-Katalog.
  *
- * Background: besides pop/rock songs, Phomu also contains classical
- * works (Vivaldi, Bach, Mozart, Chopin ...). Their composition and
- * release years lie partly far before 1900. A lower bound of 1900 would
- * mark factually correct year values as validator errors – or one would
- * have to falsify the data (e.g. enter the year of a new recording
- * instead of the year of the work).
+ * Hintergrund: Phomu enthält neben Pop-/Rock-Songs auch klassische
+ * Werke (Vivaldi, Bach, Mozart, Chopin ...). Deren Kompositions- bzw.
+ * Veröffentlichungsjahre liegen teils weit vor 1900. Eine Untergrenze
+ * von 1900 würde factual korrekte Jahresangaben als Validator-Fehler
+ * markieren – oder man müsste die Daten verfälschen (z. B. das Jahr
+ * einer Neuaufnahme statt das des Werks eintragen).
  *
- * Therefore the range starts at 1500: that covers the entire period in
- * which Western sheet music publications emerged, and still reliably
- * rejects nonsense (e.g. year: 1200 or year: 300).
+ * Deshalb beginnt der Bereich bei 1500: das deckt den kompletten
+ * Zeitraum ab, in dem westliche Musiknoten-Publikationen entstanden
+ * sind, und hält weiterhin Unsinn (z. B. year: 1200 oder year: 300)
+ * zuverlässig aus.
  *
- * Upper bound: current year + 1 (so announced releases are allowed).
+ * Obergrenze: laufendes Jahr + 1 (damit angekündigte Releases
+ * erlaubt sind).
  */
 
-/** Earliest permissible year (classical works before 1900) */
+/** Frühestes zulässiges Jahr (klassische Werke vor 1900) */
 export const MIN_SONG_YEAR = 1500;
 
-/** Additional years above the current year that are allowed (announced releases) */
+/** Zusätzliche Jahre über dem laufenden Jahr, die erlaubt sind (angekündigte Releases) */
 export const MAX_SONG_YEAR_OFFSET = 1;
 
-/** Computes the currently valid upper bound */
+/** Berechnet die aktuell gültige Obergrenze */
 export function getMaxSongYear(currentYear: number = new Date().getFullYear()): number {
   return currentYear + MAX_SONG_YEAR_OFFSET;
 }
 
-/** Checks whether a year lies in the valid range */
+/** Prüft, ob ein Jahr im gültigen Bereich liegt */
 export function isValidSongYear(year: number, currentYear: number = new Date().getFullYear()): boolean {
   return Number.isInteger(year) && year >= MIN_SONG_YEAR && year <= getMaxSongYear(currentYear);
 }

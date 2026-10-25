@@ -1,10 +1,10 @@
 /**
- * Feedback quips (juicy update)
- *
- * Style: a mix of "You Don't Know Jack" (sassy, energetic)
- * and the "Känguru" by Marc-Uwe Kling (dry, absurd, "Witzig!").
- *
- * Contains 100+ quips each for correct and wrong.
+ * Feedback-Sprüche (Juicy Update)
+ * 
+ * Stil: Eine Mischung aus "You Don't Know Jack" (frech, energisch)
+ * und dem "Känguru" von Marc-Uwe Kling (trocken, absurd, "Witzig!").
+ * 
+ * Enthält jeweils 100+ Sprüche für Korrekt und Falsch.
  */
 
 export const CORRECT_MESSAGES = [
@@ -217,9 +217,9 @@ export const WRONG_MESSAGES = [
   "Daneben! Wie ein Bär beim Ballett.",
 ];
 
-// ─── Helpers for deterministic selection ──────────────────────────
+// ─── Helfer für deterministische Auswahl ──────────────────────────
 
-/** Simple hash algorithm for strings */
+/** Einfacher Hash-Algorithmus für Strings */
 export function hashSeed(seed: string): number {
   let hash = 0;
   for (let i = 0; i < seed.length; i += 1) {
@@ -228,7 +228,7 @@ export function hashSeed(seed: string): number {
   return hash;
 }
 
-/** Picks an item deterministically based on a seed */
+/** Wählt ein Item deterministisch basierend auf einem Seed */
 export function pickDeterministic<T>(items: T[], seed: string): T {
   if (!items.length) return null as T;
   const idx = hashSeed(seed) % items.length;
@@ -238,13 +238,13 @@ export function pickDeterministic<T>(items: T[], seed: string): T {
 const COLORS_CORRECT = ['#4ade80', '#22c55e', '#6ee7b7', '#34d399', '#facc15'];
 const COLORS_WRONG = ['#f87171', '#ef4444', '#fb923c', '#f43f5e', '#ec4899'];
 
-/** Returns a spicy quip for the result */
+/** Gibt einen spicy Spruch für das Ergebnis zurück */
 export function getSpicyMessage(isCorrect: boolean, seed: string): string {
   const pool = isCorrect ? CORRECT_MESSAGES : WRONG_MESSAGES;
   return pickDeterministic(pool, seed);
 }
 
-/** Returns the matching colour for the spicy quip */
+/** Gibt die passende Farbe für den spicy Spruch zurück */
 export function getSpicyColor(isCorrect: boolean, seed: string): string {
   const pool = isCorrect ? COLORS_CORRECT : COLORS_WRONG;
   return pickDeterministic(pool, seed);

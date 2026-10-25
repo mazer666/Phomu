@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// We use a simplified version of the censor logic for this script (we need CommonJS)
+// Wir nutzen eine vereinfachte Version der Censor-Logik für das Script (da wir CommonJS brauchen)
 const SPOILER_MIN_LENGTH = 4;
 const EXCEPTIONS = [
   'BTS', 'TLC', 'U2', 'REM', 'R.E.M.', 'SIA', 'DMX', 'HIM', 'JLS', 'ELO', 'YES', 'AIR', 'ABC', '112', 'JAY', 'ZAY', 'NWA', 'N.W.A.', 'NAS', 'E17',
@@ -37,16 +37,16 @@ function checkSpoiler(hint, artist, title) {
   return found.length > 0 ? found : null;
 }
 
-// The pack files were migrated to the unified songs directory
-// (src/data/packs now only holds the legacy proxy index.ts).
-// Without this adjustment the audit ran over an empty set and falsely
-// reported "0 spoilers".
+// Die Pack-Dateien wurden in das einheitliche songs-Verzeichnis migriert
+// (src/data/packs enthaelt nur noch den Legacy-Proxy index.ts).
+// Ohne diese Anpassung lief das Audit ueber eine leere Menge und meldete
+// faelschlich "0 Spoiler".
 const songsDir = path.join(__dirname, '../src/data/songs');
 const files = fs
   .readdirSync(songsDir)
   .filter(f => f.endsWith('.json') && f !== 'packs.json');
 
-console.log(`🔍 Phomu spoiler audit started...\n`);
+console.log(`🔍 Phomu Spoiler-Audit gestartet...\n`);
 let totalSpoilers = 0;
 const report = {};
 
@@ -73,19 +73,19 @@ for (const file of files) {
 
   if (packSpoilers.length > 0) {
     report[file] = packSpoilers;
-    console.log(`📦 ${file}: ${packSpoilers.length} spoilers found!`);
+    console.log(`📦 ${file}: ${packSpoilers.length} Spoiler gefunden!`);
   }
 }
 
-// The report is a generated audit artifact and must NOT modify the repo root -
-// that would produce an unversioned file on every run (and it would
-// accidentally get committed later). Therefore it lands in
-// node_modules/.cache (git-ignored).
+// Der Report ist ein generiertes Audit-Artefakt und darf das Repo-Root NICHT
+// veraendern - dort wuerde bei jedem Lauf eine unversionierte Datei auftauchen
+// (und spaeter versehentlich mitcommittet). Deshalb landet er in
+// node_modules/.cache (git-ignoriert).
 const reportDir = path.join(__dirname, '../node_modules/.cache');
 const reportPath = path.join(reportDir, 'spoiler-report.json');
 fs.mkdirSync(reportDir, { recursive: true });
 fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
 
-console.log(`\n✅ Audit finished.`);
-console.log(`Total spoilers: ${totalSpoilers}`);
-console.log(`Detailed report saved to ${reportPath}.`);
+console.log(`\n✅ Audit abgeschlossen.`);
+console.log(`Gesamtanzahl Spoiler: ${totalSpoilers}`);
+console.log(`Detaillierter Report in ${reportPath} gespeichert.`);

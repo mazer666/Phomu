@@ -1,88 +1,56 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
-import type {
-  AIQueueStrategy,
-  HintReleasePolicy,
-  OverrideGovernance,
-} from '@/types/game-state';
+import type { AIQueueStrategy, HintReleasePolicy, OverrideGovernance } from '@/types/game-state';
 
 export default function SettingsGovernancePage() {
-  const { t } = useTranslation();
   const router = useRouter();
   const { config, setConfig, currentRound } = useGameStore();
   const gameIsActive = currentRound > 0;
 
   return (
     <main className="min-h-screen max-w-3xl mx-auto p-4 md:p-8 space-y-6">
-      <Header
-        title={`🧠 ${t('settings.governance.title')}`}
-        onBack={() => router.push('/settings')}
-        gameIsActive={gameIsActive}
-        onBackToGame={() => router.push('/game')}
-      />
+      <Header title="🧠 Governance" onBack={() => router.push('/settings')} gameIsActive={gameIsActive} onBackToGame={() => router.push('/game')} />
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-5 space-y-4">
         <SelectRow
-          label={t('settings.governance.overrideLabel')}
+          label="Override Governance"
           value={config.overrideGovernance}
-          onChange={(v) =>
-            setConfig({ overrideGovernance: v as OverrideGovernance })
-          }
+          onChange={(v) => setConfig({ overrideGovernance: v as OverrideGovernance })}
           options={[
-            { value: 'host', label: t('settings.governance.optionHost') },
-            { value: 'co-host', label: t('settings.governance.optionCoHost') },
-            {
-              value: 'majority',
-              label: t('settings.governance.optionMajority'),
-            },
+            { value: 'host', label: 'Host' },
+            { value: 'co-host', label: 'Co-Host' },
+            { value: 'majority', label: 'Mehrheit' },
           ]}
         />
 
         <SelectRow
-          label={t('settings.governance.hintPolicyLabel')}
+          label="Hint Release Policy"
           value={config.hintReleasePolicy}
-          onChange={(v) =>
-            setConfig({ hintReleasePolicy: v as HintReleasePolicy })
-          }
+          onChange={(v) => setConfig({ hintReleasePolicy: v as HintReleasePolicy })}
           options={[
-            {
-              value: 'auto-publish',
-              label: t('settings.governance.optionAutoPublish'),
-            },
-            {
-              value: 'manual-review',
-              label: t('settings.governance.optionManualReview'),
-            },
+            { value: 'auto-publish', label: 'Auto Publish nach Checks' },
+            { value: 'manual-review', label: 'Manuelle Freigabe' },
           ]}
         />
 
         <SelectRow
-          label={t('settings.governance.aiStrategyLabel')}
+          label="AI Blocking Verhalten"
           value={config.aiQueueStrategy}
           onChange={(v) => setConfig({ aiQueueStrategy: v as AIQueueStrategy })}
           options={[
-            {
-              value: 'queue-retry-pending',
-              label: t('settings.governance.optionQueueRetry'),
-            },
-            {
-              value: 'fail-fast',
-              label: t('settings.governance.optionFailFast'),
-            },
+            { value: 'queue-retry-pending', label: 'Queue + Retry + Pending' },
+            { value: 'fail-fast', label: 'Fail Fast' },
           ]}
         />
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-5 space-y-4">
-        <h2 className="text-sm font-black uppercase tracking-widest opacity-60">
-          {t('settings.governance.gameRules')}
-        </h2>
+        <h2 className="text-sm font-black uppercase tracking-widest opacity-60">Spielregeln</h2>
         <ToggleRow
-          label={t('settings.governance.strictMode')}
-          description={t('settings.governance.strictModeDescription')}
+          label="Strict Mode"
+          description="Deaktiviert alle Cheats und Joker für alle Spieler"
           value={config.noCheatMode}
           onChange={(v) => setConfig({ noCheatMode: v })}
         />
@@ -91,55 +59,25 @@ export default function SettingsGovernancePage() {
   );
 }
 
-function Header({
-  title,
-  onBack,
-  gameIsActive,
-  onBackToGame,
-}: {
-  title: string;
-  onBack: () => void;
-  gameIsActive?: boolean;
-  onBackToGame?: () => void;
-}) {
-  const { t } = useTranslation();
-
+function Header({ title, onBack, gameIsActive, onBackToGame }: { title: string; onBack: () => void; gameIsActive?: boolean; onBackToGame?: () => void }) {
   return (
     <header className="rounded-3xl border border-white/10 bg-white/5 p-5 flex items-center justify-between gap-3">
       <h1 className="text-2xl font-black">{title}</h1>
       <div className="flex gap-2">
         {gameIsActive && onBackToGame && (
-          <button
-            onClick={onBackToGame}
-            className="px-4 py-2 rounded-xl bg-[var(--color-accent)] text-white text-sm font-black"
-          >
-            {t('settings.toGame')}
+          <button onClick={onBackToGame} className="px-4 py-2 rounded-xl bg-[var(--color-accent)] text-white text-sm font-black">
+            ▶ Zum Spiel
           </button>
         )}
-        <button
-          onClick={onBack}
-          className="px-4 py-2 rounded-xl border border-white/15 text-white text-sm font-black hover:bg-white/5"
-        >
-          {t('settings.backToOverview')}
+        <button onClick={onBack} className="px-4 py-2 rounded-xl border border-white/15 text-white text-sm font-black hover:bg-white/5">
+          Zur Übersicht
         </button>
       </div>
     </header>
   );
 }
 
-function ToggleRow({
-  label,
-  description,
-  value,
-  onChange,
-}: {
-  label: string;
-  description: string;
-  value: boolean;
-  onChange: (v: boolean) => void;
-}) {
-  const { t } = useTranslation();
-
+function ToggleRow({ label, description, value, onChange }: { label: string; description: string; value: boolean; onChange: (v: boolean) => void }) {
   return (
     <div className="flex items-center justify-between gap-4">
       <div>
@@ -150,7 +88,7 @@ function ToggleRow({
         onClick={() => onChange(!value)}
         className={`px-4 py-2 rounded-xl text-xs font-black shrink-0 ${value ? 'bg-red-500/20 text-red-300 border border-red-400/30' : 'bg-white/10 text-white/70 border border-white/15'}`}
       >
-        {value ? t('settings.on') : t('settings.off')}
+        {value ? 'AN' : 'AUS'}
       </button>
     </div>
   );
@@ -169,9 +107,7 @@ function SelectRow({
 }) {
   return (
     <div>
-      <p className="text-xs uppercase tracking-widest font-black opacity-60 mb-2">
-        {label}
-      </p>
+      <p className="text-xs uppercase tracking-widest font-black opacity-60 mb-2">{label}</p>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}

@@ -1,79 +1,50 @@
 /**
- * Cover confusion mode
+ * Cover-Confusion-Modus
  *
- * A cover song is playing. Goal: guess the original artist.
+ * Ein Cover-Song läuft. Ziel: Den Original-Interpreten erraten.
  *
- * Point system (the fewer hints, the more points):
- *   No hint    → 5 points (honour system: the player decides)
- *   1 text hint → 4 points (honour system)
- *   2 text hints → 3 points (honour system)
- *   3rd hint = 3 options → 2 points (the app decides)
+ * Punktesystem (je weniger Hinweise, desto mehr Punkte):
+ *   Kein Hinweis  → 5 Punkte (Ehrensystem: Spieler entscheidet selbst)
+ *   1 Texthinweis → 4 Punkte (Ehrensystem)
+ *   2 Texthinweise → 3 Punkte (Ehrensystem)
+ *   3. Hinweis = 3 Auswahlmöglichkeiten → 2 Punkte (App entscheidet)
  *
- * No text input: honour system or multiple choice.
- *
- * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
+ * Kein Tipp-Input: Ehrensystem oder Multiple-Choice.
  */
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import { getAllSongs } from '@/utils/song-picker';
-import { getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
-import { useSpicyMessage } from '../useSpicyMessage';
-import {
-  coverConfusionAward,
-  coverConfusionPoints,
-  coverConfusionVariationAward,
-} from '@/utils/mode-rules';
+
+const POINTS_BY_HINTS = [5, 4, 3, 2] as const;
 
 type Phase = 'listening' | 'self-assess' | 'choice' | 'done';
 
 interface CoverConfusionModeProps {
   song: PhomuSong;
-  onAnswer: (
-    isCorrect: boolean,
-    pointsAwarded: number,
-    answeredInSeconds?: number
-  ) => void;
+  onAnswer: (isCorrect: boolean, pointsAwarded: number, answeredInSeconds?: number) => void;
   onReveal?: () => void;
 }
 
-export function CoverConfusionMode({
-  song,
-  onAnswer,
-  onReveal,
-}: CoverConfusionModeProps) {
-  const { t, i18n } = useTranslation();
+export function CoverConfusionMode({ song, onAnswer, onReveal }: CoverConfusionModeProps) {
   const [hintsUsed, setHintsUsed] = useState(0);
   const [phase, setPhase] = useState<Phase>('listening');
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
 
   // 50% chance for "Original or Cover" variation - stabilized in state
-  const [variation] = useState(() =>
-    Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover'
-  );
+  const [variation] = useState(() => Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover');
 
-  const points = coverConfusionPoints(hintsUsed);
+  const points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)];
   const playLink = song.links.coverLink || song.links.youtube;
-  const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
-
-  // Number format of the active locale
-  const numberFormat = useMemo(
-    () => new Intl.NumberFormat(i18n.language),
-    [i18n.language]
-  );
 
   // 3 artists for multiple-choice: correct + 2 random wrong - stabilized
   const [choiceOptions] = useState(() => {
     const others = Array.from(
-      new Set(
-        getAllSongs()
-          .map((s) => s.artist)
-          .filter((a) => a !== song.artist)
-      )
+      new Set(getAllSongs().map((s) => s.artist).filter((a) => a !== song.artist)),
     );
     const wrong = [...others].sort(() => Math.random() - 0.5).slice(0, 2);
     return [...wrong, song.artist].sort(() => Math.random() - 0.5);
@@ -91,46 +62,39 @@ export function CoverConfusionMode({
 
   function handleSelfAssess(correct: boolean) {
     setWasCorrect(correct);
-    // CoverConfusion: points based on the hints (cheats were already deducted)
-    const outcome = coverConfusionAward(hintsUsed, correct);
-    onAnswer(outcome.isCorrect, outcome.points);
+    // CoverConfusion: Punkte basierend auf Hinweisen (Cheats wurden bereits abgezogen)
+    onAnswer(correct, correct ? points : 0);
     setPhase('done');
   }
 
   function handleChoice(artist: string) {
     const correct = artist === song.artist;
     setWasCorrect(correct);
-    // CoverConfusion: points based on the hints (cheats were already deducted)
-    const outcome = coverConfusionAward(hintsUsed, correct);
-    onAnswer(outcome.isCorrect, outcome.points);
+    // CoverConfusion: Punkte basierend auf Hinweisen (Cheats wurden bereits abgezogen)
+    onAnswer(correct, correct ? points : 0);
     setPhase('done');
   }
 
   function handleChoiceVariation(guessCover: boolean) {
-    const outcome = coverConfusionVariationAward(
-      guessCover,
-      Boolean(song.links.coverLink)
-    );
-    setWasCorrect(outcome.isCorrect);
-    onAnswer(outcome.isCorrect, outcome.points); // 3 pts for the variation
+    const actuallyCover = !!song.links.coverLink;
+    const correct = guessCover === actuallyCover;
+    setWasCorrect(correct);
+    onAnswer(correct, correct ? 3 : 0); // 3 Pkt für Variation
     setPhase('done');
   }
 
   return (
     <div className="flex flex-col px-4 py-6 gap-5 max-w-xl mx-auto pb-44">
+
       {/* Modus-Banner mit Variante */}
       <div className="w-full flex items-center justify-between bg-purple-500/10 border border-purple-500/20 rounded-2xl px-4 py-2.5">
-        <span className="text-[10px] font-black uppercase tracking-widest text-purple-400">
-          {t('modes.cover-confusion.banner')}
-        </span>
+        <span className="text-[10px] font-black uppercase tracking-widest text-purple-400">🎭 Cover Confusion</span>
         <span className="text-[10px] font-black uppercase tracking-widest text-purple-400/80">
-          {variation === 'who-is-it'
-            ? t('modes.cover-confusion.variationWhoIsIt')
-            : t('modes.cover-confusion.variationCoverOrOriginal')}
+          {variation === 'who-is-it' ? '👤 Wer ist das Original?' : '💿 Cover oder Original?'}
         </span>
       </div>
 
-      {/* Music player — blurred until the answer is given (swipe to reveal) */}
+      {/* Music Player — gebluurt bis Antwort gegeben (Swipe zum Enthüllen) */}
       <MusicPlayer
         songId={song.id}
         songTitle={song.title}
@@ -140,10 +104,7 @@ export function CoverConfusionMode({
         youtubeAlternatives={
           song.links.coverLink
             ? undefined
-            : (song.links.youtubeAlternatives ??
-              (song.links.fallbackYoutubeId
-                ? [song.links.fallbackYoutubeId]
-                : undefined))
+            : (song.links.youtubeAlternatives ?? (song.links.fallbackYoutubeId ? [song.links.fallbackYoutubeId] : undefined))
         }
         spotifyLink={song.links.spotify}
         spotifyFreePreview={song.links.spotifyFreePreview}
@@ -154,7 +115,7 @@ export function CoverConfusionMode({
       />
       {song.links.coverLink && (
         <p className="text-[10px] text-center -mt-2 font-black uppercase text-[var(--color-accent)] animate-pulse">
-          {t('modes.cover-confusion.coverActive')}
+          COVER-VERSION AKTIV
         </p>
       )}
 
@@ -174,9 +135,7 @@ export function CoverConfusionMode({
                     : 'border-white/5 opacity-50',
                 ].join(' ')}
               >
-                <span className="font-black opacity-30 mr-2 text-xs">
-                  0{i + 1}
-                </span>
+                <span className="font-black opacity-30 mr-2 text-xs">0{i + 1}</span>
                 {hint}
               </motion.div>
             ))}
@@ -193,9 +152,7 @@ export function CoverConfusionMode({
                 onClick={() => setPhase('self-assess')}
                 className="w-full py-5 rounded-3xl bg-[var(--color-accent)] font-black text-lg text-white shadow-xl shadow-[var(--color-accent)]/20 hover:scale-[1.02] active:scale-95 transition-all"
               >
-                {t('modes.cover-confusion.knowIt', {
-                  points: numberFormat.format(points),
-                })}
+                Ich kenne ihn! ✋&nbsp;&nbsp;({points} Pkt)
               </button>
 
               <button
@@ -203,41 +160,32 @@ export function CoverConfusionMode({
                 className="w-full py-4 rounded-2xl border-2 border-white/10 font-black uppercase text-xs tracking-widest hover:bg-white/5 transition-all active:scale-95"
               >
                 {hintsUsed < 2
-                  ? t('modes.cover-confusion.getHint', {
-                      points: numberFormat.format(
-                        coverConfusionPoints(hintsUsed + 1)
-                      ),
-                    })
-                  : t('modes.cover-confusion.lastHint', {
-                      points: numberFormat.format(coverConfusionPoints(3)),
-                    })}
+                  ? `Hinweis holen → ${POINTS_BY_HINTS[hintsUsed + 1]} Pkt`
+                  : `Letzter Hinweis: 3 Künstler zur Wahl → ${POINTS_BY_HINTS[3]} Pkt`}
               </button>
+
             </>
           ) : (
             <div className="bg-white/5 p-6 rounded-[2rem] border border-white/10 text-center space-y-6">
               <p className="text-sm font-black uppercase tracking-widest text-[var(--color-accent)] opacity-80">
-                {t('modes.cover-confusion.specialVariation')}
+                Spezial-Variante
               </p>
-              <h3 className="text-xl font-bold">
-                {t('modes.cover-confusion.coverOrOriginalQuestion')}
-              </h3>
+              <h3 className="text-xl font-bold">Ist das ein Cover oder das Original?</h3>
               <div className="grid grid-cols-2 gap-4">
                 <button
                   onClick={() => handleChoiceVariation(true)}
                   className="py-6 bg-blue-500 rounded-3xl font-black text-white shadow-lg active:scale-95 transition-all"
                 >
-                  {t('modes.cover-confusion.coverButton')}
+                  COVER 🎭
                 </button>
                 <button
                   onClick={() => handleChoiceVariation(false)}
                   className="py-6 bg-purple-500 rounded-3xl font-black text-white shadow-lg active:scale-95 transition-all"
                 >
-                  {t('modes.cover-confusion.originalButton')}
+                  ORIGINAL 💿
                 </button>
               </div>
-              <p className="text-[10px] opacity-40 uppercase font-black">
-                {t('modes.cover-confusion.variationPoints')}
-              </p>
+              <p className="text-[10px] opacity-40 uppercase font-black">+3 Punkte bei richtigem Tipp</p>
             </div>
           )}
         </div>
@@ -252,7 +200,7 @@ export function CoverConfusionMode({
         >
           <div>
             <p className="text-[10px] font-black uppercase opacity-40 mb-2">
-              {t('modes.cover-confusion.originalArtistWas')}
+              Der Original-Künstler war
             </p>
             <h3 className="text-2xl font-black">{song.artist}</h3>
             <p className="text-xs opacity-40 mt-1">
@@ -261,21 +209,19 @@ export function CoverConfusionMode({
           </div>
 
           <div className="space-y-3">
-            <p className="text-xs font-bold italic opacity-50">
-              {t('modes.cover-confusion.didYouKnow')}
-            </p>
+            <p className="text-xs font-bold italic opacity-50">Hattest du es gewusst?</p>
             <div className="flex gap-4">
               <button
                 onClick={() => handleSelfAssess(true)}
                 className="flex-1 py-4 bg-green-500 rounded-2xl font-black text-white shadow-lg shadow-green-500/20 active:scale-95 transition-all"
               >
-                {t('modes.cover-confusion.yes')}
+                JA ✅
               </button>
               <button
                 onClick={() => handleSelfAssess(false)}
                 className="flex-1 py-4 bg-red-500 rounded-2xl font-black text-white shadow-lg shadow-red-500/20 active:scale-95 transition-all"
               >
-                {t('modes.cover-confusion.no')}
+                NEIN ❌
               </button>
             </div>
           </div>
@@ -290,7 +236,7 @@ export function CoverConfusionMode({
           className="space-y-3"
         >
           <p className="text-xs font-black uppercase tracking-widest text-center opacity-40">
-            {t('modes.cover-confusion.whoIsOriginal')}
+            Wer ist der Original-Interpret?
           </p>
           {choiceOptions.map((artist) => (
             <button
@@ -316,27 +262,20 @@ export function CoverConfusionMode({
               : 'border-red-500/30 bg-red-500/10',
           ].join(' ')}
         >
-          <p
+          <p 
             className="text-xl font-black uppercase italic tracking-tighter mb-1"
             style={{ color: getSpicyColor(wasCorrect!, song.id) }}
           >
-            {spicyMessage}
+            {getSpicyMessage(wasCorrect!, song.id)}
           </p>
           <p className="text-sm font-bold opacity-60">
-            {wasCorrect
-              ? t('modes.cover-confusion.correct')
-              : t('modes.cover-confusion.wrong')}
+            {wasCorrect ? 'Richtig! ✨' : 'Leider daneben 🌧️'}
           </p>
           <p className="text-sm opacity-60">
-            {t('modes.cover-confusion.originalLabel')}{' '}
-            <span className="font-bold text-white">{song.artist}</span>
+            Original: <span className="font-bold text-white">{song.artist}</span>
           </p>
           {wasCorrect && (
-            <p className="text-xs font-black text-[var(--color-accent)]">
-              {t('modes.cover-confusion.pointsAwarded', {
-                points: numberFormat.format(points),
-              })}
-            </p>
+            <p className="text-xs font-black text-[var(--color-accent)]">+{points} Punkte</p>
           )}
         </motion.div>
       )}
@@ -349,7 +288,7 @@ export function CoverConfusionMode({
               onClick={onReveal}
               className="w-full py-5 rounded-3xl font-black text-lg bg-[var(--color-accent)] text-white shadow-2xl active:scale-95 transition-all"
             >
-              {t('modes.continue')}
+              WEITER →
             </button>
           </div>
         </footer>

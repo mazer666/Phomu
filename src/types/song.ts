@@ -19,19 +19,19 @@ export type CountryCode = string;
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
 export interface CoverModeMetadata {
-  /** Relationship to the original work */
+  /** Beziehung zum Originalwerk */
   relationType: 'original' | 'cover' | 'sample' | 'remix';
-  /** Song ID of the original, if known */
+  /** Song-ID des Originals, wenn bekannt */
   originalSongId?: string;
-  /** Artist of the original for reveal texts */
+  /** Artist des Originals für Reveal-Texte */
   originalArtist?: string;
-  /** Cover artist, in case this song is a cover version */
+  /** Cover-Artist, falls dieser Song eine Cover-Version ist */
   coverArtist?: string;
-  /** Year of the cover version */
+  /** Jahr der Cover-Version */
   coverYear?: number;
-  /** Optional reveal sentence for cover mode */
+  /** Optionaler Reveal-Satz für den Cover-Mode */
   revealPrompt?: string;
-  /** Data quality / confidence */
+  /** Datenqualität/Konfidenz */
   confidence: 'low' | 'medium' | 'high';
 }
 
@@ -85,14 +85,14 @@ export interface PhomuSong {
   hints: [string, string, string, string, string];
 
   /**
-   * Verifiable sources per hint (e.g. Wikipedia/Discogs/official notes).
-   * Optional for legacy data, recommended as mandatory for new AI hints.
+   * Prüfbare Quellen pro Hint (z. B. Wikipedia/Discogs/Official Notes).
+   * Optional für Legacy-Daten, für neue KI-Hints empfohlen verpflichtend.
    */
   hintEvidence?: [string, string, string, string, string];
 
   /**
    * Lyrics data for Lyrics Labyrinth mode.
-   * null = not entered yet (filled in via the admin tool).
+   * null = noch nicht eingetragen (wird über Admin-Tool ausgefüllt).
    */
   lyrics: {
     /** Exactly 3 real lyric lines from the actual song */
@@ -108,8 +108,8 @@ export interface PhomuSong {
   isOneHitWonder: boolean;
 
   /**
-   * Metadata for the Cover Confusion mode.
-   * Optional, because not every song has a relevant cover relationship.
+   * Metadaten für den Cover-Confusion-Modus.
+   * Optional, weil nicht jeder Song eine relevante Cover-Beziehung hat.
    */
   coverMode?: CoverModeMetadata;
 
@@ -146,7 +146,7 @@ export interface PhomuSong {
     coverLink?: string;
     /** Alternative / Backup YouTube ID if the primary is region-locked */
     fallbackYoutubeId?: string;
-    /** Further alternative YouTube IDs/URLs (fallback order after links.youtube) */
+    /** Weitere alternative YouTube IDs/URLs (Fallback-Reihenfolge nach links.youtube) */
     youtubeAlternatives?: string[];
     /** Spotify track URI (spotify:track:xxx) or URL */
     spotify?: string;
@@ -159,7 +159,7 @@ export interface PhomuSong {
     appleMusic?: string;
     /** Amazon Music URL — falls back to YouTube if missing */
     amazonMusic?: string;
-    /** Amazon Prime Music preview URL (if available, usually a short preview) */
+    /** Amazon Prime Music Preview-URL (falls verfügbar, meist kurze Vorschau) */
     amazonPrimePreview?: string;
   };
 }

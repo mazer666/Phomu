@@ -90,28 +90,13 @@ export default function HomePage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
-        <p>{t('landing.footerTagline')}</p>
+        <p>GPL-3.0 &middot; Open Source &middot; Made with music</p>
         <p className="flex items-center justify-center gap-3 text-xs">
-          <Link
-            href="/guide"
-            className="underline hover:opacity-100 opacity-80"
-          >
-            {t('landing.footerGuide')}
-          </Link>
+          <Link href="/guide" className="underline hover:opacity-100 opacity-80">Spielhilfe</Link>
           <span>&middot;</span>
-          <Link
-            href="/privacy"
-            className="underline hover:opacity-100 opacity-80"
-          >
-            {t('common.privacyNotice')}
-          </Link>
+          <Link href="/privacy" className="underline hover:opacity-100 opacity-80">Privacy Notice</Link>
           <span>&middot;</span>
-          <Link
-            href="/terms"
-            className="underline hover:opacity-100 opacity-80"
-          >
-            {t('landing.footerTerms')}
-          </Link>
+          <Link href="/terms" className="underline hover:opacity-100 opacity-80">Terms of Service</Link>
         </p>
       </motion.div>
     </main>

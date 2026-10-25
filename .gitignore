@@ -51,14 +51,3 @@ song_database_export.csv
 /src/utils/tmp-*.test.ts
 /*.txt
 /ytsearch.mjs
-
-# Rekonstruktion der Sprachdateien (Zwischenstand der i18n-Migration)
-.locale-recovery/
-
-# Übergabedokumente der Agenten (Arbeitsergebnis, nicht Teil des Repos)
-deliverable.md
-**/deliverable.md
-
-# Rust-Build-Artefakte (Cargo-Workspace)
-/target
-**/*.rs.bk

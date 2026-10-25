@@ -1,14 +1,14 @@
 /**
- * Catalog validation for all song packs.
+ * Catalog-Validierung für alle Song-Packs.
  *
- * Checks:
- * 1) Schema/field validation per song (uses validatePack)
- * 2) Duplicate risk via normalised artist/title/year keys
- * 3) Coverage: at least one song per year from 1950 to the current year
+ * Prüft:
+ * 1) Schema-/Feldvalidierung pro Song (nutzt validatePack)
+ * 2) Duplicate-Risiko über normalisierte Artist/Title/Jahr-Keys
+ * 3) Coverage: mindestens ein Song pro Jahr von 1950 bis aktuellem Jahr
  *
- * Exit code:
- * - 0: no errors
- * - 1: at least one error
+ * Exit-Code:
+ * - 0: keine Fehler
+ * - 1: mindestens ein Fehler
  */
 
 import fs from 'node:fs';
@@ -55,8 +55,8 @@ interface DuplicateEntry {
 }
 
 const SECONDARY_DUPLICATE_PACKS = new Set<string>([
-  // The import pack often contains alternative uploads/remasters of the same songs.
-  // They should not artificially inflate curated pack duplicates.
+  // Import-Pack enthält häufig alternative Uploads/Remaster derselben Songs.
+  // Diese sollen kuratierte Pack-Dubletten nicht künstlich aufblasen.
   'youtube-import.json',
 ]);
 
@@ -161,7 +161,7 @@ function checkYearCoverage(packs: PackFile[], startYear: number, endYear: number
 function resolveCoverageEndYear(args: string[], currentYear: number): number {
   const explicitArg = args.find((arg) => arg.startsWith('--coverage-end-year='));
   if (!explicitArg) {
-    // Default: the current year must be covered as well.
+    // Default: laufendes Jahr muss ebenfalls abgedeckt sein.
     return currentYear;
   }
 

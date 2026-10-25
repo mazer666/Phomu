@@ -24,19 +24,7 @@
     "security:rotate-admin-token": "node scripts/generate-admin-token.js",
     "phase1:acceptance": "npm run typecheck && npm run validate-catalog:report && npm run test:e2e:smoke && node scripts/check-phase1-acceptance.js",
     "local-ci": "bash scripts/local-ci.sh",
-    "check:i18n": "node scripts/check-i18n-completeness.mjs",
-    "check:doc-links": "node scripts/check-doc-links.mjs",
-    "check:file-size": "node scripts/check-file-size.mjs",
-    "check:doc-language": "node scripts/check-doc-language.mjs",
-    "check:crate-boundaries": "node scripts/check-crate-boundaries.mjs",
-    "check:crate-boundaries:test": "node scripts/check-crate-boundaries.test.mjs",
-    "check:conformance": "node scripts/verify-conformance.mjs",
-    "check:all": "node scripts/check-all.mjs",
-    "postinstall": "node scripts/setup-git-hooks.js",
-    "generate:variant-keys": "node scripts/generate-variant-keys.mjs",
-    "seed:shared-keys": "node scripts/seed-shared-keys.mjs",
-    "verify:i18n-keys": "node scripts/verify-used-i18n-keys.mjs",
-    "merge:i18n-parts": "node scripts/merge-i18n-parts.mjs"
+    "postinstall": "node scripts/setup-git-hooks.js"
   },
   "dependencies": {
     "@emnapi/core": "^1.9.1",

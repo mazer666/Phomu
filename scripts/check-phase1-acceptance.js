@@ -12,31 +12,31 @@ function fail(message) {
   process.exit(1);
 }
 
-if (!fs.existsSync(reportPath)) fail('catalog_issues_report.json is missing. Please run validate-catalog:report first.');
-if (!fs.existsSync(securityPath)) fail('security.ts is missing.');
-if (!fs.existsSync(e2ePath)) fail('e2e/smoke.spec.ts is missing.');
+if (!fs.existsSync(reportPath)) fail('catalog_issues_report.json fehlt. Bitte zuerst validate-catalog:report ausführen.');
+if (!fs.existsSync(securityPath)) fail('security.ts fehlt.');
+if (!fs.existsSync(e2ePath)) fail('e2e/smoke.spec.ts fehlt.');
 
 const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
 const securitySource = fs.readFileSync(securityPath, 'utf8');
 const e2eSource = fs.readFileSync(e2ePath, 'utf8');
 
-if (report.duplicateGroups !== 0) fail(`duplicateGroups must be 0, but is ${report.duplicateGroups}.`);
+if (report.duplicateGroups !== 0) fail(`duplicateGroups muss 0 sein, ist aber ${report.duplicateGroups}.`);
 if (!Array.isArray(report.missingYears) || report.missingYears.length !== 0) {
-  fail(`missingYears must be empty, but is ${JSON.stringify(report.missingYears)}.`);
+  fail(`missingYears muss leer sein, ist aber ${JSON.stringify(report.missingYears)}.`);
 }
 if (typeof report.schemaErrors !== 'number' || report.schemaErrors > 1300) {
-  fail(`schemaErrors must be <= 1300, but is ${report.schemaErrors}.`);
+  fail(`schemaErrors muss <= 1300 sein, ist aber ${report.schemaErrors}.`);
 }
 
 if (!securitySource.includes('MIN_ADMIN_TOKEN_LENGTH')) {
-  fail('MIN_ADMIN_TOKEN_LENGTH check not found in security.ts.');
+  fail('MIN_ADMIN_TOKEN_LENGTH Check in security.ts nicht gefunden.');
 }
 if (!securitySource.includes('timingSafeEqual')) {
-  fail('timingSafeEqual check not found in security.ts.');
+  fail('timingSafeEqual Check in security.ts nicht gefunden.');
 }
 
 if (!e2eSource.includes("'/game-over'")) {
-  fail("E2E smoke does not cover '/game-over'.");
+  fail("E2E smoke deckt '/game-over' nicht ab.");
 }
 
-console.log('✅ Phase-1 acceptance checks passed.');
+console.log('✅ Phase-1-Acceptance-Checks bestanden.');

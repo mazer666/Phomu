@@ -1,11 +1,11 @@
 /**
- * Game store (Zustand)
+ * Game Store (Zustand)
  *
- * Central state management for a Phomu game session.
- * Persisted in localStorage so that a page reload does not wipe
- * the lobby configuration.
+ * Zentrale Zustandsverwaltung für eine Phomu-Spielsitzung.
+ * Persistiert in localStorage, damit ein Seiten-Reload die
+ * Lobby-Konfiguration nicht löscht.
  *
- * Import via: import { useGameStore } from '@/stores/game-store';
+ * Importieren via: import { useGameStore } from '@/stores/game-store';
  */
 'use client';
 
@@ -15,7 +15,7 @@ import type { GameState, GameConfig, GameRound, RoundPhase, PlayerAnswer } from 
 import type { Player, Team } from '@/types/player';
 import type { PhomuSong } from '@/types/song';
 
-// ─── Funny team names ───────────────────────────────────────────
+// ─── Lustige Team-Namen ───────────────────────────────────────────
 
 const FUNNY_TEAM_NAMES = [
   'Die Ohrwürmer', 'Stimmbruch Deluxe', 'Absolute Divas', 'Team Gänsehaut',
@@ -35,9 +35,9 @@ function pickTeamName(usedNames: string[]): string {
 }
 import { PHOMU_CONFIG } from '@/config/game-config';
 
-// ─── Default configuration ────────────────────────────────────────
+// ─── Standardkonfiguration ────────────────────────────────────────
 
-/** Used when a new session is created */
+/** Wird beim Anlegen einer neuen Session verwendet */
 const DEFAULT_CONFIG: GameConfig = {
   selectedModes: ['timeline'],
   selectedPacks: [PHOMU_CONFIG.SONG_PACKS[0].id],
@@ -65,93 +65,93 @@ const DEFAULT_CONFIG: GameConfig = {
   onlyQRCompatible: false,
 };
 
-// ─── Store interface ──────────────────────────────────────────────
+// ─── Store-Interface ──────────────────────────────────────────────
 
-/** All actions that operate on the GameState */
+/** Alle Actions, die auf den GameState operieren */
 interface GameActions {
-  /** Resets the entire state and generates a new session ID */
+  /** Setzt den gesamten State zurück und generiert eine neue Session-ID */
   initSession: () => void;
 
-  /** Adds a new player to the lobby */
+  /** Fügt einen neuen Spieler zur Lobby hinzu */
   addPlayer: (name: string, avatar?: string, color?: string) => void;
 
-  /** Removes a player by its ID */
+  /** Entfernt einen Spieler anhand seiner ID */
   removePlayer: (playerId: string) => void;
 
-  /** Updates the game configuration (partial update possible) */
+  /** Aktualisiert die Spielkonfiguration (Teilaktualisierung möglich) */
   setConfig: (updates: Partial<GameConfig>) => void;
 
-  /** Starts the game — sets the round state and picks the first mode */
+  /** Startet das Spiel — setzt Rundenstand und wählt den ersten Modus */
   startGame: () => void;
 
-  /** Saves the completed round and prepares the next one */
+  /** Speichert die abgeschlossene Runde und bereitet die nächste vor */
   nextRound: () => void;
 
-  /** Ends the game and sets the winner */
+  /** Beendet das Spiel und setzt den Gewinner */
   endGame: (winnerId?: string) => void;
 
-  /** Sets the current song and switches to the question round */
+  /** Setzt den aktuellen Song und wechselt in die Fragerunde */
   drawSong: (song: PhomuSong, source?: 'random' | 'qr') => void;
 
-  /** Skips a broken song (404/restricted) */
+  /** Überspringt einen defekten Song (404/Restricted) */
   skipBrokenSong: () => void;
 
-  /** Sets the preferred player type */
+  /** Setzt den bevorzugten Player-Typ */
   setPreferredPlayer: (type: 'standard' | 'music') => void;
 
-  /** Sets the preferred music provider */
+  /** Setzt den bevorzugten Musikanbieter */
   setPreferredMusicProvider: (provider: GameState['preferredMusicProvider']) => void;
 
-  /** Audio settings for music/SFX */
+  /** Audio-Einstellungen für Musik/SFX */
   setAudioSettings: (updates: Partial<Pick<GameState, 'musicEnabled' | 'musicVolume' | 'sfxEnabled' | 'sfxVolume'>>) => void;
 
-  /** Switches the current round phase */
+  /** Wechselt die aktuelle Rundenphase */
   advancePhase: (phase: RoundPhase) => void;
 
-  /** Adds a player answer to the running round */
+  /** Fügt eine Spielerantwort zur laufenden Runde hinzu */
   submitAnswer: (answer: PlayerAnswer) => void;
 
-  /** Adds points to the score of a player */
+  /** Addiert Punkte zum Score eines Spielers */
   awardPoints: (playerId: string, points: number) => void;
 
-  /** Resets all player scores to 0 (for "play again") */
+  /** Setzt alle Spieler-Scores auf 0 zurück (für "Nochmal spielen") */
   resetScores: () => void;
 
-  /** Starts a game immediately with a specific song (quick play) */
+  /** Startet sofort ein Spiel mit einem spezifischen Song (Quick Play) */
   startQuickGame: (song: PhomuSong) => void;
 
-  /** Updates player data (e.g. avatar/colour in the settings) */
+  /** Aktualisiert Spielerdaten (z.B. Avatar/Farbe in Settings) */
   updatePlayer: (playerId: string, updates: Partial<Player>) => void;
 
-  /** Resets the entire progression (XP) */
+  /** Setzt den gesamten Fortschritt (XP) zurück */
   resetProgress: () => void;
 
-  /** Creates N teams with random funny names */
+  /** Erstellt N Teams mit zufälligen lustigen Namen */
   initTeams: (count: number) => void;
 
-  /** Adds a new team */
+  /** Fügt ein neues Team hinzu */
   createTeam: (name?: string) => void;
 
-  /** Removes a team and clears all assignments */
+  /** Entfernt ein Team und hebt alle Zuordnungen auf */
   removeTeam: (teamId: string) => void;
 
-  /** Assigns a player to a team (undefined = no team) */
+  /** Weist einen Spieler einem Team zu (undefined = kein Team) */
   assignPlayerToTeam: (playerId: string, teamId: string | undefined) => void;
 
-  /** Sets the initial timeline years (on the first timeline draw) */
+  /** Setzt die initialen Timeline-Jahreszahlen (beim ersten Timeline-Zug) */
   initTimeline: (years: number[]) => void;
 
-  /** Adds a year to the timeline (after a correct guess) */
+  /** Fügt eine Jahreszahl zur Timeline hinzu (nach richtigem Tipp) */
   addTimelineYear: (year: number) => void;
 
-  /** Removes a year from the timeline (first occurrence) */
+  /** Entfernt eine Jahreszahl aus der Timeline (erste Instanz) */
   removeTimelineYear: (year: number) => void;
 }
 
-/** Complete store type = state + actions */
+/** Vollständiger Store-Typ = State + Actions */
 export type GameStore = GameState & GameActions;
 
-// ─── Initial state ──────────────────────────────────────────────
+// ─── Initialer State ──────────────────────────────────────────────
 
 function createInitialState(): GameState {
   return {
@@ -185,7 +185,7 @@ function createInitialState(): GameState {
   };
 }
 
-/** Picks a random mode from the list of active modes */
+/** Wählt zufällig einen Modus aus der Liste der aktiven Modi */
 function pickRandomMode(modes: GameState['config']['selectedModes']): GameState['currentMode'] {
   return modes[Math.floor(Math.random() * modes.length)] ?? 'timeline';
 }
@@ -206,7 +206,7 @@ export const useGameStore = create<GameStore>()(
       addPlayer(name, avatar, color) {
         const { players, turnOrder } = get();
 
-        // Check the maximum count
+        // Maximalanzahl prüfen
         if (players.length >= PHOMU_CONFIG.MAX_PLAYERS) return;
 
         const newPlayer: Player = {
@@ -215,7 +215,7 @@ export const useGameStore = create<GameStore>()(
           score: 0,
           isEliminated: false,
           isSpectator: false,
-          // The first player automatically becomes the pilot
+          // Der erste Spieler wird automatisch zum Piloten
           isPilot: players.length === 0,
           avatar,
           color,
@@ -232,7 +232,7 @@ export const useGameStore = create<GameStore>()(
         const { players, turnOrder } = get();
         const remaining = players.filter((p) => p.id !== playerId);
 
-        // If the pilot is removed, the first remaining player takes over
+        // Wenn der Pilot entfernt wird, übernimmt der erste verbleibende Spieler
         const removedWasPilot = players.find((p) => p.id === playerId)?.isPilot ?? false;
         const updated = removedWasPilot && remaining.length > 0
           ? remaining.map((p, i) => (i === 0 ? { ...p, isPilot: true } : p))
@@ -346,7 +346,7 @@ export const useGameStore = create<GameStore>()(
           ? (currentTurnIndex + 1) % turnOrder.length
           : 0;
 
-        // With shifting teams: reshuffle the players every round
+        // Bei Shifting-Teams: Spieler jede Runde neu mischen
         let updatedTeams = teams;
         let updatedPlayers = players;
         if (config.teamMode === 'shifting' && teams.length >= 2) {
@@ -378,7 +378,7 @@ export const useGameStore = create<GameStore>()(
       // ── endGame ──────────────────────────────────────────────────
       endGame(winnerId) {
         const { players, totalXP } = get();
-        // Compute the XP earned in this session (sum of all player points)
+        // Berechne die in dieser Session verdiente XP (Summe aller Spieler-Punkte)
         const sessionXP = players.reduce((sum, p) => sum + p.score, 0);
         const newTotalXP = totalXP + sessionXP;
 
@@ -406,12 +406,12 @@ export const useGameStore = create<GameStore>()(
         const { currentSongSource } = get();
         
         if (currentSongSource === 'qr') {
-          // With a QR scan it is only marked as "skipped"
+          // Bei QR-Scan wird nur markiert als "übersprungen"
           set({ roundPhase: 'drawing', autoDrawIntent: false });
           return;
         }
 
-        // With a random draw a new song is drawn immediately (via DrawingPhase auto-intent)
+        // Bei Zufallszug wird sofort ein neuer Song gezogen (via DrawingPhase auto-intent)
         set({ roundPhase: 'drawing', currentSong: null, autoDrawIntent: true });
       },
 
@@ -495,7 +495,7 @@ export const useGameStore = create<GameStore>()(
       // ── startQuickGame ───────────────────────────────────────────
       startQuickGame(song) {
         const { addPlayer } = get();
-        // If there are no players, add a default player
+        // Falls keine Spieler da sind, einen Standard-Spieler hinzufügen
         if (get().players.length === 0) {
           addPlayer('Spieler 1', '🎵', '#FF6B35');
         }
@@ -617,7 +617,7 @@ export const useGameStore = create<GameStore>()(
 
     {
       name: 'phomu-game-state',
-      // Now also persist the progression data
+      // Persistiere nun auch Progressions-Daten
       partialize: (state) => ({
         players: state.players,
         teams: state.teams,

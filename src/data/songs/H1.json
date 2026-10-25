@@ -30,7 +30,8 @@
       },
       "links": {
         "youtube": "https://www.youtube.com/watch?v=HEXWRTEbj1I",
-        "spotify": "https://open.spotify.com/track/5GvueiOy3uZz3dMeWVOAbM"
+        "spotify": "https://open.spotify.com/track/5GvueiOy3uZz3dMeWVOAbM",
+        "amazonMusic": "https://music.amazon.com/tracks/B0F24RGDK5"
       },
       "coverUrl": "/covers/dance-haddaway-what-is-love.jpg",
       "supportedModes": [
@@ -243,7 +244,7 @@
       "links": {
         "youtube": "https://www.youtube.com/watch?v=BuYf0taXoNw",
         "spotify": "https://open.spotify.com/track/4AD2dterIUjNt1LFNI9Bvi",
-        "amazonMusic": "https://music.amazon.com/tracks/B0BTM6MGV7"
+        "amazonMusic": "https://music.amazon.com/tracks/B010H4YN9W"
       },
       "coverUrl": "/covers/score-zimmer-pirate.jpg",
       "supportedModes": [
@@ -297,7 +298,8 @@
       "isOneHitWonder": false,
       "links": {
         "youtube": "https://www.youtube.com/watch?v=4-B-0hBwhbc",
-        "spotify": "https://open.spotify.com/track/7FyqTJJ8bdFVpNMoMNQbXA"
+        "spotify": "https://open.spotify.com/track/7FyqTJJ8bdFVpNMoMNQbXA",
+        "amazonMusic": "https://music.amazon.com/tracks/B0CC6CPF4S"
       },
       "supportedModes": [
         "timeline",
@@ -644,7 +646,8 @@
       },
       "isOneHitWonder": false,
       "links": {
-        "youtube": "https://www.youtube.com/watch?v=_PCFdX_JRDg"
+        "youtube": "https://www.youtube.com/watch?v=_PCFdX_JRDg",
+        "amazonMusic": "https://music.amazon.com/tracks/B09LZ1M4VQ"
       },
       "supportedModes": [
         "cover-confusion",

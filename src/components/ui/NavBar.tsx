@@ -1,60 +1,43 @@
 /**
  * NavBar
  *
- * Compact navigation bar:
- * - Main bar: logo | lobby | browse | [⚙️]
- * - Settings panel (open/closed): language, theme, admin link
+ * Kompakte Navigationsleiste:
+ * - Hauptleiste: Logo | Lobby | Browse | [⚙️]
+ * - Einstellungs-Panel (auf/zu): Sprache, Theme, Admin-Link
  */
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@/contexts/ThemeContext';
-import {
-  PHOMU_CONFIG,
-  type Language,
-  type ThemeName,
-} from '@/config/game-config';
-import { THEME_COLORS, THEME_LABEL_KEYS } from '@/config/themes';
+import { PHOMU_CONFIG, type Language, type ThemeName } from '@/config/game-config';
 
 const NAV_LINKS = [
-  { href: '/lobby', labelKey: 'ui.nav.lobby' },
-  { href: '/browse', labelKey: 'ui.nav.browse' },
+  { href: '/lobby',  label: 'Lobby'  },
+  { href: '/browse', label: 'Browse' },
 ] as const;
+
+const THEME_COLORS: Record<ThemeName, string> = {
+  jackbox:   '#ff6b35',
+  spotify:   '#1db954',
+  youtube:   '#ff0000',
+  musicwall: '#fe2c55',
+};
 
 export function NavBar() {
   const pathname = usePathname();
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const { theme, setTheme } = useTheme();
 
   const currentLang = i18n.language as Language;
 
-  // Couple the document title and <html lang> to the active language.
-  // The static export bakes only one language into the <head>; the client keeps
-  // both in sync with the selected language.
-  useEffect(() => {
-    const applyLanguage = (lng: string) => {
-      const fixedT = i18n.getFixedT(lng);
-      document.title = `${fixedT('app.title')} – ${fixedT('app.subtitle')}`;
-      document.documentElement.lang = lng;
-    };
-
-    applyLanguage(i18n.language);
-    i18n.on('languageChanged', applyLanguage);
-    return () => {
-      i18n.off('languageChanged', applyLanguage);
-    };
-  }, [i18n]);
-
   return (
-    <div
-      className="sticky top-0 z-40"
-      style={{ backgroundColor: 'var(--color-bg-secondary)' }}
-    >
-      {/* ── Main bar ─────────────────────────────────── */}
+    <div className="sticky top-0 z-40" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
+
+      {/* ── Hauptleiste ─────────────────────────────────── */}
       <div
         className="flex items-center gap-2 px-4 py-2 border-b"
         style={{ borderColor: 'var(--color-border)' }}
@@ -65,54 +48,45 @@ export function NavBar() {
           className="text-xl font-black tracking-tight shrink-0 hover:opacity-80 transition-opacity"
           style={{ color: 'var(--color-primary)' }}
         >
-          🎵 {t('common.appName')}
+          🎵 Phomu
         </Link>
 
-        {/* Page links */}
+        {/* Seiten-Links */}
         <div className="flex items-center gap-1 flex-1">
-          {NAV_LINKS.map(({ href, labelKey }) => {
-            const isActive =
-              pathname === href || pathname.startsWith(href + '/');
+          {NAV_LINKS.map(({ href, label }) => {
+            const isActive = pathname === href || pathname.startsWith(href + '/');
             return (
               <Link
                 key={href}
                 href={href}
                 className="px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors"
                 style={{
-                  backgroundColor: isActive
-                    ? 'var(--color-accent)33'
-                    : 'transparent',
-                  color: isActive
-                    ? 'var(--color-accent)'
-                    : 'var(--color-text-secondary)',
+                  backgroundColor: isActive ? 'var(--color-accent)33' : 'transparent',
+                  color: isActive ? 'var(--color-accent)' : 'var(--color-text-secondary)',
                 }}
               >
-                {t(labelKey)}
+                {label}
               </Link>
             );
           })}
         </div>
 
-        {/* Settings button */}
+        {/* Einstellungen-Button */}
         <button
-          onClick={() => setSettingsOpen((o) => !o)}
+          onClick={() => setSettingsOpen(o => !o)}
           className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-lg transition-colors"
           style={{
-            backgroundColor: settingsOpen
-              ? 'var(--color-accent)33'
-              : 'var(--color-bg-card)',
-            color: settingsOpen
-              ? 'var(--color-accent)'
-              : 'var(--color-text-secondary)',
+            backgroundColor: settingsOpen ? 'var(--color-accent)33' : 'var(--color-bg-card)',
+            color: settingsOpen ? 'var(--color-accent)' : 'var(--color-text-secondary)',
           }}
-          aria-label={t('common.settings')}
+          aria-label="Einstellungen"
           aria-expanded={settingsOpen}
         >
           ⚙️
         </button>
       </div>
 
-      {/* ── Settings panel ───────────────────────────── */}
+      {/* ── Einstellungs-Panel ───────────────────────────── */}
       {settingsOpen && (
         <div
           className="px-4 py-3 border-b flex flex-wrap items-center gap-4"
@@ -121,11 +95,9 @@ export function NavBar() {
             borderColor: 'var(--color-border)',
           }}
         >
-          {/* Language */}
+          {/* Sprache */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold uppercase opacity-50 tracking-wider">
-              {t('common.language')}
-            </span>
+            <span className="text-xs font-bold uppercase opacity-50 tracking-wider">Sprache</span>
             <div
               className="flex overflow-hidden rounded-lg"
               style={{ border: '1px solid var(--color-border)' }}
@@ -136,14 +108,8 @@ export function NavBar() {
                   onClick={() => i18n.changeLanguage(lang)}
                   className="px-3 py-1 text-sm font-bold transition-colors"
                   style={{
-                    backgroundColor:
-                      currentLang === lang
-                        ? 'var(--color-primary)'
-                        : 'transparent',
-                    color:
-                      currentLang === lang
-                        ? '#fff'
-                        : 'var(--color-text-secondary)',
+                    backgroundColor: currentLang === lang ? 'var(--color-primary)' : 'transparent',
+                    color: currentLang === lang ? '#fff' : 'var(--color-text-secondary)',
                   }}
                 >
                   {lang.toUpperCase()}
@@ -154,23 +120,18 @@ export function NavBar() {
 
           {/* Theme */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold uppercase opacity-50 tracking-wider">
-              {t('common.theme')}
-            </span>
+            <span className="text-xs font-bold uppercase opacity-50 tracking-wider">Theme</span>
             <div className="flex gap-1.5">
-              {PHOMU_CONFIG.AVAILABLE_THEMES.map((themeName) => (
+              {PHOMU_CONFIG.AVAILABLE_THEMES.map((t) => (
                 <button
-                  key={themeName}
-                  onClick={() => setTheme(themeName)}
-                  title={t(THEME_LABEL_KEYS[themeName])}
+                  key={t}
+                  onClick={() => setTheme(t)}
+                  title={t}
                   className="w-7 h-7 rounded-full transition-transform"
                   style={{
-                    backgroundColor: THEME_COLORS[themeName],
-                    border:
-                      theme === themeName
-                        ? '2px solid var(--color-text)'
-                        : '2px solid transparent',
-                    transform: theme === themeName ? 'scale(1.2)' : 'scale(1)',
+                    backgroundColor: THEME_COLORS[t],
+                    border: theme === t ? '2px solid var(--color-text)' : '2px solid transparent',
+                    transform: theme === t ? 'scale(1.2)' : 'scale(1)',
                   }}
                 />
               ))}
@@ -184,7 +145,7 @@ export function NavBar() {
             className="text-xs font-bold uppercase tracking-wider opacity-50 hover:opacity-100 transition-opacity ml-auto"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            ⚙ {t('ui.nav.admin')}
+            ⚙ Admin →
           </Link>
         </div>
       )}

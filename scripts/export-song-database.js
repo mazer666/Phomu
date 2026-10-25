@@ -34,7 +34,7 @@ files.forEach((file) => {
     const songs = Array.isArray(parsed) ? parsed : parsed.songs;
 
     if (!Array.isArray(songs)) {
-      console.error(`Error while reading ${file}: songs is not an array`);
+      console.error(`Fehler beim Lesen von ${file}: songs ist kein Array`);
       return;
     }
 
@@ -52,9 +52,9 @@ files.forEach((file) => {
       csvContent += `"${escapeCsv(packName)}";"${escapeCsv(song.artist)}";"${escapeCsv(song.title)}";"${escapeCsv(song.year)}";"${escapeCsv(youtubeUrlFromSong(song))}";"${escapeCsv(spotifyLink)}";"${escapeCsv(amazonMusicLink)}";"${escapeCsv(hints)}";"${escapeCsv(song.genre)}";"${escapeCsv(vibe)}"\n`;
     });
   } catch (error) {
-    console.error(`Error while reading ${file}:`, error.message);
+    console.error(`Fehler beim Lesen von ${file}:`, error.message);
   }
 });
 
 fs.writeFileSync(outputFile, csvContent, 'utf8');
-console.log(`Success! ${outputFile} was created.`);
+console.log(`Erfolg! ${outputFile} wurde erstellt.`);

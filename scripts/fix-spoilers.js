@@ -64,7 +64,7 @@ const packsDir = path.join(__dirname, '../src/data/packs');
 const files = fs.readdirSync(packsDir).filter(f => f.endsWith('.json'));
 
 let totalFixed = 0;
-console.log(`🤖 Phomu Auto-Censor started...\n`);
+console.log(`🤖 Phomu Auto-Censor gestartet...\n`);
 
 for (const file of files) {
   const filePath = path.join(packsDir, file);
@@ -84,10 +84,10 @@ for (const file of files) {
 
   if (fileModified) {
     fs.writeFileSync(filePath, JSON.stringify(packData, null, 2));
-    console.log(`✅ ${file} was cleaned.`);
+    console.log(`✅ ${file} wurde bereinigt.`);
   } else {
-    console.log(`💡 ${file} was already clean.`);
+    console.log(`💡 ${file} war bereits sauber.`);
   }
 }
 
-console.log(`\n🎉 Done! In total ${totalFixed} spoilers were censored with [XXX].`);
+console.log(`\n🎉 Fertig! Insgesamt wurden ${totalFixed} Spoiler mit [XXX] zensiert.`);

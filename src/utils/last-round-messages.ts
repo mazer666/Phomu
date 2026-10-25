@@ -1,9 +1,9 @@
 /**
- * Last-round banner messages
+ * Last-Round Banner Messages
  *
- * Shown when the final round begins — either because the time ran out or
- * because the last rotation starts. Tone: dramatic, spicy, sometimes sassy.
- * YDKJ style.
+ * Werden gezeigt, wenn die letzte Spielrunde beginnt —
+ * entweder weil die Zeit abgelaufen ist oder die letzte Rotation startet.
+ * Tonalität: dramatisch, spicy, manchmal frech. YDKJ-Stil.
  */
 
 export interface LastRoundMessage {

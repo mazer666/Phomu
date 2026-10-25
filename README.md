@@ -1,162 +1,116 @@
-# Phomu
+# Phomu – Musik-Partyspiel (Hybrid aus App + Karten)
 
-**Hybrid music party game: physical QR cards meet a dynamic web app.**
+Phomu ist ein Open-Source Partyspiel, das Musikquiz, Social-Gaming und physische QR-Karten kombiniert.
+Der aktuelle Stand ist ein lauffähiger Prototyp mit vollständigem Core-Loop (Lobby → Spiel → Game Over), 6 spielbaren Modi, mehreren Themes und einem großen Song-Katalog.
 
-Phomu is an open-source party game that combines a music quiz, social gaming and
-physical QR cards in a single game. A round runs on **one** device (or on several,
-when a session code is shared), and the cards come from the printer or from the
-phone screen.
-
-- **License:** GPL-3.0
-- **Stack:** Next.js 16 (App Router) · React 19 · TypeScript strict · Tailwind CSS 4 · Zustand · i18next
-- **Languages:** German (primary) and English (complete)
-
----
-
-## What Phomu is
-
-Phomu is neither a streaming client nor a music database. It is a **game**: a mix
-of ordering, deduction and music-knowledge rounds, played with physical or virtual
-cards.
-
-Three things set it apart from the classic music quiz:
-
-1. **The card is the way in.** A printed QR card leads straight into the matching
-   game mode. Whoever holds the card can play — no account needed.
-2. **One device, one role.** One person holds the device and leads the round
-   (the "pilot"). The players answer without touching the device. That prevents
-   spoilers and turns a phone into a full party setup.
-3. **The mode determines the mechanic.** There is no single "quiz" but six
-   different thinking tasks — from ordering to deduction.
+## Produktstatus (Stand: 8. April 2026)
+- **Framework:** Next.js 16 + React 19 + TypeScript.
+- **State:** Zustand-Store mit Session-/Runden-/Scoring-Logik.
+- **Modi:** 6 aktiv im Game-Flow.
+- **Packs:** 37 Packs / 1.629 Songs im Katalog (laut aktuellem Catalog-Report).
+- **Build / Typecheck / Tests:** Build + Typecheck + Unit-Tests + E2E-Smoke grün; Lint aktuell mit Errors.
+- **Admin-API-Security:** Bearer-Token-Guard (`x-admin-token` via `ADMIN_API_TOKEN`) + Input-/URL-Validierung für Cover-Endpoints.
+- **Bekannte Quality-Gaps:** Lint-Errors, Song-Validierungsfehler in A1, hohe Schema-Warnungslast im Katalog.
 
 ---
 
-## Quick start
+## Spielmodi (aktuell implementiert)
+
+1. **Chronologische Timeline (`timeline`)**  
+   Songs in die richtige zeitliche Reihenfolge einordnen; Timeline wächst dynamisch, Punkte sind konfigurierbar gedeckelt.
+
+2. **Hint-Master (`hint-master`)**  
+   Song über bis zu 5 Hinweise erraten; frühe Treffer geben mehr Punkte.
+
+3. **Lyrics Labyrinth (`lyrics`)**  
+   Fake-Lyric zwischen echten Zeilen identifizieren.
+
+4. **Vibe-Check (`vibe-check`)**  
+   Song einer Stimmung zuordnen, Fokus auf Team-/Gruppengefühl.
+
+5. **Survivor (`survivor`)**  
+   Einschätzen: One-Hit-Wonder oder nachhaltiger Chart-Act.
+
+6. **Cover Confusion (`cover-confusion`)**  
+   Cover-Version hören und Original-Interpret erkennen.
+
+---
+
+## Kernfunktionen
+
+- **Lobby & Session Setup:** Spielerverwaltung, Modusauswahl, Teamkonfiguration, Endbedingungen.
+- **Rundenlogik:** Drawing-, Question-, Reveal- und Scoring-Phasen.
+- **Scoring:** klassische Punkte + optionaler Time-Decay.
+- **Anti-Spoiler-Fokus:** Musik- und Reveal-Flows sollen erst im richtigen Moment auflösen.
+- **Themes:** Jackbox, Spotify, YouTube, Musicwall.
+- **Bilinguale Oberfläche:** Deutsch/Englisch.
+
+---
+
+## Qualität, Security und Tests
+
+### Bereits aktiv
+- `npm run typecheck`
+- `npm run lint` (aktuell nicht grün: Errors + Warnings vorhanden)
+- `npm run test`
+- `npm run test:e2e:install` (installiert Playwright Chromium)
+- `npm run test:e2e:install:linux` (installiert notwendige Linux-Systemlibs für Playwright)
+- `npm run test:e2e:smoke` (smoke flow via Playwright)
+- `npm run validate-songs`
+- `npm run validate-catalog`
+- `npm run build`
+
+### Größte offene Risiken
+- Lint-Warnungen (React-Hooks/Purity und `any`-Typen).
+- Katalogqualität (Duplikate + Jahrgangslücken + hohe Warnungsmenge).
+- Security-Hardening: wichtige Admin-API-Guardrails umgesetzt; nächste Schritte: CSP/Headers auf finalem Host und Rate-Limiting an Edge/Proxy.
+
+---
+
+## Dokumentations-Index (aktualisiert)
+
+- **Komplettes Multi-Rollen-Audit:** `specifications/full_audit_2026-04-02.md`
+- **Projektstatus (Snapshot):** `specifications/current_status_2026-04-08.md`
+- **Roadmap + Arbeitspakete + Abnahmekriterien:** `specifications/project_roadmap.md`
+- **Teststrategie (QA-Update):** `specifications/test_strategy.md`
+- **Security-Policy (überarbeitet):** `SECURITY.md`
+- **UX/Security Verbesserungsplan:** `specifications/improvement_plan_mobile_ux_security.md`
+- **Archiv (historische Dokumentstände):** `specifications/archive/` (inkl. archivierter Strategie- und Snapshot-Dokumente mit Datumsstempel im Dateinamen)
+
+---
+
+## Lokale Entwicklung
 
 ```bash
-git clone https://github.com/mazer666/Phomu.git
-cd Phomu
-npm ci
+npm install
 npm run dev
 ```
 
-The app then runs on `http://localhost:3000`.
+Wichtige Checks:
 
-The admin interface needs a token:
+Zusätzlich für Admin-Endpoints:
 
 ```bash
 cp .env.example .env.local
-npm run security:rotate-admin-token   # writes a token to .env.local
+# ADMIN_API_TOKEN setzen
 ```
 
-Detailed instructions including troubleshooting:
-[`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md).
-
----
-
-## The six game modes
-
-| Mode | Task | Validation |
-|---|---|---|
-| **Timeline** | place songs in the right chronological order | automatic |
-| **Hint-Master** | guess the song from up to five hint levels | manual, by the pilot |
-| **Lyrics Labyrinth** | find the faked line among real lines | automatic |
-| **Vibe-Check** | assign the song to a mood | automatic |
-| **Survivor** | one-hit wonder or career act? | automatic |
-| **Cover Confusion** | find the original behind the cover version | automatic |
-
-**Anti-spoiler:** during the game the interface never shows title, artist or album
-cover. The solution appears only once all answers are locked. For the projector
-there is a separate, equally spoiler-free projector mode.
-
-**Scoring:** base points, an optional time decay and a configurable point cap. All
-values live centrally in
-[`src/config/game-config.ts`](src/config/game-config.ts) — that is where the truth
-is, not in some component.
-
----
-
-## Features
-
-- **Lobby:** 1–24 players, solo play, fixed teams or teams reshuffled every
-  round; session code for multiple devices
-- **Game flow:** Draw → Question → Lock → Reveal → Points, then the next round
-- **Catalogue:** 135 packs with 1,615 songs, with schema gate and duplicate policy
-- **Printing:** card layout 59 × 91 mm plus 3 mm bleed, QR code on every card
-- **Themes:** Jackbox, Spotify, YouTube, Music Wall
-- **Languages:** German and English, switchable, persistent
-- **Accessibility:** tooltips on every control, keyboard operation, focus rings,
-  `prefers-reduced-motion`
-
----
-
-## Quality and gates
-
-The quality bar is set in [`QUALITY.md`](QUALITY.md). Every essential feature is
-accepted across eight dimensions — functional, technical, performance, usability,
-security/privacy, internationalisation, interoperability, documentation.
-
-The checks run locally and in CI:
-
-| Command | Checks |
-|---|---|
-| `npm run typecheck` | TypeScript strict, without emit |
-| `npm run lint` | ESLint |
-| `npm run test` | Vitest with coverage |
-| `npm run test:e2e:smoke` | Playwright smoke test over the complete flow |
-| `npm run validate-songs` | schema and required fields of every song |
-| `npm run validate-catalog` | catalogue gate: packs, songs, duplicates, missing years |
-| `npm run check:i18n` | parity and completeness of DE and EN |
-| `npm run check:doc-links` | every relative link in the repo resolves |
-| `npm run build` | production build |
-
-`npm run local-ci` runs the checks in the order the CI runs them.
-
----
-
-## Documentation
-
-The full navigation is in [`docs/README.md`](docs/README.md).
-
-| Document | Content |
-|---|---|
-| [`REQUIREMENTS.md`](REQUIREMENTS.md) | the binding requirements with IDs |
-| [`ARCHITECTURE.md`](ARCHITECTURE.md) | module boundaries and dependency direction |
-| [`ROADMAP.md`](ROADMAP.md) | milestones, gates and status |
-| [`QUALITY.md`](QUALITY.md) | the acceptance model |
-| [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) | where to change what |
-| [`GLOSSARY.md`](GLOSSARY.md) | the domain terms |
-| [`AGENTS.md`](AGENTS.md) | how agents work in this project |
-| [`SECURITY.md`](SECURITY.md) | threat model and disclosure channel |
-| [`PRIVACY.md`](PRIVACY.md) | data minimisation |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | contributing |
-| [`docs/user-guide/`](docs/user-guide/) | guide for players, German and English |
-
-The machine-readable truth about the project state is in
-[`project/project.yaml`](project/project.yaml).
-
----
-
-## Contributing
 
 ```bash
-git clone https://github.com/mazer666/Phomu.git
-cd Phomu
-npm ci
-npm run local-ci
+npm run typecheck
+npm run lint
+npm run test
+npm run test:e2e:install
+# nur auf Linux nötig, falls Browser-Libs fehlen:
+# npm run test:e2e:install:linux
+npm run test:e2e:smoke
+npm run validate-songs
+npm run validate-catalog
+npm run build
 ```
-
-Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) and
-[`AGENTS.md`](AGENTS.md) first. Contributions follow the house style: clear names,
-one responsibility per file, tests with every behaviour change, documentation in
-the same commit, no invented numbers.
 
 ---
 
-## License
+## Lizenz
 
-GPL-3.0-or-later. See [`LICENSE`](LICENSE).
-
-The music tracks, cover images and video links referenced in the catalogue belong
-to third parties; the project provides the software under GPL-3.0, not the
-content. See [`PRIVACY.md`](PRIVACY.md) and [`SECURITY.md`](SECURITY.md).
+GPL-3.0

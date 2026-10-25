@@ -1,15 +1,15 @@
 /**
  * ConditionalNavBar
  *
- * Renders the NavBar on all pages except /game and /game-over,
- * because those pages have their own navigation bars.
+ * Rendert die NavBar auf allen Seiten außer /game und /game-over,
+ * da diese Seiten eigene Navigationsleisten haben.
  */
 'use client';
 
 import { usePathname } from 'next/navigation';
 import { NavBar } from './NavBar';
 
-/** Paths on which the NavBar is hidden */
+/** Pfade, auf denen die NavBar ausgeblendet wird */
 const HIDDEN_PREFIXES = ['/game', '/game-over'];
 
 export function ConditionalNavBar() {

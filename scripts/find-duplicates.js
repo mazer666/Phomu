@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 /**
  * find-duplicates.js
- * Finds duplicate songs in src/data/songs/*.json
+ * Findet doppelte Songs in src/data/songs/*.json
  *
- * Detects:
- *   1. yt- entries that duplicate a complete entry
- *      (same YouTube ID or same title+artist)
- *   2. Complete entries that occur twice (same YouTube ID or title+artist)
+ * Erkennt:
+ *   1. yt-Einträge, die ein Duplikat eines vollständigen Eintrags sind
+ *      (gleiche YouTube-ID oder gleicher Titel+Artist)
+ *   2. Volle Einträge, die doppelt vorkommen (gleiche YouTube-ID oder Titel+Artist)
  *
  * Usage:
- *   node scripts/find-duplicates.js            # report only
- *   node scripts/find-duplicates.js --fix      # automatically clean up (yt-dupes)
+ *   node scripts/find-duplicates.js            # Nur Bericht
+ *   node scripts/find-duplicates.js --fix      # Automatisch bereinigen (yt-Dupes)
  */
 
 const fs = require('fs');
@@ -32,7 +32,7 @@ function getYtId(ytLink) {
 function normalize(title) {
   return (title || '')
     .toLowerCase()
-    .replace(/\s*\([^)]*\)/gi, '')   // remove parentheses: (Remastered), (feat. X) …
+    .replace(/\s*\([^)]*\)/gi, '')   // Klammern entfernen: (Remastered), (feat. X) …
     .replace(/['']/g, "'")
     .replace(/[^a-z0-9 ]/g, '')
     .replace(/\s+/g, ' ')
@@ -147,19 +147,19 @@ const wrongYtIds = fullDuplicatesByYtIdAll.filter(([ytId, entries]) => {
 // ---------- Report ----------
 
 console.log('='.repeat(60));
-console.log('DUPLICATE REPORT — src/data/songs/');
+console.log('DUPLIKAT-REPORT — src/data/songs/');
 console.log('='.repeat(60));
-console.log('Songs total:', allSongs.length);
+console.log('Songs gesamt:', allSongs.length);
 console.log();
 
-console.log('--- yt- entries detected as duplicates:', toDelete.size, '---');
+console.log('--- yt-Einträge als Duplikate erkannt:', toDelete.size, '---');
 for (const [id, { entry, packs }] of Object.entries(packAdditions)) {
   const newPacks = [...new Set(packs)].filter(p => !(entry.song.packs || []).includes(p));
-  console.log(`  ${id} ← takes over packs: [${newPacks.join(', ')}]`);
+  console.log(`  ${id} ← übernimmt Packs: [${newPacks.join(', ')}]`);
 }
 
 console.log();
-console.log('--- Full duplicates via title+artist (normalised):', fullDuplicatesByTitle.length, '---');
+console.log('--- Volle Duplikate via Titel+Artist (norm.):', fullDuplicatesByTitle.length, '---');
 for (const [key, entries] of fullDuplicatesByTitle) {
   const fullOnly = entries.filter(e => !e.song.id.startsWith('yt-'));
   const [title, artist] = key.split('|||');
@@ -170,7 +170,7 @@ for (const [key, entries] of fullDuplicatesByTitle) {
 }
 
 console.log();
-console.log('--- Full duplicates via the same YouTube ID:', fullDuplicatesSameTitle.length, '---');
+console.log('--- Volle Duplikate via gleicher YouTube-ID:', fullDuplicatesSameTitle.length, '---');
 for (const [ytId, entries] of fullDuplicatesSameTitle) {
   const fullOnly = entries.filter(e => !e.song.id.startsWith('yt-'));
   console.log(`  youtube: ${ytId}`);
@@ -181,7 +181,7 @@ for (const [ytId, entries] of fullDuplicatesSameTitle) {
 }
 
 console.log();
-console.log('--- Wrong YouTube IDs (different songs, same ID):', wrongYtIds.length, '---');
+console.log('--- Falsche YouTube-IDs (verschiedene Songs, gleiche ID):', wrongYtIds.length, '---');
 for (const [ytId, entries] of wrongYtIds) {
   const fullOnly = entries.filter(e => !e.song.id.startsWith('yt-'));
   console.log(`  youtube: ${ytId}`);
@@ -194,16 +194,16 @@ for (const [ytId, entries] of wrongYtIds) {
 
 if (FIX_MODE) {
   if (toDelete.size === 0 && Object.keys(packAdditions).length === 0) {
-    console.log('\nNo yt-duplicates to clean up.');
+    console.log('\nKeine yt-Duplikate zum Bereinigen.');
   } else {
-    console.log('\n=== Cleanup started ===');
+    console.log('\n=== Bereinigung gestartet ===');
 
     // Apply pack additions
     for (const [id, { entry, packs }] of Object.entries(packAdditions)) {
       const newPacks = [...new Set(packs)].filter(p => !(entry.song.packs || []).includes(p));
       if (newPacks.length > 0) {
         entry.song.packs = [...(entry.song.packs || []), ...newPacks];
-        console.log(`  Packs added: ${id} + [${newPacks.join(', ')}]`);
+        console.log(`  Packs ergänzt: ${id} + [${newPacks.join(', ')}]`);
       }
     }
 
@@ -212,7 +212,7 @@ if (FIX_MODE) {
       const before = data.songs.length;
       data.songs = data.songs.filter(s => !toDelete.has(s.id));
       if (data.songs.length !== before) {
-        console.log(`  ${file}: ${before - data.songs.length} yt-entries removed`);
+        console.log(`  ${file}: ${before - data.songs.length} yt-Einträge entfernt`);
       }
     }
 
@@ -224,8 +224,8 @@ if (FIX_MODE) {
         : { ...data.meta, songs: data.songs };
       fs.writeFileSync(filePath, JSON.stringify(content, null, 2) + '\n');
     }
-    console.log(`\nDone: ${toDelete.size} yt-entries deleted, ${Object.keys(packAdditions).length} songs updated.`);
+    console.log(`\nFertig: ${toDelete.size} yt-Einträge gelöscht, ${Object.keys(packAdditions).length} Songs aktualisiert.`);
   }
 } else if (toDelete.size > 0) {
-  console.log('\nTip: with --fix the yt-duplicates are cleaned up automatically.');
+  console.log('\nTipp: Mit --fix werden yt-Duplikate automatisch bereinigt.');
 }
