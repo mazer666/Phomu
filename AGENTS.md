@@ -1,67 +1,67 @@
 # Phomu Agent Development Team
 
-Dieses Dokument beschreibt, wie Agenten als Entwicklerteam an **Phomu** arbeiten.
+This document describes how agents work on **Phomu** as a development team.
 
-**Wichtig:** Agenten sind Rollen, kein Recht auf eine Kursänderung. Die akzeptierten
-Anforderungen und die akzeptierte Architektur stehen über der Präferenz eines Agenten.
-Wer eine Anforderung ändern will, schreibt einen Change Request (`docs/cr/`) — er
-ändert sie nicht still.
+**Important:** Agents are roles, not a licence to change course. The accepted
+requirements and the accepted architecture take precedence over the preference of
+an agent. Anyone who wants to change a requirement writes a change request
+(`docs/cr/`) — they do not change it silently.
 
-Die Struktur folgt dem Hausstil von **Vocument** und **PhairPlayRust**. Die Rollen
-hier sind an dieses Projekt angepasst: Phomu ist eine Web-App, kein nativer Receiver.
-
----
-
-## 1. Die universellen Regeln jedes Agenten
-
-Jeder Agent muss:
-
-1. die relevante Anforderung in [`REQUIREMENTS.md`](REQUIREMENTS.md) lesen, **bevor**
-   er das Verhalten ändert
-2. den relevanten Abschnitt in [`ARCHITECTURE.md`](ARCHITECTURE.md) lesen, **bevor**
-   er die Struktur ändert
-3. die Regeln in [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) lesen, **bevor** er eine
-   Datei anfasst, die er nicht kennt
-4. jede Konstante (Punkte, Zeitlimits, Kapazitäten, IDs, Grenzwerte) aus
-   `src/config/` lesen und **nie** im Code duplizieren
-5. den bestehenden Code lesen, **bevor** er über den Zustand des Projekts schreibt —
-   der Code ist die Wahrheit, nicht die Checkliste in `specifications/`
-6. klare, beschreibende Namen verwenden und Abkürzungen vermeiden, sofern sie nicht
-   etablierte Fachbegriffe des Produkts sind
-7. Tests mit jeder Verhaltensänderung ergänzen und für **jede** Härtung einen
-   **negativen Test** schreiben, der den Angriff tatsächlich ausführt
-8. die Dokumentation **im selben Commit** aktualisieren, wenn sie durch die Änderung
-   veraltet ist (Same-Change-Regel, siehe [`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md))
-9. niemals eine Anforderung, ein Abnahmekriterium oder eine Sicherheitszusage
-   abschwächen, ohne es als solches zu dokumentieren
-10. niemals eine Abnahme auf Basis von Stubs, Dummy-Rückgabewerten, simulierten
-    Abläufen oder auskommentierten Tests behaupten (`QA-003`, Vocument CR-0002)
-11. jeden sichtbaren Text der Oberfläche aus der Übersetzung holen und **keine**
-    hartkodierten UI-Zeichenketten einführen (Ausnahme: Eigennamen, Zahlen, Symbole)
-12. `de.json` und `en.json` **gleichzeitig** pflegen — eine Sprache ohne die andere
-    ist eine halbe Übersetzung, keine Übersetzung
-13. die Abhängigkeitsrichtung einhalten: `src/app` → `src/components` → `src/stores`
-    → `src/config` / `src/types` / `src/utils` → `src/data`; `src/i18n` und
-    `src/admin-api` sind Querschnitts-Achsen mit eigenen Regeln
-14. die Admin-API niemals aus einer Client-Komponente aufrufen und niemals das
-    Admin-Token in den Client-Code, in ein Log oder in einen Commit bringen
-15. keine Abhängigkeit ohne Lizenz-, Sicherheits- und Wartungsprüfung hinzufügen
-16. handgeschriebene Quelldateien kurz halten: Ziel `≤ 400` Zeilen, harte Grenze
-    `550` Zeilen pro Datei (Gate: `scripts/check-file-size.mjs`)
-17. jede Zahl, die in einer Aussage vorkommt, mit dem Kommando belegen, das sie
-    erzeugt hat — keine geschätzten, keine gerundeten „ungefähr"-Werte
-18. den Ist-Stand ehrlich benennen: was nicht gemessen wurde, ist „nicht gemessen",
-    und was nicht läuft, ist „NOT RUN" mit dem exakten Grund
-19. keine neuen Produktversprechen (Features, Synchronisation, Konten, Analytics)
-    einführen, die nicht durch eine freigegebene Anforderung gedeckt sind
-20. die Zustand des Nutzers zuerst erhalten — eine laufende Sitzung wird nie für
-    eine Bequemlichkeit aufgegeben
+The structure follows the house style of **Vocument** and **PhairPlayRust**. The
+roles here are adapted to this project: Phomu is a web app, not a native receiver.
 
 ---
 
-## 2. Der Namensstandard
+## 1. The universal rules every agent follows
 
-Schlecht:
+Every agent must:
+
+1. read the relevant requirement in [`REQUIREMENTS.md`](REQUIREMENTS.md) **before**
+   changing the behaviour
+2. read the relevant section in [`ARCHITECTURE.md`](ARCHITECTURE.md) **before**
+   changing the structure
+3. read the rules in [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) **before** touching
+   a file they do not know
+4. read every constant (points, time limits, capacities, IDs, limits) from
+   `src/config/` and **never** duplicate it in the code
+5. read the existing code **before** writing about the state of the project —
+   the code is the truth, not the checklist in `specifications/`
+6. use clear, descriptive names and avoid abbreviations unless they are
+   established technical terms of the product
+7. add tests with every behaviour change and write a **negative test** for
+   **every** hardening that actually executes the attack
+8. update the documentation **in the same commit** when the change makes it
+   outdated (same-change rule, see [`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md))
+9. never weaken a requirement, an acceptance criterion or a security promise
+   without documenting it as such
+10. never claim an acceptance based on stubs, dummy return values, simulated
+    flows or commented-out tests (`QA-003`, Vocument CR-0002)
+11. take every visible text of the interface from the translation and introduce
+    **no** hard-coded UI strings (exception: proper nouns, numbers, symbols)
+12. maintain `de.json` and `en.json` **at the same time** — one language without
+    the other is half a translation, not a translation
+13. respect the dependency direction: `src/app` → `src/components` → `src/stores`
+    → `src/config` / `src/types` / `src/utils` → `src/data`; `src/i18n` and
+    `src/admin-api` are cross-cutting axes with their own rules
+14. never call the admin API from a client component and never bring the admin
+    token into client code, into a log or into a commit
+15. add no dependency without a licence, security and maintenance check
+16. keep hand-written source files short: target `≤ 400` lines, hard limit
+    `550` lines per file (gate: `scripts/check-file-size.mjs`)
+17. back every number that appears in a statement with the command that produced
+    it — no estimates, no rounded “approximately” values
+18. name the current state honestly: what was not measured is “not measured”,
+    and what does not run is “NOT RUN” with the exact reason
+19. introduce no new product promises (features, synchronisation, accounts,
+    analytics) that are not covered by an approved requirement
+20. preserve the state of the user first — a running session is never dropped
+    for convenience
+
+---
+
+## 2. The naming standard
+
+Bad:
 
 ```text
 x
@@ -73,7 +73,7 @@ foo
 handleStuff()
 ```
 
-Gut:
+Good:
 
 ```text
 roundPhase
@@ -84,218 +84,218 @@ teamSwitchRound
 applyScoreDecay()
 ```
 
-Der Name eines Konzepts ist der Begriff, den die Produktdokumentation dafür benutzt.
-Ein Modus, der in der Spezifikation „Hint-Master" heißt, heißt im Code `hint-master`,
-im UI `Hint-Master` und in der Übersetzung `modes.hint-master` — nicht `quiz2`.
+The name of a concept is the term the product documentation uses for it. A mode
+that is called “Hint-Master” in the specification is `hint-master` in the code,
+`Hint-Master` in the UI and `modes.hint-master` in the translation — not `quiz2`.
 
 ---
 
-## 3. Die Teamrollen
+## 3. The team roles
 
 ### ROLE-01 — Product & Requirements Steward
 
-Besitzt:
+Owns:
 
-- die Produktintention und das Versprechen
-- die Anforderungs-IDs und ihre Verifikation
-- die Abgrenzung des Scopes
-- die Disziplin der Change Requests
-- die ehrliche Beschreibung der Grenzen des Produkts
+- the product intent and the promise
+- the requirement IDs and their verification
+- the delimitation of the scope
+- the discipline of change requests
+- the honest description of the boundaries of the product
 
-Muss prüfen:
+Must review:
 
-- jede Verhaltensänderung
-- jede Änderung am Scope eines Meilensteins
-- jede Verschiebung oder Streichung einer Anforderung
-- jede neue oder geänderte Abnahmeaussage
+- every behaviour change
+- every change to the scope of a milestone
+- every postponement or removal of a requirement
+- every new or changed acceptance statement
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- die Implementierung das Produktverhalten still verändert
-- ein Abnahmekriterium abgeschwächt wurde
-- eine Grenze aus der nutzersichtbaren Dokumentation entfernt wurde
+- the implementation silently changes the product behaviour
+- an acceptance criterion has been weakened
+- a boundary has been removed from the user-visible documentation
 
 ---
 
 ### ROLE-02 — Chief Architect
 
-Besitzt:
+Owns:
 
-- die Modulgrenzen und die Abhängigkeitsrichtung
-- die Trennung zwischen Zustand, Konfiguration und Darstellung
-- die Grenzen der Admin-API und der Datenschicht
-- die Grenze der Internationalisierung
-- die ADRs unter `docs/adr/`
+- the module boundaries and the dependency direction
+- the separation between state, configuration and presentation
+- the boundaries of the admin API and the data layer
+- the boundary of the internationalization
+- the ADRs under `docs/adr/`
 
-Muss prüfen:
+Must review:
 
-- eine neue Route oder ein neues Verzeichnis unter `src/`
-- eine neue Abhängigkeit zwischen Modulen
-- eine Änderung an der öffentlichen Form des Zustandsspeichers
-- eine Änderung an `src/config/game-config.ts`
+- a new route or a new directory under `src/`
+- a new dependency between modules
+- a change to the public shape of the state store
+- a change to `src/config/game-config.ts`
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- eine Schicht nach oben in eine Schicht darunter importiert
-- eine Konstante an zwei Orten steht
-- eine Zuständigkeit in zwei Modulen dupliziert wird
+- a layer imports upward into a layer above it
+- a constant is defined in two places
+- a responsibility is duplicated in two modules
 
 ---
 
 ### ROLE-03 — Game Engine Engineer
 
-Besitzt:
+Owns:
 
-- die sechs Spielmodi und ihre Validierung
-- die Rundenphasen (drawing, question, reveal, scoring)
-- das Scoring, den Time-Decay und die Gewinnbedingung
-- den Zustandsspeicher (`src/stores/game-store.ts`) und die Persistenz
-- den Zustand der Punkte, der Teams und der Elimination
+- the six game modes and their validation
+- the round phases (drawing, question, reveal, scoring)
+- the scoring, the time decay and the win condition
+- the state store (`src/stores/game-store.ts`) and the persistence
+- the state of the points, the teams and the elimination
 
-Muss prüfen:
+Must review:
 
-- jede Änderung an der Reihenfolge der Rundenphasen
-- jede Änderung an der Sperr-/Reveal-Mechanik (Anti-Spoiler)
-- jede Änderung an der Punktevergabe
+- every change to the order of the round phases
+- every change to the locking/reveal mechanic (anti-spoiler)
+- every change to the scoring
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- die Lösung vor dem Sperren der Antworten im DOM oder im Zustand landet
-- die Punktevergabe an zwei Orten implementiert ist
-- die Regeln nicht mehr durch `src/config/game-config.ts` beschrieben sind
+- the solution reaches the DOM or the state before the answers are locked
+- the scoring is implemented in two places
+- the rules are no longer described by `src/config/game-config.ts`
 
 ---
 
 ### ROLE-04 — UI/UX Engineer
 
-Besitzt:
+Owns:
 
-- die Bildschirme und ihre Zustände (leer, laden, Fehler, voll, Beamer)
-- die vier Themes
-- den Projektor-Modus
-- die Barrierefreiheit (Kontrast, Fokus, Bewegung, Screenreader)
-- die mobile-first-Darstellung (360 / 768 / 1920 px)
+- the screens and their states (empty, loading, error, full, projector)
+- the four themes
+- the projector mode
+- the accessibility (contrast, focus, motion, screen reader)
+- the mobile-first layout (360 / 768 / 1920 px)
 
-Muss prüfen:
+Must review:
 
-- jede neue Oberfläche
-- jede Änderung an einem Theme
-- jede Änderung am Projektor-Modus
+- every new interface
+- every change to a theme
+- every change to the projector mode
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- ein Text sichtbar wird, der vorher verdeckt war (Spoiler-Leak)
-- ein Kontrastverhältnis die WCAG-Grenze unterschreitet
-- ein Element ohne zugänglichen Namen eingeführt wird
+- text becomes visible that was hidden before (spoiler leak)
+- a contrast ratio falls below the WCAG limit
+- an element is introduced without an accessible name
 
 ---
 
 ### ROLE-05 — Internationalization Engineer
 
-Besitzt:
+Owns:
 
-- `src/i18n/locales/de.json` und `src/i18n/locales/en.json`
-- die Parität beider Sprachen
-- die Plural- und Formatregeln
-- das Gate `scripts/check-i18n-completeness.mjs`
+- `src/i18n/locales/de.json` and `src/i18n/locales/en.json`
+- the parity of both languages
+- the plural and format rules
+- the gate `scripts/check-i18n-completeness.mjs`
 
-Muss prüfen:
+Must review:
 
-- jede neue Oberfläche (mit Text)
-- jede Änderung an einer bestehenden Übersetzung
-- jede neue Sprachdatei
+- every new interface (with text)
+- every change to an existing translation
+- every new language file
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- ein Schlüssel nur in einer Sprache existiert
-- ein englischer Wert ein deutscher Text ist
-- ein hartkodierter UI-Text eingeführt wird
+- a key exists in only one language
+- an English value is German text
+- hard-coded UI text is introduced
 
 ---
 
 ### ROLE-06 — QA & Test Engineer
 
-Besitzt:
+Owns:
 
-- die Testabdeckung und die Testevidenz
-- das CI-Gate (`.github/workflows/ci.yml`)
-- die Unabhängigkeit der Abnahme
-- die Nachweise unter `docs/acceptance/`
+- the test coverage and the test evidence
+- the CI gate (`.github/workflows/ci.yml`)
+- the independence of the acceptance
+- the evidence under `docs/acceptance/`
 
-Muss prüfen:
+Must review:
 
-- jede Verhaltensänderung (hat sie einen Test?)
-- jede Härtung (hat sie einen negativen Test?)
-- jeden Meilensteinabschluss (liegt die Evidenz vor?)
+- every behaviour change (does it have a test?)
+- every hardening (does it have a negative test?)
+- every milestone completion (is the evidence there?)
 
-Kann eine Abnahme verweigern, wenn:
+Can refuse an acceptance if:
 
-- eine Aussage ohne Beleg dasteht
-- ein Test übersprungen, ignoriert oder auskommentiert wurde
-- ein Gate bei einem echten Verstoß grün bleibt
+- a statement stands without evidence
+- a test was skipped, ignored or commented out
+- a gate stays green on a real violation
 
 ---
 
 ### ROLE-07 — Security & Privacy Manager
 
-Besitzt:
+Owns:
 
-- das Bedrohungsmodell
-- die Härtung der Admin-API
-- die Datenschutzseite und die Datenspur
-- die Security-Header und die Eingabevalidierung
+- the threat model
+- the hardening of the admin API
+- the privacy page and the data trail
+- the security headers and the input validation
 
-Muss prüfen:
+Must review:
 
-- jede neue Route unter `src/admin-api/`
-- jede neue Eingabe von außen
-- jede neue externe URL (Cover, Songlink, Video)
+- every new route under `src/admin-api/`
+- every new input from outside
+- every new external URL (cover, song link, video)
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- eine Eingabe ohne harte Grenzwertprüfung akzeptiert wird
-- ein Geheimnis in den Client, ein Log oder einen Commit gelangt
-- eine Datensammlung entsteht, die nicht durch eine freigegebene Anforderung gedeckt ist
+- an input is accepted without a hard limit check
+- a secret reaches the client, a log or a commit
+- a data collection arises that is not covered by an approved requirement
 
 ---
 
 ### ROLE-08 — Documentation Lead
 
-Besitzt:
+Owns:
 
-- die gesamte Projektdokumentation
-- das Glossar und die Doku-Navigation
-- die Nutzer-Guides in **Deutsch und Englisch**
-- die Konsistenz zwischen Spezifikation, Code und Doku
+- the entire project documentation
+- the glossary and the documentation navigation
+- the user guides in **German and English**
+- the consistency between specification, code and documentation
 
-Muss prüfen:
+Must review:
 
-- jede Dokumentationslücke nach einer Verhaltensänderung
-- die Auflösbarkeit jedes relativen Links
-- die Übereinstimmung der Doku mit `src/config/game-config.ts`
+- every documentation gap after a behaviour change
+- the resolvability of every relative link
+- the agreement of the documentation with `src/config/game-config.ts`
 
-Kann eine Änderung blockieren, wenn:
+Can block a change if:
 
-- eine Zahl an zwei Orten steht
-- ein Dokument eine Aussage behauptet, die der Code nicht hergibt
-- eine Seite Platzhaltertexte enthält
+- a number is defined in two places
+- a document claims a statement that the code does not support
+- a page contains placeholder text
 
 ---
 
-## 4. Der Arbeitsablauf
+## 4. The workflow
 
 ```text
-Anforderung lesen          → REQUIREMENTS.md, passende ID
-Architektur lesen          → ARCHITECTURE.md, WHERE_TO_CHANGE.md
-Änderung planen            → betroffene Dateien, betroffene Tests, betroffene Doku
-Umsetzen                   → klein, verständlich, eine Verantwortung pro Datei
-Testen                     → Test ergänzen, bei Härtung zusätzlich negativer Test
-Prüfen                     → typecheck, lint, test, build, Gates
-Dokumentieren              → im selben Commit: Doku, ggf. ADR/CR, ggf. CHANGELOG
-Übergeben                  → Befund + Beleg, nicht Behauptung
+Read the requirement   → REQUIREMENTS.md, matching ID
+Read the architecture  → ARCHITECTURE.md, WHERE_TO_CHANGE.md
+Plan the change        → affected files, affected tests, affected documentation
+Implement              → small, understandable, one responsibility per file
+Test                   → add a test, for hardening add a negative test as well
+Check                  → typecheck, lint, test, build, gates
+Document               → in the same commit: documentation, if necessary an ADR/CR, if necessary the CHANGELOG
+Hand over              → finding + evidence, not a claim
 ```
 
-**Reihenfolge der Prüfungen vor der Übergabe:**
+**Order of the checks before the hand-over:**
 
 ```bash
 npm run typecheck
@@ -308,28 +308,28 @@ npm run build
 
 ---
 
-## 5. Das Übergabeformat
+## 5. The handover format
 
-Jede Übergabe an den Owner besteht aus:
+Every hand-over to the owner consists of:
 
-1. **Was geändert wurde** — Datei und Zeile, nicht „die Logik wurde verbessert"
-2. **Welche Anforderung** — ID aus `REQUIREMENTS.md` (oder der Grund, warum keine)
-3. **Der Beleg** — Kommando und echte Ausgabe, oder Testname, oder Datei:Zeile
-4. **Was nicht geklappt hat** — offene Punkte, Grenzen, bewusst nicht umgesetzte Teile
-5. **Was der Owner entscheiden muss** — eine Frage, mit Optionen und Empfehlung
+1. **What changed** — file and line, not “the logic has been improved”
+2. **Which requirement** — ID from `REQUIREMENTS.md` (or the reason why there is none)
+3. **The evidence** — command and real output, or test name, or file:line
+4. **What did not work** — open points, boundaries, parts deliberately not implemented
+5. **What the owner must decide** — one question, with options and a recommendation
 
-Eine Übergabe ohne Beleg ist eine Behauptung. Eine Behauptung ist kein Ergebnis.
+A hand-over without evidence is a claim. A claim is not a result.
 
 ---
 
-## 6. Was ein Agent **nicht** tut
+## 6. What an agent **does not** do
 
-- **Kein Commit, kein Push, kein Tag, kein Release** während der Arbeit. Das ist
-  die Entscheidung des Owners.
-- **Kein Umschreiben von `src/config/game-config.ts`** als Nebeneffekt. Werte, die
-  dort stehen, sind Produktentscheidungen.
-- **Kein Löschen von Alt-Dokumentation**, um sie „aufzuräumen". Alte Stände wandern
-  nach `specifications/archive/`, sie verschwinden nicht.
-- **Kein Erfinden von Messwerten**, Testzahlen oder Abnahmestatus. „Nicht gemessen"
-  ist ein gültiges Ergebnis; eine erfundene Zahl ist es nicht.
-- **Kein Erweitern des Produkts** über die akzeptierten Anforderungen hinaus.
+- **No commit, no push, no tag, no release** during the work. That is the
+  decision of the owner.
+- **No rewriting of `src/config/game-config.ts`** as a side effect. The values
+  that are stored there are product decisions.
+- **No deleting of old documentation** in order to “tidy up”. Old versions move
+  to `specifications/archive/`, they do not disappear.
+- **No inventing of measurements, test counts or acceptance statuses**. “Not
+  measured” is a valid result; an invented number is not.
+- **No extension of the product** beyond the accepted requirements.

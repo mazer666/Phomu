@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 /**
- * Generator für `src/i18n/variant-keys.ts`
+ * Generator for `src/i18n/variant-keys.ts`
  *
- * manche Texte werden bewusst variiert (Reveal-Formulierungen, Feedback,
- * Teamnamen). Dafür existiert je Familie eine Schlüsselliste. Die Listen
- * werden **aus den Sprachdateien erzeugt**, damit Schlüssel und Liste nicht
- * auseinanderlaufen können: ein Schlüssel, der aus der Sprachdatei
- * verschwindet, macht diese Datei ungültig.
+ * Some texts are deliberately varied (reveal wordings, feedback,
+ * team names). Each family therefore has a key list. The lists are
+ * **generated from the locale files** so that keys and list cannot drift
+ * apart: a key that disappears from the locale file makes this file invalid.
  *
- * Aufruf:
+ * Usage:
  *   node scripts/generate-variant-keys.mjs
  */
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -38,7 +37,7 @@ const en = flatten(
   JSON.parse(readFileSync(join(LOCALES_DIR, 'en.json'), 'utf8'))
 );
 
-/** Alle Schlüssel, die zum Präfix passen, in numerischer Reihenfolge. */
+/** All keys matching the prefix, in numeric order. */
 function family(prefix, suffixPattern = /(\d+)(?:_(\d+))?$/) {
   const matches = [];
   for (const key of Object.keys(de)) {
@@ -60,13 +59,13 @@ function assertParity(keys, label) {
   for (const key of keys) {
     if (!(key in en)) {
       throw new Error(
-        `Schlüssel "${key}" (${label}) fehlt in en.json — DE/EN sind nicht parallel.`
+        `Key "${key}" (${label}) is missing in en.json — DE/EN are not in parallel.`
       );
     }
   }
 }
 
-/** Familien mit einem Muster `<prefix><n>` oder `<prefix><n>_<m>`. */
+/** Families with the pattern `<prefix><n>` or `<prefix><n>_<m>`. */
 const FAMILIES = [
   ['TIMELINE_GENERIC_KEYS', 'game.reveal.timeline.generic'],
   ['HINT_SUBLINE_KEYS', 'game.reveal.hint.subline'],
@@ -91,9 +90,7 @@ const blocks = [];
 for (const [name, prefix] of FAMILIES) {
   const keys = family(prefix);
   if (keys.length === 0)
-    throw new Error(
-      `Keine Schlüssel für Familie "${name}" (${prefix}) gefunden.`
-    );
+    throw new Error(`No keys found for family "${name}" (${prefix}).`);
   assertParity(keys, name);
   blocks.push(
     `/** ${keys.length} Varianten aus \`${prefix}*\`. */\n` +
@@ -101,13 +98,13 @@ for (const [name, prefix] of FAMILIES) {
   );
 }
 
-// ─── Jahrzehnt-Varianten: game.reveal.timeline.decade1950_1, decade1960_2, … ───
+// ─── Decade variants: game.reveal.timeline.decade1950_1, decade1960_2, … ───
 const decadeKeys = family('game.reveal.timeline.decade');
 assertParity(decadeKeys, 'TIMELINE_DECADE_KEYS');
 const byDecade = new Map();
 for (const key of decadeKeys) {
   const match = key.match(/decade(\d{4})_(\d+)$/);
-  if (!match) throw new Error(`Unerwarteter Jahrzehnt-Schlüssel: ${key}`);
+  if (!match) throw new Error(`Unexpected decade key: ${key}`);
   const decade = Number(match[1]);
   if (!byDecade.has(decade)) byDecade.set(decade, []);
   byDecade.get(decade).push(key);
@@ -128,6 +125,10 @@ blocks.push(
     `\n};`
 );
 
+// NOTE: the header and the per-family doc comments below are the *content* of
+// the generated file `src/i18n/variant-keys.ts`. They are kept in German so
+// that the generator and the committed file stay byte-identical — changing
+// them would require regenerating that file as well.
 const header = `/**
  * Typisierte Schlüssellisten für variierte Texte.
  *
@@ -145,6 +146,6 @@ const output = `${header}\n${blocks.join('\n\n')}\n`;
 writeFileSync(TARGET, output, 'utf8');
 
 console.log(
-  `src/i18n/variant-keys.ts geschrieben: ${FAMILIES.length} Familien, ` +
-    `${decades.length} Jahrzehnte, ${FAMILIES.reduce((sum, [name, prefix]) => sum + family(prefix).length, 0) + decadeKeys.length} Schlüssel.`
+  `src/i18n/variant-keys.ts written: ${FAMILIES.length} families, ` +
+    `${decades.length} decades, ${FAMILIES.reduce((sum, [name, prefix]) => sum + family(prefix).length, 0) + decadeKeys.length} keys.`
 );

@@ -1,24 +1,23 @@
 /**
  * fetch-covers.js
- * 
- * Automatisches Beziehen von 500x500 Cover-Bildern für alle Phomu-Songs.
- * Nutzt iTunes und Deezer APIs für hohe Qualität und Resilienz.
- * 
- * Verwendung: node scripts/fetch-covers.js [--limit=50] [--force]
+ *
+ * Automatically downloads 500x500 cover images for all Phomu songs.
+ * Uses the iTunes and Deezer APIs for high quality and resilience.
+ *
+ * Usage: node scripts/fetch-covers.js [--limit=50] [--force]
  */
 
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-// --- Konfiguration ---
 const PACKS_DIR = path.join(__dirname, '../src/data/packs');
 const COVERS_DIR = path.join(__dirname, '../public/covers');
 const LIMIT_ARG = process.argv.find(a => a.startsWith('--limit='));
 const LIMIT = LIMIT_ARG ? parseInt(LIMIT_ARG.split('=')[1]) : Infinity;
-const FORCE = process.argv.includes('--force'); // Vorhandene Bilder überschreiben
+const FORCE = process.argv.includes('--force'); // Overwrite existing images
 
-// --- Helfer ---
+// --- Helpers ---
 
 async function downloadImage(url, dest) {
   return new Promise((resolve, reject) => {
@@ -44,7 +43,7 @@ function randomSleep(min, max) {
 
 // --- Provider ---
 
-/** iTunes Search API (Sehr zuverlässig, 500x500 möglich) */
+/** iTunes Search API (very reliable, 500x500 possible) */
 async function itunesProvider(artist, title) {
   const query = encodeURIComponent(`${artist} ${title}`);
   const url = `https://itunes.apple.com/search?term=${query}&entity=musicTrack&limit=1`;
@@ -54,16 +53,16 @@ async function itunesProvider(artist, title) {
     const data = await response.json();
     if (data.resultCount > 0) {
       const track = data.results[0];
-      // Wir tauschen 100x100 gegen 500x500 aus
+      // We swap 100x100 for 500x500
       return track.artworkUrl100.replace('100x100bb.jpg', '500x500bb.jpg');
     }
   } catch (err) {
-    console.warn(`   [iTunes] Fehler für "${artist} - ${title}":`, err.message);
+    console.warn(`   [iTunes] Error for "${artist} - ${title}":`, err.message);
   }
   return null;
 }
 
-/** Deezer API (Guter Fallback) */
+/** Deezer API (good fallback) */
 async function deezerProvider(artist, title) {
   const query = encodeURIComponent(`track:"${title}" artist:"${artist}"`);
   const url = `https://api.deezer.com/search?q=${query}&limit=1`;
@@ -72,15 +71,15 @@ async function deezerProvider(artist, title) {
     const response = await fetch(url);
     const data = await response.json();
     if (data.data && data.data.length > 0) {
-      return data.data[0].album.cover_big; // big ist 500x500
+      return data.data[0].album.cover_big; // big is 500x500
     }
   } catch (err) {
-    console.warn(`   [Deezer] Fehler für "${artist} - ${title}":`, err.message);
+    console.warn(`   [Deezer] Error for "${artist} - ${title}":`, err.message);
   }
   return null;
 }
 
-// --- Hauptlogik ---
+// --- Main logic ---
 
 async function main() {
   if (!fs.existsSync(COVERS_DIR)) {
@@ -89,7 +88,7 @@ async function main() {
 
   const jsonFiles = fs.readdirSync(PACKS_DIR).filter(f => f.endsWith('.json'));
   console.log(`\n🚀 Phomu Cover Art Fetcher`);
-  console.log(`📁 Durchsuche ${jsonFiles.length} Packs...\n`);
+  console.log(`📁 Scanning ${jsonFiles.length} packs...\n`);
 
   let processedCount = 0;
   let successCount = 0;
@@ -102,7 +101,7 @@ async function main() {
     const pack = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     let packChanged = false;
 
-    console.log(`📦 Verarbeite Pack: ${pack.name || file}`);
+    console.log(`📦 Processing pack: ${pack.name || file}`);
 
     for (const song of pack.songs) {
       if (processedCount >= LIMIT) break;
@@ -111,10 +110,10 @@ async function main() {
       const coverPath = path.join(COVERS_DIR, coverFilename);
       const relativePath = `/covers/${coverFilename}`;
 
-      // Prüfen ob Cover schon da ist
+      // Check whether the cover is already there
       if (fs.existsSync(coverPath) && !FORCE) {
         alreadyExists++;
-        // Falls coverUrl im JSON fehlt, aber Datei da ist -> eintragen
+        // If coverUrl is missing in the JSON but the file exists -> add it
         if (song.coverUrl !== relativePath) {
           song.coverUrl = relativePath;
           packChanged = true;
@@ -122,7 +121,7 @@ async function main() {
         continue;
       }
 
-      console.log(`   🔍 Suche Cover für: ${song.artist} - ${song.title}`);
+      console.log(`   🔍 Searching cover for: ${song.artist} - ${song.title}`);
       
       let coverUrl = await itunesProvider(song.artist, song.title);
       if (!coverUrl) {
@@ -136,31 +135,31 @@ async function main() {
           song.coverUrl = relativePath;
           packChanged = true;
           successCount++;
-          console.log(`   ✅ Gespeichert.`);
+          console.log(`   ✅ Saved.`);
         } catch (err) {
-          console.error(`   ❌ Download-Fehler: ${err.message}`);
+          console.error(`   ❌ Download error: ${err.message}`);
         }
       } else {
-        console.warn(`   ⚠️ Keinen Treffer gefunden.`);
+        console.warn(`   ⚠️ No match found.`);
       }
 
       processedCount++;
-      await randomSleep(500, 1500); // Resilience: Kurze Pause zwischen Tracks
+      await randomSleep(500, 1500); // Resilience: short pause between tracks
     }
 
     if (packChanged) {
       fs.writeFileSync(filePath, JSON.stringify(pack, null, 2), 'utf-8');
-      console.log(`   💾 JSON aktualisiert.\n`);
+      console.log(`   💾 JSON updated.\n`);
     }
   }
 
-  console.log(`\n--- Abschlussbericht ---`);
-  console.log(`Songs verarbeitet: ${processedCount}`);
-  console.log(`Cover neu geladen: ${successCount}`);
-  console.log(`Bereits vorhanden: ${alreadyExists}`);
+  console.log(`\n--- Final report ---`);
+  console.log(`Songs processed: ${processedCount}`);
+  console.log(`Covers downloaded: ${successCount}`);
+  console.log(`Already present: ${alreadyExists}`);
   console.log(`-------------------------\n`);
 }
 
 main().catch(err => {
-  console.error('Kritischer Fehler:', err);
+  console.error('Critical error:', err);
 });

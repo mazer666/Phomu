@@ -2,19 +2,19 @@
 /**
  * count-ui-literals.mjs
  *
- * Zaehlt potenziell sichtbare Literaltexte in TSX-Dateien.
+ * Counts potentially visible literal texts in TSX files.
  *
- * Der Scanner ist absichtlich konservativ-erweitert: er sammelt
- *  1. JSX-Textknoten (Text zwischen > und <),
- *  2. texttragende Attribute (title, placeholder, aria-label, alt, label),
- *  3. UI-Datenobjekte (label:, title:, description:, text:, sub:, note:, tagline:, name:),
- *  4. Dialogtexte (alert(), confirm()).
+ * The scanner is deliberately conservative-extended: it collects
+ *  1. JSX text nodes (text between > and <),
+ *  2. text-bearing attributes (title, placeholder, aria-label, alt, label),
+ *  3. UI data objects (label:, title:, description:, text:, sub:, note:, tagline:, name:),
+ *  4. dialog texts (alert(), confirm()).
  *
- * Nicht erfasst werden: className-, style-, key-, href-, src-, type- und
- * data-Attribute sowie Import-Statements und Objekt-Schluessel.
+ * Not captured: className-, style-, key-, href-, src-, type- and
+ * data-attributes as well as import statements and object keys.
  *
- * Aufruf:  node scripts/count-ui-literals.mjs [--list]
- * Exitcode: 0 (immer) — das Skript misst nur, es prueft nicht.
+ * Usage:  node scripts/count-ui-literals.mjs [--list]
+ * Exit code: 0 (always) — the script only measures, it does not check.
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -22,7 +22,7 @@ import path from 'node:path';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-/** Dateien im Zuständigkeitsbereich dieses Workers (Shell/Lobby/Browse/Settings/Admin/Legal/Guide/UI). */
+/** Files in the scope of this worker (shell/lobby/browse/settings/admin/legal/guide/UI). */
 export const SCOPE_FILES = [
   'src/app/page.tsx',
   'src/app/layout.tsx',
@@ -72,7 +72,7 @@ const DATA_KEYS = [
   'placeholder',
 ];
 
-/** Entfernt Kommentare und Strings, die keine UI-Texte sind (Import-/Pfad-Strings). */
+/** Removes comments and strings that are no UI texts (import/path strings). */
 function stripNoise(src) {
   return src
     .replace(/\/\*[\s\S]*?\*\//g, ' ')
@@ -82,18 +82,18 @@ function stripNoise(src) {
 function isNoiseLiteral(value) {
   const v = value.trim();
   if (!v) return true;
-  // Code-Fragmente (false positives des JSX-Textregex)
+  // Code fragments (false positives of the JSX text regex)
   if (/[;{}]/.test(v) || /=>/.test(v)) return true;
   if (/&&/.test(v) || /\?\s*[:(]/.test(v) || /===/.test(v)) return true;
   if (/\b(const|let|var|function|return|import|export|default)\b/.test(v))
     return true;
-  // reine Import-/Pfad-Strings
+  // pure import/path strings
   if (/^(@\/|\.\.?\/|src\/|https?:\/\/)/.test(v)) return true;
-  // reiner Hex-Farbwert, CSS-Variable, Zahl
+  // pure hex colour value, CSS variable, number
   if (/^#[0-9a-fA-F]{3,8}$/.test(v)) return true;
   if (/^var\(--/.test(v)) return true;
   if (/^-?\d+(\.\d+)?$/.test(v)) return true;
-  // reine Symbole/Emojis/Punktuation (z. B. "✕", "✓", "🕹️", "→") sind erlaubt
+  // pure symbols/emojis/punctuation (e.g. "✕", "✓", "🕹️", "→") are allowed
   if (!/\p{L}/u.test(v)) return true;
   return false;
 }
@@ -102,7 +102,7 @@ function extractLiterals(src) {
   const found = [];
   const clean = stripNoise(src);
 
-  // 1. JSX-Textknoten: >Text<
+  // 1. JSX text nodes: >Text<
   const jsxText = />\s*([^<>{}][^<>{}]*?)\s*</g;
   for (const m of clean.matchAll(jsxText)) {
     const value = m[1];
@@ -110,7 +110,7 @@ function extractLiterals(src) {
       found.push({ kind: 'jsx-text', value: value.trim() });
   }
 
-  // 2. texttragende Attribute
+  // 2. text-bearing attributes
   for (const attr of TEXT_ATTRIBUTES) {
     const re = new RegExp(`\\b${attr}\\s*=\\s*"([^"]*)"`, 'g');
     for (const m of clean.matchAll(re)) {
@@ -124,7 +124,7 @@ function extractLiterals(src) {
     }
   }
 
-  // 3. UI-Datenobjekte
+  // 3. UI data objects
   for (const key of DATA_KEYS) {
     const re = new RegExp(`\\b${key}\\s*:\\s*"([^"]*)"`, 'g');
     for (const m of clean.matchAll(re)) {
@@ -162,7 +162,7 @@ const perFile = [];
 for (const rel of SCOPE_FILES) {
   const abs = path.join(ROOT, rel);
   if (!existsSync(abs)) {
-    console.error(`FEHLT: ${rel}`);
+    console.error(`MISSING: ${rel}`);
     continue;
   }
   const literals = extractLiterals(readFileSync(abs, 'utf8'));
@@ -177,11 +177,11 @@ for (const rel of SCOPE_FILES) {
 }
 
 console.log('---');
-console.log(`Literaltexte gesamt: ${total}`);
-console.log(`Dateien geprueft: ${perFile.length}`);
+console.log(`Total literal texts: ${total}`);
+console.log(`Files checked: ${perFile.length}`);
 
 if (showList) {
-  console.log('\n=== Alle Fundstellen ===');
+  console.log('\n=== All findings ===');
   for (const f of perFile) {
     for (const l of f.literals) {
       console.log(`${f.rel}\t${l.kind}\t${JSON.stringify(l.value)}`);

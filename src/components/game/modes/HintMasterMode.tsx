@@ -1,11 +1,11 @@
 /**
- * Hint-Master-Modus (Refined Phase 5)
+ * Hint-Master mode (refined phase 5)
  *
- * Zeigt bis zu 5 Hinweise.
- * Ab Hinweis 2 läuft Musik automatisch (blurred).
- * Kein Tippen mehr nötig — der Spieler klickt auf "Lösung" und entscheidet selbst.
+ * Shows up to 5 hints.
+ * From hint 2 on, the music plays automatically (blurred).
+ * No typing needed any more — the player clicks "solution" and decides.
  *
- * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/modes.{de,en}.json`.
+ * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 'use client';
 
@@ -13,10 +13,11 @@ import { useState, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
-import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { PHOMU_CONFIG } from '@/config/game-config';
 import { MusicPlayer } from '../MusicPlayer';
+import { useSpicyMessage } from '../useSpicyMessage';
 import { censorHint } from '@/utils/censor-utils';
 
 interface HintMasterModeProps {
@@ -45,8 +46,9 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
   const maxHints = song.hints.length;
   const points = PHOMU_CONFIG.HINT_MASTER_POINTS[shownHints - 1] ?? 1;
   const startSecs = song.previewTimestamp?.start ?? 0;
+  const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
 
-  // Zahlenformat der aktiven Sprache
+  // Number format of the active locale
   const numberFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language),
     [i18n.language]
@@ -55,7 +57,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
   const handleNextHint = useCallback(() => {
     if (shownHints < maxHints) {
       setShownHints((n) => n + 1);
-      // Ab Hinweis 2 läuft Musik automatisch (blurred bis Reveal)
+      // From hint 2 on, the music plays automatically (blurred until the reveal)
       if (shownHints + 1 >= 2) setShowMusic(true);
     }
   }, [shownHints, maxHints]);
@@ -75,13 +77,13 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
     if (showMusic || cheatUsed || isRevealed || !currentPlayerId) return;
     setShowMusic(true);
     setCheatUsed(true);
-    // Sofortiger Abzug von 2 Punkten für den Musik-Cheat
+    // Immediate deduction of 2 points for the music cheat
     awardPoints(currentPlayerId, -2);
   };
 
   return (
     <div className="flex flex-col px-6 gap-6 pt-4 max-w-lg mx-auto min-h-[50vh]">
-      {/* Aufgaben-Anzeige */}
+      {/* Task display */}
       {!isRevealed && !done && (
         <div className="text-center py-3 px-4 rounded-2xl bg-[var(--color-accent)]/5 border border-[var(--color-accent)]/20">
           <p className="text-[9px] font-black uppercase tracking-[0.25em] opacity-40 mb-1">
@@ -93,7 +95,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
         </div>
       )}
 
-      {/* Header Info */}
+      {/* Header info */}
       <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/10">
         <div>
           <p className="text-[10px] font-black uppercase opacity-40">
@@ -128,7 +130,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
         </div>
       </div>
 
-      {/* Musik-Hinweis (Triggered @ 4 or 5 OR upon manual reveal) */}
+      {/* Music hint (triggered at 4 or 5 or upon manual reveal) */}
       <AnimatePresence>
         {(showMusic || isRevealed) && (
           <motion.div
@@ -186,7 +188,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
         )}
       </AnimatePresence>
 
-      {/* Hinweis-Liste */}
+      {/* Hint list */}
       <div className="space-y-3">
         <AnimatePresence initial={false}>
           {song.hints.slice(0, shownHints).map((hint, i) => (
@@ -205,7 +207,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
         </AnimatePresence>
       </div>
 
-      {/* Navigation & Actions */}
+      {/* Navigation & actions */}
       <div className="mt-auto space-y-4 pb-10">
         {!isRevealed && (
           <div className="grid grid-cols-1 gap-3">
@@ -222,7 +224,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               </button>
             )}
 
-            {/* Music Cheat Button (nur bei Level 1, bevor Musik automatisch startet) */}
+            {/* Music cheat button (only at level 1, before the music starts automatically) */}
             {!showMusic && shownHints === 1 && !config.noCheatMode && (
               <button
                 onClick={handleCheat}
@@ -326,7 +328,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
               className="text-lg font-black uppercase italic tracking-tighter"
               style={{ color: getSpicyColor(wasCorrect!, song.id) }}
             >
-              {getSpicyMessage(wasCorrect!, song.id)}
+              {spicyMessage}
             </p>
             <p className="text-xs font-bold opacity-60">
               {knewWhat === 'both'

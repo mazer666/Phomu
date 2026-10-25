@@ -36,15 +36,15 @@ async function readStable(filePath: string, attempts = 5): Promise<string> {
     }
   }
 
-  throw new Error(`${filePath} ist nicht lesbar: ${String(lastError)}`);
+  throw new Error(`${filePath} is not readable: ${String(lastError)}`);
 }
 
 /** Minimal valid song, used as base for the limit tests. */
 function makeSong(overrides: Record<string, unknown> = {}) {
   return {
     id: 'test-song',
-    title: 'Testtitel',
-    artist: 'Testartist',
+    title: 'Test Title',
+    artist: 'Test Artist',
     year: 1985,
     country: 'DE',
     genre: 'Pop',
@@ -52,15 +52,15 @@ function makeSong(overrides: Record<string, unknown> = {}) {
     mood: ['Pop'],
     packs: ['Global Hits 1950-2026'],
     hints: [
-      'Erster Hinweis ohne Spoiler-Token.',
-      'Zweiter Hinweis ohne Spoiler-Token.',
-      'Dritter Hinweis ohne Spoiler-Token.',
-      'Vierter Hinweis ohne Spoiler-Token.',
-      'Fünfter Hinweis ohne Spoiler-Token.',
+      'First hint without a spoiler token.',
+      'Second hint without a spoiler token.',
+      'Third hint without a spoiler token.',
+      'Fourth hint without a spoiler token.',
+      'Fifth hint without a spoiler token.',
     ],
     lyrics: {
-      real: ['Zeile eins', 'Zeile zwei', 'Zeile drei'],
-      fake: 'Erfundene Zeile',
+      real: ['Line one', 'Line two', 'Line three'],
+      fake: 'Invented line',
     },
     isOneHitWonder: false,
     links: { youtube: 'https://www.youtube.com/watch?v=aaaaaaaaaaa' },
@@ -71,11 +71,11 @@ function makeSong(overrides: Record<string, unknown> = {}) {
 }
 
 describe('collectSongLimitViolations', () => {
-  it('meldet fuer einen normalen Song keine Verletzung', () => {
+  it('reports no violation for a normal song', () => {
     expect(collectSongLimitViolations(makeSong())).toEqual([]);
   });
 
-  it('meldet ein zu langes Feld', () => {
+  it('reports a field that is too long', () => {
     const violations = collectSongLimitViolations(
       makeSong({ title: 'x'.repeat(SONG_FIELD_LIMITS.title + 1) })
     );
@@ -84,7 +84,7 @@ describe('collectSongLimitViolations', () => {
     expect(violations[0].field).toBe('title');
   });
 
-  it('meldet eine zu lange id', () => {
+  it('reports an id that is too long', () => {
     const violations = collectSongLimitViolations(
       makeSong({ id: 'x'.repeat(SONG_FIELD_LIMITS.id + 1) })
     );
@@ -92,7 +92,7 @@ describe('collectSongLimitViolations', () => {
     expect(violations.map((violation) => violation.field)).toContain('id');
   });
 
-  it('meldet zu viele Eintraege in einem Array', () => {
+  it('reports too many entries in an array', () => {
     const violations = collectSongLimitViolations(
       makeSong({
         mood: Array.from(
@@ -105,7 +105,7 @@ describe('collectSongLimitViolations', () => {
     expect(violations.map((violation) => violation.field)).toContain('mood');
   });
 
-  it('meldet einen zu langen Array-Eintrag', () => {
+  it('reports an array entry that is too long', () => {
     const violations = collectSongLimitViolations(
       makeSong({ mood: ['x'.repeat(SONG_FIELD_LIMITS.moodEntry + 1)] })
     );
@@ -113,13 +113,13 @@ describe('collectSongLimitViolations', () => {
     expect(violations.map((violation) => violation.field)).toContain('mood[0]');
   });
 
-  it('meldet einen zu langen Hinweis', () => {
+  it('reports a hint that is too long', () => {
     const hints = [
       'x'.repeat(SONG_FIELD_LIMITS.hint + 1),
-      'Zweiter Hinweis.',
-      'Dritter Hinweis.',
-      'Vierter Hinweis.',
-      'Fünfter Hinweis.',
+      'Second hint.',
+      'Third hint.',
+      'Fourth hint.',
+      'Fifth hint.',
     ];
     const violations = collectSongLimitViolations(makeSong({ hints }));
 
@@ -128,9 +128,9 @@ describe('collectSongLimitViolations', () => {
     );
   });
 
-  it('meldet einen unbekannten Spielmodus', () => {
+  it('reports an unknown game mode', () => {
     const violations = collectSongLimitViolations(
-      makeSong({ supportedModes: ['timeline', 'geld-automat'] })
+      makeSong({ supportedModes: ['timeline', 'money-machine'] })
     );
 
     expect(violations.map((violation) => violation.field)).toContain(
@@ -138,7 +138,7 @@ describe('collectSongLimitViolations', () => {
     );
   });
 
-  it('kennt jeden Modus, den der Katalog verwendet', () => {
+  it('knows every mode the catalog uses', () => {
     expect(KNOWN_SUPPORTED_MODES).toContain('timeline');
     expect(KNOWN_SUPPORTED_MODES).toContain('hint-master');
     expect(KNOWN_SUPPORTED_MODES).toContain('lyrics');
@@ -147,7 +147,7 @@ describe('collectSongLimitViolations', () => {
     expect(KNOWN_SUPPORTED_MODES).toContain('survivor');
   });
 
-  it('meldet einen zu langen Link', () => {
+  it('reports a link that is too long', () => {
     const violations = collectSongLimitViolations(
       makeSong({
         links: {
@@ -161,7 +161,7 @@ describe('collectSongLimitViolations', () => {
     );
   });
 
-  it('meldet eine zu lange Liedzeile', () => {
+  it('reports a lyric line that is too long', () => {
     const violations = collectSongLimitViolations(
       makeSong({
         lyrics: {
@@ -170,7 +170,7 @@ describe('collectSongLimitViolations', () => {
             'Zeile zwei',
             'Zeile drei',
           ],
-          fake: 'Erfundene Zeile',
+          fake: 'Invented line',
         },
       })
     );
@@ -181,8 +181,8 @@ describe('collectSongLimitViolations', () => {
   });
 });
 
-describe('validateSong mit harten Grenzwerten', () => {
-  it('meldet eine Verletzung als Fehler, nicht als Warnung', () => {
+describe('validateSong with hard limits', () => {
+  it('reports a violation as an error, not as a warning', () => {
     const result = validateSong(
       makeSong({ title: 'x'.repeat(SONG_FIELD_LIMITS.title + 1) })
     );
@@ -194,7 +194,7 @@ describe('validateSong mit harten Grenzwerten', () => {
     );
   });
 
-  it('akzeptiert einen Song, der genau an der Grenze liegt', () => {
+  it('accepts a song that is exactly at the limit', () => {
     const result = validateSong(
       makeSong({ title: 'x'.repeat(SONG_FIELD_LIMITS.title) })
     );
@@ -202,7 +202,7 @@ describe('validateSong mit harten Grenzwerten', () => {
     expect(result.errors.map((error) => error.field)).not.toContain('title');
   });
 
-  it('laesst den aktuellen Katalog gueltig', async () => {
+  it('keeps the current catalog valid', async () => {
     const packsDir = path.join(process.cwd(), 'src/data/songs');
     const files = readdirSync(packsDir).filter((file) =>
       file.endsWith('.json')

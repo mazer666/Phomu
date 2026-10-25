@@ -97,6 +97,89 @@
     "youtube": "YouTube",
     "musicwall": "Music Wall"
   },
+  "packs": {
+    "globalHits": {
+      "tagline": "Von Sinatra bis Sabrina. Alles drin."
+    },
+    "eightiesFlashback": {
+      "tagline": "Schulterpolster. Synthesizer. Schweißperlen."
+    },
+    "ninetiesRave": {
+      "tagline": "Kurt oder Kylie? Hier stimmt beides."
+    },
+    "guiltyPleasures": {
+      "tagline": "Die Songs, die du heimlich auswendig kannst."
+    },
+    "rockAnthems": {
+      "tagline": "Feuerzeuge hoch. Gehör optional."
+    },
+    "summerVibes": {
+      "tagline": "Sonnencreme, Ohrwürmer, kein Ausweg."
+    },
+    "globalBeats": {
+      "tagline": "Reggaeton, Afrobeats, K-Pop. Grenzenlos."
+    },
+    "movieMagic": {
+      "tagline": "Du kennst den Film. Die Musik verrät ihn."
+    },
+    "legendaryVoices": {
+      "tagline": "Sinatra. Mercury. Aretha. Die GOATs persönlich."
+    },
+    "modernCharts": {
+      "tagline": "Von TikTok direkt in die Gehörgänge."
+    },
+    "eurovisionIcons": {
+      "tagline": "Europe calling. Niemand gewinnt, alle tanzen."
+    },
+    "tikTokViral": {
+      "tagline": "Wenn der Beat startet und alle mitsingen."
+    },
+    "jazzBlues": {
+      "tagline": "Nachtclub-Feeling um 15 Uhr nachmittags."
+    },
+    "metalHardcore": {
+      "tagline": "Für starke Nerven und schwache Stimmbänder."
+    },
+    "countryFolk": {
+      "tagline": "Heimweh trifft Gitarre trifft Herz."
+    },
+    "pianoBallads": {
+      "tagline": "Wer nicht weint, kennt den Song nicht."
+    },
+    "electronicSynth": {
+      "tagline": "Drop incoming. Ohren auf, Kopf aus."
+    },
+    "soulFunk": {
+      "tagline": "Wer nicht tanzt, macht es definitiv falsch."
+    },
+    "classicalOrchestral": {
+      "tagline": "Kennt jeder. Weiß nur keiner woher."
+    },
+    "grandFinale": {
+      "tagline": "Das letzte Magazin. Alles rein. Kein Zurück."
+    },
+    "youtubeImport": {
+      "tagline": "Der Import-Fundus. Bunt, gemischt, überraschend."
+    },
+    "eightiesPop": {
+      "tagline": "Synth-Pop, New Wave und alles, was die Achtziger geprägt hat."
+    },
+    "kidsDisney": {
+      "tagline": "Filmmusik, die Kinder lieben - und Eltern heimlich auch."
+    },
+    "germanClassics": {
+      "tagline": "Deutscher Schlager und Evergreen der Extraklasse."
+    },
+    "twoThousandsPopRnB": {
+      "tagline": "Das Jahrzehnt von Outkast, Usher und Destiny’s Child."
+    },
+    "electronicTechno": {
+      "tagline": "Techno, House und alles, was den Bass liebt."
+    },
+    "countryJazzBlues": {
+      "tagline": "Roots, Blues und Country - ehrlich und tief."
+    }
+  },
   "modes": {
     "timeline": {
       "name": "Chronologische Timeline",

@@ -34,26 +34,26 @@ function imageResponse(
 }
 
 describe('parseHttpUrl', () => {
-  it('lehnt eine URL mit einem nicht erlaubten Host ab', () => {
+  it('rejects a URL with a host that is not allowlisted', () => {
     expect(() =>
       parseHttpUrl('https://evil.example/cover.jpg', ALLOWED)
     ).toThrow('Image host not allowed');
   });
 
-  it('lehnt eine URL mit einem Host ab, der nur als Endung passt', () => {
-    // "notmzstatic.com" endet nicht auf ".mzstatic.com"
+  it('rejects a URL whose host only matches as a suffix', () => {
+    // "notmzstatic.com" does not end on ".mzstatic.com"
     expect(() =>
       parseHttpUrl('https://notmzstatic.com/cover.jpg', ALLOWED)
     ).toThrow('Image host not allowed');
   });
 
-  it('lehnt Klartext-HTTP ab', () => {
+  it('rejects plaintext HTTP', () => {
     expect(() =>
       parseHttpUrl('http://is1-ssl.mzstatic.com/cover.jpg', ALLOWED)
     ).toThrow('Only HTTPS image URLs are allowed');
   });
 
-  it('lehnt ein anderes Schema ab (file:, data:, javascript:)', () => {
+  it('rejects a different scheme (file:, data:, javascript:)', () => {
     for (const url of [
       'file:///etc/passwd',
       'data:image/jpeg;base64,AAAA',
@@ -65,19 +65,19 @@ describe('parseHttpUrl', () => {
     }
   });
 
-  it('lehnt eingebettete Zugangsdaten ab', () => {
+  it('rejects embedded credentials', () => {
     expect(() =>
       parseHttpUrl('https://user:pass@is1-ssl.mzstatic.com/cover.jpg', ALLOWED)
     ).toThrow('Credentials in URL are not allowed');
   });
 
-  it('lehnt eine unparsbare URL ab', () => {
+  it('rejects an unparsable URL', () => {
     expect(() => parseHttpUrl('not-a-url', ALLOWED)).toThrow(
       'imageUrl is not a valid URL'
     );
   });
 
-  it('akzeptiert einen erlaubten Host und dessen Subdomains', () => {
+  it('accepts an allowlisted host and its subdomains', () => {
     expect(
       parseHttpUrl('https://is1-ssl.mzstatic.com/a.jpg', ALLOWED).hostname
     ).toBe('is1-ssl.mzstatic.com');
@@ -88,7 +88,7 @@ describe('parseHttpUrl', () => {
 });
 
 describe('assertAllowedHost', () => {
-  it('lehnt localhost und interne Adressen ab', () => {
+  it('rejects localhost and internal addresses', () => {
     for (const url of [
       'https://localhost/a.jpg',
       'https://127.0.0.1/a.jpg',
@@ -114,7 +114,7 @@ describe('fetchGuardedBinary', () => {
     vi.unstubAllGlobals();
   });
 
-  it('laedt ein Bild von einem erlaubten Host', async () => {
+  it('loads an image from an allowlisted host', async () => {
     fetchMock.mockResolvedValueOnce(imageResponse('binary-image-data'));
 
     const result = await fetchGuardedBinary({
@@ -126,7 +126,7 @@ describe('fetchGuardedBinary', () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it('bricht einen Redirect in das interne Netz ab (SSRF)', async () => {
+  it('aborts a redirect into the internal network (SSRF)', async () => {
     fetchMock.mockResolvedValueOnce(
       new Response(null, {
         status: 302,
@@ -144,11 +144,11 @@ describe('fetchGuardedBinary', () => {
       })
     ).rejects.toThrow('Redirect target host not allowed');
 
-    // Genau ein Request: der Redirect wurde nicht weiter verfolgt.
+    // Exactly one request: the redirect was not followed.
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it('bricht einen Redirect auf eine interne Metadaten-Adresse im Klartext ab', async () => {
+  it('aborts a redirect to a plaintext internal metadata address', async () => {
     fetchMock.mockResolvedValueOnce(
       new Response(null, {
         status: 302,
@@ -169,7 +169,7 @@ describe('fetchGuardedBinary', () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it('bricht einen Redirect auf einen nicht erlaubten Host ab', async () => {
+  it('aborts a redirect to a host that is not allowlisted', async () => {
     fetchMock.mockResolvedValueOnce(
       new Response(null, {
         status: 302,
@@ -185,7 +185,7 @@ describe('fetchGuardedBinary', () => {
     ).rejects.toThrow('Redirect target host not allowed');
   });
 
-  it('bricht einen Redirect auf Klartext-HTTP ab', async () => {
+  it('aborts a redirect to plaintext HTTP', async () => {
     fetchMock.mockResolvedValueOnce(
       new Response(null, {
         status: 301,
@@ -201,7 +201,7 @@ describe('fetchGuardedBinary', () => {
     ).rejects.toThrow('Only HTTPS redirects are allowed');
   });
 
-  it('folgt einem Redirect innerhalb der Allowlist', async () => {
+  it('follows a redirect within the allowlist', async () => {
     fetchMock.mockResolvedValueOnce(
       new Response(null, {
         status: 302,
@@ -219,7 +219,7 @@ describe('fetchGuardedBinary', () => {
     expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 
-  it('bricht eine Redirect-Schleife nach der Hop-Grenze ab', async () => {
+  it('aborts a redirect loop at the hop limit', async () => {
     fetchMock.mockResolvedValue(
       new Response(null, {
         status: 302,
@@ -237,7 +237,7 @@ describe('fetchGuardedBinary', () => {
     expect(fetchMock.mock.calls.length).toBeLessThanOrEqual(4);
   });
 
-  it('lehnt eine Antwort ab, die kein Bild ist', async () => {
+  it('rejects a response that is not an image', async () => {
     fetchMock.mockResolvedValueOnce(
       imageResponse('<html>login</html>', 'text/html')
     );
@@ -250,7 +250,7 @@ describe('fetchGuardedBinary', () => {
     ).rejects.toThrow('Remote file is not an image');
   });
 
-  it('lehnt eine zu grosse Datei ab, die ihre Groesse selbst nennt', async () => {
+  it('rejects an oversized file that declares its own size', async () => {
     fetchMock.mockResolvedValueOnce(
       imageResponse('x', 'image/jpeg', {
         'content-length': String(MAX_IMAGE_BYTES + 1),
@@ -265,7 +265,7 @@ describe('fetchGuardedBinary', () => {
     ).rejects.toThrow('Payload too large');
   });
 
-  it('lehnt eine zu grosse Datei ab, die keine content-length schickt', async () => {
+  it('rejects an oversized file that sends no content-length', async () => {
     const oversized = 'x'.repeat(MAX_IMAGE_BYTES + 1024);
     fetchMock.mockResolvedValueOnce(imageResponse(oversized));
 
@@ -277,7 +277,7 @@ describe('fetchGuardedBinary', () => {
     ).rejects.toThrow('Payload too large');
   });
 
-  it('bricht bei einem HTTP-Fehler mit 502 ab', async () => {
+  it('aborts with 502 on an HTTP error', async () => {
     fetchMock.mockResolvedValueOnce(new Response('nope', { status: 404 }));
 
     await expect(
@@ -288,7 +288,7 @@ describe('fetchGuardedBinary', () => {
     ).rejects.toThrow('Failed to fetch image: 404');
   });
 
-  it('traegt den Fehlerstatus in der AdminRequestError', async () => {
+  it('carries the error status in the AdminRequestError', async () => {
     fetchMock.mockResolvedValue(imageResponse('x', 'text/html'));
 
     try {
@@ -296,7 +296,7 @@ describe('fetchGuardedBinary', () => {
         url: new URL('https://is1-ssl.mzstatic.com/cover.jpg'),
         allowHosts: ALLOWED,
       });
-      expect.unreachable('Der Download muss fehlschlagen.');
+      expect.unreachable('The download must fail.');
     } catch (error) {
       expect(error).toBeInstanceOf(AdminRequestError);
       expect((error as AdminRequestError).status).toBe(400);

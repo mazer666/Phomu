@@ -1,8 +1,8 @@
 /**
  * Scoreboard
  *
- * Zeigt alle Spieler/Teams mit ihrem aktuellen Score, sortiert nach Punkten.
- * Wird als seitlicher Overlay oder Bottom-Sheet eingeblendet.
+ * Shows all players/teams with their current score, sorted by points.
+ * Rendered as a side overlay or bottom sheet.
  */
 'use client';
 
@@ -18,7 +18,7 @@ interface ScoreboardProps {
   teams?: Team[];
   teamMode?: TeamMode;
   winCondition: number;
-  /** Wenn true, wird das Scoreboard als Modal-Overlay gezeigt */
+  /** When true, the scoreboard is shown as a modal overlay */
   isOpen: boolean;
   onClose: () => void;
 }
@@ -36,13 +36,13 @@ export function Scoreboard({
   const { t, i18n } = useTranslation();
   const isTeamMode = teamMode !== 'individual' && teams.length > 0;
 
-  // Zahlenformatierung immer mit der aktiven Sprache (Intl, kein toLocaleString ohne Locale)
+  // Number formatting always with the active locale (Intl, no toLocaleString without a locale)
   const numberFormatter = useMemo(
     () => new Intl.NumberFormat(i18n.language),
     [i18n.language]
   );
 
-  // Spieler oder Teams nach Score sortieren (höchster zuerst)
+  // Sort players or teams by score (highest first)
   const sorted = [...players].sort((a, b) => b.score - a.score);
   const sortedTeams = [...teams].sort((a, b) => b.score - a.score);
 
@@ -50,7 +50,7 @@ export function Scoreboard({
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Hintergrund-Overlay zum Schließen */}
+          {/** Background overlay for closing */}
           <motion.div
             key="overlay"
             initial={{ opacity: 0 }}

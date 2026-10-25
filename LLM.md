@@ -1,76 +1,74 @@
-# LLM.md — Phomu in Kurzform
+# LLM.md — Phomu in brief
 
-Diese Datei ist die **Einstiegskarte** für einen KI-Assistenten. Sie enthält
-keine Spezifikation, sondern sagt, wo die Spezifikation steht und welche Regeln
-unverhandelbar sind.
+This file is the **entry map** for an AI assistant. It contains no specification,
+but says where the specification stands and which rules are non-negotiable.
 
-Die verbindliche Wahrheit liegt in drei Dateien:
+The binding truth lies in three files:
 
-| Frage | Datei |
+| Question | File |
 |---|---|
-| Was muss das Produkt tun? | [`REQUIREMENTS.md`](REQUIREMENTS.md) |
-| Wie ist es gebaut? | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
-| Wann gilt etwas als fertig? | [`QUALITY.md`](QUALITY.md) |
+| What must the product do? | [`REQUIREMENTS.md`](REQUIREMENTS.md) |
+| How is it built? | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
+| When is something considered done? | [`QUALITY.md`](QUALITY.md) |
 
-Die Arbeitsregeln für Agenten stehen in [`AGENTS.md`](AGENTS.md). **Lies sie,
-bevor du Code änderst.**
+The working rules for agents are in [`AGENTS.md`](AGENTS.md). **Read them before
+you change code.**
 
 ---
 
-## Was Phomu ist
+## What Phomu is
 
-Hybrides Musik-Partyspiel. Physische QR-Karten (59 × 91 mm + 3 mm Beschnitt)
-plus Web-App. Eine Runde auf einem Gerät, das eine Person führt (der „Pilot").
-1–24 Spieler, Einzelspieler oder feste oder wechselnde Teams. Sechs Spielmodi:
-Timeline, Hint-Master, Lyrics Labyrinth, Vibe-Check, Survivor, Cover Confusion.
+Hybrid music party game. Physical QR cards (59 × 91 mm + 3 mm bleed) plus web
+app. One round on one device, led by one person (the "pilot"). 1–24 players,
+solo play or fixed or shifting teams. Six game modes: Timeline, Hint-Master,
+Lyrics Labyrinth, Vibe-Check, Survivor, Cover Confusion.
 
 **Next.js 16 (App Router) · React 19 · TypeScript strict · Tailwind CSS 4 ·
 Zustand (persist in localStorage) · i18next · Vitest + Playwright · GPL-3.0.**
 
 ---
 
-## Die sechs Regeln, die am häufigsten greifen
+## The six rules that come up most often
 
-1. **Konstanten kommen aus `src/config/`.** Punkte, Zeitlimits, Kapazitäten,
-   Grenzwerte. Nie im Code duplizieren. `src/config/game-config.ts` ist die
-   Wahrheit.
-2. **Der Anti-Spoiler-Schutz ist heilig.** Vor dem Sperren der Antworten darf
-   kein Titel, kein Interpret und kein Albumcover im DOM oder im Zustand liegen.
-   Das gilt auch für die Metadaten der Aufgabe, nicht nur für den sichtbaren Text.
-3. **Jeder sichtbare Text kommt aus der Übersetzung.** `de.json` und `en.json`
-   werden immer zusammen gepflegt. Keine hartkodierten UI-Zeichenketten.
-   Eigennamen (Spotify, YouTube, Jackbox) sind die Ausnahme.
-4. **Keine Abnahme auf Basis von Stubs.** Eine Funktion, die nur so tut, als
-   existierte sie, ist nicht implementiert. Kein `skip`, kein `@Ignore`, kein
-   auskommentierter Test, um ein Gate grün zu machen.
-5. **Keine erfundenen Zahlen.** Jede Zahl braucht das Kommando, das sie erzeugt
-   hat. Was nicht gemessen wurde, ist „nicht gemessen".
-6. **Die Doku entsteht im selben Commit.** Siehe
+1. **Constants come from `src/config/`.** Points, time limits, capacities,
+   limits. Never duplicate them in the code. `src/config/game-config.ts` is the
+   truth.
+2. **The anti-spoiler protection is sacred.** Before the answers are locked, no
+   title, no artist and no album cover may be in the DOM or in the state. That
+   applies to the task metadata as well, not only to the visible text.
+3. **Every visible text comes from the translation.** `de.json` and `en.json`
+   are always maintained together. No hardcoded UI strings. Proper nouns
+   (Spotify, YouTube, Jackbox) are the exception.
+4. **No acceptance on the basis of stubs.** A function that only pretends to
+   exist is not implemented. No `skip`, no `@Ignore`, no commented-out test to
+   make a gate green.
+5. **No invented numbers.** Every number needs the command that produced it.
+   What was not measured is "not measured".
+6. **The documentation is created in the same commit.** See
    [`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md).
 
 ---
 
-## Der Stil des Projekts
+## The style of the project
 
-Der Code ist **englisch**, die Doku ist **deutsch**. Bezeichner sind
-beschreibend, Abkürzungen sind unzulässig, sofern sie nicht etablierte
-Fachbegriffe sind:
+The code is **English**, the documentation is **English**. Identifiers are
+descriptive, abbreviations are not allowed unless they are established technical
+terms:
 
 ```text
-schlecht:  x, tmp, data2, mgr, handleStuff()
-gut:       roundPhase, answersLocked, hintLevel, applyScoreDecay()
+bad:       x, tmp, data2, mgr, handleStuff()
+good:      roundPhase, answersLocked, hintLevel, applyScoreDecay()
 ```
 
-Kommentare erklären das **Warum**, nicht das Was. Der Code ist für jemanden
-geschrieben, der das Projekt nicht kennt — eine erklärende Zeile ist besser als
-eine kryptische.
+Comments explain the **why**, not the what. The code is written for someone who
+does not know the project — one explanatory line is better than a cryptic one.
 
-Regeln für den Umfang: Ziel `≤ 400` Zeilen pro handgeschriebener Datei, harte
-Grenze `550`. Jede Datei hat genau eine Verantwortung.
+Rules for size: target `≤ 400` lines per hand-written file, hard limit `550`.
+Each file has exactly one responsibility.
 
 ---
 
-## Vor dem ersten Commit
+## Before the first commit
 
 ```bash
 npm ci
@@ -82,41 +80,41 @@ npm run check:doc-links
 npm run build
 ```
 
-Die Reihenfolge ist die Reihenfolge der CI. Wer nur einen Teil laufen lässt,
-kann nicht behaupten, das Projekt sei grün.
+The order is the order of the CI. Whoever only runs part of it cannot claim the
+project is green.
 
 ---
 
-## Was du **nicht** tust
+## What you **do not** do
 
-- Du änderst das Produktverhalten nicht ohne freigegebene Anforderung
-  (siehe `docs/cr/`).
-- Du pushst nicht, du taggst nicht, du veröffentlichst nicht. Das entscheidet
-  der Owner.
-- Du erfindest keine Zahlen, keine Testresultate, keinen Abnahmestatus.
-- Du löschst keine Dokumentation, um sie aufzuräumen. Alte Stände wandern nach
+- You do not change the product behaviour without an approved requirement
+  (see `docs/cr/`).
+- You do not push, you do not tag, you do not publish. That is the owner's
+  decision.
+- You invent no numbers, no test results, no acceptance status.
+- You do not delete documentation to tidy up. Old states move to
   `specifications/archive/`.
 
 ---
 
-## Der Index
+## The index
 
-| Thema | Datei |
+| Topic | File |
 |---|---|
-| Anforderungen | [`REQUIREMENTS.md`](REQUIREMENTS.md) |
-| Architektur | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
-| Meilensteine | [`ROADMAP.md`](ROADMAP.md) |
-| Qualität | [`QUALITY.md`](QUALITY.md) |
-| Wo ändere ich was | [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) |
-| Fachbegriffe | [`GLOSSARY.md`](GLOSSARY.md) |
-| Agentenrollen | [`AGENTS.md`](AGENTS.md) |
-| Projektzustand | [`project/project.yaml`](project/project.yaml) |
-| Doku-Index | [`docs/README.md`](docs/README.md) |
-| Anleitung für Spieler | [`docs/user-guide/USER-GUIDE.de.md`](docs/user-guide/USER-GUIDE.de.md) |
-| Sicherheit | [`SECURITY.md`](SECURITY.md) |
-| Datenschutz | [`PRIVACY.md`](PRIVACY.md) |
+| Requirements | [`REQUIREMENTS.md`](REQUIREMENTS.md) |
+| Architecture | [`ARCHITECTURE.md`](ARCHITECTURE.md) |
+| Milestones | [`ROADMAP.md`](ROADMAP.md) |
+| Quality | [`QUALITY.md`](QUALITY.md) |
+| Where to change what | [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) |
+| Technical terms | [`GLOSSARY.md`](GLOSSARY.md) |
+| Agent roles | [`AGENTS.md`](AGENTS.md) |
+| Project state | [`project/project.yaml`](project/project.yaml) |
+| Documentation index | [`docs/README.md`](docs/README.md) |
+| Guide for players | [`docs/user-guide/USER-GUIDE.en.md`](docs/user-guide/USER-GUIDE.en.md) |
+| Security | [`SECURITY.md`](SECURITY.md) |
+| Privacy | [`PRIVACY.md`](PRIVACY.md) |
 
-Der ausführliche KI-Kontext der früheren Fassung („LLM.md — The Master
-Specification") liegt weiterhin als Archivstand unter
+The detailed AI context of the earlier version ("LLM.md — The Master
+Specification") is still preserved as an archive state under
 [`specifications/archive/LLM_archivstand_2026-10-25.md`](specifications/archive/LLM_archivstand_2026-10-25.md).
-Er ist **historisch** — dort stehen Angaben, die nicht mehr stimmen.
+It is **historical** — it contains statements that are no longer true.

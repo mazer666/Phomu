@@ -1,15 +1,15 @@
 'use client';
 
 /**
- * Setzt das `lang`-Attribut des HTML-Dokuments auf die aktive Sprache.
+ * Sets the `lang` attribute of the HTML document to the active language.
  *
- * Warum das nötig ist: `src/app/layout.tsx` rendert serverseitig, und der
- * Server kennt die im Browser gewählte Sprache nicht. Ohne dieses Attribut
- * bleibt `document.documentElement.lang` auf dem Serverwert stehen — dann
- * lesen Screenreader die deutsche Oberfläche mit englischer Aussprache vor,
- * und die automatische Spracherkennung des Browsers greift nicht.
+ * Why this is necessary: `src/app/layout.tsx` renders on the server, and the
+ * server does not know the language chosen in the browser. Without this
+ * attribute `document.documentElement.lang` keeps the server value — then
+ * screen readers read the German interface with an English pronunciation, and
+ * the automatic language detection of the browser does not kick in.
  *
- * Beispiel:
+ * Example:
  *   <LanguageHtmlAttribute />
  */
 import { useEffect } from 'react';

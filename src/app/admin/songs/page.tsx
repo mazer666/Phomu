@@ -1,15 +1,15 @@
 'use client';
 
 /**
- * Admin-Tool: Song-Verwaltung
+ * Admin tool: song management
  * Route: /admin/songs
  *
- * Hier kannst du:
- *  - Songs aus dem global-hits.json anzeigen
- *  - Lyrics und YouTube-Links manuell eintippen / bearbeiten
- *  - Daten in localStorage speichern
- *  - Als JSON exportieren
- *  - Nach Pack und Vollständigkeit filtern
+ * Here you can:
+ *  - show songs from the global-hits.json
+ *  - type/edit lyrics and YouTube links manually
+ *  - save the data in localStorage
+ *  - export as JSON
+ *  - filter by pack and completeness
  */
 
 import { useState, useCallback } from 'react';
@@ -18,22 +18,22 @@ import type { PhomuSong } from '@/types/song';
 import { ALL_SONGS } from '@/data/songs';
 import { SongEditor } from '@/components/admin/SongEditor';
 
-// ─── Typen ────────────────────────────────────────────────────────────────────
+// ─── Types ────────────────────────────────────────────────────────────────────
 
 /**
- * Im Admin-Tool verwenden wir PhomuSong, aber lyrics darf null sein.
- * Diese Version wird lokal gespeichert und exportiert.
+ * In the admin tool we use PhomuSong, but lyrics may be null.
+ * This version is stored locally and exported.
  */
 type AdminSong = PhomuSong;
 
 type FilterCompleteness = 'all' | 'complete' | 'incomplete';
 type FilterPack = 'all' | string;
 
-// ─── Konstanten ───────────────────────────────────────────────────────────────
+// ─── Constants ───────────────────────────────────────────────────────────────
 
 const STORAGE_KEY = 'phomu-admin-songs';
 
-/** Leeres Song-Template für ein neues Formular */
+/** Empty song template for a new form */
 const EMPTY_SONG: AdminSong = {
   id: '',
   title: '',
@@ -66,9 +66,9 @@ const EMPTY_SONG: AdminSong = {
   isQRCompatible: true,
 };
 
-// ─── Hilfsfunktionen ─────────────────────────────────────────────────────────
+// ─── Helper functions ─────────────────────────────────────────────────────────
 
-/** Prüft ob ein Song vollständig ist (keine null-Felder, alle Pflichtfelder) */
+/** Checks whether a song is complete (no null fields, all required fields present) */
 function isSongComplete(song: AdminSong): boolean {
   if (!song.id || !song.title || !song.artist) return false;
   if (!song.links.youtube || song.links.youtube.startsWith('TODO:'))
@@ -119,7 +119,7 @@ function hasVerifiableHints(song: AdminSong): boolean {
   );
 }
 
-/** Lädt Songs aus localStorage (falls vorhanden), sonst aus dem JSON */
+/** Loads songs from localStorage (if present), otherwise from the JSON */
 function loadSongsFromStorage(): AdminSong[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -127,13 +127,13 @@ function loadSongsFromStorage(): AdminSong[] {
       return JSON.parse(raw) as AdminSong[];
     }
   } catch {
-    // localStorage nicht verfügbar oder beschädigt → Fallback auf JSON
+    // localStorage unavailable or corrupted → fall back to the JSON
   }
-  // Typkonvertierung: JSON hat lyrics: null, was unser Typ erlaubt
+  // Type conversion: the JSON has lyrics: null, which our type allows
   return (ALL_SONGS as unknown as AdminSong[]) || [];
 }
 
-/** Speichert Songs in localStorage */
+/** Saves songs in localStorage */
 function saveSongsToStorage(songs: AdminSong[]): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(songs));
@@ -142,9 +142,9 @@ function saveSongsToStorage(songs: AdminSong[]): void {
   }
 }
 
-// ─── Unterkomponenten ─────────────────────────────────────────────────────────
+// ─── Sub-components ─────────────────────────────────────────────────────────
 
-/** Badge: zeigt ob ein Song vollständig oder unvollständig ist */
+/** Badge: shows whether a song is complete or incomplete */
 function CompletenessBadge({ complete }: { complete: boolean }) {
   const { t } = useTranslation();
 
@@ -163,7 +163,7 @@ function CompletenessBadge({ complete }: { complete: boolean }) {
   );
 }
 
-/** Einzelne Zeile in der Song-Übersicht */
+/** A single row in the song overview */
 function SongRow({
   song,
   isSelected,
@@ -215,7 +215,7 @@ function SongRow({
     </tr>
   );
 }
-// ─── Haupt-Seite ───────────────────────────────────────────────────────────────
+// ─── Main page ───────────────────────────────────────────────────────────────
 
 export default function AdminSongsPage() {
   const { t, i18n } = useTranslation();
@@ -227,10 +227,10 @@ export default function AdminSongsPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [savedMessage, setSavedMessage] = useState('');
 
-  // Alle verfügbaren Packs aus den Songs ermitteln
+  // Determine all available packs from the songs
   const availablePacks = Array.from(new Set(songs.flatMap((s) => s.packs)));
 
-  // Gefilterte Song-Liste
+  // Filtered song list
   const filteredSongs = songs.filter((song) => {
     if (filterPack !== 'all' && !song.packs.includes(filterPack)) return false;
     if (filterCompleteness === 'complete' && !isSongComplete(song))
@@ -248,7 +248,7 @@ export default function AdminSongsPage() {
     return true;
   });
 
-  // Song speichern (Update in der Liste)
+  // Save song (update in the list)
   const handleSave = useCallback(
     (updated: AdminSong) => {
       setSongs((prev) => {
@@ -257,7 +257,7 @@ export default function AdminSongsPage() {
           ? prev.filter((s) => s.id !== updated.id)
           : prev;
 
-        // Duplicate Policy A: global strikt
+        // Duplicate policy A: globally strict
         const newKey = duplicateKey(updated);
         const duplicate = baseline.find(
           (s) => duplicateKey(s) === newKey || s.id === updated.id
@@ -273,7 +273,7 @@ export default function AdminSongsPage() {
           return prev;
         }
 
-        // Hint Quality Gates
+        // Hint quality gates
         if (hasHintSpoiler(updated)) {
           alert(t('admin.songs.spoilerBlocked'));
           return prev;
@@ -293,7 +293,7 @@ export default function AdminSongsPage() {
     [t]
   );
 
-  // JSON-Export: alle Songs als Download anbieten
+  // JSON export: offer all songs as a download
   function handleExport() {
     const exportData = {
       meta: {
@@ -314,7 +314,7 @@ export default function AdminSongsPage() {
     URL.revokeObjectURL(url);
   }
 
-  // localStorage zurücksetzen (auf JSON-Ursprungsdaten)
+  // Reset localStorage (to the JSON source data)
   function handleReset() {
     if (!confirm(t('admin.songs.resetConfirm'))) return;
     localStorage.removeItem(STORAGE_KEY);
@@ -329,7 +329,7 @@ export default function AdminSongsPage() {
     (s) => s.links.youtube && !s.links.youtube.startsWith('TODO:')
   ).length;
 
-  // Zahlen werden lokalisiert formatiert (Intl, aktive Sprache)
+  // Numbers are formatted for the active locale (Intl, active language)
   const numberFormat = new Intl.NumberFormat(i18n.language);
 
   return (
@@ -368,7 +368,7 @@ export default function AdminSongsPage() {
       </header>
 
       <div className="max-w-7xl mx-auto px-6 py-6">
-        {/* Statistik-Karten */}
+        {/* Statistic cards */}
         <div className="grid grid-cols-4 gap-4 mb-6">
           {[
             {
@@ -405,9 +405,9 @@ export default function AdminSongsPage() {
         </div>
 
         <div className="flex gap-6">
-          {/* Linke Spalte: Liste + Filter */}
+          {/* Left column: list + filters */}
           <div className="flex-1 min-w-0">
-            {/* Filter-Leiste */}
+            {/* Filter bar */}
             <div className="flex gap-3 mb-4">
               <input
                 type="search"

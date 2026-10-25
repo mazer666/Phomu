@@ -24,7 +24,7 @@ function adminRequest(url: string, init: RequestInit = {}): Request {
   });
 }
 
-describe('Admin-API: Cover-Suche', () => {
+describe('Admin API: cover search', () => {
   const originalToken = process.env.ADMIN_API_TOKEN;
   const fetchMock = vi.fn();
 
@@ -42,7 +42,7 @@ describe('Admin-API: Cover-Suche', () => {
     resetRateLimits();
   });
 
-  it('antwortet ohne Token mit 401', async () => {
+  it('responds without a token with 401', async () => {
     const response = await searchCovers(
       new Request('https://phomu.example/admin/covers/search?artist=a&title=b')
     );
@@ -50,12 +50,12 @@ describe('Admin-API: Cover-Suche', () => {
     expect(response.status).toBe(401);
   });
 
-  it('antwortet mit einem falschen Token mit 401', async () => {
+  it('responds with a wrong token with 401', async () => {
     const response = await searchCovers(
       new Request(
         'https://phomu.example/admin/covers/search?artist=a&title=b',
         {
-          headers: { 'x-admin-token': 'falsch' },
+          headers: { 'x-admin-token': 'wrong' },
         }
       )
     );
@@ -63,7 +63,7 @@ describe('Admin-API: Cover-Suche', () => {
     expect(response.status).toBe(401);
   });
 
-  it('lehnt ein fehlendes Suchfeld mit 400 ab', async () => {
+  it('rejects a missing search field with 400', async () => {
     const response = await searchCovers(
       adminRequest('https://phomu.example/admin/covers/search?artist=&title=b')
     );
@@ -74,7 +74,7 @@ describe('Admin-API: Cover-Suche', () => {
     });
   });
 
-  it('lehnt ein ueberlanges Suchfeld mit 400 ab', async () => {
+  it('rejects an overlong search field with 400', async () => {
     const response = await searchCovers(
       adminRequest(
         `https://phomu.example/admin/covers/search?artist=${'a'.repeat(121)}&title=b`
@@ -87,7 +87,7 @@ describe('Admin-API: Cover-Suche', () => {
     });
   });
 
-  it('nutzt die Ergebnisse der Drittanbieter nur als Text', async () => {
+  it('uses the third-party results as text only', async () => {
     fetchMock.mockImplementation((url: string) => {
       if (String(url).includes('itunes.apple.com')) {
         return Promise.resolve(
@@ -126,9 +126,9 @@ describe('Admin-API: Cover-Suche', () => {
     expect(body.results).toHaveLength(1);
   });
 
-  it('antwortet bei zu vielen Suchanfragen mit 429', async () => {
-    // Jeder Aufruf braucht eine eigene Response - ein Response-Body kann
-    // nur einmal gelesen werden.
+  it('responds with 429 when there are too many search requests', async () => {
+    // Every call needs its own response - a response body can
+    // only be read once.
     fetchMock.mockImplementation(() =>
       Promise.resolve(
         new Response(JSON.stringify({ results: [], data: [] }), {
@@ -151,7 +151,7 @@ describe('Admin-API: Cover-Suche', () => {
   });
 });
 
-describe('Admin-API: Cover speichern', () => {
+describe('Admin API: cover save', () => {
   const originalToken = process.env.ADMIN_API_TOKEN;
   const fetchMock = vi.fn();
 
@@ -169,7 +169,7 @@ describe('Admin-API: Cover speichern', () => {
     resetRateLimits();
   });
 
-  it('antwortet ohne Token mit 401', async () => {
+  it('responds without a token with 401', async () => {
     const response = await saveCover(
       new Request('https://phomu.example/admin/covers/save', {
         method: 'POST',
@@ -183,7 +183,7 @@ describe('Admin-API: Cover speichern', () => {
     expect(response.status).toBe(401);
   });
 
-  it('lehnt eine manipulierte Cover-URL ab, ohne sie abzurufen', async () => {
+  it('rejects a manipulated cover URL without fetching it', async () => {
     const response = await saveCover(
       adminRequest('https://phomu.example/admin/covers/save', {
         method: 'POST',
@@ -201,7 +201,7 @@ describe('Admin-API: Cover speichern', () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
-  it('lehnt eine interne URL ab, ohne sie abzurufen', async () => {
+  it('rejects an internal URL without fetching it', async () => {
     const response = await saveCover(
       adminRequest('https://phomu.example/admin/covers/save', {
         method: 'POST',
@@ -216,7 +216,7 @@ describe('Admin-API: Cover speichern', () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
-  it('lehnt eine Klartext-URL ab', async () => {
+  it('rejects a plaintext URL', async () => {
     const response = await saveCover(
       adminRequest('https://phomu.example/admin/covers/save', {
         method: 'POST',
@@ -234,7 +234,7 @@ describe('Admin-API: Cover speichern', () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
-  it('lehnt eine songId mit Pfadanteilen ab', async () => {
+  it('rejects a songId with path segments', async () => {
     const response = await saveCover(
       adminRequest('https://phomu.example/admin/covers/save', {
         method: 'POST',
@@ -252,7 +252,7 @@ describe('Admin-API: Cover speichern', () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
-  it('bricht einen Redirect vom Cover-Host in das interne Netz ab', async () => {
+  it('aborts a redirect from the cover host into the internal network', async () => {
     fetchMock.mockResolvedValueOnce(
       new Response(null, {
         status: 302,
@@ -277,7 +277,7 @@ describe('Admin-API: Cover speichern', () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it('antwortet bei zu vielen Speicheranfragen mit 429', async () => {
+  it('responds with 429 when there are too many save requests', async () => {
     fetchMock.mockImplementation(() =>
       Promise.resolve(
         new Response('not-an-image', {

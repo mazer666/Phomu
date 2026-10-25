@@ -1,75 +1,74 @@
-# ADR-0004 — Internationalisierungsgrenze
+# ADR-0004 — The Internationalisation Boundary
 
 **Status:** Accepted
-**Datum:** 2026-10-25
-**Owner-Rolle:** Chief Architect
-**Bezugene Anforderungs-IDs:** I18N-001 (Sprachunterstützung), I18N-002 (Vollständigkeit), UI-003 (Oberfläche)
+**Date:** 2026-10-25
+**Owner role:** Chief Architect
+**Related requirement IDs:** I18N-001 (language support), I18N-002 (completeness), UI-003 (interface)
 
 ---
 
-## Kontext
+## Context
 
-Phomu ist deutsch-primär und soll englisch **vollständig** unterstützen. Die
-i18n-Infrastruktur ist vorhanden und korrekt verdrahtet:
+Phomu is German-first and shall support English **completely**. The i18n
+infrastructure exists and is wired correctly:
 
 ```text
 src/i18n/config.ts          Bootstrap (i18next + LanguageDetector + initReactI18next)
-src/i18n/locales/de.json    25 Schlüssel
-src/i18n/locales/en.json    25 Schlüssel, schlüsselparallel
-src/components/Providers.tsx:20   import('@/i18n/config')  ← einziger Bootstrap
+src/i18n/locales/de.json    25 keys
+src/i18n/locales/en.json    25 keys, key-parallel
+src/components/Providers.tsx:20   import('@/i18n/config')  ← only bootstrap
 ```
 
-Der `LanguageDetector` sucht in `localStorage` und `navigator`, cached in
-`localStorage` (`src/i18n/config.ts:26-29`), `fallbackLng` ist `'de'`.
-`src/app/layout.tsx:32` setzt `<html lang="de">` **statisch** — bei englischer
-Sprache bleibt das Attribut auf Deutsch stehen.
+The `LanguageDetector` searches in `localStorage` and `navigator`, caches in
+`localStorage` (`src/i18n/config.ts:26-29`), `fallbackLng` is `'de'`.
+`src/app/layout.tsx:32` sets `<html lang="de">` **statically** — with the
+English language active the attribute stays German.
 
-### Der gemessene Ist-Stand
+### The measured current state
 
-| Kennzahl | Wert | Kommando |
+| Metric | Value | Command |
 |---|---|---|
-| Schlüssel in `de.json` / `en.json` | 25 / 25, **parallel**, 0 Unterschiede | JSON-Flat-Count beider Dateien |
-| Namespaces in den Locales | `app`, `landing`, `settings`, `themes`, `modes`, `common` | `de.json` |
-| Dateien mit `useTranslation` | **4** | `grep -rl "useTranslation" src` → `app/page.tsx`, `components/ui/NavBar.tsx`, `components/ui/LanguageSwitcher.tsx`, `components/ui/ThemeSwitcher.tsx` |
-| Dateien mit deutschen UI-Literalen | **56 von 73** (ohne Testdateien) | Vokabular-Scan über 60 deutsche UI-Begriffe → 746 Treffer |
-| translated ≠ vorhanden | `modes.*` (5 Werte), `common.*` (7 Werte), `themes.*` (4) | `de.json` |
+| Keys in `de.json` / `en.json` | 25 / 25, **parallel**, 0 differences | JSON flat count of both files |
+| Namespaces in the locales | `app`, `landing`, `settings`, `themes`, `modes`, `common` | `de.json` |
+| Files with `useTranslation` | **4** | `grep -rl "useTranslation" src` → `app/page.tsx`, `components/ui/NavBar.tsx`, `components/ui/LanguageSwitcher.tsx`, `components/ui/ThemeSwitcher.tsx` |
+| Files with German UI literals | **56 of 73** (without test files) | Vocabulary scan over 60 German UI terms → 746 hits |
+| translated ≠ present | `modes.*` (5 values), `common.*` (7 values), `themes.*` (4) | `de.json` |
 
-Der Spielbereich ist vollständig hartkodiertes Deutsch: `src/app/lobby/page.tsx`
-(45 Treffer), `src/components/game/RevealPhase.tsx` (44),
+The game area is completely hardcoded German: `src/app/lobby/page.tsx`
+(45 hits), `src/components/game/RevealPhase.tsx` (44),
 `src/app/admin/review/page.tsx` (36), `src/components/game/modes/HintMasterMode.tsx`
 (27), `src/app/game/page.tsx` (26), `src/components/game/DrawingPhase.tsx` (20),
-`src/app/projector/page.tsx` (20). Hinzu kommen die **Sprachlisten** in
-`src/utils/feedback-messages.ts` (76 Treffer, 100 korrekte und 100 falsche
-Sprüche) und `src/utils/last-round-messages.ts` (12 Meldungen).
+`src/app/projector/page.tsx` (20). In addition come the **language lists** in
+`src/utils/feedback-messages.ts` (76 hits, 100 correct and 100 wrong sentences)
+and `src/utils/last-round-messages.ts` (12 messages).
 
-### Warum die Frage gestellt werden muss
+### Why the question has to be asked
 
-Es gibt drei mögliche Grenzziehungen:
+There are three possible boundary drawings:
 
-1. **Die Komponente übersetzt selbst** (`t('…')` direkt im JSX).
-2. **Eine Hilfsschicht übersetzt** (z. B. `src/utils/text.ts` mit
+1. **The component translates itself** (`t('…')` directly in the JSX).
+2. **A helper layer translates** (e.g. `src/utils/text.ts` with
    `getLabel('lobby.start')`).
-3. **Die Ressourcen-Datei übersetzt** (`src/i18n/locales/*.json`).
+3. **The resource file translates** (`src/i18n/locales/*.json`).
 
-Variante 2 ist verlockend, weil sie den Schlüsselraum typisiert. Sie erzeugt
-aber einen zweiten Ort, an dem Schlüssel und Werte entstehen — und zwar einen,
-der nicht mehr von i18next verwaltet wird (keine Pluralformen, keine
-Fallback-Logik, keine Vollständigkeitsprüfung).
+Variant 2 is tempting because it types the key space. But it creates a second
+place where keys and values are produced — and one that is no longer managed by
+i18next (no plural forms, no fallback logic, no completeness check).
 
 ---
 
-## Entscheidung
+## Decision
 
-### 1. Die Übersetzung liegt in `src/i18n/locales/*.json`
+### 1. The translation lives in `src/i18n/locales/*.json`
 
-Einzige Quelle für sichtbaren Text. Kein sichtbarer Literaltext bleibt im JSX
-stehen. Der Bootstrap bleibt in `src/i18n/config.ts`; die einzige Initialisierung
-erfolgt in `src/components/Providers.tsx:20`.
+Single source for visible text. No visible literal text remains in the JSX. The
+bootstrap stays in `src/i18n/config.ts`; the only initialisation happens in
+`src/components/Providers.tsx:20`.
 
-### 2. Übersetzt wird **an der Oberflächen-Grenze**
+### 2. The translation happens **at the interface boundary**
 
-Die Übersetzung passiert **in den Client-Komponenten**, unmittelbar dort, wo
-der Text gerendert wird — mit `useTranslation()` aus `react-i18next`:
+The translation happens **in the client components**, right where the text is
+rendered — with `useTranslation()` from `react-i18next`:
 
 ```tsx
 'use client';
@@ -81,156 +80,154 @@ export function MyComponent() {
 }
 ```
 
-**Warum nicht in den Komponenten übersetzt wird — die Begründung:**
+**Why not translated in the components — the rationale:**
 
-Eine Komponente, die selbst übersetzt, macht drei Dinge gleichzeitig: sie
-entscheidet **über den Text**, sie entscheidet **über dessen Platzierung** und
-sie ist **für die Vollständigkeit zuständig**. Daraus folgt:
+A component that translates itself does three things at once: it decides
+**about the text**, it decides **about its placement** and it is **responsible
+for completeness**. The consequences:
 
-- **Kein gemeinsamer Ort.** Derselbe Text („Punkte", „Runde", „Weiter") steht
-  in zehn Komponenten an zehn Stellen. Ein Fix, eine Änderung, ein Tippfehler —
-  zehnmal.
-- **Markup und Text werden untrennbar.** Ein Text mit Platzhalter (`{{count}}`)
-  muss in der Komponente formatiert werden; die Formatierung ist dann an das
-  Markup gebunden und lässt sich nicht mehr für andere Sprachvarianten
-  austauschen.
-- **Die Vollständigkeit wird unprüfbar.** Ein Skript kann `de.json` und `en.json`
-  vergleichen. Es kann nicht prüfen, ob ein Literal im JSX fehlt.
+- **No shared place.** The same text (`"Punkte"` (points), `"Runde"` (round),
+  `"Weiter"` (next)) stands in ten components in ten places. One fix, one
+  change, one typo — ten times.
+- **Markup and text become inseparable.** A text with a placeholder
+  (`{{count}}`) has to be formatted in the component; the formatting is then
+  bound to the markup and can no longer be exchanged for other language
+  variants.
+- **Completeness becomes uncheckable.** A script can compare `de.json` and
+  `en.json`. It cannot check whether a literal is missing in the JSX.
 
-Deshalb ist die Grenze: **Werte in Ressourcen, Struktur in der Komponente.**
+Therefore the boundary is: **values in resources, structure in the component.**
 
-### 3. Schlüsselraum: flach, `camelCase`, punktgetrennt, ohne Interpolation
+### 3. Key space: flat, `camelCase`, dot-separated, without interpolation
 
-| Regel | Wert | Begründung |
+| Rule | Value | Rationale |
 |---|---|---|
-| Trenner | `.` | `namespace.unterpunkt.bezeichnung` |
-| Schreibweise des **Schlüssels** | `camelCase` | `hintLevel`, `pointsTotal` — Schlüssel sind Bezeichner, keine Übersetzungen |
-| Schreibweise des **Wertes** | frei | Werte sind Prosa, kein Code |
-| Interpolation | **nie im Schlüssel** | Platzhalter stehen im **Wert**: `"{{count}} Spieler"`. Schlüssel bleiben statisch, sonst ist der Schlüsselraum nicht mehr auffindbar. |
-| Plural | i18next-Pluralformen `key_one` / `key_other` | `common.player_one`, `common.player_other` |
-| Zahlen/Datum | `Intl` mit `i18n.language` | **nicht** `toLocaleString()` ohne Locale |
-| `common.*` | vorab definiert, von allen Bereichen geteilt | `common.back`, `common.cancel`, `common.points` … |
-| Eigennamen | in beiden Sprachen identisch | „Spotify", „YouTube", „Jackbox", „Phomu", Modusnamen |
+| Separator | `.` | `namespace.subitem.label` |
+| Notation of the **key** | `camelCase` | `hintLevel`, `pointsTotal` — keys are identifiers, not translations |
+| Notation of the **value** | free | Values are prose, not code |
+| Interpolation | **never in the key** | Placeholders stand in the **value**: `"{{count}} Spieler"`. Keys stay static, otherwise the key space is no longer findable. |
+| Plural | i18next plural forms `key_one` / `key_other` | `common.player_one`, `common.player_other` |
+| Numbers/date | `Intl` with `i18n.language` | **not** `toLocaleString()` without locale |
+| `common.*` | predefined, shared by all areas | `common.back`, `common.cancel`, `common.points` … |
+| Proper names | identical in both languages | "Spotify", "YouTube", "Jackbox", "Phomu", mode names |
 
-### 4. Namespaces je Bildschirm
+### 4. Namespaces per screen
 
 `landing`, `lobby`, `game`, `modes`, `browse`, `settings`, `admin`,
 `projector`, `gameover`, `guide`, `legal`, `themes`, `common`, `errors`, `a11y`.
 
-### 5. Was **nicht** übersetzt wird
+### 5. What is **not** translated
 
-| Nicht übersetzen | Begründung |
+| Do not translate | Rationale |
 |---|---|
-| Song-Titel, -Künstler, -Texte aus dem Katalog | Inhalte, keine UI. Sie stehen in `src/data/songs/*.json` und werden **nicht** durch i18next gezogen. |
-| `PhomuSong.FIELDS` (Feldnamen im Admin-Editor) | Schema-Bezeichner, keine Oberfläche |
-| Fehlermeldungen der Admin-API | Serverseitig; `src/admin-api/**` läuft ohne i18n-Runtime |
-| Emoji und Symbole | `🎵`, `🏆` — zeichensetzlich, nicht sprachlich |
-| Modus-IDs (`timeline`, `hint-master`) | Bezeichner im Code und in der URL |
-| **Zahlenwerte** (Punkte, Runden, Minuten) | Werte, keine Texte — sie werden per `Intl` formatiert |
+| Song titles, artists, lyrics from the catalogue | Content, not UI. They stand in `src/data/songs/*.json` and are **not** pulled through i18next. |
+| `PhomuSong.FIELDS` (field names in the admin editor) | Schema identifiers, not interface |
+| Error messages of the admin API | Server-side; `src/admin-api/**` runs without an i18n runtime |
+| Emoji and symbols | `🎵`, `🏆` — character-wise, not linguistic |
+| Mode IDs (`timeline`, `hint-master`) | Identifiers in the code and in the URL |
+| **Numeric values** (points, rounds, minutes) | Values, not texts — they are formatted via `Intl` |
 
-### 6. Der Migrationspfad: Bildschirm für Bildschirm
+### 6. The migration path: screen by screen
 
-Die Migration ist **inkrementell** und wird nach dem Bereichsort vorgegangen:
+The migration is **incremental** and proceeds in the order of the areas:
 
-| Reihenfolge | Bereich | Warum zuerst |
+| Order | Area | Why first |
 |---|---|---|
-| 1 | `common.*`, `errors.*`, `a11y.*` | Grundvokabular, von allen Bereichen geteilt |
-| 2 | `lobby`, `modes`, `themes` | Einstieg für die meisten Nutzer |
-| 3 | `game`, `gameover` | Spieltext, inkl. `src/utils/feedback-messages.ts` und `src/utils/last-round-messages.ts` |
-| 4 | `browse`, `admin` | Werkzeugseiten |
-| 5 | `settings`, `projector`, `guide`, `legal` | Nebenbereiche |
+| 1 | `common.*`, `errors.*`, `a11y.*` | Basic vocabulary, shared by all areas |
+| 2 | `lobby`, `modes`, `themes` | Entry point for most users |
+| 3 | `game`, `gameover` | Game text, including `src/utils/feedback-messages.ts` and `src/utils/last-round-messages.ts` |
+| 4 | `browse`, `admin` | Tool pages |
+| 5 | `settings`, `projector`, `guide`, `legal` | Side areas |
 
-Jeder migrierte Bereich wird mit einem Negativtest abgesichert: das
-Vollständigkeits-Gate schlägt fehl, wenn ein Schlüssel in nur einer Sprache
-existiert, wenn ein Wert leer ist oder wenn im JSX ein Literaltext stehen
-bleibt.
+Each migrated area is secured with a negative test: the completeness gate fails
+if a key exists in only one language, if a value is empty, or if literal text
+remains in the JSX.
 
-### 7. `lang`-Attribut folgt der Sprache
+### 7. The `lang` attribute follows the language
 
-`src/app/layout.tsx:32` setzt `lang="de"` statisch. Bei aktivem `en` muss das
-Attribut `lang="en"` sein — Screenreader und Tastatur folgen dann der
-tatsächlichen Sprache. Weil `src/app/layout.tsx` eine Server-Komponente ist und
-die Sprache clientseitig gewählt wird, wird das Attribut über einen kleinen
-Client-Helfer (`src/components/LanguageHtmlAttribute.tsx`) oder über einen
-`document.documentElement.lang`-Effekt gesetzt.
+`src/app/layout.tsx:32` sets `lang="de"` statically. With `en` active the
+attribute must be `lang="en"` — screen readers and the keyboard then follow
+the actual language. Because `src/app/layout.tsx` is a server component and
+the language is chosen client-side, the attribute is set via a small client
+helper (`src/components/LanguageHtmlAttribute.tsx`) or via a
+`document.documentElement.lang` effect.
 
 ---
 
-## Konsequenzen
+## Consequences
 
-### Positiv
+### Positive
 
-- Ein Ort für Text: `src/i18n/locales/*.json`. Ein Fix für „Zurück" ist eine
-  Änderung an **einer** Zeile.
-- Die Vollständigkeit wird **prüfbar**: `de.json` ↔ `en.json` sind parallel
-  (heute bereits: 25 ↔ 25, 0 Unterschiede), und ein Gate kann verhindern, dass
-  ein Literal im JSX zurückkommt.
-- Pluralformen, Platzhalter und Datumsformate bekommen eine definierte
-  Heimat (`common.*`, i18next-Pluralformen, `Intl`).
-- Der Katalog bleibt sprachneutral: Songtitel werden nicht überschrieben und
-  nicht in die Locale-Dateien dupliziert.
+- One place for text: `src/i18n/locales/*.json`. A fix for `"Zurück"` (back)
+  is a change to **one** line.
+- Completeness becomes **checkable**: `de.json` ↔ `en.json` are parallel
+  (already today: 25 ↔ 25, 0 differences), and a gate can prevent a literal
+  from returning in the JSX.
+- Plural forms, placeholders and date formats get a defined home
+  (`common.*`, i18next plural forms, `Intl`).
+- The catalogue stays language-neutral: song titles are neither translated nor
+  duplicated into the locale files.
 
 ### Negative / Trade-offs
 
-- **Migrationsaufwand.** 56 von 73 Quelldateien enthalten deutsche UI-Literale
-  (746 Treffer im Vokabular-Scan). Das ist Arbeit ohne Produktgewinn für die
-  deutsche Version.
-- **Der Spielbereich ist der teuerste.** Die 102 Feedback-Sprüche in
-  `src/utils/feedback-messages.ts` (`CORRECT_MESSAGES`, `WRONG_MESSAGES`) und die
-  12 Meldungen in `src/utils/last-round-messages.ts` sind **Daten, keine
-  UI-Literale**: Sie werden als **ein** Schlüssel pro Array (`game.feedback.correct`,
-  `game.feedback.wrong`, `game.lastRound.messages`) exportiert, damit die
-  Übersetzung **eine** Zeichenkette je Sprache bekommt statt 102.
-- **Strengere Gates treffen Bestandscode.** Ein Vollständigkeits-Gate, das
-  Literaltext im JSX findet, wird zunächst **rot** — es muss mit einer
-  Baseline (`known-untranslated`) arbeiten, sonst blockiert es jede
-  Weiterentwicklung.
-- **Ein Schlüssel für ein Array ist ungewöhnlich.** Die i18next-Üblichkeit
-  `feedback.correct.0`, `feedback.correct.1`, … wäre präziser, erzeugt aber
-  204 Schlüssel je Sprache und eine fragile Index-Zuordnung.
+- **Migration effort.** 56 of 73 source files contain German UI literals
+  (746 hits in the vocabulary scan). That is work without product benefit for
+  the German version.
+- **The game area is the most expensive.** The 102 feedback sentences in
+  `src/utils/feedback-messages.ts` (`CORRECT_MESSAGES`, `WRONG_MESSAGES`) and
+  the 12 messages in `src/utils/last-round-messages.ts` are **data, not UI
+  literals**: They are exported as **one** key per array
+  (`game.feedback.correct`, `game.feedback.wrong`, `game.lastRound.messages`),
+  so that the translation gets **one** string per language instead of 102.
+- **Stricter gates hit existing code.** A completeness gate that finds literal
+  text in the JSX will be **red** at first — it has to work with a baseline
+  (`known-untranslated`), otherwise it blocks every further development.
+- **One key for an array is unusual.** The i18next convention
+  `feedback.correct.0`, `feedback.correct.1`, … would be more precise, but
+  generates 204 keys per language and a fragile index mapping.
 
-### Was die Entscheidung unmöglich macht
+### What the decision makes impossible
 
-- Ein sichtbarer Literaltext im JSX ist nicht mehr zulässig.
-- Der Katalog (`src/data/**`) wird **nicht** Teil des i18n-Systems.
-- Ein Schlüssel darf keine Interpolation enthalten.
-- `de.json` und `en.json` werden immer **parallel** gehalten — eine Sprache
-  ohne die andere ist ein Fehler, kein Feature.
-
----
-
-## Alternativen (verworfen)
-
-- **Übersetzung direkt in den Komponenten mit festen Schlüsselstrings.**
-  *Verworfen:* Das ist genau die Variante, die die Ressourcen-Datei ersetzt.
-  Der Schlüsselraum wird über die Komponenten verteilt, Vollständigkeit wird
-  unprüfbar, und Markup und Text bleiben gekoppelt.
-- **Eine eigene Übersetzungsschicht `src/utils/text.ts`.** *Verworfen:* Sie
-  dupliziert die i18next-Funktionalität (Fallback, Plural, Locale-Erkennung)
-  und erzeugt einen zweiten Ort, an dem Schlüssel entstehen.
-- **Den Katalog in die Locales aufnehmen.** *Verworfen:* Songtitel, -Künstler
-  und -Texte sind Inhalte und nicht UI; 136 JSON-Dateien würden in zwei
-  Sprachdateien dupliziert und bei jeder Katalog-Änderung synchron gehalten.
-- **Nur `de.json` pflegen, `en.json` später.** *Verworfen:* `fallbackLng: 'de'`
-  verdeckt den Lückenzustand — der Nutzer sieht Deutsch und merkt nicht, dass
-  etwas fehlt. Parallele Dateien mit Gate sind ehrlicher.
-- **Übersetzung zur Laufzeit über einen Server-Dienst.** *Verworfen:*
-  `output: 'export'` erlaubt keine Server-Routen; zusätzlich would ein
-  Netzwerkzugriff beim Rendern die Statik-Auslieferung aufweichen.
-- **Die Mode- und Feedbacktexte als Code-Konstanten belassen (Status quo).**
-  *Verworfen:* `src/utils/feedback-messages.ts` ist eine Liste **deutscher
-  Sätze** — das ist Inhalt, der in die Sprachdateien gehört.
+- Visible literal text in the JSX is no longer permissible.
+- The catalogue (`src/data/**`) does **not** become part of the i18n system.
+- A key may not contain interpolation.
+- `de.json` and `en.json` are always kept **parallel** — one language without
+  the other is an error, not a feature.
 
 ---
 
-## Verifikation
+## Rejected alternatives
 
-| Prüfung | Kommando / Ort |
+- **Translation directly in the components with fixed key strings.**
+  *Rejected:* That is exactly the variant that replaces the resource file. The
+  key space is spread across the components, completeness becomes uncheckable,
+  and markup and text stay coupled.
+- **A separate translation layer `src/utils/text.ts`.** *Rejected:* It
+  duplicates the i18next functionality (fallback, plural, locale detection)
+  and creates a second place where keys are produced.
+- **Include the catalogue in the locales.** *Rejected:* Song titles, artists
+  and lyrics are content and not UI; 136 JSON files would be duplicated into
+  two language files and kept in sync with every catalogue change.
+- **Maintain only `de.json`, `en.json` later.** *Rejected:* `fallbackLng: 'de'`
+  hides the gap state — the user sees German and does not notice that
+  something is missing. Parallel files with a gate are more honest.
+- **Translation at runtime via a server service.** *Rejected:*
+  `output: 'export'` allows no server routes; in addition a network access
+  during rendering would dilute the static delivery.
+- **Leave the mode and feedback texts as code constants (status quo).**
+  *Rejected:* `src/utils/feedback-messages.ts` is a list of **German
+  sentences** — that is content which belongs into the language files.
+
+---
+
+## Verification
+
+| Check | Command / Location |
 |---|---|
-| Parallelität der Locales | `scripts/check-i18n-completeness.mjs` (neu): `de.json` ↔ `en.json`, gleiche Schlüssel, keine leeren Werte, Pluralformen identisch |
-| Kein Literaltext im JSX | dasselbe Gate, Muster „deutscher Literaltext in JSX-Textknoten" — mit Baseline für migrierte Bereiche |
-| Nutzung der Übersetzung | `grep -rl "useTranslation" src` — wächst mit jedem migrierten Bereich |
-| Keine Interpolation im Schlüssel | Gate-Regel: Schlüssel enthalten kein `{` |
-| Pluralformen | `grep -rn "_one\|_other" src/i18n/locales/*.json` — in beiden Sprachen identisch |
-| Zahlenformat | `grep -rn "toLocaleString()" src` → 0 Treffer ohne Locale-Argument |
-| `lang`-Attribut | `src/app/layout.tsx:32` — folgt `i18n.language` |
+| Parallelity of the locales | `scripts/check-i18n-completeness.mjs` (new): `de.json` ↔ `en.json`, same keys, no empty values, plural forms identical |
+| No literal text in the JSX | same gate, pattern "German literal text in JSX text nodes" — with a baseline for the migrated areas |
+| Use of the translation | `grep -rl "useTranslation" src` — grows with every migrated area |
+| No interpolation in the key | Gate rule: keys contain no `{` |
+| Plural forms | `grep -rn "_one\|_other" src/i18n/locales/*.json` — identical in both languages |
+| Number format | `grep -rn "toLocaleString()" src` → 0 hits without a locale argument |
+| `lang` attribute | `src/app/layout.tsx:32` — follows `i18n.language` |

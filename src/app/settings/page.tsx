@@ -45,7 +45,7 @@ export default function SettingsHubPage() {
   const currentLevel = Math.floor(totalXP / 100) + 1;
   const gameIsActive = currentRound > 0;
 
-  // Zahlen werden lokalisiert formatiert (Intl, aktive Sprache)
+  // Numbers are formatted for the active locale (Intl, active language)
   const numberFormat = new Intl.NumberFormat(i18n.language);
 
   return (

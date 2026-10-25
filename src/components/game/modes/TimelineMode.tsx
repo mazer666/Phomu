@@ -1,13 +1,13 @@
 /**
- * Timeline-Modus — Gemeinsame wachsende Timeline
+ * Timeline mode — shared, growing timeline
  *
- * Startet mit 3 zufälligen Jahreszahlen.
- * Richtig geraten → Jahreszahl des Songs wird hinzugefügt.
- * Ab 10 Jahreszahlen: Spieler darf eine entfernen.
- *   - Duplikat entstanden → wird automatisch entfernt
- *   - Kein Duplikat → Spieler wählt selbst
+ * Starts with 3 random years.
+ * Correctly guessed → the year of the song is added.
+ * From 10 years on: the player may remove one.
+ *   - a duplicate arises → it is removed automatically
+ *   - no duplicate → the player chooses
  *
- * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/modes.{de,en}.json`.
+ * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 'use client';
 
@@ -18,14 +18,15 @@ import type { TFunction } from 'i18next';
 import type { PhomuSong } from '@/types/song';
 import { getAllSongs } from '@/utils/song-picker';
 import { useGameStore } from '@/stores/game-store';
-import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyColor } from '@/utils/feedback-messages';
 import { MusicPlayer } from '../MusicPlayer';
+import { useSpicyMessage } from '../useSpicyMessage';
 
-// ─── Jahrzehnt-Hints für den Cheat ────────────────────────────────────────────
+// ─── Decade hints for the cheat ────────────────────────────────────────────
 
 /**
- * Hinweis-Pool je Dekade — ein Schlüssel pro Variante.
- * Die Texte liegen in `src/i18n/locales/parts/modes.{de,en}.json`.
+ * Hint pool per decade — one key per variant.
+ * The texts live in `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 function getDecadeHintPool(decade: number, t: TFunction): string[] {
   switch (decade) {
@@ -109,9 +110,9 @@ function randomInitialYears(count: number): number[] {
 }
 
 /**
- * Gibt alle akzeptierten Slot-Indizes zurück.
- * Wenn das Jahr bereits in der Timeline vorkommt, gelten beide Slots
- * um das Duplikat (davor und danach) als korrekt.
+ * Returns all accepted slot indexes.
+ * If the year already occurs in the timeline, both slots around
+ * the duplicate (before and after) count as correct.
  */
 function getValidSlots(songYear: number, sortedYears: number[]): Set<number> {
   const slots = new Set<number>();
@@ -126,7 +127,7 @@ function getValidSlots(songYear: number, sortedYears: number[]): Set<number> {
   }
   slots.add(canonical);
 
-  // Für alle exakt gleichen Jahre: Slot davor und danach ebenfalls akzeptieren
+  // For exactly equal years: accept the slot before and after as well
   for (let i = 0; i < sortedYears.length; i++) {
     if (sortedYears[i] === songYear) {
       slots.add(i);
@@ -137,7 +138,7 @@ function getValidSlots(songYear: number, sortedYears: number[]): Set<number> {
   return slots;
 }
 
-/** Kanonischer Slot für die Anzeige (grüner Hinweis bei falscher Antwort) */
+/** Canonical slot for the display (green hint on a wrong answer) */
 function canonicalSlot(songYear: number, sortedYears: number[]): number {
   for (let i = 0; i < sortedYears.length; i++) {
     if (songYear < sortedYears[i]) return i;
@@ -172,7 +173,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
 
   const currentPlayerId = turnOrder[currentTurnIndex];
 
-  // Zahlenformate der aktiven Sprache (Jahre ohne Tausendertrennung)
+  // Number formats of the active locale (years without a thousands separator)
   const numberFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language),
     [i18n.language]
@@ -182,7 +183,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     [i18n.language]
   );
 
-  // Einmalig initialisieren, wenn Timeline noch leer ist
+  // Initialise once, when the timeline is still empty
   useEffect(() => {
     if (timelineYears.length === 0) {
       initTimeline(randomInitialYears(3));
@@ -198,7 +199,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     [song.year, timelineYears]
   );
 
-  const points = Math.min(timelineYears.length + 1, config.timelineMaxPoints); // mehr Jahre = mehr Punkte, aber gecappt
+  const points = Math.min(timelineYears.length + 1, config.timelineMaxPoints); // more years = more points, but capped
 
   const questionStartedAt = useRef<number>(Date.now());
 
@@ -207,6 +208,10 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
   }, [song.id]);
 
   const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
+  const spicyMessage = useSpicyMessage(
+    validSlotSet.has(selectedSlot!),
+    song.id
+  );
   const [isRevealed, setIsRevealed] = useState(false);
   const [removalState, setRemovalState] = useState<RemovalState>('none');
   const [cheatActive, setCheatActive] = useState(false);
@@ -216,7 +221,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
 
   const numSlots = timelineYears.length + 1;
 
-  // Nach korrekter Antwort: Jahr hinzufügen + ggf. Entfernungs-Logik
+  // After a correct answer: add the year + removal logic if applicable
   const handleReveal = useCallback(() => {
     if (selectedSlot === null || isRevealed) return;
     const isCorrect = validSlotSet.has(selectedSlot);
@@ -226,7 +231,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
       Math.round((Date.now() - questionStartedAt.current) / 1000)
     );
 
-    // Timeline: Punkte basierend auf Komplexität (Cheats/Joker wurden bereits abgezogen)
+    // Timeline: points based on complexity (cheats/joker were already deducted)
     onAnswer(isCorrect, isCorrect ? points : 0, answeredInSeconds);
 
     if (!isCorrect) return;
@@ -237,10 +242,10 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     addTimelineYear(newYear);
 
     if (isDuplicate) {
-      // Duplikat → direkt entfernen, kein Eingriff nötig
+      // Duplicate → remove it right away, no intervention needed
       removeTimelineYear(newYear);
     } else if (timelineYears.length + 1 > 10) {
-      // Mehr als 10 Jahreszahlen → Spieler darf optional eine entfernen
+      // More than 10 years → the player may optionally remove one
       setRemovalState('choosing');
     }
   }, [
@@ -264,7 +269,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     if (cheatActive || isRevealed || !currentPlayerId) return;
     setCheatActive(true);
     setCheatHint(getDecadeHint(song.year, t));
-    // Sofortiger Abzug von 2 Punkten für den Dekaden-Hint
+    // Immediate deduction of 2 points for the decade hint
     awardPoints(currentPlayerId, -2);
   }
 
@@ -279,7 +284,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     const pick = wrongSlots[Math.floor(Math.random() * wrongSlots.length)]!;
     setJokerSlot(pick);
     setJokerUsed(true);
-    // Sofortiger Abzug von 1 Punkt für den Joker
+    // Immediate deduction of 1 point for the joker
     awardPoints(currentPlayerId, -1);
     // Clear selection if the joker removed the selected slot
     if (selectedSlot === pick) setSelectedSlot(null);
@@ -357,7 +362,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                   ),
                 }}
               >
-                {getSpicyMessage(validSlotSet.has(selectedSlot!), song.id)}
+                {spicyMessage}
               </p>
               <p className="text-sm opacity-60">
                 {validSlotSet.has(selectedSlot!)
@@ -465,7 +470,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
         </div>
       </div>
 
-      {/* Optional: Jahreszahl entfernen nach richtigem Tipp */}
+      {/* Optional: remove a year after a correct guess */}
       {removalState === 'choosing' && (
         <div className="bg-[var(--color-bg-card)] border border-white/10 rounded-2xl p-4 space-y-3">
           <p className="text-xs font-black uppercase tracking-widest text-center opacity-60">
@@ -547,7 +552,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
 
           return (
             <div key={slotIdx} className="flex flex-col">
-              {/* Slot-Zeile */}
+              {/* Slot row */}
               <div className="flex items-center gap-3">
                 <div className="w-12 shrink-0 flex flex-col items-center">
                   <div className="w-0.5 flex-1 bg-white/10 min-h-[8px]" />
@@ -630,7 +635,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
                 </button>
               </div>
 
-              {/* Jahreszahl zwischen Slots */}
+              {/* Year between the slots */}
               {yearAfter !== undefined && (
                 <div className="flex items-center gap-3">
                   <div className="w-12 shrink-0 flex justify-center py-0.5">

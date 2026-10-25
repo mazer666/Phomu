@@ -1,38 +1,43 @@
 #!/usr/bin/env node
 /**
- * i18n-Vollständigkeits-Gate (CONTRACT §6)
+ * i18n completeness gate (CONTRACT §6)
  *
- * Prüft:
- *   1. DE/EN-Parität — jeder Schlüssel existiert in beiden Sprachen
- *      (Basis: src/i18n/locales/{de,en}.json, Teile: src/i18n/locales/parts/*.json)
- *   2. Keine leeren Werte
- *   3. Pluralformen (_one/_other/...) in beiden Sprachen identisch
- *   4. Keine unübersetzten Literaltexte mehr in den TSX-Dateien unter src/
+ * Checks:
+ *   1. DE/EN parity — every key exists in both languages
+ *      (base: src/i18n/locales/{de,en}.json, parts: src/i18n/locales/parts/*.json)
+ *   2. No empty values
+ *   3. Plural forms (_one/_other/...) identical in both languages
+ *   4. No untranslated literal texts left in the TSX files under src/
+ *   5. Every translation key used in the code resolves in BOTH languages
+ *      (a `t('…')` call with a key that does not exist renders the key
+ *      itself — the German fallback of the feedback quips would be shown)
+ *   6. Every key literal in a configuration table resolves in BOTH languages
+ *      (the key tables of src/config/ carry the texts of the UI)
  *
- * Aufruf:
- *   node scripts/check-i18n-completeness.mjs              # Gate (Exit 1 bei Verstoß)
- *   node scripts/check-i18n-completeness.mjs --count      # nur Zählung, Exit 0
+ * Usage:
+ *   node scripts/check-i18n-completeness.mjs              # gate (exit 1 on violation)
+ *   node scripts/check-i18n-completeness.mjs --count      # counting only, exit 0
  *   node scripts/check-i18n-completeness.mjs --files=src/components/game/**
  *   node scripts/check-i18n-completeness.mjs --json
- *   node scripts/check-i18n-completeness.mjs --root=<pfad> # anderer Baum (Negativtest)
+ *   node scripts/check-i18n-completeness.mjs --root=<path> # different tree (negative test)
  *
- * ── Ausnahmeliste für sichtbare Literaltexte ─────────────────────────────
- * Ein Literaltext wird NICHT als Verstoß gewertet, wenn:
- *   - er keine Buchstaben enthält (Zahlen, Symbole, Einmalezeichen: "3", "…", "—")
- *   - er exakt einem Eintrag der BRAND_ALLOWLIST entspricht (Eigennamen,
- *     die laut CONTRACT §5 in beiden Sprachen identisch bleiben)
- *   - er ein technischer Wert ist (Slug, Domain, URL, CSS-Variable, Hex-Farbe)
- *   - er innerhalb von `t(...)` / `i18n.t(...)` steht (Übersetzungsschlüssel)
- * Die Ausnahmeliste ist absichtlich eng gefasst: jeder weitere deutsche oder
- * englische Satz im JSX ist ein Verstoß.
+ * ── Allowlist for visible literal texts ─────────────────────────────────
+ * A literal text is NOT counted as a violation when:
+ *   - it contains no letters (numbers, symbols, one-off signs: "3", "…", "—")
+ *   - it matches an entry of BRAND_ALLOWLIST exactly (proper names, which per
+ *     CONTRACT §5 stay identical in both languages)
+ *   - it is a technical value (slug, domain, URL, CSS variable, hex colour)
+ *   - it sits inside `t(...)` / `i18n.t(...)` (a translation key)
+ * The allowlist is deliberately narrow: every further German or English
+ * sentence in the JSX is a violation.
  *
- * ── Toleranz gegenüber laufender Parallelarbeit ─────────────────────────
- * Das Gate läuft in einem Repository, in dem parallel Dateien geändert werden.
- * Deshalb:
- *   - Dateien, die während des Laufs verschwinden, werden übersprungen
- *   - halb geschriebene JSON-Dateien erzeugen einen Befund, keinen Absturz
- *   - Verzeichnis- und Dateilesefehler werden abgefangen
- * Der Exit-Code bleibt 1, sobald mindestens ein echter Verstoß vorliegt.
+ * ── Tolerance for concurrent work in the same repository ───────────────
+ * The gate runs in a repository where files are modified in parallel.
+ * Therefore:
+ *   - files that disappear during the run are skipped
+ *   - half-written JSON files produce a finding, not a crash
+ *   - directory and file read errors are caught
+ * The exit code stays 1 as soon as at least one real violation exists.
  */
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, resolve, sep } from 'node:path';
@@ -47,17 +52,17 @@ try {
   ts = require('typescript');
 } catch {
   console.error(
-    'FEHLER: Das Paket "typescript" ist nicht installiert. ' +
-      'Das i18n-Gate benötigt den TypeScript-Parser (npm ci mit devDependencies).'
+    'ERROR: The package "typescript" is not installed. ' +
+      'The i18n gate needs the TypeScript parser (npm ci including devDependencies).'
   );
   process.exit(1);
 }
 
 const DEFAULT_ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 /**
- * `--root=<pfad>` prueft einen anderen Baum (Standard: das Repository).
- * Dient dem isolierten Nachweis des Gates (Negativtest) und aendert das
- * Verhalten im Normalfall nicht.
+ * `--root=<path>` checks a different tree (default: the repository).
+ * Used for the isolated proof of the gate (negative test) and does not change
+ * the behaviour in the normal case.
  */
 const rootArg = process.argv.slice(2).find((a) => a.startsWith('--root='));
 const ROOT = rootArg
@@ -68,13 +73,13 @@ const PARTS_DIR = join(LOCALES_DIR, 'parts');
 const SRC_DIR = join(ROOT, 'src');
 
 /**
- * Lesefehler während des Laufs (Datei verschwunden, halb geschrieben, …).
- * Sie werden als Befund gemeldet, nicht als Absturz.
+ * Read errors during the run (file gone, half-written, …).
+ * They are reported as a finding, not as a crash.
  * @type {{where: string, reason: string}[]}
  */
 const IO_ERRORS = [];
 
-// ─── Optionen ─────────────────────────────────────────────────────
+// ─── Options ─────────────────────────────────────────────────────
 
 const argv = process.argv.slice(2);
 const COUNT_ONLY = argv.includes('--count');
@@ -88,7 +93,7 @@ const SCOPE = filesArg
       .filter(Boolean)
   : null;
 
-// ─── Eigennamen (bleiben identisch, laut CONTRACT §5) ─────────────
+// ─── Proper names (stay identical, per CONTRACT §5) ──────────────
 
 const BRAND_ALLOWLIST = new Set([
   'phomu',
@@ -104,7 +109,7 @@ const BRAND_ALLOWLIST = new Set([
 
 const PLURAL_SUFFIXES = ['_zero', '_one', '_two', '_few', '_many', '_other'];
 
-// ─── Datei-Sammlung ───────────────────────────────────────────────
+// ─── File collection ───────────────────────────────────────────────
 
 function walk(dir, out = []) {
   let entries;
@@ -113,7 +118,7 @@ function walk(dir, out = []) {
   } catch (error) {
     IO_ERRORS.push({
       where: toPosix(dir),
-      reason: `Verzeichnis nicht lesbar: ${error.code ?? error.message}`,
+      reason: `Directory not readable: ${error.code ?? error.message}`,
     });
     return out;
   }
@@ -123,7 +128,7 @@ function walk(dir, out = []) {
     try {
       st = statSync(full);
     } catch {
-      // Datei wurde zwischen readdir und stat entfernt -> ueberspringen
+      // File was removed between readdir and stat -> skip
       continue;
     }
     if (st.isDirectory()) walk(full, out);
@@ -136,9 +141,9 @@ function toPosix(p) {
   return relative(ROOT, p).split(sep).join('/');
 }
 
-// ─── Lokalen laden ────────────────────────────────────────────────
+// ─── Load locales ────────────────────────────────────────────────
 
-/** Flacht ein Objekt zu Punktpfad-Schlüsseln (rekursiv). */
+/** Flattens an object into dot-path keys (recursive). */
 function flatten(obj, prefix = '') {
   const out = {};
   for (const [key, value] of Object.entries(obj)) {
@@ -152,7 +157,7 @@ function flatten(obj, prefix = '') {
   return out;
 }
 
-/** Lädt eine Sprachdatei (flach oder verschachtelt) zu Punktpfaden. */
+/** Loads a locale file (flat or nested) into dot paths. */
 function loadLocale(file) {
   let raw;
   try {
@@ -160,7 +165,7 @@ function loadLocale(file) {
   } catch (error) {
     IO_ERRORS.push({
       where: toPosix(file),
-      reason: `Datei nicht lesbar: ${error.code ?? error.message}`,
+      reason: `File not readable: ${error.code ?? error.message}`,
     });
     return {};
   }
@@ -169,7 +174,7 @@ function loadLocale(file) {
   } catch (error) {
     IO_ERRORS.push({
       where: toPosix(file),
-      reason: `JSON nicht parsebar: ${error.message}`,
+      reason: `JSON not parseable: ${error.message}`,
     });
     return {};
   }
@@ -188,14 +193,14 @@ function collectLocaleSets() {
 
   if (existsSync(PARTS_DIR)) {
     const partFiles = readdirSync(PARTS_DIR).filter((f) => f.endsWith('.json'));
-    // Teile kommen als <namespace>.<lang>.json oder <namespace>.<lang>.json-Muster
+    // Parts come as <namespace>.<lang>.json or <namespace>.<lang>.json pattern
     const byLang = { de: [], en: [] };
     for (const file of partFiles) {
       const m = file.match(/^(.+)\.(de|en)\.json$/);
       if (m) {
         byLang[m[2]].push({ ns: m[1], file });
       } else {
-        // Fallback: <namespace>.<lang>.json nicht vorhanden -> Datei als eigene Menge
+        // Fallback: <namespace>.<lang>.json not present -> file is its own set
         sets.set(`parts/${file}`, {
           de: Object.keys(loadLocale(join(PARTS_DIR, file))),
           en: [],
@@ -221,7 +226,7 @@ function collectLocaleSets() {
   return sets;
 }
 
-// ─── Literaltext-Erkennung (TypeScript-AST) ───────────────────────
+// ─── Literal text detection (TypeScript AST) ───────────────────────
 
 const USER_VISIBLE_ATTRS = new Set([
   'aria-label',
@@ -236,9 +241,9 @@ function isSlugLike(text) {
 }
 
 /**
- * Erkennt einen ISO-Code (Sprache ISO-639-1 / Land ISO-3166 alpha-2/3),
- * z. B. "DE", "EN", "US". Codes sind in beiden Sprachen identisch und
- * therefore kein uebersetzungsbeduerftiger Text.
+ * Detects an ISO code (language ISO-639-1 / country ISO-3166 alpha-2/3),
+ * e.g. "DE", "EN", "US". Codes are identical in both languages and
+ * therefore no text that needs translating.
  * @param {string} text
  */
 function isIsoCode(text) {
@@ -246,11 +251,11 @@ function isIsoCode(text) {
 }
 
 /**
- * Erkennt eine Liste technischer Bezeichner, z. B. "timeline, hint-master, ...".
- * Alle Tokens sind Slugs oder reine Satzzeichen.
+ * Detects a list of technical identifiers, e.g. "timeline, hint-master, ...".
+ * All tokens are slugs or pure punctuation.
  *
- * Bewusst eng gefasst: ein einzelnes kurzes Wort ohne Trennzeichen
- * ("L", "OK") ist sichtbarer Text und wird NICHT als Bezeichner gewertet.
+ * Deliberately narrow: a single short word without a separator
+ * ("L", "OK") is visible text and is NOT counted as an identifier.
  * @param {string} text
  */
 function isIdentifierList(text) {
@@ -269,9 +274,8 @@ function isIdentifierList(text) {
 }
 
 /**
- * Lädt die Packnamen aus dem Katalog. Packnamen sind Eigennamen des
- * Datensatzes (z. B. "Global Hits 1950-2026") und in beiden Sprachen
- * identisch.
+ * Loads the pack names from the catalog. Pack names are proper names of the
+ * dataset (e.g. "Global Hits 1950-2026") and identical in both languages.
  * @returns {Set<string>}
  */
 function loadPackNames() {
@@ -290,7 +294,7 @@ function loadPackNames() {
       }
     }
   } catch {
-    // Katalogdatei nicht lesbar -> keine Ausnahme, das Gate meldet den Fehler separat
+    // Catalog file not readable -> no exception, the gate reports the error separately
   }
   return names;
 }
@@ -298,9 +302,9 @@ function loadPackNames() {
 const PACK_NAMES = loadPackNames();
 
 /**
- * CSS-Utility-Praefixe (Tailwind). Eine Liste, in der *alle* Tokens
- * technisch sind und *mindestens* eines dieser Praefixe traegt, ist eine
- * Klassenliste und kein sichtbarer Text.
+ * CSS utility prefixes (Tailwind). A list in which *all* tokens are technical
+ * and *at least* one of these prefixes occurs is a class list and no visible
+ * text.
  */
 const CSS_UTILITY_PREFIXES = [
   'absolute',
@@ -414,7 +418,7 @@ const CSS_UTILITY_PREFIXES = [
 ];
 
 /**
- * Erkennt eine CSS-Klassenliste (z. B. "-translate-x-1/2 mb-2 bottom-full").
+ * Detects a CSS class list (e.g. "-translate-x-1/2 mb-2 bottom-full").
  * @param {string} text
  * @returns {boolean}
  */
@@ -433,7 +437,7 @@ function isCssClassList(text) {
 }
 
 /**
- * Erkennt einen Pfad bzw. eine Route (z. B. "/game", "/favicon.png").
+ * Detects a path or route (e.g. "/game", "/favicon.png").
  * @param {string} text
  * @returns {boolean}
  */
@@ -442,15 +446,15 @@ function isPathLike(text) {
 }
 
 /**
- * Zeichenbereiche, die ausschliesslich Symbole, Piktogramme oder
- * Emoji enthalten (Letterlike Symbols, Misc Symbols, Arrows, Emoji).
+ * Character ranges that contain only symbols, pictograms or emoji
+ * (Letterlike Symbols, Misc Symbols, Arrows, Emoji).
  */
 const SYMBOL_RANGES = /[ -⯿‌️\u{1F000}-\u{1FAFF}]/gu;
 
 /**
- * Prueft, ob der Text nur aus Symbolen/Piktogrammen besteht.
- * Solche Zeichen sind laut CONTRACT §5 in beiden Sprachen identisch
- * und damit kein uebersetzungsbeduerftiger Text.
+ * Checks whether the text consists only of symbols/pictograms.
+ * Such characters are identical in both languages per CONTRACT §5 and
+ * therefore no text that needs translating.
  * @param {string} text
  * @returns {boolean}
  */
@@ -459,26 +463,26 @@ function isSymbolOnly(text) {
 }
 
 /**
- * Dateiendungen. Ein Wert mit einer dieser Endungen ist ein Dateiname und
- * damit potenziell sichtbarer Text (z. B. "PRIVACY.md" als Linktext) — er
- * darf nicht ueber die Domain-Ausnahme verschwinden.
+ * File extensions. A value with one of these extensions is a file name and
+ * therefore potentially visible text (e.g. "PRIVACY.md" as link text) — it
+ * must not disappear through the domain exception.
  */
 const FILE_EXTENSION =
   /\.(md|markdown|txt|json|ya?ml|toml|ts|tsx|js|jsx|mjs|css|html?|png|jpe?g|gif|svg|webp|ico|pdf|zip|lock|csv)$/i;
 
 function looksLikeUiText(text) {
   if (!text) return false;
-  // Nur Zeichen mit Gross-/Kleinschreibung sind Text. Damit fallen reine
-  // Symbole (z. B. "ℹ️") und Ziffern weg — genau wie im CONTRACT §5
-  // ("Eigennamen, Zahlen, Symbole bleiben identisch").
+  // Only characters with upper/lower case are text. This drops pure
+  // symbols (e.g. "ℹ️") and digits — exactly as in CONTRACT §5
+  // ("proper names, numbers, symbols stay identical").
   if (!/[\p{Lu}\p{Ll}]/u.test(text)) return false;
   if (isSymbolOnly(text)) return false;
   if (isSlugLike(text)) return false;
   if (BRAND_ALLOWLIST.has(text.trim().toLowerCase())) return false;
   if (PACK_NAMES.has(text.trim())) return false;
-  // Technische Werte (Domains, URLs, CSS-Variablen) sind keine UI-Texte
-  // Achtung: Dateinamen (z. B. "PRIVACY.md" als Linktext) sind sichtbarer
-  // Text und werden deshalb NICHT ueber die Domain-Regel ausgenommen.
+  // Technical values (domains, URLs, CSS variables) are no UI texts
+  // Note: file names (e.g. "PRIVACY.md" as link text) are visible text and
+  // are therefore NOT excepted through the domain rule.
   if (
     /^[a-z0-9.-]+\.[a-z]{2,}$/i.test(text.trim()) &&
     !FILE_EXTENSION.test(text.trim())
@@ -487,25 +491,25 @@ function looksLikeUiText(text) {
   }
   if (text.includes('://')) return false;
   if (/^var\(--/.test(text.trim())) return false;
-  // Hex-Farben
+  // Hex colours
   if (/^#[0-9a-f]{3,8}$/i.test(text.trim())) return false;
-  // CSS-Klassenlisten und Routen/Pfade sind technische Werte
+  // CSS class lists and routes/paths are technical values
   if (isCssClassList(text)) return false;
   if (isPathLike(text)) return false;
-  // ISO-Sprach-/Laendercodes sind Bezeichner, kein Text
+  // ISO language/country codes are identifiers, not text
   if (isIsoCode(text)) return false;
-  // Listen technischer Bezeichner
+  // Lists of technical identifiers
   if (isIdentifierList(text)) return false;
   return true;
 }
 
-/** Nur aus HTML-Entities bestehender Text (z. B. &middot;) ist kein UI-Text. */
+/** Text consisting only of HTML entities (e.g. &middot;) is no UI text. */
 function isEntityOnly(text) {
   const stripped = text.replace(/&[a-z]+;|&#\d+;/gi, '').trim();
   return stripped.length === 0;
 }
 
-/** Prüft, ob ein String-Literal als Argument von t()/i18n.t() benutzt wird. */
+/** Checks whether a string literal is used as an argument of t()/i18n.t(). */
 function isTranslationCallLiteral(node) {
   const parent = node.parent;
   if (!parent || !ts.isCallExpression(parent)) return false;
@@ -516,7 +520,7 @@ function isTranslationCallLiteral(node) {
 }
 
 /**
- * Sammelt Literaltexte eines TSX-Files.
+ * Collects the literal texts of a TSX file.
  * @returns {{line: number, text: string, kind: string}[]}
  */
 function scanLiterals(file) {
@@ -524,10 +528,10 @@ function scanLiterals(file) {
   try {
     source = readFileSync(file, 'utf8');
   } catch (error) {
-    // Datei wurde waehrend des Laufs entfernt -> ueberspringen, nicht crashen
+    // File was removed during the run -> skip, do not crash
     IO_ERRORS.push({
       where: toPosix(file),
-      reason: `Datei nicht lesbar: ${error.code ?? error.message}`,
+      reason: `File not readable: ${error.code ?? error.message}`,
     });
     return [];
   }
@@ -556,9 +560,9 @@ function scanLiterals(file) {
     });
   };
 
-  /** String-Literale in einem Ausdruck (mit Ausnahme von t()-Argumenten). */
+  /** String literals inside an expression (except t() arguments). */
   const collectFromExpression = (node) => {
-    // Attribute (className, style, …) enthalten keine UI-Texte
+    // Attributes (className, style, …) contain no UI texts
     if (ts.isJsxAttribute(node)) return;
     if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) {
       if (!isTranslationCallLiteral(node)) report(node, 'expression');
@@ -567,17 +571,18 @@ function scanLiterals(file) {
     ts.forEachChild(node, collectFromExpression);
   };
 
-  /** String-Literale in einer UI-Tabelle (Array-/Objektliteral). */
+  /** String literals in a UI table (array/object literal). */
   const collectFromTable = (node) => {
     if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) {
       if (!isTranslationCallLiteral(node)) report(node, 'table');
       return;
     }
     if (ts.isTemplateExpression(node)) {
-      // Template mit Platzhaltern: nur melden, wenn der Text natürlichsprachig wirkt
+      // Template with placeholders: only report when the text reads like
+      // natural language
       const raw = node.getText(sf).replace(/`/g, '');
       const stripped = raw.replace(/\$\{[^}]*\}/g, ' ').trim();
-      // Technische ID-Praefixe (z. B. `draft-${id}`) sind kein sichtbarer Text
+      // Technical ID prefixes (e.g. `draft-${id}`) are no visible text
       const isTechnicalPrefix = /^[a-z0-9_-]+$/.test(stripped);
       if (!isTechnicalPrefix && looksLikeUiText(stripped)) {
         found.push({
@@ -595,9 +600,9 @@ function scanLiterals(file) {
     ) {
       return;
     }
-    // Farbdefinitionen ({ name: 'Phomu Blue', value: '#118AB2' }) sind
-    // technische Palette-Eintraege. Der Name wird nie gerendert, sondern
-    // nur der Hex-Wert als CSS-Farbe gesetzt.
+    // Colour definitions ({ name: 'Phomu Blue', value: '#118AB2' }) are
+    // technical palette entries. The name is never rendered, only the hex
+    // value is set as a CSS colour.
     if (ts.isObjectLiteralExpression(node) && isColorDefinition(node)) {
       return;
     }
@@ -605,7 +610,7 @@ function scanLiterals(file) {
   };
 
   /**
-   * Prüft, ob ein Objektliteral eine Farbdefinition ist (Hex-Farbe).
+   * Checks whether an object literal is a colour definition (hex colour).
    * @param {any} node
    * @returns {boolean}
    */
@@ -622,12 +627,12 @@ function scanLiterals(file) {
     );
   }
 
-  /** Prüft, ob ein Knoten eine UI-Tabelle ist (Array-/Objektliteral). */
+  /** Checks whether a node is a UI table (array/object literal). */
   const isTableLiteral = (node) =>
     ts.isArrayLiteralExpression(node) || ts.isObjectLiteralExpression(node);
 
   const visit = (node) => {
-    // 1. JSX-Textknoten
+    // 1. JSX text nodes
     if (ts.isJsxText(node)) {
       const text = node.text.trim();
       if (text.length > 0 && looksLikeUiText(text) && !isEntityOnly(text)) {
@@ -639,7 +644,7 @@ function scanLiterals(file) {
       }
     }
 
-    // 2. Benutzer-sichtbare Attribute
+    // 2. User-visible attributes
     if (
       ts.isJsxAttribute(node) &&
       ts.isIdentifier(node.name) &&
@@ -657,8 +662,8 @@ function scanLiterals(file) {
       }
     }
 
-    // 3. JSX-Ausdrücke als Kind (String-Literale in Bedingungen usw.)
-    //    Nur Kind-Ausdrücke — Attribut-Ausdrücke (className, style) sind kein UI-Text.
+    // 3. JSX expressions as child (string literals inside conditions etc.)
+    //    Only child expressions — attribute expressions (className, style) are no UI text.
     if (ts.isJsxExpression(node) && node.expression) {
       const parent = node.parent;
       const isChildExpression =
@@ -666,7 +671,7 @@ function scanLiterals(file) {
       if (isChildExpression) collectFromExpression(node.expression);
     }
 
-    // 4. UI-Tabellen: const x = [...] | const x = {...} | const x = useMemo(() => [...])
+    // 4. UI tables: const x = [...] | const x = {...} | const x = useMemo(() => [...])
     if (ts.isVariableDeclaration(node) && node.initializer) {
       const init = node.initializer;
       if (isTableLiteral(init)) {
@@ -687,7 +692,7 @@ function scanLiterals(file) {
   return found;
 }
 
-/** Alle TSX-Dateien, die in den Scope passen. */
+/** All TSX files that fit the scope. */
 function collectTsxFiles() {
   const all = walk(SRC_DIR).filter((f) => f.endsWith('.tsx'));
   if (!SCOPE) return all;
@@ -707,19 +712,146 @@ function collectTsxFiles() {
   });
 }
 
+// ─── Translation keys used in the code ─────────────────────────────
+
+/** All TS/TSX files below src/ that fit the scope. */
+function collectSourceFiles() {
+  const all = walk(SRC_DIR).filter(
+    (f) => f.endsWith('.tsx') || f.endsWith('.ts')
+  );
+  if (!SCOPE) return all;
+  return all.filter((f) => {
+    const rel = toPosix(f);
+    return SCOPE.some((pattern) => {
+      const rx = new RegExp(
+        '^' +
+          pattern
+            .split('*')
+            .map((part) => part.replace(/[.+?^${}()|[\]\\]/g, '\\$&'))
+            .join('.*') +
+          '$'
+      );
+      return rx.test(rel);
+    });
+  });
+}
+
+/**
+ * Parses a source file and returns its AST.
+ * @param {string} file
+ * @returns {any | null}
+ */
+function parseSource(file) {
+  let source;
+  try {
+    source = readFileSync(file, 'utf8');
+  } catch (error) {
+    IO_ERRORS.push({
+      where: toPosix(file),
+      reason: `File not readable: ${error.code ?? error.message}`,
+    });
+    return null;
+  }
+  return ts.createSourceFile(
+    file,
+    source,
+    ts.ScriptTarget.Latest,
+    true,
+    file.endsWith('.tsx') ? ts.ScriptKind.TSX : ts.ScriptKind.TS
+  );
+}
+
+/**
+ * Whether a key resolves at runtime.
+ * i18next finds the key itself or its plural forms (`key_one` + `key_other`).
+ * @param {Record<string, unknown>} map
+ * @param {string} key
+ */
+function resolves(map, key) {
+  if (key in map) return true;
+  return `${key}_one` in map && `${key}_other` in map;
+}
+
+/**
+ * Collects the translation keys of all `t('…')` calls.
+ * @param {string} file
+ * @returns {{line: number, key: string}[]}
+ */
+function collectUsedKeys(file) {
+  const sf = parseSource(file);
+  if (!sf) return [];
+  const found = [];
+  const lineOf = (node) =>
+    sf.getLineAndCharacterOfPosition(node.getStart(sf)).line + 1;
+
+  const visit = (node) => {
+    if (
+      ts.isCallExpression(node) &&
+      node.arguments.length > 0 &&
+      ts.isStringLiteral(node.arguments[0])
+    ) {
+      const callee = node.expression;
+      const isTranslationCall =
+        (ts.isIdentifier(callee) && callee.text === 't') ||
+        (ts.isPropertyAccessExpression(callee) && callee.name.text === 't');
+      if (isTranslationCall) {
+        found.push({ line: lineOf(node), key: node.arguments[0].text });
+      }
+    }
+    ts.forEachChild(node, visit);
+  };
+
+  visit(sf);
+  return found;
+}
+
+/**
+ * Collects key literals of configuration tables (src/config/).
+ * A string is a key candidate when its first segment is a namespace of the
+ * locale files — that separates a key from a route, a CSS class or a slug.
+ * @param {string} file
+ * @param {Set<string>} namespaces
+ * @returns {{line: number, key: string}[]}
+ */
+function collectConfigKeys(file, namespaces) {
+  const sf = parseSource(file);
+  if (!sf) return [];
+  const found = [];
+  const lineOf = (node) =>
+    sf.getLineAndCharacterOfPosition(node.getStart(sf)).line + 1;
+
+  const visit = (node) => {
+    if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) {
+      const text = node.text;
+      const [head] = text.split('.');
+      if (
+        text.includes('.') &&
+        namespaces.has(head) &&
+        /^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)+$/.test(text)
+      ) {
+        found.push({ line: lineOf(node), key: text });
+      }
+    }
+    ts.forEachChild(node, visit);
+  };
+
+  visit(sf);
+  return found;
+}
+
 // ─── Gate ─────────────────────────────────────────────────────────
 
 const violations = [];
 const counts = [];
 
-// Die beiden Basissprachdateien müssen existieren — sonst ist die Paritaet
-// nicht pruefbar und das Gate waere aussagelos.
+// The two base locale files must exist — otherwise parity cannot be checked
+// and the gate would be meaningless.
 for (const required of ['de.json', 'en.json']) {
   if (!existsSync(join(LOCALES_DIR, required))) {
     violations.push({
       kind: 'locale-missing',
       where: `src/i18n/locales/${required}`,
-      detail: 'Sprachdatei fehlt',
+      detail: 'Locale file missing',
     });
   }
 }
@@ -736,7 +868,7 @@ for (const [name, set] of localeSets) {
   for (const key of onlyEn)
     violations.push({ kind: 'key-only-en', where: name, detail: key });
 
-  // Pluralformen müssen in beiden Sprachen identisch vorhanden sein
+  // Plural forms must be present identically in both languages
   const pluralSuffixesOf = (keys) =>
     new Set(
       keys
@@ -757,7 +889,7 @@ for (const [name, set] of localeSets) {
   }
 }
 
-// Leere Werte (nur für Basis-Dateien und Teile)
+// Empty values (only for base files and parts)
 for (const file of [
   ...(existsSync(LOCALES_DIR)
     ? readdirSync(LOCALES_DIR)
@@ -788,13 +920,13 @@ for (const file of [
       violations.push({
         kind: 'empty-value',
         where: toPosix(file),
-        detail: `${key} (leeres Array)`,
+        detail: `${key} (empty array)`,
       });
     }
   }
 }
 
-// Literaltexte in TSX
+// Literal texts in TSX
 for (const file of collectTsxFiles()) {
   const literals = scanLiterals(file);
   counts.push({ file: toPosix(file), count: literals.length, literals });
@@ -807,7 +939,62 @@ for (const file of collectTsxFiles()) {
   }
 }
 
-// Lesefehler waehrend des Laufs sind ein Befund (Exit 1), kein stiller Skip.
+// 5. Translation keys used in the code must resolve in BOTH languages.
+//    A key that exists nowhere renders the key itself — and where a German
+//    `defaultValue` is given, the German text leaks into the English UI.
+const flatDe = loadLocale(join(LOCALES_DIR, 'de.json'));
+const flatEn = loadLocale(join(LOCALES_DIR, 'en.json'));
+
+for (const file of collectSourceFiles()) {
+  for (const { line, key } of collectUsedKeys(file)) {
+    if (!resolves(flatDe, key)) {
+      violations.push({
+        kind: 'used-key-missing-de',
+        where: `${toPosix(file)}:${line}`,
+        detail: key,
+      });
+    }
+    if (!resolves(flatEn, key)) {
+      violations.push({
+        kind: 'used-key-missing-en',
+        where: `${toPosix(file)}:${line}`,
+        detail: key,
+      });
+    }
+  }
+}
+
+// 6. Key literals of the configuration tables must resolve in BOTH languages.
+//    The namespaces are the first segments of the locale keys (the locale
+//    files are flattened, so the top level is not visible in the key set).
+const namespaces = new Set(
+  [...Object.keys(flatDe), ...Object.keys(flatEn)].map(
+    (key) => key.split('.')[0]
+  )
+);
+const configDir = join(SRC_DIR, 'config');
+if (existsSync(configDir)) {
+  for (const file of walk(configDir).filter((f) => f.endsWith('.ts'))) {
+    for (const { line, key } of collectConfigKeys(file, namespaces)) {
+      if (!resolves(flatDe, key)) {
+        violations.push({
+          kind: 'config-key-missing-de',
+          where: `${toPosix(file)}:${line}`,
+          detail: key,
+        });
+      }
+      if (!resolves(flatEn, key)) {
+        violations.push({
+          kind: 'config-key-missing-en',
+          where: `${toPosix(file)}:${line}`,
+          detail: key,
+        });
+      }
+    }
+  }
+}
+
+// Read errors during the run are a finding (exit 1), not a silent skip.
 for (const ioError of IO_ERRORS) {
   violations.push({
     kind: 'io-error',
@@ -816,7 +1003,7 @@ for (const ioError of IO_ERRORS) {
   });
 }
 
-// ─── Ausgabe ──────────────────────────────────────────────────────
+// ─── Output ──────────────────────────────────────────────────────
 
 const totalLiterals = counts.reduce((sum, c) => sum + c.count, 0);
 
@@ -836,30 +1023,30 @@ if (COUNT_ONLY) {
       );
     }
   }
-  console.log(`\nSumme Literaltexte: ${totalLiterals}`);
-  console.log(`Dateien geprüft: ${counts.length}`);
+  console.log(`\nTotal literal texts: ${totalLiterals}`);
+  console.log(`Files checked: ${counts.length}`);
   process.exit(0);
 }
 
-console.log('=== i18n-Vollständigkeits-Gate ===');
+console.log('=== i18n completeness gate ===');
 const byKind = new Map();
 for (const v of violations) {
   if (!byKind.has(v.kind)) byKind.set(v.kind, []);
   byKind.get(v.kind).push(v);
 }
 if (violations.length === 0) {
-  console.log('OK — keine Verstöße.');
-  console.log(`Literaltexte in geprüften TSX-Dateien: ${totalLiterals}`);
-  console.log(`Geprüfte TSX-Dateien: ${counts.length}`);
+  console.log('OK — no violations.');
+  console.log(`Literal texts in checked TSX files: ${totalLiterals}`);
+  console.log(`TSX files checked: ${counts.length}`);
   process.exit(0);
 }
 for (const [kind, list] of byKind) {
   console.log(`\n[${kind}] ${list.length}×`);
   for (const v of list.slice(0, 40)) console.log(`  ${v.where}  ${v.detail}`);
-  if (list.length > 40) console.log(`  … und ${list.length - 40} weitere`);
+  if (list.length > 40) console.log(`  … and ${list.length - 40} more`);
 }
 console.log(
-  `\nGESAMT: ${violations.length} Verstöße, ${totalLiterals} Literaltexte.`
+  `\nTOTAL: ${violations.length} violations, ${totalLiterals} literal texts.`
 );
-console.log(`Geprüfte TSX-Dateien: ${counts.length}`);
+console.log(`TSX files checked: ${counts.length}`);
 process.exit(1);

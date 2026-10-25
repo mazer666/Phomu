@@ -23,9 +23,9 @@ interface MusicPlayerProps {
   amazonMusicLink?: string;
   amazonPrimePreview?: string;
   startSeconds?: number;
-  /** Stoppt Wiedergabe automatisch nach dieser Sekunde (z.B. startSeconds + 30) */
+  /** Stops playback automatically after this second (e.g. startSeconds + 30) */
   endSeconds?: number;
-  /** Blendet Video per Blur aus (Timeline-Modus: Song unbekannt) */
+  /** Blurs the video out (timeline mode: song unknown) */
   blurred?: boolean;
   className?: string;
 }
@@ -67,7 +67,7 @@ declare global {
 }
 
 /**
- * Hilfsfunktion zum Extrahieren der YouTube Video-ID
+ * Helper function for extracting the YouTube video ID
  */
 function extractYouTubeId(url: string): string | null {
   if (!url) return null;
@@ -86,23 +86,23 @@ function extractSpotifyTrackId(value?: string): string | null {
 }
 
 /**
- * Extrahiert die Amazon-Music-Track-ASIN aus verschiedenen Link-Formen.
+ * Extracts the Amazon Music track ASIN from different link shapes.
  *
- * Unterstuetzte Formen (alle kommen im Katalog vor):
- *   - https://music.amazon.com/tracks/<ASIN>          (Standard-Form fuer einen Track)
- *   - https://music.amazon.com/albums/<ALBUM>?trackAsin=<ASIN>  (bevorzugt: Album + Track)
- *   - https://music.amazon.com/albums/<ASIN>            (nur wenn es tatsaechlich ein Track ist)
- *   - https://www.amazon.de/dp/<ASIN>                   (Retail-Link auf den Track)
- *   - <ASIN>                                           (nackte ASIN, wie sie der Alt-Import lieferte)
+ * Supported shapes (all of them occur in the catalog):
+ *   - https://music.amazon.com/tracks/<ASIN>          (standard shape for a track)
+ *   - https://music.amazon.com/albums/<ALBUM>?trackAsin=<ASIN>  (preferred: album + track)
+ *   - https://music.amazon.com/albums/<ASIN>            (only if it really is a track)
+ *   - https://www.amazon.de/dp/<ASIN>                   (retail link to the track)
+ *   - <ASIN>                                           (bare ASIN, as delivered by the old import)
  *
- * Wichtig: Ein ALBUM-ASIN an dieser Stelle wuerde zwar gefunden, der Embed laeuft dann
- * aber ins Leere. Deshalb wird bei /albums/<ASIN> ohne trackAsin nur dann zurueckgegeben,
- * wenn keine bessere Form vorliegt.
+ * Important: an ALBUM ASIN at this position would be found, but the embed
+ * then runs into the void. That is why /albums/<ASIN> without trackAsin is
+ * only returned when no better shape is available.
  */
 export function extractAmazonTrackId(url?: string): string | null {
   if (!url) return null;
 
-  // 1) Album-Seite mit explizitem Track-Anker - die zuverlaessigste Form
+  // 1) Album page with an explicit track anchor - the most reliable shape
   const trackAsinMatch = url.match(/trackAsin=([a-zA-Z0-9]{10})/);
   if (trackAsinMatch) return trackAsinMatch[1];
 
@@ -114,11 +114,11 @@ export function extractAmazonTrackId(url?: string): string | null {
   const dpMatch = url.match(/\/dp\/([a-zA-Z0-9]{10})/);
   if (dpMatch) return dpMatch[1];
 
-  // 4) Album-Seite ohne Track-Anker - nur nutzen, wenn es sonst nichts gibt
+  // 4) Album page without a track anchor - only use it if there is nothing else
   const albumsMatch = url.match(/\/albums\/([a-zA-Z0-9]{10})/);
   if (albumsMatch) return albumsMatch[1];
 
-  // 5) Nackte ASIN (Alt-Import lieferte die ASIN ohne URL)
+  // 5) Bare ASIN (the old import delivered the ASIN without a URL)
   const bareMatch = url.trim().match(/^([a-zA-Z0-9]{10})$/);
   if (bareMatch) return bareMatch[1];
 

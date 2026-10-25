@@ -31,8 +31,8 @@ function headerValue(headers: HeaderEntry[], key: string): string {
   return headers.find((header) => header.key === key)?.value ?? '';
 }
 
-describe('Security-Header (next.config.ts)', () => {
-  it('liefert die Header fuer alle Routen', async () => {
+describe('Security headers (next.config.ts)', () => {
+  it('returns the headers for all routes', async () => {
     const headers = await nextConfig.headers?.();
 
     expect(headers).toBeDefined();
@@ -40,7 +40,7 @@ describe('Security-Header (next.config.ts)', () => {
     expect((headers?.[0]?.headers as HeaderEntry[]).length).toBeGreaterThan(0);
   });
 
-  it('setzt die Mindest-Header-Baseline', async () => {
+  it('sets the minimum header baseline', async () => {
     const headers = await resolveHeaders();
 
     expect(headerValue(headers, 'X-Content-Type-Options')).toBe('nosniff');
@@ -53,7 +53,7 @@ describe('Security-Header (next.config.ts)', () => {
     );
   });
 
-  it('erlaubt der Kamera nur den eigenen Origin (QR-Scanner)', async () => {
+  it('allows the camera only on its own origin (QR scanner)', async () => {
     const headers = await resolveHeaders();
     const permissions = headerValue(headers, 'Permissions-Policy');
 
@@ -62,7 +62,7 @@ describe('Security-Header (next.config.ts)', () => {
     expect(permissions).toContain('geolocation=()');
   });
 
-  it('setzt eine CSP mit allen erwarteten Direktiven', async () => {
+  it('sets a CSP with all expected directives', async () => {
     const headers = await resolveHeaders();
     const csp = headerValue(headers, 'Content-Security-Policy');
 
@@ -80,11 +80,11 @@ describe('Security-Header (next.config.ts)', () => {
       "form-action 'self'",
       "frame-ancestors 'none'",
     ]) {
-      expect(csp, `Direktive ${directive} fehlt`).toContain(directive);
+      expect(csp, `Directive ${directive} is missing`).toContain(directive);
     }
   });
 
-  it('laesst genau die im Code belegten Media-Origins zu', async () => {
+  it('allows exactly the media origins documented in the code', async () => {
     const headers = await resolveHeaders();
     const csp = headerValue(headers, 'Content-Security-Policy');
     const frameSrc =
@@ -100,7 +100,7 @@ describe('Security-Header (next.config.ts)', () => {
     expect(mediaSrc).toContain('https://p.scdn.co');
   });
 
-  it('erlaubt das YouTube-IFrame-API-Skript', async () => {
+  it('allows the YouTube IFrame API script', async () => {
     const headers = await resolveHeaders();
     const csp = headerValue(headers, 'Content-Security-Policy');
     const scriptSrc =
@@ -109,7 +109,7 @@ describe('Security-Header (next.config.ts)', () => {
     expect(scriptSrc).toContain('https://www.youtube.com');
   });
 
-  it('enthält keine Wildcard und kein unsicheres object-src', async () => {
+  it('contains no wildcard and no unsafe object-src', async () => {
     const headers = await resolveHeaders();
     const csp = headerValue(headers, 'Content-Security-Policy');
 
@@ -118,7 +118,7 @@ describe('Security-Header (next.config.ts)', () => {
     expect(csp).toContain("object-src 'none'");
   });
 
-  it('nutzt die im Code belegten Origins - der Test schlaegt fehl, wenn der Code sie entfernt', async () => {
+  it('uses the origins documented in the code - the test fails if the code removes them', async () => {
     const playerSource = await readFile(
       new URL('../components/game/MusicPlayer.tsx', import.meta.url),
       'utf-8'
@@ -128,20 +128,20 @@ describe('Security-Header (next.config.ts)', () => {
       'utf-8'
     );
 
-    // YouTube: IFrame-API-Skript und Embed-Frame
+    // YouTube: IFrame API script and embed frame
     expect(playerSource).toContain('https://www.youtube.com/iframe_api');
     expect(cardSource).toContain('https://www.youtube.com/embed/');
 
-    // Spotify: Embed-Frame
+    // Spotify: embed frame
     expect(playerSource).toContain('https://open.spotify.com/embed/track/');
 
-    // Amazon Music: Embed-Frame
+    // Amazon Music: embed frame
     expect(playerSource).toContain('https://music.amazon.com/embed/track/');
 
-    // Alternative YouTube-Domain
+    // Alternative YouTube domain
     expect(playerSource).toContain('music.youtube.com');
 
-    // Spotify-Preview-Audio (Host aus dem Katalog)
+    // Spotify preview audio (host from the catalog)
     const catalog = await readFile(
       new URL('../data/songs/E4.json', import.meta.url),
       'utf-8'

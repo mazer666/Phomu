@@ -1,21 +1,22 @@
 # Phomu — CI (Continuous Integration)
 #
-# Dieser Workflow ist die verbindliche technische Abnahme. Jeder Job prüft
-# genau eine Eigenschaft und schlägt bei einem echten Verstoß fehl.
-# Es gibt bewusst kein `continue-on-error` und kein `|| true`: ein Verstoß
-# muss den Job rot machen.
+# This workflow is the binding technical acceptance. Every job checks
+# exactly one property and fails on a real violation.
+# There is deliberately no `continue-on-error` and no `|| true`: a violation
+# has to turn the job red.
 #
 # Gates (CONTRACT.md §6, QUALITY.md §2):
 #   - Typecheck          -> scripts: typecheck
 #   - Lint               -> scripts: lint
 #   - Unit Tests         -> scripts: test (Vitest + Coverage)
 #   - Catalog Validation -> scripts: validate-songs, validate-catalog
-#   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size
+#   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size,
+#                         check:doc-language
 #   - Build              -> scripts: build (next build, output: 'export')
 #
-# Node-Version: 22 — die Version, mit der die Referenzmessung dieser Runde
-# durchgeführt wurde (node v22.19.0). Next.js 16 verlangt >= 20.9.0,
-# Vitest 4 unterstützt 20/22/24.
+# Node version: 22 — the version with which the reference measurement of
+# this round was made (node v22.19.0). Next.js 16 requires >= 20.9.0,
+# Vitest 4 supports 20/22/24.
 
 name: CI
 
@@ -24,11 +25,11 @@ on:
     branches: ['main']
   pull_request:
 
-# Nur lesen — der Workflow baut nichts und veröffentlicht nichts.
+# Read only — the workflow builds nothing and publishes nothing.
 permissions:
   contents: read
 
-# Pro Branch wird nur der jeweils neueste Lauf gerechnet.
+# Per branch only the most recent run is computed.
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -126,8 +127,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      # `if: always()` sorgt dafür, dass alle drei Gates berichtet werden —
-      # ein fehlgeschlagenes Gate macht den Job trotzdem rot.
+      # `if: always()` makes sure that all four gates are reported —
+      # a failed gate still turns the job red.
       - name: Gate — i18n completeness
         if: always()
         run: npm run check:i18n
@@ -137,6 +138,9 @@ jobs:
       - name: Gate — source file size
         if: always()
         run: npm run check:file-size
+      - name: Gate — documentation language
+        if: always()
+        run: npm run check:doc-language
 
   build:
     name: Build

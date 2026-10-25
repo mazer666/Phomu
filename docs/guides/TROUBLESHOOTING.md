@@ -1,213 +1,210 @@
-# Fehlerbehebung für Spielerinnen und Spieler
+# Troubleshooting for players
 
-Die Probleme, die beim Spielen wirklich auftreten — und was in jedem Fall zu tun
-ist. Kein Fall von „das ist halt so".
+The problems that really occur while playing — and what to do in each case.
+No case of "that's just how it is".
 
-**Kurzfassung:** Der häufigste Fall ist ein **404** (Adresse ohne `/Phomu`), der
-zweithäufigste ein **blockierter Ton**. Beide stehen ganz unten.
-
----
-
-## 1. Der Ton bleibt stumm
-
-**Symptom:** Die Karte wird gezogen, der Countdown läuft, aber es ist nichts zu
-hören. Der Punktestand funktioniert, das Spiel läuft.
-
-**Ursache:** Browser starten Audiowiedergabe nur nach einer Nutzergeste. Die App
-zählt drei Sekunden vor, damit der Ton freigegeben wird — reicht das nicht, muss
-einmal geklickt werden.
-
-**Lösung, in dieser Reihenfolge:**
-
-1. **Lautstärke prüfen.** Unter *Einstellungen → Audio & Provider* stehen die
-   Schalter „Hintergrundmusik" und „Soundeffekte". Beide müssen auf „an" stehen.
-   Beide Regler sind **unabhängig** voneinander — es kann sein, dass die Musik aus
-   ist, die Effekte aber an.
-2. **Einmal klicken.** Ein beliebiger Klick auf die Seite genügt. Danach läuft der
-   Ton.
-3. **Autoplay erlauben.** In Chrome und Safari über das Symbol neben der
-   Adresszeile → „Website-Einstellungen" → „Automatische Wiedergabe" erlauben.
-   In Firefox: `about:config` → `media.autoplay.default` → `0`.
-4. **System-Mixer prüfen.** Läuft gerade ein Video im Vollbild, ein anderer Tab
-   mit Ton, oder ist ein Bluetooth-Headset verbunden? Der Browser mischt mit dem
-   System-Mixer — das Gerät kann stummgeschaltet sein, während die App korrekt
-   spielt.
-5. **Auf YouTube wechseln.** Unter *Audio & Provider* ist **YouTube** die
-   Voreinstellung und braucht kein Konto. **Spotify Free** und **Amazon Music**
-   spielen nur eine 30-Sekunden-Vorschau; die ist regional nicht überall
-   verfügbar. Wer dort nichts hört, hat kein Geräteproblem, sondern eine
-   fehlende Vorschau.
-6. **Den Song überspringen.** Ist das Video regional gesperrt oder fehlerhaft, gibt
-   es im Spiel den Knopf **🎲 Video kaputt? Neu würfeln**. Es wird ein anderer Song
-   gezogen, der Rundenzähler läuft normal weiter.
-7. **Provider-Modus prüfen.** Unter *Audio & Provider* gibt es „YouTube Player
-   Modus" mit **Standard** und **Music**. „Music" ist die YouTube-Music-Variante
-   und liefert je nach Region ein anderes Ergebnis. Im Zweifel auf **Standard**
-   stellen.
+**In short:** The most frequent case is a **404** (address without `/Phomu`), the
+second most frequent one is a **blocked sound**. Both are at the very bottom.
 
 ---
 
-## 2. Die Kamera findet keinen Code
+## 1. The sound stays silent
 
-**Symptom:** Der Scanner öffnet sich, aber der Code wird nicht erkannt. Oder das
-Scanner-Bild bleibt schwarz.
+**Symptom:** The card is drawn, the countdown runs, but there is nothing to hear.
+The score works, the game runs.
 
-**Ursache und Lösung:**
+**Cause:** Browsers only start audio playback after a user gesture. The app counts
+three seconds down so that the sound is released — if that is not enough, you
+have to click once.
 
-| Ursache | Was zu tun ist |
+**Solution, in this order:**
+
+1. **Check the volume.** Under `Einstellungen → Audio & Provider` (settings →
+   audio & provider) there are the `Hintergrundmusik` (background music) and
+   `Soundeffekte` (sound effects) switches. Both have to be on. Both sliders are
+   **independent** of each other — the music can be off while the effects are on.
+2. **Click once.** Any click on the page is enough. After that, the sound plays.
+3. **Allow autoplay.** In Chrome and Safari via the icon next to the address bar
+   → `Website-Einstellungen` (site settings) → allow `Automatische Wiedergabe`
+   (automatic playback). In Firefox: `about:config` → `media.autoplay.default` →
+   `0`.
+4. **Check the system mixer.** Is a video running fullscreen, another tab with
+   sound, or a Bluetooth headset connected? The browser mixes with the system
+   mixer — the device can be muted while the app plays correctly.
+5. **Switch to YouTube.** Under *Audio & Provider* **YouTube** is the default and
+   needs no account. **Spotify Free** and **Amazon Music** only play a
+   30-second preview; that is not available in every region. If you hear nothing
+   there, you do not have a device problem but a missing preview.
+6. **Skip the song.** If the video is blocked regionally or faulty, there is the
+   button `🎲 Video kaputt? Neu würfeln` ("Video broken? Roll again") in the
+   game. Another song is drawn, the round counter keeps running normally.
+7. **Check the provider mode.** Under *Audio & Provider* there is
+   `YouTube Player Modus` (YouTube player mode) with **Standard** and **Music**.
+   "Music" is the YouTube Music variant and delivers a different result depending
+   on the region. When in doubt, set it to **Standard**.
+
+---
+
+## 2. The camera finds no code
+
+**Symptom:** The scanner opens, but the code is not recognised. Or the scanner
+image stays black.
+
+**Cause and solution:**
+
+| Cause | What to do |
 |---|---|
-| Die Kameraerlaubnis fehlt | In den Browser-Einstellungen die Kamera für diese Seite erlauben. Das Symbol neben der Adresszeile öffnet die Einstellungen. Danach den Scanner neu öffnen. |
-| Es gibt keine Kamera / sie ist belegt | Andere Anwendung schließen, die die Kamera nutzt (Video-Call, Kamera-App). |
-| Der Code ist zu klein oder zu weit weg | Die Karte näher heranhalten und den QR-Code in den Rahmen in der Bildmitte bringen. |
-| Der Code ist spiegelverkehrt oder zu schief | Die Karte gerade halten. |
-| Der Code ist zu dunkel | Besseres Licht. Nachts reicht die Bildschirmhelligkeit oft nicht. |
-| Der Code ist **abgedeckt** (etwa durch einen Aufkleber) | Der QR-Code muss vollständig frei liegen. |
-| Der Code zeigt auf eine nicht unterstützte Adresse | Siehe unten. |
+| The camera permission is missing | Allow the camera for this site in the browser settings. The icon next to the address bar opens the settings. Then open the scanner again. |
+| There is no camera / it is busy | Close the other application that uses the camera (video call, camera app). |
+| The code is too small or too far away | Hold the card closer and bring the QR code into the frame in the centre of the image. |
+| The code is mirrored or too crooked | Hold the card straight. |
+| The code is too dark | Better light. At night the screen brightness often is not enough. |
+| The code is **covered** (for example by a sticker) | The QR code has to lie completely free. |
+| The code points to an unsupported address | See below. |
 
-**Wichtiger Hinweis zu den QR-Inhalten:** Der Scanner versteht drei Formate:
+**Important note about the QR contents:** The scanner understands three formats:
 
-- `@Anna` — legt einen Spieler an,
-- `…?pack=Rock Anthems` — wählt ein Pack aus,
-- `…?session=123456` — wird erkannt, aber noch nicht ausgeführt.
+- `@Anna` — adds a player,
+- `…?pack=Rock Anthemes` — selects a pack,
+- `…?session=123456` — is recognised but not yet executed.
 
-Ein Code der Form `…?id=<Song-ID>` wird **nicht** unterstützt. Wird eine solche
-Karte gescannt, passiert sichtbar nichts — das ist kein Defekt der Kamera, sondern
-eine noch nicht umgesetzte Funktion.
+A code of the form `…?id=<Song-ID>` is **not** supported. If such a card is
+scanned, nothing visible happens — that is not a defect of the camera but a
+function that has not yet been implemented.
 
-**Wenn gar nichts hilft:** Der Spielername steht als Text auf der Karte. Trage ihn
-in Schritt 1 der Lobby von Hand ein. Für den Pack gilt dasselbe: in Schritt 3
-auswählen.
+**If nothing helps at all:** The player name is written as text on the card. Enter
+it by hand in step 1 of the lobby. The same applies to the pack: select it in
+step 3.
 
 ---
 
-## 3. Die Sitzung ist verloren
+## 3. The session is lost
 
-**Symptom:** Nach einem Neuladen (oder einem Tab-Wechsel auf dem Handy) ist die
-Lobby leer oder der Spielstand steht am Anfang.
+**Symptom:** After a reload (or a tab switch on the phone) the lobby is empty or
+the game state is back at the beginning.
 
-**Was tatsächlich erhalten bleibt:** Alles, was in der Lobby eingestellt wurde —
-Spieler, Teams, Modi, Packs, Endbedingung, Audio- und Designwahl. Das liegt im
-Speicher des Browsers und wird beim Neuladen wiederhergestellt. Auch der
-Gesamt-XP bleibt.
+**What actually survives:** Everything that was set in the lobby — players, teams,
+modes, packs, end condition, audio and design choice. That lives in the browser's
+storage and is restored on reload. The total XP survives as well.
 
-**Was verloren geht:** Der **laufende Spielstand**: die bereits vergebenen Punkte
-der aktuellen Runde und die Reihenfolge der Züge.
+**What is lost:** The **running game state**: the points already awarded in the
+current round and the order of the turns.
 
-**Lösung:**
+**Solution:**
 
-| Ich will … | Dann … |
+| I want to … | Then … |
 |---|---|
-| mit derselben Lobby weiterspielen | einfach in der Lobby auf **🚀 JETZT STARTEN!** tippen — die Einstellungen stehen noch |
-| nur die Punkte zurücksetzen | nach dem Spiel **Nochmal spielen** wählen: die Lobby bleibt, nur die Punkte gehen auf null |
-| alles zurücksetzen | in der Lobby auf **Reset ↺** tippen. Achtung: Das löscht auch Spieler, Teams und alle Einstellungen. |
-| den XP zurücksetzen | *Einstellungen → Legal & Konto* → „Gefahrzone" → **XP zurücksetzen** |
+| continue with the same lobby | simply tap **🚀 JETZT STARTEN!** ("LET'S GO!") in the lobby — the settings are still there |
+| only reset the points | after the game choose `Nochmal spielen` ("Play again"): the lobby stays, only the points go to zero |
+| reset everything | tap **Reset ↺** in the lobby. Caution: This also deletes players, teams and all settings. |
+| reset the XP | `Einstellungen → Legal & Konto` (settings → legal & account) → `Gefahrzone` ("danger zone") → `XP zurücksetzen` ("Reset XP") |
 
-**Wenn die Lobby beim Neuladen leer ist:** Dann wurde entweder ein anderer Browser
-oder ein privates Fenster benutzt, oder die Browserdaten wurden gelöscht. Der
-Spielstand liegt ausschließlich lokal — es gibt keine Serverkopie, und das ist
-Absicht: Phomu ist ein Zero-Telemetrie-Projekt.
-
----
-
-## 4. Ein Cover fehlt oder passt nicht
-
-**Symptom:** In der Bibliothek (`Browse`) ist ein Bild leer, zeigt einen Platzhalter
-oder passt nicht zum Song.
-
-**Lösung:**
-
-1. **Leeres Cover:** Der Song hat in den Daten keine Bild-URL. Das Spiel funktioniert
-   trotzdem — der Cover-Abruf ist nur für die Karten nötig.
-2. **Falsches Cover:** Im Browse-Bereich oben auf **🔓 Admin an** schalten, den
-   Song über **Bearbeiten** öffnen und im Cover-Tab ein passendes Bild wählen.
-   Gesucht werden kann über iTunes und Deezer.
-3. **Alle Cover neu holen:** Über die Admin-Oberfläche unter `/Phomu/admin/review`
-   (Delta-Export: nur die geänderten Songs) oder `/Phomu/admin/songs`
-   (Vollexport eines Packs).
-4. **Änderungen merken:** Änderungen im Admin-Modus bleiben nur in diesem Browser.
-   Erst der Export macht sie dauerhaft.
-
-**Für gedruckte Karten:** Siehe den
-[Druck-Guide](PRINTING-GUIDE.md) — dort steht, welche Auflösung und welches
-Material nötig sind, damit ein QR-Code zuverlässig scanbar bleibt.
+**If the lobby is empty after a reload:** Then either a different browser or an
+incognito window was used, or the browser data was deleted. The game state exists
+locally only — there is no server copy, and that is intentional: Phomu is a
+zero-telemetry project.
 
 ---
 
-## 5. Ein Song fehlt im Katalog
+## 4. A cover is missing or does not fit
 
-**Symptom:** Ein bestimmter Song erscheint in der Bibliothek nicht, oder er wird
-im Spiel nie gezogen.
+**Symptom:** In the library (`Browse`) an image is empty, shows a placeholder or
+does not fit the song.
 
-**Lösung, in dieser Reihenfolge:**
+**Solution:**
 
-1. **Filter zurücksetzen.** In der Bibliothek auf **ALLES ZURÜCKSETZEN ↺** tippen.
-   Jeder gesetzte Filter blendet Songs aus: Jahrzehnt, Stimmung, Genre,
-   Schwierigkeit, „QR-Kompatibel", „One-Hit Wonders" und „Mit Songtexten".
-2. **Pack prüfen.** Der Zieher sucht **ausschließlich** in den in Schritt 3 der
-   Lobby ausgewählten Packs. Öffne Schritt 3 und wähle das Pack aus, in dem der
-   Song liegt.
-3. **Modus prüfen.** Jeder Song nennt die Modi, die er unterstützt. Ein Song ohne
-   eingetragenen Songtext wird im **Lyrics Labyrinth** nicht gezogen — dort greift
-   der Bonus-Modus, in dem der Song laut genannt wird.
-4. **Schwierigkeit und QR-Filter.** Beide werden ignoriert, wenn sie zu nichts
-   führen — es sei denn, der Modus „Lyrics" verlangt zwingend einen Song mit
-   Songtext.
-5. **Schon gespielt?** Bereits gespielte Songs werden bevorzugt vermieden. Wenn
-   alle Songs des Packs schon liefen, wird wieder einer davon gezogen — dann aber
-   aus den zuletzt gespielten.
-6. **Der Song fehlt wirklich?** Dann ist er nicht im Katalog. Unter
-   `/Phomu/admin/review` lässt sich prüfen, ob ein Eintrag existiert, und unter
-   `/Phomu/admin/songs` kann er angelegt werden.
+1. **Empty cover:** The song has no image URL in the data. The game works
+   nevertheless — the cover download is only needed for the cards.
+2. **Wrong cover:** In the browse area switch on `🔓 Admin an` ("Admin on") at
+   the top, open the song via `Bearbeiten` ("Edit") and choose a suitable image
+   in the cover tab. You can search via iTunes and Deezer.
+3. **Fetch all covers again:** Via the admin interface under
+   `/Phomu/admin/review` (delta export: only the changed songs) or
+   `/Phomu/admin/songs` (full export of a pack).
+4. **Remember the changes:** Changes in admin mode only remain in that browser.
+   Only the export makes them permanent.
 
-**Zusatzhinweis:** Wenn in der Lobby **„Keine Songs verfügbar. Bitte prüfe dein
-Song-Pack."** steht, passt die Auswahl der Packs nicht zum Katalog. Das kommt vor,
-wenn eine alte Pack-Kennung aus einer früheren Version gespeichert ist. Abhilfe:
-in Schritt 3 alle Packs ab- und wieder anwählen, oder in der Lobby **Reset ↺**
-tippen.
+**For printed cards:** See the
+[printing guide](PRINTING-GUIDE.md) — it states which resolution and which
+material are needed so that a QR code stays reliably scannable.
 
 ---
 
-## 6. Die Seite zeigt „404"
+## 5. A song is missing from the catalogue
 
-**Symptom:** Nach dem Öffnen der Adresse erscheint eine Fehlerseite.
+**Symptom:** A certain song does not appear in the library, or it is never drawn
+in the game.
 
-**Ursache:** Die Adresse stimmt nicht. Phomu wird mit einem Basis-Pfad ausgeliefert.
+**Solution, in this order:**
 
-| Richtig | Falsch |
+1. **Reset the filters.** In the library tap `ALLES ZURÜCKSETZEN ↺` ("RESET
+   EVERYTHING ↺"). Every filter that is set hides songs: decade, mood, genre,
+   difficulty, `QR-Kompatibel` ("QR compatible"), `One-Hit Wonders` ("one-hit
+   wonders") and `Mit Songtexten` ("with lyrics").
+2. **Check the pack.** The draw searches **exclusively** in the packs that were
+   selected in step 3 of the lobby. Open step 3 and select the pack in which the
+   song is.
+3. **Check the mode.** Every song names the modes it supports. A song without
+   lyrics is not drawn in **Lyrics Labyrinth** — there the bonus mode applies, in
+   which the song is named out loud.
+4. **Difficulty and QR filter.** Both are ignored when they lead to nothing —
+   unless the mode "Lyrics" mandatorily requires a song with lyrics.
+5. **Already played?** Already played songs are preferably avoided. If all songs
+   of the pack have already been played, one of them is drawn again — but then
+   from the most recently played.
+6. **Is the song really missing?** Then it is not in the catalogue. Under
+   `/Phomu/admin/review` you can check whether an entry exists, and under
+   `/Phomu/admin/songs` it can be created.
+
+**Additional note:** If the lobby shows `Keine Songs verfügbar. Bitte prüfe dein
+Song-Pack.` ("No songs available. Please check your song pack."), the pack
+selection does not match the catalogue. This happens when an old pack identifier
+from an earlier version is stored. Remedy: in step 3 deselect and reselect all
+packs, or tap **Reset ↺** in the lobby.
+
+---
+
+## 6. The page shows "404"
+
+**Symptom:** After opening the address an error page appears.
+
+**Cause:** The address is wrong. Phomu is shipped with a base path.
+
+| Correct | Wrong |
 |---|---|
 | `…/Phomu` | `…/` |
 | `…/Phomu/lobby` | `…/lobby` |
 | `…/Phomu/browse` | `…/browse` |
 | `…/Phomu/projector` | `…/projector` |
 
-**Hinweis:** Der Knopf **📺 Projector-Modus öffnen** im Spielmenü öffnet die
-Adresse derzeit **ohne** den Basis-Pfad und landet deshalb auf einer Fehlerseite.
-Für den Beamer die Adresse bitte von Hand aufrufen.
+**Note:** The button `📺 Projector-Modus öffnen` ("Open projector mode") in the
+game menu currently opens the address **without** the base path and therefore
+lands on an error page. For the projector, please call up the address by hand.
 
 ---
 
-## 7. Das Spiel startet nicht
+## 7. The game does not start
 
-| Symptom | Ursache und Lösung |
+| Symptom | Cause and solution |
 |---|---|
-| „Bitte wählen..." statt „Weiter" | In Schritt 1 fehlt ein Spieler, in Schritt 2 ein Modus oder in Schritt 3 ein Pack. |
-| Der Knopf „JETZT STARTEN!" fehlt | Es ist noch kein Spieler angelegt. Der Knopf erscheint in Schritt 6. |
-| Das Spiel springt sofort zur Lobby | Es läuft keine Partie. Die Seite `/Phomu/game` leitet ohne laufendes Spiel zur Lobby um. |
-| Der Song bleibt hängen | Der Zieher fand nichts Passendes. Siehe Abschnitt 5. |
-| „🎲 Video kaputt? Neu würfeln" hilft nicht | Dann ist der Fehler nicht am Video, sondern an der Internetverbindung. YouTube-Videos brauchen Verbindung. |
+| `Bitte wählen...` instead of `Weiter` | In step 1 a player is missing, in step 2 a mode or in step 3 a pack. |
+| The button `JETZT STARTEN!` is missing | No player has been created yet. The button appears in step 6. |
+| The game jumps back to the lobby immediately | No game is running. The page `/Phomu/game` redirects to the lobby without a running game. |
+| The song gets stuck | The draw found nothing suitable. See section 5. |
+| `🎲 Video kaputt? Neu würfeln` does not help | Then the error is not in the video but in the internet connection. YouTube videos need a connection. |
 
 ---
 
-## 8. Wenn gar nichts hilft
+## 8. If nothing helps at all
 
-1. **Seite neu laden.** Manchmal genügt das — der Zustand wird korrekt
-   wiederhergestellt.
-2. **Anderen Browser probieren.** Der Spielstand liegt im Browser-Speicher; ein
-   anderer Browser bringt ihn nicht mit.
-3. **Ohne privates Fenster arbeiten.** Im privaten Modus wird der Speicher beim
-   Schließen des Fensters gelöscht.
-4. **Admin-Seiten prüfen.** Unter `/Phomu/admin/review` steht, ob der Katalog
-   vollständig geladen wurde.
+1. **Reload the page.** Sometimes that is enough — the state is restored
+   correctly.
+2. **Try another browser.** The game state lives in the browser's storage; a
+   different browser does not bring it along.
+3. **Do not work in an incognito window.** In incognito mode the storage is deleted
+   when the window is closed.
+4. **Check the admin pages.** Under `/Phomu/admin/review` you can see whether the
+   catalogue was loaded completely.
 
-Technische Umgebung, Server-Adressen und Fehlerbilder auf der Kommandozeile:
-[Erste Schritte](../GETTING-STARTED.md).
+Technical environment, server addresses and error pictures on the command line:
+[Getting started](../GETTING-STARTED.md).

@@ -1,8 +1,8 @@
 /**
  * FeedbackOverlay Component
  *
- * Zeigt kurzzeitig eine humorvolle Einblendung (YDKJ/Känguru-Style),
- * wenn der Spieler eine Antwort abgegeben hat.
+ * Briefly shows a humorous overlay (YDKJ/Känguru style)
+ * when the player has submitted an answer.
  */
 'use client';
 
@@ -17,7 +17,7 @@ import {
 
 interface FeedbackOverlayProps {
   isCorrect: boolean | null;
-  triggerKey: number; // Wechselt bei jeder neuen Antwort
+  triggerKey: number; // Changes with every new answer
   onComplete?: () => void;
 }
 
@@ -55,8 +55,8 @@ export function FeedbackOverlay({
     const colors = isCorrect ? COLORS_CORRECT : COLORS_WRONG;
     const seedBase = `${isCorrect ? '1' : '0'}:${triggerKey}`;
 
-    // Der Spruch kommt aus der Übersetzung (Index ist deterministisch wie bisher).
-    // Der deutsche Originaltext dient nur als Fallback, falls ein Schlüssel fehlt.
+    // The quip comes from the translation (the index is deterministic as before).
+    // The German original text only serves as a fallback if a key is missing.
     const messageIndex = hashSeed(`msg:${seedBase}`) % pool.length;
     const keys = isCorrect ? FEEDBACK_CORRECT_KEYS : FEEDBACK_WRONG_KEYS;
     const message = t(keys[messageIndex % keys.length]!, {

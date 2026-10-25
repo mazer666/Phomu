@@ -1,26 +1,26 @@
-# Erste Schritte — vom Klon zum spielbaren Zustand
+# Getting started — from the clone to a playable state
 
-Dieses Dokument führt von einem leeren Verzeichnis bis zu einem Spiel, das auf dem
-Handy läuft. Alle Kommandos sind kopierbar, alle Ausgaben sind im Repo belegt.
+This document leads from an empty directory to a game that runs on the phone. All
+commands can be copied, all outputs are proven in the repository.
 
-Wenn du nicht nur spielen, sondern **ändern** willst, lies zuerst
-[`../WHERE_TO_CHANGE.md`](../WHERE_TO_CHANGE.md).
+If you want to **change** something and not only play, read
+[`../WHERE_TO_CHANGE.md`](../WHERE_TO_CHANGE.md) first.
 
 ---
 
-## 1. Voraussetzungen
+## 1. Prerequisites
 
-| Was | Version | Beleg |
+| What | Version | Evidence |
 |---|---|---|
-| Node.js | **20** | in `.github/workflows/deploy.yml` als `node-version: "20"` gepinnt |
-| npm | mit Node 20 ausgeliefert (≥ 10) | `package-lock.json` ist Lockfile-Version 3 |
-| Git | jede aktuelle Version | `package-lock.json`, `.git/` |
-| Browser | Chromium für den E2E-Test | `playwright.config.ts`, `npm run test:e2e:install` |
+| Node.js | **20** | pinned in `.github/workflows/deploy.yml` as `node-version: "20"` |
+| npm | shipped with Node 20 (≥ 10) | `package-lock.json` is lockfile version 3 |
+| Git | any current version | `package-lock.json`, `.git/` |
+| Browser | Chromium for the E2E test | `playwright.config.ts`, `npm run test:e2e:install` |
 
-`package.json` enthält **kein** `engines`-Feld. Die Version 20 ist deshalb aus der
-CI-Workflow-Datei abgeleitet, nicht aus einer Paket-Deklaration.
+`package.json` contains **no** `engines` field. Version 20 is therefore derived
+from the CI workflow file, not from a package declaration.
 
-Prüfen:
+Check:
 
 ```bash
 node --version
@@ -29,7 +29,7 @@ npm --version
 
 ---
 
-## 2. Klonen und Abhängigkeiten installieren
+## 2. Clone and install the dependencies
 
 ```bash
 git clone https://github.com/mazer666/Phomu.git
@@ -37,26 +37,26 @@ cd Phomu
 npm ci
 ```
 
-`npm ci` installiert exakt die Versionen aus `package-lock.json` — anders als
-`npm install` verändert es die Lockdatei nicht. Das ist der Grund, warum die CI
-`npm ci` verwendet.
+`npm ci` installs exactly the versions from `package-lock.json` — unlike
+`npm install` it does not modify the lock file. That is the reason why the CI
+uses `npm ci`.
 
-**Nebenwirkung:** `npm ci` ruft `postinstall` auf. Das Skript
-`scripts/setup-git-hooks.js` legt einen **Git-Hook `pre-push`** an, der vor jedem
-Push `npm run local-ci` ausführt. Im Repo-Verzeichnis wird der Hook also still
-installiert; entfernen lässt er sich mit
-`rm .git/hooks/pre-push`. Ohne `.git`-Verzeichnis (zum Beispiel in einem
-Container) überspringt das Skript die Installation mit einer Warnung.
+**Side effect:** `npm ci` calls `postinstall`. The script
+`scripts/setup-git-hooks.js` installs a **git hook `pre-push`** that runs
+`npm run local-ci` before every push. In the repository directory the hook is
+therefore installed silently; it can be removed with `rm .git/hooks/pre-push`.
+Without a `.git` directory (for example in a container) the script skips the
+installation with a warning.
 
 ---
 
-## 3. Starten
+## 3. Start
 
 ```bash
 npm run dev
 ```
 
-Ausgabe:
+Output:
 
 ```text
 ▲ Next.js 16.4.3 (Turbopack)
@@ -64,120 +64,123 @@ Ausgabe:
 ✓ Ready in 1632ms
 ```
 
-**Wichtig:** Die App liegt **nicht** auf `http://localhost:3000`, sondern auf
-**`http://localhost:3000/Phomu`**. Grund ist die Zeile `basePath: '/Phomu'` in
-`next.config.ts`. Die Wurzel `/` liefert einen **404** — das ist kein Fehler, das
-ist der Base-Path.
+**Important:** The app is **not** on `http://localhost:3000`, but on
+**`http://localhost:3000/Phomu`**. The reason is the line `basePath: '/Phomu'` in
+`next.config.ts`. The root `/` returns a **404** — that is not an error, that is
+the base path.
 
-| URL | Ergebnis |
+| URL | Result |
 |---|---|
-| `http://localhost:3000/Phomu` | Startseite, HTTP 200 |
+| `http://localhost:3000/Phomu` | Start page, HTTP 200 |
 | `http://localhost:3000/Phomu/lobby` | Lobby, HTTP 200 |
 | `http://localhost:3000/` | HTTP 404 |
 | `http://localhost:3000/lobby` | HTTP 404 |
 
-Der Dev-Server bindet zusätzlich auf die Netzwerk-Adresse des Rechners
-(`http://<LAN-IP>:3000/Phomu`) — damit kann ein zweites Gerät im selben WLAN
-mitmachen.
+The dev server additionally binds to the network address of the machine
+(`http://<LAN-IP>:3000/Phomu`) — that way a second device on the same WLAN can
+join in.
 
 ---
 
-## 4. Das Spiel starten
+## 4. Start the game
 
-1. `http://localhost:3000/Phomu` öffnen.
-2. **Lobby** → Schritt 1 „Wer spielt mit?" → mindestens einen Spieler anlegen.
-3. Schritt 2 „Wie wird gespielt?" → mindestens einen Modus wählen.
-4. Schritt 3 „Was hören wir?" → mindestens ein Pack wählen.
-5. Schritt 4 „Wann ist Schluss?" → Gewinnbedingung und Zielwert.
-6. Schritt 5 „Feintuning" → optional: Schwierigkeit, Zeitlimit, QR-Karten-Modus,
-   Zeitabzug, No-Cheat-Modus.
-7. Schritt 6 „Wer gegen wen?" → Team-Modus.
-8. **„JETZT STARTEN!"** → das Spiel beginnt.
+1. Open `http://localhost:3000/Phomu`.
+2. **Lobby** → step 1 `Wer spielt mit?` ("Who's playing?") → create at least one
+   player.
+3. Step 2 `Wie wird gespielt?` ("How do we play?") → choose at least one mode.
+4. Step 3 `Was hören wir?` ("What do we hear?") → choose at least one pack.
+5. Step 4 `Wann ist Schluss?` ("When is it over?") → winning condition and
+   target value.
+6. Step 5 `Feintuning` ("fine tuning") → optional: difficulty, time limit, QR
+   card mode, time decay, no-cheat mode.
+7. Step 6 `Wer gegen wen?` ("Who against whom?") → team mode.
+8. **`🚀 JETZT STARTEN!`** ("LET'S GO!") → the game begins.
 
-Der komplette Ablauf steht im Nutzer-Guide:
-[`user-guide/USER-GUIDE.de.md`](user-guide/USER-GUIDE.de.md) (deutsch) und
-[`user-guide/USER-GUIDE.en.md`](user-guide/USER-GUIDE.en.md) (englisch).
+The complete flow is in the user guide:
+[`user-guide/USER-GUIDE.en.md`](user-guide/USER-GUIDE.en.md) and
+[`user-guide/USER-GUIDE.en.md`](user-guide/USER-GUIDE.en.md) (English).
 
 ---
 
-## 5. Umgebungsvariablen: `.env.local` und `ADMIN_API_TOKEN`
+## 5. Environment variables: `.env.local` and `ADMIN_API_TOKEN`
 
-Die Admin-API (`/admin/covers/search`, `/admin/covers/save`) ist mit einem Token
-geschützt. Für das **Spielen** wird der Token **nicht** gebraucht — nur für die
-Katalogpflege.
+The admin API (`/admin/covers/search`, `/admin/covers/save`) is protected with a
+token. For **playing** the token is **not** needed — only for catalogue
+maintenance.
 
 ```bash
 cp .env.example .env.local
 ```
 
-`.env.example` enthält genau eine Zeile:
+`.env.example` contains exactly one line:
 
 ```text
 ADMIN_API_TOKEN=replace-with-long-random-token
 ```
 
-Dann einen echten Token erzeugen:
+Then generate a real token:
 
 ```bash
 npm run security:rotate-admin-token
 ```
 
-Ausgabe:
+Output:
 
 ```text
 New ADMIN_API_TOKEN (store securely, do not commit):
-<64 Hex-Zeichen>
+<64 hex characters>
 ```
 
-**Das Skript schreibt den Token nicht in die Datei** — es gibt ihn auf der
-Konsole aus. Du musst ihn selbst nach `.env.local` eintragen:
+**The script does not write the token into the file** — it prints it to the
+console. You have to enter it in `.env.local` yourself:
 
 ```text
-ADMIN_API_TOKEN=<der ausgegebene Hex-String>
+ADMIN_API_TOKEN=<the hex string that was printed>
 ```
 
-Alternativ von Hand:
+Alternatively by hand:
 
 ```bash
 openssl rand -hex 32
 ```
 
-Regeln:
+Rules:
 
-- Der Token muss **mindestens 32 Zeichen** lang sein
-  (`MIN_ADMIN_TOKEN_LENGTH` in `src/admin-api/_lib/security.ts`). Kürzer →
-  die API antwortet mit **503**.
-- `.env.local` ist über `.gitignore` (`*.env*.local`) von der Versionsverwaltung
-  ausgenommen. **Ein Token gehört nie ins Repository.**
-- Ohne `ADMIN_API_TOKEN` antwortet die Admin-API mit **503** („Admin API not
-  configured"), mit einem falschen Token mit **401**.
+- The token must be **at least 32 characters** long
+  (`MIN_ADMIN_TOKEN_LENGTH` in `src/admin-api/_lib/security.ts`). Shorter →
+  the API answers with **503**.
+- `.env.local` is excluded from version control via `.gitignore` (`*.env*.local`).
+  **A token never belongs into the repository.**
+- Without `ADMIN_API_TOKEN` the admin API answers with **503** ("Admin API not
+  configured"), with a wrong token with **401**.
 
 ---
 
-## 6. Prüfungen
+## 6. Checks
 
-### Schnell
+### Quick
 
 ```bash
-npm run typecheck          # TypeScript strict, ohne Emit
+npm run typecheck          # TypeScript strict, without emit
 npm run lint               # ESLint
-npm run test               # Vitest mit Coverage
+npm run test               # Vitest with coverage
 ```
 
-### Katalog
+### Catalogue
 
 ```bash
-npm run validate-songs     # Schema und Pflichtfelder — prüft standardmäßig src/data/songs/A1.json
-npm run validate-catalog   # Katalog-Gate über alle Dateien
+npm run validate-songs     # schema and required fields — checks src/data/songs/A1.json by default
+npm run validate-catalog   # catalogue gate over all files
 ```
 
-`npm run validate-songs` prüft **eine** Datei. Für eine andere:
+`npm run validate-songs` checks **one** file. For another one:
 
 ```bash
 npx tsx src/utils/validate-song-data.ts src/data/songs/B1.json
 ```
 
-Gemessene Ausgabe von `npm run validate-catalog` (Stand dieser Doku):
+Measured output of `npm run validate-catalog` (state at the time of this
+documentation):
 
 ```text
 Packs: 135
@@ -196,192 +199,191 @@ Fehlende Jahre (1950-2026): 0
 npm run build
 ```
 
-Der Build ist ein **statischer Export** (`output: 'export'` in `next.config.ts`).
-Das Ergebnis liegt in `out/` und wird mit dem Base-Path `/Phomu` erzeugt.
+The build is a **static export** (`output: 'export'` in `next.config.ts`). The
+result is in `out/` and is generated with the base path `/Phomu`.
 
 ### E2E
 
 ```bash
-npm run test:e2e:install          # Chromium für Playwright (einmalig)
-npm run test:e2e:install:linux    # nur Linux: fehlende Systembibliotheken
-npm run test:e2e:smoke            # der Smoke-Test
+npm run test:e2e:install          # Chromium for Playwright (once)
+npm run test:e2e:install:linux    # Linux only: missing system libraries
+npm run test:e2e:smoke            # the smoke test
 ```
 
-Der Playwright-Runner startet selbst einen Dev-Server (`playwright.config.ts`,
-`webServer.command = 'npm run dev'`, Port 3000) und beendet ihn danach. Läuft auf
-Port 3000 schon etwas, setze `E2E_BASE_URL` auf die vorhandene Instanz:
+The Playwright runner starts a dev server itself (`playwright.config.ts`,
+`webServer.command = 'npm run dev'`, port 3000) and stops it afterwards. If
+something is already running on port 3000, set `E2E_BASE_URL` to the existing
+instance:
 
 ```bash
 E2E_BASE_URL=http://127.0.0.1:3000/Phomu npm run test:e2e:smoke
 ```
 
-### Struktur-Gates
+### Structure gates
 
 ```bash
-npm run check:all          # i18n-Vollständigkeit, Doku-Linkcheck, Dateigröße
-npm run check:i18n         # DE/EN parallel, kein Literaltext im JSX
-npm run check:doc-links    # jeder relative Markdown-Link löst auf
-npm run check:file-size    # keine Quelldatei über 550 Zeilen
+npm run check:all          # i18n completeness, doc link check, file size
+npm run check:i18n         # DE/EN in parallel, no literal text in the JSX
+npm run check:doc-links    # every relative markdown link resolves
+npm run check:file-size    # no source file over 550 lines
 ```
 
-### Alles zusammen
+### Everything together
 
 ```bash
 npm run local-ci
 ```
 
-`scripts/local-ci.sh` führt in dieser Reihenfolge aus: Typecheck → Lint →
-Unit-Tests → Format-Check (nicht blockierend) → `validate-songs` →
-`validate-catalog` → Build → `npm audit --omit=dev --audit-level=moderate`. Der
-YouTube-Link-Audit läuft nur, wenn `YOUTUBE_API_KEY` gesetzt ist.
+`scripts/local-ci.sh` runs in this order: typecheck → lint → unit tests → format
+check (non-blocking) → `validate-songs` → `validate-catalog` → build →
+`npm audit --omit=dev --audit-level=moderate`. The YouTube link audit only runs
+if `YOUTUBE_API_KEY` is set.
 
 ---
 
-## 7. Fehlerbehebung
+## 7. Troubleshooting
 
-### „Port 3000 ist bereits belegt"
+### "Port 3000 is already in use"
 
 ```text
 Error: listen EADDRINUSE: address already in use :::3000
 ```
 
-Entweder läuft bereits ein Dev-Server, oder ein anderer Prozess belegt den Port.
+Either a dev server is already running, or another process is holding the port.
 
 ```bash
-# Belegenden Prozess finden
+# find the process that holds the port
 lsof -i :3000
 
-# Anderen Port verwenden
-npm run dev -- --port 3001     # dann ist die App unter http://localhost:3001/Phomu
+# use a different port
+npm run dev -- --port 3001     # then the app is on http://localhost:3001/Phomu
 ```
 
-Für den E2E-Test muss die Basis-URL dann mitziehen:
+For the E2E test the base URL then has to follow:
 
 ```bash
 E2E_BASE_URL=http://127.0.0.1:3001/Phomu npm run test:e2e:smoke
 ```
 
-### „Executable doesn't exist at …/chrome-linux/chrome"
+### "Executable doesn't exist at …/chrome-linux/chrome"
 
 ```text
 Error: browserType.launch: Executable doesn't exist at …
 ```
 
-Die Playwright-Browser fehlen. einmalig installieren:
+The Playwright browsers are missing. Install them once:
 
 ```bash
 npm run test:e2e:install
 ```
 
-### „Host system is missing dependencies to run browsers" (nur Linux)
+### "Host system is missing dependencies to run browsers" (Linux only)
 
 ```text
 Error: ║ Host system is missing dependencies to run browsers. ║
 ```
 
-Die Systembibliotheken fehlen. Dafür gibt es ein eigenes Kommando, das **Root**
-braucht:
+The system libraries are missing. There is a separate command for that, and it
+needs **root**:
 
 ```bash
 sudo npm run test:e2e:install:linux
 ```
 
-### „Admin API not configured" (HTTP 503)
+### "Admin API not configured" (HTTP 503)
 
-Die Admin-API wurde ohne `ADMIN_API_TOKEN` aufgerufen. Der Token fehlt in der
-Umgebung oder ist kürzer als 32 Zeichen.
+The admin API was called without `ADMIN_API_TOKEN`. The token is missing in the
+environment or is shorter than 32 characters.
 
 ```bash
-# prüfen, ob der Token gesetzt ist (nur die Länge ausgeben, nicht den Wert)
+# check whether the token is set (print the length only, not the value)
 node -e "console.log((process.env.ADMIN_API_TOKEN||'').length)"
 
-# Token neu erzeugen und in .env.local eintragen
+# generate a new token and enter it in .env.local
 npm run security:rotate-admin-token
 ```
 
-Nach dem Eintragen **Dev-Server neu starten** — die Umgebung wird beim Start
-gelesen, nicht bei jedem Request.
+After entering it, **restart the dev server** — the environment is read at
+startup, not on every request.
 
-### „Unauthorized" (HTTP 401)
+### "Unauthorized" (HTTP 401)
 
-Der Token stimmt nicht mit `ADMIN_API_TOKEN` überein. Häufigste Ursache: Der Token
-wurde mit Anführungszeichen oder mit Leerzeichen am Ende eingetragen. Der Vergleich
-ist zeitkonstant und case-sensitiv.
+The token does not match `ADMIN_API_TOKEN`. Most common cause: the token was
+entered with quotation marks or with a trailing space. The comparison is
+time-constant and case-sensitive.
 
-### „Der Ton wird vom Browser blockiert"
+### `Der Ton wird vom Browser blockiert` ("Audio is blocked by the browser")
 
-Browser starten Audiowiedergabe nur nach einer Nutzergeste. Phomu nutzt dafür den
-Countdown von `PHOMU_CONFIG.COUNTDOWN_SECONDS` (3 Sekunden) vor dem Start des
-Players. Wenn trotzdem nichts zu hören ist:
+Browsers only start audio playback after a user gesture. For this Phomu uses the
+countdown of `PHOMU_CONFIG.COUNTDOWN_SECONDS` (3 seconds) before the player
+starts. If there is still nothing to hear:
 
-1. **Prüfen, ob die Seite überhaupt Ton hat.** In den Einstellungen
-   (`/Phomu/settings/audio`) den Regler „Hintergrundmusik" und „Soundeffekte"
-   prüfen — beide Schalter stehen per Voreinstellung auf „an".
-2. **Prüfen, ob ein anderes Programm den Ton belegt** (Video im Vollbild, anderer
-   Tab, Bluetooth-Headset). Der Browser mischt mit dem System-Mixer.3. **Autoplay im Browser erlauben.** In Chrome und Safari die Berechtigung für
-   automatische Wiedergabe für die Seite setzen. In Firefox: `about:config` →
+1. **Check whether the page has sound at all.** In the settings
+   (`/Phomu/settings/audio`) check the `Hintergrundmusik` (background music) and
+   `Soundeffekte` (sound effects) switches — both switches are on by default.
+2. **Check whether another program is occupying the sound** (fullscreen video,
+   another tab, Bluetooth headset). The browser mixes with the system mixer.
+3. **Allow autoplay in the browser.** In Chrome and Safari set the permission for
+   automatic playback for the site. In Firefox: `about:config` →
    `media.autoplay.default` → `0`.
-4. **Einmal klicken.** Der erste Klick auf einen beliebigen Button der Seite
-   genügt; danach ist die Audiowiedergabe freigegeben.
-5. **Provider prüfen.** YouTube ist der Standard und braucht keine Zugangsdaten.
-   Spotify Free und Amazon Music nutzen eine 30-Sekunden-Vorschau, die regional
-   eingeschränkt sein kann — dann auf YouTube wechseln
-   (`/Phomu/settings/audio`).
-6. **YouTube-Wiedergabe prüfen.** Videos, die regional gesperrt sind, liefern
-   keinen Ton. Es gibt eine Fallback-Kette auf alternative IDs; hilft sie nicht,
-   den Song im Browse-Bereich überspringen
-   (`/Phomu/settings/game-rules` → im Spiel: „🎲 Video kaputt? Neu würfeln").
+4. **Click once.** The first click on any button of the page is enough; after
+   that, audio playback is released.
+5. **Check the provider.** YouTube is the default and needs no credentials.
+   Spotify Free and Amazon Music use a 30-second preview that can be restricted
+   regionally — in that case switch to YouTube (`/Phomu/settings/audio`).
+6. **Check the YouTube playback.** Videos that are blocked regionally deliver no
+   sound. There is a fallback chain to alternative IDs; if it does not help,
+   skip the song in the browse area (`/Phomu/settings/game-rules` → in the game:
+   `🎲 Video kaputt? Neu würfeln` ("Video broken? Roll again")).
 
-### „Keine Songs verfügbar. Bitte prüfe dein Song-Pack."
+### `Keine Songs verfügbar. Bitte prüfe dein Song-Pack.` ("No songs available. Please check your song pack.")
 
-Der Pack-Filter hat nichts gefunden. Ursache ist fast immer eine veraltete
-Pack-ID aus einer älteren Spielstand-Version. Die alten IDs sind in
-`PHOMU_CONFIG.PACK_ALIASES` auf die aktuellen Keys abgebildet. Abhilfe: in der
-Lobby **Schritt 3** öffnen, alle Packs ab- und wieder anwählen, oder in der Lobby
-**„Reset ↺"** drücken.
+The pack filter found nothing. The cause is almost always an outdated pack ID
+from an older version of the game state. The old IDs are mapped to the current
+keys in `PHOMU_CONFIG.PACK_ALIASES`. Remedy: open **step 3** in the lobby,
+deselect and reselect all packs, or press **"Reset ↺"** in the lobby.
 
-### Die Seite ist leer oder zeigt „404"
+### The page is empty or shows "404"
 
-Fast immer der fehlende Base-Path. Die App liegt unter `/Phomu`:
+Almost always the missing base path. The app is under `/Phomu`:
 
 ```text
-richtig:   http://localhost:3000/Phomu
-falsch:    http://localhost:3000
+correct:   http://localhost:3000/Phomu
+wrong:     http://localhost:3000
 ```
 
-### „Cannot find module" oder „Module not found" nach dem Klon
+### "Cannot find module" or "Module not found" after the clone
 
-`node_modules` ist unvollständig. Neu installieren:
+`node_modules` is incomplete. Install it again:
 
 ```bash
 rm -rf node_modules
 npm ci
 ```
 
-### „npm ci" bricht mit einem Lockfile-Fehler ab
+### "npm ci" aborts with a lockfile error
 
 ```text
 npm ci can only install packages when your package.json and package-lock.json … are in sync
 ```
 
-`package.json` und `package-lock.json` wurden auseinanderbearbeitet. Korrigiere
-das mit:
+`package.json` and `package-lock.json` were edited apart. Correct it with:
 
 ```bash
 npm install
-git diff package-lock.json      # die Änderung prüfen und mit committen
+git diff package-lock.json      # review the change and commit it
 ```
 
 ---
 
-## 8. Nächste Schritte
+## 8. Next steps
 
-| Ich will … | Dann lies |
+| I want to … | Then read |
 |---|---|
-| das Spiel verstehen | [`user-guide/USER-GUIDE.de.md`](user-guide/USER-GUIDE.de.md) |
-| etwas ändern | [`../WHERE_TO_CHANGE.md`](../WHERE_TO_CHANGE.md) |
-| die Regeln kennen | [`../REQUIREMENTS.md`](../REQUIREMENTS.md) |
-| die Architektur verstehen | [`../ARCHITECTURE.md`](../ARCHITECTURE.md) |
-| einen Begriff nachschlagen | [`../GLOSSARY.md`](../GLOSSARY.md) |
-| beitragen | [`../CONTRIBUTING.md`](../CONTRIBUTING.md) |
-| Fehler beim Spielen | [`guides/TROUBLESHOOTING.md`](guides/TROUBLESHOOTING.md) |
+| understand the game | [`user-guide/USER-GUIDE.en.md`](user-guide/USER-GUIDE.en.md) |
+| change something | [`../WHERE_TO_CHANGE.md`](../WHERE_TO_CHANGE.md) |
+| know the rules | [`../REQUIREMENTS.md`](../REQUIREMENTS.md) |
+| understand the architecture | [`../ARCHITECTURE.md`](../ARCHITECTURE.md) |
+| look up a term | [`../GLOSSARY.md`](../GLOSSARY.md) |
+| contribute | [`../CONTRIBUTING.md`](../CONTRIBUTING.md) |
+| problems while playing | [`guides/TROUBLESHOOTING.md`](guides/TROUBLESHOOTING.md) |

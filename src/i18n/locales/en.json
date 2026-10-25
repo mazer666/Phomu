@@ -97,6 +97,89 @@
     "youtube": "YouTube",
     "musicwall": "Music Wall"
   },
+  "packs": {
+    "globalHits": {
+      "tagline": "From Sinatra to Sabrina. All of it in here."
+    },
+    "eightiesFlashback": {
+      "tagline": "Shoulder pads. Synthesizers. Sweat beads."
+    },
+    "ninetiesRave": {
+      "tagline": "Kurt or Kylie? Both work here."
+    },
+    "guiltyPleasures": {
+      "tagline": "The songs you secretly know by heart."
+    },
+    "rockAnthems": {
+      "tagline": "Lighters up. Ears optional."
+    },
+    "summerVibes": {
+      "tagline": "Sunscreen, earworms, no way out."
+    },
+    "globalBeats": {
+      "tagline": "Reggaeton, Afrobeats, K-Pop. No borders."
+    },
+    "movieMagic": {
+      "tagline": "You know the film. The music gives it away."
+    },
+    "legendaryVoices": {
+      "tagline": "Sinatra. Mercury. Aretha. The GOATs themselves."
+    },
+    "modernCharts": {
+      "tagline": "Straight from TikTok into your eardrums."
+    },
+    "eurovisionIcons": {
+      "tagline": "Europe calling. Nobody wins, everybody dances."
+    },
+    "tikTokViral": {
+      "tagline": "When the beat drops and everyone sings along."
+    },
+    "jazzBlues": {
+      "tagline": "Nightclub feeling at 3 p.m."
+    },
+    "metalHardcore": {
+      "tagline": "For strong nerves and weak vocal cords."
+    },
+    "countryFolk": {
+      "tagline": "Homesickness meets guitar meets heart."
+    },
+    "pianoBallads": {
+      "tagline": "If you do not cry, you do not know the song."
+    },
+    "electronicSynth": {
+      "tagline": "Drop incoming. Ears on, brain off."
+    },
+    "soulFunk": {
+      "tagline": "If you do not dance, you are doing it wrong."
+    },
+    "classicalOrchestral": {
+      "tagline": "Everyone knows it. Nobody knows where from."
+    },
+    "grandFinale": {
+      "tagline": "The last magazine. Everything in. No turning back."
+    },
+    "youtubeImport": {
+      "tagline": "The import treasure trove. Colourful, mixed, surprising."
+    },
+    "eightiesPop": {
+      "tagline": "Synth-pop, new wave and everything the eighties shaped."
+    },
+    "kidsDisney": {
+      "tagline": "Film music kids love - and parents secretly love too."
+    },
+    "germanClassics": {
+      "tagline": "German schlager and evergreen at its very best."
+    },
+    "twoThousandsPopRnB": {
+      "tagline": "The decade of Outkast, Usher and Destiny’s Child."
+    },
+    "electronicTechno": {
+      "tagline": "Techno, house and everything that loves the bass."
+    },
+    "countryJazzBlues": {
+      "tagline": "Roots, blues and country - honest and deep."
+    }
+  },
   "modes": {
     "timeline": {
       "name": "Chronological Timeline",

@@ -1,47 +1,49 @@
-# ADR-0003 — Anti-Spoiler- und Reveal-Orchestrierung
+# ADR-0003 — Anti-Spoiler and Reveal Orchestration
 
 **Status:** Accepted
-**Datum:** 2026-10-25
-**Owner-Rolle:** Chief Architect
-**Bezugene Anforderungs-IDs:** MEDIA-001 (Anti-Spoiler), GAME-003 (Reveal), GAME-004 (Punkte), UI-002 (Projektor)
+**Date:** 2026-10-25
+**Owner role:** Chief Architect
+**Related requirement IDs:** MEDIA-001 (anti-spoiler), GAME-003 (reveal), GAME-004 (points), UI-002 (projector)
 
 ---
 
-## Kontext
+## Context
 
-Anti-Spoiler ist bei Phomu kein Komfortmerkmal, sondern das Produktversprechen:
-In einer Runde läuft Musik, der Pilot muss den Song erraten, und **niemand**
-anderes darf die Lösung sehen. Das betrifft vier Stellen gleichzeitig:
+Anti-spoiler is not a comfort feature in Phomu, it is the product promise:
+In a round music plays, the pilot has to guess the song, and **nobody** else
+may see the solution. This affects four places at the same time:
 
-1. **Der Musik-Player.** `src/components/game/MusicPlayer.tsx` kennt die
-   Prop `blurred` (`:28`). Bei `blurred=true` rendert der Wrapper mit
-   `blur-[60px] scale-125` (`:424`) und darüber liegt ein Overlay mit dem Text
-   „Musik läuft" und dem Hinweis „Swipe zum Aufdecken" (`:462`), das per
-   Drag-Geste aufgelöst wird (`:466-476`). Die Metadaten (`song.title`,
-   `song.artist`) sind aber **im Client-Speicher und im React-Baum**.
-2. **Der Fragemodus.** `src/components/game/QuestionPhase.tsx` selbst rendert im
-   Frage-Modus **keinen** Titel und **keinen** Künstler — die Auflösungstexte
-   der Runden-Auflösung existieren ausschließlich in
+1. **The music player.** `src/components/game/MusicPlayer.tsx` knows the prop
+   `blurred` (`:28`). With `blurred=true` the wrapper renders with
+   `blur-[60px] scale-125` (`:424`) and on top of it lies an overlay with the
+   text `"Musik läuft"` ("music is playing") and the hint `"Swipe zum Aufdecken"`
+   ("swipe to reveal") (`:462`), which is resolved by a drag gesture
+   (`:466-476`). The metadata (`song.title`, `song.artist`) is however **in the
+   client memory and in the React tree**.
+2. **The question mode.** `src/components/game/QuestionPhase.tsx` itself renders
+   in question mode **no** title and **no** artist — the reveal texts of the
+   round reveal exist exclusively in
    `src/components/game/RevealPhase.tsx` (`:240`, `:248`, `:297`, `:434`).
-   Die Modus-Widgets folgen dem für fünf von sechs Modi ebenfalls; die
-   gemessene Ausnahme ist `vibe-check` (siehe Entscheidung 3).
-3. **Die Hinweise.** `src/utils/censor-utils.ts:11` (`censorHint`) ersetzt
-   Titel- und Artist-Token in Hinweisen durch `[XXX]`. Die Schwellen stehen in
+   The mode widgets follow suit for five of six modes as well; the measured
+   exception is `vibe-check` (see decision 3).
+3. **The hints.** `src/utils/censor-utils.ts:11` (`censorHint`) replaces title
+   and artist tokens in hints with `[XXX]`. The thresholds are in
    `src/config/spoiler-config.ts` (`MIN_LENGTH: 4`, `EXCEPTIONS`, `IGNORE_WORDS`).
-   Aufgerufen in `src/components/game/modes/HintMasterMode.tsx:156`.
-4. **Der Beamer.** `src/app/projector/page.tsx:1-9` hält fest: „Kein Artist,
-   kein Titel, kein Album-Art — nichts das die Frage verrät."
+   Called in `src/components/game/modes/HintMasterMode.tsx:156`.
+4. **The projector.** `src/app/projector/page.tsx:1-9` states:
+   `"Kein Artist, kein Titel, kein Album-Art — nichts das die Frage verrät."`
+   ("No artist, no title, no album art — nothing that gives away the question.")
 
-Die Reveal-Orchestrierung läuft über `RoundPhase`
+The reveal orchestration runs through `RoundPhase`
 (`src/types/game-state.ts:28-33`): `'drawing' | 'question' | 'locked-in' |
-'reveal' | 'scoring'`. `src/app/game/page.tsx:404-462` hält `QuestionPhase`
-während des Reveals **gemountet** (`display: none`), damit der YouTube-Iframe
-nicht neu startet — ein bewusster, im Kommentar (`:404-407`) dokumentierter
-Eingriff in den Renderbaum.
+'reveal' | 'scoring'`. `src/app/game/page.tsx:404-462` keeps `QuestionPhase`
+**mounted** during the reveal (`display: none`), so that the YouTube iframe does
+not restart — a deliberate intervention into the render tree, documented in the
+comment (`:404-407`).
 
-### Der gemessene Bruch
+### The measured breach
 
-Die Phase wird ausschließlich über `advancePhase(phase)` gesetzt
+The phase is set exclusively via `advancePhase(phase)`
 (`src/stores/game-store.ts:439-441`):
 
 ```ts
@@ -50,178 +52,181 @@ advancePhase(phase) {
 },
 ```
 
-Der Übergang ist **ungeprüft**: jede Komponente kann in jede Phase wechseln.
-Es gibt **kein** `answersLocked`-Flag im Code (`grep -rn "answersLocked" src` →
-0 Treffer), und die Phase `'locked-in'` wird **nirgends gesetzt** — sie steht
-nur im Typ (`src/types/game-state.ts:31`) und in der Typ-Liste des Audio-Hooks
+The transition is **unchecked**: every component can switch to every phase.
+There is **no** `answersLocked` flag in the code (`grep -rn "answersLocked" src` →
+0 hits), and the phase `'locked-in'` is set **nowhere** — it exists only in the
+type (`src/types/game-state.ts:31`) and in the type list of the audio hook
 (`src/hooks/useGameAudioCues.ts:9`).
 
-Der Reveal hängt damit am Klick des Piloten („Alle fertig → Reveal",
-`src/components/game/QuestionPhase.tsx:86-101`) bzw. am Timer-Notfall
-(`handleTimeUp`, `src/app/game/page.tsx:232-236`), **nicht** daran, dass alle
-Antworten abgegeben sind. Zusätzlich zeigt
-`src/components/game/modes/SurvivorMode.tsx:195` den Text „Wartet auf das
-Reveal …", obwohl die Phase selbst nie auf `'locked-in'` wechselt.
+The reveal therefore hangs on the click of the pilot (the button
+`"Alle fertig → Reveal"`, "everyone ready → reveal", at
+`src/components/game/QuestionPhase.tsx:86-101`) resp. the timer emergency
+(`handleTimeUp`, `src/app/game/page.tsx:232-236`), **not** on the fact that all
+answers have been submitted. In addition
+`src/components/game/modes/SurvivorMode.tsx:195` shows the text
+`"Wartet auf das Reveal …"` ("waiting for the reveal …"), even though the phase
+itself never switches to `'locked-in'`.
 
 ---
 
-## Entscheidung
+## Decision
 
-### 1. Anti-Spoiler ist eine **Phasen-Eigenschaft**, kein Feature-Schalter
+### 1. Anti-spoiler is a **phase property**, not a feature switch
 
-Der Store kennt die Reihenfolge der Phasen. Ein Reveal ist nur zulässig, wenn
-die Runde vorher den Zustand „alle Antworten sind abgegeben" durchlaufen hat.
-Dafür wird der bestehende, aber ungenutzte Typ `'locked-in'` aktiviert:
+The store knows the order of the phases. A reveal is only permitted if the
+round has previously passed through the state "all answers are submitted". For
+this the existing but unused type `'locked-in'` is activated:
 
 ```text
-drawing ──drawSong()──▶ question ──submitAnswer() (für jeden Piloten)──▶ locked-in
+drawing ──drawSong()──▶ question ──submitAnswer() (for each pilot)──▶ locked-in
                             │                                                    │
                             │◀──────────── advancePhase('reveal') ──────────────┘
                             ▼
-                          reveal ──nextRound()──▶ drawing (nächste Runde)
+                          reveal ──nextRound()──▶ drawing (next round)
 ```
 
-### 2. `advancePhase` wird zu einem **zustandsbehafteten** Übergang
+### 2. `advancePhase` becomes a **stateful** transition
 
-`advancePhase` prüft die Zielphase gegen die erlaubte Übergangsmenge. Ein
-Übergang, der nicht erlaubt ist, wird **abgelehnt** (No-op) und nicht
-stillschweigend ausgeführt. Die Prüfung liegt **im Store**, damit sie nicht
-von einer Komponente umgangen werden kann.
+`advancePhase` checks the target phase against the allowed transition set. A
+transition that is not allowed is **rejected** (no-op) and not silently
+executed. The check lies **in the store**, so that it cannot be bypassed by a
+component.
 
-Die konkrete Regel:
+The concrete rule:
 
-| Von | Nach | Bedingung |
+| From | To | Condition |
 |---|---|---|
 | `drawing` | `question` | `currentSong !== null` |
-| `question` | `locked-in` | Für jeden Piloten in `turnOrder` existiert eine Antwort in `currentAnswers` |
-| `locked-in` | `reveal` | immer (der Pilot löst aus) |
-| `reveal` | `drawing` | immer, via `nextRound()` |
-| beliebig | `scoring` | nur via `endGame()` |
+| `question` | `locked-in` | For every pilot in `turnOrder` an answer exists in `currentAnswers` |
+| `locked-in` | `reveal` | always (the pilot triggers it) |
+| `reveal` | `drawing` | always, via `nextRound()` |
+| any | `scoring` | only via `endGame()` |
 
-Ein **Timer-Notfall** (`handleTimeUp`, `src/app/game/page.tsx:232-236`) darf
-weiterhin direkt nach `reveal` wechseln — der Timer ist ein Ausgang, kein
-Fehlerfall. Er umgeht die Antwortpflicht bewusst.
+A **timer emergency** (`handleTimeUp`, `src/app/game/page.tsx:232-236`) may
+still switch directly to `reveal` — the timer is an exit, not an error case. It
+deliberately bypasses the answer duty.
 
-### 3. Die Metadaten-Sichtbarkeit ist eine **Prop-Konvention**
+### 3. The metadata visibility is a **prop convention**
 
-Die Anti-Spoiler-Grenze der Darstellung wird an einer Stelle definiert und
-von allen Modus-Widgets eingehalten:
+The anti-spoiler boundary of the presentation is defined in one place and
+complied with by all mode widgets:
 
-- `MusicPlayer` bekommt `blurred` als **Pflicht-Prop** im Frage-Modus. Die
-  bisherige Form `blurred = false` als Default (`src/components/game/MusicPlayer.tsx:135`)
-  wird zu `blurred: boolean` (ohne Default) — der Compiler erzwingt dann, dass
-  jeder Aufrufer die Entscheidung trifft.
-- Das Freigeben des Videos bleibt **lokal** im `MusicPlayer` (`videoRevealed`,
-  `src/components/game/MusicPlayer.tsx:141`) und ist nicht mit der Phase
-  gekoppelt: der Pilot darf jederzeit aufdecken, aber der **Text** (Titel,
-  Künstler) erscheint erst in der Reveal-Phase.
+- `MusicPlayer` gets `blurred` as a **mandatory prop** in question mode. The
+  previous form `blurred = false` as default
+  (`src/components/game/MusicPlayer.tsx:135`) becomes `blurred: boolean`
+  (without default) — the compiler then forces every caller to make the
+  decision.
+- The release of the video remains **local** in the `MusicPlayer`
+  (`videoRevealed`, `src/components/game/MusicPlayer.tsx:141`) and is not
+  coupled to the phase: the pilot may reveal at any time, but the **text**
+  (title, artist) appears only in the reveal phase.
 
-**Gemessener Ist-Stand des Blur-Verhaltens je Modus** (`grep -n "blurred"
-src/components/game/modes/*.tsx`):
+**Measured current state of the blur behaviour per mode**
+(`grep -n "blurred" src/components/game/modes/*.tsx`):
 
-| Modus | `blurred`-Prop | Zeigt Titel/Künstler im Frage-Modus? | Fundstelle |
+| Mode | `blurred` prop | Shows title/artist in question mode? | Location |
 |---|---|---|---|
-| `survivor` | `!answered && !cheatUsed` | nein — Platzhalter `???` | `SurvivorMode.tsx:69`, `:100-103` |
-| `timeline` | `!isRevealed` | nein — erst nach Slot-Auflösung | `TimelineMode.tsx:281`, `:516-519` |
-| `lyrics` | `!isRevealing` | nein — erst im Reveal-Block | `LyricsMode.tsx:121`, `:132-133` |
-| `cover-confusion` | `phase !== 'done'` | nein — erst in `self-assess` | `CoverConfusionMode.tsx:114`, `:205-207` |
-| `hint-master` | `!isRevealed` | nein — erst nach „LÖSUNG ZEIGEN" | `HintMasterMode.tsx:133`, `:202-203` |
-| `vibe-check` | **`false`** (immer ungeblurt) | **ja — `song.artist` und `song.title` stehen dauerhaft im Frage-Bildschirm** | `VibeCheckMode.tsx:99`, `:116-118` |
+| `survivor` | `!answered && !cheatUsed` | no — placeholder `???` | `SurvivorMode.tsx:69`, `:100-103` |
+| `timeline` | `!isRevealed` | no — only after the slot resolution | `TimelineMode.tsx:281`, `:516-519` |
+| `lyrics` | `!isRevealing` | no — only in the reveal block | `LyricsMode.tsx:121`, `:132-133` |
+| `cover-confusion` | `phase !== 'done'` | no — only in `self-assess` | `CoverConfusionMode.tsx:114`, `:205-207` |
+| `hint-master` | `!isRevealed` | no — only after `"LÖSUNG ZEIGEN"` ("show solution") | `HintMasterMode.tsx:133`, `:202-203` |
+| `vibe-check` | **`false`** (always unblurred) | **yes — `song.artist` and `song.title` are permanently on the question screen** | `VibeCheckMode.tsx:99`, `:116-118` |
 
-> **Gemessene Ausnahme:** `vibe-check` blendet weder das Video noch die
-> Metadaten. Das ist im Modus sachlich vertretbar (die gesuchte Antwort ist die
-> Stimmung, nicht der Song), bedeutet aber: **in einem Vibe-Check-Runde ist der
-> Songtitel für alle sichtbar.** Die Regel lautet deshalb: die Metadaten-Sichtbarkeit
-> ist **eine Entscheidung pro Modus**, keine Eigenschaft der Phase — und sie wird
-> ab jetzt explizit dokumentiert statt implizit vorausgesetzt.
+> **Measured exception:** `vibe-check` hides neither the video nor the
+> metadata. That is defensible in terms of substance in the mode (the answer
+> being looked for is the mood, not the song), but it means: **in a vibe-check
+> round the song title is visible to everyone.** The rule is therefore:
+> the metadata visibility is **one decision per mode**, not a property of the
+> phase — and from now on it is explicitly documented instead of implicitly
+> assumed.
 
-### 4. Hinweis-Zensur bleibt eine reine Funktion
+### 4. Hint censorship remains a pure function
 
-`censorHint` (`src/utils/censor-utils.ts:11`) bleibt eine reine Funktion ohne
-React- und ohne Store-Zugriff. Die Schwellen kommen **ausschließlich** aus
-`src/config/spoiler-config.ts`. Die heute hartkodierten `4` in
+`censorHint` (`src/utils/censor-utils.ts:11`) remains a pure function without
+React and without store access. The thresholds come **exclusively** from
+`src/config/spoiler-config.ts`. The currently hardcoded `4` in
 `src/utils/validate-song-data.ts:195-196`,
-`src/app/admin/songs/page.tsx:84-85` und `src/utils/censor-utils.ts:50` werden
-durch `SPOILER_CONFIG.MIN_LENGTH` ersetzt (ADR-0001 §5).
+`src/app/admin/songs/page.tsx:84-85` and `src/utils/censor-utils.ts:50` are
+replaced by `SPOILER_CONFIG.MIN_LENGTH` (ADR-0001 §5).
 
-### 5. Der Beamer bleibt eine eigene, spoilerfreie Projektion
+### 5. The projector remains its own spoiler-free projection
 
-`/projector` rendert Modus, Punktestand, aktiven Piloten und Timer — **keinen**
-Titel, **keinen** Künstler, **kein** Cover. Das ist keine Konvention, sondern
-der Zweck der Seite; sie liest aus demselben Store und zeigt bewusst eine
-Auszug der Felder.
+`/projector` renders mode, score, active pilot and timer — **no** title, **no**
+artist, **no** cover. That is not a convention but the purpose of the page; it
+reads from the same store and deliberately shows a subset of the fields.
 
 ---
 
-## Konsequenzen
+## Consequences
 
-### Positiv
+### Positive
 
-- Der Reveal wird vom Klick des Piloten entkoppelt: „alle Antworten abgegeben"
-  wird ein **Zustand des Stores** und damit prüfbar und testbar.
-- Die Phase `'locked-in'` wird vom Typ zum gelebten Konzept — kein toter
-  Enum-Wert mehr.
-- Ein fehlgeschlagener oder vergessener Aufruf von `advancePhase('reveal')`
-  kann nicht mehr stillschweigend die Lösung freigeben.
-- Die Anti-Spoiler-Regeln sind an **drei** Stellen dokumentiert (Store-Übergang,
-  `MusicPlayer`-Prop, Projektor-Seite) und damit beim Review sichtbar.
+- The reveal is decoupled from the click of the pilot: "all answers are
+  submitted" becomes a **state of the store** and thus checkable and testable.
+- The phase `'locked-in'` goes from a type to a lived concept — no more dead
+  enum value.
+- A failed or forgotten call of `advancePhase('reveal')` can no longer silently
+  release the solution.
+- The anti-spoiler rules are documented in **three** places (store transition,
+  `MusicPlayer` prop, projector page) and are therefore visible in the review.
 
 ### Negative / Trade-offs
 
-- **Mehr Zustand im Store.** `locked-in` muss von `submitAnswer` gesetzt
-  werden, nicht nur von `advancePhase`. Der Store wächst um eine Bedingung.
-- **Ein Timer-Fall bleibt.** `handleTimeUp` überspringt die Antwortpflicht.
-  Das ist gewollt, aber es bedeutet: der Reveal ist **nicht** in jedem Fall an
-  „alle Antworten abgegeben" gekoppelt. Die Regel ist „Antwortpflicht, außer
-  der Timer läuft ab".
-- **Pflicht-Prop `blurred`** erzwingt Änderungen an allen Aufrufern des
-  `MusicPlayer` (6 Modus-Widgets + `LyricsMode`-Bonusrunde).
-- **Ein Test fehlt heute.** Es gibt keinen Test, der beweist, dass der Reveal
-  erst nach der Antwortpflicht erfolgt. `src/components/game/QuestionPhase.test.tsx`
-  existiert **nicht** (im Repo liegen nur `src/utils/*.test.ts` und
+- **More state in the store.** `locked-in` has to be set by `submitAnswer`, not
+  only by `advancePhase`. The store grows by one condition.
+- **One timer case remains.** `handleTimeUp` skips the answer duty. That is
+  intended, but it means: the reveal is **not** coupled to "all answers are
+  submitted" in every case. The rule is "answer duty, unless the timer runs
+  out".
+- **Mandatory prop `blurred`** forces changes at all callers of the
+  `MusicPlayer` (6 mode widgets + `LyricsMode` bonus round).
+- **One test is missing today.** There is no test that proves that the reveal
+  happens only after the answer duty.
+  `src/components/game/QuestionPhase.test.tsx` does **not** exist (the
+  repository only contains `src/utils/*.test.ts` and
   `src/components/game/MusicPlayer.test.ts`).
 
-### Was die Entscheidung unmöglich macht
+### What the decision makes impossible
 
-- Eine Komponente kann nicht mehr per `advancePhase('reveal')` die Lösung
-  erzwingen, ohne die Antwortpflicht zu umgehen.
-- `'locked-in'` kann nicht mehr entfernt werden, ohne die Antwortpflicht
-  aufzugeben.
-- Der `MusicPlayer` kann nicht mehr ohne Entscheidung über den Blur-Zustand
-  aufgerufen werden.
-
----
-
-## Alternativen (verworfen)
-
-- **Reveal-Freigabe allein über den Pilot-Klick (Status quo).** *Verworfen:*
-  Der Pilot ist ein Spieler und damit kein verlässlicher Wächter. Ein
-  versehentlicher Klick auf „Alle fertig → Reveal" gibt die Lösung preis, bevor
-  die Runde gespielt wurde.
-- **Serverseitige Geheimhaltung (Song-Titel nie an den Client senden).**
-  *Verworfen:* `output: 'export'` (`next.config.ts:4`) erlaubt keine
-  Server-Routen, und die QR-Karten brauchen den Song-Datensatz ohnehin im
-  Client, um das Video abzuspielen. Eine serverseitige Lösung wäre ein
-  Server-Projekt — das kommt mit ADR-0002 (Server), nicht hier.
-- **Meta-Daten im Client verschlüsseln.** *Verworfen:* Der Schlüssel läge im
-  Client. Das wäre Security-theater ohne kryptografischen Nutzen.
-- **Ein globaler `spoilerFree`-Schalter in der Config.** *Verworfen:* Der
-  Zustand ist **phasenabhängig**, nicht global. Ein Schalter würde die
-  Phasenlogik nicht abbilden und würde die Wege verzweigen.
-- **Die Anti-Spoiler-Prüfung in die Komponenten verlagern.** *Verworfen:*
-  Jede Komponente wäre einzeln prüfbar und einzeln übergehbar — die Regel wäre
-  nicht mehr an einer Stelle erzwingbar.
+- A component can no longer force the solution via `advancePhase('reveal')`
+  without bypassing the answer duty.
+- `'locked-in'` can no longer be removed without giving up the answer duty.
+- The `MusicPlayer` can no longer be called without a decision about the blur
+  state.
 
 ---
 
-## Verifikation
+## Rejected alternatives
 
-| Prüfung | Kommando / Ort |
+- **Release of the reveal solely via the click of the pilot (status quo).**
+  *Rejected:* The pilot is a player and therefore no reliable guardian. An
+  accidental click on `"Alle fertig → Reveal"` ("everyone ready → reveal")
+  gives away the solution before the round has been played.
+- **Server-side secrecy (never send the song title to the client).**
+  *Rejected:* `output: 'export'` (`next.config.ts:4`) allows no server routes,
+  and the QR cards need the song record in the client anyway in order to play
+  the video. A server-side solution would be a server project — that comes with
+  ADR-0002 (server), not here.
+- **Encrypt the metadata in the client.** *Rejected:* The key would lie in the
+  client. That would be security theatre without cryptographic benefit.
+- **A global `spoilerFree` switch in the config.** *Rejected:* The state is
+  **phase-dependent**, not global. A switch would not map the phase logic and
+  would branch the paths.
+- **Move the anti-spoiler check into the components.** *Rejected:* Every
+  component would be individually checkable and individually bypassable — the
+  rule would no longer be enforceable in one place.
+
+---
+
+## Verification
+
+| Check | Command / Location |
 |---|---|
-| Übergangsprüfung im Store | `src/stores/game-store.ts` — `advancePhase` muss die erlaubte Menge prüfen |
-| `'locked-in'` wird gesetzt | `grep -rn "locked-in" src` →mindestens eine Setzstelle im Store |
-| Kein `answersLocked` als zweiter Wahrheit | `grep -rn "answersLocked" src` → 0 Treffer |
-| Kein Metadaten-Leak im Fragemodus | `grep -n "song.title\|song.artist" src/components/game/modes/*.tsx` — je Modus nur in dessen Reveal-Pfad; `vibe-check` ist die dokumentierte Ausnahme (§ Entscheidung 3) |
-| Zensur-Schwelle aus der Config | `grep -rn "length >= 4\|length < 4" src` → 0 Treffer außer `src/config/spoiler-config.ts` |
-| Projektor bleibt spoilerfrei | `grep -n "song.title\|song.artist\|coverUrl" src/app/projector/page.tsx` → 0 Treffer |
-| Negativtest | Neuer Test `src/stores/game-store.test.ts`: `advancePhase('reveal')` aus `question` ohne Antworten bleibt ein No-op |
+| Transition check in the store | `src/stores/game-store.ts` — `advancePhase` must check the allowed set |
+| `'locked-in'` is set | `grep -rn "locked-in" src` → at least one set location in the store |
+| No `answersLocked` as a second truth | `grep -rn "answersLocked" src` → 0 hits |
+| No metadata leak in question mode | `grep -n "song.title\|song.artist" src/components/game/modes/*.tsx` — per mode only in its reveal path; `vibe-check` is the documented exception (§ Decision 3) |
+| Censorship threshold from the config | `grep -rn "length >= 4\|length < 4" src` → 0 hits except `src/config/spoiler-config.ts` |
+| Projector stays spoiler-free | `grep -n "song.title\|song.artist\|coverUrl" src/app/projector/page.tsx` → 0 hits |
+| Negative test | New test `src/stores/game-store.test.ts`: `advancePhase('reveal')` from `question` without answers remains a no-op |

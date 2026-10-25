@@ -1,15 +1,15 @@
 'use client';
 
 /**
- * Admin-Tool: Song-Review & Delta-Export
+ * Admin tool: song review & delta export
  * Route: /admin/review
  *
- * Aufgaben:
- *  - Alle Songs aus allen Packs als übersichtliche Liste anzeigen
- *  - Songs inline bearbeiten (YouTube-Link, Schwierigkeit, Hints, …)
- *  - Änderungen in localStorage verfolgen
- *  - Delta-Export: nur geänderte Songs als JSON herunterladen
- *  - Vollexport: komplettes Pack als JSON herunterladen
+ * Tasks:
+ *  - Show all songs from all packs as a clear list
+ *  - Edit songs inline (YouTube link, difficulty, hints, …)
+ *  - Track changes in localStorage
+ *  - Delta export: download only the changed songs as JSON
+ *  - Full export: download the complete pack as JSON
  */
 
 import {
@@ -23,14 +23,14 @@ import { useTranslation } from 'react-i18next';
 import type { PhomuSong } from '@/types/song';
 import { ALL_SONGS, AVAILABLE_PACKS } from '@/data/songs';
 
-// ─── Typen ────────────────────────────────────────────────────────────────────
+// ─── Types ────────────────────────────────────────────────────────────────────
 
 type Edits = Record<string, Partial<PhomuSong>>;
 type SortField = 'year' | 'artist' | 'title' | 'pack';
 type SortDir = 'asc' | 'desc';
 type FilterStatus = 'all' | 'complete' | 'incomplete' | 'stub' | 'modified';
 
-// ─── Konstanten ───────────────────────────────────────────────────────────────
+// ─── Constants ───────────────────────────────────────────────────────────────
 
 const STORAGE_KEY = 'phomu-review-edits';
 
@@ -96,7 +96,7 @@ function mergeSong(baseline: PhomuSong, edits: Edits): PhomuSong {
   };
 }
 
-// ─── Unterkomponenten ─────────────────────────────────────────────────────────
+// ─── Sub-components ─────────────────────────────────────────────────────────
 
 function StatusDot({ ok }: { ok: boolean }) {
   const { t } = useTranslation();
@@ -132,7 +132,7 @@ function Badge({
   );
 }
 
-// ─── Inline-Editor für eine Zeile ─────────────────────────────────────────────
+// ─── Inline editor for a single row ─────────────────────────────────────────────
 
 function InlineEditor({
   song,
@@ -285,7 +285,7 @@ function InlineEditor({
   );
 }
 
-// ─── Tabellenzeile ────────────────────────────────────────────────────────────
+// ─── Table row ────────────────────────────────────────────────────────────
 
 function SongRow({
   song,
@@ -389,7 +389,7 @@ function SongRow({
   );
 }
 
-// ─── Haupt-Seite ───────────────────────────────────────────────────────────────
+// ─── Main page ───────────────────────────────────────────────────────────────
 
 export default function AdminReviewPage() {
   const { t, i18n } = useTranslation();
@@ -510,7 +510,7 @@ export default function AdminReviewPage() {
     return <span>{sortDir === 'asc' ? '↑' : '↓'}</span>;
   }
 
-  // ─── Export: nur geänderte Songs ─────────────────────────────────────────────
+  // ─── Export: only changed songs ─────────────────────────────────────────────
 
   function handleExportDelta() {
     const changedIds = Object.keys(edits);
@@ -548,7 +548,7 @@ export default function AdminReviewPage() {
     downloadJson(exportData, `phomu-delta-${Date.now()}.json`);
   }
 
-  // ─── Export: vollständiges Pack ───────────────────────────────────────────────
+  // ─── Export: complete pack ───────────────────────────────────────────────
 
   function handleExportPack(packName: string) {
     const songs = mergedSongs.filter((s) => s.packs.includes(packName));
@@ -569,7 +569,7 @@ export default function AdminReviewPage() {
     downloadJson(exportData, filename);
   }
 
-  // ─── Export: alle Packs ────────────────────────────────────────────────────
+  // ─── Export: all packs ────────────────────────────────────────────────────
 
   function handleExportAll() {
     const exportData = {
@@ -606,7 +606,7 @@ export default function AdminReviewPage() {
 
   // ─── Render ───────────────────────────────────────────────────────────────────
 
-  // Zahlen werden lokalisiert formatiert (Intl, aktive Sprache)
+  // Numbers are formatted for the active locale (Intl, active language)
   const numberFormat = new Intl.NumberFormat(i18n.language);
 
   return (
@@ -702,7 +702,7 @@ export default function AdminReviewPage() {
           ))}
         </div>
 
-        {/* Filter-Bar */}
+        {/* Filter bar */}
         <div className="flex flex-wrap gap-3 mb-4">
           <input
             type="search"
@@ -834,7 +834,7 @@ export default function AdminReviewPage() {
           </div>
         </div>
 
-        {/* Legende */}
+        {/* Legend */}
         <div className="mt-4 flex flex-wrap gap-3 text-xs text-gray-500">
           <span className="flex items-center gap-1">
             <Badge color="orange">{t('admin.review.statusStub')}</Badge>{' '}

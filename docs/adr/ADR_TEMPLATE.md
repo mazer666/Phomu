@@ -1,44 +1,44 @@
-# ADR-XXXX — Titel
+# ADR-XXXX — Title
 
 **Status:** proposed | accepted | superseded by ADR-YYYY
-**Datum:** YYYY-MM-DD
-**Owner-Rolle:** Chief Architect | Game Engineer | UI Engineer | QA Engineer | Security & Privacy Manager | Docs Lead | i18n Engineer
-**Bezugene Anforderungs-IDs:**
+**Date:** YYYY-MM-DD
+**Owner role:** Chief Architect | Game Engineer | UI Engineer | QA Engineer | Security & Privacy Manager | Docs Lead | i18n Engineer
+**Related requirement IDs:**
 
 ---
 
-## Kontext
+## Context
 
-Welches technische Problem oder welche architektonische Kraft macht die
-Entscheidung nötig?
+Which technical problem or which architectural force makes the decision
+necessary?
 
-Benenne die Randbedingung, die die Entscheidung erzwingt: eine Grenze des
-Produkts, ein Versprechen gegenüber dem Nutzer, eine Plattform-Schranke, eine
-Beschränkung des Build- oder Deployments.
+Name the constraint that forces the decision: a limit of the product, a promise
+to the user, a platform constraint, a restriction of the build or the
+deployment.
 
-Halte fest, **was heute gemessen** ist — mit Datei und Zeile oder mit dem
-Kommando, das die Zahl erzeugt hat. Keine Schätzungen.
-
----
-
-## Entscheidung
-
-Was wurde entschieden?
-
-Schreibe die Entscheidung im Präsens und so, dass sie **überprüfbar** ist.
-Wenn die Entscheidung eine Grenze zwischen zwei Modulen verändert, nenne beide
-Module und die betroffene Signatur, Datei oder Konstante. Wenn sie einen Grenzwert
-ändert, nenne den Schlüssel in der Konfiguration.
-
-Die Entscheidung muss mit dem Code übereinstimmen. Wenn der Code die
-Entscheidung noch nicht umsetzt, sage das ausdrücklich und nenne die
-Fundstelle, an der die Umsetzung fehlt.
+Record **what is measured today** — with file and line, or with the command that
+produced the number. No estimates.
 
 ---
 
-## Konsequenzen
+## Decision
 
-### Positiv
+What was decided?
+
+Write the decision in the present tense and in a way that is **verifiable**. If
+the decision changes a boundary between two modules, name both modules and the
+affected signature, file or constant. If it changes a limit, name the key in
+the configuration.
+
+The decision must match the code. If the code does not implement the decision
+yet, say so explicitly and name the location where the implementation is
+missing.
+
+---
+
+## Consequences
+
+### Positive
 
 -
 
@@ -46,27 +46,27 @@ Fundstelle, an der die Umsetzung fehlt.
 
 -
 
-### Was die Entscheidung unmöglich macht
+### What the decision makes impossible
 
 -
 
 ---
 
-## Alternativen (verworfen)
+## Rejected alternatives
 
 -
 
-Für jede Alternative: **warum** sie nicht gewählt wurde. Ein ADR ohne
-verworfene Alternative ist eine Notiz, keine Entscheidung.
+For each alternative: **why** it was not chosen. An ADR without a rejected
+alternative is a note, not a decision.
 
 ---
 
-## Verifikation
+## Verification
 
-Wie wird die Entscheidung geprüft? Nenne den Test, das Skript oder das Gate,
-das beweist, dass die Implementierung der Entscheidung folgt.
+How is the decision checked? Name the test, the script or the gate that proves
+that the implementation follows the decision.
 
-| Prüfung | Kommando / Ort |
+| Check | Command / Location |
 |---|---|
 | | |
 | | |

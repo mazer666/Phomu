@@ -1,9 +1,10 @@
 /**
  * LastRoundBanner
  *
- * Fullscreen-Gong-Overlay das erscheint wenn die letzte Runde startet.
- * Zeigt eine dramatische Ansage, die nach ~3s automatisch verschwindet.
- * Erscheint ZWISCHEN Reveal- und Drawing-Phase — stört keine Antwort.
+ * Fullscreen gong overlay that appears when the last round starts.
+ * Shows a dramatic announcement that disappears automatically after ~3s.
+ * Appears BETWEEN the reveal and the drawing phase — it does not disturb
+ * any answer.
  */
 'use client';
 
@@ -29,8 +30,8 @@ const DISPLAY_MS = 3200;
 export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
   const { t } = useTranslation();
 
-  // Headline/Subline kommen aus der Übersetzung. Der Originaltext aus
-  // src/utils/last-round-messages.ts dient nur als Fallback.
+  // Headline/subline come from the translation. The original text from
+  // src/utils/last-round-messages.ts only serves as a fallback.
   const translated = useMemo(() => {
     if (!message) return null;
     const index = LAST_ROUND_MESSAGES.findIndex(

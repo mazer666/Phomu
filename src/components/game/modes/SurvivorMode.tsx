@@ -1,11 +1,11 @@
 /**
- * Survivor-Modus
+ * Survivor mode
  *
- * Spieler entscheiden: Ist dieser Artist ein One-Hit-Wonder oder ein Dauerstar?
- * Die Song-Informationen sind verdeckt — nur Artist und Dekade sichtbar.
- * Richtige Antwort: isOneHitWonder aus den Song-Metadaten.
+ * Players decide: is this artist a one-hit wonder or a long-term star?
+ * The song information is hidden — only artist and decade are visible.
+ * Correct answer: isOneHitWonder from the song metadata.
  *
- * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/modes.{de,en}.json`.
+ * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 'use client';
 
@@ -13,9 +13,10 @@ import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
-import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
+import { useSpicyMessage } from '../useSpicyMessage';
 
 interface SurvivorModeProps {
   song: PhomuSong;
@@ -34,8 +35,9 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
   const [cheatUsed, setCheatUsed] = useState(false);
 
   const currentPlayerId = turnOrder[currentTurnIndex];
+  const spicyMessage = useSpicyMessage(choice === song.isOneHitWonder, song.id);
 
-  // Jahreszahl ohne Tausendertrennung (ein Jahr ist kein Mengenwert)
+  // Year without a thousands separator (a year is not a quantity)
   const yearFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language, { useGrouping: false }),
     [i18n.language]
@@ -46,20 +48,20 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
     const isCorrect = guessedOneHit === song.isOneHitWonder;
     setChoice(guessedOneHit);
     setAnswered(true);
-    // Survivor: 3 Punkte Grundgewinn (Cheats wurden bereits abgezogen)
+    // Survivor: 3 points base score (cheats were already deducted)
     onAnswer(isCorrect, isCorrect ? 3 : 0);
   }
 
   function handleCheat() {
     if (cheatUsed || answered || !currentPlayerId) return;
     setCheatUsed(true);
-    // Sofortiger Abzug von 1 Punkt
+    // Immediate deduction of 1 point
     awardPoints(currentPlayerId, -1);
   }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
-      {/* Modus-Banner */}
+      {/* Mode banner */}
       <div className="w-full max-w-sm flex items-center justify-between bg-red-500/10 border border-red-500/20 rounded-2xl px-4 py-2.5">
         <span className="text-[10px] font-black uppercase tracking-widest text-red-400">
           {t('modes.survivor.banner')}
@@ -69,7 +71,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
         </span>
       </div>
 
-      {/* Musik — läuft sofort, Artist bleibt verborgen */}
+      {/* Music — starts immediately, the artist stays hidden */}
       <div className="w-full max-w-sm mx-auto">
         <MusicPlayer
           songId={song.id}
@@ -92,7 +94,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
         />
       </div>
 
-      {/* Song-Infos — Artist erst nach Antwort oder Cheat sichtbar */}
+      {/* Song info — the artist only becomes visible after the answer or the cheat */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -147,7 +149,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
         )}
       </motion.div>
 
-      {/* Frage */}
+      {/* Question */}
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -157,7 +159,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
         {t('modes.survivor.question')}
       </motion.p>
 
-      {/* Antwort-Buttons */}
+      {/* Answer buttons */}
       {!answered ? (
         <div className="flex flex-col gap-4 w-full max-w-xs">
           <motion.div
@@ -182,7 +184,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
             </button>
           </motion.div>
 
-          {/* Cheat: Artist früh enthüllen */}
+          {/* Cheat: reveal the artist early */}
           {!cheatUsed && !config.noCheatMode && (
             <motion.button
               initial={{ opacity: 0 }}
@@ -212,7 +214,7 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
                   color: getSpicyColor(choice === song.isOneHitWonder, song.id),
                 }}
               >
-                {getSpicyMessage(choice === song.isOneHitWonder, song.id)}
+                {spicyMessage}
               </p>
               <p className="font-bold opacity-80">
                 {song.isOneHitWonder

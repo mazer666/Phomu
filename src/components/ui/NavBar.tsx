@@ -1,9 +1,9 @@
 /**
  * NavBar
  *
- * Kompakte Navigationsleiste:
- * - Hauptleiste: Logo | Lobby | Browse | [⚙️]
- * - Einstellungs-Panel (auf/zu): Sprache, Theme, Admin-Link
+ * Compact navigation bar:
+ * - Main bar: logo | lobby | browse | [⚙️]
+ * - Settings panel (open/closed): language, theme, admin link
  */
 'use client';
 
@@ -32,9 +32,9 @@ export function NavBar() {
 
   const currentLang = i18n.language as Language;
 
-  // Dokumenttitel und <html lang> an die aktive Sprache koppeln.
-  // Der Static Export backt nur eine Sprache in den <head>; der Client hält
-  // beides synchron zur gewählten Sprache.
+  // Couple the document title and <html lang> to the active language.
+  // The static export bakes only one language into the <head>; the client keeps
+  // both in sync with the selected language.
   useEffect(() => {
     const applyLanguage = (lng: string) => {
       const fixedT = i18n.getFixedT(lng);
@@ -54,7 +54,7 @@ export function NavBar() {
       className="sticky top-0 z-40"
       style={{ backgroundColor: 'var(--color-bg-secondary)' }}
     >
-      {/* ── Hauptleiste ─────────────────────────────────── */}
+      {/* ── Main bar ─────────────────────────────────── */}
       <div
         className="flex items-center gap-2 px-4 py-2 border-b"
         style={{ borderColor: 'var(--color-border)' }}
@@ -68,7 +68,7 @@ export function NavBar() {
           🎵 {t('common.appName')}
         </Link>
 
-        {/* Seiten-Links */}
+        {/* Page links */}
         <div className="flex items-center gap-1 flex-1">
           {NAV_LINKS.map(({ href, labelKey }) => {
             const isActive =
@@ -93,7 +93,7 @@ export function NavBar() {
           })}
         </div>
 
-        {/* Einstellungen-Button */}
+        {/* Settings button */}
         <button
           onClick={() => setSettingsOpen((o) => !o)}
           className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-lg transition-colors"
@@ -112,7 +112,7 @@ export function NavBar() {
         </button>
       </div>
 
-      {/* ── Einstellungs-Panel ───────────────────────────── */}
+      {/* ── Settings panel ───────────────────────────── */}
       {settingsOpen && (
         <div
           className="px-4 py-3 border-b flex flex-wrap items-center gap-4"
@@ -121,7 +121,7 @@ export function NavBar() {
             borderColor: 'var(--color-border)',
           }}
         >
-          {/* Sprache */}
+          {/* Language */}
           <div className="flex items-center gap-2">
             <span className="text-xs font-bold uppercase opacity-50 tracking-wider">
               {t('common.language')}

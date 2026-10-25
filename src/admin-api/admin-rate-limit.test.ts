@@ -20,7 +20,7 @@ describe('checkRateLimit', () => {
     resetRateLimits();
   });
 
-  it('laesst Requests unterhalb der Grenze zu', () => {
+  it('allows requests below the limit', () => {
     for (let i = 0; i < 3; i += 1) {
       const result = checkRateLimit(
         'key-a',
@@ -31,7 +31,7 @@ describe('checkRateLimit', () => {
     }
   });
 
-  it('blockiert Requests oberhalb der Grenze', () => {
+  it('blocks requests above the limit', () => {
     const options = { limit: 3, windowMs: 1000 };
 
     checkRateLimit('key-b', options, 1000);
@@ -44,7 +44,7 @@ describe('checkRateLimit', () => {
     expect(blocked.retryAfterSeconds).toBeGreaterThan(0);
   });
 
-  it('gibt nach Ablauf des Fensters wieder frei', () => {
+  it('allows requests again after the window has elapsed', () => {
     const options = { limit: 1, windowMs: 1000 };
 
     expect(checkRateLimit('key-c', options, 1000).allowed).toBe(true);
@@ -52,7 +52,7 @@ describe('checkRateLimit', () => {
     expect(checkRateLimit('key-c', options, 2001).allowed).toBe(true);
   });
 
-  it('haelt die Buckets getrennt', () => {
+  it('keeps the buckets separate', () => {
     const options = { limit: 1, windowMs: 1000 };
 
     expect(checkRateLimit('key-d', options, 1000).allowed).toBe(true);
@@ -60,7 +60,7 @@ describe('checkRateLimit', () => {
     expect(checkRateLimit('key-d', options, 1000).allowed).toBe(false);
   });
 
-  it('zaehlt auch die abgelehnten Requests mit', () => {
+  it('counts rejected requests as well', () => {
     const options = { limit: 2, windowMs: 10_000 };
 
     checkRateLimit('key-f', options, 1000);
@@ -69,19 +69,19 @@ describe('checkRateLimit', () => {
     const blocked = checkRateLimit('key-f', options, 1000);
 
     expect(blocked.allowed).toBe(false);
-    // Der Versuch wurde gezaehlt, das Fenster laeuft also weiter.
+    // The attempt was counted, so the window keeps running.
     expect(blocked.retryAfterSeconds).toBeGreaterThan(0);
   });
 
-  it('begrenzt die Zahl der gespeicherten Keys (kein unbegrenztes Wachstum)', () => {
+  it('limits the number of stored keys (no unbounded growth)', () => {
     for (let i = 0; i < 12_000; i += 1) {
       checkRateLimit(`spoof-${i}`, { limit: 1, windowMs: 60_000 }, 1000);
     }
 
-    // Der Map-Zugriff bleibt funktionsfaehig und der Zaehler bleibt korrekt.
+    // The map access stays functional and the counter stays correct.
     expect(getTrackedKeyCount()).toBeLessThanOrEqual(10_000);
 
-    // Der zuletzt benutzte Key wird nicht verdraengt und bleibt gesperrt.
+    // The most recently used key is not evicted and stays blocked.
     const result = checkRateLimit(
       'spoof-11999',
       { limit: 1, windowMs: 60_000 },
@@ -92,7 +92,7 @@ describe('checkRateLimit', () => {
 });
 
 describe('getClientKey', () => {
-  it('nutzt die erste Adresse aus x-forwarded-for', () => {
+  it('uses the first address from x-forwarded-for', () => {
     const request = new Request('https://phomu.example/', {
       headers: { 'x-forwarded-for': '203.0.113.7, 198.51.100.2' },
     });
@@ -100,7 +100,7 @@ describe('getClientKey', () => {
     expect(getClientKey(request)).toBe('203.0.113.7');
   });
 
-  it('faellt auf x-real-ip zurueck', () => {
+  it('falls back to x-real-ip', () => {
     const request = new Request('https://phomu.example/', {
       headers: { 'x-real-ip': '198.51.100.2' },
     });
@@ -108,11 +108,11 @@ describe('getClientKey', () => {
     expect(getClientKey(request)).toBe('198.51.100.2');
   });
 
-  it('nutzt einen festen Schluessel, wenn kein Proxy-Header vorhanden ist', () => {
+  it('uses a fixed key when no proxy header is present', () => {
     expect(getClientKey(new Request('https://phomu.example/'))).toBe('unknown');
   });
 
-  it('kuerzt eine ueberlange Client-ID', () => {
+  it('truncates an overlong client ID', () => {
     const request = new Request('https://phomu.example/', {
       headers: { 'x-forwarded-for': 'x'.repeat(500) },
     });
@@ -130,7 +130,7 @@ describe('assertRateLimit', () => {
     resetRateLimits();
   });
 
-  it('antwortet mit 429 und Retry-After, wenn die Grenze ueberschritten ist', async () => {
+  it('responds with 429 and Retry-After when the limit is exceeded', async () => {
     const request = new Request('https://phomu.example/admin/covers/search', {
       headers: { 'x-forwarded-for': '203.0.113.9' },
     });
@@ -148,7 +148,7 @@ describe('assertRateLimit', () => {
     });
   });
 
-  it('trennt die Buckets je Route', () => {
+  it('separates the buckets per route', () => {
     const request = new Request('https://phomu.example/admin/covers/search', {
       headers: { 'x-forwarded-for': '203.0.113.10' },
     });

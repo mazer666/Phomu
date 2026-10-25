@@ -1,526 +1,526 @@
 # Phomu Roadmap
 
-**Roadmap-Version:** 0.1
-**Stand der Messungen:** 2026-10-25, Branch `feature/vocument-style-docs-and-i18n`, Commit `d5b6422`
-**Aktueller Meilenstein:** M3 — Doku-, Anforderungs- und i18n-Reform (**IN PROGRESS**)
-**Maschinenlesbare Wahrheit:** [`project/project.yaml`](project/project.yaml)
+**Roadmap version:** 0.1
+**Measurement baseline:** 2026-10-25, branch `feature/vocument-style-docs-and-i18n`, commit `d5b6422`
+**Current milestone:** M3 — Documentation, requirement and i18n reform (**IN PROGRESS**)
+**Machine-readable truth:** [`project/project.yaml`](project/project.yaml)
 
-> **Grundsatz dieser Roadmap**
+> **Principle of this roadmap**
 >
-> Ein Meilenstein ist **erst fertig, wenn alle Gates erfüllt sind** — nicht, wenn
-> „die Oberfläche funktioniert". Jeder Status in diesem Dokument ist an eine
-> Evidenz gebunden: einem Testnamen, einer Kommando-Ausgabe oder einer
-> Datei:Zeile-Angabe. Was nicht gemessen wurde, steht als **NOT RUN** in der
-> Abnahme und **nicht** als „bestanden".
+> A milestone is **complete only when all gates are met** — not when
+> "the interface works". Every status in this document is bound to
+> evidence: a test name, a command output, or a
+> file:line reference. Anything that was not measured is listed as **NOT RUN** in
+> the acceptance and **not** as "passed".
 >
-> Kein Meilenstein wird auf Basis von Stubs, Mock-Simulationen oder
-> Dummy-Rückgaben abgeschlossen (Vocument CR-0002 / QA-003). Kein Code- oder
-> Agenten-Schritt verschiebt eine offene Position still in ein späteres
-> Meilenstein, damit ein Meilenstein grün aussieht.
+> No milestone is completed on the basis of stubs, mock simulations, or
+> dummy returns (Vocument CR-0002 / QA-003). No code or agent step
+> silently moves an open item into a later
+> milestone, so that a milestone looks green.
 
 ---
 
-## Meilensteinmodell
+## Milestone model
 
-Jedes Meilenstein hat dieselben Felder. Sie sind nicht optional.
+Every milestone has the same fields. They are not optional.
 
-| Feld | Inhalt |
+| Field | Content |
 |---|---|
-| **Zweck** | Das eine Produktproblem, das dieses Meilenstein löst. |
-| **Scope** | Was in diesem Meilenstein gebaut wird — Arbeitspakete mit Kennung. |
-| **Explizite Nicht-Ziele** | Was hier **nicht** gebaut wird. Ein Nicht-Ziel ohne Eintrag ist ein versteckter Scope. |
-| **Abnahmekriterien** | Funktional / Technisch / Performance / Usability / Security-Privacy / Interoperabilität. Jedes Kriterium ist so formuliert, dass man es prüfen kann. |
-| **QA-Evidenz** | Was gemessen wurde, mit Kommando oder Testname. |
-| **Release-Entscheidung** | `freigegeben`, `freigegeben mit dokumentierter Einschränkung`, `nicht freigegeben`, `offen`. |
+| **Purpose** | The single product problem this milestone solves. |
+| **Scope** | What is built in this milestone — work packages with an identifier. |
+| **Explicit non-goals** | What is **not** built here. A non-goal without an entry is a hidden scope. |
+| **Acceptance criteria** | Functional / Technical / Performance / Usability / Security-Privacy / Interoperability. Every criterion is formulated so that it can be checked. |
+| **QA evidence** | What was measured, with command or test name. |
+| **Release decision** | `released`, `released with a documented limitation`, `not released`, `open`. |
 
-### Statuswerte
+### Status values
 
-| Status | Bedeutung | Bedingung |
+| Status | Meaning | Condition |
 |---|---|---|
-| `COMPLETE` | Alle Gates des Meilsteins sind erfüllt. | Es existiert eine Evidenz pro Gate. |
-| `IN PROGRESS` | Teile sind geliefert und belegt, andere Gates sind offen. | Die fertigen Teile werden einzeln benannt. |
-| `PLANNED` | Nicht begonnen oder nur vorbereitet. | Kein Gate erfüllt. |
+| `COMPLETE` | All gates of the milestone are met. | There is evidence for each gate. |
+| `IN PROGRESS` | Parts are delivered and evidenced, other gates are open. | The finished parts are named individually. |
+| `PLANNED` | Not started or only prepared. | No gate met. |
 
-Ein Meilenstein, dessen einzige Evidenz ein existierendes Gerüst ist, ist
-`IN PROGRESS` — nicht `COMPLETE`.
+A milestone whose only evidence is an existing scaffold is
+`IN PROGRESS` — not `COMPLETE`.
 
 ---
 
-# M0 — Stabilisierung & Qualitätsbaseline
+# M0 — Stabilization & quality baseline
 
-**Status: `COMPLETE`** (Evidenz: `npm run typecheck`, `npm run lint`,
-`npm run test`, `npm run build`, `npm audit` am 2026-10-25, siehe
+**Status: `COMPLETE`** (evidence: `npm run typecheck`, `npm run lint`,
+`npm run test`, `npm run build`, `npm audit` on 2026-10-25, see
 [`docs/acceptance/M0-ACCEPTANCE.md`](docs/acceptance/M0-ACCEPTANCE.md))
 
-## Zweck
+## Purpose
 
-Der Prototyp muss erst **vertrauenswürdig reproduzierbar** sein, bevor
-Feature-Breite darauf aufsetzt. M0 stellt die Prüfbarkeit her: dieselbe
-Kommandozeile muss immer dasselbe Ergebnis liefern.
+The prototype must first be **reliably reproducible** before
+feature breadth builds on it. M0 establishes verifiability: the same
+command line must always deliver the same result.
 
 ## Scope
 
-- **M0.1** Typecheck als harte Schranke (TypeScript strict).
-- **M0.2** Lint-Härtung: Flat-Config, keine Fehler in den Kernpfaden
+- **M0.1** Typecheck as a hard barrier (TypeScript strict).
+- **M0.2** Lint hardening: flat config, no errors in the core paths
   (`src/app/**`, `src/components/game/**`, `src/admin-api/**`).
-- **M0.3** Unit-Test-Harness (Vitest) mit Alias-Auflösung `@/*`.
-- **M0.4** E2E-Harness (Playwright, Chromium) mit `webServer`-Konfiguration.
-- **M0.5** Produktions-Build als statischer Export (`output: 'export'`).
-- **M0.6** Abhängigkeits-Audit als Prüfschritt.
-- **M0.7** Ein lokales CI-Skript, das alle Gates in einer Reihenfolge fährt.
+- **M0.3** Unit test harness (Vitest) with alias resolution `@/*`.
+- **M0.4** E2E harness (Playwright, Chromium) with `webServer` configuration.
+- **M0.5** Production build as a static export (`output: 'export'`).
+- **M0.6** Dependency audit as a check step.
+- **M0.7** A local CI script that runs all gates in one order.
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Kein Ausbau der Spielmodi.
-- Keine Katalogsanierung (das ist M1).
-- Keine Internationalisierung (das ist M3).
-- Keine Security-Header (das ist M6).
-- Keine Änderung an der Produktlogik.
+- No expansion of the game modes.
+- No catalogue cleanup (that is M1).
+- No internationalization (that is M3).
+- No security headers (that is M6).
+- No change to the product logic.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- `npm run typecheck` endet mit Exit-Code 0.
-- `npm run lint` endet mit Exit-Code 0.
-- `npm run test` endet mit Exit-Code 0, alle Testfälle sind grün.
-- `npm run build` erzeugt einen statischen Export ohne Fehler.
+**Functional**
+- `npm run typecheck` ends with exit code 0.
+- `npm run lint` ends with exit code 0.
+- `npm run test` ends with exit code 0, all test cases are green.
+- `npm run build` produces a static export without errors.
 
-**Technisch**
-- Keine Datei im Produktivpfad enthält `any` ohne Begründung; `any` ist im
-  Lint-Setup auf `warn` gesetzt (`eslint.config.mjs`).
-- Der Test-Runner löst den Alias `@/*` genauso auf wie der App-Code
+**Technical**
+- No file in the production path contains `any` without justification; `any` is set
+  to `warn` in the lint setup (`eslint.config.mjs`).
+- The test runner resolves the `@/*` alias exactly like the app code
   (`vitest.config.ts`).
-- Das Build-Artefakt ist eine statische Website ohne Serverlaufzeit.
+- The build artifact is a static website without a server runtime.
 
 **Performance**
-- Der Produktions-Build kompiliert ohne Fehler; die Compile-Zeit wird nicht
-  als Abnahmekriterium geführt, weil sie maschinenabhängig ist und bisher
-  nicht als Budget definiert wurde.
+- The production build compiles without errors; compile time is not
+  tracked as an acceptance criterion because it depends on the machine and has
+  not yet been defined as a budget.
 
 **Usability**
-- Der Schnellstart ist mit drei Klicks erreichbar (Landing → Pack → Start).
+- The quick start is reachable in three clicks (landing → pack → start).
 
 **Security-Privacy**
-- `npm audit --omit=dev --audit-level=moderate` meldet 0 Schwachstellen.
+- `npm audit --omit=dev --audit-level=moderate` reports 0 vulnerabilities.
 
-**Interoperabilität**
-- Die Anwendung ist als statischer Export unter einem Unterpfad
-  (`basePath: '/Phomu'`) auslieferbar — der Export funktioniert ohne
-  Node-Server.
+**Interoperability**
+- The application can be delivered as a static export under a subpath
+  (`basePath: '/Phomu'`) — the export works without a
+  Node server.
 
-## QA-Evidenz
+## QA evidence
 
-Gemessen am 2026-10-25 auf Commit `d5b6422`. Weil in dieser Runde mehrere
-Rollen parallel am Arbeitsbaum arbeiten, wurde der Commit-Stand über
-`git archive d5b6422` in ein separates Verzeichnis entpackt und **dort**
-gemessen; so ist das Ergebnis von der Parallelarbeit unabhängig.
+Measured on 2026-10-25 at commit `d5b6422`. Because several roles work on the
+working tree in parallel in this round, the commit state was unpacked via
+`git archive d5b6422` into a separate directory and measured **there**;
+the result is therefore independent of the parallel work.
 
-| Gate | Kommando | Ergebnis |
+| Gate | Command | Result |
 |---|---|---|
 | Typecheck | `npm run typecheck` | Exit 0 |
-| Lint | `npm run lint` | Exit 0, 0 Fehler, 1 Warnung (`playwright.config.ts:1:1`, `import/no-anonymous-default-export`) |
-| Unit-Tests | `npm run test` | Exit 0 — 4 Testdateien, 21 Testfälle grün |
-| Build | `npm run build` | Exit 0 — 21 statisch erzeugte Routen |
-| Katalog-Gate | `npm run validate-catalog` | Exit 0 — 135 Packs, 1.615 Songs, 0 Schema-Fehler, 126 Warnungen, 0 Dubletten, 0 fehlende Jahre |
-| Audit | `npm audit --omit=dev --audit-level=moderate` | Exit 0 — „found 0 vulnerabilities" |
-| E2E-Smoke | `npm run test:e2e:smoke` | 1 Testfall grün (nach `npx playwright install chromium`) — mit der Einschränkung aus `GAP-07` |
+| Lint | `npm run lint` | Exit 0, 0 errors, 1 warning (`playwright.config.ts:1:1`, `import/no-anonymous-default-export`) |
+| Unit tests | `npm run test` | Exit 0 — 4 test files, 21 test cases green |
+| Build | `npm run build` | Exit 0 — 21 statically generated routes |
+| Catalogue gate | `npm run validate-catalog` | Exit 0 — 135 packs, 1.615 songs, 0 schema errors, 126 warnings, 0 duplicates, 0 missing years |
+| Audit | `npm audit --omit=dev --audit-level=moderate` | Exit 0 — "found 0 vulnerabilities" |
+| E2E smoke | `npm run test:e2e:smoke` | 1 test case green (after `npx playwright install chromium`) — with the limitation from `GAP-07` |
 
-Der ausführliche Nachweis mit Testnamen steht in
+The detailed evidence with test names is in
 [`docs/acceptance/M0-ACCEPTANCE.md`](docs/acceptance/M0-ACCEPTANCE.md).
 
-**Offen in M0 (nicht blockierend, aber dokumentiert):**
-`npm run format:check` (Prettier) ist **rot**: 287 Dateien mit
-Stilabweichungen. Der Check ist in `scripts/local-ci.sh` ausdrücklich
-**nicht blockierend** markiert. Er wird als Lücke `GAP-01` geführt.
+**Open in M0 (not blocking, but documented):**
+`npm run format:check` (Prettier) is **red**: 287 files with
+style deviations. The check is explicitly marked
+**non-blocking** in `scripts/local-ci.sh`. It is tracked as gap `GAP-01`.
 
-## Release-Entscheidung
+## Release decision
 
-**freigegeben mit dokumentierter Einschränkung** — die Qualitätsbaseline ist
-grün; die Formatabweichung (`GAP-01`) bleibt offen. Die Gates aus dem
-Arbeitsvertrag (`GAP-02`, `GAP-03`) sind inzwischen als Skripte vorhanden und
-in `npm run local-ci` verdrahtet; sie gehören zu M3.
-
----
-
-# M1 — Katalog- und Datenqualität
-
-**Status: `IN PROGRESS`**
-
-## Zweck
-
-Der Song-Katalog ist das Kernasset des Produkts. Ein Spiel, das an einem
-kaputten Datensatz hängenbleibt, ist wertlos. M1 macht den Katalog
-**prüfbar** und reduziert die Fehlerlast auf null harte Fehler.
-
-## Scope
-
-- **M1.1** Schema- und Feldvalidierung je Song (`src/utils/validate-song-data.ts`).
-- **M1.2** Katalog-Gate über alle Packs (`src/utils/validate-song-catalog.ts`).
-- **M1.3** Duplicate-Policy mit kuratiertem Allowlist (`specifications/duplicate-allowlist.json`).
-- **M1.4** Jahres-Coverage 1950 bis laufendes Jahr; Sonderfall klassische
-  Werke vor 1900 (`src/config/song-year-range.ts`, `MIN_SONG_YEAR = 1500`).
-- **M1.5** Baseline-Mechanik: das Gate schlägt nur fehl, wenn es gegenüber
-  `specifications/quality-baseline.json` **schlechter** wird (Regressionsschutz).
-- **M1.6** Machine-readable Katalog-Report (`specifications/catalog_issues_report.json`).
-
-## Explizite Nicht-Ziele
-
-- Keine Neuerzeugung von Hinweisen oder Fake-Lyrics durch KI.
-- Kein Cover-Download über das Admin-Portal hinaus (M6).
-- Keine Migration des Katalogs auf ein anderes Format.
-
-## Abnahmekriterien
-
-**Funktional**
-- `npm run validate-catalog` endet mit Exit-Code 0.
-- `npm run validate-songs` endet mit Exit-Code 0.
-- 0 Duplicate-Gruppen außerhalb der Allowlist.
-- 0 fehlende Jahre im Coverage-Fenster.
-
-**Technisch**
-- Der Validator liest **alle** Pack-Dateien in `src/data/songs/`, nicht nur eine.
-- Das Gate erzeugt einen JSON-Report mit Zeitstempel (`--write-report`).
-- Die Baseline ist eine Datei im Repo und keine Zahl in einem Dokument.
-
-**Performance**
-- Der Katalog-Durchlauf endet in unter einer Minute auf einer
-  Entwickler-Maschine (kein messbares Budget definiert; Status: **NOT RUN**
-  als Budget, Laufzeit des Laufs am 2026-10-25 unter einer Minute).
-
-**Usability**
-- Der Fehlerbericht nennt Datei, Feld und Song-ID, nicht nur eine Zählzahl.
-
-**Security-Privacy**
-- Der Katalog enthält keine personenbezogenen Daten; der Validator prüft
-  keine Geheimnisse — dies ist eine **Designentscheidung**, keine geprüfte
-  Eigenschaft.
-
-**Interoperabilität**
-- Der Katalog ist JSON und maschinenlesbar; `scripts/export-song-database.js`
-  exportiert ihn weiter.
-
-## QA-Evidenz
-
-Gemessen am 2026-10-25:
-
-| Gate | Kommando | Ergebnis |
-|---|---|---|
-| Katalog-Gate | `npm run validate-catalog` | Exit 0 — Packs 135, Songs 1615, Schema-Fehler 0, Schema-Warnungen 126, Duplicate-Gruppen 0, erlaubte Dubletten 4, fehlende Jahre 0 |
-| Song-Validierung | `npm run validate-songs` | Exit 0 — **liest nur `A1.json`**: 12 Songs, 12 gültig, 12 vollständig |
-| Testabdeckung des Validators | `src/utils/validate-song-data.test.ts` | 8 Testfälle grün (Jahresvalidierung) |
-
-**Fertige Teile (belegt):**
-- 0 harte Schema-Fehler über alle 135 Pack-Dateien.
-- 0 Duplicate-Gruppen außerhalb der Allowlist.
-- 0 fehlende Jahre 1950–2026.
-- Jahreslogik inklusive klassischer Werke und angekündigter Releases getestet.
-
-**Offene Teile:**
-- 126 Schema-Warnungen sind nicht abgebaut (Abnahmekriterium des
-  Verbesserungsplans Phase B lautet „0 Fehler und 0 Warnungen").
-- `npm run validate-songs` prüft trotz Name **nur eine Datei** (`A1.json`) —
-  der Gesamtkatalog wird nicht über diesen Weg validiert (`GAP-04`).
-- Kein Datensatz-Regressionstest für kritische Felder (Phase-B-Kriterium
-  „mindestens 1 automatisierter Datensatz-Regressionstest") — `GAP-05`.
-
-## Release-Entscheidung
-
-**nicht freigegeben** für eine öffentliche Content-Erweiterung — das Gate ist
-grün, das Abnahmekriterium „0 Warnungen" ist es nicht.
+**released with a documented limitation** — the quality baseline is
+green; the formatting deviation (`GAP-01`) remains open. The gates from the
+work contract (`GAP-02`, `GAP-03`) now exist as scripts and are
+wired into `npm run local-ci`; they belong to M3.
 
 ---
 
-# M2 — Testabdeckung & QA-Reife
+# M1 — Catalogue and data quality
 
 **Status: `IN PROGRESS`**
 
-## Zweck
+## Purpose
 
-Phomu hat Regeln, die niemand gebrochen hat: Punkte, Zeitabfall,
-Timeline-Platzierung, Anti-Spoiler-Freigabe, Rundenwechsel. M2 macht diese
-Regeln automatisch prüfbar.
+The song catalogue is the core asset of the product. A game that gets
+stuck on a broken record is worthless. M1 makes the catalogue
+**verifiable** and reduces the error load to zero hard errors.
 
 ## Scope
 
-- **M2.1** Unit-Tests für reine Utilities (`src/utils/*.test.ts`).
-- **M2.2** Integrationstests für den Zustand-Store (Rundenwechsel,
-  Antwort-Übergabe, Spielende).
-- **M2.3** Modus-Contract-Tests (Scoring, Lock-in, Reveal-Logik je Modus).
-- **M2.4** Katalog-Regressionstest (Schema-Regeln als Test, nicht nur als Skript).
-- **M2.5** E2E für die kritische Journey „Lobby → Spielstart → Modusrotation →
-  Game Over".
-- **M2.6** Geräte- und Browser-Matrix als reproduzierbares Protokoll.
+- **M1.1** Schema and field validation per song (`src/utils/validate-song-data.ts`).
+- **M1.2** Catalogue gate across all packs (`src/utils/validate-song-catalog.ts`).
+- **M1.3** Duplicate policy with a curated allowlist (`specifications/duplicate-allowlist.json`).
+- **M1.4** Year coverage from 1950 to the current year; special case for
+  classical works before 1900 (`src/config/song-year-range.ts`, `MIN_SONG_YEAR = 1500`).
+- **M1.5** Baseline mechanism: the gate only fails when it becomes **worse**
+  than `specifications/quality-baseline.json` (regression protection).
+- **M1.6** Machine-readable catalogue report (`specifications/catalog_issues_report.json`).
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Kein Performance-Benchmark in M2 (Budgets kommen mit M5).
-- Kein Sicherheitstest der Admin-API (M6).
-- Keine Mutationstests.
+- No regeneration of hints or fake lyrics by AI.
+- No cover download beyond the admin portal (M6).
+- No migration of the catalogue to a different format.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- `npm run test` ist grün.
-- Für jede zentrale Utility-/Scoring-Regel existiert mindestens ein Test.
-- Die E2E-Journey deckt mindestens Lobby, Spielstart, Modusrotation und
-  Game Over ab.
+**Functional**
+- `npm run validate-catalog` ends with exit code 0.
+- `npm run validate-songs` ends with exit code 0.
+- 0 duplicate groups outside the allowlist.
+- 0 missing years in the coverage window.
 
-**Technisch**
-- Tests sind deterministisch und laufen ohne Netzzugriff.
-- Ein Test prüft eine Regel, nicht eine Implementierungsdetails.
+**Technical**
+- The validator reads **all** pack files in `src/data/songs/`, not just one.
+- The gate produces a JSON report with a timestamp (`--write-report`).
+- The baseline is a file in the repo, not a number in a document.
 
 **Performance**
-- Coverage-Ziel: **noch nicht definiert**. Aktueller Stand: 23,29 % Statements
-  / 24,94 % Lines über `src/utils/**` (Coverage-Scope in `vitest.config.ts`).
-  Das ist eine **Zahl, kein Ziel** — siehe `GAP-06`.
+- The catalogue run finishes in under one minute on a
+  developer machine (no measurable budget defined; status: **NOT RUN**
+  as a budget, runtime of the run on 2026-10-25 under one minute).
 
 **Usability**
-- Ein Fehlschlag benennt die Regel, die verletzt wurde, im Testnamen.
+- The error report names file, field and song ID, not just a count.
 
 **Security-Privacy**
-- Negative Tests für jede Härtung (Vorgabe aus dem Arbeitsvertrag).
+- The catalogue contains no personal data; the validator checks
+  no secrets — this is a **design decision**, not a verified
+  property.
 
-**Interoperabilität**
-- Kein Test darf von der Reihenfolge der Testdateien abhängen.
+**Interoperability**
+- The catalogue is JSON and machine-readable; `scripts/export-song-database.js`
+  continues to export it.
 
-## QA-Evidenz
+## QA evidence
 
-**Commit-Stand `d5b6422`** (isoliert gemessen, 2026-10-25T08:44:54Z) und
-**Arbeitsstand** (2026-10-25T08:41:51Z) — die Testinventur wächst in dieser
-Runde, weil weitere Rollen Tests hinzufügen.
+Measured on 2026-10-25:
 
-| Test | Datei | Testfälle (Commit-Stand) |
+| Gate | Command | Result |
 |---|---|---|
-| Jahresvalidierung | `src/utils/validate-song-data.test.ts` | 8 |
-| QR-Intent-Parsing | `src/utils/qr-intent.test.ts` | 4 |
-| Amazon-ASIN-Auflösung | `src/components/game/MusicPlayer.test.ts` | 7 |
-| KI-Task-Queue | `src/utils/ai-task-queue.test.ts` | 2 |
-| **Summe** | | **21 grün** (`npm run test`, Exit 0) |
-| Smoke-Navigation | `e2e/smoke.spec.ts` | 1 grün |
+| Catalogue gate | `npm run validate-catalog` | Exit 0 — Packs 135, Songs 1615, Schema errors 0, Schema warnings 126, Duplicate groups 0, allowed duplicates 4, missing years 0 |
+| Song validation | `npm run validate-songs` | Exit 0 — **reads only `A1.json`**: 12 songs, 12 valid, 12 complete |
+| Test coverage of the validator | `src/utils/validate-song-data.test.ts` | 8 test cases green (year validation) |
 
-Im Arbeitsstand um 08:41:51Z waren es **10 Testdateien mit 97 Testfällen**
-(Exit 0), darunter `src/admin-api/admin-token-guard.test.ts` (10),
+**Finished parts (evidenced):**
+- 0 hard schema errors across all 135 pack files.
+- 0 duplicate groups outside the allowlist.
+- 0 missing years 1950–2026.
+- Year logic tested including classical works and announced releases.
+
+**Open parts:**
+- 126 schema warnings have not been cleared (the acceptance criterion of
+  improvement plan phase B reads "0 errors and 0 warnings").
+- Despite its name, `npm run validate-songs` **checks only one file**
+  (`A1.json`) — the complete catalogue is not validated via this path (`GAP-04`).
+- No record regression test for critical fields (phase B criterion
+  "at least 1 automated record regression test") — `GAP-05`.
+
+## Release decision
+
+**not released** for a public content expansion — the gate is
+green, the acceptance criterion "0 warnings" is not.
+
+---
+
+# M2 — Test coverage & QA maturity
+
+**Status: `IN PROGRESS`**
+
+## Purpose
+
+Phomu has rules that nobody has ever broken: scoring, time decay,
+timeline placement, anti-spoiler release, round changeover. M2 makes these
+rules automatically verifiable.
+
+## Scope
+
+- **M2.1** Unit tests for pure utilities (`src/utils/*.test.ts`).
+- **M2.2** Integration tests for the state store (round changeover,
+  answer handover, game end).
+- **M2.3** Mode contract tests (scoring, lock-in, reveal logic per mode).
+- **M2.4** Catalogue regression test (schema rules as a test, not only as a script).
+- **M2.5** E2E for the critical journey "lobby → game start → mode rotation →
+  game over".
+- **M2.6** Device and browser matrix as a reproducible record.
+
+## Explicit non-goals
+
+- No performance benchmark in M2 (budgets come with M5).
+- No security test of the admin API (M6).
+- No mutation tests.
+
+## Acceptance criteria
+
+**Functional**
+- `npm run test` is green.
+- For every central utility/scoring rule at least one test exists.
+- The E2E journey covers at least lobby, game start, mode rotation and
+  game over.
+
+**Technical**
+- Tests are deterministic and run without network access.
+- A test checks a rule, not implementation details.
+
+**Performance**
+- Coverage target: **not yet defined**. Current state: 23,29 % statements
+  / 24,94 % lines over `src/utils/**` (coverage scope in `vitest.config.ts`).
+  This is a **number, not a target** — see `GAP-06`.
+
+**Usability**
+- A failure names the rule that was violated in the test name.
+
+**Security-Privacy**
+- Negative tests for every hardening measure (requirement from the work contract).
+
+**Interoperability**
+- No test may depend on the order of the test files.
+
+## QA evidence
+
+**Commit state `d5b6422`** (measured in isolation, 2026-10-25T08:44:54Z) and
+**working state** (2026-10-25T08:41:51Z) — the test inventory grows in this
+round because further roles add tests.
+
+| Test | File | Test cases (commit state) |
+|---|---|---|
+| Year validation | `src/utils/validate-song-data.test.ts` | 8 |
+| QR intent parsing | `src/utils/qr-intent.test.ts` | 4 |
+| Amazon ASIN resolution | `src/components/game/MusicPlayer.test.ts` | 7 |
+| AI task queue | `src/utils/ai-task-queue.test.ts` | 2 |
+| **Total** | | **21 green** (`npm run test`, Exit 0) |
+| Smoke navigation | `e2e/smoke.spec.ts` | 1 green |
+
+In the working state at 08:41:51Z there were **10 test files with 97 test cases**
+(Exit 0), including `src/admin-api/admin-token-guard.test.ts` (10),
 `src/admin-api/admin-rate-limit.test.ts` (12),
 `src/admin-api/cover-fetch-guard.test.ts` (20),
 `src/admin-api/admin-routes-hardening.test.ts` (13),
-`src/admin-api/security-headers.test.ts` (8) und
-`src/utils/validate-song-limits.test.ts` (13). Die Coverage über `src/utils/**`
-stieg dabei von 23,29 % auf 32,33 % Statements (33,77 % Lines).
+`src/admin-api/security-headers.test.ts` (8) and
+`src/utils/validate-song-limits.test.ts` (13). The coverage over `src/utils/**`
+rose from 23,29 % to 32,33 % statements (33,77 % lines) in the process.
 
-**Fertige Teile (belegt):**
-- Vier Utility-Regeln sind getestet (Jahreslogik, QR-Intent, Amazon-Links, Task-Queue).
-- Die Task-Queue prüft **auch den Fehlerpfad**: ein Handler, der wirft, endet
-  nach `maxAttempts` in `failed` mit `lastError` (`ai-task-queue.test.ts`).
-- Die QR-Intent-Regel kennt einen expliziten Zustand für nicht unterstützte
-  Song-Links (`unsupported-song-link`) — der Test sichert genau diesen Zweig ab.
+**Finished parts (evidenced):**
+- Four utility rules are tested (year logic, QR intent, Amazon links, task queue).
+- The task queue checks **the error path as well**: a handler that throws ends
+  after `maxAttempts` in `failed` with `lastError` (`ai-task-queue.test.ts`).
+- The QR intent rule knows an explicit state for unsupported
+  song links (`unsupported-song-link`) — the test covers exactly this branch.
 
-**Offene Teile:**
-- Kein Test für Scoring, Zeitabfall, Timeline-Platzierung, Modus-Logik oder
-  den Zustand-Store (`src/stores/game-store.ts`, 640 Zeilen, 0 % getestet).
-- Der E2E-Smoke prüft **nur URLs** (`e2e/smoke.spec.ts:5–20`); er prüft
-  weder Inhalt noch Spielverhalten. Wegen `basePath: '/Phomu'`
-  (`next.config.ts:5`) antworten die vom Test angefahrenen Pfade `/lobby`,
-  `/game` usw. mit der Next.js-404-Seite, nicht mit der Applikation — der
-  Test ist grün, prüft aber die falsche URL (`GAP-07`).
-- Keine Geräte-/Browser-Matrix (`GAP-08`).
+**Open parts:**
+- No test for scoring, time decay, timeline placement, mode logic or
+  the state store (`src/stores/game-store.ts`, 640 lines, 0 % tested).
+- The E2E smoke checks **only URLs** (`e2e/smoke.spec.ts:5–20`); it checks
+  neither content nor game behavior. Because of `basePath: '/Phomu'`
+  (`next.config.ts:5`) the paths hit by the test — `/lobby`,
+  `/game` etc. — answer with the Next.js 404 page, not with the application — the
+  test is green but checks the wrong URL (`GAP-07`).
+- No device/browser matrix (`GAP-08`).
 
-## Release-Entscheidung
+## Release decision
 
-**nicht freigegeben** für die nächste Feature-Welle — die Regeln des Spiels
-sind weiterhin ungetestet.
+**not released** for the next feature wave — the rules of the game
+are still untested.
 
 ---
 
-# M3 — Doku-, Anforderungs- und i18n-Reform
+# M3 — Documentation, requirement and i18n reform
 
-**Status: `IN PROGRESS`** (laufende Runde, Stand 2026-10-25)
+**Status: `IN PROGRESS`** (current round, state as of 2026-10-25)
 
-## Zweck
+## Purpose
 
-Der bisherige Doku-Stand beschrieb Verhalten in Fließtext ohne IDs. Tests
-konnten sich nicht auf eine Anforderung beziehen, Statusberichte widersprachen
-einander. M3 führt einen **referenzierbaren** Dokumentationssatz ein:
-Anforderungen mit IDs, ein maschinenlesbarer Projektzustand, Abnahmenachweise
-mit Evidenz und die Internationalisierungs-Grenze in `src/i18n`.
+The previous documentation state described behavior in prose without IDs. Tests
+could not refer to a requirement, status reports contradicted
+each other. M3 introduces a **referenceable** documentation set:
+requirements with IDs, a machine-readable project state, acceptance evidence
+with evidence and the internationalization boundary in `src/i18n`.
 
 ## Scope
 
-- **M3.1** Anforderungssatz mit IDs-Schema `<DOMÄNE>-<NNN>` und neun Domänen
+- **M3.1** Requirement set with the ID schema `<DOMÄNE>-<NNN>` and nine domains
   (`CORE`, `GAME`, `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `NFR`).
-- **M3.2** Architektur-Dokument mit Schichten und Abhängigkeitsrichtung.
-- **M3.3** Maschinenlesbarer Zustand in `project/project.yaml`.
-- **M3.4** Change-Request-Vorlage und dieser Change Request
+- **M3.2** Architecture document with layers and dependency direction.
+- **M3.3** Machine-readable state in `project/project.yaml`.
+- **M3.4** Change request template and this change request
   (`docs/cr/CR-0001-…`).
-- **M3.5** Abnahmevorlage und Abnahmenachweis je Meilenstein
+- **M3.5** Acceptance template and acceptance evidence per milestone
   (`docs/acceptance/`).
-- **M3.6** Agentenrollen `ROLE-01` … `ROLE-08` mit Besitz-, Prüf- und
-  Blockier-Scope.
-- **M3.7** i18n-Grenze: `de.json`/`en.json` vollständig parallel, jeder
-  sichtbare Text aus der Übersetzung.
-- **M3.8** Neue Gates: i18n-Vollständigkeit, Doku-Linkcheck, Dateigröße.
-- **M3.9** Archivierung der Vorgänger-Dokumentation (nicht Löschung).
+- **M3.6** Agent roles `ROLE-01` … `ROLE-08` with ownership, review and
+  blocking scope.
+- **M3.7** i18n boundary: `de.json`/`en.json` fully parallel, every
+  visible text from the translation.
+- **M3.8** New gates: i18n completeness, documentation link check, file size.
+- **M3.9** Archiving of the predecessor documentation (not deletion).
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Keine Änderung an der Spiellogik in dieser Runde.
-- Kein Umbau von `src/`-Komponenten auf Übersetzung — das ist die
-  Fortsetzung von M3.7 (Migration läuft, Stand siehe Evidenz).
-- Keine neue Funktion, kein neuer Spielmodus.
+- No change to the game logic in this round.
+- No conversion of `src/` components to translation — that is the
+  continuation of M3.7 (migration is running, state see evidence).
+- No new feature, no new game mode.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- `REQUIREMENTS.md` deckt jede im Code erkennbare Verhaltensregel ab, mit ID,
-  Akzeptanz und Verifikation.
-- `project/project.yaml` existiert und verweist als einzige Wahrheit.
-- `docs/cr/` und `docs/acceptance/` enthalten Vorlage und Nachweis.
+**Functional**
+- `REQUIREMENTS.md` covers every behavior rule detectable in the code, with ID,
+  acceptance and verification.
+- `project/project.yaml` exists and serves as the single truth.
+- `docs/cr/` and `docs/acceptance/` contain template and evidence.
 
-**Technisch**
-- `node scripts/check-i18n-completeness.mjs` ist grün: de/en parallel, keine
-  leeren Werte, keine Einseitigkeit, kein Literaltext mehr im JSX.
-- `node scripts/check-doc-links.mjs` ist grün: jeder relative Markdown-Link
-  löst auf.
-- `node scripts/check-file-size.mjs` ist grün: keine Quelldatei über 550
-  Zeilen (weich: 400).
-- `npm run typecheck`, `npm run lint`, `npm run test`, `npm run build` bleiben grün.
+**Technical**
+- `node scripts/check-i18n-completeness.mjs` is green: de/en parallel, no
+  empty values, no one-sidedness, no literal text left in the JSX.
+- `node scripts/check-doc-links.mjs` is green: every relative Markdown link
+  resolves.
+- `node scripts/check-file-size.mjs` is green: no source file over 550
+  lines (soft: 400).
+- `npm run typecheck`, `npm run lint`, `npm run test`, `npm run build` stay green.
 
 **Performance**
-- Kein Budget. M3 ist ein Dokumentations- und Struktur-Meilenstein; ein
-  Laufzeitbudget wäre hier eine erfundene Zahl.
+- No budget. M3 is a documentation and structure milestone; a
+  runtime budget would be an invented number here.
 
 **Usability**
-- Ein neuer Entwickelnder findet die Aussage „wie funktioniert Modus X" über
-  genau einen Link.
+- A new developer finds the statement "how does mode X work" via
+  exactly one link.
 
 **Security-Privacy**
-- Die Verschiebung der Alt-Dokumentation ändert keine Berechtigungen, keine
-  Laufzeit und keine Datenflüsse — reine Dokumentation.
+- Moving the legacy documentation changes no permissions, no
+  runtime and no data flows — documentation only.
 
-**Interoperabilität**
-- Die alten Dateien bleiben erhalten und lesbar; der Übergang ist über
-  `specifications/README.md` und `specifications/archive/README.md` rückverfolgbar.
+**Interoperability**
+- The old files remain intact and readable; the transition is traceable via
+  `specifications/README.md` and `specifications/archive/README.md`.
 
-## QA-Evidenz
+## QA evidence
 
-Gemessen am 2026-10-25. Die Zahlen tragen einen Zeitstempel, weil in dieser
-Runde mehrere Rollen parallel arbeiten; jede Zahl gilt für den genannten
-Moment.
+Measured on 2026-10-25. The numbers carry a timestamp because several roles
+work in parallel in this round; each number applies to the stated
+moment.
 
-| Punkt | Nachweis |
+| Item | Evidence |
 |---|---|
-| Anforderungen | `REQUIREMENTS.md` enthält **174** Anforderungsblöcke in neun Domänen (gezählt am 2026-10-25T08:56:58Z über `### <DOMÄNE>-<NNN>`), keine ID doppelt |
-| i18n-Schlüsselraum | `src/i18n/locales/de.json` und `en.json`: Schlüssel parallel, keine leeren Werte, 7 identische Werte (ausschließlich Eigennamen wie „Spotify", „Jackbox Party") |
-| Literaltext-Messung | `npm run check:i18n`: **6** Literaltexte in 47 Dateien (2026-10-25T08:59Z) — zu Beginn der Runde waren es 935 (08:34:52Z). Die verbleibenden 6: vier Theme-Eigennamen in `src/app/lobby/page.tsx:77–82` („Phomu Blue", „Neon Purple", „Cyber Pink", „Gold Rush"), ein Status-Präfix `` `draft- ` `` in `src/app/admin/songs/page.tsx:444` und ein Emojisymbol in `src/app/settings/game-rules/page.tsx:63`. Das Gate ist damit **fast** grün, aber noch Exit 1 |
-| Gate-Skripte vorhanden | `scripts/check-i18n-completeness.mjs`, `scripts/check-doc-links.mjs` und `scripts/check-file-size.mjs` existieren; `package.json` führt sie als `check:i18n`, `check:doc-links`, `check:file-size`, `check:all`; `scripts/local-ci.sh:78` ruft `npm run check:all` blockierend |
-| Doku-Linkcheck | `node scripts/check-doc-links.mjs`: Exit 1, **4 tote Links** in 56 geprüften Markdown-Dateien (2026-10-25T08:56:58Z) — drei davon in `REQUIREMENTS.md` (Anker `#offende-lücken` und `#game-006-…`), einer in `docs/acceptance/M0-ACCEPTANCE.md` (Dateiname mit Leerzeichen; inzwischen behoben) |
-| Dateigrößen | `npm run check:file-size` → Exit 0 mit 8 Warnungen und 7 dokumentierten Altlasten (2026-10-25T08:58:43Z): `src/app/lobby/page.tsx` 801, `src/app/admin/review/page.tsx` 767, `src/components/game/MusicPlayer.tsx` 641, `src/stores/game-store.ts` 640, `src/components/game/modes/TimelineMode.tsx` 617, `src/components/game/RevealPhase.tsx` 596, `src/app/browse/page.tsx` 575; im Band 401–550: `src/utils/validate-song-data.ts` 502, `src/app/game/page.tsx` 468, `src/app/admin/songs/page.tsx` 461 |
-| Archivierung | `git status` zeigt die Verschiebung der Vorgänger-Dateien nach `specifications/archive/` mit Datumsstempel; `specifications/README.md` und `specifications/archive/README.md` erklären die Zuordnung |
-| Abnahme | `docs/acceptance/M0-ACCEPTANCE.md` — Abnahme des Commit-Stands `d5b6422` mit Evidenz pro Zeile |
+| Requirements | `REQUIREMENTS.md` contains **174** requirement blocks in nine domains (counted at 2026-10-25T08:56:58Z via `### <DOMÄNE>-<NNN>`), no ID duplicated |
+| i18n key space | `src/i18n/locales/de.json` and `en.json`: keys parallel, no empty values, 7 identical values (only proper names like "Spotify", "Jackbox Party") |
+| Literal text measurement | `npm run check:i18n`: **6** literal texts in 47 files (2026-10-25T08:59Z) — at the start of the round it was 935 (08:34:52Z). The remaining 6: four theme proper names in `src/app/lobby/page.tsx:77–82` ("Phomu Blue", "Neon Purple", "Cyber Pink", "Gold Rush"), a status prefix `` `draft- ` `` in `src/app/admin/songs/page.tsx:444` and an emoji symbol in `src/app/settings/game-rules/page.tsx:63`. The gate is therefore **almost** green, but still exit 1 |
+| Gate scripts present | `scripts/check-i18n-completeness.mjs`, `scripts/check-doc-links.mjs` and `scripts/check-file-size.mjs` exist; `package.json` lists them as `check:i18n`, `check:doc-links`, `check:file-size`, `check:all`; `scripts/local-ci.sh:78` calls `npm run check:all` blocking |
+| Documentation link check | `node scripts/check-doc-links.mjs`: exit 1, **4 dead links** in 56 checked Markdown files (2026-10-25T08:56:58Z) — three of them in `REQUIREMENTS.md` (anchors `#offende-lücken` and `#game-006-…`), one in `docs/acceptance/M0-ACCEPTANCE.md` (file name with a space; since fixed) |
+| File sizes | `npm run check:file-size` → exit 0 with 8 warnings and 7 documented legacy debts (2026-10-25T08:58:43Z): `src/app/lobby/page.tsx` 801, `src/app/admin/review/page.tsx` 767, `src/components/game/MusicPlayer.tsx` 641, `src/stores/game-store.ts` 640, `src/components/game/modes/TimelineMode.tsx` 617, `src/components/game/RevealPhase.tsx` 596, `src/app/browse/page.tsx` 575; in the 401–550 band: `src/utils/validate-song-data.ts` 502, `src/app/game/page.tsx` 468, `src/app/admin/songs/page.tsx` 461 |
+| Archiving | `git status` shows the move of the predecessor files to `specifications/archive/` with a date stamp; `specifications/README.md` and `specifications/archive/README.md` explain the assignment |
+| Acceptance | `docs/acceptance/M0-ACCEPTANCE.md` — acceptance of the commit state `d5b6422` with evidence per line |
 
-**Fertige Teile (belegt):**
-- Der Doku-Baum ist angelegt; Root-Dokumente und `docs/` existieren.
-- Der maschinenlesbare Projektzustand existiert (`project/project.yaml`).
-- Vorlage und erster Abnahmenachweis existieren (`docs/acceptance/`).
-- Der Change Request dieser Runde ist geschrieben
+**Finished parts (evidenced):**
+- The documentation tree is in place; the root documents and `docs/` exist.
+- The machine-readable project state exists (`project/project.yaml`).
+- Template and first acceptance evidence exist (`docs/acceptance/`).
+- The change request of this round is written
   (`docs/cr/CR-0001-dokumentations-und-agentenstruktur-reform.md`).
 
-**Offene Teile:**
-- Der i18n-Gate ist **noch nicht grün**: 6 Befunde (2026-10-25T08:59Z) — vier
-  Theme-Eigennamen, ein Status-Präfix und ein Emojisymbol. Die Frage ist
-  Produktentscheidung: sind Eigennamen wie „Phomu Blue" übersetzungsfreie
-  Eigennamen (dann in die Allowlist) oder Lokalisierungen (dann
-  übersetzen)? (`GAP-09`)
-- Der Doku-Linkcheck ist **noch nicht grün**: 4 tote Links, drei davon in
-  `REQUIREMENTS.md` (`GAP-10`).
-- Das Dateigrößen-Gate ist grün, aber nur mit **dokumentierten Ausnahmen**:
-  7 Dateien liegen über 550 Zeilen, bei 5 davon ist der Ausnahme-Stand
-  bereits überschritten („Rückstand wächst", `GAP-11`).
-- Die i18n-Teildateien `src/i18n/locales/parts/` existieren; der Endzustand
-  verlangt **eine** Datei je Sprache (`GAP-12`).
-- Die Gates sind jetzt über `npm run check:*` erreichbar und laufen in
-  `npm run local-ci` blockierend mit (`GAP-02`, `GAP-03` geschlossen).
+**Open parts:**
+- The i18n gate is **not yet green**: 6 findings (2026-10-25T08:59Z) — four
+  theme proper names, a status prefix and an emoji symbol. The question is a
+  product decision: are proper names like "Phomu Blue" non-translatable
+  proper names (then into the allowlist) or localizations (then
+  translate)? (`GAP-09`)
+- The documentation link check is **not yet green**: 4 dead links, three of them
+  in `REQUIREMENTS.md` (`GAP-10`).
+- The file size gate is green, but only with **documented exceptions**:
+  7 files are over 550 lines, and for 5 of them the exception state
+  is already exceeded ("the backlog is growing", `GAP-11`).
+- The i18n partial files `src/i18n/locales/parts/` exist; the target state
+  requires **one** file per language (`GAP-12`).
+- The gates are now reachable via `npm run check:*` and run
+  blocking in `npm run local-ci` (`GAP-02`, `GAP-03` closed).
 
-## Release-Entscheidung
+## Release decision
 
-**offen** — die Runde ist nicht beendet, solange die Gates nicht grün sind.
+**open** — the round is not finished as long as the gates are not green.
 
 ---
 
-# M4 — Musikzentrierte UX & Spielgefühl
+# M4 — Music-centred UX & game feel
 
 **Status: `PLANNED`**
 
-## Zweck
+## Purpose
 
-Phomu verspricht Musik als Dauerpräsenz, nicht als Quiz-Aufgabe. Der Pilot
-soll die Musik hören, nicht die Punkte zählen. M4 macht den Audiofluss zum
-Produktkern: keine tote Phase, jeder Modus hat seinen eigenen musikalischen
-Moment.
+Phomu promises music as a constant presence, not as a quiz task. The pilot
+is supposed to listen to the music, not count the points. M4 makes the audio
+flow the product core: no dead phase, every mode has its own musical
+moment.
 
 ## Scope
 
-- **M4.1** Pre-Round-Beds und Transition-Stings (kein Stillstand > 3 s im
-  Standard-Flow).
-- **M4.2** Modus-Audio: Hint-Level-Stinger, Era-Stinger beim Platzieren,
-  Signature-Hook beim Survivor-Reveal, Loop-Lautstärke in der Vibe-Check-Frage.
-- **M4.3** Session-Dramaturgie (Warmup / Core / Party Peak, Finale mit
-  beschleunigter Reveal-Cadenz).
-- **M4.4** Audio-Cue-Pipeline (`src/utils/game-audio-cues.ts`,
-  `src/hooks/useGameAudioCues.ts`) mit echten Assets.
+- **M4.1** Pre-round beds and transition stings (no standstill > 3 s in the
+  standard flow).
+- **M4.2** Mode audio: hint level stinger, era stinger when placing,
+  signature hook on the survivor reveal, loop volume in the vibe check question.
+- **M4.3** Session dramaturgy (warmup / core / party peak, finale with
+  accelerated reveal cadence).
+- **M4.4** Audio cue pipeline (`src/utils/game-audio-cues.ts`,
+  `src/hooks/useGameAudioCues.ts`) with real assets.
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Kein Streaming-Eigenkanal, kein Upload von Nutzermusik.
-- Kein Drum-Machine-Editor.
-- Keine Änderung der Punkteformeln (das wäre eine eigene Änderungsanfrage).
+- No own streaming channel, no upload of user music.
+- No `drum machine` editor.
+- No change to the scoring formulas (that would be a separate change request).
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- Keine stille Phase > 3 Sekunden im Standard-Flow.
-- Jeder der sechs Modi besitzt mindestens **einen** eindeutigen musikalischen
-  Moment in der Frage-Phase.
+**Functional**
+- No silent phase > 3 seconds in the standard flow.
+- Each of the six modes has at least **one** distinctive musical
+  moment in the question phase.
 
-**Technisch**
-- Die Cue-Dateien liegen real als Audiodateien vor, nicht als Beschreibung.
-- Fehlende Assets erzeugen keinen sichtbaren Fehler (diese Regel ist im
-  Code bereits umgesetzt: `src/utils/game-audio-cues.ts`, Kommentar „Missing
+**Technical**
+- The cue files really exist as audio files, not as descriptions.
+- Missing assets produce no visible error (this rule is already
+  implemented in the code: `src/utils/game-audio-cues.ts`, comment "Missing
   files are handled silently").
 
 **Performance**
-- Audio-Cues dürfen den Musikfluss nicht unterbrechen (Kurz-Cues, keine
-  langen Overlays).
+- Audio cues must not interrupt the music flow (short cues, no
+  long overlays).
 
 **Usability**
-- Moduserkennung > 90 % ohne Texthilfe — **Messverfahren ist noch zu
-  definieren** (Instrument, Stichprobe, Fragebogen).
+- Mode recognition > 90 % without text help — **the measurement method is
+  still to be defined** (instrument, sample, questionnaire).
 
 **Security-Privacy**
-- Keine Telemetrie. Keine Audioaufnahme. Die Cue-Dateien sind statische
-  Assets im Repository.
+- No telemetry. No audio recording. The cue files are static
+  assets in the repository.
 
-**Interoperabilität**
-- Die Cues funktionieren auf Chromium und Safari (Media-Autoplay-Policy:
-  der Nutzer muss die Wiedergabe einmal starten — `COUNTDOWN_SECONDS: 3`).
+**Interoperability**
+- The cues work on Chromium and Safari (media autoplay policy:
+  the user has to start the playback once — `COUNTDOWN_SECONDS: 3`).
 
-## QA-Evidenz
+## QA evidence
 
-Gemessen am 2026-10-25:
+Measured on 2026-10-25:
 
-- `src/utils/game-audio-cues.ts` und `src/hooks/useGameAudioCues.ts` existieren
-  und benennen die erwarteten Asset-Pfade (Datei:Zeile).
-- **Die Assets fehlen.** `public/audio/sfx/` enthält ausschließlich
+- `src/utils/game-audio-cues.ts` and `src/hooks/useGameAudioCues.ts` exist
+  and name the expected asset paths (file:line).
+- **The assets are missing.** `public/audio/sfx/` contains only
   `correct.prompt.md`, `incorrect.prompt.md`, `lose.prompt.md`, `reveal.prompt.md`,
-  `win.prompt.md`; `public/audio/mode-cues/` enthält ausschließlich sechs
-  `.prompt.md`-Dateien. **Keine `.mp3`-Datei ist vorhanden.** Die Pipeline
-  ist implementiert, die Wirkung nicht — das ist der Grund für `PLANNED`
-  statt `IN PROGRESS`.
-- Der Session-Playtest (subjektive Musikpräsenz > 8/10) ist **NOT RUN**.
+  `win.prompt.md`; `public/audio/mode-cues/` contains only six
+  `.prompt.md` files. **No `.mp3` file exists.** The pipeline
+  is implemented, the effect is not — that is the reason for `PLANNED`
+  instead of `IN PROGRESS`.
+- The session playtest (subjective music presence > 8/10) is **NOT RUN**.
 
-## Release-Entscheidung
+## Release decision
 
-**nicht freigegeben** — das Meilenstein ist nicht begonnen; die
-Voraussetzung (reale Audio-Assets) fehlt.
+**not released** — the milestone has not started; the
+prerequisite (real audio assets) is missing.
 
 ---
 
@@ -528,255 +528,254 @@ Voraussetzung (reale Audio-Assets) fehlt.
 
 **Status: `PLANNED`**
 
-## Zweck
+## Purpose
 
-Phomu wird am Handy in der Hand gespielt, im Stehen, in einer lauten Runde.
-M5 macht die Oberfläche auf 360 px bis 430 px bedienbar und schnell.
+Phomu is played on a phone in the hand, standing up, in a loud round.
+M5 makes the interface usable and fast from 360 px to 430 px.
 
 ## Scope
 
-- **M5.1** Touch-Ziele ≥ 44 × 44 px für alle Primärinteraktionen.
-- **M5.2** Sticky-Footer/Bottom-Sheet für Lobby und Spiel.
-- **M5.3** Safe-Area-Unterstützung (`env(safe-area-inset-*)`).
-- **M5.4** Reduktion der Entscheidungen pro Screen (maximal ein Primär-CTA).
-- **M5.5** Standardisiertes Zustandsfeedback (Loading / Success / Error / Disabled).
-- **M5.6** Bundle-Analyse und Code-Splitting für schwere UI-Blöcke.
-- **M5.7** Lighthouse-Messung auf den Hauptseiten.
+- **M5.1** Touch targets ≥ 44 × 44 px for all primary interactions.
+- **M5.2** Sticky footer/bottom sheet for lobby and game.
+- **M5.3** Safe area support (`env(safe-area-inset-*)`).
+- **M5.4** Reduction of the decisions per screen (at most one primary CTA).
+- **M5.5** Standardized state feedback (Loading / Success / Error / Disabled).
+- **M5.6** Bundle analysis and code splitting for heavy UI blocks.
+- **M5.7** Lighthouse measurement on the main pages.
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Keine native App.
-- Kein Offline-Caching über den Static Export hinaus.
+- No native app.
+- No offline caching beyond the static export.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- Kein horizontaler Overflow bei 360 px Breite.
-- Alle Primärinteraktionen sind mit dem Daumen im unteren Viewport-Bereich
-  erreichbar.
+**Functional**
+- No horizontal overflow at 360 px width.
+- All primary interactions are reachable with the thumb in the lower viewport
+  area.
 
-**Technisch**
-- Kein horizontales Scrollen in den geprüften Ansichten.
-- Safe-Area-Variablen werden im Stylesheet verwendet.
+**Technical**
+- No horizontal scrolling in the tested views.
+- Safe area variables are used in the stylesheet.
 
 **Performance**
-- Lighthouse Mobile: Performance ≥ 85, Accessibility ≥ 90 auf `/`, `/lobby`,
+- Lighthouse Mobile: Performance ≥ 85, Accessibility ≥ 90 on `/`, `/lobby`,
   `/game`, `/browse`.
 
 **Usability**
-- Manueller Usability-Test mit mindestens 5 Aufgaben und dokumentierter
-  Erfolgsrate ≥ 90 %.
+- Manual usability test with at least 5 tasks and a documented
+  success rate ≥ 90 %.
 
 **Security-Privacy**
-- Nicht betroffen.
+- Not affected.
 
-**Interoperabilität**
-- Querformat und Dynamic-Island-Insets werden nicht abgeschnitten.
+**Interoperability**
+- Landscape orientation and Dynamic Island insets are not cut off.
 
-## QA-Evidenz
+## QA evidence
 
-Gemessen am 2026-10-25:
+Measured on 2026-10-25:
 
-- Safe-Area-Unterstützung **existiert** als CSS-Variablen `--sat`, `--sar`,
-  `--sab`, `--sal` und als Utility-Klassen `.pt-safe`, `.pb-safe`,
+- Safe area support **exists** as CSS variables `--sat`, `--sar`,
+  `--sab`, `--sal` and as utility classes `.pt-safe`, `.pb-safe`,
   `.pl-safe`, `.pr-safe` (`src/app/globals.css:109–139`); `viewportFit: 'cover'`
-  ist gesetzt (`src/app/layout.tsx`, `viewport`).
-- Einzelne Komponenten setzen bereits `min-h-[44px]` (Beispiel:
+  is set (`src/app/layout.tsx`, `viewport`).
+- Individual components already set `min-h-[44px]` (example:
   `src/components/game/QuestionPhase.tsx:108`).
-- **Lighthouse ist NOT RUN** in dieser Umgebung — es liegt kein Messwert vor.
-- **360-px-Overflow ist NOT RUN** — es liegt kein Messwert vor.
+- **Lighthouse is NOT RUN** in this environment — there is no measurement value.
+- **360-px overflow is NOT RUN** — there is no measurement value.
 
-## Release-Entscheidung
+## Release decision
 
-**nicht freigegeben** — kein Gate dieses Meilensteins ist erfüllt.
+**not released** — no gate of this milestone is met.
 
 ---
 
-# M6 — Security-Hardening
+# M6 — Security hardening
 
 **Status: `IN PROGRESS`**
 
-## Zweck
+## Purpose
 
-Phomu hat eine Admin-API, die Cover-Bilder aus dem Netz lädt und den Katalog
-verändert. Das ist der einzige Ort im Produkt, an dem Daten von außen
-hineinkommen. M6 macht ihn abgesichert und dokumentiert das Bedrohungsmodell.
+Phomu has an admin API that loads cover images from the network and changes the
+catalogue. This is the only place in the product where data comes in from
+outside. M6 secures it and documents the threat model.
 
 ## Scope
 
-- **M6.1** Authentifizierung der Admin-Routen (Token, timing-sicherer Vergleich).
-- **M6.2** Eingabevalidierung (Längen, Formate, URL-Allowlist).
-- **M6.3** SSRF- und Größenbegrenzung für externe Cover-Downloads.
-- **M6.4** Security-Header auf allen produktiven Routen (CSP, HSTS,
+- **M6.1** Authentication of the admin routes (token, timing-safe comparison).
+- **M6.2** Input validation (lengths, formats, URL allowlist).
+- **M6.3** SSRF and size limits for external cover downloads.
+- **M6.4** Security headers on all productive routes (CSP, HSTS,
   `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`).
-- **M6.5** Bedrohungsmodell und Incident-Runbook als versionierte Dokumente.
-- **M6.6** Secret-Scanning und Dependency-Audit in der CI.
-- **M6.7** Rate-Limiting und Missbrauchsschutz.
+- **M6.5** Threat model and incident runbook as versioned documents.
+- **M6.6** Secret scanning and dependency audit in the CI.
+- **M6.7** Rate limiting and abuse protection.
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Kein Benutzerkonto-System (Phomu bleibt anonym, Login ist optional).
-- Kein Mandanten- oder Rollenmodell vor M7.
+- No user account system (Phomu stays anonymous, login is optional).
+- No tenant or role model before M7.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- Unautorisierte Anfragen erhalten 401; fehlende oder zu kurze Konfiguration
-  ergibt 503.
-- Ungültige Eingaben ergeben 400, nicht 500.
+**Functional**
+- Unauthorized requests receive 401; missing or too short configuration
+  yields 503.
+- Invalid inputs yield 400, not 500.
 
-**Technisch**
-- Der Token-Vergleich ist timing-sicher.
-- Externe Cover-URLs müssen HTTPS sein und auf einer Allowlist stehen.
-- Der Download ist zeitlich und in der Größe begrenzt.
-- Nebenläufige Cover-Saves werden über eine Lock-Datei serialisiert.
+**Technical**
+- The token comparison is timing-safe.
+- External cover URLs must be HTTPS and be on an allowlist.
+- The download is limited in time and in size.
+- Concurrent cover saves are serialized via a lock file.
 
 **Performance**
-- Kein Performance-Budget für Sicherheitspfade; stattdessen: der Admin-Pfad
-  darf den Spielablauf nicht blockieren (der Spielablauf ruft die Admin-API
-  nicht auf).
+- No performance budget for security paths; instead: the admin path
+  must not block the game flow (the game flow does not call the admin API).
 
 **Usability**
-- Fehlermeldungen der Admin-API sind eindeutig, ohne Geheimnisse preiszugeben.
+- Error messages of the admin API are unambiguous without disclosing secrets.
 
 **Security-Privacy**
-- Der Token steht nie im Bundle und nie im Repository.
-- Cover-Downloads landen ausschließlich unter `public/covers/<songId>.jpg`.
+- The token is never in the bundle and never in the repository.
+- Cover downloads end up exclusively under `public/covers/<songId>.jpg`.
 
-**Interoperabilität**
-- Der Katalog bleibt nach einem Cover-Save gültig (`npm run validate-catalog`
-  bleibt grün).
+**Interoperability**
+- The catalogue remains valid after a cover save (`npm run validate-catalog`
+  stays green).
 
-## QA-Evidenz
+## QA evidence
 
-Zwei Messzeitpunkte, weil in dieser Runde mehrere Worker parallel am
-Admin-Bereich arbeiten. **Commit-Stand** = `d5b6422` (isolierter Auszug über
-`git archive`, alle Kommandos dort ausgeführt). **Arbeitsstand** = laufender
-Branch am 2026-10-25, 08:55Z.
+Two measurement points, because several workers work on the
+admin area in parallel in this round. **Commit state** = `d5b6422` (isolated extract via
+`git archive`, all commands executed there). **Working state** = running
+branch at 2026-10-25, 08:55Z.
 
-| Kontrolle | Fundstelle | Zustand (Arbeitsstand 08:55Z) |
+| Check | Location | State (working state 08:55Z) |
 |---|---|---|
-| Token-Prüfung, zeitkonstant | `src/admin-api/_lib/security.ts:44–51` | vorhanden |
-| Token-Mindestlänge 32, sonst 503 | `src/admin-api/_lib/security.ts:7`, `:66–68` | vorhanden |
-| Fehlende Konfiguration → 503 | `src/admin-api/_lib/security.ts:65` | vorhanden |
-| `songId`-Formatprüfung | `src/admin-api/_lib/security.ts:125–134` | vorhanden |
-| HTTPS-Pflicht + Host-Allowlist | `src/admin-api/_lib/security.ts:136–163` | vorhanden |
-| Redirect-Kette begrenzt (max. 3) | `src/admin-api/_lib/security.ts:10`, `:269` (`fetchGuardedBinary`) | vorhanden |
-| Größenlimits: 5 MB Bild, 512 KB JSON | `src/admin-api/_lib/security.ts:13`, `:16` | vorhanden |
-| Fetch-Timeout | `src/admin-api/_lib/security.ts:173` (`fetchWithTimeout`) | vorhanden |
-| Rate-Limiting je Client **und** global, 429 + `Retry-After` | `src/admin-api/_lib/rate-limit.ts:84`, `:137`; `src/admin-api/_lib/security.ts:104` | vorhanden (neu in dieser Runde) |
-| Getrennte Buckets je Route | `src/admin-api/admin-rate-limit.test.ts` („trennt die Buckets je Route") | vorhanden |
-| Lock-Datei gegen konkurrierende Saves | `src/admin-api/admin/covers/save/route.ts` | vorhanden |
-| Security-Header (CSP, HSTS, `X-Frame-Options`, `Permissions-Policy`, `Referrer-Policy`, `nosniff`, COOP) | `next.config.ts` (`securityHeaders`, `headers()`) | **konfiguriert, aber nicht ausgeliefert** — `headers()` wirkt nicht mit `output: 'export'`; der Code kommentiert das ausdrücklich (`GAP-13`) |
-| **Threat-Model / Incident-Runbook** | — | **fehlen** (`GAP-14`) |
-| **Secret-Scan in der CI** | `.github/workflows/deploy.yml` | **fehlt** — die Workflow baut und deployt, prüft aber kein Gate (`GAP-18`) |
-| **Audit-Log der Admin-Zugriffe** | — | **fehlt** (`GAP-16`) |
-| Negative Tests für die Admin-API | `src/admin-api/admin-token-guard.test.ts` (10), `admin-rate-limit.test.ts` (12), `cover-fetch-guard.test.ts` (20), `admin-routes-hardening.test.ts` (13), `security-headers.test.ts` (8) | vorhanden — 63 Testfälle, grün (`npm run test`, 2026-10-25T08:41:51Z) |
-| **Erreichbarkeit der Admin-Routen** | `.next/app-path-routes-manifest.json` | **nicht im Route-Baum** — die Handler liegen unter `src/admin-api/`, die Next-App registriert nur `src/app/`; zusätzlich ist `output: 'export'` ein statischer Export, der keine Laufzeit-Routen bedienen kann (`GAP-22`) |
+| Token check, constant time | `src/admin-api/_lib/security.ts:44–51` | present |
+| Token minimum length 32, otherwise 503 | `src/admin-api/_lib/security.ts:7`, `:66–68` | present |
+| Missing configuration → 503 | `src/admin-api/_lib/security.ts:65` | present |
+| `songId` format check | `src/admin-api/_lib/security.ts:125–134` | present |
+| HTTPS requirement + host allowlist | `src/admin-api/_lib/security.ts:136–163` | present |
+| Redirect chain limited (max. 3) | `src/admin-api/_lib/security.ts:10`, `:269` (`fetchGuardedBinary`) | present |
+| Size limits: 5 MB image, 512 KB JSON | `src/admin-api/_lib/security.ts:13`, `:16` | present |
+| Fetch timeout | `src/admin-api/_lib/security.ts:173` (`fetchWithTimeout`) | present |
+| Rate limiting per client **and** global, 429 + `Retry-After` | `src/admin-api/_lib/rate-limit.ts:84`, `:137`; `src/admin-api/_lib/security.ts:104` | present (new in this round) |
+| Separate buckets per route | `src/admin-api/admin-rate-limit.test.ts` (test `"separates the buckets per route"`) | present |
+| Lock file against concurrent saves | `src/admin-api/admin/covers/save/route.ts` | present |
+| Security headers (CSP, HSTS, `X-Frame-Options`, `Permissions-Policy`, `Referrer-Policy`, `nosniff`, COOP) | `next.config.ts` (`securityHeaders`, `headers()`) | **configured but not delivered** — `headers()` does not work with `output: 'export'`; the code comments this explicitly (`GAP-13`) |
+| **Threat model / incident runbook** | — | **missing** (`GAP-14`) |
+| **Secret scan in the CI** | `.github/workflows/deploy.yml` | **missing** — the workflow builds and deploys but checks no gate (`GAP-18`) |
+| **Audit log of admin accesses** | — | **missing** (`GAP-16`) |
+| Negative tests for the admin API | `src/admin-api/admin-token-guard.test.ts` (10), `admin-rate-limit.test.ts` (12), `cover-fetch-guard.test.ts` (20), `admin-routes-hardening.test.ts` (13), `security-headers.test.ts` (8) | present — 63 test cases, green (`npm run test`, 2026-10-25T08:41:51Z) |
+| **Reachability of the admin routes** | `.next/app-path-routes-manifest.json` | **not in the route tree** — the handlers lie under `src/admin-api/`, the Next app only registers `src/app/`; in addition `output: 'export'` is a static export that cannot serve runtime routes (`GAP-22`) |
 
-**Fertige Teile (belegt):**
-- Die Guard-Logik ist im Quelltext vorhanden und **negativ getestet**:
-  `admin-token-guard.test.ts` prüft „antwortet ohne Token mit 401" und
-  „antwortet mit einem falschen Token mit 401"; `cover-fetch-guard.test.ts`
-  prüft die Allowlist und die Größenlimits; `admin-routes-hardening.test.ts`
-  prüft die Fehlercodes der Routen.
-- Fremde Hosts, Nicht-HTTPS, überlange Felder, zu große Antworten und
-  lange Redirect-Ketten werden abgewiesen.
-- Rate-Limiting wirkt je Client und zusätzlich global, damit ein
-  gefälschter `x-forwarded-for` die Sperre nicht umgeht
-  (`admin-rate-limit.test.ts`: „begrenzt Brute-Force-Versuche auch dann, wenn
-  x-forwarded-for gefaelscht wird").
-- Externe Downloads sind in Zeit und Größe begrenzt; parallele Saves werden
-  serialisiert.
+**Finished parts (evidenced):**
+- The guard logic exists in the source and is **negatively tested**:
+  `admin-token-guard.test.ts` checks `"rejects a request without a token (401)"`
+  and `"rejects a request with a wrong token (401)"`; `cover-fetch-guard.test.ts`
+  checks the allowlist and the size limits; `admin-routes-hardening.test.ts`
+  checks the error codes of the routes.
+- Foreign hosts, non-HTTPS, overlong fields, oversized responses and
+  long redirect chains are rejected.
+- Rate limiting acts per client and additionally globally, so that a
+  forged `x-forwarded-for` cannot bypass the block
+  (`admin-token-guard.test.ts`: `"limits brute-force attempts even when
+  x-forwarded-for is forged"`).
+- External downloads are limited in time and size; parallel saves are
+  serialized.
 
-**Offene Teile:**
-- **Die Admin-Routen sind derzeit nicht erreichbar.** Sie liegen außerhalb
-  von `src/app/` und erscheinen deshalb nicht im Route-Manifest des Builds;
-  der Static Export kann Route-Handler ohnehin nicht ausführen. Die
-  Härtung ist damit **Quelltext-Härtung, keine Wirksamkeitsaussage** über
-  HTTP (`GAP-22`).
-- Die konfigurierten Security-Header werden beim Static Export **nicht**
-  ausgeliefert — der GitHub-Pages-Host setzt sie nicht (`GAP-13`).
-- Kein Threat-Model, kein Incident-Runbook (`GAP-14`).
-- Kein Audit-Log der Admin-Zugriffe (`GAP-16`).
+**Open parts:**
+- **The admin routes are currently not reachable.** They lie outside
+  `src/app/` and therefore do not appear in the route manifest of the build;
+  the static export cannot execute route handlers in any case. The
+  hardening is therefore **source-code hardening, not an effectiveness statement**
+  about HTTP (`GAP-22`).
+- The configured security headers are **not** delivered with the static
+  export — the GitHub Pages host does not set them (`GAP-13`).
+- No threat model, no incident runbook (`GAP-14`).
+- No audit log of admin accesses (`GAP-16`).
 
-## Release-Entscheidung
+## Release decision
 
-**nicht freigegeben** — der Admin-Code ist gehärtet, aber weder erreichbar
-noch über HTTP nachgewiesen; der ausgelieferte Produkt-Header-Schutz fehlt
-ebenfalls.
+**not released** — the admin code is hardened but neither reachable
+nor evidenced over HTTP; the delivered product header protection is missing
+as well.
 
 ---
 
-# M7 — Realtime & Multi-Gerät
+# M7 — Realtime & multi-device
 
 **Status: `PLANNED`**
 
-## Zweck
+## Purpose
 
-Ein Gerät weitergeben ist der Standard. Mehrere Geräte sind der Wunsch nach
-Rechten, Anwesenheit und Fernerkenntnis. M7 führt den Mehrgeräte-Modus ein —
-bewusst **spät**, weil er Authentifizierung, Rechte und Datenhaltung erzwingt.
+Passing one device around is the default. Multiple devices are the wish for
+rights, presence and remote participation. M7 introduces the multi-device mode —
+deliberately **late**, because it forces authentication, rights and data storage.
 
 ## Scope
 
-- **M7.1** Session-Code (6 Ziffern) und Route zum Beitreten.
-- **M7.2** Realtime-Synchronisation der Kernaktionen (Runde, Antwort, Punktestand).
-- **M7.3** Rollenmodell: Host, Co-Host, Pilot, Spieler, Zuschauer.
-- **M7.4** Reconnect-Verhalten und Konfliktauflösung.
-- **M7.5** Missbrauchsschutz: Beitrittsversuche begrenzen, Session-Ablauf.
+- **M7.1** Session code (6 digits) and route to join.
+- **M7.2** Realtime synchronisation of the core actions (round, answer, score).
+- **M7.3** Role model: host, co-host, pilot, player, spectator.
+- **M7.4** Reconnect behavior and conflict resolution.
+- **M7.5** Abuse protection: limit join attempts, session expiry.
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Kein Cloud-Konto, kein erzwungener Login.
-- Keine Server-Datenhaltung, solange M7 nicht freigegeben ist.
-- Kein Chat, kein Freundekreis.
+- No cloud account, no forced login.
+- No server-side data storage as long as M7 is not released.
+- No chat, no friend circle.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- 2 bis 6 Geräte spielen dieselbe Session ohne Drift in den Kernaktionen.
-- Reconnect innerhalb eines definierten Zeitfensters (Zielwert noch festzulegen).
+**Functional**
+- 2 to 6 devices play the same session without drift in the core actions.
+- Reconnect within a defined time window (target value still to be defined).
 
-**Technisch**
-- Der Sync läuft über eine definierte Realtime-Grenze, nicht über
+**Technical**
+- The sync runs over a defined realtime boundary, not over
   `localStorage`.
-- Der lokale Ein-Gerät-Modus bleibt unverändert funktionsfähig.
+- The local single-device mode remains fully functional.
 
 **Performance**
-- P95-Event-Latenz < 500 ms lokal/regionnah (Ziel aus der
-  Verbesserungsplan-Phase E).
+- P95 event latency < 500 ms local/near-region (target from
+  improvement plan phase E).
 
 **Usability**
-- Der Beitritt ist in drei Schritten erledigt.
+- Joining is done in three steps.
 
 **Security-Privacy**
-- Keine unberechtigten Datenzugriffe; das verlangt ein Rechtemodell, das
-  es erst in M7.3 gibt.
-- Datenminimierung: der Server speichert nur den Sitzungszustand.
+- No unauthorized data access; that requires a rights model that
+  only exists in M7.3.
+- Data minimisation: the server stores only the session state.
 
-**Interoperabilität**
-- Ein Gast kann dem Raum beitreten, ohne die App zu installieren.
+**Interoperability**
+- A guest can join the room without installing the app.
 
-## QA-Evidenz
+## QA evidence
 
-Gemessen am 2026-10-25:
+Measured on 2026-10-25:
 
-- `src/types/game-state.ts:23–26` deklariert `DeviceMode` mit
+- `src/types/game-state.ts:23–26` declares `DeviceMode` with
   `'pass-the-phone' | 'multi-device'`.
-- `src/types/session.ts:31–56` deklariert `MultiDeviceSession` mit
-  6-stelligem Code und `channelName` für Supabase Realtime.
-- `src/stores/game-store.ts:45` setzt `deviceMode: 'pass-the-phone'` als
-  Vorgabe.
-- **Keine Implementierung:** In `package.json` gibt es keine Supabase- oder
-  Realtime-Abhängigkeit; im Repository existiert keine Route `/join`; der
-  Build erzeugt 21 Routen, davon keine Join-Route.
-- Die Typen beschreiben also eine **Zusage**, keinen Zustand. Deshalb
-  `PLANNED` und nicht `IN PROGRESS`.
+- `src/types/session.ts:31–56` declares `MultiDeviceSession` with a
+  6-digit code and `channelName` for Supabase Realtime.
+- `src/stores/game-store.ts:45` sets `deviceMode: 'pass-the-phone'` as the
+  default.
+- **No implementation:** `package.json` contains no Supabase or
+  realtime dependency; no route `/join` exists in the repository; the
+  build produces 21 routes, none of them a join route.
+- The types therefore describe a **promise**, not a state. Hence
+  `PLANNED` and not `IN PROGRESS`.
 
-## Release-Entscheidung
+## Release decision
 
-**nicht freigegeben** — der Modus existiert als Typ, nicht als Funktion.
+**not released** — the mode exists as a type, not as a function.
 
 ---
 
@@ -784,131 +783,366 @@ Gemessen am 2026-10-25:
 
 **Status: `PLANNED`**
 
-## Zweck
+## Purpose
 
-Ein Partyspiel lebt von Wiederholung: dieselbe Gruppe, nächste Woche, andere
-Packs. M8 sichert den Betrieb — Testmatrix, Release-Checkliste, Rückweg.
+A party game lives on repetition: the same group, next week, other
+packs. M8 secures operations — test matrix, release checklist, way back.
 
 ## Scope
 
-- **M8.1** E2E-Testset für die kritischen Journeys.
-- **M8.2** Browser-/Geräte-Matrix (iOS Safari, Android Chrome, Desktop
-  Chrome/Firefox/Safari) als reproduzierbares Protokoll.
-- **M8.3** Barrierefreiheits-Review (Kontrast, Fokusführung, Screenreader).
-- **M8.4** Release-Checkliste und Rollback-Plan.
-- **M8.5** Optionale Live-Ops-Mechanik (wöchentliche Challenges, Event-Packs).
-- **M8.6** KPI-Auswertung **ohne** Telemetrie-Ausgang an Dritte.
+- **M8.1** E2E test set for the critical journeys.
+- **M8.2** Browser/device matrix (iOS Safari, Android Chrome, desktop
+  Chrome/Firefox/Safari) as a reproducible record.
+- **M8.3** Accessibility review (contrast, focus order, screen reader).
+- **M8.4** Release checklist and rollback plan.
+- **M8.5** Optional live-ops mechanic (weekly challenges, event packs).
+- **M8.6** KPI evaluation **without** telemetry outflow to third parties.
 
-## Explizite Nicht-Ziele
+## Explicit non-goals
 
-- Keine Telemetrie an externe Dienste.
-- Kein Konto- oder Abo-Modell.
-- Keine Mobile-App.
+- No telemetry to external services.
+- No account or subscription model.
+- No mobile app.
 
-## Abnahmekriterien
+## Acceptance criteria
 
-**Funktional**
-- Die kritischen Journeys sind E2E grün.
-- Die definierte Browser-/Geräte-Matrix hat keine Blocker.
+**Functional**
+- The critical journeys are green in E2E.
+- The defined browser/device matrix has no blockers.
 
-**Technisch**
-- Die Release-Checkliste ist eine Datei im Repository und nennt jedes Gate.
+**Technical**
+- The release checklist is a file in the repository and names every gate.
 
 **Performance**
-- Die in M5 gemessenen Lighthouse-Ziele gelten auch hier.
+- The Lighthouse targets measured in M5 apply here as well.
 
 **Usability**
-- Die Erfolgsrate des manuellen Usability-Tests bleibt ≥ 90 %.
+- The success rate of the manual usability test remains ≥ 90 %.
 
 **Security-Privacy**
-- Es fließen keine Spielerdaten an Dritte. KPI-Auswertung erfolgt lokal oder
-  über freiwillige, aggregierte Exporte.
+- No player data flows to third parties. KPI evaluation takes place locally or
+  via voluntary, aggregated exports.
 
-**Interoperabilität**
-- Der Karten-Druckweg (59 × 91 mm + 3 mm Beschnitt) bleibt dokumentiert und
-  geprüft (`PRINTING_GUIDE.md`, `PHOMU_CONFIG.CARD_*`).
+**Interoperability**
+- The card printing path (59 × 91 mm + 3 mm bleed) remains documented and
+  checked (`PRINTING_GUIDE.md`, `PHOMU_CONFIG.CARD_*`).
 
-## QA-Evidenz
+## QA evidence
 
-Gemessen am 2026-10-25:
+Measured on 2026-10-25:
 
-- Es existiert **ein** E2E-Test (`e2e/smoke.spec.ts`, 1 Testfall, grün).
-- Es existiert **keine** Gerätematrix, **keine** Release-Checkliste,
-  **kein** Rollback-Plan, **keine** KPI-Auswertung.
-- Der einzige vorhandene Workflow (`.github/workflows/deploy.yml`) baut und
-  veröffentlicht nach `main`; er führt kein einziges der Gates aus
-  (kein typecheck, kein lint, kein test, kein build-Gate, keine Coverage).
+- There exists **one** E2E test (`e2e/smoke.spec.ts`, 1 test case, green).
+- There exists **no** device matrix, **no** release checklist,
+  **no** rollback plan, **no** KPI evaluation.
+- The only existing workflow (`.github/workflows/deploy.yml`) builds and
+  publishes on `main`; it runs not a single one of the gates
+  (no typecheck, no lint, no test, no build gate, no coverage).
 
-## Release-Entscheidung
+## Release decision
 
-**nicht freigegeben.**
+**not released.**
 
 ---
 
-# Bekannte Lücken
+# Platform tracks — the multi-platform extension
 
-Priorisiert nach Wirkung auf die Abnahmefähigkeit. Jede Lücke nennt den
-Meilenstein, in dem sie geschlossen wird, den Beleg, der sie aufweist, und
-ihren Stand. **Stand 2026-10-25, 08:55Z** — mehrere Lücken wurden in dieser
-Runde bereits geschlossen; sie bleiben mit ihrem Beleg im Protokoll, damit die
-Schließung nachprüfbar bleibt.
+The milestones M0 to M8 make the product solid. The platform tracks make it
+**reachable**: the same game, the same rules, on the devices people actually
+sit in front of — phone, television, desktop, tablet.
 
-| ID | Lücke | Wirkung | Meilenstein | Beleg | Stand |
+**The invariant.** One product, one Rust core, platform-specific frontends.
+The rules live in the core and are implemented **once**. The web application
+stays and becomes a first-class shell; it is **supplemented, not replaced**.
+
+The binding track order is decided in
+[`docs/adr/ADR-0006-binding-platform-track-order.md`](docs/adr/ADR-0006-binding-platform-track-order.md):
+a track only starts once the previous one has a green release candidate.
+
+| Track | Shell | Order | Prerequisite |
+|---|---|---|---|
+| Web | Next.js 16, React 19 | 0 | active today |
+| Android | Kotlin, Jetpack Compose | 1 | M0–M2 green |
+| Google TV / Fire TV | Kotlin, Compose for TV | 2 | Android has a green release candidate |
+| macOS and Linux | Rust, egui | 3 | TV has a green release candidate |
+| iPadOS and iOS | Swift, SwiftUI | 4 | desktop has a green release candidate, Apple licence question settled |
+| Windows | Rust, egui | 5 | iOS/iPadOS has a green release candidate |
+
+The design is in
+[`docs/design/PLATFORM-ARCHITECTURE.md`](docs/design/PLATFORM-ARCHITECTURE.md),
+the binding contract between core and shells in
+[`docs/design/BUILD-CONTRACT.md`](docs/design/BUILD-CONTRACT.md), the
+specification in [`docs/spec/`](docs/spec/), the release rules in
+[`docs/releases/`](docs/releases/) and the licence question in
+[`docs/licensing/`](docs/licensing/).
+
+Each track runs through **alpha → beta → stable**. What each stage requires
+is defined once in [`docs/releases/RELEASE-PLAN.md`](docs/releases/RELEASE-PLAN.md);
+the checklist is in
+[`docs/releases/RELEASE-CHECKLIST.md`](docs/releases/RELEASE-CHECKLIST.md).
+
+## P0 — Platform foundation
+
+### Purpose
+
+Establish the shared Rust core and prove that a second shell can be built on
+top of it without duplicating a single rule.
+
+### Scope
+
+- Rust workspace with the crate topology and the dependency rules
+- the build contract between core and shells, enforced by a gate script
+- the bridge (UniFFI) with its ABI versioning
+- the web application as the reference shell
+- the boundary gate with its self-test
+
+### Explicit non-goals
+
+- No native shell beyond the web one
+- No store publication
+- No change of the game rules
+
+### Acceptance criteria
+
+- The dependency gate exists, fails on a deliberate violation and passes on a
+  clean tree (negative test documented)
+- The bridge round-trips its core types
+- The platform requirements of [`docs/spec/REQUIREMENTS-PLATFORM.md`](docs/spec/REQUIREMENTS-PLATFORM.md)
+  are covered by tests or carry an explicit "to be written" entry in
+  [`docs/spec/TRACEABILITY.md`](docs/spec/TRACEABILITY.md)
+
+### QA evidence
+
+[`docs/acceptance/`](docs/acceptance/)
+
+### Release decision
+
+Pending. The web shell stays the production surface until a second shell has a
+green release candidate.
+
+## P1 — Android
+
+### Purpose
+
+The phone and tablet are where a party game actually gets played.
+
+### Scope
+
+- Kotlin shell over the shared core
+- lobby, modes, round flow, catalogue browsing
+- the projector-free full-screen experience, wake lock, audio focus
+- accessibility for touch, screen readers and reduced motion
+
+### Explicit non-goals
+
+- No television support (that is P2)
+- No desktop (P3)
+- No App Store publication of an iOS build (P4)
+
+### Acceptance criteria
+
+- The eight dimensions of [`QUALITY.md`](QUALITY.md) are addressed
+- The core rules are not re-implemented in the shell
+- The Android release gate of
+  [`docs/releases/RELEASE-PLAN.md`](docs/releases/RELEASE-PLAN.md) is met
+
+### QA evidence
+
+[`docs/acceptance/`](docs/acceptance/)
+
+### Release decision
+
+Pending.
+
+## P2 — Google TV and Fire TV
+
+### Purpose
+
+The television is the screen the whole room looks at.
+
+### Scope
+
+- Kotlin shell over the same core, large type, remote control navigation
+- the projector surface as a first-class screen
+- the handover between the device running the game and the television showing
+  it
+
+### Explicit non-goals
+
+- No full game loop on the television in the first release — the device runs the
+  game, the television displays it
+- No voice input, no casting protocol
+
+### Acceptance criteria
+
+- Legible from the back of the room at the defined size
+- Fully operable with the remote control alone
+- The spoiler rule holds on the television surface as well
+
+### QA evidence
+
+[`docs/acceptance/`](docs/acceptance/)
+
+### Release decision
+
+Pending.
+
+## P3 — macOS and Linux
+
+### Purpose
+
+The desktop is where the projector mode, the print layout and the long evening
+live.
+
+### Scope
+
+- Rust shell with egui over the shared core
+- windowing, multi-monitor, the projector window
+- macOS: signed, notarised bundle; Linux: AppImage
+
+### Explicit non-goals
+
+- No Windows build in this track (that is P5)
+- No macOS-only feature that Linux cannot mirror
+
+### Acceptance criteria
+
+- The build contract is unchanged for a shell that is not written in Kotlin or
+  Swift
+- Performance budgets of the desktop track are met on the reference machine
+
+### QA evidence
+
+[`docs/acceptance/`](docs/acceptance/)
+
+### Release decision
+
+Pending.
+
+## P4 — iPadOS and iOS
+
+### Purpose
+
+The tablet as the second screen and the phone as the remote.
+
+### Scope
+
+- Swift shell with SwiftUI over the same core
+- the handover model to the television and to the desktop
+- the distribution decision from
+  [`docs/licensing/APPLE-LICENSING.md`](docs/licensing/APPLE-LICENSING.md)
+
+### Explicit non-goals
+
+- No App Store publication before the licence question in
+  [`docs/adr/ADR-0007-apple-distribution-and-licensing-strategy.md`](docs/adr/ADR-0007-apple-distribution-and-licensing-strategy.md)
+  is settled
+- No feature that the web application cannot do
+
+### Acceptance criteria
+
+- The Apple release gate is met
+- The GPL obligations are met for the shipped binary
+
+### QA evidence
+
+[`docs/acceptance/`](docs/acceptance/)
+
+### Release decision
+
+**Blocked.** Two prerequisites: an Apple Developer Program account (the owner
+will obtain one) and the licence decision above.
+
+## P5 — Windows and further operating systems
+
+### Purpose
+
+The remaining desktop platforms.
+
+### Scope
+
+- Rust shell with egui, MSIX packaging and signing
+- the same track model as P3
+
+### Explicit non-goals
+
+- No platform-specific features that the other shells cannot mirror
+
+### Acceptance criteria
+
+- The Windows release gate is met
+
+### QA evidence
+
+[`docs/acceptance/`](docs/acceptance/)
+
+### Release decision
+
+Pending.
+
+
+# Known gaps
+
+Prioritized by impact on the acceptance readiness. Each gap names the
+milestone in which it is closed, the evidence that reveals it, and
+its state. **State as of 2026-10-25, 08:55Z** — several gaps were already
+closed in this round; they remain in the record with their evidence so that the
+closure stays verifiable.
+
+| ID | Gap | Impact | Milestone | Evidence | State |
 |---|---|---|---|---|---|
-| GAP-01 | Prettier-Formatcheck rot (287 Dateien) | Style-Drift; blockiert kein Gate, verhindert aber ein grünes `format:check` | M3 | `npm run format:check` → Exit 1 | offen |
-| GAP-02 | `scripts/check-file-size.mjs` fehlt | Das Dateigrößen-Gate aus dem Arbeitsvertrag ist nicht ausführbar | M3 | Datei existiert nicht | **geschlossen in dieser Runde** (Skript vorhanden, `npm run check:file-size` → Exit 0) |
-| GAP-03 | Keine `npm run check:*`-Skripte in `package.json` | Die Gates sind manuell aufzurufen, CI ruft sie nicht | M3 | `package.json` scripts: kein `check:i18n`, `check:doc-links`, `check:file-size` | **geschlossen in dieser Runde** (`check:i18n`, `check:doc-links`, `check:file-size`, `check:all` vorhanden; `scripts/local-ci.sh:78` ruft `npm run check:all` blockierend) |
-| GAP-04 | `npm run validate-songs` prüft nur `A1.json` | Der Gesamtkatalog wird über diesen Weg nicht validiert | M1 | Kommando-Ausgabe: „Lese Datei: …/A1.json" | offen |
-| GAP-05 | Kein Datensatz-Regressionstest für die Katalogregeln | Eine Katalogänderung kann eine Regel brechen, ohne dass ein Test rot wird | M1 | Kein Test in `src/utils/` für die Katalogregeln (ein Grenzwert-Test für den Validator ist in dieser Runde hinzugekommen) | teilweise geschlossen |
-| GAP-06 | Kein Coverage-Ziel definiert | 23,29 % Statements (Commit-Stand) sind eine Zahl, kein Maßstab | M2 | `npm run test` Coverage-Ausgabe | offen |
-| GAP-07 | E2E-Smoke prüft nur URLs und trifft wegen `basePath` die 404-Seite | Der grüne Test belegt nicht, dass die Seiten funktionieren | M2 | `e2e/smoke.spec.ts:5–20`, `next.config.ts:5` | offen |
-| GAP-08 | Keine Browser-/Geräte-Matrix | Eine Regression auf Safari bleibt unbemerkt | M8 | Kein Matrix-Protokoll im Repository | offen |
-| GAP-09 | 6 Literaltexte in 47 Dateien noch nicht übersetzt (zu Beginn der Runde: 935) | Das i18n-Gate ist rot; die Oberfläche ist fast vollständig zweisprachig | M3 | `npm run check:i18n`, 2026-10-25T08:59Z: 4 Theme-Eigennamen (`src/app/lobby/page.tsx:77–82`), 1 Status-Präfix (`src/app/admin/songs/page.tsx:444`), 1 Emojisymbol (`src/app/settings/game-rules/page.tsx:63`) | offen (Entscheidung Eigennamen vs. Übersetzung nötig) |
-| GAP-10 | Tote Markdown-Links (zu Beginn der Runde: 66, jetzt 4) | Der Doku-Linkcheck ist rot, der Doku-Baum ist unvollständig | M3 | `node scripts/check-doc-links.mjs` → Exit 1, 4 Befunde, 3 davon in `REQUIREMENTS.md` | teilweise geschlossen (dieser Beitrag löst `ROADMAP.md`, `project/project.yaml`, `docs/cr/`, `docs/acceptance/` auf) |
-| GAP-11 | 7 Dateien über 550 Zeilen (dokumentierte Altlasten), 3 weitere über 400 | Verstoß gegen die Dateigrößen-Regel; große Diff-Risiken | M3 | `npm run check:file-size` → Exit 0, 8 Warnungen, 7 Altlasten mit hinterlegtem Ausnahme-Stand (2026-10-25T08:58:43Z) | offen (Ausnahmen dokumentiert, Rückstand wächst bei 5 Dateien) |
-| GAP-12 | `src/i18n/locales/parts/` existiert parallel zu `de.json`/`en.json` | Zwei Wahrheiten für denselben Schlüsselraum | M3 | Verzeichnislisting | offen |
-| GAP-13 | Security-Header sind konfiguriert, werden unter `output: 'export'` aber nicht ausgeliefert | Kein CSP und kein HSTS auf dem ausgelieferten Host; der Code benennt die Einschränkung selbst | M6 | `next.config.ts` (`securityHeaders`, Kommentar zur Export-Einschränkung) | offen (Konfiguration steht, Auslieferung fehlt) |
-| GAP-14 | Kein Threat-Model, kein Incident-Runbook | Bei einem Vorfall fehlt die dokumentierte Reaktion | M6 | Keine Datei im Repository | offen |
-| GAP-15 | Keine negativen Tests für die Admin-API | Die Härtung wäre ungeschützt gegen Rückbau | M6 | `src/admin-api/*.test.ts` — 5 Dateien, 63 Testfälle, grün (`npm run test`, 2026-10-25T08:41:51Z) | **geschlossen in dieser Runde** |
-| GAP-16 | Kein Rate-Limiting, kein Audit-Log | Missbrauch der Admin-API bleibt möglich | M6 | Rate-Limiting: `src/admin-api/_lib/rate-limit.ts` (vorhanden, getestet). Audit-Log: kein Fund | teilweise geschlossen |
-| GAP-17 | Keine `.mp3`-Assets; nur Prompt-Dateien | Der Audio-Flow existiert nicht, nur seine Beschreibung | M4 | Listing `public/audio/sfx/`, `public/audio/mode-cues/` | offen |
-| GAP-18 | Keine CI-Gates: Workflow baut und deployt ohne typecheck, lint, test | Ein roter Push wird veröffentlicht | M8 | `.github/workflows/deploy.yml` | offen |
-| GAP-19 | Widersprüchliche Katalogzahlen in der Doku | README nennt 37 Packs / 1.629 Songs; gemessen sind 135 Pack-Dateien / 1.615 Songs | M1 | `README.md` gegen `npm run validate-catalog` | offen |
-| GAP-20 | Kein Test für Scoring, Zeitabfall, Timeline, Moduslogik, Store | Die Regeln des Spiels sind ungetestet | M2 | Coverage-Ausgabe: `src/stores/game-store.ts` 0 % | offen |
-| GAP-21 | Lighthouse, 360-px-Overflow, Usability-Studie nicht gemessen | Die Abnahmekriterien von M5 sind unbelegt | M5 | Kein Messwert im Repository | offen |
-| GAP-22 | Admin-API-Routen liegen außerhalb von `src/app/` und sind im Build nicht registriert; `output: 'export'` kann keine Route-Handler ausführen | Die Admin-Härtung ist im Quelltext vorhanden, aber über HTTP nicht wirksam und nicht nachweisbar | M6 | `.next/app-path-routes-manifest.json` (23 Einträge, kein `/admin-api/*`), `next.config.ts` (`output: 'export'`) | offen |
+| GAP-01 | Prettier format check red (287 files) | Style drift; blocks no gate, but prevents a green `format:check` | M3 | `npm run format:check` → Exit 1 | open |
+| GAP-02 | `scripts/check-file-size.mjs` missing | The file size gate from the work contract is not executable | M3 | File does not exist | **closed in this round** (script present, `npm run check:file-size` → Exit 0) |
+| GAP-03 | No `npm run check:*` scripts in `package.json` | The gates have to be called manually, the CI does not call them | M3 | `package.json` scripts: no `check:i18n`, `check:doc-links`, `check:file-size` | **closed in this round** (`check:i18n`, `check:doc-links`, `check:file-size`, `check:all` present; `scripts/local-ci.sh:78` calls `npm run check:all` blocking) |
+| GAP-04 | `npm run validate-songs` checks only `A1.json` | The complete catalogue is not validated via this path | M1 | Command output: `"Lese Datei: …/A1.json"` ("Reading file: …/A1.json") | open |
+| GAP-05 | No record regression test for the catalogue rules | A catalogue change can break a rule without any test going red | M1 | No test in `src/utils/` for the catalogue rules (a limit test for the validator was added in this round) | partially closed |
+| GAP-06 | No coverage target defined | 23,29 % statements (commit state) are a number, not a benchmark | M2 | `npm run test` coverage output | open |
+| GAP-07 | E2E smoke checks only URLs and hits the 404 page because of `basePath` | The green test does not prove that the pages work | M2 | `e2e/smoke.spec.ts:5–20`, `next.config.ts:5` | open |
+| GAP-08 | No browser/device matrix | A regression on Safari stays unnoticed | M8 | No matrix record in the repository | open |
+| GAP-09 | 6 literal texts in 47 files not yet translated (at the start of the round: 935) | The i18n gate is red; the interface is almost completely bilingual | M3 | `npm run check:i18n`, 2026-10-25T08:59Z: 4 theme proper names (`src/app/lobby/page.tsx:77–82`), 1 status prefix (`src/app/admin/songs/page.tsx:444`), 1 emoji symbol (`src/app/settings/game-rules/page.tsx:63`) | open (decision on proper names vs. translation needed) |
+| GAP-10 | Dead Markdown links (at the start of the round: 66, now 4) | The documentation link check is red, the documentation tree is incomplete | M3 | `node scripts/check-doc-links.mjs` → Exit 1, 4 findings, 3 of them in `REQUIREMENTS.md` | partially closed (this contribution resolves `ROADMAP.md`, `project/project.yaml`, `docs/cr/`, `docs/acceptance/`) |
+| GAP-11 | 7 files over 550 lines (documented legacy debts), 3 more over 400 | Violation of the file size rule; large diff risks | M3 | `npm run check:file-size` → Exit 0, 8 warnings, 7 legacy debts with a recorded exception state (2026-10-25T08:58:43Z) | open (exceptions documented, the backlog is growing for 5 files) |
+| GAP-12 | `src/i18n/locales/parts/` exists in parallel to `de.json`/`en.json` | Two truths for the same key space | M3 | Directory listing | open |
+| GAP-13 | Security headers are configured but are not delivered under `output: 'export'` | No CSP and no HSTS on the delivered host; the code names the limitation itself | M6 | `next.config.ts` (`securityHeaders`, comment on the export limitation) | open (configuration in place, delivery missing) |
+| GAP-14 | No threat model, no incident runbook | In the event of an incident the documented reaction is missing | M6 | No file in the repository | open |
+| GAP-15 | No negative tests for the admin API | The hardening would be unprotected against a rollback | M6 | `src/admin-api/*.test.ts` — 5 files, 63 test cases, green (`npm run test`, 2026-10-25T08:41:51Z) | **closed in this round** |
+| GAP-16 | No rate limiting, no audit log | Abuse of the admin API remains possible | M6 | Rate limiting: `src/admin-api/_lib/rate-limit.ts` (present, tested). Audit log: no find | partially closed |
+| GAP-17 | No `.mp3` assets; only prompt files | The audio flow does not exist, only its description | M4 | Listing `public/audio/sfx/`, `public/audio/mode-cues/` | open |
+| GAP-18 | No CI gates: the workflow builds and deploys without typecheck, lint, test | A red push is published | M8 | `.github/workflows/deploy.yml` | open |
+| GAP-19 | Contradictory catalogue numbers in the documentation | The README names 37 packs / 1.629 songs; 135 pack files / 1.615 songs are measured | M1 | `README.md` against `npm run validate-catalog` | open |
+| GAP-20 | No test for scoring, time decay, timeline, mode logic, store | The rules of the game are untested | M2 | Coverage output: `src/stores/game-store.ts` 0 % | open |
+| GAP-21 | Lighthouse, 360-px overflow, usability study not measured | The acceptance criteria of M5 are unevidenced | M5 | No measurement value in the repository | open |
+| GAP-22 | Admin API routes lie outside `src/app/` and are not registered in the build; `output: 'export'` cannot execute route handlers | The admin hardening exists in the source but is not effective over HTTP and not verifiable | M6 | `.next/app-path-routes-manifest.json` (23 entries, no `/admin-api/*`), `next.config.ts` (`output: 'export'`) | open |
 
 ---
 
-# Roadmap-Änderungsregel
+# Roadmap change rule
 
-Ein Meilenstein-Scope darf nur über einen dokumentierten Change Request
-geändert werden, wenn er akzeptierte Anforderungen oder Release-Gates berührt.
-Ein Schritt, der eine offene Position still in ein späteres Meilenstein
-verschiebt, damit ein Meilenstein grün aussieht, ist verboten.
+A milestone scope may only be changed via a documented change request
+if it touches accepted requirements or release gates.
+A step that silently moves an open item into a later milestone
+so that a milestone looks green is forbidden.
 
-Kein Meilenstein und kein Feature gilt als fertig, wenn es auf Stubs,
-Dummy-Rückgaben oder Mock-Brücken beruht. Abnahme verlangt eine
-authentische, vollständig integrierte Implementierung mit echter
-Laufzeitverifikation.
+No milestone and no feature counts as done when it rests on stubs,
+dummy returns or mock bridges. Acceptance demands an
+authentic, fully integrated implementation with real runtime verification.
 
-Die Detailkriterien je Meilenstein stehen in
-[`docs/acceptance/`](docs/acceptance/), das Abnahmemodell in
-[`QUALITY.md`](QUALITY.md), die maschinenlesbare Zusammenfassung in
+The detailed criteria per milestone are in
+[`docs/acceptance/`](docs/acceptance/), the acceptance model in
+[`QUALITY.md`](QUALITY.md), the machine-readable summary in
 [`project/project.yaml`](project/project.yaml).
 
-## Historie
+## History
 
-Die Meilensteine M0 bis M8 sind aus den Vorgänger-Dokumenten übernommen und
-geschärft:
+The milestones M0 to M8 are taken over from the predecessor documents and
+sharpened:
 
-| Quelle | Übernommen als |
+| Source | Taken over as |
 |---|---|
-| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, Phase 1 (AP 1.1–1.3) | M0, M1, M2 |
-| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, Phase 2 (AP 2.1–2.3) | M4, M5 |
-| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, Phase 3 (AP 3.1–3.3) | M6 |
-| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, Phase 4 (AP 4.1–4.2) | M7 |
-| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, Phase 5 (AP 5.1–5.2) | M8 |
-| `specifications/archive/improvement_plan_mobile_ux_security_archivstand_2026-10-25.md`, Phasen A–F | M0, M1, M5, M6, M7, M8 |
-| `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md` | Abschnitt „Bekannte Lücken" |
-| Reformdokumentation dieser Runde | M3 |
+| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, phase 1 (AP 1.1–1.3) | M0, M1, M2 |
+| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, phase 2 (AP 2.1–2.3) | M4, M5 |
+| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, phase 3 (AP 3.1–3.3) | M6 |
+| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, phase 4 (AP 4.1–4.2) | M7 |
+| `specifications/archive/project_roadmap_archivstand_2026-10-25.md`, phase 5 (AP 5.1–5.2) | M8 |
+| `specifications/archive/improvement_plan_mobile_ux_security_archivstand_2026-10-25.md`, phases A–F | M0, M1, M5, M6, M7, M8 |
+| `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md` | section "Known gaps" |
+| Reform documentation of this round | M3 |

@@ -1,13 +1,13 @@
 # Phomu Printing Guide
 
-> **Dieser Leitfaden ist umgezogen.**
-> Die vollständige Fassung steht in
+> **This guide has moved.**
+> The full version is in
 > [`docs/guides/PRINTING-GUIDE.md`](docs/guides/PRINTING-GUIDE.md).
 >
-> Kurzfassung: Kartenformat **59 × 91 mm** mit **3 mm** Beschnitt rundum,
-> **300 dpi**, Karton ab **300 g/m²** — und **immer erst ein Testbogen**.
+> Short version: card format **59 × 91 mm** with **3 mm** bleed all round,
+> **300 dpi**, card stock from **300 g/m²** — and **always a test sheet first**.
 >
-> Fehlerbilder beim Scannen und Drucken:
+> Error pictures for scanning and printing:
 > [`docs/guides/TROUBLESHOOTING.md`](docs/guides/TROUBLESHOOTING.md).
 
 The card dimensions live in `src/config/game-config.ts` (`CARD_WIDTH_MM`,

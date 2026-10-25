@@ -1,174 +1,173 @@
-# Qualitätsziele — „Best in Class"
+# Quality Goals — "Best in Class"
 
-„Best in Class" ist hier **ein Messstandard, kein Marketingversprechen**. Jedes Ziel
-nennt einen Zielwert, eine Messmethode und den aktuellen Stand. Was nicht gemessen
-wurde, steht als **„nicht gemessen"** — eine geschätzte Zahl wäre schlimmer als
-keine.
+"Best in Class" here is **a measurement standard, not a marketing promise**. Every
+goal names a target value, a measurement method and the current state. What was not
+measured is marked as **"not measured"** — an estimated number would be worse than
+no number.
 
-**Stand der Messungen:** 2026-04 (Branch `feature/vocument-style-docs-and-i18n`).
-Alle Werte unten stammen aus Kommandos, die im Repo laufen; das Kommando steht bei
-jedem Ziel.
+**State of the measurements:** 2026-04 (branch `feature/vocument-style-docs-and-i18n`).
+All values below come from commands that run in the repository; the command is given
+with every goal.
 
-**Die Trennung:** Die *Vorgabe* (was das Projekt anstrebt) steht in
-[`../REQUIREMENTS.md`](../REQUIREMENTS.md) und [`../QUALITY.md`](../QUALITY.md). Die
-*Messung* (was heute true ist) steht hier. Beides gehört zusammen und wird im
-selben Commit gepflegt.
-
----
-
-## 1. Startzeit
-
-| | |
-|---|---|
-| **Zielwert** | First Contentful Paint ≤ 1,5 s auf einem Mittelklasse-Smartphone über WLAN; Largest Contentful Paint ≤ 2,5 s |
-| **Messmethode** | Lighthouse (Performance) gegen den statischen Export `out/`, mobil simuliert, Mittelwert aus 5 Läufen; zusätzlich manueller Zeitpunkt der ersten sichtbaren Karte |
-| **Aktueller Stand** | **nicht gemessen** — es existiert keine Performance-Messung im Repo, weder ein Lighthouse-Lauf noch eine Web-Vital-Erfassung |
-
-**Warum das noch offen ist:** Die App ist ein statischer Export ohne Server. Für
-eine belastbare Zahl braucht es einen wiederholbaren Aufbau (feste Dateigröße,
-fester Geräte-Emulator, fünf Läufe). Der erste Kandidat für den Flaschenhals ist
-der Katalog-Chunk — siehe Abschnitt 3.
+**The separation:** The *requirement* (what the project aims for) is in
+[`../REQUIREMENTS.md`](../REQUIREMENTS.md) and [`../QUALITY.md`](../QUALITY.md). The
+*measurement* (what is true today) is here. Both belong together and are maintained in
+the same commit.
 
 ---
 
-## 2. Rundenübergang-Latenz
+## 1. Start time
 
 | | |
 |---|---|
-| **Zielwert** | Der Wechsel von „Karte ziehen" zu „Frage sichtbar" ≤ 500 ms; der Wechsel von „Reveal" zur nächsten Runde ≤ 300 ms |
-| **Messmethode** | Zeitstempel in `performance.now()` um `advancePhase()` herum, median über 50 Runden eines Testspiels mit 6 Spielern |
-| **Aktueller Stand** | **nicht gemessen** — im Code existiert keine Zeitmessung, und die Phase wird in `src/app/game/page.tsx` über `AnimatePresence` mit 0,3 s Übergang animiert (Konstante `PHASE_VARIANTS`, `transition: { duration: 0.3 }`) |
+| **Target value** | First Contentful Paint ≤ 1.5 s on a mid-range smartphone over WLAN; Largest Contentful Paint ≤ 2.5 s |
+| **Measurement method** | Lighthouse (Performance) against the static export `out/`, mobile simulated, mean of 5 runs; in addition the manual timestamp of the first visible card |
+| **Current state** | **not measured** — there is no performance measurement in the repository, neither a Lighthouse run nor a web-vitals capture |
 
-**Erwartbarer Engpass:** Der Musikplayer bleibt über den Reveal-Übergang montiert
-(`src/app/game/page.tsx`, `display: none` statt Unmount), damit das YouTube-Iframe
-nicht neu startet. Das ist gewollt, kostet aber Zeit beim ersten Aufbau des
-Iframes in jeder Runde.
+**Why this is still open:** The app is a static export without a server. For a
+reliable number you need a repeatable setup (fixed file size, fixed device emulator,
+five runs). The first candidate for the bottleneck is the catalog chunk — see
+section 3.
 
 ---
 
-## 3. Bundle-Größe
+## 2. Round transition latency
 
 | | |
 |---|---|
-| **Zielwert** | JavaScript gesamt ≤ 1,5 MB ungepackt **und** ≤ 600 KB gzip; der größte Einzel-Chunk ≤ 800 KB ungepackt; der statische Export gesamt ≤ 20 MB |
-| **Messmethode** | `npm run build`, danach `find .next/static/chunks -name "*.js" -printf "%s\n"` (Summe) und `cat .next/static/chunks/*.js \| gzip -c \| wc -c`; Export-Größe über `du -sh out` |
-| **Aktueller Stand** | **4.425.934 Byte (4,22 MiB) ungepackt / 1.304.143 Byte (1,24 MiB) gzip** in 32 Chunks; **größter Einzel-Chunk 2.845.675 Byte (2,71 MiB) / 840.841 Byte gzip**; **statischer Export 147 MB**, davon 142 MB Coverbilder (1.649 Dateien in `out/covers`) und 4,5 MB `out/_next` |
+| **Target value** | The switch from "draw card" to "question visible" ≤ 500 ms; the switch from "reveal" to the next round ≤ 300 ms |
+| **Measurement method** | Timestamps in `performance.now()` around `advancePhase()`, median over 50 rounds of a test game with 6 players |
+| **Current state** | **not measured** — the code contains no time measurement, and the phase is animated in `src/app/game/page.tsx` via `AnimatePresence` with a 0.3 s transition (constant `PHASE_VARIANTS`, `transition: { duration: 0.3 }`) |
 
-**Erfüllt:** nein. Weder die 1,5 MB ungepackt noch die 600 KB gzip noch die 20 MB
-Gesamtexport werden erreicht.
-
-**Bekannte Ursache:** Der Katalog (1.615 Songs) liegt als JSON im Bundle und wird
-beim Start in den Client geladen. Der 2,71-MiB-Chunk ist genau dieser
-Datenblock. Wer die Größe senken will, muss den Katalog aus dem initialen Bundle
-nehmen (Nachladen pro Pack, Web-Worker-Parsing oder ein schlankeres
-Startmanifest) — **nicht** die Coverbilder: die sind statische Dateien und
-kosten keinen JavaScript-Transfer, nur Download-Zeit.
-
-**Nebenbefund:** 1.649 Coverbilder bei 142 MB ergeben im Mittel rund 86 KB pro
-Bild. Für den Export ist das vertretbar, für den Erstdownload eines Packs ist es
-die eigentliche Zeitfrage.
+**Expected bottleneck:** The music player stays mounted across the reveal transition
+(`src/app/game/page.tsx`, `display: none` instead of unmount) so that the YouTube
+iframe does not restart. That is intentional, but it costs time on the first build of
+the iframe in every round.
 
 ---
 
-## 4. i18n-Vollständigkeit
+## 3. Bundle size
 
 | | |
 |---|---|
-| **Zielwert** | `de.json` und `en.json` sind vollständig parallel (gleiche Schlüssel, keine leeren Werte), **0** Literaltexte im JSX, `html lang` folgt der gewählten Sprache |
-| **Messmethode** | `npm run check:i18n` (`scripts/check-i18n-completeness.mjs`) |
-| **Aktueller Stand** | **Schlüssel: 25 in `de.json`, 25 in `en.json`, parallel, 0 leere Werte** — erfüllt. **Literaltexte: 465 Verstöße in 47 geprüften `.tsx`-Dateien** (`GESAMT: 465 Verstöße, 465 Literaltexte`) — nicht erfüllt. Die Migration läuft, der Wert sinkt; er war bei der ersten Messung dieser Doku 624 und ist damit **eine Momentaufnahme**, kein Endstand. **Dateien mit `useTranslation()`: 4** (`src/app/page.tsx`, `src/components/ui/NavBar.tsx`, `LanguageSwitcher.tsx`, `ThemeSwitcher.tsx`). **Sprachkopplung:** Das server-gerenderte HTML backt Deutsch (`<html lang="de">`, Titel aus `de.json`, `src/app/layout.tsx`); die Navigationsleiste setzt `document.title` und `document.documentElement.lang` clientseitig auf die aktive Sprache (`src/components/ui/NavBar.tsx:43-44`) |
+| **Target value** | JavaScript total ≤ 1.5 MB unpacked **and** ≤ 600 KB gzipped; largest single chunk ≤ 800 KB unpacked; static export total ≤ 20 MB |
+| **Measurement method** | `npm run build`, then `find .next/static/chunks -name "*.js" -printf "%s\n"` (sum) and `cat .next/static/chunks/*.js \| gzip -c \| wc -c`; export size via `du -sh out` |
+| **Current state** | **4,425,934 bytes (4.22 MiB) unpacked / 1,304,143 bytes (1.24 MiB) gzipped** in 32 chunks; **largest single chunk 2,845,675 bytes (2.71 MiB) / 840,841 bytes gzipped**; **static export 147 MB**, of which 142 MB are cover images (1,649 files in `out/covers`) and 4.5 MB `out/_next` |
 
-**Was das Gate noch nicht abdeckt:** Der Seitentitel und die Beschreibung in
-`src/app/layout.tsx` werden **serverseitig aus `de.json` gebacken** — der
-statische Export liefert also immer die deutsche Fassung aus. Das ist vertretbar,
-solange der Client nachzieht; die Navigationsleiste setzt Titel und `lang`
-korrekt. Ein **Metadaten-Snippet** (OG-Bild, Beschreibung) bleibt englisch, weil
-es im statischen Export nicht je Sprache erzeugt werden kann.
+**Fulfilled:** no. Neither the 1.5 MB unpacked nor the 600 KB gzipped nor the 20 MB
+total export is reached.
+
+**Known cause:** The catalog (1,615 songs) lies as JSON in the bundle and is loaded
+into the client at start-up. The 2.71 MiB chunk is exactly this data block. Anyone
+who wants to reduce the size must take the catalog out of the initial bundle (load
+per pack, web worker parsing or a leaner start manifest) — **not** the cover images:
+those are static files and cost no JavaScript transfer, only download time.
+
+**Secondary finding:** 1,649 cover images at 142 MB give an average of about 86 KB per
+image. For the export that is acceptable; for the first download of a pack it is the
+actual timing question.
 
 ---
 
-## 5. Kontrast
+## 4. i18n completeness
 
 | | |
 |---|---|
-| **Zielwert** | Alle sichtbaren Texte und Bedienelemente erreichen mindestens **WCAG 2.1 AA**: 4,5:1 für Fließtext, 3:1 für große Schrift und Bedienelemente; jedes Theme einzeln geprüft |
-| **Messmethode** | `axe-core` (Browser-Erweiterung oder Playwright) über die Routen `/Phomu`, `/Phomu/lobby`, `/Phomu/browse`, `/Phomu/game`, `/Phomu/projector` je im hellsten und im dunkelsten Theme (`jackbox`, `musicwall`) |
-| **Aktueller Stand** | **nicht gemessen** — es gibt keine Kontrastprüfung im Repo, kein axe-Setup und keine dokumentierten Kontrastverhältnisse |
+| **Target value** | `de.json` and `en.json` are completely parallel (same keys, no empty values), **0** literal texts in the JSX, `html lang` follows the selected language |
+| **Measurement method** | `npm run check:i18n` (`scripts/check-i18n-completeness.mjs`) |
+| **Current state** | **Keys: 25 in `de.json`, 25 in `en.json`, parallel, 0 empty values** — fulfilled. **Literal texts: 465 violations in 47 checked `.tsx` files** (`TOTAL: 465 violations, 465 literal texts` — tool output, translated from German) — not fulfilled. The migration is running, the value is falling; at the first measurement of this document it was 624 and is therefore **a snapshot**, not a final state. **Files with `useTranslation()`: 4** (`src/app/page.tsx`, `src/components/ui/NavBar.tsx`, `LanguageSwitcher.tsx`, `ThemeSwitcher.tsx`). **Language coupling:** The server-rendered HTML bakes in German (`<html lang="de">`, title from `de.json`, `src/app/layout.tsx`); the navigation bar sets `document.title` and `document.documentElement.lang` client-side to the active language (`src/components/ui/NavBar.tsx:43-44`) |
 
-**Bekannte Risikostellen** (aus dem Code gelesen, nicht gemessen): In den
-Modus-Komponenten werden Texte mit niedriger Deckkraft auf farbigem Grund
-dargestellt, etwa `opacity-40` und `opacity-30` auf `--color-accent`
-(`src/components/game/modes/HintMasterMode.tsx`). Opazität reduziert den
-Kontrast rechnerisch — das muss gemessen, nicht geschätzt werden.
+**What the gate does not cover yet:** The page title and the description in
+`src/app/layout.tsx` are **baked server-side from `de.json`** — the static export
+therefore always serves the German version. That is acceptable as long as the client
+catches up; the navigation bar sets title and `lang` correctly. A **metadata
+snippet** (OG image, description) stays English, because it cannot be generated per
+language in the static export.
 
 ---
 
-## 6. Tastaturbedienung
+## 5. Contrast
 
 | | |
 |---|---|
-| **Zielwert** | Jede Spielmechanik ist ohne Maus bedienbar; sichtbarer Fokus auf allen Bedienelementen; Touch-Ziele ≥ 44 px Höhe |
-| **Messmethode** | Manuelle Traversierung jeder Route mit `Tab`/`Pfeiltasten`/`Enter`; zusätzlich `grep -rn "addEventListener('keydown'" src` und `grep -rho "min-h-\[44px\]" src --include=*.tsx \| wc -l` |
-| **Aktueller Stand** | **Tastatur-Listener: 1** (`src/components/game/modes/TimelineMode.tsx`, Zahlen 1–n wählen, Pfeiltasten bewegen, `Enter`/`Leertaste` bestätigen). **Touch-Ziele mit `min-h-[44px]`: 4 Dateien** (`QuestionPhase.tsx`, `modes/SurvivorMode.tsx`, `lobby/ModeSelector.tsx`, `lobby/PackSelector.tsx`) — die übrigen Bedienelemente setzen die Höhe über Padding. **`focus:ring-2`: 16 Fundstellen**, davon **0** `focus-visible:` — der Fokusring erscheint also auch bei Mausklicks. **Kein `role=`-Attribut** im gesamten `src/` |
+| **Target value** | All visible texts and controls reach at least **WCAG 2.1 AA**: 4.5:1 for body text, 3:1 for large type and controls; every theme checked separately |
+| **Measurement method** | `axe-core` (browser extension or Playwright) across the routes `/Phomu`, `/Phomu/lobby`, `/Phomu/browse`, `/Phomu/game`, `/Phomu/projector`, each in the lightest and in the darkest theme (`jackbox`, `musicwall`) |
+| **Current state** | **not measured** — there is no contrast check in the repository, no axe setup and no documented contrast ratios |
 
-**Erfüllt:** nein. Die Timeline ist vollständig tastaturbedienbar, die übrigen fünf
-Modi nicht. Das ist die wichtigste erreichbare Lücke, weil sie eine ganze
-Spielmechanik betrifft.
+**Known risk spots** (read from the code, not measured): In the mode components,
+texts with low opacity are displayed on a coloured background, for example
+`opacity-40` and `opacity-30` on `--color-accent`
+(`src/components/game/modes/HintMasterMode.tsx`). Opacity reduces the contrast
+arithmetically — that has to be measured, not estimated.
 
 ---
 
-## 7. Fehlerbehandlung
+## 6. Keyboard operation
 
 | | |
 |---|---|
-| **Zielwert** | Jeder Fehlerfall hat eine sichtbare, benannte Meldung und keinen Absturz; **0** unbehandelte Fehler im Normalbetrieb; jede Härtung hat einen negativen Test |
-| **Messmethode** | `grep -rc "catch" src --include=*.ts --include=*.tsx`; manuelle Fehlerfälle (kein Netz, defekter Song, fehlender Token, blockierter Ton) gegen die Checkliste in [`guides/TROUBLESHOOTING.md`](guides/TROUBLESHOOTING.md) |
-| **Aktueller Stand** | **12 Dateien mit `catch`-Blöcken.** Die Admin-API antwortet geschützt: **503** bei fehlender oder zu kurzer Konfiguration (`ADMIN_API_TOKEN` < 32 Zeichen), **401** bei falschem Token, zeitkonstanter Vergleich über SHA-256. Im Spiel sind benannt: „Keine Songs verfügbar. Bitte prüfe dein Song-Pack." (`src/components/game/DrawingPhase.tsx`), „Video kaputt? Neu würfeln" (`src/components/game/QuestionPhase.tsx`), „Kamera konnte nicht initialisiert werden." (`src/components/game/QRScannerModal.tsx`), „Der Ton wird von deinem Browser blockiert" (übersetzt in `src/i18n/locales/de.json`) |
+| **Target value** | Every game mechanic is operable without a mouse; visible focus on all controls; touch targets ≥ 44 px in height |
+| **Measurement method** | Manual traversal of every route with `Tab`/arrow keys/`Enter`; in addition `grep -rn "addEventListener('keydown'" src` and `grep -rho "min-h-\[44px\]" src --include=*.tsx \| wc -l` |
+| **Current state** | **Keyboard listeners: 1** (`src/components/game/modes/TimelineMode.tsx`, choose numbers 1–n, arrow keys move, `Enter`/`space` confirms). **Touch targets with `min-h-[44px]`: 4 files** (`QuestionPhase.tsx`, `modes/SurvivorMode.tsx`, `lobby/ModeSelector.tsx`, `lobby/PackSelector.tsx`) — the remaining controls set the height via padding. **`focus:ring-2`: 16 hits**, of which **0** `focus-visible:` — so the focus ring also appears on mouse clicks. **No `role=` attribute** in the whole of `src/` |
 
-**Lücke:** Der Autoplay-Blocker des Browsers wird **stumm** geschluckt:
+**Fulfilled:** no. The timeline is fully keyboard-operable, the other five modes are
+not. That is the most important reachable gap, because it affects an entire game
+mechanic.
+
+---
+
+## 7. Error handling
+
+| | |
+|---|---|
+| **Target value** | Every error case has a visible, named message and no crash; **0** unhandled errors in normal operation; every hardening has a negative test |
+| **Measurement method** | `grep -rc "catch" src --include=*.ts --include=*.tsx`; manual error cases (no network, broken song, missing token, blocked audio) against the checklist in [`guides/TROUBLESHOOTING.md`](guides/TROUBLESHOOTING.md) |
+| **Current state** | **12 files with `catch` blocks.** The admin API answers protected: **503** on missing or too short configuration (`ADMIN_API_TOKEN` < 32 characters), **401** on a wrong token, timing-constant comparison via SHA-256. In the game the following are named: "No songs available. Please check your song pack." (key `game.drawing.noSongsError`, `src/components/game/DrawingPhase.tsx`), "Video broken? Roll again" (key `game.question.reroll`, `src/components/game/QuestionPhase.tsx`), "The camera could not be initialized." (key `game.qr.cameraError`, `src/components/game/QRScannerModal.tsx`), "Audio is blocked by your browser. Please tap play." (translated in `src/i18n/locales/de.json`) |
+
+**Gap:** The browser's autoplay blocker is swallowed **silently**:
 `void audio.play().catch(() => { … })` in `src/components/game/MusicPlayer.tsx`
-(Zeilen 399 und 412) — der Spieler sieht keinen Hinweis, dass er selbst starten
-muss. Ein sichtbarer Text dafür ist **noch nicht** angelegt: Der in
-`CONTRACT.md` §5.2 vorgesehene Schlüssel `errors.audioBlocked` steht noch nicht in
+(lines 399 and 412) — the player sees no hint that they have to start it themselves.
+A visible text for this is **not yet** in place: the key `errors.audioBlocked`
+provided for in `CONTRACT.md` §5.2 is not yet in
 `src/i18n/locales/de.json`.
 
 ---
 
-## 8. Katalogqualität
+## 8. Catalog quality
 
 | | |
 |---|---|
-| **Zielwert** | **0** Schema-Fehler, **0** unerlaubte Dubletten, **0** fehlende Jahre zwischen 1950 und dem laufenden Jahr, **0** Spoiler in den Hinweisen; Warnungen nur als Hinweis, nicht als Fehler |
-| **Messmethode** | `npm run validate-catalog` (Gate gegen die Baseline) und `npm run validate-songs` (Schema je Datei) |
-| **Aktueller Stand** | **1.615 Songs** in 135 JSON-Dateien. **0** Schema-Fehler, **126** Schema-Warnungen, **0** Dublettengruppen, **4** erlaubte Dubletten (Allowlist), **0** ignorierte Sekundärdubletten, **0** fehlende Jahre 1950–2026. Zusätzlich: `npm run validate-songs` prüft standardmäßig **nur `src/data/songs/A1.json`** (12 Songs, gültig) — die übrigen 134 Dateien prüft nur das Katalog-Gate |
+| **Target value** | **0** schema errors, **0** forbidden duplicates, **0** missing years between 1950 and the current year, **0** spoilers in the hints; warnings only as a hint, not as an error |
+| **Measurement method** | `npm run validate-catalog` (gate against the baseline) and `npm run validate-songs` (schema per file) |
+| **Current state** | **1,615 songs** in 135 JSON files. **0** schema errors, **126** schema warnings, **0** duplicate groups, **4** allowed duplicates (allowlist), **0** ignored secondary duplicates, **0** missing years 1950–2026. In addition: `npm run validate-songs` checks by default **only `src/data/songs/A1.json`** (12 songs, valid) — the catalog gate is the only thing that checks the remaining 134 files |
 
-**Offen:** Die 126 Schema-Warnungen sind nicht aufgeschlüsselt. Welche Feldregel
-sie auslöst, geht aus der Gate-Ausgabe nicht hervor; wer sie auflösen will,
-braucht den Report (`npm run validate-catalog:report` →
+**Open:** The 126 schema warnings are not broken down. Which field rule triggers them
+does not emerge from the gate output; anyone who wants to resolve them needs the
+report (`npm run validate-catalog:report` →
 `specifications/catalog_issues_report.json`).
 
 ---
 
-## 9. Testabdeckung
+## 9. Test coverage
 
 | | |
 |---|---|
-| **Zielwert** | ≥ 80 % Zeilenabdeckung über `src/`, **jede** Kernlogik (`song-picker`, `qr-intent`, `game-store`, `censor-utils`, `ai-task-queue`) mit Unit-Test, ein E2E-Test, der die Kernjourney **inhaltlich** prüft (nicht nur die URL) |
-| **Messmethode** | `npm run test` (Vitest mit v8-Coverage); Coverage-Schwelle in `vitest.config.ts` |
-| **Aktueller Stand** | **23,29 % Statements, 28,40 % Branches, 21,05 % Functions, 24,94 % Lines** über alle gemessenen Dateien. **4 Testdateien, 21 Tests**, alle grün: `src/utils/validate-song-data.test.ts` (8), `src/components/game/MusicPlayer.test.ts` (7), `src/utils/qr-intent.test.ts` (4), `src/utils/ai-task-queue.test.ts` (2). **0 Tests** für `song-picker.ts`, `censor-utils.ts`, `feedback-messages.ts`, `game-store.ts` und **0** Tests für alle React-Komponenten außer `MusicPlayer` |
+| **Target value** | ≥ 80 % line coverage across `src/`, **every** core logic (`song-picker`, `qr-intent`, `game-store`, `censor-utils`, `ai-task-queue`) with a unit test, an E2E test that checks the core journey **by content** (not only the URL) |
+| **Measurement method** | `npm run test` (Vitest with v8 coverage); coverage threshold in `vitest.config.ts` |
+| **Current state** | **23.29 % statements, 28.40 % branches, 21.05 % functions, 24.94 % lines** across all measured files. **4 test files, 21 tests**, all green: `src/utils/validate-song-data.test.ts` (8), `src/components/game/MusicPlayer.test.ts` (7), `src/utils/qr-intent.test.ts` (4), `src/utils/ai-task-queue.test.ts` (2). **0 tests** for `song-picker.ts`, `censor-utils.ts`, `feedback-messages.ts`, `game-store.ts` and **0 tests** for all React components except `MusicPlayer` |
 
-**Erfüllt:** nein, deutlich nicht. Zwei konkrete Lücken:
+**Fulfilled:** no, clearly not. Two concrete gaps:
 
-1. **Die Punkterechnung ist ungetestet.** Weder `PHOMU_CONFIG.HINT_MASTER_POINTS`
-   noch die Modus-Punktelogik noch die Time-Decay-Rechnung in
-   `src/app/game/page.tsx` haben einen Test.
-2. **Der E2E-Smoke-Test prüft URLs, nicht die Anwendung.**
-   `e2e/smoke.spec.ts` navigiert zu `'/'`, `'/lobby'`, `'/game'`, `'/game-over'`,
-   `'/browse'`, `'/settings'` — **ohne** den Base-Path `/Phomu`. Diese Pfade
-   liefern HTTP 404. Die Assertions prüfen nur das URL-Muster, deshalb ist der
-   Test grün, obwohl keine einzige Seite geladen wurde.
+1. **The score calculation is untested.** Neither `PHOMU_CONFIG.HINT_MASTER_POINTS`
+   nor the mode score logic nor the time decay calculation in
+   `src/app/game/page.tsx` has a test.
+2. **The E2E smoke test checks URLs, not the application.**
+   `e2e/smoke.spec.ts` navigates to `'/'`, `'/lobby'`, `'/game'`, `'/game-over'`,
+   `'/browse'`, `'/settings'` — **without** the base path `/Phomu`. These paths
+   return HTTP 404. The assertions only check the URL pattern, which is why the
+   test is green although not a single page was loaded.
 
-**Korrektur des Smoke-Tests** (eine Zeile plus ein Inhalts-Assert):
+**Correction of the smoke test** (one line plus a content assertion):
 
 ```ts
 await page.goto('/Phomu/');
@@ -177,31 +176,31 @@ await expect(page.getByRole('heading', { name: 'Phomu' })).toBeVisible();
 
 ---
 
-## 10. Weitere Gates, die heute messbar sind
+## 10. Other gates that are measurable today
 
-| Ziel | Zielwert | Aktueller Stand | Kommando |
+| Goal | Target value | Current state | Command |
 |---|---|---|---|
-| TypeScript strict | 0 Fehler | **grün** | `npm run typecheck` |
-| ESLint | 0 Fehler | **0 Fehler, 1 Warnung** (`playwright.config.ts`, anonymes Default-Export) | `npm run lint` |
-| Formatierung | Prettier ohne Abweichung | nicht blockierend, im `local-ci` enthalten | `npm run format:check` |
-| Produktions-Build | Build läuft durch | **grün** (statischer Export nach `out/`) | `npm run build` |
-| Abhängigkeits-Audit | 0 Befunde ab „moderate" | im `local-ci` enthalten | `npm audit --omit=dev --audit-level=moderate` |
-| Dateigröße der Quelldateien | ≤ 550 Zeilen, weich 400 | **Gate-Ergebnis: 0 Fehler, 6 Warnungen, 4 dokumentierte Altlasten.** Über der harten Grenze von 550 liegen 7 Dateien: `src/app/lobby/page.tsx` (801), `src/components/game/RevealPhase.tsx` (671), `src/stores/game-store.ts` (640), `src/components/game/MusicPlayer.tsx` (630), `src/components/game/modes/TimelineMode.tsx` (579), `src/app/admin/review/page.tsx` (760), `src/app/browse/page.tsx` (575) | `npm run check:file-size` |
-| Umfang von `src/` | — | 85 geprüfte Quelldateien | `npm run check:file-size` |
+| TypeScript strict | 0 errors | **green** | `npm run typecheck` |
+| ESLint | 0 errors | **0 errors, 1 warning** (`playwright.config.ts`, anonymous default export) | `npm run lint` |
+| Formatting | Prettier without deviations | non-blocking, part of `local-ci` | `npm run format:check` |
+| Production build | Build runs through | **green** (static export to `out/`) | `npm run build` |
+| Dependency audit | 0 findings from "moderate" upwards | part of `local-ci` | `npm audit --omit=dev --audit-level=moderate` |
+| File size of the source files | ≤ 550 lines, soft limit 400 | **Gate result: 0 errors, 6 warnings, 4 documented legacy files.** 7 files are above the hard limit of 550: `src/app/lobby/page.tsx` (801), `src/components/game/RevealPhase.tsx` (671), `src/stores/game-store.ts` (640), `src/components/game/MusicPlayer.tsx` (630), `src/components/game/modes/TimelineMode.tsx` (579), `src/app/admin/review/page.tsx` (760), `src/app/browse/page.tsx` (575) | `npm run check:file-size` |
+| Scope of `src/` | — | 85 checked source files | `npm run check:file-size` |
 
 ---
 
-## 11. Was als Nächstes gemessen werden muss
+## 11. What has to be measured next
 
-Nach Dringlichkeit, gemessen am Abstand zum Zielwert:
+By urgency, measured as the distance to the target value:
 
-1. **Kontrast** (Abschnitt 5) — die größte ungeprüfte Lücke mit direkter Wirkung auf
-   die Spielbarkeit. Ein `axe`-Lauf über fünf Routen in zwei Themes genügt.
-2. **Testabdeckung der Punkterechnung** (Abschnitt 9) — die Kernmechanik des
-   Spiels ist ungetestet.
-3. **E2E mit Base-Path und Inhalts-Assert** (Abschnitt 9) — der Smoke-Test prüft
-   derzeit nichts.
-4. **Startzeit und Rundenübergang** (Abschnitte 1 und 2) — brauchen eine
-   Messumgebung, die es noch nicht gibt.
-5. **Bundle** (Abschnitt 3) — die Katalog-Auslieferung ist der Hebel; jede
-   andere Optimierung bewegt die 4,22 MiB kaum.
+1. **Contrast** (section 5) — the largest unchecked gap with a direct effect on
+   playability. One `axe` run across five routes in two themes is enough.
+2. **Test coverage of the score calculation** (section 9) — the core mechanic of the
+   game is untested.
+3. **E2E with base path and content assertion** (section 9) — the smoke test currently
+   checks nothing.
+4. **Start time and round transition** (sections 1 and 2) — need a measurement
+   environment that does not exist yet.
+5. **Bundle** (section 3) — the catalog delivery is the lever; every other
+   optimisation barely moves the 4.22 MiB.

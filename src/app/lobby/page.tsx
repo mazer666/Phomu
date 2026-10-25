@@ -1,8 +1,8 @@
 /**
- * Lobby-Seite (Wizard-Edition)
+ * Lobby page (wizard edition)
  *
- * Ein schrittweiser Prozess (1-5) für optimale Mobile-Nutzung.
- * 1. Spieler | 2. Modi | 3. Packs | 4. Spielende | 5. Teams
+ * A step-by-step process (1-5) for optimal mobile usage.
+ * 1. Players | 2. Modes | 3. Packs | 4. Game ending | 5. Teams
  */
 'use client';
 
@@ -20,7 +20,7 @@ import { PHOMU_CONFIG } from '@/config/game-config';
 import type { TeamMode } from '@/types/player';
 import { parseQrIntent } from '@/utils/qr-intent';
 
-// ─── Konstanten ───────────────────────────────────────────────────
+// ─── Constants ───────────────────────────────────────────────────
 
 const EMOJI_AVATARS = [
   '🎵',
@@ -100,7 +100,7 @@ const TEAM_MODE_OPTIONS = [
   },
 ] as const;
 
-/** Schlüssel der lustigen Teamnamen — der sichtbare Text kommt aus der Übersetzung. */
+/** Keys of the funny team names — the visible text comes from the translation. */
 const FUNNY_NAME_KEYS = [
   'lobby.team.funnyName1',
   'lobby.team.funnyName2',
@@ -137,7 +137,7 @@ const CURATED_TEAM_COLORS = [
   { name: 'Gold Rush', value: '#FFD166' },
 ];
 
-// ─── Lobby-Seite ──────────────────────────────────────────────────
+// ─── Lobby page ──────────────────────────────────────────────────
 
 export default function LobbyPage() {
   const { t } = useTranslation();
@@ -172,7 +172,7 @@ export default function LobbyPage() {
   );
   const [isScannerOpen, setIsScannerOpen] = useState(false);
 
-  // ─── Hilfsfunktionen ────────────────────────────────────────────
+  // ─── Helper functions ────────────────────────────────────────────
 
   const TOTAL_STEPS = 6;
 
@@ -219,11 +219,11 @@ export default function LobbyPage() {
     exit: (d: number) => ({ x: d < 0 ? '100%' : '-100%', opacity: 0 }),
   };
 
-  // ─── Render Schritte ───────────────────────────────────────────
+  // ─── Render steps ───────────────────────────────────────────
 
   return (
     <main className="max-w-2xl mx-auto px-4 md:px-8 overflow-x-hidden min-h-screen flex flex-col">
-      {/* Header mit Progress — sticky so only content scrolls */}
+      {/* Header with progress — sticky so only the content scrolls */}
       <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-safe pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black">🕹️ {t('lobby.title')}</h1>
@@ -248,7 +248,7 @@ export default function LobbyPage() {
         </div>
       </div>
 
-      {/* Wizard Content Area — padding-bottom makes room for the fixed footer */}
+      {/* Wizard content area — padding-bottom makes room for the fixed footer */}
       <div className="flex-1 pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)] overflow-x-hidden">
         <AnimatePresence mode="wait" initial={false} custom={direction}>
           {step === 1 && (
@@ -392,7 +392,7 @@ export default function LobbyPage() {
               </div>
 
               <div className="grid gap-6">
-                {/* Game Ending Condition */}
+                {/* Game ending condition */}
                 <div className="bg-[var(--color-bg-card)]/50 p-6 rounded-3xl border border-[var(--color-border)] space-y-6">
                   <div className="flex flex-col gap-4">
                     <div className="text-center">
@@ -541,7 +541,7 @@ export default function LobbyPage() {
               </div>
 
               <div className="space-y-6">
-                {/* Schwierigkeit */}
+                {/* Difficulty */}
                 <div className="space-y-3">
                   <p className="text-[10px] font-black uppercase tracking-widest opacity-40 ml-1">
                     {t('lobby.step5.difficultyLabel')}
@@ -577,7 +577,7 @@ export default function LobbyPage() {
                   </div>
                 </div>
 
-                {/* Zeitlimit pro Frage */}
+                {/* Time limit per question */}
                 <div className="space-y-3">
                   <p className="text-[10px] font-black uppercase tracking-widest opacity-40 ml-1">
                     {t('lobby.step5.timeLimitLabel')}
@@ -619,13 +619,13 @@ export default function LobbyPage() {
                   </div>
                 </div>
 
-                {/* Toggle-Optionen */}
+                {/* Toggle options */}
                 <div className="space-y-3">
                   <p className="text-[10px] font-black uppercase tracking-widest opacity-40 ml-1">
                     {t('lobby.step5.extrasLabel')}
                   </p>
                   <div className="grid grid-cols-1 gap-3">
-                    {/* QR-Karten */}
+                    {/* QR cards */}
                     <motion.button
                       whileTap={{ scale: 0.98 }}
                       onClick={() =>
@@ -663,7 +663,7 @@ export default function LobbyPage() {
                       </div>
                     </motion.button>
 
-                    {/* Zeitabzug */}
+                    {/* Time penalty */}
                     <motion.button
                       whileTap={{ scale: 0.98 }}
                       onClick={() =>
@@ -701,7 +701,7 @@ export default function LobbyPage() {
                       </div>
                     </motion.button>
 
-                    {/* No Cheat Mode (Expert) */}
+                    {/* No cheat mode (expert) */}
                     <motion.button
                       whileTap={{ scale: 0.98 }}
                       onClick={() =>
@@ -763,7 +763,7 @@ export default function LobbyPage() {
               </div>
 
               <div className="space-y-6">
-                {/* Team Mode Picker */}
+                {/* Team mode picker */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {TEAM_MODE_OPTIONS.map((o) => (
                     <button
@@ -781,7 +781,7 @@ export default function LobbyPage() {
                   ))}
                 </div>
 
-                {/* Team Configuration */}
+                {/* Team configuration */}
                 {(config.teamMode === 'fixed' ||
                   config.teamMode === 'shifting') &&
                   teams.length > 0 && (
@@ -992,7 +992,7 @@ export default function LobbyPage() {
         }}
       />
 
-      {/* Navigation Footer — fixed at viewport bottom */}
+      {/* Navigation footer — fixed at the viewport bottom */}
       <footer className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-xl border-t border-white/5 pb-safe">
         <div className="max-w-2xl mx-auto px-4 md:px-8 pt-4 pb-8 flex flex-col gap-3">
           {step === TOTAL_STEPS && players.length > 0 && (

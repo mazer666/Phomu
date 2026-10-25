@@ -1,236 +1,230 @@
-# Sicherheitsrichtlinie (Security Policy)
+# Security Policy
 
-**Projekt:** Phomu — hybrides Musik-Partyspiel
+**Project:** Phomu — hybrid music party game
 **Repository:** <https://github.com/mazer666/Phomu>
-**Stand:** 2026-10-25
-**Gilt für:** den Stand im Branch `feature/vocument-style-docs-and-i18n`
+**As of:** 2026-10-25
+**Applies to:** the state on branch `feature/vocument-style-docs-and-i18n`
 
-Dieses Dokument beschreibt, **was Phomu tatsächlich absichert** und **was es
-nicht absichert**. Jede Aussage unter „Was bereits abgesichert ist" ist an
-einer Datei und Zeile im Repository belegt. Was nicht belegt werden konnte,
-steht unter „Was nicht abgesichert ist" — das ist kein Makel, das ist die
-Aussage.
+This document describes **what Phomu actually secures** and **what it does not
+secure**. Every statement under "What is already secured" is backed by a file and
+line in the repository. What could not be backed is listed under "What is not
+secured" — that is not a flaw, that is the statement.
 
-**Zu den Zeilenangaben:** Sie beziehen sich auf den Repository-Stand vom
-2026-10-25. In Dateien, die parallel bearbeitet werden
-(`src/components/game/**`, `src/components/browse/**`, `src/app/**`), steht
-deshalb zusätzlich das Symbol (Variablenname, Funktionsname, URL), damit die
-Fundstelle auch nach einer Zeilenverschiebung auffindbar bleibt.
-
----
-
-## 1. Was Phomu ist
-
-Phomu ist ein reines Browser-Spiel: eine Next.js-App, die als statischer
-Export (`output: 'export'`, `next.config.ts:64`) auf GitHub Pages unter dem
-Pfad `/Phomu` liegt. Es gibt **keinen Phomu-Server**, keine Accounts, keine
-Synchronisation zwischen Geräten. Die Spiellogik, der Katalog und der
-Spielzustand laufen vollständig im Browser.
-
-Aus dieser Architektur folgt der wichtigste Satz dieses Dokuments:
-
-> Phomu ist eine **Client-Anwendung ohne Autoritätsserver**. Jede Grenze, die
-> nur im Browser gezogen wird, ist eine Grenze, die ein Benutzer mit
-> Developer-Tools aufheben kann.
-
-Die einzige serverseitige Grenze im Projekt ist die Admin-API
-(`src/admin-api/**`). Sie wird nicht vom Spiel benutzt und ist derzeit nicht
-erreichbar (siehe Abschnitt 5, Punkt 1).
+**About the line references:** They refer to the repository state of 2026-10-25. In
+files that are being edited in parallel
+(`src/components/game/**`, `src/components/browse/**`, `src/app/**`), the symbol
+(variable name, function name, URL) is therefore given as well, so that the location
+remains findable even after a line shift.
 
 ---
 
-## 2. Trust Boundaries
+## 1. What Phomu is
 
-| # | Grenze | Was auf der einen Seite liegt | Was auf der anderen Seite liegt |
+Phomu is a pure browser game: a Next.js app that is deployed as a static export
+(`output: 'export'`, `next.config.ts:64`) on GitHub Pages under the path `/Phomu`.
+There is **no Phomu server**, no accounts, no synchronisation between devices. The
+game logic, the catalog and the game state run entirely in the browser.
+
+The most important sentence of this document follows from this architecture:
+
+> Phomu is a **client application without an authority server**. Every boundary
+> that is drawn only in the browser is a boundary that a user with developer
+> tools can remove.
+
+The only server-side boundary in the project is the admin API
+(`src/admin-api/**`). The game does not use it and it is currently not reachable
+(see section 5, item 1).
+
+---
+
+## 2. Trust boundaries
+
+| # | Boundary | What lies on one side | What lies on the other side |
 |---|---|---|---|
-| **TB-1** | Admin-API gegen das Internet | Der Admin-Token (`ADMIN_API_TOKEN`), die Allowlist der Cover-Hosts, das Dateisystem des Servers | Eingehende Requests aus dem Netz |
-| **TB-2** | Katalog- und Cover-Daten gegen den Admin | Die JSON-Packs unter `src/data/songs/`, die Cover unter `public/covers/` | Der Admin-Import (iTunes-/Deezer-Antworten, Cover-URLs) |
-| **TB-3** | Client gegen manipulierten localStorage-Stand | Der Browser des Benutzers | `localStorage`: Spielstand, Punkte, Spieler, Konfiguration |
-| **TB-4** | Fremde URLs als SSRF-/Tracking-Vektor | Der Server der Admin-API, der Browser | YouTube, Spotify, Amazon Music, Apple Music, `p.scdn.co` |
-| **TB-5** | QR-Scan-Eingaben | Der Scanner (`src/utils/qr-intent.ts`) | Der Inhalt eines beliebigen QR-Codes, den jemand auf ein Poster druckt |
+| **TB-1** | Admin API against the internet | The admin token (`ADMIN_API_TOKEN`), the allowlist of cover hosts, the file system of the server | Incoming requests from the network |
+| **TB-2** | Catalog and cover data against the admin | The JSON packs under `src/data/songs/`, the covers under `public/covers/` | The admin import (iTunes/Deezer responses, cover URLs) |
+| **TB-3** | Client against a manipulated localStorage state | The browser of the user | `localStorage`: game state, score, players, configuration |
+| **TB-4** | Foreign URLs as an SSRF/tracking vector | The server of the admin API, the browser | YouTube, Spotify, Amazon Music, Apple Music, `p.scdn.co` |
+| **TB-5** | QR scan input | The scanner (`src/utils/qr-intent.ts`) | The content of any QR code that someone prints on a poster |
 
-### TB-1 — Admin-API gegen das Internet
+### TB-1 — Admin API against the internet
 
-Die Admin-API ist die einzige Stelle, an der Phomu Daten *verändert*. Sie
-kommt über den Header `x-admin-token` gegen die Umgebungsvariable
-`ADMIN_API_TOKEN` geschützt (`src/admin-api/_lib/security.ts:61-79`).
+The admin API is the only place where Phomu *changes* data. It is protected via the
+header `x-admin-token` against the environment variable
+`ADMIN_API_TOKEN` (`src/admin-api/_lib/security.ts:61-79`).
 
-### TB-2 — Katalog- und Cover-Daten gegen den Admin
+### TB-2 — Catalog and cover data against the admin
 
-Der Admin darf Cover-URLs angeben. Diese URL wird vom Server abgerufen und
-als Datei abgelegt. Das ist ein klassischer SSRF-Vektor, wenn die Prüfung nur
-die erste URL betrachtet. Die Prüfung erfolgt deshalb pro Hop
-(`src/admin-api/_lib/security.ts:280-310`).
+The admin may specify cover URLs. This URL is fetched by the server and stored as a
+file. That is a classic SSRF vector if the check only looks at the first URL. The
+check therefore happens per hop (`src/admin-api/_lib/security.ts:280-310`).
 
-### TB-3 — Client gegen manipulierten localStorage-Stand
+### TB-3 — Client against a manipulated localStorage state
 
-Der Spielstand liegt in `localStorage` unter dem Schlüssel `phomu-game-state`
-(`src/stores/game-store.ts:619`). Wer diesen Wert bearbeitet, bearbeitet
-Punkte, Spielernamen und Spielregeln. Das ist eine bewusste Designentscheidung
-(siehe Abschnitt 5, Punkt 3).
+The game state lives in `localStorage` under the key `phomu-game-state`
+(`src/stores/game-store.ts:619`). Anyone who edits this value edits score, player
+names and game rules. That is a deliberate design decision (see section 5, item 3).
 
-### TB-4 — Fremde URLs als SSRF-/Tracking-Vektor
+### TB-4 — Foreign URLs as an SSRF/tracking vector
 
-Drei verschiedene Zugriffe auf Dritte gibt es:
+There are three different accesses to third parties:
 
-1. **Der Browser lädt die Media-Embeds.** YouTube (IFrame-API-Skript und
-   Embed-Frame), Spotify (Embed-Frame, Preview-Audio), Amazon Music
-   (Embed-Frame). Dabei sieht der Anbieter IP-Adresse und Cookies. Phomu hat
-   darauf keinen Einfluss und erhebt diese Daten auch nicht selbst.
-2. **Der Admin-API-Server ruft iTunes und Deezer ab**
-   (`src/admin-api/admin/covers/search/route.ts:77`, `:95`) — nur bei
-   angemessenem Token.
-3. **Der Nutzer meldet einen fehlenden Link.** Der Nutzer löst das selbst aus;
-   der Payload geht an GitHub, nicht an Phomu (siehe `PRIVACY.md`, Abschnitt 4).
+1. **The browser loads the media embeds.** YouTube (iframe API script and embed
+   frame), Spotify (embed frame, preview audio), Amazon Music (embed frame). The
+   provider sees IP address and cookies. Phomu has no influence on this and does not
+   collect this data itself either.
+2. **The admin API server calls iTunes and Deezer**
+   (`src/admin-api/admin/covers/search/route.ts:77`, `:95`) — only with a valid
+   token.
+3. **The user reports a missing link.** The user triggers this themselves; the
+   payload goes to GitHub, not to Phomu (see `PRIVACY.md`, section 4).
 
-### TB-5 — QR-Scan-Eingaben
+### TB-5 — QR scan input
 
-`parseQrIntent` (`src/utils/qr-intent.ts`) liest beliebige Strings aus der
-Kamera. Es werden vier Formate erkannt: `@Name`, `?session=…`, `?pack=…` und
-`?id=…` (das letzte ausdrücklich als *nicht unterstützt*).
+`parseQrIntent` (`src/utils/qr-intent.ts`) reads arbitrary strings from the camera.
+Four formats are recognised: `@Name`, `?session=…`, `?pack=…` and `?id=…` (the
+last one explicitly as *not supported*).
 
 ---
 
-## 3. Bedrohungsmodell
+## 3. Threat model
 
-| Angriffsfläche | Angreifer | Eintrittspunkt | Schadenspotenzial | Gegenmaßnahme | Status |
+| Attack surface | Attacker | Entry point | Damage potential | Countermeasure | Status |
 |---|---|---|---|---|---|
-| Admin-API: Token-Brute-Force (**F-04**) | Unbefugter im Internet | `x-admin-token` an jeder Admin-Route | Vollzugriff auf Cover-Import und Katalogmutation | Token-Vergleich in konstanter Zeit (`security.ts:47-51`), Mindestlänge 32 (`security.ts:7`, `:66`), Fehlversuche werden pro Client und global gezählt (`security.ts:84-100`) | **abgesichert (Rate-Limit nur pro Instanz)** |
-| Admin-API: SSRF über Cover-URL (**F-02**) | Angreifer mit gültigem Token oder kompromittiertem Cover-Host | `imageUrl` in `POST /admin/covers/save` | Zugriff auf interne Dienste (Metadaten-Endpoint, interne APIs) des Admin-Servers | HTTPS-Pflicht, Host-Allowlist, **Prüfung jedes Redirect-Hops**, maximal 3 Hops (`security.ts:280-310`) | **abgesichert** (vorher nur die erste URL geprüft) |
-| Admin-API: DoS durch große Datei (**F-03**) | Angreifer mit gültigem Token | Cover-Download | Speicher- und Plattenfüllung des Servers | Streamendes Lesen mit harter Grenze 5 MB (`security.ts:211-250`), JSON-Antworten auf 512 KB begrenzt (`search/route.ts:77`, `:95`) | **abgesichert** |
-| Admin-API: Lock-Festststellung (**F-11**) | Absturz des Prozesses während eines Speichervorgangs | `.covers-save.lock` | Cover-Speicherung dauerhaft blockiert (503) | Veraltete Sperre (älter als 120 s) wird erkannt und aufgehoben (`save/route.ts:31`, `:69-77`) | **abgesichert** |
-| Admin-API: Fehlerinformationen (**F-10**) | Angreifer mit gültigem Token | Fehlerantworten der Routen | Offenlegung interner Pfade, Dateinamen, Stackanteile | Unerwartete Fehler werden serverseitig geloggt und ohne Detailantwort beantwortet (`save/route.ts:165-167`, `search/route.ts:121-123`) | **abgesichert** |
-| Browser: XSS über Katalog- oder Spielerdaten (**F-12**) | Angreiber, der Daten in den Katalog oder in den lokalen Stand bringt | Song-Titel, Spielernamen, Hints | Ausführung von Skripten im Kontext des Benutzers | React escaped alle Textausgaben; `object-src 'none'` in der CSP; keine `dangerouslySetInnerHTML` im Projekt (`grep -rn "dangerouslySetInnerHTML" src` → 0 Treffer) | **teilweise abgesichert** (siehe Abschnitt 4) |
-| Browser: manipulierter Spielstand (**F-15**) | Teilnehmer einer Partysession | `localStorage["phomu-game-state"]` | Punkte, Spieler, Spielmodus, XP manipulieren | Keine. Der Server kennt den Spielstand nicht. | **nicht abgesichert (Design)** |
-| Browser: QR-Code eines Angreifers | Person mit Zugang zur Kamera | `parseQrIntent` | Unbegrenzt lange Strings in die Oberfläche; Pack-Auswahl | Keine Längenbegrenzung in `parseQrIntent` vorhanden | **nicht abgesichert** (Finding **F-06**) |
-| Browser: Datenspur bei Drittanbietern | YouTube, Spotify, Amazon | Media-Embeds | IP-Adresse, Cookies, Abspielverhalten beim Anbieter | Keine. Phomu hat keinen Einfluss auf die Embeds. | **nicht abgesichert (extern)** |
-| Datenschutz: Geräte-Fingerprint im Fehlerreport | Nutzer, der „Fehlenden Link melden" klickt | `src/components/game/MusicPlayer.tsx` (Schlüssel `DEVICE_KEY`, `REPORT_KEY`, Payload `issuePayload`) | Geräte-ID, Zeitzone, Locale und Region verlassen das Gerät (über GitHub) | Keine. Der Nutzer löst den Vorgang selbst aus. | **nicht abgesichert** (Finding **F-07**) |
-| Lieferkette: GitHub Actions | Kompromittierter Maintainer-Zugang oder manipulierte Dependency | `.github/workflows/deploy.yml` | Ausführung beliebigen Codes im Build | `permissions` sind auf `contents: read` reduziert, `concurrency` verhindert Parallel-Deploys | **teilweise abgesichert** (Actions sind nicht per SHA gepinnt, Finding **F-08**) |
-| Abhängigkeiten | Angreifer über eine transitive Dependency | `npm install` | Ausführung im Build oder im Browser | `npm audit --omit=dev --audit-level=moderate` → **0 Schwachstellen** (gemessen 2026-10-25). Mit Dev-Abhängigkeiten: 14 Meldungen (9 high), alle in `vite`/`launch-editor`/`zod`. | **teilweise abgesichert** (Finding **F-09**) |
-| Auslieferung: fehlende Security-Header (**F-05**) | Angreifer, der eine Schwachstelle in der App findet | HTTP-Header der ausgelieferten Dateien | Fehlende Härtung gegen Clickjacking, MIME-Sniffing, Referrer-Leaks | Header sind in `next.config.ts:24-59` definiert — **werden beim statischen Export aber nicht ausgeliefert** | **nicht wirksam** (Finding **F-05**) |
+| Admin API: token brute force (**F-04**) | Unauthorised party on the internet | `x-admin-token` on every admin route | Full access to cover import and catalog mutation | Token comparison in constant time (`security.ts:47-51`), minimum length 32 (`security.ts:7`, `:66`), failed attempts are counted per client and globally (`security.ts:84-100`) | **secured (rate limit only per instance)** |
+| Admin API: SSRF via cover URL (**F-02**) | Attacker with a valid token or a compromised cover host | `imageUrl` in `POST /admin/covers/save` | Access to internal services (metadata endpoint, internal APIs) of the admin server | HTTPS mandatory, host allowlist, **check of every redirect hop**, maximum 3 hops (`security.ts:280-310`) | **secured** (previously only the first URL was checked) |
+| Admin API: DoS through a large file (**F-03**) | Attacker with a valid token | Cover download | Filling up the memory and disk of the server | Streaming read with a hard limit of 5 MB (`security.ts:211-250`), JSON responses limited to 512 KB (`search/route.ts:77`, `:95`) | **secured** |
+| Admin API: lock deadlock (**F-11**) | Crash of the process during a save operation | `.covers-save.lock` | Cover saving permanently blocked (503) | A stale lock (older than 120 s) is detected and released (`save/route.ts:31`, `:69-77`) | **secured** |
+| Admin API: error information (**F-10**) | Attacker with a valid token | Error responses of the routes | Disclosure of internal paths, file names, stack parts | Unexpected errors are logged server-side and answered without a detailed response (`save/route.ts:165-167`, `search/route.ts:121-123`) | **secured** |
+| Browser: XSS via catalog or player data (**F-12**) | Attacker who gets data into the catalog or into the local state | Song titles, player names, hints | Execution of scripts in the context of the user | React escapes all text output; `object-src 'none'` in the CSP; no `dangerouslySetInnerHTML` in the project (`grep -rn "dangerouslySetInnerHTML" src` → 0 hits) | **partially secured** (see section 4) |
+| Browser: manipulated game state (**F-15**) | Participant of a party session | `localStorage["phomu-game-state"]` | Manipulate score, players, game mode, XP | None. The server does not know the game state. | **not secured (design)** |
+| Browser: QR code of an attacker | Anyone with access to the camera | `parseQrIntent` | Arbitrarily long strings in the user interface; pack selection | No length limit in `parseQrIntent` | **not secured** (finding **F-06**) |
+| Browser: data trail at third parties | YouTube, Spotify, Amazon | Media embeds | IP address, cookies, playback behaviour at the provider | None. Phomu has no influence on the embeds. | **not secured (external)** |
+| Privacy: device fingerprint in the error report | User who clicks "Report missing" (`game.music.reportMissing`) | `src/components/game/MusicPlayer.tsx` (key `DEVICE_KEY`, `REPORT_KEY`, payload `issuePayload`) | Device ID, time zone, locale and region leave the device (via GitHub) | None. The user triggers the procedure themselves. | **not secured** (finding **F-07**) |
+| Supply chain: GitHub Actions | Compromised maintainer access or manipulated dependency | `.github/workflows/deploy.yml` | Execution of arbitrary code in the build | `permissions` are reduced to `contents: read`, `concurrency` prevents parallel deploys | **partially secured** (actions are not pinned by SHA, finding **F-08**) |
+| Dependencies | Attacker via a transitive dependency | `npm install` | Execution in the build or in the browser | `npm audit --omit=dev --audit-level=moderate` → **0 vulnerabilities** (measured 2026-10-25). With dev dependencies: 14 reports (9 high), all in `vite`/`launch-editor`/`zod`. | **partially secured** (finding **F-09**) |
+| Delivery: missing security headers (**F-05**) | Attacker who finds a vulnerability in the app | HTTP headers of the delivered files | Missing hardening against clickjacking, MIME sniffing, referrer leaks | Headers are defined in `next.config.ts:24-59` — **but they are not delivered with the static export** | **not effective** (finding **F-05**) |
 
-### 3.1 Übersicht der Findings
+### 3.1 Overview of the findings
 
-Die vollständige Beschreibung mit Angriffspfad, Schadenspotenzial, Fix und
-Testname steht in der Übergabe an den Owner. Hier nur die Zuordnung:
+The complete description with attack path, damage potential, fix and test name is
+part of the handover to the owner. Only the assignment is listed here:
 
-| ID | Kurztitel | Schwere | Stand |
+| ID | Short title | Severity | State |
 |---|---|---|---|
-| **F-01** | Admin-API ist nicht erreichbar (kein wirksamer Token-Schutz) | High | offen, bewusst nicht behoben |
-| **F-02** | SSRF über Redirect beim Cover-Download | Medium | **behoben** |
-| **F-03** | DoS durch ungebremsten Download-Body | Medium | **behoben** |
-| **F-04** | Kein Rate-Limiting an der Admin-API | Medium | **behoben** (nur pro Instanz wirksam) |
-| **F-05** | Security-Header werden beim statischen Export nicht ausgeliefert | Medium | Konfiguration steht, Auslieferung offen |
-| **F-06** | QR-Eingaben ohne Längen- oder Formatgrenze | Low | offen, Datei außerhalb des Arbeitsbereichs |
-| **F-07** | Geräte-ID, Zeitzone und Locale im Fehlerreport | Low | offen, Datei außerhalb des Arbeitsbereichs |
-| **F-08** | GitHub Actions nicht per SHA gepinnt | Low | offen |
-| **F-09** | 14 Schwachstellen in den Dev-Abhängigkeiten | Low | offen (Produktion ist sauber) |
-| **F-10** | Interne Fehlerdetails in der API-Antwort | Low | **behoben** |
-| **F-11** | Verwaiste Sperrdatei blockiert alle Cover-Speicherungen | Low | **behoben** |
-| **F-12** | Keine harten Grenzwerte in den Song-Validatoren | Low | **behoben** |
-| **F-13** | CI führt keine Security-Checks aus | Medium | offen |
-| **F-14** | Admin-Token wird bei der Erzeugung auf stdout ausgegeben | Info | bewusst so, mit Hinweis |
-| **F-15** | Spielstand ist vom Benutzer manipulierbar | Info | Designentscheidung |
-| **F-16** | Veralteter Katalog-Prüfbericht (`specifications/catalog_issues_report.json`) | Info | offen, Datei außerhalb des Arbeitsbereichs |
+| **F-01** | Admin API is not reachable (no effective token protection) | High | open, deliberately not fixed |
+| **F-02** | SSRF via redirect during the cover download | Medium | **fixed** |
+| **F-03** | DoS through an unthrottled download body | Medium | **fixed** |
+| **F-04** | No rate limiting on the admin API | Medium | **fixed** (only effective per instance) |
+| **F-05** | Security headers are not delivered with the static export | Medium | configuration in place, delivery still open |
+| **F-06** | QR input without a length or format limit | Low | open, file outside the workspace |
+| **F-07** | Device ID, time zone and locale in the error report | Low | open, file outside the workspace |
+| **F-08** | GitHub Actions not pinned by SHA | Low | open |
+| **F-09** | 14 vulnerabilities in the dev dependencies | Low | open (production is clean) |
+| **F-10** | Internal error details in the API response | Low | **fixed** |
+| **F-11** | Orphaned lock file blocks all cover saves | Low | **fixed** |
+| **F-12** | No hard limits in the song validators | Low | **fixed** |
+| **F-13** | CI runs no security checks | Medium | open |
+| **F-14** | Admin token is written to stdout when generated | Info | deliberate, with a note |
+| **F-15** | Game state is manipulable by the user | Info | design decision |
+| **F-16** | Outdated catalog audit report (`specifications/catalog_issues_report.json`) | Info | open, file outside the workspace |
 
 ---
 
-## 4. Was bereits abgesichert ist
+## 4. What is already secured
 
-Alle Angaben mit Datei und Zeile. Die negativen Tests sind unter
-`src/admin-api/*.test.ts` und `src/utils/validate-song-limits.test.ts` zu finden.
+All statements with file and line. The negative tests can be found under
+`src/admin-api/*.test.ts` and `src/utils/validate-song-limits.test.ts`.
 
-### 4.1 Token-Gate der Admin-API
+### 4.1 Token gate of the admin API
 
-| Maßnahme | Ort | Negativer Test |
+| Measure | Location | Negative test |
 |---|---|---|
-| Fehlender Token → **401** | `src/admin-api/_lib/security.ts:71-74` | `src/admin-api/admin-token-guard.test.ts` → „weist einen Request ohne Token ab (401)“ |
-| Falscher Token → **401** | `src/admin-api/_lib/security.ts:71-74` | `src/admin-api/admin-token-guard.test.ts` → „weist einen Request mit falschem Token ab (401)“ |
-| Nicht konfiguriert → **503** (fail closed) | `src/admin-api/_lib/security.ts:62-64` | `src/admin-api/admin-token-guard.test.ts` → „fail-closed: ohne konfigurierte Env-Variable antwortet die API mit 503“ |
-| Token kürzer als 32 Zeichen → **503** | `src/admin-api/_lib/security.ts:66-68` | `src/admin-api/admin-token-guard.test.ts` → „fail-closed: ein zu kurzer Token antwortet mit 503“ |
-| Vergleich in konstanter Zeit (`crypto.timingSafeEqual` über SHA-256-Digests, damit die Puffer immer gleich lang sind) | `src/admin-api/_lib/security.ts:47-51` | `src/admin-api/admin-token-guard.test.ts` → „vergleicht den Token ohne timingSafeEqual nicht mit ===“ und „weist einen Token ab, der nur ein Zeichen korrekt hat (401)“ |
-| **Kein Token im Log und keine Tokenwerte in Fehlermeldungen** | `src/admin-api/_lib/security.ts:84-100` (Meldung enthält weder Token noch IP) | `src/admin-api/admin-token-guard.test.ts` → „haelt den Tokenwert aus Antwort und Log heraus“ |
-| Token nur als Server-Env-Variable, **kein** `NEXT_PUBLIC_*` | `src/admin-api/_lib/security.ts:62` | `grep -rn "NEXT_PUBLIC" src` → nur `MusicPlayer.tsx` (`NEXT_PUBLIC_GITHUB_ISSUE_URL`, Issue-URL, kein Token) |
-| Token-Erzeugung mit 32 Zufallsbytes, Mindestlänge 16 Bytes | `scripts/generate-admin-token.js:4-10` | — |
+| Missing token → **401** | `src/admin-api/_lib/security.ts:71-74` | `src/admin-api/admin-token-guard.test.ts` → `rejects a request without a token (401)` |
+| Wrong token → **401** | `src/admin-api/_lib/security.ts:71-74` | `src/admin-api/admin-token-guard.test.ts` → `rejects a request with a wrong token (401)` |
+| Not configured → **503** (fail closed) | `src/admin-api/_lib/security.ts:62-64` | `src/admin-api/admin-token-guard.test.ts` → `fail-closed: without a configured env variable the API responds with 503` |
+| Token shorter than 32 characters → **503** | `src/admin-api/_lib/security.ts:66-68` | `src/admin-api/admin-token-guard.test.ts` → `fail-closed: a too short token responds with 503` |
+| Comparison in constant time (`crypto.timingSafeEqual` over SHA-256 digests, so that the buffers are always the same length) | `src/admin-api/_lib/security.ts:47-51` | `src/admin-api/admin-token-guard.test.ts` → `compares the token with timingSafeEqual instead of ===` and `rejects a token with only one correct character (401)` |
+| **No token in the log and no token values in error messages** | `src/admin-api/_lib/security.ts:84-100` (the message contains neither token nor IP) | `src/admin-api/admin-token-guard.test.ts` → `keeps the token value out of responses and logs` |
+| Token only as a server environment variable, **no** `NEXT_PUBLIC_*` | `src/admin-api/_lib/security.ts:62` | `grep -rn "NEXT_PUBLIC" src` → only `MusicPlayer.tsx` (`NEXT_PUBLIC_GITHUB_ISSUE_URL`, issue URL, no token) |
+| Token generation with 32 random bytes, minimum length 16 bytes | `scripts/generate-admin-token.js:4-10` | — |
 
-> **Hinweis zum `.env.example`:** Der Platzhalter
-> `ADMIN_API_TOKEN=replace-with-long-random-token` ist **30 Zeichen** lang und
-> damit kürzer als die Mindestlänge 32. Wird die Datei unverändert übernommen,
-> antwortet die API mit **503** und nicht mit einem offenen Zugang. Das ist
-> beabsichtigt (fail closed).
+> **Note on the `.env.example`:** The placeholder
+> `ADMIN_API_TOKEN=replace-with-long-random-token` is **30 characters** long and
+> therefore shorter than the minimum length 32. If the file is taken over
+> unchanged, the API answers with **503** and not with open access. That is
+> intentional (fail closed).
 
-### 4.2 Rate-Limiting der Admin-API
+### 4.2 Rate limiting of the admin API
 
-| Maßnahme | Ort | Negativer Test |
+| Measure | Location | Negative test |
 |---|---|---|
-| Fehlversuche pro Client: 10 je 5 Minuten | `src/admin-api/_lib/security.ts:19`, `:85` | `src/admin-api/admin-token-guard.test.ts` → „begrenzt Brute-Force-Versuche pro Client (429 nach 10 Fehlversuchen)“ |
-| Fehlversuche global je Instanz: 100 je 5 Minuten — nicht durch gefälschte `x-forwarded-for`-Header umgehbar | `src/admin-api/_lib/security.ts:25`, `:86` | `src/admin-api/admin-token-guard.test.ts` → „begrenzt Brute-Force-Versuche auch dann, wenn x-forwarded-for gefaelscht wird“ |
-| Cover-Suche: 30 Anfragen je Minute und Client | `src/admin-api/admin/covers/search/route.ts:43`, `:59` | `src/admin-api/admin-routes-hardening.test.ts` → „antwortet bei zu vielen Suchanfragen mit 429“ |
-| Cover-Speicherung: 10 Anfragen je Minute und Client | `src/admin-api/admin/covers/save/route.ts:34`, `:121` | `src/admin-api/admin-routes-hardening.test.ts` → „antwortet bei zu vielen Speicheranfragen mit 429“ |
-| Die Zahl der gespeicherten Buckets ist begrenzt (10 000), ein Angreifer kann den Speicher nicht unbegrenzt aufblähen | `src/admin-api/_lib/rate-limit.ts:43`, `:65-77` | `src/admin-api/admin-rate-limit.test.ts` → „begrenzt die Zahl der gespeicherten Keys (kein unbegrenztes Wachstum)“ |
-| Antwort mit `Retry-After` | `src/admin-api/_lib/security.ts:96-100`, `:104-117` | `src/admin-api/admin-rate-limit.test.ts` → „antwortet mit 429 und Retry-After, wenn die Grenze ueberschritten ist“ |
+| Failed attempts per client: 10 every 5 minutes | `src/admin-api/_lib/security.ts:19`, `:85` | `src/admin-api/admin-token-guard.test.ts` → `limits brute-force attempts per client (429 after 10 failed attempts)` |
+| Failed attempts globally per instance: 100 every 5 minutes — not circumventable via forged `x-forwarded-for` headers | `src/admin-api/_lib/security.ts:25`, `:86` | `src/admin-api/admin-token-guard.test.ts` → `limits brute-force attempts even when x-forwarded-for is forged` |
+| Cover search: 30 requests per minute and client | `src/admin-api/admin/covers/search/route.ts:43`, `:59` | `src/admin-api/admin-routes-hardening.test.ts` → `responds with 429 when there are too many search requests` |
+| Cover saving: 10 requests per minute and client | `src/admin-api/admin/covers/save/route.ts:34`, `:121` | `src/admin-api/admin-routes-hardening.test.ts` → `responds with 429 when there are too many save requests` |
+| The number of stored buckets is limited (10 000), an attacker cannot inflate the memory without bounds | `src/admin-api/_lib/rate-limit.ts:43`, `:65-77` | `src/admin-api/admin-rate-limit.test.ts` → `limits the number of stored keys (no unbounded growth)` |
+| Response with `Retry-After` | `src/admin-api/_lib/security.ts:96-100`, `:104-117` | `src/admin-api/admin-rate-limit.test.ts` → `responds with 429 and Retry-After when the limit is exceeded` |
 
-### 4.3 Eingabevalidierung der Admin-API
+### 4.3 Input validation of the admin API
 
-| Maßnahme | Ort | Negativer Test |
+| Measure | Location | Negative test |
 |---|---|---|
-| `songId`: nur Buchstaben, Ziffern, `-`, `_`; 3–120 Zeichen — **kein `.`, kein `/`**, damit keine Pfad-Traversal möglich ist | `src/admin-api/_lib/security.ts:125-130` | `src/admin-api/admin-routes-hardening.test.ts` → „lehnt eine songId mit Pfadanteilen ab“ |
-| Cover-URL: nur `https:` | `src/admin-api/_lib/security.ts:155` | `src/admin-api/cover-fetch-guard.test.ts` → „lehnt eine URL mit einem anderen Schema ab (file:, data:, javascript:)“, `src/admin-api/admin-routes-hardening.test.ts` → „lehnt eine Klartext-URL ab“ |
-| Cover-URL: keine eingebetteten Zugangsdaten (`user:pass@…`) | `src/admin-api/_lib/security.ts:157` | `src/admin-api/cover-fetch-guard.test.ts` → „lehnt eingebettete Zugangsdaten ab“ |
-| Cover-URL: Host-Allowlist (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`) inklusive Subdomains | `src/admin-api/_lib/security.ts:136-143`, `src/admin-api/admin/covers/save/route.ts:18` | `src/admin-api/cover-fetch-guard.test.ts` → „lehnt eine URL mit einem nicht erlaubten Host ab“, „lehnt eine URL mit einem Host ab, der nur als Endung passt“ |
-| Interne Adressen (`localhost`, `127.0.0.1`, `169.254.169.254`, `[::1]`) sind nicht auf der Allowlist | `src/admin-api/_lib/security.ts:136-143` | `src/admin-api/cover-fetch-guard.test.ts` → „lehnt localhost und interne Adressen ab“ |
-| **Redirects werden manuell verfolgt, jeder Hop wird neu geprüft**, maximal 3 Hops | `src/admin-api/_lib/security.ts:280-310` | `src/admin-api/cover-fetch-guard.test.ts` → „bricht einen Redirect in das interne Netz ab (SSRF)“, „bricht einen Redirect auf einen nicht erlaubten Host ab“, „bricht einen Redirect auf Klartext-HTTP ab“, „folgt einem Redirect innerhalb der Allowlist“, „bricht eine Redirect-Schleife nach der Hop-Grenze ab“ |
-| Antwort muss `image/*` sein | `src/admin-api/_lib/security.ts:311-314` | `src/admin-api/cover-fetch-guard.test.ts` → „lehnt eine Antwort ab, die kein Bild ist“ |
-| Harte Größengrenze 5 MB, **streamend** geprüft (auch ohne `content-length`) | `src/admin-api/_lib/security.ts:13`, `:211-250` | `src/admin-api/cover-fetch-guard.test.ts` → „lehnt eine zu grosse Datei ab, die ihre Groesse selbst nennt“, „lehnt eine zu grosse Datei ab, die keine content-length schickt“ |
-| JSON-Antworten der Such-API auf 512 KB begrenzt | `src/admin-api/_lib/security.ts:16`, `search/route.ts:77`, `:95` | — (der Mechanismus ist derselbe wie beim Bild, getestet in `cover-fetch-guard.test.ts`) |
-| Suchbegriffe auf 120 Zeichen begrenzt, Pflichtfelder geprüft | `src/admin-api/_lib/security.ts:118-123`, `search/route.ts:64-73` | `src/admin-api/admin-routes-hardening.test.ts` → „lehnt ein fehlendes Suchfeld mit 400 ab“, „lehnt ein ueberlanges Suchfeld mit 400 ab“ |
-| **Unerwartete Fehler** werden ohne Detailantwort beantwortet (500, generischer Text), Details nur im Serverlog | `src/admin-api/admin/covers/save/route.ts:159-168`, `src/admin-api/admin/covers/search/route.ts:114-124` | — (kein Test; die Routen antworten in den obigen Tests mit 400/401/429 und geben keine internen Pfade preis) |
-| Mutationen am Katalog werden über eine Dateisperre serialisiert; eine verwaiste Sperre (älter als 120 s) wird aufgehoben | `src/admin-api/admin/covers/save/route.ts:31`, `:69-77` | — |
+| `songId`: only letters, digits, `-`, `_`; 3–120 characters — **no `.`, no `/`**, so that no path traversal is possible | `src/admin-api/_lib/security.ts:125-130` | `src/admin-api/admin-routes-hardening.test.ts` → `rejects a songId with path segments` |
+| Cover URL: only `https:` | `src/admin-api/_lib/security.ts:155` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a different scheme (file:, data:, javascript:)`, `src/admin-api/admin-routes-hardening.test.ts` → `rejects a plaintext URL` |
+| Cover URL: no embedded credentials (`user:pass@…`) | `src/admin-api/_lib/security.ts:157` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects embedded credentials` |
+| Cover URL: host allowlist (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`) including subdomains | `src/admin-api/_lib/security.ts:136-143`, `src/admin-api/admin/covers/save/route.ts:18` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a URL with a host that is not allowlisted`, `rejects a URL whose host only matches as a suffix` |
+| Internal addresses (`localhost`, `127.0.0.1`, `169.254.169.254`, `[::1]`) are not on the allowlist | `src/admin-api/_lib/security.ts:136-143` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects localhost and internal addresses` |
+| **Redirects are followed manually, every hop is checked again**, maximum 3 hops | `src/admin-api/_lib/security.ts:280-310` | `src/admin-api/cover-fetch-guard.test.ts` → `aborts a redirect into the internal network (SSRF)`, `aborts a redirect to a host that is not allowlisted`, `aborts a redirect to plaintext HTTP`, `follows a redirect within the allowlist`, `aborts a redirect loop at the hop limit` |
+| Response must be `image/*` | `src/admin-api/_lib/security.ts:311-314` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects a response that is not an image` |
+| Hard size limit 5 MB, checked **while streaming** (also without `content-length`) | `src/admin-api/_lib/security.ts:13`, `:211-250` | `src/admin-api/cover-fetch-guard.test.ts` → `rejects an oversized file that declares its own size`, `rejects an oversized file that sends no content-length` |
+| JSON responses of the search API limited to 512 KB | `src/admin-api/_lib/security.ts:16`, `search/route.ts:77`, `:95` | — (the mechanism is the same as for the image, tested in `cover-fetch-guard.test.ts`) |
+| Search terms limited to 120 characters, required fields checked | `src/admin-api/_lib/security.ts:118-123`, `search/route.ts:64-73` | `src/admin-api/admin-routes-hardening.test.ts` → `rejects a missing search field with 400`, `rejects an overlong search field with 400` |
+| **Unexpected errors** are answered without a detailed response (500, generic text), details only in the server log | `src/admin-api/admin/covers/save/route.ts:159-168`, `src/admin-api/admin/covers/search/route.ts:114-124` | — (no test; the routes answer with 400/401/429 in the tests above and do not disclose internal paths) |
+| Mutations of the catalog are serialised via a file lock; an orphaned lock (older than 120 s) is released | `src/admin-api/admin/covers/save/route.ts:31`, `:69-77` | — |
 
-### 4.4 Harte Grenzwerte im Song-Katalog
+### 4.4 Hard limits in the song catalog
 
-Der Katalog ist keine vertrauenswürdige Eingabe: er wird gepflegt, importiert
-und über die Admin-Oberfläche bearbeitet. `src/utils/validate-song-limits.ts`
-definiert harte Obergrenzen je Feld; `src/utils/validate-song-data.ts:107-112`
-reicht sie als **Fehler** (nicht als Warnung) in das Ergebnis ein.
+The catalog is not trustworthy input: it is maintained, imported and edited via the
+admin interface. `src/utils/validate-song-limits.ts` defines hard upper limits per
+field; `src/utils/validate-song-data.ts:107-112` feeds them into the result as
+**errors** (not as warnings).
 
-| Maßnahme | Ort | Negativer Test |
+| Measure | Location | Negative test |
 |---|---|---|
-| `id` ≤ 120, `title` ≤ 200, `artist` ≤ 200, `genre` ≤ 80 Zeichen | `src/utils/validate-song-limits.ts:29-48` | `src/utils/validate-song-limits.test.ts` → „meldet ein zu langes Feld“, „meldet eine zu lange id“ |
-| `mood` ≤ 20 Einträge, je ≤ 60 Zeichen; `packs` ≤ 50 Einträge, je ≤ 100 Zeichen | `src/utils/validate-song-limits.ts:35-38` | `src/utils/validate-song-limits.test.ts` → „meldet zu viele Eintraege in einem Array“, „meldet einen zu langen Array-Eintrag“ |
-| `hints` je ≤ 600, `hintEvidence` je ≤ 500 Zeichen | `src/utils/validate-song-limits.ts:136, :143` | `src/utils/validate-song-limits.test.ts` → „meldet einen zu langen Hinweis“ |
-| Liedzeilen je ≤ 200, Fake-Lyrics ≤ 200 Zeichen | `src/utils/validate-song-limits.ts:153, :156` | `src/utils/validate-song-limits.test.ts` → „meldet eine zu lange Liedzeile“ |
-| Links ≤ 500 Zeichen, `youtubeAlternatives` ≤ 10 Einträge | `src/utils/validate-song-limits.ts:163, :167` | `src/utils/validate-song-limits.test.ts` → „meldet einen zu langen Link“ |
-| `supportedModes`: nur bekannte Modi, ≤ 20 Einträge | `src/utils/validate-song-limits.ts:175-186` | `src/utils/validate-song-limits.test.ts` → „meldet einen unbekannten Spielmodus“ |
-| Eine Verletzung ist ein **Fehler**, keine Warnung — der Validator failt nicht offen | `src/utils/validate-song-data.ts:107-112` | `src/utils/validate-song-limits.test.ts` → „meldet eine Verletzung als Fehler, nicht als Warnung“ |
-| Der bestehende Katalog (1 615 Songs) bleibt unter diesen Grenzen gültig | — | `src/utils/validate-song-limits.test.ts` → „laesst den aktuellen Katalog gueltig“ (geprüft über alle 135 Packs) |
+| `id` ≤ 120, `title` ≤ 200, `artist` ≤ 200, `genre` ≤ 80 characters | `src/utils/validate-song-limits.ts:29-48` | `src/utils/validate-song-limits.test.ts` → `reports a field that is too long`, `reports an id that is too long` |
+| `mood` ≤ 20 entries, each ≤ 60 characters; `packs` ≤ 50 entries, each ≤ 100 characters | `src/utils/validate-song-limits.ts:35-38` | `src/utils/validate-song-limits.test.ts` → `reports too many entries in an array`, `reports an array entry that is too long` |
+| `hints` each ≤ 600, `hintEvidence` each ≤ 500 characters | `src/utils/validate-song-limits.ts:136, :143` | `src/utils/validate-song-limits.test.ts` → `reports a hint that is too long` |
+| Lyrics lines each ≤ 200, fake lyrics ≤ 200 characters | `src/utils/validate-song-limits.ts:153, :156` | `src/utils/validate-song-limits.test.ts` → `reports a lyric line that is too long` |
+| Links ≤ 500 characters, `youtubeAlternatives` ≤ 10 entries | `src/utils/validate-song-limits.ts:163, :167` | `src/utils/validate-song-limits.test.ts` → `reports a link that is too long` |
+| `supportedModes`: only known modes, ≤ 20 entries | `src/utils/validate-song-limits.ts:175-186` | `src/utils/validate-song-limits.test.ts` → `reports an unknown game mode` |
+| A violation is an **error**, not a warning — the validator does not fail open | `src/utils/validate-song-data.ts:107-112` | `src/utils/validate-song-limits.test.ts` → `reports a violation as an error, not as a warning` |
+| The existing catalog (1 615 songs) remains valid under these limits | — | `src/utils/validate-song-limits.test.ts` → `keeps the current catalog valid` (checked across all 135 packs) |
 
-Gegenprobe: `npm run validate-catalog` meldet **0 Schema-Fehler**, 0
-Duplicate-Gruppen, 0 fehlende Jahre.
+Counter-check: `npm run validate-catalog` reports **0 schema errors**, 0 duplicate
+groups, 0 missing years.
 
-### 4.5 Security-Header (Konfiguration vorhanden — siehe Einschränkung in 4.6)
+### 4.5 Security headers (configuration present — see the limitation in 4.6)
 
-In `next.config.ts:24-59` sind definiert:
+In `next.config.ts:24-59` the following are defined:
 
 `Content-Security-Policy`, `X-Content-Type-Options: nosniff`,
 `Referrer-Policy: strict-origin-when-cross-origin`, `X-Frame-Options: DENY`,
-`Permissions-Policy` (Kamera nur für den eigenen Origin),
+`Permissions-Policy` (camera only for the own origin),
 `Strict-Transport-Security`, `Cross-Origin-Opener-Policy`,
 `X-DNS-Prefetch-Control`.
 
-Die CSP erlaubt genau die Origins, die der Code benutzt (Herleitung in
-Abschnitt 6). Geprüft in `src/admin-api/security-headers.test.ts`:
-„setzt die Mindest-Header-Baseline“, „setzt eine CSP mit allen erwarteten
-Direktiven“, „laesst genau die im Code belegten Media-Origins zu“,
-„enthält keine Wildcard und kein unsicheres object-src“.
+The CSP allows exactly the origins that the code uses (derivation in section 6).
+Checked in `src/admin-api/security-headers.test.ts`: `sets the minimum header baseline`,
+`sets a CSP with all expected directives`, `allows exactly the media origins
+documented in the code`, `contains no wildcard and no unsafe object-src`.
 
-### 4.6 Was die Security-Header **nicht** leisten (wichtig)
+### 4.6 What the security headers do **not** achieve (important)
 
-Der Projektstand ist ein **statischer Export** (`next.config.ts:64`
-`output: 'export'`), der auf GitHub Pages liegt. Next.js wendet in diesem
-Modus `headers()` **nicht** an. Das ist keine Vermutung, sondern eine Warnung
-von Next.js selbst. Der Build (`npx next build`, Next.js 16.4.3) liefert
-zweimal den Beleg:
+The project state is a **static export** (`next.config.ts:64` `output: 'export'`)
+that is hosted on GitHub Pages. Next.js does not apply `headers()` in this mode.
+That is not an assumption but a warning from Next.js itself. The build
+(`npx next build`, Next.js 16.4.3) provides the evidence twice:
 
 ```
 ▲ Next.js 16.4.3 (Turbopack)
@@ -243,7 +237,7 @@ zweimal den Beleg:
   See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
 ```
 
-Im Quelltext der installierten Version steht dieselbe Warnung:
+The source of the installed version contains the same warning:
 
 ```
 node_modules/next/dist/server/config.js:477
@@ -251,28 +245,28 @@ _log.warn('Specified "headers" will not automatically work with "output: export"
   See more info here: https://nextjs.org/docs/messages/export-no-custom-routes');
 ```
 
-**Konsequenz:** Die Header in `next.config.ts` sind heute **nicht wirksam**.
-Sie werden erst wirksam, wenn
+**Consequence:** The headers in `next.config.ts` are **not effective** today.
+They only become effective when
 
-1. die App mit `next start` (Next-Server) ausgeliefert wird, oder
-2. der Host die Header selbst setzt (z. B. Netlify, Cloudflare Pages, ein
-   Reverse Proxy, ein CDN in front of GitHub Pages).
+1. the app is delivered with `next start` (Next server), or
+2. the host sets the headers itself (e.g. Netlify, Cloudflare Pages, a reverse
+   proxy, a CDN in front of GitHub Pages).
 
-Zusätzlich kann GitHub Pages **keine** eigenen Header ausliefern. Für den
-aktuellen Betrieb ist der wirksame Schutz also der Codex selbst (Token-Gate,
-Allowlist, Validierung) — nicht der HTTP-Header.
+In addition, GitHub Pages **cannot** deliver own headers. For the current
+operation the effective protection is therefore the code itself (token gate,
+allowlist, validation) — not the HTTP header.
 
 ---
 
-## 5. Was **nicht** abgesichert ist
+## 5. What is **not** secured
 
-Diese Liste ist die ehrliche Gegenseite von Abschnitt 4.
+This list is the honest other side of section 4.
 
-1. **Die Admin-API ist derzeit nicht erreichbar (F-01).** `src/admin-api/**` liegt
-   außerhalb von `src/app/`. Next.js registriert Route Handler nur unterhalb
-   des App-Router-Verzeichnisses; zusätzlich schließt `output: 'export'`
-   Route Handler generell aus. Der Produktionsbuild listet 21 statische
-   Routen auf — **keine** davon ist eine Admin-API-Route:
+1. **The admin API is currently not reachable (F-01).** `src/admin-api/**` lies
+   outside of `src/app/`. Next.js only registers route handlers below the app
+   router directory; in addition `output: 'export'` excludes route handlers in
+   general. The production build lists 21 static routes — **none** of them is an
+   admin API route:
 
    ```
    Route (app)
@@ -292,192 +286,186 @@ Diese Liste ist die ehrliche Gegenseite von Abschnitt 4.
    └ ○ /terms
    ```
 
-   Es existiert also **kein** erreichbarer Endpunkt, an dem das Token-Gate
-   greifen könnte. Dasselbe steht bereits in `ARCHITECTURE.md` (§6.1,
-   „A4 — `admin-api/` hat keinen Konsumenten“).
-   *Konsequenz:* Das Token-Gate ist implementiert und getestet, aber es
-   schützt derzeit nichts, weil es keine Route gibt, die es erreicht. Wer den
-   Katalog heute ändert, tut das über Dateien im Repository — dort greift
-   **kein** Token, sondern die Schreibberechtigung im Repository.
+   So there is **no** reachable endpoint at which the token gate could take
+   effect. The same is already stated in `ARCHITECTURE.md` (§6.1,
+   "A4 — `admin-api/` has no consumer").
+   *Consequence:* The token gate is implemented and tested, but it currently
+   protects nothing, because there is no route that reaches it. Anyone who
+   changes the catalog today does so via files in the repository — there **no**
+   token applies, but the write permission in the repository.
 
-2. **Die Header werden nicht ausgeliefert (F-05).** Siehe 4.6.
+2. **The headers are not delivered (F-05).** See 4.6.
 
-3. **Der Spielstand ist vom Benutzer manipulierbar (F-15).** `localStorage` gehört
-   dem Benutzer. Punkte, Spielernamen, XP, Spielmodus und Rundenzahl können
-   frei gesetzt werden. Ein Server, der den Stand validiert, existiert nicht
-   — das wäre ein Server und damit ein anderes Produkt.
-   *Nicht persistiert* sind dagegen `currentSong`, `currentAnswers` und
-   `roundHistory` (siehe `partialize` in `src/stores/game-store.ts:620-637`),
-   der Anti-Spoiler-Schutz lässt sich also **nicht** über einen Neustart
-   hinweg aushebeln.
+3. **The game state is manipulable by the user (F-15).** `localStorage` belongs to
+   the user. Score, player names, XP, game mode and round number can be set
+   freely. A server that validates the state does not exist — that would be a
+   server and therefore a different product.
+   *Not persisted* on the other hand are `currentSong`, `currentAnswers` and
+   `roundHistory` (see `partialize` in `src/stores/game-store.ts:620-637`), so the
+   anti-spoiler protection **cannot** be circumvented via a restart.
 
-4. **Die QR-Eingaben sind nicht begrenzt (F-06).** `parseQrIntent` gibt
-   Session-Code, Pack-ID und Spielernamen ungefiltert weiter; es gibt keine
-   Längengrenze und keine Formatprüfung für `?session=` und `?pack=`.
-   *Bewusst nicht behoben:* Die Datei `src/utils/qr-intent.ts` lag in diesem
-   Arbeitsauftrag außerhalb des freigegebenen Bereichs. Der Fix ist klein
-   (Längengrenzen in `parseQrIntent`), aber er gehört in denselben Commit wie
-   die Änderung, die den Scanner aufruft.
+4. **The QR input is not limited (F-06).** `parseQrIntent` passes session code,
+   pack ID and player names on unfiltered; there is no length limit and no format
+   check for `?session=` and `?pack=`.
+   *Deliberately not fixed:* The file `src/utils/qr-intent.ts` was outside the
+   approved scope in this work order. The fix is small (length limits in
+   `parseQrIntent`), but it belongs in the same commit as the change that calls
+   the scanner.
 
-5. **Die Meldefunktion überträgt Gerätedaten (F-07).** „Fehlenden Link melden“
-   schreibt eine zufällige Geräte-ID (`phomu-device-id`) in `localStorage` und
-   baut einen Payload aus Song-ID, Titel, Interpret, Pack, Provider,
-   Zeitzone, Locale, Region und Geräte-ID
-   (`src/components/game/MusicPlayer.tsx`, Schlüssel `DEVICE_KEY` und
-   `REPORT_KEY`, Payload `issuePayload`). Dieser Payload geht an
-   GitHub (Issue-Formular), nicht an einen Phomu-Server. Es ist eine vom
-   Nutzer ausgelöste Übertragung, aber sie enthält mehr als die im
-   Datenschutzhinweis genannten „technischen Metadaten“. Der
-   Datenschutzhinweis wurde deshalb entsprechend präzisiert.
+5. **The report function transmits device data (F-07).** "Report missing link"
+   writes a random device ID (`phomu-device-id`) into `localStorage` and builds a
+   payload from song ID, title, artist, pack, provider, time zone, locale, region
+   and device ID (`src/components/game/MusicPlayer.tsx`, key `DEVICE_KEY` and
+   `REPORT_KEY`, payload `issuePayload`). This payload goes to GitHub (issue
+   form), not to a Phomu server. It is a transfer triggered by the user, but it
+   contains more than the "technical metadata" named in the privacy notice. The
+   privacy notice was therefore adjusted accordingly.
 
-6. **Die Abhängigkeiten der Entwicklungsumgebung sind nicht sauber (F-09).**
-   `npm audit --omit=dev` meldet 0 Schwachstellen — die ausgelieferte App ist
-   damit sauber. Mit Dev-Abhängigkeiten meldet `npm audit` 14 Meldungen
-   (9 high) in `vite`, `launch-editor` und `zod`. Diese Werkzeuge laufen nur
-   auf dem Rechner des Entwicklers, nicht in der ausgelieferten App.
+6. **The dependencies of the development environment are not clean (F-09).**
+   `npm audit --omit=dev` reports 0 vulnerabilities — the delivered app is
+   therefore clean. With dev dependencies `npm audit` reports 14 findings
+   (9 high) in `vite`, `launch-editor` and `zod`. These tools only run on the
+   developer's machine, not in the delivered app.
 
-7. **Die CI prüft die Security-Grenzen nicht (F-13).** `.github/workflows/deploy.yml`
-   baut und deployt, führt aber weder `npm test`, `npm run lint`,
-   `npm run typecheck` noch `npm audit` aus. Die frühere Fassung dieses
-   Dokuments nannte „CI-Pflichtchecks: `npm audit`, Secret-Scanning, SAST“ —
-   das war zum Messzeitpunkt **nicht** durch das Repository gedeckt und ist
-   hier entfernt worden.
+7. **The CI does not check the security boundaries (F-13).** `.github/workflows/deploy.yml`
+   builds and deploys, but runs neither `npm test`, `npm run lint`,
+   `npm run typecheck` nor `npm audit`. An earlier version of this document
+   named "CI mandatory checks: `npm audit`, secret scanning, SAST" — that was
+   **not** covered by the repository at the time of measurement and has therefore
+   been removed here.
 
-8. **Der Token wird lokal auf der Konsole ausgegeben (F-14).**
-   `scripts/generate-admin-token.js:11-12` schreibt den neuen Token nach
-   `stdout`. Das ist der vorgesehene Weg (der Token soll in den Secret-Store
-   des Betreibers), aber wer das Kommando in einer geteilten Shell oder in
-   einem CI-Log ausführt, hat den Token im Log.
+8. **The token is printed locally on the console (F-14).**
+   `scripts/generate-admin-token.js:11-12` writes the new token to `stdout`.
+   That is the intended way (the token is supposed to go into the secret store of
+   the operator), but anyone who runs the command in a shared shell or in a CI log
+   has the token in the log.
 
-9. **Es gibt keine Authentifizierung, keine Autorisierung und keine
-   Mandantenfähigkeit** — für ein lokales Partyspiel ohne Server auch nicht
-   nötig. Der einzige geheime Wert im Projekt ist der Admin-Token.
+9. **There is no authentication, no authorization and no multi-tenancy** — for a
+   local party game without a server that is not needed either. The only secret
+   value in the project is the admin token.
 
-10. **Die Header sind nicht an ein Gate gebunden.** Der Test
-    `src/admin-api/security-headers.test.ts` beweist die *Konfiguration*,
-    nicht die *Auslieferung*. Erst wenn der Betrieb auf einen Next-Server
-    oder einen Header-fähigen Host wechselt, wird daraus eine wirksame
-    Maßnahme.
+10. **The headers are not bound to a gate.** The test
+    `src/admin-api/security-headers.test.ts` proves the *configuration*, not the
+    *delivery*. Only when the operation switches to a Next server or to a host
+    that supports headers does this become an effective measure.
 
 ---
 
-## 6. Abgeleitete CSP-Origins
+## 6. Derived CSP origins
 
-Die Liste ist **aus dem Code abgeleitet**, nicht aus dem Gedächtnis. Jede
-Zeile nennt die Fundstelle.
+The list is **derived from the code**, not from memory. Every line names the
+location.
 
-| Origin | Zweck | Fundstelle |
+| Origin | Purpose | Location |
 |---|---|---|
-| `https://www.youtube.com` | IFrame-API-Skript (`https://www.youtube.com/iframe_api`) | `src/components/game/MusicPlayer.tsx`, `loadApi()` (`tag.src`) |
-| `https://www.youtube.com` | Embed-Frame in der Browse-Liste | `src/components/browse/SongCard.tsx`, `src={`https://www.youtube.com/embed/${song.links.youtube}…`} |
-| `https://www.youtube.com` | vom IFrame-API erzeugtes Player-Frame | `src/components/game/MusicPlayer.tsx`, `new window.YT.Player(…, { playerVars: { host: … } })` |
-| `https://music.youtube.com` | alternative Player-Domain (Umschalter „Music“) | `src/components/game/MusicPlayer.tsx`, State `activeDomain` + `toggleDomain()` |
-| `https://open.spotify.com` | Spotify-Embed-Frame | `src/components/game/MusicPlayer.tsx`, `src={`https://open.spotify.com/embed/track/${spotifyTrackId}…`}` |
-| `https://music.amazon.com` | Amazon-Music-Embed-Frame | `src/components/game/MusicPlayer.tsx`, `src={`https://music.amazon.com/embed/track/${amazonTrackId}…`}` |
-| `https://p.scdn.co` | Spotify-Preview-Audio (`<audio src=…>`) | `src/components/game/MusicPlayer.tsx`, `<audio src={spotifyFreePreview}>`; Host aus dem Katalog, z. B. `src/data/songs/E4.json` |
-| `https://music.amazon.com` | Amazon-Prime-Preview-Audio (`<audio src=…>`) | `src/components/game/MusicPlayer.tsx`, `<audio src={amazonPrimePreview}>` |
-| `https://itunes.apple.com` | Cover-Suche (nur **serverseitig**, in der Admin-API) | `src/admin-api/admin/covers/search/route.ts:75` |
-| `https://api.deezer.com` | Cover-Suche (nur **serverseitig**, in der Admin-API) | `src/admin-api/admin/covers/search/route.ts:92` |
+| `https://www.youtube.com` | Iframe API script (`https://www.youtube.com/iframe_api`) | `src/components/game/MusicPlayer.tsx`, `loadApi()` (`tag.src`) |
+| `https://www.youtube.com` | Embed frame in the browse list | `src/components/browse/SongCard.tsx`, `src={`https://www.youtube.com/embed/${song.links.youtube}…`}` |
+| `https://www.youtube.com` | Player frame created by the iframe API | `src/components/game/MusicPlayer.tsx`, `new window.YT.Player(…, { playerVars: { host: … } })` |
+| `https://music.youtube.com` | alternative player domain (switch "Music") | `src/components/game/MusicPlayer.tsx`, state `activeDomain` + `toggleDomain()` |
+| `https://open.spotify.com` | Spotify embed frame | `src/components/game/MusicPlayer.tsx`, `src={`https://open.spotify.com/embed/track/${spotifyTrackId}…`}` |
+| `https://music.amazon.com` | Amazon Music embed frame | `src/components/game/MusicPlayer.tsx`, `src={`https://music.amazon.com/embed/track/${amazonTrackId}…`}` |
+| `https://p.scdn.co` | Spotify preview audio (`<audio src=…>`) | `src/components/game/MusicPlayer.tsx`, `<audio src={spotifyFreePreview}>`; host from the catalog, e.g. `src/data/songs/E4.json` |
+| `https://music.amazon.com` | Amazon Prime preview audio (`<audio src=…>`) | `src/components/game/MusicPlayer.tsx`, `<audio src={amazonPrimePreview}>` |
+| `https://itunes.apple.com` | Cover search (only **server-side**, in the admin API) | `src/admin-api/admin/covers/search/route.ts:75` |
+| `https://api.deezer.com` | Cover search (only **server-side**, in the admin API) | `src/admin-api/admin/covers/search/route.ts:92` |
 
-**Bewusst nicht enthalten:**
+**Deliberately not included:**
 
-- `https://music.apple.com` — Apple Music ist im Katalog nur ein **Link**
-  (`links.appleMusic`, z. B. `src/data/songs/*.json`), es gibt keinen
-  Apple-Embed im Code (`src/config/game-config.ts:26` führt `'apple-music'`
-  als „Future“). Für `frame-src` ist die Origin deshalb nicht nötig. Wird der
-  Apple-Embed nachgerüstet, **muss** die CSP erweitert werden.
-- `https://github.com` — nur als Ziel des vom Nutzer ausgelösten Melde- und
-  Issue-Links (`src/components/game/MusicPlayer.tsx`, `window.open(issueUrl…)`),
-  kein Request der Seite selbst.
-- `'unsafe-eval'` — wird nirgends gebraucht.
-- `*` — an keiner Stelle.
+- `https://music.apple.com` — Apple Music is only a **link** in the catalog
+  (`links.appleMusic`, e.g. `src/data/songs/*.json`), there is no Apple embed in
+  the code (`src/config/game-config.ts:26` lists `'apple-music'` as "future"). The
+  origin is therefore not needed for `frame-src`. If the Apple embed is added
+  later, the CSP **must** be extended.
+- `https://github.com` — only as the target of the user-triggered report and issue
+  links (`src/components/game/MusicPlayer.tsx`, `window.open(issueUrl…)`), not a
+  request of the page itself.
+- `'unsafe-eval'` — is not needed anywhere.
+- `*` — nowhere.
 
-**Warum `script-src 'unsafe-inline'`:** Next.js injiziert beim statischen
-Export Inline-Skripte für den RSC-Payload (`out/*.html`, `<script id="_R_">`).
-Ein statischer Export kann keine pro-Anfrage-Nonces ausliefern. Der Inline-
-Anteil der CSP lässt sich deshalb nicht vermeiden. Der Schutz gegen XSS
-macht in dieser App **React** (alle Textausgaben werden escaped), nicht die
-CSP. Das ist eine ehrliche Einordnung, keine Beschönigung.
-
----
-
-## 7. Meldung einer Schwachstelle
-
-Bitte **keine** Exploit-Details in einem öffentlichen Issue veröffentlichen.
-Zwei Wege sind möglich:
-
-1. **Private Nachricht an den Owner** über das Repository
-   (<https://github.com/mazer666/Phomu>) — für Schwachstellen, die vor der
-   Veröffentlichung behoben werden sollen.
-2. **Issue im Repository**
-   (<https://github.com/mazer666/Phomu/issues>) — für alles, was nicht
-   vertraulich ist: Fehler in der Validierung, Lücken in der Dokumentation,
-   Verbesserungsvorschläge. Issues sind öffentlich.
-
-Ein sinnvoller Bericht enthält:
-
-- betroffene Route oder Komponente (mit Datei und Zeile),
-- reproduzierbare Schritte,
-- welche Trust Boundary verletzt wird (siehe Abschnitt 2),
-- Auswirkung,
-- Vorschlag zur Mitigation, wenn vorhanden.
-
-Für Datenschutzanfragen siehe `PRIVACY.md`, Abschnitt 8.
+**Why `script-src 'unsafe-inline'`:** Next.js injects inline scripts for the RSC
+payload during the static export (`out/*.html`, `<script id="_R_">`). A static
+export cannot deliver per-request nonces. The inline part of the CSP can
+therefore not be avoided. The protection against XSS in this app is **React** (all
+text output is escaped), not the CSP. That is an honest classification, not a
+whitewash.
 
 ---
 
-## 8. Unterstützte Versionen und Patchpolitik
+## 7. Reporting a vulnerability
 
-Phomu ist im Versionsstand `0.1.0` (`package.json`) und noch nichtreleased.
+Please do **not** publish exploit details in a public issue. Two ways are possible:
 
-| Stand | Status |
+1. **Private message to the owner** via the repository
+   (<https://github.com/mazer666/Phomu>) — for vulnerabilities that are supposed to
+   be fixed before publication.
+2. **Issue in the repository**
+   (<https://github.com/mazer666/Phomu/issues>) — for everything that is not
+   confidential: errors in the validation, gaps in the documentation, suggestions
+   for improvement. Issues are public.
+
+A meaningful report contains:
+
+- the affected route or component (with file and line),
+- reproducible steps,
+- which trust boundary is violated (see section 2),
+- the impact,
+- a mitigation proposal, if available.
+
+For privacy requests see `PRIVACY.md`, section 8.
+
+---
+
+## 8. Supported versions and patch policy
+
+Phomu is at version state `0.1.0` (`package.json`) and has not been released yet.
+
+| State | Status |
 |---|---|
-| `main` / aktueller Release-Stand | Wird gepflegt |
-| Ältere Stände, Branches, Forks | Werden **nicht** gepflegt |
+| `main` / current release state | Maintained |
+| Older states, branches, forks | **Not** maintained |
 
-**Patchpolitik**
+**Patch policy**
 
-- **Sicherheitslücken in der Admin-API** werden priorisiert behandelt: Der
-  Token wird sofort per `npm run security:rotate-admin-token`
-  (`scripts/generate-admin-token.js`) neu erzeugt und in der Deployment-
-  Umgebung gesetzt.
-- **Sicherheitslücken mit Auswirkung auf ausgelieferte Daten** (Katalog,
-  Spielstand) werden vor Feature-Arbeit behoben.
-- **Dokumentationslücken** (dieses Dokument, `PRIVACY.md`) werden mit dem
-  nächsten Release korrigiert.
-- Es gibt **keine** LTS-Zusage und **keinen** öffentlichen Support-Vertrag —
-  das Projekt ist ein Open-Source-Prototyp ohne Betreiber-SLA.
+- **Security vulnerabilities in the admin API** are treated with priority: The
+  token is regenerated immediately via `npm run security:rotate-admin-token`
+  (`scripts/generate-admin-token.js`) and set in the deployment environment.
+- **Security vulnerabilities with an impact on delivered data** (catalog, game
+  state) are fixed before feature work.
+- **Documentation gaps** (this document, `PRIVACY.md`) are corrected with the
+  next release.
+- There is **no** LTS commitment and **no** public support contract — the project
+  is an open source prototype without an operator SLA.
 
-**Abhängigkeiten**
+**Dependencies**
 
-`npm audit --omit=dev --audit-level=moderate` ist Teil von
-`scripts/local-ci.sh` (Schritt 8) und war am 2026-10-25 grün (0 Befunde).
-Die CI in `.github/workflows/deploy.yml` führt den Audit **nicht** aus — das
-ist eine offene Lücke (Abschnitt 5, Punkt 7).
+`npm audit --omit=dev --audit-level=moderate` is part of
+`scripts/local-ci.sh` (step 8) and was green on 2026-10-25 (0 findings).
+The CI in `.github/workflows/deploy.yml` does **not** run the audit — that is an
+open gap (section 5, item 7).
 
 ---
 
-## 9. Harte Grenzen der Härtung — was ein Gate **nicht** beweist
+## 9. Hard limits of the hardening — what a gate does **not** prove
 
-| Gate | Was es **nicht** beweist |
+| Gate | What it does **not** prove |
 |---|---|
-| Token-Gate der Admin-API | Dass es überhaupt eine erreichbare Admin-API gibt. Siehe Abschnitt 5, Punkt 1. |
-| `crypto.timingSafeEqual` | Dass der Token nicht an anderer Stelle offengelegt wird (Log, Issue, Umgebungsvariable des Hosts). Der Vergleich schützt nur gegen ein zeitliches Erraten des Vergleichs. |
-| Rate-Limiter | Keinen Schutz gegen verteilte Angriffe, keine Wirkung über Instanzgrenzen hinweg, keine Wirkung hinter einem Proxy, der `x-forwarded-for` nicht überschreibt. Er ist ein **Missbrauchsbremse pro Instanz**, kein DDoS-Schutz. |
-| Host-Allowlist | Keinen Schutz gegen einen kompromittierten Allowlist-Host, der selbst auf interne Ziele weiterleitet. Gegen SSRF *über* die Allowlist hilft nur die Hop-für-Hop-Prüfung. |
-| Größenlimit 5 MB | Keinen Schutz gegen viele kleine Anfragen — dafür ist das Rate-Limit zuständig, mit derselben Einschränkung. |
-| Security-Header in `next.config.ts` | Dass die Header **ausgeliefert** werden. Bei `output: 'export'` werden sie es nicht. Siehe Abschnitt 4.6. |
-| Harte Grenzwerte im Validator | Keine Prüfung der **inhaltlichen** Richtigkeit eines Songs (Titel, Lyrics, Links). Der Validator prüft Form und Größe, nicht die Wahrheit. |
-| `npm audit --omit=dev` | Keine Aussage über die Dev-Abhängigkeiten (dort liegen 14 Meldungen). |
-| Tests der Admin-API | Keine Aussage darüber, dass die Routen im Betrieb erreichbar oder richtig konfiguriert sind — die Tests rufen die Handler direkt auf. |
+| Token gate of the admin API | That there is a reachable admin API at all. See section 5, item 1. |
+| `crypto.timingSafeEqual` | That the token is not disclosed somewhere else (log, issue, environment variable of the host). The comparison only protects against guessing the comparison in time. |
+| Rate limiter | No protection against distributed attacks, no effect across instance boundaries, no effect behind a proxy that does not overwrite `x-forwarded-for`. It is a **per-instance misuse brake**, not DDoS protection. |
+| Host allowlist | No protection against a compromised allowlist host that itself forwards to internal targets. Only the hop-by-hop check helps against SSRF *via* the allowlist. |
+| Size limit 5 MB | No protection against many small requests — the rate limit is responsible for that, with the same limitation. |
+| Security headers in `next.config.ts` | That the headers are **delivered**. With `output: 'export'` they are not. See section 4.6. |
+| Hard limits in the validator | No check of the **contentual** correctness of a song (title, lyrics, links). The validator checks form and size, not truth. |
+| `npm audit --omit=dev` | No statement about the dev dependencies (there are 14 findings there). |
+| Tests of the admin API | No statement about the routes being reachable or correctly configured in operation — the tests call the handlers directly. |
 
 ---
 
-## 10. Weiterführende Dokumente
+## 10. Further documents
 
-- `PRIVACY.md` — welche Daten fließen, wo sie liegen, wie man sie löscht.
-- `src/app/privacy/page.tsx`, `src/app/terms/page.tsx` — die Fassung, die die
-  Nutzerin im Browser liest.
-- `ARCHITECTURE.md` §6.1 — die Admin-API-Grenze und ihre (fehlende) Erreichbarkeit.
+- `PRIVACY.md` — which data flows, where it is stored, how to delete it.
+- `src/app/privacy/page.tsx`, `src/app/terms/page.tsx` — the version that the user
+  reads in the browser.
+- `ARCHITECTURE.md` §6.1 — the admin API boundary and its (missing) reachability.
 - `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md` §5 —
-  der Sicherheits-Audit, aus dem die offenen Punkte stammen.
+  the security audit the open points come from.

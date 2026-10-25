@@ -1,133 +1,135 @@
-# Phomu — Entwurfsverträge
+# Phomu — Design contracts
 
-Dieser Ordner enthält die **Entwurfsverträge** des Projekts: bindende
-Dokumente, die die Schnittstellen *zwischen* den Bausteinen definieren.
-Sie stehen eine Ebene tiefer als [`../ARCHITECTURE.md`](../../ARCHITECTURE.md)
-(Schichten und Abhängigkeitsrichtung) und eine Ebene höher als der Code.
+This folder contains the **design contracts** of the project: binding
+documents that define the interfaces *between* the building blocks.
+They sit one level deeper than [`../ARCHITECTURE.md`](../../ARCHITECTURE.md)
+(layers and dependency direction) and one level above the code.
 
-> **Sprache:** Deutsch für die Projektion, Englisch für alle Bezeichner,
-> Typen und Dateinamen im Code. Beides wird nicht gemischt.
+> **Language:** German for the projection, English for all identifiers, types
+> and file names in the code. The two are not mixed. (All root documents are
+> German as of baseline 0.1 — the English documentation round of 2026-10-25
+> moved the root documentation and `docs/` to English; the identifier rule is
+> unaffected.)
 
 ---
 
-## Der Index
+## The index
 
-| Vertrag | Bindung | Was er regelt | Wer liest ihn |
+| Contract | Binding | What it regulates | Who reads it |
 |---|---|---|---|
-| [`GAME-CONTRACT.md`](GAME-CONTRACT.md) | **Binding** | Der Spielablauf: Rundenphasen-Automat, Anti-Spoiler-Grenze, die sechs Spielmodi, Punkte- und Zeitregeln, Team- und Rundenlogik, Persistenzregeln, Musikprovider, Modulgrenzen für `src/components/**` | Game Engineer, UI Engineer, QA, Chief Architect, Product Manager, Owner |
+| [`GAME-CONTRACT.md`](GAME-CONTRACT.md) | **Binding** | The game flow: round phase state machine, anti-spoiler boundary, the six game modes, scoring and time rules, team and round logic, persistence rules, music providers, module boundaries for `src/components/**` | Game Engineer, UI Engineer, QA, Chief Architect, Product Manager, Owner |
 
-**Weitere Verträge sind geplant** und werden an dieser Stelle nachgezogen:
-Admin-API-Vertrag (Server-Grenze), Katalog-Vertrag (Datenqualität),
-i18n-Vertrag (Übersetzungsgrenze). Sie entstehen, wenn die betreffende
-Grenze im Code belastbar festgelegt ist — nicht vorher.
+**More contracts are planned** and will be added at this point:
+admin-API contract (server boundary), catalogue contract (data quality),
+i18n contract (translation boundary). They emerge when the boundary in
+question is robustly defined in the code — not before.
 
 ---
 
-## Was „binding" hier bedeutet
+## What "binding" means here
 
-Ein Vertrag in diesem Ordner ist **binding** in genau einem Sinn:
+A contract in this folder is **binding** in exactly one sense:
 
-> **Wer eine im Vertrag beschriebene Grenze verändert, verletzt nicht nur den
-> Code-Konventionen, sondern einen Vertrag.** Das ist im Review sichtbar, im
-> Test nachweisbar und in der Abnahme eine Begründungspflicht.
+> **Whoever changes a boundary described in the contract does not only violate
+> the code conventions, but a contract.** That is visible in the review,
+> provable in the test and a duty to give reasons in the acceptance.
 
-Konkret heißt das:
+Concretely that means:
 
-| Element | Verbindlichkeit |
+| Element | Binding force |
 |---|---|
-| Phasennamen (`drawing`, `question`, `locked-in`, `reveal`, `scoring`) | unveränderlich ohne Vertragsänderung |
-| Anti-Spoiler-Regeln je Modus | verschärfung ist erlaubt, Lockerung nur mit ADR |
-| Modus-Verträge (Eingabe, Validierung, Ergebnis, Punkte, Fehlerfälle) | Erweiterung ja, Umbenennung oder Streichung nein ohne ADR |
-| Persistenzregeln (was in `localStorage` liegt) | Erweiterung nur um Felder ohne Lösungsrelevanz |
-| Provider-Reihenfolge und Rückfallverhalten | nur mit ADR |
-| Modulgrenzen | nur mit ADR |
+| Round phase names (`drawing`, `question`, `locked-in`, `reveal`, `scoring`) | immutable without a contract change |
+| Anti-spoiler rules per mode | tightening is allowed, loosening only with an ADR |
+| Mode contracts (input, validation, result, points, error cases) | extension yes, renaming or deletion no without an ADR |
+| Persistence rules (what lies in `localStorage`) | extension only by fields without solution relevance |
+| Provider order and fallback behaviour | only with an ADR |
+| Module boundaries | only with an ADR |
 
-**Kein Vertrag ersetzt den Code.** Stimmt der Code nicht mit dem Vertrag
-überein, ist das ein **Befund**, kein Freifahrtschein: entweder wird der Code
-angepasst oder der Vertrag — mit Begründung und, bei Grenzverschiebungen, mit
-einem ADR.
+**No contract replaces the code.** If the code does not match the contract,
+that is a **finding**, not a free pass: either the code is adjusted or the
+contract — with a rationale and, for boundary shifts, with an ADR.
 
 ---
 
-## Die Änderungsregel
+## The change rule
 
-> **Wer eine Grenze verändert, ändert den Vertrag im selben Commit — und bei
-> Grenzverschiebungen zusätzlich per ADR.**
+> **Whoever changes a boundary changes the contract in the same commit — and for
+> boundary shifts additionally via an ADR.**
 
-Drei Fälle, drei Handlungen:
+Three cases, three actions:
 
-| Fall | Handlung | Form |
+| Case | Action | Form |
 |---|---|---|
-| **Ergänzung** — eine Regel wird präzisiert, ein Fehlerfall dokumentiert, ein Messwert ergänzt | Vertrag im selben Commit aktualisieren | Direktedit in [`GAME-CONTRACT.md`](GAME-CONTRACT.md), Änderung in der Commit-Message benennen |
-| **Verschiebung** — Zustandsübergänge, Anti-Spoiler-Regeln, Modusverträge, Persistenz, Provider-Reihenfolge, Modulgrenzen | Vertrag **und** neues ADR | [ADR-Template](../adr/ADR_TEMPLATE.md), Nummerierung ab `ADR-0001`, nie überschreiben |
-| **Korrektur** — der Vertrag beschreibt etwas, das der Code nicht (mehr) tut | Vertrag an den Code angleichen **oder** den Code korrigieren | Korrektur mit Datei:Zeile belegen; offene Entscheidung an den Owner |
+| **Addition** — a rule is made more precise, an error case is documented, a measured value is added | Update the contract in the same commit | Direct edit in [`GAME-CONTRACT.md`](GAME-CONTRACT.md), name the change in the commit message |
+| **Shift** — state transitions, anti-spoiler rules, mode contracts, persistence, provider order, module boundaries | Contract **and** a new ADR | [ADR template](../adr/ADR_TEMPLATE.md), numbering from `ADR-0001`, never overwrite |
+| **Correction** — the contract describes something the code does not (or no longer does) | Align the contract to the code **or** correct the code | Correction backed with file:line; open decision to the owner |
 
-**ADR-Pflicht bei Verschiebungen.** Ein ADR ohne die Alternative, die
-verworfen wurde, ist eine Notiz, keine Entscheidung. Das Format ist
-verbindlich: `Status | Datum | Kontext | Entscheidung | Konsequenzen |
-Alternativen` (siehe [`../adr/ADR_TEMPLATE.md`](../adr/ADR_TEMPLATE.md)).
+**ADR obligation for shifts.** An ADR without the alternative that was
+rejected is a note, not a decision. The format is binding:
+`Status | Date | Context | Decision | Consequences | Alternatives`
+(see [`../adr/ADR_TEMPLATE.md`](../adr/ADR_TEMPLATE.md)).
 
-**Anforderungs-IDs mitführen.** Jede Vertragsregel verweist auf die
-Anforderung, die sie absichert, aus [`../REQUIREMENTS.md`](../../REQUIREMENTS.md)
-(`GAME-*`, `MEDIA-*`, `LOBBY-*`, `CAT-*`). Eine neue Vertragsregel ohne
-Anforderungs-Referenz braucht entweder eine neue Anforderung oder eine
-Begründung, warum keine nötig ist.
+**Carry the requirement IDs.** Every contract rule refers to the requirement
+it secures, from [`../REQUIREMENTS.md`](../../REQUIREMENTS.md)
+(`GAME-*`, `MEDIA-*`, `LOBBY-*`, `CAT-*`). A new contract rule without a
+requirement reference needs either a new requirement or a rationale for
+why none is needed.
 
-**Zahlen nicht im Vertrag einfrieren.** Zahlen des Spiels stehen in
-`PHOMU_CONFIG` (`src/config/game-config.ts`). Ein Vertrag zitiert sie mit
-Fundstelle, es erfindet sie nicht.
+**Do not freeze numbers in the contract.** The numbers of the game are in
+`PHOMU_CONFIG` (`src/config/game-config.ts`). A contract quotes them with
+evidence location, it does not invent them.
 
 ---
 
-## Wie der Vertrag geprüft wird
+## How the contract is checked
 
-Jeder Vertrag nennt am Ende seine eigenen Prüfungen. Für
-[`GAME-CONTRACT.md`](GAME-CONTRACT.md) sind das in § 10 gelistet; die
-wichtigsten sind:
+Every contract names its own checks at the end. For
+[`GAME-CONTRACT.md`](GAME-CONTRACT.md) these are listed in § 10; the most
+important ones are:
 
 ```bash
-# Persistenz: der Song darf nicht in localStorage liegen
+# Persistence: the song must not lie in localStorage
 grep -n "partialize" -A 18 src/stores/game-store.ts
 
-# Phase 'locked-in' darf nie betreten werden
+# Phase 'locked-in' must never be entered
 grep -rn "advancePhase(" src
 
-# Keine verbotene Abhängigkeit aus src/components/
+# No forbidden dependency from src/components/
 grep -rn "from '@/app\|from '@/admin-api\|from '@/data" src/components/
 
-# Doku-Links auflösbar
+# Doc links resolvable
 npm run check:doc-links
 ```
 
 ---
 
-## Beziehung zu den anderen Dokumenten
+## Relation to the other documents
 
 ```text
-PROJECT_MANAGEMENT.md / ROADMAP.md     ← Was wird wann erreicht
+PROJECT_MANAGEMENT.md / ROADMAP.md     ← What is achieved when
         │
-REQUIREMENTS.md                        ← Was das Produkt tun MUSS (mit IDs)
+REQUIREMENTS.md                        ← What the product MUST do (with IDs)
         │
-ARCHITECTURE.md                        ← Wohin Code darf (Schichten, Richtung)
+ARCHITECTURE.md                        ← Where code may go (layers, direction)
         │
-docs/design/GAME-CONTRACT.md           ← WIE der Spielablauf sich verhält
+docs/design/GAME-CONTRACT.md           ← HOW the game flow behaves
         │
-docs/adr/*.md                          ← WARUM eine Grenze so und nicht anders
+docs/adr/*.md                          ← WHY a boundary is so and not otherwise
         │
-docs/acceptance/*.md                   ← OB die Umsetzung stimmt (mit Beleg)
+docs/acceptance/*.md                   ← WHETHER the implementation is correct (with evidence)
 ```
 
-Ein Widerspruch zwischen zwei Ebenen wird nicht stillschweigend geglättet,
-sondern als **Befund** gemeldet: an den Owner, mit Datei:Zeile.
+A contradiction between two levels is not smoothed over silently, but
+reported as a **finding**: to the owner, with file:line.
 
 ---
 
-## Zugehörige Dokumente
+## Related documents
 
-| Dokument | Inhalt |
+| Document | Content |
 |---|---|
-| [`../README.md`](../README.md) | Index der gesamten Dokumentation |
-| [`../DOCUMENTATION_POLICY.md`](../DOCUMENTATION_POLICY.md) | Same-Change-Regel, Single Source of Truth, Sprachregel |
-| [`../adr/`](../adr/) | Architekturentscheidungen |
-| [`../cr/`](../cr/) | Change Requests für materielle Verhaltensänderungen |
-| [`../acceptance/`](../acceptance/) | Abnahmenachweise je Meilenstein |
+| [`../README.md`](../README.md) | Index of the entire documentation |
+| [`../DOCUMENTATION_POLICY.md`](../DOCUMENTATION_POLICY.md) | Same-change rule, single source of truth, language rule |
+| [`../adr/`](../adr/) | Architecture decisions |
+| [`../cr/`](../cr/) | Change requests for material behaviour changes |
+| [`../acceptance/`](../acceptance/) | Acceptance evidence per milestone |

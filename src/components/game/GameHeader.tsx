@@ -1,12 +1,12 @@
 /**
  * GameHeader
  *
- * Zeigt am oberen Rand des Spiels:
- * - Runden-Nummer
- * - Aktuellen Spielmodus mit Icon
- * - Spieler, der gerade dran ist (Pilot)
- * - Countdown-Timer (wenn konfiguriert)
- * - Exit-Button zurück zur Lobby
+ * Shows at the top edge of the game:
+ * - round number
+ * - current game mode with icon
+ * - the player whose turn it is (pilot)
+ * - countdown timer (if configured)
+ * - exit button back to the lobby
  */
 'use client';
 
@@ -17,7 +17,7 @@ import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
 import type { TranslationKey } from '@/i18n/types';
 
-// ─── Modus-Icons ──────────────────────────────────────────────────
+// ─── Mode icons ──────────────────────────────────────────────────
 
 const MODE_ICONS: Record<GameMode, string> = {
   timeline: '📅',
@@ -28,7 +28,7 @@ const MODE_ICONS: Record<GameMode, string> = {
   'cover-confusion': '🎭',
 };
 
-/** Übersetzungsschlüssel der Modus-Anzeigename (Reihenfolge = MODE_ICONS). */
+/** Translation keys of the mode display names (order = MODE_ICONS). */
 const MODE_LABEL_KEYS: Record<GameMode, TranslationKey> = {
   timeline: 'game.header.modeLabel.timeline',
   'hint-master': 'game.header.modeLabel.hintMaster',
@@ -46,19 +46,19 @@ interface GameHeaderProps {
   pilotName?: string;
   pilotAvatar?: string;
   pilotColor?: string;
-  /** Sekunden bis der Timer abläuft — null = kein Timer */
+  /** Seconds until the timer expires — null = no timer */
   timeLimitSeconds: number | null;
   /** Fortschritt in Prozent (0-100) */
   progressPercentage?: number;
-  /** Optionales Label für das Fortschritts-Ziel (z.B. "10", "100 Pkt") */
+  /** Optional label for the progress target (e.g. "10", "100 pts") */
   targetLabel?: string;
-  /** Wird aufgerufen, wenn der Timer abläuft */
+  /** Called when the timer expires */
   onTimeUp?: () => void;
-  /** Wird aufgerufen, wenn der Nutzer "Exit" drückt */
+  /** Called when the user presses "Exit" */
   onExit?: () => void;
 }
 
-// ─── Komponente ───────────────────────────────────────────────────
+// ─── Component ───────────────────────────────────────────────────
 
 interface TimerCountdownProps {
   initialSeconds: number;
@@ -124,12 +124,12 @@ export function GameHeader({
 
   const displayProgressLabel = useMemo(() => {
     if (!targetLabel) return t('game.header.round', { round: roundNumber });
-    // Wenn targetLabel z.B. "10" ist -> "Runde 3 / 10"
+    // If targetLabel is e.g. "10" -> "Round 3 / 10"
     const target = Number(targetLabel);
     if (!isNaN(target)) {
       return t('game.header.roundOf', { round: roundNumber, total: target });
     }
-    // Wenn targetLabel z.B. "100 Pkt" -> "45 / 100 Pkt"
+    // If targetLabel is e.g. "100 pts" -> "45 / 100 pts"
     return t('game.header.roundOfTarget', {
       round: roundNumber,
       target: targetLabel,
@@ -158,7 +158,7 @@ export function GameHeader({
       </div>
 
       <div className="flex items-center gap-2 sm:gap-4 px-4 py-3 border-b border-white/5">
-        {/* Exit-Button */}
+        {/* Exit button */}
         <button
           onClick={handleExit}
           className="w-11 h-11 flex items-center justify-center rounded-xl opacity-60 hover:opacity-100 hover:bg-white/10 transition-all shrink-0"
@@ -168,7 +168,7 @@ export function GameHeader({
           ✕
         </button>
 
-        {/* Modus-Badge (Desktop only details) */}
+        {/* Mode badge (desktop-only details) */}
         <div
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl text-xs font-black shrink-0"
           style={{
@@ -184,11 +184,11 @@ export function GameHeader({
           </span>
         </div>
 
-        {/* --- Pilot Display (The Star) --- */}
+        {/* --- Pilot display (the star) --- */}
         <div className="flex-1 flex items-center justify-center min-w-0 mx-2">
           {pilotName ? (
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 shadow-inner max-w-full">
-              {/* Pilot Indicator dot/avatar */}
+              {/* Pilot indicator dot/avatar */}
               <div
                 className="w-6 h-6 rounded-full flex items-center justify-center text-sm shrink-0 shadow-lg"
                 style={{
@@ -213,7 +213,7 @@ export function GameHeader({
           )}
         </div>
 
-        {/* Runde + Timer */}
+        {/* Round + timer */}
         <div className="flex items-center gap-3 shrink-0">
           <div className="hidden sm:flex flex-col items-end mr-1">
             <span className="text-[9px] font-black uppercase opacity-30 tracking-widest leading-none mb-0.5">

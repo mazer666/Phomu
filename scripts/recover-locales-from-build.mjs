@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
- * Rekonstruiert die Sprachdateien aus dem Next-Build-Cache.
+ * Reconstructs the locale files from the Next build cache.
  *
- * Hintergrund: Ein Migrationsschritt hat die verschachtelten Schlüssel der
- * Spielmodi (`modes.timeline.*`) durch einen Blatt-Schlüssel mit demselben
- * Namen überschrieben. Der Build-Cache `.next/` enthält die Sprachdaten
- * noch in der Form, in der sie vor dem Überschreiben in den Bundle
- * geschrieben wurden — daraus lassen sie sich verlustfrei zurückholen.
+ * Background: a migration step overwrote the nested keys of the game modes
+ * (`modes.timeline.*`) with a leaf key of the same name. The build cache
+ * `.next/` still contains the locale data in the form it had before the
+ * overwrite was written into the bundle — from there it can be recovered
+ * without loss.
  *
- * Aufruf:
- *   node scripts/recover-locales-from-build.mjs [--out <verzeichnis>]
+ * Usage:
+ *   node scripts/recover-locales-from-build.mjs [--out <directory>]
  */
 import {
   readFileSync,
@@ -25,7 +25,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const NEXT_DIR = join(ROOT, '.next');
 
-/** Alle Dateien unterhalb eines Verzeichnisses. */
+/** All files below a directory. */
 function walk(dir, out = []) {
   if (!existsSync(dir)) return out;
   for (const entry of readdirSync(dir)) {
@@ -37,12 +37,13 @@ function walk(dir, out = []) {
 }
 
 /**
- * Löst ein JavaScript-Stringliteral in die enthaltene JSON-Zeichenkette auf.
+ * Resolves a JavaScript string literal into the JSON character string it
+ * contains.
  *
- * Der Bundler bettet die Sprachdaten als `JSON.parse('…')` ein. Der Inhalt
- * des Literals ist die JSON-Zeichenkette, **maskiert** nach den Regeln für
- * ein JavaScript-Stringliteral: `\` → `\\`, `'` → `\'`. Diese Maskierung muss
- * rückgängig gemacht werden, damit wieder gültiges JSON entsteht.
+ * The bundler embeds the locale data as `JSON.parse('…')`. The content of
+ * the literal is the JSON character string, **escaped** according to the
+ * rules for a JavaScript string literal: `\` → `\\`, `'` → `\'`. This
+ * escaping has to be undone so that valid JSON emerges again.
  */
 function toJsonText(raw) {
   let out = '';
@@ -81,7 +82,7 @@ function toJsonText(raw) {
         break;
       }
       default:
-        // \\ \' \" und alle unbekannten Sequenzen: das Zeichen selbst
+        // \\ \' " and all unknown sequences: the character itself
         out += next;
         break;
     }
@@ -90,8 +91,8 @@ function toJsonText(raw) {
 }
 
 /**
- * Erkennt die Sprache eines Übersetzungsbaums an einem Schlüssel, dessen
- * Wert sich zwischen den Sprachen unterscheidet.
+ * Detects the language of a translation tree via a key whose value differs
+ * between the languages.
  */
 function classify(translation) {
   const back = translation?.common?.back;
@@ -132,19 +133,19 @@ for (const file of walk(NEXT_DIR)) {
         candidates.push({ file, data: parsed });
       }
     } catch {
-      // Kein Locale-Bundle — ignorieren.
+      // No locale bundle — ignore.
     }
   }
 }
 
 if (candidates.length === 0) {
-  console.error('Keine Sprachdaten im Build-Cache gefunden.');
+  console.error('No locale data found in the build cache.');
   process.exit(1);
 }
 
 const languages = new Map();
 for (const candidate of candidates) {
-  // Zwei Formen kommen vor: der reine Übersetzungsbaum oder ein Bündel
+  // Two forms occur: the plain translation tree or a bundle
   // `{ de: { translation }, en: { translation } }`.
   const bundles = candidate.data.translation
     ? Object.entries(candidate.data).map(([language, value]) => [
@@ -171,10 +172,10 @@ for (const [language, entry] of languages) {
   writeFileSync(target, `${JSON.stringify(entry.data, null, 2)}\n`, 'utf8');
   const count = Object.keys(entry.data).length;
   console.log(
-    `${language}: ${count} Namespaces aus ${entry.file.replace(ROOT + '/', '')} → ${target}`
+    `${language}: ${count} namespaces from ${entry.file.replace(ROOT + '/', '')} → ${target}`
   );
 }
 
 console.log(
-  `\n${languages.size} Sprachdatei(en) rekonstruiert. Prüfe sie, bevor du sie übernimmst.`
+  `\n${languages.size} locale file(s) reconstructed. Review them before you take them over.`
 );

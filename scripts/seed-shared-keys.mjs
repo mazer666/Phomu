@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
- * Ergänzt die vorab definierten Schlüssel aus CONTRACT.md §5.1/§5.2 in beide
- * Sprachdateien und ergänzt sie in den generierten Schlüssellisten.
+ * Adds the predefined keys from CONTRACT.md §5.1/§5.2 to both locale files
+ * and adds them to the generated key lists.
  *
- * Vorhandene Werte werden **nicht** überschrieben. Ein abweichender Wert
- * wird gemeldet, damit ein Mensch entscheidet — das Skript überschreibt
- * keine vorhandene Übersetzung.
+ * Existing values are **not** overwritten. A deviating value is reported so
+ * that a human can decide — the script never overwrites an existing
+ * translation.
  *
- * Aufruf:
- *   node scripts/seed-shared-keys.mjs          # ergänzt und schreibt
- *   node scripts/seed-shared-keys.mjs --check  # schreibt nicht, meldet nur
+ * Usage:
+ *   node scripts/seed-shared-keys.mjs          # adds and writes
+ *   node scripts/seed-shared-keys.mjs --check  # does not write, reports only
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -20,14 +20,14 @@ const LOCALES_DIR = join(ROOT, 'src/i18n/locales');
 const CHECK_ONLY = process.argv.includes('--check');
 
 /**
- * Die gemeinsame Basis, die in JEDER Sprache identisch belegt sein muss.
+ * The shared base that must be present identically in EVERY language.
  *
- * WICHTIG: hier stehen **keine** Modus-Anzeigenamen. `modes.timeline` wäre
- * ein Blatt und würde den verschachtelten Objekt `modes.timeline.*` (Name,
- * Beschreibung, Jahrzehnt-Hinweise …) im selben Namespace zerstören. Der
- * Anzeigename eines Modus liegt in `modes.<modus>.name`.
- * Eigennamen (Phomu, Spotify, YouTube, Jackbox, Music Wall) bleiben bewusst
- * gleich — das ist korrekt und kein Übersetzungsfehler.
+ * IMPORTANT: there are **no** mode display names here. `modes.timeline` would
+ * be a leaf and would destroy the nested object `modes.timeline.*` (name,
+ * description, decade hints …) in the same namespace. The display name of a
+ * mode lives in `modes.<mode>.name`.
+ * Proper names (Phomu, Spotify, YouTube, Jackbox, Music Wall) deliberately
+ * stay the same — that is correct and not a translation error.
  */
 const SHARED = {
   de: {
@@ -195,8 +195,8 @@ for (const language of ['de', 'en']) {
     if (key in current) {
       if (current[key] !== value) {
         console.error(
-          `⚠ ${language}: "${key}" existiert bereits mit einem anderen Wert ` +
-            `(${JSON.stringify(current[key])} statt ${JSON.stringify(value)}) — nicht überschrieben.`
+          `⚠ ${language}: "${key}" already exists with a different value ` +
+            `(${JSON.stringify(current[key])} instead of ${JSON.stringify(value)}) — not overwritten.`
         );
         problems += 1;
       }
@@ -207,7 +207,7 @@ for (const language of ['de', 'en']) {
   }
 
   console.log(
-    `${language}: ${added} Schlüssel ergänzt, ${Object.keys(current).length} gesamt.`
+    `${language}: ${added} keys added, ${Object.keys(current).length} in total.`
   );
   if (!CHECK_ONLY) {
     writeFileSync(file, `${JSON.stringify(nest(current), null, 2)}\n`, 'utf8');
@@ -215,6 +215,6 @@ for (const language of ['de', 'en']) {
 }
 
 if (problems > 0) {
-  console.error(`\n${problems} Abweichung(en) — bitte von Hand entscheiden.`);
+  console.error(`\n${problems} deviation(s) — please decide by hand.`);
   process.exitCode = 1;
 }

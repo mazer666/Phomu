@@ -1,24 +1,23 @@
 /**
- * Typisierte Übersetzungsschlüssel
+ * Typed translation keys
  *
- * Durch diese Deklaration kennt TypeScript alle Schlüssel aus
- * `src/i18n/locales/de.json`. Ein Tippfehler in `t('game.doesNotExist')`
- * wird dadurch beim Compile zum Fehler statt erst zur Laufzeit — und die
- * Autovervollständigung funktioniert.
+ * With this declaration TypeScript knows every key of
+ * `src/i18n/locales/de.json`. A typo in `t('game.doesNotExist')` therefore
+ * becomes a compile error instead of a runtime problem — and autocompletion
+ * works.
  *
- * Die Datei muss einmal importiert werden; das passiert in
- * `src/i18n/config.ts`.
+ * The file has to be imported once; that happens in `src/i18n/config.ts`.
  */
 import 'i18next';
 
 import type translation from './locales/de.json';
 
 /**
- * Wandelt einen verschachtelten Ressourcenbaum in die flache Liste der
- * Punktpfade um, so wie i18next sie zur Laufzeit auflöst.
+ * Turns a nested resource tree into the flat list of dot paths, the way
+ * i18next resolves them at runtime.
  *
- * `typeof translation` ist `{ game: { reveal: { label: string } } }`;
- * daraus wird `"game" | "game.reveal" | "game.reveal.label"`.
+ * `typeof translation` is `{ game: { reveal: { label: string } } }`;
+ * from that it becomes `"game" | "game.reveal" | "game.reveal.label"`.
  */
 export type FlatTranslationKey<T> = {
   [K in keyof T & string]: T[K] extends string
@@ -28,7 +27,7 @@ export type FlatTranslationKey<T> = {
       : K;
 }[keyof T & string];
 
-/** Jeder gültige Schlüssel der Übersetzung, als Punktpfad. */
+/** Every valid key of the translation, as a dot path. */
 export type TranslationKey = FlatTranslationKey<typeof translation>;
 
 declare module 'i18next' {

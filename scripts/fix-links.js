@@ -1,12 +1,12 @@
 /**
- * fix-links.js (Resilient Version)
+ * fix-links.js (resilient version)
  *
- * Sucht für alle Songs aus broken-links-report.json automatisch
- * offizielle YouTube-Videos und aktualisiert die Pack-JSON-Dateien.
+ * Searches automatically for official YouTube videos for all songs from
+ * broken-links-report.json and updates the pack JSON files.
  *
- * Unterstützt mehrere Provider (YouTube API & Scraping Fallback),
- * Anti-Blocking (User-Agent Rotation, adaptive Delays)
- * und faire Verteilung ("quer drüber") über alle Packs.
+ * Supports several providers (YouTube API & scraping fallback),
+ * anti-blocking (user-agent rotation, adaptive delays)
+ * and fair distribution ("across the board") over all packs.
  */
 
 const fs = require('fs');
@@ -50,7 +50,7 @@ async function googleApiProvider(query) {
     const data = JSON.parse(raw);
     if (data.error) {
       if (data.error.errors?.[0]?.reason === 'quotaExceeded') {
-        console.log('\n   [API] 🛑 Quote erschöpft. Wechsle zu Fallback...');
+        console.log('\n   [API] 🛑 Quota exhausted. Switching to fallback...');
         apiQuotaExhausted = true;
         return null;
       }
@@ -59,7 +59,7 @@ async function googleApiProvider(query) {
 
     if (!data.items || data.items.length === 0) return null;
 
-    // Filter für Offizielle Kanäle
+    // Filter for official channels
     const vevo = data.items.find(i => i.snippet.channelTitle.toLowerCase().includes('vevo'));
     const official = data.items.find(i =>
       i.snippet.channelTitle.toLowerCase().includes('official') ||
@@ -86,7 +86,7 @@ async function scrapingProvider(query) {
     const results = await scrapedSearch(query);
 
     if (!results || results.length === 0) {
-      // console.log(`   [Scraper] 🔍 "${query}" -> Keine Treffer`);
+      // console.log(`   [Scraper] 🔍 "${query}" -> no hits`);
       return null;
     }
 
@@ -107,7 +107,7 @@ async function scrapingProvider(query) {
       source: 'Scraping Fallback'
     };
   } catch (err) {
-    console.error(`   [Scraper] Fehler bei "${query}": ${err.message}`);
+    console.error(`   [Scraper] Error for "${query}": ${err.message}`);
     return null;
   }
 }
@@ -132,16 +132,16 @@ async function resilientSearch(artist, title) {
     result = await scrapingProvider(query);
     
     if (result) {
-      // Wenn der Provider Scraping ist, prüfen wir kurz, ob der Titel plausibel ist
+      // If the provider is scraping, we briefly check whether the title is plausible
       const normalizedTitle = result.videoTitle.toLowerCase();
       const artistToken = artist.toLowerCase().split(' ')[0];
       const titleToken = title.toLowerCase().split(' ')[0];
-      
-      const isPlausible = normalizedTitle.includes(artistToken) || 
+
+      const isPlausible = normalizedTitle.includes(artistToken) ||
                          normalizedTitle.includes(titleToken);
-                         
+
       if (isPlausible) return result;
-      // else console.log(`   [Scraper] ⚠️ "${result.videoTitle}" nicht plausibel für "${artist} - ${title}"`);
+      // else console.log(`   [Scraper] ⚠️ "${result.videoTitle}" not plausible for "${artist} - ${title}"`);
     }
   }
 
@@ -169,7 +169,7 @@ function randomSleep(min, max) {
 
 async function main() {
   if (!fs.existsSync(REPORT_FILE)) {
-    console.error(`Report-Datei nicht gefunden: ${REPORT_FILE}`);
+    console.error(`Report file not found: ${REPORT_FILE}`);
     process.exit(1);
   }
 
@@ -177,8 +177,8 @@ async function main() {
   const report = rawReport.sort(() => Math.random() - 0.5);
 
   console.log(`\n🚀 Phomu Link Repair System (Resilient Mode)`);
-  console.log(`🔍 ${report.length} Songs in der Warteschlange (shuffled)`);
-  if (DRY_RUN) console.log('   (--dry-run: Es werden keine Änderungen gespeichert)\n');
+  console.log(`🔍 ${report.length} songs in the queue (shuffled)`);
+  if (DRY_RUN) console.log('   (--dry-run: no changes are written)\n');
 
   const packs = {};
   for (const file of fs.readdirSync(PACKS_DIR).filter(f => f.endsWith('.json'))) {
@@ -221,18 +221,18 @@ async function main() {
         }
       }
     } else {
-      console.log('❌ nicht gefunden');
+      console.log('❌ not found');
       failed++;
     }
 
-    // Adaptives Delay gegen IP-Blocking (nur bei Scraping nötig, aber schadet nie)
+    // Adaptive delay against IP blocking (only needed for scraping, but never harmful)
     await randomSleep(1000, 3000);
   }
 
-  console.log(`\n✅ Fertig!`);
-  console.log(`   - Korrigiert: ${fixed}`);
-  console.log(`   - Übersprungen (schon fix): ${skipped}`);
-  console.log(`   - Nicht gefunden: ${failed}`);
+  console.log(`\n✅ Done!`);
+  console.log(`   - Fixed: ${fixed}`);
+  console.log(`   - Skipped (already fixed): ${skipped}`);
+  console.log(`   - Not found: ${failed}`);
 }
 
 main().catch(console.error);

@@ -59,7 +59,7 @@ export function InGameSettingsPanel({
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  // Prozentwert mit der aktiven Sprache formatieren (Intl, kein toLocaleString ohne Locale)
+  // Format the percentage with the active locale (Intl, no toLocaleString without a locale)
   const percentFormatter = useMemo(
     () =>
       new Intl.NumberFormat(i18n.language, {

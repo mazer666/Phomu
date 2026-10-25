@@ -27,6 +27,7 @@
     "check:i18n": "node scripts/check-i18n-completeness.mjs",
     "check:doc-links": "node scripts/check-doc-links.mjs",
     "check:file-size": "node scripts/check-file-size.mjs",
+    "check:doc-language": "node scripts/check-doc-language.mjs",
     "check:all": "node scripts/check-all.mjs",
     "postinstall": "node scripts/setup-git-hooks.js",
     "generate:variant-keys": "node scripts/generate-variant-keys.mjs",

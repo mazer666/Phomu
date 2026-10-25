@@ -74,8 +74,8 @@ else
     echo -e "\n${YELLOW}${BOLD}[SKIPPED]${NC} YouTube Official Link Audit skipped (YOUTUBE_API_KEY environment variable is not defined)."
 fi
 
-# 10. Quality Gates (i18n-Vollständigkeit, Doku-Linkcheck, Dateigröße)
-run_check "Quality Gates (i18n / Doc-Links / Dateigröße)" "npm run check:all" "false" || exit 1
+# 10. Quality Gates (i18n completeness, doc link check, file size)
+run_check "Quality Gates (i18n / Doc-Links / File Size)" "npm run check:all" "false" || exit 1
 
 echo -e "\n${BLUE}${BOLD}======================================================================${NC}"
 if [ $FAILED -eq 0 ]; then

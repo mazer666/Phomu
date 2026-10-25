@@ -1,18 +1,18 @@
 /**
- * Typisierte Schlüssellisten für variierte Texte.
+ * Typed key lists for varied texts.
  *
- * GENERIERTE DATEI — nicht von Hand bearbeiten.
- * Neu erzeugen mit: `node scripts/generate-variant-keys.mjs`
+ * GENERATED FILE — do not edit by hand.
+ * Regenerate with: `node scripts/generate-variant-keys.mjs`
  *
- * Der Typ `TranslationKey` ist die Vereinigung aller Schlüssel aus
- * `de.json`. Deshalb bricht der Compiler, sobald ein Schlüssel aus der
- * Sprachdatei verschwindet oder ein Tippfehler in einer Liste landet.
+ * The type `TranslationKey` is the union of all keys of `de.json`. That is
+ * why the compiler breaks as soon as a key disappears from the language file
+ * or a typo ends up in one of the lists.
  */
 import type { TranslationKey } from './types';
 
 export type { TranslationKey };
 
-/** 30 Varianten aus `game.reveal.timeline.generic*`. */
+/** 30 variants from `game.reveal.timeline.generic*`. */
 export const TIMELINE_GENERIC_KEYS = [
   'game.reveal.timeline.generic1',
   'game.reveal.timeline.generic2',

@@ -1,163 +1,161 @@
-# Zu Phomu beitragen
+# Contributing to Phomu
 
-Danke, dass du mitbaust. 🎵
+Thanks for building this with us. 🎵
 
-Phomu ist ein Open-Source-Partyspiel unter **GPL-3.0-or-later**. Beiträge sind
-willkommen — unter der Bedingung, dass sie zum Qualitätsstandard des Projekts
-passen.
+Phomu is an open-source party game under **GPL-3.0-or-later**. Contributions are
+welcome — on condition that they meet the quality bar of the project.
 
-**Vor dem ersten Commit lies bitte:**
+**Before your first commit, please read:**
 
-1. [`REQUIREMENTS.md`](REQUIREMENTS.md) — was das Produkt tun muss
-2. [`ARCHITECTURE.md`](ARCHITECTURE.md) — wie es gebaut ist
-3. [`AGENTS.md`](AGENTS.md) — die Arbeitsregeln (gelten auch für KI-Assistenten)
-4. [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) — wo deine Änderung hingehört
+1. [`REQUIREMENTS.md`](REQUIREMENTS.md) — what the product must do
+2. [`ARCHITECTURE.md`](ARCHITECTURE.md) — how it is built
+3. [`AGENTS.md`](AGENTS.md) — the working rules (they apply to AI assistants as well)
+4. [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) — where your change belongs
 
 ---
 
-## 1. Der Qualitätsstandard
+## 1. The quality bar
 
-Vor dem Merge müssen diese Prüfungen grün sein:
+Before the merge, these checks must be green:
 
 ```bash
-npm run typecheck          # TypeScript strict, ohne Emit
+npm run typecheck          # TypeScript strict, without emit
 npm run lint               # ESLint
-npm run test               # Vitest mit Coverage
-npm run check:i18n         # DE/EN vollständig und parallel
-npm run check:doc-links    # jeder relative Link löst auf
-npm run build              # Produktions-Build
+npm run test               # Vitest with coverage
+npm run check:i18n         # DE/EN complete and in parity
+npm run check:doc-links    # every relative link resolves
+npm run build              # production build
 ```
 
-Zusätzlich, wenn deine Änderung den Katalog betrifft:
+Additionally, when your change touches the catalogue:
 
 ```bash
-npm run validate-songs     # Schema und Pflichtfelder jedes Songs
-npm run validate-catalog   # Katalog-Gate: Packs, Songs, Dubletten, fehlende Jahre
+npm run validate-songs     # schema and required fields of every song
+npm run validate-catalog   # catalogue gate: packs, songs, duplicates, missing years
 ```
 
-`npm run local-ci` führt alles in der Reihenfolge aus, in der die CI es tut. Ein
-grüner lokaler Lauf ist die Voraussetzung für eine Aussage wie „ist fertig".
+`npm run local-ci` runs everything in the order the CI runs it. A green local run
+is the precondition for a claim like "it is done".
 
 ---
 
-## 2. Die Testphilosophie
+## 2. The test philosophy
 
-Qualität wird auf mehreren Ebenen gesichert:
+Quality is secured on several layers:
 
-| Ebene | Wofür | Werkzeug |
+| Layer | What it covers | Tool |
 |---|---|---|
-| **Unit** | Utilities, Parser, Queue-Logik, Store-Logik, Komponenten | Vitest |
-| **Statisch** | Typen, Lint-Regeln, Formatierung | `tsc`, ESLint, Prettier |
-| **Daten** | Schema und Vollständigkeit des Katalogs | `validate-song-*.ts` |
-| **Struktur** | Modulgrenzen, Dateigrößen, Doku-Links, Übersetzungsparität | `scripts/check-*.mjs` |
-| **E2E** | der komplette Ablauf im echten Browser | Playwright |
-| **Build** | der Produktions-Build muss durchlaufen | `next build` |
+| **Unit** | utilities, parsers, queue logic, store logic, components | Vitest |
+| **Static** | types, lint rules, formatting | `tsc`, ESLint, Prettier |
+| **Data** | schema and completeness of the catalogue | `validate-song-*.ts` |
+| **Structure** | module boundaries, file sizes, doc links, translation parity | `scripts/check-*.mjs` |
+| **E2E** | the complete flow in a real browser | Playwright |
+| **Build** | the production build must pass | `next build` |
 
-### Was ein Test beweisen muss
+### What a test must prove
 
-- **Jede Verhaltensänderung braucht einen Test.** Der Test führt das Verhalten
-  aus, er ahmt es nicht nach.
-- **Jede Härtung braucht einen negativen Test.** Der Test führt den Angriff
-  tatsächlich aus: fehlender Token, manipulierte URL, zu große Datei, verweigerte
-  Berechtigung. Ein positives Testpaket allein beweist nichts.
-- **Keine ausgelassenen Tests.** Kein `skip`, kein `@Ignore`, kein
-  auskommentierter Test, damit die CI grün wird. Das ist kein
-  Verhandlungsgegenstand.
+- **Every behaviour change needs a test.** The test executes the behaviour, it
+  does not imitate it.
+- **Every hardening needs a negative test.** The test actually executes the
+  attack: missing token, manipulated URL, oversized file, denied permission. A
+  positive test suite alone proves nothing.
+- **No omitted tests.** No `skip`, no `@Ignore`, no commented-out test to make
+  the CI green. That is not negotiable.
 
 ---
 
-## 3. Die Grenzen des Beitrags
+## 3. The boundaries of a contribution
 
-### Kein Merge ohne Anforderung
+### No merge without a requirement
 
-Verhalten wird nicht „einfach so" geändert. Wenn dein PR das Produktverhalten
-verändert, braucht er:
+Behaviour is not changed "just like that". If your PR changes the product
+behaviour, it needs:
 
-- eine Anforderungs-ID in `REQUIREMENTS.md` (neu anlegen oder ergänzen), und
-- bei materiellen Änderungen einen Change Request unter `docs/cr/`
+- a requirement ID in `REQUIREMENTS.md` (create a new one or extend an existing one), and
+- for material changes a change request under `docs/cr/`
 
-### Kein Merge ohne Doku
+### No merge without documentation
 
-Dokumentation, die durch deine Änderung veraltet, wird **im selben Commit**
-mitgezogen. Die Zuordnung steht in
-[`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md). Konkret:
+Documentation that your change makes obsolete is carried along **in the same
+commit**. The mapping is in
+[`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md). Concretely:
 
-| Du änderst | Dann aktualisierst du |
+| You change | Then you update |
 |---|---|
-| Verhalten | `REQUIREMENTS.md`, `docs/user-guide/USER-GUIDE.de.md` **und** `.en.md` |
-| Struktur oder eine Grenze | `ARCHITECTURE.md`, ggf. ein ADR in `docs/adr/` |
-| Konstanten, Defaults, Grenzwerte | `src/config/`, `REQUIREMENTS.md` |
-| einen Meilenstein oder dessen Status | `ROADMAP.md`, `project/project.yaml` |
-| Texte der Oberfläche | `src/i18n/locales/de.json` **und** `en.json` |
+| behaviour | `REQUIREMENTS.md`, `docs/user-guide/USER-GUIDE.en.md` |
+| structure or a boundary | `ARCHITECTURE.md`, and if needed an ADR in `docs/adr/` |
+| constants, defaults, limits | `src/config/`, `REQUIREMENTS.md` |
+| a milestone or its status | `ROADMAP.md`, `project/project.yaml` |
+| interface texts | `src/i18n/locales/de.json` **and** `en.json` |
 
-### Eine Wahrheit je Zahl
+### One truth per number
 
-Punkte, Zeitlimits, Kapazitäten und Grenzwerte stehen in `src/config/`.
-Wer sie im Code dupliziert, erzeugt zwei Wahrheiten — und einen Fehler, der
-irgendwann auftaucht und niemandem gehört.
+Points, time limits, capacities and limits live in `src/config/`. Whoever
+duplicates them in the code creates two truths — and a bug that surfaces
+eventually and belongs to nobody.
 
 ---
 
-## 4. Der Stil
+## 4. The style
 
-**Sprache.** Code, Bezeichner und Commit-Messages sind englisch. Die
-Projektdokumentation ist deutsch, die Nutzer-Guides gibt es zweimal.
+**Language.** Code, identifiers and commit messages are in English. The project
+documentation is in English, the user guides exist twice.
 
-**Namen.** Beschreibend, keine Abkürzungen:
+**Names.** Descriptive, no abbreviations:
 
 ```text
-schlecht:  x, tmp, data2, mgr, handleStuff()
-gut:       roundPhase, answersLocked, hintLevel, applyScoreDecay()
+bad:       x, tmp, data2, mgr, handleStuff()
+good:      roundPhase, answersLocked, hintLevel, applyScoreDecay()
 ```
 
-**Kommentare.** Sie erklären das **Warum**, nicht das Was. Der Code ist für
-jemanden geschrieben, der das Projekt nicht kennt.
+**Comments.** They explain the **why**, not the what. The code is written for
+someone who does not know the project.
 
-**Umfang.** Ziel `≤ 400` Zeilen pro handgeschriebener Datei, harte Grenze `550`.
-Jede Datei hat genau eine Verantwortung.
+**Size.** Target `≤ 400` lines per hand-written file, hard limit `550`. Each file
+has exactly one responsibility.
 
-**Typen.** TypeScript strict. Kein `any`, kein `@ts-ignore`, kein
-`as unknown as` als Weg um ein Modell.
+**Types.** TypeScript strict. No `any`, no `@ts-ignore`, no `as unknown as` as a
+way around a model.
 
-**Formatierung.** `npm run format:check` muss grün sein; Prettier entscheidet,
-nicht die Gewohnheit.
+**Formatting.** `npm run format:check` must be green; Prettier decides, not
+habit.
 
 ---
 
-## 5. Datenschutz und Sicherheit
+## 5. Privacy and security
 
-Nicht verhandelbar:
+Not negotiable:
 
-- **Datenminimierung zuerst.** Speichere nur, was für die Spielbarkeit nötig ist.
-- **Keine Geheimnisse im Repo.** Keine API-Keys, kein Admin-Token, keine
-  `.env.local`. Der Admin-Token gehört in die Umgebung:
-  `npm run security:rotate-admin-token` schreibt ihn nach `.env.local`.
-- **Keine Tracking- oder Profiling-Daten** ohne dokumentierten Zweck und
-  Opt-in. Phomu ist ein Zero-Telemetrie-Projekt; siehe
+- **Data minimisation first.** Store only what the game needs to be playable.
+- **No secrets in the repo.** No API keys, no admin token, no `.env.local`. The
+  admin token belongs in the environment:
+  `npm run security:rotate-admin-token` writes it to `.env.local`.
+- **No tracking or profiling data** without a documented purpose and opt-in.
+  Phomu is a zero-telemetry project; see
   [`PRIVACY.md`](PRIVACY.md).
-- **Bei KI-gestützten Inhalten**: kleine Requests, Retry/Queue statt Burst,
-  nachvollziehbare Evidenz für Hinweise, **keine Spoiler in den Hinweisen**.
+- **For AI-assisted content**: small requests, retry/queue instead of bursts,
+  traceable evidence for hints, **no spoilers in the hints**.
 
-Bricht dein PR in eine der Angriffsflächen ein, die in
-[`SECURITY.md`](SECURITY.md) beschrieben sind, sag es bitte vorher — und schick
-**keine** Exploit-Details an offene Kanäle. Der Meldeweg steht dort.
-
----
-
-## 6. Die Inhaltsregeln für den Katalog
-
-- **Keine Dubletten** (global strict) bei neuen oder aktualisierten Songs.
-- **Hints müssen überprüfbar sein** (`hintEvidence`) und dürfen weder Artist- noch
-  Titel-Spoiler enthalten.
-- **Im Zweifel**: `manual-review` statt blindem Auto-Publish.
-- Das Katalog-Gate `npm run validate-catalog` prüft gegen eine Baseline und
-  wird **rot** bei einer Regression. Das ist Absicht.
+If your PR breaks into one of the attack surfaces described in
+[`SECURITY.md`](SECURITY.md), please say so beforehand — and send **no** exploit
+details to open channels. The disclosure channel is there.
 
 ---
 
-## 7. Commit und Pull Request
+## 6. The content rules for the catalogue
 
-**Commit-Nachrichten** sind englisch, im Conventional-Commit-Format:
+- **No duplicates** (global strict) for new or updated songs.
+- **Hints must be verifiable** (`hintEvidence`) and must contain neither artist
+  nor title spoilers.
+- **When in doubt**: `manual-review` instead of blind auto-publish.
+- The catalogue gate `npm run validate-catalog` checks against a baseline and
+  turns **red** on a regression. That is intentional.
+
+---
+
+## 7. Commit and pull request
+
+**Commit messages** are in English, in Conventional Commits format:
 
 ```text
 feat(game): add survivor mode scoring decay
@@ -166,37 +164,37 @@ docs(requirements): add MEDIA-012 for provider fallback order
 chore(catalog): clean up duplicate year coverage
 ```
 
-**Ein PR** erledigt **eine** Sache. Er kann mehrere Dateien ändern, aber nur
-einen Zweck.
+**One PR** does **one** thing. It may change several files, but only one
+purpose.
 
-**Die Beschreibung** enthält:
+**The description** contains:
 
-- **Was** geändert wurde (Datei und Zeile, nicht „die Logik wurde verbessert")
-- **Warum** (die Anforderungs-ID oder der konkrete Anlass)
-- **Der Beleg** (Kommando und echte Ausgabe, Testname oder Datei:Zeile)
-- **Was nicht geklappt hat** (offene Punkte, bewusst nicht umgesetzt)
-- **Was der Owner entscheiden muss** (eine Frage, mit Optionen und Empfehlung)
-
----
-
-## 8. Die PR-Checkliste
-
-- [ ] `npm run local-ci` läuft lokal grün durch
-- [ ] Die neuen Gates laufen grün (`check:i18n`, `check:doc-links`, `check:file-size`)
-- [ ] Jede Verhaltensänderung hat einen Test, jede Härtung einen negativen
-- [ ] `de.json` **und** `en.json` sind gepflegt, wenn Texte betroffen sind
-- [ ] Keine Secrets eingecheckt
-- [ ] Die Doku ist im selben Commit aktualisiert
-- [ ] Keine erfundenen Zahlen — jede Zahl hat ihr Kommando
-- [ ] Das Spiel bleibt party-tauglich: kein unnötiger Dialog, kein unnötiger
-      Frust, kein Blockieren des Flows
+- **What** changed (file and line, not "the logic has been improved")
+- **Why** (the requirement ID or the concrete reason)
+- **The evidence** (command and real output, test name or file:line)
+- **What did not work** (open points, deliberately not implemented)
+- **What the owner has to decide** (one question, with options and a recommendation)
 
 ---
 
-## 9. Fragen
+## 8. The PR checklist
 
-- **Verhaltensfrage:** zuerst `REQUIREMENTS.md`, dann ein Issue.
-- **Fehler:** Issue mit Reproduktionsschritten, erwartetem und tatsächlichem
-  Verhalten, und der Umgebung (Node-Version, Browser).
-- **Sicherheitslücke:** nicht als offenes Issue. Der Meldeweg steht in
+- [ ] `npm run local-ci` passes green locally
+- [ ] The new gates run green (`check:i18n`, `check:doc-links`, `check:file-size`)
+- [ ] Every behaviour change has a test, every hardening a negative one
+- [ ] `de.json` **and** `en.json` are maintained when texts are affected
+- [ ] No secrets committed
+- [ ] The documentation is updated in the same commit
+- [ ] No invented numbers — every number has its command
+- [ ] The game stays party-ready: no unnecessary dialog, no unnecessary
+      frustration, no blocking of the flow
+
+---
+
+## 9. Questions
+
+- **Behaviour question:** `REQUIREMENTS.md` first, then an issue.
+- **Bug:** issue with reproduction steps, expected and actual behaviour, and the
+  environment (Node version, browser).
+- **Security vulnerability:** not as a public issue. The disclosure channel is in
   [`SECURITY.md`](SECURITY.md).

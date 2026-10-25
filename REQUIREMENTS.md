@@ -1,1582 +1,1582 @@
-# Phomu — Produktspezifikation (Requirements)
+# Phomu — Product specification (Requirements)
 
-**Requirements-Baseline:** 0.1
-**Status:** Product baseline — abgeleitet aus dem Code-Stand `feature/vocument-style-docs-and-i18n`, Commit `d5b6422` (2026-10-25)
-**Regel:** Die Anforderungen in diesem Dokument sind die Wahrheit für das Verhalten von Phomu. Code, der sich anders verhält, ist ein Fehler im Code — keine stillschweigende Änderung der Anforderung.
+**Requirements baseline:** 0.1
+**Status:** Product baseline — derived from the code state `feature/vocument-style-docs-and-i18n`, commit `d5b6422` (2026-10-25)
+**Rule:** The requirements in this document are the truth for the behaviour of Phomu. Code that behaves differently is a bug in the code — not a silent change of the requirement.
 
-**Herkunft dieses Dokuments:** Das Dokument wurde **aus dem Code abgeleitet**, nicht aus den Alt-Spezifikationen. Die Vorgänger-Dokumente (`LLM.md` sowie `specifications/*.md`) wurden am 25.10.2026 nach `specifications/archive/*_archivstand_2026-10-25.md` verschoben und sind **historisch, nicht mehr verbindlich** (siehe `specifications/README.md`). Der Abgleich mit dem Archivstand ist in [Widersprüche](#widersprüche) mit Beleg aufgeführt. Jede Anforderung nennt den belegenden Pfad und das Kommando, mit dem sie geprüft wird. Wo eine Regel noch nicht getestet ist, steht das ausdrücklich dabei und die zugehörige Lücke ist in [Offene Lücken](#offene-lücken) geführt.
+**Origin of this document:** The document was **derived from the code**, not from the legacy specifications. The predecessor documents (`LLM.md` as well as `specifications/*.md`) were moved on 25.10.2026 to `specifications/archive/*_archivstand_2026-10-25.md` and are **historical, no longer binding** (see `specifications/README.md`). The comparison with the archived state is listed in [Contradictions](#contradictions) with evidence. Every requirement names the path that proves it and the command with which it is checked. Where a rule is not yet tested, this is stated explicitly and the associated gap is tracked in [Open gaps](#open-gaps).
 
-**Maschinenlesbare Wahrheit:** `project/project.yaml` führt Baseline, Status, Meilensteine, Modulgrenzen, Anforderungs-IDs und Qualitätsschwellen. Die Root-Dokumente verweisen dorthin; dieses Dokument ist die fachliche Quelle, die Datei dort die maschinenlesbare Projektlage. Zu `project/project.yaml` siehe [Projektstatus-Datei](#projektstatus-datei-projectprojectyaml).
+**Machine-readable truth:** `project/project.yaml` carries baseline, status, milestones, module boundaries, requirement IDs and quality thresholds. The root documents point there; this document is the subject-matter source, the file there is the machine-readable project status. For `project/project.yaml` see [Project status file](#project-status-file-projectprojectyaml).
 
-**Legende**
+**Legend**
 
-| Markierung | Bedeutung |
+| Marker | Meaning |
 |---|---|
-| **Preset** | Standardverhalten, aktiv und für alle Nutzer erreichbar |
-| **Optional** | Im Code vorhanden, aber nicht aktiviert oder nicht auswählbar |
-| **Later** | Bewusst verschoben — der Code enthält bewusst keinen belastbaren Pfad |
+| **Preset** | Default behaviour, active and reachable for every user |
+| **Optional** | Present in the code, but not enabled or not selectable |
+| **Later** | Deliberately deferred — the code deliberately contains no reliable path |
 
-**Nachprüfbarkeit der Gates (gemessen in dieser Arbeitsrunde, 2026-10-25)**
+**Verifiability of the gates (measured in this work round, 2026-10-25)**
 
-| Kommando | Ergebnis | Quelle |
+| Command | Result | Source |
 |---|---|---|
-| `npm run typecheck` | grün (Exit 0) | `tsc --noEmit` |
-| `npm run lint` | 0 Errors, 1 Warning (`playwright.config.ts:1`) | `eslint .` |
-| `npx vitest run` | 4 Testdateien / 21 Tests bestanden | `vitest.config.ts` (`include: src/**/*.test.ts`) |
-| `npm run validate-catalog` | 135 Pack-Dateien, 1.615 Songs, 0 Schema-Fehler, 126 Warnungen, 0 Duplicate-Gruppen, 4 erlaubte Dubletten, 0 fehlende Jahre (1950–2026) | `src/utils/validate-song-catalog.ts` |
-| `node scripts/check-i18n-completeness.mjs --count` | 935 Literaltexte in 47 Dateien; `src/i18n/locales/parts/` ist leer | `scripts/check-i18n-completeness.mjs` |
-| `npm run build` | nicht in dieser Runde gemessen | — |
+| `npm run typecheck` | green (exit 0) | `tsc --noEmit` |
+| `npm run lint` | 0 errors, 1 warning (`playwright.config.ts:1`) | `eslint .` |
+| `npx vitest run` | 4 test files / 21 tests passed | `vitest.config.ts` (`include: src/**/*.test.ts`) |
+| `npm run validate-catalog` | 135 pack files, 1,615 songs, 0 schema errors, 126 warnings, 0 duplicate groups, 4 permitted duplicates, 0 missing years (1950–2026) | `src/utils/validate-song-catalog.ts` |
+| `node scripts/check-i18n-completeness.mjs --count` | 935 literal texts in 47 files; `src/i18n/locales/parts/` is empty | `scripts/check-i18n-completeness.mjs` |
+| `npm run build` | not measured in this round | — |
 
 ---
 
-# 1. Produktprinzipien (CORE)
+# 1. Product principles (CORE)
 
-### CORE-001 — Anforderungen sind die Wahrheit für das Verhalten
-
-**Preset:** Preset
-**Anforderung:** Das Verhalten von Phomu wird durch die Anforderungs-IDs in diesem Dokument definiert. Jede ID wird im Code, in Tests und in der Dokumentation referenziert; eine ID wird nie wiederverwendet.
-**Begründung:** Ohne stabile IDs ist nicht prüfbar, ob eine Änderung eine Anforderung verletzt. Die ID-Schemata (`CORE`, `GAME`, `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `NFR`) sind im Reform-Vertrag festgelegt.
-**Akzeptanz:** Jeder Anforderungsblock in diesem Dokument trägt eine ID aus dem Schema `<DOMÄNE>-<NNN>` mit drei Ziffern; die IDs sind je Domäne fortlaufend und lückenlos.
-**Verifikation:** `grep -c '^### ' REQUIREMENTS.md` zählt alle Anforderungsblöcke (Ist-Stand: 174); die ID-Eindeutigkeit wird mit `grep -o '^### [A-Z]*-[0-9]*' REQUIREMENTS.md | sort | uniq -d` (leer = keine Dublette) geprüft.
-
-### CORE-002 — Freies Open Source ohne Zwangskonto
+### CORE-001 — Requirements are the truth for behaviour
 
 **Preset:** Preset
-**Anforderung:** Phomu ist GPL-3.0-lizenziert. Es gibt keine Anmeldung, kein Abo, keine Werbung und keine erzwungene Kopplung an einen Dienst. Alle Kernfunktionen — Lobby, Spiel, Katalog, Admin-API — funktionieren ohne Benutzerkonto.
-**Begründung:** Das Spiel wird in Bars, auf Geburtstagen und in Vereinen gespielt. Eine Anmeldepflicht wäre eine Abbruchhürde genau dort, wo das Produkt wirken soll.
-**Akzeptanz:** `LICENSE` enthält GPL-3.0; `package.json` führt `"license": "GPL-3.0"`; es existiert kein Auth-Provider und keine Login-Route in `src/app/`.
-**Verifikation:** `cat LICENSE | head -3`; `grep -rn '"license"' package.json`; `ls src/app/` enthält keine `login`-/`signup`-Route.
+**Requirement:** The behaviour of Phomu is defined by the requirement IDs in this document. Every ID is referenced in the code, in tests and in the documentation; an ID is never reused.
+**Rationale:** Without stable IDs it cannot be checked whether a change violates a requirement. The ID schemes (`CORE`, `GAME`, `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `NFR`) are fixed in the reform contract.
+**Acceptance:** Every requirement block in this document carries an ID from the `<DOMAIN>-<NNN>` scheme with three digits; the IDs are consecutive and gapless per domain.
+**Verification:** `grep -c '^### ' REQUIREMENTS.md` counts all requirement blocks (current state: 174); the uniqueness of the IDs is checked with `grep -o '^### [A-Z]*-[0-9]*' REQUIREMENTS.md | sort | uniq -d` (empty = no duplicate).
 
-### CORE-003 — Lokal-zuerst und datensparsam
-
-**Preset:** Preset
-**Anforderung:** Spieler-, Punkte-, Konfigurations- und Fortschrittsdaten bleiben im Browser des Geräts (`localStorage`). Es werden keine persönlichen Profile auf Servern angelegt; es gibt kein Tracking und kein Telemetrie-Upload.
-**Begründung:** Party-Spiele werden in Situationen gespielt, in denen Gäste nicht ihr Konto in fremde Hände geben wollen. Der Datenschutzhinweis muss die technische Realität abbilden, nicht einen Wunsch.
-**Akzeptanz:** Der Zustand liegt im Zustand-Store mit `persist`-Middleware unter dem Schlüssel `phomu-game-state` (`src/stores/game-store.ts:618-638`); die Admin-Oberfläche schreibt ausschließlich in `localStorage` (`src/app/admin/songs/page.tsx:30`, `STORAGE_KEY = 'phomu-admin-songs'`). Der einzige ausgehende Nutzungsdatenfluss ist der optionale „Report Missing"-Dialog (siehe MEDIA-013).
-**Verifikation:** `grep -n "persist(" src/stores/game-store.ts`; `grep -rn "localStorage" src/app/admin/ src/stores/`; `grep -rni "supabase\|firebase\|analytics\|gtag" src/ package.json` (muss leer sein).
-
-### CORE-004 — Hybrid aus physischer Karte und digitalem Deck
+### CORE-002 — Free open source without a forced account
 
 **Preset:** Preset
-**Anforderung:** Beide Zugänge zum Spiel sind gleichwertig unterstützt: das digitale Deck (zufälliger Zug aus dem Katalog) und die physische Karte (QR-Scan). Der QR-Scan führt zu einem Quick-Play mit dem gescannten Song.
-**Begründung:** Die Produktidee ist die Brücke zwischen gedrucktem Spielmaterial und digitaler Musikwiedergabe. Ein Weg ohne den anderen halbiert den Wert des Produkts.
-**Akzeptanz:** `DrawingPhase` zieht digital (`src/components/game/DrawingPhase.tsx:123-146`); `QRScannerModal` + `parseQrIntent` verarbeiten Karten-QRs (`src/components/game/QRScannerModal.tsx:31-56`, `src/utils/qr-intent.ts:16-43`); `startQuickGame` startet mit dem gescannten Song (`src/stores/game-store.ts:496-513`).
-**Verifikation:** `npm run test -- qr-intent`; `grep -n "startQuickGame" src/stores/game-store.ts src/app/browse/page.tsx`.
+**Requirement:** Phomu is licensed under GPL-3.0. There is no registration, no subscription, no advertising and no forced coupling to a service. All core features — lobby, game, catalogue, admin API — work without a user account.
+**Rationale:** The game is played in bars, at birthday parties and in clubs. A mandatory sign-up would be an obstacle precisely where the product is supposed to work.
+**Acceptance:** `LICENSE` contains GPL-3.0; `package.json` lists `"license": "GPL-3.0"`; there is no auth provider and no login route in `src/app/`.
+**Verification:** `cat LICENSE | head -3`; `grep -rn '"license"' package.json`; `ls src/app/` contains no `login`/`signup` route.
 
-### CORE-005 — Anti-Spoiler ist ein Produktversprechen, kein Komfortmerkmal
-
-**Preset:** Preset
-**Anforderung:** Während der Fragerunde sind Titel, Künstler, Cover und Streaming-Metadaten für die ratenden Spieler nicht sichtbar. Die Auflösung gibt die Identität des Songs erst frei, wenn die Antwort gesichert ist.
-**Begründung:** Wer den Song vor der Auflösung identifiziert, zerstört die Runde für alle anderen. Der Schutz muss in jedem Modus gelten, nicht nur in den offensichtlichen.
-**Akzeptanz:** Der `MusicPlayer` rendert den Provider-Embed unter einer Blur-/Overlay-Schicht (`src/components/game/MusicPlayer.tsx:424-479`); `blurred` wird in allen Fragephasen gesetzt (`TimelineMode.tsx:281`, `HintMasterMode.tsx:133`, `LyricsMode.tsx:121`, `SurvivorMode.tsx:69`, `CoverConfusionMode.tsx:114`); `VibeCheckMode.tsx:99` setzt `blurred={false}` bewusst, weil dort Stimmung statt Identität gefragt wird.
-**Verifikation:** `grep -rn "blurred={" src/components/game/modes/`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### CORE-006 — Ein Kern, sechs klar getrennte Spielmodi
+### CORE-003 — Local-first and data-minimising
 
 **Preset:** Preset
-**Anforderung:** Phomu kennt genau sechs Spielmodi: `timeline`, `hint-master`, `lyrics`, `vibe-check`, `survivor`, `cover-confusion`. Jeder Modus hat eine eigene Frage-Logik, eine eigene Punkteformel und eine eigene Auflösungsdarstellung.
-**Begründung:** Die sechs Modi sind der eigentliche Produktkern. Sie dürfen nicht zu einem generischen Quiz zusammenfallen, sonst ist der Moduswechsel nur Kosmetik.
-**Akzeptanz:** `PHOMU_CONFIG.ALL_GAME_MODES` listet die sechs Modi (`src/config/game-config.ts:300-307`); `QuestionPhase` verteilt je Modus an eine eigene Komponente (`src/components/game/QuestionPhase.tsx:58-83`); `RevealPhase` hat je Modus eine eigene Reveal-Karte (`src/components/game/RevealPhase.tsx:541-546`).
-**Verifikation:** `grep -n "ALL_GAME_MODES" src/config/game-config.ts`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** Player, score, configuration and progress data stay in the browser of the device (`localStorage`). No personal profiles are created on servers; there is no tracking and no telemetry upload.
+**Rationale:** Party games are played in situations where guests do not want to hand their account over to strangers. The privacy notice must reflect the technical reality, not a wish.
+**Acceptance:** The state lives in the state store with `persist` middleware under the key `phomu-game-state` (`src/stores/game-store.ts:618-638`); the admin interface writes exclusively to `localStorage` (`src/app/admin/songs/page.tsx:30`, `STORAGE_KEY = 'phomu-admin-songs'`). The only outgoing usage data flow is the optional "Report Missing" dialog (see MEDIA-013).
+**Verification:** `grep -n "persist(" src/stores/game-store.ts`; `grep -rn "localStorage" src/app/admin/ src/stores/`; `grep -rni "supabase\|firebase\|analytics\|gtag" src/ package.json` (must be empty).
 
-### CORE-007 — Keine erzwungenen Umwege, kein Onboarding-Zwang
-
-**Preset:** Preset
-**Anforderung:** Vom Startbildschirm bis zum Spiel sind höchstens zwei Klicks nötig. Es gibt keine Tour, keine roten Punkte, keine „tipp-of-the-day"-Meldungen und keine Pflichtregistrierung.
-**Begründung:** Ein Partyspiel lebt vom sofortigen Mitspielen. Jeder vorgeschaltete Schritt ist eine Lost-Party.
-**Akzeptanz:** Beide Start-Buttons der Landingpage navigieren direkt zu `/lobby` (`src/app/page.tsx:56-84`); die Lobby bietet „Schnell-Setup" als Abkürzung (`src/app/lobby/page.tsx:730-734`).
-**Verifikation:** `grep -n "router.push('/lobby')" src/app/page.tsx`; `grep -n "Schnell-Setup" src/app/lobby/page.tsx`.
-
-### CORE-008 — Deutsch-primär, Englisch vollständig
+### CORE-004 — Hybrid of physical card and digital deck
 
 **Preset:** Preset
-**Anforderung:** Die Oberfläche ist deutsch-primär; Englisch ist als zweite Sprache vollständig gepflegt. Beide Sprachen müssen denselben Schlüsselumfang haben, und kein sichtbarer Text darf fest im JSX stehen.
-**Begründung:** Das Produkt ist im deutschsprachigen Raum entstanden, wird aber international beworben. Eine halb übersetzte Oberfläche ist schlechter als eine ehrlich deutsche.
-**Akzeptanz:** **Teilweise erfüllt.** `src/i18n/locales/de.json` und `en.json` sind parallel (aktuell je 6 Namensräume / 25 Blatt-Schlüssel, gemessen); `i18n.config` verwendet `fallbackLng: 'de'` (`src/i18n/config.ts:22`). Nicht erfüllt: der sichtbare Text kommt noch überwiegend hart kodiert aus dem JSX (935 Literaltexte in 47 Dateien).
-**Verifikation:** `node scripts/check-i18n-completeness.mjs --count` — meldet aktuell 935 Literaltexte in 47 Dateien. Das Gate ist erst grün, wenn 0 Literaltexte verbleiben; als `npm run check:i18n` ist es noch nicht verdrahtet — siehe [GAP-006](#offene-lücken) und [I18N-007](#i18n-007--jeder-sichtbare-text-stammt-aus-der-übersetzung).
+**Requirement:** Both ways into the game are supported to the same degree: the digital deck (a random draw from the catalogue) and the physical card (QR scan). The QR scan leads to a quick play with the scanned song.
+**Rationale:** The product idea is the bridge between printed game material and digital music playback. One way without the other halves the value of the product.
+**Acceptance:** `DrawingPhase` draws digitally (`src/components/game/DrawingPhase.tsx:123-146`); `QRScannerModal` + `parseQrIntent` process card QRs (`src/components/game/QRScannerModal.tsx:31-56`, `src/utils/qr-intent.ts:16-43`); `startQuickGame` starts with the scanned song (`src/stores/game-store.ts:496-513`).
+**Verification:** `npm run test -- qr-intent`; `grep -n "startQuickGame" src/stores/game-store.ts src/app/browse/page.tsx`.
 
-### CORE-009 — Der Code ist die Wahrheit, die Doku folgt
-
-**Preset:** Preset
-**Anforderung:** Die Zahlen und Regeln in diesem Dokument werden aus `src/config/game-config.ts` und dem Code abgeleitet. Wer eine Zahl in der Dokumentation ändert, muss die Quelle mitändern; die Quelle hat Vorrang.
-**Begründung:** Die bisherige Doku (LLM.md, `specifications/*`) ist an genau den Stellen veraltet, an denen sie Zahlen aus dem Gedächtnis statt aus dem Code genommen hat (Next.js 15 statt 16, 5 statt 6 Modi, 1.915 statt 1.615 Songs).
-**Akzeptanz:** Jede punkt-, zeit- oder kapazitätsbezogene Anforderung nennt `Datei:Zeile`. Keine Anforderung enthält eine Zahl ohne Quelle.
-**Verifikation:** `grep -n "game-config.ts" REQUIREMENTS.md` — jede punkt-, zeit- oder kapazitätsbezogene Regel verweist auf eine belegte Stelle.
-
-### CORE-010 — Keine Attrappen als abgenommene Funktionalität
+### CORE-005 — Anti-spoiler is a product promise, not a comfort feature
 
 **Preset:** Preset
-**Anforderung:** Eine Funktion, die als implementiert gemeldet wird, muss eine echte, ausführbare Implementierung sein. Stubs, Dummy-Rückgaben, Platzhalter-Assets oder synthetische Mock-Brücken gelten nicht als „gemacht".
-**Begründung:** Der Katalog enthält Hunderte Einträge mit leeren Feldern; der Admin-Bereich ist voll von localStorage-Mock-ups. Ohne diese Regel wird jede Abnahme eine Behauptung.
-**Akzeptanz:** Bekannte Verstöße sind in den [Offenen Lücken](#offene-lücken) benannt (fehlende Audio-Assets, nicht erreichbare Cover-Versionen, ungenutzte Provider) und nicht als erfüllt geführt.
-**Verifikation:** Abgleich der Lückenliste mit dem tatsächlichen Repo-Stand bei jeder Abnahme; die Gates aus [NFR-005](#nfr-005--ein-gate-über-die-gesamte-pipeline) bis [NFR-008](#nfr-008--keine-abnahme-auf-basis-von-stubs) müssen grün sein.
+**Requirement:** During the question round, title, artist, cover and streaming metadata are not visible to the guessing players. The reveal releases the identity of the song only once the answer has been secured.
+**Rationale:** Anyone who identifies the song before the reveal ruins the round for everyone else. The protection must apply in every mode, not only in the obvious ones.
+**Acceptance:** The `MusicPlayer` renders the provider embed beneath a blur/overlay layer (`src/components/game/MusicPlayer.tsx:424-479`); `blurred` is set in all question phases (`TimelineMode.tsx:281`, `HintMasterMode.tsx:133`, `LyricsMode.tsx:121`, `SurvivorMode.tsx:69`, `CoverConfusionMode.tsx:114`); `VibeCheckMode.tsx:99` deliberately sets `blurred={false}`, because there the mood is asked instead of the identity.
+**Verification:** `grep -rn "blurred={" src/components/game/modes/`; no test exists — see [GAP-001](#open-gaps).
 
-### CORE-011 — Keine Telemetrie, kein Auto-Upload von Diagnosedaten
-
-**Preset:** Preset
-**Anforderung:** Phomu überträgt keine Nutzungs- oder Fehlerdaten automatisch an den Betreiber. Der einzige Meldeweg ist eine vom Nutzer aktiv ausgelöste Aktion.
-**Begründung:** Der Nutzer installiert keine Analysedienste; die Abwesenheit von Telemetrie ist Teil des Datenschutzversprechens in `/privacy`.
-**Akzeptanz:** Es existiert kein Analytics-SDK in `package.json`; der Missing-Link-Report öffnet nur auf Nutzer-Klick ein neues Browser-Tab (`src/components/game/MusicPlayer.tsx:216-230`).
-**Verifikation:** `grep -rni "analytics\|gtag\|segment\|sentry\|posthog" src/ package.json` (muss leer sein).
-
-### CORE-012 — Bezeichner bleiben englisch, Projektdoku bleibt deutsch
+### CORE-006 — One core, six clearly separated game modes
 
 **Preset:** Preset
-**Anforderung:** Code-Bezeichner, Typen, Komponentennamen, Commit-Konventionen und Kommentare sind englisch. Root-Dokumentation und `docs/` sind deutsch.
-**Begründung:** Der Code wird international gelesen, die Doku richtet sich an den deutschsprachigen Owner. Beide Sprachen sauber zu halten ist billiger als die spätere Trennung.
-**Akzeptanz:** `src/` enthält keine deutschen Bezeichner (Ausnahmen: deutsche UI-Literale in `src/i18n/locales/de.json`); alle Root-Dokumente sind deutsch.
-**Verifikation:** `grep -rn "const [a-zA-Z]* = " src/ | grep -P "[äöüß]"` (muss leer sein).
+**Requirement:** Phomu knows exactly six game modes: `timeline`, `hint-master`, `lyrics`, `vibe-check`, `survivor`, `cover-confusion`. Each mode has its own question logic, its own scoring formula and its own reveal presentation.
+**Rationale:** The six modes are the actual product core. They must not collapse into a generic quiz, otherwise the mode switch is mere cosmetics.
+**Acceptance:** `PHOMU_CONFIG.ALL_GAME_MODES` lists the six modes (`src/config/game-config.ts:300-307`); `QuestionPhase` dispatches per mode to its own component (`src/components/game/QuestionPhase.tsx:58-83`); `RevealPhase` has its own reveal card per mode (`src/components/game/RevealPhase.tsx:541-546`).
+**Verification:** `grep -n "ALL_GAME_MODES" src/config/game-config.ts`; no test exists — see [GAP-001](#open-gaps).
+
+### CORE-007 — No forced detours, no onboarding mandate
+
+**Preset:** Preset
+**Requirement:** From the start screen to the game at most two clicks are needed. There is no tour, no red dots, no "tip-of-the-day" messages and no mandatory registration.
+**Rationale:** A party game lives on immediate playability. Every step placed in front of it is a lost party.
+**Acceptance:** Both start buttons of the landing page navigate directly to `/lobby` (`src/app/page.tsx:56-84`); the lobby offers `Schnell-Setup` (quick setup) as a shortcut (`src/app/lobby/page.tsx:730-734`).
+**Verification:** `grep -n "router.push('/lobby')" src/app/page.tsx`; `grep -n "Schnell-Setup" src/app/lobby/page.tsx`.
+
+### CORE-008 — German-first, English complete
+
+**Preset:** Preset
+**Requirement:** The interface is German-first; English is completely maintained as a second language. Both languages must have the same key scope, and no visible text may be hard-coded in the JSX.
+**Rationale:** The product originated in the German-speaking market but is advertised internationally. A half-translated interface is worse than an honestly German one.
+**Acceptance:** **Partially met.** `src/i18n/locales/de.json` and `en.json` are parallel (currently 6 namespaces / 25 flat keys each, measured); `i18n.config` uses `fallbackLng: 'de'` (`src/i18n/config.ts:22`). Not met: the visible text still comes predominantly hard-coded from the JSX (935 literal texts in 47 files).
+**Verification:** `node scripts/check-i18n-completeness.mjs --count` — currently reports 935 literal texts in 47 files. The gate is only green when 0 literal texts remain; it is not yet wired as `npm run check:i18n` — see [GAP-006](#open-gaps) and [I18N-007](#i18n-007--every-visible-text-comes-from-the-translation).
+
+### CORE-009 — The code is the truth, the documentation follows
+
+**Preset:** Preset
+**Requirement:** The numbers and rules in this document are derived from `src/config/game-config.ts` and from the code. Anyone who changes a number in the documentation must change the source as well; the source takes precedence.
+**Rationale:** The previous documentation (LLM.md, `specifications/*`) is outdated exactly where it took numbers from memory instead of from the code (Next.js 15 instead of 16, 5 instead of 6 modes, 1,915 instead of 1,615 songs).
+**Acceptance:** Every requirement related to points, time or capacity names `file:line`. No requirement contains a number without a source.
+**Verification:** `grep -n "game-config.ts" REQUIREMENTS.md` — every rule related to points, time or capacity refers to an evidenced location.
+
+### CORE-010 — No decoys as accepted functionality
+
+**Preset:** Preset
+**Requirement:** A feature that is reported as implemented must be a real, executable implementation. Stubs, dummy returns, placeholder assets or synthetic mock bridges do not count as "done".
+**Rationale:** The catalogue contains hundreds of entries with empty fields; the admin area is full of localStorage mock-ups. Without this rule every acceptance becomes a claim.
+**Acceptance:** Known violations are named in the [Open gaps](#open-gaps) (missing audio assets, unreachable cover versions, unused providers) and are not recorded as met.
+**Verification:** Compare the gap list with the actual repository state at every acceptance; the gates from [NFR-005](#nfr-005--one-gate-over-the-entire-pipeline) to [NFR-008](#nfr-008--no-acceptance-based-on-stubs) must be green.
+
+### CORE-011 — No telemetry, no auto-upload of diagnostic data
+
+**Preset:** Preset
+**Requirement:** Phomu does not transmit usage or error data to the operator automatically. The only disclosure channel is an action that the user actively triggers.
+**Rationale:** The user installs no analytics service; the absence of telemetry is part of the privacy promise in `/privacy`.
+**Acceptance:** There is no analytics SDK in `package.json`; the missing-link report opens a new browser tab only on user click (`src/components/game/MusicPlayer.tsx:216-230`).
+**Verification:** `grep -rni "analytics\|gtag\|segment\|sentry\|posthog" src/ package.json` (must be empty).
+
+### CORE-012 — Identifiers stay English, project documentation stays German
+
+**Preset:** Preset
+**Requirement:** Code identifiers, types, component names, commit conventions and comments are English. Root documentation and `docs/` are German.
+**Rationale:** The code is read internationally, the documentation addresses the German-speaking owner. Keeping both languages clean is cheaper than the later separation.
+**Acceptance:** `src/` contains no German identifiers (exceptions: German UI literals in `src/i18n/locales/de.json`); all root documents are German (as of baseline 0.1 — the English documentation round of 2026-10-25 moved the root documentation and `docs/` to English; the identifier rule is unaffected).
+**Verification:** `grep -rn "const [a-zA-Z]* = " src/ | grep -P "[äöüß]"` (must be empty).
 
 ---
 
-# 2. Spielmodi, Rundenlogik und Punkte (GAME)
+# 2. Game modes, round logic and scoring (GAME)
 
-## 2.1 Rundenablauf und Phasen
+## 2.1 Round flow and phases
 
-### GAME-001 — Fünf Rundenphasen mit definierten Übergängen
-
-**Preset:** Preset
-**Anforderung:** Eine Runde durchläuft die Phasen `drawing` → `question` → `reveal` → (`scoring`). Die Phase `locked-in` existiert als Typ, wird aber von keinem Codepfad betreten.
-**Begründung:** Der Phasenautomat ist das Rückgrat des Spiels; ein unklarer Phasenautomat erzeugt doppelte Antworten und hängende Runden.
-**Akzeptanz:** `RoundPhase` ist in `src/types/game-state.ts:28-33` definiert; `drawSong` setzt `question` (`src/stores/game-store.ts:394-402`), `nextRound` setzt `drawing` (`src/stores/game-store.ts:365-375`), `endGame` setzt `scoring` (`src/stores/game-store.ts:385-390`). `advancePhase('reveal')` wird nur in `src/app/game/page.tsx:165` und `:234` aufgerufen; für `locked-in` existiert kein Aufruf (`grep -rn "advancePhase(" src`).
-**Verifikation:** `grep -rn "advancePhase(" src`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### GAME-002 — Der Reveal gibt die Lösung erst nach dem Sperren frei
+### GAME-001 — Five round phases with defined transitions
 
 **Preset:** Preset
-**Anforderung:** Die Auflösung (`reveal`) startet ausschließlich, wenn die Antwort der aktiven Runde abgegeben wurde — entweder über den Modus-eigenen Abschluss oder über den Button „Alle fertig → Reveal".
-**Begründung:** Der Anti-Spoiler-Schutz ist ein Produktversprechen; ein Reveal ohne gesicherte Antwort wäre ein Regelbruch.
-**Akzeptanz:** `QuestionPhase` rendert den Reveal-Button nur für `survivor`, `vibe-check`, `hint-master`, `timeline` (`src/components/game/QuestionPhase.tsx:34-40`, `:86-102`); `lyrics` und `cover-confusion` lösen den Reveal selbst aus (`src/components/game/modes/LyricsMode.tsx:95`, `src/components/game/modes/CoverConfusionMode.tsx:288`).
-**Verifikation:** `grep -n "MODES_WITH_REVEAL_BUTTON" -A 7 src/components/game/QuestionPhase.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** A round runs through the phases `drawing` → `question` → `reveal` → (`scoring`). The phase `locked-in` exists as a type, but is not entered by any code path.
+**Rationale:** The phase automaton is the backbone of the game; an unclear phase automaton produces duplicate answers and hanging rounds.
+**Acceptance:** `RoundPhase` is defined in `src/types/game-state.ts:28-33`; `drawSong` sets `question` (`src/stores/game-store.ts:394-402`), `nextRound` sets `drawing` (`src/stores/game-store.ts:365-375`), `endGame` sets `scoring` (`src/stores/game-store.ts:385-390`). `advancePhase('reveal')` is called only in `src/app/game/page.tsx:165` and `:234`; there is no call for `locked-in` (`grep -rn "advancePhase(" src`).
+**Verification:** `grep -rn "advancePhase(" src`; no test exists — see [GAP-002](#open-gaps).
 
-### GAME-003 — Der Spielablauf startet nur mit Spielern
-
-**Preset:** Preset
-**Anforderung:** Die Route `/game` ist geschützt: Ohne laufende Runde (`currentRound === 0`) oder ohne Spieler wird sofort zur Lobby umgeleitet. Nach Spielende geht es nach `/game-over`.
-**Begründung:** Ein leeres Spielbildschirm ist ein toter Bildschirm; die Weiterleitung schützt vor leeren Runden und vor Zuständen ohne Teilnehmer.
-**Akzeptanz:** `src/app/game/page.tsx:89-93` (Guard → `/lobby`), `:96-100` (`isGameOver` → `/game-over`), `:290-292` (nichts rendern vor dem Redirect).
-**Verifikation:** `npm run test:e2e:smoke` deckt die Erreichbarkeit ab, nicht den Redirect — siehe [GAP-021](#offene-lücken).
-
-### GAME-004 — Die aktive Reihenfolge wechselt pro Zug
+### GAME-002 — The reveal releases the solution only after locking the answers
 
 **Preset:** Preset
-**Anforderung:** Die Zugreihenfolge ist `turnOrder`; sie enthält im Individual-Modus die Spieler-IDs, im Team-Modus die Team-IDs. `currentTurnIndex` zeigt auf den aktiven Zug und springt zyklisch weiter.
-**Begründung:** Der Pilot wechselt; das ist der Kern des Pass-the-Phone-Prinzips.
-**Akzeptanz:** `startGame` baut die Reihenfolge je `teamMode` (`src/stores/game-store.ts:258-261`); `nextRound` inkrementiert zyklisch (`src/stores/game-store.ts:345-347`); die Game-Seite leitet den Piloten daraus ab (`src/app/game/page.tsx:103-113`).
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** The reveal (`reveal`) starts exclusively when the answer of the active round has been submitted — either via the mode's own completion or via the `Alle fertig → Reveal` (all done → reveal) button.
+**Rationale:** The anti-spoiler protection is a product promise; a reveal without a secured answer would be a breach of the rules.
+**Acceptance:** `QuestionPhase` renders the reveal button only for `survivor`, `vibe-check`, `hint-master`, `timeline` (`src/components/game/QuestionPhase.tsx:34-40`, `:86-102`); `lyrics` and `cover-confusion` trigger the reveal themselves (`src/components/game/modes/LyricsMode.tsx:95`, `src/components/game/modes/CoverConfusionMode.tsx:288`).
+**Verification:** `grep -n "MODES_WITH_REVEAL_BUTTON" -A 7 src/components/game/QuestionPhase.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### GAME-005 — Die Runde wird protokolliert, bevor die nächste beginnt
-
-**Preset:** Preset
-**Anforderung:** Beim Übergang zur nächsten Runde wird die abgeschlossene Runde (Nummer, Modus, Song, Antworten, Abschlusszeitpunkt) in `roundHistory` abgelegt. Eine Runde ohne gezogenen Song wird nicht protokolliert.
-**Begründung:** Die Rundenhistorie ist die Grundlage für spätere Statistiken, Replays und QA-Regressionen.
-**Akzeptanz:** `src/stores/game-store.ts:331-343` — nur bei `currentSong !== null` wird ein `GameRound`-Eintrag erzeugt, mit `completedAt: new Date().toISOString()`.
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### GAME-006 — Punkte werden nie negativ
+### GAME-003 — The game flow only starts with players
 
 **Preset:** Preset
-**Anforderung:** Jede Punktvergabe wird auf einen Minimalwert von 0 begrenzt; ein Abzug (Cheat, Joker, Override) kann einen Spieler nicht unter 0 bringen.
-**Begründung:** Cheats kosten Punkte. Ein Spielstand unter 0 ist unerklärlich und würde bei Teamwertungen zu Unsinn führen.
-**Akzeptanz:** `awardPoints` verwendet `Math.max(0, t.score + points)` bzw. `Math.max(0, p.score + points)` (`src/stores/game-store.ts:455-474`).
-**Verifikation:** `grep -n "Math.max(0" src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** The route `/game` is protected: without a running round (`currentRound === 0`) or without players it redirects to the lobby immediately. After the game has ended it goes to `/game-over`.
+**Rationale:** An empty game screen is a dead screen; the redirect protects against empty rounds and against states without participants.
+**Acceptance:** `src/app/game/page.tsx:89-93` (guard → `/lobby`), `:96-100` (`isGameOver` → `/game-over`), `:290-292` (renders nothing before the redirect).
+**Verification:** `npm run test:e2e:smoke` covers the reachability, not the redirect — see [GAP-021](#open-gaps).
 
-### GAME-007 — Punkte eines Spielers fließen seinem Team zu
-
-**Preset:** Preset
-**Anforderung:** Wird einem Spieler in einem Team eine Punktzahl gutgeschrieben, erhöht sich der Teampunktestand um denselben Betrag.
-**Begründung:** Im Team-Modus wird die Wertung des Teams geführt; die Teamwertung muss der Summe der Mitglieder entsprechen.
-**Akzeptanz:** `src/stores/game-store.ts:470-473` — bei vorhandener `teamId` wird das Team mit demselben Delta aktualisiert.
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### GAME-008 — Drei Beendigungsbedingungen, genau eine ist aktiv
+### GAME-004 — The active order changes per turn
 
 **Preset:** Preset
-**Anforderung:** Das Spiel endet über genau eine der Bedingungen `points`, `rounds` oder `time`. Die Prüfung erfolgt erst, wenn die letzte Runde der aktuellen Rotation abgeschlossen ist.
-**Begründung:** Eine Partie braucht ein definiertes Ende; die Prüfung mitten in einer Rotation würde einem Spieler den Zug entreißen.
-**Akzeptanz:** `src/stores/game-store.ts:300-323` — `isEndOfRotation` (`:300`), Punkteprüfung gegen `targetPoints` (`:303-311`), Rundenprüfung `currentRound >= targetRounds * Spieler- bzw. Teamanzahl` (`:312-316`), Zeitprüfung gegen `targetTimeMinutes` ab `gameStartTime` (`:317-322`).
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** The turn order is `turnOrder`; in individual mode it contains the player IDs, in team mode the team IDs. `currentTurnIndex` points at the active turn and advances cyclically.
+**Rationale:** The pilot changes; that is the core of the pass-the-phone principle.
+**Acceptance:** `startGame` builds the order per `teamMode` (`src/stores/game-store.ts:258-261`); `nextRound` increments cyclically (`src/stores/game-store.ts:345-347`); the game page derives the pilot from it (`src/app/game/page.tsx:103-113`).
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### GAME-009 — Die Punktebedingung endet mit dem führenden Spieler bzw. Team
-
-**Preset:** Preset
-**Anforderung:** Wird die Punktebedingung erfüllt, ist der Spieler bzw. das Team mit dem höchsten Punktestand Gewinner.
-**Begründung:** Der Gewinner muss eindeutig sein; ein Gleichstand wird nicht aufgelöst, der aktuell Führende wird gesetzt.
-**Akzeptanz:** `src/stores/game-store.ts:304-311` — Sortierung absteigend nach Score, `winnerId` = ID des Führenden; die Anzeige nutzt dieselbe Logik (`src/components/game/RevealPhase.tsx:486-495`).
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### GAME-010 — Die Rundenbedingung zählt pro Team bzw. pro Spieler
+### GAME-005 — The round is logged before the next one begins
 
 **Preset:** Preset
-**Anforderung:** `targetRounds` ist die Zahl der Runden **pro** Spieler (Individual) bzw. **pro** Team. Die Gesamtzahl der Züge ist `targetRounds × Anzahl der Spieler bzw. Teams`.
-**Begründung:** „10 Runden" bei 6 Spielern bedeutet 60 Züge; ohne diese Lesart bricht die Fortschrittsanzeige.
-**Akzeptanz:** `src/stores/game-store.ts:314` — `currentRound >= config.targetRounds * (individual ? players.length : teams.length)`; identisch in der Fortschrittsanzeige `src/app/game/page.tsx:269-271`.
-**Verifikation:** `grep -n "targetRounds \*" src/stores/game-store.ts src/app/game/page.tsx`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** On the transition to the next round, the completed round (number, mode, song, answers, completion time) is placed in `roundHistory`. A round without a drawn song is not logged.
+**Rationale:** The round history is the basis for later statistics, replays and QA regressions.
+**Acceptance:** `src/stores/game-store.ts:331-343` — only when `currentSong !== null` a `GameRound` entry is created, with `completedAt: new Date().toISOString()`.
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### GAME-011 — Die Zeitbedingung misst ab Spielstart
-
-**Preset:** Preset
-**Anforderung:** Die Zeitbedingung zählt ab `gameStartTime`, das beim Spielstart gesetzt wird. Ablauf der Zeit beendet das Spiel auch mitten in einer Runde.
-**Begründung:** Eine Party hat ein Ende, auch wenn niemand merkt, wie lange es schon läuft.
-**Akzeptanz:** `gameStartTime: Date.now()` in `startGame` (`src/stores/game-store.ts:273`); Prüfung in `nextRound` (`src/stores/game-store.ts:317-322`); der Header-Progress rechnet ebenfalls ab diesem Zeitpunkt (`src/app/game/page.tsx:279-285`).
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### GAME-012 — Der letzte Zug wird angekündigt
+### GAME-006 — Points never go negative
 
 **Preset:** Preset
-**Anforderung:** Erkennt die Spielseite die letzte Rotation, wird vor dem Wechsel ein „Letzte Runde"-Banner gezeigt (Zufallsauswahl aus 12 Texten), das ca. 3,4 Sekunden steht, bevor die nächste Runde startet.
-**Begründung:** Der letzte Zug ist der dramaturgische Höhepunkt; er darf nicht wie jeder andere aussehen.
-**Akzeptanz:** `isLastRotation` (`src/app/game/page.tsx:169-179`), `handleNextRound` mit 3.400 ms Banner-Dauer (`src/app/game/page.tsx:182-193`), Texte in `src/utils/last-round-messages.ts:14-77` (12 Einträge).
-**Verifikation:** `grep -n "3400" src/app/game/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** Every scoring is clamped to a minimum value of 0; a deduction (cheat, joker, override) cannot bring a player below 0.
+**Rationale:** Cheats cost points. A score below 0 is inexplicable and would lead to nonsense in team evaluations.
+**Acceptance:** `awardPoints` uses `Math.max(0, t.score + points)` respectively `Math.max(0, p.score + points)` (`src/stores/game-store.ts:455-474`).
+**Verification:** `grep -n "Math.max(0" src/stores/game-store.ts`; no test exists — see [GAP-002](#open-gaps).
 
-### GAME-013 — Ein defekter Song wird übersprungen, nicht blockiert
-
-**Preset:** Preset
-**Anforderung:** Schlägt die Wiedergabe fehl, wechselt die Phase zurück auf `drawing`. Bei Zufallszug wird sofort ein neuer Song gezogen; bei einem per QR gescannten Song wird nur zurück in die Ziehphase gewechselt.
-**Begründung:** Ein gesperrtes Video darf die Party nicht anhalten — gerade in Regionen mit gesperrten YouTube-Videos ist das der Normalfall.
-**Akzeptanz:** `skipBrokenSong` (`src/stores/game-store.ts:405-416`) — QR-Quelle: nur `roundPhase = 'drawing'`; Zufallsquelle: zusätzlich `currentSong = null` und `autoDrawIntent = true`. `DrawingPhase` reagiert auf `autoDrawIntent` mit automatischem Zug (`src/components/game/DrawingPhase.tsx:149-157`).
-**Verifikation:** `grep -n "autoDrawIntent" src/stores/game-store.ts src/components/game/DrawingPhase.tsx`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### GAME-014 — Nach dem Überspringen kann der Pilot neu würfeln
+### GAME-007 — A player's points flow to their team
 
 **Preset:** Preset
-**Anforderung:** Während der Fragerunde ist ein dezenter Reroll-Knopf verfügbar („Video kaputt? Neu würfeln"). Er wartet 2 Sekunden (Würfel-Animation) und überspringt dann den Song.
-**Begründung:** Der automatische Skip greift erst nach dem Fehler; die manuelle Möglichkeit deckt Grenzfälle ab.
-**Akzeptanz:** `onReroll` in `src/components/game/QuestionPhase.tsx:105-112`; `handleReroll` mit 2.000 ms in `src/app/game/page.tsx:239-246`; `DiceAnimation` in `src/app/game/page.tsx:304`.
-**Verifikation:** `grep -n "handleReroll" -A 8 src/app/game/page.tsx`.
+**Requirement:** When a score is credited to a player in a team, the team score increases by the same amount.
+**Rationale:** In team mode the evaluation of the team is kept; the team score must correspond to the sum of its members.
+**Acceptance:** `src/stores/game-store.ts:470-473` — when a `teamId` exists, the team is updated with the same delta.
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### GAME-015 — Punkte werden nur für richtige Antworten vergeben
-
-**Preset:** Preset
-**Anforderung:** `awardPoints` wird nur aufgerufen, wenn `isCorrect` wahr ist und `pointsAwarded > 0`. Falsche Antworten verändern den Punktestand nicht.
-**Begründung:** Eine falsche Antwort, die Punkte kostet, wäre eine Strafmechanik; das Spiel kennt nur Gewinn.
-**Akzeptanz:** `src/app/game/page.tsx:147-149` — `if (isCorrect && pointsAwarded > 0) { awardPoints(...) }`.
-**Verifikation:** `grep -n "isCorrect && pointsAwarded" src/app/game/page.tsx`.
-
-## 2.2 Punkteformeln je Modus
-
-### GAME-016 — Timeline: Punkte wachsen mit der Timeline, gedeckelt
+### GAME-008 — Three end conditions, exactly one is active
 
 **Preset:** Preset
-**Anforderung:** Im Timeline-Modus ist der mögliche Punktestand `min(Anzahl der Jahreszahlen + 1, timelineMaxPoints)`. Voreinstellung ist `timelineMaxPoints = 5`.
-**Begründung:** Eine längere Timeline ist schwerer zu treffen und soll entsprechend mehr wert sein — aber ohne Obergrenze wird die Runde unbezahlbar.
-**Akzeptanz:** `src/components/game/modes/TimelineMode.tsx:154` — `Math.min(timelineYears.length + 1, config.timelineMaxPoints)`; `DEFAULT_TIMELINE_MAX_POINTS: 5` in `src/config/game-config.ts:63`.
-**Verifikation:** `grep -n "timelineMaxPoints" src/components/game/modes/TimelineMode.tsx src/config/game-config.ts`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** The game ends via exactly one of the conditions `points`, `rounds` or `time`. The check only happens when the last round of the current rotation is completed.
+**Rationale:** A session needs a defined end; checking in the middle of a rotation would rob a player of their turn.
+**Acceptance:** `src/stores/game-store.ts:300-323` — `isEndOfRotation` (`:300`), points check against `targetPoints` (`:303-311`), rounds check `currentRound >= targetRounds * number of players or teams` (`:312-316`), time check against `targetTimeMinutes` from `gameStartTime` (`:317-322`).
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### GAME-017 — Timeline: Die Timeline startet mit drei Jahreszahlen
-
-**Preset:** Preset
-**Anforderung:** Ist die Timeline leer, werden drei zufällige, aufsteigend sortierte Jahreszahlen aus dem Katalog erzeugt.
-**Begründung:** Ohne Startwerte gibt es keine Einordnungsfrage; drei Ankerpunkte erzeugen eine echte Einordnungsaufgabe.
-**Akzeptanz:** `randomInitialYears(3)` (`src/components/game/modes/TimelineMode.tsx:82-86`), aufgerufen in `src/components/game/modes/TimelineMode.tsx:139-143`; `initTimeline` sortiert aufsteigend (`src/stores/game-store.ts:595-597`).
-**Verifikation:** `grep -n "randomInitialYears(3)" src/components/game/modes/TimelineMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-018 — Timeline: Duplikatjahre gelten als korrekt
+### GAME-009 — The points condition ends with the leading player or team
 
 **Preset:** Preset
-**Anforderung:** Liegt das gesuchte Jahr bereits in der Timeline, gilt der Slot **vor** und **nach** dem Duplikat ebenfalls als korrekt; der kanonische Slot ist der erste Slot, an dem das Jahr kleiner als das bestehende Jahr ist.
-**Begründung:** Ohne diese Regel müsste der Spieler die exakte Position eines Jahres bestimmen, das gar nicht eindeutig ist.
-**Akzeptanz:** `getValidSlots` (`src/components/game/modes/TimelineMode.tsx:93-115`) — kanonischer Slot plus Slot `i` und `i + 1` bei Jahresgleichheit; `canonicalSlot` (`src/components/game/modes/TimelineMode.tsx:118-123`).
-**Verifikation:** Test existiert nicht — siehe [GAP-001](#offene-lücken). Die Regel ist eine reine Funktion und damit die erste Wahl für einen Unit-Test.
+**Requirement:** When the points condition is met, the player or team with the highest score is the winner.
+**Rationale:** The winner must be unambiguous; a tie is not resolved, the current leader is set.
+**Acceptance:** `src/stores/game-store.ts:304-311` — sorting descending by score, `winnerId` = ID of the leader; the display uses the same logic (`src/components/game/RevealPhase.tsx:486-495`).
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### GAME-019 — Timeline: Nach einem Treffer wächst die Timeline
-
-**Preset:** Preset
-**Anforderung:** Nach einer korrekten Platzierung wird das Jahreszahl des Songs zur Timeline hinzugefügt. Entsteht dabei ein Duplikat, wird das Duplikat sofort wieder entfernt, ohne Eingriff des Spielers.
-**Begründung:** Die Timeline soll wachsen, aber nicht dieselbe Zahl doppelt enthalten.
-**Akzeptanz:** `src/components/game/modes/TimelineMode.tsx:185-192` — `addTimelineYear(newYear)` und bei `isDuplicate` sofort `removeTimelineYear(newYear)`.
-**Verifikation:** Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-020 — Timeline: Ab mehr als zehn Jahreszahlen darf eine entfernt werden
+### GAME-010 — The rounds condition counts per team or per player
 
 **Preset:** Preset
-**Anforderung:** Führt ein Treffer zu mehr als zehn Jahreszahlen (`timelineYears.length + 1 > 10`), darf der Spieler optional eine Jahreszahl entfernen. Das Entfernen ist freiwillig.
-**Begründung:** Die Obergrenze hält die Timeline lesbar; das Entfernen gibt dem Spieler eine aktive Rolle.
-**Akzeptanz:** `src/components/game/modes/TimelineMode.tsx:193-196` (`setRemovalState('choosing')`), Auswahl-UI `:396-413`, Abschluss `:415-421`.
-**Verifikation:** `grep -n "removalState" src/components/game/modes/TimelineMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** `targetRounds` is the number of rounds **per** player (individual) respectively **per** team. The total number of turns is `targetRounds × number of players or teams`.
+**Rationale:** "10 rounds" with 6 players means 60 turns; without this reading the progress display breaks.
+**Acceptance:** `src/stores/game-store.ts:314` — `currentRound >= config.targetRounds * (individual ? players.length : teams.length)`; identical in the progress display `src/app/game/page.tsx:269-271`.
+**Verification:** `grep -n "targetRounds \*" src/stores/game-store.ts src/app/game/page.tsx`; no test exists — see [GAP-002](#open-gaps).
 
-### GAME-021 — Timeline: Der Dekaden-Hint kostet zwei Punkte
-
-**Preset:** Preset
-**Anforderung:** Der Dekaden-Hint (z. B. „Synthesizer, Schulterpolster, Schnurrbart") zieht sofort 2 Punkte vom aktiven Spieler ab und ist nur einmal pro Runde nutzbar.
-**Begründung:** Hilfe muss kosten, sonst fragt der Pilot die Hilfe und rät sofort.
-**Akzeptanz:** `handleCheat` (`src/components/game/modes/TimelineMode.tsx:214-220`) — `awardPoints(currentPlayerId, -2)`, Abbruch bei `cheatActive`; sichtbar als Badge `-2 PKT CHEAT` (`:366-378`).
-**Verifikation:** `grep -n "awardPoints(currentPlayerId, -2)" src/components/game/modes/TimelineMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-022 — Timeline: Der Joker entfernt genau einen falschen Slot für einen Punkt
+### GAME-011 — The time condition is measured from the start of the game
 
 **Preset:** Preset
-**Anforderung:** Der Joker wählt zufällig einen der falschen Slots, macht ihn ungültig und kostet 1 Punkt. Er ist erst ab vier Slots verfügbar (`numSlots > 3`) und nur einmal pro Runde.
-**Begründung:** Ein Joker, der auch den richtigen Slot treffen könnte, wäre kein Joker, sondern ein Glücksspiel mit hohen Einsätzen.
-**Akzeptanz:** `handleJoker` (`src/components/game/modes/TimelineMode.tsx:222-237`) — Auswahl ausschließlich aus `wrongSlots`, `awardPoints(currentPlayerId, -1)`, Freischalten der Auswahl, wenn der Joker-Slot gewählt war; Verfügbarkeitsbedingung in `src/components/game/modes/TimelineMode.tsx:335`.
-**Verifikation:** `grep -n "numSlots > 3" src/components/game/modes/TimelineMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** The time condition counts from `gameStartTime`, which is set when the game starts. The expiry of the time ends the game even in the middle of a round.
+**Rationale:** A party has an end, even if nobody notices how long it has been running.
+**Acceptance:** `gameStartTime: Date.now()` in `startGame` (`src/stores/game-store.ts:273`); check in `nextRound` (`src/stores/game-store.ts:317-322`); the header progress also counts from that point (`src/app/game/page.tsx:279-285`).
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### GAME-023 — Hint-Master: Fünf Stufen, fünf bis ein Punkt
-
-**Preset:** Preset
-**Anforderung:** Der Hint-Master-Modus zeigt bis zu fünf Hinweise. Der Punktestand je Stufe ist `[5, 4, 3, 2, 1]` (Stufe 1 = 5 Punkte, Stufe 5 = 1 Punkt). Der Song liefert exakt fünf Hinweise.
-**Begründung:** Die abgestufte Bezahlung ist das Prinzip des Modus: frühe Treffer sind mehr wert.
-**Akzeptanz:** `PHOMU_CONFIG.HINT_MASTER_POINTS: [5, 4, 3, 2, 1]` (`src/config/game-config.ts:310`); `points = HINT_MASTER_POINTS[shownHints - 1] ?? 1` (`src/components/game/modes/HintMasterMode.tsx:36`); `hints` ist im Typ ein Tupel aus fünf Strings (`src/types/song.ts:87`).
-**Verifikation:** `grep -n "HINT_MASTER_POINTS" src/config/game-config.ts src/components/game/modes/HintMasterMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-024 — Hint-Master: Ab Stufe zwei läuft die Musik (geblurrt)
+### GAME-012 — The last turn is announced
 
 **Preset:** Preset
-**Anforderung:** Ab dem zweiten Hinweis startet die Musik automatisch, weiterhin hinter der Blur-Schicht. Der Pilot kann die Musik schon auf Stufe 1 manuell freischalten (kostet 2 Punkte).
-**Begründung:** Ab Stufe 2 ist der Hinweis so eindeutig, dass die Identität fast klar ist; die Musik ist der letzte Schritt zur Auflösung.
-**Akzeptanz:** `handleNextHint` (`src/components/game/modes/HintMasterMode.tsx:39-45`) — `if (shownHints + 1 >= 2) setShowMusic(true)`; Musik-Cheat `handleCheat` mit −2 Punkten (`:57-63`, Knopf `:176-183`).
-**Verifikation:** `grep -n "shownHints + 1 >= 2" src/components/game/modes/HintMasterMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** When the game page detects the last rotation, a `Letzte Runde` (last round) banner is shown before the change (random selection from 12 texts), which stands for about 3.4 seconds before the next round starts.
+**Rationale:** The last turn is the dramatic climax; it must not look like every other one.
+**Acceptance:** `isLastRotation` (`src/app/game/page.tsx:169-179`), `handleNextRound` with 3,400 ms banner duration (`src/app/game/page.tsx:182-193`), texts in `src/utils/last-round-messages.ts:14-77` (12 entries).
+**Verification:** `grep -n "3400" src/app/game/page.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### GAME-025 — Hint-Master: Das Urteil des Piloten bestimmt die Punkte
-
-**Preset:** Preset
-**Anforderung:** Nach der Auflösung gibt der Pilot an, was er wusste: „Beides" = voller Punktestand, „Nur Künstler" oder „Nur Titel" = aufgerundeter halber Punktestand (`Math.ceil(points / 2)`), „Nichts" = 0 Punkte.
-**Begründung:** Hint-Master ist der einzige Modus mit verbaler Antwort; ohne Differenzierung wäre die Trefferquote wertlos.
-**Akzeptanz:** `handleFinalDecision` (`src/components/game/modes/HintMasterMode.tsx:47-55`) — `awardedPoints = knew === 'both' ? points : knew === 'none' ? 0 : Math.ceil(points / 2)`; Anzeige der vier Optionen `:206-241`.
-**Verifikation:** `grep -n "Math.ceil(points / 2)" src/components/game/modes/HintMasterMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-026 — Hint-Master: Die Audiolänge wächst mit der Stufe
+### GAME-013 — A broken song is skipped, not blocked
 
 **Preset:** Preset
-**Anforderung:** Bis Stufe 4 läuft das Audio 30 Sekunden ab `previewTimestamp.start`; ab Stufe 5 oder nach der Auflösung 180 Sekunden.
-**Begründung:** Wer bis Stufe 5 kommt, hat Anspruch auf die ganze Erkennungsphase.
-**Akzeptanz:** `src/components/game/modes/HintMasterMode.tsx:132` — `endSeconds={(isRevealed || shownHints === 5) ? startSecs + 180 : startSecs + 30}`.
-**Verifikation:** `grep -n "endSeconds" src/components/game/modes/HintMasterMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If playback fails, the phase switches back to `drawing`. With a random draw a new song is drawn immediately; with a song scanned via QR only the draw phase is re-entered.
+**Rationale:** A blocked video must not stop the party — especially in regions with blocked YouTube videos that is the normal case.
+**Acceptance:** `skipBrokenSong` (`src/stores/game-store.ts:405-416`) — QR source: only `roundPhase = 'drawing'`; random source: additionally `currentSong = null` and `autoDrawIntent = true`. `DrawingPhase` reacts to `autoDrawIntent` with an automatic draw (`src/components/game/DrawingPhase.tsx:149-157`).
+**Verification:** `grep -n "autoDrawIntent" src/stores/game-store.ts src/components/game/DrawingPhase.tsx`; no test exists — see [GAP-002](#open-gaps).
 
-### GAME-027 — Lyrics Labyrinth: Vier Zeilen, eine ist erfunden
-
-**Preset:** Preset
-**Anforderung:** Der Modus mischt drei echte Liedzeilen und eine KI-generierte Zeile und lässt den Spieler die **falsche** Zeile identifizieren. Die Reihenfolge der Optionen ist pro Song zufällig, aber während einer Runde stabil.
-**Begründung:** Das Ratebild ist die Abwechslung zu den übrigen Modi.
-**Akzeptanz:** `src/components/game/modes/LyricsMode.tsx:68-83` — `useMemo` über `song.id` mit `shuffle`; Optionen werden mit `A.`, `B.`, `C.`, `D.` nummeriert (`:164-166`).
-**Verifikation:** Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-028 — Lyrics Labyrinth: Vier Punkte für die richtige Fake-Zeile
+### GAME-014 — After the skip the pilot can re-roll
 
 **Preset:** Preset
-**Anforderung:** Eine korrekt erkannte Fake-Zeile bringt 4 Punkte, eine falsche 0.
-**Begründung:** Vier Optionen, vier Punkte — eine erkennbare Einheit.
-**Akzeptanz:** `LYRICS_POINTS = 4` (`src/components/game/modes/LyricsMode.tsx:21`), Vergabe in `handleConfirm` (`:89-96`).
-**Verifikation:** `grep -n "LYRICS_POINTS" src/components/game/modes/LyricsMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** During the question round a discreet re-roll button is available (`Video kaputt? Neu würfeln` — video broken? re-roll). It waits 2 seconds (dice animation) and then skips the song.
+**Rationale:** The automatic skip only takes effect after the error; the manual option covers edge cases.
+**Acceptance:** `onReroll` in `src/components/game/QuestionPhase.tsx:105-112`; `handleReroll` with 2,000 ms in `src/app/game/page.tsx:239-246`; `DiceAnimation` in `src/app/game/page.tsx:304`.
+**Verification:** `grep -n "handleReroll" -A 8 src/app/game/page.tsx`.
 
-### GAME-029 — Lyrics Labyrinth: Ohne Lyrics-Daten gibt es eine Bonusrunde
-
-**Preset:** Preset
-**Anforderung:** Fehlt einem Song die Lyrik-Struktur (`lyrics === null`), wird statt der Frage eine Bonusrunde gespielt: Wer den Song erkennt und laut nennt, bekommt 2 Punkte, sonst 0.
-**Begründung:** 62 der 1.615 Katalogsongs haben keine Lyrics; ohne Ausweichregel wäre der Modus für diese Songs unspielbar.
-**Begründung-Ergänzung:** Der Fallback hält den Modus spielbar, ohne den Katalog zu blockieren.
-**Akzeptanz:** `src/components/game/modes/LyricsMode.tsx:42-44` (Fallback auf `BonusRound`), `BonusRound` `:214-263` mit `onAnswer(true, 2)` (`:239`). Datenstand: 1.553 von 1.615 Songs mit `lyrics !== null` (gemessen über `src/data/songs/*.json`).
-**Verifikation:** `grep -n "BonusRound" src/components/game/modes/LyricsMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-030 — Vibe-Check: Sechs Optionen, zwei Punkte
+### GAME-015 — Points are awarded only for correct answers
 
 **Preset:** Preset
-**Anforderung:** Der Spieler wählt aus sechs Stimmungs-Optionen. Ist die gewählte Stimmung in `song.mood` enthalten, gibt es 2 Punkte, sonst 0. Artist, Titel und Dekade sind sichtbar — die Stimmung ist die gesuchte Größe.
-**Begründung:** Der Modus prüft Gefühl, nicht Wissen; die Identität muss dafür bekannt sein.
-**Akzeptanz:** `src/components/game/modes/VibeCheckMode.tsx:52-59` — `isCorrect = song.mood.includes(mood)`, `points = isCorrect ? (cheatUsed ? 1 : 2) : 0`; Optionsaufbau `:62-73` (5 falsche + 1 richtige); Dekade-Anzeige `:118`.
-**Verifikation:** `grep -n "song.mood.includes(mood)" src/components/game/modes/VibeCheckMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** `awardPoints` is called only when `isCorrect` is true and `pointsAwarded > 0`. Wrong answers do not change the score.
+**Rationale:** A wrong answer that costs points would be a penalty mechanic; the game only knows wins.
+**Acceptance:** `src/app/game/page.tsx:147-149` — `if (isCorrect && pointsAwarded > 0) { awardPoints(...) }`.
+**Verification:** `grep -n "isCorrect && pointsAwarded" src/app/game/page.tsx`.
 
-### GAME-031 — Vibe-Check: Der Cheat halbiert die Optionen und senkt den Gewinn
+## 2.2 Scoring formulas per mode
 
-**Preset:** Preset
-**Anforderung:** Der Cheat reduziert die Auswahl von sechs auf drei Optionen und begrenzt den Gewinn auf 1 Punkt.
-**Begründung:** Der Vorteil muss durch die niedrigere Punktzahl bezahlt werden.
-**Akzeptanz:** `src/components/game/modes/VibeCheckMode.tsx:62-73` — `half` = 2 falsche + 1 richtige; Punktebegrenzung in `handleSelect` (`:57`); Hinweis-Text „Optionen halbiert — max. +1 Pkt" (`:141`).
-**Verifikation:** `grep -n "cheatUsed ? 1 : 2" src/components/game/modes/VibeCheckMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-032 — Survivor: Ein-Hit-Wunder oder Dauerstar, drei Punkte
+### GAME-016 — Timeline: points grow with the timeline, capped
 
 **Preset:** Preset
-**Anforderung:** Der Spieler entscheidet, ob der Künstler ein One-Hit-Wonder ist. Richtig ist die Angabe `song.isOneHitWonder`; es gibt 3 Punkte, sonst 0. Der Künstlername bleibt bis zur Antwort verdeckt.
-**Begründung:** Ohne Verdeckung wäre die Frage trivial (der Name verrät die Antwort).
-**Akzeptanz:** `src/components/game/modes/SurvivorMode.tsx:30-37` — `isCorrect = guessedOneHit === song.isOneHitWonder`, 3 Punkte; Artist-Verdeckung `:97-102` (`???`), Enthüllung erst nach Antwort oder Cheat (`:103-114`); `blurred={!answered && !cheatUsed}` (`:69`).
-**Verifikation:** `grep -n "isOneHitWonder" src/components/game/modes/SurvivorMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** In Timeline mode the possible score is `min(number of year numbers + 1, timelineMaxPoints)`. The default is `timelineMaxPoints = 5`.
+**Rationale:** A longer timeline is harder to hit and should therefore be worth more — but without an upper limit the round becomes unpayable.
+**Acceptance:** `src/components/game/modes/TimelineMode.tsx:154` — `Math.min(timelineYears.length + 1, config.timelineMaxPoints)`; `DEFAULT_TIMELINE_MAX_POINTS: 5` in `src/config/game-config.ts:63`.
+**Verification:** `grep -n "timelineMaxPoints" src/components/game/modes/TimelineMode.tsx src/config/game-config.ts`; no test exists — see [GAP-001](#open-gaps).
 
-### GAME-033 — Survivor: Der Cheat enthüllt den Künstler für einen Punkt
-
-**Preset:** Preset
-**Anforderung:** Der Cheat blendet den Künstlernamen sofort ein und zieht 1 Punkt ab.
-**Begründung:** Ein teurerer Cheat als im Timeline-Modus, weil die Auflösung unmittelbar folgt.
-**Akzeptanz:** `handleCheat` (`src/components/game/modes/SurvivorMode.tsx:39-44`) — `awardPoints(currentPlayerId, -1)`; Badge `-1 PKT CHEAT` (`:83-94`).
-**Verifikation:** `grep -n "awardPoints(currentPlayerId, -1)" src/components/game/modes/SurvivorMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-034 — Cover Confusion: Fünf bis zwei Punkte je nach Hinweiszahl
+### GAME-017 — Timeline: the timeline starts with three year numbers
 
 **Preset:** Preset
-**Anforderung:** Der Modus kennt vier Punktestufen: kein Hinweis = 5 Punkte, ein Texthinweis = 4, zwei Texthinweise = 3, Multiple-Choice mit drei Künstlern = 2 Punkte.
-**Begründung:** Die Hinweise werden teurer, je mehr Information der Spieler hat.
-**Akzeptanz:** `POINTS_BY_HINTS = [5, 4, 3, 2]` (`src/components/game/modes/CoverConfusionMode.tsx:23`); `points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)]` (`:41`); Hinweisvergabe `handleGetHint` (`:53-61`).
-**Verifikation:** `grep -n "POINTS_BY_HINTS" src/components/game/modes/CoverConfusionMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If the timeline is empty, three random, ascending year numbers are generated from the catalogue.
+**Rationale:** Without starting values there is no ordering question; three anchor points create a real ordering task.
+**Acceptance:** `randomInitialYears(3)` (`src/components/game/modes/TimelineMode.tsx:82-86`), called in `src/components/game/modes/TimelineMode.tsx:139-143`; `initTimeline` sorts ascending (`src/stores/game-store.ts:595-597`).
+**Verification:** `grep -n "randomInitialYears(3)" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### GAME-035 — Cover Confusion: Zwei Varianten mit gleicher Wahrscheinlichkeit
-
-**Preset:** Preset
-**Anforderung:** Pro Runde wird per Zufall eine von zwei Varianten gewählt: „Wer ist das Original?" (Ehrensystem + optionale Hinweise) oder „Cover oder Original?" (Binary-Frage, 3 Punkte).
-**Begründung:** Die Variante hält den Modus abwechslungsreich und nutzt die vorhandene `coverMode`-Metadatenstruktur.
-**Akzeptanz:** `const [variation] = useState(() => Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover')` (`src/components/game/modes/CoverConfusionMode.tsx:39`); Binärvariante mit 3 Punkten (`:78-84`, `:188`).
-**Verifikation:** `grep -n "variation" src/components/game/modes/CoverConfusionMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### GAME-036 — Cover Confusion: Die Ehrensystem-Variante entscheidet der Spieler selbst
+### GAME-018 — Timeline: duplicate years count as correct
 
 **Preset:** Preset
-**Anforderung:** In der Variante „Wer ist das Original?" wird der Original-Künstler angezeigt und der Spieler bestätigt selbst, ob er ihn kannte. Nur die Multiple-Choice-Variante wird automatisch gewertet.
-**Begründung:** Ohne Tipp gibt es keinen Ground Truth — die Ehrensystem-Variante ist die ehrliche Lösung.
-**Akzeptanz:** `handleSelfAssess` (`src/components/game/modes/CoverConfusionMode.tsx:63-68`) — Punkte nach Selbstauskunft; `handleChoice` (`:70-76`) — automatische Wertung im Multiple-Choice.
-**Verifikation:** Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If the requested year is already in the timeline, the slot **before** and **after** the duplicate counts as correct as well; the canonical slot is the first slot at which the year is smaller than the existing year.
+**Rationale:** Without this rule the player would have to determine the exact position of a year that is not unambiguous at all.
+**Acceptance:** `getValidSlots` (`src/components/game/modes/TimelineMode.tsx:93-115`) — canonical slot plus slot `i` and `i + 1` in the case of equal years; `canonicalSlot` (`src/components/game/modes/TimelineMode.tsx:118-123`).
+**Verification:** no test exists — see [GAP-001](#open-gaps). The rule is a pure function and therefore the first choice for a unit test.
 
-## 2.3 Cheats, No-Cheat und Zeitabzug
-
-### GAME-037 — Der No-Cheat-Modus deaktiviert alle Hilfen
+### GAME-019 — Timeline: after a hit the timeline grows
 
 **Preset:** Preset
-**Anforderung:** Ist `noCheatMode` aktiv, werden sämtliche Cheat- und Joker-Knöpfe ausgeblendet: Dekaden-Hint und Joker (Timeline), Musik-Cheat (Hint-Master), Options-Halbierung (Vibe-Check), Künstler-Enthüllung (Survivor).
-**Begründung:** Für erfahrene Gruppen ist der Expert-Modus der einzige ehrliche Modus.
-**Akzeptanz:** `config.noCheatMode` in `src/components/game/modes/TimelineMode.tsx:308` und `:335`, `src/components/game/modes/HintMasterMode.tsx:176`, `src/components/game/modes/VibeCheckMode.tsx:133`, `src/components/game/modes/SurvivorMode.tsx:153`; Vorgabe `DEFAULT_NO_CHEAT_MODE: false` (`src/config/game-config.ts:72`); umschaltbar in Lobby (`src/app/lobby/page.tsx:487-508`), Governance-Settings (`src/app/settings/governance/page.tsx`) und In-Game-Panel (`src/components/game/InGameSettingsPanel.tsx`).
-**Verifikation:** `grep -rn "noCheatMode" src/components/game/modes/`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** After a correct placement the year of the song is added to the timeline. If a duplicate arises as a result, the duplicate is removed again immediately, without intervention by the player.
+**Rationale:** The timeline should grow, but not contain the same number twice.
+**Acceptance:** `src/components/game/modes/TimelineMode.tsx:185-192` — `addTimelineYear(newYear)` and, with `isDuplicate`, immediately `removeTimelineYear(newYear)`.
+**Verification:** no test exists — see [GAP-001](#open-gaps).
 
-### GAME-038 — Der Zeitabzug bestraft langsame Antworten
+### GAME-020 — Timeline: from more than ten year numbers one may be removed
+
+**Preset:** Preset
+**Requirement:** If a hit leads to more than ten year numbers (`timelineYears.length + 1 > 10`), the player may optionally remove a year number. The removal is voluntary.
+**Rationale:** The upper limit keeps the timeline readable; the removal gives the player an active role.
+**Acceptance:** `src/components/game/modes/TimelineMode.tsx:193-196` (`setRemovalState('choosing')`), selection UI `:396-413`, completion `:415-421`.
+**Verification:** `grep -n "removalState" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-021 — Timeline: the decade hint costs two points
+
+**Preset:** Preset
+**Requirement:** The decade hint (e. g. "synthesiser, shoulder pads, moustache") immediately deducts 2 points from the active player and can be used only once per round.
+**Rationale:** Help has to cost something, otherwise the pilot asks for the help and guesses immediately.
+**Acceptance:** `handleCheat` (`src/components/game/modes/TimelineMode.tsx:214-220`) — `awardPoints(currentPlayerId, -2)`, abort on `cheatActive`; visible as badge `-2 PKT CHEAT` (`:366-378`).
+**Verification:** `grep -n "awardPoints(currentPlayerId, -2)" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-022 — Timeline: the joker removes exactly one wrong slot for one point
+
+**Preset:** Preset
+**Requirement:** The joker randomly chooses one of the wrong slots, makes it invalid and costs 1 point. It is only available from four slots onwards (`numSlots > 3`) and only once per round.
+**Rationale:** A joker that could also hit the right slot would be no joker, but a game of chance with high stakes.
+**Acceptance:** `handleJoker` (`src/components/game/modes/TimelineMode.tsx:222-237`) — selection exclusively from `wrongSlots`, `awardPoints(currentPlayerId, -1)`, unlocking the selection when the joker slot was chosen; availability condition in `src/components/game/modes/TimelineMode.tsx:335`.
+**Verification:** `grep -n "numSlots > 3" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-023 — Hint-Master: five levels, five down to one point
+
+**Preset:** Preset
+**Requirement:** The Hint-Master mode shows up to five hints. The score per level is `[5, 4, 3, 2, 1]` (level 1 = 5 points, level 5 = 1 point). The song provides exactly five hints.
+**Rationale:** The graduated payment is the principle of the mode: early hits are worth more.
+**Acceptance:** `PHOMU_CONFIG.HINT_MASTER_POINTS: [5, 4, 3, 2, 1]` (`src/config/game-config.ts:310`); `points = HINT_MASTER_POINTS[shownHints - 1] ?? 1` (`src/components/game/modes/HintMasterMode.tsx:36`); `hints` is a tuple of five strings in the type (`src/types/song.ts:87`).
+**Verification:** `grep -n "HINT_MASTER_POINTS" src/config/game-config.ts src/components/game/modes/HintMasterMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-024 — Hint-Master: from level two the music plays (blurred)
+
+**Preset:** Preset
+**Requirement:** From the second hint on, the music starts automatically, still behind the blur layer. The pilot can already unlock the music manually at level 1 (costs 2 points).
+**Rationale:** From level 2 on the hint is so unambiguous that the identity is almost clear; the music is the last step to the reveal.
+**Acceptance:** `handleNextHint` (`src/components/game/modes/HintMasterMode.tsx:39-45`) — `if (shownHints + 1 >= 2) setShowMusic(true)`; music cheat `handleCheat` with −2 points (`:57-63`, button `:176-183`).
+**Verification:** `grep -n "shownHints + 1 >= 2" src/components/game/modes/HintMasterMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-025 — Hint-Master: the pilot's verdict determines the points
+
+**Preset:** Preset
+**Requirement:** After the reveal the pilot states what he knew: `Beides` (both) = full score, `Nur Künstler` (artist only) or `Nur Titel` (title only) = half score rounded up (`Math.ceil(points / 2)`), `Nichts` (nothing) = 0 points.
+**Rationale:** Hint-Master is the only mode with a verbal answer; without differentiation the hit rate would be worthless.
+**Acceptance:** `handleFinalDecision` (`src/components/game/modes/HintMasterMode.tsx:47-55`) — `awardedPoints = knew === 'both' ? points : knew === 'none' ? 0 : Math.ceil(points / 2)`; display of the four options `:206-241`.
+**Verification:** `grep -n "Math.ceil(points / 2)" src/components/game/modes/HintMasterMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-026 — Hint-Master: the audio length grows with the level
+
+**Preset:** Preset
+**Requirement:** Up to level 4 the audio runs 30 seconds from `previewTimestamp.start`; from level 5 on or after the reveal 180 seconds.
+**Rationale:** Anyone who reaches level 5 is entitled to the whole identification phase.
+**Acceptance:** `src/components/game/modes/HintMasterMode.tsx:132` — `endSeconds={(isRevealed || shownHints === 5) ? startSecs + 180 : startSecs + 30}`.
+**Verification:** `grep -n "endSeconds" src/components/game/modes/HintMasterMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-027 — Lyrics Labyrinth: four lines, one is invented
+
+**Preset:** Preset
+**Requirement:** The mode mixes three real lyric lines and one AI-generated line and lets the player identify the **false** line. The order of the options is random per song, but stable during a round.
+**Rationale:** The guessing picture is the change of pace to the other modes.
+**Acceptance:** `src/components/game/modes/LyricsMode.tsx:68-83` — `useMemo` over `song.id` with `shuffle`; the options are numbered with `A.`, `B.`, `C.`, `D.` (`:164-166`).
+**Verification:** no test exists — see [GAP-001](#open-gaps).
+
+### GAME-028 — Lyrics Labyrinth: four points for the right fake line
+
+**Preset:** Preset
+**Requirement:** A correctly identified fake line brings 4 points, a wrong one 0.
+**Rationale:** Four options, four points — a recognisable unit.
+**Acceptance:** `LYRICS_POINTS = 4` (`src/components/game/modes/LyricsMode.tsx:21`), awarding in `handleConfirm` (`:89-96`).
+**Verification:** `grep -n "LYRICS_POINTS" src/components/game/modes/LyricsMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-029 — Lyrics Labyrinth: without lyrics data there is a bonus round
+
+**Preset:** Preset
+**Requirement:** If a song lacks the lyrics structure (`lyrics === null`), a bonus round is played instead of the question: whoever recognises the song and says it aloud gets 2 points, otherwise 0.
+**Rationale:** 62 of the 1,615 catalogue songs have no lyrics; without a fallback rule the mode would be unplayable for these songs.
+**Rationale addendum:** The fallback keeps the mode playable without blocking the catalogue.
+**Acceptance:** `src/components/game/modes/LyricsMode.tsx:42-44` (fallback to `BonusRound`), `BonusRound` `:214-263` with `onAnswer(true, 2)` (`:239`). Measured state: 1,553 of 1,615 songs with `lyrics !== null` (measured via `src/data/songs/*.json`).
+**Verification:** `grep -n "BonusRound" src/components/game/modes/LyricsMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-030 — Vibe-Check: six options, two points
+
+**Preset:** Preset
+**Requirement:** The player chooses from six mood options. If the chosen mood is contained in `song.mood`, there are 2 points, otherwise 0. Artist, title and decade are visible — the mood is the quantity being asked for.
+**Rationale:** The mode tests feeling, not knowledge; the identity has to be known for that.
+**Acceptance:** `src/components/game/modes/VibeCheckMode.tsx:52-59` — `isCorrect = song.mood.includes(mood)`, `points = isCorrect ? (cheatUsed ? 1 : 2) : 0`; option construction `:62-73` (5 wrong + 1 right); decade display `:118`.
+**Verification:** `grep -n "song.mood.includes(mood)" src/components/game/modes/VibeCheckMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-031 — Vibe-Check: the cheat halves the options and lowers the win
+
+**Preset:** Preset
+**Requirement:** The cheat reduces the selection from six to three options and limits the win to 1 point.
+**Rationale:** The advantage has to be paid for with the lower point count.
+**Acceptance:** `src/components/game/modes/VibeCheckMode.tsx:62-73` — `half` = 2 wrong + 1 right; point limit in `handleSelect` (`:57`); hint text `Optionen halbiert — max. +1 Pkt` (options halved — maximum one point) (`:141`).
+**Verification:** `grep -n "cheatUsed ? 1 : 2" src/components/game/modes/VibeCheckMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-032 — Survivor: one-hit wonder or career act, three points
+
+**Preset:** Preset
+**Requirement:** The player decides whether the artist is a one-hit wonder. Correct is the entry `song.isOneHitWonder`; there are 3 points, otherwise 0. The artist name stays hidden until the answer.
+**Rationale:** Without the concealment the question would be trivial (the name reveals the answer).
+**Acceptance:** `src/components/game/modes/SurvivorMode.tsx:30-37` — `isCorrect = guessedOneHit === song.isOneHitWonder`, 3 points; concealment of the artist `:97-102` (`???`), reveal only after the answer or cheat (`:103-114`); `blurred={!answered && !cheatUsed}` (`:69`).
+**Verification:** `grep -n "isOneHitWonder" src/components/game/modes/SurvivorMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-033 — Survivor: the cheat reveals the artist for one point
+
+**Preset:** Preset
+**Requirement:** The cheat immediately shows the artist name and deducts 1 point.
+**Rationale:** A more expensive cheat than in Timeline mode, because the reveal follows immediately.
+**Acceptance:** `handleCheat` (`src/components/game/modes/SurvivorMode.tsx:39-44`) — `awardPoints(currentPlayerId, -1)`; badge `-1 PKT CHEAT` (`:83-94`).
+**Verification:** `grep -n "awardPoints(currentPlayerId, -1)" src/components/game/modes/SurvivorMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-034 — Cover Confusion: five down to two points depending on the number of hints
+
+**Preset:** Preset
+**Requirement:** The mode knows four point levels: no hint = 5 points, one text hint = 4, two text hints = 3, multiple choice with three artists = 2 points.
+**Rationale:** The hints become more expensive the more information the player has.
+**Acceptance:** `POINTS_BY_HINTS = [5, 4, 3, 2]` (`src/components/game/modes/CoverConfusionMode.tsx:23`); `points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)]` (`:41`); awarding of hints `handleGetHint` (`:53-61`).
+**Verification:** `grep -n "POINTS_BY_HINTS" src/components/game/modes/CoverConfusionMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-035 — Cover Confusion: two variants with equal probability
+
+**Preset:** Preset
+**Requirement:** Per round one of two variants is chosen at random: `Wer ist das Original?` (who is the original? — honour system plus optional hints) or `Cover oder Original?` (cover or original? — binary question, 3 points).
+**Rationale:** The variant keeps the mode varied and uses the existing `coverMode` metadata structure.
+**Acceptance:** `const [variation] = useState(() => Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover')` (`src/components/game/modes/CoverConfusionMode.tsx:39`); binary variant with 3 points (`:78-84`, `:188`).
+**Verification:** `grep -n "variation" src/components/game/modes/CoverConfusionMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-036 — Cover Confusion: the player decides the honour-system variant himself
+
+**Preset:** Preset
+**Requirement:** In the `Wer ist das Original?` (who is the original?) variant the original artist is displayed and the player confirms himself whether he knew them. Only the multiple-choice variant is evaluated automatically.
+**Rationale:** Without a guess there is no ground truth — the honour-system variant is the honest solution.
+**Acceptance:** `handleSelfAssess` (`src/components/game/modes/CoverConfusionMode.tsx:63-68`) — points according to self-assessment; `handleChoice` (`:70-76`) — automatic evaluation in the multiple choice.
+**Verification:** no test exists — see [GAP-001](#open-gaps).
+
+## 2.3 Cheats, no-cheat and time decay
+
+### GAME-037 — The no-cheat mode disables all aids
+
+**Preset:** Preset
+**Requirement:** If `noCheatMode` is active, all cheat and joker buttons are hidden: decade hint and joker (Timeline), music cheat (Hint-Master), option halving (Vibe-Check), artist reveal (Survivor).
+**Rationale:** For experienced groups the expert mode is the only honest mode.
+**Acceptance:** `config.noCheatMode` in `src/components/game/modes/TimelineMode.tsx:308` and `:335`, `src/components/game/modes/HintMasterMode.tsx:176`, `src/components/game/modes/VibeCheckMode.tsx:133`, `src/components/game/modes/SurvivorMode.tsx:153`; default `DEFAULT_NO_CHEAT_MODE: false` (`src/config/game-config.ts:72`); switchable in the lobby (`src/app/lobby/page.tsx:487-508`), the governance settings (`src/app/settings/governance/page.tsx`) and the in-game panel (`src/components/game/InGameSettingsPanel.tsx`).
+**Verification:** `grep -rn "noCheatMode" src/components/game/modes/`; no test exists — see [GAP-001](#open-gaps).
+
+### GAME-038 — The time decay punishes slow answers
 
 **Preset:** Optional
-**Anforderung:** Ist `timeDecayEnabled` aktiv, wird die Punktezahl einer richtigen Antwort um `floor(max(0, Antwortzeit − timeDecayGraceSeconds) / timeDecayStepSeconds) × timeDecayStepPoints` reduziert. Die standardmäßigen Werte sind: Verzicht 5 s, Schrittweite 5 s, 1 Punkt je Schritt, Mindestpunktzahl 1.
-**Begründung:** Der Zeitabzug erzeugt Druck im Spiel — er muss abgeschaltet sein können, weil er in ruhigen Runden unangenehm ist.
-**Akzeptanz:** `src/app/game/page.tsx:130-136` — Berechnung und `Math.max(config.minPointsPerCorrect, ...)`; Vorgaben in `src/config/game-config.ts:64-68` (`DEFAULT_TIME_DECAY_ENABLED: false`, `DEFAULT_TIME_DECAY_GRACE_SECONDS: 5`, `DEFAULT_TIME_DECAY_STEP_SECONDS: 5`, `DEFAULT_TIME_DECAY_STEP_POINTS: 1`, `DEFAULT_MIN_POINTS_PER_CORRECT: 1`); Schalter in der Lobby (`src/app/lobby/page.tsx:463-484`).
-**Verifikation:** `grep -n "timeDecayStepPoints" src/app/game/page.tsx src/config/game-config.ts`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If `timeDecayEnabled` is active, the point count of a correct answer is reduced by `floor(max(0, answer time − timeDecayGraceSeconds) / timeDecayStepSeconds) × timeDecayStepPoints`. The default values are: grace period 5 s, step width 5 s, 1 point per step, minimum point count 1.
+**Rationale:** The time decay creates pressure in the game — it must be able to be switched off, because in calm rounds it is unpleasant.
+**Acceptance:** `src/app/game/page.tsx:130-136` — calculation and `Math.max(config.minPointsPerCorrect, ...)`; defaults in `src/config/game-config.ts:64-68` (`DEFAULT_TIME_DECAY_ENABLED: false`, `DEFAULT_TIME_DECAY_GRACE_SECONDS: 5`, `DEFAULT_TIME_DECAY_STEP_SECONDS: 5`, `DEFAULT_TIME_DECAY_STEP_POINTS: 1`, `DEFAULT_MIN_POINTS_PER_CORRECT: 1`); switch in the lobby (`src/app/lobby/page.tsx:463-484`).
+**Verification:** `grep -n "timeDecayStepPoints" src/app/game/page.tsx src/config/game-config.ts`; no test exists — see [GAP-001](#open-gaps).
 
-### GAME-039 — Die Antwortzeit wird nur im Timeline-Modus gemessen
-
-**Preset:** Preset
-**Anforderung:** Nur der Timeline-Modus übergibt `answeredInSeconds` an die Antwortbewertung. Die übrigen Modi übergeben keinen Zeitwert, damit der Zeitabzug dort nicht greift.
-**Begründung:** Ein Zeitabzug, der in einem Modus ohne Entscheidungsdruck funktioniert, wäre eine stille Punktebenachteiligung.
-**Akzeptanz:** `answeredInSeconds` wird nur in `src/components/game/modes/TimelineMode.tsx:178` berechnet und in `src/app/game/page.tsx:133` ausgewertet.
-**Verifikation:** `grep -rn "answeredInSeconds" src/components/game/modes/` (nur TimelineMode) und `grep -rn "answeredInSeconds" src/app/game/page.tsx`.
-
-### GAME-040 — Power-User-Override mit dokumentierter Governance
+### GAME-039 — The answer time is measured only in Timeline mode
 
 **Preset:** Preset
-**Anforderung:** In der Auflösung gibt es ein Power-User-Menü mit zwei Aktionen: „Antwort trotzdem korrekt werten" und „Runde verwerfen & neue Frage". Die Governance-Einstellung (`host`, `co-host`, `majority`) wird angezeigt, aber noch nicht durchgesetzt.
-**Begründung:** Der Pilot muss bei Streitigkeiten eingreifen können. Die Rollendurchsetzung ist bewusst zurückgestellt (siehe [GAP-019](#offene-lücken)).
-**Akzeptanz:** `src/components/game/RevealPhase.tsx:604-634` (Menü mit Governance-Anzeige), `src/app/game/page.tsx:197-215` (`handleOverrideCorrect` vergibt `max(1, minPointsPerCorrect)`, `handleOverrideRedraw` ruft `nextRound`).
-**Verifikation:** `grep -n "overrideGovernance" src/components/game/RevealPhase.tsx src/app/game/page.tsx src/config/game-config.ts`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** Only the Timeline mode passes `answeredInSeconds` to the answer evaluation. The other modes pass no time value, so that the time decay does not take effect there.
+**Rationale:** A time decay that works in a mode without decision pressure would be a silent disadvantage in points.
+**Acceptance:** `answeredInSeconds` is calculated only in `src/components/game/modes/TimelineMode.tsx:178` and evaluated in `src/app/game/page.tsx:133`.
+**Verification:** `grep -rn "answeredInSeconds" src/components/game/modes/` (only TimelineMode) and `grep -rn "answeredInSeconds" src/app/game/page.tsx`.
 
-## 2.4 Modusrotation und Zugauswahl
-
-### GAME-041 — Der Modus wird pro Runde zufällig gewählt
+### GAME-040 — Power-user override with documented governance
 
 **Preset:** Preset
-**Anforderung:** Aus den in der Lobby aktivierten Modi wird zu Beginn jeder Runde per Zufall ein Modus gewählt. Fällt die Liste leer, greift `timeline`.
-**Begründung:** Der Moduswechsel hält lange Partien abwechslungsreich, ohne dass der PilotModi manuell planen muss.
-**Akzeptanz:** `pickRandomMode` (`src/stores/game-store.ts:189-191`), Aufruf in `startGame` (`:268`) und `nextRound` (`:368`).
-**Verifikation:** `grep -n "pickRandomMode" src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** In the reveal there is a power-user menu with two actions: `Antwort trotzdem korrekt werten` (count the answer as correct anyway) and `Runde verwerfen & neue Frage` (discard the round and ask a new question). The governance setting (`host`, `co-host`, `majority`) is displayed, but not yet enforced.
+**Rationale:** The pilot has to be able to intervene in disputes. Role enforcement is deliberately deferred (see [GAP-019](#open-gaps)).
+**Acceptance:** `src/components/game/RevealPhase.tsx:604-634` (menu with governance display), `src/app/game/page.tsx:197-215` (`handleOverrideCorrect` awards `max(1, minPointsPerCorrect)`, `handleOverrideRedraw` calls `nextRound`).
+**Verification:** `grep -n "overrideGovernance" src/components/game/RevealPhase.tsx src/app/game/page.tsx src/config/game-config.ts`; no test exists — see [GAP-002](#open-gaps).
 
-### GAME-042 — Mindestens ein Modus bleibt immer aktiv
+## 2.4 Mode rotation and turn selection
 
-**Preset:** Preset
-**Anforderung:** In der Lobby kann der letzte aktive Modus nicht abgewählt werden. Der Modus trägt dann die Kennzeichnung „Pflicht".
-**Begründung:** Ein Spiel ohne Modus ist nicht spielbar.
-**Akzeptanz:** `toggleMode` (`src/components/lobby/ModeSelector.tsx:78-86`) — `if (selectedModes.length === 1) return`; „Pflicht"-Badge in `src/components/lobby/ModeSelector.tsx`; `canGoNext` verlangt `selectedModes.length > 0` (`src/app/lobby/page.tsx:84`).
-**Verifikation:** `grep -n "selectedModes.length === 1" src/components/lobby/ModeSelector.tsx`.
-
-### GAME-043 — Der Song wird passend zum Modus gezogen
+### GAME-041 — The mode is chosen randomly per round
 
 **Preset:** Preset
-**Anforderung:** Der Songzug filtert nach dem aktiven Modus: Im Modus `lyrics` muss der Song Lyrics-Daten haben, sonst muss `supportedModes` den aktuellen Modus enthalten. Führt der Filter zu einem leeren Pool, gilt ein weicher Fallback.
-**Begründung:** Ein Song ohne Lyrics im Lyrics-Modus ist eine Sackgasse; ein Song ohne Unterstützung für den Modus ist eine Fehlbesetzung.
-**Akzeptanz:** `src/utils/song-picker.ts:56-70` — Modusfilter und harter Lyrics-Fallback auf die Basis-Auswahl ohne Difficulty-/QR-Filter.
-**Verifikation:** `grep -n "currentMode === 'lyrics'" -A 12 src/utils/song-picker.ts`; Test existiert nicht — siehe [GAP-003](#offene-lücken).
+**Requirement:** From the modes enabled in the lobby, one mode is chosen at random at the beginning of each round. If the list is empty, `timeline` applies.
+**Rationale:** The mode change keeps long sessions varied, without the pilot having to plan modes manually.
+**Acceptance:** `pickRandomMode` (`src/stores/game-store.ts:189-191`), call in `startGame` (`:268`) and `nextRound` (`:368`).
+**Verification:** `grep -n "pickRandomMode" src/stores/game-store.ts`; no test exists — see [GAP-002](#open-gaps).
 
-### GAME-044 — Gespielte Songs werden bevorzugt vermieden
-
-**Preset:** Preset
-**Anforderung:** Bereits gespielte Songs werden vom Zufallszug ausgeschlossen. Ist der Pool dadurch leer, werden nur die zuletzt fünf gespielten Songs ausgeschlossen; danach wird aus dem vollen Pool gezogen.
-**Begründung:** Wiederholungen sind bei 1.615 Songs vermeidbar; die Ausnahme verhindert eine Sackgasse.
-**Akzeptanz:** `src/utils/song-picker.ts:72-84` — Filter über `playedIds`, Rückfall auf `playedIds.slice(-5)`.
-**Verifikation:** `grep -n "recentlyPlayed" src/utils/song-picker.ts`; Test existiert nicht — siehe [GAP-003](#offene-lücken).
-
-### GAME-045 — Der Zufallszug respektiert Pack-, Schwierigkeits- und QR-Filter
+### GAME-042 — At least one mode always stays active
 
 **Preset:** Preset
-**Anforderung:** Der Zufallszug filtert zuerst nach den gewählten Packs, dann nach `onlyQRCompatible`, dann nach `difficulty`, dann nach dem Modus. Jeder Filter ist ein weicher Fallback: Führt er zu einem leeren Pool, wird er verworfen. Führt schon der Pack-Filter zu einem leeren Pool, wird der gesamte Katalog verwendet.
-**Begründung:** Ein zu enger Filter darf die Partie nicht blockieren.
-**Akzeptanz:** `src/utils/song-picker.ts:36-70` — Reihenfolge und die Fallback-Kette mit den Kommentaren „Soft-Fallback" (`:45`) und „Absoluter Fallback" (`:41`).
-**Verifikation:** `grep -n "Soft-Fallback\|Absoluter Fallback" src/utils/song-picker.ts`; Test existiert nicht — siehe [GAP-003](#offene-lücken).
+**Requirement:** In the lobby the last active mode cannot be deselected. The mode then carries the label `Pflicht` (mandatory).
+**Rationale:** A game without a mode is not playable.
+**Acceptance:** `toggleMode` (`src/components/lobby/ModeSelector.tsx:78-86`) — `if (selectedModes.length === 1) return`; `Pflicht` badge in `src/components/lobby/ModeSelector.tsx`; `canGoNext` requires `selectedModes.length > 0` (`src/app/lobby/page.tsx:84`).
+**Verification:** `grep -n "selectedModes.length === 1" src/components/lobby/ModeSelector.tsx`.
+
+### GAME-043 — The song is drawn to match the mode
+
+**Preset:** Preset
+**Requirement:** The song draw filters by the active mode: in mode `lyrics` the song must have lyrics data, otherwise `supportedModes` must contain the current mode. If the filter leads to an empty pool, a soft fallback applies.
+**Rationale:** A song without lyrics in Lyrics mode is a dead end; a song without support for the mode is a miscast.
+**Acceptance:** `src/utils/song-picker.ts:56-70` — mode filter and hard lyrics fallback to the base selection without difficulty/QR filter.
+**Verification:** `grep -n "currentMode === 'lyrics'" -A 12 src/utils/song-picker.ts`; no test exists — see [GAP-003](#open-gaps).
+
+### GAME-044 — Played songs are preferably avoided
+
+**Preset:** Preset
+**Requirement:** Already played songs are excluded from the random draw. If the pool is empty as a result, only the last five played songs are excluded; afterwards the draw is made from the full pool.
+**Rationale:** With 1,615 songs repetitions are avoidable; the exception prevents a dead end.
+**Acceptance:** `src/utils/song-picker.ts:72-84` — filter over `playedIds`, fallback to `playedIds.slice(-5)`.
+**Verification:** `grep -n "recentlyPlayed" src/utils/song-picker.ts`; no test exists — see [GAP-003](#open-gaps).
+
+### GAME-045 — The random draw respects pack, difficulty and QR filters
+
+**Preset:** Preset
+**Requirement:** The random draw filters first by the selected packs, then by `onlyQRCompatible`, then by `difficulty`, then by the mode. Every filter is a soft fallback: if it leads to an empty pool, it is discarded. If even the pack filter leads to an empty pool, the entire catalogue is used.
+**Rationale:** A filter that is too narrow must not block the session.
+**Acceptance:** `src/utils/song-picker.ts:36-70` — the order and the fallback chain with the comments `Soft-Fallback` (`:45`) and `Absoluter Fallback` (absolute fallback) (`:41`).
+**Verification:** `grep -n "Soft-Fallback\|Absoluter Fallback" src/utils/song-picker.ts`; no test exists — see [GAP-003](#open-gaps).
 
 ---
 
-# 3. Lobby, Spieler, Teams, Sitzung und Karten (LOBBY)
+# 3. Lobby, players, teams, session and cards (LOBBY)
 
-### LOBBY-001 — Die Lobby ist ein sechsstufiger Assistent
-
-**Preset:** Preset
-**Anforderung:** Die Lobby führt in sechs Schritten durch die Konfiguration: 1 Spieler, 2 Modi, 3 Packs, 4 Spielende, 5 Feintuning, 6 Teams. Der Fortschritt wird als Balken und als Schrittzähler angezeigt.
-**Begründung:** Ein Assistent auf kleinen Bildschirmen verhindert Überfrachtung; die Schrittreihenfolge ist die fachliche Reihenfolge der Entscheidungen.
-**Akzeptanz:** `TOTAL_STEPS = 6` (`src/app/lobby/page.tsx:80`), Schrittrendering `:153-669`, Fortschrittsbalken `:142-146`.
-**Verifikation:** `grep -n "TOTAL_STEPS" src/app/lobby/page.tsx`; Test existiert nicht — siehe [GAP-021](#offene-lücken).
-
-### LOBBY-002 — Schritt 1 verlangt mindestens einen Spieler
+### LOBBY-001 — The lobby is a six-step assistant
 
 **Preset:** Preset
-**Anforderung:** Der „Weiter"-Knopf in Schritt 1 ist erst aktiv, wenn mindestens `MIN_PLAYERS` Spieler existieren. Voreinstellung: 1.
-**Begründung:** Ein Spiel ohne Teilnehmer ist kein Spiel.
-**Akzeptanz:** `canGoNext` (`src/app/lobby/page.tsx:82-87`) — `players.length >= PHOMU_CONFIG.MIN_PLAYERS`; `MIN_PLAYERS: 1` (`src/config/game-config.ts:56`).
-**Verifikation:** `grep -n "MIN_PLAYERS" src/app/lobby/page.tsx src/config/game-config.ts`.
+**Requirement:** The lobby guides through the configuration in six steps: 1 players, 2 modes, 3 packs, 4 game end, 5 fine tuning, 6 teams. The progress is displayed as a bar and as a step counter.
+**Rationale:** An assistant on small screens prevents clutter; the step order is the subject-matter order of the decisions.
+**Acceptance:** `TOTAL_STEPS = 6` (`src/app/lobby/page.tsx:80`), step rendering `:153-669`, progress bar `:142-146`.
+**Verification:** `grep -n "TOTAL_STEPS" src/app/lobby/page.tsx`; no test exists — see [GAP-021](#open-gaps).
 
-### LOBBY-003 — Obergrenze von 24 Spielern
-
-**Preset:** Preset
-**Anforderung:** Es können höchstens 24 Spieler in einer Sitzung sein. Der 25. Spieler wird nicht angelegt.
-**Begründung:** Die Obergrenze ist Teil des Produktversprechens „1–24 Spieler".
-**Akzeptanz:** `MAX_PLAYERS: 24` (`src/config/game-config.ts:55`); Prüfung im Store `addPlayer` (`src/stores/game-store.ts:210`) und in der Lobby (`src/app/lobby/page.tsx:91`).
-**Verifikation:** `grep -rn "MAX_PLAYERS" src/`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### LOBBY-004 — Spieler erhalten automatisch Avatar und Farbe
+### LOBBY-002 — Step 1 requires at least one player
 
 **Preset:** Preset
-**Anforderung:** Beim Hinzufügen eines Spielers werden automatisch ein Emoji-Avatar (aus 14 festen Emojis) und eine Farbe (aus 7 festen Farben) vergeben — zyklisch nach der Anzahl vorhandener Spieler. Der erste Spieler wird Pilot.
-**Begründung:** Ohne automatische Zuordnung müsste der Pilot für jeden Spieler manuell Farbe und Avatar wählen.
-**Akzeptanz:** `EMOJI_AVATARS` (14 Einträge, `src/app/lobby/page.tsx:25`), `PLAYER_COLORS` (7 Einträge, `:26`), Zuweisung in `handleAddPlayer` (`:93-97`); `isPilot: players.length === 0` (`src/stores/game-store.ts:219`).
-**Verifikation:** `grep -n "EMOJI_AVATARS\|PLAYER_COLORS" src/app/lobby/page.tsx`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** The `Weiter` (next) button in step 1 is only active when at least `MIN_PLAYERS` players exist. Default: 1.
+**Rationale:** A game without participants is not a game.
+**Acceptance:** `canGoNext` (`src/app/lobby/page.tsx:82-87`) — `players.length >= PHOMU_CONFIG.MIN_PLAYERS`; `MIN_PLAYERS: 1` (`src/config/game-config.ts:56`).
+**Verification:** `grep -n "MIN_PLAYERS" src/app/lobby/page.tsx src/config/game-config.ts`.
 
-### LOBBY-005 — Beim Entfernen des Piloten übernimmt der erste verbleibende Spieler
-
-**Preset:** Preset
-**Anforderung:** Wird der Pilot entfernt, übernimmt der erste verbleibende Spieler die Pilotrolle. Es gibt danach nie zwei Piloten und nie keinen.
-**Begründung:** Ohne Pilot kann die Runde nicht validiert werden.
-**Akzeptanz:** `removePlayer` (`src/stores/game-store.ts:231-245`) — `removedWasPilot` und Übergabe an `remaining[0]`.
-**Verifikation:** Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### LOBBY-006 — Drei Teammodi: einzeln, fest, wechselnd
+### LOBBY-003 — Upper limit of 24 players
 
 **Preset:** Preset
-**Anforderung:** Der Teammodus ist `individual` (jeder für sich), `fixed` (feste Teams) oder `shifting` (Teams werden jede Runde neu gemischt). Voreinstellung ist `individual`.
-**Begründung:** Der wechselnde Teammodus ist der stärkste soziale Hebel des Spiels.
-**Akzeptanz:** `TeamMode` (`src/types/player.ts:9-12`), `DEFAULT_TEAM_MODE: 'individual'` (`src/config/game-config.ts:57`), Auswahl in `src/app/lobby/page.tsx:42-46` und `:533-545`.
-**Verifikation:** `grep -rn "shifting" src/stores/game-store.ts src/app/lobby/page.tsx`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** There can be at most 24 players in a session. The 25th player is not created.
+**Rationale:** The upper limit is part of the product promise "1–24 players".
+**Acceptance:** `MAX_PLAYERS: 24` (`src/config/game-config.ts:55`); check in the store `addPlayer` (`src/stores/game-store.ts:210`) and in the lobby (`src/app/lobby/page.tsx:91`).
+**Verification:** `grep -rn "MAX_PLAYERS" src/`; no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-007 — Beim Wechsel auf einen Teammodus werden zwei Teams angelegt
-
-**Preset:** Preset
-**Anforderung:** Wird `fixed` oder `shifting` gewählt und noch kein Team existiert, werden automatisch zwei Teams erzeugt.
-**Begründung:** Ein Teammodus ohne Teams ist nicht konfigurierbar.
-**Akzeptanz:** `handleTeamModeChange` (`src/app/lobby/page.tsx:104-109`) — `initTeams(2)`.
-**Verifikation:** `grep -n "initTeams(2)" src/app/lobby/page.tsx`.
-
-### LOBBY-008 — Teams tragen Namen aus einer kuratierten Liste
+### LOBBY-004 — Players automatically receive an avatar and a colour
 
 **Preset:** Preset
-**Anforderung:** Neu angelegte Teams erhalten einen Namen aus einer Liste von 24 festen, humorvollen Teamnamen; bereits vergebene Namen werden übersprungen. Ist die Liste erschöpft, wird erneut zufällig gewählt. Die Farbe rotiert über sechs feste Teamfarben.
-**Begründung:** Der Name ist ein Gesprächsstarter; zufällige generierte Namen wären beliebig.
-**Akzeptanz:** `FUNNY_TEAM_NAMES` (24 Einträge, `src/stores/game-store.ts:20-27`), `TEAM_COLORS` (6, `:29`), `pickTeamName` (`:31-35`), `initTeams` (`:530-544`), `createTeam` (`:547-558`).
-**Verifikation:** `grep -n "FUNNY_TEAM_NAMES" src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** When a player is added, an emoji avatar (from 14 fixed emojis) and a colour (from 7 fixed colours) are assigned automatically — cyclically according to the number of existing players. The first player becomes the pilot.
+**Rationale:** Without automatic assignment the pilot would have to choose colour and avatar manually for every player.
+**Acceptance:** `EMOJI_AVATARS` (14 entries, `src/app/lobby/page.tsx:25`), `PLAYER_COLORS` (7 entries, `:26`), assignment in `handleAddPlayer` (`:93-97`); `isPilot: players.length === 0` (`src/stores/game-store.ts:219`).
+**Verification:** `grep -n "EMOJI_AVATARS\|PLAYER_COLORS" src/app/lobby/page.tsx`; no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-009 — Teamnamen und -farben sind frei editierbar
-
-**Preset:** Preset
-**Anforderung:** Der Teamname ist als Textfeld editierbar; ein Würfel-Knopf vergibt einen zufälligen Namen aus derselben Liste. Die Teamfarbe ist über sechs kuratierte Farben wählbar.
-**Begründung:** Vorgegebene Farben und Namen sind ein Startpunkt, keine Vorschrift.
-**Akzeptanz:** `src/app/lobby/page.tsx:564-582` (Namensfeld und Würfel), `CURATED_TEAM_COLORS` (`:48-55`) und Farbwahl (`:600-608`).
-**Verifikation:** `grep -n "CURATED_TEAM_COLORS" src/app/lobby/page.tsx`.
-
-### LOBBY-010 — Spieler werden einem Team zugeordnet oder entfernt
+### LOBBY-005 — When the pilot is removed, the first remaining player takes over
 
 **Preset:** Preset
-**Anforderung:** Im Modus `fixed` kann jeder Spieler genau einem Team zugeordnet werden; ein erneuter Klick auf das aktuelle Team hebt die Zuordnung auf. Entfernen eines Teams hebt alle Zuordnungen auf, ohne Spieler zu löschen.
-**Begründung:** Fehlversehene Zuordnungen müssen korrigierbar sein, ohne die Spielerliste anzufassen.
-**Akzeptanz:** `assignPlayerToTeam` (`src/stores/game-store.ts:572-592`), `removeTeam` (`:561-569`), UI `src/app/lobby/page.tsx:621-648`.
-**Verifikation:** `grep -n "assignPlayerToTeam\|removeTeam" src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
+**Requirement:** If the pilot is removed, the first remaining player takes over the pilot role. Afterwards there are never two pilots and never none.
+**Rationale:** Without a pilot the round cannot be validated.
+**Acceptance:** `removePlayer` (`src/stores/game-store.ts:231-245`) — `removedWasPilot` and handover to `remaining[0]`.
+**Verification:** no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-011 — Hinweis auf zu wenige Spieler im Teammodus
-
-**Preset:** Preset
-**Anforderung:** Bei weniger als vier Spielern weist die Lobby darauf hin, dass im Teammodus mindestens zwei Spieler pro Team nötig sind.
-**Begründung:** Die Information erspart eine verwirrte Diskussion am Tisch.
-**Akzeptanz:** `src/app/lobby/page.tsx:659-664`.
-**Verifikation:** `grep -n "mindestens 4 Spieler" src/app/lobby/page.tsx`.
-
-### LOBBY-012 — Die Teamanzahl ist begrenzt und folgt der Spielerzahl
+### LOBBY-006 — Three team modes: individual, fixed, shifting
 
 **Preset:** Preset
-**Anforderung:** Ein weiteres Team kann nur angelegt werden, solange weniger Teams existieren als die größere Zahl aus 2 und der Hälfte der Spielerzahl, und solange höchstens 8 Teams vorhanden sind. Ein Team kann erst ab dem dritten Team gelöscht werden.
-**Begründung:** Die Grenzen verhindern unbrauchbare Teamgrößen (ein Team pro Spieler).
-**Akzeptanz:** Bedingung `src/app/lobby/page.tsx:651`; Löschknopf nur ab `teams.length > 2` (`:587`).
-**Verifikation:** `grep -n "teams.length < 8\|teams.length > 2" src/app/lobby/page.tsx`.
+**Requirement:** The team mode is `individual` (everyone on their own), `fixed` (fixed teams) or `shifting` (teams are remixed every round). The default is `individual`.
+**Rationale:** The shifting team mode is the strongest social lever of the game.
+**Acceptance:** `TeamMode` (`src/types/player.ts:9-12`), `DEFAULT_TEAM_MODE: 'individual'` (`src/config/game-config.ts:57`), selection in `src/app/lobby/page.tsx:42-46` and `:533-545`.
+**Verification:** `grep -rn "shifting" src/stores/game-store.ts src/app/lobby/page.tsx`; no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-013 — Die Spielende-Bedingung wird exklusiv gewählt
-
-**Preset:** Preset
-**Anforderung:** Die Beendigungsbedingung ist exklusiv: `points`, `rounds` oder `time`. Voreinstellungen: 100 Punkte, 10 Runden, 60 Minuten.
-**Begründung:** Nur eine aktive Bedingung ist eindeutig; parallele Bedingungen erzeugen Streit über den Spielende-Moment.
-**Akzeptanz:** Auswahl `src/app/lobby/page.tsx:279-290`; Vorgaben `DEFAULT_CONFIG` (`src/stores/game-store.ts:41-66`): `endingCondition: 'rounds'`, `targetPoints: 100`, `targetRounds: 10`, `targetTimeMinutes: 60`.
-**Verifikation:** `grep -n "targetPoints: 100\|targetRounds: 10\|targetTimeMinutes: 60" src/stores/game-store.ts`.
-
-### LOBBY-014 — Die Zielwerte sind über Presets und einen Regler wählbar
+### LOBBY-007 — When switching to a team mode, two teams are created
 
 **Preset:** Preset
-**Anforderung:** Für Punkte stehen 50/100/200/500, für Runden 5/10/15/20 und für Zeit 30/60/90/120/150/180/210/240 Minuten als Presets bereit; zusätzlich regelt ein Schieberegler den Zielwert (Punkte/Runden: 5–500 in Schritten von 5, Zeit: 30–240 in Schritten von 30).
-**Begründung:** Presets beschleunigen die Konfiguration, der Regler deckt individuelle Werte ab.
-**Akzeptanz:** `src/app/lobby/page.tsx:293-321` (Presets), `:333-346` (Regler). **Achtung:** Die Preset-Liste für Runden (5/10/15/20) liegt unterhalb von `MIN_ROUNDS_TO_PLAY = 10` (`src/config/game-config.ts:61`); der Wert wird aber nicht erzwungen — siehe [GAP-026](#offene-lücken).
-**Verifikation:** `grep -n "50, 100, 200, 500\|5, 10, 15, 20" src/app/lobby/page.tsx`; `grep -n "MIN_ROUNDS_TO_PLAY" src/config/game-config.ts`.
+**Requirement:** If `fixed` or `shifting` is chosen and no team exists yet, two teams are created automatically.
+**Rationale:** A team mode without teams cannot be configured.
+**Acceptance:** `handleTeamModeChange` (`src/app/lobby/page.tsx:104-109`) — `initTeams(2)`.
+**Verification:** `grep -n "initTeams(2)" src/app/lobby/page.tsx`.
 
-### LOBBY-015 — Die Legacy-Aliasse für Zielwerte werden mitgeführt
-
-**Preset:** Preset
-**Anforderung:** `winCondition` spiegelt `targetPoints` und `roundsToPlay` spiegelt `targetRounds`. Beide werden bei jeder Änderung mitgesetzt.
-**Begründung:** Ältere Spielstände und aufrufende Komponenten nutzen die Aliasse; eine Divergenz erzeugt widersprüchliche Anzeigen.
-**Akzeptanz:** `src/types/game-state.ts:62-63` und `:71-72` (Aliasse), `src/app/lobby/page.tsx:296`, `:306`, `:341-342` (gemeinsames Setzen).
-**Verifikation:** `grep -n "winCondition\|roundsToPlay" src/app/lobby/page.tsx src/types/game-state.ts`.
-
-### LOBBY-016 — Mindestens ein Song-Pack ist immer ausgewählt
+### LOBBY-008 — Teams carry names from a curated list
 
 **Preset:** Preset
-**Anforderung:** Das letzte gewählte Pack kann nicht abgewählt werden. „Alle wählen" und „Abwählen" setzen die Auswahl auf alle bzw. auf das erste Pack zurück.
-**Begründung:** Ohne Pack gibt es keine Songs und damit kein Spiel.
-**Akzeptanz:** `src/components/lobby/PackSelector.tsx:36-40` (`if (selectedPacks.length === 1) return`), `:44-45` (`selectAll`/`selectNone`); `canGoNext` in `src/app/lobby/page.tsx:85`.
-**Verifikation:** `grep -n "selectedPacks.length === 1" src/components/lobby/PackSelector.tsx`.
+**Requirement:** Newly created teams receive a name from a list of 24 fixed, humorous team names; names that are already taken are skipped. If the list is exhausted, a new random choice is made. The colour rotates over six fixed team colours.
+**Rationale:** The name is a conversation starter; randomly generated names would be arbitrary.
+**Acceptance:** `FUNNY_TEAM_NAMES` (24 entries, `src/stores/game-store.ts:20-27`), `TEAM_COLORS` (6, `:29`), `pickTeamName` (`:31-35`), `initTeams` (`:530-544`), `createTeam` (`:547-558`).
+**Verification:** `grep -n "FUNNY_TEAM_NAMES" src/stores/game-store.ts`; no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-017 — Alte Pack-IDs werden auf gültige Pack-Keys abgebildet
-
-**Preset:** Preset
-**Anforderung:** Zwölf historische Lobby-Pack-IDs (z. B. `global-hits`) werden auf die aktuellen Pack-Keys abgebildet, damit gespeicherte Spielstände weiterhin eine Auswahl treffen. Die Abbildung ist zentral in der Konfiguration hinterlegt.
-**Begründung:** Ohne Abbildung liefern alte Spielstände leere Auswahlen — der Fehler ist in der Konfiguration ausdrücklich dokumentiert.
-**Akzeptanz:** `PACK_ALIASES` mit 12 Einträgen (`src/config/game-config.ts:284-297`), Anwendung in `normalizePackIds` (`src/utils/song-picker.ts:12-15`) und beim QR-Pack-Intent (`src/app/lobby/page.tsx:684-685`).
-**Verifikation:** `grep -n "PACK_ALIASES" src/config/game-config.ts src/utils/song-picker.ts src/app/lobby/page.tsx`; Test existiert nicht — siehe [GAP-003](#offene-lücken).
-
-### LOBBY-018 — QR-Karten liefern drei Intent-Typen
+### LOBBY-009 — Team names and colours are freely editable
 
 **Preset:** Preset
-**Anforderung:** Ein gescannter QR-Code kann drei Bedeutungen haben: `@Name` fügt einen Spieler hinzu, ein URL mit `?pack=` aktiviert ein Pack, ein URL mit `?session=` ist als Sitzungs-Intent vorgesehen. Alte `?id=`-Links werden als nicht unterstützt markiert.
-**Begründung:** Die physische Karte soll mehrere Funktionen in einem Code tragen, ohne dass der Nutzer eine App für jede Funktion braucht.
-**Akzeptanz:** `parseQrIntent` (`src/utils/qr-intent.ts:16-43`), Einordnung in `src/app/lobby/page.tsx:676-692`; Test `src/utils/qr-intent.test.ts`.
-**Verifikation:** `npm run test -- qr-intent`.
+**Requirement:** The team name is editable as a text field; a dice button assigns a random name from the same list. The team colour is selectable from six curated colours.
+**Rationale:** Preset colours and names are a starting point, not a regulation.
+**Acceptance:** `src/app/lobby/page.tsx:564-582` (name field and dice), `CURATED_TEAM_COLORS` (`:48-55`) and colour selection (`:600-608`).
+**Verification:** `grep -n "CURATED_TEAM_COLORS" src/app/lobby/page.tsx`.
 
-### LOBBY-019 — Ein Pack-Intent für ein unbekanntes Pack wird abgelehnt
+### LOBBY-010 — Players are assigned to a team or removed
 
 **Preset:** Preset
-**Anforderung:** Verweist ein QR-Code auf ein Pack, das es nicht gibt, wird der Scan verworfen und der Nutzer informiert; es wird kein leeres Pack in die Auswahl aufgenommen.
-**Begründung:** Ein toter Pack-Eintrag würde den Filter des gesamten Spiels leer machen.
-**Akzeptanz:** `src/app/lobby/page.tsx:686-687` — Prüfung über `PHOMU_CONFIG.SONG_PACKS` und `alert`.
-**Verifikation:** `grep -n "Pack nicht gefunden" src/app/lobby/page.tsx`.
+**Requirement:** In mode `fixed` each player can be assigned to exactly one team; a second click on the current team cancels the assignment. Removing a team cancels all assignments without deleting players.
+**Rationale:** Mistaken assignments have to be correctable without touching the player list.
+**Acceptance:** `assignPlayerToTeam` (`src/stores/game-store.ts:572-592`), `removeTeam` (`:561-569`), UI `src/app/lobby/page.tsx:621-648`.
+**Verification:** `grep -n "assignPlayerToTeam\|removeTeam" src/stores/game-store.ts`; no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-020 — Der Sitzungs-Intent ist erkannt, aber noch nicht ausgeführt
+### LOBBY-011 — Notice about too few players in team mode
+
+**Preset:** Preset
+**Requirement:** With fewer than four players the lobby points out that in team mode at least two players per team are needed.
+**Rationale:** The information saves a confused discussion at the table.
+**Acceptance:** `src/app/lobby/page.tsx:659-664`.
+**Verification:** `grep -n "mindestens 4 Spieler" src/app/lobby/page.tsx`.
+
+### LOBBY-012 — The number of teams is limited and follows the number of players
+
+**Preset:** Preset
+**Requirement:** An additional team can only be created as long as fewer teams exist than the greater of 2 and half the number of players, and as long as at most 8 teams are present. A team can only be deleted from the third team onwards.
+**Rationale:** The limits prevent unusable team sizes (one team per player).
+**Acceptance:** Condition `src/app/lobby/page.tsx:651`; delete button only from `teams.length > 2` (`:587`).
+**Verification:** `grep -n "teams.length < 8\|teams.length > 2" src/app/lobby/page.tsx`.
+
+### LOBBY-013 — The game-end condition is chosen exclusively
+
+**Preset:** Preset
+**Requirement:** The end condition is exclusive: `points`, `rounds` or `time`. Defaults: 100 points, 10 rounds, 60 minutes.
+**Rationale:** Only one active condition is unambiguous; parallel conditions provoke disputes about the moment the game ends.
+**Acceptance:** Selection `src/app/lobby/page.tsx:279-290`; defaults `DEFAULT_CONFIG` (`src/stores/game-store.ts:41-66`): `endingCondition: 'rounds'`, `targetPoints: 100`, `targetRounds: 10`, `targetTimeMinutes: 60`.
+**Verification:** `grep -n "targetPoints: 100\|targetRounds: 10\|targetTimeMinutes: 60" src/stores/game-store.ts`.
+
+### LOBBY-014 — The target values are selectable via presets and a slider
+
+**Preset:** Preset
+**Requirement:** For points 50/100/200/500, for rounds 5/10/15/20 and for time 30/60/90/120/150/180/210/240 minutes are available as presets; in addition a slider regulates the target value (points/rounds: 5–500 in steps of 5, time: 30–240 in steps of 30).
+**Rationale:** Presets speed up the configuration, the slider covers individual values.
+**Acceptance:** `src/app/lobby/page.tsx:293-321` (presets), `:333-346` (slider). **Caution:** The preset list for rounds (5/10/15/20) lies below `MIN_ROUNDS_TO_PLAY = 10` (`src/config/game-config.ts:61`); the value is not enforced, however — see [GAP-026](#open-gaps).
+**Verification:** `grep -n "50, 100, 200, 500\|5, 10, 15, 20" src/app/lobby/page.tsx`; `grep -n "MIN_ROUNDS_TO_PLAY" src/config/game-config.ts`.
+
+### LOBBY-015 — The legacy aliases for target values are carried along
+
+**Preset:** Preset
+**Requirement:** `winCondition` mirrors `targetPoints` and `roundsToPlay` mirrors `targetRounds`. Both are set on every change.
+**Rationale:** Older game states and calling components use the aliases; a divergence produces contradictory displays.
+**Acceptance:** `src/types/game-state.ts:62-63` and `:71-72` (aliases), `src/app/lobby/page.tsx:296`, `:306`, `:341-342` (joint setting).
+**Verification:** `grep -n "winCondition\|roundsToPlay" src/app/lobby/page.tsx src/types/game-state.ts`.
+
+### LOBBY-016 — At least one song pack is always selected
+
+**Preset:** Preset
+**Requirement:** The last selected pack cannot be deselected. `Alle wählen` (select all) and `Abwählen` (deselect all) set the selection to all respectively to the first pack.
+**Rationale:** Without a pack there are no songs and therefore no game.
+**Acceptance:** `src/components/lobby/PackSelector.tsx:36-40` (`if (selectedPacks.length === 1) return`), `:44-45` (`selectAll`/`selectNone`); `canGoNext` in `src/app/lobby/page.tsx:85`.
+**Verification:** `grep -n "selectedPacks.length === 1" src/components/lobby/PackSelector.tsx`.
+
+### LOBBY-017 — Old pack IDs are mapped to valid pack keys
+
+**Preset:** Preset
+**Requirement:** Twelve historical lobby pack IDs (e. g. `global-hits`) are mapped to the current pack keys, so that stored game states still hit a selection. The mapping is kept centrally in the configuration.
+**Rationale:** Without the mapping, old game states deliver empty selections — the bug is explicitly documented in the configuration.
+**Acceptance:** `PACK_ALIASES` with 12 entries (`src/config/game-config.ts:284-297`), application in `normalizePackIds` (`src/utils/song-picker.ts:12-15`) and for the QR pack intent (`src/app/lobby/page.tsx:684-685`).
+**Verification:** `grep -n "PACK_ALIASES" src/config/game-config.ts src/utils/song-picker.ts src/app/lobby/page.tsx`; no test exists — see [GAP-003](#open-gaps).
+
+### LOBBY-018 — QR cards deliver three intent types
+
+**Preset:** Preset
+**Requirement:** A scanned QR code can have three meanings: `@Name` adds a player, a URL with `?pack=` activates a pack, a URL with `?session=` is provided as a session intent. Old `?id=` links are marked as unsupported.
+**Rationale:** The physical card should carry several functions in one code, without the user needing an app for every function.
+**Acceptance:** `parseQrIntent` (`src/utils/qr-intent.ts:16-43`), classification in `src/app/lobby/page.tsx:676-692`; test `src/utils/qr-intent.test.ts`.
+**Verification:** `npm run test -- qr-intent`.
+
+### LOBBY-019 — A pack intent for an unknown pack is rejected
+
+**Preset:** Preset
+**Requirement:** If a QR code points to a pack that does not exist, the scan is discarded and the user is informed; no empty pack is added to the selection.
+**Rationale:** A dead pack entry would empty the filter of the entire game.
+**Acceptance:** `src/app/lobby/page.tsx:686-687` — check via `PHOMU_CONFIG.SONG_PACKS` and `alert`.
+**Verification:** `grep -n "Pack nicht gefunden" src/app/lobby/page.tsx`.
+
+### LOBBY-020 — The session intent is recognised, but not yet executed
 
 **Preset:** Later
-**Anforderung:** Ein QR-Code mit `?session=` wird als Sitzungs-Intent erkannt und geparst; die tatsächliche Sitzungssuche und -beitritt sind nicht implementiert.
-**Begründung:** Der Mehrgeräte-Modus ist für eine spätere Ausbaustufe vorgesehen; die Erkennung schafft die Anschlussstelle ohne vorzutäuschen, es gäbe sie schon.
-**Akzeptanz:** `src/utils/qr-intent.ts:28-31` (Parsing), Test in `src/utils/qr-intent.test.ts`; in der Lobby wird der Intent bewusst nicht behandelt (`src/app/lobby/page.tsx:676-692` behandelt nur `player` und `pack`).
-**Verifikation:** `npm run test -- qr-intent`; Lücke geführt als [GAP-016](#offene-lücken).
+**Requirement:** A QR code with `?session=` is recognised as a session intent and parsed; the actual session lookup and join are not implemented.
+**Rationale:** The multi-device mode is intended for a later expansion stage; the recognition creates the connection point without pretending that it already exists.
+**Acceptance:** `src/utils/qr-intent.ts:28-31` (parsing), test in `src/utils/qr-intent.test.ts`; in the lobby the intent is deliberately not handled (`src/app/lobby/page.tsx:676-692` handles only `player` and `pack`).
+**Verification:** `npm run test -- qr-intent`; the gap is tracked as [GAP-016](#open-gaps).
 
-### LOBBY-021 — Die Sitzung ist clientseitig und überlebt einen Reload
-
-**Preset:** Preset
-**Anforderung:** Der gesamte Spielzustand (Spieler, Teams, Konfiguration, Session-ID, XP, Audio-Einstellungen, aktuelle Runde, Timeline) wird in `localStorage` unter `phomu-game-state` persistiert. Beim Neuladen steht die Lobby-Konfiguration weiterhin bereit.
-**Begründung:** Auf einer Party wird das Handy gelöscht, gesperrt oder die App neu geladen — die Konfiguration darf nicht verloren gehen.
-**Akzeptanz:** `persist(...)` mit `name: 'phomu-game-state'` und der `partialize`-Liste (`src/stores/game-store.ts:618-638`).
-**Verifikation:** `grep -n "partialize" -A 20 src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-002](#offene-lücken).
-
-### LOBBY-022 — „Nochmal spielen" behält die Lobby, „Neue Lobby" setzt alles zurück
+### LOBBY-021 — The session is client-side and survives a reload
 
 **Preset:** Preset
-**Anforderung:** Auf dem Endbildschirm bietet Phomu zwei Wege: „Nochmal spielen" setzt nur die Punkte zurück und startet das Spiel erneut (Konfiguration und Spieler bleiben), „Neue Lobby starten" setzt den gesamten Zustand zurück.
-**Begründung:** Beide Aktionen werden in der Praxis gebraucht — der erste für einen zweiten Durchgang, der zweite für eine neue Gruppe.
-**Akzeptanz:** `resetScores` (`src/stores/game-store.ts:479-493`) setzt Punkte, Runden, Historie, `playedSongIds`, Antworten, Song, Timeline zurück, behält aber Spieler/Teams/Konfiguration; `initSession` (`:201-203`) setzt alles auf den Anfangszustand; Aufrufe in `src/app/game-over/page.tsx:147-159`.
-**Verifikation:** `grep -n "resetScores\|initSession" src/app/game-over/page.tsx src/stores/game-store.ts`.
+**Requirement:** The entire game state (players, teams, configuration, session ID, XP, audio settings, current round, timeline) is persisted in `localStorage` under `phomu-game-state`. After a reload the lobby configuration is still available.
+**Rationale:** At a party the phone is cleared, locked or the app is reloaded — the configuration must not be lost.
+**Acceptance:** `persist(...)` with `name: 'phomu-game-state'` and the `partialize` list (`src/stores/game-store.ts:618-638`).
+**Verification:** `grep -n "partialize" -A 20 src/stores/game-store.ts`; no test exists — see [GAP-002](#open-gaps).
 
-### LOBBY-023 — Beim Verlassen des Spiels wird nachgefragt
-
-**Preset:** Preset
-**Anforderung:** Der Exit-Knopf im Spiel und der „Party verlassen"-Knopf im In-Game-Panel fragen per Bestätigungsdialog ab, bevor der Zustand zurückgesetzt und die Lobby geöffnet wird.
-**Begründung:** Ein unbeabsichtigter Exit mitten in der Partie zerstört den Spielstand.
-**Akzeptanz:** `handleExit` (`src/app/game/page.tsx:224-229`) — `confirm('Spiel abbrechen und zur Lobby zurückkehren?')`, danach `initSession()` und `router.push('/lobby')`.
-**Verifikation:** `grep -n "confirm(" src/app/game/page.tsx src/app/settings/account/page.tsx`.
-
-### LOBBY-024 — Die Lobby bietet ein Schnell-Setup und einen vollständigen Reset
+### LOBBY-022 — Play again keeps the lobby, a new lobby resets everything
 
 **Preset:** Preset
-**Anforderung:** In Schritt 1 führt „Schnell-Setup" direkt zum Startschritt; „Reset" setzt die Sitzung zurück und springt zu Schritt 1.
-**Begründung:** Für erfahrene Gruppen ist der Sechs-Schritte-Assistent zu lang.
-**Akzeptanz:** `src/app/lobby/page.tsx:730-738`.
-**Verifikation:** `grep -n "Schnell-Setup\|Reset ↺" src/app/lobby/page.tsx`.
+**Requirement:** On the end screen Phomu offers two ways: `Nochmal spielen` (play again) resets only the points and starts the game again (configuration and players remain), `Neue Lobby starten` (start a new lobby) resets the entire state.
+**Rationale:** Both actions are needed in practice — the first for a second round, the second for a new group.
+**Acceptance:** `resetScores` (`src/stores/game-store.ts:479-493`) resets points, rounds, history, `playedSongIds`, answers, song, timeline, but keeps players/teams/configuration; `initSession` (`:201-203`) resets everything to the initial state; calls in `src/app/game-over/page.tsx:147-159`.
+**Verification:** `grep -n "resetScores\|initSession" src/app/game-over/page.tsx src/stores/game-store.ts`.
+
+### LOBBY-023 — When leaving the game, a confirmation is requested
+
+**Preset:** Preset
+**Requirement:** The exit button in the game and the `Party verlassen` (leave party) button in the in-game panel ask for confirmation via a dialogue before the state is reset and the lobby is opened.
+**Rationale:** An accidental exit in the middle of a session destroys the game state.
+**Acceptance:** `handleExit` (`src/app/game/page.tsx:224-229`) — `confirm('Spiel abbrechen und zur Lobby zurückkehren?')`, then `initSession()` and `router.push('/lobby')`.
+**Verification:** `grep -n "confirm(" src/app/game/page.tsx src/app/settings/account/page.tsx`.
+
+### LOBBY-024 — The lobby offers a quick setup and a full reset
+
+**Preset:** Preset
+**Requirement:** In step 1 `Schnell-Setup` (quick setup) leads directly to the start step; `Reset` resets the session and jumps to step 1.
+**Rationale:** For experienced groups the six-step assistant is too long.
+**Acceptance:** `src/app/lobby/page.tsx:730-738`.
+**Verification:** `grep -n "Schnell-Setup\|Reset ↺" src/app/lobby/page.tsx`.
 
 ---
 
-# 4. Musikprovider, Anti-Spoiler und Wiedergabe (MEDIA)
+# 4. Music providers, anti-spoiler and playback (MEDIA)
 
-### MEDIA-001 — YouTube ist der Standard-Provider
-
-**Preset:** Preset
-**Anforderung:** Der Standard-Musikprovider ist `youtube`. Die Wiedergabe läuft über die YouTube-IFrame-Player-API mit `autoplay: 1`, `controls: 0`, `rel: 0` und `modestbranding: 1`.
-**Begründung:** YouTube ist der einzige Provider, der ohne Konto, ohne API-Key und ohne Bezahlung für alle Nutzer funktioniert.
-**Akzeptanz:** `DEFAULT_MUSIC_PROVIDER: 'youtube'` (`src/config/game-config.ts:80`); Player-Initialisierung `src/components/game/MusicPlayer.tsx:290-303`.
-**Verifikation:** `grep -n "autoplay\|controls\|rel\|modestbranding" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-002 — Die Provider-Auswahl ist persistent
+### MEDIA-001 — YouTube is the default provider
 
 **Preset:** Preset
-**Anforderung:** Der gewählte Provider (`youtube`, `spotify-premium`, `spotify-free`, `amazon-music`) und der YouTube-Playermodus (`standard` = www.youtube.com, `music` = music.youtube.com) werden gespeichert und bleiben über Sitzungen erhalten.
-**Begründung:** Provider-Wechsel bei jeder Partie wäre lästig.
-**Akzeptanz:** `preferredMusicProvider` und `preferredPlayer` in der `partialize`-Liste (`src/stores/game-store.ts:626-628`); Auswahl in `src/app/settings/audio/page.tsx` und `src/components/game/InGameSettingsPanel.tsx`.
-**Verifikation:** `grep -n "preferredMusicProvider" src/stores/game-store.ts src/app/settings/audio/page.tsx`.
+**Requirement:** The default music provider is `youtube`. Playback runs via the YouTube IFrame Player API with `autoplay: 1`, `controls: 0`, `rel: 0` and `modestbranding: 1`.
+**Rationale:** YouTube is the only provider that works for every user without an account, without an API key and without payment.
+**Acceptance:** `DEFAULT_MUSIC_PROVIDER: 'youtube'` (`src/config/game-config.ts:80`); player initialisation `src/components/game/MusicPlayer.tsx:290-303`.
+**Verification:** `grep -n "autoplay\|controls\|rel\|modestbranding" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-003 — YouTube-Links werden robust auf Video-IDs normalisiert
-
-**Preset:** Preset
-**Anforderung:** Sowohl reine 11-stellige IDs als auch vollständige URLs (`youtube.com/watch?v=`, `youtu.be/`, `/embed/`, `/vi/`) werden zu einer Video-ID aufgelöst. Ist weder ID noch URL erkennbar, greift der unveränderte Wert.
-**Begründung:** Der Katalog mischt beide Formen; eine robuste Auflösung ist die Grundlage für den Fallback-Mechanismus.
-**Akzeptanz:** `extractYouTubeId` (`src/components/game/MusicPlayer.tsx:69-73`).
-**Verifikation:** Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-004 — Beschädigte YouTube-Videos lösen eine Fallback-Kette aus
+### MEDIA-002 — The provider selection is persistent
 
 **Preset:** Preset
-**Anforderung:** Schlägt ein YouTube-Video fehl, wird automatisch der nächste Eintrag der Fallback-Liste versucht (Hauptlink, dann `youtubeAlternatives`, dann `fallbackYoutubeId`). Ist die Liste erschöpft, zeigt der Player einen Fehlerzustand mit drei Aktionen: „Jetzt überspringen", „Alternative Player" (Wechsel zwischen www.youtube.com und music.youtube.com) und „Report Missing".
-**Begründung:** Region-Sperren und Löschungen sind bei YouTube der Normalfall, nicht die Ausnahme; die Partie darf daran nicht scheitern.
-**Akzeptanz:** Fallback-Queue `src/components/game/MusicPlayer.tsx:149-155`, Fehlerbehandlung `:254-272`, Fehler-Overlay `:483-535`; Katalogstand: 30 Songs mit `youtubeAlternatives`, 7 mit `fallbackYoutubeId` (gemessen über `src/data/songs/*.json`).
-**Verifikation:** `grep -n "fallbackQueue" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** The selected provider (`youtube`, `spotify-premium`, `spotify-free`, `amazon-music`) and the YouTube player mode (`standard` = www.youtube.com, `music` = music.youtube.com) are stored and survive sessions.
+**Rationale:** Changing the provider for every session would be annoying.
+**Acceptance:** `preferredMusicProvider` and `preferredPlayer` in the `partialize` list (`src/stores/game-store.ts:626-628`); selection in `src/app/settings/audio/page.tsx` and `src/components/game/InGameSettingsPanel.tsx`.
+**Verification:** `grep -n "preferredMusicProvider" src/stores/game-store.ts src/app/settings/audio/page.tsx`.
 
-### MEDIA-005 — Startet ein Video nicht, gilt ein Sechs-Sekunden-Timeout
-
-**Preset:** Preset
-**Anforderung:** Bleibt der YouTube-Player im Zustand `UNSTARTED`, wird nach 6.000 ms ein Fehler angenommen und die Fallback-Kette ausgelöst.
-**Begründung:** Ohne Timeout bleibt eine Runde endlos hängen, wenn ein Video blockiert wird.
-**Akzeptanz:** `src/components/game/MusicPlayer.tsx:333-342` — `setTimeout(..., 6000)` mit Prüfung von `getPlayerState()`.
-**Verifikation:** `grep -n "6000" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-006 — Nach einem Fehler wird der Song automatisch übersprungen
+### MEDIA-003 — YouTube links are robustly normalised to video IDs
 
 **Preset:** Preset
-**Anforderung:** Ist die Fallback-Kette erschöpft, startet ein 10-Sekunden-Countdown, danach wird der Song automatisch übersprungen. Der Nutzer kann den Skip auch sofort auslösen.
-**Begründung:** Der Pilot soll den Fehler nicht weg tippen müssen; die sichtbare Vorwarnung behält die Kontrolle.
-**Akzeptanz:** `startAutoSkipCountdown` (`src/components/game/MusicPlayer.tsx:239-252`) mit Startwert 10 und 1-Sekunden-Takt; Anzeige „Skip in {n}s" (`:504-508`); Sofort-Skip-Knopf (`:511-516`).
-**Verifikation:** `grep -n "setAutoSkipCountdown(10)" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** Both plain 11-character IDs and complete URLs (`youtube.com/watch?v=`, `youtu.be/`, `/embed/`, `/vi/`) are resolved to a video ID. If neither ID nor URL is recognisable, the unchanged value applies.
+**Rationale:** The catalogue mixes both forms; a robust resolution is the basis of the fallback mechanism.
+**Acceptance:** `extractYouTubeId` (`src/components/game/MusicPlayer.tsx:69-73`).
+**Verification:** no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-007 — Die Wiedergabe startet an einem definierten Offset
-
-**Preset:** Preset
-**Anforderung:** Songs können über `previewTimestamp.start` ab einer definierten Sekunde abgespielt werden. Fehlt der Wert, startet die Wiedergabe bei Sekunde 0.
-**Begründung:** Intros, in denen der Song nicht erkennbar ist, verschwenden die knappe Fragezeit.
-**Akzeptanz:** `startSeconds = 0` als Default (`src/components/game/MusicPlayer.tsx:133`), Weitergabe an `playerVars.start` (`:299`), Aufrufstellen `src/components/game/modes/TimelineMode.tsx:270-282` (ohne Offset), `src/components/game/modes/HintMasterMode.tsx:131`, `src/components/game/modes/LyricsMode.tsx:120`, `src/components/game/modes/VibeCheckMode.tsx:98`, `src/components/game/modes/CoverConfusionMode.tsx:113`.
-**Verifikation:** `grep -rn "startSeconds" src/components/game/`.
-
-### MEDIA-008 — Die Wiedergabe endet automatisch am konfigurierten Endpunkt
+### MEDIA-004 — Broken YouTube videos trigger a fallback chain
 
 **Preset:** Preset
-**Anforderung:** Ist ein Endpunkt gesetzt, wird die Wiedergabe bei Erreichen des Endpunkts pausiert. Die Prüfung erfolgt alle 500 ms.
-**Begründung:** Der Modus gibt die Wiedergabelänge vor; die Steuerung darf nicht vom Nutzer abhängen.
-**Akzeptanz:** `src/components/game/MusicPlayer.tsx:317-327` — `setInterval(..., 500)`, `pauseVideo()` bei `currentTime >= endSeconds`.
-**Verifikation:** `grep -n "endSeconds" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If a YouTube video fails, the next entry of the fallback list is tried automatically (main link, then `youtubeAlternatives`, then `fallbackYoutubeId`). If the list is exhausted, the player shows an error state with three actions: `Jetzt überspringen` (skip now), `Alternative Player` (alternative player — switch between www.youtube.com and music.youtube.com) and `Report Missing`.
+**Rationale:** Regional blocks and deletions are the normal case on YouTube, not the exception; the session must not fail because of them.
+**Acceptance:** Fallback queue `src/components/game/MusicPlayer.tsx:149-155`, error handling `:254-272`, error overlay `:483-535`; catalogue state: 30 songs with `youtubeAlternatives`, 7 with `fallbackYoutubeId` (measured via `src/data/songs/*.json`).
+**Verification:** `grep -n "fallbackQueue" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-009 — Die Lautstärke und der An/Aus-Zustand steuern die Wiedergabe
+### MEDIA-005 — If a video does not start, a six-second timeout applies
 
 **Preset:** Preset
-**Anforderung:** Die globale Musiklautstärke (0–1) wird auf den Player übertragen (als Prozent 0–100). Ist die Musik deaktiviert, wird der Player stumm geschaltet und pausiert.
-**Begründung:** Ohne Master-Lautstärke kann eine Partie in einer Bibliothek unhörbar oder unauslöschbar sein.
-**Akzeptanz:** `onReady` setzt Lautstärke und prüft `musicEnabled` (`src/components/game/MusicPlayer.tsx:305-315`); der Reaktivierungseffekt `:372-389`; Vorgaben `musicEnabled: true`, `musicVolume: 0.8` (`src/stores/game-store.ts:177-180`).
-**Verifikation:** `grep -n "musicVolume" src/components/game/MusicPlayer.tsx src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If the YouTube player stays in the state `UNSTARTED`, an error is assumed after 6,000 ms and the fallback chain is triggered.
+**Rationale:** Without a timeout a round hangs forever when a video is blocked.
+**Acceptance:** `src/components/game/MusicPlayer.tsx:333-342` — `setTimeout(..., 6000)` with a check of `getPlayerState()`.
+**Verification:** `grep -n "6000" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-010 — Spotify Free nutzt die 30-Sekunden-Preview
+### MEDIA-006 — After an error the song is skipped automatically
+
+**Preset:** Preset
+**Requirement:** If the fallback chain is exhausted, a 10-second countdown starts, after which the song is skipped automatically. The user can also trigger the skip immediately.
+**Rationale:** The pilot should not have to tap the error away; the visible warning keeps the control.
+**Acceptance:** `startAutoSkipCountdown` (`src/components/game/MusicPlayer.tsx:239-252`) with start value 10 and a 1-second tick; display `Skip in {n}s` (`:504-508`); immediate skip button (`:511-516`).
+**Verification:** `grep -n "setAutoSkipCountdown(10)" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### MEDIA-007 — Playback starts at a defined offset
+
+**Preset:** Preset
+**Requirement:** Songs can be played from a defined second via `previewTimestamp.start`. If the value is missing, playback starts at second 0.
+**Rationale:** Intros in which the song is not recognisable waste the scarce question time.
+**Acceptance:** `startSeconds = 0` as default (`src/components/game/MusicPlayer.tsx:133`), handover to `playerVars.start` (`:299`), call sites `src/components/game/modes/TimelineMode.tsx:270-282` (without offset), `src/components/game/modes/HintMasterMode.tsx:131`, `src/components/game/modes/LyricsMode.tsx:120`, `src/components/game/modes/VibeCheckMode.tsx:98`, `src/components/game/modes/CoverConfusionMode.tsx:113`.
+**Verification:** `grep -rn "startSeconds" src/components/game/`.
+
+### MEDIA-008 — Playback ends automatically at the configured end point
+
+**Preset:** Preset
+**Requirement:** If an end point is set, playback is paused when the end point is reached. The check happens every 500 ms.
+**Rationale:** The mode dictates the playback length; the control must not depend on the user.
+**Acceptance:** `src/components/game/MusicPlayer.tsx:317-327` — `setInterval(..., 500)`, `pauseVideo()` at `currentTime >= endSeconds`.
+**Verification:** `grep -n "endSeconds" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### MEDIA-009 — The volume and the on/off state control playback
+
+**Preset:** Preset
+**Requirement:** The global music volume (0–1) is transferred to the player (as a percentage 0–100). If the music is disabled, the player is muted and paused.
+**Rationale:** Without a master volume a session in a library can be inaudible or inescapable.
+**Acceptance:** `onReady` sets the volume and checks `musicEnabled` (`src/components/game/MusicPlayer.tsx:305-315`); the reactivation effect `:372-389`; defaults `musicEnabled: true`, `musicVolume: 0.8` (`src/stores/game-store.ts:177-180`).
+**Verification:** `grep -n "musicVolume" src/components/game/MusicPlayer.tsx src/stores/game-store.ts`; no test exists — see [GAP-001](#open-gaps).
+
+### MEDIA-010 — Spotify Free uses the 30-second preview
 
 **Preset:** Optional
-**Anforderung:** Ist `spotify-free` gewählt und ein `links.spotifyFreePreview` hinterlegt, wird die Preview über ein `<audio>`-Element abgespielt. Ist keine Preview hinterlegt, wird YouTube verwendet.
-**Begründung:** Der kostenlose Spotify-Zugang liefert nur 30 Sekunden; ohne Preview bleibt YouTube die ehrliche Antwort.
-**Akzeptanz:** `useSpotifyFree` (`src/components/game/MusicPlayer.tsx:168`), Vorschau-Block `:573-583`, Einblendhinweis „Free ist auf kurze Preview-Clips begrenzt" (`:578-580`); Katalogstand: nur 7 von 1.615 Songs haben `spotifyFreePreview` (gemessen).
-**Verifikation:** `grep -n "useSpotifyFree" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
+**Requirement:** If `spotify-free` is selected and a `links.spotifyFreePreview` is stored, the preview is played via an `<audio>` element. If no preview is stored, YouTube is used.
+**Rationale:** The free Spotify access delivers only 30 seconds; without a preview YouTube remains the honest answer.
+**Acceptance:** `useSpotifyFree` (`src/components/game/MusicPlayer.tsx:168`), preview block `:573-583`, overlay hint `Free ist auf kurze Preview-Clips begrenzt` (free is limited to short preview clips) (`:578-580`); catalogue state: only 7 of 1,615 songs have `spotifyFreePreview` (measured).
+**Verification:** `grep -n "useSpotifyFree" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-011 — Spotify Premium nutzt den Embed-Player
-
-**Preset:** Optional
-**Anforderung:** Ist `spotify-premium` gewählt und eine Spotify-Track-ID vorhanden, wird ein Spotify-Embed-iframe über den Player gelegt. Ohne Premium-Konto bleibt YouTube aktiv, und der Nutzer wird darauf hingewiesen.
-**Begründung:** Der Vollton-Playback über Spotify ist ein Komfortmerkmal; YouTube bleibt der verlässliche Weg.
-**Akzeptanz:** `extractSpotifyTrackId` (`src/components/game/MusicPlayer.tsx:75-80`), `useSpotifyPremium` (`:167`), Embed `:559-571`, Hinweis „bei fehlender Premium-Wiedergabe wird YouTube genutzt" (`:552`); Katalogstand: 734 von 1.615 Songs haben einen Spotify-Link.
-**Verifikation:** `grep -n "useSpotifyPremium" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-012 — Amazon Music nutzt den Embed-Player, Prime nur mit Preview
+### MEDIA-011 — Spotify Premium uses the embed player
 
 **Preset:** Optional
-**Anforderung:** Für Amazon existieren zwei Pfade: `amazon-music-premium` mit Voll-Track-Embed (aus `links.amazonMusic`) und `amazon-music` mit Prime-Preview (aus `links.amazonPrimePreview`). Fehlt die jeweilige Quelle, wird YouTube verwendet und der eingeschränkte Umfang wird angezeigt.
-**Begründung:** Amazon Music liefert ohne Prime-Zugang keine Vorschau; der Nutzer muss wissen, warum es leiser oder kürzer klingt.
-**Akzeptanz:** `extractAmazonTrackId` mit fünf unterstützten URL-Formen (`src/components/game/MusicPlayer.tsx:96-120`), `useAmazonPrime`/`useAmazonPremium` (`:169-170`), Embeds `:585-619`, Hinweis `:553-555`; Katalogstand: 381 Songs mit `amazonMusic`, 0 mit `amazonPrimePreview` (gemessen) — siehe [GAP-012](#offene-lücken).
-**Verifikation:** `npm run test -- MusicPlayer` (bestehende Tests decken `extractAmazonTrackId` ab); Test existiert nicht für die Pfadwahl — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-013 — Fehlende Links können gemeldet werden, mit Rate-Limit
-
-**Preset:** Preset
-**Anforderung:** Der Nutzer kann einen nicht abspielbaren Song melden. Der Meldeweg ist ausschließlich nutzergetriggert: Es wird ein GitHub-Issue mit technischen Metadaten (Song-ID, Titel, Künstler, Pack, gewählter Provider, vorhandene Links, Zeitzone, Locale, Region) in einem neuen Tab geöffnet. Ist keine Issue-URL konfiguriert, wird der JSON-Report in die Zwischenablage kopiert.
-**Begründung:** Die Community kann Link- und Regionsprobleme selbst heilen; der Meldeweg soll ohne Server auskommen.
-**Akzeptanz:** `handleReportMissing` (`src/components/game/MusicPlayer.tsx:172-237`); die Nutzerfreigabe wird ausdrücklich vermerkt: „avoid free-text fields … to prevent accidental transmission of PII" (`src/app/privacy/page.tsx`, Abschnitt „Technical Metadata").
-**Verifikation:** `grep -n "NEXT_PUBLIC_GITHUB_ISSUE_URL" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-014 — Die Meldung ist auf fünf Meldungen pro Stunde und Gerät begrenzt
-
-**Preset:** Preset
-**Anforderung:** Pro Gerät sind maximal 5 Meldungen pro Stunde erlaubt. Jeder Song kann nur einmal gemeldet werden. Die Geräte-ID liegt im `localStorage` unter `phomu-device-id`, der Meldestatus unter `phomu-missing-report-state-v1`.
-**Begründung:** Ohne Begrenzung produziert ein defekter Song einen Meldesturm in die offenen Issues.
-**Akzeptanz:** `src/components/game/MusicPlayer.tsx:172-195` — `HOUR_MS = 60 * 60 * 1000`, `MAX_PER_HOUR = 5`, Duplikatprüfung über `parsed.songs[songId]`; Statusanzeige `:621-627` („Rate limit: max 5/h je Gerät", „Für diesen Song bereits gemeldet").
-**Verifikation:** `grep -n "MAX_PER_HOUR\|phomu-device-id\|phomu-missing-report-state-v1" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-015 — Das Anti-Spoiler-Overlay nutzt Blur plus Aufdeck-Geste
-
-**Preset:** Preset
-**Anforderung:** Ist `blurred` gesetzt, liegt über dem Player eine Blur-Schicht (`blur-[60px]`, `opacity-50`, `scale-125`, `pointer-events-none`). Ein Drag-Griff erlaubt das Aufdecken ab einer horizontalen Verschiebung von mehr als 150 px. Nach dem Aufdecken kann der Zustand über „Verbergen" zurückgesetzt werden.
-**Begründung:** Die Geste ist bewusst nicht-trivial: Wer sie kennt, bekommt einen Vorteil — das ist der Anti-Cheat, den der Pilot kontrolliert.
-**Akzeptanz:** Blur-Wrapper `src/components/game/MusicPlayer.tsx:424-430`; Overlay `:434-478` — `drag="x"`, `if (info.offset.x > 150) setVideoRevealed(true)`; „Verbergen"-Knopf `:538-545`.
-**Verifikation:** `grep -n "offset.x > 150\|blur-\[60px\]" src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-016 — Fehlt ein abspielbares Medium, wird das explizit gesagt
-
-**Preset:** Preset
-**Anforderung:** Gibt es weder YouTube-ID noch Spotify-/Amazon-Quelle, rendert der Player den Hinweis „Kein Video verfügbar" statt einer leeren Fläche.
-**Begründung:** Eine leere Fläche sieht wie ein Fehler im Spiel aus; der Klartext erklärt die Lage.
-**Akzeptanz:** `src/components/game/MusicPlayer.tsx:417-419`.
-**Verifikation:** `grep -n "Kein Video verfügbar" src/components/game/MusicPlayer.tsx`.
-
-### MEDIA-017 — Der Musikplayer bleibt über den Reveal-Übergang hinweg montiert
-
-**Preset:** Preset
-**Anforderung:** Während des Wechsels von der Frage- zur Auflösungsphase wird die Frage-Komponente nicht unmounted, sondern per `display: none` ausgeblendet. Dadurch läuft die Wiedergabe ohne Neustart weiter.
-**Begründung:** Ein Neustart des Videos mitten in der Auflösung wäre hörbar und würde den Rhythmus brechen.
-**Akzeptanz:** `src/app/game/page.tsx:404-431` — Kommentar „QuestionPhase bleibt gemountet … display:none hält den Iframe am Leben — Audio läuft weiter"; `QuestionPhase` und `RevealPhase` werden im selben Container gerendert (`:423-460`).
-**Verifikation:** `grep -n "display: 'none'" src/app/game/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### MEDIA-018 — Der Providerstatus wird im Player angezeigt
-
-**Preset:** Preset
-**Anforderung:** Bei Nutzung eines eingeschränkten Providers blendet der Player unten links einen Status-Text ein, der die Einschränkung benennt und den YouTube-Fallback ankündigt.
-**Begründung:** Transparenz über die tatsächliche Tonquelle verhindert Beschwerden über „fehlende" Musik.
-**Akzeptanz:** `src/components/game/MusicPlayer.tsx:547-557`.
-**Verifikation:** `grep -n "YouTube-Fallback aktiv" src/components/game/MusicPlayer.tsx`.
-
----
-
-# 5. Oberfläche, Themes, Navigation, Projektor, Barrierefreiheit (UI)
-
-### UI-001 — Vier Themes mit CSS-Custom-Properties
-
-**Preset:** Preset
-**Anforderung:** Phomu bietet die Themes `jackbox` (Standard), `spotify`, `youtube` und `musicwall`. Jedes Theme definiert dieselben Tokens (`--color-bg`, `--color-bg-secondary`, `--color-bg-card`, `--color-text`, `--color-text-secondary`, `--color-primary`, `--color-primary-hover`, `--color-secondary`, `--color-accent`, `--color-success`, `--color-error`, `--color-border`, `--radius`).
-**Begründung:** Ein einheitlicher Token-Satz macht neue Themes zu einer reinen CSS-Datei.
-**Akzeptanz:** `AVAILABLE_THEMES` (`src/config/game-config.ts:86`), `DEFAULT_THEME: 'jackbox'` (`:85`); die vier Token-Blöcke in `src/app/globals.css`.
-**Verifikation:** `grep -n "data-theme=" src/app/globals.css`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-002 — Das Theme wird über ein HTML-Attribut gesteuert
-
-**Preset:** Preset
-**Anforderung:** Das aktive Theme wird über `data-theme` am `<html>`-Element gesetzt und unter `phomu-theme` in `localStorage` gespeichert. Ist der gespeicherte Wert unbekannt, greift das Standard-Theme.
-**Begründung:** Ein Attribut statt JavaScript-Klassen erlaubt serverseitiges Styling und verhindert Flackern.
-**Akzeptanz:** `src/contexts/ThemeContext.tsx:27-41` — `STORAGE_KEY = 'phomu-theme'`, Validierung gegen `PHOMU_CONFIG.AVAILABLE_THEMES` (`:33`), `document.documentElement.setAttribute('data-theme', theme)` (`:39`); Startwert in `src/app/layout.tsx:40` (`data-theme="jackbox"`).
-**Verifikation:** `grep -n "data-theme" src/contexts/ThemeContext.tsx src/app/layout.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-003 — Theme- und Sprachumschalter sind in NavBar und Settings erreichbar
-
-**Preset:** Preset
-**Anforderung:** Das Theme und die Sprache lassen sich sowohl über das Einstellungs-Panel der Navigationsleiste als auch über die Einstellungen-Seiten umschalten. Die aktive Auswahl ist eindeutig markiert.
-**Begründung:** Der Wechsel muss jederzeit erreichbar sein, auch mitten im Spiel.
-**Akzeptanz:** NavBar-Panel `src/components/ui/NavBar.tsx`; `ThemeSwitcher` (`src/components/ui/ThemeSwitcher.tsx:33-51`) und `LanguageSwitcher` (`src/components/ui/LanguageSwitcher.tsx:30-51`) mit `aria-pressed`; zusätzlich im In-Game-Panel (`src/components/game/InGameSettingsPanel.tsx`).
-**Verifikation:** `grep -rn "aria-pressed" src/components/ui/`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-004 — Die Navigationsleiste erscheint nicht im Spiel
-
-**Preset:** Preset
-**Anforderung:** Auf den Routen `/game` und `/game-over` wird keine Navigationsleiste gezeigt; diese Seiten bringen ihre eigene Kopfleiste mit.
-**Begründung:** Im Spiel ist Platz für Punkte, Modus und Timer — nicht für Navigation.
-**Akzeptanz:** `HIDDEN_PREFIXES = ['/game', '/game-over']` (`src/components/ui/ConditionalNavBar.tsx:13-19`), eingebunden in `src/app/layout.tsx:36-39`.
-**Verifikation:** `grep -n "HIDDEN_PREFIXES" src/components/ui/ConditionalNavBar.tsx`.
-
-### UI-005 — Die Navigation enthält Lobby und Browse
-
-**Preset:** Preset
-**Anforderung:** Die Hauptnavigation enthält die Links „Lobby" und „Browse" sowie einen Einstellungs-Knopf, der ein Panel mit Sprache, Theme und Admin-Link öffnet. Der aktive Eintrag ist farblich hervorgehoben.
-**Begründung:** Zwei Hauptziele genügen: spielen und stöbern.
-**Akzeptanz:** `NAV_LINKS` (`src/components/ui/NavBar.tsx:17-20`), `isActive`-Berechnung in der Renderfunktion, Admin-Link auf `/admin/songs`.
-**Verifikation:** `grep -n "NAV_LINKS" src/components/ui/NavBar.tsx`.
-
-### UI-006 — Der Projektor-Modus ist spoilerfrei
-
-**Preset:** Preset
-**Anforderung:** Die Route `/projector` zeigt Modus, Runde, Phase, Wertung, aktiven Spieler und den Fortschritt zum Ziel — aber niemals Titel, Künstler, Cover oder Jahr des aktuellen Songs. Während der Fragerunde steht dort ein animierter Platzhalter.
-**Begründung:** Der Beamer hängt über dem Tisch; eine dort sichtbare Lösung entwertet die Runde für den ganzen Raum.
-**Akzeptanz:** Platzhalter `src/app/projector/page.tsx:226-254`; im Player wird kein Song-Titel angezeigt; `phaseLabel` (`:54-59`).
-**Verifikation:** `grep -n "Frage läuft" src/app/projector/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-007 — Der Projektor-Modus synchronisiert sich über denselben Zustand
-
-**Preset:** Preset
-**Anforderung:** `/projector` liest aus demselben persistierten Zustand wie das Spiel und rendert alle 2 Sekunden neu, damit Punktänderungen vom Gerät ankommen. Ohne laufendes Spiel zeigt die Route „Kein Spiel aktiv".
-**Begründung:** Ein zweites Gerät oder ein zweiter Tab soll ohne Server dieselbe Partie spiegeln.
-**Akzeptanz:** `setInterval(..., 2000)` (`src/app/projector/page.tsx:41-44`), Zustandsquelle `useGameStore()` (`:27-36`), Leerzustand `:61-69`; Persistenz siehe [LOBBY-021](#lobby-021--die-sitzung-ist-clientseitig-und-überlebt-einen-reload).
-**Verifikation:** `grep -n "2000" src/app/projector/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-008 — Der Projektor-Modus ist im Spiel per Knopf erreichbar
-
-**Preset:** Preset
-**Anforderung:** Aus dem In-Game-Einstellungs-Panel öffnet ein Knopf den Projektor-Modus in einem neuen Browser-Tab.
-**Begründung:** Der Beamer ist ein zweites Gerät; ein Tabwechsel auf dem Spielgerät wäre ein Fehler.
-**Akzeptanz:** `window.open('/projector', '_blank')` in `src/components/game/InGameSettingsPanel.tsx`.
-**Verifikation:** `grep -n "projector" src/components/game/InGameSettingsPanel.tsx`.
-
-### UI-009 — Die Kopfleiste zeigt Modus, Piloten, Fortschritt und Timer
-
-**Preset:** Preset
-**Anforderung:** Die Spiel-Kopfleiste zeigt den aktiven Modus (mit Emoji), den Piloten (Avatar, Name, Farbe), den Fortschritt zum Ziel und — sofern `timeLimitSeconds` gesetzt ist — einen Sekundenzähler. Sie enthält einen Exit-Knopf mit `aria-label`.
-**Begründung:** Der Pilot muss jederzeit wissen, wer dran ist, wie lange noch und wie weit das Spiel ist.
-**Akzeptanz:** `src/components/game/GameHeader.tsx:127-209`; `TimerCountdown` `:66-92` mit Farbwechsel bei ≤ 20 s (`:78-81`) und `aria-label` (`:87`); `timeLimitSeconds` wird nur in der Fragephase übergeben (`src/app/game/page.tsx:317`).
-**Verifikation:** `grep -n "TimerCountdown\|aria-label" src/components/game/GameHeader.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-010 — Läuft die Fragezeit ab, geht die Runde in die Auflösung
-
-**Preset:** Preset
-**Anforderung:** Erreicht der Timer 0, wechselt die Phase von `question` auf `reveal`. In anderen Phasen hat der Timer keine Wirkung.
-**Begründung:** Ohne automatische Auflösung hängt die Partie, wenn der Pilot vergisst.
-**Akzeptanz:** `handleTimeUp` (`src/app/game/page.tsx:232-236`) — `if (roundPhase === 'question') advancePhase('reveal')`; Timer-Reset je Runde über den `key` in `src/components/game/GameHeader.tsx:201-205`.
-**Verifikation:** `grep -n "handleTimeUp" -A 5 src/app/game/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-011 — Touch-Ziele sind mindestens 44 Pixel hoch
-
-**Preset:** Preset
-**Anforderung:** Interaktive Elemente in Spiel und Lobby sind mindestens 44 px hoch (Höhe oder Breite). Das gilt insbesondere für Modus-, Pack- und Einstellungsknöpfe, den Entfernen-Knopf eines Spielers und die Knöpfe der Zeitlimit-Auswahl.
-**Begründung:** 44 px ist die etablierte Mindestgröße für Touch-Ziele; darunter wird es auf dem Handy unzuverlässig.
-**Akzeptanz:** `min-h-[44px]` in `src/components/lobby/ModeSelector.tsx`, `src/components/lobby/PackSelector.tsx`, `src/components/game/QuestionPhase.tsx:108`; `w-11 h-11` in `src/components/lobby/PlayerCard.tsx` und `src/components/game/GameHeader.tsx:150`.
-**Verifikation:** `grep -rn "min-h-\[44px\]\|h-11 w-11\|w-11 h-11" src/components/ | wc -l`; Test existiert nicht — siehe [GAP-021](#offene-lücken).
-
-### UI-012 — Safe-Area-Insets werden berücksichtigt
-
-**Preset:** Preset
-**Anforderung:** Für Geräte mit Notch und Home-Indicator werden die CSS-Variablen `--sat`, `--sar`, `--sab`, `--sal` aus `env(safe-area-inset-*)` gesetzt; die Utilities `pt-safe`, `pb-safe`, `pl-safe`, `pr-safe` verwenden sie. Der Viewport wird mit `viewportFit: 'cover'` geöffnet.
-**Begründung:** Ohne die Insets liegt die Kopfzeile unter dem Notch und der Footer über dem Home-Indicator.
-**Akzeptanz:** `src/app/globals.css` (Safe-Area-Block und Utilities); `src/app/layout.tsx:29-33` (`viewportFit: 'cover'`); Anwendung in `src/app/lobby/page.tsx:128` und `:697`, `src/components/game/GameHeader.tsx:129`.
-**Verifikation:** `grep -n "safe-area-inset" src/app/globals.css`; Test existiert nicht — siehe [GAP-021](#offene-lücken).
-
-### UI-013 — Tastaturbedienung und sichtbarer Fokus sind garantiert
-
-**Preset:** Preset
-**Anforderung:** Der Timeline-Modus ist per Tastatur bedienbar: Zifferntasten wählen den Slot 1–n, Pfeiltasten navigieren, Enter/Leertaste bestätigt. Sichtbare Fokusringe werden über `:focus-visible` mit einer 3 px starken Kontur in der Akzentfarbe gesetzt; Tooltips erscheinen auch bei Fokus.
-**Begründung:** Am Laptop zu Hause wird Phomu ohne Maus gespielt.
-**Akzeptanz:** `src/components/game/modes/TimelineMode.tsx:242-255` (Tastatursteuerung), `src/app/globals.css` (`:focus-visible`-Block), `src/components/ui/Tooltip.tsx` (`onFocus`/`onBlur`).
-**Verifikation:** `grep -n "focus-visible" src/app/globals.css`; `grep -n "ArrowUp" src/components/game/modes/TimelineMode.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-014 — Das Rückmeldebild ist bewusst „juicy", aber nicht{blockierend}
-
-**Preset:** Preset
-**Anforderung:** Richtige und falsche Antworten werden mit deterministisch gewählten Texten aus zwei Listen (je über 100 Einträge) quittiert. Gleiche Eingabe (Song-ID, Richtig/Falsch) ergibt immer denselben Text. Die Texte variieren den Ton zwischen flapsig und trocken, ohne die Spielbarkeit zu stören.
-**Begründung:** Die Rückmeldung ist ein wesentlicher Teil des_party-Faktors; Determinismus sorgt dafür, dass ein Song immer gleich reagiert.
-**Akzeptanz:** `CORRECT_MESSAGES` (`src/utils/feedback-messages.ts:10`), `WRONG_MESSAGES` (`:115`), `hashSeed`/`pickDeterministic` (`:223-240`), `getSpicyMessage`/`getSpicyColor` (`:242-249`); Aufrufe in `src/components/game/RevealPhase.tsx:508-513` und in jedem Modus.
-**Verifikation:** `grep -n "getSpicyMessage" src/components/game/`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-015 — Feedback-Overlays begleiten die Spielereignisse
-
-**Preset:** Preset
-**Anforderung:** Beim Wechsel in die Fragephase, beim Reveal, bei richtiger und falscher Antwort sowie beim Spielende werden eigene Overlays bzw. Soundeffekte ausgelöst. Doppelte Auslösung bei einem Re-Render ist ausgeschlossen (Vergleich mit dem vorherigen Zustand).
-**Begründung:** Rückmeldung muss an das Ereignis gekoppelt sein, nicht an den Renderzyklus.
-**Akzeptanz:** `src/hooks/useGameAudioCues.ts:76-96` (Phasenvergleich), `:97-108` (Antwortzähler), `:109-116` (Spielende); `FeedbackOverlay` und `DiceAnimation` in `src/app/game/page.tsx:300-304`.
-**Verifikation:** `grep -n "previousPhaseRef\|previousAnswerCountRef" src/hooks/useGameAudioCues.ts`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-016 — Soundeffekte sind abschaltbar und skalierbar
-
-**Preset:** Preset
-**Anforderung:** Soundeffekte lassen sich einzeln deaktivieren und in der Lautstärke regeln (Vorgabe 0,55). Fehlende oder nicht abspielbare Dateien führen zu keiner Fehlermeldung.
-**Begründung:** Soundeffekte dürfen den Musikfluss nie unterbrechen.
-**Akzeptanz:** `src/hooks/useGameAudioCues.ts:36-58` — `if (!sfxEnabled) return`, Stille im Fehlerfall; Vorgabe `sfxEnabled: true`, `sfxVolume: 0.55` (`src/stores/game-store.ts:181-184`); Regler `src/app/settings/audio/page.tsx`.
-**Verifikation:** `grep -n "sfxVolume" src/hooks/useGameAudioCues.ts src/stores/game-store.ts`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### UI-017 — Das Einstellungs-Hub ist in fünf Bereiche gegliedert
-
-**Preset:** Preset
-**Anforderung:** `/settings` verlinkt auf fünf Bereiche: Spieler & Profil, Audio & Provider, Governance, Legal & Konto und Spielhilfe. Im Kopf werden Spielerzahl, Gesamt-XP und Level angezeigt; läuft ein Spiel, führt ein Knopf zurück ins Spiel.
-**Begründung:** Fünf klar getrennte Bereiche sind auf dem Handy auffindbar; eine flache Liste mit 20 Optionen nicht.
-**Akzeptanz:** `SETTINGS_SECTIONS` (`src/app/settings/page.tsx:10-37`), `StatCard`-Anzeige (`:42-47`), Level-Berechnung `Math.floor(totalXP / 100) + 1` (`:43`).
-**Verifikation:** `grep -n "SETTINGS_SECTIONS" src/app/settings/page.tsx`.
-
-### UI-018 — Änderungen im Spiel gelten ab der nächsten Runde
-
-**Preset:** Preset
-**Anforderung:** Ändern sich Modi, Packs oder Governance-Regeln während eines laufenden Spiels, bleiben Spieler, Punkte und der aktuelle Stand unverändert. Die Oberfläche weist darauf hin, dass Änderungen erst ab der nächsten Runde greifen.
-**Begründung:** Ein Moduswechsel mitten in einer Runde würde die laufende Runde entwerten.
-**Akzeptanz:** Hinweistext `src/app/settings/game-rules/page.tsx` („Änderungen gelten ab der nächsten Runde"), `currentRound`-Abfrage in allen Settings-Seiten, Modus-/Packwechsel über `setConfig` ohne Eingriff in `currentRound` (`src/stores/game-store.ts:248-252`).
-**Verifikation:** `grep -rn "currentRound" src/app/settings/*/page.tsx | wc -l`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
----
-
-# 6. Internationalisierung (I18N)
-
-### I18N-001 — Zwei Sprachen: Deutsch als Standardsprache
-
-**Preset:** Preset
-**Anforderung:** Unterstützt sind `de` (Standard) und `en`. Die Liste der unterstützten Sprachen und die Standardsprache sind zentral in der Konfiguration hinterlegt.
-**Begründung:** Deutsch ist die Sprache des Marktzentrums; Englisch erschließt den internationalen Markt.
-**Akzeptanz:** `SUPPORTED_LANGUAGES: ['de', 'en']` und `DEFAULT_LANGUAGE: 'de'` (`src/config/game-config.ts:76-77`); `fallbackLng: 'de'` (`src/i18n/config.ts:22`).
-**Verifikation:** `grep -n "SUPPORTED_LANGUAGES\|DEFAULT_LANGUAGE" src/config/game-config.ts`; `grep -n "fallbackLng" src/i18n/config.ts`.
-
-### I18N-002 — Die Sprache wird erkannt, gespeichert und manuell umschaltbar
-
-**Preset:** Preset
-**Anforderung:** Die Sprache wird über `localStorage` und Browser-Einstellung erkannt und im `localStorage` gespeichert. Der Nutzer kann jederzeit manuell umschalten; die Umschaltung wirkt sofort.
-**Begründung:** Ein erzwungener Neustart nach dem Sprachwechsel ist ein vermeidbarer Stolperstein.
-**Akzeptanz:** `src/i18n/config.ts:26-29` — `detection: { order: ['localStorage', 'navigator'], caches: ['localStorage'] }`; Umschaltung `i18n.changeLanguage(lang)` in `src/components/ui/LanguageSwitcher.tsx:34` und `src/components/ui/NavBar.tsx`.
-**Verifikation:** `grep -n "changeLanguage" src/components/ui/`; Test existiert nicht — siehe [GAP-006](#offene-lücken).
-
-### I18N-003 — Der Sprachwechsel darf keinen unübersetzten Bildschirm zeigen
-
-**Preset:** Preset
-**Anforderung:** Die i18n-Bibliothek wird erst nach erfolgreicher Initialisierung geladen; bis dahin rendert die Anwendung nichts. Damit entsteht kein Zwischenstand mit unübersetzten oder fehlenden Texten.
-**Begründung:** Das Nachladen der Sprachpakete ist ein asynchroner Schritt; ohne Wartephase flackert die Oberfläche.
-**Akzeptanz:** `src/components/Providers.tsx:20-31` — dynamischer Import von `@/i18n/config`, `if (!isReady) return null`.
-**Verifikation:** `grep -n "isReady" src/components/Providers.tsx`; Test existiert nicht — siehe [GAP-006](#offene-lücken).
-
-### I18N-004 — DE und EN sind vollständig parallel
-
-**Preset:** Preset
-**Anforderung:** `de.json` und `en.json` enthalten denselben Schlüsselumfang in derselben Struktur; keine Werte sind leer, kein Schlüssel existiert nur in einer Sprache. Die englischen Werte sind echte Übersetzungen, keine Kopien der deutschen.
-**Begründung:** Ein einseitiger Schlüssel ist ein toter Text in der Produktion und ein Fehler in der Oberfläche.
-**Akzeptanz:** Gemessener Stand: beide Dateien haben 6 Namensräume (`app`, `landing`, `settings`, `themes`, `modes`, `common`) und je 25 Blatt-Schlüssel — parallel und vollständig. `en.json` enthält eigenständige englische Werte (z. B. `"landing.quickStartDesc": "3 clicks and you're playing!"`). Das Gate-Skript `scripts/check-i18n-completeness.mjs` prüft Parität, leere Werte und Pluralformen.
-**Verifikation:** `node scripts/check-i18n-completeness.mjs` (Gate, Exit 1 bei Verstoß) bzw. `node scripts/check-i18n-completeness.mjs --count` für die Zählung. Das Skript existiert seit dem 25.10.2026; als npm-Skript `npm run check:i18n` ist es noch nicht verdrahtet — siehe [GAP-006](#offene-lücken).
-
-### I18N-005 — Der Schlüsselraum ist flach und punktbasiert
-
-**Preset:** Preset
-**Anforderung:** Schlüssel sind flache Punktpfade der Form `namespace.unterpunkt.bezeichnung`. Schlüssel enthalten keine Interpolation; Platzhalter stehen ausschließlich im Wert (`{{count}}`).
-**Begründung:** Statische Schlüssel sind die Voraussetzung dafür, dass ein Vollständigkeits-Gate überhaupt funktionieren kann.
-**Akzeptanz:** `src/i18n/locales/de.json` und `en.json` verwenden ausschließlich Punktpfade; Platzhalter kommen im aktuellen Stand in keinem Wert vor.
-**Verifikation:** `grep -n "{{" src/i18n/locales/*.json` (muss leer sein, solange keine Platzhalter verwendet werden); Pluralformen werden vom Gate `node scripts/check-i18n-completeness.mjs` geprüft.
-
-### I18N-006 — Eigennamen und Modusnamen bleiben in beiden Sprachen identisch
-
-**Preset:** Preset
-**Anforderung:** Produkt- und Anbieternamen (Phomu, Spotify, YouTube, Jackbox, Amazon Music) sowie die sechs Modusnamen bleiben in beiden Sprachen unverändert. Die Modusnamen sind im Code englisch (`timeline`, `hint-master`, …) und werden in der Oberfläche über den Modusschlüssel übersetzt.
-**Begründung:** Ein Markenname ist kein übersetzbarer Text.
-**Akzeptanz:** `themes.*` und `modes.*` in `src/i18n/locales/de.json` und `en.json` sind identisch bzw. entsprechen dem jeweiligen Modusnamen; die Zuordnung Modus → Anzeigename erfolgt je Oberfläche (z. B. `MODE_LABELS` in `src/app/projector/page.tsx:17-24`).
-**Verifikation:** `node -e "const d=require('./src/i18n/locales/de.json'),e=require('./src/i18n/locales/en.json');console.log(JSON.stringify(d.themes)===JSON.stringify(e.themes)?'themes identisch':'ABWEICHUNG')"`; die Eigennamen-Whitelist ist im Gate über `BRAND_ALLOWLIST` hinterlegt (`scripts/check-i18n-completeness.mjs`).
-
-### I18N-007 — Jeder sichtbare Text stammt aus der Übersetzung
-
-**Preset:** Preset
-**Anforderung:** Jeder für den Nutzer sichtbare Text wird über `t()` bezogen. Im JSX steht kein Literaltext mehr.
-**Begründung:** Nur so ist „Deutsch primär, Englisch vollständig" überhaupt haltbar.
-**Akzeptanz:** **Stand: nicht erfüllt.** Derzeit wird `useTranslation` nur in `src/app/page.tsx` verwendet. Das Gate zählt 935 Literaltexte in 47 geprüften Dateien; die größten Fundorte sind `src/components/game/RevealPhase.tsx` (141), `src/components/game/FeedbackOverlay.tsx` (3) und `src/components/game/QuestionPhase.tsx` (2). Siehe [GAP-006](#offene-lücken).
-**Verifikation:** `node scripts/check-i18n-completeness.mjs --count` — meldet aktuell 935 Literaltexte in 47 Dateien; das Gate ist erst grün, wenn 0 Literaltexte verbleiben. Derzeitiger Stand zusätzlich prüfbar mit `grep -rn "useTranslation" src/ | wc -l` (Ergebnis 1).
-
----
-
-# 7. Songkatalog, Packs und Datenqualität (CAT)
-
-### CAT-001 — Der Katalog ist die Dateibasis, keine Datenbank
-
-**Preset:** Preset
-**Anforderung:** Der Songkatalog liegt als JSON je Pack unter `src/data/songs/` und wird über `src/data/songs/index.ts` zu `ALL_SONGS` zusammengeführt. Der Loader ist generiert und nicht manuell zu pflegen.
-**Begründung:** Eine versionierte Dateibasis ist reviewbar und deterministisch; die generierte Aggregation verhindert manuelle Abweichungen.
-**Akzeptanz:** `src/data/songs/index.ts` (Hinweis „This file is generated by scripts/migrate_and_deduplicate.py. Do not edit it manually."), Import von 135 Pack-Dateien; `ALL_SONGS` exportiert.
-**Verifikation:** `ls src/data/songs/*.json | grep -v packs.json | wc -l` (gemessen: 135); `grep -n "generated by" src/data/songs/index.ts`.
-
-### CAT-002 — Der Katalog umfasst 135 Pack-Dateien mit 1.615 Songs
-
-**Preset:** Preset
-**Anforderung:** Der Bestand umfasst 135 Pack-Dateien und 1.615 Songs (gemessen am 2026-10-25 über `npm run validate-catalog`).
-**Begründung:** Der Bestand ist das größte Einzelasset des Produkts; jede Zahl, die ihn beschreibt, muss messbar sein.
-**Akzeptanz:** `npm run validate-catalog` meldet „Packs: 135", „Songs: 1615".
-**Verifikation:** `npm run validate-catalog`.
-
-### CAT-003 — Es gibt genau 27 konfigurierte Packs, und alle sind im Katalog belegt
-
-**Preset:** Preset
-**Anforderung:** `PHOMU_CONFIG.SONG_PACKS` listet 27 Packs mit ID, Namen, Claim, Emoji und Farbverlauf. Jede dieser IDs kommt als `packs`-Eintrag in mindestens einem Song vor, und im Katalog existiert kein Pack-Name ohne zugehörige Konfiguration.
-**Begründung:** Ein Pack ohne Songs liefert eine leere Auswahl und blockiert die Partie; ein Katalog-Pack ohne Konfiguration ist nicht wählbar und wäre toter Bestand.
-**Akzeptanz:** `src/config/game-config.ts:89-279` (27 Einträge); gemessen: 27 verschiedene Pack-Namen in den Songdaten, 0 SONG_PACKS-IDs ohne Songs, 0 Daten-Packnamen ohne Konfiguration.
-**Verifikation:** `grep -c "^      id: '" src/config/game-config.ts` (Ergebnis 27); Gegenprüfung über ein Skript über `src/data/songs/*.json`.
-
-### CAT-004 — Der Katalog-Zugang filtert nach Pack-Zuordnung
-
-**Preset:** Preset
-**Anforderung:** Ein Song gehört zu einem Pack, wenn seine `packs`-Liste mindestens eine der gewählten Pack-IDs enthält. Der Zugang filtert über diese Zuordnung.
-**Begründung:** Die Pack-Zuordnung ist das einzige Ordnungsprinzip des Katalogs.
-**Akzeptanz:** `src/utils/song-picker.ts:36-40` — `ALL_SONGS.filter(s => s.packs.some(p => packIds.includes(p)))`; Typ `packs: string[]` (`src/types/song.ts:83`).
-**Verifikation:** `grep -n "packs.some" src/utils/song-picker.ts`; Test existiert nicht — siehe [GAP-003](#offene-lücken).
-
-### CAT-005 — Der Katalog-Gate verhindert Regressionen
-
-**Preset:** Preset
-**Anforderung:** `npm run validate-catalog` schlägt fehl, wenn die Zahl der Schema-Fehler, der Duplicate-Gruppen oder der fehlenden Jahre gegenüber `specifications/quality-baseline.json` steigt. Mit `--strict` gilt jede Überschreitung als Fehler. Der Gate schreibt optional einen JSON-Report.
-**Begründung:** Ein Bestand ohne Baseline-Gate erodiert unbemerkt.
-**Akzeptanz:** `src/utils/validate-song-catalog.ts:250-268` — Strict-Modus und Baseline-Vergleich; Baseline-Datei `specifications/quality-baseline.json` (`schemaErrors: 3194`, `duplicateGroups: 164`, `missingYears: 0`); Report-Pfad `specifications/catalog_issues_report.json` (`:200-204`).
-**Verifikation:** `npm run validate-catalog` (gemessen: „Katalog-Gate bestanden (keine Regression gegen Baseline)."); `npm run validate-catalog:report`.
-
-### CAT-006 — Dubletten sind verboten, Ausnahmen sind kuratiert
-
-**Preset:** Preset
-**Anforderung:** Zwei Songs mit gleichem normalisiertem `artist + title + year` sind unzulässig. Ausnahmen sind ausschließlich über Einträge in `specifications/duplicate-allowlist.json` erlaubt. Reine Sekundär-Import-Dubletten aus `youtube-import.json` werden nicht als kuratierter Fehler gezählt, solange höchstens ein Primär-Pack betroffen ist.
-**Begründung:** Doppelt enthaltene Songs verdoppeln die Ziehungswahrscheinlichkeit und beschädigen die Wertung des Katalogs.
-**Akzeptanz:** `duplicateKey` und `checkDuplicates` (`src/utils/validate-song-catalog.ts:92-133`), Allowlist-Zugriff `:44-53`, Sekundär-Pack-Set `:57-61`; Policy in `specifications/duplicate_policy.md`. Gemessener Stand: 0 offene Duplicate-Gruppen, 4 erlaubte Dubletten.
-**Verifikation:** `npm run validate-catalog`; `cat specifications/duplicate-allowlist.json`.
-
-### CAT-007 — Der Katalog muss jedes Jahr von 1950 bis zum laufenden Jahr abdecken
-
-**Preset:** Preset
-**Anforderung:** Für jedes Jahr von 1950 bis zum laufenden Jahr muss mindestens ein Song existieren. Fehlende Jahre sind ein harter Gate-Fehler.
-**Begründung:** Der Timeline-Modus braucht dichte Jahrgänge; ein Loch macht die Frage „wann war das?" unspielbar.
-**Akzeptanz:** `checkYearCoverage(packs, 1950, coverageEndYear)` (`src/utils/validate-song-catalog.ts:198`), Option `--coverage-end-year` (`:161-173`); gemessener Stand: 0 fehlende Jahre für 1950–2026.
-**Verifikation:** `npm run validate-catalog` (Ausgabezeile „Fehlende Jahre (1950-2026): 0").
-
-### CAT-008 — Das Jahr eines Songs liegt zwischen 1500 und laufendem Jahr + 1
-
-**Preset:** Preset
-**Anforderung:** Das Jahr eines Katalogeintrags muss eine ganze Zahl zwischen 1500 und dem laufenden Jahr plus 1 sein. Die Untergrenze 1500 deckt klassische Werke ab; die Obergrenze + 1 erlaubt angekündigte Veröffentlichungen.
-**Begründung:** Eine Untergrenze von 1900 würde korrekte Kompositionsjahre als Fehler markieren; ohne Obergrenze könnten unrealistische Veröffentlichungen einsickern.
-**Akzeptanz:** `MIN_SONG_YEAR = 1500`, `MAX_SONG_YEAR_OFFSET = 1` (`src/config/song-year-range.ts:21-24`), Prüfung in `validateSong` (`src/utils/validate-song-data.ts:122-137`), gebundene Obergrenze `getMaxSongYear` (`:27-29`).
-**Verifikation:** `npm run test -- validate-song-data` (8 Tests, u. a. „akzeptiert klassische Kompositionsjahre vor 1900" und „lehnt Zukunftsjahre jenseits +1 ab").
-
-### CAT-009 — Pflichtfelder eines Songs sind vollständig und typisiert
-
-**Preset:** Preset
-**Anforderung:** Ein Song muss enthalten: `id` (nicht leerer String), `title`, `artist`, `year` (Zahl), `country` (ISO-3166-1 alpha-2, zwei Großbuchstaben), `genre`, `difficulty` (`easy`|`medium`|`hard`), `mood` (mindestens ein Eintrag), `packs` (mindestens ein Eintrag), `hints` (4 oder 5 Strings; 5 außerhalb der Pack-Gruppe „YouTube Collection"), `isOneHitWonder` (Boolean), `links.youtube` sowie `supportedModes` und `isQRCompatible`.
-**Begründung:** Fehlende Pflichtfelder erzeugen zur Laufzeit kaputte Spielstände.
-**Akzeptanz:** `src/utils/validate-song-data.ts:107-168` und `:171-228`; Hinweisanzahl-Regel `:175-180`.
-**Verifikation:** `npm run validate-songs`; `npm run validate-catalog` (gemessen: 0 Schema-Fehler).
-
-### CAT-010 — Lyrics müssen genau drei echte und eine erfundene Zeile haben
-
-**Preset:** Preset
-**Anforderung:** Ist `lyrics` gesetzt, enthält `lyrics.real` genau drei Strings und `lyrics.fake` genau einen String. `lyrics === null` ist erlaubt und erzeugt eine Warnung, keinen Fehler.
-**Begründung:** Der Modus mischt genau diese vier Zeilen; eine andere Struktur macht die Frage unspielbar.
-**Akzeptanz:** `src/utils/validate-song-data.ts:313-324`; Typ `src/types/song.ts:96-102`. Gemessener Stand: 1.553 von 1.615 Songs haben Lyrics, 62 nicht.
-**Verifikation:** `npm run validate-catalog`; `npm run test -- validate-song-data`.
-
-### CAT-011 — Hinweise dürfen den Song nicht verraten
-
-**Preset:** Preset
-**Anforderung:** Ein Hinweis, der ein Token aus Titel oder Künstler (ab 4 Zeichen, normalisiert) enthält, erzeugt eine Warnung. Zusätzlich gilt: Liegt `hintEvidence` vor, muss es fünf gültige URLs enthalten; fehlt es, erzeugt das eine Warnung.
-**Begründung:** Ein Hinweis, der den Namen nennt, zerstört das Spiel. Die Nachweisbarkeit der Hinweise schützt zusätzlich vor falschen Angaben.
-**Akzeptanz:** `src/utils/validate-song-data.ts:191-222` — Spoiler-Token-Warnung und `hintEvidence`-Prüfung; der Hinweistext wird zur Laufzeit zusätzlich zensiert (`src/utils/censor-utils.ts:11-59`).
-**Verifikation:** `npm run validate-catalog` (gemessen: 126 Warnungen); Test existiert nicht — siehe [GAP-004](#offene-lücken).
-
-### CAT-012 — Hinweise werden zur Laufzeit zensiert
-
-**Preset:** Preset
-**Anforderung:** Vor der Anzeige wird ein Hinweis gegen Titel und Künstler geprüft. Tokens ab vier Zeichen sowie alle in der Ausnahmeliste geführten Künstlernamen (z. B. `BTS`, `U2`, `2Pac`) werden durch `[XXX]` ersetzt. Kurze Tokens (< 4 Zeichen) nur mit Wortgrenzen; Wörter aus der Ignorierliste (`THE`, `AND`, `DER`, `UND` …) werden nie zensiert.
-**Begründung:** Eine nachträglich ergänzte Cover-Version kann einen Hinweis nachträglich spoilerfrei machen — die Zensur muss zur Laufzeit erfolgen, nicht nur beim Import.
-**Akzeptanz:** `censorHint` (`src/utils/censor-utils.ts:11-59`), Konfiguration `src/config/spoiler-config.ts:13` (`MIN_LENGTH: 4`), `:19-22` (Ausnahmen), `:25-28` (Ignorierliste); Anwendung in `src/components/game/modes/HintMasterMode.tsx:156`.
-**Verifikation:** `grep -n "censorHint" src/components/game/modes/HintMasterMode.tsx src/utils/censor-utils.ts`; Test existiert nicht — siehe [GAP-004](#offene-lücken).
-
-### CAT-013 — Streaming-Links werden formal geprüft
-
-**Preset:** Preset
-**Anforderung:** `links.youtube` muss vorhanden sein; ein Platzhalter (`TODO:`, leer, `PLACEHOLDER`) erzeugt eine Warnung. `spotify` muss ein `spotify:track:`-URI oder eine `open.spotify.com/track/`-URL sein, `spotifyFreePreview`, `amazonMusic` und `amazonPrimePreview` müssen http(s)-URLs sein. `previewTimestamp.start` muss kleiner als `.end` sein.
-**Begründung:** Formfehler in Links sind die häufigste Ursache für nicht abspielbare Songs.
-**Akzeptanz:** `src/utils/validate-song-data.ts:231-308` und `:348-355`.
-**Verifikation:** `npm run validate-catalog`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### CAT-014 — Cover-Metadaten sind typisiert und geprüft
-
-**Preset:** Preset
-**Anforderung:** Ist `coverMode` gesetzt, muss `relationType` einer von `original`, `cover`, `sample`, `remix` und `confidence` einer von `low`, `medium`, `high` sein; `coverYear` muss eine Zahl sein.
-**Begründung:** Der Cover-Confusion-Modus braucht belastbare Beziehungsangaben.
-**Akzeptanz:** `src/utils/validate-song-data.ts:327-345`; Typ `src/types/song.ts:29-41`.
-**Verifikation:** `npm run validate-catalog`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### CAT-015 — Die Admin-Oberfläche bearbeitet Songs lokal und exportierbar
-
-**Preset:** Preset
-**Anforderung:** `/admin/songs` und `/admin/review` erlauben das Ansehen, Filtern, Bearbeiten und Exportieren von Songs. Änderungen werden im `localStorage` unter `phomu-admin-songs` bzw. `phomu-review-edits` gehalten und als JSON-Delta exportiert. Es werden keine Server-Daten verändert.
-**Begründung:** Der Katalog wird ohne Datenbank gepflegt; die Oberfläche ist die einzige Arbeitsfläche dafür.
-**Akzeptanz:** `src/app/admin/songs/page.tsx:30` (`STORAGE_KEY`), `src/app/admin/review/page.tsx:33` (`STORAGE_KEY = 'phomu-review-edits'`), Delta-/Vollexport in `src/app/admin/review/page.tsx`.
-**Verifikation:** `grep -n "phomu-admin-songs\|phomu-review-edits" src/app/admin/*/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### CAT-016 — Der Browse-Bereich kann einen Song direkt starten
-
-**Preset:** Preset
-**Anforderung:** Im Browse-Bereich kann ein Song per Klick sofort gespielt werden (Quick Play). Der Browse-Bereich dedupliziert nach Titel und Künstler, filtert nach Suche, Genre, Dekade, Schwierigkeit, Stimmung, One-Hit-Wonder, Lyrics und QR-Kompatibilität und paginiert (8/24/48/96/alle).
-**Begründung:** „Welcher Song war das nochmal?" ist eine der häufigsten Fragen in der eigenen Partyrunde.
-**Akzeptanz:** `handlePlaySong` (`src/app/browse/page.tsx`), Filterlogik in `filteredSongs`, Pagination `PAGE_SIZE_OPTIONS` (`src/app/browse/page.tsx:15`).
-**Verifikation:** `grep -n "startQuickGame\|onlyWithLyrics\|onlyQR" src/app/browse/page.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
----
-
-# 8. Sicherheit, Datenschutz und Admin-API (SEC)
-
-> **Stand 25.10.2026:** Der Admin-API-Bereich wird parallel durch die Security-Rolle gehärtet (`src/admin-api/_lib/security.ts` und `src/admin-api/_lib/rate-limit.ts` wurden am selben Tag um Rate-Limiting, Redirect-Guard, Größenkappen und Fehlerstatus erweitert). Die Zeilenverweise in diesem Abschnitt beziehen sich auf diesen Stand. Offen bleibt die Verdrahtung der neuen Hilfen in den Routen — siehe [GAP-029](#offene-lücken).
-
-### SEC-001 — Die Admin-API ist token-geschützt
-
-**Preset:** Preset
-**Anforderung:** Jede Admin-API-Route verlangt den Header `x-admin-token`. Ohne gültiges Token wird `401 Unauthorized` geantwortet.
-**Begründung:** Die Cover-API schreibt Dateien in das Repository; sie darf nicht offen im Internet stehen.
-**Akzeptanz:** `assertAdminAccess` (`src/admin-api/_lib/security.ts:61-78`); Aufruf in `src/admin-api/admin/covers/search/route.ts:46-47` und `src/admin-api/admin/covers/save/route.ts:119-120`.
-**Verifikation:** `grep -rn "assertAdminAccess" src/admin-api/`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-002 — Der Token-Vergleich ist zeitkonstant
-
-**Preset:** Preset
-**Anforderung:** Der Token-Vergleich erfolgt über `crypto.timingSafeEqual` auf SHA-256-Hashes und damit ohne zeitbares Seitenkanalleck. Beide Hashes sind gleich lang, damit der Vergleich nicht werfen kann.
-**Begründung:** Ein einfacher String-Vergleich verrät die Länge und Position des Tokens über die Antwortzeit.
-**Akzeptanz:** `timingSafeEqual` (`src/admin-api/_lib/security.ts:47-51`), Einsatz in `assertAdminAccess` (`:71`).
-**Verifikation:** `grep -n "timingSafeEqual" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-003 — Fehlende oder zu kurze Konfiguration führt zu 503, nicht zu offenem Zugriff
-
-**Preset:** Preset
-**Anforderung:** Ist `ADMIN_API_TOKEN` nicht gesetzt oder kürzer als 32 Zeichen, antwortet die API mit `503` — in keinem Fall mit Zugriff.
-**Begründung:** Ein fehlgeschlagenes Deployment darf nicht zu einer unbegrenzten Schreib-API führen.
-**Akzeptanz:** `src/admin-api/_lib/security.ts:62-68` — `MIN_ADMIN_TOKEN_LENGTH = 32` (`:7`), Fehlertexte „Admin API not configured" und „Admin API token too short" mit Status 503.
-**Verifikation:** `grep -n "MIN_ADMIN_TOKEN_LENGTH\|503" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-004 — Das Token wird lokal erzeugt und nicht eingecheckt
-
-**Preset:** Preset
-**Anforderung:** Das Token wird mit `node scripts/generate-admin-token.js` erzeugt (Standard: 32 zufällige Bytes, hex-kodiert; mindestens 16 Bytes zulässig) und über die Umgebungsvariable `ADMIN_API_TOKEN` gesetzt. Die `.env.example` enthält nur einen Platzhalter.
-**Begründung:** Ein eingechecktes Token ist kein Token.
-**Akzeptanz:** `scripts/generate-admin-token.js:4-12`; `.env.example` („ADMIN_API_TOKEN=replace-with-long-random-token"); `scripts/generate-admin-token.js` verweigert Werte unter 16 Bytes.
-**Verifikation:** `node scripts/generate-admin-token.js`; `grep -n "ADMIN_API_TOKEN" .env.example`; das Token darf nicht in `git ls-files` stehen (`git ls-files | xargs grep -l "ADMIN_API_TOKEN=" 2>/dev/null` — muss nur `.env.example` treffen).
-
-### SEC-005 — Externe Cover-Downloads sind auf HTTPS und eine Host-Allowlist beschränkt
-
-**Preset:** Preset
-**Anforderung:** Eine Cover-URL muss `https:` verwenden und auf einem von vier erlaubten Hosts liegen (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`); Subdomains der erlaubten Hosts sind zugelassen. Alle anderen URLs werden mit `400` abgelehnt.
-**Begründung:** Eine vom Client frei wählbare URL ist ein SSRF-Vektor (Zugriff auf interne Netze) und ein Dateityp-Vektor.
-**Akzeptanz:** `assertAllowedHost` (`src/admin-api/_lib/security.ts:136-143`), `parseHttpUrl` (`:145-162`), Allowlist `src/admin-api/admin/covers/save/route.ts:11`, Aufruf `:128`, Fehlerbehandlung `:126-132` → HTTP 400.
-**Verifikation:** `grep -n "ALLOWED_IMAGE_HOSTS\|Only HTTPS" src/admin-api/`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-006 — Der Download ist in Zeit, Typ und Größe begrenzt
-
-**Preset:** Preset
-**Anforderung:** Der Cover-Download bricht nach 10 Sekunden ab, akzeptiert nur Responses mit `content-type` beginnend mit `image/`, und lehnt Dateien über 5 MiB ab (sowohl über `content-length` als auch über die tatsächliche Bytezahl). Fehlgeschlagene Downloads liefern `502`, zu große Dateien `413`.
-**Begründung:** Ein unbegrenzter Download ist eine Denial-of-Service-Fläche.
-**Akzeptanz:** `downloadCover` (`src/admin-api/admin/covers/save/route.ts:32-69`), `MAX_IMAGE_BYTES = 5 * 1024 * 1024` (`:10`; zentral auch in `src/admin-api/_lib/security.ts:13`), Statuszuordnung `:46-63` und `:149-156`.
-**Verifikation:** `grep -n "MAX_IMAGE_BYTES\|content-type\|10_000" src/admin-api/`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-007 — Suchanfragen der Cover-API sind längenbegrenzt und zeitbegrenzt
-
-**Preset:** Preset
-**Anforderung:** `artist` und `title` der Cover-Suche sind auf 120 Zeichen begrenzt und dürfen nicht leer sein. Externe Abrufe brechen nach 7.000 ms ab und laufen ohne Cache (`cache: 'no-store'`).
-**Begründung:** Unbegrenzte Eingaben und hängende Upstreams blockieren den Server.
-**Akzeptanz:** `boundedText` (`src/admin-api/_lib/security.ts:118-123`), Aufruf `src/admin-api/admin/covers/search/route.ts:51-52`; `fetchWithTimeout` mit `DEFAULT_TIMEOUT_MS = 7000` (`src/admin-api/_lib/security.ts:6`, `:173-204`).
-**Verifikation:** `grep -n "boundedText\|DEFAULT_TIMEOUT_MS" src/admin-api/`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-008 — Die Cover-Suche nutzt zwei feste, externe Quellen
-
-**Preset:** Preset
-**Anforderung:** Die Cover-Suche fragt ausschließlich die Suchschnittstellen von iTunes Search API und Deezer ab, jeweils mit `limit=5`. Die Ergebnisse werden entdoppelt und auf 10 begrenzt.
-**Begründung:** Ein fester, dokumentierter Katalog schützt vor unerwarteten Datenquellen und hält das Verhalten nachvollziehbar.
-**Akzeptanz:** `src/admin-api/admin/covers/search/route.ts:56-93` — beide Abrufe, `uniqueResults` (`:35-43`), `slice(0, 10)` (`:93`).
-**Verifikation:** `grep -n "itunes.apple.com\|api.deezer.com" src/admin-api/admin/covers/search/route.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-009 — Schreibzugriffe auf den Katalog sind serialisiert
-
-**Preset:** Preset
-**Anforderung:** Das Aktualisieren der Pack-Dateien erfolgt unter einer exklusiven Sperrdatei `.covers-save.lock` (Flag `wx`). Es wird höchstens 30-mal im Abstand von 60 ms versucht; schlägt das fehl, antwortet die API mit `503`.
-**Begründung:** Zwei parallele Cover-Speicherungen dürfen sich nicht gegenseitig die JSON-Datei überschreiben.
-**Akzeptanz:** `withPacksLock` (`src/admin-api/admin/covers/save/route.ts:71-94`), Konstanten `:9`, `:12-13`, Fehler „Cover save is temporarily busy" (`:85`).
-**Verifikation:** `grep -n "withPacksLock\|LOCK_RETRIES" src/admin-api/admin/covers/save/route.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-010 — Unbekannte Song-IDs werden nicht angelegt
-
-**Preset:** Preset
-**Anforderung:** Wird eine `songId` übergeben, die in keiner Pack-Datei vorkommt, antwortet die API mit `404` und ändert keine Pack-Datei. Das Format der ID ist auf `[a-z0-9][a-z0-9-_]{2,120}` beschränkt.
-**Begründung:** Eine ungeprüfte ID ist ein Weg, beliebige Dateinamen zu erzeugen.
-**Akzeptanz:** `parseSongId` (`src/admin-api/_lib/security.ts:125-130`), Suche über alle Pack-Dateien und 404-Antwort (`src/admin-api/admin/covers/save/route.ts:106-146`).
-**Verifikation:** `grep -n "not found in any pack" src/admin-api/admin/covers/save/route.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-011 — Fehler der Admin-API geben keine internen Details preis
-
-**Preset:** Preset
-**Anforderung:** Fehlerantworten enthalten eine Meldung und einen Statuscode; unerwartete Fehler liefern `500` mit generischem Text. Interne Stacktraces, Pfade oder Tokenwerte werden nicht ausgegeben.
-**Begründung:** Fehlermeldungen der Admin-API sind ein Informationsleck.
-**Akzeptanz:** `src/admin-api/admin/covers/save/route.ts:149-156`, `src/admin-api/admin/covers/search/route.ts:94-97`; die Fehlerklasse dokumentiert die Zusage ausdrücklich (`src/admin-api/_lib/security.ts:27-40`).
-**Verifikation:** `grep -n "status: 500" src/admin-api/`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-012 — Keine personenbezogenen Daten im Meldeweg
-
-**Preset:** Preset
-**Anforderung:** Der Missing-Link-Report enthält ausschließlich technische Metadaten (Song-Kennung, technische Bezeichnungen, vorhandene Provider, Zeitzone, Locale, Region, zufällige Geräte-ID) — keine Freitextfelder, keine Namen, keine Kontaktdaten.
-**Begründung:** Die Geräte-ID ist eine zufällige UUID, kein Nutzerkonto; freie Textfelder wären ein PII-Risiko.
-**Akzeptanz:** `src/components/game/MusicPlayer.tsx:198-214` (Payload), `deviceId = localStorage.getItem(DEVICE_KEY) ?? crypto.randomUUID()` (`:179`); zugesagte Eigenschaft in `src/app/privacy/page.tsx` („We explicitly avoid free-text fields in these flows").
-**Verifikation:** `grep -n "issuePayload" -A 18 src/components/game/MusicPlayer.tsx`; Test existiert nicht — siehe [GAP-001](#offene-lücken).
-
-### SEC-013 — Die lokalen Daten lassen sich vollständig löschen
-
-**Preset:** Preset
-**Anforderung:** Über `/settings/account` kann der gesamte lokale Fortschritt (XP) nach Bestätigung zurückgesetzt werden. Die Aktion ist als „Gefahrzone" gekennzeichnet.
-**Begründung:** Datenschutzrechte müssen ohne technisches Wissen ausübbar sein.
-**Akzeptanz:** `resetProgress` (`src/stores/game-store.ts:525-527`), `src/app/settings/account/page.tsx` (Gefahrenzone mit `confirm(...)`).
-**Verifikation:** `grep -n "resetProgress" src/app/settings/account/page.tsx src/stores/game-store.ts`.
-
-### SEC-014 — Fehlgeschlagene Anmeldeversuche werden begrenzt
-
-**Preset:** Preset
-**Anforderung:** Fehlgeschlagene Token-Prüfungen werden gezählt: 10 Versuche je Client und 100 Versuche global je 5-Minuten-Fenster. Wird ein Limit überschritten, antwortet die API mit `429` und einem `Retry-After`-Header. Der Bucket je Client ist hart begrenzt (höchstens 10.000 Schlüssel), damit gespoofte Schlüssel den Speicher nicht auffüllen können.
-**Begründung:** Ohne Begrenzung ist der Token eine Brute-Force-Fläche.
-**Akzeptanz:** `enforceAuthFailureLimit` (`src/admin-api/_lib/security.ts:84-98`), Grenzwerte `:19` und `:25`, `checkRateLimit`/`getClientKey` (`src/admin-api/_lib/rate-limit.ts:13-48`, `MAX_TRACKED_KEYS = 10.000` in `:43`). Die Limitierung wirkt **pro Instanz** und ist keine verteilte DoS-Sicherung — das ist in `src/admin-api/_lib/rate-limit.ts:4-11` ausdrücklich dokumentiert.
-**Verifikation:** `grep -n "AUTH_FAILURE_LIMIT\|AUTH_FAILURE_GLOBAL_LIMIT\|429" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-015 — Weiterleitungen werden manuell verfolgt und je Hop geprüft
-
-**Preset:** Preset
-**Anforderung:** Binärdownloads folgen Weiterleitungen manuell, höchstens drei Hops. Jeder Hop wird erneut gegen Protokoll (`https:`) und Host-Allowlist geprüft; ein Redirect ohne Ziel, in ein internes Netz oder auf einen nicht erlaubten Host wird mit `400` abgelehnt.
-**Begründung:** Ein automatisch verfolgter Redirect ist der übliche Weg, die Allowlist zu umgehen (`http://169.254.169.254/`).
-**Akzeptanz:** `fetchGuardedBinary` (`src/admin-api/_lib/security.ts:268-322`), `MAX_REDIRECTS = 3` (`:10`), Hop-Prüfung `:285-307`.
-**Verifikation:** `grep -n "fetchGuardedBinary\|MAX_REDIRECTS" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-016 — Antwortkörper externer Dienste sind größenbegrenzt
-
-**Preset:** Preset
-**Anforderung:** Der Body externer Antworten wird gestreamt und abgebrochen, sobald er die konfigurierte Grenze überschreitet (5 MiB für Bilder, 512 KiB für JSON-Antworten). Ein Server ohne `content-length` kann dadurch nicht den Speicher des Prozesses erschöpfen.
-**Begründung:** `arrayBuffer()` ohne Limit ist ein Speicher-Desaster bei bösartigen oder defekten Upstreams.
-**Akzeptanz:** `readCappedBody` (`src/admin-api/_lib/security.ts:211-250`), `MAX_IMAGE_BYTES` (`:13`), `MAX_JSON_BYTES = 512 * 1024` (`:16`), Integration in `fetchWithTimeout` (`:191-200`).
-**Verifikation:** `grep -n "readCappedBody\|MAX_JSON_BYTES" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-017 — Zugangsdaten in URLs sind verboten
-
-**Preset:** Preset
-**Anforderung:** Eine Cover-URL mit `username` oder `password` wird abgelehnt.
-**Begründung:** Eingebettete Zugangsdaten landen in Logs, in Fehlermeldungen und in Upstream-Anfragen.
-**Akzeptanz:** `src/admin-api/_lib/security.ts:156-157`.
-**Verifikation:** `grep -n "Credentials in URL" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
-### SEC-018 — Fehler der Admin-API tragen einen expliziten HTTP-Status
-
-**Preset:** Preset
-**Anforderung:** Fehler der Admin-API werden über eine eigene Fehlerklasse mit Statuscode geführt (`AdminRequestError`), damit Status und Meldung nicht über Fehlertexte auseinanderlaufen.
-**Begründung:** String-Matching auf Fehlertexte ist fehleranfällig und unprüfbar.
-**Akzeptanz:** `src/admin-api/_lib/security.ts:32-40` (Klasse), `:216`, `:235`, `:287`, `:293`, `:297`, `:302`, `:310`, `:315`, `:321` (Statuszuordnung).
-**Verifikation:** `grep -n "AdminRequestError" src/admin-api/_lib/security.ts`; Test existiert nicht — siehe [GAP-005](#offene-lücken).
-
----
-
-# 9. Nicht-funktionale Anforderungen (NFR)
-
-### NFR-001 — TypeScript läuft im Strict-Modus ohne Fehler
-
-**Preset:** Preset
-**Anforderung:** `npm run typecheck` (`tsc --noEmit`) ist fehlerfrei. `any` ist nicht erlaubt; Typen sind über `src/types/` und `src/config/` zentral definiert.
-**Begründung:** Ein striktes Typsystem ist die billigste Form von Qualitätssicherung.
-**Akzeptanz:** `tsconfig.json` mit `strict: true`; gemessener Stand: `npm run typecheck` endet mit Exit 0.
-**Verifikation:** `npm run typecheck`; `grep -rn ": any\|<any>\|as any" src/ | grep -v "\.test\."` (muss leer sein).
-
-### NFR-002 — ESLint ist fehlerfrei
-
-**Preset:** Preset
-**Anforderung:** `npm run lint` meldet keine Errors. Verbleibende Warnungen sind dokumentiert und begründet.
-**Begründung:** Lint ist der billigste kontinuierlich laufende Qualitätscheck.
-**Akzeptanz:** Gemessener Stand: 0 Errors, 1 Warning (`playwright.config.ts:1` — `import/no-anonymous-default-export`).
-**Verifikation:** `npm run lint` — Ausgabe muss „0 errors" enthalten.
-
-### NFR-003 — Unit-Tests decken die reine Logik ab
-
-**Preset:** Preset
-**Anforderung:** Vitest testet die regeltragenden Utilities. Der Test-Umfang umfasst mindestens: QR-Intent-Parsing, KI-Task-Queue, Katalog-Jahresvalidierung und die Amazon-Link-Auflösung.
-**Begründung:** Die teuersten Regeln des Produkts (Scoring, Slot-Logik, Auswahl-Kette) sind noch ungetestet — das ist die größte Abdeckungslücke (siehe [GAP-001](#offene-lücken) bis [GAP-003](#offene-lücken)).
-**Akzeptanz:** Gemessener Stand: 4 Testdateien, 21 Tests, alle bestanden (`src/utils/qr-intent.test.ts`, `src/utils/ai-task-queue.test.ts`, `src/utils/validate-song-data.test.ts`, `src/components/game/MusicPlayer.test.ts`). `vitest.config.ts` schließt `src/**/*.test.ts` ein.
-**Verifikation:** `npx vitest run` — 4 Dateien / 21 Tests müssen grün sein.
-
-### NFR-004 — Die Testkonfiguration ist über den Quellbereich hinaus ausgedehnt
-
-**Preset:** Preset
-**Anforderung:** Vitest erfasst alle Testdateien unter `src/` und misst die Coverage über den gesamten Produktcode, nicht nur über `src/utils/`.
-**Begründung:** Die aktuelle Coverage-Messung blendet Store, Komponenten und Moduslogik vollständig aus — genau die Bereiche mit den teuersten Regeln.
-**Akzeptanz:** **Stand: nicht erfüllt.** `vitest.config.ts` begrenzt `coverage.include` auf `src/utils/**/*.ts`. Siehe [GAP-001](#offene-lücken).
-**Verifikation:** `grep -n "include" vitest.config.ts`; Zielzustand: `coverage.include: ['src/**/*.{ts,tsx}']`.
-
-### NFR-005 — Ein Gate über die gesamte Pipeline
-
-**Preset:** Preset
-**Anforderung:** `npm run local-ci` führt in fester Reihenfolge aus: Typecheck, Lint, Unit-Tests, Format-Check (nicht blockierend), Song-Validierung, Katalog-Validierung, Build, Dependency-Audit (ab `moderate`) sowie — nur bei gesetztem `YOUTUBE_API_KEY` — den YouTube-Link-Audit.
-**Begründung:** Ein Gate, das nur einen Teil prüft, erzeugt ein falsches Gefühl von Sicherheit.
-**Akzeptanz:** `scripts/local-ci.sh:47-72` (Checkliste);
-**Verifikation:** `bash scripts/local-ci.sh` — jeder als blockierend markierte Check muss „[SUCCESS]" melden.
-
-### NFR-006 — Der Format-Check ist nicht blockierend, aber vorhanden
+**Requirement:** If `spotify-premium` is selected and a Spotify track ID is available, a Spotify embed iframe is placed over the player. Without a premium account YouTube stays active, and the user is pointed to that.
+**Rationale:** Full-track playback via Spotify is a comfort feature; YouTube remains the reliable way.
+**Acceptance:** `extractSpotifyTrackId` (`src/components/game/MusicPlayer.tsx:75-80`), `useSpotifyPremium` (`:167`), embed `:559-571`, hint `bei fehlender Premium-Wiedergabe wird YouTube genutzt` (if premium playback is missing, YouTube is used) (`:552`); catalogue state: 734 of 1,615 songs have a Spotify link.
+**Verification:** `grep -n "useSpotifyPremium" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### MEDIA-012 — Amazon Music uses the embed player, Prime only with preview
 
 **Preset:** Optional
-**Anforderung:** Die Formatierung wird mit Prettier geprüft (`npm run format:check`), der Check blockiert die Pipeline derzeit nicht.
-**Begründung:** Ein blockierender Format-Check in einem aktiven Content-Repository erzeugt Rauschen; die Existenz des Checks reicht vorerst.
-**Akzeptanz:** `scripts/local-ci.sh:56` —
-**Verifikation:** `npm run format:check`.
+**Requirement:** For Amazon there are two paths: `amazon-music-premium` with full-track embed (from `links.amazonMusic`) and `amazon-music` with Prime preview (from `links.amazonPrimePreview`). If the respective source is missing, YouTube is used and the restricted scope is displayed.
+**Rationale:** Amazon Music delivers no preview without Prime access; the user has to know why it sounds quieter or shorter.
+**Acceptance:** `extractAmazonTrackId` with five supported URL forms (`src/components/game/MusicPlayer.tsx:96-120`), `useAmazonPrime`/`useAmazonPremium` (`:169-170`), embeds `:585-619`, hint `:553-555`; catalogue state: 381 songs with `amazonMusic`, 0 with `amazonPrimePreview` (measured) — see [GAP-012](#open-gaps).
+**Verification:** `npm run test -- MusicPlayer` (the existing tests cover `extractAmazonTrackId`); no test exists for the path selection — see [GAP-001](#open-gaps).
 
-### NFR-007 — Der Katalog-Report ist Teil des Gates
-
-**Preset:** Preset
-**Anforderung:** Der Katalog-Gate schreibt seinen Report nach `specifications/catalog_issues_report.json` und wird im Release-Prozess als Nachweis geführt.
-**Begründung:** Ohne mitgeschriebenen Report ist der Gate-Zustand nicht belegbar.
-**Akzeptanz:** `src/utils/validate-song-catalog.ts:230-244` (Report-Schreiben), `npm run validate-catalog:report`.
-**Verifikation:** `npm run validate-catalog:report`; `cat specifications/catalog_issues_report.json`.
-
-### NFR-008 — Keine Abnahme auf Basis von Stubs
+### MEDIA-013 — Missing links can be reported, with rate limit
 
 **Preset:** Preset
-**Anforderung:** Ein Feature gilt erst als umgesetzt, wenn eine echte, ausführbare Implementierung vorliegt. Platzhalter-Assets, Mock-Brücken und nur als konfiguriert geführte Provider zählen nicht als Umsetzung. Bekannte Verstöße werden in den [Offenen Lücken](#offene-lücken) geführt und blockieren die Abnahme des betroffenen Features.
-**Begründung:** Der Bestand enthält Audio-Prompts statt Audio, eine Cover-Variante ohne Cover-Daten und einen Amazon-Pfad ohne Preview-Daten. Ohne diese Regel wird jede Abnahme eine Behauptung.
-**Akzeptanz:** Bekannte Verstöße: [GAP-009](#offene-lücken) (Audio-Assets), [GAP-011](#offene-lücken) (Cover-Versionen), [GAP-012](#offene-lücken) (Amazon-Preview). Gegenprüfung: `ls public/audio/sfx/` enthält nur `.prompt.md`-Dateien, keine `.mp3`.
-**Verifikation:** `ls public/audio/sfx/ public/audio/mode-cues/` — der Nachweis der Lücke ist Teil der Abnahme, nicht ihr Ersatz.
+**Requirement:** The user can report a song that cannot be played. The disclosure channel is exclusively user-triggered: a GitHub issue with technical metadata (song ID, title, artist, pack, selected provider, available links, time zone, locale, region) is opened in a new tab. If no issue URL is configured, the JSON report is copied to the clipboard.
+**Rationale:** The community can heal link and region problems itself; the disclosure channel should work without a server.
+**Acceptance:** `handleReportMissing` (`src/components/game/MusicPlayer.tsx:172-237`); the user consent is explicitly noted: "avoid free-text fields … to prevent accidental transmission of PII" (`src/app/privacy/page.tsx`, section "Technical Metadata").
+**Verification:** `grep -n "NEXT_PUBLIC_GITHUB_ISSUE_URL" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### NFR-009 — Quellcode-Dateien bleiben unterhalb der Größengrenze
-
-**Preset:** Preset
-**Anforderung:** Keine Quelldatei überschreitet 550 Zeilen (weiches Ziel 400 Zeilen). Das Gate `scripts/check-file-size.mjs` prüft das automatisch.
-**Begründung:** Sehr große Dateien sind der Hauptgrund für schwer wartbaren Code.
-**Akzeptanz:** **Stand: nicht erfüllt.** Gemessen: 5 Dateien über 550 Zeilen (`src/app/admin/review/page.tsx` 755, `src/app/lobby/page.tsx` 744, `src/components/game/RevealPhase.tsx` 671, `src/stores/game-store.ts` 640, `src/components/game/MusicPlayer.tsx` 630) und 5 weitere über 400 Zeilen. Das Gate-Skript existiert nicht. Siehe [GAP-007](#offene-lücken).
-**Verifikation:** `find src -name '*.ts' -o -name '*.tsx' | xargs wc -l | sort -rn | head -15` — nach Fertigstellung muss `scripts/check-file-size.mjs` existieren, grün laufen und in `scripts/local-ci.sh` eingebunden sein.
-
-### NFR-010 — Ein i18n-Gate verhindert unübersetzte Texte
+### MEDIA-014 — The report is limited to five reports per hour and device
 
 **Preset:** Preset
-**Anforderung:** `scripts/check-i18n-completeness.mjs` prüft, dass `de.json` und `en.json` parallel sind, keine leeren Werte enthalten und kein sichtbarer Literaltext mehr im JSX steht. Das Gate läuft lokal und in der CI.
-**Begründung:** Ohne automatisches Gate driftet die Übersetzung bei jeder Änderung auseinander.
-**Akzeptanz:** **Stand: teilweise erfüllt.** Das Skript `scripts/check-i18n-completeness.mjs` existiert seit dem 25.10.2026 und prüft Parität, leere Werte, Pluralformen und Literaltexte (`--count`, `--json`, `--files=`). Nicht erfüllt: die Verdrahtung als `npm run check:i18n` in `package.json` und der Lauf in `scripts/local-ci.sh`. Siehe [GAP-006](#offene-lücken).
-**Verifikation:** `node scripts/check-i18n-completeness.mjs` — muss ohne Treffer (Exit 0) enden. Verdrahtung: `grep -n "check:i18n" package.json scripts/local-ci.sh`.
+**Requirement:** Per device a maximum of 5 reports per hour is allowed. Each song can only be reported once. The device ID is stored in `localStorage` under `phomu-device-id`, the report status under `phomu-missing-report-state-v1`.
+**Rationale:** Without a limit a broken song produces a report storm into the open issues.
+**Acceptance:** `src/components/game/MusicPlayer.tsx:172-195` — `HOUR_MS = 60 * 60 * 1000`, `MAX_PER_HOUR = 5`, duplicate check via `parsed.songs[songId]`; status display `:621-627` — rate limit per device and duplicate report (`Rate limit: max 5/h je Gerät`, `Für diesen Song bereits gemeldet`).
+**Verification:** `grep -n "MAX_PER_HOUR\|phomu-device-id\|phomu-missing-report-state-v1" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### NFR-011 — Ein Doku-Linkcheck verhindert tote Verweise
-
-**Preset:** Preset
-**Anforderung:** `scripts/check-doc-links.mjs` prüft, dass jeder relative Markdown-Link in der Projektdokumentation auflösbar ist. Das Gate läuft lokal und in der CI.
-**Begründung:** Tote Links in einer Spezifikation sind teurer als fehlende Links, weil sie Vertrauen zerstören.
-**Akzeptanz:** **Stand: nicht erfüllt.** Das Skript existiert nicht. Im Repo liegt allerdings ein `broken-links-report.json` (72.904 Byte) als Alt-Artefakt. Siehe [GAP-008](#offene-lücken).
-**Verifikation:** `ls scripts/check-doc-links.mjs` — nach Fertigstellung muss das Skript existieren, grün laufen und in `scripts/local-ci.sh` eingebunden sein.
-
-### NFR-012 — Der E2E-Smoke-Test prüft die Erreichbarkeit der Kernrouten
+### MEDIA-015 — The anti-spoiler overlay uses blur plus a reveal gesture
 
 **Preset:** Preset
-**Anforderung:** Der Playwright-Smoke-Test öffnet die Kernrouten `/`, `/lobby`, `/game`, `/game-over`, `/browse` und `/settings` und prüft, dass jede Route geladen wird. Ein Live-Server wird über die Playwright-Konfiguration gestartet.
-**Begründung:** Der Smoke-Test fängt den häufigsten Produktionsfehler: eine Route, die nicht mehr baut.
-**Akzeptanz:** `e2e/smoke.spec.ts` (ein Testfall mit sechs Route-Prüfungen), `playwright.config.ts`.
-**Verifikation:** `npm run test:e2e:smoke` (setzt einen installierten Chromium-Browser voraus: `npm run test:e2e:install`).
+**Requirement:** If `blurred` is set, a blur layer (`blur-[60px]`, `opacity-50`, `scale-125`, `pointer-events-none`) lies over the player. A drag handle allows the reveal from a horizontal displacement of more than 150 px. After the reveal the state can be reset via `Verbergen` (hide).
+**Rationale:** The gesture is deliberately not trivial: whoever knows it gets an advantage — that is the anti-cheat the pilot controls.
+**Acceptance:** Blur wrapper `src/components/game/MusicPlayer.tsx:424-430`; overlay `:434-478` — `drag="x"`, `if (info.offset.x > 150) setVideoRevealed(true)`; `Verbergen` button `:538-545`.
+**Verification:** `grep -n "offset.x > 150\|blur-\[60px\]" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### NFR-013 — Der E2E-Test deckt die Kernjourney ab
+### MEDIA-016 — If no playable medium is available, this is stated explicitly
 
 **Preset:** Preset
-**Anforderung:** Der End-to-End-Test muss den vollständigen Spielablauf abdecken: Spieler anlegen, Modus wählen, Spiel starten, eine Runde beantworten, Reveal auslösen, Spiel beenden.
-**Begründung:** Der aktuelle Smoke-Test prüft nur URLs; ein Fehler im Zustandsautomaten bliebe unentdeckt.
-**Akzeptanz:** **Stand: nicht erfüllt.** `e2e/smoke.spec.ts` besteht ausschließlich aus URL-Assertions. Siehe [GAP-021](#offene-lücken).
-**Verifikation:** `npm run test:e2e:smoke` — nach Erweiterung muss der Test mindestens eine vollständige Runde durchlaufen.
+**Requirement:** If there is neither a YouTube ID nor a Spotify/Amazon source, the player renders the hint `Kein Video verfügbar` (no video available) instead of an empty area.
+**Rationale:** An empty area looks like an error in the game; the plain text explains the situation.
+**Acceptance:** `src/components/game/MusicPlayer.tsx:417-419`.
+**Verification:** `grep -n "Kein Video verfügbar" src/components/game/MusicPlayer.tsx`.
 
-### NFR-014 — Die KI-Task-Queue arbeitet mit Retry und Statusmodell
+### MEDIA-017 — The music player stays mounted across the reveal transition
+
+**Preset:** Preset
+**Requirement:** During the switch from the question to the reveal phase, the question component is not unmounted, but hidden via `display: none`. As a result playback continues without a restart.
+**Rationale:** A restart of the video in the middle of the reveal would be audible and would break the rhythm.
+**Acceptance:** `src/app/game/page.tsx:404-431` — comment `QuestionPhase bleibt gemountet … display:none hält den Iframe am Leben — Audio läuft weiter` (QuestionPhase stays mounted … display:none keeps the iframe alive — the audio keeps running); `QuestionPhase` and `RevealPhase` are rendered in the same container (`:423-460`).
+**Verification:** `grep -n "display: 'none'" src/app/game/page.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### MEDIA-018 — The provider status is shown in the player
+
+**Preset:** Preset
+**Requirement:** When a restricted provider is used, the player displays a status text at the bottom left that names the restriction and announces the YouTube fallback.
+**Rationale:** Transparency about the actual source of sound prevents complaints about "missing" music.
+**Acceptance:** `src/components/game/MusicPlayer.tsx:547-557`.
+**Verification:** `grep -n "YouTube-Fallback aktiv" src/components/game/MusicPlayer.tsx`.
+
+---
+
+# 5. Interface, themes, navigation, projector, accessibility (UI)
+
+### UI-001 — Four themes with CSS custom properties
+
+**Preset:** Preset
+**Requirement:** Phomu offers the themes `jackbox` (default), `spotify`, `youtube` and `musicwall`. Each theme defines the same tokens (`--color-bg`, `--color-bg-secondary`, `--color-bg-card`, `--color-text`, `--color-text-secondary`, `--color-primary`, `--color-primary-hover`, `--color-secondary`, `--color-accent`, `--color-success`, `--color-error`, `--color-border`, `--radius`).
+**Rationale:** A uniform token set turns new themes into a pure CSS file.
+**Acceptance:** `AVAILABLE_THEMES` (`src/config/game-config.ts:86`), `DEFAULT_THEME: 'jackbox'` (`:85`); the four token blocks in `src/app/globals.css`.
+**Verification:** `grep -n "data-theme=" src/app/globals.css`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-002 — The theme is controlled via an HTML attribute
+
+**Preset:** Preset
+**Requirement:** The active theme is set via `data-theme` on the `<html>` element and stored under `phomu-theme` in `localStorage`. If the stored value is unknown, the default theme applies.
+**Rationale:** An attribute instead of JavaScript classes allows server-side styling and prevents flickering.
+**Acceptance:** `src/contexts/ThemeContext.tsx:27-41` — `STORAGE_KEY = 'phomu-theme'`, validation against `PHOMU_CONFIG.AVAILABLE_THEMES` (`:33`), `document.documentElement.setAttribute('data-theme', theme)` (`:39`); initial value in `src/app/layout.tsx:40` (`data-theme="jackbox"`).
+**Verification:** `grep -n "data-theme" src/contexts/ThemeContext.tsx src/app/layout.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-003 — Theme and language switchers are reachable in NavBar and settings
+
+**Preset:** Preset
+**Requirement:** The theme and the language can be switched both via the settings panel of the navigation bar and via the settings pages. The active selection is clearly marked.
+**Rationale:** The switch must be reachable at any time, also in the middle of the game.
+**Acceptance:** NavBar panel `src/components/ui/NavBar.tsx`; `ThemeSwitcher` (`src/components/ui/ThemeSwitcher.tsx:33-51`) and `LanguageSwitcher` (`src/components/ui/LanguageSwitcher.tsx:30-51`) with `aria-pressed`; additionally in the in-game panel (`src/components/game/InGameSettingsPanel.tsx`).
+**Verification:** `grep -rn "aria-pressed" src/components/ui/`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-004 — The navigation bar does not appear in the game
+
+**Preset:** Preset
+**Requirement:** On the routes `/game` and `/game-over` no navigation bar is shown; these pages bring their own header bar.
+**Rationale:** In the game there is space for points, mode and timer — not for navigation.
+**Acceptance:** `HIDDEN_PREFIXES = ['/game', '/game-over']` (`src/components/ui/ConditionalNavBar.tsx:13-19`), integrated in `src/app/layout.tsx:36-39`.
+**Verification:** `grep -n "HIDDEN_PREFIXES" src/components/ui/ConditionalNavBar.tsx`.
+
+### UI-005 — The navigation contains lobby and browse
+
+**Preset:** Preset
+**Requirement:** The main navigation contains the links `Lobby` and `Browse` as well as a settings button that opens a panel with language, theme and admin link. The active entry is highlighted in colour.
+**Rationale:** Two main destinations are enough: play and browse.
+**Acceptance:** `NAV_LINKS` (`src/components/ui/NavBar.tsx:17-20`), `isActive` calculation in the render function, admin link to `/admin/songs`.
+**Verification:** `grep -n "NAV_LINKS" src/components/ui/NavBar.tsx`.
+
+### UI-006 — The projector mode is spoiler-free
+
+**Preset:** Preset
+**Requirement:** The route `/projector` shows mode, round, phase, score, active player and the progress towards the target — but never title, artist, cover or year of the current song. During the question round an animated placeholder is shown there.
+**Rationale:** The projector hangs above the table; a solution visible there devalues the round for the entire room.
+**Acceptance:** Placeholder `src/app/projector/page.tsx:226-254`; in the player no song title is displayed; `phaseLabel` (`:54-59`).
+**Verification:** `grep -n "Frage läuft" src/app/projector/page.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-007 — The projector mode synchronises itself via the same state
+
+**Preset:** Preset
+**Requirement:** `/projector` reads from the same persisted state as the game and re-renders every 2 seconds, so that point changes from the device arrive. Without a running game the route shows `Kein Spiel aktiv` (no game active).
+**Rationale:** A second device or a second tab should mirror the same session without a server.
+**Acceptance:** `setInterval(..., 2000)` (`src/app/projector/page.tsx:41-44`), state source `useGameStore()` (`:27-36`), empty state `:61-69`; persistence see [LOBBY-021](#lobby-021--the-session-is-client-side-and-survives-a-reload).
+**Verification:** `grep -n "2000" src/app/projector/page.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-008 — The projector mode is reachable from the game via a button
+
+**Preset:** Preset
+**Requirement:** From the in-game settings panel a button opens the projector mode in a new browser tab.
+**Rationale:** The projector is a second device; a tab switch on the game device would be an error.
+**Acceptance:** `window.open('/projector', '_blank')` in `src/components/game/InGameSettingsPanel.tsx`.
+**Verification:** `grep -n "projector" src/components/game/InGameSettingsPanel.tsx`.
+
+### UI-009 — The header shows mode, pilot, progress and timer
+
+**Preset:** Preset
+**Requirement:** The game header shows the active mode (with emoji), the pilot (avatar, name, colour), the progress towards the target and — if `timeLimitSeconds` is set — a seconds counter. It contains an exit button with `aria-label`.
+**Rationale:** The pilot must always know whose turn it is, how much time is left and how far the game has come.
+**Acceptance:** `src/components/game/GameHeader.tsx:127-209`; `TimerCountdown` `:66-92` with colour change at ≤ 20 s (`:78-81`) and `aria-label` (`:87`); `timeLimitSeconds` is passed only in the question phase (`src/app/game/page.tsx:317`).
+**Verification:** `grep -n "TimerCountdown\|aria-label" src/components/game/GameHeader.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-010 — If the question time runs out, the round goes to the reveal
+
+**Preset:** Preset
+**Requirement:** When the timer reaches 0, the phase changes from `question` to `reveal`. In other phases the timer has no effect.
+**Rationale:** Without an automatic reveal the session hangs when the pilot forgets.
+**Acceptance:** `handleTimeUp` (`src/app/game/page.tsx:232-236`) — `if (roundPhase === 'question') advancePhase('reveal')`; timer reset per round via the `key` in `src/components/game/GameHeader.tsx:201-205`.
+**Verification:** `grep -n "handleTimeUp" -A 5 src/app/game/page.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-011 — Touch targets are at least 44 pixels high
+
+**Preset:** Preset
+**Requirement:** Interactive elements in game and lobby are at least 44 px high (height or width). This applies in particular to the mode, pack and settings buttons, the remove button of a player and the buttons of the time limit selection.
+**Rationale:** 44 px is the established minimum size for touch targets; below that it becomes unreliable on the phone.
+**Acceptance:** `min-h-[44px]` in `src/components/lobby/ModeSelector.tsx`, `src/components/lobby/PackSelector.tsx`, `src/components/game/QuestionPhase.tsx:108`; `w-11 h-11` in `src/components/lobby/PlayerCard.tsx` and `src/components/game/GameHeader.tsx:150`.
+**Verification:** `grep -rn "min-h-\[44px\]\|h-11 w-11\|w-11 h-11" src/components/ | wc -l`; no test exists — see [GAP-021](#open-gaps).
+
+### UI-012 — Safe-area insets are taken into account
+
+**Preset:** Preset
+**Requirement:** For devices with a notch and home indicator, the CSS variables `--sat`, `--sar`, `--sab`, `--sal` are set from `env(safe-area-inset-*)`; the utilities `pt-safe`, `pb-safe`, `pl-safe`, `pr-safe` use them. The viewport is opened with `viewportFit: 'cover'`.
+**Rationale:** Without the insets the header lies under the notch and the footer over the home indicator.
+**Acceptance:** `src/app/globals.css` (safe-area block and utilities); `src/app/layout.tsx:29-33` (`viewportFit: 'cover'`); application in `src/app/lobby/page.tsx:128` and `:697`, `src/components/game/GameHeader.tsx:129`.
+**Verification:** `grep -n "safe-area-inset" src/app/globals.css`; no test exists — see [GAP-021](#open-gaps).
+
+### UI-013 — Keyboard operation and visible focus are guaranteed
+
+**Preset:** Preset
+**Requirement:** The Timeline mode is operable by keyboard: the number keys select slot 1–n, the arrow keys navigate, Enter/Space confirms. Visible focus rings are set via `:focus-visible` with a 3 px thick outline in the accent colour; tooltips also appear on focus.
+**Rationale:** At home on the laptop Phomu is played without a mouse.
+**Acceptance:** `src/components/game/modes/TimelineMode.tsx:242-255` (keyboard control), `src/app/globals.css` (`:focus-visible` block), `src/components/ui/Tooltip.tsx` (`onFocus`/`onBlur`).
+**Verification:** `grep -n "focus-visible" src/app/globals.css`; `grep -n "ArrowUp" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-014 — The feedback picture is deliberately "juicy", but not blocking
+
+**Preset:** Preset
+**Requirement:** Correct and wrong answers are acknowledged with deterministically selected texts from two lists (more than 100 entries each). The same input (song ID, correct/wrong) always produces the same text. The texts vary the tone between cheeky and dry, without impairing playability.
+**Rationale:** The feedback is an essential part of the _party_ factor; determinism ensures that a song always reacts the same way.
+**Acceptance:** `CORRECT_MESSAGES` (`src/utils/feedback-messages.ts:10`), `WRONG_MESSAGES` (`:115`), `hashSeed`/`pickDeterministic` (`:223-240`), `getSpicyMessage`/`getSpicyColor` (`:242-249`); calls in `src/components/game/RevealPhase.tsx:508-513` and in every mode.
+**Verification:** `grep -n "getSpicyMessage" src/components/game/`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-015 — Feedback overlays accompany the game events
+
+**Preset:** Preset
+**Requirement:** On the switch into the question phase, on the reveal, on a correct and a wrong answer as well as at the end of the game, own overlays respectively sound effects are triggered. A double trigger on a re-render is excluded (comparison with the previous state).
+**Rationale:** Feedback has to be coupled to the event, not to the render cycle.
+**Acceptance:** `src/hooks/useGameAudioCues.ts:76-96` (phase comparison), `:97-108` (answer counter), `:109-116` (end of game); `FeedbackOverlay` and `DiceAnimation` in `src/app/game/page.tsx:300-304`.
+**Verification:** `grep -n "previousPhaseRef\|previousAnswerCountRef" src/hooks/useGameAudioCues.ts`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-016 — Sound effects can be switched off and are scalable
+
+**Preset:** Preset
+**Requirement:** Sound effects can be deactivated individually and regulated in volume (default 0.55). Missing or unplayable files lead to no error message.
+**Rationale:** Sound effects must never interrupt the flow of the music.
+**Acceptance:** `src/hooks/useGameAudioCues.ts:36-58` — `if (!sfxEnabled) return`, silence in the error case; default `sfxEnabled: true`, `sfxVolume: 0.55` (`src/stores/game-store.ts:181-184`); slider `src/app/settings/audio/page.tsx`.
+**Verification:** `grep -n "sfxVolume" src/hooks/useGameAudioCues.ts src/stores/game-store.ts`; no test exists — see [GAP-001](#open-gaps).
+
+### UI-017 — The settings hub is divided into five areas
+
+**Preset:** Preset
+**Requirement:** `/settings` links to five areas: players & profile, audio & provider, governance, legal & account and game help. In the header the number of players, the total XP and the level are displayed; if a game is running, a button leads back into the game.
+**Rationale:** Five clearly separated areas are findable on the phone; a flat list with 20 options is not.
+**Acceptance:** `SETTINGS_SECTIONS` (`src/app/settings/page.tsx:10-37`), `StatCard` display (`:42-47`), level calculation `Math.floor(totalXP / 100) + 1` (`:43`).
+**Verification:** `grep -n "SETTINGS_SECTIONS" src/app/settings/page.tsx`.
+
+### UI-018 — Changes in the game take effect from the next round
+
+**Preset:** Preset
+**Requirement:** If modes, packs or governance rules are changed during a running game, players, points and the current state remain unchanged. The interface points out that changes only take effect from the next round.
+**Rationale:** A mode change in the middle of a round would devalue the running round.
+**Acceptance:** Notice text `src/app/settings/game-rules/page.tsx` (`Änderungen gelten ab der nächsten Runde` — changes take effect from the next round), `currentRound` query in all settings pages, mode/pack change via `setConfig` without intervention in `currentRound` (`src/stores/game-store.ts:248-252`).
+**Verification:** `grep -rn "currentRound" src/app/settings/*/page.tsx | wc -l`; no test exists — see [GAP-001](#open-gaps).
+
+---
+
+# 6. Internationalization (I18N)
+
+### I18N-001 — Two languages: German as the standard language
+
+**Preset:** Preset
+**Requirement:** Supported are `de` (default) and `en`. The list of supported languages and the standard language are kept centrally in the configuration.
+**Rationale:** German is the language of the market centre; English opens up the international market.
+**Acceptance:** `SUPPORTED_LANGUAGES: ['de', 'en']` and `DEFAULT_LANGUAGE: 'de'` (`src/config/game-config.ts:76-77`); `fallbackLng: 'de'` (`src/i18n/config.ts:22`).
+**Verification:** `grep -n "SUPPORTED_LANGUAGES\|DEFAULT_LANGUAGE" src/config/game-config.ts`; `grep -n "fallbackLng" src/i18n/config.ts`.
+
+### I18N-002 — The language is detected, stored and switchable manually
+
+**Preset:** Preset
+**Requirement:** The language is detected via `localStorage` and browser setting and stored in `localStorage`. The user can switch manually at any time; the switch takes effect immediately.
+**Rationale:** A forced restart after the language switch is an avoidable stumbling block.
+**Acceptance:** `src/i18n/config.ts:26-29` — `detection: { order: ['localStorage', 'navigator'], caches: ['localStorage'] }`; switch `i18n.changeLanguage(lang)` in `src/components/ui/LanguageSwitcher.tsx:34` and `src/components/ui/NavBar.tsx`.
+**Verification:** `grep -n "changeLanguage" src/components/ui/`; no test exists — see [GAP-006](#open-gaps).
+
+### I18N-003 — The language switch must not show an untranslated screen
+
+**Preset:** Preset
+**Requirement:** The i18n library is loaded only after successful initialisation; until then the application renders nothing. Thus no intermediate state with untranslated or missing texts arises.
+**Rationale:** Loading the language packs is an asynchronous step; without a waiting phase the interface flickers.
+**Acceptance:** `src/components/Providers.tsx:20-31` — dynamic import of `@/i18n/config`, `if (!isReady) return null`.
+**Verification:** `grep -n "isReady" src/components/Providers.tsx`; no test exists — see [GAP-006](#open-gaps).
+
+### I18N-004 — DE and EN are completely parallel
+
+**Preset:** Preset
+**Requirement:** `de.json` and `en.json` contain the same key scope in the same structure; no values are empty, no key exists in only one language. The English values are real translations, not copies of the German ones.
+**Rationale:** A one-sided key is dead text in production and an error in the interface.
+**Acceptance:** Measured state: both files have 6 namespaces (`app`, `landing`, `settings`, `themes`, `modes`, `common`) and 25 flat keys each — parallel and complete. `en.json` contains independent English values (e. g. `"landing.quickStartDesc": "3 clicks and you're playing!"`). The gate script `scripts/check-i18n-completeness.mjs` checks parity, empty values and plural forms.
+**Verification:** `node scripts/check-i18n-completeness.mjs` (gate, exit 1 on violation) respectively `node scripts/check-i18n-completeness.mjs --count` for the count. The script has existed since 25.10.2026; as npm script `npm run check:i18n` it is not yet wired — see [GAP-006](#open-gaps).
+
+### I18N-005 — The key space is flat and dot-based
+
+**Preset:** Preset
+**Requirement:** Keys are flat dot paths of the form `namespace.subpoint.designation`. Keys contain no interpolation; placeholders stand exclusively in the value (`{{count}}`).
+**Rationale:** Static keys are the precondition for a completeness gate being able to work at all.
+**Acceptance:** `src/i18n/locales/de.json` and `en.json` use exclusively dot paths; in the current state no value contains a placeholder.
+**Verification:** `grep -n "{{" src/i18n/locales/*.json` (must be empty as long as no placeholders are used); plural forms are checked by the gate `node scripts/check-i18n-completeness.mjs`.
+
+### I18N-006 — Proper names and mode names stay identical in both languages
+
+**Preset:** Preset
+**Requirement:** Product and provider names (Phomu, Spotify, YouTube, Jackbox, Amazon Music) as well as the six mode names remain unchanged in both languages. The mode names are English in the code (`timeline`, `hint-master`, …) and are translated in the interface via the mode key.
+**Rationale:** A brand name is not a translatable text.
+**Acceptance:** `themes.*` and `modes.*` in `src/i18n/locales/de.json` and `en.json` are identical respectively correspond to the respective mode name; the assignment mode → display name happens per interface (e. g. `MODE_LABELS` in `src/app/projector/page.tsx:17-24`).
+**Verification:** `node -e "const d=require('./src/i18n/locales/de.json'),e=require('./src/i18n/locales/en.json');console.log(JSON.stringify(d.themes)===JSON.stringify(e.themes)?'themes identisch':'ABWEICHUNG')"`; the proper-name whitelist is stored in the gate via `BRAND_ALLOWLIST` (`scripts/check-i18n-completeness.mjs`).
+
+### I18N-007 — Every visible text comes from the translation
+
+**Preset:** Preset
+**Requirement:** Every text visible to the user is obtained via `t()`. There is no literal text in the JSX any more.
+**Rationale:** Only in this way is "German first, English complete" sustainable at all.
+**Acceptance:** **Status: not met.** Currently `useTranslation` is used only in `src/app/page.tsx`. The gate counts 935 literal texts in 47 checked files; the largest occurrences are `src/components/game/RevealPhase.tsx` (141), `src/components/game/FeedbackOverlay.tsx` (3) and `src/components/game/QuestionPhase.tsx` (2). See [GAP-006](#open-gaps).
+**Verification:** `node scripts/check-i18n-completeness.mjs --count` — currently reports 935 literal texts in 47 files; the gate is only green when 0 literal texts remain. The current state can additionally be checked with `grep -rn "useTranslation" src/ | wc -l` (result 1).
+
+---
+
+# 7. Song catalogue, packs and data quality (CAT)
+
+### CAT-001 — The catalogue is the file basis, not a database
+
+**Preset:** Preset
+**Requirement:** The song catalogue lies as JSON per pack under `src/data/songs/` and is merged via `src/data/songs/index.ts` into `ALL_SONGS`. The loader is generated and not maintained manually.
+**Rationale:** A versioned file basis is reviewable and deterministic; the generated aggregation prevents manual deviations.
+**Acceptance:** `src/data/songs/index.ts` (note `This file is generated by scripts/migrate_and_deduplicate.py. Do not edit it manually.`), import of 135 pack files; `ALL_SONGS` exported.
+**Verification:** `ls src/data/songs/*.json | grep -v packs.json | wc -l` (measured: 135); `grep -n "generated by" src/data/songs/index.ts`.
+
+### CAT-002 — The catalogue comprises 135 pack files with 1,615 songs
+
+**Preset:** Preset
+**Requirement:** The stock comprises 135 pack files and 1,615 songs (measured on 2026-10-25 via `npm run validate-catalog`).
+**Rationale:** The stock is the largest single asset of the product; every number that describes it has to be measurable.
+**Acceptance:** `npm run validate-catalog` reports "Packs: 135", "Songs: 1615".
+**Verification:** `npm run validate-catalog`.
+
+### CAT-003 — There are exactly 27 configured packs, and all are covered in the catalogue
+
+**Preset:** Preset
+**Requirement:** `PHOMU_CONFIG.SONG_PACKS` lists 27 packs with ID, name, claim, emoji and colour gradient. Each of these IDs occurs as a `packs` entry in at least one song, and no pack name exists in the catalogue without a corresponding configuration.
+**Rationale:** A pack without songs delivers an empty selection and blocks the session; a catalogue pack without configuration is not selectable and would be dead stock.
+**Acceptance:** `src/config/game-config.ts:89-279` (27 entries); measured: 27 different pack names in the song data, 0 SONG_PACKS IDs without songs, 0 data pack names without configuration.
+**Verification:** `grep -c "^      id: '" src/config/game-config.ts` (result 27); counter-check via a script over `src/data/songs/*.json`.
+
+### CAT-004 — The catalogue access filters by pack assignment
+
+**Preset:** Preset
+**Requirement:** A song belongs to a pack if its `packs` list contains at least one of the selected pack IDs. The access filters via this assignment.
+**Rationale:** The pack assignment is the only ordering principle of the catalogue.
+**Acceptance:** `src/utils/song-picker.ts:36-40` — `ALL_SONGS.filter(s => s.packs.some(p => packIds.includes(p)))`; type `packs: string[]` (`src/types/song.ts:83`).
+**Verification:** `grep -n "packs.some" src/utils/song-picker.ts`; no test exists — see [GAP-003](#open-gaps).
+
+### CAT-005 — The catalogue gate prevents regressions
+
+**Preset:** Preset
+**Requirement:** `npm run validate-catalog` fails if the number of schema errors, duplicate groups or missing years rises compared to `specifications/quality-baseline.json`. With `--strict` every excess counts as an error. The gate optionally writes a JSON report.
+**Rationale:** A stock without a baseline gate erodes unnoticed.
+**Acceptance:** `src/utils/validate-song-catalog.ts:250-268` — strict mode and baseline comparison; baseline file `specifications/quality-baseline.json` (`schemaErrors: 3194`, `duplicateGroups: 164`, `missingYears: 0`); report path `specifications/catalog_issues_report.json` (`:200-204`).
+**Verification:** `npm run validate-catalog` (measured: `Katalog-Gate bestanden (keine Regression gegen Baseline).` — catalogue gate passed (no regression against baseline)); `npm run validate-catalog:report`.
+
+### CAT-006 — Duplicates are forbidden, exceptions are curated
+
+**Preset:** Preset
+**Requirement:** Two songs with the same normalised `artist + title + year` are inadmissible. Exceptions are allowed exclusively via entries in `specifications/duplicate-allowlist.json`. Pure secondary import duplicates from `youtube-import.json` are not counted as a curated error as long as at most one primary pack is affected.
+**Rationale:** Songs contained twice double the draw probability and damage the evaluation of the catalogue.
+**Acceptance:** `duplicateKey` and `checkDuplicates` (`src/utils/validate-song-catalog.ts:92-133`), allowlist access `:44-53`, secondary pack set `:57-61`; policy in `specifications/duplicate_policy.md`. Measured state: 0 open duplicate groups, 4 permitted duplicates.
+**Verification:** `npm run validate-catalog`; `cat specifications/duplicate-allowlist.json`.
+
+### CAT-007 — The catalogue must cover every year from 1950 to the current year
+
+**Preset:** Preset
+**Requirement:** For every year from 1950 to the current year at least one song must exist. Missing years are a hard gate error.
+**Rationale:** The Timeline mode needs dense years; a hole makes the question "when was that?" unplayable.
+**Acceptance:** `checkYearCoverage(packs, 1950, coverageEndYear)` (`src/utils/validate-song-catalog.ts:198`), option `--coverage-end-year` (`:161-173`); measured state: 0 missing years for 1950–2026.
+**Verification:** `npm run validate-catalog` — the output line reports the missing years (`Fehlende Jahre (1950-2026): 0`).
+
+### CAT-008 — The year of a song lies between 1500 and current year + 1
+
+**Preset:** Preset
+**Requirement:** The year of a catalogue entry must be an integer between 1500 and the current year plus 1. The lower bound 1500 covers classical works; the upper bound + 1 allows announced releases.
+**Rationale:** A lower bound of 1900 would mark correct composition years as errors; without an upper bound unrealistic releases could slip in.
+**Acceptance:** `MIN_SONG_YEAR = 1500`, `MAX_SONG_YEAR_OFFSET = 1` (`src/config/song-year-range.ts:21-24`), check in `validateSong` (`src/utils/validate-song-data.ts:122-137`), bounded upper limit `getMaxSongYear` (`:27-29`).
+**Verification:** `npm run test -- validate-song-data` (8 tests, e. g. `accepts classical composition years before 1900` and `rejects future years beyond +1`).
+
+### CAT-009 — The mandatory fields of a song are complete and typed
+
+**Preset:** Preset
+**Requirement:** A song must contain: `id` (non-empty string), `title`, `artist`, `year` (number), `country` (ISO-3166-1 alpha-2, two upper-case letters), `genre`, `difficulty` (`easy`|`medium`|`hard`), `mood` (at least one entry), `packs` (at least one entry), `hints` (4 or 5 strings; 5 outside the pack group "YouTube Collection"), `isOneHitWonder` (boolean), `links.youtube` as well as `supportedModes` and `isQRCompatible`.
+**Rationale:** Missing mandatory fields produce broken game states at runtime.
+**Acceptance:** `src/utils/validate-song-data.ts:107-168` and `:171-228`; hint count rule `:175-180`.
+**Verification:** `npm run validate-songs`; `npm run validate-catalog` (measured: 0 schema errors).
+
+### CAT-010 — Lyrics must have exactly three real lines and one invented line
+
+**Preset:** Preset
+**Requirement:** If `lyrics` is set, `lyrics.real` contains exactly three strings and `lyrics.fake` exactly one string. `lyrics === null` is allowed and produces a warning, not an error.
+**Rationale:** The mode mixes exactly these four lines; a different structure makes the question unplayable.
+**Acceptance:** `src/utils/validate-song-data.ts:313-324`; type `src/types/song.ts:96-102`. Measured state: 1,553 of 1,615 songs have lyrics, 62 do not.
+**Verification:** `npm run validate-catalog`; `npm run test -- validate-song-data`.
+
+### CAT-011 — Hints must not give away the song
+
+**Preset:** Preset
+**Requirement:** A hint that contains a token from title or artist (from 4 characters, normalised) produces a warning. In addition: if `hintEvidence` is present, it must contain five valid URLs; if it is missing, this produces a warning.
+**Rationale:** A hint that names the artist destroys the game. The verifiability of the hints additionally protects against false statements.
+**Acceptance:** `src/utils/validate-song-data.ts:191-222` — spoiler token warning and `hintEvidence` check; the hint text is additionally censored at runtime (`src/utils/censor-utils.ts:11-59`).
+**Verification:** `npm run validate-catalog` (measured: 126 warnings); no test exists — see [GAP-004](#open-gaps).
+
+### CAT-012 — Hints are censored at runtime
+
+**Preset:** Preset
+**Requirement:** Before the display, a hint is checked against title and artist. Tokens from four characters on as well as all artist names listed in the exception list (e. g. `BTS`, `U2`, `2Pac`) are replaced with `[XXX]`. Short tokens (< 4 characters) only with word boundaries; words from the ignore list (`THE`, `AND`, `DER`, `UND` …) are never censored.
+**Rationale:** A cover version added retroactively can make a hint spoiler-free retroactively — the censorship has to happen at runtime, not only at import.
+**Acceptance:** `censorHint` (`src/utils/censor-utils.ts:11-59`), configuration `src/config/spoiler-config.ts:13` (`MIN_LENGTH: 4`), `:19-22` (exceptions), `:25-28` (ignore list); application in `src/components/game/modes/HintMasterMode.tsx:156`.
+**Verification:** `grep -n "censorHint" src/components/game/modes/HintMasterMode.tsx src/utils/censor-utils.ts`; no test exists — see [GAP-004](#open-gaps).
+
+### CAT-013 — Streaming links are formally checked
+
+**Preset:** Preset
+**Requirement:** `links.youtube` must be present; a placeholder (`TODO:`, empty, `PLACEHOLDER`) produces a warning. `spotify` must be a `spotify:track:` URI or an `open.spotify.com/track/` URL, `spotifyFreePreview`, `amazonMusic` and `amazonPrimePreview` must be http(s) URLs. `previewTimestamp.start` must be smaller than `.end`.
+**Rationale:** Malformed links are the most frequent cause of unplayable songs.
+**Acceptance:** `src/utils/validate-song-data.ts:231-308` and `:348-355`.
+**Verification:** `npm run validate-catalog`; no test exists — see [GAP-001](#open-gaps).
+
+### CAT-014 — Cover metadata is typed and checked
+
+**Preset:** Preset
+**Requirement:** If `coverMode` is set, `relationType` must be one of `original`, `cover`, `sample`, `remix` and `confidence` one of `low`, `medium`, `high`; `coverYear` must be a number.
+**Rationale:** The Cover Confusion mode needs reliable relation data.
+**Acceptance:** `src/utils/validate-song-data.ts:327-345`; type `src/types/song.ts:29-41`.
+**Verification:** `npm run validate-catalog`; no test exists — see [GAP-001](#open-gaps).
+
+### CAT-015 — The admin interface edits songs locally and exportably
+
+**Preset:** Preset
+**Requirement:** `/admin/songs` and `/admin/review` allow viewing, filtering, editing and exporting songs. Changes are kept in `localStorage` under `phomu-admin-songs` respectively `phomu-review-edits` and exported as a JSON delta. No server data is changed.
+**Rationale:** The catalogue is maintained without a database; the interface is the only work surface for it.
+**Acceptance:** `src/app/admin/songs/page.tsx:30` (`STORAGE_KEY`), `src/app/admin/review/page.tsx:33` (`STORAGE_KEY = 'phomu-review-edits'`), delta/full export in `src/app/admin/review/page.tsx`.
+**Verification:** `grep -n "phomu-admin-songs\|phomu-review-edits" src/app/admin/*/page.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### CAT-016 — The browse area can start a song directly
+
+**Preset:** Preset
+**Requirement:** In the browse area a song can be played immediately by click (quick play). The browse area deduplicates by title and artist, filters by search, genre, decade, difficulty, mood, one-hit wonder, lyrics and QR compatibility and paginates (8/24/48/96/all).
+**Rationale:** "Which song was that again?" is one of the most frequent questions in your own party round.
+**Acceptance:** `handlePlaySong` (`src/app/browse/page.tsx`), filter logic in `filteredSongs`, pagination `PAGE_SIZE_OPTIONS` (`src/app/browse/page.tsx:15`).
+**Verification:** `grep -n "startQuickGame\|onlyWithLyrics\|onlyQR" src/app/browse/page.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+---
+
+# 8. Security, privacy and admin API (SEC)
+
+> **State 25.10.2026:** The admin API area is hardened in parallel by the security role (`src/admin-api/_lib/security.ts` and `src/admin-api/_lib/rate-limit.ts` were extended on the same day by rate limiting, redirect guard, size caps and error statuses). The line references in this section relate to this state. What remains open is the wiring of the new helpers into the routes — see [GAP-029](#open-gaps).
+
+### SEC-001 — The admin API is token-protected
+
+**Preset:** Preset
+**Requirement:** Every admin API route demands the header `x-admin-token`. Without a valid token the answer is `401 Unauthorized`.
+**Rationale:** The cover API writes files into the repository; it must not stand open on the internet.
+**Acceptance:** `assertAdminAccess` (`src/admin-api/_lib/security.ts:61-78`); call in `src/admin-api/admin/covers/search/route.ts:46-47` and `src/admin-api/admin/covers/save/route.ts:119-120`.
+**Verification:** `grep -rn "assertAdminAccess" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-002 — The token comparison is time-constant
+
+**Preset:** Preset
+**Requirement:** The token comparison happens via `crypto.timingSafeEqual` on SHA-256 hashes and thus without a measurable side channel. Both hashes have the same length, so that the comparison cannot throw.
+**Rationale:** A simple string comparison reveals the length and position of the token via the response time.
+**Acceptance:** `timingSafeEqual` (`src/admin-api/_lib/security.ts:47-51`), use in `assertAdminAccess` (`:71`).
+**Verification:** `grep -n "timingSafeEqual" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-003 — Missing or too short configuration leads to 503, not to open access
+
+**Preset:** Preset
+**Requirement:** If `ADMIN_API_TOKEN` is not set or is shorter than 32 characters, the API answers with `503` — in no case with access.
+**Rationale:** A failed deployment must not lead to an unlimited write API.
+**Acceptance:** `src/admin-api/_lib/security.ts:62-68` — `MIN_ADMIN_TOKEN_LENGTH = 32` (`:7`), error texts "Admin API not configured" and "Admin API token too short" with status 503.
+**Verification:** `grep -n "MIN_ADMIN_TOKEN_LENGTH\|503" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-004 — The token is generated locally and not checked in
+
+**Preset:** Preset
+**Requirement:** The token is generated with `node scripts/generate-admin-token.js` (default: 32 random bytes, hex-encoded; at least 16 bytes permitted) and set via the environment variable `ADMIN_API_TOKEN`. The `.env.example` contains only a placeholder.
+**Rationale:** A token that is checked in is not a token.
+**Acceptance:** `scripts/generate-admin-token.js:4-12`; `.env.example` ("ADMIN_API_TOKEN=replace-with-long-random-token"); `scripts/generate-admin-token.js` refuses values below 16 bytes.
+**Verification:** `node scripts/generate-admin-token.js`; `grep -n "ADMIN_API_TOKEN" .env.example`; the token must not be in `git ls-files` (`git ls-files | xargs grep -l "ADMIN_API_TOKEN=" 2>/dev/null` — must hit only `.env.example`).
+
+### SEC-005 — External cover downloads are restricted to HTTPS and a host allowlist
+
+**Preset:** Preset
+**Requirement:** A cover URL must use `https:` and lie on one of four permitted hosts (`mzstatic.com`, `is1-ssl.mzstatic.com`, `cdn-images.dzcdn.net`, `dzcdn.net`); subdomains of the permitted hosts are allowed. All other URLs are rejected with `400`.
+**Rationale:** A URL freely chosen by the client is an SSRF vector (access to internal networks) and a file type vector.
+**Acceptance:** `assertAllowedHost` (`src/admin-api/_lib/security.ts:136-143`), `parseHttpUrl` (`:145-162`), allowlist `src/admin-api/admin/covers/save/route.ts:11`, call `:128`, error handling `:126-132` → HTTP 400.
+**Verification:** `grep -n "ALLOWED_IMAGE_HOSTS\|Only HTTPS" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-006 — The download is limited in time, type and size
+
+**Preset:** Preset
+**Requirement:** The cover download aborts after 10 seconds, accepts only responses with `content-type` beginning with `image/`, and rejects files over 5 MiB (both via `content-length` and via the actual byte count). Failed downloads deliver `502`, oversized files `413`.
+**Rationale:** An unlimited download is a denial-of-service surface.
+**Acceptance:** `downloadCover` (`src/admin-api/admin/covers/save/route.ts:32-69`), `MAX_IMAGE_BYTES = 5 * 1024 * 1024` (`:10`; centrally also in `src/admin-api/_lib/security.ts:13`), status mapping `:46-63` and `:149-156`.
+**Verification:** `grep -n "MAX_IMAGE_BYTES\|content-type\|10_000" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-007 — Search requests of the cover API are length-limited and time-limited
+
+**Preset:** Preset
+**Requirement:** `artist` and `title` of the cover search are limited to 120 characters and must not be empty. External retrievals abort after 7,000 ms and run without cache (`cache: 'no-store'`).
+**Rationale:** Unlimited inputs and hanging upstreams block the server.
+**Acceptance:** `boundedText` (`src/admin-api/_lib/security.ts:118-123`), call `src/admin-api/admin/covers/search/route.ts:51-52`; `fetchWithTimeout` with `DEFAULT_TIMEOUT_MS = 7000` (`src/admin-api/_lib/security.ts:6`, `:173-204`).
+**Verification:** `grep -n "boundedText\|DEFAULT_TIMEOUT_MS" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-008 — The cover search uses two fixed external sources
+
+**Preset:** Preset
+**Requirement:** The cover search queries exclusively the search interfaces of the iTunes Search API and Deezer, each with `limit=5`. The results are deduplicated and limited to 10.
+**Rationale:** A fixed, documented catalogue protects against unexpected data sources and keeps the behaviour traceable.
+**Acceptance:** `src/admin-api/admin/covers/search/route.ts:56-93` — both retrievals, `uniqueResults` (`:35-43`), `slice(0, 10)` (`:93`).
+**Verification:** `grep -n "itunes.apple.com\|api.deezer.com" src/admin-api/admin/covers/search/route.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-009 — Write accesses to the catalogue are serialised
+
+**Preset:** Preset
+**Requirement:** The updating of the pack files happens under an exclusive lock file `.covers-save.lock` (flag `wx`). At most 30 attempts are made at intervals of 60 ms; if this fails, the API answers with `503`.
+**Rationale:** Two parallel cover saves must not overwrite each other's JSON file.
+**Acceptance:** `withPacksLock` (`src/admin-api/admin/covers/save/route.ts:71-94`), constants `:9`, `:12-13`, error "Cover save is temporarily busy" (`:85`).
+**Verification:** `grep -n "withPacksLock\|LOCK_RETRIES" src/admin-api/admin/covers/save/route.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-010 — Unknown song IDs are not created
+
+**Preset:** Preset
+**Requirement:** If a `songId` is passed that occurs in no pack file, the API answers with `404` and changes no pack file. The format of the ID is restricted to `[a-z0-9][a-z0-9-_]{2,120}`.
+**Rationale:** An unchecked ID is a way to generate arbitrary file names.
+**Acceptance:** `parseSongId` (`src/admin-api/_lib/security.ts:125-130`), search over all pack files and 404 answer (`src/admin-api/admin/covers/save/route.ts:106-146`).
+**Verification:** `grep -n "not found in any pack" src/admin-api/admin/covers/save/route.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-011 — Errors of the admin API do not disclose internal details
+
+**Preset:** Preset
+**Requirement:** Error responses contain a message and a status code; unexpected errors deliver `500` with generic text. Internal stack traces, paths or token values are not output.
+**Rationale:** Error messages of the admin API are an information leak.
+**Acceptance:** `src/admin-api/admin/covers/save/route.ts:149-156`, `src/admin-api/admin/covers/search/route.ts:94-97`; the error class documents the promise explicitly (`src/admin-api/_lib/security.ts:27-40`).
+**Verification:** `grep -n "status: 500" src/admin-api/`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-012 — No personal data in the disclosure channel
+
+**Preset:** Preset
+**Requirement:** The missing-link report contains exclusively technical metadata (song identifier, technical designations, available providers, time zone, locale, region, random device ID) — no free-text fields, no names, no contact data.
+**Rationale:** The device ID is a random UUID, not a user account; free text fields would be a PII risk.
+**Acceptance:** `src/components/game/MusicPlayer.tsx:198-214` (payload), `deviceId = localStorage.getItem(DEVICE_KEY) ?? crypto.randomUUID()` (`:179`); promised property in `src/app/privacy/page.tsx` ("We explicitly avoid free-text fields in these flows").
+**Verification:** `grep -n "issuePayload" -A 18 src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
+
+### SEC-013 — The local data can be deleted completely
+
+**Preset:** Preset
+**Requirement:** Via `/settings/account` the entire local progress (XP) can be reset after confirmation. The action is marked as "danger zone".
+**Rationale:** Privacy rights have to be exercisable without technical knowledge.
+**Acceptance:** `resetProgress` (`src/stores/game-store.ts:525-527`), `src/app/settings/account/page.tsx` (danger zone with `confirm(...)`).
+**Verification:** `grep -n "resetProgress" src/app/settings/account/page.tsx src/stores/game-store.ts`.
+
+### SEC-014 — Failed sign-in attempts are limited
+
+**Preset:** Preset
+**Requirement:** Failed token checks are counted: 10 attempts per client and 100 attempts globally per 5-minute window. If a limit is exceeded, the API answers with `429` and a `Retry-After` header. The bucket per client is hard-limited (at most 10,000 keys), so that spoofed keys cannot fill up the memory.
+**Rationale:** Without a limit the token is a brute-force surface.
+**Acceptance:** `enforceAuthFailureLimit` (`src/admin-api/_lib/security.ts:84-98`), limits `:19` and `:25`, `checkRateLimit`/`getClientKey` (`src/admin-api/_lib/rate-limit.ts:13-48`, `MAX_TRACKED_KEYS = 10.000` in `:43`). The limitation acts **per instance** and is not a distributed DoS protection — that is documented explicitly in `src/admin-api/_lib/rate-limit.ts:4-11`.
+**Verification:** `grep -n "AUTH_FAILURE_LIMIT\|AUTH_FAILURE_GLOBAL_LIMIT\|429" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-015 — Redirects are followed manually and checked per hop
+
+**Preset:** Preset
+**Requirement:** Binary downloads follow redirects manually, at most three hops. Every hop is checked again against the protocol (`https:`) and the host allowlist; a redirect without a target, into an internal network or to a non-permitted host is rejected with `400`.
+**Rationale:** An automatically followed redirect is the usual way to bypass the allowlist (`http://169.254.169.254/`).
+**Acceptance:** `fetchGuardedBinary` (`src/admin-api/_lib/security.ts:268-322`), `MAX_REDIRECTS = 3` (`:10`), hop check `:285-307`.
+**Verification:** `grep -n "fetchGuardedBinary\|MAX_REDIRECTS" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-016 — Response bodies of external services are size-limited
+
+**Preset:** Preset
+**Requirement:** The body of external responses is streamed and aborted as soon as it exceeds the configured limit (5 MiB for images, 512 KiB for JSON responses). A server without `content-length` can therefore not exhaust the memory of the process.
+**Rationale:** `arrayBuffer()` without a limit is a memory disaster with malicious or broken upstreams.
+**Acceptance:** `readCappedBody` (`src/admin-api/_lib/security.ts:211-250`), `MAX_IMAGE_BYTES` (`:13`), `MAX_JSON_BYTES = 512 * 1024` (`:16`), integration in `fetchWithTimeout` (`:191-200`).
+**Verification:** `grep -n "readCappedBody\|MAX_JSON_BYTES" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-017 — Credentials in URLs are forbidden
+
+**Preset:** Preset
+**Requirement:** A cover URL with `username` or `password` is rejected.
+**Rationale:** Embedded credentials end up in logs, in error messages and in upstream requests.
+**Acceptance:** `src/admin-api/_lib/security.ts:156-157`.
+**Verification:** `grep -n "Credentials in URL" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+### SEC-018 — Errors of the admin API carry an explicit HTTP status
+
+**Preset:** Preset
+**Requirement:** Errors of the admin API are carried by a dedicated error class with status code (`AdminRequestError`), so that status and message cannot drift apart via error texts.
+**Rationale:** String matching on error texts is error-prone and untestable.
+**Acceptance:** `src/admin-api/_lib/security.ts:32-40` (class), `:216`, `:235`, `:287`, `:293`, `:297`, `:302`, `:310`, `:315`, `:321` (status mapping).
+**Verification:** `grep -n "AdminRequestError" src/admin-api/_lib/security.ts`; no test exists — see [GAP-005](#open-gaps).
+
+---
+
+# 9. Non-functional requirements (NFR)
+
+### NFR-001 — TypeScript runs in strict mode without errors
+
+**Preset:** Preset
+**Requirement:** `npm run typecheck` (`tsc --noEmit`) is error-free. `any` is not permitted; types are defined centrally via `src/types/` and `src/config/`.
+**Rationale:** A strict type system is the cheapest form of quality assurance.
+**Acceptance:** `tsconfig.json` with `strict: true`; measured state: `npm run typecheck` ends with exit 0.
+**Verification:** `npm run typecheck`; `grep -rn ": any\|<any>\|as any" src/ | grep -v "\.test\."` (must be empty).
+
+### NFR-002 — ESLint is error-free
+
+**Preset:** Preset
+**Requirement:** `npm run lint` reports no errors. Remaining warnings are documented and justified.
+**Rationale:** Lint is the cheapest continuously running quality check.
+**Acceptance:** Measured state: 0 errors, 1 warning (`playwright.config.ts:1` — `import/no-anonymous-default-export`).
+**Verification:** `npm run lint` — the output must contain "0 errors".
+
+### NFR-003 — Unit tests cover the pure logic
+
+**Preset:** Preset
+**Requirement:** Vitest tests the rule-bearing utilities. The test scope comprises at least: QR intent parsing, AI task queue, catalogue year validation and the Amazon link resolution.
+**Rationale:** The most expensive rules of the product (scoring, slot logic, selection chain) are still untested — that is the largest coverage gap (see [GAP-001](#open-gaps) to [GAP-003](#open-gaps)).
+**Acceptance:** Measured state: 4 test files, 21 tests, all passed (`src/utils/qr-intent.test.ts`, `src/utils/ai-task-queue.test.ts`, `src/utils/validate-song-data.test.ts`, `src/components/game/MusicPlayer.test.ts`). `vitest.config.ts` includes `src/**/*.test.ts`.
+**Verification:** `npx vitest run` — 4 files / 21 tests must be green.
+
+### NFR-004 — The test configuration is extended beyond the source area
+
+**Preset:** Preset
+**Requirement:** Vitest captures all test files under `src/` and measures the coverage over the entire product code, not only over `src/utils/`.
+**Rationale:** The current coverage measurement completely excludes store, components and mode logic — exactly the areas with the most expensive rules.
+**Acceptance:** **Status: not met.** `vitest.config.ts` limits `coverage.include` to `src/utils/**/*.ts`. See [GAP-001](#open-gaps).
+**Verification:** `grep -n "include" vitest.config.ts`; target state: `coverage.include: ['src/**/*.{ts,tsx}']`.
+
+### NFR-005 — One gate over the entire pipeline
+
+**Preset:** Preset
+**Requirement:** `npm run local-ci` runs in a fixed order: typecheck, lint, unit tests, format check (non-blocking), song validation, catalogue validation, build, dependency audit (from `moderate`) as well as — only with `YOUTUBE_API_KEY` set — the YouTube link audit.
+**Rationale:** A gate that checks only a part creates a false sense of security.
+**Acceptance:** `scripts/local-ci.sh:47-72` (checklist);
+**Verification:** `bash scripts/local-ci.sh` — every check marked as blocking must report "[SUCCESS]".
+
+### NFR-006 — The format check is non-blocking, but present
 
 **Preset:** Optional
-**Anforderung:** Die Queue verarbeitet Aufgaben mit einer Standard-Parallelität von 1 und einem Retry-Abstand von 1.000 ms. Bei Fehlern wird mit linearer Verzögerung (`retryDelayMs × attempts`) erneut versucht, bis `maxAttempts` erreicht ist; danach lautet der Status `failed` mit der Fehlermeldung. Erfolgreiche Aufgaben erhalten den Status `done`.
-**Begründung:** Das Modell ist die Grundlage für den geplanten KI-Hinweis-Pipeline; die Wiederholungssemantik muss vor dem Einsatz feststehen.
-**Akzeptanz:** `src/utils/ai-task-queue.ts:20-64`; Test `src/utils/ai-task-queue.test.ts` (2 Tests: Erfolg, Retry bis `failed`).
-**Verifikation:** `npm run test -- ai-task-queue`.
+**Requirement:** The formatting is checked with Prettier (`npm run format:check`), the check currently does not block the pipeline.
+**Rationale:** A blocking format check in an active content repository creates noise; the existence of the check suffices for now.
+**Acceptance:** `scripts/local-ci.sh:56` —
+**Verification:** `npm run format:check`.
 
-### NFR-015 — Die KI-Hinweis-Pipeline ist noch nicht angebunden
+### NFR-007 — The catalogue report is part of the gate
+
+**Preset:** Preset
+**Requirement:** The catalogue gate writes its report to `specifications/catalog_issues_report.json` and is led as evidence in the release process.
+**Rationale:** Without a report written along, the state of the gate cannot be evidenced.
+**Acceptance:** `src/utils/validate-song-catalog.ts:230-244` (writing of the report), `npm run validate-catalog:report`.
+**Verification:** `npm run validate-catalog:report`; `cat specifications/catalog_issues_report.json`.
+
+### NFR-008 — No acceptance based on stubs
+
+**Preset:** Preset
+**Requirement:** A feature counts as implemented only when a real, executable implementation exists. Placeholder assets, mock bridges and providers that are only listed as configured do not count as implementation. Known violations are tracked in the [Open gaps](#open-gaps) and block the acceptance of the affected feature.
+**Rationale:** The stock contains audio prompts instead of audio, a cover variant without cover data and an Amazon path without preview data. Without this rule every acceptance becomes a claim.
+**Acceptance:** Known violations: [GAP-009](#open-gaps) (audio assets), [GAP-011](#open-gaps) (cover versions), [GAP-012](#open-gaps) (Amazon preview). Counter-check: `ls public/audio/sfx/` contains only `.prompt.md` files, no `.mp3`.
+**Verification:** `ls public/audio/sfx/ public/audio/mode-cues/` — the evidence of the gap is part of the acceptance, not its replacement.
+
+### NFR-009 — Source files stay below the size limit
+
+**Preset:** Preset
+**Requirement:** No source file exceeds 550 lines (soft target 400 lines). The gate `scripts/check-file-size.mjs` checks this automatically.
+**Rationale:** Very large files are the main reason for hard-to-maintain code.
+**Acceptance:** **Status: not met.** Measured: 5 files over 550 lines (`src/app/admin/review/page.tsx` 755, `src/app/lobby/page.tsx` 744, `src/components/game/RevealPhase.tsx` 671, `src/stores/game-store.ts` 640, `src/components/game/MusicPlayer.tsx` 630) and 5 more over 400 lines. The gate script does not exist. See [GAP-007](#open-gaps).
+**Verification:** `find src -name '*.ts' -o -name '*.tsx' | xargs wc -l | sort -rn | head -15` — after completion `scripts/check-file-size.mjs` must exist, run green and be integrated into `scripts/local-ci.sh`.
+
+### NFR-010 — An i18n gate prevents untranslated texts
+
+**Preset:** Preset
+**Requirement:** `scripts/check-i18n-completeness.mjs` checks that `de.json` and `en.json` are parallel, contain no empty values and that no visible literal text is left in the JSX. The gate runs locally and in the CI.
+**Rationale:** Without an automatic gate the translation drifts apart with every change.
+**Acceptance:** **Status: partially met.** The script `scripts/check-i18n-completeness.mjs` has existed since 25.10.2026 and checks parity, empty values, plural forms and literal texts (`--count`, `--json`, `--files=`). Not met: the wiring as `npm run check:i18n` in `package.json` and the run in `scripts/local-ci.sh`. See [GAP-006](#open-gaps).
+**Verification:** `node scripts/check-i18n-completeness.mjs` — must end without hits (exit 0). Wiring: `grep -n "check:i18n" package.json scripts/local-ci.sh`.
+
+### NFR-011 — A doc link check prevents dead references
+
+**Preset:** Preset
+**Requirement:** `scripts/check-doc-links.mjs` checks that every relative Markdown link in the project documentation is resolvable. The gate runs locally and in the CI.
+**Rationale:** Dead links in a specification are more expensive than missing links, because they destroy trust.
+**Acceptance:** **Status: not met.** The script does not exist. The repo does however contain a `broken-links-report.json` (72,904 bytes) as a legacy artefact. See [GAP-008](#open-gaps).
+**Verification:** `ls scripts/check-doc-links.mjs` — after completion the script must exist, run green and be integrated into `scripts/local-ci.sh`.
+
+### NFR-012 — The E2E smoke test checks the reachability of the core routes
+
+**Preset:** Preset
+**Requirement:** The Playwright smoke test opens the core routes `/`, `/lobby`, `/game`, `/game-over`, `/browse` and `/settings` and checks that each route is loaded. A live server is started via the Playwright configuration.
+**Rationale:** The smoke test catches the most common production error: a route that no longer builds.
+**Acceptance:** `e2e/smoke.spec.ts` (one test case with six route checks), `playwright.config.ts`.
+**Verification:** `npm run test:e2e:smoke` (presupposes an installed Chromium browser: `npm run test:e2e:install`).
+
+### NFR-013 — The E2E test covers the core journey
+
+**Preset:** Preset
+**Requirement:** The end-to-end test must cover the complete game flow: create a player, choose a mode, start the game, answer a round, trigger the reveal, end the game.
+**Rationale:** The current smoke test only checks URLs; a bug in the state automaton would remain undetected.
+**Acceptance:** **Status: not met.** `e2e/smoke.spec.ts` consists exclusively of URL assertions. See [GAP-021](#open-gaps).
+**Verification:** `npm run test:e2e:smoke` — after the extension the test must run through at least one complete round.
+
+### NFR-014 — The AI task queue works with retry and status model
+
+**Preset:** Optional
+**Requirement:** The queue processes tasks with a default parallelism of 1 and a retry interval of 1,000 ms. On errors a retry is made with linear delay (`retryDelayMs × attempts`) until `maxAttempts` is reached; afterwards the status is `failed` with the error message. Successful tasks receive the status `done`.
+**Rationale:** The model is the basis for the planned AI hint pipeline; the retry semantics must be fixed before the deployment.
+**Acceptance:** `src/utils/ai-task-queue.ts:20-64`; test `src/utils/ai-task-queue.test.ts` (2 tests: success, retry until `failed`).
+**Verification:** `npm run test -- ai-task-queue`.
+
+### NFR-015 — The AI hint pipeline is not yet connected
 
 **Preset:** Later
-**Anforderung:** Die Einstellungen `hintReleasePolicy` (`auto-publish` | `manual-review`) und `aiQueueStrategy` (`queue-retry-pending` | `fail-fast`) werden gespeichert und in der Oberfläche angezeigt, steuern aber noch keinen Prozess. Es existiert keine KI-Hint-Erzeugung im Produktcode.
-**Begründung:** Eine sichtbare Einstellung ohne Wirkung ist eine Zusage, die nicht eingelöst wird; sie wird deshalb hier als „Later" geführt und nicht als Funktion behauptet.
-**Akzeptanz:** Typen `src/types/game-state.ts:17-20`, Vorgaben `src/config/game-config.ts:70-71`, Oberfläche `src/app/settings/governance/page.tsx`; kein Aufrufer der Queue im Produktcode (`grep -rn "processAITaskQueue" src/` findet nur die Testdatei).
-**Verifikation:** `grep -rn "processAITaskQueue" src/`; Lücke geführt als [GAP-020](#offene-lücken).
+**Requirement:** The settings `hintReleasePolicy` (`auto-publish` | `manual-review`) and `aiQueueStrategy` (`queue-retry-pending` | `fail-fast`) are stored and displayed in the interface, but do not yet control any process. There is no AI hint generation in the product code.
+**Rationale:** A visible setting without effect is a promise that is not kept; it is therefore tracked here as "Later" and not claimed as a feature.
+**Acceptance:** Types `src/types/game-state.ts:17-20`, defaults `src/config/game-config.ts:70-71`, interface `src/app/settings/governance/page.tsx`; no caller of the queue in the product code (`grep -rn "processAITaskQueue" src/` finds only the test file).
+**Verification:** `grep -rn "processAITaskQueue" src/`; the gap is tracked as [GAP-020](#open-gaps).
 
-### NFR-016 — Die Entwicklungswerkzeuge bleiben reproduzierbar
+### NFR-016 — The development tools remain reproducible
 
 **Preset:** Preset
-**Anforderung:** Die Generator- und Reparaturskripte (`scripts/*.js`, `scripts/*.py`) verändern den Katalog deterministisch und sind versioniert. Der Loader `src/data/songs/index.ts` wird von `scripts/migrate_and_deduplicate.py` erzeugt und nicht manuell gepflegt.
-**Begründung:** Ein Katalog, der nur per Hand gepflegt wird, ist nicht reproduzierbar prüfbar.
-**Akzeptanz:** Kopfkommentar in `src/data/songs/index.ts`; `scripts/migrate_and_deduplicate.py`, `scripts/fix-duplicates.js`, `scripts/find-duplicates.js`, `scripts/repair-links.js`, `scripts/fix-youtube-links.js` liegen vor.
-**Verifikation:** `ls scripts/ | wc -l`; `head -8 src/data/songs/index.ts`.
+**Requirement:** The generator and repair scripts (`scripts/*.js`, `scripts/*.py`) change the catalogue deterministically and are versioned. The loader `src/data/songs/index.ts` is generated by `scripts/migrate_and_deduplicate.py` and not maintained manually.
+**Rationale:** A catalogue that is maintained by hand alone cannot be checked reproducibly.
+**Acceptance:** Header comment in `src/data/songs/index.ts`; `scripts/migrate_and_deduplicate.py`, `scripts/fix-duplicates.js`, `scripts/find-duplicates.js`, `scripts/repair-links.js`, `scripts/fix-youtube-links.js` are present.
+**Verification:** `ls scripts/ | wc -l`; `head -8 src/data/songs/index.ts`.
 
 ---
 
-# Widersprüche
+# Contradictions
 
-Die folgenden Aussagen aus `LLM.md` und den Alt-Spezifikationen unter `specifications/` widersprechen dem Code. Maßgeblich ist der Code; die Alt-Dokumente sind zu korrigieren oder zu archivieren.
+The following statements from `LLM.md` and the legacy specifications under `specifications/` contradict the code. The code is authoritative; the old documents are to be corrected or archived.
 
-| # | Fundstelle | Behauptung | Ist-Stand (Code) | Auflösung |
+| # | Location | Claim | Actual state (code) | Resolution |
 |---|---|---|---|---|
-| W-01 | `specifications/archive/LLM_archivstand_2026-10-25.md:11` (altes `LLM.md`) | „Next.js 15 (App Router)" | `package.json`: `"next": "^16.2.1"`, `eslint-config-next: ^16.2.1`, `react: ^19.2.4` | Durch das Archivieren und die neue Einstiegskarte `LLM.md` („Next.js 16 (App Router) · React 19 …") **erledigt**. Maßgeblich ist `package.json`. |
-| W-02 | `specifications/archive/LLM_archivstand_2026-10-25.md:43` | „THE 5 GAME MODES" | Sechs Modi: `src/config/game-config.ts:12-18` und `:300-307` | Erledigt durch das Archiv; die sechs IDs sind in [CORE-006](#core-006--ein-kern-sechs-klar-getrennte-spielmodi) verbindlich. |
-| W-03 | `specifications/archive/LLM_archivstand_2026-10-25.md:44` | Timeline = „Drag & drop songs onto a timeline" | Slot-basierte Klick-/Tastaturauswahl, kein Drag & Drop: `src/components/game/modes/TimelineMode.tsx:466-536`, `:242-255` | Erledigt durch das Archiv; als „Ordnen per Slot-Auswahl" geführt. |
-| W-04 | `specifications/archive/LLM_archivstand_2026-10-25.md:52` | Lyrics Labyrinth: „Players MUST lock in their choice **before** the music starts. Audio is the reveal." | Die Musik startet sofort beim Aufbau der Frage (blurred): `src/components/game/modes/LyricsMode.tsx:109-122` | Erledigt durch das Archiv. Die Lock-in-Semantik ist weiterhin **nicht** umgesetzt — siehe [GAP-010](#offene-lücken). |
-| W-05 | `specifications/archive/LLM_archivstand_2026-10-25.md:55` | Vibe-Check: „Community stats show how many other users chose the same vibe (via Supabase)." | Keine Community-Statistik. Gewertet wird lokal gegen `song.mood`: `src/components/game/modes/VibeCheckMode.tsx:54` | Erledigt durch das Archiv; verbindlich ist [GAME-030](#game-030--vibe-check-sechs-optionen-zwei-punkte). |
-| W-06 | `specifications/archive/LLM_archivstand_2026-10-25.md:72` | „Strategy Pattern: A single `MusicPlayer` component delegates to provider-specific adapters." | `src/types/music-provider.ts:34-93` definiert `MusicProviderInterface`, aber **keine** Implementierung existiert. `MusicPlayer` ist ein monolithischer Component mit Inline-Zweigen (`:149-170`, `:559-619`) | Erledigt durch das Archiv. Das Interface bleibt **Later**; die tatsächliche Architektur steht in [MEDIA-001](#media-001--youtube-ist-der-standard-provider) bis [MEDIA-018](#media-018--der-providerstatus-wird-im-player-angezeigt). |
-| W-07 | `specifications/archive/LLM_archivstand_2026-10-25.md:79` | „No title, artist, album art, or provider chrome visible — **not even in the DOM**." | Der YouTube-Iframe liegt im DOM, abgedeckt von der Blur-Schicht: `src/components/game/MusicPlayer.tsx:424-430` | Erledigt durch das Archiv. „Nicht sichtbar" ist die belegbare Aussage; `controls: 0` und `modestbranding: 1` (`:296-297`) verhindern sichtbare Chrome. |
-| W-08 | `specifications/archive/LLM_archivstand_2026-10-25.md:86` | Autoplay-Workaround: „User must click a 'Play' button, followed by a countdown (3-2-1), then music starts." | Kein Play-Knopf und kein Countdown. `playerVars.autoplay = 1` (`:295`); `PHOMU_CONFIG.COUNTDOWN_SECONDS: 3` wird nirgends verwendet | Erledigt durch das Archiv. `COUNTDOWN_SECONDS` ist toter Konfigurationsbestand — siehe [GAP-022](#offene-lücken). |
-| W-09 | `specifications/archive/LLM_archivstand_2026-10-25.md:81-82` | Reveal-Trigger: „Singleplayer: After the player locks in their answer. Multiplayer: After ALL players have locked in." | Es gibt nur Pass-the-Phone mit einem antwortenden Piloten; der Reveal läuft über einen manuellen Button: `src/components/game/QuestionPhase.tsx:86-102`, `src/app/game/page.tsx:164-166` | Erledigt durch das Archiv; die tatsächliche Auslösung ist in [GAME-002](#game-002--der-reveal-gibt-die-lösung-erst-nach-dem-sperren-frei) beschrieben. |
-| W-10 | `specifications/archive/LLM_archivstand_2026-10-25.md:20`, `:25-26`, `:29` | Anti-Cheat-UI mit Swipe-to-Unlock, „PASS DEVICE"-Screen, 6-stelliger Session-Code, Supabase-Realtime, Google-Login, Spectator-Modus, Eliminierung | Nicht implementiert. `isEliminated`/`isSpectator` werden nur auf `false` gesetzt (`src/stores/game-store.ts:216-217`) und nie geändert. `deviceMode` steht fest auf `'pass-the-phone'` (`:45`). `MultiDeviceSession` und `SessionPreset` sind reine Typen (`src/types/session.ts:21-49`) | Erledigt durch das Archiv; als **Later** geführt — siehe [GAP-016](#offene-lücken). |
-| W-11 | `specifications/archive/LLM_archivstand_2026-10-25.md:109` | „File Size: Target 400 lines; **Absolute Max 600** lines per file." | `CONTRACT.md:307` fordert ein Gate mit max. 550 (weich 400). Real: 5 Dateien über 550 Zeilen, größte 755 Zeilen | Erledigt durch das Archiv. Verbindlich ist die Grenze 550/400 aus [NFR-009](#nfr-009--quellcode-dateien-bleiben-unterhalb-der-größengrenze). |
-| W-12 | `specifications/archive/LLM_archivstand_2026-10-25.md:132` | `PhomuSong.pack: string` | `packs: string[]` (`src/types/song.ts:83`) | Erledigt durch das Archiv; verbindlich ist [CAT-004](#cat-004--der-katalog-zugang-filtert-nach-pack-zuordnung). |
-| W-13 | `specifications/archive/LLM_archivstand_2026-10-25.md:135` | `lyrics.real: string[]` | Tupel aus genau drei Strings: `[string, string, string]` (`src/types/song.ts:98`) | Erledigt durch das Archiv; verbindlich ist [CAT-010](#cat-010--lyrics-müssen-genau-drei-echte-und-eine-erfundene-zeile-haben). |
-| W-14 | `specifications/archive/LLM_archivstand_2026-10-25.md:101` | „Standard Packs: … (20 total)" | 27 konfigurierte Packs (`src/config/game-config.ts:89-279`), 27 verschiedene Pack-Namen in den Daten | Erledigt durch das Archiv; verbindlich ist [CAT-003](#cat-003--es-gibt-genau-27-konfigurierte-packs-und-alle-sind-im-katalog-belegt). |
-| W-15 | `specifications/archive/LLM_archivstand_2026-10-25.md:102` | „First Pack: 'Global Hits 1950-2026' (50 songs for development…)" | Der Pack enthält 1.107 Songs (gemessen über `src/data/songs/*.json`). `src/data/songs/packs.json` behauptet `songCount: 59` | Erledigt durch das Archiv; `packs.json` bleibt aber eine veraltete Metadatenquelle (siehe [GAP-028](#offene-lücken)). |
-| W-16 | `specifications/archive/LLM_archivstand_2026-10-25.md:116` | „Printing: Card generator exporting high-res PNGs (59x91mm + 3mm bleed) for `meinspiel.de`" | `CARD_WIDTH_MM: 59`, `CARD_HEIGHT_MM: 91`, `CARD_BLEED_MM: 3` existieren (`src/config/game-config.ts:322-324`), werden aber nirgends verwendet; ein Kartengenerator existiert nicht | Erledigt durch das Archiv. Die Maße sind in der neuen `LLM.md` als Produktmerkmal genannt, der Generator fehlt — siehe [GAP-022](#offene-lücken). |
-| W-17 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:12` | „Lint: ❌ nicht grün (10 Errors, 2 Warnings)" | Gemessen: 0 Errors, 1 Warning (`playwright.config.ts:1`) | Erledigt durch das Archiv; der Code ist lint-grün. |
-| W-18 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:13` | „Unit Tests (Vitest): ✅ 2 Test-Dateien, 6 Tests bestanden" | Gemessen: 4 Testdateien, 21 Tests | Erledigt durch das Archiv. |
-| W-19 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:7` | „37 Packs / 1.629 Songs" | Gemessen: 135 Pack-Dateien, 1.615 Songs (`npm run validate-catalog`) | Erledigt durch das Archiv; siehe [CAT-002](#cat-002--der-katalog-umfasst-135-pack-dateien-mit-1615-songs). |
-| W-20 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:14` | „Coverage (Vitest): ⚠️ gesamt 7.56% Lines" | Die Coverage misst aktuell nur `src/utils/**/*.ts` (`vitest.config.ts`), also weder Store noch Komponenten. Ein aktueller Wert wurde in dieser Runde nicht neu gemessen | Erledigt durch das Archiv. Keine Zahl ohne frische Messung zitieren; die Einschränkung des Messbereichs ist die belastbare Aussage. |
-| W-21 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:24` | „Große Contentbasis (1.915 Songs)" | 1.615 Songs (gemessen) | Erledigt durch das Archiv. |
-| W-22 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:114` | „Admin-Cover-Routen ohne AuthN/AuthZ Guardrail sichtbar." | AuthN ist umgesetzt: `assertAdminAccess` mit Token, Längenprüfung und zeitkonstantem Vergleich (`src/admin-api/_lib/security.ts:13-28`). AuthZ (Rollen) fehlt | Erledigt durch das Archiv; der Befund ist auf „AuthN vorhanden, AuthZ offen" zu korrigieren. Siehe [SEC-001](#sec-001--die-admin-api-ist-token-geschützt). |
-| W-23 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:134` | „Lint: viele Warnungen (65), keine Errors" | 1 Warning, 0 Errors | Erledigt durch das Archiv. |
-| W-24 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:113` | „Keine expliziten Security-Header in Next-Konfiguration." | **Bestätigt:** `next.config.ts` enthält nur `reactStrictMode`. Es werden keine CSP-/HSTS-/Referrer-/Permissions-Header ausgeliefert | **Offen** — als [GAP-018](#offene-lücken) geführt. |
-| W-25 | `specifications/archive/logic-flow_archivstand_2026-10-25.md:8-12` | Validierungstabelle mit fünf Modi, Vibe-Check mit Community-Stats, Lyrics mit Lock-in vor dem Audio | Sechs Modi, keine Community-Stats, Audio startet sofort | Erledigt durch das Archiv; siehe W-02, W-04, W-05. |
-| W-26 | `specifications/archive/logic-flow_archivstand_2026-10-25.md:18` | „A 'Staff Menu' is available in all modes to manually adjust scores or skip turns" | Das Power-User-Menü erscheint erst in der Auflösungsphase: `src/components/game/RevealPhase.tsx:604-634`; es korrigiert nur die aktuelle Runde, nicht beliebige Punkte | Erledigt durch das Archiv; verbindlich ist [GAME-040](#game-040--power-user-override-mit-dokumentierter-governance). |
-| W-27 | `specifications/archive/database_schema_archivstand_2026-10-25.md:4`, `:19`, `:52-60` | „Used across all 5 game modes", `pack: string`, Supabase-Tabellen `songs`, `sessions`, `session_players`, `game_rounds`, `vibe_votes`, `user_profiles`, `saved_presets` | Sechs Modi, `packs: string[]`, Lyrics optional. Keine Supabase-Tabelle existiert; `package.json` enthält keine Supabase-Abhängigkeit, die einzige Persistenz ist `localStorage` | Erledigt durch das Archiv. Supabase ist **Later** — siehe [GAP-016](#offene-lücken). |
-| W-28 | `CONTRACT.md:196` | „Heute: 25 Schlüssel, ~285 Literale in 41 Dateien" | Die 25 Schlüssel stimmen. Die Literale sind **nicht** übersetzt: `useTranslation` wird nur in `src/app/page.tsx` verwendet. Das Gate zählt 935 Literaltexte in 47 Dateien | Die Zahl „~285 Literale in 41 Dateien" ist zu ersetzen durch den gemessenen Wert (935 in 47). Siehe [I18N-007](#i18n-007--jeder-sichtbare-text-stammt-aus-der-übersetzung) und [GAP-006](#offene-lücken). |
-| W-29 | `CONTRACT.md:214-259` | Vorgabe von 46 `common.*`-Schlüsseln | `de.json`/`en.json` enthalten je 6 `common.*`-Schlüssel (`play`, `back`, `next`, `cancel`, `save`, `loading`); `src/i18n/locales/parts/` ist leer | Die Liste ist eine Zielvorgabe, kein Ist-Stand. Status als „geplant" führen. |
-| W-30 | `CONTRACT.md:78` | Beispielanforderung mit `answersLocked === true` als Bedingung für den Reveal | Eine Variable `answersLocked` existiert nicht (`grep -rn "answersLocked" src` ist leer). Der Reveal folgt einem Knopfdruck bzw. dem Modus-Ablauf | Beispiel an den Code anpassen; verbindlich ist [GAME-002](#game-002--der-reveal-gibt-die-lösung-erst-nach-dem-sperren-frei). |
-| W-31 | `CONTRACT.md:305-307` | Gates `scripts/check-i18n-completeness.mjs`, `scripts/check-doc-links.mjs`, `scripts/check-file-size.mjs` | `check-i18n-completeness.mjs` existiert seit dem 25.10.2026 (Ergebnis: 935 Literaltexte in 47 Dateien). `check-doc-links.mjs` und `check-file-size.mjs` fehlen; `npm run check:i18n` ist nicht in `package.json` definiert | **Teilweise erledigt.** Offen bleiben Verdrahtung, Dateigrößen-Gate und Linkcheck — siehe [NFR-009](#nfr-009--quellcode-dateien-bleiben-unterhalb-der-größengrenze) bis [NFR-011](#nfr-011--ein-doku-linkcheck-verhindert-tote-verweise). |
-| W-32 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:15` | „Song-Validation (`validate-songs`): ❌ fehlgeschlagen (A1.json: 52 Fehler, 362 Warnungen)" | `npm run validate-catalog` meldet 0 Schema-Fehler und 126 Warnungen über alle 135 Packs | Erledigt durch das Archiv. Der Einzelpack-Check `npm run validate-songs` prüft weiterhin `src/data/songs/A1.json` als Einzeldatei (`src/utils/validate-song-data.ts:465`) und ist nicht mit dem Katalog-Gate identisch. |
-| W-33 | `src/config/game-config.ts:282-283` | Kommentar: alte Pack-IDs „lieferten im Filter leere Auswahlen" | `PACK_ALIASES` (`:284-297`) behebt das für die 12 gelisteten IDs. Die 27 IDs in `SONG_PACKS` und die 27 Pack-Namen in den Daten stimmen exakt überein (gemessen) | Kein offener Widerspruch; die Konfiguration ist konsistent. Die 12 Aliase bleiben für alte Spielstände nötig. |
-| W-34 | `LLM.md:37-39` (neue Einstiegskarte, Stand 25.10.2026) | Regel 2: „Vor dem Sperren der Antworten darf kein Titel, kein Interpret und kein Albumcover **im DOM oder im Zustand** liegen." | Der Song mit Titel, Künstler, Jahr und Cover liegt im Zustand (`currentSong` in `src/stores/game-store.ts:394-402`), und der YouTube-Iframe mit dem Video liegt im DOM (`src/components/game/MusicPlayer.tsx:425-429`). Die Regel ist im Code **nicht** erfüllt | **Offen — höchste Priorität.** Entweder wird die Regel umgesetzt (getrennter Anzeige-Song ohne Metadaten) oder die Einstiegskarte präzisiert. Siehe [GAP-027](#offene-lücken). |
-| W-35 | `LLM.md:40-42` (neue Einstiegskarte) | Regel 3: „Jeder sichtbare Text kommt aus der Übersetzung. … Keine hartkodierten UI-Zeichenketten." | 935 Literaltexte in 47 Dateien (`node scripts/check-i18n-completeness.mjs --count`) | **Offen.** Das Gate existiert und weist die Stelle aus; die Migration steht aus. Siehe [GAP-006](#offene-lücken). |
-| W-36 | `specifications/catalog_issues_report.json:5-6` | Report vom 22.10.2026: „songs: 1623", „schemaWarnings: 308" | Gemessen am 25.10.2026: 1.615 Songs, 126 Warnungen (`npm run validate-catalog`) | Der Report ist nicht aktuell — er wurde nicht nach dem Katalog-Cleanup neu erzeugt. Gate: `npm run validate-catalog:report` neu ausführen. |
+| W-01 | `specifications/archive/LLM_archivstand_2026-10-25.md:11` (old `LLM.md`) | "Next.js 15 (App Router)" | `package.json`: `"next": "^16.2.1"`, `eslint-config-next: ^16.2.1`, `react: ^19.2.4` | **Done** through the archiving and the new entry card `LLM.md` ("Next.js 16 (App Router) · React 19 …"). `package.json` is authoritative. |
+| W-02 | `specifications/archive/LLM_archivstand_2026-10-25.md:43` | "THE 5 GAME MODES" | Six modes: `src/config/game-config.ts:12-18` and `:300-307` | Done via the archive; the six IDs are binding in [CORE-006](#core-006--one-core-six-clearly-separated-game-modes). |
+| W-03 | `specifications/archive/LLM_archivstand_2026-10-25.md:44` | Timeline = "Drag & drop songs onto a timeline" | Slot-based click/keyboard selection, no drag & drop: `src/components/game/modes/TimelineMode.tsx:466-536`, `:242-255` | Done via the archive; tracked as "ordering via slot selection". |
+| W-04 | `specifications/archive/LLM_archivstand_2026-10-25.md:52` | Lyrics Labyrinth: "Players MUST lock in their choice **before** the music starts. Audio is the reveal." | The music starts immediately when the question is built (blurred): `src/components/game/modes/LyricsMode.tsx:109-122` | Done via the archive. The lock-in semantics are still **not** implemented — see [GAP-010](#open-gaps). |
+| W-05 | `specifications/archive/LLM_archivstand_2026-10-25.md:55` | Vibe-Check: "Community stats show how many other users chose the same vibe (via Supabase)." | No community statistic. Scoring happens locally against `song.mood`: `src/components/game/modes/VibeCheckMode.tsx:54` | Done via the archive; binding is [GAME-030](#game-030--vibe-check-six-options-two-points). |
+| W-06 | `specifications/archive/LLM_archivstand_2026-10-25.md:72` | "Strategy Pattern: A single `MusicPlayer` component delegates to provider-specific adapters." | `src/types/music-provider.ts:34-93` defines `MusicProviderInterface`, but **no** implementation exists. `MusicPlayer` is a monolithic component with inline branches (`:149-170`, `:559-619`) | Done via the archive. The interface remains **Later**; the actual architecture is described in [MEDIA-001](#media-001--youtube-is-the-default-provider) to [MEDIA-018](#media-018--the-provider-status-is-shown-in-the-player). |
+| W-07 | `specifications/archive/LLM_archivstand_2026-10-25.md:79` | "No title, artist, album art, or provider chrome visible — **not even in the DOM**." | The YouTube iframe lies in the DOM, covered by the blur layer: `src/components/game/MusicPlayer.tsx:424-430` | Done via the archive. "Not visible" is the provable statement; `controls: 0` and `modestbranding: 1` (`:296-297`) prevent visible chrome. |
+| W-08 | `specifications/archive/LLM_archivstand_2026-10-25.md:86` | Autoplay workaround: "User must click a 'Play' button, followed by a countdown (3-2-1), then music starts." | No play button and no countdown. `playerVars.autoplay = 1` (`:295`); `PHOMU_CONFIG.COUNTDOWN_SECONDS: 3` is used nowhere | Done via the archive. `COUNTDOWN_SECONDS` is dead configuration stock — see [GAP-022](#open-gaps). |
+| W-09 | `specifications/archive/LLM_archivstand_2026-10-25.md:81-82` | Reveal trigger: "Singleplayer: After the player locks in their answer. Multiplayer: After ALL players have locked in." | There is only pass-the-phone with one answering pilot; the reveal runs via a manual button: `src/components/game/QuestionPhase.tsx:86-102`, `src/app/game/page.tsx:164-166` | Done via the archive; the actual trigger is described in [GAME-002](#game-002--the-reveal-releases-the-solution-only-after-locking-the-answers). |
+| W-10 | `specifications/archive/LLM_archivstand_2026-10-25.md:20`, `:25-26`, `:29` | Anti-cheat UI with swipe-to-unlock, "PASS DEVICE" screen, 6-digit session code, Supabase realtime, Google login, spectator mode, elimination | Not implemented. `isEliminated`/`isSpectator` are only set to `false` (`src/stores/game-store.ts:216-217`) and never changed. `deviceMode` is fixed to `'pass-the-phone'` (`:45`). `MultiDeviceSession` and `SessionPreset` are pure types (`src/types/session.ts:21-49`) | Done via the archive; tracked as **Later** — see [GAP-016](#open-gaps). |
+| W-11 | `specifications/archive/LLM_archivstand_2026-10-25.md:109` | "File Size: Target 400 lines; **Absolute Max 600** lines per file." | `CONTRACT.md:307` demands a gate with max. 550 (soft 400). Reality: 5 files over 550 lines, largest 755 lines | Done via the archive. Binding is the limit 550/400 from [NFR-009](#nfr-009--source-files-stay-below-the-size-limit). |
+| W-12 | `specifications/archive/LLM_archivstand_2026-10-25.md:132` | `PhomuSong.pack: string` | `packs: string[]` (`src/types/song.ts:83`) | Done via the archive; binding is [CAT-004](#cat-004--the-catalogue-access-filters-by-pack-assignment). |
+| W-13 | `specifications/archive/LLM_archivstand_2026-10-25.md:135` | `lyrics.real: string[]` | Tuple of exactly three strings: `[string, string, string]` (`src/types/song.ts:98`) | Done via the archive; binding is [CAT-010](#cat-010--lyrics-must-have-exactly-three-real-lines-and-one-invented-line). |
+| W-14 | `specifications/archive/LLM_archivstand_2026-10-25.md:101` | "Standard Packs: … (20 total)" | 27 configured packs (`src/config/game-config.ts:89-279`), 27 different pack names in the data | Done via the archive; binding is [CAT-003](#cat-003--there-are-exactly-27-configured-packs-and-all-are-covered-in-the-catalogue). |
+| W-15 | `specifications/archive/LLM_archivstand_2026-10-25.md:102` | "First Pack: 'Global Hits 1950-2026' (50 songs for development…)" | The pack contains 1,107 songs (measured via `src/data/songs/*.json`). `src/data/songs/packs.json` claims `songCount: 59` | Done via the archive; `packs.json` nevertheless remains an outdated metadata source (see [GAP-028](#open-gaps)). |
+| W-16 | `specifications/archive/LLM_archivstand_2026-10-25.md:116` | "Printing: Card generator exporting high-res PNGs (59x91mm + 3mm bleed) for `meinspiel.de`" | `CARD_WIDTH_MM: 59`, `CARD_HEIGHT_MM: 91`, `CARD_BLEED_MM: 3` exist (`src/config/game-config.ts:322-324`), but are used nowhere; a card generator does not exist | Done via the archive. The dimensions are named as a product feature in the new `LLM.md`, the generator is missing — see [GAP-022](#open-gaps). |
+| W-17 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:12` | `Lint: ❌ nicht grün (10 Errors, 2 Warnings)` | Measured: 0 errors, 1 warning (`playwright.config.ts:1`) | Done via the archive; the code is lint-green. |
+| W-18 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:13` | `Unit Tests (Vitest): ✅ 2 Test-Dateien, 6 Tests bestanden` | Measured: 4 test files, 21 tests | Done via the archive. |
+| W-19 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:7` | `37 Packs / 1.629 Songs` | Measured: 135 pack files, 1,615 songs (`npm run validate-catalog`) | Done via the archive; see [CAT-002](#cat-002--the-catalogue-comprises-135-pack-files-with-1615-songs). |
+| W-20 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:14` | `Coverage (Vitest): ⚠️ gesamt 7.56% Lines` | The coverage currently measures only `src/utils/**/*.ts` (`vitest.config.ts`), thus neither store nor components. A current value was not newly measured in this round | Done via the archive. Do not cite any number without a fresh measurement; the limitation of the measurement scope is the reliable statement. |
+| W-21 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:24` | `Große Contentbasis (1.915 Songs)` | 1,615 songs (measured) | Done via the archive. |
+| W-22 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:114` | `Admin-Cover-Routen ohne AuthN/AuthZ Guardrail sichtbar.` | AuthN is implemented: `assertAdminAccess` with token, length check and time-constant comparison (`src/admin-api/_lib/security.ts:13-28`). AuthZ (roles) is missing | Done via the archive; the finding is to be corrected to "AuthN present, AuthZ open". See [SEC-001](#sec-001--the-admin-api-is-token-protected). |
+| W-23 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:134` | `Lint: viele Warnungen (65), keine Errors` | 1 warning, 0 errors | Done via the archive. |
+| W-24 | `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:113` | `Keine expliziten Security-Header in Next-Konfiguration.` | **Confirmed:** `next.config.ts` contains only `reactStrictMode`. No CSP/HSTS/referrer/permissions headers are delivered | **Open** — tracked as [GAP-018](#open-gaps). |
+| W-25 | `specifications/archive/logic-flow_archivstand_2026-10-25.md:8-12` | Validation table with five modes, Vibe-Check with community stats, Lyrics with lock-in before the audio | Six modes, no community stats, audio starts immediately | Done via the archive; see W-02, W-04, W-05. |
+| W-26 | `specifications/archive/logic-flow_archivstand_2026-10-25.md:18` | "A 'Staff Menu' is available in all modes to manually adjust scores or skip turns" | The power-user menu appears only in the reveal phase: `src/components/game/RevealPhase.tsx:604-634`; it corrects only the current round, not arbitrary points | Done via the archive; binding is [GAME-040](#game-040--power-user-override-with-documented-governance). |
+| W-27 | `specifications/archive/database_schema_archivstand_2026-10-25.md:4`, `:19`, `:52-60` | "Used across all 5 game modes", `pack: string`, Supabase tables `songs`, `sessions`, `session_players`, `game_rounds`, `vibe_votes`, `user_profiles`, `saved_presets` | Six modes, `packs: string[]`, lyrics optional. No Supabase table exists; `package.json` contains no Supabase dependency, the only persistence is `localStorage` | Done via the archive. Supabase is **Later** — see [GAP-016](#open-gaps). |
+| W-28 | `CONTRACT.md:196` | `Heute: 25 Schlüssel, ~285 Literale in 41 Dateien` | The 25 keys are correct. The literals are **not** translated: `useTranslation` is used only in `src/app/page.tsx`. The gate counts 935 literal texts in 47 files | The number `~285 Literale in 41 Dateien` is to be replaced by the measured value (935 in 47). See [I18N-007](#i18n-007--every-visible-text-comes-from-the-translation) and [GAP-006](#open-gaps). |
+| W-29 | `CONTRACT.md:214-259` | Specification of 46 `common.*` keys | `de.json`/`en.json` contain 6 `common.*` keys each (`play`, `back`, `next`, `cancel`, `save`, `loading`); `src/i18n/locales/parts/` is empty | The list is a target specification, not the actual state. Track the status as "planned". |
+| W-30 | `CONTRACT.md:78` | Example requirement with `answersLocked === true` as condition for the reveal | A variable `answersLocked` does not exist (`grep -rn "answersLocked" src` is empty). The reveal follows a button press respectively the flow of the mode | Adapt the example to the code; binding is [GAME-002](#game-002--the-reveal-releases-the-solution-only-after-locking-the-answers). |
+| W-31 | `CONTRACT.md:305-307` | Gates `scripts/check-i18n-completeness.mjs`, `scripts/check-doc-links.mjs`, `scripts/check-file-size.mjs` | `check-i18n-completeness.mjs` has existed since 25.10.2026 (result: 935 literal texts in 47 files). `check-doc-links.mjs` and `check-file-size.mjs` are missing; `npm run check:i18n` is not defined in `package.json` | **Partially done.** Wiring, file size gate and link check remain open — see [NFR-009](#nfr-009--source-files-stay-below-the-size-limit) to [NFR-011](#nfr-011--a-doc-link-check-prevents-dead-references). |
+| W-32 | `specifications/archive/current_status_2026-04-08_archivstand_2026-10-25.md:15` | `Song-Validation (validate-songs): ❌ fehlgeschlagen (A1.json: 52 Fehler, 362 Warnungen)` | `npm run validate-catalog` reports 0 schema errors and 126 warnings across all 135 packs | Done via the archive. The single-pack check `npm run validate-songs` still checks `src/data/songs/A1.json` as a single file (`src/utils/validate-song-data.ts:465`) and is not identical to the catalogue gate. |
+| W-33 | `src/config/game-config.ts:282-283` | Comment: old pack IDs `lieferten im Filter leere Auswahlen` | `PACK_ALIASES` (`:284-297`) fixes this for the 12 listed IDs. The 27 IDs in `SONG_PACKS` and the 27 pack names in the data match exactly (measured) | No open contradiction; the configuration is consistent. The 12 aliases remain necessary for old game states. |
+| W-34 | `LLM.md:37-39` (new entry card, state 25.10.2026) | Rule 2: `Vor dem Sperren der Antworten darf kein Titel, kein Interpret und kein Albumcover **im DOM oder im Zustand** liegen.` | The song with title, artist, year and cover lies in the state (`currentSong` in `src/stores/game-store.ts:394-402`), and the YouTube iframe with the video lies in the DOM (`src/components/game/MusicPlayer.tsx:425-429`). The rule is **not** met in the code | **Open — highest priority.** Either the rule is implemented (separate display song without metadata) or the entry card is made more precise. See [GAP-027](#open-gaps). |
+| W-35 | `LLM.md:40-42` (new entry card) | Rule 3: `Jeder sichtbare Text kommt aus der Übersetzung. … Keine hartkodierten UI-Zeichenketten.` | 935 literal texts in 47 files (`node scripts/check-i18n-completeness.mjs --count`) | **Open.** The gate exists and pinpoints the location; the migration is pending. See [GAP-006](#open-gaps). |
+| W-36 | `specifications/catalog_issues_report.json:5-6` | Report of 22.10.2026: "songs: 1623", "schemaWarnings: 308" | Measured on 25.10.2026: 1,615 songs, 126 warnings (`npm run validate-catalog`) | The report is not current — it was not regenerated after the catalogue cleanup. Gate: re-run `npm run validate-catalog:report`. |
 
 ---
 
-# Offene Lücken
+# Open gaps
 
-Jede Lücke nennt die betroffenen Anforderungen und die Frage, ob sie eine **Anforderung** (muss umgesetzt werden) oder ein bewusst zurückgestelltes **Later** ist. Ohne Owner-Entscheidung bleibt sie offen — sie wird nicht als erfüllt geführt.
+Every gap names the affected requirements and the question of whether it is a **requirement** (has to be implemented) or a deliberately deferred **Later**. Without a decision by the owner it stays open — it is not recorded as met.
 
-| ID | Lücke | Betroffene Anforderungen | Einordnung | Fundstelle |
+| ID | Gap | Affected requirements | Classification | Location |
 |---|---|---|---|---|
-| GAP-001 | Keine Tests für die Spielmodus-Logik: Scoring-Formeln, Timeline-Slot-Logik, Cheat-Abzüge, No-Cheat-Verhalten. Die teuersten Regeln des Produkts sind ungetestet. | GAME-016 … GAME-039 | **Anforderung** | `src/components/game/modes/*.tsx`; `vitest.config.ts` (`include: src/**/*.test.ts` — keine Komponententests) |
-| GAP-002 | Keine Tests für die Store-Transitions: `startGame`, `nextRound`, Endbedingungen, Team-Mischung, Punktevergabe, Pilot-Übergabe. | GAME-001 … GAME-015, GAME-039, GAME-041, LOBBY-003 … LOBBY-012 | **Anforderung** | `src/stores/game-store.ts` |
-| GAP-003 | Keine Tests für `pickRandomSong` (Pack-/Difficulty-/QR-/Modusfilter und deren Fallback-Kette) und für `normalizePackIds`. | GAME-043 … GAME-045, LOBBY-017 | **Anforderung** | `src/utils/song-picker.ts` |
-| GAP-004 | Keine Tests für `censorHint` (Spoiler-Zensur in Hinweisen). | CAT-011, CAT-012 | **Anforderung** | `src/utils/censor-utils.ts` |
-| GAP-005 | Keine Tests für die Admin-API: Token-Prüfung, SSRF-Allowlist, Größenlimit, Content-Type-Prüfung, Sperrmechanismus. | SEC-001 … SEC-011 | **Anforderung** | `src/admin-api/**` |
-| GAP-006 | Das i18n-Gate ist **angelegt** (`scripts/check-i18n-completeness.mjs`), aber noch nicht verdrahtet (`npm run check:i18n` fehlt in `package.json`, kein Lauf in `scripts/local-ci.sh`). Der Kern der Lücke bleibt: 935 hart kodierte Literaltexte in 47 Dateien sind nicht übersetzt (u. a. in `src/app/lobby`, `src/app/game`, `src/app/projector`, `src/app/settings`, `src/components/game/**`). | I18N-004, I18N-005, I18N-006, I18N-007, NFR-010 | **Anforderung** | `node scripts/check-i18n-completeness.mjs --count` → „Summe Literaltexte: 935", „Dateien geprüft: 47`; `grep -rn "useTranslation" src/` → 1 Treffer (`src/app/page.tsx`) |
-| GAP-007 | Kein Dateigrößen-Gate; 5 Dateien über 550 Zeilen, 5 weitere über 400 Zeilen. | NFR-009 | **Anforderung** | `src/app/admin/review/page.tsx` (755), `src/app/lobby/page.tsx` (744), `src/components/game/RevealPhase.tsx` (671), `src/stores/game-store.ts` (640), `src/components/game/MusicPlayer.tsx` (630) |
-| GAP-008 | Kein Doku-Linkcheck-Gate. | NFR-011 | **Anforderung** | `scripts/` enthält kein `check-doc-links.mjs` |
-| GAP-009 | Die Soundeffekt- und Modus-Cue-Dateien fehlen. Vorhanden sind nur Asset-Prompts (`public/audio/sfx/*.prompt.md`, `public/audio/mode-cues/*.prompt.md`), die im Code referenzierten `.mp3`-Dateien existieren nicht. Der SFX-Spieler schluckt den Fehler still. | UI-015, UI-016, NFR-008 | **Anforderung** (oder bewusst „Later", falls die Sounds gestrichen werden) | `src/utils/game-audio-cues.ts:4-20` gegen `ls public/audio/sfx/` |
-| GAP-010 | Die Phase `locked-in` wird von keinem Codepfad betreten; es gibt keine `answersLocked`-Semantik. Die Lyrics-Variante startet die Musik vor der Antwort. | GAME-001, GAME-002, W-04, W-30 | **Entscheidung erforderlich**: echte Sperrphase bauen oder den Phasenumfang auf vier Phasen reduzieren | `src/types/game-state.ts:31`; `grep -rn "advancePhase(" src` |
-| GAP-011 | `links.coverLink` ist in **keinem** der 1.615 Songs gesetzt. Die Cover-Confusion-Variante „Cover oder Original?" ist damit nie mit einem echten Cover verknüpft, und das Label „COVER-VERSION AKTIV" erscheint nie. | GAME-034, GAME-035, MEDIA-016, NFR-008 | **Anforderung** (Datenlieferung) oder **Later** (Variante entfernen) | gemessen über `src/data/songs/*.json`; `src/components/game/modes/CoverConfusionMode.tsx:116-120` |
-| GAP-012 | `links.amazonPrimePreview` ist in **keinem** Song gesetzt. Der Pfad `useAmazonPrime` ist damit toter Code; die Auswahl „Amazon Music" in den Settings bewirkt außer einem Hinweistext nichts — es wird YouTube abgespielt. | MEDIA-012, MEDIA-002, NFR-008 | **Anforderung** (Datenlieferung) oder **Later** (Provider aus der Auswahl nehmen) | gemessen über `src/data/songs/*.json`; `src/components/game/MusicPlayer.tsx:169`, `:285` |
-| GAP-013 | `apple-music` und `amazon-music-premium` sind Provider-Typen ohne UI-Auswahl und ohne Adapter (`src/config/game-config.ts:20-26`). | MEDIA-001 … MEDIA-018 | **Later** | `grep -rn "amazon-music-premium\|apple-music" src/` → nur Typdefinition und Embed-Zweig |
-| GAP-014 | `onlyQRCompatible` hat keine Wirkung: alle 1.615 Songs haben `isQRCompatible: true`. Der Schalter in der Lobby suggeriert eine Filterung, die es nicht gibt. | LOBBY-023 (Lobby-Schritt 5), GAME-045 | **Entscheidung erforderlich**: Filter schärfen (echte Karten-Kompatibilität pflegen) oder Schalter entfernen | gemessen über `src/data/songs/*.json`; `src/app/lobby/page.tsx:439-460` |
-| GAP-015 | `supportedModes` ist inkonsistent zu `lyrics !== null`: 1.521 Songs führen „lyrics" in `supportedModes`, 1.553 haben Lyrics-Daten. Der Modusfilter in `pickRandomSong` greift daher für 32 Songs mit Lyrics nicht. | GAME-043, CAT-003 | **Anforderung** (Datenbereinigung) | gemessen über `src/data/songs/*.json`; `src/utils/song-picker.ts:58-62` |
-| GAP-016 | Multi-Geräte-Modus, Sitzungscode, Supabase, Google-Login, Spectator-Modus und Eliminierung existieren nur als Typen bzw. Flags, die nie gesetzt werden. | LOBBY-020, W-10, W-27 | **Later** | `src/types/session.ts`; `src/types/player.ts:31-43`; `src/stores/game-store.ts:216-217` |
-| GAP-017 | `FORCE_REMOVE_DUPLICATE_YEARS: true` (`src/config/game-config.ts:316`) wird nicht durchgesetzt: ein Duplikat wird automatisch entfernt, die Spieler-Auswahl greift nur ab mehr als zehn Jahreszahlen. | GAME-019, GAME-020 | **Entscheidung erforderlich**: Konstante wirksam machen oder entfernen | `src/components/game/modes/TimelineMode.tsx:185-196` |
-| GAP-018 | Es werden keine Security-Header (CSP, HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) ausgeliefert. `next.config.ts` enthält nur `reactStrictMode`. | SEC-001 … SEC-013 | **Anforderung** | `next.config.ts`; `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:113` |
-| GAP-019 | `overrideGovernance` wird angezeigt, aber nicht durchgesetzt — es gibt keine Rollen, keine Co-Host-Identität und keine Mehrheitsentscheidung. | GAME-040 | **Anforderung** (Rollenmodell) oder **Later** | `src/components/game/RevealPhase.tsx:614-618`; `src/app/game/page.tsx:197-215` |
-| GAP-020 | `hintReleasePolicy` und `aiQueueStrategy` werden persistiert und angezeigt, steuern aber keinen Prozess. Es gibt keine KI-Hint-Erzeugung im Produktcode. | NFR-014, NFR-015 | **Later** | `src/app/settings/governance/page.tsx`; `grep -rn "processAITaskQueue" src/` |
-| GAP-021 | Der E2E-Test prüft ausschließlich die Erreichbarkeit von sechs Routen; die Kernjourney (Lobby → Runde → Reveal → Spielende) ist nicht abgedeckt. | GAME-003, LOBBY-001, UI-011, UI-012, NFR-012, NFR-013 | **Anforderung** | `e2e/smoke.spec.ts` |
-| GAP-022 | Acht Konfigurationskonstanten werden nie verwendet: `SPOTIFY_PREVIEW_DURATION`, `COUNTDOWN_SECONDS`, `DEFAULT_UNLOCK_METHOD`, `FORCE_REMOVE_DUPLICATE_YEARS`, `MIN_ROUNDS_TO_PLAY`, `MAX_ROUNDS_TO_PLAY`, `MAX_CARDS_PER_SET`, `DEFAULT_LANGUAGE` (sowie `CARD_*_MM`, `ALL_GAME_MODES`). | MEDIA-001 … MEDIA-018, LOBBY-014 | **Entscheidung erforderlich**: wirksam machen oder entfernen (toter Konfigurationsbestand) | `src/config/game-config.ts:61-62`, `:81-82`, `:313`, `:316`, `:322-325` |
-| GAP-023 | Der Pack-Selector zeigt die ungeprüfte Zahl „Über 1.000 Songs bereit zum Spielen". Bei 1.615 Songs ist die Aussage zwar wahr, aber nicht gemessen und bei Katalogänderungen nicht gepflegt. | LOBBY-016, CAT-002 | **Entscheidung erforderlich**: Zahl aus dem Katalog ableiten oder Text ohne Zahl verwenden | `src/components/lobby/PackSelector.tsx` (Footer-Badge) |
-| GAP-024 | `chipsEnabled` wird persistiert, aber es gibt keine Chips-Mechanik. `ENABLE_CHIPS_BETTING: false` ist die Quelle der Wahrheit. | GAME-001 … GAME-039 (Konfiguration) | **Later** | `src/types/game-state.ts:102`, `src/config/game-config.ts:319` |
-| GAP-025 | `supportedModes` erlaubt aktuell alle sechs Modi für 1.615 Songs (`timeline`, `hint-master`, `vibe-check`, `cover-confusion`, `survivor`), `lyrics` nur für 1.521. Der Modusfilter fällt stillschweigend auf den Vollpool zurück, wenn ein Filter leer ist — der Modus läuft dann mit Songs, die ihn nicht unterstützen. | GAME-043, GAME-045 | **Entscheidung erforderlich**: stiller Fallback beibehalten oder Fehler anzeigen | `src/utils/song-picker.ts:56-70` |
-| GAP-026 | `MIN_ROUNDS_TO_PLAY = 10` und `MAX_ROUNDS_TO_PLAY = 30` werden nicht durchgesetzt. Die Lobby bietet 5, 10, 15 und 20 Runden an, der Regler erlaubt 5 bis 500. | LOBBY-014 | **Entscheidung erforderlich**: Grenzen durchsetzen oder die Konstanten entfernen | `src/config/game-config.ts:61-62`; `src/app/lobby/page.tsx:305-310`, `:333-346` |
+| GAP-001 | No tests for the game mode logic: scoring formulas, timeline slot logic, cheat deductions, no-cheat behaviour. The most expensive rules of the product are untested. | GAME-016 … GAME-039 | **Requirement** | `src/components/game/modes/*.tsx`; `vitest.config.ts` (`include: src/**/*.test.ts` — no component tests) |
+| GAP-002 | No tests for the store transitions: `startGame`, `nextRound`, end conditions, team mixing, scoring, pilot handover. | GAME-001 … GAME-015, GAME-039, GAME-041, LOBBY-003 … LOBBY-012 | **Requirement** | `src/stores/game-store.ts` |
+| GAP-003 | No tests for `pickRandomSong` (pack/difficulty/QR/mode filters and their fallback chain) and for `normalizePackIds`. | GAME-043 … GAME-045, LOBBY-017 | **Requirement** | `src/utils/song-picker.ts` |
+| GAP-004 | No tests for `censorHint` (spoiler censorship in hints). | CAT-011, CAT-012 | **Requirement** | `src/utils/censor-utils.ts` |
+| GAP-005 | No tests for the admin API: token check, SSRF allowlist, size limit, content type check, lock mechanism. | SEC-001 … SEC-011 | **Requirement** | `src/admin-api/**` |
+| GAP-006 | The i18n gate is **created** (`scripts/check-i18n-completeness.mjs`), but not yet wired (`npm run check:i18n` is missing in `package.json`, no run in `scripts/local-ci.sh`). The core of the gap remains: 935 hard-coded literal texts in 47 files are not translated (among others in `src/app/lobby`, `src/app/game`, `src/app/projector`, `src/app/settings`, `src/components/game/**`). | I18N-004, I18N-005, I18N-006, I18N-007, NFR-010 | **Requirement** | `node scripts/check-i18n-completeness.mjs --count` → `Summe Literaltexte: 935`, `Dateien geprüft: 47`; `grep -rn "useTranslation" src/` → 1 hit (`src/app/page.tsx`) |
+| GAP-007 | No file size gate; 5 files over 550 lines, 5 more over 400 lines. | NFR-009 | **Requirement** | `src/app/admin/review/page.tsx` (755), `src/app/lobby/page.tsx` (744), `src/components/game/RevealPhase.tsx` (671), `src/stores/game-store.ts` (640), `src/components/game/MusicPlayer.tsx` (630) |
+| GAP-008 | No doc link check gate. | NFR-011 | **Requirement** | `scripts/` contains no `check-doc-links.mjs` |
+| GAP-009 | The sound effect and mode cue files are missing. What exists are only asset prompts (`public/audio/sfx/*.prompt.md`, `public/audio/mode-cues/*.prompt.md`); the `.mp3` files referenced in the code do not exist. The SFX player swallows the error silently. | UI-015, UI-016, NFR-008 | **Requirement** (or deliberately "Later" if the sounds are dropped) | `src/utils/game-audio-cues.ts:4-20` against `ls public/audio/sfx/` |
+| GAP-010 | The phase `locked-in` is not entered by any code path; there is no `answersLocked` semantics. The lyrics variant starts the music before the answer. | GAME-001, GAME-002, W-04, W-30 | **Decision required**: build a real locking phase or reduce the phase scope to four phases | `src/types/game-state.ts:31`; `grep -rn "advancePhase(" src` |
+| GAP-011 | `links.coverLink` is set in **none** of the 1,615 songs. The cover confusion variant `Cover oder Original?` is therefore never linked to a real cover, and the label `COVER-VERSION AKTIV` never appears. | GAME-034, GAME-035, MEDIA-016, NFR-008 | **Requirement** (data delivery) or **Later** (remove the variant) | measured via `src/data/songs/*.json`; `src/components/game/modes/CoverConfusionMode.tsx:116-120` |
+| GAP-012 | `links.amazonPrimePreview` is set in **no** song. The path `useAmazonPrime` is therefore dead code; the selection "Amazon Music" in the settings does nothing beyond a hint text — YouTube is played. | MEDIA-012, MEDIA-002, NFR-008 | **Requirement** (data delivery) or **Later** (remove the provider from the selection) | measured via `src/data/songs/*.json`; `src/components/game/MusicPlayer.tsx:169`, `:285` |
+| GAP-013 | `apple-music` and `amazon-music-premium` are provider types without UI selection and without adapter (`src/config/game-config.ts:20-26`). | MEDIA-001 … MEDIA-018 | **Later** | `grep -rn "amazon-music-premium\|apple-music" src/` → only type definition and embed branch |
+| GAP-014 | `onlyQRCompatible` has no effect: all 1,615 songs have `isQRCompatible: true`. The switch in the lobby suggests a filtering that does not exist. | LOBBY-023 (lobby step 5), GAME-045 | **Decision required**: sharpen the filter (maintain real card compatibility) or remove the switch | measured via `src/data/songs/*.json`; `src/app/lobby/page.tsx:439-460` |
+| GAP-015 | `supportedModes` is inconsistent with `lyrics !== null`: 1,521 songs list "lyrics" in `supportedModes`, 1,553 have lyrics data. The mode filter in `pickRandomSong` therefore does not take effect for 32 songs with lyrics. | GAME-043, CAT-003 | **Requirement** (data cleanup) | measured via `src/data/songs/*.json`; `src/utils/song-picker.ts:58-62` |
+| GAP-016 | Multi-device mode, session code, Supabase, Google login, spectator mode and elimination exist only as types respectively flags that are never set. | LOBBY-020, W-10, W-27 | **Later** | `src/types/session.ts`; `src/types/player.ts:31-43`; `src/stores/game-store.ts:216-217` |
+| GAP-017 | `FORCE_REMOVE_DUPLICATE_YEARS: true` (`src/config/game-config.ts:316`) is not enforced: a duplicate is removed automatically, the player selection only takes effect from more than ten year numbers. | GAME-019, GAME-020 | **Decision required**: make the constant effective or remove it | `src/components/game/modes/TimelineMode.tsx:185-196` |
+| GAP-018 | No security headers (CSP, HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) are delivered. `next.config.ts` contains only `reactStrictMode`. | SEC-001 … SEC-013 | **Requirement** | `next.config.ts`; `specifications/archive/full_audit_2026-04-02_archivstand_2026-10-25.md:113` |
+| GAP-019 | `overrideGovernance` is displayed but not enforced — there are no roles, no co-host identity and no majority decision. | GAME-040 | **Requirement** (role model) or **Later** | `src/components/game/RevealPhase.tsx:614-618`; `src/app/game/page.tsx:197-215` |
+| GAP-020 | `hintReleasePolicy` and `aiQueueStrategy` are persisted and displayed, but control no process. There is no AI hint generation in the product code. | NFR-014, NFR-015 | **Later** | `src/app/settings/governance/page.tsx`; `grep -rn "processAITaskQueue" src/` |
+| GAP-021 | The E2E test checks exclusively the reachability of six routes; the core journey (lobby → round → reveal → end of game) is not covered. | GAME-003, LOBBY-001, UI-011, UI-012, NFR-012, NFR-013 | **Requirement** | `e2e/smoke.spec.ts` |
+| GAP-022 | Eight configuration constants are never used: `SPOTIFY_PREVIEW_DURATION`, `COUNTDOWN_SECONDS`, `DEFAULT_UNLOCK_METHOD`, `FORCE_REMOVE_DUPLICATE_YEARS`, `MIN_ROUNDS_TO_PLAY`, `MAX_ROUNDS_TO_PLAY`, `MAX_CARDS_PER_SET`, `DEFAULT_LANGUAGE` (as well as `CARD_*_MM`, `ALL_GAME_MODES`). | MEDIA-001 … MEDIA-018, LOBBY-014 | **Decision required**: make them effective or remove them (dead configuration stock) | `src/config/game-config.ts:61-62`, `:81-82`, `:313`, `:316`, `:322-325` |
+| GAP-023 | The pack selector shows the unchecked number `Über 1.000 Songs bereit zum Spielen` (a count of songs ready to play). With 1,615 songs the statement is true, but not measured and not maintained on catalogue changes. | LOBBY-016, CAT-002 | **Decision required**: derive the number from the catalogue or use text without a number | `src/components/lobby/PackSelector.tsx` (footer badge) |
+| GAP-024 | `chipsEnabled` is persisted, but there is no chips mechanic. `ENABLE_CHIPS_BETTING: false` is the source of truth. | GAME-001 … GAME-039 (configuration) | **Later** | `src/types/game-state.ts:102`, `src/config/game-config.ts:319` |
+| GAP-025 | `supportedModes` currently allows all six modes for 1,615 songs (`timeline`, `hint-master`, `vibe-check`, `cover-confusion`, `survivor`), `lyrics` only for 1,521. The mode filter silently falls back to the full pool when a filter is empty — the mode then runs with songs that do not support it. | GAME-043, GAME-045 | **Decision required**: keep the silent fallback or show an error | `src/utils/song-picker.ts:56-70` |
+| GAP-026 | `MIN_ROUNDS_TO_PLAY = 10` and `MAX_ROUNDS_TO_PLAY = 30` are not enforced. The lobby offers 5, 10, 15 and 20 rounds, the slider allows 5 to 500. | LOBBY-014 | **Decision required**: enforce the limits or remove the constants | `src/config/game-config.ts:61-62`; `src/app/lobby/page.tsx:305-310`, `:333-346` |
 
 ---
 
 
-| GAP-027 | Die neue Einstiegskarte `LLM.md:37-39` verlangt, dass vor dem Sperren der Antworten weder Titel noch Interpret noch Cover „im DOM oder im Zustand" liegen. Der Code hält den vollständigen Song (inkl. `title`, `artist`, `year`, `coverUrl`) in `currentSong` und rendert den YouTube-Iframe im DOM. Die Regel ist damit im Produktcode **nicht** erfüllt. | CORE-005, MEDIA-015, W-34 | **Anforderung** (Umsetzung: Anzeige-Song ohne Metadaten) oder **Entscheidung des Owners** (Regel präzisieren auf „nicht sichtbar") | `src/stores/game-store.ts:394-402`; `src/components/game/MusicPlayer.tsx:425-429`; `LLM.md:37-39` |
-| GAP-028 | `src/data/songs/packs.json` ist als Metadatenquelle veraltet: Für „Global Hits 1950-2026" steht dort `songCount: 59`, tatsächlich enthält der Pack 1.107 Songs. Mehrere Einträge sind zudem leere Objekte (`{}`), z. B. `electronic-synth`, `80s-pop`, `kids-disney`. | CAT-003, W-15 | **Anforderung** (Metadatenpflege) oder **Later** (Quelle entfernen) | `src/data/songs/packs.json`; gemessen über `src/data/songs/*.json` |
-| GAP-029 | Die gehärteten Hilfsfunktionen der Admin-API (`fetchGuardedBinary`, `assertRateLimit`, `MAX_JSON_BYTES`, credential-freie URLs) werden von den Routen noch nicht verwendet: `src/admin-api/admin/covers/save/route.ts:37-44` lädt weiterhin mit `redirect: 'follow'` und eigener `downloadCover`-Funktion, `src/admin-api/admin/covers/search/route.ts:57` und `:75` rufen `fetchWithTimeout` ohne `maxBytes`. Damit greifen der Redirect-Guard und die JSON-Größenkappe im Betriebsfall nicht. | SEC-006, SEC-007, SEC-015, SEC-016, SEC-017 | **Anforderung** | `src/admin-api/admin/covers/save/route.ts:32-69`; `src/admin-api/admin/covers/search/route.ts:57`, `:75` |
+| GAP-027 | The new entry card `LLM.md:37-39` demands that before locking the answers neither title nor artist nor cover may lie `im DOM oder im Zustand` (in the DOM or in the state). The code keeps the complete song (including `title`, `artist`, `year`, `coverUrl`) in `currentSong` and renders the YouTube iframe in the DOM. The rule is therefore **not** met in the product code. | CORE-005, MEDIA-015, W-34 | **Requirement** (implementation: display song without metadata) or **decision by the owner** (sharpen the rule to "not visible") | `src/stores/game-store.ts:394-402`; `src/components/game/MusicPlayer.tsx:425-429`; `LLM.md:37-39` |
+| GAP-028 | `src/data/songs/packs.json` is outdated as metadata source: For "Global Hits 1950-2026" it states `songCount: 59`, the pack actually contains 1,107 songs. Several entries are moreover empty objects (`{}`), e. g. `electronic-synth`, `80s-pop`, `kids-disney`. | CAT-003, W-15 | **Requirement** (metadata maintenance) or **Later** (remove the source) | `src/data/songs/packs.json`; measured via `src/data/songs/*.json` |
+| GAP-029 | The hardened helpers of the admin API (`fetchGuardedBinary`, `assertRateLimit`, `MAX_JSON_BYTES`, credential-free URLs) are not used by the routes yet: `src/admin-api/admin/covers/save/route.ts:37-44` still downloads with `redirect: 'follow'` and its own `downloadCover` function, `src/admin-api/admin/covers/search/route.ts:57` and `:75` call `fetchWithTimeout` without `maxBytes`. Thus the redirect guard and the JSON size cap do not take effect in the operational case. | SEC-006, SEC-007, SEC-015, SEC-016, SEC-017 | **Requirement** | `src/admin-api/admin/covers/save/route.ts:32-69`; `src/admin-api/admin/covers/search/route.ts:57`, `:75` |
 
-# Projektstatus-Datei (`project/project.yaml`)
+# Project status file (`project/project.yaml`)
 
-`project/project.yaml` ist die **maschinenlesbare Wahrheit** über den Projektzustand. Sie wird parallel zu diesem Dokument gepflegt und von den Root-Dokumenten referenziert. Die Datei existiert im Repository noch nicht (`ls project/` → „No such file or directory"); sie ist durch den parallelen Worker zu erstellen.
+`project/project.yaml` is the **machine-readable truth** about the project state. It is maintained in parallel to this document and referenced by the root documents. The file does not yet exist in the repository (`ls project/` → "No such file or directory"); it is to be created by the parallel worker.
 
-**Was hineingehört** (ohne hier Zahlen zu erfinden — die Werte werden aus dem Code und aus den Gates dieser Runde übernommen):
+**What belongs into it** (without inventing numbers here — the values are taken over from the code and from the gates of this round):
 
-| Abschnitt | Inhalt | Quelle der Werte |
+| Section | Content | Source of the values |
 |---|---|---|
-| `project` | Name, Lizenz (GPL-3.0), Baseline-Version, Status | `package.json`, `LICENSE`, Kopf dieses Dokuments |
+| `project` | Name, licence (GPL-3.0), baseline version, status | `package.json`, `LICENSE`, head of this document |
 | `stack` | Next.js 16 (App Router), React 19, TypeScript strict, Tailwind CSS 4, Framer Motion, Zustand, i18next, Playwright, Vitest | `package.json` |
-| `milestones` | Aktueller Meilenstein, abgeschlossene Meilensteine, je mit Nachweis | `specifications/project_roadmap.md`, `specifications/current_status_2026-04-08.md` |
-| `domains` | Die neun Anforderungs-Domänen mit ihren ID-Bereichen und Anforderungsanzahl | Dieses Dokument |
-| `requirements` | Liste der Anforderungs-IDs mit Status und Preset | Dieses Dokument |
-| `module_boundaries` | Modulgrenzen: `src/config`, `src/types`, `src/stores`, `src/utils`, `src/components`, `src/app`, `src/admin-api`, `src/i18n`, `src/data` | Verzeichnisstruktur |
-| `quality_thresholds` | Messbare Schwellen: max. Dateigröße 550/400 Zeilen, Gate-Liste, Catalog-Baseline | `specifications/quality-baseline.json`, `scripts/local-ci.sh` |
-| `open_gaps` | Die GAP-IDs aus diesem Dokument mit Status | [Offene Lücken](#offene-lücken) |
-| `contradictions` | Die W-IDs aus diesem Dokument mit Status | [Widersprüche](#widersprüche) |
+| `milestones` | Current milestone, completed milestones, each with evidence | `specifications/project_roadmap.md`, `specifications/current_status_2026-04-08.md` |
+| `domains` | The nine requirement domains with their ID ranges and number of requirements | This document |
+| `requirements` | List of the requirement IDs with status and preset | This document |
+| `module_boundaries` | Module boundaries: `src/config`, `src/types`, `src/stores`, `src/utils`, `src/components`, `src/app`, `src/admin-api`, `src/i18n`, `src/data` | Directory structure |
+| `quality_thresholds` | Measurable thresholds: max. file size 550/400 lines, gate list, catalogue baseline | `specifications/quality-baseline.json`, `scripts/local-ci.sh` |
+| `open_gaps` | The GAP IDs from this document with status | [Open gaps](#open-gaps) |
+| `contradictions` | The W IDs from this document with status | [Contradictions](#contradictions) |
 
-**Regel:** Zahlen, Schwellen und Statusangaben in `project/project.yaml` werden aus den Gates abgeleitet, nicht geschätzt. Jeder Wert muss durch ein Kommando oder eine Datei:Zeile belegbar sein.
+**Rule:** Numbers, thresholds and status statements in `project/project.yaml` are derived from the gates, not estimated. Every value has to be evidenced by a command or a file:line.
 
 ---
 
-# Änderungsverzeichnis dieser Baseline
+# Change log of this baseline
 
-| Datum | Änderung | Nachweis |
+| Date | Change | Evidence |
 |---|---|---|
-| 2026-10-25 | Baseline 0.1 angelegt: 174 Anforderungen aus dem Code abgeleitet, 36 Widersprüche, 29 offene Lücken | Commit `d5b6422`; `npm run typecheck` (grün), `npm run lint` (0 Errors), `npx vitest run` (21 Tests), `npm run validate-catalog` (135 Packs / 1.615 Songs), `node scripts/check-i18n-completeness.mjs --count` (935 Literaltexte in 47 Dateien) |
+| 2026-10-25 | Baseline 0.1 created: 174 requirements derived from the code, 36 contradictions, 29 open gaps | Commit `d5b6422`; `npm run typecheck` (green), `npm run lint` (0 errors), `npx vitest run` (21 tests), `npm run validate-catalog` (135 packs / 1,615 songs), `node scripts/check-i18n-completeness.mjs --count` (935 literal texts in 47 files) |

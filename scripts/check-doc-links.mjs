@@ -1,32 +1,32 @@
 #!/usr/bin/env node
 /**
- * Quality gate: Doku-Linkcheck
+ * Quality gate: doc link check
  * -------------------------------------------------------------------------
- * Prueft jeden relativen Markdown-Link im Repository auf Aufloesbarkeit.
+ * Checks every relative Markdown link in the repository for resolvability.
  *
- * Scope (bewusst begrenzt, siehe CONTRACT.md §6):
- *   - Root: alle `.md`-Dateien direkt im Repository-Root
- *   - `docs/` rekursiv
- *   - `specifications/` rekursiv
+ * Scope (deliberately limited, see CONTRACT.md §6):
+ *   - Root: all `.md` files directly in the repository root
+ *   - `docs/` recursively
+ *   - `specifications/` recursively
  *
- * Behandelte Linkarten:
- *   - Inline-Links `[text](target)` und Bilder `![alt](target)`
- *   - Referenzdefinitionen `[id]: target`
+ * Handled link types:
+ *   - Inline links `[text](target)` and images `![alt](target)`
+ *   - Reference definitions `[id]: target`
  *   - HTML `<a href="...">` / `<img src="...">`
- *   - Reine Anker `#abschnitt` (im selben Dokument)
- *   - Verzeichnis-Links (`docs/`) — gelten als aufgeloest, wenn das Verzeichnis existiert
- *   - Externe Ziele (http/https/mailto/tel/data/...) — werden nicht geprueft
- *   - Code-Fences und Inline-Code werden ignoriert (Beispiel-Links sind kein Doku-Link)
+ *   - Pure anchors `#section` (within the same document)
+ *   - Directory links (`docs/`) — count as resolved if the directory exists
+ *   - External targets (http/https/mailto/tel/data/...) — not checked
+ *   - Code fences and inline code are ignored (example links are no doc link)
  *
- * Ausgabe: `datei:zeile` + Linkziel + Grund. Exit-Code 1 bei totem Link.
+ * Output: `file:line` + link target + reason. Exit code 1 on a dead link.
  *
- * Optionen:
- *   --root=<pfad>  prüft einen anderen Baum (Standard: das Repository).
- *                 Dient dem isolierten Nachweis des Gates (Negativtest).
+ * Options:
+ *   --root=<path>  checks a different tree (default: the repository).
+ *                  Used for the isolated proof of the gate (negative test).
  *
- * Toleranz gegenueber laufender Parallelarbeit:
- *   - Dateien, die waehrend des Laufs verschwinden, werden uebersprungen (kein Absturz).
- *   - Lesefehler werden als Befund gemeldet, nicht als Crash.
+ * Tolerance for concurrent work in the same repository:
+ *   - files that disappear during the run are skipped (no crash).
+ *   - read errors are reported as a finding, not as a crash.
  */
 
 import fs from 'node:fs';
@@ -37,10 +37,10 @@ const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const DEFAULT_ROOT = path.resolve(SCRIPT_DIR, '..');
 
 /**
- * Wurzel des zu prüfenden Baums. Standard ist das Repository.
- * `--root=<pfad>` (oder `PHOMU_DOC_LINKS_ROOT`) erlaubt, das Gate isoliert
- * gegen einen Testbaum laufen zu lassen — ohne das Verhalten im Normalfall
- * zu ändern.
+ * Root of the tree to check. Default is the repository.
+ * `--root=<path>` (or `PHOMU_DOC_LINKS_ROOT`) allows running the gate in
+ * isolation against a test tree — without changing the behaviour in the
+ * normal case.
  */
 const rootArg = process.argv.slice(2).find((a) => a.startsWith('--root='));
 const REPO_ROOT = path.resolve(
@@ -50,7 +50,7 @@ const REPO_ROOT = path.resolve(
 );
 
 const SCAN_ROOTS = [
-  { dir: REPO_ROOT, depth: 0, label: 'root' }, // nur *.md direkt im Root
+  { dir: REPO_ROOT, depth: 0, label: 'root' }, // only *.md directly in the root
   { dir: path.join(REPO_ROOT, 'docs'), depth: Infinity, label: 'docs' },
   {
     dir: path.join(REPO_ROOT, 'specifications'),
@@ -69,7 +69,7 @@ const IGNORED_DIRS = new Set([
   'playwright-report',
 ]);
 
-/** @returns {string[]} relative POSIX-Pfade der zu pruefenden Markdown-Dateien */
+/** @returns {string[]} relative POSIX paths of the Markdown files to check */
 function collectMarkdownFiles() {
   /** @type {string[]} */
   const out = [];
@@ -80,13 +80,13 @@ function collectMarkdownFiles() {
     try {
       entries = fs.readdirSync(dir, { withFileTypes: true });
     } catch {
-      return; // Verzeichnis existiert (noch) nicht -> nichts zu pruefen
+      return; // Directory does not exist (yet) -> nothing to check
     }
     for (const entry of entries) {
       const full = path.join(dir, entry.name);
       if (entry.isDirectory()) {
         if (IGNORED_DIRS.has(entry.name)) continue;
-        if (depth === 0) continue; // Root: keine Unterverzeichnisse
+        if (depth === 0) continue; // Root: no subdirectories
         walk(full, depth - 1);
       } else if (entry.isFile() && entry.name.toLowerCase().endsWith('.md')) {
         out.push(path.relative(REPO_ROOT, full).split(path.sep).join('/'));
@@ -101,8 +101,8 @@ function collectMarkdownFiles() {
 }
 
 /**
- * Entfernt Code-Fences und Inline-Code, damit Beispiel-Links nicht als
- * echte Doku-Links gewertet werden. Zeilennummern bleiben erhalten.
+ * Removes code fences and inline code so that example links are not counted
+ * as real doc links. Line numbers are preserved.
  * @param {string} content
  * @returns {string[]}
  */
@@ -129,23 +129,22 @@ function stripCode(content) {
       result.push('');
       continue;
     }
-    // Inline-Code entfernen (``...`` und `...`)
+    // Remove inline code (``...`` and `...`)
     result.push(line.replace(/`[^`]*`/g, (m) => ' '.repeat(m.length)));
   }
   return result;
 }
 
 /**
- * GitHub-kompatibler Anker-Slug einer Ueberschrift.
+ * GitHub-compatible anchor slug of a heading.
  *
- * Nachgebildete GitHub-Regel: kleinschreiben, fuehrende/trailingende
- * Leerzeichen entfernen, HTML-Tags und die in GitHub entfernte
- * Satzzeichen-/Interpunktionsmenge streichen, danach **jedes**
- * Leerzeichen einzeln durch einen Bindestrich ersetzen.
+ * Reproduced GitHub rule: lowercase, remove leading/trailing whitespace,
+ * strip HTML tags and the punctuation set GitHub removes, then replace
+ * **every** single space with a hyphen.
  *
- * Wichtig: jedes Leerzeichen einzeln ersetzen (nicht `\s+`), weil GitHub
- * aus einem Gedankenstrich-Rest zwei Bindestriche erzeugt
- * (z. B. `### I18N-004 — Titel` -> `i18n-004--titel`).
+ * Important: replace every single space (not `\s+`), because GitHub turns
+ * the remainder of an em dash into two hyphens
+ * (e.g. `### I18N-004 — Title` -> `i18n-004--title`).
  *
  * @param {string} heading
  * @returns {string}
@@ -153,21 +152,21 @@ function stripCode(content) {
 export function slugify(heading) {
   return (
     heading
-      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1') // Links -> Text
-      .replace(/<[^>]*>/g, '') // HTML-Tags
-      .replace(/\{#[^}]*\}/g, '') // explizite Anker-IDs
-      .replace(/[*`~]/g, '') // Auszeichnung
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1') // Links -> text
+      .replace(/<[^>]*>/g, '') // HTML tags
+      .replace(/\{#[^}]*\}/g, '') // explicit anchor IDs
+      .replace(/[*`~]/g, '') // Markup
       .toLowerCase()
       .trim()
-      // Satzzeichen-/Interpunktionsmenge von GitHub (explizite Escapes,
-      // damit die Zeichenklasse unabhaengig von der Datei-Kodierung bleibt)
+      // GitHub's punctuation set (explicit escapes so that the character
+      // class does not depend on the file encoding)
       .replace(/[ -⁯⸀-⹿\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '')
       .replace(/\s/g, '-')
   );
 }
 
 /**
- * Sammelt alle Anker (Ueberschriften-Slugs) einer Markdown-Datei.
+ * Collects all anchors (heading slugs) of a Markdown file.
  * @param {string} content
  * @returns {Set<string>}
  */
@@ -204,7 +203,7 @@ function collectAnchors(content) {
 }
 
 /**
- * Zerlegt ein Linkziel in Pfad und Anker.
+ * Splits a link target into path and anchor.
  * @param {string} target
  */
 function splitTarget(target) {
@@ -218,15 +217,15 @@ function splitTarget(target) {
 
 /**
  * @param {string} target
- * @returns {boolean} true, wenn das Ziel extern (nicht pruefbar) ist
+ * @returns {boolean} true, when the target is external (not checkable)
  */
 function isExternal(target) {
   return /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(target) || target.startsWith('//');
 }
 
 /**
- * Extrahiert alle Linkziele mit Zeilennummer aus einer Markdown-Datei.
- * @param {string[]} lines bereits von Code befreite Zeilen
+ * Extracts all link targets with line number from a Markdown file.
+ * @param {string[]} lines lines already stripped of code
  * @returns {{line: number, target: string, kind: string}[]}
  */
 function extractLinks(lines) {
@@ -261,7 +260,7 @@ function extractLinks(lines) {
 }
 
 /**
- * Prueft eine einzelne Markdown-Datei.
+ * Checks a single Markdown file.
  * @param {string} relPath
  * @param {{anchorsByFile: Map<string, Set<string>>, files: Set<string>}} ctx
  * @returns {{file: string, line: number, target: string, reason: string}[]}
@@ -272,7 +271,7 @@ function checkFile(relPath, ctx) {
   try {
     content = fs.readFileSync(abs, 'utf8');
   } catch (error) {
-    // Datei wurde waehrend des Laufs geloescht -> ueberspringen, nicht crashen.
+    // File was deleted during the run -> skip, do not crash.
     return [];
   }
 
@@ -290,14 +289,14 @@ function checkFile(relPath, ctx) {
 
     const { linkPath, anchor } = splitTarget(target);
 
-    // Reiner Anker im selben Dokument
+    // Pure anchor in the same document
     if (!linkPath) {
       if (anchor && !ownAnchors.has(anchor.toLowerCase())) {
         findings.push({
           file: relPath,
           line: link.line,
           target,
-          reason: `Anker "#${anchor}" existiert nicht in dieser Datei`,
+          reason: `Anchor "#${anchor}" does not exist in this file`,
         });
       }
       continue;
@@ -328,12 +327,12 @@ function checkFile(relPath, ctx) {
         file: relPath,
         line: link.line,
         target,
-        reason: `Ziel "${relResolved}" existiert nicht`,
+        reason: `Target "${relResolved}" does not exist`,
       });
       continue;
     }
 
-    // Anker in einer anderen Markdown-Datei pruefen, wenn diese im Scan liegt
+    // Check anchors in another Markdown file if that file is part of the scan
     if (anchor && relResolved.endsWith('.md') && ctx.files.has(relResolved)) {
       const targetAnchors = ctx.anchorsByFile.get(relResolved);
       if (targetAnchors && !targetAnchors.has(anchor.toLowerCase())) {
@@ -341,7 +340,7 @@ function checkFile(relPath, ctx) {
           file: relPath,
           line: link.line,
           target,
-          reason: `Anker "#${anchor}" existiert nicht in "${relResolved}"`,
+          reason: `Anchor "#${anchor}" does not exist in "${relResolved}"`,
         });
       }
     }
@@ -351,11 +350,11 @@ function checkFile(relPath, ctx) {
 }
 
 // -------------------------------------------------------------------------
-// Ablauf
+// Execution
 // -------------------------------------------------------------------------
 
 /**
- * Fuehrt den Gate-Lauf aus und gibt die Befunde zurueck.
+ * Runs the gate and returns the findings.
  * @returns {{file: string, line: number, target: string, reason: string}[]}
  */
 export function runDocLinkCheck() {
@@ -380,7 +379,7 @@ export function runDocLinkCheck() {
   return { files, findings };
 }
 
-// Nur ausfuehren, wenn die Datei direkt als CLI gestartet wurde.
+// Only run when the file was started directly as a CLI.
 const invokedDirectly =
   process.argv[1] &&
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
@@ -388,16 +387,16 @@ const invokedDirectly =
 if (invokedDirectly) {
   const { files, findings } = runDocLinkCheck();
 
-  console.log('Phomu Qualitätsgate: Doku-Linkcheck');
-  console.log(`Geprüfter Baum: ${REPO_ROOT}`);
-  console.log(`Geprüfte Markdown-Dateien: ${files.length}`);
+  console.log('Phomu quality gate: doc link check');
+  console.log(`Scanned tree: ${REPO_ROOT}`);
+  console.log(`Markdown files checked: ${files.length}`);
 
   if (findings.length === 0) {
-    console.log('✅ Keine toten Links gefunden.');
+    console.log('✅ No dead links found.');
     process.exit(0);
   }
 
-  console.error(`❌ ${findings.length} tote(r) Link(s) gefunden:`);
+  console.error(`❌ ${findings.length} dead link(s) found:`);
   for (const finding of findings) {
     console.error(
       `   ${finding.file}:${finding.line} -> ${finding.target} — ${finding.reason}`

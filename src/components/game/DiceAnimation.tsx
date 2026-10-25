@@ -1,8 +1,8 @@
 /**
  * DiceAnimation Component
  *
- * Zeigt rollende Würfel und eine "Sorry"-Meldung,
- * wenn ein Video defekt ist oder neu gezogen (Reroll) wird.
+ * Shows rolling dice and a "Sorry" message
+ * when a video is broken or is re-drawn (reroll).
  */
 'use client';
 

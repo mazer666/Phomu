@@ -10,12 +10,12 @@ import { SongEditor } from '@/components/admin/SongEditor';
 import { useGameStore } from '@/stores/game-store';
 import { ALL_SONGS as DATA_SONGS } from '@/data/songs';
 
-// ─── Daten laden & Storage ──────────────────────────────────────────────────
+// ─── Load data & storage ──────────────────────────────────────────────────
 
 const STORAGE_KEY = 'phomu-admin-songs';
 const PAGE_SIZE_OPTIONS = [8, 24, 48, 96, 'all'] as const;
 
-/** Lädt Songs aus localStorage oder Fallback auf JSON */
+/** Loads songs from localStorage or falls back to the JSON */
 function loadSongs(): PhomuSong[] {
   if (typeof window === 'undefined') return DATA_SONGS;
   try {
@@ -30,9 +30,9 @@ function saveSongsToStorage(songs: PhomuSong[]) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(songs));
 }
 
-// ─── Hilfsfunktionen ─────────────────────────────────────────────────────────
+// ─── Helper functions ─────────────────────────────────────────────────────────
 
-/** Jahrzehnt eines Songs als Zahl, z. B. 1980 */
+/** Decade of a song as a number, e.g. 1980 */
 function getDecadeValue(year: number): number {
   return Math.floor(year / 10) * 10;
 }
@@ -47,7 +47,7 @@ function getGenres(songs: PhomuSong[]): string[] {
   return Array.from(genres).sort();
 }
 
-// ─── Hauptkomponente ──────────────────────────────────────────────────────────
+// ─── Main component ──────────────────────────────────────────────────────────
 
 export default function BrowsePage() {
   const { t } = useTranslation();
@@ -97,7 +97,7 @@ export default function BrowsePage() {
   }, [allSongs]);
 
   const filteredSongs = useMemo(() => {
-    // Deduplizieren: gleicher Title+Artist nur einmal anzeigen
+    // Deduplicate: show the same title+artist only once
     const seen = new Set<string>();
     let result = allSongs.filter((s) => {
       const key = `${s.title.toLowerCase().trim()}|${s.artist.toLowerCase().trim()}`;
@@ -139,7 +139,7 @@ export default function BrowsePage() {
     });
   }, [allSongs, filters, sortBy, sortOrder]);
 
-  // Im Admin-Modus belegt der "+ New"-Button einen Grid-Platz → einen weniger laden
+  // In admin mode the "+ New" button occupies one grid slot → load one less
   const effectivePageSize = useMemo(() => {
     if (pageSize === 'all' || !adminMode) return pageSize;
     return (pageSize as number) - 1;

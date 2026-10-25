@@ -214,7 +214,7 @@ export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
                       className="text-[9px] font-semibold leading-tight mt-0.5 transition-opacity duration-200 italic"
                       style={{ opacity: isSelected ? 0.75 : 0.35 }}
                     >
-                      {pack.tagline}
+                      {t(pack.taglineKey)}
                     </p>
                   </div>
                 </div>

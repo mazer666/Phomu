@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-/** Stand der Datenschutzhinweise */
+/** Date of the privacy notice. */
 const LAST_UPDATED = new Date('2026-04-03T12:00:00Z');
 
-/** Erlaubt **fette** und `code`-Auszeichnung in Übersetzungstexten */
+/** Allows **bold** and `code` markup in translation texts. */
 const INLINE_PATTERN = /(\*\*[^*]+\*\*|`[^`]+`)/g;
 
 /**
- * Rendert einen Übersetzungstext mit einfacher Auszeichnung:
+ * Renders a translation text with simple markup:
  * **Text** → <strong>, `Text` → <code>
  */
 function renderInline(text: string): ReactNode[] {
@@ -33,7 +33,7 @@ function renderInline(text: string): ReactNode[] {
 export default function PrivacyPage() {
   const { t, i18n } = useTranslation();
 
-  // Die Legal-Seite ist bewusst zweisprachig: die aktive Sprache steht vorn.
+  // The legal page is deliberately bilingual: the active language comes first.
   const date = new Intl.DateTimeFormat(i18n.language, {
     dateStyle: 'long',
   }).format(LAST_UPDATED);

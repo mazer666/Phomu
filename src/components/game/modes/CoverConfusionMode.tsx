@@ -1,17 +1,17 @@
 /**
- * Cover-Confusion-Modus
+ * Cover confusion mode
  *
- * Ein Cover-Song läuft. Ziel: Den Original-Interpreten erraten.
+ * A cover song is playing. Goal: guess the original artist.
  *
- * Punktesystem (je weniger Hinweise, desto mehr Punkte):
- *   Kein Hinweis  → 5 Punkte (Ehrensystem: Spieler entscheidet selbst)
- *   1 Texthinweis → 4 Punkte (Ehrensystem)
- *   2 Texthinweise → 3 Punkte (Ehrensystem)
- *   3. Hinweis = 3 Auswahlmöglichkeiten → 2 Punkte (App entscheidet)
+ * Point system (the fewer hints, the more points):
+ *   No hint    → 5 points (honour system: the player decides)
+ *   1 text hint → 4 points (honour system)
+ *   2 text hints → 3 points (honour system)
+ *   3rd hint = 3 options → 2 points (the app decides)
  *
- * Kein Tipp-Input: Ehrensystem oder Multiple-Choice.
+ * No text input: honour system or multiple choice.
  *
- * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/modes.{de,en}.json`.
+ * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 'use client';
 
@@ -19,9 +19,10 @@ import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { getAllSongs } from '@/utils/song-picker';
-import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
+import { useSpicyMessage } from '../useSpicyMessage';
 
 const POINTS_BY_HINTS = [5, 4, 3, 2] as const;
 
@@ -54,8 +55,9 @@ export function CoverConfusionMode({
 
   const points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)];
   const playLink = song.links.coverLink || song.links.youtube;
+  const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
 
-  // Zahlenformat der aktiven Sprache
+  // Number format of the active locale
   const numberFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language),
     [i18n.language]
@@ -86,7 +88,7 @@ export function CoverConfusionMode({
 
   function handleSelfAssess(correct: boolean) {
     setWasCorrect(correct);
-    // CoverConfusion: Punkte basierend auf Hinweisen (Cheats wurden bereits abgezogen)
+    // CoverConfusion: points based on the hints (cheats were already deducted)
     onAnswer(correct, correct ? points : 0);
     setPhase('done');
   }
@@ -94,7 +96,7 @@ export function CoverConfusionMode({
   function handleChoice(artist: string) {
     const correct = artist === song.artist;
     setWasCorrect(correct);
-    // CoverConfusion: Punkte basierend auf Hinweisen (Cheats wurden bereits abgezogen)
+    // CoverConfusion: points based on the hints (cheats were already deducted)
     onAnswer(correct, correct ? points : 0);
     setPhase('done');
   }
@@ -103,7 +105,7 @@ export function CoverConfusionMode({
     const actuallyCover = !!song.links.coverLink;
     const correct = guessCover === actuallyCover;
     setWasCorrect(correct);
-    onAnswer(correct, correct ? 3 : 0); // 3 Pkt für Variation
+    onAnswer(correct, correct ? 3 : 0); // 3 pts for the variation
     setPhase('done');
   }
 
@@ -121,7 +123,7 @@ export function CoverConfusionMode({
         </span>
       </div>
 
-      {/* Music Player — gebluurt bis Antwort gegeben (Swipe zum Enthüllen) */}
+      {/* Music player — blurred until the answer is given (swipe to reveal) */}
       <MusicPlayer
         songId={song.id}
         songTitle={song.title}
@@ -311,7 +313,7 @@ export function CoverConfusionMode({
             className="text-xl font-black uppercase italic tracking-tighter mb-1"
             style={{ color: getSpicyColor(wasCorrect!, song.id) }}
           >
-            {getSpicyMessage(wasCorrect!, song.id)}
+            {spicyMessage}
           </p>
           <p className="text-sm font-bold opacity-60">
             {wasCorrect

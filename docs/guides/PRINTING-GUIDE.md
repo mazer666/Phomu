@@ -1,27 +1,27 @@
-# Druck-Guide — eigene Phomu-Karten
+# Printing guide — your own Phomu cards
 
-Phomu-Karten sind **59 × 91 mm** groß (Standard-Kartenformat) mit **3 mm Beschnitt**
-rundum. Auf der Rückseite steht ein QR-Code, mit dem die Karte in der Lobby
-eingescannt wird.
+Phomu cards are **59 × 91 mm** in size (standard card format) with **3 mm bleed**
+all round. On the back there is a QR code with which the card is scanned in the
+lobby.
 
-**Was heute existiert:** die Kartenmaße, die QR-Inhalte, die der Scanner versteht —
-und ein Dokument. **Was noch nicht existiert:** ein Export-Werkzeug in der App, das
-fertige Kartenvorlagen erzeugt. Wer Karten drucken will, erzeugt die Grafik heute
-selbst nach den Vorgaben unten.
+**What exists today:** the card dimensions, the QR contents that the scanner
+understands — and a document. **What does not exist yet:** an export tool in the
+app that generates finished card templates. Anyone who wants to print cards
+creates the graphic themselves today, following the specifications below.
 
 ---
 
-## 1. Das Format
+## 1. The format
 
-| Angabe | Wert |
+| Specification | Value |
 |---|---|
-| Endgröße (Trim) | **59 × 91 mm** |
-| Beschnitt (Bleed) | **3 mm** rundum |
-| Gesamtfläche mit Beschnitt | **65 × 97 mm** |
-| Sicherheitsabstand (Safe Area) | mindestens **3 mm** vom Rand |
-| Karten je Set | höchstens **110** |
+| Final size (trim) | **59 × 91 mm** |
+| Bleed | **3 mm** all round |
+| Total area with bleed | **65 × 97 mm** |
+| Safe area | at least **3 mm** from the edge |
+| Cards per set | at most **110** |
 
-Die Werte stehen in `src/config/game-config.ts`:
+The values are in `src/config/game-config.ts`:
 
 ```ts
 CARD_WIDTH_MM: 59,
@@ -30,154 +30,153 @@ CARD_BLEED_MM: 3,
 MAX_CARDS_PER_SET: 110,
 ```
 
-**Beschnitt** heißt: Die Grafik muss auf 65 × 97 mm angelegt werden. Die äußeren
-3 mm werden beim Schneiden weggeschnitten. Das ist der Puffer, damit der Drucker
-nicht genau an der Kante schneidet — ohne Beschnitt entstehen weiße Ränder.
+**Bleed** means: the graphic has to be laid out at 65 × 97 mm. The outer 3 mm are
+cut away when cutting. That is the buffer so that the printer does not cut
+exactly at the edge — without bleed, white margins appear.
 
-**Sicherheitsabstand** heißt: Alles, was wichtig ist (Text, QR-Code), muss mindestens
-3 mm innerhalb der Schnittkante liegen. Sonst wird es angeschnitten.
+**Safe area** means: everything that matters (text, QR code) has to lie at least
+3 mm inside the cut line. Otherwise it is cut off.
 
 ---
 
-## 2. Auflösung (DPI)
+## 2. Resolution (DPI)
 
-Für den Druck gilt **300 dpi**. Das ist die Auflösung, bei der Text scharf bleibt
-und ein QR-Code zuverlässig scanbar ist.
+For printing, **300 dpi** applies. That is the resolution at which text stays
+sharp and a QR code is reliably scannable.
 
-Rechnung: 1 mm entspricht bei 300 dpi rund **11,81 Pixeln** (300 / 25,4).
+Calculation: at 300 dpi, 1 mm corresponds to roughly **11.81 pixels**
+(300 / 25.4).
 
-| Fläche | Größe | Pixel bei 300 dpi |
+| Area | Size | Pixels at 300 dpi |
 |---|---|---|
-| Endgröße | 59 × 91 mm | **697 × 1075 px** |
-| Mit Beschnitt | 65 × 97 mm | **768 × 1146 px** |
+| Final size | 59 × 91 mm | **697 × 1075 px** |
+| With bleed | 65 × 97 mm | **768 × 1146 px** |
 
-**Empfehlung:** Lege die Datei in **1146 × 768 px** an (also mit Beschnitt) und
-setze eine Schnittmarke bei 59 × 91 mm. Damit passt sie auf eine 300-dpi-Druckdatei.
+**Recommendation:** Lay out the file at **1146 × 768 px** (that is, with bleed)
+and set a cut mark at 59 × 91 mm. That way it fits into a 300 dpi print file.
 
-**Nicht unter 300 dpi.** 150 dpi (halbe Auflösung) liefert 349 × 537 px — das sieht
-am Bildschirm noch brauchbar aus, aber der QR-Code wird beim Druck unzuverlässig.
-Der QR-Code braucht außerdem einen **Mindestkontrast**: schwarz auf weiß, nicht
-hellgrau auf hellgrau.
+**Not below 300 dpi.** 150 dpi (half resolution) delivers 349 × 537 px — that
+still looks usable on the screen, but the QR code becomes unreliable in print.
+The QR code also needs a **minimum contrast**: black on white, not light grey on
+light grey.
 
 ---
 
-## 3. Was auf die Karte gehört
+## 3. What belongs on the card
 
-Vorschlag für das Kartenlayout — die Vorgaben stammen aus dem, was die App
-tatsächlich verarbeiten kann:
+Suggestion for the card layout — the specifications come from what the app can
+actually process:
 
-| Element | Inhalt |
+| Element | Content |
 |---|---|
-| **Titel** | Der Songtitel, groß. |
-| **Interpret** | Der Name des Interpreten. |
-| **Cover** | Das Albumcover, wenn vorhanden. Im Browse-Bereich gibt es eine Admin-Sicht mit Cover-Suche über iTunes und Deezer. |
-| **QR-Code** | Auf der **Rückseite** (siehe Abschnitt 4). |
-| **Pack** | Welches Pack die Karte gehört — als Text, damit man sie auch ohne Kamera zuordnen kann. |
-| **Modus-Hinweis** | Optional: ein Stichwort zum Spielmodus, z. B. „Timeline" oder „Cover Confusion". |
+| **Title** | The song title, large. |
+| **Artist** | The name of the artist. |
+| **Cover** | The album cover, if available. In the browse area there is an admin view with cover search via iTunes and Deezer. |
+| **QR code** | On the **back** (see section 4). |
+| **Pack** | Which pack the card belongs to — as text, so that it can also be assigned without a camera. |
+| **Mode hint** | Optional: a keyword for the game mode, e.g. "Timeline" or "Cover Confusion". |
 
-Der Cover-Abruf über die Admin-Oberfläche (`/Phomu/admin/review` beziehungsweise
-`/Phomu/admin/songs`) ist der gangbare Weg, an Albumcover zu kommen — die
-Coverbilder liegen danach in `public/covers/`.
+The cover download via the admin interface (`/Phomu/admin/review` or
+`/Phomu/admin/songs`) is the practical way to get album covers — the cover
+images are in `public/covers/` afterwards.
 
 ---
 
-## 4. Welcher QR-Code auf die Karte kommt
+## 4. Which QR code goes on the card
 
-Der Scanner in der Lobby versteht genau drei Formate. Alles andere wird
-abgelehnt.
+The scanner in the lobby understands exactly three formats. Everything else is
+rejected.
 
-| QR-Inhalt | Wirkung beim Scannen | Geeignet für die Kartenrückseite? |
+| QR content | Effect when scanning | Suitable for the back of the card? |
 |---|---|---|
-| `@Anna` | Legt „Anna" als Spieler in der Lobby an. | nein — gehören auf **Beitrittskarten**, nicht auf die Songkarte |
-| `…?pack=Rock Anthems` | Wählt das Pack „Rock Anthems" in der Lobby aus. | **ja** — so kennzeichnet man ein Pack |
-| `…?session=123456` | Wird erkannt, aber noch nicht ausgeführt: eine Sitzung läuft heute nur auf einem Gerät. | nein |
-| `…?id=<Song-ID>` | Wird ausdrücklich **nicht** unterstützt (`unsupported-song-link`). | **nein** |
+| `@Anna` | Adds "Anna" as a player in the lobby. | no — these belong on **admission cards**, not on the song card |
+| `…?pack=Rock Anthemes` | Selects the pack "Rock Anthems" in the lobby. | **yes** — that is how you mark a pack |
+| `…?session=123456` | Is recognised but not yet executed: a session runs on one device only today. | no |
+| `…?id=<Song-ID>` | Is explicitly **not** supported (`unsupported-song-link`). | **no** |
 
-**Konsequenz für die Gestaltung:** Ein QR-Code, der den Song direkt öffnen soll,
-funktioniert heute **nicht**. Der Scanner kann den Song nicht starten. Auf der
-Songkarte trägt der QR-Code deshalb den **Pack-Kontext** (`?pack=…`), und der
-Song selbst steht als Text auf der Karte.
+**Consequence for the design:** A QR code that is supposed to open the song
+directly does **not** work today. The scanner cannot start the song. The QR code
+on the song card therefore carries the **pack context** (`?pack=…`), and the song
+itself is written as text on the card.
 
-Der Basis-Pfad der Anwendung muss in der Adresse enthalten sein: Die App wird
-unter `…/Phomu` ausgeliefert. Ein Link auf `…/play?id=…` gibt es nicht — diese
-Route existiert nicht, und der Parameter `id` wird vom Scanner als nicht
-unterstützt eingestuft.
+The base path of the application has to be contained in the address: the app is
+shipped under `…/Phomu`. There is no link to `…/play?id=…` — that route does not
+exist, and the parameter `id` is classified as unsupported by the scanner.
 
-Der Pack-Key im QR-Code muss **exakt** dem Key aus `PHOMU_CONFIG.SONG_PACKS`
-entsprechen (zum Beispiel `Rock Anthems`, nicht `rock-anthem`). Ein unbekannter
-Key wird in der Lobby mit „Pack nicht gefunden" abgelehnt. Alte Kurzformen wie
-`global-hits` werden zwar per Alias abgebildet, für neue Karten sollte aber der
-aktuelle Key verwendet werden.
-
----
-
-## 5. Drucken
-
-### Variante A — Professionell
-
-1. Kartengrafiken mit Beschnitt als **PNG** (300 dpi, 1146 × 768 px) exportieren.
-2. Beim Druckdienstleister angeben: Endformat 59 × 91 mm, Beschnitt 3 mm, umlaufend,
-   **kein** Beschnitt vom Dienstleister ergänzen lassen (sonst doppelt).
-3. Auf **mindestens 300 g/m²** Karton drucken. Dünneres Papier saugt die Farbe und
-   der QR-Code verliert an Kontrast.
-4. Nach dem Schneiden die Karten **laminieren** oder in Sleeves stecken. Das
-   schützt vor Fingerabrieb am QR-Code.
-
-### Variante B — Zu Hause
-
-1. Einen **Bogen** im Format A4 drucken, nicht einzelne Karten. Der Drucker
-   kann 59 × 91 mm meist nicht randlos.
-2. Die Grafiken gleichmäßig auf dem Bogen platzieren, mit **3 mm** Beschnitt
-   angedruckt — der dient als Schnittmarke.
-3. Auf 300-g/m²-Karton drucken. Auf Normalpapier funktioniert der QR-Code
-   zwar, ist aber deutlich empfindlicher gegen Falten und Feuchtigkeit.
-4. Entlang der Marken schneiden. Ein guillotine Cutter oder eine **Schneidematte**
-   mit einem festen Kartenraster spart Ärger.
+The pack key in the QR code must correspond **exactly** to the key from
+`PHOMU_CONFIG.SONG_PACKS` (for example `Rock Anthems`, not `rock-anthem`). An
+unknown key is rejected in the lobby with `Pack nicht gefunden` ("pack not
+found"). Old short forms like `global-hits` are mapped via an alias, but for new
+cards the current key should be used.
 
 ---
 
-## 6. Der Testausdruck — nicht überspringen
+## 5. Printing
 
-**Immer zuerst ein einzelnes Blatt drucken**, bevor 110 Karten in Auftrag gehen.
-Der Test kostet eine Minute und spart 110 schlechte Karten.
+### Variant A — Professional
 
-### Checkliste für den Testbogen
+1. Export the card graphics with bleed as **PNG** (300 dpi, 1146 × 768 px).
+2. Specify at the print service: final format 59 × 91 mm, bleed 3 mm all round,
+   do **not** let the service add bleed (that would double it).
+3. Print on card stock of **at least 300 g/m²**. Thinner paper absorbs the ink
+   and the QR code loses contrast.
+4. After cutting, **laminate** the cards or put them into sleeves. That protects
+   the QR code from fingerprints.
 
-| # | Prüfung | Erwartetes Ergebnis |
+### Variant B — At home
+
+1. Print a **sheet** in A4 format, not individual cards. Most printers cannot
+   print 59 × 91 mm borderless.
+2. Place the graphics evenly on the sheet, printed with **3 mm** of bleed — that
+   serves as the cut mark.
+3. Print on 300 g/m² card stock. The QR code does work on normal paper, but it
+   is considerably more sensitive to creases and moisture.
+4. Cut along the marks. A guillotine cutter or a **cutting mat** with a fixed
+   card grid saves trouble.
+
+---
+
+## 6. The test print — do not skip it
+
+**Always print a single sheet first**, before ordering 110 cards. The test costs
+a minute and saves 110 bad cards.
+
+### Checklist for the test sheet
+
+| # | Check | Expected result |
 |---|---|---|
-| 1 | **QR-Code scannen** | Die Kamera des Handys erkennt den Code **sofort**, ohne zoomen zu müssen. |
-| 2 | **In der Lobby scannen** | Der Code wird gescannt und die erwartete Wirkung tritt ein (z. B. das Pack wird ausgewählt). |
-| 3 | **Kontast** | Der QR-Code ist klar schwarz auf weiß, ohne graue Ränder. |
-| 4 | **Schneidkante** | Nach dem Schneiden umschließt der Beschnitt das Motiv vollständig — kein weißer Rand. |
-| 5 | **Sicherheitsabstand** | Text und QR-Code liegen mindestens 3 mm von der Schnittkante entfernt, nichts ist angeschnitten. |
-| 6 | **Farbe** | Cover und Text wirken kräftig, nicht blass. |
-| 7 | **Material** | Der QR-Code ist nicht verwischt und lässt sich mit dem Daumen nicht wegwischen. |
-| 8 | **Größe** | Ein Testkarte passt in eine Standard-Kartenhülle (59 × 91 mm). |
+| 1 | **Scan the QR code** | The phone's camera recognises the code **immediately**, without having to zoom. |
+| 2 | **Scan in the lobby** | The code is scanned and the expected effect occurs (e.g. the pack is selected). |
+| 3 | **Contrast** | The QR code is clearly black on white, without grey edges. |
+| 4 | **Cut edge** | After cutting, the bleed surrounds the motif completely — no white edge. |
+| 5 | **Safe area** | Text and QR code lie at least 3 mm away from the cut line, nothing is cut off. |
+| 6 | **Colour** | Cover and text look strong, not pale. |
+| 7 | **Material** | The QR code is not smudged and cannot be wiped away with your thumb. |
+| 8 | **Size** | A test card fits into a standard card sleeve (59 × 91 mm). |
 
-**Test 2 ist der wichtigste.** Ein QR-Code, den die Handykamera schön scharf
-zeigt, kann trotzdem an der App scheitern — wenn er ein Format enthält, das die
-Anwendung nicht unterstützt.
-
----
-
-## 7. Checkliste für den Druckauftrag
-
-- [ ] Endgröße 59 × 91 mm, Beschnitt 3 mm umlaufend
-- [ ] 300 dpi, PNG (verlustfrei)
-- [ ] Farbmodus CMYK, wenn der Dienstleister danach fragt
-- [ ] Karton mindestens 300 g/m²
-- [ ] QR-Code schwarz auf weiß, kein Graustufen-Logo
-- [ ] Keine Texte im Beschnittbereich
-- [ ] Testbogen geprüft (Abschnitt 6)
+**Test 2 is the most important one.** A QR code that the phone camera shows
+beautifully sharp can still fail in the app — if it contains a format that the
+application does not support.
 
 ---
 
-## 8. Weiterführend
+## 7. Checklist for the print order
 
-- Wie die Kamera in der Lobby benutzt wird:
-  [Nutzer-Guide, Abschnitt 5](../user-guide/USER-GUIDE.de.md) ·
+- [ ] Final size 59 × 91 mm, bleed 3 mm all round
+- [ ] 300 dpi, PNG (lossless)
+- [ ] Colour mode CMYK, if the service asks for it
+- [ ] Card stock at least 300 g/m²
+- [ ] QR code black on white, no greyscale logo
+- [ ] No texts in the bleed area
+- [ ] Test sheet checked (section 6)
+
+---
+
+## 8. Further reading
+
+- How the camera is used in the lobby:
   [User guide, section 5](../user-guide/USER-GUIDE.en.md)
-- Wenn der Scanner nichts findet:
-  [Fehlerbehebung](TROUBLESHOOTING.md)
-- Wo die Kartenmaße im Code stehen: `src/config/game-config.ts`
-- Wo die QR-Inhalte ausgewertet werden: `src/utils/qr-intent.ts`
+- If the scanner finds nothing:
+  [Troubleshooting](TROUBLESHOOTING.md)
+- Where the card dimensions are in the code: `src/config/game-config.ts`
+- Where the QR contents are evaluated: `src/utils/qr-intent.ts`

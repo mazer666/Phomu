@@ -1,37 +1,37 @@
 # Phomu
 
-**Hybrides Musik-Partyspiel: physische QR-Karten trifft dynamische Web-App.**
+**Hybrid music party game: physical QR cards meet a dynamic web app.**
 
-Phomu ist ein Open-Source-Partyspiel, das Musikquiz, Social-Gaming und physische
-QR-Karten in einem Spiel verbindet. Eine Runde läuft auf **einem** Gerät (oder auf
-mehreren, wenn ein Sitzungscode verteilt wird), die Karten kommen aus dem Drucker
-oder aus dem Handy-Bildschirm.
+Phomu is an open-source party game that combines a music quiz, social gaming and
+physical QR cards in a single game. A round runs on **one** device (or on several,
+when a session code is shared), and the cards come from the printer or from the
+phone screen.
 
-- **Lizenz:** GPL-3.0
+- **License:** GPL-3.0
 - **Stack:** Next.js 16 (App Router) · React 19 · TypeScript strict · Tailwind CSS 4 · Zustand · i18next
-- **Sprachen:** Deutsch (primär) und Englisch (vollständig)
+- **Languages:** German (primary) and English (complete)
 
 ---
 
-## Was Phomu ist
+## What Phomu is
 
-Phomu ist kein Streaming-Client und keine Musikdatenbank. Es ist ein **Spiel**:
-eine Mischung aus Zuordnungs-, Deduktions- und Musikwissen-Runden, die mit
-physischen oder virtuellen Karten gespielt wird.
+Phomu is neither a streaming client nor a music database. It is a **game**: a mix
+of ordering, deduction and music-knowledge rounds, played with physical or virtual
+cards.
 
-Drei Dinge unterscheiden es vom klassischen Musikquiz:
+Three things set it apart from the classic music quiz:
 
-1. **Die Karte ist der Zugang.** Eine gedruckte QR-Karte führt direkt in den
-   passenden Spielmodus. Wer die Karte hat, kann mitspielen — ohne Konto.
-2. **Ein Gerät, eine Rolle.** Eine Person hält das Gerät und führt durch die Runde
-   (der „Pilot"). Die Spieler antworten, ohne das Gerät zu berühren. Das verhindert
-   Spoiler und macht ein Telefon zum vollwertigen Partysetup.
-3. **Der Modus bestimmt die Mechanik.** Es gibt nicht „ein Quiz", sondern sechs
-   verschiedene Denkaufgaben — von Reihenfolge bis Deduktion.
+1. **The card is the way in.** A printed QR card leads straight into the matching
+   game mode. Whoever holds the card can play — no account needed.
+2. **One device, one role.** One person holds the device and leads the round
+   (the "pilot"). The players answer without touching the device. That prevents
+   spoilers and turns a phone into a full party setup.
+3. **The mode determines the mechanic.** There is no single "quiz" but six
+   different thinking tasks — from ordering to deduction.
 
 ---
 
-## Schnellstart
+## Quick start
 
 ```bash
 git clone https://github.com/mazer666/Phomu.git
@@ -40,105 +40,104 @@ npm ci
 npm run dev
 ```
 
-Die App läuft danach auf `http://localhost:3000`.
+The app then runs on `http://localhost:3000`.
 
-Für die Admin-Oberfläche wird ein Token gebraucht:
+The admin interface needs a token:
 
 ```bash
 cp .env.example .env.local
-npm run security:rotate-admin-token   # schreibt einen Token nach .env.local
+npm run security:rotate-admin-token   # writes a token to .env.local
 ```
 
-Ausführliche Anleitung inklusive Fehlerbehebung:
+Detailed instructions including troubleshooting:
 [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md).
 
 ---
 
-## Die sechs Spielmodi
+## The six game modes
 
-| Modus | Aufgabe | Validierung |
+| Mode | Task | Validation |
 |---|---|---|
-| **Chronologische Timeline** | Songs in die richtige zeitliche Reihenfolge einordnen | automatisch |
-| **Hint-Master** | den Song über bis zu fünf Hinweisstufen erraten | manuell durch den Pilot |
-| **Lyrics Labyrinth** | die gefälschte Zeile unter echten Zeilen finden | automatisch |
-| **Vibe-Check** | den Song einer Stimmung zuordnen | automatisch |
-| **Survivor** | One-Hit-Wonder oder Dauerbestseller? | automatisch |
-| **Cover Confusion** | das Original hinter der Cover-Version finden | automatisch |
+| **Timeline** | place songs in the right chronological order | automatic |
+| **Hint-Master** | guess the song from up to five hint levels | manual, by the pilot |
+| **Lyrics Labyrinth** | find the faked line among real lines | automatic |
+| **Vibe-Check** | assign the song to a mood | automatic |
+| **Survivor** | one-hit wonder or career act? | automatic |
+| **Cover Confusion** | find the original behind the cover version | automatic |
 
-**Anti-Spoiler:** Während des Spiels zeigt die Oberfläche niemals Titel, Interpret
-oder Albumcover. Die Lösung erscheint erst, wenn alle Antworten gesperrt sind. Für
-den Beamer gibt es einen eigenen, ebenfalls spoiler-freien Projektor-Modus.
+**Anti-spoiler:** during the game the interface never shows title, artist or album
+cover. The solution appears only once all answers are locked. For the projector
+there is a separate, equally spoiler-free projector mode.
 
-**Punkte:** Grundpunkte, ein optionaler Zeit-Abfall und eine konfigurierbare
-Deckelung. Alle Werte stehen zentral in
-[`src/config/game-config.ts`](src/config/game-config.ts) — dort ist die Wahrheit,
-nicht in irgendeiner Komponente.
+**Scoring:** base points, an optional time decay and a configurable point cap. All
+values live centrally in
+[`src/config/game-config.ts`](src/config/game-config.ts) — that is where the truth
+is, not in some component.
 
 ---
 
-## Funktionsumfang
+## Features
 
-- **Lobby:** 1–24 Spieler, Einzelspieler, feste Teams oder in jeder Runde neu
-  gemischte Teams; Sitzungscode für mehrere Geräte
-- **Spielablauf:** Ziehen → Frage → Sperren → Auflösen → Punkte, danach die nächste Runde
-- **Katalog:** 135 Packs mit 1.615 Songs, mit Schema-Gate und Dubletten-Policy
-- **Druck:** Kartenlayout 59 × 91 mm plus 3 mm Beschnitt, QR-Code auf jede Karte
+- **Lobby:** 1–24 players, solo play, fixed teams or teams reshuffled every
+  round; session code for multiple devices
+- **Game flow:** Draw → Question → Lock → Reveal → Points, then the next round
+- **Catalogue:** 135 packs with 1,615 songs, with schema gate and duplicate policy
+- **Printing:** card layout 59 × 91 mm plus 3 mm bleed, QR code on every card
 - **Themes:** Jackbox, Spotify, YouTube, Music Wall
-- **Sprachen:** Deutsch und Englisch, umschaltbar, persistent
-- **Barrierefreiheit:** Tooltips an allen Bedienelementen, Tastaturbedienung,
-  Fokusringe, `prefers-reduced-motion`
+- **Languages:** German and English, switchable, persistent
+- **Accessibility:** tooltips on every control, keyboard operation, focus rings,
+  `prefers-reduced-motion`
 
 ---
 
-## Qualität und Gates
+## Quality and gates
 
-Der Qualitätsmaßstab steht in [`QUALITY.md`](QUALITY.md). Jede wesentliche Funktion
-wird über acht Dimensionen abgenommen — funktional, technisch, Performance,
-Usability, Security/Privacy, Internationalisierung, Interoperabilität, Dokumentation.
+The quality bar is set in [`QUALITY.md`](QUALITY.md). Every essential feature is
+accepted across eight dimensions — functional, technical, performance, usability,
+security/privacy, internationalisation, interoperability, documentation.
 
-Die Prüfungen laufen lokal und in der CI:
+The checks run locally and in CI:
 
-| Kommando | Prüft |
+| Command | Checks |
 |---|---|
-| `npm run typecheck` | TypeScript strict, ohne Emit |
+| `npm run typecheck` | TypeScript strict, without emit |
 | `npm run lint` | ESLint |
-| `npm run test` | Vitest mit Coverage |
-| `npm run test:e2e:smoke` | Playwright-Smoke über den kompletten Ablauf |
-| `npm run validate-songs` | Schema und Pflichtfelder jedes Songs |
-| `npm run validate-catalog` | Katalog-Gate: Packs, Songs, Dubletten, fehlende Jahre |
-| `npm run check:i18n` | Parität und Vollständigkeit von DE und EN |
-| `npm run check:doc-links` | jeder relative Link im Repo löst auf |
-| `npm run build` | Produktions-Build |
+| `npm run test` | Vitest with coverage |
+| `npm run test:e2e:smoke` | Playwright smoke test over the complete flow |
+| `npm run validate-songs` | schema and required fields of every song |
+| `npm run validate-catalog` | catalogue gate: packs, songs, duplicates, missing years |
+| `npm run check:i18n` | parity and completeness of DE and EN |
+| `npm run check:doc-links` | every relative link in the repo resolves |
+| `npm run build` | production build |
 
-`npm run local-ci` führt die Prüfungen in der Reihenfolge aus, in der die CI sie
-ausführt.
+`npm run local-ci` runs the checks in the order the CI runs them.
 
 ---
 
-## Dokumentation
+## Documentation
 
-Die vollständige Navigation steht in [`docs/README.md`](docs/README.md).
+The full navigation is in [`docs/README.md`](docs/README.md).
 
-| Dokument | Inhalt |
+| Document | Content |
 |---|---|
-| [`REQUIREMENTS.md`](REQUIREMENTS.md) | die verbindlichen Anforderungen mit IDs |
-| [`ARCHITECTURE.md`](ARCHITECTURE.md) | Modulgrenzen und Abhängigkeitsrichtung |
-| [`ROADMAP.md`](ROADMAP.md) | Meilensteine, Gates und Status |
-| [`QUALITY.md`](QUALITY.md) | das Abnahmemodell |
-| [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) | wo ändere ich was |
-| [`GLOSSARY.md`](GLOSSARY.md) | die Fachbegriffe |
-| [`AGENTS.md`](AGENTS.md) | wie Agenten in diesem Projekt arbeiten |
-| [`SECURITY.md`](SECURITY.md) | Bedrohungsmodell und Meldeweg |
-| [`PRIVACY.md`](PRIVACY.md) | Datenminimierung |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Beitragen |
-| [`docs/user-guide/`](docs/user-guide/) | Anleitung für Spieler, Deutsch und Englisch |
+| [`REQUIREMENTS.md`](REQUIREMENTS.md) | the binding requirements with IDs |
+| [`ARCHITECTURE.md`](ARCHITECTURE.md) | module boundaries and dependency direction |
+| [`ROADMAP.md`](ROADMAP.md) | milestones, gates and status |
+| [`QUALITY.md`](QUALITY.md) | the acceptance model |
+| [`WHERE_TO_CHANGE.md`](WHERE_TO_CHANGE.md) | where to change what |
+| [`GLOSSARY.md`](GLOSSARY.md) | the domain terms |
+| [`AGENTS.md`](AGENTS.md) | how agents work in this project |
+| [`SECURITY.md`](SECURITY.md) | threat model and disclosure channel |
+| [`PRIVACY.md`](PRIVACY.md) | data minimisation |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | contributing |
+| [`docs/user-guide/`](docs/user-guide/) | guide for players, German and English |
 
-Die maschinenlesbare Wahrheit über den Projektzustand liegt in
+The machine-readable truth about the project state is in
 [`project/project.yaml`](project/project.yaml).
 
 ---
 
-## Mitwirken
+## Contributing
 
 ```bash
 git clone https://github.com/mazer666/Phomu.git
@@ -147,17 +146,17 @@ npm ci
 npm run local-ci
 ```
 
-Bitte lies vorher [`CONTRIBUTING.md`](CONTRIBUTING.md) und
-[`AGENTS.md`](AGENTS.md). Beiträge folgen dem Hausstil: klare Namen, eine
-Verantwortung pro Datei, Tests mit jeder Verhaltensänderung, Dokumentation im
-selben Commit, keine erfundenen Zahlen.
+Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) and
+[`AGENTS.md`](AGENTS.md) first. Contributions follow the house style: clear names,
+one responsibility per file, tests with every behaviour change, documentation in
+the same commit, no invented numbers.
 
 ---
 
-## Lizenz
+## License
 
-GPL-3.0-or-later. Siehe [`LICENSE`](LICENSE).
+GPL-3.0-or-later. See [`LICENSE`](LICENSE).
 
-Die im Katalog referenzierten Musikstücke, Coverbilder und Videolinks gehören
-Dritten; das Projekt stellt die Software unter GPL-3.0 bereit, nicht die Inhalte.
-Siehe [`PRIVACY.md`](PRIVACY.md) und [`SECURITY.md`](SECURITY.md).
+The music tracks, cover images and video links referenced in the catalogue belong
+to third parties; the project provides the software under GPL-3.0, not the
+content. See [`PRIVACY.md`](PRIVACY.md) and [`SECURITY.md`](SECURITY.md).

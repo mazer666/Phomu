@@ -1,17 +1,18 @@
 #!/usr/bin/env node
 /**
- * Quality gate: Sammelaufruf (check:all)
+ * Quality gate: combined run (check:all)
  * -------------------------------------------------------------------------
- * Führt die drei Gates des CONTRACT §6 nacheinander aus:
- *   1. i18n-Vollständigkeit   -> scripts/check-i18n-completeness.mjs
- *   2. Doku-Linkcheck         -> scripts/check-doc-links.mjs
- *   3. Dateigröße             -> scripts/check-file-size.mjs
+ * Runs the three gates of CONTRACT §6 one after another:
+ *   1. i18n completeness    -> scripts/check-i18n-completeness.mjs
+ *   2. Doc link check       -> scripts/check-doc-links.mjs
+ *   3. File size            -> scripts/check-file-size.mjs
+ *   4. Documentation language -> scripts/check-doc-language.mjs
  *
- * Anders als eine `&&`-Kette laufen **alle** Gates durch: der Bericht zeigt
- * den Zustand jedes einzelnen Gates, auch wenn eines fehlschlägt. Der
- * Exit-Code ist 1, sobald mindestens ein Gate rot ist.
+ * Unlike an `&&` chain, **all** gates run through: the report shows the
+ * state of every single gate, even if one of them fails. The exit code is 1
+ * as soon as at least one gate is red.
  *
- * Aufruf: npm run check:all
+ * Usage: npm run check:all
  */
 
 import { spawnSync } from 'node:child_process';
@@ -21,9 +22,10 @@ import { fileURLToPath } from 'node:url';
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 
 const GATES = [
-  { name: 'i18n-Vollständigkeit', script: 'check-i18n-completeness.mjs' },
-  { name: 'Doku-Linkcheck', script: 'check-doc-links.mjs' },
-  { name: 'Dateigröße', script: 'check-file-size.mjs' },
+  { name: 'i18n completeness', script: 'check-i18n-completeness.mjs' },
+  { name: 'Doc link check', script: 'check-doc-links.mjs' },
+  { name: 'File size', script: 'check-file-size.mjs' },
+  { name: 'Documentation language', script: 'check-doc-language.mjs' },
 ];
 
 const results = [];
@@ -42,26 +44,26 @@ for (const gate of GATES) {
     }
   );
 
-  // signalStatus !== null => Gate wurde durch ein Signal beendet (z. B. SIGSEGV)
+  // signalStatus !== null => the gate was terminated by a signal (e.g. SIGSEGV)
   const exitCode = result.status === null ? 1 : result.status;
   results.push({ ...gate, exitCode });
 }
 
 console.log(`\n${'='.repeat(72)}`);
-console.log('ZUSAMMENFASSUNG DER QUALITÄTSGATES');
+console.log('SUMMARY OF THE QUALITY GATES');
 console.log('='.repeat(72));
 
 let failed = 0;
 for (const result of results) {
   const status = result.exitCode === 0 ? 'PASS' : 'FAIL';
   if (result.exitCode !== 0) failed += 1;
-  console.log(`  [${status}] ${result.name} (Exit-Code ${result.exitCode})`);
+  console.log(`  [${status}] ${result.name} (exit code ${result.exitCode})`);
 }
 
 if (failed > 0) {
-  console.log(`\n❌ ${failed} von ${results.length} Gates fehlgeschlagen.`);
+  console.log(`\n❌ ${failed} of ${results.length} gates failed.`);
   process.exit(1);
 }
 
-console.log(`\n✅ Alle ${results.length} Gates bestanden.`);
+console.log(`\n✅ All ${results.length} gates passed.`);
 process.exit(0);

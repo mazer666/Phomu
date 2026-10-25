@@ -1,8 +1,8 @@
 /**
  * QuestionPhase
  *
- * Router-Komponente für die Fragerunde.
- * Leitet je nach aktivem Spielmodus an die passende Modus-Komponente weiter.
+ * Router component for the question round.
+ * Forwards to the matching mode component depending on the active game mode.
  */
 'use client';
 
@@ -23,25 +23,25 @@ import { CoverConfusionMode } from './modes/CoverConfusionMode';
 interface QuestionPhaseProps {
   song: PhomuSong;
   currentMode: GameMode;
-  /** Wird aufgerufen, wenn der Spieler fertig ist: isCorrect + Punkte */
+  /** Called when the player is done: isCorrect + points */
   onAnswered: (
     isCorrect: boolean,
     pointsAwarded: number,
     answeredInSeconds?: number
   ) => void;
-  /** Wird aufgerufen, wenn alle bereit sind zum Reveal */
+  /** Called when everyone is ready for the reveal */
   onReveal: () => void;
-  /** Wird aufgerufen, wenn das Video defekt ist oder neu gewürfelt werden soll */
+  /** Called when the video is broken or should be re-rolled */
   onReroll?: () => void;
 }
 
-/** Modi, bei denen der "Alle fertig → Reveal"-Button angezeigt wird */
+/** Modes in which the "everyone done → reveal" button is shown */
 const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
   'survivor',
   'vibe-check',
   'hint-master',
   'timeline',
-  // lyrics und cover-confusion haben eigene Buttons im Modus
+  // lyrics and cover-confusion have their own buttons in the mode
 ];
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -97,7 +97,7 @@ export function QuestionPhase({
         />
       )}
 
-      {/* Alle-fertig-Button → Reveal für alle Modi */}
+      {/** Everyone-done button → reveal for all modes */}
       {MODES_WITH_REVEAL_BUTTON.includes(currentMode) && (
         <motion.div
           className="flex justify-center mt-6"

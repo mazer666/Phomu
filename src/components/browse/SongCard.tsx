@@ -3,10 +3,10 @@
 /**
  * SongCard
  *
- * Zeigt alle öffentlichen Daten eines Songs als Karte an.
- * Wird auf der Browse-Seite (/browse) verwendet.
+ * Displays all public data of a song as a card.
+ * Used on the browse page (/browse).
  *
- * Lyrics werden NICHT angezeigt (das wäre Spoiler!).
+ * Lyrics are NOT displayed (that would be a spoiler!).
  */
 
 import { useState, useRef, useCallback, useMemo } from 'react';
@@ -15,41 +15,41 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { PhomuSong } from '@/types/song';
 
-// ─── Hilfsfunktionen ─────────────────────────────────────────────────────────
+// ─── Helper functions ─────────────────────────────────────────────────────────
 
-/** Gibt das Jahrzehnt eines Songs als Zahl zurück, z. B. 1980 */
+/** Returns the decade of a song as a number, e.g. 1980 */
 function getDecade(year: number): number {
   return Math.floor(year / 10) * 10;
 }
 
-/** Übersetzungsschlüssel der Schwierigkeitsstufen */
+/** Translation keys of the difficulty levels */
 const DIFFICULTY_LABELS = {
   easy: 'browse.difficultyEasy',
   medium: 'browse.difficultyMedium',
   hard: 'browse.difficultyHard',
 } as const;
 
-/** Erstellt die YouTube-URL aus ID oder vorhandener URL */
+/** Builds the YouTube URL from an ID or an existing URL */
 function buildYoutubeUrl(youtube: string): string | null {
   if (!youtube || youtube.startsWith('TODO:')) return null;
   if (youtube.includes('youtube.com') || youtube.includes('youtu.be')) {
     return youtube;
   }
-  // Annahme: 11-stellige Video-ID
+  // Assumption: 11-character video ID
   return `https://www.youtube.com/watch?v=${youtube}`;
 }
 
-// ─── Komponente ───────────────────────────────────────────────────────────────
+// ─── Component ───────────────────────────────────────────────────────────────
 
 interface SongCardProps {
   song: PhomuSong;
-  /** Ob die Hints aufgeklappt angezeigt werden sollen (Standard: false) */
+  /** Whether the hints should be shown expanded (default: false) */
   showHints?: boolean;
-  /** Admin-Modus aktiv? */
+  /** Admin mode active? */
   isAdmin?: boolean;
-  /** Callback zum Bearbeiten */
+  /** Callback for editing */
   onEdit?: (song: PhomuSong) => void;
-  /** Callback zum sofortigen Spielen */
+  /** Callback for playing immediately */
   onPlay?: (song: PhomuSong) => void;
 }
 
@@ -67,7 +67,7 @@ export function SongCard({
   const [hovering, setHovering] = useState(false);
   const hoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  /** Hint-Level als zweistellige Zahl, lokalisiert formatiert */
+  /** Hint level as a two-digit number, formatted for the active locale */
   const hintLevelFormatter = useMemo(
     () => new Intl.NumberFormat(i18n.language, { minimumIntegerDigits: 2 }),
     [i18n.language]

@@ -1,167 +1,177 @@
-# Phomu Glossar
+# Phomu Glossary
 
-Die Begriffe, die in Phomu **eine eigene Bedeutung** haben — also nicht allgemein
-deutsch oder englisch, sondern im Code festgelegt sind. Jeder Eintrag nennt die
-Definition in einem Satz und die Datei, in der der Begriff implementiert ist.
+The terms that have **a meaning of their own** in Phomu — that is, terms that are
+neither generally German nor English, but are defined in the code. Every entry names
+the definition in one sentence and the file in which the term is implemented.
 
-Wer nach Zahlen sucht, findet sie nicht hier, sondern in
-[`src/config/game-config.ts`](src/config/game-config.ts). Zahlen zu stehen an genau
-einer Stelle; dieses Glossar erklärt nur, *was* die Dinge sind.
+Whoever looks for numbers does not find them here, but in
+[`src/config/game-config.ts`](src/config/game-config.ts). Numbers live in exactly one
+place; this glossary only explains *what* the things are.
 
 ---
 
-**Admin-API** — Die interne HTTP-Schnittstelle für Katalogpflege und Cover-Verwaltung,  
-*Anforderung:* SEC-001 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-geschützt durch den Header `x-admin-token`, dessen Wert mit `ADMIN_API_TOKEN` aus der
-Umgebung verglichen wird.
-*Implementierung:* `src/admin-api/_lib/security.ts`, `src/admin-api/admin/covers/search/route.ts`,
+**Admin API** — The internal HTTP interface for catalogue maintenance and cover management.  
+*Requirement:* SEC-001 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+It is protected by the header `x-admin-token`, whose value is compared with
+`ADMIN_API_TOKEN` from the environment.
+*Implementation:* `src/admin-api/_lib/security.ts`, `src/admin-api/admin/covers/search/route.ts`,
 `src/admin-api/admin/covers/save/route.ts`
 
-**Anti-Spoiler** — Die Eigenschaft des Spielablaufs, dass vor der Auflösung weder  
-*Anforderung:* CORE-005, GAME-002, MEDIA-015, UI-006 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Titel noch Interpret noch Albumcover der gesuchten Karte in der Oberfläche sichtbar
-oder hörbar sind; jeder Modus blendet seine Lösung deshalb bis zum Reveal aus.
-*Implementierung:* `src/components/game/MusicPlayer.tsx` (Prop `blurred`),
-`src/components/game/modes/*.tsx` (Gating über `isRevealed` / `answered`),
-`src/app/projector/page.tsx` (spoilerfreie Beamer-Ansicht)
+**Anti-Spoiler** — The property of the game flow that before the reveal neither  
+*Requirement:* CORE-005, GAME-002, MEDIA-015, UI-006 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+the title, nor the artist, nor the album cover of the sought card is visible or
+audible in the interface; every mode therefore hides its solution until the reveal.
+*Implementation:* `src/components/game/MusicPlayer.tsx` (prop `blurred`),
+`src/components/game/modes/*.tsx` (gating via `isRevealed` / `answered`),
+`src/app/projector/page.tsx` (spoiler-free projector view)
 
-**Cover-Version** — Ein Song-Eintrag, der eine fremde Aufnahme desselben Werks  
-*Anforderung:* CAT-014, GAME-034 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-referenziert; sie trägt den Cover-Link in `links.coverLink` und die Beziehung im
-Feld `coverMode`.
-*Implementierung:* `src/types/song.ts` (`CoverModeMetadata`),
+**Catalogue** — The totality of all playable song data sets, from which the picker  
+*Requirement:* CAT-001, CAT-002, CAT-005 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+chooses; it comprises 1,615 songs in 135 JSON files under `src/data/songs/`.
+*Implementation:* `src/data/songs/index.ts` (`ALL_SONGS`),
+checked by `src/utils/validate-song-catalog.ts`
+
+**Cover Version** — A song entry that references a foreign recording of the same work;  
+*Requirement:* CAT-014, GAME-034 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+it carries the cover link in `links.coverLink` and the relationship in the field
+`coverMode`.
+*Implementation:* `src/types/song.ts` (`CoverModeMetadata`),
 `src/components/game/modes/CoverConfusionMode.tsx`
 
-**Gewinnbedingung** — Die im Lobby festgelegte Regel, nach der das Spiel endet:  
-*Anforderung:* GAME-008, GAME-009, LOBBY-013 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-`points` (ein Spieler oder Team erreicht die Zielpunktzahl), `rounds` (eine feste Zahl
-Runden je Teilnehmer) oder `time` (die Spielzeit läuft ab).
-*Implementierung:* `src/types/game-state.ts` (`GameEndingCondition`, `GameConfig.targetPoints`,
-`targetRounds`, `targetTimeMinutes`), geprüft in `src/stores/game-store.ts` (`nextRound()`)
+**Hint Level** — The level of a hint in the Hint Master mode; level 1 is the  
+*Requirement:* GAME-023, GAME-026, CAT-011 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+hardest and awards 5 points, level 5 the easiest with 1 point. The number of levels
+is the number of hints stored with the song, at most five.
+(German UI: `Ebene`, `Mögliche Punkte`.)
+*Implementation:* `src/config/game-config.ts` (`HINT_MASTER_POINTS: [5, 4, 3, 2, 1]`),
+`src/components/game/modes/HintMasterMode.tsx`, data field `hints` in `src/types/song.ts`
 
-**Hint-Level** — Die Stufe eines Hinweises im Hint-Master-Modus; Level 1 ist das  
-*Anforderung:* GAME-023, GAME-026, CAT-011 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-schwierigste und bringt 5 Punkte, Level 5 das leichteste mit 1 Punkt. Die Stufenzahl
-ist die Anzahl der im Song hinterlegten Hinweise, höchstens fünf.
-*Implementierung:* `src/config/game-config.ts` (`HINT_MASTER_POINTS: [5, 4, 3, 2, 1]`),
-`src/components/game/modes/HintMasterMode.tsx`, Datenfeld `hints` in `src/types/song.ts`
-
-**Katalog** — Die Gesamtheit aller spielbaren Song-Datensätze, aus der der Zieher  
-*Anforderung:* CAT-001, CAT-002, CAT-005 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-wählt; er umfasst 1.615 Songs in 135 JSON-Dateien unter `src/data/songs/`.
-*Implementierung:* `src/data/songs/index.ts` (`ALL_SONGS`),
-geprüft durch `src/utils/validate-song-catalog.ts`
-
-**Pack** — Eine benannte Themengruppe von Songs, aus der in der Lobby gezogen wird;  
-*Anforderung:* CAT-003, CAT-004, LOBBY-017 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-ein Song kann in mehreren Packs liegen. In der Oberfläche wählbar sind 27 Packs.
-*Implementierung:* `src/config/game-config.ts` (`SONG_PACKS`, `PACK_ALIASES`),
-`src/components/lobby/PackSelector.tsx`, Datenfeld `packs` in `src/types/song.ts`
-
-**Phase** — Die Stufe, in der sich eine Runde befindet: `drawing` (Karte ziehen),  
-*Anforderung:* GAME-001 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-`question` (die Frage läuft), `locked-in` (alle Antworten sind abgegeben, es wartet auf
-das Reveal), `reveal` (die Lösung wird gezeigt) und `scoring` (Punkte sind vergeben,
-das Spiel geht zu Ende).
-*Implementierung:* `src/types/game-state.ts` (`RoundPhase`),
-`src/stores/game-store.ts` (`advancePhase()`), `src/app/game/page.tsx`
-
-**Pilot** — Die Person, die das Gerät hält und den Spielablauf führt; sie entscheidet  
-*Anforderung:* GAME-004, LOBBY-005, GAME-025 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-im Hint-Master-Modus über die Antwort und löst die Runde aus. In jeder Runde ist genau
-eine Person an der Reihe, im Team-Modus das Team.
-*Implementierung:* `src/types/player.ts` (`Player.isPilot`),
-`src/stores/game-store.ts` (`turnOrder`, `currentTurnIndex`), `src/app/game/page.tsx`
-
-**Projektor-Modus** — Die Beamer-Ansicht unter `/projector`, die Modus, Runde, Phase,  
-*Anforderung:* UI-006, UI-007, UI-008 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Punktestand und aktiven Piloten zeigt, aber bewusst keinen Titel, keinen Interpreten
-und kein Cover preisgibt.
-*Implementierung:* `src/app/projector/page.tsx`
-
-**Punktedeckelung** — Die Obergrenze der Punkte, die ein Modus je richtiger Antwort  
-*Anforderung:* GAME-016 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-vergibt; im Timeline-Modus ist das `timelineMaxPoints` (Vorgabe 5), die Punktzahl wächst
-mit der Zahl bereits liegender Jahreszahlen, wird aber hart gedeckelt.
-*Implementierung:* `src/config/game-config.ts` (`DEFAULT_TIMELINE_MAX_POINTS`),
-`src/components/game/modes/TimelineMode.tsx` (`Math.min(timelineYears.length + 1, config.timelineMaxPoints)`)
-
-**QR-Karte** — Die gedruckte Spielkarte im Format 59 × 91 mm mit 3 mm Beschnitt, die  
-*Anforderung:* LOBBY-018, LOBBY-019 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-über einen QR-Code den zugehörigen Song öffnet; ein Song trägt das Merkmal
-`isQRCompatible`, wenn er auf einer physischen Karte liegt.
-*Implementierung:* `src/config/game-config.ts` (`CARD_WIDTH_MM`, `CARD_HEIGHT_MM`,
-`CARD_BLEED_MM`, `MAX_CARDS_PER_SET`), `src/components/game/QRScannerModal.tsx`,
-`src/utils/qr-intent.ts`, Datenfeld `isQRCompatible` in `src/types/song.ts`
-
-**Reveal** — Die Phase, in der die Lösung der Runde sichtbar wird: die Karte wird  
-*Anforderung:* GAME-002, MEDIA-017 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-aufgedeckt, die modusspezifische Auflösung erscheint und die Punkte der Runde werden
-aufgeschlüsselt.
-*Implementierung:* `src/components/game/RevealPhase.tsx`, Phase `reveal` in
-`src/types/game-state.ts`, ausgelöst über `advancePhase('reveal')` in `src/app/game/page.tsx`
-
-**Runde** — Ein Zug: ein Song, ein aktiver Pilot, eine Frage und eine Auflösung. Der  
-*Anforderung:* GAME-004, GAME-005 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Rundenzähler `currentRound` zählt jeden Zug, nicht jede Runde für alle Spieler; bei
-Teams läuft eine Runde über alle Teams.
-*Implementierung:* `src/types/game-state.ts` (`currentRound`, `GameRound`),
-`src/stores/game-store.ts` (`nextRound()`)
-
-**Session-Code** — Die geplante Kurznummer, mit der sich weitere Geräte einer  
-*Anforderung:* LOBBY-020, LOBBY-021 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Mitmach-Sitzung anschließen; der QR-Parser erkennt sie bereits, die Synchronisation
-zwischen den Geräten ist jedoch noch nicht implementiert.
-*Implementierung:* `src/types/session.ts` (`MultiDeviceSession.code`),
-`src/utils/qr-intent.ts` (`kind: 'session'`), `src/types/game-state.ts` (`DeviceMode`)
-
-**Sperren der Antworten** — Der Moment, in dem die Runde für Eingaben geschlossen wird  
-*Anforderung:* GAME-001, GAME-002 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-und die Lösung freigegeben werden kann. Im aktuellen Code existiert dafür die Phase
-`locked-in`; sie wird in der Oberfläche behandelt, aber von keinem Ablauf gesetzt —
-gesperrt wird faktisch durch das Reveal, das der Pilot auslöst oder das der Timer
-auslöst.
-*Implementierung:* `src/types/game-state.ts` (Phase `locked-in`),
+**Locking the Answers** — The moment in which the round is closed for input  
+*Requirement:* GAME-001, GAME-002 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+and the solution can be released. In the current code the phase `locked-in` exists
+for this; it is handled in the interface, but set by no flow — in fact the locking
+happens through the reveal, which the pilot triggers or which the timer
+triggers. (German UI: `Antworten gesperrt`.)
+*Implementation:* `src/types/game-state.ts` (phase `locked-in`),
 `src/app/game/page.tsx` (`advancePhase('reveal')`, `handleTimeUp()`)
 
-**Team-Modus** — Die Art, wie die Punkte verteilt werden: `individual` (jeder für  
-*Anforderung:* LOBBY-006, GAME-007, GAME-010 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-sich), `fixed` (feste Teams über das ganze Spiel) oder `shifting` (die Teams werden
-jede Runde neu gemischt).
-*Implementierung:* `src/config/game-config.ts` (`TeamMode`), `src/types/player.ts`,
-`src/app/lobby/page.tsx` (Schritt 6), `src/stores/game-store.ts` (`nextRound()`)
+**Pack** — A named thematic group of songs, from which the lobby draws;  
+*Requirement:* CAT-003, CAT-004, LOBBY-017 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+a song can be in several packs. In the interface 27 packs are selectable.
+(German UI: `Pack`, `Song Packs`.)
+*Implementation:* `src/config/game-config.ts` (`SONG_PACKS`, `PACK_ALIASES`),
+`src/components/lobby/PackSelector.tsx`, data field `packs` in `src/types/song.ts`
 
-**Time-Decay** — Der optionale Punkteabzug für langsamere Antworten: nach einer  
-*Anforderung:* GAME-038, GAME-039 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Schonfrist wird je Schritt ein Punkt abgezogen, mindestens bleibt ein Punkt für eine
-richtige Antwort.
-*Implementierung:* `src/config/game-config.ts` (`DEFAULT_TIME_DECAY_*`,
-`DEFAULT_MIN_POINTS_PER_CORRECT`), angewendet in `src/app/game/page.tsx` (`handleAnswered()`)
+**Pilot** — The person who holds the device and runs the game flow;  
+*Requirement:* GAME-004, LOBBY-005, GAME-025 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+they decide the answer in the Hint Master mode and trigger the round. In every
+round exactly one person is up, in team mode the team.
+(German UI: `Pilot`.)
+*Implementation:* `src/types/player.ts` (`Player.isPilot`),
+`src/stores/game-store.ts` (`turnOrder`, `currentTurnIndex`), `src/app/game/page.tsx`
 
-**Tausch** — Der Wechsel eines Spielers von einem Team in ein anderes; er findet in der  
-*Anforderung:* LOBBY-010 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Lobby statt und ändert die Zuordnung, nicht die Punkte.
-*Implementierung:* `src/stores/game-store.ts` (`assignPlayerToTeam()`),
-`src/app/lobby/page.tsx` (Team-Zuweisung in Schritt 6)
+**Point Cap** — The upper limit of the points that a mode awards per correct answer;  
+*Requirement:* GAME-016 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+in the Timeline mode this is `timelineMaxPoints` (default 5), the score grows with
+the number of years already given, but it is hard-capped.
+(German UI: `Pkt möglich`.)
+*Implementation:* `src/config/game-config.ts` (`DEFAULT_TIMELINE_MAX_POINTS`),
+`src/components/game/modes/TimelineMode.tsx` (`Math.min(timelineYears.length + 1, config.timelineMaxPoints)`)
 
-**Vibe** — Die Stimmungsangabe eines Songs, gespeichert als Liste von Stimmungsnamen in  
-*Anforderung:* GAME-030, GAME-031 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-`mood`; im Vibe-Check-Modus muss mindestens eine davon gewählt werden, damit die
-Antwort als richtig zählt.
-*Implementierung:* `src/types/song.ts` (Feld `mood`),
-`src/components/game/modes/VibeCheckMode.tsx`, Stimmungsliste `ALL_MOODS`
+**Projector Mode** — The projector view under `/projector`, which shows the mode,  
+*Requirement:* UI-006, UI-007, UI-008 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+the round, the phase, the score and the active pilot, but deliberately does not
+reveal any title, artist or cover.
+(German UI: `Projector`.)
+*Implementation:* `src/app/projector/page.tsx`
 
-**wechselnde Teams** — Der Team-Modus `shifting`: zu Beginn jeder Runde werden die  
-*Anforderung:* LOBBY-006, LOBBY-007 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
-Spieler neu auf die vorhandenen Teams verteilt, die Teams selbst bleiben bestehen.
-*Implementierung:* `src/stores/game-store.ts` (`nextRound()`, Block „Bei Shifting-Teams"),
-`src/app/lobby/page.tsx` (Option „Mix-Teams")
+**QR Card** — The printed game card in the format 59 × 91 mm with 3 mm bleed, which  
+*Requirement:* LOBBY-018, LOBBY-019 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+opens the associated song via a QR code; a song carries the marker `isQRCompatible`
+when it lies on a physical card.
+(German UI: `Phomu-Karte`, `Phomu-Karte scannen`.)
+*Implementation:* `src/config/game-config.ts` (`CARD_WIDTH_MM`, `CARD_HEIGHT_MM`,
+`CARD_BLEED_MM`, `MAX_CARDS_PER_SET`), `src/components/game/QRScannerModal.tsx`,
+`src/utils/qr-intent.ts`, data field `isQRCompatible` in `src/types/song.ts`
+
+**Reveal** — The phase in which the solution of the round becomes visible: the card is  
+*Requirement:* GAME-002, MEDIA-017 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+uncovered, the mode-specific resolution appears and the points of the round are
+broken down. (German UI: `Auflösung`.)
+*Implementation:* `src/components/game/RevealPhase.tsx`, phase `reveal` in
+`src/types/game-state.ts`, triggered via `advancePhase('reveal')` in `src/app/game/page.tsx`
+
+**Round** — One turn: one song, one active pilot, one question and one resolution. The  
+*Requirement:* GAME-004, GAME-005 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+round counter `currentRound` counts every turn, not one round for all players; with
+teams a round runs across all teams.
+*Implementation:* `src/types/game-state.ts` (`currentRound`, `GameRound`),
+`src/stores/game-store.ts` (`nextRound()`)
+
+**Round phase** — The stage a round is in: `drawing` (drawing a card),  
+*Requirement:* GAME-001 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+`question` (the question is running), `locked-in` (all answers have been given, it
+waits for the reveal), `reveal` (the solution is shown) and `scoring` (the points are
+awarded, the game is over).
+(German UI: `Song wird gezogen …`, `Frage läuft`, `Antworten gesperrt`, `Auflösung`, `Punkte werden vergeben`.)
+*Implementation:* `src/types/game-state.ts` (`RoundPhase`),
+`src/stores/game-store.ts` (`advancePhase()`), `src/app/game/page.tsx`
+
+**Session Code** — The planned short number with which further devices join a  
+*Requirement:* LOBBY-020, LOBBY-021 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+multiplayer session; the QR parser already recognises it, but the synchronisation
+between the devices is not yet implemented.
+*Implementation:* `src/types/session.ts` (`MultiDeviceSession.code`),
+`src/utils/qr-intent.ts` (`kind: 'session'`), `src/types/game-state.ts` (`DeviceMode`)
+
+**Shifting Teams** — The team mode `shifting`: at the beginning of every round the  
+*Requirement:* LOBBY-006, LOBBY-007 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+players are redistributed onto the existing teams, the teams themselves persist.
+(German UI: `Mix-Teams`, `wechselnde Konstellationen`.)
+*Implementation:* `src/stores/game-store.ts` (`nextRound()`, block `With shifting teams`),
+`src/app/lobby/page.tsx` (option `Mix-Teams`)
+
+**Swap** — The change of a player from one team to another; it takes place in the  
+*Requirement:* LOBBY-010 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+lobby and changes the assignment, not the points.
+*Implementation:* `src/stores/game-store.ts` (`assignPlayerToTeam()`),
+`src/app/lobby/page.tsx` (team assignment in step 6)
+
+**Team Mode** — The way the points are distributed: `individual` (everyone for  
+*Requirement:* LOBBY-006, GAME-007, GAME-010 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+himself), `fixed` (fixed teams for the whole game) or `shifting` (the teams are
+remixed every round).
+(German UI: `Team-Modus`, `Teams`, `Einzeln`.)
+*Implementation:* `src/config/game-config.ts` (`TeamMode`), `src/types/player.ts`,
+`src/app/lobby/page.tsx` (step 6), `src/stores/game-store.ts` (`nextRound()`)
+
+**Time Decay** — The optional point deduction for slower answers: after a  
+*Requirement:* GAME-038, GAME-039 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+grace period one point is deducted per step, at least one point remains for a
+correct answer. (German UI: `Zeitabzug`.)
+*Implementation:* `src/config/game-config.ts` (`DEFAULT_TIME_DECAY_*`,
+`DEFAULT_MIN_POINTS_PER_CORRECT`), applied in `src/app/game/page.tsx` (`handleAnswered()`)
+
+**Vibe** — The mood specification of a song, stored as a list of mood names in  
+*Requirement:* GAME-030, GAME-031 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+`mood`; in the Vibe Check mode at least one of them must be selected for the
+answer to count as correct.
+(German UI: `Vibe-Check`, `Stimmung`.)
+*Implementation:* `src/types/song.ts` (field `mood`),
+`src/components/game/modes/VibeCheckMode.tsx`, mood list `ALL_MOODS`
+
+**Win Condition** — The rule set in the lobby that determines when the game ends:  
+*Requirement:* GAME-008, GAME-009, LOBBY-013 in [`REQUIREMENTS.md`](REQUIREMENTS.md)
+`points` (a player or a team reaches the target score), `rounds` (a fixed number
+of rounds per participant) or `time` (the playing time runs out).
+*Implementation:* `src/types/game-state.ts` (`GameEndingCondition`, `GameConfig.targetPoints`,
+`targetRounds`, `targetTimeMinutes`), checked in `src/stores/game-store.ts` (`nextRound()`)
 
 ---
 
-## Nicht in diesem Glossar
+## Not in this glossary
 
-Begriffe, die keine eigene Projektbedeutung haben, stehen hier bewusst nicht:
-*Server*, *Komponente*, *State*, *Route*, *Bundle*, *Commit*. Sie stehen in
-[`ARCHITECTURE.md`](ARCHITECTURE.md) und in
+Terms that have no project meaning of their own are deliberately not listed here:
+*Server*, *Component*, *State*, *Route*, *Bundle*, *Commit*. They are covered in
+[`ARCHITECTURE.md`](ARCHITECTURE.md) and in
 [`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md).

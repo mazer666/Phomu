@@ -1,19 +1,19 @@
 /**
- * Theme-Konstanten
+ * Theme constants
  *
- * Hier stehen die Werte, die **an mehreren Stellen** gebraucht werden:
- * die Akzentfarbe jedes Themes und der Übersetzungsschlüssel seines
- * Anzeigenamens. Vorher standen die Farben in `NavBar.tsx` und
- * `ThemeSwitcher.tsx` doppelt — zwei Wahrheiten für eine Farbe.
+ * The values that are **needed in several places** live here: the accent
+ * colour of every theme and the translation key of its display name. The
+ * colours used to be duplicated in `NavBar.tsx` and `ThemeSwitcher.tsx` —
+ * two truths for one colour.
  *
- * `src/config/game-config.ts` bleibt die Quelle für die *Liste* der Themes
- * (`AVAILABLE_THEMES`) und das Standardtheme. Diese Datei ergänzt die
- * Angaben, die zu jedem Theme dazugehören.
+ * `src/config/game-config.ts` remains the source for the *list* of themes
+ * (`AVAILABLE_THEMES`) and the default theme. This file adds the data that
+ * belongs to each theme.
  */
 import type { ThemeName } from './game-config';
 import type { TranslationKey } from '@/i18n/types';
 
-/** Akzentfarbe je Theme. */
+/** Accent colour per theme. */
 export const THEME_COLORS: Record<ThemeName, string> = {
   jackbox: '#ff6b35',
   spotify: '#1db954',
@@ -21,7 +21,7 @@ export const THEME_COLORS: Record<ThemeName, string> = {
   musicwall: '#fe2c55',
 };
 
-/** Übersetzungsschlüssel des Anzeigenamens je Theme. */
+/** Translation key of the display name per theme. */
 export const THEME_LABEL_KEYS: Record<ThemeName, TranslationKey> = {
   jackbox: 'themes.jackbox',
   spotify: 'themes.spotify',

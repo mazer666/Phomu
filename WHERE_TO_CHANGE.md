@@ -1,87 +1,87 @@
-# Wo ändere ich was
+# Where to change what
 
-Diese Datei ist für jemanden geschrieben, der den Code **nicht** kennt. Jeder
-Abschnitt beantwortet vier Fragen: **Was** will ich ändern, **wo** steht das,
-**wie** gehe ich vor, **welches Kommando** beweist die Änderung.
+This file is written for someone who does **not** know the code. Every section
+answers four questions: **What** do I want to change, **where** is it, **how** do
+I proceed, **which command** proves the change.
 
-Wenn du das Verhalten des Produkts ändern willst, lies zuerst
-[`REQUIREMENTS.md`](REQUIREMENTS.md) — dort steht jede Verhaltensregel mit
-Anforderungs-ID, Akzeptanz und Verifikation.
+If you want to change the behaviour of the product, read
+[`REQUIREMENTS.md`](REQUIREMENTS.md) first — every behaviour rule with
+requirement ID, acceptance and verification is there.
 
 ---
 
-## Ich will einen neuen Spielmodus hinzufügen
+## I want to add a new game mode
 
-Ein Modus ist **keine Datei**, sondern ein Netz aus sieben Stellen. Wer nur die
-Komponente anlegt, bekommt einen Modus, den die Lobby nicht anbietet und der
-Projektor nicht kennt.
+A mode is **not a file**, but a network of seven places. Whoever only creates the
+component ends up with a mode that the lobby does not offer and that the
+projector does not know.
 
-| # | Datei | Was dort hinein muss |
+| # | File | What has to go in it |
 |---|---|---|
-| 1 | `src/config/game-config.ts` | Der Modus-Name in die Typ-Liste `GameMode` (z. B. `'quiz-battle'`) und in `ALL_GAME_MODES` |
-| 2 | `src/components/game/modes/<Modus>Mode.tsx` | Die Modus-Komponente. Sie bekommt `song`, `onAnswer(isCorrect, pointsAwarded, answeredInSeconds?)` und optional `onReveal` |
-| 3 | `src/components/game/QuestionPhase.tsx` | Der Aufruf der neuen Komponente; zusätzlich prüfen, ob der Modus in `MODES_WITH_REVEAL_BUTTON` steht ( Modi mit eigenem Reveal-Button wie `lyrics` und `cover-confusion` stehen dort **nicht**) |
-| 4 | `src/components/game/RevealPhase.tsx` | Eine eigene Auflösungskomponente, z. B. `<MeinModus>Reveal song={song} />` |
-| 5 | `src/components/lobby/ModeSelector.tsx` | Der Eintrag in der Liste `MODES` (Emoji, Titel, Tagline, Text, Farbverlauf) |
-| 6 | `src/components/game/DrawingPhase.tsx` | Der Eintrag in `MODE_META` (Icon, Titel, Anweisung) — sonst bricht die Typprüfung |
-| 7 | `src/components/game/GameHeader.tsx` und `src/app/projector/page.tsx` | `MODE_ICONS` / `MODE_LABELS` bzw. `MODE_LABELS` — Icon und Anzeigename |
+| 1 | `src/config/game-config.ts` | The mode name in the type list `GameMode` (e.g. `'quiz-battle'`) and in `ALL_GAME_MODES` |
+| 2 | `src/components/game/modes/<Modus>Mode.tsx` | The mode component. It receives `song`, `onAnswer(isCorrect, pointsAwarded, answeredInSeconds?)` and optionally `onReveal` |
+| 3 | `src/components/game/QuestionPhase.tsx` | The call of the new component; additionally check whether the mode is in `MODES_WITH_REVEAL_BUTTON` (modes with their own reveal button, such as `lyrics` and `cover-confusion`, are **not** in there) |
+| 4 | `src/components/game/RevealPhase.tsx` | A separate reveal component, e.g. `<MeinModus>Reveal song={song} />` |
+| 5 | `src/components/lobby/ModeSelector.tsx` | The entry in the `MODES` list (emoji, title, tagline, text, colour gradient) |
+| 6 | `src/components/game/DrawingPhase.tsx` | The entry in `MODE_META` (icon, title, instruction) — otherwise the type check breaks |
+| 7 | `src/components/game/GameHeader.tsx` and `src/app/projector/page.tsx` | `MODE_ICONS` / `MODE_LABELS` respectively `MODE_LABELS` — icon and display name |
 
-Datenseitig muss der Song den Modus tragen: das Feld `supportedModes` in
-`src/types/song.ts` und in jeder Datei unter `src/data/songs/`. Ohne diesen Eintrag
-filtert der Zieher den Modus weg (`src/utils/song-picker.ts`, Filter
+On the data side the song must carry the mode: the field `supportedModes` in
+`src/types/song.ts` and in every file under `src/data/songs/`. Without this
+entry the picker filters the mode away (`src/utils/song-picker.ts`, filter
 `supportedModes`).
 
-**Kommandos:**
+**Commands:**
 
 ```bash
-npm run typecheck            # bricht, wenn eine der sieben Stellen fehlt
+npm run typecheck            # fails if one of the seven places is missing
 npm run test
-npm run validate-catalog     # Katalog-Gate nach neuen Songs
+npm run validate-catalog     # catalogue gate after new songs
 npm run build
 ```
 
 ---
 
-## Ich will Punkte, Deckelung oder Zeitlimits ändern
+## I want to change points, point cap or time limits
 
-**Erst prüfen, ob die Zahl schon zentral steht.** Die Vorgaben liegen in
+**First check whether the number already lives centrally.** The values are in
 `src/config/game-config.ts`:
 
-| Wert | Konstante | Vorgabe |
+| Value | Constant | Default |
 |---|---|---|
-| Zielpunktzahl (Gewinnbedingung `points`) | `DEFAULT_WIN_SCORE` | 10 |
-| Punkte je Hinweis-Stufe (Hint-Master) | `HINT_MASTER_POINTS` | `[5, 4, 3, 2, 1]` |
-| Punkte-Deckelung (Timeline) | `DEFAULT_TIMELINE_MAX_POINTS` | 5 |
-| Punkteabzug (Time-Decay) an/aus | `DEFAULT_TIME_DECAY_ENABLED` | `false` |
-| Schonfrist vor dem Abzug | `DEFAULT_TIME_DECAY_GRACE_SECONDS` | 5 s |
-| Länge eines Abzugschritts | `DEFAULT_TIME_DECAY_STEP_SECONDS` | 5 s |
-| Punkte je Abzugschritt | `DEFAULT_TIME_DECAY_STEP_POINTS` | 1 |
-| Mindestpunkte bei richtiger Antwort | `DEFAULT_MIN_POINTS_PER_CORRECT` | 1 |
-| Zeitlimit je Frage | `config.timeLimitSeconds` | `null` (kein Limit) |
+| Target score (win condition `points`) | `DEFAULT_WIN_SCORE` | 10 |
+| Points per hint level (Hint-Master) | `HINT_MASTER_POINTS` | `[5, 4, 3, 2, 1]` |
+| Point cap (Timeline) | `DEFAULT_TIMELINE_MAX_POINTS` | 5 |
+| Time decay on/off | `DEFAULT_TIME_DECAY_ENABLED` | `false` |
+| Grace period before the deduction | `DEFAULT_TIME_DECAY_GRACE_SECONDS` | 5 s |
+| Length of one deduction step | `DEFAULT_TIME_DECAY_STEP_SECONDS` | 5 s |
+| Points per deduction step | `DEFAULT_TIME_DECAY_STEP_POINTS` | 1 |
+| Minimum points for a correct answer | `DEFAULT_MIN_POINTS_PER_CORRECT` | 1 |
+| Time limit per question | `config.timeLimitSeconds` | `null` (no limit) |
 
-**Achtung:** Vier Modi haben ihre Punkte **nicht** in der Config, sondern fest in der
-Komponente:
+**Attention:** four modes do **not** have their points in the config, but
+hard-coded in the component:
 
-| Modus | Datei | Punkte |
+| Mode | File | Points |
 |---|---|---|
 | Lyrics Labyrinth | `src/components/game/modes/LyricsMode.tsx` | `LYRICS_POINTS = 4` |
-| Lyrics-Bonusrunde (ohne Songtext) | `src/components/game/modes/LyricsMode.tsx` | 2 |
+| Lyrics bonus round (without lyrics) | `src/components/game/modes/LyricsMode.tsx` | 2 |
 | Survivor | `src/components/game/modes/SurvivorMode.tsx` | 3 |
-| Vibe-Check | `src/components/game/modes/VibeCheckMode.tsx` | 2 (mit Cheat 1) |
-| Cover Confusion | `src/components/game/modes/CoverConfusionMode.tsx` | `POINTS_BY_HINTS = [5, 4, 3, 2]`, Variante 3 |
-| Cheat-Abzüge | `HintMasterMode.tsx` (−2), `TimelineMode.tsx` (−2 bzw. −1), `SurvivorMode.tsx` (−1) | sofort abgezogen |
+| Vibe-Check | `src/components/game/modes/VibeCheckMode.tsx` | 2 (with cheat 1) |
+| Cover Confusion | `src/components/game/modes/CoverConfusionMode.tsx` | `POINTS_BY_HINTS = [5, 4, 3, 2]`, variant 3 |
+| Cheat deductions | `HintMasterMode.tsx` (−2), `TimelineMode.tsx` (−2 resp. −1), `SurvivorMode.tsx` (−1) | deducted immediately |
 
-Willst du eine dieser Zahlen ändern, ändere **die Konstante an der Stelle, an der
-sie steht**, und trage sie anschließend in `REQUIREMENTS.md` nach. Willst du sie
-dauerhaft zentralisieren, ziehst du sie zuerst nach `src/config/game-config.ts` —
-das ist die Projektregel „Konstanten kommen aus `src/config/`".
+If you want to change one of these numbers, change **the constant at the place
+where it stands**, and record it afterwards in `REQUIREMENTS.md`. If you want to
+centralise it permanently, you move it first to `src/config/game-config.ts` —
+that is the project rule "constants come from `src/config/`".
 
-Die **auswählbaren Optionen in der Lobby** stehen an anderer Stelle:
-`src/app/lobby/page.tsx`, Arrays `TIME_LIMIT_OPTIONS` (kein Limit / 30 s / 60 s /
-120 s), `DIFFICULTY_OPTIONS` und die Zahlenlisten für die Gewinnbedingung
-(Punkte 50/100/200/500, Runden 5/10/15/20, Zeit 30–240 Minuten).
+The **selectable options in the lobby** live elsewhere: `src/app/lobby/page.tsx`,
+arrays `TIME_LIMIT_OPTIONS` (no limit / 30 s / 60 s / 120 s),
+`DIFFICULTY_OPTIONS` and the number lists for the win condition
+(points 50/100/200/500, rounds 5/10/15/20, time 30–240 minutes).
 
-Die **Time-Decay-Rechnung** selbst steht in `src/app/game/page.tsx` in
+The **time decay calculation** itself is in `src/app/game/page.tsx` in
 `handleAnswered()`:
 
 ```ts
@@ -91,7 +91,7 @@ const decayPoints = decaySteps * config.timeDecayStepPoints;
 pointsAwarded = Math.max(config.minPointsPerCorrect, basePointsAwarded - decayPoints);
 ```
 
-**Kommandos:**
+**Commands:**
 
 ```bash
 npm run typecheck
@@ -101,64 +101,66 @@ npm run build
 
 ---
 
-## Ich will einen Song aufnehmen
+## I want to add a song
 
-Der Katalog liegt in `src/data/songs/`, eine Datei je Buchstaben-Bucket
-(`A1.json` … `Z.json`, `Ñ.json`), jede Datei mit dem Feld `songs`.
+The catalogue is in `src/data/songs/`, one file per letter bucket
+(`A1.json` … `Z.json`, `Ñ.json`), each file with the field `songs`.
 
-**Schritte:**
+**Steps:**
 
-1. **Datensatz anlegen.** Das Objekt muss das Schema aus `src/types/song.ts` erfüllen:
-   `id`, `title`, `artist`, `year`, `country`, `genre`, `difficulty`, `mood[]`,
-   `hints[5]`, `hintEvidence[5]`, `lyrics` (`null` oder `{ real[3], fake }`),
-   `isOneHitWonder`, `packs[]`, `supportedModes[]`, `isQRCompatible`,
-   `links.youtube` (Pflicht).
-2. **Datei wählen.** Der Bucket wird nach dem ersten Buchstaben des Interpreten
-   gebildet; der Generator `scripts/migrate_and_deduplicate.py` legt bis zu 100 Songs
-   pro Datei an.
-3. **Index neu erzeugen.** `src/data/songs/index.ts` ist automatisch erzeugt
-   („Do not edit it manually"). Nach einer neuen Datei muss der Generator laufen:
+1. **Create the record.** The object must satisfy the schema from
+   `src/types/song.ts`: `id`, `title`, `artist`, `year`, `country`, `genre`,
+   `difficulty`, `mood[]`, `hints[5]`, `hintEvidence[5]`, `lyrics` (`null` or
+   `{ real[3], fake }`), `isOneHitWonder`, `packs[]`, `supportedModes[]`,
+   `isQRCompatible`, `links.youtube` (mandatory).
+2. **Choose the file.** The bucket is formed by the first letter of the artist;
+   the generator `scripts/migrate_and_deduplicate.py` creates up to 100 songs
+   per file.
+3. **Regenerate the index.** `src/data/songs/index.ts` is generated
+   automatically ("Do not edit it manually"). After a new file the generator has
+   to run:
 
    ```bash
    python3 scripts/migrate_and_deduplicate.py
    ```
 
-4. **Validieren.** Das Schema-Gate läuft über eine einzelne Datei:
+4. **Validate.** The schema gate runs over a single file:
 
    ```bash
-   npm run validate-songs                                    # prüft src/data/songs/A1.json
+   npm run validate-songs                                    # checks src/data/songs/A1.json
    npx tsx src/utils/validate-song-data.ts src/data/songs/B1.json
-   npm run validate-catalog                                  # Katalog-Gate über alle Dateien
+   npm run validate-catalog                                  # catalogue gate over all files
    ```
 
-5. **Cover beschaffen.** Der Abruf läuft über die Admin-API (siehe unten):
-   `scripts/fetch-covers.js` sucht Cover über iTunes und Deezer — das Skript
-   zielt allerdings noch auf das alte Verzeichnis `src/data/packs/` und muss auf
-   `src/data/songs/` umgestellt werden, bevor es wieder Daten findet.
-6. **Commit.** Nach `docs/DOCUMENTATION_POLICY.md` gehört die Doku in denselben
-   Commit; für einen neuen Song ist das in der Regel der Katalog-Report.
+5. **Get the cover.** The retrieval runs through the admin API (see below):
+   `scripts/fetch-covers.js` searches covers via iTunes and Deezer — the script
+   still targets the old directory `src/data/packs/` and has to be switched to
+   `src/data/songs/` before it finds data again.
+6. **Commit.** According to `docs/DOCUMENTATION_POLICY.md` the documentation
+   belongs in the same commit; for a new song that is usually the catalogue
+   report.
 
-**Regeln, die das Gate prüft:** keine Dubletten (Artist + Titel + Jahr), keine
-Titel- oder Interpreten-Spoiler in den Hinweisen, `hintEvidence` mitprüfbarer
-Quelle, `mood` nur aus den bekannten Stimmungen, `links.youtube` gesetzt.
+**Rules that the gate checks:** no duplicates (artist + title + year), no title
+or artist spoilers in the hints, `hintEvidence` with a verifiable source, `mood`
+only from the known moods, `links.youtube` set.
 
 ---
 
-## Ich will ein Pack hinzufügen
+## I want to add a pack
 
-Ein Pack ist eine **Schlüssel-Zuordnung**, kein Ordner.
+A pack is a **key mapping**, not a folder.
 
-1. `src/config/game-config.ts`, Array `SONG_PACKS`: ein Eintrag mit `id` (der Key,
-   der in `song.packs` steht), `name`, `tagline`, `emoji`, `gradient`.
-2. `src/data/songs/packs.json`: ein Eintrag mit demselben Key, optional `pack`,
+1. `src/config/game-config.ts`, array `SONG_PACKS`: an entry with `id` (the key
+   that is in `song.packs`), `name`, `tagline`, `emoji`, `gradient`.
+2. `src/data/songs/packs.json`: an entry with the same key, optionally `pack`,
    `version`, `updatedAt`, `songCount`.
-3. In den betroffenen Song-Dateien `packs[]` um den neuen Key ergänzen.
-4. Alte Key-Formate (z. B. `global-hits`) über `PACK_ALIASES` in
-   `src/config/game-config.ts` auf den neuen Key abbilden — sonst liefern
-   gespeicherte Spielstände aus älteren Versionen leere Auswahlen
-   (`src/utils/song-picker.ts`, `normalizePackIds()`).
+3. In the affected song files, add the new key to `packs[]`.
+4. Map old key formats (e.g. `global-hits`) to the new key via `PACK_ALIASES` in
+   `src/config/game-config.ts` — otherwise saved game states from older
+   versions yield empty selections (`src/utils/song-picker.ts`,
+   `normalizePackIds()`).
 
-**Kommandos:**
+**Commands:**
 
 ```bash
 npm run validate-catalog
@@ -167,30 +169,30 @@ npm run build
 
 ---
 
-## Ich will ein Theme ergänzen
+## I want to add a theme
 
-Themes sind CSS-Variablen-Sätze, die über das Attribut `data-theme` am
-`<html>`-Element aktiviert werden.
+Themes are sets of CSS variables that are activated via the attribute
+`data-theme` on the `<html>` element.
 
-1. `src/styles/themes/<name>.css` anlegen. Der Block muss `[data-theme='<name>']`
-   heißen und dieselben Variablen setzen wie die bestehenden Themes
-   (`src/styles/themes/jackbox.css` als Vorlage):
+1. Create `src/styles/themes/<name>.css`. The block must be called
+   `[data-theme='<name>']` and set the same variables as the existing themes
+   (`src/styles/themes/jackbox.css` as template):
    `--color-bg`, `--color-bg-secondary`, `--color-bg-card`, `--color-text`,
    `--color-text-secondary`, `--color-primary`, `--color-primary-hover`,
    `--color-secondary`, `--color-accent`, `--color-success`, `--color-error`,
    `--color-border`, `--font-heading`, `--font-body`, `--radius`.
-2. `src/app/globals.css`: den Block in die Liste der Theme-Selektoren aufnehmen
-   (dort stehen alle vier `[data-theme='…']`-Regeln nebeneinander).
-3. `src/config/game-config.ts`: `ThemeName` erweitern und den Namen in
-   `AVAILABLE_THEMES` aufnehmen. `DEFAULT_THEME` bleibt, was es ist.
-4. `src/components/ui/ThemeSwitcher.tsx`: Button für das neue Theme.
-5. `src/i18n/locales/de.json` **und** `en.json`: Schlüssel unter `themes.<name>`.
-6. `src/components/ui/NavBar.tsx`: `THEME_COLORS` um den Akzentton ergänzen.
+2. `src/app/globals.css`: add the block to the list of theme selectors (all four
+   `[data-theme='…']` rules stand side by side there).
+3. `src/config/game-config.ts`: extend `ThemeName` and add the name to
+   `AVAILABLE_THEMES`. `DEFAULT_THEME` stays as it is.
+4. `src/components/ui/ThemeSwitcher.tsx`: button for the new theme.
+5. `src/i18n/locales/de.json` **and** `en.json`: keys under `themes.<name>`.
+6. `src/components/ui/NavBar.tsx`: add the accent colour to `THEME_COLORS`.
 
-Das Theme wird in `localStorage` unter `phomu-theme` gespeichert und beim Start
-über `src/contexts/ThemeContext.tsx` gesetzt.
+The theme is stored in `localStorage` under `phomu-theme` and set on start via
+`src/contexts/ThemeContext.tsx`.
 
-**Kommandos:**
+**Commands:**
 
 ```bash
 npm run typecheck
@@ -199,20 +201,20 @@ npm run build
 
 ---
 
-## Ich will einen neuen Text übersetzen
+## I want to translate a new text
 
-Grundregel: **jeder sichtbare Text kommt aus der Übersetzung**, in beiden
-Sprachen. Die Schlüssel sind flach mit Punktpfad (`namespace.unterpunkt.bezeichnung`),
-in `camelCase`, ohne Interpolation im Schlüssel — Platzhalter stehen im **Wert**
-(`{{count}}`).
+Basic rule: **every visible text comes from the translation**, in both
+languages. The keys are flat with a dot path
+(`namespace.subitem.label`), in `camelCase`, without interpolation in the key —
+placeholders belong in the **value** (`{{count}}`).
 
-1. Textstelle finden. Aktuell sind noch Literaltexte im JSX vorhanden; ein
-   Beispiel ist der Button in `src/components/game/QuestionPhase.tsx`
-   („Alle fertig → Reveal").
-2. In `src/i18n/locales/de.json` **und** `src/i18n/locales/en.json` denselben
-   Schlüssel anlegen. `en.json` bekommt eine **echte englische** Übersetzung,
-   keine Kopie der deutschen Werte.
-3. In der Komponente ersetzen. Client-Komponenten:
+1. Find the text location. Literal texts are still present in the JSX; one
+   example is the button in `src/components/game/QuestionPhase.tsx`
+   (`"Alle fertig → Reveal"`, in English `"Everyone's done → Reveal"`).
+2. Create the same key in `src/i18n/locales/de.json` **and**
+   `src/i18n/locales/en.json`. `en.json` gets a **real English** translation,
+   not a copy of the German values.
+3. Replace it in the component. Client components:
 
    ```tsx
    'use client';
@@ -221,51 +223,53 @@ in `camelCase`, ohne Interpolation im Schlüssel — Platzhalter stehen im **Wer
    return <button>{t('game.allDoneToReveal')}</button>;
    ```
 
-   Server-Komponenten: `getTranslations` aus `next/server`.
-4. Eigennamen (Spotify, YouTube, Jackbox, Phomu, Modusnamen) bleiben in beiden
-   Sprachen identisch.
-5. Pluralformen über `key_one` / `key_other` in beiden Sprachen parallel anlegen.
+   Server components: `getTranslations` from `next/server`.
+4. Proper nouns (Spotify, YouTube, Jackbox, Phomu, mode names) remain identical
+   in both languages.
+5. Create plural forms via `key_one` / `key_other` in parallel in both
+   languages.
 
-**Kommandos:**
+**Commands:**
 
 ```bash
-npm run check:i18n          # DE/EN vollständig und parallel, kein Literaltext im JSX
+npm run check:i18n          # DE/EN complete and in parity, no literal text in the JSX
 npm run typecheck
 npm run build
 ```
 
-Der Gate-Befehl prüft beides: gleiche Schlüssel in `de.json` und `en.json`, keine
-leeren Werte, **kein Literaltext mehr im JSX**. Er zählt die verbleibenden
-Festtexte — bei der letzten Messung 465 in 47 `.tsx`-Dateien. Jeder ersetzte
-Literaltext verschwindet aus dieser Zahl, der Wert ist also eine Momentaufnahme
-des Migrationsfortschritts.
+The gate command checks both: the same keys in `de.json` and `en.json`, no empty
+values, **no literal text left in the JSX**. It counts the remaining hardcoded
+texts — at the last measurement 465 in 47 `.tsx` files. Every replaced literal
+text disappears from this number, so the value is a snapshot of the migration
+progress.
 
 ---
 
-## Ich will die Admin-API ändern
+## I want to change the admin API
 
-Die Admin-API liegt unter `src/admin-api/` und ist **nicht** Teil des
-statischen Exports: `next.config.ts` setzt `output: 'export'`. Die Routen
-funktionieren deshalb nur, solange die App über `next dev` oder `next start`
-läuft, nicht im exportierten Static-Build.
+The admin API lives under `src/admin-api/` and is **not** part of the static
+export: `next.config.ts` sets `output: 'export'`. The routes therefore only
+work while the app runs via `next dev` or `next start`, not in the exported
+static build.
 
-| Route | Datei | Zweck |
+| Route | File | Purpose |
 |---|---|---|
-| `GET /admin/covers/search` | `src/admin-api/admin/covers/search/route.ts` | Cover-Suche über iTunes und Deezer |
-| `POST /admin/covers/save` | `src/admin-api/admin/covers/save/route.ts` | Cover herunterladen, in `public/covers/` ablegen, `coverUrl` im Pack setzen |
-| Guard und Validatoren | `src/admin-api/_lib/security.ts` | Tokenprüfung, Eingabe- und URL-Prüfung |
+| `GET /admin/covers/search` | `src/admin-api/admin/covers/search/route.ts` | cover search via iTunes and Deezer |
+| `POST /admin/covers/save` | `src/admin-api/admin/covers/save/route.ts` | download the cover, store it in `public/covers/`, set `coverUrl` in the pack |
+| Guard and validators | `src/admin-api/_lib/security.ts` | token check, input and URL check |
 
-**Regeln für jede Änderung dort:**
+**Rules for every change there:**
 
-1. Jede Route beginnt mit `assertAdminAccess(request)` und gibt deren Antwort bei
-   Fehlern direkt zurück.
-2. Eingaben gehen durch `boundedText()`, `parseSongId()` oder `parseHttpUrl()`.
-3. Externe Abrufe gehen durch `fetchWithTimeout()`.
-4. Bilder nur von HTTPS und nur von Hosts aus `ALLOWED_IMAGE_HOSTS`, maximal 5 MB.
-5. **Jede Härtung braucht einen negativen Test:** fehlender Token, zu kurzer Token,
-   manipulierte URL, nicht erlaubter Host, zu große Datei.
+1. Every route begins with `assertAdminAccess(request)` and returns its response
+   directly on errors.
+2. Inputs go through `boundedText()`, `parseSongId()` or `parseHttpUrl()`.
+3. External retrievals go through `fetchWithTimeout()`.
+4. Images only over HTTPS and only from hosts in `ALLOWED_IMAGE_HOSTS`, at most
+   5 MB.
+5. **Every hardening needs a negative test:** missing token, token too short,
+   manipulated URL, host not allowed, file too large.
 
-**Kommandos:**
+**Commands:**
 
 ```bash
 npm run typecheck
@@ -275,33 +279,33 @@ npm run build
 
 ---
 
-## Ich will den Admin-Token erzeugen oder wechseln
+## I want to generate or change the admin token
 
-Der Token schützt die Admin-API. Er ist eine Umgebungsvariable und gehört **nicht**
-ins Repository.
+The token protects the admin API. It is an environment variable and belongs
+**not** in the repository.
 
 ```bash
-# 1. Vorlage anlegen
+# 1. Create the template
 cp .env.example .env.local
 
-# 2. Token erzeugen — das Skript schreibt den Wert nicht in die Datei,
-#    es gibt ihn auf der Konsole aus:
+# 2. Generate the token — the script does not write the value into the file,
+#    it prints it to the console:
 npm run security:rotate-admin-token
 
-# 3. Ausgabe in .env.local eintragen:
-#    ADMIN_API_TOKEN=<der ausgegebene Hex-String>
+# 3. Enter the output in .env.local:
+#    ADMIN_API_TOKEN=<the printed hex string>
 ```
 
-Alternativ von Hand: `openssl rand -hex 32`. Das Skript
-`scripts/generate-admin-token.js` erzeugt 32 Byte als Hex (64 Zeichen), wenn
-`ADMIN_TOKEN_BYTES` nicht gesetzt ist; ein kleinerer Wert wird abgelehnt.
+Alternatively by hand: `openssl rand -hex 32`. The script
+`scripts/generate-admin-token.js` generates 32 bytes as hex (64 characters) if
+`ADMIN_TOKEN_BYTES` is not set; a smaller value is rejected.
 
-Die Mindestlänge beträgt **32 Zeichen** (`MIN_ADMIN_TOKEN_LENGTH` in
-`src/admin-api/_lib/security.ts`). Ist `ADMIN_API_TOKEN` nicht gesetzt, antwortet die
-API mit **503** („Admin API not configured"), mit einem zu kurzen Token ebenfalls
-**503**, mit einem falschen Token mit **401**.
+The minimum length is **32 characters** (`MIN_ADMIN_TOKEN_LENGTH` in
+`src/admin-api/_lib/security.ts`). If `ADMIN_API_TOKEN` is not set, the API
+answers with **503** ("Admin API not configured"), with a token that is too
+short also **503**, with a wrong token **401**.
 
-**Kommandos:**
+**Commands:**
 
 ```bash
 npm run typecheck
@@ -310,35 +314,35 @@ npm run test
 
 ---
 
-## Ich will das Drucklayout ändern
+## I want to change the print layout
 
-Die Kartenmaße stehen in `src/config/game-config.ts`:
+The card dimensions are in `src/config/game-config.ts`:
 
-| Konstante | Wert | Bedeutung |
+| Constant | Value | Meaning |
 |---|---|---|
-| `CARD_WIDTH_MM` | 59 | Kartenbreite |
-| `CARD_HEIGHT_MM` | 91 | Kartenhöhe |
-| `CARD_BLEED_MM` | 3 | Beschnitt rundum |
-| `MAX_CARDS_PER_SET` | 110 | Karten je Set |
+| `CARD_WIDTH_MM` | 59 | card width |
+| `CARD_HEIGHT_MM` | 91 | card height |
+| `CARD_BLEED_MM` | 3 | bleed all around |
+| `MAX_CARDS_PER_SET` | 110 | cards per set |
 
-Das sind die einzigen vier Stellen — es gibt **keine** Zeichenfunktion, die sie
-verwendet. Ein Druck- oder Export-Werkzeug ist **nicht implementiert**.
+These are the only four places — there is **no** drawing function that uses
+them. A print or export tool is **not implemented**.
 
-Was der QR-Scanner versteht, steht in `src/utils/qr-intent.ts`:
+What the QR scanner understands is in `src/utils/qr-intent.ts`:
 
-| Inhalt | Bedeutung | vom Spiel verarbeitet? |
+| Content | Meaning | Processed by the game? |
 |---|---|---|
-| `@Name` | Spieler zur Lobby hinzufügen | ja |
-| `…?pack=<packId>` | Pack in der Lobby auswählen | ja |
-| `…?session=<code>` | Sitzung beitreten | Parser ja, Spiel nein |
-| `…?id=<songId>` | Song öffnen | ausdrücklich **nicht** (`unsupported-song-link`) |
+| `@Name` | add the player to the lobby | yes |
+| `…?pack=<packId>` | select the pack in the lobby | yes |
+| `…?session=<code>` | join the session | parser yes, game no |
+| `…?id=<songId>` | open the song | explicitly **not** (`unsupported-song-link`) |
 
-Wenn du das Layout änderst, ändere die vier Konstanten in
-`src/config/game-config.ts`, passe das Format im Druck-Guide an
-([`docs/guides/PRINTING-GUIDE.md`](docs/guides/PRINTING-GUIDE.md)) und prüfe, ob
-ein neues Payload-Format in `src/utils/qr-intent.ts` aufgenommen werden muss.
+If you change the layout, change the four constants in
+`src/config/game-config.ts`, adapt the format in the printing guide
+([`docs/guides/PRINTING-GUIDE.md`](docs/guides/PRINTING-GUIDE.md)) and check
+whether a new payload format has to be added in `src/utils/qr-intent.ts`.
 
-**Kommandos:**
+**Commands:**
 
 ```bash
 npm run typecheck
@@ -347,52 +351,51 @@ npm run test -- qr-intent
 
 ---
 
-## Ich will einen Test schreiben
+## I want to write a test
 
-| Ebene | Ort | Werkzeug |
+| Layer | Location | Tool |
 |---|---|---|
-| Unit (Utilities) | `src/utils/*.test.ts` | Vitest |
-| Unit (Komponente) | `src/components/**/*.test.ts(x)` | Vitest |
+| Unit (utilities) | `src/utils/*.test.ts` | Vitest |
+| Unit (component) | `src/components/**/*.test.ts(x)` | Vitest |
 | E2E | `e2e/*.spec.ts` | Playwright |
 
-Vorhandene Beispiele: `src/utils/qr-intent.test.ts` (4 Tests),
-`src/utils/validate-song-data.test.ts` (8 Tests),
-`src/components/game/MusicPlayer.test.ts` (7 Tests),
-`src/utils/ai-task-queue.test.ts` (2 Tests).
+Existing examples: `src/utils/qr-intent.test.ts` (4 tests),
+`src/utils/validate-song-data.test.ts` (8 tests),
+`src/components/game/MusicPlayer.test.ts` (7 tests),
+`src/utils/ai-task-queue.test.ts` (2 tests).
 
-**Unit-Test:**
+**Unit test:**
 
 ```bash
-npm run test -- qr-intent          # eine Datei
-npm run test                        # alles mit Coverage
+npm run test -- qr-intent          # one file
+npm run test                        # everything with coverage
 ```
 
-**E2E-Test:** Die Browser müssen einmalig installiert sein.
+**E2E test:** The browsers must be installed once.
 
 ```bash
 npm run test:e2e:install            # Chromium
-npm run test:e2e:install:linux      # nur Linux: fehlende Systembibliotheken
-npm run test:e2e:smoke              # der Smoke-Test
+npm run test:e2e:install:linux      # Linux only: missing system libraries
+npm run test:e2e:smoke              # the smoke test
 ```
 
-Der Playwright-Runner startet selbst einen Dev-Server auf Port 3000
-(`playwright.config.ts`, `webServer.command = 'npm run dev'`). Läuft dort schon
-etwas, setze `E2E_BASE_URL` auf die vorhandene Instanz.
+The Playwright runner starts a dev server on port 3000 itself
+(`playwright.config.ts`, `webServer.command = 'npm run dev'`). If something is
+already running there, set `E2E_BASE_URL` to the existing instance.
 
-**Regeln:** Jede Verhaltensänderung braucht einen Test, der das Verhalten **ausführt**,
-nicht nachahmt. Kein `skip`, kein `@Ignore`, kein auskommentierter Test, damit ein
-Gate grün wird. Jede Härtung braucht zusätzlich einen **negativen** Test.
+**Rules:** Every behaviour change needs a test that **executes** the behaviour,
+not imitates it. No `skip`, no `@Ignore`, no commented-out test to make a gate
+green. Every hardening additionally needs a **negative** test.
 
 ---
 
-## Ich will die CI erweitern
+## I want to extend the CI
 
-Aktuell existiert **eine** Workflow-Datei:
-`.github/workflows/deploy.yml`. Sie baut die Seite und veröffentlicht sie nach
-GitHub Pages. Sie läuft nur bei Pushed auf `main` und manuelle Starts; sie führt
-**weder** Typecheck noch Lint noch Tests aus.
+Currently there is **one** workflow file: `.github/workflows/deploy.yml`. It
+builds the site and publishes it to GitHub Pages. It only runs on pushes to
+`main` and manual starts; it runs **neither** typecheck nor lint nor tests.
 
-**Neuen Job hinzufügen** (Datei `.github/workflows/quality.yml`):
+**Add a new job** (file `.github/workflows/quality.yml`):
 
 ```yaml
 name: Quality
@@ -420,31 +423,33 @@ jobs:
       - run: npm run build
 ```
 
-**Node-Version:** `package.json` enthält **kein** `engines`-Feld. Die Version 20 ist
-aus `.github/workflows/deploy.yml` abgeleitet (`node-version: "20"`). Wenn du eine
-andere Version brauchst, ändere beide Stellen gleichzeitig — oder füge zuerst
-`engines` in `package.json` hinzu.
+**Node version:** `package.json` contains **no** `engines` field. Version 20 is
+derived from `.github/workflows/deploy.yml` (`node-version: "20"`). If you need
+a different version, change both places at the same time — or add `engines` to
+`package.json` first.
 
-**Lokal dasselbe fahren:**
+**Run the same locally:**
 
 ```bash
 npm run local-ci
 ```
 
-`scripts/local-ci.sh` führt Typecheck, Lint, Unit-Tests, Format-Check (nicht blockierend),
-`validate-songs`, `validate-catalog`, Build und `npm audit` in dieser Reihenfolge aus.
+`scripts/local-ci.sh` runs typecheck, lint, unit tests, format check (not
+blocking), `validate-songs`, `validate-catalog`, build and `npm audit` in this
+order.
 
 ---
 
-## Ich will ein Verhalten ändern (Spielregel, Punkte, Ablauf)
+## I want to change a behaviour (game rule, points, flow)
 
-1. In [`REQUIREMENTS.md`](REQUIREMENTS.md) die Anforderung suchen, die das Verhalten
-   beschreibt, oder eine neue mit der nächsten freien ID der Domäne anlegen
-   (`GAME`, `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `CORE`, `NFR`).
-2. Materielle Änderungen brauchen einen Change Request unter `docs/cr/`.
-3. Umsetzen, Test schreiben, Doku im selben Commit aktualisieren — die Zuordnung
-   steht in [`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md).
-4. Nachweisen:
+1. Look for the requirement in [`REQUIREMENTS.md`](REQUIREMENTS.md) that
+   describes the behaviour, or create a new one with the next free ID of the
+   domain (`GAME`, `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `CORE`,
+   `NFR`).
+2. Material changes need a change request under `docs/cr/`.
+3. Implement, write a test, update the documentation in the same commit — the
+   mapping is in [`docs/DOCUMENTATION_POLICY.md`](docs/DOCUMENTATION_POLICY.md).
+4. Prove it:
 
    ```bash
    npm run local-ci
@@ -452,24 +457,25 @@ npm run local-ci
 
 ---
 
-## Ich will die Doku ändern
+## I want to change the documentation
 
-| Ich ändere | Dann aktualisiere ich |
+| I change | Then I update |
 |---|---|
-| einen Begriff | [`GLOSSARY.md`](GLOSSARY.md) |
-| eine Zahl in `src/config/` | die Fundstelle in der Doku, die sie nennt — die Konstante selbst bleibt die einzige Wahrheit |
-| einen Spielmodus | `REQUIREMENTS.md`, `docs/user-guide/USER-GUIDE.de.md` **und** `docs/user-guide/USER-GUIDE.en.md`, `docs/BEST_IN_CLASS.md` |
-| die Oberfläche | `docs/user-guide/USER-GUIDE.de.md` **und** `docs/user-guide/USER-GUIDE.en.md` |
-| den Katalog | den Katalog-Report, nicht die Zahlen im README |
+| a term | [`GLOSSARY.md`](GLOSSARY.md) |
+| a number in `src/config/` | the place in the documentation that mentions it — the constant itself remains the only truth |
+| a game mode | `REQUIREMENTS.md`, `docs/user-guide/USER-GUIDE.en.md`, `docs/BEST_IN_CLASS.md` |
+| the interface | `docs/user-guide/USER-GUIDE.en.md` |
+| the catalogue | the catalogue report, not the numbers in the README |
 
-Bestehende Doku im Repo-Root (`README.md`, `CONTRIBUTING.md`, `SECURITY.md`,
-`LLM.md`, `PRINTING_GUIDE.md`) bleibt an ihrem Platz; `PRINTING_GUIDE.md` verweist auf
+Existing documentation in the repo root (`README.md`, `CONTRIBUTING.md`,
+`SECURITY.md`, `LLM.md`, `PRINTING_GUIDE.md`) stays where it is;
+`PRINTING_GUIDE.md` refers to
 [`docs/guides/PRINTING-GUIDE.md`](docs/guides/PRINTING-GUIDE.md).
 
 ---
 
-## Ich weiß nicht, wo die Datei liegt
+## I do not know where the file is
 
-Der Index aller Dokumente steht in [`docs/README.md`](docs/README.md). Die
-Schichten des Codes und ihre Abhängigkeitsrichtung stehen in
+The index of all documents is in [`docs/README.md`](docs/README.md). The layers
+of the code and their dependency direction are in
 [`ARCHITECTURE.md`](ARCHITECTURE.md).

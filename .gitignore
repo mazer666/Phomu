@@ -54,3 +54,7 @@ song_database_export.csv
 
 # Rekonstruktion der Sprachdateien (Zwischenstand der i18n-Migration)
 .locale-recovery/
+
+# Übergabedokumente der Agenten (Arbeitsergebnis, nicht Teil des Repos)
+deliverable.md
+**/deliverable.md

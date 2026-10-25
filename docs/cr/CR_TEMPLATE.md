@@ -1,69 +1,69 @@
-# CR-XXXX — Titel der Änderung
+# CR-XXXX — Title of the change
 
 **Status:** proposed | approved | rejected | implemented
-**Datum:** YYYY-MM-DD
-**Auslöser:** Wer hat die Änderung angestoßen, und wodurch? (Befund, Anfrage, Audit, Fehlerbild)
-**Vorgeschlagen von:** Rolle(n) laut `AGENTS.md` (z. B. ROLE-01)
-**Geprüft von:** Rolle(n) laut `AGENTS.md`
-**Entscheidung:** offen | angenommen | abgelehnt — mit Datum und Entscheidungsträger
+**Date:** YYYY-MM-DD
+**Trigger:** Who triggered the change, and what triggered it? (finding, request, audit, error pattern)
+**Proposed by:** Role(s) according to `AGENTS.md` (e.g. ROLE-01)
+**Reviewed by:** Role(s) according to `AGENTS.md`
+**Decision:** open | accepted | rejected — with date and decision maker
 
 ---
 
 ## 1. Problem
 
-Was ist falsch oder fehlt? Beschreibe den **beobachteten Zustand**, nicht die
-Absicht. Belege jede Aussage mit Testname, Kommando-Ausgabe oder Datei:Zeile.
-Ohne Beleg ist dieser Abschnitt ein Wunsch, kein Change Request.
+What is wrong or missing? Describe the **observed state**, not the intention.
+Back up every statement with a test name, command output or file:line.
+Without evidence this section is a wish, not a change request.
 
-## 2. Beantragte Änderung
+## 2. Proposed change
 
-Was genau wird geändert? Nenne Dateien, Verzeichnisse und Schritte. Eine
-Änderung, die sich nicht in einem Diff ausdrücken lässt, ist keine Änderung.
+What exactly is changed? Name files, directories and steps. A change that
+cannot be expressed in a diff is not a change.
 
-## 3. Begründung
+## 3. Rationale
 
-Warum ist diese Änderung die richtige? Welche Anforderung, welches Risiko
-oder welcher Grundsatz spricht dafür? Verweise auf Anforderungs-IDs.
+Why is this change the right one? Which requirement, which risk or which
+principle speaks for it? Refer to requirement IDs.
 
-## 4. Betroffene Anforderungen
+## 4. Affected requirements
 
-| ID | Auswirkung |
+| ID | Impact |
 |---|---|
-| `DOMÄNE-NNN` | neu / geändert / unverändert, mit einem Satz |
+| `DOMAIN-NNN` | new / changed / unchanged, in one sentence |
 
-Wenn keine Anforderung betroffen ist, schreibe das ausdrücklich hin. Ein
-Change Request ohne Anforderungsbezug ist in diesem Projekt unzulässig.
+If no requirement is affected, state that explicitly. A change request
+without a requirement reference is inadmissible in this project.
 
-## 5. Betroffene Architektur
+## 5. Affected architecture
 
-Welche Schichten, Module oder Abhängigkeitsrichtungen werden berührt?
-Nennt die geänderten Pfade in `src/`.
+Which layers, modules or dependency directions are touched? Name the changed
+paths in `src/`.
 
-## 6. Betroffene Plattformen
+## 6. Affected platforms
 
-Web, mobile, Deployment, CI — was ist betroffen und was nicht?
+Web, mobile, deployment, CI — what is affected and what is not?
 
-## 7. Auswirkung auf die Meilensteine
+## 7. Impact on the milestones
 
-Welche Meilensteine aus `ROADMAP.md` werden erweitert, verschoben, geteilt
-oder neu bewertet? Eine stillschweigende Verschiebung ist verboten.
+Which milestones from `ROADMAP.md` are extended, moved, split or re-evaluated?
+A silent postponement is forbidden.
 
-## 8. Auswirkung auf Abnahme und Tests
+## 8. Impact on acceptance and tests
 
-Welche Abnahmekriterien ändern sich, welche kommen hinzu? Welche Gates kommen
-hinzu? Welche Tests müssen neu oder negativ geschrieben werden?
+Which acceptance criteria change, which are added? Which gates are added?
+Which tests have to be written anew or as negative tests?
 
-## 9. Risiken
+## 9. Risks
 
-| Risiko | Eintrittswahrscheinlichkeit | Auswirkung | Gegenmaßnahme | Owner |
+| Risk | Probability of occurrence | Impact | Countermeasure | Owner |
 |---|---|---|---|---|
 
-## 10. Rücknahme
+## 10. Rollback
 
-Wie wird die Änderung zurückgenommen? Konkrete Schritte, keine Prinzipien.
+How is the change rolled back? Concrete steps, no principles.
 
-## 11. Entscheidung
+## 11. Decision
 
-Entschieden am YYYY-MM-DD von <Rolle/Person>: **angenommen | abgelehnt |
-angenommen mit Auflagen**. Begründung, Auflagen, und was als Folge passiert
-(Ticket, Meilenstein, Anforderungs-IDs).
+Decided on YYYY-MM-DD by <role/person>: **accepted | rejected |
+accepted with conditions**. Rationale, conditions, and what happens as a
+consequence (ticket, milestone, requirement IDs).

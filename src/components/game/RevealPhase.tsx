@@ -1,8 +1,8 @@
 /**
  * RevealPhase
  *
- * Zeigt ausschließlich die für den jeweiligen Spielmodus relevante Auflösung.
- * Kein generischer Song-Dump — jede Modusantwort bekommt eine eigene visuelle Sprache.
+ * Shows exclusively the resolution relevant for the respective game mode.
+ * No generic song dump — every mode answer gets its own visual language.
  */
 'use client';
 
@@ -52,11 +52,11 @@ interface RevealPhaseProps {
   overrideGovernance?: 'host' | 'co-host' | 'majority';
 }
 
-// ─── Juicy CTA-Varianten ──────────────────────────────────────────
-// Die Texte liegen in der Übersetzung. Die Schlüssellisten sind typisiert
-// und aus `src/i18n/locales/de.json` erzeugt (siehe `src/i18n/variant-keys.ts`),
-// damit ein Tippfehler beim Compile auffällt und die Anzahl der Varianten
-// nicht an zwei Orten gepflegt werden muss.
+// ─── Juicy CTA variants ──────────────────────────────────────────
+// The texts live in the translation. The key lists are typed
+// and generated from `src/i18n/locales/de.json` (see `src/i18n/variant-keys.ts`),
+// so that a typo shows up at compile time and the number of variants
+// does not have to be maintained in two places.
 
 function hashSeed(seed: string): number {
   let hash = 0;
@@ -71,11 +71,11 @@ function pickIndex(seed: string, length: number): number {
   return hashSeed(seed) % length;
 }
 
-// ─── Modus-spezifische Reveal-Karten ─────────────────────────────
+// ─── Mode-specific reveal cards ─────────────────────────────
 
 /**
- * Baut die Übersetzungsschlüssel der Timeline-Schlagzeilen.
- * Der Text selbst kommt aus der Übersetzung (Platzhalter: {{year}}).
+ * Builds the translation keys of the timeline headlines.
+ * The text itself comes from the translation (placeholder: {{year}}).
  */
 function buildTimelineHeadlineKeys(year: number): TranslationKey[] {
   const decade = Math.floor(year / 10) * 10;
@@ -84,7 +84,7 @@ function buildTimelineHeadlineKeys(year: number): TranslationKey[] {
 
 function TimelineReveal({ song }: { song: PhomuSong }) {
   const { t, i18n } = useTranslation();
-  // Jahreszahlen ohne Tausenderpunkt (Intl mit aktiver Sprache)
+  // Years without a thousands separator (Intl with the active locale)
   const yearFormatter = useMemo(
     () => new Intl.NumberFormat(i18n.language, { useGrouping: false }),
     [i18n.language]
@@ -396,7 +396,7 @@ function CoverConfusionReveal({ song }: { song: PhomuSong }) {
   );
 }
 
-// ─── Kleine Hilfskomponente: diskrete Song-Attribution ────────────
+// ─── Small helper component: discreet song attribution ────────────
 
 function SongAttribution({ song }: { song: PhomuSong }) {
   return (
@@ -406,7 +406,7 @@ function SongAttribution({ song }: { song: PhomuSong }) {
   );
 }
 
-// ─── Haupt-Komponente ─────────────────────────────────────────────
+// ─── Main component ─────────────────────────────────────────────
 
 export function RevealPhase({
   song,
@@ -426,7 +426,7 @@ export function RevealPhase({
   const [showPowerMenu, setShowPowerMenu] = useState(false);
   const { t, i18n } = useTranslation();
 
-  // Punkte und Ränge mit der aktiven Sprache formatieren (Intl)
+  // Format points and ranks with the active locale (Intl)
   const numberFormatter = useMemo(
     () => new Intl.NumberFormat(i18n.language),
     [i18n.language]
@@ -448,7 +448,7 @@ export function RevealPhase({
     return t(NEXT_ROUND_KEYS[index]!);
   }, [song.id, answers.length, t]);
 
-  // Gewinner-Logik
+  // Winner logic
   const showWinUI =
     isGameOver ||
     (endingCondition === 'points' &&
@@ -467,7 +467,7 @@ export function RevealPhase({
     }
   }
 
-  // Punkte-Zusammenfassung
+  // Points summary
   const scoringRows = answers
     .filter((a) => a.pointsAwarded > 0)
     .map((a) => {
@@ -478,7 +478,7 @@ export function RevealPhase({
       (r): r is { player: Player; points: number } => r.player !== undefined
     );
 
-  // Spicy Feedback für die Runde (Basierend auf der ersten Antwort)
+  // Spicy feedback for the round (based on the first answer)
   const firstAnswer = answers[0];
   const spicyMessage = useMemo(() => {
     if (!firstAnswer) return null;
@@ -487,7 +487,7 @@ export function RevealPhase({
       ? FEEDBACK_CORRECT_KEYS
       : FEEDBACK_WRONG_KEYS;
     const index = hashSeed(song.id) % pool.length;
-    // Der Spruch kommt aus der Übersetzung, der Originaltext ist nur Fallback.
+    // The quip comes from the translation, the original text is only a fallback.
     return t(keys[index] ?? keys[0]!, {
       defaultValue: pool[index]!,
     });
@@ -532,7 +532,7 @@ export function RevealPhase({
         </motion.div>
       )}
 
-      {/* ── Modus-spezifische Auflösung ───────────────────────── */}
+      {/* ── Mode-specific resolution ───────────────────────── */}
       {currentMode === 'timeline' && <TimelineReveal song={song} />}
       {currentMode === 'hint-master' && <HintMasterReveal song={song} />}
       {currentMode === 'lyrics' && <LyricsReveal song={song} />}
@@ -542,7 +542,7 @@ export function RevealPhase({
         <CoverConfusionReveal song={song} />
       )}
 
-      {/* ── Punkte-Zusammenfassung ────────────────────────────── */}
+      {/* ── Points summary ────────────────────────────── */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
@@ -587,7 +587,7 @@ export function RevealPhase({
                   >
                     {player.name}
                   </span>
-                  {/* Dieses-Runde-Delta */}
+                  {/* This-round delta */}
                   {earned > 0 && (
                     <motion.span
                       initial={{ opacity: 0, y: -12, scale: 1.4 }}
@@ -607,7 +607,7 @@ export function RevealPhase({
                       {t('game.reveal.pointsAwarded', { count: earned })}
                     </motion.span>
                   )}
-                  {/* Gesamtpunkte */}
+                  {/* Total points */}
                   <span className="font-black text-sm tabular-nums opacity-80 w-10 text-right shrink-0">
                     {numberFormatter.format(player.score)}
                   </span>
@@ -617,7 +617,7 @@ export function RevealPhase({
         </div>
       </motion.div>
 
-      {/* ── Power-User Menü ───────────────────────────────────── */}
+      {/* ── Power-user menu ───────────────────────────────────── */}
       <div className="flex justify-end">
         <button
           onClick={() => setShowPowerMenu((v) => !v)}
@@ -656,7 +656,7 @@ export function RevealPhase({
         </div>
       )}
 
-      {/* ── Aktions-Buttons ───────────────────────────────────── */}
+      {/* ── Action buttons ───────────────────────────────────── */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}

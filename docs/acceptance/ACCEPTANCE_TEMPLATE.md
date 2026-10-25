@@ -1,117 +1,117 @@
-# Abnahme — FEATURE / MEILENSTEIN
+# Acceptance — FEATURE / MILESTONE
 
-**Anforderungs-IDs:**
+**Requirement IDs:**
 **Build / Commit:**
-**Testende Rollen:**
-**Datum:**
-**Umgebung:** (Node-Version, npm-Version, Betriebssystem, Browser)
+**Testing roles:**
+**Date:**
+**Environment:** (Node version, npm version, operating system, browser)
 
-> **Evidenzregel — bindend.**
+> **Evidence rule — binding.**
 >
-> Jede Aussage in diesem Dokument braucht eine **konkrete Evidenz**:
+> Every statement in this document needs **concrete evidence**:
 >
-> - ein **Testname** (der Test wird zitiert, nicht „Unit-Tests" gesagt),
-> - eine **Kommando-Ausgabe** (Kommando + Exit-Code + die entscheidende Zeile),
-> - oder eine **Datei:Zeile**-Angabe im Repository.
+> - a **test name** (the test is quoted, not called "unit tests"),
+> - a **command output** (command + exit code + the decisive line),
+> - or a **file:line** reference in the repository.
 >
-> Ein „implemented", „grün", „erledigt" ohne Beleg ist **kein** gültiges
-> Ergebnis. Was nicht gemessen wurde, wird als **NOT RUN** mit Begründung
-> eingetragen — nie als bestanden. Stubs, Mock-Simulationen und
-> Dummy-Rückgaben zählen nicht als Nachweis (`NFR-008`).
+> An "implemented", "green", "done" without evidence is **not** a valid
+> result. What was not measured is entered as **NOT RUN** with a reason
+> — never as passed. Stubs, mock simulations and dummy returns do not count
+> as evidence (`NFR-008`).
 >
-> **Bestehensbedingung:** Ein Meilenstein ist erst abgenommen, wenn **alle**
-> Gates dieses Abschnitts erfüllt sind. Teilabnahmen sind möglich, sie werden
-> aber als solche benannt.
+> **Pass condition:** A milestone is only accepted when **all** gates of this
+> section are fulfilled. Partial acceptances are possible, but they are named
+> as such.
 
 ---
 
-## 1. Funktional
+## 1. Functional
 
-Jede Verhaltensregel, die dieser Meilenstein berührt.
+Every behaviour rule that this milestone touches.
 
-| Szenario | Erwartet | Ergebnis | Evidenz |
+| Scenario | Expectation | Result | Evidence |
 |---|---|---|---|
 | | | | |
 
-**Regel:** Ein Szenario ohne beobachtbares Ergebnis ist kein Szenario. Ein
-Szenario, dessen Ergebnis „geht" lautet, ist nicht geprüft.
+**Rule:** A scenario without an observable result is not a scenario. A
+scenario whose result is "works" has not been tested.
 
 ---
 
-## 2. Technik
+## 2. Technical
 
-- Architekturgrenzen eingehalten: ja / nein / teilweise — Beleg:
-- Zentrale Konfiguration eingehalten (`src/config/game-config.ts`): ja / nein — Beleg:
-- Tests grün: ja / nein / teilweise — Beleg:
-- Migration / Versionierung geprüft: ja / nein / nicht zutreffend — Beleg:
-- Typprüfung: ja / nein — Beleg:
-- Lint: ja / nein — Beleg:
-- Dateigrößen-Gate: ja / nein / **NOT RUN** — Beleg:
-- Neue Gates vorhanden und ausführbar: … — Beleg:
+- Architecture boundaries respected: yes / no / partly — Evidence:
+- Central configuration respected (`src/config/game-config.ts`): yes / no — Evidence:
+- Tests green: yes / no / partly — Evidence:
+- Migration / versioning checked: yes / no / not applicable — Evidence:
+- Type check: yes / no — Evidence:
+- Lint: yes / no — Evidence:
+- File size gate: yes / no / **NOT RUN** — Evidence:
+- New gates present and runnable: … — Evidence:
 
 ---
 
 ## 3. Performance
 
-| Metrik | Budget | Gemessen | Ergebnis |
+| Metric | Budget | Measured | Result |
 |---|---:|---:|---|
 | | | | |
 
-**Referenzhardware / Eingabe:**
-**Methode:** (welches Kommando, welcher Lauf, wie viele Läufe)
+**Reference hardware / input:**
+**Method:** (which command, which run, how many runs)
 
-> Ein Budget ohne Messwert ist eine Absichtserklärung, kein Ergebnis. Wenn ein
-> Budget nicht definiert ist, steht hier **„Budget nicht definiert"** — nicht
-> eine geschätzte Zahl.
+> A budget without a measured value is a statement of intent, not a result. If a
+> budget is not defined, this says **"budget not defined"** — not an
+> estimated number.
 
 ---
 
 ## 4. Usability
 
-- Anzahl Schritte für die Hauptaufgabe:
-- Auffindbarkeit (was ist sichtbar, was nicht):
-- Verhalten auf Mobil / nativ:
-- Touch-Ziele, Fokusreihenfolge, Kontrast:
-- Screenreader (VoiceOver / TalkBack):
-- Visuelle Feinheiten / offene Mängel:
-- **NOT RUN**-Punkte mit Begründung:
+- Number of steps for the main task:
+- Discoverability (what is visible, what is not):
+- Behaviour on mobile / native:
+- Touch targets, focus order, contrast:
+- Screen readers (VoiceOver / TalkBack):
+- Visual details / open defects:
+- **NOT RUN** items with reason:
 
 ---
 
-## 5. Security-Privacy
+## 5. Security/Privacy
 
-- Neue gespeicherte Daten:
-- Netzzugriff (ausgehend / eingehend):
-- Negative Tests (welche, mit Testname):
-- Bedrohungsnotizen:
-- Was **nicht** geprüft wurde:
+- New stored data:
+- Network access (outgoing / incoming):
+- Negative tests (which ones, with test name):
+- Threat notes:
+- What was **not** tested:
 
 ---
 
-## 6. Interoperabilität
+## 6. Interoperability
 
-- Wiederöffnen / Rücklesen der Daten:
-- Fremde Viewer / Editoren / Geräte:
-- Roundtrip (Schreiben → Lesen → Schreiben):
-- Integrität von Speichern und Wiederherstellung:
-- Formate, Versionen, Fremdsysteme:
+- Reopening / reading back the data:
+- Third-party viewers / editors / devices:
+- Roundtrip (write → read → write):
+- Integrity of saves and restores:
+- Formats, versions, external systems:
 
 ---
 
 ## 7. Known limitations
 
-Jede bekannte Einschränkung, die den Nutzer oder den Betreiber betrifft —
-hier und nicht nur im Kleingedruckten.
+Every known limitation that affects the user or the operator —
+here and not only in the fine print.
 
-| ID | Einschränkung | Wirkung | Wo nachverfolgt |
+| ID | Limitation | Effect | Tracked in |
 |---|---|---|---|
 | | | | |
 
 ---
 
-## 8. Entscheidung
+## 8. Decision
 
-**angenommen / abgelehnt / angenommen mit dokumentierter Einschränkung**
+**accepted / rejected / accepted with documented limitation**
 
-Begründung, Auflagen, offene Punkte mit Owner und Datum. Was nach der
-Entscheidung passiert (Folge-Ticket, nächster Meilenstein, Anforderungs-IDs).
+Rationale, conditions, open points with owner and date. What happens after the
+decision (follow-up ticket, next milestone, requirement IDs).

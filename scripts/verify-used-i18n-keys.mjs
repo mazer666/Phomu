@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Prüft für einen Satz TSX-Dateien, ob jeder `t('…')`-Schlüssel in BEIDEN
- * Sprachdateien (src/i18n/locales/{de,en}.json, inkl. parts/) existiert.
+ * Checks for a set of TSX files whether every `t('…')` key exists in BOTH
+ * locale files (src/i18n/locales/{de,en}.json, including parts/).
  *
- * Aufruf:
- *   node scripts/verify-used-i18n-keys.mjs <datei> [<datei> …]
+ * Usage:
+ *   node scripts/verify-used-i18n-keys.mjs <file> [<file> …]
  */
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -30,8 +30,8 @@ function loadLocale(lang) {
   const merged = flatten(
     JSON.parse(readFileSync(join(LOCALES, `${lang}.json`), 'utf8'))
   );
-  // `parts/` ist ein Zwischenstand der Migration. Im Endzustand gibt es
-  // eine Datei je Sprache — die Schleife ist dann ein No-op.
+  // `parts/` is an intermediate state of the migration. In the final state
+  // there is one file per language — the loop is then a no-op.
   if (!existsSync(PARTS)) return merged;
   for (const file of readdirSync(PARTS)) {
     if (!file.endsWith(`.${lang}.json`)) continue;
@@ -47,9 +47,8 @@ const de = loadLocale('de');
 const en = loadLocale('en');
 
 /**
- * Ein Schlüssel gilt als vorhanden, wenn er direkt existiert oder als
- * Pluralform (`key_one` + `key_other`) angelegt ist — so wie i18next
- * zur Laufzeit auflöst.
+ * A key counts as present if it exists directly or is created as a plural
+ * form (`key_one` + `key_other`) — the way i18next resolves it at runtime.
  */
 function resolves(map, key) {
   if (key in map) return true;
@@ -67,15 +66,13 @@ for (const file of files) {
   used += unique.length;
   const problems = unique.filter((k) => !resolves(de, k) || !resolves(en, k));
   missing += problems.length;
-  console.log(
-    `${file}: ${unique.length} Schlüssel, ${problems.length} fehlend`
-  );
+  console.log(`${file}: ${unique.length} keys, ${problems.length} missing`);
   for (const p of problems) {
     console.log(
-      `    FEHLT: ${p} (de: ${resolves(de, p) ? 'ja' : 'nein'}, en: ${resolves(en, p) ? 'ja' : 'nein'})`
+      `    MISSING: ${p} (de: ${resolves(de, p) ? 'yes' : 'no'}, en: ${resolves(en, p) ? 'yes' : 'no'})`
     );
   }
 }
 
-console.log(`\nSumme genutzte Schlüssel: ${used}, fehlend: ${missing}`);
+console.log(`\nTotal keys used: ${used}, missing: ${missing}`);
 process.exit(missing > 0 ? 1 : 0);

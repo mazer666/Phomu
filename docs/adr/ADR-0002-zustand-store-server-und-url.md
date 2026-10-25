@@ -1,209 +1,202 @@
 # ADR-0002 — Zustand: Store vs. Server vs. URL
 
 **Status:** Accepted
-**Datum:** 2026-10-25
-**Owner-Rolle:** Chief Architect
-**Bezugene Anforderungs-IDs:** LOBBY-001 (Sitzung), GAME-002 (Punkte), NFR-002 (Persistenz)
+**Date:** 2026-10-25
+**Owner role:** Chief Architect
+**Related requirement IDs:** LOBBY-001 (session), GAME-002 (points), NFR-002 (persistence)
 
 ---
 
-## Kontext
+## Context
 
-Phomu ist ein Hybrid: physische QR-Karten und eine Web-App. Daraus folgt eine
-Grundspannung, die sich in drei Fragen zeigt.
+Phomu is a hybrid: physical QR cards and a web app. This creates a basic
+tension that shows up in three questions.
 
-**Frage 1 — Wo liegt der Spielzustand?** Eine Partysitzung umfasst Spieler,
-Teams, Config, Runde, Phase, Punkte, Antworten und XP. Heute liegt sie in
-`src/stores/game-store.ts` (Zustand, 640 Zeilen) mit `persist`-Middleware und
-localStorage-Key `'phomu-game-state'` (`src/stores/game-store.ts:619`).
+**Question 1 — Where does the game state live?** A party session comprises
+players, teams, config, round, phase, points, answers and XP. Today it lives in
+`src/stores/game-store.ts` (Zustand, 640 lines) with `persist` middleware and
+the localStorage key `'phomu-game-state'` (`src/stores/game-store.ts:619`).
 
-**Frage 2 — Wo liegt der Zustand *außerhalb* des Browsers?** Der Beamer-Tab
-(`/projector`) soll denselben Punktestand zeigen wie das Smartphone. Heute
-realisiert über einen **Polling-Trick**: der Beamer liest denselben
-localStorage-Eintrag, aber nur, weil beide Tabs auf demselben Gerät laufen
-(`src/app/projector/page.tsx:41-44` pollt alle 2 s, weil localStorage-Events
-zwar innerhalb einer Origin feuern, aber die Zustände asynchron
-zusammenlaufen). Ein zweites Gerät im selben WLAN bekommt **nichts**.
-`src/types/game-state.ts:5-7` nennt als Plan „in multi-device mode it syncs via
-Supabase Realtime", und `DeviceMode` in `src/types/game-state.ts:23-26` kennt
-`'multi-device'` mit „Each player uses their own device (via session code)".
-Der Plan existiert, der Code nicht.
+**Question 2 — Where does the state live *outside* the browser?** The projector
+tab (`/projector`) should show the same score as the phone. Today this is
+realised through a **polling trick**: the projector reads the same localStorage
+entry, but only because both tabs run on the same device
+(`src/app/projector/page.tsx:41-44` polls every 2 s, because localStorage
+events do fire within one origin, but the states converge asynchronously). A
+second device on the same Wi-Fi gets **nothing**.
+`src/types/game-state.ts:5-7` names as a plan "in multi-device mode it syncs via
+Supabase Realtime", and `DeviceMode` in `src/types/game-state.ts:23-26` knows
+`'multi-device'` with "Each player uses their own device (via session code)".
+The plan exists, the code does not.
 
-**Frage 3 — Was gehört in die URL?** `src/utils/qr-intent.ts` parst eine
-QR-Deep-Link-URL mit den Parametern `session`, `pack` und `id`
-(`src/utils/qr-intent.ts:28-38`) — der QR-Code trägt also eine **URL**, und die
-URL trägt den **Spielkontext**. Parallel nutzt `src/components/game/QRScannerModal.tsx`
-den Kamera-Scanner. Der Session-Code ist also bereits ein Adressierkonzept,
-aber noch kein URL-Zustand.
+**Question 3 — What belongs in the URL?** `src/utils/qr-intent.ts` parses a
+QR deep link URL with the parameters `session`, `pack` and `id`
+(`src/utils/qr-intent.ts:28-38`) — the QR code therefore carries a **URL**, and
+the URL carries the **game context**. In parallel
+`src/components/game/QRScannerModal.tsx` uses the camera scanner. The session
+code is therefore already an addressing concept, but not yet URL state.
 
-Zusätzlich existieren **zwei weitere** localStorage-Wahrheiten neben dem Store:
-`'phomu-admin-songs'` (`src/app/admin/songs/page.tsx:33` **und**
-`src/app/browse/page.tsx:14` — derselbe Key an zwei Orten) und
-`'phomu-review-edits'` (`src/app/admin/review/page.tsx:28`). Beide liegen
-**außerhalb** des Stores und sind damit ein zweiter, nicht kontrollierter
-Zustandspfad.
+In addition there are **two more** localStorage truths next to the store:
+`'phomu-admin-songs'` (`src/app/admin/songs/page.tsx:33` **and**
+`src/app/browse/page.tsx:14` — the same key in two places) and
+`'phomu-review-edits'` (`src/app/admin/review/page.tsx:28`). Both lie
+**outside** the store and are therefore a second, uncontrolled state path.
 
-Und noch eine Beobachtung zum Persistenz-Umfang: `partialize`
-(`src/stores/game-store.ts:621-637`) speichert `players`, `teams`, `config`,
+And one more observation about the persistence scope: `partialize`
+(`src/stores/game-store.ts:621-637`) stores `players`, `teams`, `config`,
 `sessionId`, `totalXP`, `preferredPlayer`, `preferredMusicProvider`,
 `musicEnabled`, `musicVolume`, `sfxEnabled`, `sfxVolume`, `currentRound`,
-`isGameOver`, `timelineYears`, `gameStartTime`. **Nicht** gespeichert werden
+`isGameOver`, `timelineYears`, `gameStartTime`. **Not** stored are
 `currentSong`, `currentAnswers`, `roundPhase`, `roundHistory`, `currentMode`,
-`playedSongIds`, `winnerId`. Ein Reload mitten in der Runde setzt die Sitzung
-also auf `drawing` ohne Song zurück.
+`playedSongIds`, `winnerId`. A reload in the middle of a round therefore resets
+the session to `drawing` without a song.
 
 ---
 
-## Entscheidung
+## Decision
 
-### 1. Der Store ist die einzige Wahrheit des Spielzustands
+### 1. The store is the only truth of the game state
 
-`src/stores/game-store.ts` ist der **einzige** Ort, an dem Spielzustand
-geschrieben wird. Komponenten lesen über `useGameStore()`, schreiben aber nur
-über die Actions des Stores (`drawSong`, `submitAnswer`, `awardPoints`,
-`advancePhase`, `nextRound`, `endGame`, …). Keine Komponente baut Zustand
-selbst.
+`src/stores/game-store.ts` is the **only** place where game state is written.
+Components read via `useGameStore()`, but write only via the actions of the
+store (`drawSong`, `submitAnswer`, `awardPoints`, `advancePhase`, `nextRound`,
+`endGame`, …). No component builds state itself.
 
-**Konsequenz:** Auch der Admin-Bereich wird in diese Regel überführt. Die
-beiden localStorage-Wahrheiten (`'phomu-admin-songs'`, `'phomu-review-edits'`)
-werden entweder in **eigene, benannte Stores** (`useAdminSongStore`,
-`useReviewStore`) überführt oder als bewusste Ausnahme dokumentiert — mit
-**einem** Ort für den Key, nicht zwei.
+**Consequence:** The admin area is also brought under this rule. The two
+localStorage truths (`'phomu-admin-songs'`, `'phomu-review-edits'`) are either
+moved into **their own, named stores** (`useAdminSongStore`, `useReviewStore`)
+or documented as a deliberate exception — with **one** place for the key, not
+two.
 
-### 2. Persistenz: getrennte Slices mit dokumentierter Zweckbestimmung
+### 2. Persistence: separate slices with a documented purpose
 
-`persist.partialize` wird in drei benannte Gruppen aufgeteilt:
+`persist.partialize` is split into three named groups:
 
-| Gruppe | Inhalt | Persistiert | Begründung |
+| Group | Content | Persisted | Rationale |
 |---|---|---|---|
-| `session` | `sessionId`, `players`, `teams`, `config`, `currentRound`, `isGameOver` | ja | Reload darf die Lobby-Konfiguration nicht verlieren (`src/stores/game-store.ts:5-7`) |
-| `progression` | `totalXP`, `preferredPlayer`, `preferredMusicProvider` | ja | Geräteübergreifende Fortschrittsdaten |
-| `preferences` | `musicEnabled`, `musicVolume`, `sfxEnabled`, `sfxVolume` | ja | Geräteeinstellungen |
-| `round` | `currentSong`, `currentAnswers`, `roundPhase`, `currentMode`, `playedSongIds`, `roundHistory` | **nein** | Ein persistierter Song + ein persistierter Reveal-Zustand ist ein Spoiler-Vektor (siehe ADR-0003) |
+| `session` | `sessionId`, `players`, `teams`, `config`, `currentRound`, `isGameOver` | yes | A reload must not lose the lobby configuration (`src/stores/game-store.ts:5-7`) |
+| `progression` | `totalXP`, `preferredPlayer`, `preferredMusicProvider` | yes | Progress data across devices |
+| `preferences` | `musicEnabled`, `musicVolume`, `sfxEnabled`, `sfxVolume` | yes | Device settings |
+| `round` | `currentSong`, `currentAnswers`, `roundPhase`, `currentMode`, `playedSongIds`, `roundHistory` | **no** | A persisted song + a persisted reveal state is a spoiler vector (see ADR-0003) |
 
-Diese Trennung ist **keine** neue Entscheidung, sondern eine explizite
-Festlegung des heute schon vorhandenen Verhaltens.
+This separation is **not** a new decision, but an explicit fixation of the
+behaviour that already exists today.
 
-### 3. Server: derzeit keiner — und das ist eine Entscheidung, kein Versehen
+### 3. Server: none today — and that is a decision, not an oversight
 
-Phomu wird mit `output: 'export'` gebaut (`next.config.ts:4`). Es gibt
-**keine** Server-Route: `find src/app -name "route.ts"` liefert **0** Treffer.
-Der Spielablauf läuft zu 100 % im Client.
+Phomu is built with `output: 'export'` (`next.config.ts:4`). There is **no**
+server route: `find src/app -name "route.ts"` yields **0** hits. The game flow
+runs 100 % in the client.
 
-**Entscheidung:** Der Spielzustand bleibt clientseitig. Ein Server kommt
-**nicht** in dieser Runde. Vorbehalt: Ein Server ist **zwingend**, sobald eines
-der folgenden gilt:
+**Decision:** The game state stays client-side. A server does **not** come in
+this round. Caveat: A server is **mandatory** as soon as one of the following
+holds:
 
-1. `DeviceMode 'multi-device'` wird ausgeliefert (d. h. echter Session-Code
-   über Gerätegrenzen hinweg).
-2. Punktestände sollen zwischen Geräten synchronisiert werden.
-3. Der Admin-API wird tatsächlich erreichbar (heute hat er 0 Konsumenten und
-   keine Route, siehe ADR-0001 §3.3 A4).
+1. `DeviceMode 'multi-device'` is shipped (i.e. a real session code across
+   device boundaries).
+2. Scores are to be synchronised between devices.
+3. The admin API actually becomes reachable (today it has 0 consumers and no
+   route, see ADR-0001 §3.3 A4).
 
-Bis dahin wird `sessionId` in `src/types/game-state.ts:143` als „used for
-multi-device sync" dokumentiert, aber **nicht** befüllt mit Multi-Device-
-Semantik.
+Until then `sessionId` is documented in `src/types/game-state.ts:143` as "used for
+multi-device sync", but **not** filled with multi-device semantics.
 
-### 4. URL: nur der **Einstiegskontext**, nie der Spielzustand
+### 4. URL: only the **entry context**, never the game state
 
-Die URL darf tragen, was **vor** der Sitzung entschieden wird:
+The URL may carry what is decided **before** the session:
 
-| In der URL | Zweck | heute |
+| In the URL | Purpose | today |
 |---|---|---|
-| `?session=<code>` | Session-Code (QR-Deep-Link) | `src/utils/qr-intent.ts:28` |
-| `?pack=<id>` | Pack-Vorauswahl | `src/utils/qr-intent.ts:33` |
-| `?id=<songId>` | Direktstart eines Songs (Quick Play) | `src/utils/qr-intent.ts:38` |
+| `?session=<code>` | Session code (QR deep link) | `src/utils/qr-intent.ts:28` |
+| `?pack=<id>` | Pack pre-selection | `src/utils/qr-intent.ts:33` |
+| `?id=<songId>` | Direct start of a song (Quick Play) | `src/utils/qr-intent.ts:38` |
 
-Die URL darf **nicht** tragen: Punkte, Phase, Antworten, Spielerlisten. Grund:
-Die URL ist teilbar, landet im Verlauf und in Logs. Ein Punktestand in der URL
-ist ein Cheat-Vektor und bricht das Anti-Spoiler-Versprechen (ADR-0003).
+The URL may **not** carry: points, phase, answers, player lists. Reason:
+The URL is shareable, ends up in the history and in logs. A score in the URL is
+a cheat vector and breaks the anti-spoiler promise (ADR-0003).
 
-**Entscheidung:** Beim Betreten einer Seite mit diesen Parametern wird der
-Parameter **einmal** in den Store überführt (`setConfig` bzw.
-`startQuickGame`) und danach **aus der URL entfernt** (History-Replace), damit
-ein Reload nicht erneut anwendet.
+**Decision:** When a page is entered with these parameters, the parameter is
+transferred into the store **once** (`setConfig` respectively `startQuickGame`)
+and afterwards **removed from the URL** (history replace), so that a reload does
+not apply it again.
 
-### 5. Session- und Admin-Zustand erhalten **je einen** Storage-Key
+### 5. Session and admin state each get **one** storage key
 
-Jeder persistierte Zustand hat genau einen Schlüssel, definiert an genau einer
-Stelle. Für die heute existierenden Keys heißt das: `'phomu-admin-songs'` wird
-an einer Stelle definiert und von beiden Nutzern (`/browse` und `/admin/songs`)
-importiert.
+Every persisted state has exactly one key, defined in exactly one place. For
+the keys that exist today this means: `'phomu-admin-songs'` is defined in one
+place and imported by both users (`/browse` and `/admin/songs`).
 
 ---
 
-## Konsequenzen
+## Consequences
 
-### Positiv
+### Positive
 
-- Es gibt genau eine Antwort auf „wo ist der Spielzustand?":
-  `useGameStore`. Kein Kontext, kein `localStorage`, kein URL-Parameter.
-- Die Anti-Spoiler-Zusage wird persistenztechnisch abgesichert: `currentSong`
-  und `currentAnswers` werden **nicht** persistiert, ein Reload startet die
-  Runde neu statt die Lösung preiszugeben.
-- Der lokale Betrieb bleibt vollständig offline und ohne Backend — passend zu
-  `output: 'export'` und zum Party-Szenario (Funkloch im Garten).
-- Die Multi-Device-Frage wird nicht mit einer halben Implementierung
-  beantwortet, sondern sauber als Decision-Record festgehalten: sie ist
-  **Server + Realtime**, und der Server kommt mit einer eigenen ADR.
+- There is exactly one answer to "where is the game state?":
+  `useGameStore`. No context, no `localStorage`, no URL parameter.
+- The anti-spoiler promise is backed up at the persistence level: `currentSong`
+  and `currentAnswers` are **not** persisted, a reload starts the round anew
+  instead of giving away the solution.
+- Local operation stays completely offline and without a backend — matching
+  `output: 'export'` and the party scenario (dead spot in the garden).
+- The multi-device question is not answered with a half implementation, but
+  cleanly recorded as a decision record: it is **server + realtime**, and the
+  server comes with its own ADR.
 
 ### Negative / Trade-offs
 
-- **Kein Cross-Device-Sync.** Zwei Geräte im selben Raum sind zwei
-  unabhängige Sitzungen. Der `/projector`-Modus funktioniert nur bei
-  Beamer und Handy **auf demselben Gerät** (oder derselben Origin mit
-  geteiltem localStorage). Das ist eine bewusste Einschränkung, die im
-  Produkt sichtbar kommuniziert werden muss.
-- **Ein Datenverlust beim Reload in der Runde.** Punkte der laufenden Runde und
-  der Fortschritt der Runden-Historie gehen verloren; `currentRound` bleibt
-  erhalten. Für ein Partyspiel im WLAN ist das vertretbar, für eine
-  Turnier-Szene nicht.
-- **Die Admin-Wahrheiten wandern.** Zwei localStorage-Zustände müssen in
-  Stores überführt werden — Aufwand ohne Nutzen für das Spiel, aber nötig für
-  die Eindeutigkeit der Zustandshalter.
-- **Die URL-Bereinigung** braucht einen Router-Aufruf (`router.replace`) und
-  muss mit der Hydration-Race Condition von Next.js 16 abgewogen werden.
+- **No cross-device sync.** Two devices in the same room are two independent
+  sessions. The `/projector` mode only works with projector and phone **on the
+  same device** (or the same origin with shared localStorage). This is a
+  deliberate limitation that has to be communicated visibly in the product.
+- **Data loss on reload during a round.** The points of the running round and
+  the progress of the round history are lost; `currentRound` is retained. For a
+  party game on Wi-Fi this is acceptable, for a tournament scenario it is not.
+- **The admin truths move.** Two localStorage states have to be moved into
+  stores — effort without benefit for the game, but necessary for the
+  uniqueness of the state holders.
+- **The URL cleanup** needs a router call (`router.replace`) and has to be
+  weighed against the hydration race condition of Next.js 16.
 
-### Was die Entscheidung unmöglich macht
+### What the decision makes impossible
 
-- Der Spielzustand kann nicht ohne Server repliziert werden.
-- Ein Punktestand kann nicht in einer URL stehen.
-- Ein laufender Song kann keinen Reload überleben.
-- `DeviceMode 'multi-device'` ist bis zur Server-ADR nicht implementierbar.
+- The game state cannot be replicated without a server.
+- A score cannot stand in a URL.
+- A running song cannot survive a reload.
+- `DeviceMode 'multi-device'` is not implementable before the server ADR.
 
 ---
 
-## Alternativen (verworfen)
+## Rejected alternatives
 
-- **Alles in localStorage ohne Store.** *Verworfen:* Der Store existiert bereits,
-  bietet `partialize`, typisierte Actions und eine einzige Schreibstelle.
-  localStorage-Felder über Komponenten zu verteilen verletzt die
-  Store-Regel und erzeugt die heutige Doppelschreibung von
-  `'phomu-admin-songs'`.
-- **Alles in der URL (Shareable State).** *Verworfen:* Punkte und Phase in der
-  URL sind ein Spoiler- und Cheat-Vektor; die URL wird in Verlauf und
-  geteilt und ist zu lang für Punktestände.
-- **Session-Zustand auf dem Server ab jetzt (Supabase Realtime).** *Verworfen
-  für diese Runde:* `output: 'export'` schließt Server-Routen aus, ein
-  Realtime-Kanal bräuchte Keys und Betrieb, und die Spielsitzung ist
-  netzwerkfehleranfällig — bei einer Party im WLAN ist ein lokaler Zustand
-  robuster. Der Plan in `src/types/game-state.ts:5-7` bleibt als Folgestep.
-- **Persistenz von `currentSong` und `currentAnswers`.** *Verworfen:* Ein
-  persistierter Reveal-Zustand macht die Anti-Spoiler-Grenze von der
-  Disziplin der Nutzer abhängig (siehe ADR-0003).
-- **Zustand pro Bildschirm (Page-Local-State).** *Verworfen:* `players`,
-  `teams` und `config` werden in `src/app/lobby/page.tsx:61-65`, in
-  `src/app/game/page.tsx:47-71` und in `src/app/projector/page.tsx:26-34`
-  gebraucht — drei Seiten brauchen denselben Zustand.
+- **Everything in localStorage without a store.** *Rejected:* The store already
+  exists, offers `partialize`, typed actions and a single write location.
+  Distributing localStorage fields across components violates the store rule
+  and creates the current double write of `'phomu-admin-songs'`.
+- **Everything in the URL (shareable state).** *Rejected:* Points and phase in
+  the URL are a spoiler and cheat vector; the URL ends up in the history and in
+  shared links, and it is too long for scores.
+- **Session state on the server right now (Supabase Realtime).** *Rejected for
+  this round:* `output: 'export'` excludes server routes, a realtime channel
+  would need keys and operation, and the game session is prone to network
+  errors — at a party on Wi-Fi a local state is more robust. The plan in
+  `src/types/game-state.ts:5-7` remains as a follow-up step.
+- **Persisting `currentSong` and `currentAnswers`.** *Rejected:* A persisted
+  reveal state makes the anti-spoiler boundary depend on the discipline of the
+  users (see ADR-0003).
+- **State per screen (page-local state).** *Rejected:* `players`, `teams` and
+  `config` are needed in `src/app/lobby/page.tsx:61-65`, in
+  `src/app/game/page.tsx:47-71` and in `src/app/projector/page.tsx:26-34` —
+  three pages need the same state.
 
 ---
 
-## Verifikation
+## Verification
 
-| Prüfung | Kommando / Ort |
+| Check | Command / Location |
 |---|---|
-| Store ist einzige Schreibstelle | `grep -rn "useGameStore(" src/components src/app` → nur Lesezugriffe und Action-Aufrufe, keine `setState`-Umgehung |
-| Persistenzumfang | `src/stores/game-store.ts:621-637` — `partialize` enthält **kein** `currentSong`, `currentAnswers`, `roundPhase` |
-| Kein Zustand in der URL | `grep -rn "useSearchParams\|searchParams" src/app` → keine Punkte/Phase-Parameter |
-| Storage-Keys eindeutig | `grep -rn "localStorage.getItem\|localStorage.setItem" src` → je Schlüssel genau eine Definitionsstelle |
-| Store-Schichtregel | ADR-0001 §2.2 — `components → stores` ist erlaubt, `data → stores` ist es nicht |
+| The store is the only write location | `grep -rn "useGameStore(" src/components src/app` → only read accesses and action calls, no `setState` bypass |
+| Persistence scope | `src/stores/game-store.ts:621-637` — `partialize` contains **no** `currentSong`, `currentAnswers`, `roundPhase` |
+| No state in the URL | `grep -rn "useSearchParams\|searchParams" src/app` → no points/phase parameters |
+| Storage keys unique | `grep -rn "localStorage.getItem\|localStorage.setItem" src` → exactly one definition place per key |
+| Store layer rule | ADR-0001 §2.2 — `components → stores` is allowed, `data → stores` is not |

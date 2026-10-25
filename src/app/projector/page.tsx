@@ -1,15 +1,15 @@
 /**
- * Projector Mode — /projector
+ * Projector mode — /projector
  *
- * Spoilerfreie Beamer-Ansicht für große Screens.
- * Zeigt: aktuellen Modus, Spieler-Scoreboard, aktiven Spieler, Timer.
- * Kein Artist, kein Titel, kein Album-Art — nichts das die Frage verrät.
+ * Spoiler-free projector view for large screens.
+ * Shows: current mode, player scoreboard, active player, timer.
+ * No artist, no title, no album art — nothing that gives the question away.
  *
- * Öffne diesen Tab auf dem Beamer während das Spiel auf dem Handy läuft.
- * Beide lesen aus demselben Zustand (localStorage via Zustand persist).
+ * Open this tab on the projector while the game runs on the phone.
+ * Both read from the same state (localStorage via Zustand persist).
  *
- * Alle sichtbaren Texte kommen aus
- * `src/i18n/locales/parts/projector.{de,en}.json` und `modes.{de,en}.json`.
+ * All visible texts come from
+ * `src/i18n/locales/parts/projector.{de,en}.json` and `modes.{de,en}.json`.
  */
 'use client';
 
@@ -19,7 +19,7 @@ import { useTranslation } from 'react-i18next';
 import type { TFunction } from 'i18next';
 import { useGameStore } from '@/stores/game-store';
 
-/** Emoji und Farbe je Modus — reines Design, kein Text. */
+/** Emoji and colour per mode — pure design, no text. */
 const MODE_META: Record<string, { emoji: string; color: string }> = {
   timeline: { emoji: '📅', color: '#22d3ee' },
   'hint-master': { emoji: '🕵️', color: '#c4b5fd' },
@@ -31,7 +31,7 @@ const MODE_META: Record<string, { emoji: string; color: string }> = {
 
 const FALLBACK_META = { emoji: '🎵', color: '#fff' };
 
-/** Name und Kurzbeschreibung des aktiven Modus (statisch, spoiler-frei). */
+/** Name and short description of the active mode (static, spoiler-free). */
 function getModeTexts(
   mode: string,
   t: TFunction
@@ -72,7 +72,7 @@ function getModeTexts(
   }
 }
 
-/** Beschriftung der aktuellen Rundephase. */
+/** Label of the current round phase. */
 function getPhaseLabel(phase: string, t: TFunction): string {
   switch (phase) {
     case 'drawing':
@@ -107,13 +107,13 @@ export default function ProjectorPage() {
 
   const [tick, setTick] = useState(0);
 
-  // Zahlenformat der aktiven Sprache
+  // Number format of the active locale
   const numberFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language),
     [i18n.language]
   );
 
-  // Alle 2 Sekunden neu rendern, damit Punkte-Änderungen vom Handy ankommen
+  // Re-render every 2 seconds so that score changes from the phone arrive
   useEffect(() => {
     const interval = setInterval(() => setTick((t) => t + 1), 2000);
     return () => clearInterval(interval);
@@ -159,7 +159,7 @@ export default function ProjectorPage() {
           </span>
         </div>
 
-        {/* Modus-Badge */}
+        {/* Mode badge */}
         <AnimatePresence mode="wait">
           <motion.div
             key={currentMode}
@@ -187,7 +187,7 @@ export default function ProjectorPage() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Runde + Phase */}
+        {/* Round + phase */}
         <div className="text-right">
           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
             {t('projector.roundLabel')}
@@ -302,9 +302,9 @@ export default function ProjectorPage() {
         {/* Divider */}
         <div className="w-px bg-white/5 my-8" />
 
-        {/* Right Panel: Aktiver Spieler + Spoiler-freie Modus-Info */}
+        {/* Right panel: active player + spoiler-free mode info */}
         <section className="w-80 px-8 py-10 flex flex-col gap-8">
-          {/* Aktiver Spieler / Pionier */}
+          {/* Active player / pioneer */}
           <div>
             <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 mb-3">
               {t('projector.currentPioneer')}
@@ -338,7 +338,7 @@ export default function ProjectorPage() {
             )}
           </div>
 
-          {/* Spoiler-freier Platzhalter während Frage */}
+          {/* Spoiler-free placeholder during the question */}
           {roundPhase === 'question' && (
             <div
               className="flex-1 flex flex-col items-center justify-center rounded-3xl border p-8 text-center gap-4"
@@ -390,7 +390,7 @@ export default function ProjectorPage() {
             </div>
           )}
 
-          {/* Win-Condition Progress */}
+          {/* Win-condition progress */}
           {config.endingCondition === 'points' && (
             <div>
               <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 mb-2">
@@ -402,7 +402,7 @@ export default function ProjectorPage() {
                   {t('projector.points')}
                 </span>
               </p>
-              {/* Fortschrittsbalken: Führender Spieler */}
+              {/* Progress bar: leading player */}
               {sortedPlayers[0] && (
                 <div className="mt-2 h-2 bg-white/10 rounded-full overflow-hidden">
                   <motion.div

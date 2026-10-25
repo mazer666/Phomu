@@ -1,38 +1,38 @@
 /**
- * Song-Daten Validierung
+ * Song data validation
  *
- * Prüft alle Songs in einem Pack auf Vollständigkeit und Korrektheit.
- * Wird als npm-Script ausgeführt: npm run validate-songs
+ * Checks all songs in a pack for completeness and correctness.
+ * Run as an npm script: npm run validate-songs
  *
- * Fehler (errors)   → Song ist ungültig, das Spiel kann abstürzen
- * Warnungen (warns) → Song ist unvollständig, aber spielbar (z.B. lyrics=null)
+ * Errors (errors)    → the song is invalid, the game can crash
+ * Warnings (warns)  → the song is incomplete but playable (e.g. lyrics=null)
  */
 
 import type { PhomuSong } from '@/types/song';
 import { MIN_SONG_YEAR, MAX_SONG_YEAR_OFFSET } from '@/config/song-year-range';
 import { collectSongLimitViolations } from '@/utils/validate-song-limits';
 
-// ─── Typen ────────────────────────────────────────────────────────────────────
+// ─── Types ────────────────────────────────────────────────────────────────────
 
-/** Ein einzelner Validierungsfund (Fehler oder Warnung) */
+/** A single validation finding (error or warning) */
 interface ValidationIssue {
   songId: string;
   field: string;
   message: string;
 }
 
-/** Ergebnis der Validierung eines einzelnen Songs */
+/** The validation result of a single song */
 interface SongValidationResult {
   songId: string;
   title: string;
   artist: string;
-  isValid: boolean; // false = mindestens ein Fehler
-  isComplete: boolean; // false = mindestens eine Warnung (z.B. lyrics fehlen)
+  isValid: boolean; // false = at least one error
+  isComplete: boolean; // false = at least one warning (e.g. lyrics missing)
   errors: ValidationIssue[];
   warnings: ValidationIssue[];
 }
 
-/** Gesamtergebnis für alle Songs */
+/** Overall result for all songs */
 export interface PackValidationResult {
   pack: string;
   totalSongs: number;
@@ -43,30 +43,30 @@ export interface PackValidationResult {
   allWarnings: ValidationIssue[];
 }
 
-// ─── Hilfsfunktionen ─────────────────────────────────────────────────────────
+// ─── Helper functions ─────────────────────────────────────────────────────────
 
-/** Erstellt ein Fehler-Objekt */
+/** Creates an error object */
 function err(songId: string, field: string, message: string): ValidationIssue {
   return { songId, field, message };
 }
 
-/** Erstellt ein Warn-Objekt */
+/** Creates a warning object */
 function warn(songId: string, field: string, message: string): ValidationIssue {
   return { songId, field, message };
 }
 
-/** Prüft ob ein YouTube-Wert ein Platzhalter ist, der noch verifiziert werden muss */
+/** Checks whether a YouTube value is a placeholder that still needs verification */
 function isYoutubePlaceholder(value: string): boolean {
   return value.startsWith('TODO:') || value === '' || value === 'PLACEHOLDER';
 }
 
-/** Prüft ob ein String eine gültige YouTube-Video-ID hat (11 Zeichen) */
+/** Checks whether a string is a valid YouTube video ID (11 characters) */
 function isYoutubeVideoId(value: string): boolean {
-  // YouTube IDs sind genau 11 Zeichen, alphanumerisch + Bindestrich + Unterstrich
+  // YouTube IDs are exactly 11 characters, alphanumeric + hyphen + underscore
   return /^[a-zA-Z0-9_-]{11}$/.test(value);
 }
 
-/** Prüft ob ein String eine gültige YouTube-URL ist */
+/** Checks whether a string is a valid YouTube URL */
 function isYoutubeUrl(value: string): boolean {
   return value.includes('youtube.com/watch?v=') || value.includes('youtu.be/');
 }
@@ -81,16 +81,16 @@ function normalizeForComparison(value: string): string {
     .trim();
 }
 
-// ─── Haupt-Validierungslogik ──────────────────────────────────────────────────
+// ─── Main validation logic ──────────────────────────────────────────────────
 
 /**
- * Validiert einen einzelnen Song.
+ * Validates a single song.
  *
- * Gibt Fehler zurück wenn Pflichtfelder fehlen oder falsch sind.
- * Gibt Warnungen zurück wenn optionale Felder noch nicht ausgefüllt sind.
+ * Returns errors when required fields are missing or wrong.
+ * Returns warnings when optional fields are not filled in yet.
  */
 export function validateSong(song: unknown): SongValidationResult {
-  // Wir akzeptieren 'unknown', damit das Script auch JSON mit null-lyrics verarbeiten kann
+  // We accept 'unknown' so that the script can also process JSON with null lyrics
   const s = song as Record<string, unknown>;
 
   const songId = typeof s['id'] === 'string' ? s['id'] : '(unbekannte ID)';
@@ -101,15 +101,15 @@ export function validateSong(song: unknown): SongValidationResult {
   const errors: ValidationIssue[] = [];
   const warnings: ValidationIssue[] = [];
 
-  // ── Harte Grenzwerte (Längen, Mengen, unbekannte Modi) ─────────────────────
-  // Eine Verletzung ist ein Fehler, keine Warnung: der Katalog wird dadurch
-  // nicht "fail open" akzeptiert. Die Grenzwerte stehen in
+  // ── Hard limits (lengths, counts, unknown modes) ─────────────────────
+  // A violation is an error, not a warning: the catalog is thereby not
+  // accepted "fail open". The limits are defined in
   // src/utils/validate-song-limits.ts.
   for (const violation of collectSongLimitViolations(s)) {
     errors.push(err(songId, violation.field, violation.message));
   }
 
-  // ── Pflichtfelder (Fehler wenn fehlen) ──────────────────────────────────────
+  // ── Required fields (error when missing) ──────────────────────────────────────
 
   if (!s['id'] || typeof s['id'] !== 'string') {
     errors.push(
@@ -141,9 +141,9 @@ export function validateSong(song: unknown): SongValidationResult {
     );
   }
 
-  // year: muss eine Zahl zwischen MIN_SONG_YEAR und aktuellem Jahr + 1 sein.
-  // Die Untergrenze liegt bewusst unter 1900, weil der Katalog auch klassische
-  // Werke enthält (Vivaldi, Bach, Mozart ...). Siehe config/song-year-range.ts.
+  // year: must be a number between MIN_SONG_YEAR and the current year + 1.
+  // The lower bound is deliberately below 1900, because the catalog also contains classical
+  // works (Vivaldi, Bach, Mozart ...). See config/song-year-range.ts.
   if (typeof s['year'] !== 'number') {
     errors.push(
       err(songId, 'year', 'Pflichtfeld fehlt: year muss eine Zahl sein')
@@ -172,7 +172,7 @@ export function validateSong(song: unknown): SongValidationResult {
     }
   }
 
-  // country: ISO-Code, 2 Großbuchstaben
+  // country: ISO code, 2 upper-case letters
   if (!s['country'] || typeof s['country'] !== 'string') {
     errors.push(
       err(
@@ -201,7 +201,7 @@ export function validateSong(song: unknown): SongValidationResult {
     );
   }
 
-  // difficulty: muss 'easy', 'medium' oder 'hard' sein
+  // difficulty: must be 'easy', 'medium' or 'hard'
   const validDifficulties = ['easy', 'medium', 'hard'];
   if (
     !s['difficulty'] ||
@@ -216,7 +216,7 @@ export function validateSong(song: unknown): SongValidationResult {
     );
   }
 
-  // mood: Array mit mindestens einem Eintrag
+  // mood: array with at least one entry
   if (!Array.isArray(s['mood'])) {
     errors.push(
       err(
@@ -235,7 +235,7 @@ export function validateSong(song: unknown): SongValidationResult {
     );
   }
 
-  // packs: Array mit mindestens einem Eintrag
+  // packs: array with at least one entry
   if (!Array.isArray(s['packs'])) {
     errors.push(
       err(
@@ -254,7 +254,7 @@ export function validateSong(song: unknown): SongValidationResult {
     );
   }
 
-  // hints: muss ein Array mit genau 5 Strings sein
+  // hints: must be an array with exactly 5 strings
   if (!Array.isArray(s['hints'])) {
     errors.push(
       err(
@@ -285,7 +285,7 @@ export function validateSong(song: unknown): SongValidationResult {
           err(songId, `hints[${i}]`, `Hint ${i + 1} ist kein String`)
         );
       } else if ((h as string).trim() === '') {
-        // Leere Hints sind bei Stub-Songs akzeptiert – Warnung, kein Fehler
+        // Empty hints are accepted for stub songs – warning, not error
         warnings.push(
           warn(
             songId,
@@ -296,7 +296,7 @@ export function validateSong(song: unknown): SongValidationResult {
       }
     });
 
-    // Hint-Qualität: keine offensichtlichen Spoiler (Titel/Artist Tokens)
+    // Hint quality: no obvious spoilers (title/artist tokens)
     const normalizedTitle = normalizeForComparison(title);
     const normalizedArtist = normalizeForComparison(artist);
     const spoilerTokens = new Set([
@@ -320,7 +320,7 @@ export function validateSong(song: unknown): SongValidationResult {
       }
     });
 
-    // Prüfbarkeit: wenn hintEvidence vorhanden, muss es 5 Quellen geben
+    // Verifiability: if hintEvidence is present there must be 5 sources
     if (Array.isArray(s['hintEvidence'])) {
       const evidence = s['hintEvidence'] as unknown[];
       if (evidence.length !== 5) {
@@ -354,7 +354,7 @@ export function validateSong(song: unknown): SongValidationResult {
     }
   }
 
-  // isOneHitWonder: muss boolean sein
+  // isOneHitWonder: must be a boolean
   if (typeof s['isOneHitWonder'] !== 'boolean') {
     errors.push(
       err(
@@ -365,7 +365,7 @@ export function validateSong(song: unknown): SongValidationResult {
     );
   }
 
-  // links.youtube: muss vorhanden sein
+  // links.youtube: must be present
   const links = s['links'] as Record<string, unknown> | undefined;
   if (!links || typeof links !== 'object') {
     errors.push(
@@ -390,7 +390,7 @@ export function validateSong(song: unknown): SongValidationResult {
         err(songId, 'links.youtube', 'links.youtube muss ein String sein')
       );
     } else if (isYoutubePlaceholder(youtube)) {
-      // Platzhalter → Warnung, kein Fehler (ist in der Entwicklung OK)
+      // Placeholder → warning, not error (fine during development)
       warnings.push(
         warn(
           songId,
@@ -561,9 +561,9 @@ export function validateSong(song: unknown): SongValidationResult {
     }
   }
 
-  // ── Warnungen (Song spielbar, aber unvollständig) ────────────────────────────
+  // ── Warnings (song playable, but incomplete) ────────────────────────────
 
-  // lyrics: null ist OK (Admin-Tool füllt dies aus), aber als Warnung melden
+  // lyrics: null is OK (the admin tool fills this in), but report it as a warning
   if (s['lyrics'] === null) {
     warnings.push(
       warn(
@@ -573,7 +573,7 @@ export function validateSong(song: unknown): SongValidationResult {
       )
     );
   } else if (s['lyrics'] !== null && typeof s['lyrics'] === 'object') {
-    // Wenn lyrics vorhanden, müssen real (3 Strings) und fake (1 String) da sein
+    // If lyrics are present, real (3 strings) and fake (1 string) must be there
     const lyrics = s['lyrics'] as Record<string, unknown>;
     if (
       !Array.isArray(lyrics['real']) ||
@@ -598,7 +598,7 @@ export function validateSong(song: unknown): SongValidationResult {
     }
   }
 
-  // coverMode: optional, aber wenn vorhanden muss relationType/confidence valide sein
+  // coverMode: optional, but if present relationType/confidence must be valid
   if (s['coverMode'] !== undefined) {
     const cm = s['coverMode'] as Record<string, unknown>;
     const validRelationTypes = ['original', 'cover', 'sample', 'remix'];
@@ -640,7 +640,7 @@ export function validateSong(song: unknown): SongValidationResult {
     }
   }
 
-  // previewTimestamp: optional, aber wenn vorhanden muss start < end sein
+  // previewTimestamp: optional, but if present start < end must hold
   if (s['previewTimestamp'] !== undefined) {
     const pt = s['previewTimestamp'] as Record<string, unknown>;
     if (typeof pt['start'] !== 'number' || typeof pt['end'] !== 'number') {
@@ -669,10 +669,10 @@ export function validateSong(song: unknown): SongValidationResult {
 }
 
 /**
- * Validiert alle Songs in einem Pack-JSON.
+ * Validates all songs in a pack JSON.
  *
- * Erwartet ein Objekt mit { songs: unknown[] }.
- * Gibt ein vollständiges Validierungsergebnis zurück.
+ * Expects an object with { songs: unknown[] }.
+ * Returns a complete validation result.
  */
 export function validatePack(packData: unknown): PackValidationResult {
   const data = packData as Record<string, unknown>;
@@ -698,11 +698,11 @@ export function validatePack(packData: unknown): PackValidationResult {
   };
 }
 
-// ─── CLI-Ausgabe (für npm run validate-songs) ─────────────────────────────────
+// ─── CLI output (for npm run validate-songs) ─────────────────────────────────
 
 /**
- * Gibt das Validierungsergebnis farbig in der Konsole aus.
- * Wird direkt aufgerufen wenn diese Datei als Script gestartet wird.
+ * Prints the validation result to the console in colour.
+ * Called directly when this file is started as a script.
  */
 function printValidationResult(result: PackValidationResult): void {
   const RESET = '\x1b[0m';
@@ -716,7 +716,7 @@ function printValidationResult(result: PackValidationResult): void {
   console.log(`${DIM}File: ${result.pack}${RESET}`);
   console.log('─'.repeat(60));
 
-  // Zusammenfassung
+  // Summary
   console.log(`\n📊 Zusammenfassung:`);
   console.log(`   Gesamt:       ${result.totalSongs} Songs`);
   console.log(
@@ -735,7 +735,7 @@ function printValidationResult(result: PackValidationResult): void {
     );
   }
 
-  // Detaillierte Ausgabe pro Song (nur wenn Probleme vorhanden)
+  // Detailed output per song (only if there are problems)
   const problemSongs = result.results.filter(
     (r) => !r.isValid || !r.isComplete
   );
@@ -760,7 +760,7 @@ function printValidationResult(result: PackValidationResult): void {
     }
   }
 
-  // Abschlussmeldung
+  // Final message
   console.log('\n' + '─'.repeat(60));
   if (result.allErrors.length === 0) {
     console.log(`${GREEN}✓ Alle Songs sind gültig!${RESET}`);
@@ -777,15 +777,15 @@ function printValidationResult(result: PackValidationResult): void {
   console.log('');
 }
 
-// ─── Script-Einstiegspunkt ────────────────────────────────────────────────────
+// ─── Script entry point ────────────────────────────────────────────────────
 
-// Wird nur ausgeführt, wenn diese Datei direkt aufgerufen wird (nicht beim Import)
-// Verwendung: npx tsx src/utils/validate-song-data.ts [pfad/zur/datei.json]
+// Only executed when this file is called directly (not on import)
+// Usage: npx tsx src/utils/validate-song-data.ts [path/to/file.json]
 async function main() {
   const fs = await import('fs');
   const path = await import('path');
 
-  // Standard-Pack-Datei oder per Argument angeben
+  // Default pack file or the one given as an argument
   const targetFile = process.argv[2] ?? 'src/data/songs/A1.json';
   const absolutePath = path.resolve(process.cwd(), targetFile);
 
@@ -804,13 +804,13 @@ async function main() {
   const result = validatePack(rawData);
   printValidationResult(result);
 
-  // Exit-Code 1 wenn Fehler vorhanden (für CI/CD)
+  // Exit code 1 when errors are present (for CI/CD)
   if (result.allErrors.length > 0) {
     process.exit(1);
   }
 }
 
-// Nur ausführen wenn direkt aufgerufen
+// Only run when called directly
 const isMainModule = process.argv[1]?.includes('validate-song-data');
 if (isMainModule) {
   main();

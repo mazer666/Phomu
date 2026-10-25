@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 /**
- * i18n-Merge (CONTRACT §5.3, Schlussform)
+ * i18n merge (CONTRACT §5.3, final form)
  *
- * Führt die Teildateien aus src/i18n/locales/parts/*.json in die beiden
- * Sprachdateien src/i18n/locales/de.json und en.json zusammen.
+ * Merges the part files from src/i18n/locales/parts/*.json into the two
+ * locale files src/i18n/locales/de.json and en.json.
  *
- * Ausgabeform: eine flache Datei je Sprache, verschachtelt nach Namespace.
- * Aufruf:
- *   node scripts/merge-i18n-parts.mjs          # merged und schreibt
- *   node scripts/merge-i18n-parts.mjs --check  # schreibt nicht, meldet nur
+ * Output form: one flat file per language, nested by namespace.
+ * Usage:
+ *   node scripts/merge-i18n-parts.mjs          # merges and writes
+ *   node scripts/merge-i18n-parts.mjs --check  # does not write, reports only
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -19,7 +19,7 @@ const LOCALES_DIR = join(ROOT, 'src/i18n/locales');
 const PARTS_DIR = join(LOCALES_DIR, 'parts');
 const CHECK_ONLY = process.argv.includes('--check');
 
-/** Macht aus einem verschachtelten Objekt eine flache Punktpfad-Map. */
+/** Turns a nested object into a flat dot-path map. */
 function flatten(object, prefix = '', out = {}) {
   for (const [key, value] of Object.entries(object)) {
     const path = prefix ? `${prefix}.${key}` : key;
@@ -32,7 +32,7 @@ function flatten(object, prefix = '', out = {}) {
   return out;
 }
 
-/** Baut aus einer flachen Punktpfad-Map wieder ein verschachteltes Objekt. */
+/** Rebuilds a nested object from a flat dot-path map. */
 function nest(flat) {
   const root = {};
   for (const [path, value] of Object.entries(flat)) {
@@ -50,7 +50,7 @@ function nest(flat) {
   return root;
 }
 
-/** Liest alle Teildateien einer Sprache: parts/<name>.<lang>.json und parts/<name>.json. */
+/** Reads all part files of one language: parts/<name>.<lang>.json and parts/<name>.json. */
 function readParts(language) {
   const merged = {};
   const sources = [];
@@ -69,7 +69,7 @@ function readParts(language) {
     for (const [key, value] of Object.entries(flat)) {
       if (key in merged && merged[key] !== value) {
         throw new Error(
-          `Doppelter Schlüssel mit unterschiedlichen Werten: "${key}" ` +
+          `Duplicate key with differing values: "${key}" ` +
             `(${sources[sources.length - 1]} vs. ${file})`
         );
       }
@@ -102,7 +102,7 @@ for (const language of ['de', 'en']) {
 
   if (conflicts.length > 0) {
     console.error(
-      `✗ ${language}: ${conflicts.length} Konflikt(e) zwischen Basis und Teildateien:`
+      `✗ ${language}: ${conflicts.length} conflict(s) between base and part files:`
     );
     for (const key of conflicts) console.error(`    ${key}`);
     process.exitCode = 1;
@@ -120,13 +120,13 @@ for (const language of ['de', 'en']) {
 
 for (const entry of report) {
   console.log(
-    `${entry.language}: ${entry.keyCount} Schlüssel aus ${entry.partFiles} Teildatei(en)` +
+    `${entry.language}: ${entry.keyCount} keys from ${entry.partFiles} part file(s)` +
       (entry.conflicts.length > 0
-        ? ` — ${entry.conflicts.length} Konflikt(e)`
+        ? ` — ${entry.conflicts.length} conflict(s)`
         : '')
   );
 }
 
 if (CHECK_ONLY) {
-  console.log('(--check: nichts geschrieben)');
+  console.log('(--check: nothing written)');
 }

@@ -1,170 +1,236 @@
 # Changelog
 
-Alle nennenswerten Änderungen an Phomu werden hier festgehalten.
+All notable changes to Phomu are recorded here.
 
-Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/),
-und die Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
+The format follows [Keep a Changelog](https://keepachangelog.com/de/1.1.0/),
+and the versioning follows [Semantic Versioning](https://semver.org/lang/de/).
 
-Die Versionsangaben der Vorreform sind nicht rekonstruierbar — die Historie des
-Repositories bestand bis zur Reform aus einem einzigen, zusammengefassten Commit.
-Der Stand vor der Reform ist in `specifications/archive/` als Dokumentstand
-erhalten, nicht als Versionshistorie.
+The version numbers from before the reform cannot be reconstructed — until the
+reform the history of the repository consisted of a single, combined commit.
+The state before the reform is preserved in `specifications/archive/` as a
+document state, not as a version history.
 
 ---
 
 ## [Unreleased]
 
-### Added — Dokumentation und Spezifikation
+### Added — Platform expansion (specification)
 
-Der Dokumentensatz wurde auf das Hausformat von **Vocument** und **PhairPlayRust**
-umgestellt: aus einer Sammlung lose Snapshots wurde ein Satz mit Rollen, IDs,
-Gates und Nachweisen.
+Phomu grows from a web application into a **family** of applications: one
+product, one shared Rust core, platform-specific frontends. The web app stays
+and becomes a first-class shell — supplemented, not replaced.
 
-- **`REQUIREMENTS.md`** — 169 Anforderungen in neun Domänen (`CORE`, `GAME`,
-  `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `NFR`), je mit Anforderung,
-  Begründung, Akzeptanz und Verifikation sowie Preset/Optional/Later-Kennzeichnung.
-- **`ARCHITECTURE.md`** — Schichten und Abhängigkeitsrichtung, gemessener
-  Import-Graph, Datenfluss des Spielablaufs, Grenzen von Admin-API, i18n, Daten
-  und Audio, Dateigrößen-Messung mit allen Verstößen.
-- **`ROADMAP.md`** — Meilensteine mit Zweck, Nicht-Zielen, Abnahmekriterien über
-  alle acht Dimensionen, Evidenz und Release-Entscheidung; dazu ein
-  Risikoregister und die offenen Lücken.
-- **`AGENTS.md`** — die Arbeitsregeln für Agenten: 20 universelle Regeln,
-  Namensstandard, acht Rollen (`ROLE-01` bis `ROLE-08`) mit Besitz-, Prüf- und
-  Blockier-Scope, Arbeitsablauf und Übergabeformat.
-- **`QUALITY.md`** — das Abnahmemodell über acht Dimensionen, mit der harten
-  Regel, dass keine Abnahme auf Basis von Stubs oder Mock-Simulationen gilt.
+Everything is specified before it is built:
+
+- **`docs/design/PLATFORM-ARCHITECTURE.md`** — the crate topology, the
+  dependency direction, what belongs in the core and what belongs in a shell,
+  the bridge, the platform differences as gaps rather than special cases, the
+  build chain and the honest limits.
+- **`docs/design/BUILD-CONTRACT.md`** — the binding contract between core and
+  shells, with the rule for incompatible bridge changes and the self-test of
+  the boundary gate.
+- **`docs/spec/SRS.md`** — the software requirements specification: product
+  goals, system context, external interfaces, non-functional requirements,
+  constraints and the traceability matrix.
+- **`docs/spec/REQUIREMENTS-PLATFORM.md`** — the platform requirements in the
+  same discipline as `REQUIREMENTS.md`: every requirement carries an ID, a
+  rationale, acceptance criteria and a verification path.
+- **`docs/spec/TRACEABILITY.md`** — requirement → design → ADR → test →
+  acceptance, including an honest list of what has no test yet.
+- **`docs/releases/RELEASE-PLAN.md`** — **alpha → beta → stable** per platform
+  track, with gate criteria and a checkable definition of each stage.
+- **`docs/releases/RELEASE-CHECKLIST.md`** — the executable checklist for a
+  release.
+- **`docs/licensing/APPLE-LICENSING.md`** — the licensing and distribution
+  analysis for iOS/iPadOS, with 44 cited sources.
+- **ADR-0005** (shared Rust core), **ADR-0006** (binding platform track
+  order), **ADR-0007** (Apple distribution and licensing strategy).
+
+The **platform track order is binding**: Android → Google TV / Fire TV →
+macOS and Linux → iPadOS and iOS → Windows. A track only starts once the
+previous one has a green release candidate.
+
+The **Apple licensing question** is answered rather than dodged: the whole
+codebase stays under GPL-3.0-or-later, and exactly one narrowly scoped
+GPL-3.0 §7 additional permission — the *Phomu App Store Exception* — removes
+the conflict with app-store distribution channels while leaving every copyleft
+obligation intact. The iOS/iPadOS track is **blocked** until the owner has an
+Apple Developer Program account; the web application keeps working without one.
+
+### Added — Documentation language gate
+
+The project documentation and the repository are **English**. The user
+interface stays German-first with a complete English translation.
+
+- **`scripts/check-doc-language.mjs`** — a new gate that fails when German
+  prose reappears in the documentation, the YAML state or the workflows.
+  Quoted interface strings and acronyms are exempt.
+- The gate runs in `npm run check:all` and in the CI quality-gates job.
+- `specifications/archive/` is deliberately **not** covered: those files are
+  verbatim snapshots of the German-language era, and translating them would
+  falsify the record.
+
+
+### Added — Documentation and specification
+
+The document set was converted to the house format of **Vocument** and
+**PhairPlayRust**: from a collection of loose snapshots it became a set with
+roles, IDs, gates and evidence.
+
+- **`REQUIREMENTS.md`** — 169 requirements in nine domains (`CORE`, `GAME`,
+  `LOBBY`, `MEDIA`, `UI`, `I18N`, `CAT`, `SEC`, `NFR`), each with requirement,
+  rationale, acceptance and verification as well as a Preset/Optional/Later label.
+- **`ARCHITECTURE.md`** — layers and dependency direction, measured import graph,
+  data flow of the game flow, boundaries of admin API, i18n, data and audio, file
+  size measurement with all violations.
+- **`ROADMAP.md`** — milestones with purpose, non-goals, acceptance criteria
+  across all eight dimensions, evidence and release decision; plus a risk
+  register and the open gaps.
+- **`AGENTS.md`** — the working rules for agents: 20 universal rules, naming
+  standard, eight roles (`ROLE-01` to `ROLE-08`) with ownership, review and
+  blocking scope, workflow and handover format.
+- **`QUALITY.md`** — the acceptance model across eight dimensions, with the hard
+  rule that no acceptance counts on the basis of stubs or mock simulations.
 - **`WHERE_TO_CHANGE.md`**, **`GLOSSARY.md`**, **`PROJECT_MANAGEMENT.md`**,
-  **`PRIVACY.md`**, **`SECURITY.md`** — neu im Hausstil.
-- **`docs/`** — Index (`docs/README.md`), `DOCUMENTATION_POLICY.md`,
-  `GETTING-STARTED.md`, `BEST_IN_CLASS.md`, vier ADRs plus Vorlage, eine
-  Change Request, die Abnahmevorlage und ein Abnahmenachweis.
-- **`docs/design/`** — `GAME-CONTRACT.md` (Rundenzustandsautomat,
-  Anti-Spoiler-Grenze, Verträge der sechs Modi, Persistenzregeln) und ein Index.
-- **`docs/user-guide/`** — die Anleitung für Spielerinnen und Spieler, **einmal
-  auf Deutsch und einmal auf Englisch**, mit identischer Gliederung.
-- **`docs/guides/`** — Druckanleitung und Fehlerbehebung.
-- **`project/project.yaml`** — der maschinenlesbare Projektzustand als einzige
-  Wahrheit für Werte, die mehrere Dokumente betreffen.
+  **`PRIVACY.md`**, **`SECURITY.md`** — new in the house style.
+- **`docs/`** — index (`docs/README.md`), `DOCUMENTATION_POLICY.md`,
+  `GETTING-STARTED.md`, `BEST_IN_CLASS.md`, four ADRs plus template, one change
+  request, the acceptance template and one acceptance record.
+- **`docs/design/`** — `GAME-CONTRACT.md` (round state machine, anti-spoiler
+  boundary, contracts of the six modes, persistence rules) and an index.
+- **`docs/user-guide/`** — the guide for players, **once in German and once in
+  English**, with an identical structure.
+- **`docs/guides/`** — printing guide and troubleshooting.
+- **`project/project.yaml`** — the machine-readable project state as the single
+  truth for values that several documents touch.
 - **`CHANGELOG.md`**, **`CONTRIBUTING.md`**, **`README.md`**, **`LLM.md`** —
-  neu geschrieben bzw. umgestellt.
+  newly written or converted.
 
-### Added — Internationalisierung
+### Added — Internationalisation
 
-Die Oberfläche war bis auf vier Dateien vollständig hartcodiertes Deutsch bei
-25 Übersetzungsschlüsseln. Jetzt:
+Apart from four files, the interface was completely hardcoded German with
+25 translation keys. Now:
 
-- **1231 Schlüssel** in `src/i18n/locales/de.json` und `en.json`, **vollständig
-  parallel** — geprüft vom Gate `npm run check:i18n` und
-  `npm run verify:i18n-keys` (677 benutzte Schlüssel, 0 fehlend).
-- **40 Komponenten** beziehen ihre Texte aus der Übersetzung statt aus
-  JSX-Literalen.
-- **Echte englische Texte** — keine deutschen Kopien. Eigennamen (Spotify,
-  YouTube, Jackbox, Modusnamen) bleiben bewusst identisch.
-- **Pluralformen** als `_one`/`_other` in beiden Sprachen.
-- **Typisierte Schlüssel** über `src/i18n/types.ts` — ein Tippfehler in einem
-  Schlüsselnamen ist jetzt ein Compile-Fehler. Die Liste der variierten Texte
-  (Reveal-Formulierungen, Feedback, Teamnamen) wird aus `de.json` **erzeugt**
-  (`npm run generate:variant-keys`), damit Schlüssel und Liste nicht
-  auseinanderlaufen können.
-- **Die Sprachdaten sind aus dem Build-Cache rekonstruiert.** Ein Migrationsschritt
-  hatte den Blatt-Schlüssel `modes.timeline` über das verschachtelte Objekt
-  `modes.timeline.*` gelegt und damit 173 Modus-Schlüssel in beiden Sprachen
-  zerstört. `scripts/recover-locales-from-build.mjs` holt die Daten aus
-  `.next/` zurück; der Auslöser — ein Blatt-Schlüssel, der zugleich ein
-  Namensraum-Präfix ist — ist in `scripts/seed-shared-keys.mjs` dokumentiert und
-  für die Zukunft ausgeschlossen.
-- **`src/i18n/config.ts`** — `supportedLngs`, `load: 'languageOnly'` und
-  `nonExplicitSupportedLngs`, damit eine regionale Variante wie `de-DE` auf die
-  ausgelieferte Sprache zeigt statt ins Leere.
-- **`src/components/LanguageHtmlAttribute.tsx`** — das `lang`-Attribut des
-  Dokuments folgt jetzt der aktiven Sprache. Vorher blieb es statisch auf
-  Deutsch stehen, auch wenn Englisch gewählt war.
+- **1231 keys** in `src/i18n/locales/de.json` and `en.json`, **completely in
+  parity** — checked by the gate `npm run check:i18n` and
+  `npm run verify:i18n-keys` (677 used keys, 0 missing).
+- **40 components** take their texts from the translation instead of JSX
+  literals.
+- **Real English texts** — no German copies. Proper nouns (Spotify, YouTube,
+  Jackbox, mode names) deliberately remain identical.
+- **Plural forms** as `_one`/`_other` in both languages.
+- **Typed keys** via `src/i18n/types.ts` — a typo in a key name is now a compile
+  error. The list of variant texts (reveal wordings, feedback, team names) is
+  **generated** from `de.json` (`npm run generate:variant-keys`), so that keys
+  and list cannot drift apart.
+- **The language data has been reconstructed from the build cache.** A migration
+  step had placed the leaf key `modes.timeline` over the nested object
+  `modes.timeline.*` and thereby destroyed 173 mode keys in both languages.
+  `scripts/recover-locales-from-build.mjs` retrieves the data from `.next/`; the
+  trigger — a leaf key that is at the same time a namespace prefix — is
+  documented in `scripts/seed-shared-keys.mjs` and excluded for the future.
+- **`src/i18n/config.ts`** — `supportedLngs`, `load: 'languageOnly'` and
+  `nonExplicitSupportedLngs`, so that a regional variant such as `de-DE` shows
+  the shipped language instead of nothing.
+- **`src/components/LanguageHtmlAttribute.tsx`** — the `lang` attribute of the
+  document now follows the active language. Previously it stayed statically on
+  German, even when English was selected.
 
-### Added — Qualitätsgates und CI
+### Added — Quality gates and CI
 
-- **`scripts/check-i18n-completeness.mjs`** — prüft DE/EN-Parität, leere Werte,
-  Pluralformen und verbliebene Literaltexte in TSX-Dateien.
-- **`scripts/check-doc-links.mjs`** — prüft, dass jeder relative Markdown-Link
-  im Repository auflöst.
-- **`scripts/check-file-size.mjs`** — Ziel 400 Zeilen, harte Grenze 550.
-- **`scripts/merge-i18n-parts.mjs`** — führt die Teildateien der Übersetzung in
-  eine Datei je Sprache zusammen.
-- **`.github/workflows/ci.yml`** — Jobs für Typecheck, Lint, Unit-Tests,
-  Katalogvalidierung, Qualitätsgates und Build. Bisher gab es nur ein
-  Deployment-Workflow, **keine Test-CI**.
+- **`scripts/check-i18n-completeness.mjs`** — checks DE/EN parity, empty values,
+  plural forms and remaining literals in TSX files.
+- **`scripts/check-doc-links.mjs`** — checks that every relative Markdown link
+  in the repository resolves.
+- **`scripts/check-file-size.mjs`** — target 400 lines, hard limit 550.
+- **`scripts/merge-i18n-parts.mjs`** — merges the part files of the translation
+  into one file per language.
+- **`.github/workflows/ci.yml`** — jobs for typecheck, lint, unit tests,
+  catalogue validation, quality gates and build. Until now there was only a
+  deployment workflow, **no test CI**.
 - **`npm run check:i18n`**, **`npm run check:doc-links`**,
-  **`npm run check:file-size`**, **`npm run check:all`** — die Gates auch lokal.
+  **`npm run check:file-size`**, **`npm run check:all`** — the gates locally as
+  well.
 
-### Added — Sicherheit
+### Added — Security
 
-- **Rate-Limiting** für die Admin-API (`src/admin-api/_lib/rate-limit.ts`), mit
-  eigener Obergrenze für fehlgeschlagene Authentifizierungsversuche.
-- **Security-Header** (CSP, `X-Content-Type-Options`, `Referrer-Policy`,
-  `X-Frame-Options`, `Permissions-Policy`) in `next.config.ts`. Die erlaubten
-  origins sind aus dem Code abgeleitet, damit die Medienwiedergabe nicht bricht.
-- **Harte Grenzwerte** für Texteingaben (`src/utils/validate-song-limits.ts`).
-- **66 neue Tests** für Token-Guard, Rate-Limit, Cover-Abruf, Routen-Härtung,
-  Security-Header und Eingabegrenzen — durchweg **negative Tests**, die den
-  Angriff tatsächlich ausführen.
+- **Rate limiting** for the admin API (`src/admin-api/_lib/rate-limit.ts`), with
+  its own upper limit for failed authentication attempts.
+- **Security headers** (CSP, `X-Content-Type-Options`, `Referrer-Policy`,
+  `X-Frame-Options`, `Permissions-Policy`) in `next.config.ts`. The allowed
+  origins are derived from the code, so that media playback does not break.
+- **Hard limits** for text inputs (`src/utils/validate-song-limits.ts`).
+- **66 new tests** for token guard, rate limit, cover retrieval, route hardening,
+  security headers and input limits — throughout **negative tests** that
+  actually execute the attack.
+
+### Changed — the repository is English
+
+- The entire documentation set was translated from German to English:
+  `README.md`, `AGENTS.md`, `REQUIREMENTS.md`, `ARCHITECTURE.md`, `ROADMAP.md`,
+  `QUALITY.md`, `WHERE_TO_CHANGE.md`, `GLOSSARY.md`, `PROJECT_MANAGEMENT.md`,
+  `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, `PRIVACY.md`, `LLM.md` and
+  the whole `docs/` tree.
+- The code comments, the script output and the test names were translated too.
+- `docs/user-guide/USER-GUIDE.de.md` was removed; the guide exists in English.
+  The **interface** is unaffected and remains German-first with a complete
+  English translation.
 
 ### Changed
 
-- **`specifications/`** — die Vorgänger-Dokumentation ist nach
-  `specifications/archive/` gewandert und dort mit Datumsstempel versioniert.
-  Sie wurde **nicht** gelöscht. `specifications/README.md` erklärt die
-  Zuordnung von Altstand zu Nachfolger.
-- **`LLM.md`** — von der 170-zeiligen Master-Spezifikation zur Kurzfassung mit
-  Verweis auf die verbindlichen Dokumente. Der Volltext liegt als Archivstand
-  unter `specifications/archive/`.
+- **`specifications/`** — the predecessor documentation has moved to
+  `specifications/archive/` and is versioned there with a date stamp. It was
+  **not** deleted. `specifications/README.md` explains the mapping from old state
+  to successor.
+- **`LLM.md`** — from the 170-line master specification to the short version
+  with references to the binding documents. The full text is preserved as an
+  archive state under `specifications/archive/`.
 
 ### Fixed
 
-- Das `lang`-Attribut des HTML-Dokuments bleibt nicht länger auf Deutsch
-  stehen, wenn Englisch gewählt wurde (siehe Internationalisierung oben).
-- **Drei tote Anker** in `REQUIREMENTS.md` (`#offende-lücken` × 2,
-  `#game-006--…`) sind behoben; `npm run check:doc-links` meldet 0 tote Links
-  in 57 Markdown-Dateien.
-- **Doppelte Theme-Werte** in `NavBar.tsx` und `ThemeSwitcher.tsx` liegen jetzt
-  einmalig in `src/config/themes.ts` — zusammen mit den typisierten
-  Übersetzungsschlüsseln der Theme-Namen.
-- Der Tippfehler „Zurueck" in `common.back` ist korrigiert.
+- The `lang` attribute of the HTML document no longer stays on German when
+  English was selected (see Internationalisation above).
+- **Three dead anchors** in `REQUIREMENTS.md` (`#offende-lücken` × 2,
+  `#game-006--…`) are fixed; `npm run check:doc-links` reports 0 dead links
+  in 57 Markdown files.
+- **Duplicate theme values** in `NavBar.tsx` and `ThemeSwitcher.tsx` now live
+  exactly once in `src/config/themes.ts` — together with the typed translation
+  keys of the theme names.
+- The typo "Zurueck" in `common.back` is corrected.
 
 ### Known limitations
 
-Diese Punkte sind **offen** und in `ROADMAP.md` mit Priorität hinterlegt:
+These points are **open** and are recorded with a priority in `ROADMAP.md`:
 
-- Die Abdeckung der **Testsuite** liegt bei 32 % der Statements. Die
-  Spielmechanik (`src/stores/game-store.ts`, `src/utils/song-picker.ts`,
-  `src/components/game/modes/*`) ist noch nicht mit Unit-Tests abgedeckt.
-- **Acht Quelldateien** überschreiten die harte Grenze von 550 Zeilen. Die
-  Zerlegung ist in `ARCHITECTURE.md` § 6.3 beschrieben und noch nicht
-  umgesetzt. Die von dieser Runde angefassten Dateien wurden dabei **auf
-  Prettier-Formatierung umgestellt** — das entspricht der `.prettierrc` des
-  Projekts, macht die Dateien aber sichtbar länger (allein
-  `src/utils/validate-song-data.ts` wächst von 493 auf 817 Zeilen, davon rund
-  zwei Drittel reine Formatierung). Das Dateigrößen-Gate meldet das als
-  „Rückstand wächst"; die Altlasten sind als dokumentierte Ausnahmen
-  hinterlegt. **Die Umstellung ist bewusst nicht zurückgenommen**, weil
-  `npm run format:check` sonst für genau diese Dateien dauerhaft rot bliebe.
-- **318 weitere Dateien** im Repository halten sich ebenfalls nicht an
-  Prettier. Sie wurden in dieser Runde **nicht** angefasst, weil das einen
-  diff, der die eigentliche Änderung verdeckt. Die Migration ist als
-  eigener Schritt offen.
-- **`src/admin-api/` hat laut Import-Graph keine Konsumenten** — die
-  Cover-Suche und -Speicherung ist unter der Zielarchitektur nicht erreichbar.
-- **Vierzehn Konfigurationsschlüssel** in `src/config/` werden von niemandem
-  gelesen. `src/config/` ist damit eine von mehreren Wahrheiten.
-- Die **Englisch-Fassung** der Nutzer-Guides ist eine Übersetzung, aber sie ist
-  **nicht** von einer englischsprachigen Person gegengelesen.
-- **Kein E2E-Test** deckt die sechs Spielmodi ab; der Smoke-Test deckt nur den
-  Grundablauf.
+- The coverage of the **test suite** is at 32 % of statements. The game
+  mechanics (`src/stores/game-store.ts`, `src/utils/song-picker.ts`,
+  `src/components/game/modes/*`) are not yet covered by unit tests.
+- **Eight source files** exceed the hard limit of 550 lines. The split-up is
+  described in `ARCHITECTURE.md` § 6.3 and not yet implemented. The files
+  touched in this round were thereby **converted to Prettier formatting** — that
+  corresponds to the `.prettierrc` of the project, but makes the files visibly
+  longer (on its own `src/utils/validate-song-data.ts` grows from 493 to 817
+  lines, roughly two thirds of which is pure formatting). The file size gate
+  reports this as "backlog is growing"; the legacy debt is recorded as
+  documented exceptions. **The conversion was deliberately not reverted**,
+  because `npm run format:check` would otherwise stay permanently red for
+  exactly these files.
+- **318 further files** in the repository also do not follow Prettier. They were
+  **not** touched in this round, because that would produce a diff that hides
+  the actual change. The migration is open as its own step.
+- **`src/admin-api/` has no consumers according to the import graph** — cover
+  search and saving is not reachable under the target architecture.
+- **Fourteen configuration keys** in `src/config/` are read by nobody.
+  `src/config/` is thus one of several truths.
+- The **English edition** of the user guides is a translation, but it is **not**
+  proofread by an English-speaking person.
+- **No E2E test** covers the six game modes; the smoke test covers only the
+  basic flow.
 
 ---
 
-## Vor der Reform
+## Before the reform
 
-Bis zum 25. Oktober 2026 bestand die Historie aus einem einzigen Commit. Der
-inhaltliche Stand ist in `specifications/archive/` als Dokumentstand erhalten —
-siehe dort die Inhaltsübersicht und die Warnung zu den nicht mehr geltenden
-Zahlen.
+Until 25 October 2026 the history consisted of a single commit. The content
+state is preserved in `specifications/archive/` as a document state — see the
+table of contents there and the warning about the numbers that no longer apply.

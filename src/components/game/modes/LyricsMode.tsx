@@ -1,29 +1,30 @@
 /**
- * Lyrics-Labyrinth-Modus
+ * Lyrics labyrinth mode
  *
- * Drei echte Zeilen und eine KI-generierte Fake-Zeile werden gemischt.
- * Der Spieler muss die FALSCHE Zeile identifizieren.
+ * Three real lines and one AI-generated fake line are mixed.
+ * The player has to identify the FAKE line.
  *
- * Wenn song.lyrics null ist: Bonus-Runde ohne Lyrics-Daten.
+ * If song.lyrics is null: a bonus round without lyrics data.
  *
- * Punktzahl: 4 Punkte für korrekte Fake-Erkennung.
+ * Score: 4 points for correctly detecting the fake.
  *
- * Alle sichtbaren Texte kommen aus `src/i18n/locales/parts/modes.{de,en}.json`.
+ * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
  */
 'use client';
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
+import { useSpicyMessage } from '../useSpicyMessage';
 
-// ─── Konstanten ───────────────────────────────────────────────────
+// ─── Constants ───────────────────────────────────────────────────
 
 const LYRICS_POINTS = 4;
 
-/** Mischt ein Array zufällig */
+/** Shuffles an array randomly */
 function shuffle<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5);
 }
@@ -40,12 +41,12 @@ interface LyricsModeProps {
   onReveal: () => void;
 }
 
-// ─── Hauptkomponente ──────────────────────────────────────────────
+// ─── Main component ──────────────────────────────────────────────
 
 export function LyricsMode({ song, onAnswer, onReveal }: LyricsModeProps) {
   const lyrics = song.lyrics;
 
-  // Fallback wenn keine Lyrics vorhanden
+  // Fallback when no lyrics are present
   if (!lyrics) {
     return <BonusRound song={song} onAnswer={onAnswer} onReveal={onReveal} />;
   }
@@ -60,7 +61,7 @@ export function LyricsMode({ song, onAnswer, onReveal }: LyricsModeProps) {
   );
 }
 
-// ─── Lyrics-Frage (wenn Daten vorhanden) ─────────────────────────
+// ─── Lyrics question (when data is present) ─────────────────────────
 
 type SongLyrics = NonNullable<PhomuSong['lyrics']>;
 
@@ -83,9 +84,9 @@ function LyricsQuestion({
   const [selected, setSelected] = useState<number | null>(null);
   const [isRevealing, setIsRevealing] = useState(false);
 
-  // 3 echte + 1 fake Zeile mischen — einmalig stabilisiert
+  // Mix 3 real + 1 fake line — stabilised once
   const options = useMemo(() => {
-    // Falls mehrere Fakes vorhanden sind, eine zufällig auswählen
+    // If several fakes are present, pick one at random
     const selectedFake = Array.isArray(lyrics.fake)
       ? lyrics.fake[Math.floor(Math.random() * lyrics.fake.length)]
       : lyrics.fake;
@@ -97,9 +98,14 @@ function LyricsQuestion({
       { text: selectedFake, isFake: true },
     ];
     return shuffle(items);
-    // song.id ist stabil solange derselbe Song angezeigt wird
+    // song.id is stable as long as the same song is displayed
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [song.id]);
+
+  const spicyMessage = useSpicyMessage(
+    options[selected!]?.isFake ?? false,
+    song.id
+  );
 
   function handleSelect(index: number) {
     setSelected(index);
@@ -109,14 +115,14 @@ function LyricsQuestion({
     if (selected === null || isRevealing) return;
     setIsRevealing(true);
     const isCorrect = options[selected]?.isFake ?? false;
-    // Lyrics-Labyrinth: 4 Punkte Grundgewinn (Cheats wurden bereits abgezogen)
+    // Lyrics Labyrinth: 4 points base score (cheats were already deducted)
     onAnswer(isCorrect, isCorrect ? LYRICS_POINTS : 0);
     onReveal();
   }
 
   return (
     <div className="flex flex-col px-4 py-6 gap-5 max-w-lg mx-auto">
-      {/* Modus-Banner */}
+      {/* Mode banner */}
       <div className="flex items-center justify-between bg-orange-500/10 border border-orange-500/20 rounded-2xl px-4 py-2.5">
         <span className="text-[10px] font-black uppercase tracking-widest text-orange-400">
           {t('modes.lyrics.banner')}
@@ -126,7 +132,7 @@ function LyricsQuestion({
         </span>
       </div>
 
-      {/* Musik — läuft sofort, blurred bis Reveal */}
+      {/* Music — starts immediately, blurred until the reveal */}
       <div className="w-full">
         <MusicPlayer
           songId={song.id}
@@ -149,7 +155,7 @@ function LyricsQuestion({
         />
       </div>
 
-      {/* Artist-Hinweis */}
+      {/* Artist hint */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
@@ -169,7 +175,7 @@ function LyricsQuestion({
         </p>
       </motion.div>
 
-      {/* Lyrics-Optionen */}
+      {/* Lyrics options */}
       <div className="grid grid-cols-1 gap-3">
         {options.map((option, i) => {
           const isSelected = selected === i;
@@ -234,7 +240,7 @@ function LyricsQuestion({
               ),
             }}
           >
-            {getSpicyMessage(options[selected!]?.isFake ?? false, song.id)}
+            {spicyMessage}
           </p>
           <p className="text-sm font-bold opacity-60">
             {options[selected!]?.isFake
@@ -247,7 +253,7 @@ function LyricsQuestion({
   );
 }
 
-// ─── Bonus-Runde (keine Lyrics vorhanden) ────────────────────────
+// ─── Bonus round (no lyrics present) ────────────────────────
 
 function BonusRound({
   song,

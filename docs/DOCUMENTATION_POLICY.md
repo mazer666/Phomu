@@ -1,219 +1,226 @@
-# Dokumentationsregeln
+# Documentation rules
 
-Dokumentation ist Teil des Produkts. Diese Datei sagt, **wie** geschrieben wird,
-wann eine Änderung sie verpflichtet, und was ausdrücklich nicht dokumentiert wird.
+Documentation is part of the product. This file says **how** it is written,
+when a change obliges you to change it, and what is deliberately not documented.
 
-Die Regeln sind nicht verhandelbar, aber sie sind auch nicht kompliziert: **Jede
-Aussage in der Doku muss im Code nachprüfbar sein, und jede Änderung im Code muss
-die Doku mitziehen.**
+The rules are not negotiable, but they are also not complicated: **Every
+statement in the documentation must be verifiable in the code, and every change
+in the code must carry the documentation along.**
 
 ---
 
-## 1. Die Same-Change-Regel
+## 1. The same-change rule
 
-Eine Code- oder Konfigurationsänderung ist **unvollständig**, wenn sie irgendeine
-Dokumentation veraltet lässt. Die Aktualisierung passiert im **selben Commit** —
-nicht als Folge-Commit, nicht als Ticket.
+A code or configuration change is **incomplete** if it leaves any documentation
+stale. The update happens in the **same commit** — not as a follow-up commit,
+not as a ticket.
 
-| Du änderst | Dann aktualisierst du |
+| You change | Then you update |
 |---|---|
-| Verhalten des Spiels | [`../REQUIREMENTS.md`](../REQUIREMENTS.md) (bei materieller Änderung zusätzlich `docs/cr/`) und beide Nutzer-Guides |
-| Struktur, Grenzen, Abhängigkeitsrichtung | [`../ARCHITECTURE.md`](../ARCHITECTURE.md) (bei materieller Änderung zusätzlich `docs/adr/`) und [`../WHERE_TO_CHANGE.md`](../WHERE_TO_CHANGE.md) |
-| Konstanten, Defaults, Grenzwerte | `src/config/` **und** die Fundstellen, die diese Zahl nennen |
-| einen Spielmodus | `REQUIREMENTS.md` (Domäne `GAME`), `docs/user-guide/USER-GUIDE.de.md` **und** `.en.md`, `docs/BEST_IN_CLASS.md` |
-| Texte der Oberfläche | `src/i18n/locales/de.json` **und** `en.json` |
-| den Katalog | den Katalog-Report (`npm run validate-catalog:report`), nicht die Zahlen im README |
-| die Architektur | [`../ARCHITECTURE.md`](../ARCHITECTURE.md), bei Grenzverschiebung ein ADR |
-| einen Meilenstein oder dessen Status | [`../ROADMAP.md`](../ROADMAP.md) und `project/project.yaml` |
-| eine Prüfung oder ein Gate | [`../QUALITY.md`](../QUALITY.md), [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md) und `docs/acceptance/` |
+| The behaviour of the game | [`../REQUIREMENTS.md`](../REQUIREMENTS.md) (for a material change additionally `docs/cr/`) and both user guides |
+| Structure, boundaries, dependency direction | [`../ARCHITECTURE.md`](../ARCHITECTURE.md) (for a material change additionally `docs/adr/`) and [`../WHERE_TO_CHANGE.md`](../WHERE_TO_CHANGE.md) |
+| Constants, defaults, limits | `src/config/` **and** the source locations that name this number |
+| a game mode | `REQUIREMENTS.md` (domain `GAME`), `docs/user-guide/USER-GUIDE.en.md`, `docs/BEST_IN_CLASS.md` |
+| Texts of the interface | `src/i18n/locales/de.json` **and** `en.json` |
+| the catalogue | the catalogue report (`npm run validate-catalog:report`), not the numbers in the README |
+| the architecture | [`../ARCHITECTURE.md`](../ARCHITECTURE.md), for a moved boundary an ADR |
+| a milestone or its status | [`../ROADMAP.md`](../ROADMAP.md) and `project/project.yaml` |
+| a check or a gate | [`../QUALITY.md`](../QUALITY.md), [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md) and `docs/acceptance/` |
 
-**Die Probe:** Wenn jemand nur den Diff liest, muss er erkennen können, dass die
-Doku mitgeändert wurde. Ein Diff, der nur `src/` anfasst, ist fast immer
-unvollständig.
+**The test:** If someone reads only the diff, they must be able to recognise
+that the documentation was changed as well. A diff that touches only `src/` is
+almost always incomplete.
 
 ---
 
 ## 2. Single Source of Truth
 
-Jede Zahl, jeder Name, jede Regel hat **genau eine** Quelle. Alle anderen Dokumente
-verweisen darauf, statt sie zu wiederholen.
+Every number, every name, every rule has **exactly one** source. All other
+documents refer to it instead of repeating it.
 
-| Was | Die eine Quelle | Alle anderen schreiben |
+| What | The one source | All others write |
 |---|---|---|
-| Punkte, Zeitlimits, Kapazitäten, Grenzwerte | `src/config/game-config.ts` | „gemäß `PHOMU_CONFIG`" — nicht die Zahl |
-| Spielmodi und ihre Mechanik | `src/components/game/modes/<Modus>Mode.tsx` und `REQUIREMENTS.md` | Verweis auf die Anforderungs-ID |
-| Phasen des Ablaufs | `src/types/game-state.ts` (`RoundPhase`) | Verweis auf `GAME-001` |
-| Bedeutungen der Fachbegriffe | [`../GLOSSARY.md`](../GLOSSARY.md) | Verweis auf den Begriff |
-| Anforderungen und ihre IDs | [`../REQUIREMENTS.md`](../REQUIREMENTS.md) | Verweis auf die ID |
-| Maschinenlesbarer Projektzustand | `project/project.yaml` | Verweis auf das Feld |
-| Gemessene Qualitätswerte | [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md) | Verweis auf das Ziel |
-| Historische Schnappschüsse | `specifications/archive/` | „siehe Archivstand vom …" |
+| Points, time limits, capacities, limits | `src/config/game-config.ts` | "according to `PHOMU_CONFIG`" — not the number |
+| Game modes and their mechanics | `src/components/game/modes/<Mode>Mode.tsx` and `REQUIREMENTS.md` | Reference to the requirement ID |
+| Phases of the flow | `src/types/game-state.ts` (`RoundPhase`) | Reference to `GAME-001` |
+| Meanings of the domain terms | [`../GLOSSARY.md`](../GLOSSARY.md) | Reference to the term |
+| Requirements and their IDs | [`../REQUIREMENTS.md`](../REQUIREMENTS.md) | Reference to the ID |
+| Machine-readable project state | `project/project.yaml` | Reference to the field |
+| Measured quality values | [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md) | Reference to the target |
+| Historical snapshots | `specifications/archive/` | "see the archived state of …" |
 
-**Was das im Alltag heißt:** Wenn du `DEFAULT_TIMELINE_MAX_POINTS` änderst, änderst
-du **eine** Zahl in **einer** Datei. Der Nutzer-Guide beschreibt dann das Prinzip
-(„die Punkte sind gedeckelt"), aber nicht den Wert 5. Zwei Dokumente, die
-dieselbe Zahl nennen, sind zwei Wahrheiten — und genau an der Bruchstelle entstehen
-die Fehler.
+**What that means in practice:** If you change `DEFAULT_TIMELINE_MAX_POINTS`,
+you change **one** number in **one** file. The user guide then describes the
+principle ("the points are capped"), but not the value 5. Two documents that
+name the same number are two truths — and exactly at that seam the errors
+arise.
 
-**Ausnahme:** Zwei Nutzer-Guides (DE und EN) führen dieselben Zahlen. Das ist
-gewollt und keine Doppelung: sie sind **dieselbe** Quelle in zwei Sprachen und
-müssen synchron bleiben.
-
----
-
-## 3. Die Sprachregel
-
-| Ebene | Sprache |
-|---|---|
-| Projektdokumentation (Root und `docs/`) | **Deutsch** |
-| Nutzer-Guides (`docs/user-guide/`) | **Deutsch und Englisch**, zwei Dateien |
-| Code, Bezeichner, Kommentare, Commit-Messages | **Englisch** |
-| Oberfläche (`src/i18n/locales/`) | **Deutsch primär, Englisch vollständig** |
-| ADR und CR | **Deutsch** |
-
-**Kein Dokument mischt die Sprachen auf Satzebene.** Ein deutscher Satz, ein
-englischer Satz, ein deutscher Satz — das ist ein Fehler, kein Stil.
-
-Bezeichner bleiben englisch, auch in deutschen Dokumenten: `PHOMU_CONFIG`,
-`useGameStore`, `RoundPhase`, `answersLocked`. Deutsche Wörter in Bezeichnern nur,
-wenn sie etablierte Fachbegriffe sind (`useGameStore` heißt so, weil `GameStore` so
-heißt).
-
-**Englische Fassungen sind echte Übersetzungen.** `en.json` bekommt keine Kopie der
-deutschen Werte, und die englische Fassung des Nutzer-Guides ist keine deutsche
-Fassung mit englischen Überschriften. Eigennamen — Spotify, YouTube, Jackbox,
-Phomu, die Modusnamen — bleiben in beiden Sprachen identisch.
+**Exception:** The two user guides (DE and EN) carry the same numbers. That is
+deliberate and not duplication: they are the **same** source in two languages
+and must stay in sync.
 
 ---
 
-## 4. Anforderungs-IDs
+## 3. The language rule
 
-Das Schema ist `<DOMÄNE>-<NNN>`: drei Ziffern, fortlaufend je Domäne, **nie
-wiederverwenden**.
-
-| Domäne | Inhalt |
+| Level | Language |
 |---|---|
-| `CORE` | Produktprinzipien, Grundsätze |
-| `GAME` | Spielmodi, Rundenlogik, Punkte, Regeln |
-| `LOBBY` | Lobby, Spieler, Teams, Sitzung, QR/Karten |
-| `MEDIA` | Musikprovider, Anti-Spoiler, Wiedergabe |
-| `UI` | Oberfläche, Themes, Projektor, Barrierefreiheit |
-| `I18N` | Internationalisierung |
-| `CAT` | Songkatalog, Packs, Datenqualität |
-| `SEC` | Sicherheit, Datenschutz, Admin-API |
-| `NFR` | Nicht-funktionale Anforderungen |
+| Project documentation (root and `docs/`) | **English** |
+| User guides (`docs/user-guide/`) | **English**, one file per language |
+| Code, identifiers, comments, commit messages | **English** |
+| Interface (`src/i18n/locales/`) | **German first, English complete** |
+| ADR and CR | **English** |
 
-Jede Anforderung hat **exakt** diese Form:
+**The language rules in short form:** code in English, project documentation in
+English, user guides in English, the user interface German-first with a
+complete English translation.
+
+**No document mixes the languages at sentence level.** A German sentence, an
+English sentence, a German sentence — that is an error, not a style.
+
+Identifiers stay English, also in the German user guide and in the German
+interface texts: `PHOMU_CONFIG`, `useGameStore`, `RoundPhase`, `answersLocked`.
+German words in identifiers only when they are established domain terms
+(`useGameStore` is called that because `GameStore` is).
+
+**English editions are real translations.** `en.json` gets no copy of the
+German values, and the English edition of the user guide is not a German
+edition with English headings. Proper nouns — Spotify, YouTube, Jackbox,
+Phomu, the mode names — stay identical in both languages.
+
+---
+
+## 4. Requirement IDs
+
+The scheme is `<DOMAIN>-<NNN>`: three digits, consecutive per domain, **never
+reused**.
+
+| Domain | Content |
+|---|---|
+| `CORE` | Product principles, ground rules |
+| `GAME` | Game modes, round logic, points, rules |
+| `LOBBY` | Lobby, players, teams, session, QR/cards |
+| `MEDIA` | Music provider, anti-spoiler, playback |
+| `UI` | Interface, themes, projector, accessibility |
+| `I18N` | Internationalization |
+| `CAT` | Song catalogue, packs, data quality |
+| `SEC` | Security, privacy, admin API |
+| `NFR` | Non-functional requirements |
+
+Every requirement has **exactly** this form:
 
 ```markdown
-### GAME-014 — Der Reveal gibt die Lösung erst nach dem Sperren frei
+### GAME-014 — The reveal releases the solution only after the answers are locked
 
-**Anforderung:** Nach dem Sperren aller Antworten wechselt die Rundenphase auf `reveal`.
+**Requirement:** After all answers are locked, the round phase switches to `reveal`.
 
-**Begründung:** Der Anti-Spoiler-Schutz ist ein Produktversprechen, kein Komfortmerkmal.
+**Rationale:** The anti-spoiler protection is a product promise, not a comfort feature.
 
-**Akzeptanz:** `src/components/game/QuestionPhase.tsx` → Phase `reveal` erst bei
-`answersLocked === true`; Unit-Test `src/components/game/QuestionPhase.test.tsx`.
+**Acceptance:** `src/components/game/QuestionPhase.tsx` → phase `reveal` only when
+`answersLocked === true`; unit test `src/components/game/QuestionPhase.test.tsx`.
 
-**Verifikation:** `npm run test -- QuestionPhase`
+**Verification:** `npm run test -- QuestionPhase`
 ```
 
-Pflichtfelder sind **Anforderung**, **Begründung**, **Akzeptanz** und
-**Verifikation**. Fehlt eines, ist die Anforderung unvollständig und zählt nicht.
+The mandatory fields are **Requirement**, **Rationale**, **Acceptance** and
+**Verification**. If one is missing, the requirement is incomplete and does not
+count.
 
-Zusätzlich gilt:
+Additionally the following applies:
 
-- Legende **Preset** (Standard) / **Optional** (vorhanden, nicht aktiviert) /
-  **Later** (bewusst verschoben).
-- Jede ID wird **im Code, in Tests und in der Doku** referenziert — als Kommentar
-  `// GAME-014` an der Implementierung, als Name im Test, als Verweis im Dokument.
-- Eine ID wird **nie** neu vergeben. Wird eine Anforderung gestrichen, bleibt die ID
-  verwaist und wird nicht nachvergeben.
+- Legend **Preset** (default) / **Optional** (present, not enabled) /
+  **Later** (deliberately postponed).
+- Every ID is referenced **in the code, in tests and in the documentation** — as
+  the comment `// GAME-014` at the implementation, as a name in the test, as a
+  reference in the document.
+- An ID is **never** reissued. If a requirement is deleted, the ID stays
+  orphaned and is not reassigned.
 
-**Wortwahl in den Anforderungen:** keine Wörter wie „angemessen", „intuitiv",
-„performant" ohne Zahl oder Pfad. Jede Aussage nennt die Datei, den Test oder den
-Wert, an dem sie hängt.
+**Wording in the requirements:** no words like "adequate", "intuitive",
+"performant" without a number or a path. Every statement names the file, the
+test or the value on which it depends.
 
 ---
 
-## 5. Benennung der Dossiers
+## 5. Naming the dossiers
 
-| Art | Muster | Beispiel |
+| Type | Pattern | Example |
 |---|---|---|
-| Architekturentscheidung | `ADR-<NNNN>-<kebab-case-thema>.md` | `docs/adr/ADR-0001-schichten-und-abhaengigkeitsrichtung.md` |
-| Change Request | `CR-<NNNN>-<kebab-case-thema>.md` | `docs/cr/CR-0001-source-file-size-limits.md` |
-| Abnahme | `M<n>-ACCEPTANCE.md` | `docs/acceptance/M1-ACCEPTANCE.md` |
-| Leitfaden | `<THEMA-GROSSBUCHSTABEN>.md` | `docs/guides/PRINTING-GUIDE.md` |
-| Nutzer-Guide | `USER-GUIDE.<sprache>.md` | `docs/user-guide/USER-GUIDE.de.md` |
+| Architecture decision | `ADR-<NNNN>-<kebab-case-topic>.md` | `docs/adr/ADR-0001-schichten-und-abhaengigkeitsrichtung.md` |
+| Change request | `CR-<NNNN>-<kebab-case-topic>.md` | `docs/cr/CR-0001-source-file-size-limits.md` |
+| Acceptance | `M<n>-ACCEPTANCE.md` | `docs/acceptance/M1-ACCEPTANCE.md` |
+| Guide | `<TOPIC-UPPERCASE>.md` | `docs/guides/PRINTING-GUIDE.md` |
+| User guide | `USER-GUIDE.<language>.md` | `docs/user-guide/USER-GUIDE.en.md` |
 
-Regeln:
+Rules:
 
-- Nummerierung ab `ADR-0001` bzw. `CR-0001`, **fortlaufend**, nie überschrieben.
-  Eine Nummer, die einmal vergeben war, gehört für immer diesem Dokument.
-- Dateinamen in **kebab-case** (`kebab-case-thema`), Sprachunterlagen in
+- Numbering from `ADR-0001` resp. `CR-0001`, **consecutive**, never overwritten.
+  A number that was once issued belongs to this document forever.
+- File names in **kebab-case** (`kebab-case-topic`), language documents in
   **SCREAMING-CASE** (`PRINTING-GUIDE.md`).
-- Ein Dossier trägt **einen** Gegenstand. Wer zwei Themen in eine Datei legt, kann
-  keine der beiden mehr versionieren.
-- Die Nummer steht im Dateinamen **und** in der Überschrift der Datei.
-- Historische Stände werden **nicht** überschrieben, sondern nach
-  `specifications/archive/` verschoben und dort mit Datum im Dateinamen markiert.
+- A dossier carries **one** subject. Anyone who puts two topics into one file
+  can no longer version either of them.
+- The number stands in the file name **and** in the heading of the file.
+- Historical states are **not** overwritten, but moved to
+  `specifications/archive/` and marked there with the date in the file name.
 
 ---
 
-## 6. Was nicht dokumentiert wird — und warum
+## 6. What is not documented — and why
 
-| Nicht dokumentiert | Warum |
+| Not documented | Why |
 |---|---|
-| **Der Quellcode selbst** | Der Code ist die Wahrheit. Eine zweite Beschreibung des Codes wird veralten. `ARCHITECTURE.md` beschreibt Grenzen, nicht Zeilen. |
-| **Jeden einzelnen Song** | 1.615 Datensätze sind kein Dokument. Der Katalog liegt in `src/data/songs/` und wird von `npm run validate-catalog` geprüft. |
-| **Jede Cover-Datei** | 1.649 Bilder liegen in `public/covers/`. Ihre Herkunft ist Sache der Metadaten, nicht des Fließtexts. |
-| **Die Abhängigkeiten von Bibliotheken** | `package.json` und `package-lock.json` sind maschinenlesbar und aktuell. Eine prosaische Liste wäre eine zweite, schlechtere Wahrheit. |
-| **Historische Schnappschüsse im Fließtext** | Sie stehen in `specifications/archive/`. Eine Archivdatei, die mitwächst, ist kein Archiv. |
-| **Aufgabenlisten, Roadmaps ohne Abnahmekriterien** | Eine Aufgabe ohne Abnahmekriterium ist eine Absichtserklärung. Der Fortschritt steht in `ROADMAP.md` mit Akzeptanz. |
-| **Erklärungen zu jedem einzelnen Commit** | `CHANGELOG.md` fasst Änderungen zusammen. Das vollständige Protokoll liegt in der Versionsverwaltung. |
-| **Werte, die gemessen, aber nirgends behauptet werden** | Was nicht gemessen wurde, ist „nicht gemessed" — siehe [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md). |
-| **Personenbezogene Daten von Spielern** | Namen, Avatare und Punktestände bleiben im Browser des Geräts. Sie gehören in keine Datei und in kein Log. |
-| **Fremde Inhalte** | Musikstücke, Coverbilder und Videolinks gehören Dritten. Das Projekt stellt Software unter GPL-3.0 bereit, nicht die Inhalte. |
+| **The source code itself** | The code is the truth. A second description of the code will go stale. `ARCHITECTURE.md` describes boundaries, not lines. |
+| **Every single song** | 1,615 records are not a document. The catalogue lies in `src/data/songs/` and is checked by `npm run validate-catalog`. |
+| **Every cover file** | 1,649 images lie in `public/covers/`. Their origin is a matter of the metadata, not of the prose. |
+| **The dependencies of libraries** | `package.json` and `package-lock.json` are machine-readable and current. A prosaic list would be a second, worse truth. |
+| **Historical snapshots in the prose** | They lie in `specifications/archive/`. An archive file that grows along is not an archive. |
+| **Task lists, roadmaps without acceptance criteria** | A task without an acceptance criterion is a statement of intent. The progress lies in `ROADMAP.md` with acceptance. |
+| **Explanations for every single commit** | `CHANGELOG.md` summarises the changes. The full log lies in the version control. |
+| **Values that are measured but never claimed anywhere** | What was not measured is "not measured" — see [`BEST_IN_CLASS.md`](BEST_IN_CLASS.md). |
+| **Personal data of players** | Names, avatars and scores stay in the browser of the device. They belong into no file and into no log. |
+| **Third-party content** | Music tracks, cover images and video links belong to third parties. The project provides software under GPL-3.0, not the contents. |
 
 ---
 
-## 7. Wie eine gute Doku-Seite aussieht
+## 7. What a good documentation page looks like
 
-1. **Eine Aussage pro Absatz.** Kein Absatz, der fünf Dinge behauptet.
-2. **Jede Zahl hat einen Pfad.** Entweder steht sie in `src/config/`, oder sie hat
-   ein Kommando, das sie erzeugt.
-3. **Jeder Befehl ist kopierbar.** Kein `npm run …` ohne den Rest, kein `…` im
-   Kommando, das man nicht ausführen kann.
-4. **Keine Platzhalter.** „TODO", „wird ergänzt", „coming soon" sind in einer
-   fertigen Seite verboten. Entweder ist eine Seite inhaltlich fertig, oder sie
-   existiert nicht.
-5. **Links prüfen.** Jeder relative Markdown-Link muss auflösbar. Ein toter Link
-   ist ein Fehler, keine Kleinigkeit.
-6. **Der Ton ist ruhig.** Kein Marketing, kein „revolutionär", kein „nahezu
-   unübertroffen". Eine Qualitätsseite nennt Messmethode und Zielwert.
-7. **Deutsch, wenn es Projektdoku ist.** Kein Denglisch.
+1. **One statement per paragraph.** No paragraph that claims five things.
+2. **Every number has a path.** Either it stands in `src/config/`, or it has a
+   command that produces it.
+3. **Every command is copyable.** No `npm run …` without the rest, no `…` in a
+   command that cannot be executed.
+4. **No placeholders.** "TODO", "will be added", "coming soon" are forbidden in
+   a finished page. Either a page is complete in substance, or it does not
+   exist.
+5. **Check the links.** Every relative Markdown link must resolve. A dead link
+   is an error, not a trifle.
+6. **The tone is calm.** No marketing, no "revolutionary", no "almost
+   unsurpassed". A quality page names measurement method and target value.
+7. **English when it is project documentation.** No Denglish.
 
 ---
 
-## 8. Prüfungen, die die Doku absichern
+## 8. Checks that secure the documentation
 
-| Prüfung | Kommando | Prüft |
+| Check | Command | Checks |
 |---|---|---|
-| Doku-Linkcheck | `npm run check:doc-links` | jeder relative Markdown-Link im Repo löst auf |
-| i18n-Vollständigkeit | `npm run check:i18n` | `de.json` und `en.json` parallel, keine leeren Werte, kein Literaltext mehr im JSX |
-| Dateigröße | `npm run check:file-size` | keine Quelldatei über 550 Zeilen (weich: 400) |
-| Katalog-Gate | `npm run validate-catalog` | Katalog ohne Regression gegen die Baseline |
-| Pipeline | `npm run local-ci` | alles in der Reihenfolge, in der die CI es ausführt |
+| Documentation link check | `npm run check:doc-links` | every relative Markdown link in the repo resolves |
+| i18n completeness | `npm run check:i18n` | `de.json` and `en.json` parallel, no empty values, no literal text left in the JSX |
+| File size | `npm run check:file-size` | no source file above 550 lines (soft: 400) |
+| Catalogue gate | `npm run validate-catalog` | catalogue without regression against the baseline |
+| Pipeline | `npm run local-ci` | everything in the order in which the CI runs it |
 
-Die Gates sind in `package.json` eingetragen und laufen lokal über `npm run check:all`
-sowie einzeln über `npm run check:i18n`, `npm run check:doc-links` und
-`npm run check:file-size`. Sie gehören in die CI und in `npm run local-ci`.
+The gates are registered in `package.json` and run locally via
+`npm run check:all` as well as individually via `npm run check:i18n`,
+`npm run check:doc-links` and `npm run check:file-size`. They belong into the
+CI and into `npm run local-ci`.
 
 ---
 
-## 9. Verbindlichkeit
+## 9. Binding nature
 
-Diese Regeln gelten für **jede** Änderung an Dokumentation im Repo — für
-Mitarbeitende ebenso wie für Agenten. Verstöße gegen die Same-Change-Regel und die
-Single-Source-of-Truth-Regel sind der häufigste Grund, warum eine Änderung trotz
-grüner Tests nicht abgenommen wird.
+These rules apply to **every** change to documentation in the repo — for
+contributors as well as for agents. Violations of the same-change rule and the
+single-source-of-truth rule are the most common reason why a change is not
+accepted despite green tests.

@@ -1,15 +1,14 @@
 /**
- * Vibe-Check-Modus
+ * Vibe-Check mode
  *
- * Der Artist und die Dekade sind sichtbar — Spieler wählen eine Stimmung aus.
- * Punkte gibt es, wenn mindestens eine gewählte Stimmung in song.mood steht.
- * Alle 6 Stimmungs-Optionen werden angezeigt, damit kein Hinweis durch
- * eine reduzierte Liste entsteht.
+ * The artist and the decade are visible — players pick a mood.
+ * Points are awarded when at least one selected mood is in song.mood.
+ * All 6 mood options are shown so that no hint arises from a reduced list.
  *
- * Cheat: Optionen halbieren (6 → 3), aber max. +1 Pkt statt +2 Pkt.
+ * Cheat: halve the options (6 → 3), but max. +1 pt instead of +2 pts.
  *
- * Die Stimmungs-Werte sind Katalog-Daten (sie müssen mit `song.mood`
- * übereinstimmen); angezeigt wird die übersetzte Bezeichnung.
+ * The mood values are catalog data (they must match `song.mood`);
+ * the translated label is displayed.
  */
 'use client';
 
@@ -18,11 +17,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { TFunction } from 'i18next';
 import { useGameStore } from '@/stores/game-store';
-import { getSpicyMessage, getSpicyColor } from '@/utils/feedback-messages';
+import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
+import { useSpicyMessage } from '../useSpicyMessage';
 
-// ─── Design-Konstanten (Farben, kein Text) ─────────────────────────
+// ─── Design constants (colours, no text) ─────────────────────────
 
 const MOOD_IDLE_BG = 'rgba(255,255,255,0.03)';
 const MOOD_IDLE_BORDER = 'rgba(255,255,255,0.1)';
@@ -32,11 +32,11 @@ const MOOD_CORRECT_BORDER = '#22c55e';
 const MOOD_CORRECT_SHADOW = '0 0 20px rgba(34,197,94,0.3)';
 const MOOD_WRONG_BG = 'rgba(239,68,68,0.2)';
 
-// ─── Stimmungen ───────────────────────────────────────────────────
+// ─── Moods ───────────────────────────────────────────────────
 
 /**
- * Alle möglichen Stimmungen (aus dem PhomuSong-Schema).
- * Das sind Katalog-Werte — sie müssen unverändert mit `song.mood` matchen.
+ * All possible moods (from the PhomuSong schema).
+ * These are catalog values — they must match `song.mood` unchanged.
  */
 function getAllMoods(): string[] {
   return [
@@ -55,7 +55,7 @@ function getAllMoods(): string[] {
   ];
 }
 
-/** Übersetzt einen Stimmungs-Wert in die Anzeige (Fallback: Rohwert). */
+/** Translates a mood value into the display label (fallback: the raw value). */
 function moodLabel(mood: string, t: TFunction): string {
   switch (mood) {
     case 'Dance Floor':
@@ -102,8 +102,12 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [cheatUsed, setCheatUsed] = useState(false);
+  const spicyMessage = useSpicyMessage(
+    song.mood.includes(selected ?? ''),
+    song.id
+  );
 
-  // Jahreszahl ohne Tausendertrennung (ein Jahr ist kein Mengenwert)
+  // Year without a thousands separator (a year is not a quantity)
   const yearFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language, { useGrouping: false }),
     [i18n.language]
@@ -123,7 +127,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
     onAnswer(isCorrect, points);
   }
 
-  // Vorab zwei Optionslisten berechnen — stabil für diesen Song
+  // Precompute two option lists — stable for this song
   const { fullOptions, halfOptions } = useMemo(() => {
     const correctMood = song.mood[0];
     const wrong = getAllMoods().filter((m) => !song.mood.includes(m));
@@ -135,7 +139,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
       () => Math.random() - 0.5
     );
     return { fullOptions: full, halfOptions: half };
-    // song.id ist stabil solange derselbe Song angezeigt wird
+    // song.id is stable as long as the same song is displayed
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [song.id]);
 
@@ -143,7 +147,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
-      {/* Modus-Banner */}
+      {/* Mode banner */}
       <div className="w-full max-w-sm flex items-center justify-between bg-teal-500/10 border border-teal-500/20 rounded-2xl px-4 py-2.5">
         <span className="text-[10px] font-black uppercase tracking-widest text-teal-400">
           {t('modes.vibe-check.banner')}
@@ -153,7 +157,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         </span>
       </div>
 
-      {/* Musik — läuft sofort, unverdeckt */}
+      {/* Music — starts immediately, not covered up */}
       {!answered && (
         <div className="w-full max-w-sm mx-auto">
           <MusicPlayer
@@ -178,7 +182,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         </div>
       )}
 
-      {/* Artist-Info */}
+      {/* Artist info */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -203,7 +207,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         </p>
       </motion.div>
 
-      {/* Frage */}
+      {/* Question */}
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -213,7 +217,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
         {t('modes.vibe-check.question')}
       </motion.p>
 
-      {/* Cheat-Button */}
+      {/* Cheat button */}
       <AnimatePresence>
         {!answered &&
           !config.noCheatMode &&
@@ -240,7 +244,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
           ))}
       </AnimatePresence>
 
-      {/* Stimmungs-Grid */}
+      {/* Mood grid */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
@@ -270,7 +274,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
               textColor = '#fff';
               scale = 0.95;
             } else {
-              // Verblasst andere
+              // Fades out the others
             }
           }
 
@@ -334,7 +338,7 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
                 ),
               }}
             >
-              {getSpicyMessage(song.mood.includes(selected ?? ''), song.id)}
+              {spicyMessage}
             </p>
 
             <p className="mt-2 text-sm font-bold opacity-60">

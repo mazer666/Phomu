@@ -1,14 +1,14 @@
 /**
- * Audit für YouTube-Links auf "offizielle" Quellen.
+ * Audit of YouTube links for "official" sources.
  *
- * Nutzung:
+ * Usage:
  *   YOUTUBE_API_KEY=... node scripts/audit-official-youtube-links.js
  *
  * Optional:
- *   --limit=200           nur N Songs prüfen
- *   --strict              non-official Treffer als Exit-Code 1
+ *   --limit=200           only check N songs
+ *   --strict              non-official hits exit with code 1
  *
- * Hinweis: API-Key wird ausschließlich aus Environment gelesen und NICHT persistiert.
+ * Note: the API key is read from the environment only and is NEVER persisted.
  */
 
 const fs = require('fs');
@@ -22,7 +22,7 @@ const LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split('=')[1]) : Number.POSITIVE_INFI
 const PACKS_DIR = path.join(__dirname, '../src/data/packs');
 
 if (!API_KEY) {
-  console.error('❌ YOUTUBE_API_KEY fehlt (nur per Env setzen, nicht im Repo speichern).');
+  console.error('❌ YOUTUBE_API_KEY is missing (set it via env only, do not store it in the repo).');
   process.exit(1);
 }
 
@@ -94,7 +94,7 @@ async function fetchVideoMeta(videoId) {
   const parsed = JSON.parse(response.body);
   const item = parsed.items?.[0];
   if (!item) {
-    return { ok: false, reason: 'Video nicht gefunden (leer oder entfernt)' };
+    return { ok: false, reason: 'Video not found (empty or removed)' };
   }
 
   return { ok: true, video: item };
@@ -113,12 +113,12 @@ async function run() {
         artist: entry.song.artist,
         title: entry.song.title,
         status: 'invalid_id',
-        details: 'links.youtube ohne gültige ID',
+        details: 'links.youtube without a valid ID',
       });
       continue;
     }
 
-    // kleiner Delay gegen API Burst
+    // small delay against API bursts
     await new Promise((r) => setTimeout(r, 80));
 
     const meta = await fetchVideoMeta(videoId);
@@ -155,7 +155,7 @@ async function run() {
   const reportPath = path.join(process.cwd(), 'youtube-official-audit-report.json');
   fs.writeFileSync(reportPath, JSON.stringify({ generatedAt: new Date().toISOString(), counts, results }, null, 2));
 
-  console.log('YouTube Official Audit Ergebnis:');
+  console.log('YouTube official audit result:');
   Object.entries(counts).forEach(([k, v]) => console.log(`- ${k}: ${v}`));
   console.log(`Report: ${reportPath}`);
 

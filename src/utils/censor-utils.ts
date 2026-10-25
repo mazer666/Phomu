@@ -1,36 +1,36 @@
 import { SPOILER_CONFIG } from '@/config/spoiler-config';
 
 /**
- * Zensiert einen Hinweis (Hint), falls er Spoiler zum Artist oder Titel enthält.
- * 
- * @param hint - Der Text des Hinweises
- * @param artist - Name des Künstlers
- * @param title - Name des Titels
- * @returns Der zensierte Text
+ * Censors a hint if it contains a spoiler about the artist or the title.
+ *
+ * @param hint - The text of the hint
+ * @param artist - Name of the artist
+ * @param title - Name of the title
+ * @returns The censored text
  */
 export function censorHint(hint: string, artist: string, title: string): string {
   if (!hint) return '';
 
-  // 1. Tokens extrahieren (Wörter ohne Sonderzeichen)
+  // 1. Extract tokens (words without special characters)
   const tokensToCensor = new Set<string>();
 
-  // Artist & Titel verarbeiten
+  // Process artist & title
   [artist, title].forEach(text => {
-    // Falls der Text komplett in den Ausnahmen ist (z.B. "BTS")
+    // If the text is entirely in the exceptions (e.g. "BTS")
     const cleanFull = text.replace(/[^a-zA-Z0-9]/g, '').toUpperCase();
     if (SPOILER_CONFIG.EXCEPTIONS.includes(cleanFull)) {
       tokensToCensor.add(text);
     }
 
-    // Einzelne Wörter verarbeiten
+    // Process individual words
     const words = text.split(/[\s\-&,/]+/);
     words.forEach(word => {
       const cleanWord = word.replace(/[^a-zA-Z0-9]/g, '').toUpperCase();
       
-      // Filter: Ignoriere Wörter aus der White-List (THE, AND, etc.)
+      // Filter: ignore words from the allow list (THE, AND, etc.)
       if (SPOILER_CONFIG.IGNORE_WORDS.includes(cleanWord)) return;
 
-      // Filter: Muss >= MIN_LENGTH sein ODER explizit in EXCEPTIONS stehen
+      // Filter: must be >= MIN_LENGTH OR explicitly listed in EXCEPTIONS
       if (cleanWord.length >= SPOILER_CONFIG.MIN_LENGTH || SPOILER_CONFIG.EXCEPTIONS.includes(cleanWord)) {
         tokensToCensor.add(word);
       }
@@ -39,14 +39,14 @@ export function censorHint(hint: string, artist: string, title: string): string 
 
   let censoredHint = hint;
 
-  // 2. Ersetzung durchführen (sortiert nach Länge, damit längere Phrasen zuerst ersetzt werden)
+  // 2. Perform the replacement (sorted by length so longer phrases are replaced first)
   const sortedTokens = Array.from(tokensToCensor)
     .filter(t => t.length > 0)
     .sort((a, b) => b.length - a.length);
 
   for (const token of sortedTokens) {
-    // Regex für das Token (case-insensitive, beachtet Wortgrenzen für kurze Wörter)
-    // Bei kurzen Exceptions (BTS) erzwingen wir Wortgrenzen, bei langen (> 4) sind wir großzügiger
+    // Regex for the token (case-insensitive, respects word boundaries for short words)
+    // For short exceptions (BTS) we enforce word boundaries, for long ones (> 4) we are more lenient
     const isShort = token.length < 4;
     const regexSource = isShort 
       ? `\\b${escapeRegExp(token)}\\b` 
@@ -59,7 +59,7 @@ export function censorHint(hint: string, artist: string, title: string): string 
   return censoredHint;
 }
 
-/** Hilfsfunktion für Regex-Sonderzeichen */
+/** Helper for regex special characters */
 function escapeRegExp(string: string): string {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }

@@ -1,9 +1,9 @@
 /**
  * DrawingPhase
  *
- * Die "Karte-Ziehen"-Phase am Beginn jeder Runde.
- * Zeigt den aktiven Spielmodus und einen großen Button,
- * der eine zufällige Spielkarte (Song) zieht und die Runde startet.
+ * The "card drawing" phase at the beginning of every round.
+ * Shows the active game mode and a large button
+ * that draws a random game card (song) and starts the round.
  */
 'use client';
 
@@ -20,12 +20,12 @@ import {
   type TranslationKey,
 } from '@/i18n/variant-keys';
 
-// ─── Juicy Text-Varianten ─────────────────────────────────────────
-// Die Varianten sind typisierte Schlüssellisten (siehe `src/i18n/variant-keys.ts`).
-// Die Anzahl der Varianten steckt damit in der Liste und wird nicht an zwei
-// Orten gepflegt.
+// ─── Juicy text variants ─────────────────────────────────────────
+// The variants are typed key lists (see `src/i18n/variant-keys.ts`).
+// The number of variants is therefore contained in the list and is not maintained
+// in two places.
 
-// ─── Modus-Metadaten ──────────────────────────────────────────────
+// ─── Mode metadata ──────────────────────────────────────────────
 
 const MODE_META: Record<
   GameMode,
@@ -81,11 +81,11 @@ interface DrawingPhaseProps {
   pilotColor?: string;
   nextPilotName?: string;
   nextPilotColor?: string;
-  /** Wird aufgerufen, wenn eine Karte gezogen wurde */
+  /** Called when a card has been drawn */
   onCardDrawn: (song: PhomuSong) => void;
 }
 
-// ─── Komponente ───────────────────────────────────────────────────
+// ─── Component ───────────────────────────────────────────────────
 
 export function DrawingPhase({
   currentMode,
@@ -132,14 +132,14 @@ export function DrawingPhase({
       return;
     }
 
-    // Kurze Delay für Animation, dann Song an Parent übergeben
+    // Short delay for the animation, then hand the song to the parent
     setTimeout(() => {
       onCardDrawn(song);
       setIsDrawing(false);
     }, 600);
   }, [isDrawing, playedSongIds, onCardDrawn, config, currentMode, t]);
 
-  // AUTO-DRAW: Wenn wir nach einem Skip hier ankommen, automatisch ziehen
+  // AUTO-DRAW: if we arrive here after a skip, draw automatically
   useEffect(() => {
     if (!autoDrawIntent || isDrawing) return;
 
@@ -152,7 +152,7 @@ export function DrawingPhase({
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 text-center">
-      {/* Modus-Icon mit Puls-Animation */}
+      {/* Mode icon with pulse animation */}
       <motion.div
         initial={{ scale: 0, rotate: -10 }}
         animate={{ scale: 1, rotate: 0 }}
@@ -163,7 +163,7 @@ export function DrawingPhase({
         {meta.icon}
       </motion.div>
 
-      {/* Modus-Name */}
+      {/* Mode name */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ export function DrawingPhase({
         {t(meta.titleKey)}
       </motion.h2>
 
-      {/* Spielanweisung */}
+      {/* Game instruction */}
       <motion.p
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
@@ -183,7 +183,7 @@ export function DrawingPhase({
         {t(meta.instructionKey)}
       </motion.p>
 
-      {/* Pilot-Info */}
+      {/* Pilot info */}
       {pilotName && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -208,7 +208,7 @@ export function DrawingPhase({
         </motion.div>
       )}
 
-      {/* Karte-Ziehen-Button */}
+      {/* Card drawing button */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -242,7 +242,7 @@ export function DrawingPhase({
         </AnimatePresence>
       </motion.div>
 
-      {/* Fehlermeldung */}
+      {/* Error message */}
       {error && (
         <p className="mt-4 text-sm" style={{ color: 'var(--color-error)' }}>
           {error}
