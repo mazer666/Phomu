@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "divergence/mode-rotation-random",
+  "area": "divergence",
+  "title": "The mode rotation is random — with two modes the result is not predictable",
+  "reference": "src/stores/game-store.ts:188-191",
+  "portable": false,
+  "portabilityNote": "The mode rotation draws from `Math.random()` (game-store.ts:190). The Rust core uses a seeded generator (CORE-113), but a seeded generator with a different algorithm produces a different sequence. The vector therefore uses a single mode in every portable case; the rotation itself is not comparable until the owner defines a shared algorithm and seed.",
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline",
+        "vibe-check"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 0,
+    "roundPhase": "drawing",
+    "currentMode": "timeline"
+  },
+  "when": [
+    {
+      "op": "startGame"
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

@@ -1,0 +1,10 @@
+[package]
+name = "phomu-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+phomu-errors = { path = "../phomu-errors" }
+# THE VIOLATION: a crate in core/ must not depend on a crate in platform/
+# (docs/design/BUILD-CONTRACT.md § 1.1).
+phomu-ffi = { path = "../../platform/phomu-ffi" }

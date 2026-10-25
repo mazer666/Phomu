@@ -58,3 +58,7 @@ song_database_export.csv
 # Übergabedokumente der Agenten (Arbeitsergebnis, nicht Teil des Repos)
 deliverable.md
 **/deliverable.md
+
+# Rust-Build-Artefakte (Cargo-Workspace)
+/target
+**/*.rs.bk

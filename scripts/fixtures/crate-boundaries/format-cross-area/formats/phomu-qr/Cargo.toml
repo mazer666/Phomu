@@ -1,0 +1,8 @@
+[package]
+name = "phomu-qr"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# THE VIOLATION: a format crate depends on nothing outside formats/.
+phomu-core = { path = "../../core/phomu-core" }

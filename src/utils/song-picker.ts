@@ -23,53 +23,93 @@ interface PickerOptions {
 }
 
 /**
- * Returns a random song that matches the criteria.
+ * Returns the songs that match the criteria — the filter chain without the
+ * random draw.
+ *
+ * WHY: the chain (pack → QR → difficulty → mode, each with a soft fallback)
+ * is a rule that the Rust core has to reproduce. It is separated from the
+ * random draw so that a second implementation can be compared with it
+ * without depending on a random number generator.
+ *
+ * The chain is applied in this order:
+ *  1. pack filter (absolute fallback to the whole catalogue if it is empty)
+ *  2. QR filter (soft fallback — ignored if it would empty the pool)
+ *  3. difficulty filter (soft fallback — ignored if it would empty the pool)
+ *  4. mode filter (hard fallback for `lyrics`, soft fallback otherwise)
+ *
+ * EXAMPLE: a catalogue of two songs, one with lyrics and one without, in the
+ *          mode `lyrics` → only the song with lyrics is returned.
  */
-export function pickRandomSong({ 
-  playedIds, 
-  selectedPacks, 
-  difficulty = 'all', 
-  onlyQRCompatible = false, 
-  currentMode 
-}: PickerOptions): PhomuSong | null {
-  
-  let basePool = ALL_SONGS;
+export function filterSongs(
+  catalogue: PhomuSong[],
+  {
+    selectedPacks,
+    difficulty = 'all',
+    onlyQRCompatible = false,
+    currentMode,
+  }: Omit<PickerOptions, 'playedIds'>
+): PhomuSong[] {
+  let basePool = catalogue;
   if (selectedPacks && selectedPacks.length > 0) {
     const packIds = normalizePackIds(selectedPacks);
-    basePool = ALL_SONGS.filter(s => s.packs.some(p => packIds.includes(p)));
+    basePool = catalogue.filter((s) =>
+      s.packs.some((p) => packIds.includes(p))
+    );
   }
-  if (basePool.length === 0) basePool = ALL_SONGS; // Absolute fallback
+  if (basePool.length === 0) basePool = catalogue; // Absolute fallback
 
   let pool = basePool;
 
   // Apply the optional filters (difficulty, QR). If these lead to 0 songs we ignore them (soft fallback)
   if (onlyQRCompatible) {
-    const qrPool = pool.filter(s => s.isQRCompatible);
+    const qrPool = pool.filter((s) => s.isQRCompatible);
     if (qrPool.length > 0) pool = qrPool;
   }
-  
+
   if (difficulty !== 'all') {
-    const diffPool = pool.filter(s => s.difficulty === difficulty);
+    const diffPool = pool.filter((s) => s.difficulty === difficulty);
     if (diffPool.length > 0) pool = diffPool;
   }
 
-  // 2. Mode-specific filters (e.g. Lyrics Labyrinth strictly requires lyrics)
+  // Mode-specific filters (e.g. Lyrics Labyrinth strictly requires lyrics)
   let modePool = pool;
   if (currentMode === 'lyrics') {
-    modePool = pool.filter(s => s.lyrics !== null);
+    modePool = pool.filter((s) => s.lyrics !== null);
   } else if (currentMode) {
-    modePool = pool.filter(s => s.supportedModes?.includes(currentMode as GameMode));
+    modePool = pool.filter((s) =>
+      s.supportedModes?.includes(currentMode as GameMode)
+    );
   }
 
   if (modePool.length > 0) {
     pool = modePool;
   } else if (currentMode === 'lyrics') {
-     // Hard fallback for lyrics: if the pool is 0 we strictly have to fall back to the base pool (ignored difficulty/QR)
-     const absoluteLyricsPool = basePool.filter(s => s.lyrics !== null);
-     if (absoluteLyricsPool.length > 0) pool = absoluteLyricsPool;
+    // Hard fallback for lyrics: if the pool is 0 we strictly have to fall back to the base pool (ignored difficulty/QR)
+    const absoluteLyricsPool = basePool.filter((s) => s.lyrics !== null);
+    if (absoluteLyricsPool.length > 0) pool = absoluteLyricsPool;
   }
 
-  // 3. Prefer songs that have not been played yet
+  return pool;
+}
+
+/**
+ * Returns a random song that matches the criteria.
+ */
+export function pickRandomSong({
+  playedIds,
+  selectedPacks,
+  difficulty = 'all',
+  onlyQRCompatible = false,
+  currentMode,
+}: PickerOptions): PhomuSong | null {
+  const pool = filterSongs(ALL_SONGS, {
+    selectedPacks,
+    difficulty,
+    onlyQRCompatible,
+    currentMode,
+  });
+
+  // Prefer songs that have not been played yet
   const available = pool.filter((s) => !playedIds.includes(s.id));
 
   // If everything has been played we ignore playedIds for older songs

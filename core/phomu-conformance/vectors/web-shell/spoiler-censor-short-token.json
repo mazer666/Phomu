@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "spoiler/censor-short-token",
+  "area": "spoiler",
+  "title": "A token shorter than four characters is not censored",
+  "reference": "src/utils/censor-utils.ts:34; src/config/spoiler-config.ts",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "hint-master"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "hint-master"
+  },
+  "when": [
+    {
+      "op": "censorHint",
+      "hint": "A song by AB from the seventies",
+      "artist": "AB",
+      "title": "Hi"
+    }
+  ],
+  "then": {
+    "phases": [
+      "question"
+    ],
+    "currentRound": 1,
+    "currentMode": "hint-master",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": "A song by AB from the seventies",
+    "filteredSongIds": null,
+    "error": null
+  }
+}

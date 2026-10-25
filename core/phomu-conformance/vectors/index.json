@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "vectors": [
+    {
+      "id": "core/round-timeline",
+      "file": "core-round-timeline.json",
+      "area": "phase-machine",
+      "title": "A complete round in the Timeline mode: draw, answer on the canonical slot, reveal.",
+      "portable": true
+    },
+    {
+      "id": "core/anti-spoiler-reveal-lock",
+      "file": "core-anti-spoiler-reveal-lock.json",
+      "area": "spoiler",
+      "title": "The reveal is refused until the answers of the round are locked in.",
+      "portable": true
+    },
+    {
+      "id": "core/hint-master-both",
+      "file": "core-hint-master-both.json",
+      "area": "scoring.hint-master",
+      "title": "The answer of the mode hint-master is correct and worth 5 points.",
+      "portable": true
+    },
+    {
+      "id": "core/lyrics-fake-line",
+      "file": "core-lyrics-fake-line.json",
+      "area": "scoring.lyrics",
+      "title": "The answer of the mode lyrics is correct and worth 4 points.",
+      "portable": true
+    },
+    {
+      "id": "core/vibe-check-mood",
+      "file": "core-vibe-check-mood.json",
+      "area": "scoring.vibe-check",
+      "title": "The answer of the mode vibe-check is correct and worth 2 points.",
+      "portable": true
+    },
+    {
+      "id": "core/survivor-one-hit-wonder",
+      "file": "core-survivor-one-hit-wonder.json",
+      "area": "scoring.survivor",
+      "title": "The answer of the mode survivor is correct and worth 3 points.",
+      "portable": true
+    },
+    {
+      "id": "core/cover-confusion-no-hint",
+      "file": "core-cover-confusion-no-hint.json",
+      "area": "scoring.cover-confusion",
+      "title": "The answer of the mode cover-confusion is correct and worth 5 points.",
+      "portable": true
+    },
+    {
+      "id": "core/scoring-time-decay",
+      "file": "core-scoring-time-decay.json",
+      "area": "time-decay",
+      "title": "A late answer: four base points, three decay steps, one point left.",
+      "portable": true
+    },
+    {
+      "id": "core/team-mode-fixed",
+      "file": "core-team-mode-fixed.json",
+      "area": "teams",
+      "title": "In the fixed team mode the team of the turn is credited, the player keeps the score.",
+      "portable": true
+    },
+    {
+      "id": "core/spoiler-censor",
+      "file": "core-spoiler-censor.json",
+      "area": "spoiler",
+      "title": "A hint that names the artist is censored.",
+      "portable": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[package]
+name = "phomu-i18n"
+description = "The closed message-key space of the Phomu base: keys, never texts."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+# The key space is a leaf: it depends on nothing.
+
+[lints]
+workspace = true

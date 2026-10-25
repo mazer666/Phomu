@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "divergence/shifting-teams-random",
+  "area": "divergence",
+  "title": "The shifting team mode re-shuffles the teams — the membership is random",
+  "reference": "src/stores/game-store.ts:349-363",
+  "portable": false,
+  "portabilityNote": "The shifting team mode re-shuffles the players with `Math.random()` (game-store.ts:353). The membership of the teams after the switch is therefore not predictable — and the reference keeps the points of the teams and the players (deviation A8). The vector records the score behaviour, which is deterministic; the membership is not part of the observation.",
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ],
+      "teamMode": "shifting",
+      "endingCondition": "rounds",
+      "targetRounds": 30
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 5,
+        "teamId": "t1",
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      },
+      {
+        "id": "p2",
+        "name": "Bo",
+        "score": 3,
+        "teamId": "t2",
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      },
+      {
+        "id": "p3",
+        "name": "Cyd",
+        "score": 0,
+        "teamId": "t1",
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "teams": [
+      {
+        "id": "t1",
+        "name": "Team One",
+        "playerIds": [
+          "p1",
+          "p3"
+        ],
+        "score": 5,
+        "color": "#FF6B35"
+      },
+      {
+        "id": "t2",
+        "name": "Team Two",
+        "playerIds": [
+          "p2"
+        ],
+        "score": 3,
+        "color": "#FF6B35"
+      }
+    ],
+    "turnOrder": [
+      "t1",
+      "t2"
+    ],
+    "currentTurnIndex": 1,
+    "currentRound": 1,
+    "roundPhase": "reveal",
+    "currentMode": "timeline"
+  },
+  "when": [
+    {
+      "op": "nextRound"
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing"
+    ],
+    "currentRound": 2,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 5,
+      "p2": 3,
+      "p3": 0
+    },
+    "teamScores": {
+      "t1": 5,
+      "t2": 3
+    },
+    "playerTeams": {},
+    "teamMembers": {},
+    "turnOrder": [
+      "t1",
+      "t2"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

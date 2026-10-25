@@ -1,0 +1,16 @@
+[package]
+name = "phomu-config"
+description = "The single source of the game constants of the Phomu base: every number the game obeys, with the TypeScript origin."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+# The configuration is a leaf: it depends on nothing.
+
+[lints]
+workspace = true

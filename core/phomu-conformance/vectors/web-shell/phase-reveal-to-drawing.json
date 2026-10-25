@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "phase/reveal-to-drawing",
+  "area": "phase-machine",
+  "title": "The next round starts in the drawing phase and clears the song",
+  "reference": "src/stores/game-store.ts:365-375",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "drawing",
+    "currentMode": "timeline",
+    "songs": {
+      "s-a": {
+        "id": "s-a",
+        "title": "Example Song",
+        "artist": "The Example",
+        "year": 1985,
+        "country": "US",
+        "genre": "Rock",
+        "difficulty": "medium",
+        "mood": [
+          "Dance Floor",
+          "Epic"
+        ],
+        "packs": [
+          "Rock Anthems"
+        ],
+        "hints": [
+          "Hint one",
+          "Hint two",
+          "Hint three",
+          "Hint four",
+          "Hint five"
+        ],
+        "lyrics": {
+          "real": [
+            "Real one",
+            "Real two",
+            "Real three"
+          ],
+          "fake": "Fake one"
+        },
+        "isOneHitWonder": false,
+        "supportedModes": [
+          "timeline",
+          "hint-master",
+          "lyrics",
+          "vibe-check",
+          "survivor",
+          "cover-confusion"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "https://www.youtube.com/watch?v=aaaaaaaaaaa"
+        }
+      }
+    }
+  },
+  "when": [
+    {
+      "op": "drawSong",
+      "songId": "s-a"
+    },
+    {
+      "op": "advancePhase",
+      "phase": "reveal"
+    },
+    {
+      "op": "nextRound"
+    }
+  ],
+  "then": {
+    "phases": [
+      "question",
+      "reveal",
+      "drawing"
+    ],
+    "currentRound": 2,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": "random",
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [
+      "s-a"
+    ],
+    "answers": [],
+    "roundCount": 1,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

@@ -1,0 +1,39 @@
+[package]
+name = "phomu-ffi"
+description = "The UniFFI bridge of Phomu: the exported surface for the Kotlin and the Swift shells."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[lib]
+name = "phomu_ffi"
+# The `cdylib` is the artefact that `uniffi-bindgen` reads to generate the
+# Kotlin and the Swift bindings; the `staticlib` is what an Android or an
+# Apple build links against.
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+
+[dependencies]
+# The bridge consumes the base and adds nothing of its own. It has no rules,
+# no data access and no policy (docs/design/BUILD-CONTRACT.md § 2.4).
+phomu-catalog = { workspace = true }
+phomu-core = { workspace = true }
+phomu-errors = { workspace = true }
+phomu-i18n = { workspace = true }
+phomu-media = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uniffi = { workspace = true }
+
+[dev-dependencies]
+uniffi = { workspace = true, features = ["cli"] }
+
+[lints]
+workspace = true

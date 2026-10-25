@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "team/points-sync-to-team",
+  "area": "teams",
+  "title": "Points for a player with a team are added to the team as well",
+  "reference": "src/stores/game-store.ts:451-476",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ],
+      "teamMode": "fixed"
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": "t1",
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "teams": [
+      {
+        "id": "t1",
+        "name": "Team One",
+        "playerIds": [
+          "p1"
+        ],
+        "score": 0,
+        "color": "#FF6B35"
+      }
+    ],
+    "turnOrder": [
+      "t1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "timeline"
+  },
+  "when": [
+    {
+      "op": "awardPoints",
+      "entityId": "p1",
+      "points": 4
+    }
+  ],
+  "then": {
+    "phases": [
+      "question"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 4
+    },
+    "teamScores": {
+      "t1": 4
+    },
+    "playerTeams": {
+      "p1": "t1"
+    },
+    "teamMembers": {
+      "t1": [
+        "p1"
+      ]
+    },
+    "turnOrder": [
+      "t1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

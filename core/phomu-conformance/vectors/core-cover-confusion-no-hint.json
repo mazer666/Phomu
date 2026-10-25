@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "core/cover-confusion-no-hint",
+  "area": "scoring.cover-confusion",
+  "title": "The answer of the mode cover-confusion is correct and worth 5 points.",
+  "reference": "src/components/game/modes/CoverConfusionMode.tsx:23, 41, 63-84",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "cover-confusion"
+      ],
+      "timelineMaxPoints": 5
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "drawing",
+    "currentMode": "cover-confusion",
+    "timelineYears": [
+      1970,
+      1980,
+      1990
+    ],
+    "songs": {
+      "s1": {
+        "id": "s1",
+        "title": "Blaue Laterne",
+        "artist": "Die Band",
+        "year": 1985,
+        "country": "DE",
+        "genre": "Pop",
+        "difficulty": "easy",
+        "mood": [
+          "Chill",
+          "Epic"
+        ],
+        "packs": [
+          "Rock Anthems"
+        ],
+        "hints": [
+          "Ein Synthesizer",
+          "Ein Klavier",
+          "Eine Schlagzeugmaschine",
+          "Ein Verzerrer",
+          "Fast schon der Refrain"
+        ],
+        "lyrics": {
+          "real": [
+            "Erste Zeile",
+            "Zweite Zeile",
+            "Dritte Zeile"
+          ],
+          "fake": "Erfundene Zeile"
+        },
+        "isOneHitWonder": true,
+        "supportedModes": [
+          "timeline",
+          "hint-master",
+          "lyrics",
+          "vibe-check",
+          "survivor",
+          "cover-confusion"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "abcdefghijk"
+        }
+      }
+    }
+  },
+  "when": [
+    {
+      "op": "startGame"
+    },
+    {
+      "op": "drawSong",
+      "songId": "s1"
+    },
+    {
+      "op": "answer",
+      "mode": "cover-confusion",
+      "answer": {
+        "kind": "cover-confusion",
+        "hintsUsed": 0,
+        "pickedArtist": "Die Band"
+      }
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing",
+      "question",
+      "locked-in"
+    ],
+    "currentRound": 1,
+    "currentMode": "cover-confusion",
+    "currentSongId": "s1",
+    "currentSongSource": "random",
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 5
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [
+      1970,
+      1980,
+      1990
+    ],
+    "playedSongIds": [
+      "s1"
+    ],
+    "answers": [
+      {
+        "playerId": "p1",
+        "answer": "correct",
+        "outcome": "correct",
+        "isCorrect": true,
+        "pointsAwarded": 5,
+        "answeredInSeconds": null
+      }
+    ],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

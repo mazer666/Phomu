@@ -1,0 +1,18 @@
+[package]
+name = "phomu-conformance"
+description = "The conformance vectors of the Phomu base: machine-readable input/output pairs and the runner that replays them."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+phomu-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

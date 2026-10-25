@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "round/end-game-awards-xp",
+  "area": "round-logic",
+  "title": "endGame adds the points of the session to the total XP",
+  "reference": "src/stores/game-store.ts:379-391",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 7,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      },
+      {
+        "id": "p2",
+        "name": "Bo",
+        "score": 5,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 3,
+    "roundPhase": "reveal",
+    "currentMode": "timeline",
+    "totalXP": 3
+  },
+  "when": [
+    {
+      "op": "endGame",
+      "winnerId": "p1"
+    }
+  ],
+  "then": {
+    "phases": [
+      "scoring"
+    ],
+    "currentRound": 3,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 7,
+      "p2": 5
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null,
+      "p2": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": "p1",
+    "isGameOver": true,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 15,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

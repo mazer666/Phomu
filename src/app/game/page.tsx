@@ -42,6 +42,7 @@ import { InGameSettingsPanel } from '@/components/game/InGameSettingsPanel';
 import { pickLastRoundMessage } from '@/utils/last-round-messages';
 import type { LastRoundMessage } from '@/utils/last-round-messages';
 import { useGameAudioCues } from '@/hooks/useGameAudioCues';
+import { answerLabel, resolveAnswerPoints } from '@/utils/mode-rules';
 
 export default function GamePage() {
   const router = useRouter();
@@ -135,29 +136,16 @@ export default function GamePage() {
     ) => {
       if (!pilotId) return;
 
-      let pointsAwarded = basePointsAwarded;
-      if (
-        isCorrect &&
-        config.timeDecayEnabled &&
-        typeof answeredInSeconds === 'number'
-      ) {
-        const overtime = Math.max(
-          0,
-          answeredInSeconds - config.timeDecayGraceSeconds
-        );
-        const decaySteps = Math.floor(
-          overtime / Math.max(1, config.timeDecayStepSeconds)
-        );
-        const decayPoints = decaySteps * config.timeDecayStepPoints;
-        pointsAwarded = Math.max(
-          config.minPointsPerCorrect,
-          basePointsAwarded - decayPoints
-        );
-      }
+      const pointsAwarded = resolveAnswerPoints(
+        basePointsAwarded,
+        isCorrect,
+        answeredInSeconds,
+        config
+      );
 
       const answer: PlayerAnswer = {
         playerId: pilotId,
-        answer: isCorrect ? 'correct' : 'incorrect',
+        answer: answerLabel(isCorrect),
         isCorrect,
         pointsAwarded,
         answeredInSeconds,
@@ -168,16 +156,7 @@ export default function GamePage() {
         awardPoints(pilotId, pointsAwarded);
       }
     },
-    [
-      pilotId,
-      config.timeDecayEnabled,
-      config.timeDecayGraceSeconds,
-      config.timeDecayStepSeconds,
-      config.timeDecayStepPoints,
-      config.minPointsPerCorrect,
-      submitAnswer,
-      awardPoints,
-    ]
+    [pilotId, config, submitAnswer, awardPoints]
   );
 
   // ── Handler: start the reveal ────────────────────────────────────

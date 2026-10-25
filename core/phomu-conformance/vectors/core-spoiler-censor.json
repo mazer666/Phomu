@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "core/spoiler-censor",
+  "area": "spoiler",
+  "title": "A hint that names the artist is censored.",
+  "reference": "src/utils/censor-utils.ts:11-59",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "hint-master"
+      ],
+      "timelineMaxPoints": 5
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "hint-master",
+    "timelineYears": [],
+    "songs": {
+      "s1": {
+        "id": "s1",
+        "title": "Blaue Laterne",
+        "artist": "Die Band",
+        "year": 1985,
+        "country": "DE",
+        "genre": "Pop",
+        "difficulty": "easy",
+        "mood": [
+          "Chill",
+          "Epic"
+        ],
+        "packs": [
+          "Rock Anthems"
+        ],
+        "hints": [
+          "Ein Synthesizer",
+          "Ein Klavier",
+          "Eine Schlagzeugmaschine",
+          "Ein Verzerrer",
+          "Fast schon der Refrain"
+        ],
+        "lyrics": {
+          "real": [
+            "Erste Zeile",
+            "Zweite Zeile",
+            "Dritte Zeile"
+          ],
+          "fake": "Erfundene Zeile"
+        },
+        "isOneHitWonder": true,
+        "supportedModes": [
+          "timeline",
+          "hint-master",
+          "lyrics",
+          "vibe-check",
+          "survivor",
+          "cover-confusion"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "abcdefghijk"
+        }
+      }
+    }
+  },
+  "when": [
+    {
+      "op": "censorHint",
+      "hint": "Die Band sang das",
+      "artist": "Die Band",
+      "title": "Blaue Laterne"
+    }
+  ],
+  "then": {
+    "phases": [
+      "question"
+    ],
+    "currentRound": 1,
+    "currentMode": "hint-master",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": "Die [XXX] sang das",
+    "filteredSongIds": null,
+    "error": null
+  }
+}

@@ -12,6 +12,9 @@
 #   - Catalog Validation -> scripts: validate-songs, validate-catalog
 #   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size,
 #                         check:doc-language
+#   - Rust Core           -> cargo build, test, clippy, fmt, doc (the shared base)
+#   - Rust Boundaries     -> scripts/check-crate-boundaries.mjs (the dependency rule)
+#   - Conformance         -> npm run check:conformance (shared core against the web shell)
 #   - Build              -> scripts: build (next build, output: 'export')
 #
 # Node version: 22 — the version with which the reference measurement of
@@ -141,6 +144,91 @@ jobs:
       - name: Gate — documentation language
         if: always()
         run: npm run check:doc-language
+
+  rust-core:
+    name: Rust Core
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: rust-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+          restore-keys: |
+            rust-${{ runner.os }}-
+      - name: Build the shared core
+        run: cargo build --workspace --locked
+      # `cargo test` does not build the cdylib of a bridge. The bridge round
+      # trip needs it, so it is built before the tests run.
+      - name: Build the bridge artefacts
+        run: cargo build --workspace --release --lib
+      - name: Test the shared core
+        run: cargo test --workspace --locked
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Formatting
+        run: cargo fmt --check
+      - name: Documentation
+        run: cargo doc --workspace --no-deps
+
+  rust-boundaries:
+    name: Rust Boundaries
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Gate — crate boundaries
+        run: node scripts/check-crate-boundaries.mjs
+
+  conformance:
+    name: Conformance
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: conformance-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+          restore-keys: |
+            conformance-${{ runner.os }}-
+      # The comparison runs the web shell and the shared Rust core against the
+      # same vectors. A difference must be a deliberate one, listed in
+      # docs/acceptance/P0-ACCEPTANCE.md.
+      - name: Compare the shared core with the web shell
+        run: npm run check:conformance
 
   build:
     name: Build

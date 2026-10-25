@@ -1,0 +1,18 @@
+[package]
+name = "phomu-catalog"
+description = "The catalogue model of the Phomu base: songs, packs, the selection rules and the catalogue validation."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+# The catalogue is a leaf: it depends on nothing. The catalogue *data* is a
+# versioned artefact (docs/design/PLATFORM-ARCHITECTURE.md § 9), the shell
+# supplies it; this crate owns the model and the rules.
+
+[lints]
+workspace = true

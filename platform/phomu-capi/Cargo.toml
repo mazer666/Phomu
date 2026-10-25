@@ -1,0 +1,29 @@
+[package]
+name = "phomu-capi"
+description = "The C-ABI bridge of Phomu: a stable binary artefact for embedders that do not want UniFFI."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[lib]
+name = "phomu_capi"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[[bin]]
+name = "phomu-capi-header"
+path = "src/bin/generate-header.rs"
+
+[dependencies]
+# The C-ABI bridge reuses the wire model of the UniFFI bridge: the two
+# bridges export the same surface and must not drift apart
+# (docs/design/BUILD-CONTRACT.md § 2.1).
+phomu-ffi = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true

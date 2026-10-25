@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "core/phomu-core",
+    "core/phomu-config",
+    "core/phomu-errors",
+    "formats/phomu-qr",
+    "platform/phomu-ffi",
+    "tools/catalog-tool",
+    "apps/android",
+]

@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "vectors": [
+    {
+      "id": "phase/drawing-to-question",
+      "file": "phase-drawing-to-question.json",
+      "area": "phase-machine",
+      "title": "Drawing a song moves the round into the question phase",
+      "portable": true
+    },
+    {
+      "id": "phase/question-to-reveal",
+      "file": "phase-question-to-reveal.json",
+      "area": "phase-machine",
+      "title": "The reveal phase is entered by advancePhase",
+      "portable": true
+    },
+    {
+      "id": "phase/reveal-to-drawing",
+      "file": "phase-reveal-to-drawing.json",
+      "area": "phase-machine",
+      "title": "The next round starts in the drawing phase and clears the song",
+      "portable": true
+    },
+    {
+      "id": "phase/reveal-to-scoring",
+      "file": "phase-reveal-to-scoring.json",
+      "area": "phase-machine",
+      "title": "endGame moves the round into the scoring phase",
+      "portable": true
+    },
+    {
+      "id": "phase/skip-broken-random",
+      "file": "phase-skip-broken-random.json",
+      "area": "phase-machine",
+      "title": "A broken song from the random draw is discarded and re-drawn automatically",
+      "portable": true
+    },
+    {
+      "id": "phase/skip-broken-qr",
+      "file": "phase-skip-broken-qr.json",
+      "area": "phase-machine",
+      "title": "A broken song from a QR scan keeps the song — the pilot scans again",
+      "portable": true
+    },
+    {
+      "id": "phase/locked-in-declared",
+      "file": "phase-locked-in-declared.json",
+      "area": "phase-machine",
+      "title": "The declared phase `locked-in` can be set — no flow enters it",
+      "portable": false
+    },
+    {
+      "id": "phase/start-game-turn-order-individual",
+      "file": "phase-start-game-turn-order-individual.json",
+      "area": "phase-machine",
+      "title": "startGame builds the turn order from the players in the individual mode",
+      "portable": true
+    },
+    {
+      "id": "phase/start-game-turn-order-teams",
+      "file": "phase-start-game-turn-order-teams.json",
+      "area": "phase-machine",
+      "title": "startGame builds the turn order from the teams in the fixed team mode",
+      "portable": true
+    },
+    {
+      "id": "round/next-round-increments-and-rotates",
+      "file": "round-next-round-increments-and-rotates.json",
+      "area": "round-logic",
+      "title": "The next round increments the round and rotates the turn",
+      "portable": true
+    },
+    {
+      "id": "round/next-round-logs-history",
+      "file": "round-next-round-logs-history.json",
+      "area": "round-logic",
+      "title": "A round with a drawn song is written into the history",
+      "portable": true
+    },
+    {
+      "id": "round/next-round-without-song-does-not-log",
+      "file": "round-next-round-without-song-does-not-log.json",
+      "area": "round-logic",
+      "title": "A round without a drawn song is not written into the history",
+      "portable": true
+    },
+    {
+      "id": "round/win-by-points",
+      "file": "round-win-by-points.json",
+      "area": "round-logic",
+      "title": "At the end of the rotation the points condition ends the game",
+      "portable": true
+    },
+    {
+      "id": "round/win-by-points-team",
+      "file": "round-win-by-points-team.json",
+      "area": "round-logic",
+      "title": "At the end of the rotation the points condition ends the team game",
+      "portable": true
+    },
+    {
+      "id": "round/win-by-rounds",
+      "file": "round-win-by-rounds.json",
+      "area": "round-logic",
+      "title": "At the end of the rotation the rounds condition ends the game without a winner",
+      "portable": true
+    },
+    {
+      "id": "round/win-by-time",
+      "file": "round-win-by-time.json",
+      "area": "round-logic",
+      "title": "At the end of the rotation the time condition ends the game without a winner",
+      "portable": true
+    },
+    {
+      "id": "round/no-win-before-end-of-rotation",
+      "file": "round-no-win-before-end-of-rotation.json",
+      "area": "round-logic",
+      "title": "The win conditions are only checked at the end of the rotation",
+      "portable": true
+    },
+    {
+      "id": "round/end-game-awards-xp",
+      "file": "round-end-game-awards-xp.json",
+      "area": "round-logic",
+      "title": "endGame adds the points of the session to the total XP",
+      "portable": true
+    },
+    {
+      "id": "timeline/correct-canonical-slot",
+      "file": "timeline-correct-canonical-slot.json",
+      "area": "scoring.timeline",
+      "title": "The canonical slot is correct and awards one point per year on the timeline",
+      "portable": true
+    },
+    {
+      "id": "timeline/wrong-slot",
+      "file": "timeline-wrong-slot.json",
+      "area": "scoring.timeline",
+      "title": "A wrong slot awards no points and leaves the timeline unchanged",
+      "portable": true
+    },
+    {
+      "id": "timeline/duplicate-year",
+      "file": "timeline-duplicate-year.json",
+      "area": "scoring.timeline",
+      "title": "A duplicate year is added and removed again — the timeline stays the same",
+      "portable": true
+    },
+    {
+      "id": "timeline/points-cap",
+      "file": "timeline-points-cap.json",
+      "area": "scoring.timeline",
+      "title": "The timeline points are capped at the configured maximum",
+      "portable": true
+    },
+    {
+      "id": "timeline/no-selection-does-nothing",
+      "file": "timeline-no-selection-does-nothing.json",
+      "area": "scoring.timeline",
+      "title": "Without a selected slot the reveal is aborted — no answer, no points",
+      "portable": true
+    },
+    {
+      "id": "timeline/cheat-decade-hint-penalty",
+      "file": "timeline-cheat-decade-hint-penalty.json",
+      "area": "scoring.timeline",
+      "title": "The decade hint costs two points",
+      "portable": true
+    },
+    {
+      "id": "timeline/score-floor-zero",
+      "file": "timeline-score-floor-zero.json",
+      "area": "scoring.timeline",
+      "title": "The score never falls below zero",
+      "portable": true
+    },
+    {
+      "id": "hint-master/both-level-1",
+      "file": "hint-master-both-level-1.json",
+      "area": "scoring.hint-master",
+      "title": "Knowing artist and title at level 1 awards the full five points",
+      "portable": true
+    },
+    {
+      "id": "hint-master/artist-level-5",
+      "file": "hint-master-artist-level-5.json",
+      "area": "scoring.hint-master",
+      "title": "Knowing only the artist at level 5 awards half of one point — rounded up",
+      "portable": true
+    },
+    {
+      "id": "hint-master/nothing",
+      "file": "hint-master-nothing.json",
+      "area": "scoring.hint-master",
+      "title": "Knowing nothing is a wrong answer and awards no points",
+      "portable": true
+    },
+    {
+      "id": "hint-master/music-cheat-penalty",
+      "file": "hint-master-music-cheat-penalty.json",
+      "area": "scoring.hint-master",
+      "title": "The music cheat costs two points",
+      "portable": true
+    },
+    {
+      "id": "lyrics/fake-line",
+      "file": "lyrics-fake-line.json",
+      "area": "scoring.lyrics",
+      "title": "Picking the fake line awards four points",
+      "portable": true
+    },
+    {
+      "id": "lyrics/real-line",
+      "file": "lyrics-real-line.json",
+      "area": "scoring.lyrics",
+      "title": "Picking a real line awards no points",
+      "portable": true
+    },
+    {
+      "id": "lyrics/bonus-claimed",
+      "file": "lyrics-bonus-claimed.json",
+      "area": "scoring.lyrics",
+      "title": "The bonus round of a song without lyrics awards two points",
+      "portable": true
+    },
+    {
+      "id": "vibe-check/matching-mood",
+      "file": "vibe-check-matching-mood.json",
+      "area": "scoring.vibe-check",
+      "title": "A mood of the song awards two points",
+      "portable": true
+    },
+    {
+      "id": "vibe-check/cheated",
+      "file": "vibe-check-cheated.json",
+      "area": "scoring.vibe-check",
+      "title": "After the cheat a matching mood awards only one point",
+      "portable": true
+    },
+    {
+      "id": "vibe-check/wrong-mood",
+      "file": "vibe-check-wrong-mood.json",
+      "area": "scoring.vibe-check",
+      "title": "A mood the song does not have awards no points",
+      "portable": true
+    },
+    {
+      "id": "survivor/correct",
+      "file": "survivor-correct.json",
+      "area": "scoring.survivor",
+      "title": "A correct one-hit-wonder guess awards three points",
+      "portable": true
+    },
+    {
+      "id": "survivor/wrong",
+      "file": "survivor-wrong.json",
+      "area": "scoring.survivor",
+      "title": "A wrong one-hit-wonder guess awards no points",
+      "portable": true
+    },
+    {
+      "id": "survivor/cheat-penalty",
+      "file": "survivor-cheat-penalty.json",
+      "area": "scoring.survivor",
+      "title": "The cheat that reveals the artist costs one point",
+      "portable": true
+    },
+    {
+      "id": "cover/no-hints",
+      "file": "cover-no-hints.json",
+      "area": "scoring.cover-confusion",
+      "title": "Without a hint the Cover Confusion mode awards five points",
+      "portable": true
+    },
+    {
+      "id": "cover/two-hints",
+      "file": "cover-two-hints.json",
+      "area": "scoring.cover-confusion",
+      "title": "After two hints the Cover Confusion mode awards three points",
+      "portable": true
+    },
+    {
+      "id": "cover/three-hints",
+      "file": "cover-three-hints.json",
+      "area": "scoring.cover-confusion",
+      "title": "After three hints the Cover Confusion mode awards two points",
+      "portable": true
+    },
+    {
+      "id": "cover/wrong-artist",
+      "file": "cover-wrong-artist.json",
+      "area": "scoring.cover-confusion",
+      "title": "The wrong artist awards no points",
+      "portable": true
+    },
+    {
+      "id": "cover/variation-correct",
+      "file": "cover-variation-correct.json",
+      "area": "scoring.cover-confusion",
+      "title": "The variation \"cover or original?\" awards three points",
+      "portable": true
+    },
+    {
+      "id": "cover/variation-wrong",
+      "file": "cover-variation-wrong.json",
+      "area": "scoring.cover-confusion",
+      "title": "The wrong answer of the variation awards no points",
+      "portable": true
+    },
+    {
+      "id": "decay/within-grace",
+      "file": "decay-within-grace.json",
+      "area": "time-decay",
+      "title": "Within the grace period the answer keeps the full amount",
+      "portable": true
+    },
+    {
+      "id": "decay/one-step",
+      "file": "decay-one-step.json",
+      "area": "time-decay",
+      "title": "Every decay step costs one point",
+      "portable": true
+    },
+    {
+      "id": "decay/minimum",
+      "file": "decay-minimum.json",
+      "area": "time-decay",
+      "title": "The decayed amount never falls below the configured minimum",
+      "portable": true
+    },
+    {
+      "id": "team/points-sync-to-team",
+      "file": "team-points-sync-to-team.json",
+      "area": "teams",
+      "title": "Points for a player with a team are added to the team as well",
+      "portable": true
+    },
+    {
+      "id": "team/award-to-team-only",
+      "file": "team-award-to-team-only.json",
+      "area": "teams",
+      "title": "Points for a team are added to the team only",
+      "portable": true
+    },
+    {
+      "id": "team/assign-player",
+      "file": "team-assign-player.json",
+      "area": "teams",
+      "title": "Assigning a player moves them into the team",
+      "portable": true
+    },
+    {
+      "id": "team/remove-team-clears-membership",
+      "file": "team-remove-team-clears-membership.json",
+      "area": "teams",
+      "title": "Removing a team clears the team of its members",
+      "portable": true
+    },
+    {
+      "id": "error/unknown-song-id",
+      "file": "error-unknown-song-id.json",
+      "area": "errors",
+      "title": "A draw with an unknown song id is refused by the vector layer",
+      "portable": true
+    },
+    {
+      "id": "error/answer-without-current-song",
+      "file": "error-answer-without-current-song.json",
+      "area": "errors",
+      "title": "An answer without a drawn song is refused by the vector layer",
+      "portable": false
+    },
+    {
+      "id": "error/answer-without-player",
+      "file": "error-answer-without-player.json",
+      "area": "errors",
+      "title": "Without a current player no answer is recorded — the timeline still changes",
+      "portable": true
+    },
+    {
+      "id": "error/award-points-unknown-player",
+      "file": "error-award-points-unknown-player.json",
+      "area": "errors",
+      "title": "Points for an unknown player are ignored — the reference stays silent",
+      "portable": false
+    },
+    {
+      "id": "error/remove-unknown-timeline-year",
+      "file": "error-remove-unknown-timeline-year.json",
+      "area": "errors",
+      "title": "Removing a year that is not on the timeline changes nothing",
+      "portable": false
+    },
+    {
+      "id": "catalogue/pack-filter",
+      "file": "catalogue-pack-filter.json",
+      "area": "catalogue",
+      "title": "The pack filter selects only the songs of the pack",
+      "portable": true
+    },
+    {
+      "id": "catalogue/difficulty-filter",
+      "file": "catalogue-difficulty-filter.json",
+      "area": "catalogue",
+      "title": "The difficulty filter narrows the pool further",
+      "portable": true
+    },
+    {
+      "id": "catalogue/qr-filter",
+      "file": "catalogue-qr-filter.json",
+      "area": "catalogue",
+      "title": "The QR filter keeps only the songs that are on a physical card",
+      "portable": true
+    },
+    {
+      "id": "catalogue/legacy-pack-alias",
+      "file": "catalogue-legacy-pack-alias.json",
+      "area": "catalogue",
+      "title": "A legacy pack id is mapped to the current pack — with the absolute fallback",
+      "portable": true
+    },
+    {
+      "id": "catalogue/mode-filter",
+      "file": "catalogue-mode-filter.json",
+      "area": "catalogue",
+      "title": "The mode filter selects only the songs that support the mode",
+      "portable": true
+    },
+    {
+      "id": "catalogue/lyrics-hard-fallback",
+      "file": "catalogue-lyrics-hard-fallback.json",
+      "area": "catalogue",
+      "title": "The lyrics mode falls back to the pack pool when it holds songs with lyrics",
+      "portable": true
+    },
+    {
+      "id": "catalogue/difficulty-filter-soft-fallback",
+      "file": "catalogue-difficulty-filter-soft-fallback.json",
+      "area": "catalogue",
+      "title": "The difficulty filter is ignored when it would empty the pool",
+      "portable": true
+    },
+    {
+      "id": "catalogue/qr-filter-soft-fallback",
+      "file": "catalogue-qr-filter-soft-fallback.json",
+      "area": "catalogue",
+      "title": "The QR filter is ignored when it would empty the pool",
+      "portable": true
+    },
+    {
+      "id": "spoiler/censor-artist-token",
+      "file": "spoiler-censor-artist-token.json",
+      "area": "spoiler",
+      "title": "A hint that names the artist is censored",
+      "portable": true
+    },
+    {
+      "id": "spoiler/censor-short-token",
+      "file": "spoiler-censor-short-token.json",
+      "area": "spoiler",
+      "title": "A token shorter than four characters is not censored",
+      "portable": true
+    },
+    {
+      "id": "spoiler/censor-exception-token",
+      "file": "spoiler-censor-exception-token.json",
+      "area": "spoiler",
+      "title": "A short artist from the exception list is censored anyway",
+      "portable": true
+    },
+    {
+      "id": "spoiler/censor-ignore-word",
+      "file": "spoiler-censor-ignore-word.json",
+      "area": "spoiler",
+      "title": "A word of the ignore list is never censored",
+      "portable": true
+    },
+    {
+      "id": "divergence/mode-rotation-random",
+      "file": "divergence-mode-rotation-random.json",
+      "area": "divergence",
+      "title": "The mode rotation is random — with two modes the result is not predictable",
+      "portable": false
+    },
+    {
+      "id": "divergence/shifting-teams-random",
+      "file": "divergence-shifting-teams-random.json",
+      "area": "divergence",
+      "title": "The shifting team mode re-shuffles the teams — the membership is random",
+      "portable": false
+    }
+  ]
+}

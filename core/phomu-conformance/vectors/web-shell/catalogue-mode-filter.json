@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "catalogue/mode-filter",
+  "area": "catalogue",
+  "title": "The mode filter selects only the songs that support the mode",
+  "reference": "src/utils/song-picker.ts:56-70",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "drawing",
+    "currentMode": "timeline",
+    "catalogue": [
+      {
+        "id": "c1",
+        "title": "Rock One",
+        "artist": "Rockers",
+        "year": 1971,
+        "difficulty": "easy",
+        "packs": [
+          "Rock Anthems"
+        ],
+        "mood": [
+          "Epic"
+        ],
+        "lyrics": null,
+        "supportedModes": [
+          "timeline",
+          "vibe-check"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "u1"
+        }
+      },
+      {
+        "id": "c2",
+        "title": "Rock Two",
+        "artist": "Rockers",
+        "year": 1982,
+        "difficulty": "hard",
+        "packs": [
+          "Rock Anthems",
+          "80s Flashback"
+        ],
+        "mood": [
+          "Epic"
+        ],
+        "lyrics": {
+          "real": [
+            "a",
+            "b",
+            "c"
+          ],
+          "fake": "d"
+        },
+        "supportedModes": [
+          "timeline",
+          "lyrics"
+        ],
+        "isQRCompatible": false,
+        "links": {
+          "youtube": "u2"
+        }
+      },
+      {
+        "id": "c3",
+        "title": "Flashback",
+        "artist": "Flashbacks",
+        "year": 1989,
+        "difficulty": "medium",
+        "packs": [
+          "80s Flashback"
+        ],
+        "mood": [
+          "Nostalgic"
+        ],
+        "lyrics": null,
+        "supportedModes": [
+          "timeline"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "u3"
+        }
+      },
+      {
+        "id": "c4",
+        "title": "Electro",
+        "artist": "Machines",
+        "year": 2004,
+        "difficulty": "easy",
+        "packs": [
+          "Electronic & Techno"
+        ],
+        "mood": [
+          "Dance Floor"
+        ],
+        "lyrics": null,
+        "supportedModes": [
+          "vibe-check"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "u4"
+        }
+      },
+      {
+        "id": "c5",
+        "title": "Electro Two",
+        "artist": "Machines",
+        "year": 2011,
+        "difficulty": "medium",
+        "packs": [
+          "Electronic & Techno"
+        ],
+        "mood": [
+          "Dance Floor"
+        ],
+        "lyrics": null,
+        "supportedModes": [
+          "timeline",
+          "vibe-check"
+        ],
+        "isQRCompatible": false,
+        "links": {
+          "youtube": "u5"
+        }
+      },
+      {
+        "id": "c6",
+        "title": "Metal One",
+        "artist": "Metallers",
+        "year": 1995,
+        "difficulty": "hard",
+        "packs": [
+          "Metal & Hardcore"
+        ],
+        "mood": [
+          "Dark"
+        ],
+        "lyrics": null,
+        "supportedModes": [
+          "timeline"
+        ],
+        "isQRCompatible": false,
+        "links": {
+          "youtube": "u6"
+        }
+      }
+    ]
+  },
+  "when": [
+    {
+      "op": "filterSongs",
+      "options": {
+        "currentMode": "vibe-check"
+      }
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": [
+      "c1",
+      "c4",
+      "c5"
+    ],
+    "error": null
+  }
+}

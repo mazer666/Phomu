@@ -23,8 +23,11 @@ import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
-
-const POINTS_BY_HINTS = [5, 4, 3, 2] as const;
+import {
+  coverConfusionAward,
+  coverConfusionPoints,
+  coverConfusionVariationAward,
+} from '@/utils/mode-rules';
 
 type Phase = 'listening' | 'self-assess' | 'choice' | 'done';
 
@@ -53,7 +56,7 @@ export function CoverConfusionMode({
     Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover'
   );
 
-  const points = POINTS_BY_HINTS[Math.min(hintsUsed, 3)];
+  const points = coverConfusionPoints(hintsUsed);
   const playLink = song.links.coverLink || song.links.youtube;
   const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
 
@@ -89,7 +92,8 @@ export function CoverConfusionMode({
   function handleSelfAssess(correct: boolean) {
     setWasCorrect(correct);
     // CoverConfusion: points based on the hints (cheats were already deducted)
-    onAnswer(correct, correct ? points : 0);
+    const outcome = coverConfusionAward(hintsUsed, correct);
+    onAnswer(outcome.isCorrect, outcome.points);
     setPhase('done');
   }
 
@@ -97,15 +101,18 @@ export function CoverConfusionMode({
     const correct = artist === song.artist;
     setWasCorrect(correct);
     // CoverConfusion: points based on the hints (cheats were already deducted)
-    onAnswer(correct, correct ? points : 0);
+    const outcome = coverConfusionAward(hintsUsed, correct);
+    onAnswer(outcome.isCorrect, outcome.points);
     setPhase('done');
   }
 
   function handleChoiceVariation(guessCover: boolean) {
-    const actuallyCover = !!song.links.coverLink;
-    const correct = guessCover === actuallyCover;
-    setWasCorrect(correct);
-    onAnswer(correct, correct ? 3 : 0); // 3 pts for the variation
+    const outcome = coverConfusionVariationAward(
+      guessCover,
+      Boolean(song.links.coverLink)
+    );
+    setWasCorrect(outcome.isCorrect);
+    onAnswer(outcome.isCorrect, outcome.points); // 3 pts for the variation
     setPhase('done');
   }
 
@@ -198,11 +205,11 @@ export function CoverConfusionMode({
                 {hintsUsed < 2
                   ? t('modes.cover-confusion.getHint', {
                       points: numberFormat.format(
-                        POINTS_BY_HINTS[hintsUsed + 1]
+                        coverConfusionPoints(hintsUsed + 1)
                       ),
                     })
                   : t('modes.cover-confusion.lastHint', {
-                      points: numberFormat.format(POINTS_BY_HINTS[3]),
+                      points: numberFormat.format(coverConfusionPoints(3)),
                     })}
               </button>
             </>

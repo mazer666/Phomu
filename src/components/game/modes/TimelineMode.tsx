@@ -19,6 +19,14 @@ import type { PhomuSong } from '@/types/song';
 import { getAllSongs } from '@/utils/song-picker';
 import { useGameStore } from '@/stores/game-store';
 import { getSpicyColor } from '@/utils/feedback-messages';
+import {
+  CHEAT_PENALTY_TIMELINE_DECADE,
+  CHEAT_PENALTY_TIMELINE_JOKER,
+  timelineAnswerEffect,
+  timelineCanonicalSlot,
+  timelinePoints,
+  timelineValidSlots,
+} from '@/utils/mode-rules';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
 
@@ -113,37 +121,17 @@ function randomInitialYears(count: number): number[] {
  * Returns all accepted slot indexes.
  * If the year already occurs in the timeline, both slots around
  * the duplicate (before and after) count as correct.
+ *
+ * The rule itself lives in `@/utils/mode-rules` so that the conformance
+ * runner can execute it without React.
  */
 function getValidSlots(songYear: number, sortedYears: number[]): Set<number> {
-  const slots = new Set<number>();
-
-  // Kanonischer Slot: erster Slot, wo songYear < sortedYears[i]
-  let canonical = sortedYears.length;
-  for (let i = 0; i < sortedYears.length; i++) {
-    if (songYear < sortedYears[i]) {
-      canonical = i;
-      break;
-    }
-  }
-  slots.add(canonical);
-
-  // For exactly equal years: accept the slot before and after as well
-  for (let i = 0; i < sortedYears.length; i++) {
-    if (sortedYears[i] === songYear) {
-      slots.add(i);
-      slots.add(i + 1);
-    }
-  }
-
-  return slots;
+  return timelineValidSlots(songYear, sortedYears);
 }
 
 /** Canonical slot for the display (green hint on a wrong answer) */
 function canonicalSlot(songYear: number, sortedYears: number[]): number {
-  for (let i = 0; i < sortedYears.length; i++) {
-    if (songYear < sortedYears[i]) return i;
-  }
-  return sortedYears.length;
+  return timelineCanonicalSlot(songYear, sortedYears);
 }
 
 interface TimelineModeProps {
@@ -199,7 +187,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     [song.year, timelineYears]
   );
 
-  const points = Math.min(timelineYears.length + 1, config.timelineMaxPoints); // more years = more points, but capped
+  const points = timelinePoints(timelineYears.length, config.timelineMaxPoints); // more years = more points, but capped
 
   const questionStartedAt = useRef<number>(Date.now());
 
@@ -237,14 +225,14 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     if (!isCorrect) return;
 
     const newYear = song.year;
-    const isDuplicate = timelineYears.includes(newYear);
+    const effect = timelineAnswerEffect(timelineYears, newYear);
 
     addTimelineYear(newYear);
 
-    if (isDuplicate) {
+    if (effect.isDuplicate) {
       // Duplicate → remove it right away, no intervention needed
       removeTimelineYear(newYear);
-    } else if (timelineYears.length + 1 > 10) {
+    } else if (effect.removalOffered) {
       // More than 10 years → the player may optionally remove one
       setRemovalState('choosing');
     }
@@ -270,7 +258,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     setCheatActive(true);
     setCheatHint(getDecadeHint(song.year, t));
     // Immediate deduction of 2 points for the decade hint
-    awardPoints(currentPlayerId, -2);
+    awardPoints(currentPlayerId, CHEAT_PENALTY_TIMELINE_DECADE);
   }
 
   function handleJoker() {
@@ -285,7 +273,7 @@ export function TimelineMode({ song, onAnswer, onReveal }: TimelineModeProps) {
     setJokerSlot(pick);
     setJokerUsed(true);
     // Immediate deduction of 1 point for the joker
-    awardPoints(currentPlayerId, -1);
+    awardPoints(currentPlayerId, CHEAT_PENALTY_TIMELINE_JOKER);
     // Clear selection if the joker removed the selected slot
     if (selectedSlot === pick) setSelectedSlot(null);
   }

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "decay/within-grace",
+  "area": "time-decay",
+  "title": "Within the grace period the answer keeps the full amount",
+  "reference": "src/app/game/page.tsx:138-156; src/utils/mode-rules.ts",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ],
+      "timelineMaxPoints": 5,
+      "timeDecayEnabled": true,
+      "timeDecayGraceSeconds": 5,
+      "timeDecayStepSeconds": 5,
+      "timeDecayStepPoints": 1,
+      "minPointsPerCorrect": 1
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "timeline",
+    "timelineYears": [
+      1960,
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990,
+      1995,
+      2000
+    ],
+    "currentSong": "s-c",
+    "songs": {
+      "s-c": {
+        "id": "s-c",
+        "title": "Example Song",
+        "artist": "The Example",
+        "year": 1992,
+        "country": "US",
+        "genre": "Rock",
+        "difficulty": "medium",
+        "mood": [
+          "Dance Floor",
+          "Epic"
+        ],
+        "packs": [
+          "Rock Anthems"
+        ],
+        "hints": [
+          "Hint one",
+          "Hint two",
+          "Hint three",
+          "Hint four",
+          "Hint five"
+        ],
+        "lyrics": {
+          "real": [
+            "Real one",
+            "Real two",
+            "Real three"
+          ],
+          "fake": "Fake one"
+        },
+        "isOneHitWonder": false,
+        "supportedModes": [
+          "timeline",
+          "hint-master",
+          "lyrics",
+          "vibe-check",
+          "survivor",
+          "cover-confusion"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "https://www.youtube.com/watch?v=aaaaaaaaaaa"
+        }
+      }
+    }
+  },
+  "when": [
+    {
+      "op": "answer",
+      "mode": "timeline",
+      "answer": {
+        "kind": "timeline",
+        "slot": 7
+      },
+      "answeredInSeconds": 3
+    }
+  ],
+  "then": {
+    "phases": [
+      "question"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": "s-c",
+    "currentSongSource": "random",
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 5
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [
+      1960,
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990,
+      1992,
+      1995,
+      2000
+    ],
+    "playedSongIds": [
+      "s-c"
+    ],
+    "answers": [
+      {
+        "playerId": "p1",
+        "answer": "correct",
+        "outcome": "correct",
+        "isCorrect": true,
+        "pointsAwarded": 5,
+        "answeredInSeconds": 3
+      }
+    ],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

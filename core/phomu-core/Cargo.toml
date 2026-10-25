@@ -1,0 +1,20 @@
+[package]
+name = "phomu-core"
+description = "The game rules of the Phomu base: the round automaton, the six modes, the scoring, the teams and the anti-spoiler boundary."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+phomu-catalog.workspace = true
+phomu-config.workspace = true
+phomu-errors.workspace = true
+phomu-i18n.workspace = true
+phomu-media.workspace = true
+
+[lints]
+workspace = true

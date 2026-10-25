@@ -1,0 +1,8 @@
+[package]
+name = "phomu-errors"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# THE VIOLATION: the error taxonomy is a leaf.
+phomu-config = { path = "../phomu-config" }

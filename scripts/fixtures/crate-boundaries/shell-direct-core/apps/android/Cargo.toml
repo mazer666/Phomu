@@ -1,0 +1,8 @@
+[package]
+name = "android"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# THE VIOLATION: a shell reaches the core through the bridge, not directly.
+phomu-core = { path = "../../core/phomu-core" }

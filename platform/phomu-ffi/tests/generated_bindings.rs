@@ -1,0 +1,157 @@
+//! The check of the generated bindings against the surface of the bridge.
+//!
+//! WHAT: the test reads the generated Kotlin and the generated Swift and
+//! asserts that they carry the whole exported surface: every function, every
+//! type and every failure of the hierarchy.
+//!
+//! WHY: the bindings are generated and never written by hand
+//! (docs/design/BUILD-CONTRACT.md § 2.4, rule B-6). A surface that grows
+//! without the bindings growing with it is a shell that calls a function that
+//! does not exist — the failure appears at run time, on a device, in the
+//! middle of a party.
+//!
+//! WHY the check reads the files instead of calling them: this environment
+//! has no JVM and no Swift toolchain, so the behavioural round trip runs
+//! through the Rust side of the bridge (see `roundtrip.rs`). The check here
+//! proves that the *generated* code carries the whole surface.
+//!
+//! EXAMPLE:
+//!
+//! ```text
+//! cargo test -p phomu-ffi
+//! ```
+
+// WHY the override of the workspace lints: a test has to fail loudly. The
+// lints that forbid `unwrap`, `expect` and the indexing exist for the code
+// of the product, where a panic is a defect; in a test they are the way a
+// failure is reported.
+#![allow(clippy::unwrap_used, clippy::expect_used, clippy::indexing_slicing)]
+#![allow(clippy::panic)]
+
+use std::fs;
+use std::path::PathBuf;
+
+use phomu_ffi::surface::{EXPORTED_FUNCTIONS, EXPORTED_TYPES};
+
+/// The directory of the crate.
+fn crate_dir() -> PathBuf {
+    PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+}
+
+/// The generated Kotlin of the bridge.
+fn kotlin_source() -> String {
+    let path = crate_dir().join("bindings/kotlin/org/phomu/bridge/phomu_ffi.kt");
+    fs::read_to_string(&path).unwrap_or_else(|error| panic!("{}: {error}", path.display()))
+}
+
+/// The generated Swift of the bridge.
+fn swift_source() -> String {
+    let path = crate_dir().join("bindings/swift/PhomuBridge.swift");
+    fs::read_to_string(&path).unwrap_or_else(|error| panic!("{}: {error}", path.display()))
+}
+
+/// The name the generator gives to a function of the surface.
+///
+/// WHY the conversion lives here: the generator turns `snake_case` into
+/// `camelCase`; the test has to know the rule to look for the right name.
+fn camel_case(name: &str) -> String {
+    let mut out = String::with_capacity(name.len());
+    let mut upper = false;
+    for character in name.chars() {
+        if character == '_' {
+            upper = true;
+            continue;
+        }
+        if upper {
+            out.extend(character.to_uppercase());
+            upper = false;
+        } else {
+            out.push(character);
+        }
+    }
+    out
+}
+
+#[test]
+fn the_kotlin_bindings_carry_the_whole_surface() {
+    let source = kotlin_source();
+    for function in EXPORTED_FUNCTIONS {
+        let name = camel_case(function);
+        assert!(
+            source.contains(&format!("fun `{name}`(")),
+            "the Kotlin bindings do not carry {function}"
+        );
+    }
+    for exported_type in EXPORTED_TYPES {
+        assert!(
+            source.contains(exported_type),
+            "the Kotlin bindings do not carry the type {exported_type}"
+        );
+    }
+}
+
+#[test]
+fn the_swift_bindings_carry_the_whole_surface() {
+    let source = swift_source();
+    for function in EXPORTED_FUNCTIONS {
+        let name = camel_case(function);
+        assert!(
+            source.contains(&format!("func {name}(")),
+            "the Swift bindings do not carry {function}"
+        );
+    }
+    for exported_type in EXPORTED_TYPES {
+        assert!(
+            source.contains(exported_type),
+            "the Swift bindings do not carry the type {exported_type}"
+        );
+    }
+}
+
+#[test]
+fn the_kotlin_bindings_carry_the_whole_error_hierarchy() {
+    let source = kotlin_source();
+    assert!(source.contains("sealed class PhomuException"));
+    for variant in [
+        "InvalidConfiguration",
+        "UnknownPlayer",
+        "NotAvailableInPhase",
+        "AnswersNotLocked",
+        "CatalogueEmpty",
+        "MediaBlocked",
+        "Internal",
+    ] {
+        assert!(
+            source.contains(variant),
+            "the Kotlin bindings do not carry the failure {variant}"
+        );
+    }
+}
+
+#[test]
+fn the_swift_bindings_carry_the_whole_error_hierarchy() {
+    let source = swift_source();
+    assert!(source.contains("public enum PhomuError: Swift.Error"));
+    for variant in [
+        "InvalidConfiguration",
+        "UnknownPlayer",
+        "NotAvailableInPhase",
+        "AnswersNotLocked",
+        "CatalogueEmpty",
+        "MediaBlocked",
+        "Internal",
+    ] {
+        assert!(
+            source.contains(variant),
+            "the Swift bindings do not carry the failure {variant}"
+        );
+    }
+}
+
+#[test]
+fn the_bindings_are_marked_as_generated() {
+    let kotlin = kotlin_source();
+    let swift = swift_source();
+    assert!(kotlin.contains("autogenerated"));
+    assert!(swift.contains("autogenerated"));
+}

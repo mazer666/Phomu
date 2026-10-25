@@ -1,0 +1,16 @@
+[package]
+name = "phomu-errors"
+description = "The error taxonomy of the Phomu base: stable numeric codes, context and the mapping to i18n message keys."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+# The error taxonomy is a leaf: it depends on nothing.
+
+[lints]
+workspace = true

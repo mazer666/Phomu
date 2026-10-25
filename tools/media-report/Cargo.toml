@@ -1,0 +1,25 @@
+[package]
+name = "media-report"
+description = "The media link audit of Phomu: it reports which provider can play which song. A build-time artefact, never part of the product."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[[bin]]
+name = "media-report"
+path = "src/main.rs"
+
+[dependencies]
+# The media policy — the providers, the kinds and the fallback chain — lives
+# in the base. The tool reports; it does not decide.
+phomu-catalog = { workspace = true }
+phomu-media = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true

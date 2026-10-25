@@ -1,0 +1,166 @@
+/**
+ * The situation of a vector
+ *
+ * WHY: the situation has to be built the way the reference builds it —
+ * otherwise the comparison measures the harness instead of the two
+ * implementations. The Rust core can only reach a situation through its
+ * commands, therefore the harness uses the actions of the reference for the
+ * same steps: `startGame` for a running game, `drawSong` for a drawn song
+ * and `advancePhase` for the reveal. Only the parts that no action can
+ * reach (the turn that is played, the years of the timeline, the songs that
+ * have been played, the experience points) are set directly.
+ */
+import { useGameStore } from '@/stores/game-store';
+import type { GameConfig, GameState, RoundPhase } from '@/types/game-state';
+import type { Player, Team } from '@/types/player';
+import type { PhomuSong } from '@/types/song';
+import type { ModeSong } from '@/utils/mode-rules';
+import type { Vector, VectorSong } from './types';
+
+/** The default hints of a song fixture — the type demands five. */
+const DEFAULT_HINTS = ['', '', '', '', ''];
+
+/**
+ * Builds a complete song from a fixture.
+ *
+ * WHY: the catalogue type has many required fields; a vector only names the
+ * ones its rule reads. The defaults are documented in the vector schema.
+ */
+export function buildSong(fixture: VectorSong): PhomuSong {
+  return {
+    id: fixture.id,
+    title: fixture.title ?? fixture.id,
+    artist: fixture.artist ?? 'Unknown Artist',
+    year: fixture.year,
+    country: fixture.country ?? 'US',
+    genre: fixture.genre ?? 'Pop',
+    difficulty: fixture.difficulty ?? 'medium',
+    mood: fixture.mood ?? [],
+    packs: fixture.packs ?? [],
+    hints: (fixture.hints ?? DEFAULT_HINTS) as PhomuSong['hints'],
+    lyrics: fixture.lyrics
+      ? {
+          real: fixture.lyrics.real as [string, string, string],
+          fake: fixture.lyrics.fake,
+        }
+      : null,
+    isOneHitWonder: fixture.isOneHitWonder ?? false,
+    supportedModes: fixture.supportedModes ?? [
+      'timeline',
+      'hint-master',
+      'lyrics',
+      'vibe-check',
+      'survivor',
+      'cover-confusion',
+    ],
+    isQRCompatible: fixture.isQRCompatible ?? true,
+    links: {
+      youtube:
+        fixture.links?.youtube ?? 'https://www.youtube.com/watch?v=phomu',
+      coverLink: fixture.links?.coverLink,
+    },
+  };
+}
+
+/**
+ * Builds the situation of a vector in the store.
+ *
+ * WHY: the situation has to be built the way the reference builds it —
+ * otherwise the comparison measures the harness instead of the two
+ * implementations. The Rust core can only reach a situation through its
+ * commands, therefore the harness uses the actions of the reference for the
+ * same steps: `startGame` for a running game, `drawSong` for a drawn song
+ * and `advancePhase` for the reveal. Only the parts that no action can
+ * reach (the turn that is played, the years of the timeline, the songs that
+ * have been played, the experience points) are set directly.
+ */
+/**
+ * The properties of a song that the mode rules read.
+ */
+export function toModeSong(song: PhomuSong): ModeSong {
+  return {
+    id: song.id,
+    year: song.year,
+    mood: song.mood,
+    isOneHitWonder: song.isOneHitWonder,
+    artist: song.artist,
+    links: { coverLink: song.links.coverLink },
+  };
+}
+
+export function buildSituation(vector: Vector): void {
+  const store = useGameStore.getState();
+  store.initSession();
+
+  const given = vector.given;
+
+  if (given.config) {
+    useGameStore.getState().setConfig(given.config as Partial<GameConfig>);
+  }
+
+  const songs = new Map<string, PhomuSong>();
+  for (const [id, fixture] of Object.entries(given.songs ?? {})) {
+    songs.set(id, buildSong(fixture));
+  }
+
+  const players: Player[] = (given.players ?? []).map((player) => ({
+    id: player.id,
+    name: player.name ?? player.id,
+    score: player.score ?? 0,
+    teamId: player.teamId ?? undefined,
+    isEliminated: player.isEliminated ?? false,
+    isSpectator: player.isSpectator ?? false,
+    isPilot: player.isPilot ?? false,
+  }));
+
+  const teams: Team[] = (given.teams ?? []).map((team) => ({
+    id: team.id,
+    name: team.name ?? team.id,
+    playerIds: team.playerIds ?? [],
+    score: team.score ?? 0,
+    color: team.color ?? '#FF6B35',
+  }));
+
+  // The players and the teams exist before the game starts — the store adds
+  // them in the lobby.
+  useGameStore.setState({ players, teams });
+
+  // A running game: the reference builds the turn order in `startGame`.
+  if ((given.currentRound ?? 0) > 0) {
+    useGameStore.getState().startGame();
+  }
+
+  // The parts that no action of the reference can reach.
+  const patch: Partial<GameState> = {
+    timelineYears: given.timelineYears ?? [],
+    playedSongIds: given.playedSongIds ?? [],
+    currentSongSource: given.currentSongSource ?? null,
+    autoDrawIntent: given.autoDrawIntent ?? false,
+    gameStartTime: given.gameStartTime ?? null,
+    totalXP: given.totalXP ?? 0,
+    isGameOver: given.isGameOver ?? false,
+    winnerId: given.winnerId ?? undefined,
+  };
+  if (given.turnOrder) patch.turnOrder = given.turnOrder;
+  if (given.currentTurnIndex !== undefined) {
+    patch.currentTurnIndex = given.currentTurnIndex;
+  }
+  if (given.currentRound !== undefined) patch.currentRound = given.currentRound;
+  useGameStore.setState(patch);
+
+  // The drawn song — the reference draws it with `drawSong`.
+  if (given.currentSong) {
+    const song = songs.get(given.currentSong);
+    if (song) {
+      useGameStore
+        .getState()
+        .drawSong(song, given.currentSongSource ?? 'random');
+    }
+  }
+
+  // The phase — the reference switches it with `advancePhase`. A phase
+  // without a drawn song can only be reached that way.
+  if (!given.currentSong && given.roundPhase) {
+    useGameStore.getState().advancePhase(given.roundPhase as RoundPhase);
+  }
+}

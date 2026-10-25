@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "cover/three-hints",
+  "area": "scoring.cover-confusion",
+  "title": "After three hints the Cover Confusion mode awards two points",
+  "reference": "src/components/game/modes/CoverConfusionMode.tsx:96-102",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "cover-confusion"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "cover-confusion",
+    "currentSong": "s-b",
+    "songs": {
+      "s-b": {
+        "id": "s-b",
+        "title": "Cover Song",
+        "artist": "Cover Artist",
+        "year": 1998,
+        "country": "GB",
+        "genre": "Pop",
+        "difficulty": "hard",
+        "mood": [
+          "Chill",
+          "Nostalgic"
+        ],
+        "packs": [
+          "80s Flashback"
+        ],
+        "hints": [
+          "Cover hint one",
+          "Cover hint two",
+          "Cover hint three",
+          "Cover hint four",
+          "Cover hint five"
+        ],
+        "lyrics": null,
+        "isOneHitWonder": true,
+        "supportedModes": [
+          "timeline",
+          "hint-master",
+          "vibe-check",
+          "survivor",
+          "cover-confusion"
+        ],
+        "isQRCompatible": false,
+        "links": {
+          "youtube": "https://www.youtube.com/watch?v=bbbbbbbbbbb",
+          "coverLink": "https://www.youtube.com/watch?v=cccccccccc"
+        }
+      }
+    }
+  },
+  "when": [
+    {
+      "op": "answer",
+      "mode": "cover-confusion",
+      "answer": {
+        "kind": "cover-confusion",
+        "hintsUsed": 3,
+        "pickedArtist": "Cover Artist"
+      }
+    }
+  ],
+  "then": {
+    "phases": [
+      "question"
+    ],
+    "currentRound": 1,
+    "currentMode": "cover-confusion",
+    "currentSongId": "s-b",
+    "currentSongSource": "random",
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 2
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [
+      "s-b"
+    ],
+    "answers": [
+      {
+        "playerId": "p1",
+        "answer": "correct",
+        "outcome": "correct",
+        "isCorrect": true,
+        "pointsAwarded": 2,
+        "answeredInSeconds": null
+      }
+    ],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

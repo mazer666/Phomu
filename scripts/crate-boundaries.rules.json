@@ -1,0 +1,64 @@
+{
+  "$comment": [
+    "The rule table of the crate-boundary gate.",
+    "Source of truth: docs/design/BUILD-CONTRACT.md §1.1 and §3, and",
+    "docs/design/PLATFORM-ARCHITECTURE.md §3.3.",
+    "Change this file only together with an ADR (BUILD-CONTRACT §8, X-2).",
+    "",
+    "Matching:",
+    "  crateAllow  - exact crate id -> the crates it may depend on.",
+    "                '*' matches every crate of the workspace.",
+    "                '<area>/*' matches every crate of that area.",
+    "  areaAllow   - the fallback for a crate that is not listed in crateAllow.",
+    "  exceptions  - additional edges that are allowed although the table",
+    "                forbids them, each with a written reason."
+  ],
+  "schemaVersion": 1,
+  "areas": ["core", "platform", "formats", "apps", "tools"],
+  "crateAllow": {
+    "core/phomu-core": [
+      "core/phomu-config",
+      "core/phomu-catalog",
+      "core/phomu-i18n",
+      "core/phomu-media",
+      "core/phomu-errors",
+      "formats/*"
+    ],
+    "core/phomu-catalog": ["core/phomu-config", "core/phomu-errors"],
+    "core/phomu-media": ["core/phomu-config", "core/phomu-errors"],
+    "core/phomu-i18n": ["core/phomu-errors"],
+    "core/phomu-config": ["core/phomu-errors"],
+    "core/phomu-errors": [],
+    "core/phomu-conformance": ["core/*", "formats/*"],
+    "platform/phomu-ffi": ["core/*", "formats/*"],
+    "platform/phomu-capi": ["core/*", "formats/*"],
+    "platform/phomu-wasm": ["core/*", "formats/*"]
+  },
+  "areaAllow": {
+    "core": [],
+    "platform": ["core/*", "formats/*"],
+    "formats": [],
+    "apps": ["platform/*"],
+    "tools": ["core/*", "formats/*"]
+  },
+  "exceptions": {
+    "platform/phomu-capi": {
+      "allow": ["platform/phomu-ffi"],
+      "reason": "The C-ABI bridge reuses the wire model, the registry and the error mapping of the UniFFI bridge: the two bridges export the same surface and must not drift apart (BUILD-CONTRACT § 2.1). See docs/adr/ADR-0008-abi-version-and-the-exported-surface.md."
+    },
+    "apps/linux": {
+      "allow": ["core/phomu-core"],
+      "reason": "BUILD-CONTRACT §1.1: a Rust shell depends on the core directly, but only on its facade module."
+    },
+    "apps/windows": {
+      "allow": ["core/phomu-core"],
+      "reason": "BUILD-CONTRACT §1.1: a Rust shell depends on the core directly, but only on its facade module."
+    }
+  },
+  "productAreas": ["core", "platform", "apps"],
+  "toolAreas": ["tools"],
+  "checks": {
+    "includeOutsideCrate": true,
+    "abiVersionAgreement": true
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "comment": "The deviations between the Rust base and the web shell that are intentional. They are reported by the comparison — with the concrete difference — but they do not fail the gate. A vector that is not listed here and that deviates fails the gate. The list holds the same vectors as the registry of the crate (core/phomu-conformance/src/lib.rs, KNOWN_DIVERGENCES) — the gate checks that the two lists agree.",
+  "divergences": [
+    {
+      "id": "a6-locked-in-phase",
+      "title": "The Rust base enters the phase `locked-in`; the web shell does not.",
+      "fields": ["phases"],
+      "reason": "The core enters the phase `locked-in` when the last expected answer arrives; the reference implementation types the phase but never enters it. The core closes the deviation A6 of the contract — the reveal is only released when the answers are locked in.",
+      "source": "docs/design/GAME-CONTRACT.md § 2.1 and § 11.1 (deviation A6); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (lock_answers)",
+      "vectors": [
+        "timeline/correct-canonical-slot",
+        "timeline/wrong-slot",
+        "timeline/duplicate-year",
+        "timeline/points-cap",
+        "hint-master/both-level-1",
+        "hint-master/artist-level-5",
+        "hint-master/nothing",
+        "lyrics/fake-line",
+        "lyrics/real-line",
+        "lyrics/bonus-claimed",
+        "vibe-check/matching-mood",
+        "vibe-check/cheated",
+        "vibe-check/wrong-mood",
+        "survivor/correct",
+        "survivor/wrong",
+        "cover/no-hints",
+        "cover/two-hints",
+        "cover/three-hints",
+        "cover/wrong-artist",
+        "cover/variation-correct",
+        "cover/variation-wrong",
+        "decay/within-grace",
+        "decay/one-step",
+        "decay/minimum"
+      ]
+    },
+    {
+      "id": "c3-reveal-lock",
+      "title": "The Rust base refuses the reveal until the answers are locked in; the web shell sets the phase.",
+      "fields": [
+        "phases",
+        "currentRound",
+        "currentSongId",
+        "roundCount",
+        "error"
+      ],
+      "reason": "The core refuses the reveal until the answers of the round are locked in; the reference implementation lets the store change the phase without the lock. The refusal is the anti-spoiler guarantee of the base.",
+      "source": "docs/design/PLATFORM-ARCHITECTURE.md § 10.2 (rule C-3); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (reveal)",
+      "vectors": [
+        "phase/question-to-reveal",
+        "phase/reveal-to-drawing",
+        "phase/reveal-to-scoring"
+      ]
+    },
+    {
+      "id": "answer-without-player",
+      "title": "The Rust base refuses an answer without an active player; the web shell applies the effect of the mode anyway.",
+      "fields": ["timelineYears", "error"],
+      "reason": "The core refuses an answer when the turn order is empty — there is nobody to attribute the answer to. The reference implementation evaluates the mode and applies its effect without recording the answer.",
+      "source": "core/phomu-core/src/session/answers.rs (submit_answer); docs/spec/REQUIREMENTS-PLATFORM.md (CORE-111)",
+      "vectors": ["error/answer-without-player"]
+    },
+    {
+      "id": "phase-locked-in-declared",
+      "title": "The web shell can set the phase `locked-in`; the base refuses the transition.",
+      "fields": ["phases", "error"],
+      "reason": "The core enters the declared phase `locked-in` only when the expected answers are submitted; the reference implementation sets the phase from the store. The vector is marked as not portable in the corpus.",
+      "source": "docs/design/GAME-CONTRACT.md § 11.1 (deviation A6); docs/spec/REQUIREMENTS-PLATFORM.md (CORE-111)",
+      "vectors": ["phase/locked-in-declared"]
+    },
+    {
+      "id": "error-unknown-player",
+      "title": "The base answers an unknown player with a typed error; the web shell ignores it silently.",
+      "fields": ["error"],
+      "reason": "The core answers with the typed error `UnknownPlayer`; the reference implementation ignores the unknown identifier. The vector is marked as not portable in the corpus.",
+      "source": "docs/spec/REQUIREMENTS-PLATFORM.md (CORE-111); src/stores/game-store.ts:462-463",
+      "vectors": ["error/award-points-unknown-player"]
+    },
+    {
+      "id": "error-unknown-timeline-year",
+      "title": "The base answers an unknown year with a typed error; the web shell ignores it silently.",
+      "fields": ["error"],
+      "reason": "The core answers with the typed error `InvalidAnswer`; the reference implementation ignores the unknown year. The vector is marked as not portable in the corpus.",
+      "source": "docs/spec/REQUIREMENTS-PLATFORM.md (CORE-111); src/stores/game-store.ts:606-615",
+      "vectors": ["error/remove-unknown-timeline-year"]
+    },
+    {
+      "id": "shifting-teams-random",
+      "title": "The base recomputes the team scores after the team shuffle; the web shell keeps them (deviation A8).",
+      "fields": ["teamScores", "playerTeams", "teamMembers"],
+      "reason": "The core recomputes the team scores after the redistribution of the players, so that the team score is the sum of the points of its members (GAME-007). The reference implementation leaves the team scores untouched (GAME-CONTRACT § 6.2, deviation A8). The vector is marked as not portable in the corpus.",
+      "source": "docs/design/GAME-CONTRACT.md § 11.1 (deviation A8); REQUIREMENTS.md (GAME-007)",
+      "vectors": ["divergence/shifting-teams-random"]
+    }
+  ]
+}

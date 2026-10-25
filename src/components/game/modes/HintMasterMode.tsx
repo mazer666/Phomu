@@ -19,6 +19,11 @@ import { PHOMU_CONFIG } from '@/config/game-config';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
 import { censorHint } from '@/utils/censor-utils';
+import {
+  CHEAT_PENALTY_HINT_MASTER_MUSIC,
+  hintMasterAward,
+  hintMasterPoints,
+} from '@/utils/mode-rules';
 
 interface HintMasterModeProps {
   song: PhomuSong;
@@ -44,7 +49,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
 
   const currentPlayerId = turnOrder[currentTurnIndex];
   const maxHints = song.hints.length;
-  const points = PHOMU_CONFIG.HINT_MASTER_POINTS[shownHints - 1] ?? 1;
+  const points = hintMasterPoints(shownHints);
   const startSecs = song.previewTimestamp?.start ?? 0;
   const spicyMessage = useSpicyMessage(wasCorrect!, song.id);
 
@@ -64,13 +69,11 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
 
   const handleFinalDecision = (knew: 'both' | 'artist' | 'title' | 'none') => {
     if (done) return;
-    const isCorrect = knew !== 'none';
-    const awardedPoints =
-      knew === 'both' ? points : knew === 'none' ? 0 : Math.ceil(points / 2);
-    setWasCorrect(isCorrect);
+    const outcome = hintMasterAward(shownHints, knew);
+    setWasCorrect(outcome.isCorrect);
     setKnewWhat(knew);
     setDone(true);
-    onAnswer(isCorrect, awardedPoints);
+    onAnswer(outcome.isCorrect, outcome.points);
   };
 
   const handleCheat = () => {
@@ -78,7 +81,7 @@ export function HintMasterMode({ song, onAnswer }: HintMasterModeProps) {
     setShowMusic(true);
     setCheatUsed(true);
     // Immediate deduction of 2 points for the music cheat
-    awardPoints(currentPlayerId, -2);
+    awardPoints(currentPlayerId, CHEAT_PENALTY_HINT_MASTER_MUSIC);
   };
 
   return (

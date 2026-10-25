@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "round/no-win-before-end-of-rotation",
+  "area": "round-logic",
+  "title": "The win conditions are only checked at the end of the rotation",
+  "reference": "src/stores/game-store.ts:300-302",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ],
+      "endingCondition": "points",
+      "targetPoints": 10,
+      "teamMode": "individual"
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 12,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      },
+      {
+        "id": "p2",
+        "name": "Bo",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1",
+      "p2"
+    ],
+    "currentTurnIndex": 0,
+    "currentRound": 1,
+    "roundPhase": "reveal",
+    "currentMode": "timeline"
+  },
+  "when": [
+    {
+      "op": "nextRound"
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing"
+    ],
+    "currentRound": 2,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 12,
+      "p2": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null,
+      "p2": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1",
+      "p2"
+    ],
+    "currentTurnIndex": 1,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

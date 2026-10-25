@@ -57,6 +57,47 @@ the conflict with app-store distribution channels while leaving every copyleft
 obligation intact. The iOS/iPadOS track is **blocked** until the owner has an
 Apple Developer Program account; the web application keeps working without one.
 
+### Added — The shared Rust base (milestone P0)
+
+The first milestone of the platform extension is implemented: the shared Rust
+core, the bridges and the proof that both play the same game.
+
+- **Cargo workspace** with the crate topology of
+  [`docs/design/PLATFORM-ARCHITECTURE.md`](docs/design/PLATFORM-ARCHITECTURE.md):
+  `core/phomu-{core,catalog,config,i18n,media,errors,conformance}`,
+  `platform/{phomu-ffi,phomu-capi,phomu-wasm}` and the `tools/` crates.
+- **The rules live in the core**: the round automaton, the six game modes as
+  pure state machines, scoring, time decay, teams and the win conditions.
+  The `facade` is the single surface every bridge exports.
+- **The bridges**: UniFFI for Kotlin and Swift, a C-ABI for embedders,
+  wasm-bindgen for the web shell, with a versioned ABI
+  ([ADR-0008](docs/adr/ADR-0008-abi-version-and-the-exported-surface.md)).
+- **`scripts/check-crate-boundaries.mjs`** — the dependency rule is enforced
+  mechanically, with a self-test that shows the gate turning red on a
+  deliberate violation and green again afterwards.
+- **The conformance proof**: 70 vectors in `core/phomu-conformance/vectors/`
+  run against both the web shell and the Rust core. `npm run check:conformance`
+  compares them and reports: **64 portable vectors compared, 36 identical, 0
+  deviating, 28 intentional deviations, 6 documented divergences**.
+- **`docs/acceptance/P0-ACCEPTANCE.md`** — the honest record, including the
+  divergences that are deliberate (the core is stricter than the reference) and
+  the ones that are not comparable yet.
+- **The CI** now has three Rust jobs: *Rust Core* (build, test, clippy, fmt,
+  doc), *Rust Boundaries* (the dependency rule) and *Conformance* (the shared
+  core against the web shell).
+
+### Fixed
+
+- The **anti-spoiler lock** was not enforced in the shared core: the lock flag
+  was set but a further answer was still accepted. The lock is now enforced in
+  the state machine, and the round enters the phase `locked-in`. That closes
+  deviation A6 in
+  [`docs/design/GAME-CONTRACT.md`](docs/design/GAME-CONTRACT.md) and the open
+  decision E3 with it.
+- The **E2E smoke test** no longer fails intermittently: the Playwright
+  timeout was 30 s, which is too tight on a slow file system (limitation L5 in
+  [`docs/acceptance/M0-ACCEPTANCE.md`](docs/acceptance/M0-ACCEPTANCE.md)).
+
 ### Added — Documentation language gate
 
 The project documentation and the repository are **English**. The user

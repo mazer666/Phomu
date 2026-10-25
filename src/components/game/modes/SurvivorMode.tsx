@@ -17,6 +17,7 @@ import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
+import { CHEAT_PENALTY_SURVIVOR, survivorAward } from '@/utils/mode-rules';
 
 interface SurvivorModeProps {
   song: PhomuSong;
@@ -45,18 +46,18 @@ export function SurvivorMode({ song, onAnswer }: SurvivorModeProps) {
 
   function handleChoice(guessedOneHit: boolean) {
     if (answered) return;
-    const isCorrect = guessedOneHit === song.isOneHitWonder;
+    const outcome = survivorAward(song.isOneHitWonder, guessedOneHit);
     setChoice(guessedOneHit);
     setAnswered(true);
     // Survivor: 3 points base score (cheats were already deducted)
-    onAnswer(isCorrect, isCorrect ? 3 : 0);
+    onAnswer(outcome.isCorrect, outcome.points);
   }
 
   function handleCheat() {
     if (cheatUsed || answered || !currentPlayerId) return;
     setCheatUsed(true);
     // Immediate deduction of 1 point
-    awardPoints(currentPlayerId, -1);
+    awardPoints(currentPlayerId, CHEAT_PENALTY_SURVIVOR);
   }
 
   return (

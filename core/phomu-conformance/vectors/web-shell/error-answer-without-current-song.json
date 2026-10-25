@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "error/answer-without-current-song",
+  "area": "errors",
+  "title": "An answer without a drawn song is refused by the vector layer",
+  "reference": "tools/conformance/lib/harness.ts",
+  "portable": false,
+  "portabilityNote": "The error vocabulary of the vector layer belongs to the runner, not to the game: the two runners name the same failure differently. The situation is also one that only the reference can reach — the core cannot enter the question phase without a drawn song. The vector therefore documents the behaviour of the reference and is not compared.",
+  "given": {
+    "config": {
+      "selectedModes": [
+        "vibe-check"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "vibe-check",
+    "songs": {}
+  },
+  "when": [
+    {
+      "op": "answer",
+      "mode": "vibe-check",
+      "answer": {
+        "kind": "vibe-check",
+        "mood": "Epic"
+      }
+    }
+  ],
+  "then": {
+    "phases": [],
+    "currentRound": 1,
+    "currentMode": "vibe-check",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": {
+      "code": "NO_CURRENT_SONG",
+      "message": "the answer input needs a drawn song"
+    }
+  }
+}

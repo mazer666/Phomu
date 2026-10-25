@@ -1,0 +1,32 @@
+[package]
+name = "phomu-wasm"
+description = "The WebAssembly bridge of Phomu: the exported surface of the base for the web shell."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[lib]
+name = "phomu_wasm"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# The web shell reaches the base through WebAssembly: it is a static export
+# and has no server that could host the core
+# (docs/design/BUILD-CONTRACT.md § 2.4, rule B-7).
+phomu-catalog = { workspace = true }
+phomu-core = { workspace = true }
+phomu-errors = { workspace = true }
+phomu-i18n = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+wasm-bindgen = { workspace = true }
+
+[dev-dependencies]
+phomu-core = { workspace = true }
+
+[lints]
+workspace = true

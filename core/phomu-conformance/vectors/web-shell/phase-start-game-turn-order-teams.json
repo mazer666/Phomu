@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "phase/start-game-turn-order-teams",
+  "area": "phase-machine",
+  "title": "startGame builds the turn order from the teams in the fixed team mode",
+  "reference": "src/stores/game-store.ts:255-275",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ],
+      "teamMode": "fixed"
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": "t1",
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      },
+      {
+        "id": "p2",
+        "name": "Bo",
+        "score": 0,
+        "teamId": "t2",
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "teams": [
+      {
+        "id": "t1",
+        "name": "Team One",
+        "playerIds": [
+          "p1"
+        ],
+        "score": 0,
+        "color": "#FF6B35"
+      },
+      {
+        "id": "t2",
+        "name": "Team Two",
+        "playerIds": [
+          "p2"
+        ],
+        "score": 0,
+        "color": "#FF6B35"
+      }
+    ],
+    "currentRound": 0,
+    "roundPhase": "drawing",
+    "currentMode": "timeline"
+  },
+  "when": [
+    {
+      "op": "startGame"
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 0,
+      "p2": 0
+    },
+    "teamScores": {
+      "t1": 0,
+      "t2": 0
+    },
+    "playerTeams": {
+      "p1": "t1",
+      "p2": "t2"
+    },
+    "teamMembers": {
+      "t1": [
+        "p1"
+      ],
+      "t2": [
+        "p2"
+      ]
+    },
+    "turnOrder": [
+      "t1",
+      "t2"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

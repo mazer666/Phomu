@@ -1,0 +1,464 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://phomu.app/schemas/conformance-vector-v1.json",
+  "title": "Phomu conformance vector",
+  "description": "One situation of the game: the state it starts from, the inputs that are executed and the observation that is expected. The TypeScript runner and the Rust runner read the same vectors and must produce the same observation.",
+  "type": "object",
+  "required": ["schemaVersion", "id", "area", "title", "portable", "given", "when", "then"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "description": "The version of this format. A runner refuses a vector with an unknown version."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+/[a-z0-9-]+$",
+      "description": "The unique name of the vector. The file name is the id with the slash replaced by a dash."
+    },
+    "area": {
+      "type": "string",
+      "description": "The behaviour area the vector belongs to."
+    },
+    "title": {
+      "type": "string",
+      "description": "What the vector proves, in one sentence."
+    },
+    "reference": {
+      "type": "string",
+      "description": "Where the behaviour is documented in the TypeScript reference (file:line)."
+    },
+    "portable": {
+      "type": "boolean",
+      "description": "true: both implementations must produce the same observation. false: the vector documents a known divergence; it is reported separately and does not fail the gate."
+    },
+    "portabilityNote": {
+      "type": "string",
+      "description": "Why the vector is not portable. Required when portable is false."
+    },
+    "given": { "$ref": "#/$defs/given" },
+    "when": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/op" },
+      "description": "The inputs, in the order in which they are executed."
+    },
+    "then": { "$ref": "#/$defs/observation" }
+  },
+  "$defs": {
+    "song": {
+      "type": "object",
+      "required": ["id", "year"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "artist": { "type": "string" },
+        "year": { "type": "number" },
+        "country": { "type": "string" },
+        "genre": { "type": "string" },
+        "difficulty": { "enum": ["easy", "medium", "hard"] },
+        "mood": { "type": "array", "items": { "type": "string" } },
+        "packs": { "type": "array", "items": { "type": "string" } },
+        "hints": { "type": "array", "items": { "type": "string" } },
+        "lyrics": {
+          "type": ["object", "null"],
+          "required": ["real", "fake"],
+          "properties": {
+            "real": { "type": "array", "items": { "type": "string" } },
+            "fake": {
+              "type": ["array", "string"],
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "isOneHitWonder": { "type": "boolean" },
+        "supportedModes": { "type": "array", "items": { "type": "string" } },
+        "isQRCompatible": { "type": "boolean" },
+        "links": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "youtube": { "type": "string" },
+            "coverLink": { "type": "string" }
+          }
+        }
+      }
+    },
+    "player": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "score": { "type": "number" },
+        "teamId": { "type": ["string", "null"] },
+        "isEliminated": { "type": "boolean" },
+        "isSpectator": { "type": "boolean" },
+        "isPilot": { "type": "boolean" }
+      }
+    },
+    "team": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "playerIds": { "type": "array", "items": { "type": "string" } },
+        "score": { "type": "number" },
+        "color": { "type": "string" }
+      }
+    },
+    "given": {
+      "type": "object",
+      "description": "The situation the vector starts from. Every field is optional; a missing field takes the default of the reference implementation.",
+      "additionalProperties": false,
+      "properties": {
+        "config": {
+          "type": "object",
+          "description": "Partial game configuration; the fields that are not named keep the default of the reference."
+        },
+        "players": { "type": "array", "items": { "$ref": "#/$defs/player" } },
+        "teams": { "type": "array", "items": { "$ref": "#/$defs/team" } },
+        "turnOrder": { "type": "array", "items": { "type": "string" } },
+        "currentTurnIndex": { "type": "number" },
+        "currentRound": { "type": "number" },
+        "roundPhase": {
+          "enum": ["drawing", "question", "locked-in", "reveal", "scoring"]
+        },
+        "currentMode": {
+          "enum": ["timeline", "hint-master", "lyrics", "vibe-check", "survivor", "cover-confusion"]
+        },
+        "currentSong": { "type": ["string", "null"] },
+        "timelineYears": { "type": "array", "items": { "type": "number" } },
+        "playedSongIds": { "type": "array", "items": { "type": "string" } },
+        "currentSongSource": { "type": ["string", "null"] },
+        "autoDrawIntent": { "type": "boolean" },
+        "gameStartTime": { "type": ["number", "null"] },
+        "totalXP": { "type": "number" },
+        "isGameOver": { "type": "boolean" },
+        "winnerId": { "type": ["string", "null"] },
+        "songs": {
+          "type": "object",
+          "description": "The song fixtures of this vector, keyed by song id.",
+          "additionalProperties": { "$ref": "#/$defs/song" }
+        },
+        "catalogue": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/song" },
+          "description": "The catalogue a `filterSongs` probe runs against."
+        }
+      }
+    },
+    "answer": {
+      "description": "The answer of a player, normalised across the six modes.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind", "slot"],
+          "properties": {
+            "kind": { "const": "timeline" },
+            "slot": { "type": ["number", "null"] }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "level", "knew"],
+          "properties": {
+            "kind": { "const": "hint-master" },
+            "level": { "type": "number" },
+            "knew": { "enum": ["both", "artist", "title", "none"] }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "picked"],
+          "properties": {
+            "kind": { "const": "lyrics" },
+            "picked": { "enum": ["fake", "real"] }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "claimed"],
+          "properties": {
+            "kind": { "const": "lyrics-bonus" },
+            "claimed": { "type": "boolean" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "mood"],
+          "properties": {
+            "kind": { "const": "vibe-check" },
+            "mood": { "type": "string" },
+            "cheatUsed": { "type": "boolean" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "guessedOneHit"],
+          "properties": {
+            "kind": { "const": "survivor" },
+            "guessedOneHit": { "type": "boolean" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "hintsUsed"],
+          "properties": {
+            "kind": { "const": "cover-confusion" },
+            "hintsUsed": { "type": "number" },
+            "pickedArtist": { "type": "string" },
+            "selfAssess": { "type": "boolean" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "guessCover"],
+          "properties": {
+            "kind": { "const": "cover-confusion-variation" },
+            "guessCover": { "type": "boolean" }
+          }
+        }
+      ]
+    },
+    "op": {
+      "type": "object",
+      "required": ["op"],
+      "oneOf": [
+        { "required": ["op"], "properties": { "op": { "const": "startGame" } } },
+        {
+          "required": ["op", "songId"],
+          "properties": {
+            "op": { "const": "drawSong" },
+            "songId": { "type": "string" },
+            "source": { "enum": ["random", "qr"] }
+          }
+        },
+        {
+          "required": ["op", "phase"],
+          "properties": {
+            "op": { "const": "advancePhase" },
+            "phase": { "type": "string" }
+          }
+        },
+        {
+          "required": ["op", "playerId", "answer", "isCorrect", "pointsAwarded"],
+          "properties": {
+            "op": { "const": "submitAnswer" },
+            "playerId": { "type": "string" },
+            "answer": { "type": "string" },
+            "isCorrect": { "type": "boolean" },
+            "pointsAwarded": { "type": "number" },
+            "answeredInSeconds": { "type": "number" }
+          }
+        },
+        {
+          "required": ["op", "entityId", "points"],
+          "properties": {
+            "op": { "const": "awardPoints" },
+            "entityId": { "type": "string" },
+            "points": { "type": "number" }
+          }
+        },
+        { "required": ["op"], "properties": { "op": { "const": "nextRound" } } },
+        {
+          "required": ["op"],
+          "properties": {
+            "op": { "const": "endGame" },
+            "winnerId": { "type": ["string", "null"] }
+          }
+        },
+        { "required": ["op"], "properties": { "op": { "const": "skipBrokenSong" } } },
+        {
+          "required": ["op", "years"],
+          "properties": {
+            "op": { "const": "initTimeline" },
+            "years": { "type": "array", "items": { "type": "number" } }
+          }
+        },
+        {
+          "required": ["op", "year"],
+          "properties": {
+            "op": { "const": "addTimelineYear" },
+            "year": { "type": "number" }
+          }
+        },
+        {
+          "required": ["op", "year"],
+          "properties": {
+            "op": { "const": "removeTimelineYear" },
+            "year": { "type": "number" }
+          }
+        },
+        {
+          "required": ["op", "playerId"],
+          "properties": {
+            "op": { "const": "assignPlayerToTeam" },
+            "playerId": { "type": "string" },
+            "teamId": { "type": ["string", "null"] }
+          }
+        },
+        {
+          "required": ["op", "teamId"],
+          "properties": {
+            "op": { "const": "removeTeam" },
+            "teamId": { "type": "string" }
+          }
+        },
+        { "required": ["op"], "properties": { "op": { "const": "resetScores" } } },
+        {
+          "required": ["op", "config"],
+          "properties": {
+            "op": { "const": "setConfig" },
+            "config": { "type": "object" }
+          }
+        },
+        {
+          "required": ["op", "ms"],
+          "properties": {
+            "op": { "const": "setNow" },
+            "ms": { "type": "number" }
+          }
+        },
+        {
+          "required": ["op", "mode", "answer"],
+          "properties": {
+            "op": { "const": "answer" },
+            "mode": { "type": "string" },
+            "answer": { "$ref": "#/$defs/answer" },
+            "answeredInSeconds": { "type": "number" }
+          }
+        },
+        {
+          "required": ["op", "hint", "artist", "title"],
+          "properties": {
+            "op": { "const": "censorHint" },
+            "hint": { "type": "string" },
+            "artist": { "type": "string" },
+            "title": { "type": "string" }
+          }
+        },
+        {
+          "required": ["op", "options"],
+          "properties": {
+            "op": { "const": "filterSongs" },
+            "options": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "selectedPacks": { "type": "array", "items": { "type": "string" } },
+                "difficulty": { "type": "string" },
+                "onlyQRCompatible": { "type": "boolean" },
+                "currentMode": { "type": "string" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "observation": {
+      "type": "object",
+      "description": "What a runner observes after the inputs. A portable vector asserts every field; a vector that is not portable may assert a part of it.",
+      "required": [
+        "phases",
+        "currentRound",
+        "currentMode",
+        "currentSongId",
+        "currentSongSource",
+        "autoDrawIntent",
+        "playerScores",
+        "teamScores",
+        "playerTeams",
+        "teamMembers",
+        "turnOrder",
+        "currentTurnIndex",
+        "winnerId",
+        "isGameOver",
+        "timelineYears",
+        "playedSongIds",
+        "answers",
+        "roundCount",
+        "totalXP",
+        "censorHint",
+        "filteredSongIds",
+        "error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "phases": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "The round phase after every input, in order. An input that fails contributes no entry."
+        },
+        "currentRound": { "type": "number" },
+        "currentMode": { "type": "string" },
+        "currentSongId": { "type": ["string", "null"] },
+        "currentSongSource": { "type": ["string", "null"] },
+        "autoDrawIntent": { "type": "boolean" },
+        "playerScores": {
+          "type": "object",
+          "additionalProperties": { "type": "number" }
+        },
+        "teamScores": {
+          "type": "object",
+          "additionalProperties": { "type": "number" }
+        },
+        "playerTeams": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "null"] }
+        },
+        "teamMembers": {
+          "type": "object",
+          "additionalProperties": { "type": "array", "items": { "type": "string" } }
+        },
+        "turnOrder": { "type": "array", "items": { "type": "string" } },
+        "currentTurnIndex": { "type": "number" },
+        "winnerId": { "type": ["string", "null"] },
+        "isGameOver": { "type": "boolean" },
+        "timelineYears": { "type": "array", "items": { "type": "number" } },
+        "playedSongIds": { "type": "array", "items": { "type": "string" } },
+        "answers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "playerId",
+              "answer",
+              "isCorrect",
+              "pointsAwarded",
+              "answeredInSeconds"
+            ],
+            "properties": {
+              "playerId": { "type": "string" },
+              "answer": { "type": "string" },
+              "isCorrect": { "type": "boolean" },
+              "pointsAwarded": { "type": "number" },
+              "answeredInSeconds": { "type": ["number", "null"] }
+            }
+          }
+        },
+        "roundCount": {
+          "type": "number",
+          "description": "The number of logged rounds."
+        },
+        "totalXP": { "type": "number" },
+        "censorHint": { "type": ["string", "null"] },
+        "filteredSongIds": {
+          "type": ["array", "null"],
+          "items": { "type": "string" }
+        },
+        "error": {
+          "type": ["object", "null"],
+          "required": ["code", "message"],
+          "properties": {
+            "code": { "type": "string" },
+            "message": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

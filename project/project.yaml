@@ -212,6 +212,28 @@ platform_tracks:
     srs: "docs/spec/SRS.md"
     requirements: "docs/spec/REQUIREMENTS-PLATFORM.md"
     traceability: "docs/spec/TRACEABILITY.md"
+  foundation:
+    milestone: "P0 — Platform foundation"
+    status: "COMPLETE"
+    acceptance: "docs/acceptance/P0-ACCEPTANCE.md"
+    rust_workspace: "Cargo.toml"
+    crates:
+      core: 7
+      platform: 3
+      tools: 4
+    conformance:
+      vectors_total: 70
+      portable_compared: 64
+      identical: 36
+      deviating: 0
+      intentional_deviations: 28
+      documented_divergences: 6
+      gate: "npm run check:conformance"
+    measured:
+      rust_tests: 304
+      rust_clippy: "clean (-D warnings)"
+      rust_fmt: "clean"
+      rust_doc: "builds without warning"
   tracks:
     web:
       name: "Web"

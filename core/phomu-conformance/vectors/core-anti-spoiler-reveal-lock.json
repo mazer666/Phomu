@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "core/anti-spoiler-reveal-lock",
+  "area": "spoiler",
+  "title": "The reveal is refused until the answers of the round are locked in.",
+  "reference": "docs/design/PLATFORM-ARCHITECTURE.md section 10.2, rule C-3",
+  "portable": true,
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ],
+      "timelineMaxPoints": 5
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 0,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "drawing",
+    "currentMode": "timeline",
+    "timelineYears": [],
+    "songs": {
+      "s1": {
+        "id": "s1",
+        "title": "Blaue Laterne",
+        "artist": "Die Band",
+        "year": 1985,
+        "country": "DE",
+        "genre": "Pop",
+        "difficulty": "easy",
+        "mood": [
+          "Chill",
+          "Epic"
+        ],
+        "packs": [
+          "Rock Anthems"
+        ],
+        "hints": [
+          "Ein Synthesizer",
+          "Ein Klavier",
+          "Eine Schlagzeugmaschine",
+          "Ein Verzerrer",
+          "Fast schon der Refrain"
+        ],
+        "lyrics": {
+          "real": [
+            "Erste Zeile",
+            "Zweite Zeile",
+            "Dritte Zeile"
+          ],
+          "fake": "Erfundene Zeile"
+        },
+        "isOneHitWonder": true,
+        "supportedModes": [
+          "timeline",
+          "hint-master",
+          "lyrics",
+          "vibe-check",
+          "survivor",
+          "cover-confusion"
+        ],
+        "isQRCompatible": true,
+        "links": {
+          "youtube": "abcdefghijk"
+        }
+      }
+    }
+  },
+  "when": [
+    {
+      "op": "startGame"
+    },
+    {
+      "op": "drawSong",
+      "songId": "s1"
+    },
+    {
+      "op": "advancePhase",
+      "phase": "reveal"
+    },
+    {
+      "op": "answer",
+      "mode": "timeline",
+      "answer": {
+        "kind": "timeline",
+        "slot": 0
+      }
+    },
+    {
+      "op": "advancePhase",
+      "phase": "reveal"
+    }
+  ],
+  "then": {
+    "phases": [
+      "drawing",
+      "question",
+      "question",
+      "locked-in",
+      "reveal"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": "s1",
+    "currentSongSource": "random",
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 1
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [
+      1985
+    ],
+    "playedSongIds": [
+      "s1"
+    ],
+    "answers": [
+      {
+        "playerId": "p1",
+        "answer": "correct",
+        "outcome": "correct",
+        "isCorrect": true,
+        "pointsAwarded": 1,
+        "answeredInSeconds": null
+      }
+    ],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": {
+      "code": "1102",
+      "message": "errors.answersNotLocked"
+    }
+  }
+}

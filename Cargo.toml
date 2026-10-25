@@ -1,0 +1,85 @@
+# Phomu — Cargo workspace root
+#
+# WHY: the shared Rust base of the Phomu platform lives in this workspace.
+# It contains no application code, no platform code and no I/O — only the
+# rules of the game. The topology is the one defined in
+# `docs/design/PLATFORM-ARCHITECTURE.md` § 2 and the dependency rule is the
+# one defined in `docs/design/BUILD-CONTRACT.md` § 1.1.
+#
+# The workspace uses a strict star topology: every crate except
+# `phomu-core` and `phomu-conformance` is a leaf. `phomu-core` owns the
+# rules and depends on the leaves; `phomu-conformance` depends on
+# `phomu-core` and is never linked into a release build.
+#
+# Edition: 2024. The toolchain measured on 2026-10-25 is rustc 1.99.1
+# (cargo 1.99.1), edition 2024 requires rustc >= 1.85.
+
+[workspace]
+resolver = "2"
+members = [
+    "core/phomu-catalog",
+    "core/phomu-conformance",
+    "core/phomu-config",
+    "core/phomu-core",
+    "core/phomu-errors",
+    "core/phomu-i18n",
+    "core/phomu-media",
+    "platform/phomu-capi",
+    "platform/phomu-ffi",
+    "platform/phomu-wasm",
+    "tools/catalog-tool",
+    "tools/conformance-runner",
+    "tools/media-report",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/Phomu/Phomu"
+authors = ["The Phomu contributors"]
+publish = false
+
+[workspace.dependencies]
+# The crates of the base. Every member depends on its siblings through these
+# entries, so that a path change is a one-line change.
+phomu-catalog = { path = "core/phomu-catalog" }
+phomu-config = { path = "core/phomu-config" }
+phomu-conformance = { path = "core/phomu-conformance" }
+phomu-core = { path = "core/phomu-core" }
+phomu-errors = { path = "core/phomu-errors" }
+phomu-ffi = { path = "platform/phomu-ffi" }
+phomu-i18n = { path = "core/phomu-i18n" }
+phomu-media = { path = "core/phomu-media" }
+
+# Third-party crates. Only the conformance runner (a development artefact that
+# is never shipped) needs a serialisation format; the runtime crates of the
+# base have no external dependency at all.
+# The generator of the foreign-language bindings. The `cli` feature builds
+# the `uniffi-bindgen` binary that reads the compiled library.
+uniffi = { version = "0.29", features = ["cli"] }
+serde = { version = "1.0", features = ["derive"] }
+wasm-bindgen = "0.2"
+serde_json = "1.0"
+
+[workspace.lints.rust]
+# `unsafe` is denied workspace-wide — the base never needs it
+# (docs/design/BUILD-CONTRACT.md § 1.2, rule 4).
+unsafe_code = "deny"
+# Every public item carries a doc comment.
+missing_docs = "warn"
+# The 2024 edition idioms.
+rust_2018_idioms = { level = "warn", priority = -1 }
+
+[workspace.lints.clippy]
+# A recoverable condition is an error value, never a panic
+# (docs/spec/REQUIREMENTS-PLATFORM.md, CORE-111).
+unwrap_used = "deny"
+expect_used = "deny"
+indexing_slicing = "deny"
+panic = "deny"
+todo = "deny"
+unimplemented = "deny"
+missing_panics_doc = "warn"
+missing_errors_doc = "warn"

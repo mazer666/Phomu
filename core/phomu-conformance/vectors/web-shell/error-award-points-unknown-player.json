@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "error/award-points-unknown-player",
+  "area": "errors",
+  "title": "Points for an unknown player are ignored — the reference stays silent",
+  "reference": "src/stores/game-store.ts:462-463",
+  "portable": false,
+  "portabilityNote": "The TypeScript reference ignores the operation silently (game-store.ts:463 `if (!player) return state`). The Rust core is required to return a typed error (CORE-111). The divergence is intentional: the core is stricter than the reference.",
+  "given": {
+    "config": {
+      "selectedModes": [
+        "timeline"
+      ]
+    },
+    "players": [
+      {
+        "id": "p1",
+        "name": "Ada",
+        "score": 5,
+        "teamId": null,
+        "isEliminated": false,
+        "isSpectator": false,
+        "isPilot": false
+      }
+    ],
+    "turnOrder": [
+      "p1"
+    ],
+    "currentRound": 1,
+    "roundPhase": "question",
+    "currentMode": "timeline"
+  },
+  "when": [
+    {
+      "op": "awardPoints",
+      "entityId": "does-not-exist",
+      "points": 4
+    }
+  ],
+  "then": {
+    "phases": [
+      "question"
+    ],
+    "currentRound": 1,
+    "currentMode": "timeline",
+    "currentSongId": null,
+    "currentSongSource": null,
+    "autoDrawIntent": false,
+    "playerScores": {
+      "p1": 5
+    },
+    "teamScores": {},
+    "playerTeams": {
+      "p1": null
+    },
+    "teamMembers": {},
+    "turnOrder": [
+      "p1"
+    ],
+    "currentTurnIndex": 0,
+    "winnerId": null,
+    "isGameOver": false,
+    "timelineYears": [],
+    "playedSongIds": [],
+    "answers": [],
+    "roundCount": 0,
+    "totalXP": 0,
+    "censorHint": null,
+    "filteredSongIds": null,
+    "error": null
+  }
+}

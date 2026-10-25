@@ -1,0 +1,14 @@
+# A minimal workspace used as the isolated proof of the crate-boundary gate
+# (docs/design/BUILD-CONTRACT.md § 7.2). It is not part of the build of the
+# repository: the gate reads the manifests, it does not compile them.
+[workspace]
+resolver = "2"
+members = [
+    "core/phomu-core",
+    "core/phomu-config",
+    "core/phomu-errors",
+    "formats/phomu-qr",
+    "platform/phomu-ffi",
+    "tools/catalog-tool",
+    "platform/phomu-capi",
+]

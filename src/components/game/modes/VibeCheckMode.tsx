@@ -21,6 +21,7 @@ import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
+import { vibeCheckAward } from '@/utils/mode-rules';
 
 // ─── Design constants (colours, no text) ─────────────────────────
 
@@ -120,11 +121,10 @@ export function VibeCheckMode({ song, onAnswer }: VibeCheckModeProps) {
 
   function handleSelect(mood: string) {
     if (answered) return;
-    const isCorrect = song.mood.includes(mood);
+    const outcome = vibeCheckAward(song.mood, mood, cheatUsed);
     setSelected(mood);
     setAnswered(true);
-    const points = isCorrect ? (cheatUsed ? 1 : 2) : 0;
-    onAnswer(isCorrect, points);
+    onAnswer(outcome.isCorrect, outcome.points);
   }
 
   // Precompute two option lists — stable for this song

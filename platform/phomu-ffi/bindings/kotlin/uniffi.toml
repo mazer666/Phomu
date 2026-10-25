@@ -1,0 +1,12 @@
+# The Kotlin profile of the bridge.
+#
+# WHY a profile per language: the Kotlin and the Swift shells are different
+# products with different package structures. The profile is the place where
+# the differences are declared; the generator is the same for both
+# (docs/design/PLATFORM-ARCHITECTURE.md § 6.1).
+
+[bindings.kotlin]
+# The package the generated Kotlin lands in.
+package_name = "org.phomu.bridge"
+# The name of the shared library the generated Kotlin loads.
+cdylib_name = "phomu_ffi"

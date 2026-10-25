@@ -19,10 +19,9 @@ import { getSpicyColor } from '@/utils/feedback-messages';
 import type { PhomuSong } from '@/types/song';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
+import { lyricsAward, lyricsBonusAward } from '@/utils/mode-rules';
 
-// ─── Constants ───────────────────────────────────────────────────
-
-const LYRICS_POINTS = 4;
+// ─── Props ────────────────────────────────────────────────────────
 
 /** Shuffles an array randomly */
 function shuffle<T>(arr: T[]): T[] {
@@ -114,9 +113,9 @@ function LyricsQuestion({
   function handleConfirm() {
     if (selected === null || isRevealing) return;
     setIsRevealing(true);
-    const isCorrect = options[selected]?.isFake ?? false;
+    const outcome = lyricsAward(options[selected]?.isFake ?? false);
     // Lyrics Labyrinth: 4 points base score (cheats were already deducted)
-    onAnswer(isCorrect, isCorrect ? LYRICS_POINTS : 0);
+    onAnswer(outcome.isCorrect, outcome.points);
     onReveal();
   }
 
@@ -289,7 +288,8 @@ function BonusRound({
           <button
             onClick={() => {
               setClaimed(true);
-              onAnswer(true, 2);
+              const outcome = lyricsBonusAward(true);
+              onAnswer(outcome.isCorrect, outcome.points);
               onReveal();
             }}
             className="px-6 py-3 rounded-xl font-black"
@@ -300,7 +300,8 @@ function BonusRound({
           <button
             onClick={() => {
               setClaimed(true);
-              onAnswer(false, 0);
+              const outcome = lyricsBonusAward(false);
+              onAnswer(outcome.isCorrect, outcome.points);
               onReveal();
             }}
             className="px-6 py-3 rounded-xl font-bold border"

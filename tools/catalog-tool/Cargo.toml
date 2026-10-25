@@ -1,0 +1,25 @@
+[package]
+name = "catalog-tool"
+description = "The catalogue build and validation tool of Phomu. A build-time artefact, never part of the product."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[[bin]]
+name = "catalog-tool"
+path = "src/main.rs"
+
+[dependencies]
+# The catalogue model and the validation rules live in the base; the tool
+# only reads, calls and reports. It never decides what is valid.
+phomu-catalog = { workspace = true }
+phomu-config = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true
