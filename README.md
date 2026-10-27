@@ -141,6 +141,22 @@ The machine-readable truth about the project state is in
 
 ---
 
+## Deployment
+
+The web shell is a **static export**. It is deployed to **Cloudflare Pages** —
+the decision and the reasons are in
+[`docs/adr/ADR-0010-hosting-on-cloudflare-pages.md`](docs/adr/ADR-0010-hosting-on-cloudflare-pages.md),
+the runbook is in
+[`docs/deployment/CLOUDFLARE.md`](docs/deployment/CLOUDFLARE.md).
+
+The nine security headers have **one** source
+([`config/security-headers.mjs`](config/security-headers.mjs)); the Cloudflare
+deployment writes them into `public/_headers`, and the CI compares the two, so
+the hosts cannot drift apart. GitHub Pages stays as the fallback host.
+
+The native shells need no server at all: the game rules live in the shared
+Rust core and run on the device.
+
 ## Contributing
 
 ```bash

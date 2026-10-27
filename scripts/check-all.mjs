@@ -34,6 +34,7 @@ const GATES = [
   { name: 'Bridge surface', script: 'check-bridge-surface.mjs' },
   { name: 'Module boundaries', script: 'check-module-boundaries.mjs' },
   { name: 'Licence consistency', script: 'check-license.mjs' },
+  { name: 'Cloudflare headers', script: 'generate-cloudflare-headers.mjs', args: ['--check'] },
 ];
 
 const results = [];
@@ -45,7 +46,7 @@ for (const gate of GATES) {
 
   const result = spawnSync(
     process.execPath,
-    [path.join(SCRIPT_DIR, gate.script)],
+    [path.join(SCRIPT_DIR, gate.script), ...(gate.args ?? [])],
     {
       stdio: 'inherit',
       encoding: 'utf8',

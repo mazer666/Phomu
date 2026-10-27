@@ -1,0 +1,27 @@
+# Cloudflare Pages — the configuration of the web shell
+#
+# WHY: the web shell is a static export, and a static export on GitHub Pages
+# cannot set the security headers. Cloudflare Pages can: it reads them from
+# `public/_headers`, which is generated from the same list the Next.js server
+# uses. The hosting decision is recorded in
+# `docs/adr/ADR-0010-hosting-on-cloudflare-pages.md`.
+#
+# The project name is the account name of the owner on the free plan. It
+# decides the address `phomu.pages.dev`. Change it together with the
+# `NEXT_PUBLIC_BASE_PATH` of the build (see `.github/workflows/deploy-cloudflare.yml`).
+
+name = "phomu"
+compatibility_date = "2026-10-01"
+
+# The static export of Next.js. The build writes it here.
+pages_build_output_dir = "out"
+
+# The variables of the build. The shell is served from the root of the
+# project, so the base path is empty — on GitHub Pages it was `/Phomu`.
+[vars]
+NEXT_PUBLIC_BASE_PATH = ""
+
+# The environment of the production. The build reads it, and the runtime
+# reads the base path out of the bundle.
+[env.production]
+NEXT_PUBLIC_BASE_PATH = ""

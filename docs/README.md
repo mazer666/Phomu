@@ -65,6 +65,7 @@ Phomu/
 │   ├── licensing/                 Licence decisions, distribution strategy
 │   ├── qa/                        Independent QA assessment (read-only), with evidence
 │   ├── remediation/               Execution record of the QA backlog
+│   ├── deployment/                Runbook of the web deployment
 │   ├── guides/                    Printing, troubleshooting
 │   │   ├── PRINTING-GUIDE.md
 │   │   └── TROUBLESHOOTING.md
@@ -106,6 +107,7 @@ Phomu/
 | `releases/` | Release rules: release plan, release checklist, the record of a release | Release, QA, owner |
 | `qa/` | Independent QA assessment: scorecard, findings across eight dimensions, a prioritised remediation backlog and the raw command output behind every number | owner, QA, everyone who works on a finding |
 | `remediation/` | The execution record of the QA backlog: what is done, what is in flight, what the owner has to decide | owner, everyone who works on a finding |
+| `deployment/` | The runbook of the web deployment: Cloudflare Pages, the account steps, the check of the delivery | owner, everyone who deploys |
 | `COORDINATION.md` | The file-ownership split between the two working streams and the push discipline | everyone who pushes |
 | `licensing/` | Licence decisions of the project, distribution strategy, Apple licensing | Legal, owner |
 | `specifications/` | Predecessor and status documentation, historical snapshots | only for the history; no longer to be continued |

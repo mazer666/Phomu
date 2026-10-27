@@ -1,0 +1,90 @@
+# Deploy the web shell to Cloudflare Pages
+#
+# WHY a workflow and not the Pages Git integration: the build needs the
+# Rust toolchain — the shell loads the shared base as a WebAssembly module
+# — and the Pages build image does not have it. The workflow builds the
+# module and the shell and hands the result to `wrangler pages deploy`.
+#
+# The secrets it needs (set them in the repository settings):
+#   CLOUDFLARE_API_TOKEN  — a token with the permission "Cloudflare Pages: Edit"
+#   CLOUDFLARE_ACCOUNT_ID — the id of the account (dashboard → Workers & Pages)
+#
+# The workflow only runs when the secret is present, so the repository stays
+# usable without a Cloudflare account.
+
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'config/**'
+      - 'core/**'
+      - 'platform/**'
+      - 'scripts/build-wasm.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'next.config.ts'
+      - 'wrangler.toml'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
+      - '.github/workflows/deploy-cloudflare.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: cloudflare-pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare Pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Without a token there is nothing to deploy to. The workflow skips
+    # itself instead of failing — the repository must stay usable without a
+    # Cloudflare account.
+    if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the WebAssembly module of the shared base
+        run: node scripts/build-wasm.mjs
+
+      - name: Build the shell
+        # The shell is served from the root of the Pages project, so the
+        # base path is empty here. On GitHub Pages it was `/Phomu`.
+        env:
+          NEXT_PUBLIC_BASE_PATH: ''
+        run: npm run build
+
+      - name: Check the security headers
+        # The `_headers` file has to match the source of truth, otherwise
+        # the deployed site would be protected differently from the source.
+        run: node scripts/generate-cloudflare-headers.mjs --check
+
+      - name: Upload the Pages artefact
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=phomu --branch=main

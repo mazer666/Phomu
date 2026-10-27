@@ -120,7 +120,7 @@ last one explicitly as *not supported*).
 | Privacy: device fingerprint in the error report | User who clicks "Report missing" (`game.music.reportMissing`) | `src/components/game/MusicPlayer.tsx` (key `DEVICE_KEY`, `REPORT_KEY`, payload `issuePayload`) | Device ID, time zone, locale and region leave the device (via GitHub) | None. The user triggers the procedure themselves. | **not secured** (finding **F-07**) |
 | Supply chain: GitHub Actions | Compromised maintainer access or manipulated dependency | `.github/workflows/deploy.yml` | Execution of arbitrary code in the build | `permissions` are reduced to `contents: read`, `concurrency` prevents parallel deploys | **partially secured** (actions are not pinned by SHA, finding **F-08**) |
 | Dependencies | Attacker via a transitive dependency | `npm install` | Execution in the build or in the browser | `npm audit --omit=dev --audit-level=moderate` → **0 vulnerabilities** (measured 2026-10-25). With dev dependencies: 14 reports (9 high), all in `vite`/`launch-editor`/`zod`. | **partially secured** (finding **F-09**) |
-| Delivery: missing security headers (**F-05**) | Attacker who finds a vulnerability in the app | HTTP headers of the delivered files | Missing hardening against clickjacking, MIME sniffing, referrer leaks | Headers are defined in `next.config.ts:24-59` — **but they are not delivered with the static export** | **not effective** (finding **F-05**) |
+| Delivery: missing security headers (**F-05**) | Attacker who finds a vulnerability in the app | HTTP headers of the delivered files | Missing hardening against clickjacking, MIME sniffing, referrer leaks | The headers are defined once in `config/security-headers.mjs` and delivered by Cloudflare Pages through the generated `public/_headers`; the CI compares the two | **effective on Cloudflare Pages**, not on GitHub Pages (finding **F-05**) |
 
 ### 3.1 Overview of the findings
 
@@ -133,7 +133,7 @@ part of the handover to the owner. Only the assignment is listed here:
 | **F-02** | SSRF via redirect during the cover download | Medium | **fixed** |
 | **F-03** | DoS through an unthrottled download body | Medium | **fixed** |
 | **F-04** | No rate limiting on the admin API | Medium | **fixed** (only effective per instance) |
-| **F-05** | Security headers are not delivered with the static export | Medium | configuration in place, delivery still open |
+| **F-05** | Security headers are not delivered with the static export | Medium | **solved for the primary host**: Cloudflare Pages delivers them through the generated `public/_headers` (ADR-0010). GitHub Pages still cannot — it stays the fallback host |
 | **F-06** | QR input without a length or format limit | Low | open, file outside the workspace |
 | **F-07** | Device ID, time zone and locale in the error report | Low | open, file outside the workspace |
 | **F-08** | GitHub Actions not pinned by SHA | Low | open |
@@ -277,16 +277,28 @@ _log.warn('Specified "headers" will not automatically work with "output: export"
   See more info here: https://nextjs.org/docs/messages/export-no-custom-routes');
 ```
 
-**Consequence:** The headers in `next.config.ts` are **not effective** today.
-They only become effective when
+**Consequence:** On **GitHub Pages** the headers are **not effective** and
+never will be — the host has no configuration surface for response headers.
+The effective protection there is the code itself (token gate, allowlist,
+validation) — not the HTTP header.
 
-1. the app is delivered with `next start` (Next server), or
-2. the host sets the headers itself (e.g. Netlify, Cloudflare Pages, a reverse
-   proxy, a CDN in front of GitHub Pages).
+**On Cloudflare Pages they are delivered.** The decision is
+[`docs/adr/ADR-0010-hosting-on-cloudflare-pages.md`](docs/adr/ADR-0010-hosting-on-cloudflare-pages.md);
+the runbook is
+[`docs/deployment/CLOUDFLARE.md`](docs/deployment/CLOUDFLARE.md). The list of
+headers has **one** source, `config/security-headers.mjs`:
 
-In addition, GitHub Pages **cannot** deliver own headers. For the current
-operation the effective protection is therefore the code itself (token gate,
-allowlist, validation) — not the HTTP header.
+- the Next.js server reads it (`next.config.ts`),
+- `scripts/generate-cloudflare-headers.mjs` writes it into `public/_headers`,
+  which Cloudflare Pages reads from the static directory,
+- `npm run check:cloudflare-headers` compares the two and is a gate in the CI,
+  so the two hosts cannot drift apart.
+
+**One directive exists only because of the shared base:** the
+Content-Security-Policy contains `'wasm-unsafe-eval'`. Without it the browser
+refuses to compile the WebAssembly module of the Rust core and the game does
+not start. It is the only relaxation, and it applies to the module that the
+shell loads — nothing else is executed from it.
 
 ---
 

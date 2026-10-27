@@ -192,6 +192,9 @@ jobs:
       - name: Gate — licence consistency
         if: always()
         run: npm run check:license
+      - name: Gate — Cloudflare headers
+        if: always()
+        run: npm run check:cloudflare-headers
       # The link matcher decides whether a catalogue link points at the right
       # song. Its self-test asserts every tolerance against a real catalogue
       # entry: a relaxed rule without an example fails the job.

@@ -44,7 +44,7 @@ the backlog is met, and the measurement is reproducible. Not "looks right".
 | 1.2 | QA-SPO-007 | **done** | The fake lyric line is selected in the base, never in the client |
 | 1.3 | QA-SPO-002 | **done** | The cover names become opaque, derived from the song id |
 | 1.4 | QA-SPO-003 | **done** | `src/utils/censor-utils.test.ts` with the invariant test |
-| 1.5 | QA-SEC-001 | **owner decision** | Depends on 2.6 (hosting model) — the headers have to be set by the host that serves the app |
+| 1.5 | QA-SEC-001 | **done for the primary host** | The decision is made: **Cloudflare Pages** (ADR-0010). The headers have one source, `config/security-headers.mjs`; the generated `public/_headers` delivers them, and `npm run check:cloudflare-headers` is a gate in the CI. The runbook is `docs/deployment/CLOUDFLARE.md` |
 | 1.6 | QA-SEC-002 | **owner decision — blocked** | The decision template is ready: [`docs/cr/CR-0002-admin-api-entscheidung.md`](../cr/CR-0002-admin-api-entscheidung.md). The documentation states the measured reachability, the reachability is asserted by a test, and the hardening that holds under both options is in place |
 | 1.7 | QA-TST-001 | **done** | The coverage denominator covers `src/**`, the thresholds sit below the measured value |
 | 1.8 | QA-TST-002 | **done** | The CI gains the jobs e2e, format and dependency-audit |
@@ -60,7 +60,7 @@ the backlog is met, and the measurement is reproducible. Not "looks right".
 | 2.3 | QA-UX-001, QA-UX-002 | **open** | Live regions, focus management, roles and the keyboard path |
 | 2.4 | QA-ARC-005, QA-ARC-006 | **done** | The boundary check covers the raw catalogue and the config/utils/store edges |
 | 2.5 | QA-UX-004, QA-SPO-004b | **open** | The catalogue content becomes localised: `hints: { de, en }` |
-| 2.6 | QA-SEC-001, QA-SEC-002, QA-SPO-001 | **owner decision** | The hosting model. It decides three findings at once and is the highest-leverage decision in the plan |
+| 2.6 | QA-SEC-001, QA-SEC-002, QA-SPO-001 | **decided, partly executed** | The hosting model is **Cloudflare Pages** (ADR-0010, runbook in `docs/deployment/CLOUDFLARE.md`). QA-SEC-001 is closed. The three owner steps — account, token, repository secrets — are listed in the runbook. QA-SEC-002 and QA-SPO-001 need the functions, and the admin API needs an R2 bucket for the cover files |
 | 2.7 | QA-PERF-001 | **open** | The covers move out of the repository and the payload of one round stays under 60 KB |
 | 2.8 | QA-DOC-001 | **done** | The project is under **AGPL-3.0-or-later**, GitHub reports `spdx_id: AGPL-3.0`. The licence consistency gate (`npm run check:license`) keeps it that way |
 | 2.9 | QA-ARC-007 | **done** | The file-size gate covers `.rs` files |
@@ -98,24 +98,33 @@ The gate is the sixth of the eight gates of `npm run check:all`, and its negativ
 Two items cannot be decided by an agent, because they change what the product
 **is** and not only how it is built:
 
-### 2.6 — The hosting model
+### 2.6 — The hosting model — **decided**
 
-Today the web shell is a **static export** on GitHub Pages. That has three
-consequences, all measured by the QA assessment:
+The decision is **Cloudflare Pages**
+([`../adr/ADR-0010-hosting-on-cloudflare-pages.md`](../adr/ADR-0010-hosting-on-cloudflare-pages.md)),
+the runbook is
+[`../deployment/CLOUDFLARE.md`](../deployment/CLOUDFLARE.md). The reasons and the
+rejected alternatives are in the ADR.
 
-1. The security headers cannot be set by the application (QA-SEC-001) — the
-   values in `next.config.ts` never reach a response.
-2. The admin API cannot run at all (QA-SEC-002).
-3. The round payload has to be delivered to the client, because there is no
-   server that could keep the solution back (QA-SPO-001).
+What that decision closes today:
 
-Moving to a host that serves headers **and** runs API routes — Cloudflare Pages
-with Functions is the recommendation of the QA assessment — fixes all three at
-once. The alternatives and their costs are in
-[`docs/qa/QA-09-REMEDIATION-BACKLOG.md`](../qa/QA-09-REMEDIATION-BACKLOG.md)
-item 2.6.
+- **QA-SEC-001** — the security headers reach the browser. The list has one
+  source (`config/security-headers.mjs`), Cloudflare gets it through the
+  generated `public/_headers`, and the CI compares the two.
+- The **hosting model** itself: the pipeline, the base path and the header
+  delivery are prepared in the repository.
 
-**What the platform wave changes here:** the Android shell needs no server at
+What still needs the owner, and what still needs work:
+
+- Three steps with the account: the Pages project, an API token with the
+  permission *Cloudflare Pages: Edit*, and the two repository secrets.
+- **QA-SEC-002** — the admin API needs an **R2 bucket** for the cover files
+  before it can run as a Pages Function; the Workers runtime has no file
+  system.
+- **QA-SPO-001** — the round API is the same story: the base has to evaluate
+  the round on the server, so that the solution stays there.
+
+**What the platform wave changes here:** the native shells need no server at
 all — the game rules are in the shared Rust core and run on the device. The
 hosting decision therefore affects the **web shell** and the admin API, not the
 native shells.
