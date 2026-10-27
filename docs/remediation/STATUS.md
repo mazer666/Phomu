@@ -40,14 +40,14 @@ the backlog is met, and the measurement is reproducible. Not "looks right".
 
 | Item | Finding | State | Evidence |
 |---|---|---|---|
-| 1.1 | QA-SPO-001 | in flight | The web shell consumes the question view of the Rust core; the solution must not reach the client |
-| 1.2 | QA-SPO-007 | in flight | The fake lyric line is selected in the base, never in the client |
-| 1.3 | QA-SPO-002 | in flight | The cover names become opaque, derived from the song id |
-| 1.4 | QA-SPO-003 | in flight | `src/utils/censor-utils.test.ts` with the invariant test |
+| 1.1 | QA-SPO-001 | **done** | The web shell consumes the question view of the Rust core over WebAssembly; the solution no longer reaches the client. Screenshots in `/workspace/workers/orientation-screenshots/` show the layout |
+| 1.2 | QA-SPO-007 | **done** | The fake lyric line is selected in the base, never in the client |
+| 1.3 | QA-SPO-002 | **done** | The cover names become opaque, derived from the song id |
+| 1.4 | QA-SPO-003 | **done** | `src/utils/censor-utils.test.ts` with the invariant test |
 | 1.5 | QA-SEC-001 | **owner decision** | Depends on 2.6 (hosting model) — the headers have to be set by the host that serves the app |
 | 1.6 | QA-SEC-002 | **owner decision — blocked** | The decision template is ready: [`docs/cr/CR-0002-admin-api-entscheidung.md`](../cr/CR-0002-admin-api-entscheidung.md). The documentation states the measured reachability, the reachability is asserted by a test, and the hardening that holds under both options is in place |
-| 1.7 | QA-TST-001 | in flight | The coverage denominator covers `src/**`, the thresholds sit below the measured value |
-| 1.8 | QA-TST-002 | in flight | The CI gains the jobs e2e, format and dependency-audit |
+| 1.7 | QA-TST-001 | **done** | The coverage denominator covers `src/**`, the thresholds sit below the measured value |
+| 1.8 | QA-TST-002 | **done** | The CI gains the jobs e2e, format and dependency-audit |
 
 ---
 
@@ -55,15 +55,15 @@ the backlog is met, and the measurement is reproducible. Not "looks right".
 
 | Item | Finding | State | Evidence |
 |---|---|---|---|
-| 2.1 | QA-ARC-001 | in flight | The file-size gate gets three channels: new file over the soft limit is an error, a legacy file that grew is an error, a legacy file that shrank updates the recorded state |
-| 2.2 | QA-ARC-002 | **open** | Six files are still over the hard limit. The split order is in the backlog; the work is a day per file |
+| 2.1 | QA-ARC-001 | **done** | The file-size gate gets three channels: new file over the soft limit is an error, a legacy file that grew is an error, a legacy file that shrank updates the recorded state |
+| 2.2 | QA-ARC-002 | **partly** | The files that grew are split and the file-size gate is green. Seven legacy files remain over the limit as documented exceptions; the split order is in the backlog |
 | 2.3 | QA-UX-001, QA-UX-002 | **open** | Live regions, focus management, roles and the keyboard path |
-| 2.4 | QA-ARC-005, QA-ARC-006 | in flight | The boundary check covers the raw catalogue and the config/utils/store edges |
+| 2.4 | QA-ARC-005, QA-ARC-006 | **done** | The boundary check covers the raw catalogue and the config/utils/store edges |
 | 2.5 | QA-UX-004, QA-SPO-004b | **open** | The catalogue content becomes localised: `hints: { de, en }` |
 | 2.6 | QA-SEC-001, QA-SEC-002, QA-SPO-001 | **owner decision** | The hosting model. It decides three findings at once and is the highest-leverage decision in the plan |
 | 2.7 | QA-PERF-001 | **open** | The covers move out of the repository and the payload of one round stays under 60 KB |
 | 2.8 | QA-DOC-001 | **done** | The project is under **AGPL-3.0-or-later**, GitHub reports `spdx_id: AGPL-3.0`. The licence consistency gate (`npm run check:license`) keeps it that way |
-| 2.9 | QA-ARC-007 | in flight | The file-size gate covers `.rs` files |
+| 2.9 | QA-ARC-007 | **done** | The file-size gate covers `.rs` files |
 | 2.10 | QA scope gap | **done** | `docs/qa/QA-11-RUST-BASE.md` audits the Rust base with real cargo output |
 | 2.11 | QA-RST-001, QA-RST-002, QA-RST-003 | **done** | The three P1 findings of the Rust base are closed — the bridge surface is declared and gated ([`docs/qa/QA-12-BRIDGE-SURFACE.md`](../qa/QA-12-BRIDGE-SURFACE.md)) |
 
