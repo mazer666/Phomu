@@ -62,8 +62,20 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/package.json') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      # The web shell loads the shared base over WebAssembly. The module is
+      # built from the Rust workspace, so the toolchain and the wasm32 target
+      # have to be there before the Next.js build resolves the import.
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Build the WebAssembly module
+        run: |
+          rustup target add wasm32-unknown-unknown
+          node scripts/build-wasm.mjs
+      # `npm run build` and not `npx next build`: the package script runs the
+      # prebuild step, and that is the one that makes sure the WebAssembly
+      # module exists — also on a checkout where nobody built it before.
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
