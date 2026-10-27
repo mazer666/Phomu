@@ -14,7 +14,7 @@
 #   - End-to-End Smoke   -> scripts: test:e2e:smoke (Playwright)
 #   - Catalog Validation -> scripts: validate-songs, validate-catalog
 #   - Quality Gates      -> scripts: check:i18n, check:doc-links, check:file-size,
-#                         check:doc-language, check:license
+#                         check:doc-language, check:license, check:link-match:test
 #   - Rust Core           -> cargo build, test, clippy, fmt, doc (the shared base)
 #   - Rust Boundaries     -> scripts/check-crate-boundaries.mjs (the dependency rule)
 #   - Conformance         -> npm run check:conformance (shared core against the web shell)
@@ -192,6 +192,12 @@ jobs:
       - name: Gate — licence consistency
         if: always()
         run: npm run check:license
+      # The link matcher decides whether a catalogue link points at the right
+      # song. Its self-test asserts every tolerance against a real catalogue
+      # entry: a relaxed rule without an example fails the job.
+      - name: Gate — catalogue link matcher (self-test)
+        if: always()
+        run: npm run check:link-match:test
 
   rust-core:
     name: Rust Core

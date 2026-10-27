@@ -10,6 +10,8 @@
  *          returns the vectors of the index in the order of the index.
  */
 import fs from 'node:fs';
+
+import { PHOMU_CONFIG } from '@/config/game-config';
 import path from 'node:path';
 import type { Vector, VectorIndex } from './types';
 
@@ -88,6 +90,16 @@ export function loadVector(vectorsDir: string, file: string): Vector {
         fullPath
       );
     }
+  }
+  // The mode comes from an untrusted JSON file: a mode that the game does
+  // not know is a broken vector, and it must not reach the state store as
+  // a cast.
+  const mode = vector.given?.currentMode;
+  if (mode !== undefined && !PHOMU_CONFIG.ALL_GAME_MODES.includes(mode)) {
+    throw new VectorLoadError(
+      `vector file names the unknown game mode "${mode}"`,
+      fullPath
+    );
   }
   return vector;
 }

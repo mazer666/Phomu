@@ -77,6 +77,12 @@ fi
 # 10. Quality Gates (i18n completeness, doc link check, file size)
 run_check "Quality Gates (i18n / Doc-Links / File Size)" "npm run check:all" "false" || exit 1
 
+# 11. Link Match Gate (self-test of the catalogue link matcher)
+# The matcher decides whether a catalogue link points at the right song. Its
+# self-test asserts every tolerance against a real catalogue entry, so a
+# relaxation of the gate cannot happen without a red test.
+run_check "Link Match Gate (self-test)" "npm run check:link-match:test" "false" || exit 1
+
 echo -e "\n${BLUE}${BOLD}======================================================================${NC}"
 if [ $FAILED -eq 0 ]; then
     if [ $WARN -gt 0 ]; then

@@ -10,6 +10,8 @@
  *          expected result (then).
  */
 
+import type { GameMode } from '@/config/game-config';
+
 // ─── Song fixtures ─────────────────────────────────────────────────
 
 /** The song properties a mode rule or a filter may read. */
@@ -60,7 +62,7 @@ export interface VectorGiven {
   currentTurnIndex?: number;
   currentRound?: number;
   roundPhase?: string;
-  currentMode?: string;
+  currentMode?: GameMode;
   currentSong?: string | null;
   timelineYears?: number[];
   playedSongIds?: string[];
@@ -136,7 +138,7 @@ export type VectorOp =
         selectedPacks?: string[];
         difficulty?: string;
         onlyQRCompatible?: boolean;
-        currentMode?: string;
+        currentMode?: GameMode;
       };
     };
 
@@ -163,7 +165,7 @@ export interface Observation {
   /** The phase after every input, in order. */
   phases: string[];
   currentRound: number;
-  currentMode: string;
+  currentMode: GameMode;
   currentSongId: string | null;
   currentSongSource: string | null;
   autoDrawIntent: boolean;

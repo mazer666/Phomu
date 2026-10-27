@@ -16,7 +16,10 @@
  */
 import { useTranslation } from 'react-i18next';
 import { SongEditor } from '@/components/admin/SongEditor';
-import { EMPTY_SONG, type AdminSong } from '@/app/admin/songs/_lib/admin-song-model';
+import {
+  EMPTY_SONG,
+  type AdminSong,
+} from '@/app/admin/songs/_lib/admin-song-model';
 
 /** The properties of the editor panel. */
 interface SongEditorPanelProps {

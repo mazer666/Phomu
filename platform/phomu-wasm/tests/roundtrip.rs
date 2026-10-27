@@ -40,8 +40,7 @@ fn players() -> Vec<Value> {
 /// Compresses a catalogue the way the shell does.
 fn compress(catalogue: &str) -> Vec<u8> {
     use std::io::Write;
-    let mut encoder =
-        flate2::write::GzEncoder::new(Vec::new(), flate2::Compression::best());
+    let mut encoder = flate2::write::GzEncoder::new(Vec::new(), flate2::Compression::best());
     encoder.write_all(catalogue.as_bytes()).unwrap();
     encoder.finish().unwrap()
 }
@@ -49,13 +48,18 @@ fn compress(catalogue: &str) -> Vec<u8> {
 #[test]
 fn the_version_is_part_of_the_module() {
     assert_eq!(phomu_wasm::exports::phomu_abi_version(), "1.1.0");
-    assert_eq!(phomu_wasm::exports::phomu_abi_versions(), vec!["1.1.0".to_string()]);
+    assert_eq!(
+        phomu_wasm::exports::phomu_abi_versions(),
+        vec!["1.1.0".to_string()]
+    );
 }
 
 #[test]
 fn a_round_runs_over_the_wasm_bridge() {
-    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open_json(CATALOGUE).expect("the catalogue is read");
-    let songs = phomu_wasm::catalogue_exports::phomu_catalog_songs(catalogue).expect("the songs are listed");
+    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open_json(CATALOGUE)
+        .expect("the catalogue is read");
+    let songs = phomu_wasm::catalogue_exports::phomu_catalog_songs(catalogue)
+        .expect("the songs are listed");
     assert_eq!(songs.len(), 1);
     // WHY no title: the summary is what a shell shows before the reveal.
     assert!(!songs[0].to_string().contains("Titel EINS"));
@@ -87,15 +91,18 @@ fn a_round_runs_over_the_wasm_bridge() {
 #[test]
 fn the_compressed_catalogue_is_read_by_the_bridge() {
     let compressed = compress(CATALOGUE);
-    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed).expect("the catalogue is read");
-    let songs = phomu_wasm::catalogue_exports::phomu_catalog_songs(catalogue).expect("the songs are listed");
+    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed)
+        .expect("the catalogue is read");
+    let songs = phomu_wasm::catalogue_exports::phomu_catalog_songs(catalogue)
+        .expect("the songs are listed");
     assert_eq!(songs.len(), 1);
 }
 
 #[test]
 fn the_question_payload_of_the_lyrics_mode_names_no_line() {
     let compressed = compress(CATALOGUE_WITH_LYRICS);
-    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed).expect("the catalogue is read");
+    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed)
+        .expect("the catalogue is read");
     let config = json!({ "selectedModes": ["lyrics"] });
     let handle = new_session(&config, &players(), &[], Some(catalogue), 7, 0)
         .expect("the session is created");
@@ -106,7 +113,9 @@ fn the_question_payload_of_the_lyrics_mode_names_no_line() {
     assert_eq!(question["options"].as_array().map(Vec::len), Some(4));
     // Every option is a line of text — none of them carries a marking that
     // would name the invented one.
-    let options = question["options"].as_array().expect("the options are a list");
+    let options = question["options"]
+        .as_array()
+        .expect("the options are a list");
     for option in options {
         assert!(option.is_string(), "an option is a line of text");
     }
@@ -123,7 +132,8 @@ fn the_question_payload_of_the_lyrics_mode_names_no_line() {
 #[test]
 fn the_bridge_decides_which_line_was_the_invented_one() {
     let compressed = compress(CATALOGUE_WITH_LYRICS);
-    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed).expect("the catalogue is read");
+    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed)
+        .expect("the catalogue is read");
     let config = json!({ "selectedModes": ["lyrics"] });
     let handle = new_session(&config, &players(), &[], Some(catalogue), 7, 0)
         .expect("the session is created");
@@ -147,15 +157,20 @@ fn the_bridge_decides_which_line_was_the_invented_one() {
 #[test]
 fn a_real_line_is_worth_nothing() {
     let compressed = compress(CATALOGUE_WITH_LYRICS);
-    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed).expect("the catalogue is read");
+    let catalogue = phomu_wasm::catalogue_exports::phomu_catalog_open(&compressed)
+        .expect("the catalogue is read");
     let config = json!({ "selectedModes": ["lyrics"] });
     let handle = new_session(&config, &players(), &[], Some(catalogue), 7, 0)
         .expect("the session is created");
     start_game(handle, 0).expect("the game starts");
     draw_song(handle, "random").expect("a song is drawn");
 
-    let wrong = submit_choice(handle, &json!({ "kind": "lyrics", "line": "echt eins" }), None)
-        .expect("the answer is scored");
+    let wrong = submit_choice(
+        handle,
+        &json!({ "kind": "lyrics", "line": "echt eins" }),
+        None,
+    )
+    .expect("the answer is scored");
     assert_eq!(wrong["score"]["isCorrect"], false);
     assert_eq!(wrong["score"]["pointsAwarded"], 0);
 }

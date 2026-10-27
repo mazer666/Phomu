@@ -394,4 +394,3 @@ pub fn year_scale(catalogue: &[Song]) -> Vec<i32> {
     years.sort_unstable();
     years
 }
-

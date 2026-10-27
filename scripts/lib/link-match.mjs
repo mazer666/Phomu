@@ -20,6 +20,19 @@
  *     - artist      >= 0.90 (>= 0.85 when only a main artist is credited)
  *     - runtime     within <= 3 s of the reference, or a unique hit
  *
+ *   The verdict is one of three, and the difference matters:
+ *     - `ok`        the link names the same recording
+ *     - `uncertain` the provider names the same work in another
+ *                   designation (an alias, a live take, another master);
+ *                   the matcher cannot decide, the link stays and is
+ *                   documented
+ *     - `mismatch`  the link names a *different* song — it has to be
+ *                   replaced or emptied
+ *
+ *   Every tolerance below is backed by an example of the catalogue; the
+ *   examples are named in the comment of the rule and are asserted by
+ *   `scripts/lib/link-match.test.mjs`.
+ *
  * EXAMPLE
  *   import { matchGate } from './lib/link-match.mjs';
  *
@@ -27,21 +40,11 @@
  *     { title: 'Can I Kick It?', artist: 'A Tribe Called Quest', durationSec: 251.79 },
  *     { title: 'Can I Kick It?', artist: 'A Tribe Called Quest', durationSec: 252 },
  *   );
- *   // => { verdict: 'ok', titleScore: 1, artistScore: 1, durationDelta: 0.21 }
+ *   // => { verdict: 'ok', reasons: [], title, artist, duration }
  */
 
-/** Version markers that describe a *different* recording of the same song. */
-const QUALIFIER_PATTERN = /\(([^)]*)\)|\[([^\]]*)\]/g;
-
-/** Credit clauses that follow the main artist. */
-const CREDIT_PATTERN =
-  /\s*(?:,|\s+feat\.?\s+|\s+ft\.?\s+|\s+featuring\s+|\s+with\s+|\s+x\s+|\s+&\s+|\s+and\s+|\s+vs\.?\s+).*$/i;
-
-/** Words that never carry meaning for the comparison. */
-const STOP_WORDS = new Set(['the', 'a', 'an', 'of', 'in', 'on', 'at', 'to', 'for', 'and']);
-
 /**
- * Qualifiers that mark a *different recording* of the same song.
+ * Version markers that describe a *different recording* of the same song.
  *
  * A remix, a live take or an instrumental version is not the track of the
  * catalogue entry — a link to it is a wrong link.
@@ -81,19 +84,63 @@ const VERSION_MARKERS = [
 const EDITION_MARKERS = [
   'single',
   'single edit',
+  'single version',
   'radio edit',
+  'radio version',
   'edit',
   'remaster',
   'remastered',
   'remasterization',
+  'digital remaster',
   'deluxe',
   'expanded',
   'anniversary',
+  'anniversary edition',
   'edition',
   'version',
   'bonus',
-  'anniversary edition',
 ];
+
+/**
+ * Markers that carry no information about the recording.
+ *
+ * "[Explicit]" is a content marker, not a different version — a link to the
+ * explicit track is the link to the song.
+ */
+const NEUTRAL_MARKERS = [
+  'explicit',
+  'clean',
+  'dirty',
+  'mono',
+  'stereo',
+  'hq',
+  'hd',
+];
+
+/**
+ * Words that never carry meaning for the comparison.
+ */
+const STOP_WORDS = new Set(['the', 'a', 'an', 'of', 'in', 'on', 'at', 'to', 'for', 'and']);
+
+/**
+ * Feature credits — they belong to the artist, not to the title.
+ *
+ * "Side To Side ft. Nicki Minaj" and "Unholy (feat. Kim Petras)" are the
+ * song of the catalogue entry, the credit is only an addition of the
+ * provider.
+ *
+ * `with` is only a credit *inside brackets*. "Down with the Sickness",
+ * "Stay with Me" and "I Wanna Dance with Somebody" are song titles — a
+ * trailing "with <something>" would swallow the whole title.
+ */
+const FEATURE_SUFFIX = /\s*[,;]?\s*\b(?:ft|feat|featuring)\b\.?\s+[^()]+$/i;
+const FEATURE_BRACKET = /^\s*(?:ft|feat|featuring|with)\b\.?\s+/i;
+
+/**
+ * Credit clauses that follow the main artist.
+ */
+const CREDIT_PATTERN =
+  /\s*(?:,|\s+feat\.?\s+|\s+ft\.?\s+|\s+featuring\s+|\s+with\s+|\s+x\s+|\s+&\s+|\s+and\s+|\s+vs\.?\s+).*$/i;
 
 /**
  * Normalise a string for the comparison.
@@ -101,6 +148,14 @@ const EDITION_MARKERS = [
  * Lower case, without diacritics, without punctuation, with `&` and `+`
  * mapped to `and`. Everything that only carries spelling differences is
  * removed here so that the similarity below compares *content*.
+ *
+ * Two spelling folds are proven by the catalogue:
+ *   - "ß" becomes "ss" — the catalogue entry "Ein bißchen Frieden"
+ *     (schlager-nicole-frieden) is the same recording as "Ein bisschen
+ *     Frieden" on the providers.
+ *   - "some day" becomes "someday" — the catalogue entry "Someday My
+ *     Prince Will Come" (disney-snowwhite-someday) is the same recording as
+ *     "Some Day My Prince Will Come".
  *
  * @param {string} value the raw string
  * @returns {string} the normalised string
@@ -111,12 +166,14 @@ export function normalizeText(value) {
     .normalize('NFKD')
     .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
+    .replace(/ß/g, 'ss')
     .replace(/&/g, ' and ')
     .replace(/\+/g, ' and ')
     .replace(/['’`]/g, '')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim()
-    .replace(/\s+/g, ' ');
+    .replace(/\s+/g, ' ')
+    .replace(/\bsome day\b/g, 'someday');
 }
 
 /**
@@ -130,13 +187,11 @@ export function contentWords(normalized) {
 }
 
 /**
- * Feature credits — they belong to the artist, not to the title.
- */
-const FEATURE_CREDIT =
-  /\s*[,;]?\s*\b(?:ft|feat|featuring|with)\b\.?\s+[^()]+$/gi;
-
-/**
  * Check whether a text contains a version or an edition marker.
+ *
+ * "Original Mix" is not a different recording — it is the plain recording
+ * under its full name (the catalogue entry "Aeon Of Revenge (Original Mix)"
+ * is served by the track "Aeon Of Revenge").
  *
  * @param {string} text the normalised text
  * @returns {'version'|'edition'|null} the kind of marker
@@ -144,6 +199,7 @@ const FEATURE_CREDIT =
 function markerKind(text) {
   const value = normalizeText(text);
   if (!value) return null;
+  if (/^original\s/.test(value)) return 'edition';
   if (VERSION_MARKERS.some((marker) => hasMarker(value, marker))) return 'version';
   if (EDITION_MARKERS.some((marker) => hasMarker(value, marker))) return 'edition';
   return null;
@@ -174,7 +230,7 @@ function hasMarker(value, marker) {
  * @returns {string} the title without the feature credits
  */
 function removeFeatures(title) {
-  return String(title ?? '').replace(FEATURE_CREDIT, ' ');
+  return String(title ?? '').replace(FEATURE_SUFFIX, ' ');
 }
 
 /**
@@ -250,7 +306,10 @@ export function parseTitleVariants(title) {
   const seen = new Set();
   const variants = [];
   for (const variant of [plain, withDash, withTrailing, withBoth]) {
-    const normalized = { base: normalizeText(variant.base), qualifiers: variant.qualifiers };
+    const normalized = {
+      base: normalizeText(variant.base),
+      qualifiers: variant.qualifiers,
+    };
     const key = `${normalized.base}|${normalized.qualifiers.join(',')}`;
     if (seen.has(key)) continue;
     seen.add(key);
@@ -280,8 +339,7 @@ export function parseTitle(title) {
  * @returns {boolean} whether the text names a guest artist
  */
 function isFeatureCredit(text) {
-  const probe = new RegExp(FEATURE_CREDIT.source, 'i');
-  return probe.test(` ${text}`.trim()) || probe.test(text);
+  return FEATURE_BRACKET.test(String(text ?? '').trim());
 }
 
 /**
@@ -315,7 +373,9 @@ export function titleQualifiers(title) {
  * @returns {string[]} the normalised version qualifiers
  */
 export function versionQualifiers(title) {
-  return parseTitle(title).qualifiers.filter((value) => markerKind(value) === 'version');
+  return parseTitle(title).qualifiers.filter(
+    (value) => markerKind(value) === 'version',
+  );
 }
 
 /**
@@ -331,6 +391,26 @@ export function primaryArtist(artist) {
   const match = raw.match(CREDIT_PATTERN);
   const head = match ? raw.slice(0, match.index) : raw;
   return normalizeText(head).trim();
+}
+
+/**
+ * Split an artist credit into its members.
+ *
+ * "A, B & C" and "C, B und A" describe the same ensemble — the order may
+ * differ, the *set* of the interpreters may not. The catalogue carries 187
+ * such credits, among them "Adassa, Stephanie Beatriz, Mauro Castillo,
+ * Rhenzy Feliz, Carolina Gaitán, Diane Guerrero" (We Don't Talk About Bruno).
+ *
+ * @param {string} artist the raw artist credit
+ * @returns {string[]} the normalised members
+ */
+export function artistMembers(artist) {
+  return String(artist ?? '')
+    .split(
+      /\s*(?:,|&|\band\b|\bund\b|\bfeat\.?\b|\bft\.?\b|\bfeaturing\b|\bwith\b|\bx\b|\bvs\.?\b|\+)\s*/i,
+    )
+    .map((part) => normalizeText(part))
+    .filter((part) => part.length > 0);
 }
 
 /**
@@ -416,23 +496,6 @@ export function similarity(a, b) {
 }
 
 /**
- * Markers that carry no information about the recording.
- *
- * "[Explicit]" is a content marker, not a different version — a link to the
- * explicit track is the link to the song.
- */
-const NEUTRAL_MARKERS = [
-  'explicit',
-  'clean',
-  'dirty',
-  'mono',
-  'stereo',
-  'hq',
-  'hd',
-  'digital remaster',
-];
-
-/**
  * Remove the neutral markers from a qualifier.
  *
  * @param {string} qualifier the normalised qualifier
@@ -489,17 +552,29 @@ export function compareVersions(referenceTitle, providerTitle) {
   const reference = titleSignature(referenceTitle);
   const provider = titleSignature(providerTitle);
   const shared = [...provider.versions].filter((value) =>
-    [...reference.versions].some((other) => other.includes(value) || value.includes(other)),
+    [...reference.versions].some(
+      (other) => other.includes(value) || value.includes(other),
+    ),
   );
   const mismatch =
-    (reference.versions.size > 0 || provider.versions.size > 0) && shared.length === 0;
+    (reference.versions.size > 0 || provider.versions.size > 0) &&
+    shared.length === 0;
   const editionOnly =
     !mismatch &&
     provider.editions.size > 0 &&
     [...provider.editions].every((value) =>
-      [...reference.editions].some((other) => other.includes(value) || value.includes(other)),
+      [...reference.editions].some(
+        (other) => other.includes(value) || value.includes(other),
+      ),
     );
-  return { mismatch, editionOnly, unknown: provider.unknown.size > 0, shared };
+  return {
+    mismatch,
+    editionOnly,
+    unknown: provider.unknown.size > 0,
+    shared,
+    referenceVersions: [...reference.versions],
+    providerVersions: [...provider.versions],
+  };
 }
 
 /**
@@ -541,11 +616,69 @@ const GENERIC_TITLE_WORDS = new Set([
   'soundtrack',
   'stereo',
   'mono',
+  'from',
+  'with',
+  'take',
+  'part',
+  'volume',
+  'vol',
 ]);
 
-export function matchTitle(referenceTitle, providerTitle) {
-  const reference = parseTitle(referenceTitle);
-  const classification = compareVersions(referenceTitle, providerTitle);
+/**
+ * Words that turn a qualifier into the context of the recording — the film
+ * or the album it belongs to. "Night Fever (From "Saturday Night Fever"
+ * Soundtrack)" is the song of the catalogue entry, not another designation.
+ */
+const CONTEXT_WORDS = new Set([
+  'from',
+  'soundtrack',
+  'motion',
+  'picture',
+  'album',
+  'movie',
+  'film',
+  'motionpicture',
+  'originalsoundtrack',
+]);
+
+/**
+ * Remove an artist prefix from a catalogue title.
+ *
+ * "ANOHNI: MARROW" (the catalogue entry yt-Rb9XECErMlc) carries the artist
+ * in front of the title — the provider names the song "Marrow". The prefix
+ * is only removed when it names the artist of the entry, so that
+ * "Mission: Impossible Theme" (the prefix is part of the title) and "10:35"
+ * (the prefix is a time) stay untouched.
+ *
+ * @param {string} title the raw title
+ * @param {string} artist the artist of the catalogue entry
+ * @returns {string} the title without the artist prefix
+ */
+export function stripArtistPrefix(title, artist) {
+  const raw = String(title ?? '');
+  const artistNormalized = normalizeText(artist);
+  if (!artistNormalized) return raw;
+  const parts = raw.split(/\s*:\s*/);
+  if (parts.length < 2) return raw;
+  const prefix = normalizeText(parts[0]);
+  if (!prefix || prefix === artistNormalized) return raw;
+  if (!artistNormalized.includes(prefix)) return raw;
+  return parts.slice(1).join(': ');
+}
+
+/**
+ * Compare the title of a provider track with the title of the catalogue
+ * entry.
+ *
+ * @param {string} referenceTitle the title of the catalogue entry
+ * @param {string} providerTitle the title of the provider track
+ * @param {string} [referenceArtist] the artist of the catalogue entry
+ * @returns {object} the comparison
+ */
+export function matchTitle(referenceTitle, providerTitle, referenceArtist = '') {
+  const effectiveReference = stripArtistPrefix(referenceTitle, referenceArtist);
+  const reference = parseTitle(effectiveReference);
+  const classification = compareVersions(effectiveReference, providerTitle);
 
   // Every reading of the provider title is tried; the one that fits the
   // reference best wins. A title can be read in more than one way — "Artist
@@ -554,27 +687,21 @@ export function matchTitle(referenceTitle, providerTitle) {
   let best = null;
   for (const candidate of parseTitleVariants(providerTitle)) {
     const score = similarity(reference.base, candidate.base);
-    if (!best || score > best.score) best = { candidate, score };
+    if (!best || score > best.score) {
+      best = { candidate, score };
+    }
   }
   const provider = best.candidate;
   const coreScore = best.score;
-  const fullScore = similarity(referenceTitle, providerTitle);
+  const fullScore = similarity(effectiveReference, providerTitle);
 
-  // A provider that names the song with a more detailed title
-  // ("Symphony No. 5 in C Minor, Op. 67: I. Allegro con brio" for
-  // "Symphony No. 5 (Fate)") still delivers the same recording. The subset
-  // rule covers that case without loosening the gate for different songs.
   const referenceWords = contentWords(reference.base);
   const providerWords = contentWords(provider.base);
-  const subset =
-    referenceWords.length > 0 &&
-    providerWords.length >= referenceWords.length &&
-    referenceWords.every((word) => providerWords.includes(word));
 
   // The distinctive words of the catalogue title have to be in the provider
-  // title. "Back to the Future Theme" and "Back To The Future: Back To The
-  // Future" describe the same recording — the score alone would call it a
-  // different song.
+  // title. "Symphony No. 5 (Fate)" and "Symphony No. 5 in C Minor, Op. 67:
+  // I. Allegro con brio" describe the same work — the score alone would
+  // call it a different song.
   const distinctiveWords = referenceWords.filter(
     (word) => word.length >= 4 && !GENERIC_TITLE_WORDS.has(word),
   );
@@ -582,18 +709,108 @@ export function matchTitle(referenceTitle, providerTitle) {
     distinctiveWords.length > 0 &&
     distinctiveWords.every((word) => providerWords.includes(word));
 
+  // The provider may name the song with more words than the catalogue
+  // ("Carmina Burana" / "Carmina Burana: O Fortuna Vivere"). That is only
+  // allowed when the additional words carry no meaning of their own.
+  const extraWords = providerWords.filter(
+    (word) => !referenceWords.includes(word),
+  );
+  const superset =
+    referenceWords.length > 0 &&
+    providerWords.length > referenceWords.length &&
+    referenceWords.every((word) => providerWords.includes(word)) &&
+    extraWords.every((word) => GENERIC_TITLE_WORDS.has(word));
+
+  // A qualifier of one side may carry the title of the other side: the
+  // catalogue entry "Psycho (The Murder)" is served by the track "The
+  // Murder" (the catalogue entry score-herrmann-psycho), and the entry
+  // "Aquecimento das Maravilhas" is served by "Quadradinho de Oito
+  // (Aquecimento das Maravilhas)" (yt-7raxxqP6DSU).
+  const referenceSignature = titleSignature(effectiveReference);
+  const providerSignature = titleSignature(providerTitle);
+  const bridge =
+    (referenceWords.length > 0 &&
+      [...providerSignature.unknown].some((qualifier) =>
+        contentWords(qualifier).every((word) => referenceWords.includes(word)),
+      )) ||
+    (providerWords.length > 0 &&
+      [...referenceSignature.unknown].some((qualifier) =>
+        contentWords(qualifier).every((word) => providerWords.includes(word)),
+      ));
+
+  // A qualifier of the provider that the catalogue does not know is an
+  // alias — another designation of the same recording. A qualifier that
+  // only repeats the words of the catalogue title ("From \"Back To The
+  // Future\"") is not an alias.
+  const knownWords = new Set([
+    ...referenceWords,
+    ...[...referenceSignature.unknown, ...referenceSignature.versions, ...referenceSignature.editions]
+      .flatMap((qualifier) => contentWords(qualifier)),
+  ]);
+  const aliasQualifiers = [...providerSignature.unknown].filter((value) => {
+    // "[Explicit]" and "[Mono]" are content markers, not another
+    // designation of the recording.
+    const meaningful = stripNeutralMarkers(value);
+    if (!meaningful) return false;
+    // The context of the recording (the film, the album) does not change
+    // the recording itself.
+    const words = contentWords(meaningful);
+    if (words.every((word) => CONTEXT_WORDS.has(word))) return false;
+    return words.some((word) => !knownWords.has(word));
+  });
+
+  const sameWork =
+    coreScore >= 0.95 || distinctiveMatch || superset || bridge;
+
+  // The catalogue names a version ("Nutshell (Unplugged)") and the provider
+  // names another one ("Nutshell - Live at the Majestic Theatre") — that is
+  // a different recording of the same work. The provider names the same
+  // version in another wording ("Serenity - Andrew Rayel Aether Radio Edit"
+  // against "Serenity (Andrew Rayel Aether Remix)") — that is another
+  // edition of the same recording, not another recording.
+  const versionConflict =
+    classification.referenceVersions.length > 0 && classification.mismatch;
+  const qualifierOverlap =
+    versionConflict &&
+    [...classification.referenceVersions].some((referenceVersion) =>
+      [...classification.providerVersions].some((providerVersion) =>
+        contentWords(providerVersion).some((word) =>
+          contentWords(referenceVersion).includes(word),
+        ),
+      ),
+    );
+  // The provider adds a version that the catalogue does not name ("Vamo Que
+  // Vamo - Ao Vivo") — the same work in another take.
+  const versionAdded =
+    classification.referenceVersions.length === 0 &&
+    classification.providerVersions.length > 0;
+
+  let reason = null;
+  if (!sameWork) {
+    reason = `the provider names a different work ("${providerTitle}")`;
+  }
+
   return {
     score: Math.max(coreScore, fullScore),
     coreScore,
     fullScore,
-    subset,
+    superset,
     distinctiveMatch,
-    ok: (coreScore >= 0.95 || subset || distinctiveMatch) && !classification.mismatch,
+    bridge,
+    sameWork,
+    ok: sameWork && !versionConflict,
     qualifierMismatch: classification.mismatch || classification.editionOnly,
     versionMismatch: classification.mismatch,
+    versionConflict,
+    versionAdded,
+    qualifierOverlap,
     editionOnly: classification.editionOnly,
-    unknownQualifier: classification.unknown,
+    unknownQualifier: aliasQualifiers.length > 0,
+    aliasQualifiers,
+    providerQualifiers: provider.qualifiers,
+    referenceQualifiers: [...referenceSignature.unknown],
     sharedVersions: classification.shared,
+    reason,
   };
 }
 
@@ -611,32 +828,79 @@ export function matchArtist(referenceArtist, providerArtist) {
   const score = similarity(referenceArtist, providerArtist);
   if (score >= 0.9) return { score, ok: true, mode: 'exact' };
 
-  // An ensemble credit is accepted when the main artist of the reference is
-  // among the credited artists of the provider track (and the other way
-  // round). The provider lists "Tiësto, Poppy Baskcomb" where the catalogue
-  // lists "Tiësto" — that is the same song.
+  // An ensemble credit is accepted when the *set* of the credited artists
+  // agrees: the provider may name fewer artists ("Bob Marley" for "Bob
+  // Marley & The Wailers") or more ("Ludwig van Beethoven, Berlin
+  // Philharmonic, Herbert von Karajan"), and it may order them differently
+  // ("A, B & C" against "C, B und A"). The set may not differ in both
+  // directions — then it is a different performer.
+  const referenceMembers = artistMembers(referenceArtist);
+  const providerMembers = artistMembers(providerArtist);
+  const referenceSet = new Set(referenceMembers);
+  const providerSet = new Set(providerMembers);
+  const providerIsSubset =
+    providerMembers.length > 0 &&
+    [...providerSet].every((member) => referenceSet.has(member));
+  const referenceIsSubset =
+    referenceMembers.length > 0 &&
+    [...referenceSet].every((member) => providerSet.has(member));
+  if (providerIsSubset || referenceIsSubset) {
+    return { score: Math.max(score, 0.85), ok: true, mode: 'ensemble' };
+  }
+
+  // The last resort: the words of the main artist are contained in the
+  // other credit ("Farrokh Bulsara" against "Farrokh Bulsara & Friends").
   const referenceMain = primaryArtist(referenceArtist);
   const providerMain = primaryArtist(providerArtist);
-  const referenceWords = contentWords(normalizeText(referenceArtist));
-  const providerWords = contentWords(normalizeText(providerArtist));
   const mainWords = contentWords(referenceMain);
   const providerMainWords = contentWords(providerMain);
-  const subset =
+  if (
     mainWords.length > 0 &&
-    providerWords.length > 0 &&
-    (mainWords.every((word) => providerWords.includes(word)) ||
-      providerMainWords.every((word) => referenceWords.includes(word)));
-  if (subset) return { score: Math.max(score, 0.85), ok: true, mode: 'ensemble' };
+    providerMainWords.length > 0 &&
+    (mainWords.every((word) => providerWordsContain(providerArtist, word)) ||
+      providerMainWords.every((word) => referenceWordsContain(referenceArtist, word)))
+  ) {
+    return { score: Math.max(score, 0.85), ok: true, mode: 'ensemble' };
+  }
   return { score, ok: false, mode: 'none' };
+}
+
+/**
+ * Check whether a credit contains a word.
+ *
+ * @param {string} credit the artist credit
+ * @param {string} word the word
+ * @returns {boolean} whether the credit contains the word
+ */
+function providerWordsContain(credit, word) {
+  return contentWords(normalizeText(credit)).includes(word);
+}
+
+/**
+ * Check whether a credit contains a word.
+ *
+ * @param {string} credit the artist credit
+ * @param {string} word the word
+ * @returns {boolean} whether the credit contains the word
+ */
+function referenceWordsContain(credit, word) {
+  return contentWords(normalizeText(credit)).includes(word);
 }
 
 /**
  * Compare the runtime of a provider track with the reference runtime.
  *
- * The tolerance is 3 seconds. The second gate of the link wave is applied
- * additionally: a track whose runtime differs by more than 3 seconds is
- * still accepted when it is the *only* candidate with this title and this
- * artist — a re-recording then explains the difference.
+ * The tolerance is 3 seconds. A *new master* of the same recording is a
+ * few seconds longer — the catalogue entry "Nutshell (Unplugged)"
+ * (unplugged-aic-nutshell) is 272.4 s on the reference, the Amazon track
+ * carries the same recording in 268 s. A new master is therefore accepted
+ * with a tolerance of 2 % of the runtime, at most 10 s, and only when the
+ * track is the unique hit of the song.
+ *
+ * The second gate of the link wave is applied additionally: a track whose
+ * runtime differs by more than 3 seconds is still accepted when it is the
+ * *only* candidate with this title and this artist — a re-recording then
+ * explains the difference.
  *
  * `alternateDurations` holds the runtimes of all reference candidates with
  * the same title and the same artist. A provider runtime that matches one of
@@ -657,16 +921,33 @@ export function matchDuration(referenceSec, providerSec, options = {}) {
   const alternates = options.alternateDurations ?? [];
   for (const alternate of alternates) {
     if (Math.abs(alternate - providerSec) <= toleranceSec) {
-      return { delta: Math.abs(alternate - providerSec), ok: true, mode: 'matched-reference' };
+      return {
+        delta: Math.abs(alternate - providerSec),
+        ok: true,
+        mode: 'matched-reference',
+      };
     }
   }
   const delta = Math.abs(referenceSec - providerSec);
-  if (delta <= toleranceSec) return { delta, ok: true, mode: 'within-tolerance' };
-  const ratio = referenceSec > 0 ? delta / referenceSec : 1;
-  if (options.unique && ratio <= toleranceRatio) {
-    return { delta, ok: true, mode: 'unique-hit' };
+  if (delta <= toleranceSec) {
+    return { delta, ok: true, mode: 'within-tolerance' };
   }
-  return { delta, ok: false, mode: 'deviation' };
+  const ratio = referenceSec > 0 ? delta / referenceSec : 1;
+  if (options.unique) {
+    // A new master of the same recording: a few seconds, at most 2 % of
+    // the runtime and at most 10 s.
+    const masterTolerance = Math.min(
+      options.maxMasterDeltaSec ?? 10,
+      Math.max(toleranceSec, referenceSec * (options.masterToleranceRatio ?? 0.02)),
+    );
+    if (delta <= masterTolerance) {
+      return { delta, ok: true, mode: 'new-master' };
+    }
+    if (ratio <= toleranceRatio) {
+      return { delta, ok: true, mode: 'unique-hit' };
+    }
+  }
+  return { delta, ok: false, mode: 'deviation', ratio };
 }
 
 /**
@@ -696,41 +977,74 @@ export function parseIsoDuration(value) {
 export function matchGate(reference, provider, options = {}) {
   const title = matchTitle(reference.title, provider.title);
   const artist = matchArtist(reference.artist, provider.artist);
-  const duration = matchDuration(reference.durationSec ?? null, provider.durationSec ?? null, {
-    unique: options.unique,
-    alternateDurations: options.alternateDurations,
-  });
+  const duration = matchDuration(
+    reference.durationSec ?? null,
+    provider.durationSec ?? null,
+    {
+      unique: options.unique,
+      alternateDurations: options.alternateDurations,
+    },
+  );
 
   const reasons = [];
-  let hard = false;
+  const notes = [];
+  let verdict = 'ok';
 
-  if (!title.ok) {
-    hard = true;
+  if (!title.sameWork) {
+    verdict = 'mismatch';
     reasons.push(
-      title.coreScore < 0.95 && !title.subset
-        ? `title-score ${title.coreScore.toFixed(3)} < 0.95`
-        : `provider title names a different recording ("${provider.title}")`,
+      title.reason ??
+        `the provider names a different work ("${provider.title}")`,
+    );
+  } else if (!artist.ok) {
+    verdict = 'mismatch';
+    reasons.push(
+      `the provider names a different performer ("${provider.artist}")`,
+    );
+  } else if (title.versionConflict && !title.qualifierOverlap) {
+    // The catalogue names a version and the provider names another one:
+    // that is a different recording of the same work.
+    verdict = 'mismatch';
+    reasons.push(
+      `the provider names a different version of the recording ("${provider.title}")`,
+    );
+  } else if (
+    options.duration !== false &&
+    duration.mode === 'deviation' &&
+    duration.ratio >= 0.25
+  ) {
+    // A quarter of the runtime more or less is not an edit of the same
+    // recording — it is a different take (a live album track instead of the
+    // studio cut, for example).
+    verdict = 'mismatch';
+    reasons.push(
+      `the provider names a different recording ("${provider.title}", ${duration.delta.toFixed(1)}s instead of ${(reference.durationSec ?? 0).toFixed(1)}s)`,
+    );
+  } else if (options.duration !== false && !duration.ok) {
+    verdict = 'uncertain';
+    reasons.push(
+      `the runtime deviates by ${(duration.delta ?? 0).toFixed(1)}s — the provider delivers another edition of the same recording`,
+    );
+  } else if (title.unknownQualifier) {
+    verdict = 'uncertain';
+    reasons.push(
+      `the provider names the song under another designation ("${provider.title}")`,
+    );
+  } else if (title.versionAdded || title.qualifierOverlap) {
+    verdict = 'uncertain';
+    reasons.push(
+      `the provider delivers another take of the recording ("${provider.title}")`,
     );
   }
-  if (!artist.ok) {
-    hard = true;
-    reasons.push(`artist-score ${artist.score.toFixed(3)} < 0.90`);
-  }
-  if (options.duration !== false && !duration.ok) {
-    hard = true;
-    reasons.push(
-      duration.mode === 'no-reference'
-        ? 'runtime not verifiable (no reference runtime)'
-        : `runtime deviation ${duration.delta.toFixed(1)}s > 3s`,
-    );
-  }
+
   if (title.editionOnly) {
-    reasons.push('provider uses a new edition of the recording (remaster/anniversary)');
+    notes.push(
+      'the provider uses a new edition of the recording (remaster/anniversary)',
+    );
   }
-  if (title.unknownQualifier) {
-    reasons.push(`provider title carries an extra qualifier ("${provider.title}")`);
+  if (title.versionAdded && verdict === 'uncertain') {
+    // already reported
   }
 
-  const verdict = hard ? 'mismatch' : reasons.length > 0 ? 'warn' : 'ok';
-  return { verdict, reasons, title, artist, duration };
+  return { verdict, reasons, notes, title, artist, duration };
 }

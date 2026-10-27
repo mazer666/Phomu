@@ -89,9 +89,7 @@ export function SongList({ songs, selectedId, onSelect }: SongListProps) {
           <option value="incomplete">
             {t('admin.songs.filterIncomplete')}
           </option>
-          <option value="complete">
-            {t('admin.songs.filterComplete')}
-          </option>
+          <option value="complete">{t('admin.songs.filterComplete')}</option>
         </select>
         <select
           value={filterPack}
@@ -222,11 +220,15 @@ function SongRow({
         <CompletenessBadge complete={complete} />
       </td>
       <td className="px-3 py-2">
-        <span className={`text-xs ${hasLyrics ? 'text-green-600' : 'text-gray-400'}`}>
+        <span
+          className={`text-xs ${hasLyrics ? 'text-green-600' : 'text-gray-400'}`}
+        >
           {hasLyrics ? '✓' : '✗'} {t('admin.songs.lyricsLabel')}
         </span>
         {'  '}
-        <span className={`text-xs ${hasYoutube ? 'text-green-600' : 'text-gray-400'}`}>
+        <span
+          className={`text-xs ${hasYoutube ? 'text-green-600' : 'text-gray-400'}`}
+        >
           {hasYoutube ? '✓' : '✗'} {t('admin.songs.youtubeShort')}
         </span>
       </td>

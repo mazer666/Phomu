@@ -198,13 +198,13 @@ pub fn feedback_payload(session: &Session, mode: GameMode) -> Value {
         GameMode::Timeline => {
             let effect = phomu_core::facade::apply_year(&years, song.year);
             json!({
-            "year": song.year,
-            "slot": phomu_core::facade::canonical_slot(song.year, &years),
-            "effect": {
-                "isDuplicate": effect.is_duplicate,
-                "removalOffered": effect.removal_offered,
-            },
-        })
+                "year": song.year,
+                "slot": phomu_core::facade::canonical_slot(song.year, &years),
+                "effect": {
+                    "isDuplicate": effect.is_duplicate,
+                    "removalOffered": effect.removal_offered,
+                },
+            })
         }
         GameMode::Lyrics => json!({
             "inventedLine": song
@@ -228,4 +228,3 @@ pub fn feedback_payload(session: &Session, mode: GameMode) -> Value {
         "detail": detail,
     })
 }
-

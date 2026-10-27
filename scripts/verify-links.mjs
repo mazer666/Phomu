@@ -61,13 +61,15 @@ import {
   parseTitle,
   parseTitleVariants,
   contentWords,
+  similarity,
+  titleSignature,
   versionQualifiers,
 } from './lib/link-match.mjs';
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(SCRIPT_DIR, '..');
 const SONGS_DIR = path.join(REPO_ROOT, 'src/data/songs');
-const CACHE_FILE = path.join(REPO_ROOT, 'tmp/link-verify-cache.json');
+const DEFAULT_CACHE_FILE = path.join(REPO_ROOT, 'tmp/link-verify-cache.json');
 
 const USER_AGENT =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
@@ -125,15 +127,16 @@ function loadSongs() {
  * A tiny persistent cache so that a second run does not fetch everything again.
  */
 class Cache {
-  constructor(enabled, refresh) {
+  constructor(enabled, refresh, file) {
     this.enabled = enabled;
     this.refresh = refresh;
+    this.file = file;
     this.data = new Map();
     this.hits = 0;
     this.misses = 0;
-    if (enabled && !refresh && fs.existsSync(CACHE_FILE)) {
+    if (enabled && !refresh && fs.existsSync(this.file)) {
       try {
-        const raw = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+        const raw = JSON.parse(fs.readFileSync(this.file, 'utf8'));
         for (const [key, value] of Object.entries(raw)) this.data.set(key, value);
       } catch {
         /* a broken cache is no reason to abort the run */
@@ -167,10 +170,10 @@ class Cache {
   /** Write the cache back to disk. */
   save() {
     if (!this.enabled) return;
-    fs.mkdirSync(path.dirname(CACHE_FILE), { recursive: true });
+    fs.mkdirSync(path.dirname(this.file), { recursive: true });
     const plain = {};
     for (const [key, value] of this.data) plain[key] = value;
-    fs.writeFileSync(CACHE_FILE, `${JSON.stringify(plain)}\n`);
+    fs.writeFileSync(this.file, `${JSON.stringify(plain)}\n`);
   }
 }
 
@@ -183,7 +186,8 @@ class Cache {
  */
 async function httpGet(url, options = {}) {
   let lastError = 'unknown';
-  for (let attempt = 0; attempt < RETRIES; attempt += 1) {
+  const retries = options.retries ?? RETRIES - 1;
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
     if (attempt > 0) {
       const backoff = Math.min(8000, 500 * 2 ** (attempt - 1));
       await new Promise((resolve) => setTimeout(resolve, backoff));
@@ -197,9 +201,13 @@ async function httpGet(url, options = {}) {
       });
       const body = await response.text();
       clearTimeout(timer);
-      if ((response.status >= 500 || response.status === 429) && attempt < RETRIES - 1) {
+      if ((response.status >= 500 || response.status === 429) && attempt < retries) {
         lastError = `HTTP ${response.status}`;
-        await new Promise((resolve) => setTimeout(resolve, 1200 * 2 ** attempt));
+        // The iTunes Search API answers a burst with 429. The wait grows
+        // with the attempt so that the limit has time to reset.
+        const wait =
+          response.status === 429 ? 15000 * (attempt + 1) : 1200 * 2 ** attempt;
+        await new Promise((resolve) => setTimeout(resolve, wait));
         continue;
       }
       return { status: response.status, body };
@@ -209,6 +217,27 @@ async function httpGet(url, options = {}) {
     }
   }
   return { status: 0, body: '', error: lastError };
+}
+
+/**
+ * The iTunes Search API limits the number of requests per minute. Every
+ * request takes a slot from this gate, so that a burst of parallel songs
+ * does not run into the limit.
+ */
+let itunesNextSlot = 0;
+let itunesSlotMs = 450;
+let itunesRetries = 3;
+
+/**
+ * Wait for the next iTunes slot.
+ *
+ * @returns {Promise<void>} the promise
+ */
+async function waitForItunesSlot() {
+  const now = Date.now();
+  const start = Math.max(now, itunesNextSlot);
+  itunesNextSlot = start + itunesSlotMs;
+  await new Promise((resolve) => setTimeout(resolve, start - now));
 }
 
 /**
@@ -498,26 +527,61 @@ async function fetchYouTube(videoId, cache) {
 /**
  * Fetch the reference of a song from the iTunes Search API.
  *
+ * The search is repeated for the catalogue country and for the three
+ * markets that carry the most of the catalogue (US, DE, GB): a song of the
+ * German catalogue is often not in the US store, and the reference of
+ * "I Can Lose My Heart Tonight" (80s-cccatch-canlose) only exists in the
+ * GB store.
+ *
  * @param {object} song the catalogue entry
  * @param {Cache} cache the cache
  * @returns {Promise<object|null>} the reference
  */
 async function fetchReference(song, cache) {
   const term = `${song.title} ${song.artist}`;
-  const key = `v3:itunes:${normalizeText(term)}:${song.country ?? ''}`;
+  const countries = [
+    ...new Set(
+      [song.country, 'US', 'DE', 'GB']
+        .filter(Boolean)
+        .map((value) => String(value).toUpperCase()),
+    ),
+  ];
+  const candidates = [];
+  for (const country of countries) {
+    const found = await fetchReferenceCountry(term, country, song, cache);
+    if (!found) continue;
+    candidates.push(...found.candidates);
+    // A candidate that names the song exactly and was released in the
+    // catalogue year is the reference — the search can stop.
+    const exact = found.candidates.find((entry) => entry.fullScore >= 0.95);
+    if (exact) break;
+  }
+  return chooseReference(song, candidates);
+}
+
+/**
+ * Fetch the iTunes candidates of one country.
+ *
+ * @param {string} term the search term
+ * @param {string} country the country code
+ * @param {object} song the catalogue entry
+ * @param {Cache} cache the cache
+ * @returns {Promise<{candidates: object[]}|null>} the candidates
+ */
+async function fetchReferenceCountry(term, country, song, cache) {
+  const key = `v4:itunes:${normalizeText(term)}:${country}`;
   const cached = cache.get(key);
   if (cached !== undefined) {
     if (!cached.ok) return null;
-    return {
-      ...cached.value,
-      competitors: cached.candidates ?? [],
-      alternateDurations: (cached.sameSong ?? []).map((entry) => entry.durationSec),
-    };
+    return { candidates: cached.candidates ?? [] };
   }
-  const url = `${ITUNES_HOST}/search?term=${encodeURIComponent(term)}&entity=song&limit=8`;
-  const response = await httpGet(url);
+  const url = `${ITUNES_HOST}/search?term=${encodeURIComponent(term)}&entity=song&limit=8&country=${country}`;
+  await waitForItunesSlot();
+  const response = await httpGet(url, { retries: itunesRetries });
   if (response.status !== 200) {
-    cache.set(key, { ok: false });
+    // A rate limit (429) or a block (403) is not an answer — the result is
+    // not cached, so that the next run asks again.
+    if (response.status === 400) cache.set(key, { ok: false });
     return null;
   }
   let results = [];
@@ -528,7 +592,7 @@ async function fetchReference(song, cache) {
   }
   const candidates = [];
   for (const result of results) {
-    const title = matchTitle(song.title, result.trackName ?? '');
+    const title = matchTitle(song.title, result.trackName ?? '', song.artist);
     const artist = matchArtist(song.artist, result.artistName ?? '');
     candidates.push({
       title: result.trackName ?? null,
@@ -544,30 +608,64 @@ async function fetchReference(song, cache) {
       artistOk: artist.ok,
       titleOk: title.ok,
       plain: !title.qualifierMismatch,
+      // A candidate that names a version the catalogue does not name
+      // ("Regulate (Remix Version)" for "Regulate") is not the reference —
+      // it is another take of the song.
+      versionAdded: title.versionAdded,
+      versionConflict: title.versionConflict,
     });
   }
-  const passing = candidates.filter((entry) => entry.titleOk && entry.artistOk);
+  cache.set(key, { ok: true, candidates });
+  return { candidates };
+}
+
+/**
+ * Choose the reference out of the candidates.
+ *
+ * The reference is the candidate that looks most like the catalogue entry:
+ * the plain recording comes first (a remix is not the reference), then the
+ * release year — the catalogue knows the year of the song — and then the
+ * full title.
+ *
+ * @param {object} song the catalogue entry
+ * @param {object[]} candidates the candidates of all countries
+ * @returns {object|null} the reference
+ */
+function chooseReference(song, candidates) {
+  const seen = new Set();
+  const unique = [];
+  for (const candidate of candidates) {
+    const key = `${candidate.title}|${candidate.artist}|${candidate.durationSec}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    unique.push(candidate);
+  }
+  const passing = unique.filter((entry) => entry.titleOk && entry.artistOk);
   // Every candidate with the same title and the same artist is evidence for
   // a runtime of *this* song — the reference set, not one arbitrary row.
   // Every candidate that is the *same recording*: the same title and the
   // same artist. A remix or a live take is a different recording and is
   // therefore not part of the reference set.
-  const sameSong = candidates.filter(
+  const sameSong = passing.filter(
     (entry) =>
-      entry.durationSec != null &&
-      entry.titleOk &&
-      entry.artistOk &&
-      !matchTitle(song.title, entry.title ?? '').versionMismatch,
+      entry.durationSec != null && !matchTitle(song.title, entry.title ?? '', song.artist).versionConflict,
   );
-  // The reference is the candidate that looks most like the catalogue entry:
-  // the full title has to match (so a remix is not preferred over the
-  // original), and the release year should be close to the catalogue year.
   passing.sort((left, right) => {
+    if (left.versionAdded !== right.versionAdded) {
+      return left.versionAdded ? 1 : -1;
+    }
+    const leftYear =
+      left.year == null ? 999 : Math.abs(left.year - (song.year ?? left.year));
+    const rightYear =
+      right.year == null ? 999 : Math.abs(right.year - (song.year ?? right.year));
+    // The year decides between two candidates of the same song, not
+    // between two different songs.
+    if (left.fullScore >= 0.9 && right.fullScore >= 0.9 && leftYear !== rightYear) {
+      return leftYear - rightYear;
+    }
     if (Math.abs(right.fullScore - left.fullScore) > 0.0001) {
       return right.fullScore - left.fullScore;
     }
-    const leftYear = left.year == null ? 999 : Math.abs(left.year - (song.year ?? 0));
-    const rightYear = right.year == null ? 999 : Math.abs(right.year - (song.year ?? 0));
     if (leftYear !== rightYear) return leftYear - rightYear;
     return right.titleScore - left.titleScore;
   });
@@ -588,15 +686,15 @@ async function fetchReference(song, cache) {
     }
   }
   const plural =
-    pluralCount > 1 ? sameSong.find((entry) => Math.round(entry.durationSec) === pluralDuration) : null;
+    pluralCount > 1
+      ? sameSong.find((entry) => Math.round(entry.durationSec) === pluralDuration)
+      : null;
 
   const chosen = plural ?? passing[0] ?? null;
-  const value = { ok: Boolean(chosen), value: chosen, candidates, sameSong };
-  cache.set(key, value);
   if (!chosen) return null;
   return {
     ...chosen,
-    competitors: candidates,
+    competitors: unique,
     alternateDurations: sameSong.map((entry) => entry.durationSec),
   };
 }
@@ -735,6 +833,110 @@ async function checkSong(entry, cache, providers) {
 }
 
 /**
+ * Phrases that never name a performer.
+ */
+const GENERIC_VIDEO_PHRASES = new Set([
+  'official music video',
+  'official video',
+  'official audio',
+  'official lyric video',
+  'official visualizer',
+  'official performance',
+  'official live performance',
+  'music video',
+  'lyric video',
+  'lyrics video',
+  'lyrics',
+  'audio',
+  'video',
+  'visualizer',
+  'hd',
+  'hq',
+  '4k',
+  'full song',
+  'full album',
+  'with lyrics',
+  'letra',
+  'video oficial',
+  'audio oficial',
+  'teaser',
+  'trailer',
+  'mv',
+]);
+
+/**
+ * Check whether a segment of a video title looks like a name.
+ *
+ * A name is written in capitals ("Film Symphony Orchestra"), a phrase is
+ * not ("Live at Wembley"). The difference decides whether a segment is
+ * read as a performer or as an annotation of the video.
+ *
+ * @param {string} segment the segment
+ * @returns {boolean} whether the segment looks like a name
+ */
+function looksLikeName(segment) {
+  const words = String(segment ?? '')
+    .split(/\s+/)
+    .filter((word) => word.length > 0);
+  if (words.length < 2) return false;
+  return words.every((word) => {
+    const cleaned = word.replace(/[^\p{L}\p{N}'’.-]/gu, '');
+    if (!cleaned) return true;
+    if (/^\d+$/.test(cleaned)) return false;
+    return /^\p{Lu}/u.test(cleaned);
+  });
+}
+
+/**
+ * Find a performer in a video title that is not the artist of the catalogue.
+ *
+ * A video that names another ensemble names another work — the catalogue
+ * entry "Back to the Future Theme" / "Alan Silvestri" is not served by the
+ * video of the "Film Symphony Orchestra". That is a different work, not
+ * another edition of the same one.
+ *
+ * @param {string} songTitle the title of the catalogue entry
+ * @param {string} songArtist the artist of the catalogue entry
+ * @param {string} videoTitle the title of the video
+ * @returns {string|null} the name of the foreign performer
+ */
+function foreignPerformer(songTitle, songArtist, videoTitle) {
+  // The brackets are removed *before* the title is split: a dash inside a
+  // bracket ("Take My Breath Away (Official Video - Top Gun)") must not
+  // split the title into two parts.
+  const segments = String(videoTitle ?? '')
+    .replace(/[(\[][^)\]]*[)\]]/g, ' ')
+    .split(/\s+[-–—|·]\s+/)
+    .map((segment) => segment.trim())
+    .filter((segment) => segment.length > 0);
+  if (segments.length < 2) return null;
+
+  const songCore = parseTitle(songTitle).base;
+  let songIndex = -1;
+  let bestScore = 0;
+  for (const [index, segment] of segments.entries()) {
+    const base = normalizeText(segment);
+    const score = base.includes(songCore) ? 1 : similarity(base, songCore);
+    if (score > bestScore) {
+      bestScore = score;
+      songIndex = index;
+    }
+  }
+  if (songIndex < 0) return null;
+
+  for (const [index, segment] of segments.entries()) {
+    if (index === songIndex) continue;
+    const base = normalizeText(segment);
+    if (!base) continue;
+    if (GENERIC_VIDEO_PHRASES.has(base)) continue;
+    if (!looksLikeName(segment)) continue;
+    if (matchArtist(songArtist, segment).ok) continue;
+    return { name: segment, songSegment: segments[songIndex] };
+  }
+  return null;
+}
+
+/**
  * Compare the fetched provider data with the catalogue entry.
  *
  * @param {object} entry the catalogue entry
@@ -760,7 +962,7 @@ function evaluate(entry, checks, reference) {
     const refTitle = song.title;
     const refArtist = song.artist;
     const refDuration = reference?.durationSec ?? null;
-    const title = matchTitle(refTitle, track.title ?? '');
+    const title = matchTitle(refTitle, track.title ?? '', refArtist);
     const artist = matchArtist(refArtist, track.artist ?? '');
     // A rival is another *plain* recording of the same title and the same
     // artist whose runtime differs by more than 12 %. A remix or an acoustic
@@ -793,6 +995,7 @@ function evaluate(entry, checks, reference) {
     verdicts[provider] = {
       verdict: gate.verdict,
       reasons: gate.reasons,
+      notes: gate.notes ?? [],
       link: check.link,
       providerTitle: track.title,
       providerArtist: track.artist,
@@ -825,15 +1028,24 @@ function evaluate(entry, checks, reference) {
       // 1. The video title has to name the song of the catalogue entry.
       //    Every reading of the video title is tried — "Artist - Song" and
       //    "Song - Version" look the same before the catalogue is known.
+      //    The catalogue may name the song in its bracket ("Psycho (The
+      //    Murder)") — the video may use that name as well.
       const songCore = parseTitle(song.title).base;
+      const nameForms = [songCore];
+      for (const qualifier of titleSignature(song.title).unknown) {
+        nameForms.push(qualifier);
+      }
       const songWords = contentWords(songCore);
       const longest = [...songWords].sort((a, b) => b.length - a.length)[0] ?? '';
       let contains = false;
       let distinctive = false;
       let videoCore = '';
       for (const variant of parseTitleVariants(video.title ?? '')) {
-        const candidateContains =
-          variant.base.includes(songCore) || songCore.includes(variant.base);
+        const candidateContains = nameForms.some(
+          (form) =>
+            form &&
+            (variant.base.includes(form) || form.includes(variant.base)),
+        );
         const candidateDistinctive =
           longest.length >= 5 && variant.base.includes(longest);
         if (candidateContains || candidateDistinctive) {
@@ -859,7 +1071,39 @@ function evaluate(entry, checks, reference) {
         }
       }
 
-      // 3. The channel is reported, but it does not condemn the link: a
+      // 3. The video must not name a different work: a different performer
+      //    ("Film Symphony Orchestra" for "Alan Silvestri") is not another
+      //    edition of the same work — it is another arrangement.
+      const performer = foreignPerformer(
+        song.title,
+        song.artist,
+        video.title ?? '',
+      );
+      if (performer) {
+        const namesTheSongExactly =
+          normalizeText(performer.songSegment) === songCore;
+        if (namesTheSongExactly) {
+          reasons.push(
+            `the video names the song under a collective credit ("${performer.name}")`,
+          );
+        } else {
+          hard = true;
+          reasons.push(
+            `the video names a different work: the performer "${performer.name}" is not "${song.artist}"`,
+          );
+        }
+      }
+
+      // 4. A video that names a different tuning ("Beethoven || Symphony
+      //    No.5 || 432Hz") names another recording of the same work.
+      if (/\b432\s?hz\b/i.test(video.title ?? '')) {
+        hard = true;
+        reasons.push(
+          `the video names a different recording: the tuning (432 Hz) is not the recording of the catalogue`,
+        );
+      }
+
+      // 5. The channel is reported, but it does not condemn the link: a
       //    topic channel is as legitimate as the official channel.
       const author = normalizeText(video.author ?? '');
       const artistWords = contentWords(normalizeText(song.artist));
@@ -867,7 +1111,7 @@ function evaluate(entry, checks, reference) {
         artistWords.length > 0 && artistWords.every((word) => author.includes(word));
 
       verdicts.youtube = {
-        verdict: hard ? 'mismatch' : reasons.length > 0 ? 'warn' : 'ok',
+        verdict: hard ? 'mismatch' : reasons.length > 0 ? 'uncertain' : 'ok',
         reasons,
         link: youtube.link,
         providerTitle: video.title,
@@ -925,7 +1169,9 @@ async function main() {
     selection = all.slice(0, limit);
   }
 
-  const cache = new Cache(useCache, refresh);
+  const cache = new Cache(useCache, refresh, option('cache', DEFAULT_CACHE_FILE));
+  itunesSlotMs = Math.max(0, Number(option('itunes-slot', '450')));
+  itunesRetries = Math.max(0, Number(option('itunes-retries', '3')));
   const started = Date.now();
   const results = [];
   let processed = 0;
@@ -979,7 +1225,15 @@ async function main() {
     byProvider: {},
   };
   for (const provider of providers) {
-    const counter = { checked: 0, ok: 0, mismatch: 0, unreachable: 0, warn: 0, notSet: 0, notChecked: 0 };
+    const counter = {
+      checked: 0,
+      ok: 0,
+      uncertain: 0,
+      mismatch: 0,
+      unreachable: 0,
+      notSet: 0,
+      notChecked: 0,
+    };
     for (const result of results) {
       const verdict = result.verdicts[provider];
       if (!verdict) {
@@ -988,8 +1242,8 @@ async function main() {
       }
       counter.checked += 1;
       if (verdict.verdict === 'ok') counter.ok += 1;
+      else if (verdict.verdict === 'uncertain') counter.uncertain += 1;
       else if (verdict.verdict === 'mismatch') counter.mismatch += 1;
-      else if (verdict.verdict === 'warn') counter.warn += 1;
       else counter.unreachable += 1;
     }
     summary.byProvider[provider] = counter;
@@ -1008,18 +1262,39 @@ async function main() {
   console.log(`cache hits / misses    : ${summary.cacheHits} / ${summary.cacheMisses}`);
   for (const [provider, counter] of Object.entries(summary.byProvider)) {
     console.log(
-      `${provider.padEnd(8)}: checked ${counter.checked}, ok ${counter.ok}, warn ${counter.warn}, mismatch ${counter.mismatch}, unreachable ${counter.unreachable}, not checked ${counter.notChecked}`,
+      `${provider.padEnd(8)}: checked ${counter.checked}, ok ${counter.ok}, uncertain ${counter.uncertain}, mismatch ${counter.mismatch}, unreachable ${counter.unreachable}, not checked ${counter.notChecked}`,
     );
   }
+
+  // The mismatches are the errors: a link that names another song. They
+  // are listed in full — the list is the work list of the repair.
   const mismatches = results.filter((result) =>
-    Object.values(result.verdicts).some((verdict) => verdict.verdict === 'mismatch'),
+    Object.values(result.verdicts).some(
+      (verdict) => verdict.verdict === 'mismatch',
+    ),
   );
   console.log(`songs with a mismatch  : ${mismatches.length}`);
-  for (const result of mismatches.slice(0, 40)) {
+  for (const result of mismatches) {
     for (const [provider, verdict] of Object.entries(result.verdicts)) {
       if (verdict.verdict !== 'mismatch') continue;
       console.log(
         `  - ${result.id} [${provider}] "${result.title}" / ${result.artist}: ${verdict.reasons.join('; ')}`,
+      );
+    }
+  }
+
+  // The uncertain cases stay as they are and are documented.
+  const uncertain = results.filter((result) =>
+    Object.values(result.verdicts).some(
+      (verdict) => verdict.verdict === 'uncertain',
+    ),
+  );
+  console.log(`songs with an uncertain : ${uncertain.length}`);
+  for (const result of uncertain) {
+    for (const [provider, verdict] of Object.entries(result.verdicts)) {
+      if (verdict.verdict !== 'uncertain') continue;
+      console.log(
+        `  ? ${result.id} [${provider}] "${result.title}" / ${result.artist}: ${verdict.reasons.join('; ')}`,
       );
     }
   }

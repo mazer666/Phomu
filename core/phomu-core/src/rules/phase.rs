@@ -63,6 +63,31 @@ impl RoundPhase {
         }
     }
 
+    /// Reads a phase from its identifier.
+    ///
+    /// WHY the name and not the trait `std::str::FromStr`: the lookup is
+    /// total and therefore returns `Option`; an unknown identifier is a
+    /// value to be reported and not an error to be raised. The counterpart
+    /// of [`RoundPhase::as_str`], so that the identifier of a phase has
+    /// exactly one spelling in the base and in the bridges.
+    ///
+    /// EXAMPLE: `RoundPhase::from_str("locked-in")` is
+    /// `Some(RoundPhase::LockedIn)`.
+    #[expect(
+        clippy::should_implement_trait,
+        reason = "a total lookup that returns Option; an unknown identifier is a value to report, not an error to raise"
+    )]
+    pub fn from_str(value: &str) -> Option<Self> {
+        match value {
+            "drawing" => Some(RoundPhase::Drawing),
+            "question" => Some(RoundPhase::Question),
+            "locked-in" => Some(RoundPhase::LockedIn),
+            "reveal" => Some(RoundPhase::Reveal),
+            "scoring" => Some(RoundPhase::Scoring),
+            _ => None,
+        }
+    }
+
     /// Whether a transition from this phase into another one is permitted.
     ///
     /// WHY: the transition table is the backbone of the game; a shell that
@@ -154,5 +179,18 @@ mod tests {
     fn only_the_reveal_shows_the_solution() {
         assert!(!RoundPhase::Question.shows_solution());
         assert!(RoundPhase::Reveal.shows_solution());
+    }
+
+    #[test]
+    fn every_phase_is_read_from_its_identifier() {
+        for phase in RoundPhase::ALL {
+            assert_eq!(RoundPhase::from_str(phase.as_str()), Some(*phase));
+        }
+    }
+
+    #[test]
+    fn an_unknown_identifier_is_no_phase() {
+        assert_eq!(RoundPhase::from_str("locked in"), None);
+        assert_eq!(RoundPhase::from_str(""), None);
     }
 }

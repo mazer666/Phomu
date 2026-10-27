@@ -41,15 +41,15 @@ fn text(choice: &Value, field: &str) -> String {
 
 /// The number of a field of the choice.
 fn number(choice: &Value, field: &str) -> i64 {
-    choice.get(field).and_then(Value::as_i64).unwrap_or_default()
+    choice
+        .get(field)
+        .and_then(Value::as_i64)
+        .unwrap_or_default()
 }
 
 /// The flag of a field of the choice.
 fn flag(choice: &Value, field: &str) -> bool {
-    choice
-        .get(field)
-        .and_then(Value::as_bool)
-        .unwrap_or(false)
+    choice.get(field).and_then(Value::as_bool).unwrap_or(false)
 }
 
 /// What the pilot knew, as the base names it.
@@ -147,8 +147,11 @@ mod tests {
 
     #[test]
     fn the_lyrics_choice_carries_the_line_and_not_the_flag() {
-        let answer = mode_answer(&json!({"kind": "lyrics", "line": "erfunden"}), Some("erfunden"))
-            .unwrap();
+        let answer = mode_answer(
+            &json!({"kind": "lyrics", "line": "erfunden"}),
+            Some("erfunden"),
+        )
+        .unwrap();
         assert_eq!(answer, ModeAnswer::Lyrics { picked_fake: true });
     }
 

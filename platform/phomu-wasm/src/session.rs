@@ -293,4 +293,3 @@ pub fn snapshot(handle: u64) -> Result<Value, BridgeError> {
         Ok(session_snapshot(&entry.session.snapshot()))
     })
 }
-

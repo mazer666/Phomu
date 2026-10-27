@@ -35,6 +35,7 @@
     "check:module-boundaries": "node scripts/check-module-boundaries.mjs",
     "check:module-boundaries:test": "node scripts/check-module-boundaries.test.mjs",
     "check:conformance": "node scripts/verify-conformance.mjs",
+    "check:link-match:test": "node scripts/lib/link-match.test.mjs",
     "check:all": "node scripts/check-all.mjs",
     "postinstall": "node scripts/setup-git-hooks.js",
     "generate:variant-keys": "node scripts/generate-variant-keys.mjs",

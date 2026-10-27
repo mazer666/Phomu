@@ -63,18 +63,6 @@ export function buildSong(fixture: VectorSong): PhomuSong {
 }
 
 /**
- * Builds the situation of a vector in the store.
- *
- * WHY: the situation has to be built the way the reference builds it —
- * otherwise the comparison measures the harness instead of the two
- * implementations. The Rust core can only reach a situation through its
- * commands, therefore the harness uses the actions of the reference for the
- * same steps: `startGame` for a running game, `drawSong` for a drawn song
- * and `advancePhase` for the reveal. Only the parts that no action can
- * reach (the turn that is played, the years of the timeline, the songs that
- * have been played, the experience points) are set directly.
- */
-/**
  * The properties of a song that the mode rules read.
  */
 export function toModeSong(song: PhomuSong): ModeSong {
@@ -88,7 +76,24 @@ export function toModeSong(song: PhomuSong): ModeSong {
   };
 }
 
-export function buildSituation(vector: Vector): void {
+/**
+ * Builds the situation of a vector in the store.
+ *
+ * WHY: the situation has to be built the way the reference builds it —
+ * otherwise the comparison measures the harness instead of the two
+ * implementations. The Rust core can only reach a situation through its
+ * commands, therefore the harness uses the actions of the reference for the
+ * same steps: `startGame` for a running game, `drawSong` for a drawn song
+ * and `advancePhase` for the reveal. Only the parts that no action can
+ * reach (the turn that is played, the years of the timeline, the songs that
+ * have been played, the experience points) are set directly.
+ *
+ * @param vector - the vector to build the situation for
+ * @returns {PhomuSong|null} the song of the round — the store does not hold
+ * it any more (the question view model of the core has no field for the
+ * solution), so the harness has to learn it from here
+ */
+export function buildSituation(vector: Vector): PhomuSong | null {
   const store = useGameStore.getState();
   store.initSession();
 
@@ -148,38 +153,52 @@ export function buildSituation(vector: Vector): void {
   if (given.currentRound !== undefined) patch.currentRound = given.currentRound;
   useGameStore.setState(patch);
 
+  // The mode of the round — the core draws it and the shell shows it.
+  // `startGame` sets the placeholder 'timeline'; the situation of the
+  // vector names the mode of the round, so the reference has to show it.
+  if (given.currentMode) {
+    useGameStore.getState().setCurrentMode(given.currentMode);
+  }
+
   // The drawn song — the reference draws it with `drawSong`.
+  let drawn: PhomuSong | null = null;
   if (given.currentSong) {
     const song = songs.get(given.currentSong);
     if (song) {
-      useGameStore.getState().setQuestion({
-        phase: 'question',
-        roundNumber: 0,
-        mode: useGameStore.getState().currentMode,
-        hints: song.hints,
-        options: [],
-        identity: null,
-        pointsPossible: 0,
-        answersLocked: false,
-        songId: song.id,
-        media: {
-          youtube: song.links.youtube,
-          youtubeAlternatives: song.links.youtubeAlternatives ?? [],
-          spotify: song.links.spotify ?? null,
-          spotifyFreePreview: song.links.spotifyFreePreview ?? null,
-          amazonMusic: song.links.amazonMusic ?? null,
-          amazonPrimePreview: song.links.amazonPrimePreview ?? null,
-          coverLink: song.links.coverLink ?? null,
-          startSeconds: song.previewTimestamp?.start ?? 0,
-          endSeconds: song.previewTimestamp?.end ?? 0,
+      drawn = song;
+      useGameStore.getState().setQuestion(
+        {
+          phase: 'question',
+          roundNumber: 0,
+          mode: useGameStore.getState().currentMode,
+          hints: song.hints,
+          options: [],
+          identity: null,
+          pointsPossible: 0,
+          answersLocked: false,
+          songId: song.id,
+          media: {
+            youtube: song.links.youtube,
+            youtubeAlternatives: song.links.youtubeAlternatives ?? [],
+            spotify: song.links.spotify ?? null,
+            spotifyFreePreview: song.links.spotifyFreePreview ?? null,
+            amazonMusic: song.links.amazonMusic ?? null,
+            amazonPrimePreview: song.links.amazonPrimePreview ?? null,
+            coverLink: song.links.coverLink ?? null,
+            startSeconds: song.previewTimestamp?.start ?? 0,
+            endSeconds: song.previewTimestamp?.end ?? 0,
+          },
+          context: {
+            timelineYears: [],
+            timelineSlots: [],
+            genre: song.genre,
+            pack: song.packs[0] ?? null,
+          },
         },
-        context: {
-          timelineYears: [],
-          timelineSlots: [],
-          genre: song.genre,
-          pack: song.packs[0] ?? null,
-        },
-      });
+        // The source of the song — a scan or a draw. The question carries it
+        // into the store, so it has to be handed over with it.
+        given.currentSongSource ?? 'random',
+      );
     }
   }
 
@@ -188,4 +207,6 @@ export function buildSituation(vector: Vector): void {
   if (!given.currentSong && given.roundPhase) {
     useGameStore.getState().advancePhase(given.roundPhase as RoundPhase);
   }
+
+  return drawn;
 }

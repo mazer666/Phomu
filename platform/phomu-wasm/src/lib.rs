@@ -32,11 +32,15 @@ pub mod catalogue_exports;
 pub mod catalogue_view;
 pub mod config;
 pub mod exports;
+pub mod exports_session;
 pub mod json;
 pub mod round;
 pub mod session;
+pub mod session_admin;
 pub mod session_answers;
 pub mod session_commands;
+pub mod surface;
+pub mod wasm_module;
 
 use std::cell::RefCell;
 use std::collections::HashMap;

@@ -262,14 +262,38 @@ impl Session {
     /// are locked in first, so that the reveal never happens while an answer
     /// could still arrive.
     ///
+    /// WHY the timeout is a rule of the base and not a special case of a
+    /// shell: a round that nobody answered — because the round timed out,
+    /// because a player left the table or because a card was mis-scanned —
+    /// has to be closable. Without this command the phase `question` is a
+    /// dead end: the reveal refuses it (the answers are not locked in), the
+    /// round cannot be closed and the phase cannot be moved
+    /// (docs/qa/QA-11-RUST-BASE.md, QA-RST-002).
+    ///
+    /// WHY the command is refused outside the question round: the timeout
+    /// ends a question round. In the phase `drawing` the round has not begun,
+    /// and in the phase `scoring` the game is over.
+    ///
     /// # Errors
-    /// Returns the error `AnswersNotLocked` when the round could not be
-    /// locked in, and the error `NoSongDrawn` when the round has no song.
+    /// Returns the error `GameAlreadyOver` when the game has ended, the
+    /// error `NotAvailableInPhase` when the round is neither in the phase
+    /// `question` nor in the phase `locked-in`, and the error
+    /// `NoSongDrawn` when the round has no song.
     pub fn force_reveal(&mut self) -> Result<RoundView> {
-        if self.state.round.phase.accepts_answers() {
-            // The timeout locks the round: no further answer is accepted.
-            self.state.round.answers_locked = true;
+        if self.state.is_game_over {
+            return Err(PhomuError::new(ErrorCode::GameAlreadyOver));
         }
+        if self.state.round.phase == RoundPhase::Reveal {
+            return self.round_view();
+        }
+        if !self.state.round.phase.accepts_answers()
+            && self.state.round.phase != RoundPhase::LockedIn
+        {
+            return Err(PhomuError::new(ErrorCode::NotAvailableInPhase)
+                .with_context("phase", self.state.round.phase.as_str()));
+        }
+        // The timeout locks the round: no further answer is accepted.
+        self.state.round.answers_locked = true;
         self.reveal()
     }
 }
