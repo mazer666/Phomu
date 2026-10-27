@@ -224,11 +224,15 @@ function main() {
     }
   }
 
+  // The glue loads the module with `new URL('phomu_wasm_bg.wasm',
+  // import.meta.url)`, so the binary has to stay **next to the glue**: the
+  // bundler resolves the URL relative to the module and emits the file as an
+  // asset. The copy in `public/` is the runtime fallback for a shell that
+  // fetches the module by URL instead of importing it.
   fs.copyFileSync(
     path.join(GENERATED_DIR, 'phomu_wasm_bg.wasm'),
     path.join(PUBLIC_DIR, 'phomu_core_bg.wasm')
   );
-  fs.rmSync(path.join(GENERATED_DIR, 'phomu_wasm_bg.wasm'));
   fs.rmSync(path.join(GENERATED_DIR, 'phomu_wasm_bg.wasm.d.ts'));
 
   const abi = readAbiVersion();

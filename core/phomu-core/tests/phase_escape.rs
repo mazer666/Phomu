@@ -21,11 +21,11 @@
 //! phase that the table can leave but that no command can leave is a dead
 //! end — the table alone would not have caught the defect.
 
-// WHY the two lints below: a test that fails has to stop with a readable
-// message. `expect` and `unwrap` are the idiomatic way to do that in a
-// test; the ban of the workspace lints applies to the production code, not
-// to the tests that prove it.
-#![allow(clippy::unwrap_used, clippy::expect_used)]
+// WHY the three lints below: a test that fails has to stop with a readable
+// message. `expect`, `unwrap` and `panic` are the idiomatic way to do that
+// in a test; the ban of the workspace lints applies to the production code,
+// not to the tests that prove it.
+#![allow(clippy::unwrap_used, clippy::expect_used, clippy::panic)]
 
 mod common;
 
@@ -73,7 +73,9 @@ fn session_in(phase: RoundPhase) -> Session {
             session
                 .draw_song(song("s1", "Titel", "Künstler", 1985), SongSource::Random)
                 .expect("the song is drawn");
-            session.force_reveal().expect("the timeout reveals the round");
+            session
+                .force_reveal()
+                .expect("the timeout reveals the round");
         }
         RoundPhase::Scoring => {
             session.end_game(None).expect("the game ends");
@@ -208,7 +210,10 @@ fn the_probe_of_an_unanswered_round() {
     let mut probe = session.clone();
     println!(
         "PROBE next_round() -> {:?}",
-        probe.next_round(NOW).err().map(|failure| describe(&failure))
+        probe
+            .next_round(NOW)
+            .err()
+            .map(|failure| describe(&failure))
     );
     let mut probe = session.clone();
     println!(
@@ -241,9 +246,15 @@ fn the_probe_of_an_unanswered_round() {
 
     println!(
         "PROBE force_reveal() -> {:?}",
-        session.force_reveal().err().map(|failure| describe(&failure))
+        session
+            .force_reveal()
+            .err()
+            .map(|failure| describe(&failure))
     );
-    println!("PROBE phase after force_reveal: {}", session.phase().as_str());
+    println!(
+        "PROBE phase after force_reveal: {}",
+        session.phase().as_str()
+    );
     // The timeout closes the round: the phase is `reveal` and the round can
     // be closed afterwards.
     assert_eq!(session.phase(), RoundPhase::Reveal);
@@ -279,9 +290,9 @@ fn no_phase_of_the_table_is_a_dead_end() {
 fn the_round_can_be_closed_from_every_phase_that_ends_it() {
     for phase in [RoundPhase::Reveal, RoundPhase::Drawing] {
         let mut session = session_in(phase);
-        session
-            .next_round(NOW)
-            .unwrap_or_else(|failure| panic!("the round is closed from {}: {failure}", phase.as_str()));
+        session.next_round(NOW).unwrap_or_else(|failure| {
+            panic!("the round is closed from {}: {failure}", phase.as_str())
+        });
     }
 }
 

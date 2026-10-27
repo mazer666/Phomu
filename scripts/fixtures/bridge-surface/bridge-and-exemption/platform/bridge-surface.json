@@ -1,0 +1,24 @@
+{
+  "$comment": "The fixture of the bridge-surface gate: an entry names a bridge symbol and an exemption at the same time. The declaration is a choice, so the gate has to report BS-005.",
+  "session_source": "core/phomu-core/src/session",
+  "operations": [
+    {
+      "name": "Session::start_game",
+      "state_changing": true,
+      "bridge": "phomu_session_start",
+      "exemption": null
+    },
+    {
+      "name": "Session::reset_scores",
+      "state_changing": true,
+      "bridge": "phomu_session_reset_scores",
+      "exemption": "The base resets the scores itself when a new game starts."
+    },
+    {
+      "name": "Session::score",
+      "state_changing": false,
+      "bridge": "phomu_session_score",
+      "exemption": null
+    }
+  ]
+}

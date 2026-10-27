@@ -5,6 +5,8 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
+    "build:wasm": "node scripts/build-wasm.mjs",
+    "prebuild": "npm run build:wasm",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -32,6 +34,8 @@
     "check:license": "node scripts/check-license.mjs",
     "check:crate-boundaries": "node scripts/check-crate-boundaries.mjs",
     "check:crate-boundaries:test": "node scripts/check-crate-boundaries.test.mjs",
+    "check:bridge-surface": "node scripts/check-bridge-surface.mjs",
+    "check:bridge-surface:test": "node scripts/check-bridge-surface.mjs --self-test",
     "check:module-boundaries": "node scripts/check-module-boundaries.mjs",
     "check:module-boundaries:test": "node scripts/check-module-boundaries.test.mjs",
     "check:conformance": "node scripts/verify-conformance.mjs",

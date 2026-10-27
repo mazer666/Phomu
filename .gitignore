@@ -76,3 +76,10 @@ apps/android/bindings/
 
 # Alte Next.js-Builds (Backup-Verzeichnis eines Builds)
 .next.old/
+
+# The WebAssembly binary of the shared base is a build artefact. The
+# JavaScript and the type declarations are generated too and are tracked,
+# so that a checkout type-checks without a Rust toolchain; the binary is
+# rebuilt by `npm run build:wasm` before every Next.js build.
+public/wasm/
+src/core/generated/phomu_wasm_bg.wasm

@@ -3,6 +3,15 @@
 /* eslint-disable */
 
 /**
+ * Whether the version of the base lies inside the bracket of the shell.
+ *
+ * WHY the check is closed: a shell that runs against a base it was not
+ * written for has to stop at start-up and not in the middle of a round
+ * (docs/design/BUILD-CONTRACT.md § 3.2).
+ */
+export function phomu_abi_accepts(min_major: number, min_minor: number, min_patch: number, max_major: number, max_minor: number, max_patch: number): boolean;
+
+/**
  * The version of the exported surface.
  */
 export function phomu_abi_version(): string;
@@ -72,9 +81,67 @@ export function phomu_catalog_records(handle: bigint): string;
 export function phomu_catalog_year_scale(handle: bigint): string;
 
 /**
+ * The JSON of the plan of the media of the running round.
+ *
+ * # Errors
+ * Returns the failure of the base when no song is drawn.
+ */
+export function phomu_media_plan(handle: bigint): string;
+
+/**
  * The i18n key of a game event.
+ *
+ * WHY the identifier is the wire name and not the name of the variant: the
+ * two bridges have to answer with the same key for the same event
+ * (docs/qa/QA-11-RUST-BASE.md, QA-RST-004).
  */
 export function phomu_message_key(event: string): string;
+
+/**
+ * Adds a year to the timeline of the round.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ */
+export function phomu_session_add_timeline_year(handle: bigint, year: number): string;
+
+/**
+ * Move the round into another phase.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * automaton does not allow the transition, and when the answers of the
+ * round are not locked in.
+ */
+export function phomu_session_advance_phase(handle: bigint, phase: string): string;
+
+/**
+ * Record an answer without the evaluation of a mode.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * round does not accept answers, or when its answers are already locked
+ * in.
+ */
+export function phomu_session_answer_raw(handle: bigint, player_id: string, answer: string, is_correct: boolean, points_awarded: number, answered_in_seconds?: number | null): string;
+
+/**
+ * Assign a player to a team.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * session does not know the player.
+ */
+export function phomu_session_assign_player_to_team(handle: bigint, player_id: string, team_id?: string | null): string;
+
+/**
+ * Credit points to a player or to a team.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * session knows neither a player nor a team with that identifier.
+ */
+export function phomu_session_award_points(handle: bigint, entity_id: string, points: number): string;
 
 /**
  * Uses a cheat of the round and returns what the shell has to draw.
@@ -141,6 +208,16 @@ export function phomu_session_end(handle: bigint, winner_id?: string | null): st
 export function phomu_session_init_timeline(handle: bigint, years: Int32Array): string;
 
 /**
+ * Lock the answers of the round in.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * round does not accept answers, or when fewer answers are in than the
+ * round expects.
+ */
+export function phomu_session_lock_answers(handle: bigint): string;
+
+/**
  * Create a session and return its handle.
  *
  * WHY the values travel as JSON: the wire format of the bridge is JSON
@@ -162,6 +239,15 @@ export function phomu_session_new(config: string, players: string, teams: string
 export function phomu_session_next_round(handle: bigint, now_ms: number): string;
 
 /**
+ * Remove a team and clear the memberships.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * session does not know the team.
+ */
+export function phomu_session_remove_team(handle: bigint, team_id: string): string;
+
+/**
  * Removes a year from the timeline of the round.
  *
  * # Errors
@@ -171,12 +257,58 @@ export function phomu_session_next_round(handle: bigint, now_ms: number): string
 export function phomu_session_remove_timeline_year(handle: bigint, year: number): string;
 
 /**
+ * Reset the scores of the session.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ */
+export function phomu_session_reset_scores(handle: bigint): string;
+
+/**
+ * Restore the state of the generator of the session.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ */
+export function phomu_session_restore_rng_state(handle: bigint, state: number): string;
+
+/**
  * Release the solution of the round.
  *
  * # Errors
  * Returns the failure of the base when the answers are not locked in.
  */
 export function phomu_session_reveal(handle: bigint): string;
+
+/**
+ * Replace the configuration of the session.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * configuration is not one the base knows.
+ */
+export function phomu_session_set_config(handle: bigint, config: string): string;
+
+/**
+ * Skip the song of the round.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * round is not in a phase that can be skipped.
+ */
+export function phomu_session_skip_broken_song(handle: bigint): string;
+
+/**
+ * The state of a session.
+ *
+ * WHY the snapshot crosses as a document: the shell reads the state of the
+ * session as one value, and the wire format of the bridge is JSON
+ * (BRIDGE-110).
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ */
+export function phomu_session_snapshot(handle: bigint): string;
 
 /**
  * Start the game.
@@ -199,10 +331,27 @@ export function phomu_session_start(handle: bigint, now_ms: number): string;
  */
 export function phomu_session_submit(handle: bigint, choice: string, answered_in_seconds?: number | null): string;
 
+/**
+ * End the question round without an answer — the timeout.
+ *
+ * WHY the command exists: a round that nobody answered — because the round
+ * timed out, because a player left the table or because a card was
+ * mis-scanned — has to be closable. Without this command every command of
+ * the bridge refuses and the game stops
+ * (docs/qa/QA-11-RUST-BASE.md, QA-RST-002).
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * round is not in a phase that a timeout can end, or when the game has
+ * already ended.
+ */
+export function phomu_session_timeout(handle: bigint): string;
+
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
+    readonly phomu_abi_accepts: (a: number, b: number, c: number, d: number, e: number, f: number) => number;
     readonly phomu_abi_version: () => [number, number];
     readonly phomu_abi_versions: () => [number, number];
     readonly phomu_catalog_browse: (a: bigint) => [number, number, number, number];
@@ -210,19 +359,33 @@ export interface InitOutput {
     readonly phomu_catalog_packs: (a: bigint) => [number, number, number, number];
     readonly phomu_catalog_records: (a: bigint) => [number, number, number, number];
     readonly phomu_catalog_year_scale: (a: bigint) => [number, number, number, number];
+    readonly phomu_media_plan: (a: bigint) => [number, number, number, number];
     readonly phomu_message_key: (a: number, b: number) => [number, number];
+    readonly phomu_session_add_timeline_year: (a: bigint, b: number) => [number, number, number, number];
+    readonly phomu_session_advance_phase: (a: bigint, b: number, c: number) => [number, number, number, number];
+    readonly phomu_session_answer_raw: (a: bigint, b: number, c: number, d: number, e: number, f: number, g: number, h: number) => [number, number, number, number];
+    readonly phomu_session_assign_player_to_team: (a: bigint, b: number, c: number, d: number, e: number) => [number, number, number, number];
+    readonly phomu_session_award_points: (a: bigint, b: number, c: number, d: number) => [number, number, number, number];
     readonly phomu_session_cheat: (a: bigint, b: number, c: number) => [number, number, number, number];
     readonly phomu_session_disclose: (a: bigint) => [number, number, number, number];
     readonly phomu_session_draw: (a: bigint, b: number, c: number) => [number, number, number, number];
     readonly phomu_session_draw_by_id: (a: bigint, b: number, c: number) => [number, number, number, number];
     readonly phomu_session_end: (a: bigint, b: number, c: number) => [number, number, number, number];
     readonly phomu_session_init_timeline: (a: bigint, b: number, c: number) => [number, number, number, number];
+    readonly phomu_session_lock_answers: (a: bigint) => [number, number, number, number];
     readonly phomu_session_new: (a: number, b: number, c: number, d: number, e: number, f: number, g: bigint, h: number, i: number) => [bigint, number, number];
     readonly phomu_session_next_round: (a: bigint, b: number) => [number, number, number, number];
+    readonly phomu_session_remove_team: (a: bigint, b: number, c: number) => [number, number, number, number];
     readonly phomu_session_remove_timeline_year: (a: bigint, b: number) => [number, number, number, number];
+    readonly phomu_session_reset_scores: (a: bigint) => [number, number, number, number];
+    readonly phomu_session_restore_rng_state: (a: bigint, b: number) => [number, number, number, number];
     readonly phomu_session_reveal: (a: bigint) => [number, number, number, number];
+    readonly phomu_session_set_config: (a: bigint, b: number, c: number) => [number, number, number, number];
+    readonly phomu_session_skip_broken_song: (a: bigint) => [number, number, number, number];
+    readonly phomu_session_snapshot: (a: bigint) => [number, number, number, number];
     readonly phomu_session_start: (a: bigint, b: number) => [number, number, number, number];
     readonly phomu_session_submit: (a: bigint, b: number, c: number, d: number) => [number, number, number, number];
+    readonly phomu_session_timeout: (a: bigint) => [number, number, number, number];
     readonly __wbindgen_externrefs: WebAssembly.Table;
     readonly __wbindgen_free: (a: number, b: number, c: number) => void;
     readonly __externref_drop_slice: (a: number, b: number) => void;

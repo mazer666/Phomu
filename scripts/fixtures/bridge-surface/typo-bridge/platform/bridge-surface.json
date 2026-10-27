@@ -1,0 +1,24 @@
+{
+  "$comment": "The fixture of the bridge-surface gate: the declaration names a bridge symbol that exists in no bridge — the typo of a copy and paste. The gate has to report BS-003.",
+  "session_source": "core/phomu-core/src/session",
+  "operations": [
+    {
+      "name": "Session::start_game",
+      "state_changing": true,
+      "bridge": "phomu_session_stat",
+      "exemption": null
+    },
+    {
+      "name": "Session::reset_scores",
+      "state_changing": true,
+      "bridge": "phomu_session_reset_scores",
+      "exemption": null
+    },
+    {
+      "name": "Session::score",
+      "state_changing": false,
+      "bridge": "phomu_session_score",
+      "exemption": null
+    }
+  ]
+}

@@ -2,6 +2,25 @@
 /* @ts-self-types="./phomu_wasm.d.ts" */
 
 /**
+ * Whether the version of the base lies inside the bracket of the shell.
+ *
+ * WHY the check is closed: a shell that runs against a base it was not
+ * written for has to stop at start-up and not in the middle of a round
+ * (docs/design/BUILD-CONTRACT.md § 3.2).
+ * @param {number} min_major
+ * @param {number} min_minor
+ * @param {number} min_patch
+ * @param {number} max_major
+ * @param {number} max_minor
+ * @param {number} max_patch
+ * @returns {boolean}
+ */
+export function phomu_abi_accepts(min_major, min_minor, min_patch, max_major, max_minor, max_patch) {
+    const ret = wasm.phomu_abi_accepts(min_major, min_minor, min_patch, max_major, max_minor, max_patch);
+    return ret !== 0;
+}
+
+/**
  * The version of the exported surface.
  * @returns {string}
  */
@@ -175,7 +194,38 @@ export function phomu_catalog_year_scale(handle) {
 }
 
 /**
+ * The JSON of the plan of the media of the running round.
+ *
+ * # Errors
+ * Returns the failure of the base when no song is drawn.
+ * @param {bigint} handle
+ * @returns {string}
+ */
+export function phomu_media_plan(handle) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_media_plan(handle);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
  * The i18n key of a game event.
+ *
+ * WHY the identifier is the wire name and not the name of the variant: the
+ * two bridges have to answer with the same key for the same event
+ * (docs/qa/QA-11-RUST-BASE.md, QA-RST-004).
  * @param {string} event
  * @returns {string}
  */
@@ -191,6 +241,170 @@ export function phomu_message_key(event) {
         return getStringFromWasm0(ret[0], ret[1]);
     } finally {
         wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
+ * Adds a year to the timeline of the round.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ * @param {bigint} handle
+ * @param {number} year
+ * @returns {string}
+ */
+export function phomu_session_add_timeline_year(handle, year) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_add_timeline_year(handle, year);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
+ * Move the round into another phase.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * automaton does not allow the transition, and when the answers of the
+ * round are not locked in.
+ * @param {bigint} handle
+ * @param {string} phase
+ * @returns {string}
+ */
+export function phomu_session_advance_phase(handle, phase) {
+    let deferred3_0;
+    let deferred3_1;
+    try {
+        const ptr0 = passStringToWasm0(phase, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        const ret = wasm.phomu_session_advance_phase(handle, ptr0, len0);
+        var ptr2 = ret[0];
+        var len2 = ret[1];
+        if (ret[3]) {
+            ptr2 = 0; len2 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred3_0 = ptr2;
+        deferred3_1 = len2;
+        return getStringFromWasm0(ptr2, len2);
+    } finally {
+        wasm.__wbindgen_free(deferred3_0, deferred3_1, 1);
+    }
+}
+
+/**
+ * Record an answer without the evaluation of a mode.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * round does not accept answers, or when its answers are already locked
+ * in.
+ * @param {bigint} handle
+ * @param {string} player_id
+ * @param {string} answer
+ * @param {boolean} is_correct
+ * @param {number} points_awarded
+ * @param {number | null} [answered_in_seconds]
+ * @returns {string}
+ */
+export function phomu_session_answer_raw(handle, player_id, answer, is_correct, points_awarded, answered_in_seconds) {
+    let deferred4_0;
+    let deferred4_1;
+    try {
+        const ptr0 = passStringToWasm0(player_id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(answer, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len1 = WASM_VECTOR_LEN;
+        const ret = wasm.phomu_session_answer_raw(handle, ptr0, len0, ptr1, len1, is_correct, points_awarded, isLikeNone(answered_in_seconds) ? Number.MAX_SAFE_INTEGER : (answered_in_seconds) >>> 0);
+        var ptr3 = ret[0];
+        var len3 = ret[1];
+        if (ret[3]) {
+            ptr3 = 0; len3 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred4_0 = ptr3;
+        deferred4_1 = len3;
+        return getStringFromWasm0(ptr3, len3);
+    } finally {
+        wasm.__wbindgen_free(deferred4_0, deferred4_1, 1);
+    }
+}
+
+/**
+ * Assign a player to a team.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * session does not know the player.
+ * @param {bigint} handle
+ * @param {string} player_id
+ * @param {string | null} [team_id]
+ * @returns {string}
+ */
+export function phomu_session_assign_player_to_team(handle, player_id, team_id) {
+    let deferred4_0;
+    let deferred4_1;
+    try {
+        const ptr0 = passStringToWasm0(player_id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        var ptr1 = isLikeNone(team_id) ? 0 : passStringToWasm0(team_id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        var len1 = WASM_VECTOR_LEN;
+        const ret = wasm.phomu_session_assign_player_to_team(handle, ptr0, len0, ptr1, len1);
+        var ptr3 = ret[0];
+        var len3 = ret[1];
+        if (ret[3]) {
+            ptr3 = 0; len3 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred4_0 = ptr3;
+        deferred4_1 = len3;
+        return getStringFromWasm0(ptr3, len3);
+    } finally {
+        wasm.__wbindgen_free(deferred4_0, deferred4_1, 1);
+    }
+}
+
+/**
+ * Credit points to a player or to a team.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * session knows neither a player nor a team with that identifier.
+ * @param {bigint} handle
+ * @param {string} entity_id
+ * @param {number} points
+ * @returns {string}
+ */
+export function phomu_session_award_points(handle, entity_id, points) {
+    let deferred3_0;
+    let deferred3_1;
+    try {
+        const ptr0 = passStringToWasm0(entity_id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        const ret = wasm.phomu_session_award_points(handle, ptr0, len0, points);
+        var ptr2 = ret[0];
+        var len2 = ret[1];
+        if (ret[3]) {
+            ptr2 = 0; len2 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred3_0 = ptr2;
+        deferred3_1 = len2;
+        return getStringFromWasm0(ptr2, len2);
+    } finally {
+        wasm.__wbindgen_free(deferred3_0, deferred3_1, 1);
     }
 }
 
@@ -388,6 +602,35 @@ export function phomu_session_init_timeline(handle, years) {
 }
 
 /**
+ * Lock the answers of the round in.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * round does not accept answers, or when fewer answers are in than the
+ * round expects.
+ * @param {bigint} handle
+ * @returns {string}
+ */
+export function phomu_session_lock_answers(handle) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_lock_answers(handle);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
  * Create a session and return its handle.
  *
  * WHY the values travel as JSON: the wire format of the bridge is JSON
@@ -448,6 +691,37 @@ export function phomu_session_next_round(handle, now_ms) {
 }
 
 /**
+ * Remove a team and clear the memberships.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * session does not know the team.
+ * @param {bigint} handle
+ * @param {string} team_id
+ * @returns {string}
+ */
+export function phomu_session_remove_team(handle, team_id) {
+    let deferred3_0;
+    let deferred3_1;
+    try {
+        const ptr0 = passStringToWasm0(team_id, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        const ret = wasm.phomu_session_remove_team(handle, ptr0, len0);
+        var ptr2 = ret[0];
+        var len2 = ret[1];
+        if (ret[3]) {
+            ptr2 = 0; len2 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred3_0 = ptr2;
+        deferred3_1 = len2;
+        return getStringFromWasm0(ptr2, len2);
+    } finally {
+        wasm.__wbindgen_free(deferred3_0, deferred3_1, 1);
+    }
+}
+
+/**
  * Removes a year from the timeline of the round.
  *
  * # Errors
@@ -477,6 +751,61 @@ export function phomu_session_remove_timeline_year(handle, year) {
 }
 
 /**
+ * Reset the scores of the session.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ * @param {bigint} handle
+ * @returns {string}
+ */
+export function phomu_session_reset_scores(handle) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_reset_scores(handle);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
+ * Restore the state of the generator of the session.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ * @param {bigint} handle
+ * @param {number} state
+ * @returns {string}
+ */
+export function phomu_session_restore_rng_state(handle, state) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_restore_rng_state(handle, state);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
  * Release the solution of the round.
  *
  * # Errors
@@ -489,6 +818,96 @@ export function phomu_session_reveal(handle) {
     let deferred2_1;
     try {
         const ret = wasm.phomu_session_reveal(handle);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
+ * Replace the configuration of the session.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * configuration is not one the base knows.
+ * @param {bigint} handle
+ * @param {string} config
+ * @returns {string}
+ */
+export function phomu_session_set_config(handle, config) {
+    let deferred3_0;
+    let deferred3_1;
+    try {
+        const ptr0 = passStringToWasm0(config, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        const ret = wasm.phomu_session_set_config(handle, ptr0, len0);
+        var ptr2 = ret[0];
+        var len2 = ret[1];
+        if (ret[3]) {
+            ptr2 = 0; len2 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred3_0 = ptr2;
+        deferred3_1 = len2;
+        return getStringFromWasm0(ptr2, len2);
+    } finally {
+        wasm.__wbindgen_free(deferred3_0, deferred3_1, 1);
+    }
+}
+
+/**
+ * Skip the song of the round.
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown or when the
+ * round is not in a phase that can be skipped.
+ * @param {bigint} handle
+ * @returns {string}
+ */
+export function phomu_session_skip_broken_song(handle) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_skip_broken_song(handle);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
+ * The state of a session.
+ *
+ * WHY the snapshot crosses as a document: the shell reads the state of the
+ * session as one value, and the wire format of the bridge is JSON
+ * (BRIDGE-110).
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown.
+ * @param {bigint} handle
+ * @returns {string}
+ */
+export function phomu_session_snapshot(handle) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_snapshot(handle);
         var ptr1 = ret[0];
         var len1 = ret[1];
         if (ret[3]) {
@@ -564,6 +983,41 @@ export function phomu_session_submit(handle, choice, answered_in_seconds) {
         return getStringFromWasm0(ptr2, len2);
     } finally {
         wasm.__wbindgen_free(deferred3_0, deferred3_1, 1);
+    }
+}
+
+/**
+ * End the question round without an answer — the timeout.
+ *
+ * WHY the command exists: a round that nobody answered — because the round
+ * timed out, because a player left the table or because a card was
+ * mis-scanned — has to be closable. Without this command every command of
+ * the bridge refuses and the game stops
+ * (docs/qa/QA-11-RUST-BASE.md, QA-RST-002).
+ *
+ * # Errors
+ * Returns the failure of the base when the handle is unknown, when the
+ * round is not in a phase that a timeout can end, or when the game has
+ * already ended.
+ * @param {bigint} handle
+ * @returns {string}
+ */
+export function phomu_session_timeout(handle) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ret = wasm.phomu_session_timeout(handle);
+        var ptr1 = ret[0];
+        var len1 = ret[1];
+        if (ret[3]) {
+            ptr1 = 0; len1 = 0;
+            throw takeFromExternrefTable0(ret[2]);
+        }
+        deferred2_0 = ptr1;
+        deferred2_1 = len1;
+        return getStringFromWasm0(ptr1, len1);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
     }
 }
 function __wbg_get_imports() {

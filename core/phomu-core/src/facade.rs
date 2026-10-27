@@ -62,10 +62,10 @@ pub use crate::abi::{
     ABI_VERSION_MAJOR, ABI_VERSION_MINOR, ABI_VERSION_PATCH, VersionBracket, abi_version,
     abi_versions,
 };
+pub use crate::modes::timeline::{TimelineEffect, apply_year, canonical_slot, valid_slots};
 pub use crate::modes::{
     GameMode, KnewWhat, ModeAnswer, ModeContext, ModeOutcome, evaluate_mode_answer,
 };
-pub use crate::modes::timeline::{TimelineEffect, apply_year, canonical_slot, valid_slots};
 pub use crate::rules::phase::RoundPhase;
 pub use crate::rules::scoring::TimeDecayConfig;
 pub use crate::rules::teams::{EliminationRule, TeamMode};

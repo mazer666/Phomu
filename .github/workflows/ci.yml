@@ -222,6 +222,13 @@ jobs:
             rust-${{ runner.os }}-
       - name: Build the shared core
         run: cargo build --workspace --locked
+      # The web shell loads the base over WebAssembly. The module has to be
+      # built before the Next.js build, and the build of the module needs the
+      # wasm32 target.
+      - name: Build the WebAssembly module
+        run: |
+          rustup target add wasm32-unknown-unknown
+          node scripts/build-wasm.mjs
       # `cargo test` does not build the cdylib of a bridge. The bridge round
       # trip needs it, so it is built before the tests run.
       - name: Build the bridge artefacts

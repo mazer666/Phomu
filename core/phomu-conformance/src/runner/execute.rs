@@ -14,7 +14,7 @@ use phomu_core::facade::{PhomuError, Session};
 
 use crate::vector::{FilterOptions, Op, Vector, VectorAnswer};
 
-use super::observation::{ObservedError, Observation};
+use super::observation::{Observation, ObservedError};
 use super::session::{build_config, parse_phase, parse_source};
 
 /// The error codes of the vector level.

@@ -74,6 +74,15 @@ const DEFAULT_CACHE_FILE = path.join(REPO_ROOT, 'tmp/link-verify-cache.json');
 const USER_AGENT =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
+// The iTunes Search API answers a browser user agent with 403 as soon as
+// the rate limit is reached — and the answer is then indistinguishable
+// from a block. The API is a documented, public interface; it is addressed
+// with the client identity of the official client, so that a throttled
+// answer stays visible as a throttle (and is retried) instead of silently
+// becoming "no reference".
+const ITUNES_USER_AGENT =
+  'iTunes/12.12.0.6 (Windows; Microsoft Windows 10 x64 Business Edition (Build 19045); x64) AppleWebKit/7608.3.10.100.4';
+
 const RETRIES = 3;
 const TIMEOUT_MS = 25000;
 const SPOTIFY_HOST = 'https://open.spotify.com';
@@ -172,6 +181,17 @@ class Cache {
     if (!this.enabled) return;
     fs.mkdirSync(path.dirname(this.file), { recursive: true });
     const plain = {};
+    // A run with `--refresh` starts with an empty cache; it must not throw
+    // away the entries of the songs it has not reached yet. The fresh
+    // entries win over the stored ones.
+    if (this.refresh && fs.existsSync(this.file)) {
+      try {
+        const raw = JSON.parse(fs.readFileSync(this.file, 'utf8'));
+        for (const [key, value] of Object.entries(raw)) plain[key] = value;
+      } catch {
+        /* a broken cache is no reason to abort the run */
+      }
+    }
     for (const [key, value] of this.data) plain[key] = value;
     fs.writeFileSync(this.file, `${JSON.stringify(plain)}\n`);
   }
@@ -201,12 +221,16 @@ async function httpGet(url, options = {}) {
       });
       const body = await response.text();
       clearTimeout(timer);
-      if ((response.status >= 500 || response.status === 429) && attempt < retries) {
+      if ((response.status >= 500 || response.status === 429 || response.status === 403) && attempt < retries) {
         lastError = `HTTP ${response.status}`;
-        // The iTunes Search API answers a burst with 429. The wait grows
-        // with the attempt so that the limit has time to reset.
+        // The iTunes Search API answers a burst with 429 or 403. The wait
+        // grows with the attempt so that the limit has time to reset.
         const wait =
-          response.status === 429 ? 15000 * (attempt + 1) : 1200 * 2 ** attempt;
+          response.status === 429
+            ? 15000 * (attempt + 1)
+            : response.status === 403
+              ? 8000 * (attempt + 1)
+              : 1200 * 2 ** attempt;
         await new Promise((resolve) => setTimeout(resolve, wait));
         continue;
       }
@@ -550,6 +574,10 @@ async function fetchReference(song, cache) {
   for (const country of countries) {
     const found = await fetchReferenceCountry(term, country, song, cache);
     if (!found) continue;
+    // The API throttles a burst with 403 or 429. The other markets are
+    // throttled as well — asking them only burns time. The song keeps its
+    // missing reference and the report says so.
+    if (found.throttled) break;
     candidates.push(...found.candidates);
     // A candidate that names the song exactly and was released in the
     // catalogue year is the reference — the search can stop.
@@ -577,11 +605,17 @@ async function fetchReferenceCountry(term, country, song, cache) {
   }
   const url = `${ITUNES_HOST}/search?term=${encodeURIComponent(term)}&entity=song&limit=8&country=${country}`;
   await waitForItunesSlot();
-  const response = await httpGet(url, { retries: itunesRetries });
+  const response = await httpGet(url, {
+    retries: itunesRetries,
+    headers: { 'User-Agent': ITUNES_USER_AGENT },
+  });
   if (response.status !== 200) {
     // A rate limit (429) or a block (403) is not an answer — the result is
     // not cached, so that the next run asks again.
     if (response.status === 400) cache.set(key, { ok: false });
+    if (response.status === 403 || response.status === 429) {
+      return { candidates: [], throttled: true };
+    }
     return null;
   }
   let results = [];

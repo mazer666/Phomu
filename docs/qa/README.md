@@ -30,6 +30,7 @@ Then the dimension reports:
 | [`QA-07-PERFORMANCE-AND-DELIVERY.md`](QA-07-PERFORMANCE-AND-DELIVERY.md) | Payload, build cost, delivery |
 | [`QA-08-DOCUMENTATION-AND-LICENSING.md`](QA-08-DOCUMENTATION-AND-LICENSING.md) | Documentation traceability and GPL compliance |
 | [`QA-11-RUST-BASE.md`](QA-11-RUST-BASE.md) | **The shared Rust base** — the 13 crates, the rules, the three bridges, the gates that cover them |
+| [`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md) | **The bridge surface** — the declared surface of the session, the gate that keeps it in step, the negative self-test of that gate |
 
 `evidence/gates/` holds the raw captured output of all 13 gate runs, including the
 `npm ci` failure that blocks CI — and the output of the eleven Rust gates of QA-11
@@ -80,7 +81,10 @@ What the audit found, in one paragraph:
 > unreachable from every shell. The rules exist — the doors to them do not.
 
 The three P1 findings of QA-11 are listed in
-[`QA-00-EXECUTIVE-SUMMARY.md`](QA-00-EXECUTIVE-SUMMARY.md) § 0b.1.
+[`QA-00-EXECUTIVE-SUMMARY.md`](QA-00-EXECUTIVE-SUMMARY.md) § 0b.1. **All three are
+closed** — the declaration of the bridge surface and the gate that keeps it in step
+are in [`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md); the one operation that is
+still not exported is named there as OPEN-BS-01.
 
 ---
 

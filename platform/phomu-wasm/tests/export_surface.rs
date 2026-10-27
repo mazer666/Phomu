@@ -97,7 +97,9 @@ fn annotated_functions(text: &str) -> Vec<String> {
 
 /// The built module of the bridge, if it was built.
 fn built_module() -> Option<PathBuf> {
-    let target = repository_root().join("target").join("wasm32-unknown-unknown");
+    let target = repository_root()
+        .join("target")
+        .join("wasm32-unknown-unknown");
     for profile in ["release", "debug"] {
         let candidate = target.join(profile).join("phomu_wasm.wasm");
         if candidate.is_file() {

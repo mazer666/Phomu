@@ -1,0 +1,30 @@
+{
+  "$comment": "The fixture of the bridge-surface gate: the declaration names an operation the session does not have — a renamed or removed operation. The gate has to report BS-004.",
+  "session_source": "core/phomu-core/src/session",
+  "operations": [
+    {
+      "name": "Session::start_game",
+      "state_changing": true,
+      "bridge": "phomu_session_start",
+      "exemption": null
+    },
+    {
+      "name": "Session::reset_scores",
+      "state_changing": true,
+      "bridge": "phomu_session_reset_scores",
+      "exemption": null
+    },
+    {
+      "name": "Session::score",
+      "state_changing": false,
+      "bridge": "phomu_session_score",
+      "exemption": null
+    },
+    {
+      "name": "Session::start_the_game",
+      "state_changing": true,
+      "bridge": "phomu_session_start",
+      "exemption": null
+    }
+  ]
+}

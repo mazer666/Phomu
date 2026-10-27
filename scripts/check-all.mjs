@@ -8,8 +8,9 @@
  *   3. File size              -> scripts/check-file-size.mjs
  *   4. Documentation language -> scripts/check-doc-language.mjs
  *   5. Crate boundaries       -> scripts/check-crate-boundaries.mjs
- *   6. Module boundaries      -> scripts/check-module-boundaries.mjs
- *   7. Licence consistency    -> scripts/check-license.mjs
+ *   6. Bridge surface         -> scripts/check-bridge-surface.mjs
+ *   7. Module boundaries      -> scripts/check-module-boundaries.mjs
+ *   8. Licence consistency    -> scripts/check-license.mjs
  *
  * Unlike an `&&` chain, **all** gates run through: the report shows the
  * state of every single gate, even if one of them fails. The exit code is 1
@@ -30,6 +31,7 @@ const GATES = [
   { name: 'File size', script: 'check-file-size.mjs' },
   { name: 'Documentation language', script: 'check-doc-language.mjs' },
   { name: 'Crate boundaries', script: 'check-crate-boundaries.mjs' },
+  { name: 'Bridge surface', script: 'check-bridge-surface.mjs' },
   { name: 'Module boundaries', script: 'check-module-boundaries.mjs' },
   { name: 'Licence consistency', script: 'check-license.mjs' },
 ];

@@ -1,0 +1,18 @@
+{
+  "$comment": "The fixture of the bridge-surface gate: an operation of the session is missing in the declaration. The gate has to report BS-001.",
+  "session_source": "core/phomu-core/src/session",
+  "operations": [
+    {
+      "name": "Session::start_game",
+      "state_changing": true,
+      "bridge": "phomu_session_start",
+      "exemption": null
+    },
+    {
+      "name": "Session::score",
+      "state_changing": false,
+      "bridge": "phomu_session_score",
+      "exemption": null
+    }
+  ]
+}

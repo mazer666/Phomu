@@ -6,6 +6,8 @@
 > This report closes the scope gap that [`QA-00-EXECUTIVE-SUMMARY.md`](QA-00-EXECUTIVE-SUMMARY.md) § 0b declared: the Rust base landed **after** the measurement baseline of the assessment and was **never audited**. Item 2.10 of [`QA-09-REMEDIATION-BACKLOG.md`](QA-09-REMEDIATION-BACKLOG.md) asked for exactly this report.
 >
 > Everything below was measured with a Rust toolchain against a pinned commit. No production code was changed. The only file this assessment added to the repository is this report and the raw gate output in `docs/qa/evidence/gates/`.
+>
+> **Update (2026-10-27).** The three P1 findings of this report — **QA-RST-001**, **QA-RST-002** and **QA-RST-003** — are **closed**. The evidence is in [`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md): the declared surface of the session (`platform/bridge-surface.json`), the gate that keeps it in step (`scripts/check-bridge-surface.mjs`) and the negative self-test of that gate. The findings themselves are kept below unchanged — they describe the state of the pinned commit and are the record of what was measured.
 
 ---
 
@@ -536,6 +538,8 @@ The corpus marks 6 vectors as not portable; 4 of them also appear in the intenti
 
 ### QA-RST-001 — P1 — The WebAssembly bridge exports three functions; a shell cannot play a game through it
 
+> **Status: closed (2026-10-27).** The WebAssembly bridge exports **37** symbols, the whole game loop among them. The surface is declared as data (`platform/phomu-wasm/src/surface.rs`), the export section of the built module is compared against that declaration by `platform/phomu-wasm/tests/export_surface.rs`, and the fingerprint of the surface is asserted. The operation-level view of the surface — and the gate that keeps it in step — is in [`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md) § 6.
+
 **Location:** `platform/phomu-wasm/src/lib.rs:96,102,209` (the only three `#[wasm_bindgen]` attributes in the crate); `platform/phomu-wasm/src/lib.rs:111,138,156,164,172` (five `phomu_*` functions without the attribute); `platform/phomu-wasm/src/session.rs:39-306` (the whole game loop, without the attribute).
 
 **What I measured:** the export section of the compiled module, parsed out of the binary ([`evidence/gates/r_wasm_exports.log`](evidence/gates/r_wasm_exports.log)):
@@ -568,6 +572,8 @@ The 'phomu_*' functions the module exports to JavaScript:
 
 ### QA-RST-002 — P1 — An unanswered round cannot be closed through the exported surface
 
+> **Status: closed (2026-10-27).** `Session::force_reveal` is exported as `phomu_session_timeout` (`platform/phomu-wasm/src/exports_session.rs:200`), the transition table is tested against the dead ends of the automaton (`core/phomu-core/tests/phase_escape.rs`), and the bridge-surface gate proves that the symbol stays exported — a rename of it turns the gate red ([`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md) § 5.4).
+
 **Location:** `core/phomu-core/src/session/answers.rs:243-253` (`reveal` refuses), `core/phomu-core/src/session/answers.rs:268-274` (`force_reveal` — the only escape, not exported), `core/phomu-core/src/rules/phase.rs:78-90` (no edge `question → drawing`), `core/phomu-core/src/session/rounds.rs:36-41` (`next_round` accepts only `reveal` and `drawing`), `platform/phomu-ffi/src/session.rs:290-306` (the bridge calls the strict `reveal`), `platform/phomu-wasm/src/session.rs:220-232` (the same).
 
 **What I measured:** the probe in [`evidence/gates/r_probe_reveal_deadlock.log`](evidence/gates/r_probe_reveal_deadlock.log) — three players, one answer:
@@ -597,6 +603,8 @@ PROBE force_reveal() -> None
 ---
 
 ### QA-RST-003 — P1 — 20 of the 32 public operations of the session are unreachable from every shell
+
+> **Status: closed (2026-10-27).** Every public operation of the session is declared in `platform/bridge-surface.json` with a bridge symbol or with a written exemption, and the gate `scripts/check-bridge-surface.mjs` fails when an operation has neither. The self-test of the gate has been seen red. The one operation that is still not exported — `Session::from_state`, the rehydration of a stored state — is named as **OPEN-BS-01** in [`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md) § 4 and § 8. The measured numbers of the audit below (32 operations) are the numbers of the pinned commit; the number of today is **34**. The same parser applied to the tree of the pinned commit finds 31 — the difference of one is a difference of counting, not of code. Three operations have been added since then: `Session::disclose_identity`, `Session::decade_hint` and `Session::vibe_options_with_cheat`.
 
 **Location:** the facade at `core/phomu-core/src/facade.rs:49-85` against the three bridges: `platform/phomu-ffi/src/session.rs`, `platform/phomu-capi/src/session.rs`, `platform/phomu-wasm/src/session.rs`.
 
@@ -797,19 +805,19 @@ PROBE force_reveal() -> None
 
 ## 14. Acceptance summary for this report
 
-| Item | Severity | Accept when |
-|---|---|---|
-| QA-RST-001 The WebAssembly bridge must export the game | **P1** | The export section of the built `.wasm` lists every command of the game loop; a test compares it against a declared surface and fails when a symbol is missing |
-| QA-RST-002 An unanswered round must be closable | **P1** | A bridge call closes a round that nobody answered; a conformance vector covers the timeout; a transition-table test fails when a phase becomes a dead end |
-| QA-RST-003 The facade must be reachable | **P1** | Every state-changing operation of the session has a bridge symbol or a written exemption; a gate fails when a new operation has neither |
-| QA-RST-004 One spelling per enumeration on the wire | P2 | The naming lives in the core; a bridge-to-bridge comparison test fails when the two bridges disagree |
-| QA-RST-005 The wire model must ask only for what the base can answer | P2 | No field of the wire model is written with an unconditional empty string or zero; a test asserts it |
-| QA-RST-006 The file-size gate must see the Rust base | P2 | `npm run check:file-size` reports `.rs` files and fails for a Rust file over 550 lines; both oversized files are split |
-| QA-RST-007 The Rust CI must cover what it claims | P2 | CI builds the wasm target, fails on a rustdoc warning, and runs the self-test of the boundary gate |
-| QA-RST-008 The `unsafe` of the C-ABI bridge must be checked | P2 | A gate fails when an `unsafe` block in `platform/phomu-capi/` appears without a `# Safety` comment or grows the recorded count |
-| QA-RST-009 The rules must have one home | P3 | A test compares the rule constants of the shell and the base, or the shell no longer has its own copy |
-| QA-RST-010 The documentation of the base must be verifiable | P3 | Every `path:line` in a doc comment of the base resolves; a test asserts the ascending order of the error codes |
-| QA-RST-011 A parameter that is not used should go | P3 | `now_ms` is removed from `Session::new` or carries a reason |
+| Item | Severity | State | Accept when |
+|---|---|---|---|
+| QA-RST-001 The WebAssembly bridge must export the game | **P1** | **closed** | The export section of the built `.wasm` lists every command of the game loop; a test compares it against a declared surface and fails when a symbol is missing |
+| QA-RST-002 An unanswered round must be closable | **P1** | **closed** | A bridge call closes a round that nobody answered; a conformance vector covers the timeout; a transition-table test fails when a phase becomes a dead end |
+| QA-RST-003 The facade must be reachable | **P1** | **closed** | Every state-changing operation of the session has a bridge symbol or a written exemption; a gate fails when a new operation has neither |
+| QA-RST-004 One spelling per enumeration on the wire | P2 | open | The naming lives in the core; a bridge-to-bridge comparison test fails when the two bridges disagree |
+| QA-RST-005 The wire model must ask only for what the base can answer | P2 | open | No field of the wire model is written with an unconditional empty string or zero; a test asserts it |
+| QA-RST-006 The file-size gate must see the Rust base | P2 | open | `npm run check:file-size` reports `.rs` files and fails for a Rust file over 550 lines; both oversized files are split |
+| QA-RST-007 The Rust CI must cover what it claims | P2 | open | CI builds the wasm target, fails on a rustdoc warning, and runs the self-test of the boundary gate |
+| QA-RST-008 The `unsafe` of the C-ABI bridge must be checked | P2 | open | A gate fails when an `unsafe` block in `platform/phomu-capi/` appears without a `# Safety` comment or grows the recorded count |
+| QA-RST-009 The rules must have one home | P3 | open | A test compares the rule constants of the shell and the base, or the shell no longer has its own copy |
+| QA-RST-010 The documentation of the base must be verifiable | P3 | open | Every `path:line` in a doc comment of the base resolves; a test asserts the ascending order of the error codes |
+| QA-RST-011 A parameter that is not used should go | P3 | open | `now_ms` is removed from `Session::new` or carries a reason |
 
 ---
 

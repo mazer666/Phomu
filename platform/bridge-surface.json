@@ -1,0 +1,210 @@
+{
+  "$comment": "The declared bridge surface of the session. Every public operation of `Session` is listed here. A state-changing operation names the bridge symbol that reaches it; an operation that is deliberately not exposed names the reason. The gate `scripts/check-bridge-surface.mjs` reads this file, the public operations of the session and the exports of the three bridges, and fails when one of the four rules of the acceptance criterion of QA-RST-003 is broken. See docs/qa/QA-12-BRIDGE-SURFACE.md.",
+  "session_source": "core/phomu-core/src/session",
+  "operations": [
+    {
+      "name": "Session::submit_answer",
+      "state_changing": true,
+      "bridge": "phomu_session_submit",
+      "exemption": null
+    },
+    {
+      "name": "Session::lock_answers",
+      "state_changing": true,
+      "bridge": "phomu_session_lock_answers",
+      "exemption": null
+    },
+    {
+      "name": "Session::reveal",
+      "state_changing": true,
+      "bridge": "phomu_session_reveal",
+      "exemption": null
+    },
+    {
+      "name": "Session::force_reveal",
+      "state_changing": true,
+      "bridge": "phomu_session_timeout",
+      "exemption": null
+    },
+    {
+      "name": "Session::from_state",
+      "state_changing": true,
+      "bridge": null,
+      "exemption": "Not exported by any bridge. The rehydration of a stored state (CORE-103) is implemented in the base and is used by the conformance runner to replay a vector, but the persisted state is not part of the wire model of any bridge, so a shell cannot restore a running session after a crash. The operation is listed here so that the gap stays visible instead of being silently unreachable; it is recorded as OPEN-BS-01 in docs/qa/QA-12-BRIDGE-SURFACE.md."
+    },
+    {
+      "name": "Session::advance_phase",
+      "state_changing": true,
+      "bridge": "phomu_session_advance_phase",
+      "exemption": null
+    },
+    {
+      "name": "Session::submit_answer_raw",
+      "state_changing": true,
+      "bridge": "phomu_session_answer_raw",
+      "exemption": null
+    },
+    {
+      "name": "Session::award_points",
+      "state_changing": true,
+      "bridge": "phomu_session_award_points",
+      "exemption": null
+    },
+    {
+      "name": "Session::add_timeline_year",
+      "state_changing": true,
+      "bridge": "phomu_session_add_timeline_year",
+      "exemption": null
+    },
+    {
+      "name": "Session::remove_team",
+      "state_changing": true,
+      "bridge": "phomu_session_remove_team",
+      "exemption": null
+    },
+    {
+      "name": "Session::reset_scores",
+      "state_changing": true,
+      "bridge": "phomu_session_reset_scores",
+      "exemption": null
+    },
+    {
+      "name": "Session::set_config",
+      "state_changing": true,
+      "bridge": "phomu_session_set_config",
+      "exemption": null
+    },
+    {
+      "name": "Session::playback_window",
+      "state_changing": false,
+      "bridge": "phomu_media_plan",
+      "exemption": null
+    },
+    {
+      "name": "Session::disclose_identity",
+      "state_changing": false,
+      "bridge": "phomu_session_disclose",
+      "exemption": null
+    },
+    {
+      "name": "Session::next_round",
+      "state_changing": true,
+      "bridge": "phomu_session_next_round",
+      "exemption": null
+    },
+    {
+      "name": "Session::use_cheat",
+      "state_changing": true,
+      "bridge": "phomu_session_cheat",
+      "exemption": null
+    },
+    {
+      "name": "Session::decade_hint",
+      "state_changing": false,
+      "bridge": "phomu_session_cheat",
+      "exemption": null
+    },
+    {
+      "name": "Session::vibe_options_with_cheat",
+      "state_changing": true,
+      "bridge": "phomu_session_cheat",
+      "exemption": null
+    },
+    {
+      "name": "Session::remove_timeline_year",
+      "state_changing": true,
+      "bridge": "phomu_session_remove_timeline_year",
+      "exemption": null
+    },
+    {
+      "name": "Session::init_timeline",
+      "state_changing": true,
+      "bridge": "phomu_session_init_timeline",
+      "exemption": null
+    },
+    {
+      "name": "Session::new",
+      "state_changing": true,
+      "bridge": "phomu_session_new",
+      "exemption": null
+    },
+    {
+      "name": "Session::state",
+      "state_changing": false,
+      "bridge": null,
+      "exemption": null
+    },
+    {
+      "name": "Session::phase",
+      "state_changing": false,
+      "bridge": null,
+      "exemption": null
+    },
+    {
+      "name": "Session::current_mode",
+      "state_changing": false,
+      "bridge": null,
+      "exemption": null
+    },
+    {
+      "name": "Session::active_turn_id",
+      "state_changing": false,
+      "bridge": null,
+      "exemption": null
+    },
+    {
+      "name": "Session::rng_state",
+      "state_changing": false,
+      "bridge": null,
+      "exemption": null
+    },
+    {
+      "name": "Session::restore_rng_state",
+      "state_changing": true,
+      "bridge": "phomu_session_restore_rng_state",
+      "exemption": null
+    },
+    {
+      "name": "Session::snapshot",
+      "state_changing": false,
+      "bridge": "phomu_session_snapshot",
+      "exemption": null
+    },
+    {
+      "name": "Session::assign_player_to_team",
+      "state_changing": true,
+      "bridge": "phomu_session_assign_player_to_team",
+      "exemption": null
+    },
+    {
+      "name": "Session::start_game",
+      "state_changing": true,
+      "bridge": "phomu_session_start",
+      "exemption": null
+    },
+    {
+      "name": "Session::draw_song",
+      "state_changing": true,
+      "bridge": "phomu_session_draw",
+      "exemption": null
+    },
+    {
+      "name": "Session::round_view",
+      "state_changing": false,
+      "bridge": null,
+      "exemption": null
+    },
+    {
+      "name": "Session::end_game",
+      "state_changing": true,
+      "bridge": "phomu_session_end",
+      "exemption": null
+    },
+    {
+      "name": "Session::skip_broken_song",
+      "state_changing": true,
+      "bridge": "phomu_session_skip_broken_song",
+      "exemption": null
+    }
+  ]
+}

@@ -8,7 +8,7 @@ what is still open, and what the owner has to decide.
 **Source of truth:** [`docs/qa/QA-09-REMEDIATION-BACKLOG.md`](../qa/QA-09-REMEDIATION-BACKLOG.md)
 — 28 items, 50 findings, estimated 18–26 working days.
 
-**Last updated:** 2026-10-25
+**Last updated:** 2026-10-27
 
 ---
 
@@ -64,7 +64,8 @@ the backlog is met, and the measurement is reproducible. Not "looks right".
 | 2.7 | QA-PERF-001 | **open** | The covers move out of the repository and the payload of one round stays under 60 KB |
 | 2.8 | QA-DOC-001 | **done** | The project is under **AGPL-3.0-or-later**, GitHub reports `spdx_id: AGPL-3.0`. The licence consistency gate (`npm run check:license`) keeps it that way |
 | 2.9 | QA-ARC-007 | in flight | The file-size gate covers `.rs` files |
-| 2.10 | QA scope gap | in flight | `docs/qa/QA-11-RUST-BASE.md` audits the Rust base with real cargo output |
+| 2.10 | QA scope gap | **done** | `docs/qa/QA-11-RUST-BASE.md` audits the Rust base with real cargo output |
+| 2.11 | QA-RST-001, QA-RST-002, QA-RST-003 | **done** | The three P1 findings of the Rust base are closed — the bridge surface is declared and gated ([`docs/qa/QA-12-BRIDGE-SURFACE.md`](../qa/QA-12-BRIDGE-SURFACE.md)) |
 
 ---
 
@@ -73,6 +74,22 @@ the backlog is met, and the measurement is reproducible. Not "looks right".
 | Item | Finding | State | Evidence |
 |---|---|---|---|
 | 3.1–3.7 | QA-DOC-003, performance budgets, E2E depth, licence polish | **open** | The stage is not started; it depends on the stages above |
+
+---
+
+## The three P1 findings of the Rust base are closed
+
+The audit of the Rust base ([`docs/qa/QA-11-RUST-BASE.md`](../qa/QA-11-RUST-BASE.md)) raised three findings of severity **P1**. All three are closed, and the evidence for each is reproducible with one command.
+
+| Finding | State | Evidence | Command |
+|---|---|---|---|
+| **QA-RST-001** — the WebAssembly bridge exported three functions, so a shell could not play a game through it | **done** | The bridge exports 37 symbols, the game loop among them; the declared surface (`platform/phomu-wasm/src/surface.rs`) is compared with the export section of the built module by `platform/phomu-wasm/tests/export_surface.rs` | `cargo test -p phomu-wasm` |
+| **QA-RST-002** — an unanswered round could not be closed through the exported surface | **done** | `Session::force_reveal` is exported as `phomu_session_timeout` (`platform/phomu-wasm/src/exports_session.rs:200`); the transition table is tested against the dead ends of the automaton in `core/phomu-core/tests/phase_escape.rs` | `cargo test -p phomu-core` |
+| **QA-RST-003** — 20 of the public operations of the session were unreachable from every shell | **done** | Every public operation of the session is declared in `platform/bridge-surface.json` with a bridge symbol or with a written exemption; the gate `scripts/check-bridge-surface.mjs` fails when an operation has neither, and its negative self-test has been seen red | `npm run check:bridge-surface` |
+
+The gate is the sixth of the eight gates of `npm run check:all`, and its negative self-test is `npm run check:bridge-surface:test`. The report is [`docs/qa/QA-12-BRIDGE-SURFACE.md`](../qa/QA-12-BRIDGE-SURFACE.md).
+
+**What stays open.** One operation of the session — `Session::from_state`, the rehydration of a stored state — is still not exported by any bridge. It is declared with a written exemption and named as **OPEN-BS-01** in the report; the decision whether the persisted state belongs to the wire model of the bridges belongs to the owner. The remaining findings of QA-11 (QA-RST-004 … QA-RST-011) are open and are not touched by this entry.
 
 ---
 
