@@ -542,11 +542,22 @@ M5 makes the interface usable and fast from 360 px to 430 px.
 - **M5.5** Standardized state feedback (Loading / Success / Error / Disabled).
 - **M5.6** Bundle analysis and code splitting for heavy UI blocks.
 - **M5.7** Lighthouse measurement on the main pages.
+- **M5.8** Orientation detection: the interface knows whether it runs in
+  portrait or in landscape, and reacts to a rotation while the game is
+  running (`UI-019`).
+- **M5.9** Landscape layout: the game screen uses two columns — the phase on
+  the left, the player list and the score table permanently visible on the
+  right; the lobby shows the steps on the left and a preview of the selection
+  on the right. In portrait both screens stay one column (`UI-020`).
+- **M5.10** A rotation does not interrupt the running game: the round, the
+  score, the drawn song and the answers survive it (`UI-021`).
 
 ## Explicit non-goals
 
 - No native app.
 - No offline caching beyond the static export.
+- No separate landscape *design* — the landscape layout is the portrait layout
+  with the space used better, not a second product.
 
 ## Acceptance criteria
 
@@ -566,6 +577,10 @@ M5 makes the interface usable and fast from 360 px to 430 px.
 **Usability**
 - Manual usability test with at least 5 tasks and a documented
   success rate ≥ 90 %.
+- The layout decision is a pure function and has a test: one column in
+  portrait, two in landscape.
+- A rotation during a running round is measured: the round, the score, the
+  drawn song and the answers are unchanged afterwards.
 
 **Security-Privacy**
 - Not affected.

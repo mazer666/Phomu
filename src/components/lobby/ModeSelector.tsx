@@ -3,66 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
-
-interface ModeInfo {
-  id: GameMode;
-  emoji: string;
-  titleKey: string;
-  taglineKey: string;
-  flavourKey: string;
-  gradient: readonly [string, string];
-}
-
-const MODES = [
-  {
-    id: 'timeline',
-    emoji: '📅',
-    titleKey: 'lobby.mode.timelineTitle',
-    taglineKey: 'lobby.mode.timelineTagline',
-    flavourKey: 'lobby.mode.timelineFlavour',
-    gradient: ['#0891b2', '#2563eb'],
-  },
-  {
-    id: 'hint-master',
-    emoji: '🕵️',
-    titleKey: 'lobby.mode.hintMasterTitle',
-    taglineKey: 'lobby.mode.hintMasterTagline',
-    flavourKey: 'lobby.mode.hintMasterFlavour',
-    gradient: ['#7c3aed', '#db2777'],
-  },
-  {
-    id: 'lyrics',
-    emoji: '📝',
-    titleKey: 'lobby.mode.lyricsTitle',
-    taglineKey: 'lobby.mode.lyricsTagline',
-    flavourKey: 'lobby.mode.lyricsFlavour',
-    gradient: ['#dc2626', '#ea580c'],
-  },
-  {
-    id: 'vibe-check',
-    emoji: '😎',
-    titleKey: 'lobby.mode.vibeCheckTitle',
-    taglineKey: 'lobby.mode.vibeCheckTagline',
-    flavourKey: 'lobby.mode.vibeCheckFlavour',
-    gradient: ['#059669', '#0d9488'],
-  },
-  {
-    id: 'survivor',
-    emoji: '🏆',
-    titleKey: 'lobby.mode.survivorTitle',
-    taglineKey: 'lobby.mode.survivorTagline',
-    flavourKey: 'lobby.mode.survivorFlavour',
-    gradient: ['#b45309', '#d97706'],
-  },
-  {
-    id: 'cover-confusion',
-    emoji: '🎭',
-    titleKey: 'lobby.mode.coverConfusionTitle',
-    taglineKey: 'lobby.mode.coverConfusionTagline',
-    flavourKey: 'lobby.mode.coverConfusionFlavour',
-    gradient: ['#be185d', '#9333ea'],
-  },
-] as const satisfies readonly ModeInfo[];
+import { LOBBY_MODES } from './lobby-options';
 
 interface ModeSelectorProps {
   selectedModes: GameMode[];
@@ -81,7 +22,7 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
     }
   }
 
-  const allSelected = selectedModes.length === MODES.length;
+  const allSelected = selectedModes.length === LOBBY_MODES.length;
 
   return (
     <div className="space-y-4">
@@ -96,13 +37,15 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
           >
             {t('lobby.modes.active', {
               count: selectedModes.length,
-              total: MODES.length,
+              total: LOBBY_MODES.length,
             })}
           </p>
         </div>
         <button
           onClick={() =>
-            onChange(allSelected ? [MODES[0]!.id] : MODES.map((m) => m.id))
+            onChange(
+              allSelected ? [LOBBY_MODES[0]!.id] : LOBBY_MODES.map((m) => m.id)
+            )
           }
           className="text-[10px] font-black uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity border border-white/10 px-4 py-2.5 rounded-full hover:bg-white/5 min-h-[44px]"
         >
@@ -113,7 +56,7 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
       </div>
 
       <div className="grid grid-cols-1 gap-3">
-        {MODES.map((mode, index) => {
+        {LOBBY_MODES.map((mode, index) => {
           const isSelected = selectedModes.includes(mode.id);
           const isLast = isSelected && selectedModes.length === 1;
           const [gradFrom, gradTo] = mode.gradient;

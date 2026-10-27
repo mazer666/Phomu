@@ -17,11 +17,15 @@ import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import { useCoreRound } from '@/hooks/useCoreSession';
+import { useOrientation } from '@/hooks/useOrientation';
 import { GameHeader } from '@/components/game/GameHeader';
 import { GamePhaseArea } from '@/components/game/GamePhaseArea';
+import { GameBody } from '@/components/game/GameBody';
+import { GameFloatingActions } from '@/components/game/GameFloatingActions';
 import { Scoreboard } from '@/components/game/Scoreboard';
 import type { PlayerAnswer } from '@/types/game-state';
-import { computeRoundProgress } from '@/utils/game-progress';
+import { useRoundProgress } from '@/hooks/useRoundProgress';
+import { resolveGameLayout } from '@/utils/orientation-layout';
 
 // ─── Game page ───────────────────────────────────────────────────
 
@@ -70,6 +74,14 @@ export default function GamePage() {
   const [lastRoundBannerMsg, setLastRoundBannerMsg] =
     useState<LastRoundMessage | null>(null);
   const lastRoundBannerShown = useRef(false);
+
+  // ── Orientation of the viewport ───────────────────────────────
+  // The portrait draws one column, the landscape two: the phase of the
+  // round and the scoreboard next to it. The hook only reports the shape
+  // of the viewport — the state of the session stays in the store and
+  // survives the rotation.
+  const { orientation } = useOrientation();
+  const layout = resolveGameLayout(orientation);
 
   // The core owns the round: it draws the songs, evaluates the answers and
   // releases the solution. The shell never holds the catalogue
@@ -249,30 +261,16 @@ export default function GamePage() {
   });
 
   // ── Progress calculation (progress bar) ─────────────────────
-  const progressData = useMemo(
-    () =>
-      computeRoundProgress({
-        config,
-        currentRound,
-        turnOrderLength: turnOrder.length,
-        players,
-        teams,
-        gameStartTime,
-        now,
-        targetPointsLabel: (count) => t('game.page.targetPoints', { count }),
-        targetMinutesLabel: (count) => t('game.page.targetMinutes', { count }),
-      }),
-    [
-      config,
-      currentRound,
-      turnOrder.length,
-      players,
-      teams,
-      gameStartTime,
-      now,
-      t,
-    ]
-  );
+  const progressData = useRoundProgress({
+    config,
+    currentRound,
+    turnOrderLength: turnOrder.length,
+    players,
+    teams,
+    gameStartTime,
+    now,
+    t,
+  });
 
   // Not ready yet → render nothing (the redirect is running)
   if (currentRound === 0 || players.length === 0) {
@@ -282,6 +280,8 @@ export default function GamePage() {
   return (
     <div
       className="min-h-screen flex flex-col"
+      data-layout={layout.variant}
+      data-columns={layout.columns}
       style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}
     >
       {/* Juicy overlays */}
@@ -298,7 +298,7 @@ export default function GamePage() {
         }}
       />
 
-      {/* Header */}
+      {/* Header — over the full width in both orientations */}
       <GameHeader
         roundNumber={progressData.currentVal}
         currentMode={currentMode}
@@ -314,74 +314,66 @@ export default function GamePage() {
         onExit={handleExit}
       />
 
-      {/* Scoreboard toggle button */}
-      <button
-        onClick={() => setShowScoreboard(true)}
-        className="fixed bottom-4 right-4 z-30 px-4 py-2 rounded-full text-sm font-bold
-                   shadow-lg transition-opacity hover:opacity-90"
-        style={{
-          backgroundColor: 'var(--color-bg-card)',
-          border: '1px solid var(--color-border)',
-        }}
-        aria-label={t('game.page.showScoreboardAria')}
+      {/* Body: the phase of the round, in the landscape next to the scoreboard */}
+      <GameBody
+        layout={layout}
+        players={players}
+        teams={teams}
+        teamMode={config.teamMode}
+        winCondition={config.winCondition}
+        onLeaveParty={handleExit}
+        onOpenFullSettings={() => router.push('/settings')}
       >
-        {t('game.page.pointsButton')}
-      </button>
+        {/* Phase content with transition animation */}
+        <GamePhaseArea
+          roundPhase={roundPhase}
+          currentMode={currentMode}
+          currentQuestion={currentQuestion}
+          currentReveal={currentReveal}
+          currentAnswers={currentAnswers}
+          players={players}
+          teams={teams}
+          config={config}
+          isGameOver={isGameOver}
+          playedSongIds={playedSongIds}
+          pilotName={pilot?.name}
+          pilotColor={pilot?.color}
+          nextPilotName={turnOrder.length > 1 ? nextPilot?.name : undefined}
+          nextPilotColor={nextPilot?.color}
+          onDraw={handleCardDrawn}
+          onAnswered={handleAnswered}
+          onReveal={handleReveal}
+          onReroll={handleReroll}
+          onNextRound={handleNextRound}
+          onEndGame={handleEndGame}
+          onOverrideCorrect={handleOverrideCorrect}
+          onOverrideRedraw={handleOverrideRedraw}
+        />
+      </GameBody>
 
-      {/* In-game settings (reachable at any time) */}
-      <button
-        onClick={() => setShowInGameSettings(true)}
-        className="fixed bottom-4 left-4 z-30 px-4 py-2 rounded-full text-sm font-bold shadow-lg transition-opacity hover:opacity-90"
-        style={{
-          backgroundColor: 'var(--color-bg-card)',
-          border: '1px solid var(--color-border)',
-        }}
-        aria-label={t('game.page.openSettingsAria')}
-      >
-        {t('game.page.settingsButton')}
-      </button>
+      {/* The floating buttons — the portrait only, the landscape has the column */}
+      {layout.showScoreboardToggle && layout.showSettingsToggle && (
+        <GameFloatingActions
+          onShowScoreboard={() => setShowScoreboard(true)}
+          onShowSettings={() => setShowInGameSettings(true)}
+        />
+      )}
 
-      {/* Scoreboard overlay */}
+      {/* Scoreboard overlay — the portrait only, the landscape has the column */}
       <Scoreboard
         players={players}
         teams={teams}
         teamMode={config.teamMode}
         winCondition={config.winCondition}
-        isOpen={showScoreboard}
+        isOpen={showScoreboard && layout.scoreboardMode === 'overlay'}
         onClose={() => setShowScoreboard(false)}
       />
 
       <InGameSettingsPanel
-        isOpen={showInGameSettings}
+        isOpen={showInGameSettings && layout.variant === 'portrait'}
         onClose={() => setShowInGameSettings(false)}
         onLeaveParty={handleExit}
         onOpenFullSettings={() => router.push('/settings')}
-      />
-
-      {/* Phase content with transition animation */}
-      <GamePhaseArea
-        roundPhase={roundPhase}
-        currentMode={currentMode}
-        currentQuestion={currentQuestion}
-        currentReveal={currentReveal}
-        currentAnswers={currentAnswers}
-        players={players}
-        teams={teams}
-        config={config}
-        isGameOver={isGameOver}
-        playedSongIds={playedSongIds}
-        pilotName={pilot?.name}
-        pilotColor={pilot?.color}
-        nextPilotName={turnOrder.length > 1 ? nextPilot?.name : undefined}
-        nextPilotColor={nextPilot?.color}
-        onDraw={handleCardDrawn}
-        onAnswered={handleAnswered}
-        onReveal={handleReveal}
-        onReroll={handleReroll}
-        onNextRound={handleNextRound}
-        onEndGame={handleEndGame}
-        onOverrideCorrect={handleOverrideCorrect}
-        onOverrideRedraw={handleOverrideRedraw}
       />
     </div>
   );

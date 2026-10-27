@@ -31,6 +31,7 @@ Then the dimension reports:
 | [`QA-08-DOCUMENTATION-AND-LICENSING.md`](QA-08-DOCUMENTATION-AND-LICENSING.md) | Documentation traceability and GPL compliance |
 | [`QA-11-RUST-BASE.md`](QA-11-RUST-BASE.md) | **The shared Rust base** — the 13 crates, the rules, the three bridges, the gates that cover them |
 | [`QA-12-BRIDGE-SURFACE.md`](QA-12-BRIDGE-SURFACE.md) | **The bridge surface** — the declared surface of the session, the gate that keeps it in step, the negative self-test of that gate |
+| [`QA-13-CONFORMANCE-DEVIATIONS.md`](QA-13-CONFORMANCE-DEVIATIONS.md) | **The conformance deviations** — the 40 deviations between the base and the shell, who was right, and what was corrected |
 
 `evidence/gates/` holds the raw captured output of all 13 gate runs, including the
 `npm ci` failure that blocks CI — and the output of the eleven Rust gates of QA-11

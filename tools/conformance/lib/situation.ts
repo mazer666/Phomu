@@ -1,5 +1,5 @@
 /**
- * The situation of a vector
+ * The situation of a vector.
  *
  * WHY: the situation has to be built the way the reference builds it —
  * otherwise the comparison measures the harness instead of the two
@@ -19,6 +19,17 @@ import type { Vector, VectorSong } from './types';
 
 /** The default hints of a song fixture — the type demands five. */
 const DEFAULT_HINTS = ['', '', '', '', ''];
+
+/**
+ * The songs of a vector, by identifier.
+ *
+ * WHY the harness needs them: the store holds the **question** of the round
+ * and not the song — the question view model of the core has no field for
+ * the solution (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001). The rules of
+ * a mode need the song, therefore the harness keeps the songs of the vector
+ * and resolves the song of the round through the question of the store.
+ */
+export type SongFixtures = ReadonlyMap<string, PhomuSong>;
 
 /**
  * Builds a complete song from a fixture.
@@ -89,11 +100,9 @@ export function toModeSong(song: PhomuSong): ModeSong {
  * have been played, the experience points) are set directly.
  *
  * @param vector - the vector to build the situation for
- * @returns {PhomuSong|null} the song of the round — the store does not hold
- * it any more (the question view model of the core has no field for the
- * solution), so the harness has to learn it from here
+ * @returns {SongFixtures} the songs of the vector, by identifier
  */
-export function buildSituation(vector: Vector): PhomuSong | null {
+export function buildSituation(vector: Vector): SongFixtures {
   const store = useGameStore.getState();
   store.initSession();
 
@@ -161,11 +170,9 @@ export function buildSituation(vector: Vector): PhomuSong | null {
   }
 
   // The drawn song — the reference draws it with `drawSong`.
-  let drawn: PhomuSong | null = null;
   if (given.currentSong) {
     const song = songs.get(given.currentSong);
     if (song) {
-      drawn = song;
       useGameStore.getState().setQuestion(
         {
           phase: 'question',
@@ -208,5 +215,5 @@ export function buildSituation(vector: Vector): PhomuSong | null {
     useGameStore.getState().advancePhase(given.roundPhase as RoundPhase);
   }
 
-  return drawn;
+  return songs;
 }

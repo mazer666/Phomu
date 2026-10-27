@@ -32,6 +32,7 @@ import type { PhomuSong } from '@/types/song';
 import type { RoundQuestion } from '@/core/types';
 import { censorHint } from '@/utils/censor-utils';
 import { buildSituation, buildSong, toModeSong } from './situation';
+import { currentSong, setSongFixtures } from './song';
 import { filterSongs } from '@/utils/song-picker';
 import {
   answerLabel,
@@ -112,8 +113,7 @@ function applyOp(op: VectorOp, vector: Vector): void {
           `the vector has no song "${op.songId}"`
         );
       }
-      drawnSong = buildSong(fixture);
-      store.setQuestion(questionOf(drawnSong, store.currentMode));
+      store.setQuestion(questionOf(buildSong(fixture), store.currentMode));
       return;
     }
     case 'advancePhase':
@@ -234,7 +234,7 @@ function applyAnswer(
     return;
   }
 
-  const song = drawnSong;
+  const song = currentSong();
   if (!song) {
     throw new VectorError(
       'NO_CURRENT_SONG',
@@ -327,7 +327,7 @@ function observe(
     phases,
     currentRound: state.currentRound,
     currentMode: state.currentMode,
-    currentSongId: drawnSong?.id ?? null,
+    currentSongId: currentSong()?.id ?? null,
     currentSongSource: state.currentSongSource,
     autoDrawIntent: state.autoDrawIntent,
     playerScores,
@@ -355,16 +355,6 @@ function observe(
  * @param vector - the vector to run
  * @returns the observation of the vector
  */
-/**
- * The song of the running round.
- *
- * WHY the harness keeps it next to the store: the store no longer holds the
- * song of the round — the question view model of the core has no field for
- * the solution (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001). The
- * reference implementation still needs the song to evaluate the rules of a
- * mode, so it keeps it in the harness.
- */
-let drawnSong: PhomuSong | null = null;
 
 /**
  * The question of a round, as the store expects it.
@@ -406,7 +396,10 @@ function questionOf(song: PhomuSong, mode: GameState['currentMode']): RoundQuest
 
 export function runVector(vector: Vector): Observation {
   installEnvironment();
-  buildSituation(vector);
+  // The songs of the vector belong to the vector, not to the runner: the
+  // assignment resets the songs of the previous vector — without it, every
+  // vector would observe the song of the first one.
+  setSongFixtures(buildSituation(vector));
 
   const phases: string[] = [];
   let censor: string | null = null;

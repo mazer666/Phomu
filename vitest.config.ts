@@ -7,7 +7,10 @@ export default defineConfig({
     // the fast path. Component tests opt into the DOM per file with the
     // docblock `// @vitest-environment jsdom` (jsdom is a devDependency).
     environment: 'node',
-    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
+    // The tools of the conformance gate carry their own tests: the harness
+    // replays the vectors against the web shell, and a harness that measures
+    // itself instead of the shell would make the gate blind.
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx', 'tools/**/*.test.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html', 'lcov'],

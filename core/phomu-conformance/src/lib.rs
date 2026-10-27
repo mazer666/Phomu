@@ -48,7 +48,8 @@ pub use vector::{
 const REASON_LOCKED_IN: &str = "The core enters the phase `locked-in` when the last expected \
      answer arrives; the reference implementation types the phase but never enters it \
      (docs/design/GAME-CONTRACT.md \u{a7} 2.1 and \u{a7} 11.1, deviation A6; REQUIREMENTS.md, GAME-002). \
-     The difference is deliberate — the core implements the reveal lock of the contract.";
+     The difference is deliberate — the core implements the reveal lock of the contract \
+     (docs/qa/QA-13-CONFORMANCE-DEVIATIONS.md \u{a7} 3).";
 
 /// The reason of the deviation of the reveal lock.
 ///
@@ -57,7 +58,8 @@ const REASON_LOCKED_IN: &str = "The core enters the phase `locked-in` when the l
 const REASON_REVEAL_LOCK: &str = "The core refuses the reveal until the answers of the round are \
      locked in; the reference implementation lets the store change the phase without the lock \
      (docs/design/PLATFORM-ARCHITECTURE.md \u{a7} 10.2, rule C-3; REQUIREMENTS.md, GAME-002). The \
-     refusal is the anti-spoiler guarantee of the base.";
+     refusal is the anti-spoiler guarantee of the base \
+     (docs/qa/QA-13-CONFORMANCE-DEVIATIONS.md \u{a7} 3).";
 
 /// The reason of the deviation of the answer without a player.
 ///

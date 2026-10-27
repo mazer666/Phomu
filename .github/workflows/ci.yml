@@ -303,8 +303,17 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
       - name: Install dependencies
         run: npm ci
+      # The web shell loads the shared base over WebAssembly, so the module has
+      # to exist before the Next.js build. The build of the module needs the
+      # wasm32 target and downloads the matching wasm-bindgen.
+      - name: Build the WebAssembly module
+        run: |
+          rustup target add wasm32-unknown-unknown
+          node scripts/build-wasm.mjs
       - name: Next.js production build
         run: npm run build
       - name: Upload static export

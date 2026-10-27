@@ -1,0 +1,208 @@
+================================================================
+CONFORMANCE DEVIATIONS — the evidence log of the resolution
+baseline: branch main, working tree, 2026-10-27
+================================================================
+
+----------------------------------------------------------------
+1. THE MEASUREMENT BEFORE THE RESOLUTION
+----------------------------------------------------------------
+$ npm run check:conformance
+========================================================================
+CONFORMANCE GATE — the Rust base against the web shell
+========================================================================
+corpus                  : core/phomu-conformance/vectors/web-shell
+vectors in the corpus   : 70
+compared (portable)      : 64
+identical               : 7
+deviating (gate fails)  : 40
+intentional deviations  : 17
+documented divergences  : 6
+missing on one side     : 0
+
+------------------------------------------------------------------------
+...
+------------------------------------------------------------------------
+RESULT
+------------------------------------------------------------------------
+FAIL — 40 vector(s) deviate, are missing or the registry does not agree (64 compared, 7 identical, 40 deviating, 17 intentional deviation(s), 6 documented divergence(s), 0 missing).
+
+----------------------------------------------------------------
+2. THE ROOT CAUSE OF THE PATTERN A — the harness leaked the song
+----------------------------------------------------------------
+$ node -e "... distinct currentSongId over all 70 vectors ..."
+distinct currentSongId over all 70 vectors: ["s-a"]
+the first vector: phase/drawing-to-question -> s-a
+(the song of the FIRST vector was observed by EVERY vector)
+
+----------------------------------------------------------------
+3. THE 40 DEVIATING VECTORS, GROUPED BY PATTERN (before)
+----------------------------------------------------------------
+7:PATTERN A — the song of the round (the shell keeps the song of the last round)
+8:fields: currentSongId
+9:vectors: 28
+237:PATTERN D — the effect of the answer (the mode rule of the two sides differs) | A — the song of the round (the shell keeps the song of the last round) | B — the phase of the round (the base enters `locked-in`)
+238:fields: answers,currentSongId,phases,playerScores
+239:vectors: 5
+378:PATTERN D — the effect of the answer (the mode rule of the two sides differs) | A — the song of the round (the shell keeps the song of the last round) | B — the phase of the round (the base enters `locked-in`)
+379:fields: answers,currentSongId,phases,playerScores,timelineYears
+380:vectors: 4
+508:PATTERN A — the song of the round (the shell keeps the song of the last round) | B — the phase of the round (the base enters `locked-in`)
+509:fields: currentSongId,phases
+510:vectors: 2
+540:PATTERN A — the song of the round (the shell keeps the song of the last round) | C — the number of the logged rounds
+541:fields: currentSongId,roundCount
+542:vectors: 1
+
+----------------------------------------------------------------
+4. THE MEASUREMENT AFTER THE RESOLUTION
+----------------------------------------------------------------
+$ npm run check:conformance
+========================================================================
+CONFORMANCE GATE — the Rust base against the web shell
+========================================================================
+corpus                  : core/phomu-conformance/vectors/web-shell
+vectors in the corpus   : 70
+compared (portable)      : 64
+identical               : 36
+deviating (gate fails)  : 0
+intentional deviations  : 28
+documented divergences  : 6
+missing on one side     : 0
+
+------------------------------------------------------------------------
+INTENTIONAL DEVIATIONS — reported, they do not fail the gate
+------------------------------------------------------------------------
+[phase/question-to-reveal] (area: phase-machine) — The Rust base refuses the reveal until the answers are locked in; the web shell sets the phase.
+  group: c3-reveal-lock
+  rust-vs-typescript    phases[1]: typescript "reveal", rust "question"
+  rust-vs-typescript    error: typescript null, rust {"code":"1102","message":"errors.answersNotLocked"}
+[phase/reveal-to-drawing] (area: phase-machine) — The Rust base refuses the reveal until the answers are locked in; the web shell sets the phase.
+  group: c3-reveal-lock
+  rust-vs-typescript    phases[1]: typescript "reveal", rust "question"
+  rust-vs-typescript    phases[2]: typescript "drawing", rust "question"
+  rust-vs-typescript    currentRound: typescript 2, rust 1
+  rust-vs-typescript    currentSongId: typescript null, rust "s-a"
+  rust-vs-typescript    roundCount: typescript 1, rust 0
+  rust-vs-typescript    error: typescript null, rust {"code":"1101","message":"errors.notAvailableInPhase"}
+[phase/reveal-to-scoring] (area: phase-machine) — The Rust base refuses the reveal until the answers are locked in; the web shell sets the phase.
+  group: c3-reveal-lock
+  rust-vs-typescript    phases[1]: typescript "reveal", rust "question"
+  rust-vs-typescript    error: typescript null, rust {"code":"1102","message":"errors.answersNotLocked"}
+[timeline/correct-canonical-slot] (area: scoring.timeline) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[timeline/wrong-slot] (area: scoring.timeline) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[timeline/duplicate-year] (area: scoring.timeline) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[timeline/points-cap] (area: scoring.timeline) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[hint-master/both-level-1] (area: scoring.hint-master) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[hint-master/artist-level-5] (area: scoring.hint-master) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[hint-master/nothing] (area: scoring.hint-master) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[lyrics/fake-line] (area: scoring.lyrics) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[lyrics/real-line] (area: scoring.lyrics) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[lyrics/bonus-claimed] (area: scoring.lyrics) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[vibe-check/matching-mood] (area: scoring.vibe-check) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[vibe-check/cheated] (area: scoring.vibe-check) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[vibe-check/wrong-mood] (area: scoring.vibe-check) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[survivor/correct] (area: scoring.survivor) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[survivor/wrong] (area: scoring.survivor) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[cover/no-hints] (area: scoring.cover-confusion) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[cover/two-hints] (area: scoring.cover-confusion) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[cover/three-hints] (area: scoring.cover-confusion) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[cover/wrong-artist] (area: scoring.cover-confusion) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[cover/variation-correct] (area: scoring.cover-confusion) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[cover/variation-wrong] (area: scoring.cover-confusion) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[decay/within-grace] (area: time-decay) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[decay/one-step] (area: time-decay) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[decay/minimum] (area: time-decay) — The Rust base enters the phase `locked-in`; the web shell does not.
+  group: a6-locked-in-phase
+  rust-vs-typescript    phases[0]: typescript "question", rust "locked-in"
+[error/answer-without-player] (area: errors) — The Rust base refuses an answer without an active player; the web shell applies the effect of the mode anyway.
+  group: answer-without-player
+  rust-vs-typescript    timelineYears.length: typescript 4, rust 3
+  rust-vs-typescript    error: typescript null, rust {"code":"1105","message":"errors.noActivePlayer"}
+
+The reasons of the intentional deviations:
+  c3-reveal-lock: The core refuses the reveal until the answers of the round are locked in; the reference implementation lets the store change the phase without the lock. The refusal is the anti-spoiler guarantee of the base.
+    source: docs/design/PLATFORM-ARCHITECTURE.md § 10.2 (rule C-3); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (reveal)
+    fields: phases, currentRound, currentSongId, roundCount, error
+  a6-locked-in-phase: The core enters the phase `locked-in` when the last expected answer arrives; the reference implementation types the phase but never enters it. The core closes the deviation A6 of the contract — the reveal is only released when the answers are locked in.
+    source: docs/design/GAME-CONTRACT.md § 2.1 and § 11.1 (deviation A6); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (lock_answers)
+    fields: phases
+  answer-without-player: The core refuses an answer when the turn order is empty — there is nobody to attribute the answer to. The reference implementation evaluates the mode and applies its effect without recording the answer.
+    source: core/phomu-core/src/session/answers.rs (submit_answer); docs/spec/REQUIREMENTS-PLATFORM.md (CORE-111)
+    fields: timelineYears, error
+
+------------------------------------------------------------------------
+DOCUMENTED DIVERGENCES — the corpus marks them as not portable
+------------------------------------------------------------------------
+[phase/locked-in-declared] (area: phase-machine)
+  reason: The phase `locked-in` is declared but entered by no flow (GAME-CONTRACT section 2.1, deviation A6). The TypeScript store accepts it; the Rust core decides whether an undeclared transition is a typed error (CORE-111). The divergence is intentional and must be decided by the owner (OPEN-08).
+  rust-vs-typescript    phases[0]: typescript "locked-in", rust "question"
+  rust-vs-typescript    error: typescript null, rust {"code":"1102","message":"errors.answersNotLocked"}
+[error/answer-without-current-song] (area: errors)
+  reason: The error vocabulary of the vector layer belongs to the runner, not to the game: the two runners name the same failure differently. The situation is also one that only the reference can reach — the core cannot enter the question phase without a drawn song. The vector therefore documents the behaviour of the reference and is not compared.
+[error/award-points-unknown-player] (area: errors)
+  reason: The TypeScript reference ignores the operation silently (game-store.ts:463 `if (!player) return state`). The Rust core is required to return a typed error (CORE-111). The divergence is intentional: the core is stricter than the reference.
+  rust-vs-typescript    error: typescript null, rust {"code":"1004","message":"errors.unknownPlayer"}
+[error/remove-unknown-timeline-year] (area: errors)
+  reason: The TypeScript reference ignores the operation silently (game-store.ts:611 `if (idx === -1) return {}`). The Rust core is required to return a typed error (CORE-111). The divergence is intentional: the core is stricter than the reference.
+  rust-vs-typescript    error: typescript null, rust {"code":"1007","message":"errors.invalidAnswer"}
+[divergence/mode-rotation-random] (area: divergence)
+  reason: The mode rotation draws from `Math.random()` (game-store.ts:190). The Rust core uses a seeded generator (CORE-113), but a seeded generator with a different algorithm produces a different sequence. The vector therefore uses a single mode in every portable case; the rotation itself is not comparable until the owner defines a shared algorithm and seed.
+[divergence/shifting-teams-random] (area: divergence)
+  reason: The shifting team mode re-shuffles the players with `Math.random()` (game-store.ts:353). The membership of the teams after the switch is therefore not predictable — and the reference keeps the points of the teams and the players (deviation A8). The vector records the score behaviour, which is deterministic; the membership is not part of the observation.
+  rust-vs-typescript    teamScores.t1: typescript 5, rust 8
+  rust-vs-typescript    teamScores.t2: typescript 3, rust 0
+  rust-vs-typescript    playerTeams.p2: typescript "t2", rust "t1"
+  rust-vs-typescript    playerTeams.p3: typescript "t1", rust "t2"
+  rust-vs-typescript    teamMembers.t1[0]: typescript "p3", rust "p2"
+  rust-vs-typescript    teamMembers.t2[0]: typescript "p2", rust "p3"
+
+------------------------------------------------------------------------
+RESULT
+------------------------------------------------------------------------
+PASS — 64 portable vector(s) compared, 36 identical, 0 deviating, 28 intentional deviation(s), 6 documented divergence(s).

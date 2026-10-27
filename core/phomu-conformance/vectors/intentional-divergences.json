@@ -7,7 +7,7 @@
       "title": "The Rust base enters the phase `locked-in`; the web shell does not.",
       "fields": ["phases"],
       "reason": "The core enters the phase `locked-in` when the last expected answer arrives; the reference implementation types the phase but never enters it. The core closes the deviation A6 of the contract — the reveal is only released when the answers are locked in.",
-      "source": "docs/design/GAME-CONTRACT.md § 2.1 and § 11.1 (deviation A6); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (lock_answers)",
+      "source": "docs/design/GAME-CONTRACT.md § 2.1 and § 11.1 (deviation A6); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (lock_answers); docs/qa/QA-13-CONFORMANCE-DEVIATIONS.md § 3 (the decision)",
       "vectors": [
         "timeline/correct-canonical-slot",
         "timeline/wrong-slot",
@@ -46,7 +46,7 @@
         "error"
       ],
       "reason": "The core refuses the reveal until the answers of the round are locked in; the reference implementation lets the store change the phase without the lock. The refusal is the anti-spoiler guarantee of the base.",
-      "source": "docs/design/PLATFORM-ARCHITECTURE.md § 10.2 (rule C-3); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (reveal)",
+      "source": "docs/design/PLATFORM-ARCHITECTURE.md § 10.2 (rule C-3); REQUIREMENTS.md (GAME-002); core/phomu-core/src/session/answers.rs (reveal); docs/qa/QA-13-CONFORMANCE-DEVIATIONS.md § 3 (the decision)",
       "vectors": [
         "phase/question-to-reveal",
         "phase/reveal-to-drawing",

@@ -74,6 +74,7 @@ export function createRoundActions(
         turnOrder,
         currentMode,
         currentAnswers,
+        currentQuestion,
         currentReveal,
         roundHistory,
         players,
@@ -118,18 +119,29 @@ export function createRoundActions(
       }
 
       // 2. Prepare next round
+      //
+      // WHY the condition is the drawn song and not the reveal: the
+      // contract requires that a round **with a drawn song** is logged and
+      // that a round **without** a drawn song is not
+      // (docs/design/GAME-CONTRACT.md § 6.3; REQUIREMENTS.md, GAME-005).
+      // The shell holds no song — the question of the round carries its
+      // identifier — so the question is the record of the drawn song. The
+      // identity is only known when the reveal has been released; a round
+      // that was ended without a reveal is logged without an identity.
       const newHistory: GameRound[] =
-        currentReveal !== null
+        currentQuestion !== null
           ? [
               ...roundHistory,
               {
                 roundNumber: currentRound,
                 mode: currentMode,
-                identity: {
-                  title: currentReveal.title,
-                  artist: currentReveal.artist,
-                  year: currentReveal.year,
-                },
+                identity: currentReveal
+                  ? {
+                      title: currentReveal.title,
+                      artist: currentReveal.artist,
+                      year: currentReveal.year,
+                    }
+                  : null,
                 answers: currentAnswers,
                 completedAt: new Date().toISOString(),
               },

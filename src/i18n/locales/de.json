@@ -1458,6 +1458,16 @@
     "player": {
       "pilot": "Pilot",
       "removeAria": "{{name}} entfernen"
+    },
+    "preview": {
+      "title": "Vorschau",
+      "playersLabel": "Spieler",
+      "playerCount_one": "{{count}} Spieler",
+      "playerCount_other": "{{count}} Spieler",
+      "modesLabel": "Modi",
+      "packsLabel": "Song-Packs",
+      "endingLabel": "Spiel-Ende",
+      "noneSelected": "Noch nichts gewählt"
     }
   },
   "projector": {

@@ -992,6 +992,30 @@
 **Acceptance:** `SETTINGS_SECTIONS` (`src/app/settings/page.tsx:10-37`), `StatCard` display (`:42-47`), level calculation `Math.floor(totalXP / 100) + 1` (`:43`).
 **Verification:** `grep -n "SETTINGS_SECTIONS" src/app/settings/page.tsx`.
 
+### UI-019 — The interface recognises the orientation it runs in
+
+**Preset:** Preset
+**Requirement:** The interface knows whether it runs in portrait or in landscape and reacts to a change of the orientation while the game is running. The orientation is derived from the viewport, not from the device class: a narrow, tall window is portrait, a wide, flat one is landscape. The recognition reacts to a rotation and to a change of the window size, not only to the first render.
+**Rationale:** A party game runs on a phone in the hand (portrait) and on a tablet or a laptop on the table (landscape). The interface has to know which of the two it is, otherwise the landscape case is simply the portrait case with empty space.
+**Acceptance:** `src/hooks/useOrientation.ts` — the orientation is derived from the viewport and the change is delivered through a `change` listener on `matchMedia('(orientation: landscape)')`; the hook does not access `window` during the server render.
+**Verification:** `grep -n "matchMedia\|orientation" src/hooks/useOrientation.ts`; the unit test of the hook covers portrait, landscape and the change between them.
+
+### UI-020 — The landscape layout uses the width of the screen
+
+**Preset:** Preset
+**Requirement:** In landscape the game screen is laid out in two columns: the phase (drawing, question, reveal) on the left, the player list and the score table on the right, permanently visible. The score table is therefore not an overlay in landscape — the button that opens it disappears there, while the keyboard operation stays complete. The lobby shows the steps on the left and a preview of the selected modes, packs, player count and end condition on the right. In portrait both screens stay one column and unchanged.
+**Rationale:** Landscape has twice the width and half the height. A one-column layout leaves half of the screen unused, and the score table has to be opened by hand in the middle of a round.
+**Acceptance:** the layout variant is derived by a pure function from the viewport and the state, so that it is testable without a browser; in landscape the score table is a column, in portrait an overlay. The pure function and the hook have tests.
+**Verification:** `grep -n "useOrientation\|landscape" src/app/game/page.tsx src/app/lobby/page.tsx`; the test of the layout decision proves one column in portrait and two in landscape.
+
+### UI-021 — A rotation does not interrupt the running game
+
+**Preset:** Preset
+**Requirement:** Rotating the device or resizing the window during a running round does not end the round, does not reset the score, does not redraw the song and does not lose the answers that have been given. The orientation only changes the layout.
+**Rationale:** The game state lives in the state store and must survive a layout change. A rotation that interrupts the game is a bug that costs the party a round.
+**Acceptance:** the orientation is read by a hook and not written into the state; the state store keeps the round, the score, the drawn song and the answers; no effect of the orientation changes the state.
+**Verification:** `grep -n "setState\|useGameStore" src/hooks/useOrientation.ts` — the hook writes nothing; the test of the hook leaves the store untouched.
+
 ### UI-018 — Changes in the game take effect from the next round
 
 **Preset:** Preset
