@@ -56,8 +56,10 @@ jobs:
       # The name of the Pages project. It is a variable, not a constant,
       # because the project name is chosen in the dashboard and has to match
       # the account exactly — a name that does not exist fails with
-      # "Project not found" (code 8000007).
-      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'phomu' }}
+      # "Project not found" (code 8000007). The fallback is the project of
+      # this account; the workflow checks the name before the upload and
+      # lists the projects that do exist.
+      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'supermazerworld' }}
     steps:
       - name: Check the credentials
         id: credentials
