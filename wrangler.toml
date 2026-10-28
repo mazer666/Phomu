@@ -8,10 +8,23 @@
 #
 # The project name is the account name of the owner on the free plan. It
 # decides the address `phomu.pages.dev`. Change it together with the
-# `NEXT_PUBLIC_BASE_PATH` of the build (see `.github/workflows/deploy-cloudflare.yml`).
+# `NEXT_PUBLIC_BASE_PATH` of the build.
 
 name = "phomu"
 compatibility_date = "2026-10-01"
+
+# The build of the Cloudflare Pages project.
+#
+# WHY the toolchain is installed first: the web shell loads the shared Rust
+# base as a WebAssembly module, and the module has to be built before the
+# shell can resolve the import. The build image of the Pages service does not
+# carry a Rust toolchain, so the build installs it itself.
+#
+# The GitHub Actions workflow (`.github/workflows/deploy-cloudflare.yml`) uses
+# `dtolnay/rust-toolchain` instead and does not need this script.
+[build]
+command = "bash scripts/install-rust-toolchain.sh && npm run build"
+output_dir = "out"
 
 # The static export of Next.js. The build writes it here.
 pages_build_output_dir = "out"

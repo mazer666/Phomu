@@ -15,7 +15,8 @@ steps that need the account.
 | The generated header file | `public/_headers` | Written by `npm run generate:cloudflare-headers`, checked by `npm run check:cloudflare-headers` (a gate in the CI). |
 | The function routes | `public/_routes.json` | Reserves `/api/*` for the Functions that the admin API and the round API will become. Everything else stays a free static request. |
 | The Pages configuration | `wrangler.toml` | The project name, the build output directory (`out`) and the base path. |
-| The deployment | `.github/workflows/deploy-cloudflare.yml` | Builds the WebAssembly module, builds the shell, checks the headers, uploads to Pages. |
+| The Rust installation | `scripts/install-rust-toolchain.sh` | Brings the toolchain and the `wasm32` target into a build image that has none. |
+| The deployment | `.github/workflows/deploy-cloudflare.yml` | The second path: GitHub builds the module, the shell and the headers and uploads them. |
 | The base path as a variable | `config/security-headers.mjs`, `next.config.ts`, `src/core/phomu-core.ts` | `/Phomu` on GitHub Pages, empty on a Pages project. |
 
 **The workflow skips itself** when the token is missing
@@ -24,45 +25,82 @@ stays usable without a Cloudflare account.
 
 ---
 
-## 2. The three steps that need your account
+## 2. The two ways to deploy
 
-### 2.1 Create the account and the project
+Both are prepared. They differ in **who builds**.
+
+### Path A — the Git integration (the build runs at Cloudflare)
+
+The repository is connected to the Pages project and Cloudflare builds it on
+every push. The build command comes from `wrangler.toml`:
+
+```toml
+[build]
+command = "bash scripts/install-rust-toolchain.sh && npm run build"
+output_dir = "out"
+```
+
+**WHY the toolchain is installed first:** the shell loads the shared Rust base
+as a WebAssembly module, and the module has to be built before the shell can
+resolve the import. The build image of the Pages service carries no Rust
+toolchain — without the installation the build dies with
+`cargo build --release --target wasm32-unknown-unknown -p phomu-wasm failed`.
+
+The installation takes two to three minutes on the first build. Cloudflare
+caches the build output, and the toolchain is installed again on every build —
+if the build time matters, Path B is faster.
+
+### Path B — the GitHub Actions workflow (the build runs at GitHub)
+
+The workflow installs the toolchain through `dtolnay/rust-toolchain`, builds
+the module, the shell and the headers, and uploads the result with
+`wrangler`. It needs the two repository secrets (section 3) and **no** Git
+connection in Cloudflare: the project is created with
+**Workers & Pages → Create application → Pages → Upload assets**, and the
+workflow takes it from there.
+
+The workflow **skips itself** when the token is missing, so the repository
+stays usable without a Cloudflare account.
+
+---
+
+## 3. The three steps that need your account
+
+### 3.1 Create the account and the project
 
 1. Create an account at <https://dash.cloudflare.com/sign-up>.
-2. Add the project: **Workers & Pages → Create application → Pages → Connect
-   to Git** — or, if you prefer the workflow to do the deployment, create it
-   **without** a Git connection:
-   - **Workers & Pages → Create application → Pages → Upload assets**
-   - the project name has to be **`phomu`** — it decides the address
-     `phomu.pages.dev`
-   - the upload dialog is left open; the workflow does the real deployment
+2. Add the project: **Workers & Pages → Create application → Pages**
+   - for Path A: **Connect to Git** and pick the repository
+   - for Path B: **Upload assets**, the project name has to be **`phomu`** —
+     it decides the address `phomu.pages.dev`; the upload dialog is left open
 3. Copy the **account id**: **Workers & Pages → your account → Account ID**
    (or the right-hand side of the dashboard).
 
-### 2.2 Create the API token
+### 3.2 Create the API token
 
 1. **My Profile → API Tokens → Create Token**
 2. **Permissions**: `Account` → `Cloudflare Pages` → **Edit**
 3. **Account Resources**: your account
 4. Copy the token — it is shown only once.
 
-### 2.3 Add both to the repository
+### 3.3 Add both to the repository
 
 **Repository → Settings → Secrets and variables → Actions → New repository
 secret**:
 
 | Name | Value |
 |---|---|
-| `CLOUDFLARE_API_TOKEN` | the token from 2.2 |
-| `CLOUDFLARE_ACCOUNT_ID` | the account id from 2.1 |
+| `CLOUDFLARE_API_TOKEN` | the token from 3.2 |
+| `CLOUDFLARE_ACCOUNT_ID` | the account id from 3.1 |
 
-**Done.** The next push to `main` deploys to Cloudflare Pages. The workflow can
+**Done.** The next push to `main` deploys to Cloudflare Pages — through the
+Git integration (Path A) or through the workflow (Path B). The workflow can
 also be started by hand: **Actions → Deploy to Cloudflare Pages → Run
 workflow**.
 
 ---
 
-## 3. Checking the deployment
+## 4. Checking the deployment
 
 After the first successful run:
 
@@ -81,7 +119,7 @@ is the one directive that exists only because of the shared Rust base.
 
 ---
 
-## 4. A custom domain
+## 5. A custom domain
 
 The project is reachable at `phomu.pages.dev` without any further work. A
 custom domain needs:
@@ -99,7 +137,7 @@ inside the shell follow it, because the shell reads the same variable.
 
 ---
 
-## 5. What is not covered yet
+## 6. What is not covered yet
 
 ### The admin API
 
@@ -121,7 +159,7 @@ independent — a failure of one does not touch the other.
 
 ---
 
-## 6. Rolling back
+## 7. Rolling back
 
 The workflow deploys on every push to `main`. To go back to the previous
 deployment:
@@ -131,3 +169,7 @@ its commit, and a previous one can be promoted again.
 
 The GitHub Pages deployment is untouched by all of this: it is a separate
 workflow, it builds the same commit, and it keeps working.
+
+The same applies to the Pages deployment: **Workers & Pages → phomu →
+Deployments** lists every deployment with its commit, and an earlier one can
+be promoted again.

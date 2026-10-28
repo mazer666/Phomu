@@ -71,7 +71,13 @@ the GitHub Pages one.
    Cloudflare Pages, the CI — has to build the module first. The `prebuild` step
    of `npm run build` does that; the deploy workflows call the package script
    and not `npx next build`, because the latter skips it.
-4. **The Content-Security-Policy allows `'wasm-unsafe-eval'`.** Without it the
+4. **The build image brings its own toolchain.** The build image of the Pages
+   service carries no Rust. `scripts/install-rust-toolchain.sh` installs the
+   toolchain and the `wasm32` target before the build, and
+   `wrangler.toml` names it as the first part of the build command. The
+   GitHub Actions path uses `dtolnay/rust-toolchain` instead. Both paths build
+   the same module from the same source.
+5. **The Content-Security-Policy allows `'wasm-unsafe-eval'`.** Without it the
    browser refuses to compile the module and the game does not start. It is the
    one directive that exists only because of the shared base.
 
