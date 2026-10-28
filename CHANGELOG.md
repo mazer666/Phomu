@@ -128,6 +128,36 @@ with, plus one obligation the GPL does not have.
   deliberately wrong identifier in `package.json` — turns the gate red and
   green again after the fix.
 
+### Added — the web shell is hosted on Cloudflare Pages
+
+The hosting question of the QA backlog is decided and prepared. The decision
+and the rejected alternatives are in
+[`docs/adr/ADR-0010-hosting-on-cloudflare-pages.md`](docs/adr/ADR-0010-hosting-on-cloudflare-pages.md),
+the runbook is in
+[`docs/deployment/CLOUDFLARE.md`](docs/deployment/CLOUDFLARE.md).
+
+- the nine security headers have **one** source,
+  `config/security-headers.mjs`. The Next.js server reads it, the deployment
+  writes it into `public/_headers`, and the CI compares the two. The headers
+  therefore reach the browser for the first time, which closes QA-SEC-001.
+- the Content-Security-Policy allows `'wasm-unsafe-eval'` — without it the
+  browser refuses to compile the WebAssembly module of the shared base and
+  the game does not start.
+- the base path becomes a variable: `/Phomu` on GitHub Pages, empty on a
+  Pages project.
+- `public/_routes.json` reserves `/api/*` for the functions that the admin API
+  and the round API will become, so the static traffic stays free.
+- `wrangler.toml` and a deployment workflow that builds the WebAssembly
+  module, the shell and the headers together. It skips itself when the token
+  is missing, so the repository stays usable without a Cloudflare account.
+- a new gate `scripts/check-workflows.mjs` parses every workflow and rejects
+  a job-level condition that reads the secrets context — the mistake that made
+  the first version of the deployment workflow an invalid workflow file.
+
+**Still open:** the three steps with the account (the Pages project, an API
+token with the permission *Cloudflare Pages: Edit*, the two repository
+secrets), the R2 bucket for the cover files, and the round API.
+
 ### Added — Documentation language gate
 
 The project documentation and the repository are **English**. The user
