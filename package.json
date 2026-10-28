@@ -5,8 +5,10 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
+    "build:catalogue": "node scripts/build-catalogue.mjs",
+    "check:catalogue": "node scripts/build-catalogue.mjs --check",
     "build:wasm": "node scripts/build-wasm.mjs",
-    "prebuild": "npm run build:wasm",
+    "prebuild": "npm run build:catalogue && npm run build:wasm",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",

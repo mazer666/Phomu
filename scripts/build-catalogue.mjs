@@ -8,7 +8,8 @@
  *   2. It writes the songs as one JSON document and compresses it with gzip.
  *   3. It writes the artefact to `public/data/catalogue.json.gz` and a
  *      manifest with the numbers of the catalogue to
- *      `public/data/catalogue.manifest.json`.
+ *      `public/data/catalogue.manifest.json`. The digest in the manifest is
+ *      over the **compressed** bytes — that is what the shell verifies.
  *
  * WHY
  *   The catalogue is the answer key of the game: 1,557 title/artist pairs
@@ -21,7 +22,8 @@
  *   inflates nothing and never holds a title, an artist or a lyric line.
  *
  * USAGE
- *   node scripts/build-catalogue.mjs
+ *   node scripts/build-catalogue.mjs           # build the artefact
+ *   node scripts/build-catalogue.mjs --check   # compare with the catalogue
  */
 
 import { createHash } from 'node:crypto';
@@ -97,23 +99,69 @@ function countLyrics(songs) {
   return { real, fake };
 }
 
+/**
+ * Builds the manifest of the artefact.
+ *
+ * WHY the digest is over the **compressed** bytes: that is what travels to
+ * the browser, and that is what the shell verifies
+ * (`src/core/catalogue-service.ts`). A digest over the uncompressed document
+ * could never match the one the shell computes — the verification failed on
+ * every load, the session never started, and the round did nothing.
+ *
+ * @param {Buffer} compressed the compressed artefact
+ * @param {number} songs the number of songs
+ * @param {{real: number, fake: number}} lyrics the lyric lines
+ * @returns {object} the manifest
+ */
+function buildManifest(compressed, songs, lyrics) {
+  return {
+    schemaVersion: 1,
+    songs,
+    realLyricLines: lyrics.real,
+    fakeLyricLines: lyrics.fake,
+    bytes: compressed.length,
+    sha256: createHash('sha256').update(compressed).digest('hex'),
+  };
+}
+
 function main() {
+  const checkOnly = process.argv.includes('--check');
   const songs = readSongs();
   const document = JSON.stringify({ songs });
   const compressed = gzipSync(Buffer.from(document, 'utf8'), { level: 9 });
   const lyrics = countLyrics(songs);
+  const manifest = buildManifest(compressed, songs.length, lyrics);
+
+  if (checkOnly) {
+    if (!fs.existsSync(OUT_FILE) || !fs.existsSync(MANIFEST_FILE)) {
+      console.error('The catalogue artefact is missing. Run: npm run build:catalogue');
+      process.exit(1);
+    }
+    const actual = fs.readFileSync(OUT_FILE);
+    const expected = buildManifest(actual, songs.length, lyrics);
+    const stored = JSON.parse(fs.readFileSync(MANIFEST_FILE, 'utf8'));
+    if (expected.sha256 !== stored.sha256 || actual.length !== stored.bytes) {
+      console.error(
+        'The catalogue artefact does not match the catalogue of the repository.'
+      );
+      console.error(
+        `  artefact: ${actual.length} bytes, sha256 ${expected.sha256}`
+      );
+      console.error(
+        `  manifest: ${stored.bytes} bytes, sha256 ${stored.sha256}`
+      );
+      console.error('Run: npm run build:catalogue');
+      process.exit(1);
+    }
+    console.log(
+      `✅ the catalogue artefact matches the catalogue ` +
+        `(${manifest.songs} songs, ${manifest.bytes} bytes)`
+    );
+    return;
+  }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(OUT_FILE, compressed);
-
-  const manifest = {
-    schemaVersion: 1,
-    songs: songs.length,
-    realLyricLines: lyrics.real,
-    fakeLyricLines: lyrics.fake,
-    bytes: compressed.length,
-    sha256: createHash('sha256').update(document).digest('hex'),
-  };
   fs.writeFileSync(MANIFEST_FILE, `${JSON.stringify(manifest, null, 2)}\n`);
 
   console.log('Catalogue artefact');

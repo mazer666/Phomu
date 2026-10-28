@@ -198,6 +198,12 @@ jobs:
       - name: Gate — GitHub workflows
         if: always()
         run: npm run check:workflows
+      - name: Gate — catalogue artefact
+        if: always()
+        # The artefact is the answer key of the game. When the song data
+        # changes and the artefact is not rebuilt, the shell refuses to open
+        # the catalogue and the round does nothing.
+        run: npm run check:catalogue
       # The link matcher decides whether a catalogue link points at the right
       # song. Its self-test asserts every tolerance against a real catalogue
       # entry: a relaxed rule without an example fails the job.
