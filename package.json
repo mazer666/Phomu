@@ -82,6 +82,7 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "vitest": "^4.1.2",
+    "wrangler": "4.154.0",
     "ytsr": "^3.8.4"
   },
   "overrides": {

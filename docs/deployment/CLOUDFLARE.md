@@ -32,7 +32,21 @@ Both are prepared. They differ in **who builds**.
 ### Path A — the Git integration (the build runs at Cloudflare)
 
 The repository is connected to the Pages project and Cloudflare builds it on
-every push. The build command comes from `wrangler.toml`:
+every push.
+
+**Set the build command in the dashboard as well**
+(**Workers & Pages → phomu → Settings → Builds & deployments**):
+
+| Setting | Value |
+|---|---|
+| Build command | `bash scripts/install-rust-toolchain.sh && npm run build` |
+| Build output directory | `out` |
+| Root directory | `/` (the repository root) |
+| Environment variables | `NEXT_PUBLIC_BASE_PATH` = *(empty)* |
+
+The same values are in `wrangler.toml`, so that a project created from the
+command line gets them too. The dashboard is authoritative for a project that
+was created in the dashboard.
 
 ```toml
 [build]
@@ -75,6 +89,17 @@ stays usable without a Cloudflare account.
      it decides the address `phomu.pages.dev`; the upload dialog is left open
 3. Copy the **account id**: **Workers & Pages → your account → Account ID**
    (or the right-hand side of the dashboard).
+4. Note the **name of the project**. It has to match exactly — Cloudflare
+   lowercases it, and a name that does not exist fails with
+   *"Project not found"* (code 8000007). The workflow reads it from the
+   repository variable `CLOUDFLARE_PROJECT_NAME` and falls back to `phomu`.
+   If your project has a different name, add the variable:
+   **Repository → Settings → Secrets and variables → Actions → Variables →
+   `CLOUDFLARE_PROJECT_NAME`**.
+
+   The workflow checks the name against the account before it uploads and
+   lists the projects that do exist — so a wrong name is reported with the
+   right one next to it.
 
 ### 3.2 Create the API token
 
@@ -116,6 +141,18 @@ curl -sI https://phomu.pages.dev/wasm/phomu_core_bg.wasm | head -3
 The Content-Security-Policy has to contain **`'wasm-unsafe-eval'`**. Without
 it the browser refuses to compile the module and the game does not start — that
 is the one directive that exists only because of the shared Rust base.
+
+---
+
+## 4a. When the build fails
+
+| Message | Meaning | What to do |
+|---|---|---|
+| `cargo build --release --target wasm32-unknown-unknown -p phomu-wasm failed` | The build image has no Rust toolchain | The build command has to start with `bash scripts/install-rust-toolchain.sh` — check the build command in the dashboard |
+| `Module not found: Can't resolve 'phomu_wasm_bg.wasm'` | The module was not built before the shell | The build command has to run `npm run build` and not `npx next build` — the package script runs the `prebuild` step |
+| `Project not found ... [code: 8000007]` | The project name or the account id is wrong | The workflow now lists the projects of the account. Check `CLOUDFLARE_PROJECT_NAME` and `CLOUDFLARE_ACCOUNT_ID` |
+| `A request to the Cloudflare API ... failed` | The token has the wrong permission | The token needs **Cloudflare Pages: Edit** for the account |
+| The build succeeds, the page stays empty | The output directory is wrong | It has to be `out`, not `.next` |
 
 ---
 

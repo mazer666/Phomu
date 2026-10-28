@@ -53,6 +53,11 @@ jobs:
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # The name of the Pages project. It is a variable, not a constant,
+      # because the project name is chosen in the dashboard and has to match
+      # the account exactly — a name that does not exist fails with
+      # "Project not found" (code 8000007).
+      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'phomu' }}
     steps:
       - name: Check the credentials
         id: credentials
@@ -103,10 +108,32 @@ jobs:
         # the deployed site would be protected differently from the source.
         run: node scripts/generate-cloudflare-headers.mjs --check
 
+      - name: Check the project
+        if: steps.credentials.outputs.available == 'true'
+        # WHY: a name that does not exist in the account fails with
+        # "Project not found" (code 8000007) and the list of the projects that
+        # do exist turns the guesswork into a fact.
+        run: |
+          response=$(curl -sS \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects")
+          ok=$(echo "${response}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{console.log(JSON.parse(s).success)}catch{console.log("unknown")}})')
+          if [ "${ok}" != "true" ]; then
+            echo "::error::The account ${CLOUDFLARE_ACCOUNT_ID} did not answer. Check the account id."
+            exit 1
+          fi
+          found=$(echo "${response}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log((j.result||[]).map(p=>p.name).join(", "))})')
+          echo "The projects of this account: ${found}"
+          if ! echo ",${found}," | grep -q ",${CLOUDFLARE_PROJECT_NAME},"; then
+            echo "::error::The project '${CLOUDFLARE_PROJECT_NAME}' does not exist. Set the repository variable CLOUDFLARE_PROJECT_NAME to one of: ${found}"
+            exit 1
+          fi
+          echo "The project '${CLOUDFLARE_PROJECT_NAME}' exists."
+
       - name: Upload the Pages artefact
         if: steps.credentials.outputs.available == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy out --project-name=phomu --branch=main
+          command: pages deploy out --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --branch=main
