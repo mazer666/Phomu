@@ -64,6 +64,34 @@ The installation takes two to three minutes on the first build. Cloudflare
 caches the build output, and the toolchain is installed again on every build —
 if the build time matters, Path B is faster.
 
+### Which path should you use?
+
+**Path B — the GitHub Actions workflow — unless you have a reason not to.**
+
+The workflow brings three things the Pages build image does not have:
+
+- the Rust toolchain, installed and cached by the action
+- the quality gates: the deployment is refused when the security headers in
+  `public/_headers` do not match their source
+- the check of the project name, which turns a guess into a fact
+
+The Pages build image carries none of that. It can be made to work — the
+command installs the toolchain — but every build then downloads and unpacks
+the toolchain again, and the gates do not run.
+
+**If you keep the Git integration**, set the build command in the dashboard to
+
+```
+bash scripts/install-rust-toolchain.sh && npm run build
+```
+
+and accept that the dashboard shows the build of the Git integration next to
+the deployments of the workflow. Two build paths for one project are a source
+of confusion — disconnecting the Git integration
+(**Workers & Pages → supermazerworld → Settings → Builds & deployments →
+Git → Disconnect**) leaves the workflow as the only deployer, and the
+deployments of the workflow still show up in the same list.
+
 ### Path B — the GitHub Actions workflow (the build runs at GitHub)
 
 The workflow installs the toolchain through `dtolnay/rust-toolchain`, builds

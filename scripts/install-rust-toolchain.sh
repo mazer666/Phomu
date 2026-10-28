@@ -29,8 +29,21 @@ export PATH="$CARGO_HOME/bin:$PATH"
 # an error, and the build would fail later in a place that is harder to read.
 if ! cargo --version > /dev/null 2>&1; then
   echo "Installing the Rust toolchain (minimal profile) …"
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
-    | sh -s -- -y --profile minimal --default-toolchain stable
+  # The build images differ: one has curl, the other wget. The script uses
+  # whichever it finds, and says so when it finds neither — a build image
+  # without both is the one case where the build cannot succeed, and it
+  # should say that instead of failing three lines later.
+  if command -v curl > /dev/null 2>&1; then
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
+      | sh -s -- -y --profile minimal --default-toolchain stable
+  elif command -v wget > /dev/null 2>&1; then
+    wget -qO- https://sh.rustup.rs \
+      | sh -s -- -y --profile minimal --default-toolchain stable
+  else
+    echo "::error::Neither curl nor wget is available in this build image — the Rust toolchain cannot be installed."
+    echo "::error::Build the shell at GitHub instead: the workflow there installs the toolchain itself."
+    exit 1
+  fi
 else
   echo "Rust is already installed: $(cargo --version)"
 fi
@@ -40,6 +53,11 @@ if ! rustup target list --installed 2> /dev/null | grep -qx "${TARGET}"; then
   rustup target add "${TARGET}"
 else
   echo "The target ${TARGET} is already installed."
+fi
+
+if ! cargo --version > /dev/null 2>&1; then
+  echo "::error::The Rust toolchain could not be installed in this build image."
+  exit 1
 fi
 
 echo "Rust toolchain ready: $(cargo --version)"
