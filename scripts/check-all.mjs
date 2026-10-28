@@ -35,6 +35,7 @@ const GATES = [
   { name: 'Module boundaries', script: 'check-module-boundaries.mjs' },
   { name: 'Licence consistency', script: 'check-license.mjs' },
   { name: 'Cloudflare headers', script: 'generate-cloudflare-headers.mjs', args: ['--check'] },
+  { name: 'GitHub workflows', script: 'check-workflows.mjs' },
 ];
 
 const results = [];

@@ -9,8 +9,13 @@
 #   CLOUDFLARE_API_TOKEN  — a token with the permission "Cloudflare Pages: Edit"
 #   CLOUDFLARE_ACCOUNT_ID — the id of the account (dashboard → Workers & Pages)
 #
-# The workflow only runs when the secret is present, so the repository stays
-# usable without a Cloudflare account.
+# WHY the credentials are read in a step and not in the job condition:
+# GitHub evaluates the condition of a job before the secrets exist, and
+# rejects a workflow file that reads `secrets` there. The secret therefore
+# goes into the environment of the job, and the step reads it from there.
+#
+# Without a token the workflow skips itself — the repository stays usable
+# without a Cloudflare account.
 
 name: Deploy to Cloudflare Pages
 
@@ -45,32 +50,47 @@ jobs:
     name: Deploy to Cloudflare Pages
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    # Without a token there is nothing to deploy to. The workflow skips
-    # itself instead of failing — the repository must stay usable without a
-    # Cloudflare account.
-    if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
+      - name: Check the credentials
+        id: credentials
+        run: |
+          if [ -z "${CLOUDFLARE_API_TOKEN}" ] || [ -z "${CLOUDFLARE_ACCOUNT_ID}" ]; then
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No Cloudflare credentials in the repository settings — the deployment is skipped."
+          else
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout
+        if: steps.credentials.outputs.available == 'true'
         uses: actions/checkout@v4
 
       - name: Setup Node
+        if: steps.credentials.outputs.available == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
 
       - name: Setup Rust toolchain
+        if: steps.credentials.outputs.available == 'true'
         uses: dtolnay/rust-toolchain@stable
         with:
           targets: wasm32-unknown-unknown
 
       - name: Install dependencies
+        if: steps.credentials.outputs.available == 'true'
         run: npm ci
 
       - name: Build the WebAssembly module of the shared base
+        if: steps.credentials.outputs.available == 'true'
         run: node scripts/build-wasm.mjs
 
       - name: Build the shell
+        if: steps.credentials.outputs.available == 'true'
         # The shell is served from the root of the Pages project, so the
         # base path is empty here. On GitHub Pages it was `/Phomu`.
         env:
@@ -78,11 +98,13 @@ jobs:
         run: npm run build
 
       - name: Check the security headers
+        if: steps.credentials.outputs.available == 'true'
         # The `_headers` file has to match the source of truth, otherwise
         # the deployed site would be protected differently from the source.
         run: node scripts/generate-cloudflare-headers.mjs --check
 
       - name: Upload the Pages artefact
+        if: steps.credentials.outputs.available == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

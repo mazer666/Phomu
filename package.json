@@ -32,6 +32,7 @@
     "check:file-size:test": "node scripts/check-file-size.test.mjs",
     "check:doc-language": "node scripts/check-doc-language.mjs",
     "generate:cloudflare-headers": "node scripts/generate-cloudflare-headers.mjs",
+    "check:workflows": "node scripts/check-workflows.mjs",
     "check:cloudflare-headers": "node scripts/generate-cloudflare-headers.mjs --check",
     "check:license": "node scripts/check-license.mjs",
     "check:crate-boundaries": "node scripts/check-crate-boundaries.mjs",
