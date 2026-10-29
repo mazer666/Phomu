@@ -126,11 +126,20 @@ core, the bridges and the proof that both play the same game.
 
 ### Changed — the address of the game
 
-The Pages project carries the name of the product now, so the game is
-reachable at **https://phomu.pages.dev**. The rename keeps the deployments
-and moves the address with them — the old address (`supermazerworld.pages.dev`)
-stops answering. The deployment workflow performs the rename itself before
-the upload, and it does nothing once the project carries the wanted name.
+The game is reachable at **https://phomu.pages.dev** now.
+
+The address of a Pages project is fixed when the project is created — the
+subdomain cannot be changed afterwards (the known issues of the Cloudflare
+documentation). The deployment workflow therefore does not rename a project
+to change its address; it does the opposite: a project that carries the
+wanted name but serves the wrong address gives the name back, and the upload
+creates the project with the wanted name — and with the address that belongs
+to it.
+
+The project that was created as `supermazerworld` keeps its address and its
+deployments of the past. It can be deleted in the dashboard once the new
+project is in place. The new project has no Git integration — the GitHub
+workflow is the only deployer.
 
 ### Changed — the licence is now AGPL-3.0-or-later
 

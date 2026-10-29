@@ -108,6 +108,28 @@ stays usable without a Cloudflare account.
 
 ## 3. The three steps that need your account
 
+### 3.0 The address of a project is fixed when it is created
+
+The address of a Pages project — `<name>.pages.dev` — **cannot be changed
+afterwards**. The known issues of the Cloudflare documentation say it
+plainly: *"If you need to change your `*.pages.dev` subdomain, delete your
+project and create a new one."*
+
+A renamed project keeps its old address. The deployment workflow therefore
+does not rename a project to change its address — it does the opposite: a
+project that carries the wanted name but serves the wrong address **gives
+the name back**, and the upload creates the project with the wanted name —
+and with the address that belongs to it.
+
+Two consequences for this repository:
+
+- the project of the account that was created as `supermazerworld` still
+  serves `supermazerworld.pages.dev`. It holds the deployments of the past
+  and can be deleted in the dashboard once the new project is in place.
+- the new project `phomu` has **no Git integration** — the GitHub workflow
+  is the only deployer. That is the intended state: the Pages build image
+  has no Rust toolchain, and the workflow brings its own.
+
 ### 3.1 Create the account and the project
 
 1. Create an account at <https://dash.cloudflare.com/sign-up>.
