@@ -14,7 +14,7 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { RoundQuestion, SongIdentity } from '@/core/types';
-import { applyCheat, submit, yearScale } from '@/core/session-service';
+import { applyCheat, dropTimelineYear, submit } from '@/core/session-service';
 import { useGameStore } from '@/stores/game-store';
 import { MusicPlayer } from '../MusicPlayer';
 import { TimelineHeader } from './TimelineHeader';
@@ -26,11 +26,9 @@ import {
 } from './timeline-hints';
 import {
   TIMELINE_CHEAT_PENALTIES,
-  TIMELINE_INITIAL_YEAR_COUNT,
   describeTimelineSlot,
   isTimelineSlotCorrect,
   nextTimelineSlot,
-  randomInitialYears,
   resolveTimelineOutcome,
   slotFromNumberKey,
   timelineAnswerSeconds,
@@ -75,30 +73,11 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
     [i18n.language]
   );
 
-  // The scale of the catalogue — the years the timeline may start with.
-  const [scale, setScale] = useState<number[]>([]);
-
-  useEffect(() => {
-    let cancelled = false;
-    const load = async () => {
-      try {
-        const years = await yearScale();
-        if (!cancelled) setScale(years);
-      } catch (failure) {
-        console.error('the year scale could not be loaded', failure);
-      }
-    };
-    void load();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  useEffect(() => {
-    if (timelineYears.length === 0 && scale.length > 0) {
-      initTimeline(randomInitialYears(scale, TIMELINE_INITIAL_YEAR_COUNT));
-    }
-  }, [initTimeline, timelineYears.length, scale]);
+  // WHY the timeline is not started here: the core owns the rule of the
+  // timeline, and it builds the slots and the possible points of the round
+  // from the timeline it knows. The years therefore have to reach the core
+  // before the card is drawn — the hook of the core session does that
+  // (`src/hooks/useCoreSession.ts`).
 
   // The slots come from the core: they depend on the year of the song, and
   // the year is the answer of the mode.
@@ -175,7 +154,16 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
     onAnswer,
   ]);
 
-  function handleRemoveYear(year: number) {
+  async function handleRemoveYear(year: number) {
+    // WHY the core comes first: the core owns the timeline — it evaluates
+    // the next answer against it. If it refuses the removal, the shell
+    // keeps the year; otherwise the two timelines would drift apart.
+    try {
+      await dropTimelineYear(year);
+    } catch (failure) {
+      console.error('the year could not be removed from the timeline', failure);
+      return;
+    }
     removeTimelineYear(year);
     setRemovalState('done');
   }

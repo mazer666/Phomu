@@ -22,7 +22,8 @@ import { act, createElement, useEffect } from 'react';
 import { createRoot, type Root } from 'react-dom/client';
 
 import { useGameStore } from '@/stores/game-store';
-import type { RoundQuestion } from '@/core/types';
+import { CoreError } from '@/core/errors';
+import type { RoundQuestion, RoundReveal } from '@/core/types';
 import { useCoreRound, type CoreRound } from './useCoreSession';
 
 // The base of the product is replaced by spies — the test makes it fail on
@@ -31,7 +32,10 @@ const core = vi.hoisted(() => ({
   openSession: vi.fn(),
   drawRandom: vi.fn(),
   reveal: vi.fn(),
+  timeout: vi.fn(),
   advance: vi.fn(),
+  yearScale: vi.fn(),
+  startTimeline: vi.fn(),
 }));
 
 vi.mock('@/core/session-service', () => core);
@@ -52,6 +56,10 @@ function Probe() {
 
 /**
  * A question of a round, as the core hands it over.
+ *
+ * WHY the years are on the question: the core owns the timeline of the
+ * round and hands it over with the question — the shell draws what the core
+ * knows.
  *
  * @returns The question of the fixture
  */
@@ -78,11 +86,31 @@ function questionOf(): RoundQuestion {
       endSeconds: 0,
     },
     context: {
-      timelineYears: [],
-      timelineSlots: [],
+      timelineYears: [1970, 1980, 1990],
+      timelineSlots: [0, 1, 2, 3],
       genre: 'Rock',
       pack: null,
     },
+  };
+}
+
+/**
+ * A reveal of a round, as the core hands it over.
+ *
+ * @returns The reveal of the fixture
+ */
+function revealOf(): RoundReveal {
+  return {
+    phase: 'reveal',
+    roundNumber: 1,
+    mode: 'timeline',
+    title: 'Example Song',
+    artist: 'The Example',
+    year: 1985,
+    isCorrect: false,
+    pointsAwarded: 0,
+    timelineYears: [1970, 1980, 1990],
+    song: null,
   };
 }
 
@@ -125,13 +153,16 @@ describe('the session of the core', () => {
       autoDraw: false,
     });
     core.drawRandom.mockResolvedValue(questionOf());
-    core.reveal.mockResolvedValue(null);
+    core.reveal.mockResolvedValue(revealOf());
+    core.timeout.mockResolvedValue(revealOf());
     core.advance.mockResolvedValue({
       phase: 'drawing',
       roundNumber: 2,
       mode: 'timeline',
       autoDraw: false,
     });
+    core.yearScale.mockResolvedValue([1970, 1980, 1990, 2000, 2010]);
+    core.startTimeline.mockImplementation(async (years: number[]) => years);
 
     useGameStore.getState().initSession();
 
@@ -240,5 +271,61 @@ describe('the session of the core', () => {
     // The stored state of the shell must not carry it.
     const stored = window.localStorage.getItem('phomu-game-state');
     expect(stored).not.toContain('game.error.coreUnavailable');
+  });
+
+  it('hands the timeline of the round to the core before the card is drawn', async () => {
+    await mountHook(root);
+
+    // WHY: the core builds the slots and the possible points of the round
+    // from the timeline it knows. A timeline that arrives after the draw
+    // leaves the round with the points of an empty timeline.
+    expect(core.startTimeline).toHaveBeenCalledTimes(1);
+    const years = core.startTimeline.mock.calls[0][0] as number[];
+    expect(years).toHaveLength(3);
+    expect(useGameStore.getState().timelineYears).toEqual(years);
+
+    await run(() => commands!.drawCard());
+
+    // The core knew the timeline before the song was drawn.
+    expect(core.startTimeline.mock.invocationCallOrder[0]).toBeLessThan(
+      core.drawRandom.mock.invocationCallOrder[0]
+    );
+  });
+
+  it('does not hand the timeline to the core twice', async () => {
+    await mountHook(root);
+    await run(() => commands!.drawCard());
+    await run(() => commands!.closeRound());
+
+    // WHY: the core owns the timeline once it knows it. A second
+    // initialisation would throw the grown timeline away.
+    expect(core.startTimeline).toHaveBeenCalledTimes(1);
+  });
+
+  it('closes a round without an answer with the timeout of the core', async () => {
+    core.reveal.mockRejectedValue(
+      new CoreError(1102, 'errors.answersNotLocked', 'phase=question')
+    );
+
+    await mountHook(root);
+    await run(() => commands!.releaseSolution());
+
+    // WHY: the base releases the solution only after the answers are locked
+    // in. A round that nobody answered is closed with the timeout.
+    expect(core.timeout).toHaveBeenCalledTimes(1);
+    expect(useGameStore.getState().currentReveal).not.toBeNull();
+    expect(useGameStore.getState().error).toBeNull();
+  });
+
+  it('reports a timeout of the core that fails as well', async () => {
+    core.reveal.mockRejectedValue(
+      new CoreError(1102, 'errors.answersNotLocked', 'phase=question')
+    );
+    core.timeout.mockRejectedValue(new Error('CoreError: timeout refused'));
+
+    await mountHook(root);
+    await run(() => commands!.releaseSolution());
+
+    expect(useGameStore.getState().error).toBe('game.error.revealFailed');
   });
 });

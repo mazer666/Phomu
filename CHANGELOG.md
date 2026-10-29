@@ -88,6 +88,25 @@ core, the bridges and the proof that both play the same game.
 
 ### Fixed
 
+- **The Timeline mode was broken from the first card.** The shell kept the
+  years of the timeline in its own state and never handed them to the shared
+  core, so the core evaluated the answer against an empty timeline: every
+  placement but the first was refused (`errors.invalidAnswer`), the answer
+  never reached the core, and the solution of the round could not be
+  released afterwards — the player saw the message *"The solution could not
+  be shown."* The shell now hands the three starting years to the
+  core **before** the card is drawn (the core builds the slots and the
+  possible points of the round from the timeline it knows — the round
+  promised one point instead of four), takes the timeline of the round from
+  the question it receives, and tells the core about a year the player
+  removes.
+- **A round that nobody answered could not be closed.** The core releases
+  the solution only after the answers are locked in; the shell offered the
+  reveal before the answer had arrived. The reveal now falls back to the
+  timeout of the core, which locks the round and releases the solution in
+  one go. The timer of the round tells the core as well — a round that the
+  shell only revealed on the screen stayed in the phase `question` inside
+  the core, and the core refused to close it afterwards.
 - The **anti-spoiler lock** was not enforced in the shared core: the lock flag
   was set but a further answer was still accepted. The lock is now enforced in
   the state machine, and the round enters the phase `locked-in`. That closes

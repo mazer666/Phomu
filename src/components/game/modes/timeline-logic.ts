@@ -23,35 +23,21 @@ import {
   CHEAT_PENALTY_TIMELINE_JOKER,
 } from '@/utils/mode-rules';
 
-/** The number of years the timeline starts with. */
-export const TIMELINE_INITIAL_YEAR_COUNT = 3;
+/**
+ * The years the timeline starts with.
+ *
+ * WHY they live in `@/core/timeline`: the shell hands the years to the core
+ * before the card is drawn — the core builds the slots and the possible
+ * points of the round from the timeline it knows. The mode and the hook
+ * therefore need the same rule.
+ */
+export { TIMELINE_INITIAL_YEAR_COUNT, randomInitialYears } from '@/core/timeline';
 
 /** The penalty of every cheat the Timeline mode offers. */
 export const TIMELINE_CHEAT_PENALTIES = {
   'timeline-decade-hint': CHEAT_PENALTY_TIMELINE_DECADE,
   'timeline-joker': CHEAT_PENALTY_TIMELINE_JOKER,
 } as const;
-
-/**
- * The years the timeline starts with.
- *
- * WHY the shell picks them: the years come from the catalogue, and the
- * catalogue lives in the core. The shell asks for the scale and hands the
- * three years to the core, which owns the rule of the timeline.
- *
- * @param scale - The years of the catalogue.
- * @param count - The number of years the timeline starts with.
- * @param random - The source of the randomness, for the tests.
- * @returns The chosen years, in ascending order.
- */
-export function randomInitialYears(
-  scale: readonly number[],
-  count: number,
-  random: () => number = Math.random
-): number[] {
-  const shuffled = [...scale].sort(() => random() - 0.5);
-  return shuffled.slice(0, count).sort((a, b) => a - b);
-}
 
 /**
  * The number of slots the timeline has: one more than the number of years.

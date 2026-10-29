@@ -87,7 +87,7 @@ export default function GamePage() {
   // The core owns the round: it draws the songs, evaluates the answers and
   // releases the solution. The shell never holds the catalogue
   // (docs/qa/QA-02-SPOILER-FREENESS.md, QA-SPO-001).
-  const { drawCard, releaseSolution, closeRound } = useCoreRound();
+  const { drawCard, releaseSolution, endRoundWithoutAnswer, closeRound } = useCoreRound();
 
   // ── Time updater for the progress bar ─────────────────────────────
   useEffect(() => {
@@ -232,11 +232,16 @@ export default function GamePage() {
   }, [initSession, router, t]);
 
   // ── Timer expired ──────────────────────────────────────────
-  const handleTimeUp = useCallback(() => {
-    if (roundPhase === 'question') {
-      advancePhase('reveal');
-    }
-  }, [roundPhase, advancePhase]);
+  const handleTimeUp = useCallback(async () => {
+    if (roundPhase !== 'question') return;
+    // WHY the core first: the core owns the phase of the round. A round
+    // that the shell only reveals on the screen stays in the phase
+    // `question` inside the core — and the core refuses to close such a
+    // round afterwards. The timeout of the core locks the round and
+    // releases the solution in one go.
+    await endRoundWithoutAnswer();
+    advancePhase('reveal');
+  }, [roundPhase, advancePhase, endRoundWithoutAnswer]);
 
   // ── Reroll trigger ───────────────────────────────────────────
   const handleReroll = useCallback(() => {

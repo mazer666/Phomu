@@ -25,11 +25,13 @@ import {
   drawRoundById,
   endGame,
   initTimeline,
+  addTimelineYear as addTimelineYearInBase,
   nextRound,
   removeTimelineYear,
   revealRound,
   startGame,
   submitChoice,
+  timeoutRound,
 } from './phomu-core';
 import { catalogueYearScaleOfBase, openCatalogue } from './catalogue-service';
 import type {
@@ -176,6 +178,24 @@ export async function dropTimelineYear(year: number): Promise<number[]> {
 }
 
 /**
+ * Adds a year to the timeline of the round.
+ *
+ * WHY the command exists: the core adds the year of a correct answer on its
+ * own. The shell adds a year in one case only — when the player takes a
+ * year away and puts it back. The core has to learn about it, otherwise the
+ * two timelines drift apart.
+ *
+ * @param year - The year that is added.
+ * @returns The years of the timeline.
+ */
+export async function addTimelineYear(year: number): Promise<number[]> {
+  if (session === null) {
+    throw new Error('no game is running');
+  }
+  return addTimelineYearInBase(session, year);
+}
+
+/**
  * Uses a cheat of the round.
  *
  * @param kind - The cheat the player uses.
@@ -214,6 +234,24 @@ export async function reveal(): Promise<RoundReveal> {
     throw new Error('no game is running');
   }
   return revealRound(session);
+}
+
+/**
+ * Ends the question round without an answer — the timeout.
+ *
+ * WHY the command exists: the core refuses to release the solution while the
+ * answers are not locked in (C-3). A round that nobody answered — because
+ * the round timed out, because the table skipped the answer or because a
+ * card was mis-scanned — still has to be closed. The timeout locks the round
+ * and releases the solution in one go.
+ *
+ * @returns The reveal of the round.
+ */
+export async function timeout(): Promise<RoundReveal> {
+  if (session === null) {
+    throw new Error('no game is running');
+  }
+  return timeoutRound(session);
 }
 
 /**

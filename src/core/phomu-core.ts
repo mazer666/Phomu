@@ -17,10 +17,12 @@
 
 import init, {
   phomu_abi_version,
+  phomu_session_add_timeline_year,
   phomu_session_cheat,
   phomu_session_disclose,
   phomu_session_init_timeline,
   phomu_session_remove_timeline_year,
+  phomu_session_timeout,
   phomu_session_draw,
   phomu_session_draw_by_id,
   phomu_session_end,
@@ -41,83 +43,15 @@ import type {
   RoundView,
   SongIdentity,
 } from './types';
+import { callBridge, CoreError, parseBridge } from './errors';
 
 /**
  * The failure of the base, as the shell reads it.
  *
- * WHY the code and the key and not a sentence: the base supplies the keys,
- * the shell supplies the texts (docs/design/BUILD-CONTRACT.md § 6.1).
+ * WHY it is re-exported here: the bridge and its failures belong together —
+ * the callers of the base reach for the same module.
  */
-export class CoreError extends Error {
-  /** The stable numeric code of the failure. */
-  readonly code: number;
-  /** The i18n message key of the failure. */
-  readonly messageKey: string;
-
-  constructor(code: number, messageKey: string, reason: string) {
-    super(`${messageKey}: ${reason}`);
-    this.name = 'CoreError';
-    this.code = code;
-    this.messageKey = messageKey;
-  }
-}
-
-/** The document the bridge throws when the base refuses a command. */
-interface BridgeFailure {
-  code?: number;
-  messageKey?: string;
-  context?: Record<string, string>;
-}
-
-/**
- * Turns the failure of the bridge into a [`CoreError`].
- *
- * WHY the bridge throws a JSON document: the wire format of the bridge is
- * JSON (BRIDGE-110). The shell reads the code and the key out of it.
- */
-function toCoreError(failure: unknown): CoreError {
-  if (typeof failure === 'string') {
-    try {
-      const parsed = JSON.parse(failure) as BridgeFailure;
-      const context = parsed.context ?? {};
-      const reason = Object.entries(context)
-        .map(([key, value]) => `${key}=${value}`)
-        .join(' ');
-      return new CoreError(
-        parsed.code ?? 0,
-        parsed.messageKey ?? 'errors.generic',
-        reason
-      );
-    } catch {
-      return new CoreError(0, 'errors.generic', failure);
-    }
-  }
-  return new CoreError(0, 'errors.generic', String(failure));
-}
-
-/**
- * Runs a call into the base and turns its failure into a [`CoreError`].
- *
- * WHY the helper is exported: every call into the module crosses the same
- * boundary and fails the same way.
- */
-export function callBridge<T>(action: () => T): T {
-  try {
-    return action();
-  } catch (failure) {
-    throw toCoreError(failure);
-  }
-}
-
-/**
- * Parses a payload of the bridge.
- *
- * WHY the cast: the bridge marshals the values of the base into JSON. The
- * types of this module describe that wire format.
- */
-export function parseBridge<T>(document: string): T {
-  return JSON.parse(document) as T;
-}
+export { CoreError, callBridge, parseBridge } from './errors';
 
 /** The URL of the WebAssembly module. */
 function moduleUrl(): string {
@@ -233,6 +167,38 @@ export function removeTimelineYear(handle: bigint, year: number): number[] {
     );
     return payload.timelineYears;
   });
+}
+
+/**
+ * Adds a year to the timeline of the round.
+ *
+ * WHY the command exists: the shell removes a year from the timeline when
+ * the player may take one away (GAME-020). The core owns the timeline, so
+ * the shell has to tell it — otherwise the two timelines drift apart and the
+ * core evaluates the next answer against years that are not on the screen.
+ */
+export function addTimelineYear(handle: bigint, year: number): number[] {
+  return callBridge(() => {
+    const payload = parseBridge<{ timelineYears: number[] }>(
+      phomu_session_add_timeline_year(handle, year)
+    );
+    return payload.timelineYears;
+  });
+}
+
+/**
+ * Ends the question round without an answer — the timeout.
+ *
+ * WHY the command exists: a round that nobody answered has to be closable.
+ * The reveal of the core refuses a round whose answers are not locked in
+ * (C-3), so the shell needs a command that locks the round and releases the
+ * solution in one go.
+ *
+ * @param handle - The handle of the session.
+ * @returns The reveal of the round.
+ */
+export function timeoutRound(handle: bigint): RoundReveal {
+  return callBridge(() => parseBridge<RoundReveal>(phomu_session_timeout(handle)));
 }
 
 /**
