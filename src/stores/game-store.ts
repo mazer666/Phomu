@@ -6,8 +6,8 @@
  * the lobby configuration.
  *
  * WHAT: the store is the composition of the slices — the players, the
- * rounds, the teams, the timeline and the preferences. Every slice owns one
- * part of the state, and this file puts them together.
+ * rounds, the teams, the timeline, the preferences and the failures. Every
+ * slice owns one part of the state, and this file puts them together.
  *
  * WHY the slices live apart: the store had grown into one file with every
  * kind of state of the shell. The slices make the parts readable on their
@@ -26,6 +26,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import { createInitialState } from './game-initial-state';
+import { createErrorActions } from './game-store-errors';
 import { createPlayerActions } from './game-store-players';
 import { createPreferenceActions } from './game-store-preferences';
 import { createRoundActions } from './game-store-rounds';
@@ -52,11 +53,17 @@ export const useGameStore = create<GameStore>()(
       ...createTeamActions(set, get),
       ...createTimelineActions(set),
       ...createPreferenceActions(set),
+      ...createErrorActions(set),
     }),
 
     {
       name: 'phomu-game-state',
       // Now also persist the progression data
+      //
+      // WHY the failure is not persisted: a failure is a state of the
+      // running session, not a progress. A player who reloads the page gets
+      // a fresh attempt — and a failure of the last session would be
+      // nonsense in the new one.
       partialize: (state) => ({
         players: state.players,
         teams: state.teams,

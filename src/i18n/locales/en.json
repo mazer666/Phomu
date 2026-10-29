@@ -1155,6 +1155,17 @@
       "subline11": "Chips and self-pity next. But first: the round.",
       "headline12": "TIME IS UP",
       "subline12": "The clock stopped ticking. The round goes on anyway."
+    },
+    "error": {
+      "title": "The game ran into a problem",
+      "generic": "Something went wrong.",
+      "coreUnavailable": "The game could not be started.",
+      "drawFailed": "The next card could not be drawn.",
+      "revealFailed": "The solution could not be shown.",
+      "roundFailed": "The round could not be closed.",
+      "advice": "Reload the game. If the problem remains, contact the administrator.",
+      "reload": "Reload",
+      "dismiss": "Dismiss the message"
     }
   },
   "gameover": {

@@ -19,6 +19,7 @@ import { useGameStore } from '@/stores/game-store';
 import { useCoreRound } from '@/hooks/useCoreSession';
 import { useOrientation } from '@/hooks/useOrientation';
 import { GameHeader } from '@/components/game/GameHeader';
+import { GameErrorBanner } from '@/components/game/GameErrorBanner';
 import { GamePhaseArea } from '@/components/game/GamePhaseArea';
 import { GameBody } from '@/components/game/GameBody';
 import { GameFloatingActions } from '@/components/game/GameFloatingActions';
@@ -313,6 +314,9 @@ export default function GamePage() {
         onTimeUp={handleTimeUp}
         onExit={handleExit}
       />
+
+      {/* The failure of the game — the player sees it instead of a dead button */}
+      <GameErrorBanner />
 
       {/* Body: the phase of the round, in the landscape next to the scoreboard */}
       <GameBody

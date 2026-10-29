@@ -45,5 +45,8 @@ export function createInitialState(): GameState {
     autoDrawIntent: false,
     timelineYears: [],
     gameStartTime: null,
+    // A fresh session has no failure — the first one is reported by the core.
+    error: null,
+    errorValues: null,
   };
 }

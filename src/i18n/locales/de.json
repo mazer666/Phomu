@@ -1155,6 +1155,17 @@
       "subline11": "Dann Chips und Selbstmitleid. Aber erst die Runde.",
       "headline12": "ZEIT IST UM",
       "subline12": "Die Uhr hat aufgehört zu ticken. Die Runde läuft trotzdem."
+    },
+    "error": {
+      "title": "Das Spiel hat ein Problem",
+      "generic": "Etwas ist schiefgelaufen.",
+      "coreUnavailable": "Das Spiel konnte nicht gestartet werden.",
+      "drawFailed": "Die nächste Karte konnte nicht gezogen werden.",
+      "revealFailed": "Die Lösung konnte nicht angezeigt werden.",
+      "roundFailed": "Die Runde konnte nicht beendet werden.",
+      "advice": "Lade das Spiel neu. Bleibt das Problem bestehen, wende dich an den Administrator.",
+      "reload": "Neu laden",
+      "dismiss": "Meldung schließen"
     }
   },
   "gameover": {

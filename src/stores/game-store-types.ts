@@ -118,6 +118,20 @@ export interface GameActions {
 
   /** Removes a year from the timeline (first occurrence) */
   removeTimelineYear: (year: number) => void;
+
+  /**
+   * Reports a failure of the game — the player sees it.
+   *
+   * @param message - The translation key of the failure
+   * @param values - The values of the placeholders of the message
+   */
+  setError: (
+    message: string,
+    values?: Record<string, string | number>
+  ) => void;
+
+  /** Removes the failure of the game from the screen */
+  clearError: () => void;
 }
 
 /** Complete store type = state + actions */

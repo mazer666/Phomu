@@ -238,4 +238,21 @@ export interface GameState {
 
   /** Timestamp when the game started (for time-based ending condition) */
   gameStartTime: number | null;
+
+  /**
+   * The last failure of the game, or null. The player sees it.
+   *
+   * WHY a translation key and not the text of the failure: the shell speaks
+   * two languages, and the technical text of a failure (a stack, a file
+   * path) belongs in the console. The player gets a message he can act on.
+   */
+  error: string | null;
+
+  /**
+   * The values of the placeholders of the message of the failure.
+   *
+   * WHY a second field: the key names the failure, the values fill its
+   * placeholders. A failure without values carries `null` here.
+   */
+  errorValues: Record<string, string | number> | null;
 }
