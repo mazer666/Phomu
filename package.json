@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build:catalogue": "node scripts/build-catalogue.mjs",
+    "check:config-vocabulary": "node scripts/check-config-vocabulary.mjs",
     "check:catalogue": "node scripts/build-catalogue.mjs --check",
     "build:wasm": "node scripts/build-wasm.mjs",
     "prebuild": "npm run build:catalogue && npm run build:wasm",

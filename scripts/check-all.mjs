@@ -37,6 +37,7 @@ const GATES = [
   { name: 'Cloudflare headers', script: 'generate-cloudflare-headers.mjs', args: ['--check'] },
   { name: 'GitHub workflows', script: 'check-workflows.mjs' },
   { name: 'Catalogue artefact', script: 'build-catalogue.mjs', args: ['--check'] },
+  { name: 'Configuration names', script: 'check-config-vocabulary.mjs' },
 ];
 
 const results = [];

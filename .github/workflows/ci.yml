@@ -204,6 +204,11 @@ jobs:
         # changes and the artefact is not rebuilt, the shell refuses to open
         # the catalogue and the round does nothing.
         run: npm run check:catalogue
+      - name: Gate — configuration names
+        if: always()
+        # The configuration crosses the bridge as strings. When the shell and
+        # the base name a value differently, the game refuses to start.
+        run: npm run check:config-vocabulary
       # The link matcher decides whether a catalogue link points at the right
       # song. Its self-test asserts every tolerance against a real catalogue
       # entry: a relaxed rule without an example fails the job.

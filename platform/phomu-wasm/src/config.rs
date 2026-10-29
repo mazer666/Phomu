@@ -61,7 +61,7 @@ fn hint_release_policy_name(policy: HintReleasePolicy) -> &'static str {
 /// The name of the queue strategy.
 fn ai_queue_strategy_name(strategy: AiQueueStrategy) -> &'static str {
     match strategy {
-        AiQueueStrategy::QueueRetryPending => "queue-retry",
+        AiQueueStrategy::QueueRetryPending => "queue-retry-pending",
         AiQueueStrategy::FailFast => "fail-fast",
     }
 }
@@ -191,7 +191,7 @@ pub fn to_core_config(config: &Value) -> Result<GameConfig, BridgeError> {
     )
     .as_str()
     {
-        "queue-retry" => AiQueueStrategy::QueueRetryPending,
+        "queue-retry-pending" => AiQueueStrategy::QueueRetryPending,
         "fail-fast" => AiQueueStrategy::FailFast,
         other => return Err(invalid("aiQueueStrategy", other)),
     };
