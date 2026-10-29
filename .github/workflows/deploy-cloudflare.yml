@@ -121,15 +121,23 @@ jobs:
         # the deployed site would be protected differently from the source.
         run: node scripts/generate-cloudflare-headers.mjs --check
 
-      - name: Free the name of the project
+      - name: Prepare the project
+        id: project
         if: steps.credentials.outputs.available == 'true'
         # WHY: the address of a Pages project is fixed when the project is
         # created — the subdomain cannot be changed afterwards (the known
         # issues of the Pages documentation). A project that was renamed
-        # keeps its old address, so it carries the wanted name without
-        # serving the wanted address. Such a project gives the name back:
-        # the upload then creates the project with the wanted name — and
-        # with the address that belongs to it.
+        # keeps its old address, so it can carry the wanted name without
+        # serving the wanted address.
+        #
+        # The step decides which project the upload goes to:
+        #   1. the wanted name and the wanted address → that project
+        #   2. the wanted name and the wrong address → the name goes back,
+        #      the project is created anew (and the address belongs to it)
+        #   3. the wanted name is free → the project is created
+        #   4. the project cannot be created → the project that exists is
+        #      used, and the reason is reported as an annotation. The
+        #      deployment never fails because of an address.
         run: |
           target="${CLOUDFLARE_PROJECT_NAME}"
           legacy="${CLOUDFLARE_LEGACY_PROJECT_NAME}"
@@ -139,56 +147,58 @@ jobs:
             -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
             "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects")
           echo "${projects}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log("The projects of this account: "+(j.result||[]).map(p=>`${p.name} (${p.subdomain||"?"})`).join(", "))})'
-          entry=$(echo "${projects}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);const p=(j.result||[]).find(x=>x.name===process.argv[1]);console.log(p?`${p.name} ${p.subdomain||""}`:"")})' "${target}")
-          name=$(echo "${entry}" | cut -d' ' -f1)
-          subdomain=$(echo "${entry}" | cut -d' ' -f2)
-          if [ -z "${name}" ]; then
-            echo "The name '${target}' is free — the upload creates the project."
+          field=$(echo "${projects}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);const p=(j.result||[]).find(x=>x.name===process.argv[1]);console.log(p?`${p.subdomain||""}`:"")})' "${target}")
+          if [ "${field}" = "${target}.pages.dev" ]; then
+            echo "The project '${target}' serves '${field}' — the upload goes there."
+            echo "name=${target}" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          if [ "${subdomain}" = "${target}.pages.dev" ]; then
-            echo "The project '${target}' serves '${subdomain}' — nothing to do."
-            exit 0
+          if [ -n "${field}" ]; then
+            # The name is taken by a project with the wrong address: the name
+            # goes back to the legacy name, so that the wanted name can be
+            # used again.
+            taken=$(echo "${projects}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);const p=(j.result||[]).find(x=>x.name===process.argv[1]);console.log(p?"taken":"free")})' "${legacy}")
+            if [ "${taken}" = "free" ]; then
+              echo "The project '${target}' serves '${field}' — the name goes back to '${legacy}'."
+              # WHY the payload in a variable: the escaped quotes of a JSON
+              # document are unescaped twice inside a command substitution —
+              # the shell would read the payload as broken quotes.
+              payload=$(printf '{"name":"%s"}' "${legacy}")
+              renamed=$(curl -sS -X PATCH \
+                -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+                -H "Content-Type: application/json" \
+                --data "${payload}" \
+                "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/${target}")
+              echo "${renamed}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log(j.success?"The name is free.":"::error::The rename failed: "+JSON.stringify(j.errors));process.exit(j.success?0:1)})'
+            fi
           fi
-          if [ -z "${legacy}" ] || [ "${legacy}" = "${target}" ]; then
-            echo "::error::The project '${name}' serves '${subdomain}' and the name '${target}' cannot be freed without a second name."
-            exit 1
-          fi
-          taken=$(echo "${projects}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);const p=(j.result||[]).find(x=>x.name===process.argv[1]);console.log(p?"taken":"free")})' "${legacy}")
-          if [ "${taken}" = "taken" ]; then
-            echo "::error::The name '${legacy}' is taken as well — the project '${name}' keeps its address '${subdomain}'."
-            exit 1
-          fi
-          echo "The project '${name}' serves '${subdomain}' — the name goes back to '${legacy}'."
-          renamed=$(curl -sS -X PATCH \
+          # The wanted name is free: the project is created. The creation is
+          # a separate command, so that a token that may not create projects
+          # is reported instead of failing the upload with a short message.
+          payload=$(printf '{"name":"%s","production_branch":"main"}' "${target}")
+          created=$(curl -sS -X POST \
             -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
             -H "Content-Type: application/json" \
-            --data "{\"name\":\"${legacy}\"}" \
-            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/${name}")
-          echo "${renamed}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log(j.success?"The name is free.":"::error::The rename failed: "+JSON.stringify(j.errors));process.exit(j.success?0:1)})'
-
-      - name: Check the project
-        if: steps.credentials.outputs.available == 'true'
-        # WHY: a name that does not exist in the account fails with
-        # "Project not found" (code 8000007) and the list of the projects that
-        # do exist turns the guesswork into a fact. A name that is free is
-        # not an error — the upload creates the project.
-        run: |
-          response=$(curl -sS \
-            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            --data "${payload}" \
             "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects")
-          ok=$(echo "${response}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{console.log(JSON.parse(s).success)}catch{console.log("unknown")}})')
-          if [ "${ok}" != "true" ]; then
-            echo "::error::The account ${CLOUDFLARE_ACCOUNT_ID} did not answer. Check the account id."
-            exit 1
-          fi
-          found=$(echo "${response}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log((j.result||[]).map(p=>p.name).join(", "))})')
-          echo "The projects of this account: ${found}"
-          if ! echo ",${found}," | grep -q ",${CLOUDFLARE_PROJECT_NAME},"; then
-            echo "The project '${CLOUDFLARE_PROJECT_NAME}' does not exist yet — the upload creates it. Set the repository variable CLOUDFLARE_PROJECT_NAME to one of: ${found}"
+          ok=$(echo "${created}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{console.log(JSON.parse(s).success)}catch{console.log("unknown")}})')
+          if [ "${ok}" = "true" ]; then
+            echo "The project '${target}' was created — the upload goes there."
+            echo "name=${target}" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          echo "The project '${CLOUDFLARE_PROJECT_NAME}' exists."
+          reason=$(echo "${created}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log(JSON.stringify(j.errors||j))})')
+          echo "::error::The project '${target}' could not be created: ${reason}"
+          echo "::notice::Create the project in the dashboard (Workers and Pages) and give the repository the variable CLOUDFLARE_PROJECT_NAME — then the upload goes to it."
+          # The deployment does not fail because of an address: the project
+          # that exists is used.
+          fallback=$(echo "${projects}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);const p=(j.result||[]).find(x=>x.name===process.argv[1]);console.log(p?p.name:"")})' "${legacy}")
+          if [ -z "${fallback}" ]; then
+            echo "::error::Neither the new project nor the project of the account could be used."
+            exit 1
+          fi
+          echo "The upload goes to the project '${fallback}' — it serves '${fallback}.pages.dev'."
+          echo "name=${fallback}" >> "$GITHUB_OUTPUT"
 
       - name: Upload the Pages artefact
         if: steps.credentials.outputs.available == 'true'
@@ -196,4 +206,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy out --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --branch=main
+          command: pages deploy out --project-name=${{ steps.project.outputs.name }} --branch=main
