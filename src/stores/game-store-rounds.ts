@@ -209,11 +209,6 @@ export function createRoundActions(
         roundPhase: 'question',
         playedSongIds: [...state.playedSongIds, question.songId],
         autoDrawIntent: false, // Reset flag once song is actually drawn
-        // WHY the timeline comes from the question: the core owns the rule
-        // of the timeline — it builds the slots of the round from it. The
-        // years it hands over with the question are therefore the truth;
-        // the timeline of the shell is the picture of it.
-        timelineYears: question.context?.timelineYears ?? state.timelineYears,
         // The song of the quick game is used up — the next round draws at
         // random again.
         quickSongId: null,

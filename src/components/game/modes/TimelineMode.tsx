@@ -134,11 +134,16 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
     // its decision into the steps the shell carries out.
     const outcome = resolveTimelineOutcome(result.score.isCorrect, detail);
 
-    if (outcome.kind === 'add-year' || outcome.kind === 'duplicate') {
+    // WHY the year is added in every case: the core adds the year of a
+    // correct answer to its timeline — the shell adds it to its own, so
+    // that both timelines carry the same years. A timeline that differs
+    // makes the core refuse the next answer.
+    if (outcome.kind !== 'wrong' && outcome.kind !== 'no-year') {
       addTimelineYear(outcome.year);
     }
     if (outcome.kind === 'duplicate') {
       // Duplicate → remove it right away, no intervention needed
+      // WHY no message to the core: the core removed the duplicate itself.
       removeTimelineYear(outcome.year);
     }
     if (outcome.kind === 'removal-offered') {

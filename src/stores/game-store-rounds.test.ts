@@ -163,18 +163,6 @@ describe('the round log of the store', () => {
     expect(useGameStore.getState().currentReveal).toBeNull();
   });
 
-  it('takes the timeline of the round from the core', () => {
-    const question = questionOf('s-a');
-    question.context.timelineYears = [1970, 1980, 1990];
-
-    useGameStore.getState().setQuestion(question, 'random');
-
-    // WHY: the core owns the rule of the timeline — it builds the slots of
-    // the round from it. The years it hands over with the question are the
-    // truth; the timeline of the shell is the picture of it.
-    expect(useGameStore.getState().timelineYears).toEqual([1970, 1980, 1990]);
-  });
-
   it('waits for the card of the core in the quick game', () => {
     useGameStore.getState().startQuickGame('s-42');
 
