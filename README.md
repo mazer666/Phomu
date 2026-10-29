@@ -19,6 +19,8 @@ Phomu is neither a streaming client nor a music database. It is a **game**: a mi
 of ordering, deduction and music-knowledge rounds, played with physical or virtual
 cards.
 
+https://supermazerworld.pages.dev
+
 Three things set it apart from the classic music quiz:
 
 1. **The card is the way in.** A printed QR card leads straight into the matching
