@@ -294,6 +294,20 @@ describe('the session of the core', () => {
     );
   });
 
+  it('throws away the years of the last game', async () => {
+    // WHY: the years are persisted, and the core starts every session with
+    // an empty timeline. A timeline that only the shell knows makes the
+    // core evaluate the answer against years that are not on the screen.
+    useGameStore.setState({ timelineYears: [1960, 1970, 1980] });
+
+    await mountHook(root);
+
+    const years = core.startTimeline.mock.calls[0]?.[0] as number[] | undefined;
+    expect(years).toHaveLength(3);
+    expect(years).not.toContain(1960);
+    expect(useGameStore.getState().timelineYears).toEqual(years);
+  });
+
   it('does not hand the timeline to the core twice', async () => {
     await mountHook(root);
     await run(() => commands!.drawCard());

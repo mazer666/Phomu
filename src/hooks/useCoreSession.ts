@@ -72,6 +72,7 @@ export function useCoreRound(): CoreRound {
   const setQuestion = useGameStore((state) => state.setQuestion);
   const setReveal = useGameStore((state) => state.setReveal);
   const setCurrentMode = useGameStore((state) => state.setCurrentMode);
+  const initTimeline = useGameStore((state) => state.initTimeline);
   const nextRound = useGameStore((state) => state.nextRound);
   const setError = useGameStore((state) => state.setError);
   const clearError = useGameStore((state) => state.clearError);
@@ -125,6 +126,12 @@ export function useCoreRound(): CoreRound {
           }))
         );
         setCurrentMode(view.mode);
+        // WHY the reset: the core starts every session with an empty
+        // timeline. The shell may still carry the years of the last game —
+        // they are persisted — and a timeline that only the shell knows
+        // makes the core evaluate the answer against years that are not on
+        // the screen.
+        initTimeline([]);
         await prepareTimeline();
         clearError();
       } catch (failure) {
@@ -133,7 +140,16 @@ export function useCoreRound(): CoreRound {
       }
     };
     void start();
-  }, [config, players, teams, setCurrentMode, setError, clearError, prepareTimeline]);
+  }, [
+    config,
+    players,
+    teams,
+    setCurrentMode,
+    initTimeline,
+    setError,
+    clearError,
+    prepareTimeline,
+  ]);
 
   const drawCard = useCallback(async () => {
     try {

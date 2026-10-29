@@ -101,12 +101,17 @@ core, the bridges and the proof that both play the same game.
   placement but the first was refused (`errors.invalidAnswer`), the answer
   never reached the core, and the solution of the round could not be
   released afterwards — the player saw the message *"The solution could not
-  be shown."* The shell now hands the three starting years to the
-  core **before** the card is drawn (the core builds the slots and the
-  possible points of the round from the timeline it knows — the round
-  promised one point instead of four), takes the timeline of the round from
-  the question it receives, and tells the core about a year the player
+  be shown."* The shell now hands the three starting years to the core
+  **before** the card is drawn (the core builds the slots and the possible
+  points of the round from the timeline it knows — the round promised one
+  point instead of four), and tells the core about a year the player
   removes.
+- **The years of the last game survived the next game.** The years of the
+  timeline are persisted, and the core starts every session with an empty
+  timeline. A game after another one therefore began with a timeline that
+  only the shell knew — the core evaluated the answer against years that
+  were not on the screen, and the round promised one point instead of four.
+  The shell throws the years away when the session of the core starts.
 - **A round that nobody answered could not be closed.** The core releases
   the solution only after the answers are locked in; the shell offered the
   reveal before the answer had arrived. The reveal now falls back to the
