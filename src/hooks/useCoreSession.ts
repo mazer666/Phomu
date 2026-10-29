@@ -31,6 +31,7 @@ import { useGameStore } from '@/stores/game-store';
 import { GAME_ERROR_KEYS } from '@/stores/game-store-errors';
 import {
   advance,
+  drawById,
   drawRandom,
   openSession,
   reveal,
@@ -40,6 +41,7 @@ import {
 } from '@/core/session-service';
 import { initialTimelineYears } from '@/core/timeline';
 import { isAnswersNotLocked } from '@/core/errors';
+import type { RoundQuestion } from '@/core/types';
 
 /** The commands of the round that the base owns. */
 export interface CoreRound {
@@ -136,8 +138,28 @@ export function useCoreRound(): CoreRound {
   const drawCard = useCallback(async () => {
     try {
       await prepareTimeline();
-      const question = await drawRandom();
-      setQuestion(question);
+      const state = useGameStore.getState();
+      let question: RoundQuestion;
+      if (state.quickSongId) {
+        // WHY the identifier: the player chose the song in the library, and
+        // the core owns the catalogue — it draws the song by its identifier.
+        try {
+          question = await drawById(state.quickSongId);
+        } catch (failure) {
+          // WHY the fallback: a song that the player added or changed in the
+          // library is not in the catalogue of the core. The round draws a
+          // song from the catalogue instead of ending in a dead screen.
+          console.warn(
+            'the chosen song is not in the catalogue of the core — a song is drawn instead',
+            failure
+          );
+          question = await drawRandom();
+        }
+        setQuestion(question, 'qr');
+      } else {
+        question = await drawRandom();
+        setQuestion(question, 'random');
+      }
       clearError();
     } catch (failure) {
       console.error('the song could not be drawn', failure);

@@ -88,6 +88,13 @@ core, the bridges and the proof that both play the same game.
 
 ### Fixed
 
+- **The quick game showed an empty screen.** Starting a song from the library
+  put the shell into the phase `question` without a question — the core never
+  drew a card, and the player was left in front of an empty game screen. The
+  shell waits for the card of the core now, and the core draws the song the
+  player chose (it owns the catalogue). A song that the player added or
+  changed in the library is not in the catalogue of the core — the round
+  draws a song from the catalogue instead of ending in a dead screen.
 - **The Timeline mode was broken from the first card.** The shell kept the
   years of the timeline in its own state and never handed them to the shared
   core, so the core evaluated the answer against an empty timeline: every
@@ -116,6 +123,14 @@ core, the bridges and the proof that both play the same game.
 - The **E2E smoke test** no longer fails intermittently: the Playwright
   timeout was 30 s, which is too tight on a slow file system (limitation L5 in
   [`docs/acceptance/M0-ACCEPTANCE.md`](docs/acceptance/M0-ACCEPTANCE.md)).
+
+### Changed — the address of the game
+
+The Pages project carries the name of the product now, so the game is
+reachable at **https://phomu.pages.dev**. The rename keeps the deployments
+and moves the address with them — the old address (`supermazerworld.pages.dev`)
+stops answering. The deployment workflow performs the rename itself before
+the upload, and it does nothing once the project carries the wanted name.
 
 ### Changed — the licence is now AGPL-3.0-or-later
 

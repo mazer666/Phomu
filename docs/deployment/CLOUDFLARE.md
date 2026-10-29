@@ -35,7 +35,7 @@ The repository is connected to the Pages project and Cloudflare builds it on
 every push.
 
 **Set the build command in the dashboard as well**
-(**Workers & Pages → supermazerworld → Settings → Builds & deployments**):
+(**Workers & Pages → phomu → Settings → Builds & deployments**):
 
 | Setting | Value |
 |---|---|
@@ -88,7 +88,7 @@ bash scripts/install-rust-toolchain.sh && npm run build
 and accept that the dashboard shows the build of the Git integration next to
 the deployments of the workflow. Two build paths for one project are a source
 of confusion — disconnecting the Git integration
-(**Workers & Pages → supermazerworld → Settings → Builds & deployments →
+(**Workers & Pages → phomu → Settings → Builds & deployments →
 Git → Disconnect**) leaves the workflow as the only deployer, and the
 deployments of the workflow still show up in the same list.
 
@@ -113,8 +113,8 @@ stays usable without a Cloudflare account.
 1. Create an account at <https://dash.cloudflare.com/sign-up>.
 2. Add the project: **Workers & Pages → Create application → Pages**
    - for Path A: **Connect to Git** and pick the repository
-   - for Path B: **Upload assets**, the project name has to be **`supermazerworld`** —
-     it decides the address `supermazerworld.pages.dev`; the upload dialog is left open
+   - for Path B: **Upload assets**, the project name has to be **`phomu`** —
+     it decides the address `phomu.pages.dev`; the upload dialog is left open
 3. Copy the **account id**: **Workers & Pages → your account → Account ID**
    (or the right-hand side of the dashboard).
 4. Note the **name of the project**. It has to match exactly — Cloudflare
@@ -159,11 +159,11 @@ After the first successful run:
 
 ```bash
 # The headers have to be there.
-curl -sI https://supermazerworld.pages.dev/ | grep -iE "content-security-policy|x-frame-options|strict-transport|x-content-type|referrer-policy|permissions-policy"
+curl -sI https://phomu.pages.dev/ | grep -iE "content-security-policy|x-frame-options|strict-transport|x-content-type|referrer-policy|permissions-policy"
 
 # The application has to start — the WebAssembly module is the first thing
 # the browser fetches, and the game does not run without it.
-curl -sI https://supermazerworld.pages.dev/wasm/phomu_core_bg.wasm | head -3
+curl -sI https://phomu.pages.dev/wasm/phomu_core_bg.wasm | head -3
 ```
 
 The Content-Security-Policy has to contain **`'wasm-unsafe-eval'`**. Without
@@ -186,7 +186,7 @@ is the one directive that exists only because of the shared Rust base.
 
 ## 5. A custom domain
 
-The project is reachable at `supermazerworld.pages.dev` without any further work. A
+The project is reachable at `phomu.pages.dev` without any further work. A
 custom domain needs:
 
 1. a domain in the same Cloudflare account (or a nameserver change to
@@ -229,12 +229,12 @@ independent — a failure of one does not touch the other.
 The workflow deploys on every push to `main`. To go back to the previous
 deployment:
 
-**Workers & Pages → supermazerworld → Deployments** — every deployment is listed with
+**Workers & Pages → phomu → Deployments** — every deployment is listed with
 its commit, and a previous one can be promoted again.
 
 The GitHub Pages deployment is untouched by all of this: it is a separate
 workflow, it builds the same commit, and it keeps working.
 
 The same applies to the Pages deployment: **Workers & Pages →
-supermazerworld → Deployments** lists every deployment with its commit, and an earlier one can
+phomu → Deployments** lists every deployment with its commit, and an earlier one can
 be promoted again.

@@ -42,6 +42,7 @@ export function createInitialState(): GameState {
     sfxEnabled: true,
     sfxVolume: 0.55,
     currentSongSource: null,
+    quickSongId: null,
     autoDrawIntent: false,
     timelineYears: [],
     gameStartTime: null,

@@ -174,4 +174,21 @@ describe('the round log of the store', () => {
     // truth; the timeline of the shell is the picture of it.
     expect(useGameStore.getState().timelineYears).toEqual([1970, 1980, 1990]);
   });
+
+  it('waits for the card of the core in the quick game', () => {
+    useGameStore.getState().startQuickGame('s-42');
+
+    // WHY: the phase "question" without a question left the player in front
+    // of an empty screen — the core never drew anything.
+    expect(useGameStore.getState().roundPhase).toBe('drawing');
+    expect(useGameStore.getState().quickSongId).toBe('s-42');
+  });
+
+  it('uses the song of the quick game up when the card is drawn', () => {
+    useGameStore.getState().startQuickGame('s-42');
+    useGameStore.getState().setQuestion(questionOf('s-42'), 'qr');
+
+    // The next round draws at random again.
+    expect(useGameStore.getState().quickSongId).toBeNull();
+  });
 });

@@ -214,6 +214,9 @@ export function createRoundActions(
         // years it hands over with the question are therefore the truth;
         // the timeline of the shell is the picture of it.
         timelineYears: question.context?.timelineYears ?? state.timelineYears,
+        // The song of the quick game is used up — the next round draws at
+        // random again.
+        quickSongId: null,
       }));
     },
 
@@ -275,13 +278,19 @@ export function createRoundActions(
       }
       set((state) => ({
         currentRound: 1,
-        roundPhase: 'question',
+        // WHY the phase: the shell waits for the core to draw the card. The
+        // phase "question" without a question left the player in front of an
+        // empty screen — the core never drew anything.
+        roundPhase: 'drawing',
         currentMode: state.config.selectedModes[0] ?? 'timeline',
         currentAnswers: [],
         isGameOver: false,
         winnerId: undefined,
         playedSongIds: [...state.playedSongIds, songId],
         currentSongSource: 'qr',
+        // The core draws the song the player picked — the core owns the
+        // catalogue.
+        quickSongId: songId,
       }));
     },
 

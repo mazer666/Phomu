@@ -7,12 +7,12 @@
 # `docs/adr/ADR-0010-hosting-on-cloudflare-pages.md`.
 #
 # The name of the Pages project. It decides the address
-# `supermazerworld.pages.dev` and has to match the account exactly — the
+# `phomu.pages.dev` and has to match the account exactly — the
 # workflow checks the name against the account before the upload and lists
 # the projects that do exist. Change it together with the
 # `NEXT_PUBLIC_BASE_PATH` of the build.
 
-name = "supermazerworld"
+name = "phomu"
 compatibility_date = "2026-10-01"
 
 # The build of the Cloudflare Pages project.

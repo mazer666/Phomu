@@ -31,6 +31,7 @@ import { useCoreRound, type CoreRound } from './useCoreSession';
 const core = vi.hoisted(() => ({
   openSession: vi.fn(),
   drawRandom: vi.fn(),
+  drawById: vi.fn(),
   reveal: vi.fn(),
   timeout: vi.fn(),
   advance: vi.fn(),
@@ -153,6 +154,7 @@ describe('the session of the core', () => {
       autoDraw: false,
     });
     core.drawRandom.mockResolvedValue(questionOf());
+    core.drawById.mockResolvedValue(questionOf());
     core.reveal.mockResolvedValue(revealOf());
     core.timeout.mockResolvedValue(revealOf());
     core.advance.mockResolvedValue({
@@ -327,5 +329,32 @@ describe('the session of the core', () => {
     await run(() => commands!.releaseSolution());
 
     expect(useGameStore.getState().error).toBe('game.error.revealFailed');
+  });
+
+  it('draws the song the player chose in the library', async () => {
+    useGameStore.setState({ quickSongId: 's-42' });
+
+    await mountHook(root);
+    await run(() => commands!.drawCard());
+
+    // WHY: the core owns the catalogue — it draws a song by its identifier.
+    expect(core.drawById).toHaveBeenCalledWith('s-42');
+    expect(core.drawRandom).not.toHaveBeenCalled();
+  });
+
+  it('draws a song from the catalogue when the chosen one is unknown', async () => {
+    useGameStore.setState({ quickSongId: 's-unknown' });
+    core.drawById.mockRejectedValue(
+      new CoreError(1204, 'errors.unknownSong', 'songId=s-unknown')
+    );
+
+    await mountHook(root);
+    await run(() => commands!.drawCard());
+
+    // WHY: a song that the player added or changed in the library is not in
+    // the catalogue of the core. The round draws a song from the catalogue
+    // instead of ending in a dead screen.
+    expect(core.drawRandom).toHaveBeenCalled();
+    expect(useGameStore.getState().error).toBeNull();
   });
 });

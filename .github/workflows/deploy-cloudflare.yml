@@ -59,7 +59,12 @@ jobs:
       # "Project not found" (code 8000007). The fallback is the project of
       # this account; the workflow checks the name before the upload and
       # lists the projects that do exist.
-      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'supermazerworld' }}
+      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'phomu' }}
+      # The name the project was created under. A rename keeps the
+      # deployments and moves the address with them — the old address stops
+      # answering. The step that renames it does nothing once the project
+      # carries the wanted name.
+      CLOUDFLARE_LEGACY_PROJECT_NAME: ${{ vars.CLOUDFLARE_LEGACY_PROJECT_NAME || 'supermazerworld' }}
     steps:
       - name: Check the credentials
         id: credentials
@@ -109,6 +114,41 @@ jobs:
         # The `_headers` file has to match the source of truth, otherwise
         # the deployed site would be protected differently from the source.
         run: node scripts/generate-cloudflare-headers.mjs --check
+
+      - name: Give the project its final name
+        if: steps.credentials.outputs.available == 'true'
+        # WHY: the address of a Pages project follows its name. The project
+        # of this account was created under a different name; a rename keeps
+        # the deployments and moves the address with them.
+        run: |
+          legacy="${CLOUDFLARE_LEGACY_PROJECT_NAME}"
+          target="${CLOUDFLARE_PROJECT_NAME}"
+          if [ -z "${legacy}" ] || [ "${legacy}" = "${target}" ]; then
+            echo "Nothing to rename."
+            exit 0
+          fi
+          # Every step is its own shell: the list of the projects has to be
+          # asked for again here.
+          found=$(curl -sS \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects" \
+            | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log((j.result||[]).map(p=>p.name).join(", "))})')
+          echo "The projects of this account: ${found}"
+          if echo ",${found}," | grep -q ",${target},"; then
+            echo "The project '${target}' already carries the wanted name."
+            exit 0
+          fi
+          if ! echo ",${found}," | grep -q ",${legacy},"; then
+            echo "The project '${legacy}' does not exist either — nothing to rename."
+            exit 0
+          fi
+          echo "Renaming '${legacy}' to '${target}' …"
+          renamed=$(curl -sS -X PATCH \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data "{\"name\":\"${target}\"}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/${legacy}")
+          echo "${renamed}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);console.log(j.success?"Renamed.":"::error::The rename failed: "+JSON.stringify(j.errors));process.exit(j.success?0:1)})'
 
       - name: Check the project
         if: steps.credentials.outputs.available == 'true'

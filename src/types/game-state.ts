@@ -230,6 +230,15 @@ export interface GameState {
   /** Where the current song comes from (random draw vs QR scan) */
   currentSongSource: 'random' | 'qr' | null;
 
+  /**
+   * The song the player picked in the library — the quick game.
+   *
+   * WHY the song is named here: the core owns the catalogue, and it draws a
+   * song by its identifier. The shell remembers which song the player chose
+   * until the card is drawn; after that the round draws at random again.
+   */
+  quickSongId: string | null;
+
   /** Whether the drawing phase should trigger automatically (e.g. after an auto-skip) */
   autoDrawIntent: boolean;
 
