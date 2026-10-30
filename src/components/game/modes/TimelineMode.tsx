@@ -274,6 +274,10 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
           amazonMusicLink={question.media.amazonMusic ?? undefined}
           amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
           blurred={!isRevealed}
+          // WHY the height: the landscape has half the height of the
+          // portrait, and the player takes a sixteenth of the width — the
+          // timeline would be pushed out of the screen.
+          className={isLandscape ? 'h-[200px] aspect-auto' : undefined}
         />
       )}
 

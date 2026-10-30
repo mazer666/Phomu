@@ -95,6 +95,9 @@ on the line and the slots as the gaps between them. The mode uses the whole
 width of the phase column there, and the line scrolls when the timeline
 grows beyond it.
 
+The player of the song is shorter in the landscape: it takes a sixteenth of
+the width there, and the timeline would be pushed out of the screen.
+
 ### Fixed
 
 - **A round of the Timeline mode could be released without the answer.** The
