@@ -8,10 +8,12 @@
 
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Icon } from '@/components/art/Icon';
+import { PlayerSticker } from '@/components/art/PlayerSticker';
 
 interface PlayerCardProps {
   name: string;
-  /** Emoji avatar of the player, e.g. '🎸' */
+  /** The kind of the sticker of the player, e.g. 'guitar' */
   avatar?: string;
   /** Hex colour for visual distinction, e.g. '#FF6B35' */
   color?: string;
@@ -51,7 +53,7 @@ export function PlayerCard({
         style={{ backgroundColor: avatarBg }}
         aria-hidden
       >
-        {avatar ?? '🎵'}
+        <PlayerSticker kind={avatar} color={color} size={34} />
       </div>
 
       {/* Name + pilot badge */}
@@ -64,7 +66,7 @@ export function PlayerCard({
         </p>
         {isPilot && (
           <span className="text-xs opacity-60 flex items-center gap-1 mt-0.5">
-            🎮 <span>{t('lobby.player.pilot')}</span>
+            <Icon name="controller" size={14} /> <span>{t('lobby.player.pilot')}</span>
           </span>
         )}
       </div>

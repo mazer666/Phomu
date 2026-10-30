@@ -86,6 +86,34 @@ core, the bridges and the proof that both play the same game.
   doc), *Rust Boundaries* (the dependency rule) and *Conformance* (the shared
   core against the web shell).
 
+### Added — the game has pictures of its own
+
+The modes, the players, the packs and the sections of the settings have
+their own drawings now: the six modes are painted in the colours of the
+mode, the players wear a sticker in the colour of the player, and the
+symbols of the interface are drawn instead of borrowed.
+
+The pictures of the modes have **three variants each** — the picture of a
+mode changes from game to game, and it stays the same during the game. The
+lobby therefore does not look the same every time, and the mode of the
+round is recognisable at a glance.
+
+The drawings live in `public/art/modes/` (six modes, three variants each,
+about 250 kB together) and in `src/components/art/` (the symbols and the
+stickers of the players, drawn as SVG so that they stay sharp on every
+screen and follow the colours of the theme).
+
+### Added — no screen scrolls the page
+
+The page fills the screen and never scrolls: the bar above stays where it
+is, and the content that is too long for the screen — the list of the
+songs, the text of the guide, the steps of the lobby, the timeline of the
+round — scrolls in its own area. The touch targets of the interface are at
+least 44 pixels high, so they can be hit with a thumb.
+
+A new test in `e2e/overflow.spec.ts` walks through the pages of the
+product on three sizes and proves that no page scrolls.
+
 ### Added — the timeline runs from left to right in the landscape
 
 The Timeline mode draws its axis along the shape of the viewport. The

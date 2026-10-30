@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
 import { LOBBY_MODES } from './lobby-options';
+import { ModeArt, modeArtVariant } from '@/components/art/ModeArt';
+import { useGameStore } from '@/stores/game-store';
 
 interface ModeSelectorProps {
   selectedModes: GameMode[];
@@ -12,6 +14,9 @@ interface ModeSelectorProps {
 
 export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
   const { t } = useTranslation();
+  // WHY the seed: the picture of a mode changes from game to game, and it
+  // stays the same during the game.
+  const sessionId = useGameStore((state) => state.sessionId);
 
   function toggleMode(modeId: GameMode) {
     if (selectedModes.includes(modeId)) {
@@ -104,13 +109,18 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
 
               {/* Content */}
               <div className="relative z-10 flex items-center gap-4 px-4 py-4">
-                {/* Emoji */}
+                {/* Die Grafik des Modus */}
                 <motion.span
-                  className="text-3xl leading-none shrink-0"
-                  animate={{ scale: isSelected ? 1.15 : 1 }}
+                  className="shrink-0"
+                  animate={{ scale: isSelected ? 1.12 : 1, rotate: isSelected ? 0 : -3 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                 >
-                  {mode.emoji}
+                  <ModeArt
+                    mode={mode.id}
+                    variant={modeArtVariant(mode.id, sessionId)}
+                    size={44}
+                    className="rounded-xl"
+                  />
                 </motion.span>
 
                 {/* Text */}

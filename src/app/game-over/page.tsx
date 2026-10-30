@@ -13,13 +13,15 @@ import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
+import { Icon } from '@/components/art/Icon';
+import { PlayerSticker } from '@/components/art/PlayerSticker';
 
 // ─── Podium configuration ─────────────────────────────────────────
 
 const PODEST_CONFIG = [
-  { rank: 1, icon: '🥇', heightClass: 'h-24', order: 1 },
-  { rank: 2, icon: '🥈', heightClass: 'h-16', order: 0 },
-  { rank: 3, icon: '🥉', heightClass: 'h-12', order: 2 },
+  { rank: 1, icon: 'trophy', heightClass: 'h-24', order: 1 },
+  { rank: 2, icon: 'medal', heightClass: 'h-16', order: 0 },
+  { rank: 3, icon: 'medal', heightClass: 'h-12', order: 2 },
 ] as const;
 
 // ─── Page ────────────────────────────────────────────────────────
@@ -65,7 +67,8 @@ export default function GameOverPage() {
   const winner = players.find((p) => p.id === winnerId) ?? sorted[0];
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start px-4 py-8 pb-24 overflow-x-hidden">
+    // WHY the height: the page fills the screen and never scrolls.
+    <main className="flex-1 min-h-0 flex flex-col items-center justify-start px-4 py-6 pb-24 overflow-hidden">
       {/* Confetti feeling / winner */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -73,7 +76,7 @@ export default function GameOverPage() {
         className="text-center mb-8"
       >
         <div className="relative inline-block">
-          <span className="text-8xl select-none">🏆</span>
+          <Icon name="trophy" size={92} className="text-[var(--color-accent)]" />
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
@@ -154,9 +157,9 @@ export default function GameOverPage() {
               className="flex-1 bg-white/5 rounded-t-2xl border-2 border-white/10 flex flex-col items-center justify-center relative pt-4"
             >
               <span className="absolute -top-6 text-2xl" aria-hidden>
-                {icon}
+                <Icon name={icon} size={30} className={rank === 1 ? 'text-[var(--color-accent)]' : 'opacity-80'} />
               </span>
-              <span className="text-2xl mb-1">{p.avatar}</span>
+              <PlayerSticker kind={p.avatar} color={p.color} size={30} className="mb-1" />
               <p
                 className="text-[10px] font-black uppercase text-center px-1 truncate w-full"
                 style={{ color: p.color }}

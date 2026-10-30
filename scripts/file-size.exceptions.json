@@ -22,7 +22,7 @@
       "history": "The exception was introduced with 572 lines; the file grew by 195 lines before the gate was able to fail (QA-ARC-001)."
     },
     "src/app/lobby/page.tsx": {
-      "lines": 1004,
+      "lines": 1003,
       "reason": "Lobby page (GAP-007, QA-09 item 2.2): split into the lobby, the player list and the mode selection.",
       "history": "The exception was introduced with 744 lines; the file grew by 306 lines before the gate was able to fail (QA-ARC-001)."
     },

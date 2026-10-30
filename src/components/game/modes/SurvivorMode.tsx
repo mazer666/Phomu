@@ -19,6 +19,7 @@ import { applyCheat, submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
 import { CHEAT_PENALTY_SURVIVOR } from '@/utils/mode-rules';
+import { ModeArt } from '@/components/art/ModeArt';
 
 interface SurvivorModeProps {
   question: RoundQuestion;
@@ -74,11 +75,13 @@ export function SurvivorMode({ question, onAnswer }: SurvivorModeProps) {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
+    // WHY the height: the mode fills the phase of the round and never
+    // scrolls the page — the player is bounded, the answers take the rest.
+    <div className="flex flex-col items-center justify-center flex-1 min-h-0 px-6 py-3 gap-4 pb-24">
       {/* Mode banner */}
-      <div className="w-full max-w-sm flex items-center justify-between bg-red-500/10 border border-red-500/20 rounded-2xl px-4 py-2.5">
+      <div className="shrink-0 w-full max-w-sm flex items-center justify-between bg-red-500/10 border border-red-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-red-400">
-          {t('modes.survivor.banner')}
+          <ModeArt mode="survivor" size={22} /> {t('modes.survivor.banner')}
         </span>
         <span className="text-[10px] font-black uppercase tracking-widest text-red-400/60">
           {t('modes.survivor.tagline')}
@@ -86,7 +89,7 @@ export function SurvivorMode({ question, onAnswer }: SurvivorModeProps) {
       </div>
 
       {/* Music — starts immediately, the artist stays hidden */}
-      <div className="w-full max-w-sm mx-auto">
+      <div className="shrink-0 w-full max-w-sm mx-auto">
         <MusicPlayer
           songId={question.songId}
           songPack={question.context.pack ?? undefined}
@@ -98,6 +101,7 @@ export function SurvivorMode({ question, onAnswer }: SurvivorModeProps) {
           amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
           startSeconds={question.media.startSeconds}
           blurred={!answered && !cheatUsed}
+        className="max-h-[170px]"
         />
       </div>
 
@@ -235,7 +239,7 @@ export function SurvivorMode({ question, onAnswer }: SurvivorModeProps) {
             </>
           ) : (
             <div className="bg-red-500/10 p-4 rounded-2xl border border-red-500/20">
-              <p className="text-2xl mb-1">🕵️</p>
+              <ModeArt mode="survivor" size={36} className="mb-1" />
               <p className="text-sm font-bold uppercase tracking-tight text-red-500">
                 {t('modes.survivor.cheatUsed')}
               </p>

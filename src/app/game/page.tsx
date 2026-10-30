@@ -125,7 +125,7 @@ export default function GamePage() {
     : players.find((p) => p.id === nextPilotId);
 
   const pilotAvatar =
-    !isTeamTurn && pilot && 'avatar' in pilot ? pilot.avatar : '👥';
+    !isTeamTurn && pilot && 'avatar' in pilot ? pilot.avatar : undefined;
 
   // ── Handler: card drawn ─────────────────────────────────────
   // The core draws the song and hands over the question of the round — the
@@ -285,7 +285,10 @@ export default function GamePage() {
 
   return (
     <div
-      className="min-h-screen flex flex-col"
+      // WHY the height: the phase of the round fills the space below the
+      // header and scrolls on its own — the page itself never scrolls, so
+      // the mode of the round is always completely on the screen.
+      className="flex-1 min-h-0 overflow-hidden flex flex-col"
       data-layout={layout.variant}
       data-columns={layout.columns}
       style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}

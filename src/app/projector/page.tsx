@@ -18,18 +18,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { TFunction } from 'i18next';
 import { useGameStore } from '@/stores/game-store';
-
+import { ModeArt } from '@/components/art/ModeArt';
+import { PlayerSticker } from '@/components/art/PlayerSticker';
+import type { GameMode } from '@/config/game-config';
+import { Icon } from '@/components/art/Icon';
 /** Emoji and colour per mode — pure design, no text. */
-const MODE_META: Record<string, { emoji: string; color: string }> = {
-  timeline: { emoji: '📅', color: '#22d3ee' },
-  'hint-master': { emoji: '🕵️', color: '#c4b5fd' },
-  lyrics: { emoji: '📝', color: '#fb923c' },
-  'vibe-check': { emoji: '😎', color: '#34d399' },
-  survivor: { emoji: '💀', color: '#f87171' },
-  'cover-confusion': { emoji: '🎭', color: '#e879f9' },
+const MODE_META: Record<string, { color: string }> = {
+  timeline: { color: '#22d3ee' }, 'hint-master': { color: '#c4b5fd' },
+  lyrics: { color: '#fb923c' }, 'vibe-check': { color: '#34d399' },
+  survivor: { color: '#f87171' }, 'cover-confusion': { color: '#e879f9' },
 };
 
-const FALLBACK_META = { emoji: '🎵', color: '#fff' };
+const FALLBACK_META = { color: '#fff' };
 
 /** Name and short description of the active mode (static, spoiler-free). */
 function getModeTexts(
@@ -130,8 +130,8 @@ export default function ProjectorPage() {
 
   if (currentRound === 0) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white gap-8 p-12">
-        <p className="text-[80px]">🕹️</p>
+      <div className="flex-1 min-h-0 flex flex-col items-center justify-center bg-black text-white gap-8 p-12">
+        <Icon name="controller" size={80} className="opacity-80" />
         <h1 className="text-4xl font-black uppercase tracking-widest opacity-60">
           {t('projector.noGameActive')}
         </h1>
@@ -144,7 +144,7 @@ export default function ProjectorPage() {
 
   return (
     <div
-      className="min-h-screen flex flex-col bg-black text-white overflow-hidden"
+      className="flex-1 min-h-0 flex flex-col bg-black text-white overflow-hidden"
       style={{ fontFamily: 'system-ui, sans-serif' }}
     >
       {/* ── Top Bar ──────────────────────────────────────────────── */}
@@ -172,7 +172,7 @@ export default function ProjectorPage() {
               background: `${modeMeta.color}10`,
             }}
           >
-            <span className="text-3xl">{modeMeta.emoji}</span>
+            <ModeArt mode={(currentMode in MODE_META ? currentMode : 'timeline') as GameMode} size={34} />
             <div>
               <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-40">
                 {t('projector.modeLabel')}
@@ -273,7 +273,7 @@ export default function ProjectorPage() {
                   <span className="text-2xl font-black opacity-20 w-8 text-right tabular-nums">
                     {numberFormat.format(rank + 1)}
                   </span>
-                  <span className="text-3xl">{player.avatar ?? '🎵'}</span>
+                  <PlayerSticker kind={player.avatar} color={player.color} size={30} />
                   <span
                     className="flex-1 text-2xl font-black truncate"
                     style={{ color: player.color }}
@@ -318,7 +318,7 @@ export default function ProjectorPage() {
                     boxShadow: `0 0 20px ${activePilot.color}40`,
                   }}
                 >
-                  {activePilot.avatar ?? '👤'}
+                  <PlayerSticker kind={activePilot.avatar} size={34} />
                 </div>
                 <div>
                   <p
@@ -356,7 +356,7 @@ export default function ProjectorPage() {
                 }}
                 className="text-6xl"
               >
-                {modeMeta.emoji}
+                <ModeArt mode={(currentMode in MODE_META ? currentMode : 'timeline') as GameMode} size={44} />
               </motion.div>
               <p
                 className="font-black text-lg uppercase tracking-widest"

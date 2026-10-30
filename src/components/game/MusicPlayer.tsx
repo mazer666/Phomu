@@ -25,7 +25,7 @@ import {
   missingReportTitle,
   type ReportStatus,
 } from './music/missing-report';
-
+import { Icon } from '@/components/art/Icon';
 /**
  * The resolution of the Amazon Music links.
  *
@@ -490,7 +490,7 @@ export function MusicPlayer({
 
   return (
     <div
-      className={`relative w-full aspect-video rounded-[2rem] overflow-hidden bg-black shadow-2xl transition-all ${className}`}
+      className={`relative w-full rounded-[2rem] overflow-hidden bg-black shadow-2xl transition-all ${className || 'aspect-video'}`}
     >
       {/* Target Player Wrapper */}
       <div
@@ -514,12 +514,12 @@ export function MusicPlayer({
                   transition={{ repeat: Infinity, duration: 2 }}
                   className="w-32 h-32 rounded-full border-2 border-white/10 flex items-center justify-center"
                 >
-                  <span className="text-4xl animate-pulse">💿</span>
+                  <Icon name="disc" size={40} className="animate-pulse" />
                 </motion.div>
               ) : (
                 <div className="w-32 h-32 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
                   <span className="text-4xl">
-                    {playerState === 'playing' ? '🎵' : '⏸️'}
+<Icon name="note" size={16} />
                   </span>
                 </div>
               )}
@@ -612,7 +612,7 @@ export function MusicPlayer({
               <button
                 onClick={handleReportMissing}
                 disabled={!songId}
-                className="w-full py-2.5 rounded-xl border border-white/20 text-[10px] font-black uppercase tracking-widest text-white/70 disabled:opacity-30 hover:bg-white/10 transition-colors"
+                className="w-full py-2.5 rounded-xl border border-white/20 text-[10px] font-black uppercase tracking-widest text-white/70 disabled:opacity-30 hover:bg-white/10 transition-colors min-h-[44px]"
               >
                 {t('game.music.reportMissing')}
               </button>

@@ -58,11 +58,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de" data-theme="jackbox" suppressHydrationWarning>
-      <body>
+      {/* WHY the height: the page fills the screen and never scrolls. The
+          bar above is fixed, the content of the page takes the rest and
+          scrolls on its own — the window itself stays still. */}
+      <body className="h-[100dvh] overflow-hidden flex flex-col">
         <Providers>
           <LanguageHtmlAttribute />
-          <ConditionalNavBar />
-          {children}
+          <div className="shrink-0">
+            <ConditionalNavBar />
+          </div>
+          <div className="flex-1 min-h-0 flex flex-col overflow-hidden">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

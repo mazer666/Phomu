@@ -24,6 +24,8 @@ import type { AnswerFeedback, RoundQuestion } from '@/core/types';
 import { submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
+import { Icon } from '@/components/art/Icon';
+import { ModeArt } from '@/components/art/ModeArt';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -103,11 +105,14 @@ function LyricsQuestion({
   }
 
   return (
-    <div className="flex flex-col px-4 py-6 gap-5 max-w-lg mx-auto">
+    // WHY the height: the mode fills the phase of the round and never
+    // scrolls the page — the player is bounded, the lines of the lyrics
+    // take the rest.
+    <div className="flex flex-col px-4 py-3 gap-3 pb-24 max-w-lg mx-auto flex-1 min-h-0">
       {/* Mode banner */}
-      <div className="flex items-center justify-between bg-orange-500/10 border border-orange-500/20 rounded-2xl px-4 py-2.5">
+      <div className="shrink-0 flex items-center justify-between bg-orange-500/10 border border-orange-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-orange-400">
-          {t('modes.lyrics.banner')}
+          <ModeArt mode="lyrics" size={22} /> {t('modes.lyrics.banner')}
         </span>
         <span className="text-[10px] font-black uppercase tracking-widest text-orange-400/60">
           {t('modes.lyrics.tagline')}
@@ -115,7 +120,7 @@ function LyricsQuestion({
       </div>
 
       {/* Music — starts immediately, blurred until the reveal */}
-      <div className="w-full">
+      <div className="shrink-0 w-full">
         <MusicPlayer
           songId={question.songId}
           songPack={question.context.pack ?? undefined}
@@ -127,6 +132,7 @@ function LyricsQuestion({
           amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
           startSeconds={question.media.startSeconds}
           blurred={!isRevealing}
+          className="max-h-[170px]"
         />
       </div>
 
@@ -249,7 +255,7 @@ function BonusRound({
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[45vh] px-6 gap-6 text-center">
-      <p className="text-5xl">🎁</p>
+      <Icon name="gift" size={48} className="text-[var(--color-accent)]" />
       <div>
         <h3 className="text-xl font-black mb-2">
           {t('modes.lyrics.bonusTitle')}

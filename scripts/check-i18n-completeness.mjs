@@ -107,6 +107,16 @@ const BRAND_ALLOWLIST = new Set([
   'music wall',
 ]);
 
+/**
+ * The CSS keywords — they are values of the drawing, not texts of the
+ * interface.
+ *
+ * WHY they are here: a symbol of the interface is drawn with the colour of
+ * the text around it. The keyword that says so is a value of the drawing,
+ * and the gate would read it as an English text that was not translated.
+ */
+const CSS_KEYWORDS = new Set(['currentcolor', 'inherit', 'initial', 'unset']);
+
 const PLURAL_SUFFIXES = ['_zero', '_one', '_two', '_few', '_many', '_other'];
 
 // ─── File collection ───────────────────────────────────────────────
@@ -479,6 +489,7 @@ function looksLikeUiText(text) {
   if (isSymbolOnly(text)) return false;
   if (isSlugLike(text)) return false;
   if (BRAND_ALLOWLIST.has(text.trim().toLowerCase())) return false;
+  if (CSS_KEYWORDS.has(text.trim().toLowerCase())) return false;
   if (PACK_NAMES.has(text.trim())) return false;
   // Technical values (domains, URLs, CSS variables) are no UI texts
   // Note: file names (e.g. "PRIVACY.md" as link text) are visible text and

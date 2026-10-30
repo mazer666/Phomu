@@ -18,6 +18,7 @@ import {
   type ThemeName,
 } from '@/config/game-config';
 import { THEME_COLORS, THEME_LABEL_KEYS } from '@/config/themes';
+import { Icon } from '@/components/art/Icon';
 
 const NAV_LINKS = [
   { href: '/lobby', labelKey: 'ui.nav.lobby' },
@@ -65,7 +66,7 @@ export function NavBar() {
           className="text-xl font-black tracking-tight shrink-0 hover:opacity-80 transition-opacity"
           style={{ color: 'var(--color-primary)' }}
         >
-          🎵 {t('common.appName')}
+          <Icon name="note" size={20} className="text-[var(--color-accent)]" /> {t('common.appName')}
         </Link>
 
         {/* Page links */}

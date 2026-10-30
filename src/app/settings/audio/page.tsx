@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import type { MusicProvider } from '@/config/game-config';
 import type { TranslationKey } from '@/i18n/types';
+import { Icon } from '@/components/art/Icon';
 
 const PROVIDERS: Array<{
   value: MusicProvider;
@@ -55,7 +56,7 @@ export default function SettingsAudioPage() {
   return (
     <main className="min-h-screen max-w-4xl mx-auto p-4 md:p-8 space-y-6">
       <Header
-        title={`🔊 ${t('settings.audio.title')}`}
+        title={`${t('settings.audio.title')}`}
         onBack={() => router.push(fromLobby ? '/lobby' : '/settings')}
         backLabel={
           fromLobby

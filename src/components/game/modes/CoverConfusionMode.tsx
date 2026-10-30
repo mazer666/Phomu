@@ -24,6 +24,7 @@ import { submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
 import { coverConfusionPoints } from '@/utils/mode-rules';
+import { ModeArt } from '@/components/art/ModeArt';
 
 type Phase = 'listening' | 'self-assess' | 'choice' | 'done';
 
@@ -116,11 +117,14 @@ export function CoverConfusionMode({
   }
 
   return (
-    <div className="flex flex-col px-4 py-6 gap-5 max-w-xl mx-auto pb-44">
+    // WHY the height: the mode fills the phase of the round and never
+    // scrolls the page — the player is bounded, the cover and the answers
+    // take the rest.
+    <div className="flex flex-col px-4 py-3 gap-3 max-w-xl mx-auto pb-24 flex-1 min-h-0">
       {/* Modus-Banner mit Variante */}
-      <div className="w-full flex items-center justify-between bg-purple-500/10 border border-purple-500/20 rounded-2xl px-4 py-2.5">
+      <div className="shrink-0 w-full flex items-center justify-between bg-purple-500/10 border border-purple-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-purple-400">
-          {t('modes.cover-confusion.banner')}
+          <ModeArt mode="cover-confusion" size={22} /> {t('modes.cover-confusion.banner')}
         </span>
         <span className="text-[10px] font-black uppercase tracking-widest text-purple-400/80">
           {variation === 'who-is-it'
@@ -143,6 +147,7 @@ export function CoverConfusionMode({
         amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
         startSeconds={question.media.startSeconds}
         blurred={phase !== 'done'}
+      className="max-h-[170px]"
       />
       {question.media.coverLink && (
         <p className="text-[10px] text-center -mt-2 font-black uppercase text-[var(--color-accent)] animate-pulse">

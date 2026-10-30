@@ -19,22 +19,22 @@ import type { GameMode } from '@/config/game-config';
 import type { TranslationKey } from '@/i18n/types';
 import type { TeamMode } from '@/types/player';
 
-/** The avatars that are handed out to the players. */
-export const EMOJI_AVATARS = [
-  '🎵',
-  '🎸',
-  '🥁',
-  '🎹',
-  '🎺',
-  '🎻',
-  '🎤',
-  '🎧',
-  '🦁',
-  '🐯',
-  '🦊',
-  '🦄',
-  '👾',
-  '🚀',
+/**
+ * The stickers that are handed out to the players.
+ *
+ * WHY a kind and not a picture: the kind is stored with the player, so the
+ * sticker of a player is the same in the lobby, in the game and in the
+ * result. The picture is drawn from the kind and the colour of the player.
+ */
+export const PLAYER_STICKERS = [
+  'note',
+  'guitar',
+  'drum',
+  'mic',
+  'headphone',
+  'star',
+  'disc',
+  'trumpet',
 ] as const;
 
 /** The colours that are handed out to the players. */
@@ -54,25 +54,25 @@ export const DIFFICULTY_OPTIONS = [
     value: 'all',
     labelKey: 'common.all',
     subKey: 'lobby.difficulty.allSub',
-    emoji: '🌈',
+    icon: 'difficulty-all',
   },
   {
     value: 'easy',
     labelKey: 'lobby.difficulty.easyLabel',
     subKey: 'lobby.difficulty.easySub',
-    emoji: '😌',
+    icon: 'difficulty-easy',
   },
   {
     value: 'medium',
     labelKey: 'lobby.difficulty.mediumLabel',
     subKey: 'lobby.difficulty.mediumSub',
-    emoji: '🎯',
+    icon: 'difficulty-medium',
   },
   {
     value: 'hard',
     labelKey: 'lobby.difficulty.hardLabel',
     subKey: 'lobby.difficulty.hardSub',
-    emoji: '💀',
+    icon: 'difficulty-hard',
   },
 ] as const;
 
@@ -149,7 +149,6 @@ export const CURATED_TEAM_COLORS = [
 export const LOBBY_MODES = [
   {
     id: 'timeline',
-    emoji: '📅',
     titleKey: 'lobby.mode.timelineTitle',
     taglineKey: 'lobby.mode.timelineTagline',
     flavourKey: 'lobby.mode.timelineFlavour',
@@ -157,7 +156,6 @@ export const LOBBY_MODES = [
   },
   {
     id: 'hint-master',
-    emoji: '🕵️',
     titleKey: 'lobby.mode.hintMasterTitle',
     taglineKey: 'lobby.mode.hintMasterTagline',
     flavourKey: 'lobby.mode.hintMasterFlavour',
@@ -165,7 +163,6 @@ export const LOBBY_MODES = [
   },
   {
     id: 'lyrics',
-    emoji: '📝',
     titleKey: 'lobby.mode.lyricsTitle',
     taglineKey: 'lobby.mode.lyricsTagline',
     flavourKey: 'lobby.mode.lyricsFlavour',
@@ -173,7 +170,6 @@ export const LOBBY_MODES = [
   },
   {
     id: 'vibe-check',
-    emoji: '😎',
     titleKey: 'lobby.mode.vibeCheckTitle',
     taglineKey: 'lobby.mode.vibeCheckTagline',
     flavourKey: 'lobby.mode.vibeCheckFlavour',
@@ -181,7 +177,6 @@ export const LOBBY_MODES = [
   },
   {
     id: 'survivor',
-    emoji: '🏆',
     titleKey: 'lobby.mode.survivorTitle',
     taglineKey: 'lobby.mode.survivorTagline',
     flavourKey: 'lobby.mode.survivorFlavour',
@@ -189,7 +184,6 @@ export const LOBBY_MODES = [
   },
   {
     id: 'cover-confusion',
-    emoji: '🎭',
     titleKey: 'lobby.mode.coverConfusionTitle',
     taglineKey: 'lobby.mode.coverConfusionTagline',
     flavourKey: 'lobby.mode.coverConfusionFlavour',
@@ -197,7 +191,6 @@ export const LOBBY_MODES = [
   },
 ] as const satisfies readonly {
   id: GameMode;
-  emoji: string;
   titleKey: TranslationKey;
   taglineKey: TranslationKey;
   flavourKey: TranslationKey;

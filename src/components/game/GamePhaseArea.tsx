@@ -24,6 +24,7 @@ import type { Player, Team } from '@/types/player';
 import { DrawingPhase } from './DrawingPhase';
 import { QuestionPhase } from './QuestionPhase';
 import { RevealPhase } from './RevealPhase';
+import { Icon } from '@/components/art/Icon';
 
 /** The animation of the phases. */
 const PHASE_VARIANTS = {
@@ -110,7 +111,9 @@ export function GamePhaseArea({
   const { t } = useTranslation();
 
   return (
-    <main className="flex-1 overflow-y-auto">
+    // WHY the height: the mode fills the phase and decides for itself what
+    // scrolls. The phase never scrolls the page.
+    <main className="flex-1 min-h-0 overflow-y-auto flex flex-col">
       {/* ── Drawing + scoring: normal AnimatePresence ─────── */}
       <AnimatePresence mode="wait">
         {roundPhase === 'drawing' && (
@@ -121,6 +124,7 @@ export function GamePhaseArea({
             animate="animate"
             exit="exit"
             transition={{ duration: 0.3 }}
+            className="flex-1 min-h-0 flex flex-col"
           >
             <DrawingPhase
               currentMode={currentMode}
@@ -144,7 +148,7 @@ export function GamePhaseArea({
             transition={{ duration: 0.3 }}
             className="flex flex-col items-center justify-center min-h-[60vh] gap-4 px-6"
           >
-            <p className="text-6xl">🏁</p>
+            <Icon name="flag" size={56} className="text-[var(--color-accent)]" />
             <h2 className="text-3xl font-black text-center">
               {t('game.page.gameOver')}
             </h2>
@@ -166,13 +170,14 @@ export function GamePhaseArea({
             initial="initial"
             animate="animate"
             transition={{ duration: 0.3 }}
+            className="flex-1 min-h-0 flex flex-col"
           >
             {/* QuestionPhase: hidden (not unmounted) during the reveal */}
             <div
               style={
                 roundPhase === 'reveal' ? { display: 'none' } : undefined
               }
-              className="pt-2"
+              className="pt-2 flex-1 min-h-0 flex flex-col"
             >
               <QuestionPhase
                 question={currentQuestion}

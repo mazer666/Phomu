@@ -18,12 +18,13 @@ import { LobbyPreview } from '@/components/lobby/LobbyPreview';
 import {
   CURATED_TEAM_COLORS,
   DIFFICULTY_OPTIONS,
-  EMOJI_AVATARS,
   FUNNY_NAME_KEYS,
   PLAYER_COLORS,
+  PLAYER_STICKERS,
   TEAM_MODE_OPTIONS,
   TIME_LIMIT_OPTIONS,
 } from '@/components/lobby/lobby-options';
+import { Icon, PlayerSticker } from '@/components/art';
 import { QRScannerModal } from '@/components/game/QRScannerModal';
 import { Tooltip } from '@/components/ui/Tooltip';
 import { useOrientation } from '@/hooks/useOrientation';
@@ -90,7 +91,7 @@ export default function LobbyPage() {
     if (players.length >= PHOMU_CONFIG.MAX_PLAYERS) return;
 
     // Auto-assign color and avatar based on current player count
-    const avatar = EMOJI_AVATARS[players.length % EMOJI_AVATARS.length];
+    const avatar = PLAYER_STICKERS[players.length % PLAYER_STICKERS.length];
     const color = PLAYER_COLORS[players.length % PLAYER_COLORS.length];
 
     addPlayer(nameInput.trim(), avatar, color);
@@ -125,7 +126,7 @@ export default function LobbyPage() {
 
   return (
     <main
-      className={`min-h-screen flex flex-col overflow-x-hidden ${
+      className={`flex-1 min-h-0 flex flex-col overflow-hidden ${
         layout.columns === 2
           ? 'w-full max-w-6xl mx-auto px-4 md:px-8'
           : 'max-w-2xl mx-auto px-4 md:px-8'
@@ -136,14 +137,14 @@ export default function LobbyPage() {
       {/* Header with progress — sticky so only the content scrolls */}
       <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-safe pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-black">🕹️ {t('lobby.title')}</h1>
+          <h1 className="text-3xl font-black flex items-center gap-2"><Icon name="controller" size={26} className="text-[var(--color-accent)]" />{t('lobby.title')}</h1>
           <div className="flex items-center gap-3">
             <button
               onClick={() => router.push('/settings/audio?from=lobby')}
               className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-xs font-black opacity-50 hover:opacity-100 transition-all"
               title={t('lobby.audioButtonTitle')}
             >
-              🔊 {t('lobby.audioButtonLabel')}
+              <Icon name="speaker" size={15} /> {t('lobby.audioButtonLabel')}
             </button>
             <span className="text-sm font-bold opacity-30">
               {t('lobby.step', { count: step, total: TOTAL_STEPS })}
@@ -161,12 +162,12 @@ export default function LobbyPage() {
       {/* Wizard content area — padding-bottom makes room for the fixed footer.
           In the landscape the steps stand next to the preview of the session. */}
       <div
-        className={`flex-1 flex overflow-x-hidden ${
+        className={`flex-1 min-h-0 flex overflow-x-hidden ${
           layout.columns === 2 ? 'gap-6 items-start' : 'flex-col'
         }`}
         data-columns={layout.columns}
       >
-        <div className="flex-1 min-w-0 pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)] overflow-x-hidden">
+        <div className="flex-1 min-w-0 min-h-0 overflow-y-auto overflow-x-hidden pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)]">
           <AnimatePresence mode="wait" initial={false} custom={direction}>
             {step === 1 && (
               <motion.div
@@ -216,7 +217,7 @@ export default function LobbyPage() {
                       onClick={() => setIsScannerOpen(true)}
                       className="px-5 py-4 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-xl hover:bg-white/20 transition-all active:scale-95"
                     >
-                      📸
+                      <Icon name="qr" size={26} />
                     </button>
                   </Tooltip>
                 </div>
@@ -327,11 +328,9 @@ export default function LobbyPage() {
                             onClick={() => setConfig({ endingCondition: mode })}
                             className={`py-3.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${config.endingCondition === mode ? 'bg-[var(--color-accent)] text-white shadow-lg' : 'opacity-40 hover:opacity-100'}`}
                           >
-                            {mode === 'points'
-                              ? `🏆 ${t('common.points')}`
-                              : mode === 'rounds'
-                                ? `🔄 ${t('common.round', { count: 2 })}`
-                                : `⏱️ ${t('lobby.step4.conditionTime')}`}
+                            {mode === 'points' ? t('common.points')
+                              : mode === 'rounds' ? t('common.round', { count: 2 })
+                              : t('lobby.step4.conditionTime')}
                           </button>
                         ))}
                       </div>
@@ -483,7 +482,7 @@ export default function LobbyPage() {
                               : 'border-white/8 bg-white/5 opacity-50 hover:opacity-80'
                           }`}
                         >
-                          <span className="text-2xl">{o.emoji}</span>
+                          <Icon name={o.icon} size={26} className="opacity-90" />
                           <span className="text-[10px] font-black uppercase tracking-tight leading-none">
                             {t(o.labelKey)}
                           </span>
@@ -570,7 +569,7 @@ export default function LobbyPage() {
                             : 'border-white/8 bg-white/5 opacity-60 hover:opacity-90'
                         }`}
                       >
-                        <span className="text-3xl shrink-0">📸</span>
+                        <Icon name="qr" size={26} className="shrink-0" />
                         <div className="flex-1">
                           <p className="text-sm font-black">
                             {t('lobby.step5.qrModeTitle')}
@@ -644,7 +643,7 @@ export default function LobbyPage() {
                             : 'border-white/8 bg-white/5 opacity-60 hover:opacity-90'
                         }`}
                       >
-                        <span className="text-3xl shrink-0">🚫</span>
+                        <Icon name="ban" size={26} className="shrink-0 opacity-70" />
                         <div className="flex-1">
                           <p className="text-sm font-black">
                             {t('lobby.step5.noCheatTitle')}
@@ -775,7 +774,7 @@ export default function LobbyPage() {
                                     className="w-8 flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity"
                                     title={t('lobby.team.randomNameTitle')}
                                   >
-                                    🎲
+                                    <Icon name="dice" size={22} />
                                   </button>
                                 </div>
                                 {teams.length > 2 && (
@@ -813,7 +812,7 @@ export default function LobbyPage() {
                                       key={p.id}
                                       className="text-[10px] font-bold px-2 py-1 rounded-lg bg-white/5"
                                     >
-                                      {p.avatar} {p.name}
+                                      <PlayerSticker kind={p.avatar} color={p.color} size={22} /> {p.name}
                                     </span>
                                   ))}
                               </div>
@@ -833,7 +832,7 @@ export default function LobbyPage() {
                                   className="flex items-center gap-3 p-2 bg-white/5 rounded-2xl"
                                 >
                                   <span className="text-xl">
-                                    {player.avatar}
+                                    <PlayerSticker kind={player.avatar} color={player.color} size={26} />
                                   </span>
                                   <span className="flex-1 text-xs font-bold">
                                     {player.name}
@@ -954,7 +953,7 @@ export default function LobbyPage() {
               onClick={handleStart}
               className="w-full py-5 rounded-3xl bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-primary)] text-white text-xl font-black shadow-2xl shadow-[var(--color-accent)]/20 active:scale-95 transition-all"
             >
-              🚀 {t('lobby.startNow')}
+              <Icon name="flag" size={18} /> {t('lobby.startNow')}
             </button>
           )}
 

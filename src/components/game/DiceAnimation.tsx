@@ -9,13 +9,13 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Icon } from '@/components/art/Icon';
 
 interface DiceAnimationProps {
   isVisible: boolean;
   onComplete?: () => void;
 }
 
-const DICE_ICON = '🎲';
 const DICE_COUNT = 3;
 
 export function DiceAnimation({ isVisible, onComplete }: DiceAnimationProps) {
@@ -70,7 +70,7 @@ export function DiceAnimation({ isVisible, onComplete }: DiceAnimationProps) {
               }}
               className="absolute text-8xl drop-shadow-2xl"
             >
-              {DICE_ICON}
+              <Icon name="dice" size={44} />
             </motion.div>
           ))}
 

@@ -20,5 +20,9 @@ export default {
     port: 3000,
     timeout: 120_000,
     reuseExistingServer: !process.env.CI,
+    // WHY the empty base path: the test walks through the pages of the
+    // product — without the base path they stand at the root, and the
+    // routes of the test are the routes of the product.
+    env: { NEXT_PUBLIC_BASE_PATH: '' },
   },
 };

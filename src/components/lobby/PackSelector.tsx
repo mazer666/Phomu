@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { PHOMU_CONFIG } from '@/config/game-config';
+import { Icon } from '@/components/art/Icon';
 
 interface PackSelectorProps {
   selectedPacks: string[];
@@ -179,7 +180,7 @@ export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
                         damping: 20,
                       }}
                     >
-                      {pack.emoji}
+                      <Icon name={pack.icon} size={22} />
                     </motion.span>
 
                     <AnimatePresence>

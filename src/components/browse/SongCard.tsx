@@ -14,6 +14,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { PhomuSong } from '@/types/song';
+import { Icon } from '@/components/art/Icon';
 
 // ─── Helper functions ─────────────────────────────────────────────────────────
 
@@ -129,7 +130,7 @@ export function SongCard({
           />
         ) : (
           <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
-            <span className="text-5xl opacity-10 mb-4">🎵</span>
+            <Icon name="note" size={48} className="opacity-10 mb-4" />
             <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-20">
               {t('browse.noCover')}
             </p>
@@ -182,7 +183,7 @@ export function SongCard({
               className="w-12 h-12 bg-red-600/90 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all border border-red-500/50"
               title={t('browse.originalVideoTitle')}
             >
-              <span className="text-lg">📺</span>
+              <Icon name="film" size={18} />
             </a>
           )}
           {isAdmin && onEdit && (

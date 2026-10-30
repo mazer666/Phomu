@@ -10,6 +10,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { PhomuSong } from '@/types/song';
+import { Icon } from '@/components/art/Icon';
 
 interface SongEditorProps {
   song: PhomuSong;
@@ -321,7 +322,7 @@ export function SongEditor({
             onClick={handleSave}
             className="flex-1 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg"
           >
-            💾 {t('common.save')}
+            <Icon name="document" size={14} /> {t('common.save')}
           </button>
           <button
             onClick={onCancel}

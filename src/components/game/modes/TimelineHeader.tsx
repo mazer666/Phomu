@@ -18,6 +18,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { getSpicyColor } from '@/utils/feedback-messages';
 import { useSpicyMessage } from '../useSpicyMessage';
+import { Icon } from '@/components/art/Icon';
 
 interface TimelineHeaderProps {
   /** Whether the round was revealed. */
@@ -97,7 +98,7 @@ export function TimelineHeader({
           animate={{ opacity: 0.3 }}
           whileHover={{ opacity: 1, scale: 1.05 }}
           onClick={onCheat}
-          className="text-[10px] font-black uppercase tracking-widest border border-red-500/20 py-1.5 px-3 rounded-full hover:bg-red-500/5 text-red-500 transition-all mb-2"
+          className="text-[10px] font-black uppercase tracking-widest border border-red-500/20 py-1.5 px-3 rounded-full hover:bg-red-500/5 text-red-500 transition-all mb-2 min-h-[44px]"
         >
           {t('modes.timeline.decadeHintButton')}
         </motion.button>
@@ -115,7 +116,7 @@ export function TimelineHeader({
           }}
         >
           <p className="text-[11px] font-black italic text-orange-300 leading-snug">
-            🕵️ {cheatHint}
+            <Icon name="magnifier" size={13} /> {cheatHint}
           </p>
         </motion.div>
       )}
@@ -127,7 +128,7 @@ export function TimelineHeader({
           animate={{ opacity: 0.3 }}
           whileHover={{ opacity: 1, scale: 1.05 }}
           onClick={onJoker}
-          className="text-[10px] font-black uppercase tracking-widest border border-orange-500/20 py-1.5 px-3 rounded-full hover:bg-orange-500/5 transition-all mb-1"
+          className="text-[10px] font-black uppercase tracking-widest border border-orange-500/20 py-1.5 px-3 rounded-full hover:bg-orange-500/5 transition-all mb-1 min-h-[44px]"
           style={{ color: '#f97316' }}
         >
           {t('modes.timeline.jokerButton')}

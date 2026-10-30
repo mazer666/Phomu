@@ -22,6 +22,7 @@ import type { RoundQuestion } from '@/core/types';
 import { applyCheat, submit } from '@/core/session-service';
 import { MusicPlayer } from '../MusicPlayer';
 import { useSpicyMessage } from '../useSpicyMessage';
+import { ModeArt } from '@/components/art/ModeArt';
 
 // ─── Design constants (colours, no text) ─────────────────────────
 
@@ -118,11 +119,13 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
     : question.options;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 gap-6">
+    // WHY the height: the mode fills the phase of the round and never
+    // scrolls the page — the player is bounded, the moods take the rest.
+    <div className="flex flex-col items-center justify-center flex-1 min-h-0 px-6 py-3 gap-4 pb-24">
       {/* Mode banner */}
-      <div className="w-full max-w-sm flex items-center justify-between bg-teal-500/10 border border-teal-500/20 rounded-2xl px-4 py-2.5">
+      <div className="shrink-0 w-full max-w-sm flex items-center justify-between bg-teal-500/10 border border-teal-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-teal-400">
-          {t('modes.vibe-check.banner')}
+          <ModeArt mode="vibe-check" size={22} /> {t('modes.vibe-check.banner')}
         </span>
         <span className="text-[10px] font-black uppercase tracking-widest text-teal-400/60">
           {t('modes.vibe-check.tagline')}
@@ -131,7 +134,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
 
       {/* Music — starts immediately, not covered up */}
       {!answered && (
-        <div className="w-full max-w-sm mx-auto">
+        <div className="shrink-0 w-full max-w-sm mx-auto">
           <MusicPlayer
             songId={question.songId}
             songPack={question.context.pack ?? undefined}
@@ -143,6 +146,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
             amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
             startSeconds={question.media.startSeconds}
             blurred={false}
+          className="max-h-[170px]"
           />
         </div>
       )}
@@ -330,6 +334,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
               startSeconds={question.media.startSeconds}
               endSeconds={question.media.startSeconds + 120}
               blurred={false}
+            className="max-h-[170px]"
             />
           </div>
 

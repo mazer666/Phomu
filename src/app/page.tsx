@@ -18,7 +18,7 @@ export default function HomePage() {
 
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-center px-4"
+      className="flex flex-1 min-h-0 flex-col items-center justify-center px-4 overflow-y-auto"
       style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}
     >
       {/* Hero section with animated entrance */}

@@ -48,6 +48,7 @@ import {
   pointsOfRound,
   resolveWinner,
 } from './reveal/reveal-logic';
+import { PlayerSticker } from '@/components/art/PlayerSticker';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -223,7 +224,7 @@ export function RevealPhase({
                   </span>
                   {/* Avatar */}
                   <span className="text-lg shrink-0" aria-hidden>
-                    {player.avatar ?? '🎵'}
+                    <PlayerSticker kind={player.avatar} color={player.color} size={26} />
                   </span>
                   {/* Name */}
                   <span

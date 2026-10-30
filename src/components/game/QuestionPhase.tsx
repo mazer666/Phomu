@@ -85,7 +85,7 @@ export function QuestionPhase({
   return (
     <div
       className={[
-        'w-full mx-auto flex flex-col items-center',
+        'w-full flex-1 min-h-0 mx-auto flex flex-col items-center',
         isLandscape ? 'max-w-none' : 'max-w-2xl',
       ].join(' ')}
     >

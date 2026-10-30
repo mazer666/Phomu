@@ -27,6 +27,8 @@ import {
   VIBE_HEADLINE_KEYS,
 } from '@/i18n/variant-keys';
 import { buildTimelineHeadlineKeys, pickVariantIndex } from './reveal-logic';
+import { ModeArt } from '@/components/art/ModeArt';
+import { Icon } from '@/components/art/Icon';
 
 export function TimelineReveal({ song }: { song: RevealSong }) {
   const { t, i18n } = useTranslation();
@@ -107,7 +109,7 @@ export function HintMasterReveal({ song }: { song: RevealSong }) {
       }}
     >
       <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-50 mb-4">
-        🕵️ {subline}
+        <ModeArt mode="hint-master" size={40} /> {subline}
       </p>
       <motion.h2
         initial={{ opacity: 0, y: 15 }}
@@ -173,7 +175,7 @@ export function LyricsReveal({ song }: { song: RevealSong }) {
     >
       <div className="text-center">
         <p className="text-[10px] font-black uppercase tracking-[0.3em] text-red-400 opacity-80 mb-3">
-          📝 {fakeLabel}
+          <ModeArt mode="lyrics" size={40} /> {fakeLabel}
         </p>
         <motion.p
           initial={{ opacity: 0, x: -10 }}
@@ -215,7 +217,7 @@ export function VibeCheckReveal({ song }: { song: RevealSong }) {
       }}
     >
       <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-400 opacity-80 mb-5">
-        😎 {headline}
+        <ModeArt mode="vibe-check" size={40} /> {headline}
       </p>
       <div className="flex flex-wrap justify-center gap-3 mb-6">
         {song.mood.map((m, i) => (
@@ -284,7 +286,7 @@ export function SurvivorReveal({ song }: { song: RevealSong }) {
         transition={{ type: 'spring', stiffness: 500, damping: 18, delay: 0.1 }}
         className="text-6xl mb-4"
       >
-        {isOHW ? '✋' : '🌟'}
+        <Icon name={isOHW ? 'person' : 'star'} size={16} />
       </motion.div>
       <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-50 mb-3">
         {t('game.reveal.survivor.label')}
@@ -324,7 +326,7 @@ export function CoverConfusionReveal({ song }: { song: RevealSong }) {
       }}
     >
       <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-60 mb-4">
-        🎭 {headline}
+        <ModeArt mode="cover-confusion" size={40} /> {headline}
       </p>
       <motion.p
         initial={{ opacity: 0, y: 10 }}

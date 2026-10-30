@@ -16,16 +16,18 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
 import type { TranslationKey } from '@/i18n/types';
+import { PlayerSticker } from '@/components/art/PlayerSticker';
+import { ModeArt } from '@/components/art/ModeArt';
 
 // ─── Mode icons ──────────────────────────────────────────────────
 
-const MODE_ICONS: Record<GameMode, string> = {
-  timeline: '📅',
-  'hint-master': '🕵️',
-  lyrics: '📝',
-  'vibe-check': '😎',
-  survivor: '🏆',
-  'cover-confusion': '🎭',
+const MODE_ART: Record<GameMode, GameMode> = {
+  timeline: 'timeline',
+  'hint-master': 'hint-master',
+  lyrics: 'lyrics',
+  'vibe-check': 'vibe-check',
+  survivor: 'survivor',
+  'cover-confusion': 'cover-confusion',
 };
 
 /** Translation keys of the mode display names (order = MODE_ICONS). */
@@ -176,8 +178,8 @@ export function GameHeader({
             border: '1px solid var(--color-border)',
           }}
         >
-          <span aria-hidden className="text-sm">
-            {MODE_ICONS[currentMode]}
+          <span aria-hidden className="flex items-center">
+            <ModeArt mode={MODE_ART[currentMode]} size={22} />
           </span>
           <span className="hidden md:inline uppercase tracking-widest opacity-60">
             {t(MODE_LABEL_KEYS[currentMode])}
@@ -197,7 +199,7 @@ export function GameHeader({
                   color: '#fff',
                 }}
               >
-                {pilotAvatar || '👤'}
+                <PlayerSticker kind={pilotAvatar} size={28} />
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-[11px] font-black uppercase tracking-widest text-white/40 leading-none mb-0.5">

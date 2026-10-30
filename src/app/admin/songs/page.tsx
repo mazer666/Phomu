@@ -42,6 +42,7 @@ import {
   loadSongsFromStorage,
   saveSongsToStorage,
 } from '@/app/admin/songs/_lib/admin-song-storage';
+import { Icon } from '@/components/art/Icon';
 
 // ─── Main page ─────────────────────────────────────────────────────────────────
 
@@ -164,7 +165,7 @@ export default function AdminSongsPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-gray-900">
-              🎵 {t('admin.songs.title')}
+              <Icon name="note" size={20} className="text-[var(--color-accent)]" /> {t('admin.songs.title')}
             </h1>
             <p className="text-sm text-gray-500 mt-0.5">
               {t('admin.songs.subtitle')}

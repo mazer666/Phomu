@@ -269,7 +269,7 @@ export function createRoundActions(
       const { addPlayer } = get();
       // If there are no players, add a default player
       if (get().players.length === 0) {
-        addPlayer('Spieler 1', '🎵', '#FF6B35');
+        addPlayer('Spieler 1', 'note', '#FF6B35');
       }
       set((state) => ({
         currentRound: 1,

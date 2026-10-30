@@ -4,37 +4,38 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
+import { Icon } from '@/components/art/Icon';
 
 const SETTINGS_SECTIONS = [
   {
     href: '/settings/profile',
     titleKey: 'settings.sections.profileTitle',
     descriptionKey: 'settings.sections.profileDescription',
-    emoji: '👥',
+    icon: 'users',
   },
   {
     href: '/settings/audio',
     titleKey: 'settings.sections.audioTitle',
     descriptionKey: 'settings.sections.audioDescription',
-    emoji: '🔊',
+    icon: 'speaker',
   },
   {
     href: '/settings/governance',
     titleKey: 'settings.sections.governanceTitle',
     descriptionKey: 'settings.sections.governanceDescription',
-    emoji: '🧠',
+    icon: 'brain',
   },
   {
     href: '/settings/account',
     titleKey: 'settings.sections.legalTitle',
     descriptionKey: 'settings.sections.legalDescription',
-    emoji: '📄',
+    icon: 'document',
   },
   {
     href: '/guide',
     titleKey: 'settings.sections.guideTitle',
     descriptionKey: 'settings.sections.guideDescription',
-    emoji: '🧭',
+    icon: 'compass',
   },
 ] as const;
 
@@ -49,7 +50,7 @@ export default function SettingsHubPage() {
   const numberFormat = new Intl.NumberFormat(i18n.language);
 
   return (
-    <main className="min-h-screen max-w-5xl mx-auto p-4 md:p-10 space-y-8">
+    <main className="flex-1 min-h-0 overflow-y-auto max-w-5xl mx-auto p-4 md:p-10 space-y-8">
       <header className="rounded-3xl border border-white/10 bg-white/5 p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-3xl font-black">⚙️ {t('common.settings')}</h1>
@@ -97,7 +98,7 @@ export default function SettingsHubPage() {
             href={section.href}
             className="rounded-3xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition-colors"
           >
-            <p className="text-2xl mb-3">{section.emoji}</p>
+            <Icon name={section.icon} size={26} className="mb-3 opacity-90" />
             <h2 className="text-lg font-black">{t(section.titleKey)}</h2>
             <p className="text-sm opacity-70 mt-1">
               {t(section.descriptionKey)}

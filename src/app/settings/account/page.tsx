@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
+import { Icon } from '@/components/art/Icon';
 
 export default function SettingsAccountPage() {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ export default function SettingsAccountPage() {
   return (
     <main className="min-h-screen max-w-3xl mx-auto p-4 md:p-8 space-y-6">
       <Header
-        title={`📄 ${t('settings.account.title')}`}
+        title={`${t('settings.account.title')}`}
         onBack={() => router.push('/settings')}
         gameIsActive={gameIsActive}
         onBackToGame={() => router.push('/game')}
@@ -22,6 +23,7 @@ export default function SettingsAccountPage() {
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-5 space-y-3">
         <h2 className="text-lg font-black">
+          <Icon name="document" size={20} className="text-[var(--color-accent)]" />
           {t('settings.account.legalSection')}
         </h2>
         <div className="flex flex-wrap gap-3">

@@ -17,6 +17,8 @@ import {
   PILOT_LABEL_KEYS,
   type TranslationKey,
 } from '@/i18n/variant-keys';
+import { ModeArt } from '@/components/art/ModeArt';
+import { Icon } from '@/components/art/Icon';
 
 // ─── Juicy text variants ─────────────────────────────────────────
 // The variants are typed key lists (see `src/i18n/variant-keys.ts`).
@@ -27,35 +29,35 @@ import {
 
 const MODE_META: Record<
   GameMode,
-  { icon: string; titleKey: TranslationKey; instructionKey: TranslationKey }
+  { art: GameMode; titleKey: TranslationKey; instructionKey: TranslationKey }
 > = {
   timeline: {
-    icon: '📅',
+    art: 'timeline' as const,
     titleKey: 'game.drawing.modeTitle.timeline',
     instructionKey: 'game.drawing.modeInstruction.timeline',
   },
   'hint-master': {
-    icon: '🕵️',
+    art: 'hint-master' as const,
     titleKey: 'game.drawing.modeTitle.hintMaster',
     instructionKey: 'game.drawing.modeInstruction.hintMaster',
   },
   lyrics: {
-    icon: '📝',
+    art: 'lyrics' as const,
     titleKey: 'game.drawing.modeTitle.lyrics',
     instructionKey: 'game.drawing.modeInstruction.lyrics',
   },
   'vibe-check': {
-    icon: '😎',
+    art: 'vibe-check' as const,
     titleKey: 'game.drawing.modeTitle.vibeCheck',
     instructionKey: 'game.drawing.modeInstruction.vibeCheck',
   },
   survivor: {
-    icon: '🏆',
+    art: 'survivor' as const,
     titleKey: 'game.drawing.modeTitle.survivor',
     instructionKey: 'game.drawing.modeInstruction.survivor',
   },
   'cover-confusion': {
-    icon: '🖼️',
+    art: 'cover-confusion' as const,
     titleKey: 'game.drawing.modeTitle.coverConfusion',
     instructionKey: 'game.drawing.modeInstruction.coverConfusion',
   },
@@ -147,7 +149,7 @@ export function DrawingPhase({
         className="text-8xl mb-6 select-none"
         aria-hidden
       >
-        {meta.icon}
+        <ModeArt mode={meta.art} size={44} />
       </motion.div>
 
       {/* Mode name */}
@@ -223,7 +225,7 @@ export function DrawingPhase({
               animate={{ opacity: 1, scale: 1 }}
               className="text-4xl"
             >
-              🎴
+              <Icon name="card" size={22} />
             </motion.div>
           )}
         </AnimatePresence>

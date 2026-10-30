@@ -30,6 +30,7 @@ import {
   timelineSlotCount,
   type TimelineSlotKind,
 } from './timeline-logic';
+import { Icon } from '@/components/art/Icon';
 
 /** The axis the slots are drawn on. */
 export type TimelineAxis = 'vertical' | 'horizontal';
@@ -69,7 +70,7 @@ interface TimelineSlotsProps {
  * the line has to meet the marks of the years at the same height in every
  * column.
  */
-const HORIZONTAL_SLOT_HEIGHT = 'h-24';
+const HORIZONTAL_SLOT_HEIGHT = 'h-16';
 
 /**
  * The distance from the top of the axis to the line.
@@ -78,7 +79,7 @@ const HORIZONTAL_SLOT_HEIGHT = 'h-24';
  * has to meet the marks of the years exactly — the height of the slot and
  * the tick below it are the two parts of the distance.
  */
-const HORIZONTAL_AXIS_TOP = '6.75rem';
+const HORIZONTAL_AXIS_TOP = '4.75rem';
 
 /**
  * The space above the line that the mark of a year needs.
@@ -86,7 +87,7 @@ const HORIZONTAL_AXIS_TOP = '6.75rem';
  * WHY: the mark of the year is a dot in the middle of the line — half of it
  * lies above it.
  */
-const HORIZONTAL_MARK_SPACE = 'h-[6.75rem]';
+const HORIZONTAL_MARK_SPACE = 'h-[4.75rem]';
 
 export function TimelineSlots({
   timelineYears,
@@ -164,7 +165,7 @@ export function TimelineSlots({
     if (kind === 'placed') {
       return (
         <div className="flex items-center gap-2 px-3">
-          <span className="text-sm">🎵</span>
+          <Icon name="note" size={16} className="text-[var(--color-accent)]" />
           <p className="text-[10px] font-black uppercase tracking-widest">
             {t('modes.timeline.placed')}
           </p>
@@ -228,7 +229,7 @@ export function TimelineSlots({
                   </div>
                   <div
                     className={`flex-1 rounded-xl border-2 border-dashed flex items-center justify-center opacity-30 ${
-                      numSlots <= 5 ? 'h-20' : numSlots <= 7 ? 'h-16' : 'h-12'
+                      numSlots <= 5 ? 'h-16' : numSlots <= 7 ? 'h-14' : 'h-12'
                     }`}
                     style={{
                       borderColor: '#fbbf24',
@@ -274,7 +275,7 @@ export function TimelineSlots({
                   disabled={isRevealed}
                   className={[
                     'flex-1',
-                    numSlots <= 5 ? 'h-20' : numSlots <= 7 ? 'h-16' : 'h-12',
+                    numSlots <= 5 ? 'h-16' : numSlots <= 7 ? 'h-14' : 'h-12',
                     boxClass(slot.kind),
                   ].join(' ')}
                 >
@@ -364,7 +365,7 @@ export function TimelineSlots({
                 <button
                   onClick={() => onSelect(slot.index)}
                   disabled={isRevealed}
-                  className={['w-32', HORIZONTAL_SLOT_HEIGHT, boxClass(slot.kind)].join(' ')}
+                  className={['w-28', HORIZONTAL_SLOT_HEIGHT, boxClass(slot.kind)].join(' ')}
                 >
                   {slotContent(slot.kind, slot.index)}
                 </button>

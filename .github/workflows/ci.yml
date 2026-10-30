@@ -125,7 +125,7 @@ jobs:
       - name: Playwright smoke test
         # The HTML reporter is added so that the uploaded report is a real
         # one; `list` keeps the console output readable in the job log.
-        run: npm run test:e2e:smoke -- --reporter=html,list
+        run: npx @playwright/test test e2e/ --reporter=html,list
         env:
           # The report must never try to open a browser on the runner.
           PLAYWRIGHT_HTML_OPEN: 'never'

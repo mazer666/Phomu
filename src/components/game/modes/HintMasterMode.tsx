@@ -23,6 +23,7 @@ import {
   CHEAT_PENALTY_HINT_MASTER_MUSIC,
   hintMasterPoints,
 } from '@/utils/mode-rules';
+import { Icon } from '@/components/art/Icon';
 
 interface HintMasterModeProps {
   question: RoundQuestion;
@@ -94,10 +95,13 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
   };
 
   return (
-    <div className="flex flex-col px-6 gap-6 pt-4 max-w-lg mx-auto min-h-[50vh]">
+    // WHY the height: the mode fills the phase of the round and never
+    // scrolls the page — the list of the hints is the part that grows, and
+    // it scrolls on its own.
+    <div className="flex flex-col px-6 gap-4 pt-3 pb-24 max-w-lg mx-auto flex-1 min-h-0">
       {/* Task display */}
       {!isRevealed && !done && (
-        <div className="text-center py-3 px-4 rounded-2xl bg-[var(--color-accent)]/5 border border-[var(--color-accent)]/20">
+        <div className="shrink-0 text-center py-3 px-4 rounded-2xl bg-[var(--color-accent)]/5 border border-[var(--color-accent)]/20">
           <p className="text-[9px] font-black uppercase tracking-[0.25em] opacity-40 mb-1">
             {t('modes.hint-master.searchLabel')}
           </p>
@@ -108,7 +112,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
       )}
 
       {/* Header info */}
-      <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/10">
+      <div className="shrink-0 flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/10">
         <div>
           <p className="text-[10px] font-black uppercase opacity-40">
             {t('modes.hint-master.levelLabel')}
@@ -154,7 +158,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
               className={`p-4 border rounded-2xl space-y-3 transition-colors ${isRevealed ? 'bg-green-500/10 border-green-500/20' : 'bg-[var(--color-accent)]/10 border-[var(--color-accent)]/20'}`}
             >
               <div className="flex items-center gap-2">
-                <span className="text-lg">{isRevealed ? '🎵' : '🔊'}</span>
+                <Icon name={isRevealed ? 'note' : 'speaker'} size={18} />
                 <p
                   className={`text-[10px] font-black uppercase tracking-widest ${isRevealed ? 'text-green-500' : 'text-[var(--color-accent)]'}`}
                 >
@@ -180,6 +184,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
                     : startSecs + 30
                 }
                 blurred={!isRevealed}
+                className="max-h-[160px]"
               />
               {!isRevealed && (
                 <p className="text-[9px] opacity-50 italic text-center">
@@ -194,7 +199,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
       </AnimatePresence>
 
       {/* Hint list */}
-      <div className="space-y-3">
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-3 pr-1">
         <AnimatePresence initial={false}>
           {question.hints.slice(0, shownHints).map((hint, i) => (
             <motion.div
@@ -283,7 +288,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
                   onClick={() => handleFinalDecision('artist')}
                   className="py-4 px-3 bg-yellow-500/80 rounded-2xl font-black text-white text-xs shadow-lg shadow-yellow-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
                 >
-                  <span className="text-lg">👤</span>
+                  <Icon name="person" size={18} />
                   <span>{t('modes.hint-master.knewArtist')}</span>
                   <span className="text-[10px] opacity-70">
                     {t('modes.hint-master.pointsShort', {
@@ -295,7 +300,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
                   onClick={() => handleFinalDecision('title')}
                   className="py-4 px-3 bg-yellow-500/80 rounded-2xl font-black text-white text-xs shadow-lg shadow-yellow-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
                 >
-                  <span className="text-lg">🎵</span>
+                  <Icon name="note" size={18} />
                   <span>{t('modes.hint-master.knewTitle')}</span>
                   <span className="text-[10px] opacity-70">
                     {t('modes.hint-master.pointsShort', {

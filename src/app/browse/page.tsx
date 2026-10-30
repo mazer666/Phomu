@@ -10,7 +10,7 @@ import { SongEditor } from '@/components/admin/SongEditor';
 import { useGameStore } from '@/stores/game-store';
 import { useCatalogueRecords } from '@/hooks/useCatalogueRecords';
 import { readStoredSongs, writeStoredSongs } from '@/utils/song-storage';
-
+import { Icon } from '@/components/art/Icon';
 // ─── Load data & storage ──────────────────────────────────────────────────
 
 const PAGE_SIZE_OPTIONS = [8, 24, 48, 96, 'all'] as const;
@@ -188,7 +188,7 @@ export default function BrowsePage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0c] text-white flex flex-col">
+    <div className="flex-1 min-h-0 overflow-hidden bg-[#0a0a0c] text-white flex flex-col">
       {/* Dynamic Header */}
       <header className="sticky top-0 z-50 bg-[#0a0a0c]/80 backdrop-blur-2xl border-b border-white/5 py-4 px-8">
         <div className="max-w-[1800px] mx-auto flex items-center justify-between gap-8">
@@ -230,7 +230,7 @@ export default function BrowsePage() {
                 className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:bg-white/10 transition-all placeholder:text-white/20"
               />
               <span className="absolute right-5 top-1/2 -translate-y-1/2 opacity-20 group-focus-within:opacity-50 transition-opacity">
-                🔍
+<Icon name="search" size={18} />
               </span>
             </div>
 
@@ -240,7 +240,7 @@ export default function BrowsePage() {
                 className={`px-4 h-full rounded-2xl flex items-center justify-center gap-2 transition-all border text-[10px] font-black uppercase tracking-wider ${adminMode ? 'bg-red-500/10 border-red-500 text-red-400' : 'bg-white/5 border-white/5 text-white/50 hover:bg-white/10'}`}
                 title={t('browse.adminModeTitle')}
               >
-                <span>{adminMode ? '🔓' : '🔒'}</span>
+<Icon name={adminMode ? 'unlock' : 'lock'} size={16} />
                 <span>
                   {adminMode ? t('browse.adminOn') : t('browse.adminOff')}
                 </span>
@@ -425,7 +425,7 @@ export default function BrowsePage() {
         </AnimatePresence>
 
         {/* Content Area */}
-        <main className="flex-1">
+        <main className="flex-1 min-h-0 overflow-y-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
             <div>
               <h2 className="text-2xl font-black uppercase">
@@ -581,7 +581,7 @@ export default function BrowsePage() {
 
             {paginatedSongs.length === 0 ? (
               <div className="col-span-full py-32 flex flex-col items-center justify-center text-center opacity-20">
-                <span className="text-6xl mb-6">🏜️</span>
+<Icon name="note" size={64} className="opacity-20 mb-6" />
                 <p className="text-xl font-black uppercase tracking-widest">
                   {t('browse.noSongsFound')}
                 </p>

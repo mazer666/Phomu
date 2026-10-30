@@ -39,7 +39,7 @@ export default function PrivacyPage() {
   }).format(LAST_UPDATED);
 
   return (
-    <main className="min-h-screen bg-[var(--color-bg)] py-12 px-6 sm:px-10 text-[var(--color-text)]">
+    <main className="flex-1 min-h-0 overflow-y-auto bg-[var(--color-bg)] py-12 px-6 sm:px-10 text-[var(--color-text)]">
       <motion.div
         className="max-w-4xl mx-auto space-y-12"
         initial={{ opacity: 0, x: -20 }}

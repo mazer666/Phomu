@@ -6,6 +6,7 @@ import { useGameStore } from '@/stores/game-store';
 import { ModeSelector } from '@/components/lobby/ModeSelector';
 import { PackSelector } from '@/components/lobby/PackSelector';
 import type { GameMode } from '@/config/game-config';
+import { Icon } from '@/components/art/Icon';
 
 export default function SettingsGameRulesPage() {
   const { t } = useTranslation();
@@ -18,7 +19,8 @@ export default function SettingsGameRulesPage() {
       <header className="rounded-3xl border border-white/10 bg-white/5 p-5 flex items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-black">
-            🎮 {t('settings.gameRules.title')}
+            <Icon name="controller" size={20} className="text-[var(--color-accent)]" />
+            {t('settings.gameRules.title')}
           </h1>
           {gameIsActive && (
             <p className="text-[10px] uppercase tracking-widest opacity-50 font-bold mt-1">

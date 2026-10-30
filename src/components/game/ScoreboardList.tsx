@@ -18,6 +18,8 @@ import { motion } from 'framer-motion';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Player, Team, TeamMode } from '@/types/player';
+import { Icon } from '@/components/art/Icon';
+import { PlayerSticker } from '@/components/art/PlayerSticker';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -79,7 +81,7 @@ export function ScoreboardList({
                     style={{ backgroundColor: `${team.color}33` }}
                     aria-hidden
                   >
-                    {isLeading ? '👑' : '🏆'}
+                    <Icon name={isLeading ? 'crown' : 'trophy'} size={16} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-1">
@@ -87,7 +89,7 @@ export function ScoreboardList({
                         className="font-bold text-sm truncate"
                         style={{ color: team.color }}
                       >
-                        {isLeading && '👑 '}
+                        {isLeading && <Icon name="crown" size={13} />}
                         {team.name}
                       </span>
                       <span className="font-black text-sm shrink-0">
@@ -141,7 +143,7 @@ export function ScoreboardList({
                     }}
                     aria-hidden
                   >
-                    {player.avatar ?? '🎵'}
+                    <PlayerSticker kind={player.avatar} color={player.color} size={26} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-1">
@@ -151,7 +153,7 @@ export function ScoreboardList({
                           color: player.color ?? 'var(--color-text)',
                         }}
                       >
-                        {isLeading && '👑 '}
+                        {isLeading && <Icon name="crown" size={13} />}
                         {player.name}
                       </span>
                       <span className="font-black text-sm shrink-0">

@@ -20,6 +20,7 @@ import {
   EMPTY_SONG,
   type AdminSong,
 } from '@/app/admin/songs/_lib/admin-song-model';
+import { Icon } from '@/components/art/Icon';
 
 /** The properties of the editor panel. */
 interface SongEditorPanelProps {
@@ -61,7 +62,7 @@ export function SongEditorPanel({
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
-      <p className="text-4xl mb-3">🎵</p>
+      <Icon name="note" size={38} className="mb-3 opacity-60" />
       <p className="font-medium">{t('admin.songs.noSelection')}</p>
       <p className="text-sm mt-1">{t('admin.songs.noSelectionHint')}</p>
       <button

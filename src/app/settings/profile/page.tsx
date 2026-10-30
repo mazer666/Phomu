@@ -4,27 +4,16 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
+import { PlayerSticker, PLAYER_STICKER_KINDS } from '@/components/art/PlayerSticker';
+import { Icon } from '@/components/art/Icon';
 
-const EMOJI_AVATARS = [
-  '🎵',
-  '🎸',
-  '🥁',
-  '🎹',
-  '🎺',
-  '🎻',
-  '🎤',
-  '🎧',
-  '🦁',
-  '🐯',
-  '🦊',
-  '🦄',
-  '👾',
-  '🚀',
-  '🕺',
-  '💃',
-  '✨',
-  '🔥',
-];
+/**
+ * The stickers the players choose from.
+ *
+ * WHY the kinds: the kind is stored with the player, and the picture is
+ * drawn from the kind and the colour of the player.
+ */
+const EMOJI_AVATARS = PLAYER_STICKER_KINDS;
 const PLAYER_COLORS = [
   '#FF6B35',
   '#FFD166',
@@ -47,7 +36,7 @@ export default function SettingsProfilePage() {
   return (
     <main className="min-h-screen max-w-4xl mx-auto p-4 md:p-8 space-y-6">
       <Header
-        title={`👥 ${t('settings.profile.title')}`}
+        title={`${t('settings.profile.title')}`}
         onBack={() => router.push('/settings')}
         gameIsActive={gameIsActive}
         onBackToGame={() => router.push('/game')}
@@ -69,7 +58,7 @@ export default function SettingsProfilePage() {
                   className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl border-4 border-black/20"
                   style={{ backgroundColor: player.color }}
                 >
-                  {player.avatar}
+                  <PlayerSticker kind={player.avatar} color={player.color} size={28} />
                 </div>
                 <div className="flex-1">
                   <input
@@ -102,15 +91,20 @@ export default function SettingsProfilePage() {
                       {t('settings.profile.avatarLabel')}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {EMOJI_AVATARS.map((emoji) => (
+                      {EMOJI_AVATARS.map((kind) => (
                         <button
-                          key={emoji}
+                          key={kind}
                           onClick={() =>
-                            updatePlayer(player.id, { avatar: emoji })
+                            updatePlayer(player.id, { avatar: kind })
                           }
-                          className={`w-8 h-8 rounded-lg flex items-center justify-center bg-white/10 ${player.avatar === emoji ? 'ring-2 ring-[var(--color-accent)]' : ''}`}
+                          className="w-9 h-9 rounded-lg flex items-center justify-center bg-white/10 hover:bg-white/20 transition-colors"
+                          aria-label={kind}
                         >
-                          {emoji}
+                          <PlayerSticker
+                            kind={kind}
+                            color={player.color}
+                            size={28}
+                          />
                         </button>
                       ))}
                     </div>

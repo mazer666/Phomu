@@ -36,6 +36,7 @@ import {
   timelinePointBudget,
   timelineSlotCount,
 } from './timeline-logic';
+import { ModeArt } from '@/components/art/ModeArt';
 
 interface TimelineModeProps {
   question: RoundQuestion;
@@ -242,17 +243,17 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   return (
     <div
       className={[
-        'flex flex-col px-4 gap-5 mx-auto pb-44',
+        'flex flex-col px-4 gap-3 mx-auto pb-24 flex-1 min-h-0',
         // WHY the width: the landscape has the whole width of the phase
         // column for the timeline — a timeline that runs from left to right
         // needs it. The portrait keeps the narrow column of the phone.
-        isLandscape ? 'py-4 max-w-none' : 'py-6 max-w-xl',
+        isLandscape ? 'py-3 max-w-none' : 'py-4 max-w-xl',
       ].join(' ')}
     >
       {/* Modus-Banner */}
-      <div className="w-full flex items-center justify-between bg-cyan-500/10 border border-cyan-500/20 rounded-2xl px-4 py-2.5">
+      <div className="w-full shrink-0 flex items-center justify-between bg-cyan-500/10 border border-cyan-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400">
-          {t('modes.timeline.banner')}
+          <ModeArt mode="timeline" size={22} /> {t('modes.timeline.banner')}
         </span>
         <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400/60">
           {t('modes.timeline.stats', {
@@ -264,6 +265,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
 
       {/* Musik Player */}
       {question.media.youtube && (
+        <div className="shrink-0">
         <MusicPlayer
           songId={question.songId}
           songPack={question.context.pack ?? undefined}
@@ -277,11 +279,16 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
           // WHY the height: the landscape has half the height of the
           // portrait, and the player takes a sixteenth of the width — the
           // timeline would be pushed out of the screen.
-          className={isLandscape ? 'h-[200px] aspect-auto' : undefined}
+          // WHY the height: the landscape has half the height of the
+          // portrait, and the player takes a sixteenth of the width — the
+          // timeline would be pushed out of the screen.
+          className={isLandscape ? 'h-[150px] aspect-auto' : 'max-h-[180px]'}
         />
+        </div>
       )}
 
       {/* Header */}
+      <div className="shrink-0">
       <TimelineHeader
         isRevealed={isRevealed}
         isCorrect={isCorrect}
@@ -295,10 +302,11 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
         onCheat={handleCheat}
         onJoker={handleJoker}
       />
+      </div>
 
       {/* Optional: remove a year after a correct guess */}
       {removalState === 'choosing' && (
-        <div className="bg-[var(--color-bg-card)] border border-white/10 rounded-2xl p-4 space-y-3">
+        <div className="shrink-0 bg-[var(--color-bg-card)] border border-white/10 rounded-2xl p-3 space-y-2">
           <p className="text-xs font-black uppercase tracking-widest text-center opacity-60">
             {t('modes.timeline.removePrompt')}
           </p>
@@ -317,7 +325,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
       )}
 
       {removalState === 'done' && (
-        <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-3 text-center">
+        <div className="shrink-0 bg-green-500/10 border border-green-500/30 rounded-2xl p-2 text-center">
           <p className="text-xs font-black uppercase tracking-widest text-green-400">
             {t('modes.timeline.removed')}
           </p>
@@ -325,6 +333,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
       )}
 
       {/* Timeline */}
+      <div className="flex-1 min-h-0 overflow-y-auto">
       <TimelineSlots
         timelineYears={timelineYears}
         selectedSlot={selectedSlot}
@@ -337,6 +346,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
         axis={axis}
         onSelect={handleDrop}
       />
+      </div>
 
       {/* Footer */}
       <footer className="fixed bottom-0 left-0 right-0 px-4 pb-6 pt-8 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/90 to-transparent z-[60]">

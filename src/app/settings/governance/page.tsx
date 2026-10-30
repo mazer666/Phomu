@@ -8,6 +8,7 @@ import type {
   HintReleasePolicy,
   OverrideGovernance,
 } from '@/types/game-state';
+import { Icon } from '@/components/art/Icon';
 
 export default function SettingsGovernancePage() {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ export default function SettingsGovernancePage() {
   return (
     <main className="min-h-screen max-w-3xl mx-auto p-4 md:p-8 space-y-6">
       <Header
-        title={`🧠 ${t('settings.governance.title')}`}
+        title={`${t('settings.governance.title')}`}
         onBack={() => router.push('/settings')}
         gameIsActive={gameIsActive}
         onBackToGame={() => router.push('/game')}
@@ -78,6 +79,7 @@ export default function SettingsGovernancePage() {
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-5 space-y-4">
         <h2 className="text-sm font-black uppercase tracking-widest opacity-60">
+          <Icon name="brain" size={20} className="text-[var(--color-accent)]" />
           {t('settings.governance.gameRules')}
         </h2>
         <ToggleRow
