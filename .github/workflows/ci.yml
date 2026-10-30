@@ -104,7 +104,11 @@ jobs:
 
   e2e:
     name: End-to-end smoke (Playwright)
-    runs-on: ubuntu-latest
+    # WHY the pinned image: `ubuntu-latest` migrated to Ubuntu 26, and the
+    # Playwright version of the repository does not know that distribution
+    # yet — the installation of the browser and its system packages fails
+    # there. The job runs on the last image that Playwright supports.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - name: Checkout
