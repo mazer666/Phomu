@@ -16,9 +16,10 @@ import { useTranslation } from 'react-i18next';
 import type { RoundQuestion, SongIdentity } from '@/core/types';
 import { applyCheat, dropTimelineYear, submit } from '@/core/session-service';
 import { useGameStore } from '@/stores/game-store';
+import { useOrientation } from '@/hooks/useOrientation';
 import { MusicPlayer } from '../MusicPlayer';
 import { TimelineHeader } from './TimelineHeader';
-import { TimelineSlots } from './TimelineSlots';
+import { TimelineSlots, type TimelineAxis } from './TimelineSlots';
 import {
   DECADE_HINT_FALLBACK_KEY,
   decadeOf,
@@ -63,6 +64,13 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
 
   const currentPlayerId = turnOrder[currentTurnIndex];
 
+  // WHY the orientation: the portrait is a phone that is held upright, and
+  // the years are read from top to bottom there. The landscape is a tablet
+  // on the table — and a timeline that runs from left to right is the
+  // picture everybody expects.
+  const { isLandscape } = useOrientation();
+  const axis: TimelineAxis = isLandscape ? 'horizontal' : 'vertical';
+
   // Number formats of the active locale (years without a thousands separator)
   const numberFormat = useMemo(
     () => new Intl.NumberFormat(i18n.language),
@@ -100,6 +108,10 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   const [identity, setIdentity] = useState<SongIdentity | null>(null);
   const [correctSlot, setCorrectSlot] = useState<number | null>(null);
   const [isRevealed, setIsRevealed] = useState(false);
+  // WHY the flag: a round can be revealed without an answer — the round
+  // timed out, or the table skipped it. Then there is nothing to judge, and
+  // the slot must not show a wrong placement and the year 0.
+  const [hasAnswer, setHasAnswer] = useState(false);
   const [removalState, setRemovalState] = useState<RemovalState>('none');
   const [cheatActive, setCheatActive] = useState(false);
   const [cheatHint, setCheatHint] = useState<string>('');
@@ -123,6 +135,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
       answeredInSeconds
     );
     const detail = result.feedback.detail;
+    setHasAnswer(true);
     setIsCorrect(result.score.isCorrect);
     setIdentity(result.feedback.identity);
     setCorrectSlot(detail.slot ?? null);
@@ -227,7 +240,15 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   }, [selectedSlot, isRevealed, numSlots, handleReveal]);
 
   return (
-    <div className="flex flex-col px-4 py-6 gap-5 max-w-xl mx-auto pb-44">
+    <div
+      className={[
+        'flex flex-col px-4 gap-5 mx-auto pb-44',
+        // WHY the width: the landscape has the whole width of the phase
+        // column for the timeline — a timeline that runs from left to right
+        // needs it. The portrait keeps the narrow column of the phone.
+        isLandscape ? 'py-4 max-w-none' : 'py-6 max-w-xl',
+      ].join(' ')}
+    >
       {/* Modus-Banner */}
       <div className="w-full flex items-center justify-between bg-cyan-500/10 border border-cyan-500/20 rounded-2xl px-4 py-2.5">
         <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400">
@@ -307,7 +328,9 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
         correctSlot={correctSlot}
         validSlotSet={validSlotSet}
         isRevealed={isRevealed}
+        hasAnswer={hasAnswer}
         identity={identity}
+        axis={axis}
         onSelect={handleDrop}
       />
 

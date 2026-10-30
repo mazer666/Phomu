@@ -105,6 +105,15 @@ export interface TimelineSlotParams {
   readonly isAnswerCorrect: boolean;
   /** Whether the round was revealed. */
   readonly isRevealed: boolean;
+  /**
+   * Whether an answer of the player reached the base.
+   *
+   * WHY the flag exists: a round can also be revealed without an answer —
+   * the round timed out, or the table skipped it. Then there is nothing to
+   * judge: the slot would show a wrong placement and the year `0`, because
+   * the base has no answer and no identity to show.
+   */
+  readonly hasAnswer: boolean;
   /** The year that follows the slot, if the slot has one. */
   readonly yearAfter?: number;
 }
@@ -127,6 +136,7 @@ export function describeTimelineSlot(
     correctSlot,
     isAnswerCorrect,
     isRevealed,
+    hasAnswer,
     yearAfter,
   } = params;
 
@@ -138,6 +148,13 @@ export function describeTimelineSlot(
 
   if (!isRevealed) {
     return { kind: isTarget ? 'placed' : 'open', index, yearAfter };
+  }
+
+  // WHY the case: a round without an answer is not a wrong answer. The
+  // placement of the player stays visible, but the round carries no
+  // judgement — the base has no answer to judge.
+  if (!hasAnswer) {
+    return { kind: isTarget ? 'placed' : 'dimmed', index, yearAfter };
   }
 
   if (isTarget) {

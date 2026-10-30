@@ -551,6 +551,10 @@ M5 makes the interface usable and fast from 360 px to 430 px.
   on the right. In portrait both screens stay one column (`UI-020`).
 - **M5.10** A rotation does not interrupt the running game: the round, the
   score, the drawn song and the answers survive it (`UI-021`).
+- **M5.11** The Timeline mode draws its axis along the shape of the
+  viewport: the portrait reads the years from top to bottom, the landscape
+  runs the timeline from left to right — the years are the marks on the
+  line, the slots are the gaps between them.
 
 ## Explicit non-goals
 

@@ -78,6 +78,7 @@ describe('the state of a slot', () => {
     correctSlot: null,
     isAnswerCorrect: false,
     isRevealed: false,
+    hasAnswer: true,
   };
 
   it('draws a free slot before the reveal', () => {
@@ -97,6 +98,33 @@ describe('the state of a slot', () => {
   it('draws the joker slot again after the reveal', () => {
     expect(
       describeTimelineSlot({ ...base, jokerSlot: 1, isRevealed: true }).kind
+    ).toBe('dimmed');
+  });
+
+  it('judges nothing in a round without an answer', () => {
+    // WHY: a round can be revealed without an answer — the round timed
+    // out, or the table skipped it. Then the placement of the player stays
+    // visible, but the round carries no judgement: the base has no answer
+    // and no identity, so the slot would show the year `0`.
+    expect(
+      describeTimelineSlot({
+        ...base,
+        selectedSlot: 1,
+        correctSlot: 2,
+        isRevealed: true,
+        hasAnswer: false,
+      }).kind
+    ).toBe('placed');
+  });
+
+  it('draws no hint in a round without an answer', () => {
+    expect(
+      describeTimelineSlot({
+        ...base,
+        correctSlot: 2,
+        isRevealed: true,
+        hasAnswer: false,
+      }).kind
     ).toBe('dimmed');
   });
 

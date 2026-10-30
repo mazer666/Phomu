@@ -9,6 +9,7 @@
 import { useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useOrientation } from '@/hooks/useOrientation';
 import type { GameMode } from '@/config/game-config';
 import type { RoundQuestion } from '@/core/types';
 import { SurvivorMode } from './modes/SurvivorMode';
@@ -43,13 +44,21 @@ interface QuestionPhaseProps {
   onReroll?: () => void;
 }
 
-/** Modes in which the "everyone done → reveal" button is shown */
+/**
+ * Modes in which the "everyone done → reveal" button is shown.
+ *
+ * WHY the timeline is not on the list: the mode has its own button, and it
+ * sends the answer of the player to the base before it releases the
+ * solution. The generic button would release the solution without the
+ * answer — the round would be judged without a judgement, and the slot
+ * would show a wrong placement and the year `0`.
+ */
 const MODES_WITH_REVEAL_BUTTON: GameMode[] = [
   'survivor',
   'vibe-check',
   'hint-master',
-  'timeline',
   // lyrics and cover-confusion have their own buttons in the mode
+  // timeline has its own button as well — it has to send the answer first
 ];
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -62,6 +71,9 @@ export function QuestionPhase({
   onReroll,
 }: QuestionPhaseProps) {
   const { t } = useTranslation();
+  // WHY the orientation: the landscape gives the mode the whole width of
+  // the phase column — the timeline runs from left to right there.
+  const { isLandscape } = useOrientation();
 
   const handleAnswered = useCallback(
     (isCorrect: boolean, points: number, answeredInSeconds?: number) => {
@@ -71,7 +83,12 @@ export function QuestionPhase({
   );
 
   return (
-    <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
+    <div
+      className={[
+        'w-full mx-auto flex flex-col items-center',
+        isLandscape ? 'max-w-none' : 'max-w-2xl',
+      ].join(' ')}
+    >
       {/* Modus-spezifischer Inhalt */}
       {currentMode === 'survivor' && (
         <SurvivorMode question={question} onAnswer={handleAnswered} />

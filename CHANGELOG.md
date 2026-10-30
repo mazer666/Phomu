@@ -86,8 +86,26 @@ core, the bridges and the proof that both play the same game.
   doc), *Rust Boundaries* (the dependency rule) and *Conformance* (the shared
   core against the web shell).
 
+### Added — the timeline runs from left to right in the landscape
+
+The Timeline mode draws its axis along the shape of the viewport. The
+portrait reads the years from top to bottom; the landscape — a tablet on the
+table — runs the timeline from left to right, with the years as the marks
+on the line and the slots as the gaps between them. The mode uses the whole
+width of the phase column there, and the line scrolls when the timeline
+grows beyond it.
+
 ### Fixed
 
+- **A round of the Timeline mode could be released without the answer.** The
+  generic button "everyone's done → reveal" was offered in the Timeline mode
+  as well. It released the solution of the round **without** sending the
+  answer to the base — the round was judged without a judgement: the slot
+  showed a wrong placement and the year `0`. The mode has its own button,
+  and it sends the answer before it releases the solution; the generic button
+  belongs to the modes that have no own one. A round that is revealed
+  without an answer (the round timed out, the table skipped it) now keeps
+  the placement of the player and carries no judgement.
 - **The quick game showed an empty screen.** Starting a song from the library
   put the shell into the phase `question` without a question — the core never
   drew a card, and the player was left in front of an empty game screen. The
