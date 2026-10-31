@@ -176,8 +176,11 @@ android {
         applicationId = "de.phomu"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = (project.findProperty("phomu.versionCode")?.toString()?.toInt() ?: 1)
+        // WHY the version comes from the build: the version belongs to the
+        // decision of the release, and the release pipeline is what decides
+        // it. A build without the property keeps the version of the source.
+        versionName = project.findProperty("phomu.versionName")?.toString() ?: "0.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

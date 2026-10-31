@@ -151,7 +151,7 @@ class BridgeRoundTripTest {
                 timelineSlot = 0u,
                 hintLevel = null,
                 knewWhat = null,
-                pickedFake = null,
+                pickedLine = null,
                 claimed = null,
                 mood = null,
                 cheatUsed = null,

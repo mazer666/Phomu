@@ -1002,7 +1002,7 @@ private fun uniffiCheckApiChecksums(lib: IntegrityCheckingUniffiLib) {
     if (lib.uniffi_phomu_ffi_checksum_func_phomu_abi_accepts() != 31963.toShort()) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_phomu_ffi_checksum_func_phomu_abi_version() != 1317.toShort()) {
+    if (lib.uniffi_phomu_ffi_checksum_func_phomu_abi_version() != 46792.toShort()) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
     if (lib.uniffi_phomu_ffi_checksum_func_phomu_abi_versions() != 25775.toShort()) {
@@ -1348,9 +1348,14 @@ data class PhomuAnswer (
      */
     var `knewWhat`: kotlin.String?, 
     /**
-     * Whether the picked line was the invented one — the Lyrics mode.
+     * The line the player picked — the Lyrics mode.
+     *
+     * WHY the line and not the flag: the shell cannot know which line is
+     * the invented one — that is the answer of the round. The shell names
+     * the line it picked, and the base decides (the web shell does it the
+     * same way).
      */
-    var `pickedFake`: kotlin.Boolean?, 
+    var `pickedLine`: kotlin.String?, 
     /**
      * Whether the player recognised the song — the bonus round of the Lyrics
      * mode.
@@ -1400,7 +1405,7 @@ public object FfiConverterTypePhomuAnswer: FfiConverterRustBuffer<PhomuAnswer> {
             FfiConverterOptionalUInt.read(buf),
             FfiConverterOptionalUInt.read(buf),
             FfiConverterOptionalString.read(buf),
-            FfiConverterOptionalBoolean.read(buf),
+            FfiConverterOptionalString.read(buf),
             FfiConverterOptionalBoolean.read(buf),
             FfiConverterOptionalString.read(buf),
             FfiConverterOptionalBoolean.read(buf),
@@ -1417,7 +1422,7 @@ public object FfiConverterTypePhomuAnswer: FfiConverterRustBuffer<PhomuAnswer> {
             FfiConverterOptionalUInt.allocationSize(value.`timelineSlot`) +
             FfiConverterOptionalUInt.allocationSize(value.`hintLevel`) +
             FfiConverterOptionalString.allocationSize(value.`knewWhat`) +
-            FfiConverterOptionalBoolean.allocationSize(value.`pickedFake`) +
+            FfiConverterOptionalString.allocationSize(value.`pickedLine`) +
             FfiConverterOptionalBoolean.allocationSize(value.`claimed`) +
             FfiConverterOptionalString.allocationSize(value.`mood`) +
             FfiConverterOptionalBoolean.allocationSize(value.`cheatUsed`) +
@@ -1433,7 +1438,7 @@ public object FfiConverterTypePhomuAnswer: FfiConverterRustBuffer<PhomuAnswer> {
             FfiConverterOptionalUInt.write(value.`timelineSlot`, buf)
             FfiConverterOptionalUInt.write(value.`hintLevel`, buf)
             FfiConverterOptionalString.write(value.`knewWhat`, buf)
-            FfiConverterOptionalBoolean.write(value.`pickedFake`, buf)
+            FfiConverterOptionalString.write(value.`pickedLine`, buf)
             FfiConverterOptionalBoolean.write(value.`claimed`, buf)
             FfiConverterOptionalString.write(value.`mood`, buf)
             FfiConverterOptionalBoolean.write(value.`cheatUsed`, buf)
@@ -2242,6 +2247,68 @@ public object FfiConverterTypePhomuRevealView: FfiConverterRustBuffer<PhomuRevea
             FfiConverterInt.write(value.`year`, buf)
             FfiConverterBoolean.write(value.`isCorrect`, buf)
             FfiConverterUInt.write(value.`pointsAwarded`, buf)
+    }
+}
+
+
+
+/**
+ * The context of the round — what the mode needs to draw itself.
+ *
+ * WHY the shell cannot compute it: the slots of the timeline depend on the
+ * year of the song, and the year of the song is the answer of the round.
+ * The base therefore computes them.
+ *
+ * EXAMPLE: the context of a Timeline round carries the slots `0`, `1` and
+ * `2` and the years `1970`, `1980` and `1990`.
+ */
+data class PhomuRoundContext (
+    /**
+     * The years that lie on the timeline.
+     */
+    var `timelineYears`: List<kotlin.Int>, 
+    /**
+     * The slots of the timeline, in which the song may be placed.
+     */
+    var `timelineSlots`: List<kotlin.UInt>, 
+    /**
+     * The genre of the song.
+     */
+    var `genre`: kotlin.String, 
+    /**
+     * The pack the song belongs to.
+     */
+    var `pack`: kotlin.String?
+) {
+    
+    companion object
+}
+
+/**
+ * @suppress
+ */
+public object FfiConverterTypePhomuRoundContext: FfiConverterRustBuffer<PhomuRoundContext> {
+    override fun read(buf: ByteBuffer): PhomuRoundContext {
+        return PhomuRoundContext(
+            FfiConverterSequenceInt.read(buf),
+            FfiConverterSequenceUInt.read(buf),
+            FfiConverterString.read(buf),
+            FfiConverterOptionalString.read(buf),
+        )
+    }
+
+    override fun allocationSize(value: PhomuRoundContext) = (
+            FfiConverterSequenceInt.allocationSize(value.`timelineYears`) +
+            FfiConverterSequenceUInt.allocationSize(value.`timelineSlots`) +
+            FfiConverterString.allocationSize(value.`genre`) +
+            FfiConverterOptionalString.allocationSize(value.`pack`)
+    )
+
+    override fun write(value: PhomuRoundContext, buf: ByteBuffer) {
+            FfiConverterSequenceInt.write(value.`timelineYears`, buf)
+            FfiConverterSequenceUInt.write(value.`timelineSlots`, buf)
+            FfiConverterString.write(value.`genre`, buf)
+            FfiConverterOptionalString.write(value.`pack`, buf)
     }
 }
 
@@ -3897,6 +3964,10 @@ sealed class PhomuRoundView {
          */
         val `options`: List<kotlin.String>, 
         /**
+         * The context of the round — what the mode needs to draw itself.
+         */
+        val `context`: PhomuRoundContext, 
+        /**
          * The number of points the round is worth.
          */
         val `pointsPossible`: kotlin.UInt, 
@@ -3947,6 +4018,7 @@ public object FfiConverterTypePhomuRoundView : FfiConverterRustBuffer<PhomuRound
                 FfiConverterString.read(buf),
                 FfiConverterSequenceString.read(buf),
                 FfiConverterSequenceString.read(buf),
+                FfiConverterTypePhomuRoundContext.read(buf),
                 FfiConverterUInt.read(buf),
                 FfiConverterBoolean.read(buf),
                 )
@@ -3977,6 +4049,7 @@ public object FfiConverterTypePhomuRoundView : FfiConverterRustBuffer<PhomuRound
                 + FfiConverterString.allocationSize(value.`mode`)
                 + FfiConverterSequenceString.allocationSize(value.`hints`)
                 + FfiConverterSequenceString.allocationSize(value.`options`)
+                + FfiConverterTypePhomuRoundContext.allocationSize(value.`context`)
                 + FfiConverterUInt.allocationSize(value.`pointsPossible`)
                 + FfiConverterBoolean.allocationSize(value.`answersLocked`)
             )
@@ -4007,6 +4080,7 @@ public object FfiConverterTypePhomuRoundView : FfiConverterRustBuffer<PhomuRound
                 FfiConverterString.write(value.`mode`, buf)
                 FfiConverterSequenceString.write(value.`hints`, buf)
                 FfiConverterSequenceString.write(value.`options`, buf)
+                FfiConverterTypePhomuRoundContext.write(value.`context`, buf)
                 FfiConverterUInt.write(value.`pointsPossible`, buf)
                 FfiConverterBoolean.write(value.`answersLocked`, buf)
                 Unit
@@ -4148,6 +4222,62 @@ public object FfiConverterOptionalTypePhomuCatalogHandle: FfiConverterRustBuffer
         } else {
             buf.put(1)
             FfiConverterTypePhomuCatalogHandle.write(value, buf)
+        }
+    }
+}
+
+
+
+
+/**
+ * @suppress
+ */
+public object FfiConverterSequenceUInt: FfiConverterRustBuffer<List<kotlin.UInt>> {
+    override fun read(buf: ByteBuffer): List<kotlin.UInt> {
+        val len = buf.getInt()
+        return List<kotlin.UInt>(len) {
+            FfiConverterUInt.read(buf)
+        }
+    }
+
+    override fun allocationSize(value: List<kotlin.UInt>): ULong {
+        val sizeForLength = 4UL
+        val sizeForItems = value.map { FfiConverterUInt.allocationSize(it) }.sum()
+        return sizeForLength + sizeForItems
+    }
+
+    override fun write(value: List<kotlin.UInt>, buf: ByteBuffer) {
+        buf.putInt(value.size)
+        value.iterator().forEach {
+            FfiConverterUInt.write(it, buf)
+        }
+    }
+}
+
+
+
+
+/**
+ * @suppress
+ */
+public object FfiConverterSequenceInt: FfiConverterRustBuffer<List<kotlin.Int>> {
+    override fun read(buf: ByteBuffer): List<kotlin.Int> {
+        val len = buf.getInt()
+        return List<kotlin.Int>(len) {
+            FfiConverterInt.read(buf)
+        }
+    }
+
+    override fun allocationSize(value: List<kotlin.Int>): ULong {
+        val sizeForLength = 4UL
+        val sizeForItems = value.map { FfiConverterInt.allocationSize(it) }.sum()
+        return sizeForLength + sizeForItems
+    }
+
+    override fun write(value: List<kotlin.Int>, buf: ByteBuffer) {
+        buf.putInt(value.size)
+        value.iterator().forEach {
+            FfiConverterInt.write(it, buf)
         }
     }
 }
@@ -4461,7 +4591,7 @@ public object FfiConverterMapStringString: FfiConverterRustBuffer<Map<kotlin.Str
         /**
          * The version of the exported surface.
          *
-         * EXAMPLE: `"1.0.0"`.
+         * EXAMPLE: `"1.1.0"`.
          */ fun `phomuAbiVersion`(): kotlin.String {
             return FfiConverterString.lift(
     uniffiRustCall() { _status ->

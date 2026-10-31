@@ -64,29 +64,18 @@ fn media_of(session: &Session, song: Option<&phomu_catalog::Song>) -> Value {
 /// places the song between the years that are already on the timeline. The
 /// slots therefore depend on the year of the song — they are computed by the
 /// base and never by the shell.
-fn context_of(session: &Session, mode: GameMode, song: Option<&phomu_catalog::Song>) -> Value {
-    let years = session.state().timeline_years.clone();
-    let mut context = json!({
-        "timelineYears": years,
-        "timelineSlots": Vec::<usize>::new(),
-        "genre": "",
-        "pack": "",
+fn context_of(context: &phomu_core::facade::RoundContext) -> Value {
+    // WHY the base computes it: the slots of the timeline depend on the year
+    // of the song, and the year of the song is the answer of the round. The
+    // base therefore builds the context once — and every shell draws the same
+    // slots.
+    json!({
+        "timelineYears": context.timeline_years,
+        "timelineSlots": context.timeline_slots,
+        "genre": context.genre,
+        "pack": context.pack,
         "coverVariation": Value::Null,
-    });
-    let Some(song) = song else {
-        return context;
-    };
-    if let Some(object) = context.as_object_mut() {
-        object.insert("genre".to_string(), json!(song.genre));
-        object.insert("pack".to_string(), json!(song.packs.first()));
-        if mode == GameMode::Timeline {
-            let slots: Vec<usize> = phomu_core::facade::valid_slots(song.year, &years)
-                .into_iter()
-                .collect();
-            object.insert("timelineSlots".to_string(), json!(slots));
-        }
-    }
-    context
+    })
 }
 
 /// The JSON of the question phase.
@@ -121,7 +110,7 @@ pub fn question_payload(view: &RoundView, session: &Session) -> Value {
         "answersLocked": question.answers_locked,
         "songId": song.map(|song| song.id.clone()).unwrap_or_default(),
         "media": media_of(session, song),
-        "context": context_of(session, question.mode, song),
+        "context": context_of(&question.context),
     })
 }
 

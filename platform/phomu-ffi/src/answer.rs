@@ -19,7 +19,7 @@
 //!     timeline_slot: Some(0),
 //!     ..PhomuAnswer::default()
 //! };
-//! assert!(to_core_answer(&answer).is_ok());
+//! assert!(to_core_answer(&answer, None).is_ok());
 //! ```
 
 use phomu_core::facade::{GameMode, KnewWhat, ModeAnswer};
@@ -42,8 +42,13 @@ pub struct PhomuAnswer {
     /// What the pilot knew: `both`, `artist`, `title` or `none` — the
     /// Hint-Master mode.
     pub knew_what: Option<String>,
-    /// Whether the picked line was the invented one — the Lyrics mode.
-    pub picked_fake: Option<bool>,
+    /// The line the player picked — the Lyrics mode.
+    ///
+    /// WHY the line and not the flag: the shell cannot know which line is
+    /// the invented one — that is the answer of the round. The shell names
+    /// the line it picked, and the base decides (the web shell does it the
+    /// same way).
+    pub picked_line: Option<String>,
     /// Whether the player recognised the song — the bonus round of the Lyrics
     /// mode.
     pub claimed: Option<bool>,
@@ -71,11 +76,18 @@ fn invalid_answer(field: &str) -> PhomuError {
 
 /// Turn the answer of the shell into the answer of the base.
 ///
+/// `invented_line` is the invented line of the Lyrics mode — the shell
+/// names the line it picked, the base decides whether it was the invented
+/// one.
+///
 /// # Errors
 /// Returns the failure `InvalidAnswer` when the answer does not carry the
 /// fields the mode needs, and `InvalidMode` when the mode is not one the
 /// base knows.
-pub fn to_core_answer(answer: &PhomuAnswer) -> Result<ModeAnswer, PhomuError> {
+pub fn to_core_answer(
+    answer: &PhomuAnswer,
+    invented_line: Option<&str>,
+) -> Result<ModeAnswer, PhomuError> {
     let mode = GameMode::from_str(&answer.mode)
         .ok_or_else(|| failure(ErrorCode::UnknownMode, &[("mode", &answer.mode)]))?;
 
@@ -105,9 +117,16 @@ pub fn to_core_answer(answer: &PhomuAnswer) -> Result<ModeAnswer, PhomuError> {
             ModeAnswer::HintMaster { level, knew }
         }
         GameMode::Lyrics => ModeAnswer::Lyrics {
-            picked_fake: answer
-                .picked_fake
-                .ok_or_else(|| invalid_answer("pickedFake"))?,
+            picked_fake: match invented_line {
+                Some(invented) => {
+                    let picked = answer
+                        .picked_line
+                        .as_deref()
+                        .ok_or_else(|| invalid_answer("pickedLine"))?;
+                    invented == picked
+                }
+                None => false,
+            },
         },
         GameMode::VibeCheck => ModeAnswer::VibeCheck {
             mood: answer.mood.clone().ok_or_else(|| invalid_answer("mood"))?,

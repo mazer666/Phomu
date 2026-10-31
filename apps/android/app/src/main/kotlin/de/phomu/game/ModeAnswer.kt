@@ -31,9 +31,14 @@ sealed interface ModeAnswerInput {
     /**
      * The line the player picked — the Lyrics mode.
      *
-     * @param pickedFake whether the picked line was the invented one
+     * WHY the line and not the flag: which line is the invented one is the
+     * answer of the round — the shell must not learn it. The shell names the
+     * line it picked, and the base decides (the web shell does it the same
+     * way).
+     *
+     * @param pickedLine the text of the line the player picked
      */
-    data class Lyrics(val pickedFake: Boolean) : ModeAnswerInput
+    data class Lyrics(val pickedLine: String) : ModeAnswerInput
 
     /**
      * The mood the player picked — the Vibe-Check mode.
@@ -84,7 +89,7 @@ fun ModeAnswerInput.toWire(mode: String): PhomuAnswer = when (this) {
         knewWhat = knewWhat,
     )
 
-    is ModeAnswerInput.Lyrics -> emptyAnswer(mode).copy(pickedFake = pickedFake)
+    is ModeAnswerInput.Lyrics -> emptyAnswer(mode).copy(pickedLine = pickedLine)
 
     is ModeAnswerInput.VibeCheck -> emptyAnswer(mode).copy(
         mood = mood,
@@ -117,7 +122,7 @@ private fun emptyAnswer(mode: String): PhomuAnswer = PhomuAnswer(
     timelineSlot = null,
     hintLevel = null,
     knewWhat = null,
-    pickedFake = null,
+    pickedLine = null,
     claimed = null,
     mood = null,
     cheatUsed = null,

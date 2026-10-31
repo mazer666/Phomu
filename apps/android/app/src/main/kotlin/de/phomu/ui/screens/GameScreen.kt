@@ -30,6 +30,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import de.phomu.bridge.BridgeVocabulary
 import de.phomu.game.GamePhase
 import de.phomu.game.LeaveGameGuard
 import de.phomu.game.GameUiState
@@ -189,20 +190,52 @@ fun GameScreen(
                     )
                 }
             }
-            items(state.options) { option ->
-                val answer = optionAnswer(state.mode, option, state.options)
-                Button(
-                    onClick = { if (answer != null) onAnswer(answer) },
-                    enabled = !state.answersLocked && answer != null,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 4.dp),
-                ) {
-                    Text(option)
+            if (state.mode == BridgeVocabulary.MODE_TIMELINE &&
+                state.timelineYears.isNotEmpty()
+            ) {
+                // WHY the slots are drawn here: the song belongs between two
+                // years. The base computes the slots, because they depend on
+                // the year of the song — and the year of the song is the
+                // answer of the round.
+                val slots = state.timelineYears.size + 1
+                items((0 until slots).toList()) { slot ->
+                    val year = state.timelineYears.getOrNull(slot)
+                    Column(modifier = Modifier.fillMaxWidth()) {
+                        if (year != null) {
+                            Text(
+                                text = year.toString(),
+                                style = MaterialTheme.typography.labelLarge,
+                            )
+                        }
+                        Button(
+                            onClick = {
+                                onAnswer(ModeAnswerInput.Timeline(slot))
+                            },
+                            enabled = !state.answersLocked,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 4.dp),
+                        ) {
+                            Text(text = (slot + 1).toString())
+                        }
+                    }
+                }
+            } else {
+                items(state.options) { option ->
+                    val answer = optionAnswer(state.mode, option)
+                    Button(
+                        onClick = { if (answer != null) onAnswer(answer) },
+                        enabled = !state.answersLocked && answer != null,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 4.dp),
+                    ) {
+                        Text(option)
+                    }
                 }
             }
             if (state.options.isNotEmpty() && state.options.all {
-                    optionAnswer(state.mode, it, state.options) == null
+                    optionAnswer(state.mode, it) == null
                 }
             ) {
                 item {
@@ -314,28 +347,23 @@ fun GameScreen(
  * of the answer belongs to which mode, and the shell fills that field with
  * what the player picked. The points of the answer are decided by the base.
  *
- * WHY two modes have no answer: the question view model of the bridge does
- * not carry the slots of the Timeline mode and drops the flag of the Lyrics
- * mode, so the shell cannot express the answer of these two modes. The
- * screen shows that the answer is not available instead of sending a wrong
- * answer. The gap is listed in the delivery report of the track.
+ * WHY the Lyrics mode names the line and not the flag: which line is the
+ * invented one is the answer of the round — the shell must not learn it.
+ * The base decides, exactly as it does for the web shell.
  *
  * @param mode the identifier of the mode
  * @param option the option the player picked
- * @param options every option of the question
  * @return the answer, or `null` when the mode cannot be answered
  */
-private fun optionAnswer(
-    mode: String,
-    option: String,
-    options: List<String>,
-): ModeAnswerInput? = when (mode) {
-    "vibe-check" -> ModeAnswerInput.VibeCheck(mood = option, cheatUsed = false)
-    "cover-confusion" -> ModeAnswerInput.CoverConfusion(
+private fun optionAnswer(mode: String, option: String): ModeAnswerInput? = when (mode) {
+    BridgeVocabulary.MODE_VIBE_CHECK ->
+        ModeAnswerInput.VibeCheck(mood = option, cheatUsed = false)
+    BridgeVocabulary.MODE_COVER_CONFUSION -> ModeAnswerInput.CoverConfusion(
         hintsUsed = 0,
         pickedArtist = option,
         selfAssess = null,
     )
-    "survivor" -> ModeAnswerInput.Survivor(guessedOneHit = false)
+    BridgeVocabulary.MODE_SURVIVOR -> ModeAnswerInput.Survivor(guessedOneHit = false)
+    BridgeVocabulary.MODE_LYRICS -> ModeAnswerInput.Lyrics(pickedLine = option)
     else -> null
 }

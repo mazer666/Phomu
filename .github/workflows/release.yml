@@ -1,0 +1,172 @@
+# Phomu — Release of the apps (Beta)
+#
+# WHAT: this workflow builds the shell of a track and publishes it as a
+# **beta** — a GitHub release with the prerelease flag, the artefact of the
+# build and the release notes of the track.
+#
+# WHY a release and not an artefact of the CI: a beta is a quality claim
+# with a version, a list of the known defects and a path for the testers to
+# report what they find (docs/releases/RELEASE-PLAN.md § 2.2). The artefact
+# of a CI run is none of that.
+#
+# WHY the version is an input and not a constant: the version belongs to the
+# decision of the release, not to the build.
+#
+# The Android track is the first one that reaches this workflow; the others
+# follow with the same shape (docs/releases/RELEASE-ANDROID.md).
+
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      track:
+        description: 'The track of the app (android)'
+        required: true
+        default: android
+        type: choice
+        options:
+          - android
+      version:
+        description: 'The version of the release, e.g. 0.2.0-beta.1'
+        required: true
+        type: string
+      prerelease:
+        description: 'Publish as a prerelease (a beta is always one)'
+        required: false
+        default: true
+        type: boolean
+
+# The workflow publishes a release — it needs to write.
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  android:
+    name: Android beta
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
+
+      - name: Setup the Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install the packages of the SDK
+        run: |
+          sdkmanager 'platform-tools' 'platforms;android-35' 'build-tools;35.0.0' \
+                      'cmake;3.22.1' 'ndk;27.3.13750724'
+
+      - name: Write the local configuration
+        run: |
+          cat > apps/android/local.properties <<EOF
+          sdk.dir=$ANDROID_HOME
+          ndk.dir=$ANDROID_HOME/ndk/27.3.13750724
+          EOF
+
+      - name: Install the dependencies of the shell
+        working-directory: apps/android
+        run: |
+          # The generators of the build read the locale files of the web shell.
+          npm ci --prefix ../..
+
+      - name: Build the unsigned artefact
+        working-directory: apps/android
+        env:
+          ANDROID_NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.3.13750724
+          VERSION: ${{ inputs.version }}
+          # The build number grows with every build of the track.
+          BUILD_CODE: ${{ github.run_number }}
+        run: ./gradlew --no-daemon :app:assembleRelease -Pphomu.versionName="$VERSION" -Pphomu.versionCode="$BUILD_CODE"
+
+      - name: Sign the artefact
+        # WHY the key is a secret: the artefact of a beta has to be
+        # installable and updatable — and only a key that lives outside the
+        # repository can sign two versions of the app in a row.
+        env:
+          KEYSTORE: ${{ secrets.PHOMU_RELEASE_KEYSTORE }}
+          KEYSTORE_PASSWORD: ${{ secrets.PHOMU_RELEASE_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.PHOMU_RELEASE_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.PHOMU_RELEASE_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -z "${KEYSTORE}" ]; then
+            echo "::error::The secret PHOMU_RELEASE_KEYSTORE is missing — see docs/releases/RELEASE-ANDROID.md §4."
+            exit 1
+          fi
+          printf '%s' "${KEYSTORE}" | base64 --decode > "$RUNNER_TEMP/phomu.keystore"
+          APK=apps/android/app/build/outputs/apk/release/app-release-unsigned.apk
+          test -f "${APK}" || { echo "::error::${APK} was not built."; exit 1; }
+          cp "${APK}" "$RUNNER_TEMP/phomu-beta.apk"
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" sign \
+            --ks "$RUNNER_TEMP/phomu.keystore" \
+            --ks-key-alias "${KEY_ALIAS}" \
+            --ks-pass "pass:${KEYSTORE_PASSWORD}" \
+            --key-pass "pass:${KEY_PASSWORD}" \
+            "$RUNNER_TEMP/phomu-beta.apk"
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify "$RUNNER_TEMP/phomu-beta.apk"
+          echo "The signature is valid."
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TRACK: ${{ inputs.track }}
+          VERSION: ${{ inputs.version }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          set -euo pipefail
+          TAG="${TRACK}-v${VERSION}"
+          NOTES=$(mktemp)
+          {
+            echo "# Phomu ${TRACK} ${VERSION}"
+            echo
+            echo "A beta of the ${TRACK} shell. The rules of the game live in the shared"
+            echo "Rust base; this artefact is the shell that draws them."
+            echo
+            echo "## What this build contains"
+            echo
+            echo "- the shell of the \`${TRACK}\` track at the commit \`${GITHUB_SHA}\`;"
+            echo "- the shared base at the version of the commit above;"
+            echo "- the known defects of the track — the list is in"
+            echo "  [the release record](docs/releases/RELEASE-RECORD-ANDROID.md)."
+            echo
+            echo "## How to install"
+            echo
+            echo "The file is an APK. Android asks for the permission to install"
+            echo "applications from this source; the key of the release signs every"
+            echo "later build as well."
+            echo
+            echo "## How to report"
+            echo
+            echo "Every report enters the defect list of the track with a severity,"
+            echo "a reproduction step and a status."
+          } > "${NOTES}"
+          gh release create "${TAG}" \
+            --target "${GITHUB_SHA}" \
+            --title "Phomu ${TRACK} ${VERSION}" \
+            --notes-file "${NOTES}" \
+            --prerelease \
+            "$RUNNER_TEMP/phomu-beta.apk"
+          echo "Published: ${TAG}"

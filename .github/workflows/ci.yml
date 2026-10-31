@@ -399,3 +399,52 @@ jobs:
       # are replaced on a regular basis and do not ship to the players.
       - name: Audit the runtime dependencies
         run: npm audit --omit=dev --audit-level=moderate
+
+  android:
+    name: Android shell (build and unit tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    # NOT SWITCHED ON YET — this job does not block the pipeline.
+    #
+    # WHY: the shell of the Android track is built with the Android SDK, and
+    # the SDK is a heavy dependency of the runner. The job reports the real
+    # state of the shell — a broken shell is visible here — but it does not
+    # turn the pipeline red, because the release pipeline builds the same
+    # artefact and *that* build is the one that matters.
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
+      - name: Setup the Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install the packages of the SDK
+        run: |
+          sdkmanager 'platform-tools' 'platforms;android-35' 'build-tools;35.0.0' \
+                      'cmake;3.22.1' 'ndk;27.3.13750724'
+      - name: Write the local configuration
+        run: |
+          cat > apps/android/local.properties <<EOF
+          sdk.dir=$ANDROID_HOME
+          ndk.dir=$ANDROID_HOME/ndk/27.3.13750724
+          EOF
+      - name: Install the dependencies
+        run: npm ci
+      - name: Build the shell and run its unit tests
+        working-directory: apps/android
+        env:
+          ANDROID_NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.3.13750724
+        run: ./gradlew --no-daemon :app:testDebugUnitTest :app:assembleDebug

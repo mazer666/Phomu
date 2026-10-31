@@ -267,11 +267,22 @@ pub fn phomu_session_answer(
     answer: PhomuAnswer,
     answered_in_seconds: Option<u32>,
 ) -> Result<PhomuScoreSnapshot, PhomuError> {
-    let core_answer = to_core_answer(&answer)?;
     let mut registry = session_of(handle.id)?;
     let Some(entry) = registry.sessions.get_mut(&handle.id) else {
         return Err(unknown_session(handle.id));
     };
+    // WHY the invented line is read here: it is the answer of the Lyrics
+    // mode, and the shell must not learn it.
+    let invented_line = entry
+        .session
+        .state()
+        .round
+        .song
+        .as_ref()
+        .and_then(|song| song.lyrics.as_ref())
+        .and_then(|lyrics| lyrics.fake.first())
+        .cloned();
+    let core_answer = to_core_answer(&answer, invented_line.as_deref())?;
     let snapshot = entry
         .session
         .submit_answer(&core_answer, answered_in_seconds)

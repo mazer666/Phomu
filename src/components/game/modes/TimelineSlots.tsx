@@ -31,7 +31,7 @@ import {
   type TimelineSlotKind,
 } from './timeline-logic';
 import { useScrollHint } from './use-scroll-hint';
-import { slotBoxClass, slotContent } from './timeline-slot-art';
+import { SlotContent, slotBoxClass } from './timeline-slot-art';
 import { Icon } from '@/components/art/Icon';
 
 /** The axis the slots are drawn on. */
@@ -217,13 +217,13 @@ export function TimelineSlots({
                     slotBoxClass(slot.kind),
                   ].join(' ')}
                 >
-                  {slotContent({
-                    kind: slot.kind,
-                    index: slot.index,
-                    identity,
-                    yearFormat,
-                    numberFormat,
-                  })}
+                  <SlotContent
+                    kind={slot.kind}
+                    index={slot.index}
+                    identity={identity}
+                    yearFormat={yearFormat}
+                    numberFormat={numberFormat}
+                  />
                 </button>
               </div>
 
@@ -330,13 +330,13 @@ export function TimelineSlots({
                     disabled={isRevealed}
                     className={['w-full', HORIZONTAL_SLOT_HEIGHT, slotBoxClass(slot.kind)].join(' ')}
                   >
-                    {slotContent({
-                    kind: slot.kind,
-                    index: slot.index,
-                    identity,
-                    yearFormat,
-                    numberFormat,
-                  })}
+                    <SlotContent
+                      kind={slot.kind}
+                      index={slot.index}
+                      identity={identity}
+                      yearFormat={yearFormat}
+                      numberFormat={numberFormat}
+                    />
                   </button>
                   {/* The tick from the slot down to the line */}
                   <div className="h-3 w-px bg-white/20" />

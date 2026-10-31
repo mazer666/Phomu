@@ -58,10 +58,13 @@ export interface SlotContentProps {
 /**
  * The content of a slot.
  *
+ * WHY a component and not a function: it reads a text of the interface, and
+ * a hook may only stand in a component.
+ *
  * @param props - What the content needs to draw itself
  * @returns The content of the box
  */
-export function slotContent({
+export function SlotContent({
   kind,
   index,
   identity,

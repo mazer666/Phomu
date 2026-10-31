@@ -18,6 +18,7 @@
 //!     mode: "timeline".to_string(),
 //!     hints: vec!["[XXX] sang 1985".to_string()],
 //!     options: Vec::new(),
+//!     context: Default::default(),
 //!     points_possible: 5,
 //!     answers_locked: false,
 //! };
@@ -51,6 +52,8 @@ pub enum PhomuRoundView {
         hints: Vec<String>,
         /// The options the mode offers.
         options: Vec<String>,
+        /// The context of the round — what the mode needs to draw itself.
+        context: PhomuRoundContext,
         /// The number of points the round is worth.
         points_possible: u32,
         /// Whether the answers are already locked in.
@@ -77,6 +80,53 @@ impl PhomuRoundView {
             PhomuRoundView::Question { .. } => "question",
             PhomuRoundView::Scoring { .. } => "scoring",
         }
+    }
+}
+
+/// The context of the round — what the mode needs to draw itself.
+///
+/// WHY the shell cannot compute it: the slots of the timeline depend on the
+/// year of the song, and the year of the song is the answer of the round.
+/// The base therefore computes them.
+///
+/// EXAMPLE: the context of a Timeline round carries the slots `0`, `1` and
+/// `2` and the years `1970`, `1980` and `1990`.
+#[derive(
+    Debug, Clone, PartialEq, Eq, Default, uniffi::Record, serde::Serialize, serde::Deserialize,
+)]
+#[serde(rename_all = "camelCase")]
+pub struct PhomuRoundContext {
+    /// The years that lie on the timeline.
+    #[serde(default)]
+    pub timeline_years: Vec<i32>,
+    /// The slots of the timeline, in which the song may be placed.
+    #[serde(default)]
+    pub timeline_slots: Vec<u32>,
+    /// The genre of the song.
+    #[serde(default)]
+    pub genre: String,
+    /// The pack the song belongs to.
+    #[serde(default)]
+    pub pack: Option<String>,
+}
+
+/// Turn the context of the base into the context of the shell.
+///
+/// WHY a function of its own: the translation belongs to the view, and the
+/// API of the core is not a rule of the bridge.
+///
+/// EXAMPLE: the slots `0` and `1` of the base become the slots `0` and `1`
+/// of the shell.
+pub fn from_core_context(context: &phomu_core::facade::RoundContext) -> PhomuRoundContext {
+    PhomuRoundContext {
+        timeline_years: context.timeline_years.clone(),
+        timeline_slots: context
+            .timeline_slots
+            .iter()
+            .map(|slot| *slot as u32)
+            .collect(),
+        genre: context.genre.clone(),
+        pack: context.pack.clone(),
     }
 }
 

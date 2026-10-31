@@ -109,6 +109,8 @@ data class MediaPlan(
  * @param mode the identifier of the mode of the round
  * @param hints the censored hints of the song
  * @param options the options the mode offers
+ * @param timelineYears the years that lie on the timeline — the Timeline mode
+ * @param timelineSlots the slots of the timeline, in which the song may lie
  * @param pointsPossible the number of points the round is worth
  * @param answersLocked whether the answers are locked in
  * @param reveal the solution of the round, after the reveal
@@ -127,6 +129,8 @@ data class GameUiState(
     val mode: String = "",
     val hints: List<String> = emptyList(),
     val options: List<String> = emptyList(),
+    val timelineYears: List<Int> = emptyList(),
+    val timelineSlots: List<Int> = emptyList(),
     val pointsPossible: Int = 0,
     val answersLocked: Boolean = false,
     val reveal: RevealContent? = null,
@@ -328,6 +332,8 @@ class GameController(
                     mode = view.mode,
                     hints = emptyList(),
                     options = emptyList(),
+                    timelineYears = emptyList(),
+                    timelineSlots = emptyList(),
                     pointsPossible = 0,
                     answersLocked = false,
                     reveal = null,
@@ -339,6 +345,11 @@ class GameController(
                     mode = view.mode,
                     hints = view.hints,
                     options = view.options,
+                    // WHY the context comes from the base: the slots of the
+                    // timeline depend on the year of the song, and the year of
+                    // the song is the answer of the round.
+                    timelineYears = view.context.timelineYears,
+                    timelineSlots = view.context.timelineSlots.map { it.toInt() },
                     pointsPossible = view.pointsPossible.toInt(),
                     answersLocked = view.answersLocked,
                     reveal = null,

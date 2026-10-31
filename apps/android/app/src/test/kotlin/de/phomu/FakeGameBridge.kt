@@ -12,6 +12,7 @@ import org.phomu.bridge.PhomuPackInfo
 import org.phomu.bridge.PhomuPlayer
 import org.phomu.bridge.PhomuPlayerScore
 import org.phomu.bridge.PhomuRevealView
+import org.phomu.bridge.PhomuRoundContext
 import org.phomu.bridge.PhomuRoundView
 import org.phomu.bridge.PhomuScoreSnapshot
 import org.phomu.bridge.PhomuSessionHandle
@@ -51,6 +52,12 @@ class FakeGameBridge : GameBridge {
         mode = "timeline",
         hints = listOf("[XXX] sang in the eighties"),
         options = emptyList(),
+        context = PhomuRoundContext(
+            timelineYears = listOf(1970, 1980),
+            timelineSlots = listOf(1u),
+            genre = "Rock",
+            pack = null,
+        ),
         pointsPossible = 5u,
         answersLocked = false,
     )

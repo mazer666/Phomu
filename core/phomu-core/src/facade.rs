@@ -83,6 +83,6 @@ pub use crate::session::round::{ModeProgress, RoundState};
 pub use crate::session::state::{SCHEMA_VERSION, Session};
 pub use crate::spoiler::censor::censor_hint;
 pub use crate::spoiler::view::{
-    DrawingView, Prompt, QuestionView, RevealView, RoundView, ScoringView, SongIdentity,
-    SongSolution,
+    DrawingView, Prompt, QuestionView, RevealView, RoundContext, RoundView, ScoringView,
+    SongIdentity, SongSolution,
 };

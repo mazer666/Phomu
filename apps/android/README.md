@@ -307,11 +307,14 @@ same crate.
    packs and two flags — no title, no artist, no year
    (`platform/phomu-ffi/src/dto.rs`, `PhomuSongSummary`). The web shell shows
    the title; the native shell cannot until the base exports a browse view.
-2. **The Timeline mode and the Lyrics mode cannot be answered.** The
-   question view model of the bridge carries the options as plain strings.
-   The slots of the Timeline mode are not part of it, and the flag that marks
-   the invented line of the Lyrics mode is dropped on the way. The shell
-   shows the question and refuses to send a wrong answer.
+2. **The Timeline mode and the Lyrics mode were not answerable.** The
+   question view model of the bridge carried the options as plain strings:
+   the slots of the Timeline mode were not part of it, and the flag that
+   marks the invented line of the Lyrics mode was dropped on the way. The
+   base now carries the **context of the round** with the question — the
+   years of the timeline and the slots, in which the song may lie — and the
+   Lyrics mode names the line the player picked instead of the flag that
+   would give the answer away. Both modes are answerable.
 3. **The scan of a card is off.** The bridge exports no entry point for the
    intent of a card, and the format of the card is a rule of the base. The
    lobby offers the random draw; the camera permission is therefore not

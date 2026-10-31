@@ -337,6 +337,7 @@ pub fn from_core_round_view(
             mode: question.mode.as_str().to_string(),
             hints: question.prompt.hints().to_vec(),
             options: question.prompt.options().to_vec(),
+            context: crate::view::from_core_context(&question.context),
             points_possible: question.points_possible,
             answers_locked: question.answers_locked,
         },

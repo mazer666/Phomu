@@ -146,10 +146,24 @@ impl Session {
         } else {
             Prompt::Hidden { hints, options }
         };
+        let timeline_slots = if mode == GameMode::Timeline {
+            crate::facade::valid_slots(song.year, &self.state.timeline_years)
+                .into_iter()
+                .collect()
+        } else {
+            Vec::new()
+        };
+        let context = crate::spoiler::view::RoundContext {
+            timeline_years: self.state.timeline_years.clone(),
+            timeline_slots,
+            genre: song.genre.clone(),
+            pack: song.packs.first().cloned(),
+        };
         QuestionView {
             round_number: self.state.current_round,
             mode,
             prompt,
+            context,
             points_possible: crate::session::ending::max_points_of(
                 mode,
                 &self.state.timeline_years,

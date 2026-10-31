@@ -114,6 +114,35 @@ impl Prompt {
     }
 }
 
+/// The context of the round — what the mode needs to draw itself.
+///
+/// WHY: the mode cannot draw itself from the hints alone. The Timeline mode
+/// needs the slots, in which the song belongs, and the years between which
+/// they lie; the shell cannot compute them, because they depend on the year
+/// of the song — and the year of the song is the solution.
+///
+/// The context therefore carries no solution: no title, no artist, no year
+/// of the song (C-1, docs/design/PLATFORM-ARCHITECTURE.md § 10.2). It
+/// carries the years that are *already* on the timeline — they are known to
+/// the players, they are on the screen.
+///
+/// EXAMPLE: the context of a Timeline round carries the slots `0`, `1` and
+/// `2` and the years `1970`, `1980` and `1990`.
+#[derive(Debug, Clone, PartialEq, Eq, Default)]
+pub struct RoundContext {
+    /// The years that lie on the timeline.
+    pub timeline_years: Vec<i32>,
+    /// The slots of the timeline, in which the song may be placed.
+    ///
+    /// WHY they are computed here: they depend on the year of the song, and
+    /// the year of the song is the answer of the round.
+    pub timeline_slots: Vec<usize>,
+    /// The genre of the song.
+    pub genre: String,
+    /// The pack the song belongs to.
+    pub pack: Option<String>,
+}
+
 /// The view model of the question phase.
 ///
 /// WHY: the view model is the boundary of the anti-spoiler guarantee: it
@@ -133,6 +162,8 @@ pub struct QuestionView {
     pub mode: GameMode,
     /// What the shell has to draw.
     pub prompt: Prompt,
+    /// The context of the round — what the mode needs to draw itself.
+    pub context: RoundContext,
     /// The number of points the round is worth at the moment.
     pub points_possible: u32,
     /// Whether the answers of the round are already locked in.
@@ -288,7 +319,7 @@ impl RoundView {
 mod tests {
     #![allow(clippy::unwrap_used, clippy::expect_used)]
 
-    use super::{Prompt, QuestionView, RoundView, SongIdentity, SongSolution};
+    use super::{Prompt, QuestionView, RoundContext, RoundView, SongIdentity, SongSolution};
     use crate::modes::GameMode;
 
     fn hidden_question() -> RoundView {
@@ -299,6 +330,7 @@ mod tests {
                 hints: vec!["[XXX] sang 1985".to_string()],
                 options: vec![],
             },
+            context: RoundContext::default(),
             points_possible: 4,
             answers_locked: false,
         })
