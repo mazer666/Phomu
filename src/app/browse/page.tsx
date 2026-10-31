@@ -234,7 +234,7 @@ export default function BrowsePage() {
               </span>
             </div>
 
-            <div className="flex items-center gap-2 h-12">
+            <div className="flex items-center gap-2 h-12 flex-wrap">
               <button
                 onClick={() => setAdminMode(!adminMode)}
                 className={`px-4 h-full rounded-2xl flex items-center justify-center gap-2 transition-all border text-[10px] font-black uppercase tracking-wider ${adminMode ? 'bg-red-500/10 border-red-500 text-red-400' : 'bg-white/5 border-white/5 text-white/50 hover:bg-white/10'}`}
@@ -282,7 +282,7 @@ export default function BrowsePage() {
                     onClick={() =>
                       setSortOrder((o) => (o === 'asc' ? 'desc' : 'asc'))
                     }
-                    className="text-[10px] font-black text-blue-500 hover:underline"
+                    className="text-[10px] font-black text-blue-500 hover:underline min-h-[44px] px-2"
                   >
                     {sortOrder === 'asc'
                       ? t('browse.sortAscending')
@@ -445,7 +445,7 @@ export default function BrowsePage() {
                   <button
                     key={size}
                     onClick={() => setPageSize(size)}
-                    className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all ${pageSize === size ? 'bg-blue-600 text-white shadow-lg' : 'text-white/40 hover:text-white'}`}
+                    className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all min-h-[44px] ${pageSize === size ? 'bg-blue-600 text-white shadow-lg' : 'text-white/40 hover:text-white'}`}
                   >
                     {size === 'all' ? t('common.all') : size}
                   </button>
@@ -511,7 +511,7 @@ export default function BrowsePage() {
                     setCurrentPage((p) => Math.min(totalPages, p + 5))
                   }
                   disabled={currentPage > totalPages - 5}
-                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20"
+                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20 min-h-[44px]"
                 >
                   +5
                 </button>
@@ -520,7 +520,7 @@ export default function BrowsePage() {
                     setCurrentPage((p) => Math.min(totalPages, p + 10))
                   }
                   disabled={currentPage > totalPages - 10}
-                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20"
+                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20 min-h-[44px]"
                 >
                   +10
                 </button>
@@ -656,7 +656,7 @@ export default function BrowsePage() {
                     setCurrentPage((p) => Math.min(totalPages, p + 5))
                   }
                   disabled={currentPage > totalPages - 5}
-                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20"
+                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20 min-h-[44px]"
                 >
                   +5
                 </button>
@@ -665,7 +665,7 @@ export default function BrowsePage() {
                     setCurrentPage((p) => Math.min(totalPages, p + 10))
                   }
                   disabled={currentPage > totalPages - 10}
-                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20"
+                  className="px-3 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-black text-white/40 hover:text-blue-400 hover:bg-blue-400/10 transition-all disabled:opacity-20 min-h-[44px]"
                 >
                   +10
                 </button>

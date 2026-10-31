@@ -57,7 +57,7 @@ export function NavBar() {
     >
       {/* ── Main bar ─────────────────────────────────── */}
       <div
-        className="flex items-center gap-2 px-4 py-2 border-b"
+        className="flex items-center gap-2 px-4 py-2 border-b flex-wrap"
         style={{ borderColor: 'var(--color-border)' }}
       >
         {/* Logo */}
@@ -97,7 +97,7 @@ export function NavBar() {
         {/* Settings button */}
         <button
           onClick={() => setSettingsOpen((o) => !o)}
-          className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-lg transition-colors"
+          className="shrink-0 w-11 h-11 rounded-xl flex items-center justify-center text-lg transition-colors"
           style={{
             backgroundColor: settingsOpen
               ? 'var(--color-accent)33'

@@ -849,7 +849,7 @@ export default function LobbyPage() {
                                               : team.id
                                           )
                                         }
-                                        className="px-3 py-1.5 rounded-xl text-[9px] font-black uppercase transition-all"
+                                        className="px-3 py-1.5 rounded-xl text-[9px] font-black uppercase transition-all min-h-[44px]"
                                         style={{
                                           backgroundColor:
                                             player.teamId === team.id
@@ -991,7 +991,7 @@ export default function LobbyPage() {
                 initSession();
                 goTo(1);
               }}
-              className="py-2 px-3 text-[10px] font-black uppercase tracking-widest opacity-30 hover:opacity-100 hover:text-red-500 transition-all ml-auto rounded-xl min-h-[36px]"
+              className="py-2 px-3 text-[10px] font-black uppercase tracking-widest opacity-30 hover:opacity-100 hover:text-red-500 transition-all ml-auto rounded-xl min-h-[44px]"
             >
               {t('lobby.reset')}
             </button>

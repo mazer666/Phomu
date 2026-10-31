@@ -19,6 +19,7 @@ import {
   LAST_ROUND_HEADLINE_KEYS,
   LAST_ROUND_SUBLINE_KEYS,
 } from '@/i18n/variant-keys';
+import { Icon } from '@/components/art/Icon';
 
 interface LastRoundBannerProps {
   message: LastRoundMessage | null;
@@ -39,7 +40,7 @@ export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
     );
     if (index < 0) return message;
     return {
-      emoji: message.emoji,
+      symbol: message.symbol,
       headline: t(
         LAST_ROUND_HEADLINE_KEYS[index % LAST_ROUND_HEADLINE_KEYS.length]!,
         {
@@ -69,7 +70,7 @@ export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
     <AnimatePresence>
       {translated && (
         <motion.div
-          key={`${translated.headline}-${translated.emoji}`}
+          key={`${translated.headline}-${translated.symbol}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.4 } }}
@@ -100,7 +101,7 @@ export function LastRoundBanner({ message, onDismiss }: LastRoundBannerProps) {
             }}
             className="text-7xl mb-6 select-none relative z-10"
           >
-            {translated.emoji}
+            <Icon name={translated.symbol} size={72} />
           </motion.div>
 
           {/* Headline */}

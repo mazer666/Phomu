@@ -121,7 +121,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
   return (
     // WHY the height: the mode fills the phase of the round and never
     // scrolls the page — the player is bounded, the moods take the rest.
-    <div className="flex flex-col items-center justify-center flex-1 min-h-0 px-6 py-3 gap-4 pb-24">
+    <div className="flex flex-col items-center justify-center flex-1 min-h-0 px-6 py-3 gap-4 pb-24 w-full">
       {/* Mode banner */}
       <div className="shrink-0 w-full max-w-sm flex items-center justify-between bg-teal-500/10 border border-teal-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-teal-400">

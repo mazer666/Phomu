@@ -6,72 +6,75 @@
  * YDKJ style.
  */
 
+import type { IconName } from '@/components/art/Icon';
+
 export interface LastRoundMessage {
   headline: string;
   subline: string;
-  emoji: string;
+  /** The symbol that stands for the message — drawn, not an emoji. */
+  symbol: IconName;
 }
 
 export const LAST_ROUND_MESSAGES: LastRoundMessage[] = [
   {
     headline: 'LETZTE RUNDE',
     subline: 'Jetzt oder nie. Für immer oder gar nicht.',
-    emoji: '🔔',
+    symbol: 'flag',
   },
   {
     headline: 'DAS FINALE',
     subline: 'Wer nicht alles gibt, bereut es auf dem Weg nach Hause.',
-    emoji: '🏁',
+    symbol: 'flag',
   },
   {
     headline: 'ALLES AUF EINE KARTE',
     subline: 'Eine Runde noch. Dann wird abgerechnet.',
-    emoji: '🃏',
+    symbol: 'card',
   },
   {
     headline: 'SHOWDOWN',
     subline: 'Der letzte Zug bestimmt die Legende.',
-    emoji: '🥊',
+    symbol: 'card',
   },
   {
     headline: 'LAST CALL',
     subline: 'Der Barkeeper macht Licht. Letzte Runde, Leute.',
-    emoji: '🍺',
+    symbol: 'flag',
   },
   {
     headline: 'JETZT ODER NIE',
     subline: 'Runde. Nummer. Letzte. Das ist Mathematik.',
-    emoji: '💥',
+    symbol: 'flag',
   },
   {
     headline: 'ENDSPURT',
     subline: 'Die Punkte, die du jetzt nicht holst, holt jemand anderes.',
-    emoji: '🏃',
+    symbol: 'trophy',
   },
   {
     headline: 'VORHANG AUF',
     subline: 'Das Finale läuft. Kein Zurück mehr.',
-    emoji: '🎬',
+    symbol: 'trophy',
   },
   {
     headline: 'DU HAST NUR NOCH EINE CHANCE',
     subline: 'Nein, wirklich. Eine. Letzte. Runde.',
-    emoji: '⏳',
+    symbol: 'flag',
   },
   {
     headline: 'FINALE!',
     subline: 'Macht euch bereit für den großen Auftritt.',
-    emoji: '🎭',
+    symbol: 'flag',
   },
   {
     headline: 'NOCH EINMAL ALLES GEBEN',
     subline: 'Dann Chips und Selbstmitleid. Aber erst die Runde.',
-    emoji: '🎯',
+    symbol: 'card',
   },
   {
     headline: 'ZEIT IST UM',
     subline: 'Die Uhr hat aufgehört zu ticken. Die Runde läuft trotzdem.',
-    emoji: '⏰',
+    symbol: 'trophy',
   },
 ];
 

@@ -21,7 +21,7 @@
  */
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { SongIdentity } from '@/core/types';
 import {
@@ -30,6 +30,8 @@ import {
   timelineSlotCount,
   type TimelineSlotKind,
 } from './timeline-logic';
+import { useScrollHint } from './use-scroll-hint';
+import { slotBoxClass, slotContent } from './timeline-slot-art';
 import { Icon } from '@/components/art/Icon';
 
 /** The axis the slots are drawn on. */
@@ -71,6 +73,15 @@ interface TimelineSlotsProps {
  * column.
  */
 const HORIZONTAL_SLOT_HEIGHT = 'h-16';
+
+/**
+ * The smallest width of a slot on the horizontal axis.
+ *
+ * WHY 72 pixels: the slot has to be hit with a thumb — below 44 pixels it
+ * is a target that misses. Above that, the slots share the width that is
+ * left, so that the years of the timeline stay visible.
+ */
+const HORIZONTAL_SLOT_MIN_WIDTH = 'min-w-[72px]';
 
 /**
  * The distance from the top of the axis to the line.
@@ -116,6 +127,10 @@ export function TimelineSlots({
   const numSlots = timelineSlotCount(timelineYears.length);
   const isAnswerCorrect = isTimelineSlotCorrect(selectedSlot, validSlotSet);
 
+  // The area that scrolls — the timeline grows with every correct answer.
+  const bereich = useRef<HTMLDivElement>(null);
+  const hinweis = useScrollHint(bereich);
+
   // The pure layer decides how the slot is drawn; the component only
   // maps the answer to a class name.
   const slots = Array.from({ length: numSlots }, (_, slotIdx) =>
@@ -131,88 +146,11 @@ export function TimelineSlots({
     })
   );
 
-  /**
-   * The class of the box of a slot.
-   *
-   * @param kind - The kind of the slot
-   * @returns The class of the box
-   */
-  function boxClass(kind: TimelineSlotKind): string {
-    return [
-      'rounded-xl border-2 border-dashed flex items-center justify-center transition-all focus:outline-none',
-      // The player placed the song here
-      kind === 'placed' ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10' : '',
-      // A free slot before the reveal
-      kind === 'open' ? 'border-white/10 bg-white/[0.02] hover:border-white/20' : '',
-      // Correct: green only where user placed
-      kind === 'correct' ? 'border-green-500 bg-green-500/10' : '',
-      // Wrong: red where user placed
-      kind === 'wrong' ? 'border-red-500 bg-red-500/10' : '',
-      // Dim green hint on the canonical slot of a wrong answer
-      kind === 'hint' ? 'border-green-500/50 bg-green-500/5' : '',
-      kind === 'dimmed' ? 'border-white/5 bg-transparent' : '',
-    ].join(' ');
-  }
-
-  /**
-   * The content of a slot.
-   *
-   * @param kind - The kind of the slot
-   * @param slotIdx - The index of the slot
-   * @returns The content of the box
-   */
-  function slotContent(kind: TimelineSlotKind, slotIdx: number) {
-    if (kind === 'placed') {
-      return (
-        <div className="flex items-center gap-2 px-3">
-          <Icon name="note" size={16} className="text-[var(--color-accent)]" />
-          <p className="text-[10px] font-black uppercase tracking-widest">
-            {t('modes.timeline.placed')}
-          </p>
-        </div>
-      );
-    }
-    if (kind === 'correct' || kind === 'wrong') {
-      return (
-        <div className="flex items-center gap-3 px-3 text-left">
-          <div>
-            <p className="text-xs font-black uppercase truncate max-w-[160px]">
-              {identity?.artist}
-            </p>
-            <p className="text-[9px] opacity-40 uppercase truncate max-w-[160px] leading-none mb-0.5">
-              {identity?.title}
-            </p>
-            <p className="text-lg font-black">
-              {yearFormat.format(identity?.year ?? 0)}
-            </p>
-          </div>
-        </div>
-      );
-    }
-    if (kind === 'open') {
-      return (
-        <span className="text-[9px] font-black opacity-10 uppercase tracking-widest">
-          {numberFormat.format(slotIdx + 1)}
-        </span>
-      );
-    }
-    if (kind === 'hint') {
-      return (
-        <div className="flex items-center gap-2 text-green-400 font-black px-3">
-          <span>←</span>
-          <span className="text-[10px] uppercase tracking-widest">
-            {t('modes.timeline.here')}
-          </span>
-        </div>
-      );
-    }
-    return null;
-  }
-
   // ── The vertical axis — the portrait ──────────────────────────
   if (axis === 'vertical') {
     return (
-      <div className="w-full flex flex-col">
+      <div className="relative">
+      <div ref={bereich} className="w-full flex flex-col overflow-y-auto max-h-full">
         {slots.map((slot) => {
           const yearAfter = slot.yearAfter;
 
@@ -276,10 +214,16 @@ export function TimelineSlots({
                   className={[
                     'flex-1',
                     numSlots <= 5 ? 'h-16' : numSlots <= 7 ? 'h-14' : 'h-12',
-                    boxClass(slot.kind),
+                    slotBoxClass(slot.kind),
                   ].join(' ')}
                 >
-                  {slotContent(slot.kind, slot.index)}
+                  {slotContent({
+                    kind: slot.kind,
+                    index: slot.index,
+                    identity,
+                    yearFormat,
+                    numberFormat,
+                  })}
                 </button>
               </div>
 
@@ -300,6 +244,14 @@ export function TimelineSlots({
           );
         })}
       </div>
+      {/* Der Hinweis: die Liste lässt sich schieben. */}
+      {hinweis && (
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-[var(--color-bg)] to-transparent"
+          aria-hidden="true"
+        />
+      )}
+      </div>
     );
   }
 
@@ -308,87 +260,116 @@ export function TimelineSlots({
   // The slots stand on a line, the years are the marks on it. The line
   // runs under the boxes and meets the mark of every year. A year is the
   // mark *between* two slots — the song belongs before it or after it.
+  //
+  // WHY the slots shrink: the timeline grows with every correct answer. A
+  // fixed width would push the years on the far end out of the screen —
+  // and a year that cannot be seen is a year the player cannot place the
+  // song against. The slots share the width that is left and only scroll
+  // when even the smallest slot does not fit any more.
   return (
-    <div className="w-full overflow-x-auto pb-2">
-      <div className="relative flex min-w-max items-stretch">
-        {/* The line of the timeline */}
-        <div
-          className="absolute left-0 right-0 h-px bg-white/20"
-          style={{ top: HORIZONTAL_AXIS_TOP }}
-        />
+    <div className="relative w-full">
+      <div ref={bereich} className="w-full overflow-x-auto overflow-y-hidden pb-1">
+        <div className="relative flex items-stretch w-full">
+          {/* The line of the timeline */}
+          <div
+            className="absolute left-0 right-0 h-px bg-white/20"
+            style={{ top: HORIZONTAL_AXIS_TOP }}
+          />
 
-        {slots.map((slot) => {
-          const yearAfter = slot.yearAfter;
+          {slots.map((slot) => {
+            const yearAfter = slot.yearAfter;
 
-          // The joker took the slot away: it is crossed out and cannot be
-          // chosen any more.
-          if (slot.kind === 'joker') {
+            // The joker took the slot away: it is crossed out and cannot be
+            // chosen any more.
+            if (slot.kind === 'joker') {
+              return (
+                <div key={`slot-${slot.index}`} className="flex items-stretch">
+                  <div className={`flex flex-col items-center px-1 flex-1 ${HORIZONTAL_SLOT_MIN_WIDTH}`}>
+                    <div
+                      className={`w-full h-16 rounded-xl border-2 border-dashed flex items-center justify-center opacity-30`}
+                      style={{
+                        borderColor: '#fbbf24',
+                        background: 'rgba(251,191,36,0.05)',
+                      }}
+                    >
+                      <span
+                        className="text-[10px] font-black uppercase tracking-widest"
+                        style={{ color: '#fbbf24' }}
+                      >
+                        {t('modes.timeline.jokerSlot')}
+                      </span>
+                    </div>
+                    {/* The tick from the slot down to the line */}
+                    <div className="h-3 w-px bg-white/20" />
+                  </div>
+                  {yearAfter !== undefined && (
+                    <div className="flex flex-col items-center justify-end w-[52px] shrink-0">
+                      {/* The year stands above the line, in the gap between the
+                          slots — a year that is cut off is a year the player cannot
+                          place the song against. */}
+                      <div className="px-2 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
+                        <p className="text-[11px] font-black text-white leading-none">
+                          {yearFormat.format(yearAfter)}
+                        </p>
+                      </div>
+                      <div className="h-2 w-px bg-white/10" />
+                      {/* The mark of the year on the line */}
+                      <div className="w-2.5 h-2.5 rounded-full bg-white/50 -mt-1.5 ring-4 ring-[var(--color-bg)]" />
+                      <div className={HORIZONTAL_MARK_SPACE} />
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
             return (
               <div key={`slot-${slot.index}`} className="flex items-stretch">
-                <div className="flex flex-col items-center px-1">
-                  <div
-                    className="w-32 h-24 rounded-xl border-2 border-dashed flex items-center justify-center opacity-30"
-                    style={{
-                      borderColor: '#fbbf24',
-                      background: 'rgba(251,191,36,0.05)',
-                    }}
+                <div className={`flex flex-col items-center px-1 flex-1 ${HORIZONTAL_SLOT_MIN_WIDTH}`}>
+                  <button
+                    onClick={() => onSelect(slot.index)}
+                    disabled={isRevealed}
+                    className={['w-full', HORIZONTAL_SLOT_HEIGHT, slotBoxClass(slot.kind)].join(' ')}
                   >
-                    <span
-                      className="text-[10px] font-black uppercase tracking-widest"
-                      style={{ color: '#fbbf24' }}
-                    >
-                      {t('modes.timeline.jokerSlot')}
-                    </span>
-                  </div>
+                    {slotContent({
+                    kind: slot.kind,
+                    index: slot.index,
+                    identity,
+                    yearFormat,
+                    numberFormat,
+                  })}
+                  </button>
                   {/* The tick from the slot down to the line */}
                   <div className="h-3 w-px bg-white/20" />
                 </div>
                 {yearAfter !== undefined && (
-                  <div className="flex flex-col items-center">
-                    <div className={HORIZONTAL_MARK_SPACE} />
-                    <div className="w-2.5 h-2.5 rounded-full bg-white/50 -mt-1.5 ring-4 ring-[var(--color-bg)]" />
-                    <div className="h-2 w-px bg-white/10" />
-                    <div className="px-2.5 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
+                  <div className="flex flex-col items-center justify-end w-[52px] shrink-0">
+                    {/* The year stands above the line, in the gap between the
+                        slots — a year that is cut off is a year the player cannot
+                        place the song against. */}
+                    <div className="px-2 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
                       <p className="text-[11px] font-black text-white leading-none">
                         {yearFormat.format(yearAfter)}
                       </p>
                     </div>
+                    <div className="h-2 w-px bg-white/10" />
+                    {/* The mark of the year on the line */}
+                    <div className="w-2.5 h-2.5 rounded-full bg-white/50 -mt-1.5 ring-4 ring-[var(--color-bg)]" />
+                    <div className={HORIZONTAL_MARK_SPACE} />
                   </div>
                 )}
               </div>
             );
-          }
-
-          return (
-            <div key={`slot-${slot.index}`} className="flex items-stretch">
-              <div className="flex flex-col items-center px-1">
-                <button
-                  onClick={() => onSelect(slot.index)}
-                  disabled={isRevealed}
-                  className={['w-28', HORIZONTAL_SLOT_HEIGHT, boxClass(slot.kind)].join(' ')}
-                >
-                  {slotContent(slot.kind, slot.index)}
-                </button>
-                {/* The tick from the slot down to the line */}
-                <div className="h-3 w-px bg-white/20" />
-              </div>
-              {yearAfter !== undefined && (
-                <div className="flex flex-col items-center">
-                  <div className={HORIZONTAL_MARK_SPACE} />
-                  {/* The mark of the year on the line */}
-                  <div className="w-2.5 h-2.5 rounded-full bg-white/50 -mt-1.5 ring-4 ring-[var(--color-bg)]" />
-                  <div className="h-2 w-px bg-white/10" />
-                  <div className="px-2.5 py-0.5 bg-[var(--color-bg-card)] border border-white/15 rounded-full shadow-md">
-                    <p className="text-[11px] font-black text-white leading-none">
-                      {yearFormat.format(yearAfter)}
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-          );
-        })}
+          })}
+        </div>
       </div>
+
+      {/* The hint that the area can be scrolled — the edge fades out. */}
+      {hinweis && (
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[var(--color-bg)] to-transparent"
+          aria-hidden="true"
+        />
+      )}
     </div>
   );
 }

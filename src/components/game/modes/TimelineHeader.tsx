@@ -68,8 +68,11 @@ export function TimelineHeader({
   );
 
   return (
+    // WHY the compact line: the timeline has to fit on the screen — the
+    // title and the cheats stand next to each other, so that the slots
+    // keep their place.
     <div className="text-center space-y-1">
-      <h2 className="text-2xl font-black uppercase tracking-tight">
+      <h2 className="text-xl font-black uppercase tracking-tight">
         {!isRevealed ? (
           t('modes.timeline.question')
         ) : (
@@ -91,6 +94,9 @@ export function TimelineHeader({
         )}
       </h2>
 
+      {/* Die Cheats stehen nebeneinander — untereinander kosten sie
+          Höhe, die der Timeline fehlt. */}
+      <div className="flex items-center justify-center gap-2 flex-wrap">
       {/* Cheat Button */}
       {!isRevealed && !cheatActive && !noCheatMode && (
         <motion.button
@@ -134,6 +140,7 @@ export function TimelineHeader({
           {t('modes.timeline.jokerButton')}
         </motion.button>
       )}
+      </div>
 
       {/* Joker Used Badge */}
       {!isRevealed && jokerUsed && (

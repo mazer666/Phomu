@@ -243,7 +243,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   return (
     <div
       className={[
-        'flex flex-col px-4 gap-3 mx-auto pb-24 flex-1 min-h-0',
+        'flex flex-col px-4 gap-3 mx-auto pb-24 flex-1 min-h-0 w-full',
         // WHY the width: the landscape has the whole width of the phase
         // column for the timeline — a timeline that runs from left to right
         // needs it. The portrait keeps the narrow column of the phone.
@@ -282,7 +282,7 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
           // WHY the height: the landscape has half the height of the
           // portrait, and the player takes a sixteenth of the width — the
           // timeline would be pushed out of the screen.
-          className={isLandscape ? 'h-[150px] aspect-auto' : 'max-h-[180px]'}
+          className={isLandscape ? 'h-[110px] aspect-auto' : 'max-h-[180px]'}
         />
         </div>
       )}

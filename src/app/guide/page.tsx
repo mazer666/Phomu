@@ -87,7 +87,7 @@ export default function GuidePage() {
           </div>
           <button
             onClick={() => router.back()}
-            className="px-4 py-2 rounded-xl bg-[var(--color-accent)] text-white text-xs font-black uppercase tracking-wider"
+            className="px-4 py-2 rounded-xl bg-[var(--color-accent)] text-white text-xs font-black uppercase tracking-wider min-h-[44px]"
           >
             {t('common.back')}
           </button>

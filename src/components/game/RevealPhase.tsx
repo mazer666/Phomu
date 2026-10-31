@@ -49,6 +49,7 @@ import {
   resolveWinner,
 } from './reveal/reveal-logic';
 import { PlayerSticker } from '@/components/art/PlayerSticker';
+import { useOrientation } from '@/hooks/useOrientation';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -87,6 +88,9 @@ export function RevealPhase({
 }: RevealPhaseProps) {
   const [showPowerMenu, setShowPowerMenu] = useState(false);
   const { t, i18n } = useTranslation();
+  // WHY the orientation: the landscape sets the solution and the points
+  // next to each other; the portrait sets them under each other.
+  const { isLandscape } = useOrientation();
 
   // Format points and ranks with the active locale (Intl)
   const numberFormatter = useMemo(
@@ -155,7 +159,15 @@ export function RevealPhase({
   }, [overrideGovernance, t]);
 
   return (
-    <div className="max-w-lg mx-auto px-6 py-8 flex flex-col gap-6">
+    <div
+      className={[
+        'mx-auto px-6 flex flex-col flex-1 min-h-0 overflow-y-auto gap-4',
+        // WHY the width: the landscape has the whole width of the phase
+        // column for the solution and the points — side by side they fit on
+        // the screen without scrolling.
+        isLandscape ? 'max-w-none py-4' : 'max-w-lg py-6',
+      ].join(' ')}
+    >
       {/* ── Spicy Feedback Header ──────────────────────────────── */}
       {spicyMessage && (
         <motion.div
@@ -180,6 +192,15 @@ export function RevealPhase({
         </motion.div>
       )}
 
+      {/* Im Querformat stehen die Lösung und die Punkte nebeneinander — so
+          passt die Auflösung auf den Bildschirm, ohne zu scrollen. */}
+      <div
+        className={
+          isLandscape
+            ? 'grid grid-cols-2 gap-6 items-start'
+            : 'flex flex-col gap-6'
+        }
+      >
       {/* ── Mode-specific resolution ───────────────────────── */}
       {currentMode === 'timeline' && <TimelineReveal song={song} />}
       {currentMode === 'hint-master' && <HintMasterReveal song={song} />}
@@ -267,7 +288,7 @@ export function RevealPhase({
       <div className="flex justify-end">
         <button
           onClick={() => setShowPowerMenu((v) => !v)}
-          className="text-[10px] opacity-20 hover:opacity-60 transition-opacity px-2 py-1"
+          className="text-[10px] opacity-20 hover:opacity-60 transition-opacity px-2 py-1 min-h-[44px]"
           aria-label={t('game.reveal.powerActionsAria')}
         >
           ⋯
@@ -301,6 +322,8 @@ export function RevealPhase({
           </div>
         </div>
       )}
+
+      </div>
 
       {/* ── Action buttons ───────────────────────────────────── */}
       <motion.div

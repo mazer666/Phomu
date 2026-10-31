@@ -625,7 +625,7 @@ export function MusicPlayer({
       {videoRevealed && blurred && (
         <button
           onClick={() => setVideoRevealed(false)}
-          className="absolute right-6 top-6 z-40 bg-black/40 hover:bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest border border-white/10 transition-all"
+          className="absolute right-6 top-6 z-40 bg-black/40 hover:bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest border border-white/10 transition-all min-h-[44px]"
         >
           {t('game.music.hide')}
         </button>

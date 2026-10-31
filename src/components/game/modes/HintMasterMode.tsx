@@ -238,7 +238,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
             {!showMusic && shownHints === 1 && !config.noCheatMode && (
               <button
                 onClick={handleCheat}
-                className="w-full py-2 rounded-xl border border-red-500/10 text-[9px] font-black uppercase tracking-[0.2em] opacity-30 hover:opacity-100 hover:bg-red-500/5 text-red-500 transition-all mb-1"
+                className="w-full py-2 rounded-xl border border-red-500/10 text-[9px] font-black uppercase tracking-[0.2em] opacity-30 hover:opacity-100 hover:bg-red-500/5 text-red-500 transition-all mb-1 min-h-[44px]"
               >
                 {t('modes.hint-master.musicCheat')}
               </button>
