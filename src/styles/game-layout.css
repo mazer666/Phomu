@@ -146,12 +146,12 @@
     display: none;
   }
   .timeline-cards {
-    padding-block: 4px;
+    padding-block: 0;
   }
   .timeline-reroll {
     min-height: 44px;
   }
-  .phomu-game header > div {
+  .phomu-game .game-header-row {
     padding-block: 0.2rem;
   }
   .game-utilities {
@@ -226,12 +226,35 @@
 }
 /* Optional media must not move the table into an automatically sized row. */
 @media (orientation: portrait) {
-  .timeline-media { grid-row: 1; }
-  .timeline-heading { grid-row: 2; }
-  .timeline-board-area { grid-row: 3; }
-  .timeline-action { grid-row: 4; }
+  .timeline-media {
+    grid-row: 1;
+  }
+  .timeline-heading {
+    grid-row: 2;
+  }
+  .timeline-board-area {
+    grid-row: 3;
+  }
+  .timeline-action {
+    grid-row: 4;
+  }
 }
 @media (orientation: landscape) {
-  .timeline-board-area { grid-row: 2; }
-  .timeline-action { grid-row: 3; }
+  .timeline-board-area {
+    grid-row: 2;
+  }
+  .timeline-action {
+    grid-row: 3;
+  }
+}
+
+/* Exiting artwork must never consume the incoming question's available height. */
+.game-phase-area:not([data-phase='drawing']) > .drawing-transition {
+  display: none;
+}
+/* At very short, wide viewports the side panel is hidden, so retain its actions. */
+@media (min-width: 1001px) and (orientation: landscape) and (max-height: 500px) {
+  .game-utilities {
+    display: flex;
+  }
 }

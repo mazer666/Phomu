@@ -84,14 +84,14 @@ export default function HomePage() {
 
       {/* Footer hint */}
       <motion.div
-        className="mt-16 text-sm text-center space-y-2"
+        className="mt-16 max-w-full text-sm text-center space-y-2"
         style={{ color: 'var(--color-text-secondary)' }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
         <p>{t('landing.footerTagline')}</p>
-        <p className="flex items-center justify-center gap-3 text-xs">
+        <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs">
           <Link
             href="/guide"
             className="underline hover:opacity-100 opacity-80"

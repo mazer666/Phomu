@@ -162,7 +162,7 @@ export function GameHeader({
         />
       </div>
 
-      <div className="flex items-center gap-2 sm:gap-4 px-4 py-3 border-b border-white/5">
+      <div className="game-header-row flex items-center gap-2 sm:gap-4 px-4 py-3 border-b border-white/5">
         {/* Exit button */}
         <button
           onClick={handleExit}
