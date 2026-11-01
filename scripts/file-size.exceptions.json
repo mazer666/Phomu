@@ -32,7 +32,7 @@
       "history": "The file was already above the soft limit when the gate became able to fail (QA-ARC-001)."
     },
     "src/components/game/MusicPlayer.tsx": {
-      "lines": 732,
+      "lines": 683,
       "reason": "MusicPlayer (GAP-007, QA-09 item 2.2): extract one provider adapter per provider.",
       "history": "The exception was introduced with 630 lines; the file grew by 153 lines before the gate was able to fail (QA-ARC-001)."
     },

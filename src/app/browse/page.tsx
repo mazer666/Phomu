@@ -15,8 +15,6 @@ import { Icon } from '@/components/art/Icon';
 
 const PAGE_SIZE_OPTIONS = [8, 24, 48, 96, 'all'] as const;
 
-// ─── Helper functions ─────────────────────────────────────────────────────────
-
 /** Decade of a song as a number, e.g. 1980 */
 function getDecadeValue(year: number): number {
   return Math.floor(year / 10) * 10;
@@ -62,7 +60,6 @@ export default function BrowsePage() {
   });
   const [showFilters, setShowFilters] = useState(false);
 
-  // Pagination State
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState<number | 'all'>(24);
 
@@ -141,7 +138,6 @@ export default function BrowsePage() {
     return (pageSize as number) - 1;
   }, [pageSize, adminMode]);
 
-  // Paginated Songs
   const paginatedSongs = useMemo(() => {
     if (effectivePageSize === 'all') return filteredSongs;
     const start = (currentPage - 1) * (effectivePageSize as number);
@@ -188,11 +184,11 @@ export default function BrowsePage() {
   };
 
   return (
-    <div className="flex-1 min-h-0 overflow-hidden bg-[#0a0a0c] text-white flex flex-col">
+    <div className="flex-1 min-h-0 overflow-hidden bg-[var(--color-bg)] text-[var(--color-text)] flex flex-col">
       {/* Dynamic Header */}
-      <header className="sticky top-0 z-50 bg-[#0a0a0c]/80 backdrop-blur-2xl border-b border-white/5 py-4 px-8">
-        <div className="max-w-[1800px] mx-auto flex items-center justify-between gap-8">
-          <div className="flex items-center gap-6">
+      <header className="browse-header shrink-0 sticky top-0 z-50 bg-[var(--color-bg)] backdrop-blur-2xl border-b border-white/5 py-4 px-8">
+        <div className="max-w-[1800px] mx-auto flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+          <div className="hidden lg:flex items-center gap-6">
             <div
               onClick={() => router.push('/')}
               className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-500/20 cursor-pointer hover:scale-105 transition-transform"
@@ -218,8 +214,8 @@ export default function BrowsePage() {
             </div>
           </div>
 
-          <div className="flex-1 max-w-2xl flex items-center gap-3">
-            <div className="relative flex-1 group">
+          <div className="flex-1 min-w-0 flex flex-col sm:flex-row items-stretch gap-3">
+            <div className="relative flex-1 min-w-0 group">
               <input
                 type="search"
                 placeholder={t('browse.searchPlaceholder')}
@@ -234,10 +230,10 @@ export default function BrowsePage() {
               </span>
             </div>
 
-            <div className="flex items-center gap-2 h-12 flex-wrap">
+            <div className="flex items-center gap-2 flex-wrap">
               <button
                 onClick={() => setAdminMode(!adminMode)}
-                className={`px-4 h-full rounded-2xl flex items-center justify-center gap-2 transition-all border text-[10px] font-black uppercase tracking-wider ${adminMode ? 'bg-red-500/10 border-red-500 text-red-400' : 'bg-white/5 border-white/5 text-white/50 hover:bg-white/10'}`}
+                className={`px-4 h-12 rounded-2xl flex items-center justify-center gap-2 transition-all border text-[10px] font-black uppercase tracking-wider ${adminMode ? 'bg-red-500/10 border-red-500 text-red-400' : 'bg-white/5 border-white/5 text-white/50 hover:bg-white/10'}`}
                 title={t('browse.adminModeTitle')}
               >
 <Icon name={adminMode ? 'unlock' : 'lock'} size={16} />
@@ -247,11 +243,14 @@ export default function BrowsePage() {
               </button>
               <button
                 onClick={() => router.push('/lobby')}
-                className="px-6 h-full bg-white text-black rounded-2xl font-black text-xs hover:scale-105 active:scale-95 transition-all shadow-xl shadow-white/5"
+                className="px-6 h-12 bg-white text-black rounded-2xl font-black text-xs hover:scale-105 active:scale-95 transition-all shadow-xl shadow-white/5"
               >
                 {t('browse.lobbyButton')}
               </button>
               <button
+                aria-label={t('browse.filterOptions')}
+                aria-expanded={showFilters}
+                aria-controls="browse-filters"
                 onClick={() => setShowFilters(!showFilters)}
                 className="md:hidden w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-xl transition-all"
               >
@@ -262,16 +261,17 @@ export default function BrowsePage() {
         </div>
       </header>
 
-      <div className="flex-1 max-w-[1800px] mx-auto w-full flex flex-col md:flex-row p-4 md:p-8 gap-8 relative">
+      <div className="browse-layout flex-1 min-h-0 overflow-hidden max-w-[1800px] mx-auto w-full flex flex-col md:flex-row p-4 md:p-8 gap-8 relative">
         {/* Sidebar */}
         <AnimatePresence>
           {(showFilters ||
             (typeof window !== 'undefined' && window.innerWidth >= 768)) && (
             <motion.aside
+              id="browse-filters"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="w-full md:w-72 shrink-0 space-y-10 overflow-hidden"
+              className="browse-sidebar w-full md:w-72 shrink-0 min-h-0 space-y-10 overflow-y-auto"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
@@ -425,7 +425,7 @@ export default function BrowsePage() {
         </AnimatePresence>
 
         {/* Content Area */}
-        <main className="flex-1 min-h-0 overflow-y-auto">
+        <main className="browse-results flex-1 min-w-0 min-h-0 overflow-y-auto" tabIndex={0} aria-label={t('browse.resultsLabel', { count: filteredSongs.length })}>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
             <div>
               <h2 className="text-2xl font-black uppercase">

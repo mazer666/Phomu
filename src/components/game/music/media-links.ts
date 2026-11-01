@@ -85,3 +85,28 @@ export function extractAmazonTrackId(url?: string): string | null {
 
   return null;
 }
+
+/** Official track links for the provider dialog's account/playback fallback. */
+export function providerTrackUrl(
+  provider:
+    | 'Spotify'
+    | 'Amazon Music Prime'
+    | 'Amazon Music Unlimited'
+    | 'YouTube',
+  spotifyId: string | null,
+  amazonId: string | null,
+  youtubeId: string | null
+): string | undefined {
+  const id =
+    provider === 'Spotify'
+      ? spotifyId
+      : provider.startsWith('Amazon')
+        ? amazonId
+        : youtubeId;
+  if (!id) return undefined;
+  if (provider === 'Spotify')
+    return `https://open.spotify.com/track/${encodeURIComponent(id)}`;
+  if (provider.startsWith('Amazon'))
+    return `https://music.amazon.com/tracks/${encodeURIComponent(id)}`;
+  return `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;
+}

@@ -17,7 +17,7 @@ export default function SettingsGovernancePage() {
   const gameIsActive = currentRound > 0;
 
   return (
-    <main className="min-h-screen max-w-3xl mx-auto p-4 md:p-8 space-y-6">
+    <main className="flex-1 min-h-0 overflow-y-auto w-full max-w-3xl mx-auto p-4 md:p-8 space-y-6">
       <Header
         title={`${t('settings.governance.title')}`}
         onBack={() => router.push('/settings')}

@@ -71,13 +71,13 @@ export function SongList({ songs, selectedId, onSelect }: SongListProps) {
   return (
     <>
       {/* Filter bar */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex flex-wrap gap-3 mb-4">
         <input
           type="search"
           placeholder={t('admin.songs.searchPlaceholder')}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="min-w-0 w-full flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <select
           value={filterCompleteness}
@@ -107,7 +107,7 @@ export function SongList({ songs, selectedId, onSelect }: SongListProps) {
       </div>
 
       {/* Song-Tabelle */}
-      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+      <div className="bg-white rounded-xl border border-gray-200 overflow-x-auto">
         <table className="w-full text-left">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>

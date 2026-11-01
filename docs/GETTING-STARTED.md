@@ -403,3 +403,8 @@ git diff package-lock.json      # review the change and commit it
 | look up a term | [`../GLOSSARY.md`](../GLOSSARY.md) |
 | contribute | [`../CONTRIBUTING.md`](../CONTRIBUTING.md) |
 | problems while playing | [`guides/TROUBLESHOOTING.md`](guides/TROUBLESHOOTING.md) |
+
+
+### Restricted cloud build workers
+
+If Turbopack fails while binding its internal worker port with `Operation not permitted`, use Next's supported Webpack compiler: `npm run build -- --webpack`. To run the same compiler through the complete local CI and the unchanged pre-push hook, set `PHOMU_BUILD_BUNDLER=webpack`. The default remains Turbopack; all validation, security and quality checks still run. Example: `PHOMU_BUILD_BUNDLER=webpack npm run local-ci`.

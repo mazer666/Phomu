@@ -68,12 +68,15 @@ export function QRScannerModal({
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          role="dialog"
+          aria-modal="true"
+          aria-label={t('game.qr.title')}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex flex-col bg-black/90 backdrop-blur-xl p-6"
+          className="qr-scanner-modal fixed inset-0 z-[100] overflow-y-auto flex flex-col bg-black/90 backdrop-blur-xl p-6"
         >
-          <header className="flex justify-between items-center mb-8">
+          <header className="shrink-0 flex justify-between items-center mb-8">
             <div>
               <h2 className="text-2xl font-black uppercase text-white">
                 {t('game.qr.title')}
@@ -84,13 +87,14 @@ export function QRScannerModal({
             </div>
             <button
               onClick={onClose}
+              aria-label={t('common.close')}
               className="w-12 h-12 rounded-2xl bg-white/10 text-white flex items-center justify-center font-black"
             >
               <Icon name="close" size={20} />
             </button>
           </header>
 
-          <div className="flex-1 flex flex-col items-center justify-center">
+          <div className="shrink-0 flex flex-col items-center">
             <div
               id="qr-reader"
               className="w-full max-w-sm overflow-hidden rounded-3xl border-2 border-white/20 bg-black/40"
@@ -113,7 +117,7 @@ export function QRScannerModal({
             </div>
           </div>
 
-          <footer className="mt-auto pt-8">
+          <footer className="shrink-0 mt-auto pt-8">
             <button
               onClick={onClose}
               className="w-full py-5 bg-white text-black rounded-3xl font-black uppercase tracking-widest active:scale-95 transition-all"

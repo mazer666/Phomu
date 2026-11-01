@@ -67,8 +67,8 @@ export default function GameOverPage() {
   const winner = players.find((p) => p.id === winnerId) ?? sorted[0];
 
   return (
-    // WHY the height: the page fills the screen and never scrolls.
-    <main className="flex-1 min-h-0 flex flex-col items-center justify-start px-4 py-6 pb-24 overflow-hidden">
+    // The summary scrolls inside the app so replay stays reachable on short screens.
+    <main className="game-over-screen flex-1 min-h-0 flex flex-col items-center justify-start px-4 py-6 pb-24 overflow-y-auto">
       {/* Confetti feeling / winner */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}

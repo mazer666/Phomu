@@ -57,7 +57,13 @@
       "playerStandard": "Standard",
       "playerMusic": "Music",
       "backgroundMusic": "Hintergrundmusik",
-      "soundEffects": "Soundeffekte"
+      "soundEffects": "Soundeffekte",
+      "providerEmbedded": "Anbieterplayer mit Swipe-to-show; Wiedergabe abhängig von Anmeldung und Konto.",
+      "providerYouTube": "YouTube",
+      "providerSpotify": "Spotify",
+      "providerSpotifyFree": "Spotify Free",
+      "providerAmazonPrime": "Amazon Music Prime",
+      "providerAmazonUnlimited": "Amazon Music Unlimited"
     },
     "gameRules": {
       "title": "Spielmodi & Packs",
@@ -705,7 +711,7 @@
     "feedback": {
       "closeAriaLabel": "Feedback schließen",
       "closeTitle": "Antippen zum Schließen",
-      "hint": "Tippen zum Überspringen · Auto in 10s",
+      "hint": "Antippen zum Schließen",
       "correct_0": "Witzig!",
       "correct_1": "Das war fast schon kompetent.",
       "correct_2": "Ein blindes Huhn findet auch mal ein Korn.",
@@ -947,9 +953,9 @@
       "reportMissing": "Report Missing",
       "hide": "Verbergen",
       "providerSpotifyFree": "Spotify Free: eingeschränkt (Preview). YouTube-Fallback aktiv.",
-      "providerSpotifyPremium": "Spotify: bei fehlender Premium-Wiedergabe wird YouTube genutzt.",
-      "providerAmazonPrime": "Amazon Prime: eingeschränkt (Preview). YouTube-Fallback aktiv.",
-      "providerAmazonPremium": "Amazon Music Premium: nutzt Full-Track Embed. Login bei Amazon nötig.",
+      "providerSpotifyPremium": "Spotify-Player",
+      "providerAmazonPrime": "Amazon Music Prime – Anbieterplayer",
+      "providerAmazonPremium": "Amazon Music Unlimited – Anbieterplayer",
       "spotifyPremiumPlayerTitle": "Spotify Premium Player",
       "spotifyFreePreviewTitle": "Spotify Free Preview",
       "spotifyFreePreviewHint": "Free ist auf kurze Preview-Clips begrenzt. Wenn kein Preview-Link hinterlegt ist, nutzt Phomu automatisch YouTube.",
@@ -959,7 +965,11 @@
       "amazonPremiumPlayerTitle": "Amazon Music Premium Player",
       "reportSent": "Report erstellt",
       "reportRateLimited": "Rate limit: max 5/h je Gerät",
-      "reportDuplicate": "Für diesen Song bereits gemeldet"
+      "reportDuplicate": "Für diesen Song bereits gemeldet",
+      "playerTitle": "{{provider}}-Musikplayer",
+      "openPlayer": "Musikplayer öffnen",
+      "providerControlsHint": "Steuere die Wiedergabe direkt im Player. Anmeldung und verfügbare Titel hängen vom Anbieter und deinem Konto ab.",
+      "openAtProvider": "Bei {{provider}} öffnen"
     },
     "qr": {
       "title": "QR Scanner",

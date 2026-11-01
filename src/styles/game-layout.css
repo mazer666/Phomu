@@ -204,41 +204,6 @@
   box-shadow: 0 -6px 20px #0003;
   z-index: 5;
 }
-/* The full video sleeve cannot fit in the compact Timeline transport. */
-.timeline-player .mt-40 {
-  margin-top: 0;
-  position: absolute;
-  left: 3.75rem;
-  right: 0.75rem;
-  text-align: left;
-}
-.timeline-player .mt-40 h3 {
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  line-height: 1.3;
-}
-.timeline-player .mt-40 p,
-.timeline-player .cursor-grab {
-  display: none;
-}
-.timeline-player .pointer-events-none {
-  justify-content: flex-start;
-  padding-left: 0.75rem;
-}
-.timeline-player .pointer-events-none > div {
-  width: 36px;
-  height: 36px;
-}
-.timeline-player .pointer-events-none svg {
-  width: 22px;
-  height: 22px;
-  color: #fff;
-}
-@media (max-height: 500px) {
-  .timeline-player .mt-40 h3 {
-    font-size: 0.7rem;
-  }
-}
 .reveal-phase {
   width: 100%;
 }

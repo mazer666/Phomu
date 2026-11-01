@@ -842,3 +842,14 @@ The following numbers are **not** in `PHOMU_CONFIG`, but in the code:
 The owner requested a primary Mix-Tape selection on 2026-11-01. It resolves in the shared core to one concrete mode per round, cycling Vibe-Check → Survivor → Cover Confusion. It does not introduce a combined-answer type or expose future questions. A `mix_tape_round` progress flag identifies the award cap; standalone modes keep their existing points. The advertised budget and actual award both respect `phomu_config::MIX_TAPE_MAX_POINTS`. The rotation continues after intervening Timeline, Hint-Master or Lyrics rounds using round history.
 
 The bridges ask the shared core to initialize Timeline before drawing, using the selected packs and catalogue alias normalization. Both shells read the public years from the resulting question context. Tiny packs use adjacent years to satisfy the distinct-card count; unknown packs fail. This replaces the web-only whole-catalogue year sampler.
+
+## Embedded provider player update (2026-11-01)
+
+Spotify, Amazon Music Prime and Amazon Music Unlimited expose their existing official embeds through the same deliberate swipe-to-show interaction. A responsive top-layer dialog keeps the original iframe mounted and returns to the concealed game on Hide/Escape. Prime now prefers its Amazon track embed over a supplied preview. The Amazon embed is included in both YouTube initialization and volume-effect guards; the previously recorded A10 double-player defect is corrected.
+
+This is a provider-controlled embed integration, not an authenticated Web Playback SDK or Amazon API implementation. Playback scope and account capability are not inferred from the saved provider identifier. The responsive rail replaces the former fixed displacement. See MEDIA-011, MEDIA-012 and MEDIA-015 and `e2e/music-player.spec.ts`.
+
+
+### Answer feedback and bounded pages
+
+Answer feedback identifies events by round and answer index, rather than reusing the per-round answer count as a lifetime identity. Its lifetime is configured by `PHOMU_CONFIG.FEEDBACK_AUTO_DISMISS_MS`; the banner is rendered in the document overlay layer, can be tapped away and contains no countdown copy. The root app viewport stays fixed, while content-heavy routes provide their own bounded scrolling area. Catalogue readers accept root-level `coverUrl` first and retain the legacy nested fallback in both bridges.

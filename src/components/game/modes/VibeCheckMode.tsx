@@ -122,7 +122,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
   return (
     // WHY the height: the mode fills the phase of the round and never
     // scrolls the page — the player is bounded, the moods take the rest.
-    <div className="flex flex-col items-center justify-center flex-1 min-h-0 px-6 py-3 gap-4 pb-24 w-full">
+    <div className="vibe-check-mode flex flex-col items-center justify-start shrink-0 min-h-min px-6 py-3 gap-4 pb-24 w-full">
       {/* Mode banner */}
       <div className="shrink-0 w-full max-w-sm flex items-center justify-between bg-teal-500/10 border border-teal-500/20 rounded-2xl px-4 py-2">
         <span className="text-[10px] font-black uppercase tracking-widest text-teal-400">
@@ -225,7 +225,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25 }}
-        className={`grid gap-2 w-full max-w-sm ${cheatUsed ? 'grid-cols-3' : 'grid-cols-2 sm:grid-cols-3'}`}
+        className={`vibe-mood-grid grid gap-3 w-full max-w-sm ${cheatUsed ? 'grid-cols-3' : 'grid-cols-2 sm:grid-cols-3'}`}
       >
         {options.map((mood) => {
           const isSelected = selected === mood;
@@ -242,7 +242,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
               bgColor = MOOD_CORRECT_BG;
               borderColor = MOOD_CORRECT_BORDER;
               textColor = '#fff';
-              scale = isSelected ? 1.05 : 1;
+              scale = 1;
               shadow = MOOD_CORRECT_SHADOW;
             } else if (isSelected) {
               bgColor = MOOD_WRONG_BG;
@@ -257,13 +257,14 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
           return (
             <motion.button
               key={mood}
+              data-mood={mood}
               onClick={() => handleSelect(mood)}
               disabled={answered}
               animate={{
                 scale,
                 opacity: answered && !isCorrectMood && !isSelected ? 0.3 : 1,
               }}
-              className="py-4 px-2 rounded-2xl border text-sm font-black transition-colors disabled:cursor-default"
+              className="min-w-0 py-4 px-2 rounded-2xl border text-sm font-black transition-colors disabled:cursor-default"
               style={{
                 backgroundColor: bgColor,
                 borderColor,

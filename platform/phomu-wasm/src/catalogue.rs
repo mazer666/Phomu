@@ -30,11 +30,7 @@ fn invalid(reason: &str) -> crate::BridgeError {
 
 /// The failure of a catalogue that cannot be inflated.
 fn corrupt(reason: &str) -> crate::BridgeError {
-    crate::BridgeError {
-        code: 1203,
-        message_key: "errors.invalidSongData".to_string(),
-        context: std::collections::HashMap::from([("reason".to_string(), reason.to_string())]),
-    }
+    invalid(reason)
 }
 
 /// Reads a compressed catalogue artefact.
@@ -180,7 +176,12 @@ pub fn read_song(value: &Value) -> Result<Song, crate::BridgeError> {
         year: number("year") as i32,
         country: text("country"),
         genre: text("genre"),
-        cover_url: link("coverUrl"),
+        cover_url: value
+            .get("coverUrl")
+            .and_then(Value::as_str)
+            .filter(|url| !url.is_empty())
+            .map(str::to_string)
+            .or_else(|| link("coverUrl")),
         difficulty,
         mood: list("mood"),
         packs: list("packs"),

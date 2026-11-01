@@ -21,9 +21,9 @@ export type GameMode =
 export type MusicProvider =
   | 'youtube'         // Primary, free, everyone has access
   | 'spotify-free'    // 30-second preview via Web API
-  | 'spotify-premium' // Full playback via Web Playback SDK
-  | 'amazon-music'    // Standard: 30s Preview (Prime/Unlimited)
-  | 'amazon-music-premium' // Experimental: Full playback via Embed
+  | 'spotify-premium' // Spotify provider embed; playback depends on account
+  | 'amazon-music'    // Amazon Music Prime embed, with preview fallback
+  | 'amazon-music-premium' // Amazon Music Unlimited provider embed
   | 'apple-music';    // Future: requires Apple Developer Account
 
 /** Available UI themes */
@@ -51,6 +51,8 @@ export type Difficulty = 'easy' | 'medium' | 'hard';
 // ─── Configuration ───────────────────────────────────────────────
 
 export const PHOMU_CONFIG = {
+  FEEDBACK_AUTO_DISMISS_MS: 5_000,
+
   // Game Defaults
   DEFAULT_WIN_SCORE: 10,
   MAX_PLAYERS: 24,

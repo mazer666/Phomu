@@ -61,8 +61,14 @@ run_check "Song Schema & Integrity Validation" "npm run validate-songs" "false" 
 # 6. Catalog Validation
 run_check "Song Catalog Quality Validation" "npm run validate-catalog" "false" || exit 1
 
-# 7. Next.js Build
-run_check "Next.js Production Build" "npm run build" "false" || exit 1
+# 7. Next.js Build. Restricted cloud sandboxes can prohibit Turbopack's
+# internal worker port; use Next's supported Webpack build in that environment.
+case "${PHOMU_BUILD_BUNDLER:-turbopack}" in
+    turbopack) build_command="npm run build" ;;
+    webpack) build_command="npm run build -- --webpack" ;;
+    *) echo "Unsupported PHOMU_BUILD_BUNDLER: expected turbopack or webpack"; exit 1 ;;
+esac
+run_check "Next.js Production Build" "$build_command" "false" || exit 1
 
 # 8. Dependency Security Audit
 run_check "Dependency Security Audit (Moderate+)" "npm audit --omit=dev --audit-level=moderate" "false" || exit 1

@@ -2,6 +2,7 @@
 @import "../styles/game-table.css";
 @import "../styles/game-layout.css";
 @import "../styles/interface.css";
+@import "../styles/music-player.css";
 
 /* ─── Theme: Jackbox Party (Default) ─── */
 [data-theme='jackbox'] {

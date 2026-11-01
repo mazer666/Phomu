@@ -223,7 +223,12 @@ fn read_song(value: &serde_json::Value) -> Result<Song, PhomuError> {
         year: number("year") as i32,
         country: text("country"),
         genre: text("genre"),
-        cover_url: link("coverUrl"),
+        cover_url: value
+            .get("coverUrl")
+            .and_then(serde_json::Value::as_str)
+            .filter(|url| !url.is_empty())
+            .map(str::to_string)
+            .or_else(|| link("coverUrl")),
         difficulty,
         mood: list("mood"),
         packs: list("packs"),

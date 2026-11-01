@@ -33,7 +33,6 @@ import type { TeamMode } from '@/types/player';
 import { parseQrIntent } from '@/utils/qr-intent';
 import { resolveLobbyLayout } from '@/utils/orientation-layout';
 
-// ─── Lobby page ──────────────────────────────────────────────────
 
 export default function LobbyPage() {
   const { t } = useTranslation();
@@ -195,8 +194,9 @@ export default function LobbyPage() {
                     onChange={(e) => setNameInput(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && handleAddPlayer()}
                     onFocus={(e) => e.target.select()}
+                    aria-label={t('lobby.step1.namePlaceholder')}
                     placeholder={t('lobby.step1.namePlaceholder')}
-                    className="flex-1 min-w-0 bg-white/10 border border-white/5 rounded-2xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/50 focus:border-[var(--color-accent)] font-bold text-sm transition-all"
+                    className="lobby-name-input flex-1 min-w-0 bg-white/10 border border-white/5 rounded-2xl px-4 py-4 focus:border-[var(--color-accent)] font-bold text-sm transition-colors"
                   />
                   <Tooltip
                     content={t('lobby.step1.addPlayerTooltip')}
@@ -214,6 +214,7 @@ export default function LobbyPage() {
                     position="top"
                   >
                     <button
+                      aria-label={t('lobby.step1.scanCardTooltip')}
                       onClick={() => setIsScannerOpen(true)}
                       className="px-5 py-4 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-xl hover:bg-white/20 transition-all active:scale-95"
                     >
@@ -221,7 +222,6 @@ export default function LobbyPage() {
                     </button>
                   </Tooltip>
                 </div>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {players.map((p) => (
                     <PlayerCard

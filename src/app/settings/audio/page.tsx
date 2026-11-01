@@ -9,28 +9,33 @@ import { Icon } from '@/components/art/Icon';
 
 const PROVIDERS: Array<{
   value: MusicProvider;
-  label: string;
+  labelKey: TranslationKey;
   noteKey: TranslationKey;
 }> = [
   {
     value: 'youtube',
-    label: 'YouTube',
+    labelKey: 'settings.audio.providerYouTube',
     noteKey: 'settings.audio.providerStandard',
   },
   {
     value: 'spotify-premium',
-    label: 'Spotify',
-    noteKey: 'settings.audio.providerPremiumRequired',
+    labelKey: 'settings.audio.providerSpotify',
+    noteKey: 'settings.audio.providerEmbedded',
   },
   {
     value: 'spotify-free',
-    label: 'Spotify Free',
+    labelKey: 'settings.audio.providerSpotifyFree',
     noteKey: 'settings.audio.providerPreviewBased',
   },
   {
+    value: 'amazon-music-premium',
+    labelKey: 'settings.audio.providerAmazonUnlimited',
+    noteKey: 'settings.audio.providerEmbedded',
+  },
+  {
     value: 'amazon-music',
-    label: 'Amazon Music',
-    noteKey: 'settings.audio.providerPreviewBased',
+    labelKey: 'settings.audio.providerAmazonPrime',
+    noteKey: 'settings.audio.providerEmbedded',
   },
 ];
 
@@ -54,7 +59,7 @@ export default function SettingsAudioPage() {
   const gameIsActive = currentRound > 0;
 
   return (
-    <main className="min-h-screen max-w-4xl mx-auto p-4 md:p-8 space-y-6">
+    <main className="flex-1 min-h-0 overflow-y-auto w-full max-w-4xl mx-auto p-4 md:p-8 space-y-6">
       <Header
         title={`${t('settings.audio.title')}`}
         onBack={() => router.push(fromLobby ? '/lobby' : '/settings')}
@@ -78,7 +83,7 @@ export default function SettingsAudioPage() {
               onClick={() => setPreferredMusicProvider(p.value)}
               className={`text-left rounded-xl border p-3 transition-colors ${preferredMusicProvider === p.value ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'border-white/10 bg-black/20'}`}
             >
-              <p className="font-black text-sm">{p.label}</p>
+              <p className="font-black text-sm">{t(p.labelKey)}</p>
               <p className="text-xs opacity-65">{t(p.noteKey)}</p>
             </button>
           ))}

@@ -57,6 +57,9 @@ export function Scoreboard({
 
           {/** Scoreboard-Panel */}
           <motion.aside
+            role="dialog"
+            aria-modal="true"
+            aria-label={t('game.scoreboard.title')}
             key="panel"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}

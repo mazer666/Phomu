@@ -788,21 +788,17 @@
 **Acceptance:** `useSpotifyFree` (`src/components/game/MusicPlayer.tsx:168`), preview block `:573-583`, overlay hint `Free ist auf kurze Preview-Clips begrenzt` (free is limited to short preview clips) (`:578-580`); catalogue state: only 7 of 1,615 songs have `spotifyFreePreview` (measured).
 **Verification:** `grep -n "useSpotifyFree" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-011 — Spotify Premium uses the embed player
+### MEDIA-011 — Spotify uses the provider's embedded player
 
 **Preset:** Optional
-**Requirement:** If `spotify-premium` is selected and a Spotify track ID is available, a Spotify embed iframe is placed over the player. Without a premium account YouTube stays active, and the user is pointed to that.
-**Rationale:** Full-track playback via Spotify is a comfort feature; YouTube remains the reliable way.
-**Acceptance:** `extractSpotifyTrackId` (`src/components/game/MusicPlayer.tsx:75-80`), `useSpotifyPremium` (`:167`), embed `:559-571`, hint `bei fehlender Premium-Wiedergabe wird YouTube genutzt` (if premium playback is missing, YouTube is used) (`:552`); catalogue state: 734 of 1,615 songs have a Spotify link.
-**Verification:** `grep -n "useSpotifyPremium" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
+**Requirement:** Selecting Spotify with a valid catalogue track ID loads the official Spotify track embed. When the mode conceals the music, the controls remain behind the swipe-to-show guard. Revealing opens a responsive player dialog; hiding preserves the same iframe. Playback length, sign-in and catalogue availability are controlled by Spotify. Phomu must not label this as a verified full-playback SDK integration or infer Premium status from the preference name. Without a usable source the existing fallback applies.
+**Verification:** `ProviderOverlay.test.ts` and `e2e/music-player.spec.ts` verify routing, the guard and player geometry, not an authenticated Spotify session.
 
-### MEDIA-012 — Amazon Music uses the embed player, Prime only with preview
+### MEDIA-012 — Prime and Unlimited offer the Amazon provider player
 
 **Preset:** Optional
-**Requirement:** For Amazon there are two paths: `amazon-music-premium` with full-track embed (from `links.amazonMusic`) and `amazon-music` with Prime preview (from `links.amazonPrimePreview`). If the respective source is missing, YouTube is used and the restricted scope is displayed.
-**Rationale:** Amazon Music delivers no preview without Prime access; the user has to know why it sounds quieter or shorter.
-**Acceptance:** `extractAmazonTrackId` with five supported URL forms (`src/components/game/MusicPlayer.tsx:96-120`), `useAmazonPrime`/`useAmazonPremium` (`:169-170`), embeds `:585-619`, hint `:553-555`; catalogue state: 381 songs with `amazonMusic`, 0 with `amazonPrimePreview` (measured) — see [GAP-012](#open-gaps).
-**Verification:** `npm run test -- MusicPlayer` (the existing tests cover `extractAmazonTrackId`); no test exists for the path selection — see [GAP-001](#open-gaps).
+**Requirement:** In the web shell, both `amazon-music` (Prime) and `amazon-music-premium` (Unlimited) use the official Amazon Music embed when a track ASIN is available. The selections identify the user's intended service, not verified entitlements. Prime can fall back to a supplied preview when no ASIN is available; the existing source fallback remains. An Amazon embed must not initialize an additional YouTube player underneath it. Account access, playback scope and region availability are decided by Amazon.
+**Verification:** `ProviderOverlay.test.ts` verifies all three embedded-provider selections and absence of YouTube initialization; `e2e/music-player.spec.ts` checks reveal/hide with a persistent iframe at phone, tablet and desktop sizes. Actual provider account playback remains unverified.
 
 ### MEDIA-013 — Missing links can be reported, with rate limit
 
@@ -820,13 +816,12 @@
 **Acceptance:** `src/components/game/MusicPlayer.tsx:172-195` — `HOUR_MS = 60 * 60 * 1000`, `MAX_PER_HOUR = 5`, duplicate check via `parsed.songs[songId]`; status display `:621-627` — rate limit per device and duplicate report (`Rate limit: max 5/h je Gerät`, `Für diesen Song bereits gemeldet`).
 **Verification:** `grep -n "MAX_PER_HOUR\|phomu-device-id\|phomu-missing-report-state-v1" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
 
-### MEDIA-015 — The anti-spoiler overlay uses blur plus a reveal gesture
+### MEDIA-015 — Responsive swipe-to-show protects the player
 
 **Preset:** Preset
-**Requirement:** If `blurred` is set, a blur layer (`blur-[60px]`, `opacity-50`, `scale-125`, `pointer-events-none`) lies over the player. A drag handle allows the reveal from a horizontal displacement of more than 150 px. After the reveal the state can be reset via `Verbergen` (hide).
-**Rationale:** The gesture is deliberately not trivial: whoever knows it gets an advantage — that is the anti-cheat the pilot controls.
-**Acceptance:** Blur wrapper `src/components/game/MusicPlayer.tsx:424-430`; overlay `:434-478` — `drag="x"`, `if (info.offset.x > 150) setVideoRevealed(true)`; `Verbergen` button `:538-545`.
-**Verification:** `grep -n "offset.x > 150\|blur-\[60px\]" src/components/game/MusicPlayer.tsx`; no test exists — see [GAP-001](#open-gaps).
+**Requirement:** Concealed media stays blurred and inert behind a deliberate swipe gesture. The reveal threshold follows available rail travel, including compact landscape players; a short or leftward swipe does not reveal. Keyboard activation and the right arrow provide accessible equivalents. Opening promotes a responsive native dialog to the top layer without remounting the media element. Hide or Escape closes it and restores a fresh guard. Provider controls stay out of keyboard focus until the player is shown. The game viewport and selected Timeline position remain intact.
+**Rationale:** A fixed displacement can exceed the available space on a compact player. Full provider controls need their own responsive viewport rather than being cropped into the Timeline transport.
+**Verification:** `ProviderOverlay.test.ts` covers thresholds and concealment; `e2e/music-player.spec.ts` exercises real gestures, dialog dimensions, keyboard/Escape and persistent iframe identity.
 
 ### MEDIA-016 — If no playable medium is available, this is stated explicitly
 
@@ -971,9 +966,9 @@
 ### UI-015 — Feedback overlays accompany the game events
 
 **Preset:** Preset
-**Requirement:** On the switch into the question phase, on the reveal, on a correct and a wrong answer as well as at the end of the game, own overlays respectively sound effects are triggered. A double trigger on a re-render is excluded (comparison with the previous state).
+**Requirement:** On the switch into the question phase, on the reveal, on a correct and a wrong answer as well as at the end of the game, own overlays respectively sound effects are triggered. A double trigger on a re-render is excluded (comparison with the previous state). Answer banners use a round-and-answer identity, appear again in subsequent rounds, can be dismissed by tapping, and disappear automatically after five seconds (`PHOMU_CONFIG.FEEDBACK_AUTO_DISMISS_MS`). Their visible text does not announce the automatic removal.
 **Rationale:** Feedback has to be coupled to the event, not to the render cycle.
-**Acceptance:** `src/hooks/useGameAudioCues.ts:76-96` (phase comparison), `:97-108` (answer counter), `:109-116` (end of game); `FeedbackOverlay` and `DiceAnimation` in `src/app/game/page.tsx:300-304`.
+**Acceptance:** `src/hooks/useGameAudioCues.ts:76-96` (phase comparison), `:97-108` (answer counter), `:109-116` (end of game); `FeedbackOverlay` and `DiceAnimation` in `src/app/game/page.tsx`; regression coverage in `FeedbackOverlay.test.ts` and `e2e/game-table.spec.ts`.
 **Verification:** `grep -n "previousPhaseRef\|previousAnswerCountRef" src/hooks/useGameAudioCues.ts`; no test exists — see [GAP-001](#open-gaps).
 
 ### UI-016 — Sound effects can be switched off and are scalable
@@ -1568,7 +1563,7 @@ Every gap names the affected requirements and the question of whether it is a **
 | GAP-009 | The sound effect and mode cue files are missing. What exists are only asset prompts (`public/audio/sfx/*.prompt.md`, `public/audio/mode-cues/*.prompt.md`); the `.mp3` files referenced in the code do not exist. The SFX player swallows the error silently. | UI-015, UI-016, NFR-008 | **Requirement** (or deliberately "Later" if the sounds are dropped) | `src/utils/game-audio-cues.ts:4-20` against `ls public/audio/sfx/` |
 | GAP-010 | The phase `locked-in` is not entered by any code path; there is no `answersLocked` semantics. The lyrics variant starts the music before the answer. | GAME-001, GAME-002, W-04, W-30 | **Decision required**: build a real locking phase or reduce the phase scope to four phases | `src/types/game-state.ts:31`; `grep -rn "advancePhase(" src` |
 | GAP-011 | `links.coverLink` is set in **none** of the 1,615 songs. The cover confusion variant `Cover oder Original?` is therefore never linked to a real cover, and the label `COVER-VERSION AKTIV` never appears. | GAME-034, GAME-035, MEDIA-016, NFR-008 | **Requirement** (data delivery) or **Later** (remove the variant) | measured via `src/data/songs/*.json`; `src/components/game/modes/CoverConfusionMode.tsx:116-120` |
-| GAP-012 | `links.amazonPrimePreview` is set in **no** song. The path `useAmazonPrime` is therefore dead code; the selection "Amazon Music" in the settings does nothing beyond a hint text — YouTube is played. | MEDIA-012, MEDIA-002, NFR-008 | **Requirement** (data delivery) or **Later** (remove the provider from the selection) | measured via `src/data/songs/*.json`; `src/components/game/MusicPlayer.tsx:169`, `:285` |
+| GAP-012 | Prime now prefers the official Amazon track embed when a track ID is present. The preview-only path remains conditional on preview data. Account-based playback and embed availability are unverified; responsive frame/gesture checks do not accept full-track playback. | MEDIA-012, MEDIA-002, NFR-008 | **Requirement** (data delivery) or **Later** (remove the provider from the selection) | measured via `src/data/songs/*.json`; `src/components/game/MusicPlayer.tsx:169`, `:285` |
 | GAP-013 | `apple-music` and `amazon-music-premium` are provider types without UI selection and without adapter (`src/config/game-config.ts:20-26`). | MEDIA-001 … MEDIA-018 | **Later** | `grep -rn "amazon-music-premium\|apple-music" src/` → only type definition and embed branch |
 | GAP-014 | `onlyQRCompatible` has no effect: all 1,615 songs have `isQRCompatible: true`. The switch in the lobby suggests a filtering that does not exist. | LOBBY-023 (lobby step 5), GAME-045 | **Decision required**: sharpen the filter (maintain real card compatibility) or remove the switch | measured via `src/data/songs/*.json`; `src/app/lobby/page.tsx:439-460` |
 | GAP-015 | `supportedModes` is inconsistent with `lyrics !== null`: 1,521 songs list "lyrics" in `supportedModes`, 1,553 have lyrics data. The mode filter in `pickRandomSong` therefore does not take effect for 32 songs with lyrics. | GAME-043, CAT-003 | **Requirement** (data cleanup) | measured via `src/data/songs/*.json`; `src/utils/song-picker.ts:58-62` |
@@ -1625,3 +1620,10 @@ Every gap names the affected requirements and the question of whether it is a **
 The Timeline question fits the available viewport in portrait and landscape. Its card rail moves horizontally by touch, mouse dragging, keyboard focus and labelled earlier/later buttons; it has no native scrollbar. Visible edge fades and a short instruction explain movement. Selecting a gap places a theme-aware Phomu record-sleeve card back there. The answer is confirmed explicitly, with no identity disclosed before submission. Header, primary action and utility controls must remain reachable. At browser zoom or unusually large text sizes, readable controls take priority over compressing text.
 
 The lobby navigation occupies its own layout row and does not cover player, mode or pack choices. All controls have visible focus and at least the existing minimum touch target. Existing theme palettes are retained; surface foregrounds adapt to the light theme. Reduced-motion preferences apply to CSS and motion components. Verification: responsive Playwright checks, TimelineSlots component tests and the existing accessibility gates.
+
+
+### UI-023 — Controls remain reachable inside the app viewport
+
+The library, settings, legal pages, final score and administration use bounded scrolling content areas below navigation. Controls may scroll into view, but must not be clipped behind a non-scrolling ancestor. The library displays the catalogue's root-level `coverUrl`, respects the deployment base path and retains compatibility with legacy nested cover fields in both Rust bridges. Mobile library filters occupy a scrollable panel instead of exhausting the results area's height. Verification: `e2e/reachability.spec.ts`, `e2e/library.spec.ts`, `public-asset-path.test.ts`, and both bridge `catalogue_covers.rs` tests. These browser tests do not certify physical devices or third-party authentication.
+
+Evidence for UI-023 and the related player and feedback changes: [responsive UI verification](docs/acceptance/UI-RESPONSIVE-2026-11-01.md).

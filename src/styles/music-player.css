@@ -1,0 +1,303 @@
+/* The inline sleeve and its top-layer player share one persistent media element. */
+.music-player-dialog:not([open]) {
+  display: block;
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #101015;
+  color: #fff;
+  overflow: hidden;
+}
+.music-player-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.music-player-dialog-header,
+.music-player-dialog-note {
+  display: none;
+}
+.music-player-dialog[open] {
+  width: min(
+    720px,
+    calc(
+      100vw - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px) -
+        24px
+    )
+  );
+  max-width: none;
+  max-height: calc(
+    100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) -
+      24px
+  );
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  overflow: hidden;
+  box-shadow: 0 24px 100px #0008;
+}
+.music-player-dialog::backdrop {
+  background: #000a;
+  backdrop-filter: blur(8px);
+}
+.music-player-dialog[open] .music-player-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.4rem 0.6rem 0.4rem 1rem;
+  min-height: 56px;
+  border-bottom: 1px solid var(--color-border);
+}
+.music-player-dialog-header > span {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.music-player-dialog-header > span > svg {
+  color: var(--color-primary);
+}
+.music-player-dialog-header button {
+  min-width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-bg-secondary);
+}
+.music-player-dialog[open] .music-player-canvas {
+  height: min(440px, 65dvh);
+  max-height: calc(
+    100dvh - 170px - env(safe-area-inset-top, 0px) -
+      env(safe-area-inset-bottom, 0px)
+  );
+  min-height: 120px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: #101015;
+}
+.music-player-dialog[open] .music-player-dialog-note {
+  display: block;
+  padding: 0.65rem 1rem;
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+.music-player-expand {
+  position: absolute;
+  right: 0.65rem;
+  top: 0.65rem;
+  z-index: 35;
+  display: grid;
+  place-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+.music-provider-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  padding: 8px;
+  background: #101015;
+}
+.music-provider-layer.is-concealed {
+  filter: blur(32px);
+  pointer-events: none;
+}
+.music-provider-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 152px;
+  border: 0;
+  border-radius: 12px;
+}
+.music-player-dialog[open] .music-provider-layer {
+  min-height: 352px;
+}
+.music-player-dialog[open] .music-provider-iframe {
+  height: 100%;
+  min-height: 336px;
+}
+.music-preview-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+}
+.music-provider-badge {
+  max-width: calc(100% - 2rem);
+  pointer-events: none;
+}
+.music-swipe-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+  background: linear-gradient(135deg, #12121ef2, #151019f2);
+  color: #fff;
+}
+.music-swipe-art {
+  display: grid;
+  place-content: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #ffffff30;
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+.music-swipe-rail {
+  position: relative;
+  width: min(100%, 360px);
+  height: 48px;
+  flex-shrink: 0;
+  border: 1px solid #ffffff40;
+  border-radius: 999px;
+  background: #ffffff0d;
+  overflow: hidden;
+}
+.music-swipe-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 46px 8px;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  pointer-events: none;
+}
+.music-swipe-handle {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  display: grid;
+  place-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--color-primary);
+  color: var(--color-on-primary, #fff);
+  cursor: grab;
+}
+.music-swipe-handle:active {
+  cursor: grabbing;
+}
+.timeline-player .music-swipe-cover {
+  padding: 2px 8px;
+  justify-content: center;
+}
+.timeline-player .music-swipe-art,
+.timeline-player .music-provider-badge {
+  display: none;
+}
+.timeline-player .music-swipe-label {
+  font-size: 0.75rem;
+}
+@media (max-height: 500px) {
+  .music-swipe-art {
+    display: none;
+  }
+  .music-player-dialog[open] {
+    width: min(720px, calc(100vw - 16px));
+    max-height: calc(100dvh - 16px);
+    border-radius: 16px;
+  }
+  .music-player-dialog[open] .music-player-dialog-header {
+    min-height: 48px;
+    padding-block: 2px;
+  }
+  .music-player-dialog[open] .music-player-canvas {
+    height: calc(100dvh - 124px);
+    max-height: calc(100dvh - 124px);
+  }
+  .music-player-dialog[open] .music-player-dialog-note {
+    padding-block: 0.35rem;
+    font-size: 0.75rem;
+  }
+}
+.music-player-dialog[open] .music-provider-badge {
+  display: none;
+}
+.music-player-expand {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.music-player-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+.music-player-dialog[open] .music-player-dialog-header {
+  flex-shrink: 0;
+}
+.music-player-dialog[open] .music-player-dialog-note {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  flex-shrink: 0;
+}
+.music-player-dialog-note > span {
+  flex: 1;
+  min-width: 160px;
+}
+.music-player-dialog-note > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  background: var(--color-bg-secondary);
+  font-weight: 700;
+}
+.music-player-dialog[open] .music-player-canvas {
+  flex-shrink: 1;
+}
+/* Other game modes also keep a compact sleeve; full controls live in the dialog. */
+.question-phase .music-player-shell:not(.timeline-player) {
+  height: clamp(64px, 12dvh, 110px);
+  aspect-ratio: auto;
+}
+.question-phase .music-player-shell:not(.timeline-player) .music-swipe-cover {
+  padding: 8px;
+}
+.question-phase .music-player-shell:not(.timeline-player) .music-swipe-art {
+  display: none;
+}

@@ -159,10 +159,10 @@ export default function AdminSongsPage() {
   const numberFormat = new Intl.NumberFormat(i18n.language);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="admin-page flex-1 min-h-0 overflow-auto bg-gray-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="text-2xl font-bold text-gray-900">
               <Icon name="note" size={20} className="text-[var(--color-accent)]" /> {t('admin.songs.title')}
@@ -195,7 +195,7 @@ export default function AdminSongsPage() {
 
       <div className="max-w-7xl mx-auto px-6 py-6">
         {/* Statistic cards */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {[
             {
               label: t('admin.songs.statTotal'),
@@ -230,7 +230,7 @@ export default function AdminSongsPage() {
           ))}
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex flex-col xl:flex-row gap-6">
           {/* Left column: list + filters */}
           <div className="flex-1 min-w-0">
             <SongList
@@ -240,7 +240,7 @@ export default function AdminSongsPage() {
             />
           </div>
 
-          <div className="w-[480px] shrink-0">
+          <div className="w-full xl:w-[480px] shrink-0 min-w-0">
             <SongEditorPanel
               song={selectedSong}
               onSave={handleSave}

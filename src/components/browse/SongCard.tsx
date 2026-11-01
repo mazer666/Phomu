@@ -13,6 +13,7 @@ import { useState, useRef, useCallback, useMemo } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { publicAssetPath } from '@/utils/public-asset-path';
 import type { PhomuSong } from '@/types/song';
 import { Icon } from '@/components/art/Icon';
 
@@ -99,7 +100,7 @@ export function SongCard({
       whileHover={{ y: -8 }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group relative bg-[#1a1a1e] rounded-[2rem] shadow-2xl transition-all duration-500 overflow-hidden border border-white/5 flex flex-col h-full hover:border-blue-500/30 hover:shadow-blue-500/10"
+      className="song-card group relative bg-[var(--color-bg-card)] rounded-[2rem] shadow-2xl transition-all duration-500 overflow-hidden border border-white/5 flex flex-col h-full hover:border-blue-500/30 hover:shadow-blue-500/10"
       style={{ backfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
     >
       {/* Invisible audio player on hover */}
@@ -119,10 +120,10 @@ export function SongCard({
         />
       )}
       {/* Cover Image Header */}
-      <div className="relative aspect-[4/5] overflow-hidden bg-gray-900">
+      <div className="song-card-art relative aspect-[4/5] overflow-hidden bg-gray-900">
         {song.coverUrl ? (
           <Image
-            src={`/Phomu${song.coverUrl}`}
+            src={publicAssetPath(song.coverUrl)}
             alt={song.title}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
@@ -159,7 +160,7 @@ export function SongCard({
         </div>
 
         {/* Action Buttons Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-4 backdrop-blur-[1px]">
+        <div className="song-card-actions absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-500 flex items-center justify-center gap-4 backdrop-blur-[1px]">
           {onPlay && (
             <button
               onClick={(e) => {
@@ -170,7 +171,7 @@ export function SongCard({
               title={t('browse.playNowTitle')}
             >
               <span className="text-2xl group-hover:scale-125 transition-transform">
-                ▶️
+                <Icon name="play" size={26} />
               </span>
             </button>
           )}
@@ -202,7 +203,7 @@ export function SongCard({
       </div>
 
       {/* Content */}
-      <div className="p-6 flex-1 flex flex-col bg-gradient-to-b from-[#1a1a1e] to-[#0f0f11]">
+      <div className="song-card-content p-6 flex-1 flex flex-col bg-[var(--color-bg-card)]">
         <div className="mb-4">
           <h3 className="font-black text-white text-xl leading-tight line-clamp-2 group-hover:text-blue-400 transition-colors uppercase tracking-tight">
             {song.title}

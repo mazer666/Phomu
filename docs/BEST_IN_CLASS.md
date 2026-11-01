@@ -212,3 +212,17 @@ The current change keeps the existing palettes and replaces remaining system emo
 These checks do not establish an all-device accessibility certification, reliable third-party music playback or a packaged Android device run. Android compilation and host/JVM tests are separate from emulator and physical-device validation. Real-party usability, screen-reader journeys and physical-device touch/rotation tests remain the next useful evidence. See [CR-0003](cr/CR-0003-card-table-and-mix-tape.md) and [the user guide](user-guide/USER-GUIDE.en.md).
 
 The concrete commands, outcomes and platform limits are recorded in [the card-table validation](qa/CARD-TABLE-MIX-TAPE-VALIDATION.md).
+
+## Responsive reachability follow-up (2026-11-01)
+
+The follow-up adds a production-build sweep of the library, settings, help,
+legal, administration, projector and final-score routes, plus German/English
+question layouts, overlap detection, focused name entry and open dialogs.
+These checks exercise real local catalogue art and the actual scrollports.
+Touch library actions no longer depend on hover. The player guard adapts to
+available width and retains the provider iframe across show/hide operations.
+
+Commands, observed outcomes, regression causes and remaining physical-device
+and provider-account limits are recorded in the [responsive UI evidence](acceptance/UI-RESPONSIVE-2026-11-01.md).
+This is a concrete regression baseline; it does not replace real-party,
+Safari, soft-keyboard, native-device or authenticated provider acceptance.

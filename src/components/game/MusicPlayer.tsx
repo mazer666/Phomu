@@ -1,9 +1,4 @@
-/**
- * MusicPlayer (Robust Version)
- *
- * Uses the YouTube IFrame Player API for advanced state tracking
- * and reliable error detection (Region blocks, embed restrictions).
- */
+/** Provider playback, source fallback and deliberate reveal in a responsive dialog. */
 'use client';
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
@@ -14,6 +9,7 @@ import {
   extractAmazonTrackId,
   extractSpotifyTrackId,
   extractYouTubeId,
+  providerTrackUrl,
 } from './music/media-links';
 import {
   EMPTY_REPORT_STORAGE,
@@ -26,6 +22,8 @@ import {
   type ReportStatus,
 } from './music/missing-report';
 import { Icon } from '@/components/art/Icon';
+import { SwipeToShow } from './music/SwipeToShow';
+import { MusicPlayerDialog } from './music/MusicPlayerDialog';
 /**
  * The resolution of the Amazon Music links.
  *
@@ -156,10 +154,10 @@ export function MusicPlayer({
     preferredMusicProvider === 'spotify-premium' && !!spotifyTrackId;
   const useSpotifyFree =
     preferredMusicProvider === 'spotify-free' && !!spotifyFreePreview;
-  const useAmazonPrime =
-    preferredMusicProvider === 'amazon-music' && !!amazonPrimePreview;
-  const useAmazonPremium =
-    preferredMusicProvider === 'amazon-music-premium' && !!amazonTrackId;
+  const useAmazonPreview =
+    preferredMusicProvider === 'amazon-music' && !amazonTrackId && !!amazonPrimePreview;
+  const useAmazonEmbed =
+    (preferredMusicProvider === 'amazon-music' || preferredMusicProvider === 'amazon-music-premium') && !!amazonTrackId;
 
   const handleReportMissing = useCallback(() => {
     if (typeof window === 'undefined' || !songId) return;
@@ -296,7 +294,8 @@ export function MusicPlayer({
     if (
       useSpotifyPremium ||
       useSpotifyFree ||
-      useAmazonPrime ||
+      useAmazonPreview ||
+      useAmazonEmbed ||
       !videoId ||
       typeof window === 'undefined'
     )
@@ -415,12 +414,12 @@ export function MusicPlayer({
     musicVolume,
     useSpotifyPremium,
     useSpotifyFree,
-    useAmazonPrime,
-    useAmazonPremium,
+    useAmazonPreview,
+    useAmazonEmbed,
   ]);
 
   useEffect(() => {
-    if (useSpotifyPremium || useSpotifyFree || useAmazonPrime) return;
+    if (useSpotifyPremium || useSpotifyFree || useAmazonPreview || useAmazonEmbed) return;
     if (!playerRef.current) return;
     try {
       playerRef.current.setVolume(
@@ -444,8 +443,8 @@ export function MusicPlayer({
     playerState,
     useSpotifyPremium,
     useSpotifyFree,
-    useAmazonPrime,
-    useAmazonPremium,
+    useAmazonPreview,
+    useAmazonEmbed,
   ]);
 
   useEffect(() => {
@@ -462,7 +461,7 @@ export function MusicPlayer({
   }, [useSpotifyFree, musicEnabled, musicVolume, spotifyFreePreview]);
 
   useEffect(() => {
-    if (!useAmazonPrime || !amazonPrimeAudioRef.current) return;
+    if (!useAmazonPreview || !amazonPrimeAudioRef.current) return;
     const audio = amazonPrimeAudioRef.current;
     audio.volume = Math.max(0, Math.min(1, musicVolume));
     if (!musicEnabled) {
@@ -472,14 +471,22 @@ export function MusicPlayer({
     void audio.play().catch(() => {
       // Autoplay can be blocked; user can still start via browser media controls.
     });
-  }, [useAmazonPrime, musicEnabled, musicVolume, amazonPrimePreview]);
+  }, [useAmazonPreview, musicEnabled, musicVolume, amazonPrimePreview]);
+
+  const concealed = blurred && !videoRevealed;
+  const provider = useSpotifyPremium || useSpotifyFree ? 'Spotify'
+    : useAmazonEmbed || useAmazonPreview
+      ? (preferredMusicProvider === 'amazon-music-premium' ? 'Amazon Music Unlimited' : 'Amazon Music Prime')
+      : 'YouTube';
+
+  const providerUrl = providerTrackUrl(provider, spotifyTrackId, amazonTrackId, videoId);
 
   if (
     !videoId &&
     !useSpotifyPremium &&
     !useSpotifyFree &&
-    !useAmazonPrime &&
-    !useAmazonPremium
+    !useAmazonPreview &&
+    !useAmazonEmbed
   ) {
     return (
       <div className="h-40 flex items-center justify-center opacity-30 border rounded-2xl italic">
@@ -490,69 +497,16 @@ export function MusicPlayer({
 
   return (
     <div
-      className={`relative w-full rounded-[2rem] overflow-hidden bg-black shadow-2xl transition-all ${className || 'aspect-video'}`}
+      className={`music-player-shell relative w-full aspect-video rounded-[2rem] overflow-hidden bg-black shadow-2xl ${className}`}
     >
+      <MusicPlayerDialog revealed={videoRevealed} onShow={() => setVideoRevealed(true)}
+        onHide={() => setVideoRevealed(false)} provider={provider} providerUrl={providerUrl} concealed={concealed}>
       {/* Target Player Wrapper */}
-      <div
+      <div inert={concealed} aria-hidden={concealed}
         className={`w-full h-full transition-all duration-1000 origin-center ${!videoRevealed && blurred ? 'opacity-50 blur-[60px] scale-125 pointer-events-none' : 'opacity-100 blur-none scale-100'}`}
       >
         <div ref={containerRef} key={key} className="w-full h-full" />
       </div>
-
-      {/* Swipe Overlay */}
-      <AnimatePresence>
-        {blurred && !videoRevealed && playerState !== 'error' && (
-          <motion.div
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-[#0a0a0c]/40 backdrop-blur-[60px]"
-          >
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              {playerState === 'loading' ? (
-                <motion.div
-                  animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.6, 0.3] }}
-                  transition={{ repeat: Infinity, duration: 2 }}
-                  className="w-32 h-32 rounded-full border-2 border-white/10 flex items-center justify-center"
-                >
-                  <Icon name="disc" size={40} className="animate-pulse" />
-                </motion.div>
-              ) : (
-                <div className="w-32 h-32 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
-                  <span className="text-4xl">
-<Icon name="note" size={16} />
-                  </span>
-                </div>
-              )}
-            </div>
-
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              className="mt-40 text-center space-y-2 select-none"
-            >
-              <h3 className="text-xl font-black uppercase tracking-widest text-white/80">
-                {t('game.music.nowPlaying')}
-              </h3>
-              <p className="text-[10px] font-black text-white/30 uppercase tracking-[0.2em]">
-                {t('game.music.swipeToReveal')}
-              </p>
-            </motion.div>
-
-            {/* Premium Drag Handle */}
-            <motion.div
-              drag="x"
-              dragConstraints={{ left: 0, right: 300 }}
-              dragElastic={0.05}
-              onDragEnd={(_, info) => {
-                if (info.offset.x > 150) setVideoRevealed(true);
-              }}
-              className="absolute left-10 bottom-12 h-16 w-16 bg-white rounded-full flex items-center justify-center shadow-2xl cursor-grab active:cursor-grabbing group hover:bg-blue-400 transition-colors"
-            >
-              <span className="text-xl text-black">➔</span>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Error / Region Lock Overlay */}
       <AnimatePresence>
@@ -621,21 +575,11 @@ export function MusicPlayer({
         )}
       </AnimatePresence>
 
-      {/* Manual Hide Toggle (when revealed) */}
-      {videoRevealed && blurred && (
-        <button
-          onClick={() => setVideoRevealed(false)}
-          className="absolute right-6 top-6 z-40 bg-black/40 hover:bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest border border-white/10 transition-all min-h-[44px]"
-        >
-          {t('game.music.hide')}
-        </button>
-      )}
-
       {(preferredMusicProvider === 'spotify-free' ||
         preferredMusicProvider === 'spotify-premium' ||
         preferredMusicProvider === 'amazon-music' ||
         preferredMusicProvider === 'amazon-music-premium') && (
-        <div className="absolute left-4 bottom-4 z-40 rounded-lg border border-white/10 bg-black/60 px-2 py-1 text-[9px] font-bold text-white/80">
+        <div className="music-provider-badge absolute left-4 top-3 z-30 rounded-lg border border-white/10 bg-black/60 px-2 py-1 text-[9px] font-bold text-white/80">
           {preferredMusicProvider === 'spotify-free'
             ? t('game.music.providerSpotifyFree')
             : preferredMusicProvider === 'spotify-premium'
@@ -647,7 +591,8 @@ export function MusicPlayer({
       )}
 
       {useSpotifyPremium && spotifyTrackId && (
-        <div className="absolute inset-0 z-50 bg-black p-3 sm:p-4">
+        <div data-provider-player aria-hidden={concealed} inert={concealed}
+          className={`music-provider-layer ${concealed ? 'is-concealed' : ''}`}>
           <iframe
             title={t('game.music.spotifyPremiumPlayerTitle')}
             src={`https://open.spotify.com/embed/track/${spotifyTrackId}?utm_source=generator`}
@@ -655,13 +600,14 @@ export function MusicPlayer({
             height="100%"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
-            className="w-full h-full rounded-2xl border border-white/10"
+            className="music-provider-iframe"
           />
         </div>
       )}
 
       {useSpotifyFree && spotifyFreePreview && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/90 p-6">
+        <div data-provider-player aria-hidden={concealed} inert={concealed}
+          className={`music-provider-layer music-preview-layer ${concealed ? 'is-concealed' : ''}`}>
           <audio
             ref={spotifyFreeAudioRef}
             src={spotifyFreePreview}
@@ -678,8 +624,9 @@ export function MusicPlayer({
         </div>
       )}
 
-      {useAmazonPrime && amazonPrimePreview && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/90 p-6">
+      {useAmazonPreview && amazonPrimePreview && (
+        <div data-provider-player aria-hidden={concealed} inert={concealed}
+          className={`music-provider-layer music-preview-layer ${concealed ? 'is-concealed' : ''}`}>
           <audio
             ref={amazonPrimeAudioRef}
             src={amazonPrimePreview}
@@ -706,8 +653,9 @@ export function MusicPlayer({
         </div>
       )}
 
-      {useAmazonPremium && amazonTrackId && (
-        <div className="absolute inset-0 z-50 bg-black p-3 sm:p-4">
+      {useAmazonEmbed && amazonTrackId && (
+        <div data-provider-player aria-hidden={concealed} inert={concealed}
+          className={`music-provider-layer ${concealed ? 'is-concealed' : ''}`}>
           <iframe
             title={t('game.music.amazonPremiumPlayerTitle')}
             src={`https://music.amazon.com/embed/track/${amazonTrackId}?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE`}
@@ -715,7 +663,7 @@ export function MusicPlayer({
             height="100%"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
-            className="w-full h-full rounded-2xl border border-white/10"
+            className="music-provider-iframe"
           />
         </div>
       )}
@@ -727,6 +675,9 @@ export function MusicPlayer({
           {reportStatus === 'duplicate' && t('game.music.reportDuplicate')}
         </div>
       )}
+      </MusicPlayerDialog>
+      {/* The fresh handle always starts at the left after hiding the player. */}
+      {blurred && !videoRevealed && <SwipeToShow onReveal={() => setVideoRevealed(true)} />}
     </div>
   );
 }

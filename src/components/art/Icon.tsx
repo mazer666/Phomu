@@ -21,6 +21,8 @@
 
 /** The symbols of the interface. */
 export type IconName =
+  | 'play'
+  | 'arrow-right'
   | 'check'
   | 'close'
   | 'plus'
@@ -280,6 +282,8 @@ export function Icon({ name, size = 18, className = '' }: IconProps) {
             <circle cx="13.5" cy="12" r="1.6" fill="currentColor" />
           </>
         );
+      case 'play': return <path d="m9 5 11 7-11 7z" fill="currentColor" />;
+      case 'arrow-right': return <path d="M4 12h16m-7-7 7 7-7 7" {...strich} />;
       case 'check': return <path d="m5 12 4 4L19 6" {...strich} />;
       case 'close': return <path d="m6 6 12 12M18 6 6 18" {...strich} />;
       case 'plus': return <path d="M12 5v14M5 12h14" {...strich} />;

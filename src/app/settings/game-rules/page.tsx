@@ -15,7 +15,7 @@ export default function SettingsGameRulesPage() {
   const gameIsActive = currentRound > 0;
 
   return (
-    <main className="min-h-screen max-w-2xl mx-auto p-4 md:p-8 space-y-6">
+    <main className="flex-1 min-h-0 overflow-y-auto w-full max-w-2xl mx-auto p-4 md:p-8 space-y-6">
       <header className="rounded-3xl border border-white/10 bg-white/5 p-5 flex items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-black">

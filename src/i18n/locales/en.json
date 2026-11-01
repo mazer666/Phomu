@@ -57,7 +57,13 @@
       "playerStandard": "Standard",
       "playerMusic": "Music",
       "backgroundMusic": "Background music",
-      "soundEffects": "Sound effects"
+      "soundEffects": "Sound effects",
+      "providerEmbedded": "Provider player with swipe-to-show; playback depends on sign-in and account.",
+      "providerYouTube": "YouTube",
+      "providerSpotify": "Spotify",
+      "providerSpotifyFree": "Spotify Free",
+      "providerAmazonPrime": "Amazon Music Prime",
+      "providerAmazonUnlimited": "Amazon Music Unlimited"
     },
     "gameRules": {
       "title": "Game modes & packs",
@@ -705,7 +711,7 @@
     "feedback": {
       "closeAriaLabel": "Close feedback",
       "closeTitle": "Tap to close",
-      "hint": "Tap to skip · Auto in 10s",
+      "hint": "Tap to close",
       "correct_0": "Funny!",
       "correct_1": "That was almost competent.",
       "correct_2": "Even a blind hen sometimes finds the grain.",
@@ -947,9 +953,9 @@
       "reportMissing": "Report missing",
       "hide": "Hide",
       "providerSpotifyFree": "Spotify Free: limited (preview). YouTube fallback active.",
-      "providerSpotifyPremium": "Spotify: YouTube is used when premium playback isn't available.",
-      "providerAmazonPrime": "Amazon Prime: limited (preview). YouTube fallback active.",
-      "providerAmazonPremium": "Amazon Music Premium: uses the full-track embed. An Amazon login is required.",
+      "providerSpotifyPremium": "Spotify player",
+      "providerAmazonPrime": "Amazon Music Prime – provider player",
+      "providerAmazonPremium": "Amazon Music Unlimited – provider player",
       "spotifyPremiumPlayerTitle": "Spotify Premium player",
       "spotifyFreePreviewTitle": "Spotify Free preview",
       "spotifyFreePreviewHint": "Free is limited to short preview clips. If no preview link is stored, Phomu automatically uses YouTube.",
@@ -959,7 +965,11 @@
       "amazonPremiumPlayerTitle": "Amazon Music Premium player",
       "reportSent": "Report created",
       "reportRateLimited": "Rate limit: max 5/h per device",
-      "reportDuplicate": "Already reported for this song"
+      "reportDuplicate": "Already reported for this song",
+      "playerTitle": "{{provider}} music player",
+      "openPlayer": "Open music player",
+      "providerControlsHint": "Use the player controls. Sign-in and available playback depend on the provider and your account.",
+      "openAtProvider": "Open at {{provider}}"
     },
     "qr": {
       "title": "QR Scanner",

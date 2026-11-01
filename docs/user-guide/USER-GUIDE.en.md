@@ -586,3 +586,16 @@ The main mode selection offers Timeline, Hint-Master, Lyrics Labyrinth and **Mix
 In Timeline, starting years come from the packs selected for the game. Tap an insertion gap to place the Phomu card back, then confirm your answer. Swipe or drag the card table to explore earlier and later years; the arrow controls also work with a keyboard. Only the card rail moves, with the main action remaining visible. You can rotate the device without losing your placement. Keyboard arrows and number keys still select a position; Enter confirms when focus is on the table. Before confirmation, the card back contains no song identity.
 
 Setup now keeps Back, Next and Start in a dedicated navigation row, so those actions do not overlap the player and pack choices. Theme colours are retained, with readable light-theme surfaces and larger touch targets.
+
+## Swipe to show the music player
+
+In Audio settings, choose Spotify, Amazon Music Prime or Amazon Music Unlimited to use that provider's embedded player. In modes that hide the song, swipe the handle to the right to show the player in its own overlay. The gesture fits the available width, including landscape phones. Keyboard users can activate the focused handle with Enter or the right arrow. Hide or Escape returns to the covered game. Opening and hiding keep the same player element, so Phomu does not deliberately reload it.
+
+Use the controls inside the provider player. Sign-in, full songs versus previews, region availability and browser restrictions are determined by the provider and account. Choosing Prime, Unlimited or Spotify in Phomu does not authenticate an account or guarantee full-song playback. If the embed cannot provide the required login or playback, use its direct provider link. No Spotify or Amazon credentials are entered into Phomu.
+
+
+## Library and answer feedback
+
+The library scrolls within the screen while its search and navigation remain available. Album covers are loaded from the bundled catalogue. Open the filter panel on a phone to adjust the collection, then close it to return to the results. Settings, help, legal pages and the final score also scroll when their content exceeds the available height.
+
+Correct and wrong answers trigger a short feedback banner. Tap it to continue immediately, or let it disappear after five seconds. The banner does not show a countdown and returns for new answers in later rounds.

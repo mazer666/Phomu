@@ -1,53 +1,9 @@
 import { test, expect, type Page } from '@playwright/test';
-import { DEFAULT_GAME_CONFIG } from '../src/config/default-game-config';
-
-async function setup(
-  page: Page,
-  baseURL: string | undefined,
-  mode = 'timeline'
-) {
-  await page.addInitScript(
-    ({ config, selectedMode }) => {
-      localStorage.setItem('i18nextLng', 'en');
-      localStorage.setItem(
-        'phomu-game-state',
-        JSON.stringify({
-          state: {
-            players: [
-              {
-                id: 'layout-player',
-                name: 'Alex',
-                score: 0,
-                isPilot: true,
-                isEliminated: false,
-                isSpectator: false,
-                avatar: 'note',
-              },
-            ],
-            teams: [],
-            config: { ...config, selectedModes: [selectedMode] },
-            currentRound: 0,
-          },
-          version: 0,
-        })
-      );
-    },
-    { config: DEFAULT_GAME_CONFIG, selectedMode: mode }
-  );
-  await page.goto(
-    `${(baseURL ?? 'http://127.0.0.1:3000').replace(/\/$/, '')}/lobby`
-  );
-  // The development toolbar is not part of the product under test.
-  await page.addStyleTag({
-    content: 'nextjs-portal { display:none !important; }',
-  });
-}
-
-async function start(page: Page) {
-  await page.getByRole('button', { name: 'Quick setup →' }).click();
-  await page.getByRole('button', { name: "LET'S GO!" }).click();
-  await page.locator('.drawing-phase button').click();
-}
+import {
+  unreachableControls,
+  overlappingButtons,
+} from './support/reachability';
+import { setupGame as setup, startGame as start } from './support/game';
 
 test('the card table keeps its placement and action visible across themes and rotation', async ({
   page,
@@ -165,6 +121,11 @@ async function answerMode(page: Page, mode: string) {
     }
     await question.getByRole('button', { name: /CONTINUE/ }).click();
   }
+  const feedback = page.getByRole('button', {
+    name: 'Close feedback',
+    exact: true,
+  });
+  if (await feedback.isVisible()) await feedback.click();
   if (['survivor', 'vibe-check', 'hint-master'].includes(mode)) {
     await question.getByRole('button', { name: /reveal/i }).click();
   }
@@ -203,16 +164,191 @@ test('Mix-Tape takes turns across separate Vibe, Survivor and Cover rounds', asy
   }
 });
 
-test('all setup steps keep navigation reachable on portrait and landscape phones', async ({ page, baseURL }) => {
-  for (const viewport of [{ width: 360, height: 640 }, { width: 640, height: 360 }]) {
+test('all setup steps keep navigation reachable on portrait and landscape phones', async ({
+  page,
+  baseURL,
+}) => {
+  for (const viewport of [
+    { width: 360, height: 640 },
+    { width: 640, height: 360 },
+  ]) {
     await page.setViewportSize(viewport);
     await setup(page, baseURL);
     for (let step = 1; step <= 6; step++) {
       const footer = await page.locator('.lobby-wizard-footer').boundingBox();
-      expect(footer!.y + footer!.height).toBeLessThanOrEqual(viewport.height + 1);
-      expect(await page.locator('.lobby-wizard-content').evaluate((el) => el.clientHeight)).toBeGreaterThan(60);
-      if (step < 6) await page.getByRole('button', { name: 'Next →', exact: true }).click();
-      else await expect(page.getByRole('button', { name: "LET'S GO!" })).toBeVisible();
+      expect(footer!.y + footer!.height).toBeLessThanOrEqual(
+        viewport.height + 1
+      );
+      expect(
+        await page
+          .locator('.lobby-wizard-content')
+          .evaluate((el) => el.clientHeight)
+      ).toBeGreaterThan(60);
+      if (step < 6)
+        await page.getByRole('button', { name: 'Next →', exact: true }).click();
+      else
+        await expect(
+          page.getByRole('button', { name: "LET'S GO!" })
+        ).toBeVisible();
     }
+  }
+});
+
+test('correct-answer banners return in the next round and disappear after five seconds without a countdown', async ({
+  page,
+  baseURL,
+}) => {
+  await page.setViewportSize({ width: 640, height: 360 });
+  await setup(page, baseURL, 'hint-master');
+  await start(page);
+  for (let round = 0; round < 2; round++) {
+    const question = page.locator('.question-phase');
+    await question
+      .getByRole('button', { name: 'SHOW ANSWER', exact: true })
+      .click();
+    await question.getByRole('button', { name: /^Both/ }).click();
+    const banner = page.getByRole('button', {
+      name: 'Close feedback',
+      exact: true,
+    });
+    await expect(banner).toBeVisible();
+    await expect(banner).not.toContainText(/Auto in|10s|5s/);
+    const box = await banner.boundingBox();
+    expect(box!.y).toBeGreaterThanOrEqual(0);
+    expect(box!.y + box!.height).toBeLessThanOrEqual(360);
+    if (round === 0) {
+      await banner.click();
+      await question.getByRole('button', { name: /reveal/i }).click();
+      await page.getByTestId('next-round').click();
+      await page.locator('.drawing-phase button').click();
+    } else {
+      await expect(banner).toBeVisible();
+      await expect(banner).toBeHidden({ timeout: 6500 });
+    }
+  }
+});
+
+for (const language of ['en', 'de'] as const) {
+  for (const mode of [
+    'timeline',
+    'hint-master',
+    'lyrics',
+    'vibe-check',
+    'survivor',
+    'cover-confusion',
+  ]) {
+    test(`every ${language} ${mode} question control remains reachable across rotation`, async ({
+      page,
+      baseURL,
+    }) => {
+      await setup(page, baseURL, mode, language);
+      await start(page, language);
+      for (const [width, height] of [
+        [360, 640],
+        [640, 360],
+        [390, 844],
+        [844, 390],
+        [768, 1024],
+        [1024, 768],
+        [1920, 1080],
+      ]) {
+        await page.setViewportSize({ width, height });
+        // Wait for the layout transition after rotation using a real stable control.
+        await page.locator('header button').first().hover();
+        await expect
+          .poll(() => overlappingButtons(page, '.question-phase'))
+          .toEqual([]);
+        expect(
+          await unreachableControls(page, '.question-phase'),
+          `${mode} ${width}x${height}`
+        ).toEqual([]);
+      }
+    });
+  }
+}
+
+test('the player-name focus outline stays within the lobby input in every theme', async ({
+  page,
+  baseURL,
+}) => {
+  await setup(page, baseURL);
+  for (const [width, height] of [
+    [360, 640],
+    [640, 360],
+    [768, 1024],
+    [1920, 1080],
+  ]) {
+    await page.setViewportSize({ width, height });
+    const input = page.locator('.lobby-name-input');
+    for (const theme of ['jackbox', 'spotify', 'youtube', 'musicwall']) {
+      await page.evaluate(
+        (name) => (document.documentElement.dataset.theme = name),
+        theme
+      );
+      await input.click();
+      await expect(input).toBeFocused();
+      await expect
+        .poll(() => input.evaluate((el) => getComputedStyle(el).outlineOffset))
+        .toBe('-3px');
+      expect(
+        await input.evaluate((el) => getComputedStyle(el).outlineStyle)
+      ).toBe('solid');
+      expect(await unreachableControls(page, '.lobby-wizard-content')).toEqual(
+        []
+      );
+    }
+  }
+  await page.screenshot({ path: '/tmp/phomu-lobby-name-focus.png' });
+});
+
+test('scoreboard and game-settings dialogs remain usable on short and tall screens', async ({
+  page,
+  baseURL,
+}) => {
+  await setup(page, baseURL);
+  await start(page);
+  for (const [width, height] of [
+    [360, 640],
+    [640, 360],
+    [844, 390],
+    [768, 1024],
+    [1920, 1080],
+  ]) {
+    await page.setViewportSize({ width, height });
+    for (const opener of ['Show scoreboard', 'Open game settings']) {
+      const action = page.getByRole('button', { name: opener, exact: true });
+      if (!(await action.isVisible())) {
+        await expect(page.locator('.game-side-panel')).toBeVisible();
+        expect(await unreachableControls(page, '.game-side-panel')).toEqual([]);
+        continue;
+      }
+      await action.click();
+      const dialog = page.getByRole('dialog');
+      await expect(dialog).toBeVisible();
+      await dialog.getByRole('button', { name: 'Close', exact: true }).hover();
+      expect(await unreachableControls(page, '[role="dialog"]')).toEqual([]);
+      await dialog.getByRole('button', { name: 'Close', exact: true }).click();
+      await expect(dialog).toBeHidden();
+    }
+  }
+});
+
+test('the QR scanner can always be cancelled without granting camera access', async ({
+  page,
+  baseURL,
+}) => {
+  await setup(page, baseURL);
+  for (const [width, height] of [
+    [360, 640],
+    [640, 360],
+    [844, 390],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.getByRole('button', { name: 'Scan Phomu card' }).click();
+    const dialog = page.getByRole('dialog');
+    await expect(dialog).toBeVisible();
+    expect(await unreachableControls(page, '[role="dialog"]')).toEqual([]);
+    await dialog.getByRole('button', { name: 'Close', exact: true }).click();
+    await expect(dialog).toBeHidden();
   }
 });

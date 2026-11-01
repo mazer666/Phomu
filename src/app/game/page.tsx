@@ -296,7 +296,7 @@ export default function GamePage() {
       {/* Juicy overlays */}
       <FeedbackOverlay
         isCorrect={lastAnswer?.isCorrect ?? null}
-        triggerKey={currentAnswers.length}
+        triggerKey={`${currentRound}:${currentAnswers.length}`}
       />
       <DiceAnimation isVisible={isRerolling} />
       <LastRoundBanner
