@@ -55,7 +55,7 @@ export { CoreError, callBridge, parseBridge } from './errors';
 
 /** The URL of the WebAssembly module. */
 function moduleUrl(): string {
-  const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '/Phomu';
   return `${base}/wasm/phomu_core_bg.wasm`;
 }
 

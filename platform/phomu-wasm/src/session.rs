@@ -166,6 +166,15 @@ pub fn draw_song(handle: u64, source: &str) -> Result<Value, BridgeError> {
             });
         };
         let song = selection.song;
+        let needs_timeline = registry.sessions.get(&handle).is_some_and(|entry| {
+            entry.session.state().round.mode == phomu_core::facade::GameMode::Timeline
+                && entry.session.state().timeline_years.is_empty()
+        });
+        let timeline_catalogue = if needs_timeline {
+            songs.clone()
+        } else {
+            Vec::new()
+        };
         let core_source = match source {
             "qr" => SongSource::Qr,
             _ => SongSource::Random,
@@ -173,6 +182,10 @@ pub fn draw_song(handle: u64, source: &str) -> Result<Value, BridgeError> {
         let Some(entry) = registry.sessions.get_mut(&handle) else {
             return Err(unknown_session(handle));
         };
+        entry
+            .session
+            .prepare_timeline(&timeline_catalogue)
+            .map_err(|failure| BridgeError::from(&failure))?;
         let view = entry
             .session
             .draw_song(song, core_source)
@@ -214,9 +227,22 @@ pub fn draw_song_by_id(handle: u64, song_id: &str) -> Result<Value, BridgeError>
                 context: HashMap::from([("songId".to_string(), song_id.to_string())]),
             });
         };
+        let needs_timeline = registry.sessions.get(&handle).is_some_and(|entry| {
+            entry.session.state().round.mode == phomu_core::facade::GameMode::Timeline
+                && entry.session.state().timeline_years.is_empty()
+        });
+        let timeline_catalogue = if needs_timeline {
+            songs.clone()
+        } else {
+            Vec::new()
+        };
         let Some(entry) = registry.sessions.get_mut(&handle) else {
             return Err(unknown_session(handle));
         };
+        entry
+            .session
+            .prepare_timeline(&timeline_catalogue)
+            .map_err(|failure| BridgeError::from(&failure))?;
         let view = entry
             .session
             .draw_song(song, SongSource::Qr)

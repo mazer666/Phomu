@@ -9,6 +9,9 @@
 //! therefore lives in the base and nowhere else
 //! (docs/design/BUILD-CONTRACT.md § 5.1, rule K-1).
 
+/// Maximum award for any independent round in the Mix-Tape rotation.
+pub const MIX_TAPE_MAX_POINTS: u32 = 3;
+
 /// The maximum number of points in the Timeline mode
 /// (`src/config/game-config.ts:63`).
 ///

@@ -191,8 +191,8 @@
       "correct": "Spot on!",
       "wrong": "Not this time...",
       "decadeHintButton": "Decade hint (-2 pts)",
-      "jokerButton": "🃏 Joker: remove a wrong slot (-1 pt)",
-      "jokerUsed": "🃏 Joker used — one slot gone",
+      "jokerButton": "Joker: remove a wrong slot (-1 pt)",
+      "jokerUsed": "Joker used — one slot gone",
       "slots_one": "{{count}} slot · {{points}} points",
       "slots_other": "{{count}} slots · {{points}} points",
       "solution": "That was the answer",
@@ -200,7 +200,7 @@
       "jokerBadge": "-1 PT JOKER",
       "removePrompt": "Remove a release year? (optional)",
       "removed": "Release year removed",
-      "jokerSlot": "🃏 Joker",
+      "jokerSlot": "Joker",
       "placed": "Placed",
       "here": "Here",
       "reveal": "REVEAL",
@@ -258,7 +258,18 @@
           "fourth": "Streaming only. Definitely after 2019."
         },
         "fallback": "Sometime in the {{decade}}s."
-      }
+      },
+      "boardLabel": "Your timeline",
+      "tableHint": "Place your card",
+      "earlier": "Show earlier years",
+      "later": "Show later years",
+      "swipeHint": "Swipe or drag to see more cards",
+      "chooseHint": "Choose the gap for your card",
+      "slotLabel": "Position {{position}}: between {{before}} and {{after}}",
+      "beginning": "the beginning",
+      "end": "the end",
+      "decadeHintShort": "Decade (−2 pts)",
+      "jokerShort": "Joker (−1 pt)"
     },
     "hintMaster": "Hint Master",
     "lyrics": {
@@ -626,7 +637,7 @@
       "rerollHint": "Video isn't working right now. We're rolling again..."
     },
     "drawing": {
-      "drawLabel1": "🃏 Draw a card",
+      "drawLabel1": "Draw a card",
       "drawLabel2": "Card on the table!",
       "drawLabel3": "Challenge fate",
       "drawLabel4": "Reveal the song",
@@ -639,14 +650,15 @@
       "pilotLabel3": "Curtain up for {{name}}!",
       "pilotLabel4": "{{name}} takes the helm",
       "pilotLabel5": "{{name}} — now or never",
-      "pilotLabel6": "🃏 {{name}} draws the card",
+      "pilotLabel6": "{{name}} draws the card",
       "modeTitle": {
         "timeline": "Chronological Timeline",
         "hintMaster": "Hint-Master",
         "lyrics": "Lyrics Labyrinth",
         "vibeCheck": "Vibe-Check",
         "survivor": "Survivor",
-        "coverConfusion": "Cover Confusion"
+        "coverConfusion": "Cover Confusion",
+        "mixTape": "Mix-Tape"
       },
       "modeInstruction": {
         "timeline": "Slot the card into the right place on your timeline!",
@@ -654,7 +666,8 @@
         "lyrics": "Which lyric is real? Find the genuine lyrics!",
         "vibeCheck": "Which mood fits this song? Agree among yourselves!",
         "survivor": "One-hit wonder or evergreen? What do you think?",
-        "coverConfusion": "Which cover fits this song? Find out!"
+        "coverConfusion": "Which cover fits this song? Find out!",
+        "mixTape": "Vibe-Check, Survivor and Cover Confusion take turns. One song, one question and up to 3 points per round."
       },
       "nextPilotLabel": "Next:",
       "noSongsError": "No songs available. Please check your song pack."
@@ -679,7 +692,8 @@
         "lyrics": "Lyrics",
         "vibeCheck": "Vibe-Check",
         "survivor": "Survivor",
-        "coverConfusion": "Cover Confusion"
+        "coverConfusion": "Cover Confusion",
+        "mixTape": "Mix-Tape"
       }
     },
     "scoreboard": {
@@ -1197,7 +1211,7 @@
     "mode": {
       "timelineName": "Timeline",
       "timelineVisual": "━━●━━━━●━━",
-      "timelineText": "Listen to the song, place the year, celebrate the team. Chronology beats chaos.",
+      "timelineText": "Place the song between the year cards. Starting years match your selected packs. Swipe or drag the card table, place the Phomu card in a gap, then confirm.",
       "hintMasterName": "Hint Master",
       "hintMasterVisual": "→ →",
       "hintMasterText": "Hints get clearer step by step. Guess early = more points.",
@@ -1212,7 +1226,10 @@
       "survivorText": "One-hit wonder or career monster? Trust your musical instinct.",
       "coverConfusionName": "Cover Confusion",
       "coverConfusionVisual": "Original ↔ Cover",
-      "coverConfusionText": "Who was there first? Spot the original and avoid the cover traps."
+      "coverConfusionText": "Who was there first? Spot the original and avoid the cover traps.",
+      "mixTapeName": "Mix-Tape",
+      "mixTapeVisual": "Vibe-Check → Survivor → Cover Confusion",
+      "mixTapeText": "Vibe-Check, Survivor and Cover Confusion take turns. One song, one question and up to 3 points per round."
     },
     "selectionHelpTitle": "How to choose without a wall of text",
     "tips": {
@@ -1226,7 +1243,8 @@
       "quickRoundLabel": "Quick round:",
       "quickRound": "few modes, short audio snippets."
     },
-    "audioLink": "Straight to audio & provider"
+    "audioLink": "Straight to audio & provider",
+    "selectionHelpText": "The main choices are Timeline, Hint-Master, Lyrics Labyrinth and Mix-Tape. Open More modes for the individual Vibe-Check, Survivor and Cover Confusion modes."
   },
   "legal": {
     "terms": {
@@ -1434,7 +1452,10 @@
       "active_other": "{{count}} of {{total}} active",
       "selectAll": "Select all",
       "deselectAll": "Deselect all",
-      "mandatory": "Required"
+      "mandatory": "Required",
+      "more": "More modes",
+      "fewer": "Hide individual modes",
+      "mixTapeHint": "Select individually or let Mix-Tape rotate through them."
     },
     "mode": {
       "timelineTitle": "Timeline",
@@ -1454,7 +1475,10 @@
       "survivorFlavour": "Work out whether the artist had more than this one song. Embarrassing if not.",
       "coverConfusionTitle": "Cover Confusion",
       "coverConfusionTagline": "The original is not what you think it is.",
-      "coverConfusionFlavour": "You hear a cover. Who did it first? Could be anyone."
+      "coverConfusionFlavour": "You hear a cover. Who did it first? Could be anyone.",
+      "mixTapeTitle": "Mix-Tape",
+      "mixTapeTagline": "Three modes. One question at a time.",
+      "mixTapeFlavour": "Vibe-Check, Survivor and Cover Confusion take turns. One song, one question and up to 3 points per round."
     },
     "packs": {
       "label": "Song Packs",

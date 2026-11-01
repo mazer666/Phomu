@@ -209,7 +209,7 @@ pub fn feedback_payload(session: &Session, mode: GameMode) -> Value {
         GameMode::Survivor => json!({
             "isOneHitWonder": song.is_one_hit_wonder,
         }),
-        GameMode::HintMaster | GameMode::CoverConfusion => json!({}),
+        GameMode::HintMaster | GameMode::CoverConfusion | GameMode::MixTape => json!({}),
     };
     json!({
         "identity": identity,

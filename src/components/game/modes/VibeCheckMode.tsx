@@ -12,6 +12,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -285,7 +286,7 @@ export function VibeCheckMode({ question, onAnswer }: VibeCheckModeProps) {
           {/* Main Reveal Card */}
           <div className="relative p-8 rounded-[2.5rem] bg-gradient-to-br from-green-500/20 to-blue-500/10 border-2 border-green-500/30 text-center shadow-2xl overflow-hidden">
             <div className="absolute top-0 right-0 p-4 opacity-5 bg-white rounded-bl-3xl">
-              ✨
+              <Icon name="star" size={20} />
             </div>
             <p className="text-xs font-black uppercase tracking-[0.3em] text-green-400 mb-4 drop-shadow-md">
               {t('modes.vibe-check.theVibeIs')}

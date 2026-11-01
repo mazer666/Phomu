@@ -205,6 +205,12 @@
       "state_changing": true,
       "bridge": "phomu_session_skip_broken_song",
       "exemption": null
+    },
+    {
+      "name": "Session::prepare_timeline",
+      "state_changing": true,
+      "bridge": "phomu_session_draw",
+      "exemption": null
     }
   ]
 }

@@ -41,7 +41,7 @@ fn question_payload(mode: GameMode) -> String {
 
 #[test]
 fn the_question_payload_never_contains_the_title_or_the_year() {
-    for mode in GameMode::ALL {
+    for mode in GameMode::PLAYABLE {
         if mode.reveals_identity() {
             // The Vibe-Check asks for the mood of a song whose identity is
             // visible — the exception is declared by the mode (C-6).
@@ -61,7 +61,7 @@ fn the_question_payload_never_contains_the_title_or_the_year() {
 
 #[test]
 fn the_question_payload_hides_the_artist_in_every_mode_but_the_declared_ones() {
-    for mode in GameMode::ALL {
+    for mode in GameMode::PLAYABLE {
         let payload = question_payload(*mode);
         let discloses = mode.reveals_identity() || *mode == GameMode::CoverConfusion;
         if discloses {

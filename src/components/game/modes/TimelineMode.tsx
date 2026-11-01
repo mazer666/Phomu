@@ -1,14 +1,4 @@
-/**
- * Timeline mode — shared, growing timeline
- *
- * Starts with 3 random years.
- * Correctly guessed → the year of the song is added.
- * From 10 years on: the player may remove one.
- *   - a duplicate arises → it is removed automatically
- *   - no duplicate → the player chooses
- *
- * All visible texts come from `src/i18n/locales/parts/modes.{de,en}.json`.
- */
+/** Pack-aware Timeline: place a sleeve, lock the answer, then reveal the card. */
 'use client';
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
@@ -17,6 +7,7 @@ import type { RoundQuestion, SongIdentity } from '@/core/types';
 import { applyCheat, dropTimelineYear, submit } from '@/core/session-service';
 import { useGameStore } from '@/stores/game-store';
 import { useOrientation } from '@/hooks/useOrientation';
+import { Icon } from '@/components/art/Icon';
 import { MusicPlayer } from '../MusicPlayer';
 import { TimelineHeader } from './TimelineHeader';
 import { TimelineSlots, type TimelineAxis } from './TimelineSlots';
@@ -27,8 +18,6 @@ import {
 } from './timeline-hints';
 import {
   TIMELINE_CHEAT_PENALTIES,
-  describeTimelineSlot,
-  isTimelineSlotCorrect,
   nextTimelineSlot,
   resolveTimelineOutcome,
   slotFromNumberKey,
@@ -36,7 +25,6 @@ import {
   timelinePointBudget,
   timelineSlotCount,
 } from './timeline-logic';
-import { ModeArt } from '@/components/art/ModeArt';
 
 interface TimelineModeProps {
   question: RoundQuestion;
@@ -46,15 +34,20 @@ interface TimelineModeProps {
     answeredInSeconds?: number
   ) => void;
   onReveal?: () => void;
+  onReroll?: () => void;
 }
 
 type RemovalState = 'none' | 'choosing' | 'done';
 
-export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps) {
+export function TimelineMode({
+  question,
+  onAnswer,
+  onReveal,
+  onReroll,
+}: TimelineModeProps) {
   const { t, i18n } = useTranslation();
   const {
     timelineYears,
-    initTimeline,
     addTimelineYear,
     removeTimelineYear,
     config,
@@ -119,59 +112,70 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   const [jokerUsed, setJokerUsed] = useState(false);
   const [jokerSlot, setJokerSlot] = useState<number | null>(null);
 
-  const numSlots = timelineSlotCount(timelineYears.length);
+  const submitting = useRef(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitFailed, setSubmitFailed] = useState(false);
+
+  const numSlots = timelineSlotCount(question.context.timelineYears.length);
 
   // After a correct answer: add the year + removal logic if applicable
   const handleReveal = useCallback(async () => {
-    if (selectedSlot === null || isRevealed) return;
-    setIsRevealed(true);
-    const answeredInSeconds = timelineAnswerSeconds(
-      Date.now() - questionStartedAt.current
-    );
+    if (selectedSlot === null || isRevealed || submitting.current) return;
+    submitting.current = true;
+    setIsSubmitting(true);
+    setSubmitFailed(false);
+    try {
+      const answeredInSeconds = timelineAnswerSeconds(
+        Date.now() - questionStartedAt.current
+      );
 
-    // The core evaluates the answer: the year of the song is the answer of
-    // the mode, and only the core knows it.
-    const result = await submit(
-      { kind: 'timeline', slot: selectedSlot },
-      answeredInSeconds
-    );
-    const detail = result.feedback.detail;
-    setHasAnswer(true);
-    setIsCorrect(result.score.isCorrect);
-    setIdentity(result.feedback.identity);
-    setCorrectSlot(detail.slot ?? null);
+      // The core evaluates the answer: the year of the song is the answer of
+      // the mode, and only the core knows it.
+      const result = await submit(
+        { kind: 'timeline', slot: selectedSlot },
+        answeredInSeconds
+      );
+      setIsRevealed(true);
+      const detail = result.feedback.detail;
+      setHasAnswer(true);
+      setIsCorrect(result.score.isCorrect);
+      setIdentity(result.feedback.identity);
+      setCorrectSlot(detail.slot ?? null);
 
-    // Timeline: points based on complexity (cheats/joker were already deducted)
-    onAnswer(result.score.isCorrect, result.score.pointsAwarded, answeredInSeconds);
+      // Timeline: points based on complexity (cheats/joker were already deducted)
+      onAnswer(
+        result.score.isCorrect,
+        result.score.pointsAwarded,
+        answeredInSeconds
+      );
 
-    // The base decides what happens with the timeline; the pure layer turns
-    // its decision into the steps the shell carries out.
-    const outcome = resolveTimelineOutcome(result.score.isCorrect, detail);
+      // The base decides what happens with the timeline; the pure layer turns
+      // its decision into the steps the shell carries out.
+      const outcome = resolveTimelineOutcome(result.score.isCorrect, detail);
 
-    // WHY the year is added in every case: the core adds the year of a
-    // correct answer to its timeline — the shell adds it to its own, so
-    // that both timelines carry the same years. A timeline that differs
-    // makes the core refuse the next answer.
-    if (outcome.kind !== 'wrong' && outcome.kind !== 'no-year') {
-      addTimelineYear(outcome.year);
+      // WHY the year is added in every case: the core adds the year of a
+      // correct answer to its timeline — the shell adds it to its own, so
+      // that both timelines carry the same years. A timeline that differs
+      // makes the core refuse the next answer.
+      if (outcome.kind !== 'wrong' && outcome.kind !== 'no-year') {
+        addTimelineYear(outcome.year);
+      }
+      if (outcome.kind === 'duplicate') {
+        // Duplicate → remove it right away, no intervention needed
+        // WHY no message to the core: the core removed the duplicate itself.
+        removeTimelineYear(outcome.year);
+      }
+      if (outcome.kind === 'removal-offered') {
+        // More than 10 years → the player may optionally remove one
+        setRemovalState('choosing');
+      }
+    } catch {
+      setSubmitFailed(true);
+    } finally {
+      submitting.current = false;
+      setIsSubmitting(false);
     }
-    if (outcome.kind === 'duplicate') {
-      // Duplicate → remove it right away, no intervention needed
-      // WHY no message to the core: the core removed the duplicate itself.
-      removeTimelineYear(outcome.year);
-    }
-    if (outcome.kind === 'removal-offered') {
-      // More than 10 years → the player may optionally remove one
-      setRemovalState('choosing');
-    }
-  }, [
-    selectedSlot,
-    isRevealed,
-    timelineYears,
-    addTimelineYear,
-    removeTimelineYear,
-    onAnswer,
-  ]);
+  }, [selectedSlot, isRevealed, addTimelineYear, removeTimelineYear, onAnswer]);
 
   async function handleRemoveYear(year: number) {
     // WHY the core comes first: the core owns the timeline — it evaluates
@@ -204,7 +208,10 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
       );
     }
     // Immediate deduction of 2 points for the decade hint
-    awardPoints(currentPlayerId, TIMELINE_CHEAT_PENALTIES['timeline-decade-hint']);
+    awardPoints(
+      currentPlayerId,
+      TIMELINE_CHEAT_PENALTIES['timeline-decade-hint']
+    );
   }
 
   async function handleJoker() {
@@ -226,7 +233,17 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   // Keyboard navigation
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (isRevealed) return;
+      if (
+        isRevealed ||
+        submitting.current ||
+        (e.target instanceof HTMLElement &&
+          e.target.closest('input,textarea,select,button'))
+      )
+        return;
+      if (
+        ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '].includes(e.key)
+      )
+        e.preventDefault();
       const slot = slotFromNumberKey(e.key, numSlots);
       if (slot !== null) setSelectedSlot(slot);
       if (e.key === 'ArrowUp' || e.key === 'ArrowLeft')
@@ -243,133 +260,129 @@ export function TimelineMode({ question, onAnswer, onReveal }: TimelineModeProps
   return (
     <div
       className={[
-        'flex flex-col px-4 gap-3 mx-auto pb-24 flex-1 min-h-0 w-full',
+        'timeline-mode',
         // WHY the width: the landscape has the whole width of the phase
         // column for the timeline — a timeline that runs from left to right
         // needs it. The portrait keeps the narrow column of the phone.
-        isLandscape ? 'py-3 max-w-none' : 'py-4 max-w-xl',
+        isLandscape ? 'is-landscape' : 'is-portrait',
       ].join(' ')}
     >
-      {/* Modus-Banner */}
-      <div className="w-full shrink-0 flex items-center justify-between bg-cyan-500/10 border border-cyan-500/20 rounded-2xl px-4 py-2">
-        <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400">
-          <ModeArt mode="timeline" size={22} /> {t('modes.timeline.banner')}
-        </span>
-        <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400/60">
-          {t('modes.timeline.stats', {
-            count: timelineYears.length,
-            points: numberFormat.format(points),
-          })}
-        </span>
-      </div>
-
       {/* Musik Player */}
       {question.media.youtube && (
-        <div className="shrink-0">
-        <MusicPlayer
-          songId={question.songId}
-          songPack={question.context.pack ?? undefined}
-          youtubeLink={question.media.youtube}
-          youtubeAlternatives={question.media.youtubeAlternatives}
-          spotifyLink={question.media.spotify ?? undefined}
-          spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
-          amazonMusicLink={question.media.amazonMusic ?? undefined}
-          amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
-          blurred={!isRevealed}
-          // WHY the height: the landscape has half the height of the
-          // portrait, and the player takes a sixteenth of the width — the
-          // timeline would be pushed out of the screen.
-          // WHY the height: the landscape has half the height of the
-          // portrait, and the player takes a sixteenth of the width — the
-          // timeline would be pushed out of the screen.
-          className={isLandscape ? 'h-[110px] aspect-auto' : 'max-h-[180px]'}
-        />
+        <div className="timeline-media">
+          <MusicPlayer
+            songId={question.songId}
+            songPack={question.context.pack ?? undefined}
+            youtubeLink={question.media.youtube}
+            youtubeAlternatives={question.media.youtubeAlternatives}
+            spotifyLink={question.media.spotify ?? undefined}
+            spotifyFreePreview={question.media.spotifyFreePreview ?? undefined}
+            amazonMusicLink={question.media.amazonMusic ?? undefined}
+            amazonPrimePreview={question.media.amazonPrimePreview ?? undefined}
+            blurred={!isRevealed}
+            // WHY the height: the landscape has half the height of the
+            // portrait, and the player takes a sixteenth of the width — the
+            // timeline would be pushed out of the screen.
+            // WHY the height: the landscape has half the height of the
+            // portrait, and the player takes a sixteenth of the width — the
+            // timeline would be pushed out of the screen.
+            className="timeline-player"
+          />
         </div>
       )}
 
       {/* Header */}
-      <div className="shrink-0">
-      <TimelineHeader
-        isRevealed={isRevealed}
-        isCorrect={isCorrect}
-        songId={question.songId}
-        cheatActive={cheatActive}
-        cheatHint={cheatHint}
-        jokerUsed={jokerUsed}
-        numSlots={numSlots}
-        noCheatMode={config.noCheatMode}
-        points={points}
-        onCheat={handleCheat}
-        onJoker={handleJoker}
-      />
+      <div className="timeline-heading">
+        <TimelineHeader
+          isRevealed={isRevealed}
+          isCorrect={isCorrect}
+          songId={question.songId}
+          cheatActive={cheatActive}
+          cheatHint={cheatHint}
+          jokerUsed={jokerUsed}
+          numSlots={numSlots}
+          noCheatMode={config.noCheatMode}
+          points={points}
+          onCheat={handleCheat}
+          onJoker={handleJoker}
+        />
       </div>
 
-      {/* Optional: remove a year after a correct guess */}
-      {removalState === 'choosing' && (
-        <div className="shrink-0 bg-[var(--color-bg-card)] border border-white/10 rounded-2xl p-3 space-y-2">
-          <p className="text-xs font-black uppercase tracking-widest text-center opacity-60">
-            {t('modes.timeline.removePrompt')}
-          </p>
-          <div className="flex flex-wrap gap-2 justify-center">
-            {timelineYears.map((year: number, i: number) => (
-              <button
-                key={`${year}-${i}`}
-                onClick={() => handleRemoveYear(year)}
-                className="px-4 py-2 rounded-xl border border-white/20 font-black text-sm hover:bg-red-500/20 hover:border-red-500/50 transition-all active:scale-95"
-              >
-                {yearFormat.format(year)}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {removalState === 'done' && (
-        <div className="shrink-0 bg-green-500/10 border border-green-500/30 rounded-2xl p-2 text-center">
-          <p className="text-xs font-black uppercase tracking-widest text-green-400">
-            {t('modes.timeline.removed')}
-          </p>
-        </div>
-      )}
-
       {/* Timeline */}
-      <div className="flex-1 min-h-0 overflow-y-auto">
-      <TimelineSlots
-        timelineYears={timelineYears}
-        selectedSlot={selectedSlot}
-        jokerSlot={jokerSlot}
-        correctSlot={correctSlot}
-        validSlotSet={validSlotSet}
-        isRevealed={isRevealed}
-        hasAnswer={hasAnswer}
-        identity={identity}
-        axis={axis}
-        onSelect={handleDrop}
-      />
+      <div className="timeline-board-area">
+        <TimelineSlots
+          timelineYears={question.context.timelineYears}
+          selectedSlot={selectedSlot}
+          jokerSlot={jokerSlot}
+          correctSlot={correctSlot}
+          validSlotSet={validSlotSet}
+          isRevealed={isRevealed}
+          hasAnswer={hasAnswer}
+          identity={identity}
+          axis={axis}
+          onSelect={handleDrop}
+        />
       </div>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 px-4 pb-6 pt-8 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/90 to-transparent z-[60]">
-        <div className="max-w-md mx-auto">
+      <footer className="timeline-action">
+        {/* Optional: remove a year after a correct guess */}
+        {removalState === 'choosing' && (
+          <details className="timeline-removal">
+            <summary>{t('modes.timeline.removePrompt')}</summary>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {timelineYears.map((year: number, i: number) => (
+                <button
+                  key={`${year}-${i}`}
+                  onClick={() => handleRemoveYear(year)}
+                  className="px-4 py-2 rounded-xl border border-white/20 font-black text-sm hover:bg-red-500/20 hover:border-red-500/50 transition-all active:scale-95"
+                >
+                  {yearFormat.format(year)}
+                </button>
+              ))}
+            </div>
+          </details>
+        )}
+
+        {removalState === 'done' && (
+          <div className="shrink-0 bg-green-500/10 border border-green-500/30 rounded-2xl p-2 text-center">
+            <p className="text-xs font-black uppercase tracking-widest text-green-400">
+              {t('modes.timeline.removed')}
+            </p>
+          </div>
+        )}
+
+        {submitFailed && (
+          <p role="alert" className="text-sm">
+            {t('game.error.revealFailed')}
+          </p>
+        )}
+        <div className="timeline-action-row">
           <button
-            disabled={selectedSlot === null}
+            disabled={isSubmitting || (!isRevealed && selectedSlot === null)}
             onClick={canProceed ? onReveal : handleReveal}
-            className={[
-              'w-full py-5 rounded-3xl font-black text-lg transition-all shadow-2xl',
-              selectedSlot !== null
-                ? 'bg-[var(--color-accent)] text-white scale-[1.02] shadow-[0_10px_40px_-10px_rgba(var(--color-accent-rgb),0.5)]'
-                : 'bg-white/5 opacity-20 text-white/40 cursor-not-allowed',
-            ].join(' ')}
+            className="phomu-primary-action"
           >
             {isRevealed ? t('modes.continue') : t('modes.timeline.reveal')}
           </button>
+          {onReroll && (
+            <button
+              type="button"
+              className="timeline-reroll"
+              onClick={onReroll}
+              title={t('game.question.reroll')}
+              aria-label={t('game.question.reroll')}
+            >
+              <Icon name="dice" size={24} />
+            </button>
+          )}
         </div>
       </footer>
     </div>
   );
 
   function handleDrop(slotIndex: number) {
-    if (isRevealed) return;
+    if (isRevealed || submitting.current) return;
     setSelectedSlot(slotIndex);
   }
 }

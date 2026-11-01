@@ -10,6 +10,7 @@
 
 /** All available game modes */
 export type GameMode =
+  | 'mix-tape'       // Rotation of three independent rounds
   | 'timeline'       // Mode 1: Chronological Timeline (drag & drop)
   | 'hint-master'    // Mode 2: Hint-Master (5 levels, manual validation)
   | 'lyrics'         // Mode 3: Lyrics Labyrinth (fake lyric detection)
@@ -298,6 +299,7 @@ export const PHOMU_CONFIG = {
 
   // Game Modes
   ALL_GAME_MODES: [
+    'mix-tape',
     'timeline',
     'hint-master',
     'lyrics',

@@ -101,12 +101,12 @@ export function TimelineHeader({
       {!isRevealed && !cheatActive && !noCheatMode && (
         <motion.button
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.3 }}
+          animate={{ opacity: 1 }}
           whileHover={{ opacity: 1, scale: 1.05 }}
           onClick={onCheat}
           className="text-[10px] font-black uppercase tracking-widest border border-red-500/20 py-1.5 px-3 rounded-full hover:bg-red-500/5 text-red-500 transition-all mb-2 min-h-[44px]"
         >
-          {t('modes.timeline.decadeHintButton')}
+          {t('modes.timeline.decadeHintShort')}
         </motion.button>
       )}
 
@@ -131,13 +131,13 @@ export function TimelineHeader({
       {!isRevealed && !jokerUsed && numSlots > 3 && !noCheatMode && (
         <motion.button
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.3 }}
+          animate={{ opacity: 1 }}
           whileHover={{ opacity: 1, scale: 1.05 }}
           onClick={onJoker}
           className="text-[10px] font-black uppercase tracking-widest border border-orange-500/20 py-1.5 px-3 rounded-full hover:bg-orange-500/5 transition-all mb-1 min-h-[44px]"
           style={{ color: '#f97316' }}
         >
-          {t('modes.timeline.jokerButton')}
+          {t('modes.timeline.jokerShort')}
         </motion.button>
       )}
       </div>

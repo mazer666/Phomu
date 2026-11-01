@@ -10,6 +10,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { Player, Team, TeamMode } from '@/types/player';
@@ -80,7 +81,7 @@ export function Scoreboard({
                 className="opacity-60 hover:opacity-100 transition-opacity text-lg min-h-[44px] min-w-[44px]"
                 aria-label={t('game.scoreboard.closeAriaLabel')}
               >
-                ✕
+                <Icon name="close" size={20} />
               </button>
             </div>
 

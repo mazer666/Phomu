@@ -82,7 +82,7 @@
 ### CORE-006 — One core, six clearly separated game modes
 
 **Preset:** Preset
-**Requirement:** Phomu knows exactly six game modes: `timeline`, `hint-master`, `lyrics`, `vibe-check`, `survivor`, `cover-confusion`. Each mode has its own question logic, its own scoring formula and its own reveal presentation.
+**Requirement:** The primary selection offers Timeline, Hint-Master, Lyrics Labyrinth and Mix-Tape. Mix-Tape rotates independent Vibe-Check → Survivor → Cover Confusion rounds. Each round has one song, one question and its own reveal, with an award capped by `phomu_config::MIX_TAPE_MAX_POINTS`. The three individual modes remain under “More modes”, with their original standalone scoring. Selecting Mix-Tape and selecting its individual members are mutually exclusive.
 **Rationale:** The six modes are the actual product core. They must not collapse into a generic quiz, otherwise the mode switch is mere cosmetics.
 **Acceptance:** `PHOMU_CONFIG.ALL_GAME_MODES` lists the six modes (`src/config/game-config.ts:300-307`); `QuestionPhase` dispatches per mode to its own component (`src/components/game/QuestionPhase.tsx:58-83`); `RevealPhase` has its own reveal card per mode (`src/components/game/RevealPhase.tsx:541-546`).
 **Verification:** `grep -n "ALL_GAME_MODES" src/config/game-config.ts`; no test exists — see [GAP-001](#open-gaps).
@@ -274,10 +274,10 @@
 ### GAME-017 — Timeline: the timeline starts with three year numbers
 
 **Preset:** Preset
-**Requirement:** If the timeline is empty, three random, ascending year numbers are generated from the catalogue.
+**Requirement:** Before drawing the first Timeline question, the shared core chooses three distinct, ascending starting years from songs in the selected packs (an empty pack selection means the whole catalogue). Pop-only selections must not receive classical centuries. Legacy pack IDs use the catalogue alias mapping. A pack with fewer than three distinct years is completed using immediately adjacent years; an unknown or empty pack fails rather than silently adding unrelated years. Existing cards survive subsequent rounds.
 **Rationale:** Without starting values there is no ordering question; three anchor points create a real ordering task.
-**Acceptance:** `randomInitialYears(3)` (`src/components/game/modes/TimelineMode.tsx:82-86`), called in `src/components/game/modes/TimelineMode.tsx:139-143`; `initTimeline` sorts ascending (`src/stores/game-store.ts:595-597`).
-**Verification:** `grep -n "randomInitialYears(3)" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+**Acceptance:** `Session::prepare_timeline` in `core/phomu-core/src/session/timeline_setup.rs` filters selected packs and initializes the core before either bridge draws. The web hook and Android controller read the same public anchor years from the question context.
+**Verification:** `cargo test -p phomu-core --test timeline_packs`; `npm run test -- useCoreSession`; `e2e/game-table.spec.ts`.
 
 ### GAME-018 — Timeline: duplicate years count as correct
 
@@ -923,7 +923,7 @@
 ### UI-009 — The header shows mode, pilot, progress and timer
 
 **Preset:** Preset
-**Requirement:** The game header shows the active mode (with emoji), the pilot (avatar, name, colour), the progress towards the target and — if `timeLimitSeconds` is set — a seconds counter. It contains an exit button with `aria-label`.
+**Requirement:** The game header shows the active mode (with a Phomu graphic), the pilot (avatar, name, colour), the progress towards the target and — if `timeLimitSeconds` is set — a seconds counter. It contains an exit button with `aria-label`.
 **Rationale:** The pilot must always know whose turn it is, how much time is left and how far the game has come.
 **Acceptance:** `src/components/game/GameHeader.tsx:127-209`; `TimerCountdown` `:66-92` with colour change at ≤ 20 s (`:78-81`) and `aria-label` (`:87`); `timeLimitSeconds` is passed only in the question phase (`src/app/game/page.tsx:317`).
 **Verification:** `grep -n "TimerCountdown\|aria-label" src/components/game/GameHeader.tsx`; no test exists — see [GAP-001](#open-gaps).
@@ -1003,7 +1003,7 @@
 ### UI-020 — The landscape layout uses the width of the screen
 
 **Preset:** Preset
-**Requirement:** In landscape the game screen is laid out in two columns: the phase (drawing, question, reveal) on the left, the player list and the score table on the right, permanently visible. The score table is therefore not an overlay in landscape — the button that opens it disappears there, while the keyboard operation stays complete. The lobby shows the steps on the left and a preview of the selected modes, packs, player count and end condition on the right. In portrait both screens stay one column and unchanged.
+**Requirement:** On wide landscape viewports the game screen is laid out in two columns: the phase (drawing, question, reveal) on the left, the player list and the score table on the right, permanently visible. The score table is therefore not an overlay in landscape — the button that opens it disappears there, while the keyboard operation stays complete. The lobby shows the steps on the left and a preview of the selected modes, packs, player count and end condition on the right. Compact landscape game viewports prioritize the card table and expose scores/settings through labelled utility controls instead of squeezing in the side column. Portrait keeps a single play column. The card table remains horizontal in both orientations so the placement gesture stays consistent.
 **Rationale:** Landscape has twice the width and half the height. A one-column layout leaves half of the screen unused, and the score table has to be opened by hand in the middle of a round.
 **Acceptance:** the layout variant is derived by a pure function from the viewport and the state, so that it is testable without a browser; in landscape the score table is a column, in portrait an overlay. The pure function and the hook have tests.
 **Verification:** `grep -n "useOrientation\|landscape" src/app/game/page.tsx src/app/lobby/page.tsx`; the test of the layout decision proves one column in portrait and two in landscape.
@@ -1619,3 +1619,9 @@ Every gap names the affected requirements and the question of whether it is a **
 | Date | Change | Evidence |
 |---|---|---|
 | 2026-10-25 | Baseline 0.1 created: 175 requirements derived from the code, 36 contradictions, 29 open gaps (CORE-002a added for AGPL §13) | Commit `d5b6422`; `npm run typecheck` (green), `npm run lint` (0 errors), `npx vitest run` (21 tests), `npm run validate-catalog` (135 packs / 1,615 songs), `node scripts/check-i18n-completeness.mjs --count` (935 literal texts in 47 files) |
+
+### UI-022 — A movable card table with a persistent primary action
+
+The Timeline question fits the available viewport in portrait and landscape. Its card rail moves horizontally by touch, mouse dragging, keyboard focus and labelled earlier/later buttons; it has no native scrollbar. Visible edge fades and a short instruction explain movement. Selecting a gap places a theme-aware Phomu record-sleeve card back there. The answer is confirmed explicitly, with no identity disclosed before submission. Header, primary action and utility controls must remain reachable. At browser zoom or unusually large text sizes, readable controls take priority over compressing text.
+
+The lobby navigation occupies its own layout row and does not cover player, mode or pack choices. All controls have visible focus and at least the existing minimum touch target. Existing theme palettes are retained; surface foregrounds adapt to the light theme. Reduced-motion preferences apply to CSS and motion components. Verification: responsive Playwright checks, TimelineSlots component tests and the existing accessibility gates.

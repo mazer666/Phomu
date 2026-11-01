@@ -15,12 +15,8 @@
  * it. The technical text stays in the console — the player gets a message
  * he can act on.
  *
- * WHY the timeline is handed over here: the core evaluates the answer
- * against the timeline it knows and builds the slots and the possible
- * points of the round from it. The shell owns the picture, the core owns
- * the rule — the years have to reach the core before the card is drawn,
- * otherwise the core refuses the answer (`errors.invalidAnswer`) and the
- * solution of the round cannot be released afterwards.
+ * The bridges prepare the pack-aware timeline in the core before drawing.
+ * This hook synchronizes its public anchor years from the question context.
  *
  * EXAMPLE: the game page calls `useCoreRound()` and draws the first card.
  */
@@ -35,11 +31,8 @@ import {
   drawRandom,
   openSession,
   reveal,
-  startTimeline,
   timeout,
-  yearScale,
 } from '@/core/session-service';
-import { initialTimelineYears } from '@/core/timeline';
 import { isAnswersNotLocked } from '@/core/errors';
 import type { RoundQuestion } from '@/core/types';
 
@@ -78,32 +71,8 @@ export function useCoreRound(): CoreRound {
   const clearError = useGameStore((state) => state.clearError);
   const started = useRef(false);
 
-  /**
-   * Hands the timeline of the round to the core.
-   *
-   * WHY only when the timeline is empty: the core owns the timeline once it
-   * knows it. It adds the year of a correct answer on its own, and the
-   * shell tells it about a year the player removes. A second initialisation
-   * would throw the grown timeline away.
-   *
-   * WHY before the card is drawn: the core builds the slots and the
-   * possible points of the round from the timeline it knows.
-   */
-  const prepareTimeline = useCallback(async () => {
-    const state = useGameStore.getState();
-    if (state.currentMode !== 'timeline') return;
-    if (state.timelineYears.length > 0) return;
-    const scale = await yearScale();
-    const years = initialTimelineYears(scale);
-    if (years.length === 0) return;
-    // WHY the order: the core comes first. If it refuses the years, the
-    // shell keeps an empty timeline and tries again — a timeline that only
-    // the shell knows would make the core evaluate the answer against
-    // years that are not on the screen.
-    await startTimeline(years);
-    state.initTimeline(years);
-  }, []);
-
+  // The core prepares a pack-aware timeline before drawing. The shell reads
+  // its public anchor years from the question, just like the native shell.
   useEffect(() => {
     if (started.current) return;
     started.current = true;
@@ -132,7 +101,6 @@ export function useCoreRound(): CoreRound {
         // makes the core evaluate the answer against years that are not on
         // the screen.
         initTimeline([]);
-        await prepareTimeline();
         clearError();
       } catch (failure) {
         console.error('the core could not be started', failure);
@@ -148,12 +116,10 @@ export function useCoreRound(): CoreRound {
     initTimeline,
     setError,
     clearError,
-    prepareTimeline,
   ]);
 
   const drawCard = useCallback(async () => {
     try {
-      await prepareTimeline();
       const state = useGameStore.getState();
       let question: RoundQuestion;
       if (state.quickSongId) {
@@ -176,12 +142,13 @@ export function useCoreRound(): CoreRound {
         question = await drawRandom();
         setQuestion(question, 'random');
       }
+      useGameStore.getState().initTimeline(question.context.timelineYears);
       clearError();
     } catch (failure) {
       console.error('the song could not be drawn', failure);
       setError(GAME_ERROR_KEYS.drawFailed);
     }
-  }, [setQuestion, setError, clearError, prepareTimeline]);
+  }, [setQuestion, setError, clearError]);
 
   const releaseSolution = useCallback(async () => {
     try {
@@ -226,7 +193,6 @@ export function useCoreRound(): CoreRound {
       const view = await advance();
       if (view.phase === 'drawing') {
         setCurrentMode(view.mode);
-        await prepareTimeline();
       }
       clearError();
     } catch (failure) {
@@ -234,7 +200,7 @@ export function useCoreRound(): CoreRound {
       setError(GAME_ERROR_KEYS.roundFailed);
     }
     nextRound();
-  }, [nextRound, setCurrentMode, setError, clearError, prepareTimeline]);
+  }, [nextRound, setCurrentMode, setError, clearError]);
 
   return { drawCard, releaseSolution, endRoundWithoutAnswer, closeRound };
 }

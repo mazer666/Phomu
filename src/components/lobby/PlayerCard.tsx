@@ -79,7 +79,7 @@ export function PlayerCard({
         aria-label={t('lobby.player.removeAria', { name })}
         title={t('lobby.player.removeAria', { name })}
       >
-        ✕
+        <Icon name="close" size={20} />
       </button>
     </motion.div>
   );

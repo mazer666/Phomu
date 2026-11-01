@@ -54,7 +54,7 @@ export function GameSidePanel({
 
   return (
     <aside
-      className="w-80 shrink-0 flex flex-col overflow-y-auto border-l"
+      className="game-side-panel w-80 shrink-0 flex flex-col overflow-y-auto border-l"
       style={{
         backgroundColor: 'var(--color-bg-secondary)',
         borderColor: 'var(--color-border)',

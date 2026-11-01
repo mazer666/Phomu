@@ -161,13 +161,14 @@ export function RevealPhase({
   return (
     <div
       className={[
-        'mx-auto px-6 flex flex-col flex-1 min-h-0 overflow-y-auto gap-4',
+        'reveal-phase mx-auto px-6 flex flex-col flex-1 min-h-0 overflow-hidden gap-4',
         // WHY the width: the landscape has the whole width of the phase
         // column for the solution and the points — side by side they fit on
         // the screen without scrolling.
         isLandscape ? 'max-w-none py-4' : 'max-w-lg py-6',
       ].join(' ')}
     >
+      <div className="reveal-content flex-1 min-h-0 overflow-y-auto">
       {/* ── Spicy Feedback Header ──────────────────────────────── */}
       {spicyMessage && (
         <motion.div
@@ -325,6 +326,7 @@ export function RevealPhase({
 
       </div>
 
+      </div>
       {/* ── Action buttons ───────────────────────────────────── */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
@@ -354,8 +356,9 @@ export function RevealPhase({
         ) : (
           <button
             onClick={onNextRound}
+            data-testid="next-round"
             className="w-full py-4 rounded-2xl text-xl font-black shadow-lg hover:opacity-90 transition-opacity"
-            style={{ backgroundColor: 'var(--color-primary)' }}
+            style={{ backgroundColor: 'var(--color-primary)', color: 'var(--color-on-primary)' }}
           >
             {nextRoundLabel}
           </button>

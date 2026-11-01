@@ -563,7 +563,7 @@ export function MusicPlayer({
             className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-[#121215] p-6 text-center"
           >
             <div className="w-16 h-16 bg-red-500/20 rounded-3xl flex items-center justify-center mb-4 border border-red-500/30">
-              <span className="text-3xl text-red-500">⚠️</span>
+              <span className="text-3xl text-red-500"><Icon name="warning" size={20} /></span>
             </div>
 
             <h2 className="text-xl font-black uppercase tracking-tight mb-1 text-red-500">

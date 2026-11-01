@@ -9,6 +9,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { InGameSettingsContent } from './InGameSettingsContent';
@@ -55,7 +56,7 @@ export function InGameSettingsPanel({
                 className="text-xl opacity-50 hover:opacity-100"
                 aria-label={t('game.settings.closeAriaLabel')}
               >
-                ✕
+                <Icon name="close" size={20} />
               </button>
             </div>
 

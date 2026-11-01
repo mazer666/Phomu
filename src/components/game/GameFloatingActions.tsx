@@ -30,11 +30,11 @@ export function GameFloatingActions({
   const { t } = useTranslation();
 
   return (
-    <>
+    <nav className="game-utilities">
       {/* Scoreboard toggle button */}
       <button
         onClick={onShowScoreboard}
-        className="fixed bottom-4 right-4 z-30 px-4 py-2 min-h-[44px] rounded-full text-sm font-bold
+        className=" px-4 py-2 min-h-[44px] rounded-full text-sm font-bold
                    shadow-lg transition-opacity hover:opacity-90"
         style={{
           backgroundColor: 'var(--color-bg-card)',
@@ -48,7 +48,7 @@ export function GameFloatingActions({
       {/* In-game settings (reachable at any time) */}
       <button
         onClick={onShowSettings}
-        className="fixed bottom-4 left-4 z-30 px-4 py-2 min-h-[44px] rounded-full text-sm font-bold shadow-lg transition-opacity hover:opacity-90"
+        className=" px-4 py-2 min-h-[44px] rounded-full text-sm font-bold shadow-lg transition-opacity hover:opacity-90"
         style={{
           backgroundColor: 'var(--color-bg-card)',
           border: '1px solid var(--color-border)',
@@ -57,6 +57,6 @@ export function GameFloatingActions({
       >
         {t('game.page.settingsButton')}
       </button>
-    </>
+    </nav>
   );
 }

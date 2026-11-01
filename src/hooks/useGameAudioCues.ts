@@ -43,7 +43,7 @@ export function useGameAudioCues({
     try {
       let audio = audioCacheRef.current.get(assetPath);
       if (!audio) {
-        audio = new Audio(assetPath);
+        audio = new Audio(`${process.env.NEXT_PUBLIC_BASE_PATH ?? '/Phomu'}${assetPath}`);
         audio.preload = 'auto';
         audioCacheRef.current.set(assetPath, audio);
       }

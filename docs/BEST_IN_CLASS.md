@@ -204,3 +204,11 @@ By urgency, measured as the distance to the target value:
    environment that does not exist yet.
 5. **Bundle** (section 3) — the catalog delivery is the lever; every other
    optimisation barely moves the 4.22 MiB.
+
+## Card-table and Mix-Tape validation (2026-11-01)
+
+The current change keeps the existing palettes and replaces remaining system emoji controls with Phomu graphics. `e2e/game-table.spec.ts` checks the production card table at portrait/landscape phone, tablet and desktop sizes under all four themes, including retained selection, visible confirmation and hidden native rail scrollbars. `TimelineSlots.test.ts` checks the spoiler-free back and disabled positions after reveal. `core/phomu-core/tests/timeline_packs.rs` checks selected-pack years, aliases, missing packs and tiny-pack behavior; `mix_tape.rs` checks independent rotating rounds and capped awards without changing standalone scoring.
+
+These checks do not establish an all-device accessibility certification, reliable third-party music playback or a packaged Android device run. Android compilation and host/JVM tests are separate from emulator and physical-device validation. Real-party usability, screen-reader journeys and physical-device touch/rotation tests remain the next useful evidence. See [CR-0003](cr/CR-0003-card-table-and-mix-tape.md) and [the user guide](user-guide/USER-GUIDE.en.md).
+
+The concrete commands, outcomes and platform limits are recorded in [the card-table validation](qa/CARD-TABLE-MIX-TAPE-VALIDATION.md).

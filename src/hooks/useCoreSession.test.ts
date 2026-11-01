@@ -275,47 +275,31 @@ describe('the session of the core', () => {
     expect(stored).not.toContain('game.error.coreUnavailable');
   });
 
-  it('hands the timeline of the round to the core before the card is drawn', async () => {
+  it('uses the pack-aware timeline returned with the question', async () => {
     await mountHook(root);
-
-    // WHY: the core builds the slots and the possible points of the round
-    // from the timeline it knows. A timeline that arrives after the draw
-    // leaves the round with the points of an empty timeline.
-    expect(core.startTimeline).toHaveBeenCalledTimes(1);
-    const years = core.startTimeline.mock.calls[0][0] as number[];
-    expect(years).toHaveLength(3);
-    expect(useGameStore.getState().timelineYears).toEqual(years);
-
+    expect(useGameStore.getState().timelineYears).toEqual([]);
     await run(() => commands!.drawCard());
-
-    // The core knew the timeline before the song was drawn.
-    expect(core.startTimeline.mock.invocationCallOrder[0]).toBeLessThan(
-      core.drawRandom.mock.invocationCallOrder[0]
-    );
+    expect(useGameStore.getState().timelineYears).toEqual(questionOf().context.timelineYears);
+    expect(core.yearScale).not.toHaveBeenCalled();
+    expect(core.startTimeline).not.toHaveBeenCalled();
   });
 
-  it('throws away the years of the last game', async () => {
-    // WHY: the years are persisted, and the core starts every session with
-    // an empty timeline. A timeline that only the shell knows makes the
-    // core evaluate the answer against years that are not on the screen.
-    useGameStore.setState({ timelineYears: [1960, 1970, 1980] });
-
+  it('throws away the years of the last game before drawing', async () => {
+    useGameStore.setState({ timelineYears: [1700, 1800, 1900] });
     await mountHook(root);
-
-    const years = core.startTimeline.mock.calls[0]?.[0] as number[] | undefined;
-    expect(years).toHaveLength(3);
-    expect(years).not.toContain(1960);
-    expect(useGameStore.getState().timelineYears).toEqual(years);
+    expect(useGameStore.getState().timelineYears).toEqual([]);
+    await run(() => commands!.drawCard());
+    expect(useGameStore.getState().timelineYears).toEqual([1970, 1980, 1990]);
   });
 
-  it('does not hand the timeline to the core twice', async () => {
+  it('keeps the growing timeline synchronized on subsequent draws', async () => {
     await mountHook(root);
     await run(() => commands!.drawCard());
-    await run(() => commands!.closeRound());
-
-    // WHY: the core owns the timeline once it knows it. A second
-    // initialisation would throw the grown timeline away.
-    expect(core.startTimeline).toHaveBeenCalledTimes(1);
+    const next = questionOf(); next.context.timelineYears = [1970, 1980, 1985, 1990];
+    core.drawRandom.mockResolvedValue(next);
+    await run(() => commands!.drawCard());
+    expect(useGameStore.getState().timelineYears).toEqual(next.context.timelineYears);
+    expect(core.startTimeline).not.toHaveBeenCalled();
   });
 
   it('closes a round without an answer with the timeout of the core', async () => {

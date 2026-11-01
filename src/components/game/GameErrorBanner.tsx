@@ -21,6 +21,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { useTranslation } from 'react-i18next';
 import { useGameStore } from '@/stores/game-store';
 import { GAME_ERROR_KEYS, isGameErrorKey } from '@/stores/game-store-errors';
@@ -67,7 +68,7 @@ export function GameErrorBanner({ onReload }: GameErrorBannerProps) {
     >
       {/* The sign of the failure — decorative, the text carries the meaning */}
       <span aria-hidden="true" className="text-2xl leading-none">
-        ⚠️
+        <Icon name="warning" size={20} />
       </span>
 
       <div className="min-w-0 flex-1">
@@ -97,7 +98,7 @@ export function GameErrorBanner({ onReload }: GameErrorBannerProps) {
           aria-label={t('game.error.dismiss')}
           className="min-h-[44px] min-w-[44px] rounded-xl text-lg transition-opacity hover:opacity-70 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)]"
         >
-          ✕
+          <Icon name="close" size={20} />
         </button>
       </div>
     </div>

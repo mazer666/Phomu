@@ -30,13 +30,38 @@ impl Session {
             return GameMode::Timeline;
         }
         let index = self.rng.index(modes.len());
-        modes.get(index).copied().unwrap_or(GameMode::Timeline)
+        let selected = modes.get(index).copied().unwrap_or(GameMode::Timeline);
+        self.state.round.progress.mix_tape_round = selected == GameMode::MixTape;
+        if selected != GameMode::MixTape {
+            return selected;
+        }
+        // Continue the three-mode rotation across intervening Timeline/Hint/
+        // Lyrics rounds. Each member is an independent question and reveal.
+        match self
+            .state
+            .round_history
+            .iter()
+            .rev()
+            .map(|round| round.mode)
+            .find(|mode| {
+                matches!(
+                    mode,
+                    GameMode::VibeCheck | GameMode::Survivor | GameMode::CoverConfusion
+                )
+            }) {
+            Some(GameMode::VibeCheck) => GameMode::Survivor,
+            Some(GameMode::Survivor) => GameMode::CoverConfusion,
+            _ => GameMode::VibeCheck,
+        }
     }
 
     /// Builds the progress of the mode for a drawn song.
     pub(crate) fn build_progress(&mut self, mode: GameMode, song: &Song) -> ModeProgress {
         let draw = self.rng.next_u64();
-        let mut progress = ModeProgress::default();
+        let mut progress = ModeProgress {
+            mix_tape_round: self.state.round.progress.mix_tape_round,
+            ..ModeProgress::default()
+        };
         match mode {
             GameMode::Lyrics => {
                 if let Some(lyrics) = song.lyrics.as_ref() {
@@ -54,7 +79,7 @@ impl Session {
             GameMode::HintMaster => {
                 progress.hint_level = 1;
             }
-            GameMode::Timeline | GameMode::Survivor => {}
+            GameMode::Timeline | GameMode::Survivor | GameMode::MixTape => {}
         }
         progress
     }
@@ -168,7 +193,12 @@ impl Session {
                 mode,
                 &self.state.timeline_years,
                 self.state.config.timeline_max_points,
-            ),
+            )
+            .min(if self.state.round.progress.mix_tape_round {
+                phomu_config::MIX_TAPE_MAX_POINTS
+            } else {
+                u32::MAX
+            }),
             answers_locked: self.state.round.answers_locked,
         }
     }

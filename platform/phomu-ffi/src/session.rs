@@ -232,9 +232,24 @@ pub fn phomu_session_draw(
         }
     };
 
+    let timeline_catalogue = registry
+        .sessions
+        .get(&handle.id)
+        .filter(|entry| {
+            entry.session.state().round.mode == phomu_core::facade::GameMode::Timeline
+                && entry.session.state().timeline_years.is_empty()
+        })
+        .and_then(|entry| entry.catalogue_id)
+        .and_then(|id| registry.catalogues.get(&id))
+        .map(|catalogue| catalogue.songs.clone())
+        .unwrap_or_default();
     let Some(entry) = registry.sessions.get_mut(&handle.id) else {
         return Err(unknown_session(handle.id));
     };
+    entry
+        .session
+        .prepare_timeline(&timeline_catalogue)
+        .map_err(|error| to_bridge_error(&error))?;
     let view = entry
         .session
         .draw_song(core_song, core_source)

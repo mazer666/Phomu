@@ -26,6 +26,7 @@ const MODE_CARDS = [
     visualKey: 'guide.mode.lyricsVisual',
     textKey: 'guide.mode.lyricsText',
   },
+  { id: 'mixTape', mode: 'mix-tape' as const, nameKey: 'guide.mode.mixTapeName', visualKey: 'guide.mode.mixTapeVisual', textKey: 'guide.mode.mixTapeText' },
   {
     id: 'vibeCheck', mode: 'vibe-check' as const,
     nameKey: 'guide.mode.vibeCheckName',
@@ -138,7 +139,7 @@ export default function GuidePage() {
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-5">
         <h2 className="text-lg font-black mb-2">
-          ⚙ {t('guide.selectionHelpTitle')}
+          <Icon name="settings" size={20} /> {t('guide.selectionHelpTitle')}
         </h2>
         <ul className="grid md:grid-cols-2 gap-2 text-sm">
           <li>

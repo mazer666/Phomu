@@ -113,7 +113,7 @@ export function GamePhaseArea({
   return (
     // WHY the height: the mode fills the phase and decides for itself what
     // scrolls. The phase never scrolls the page.
-    <main className="flex-1 min-h-0 overflow-y-auto flex flex-col">
+    <main className={`game-phase-area flex-1 min-h-0 flex flex-col ${currentMode === 'timeline' && roundPhase !== 'reveal' ? 'overflow-hidden' : 'overflow-y-auto'}`}>
       {/* ── Drawing + scoring: normal AnimatePresence ─────── */}
       <AnimatePresence mode="wait">
         {roundPhase === 'drawing' && (
@@ -193,6 +193,7 @@ export function GamePhaseArea({
               {roundPhase === 'reveal' && currentReveal?.song && (
                 <motion.div
                   key="reveal"
+                  className="flex-1 min-h-0 flex flex-col"
                   variants={PHASE_VARIANTS}
                   initial="initial"
                   animate="animate"

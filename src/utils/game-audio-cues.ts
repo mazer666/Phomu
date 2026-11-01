@@ -13,6 +13,7 @@ export const GAME_SFX = {
 } as const;
 
 export const MODE_CUES: Record<GameMode, string> = {
+  'mix-tape': '/audio/mode-cues/vibe-check.mp3',
   timeline: '/audio/mode-cues/timeline.mp3',
   'hint-master': '/audio/mode-cues/hint-master.mp3',
   lyrics: '/audio/mode-cues/lyrics.mp3',

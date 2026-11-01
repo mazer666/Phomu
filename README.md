@@ -60,16 +60,19 @@ Detailed instructions including troubleshooting:
 
 ---
 
-## The six game modes
+## Choose your game
 
 | Mode | Task | Validation |
 |---|---|---|
+| **Mix-Tape** | rotating Vibe-Check, Survivor and Cover Confusion rounds | automatic; up to three points per round |
 | **Timeline** | place songs in the right chronological order | automatic |
 | **Hint-Master** | guess the song from up to five hint levels | manual, by the pilot |
 | **Lyrics Labyrinth** | find the faked line among real lines | automatic |
 | **Vibe-Check** | assign the song to a mood | automatic |
 | **Survivor** | one-hit wonder or career act? | automatic |
 | **Cover Confusion** | find the original behind the cover version | automatic |
+
+The main menu offers Timeline, Hint-Master, Lyrics Labyrinth and Mix-Tape. Open **More modes** to select the three short modes individually. Mix-Tape asks one question per round and rotates through the three modes; it never combines three answers into one question.
 
 **Anti-spoiler:** during the game the interface never shows title, artist or album
 cover. The solution appears only once all answers are locked. For the projector

@@ -51,7 +51,7 @@ export function GameBody({
   children,
 }: PropsWithChildren<GameBodyProps>) {
   return (
-    <div className="flex-1 min-h-0 flex" data-columns={layout.columns}>
+    <div className="game-body flex-1 min-h-0 flex" data-columns={layout.columns}>
       {/* The phase of the round — always the first column */}
       <div className="flex-1 min-w-0 flex flex-col">{children}</div>
 

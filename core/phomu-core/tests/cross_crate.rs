@@ -38,7 +38,7 @@ fn every_error_key_is_used_by_an_error_code() {
 
 #[test]
 fn the_mode_identifiers_match_the_catalogue() {
-    for mode in GameMode::ALL {
+    for mode in GameMode::PLAYABLE {
         let name = mode.as_str();
         assert!(
             phomu_catalog::known_supported_mode(name),
@@ -51,7 +51,7 @@ fn the_mode_identifiers_match_the_catalogue() {
 fn the_catalogue_knows_exactly_the_six_modes() {
     assert_eq!(
         phomu_catalog::KNOWN_SUPPORTED_MODES.len(),
-        GameMode::ALL.len()
+        GameMode::PLAYABLE.len()
     );
     for name in phomu_catalog::KNOWN_SUPPORTED_MODES {
         assert!(

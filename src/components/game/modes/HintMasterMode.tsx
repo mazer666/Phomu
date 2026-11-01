@@ -276,7 +276,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
                   onClick={() => handleFinalDecision('both')}
                   className="py-4 px-3 bg-green-500 rounded-2xl font-black text-white text-xs shadow-lg shadow-green-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
                 >
-                  <span className="text-lg">✅</span>
+                  <span className="text-lg"><Icon name="check" size={20} /></span>
                   <span>{t('modes.hint-master.knewBoth')}</span>
                   <span className="text-[10px] opacity-70">
                     {t('modes.hint-master.pointsShort', {
@@ -312,7 +312,7 @@ export function HintMasterMode({ question, onAnswer }: HintMasterModeProps) {
                   onClick={() => handleFinalDecision('none')}
                   className="py-4 px-3 bg-red-500 rounded-2xl font-black text-white text-xs shadow-lg shadow-red-500/20 active:scale-95 transition-all flex flex-col items-center gap-1"
                 >
-                  <span className="text-lg">❌</span>
+                  <span className="text-lg"><Icon name="close" size={20} /></span>
                   <span>{t('modes.hint-master.knewNothing')}</span>
                   <span className="text-[10px] opacity-70">
                     {t('modes.hint-master.zeroPoints')}

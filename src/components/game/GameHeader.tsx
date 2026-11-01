@@ -10,6 +10,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
@@ -22,6 +23,7 @@ import { ModeArt } from '@/components/art/ModeArt';
 // ─── Mode icons ──────────────────────────────────────────────────
 
 const MODE_ART: Record<GameMode, GameMode> = {
+  'mix-tape': 'mix-tape',
   timeline: 'timeline',
   'hint-master': 'hint-master',
   lyrics: 'lyrics',
@@ -32,6 +34,7 @@ const MODE_ART: Record<GameMode, GameMode> = {
 
 /** Translation keys of the mode display names (order = MODE_ICONS). */
 const MODE_LABEL_KEYS: Record<GameMode, TranslationKey> = {
+  'mix-tape': 'game.header.modeLabel.mixTape',
   timeline: 'game.header.modeLabel.timeline',
   'hint-master': 'game.header.modeLabel.hintMaster',
   lyrics: 'game.header.modeLabel.lyrics',
@@ -142,7 +145,7 @@ export function GameHeader({
     <header
       className="flex flex-col sticky top-0 z-40 backdrop-blur-md pt-safe"
       style={{
-        backgroundColor: 'rgba(0,0,0,0.7)',
+        backgroundColor: 'var(--color-bg-secondary)',
         borderColor: 'var(--color-border)',
       }}
     >
@@ -167,7 +170,7 @@ export function GameHeader({
           aria-label={t('game.header.exitAriaLabel')}
           title={t('game.header.exitTitle')}
         >
-          ✕
+          <Icon name="close" size={20} />
         </button>
 
         {/* Mode badge (desktop-only details) */}

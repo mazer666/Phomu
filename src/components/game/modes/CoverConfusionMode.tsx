@@ -46,6 +46,7 @@ export function CoverConfusionMode({
   const { t, i18n } = useTranslation();
   const [hintsUsed, setHintsUsed] = useState(0);
   const [phase, setPhase] = useState<Phase>('listening');
+  const [awardedPoints, setAwardedPoints] = useState(0);
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
   const [identity, setIdentity] = useState<SongIdentity | null>(null);
 
@@ -54,7 +55,7 @@ export function CoverConfusionMode({
     Math.random() > 0.5 ? 'who-is-it' : 'original-or-cover'
   );
 
-  const points = coverConfusionPoints(hintsUsed);
+  const points = Math.min(coverConfusionPoints(hintsUsed), question.pointsPossible);
   const playLink = question.media.coverLink || question.media.youtube;
   const spicyMessage = useSpicyMessage(wasCorrect!, question.songId);
 
@@ -88,6 +89,7 @@ export function CoverConfusionMode({
       selfAssess: correct,
     });
     setIdentity(result.feedback.identity);
+    setAwardedPoints(result.score.pointsAwarded);
     onAnswer(result.score.isCorrect, result.score.pointsAwarded);
     setPhase('done');
   }
@@ -101,6 +103,7 @@ export function CoverConfusionMode({
     });
     setWasCorrect(result.score.isCorrect);
     setIdentity(result.feedback.identity);
+    setAwardedPoints(result.score.pointsAwarded);
     onAnswer(result.score.isCorrect, result.score.pointsAwarded);
     setPhase('done');
   }
@@ -112,6 +115,7 @@ export function CoverConfusionMode({
     });
     setWasCorrect(result.score.isCorrect);
     setIdentity(result.feedback.identity);
+    setAwardedPoints(result.score.pointsAwarded);
     onAnswer(result.score.isCorrect, result.score.pointsAwarded); // 3 pts for the variation
     setPhase('done');
   }
@@ -202,11 +206,11 @@ export function CoverConfusionMode({
                 {hintsUsed < 2
                   ? t('modes.cover-confusion.getHint', {
                       points: numberFormat.format(
-                        coverConfusionPoints(hintsUsed + 1)
+                        Math.min(coverConfusionPoints(hintsUsed + 1), question.pointsPossible)
                       ),
                     })
                   : t('modes.cover-confusion.lastHint', {
-                      points: numberFormat.format(coverConfusionPoints(3)),
+                      points: numberFormat.format(Math.min(coverConfusionPoints(3), question.pointsPossible)),
                     })}
               </button>
             </>
@@ -331,7 +335,7 @@ export function CoverConfusionMode({
           {wasCorrect && (
             <p className="text-xs font-black text-[var(--color-accent)]">
               {t('modes.cover-confusion.pointsAwarded', {
-                points: numberFormat.format(points),
+                points: numberFormat.format(awardedPoints),
               })}
             </p>
           )}

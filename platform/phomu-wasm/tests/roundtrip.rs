@@ -75,7 +75,17 @@ fn a_round_runs_over_the_wasm_bridge() {
     // The question phase carries no identity of the song.
     assert!(!question.to_string().contains("Titel EINS"));
     assert!(!question.to_string().contains("Künstler"));
-    assert!(!question.to_string().contains("1985"));
+    // Public anchor years may include the song's year (duplicate placement is
+    // valid); the identity and the answer year itself must remain undisclosed.
+    assert!(question["identity"].is_null());
+    assert!(question.get("year").is_none());
+    assert_eq!(
+        question["context"]["timelineYears"]
+            .as_array()
+            .unwrap()
+            .len(),
+        3
+    );
 
     let answer = phomu_core::facade::ModeAnswer::Timeline { slot: 0 };
     let score = submit_answer(handle, &answer, None).expect("the answer is scored");

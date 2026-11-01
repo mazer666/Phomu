@@ -81,7 +81,7 @@ right moves you forward. A step can only be left when its minimum condition is m
 Here you choose the **game modes** that should come up. At least one must be
 active; the last active mode cannot be deselected (it is marked as "mandatory").
 
-**Select all** / **Deselect** toggles all six modes at once. The mode of each round
+**Select all** / **Deselect** toggles the four main selections. **More modes** exposes the three individual short modes. Selecting an individual member replaces Mix-Tape and vice versa. The mode of each round
 is drawn **at random** from the active list — so the modes change by themselves.
 
 ### Step 3 — What are we listening to?
@@ -578,3 +578,11 @@ Correct: `…/Phomu` · Wrong: `…/` and `…/lobby`.
 - Technical setup and error images: [Getting started](../GETTING-STARTED.md)
 - Printing: [printing guide](../guides/PRINTING-GUIDE.md)
 - More error images: [troubleshooting](../guides/TROUBLESHOOTING.md)
+
+## Card table and Mix-Tape
+
+The main mode selection offers Timeline, Hint-Master, Lyrics Labyrinth and **Mix-Tape**. Mix-Tape alternates **Vibe-Check → Survivor → Cover Confusion**, then repeats. Each round has its own song, question, locked answer and reveal. It awards up to three points per round. The individual versions are still available under **More modes** and retain their original scoring. Mix-Tape is a rotation, not a three-part question.
+
+In Timeline, starting years come from the packs selected for the game. Tap an insertion gap to place the Phomu card back, then confirm your answer. Swipe or drag the card table to explore earlier and later years; the arrow controls also work with a keyboard. Only the card rail moves, with the main action remaining visible. You can rotate the device without losing your placement. Keyboard arrows and number keys still select a position; Enter confirms when focus is on the table. Before confirmation, the card back contains no song identity.
+
+Setup now keeps Back, Next and Start in a dedicated navigation row, so those actions do not overlap the player and pack choices. Theme colours are retained, with readable light-theme surfaces and larger touch targets.

@@ -69,7 +69,7 @@ class BridgeRoundTripTest {
     fun the_version_of_the_base_lies_inside_the_bracket() {
         val bridge = UniFfiGameBridge()
 
-        assertEquals("the version of the base", "1.0.0", bridge.abiVersion())
+        assertEquals("the version of the base", "1.1.0", bridge.abiVersion())
         assertTrue(
             "the shell accepts the version of the base",
             AbiBracket.accepts(bridge),

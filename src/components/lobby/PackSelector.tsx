@@ -197,7 +197,7 @@ export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
                           className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black shadow-lg"
                           style={{ background: gradTo, color: '#fff' }}
                         >
-                          ✓
+                          <Icon name="check" size={20} />
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -232,7 +232,7 @@ export function PackSelector({ selectedPacks, onChange }: PackSelectorProps) {
 
       {/* Footer badge */}
       <div className="flex items-center gap-2 justify-center bg-white/5 py-2 rounded-xl border border-white/5">
-        <span className="animate-pulse">✨</span>
+        <span className="animate-pulse"><Icon name="star" size={20} /></span>
         <p className="text-[9px] opacity-50 font-black uppercase tracking-wider">
           {t('lobby.packs.footer', { count: 1000 })}
         </p>

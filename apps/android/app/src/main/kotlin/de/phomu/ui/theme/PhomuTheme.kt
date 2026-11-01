@@ -150,6 +150,15 @@ fun PhomuTheme(
             background = colors.background,
             surface = colors.surface,
             onBackground = colors.onBackground,
+            onSurface = colors.onBackground,
+            onSurfaceVariant = colors.onBackground.copy(alpha = .8f),
+            surfaceVariant = colors.surface,
+            surfaceContainer = colors.surface,
+            surfaceContainerHigh = colors.surface,
+            surfaceContainerHighest = colors.surface,
+            primaryContainer = colors.surface,
+            onPrimaryContainer = colors.onBackground,
+            onPrimary = if (themeName == "spotify" || themeName == "youtube") Color(0xFF071B0E) else Color.White,
             error = colors.error,
         )
     } else {
@@ -159,6 +168,15 @@ fun PhomuTheme(
             background = colors.background,
             surface = colors.surface,
             onBackground = colors.onBackground,
+            onSurface = colors.onBackground,
+            onSurfaceVariant = colors.onBackground.copy(alpha = .8f),
+            surfaceVariant = colors.surface,
+            surfaceContainer = colors.surface,
+            surfaceContainerHigh = colors.surface,
+            surfaceContainerHighest = colors.surface,
+            primaryContainer = colors.surface,
+            onPrimaryContainer = colors.onBackground,
+            onPrimary = if (themeName == "spotify" || themeName == "youtube") Color(0xFF071B0E) else Color.White,
             error = colors.error,
         )
     }

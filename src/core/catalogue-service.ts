@@ -111,7 +111,7 @@ export interface CatalogueManifest {
 
 /** The base path of the deployment. */
 function basePath(): string {
-  return process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  return process.env.NEXT_PUBLIC_BASE_PATH ?? '/Phomu';
 }
 
 /** The handle of the catalogue in the base — the catalogue is opened once. */

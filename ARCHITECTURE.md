@@ -684,3 +684,9 @@ drift apart.
 | `docs/adr/ADR-0003-anti-spoiler-und-reveal-orchestrierung.md` | Anti-spoiler boundary, reveal orchestration |
 | `docs/adr/ADR-0004-internationalisierungsgrenze.md` | i18n boundary, key space, migration path |
 | `docs/adr/ADR_TEMPLATE.md` | Template for further ADRs |
+
+## Card-table and Mix-Tape presentation update (2026-11-01)
+
+The lobby has four primary selections. Mix-Tape is a selection group, resolved by `Session::pick_mode` to a concrete round mode before the question is built. Its progress flag caps budget and award; the existing answer wire types stay unchanged. The three short standalone modes remain available under More modes. See [CR-0003](docs/cr/CR-0003-card-table-and-mix-tape.md).
+
+The shared core prepares the Timeline anchors from the selected packs before drawing; both bridges call that operation through their draw path. Shells render the public years from the question context. Web Timeline uses a bounded horizontal card rail, a theme-aware SVG record sleeve, edge hints and labelled navigation. Primary actions are separate from the movable content. Compact landscape viewports hide the side column and retain utility controls; wide landscape views retain the side column. Rotating the viewport does not remount the question.

@@ -6,6 +6,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { useEffect, useRef, useState } from 'react';
 import { Html5QrcodeScanner } from 'html5-qrcode';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -85,7 +86,7 @@ export function QRScannerModal({
               onClick={onClose}
               className="w-12 h-12 rounded-2xl bg-white/10 text-white flex items-center justify-center font-black"
             >
-              ✕
+              <Icon name="close" size={20} />
             </button>
           </header>
 

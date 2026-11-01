@@ -125,4 +125,23 @@ describe('TimelineSlots', () => {
     // The placement stays visible — only the judgement is missing.
     expect(container.textContent).toContain(i18n.t('modes.timeline.placed'));
   });
+  it('never shows the identity before a judged answer', () => {
+    renderSlots('horizontal', false, true);
+    expect(container.textContent).not.toContain('Example Song');
+    expect(container.textContent).not.toContain('The Example');
+    expect(container.textContent).not.toContain('2001');
+    expect(container.querySelector('[data-slot="1"]')?.getAttribute('aria-pressed')).toBe('true');
+    expect(container.querySelector('.phomu-card-back')).not.toBeNull();
+  });
+
+  it('labels every insertion position and blocks changes after reveal', () => {
+    renderSlots('horizontal', true, true);
+    const slots = container.querySelectorAll<HTMLButtonElement>('[data-slot]');
+    expect(slots).toHaveLength(YEARS.length + 1);
+    for (const slot of slots) {
+      expect(slot.disabled).toBe(true);
+      expect(slot.getAttribute('aria-label')).toContain('Position');
+    }
+  });
+
 });

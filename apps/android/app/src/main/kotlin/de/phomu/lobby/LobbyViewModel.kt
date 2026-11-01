@@ -108,7 +108,11 @@ class LobbyViewModel(
     fun toggleMode(mode: String) {
         mutableState.update { current ->
             val modes = current.selectedModeIds.toMutableSet()
-            if (!modes.remove(mode)) modes.add(mode)
+            if (!modes.remove(mode)) {
+                if (mode == "mix-tape") modes.removeAll(setOf("vibe-check", "survivor", "cover-confusion"))
+                else if (mode in setOf("vibe-check", "survivor", "cover-confusion")) modes.remove("mix-tape")
+                modes.add(mode)
+            }
             current.copy(selectedModeIds = modes)
         }
     }

@@ -147,6 +147,7 @@ export const CURATED_TEAM_COLORS = [
 
 /** The list of the game modes with their texts and their colours. */
 export const LOBBY_MODES = [
+  { id: 'mix-tape', titleKey: 'lobby.mode.mixTapeTitle', taglineKey: 'lobby.mode.mixTapeTagline', flavourKey: 'lobby.mode.mixTapeFlavour', gradient: ['#7c3aed', '#0891b2'] },
   {
     id: 'timeline',
     titleKey: 'lobby.mode.timelineTitle',

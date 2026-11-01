@@ -71,11 +71,20 @@ export function ModeArt({
   size = 48,
   className = '',
 }: ModeArtProps) {
+  if (mode === 'mix-tape') return (
+    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false" className={className}>
+      <rect x="4" y="12" width="56" height="40" rx="10" fill="var(--color-bg-card)" stroke="var(--color-primary)" strokeWidth="3" />
+      <rect x="12" y="20" width="40" height="18" rx="8" stroke="var(--color-accent)" strokeWidth="2" />
+      <circle cx="22" cy="29" r="5" stroke="var(--color-primary)" strokeWidth="3" />
+      <circle cx="42" cy="29" r="5" stroke="var(--color-primary)" strokeWidth="3" />
+      <path d="m20 51 5-9h14l5 9M27 29h10" stroke="var(--color-accent)" strokeWidth="2" />
+    </svg>
+  );
   return (
     // WHY the empty text: the picture stands next to the name of the mode —
     // it repeats what the text already says.
     <img
-      src={`/art/modes/${mode}-${variant}.webp`}
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? '/Phomu'}/art/modes/${mode}-${variant}.webp`}
       alt=""
       aria-hidden="true"
       width={size}

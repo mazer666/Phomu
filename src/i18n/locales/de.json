@@ -191,8 +191,8 @@
       "correct": "Goldrichtig!",
       "wrong": "Leider daneben...",
       "decadeHintButton": "Jahrzehnt-Hint (-2 Pkt)",
-      "jokerButton": "🃏 Joker: Falschen Slot entfernen (-1 Pkt)",
-      "jokerUsed": "🃏 Joker eingesetzt — 1 Slot weg",
+      "jokerButton": "Joker: Falschen Slot entfernen (-1 Pkt)",
+      "jokerUsed": "Joker eingesetzt — 1 Slot weg",
       "slots_one": "{{count}} Position · {{points}} Punkte",
       "slots_other": "{{count}} Positionen · {{points}} Punkte",
       "solution": "Das war die Lösung",
@@ -200,7 +200,7 @@
       "jokerBadge": "-1 PKT JOKER",
       "removePrompt": "Eine Jahreszahl entfernen? (Optional)",
       "removed": "Jahreszahl entfernt",
-      "jokerSlot": "🃏 Joker",
+      "jokerSlot": "Joker",
       "placed": "Eingesetzt",
       "here": "Hier",
       "reveal": "AUFLÖSEN",
@@ -258,7 +258,18 @@
           "fourth": "Streaming only. Definitiv nach 2019."
         },
         "fallback": "Irgendwann in den {{decade}}ern."
-      }
+      },
+      "boardLabel": "Deine Timeline",
+      "tableHint": "Karte einordnen",
+      "earlier": "Frühere Jahre anzeigen",
+      "later": "Spätere Jahre anzeigen",
+      "swipeHint": "Wischen oder ziehen, um weitere Karten zu sehen",
+      "chooseHint": "Wähle die Lücke für deine Karte",
+      "slotLabel": "Position {{position}}: zwischen {{before}} und {{after}}",
+      "beginning": "Anfang",
+      "end": "Ende",
+      "decadeHintShort": "Dekade (−2 Pkt)",
+      "jokerShort": "Joker (−1 Pkt)"
     },
     "hintMaster": "Hinweis-Meister",
     "lyrics": {
@@ -626,7 +637,7 @@
       "rerollHint": "Video geht gerade nicht. Wir würfeln neu..."
     },
     "drawing": {
-      "drawLabel1": "🃏 Karte ziehen",
+      "drawLabel1": "Karte ziehen",
       "drawLabel2": "Karte auf den Tisch!",
       "drawLabel3": "Schicksal herausfordern",
       "drawLabel4": "Song aufdecken",
@@ -639,14 +650,15 @@
       "pilotLabel3": "Vorhang auf für {{name}}!",
       "pilotLabel4": "{{name}} übernimmt das Steuer",
       "pilotLabel5": "{{name}} — jetzt oder nie",
-      "pilotLabel6": "🃏 {{name}} zieht die Karte",
+      "pilotLabel6": "{{name}} zieht die Karte",
       "modeTitle": {
         "timeline": "Chronologische Timeline",
         "hintMaster": "Hint-Master",
         "lyrics": "Lyrics Labyrinth",
         "vibeCheck": "Vibe-Check",
         "survivor": "Survivor",
-        "coverConfusion": "Cover Confusion"
+        "coverConfusion": "Cover Confusion",
+        "mixTape": "Mix-Tape"
       },
       "modeInstruction": {
         "timeline": "Ordne die Karte an der richtigen Stelle in deiner Zeitlinie ein!",
@@ -654,7 +666,8 @@
         "lyrics": "Welcher Liedtext ist echt? Finde die echten Lyrics!",
         "vibeCheck": "Welche Stimmung passt zu diesem Song? Einigt euch!",
         "survivor": "One-Hit-Wonder oder Dauerstar? Was glaubst du?",
-        "coverConfusion": "Welches Cover passt zu diesem Song? Finde es heraus!"
+        "coverConfusion": "Welches Cover passt zu diesem Song? Finde es heraus!",
+        "mixTape": "Vibe-Check, Survivor und Cover Confusion wechseln sich ab. Pro Runde ein Song, eine Frage und bis zu 3 Punkte."
       },
       "nextPilotLabel": "Danach:",
       "noSongsError": "Keine Songs verfügbar. Bitte prüfe dein Song-Pack."
@@ -679,7 +692,8 @@
         "lyrics": "Lyrics",
         "vibeCheck": "Vibe-Check",
         "survivor": "Survivor",
-        "coverConfusion": "Cover Confusion"
+        "coverConfusion": "Cover Confusion",
+        "mixTape": "Mix-Tape"
       }
     },
     "scoreboard": {
@@ -1197,7 +1211,7 @@
     "mode": {
       "timelineName": "Timeline",
       "timelineVisual": "━━●━━━━●━━",
-      "timelineText": "Song hören, Jahr einsortieren, Team feiern. Chronologie schlägt Chaos.",
+      "timelineText": "Ordne den Song zwischen den Jahreskarten ein. Die Startjahre passen zu deinen ausgewählten Paketen. Wische oder ziehe den Kartentisch, lege die Phomu-Karte in eine Lücke und bestätige.",
       "hintMasterName": "Hint Master",
       "hintMasterVisual": "→ →",
       "hintMasterText": "Hinweise werden Stück für Stück klarer. Früher raten = mehr Punkte.",
@@ -1212,7 +1226,10 @@
       "survivorText": "One-Hit-Wonder oder Karriere-Monster? Setz deinen Musikinstinkt ein.",
       "coverConfusionName": "Cover Confusion",
       "coverConfusionVisual": "Original ↔ Cover",
-      "coverConfusionText": "Wer war zuerst da? Original erkennen und Cover-Fallen vermeiden."
+      "coverConfusionText": "Wer war zuerst da? Original erkennen und Cover-Fallen vermeiden.",
+      "mixTapeName": "Mix-Tape",
+      "mixTapeVisual": "Vibe-Check → Survivor → Cover Confusion",
+      "mixTapeText": "Vibe-Check, Survivor und Cover Confusion wechseln sich ab. Pro Runde ein Song, eine Frage und bis zu 3 Punkte."
     },
     "selectionHelpTitle": "Auswahlhilfe ohne Textwand",
     "tips": {
@@ -1226,7 +1243,8 @@
       "quickRoundLabel": "Schnellrunde:",
       "quickRound": "wenig Modi, kurze Audio-Snippets."
     },
-    "audioLink": "Direkt zu Audio & Provider"
+    "audioLink": "Direkt zu Audio & Provider",
+    "selectionHelpText": "Die Hauptauswahl bietet Timeline, Hint-Master, Lyrics Labyrinth und Mix-Tape. Unter Weitere Modi findest du Vibe-Check, Survivor und Cover Confusion einzeln."
   },
   "legal": {
     "terms": {
@@ -1434,7 +1452,10 @@
       "active_other": "{{count}} von {{total}} aktiv",
       "selectAll": "Alle wählen",
       "deselectAll": "Abwählen",
-      "mandatory": "Pflicht"
+      "mandatory": "Pflicht",
+      "more": "Weitere Modi",
+      "fewer": "Einzelmodi ausblenden",
+      "mixTapeHint": "Einzeln wählen oder als Mix-Tape abwechseln lassen."
     },
     "mode": {
       "timelineTitle": "Timeline",
@@ -1454,7 +1475,10 @@
       "survivorFlavour": "Erkenne, ob der Artist mehr als diesen einen Song hatte. Peinlich wenn nicht.",
       "coverConfusionTitle": "Cover Confusion",
       "coverConfusionTagline": "Das Original ist nicht das, was du denkst.",
-      "coverConfusionFlavour": "Du hörst ein Cover. Wer hat's zuerst gemacht? Könnte alles sein."
+      "coverConfusionFlavour": "Du hörst ein Cover. Wer hat's zuerst gemacht? Könnte alles sein.",
+      "mixTapeTitle": "Mix-Tape",
+      "mixTapeTagline": "Drei Modi. Immer eine neue Runde.",
+      "mixTapeFlavour": "Vibe-Check, Survivor und Cover Confusion wechseln sich ab. Pro Runde ein Song, eine Frage und bis zu 3 Punkte."
     },
     "packs": {
       "label": "Song Packs",

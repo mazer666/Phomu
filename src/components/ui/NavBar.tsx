@@ -109,7 +109,7 @@ export function NavBar() {
           aria-label={t('common.settings')}
           aria-expanded={settingsOpen}
         >
-          ⚙️
+          <Icon name="settings" size={20} />
         </button>
       </div>
 
@@ -185,7 +185,7 @@ export function NavBar() {
             className="text-xs font-bold uppercase tracking-wider opacity-50 hover:opacity-100 transition-opacity ml-auto"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            ⚙ {t('ui.nav.admin')}
+            <Icon name="settings" size={20} /> {t('ui.nav.admin')}
           </Link>
         </div>
       )}

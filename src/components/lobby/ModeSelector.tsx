@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+import { Icon } from '@/components/art/Icon';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { GameMode } from '@/config/game-config';
@@ -16,6 +18,17 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
   const { t } = useTranslation();
   // WHY the seed: the picture of a mode changes from game to game, and it
   // stays the same during the game.
+  const [showMore, setShowMore] = useState(false);
+  const primaryModes = LOBBY_MODES.filter(
+    (mode) => !['vibe-check', 'survivor', 'cover-confusion'].includes(mode.id)
+  );
+  const visibleModes = [
+    ...primaryModes.filter((mode) => mode.id !== 'mix-tape'),
+    ...primaryModes.filter((mode) => mode.id === 'mix-tape'),
+    ...(showMore
+      ? LOBBY_MODES.filter((mode) => !primaryModes.includes(mode))
+      : []),
+  ];
   const sessionId = useGameStore((state) => state.sessionId);
 
   function toggleMode(modeId: GameMode) {
@@ -23,11 +36,20 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
       if (selectedModes.length === 1) return;
       onChange(selectedModes.filter((m) => m !== modeId));
     } else {
-      onChange([...selectedModes, modeId]);
+      const otherModes = selectedModes.filter((mode) =>
+        modeId === 'mix-tape'
+          ? !['vibe-check', 'survivor', 'cover-confusion'].includes(mode)
+          : ['vibe-check', 'survivor', 'cover-confusion'].includes(modeId)
+            ? mode !== 'mix-tape'
+            : true
+      );
+      onChange([...otherModes, modeId]);
     }
   }
 
-  const allSelected = selectedModes.length === LOBBY_MODES.length;
+  const allSelected = primaryModes.every((mode) =>
+    selectedModes.includes(mode.id)
+  );
 
   return (
     <div className="space-y-4">
@@ -48,9 +70,7 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
         </div>
         <button
           onClick={() =>
-            onChange(
-              allSelected ? [LOBBY_MODES[0]!.id] : LOBBY_MODES.map((m) => m.id)
-            )
+            onChange(allSelected ? ['timeline'] : primaryModes.map((m) => m.id))
           }
           className="text-[10px] font-black uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity border border-white/10 px-4 py-2.5 rounded-full hover:bg-white/5 min-h-[44px]"
         >
@@ -61,7 +81,7 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
       </div>
 
       <div className="grid grid-cols-1 gap-3">
-        {LOBBY_MODES.map((mode, index) => {
+        {visibleModes.map((mode, index) => {
           const isSelected = selectedModes.includes(mode.id);
           const isLast = isSelected && selectedModes.length === 1;
           const [gradFrom, gradTo] = mode.gradient;
@@ -112,7 +132,10 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
                 {/* Die Grafik des Modus */}
                 <motion.span
                   className="shrink-0"
-                  animate={{ scale: isSelected ? 1.12 : 1, rotate: isSelected ? 0 : -3 }}
+                  animate={{
+                    scale: isSelected ? 1.12 : 1,
+                    rotate: isSelected ? 0 : -3,
+                  }}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                 >
                   <ModeArt
@@ -164,7 +187,7 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
                       className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 font-black text-xs shadow-lg"
                       style={{ background: gradTo }}
                     >
-                      ✓
+                      <Icon name="check" size={20} />
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -173,6 +196,16 @@ export function ModeSelector({ selectedModes, onChange }: ModeSelectorProps) {
           );
         })}
       </div>
+      <button
+        type="button"
+        onClick={() => setShowMore(!showMore)}
+        aria-expanded={showMore}
+        className="mode-more-button"
+      >
+        <Icon name="settings" size={18} />{' '}
+        {t(showMore ? 'lobby.modes.fewer' : 'lobby.modes.more')}
+      </button>
+      {showMore && <p className="text-sm">{t('lobby.modes.mixTapeHint')}</p>}
     </div>
   );
 }

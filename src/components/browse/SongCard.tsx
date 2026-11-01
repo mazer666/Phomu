@@ -195,7 +195,7 @@ export function SongCard({
               className="w-12 h-12 bg-blue-600/90 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all border border-blue-500/50"
               title={t('browse.editSongTitle')}
             >
-              <span className="text-lg">✏️</span>
+              <span className="text-lg"><Icon name="edit" size={20} /></span>
             </button>
           )}
         </div>

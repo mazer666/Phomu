@@ -84,9 +84,10 @@ export function QuestionPhase({
 
   return (
     <div
+      data-mode={currentMode}
       className={[
-        'w-full flex-1 min-h-0 mx-auto flex flex-col items-center',
-        isLandscape ? 'max-w-none' : 'max-w-2xl',
+        'question-phase w-full flex-1 min-h-0 mx-auto flex flex-col items-center',
+        isLandscape || currentMode === 'timeline' ? 'max-w-none' : 'max-w-2xl',
       ].join(' ')}
     >
       {/* Modus-spezifischer Inhalt */}
@@ -107,6 +108,7 @@ export function QuestionPhase({
           question={question}
           onAnswer={handleAnswered}
           onReveal={onReveal}
+          onReroll={onReroll}
         />
       )}
 
@@ -146,10 +148,10 @@ export function QuestionPhase({
       )}
 
       {/* Reroll Button (Subtil) */}
-      {onReroll && (
+      {onReroll && currentMode !== 'timeline' && (
         <button
           onClick={onReroll}
-          className="mt-12 mb-8 px-5 py-3 rounded-xl border border-white/10 text-[10px] font-black uppercase tracking-widest text-white/40 hover:text-white/80 hover:bg-white/5 hover:border-white/20 transition-all min-h-[44px]"
+          className="mt-3 mb-2 px-5 py-3 rounded-xl border border-white/10 text-[10px] font-black uppercase tracking-widest text-white/40 hover:text-white/80 hover:bg-white/5 hover:border-white/20 transition-all min-h-[44px]"
         >
           {t('game.question.reroll')}
         </button>

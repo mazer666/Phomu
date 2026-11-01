@@ -10,6 +10,7 @@
  * This is a client component because providers need browser APIs.
  */
 import { type ReactNode, useEffect, useState } from 'react';
+import { MotionConfig } from 'framer-motion';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 
 export default function Providers({ children }: { children: ReactNode }) {
@@ -27,5 +28,5 @@ export default function Providers({ children }: { children: ReactNode }) {
     return null;
   }
 
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return <ThemeProvider><MotionConfig reducedMotion="user">{children}</MotionConfig></ThemeProvider>;
 }

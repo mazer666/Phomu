@@ -92,6 +92,7 @@ pub fn to_core_answer(
         .ok_or_else(|| failure(ErrorCode::UnknownMode, &[("mode", &answer.mode)]))?;
 
     Ok(match mode {
+        GameMode::MixTape => return Err(invalid_answer("mix-tape is a selection, not an answer")),
         GameMode::Timeline => ModeAnswer::Timeline {
             slot: answer
                 .timeline_slot

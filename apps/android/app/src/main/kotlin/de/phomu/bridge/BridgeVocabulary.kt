@@ -27,6 +27,9 @@ object BridgeVocabulary {
     // WHY the identifiers are hyphenated: the bridge parses them with
     // `GameMode::from_str`, which knows exactly these spellings.
 
+    /** The rotation of the three short modes. */
+    const val MODE_MIX_TAPE: String = "mix-tape"
+
     /** The mode "timeline". */
     const val MODE_TIMELINE: String = "timeline"
 
@@ -47,6 +50,7 @@ object BridgeVocabulary {
 
     /** Every mode the base knows, in the order the lobby shows them. */
     val ALL_MODES: List<String> = listOf(
+        MODE_MIX_TAPE,
         MODE_TIMELINE,
         MODE_HINT_MASTER,
         MODE_LYRICS,
@@ -132,15 +136,8 @@ object BridgeVocabulary {
         HINT_RELEASE_POLICY_MANUAL_REVIEW,
     )
 
-    /**
-     * The queue strategy "queue-retry".
-     *
-     * WHY it is not "queue-retry-pending": the reference implementation of
-     * the web shell names the same strategy differently
-     * (`src/config/game-config.ts`, `DEFAULT_AI_QUEUE_STRATEGY`). The bridge
-     * accepts "queue-retry" and maps it onto the strategy of the base.
-     */
-    const val AI_QUEUE_STRATEGY_QUEUE_RETRY: String = "queue-retry"
+    /** The current queue-retry-pending identifier accepted by the shared core. */
+    const val AI_QUEUE_STRATEGY_QUEUE_RETRY: String = "queue-retry-pending"
 
     /** The queue strategy "fail-fast". */
     const val AI_QUEUE_STRATEGY_FAIL_FAST: String = "fail-fast"

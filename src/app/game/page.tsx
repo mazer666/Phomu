@@ -288,7 +288,7 @@ export default function GamePage() {
       // WHY the height: the phase of the round fills the space below the
       // header and scrolls on its own — the page itself never scrolls, so
       // the mode of the round is always completely on the screen.
-      className="flex-1 min-h-0 overflow-hidden flex flex-col"
+      className="phomu-game flex-1 min-h-0 overflow-hidden flex flex-col"
       data-layout={layout.variant}
       data-columns={layout.columns}
       style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}
@@ -364,7 +364,7 @@ export default function GamePage() {
       </GameBody>
 
       {/* The floating buttons — the portrait only, the landscape has the column */}
-      {layout.showScoreboardToggle && layout.showSettingsToggle && (
+      {(
         <GameFloatingActions
           onShowScoreboard={() => setShowScoreboard(true)}
           onShowSettings={() => setShowInGameSettings(true)}
@@ -377,12 +377,12 @@ export default function GamePage() {
         teams={teams}
         teamMode={config.teamMode}
         winCondition={config.winCondition}
-        isOpen={showScoreboard && layout.scoreboardMode === 'overlay'}
+        isOpen={showScoreboard}
         onClose={() => setShowScoreboard(false)}
       />
 
       <InGameSettingsPanel
-        isOpen={showInGameSettings && layout.variant === 'portrait'}
+        isOpen={showInGameSettings}
         onClose={() => setShowInGameSettings(false)}
         onLeaveParty={handleExit}
         onOpenFullSettings={() => router.push('/settings')}

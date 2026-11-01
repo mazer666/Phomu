@@ -121,13 +121,13 @@ export function SongEditor({
       <div className={panelClass}>
         <div className="flex items-center justify-between border-b border-gray-100 pb-4">
           <h2 className="text-2xl font-black text-gray-900">
-            ✏️ {t('admin.editor.title')}
+            <Icon name="edit" size={20} /> {t('admin.editor.title')}
           </h2>
           <button
             onClick={onCancel}
             className="text-gray-400 hover:text-gray-900 text-2xl"
           >
-            ✕
+            <Icon name="close" size={20} />
           </button>
         </div>
 

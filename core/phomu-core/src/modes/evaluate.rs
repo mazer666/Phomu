@@ -111,6 +111,7 @@ pub fn max_points(mode: GameMode, timeline_years: &[i32], timeline_cap: u32) -> 
         GameMode::Timeline => timeline::points(timeline_years.len(), timeline_cap),
         GameMode::HintMaster => hint_master::points_for_level(1),
         GameMode::Lyrics => phomu_config::LYRICS_POINTS,
+        GameMode::MixTape => phomu_config::MIX_TAPE_MAX_POINTS,
         GameMode::VibeCheck => phomu_config::VIBE_CHECK_POINTS,
         GameMode::Survivor => phomu_config::SURVIVOR_POINTS,
         GameMode::CoverConfusion => cover_confusion::points_for_hints(0),

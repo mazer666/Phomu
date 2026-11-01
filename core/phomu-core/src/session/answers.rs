@@ -120,7 +120,11 @@ impl Session {
             evaluate_mode_answer(mode, answer, song, &context)?
         };
 
-        let base_points = outcome.points;
+        let base_points = if self.state.round.progress.mix_tape_round {
+            outcome.points.min(phomu_config::MIX_TAPE_MAX_POINTS)
+        } else {
+            outcome.points
+        };
         let measured_time = if mode.measures_answer_time() {
             answered_in_seconds
         } else {
@@ -131,7 +135,12 @@ impl Session {
             base_points,
             outcome.is_correct,
             measured_time,
-        );
+        )
+        .min(if self.state.round.progress.mix_tape_round {
+            phomu_config::MIX_TAPE_MAX_POINTS
+        } else {
+            u32::MAX
+        });
 
         let record = PlayerAnswer {
             player_id: entity_id.clone(),

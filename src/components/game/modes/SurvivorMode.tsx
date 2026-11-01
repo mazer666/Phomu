@@ -9,6 +9,7 @@
  */
 'use client';
 
+import { Icon } from '@/components/art/Icon';
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -221,7 +222,7 @@ export function SurvivorMode({ question, onAnswer }: SurvivorModeProps) {
           {choice !== null ? (
             <>
               <p className="text-5xl mb-3">
-                {isCorrect ? '✅' : '❌'}
+                <Icon name={isCorrect ? 'check' : 'close'} size={28} />
               </p>
               <p
                 className="font-black uppercase italic tracking-tighter text-xl mb-1"

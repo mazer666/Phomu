@@ -27,6 +27,8 @@ use crate::session::model::SongSource;
 /// options and the selection. The mode decides what they mean.
 #[derive(Debug, Clone, Default, PartialEq, Eq)]
 pub struct ModeProgress {
+    /// Whether the current independent mode was selected through Mix-Tape.
+    pub mix_tape_round: bool,
     /// The number of hints that were revealed.
     pub hints_used: u32,
     /// The level the Hint-Master mode has reached.

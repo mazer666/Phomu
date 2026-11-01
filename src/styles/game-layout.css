@@ -1,0 +1,272 @@
+/* Phase layout, compact transports and viewport adaptations. */
+.drawing-phase {
+  flex: 1;
+  min-height: 0;
+  padding-block: 1rem;
+  gap: 0.5rem;
+}
+.drawing-phase .drawing-card {
+  width: clamp(80px, 12vw, 140px);
+  height: clamp(106px, 22dvh, 185px);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0
+    color-mix(in srgb, var(--color-primary) 20%, transparent);
+  transform: rotate(-5deg);
+}
+.drawing-phase > div,
+.drawing-phase h2 {
+  margin-bottom: 0.5rem;
+}
+.drawing-phase h2 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+@media (orientation: landscape) {
+  .timeline-mode {
+    grid-template-columns: minmax(160px, 0.6fr) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    gap: 0.5rem;
+  }
+  .timeline-media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .timeline-heading {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+  .timeline-board-area {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-height: 500px) {
+  .timeline-mode {
+    padding: 0.35rem 0.65rem;
+    gap: 0.25rem;
+  }
+  .timeline-player {
+    height: 64px !important;
+  }
+  .timeline-heading h2 {
+    font-size: 1rem;
+  }
+  .timeline-heading p:last-child {
+    display: none;
+  }
+  .timeline-heading button {
+    min-height: 44px;
+    padding-block: 0.15rem;
+  }
+  .timeline-table-toolbar {
+    padding-block: 0;
+  }
+  .timeline-table-toolbar .timeline-navigation button {
+    min-height: 44px;
+  }
+  .timeline-year-card > svg,
+  .timeline-year-card > span {
+    display: none;
+  }
+  .timeline-year-card {
+    min-height: 48px;
+  }
+  .timeline-swipe-hint {
+    padding: 0 0.5rem 0.2rem;
+  }
+  .game-utilities {
+    padding-block: 0.15rem;
+  }
+  .phomu-primary-action {
+    min-height: 44px;
+    padding-block: 0.4rem;
+  }
+  .drawing-phase {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.timeline-action-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+.timeline-reroll {
+  min-height: 48px;
+  min-width: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-bg-card);
+  color: var(--color-text);
+}
+.timeline-player {
+  height: clamp(72px, 12dvh, 110px) !important;
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+  .game-side-panel {
+    display: none;
+  }
+}
+@media (max-height: 500px) {
+  .timeline-mode {
+    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-rows: 56px minmax(0, 1fr) 44px;
+  }
+  .timeline-player {
+    height: 56px !important;
+  }
+  .timeline-heading h2 {
+    margin: 0;
+  }
+  .timeline-heading p {
+    font-size: 0.75rem;
+  }
+  .timeline-heading > div {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .timeline-heading button {
+    font-size: 0.7rem;
+  }
+  .timeline-swipe-hint {
+    display: none;
+  }
+  .timeline-cards {
+    padding-block: 4px;
+  }
+  .timeline-reroll {
+    min-height: 44px;
+  }
+  .phomu-game header > div {
+    padding-block: 0.2rem;
+  }
+  .game-utilities {
+    display: none;
+  }
+  .game-side-panel {
+    display: none;
+  }
+}
+@media (max-height: 500px) {
+  .game-utilities {
+    display: flex;
+  }
+  .timeline-mode {
+    grid-template-rows: 50px minmax(0, 1fr) 44px;
+  }
+  .timeline-player {
+    height: 50px !important;
+  }
+}
+@media (min-width: 1001px) and (orientation: landscape) {
+  .game-utilities {
+    display: none;
+  }
+}
+.timeline-removal {
+  position: relative;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+.timeline-removal summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+.timeline-removal[open] > div {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  max-height: 50dvh;
+  overflow: auto;
+  padding: 0.75rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: 0 -6px 20px #0003;
+  z-index: 5;
+}
+/* The full video sleeve cannot fit in the compact Timeline transport. */
+.timeline-player .mt-40 {
+  margin-top: 0;
+  position: absolute;
+  left: 3.75rem;
+  right: 0.75rem;
+  text-align: left;
+}
+.timeline-player .mt-40 h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+.timeline-player .mt-40 p,
+.timeline-player .cursor-grab {
+  display: none;
+}
+.timeline-player .pointer-events-none {
+  justify-content: flex-start;
+  padding-left: 0.75rem;
+}
+.timeline-player .pointer-events-none > div {
+  width: 36px;
+  height: 36px;
+}
+.timeline-player .pointer-events-none svg {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+@media (max-height: 500px) {
+  .timeline-player .mt-40 h3 {
+    font-size: 0.7rem;
+  }
+}
+.reveal-phase {
+  width: 100%;
+}
+.reveal-phase > :last-child {
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.reveal-content {
+  overscroll-behavior: contain;
+}
+@media (max-height: 500px) {
+  .reveal-phase {
+    padding: 0.5rem 1rem;
+    gap: 0.35rem;
+  }
+  .reveal-phase > :last-child button {
+    padding-block: 0.4rem;
+    min-height: 44px;
+  }
+}
+/* Optional media must not move the table into an automatically sized row. */
+@media (orientation: portrait) {
+  .timeline-media { grid-row: 1; }
+  .timeline-heading { grid-row: 2; }
+  .timeline-board-area { grid-row: 3; }
+  .timeline-action { grid-row: 4; }
+}
+@media (orientation: landscape) {
+  .timeline-board-area { grid-row: 2; }
+  .timeline-action { grid-row: 3; }
+}

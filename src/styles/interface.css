@@ -1,0 +1,181 @@
+/* Shared interaction, typography and surfaces across setup, library and play. */
+:root {
+  --color-on-primary: #fff;
+}
+[data-theme='spotify'] {
+  --color-on-primary: #071b0e;
+}
+button,
+a,
+input,
+select,
+textarea,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+button:not(:disabled),
+summary {
+  cursor: pointer;
+}
+button,
+input,
+select,
+summary {
+  min-height: 44px;
+}
+button {
+  overflow-wrap: anywhere;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+input,
+textarea,
+select {
+  font-size: max(1rem, 16px);
+}
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+main {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+[data-theme='musicwall'] :is(.text-white, [class*='text-white/']) {
+  color: var(--color-text);
+}
+[data-theme='musicwall'] [class*='border-white/'] {
+  border-color: var(--color-border);
+}
+[data-theme='musicwall'] :is(.bg-white\/5, .bg-white\/10) {
+  background-color: color-mix(
+    in srgb,
+    var(--color-text) 5%,
+    var(--color-bg-card)
+  );
+}
+.phomu-game [class*='text-[9px]'],
+.phomu-game [class*='text-[10px]'],
+.lobby-wizard [class*='text-[9px]'],
+.lobby-wizard [class*='text-[10px]'] {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.025em;
+}
+.phomu-game :is(.opacity-30, .opacity-40),
+.lobby-wizard :is(.opacity-30, .opacity-40) {
+  opacity: 0.8;
+}
+.lobby-wizard {
+  width: 100%;
+}
+.lobby-wizard-header {
+  flex-shrink: 0;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.lobby-wizard-header h1 {
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+}
+.lobby-wizard-content {
+  overscroll-behavior: contain;
+  padding-bottom: 1rem !important;
+  padding-inline: 2px;
+}
+.lobby-wizard-preview {
+  width: clamp(210px, 26vw, 300px);
+  max-height: 100%;
+  overflow: auto;
+  padding-bottom: 1rem !important;
+  top: 0 !important;
+}
+.lobby-wizard-footer {
+  flex-shrink: 0;
+  position: relative !important;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+.lobby-wizard-footer > div {
+  padding: 0.65rem 0 max(0.5rem, env(safe-area-inset-bottom));
+  gap: 0.4rem;
+  max-width: 100%;
+}
+.lobby-wizard-footer button {
+  padding-block: 0.65rem;
+  border-radius: 14px;
+}
+.lobby-wizard-footer button[class*='text-xl'] {
+  font-size: 1.05rem;
+  color: var(--color-on-primary);
+}
+.lobby-wizard-footer button[class*='opacity-30'] {
+  opacity: 0.8;
+}
+.lobby-wizard :is([class*='rounded-3xl'], [class*='rounded-2xl']) {
+  border-color: var(--color-border);
+}
+.question-phase > :not(.timeline-mode) {
+  padding-bottom: 1rem;
+}
+.question-phase button {
+  min-height: 48px;
+}
+.question-phase [class*='fixed bottom'] {
+  position: sticky;
+  bottom: 0;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  background: var(--color-bg);
+}
+@media (max-height: 500px) {
+  .lobby-wizard-header {
+    padding-block: 0.3rem !important;
+    gap: 0.3rem !important;
+  }
+  .lobby-wizard-header h1 {
+    font-size: 1.2rem;
+  }
+  .lobby-wizard-footer > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 0.3rem;
+  }
+  .lobby-wizard-footer > div > div {
+    flex: 1;
+  }
+  .lobby-wizard-footer button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+  }
+  .lobby-wizard-footer > div > button {
+    width: auto;
+    flex: 1;
+  }
+}
+.mode-more-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  padding: 0.6rem 1rem;
+  border-radius: 14px;
+  background: var(--color-bg-card);
+  font-weight: 700;
+}
+button {
+  min-width: 44px;
+}
+/* Preserve the accent colours while using readable ink on bright actions. */
+[data-theme='jackbox'] { --color-on-primary: #1a0a2e; }
+[data-theme='youtube'],[data-theme='musicwall'] { --color-on-primary: #0f0f0f; }

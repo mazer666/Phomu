@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -49,6 +49,7 @@ private val MODE_LABELS: List<Pair<String, String>> = listOf(
     "timeline" to "modes.timeline.name",
     "hint-master" to "modes.hint-master.name",
     "lyrics" to "modes.lyrics.name",
+    "mix-tape" to "lobby.mode.mixTapeTitle",
     "vibe-check" to "modes.vibe-check.name",
     "survivor" to "modes.survivor.name",
     "cover-confusion" to "modes.cover-confusion.name",
@@ -86,9 +87,17 @@ fun LobbyScreen(
     onOpenBrowse: () -> Unit,
     onOpenSettings: () -> Unit,
 ) {
+    var showMoreModes by rememberSaveable { mutableStateOf(false) }
     var playerName by rememberSaveable { mutableStateOf("") }
 
     Scaffold(
+        bottomBar = {
+            Column(modifier = Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                PhomuPrimaryButton(text = strings.text("lobby.startNow"), onClick = onStart,
+                    enabled = state.canStart, modifier = Modifier.fillMaxWidth())
+                if (!state.canStart) Text(strings.text("lobby.pleaseSelect"), style = MaterialTheme.typography.bodyMedium)
+            }
+        },
         topBar = {
             TopAppBar(
                 title = { Text(strings.text("lobby.title")) },
@@ -185,19 +194,24 @@ fun LobbyScreen(
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                 )
-                LazyRow(
+                FlowRow(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 16.dp),
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
-                    items(MODE_LABELS, key = { entry -> entry.first }) { entry ->
+                    MODE_LABELS.filter { showMoreModes || it.first !in listOf("vibe-check", "survivor", "cover-confusion") }.forEach { entry ->
                         FilterChip(
                             selected = entry.first in state.selectedModeIds,
                             onClick = { onToggleMode(entry.first) },
                             label = { Text(strings.text(entry.second)) },
                         )
                     }
+                }
+            }
+            item {
+                androidx.compose.material3.TextButton(onClick = { showMoreModes = !showMoreModes }, modifier = Modifier.padding(horizontal = 16.dp)) {
+                    Text(strings.text(if (showMoreModes) "lobby.modes.fewer" else "lobby.modes.more"))
                 }
             }
             item {
@@ -215,27 +229,7 @@ fun LobbyScreen(
                     modifier = Modifier.padding(horizontal = 16.dp),
                 )
             }
-            item {
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(16.dp),
-                    verticalArrangement = Arrangement.spacedBy(8.dp),
-                ) {
-                    PhomuPrimaryButton(
-                        text = strings.text("lobby.startNow"),
-                        onClick = onStart,
-                        enabled = state.canStart,
-                        modifier = Modifier.fillMaxWidth(),
-                    )
-                    if (!state.canStart) {
-                        Text(
-                            text = strings.text("lobby.pleaseSelect"),
-                            style = MaterialTheme.typography.bodyMedium,
-                        )
-                    }
-                }
-            }
+
         }
     }
 }

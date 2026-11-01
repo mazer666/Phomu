@@ -14,6 +14,7 @@
  * EXAMPLE: `SongList` receives the songs of the tool and the id of the
  * selected song, and reports a click on a row through `onSelect`.
  */
+import { Icon } from '@/components/art/Icon';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
@@ -223,13 +224,13 @@ function SongRow({
         <span
           className={`text-xs ${hasLyrics ? 'text-green-600' : 'text-gray-400'}`}
         >
-          {hasLyrics ? '✓' : '✗'} {t('admin.songs.lyricsLabel')}
+          <Icon name={hasLyrics ? 'check' : 'close'} size={18} /> {t('admin.songs.lyricsLabel')}
         </span>
         {'  '}
         <span
           className={`text-xs ${hasYoutube ? 'text-green-600' : 'text-gray-400'}`}
         >
-          {hasYoutube ? '✓' : '✗'} {t('admin.songs.youtubeShort')}
+          <Icon name={hasYoutube ? 'check' : 'close'} size={18} /> {t('admin.songs.youtubeShort')}
         </span>
       </td>
     </tr>

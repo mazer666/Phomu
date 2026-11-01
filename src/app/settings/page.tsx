@@ -53,7 +53,7 @@ export default function SettingsHubPage() {
     <main className="flex-1 min-h-0 overflow-y-auto max-w-5xl mx-auto p-4 md:p-10 space-y-8">
       <header className="rounded-3xl border border-white/10 bg-white/5 p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-black">⚙️ {t('common.settings')}</h1>
+          <h1 className="text-3xl font-black"><Icon name="settings" size={20} /> {t('common.settings')}</h1>
           <p className="text-xs uppercase tracking-widest opacity-60 font-bold mt-1">
             {t('settings.subtitle')}
           </p>

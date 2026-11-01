@@ -47,10 +47,22 @@ pub enum GameMode {
     Survivor,
     /// The cover confusion — the player finds the original artist.
     CoverConfusion,
+    /// A rotation of Vibe-Check, Survivor and Cover Confusion, one per round.
+    MixTape,
 }
 
 impl GameMode {
-    /// Every mode, in the order of the reference implementation
+    /// The six concrete round modes, excluding the Mix-Tape selection.
+    pub const PLAYABLE: &'static [GameMode] = &[
+        GameMode::Timeline,
+        GameMode::HintMaster,
+        GameMode::Lyrics,
+        GameMode::VibeCheck,
+        GameMode::Survivor,
+        GameMode::CoverConfusion,
+    ];
+
+    /// Every mode selection, in the order of the reference implementation
     /// (`src/config/game-config.ts:300-307`).
     ///
     /// EXAMPLE: `GameMode::ALL` has six entries.
@@ -61,6 +73,7 @@ impl GameMode {
         GameMode::VibeCheck,
         GameMode::Survivor,
         GameMode::CoverConfusion,
+        GameMode::MixTape,
     ];
 
     /// The identifier of the mode.
@@ -77,6 +90,7 @@ impl GameMode {
             GameMode::VibeCheck => "vibe-check",
             GameMode::Survivor => "survivor",
             GameMode::CoverConfusion => "cover-confusion",
+            GameMode::MixTape => "mix-tape",
         }
     }
 
@@ -101,6 +115,7 @@ impl GameMode {
             "vibe-check" => Some(GameMode::VibeCheck),
             "survivor" => Some(GameMode::Survivor),
             "cover-confusion" => Some(GameMode::CoverConfusion),
+            "mix-tape" => Some(GameMode::MixTape),
             _ => None,
         }
     }

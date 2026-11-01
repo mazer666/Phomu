@@ -324,8 +324,9 @@ A hand-over without evidence is a claim. A claim is not a result.
 
 ## 6. What an agent **does not** do
 
-- **No commit, no push, no tag, no release** during the work. That is the
-  decision of the owner.
+- **Commit and push completed, verified changes directly to `main`, without
+  a PR**, as explicitly requested by the owner. Preserve concurrent changes;
+  never force-push. Tags and releases still require an explicit request.
 - **No rewriting of `src/config/game-config.ts`** as a side effect. The values
   that are stored there are product decisions.
 - **No deleting of old documentation** in order to “tidy up”. Old versions move

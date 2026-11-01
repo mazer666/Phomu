@@ -15,7 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 
 /**
@@ -161,8 +161,8 @@ fun PhomuChoiceRow(
 /**
  * A value that is shown next to its name.
  *
- * WHY the semantics are cleared: the value is read by the screen reader as
- * part of the row, and a separate announcement of the value would repeat it.
+ * WHY the semantics are merged: the name and value are announced together
+ * instead of removing both from the accessibility tree.
  *
  * @param name the name of the value
  * @param value the value
@@ -173,7 +173,7 @@ fun PhomuLabelledValue(name: String, value: String) {
         modifier = Modifier
             .defaultMinSize(minHeight = MINIMUM_TOUCH_TARGET)
             .padding(vertical = 4.dp)
-            .clearAndSetSemantics { },
+            .semantics(mergeDescendants = true) { },
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {

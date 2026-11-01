@@ -243,9 +243,15 @@ impl Session {
         );
         self.state.current_turn_index = 0;
         self.state.current_round = 1;
+        let mode = self.pick_mode();
+        let progress = crate::session::round::ModeProgress {
+            mix_tape_round: self.state.round.progress.mix_tape_round,
+            ..crate::session::round::ModeProgress::default()
+        };
         self.state.round = RoundState {
             phase: RoundPhase::Drawing,
-            mode: self.pick_mode(),
+            mode,
+            progress,
             ..RoundState::default()
         };
         self.state.is_game_over = false;

@@ -45,8 +45,9 @@ fn the_mode_identifiers_round_trip() {
 }
 
 #[test]
-fn there_are_six_modes() {
-    assert_eq!(GameMode::ALL.len(), 6);
+fn there_are_six_individual_modes_and_the_mix_tape_rotation() {
+    assert_eq!(GameMode::ALL.len(), 7);
+    assert!(GameMode::ALL.contains(&GameMode::MixTape));
 }
 
 #[test]

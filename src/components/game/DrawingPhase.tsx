@@ -17,6 +17,7 @@ import {
   PILOT_LABEL_KEYS,
   type TranslationKey,
 } from '@/i18n/variant-keys';
+import { CardBack } from '@/components/art/CardBack';
 import { ModeArt } from '@/components/art/ModeArt';
 import { Icon } from '@/components/art/Icon';
 
@@ -31,6 +32,7 @@ const MODE_META: Record<
   GameMode,
   { art: GameMode; titleKey: TranslationKey; instructionKey: TranslationKey }
 > = {
+  'mix-tape': { art: 'mix-tape', titleKey: 'game.drawing.modeTitle.mixTape', instructionKey: 'game.drawing.modeInstruction.mixTape' },
   timeline: {
     art: 'timeline' as const,
     titleKey: 'game.drawing.modeTitle.timeline',
@@ -140,7 +142,7 @@ export function DrawingPhase({
   }, [autoDrawIntent, isDrawing, handleDraw]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 text-center">
+    <div className="drawing-phase flex flex-col items-center justify-center px-6 text-center">
       {/* Mode icon with pulse animation */}
       <motion.div
         initial={{ scale: 0, rotate: -10 }}
@@ -149,7 +151,7 @@ export function DrawingPhase({
         className="text-8xl mb-6 select-none"
         aria-hidden
       >
-        <ModeArt mode={meta.art} size={44} />
+        <CardBack className="drawing-card" />
       </motion.div>
 
       {/* Mode name */}

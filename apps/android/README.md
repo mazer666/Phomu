@@ -342,3 +342,9 @@ track.
 | [`docs/spec/REQUIREMENTS-PLATFORM.md`](../../docs/spec/REQUIREMENTS-PLATFORM.md) | the requirements `SHELL-103`, `PLAT-105` … `PLAT-122`, `A11Y-105`, `A11Y-106`, `PERF-109` |
 | [`docs/adr/ADR-0005-shared-rust-core-with-platform-frontends.md`](../../docs/adr/ADR-0005-shared-rust-core-with-platform-frontends.md) | the decision this shell implements |
 | [`docs/adr/ADR-0008-abi-version-and-the-exported-surface.md`](../../docs/adr/ADR-0008-abi-version-and-the-exported-surface.md) | the exported surface and the bracket of the shell |
+
+## Card-table and Mix-Tape update (2026-11-01)
+
+The lobby keeps Start outside the pack list and exposes the short individual modes behind More modes. Mix-Tape selects rotating independent Vibe-Check, Survivor and Cover Confusion rounds in the shared core, capped by `MIX_TAPE_MAX_POINTS`. Timeline receives pack-aware years from the question context and draws a horizontally movable card table with the theme-aware Phomu sleeve. The primary action stays below the table; scores open separately. Native Survivor now sends distinct yes/no choices and Hint-Master provides its answer choices. The queue-strategy wire value is `queue-retry-pending`.
+
+The Kotlin screen was compiled and the JVM/host tests executed. These checks exclude the three `cargoLibrary*` Android target tasks because this environment has no NDK; they exercise the real host Rust bridge, not an Android APK. Emulator screenshots, TalkBack and physical-device rotation remain unverified. Do not interpret Kotlin compilation as device acceptance.

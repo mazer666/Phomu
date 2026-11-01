@@ -126,7 +126,7 @@ export default function LobbyPage() {
 
   return (
     <main
-      className={`flex-1 min-h-0 flex flex-col overflow-hidden ${
+      className={`lobby-wizard flex-1 min-h-0 flex flex-col overflow-hidden ${
         layout.columns === 2
           ? 'w-full max-w-6xl mx-auto px-4 md:px-8'
           : 'max-w-2xl mx-auto px-4 md:px-8'
@@ -135,7 +135,7 @@ export default function LobbyPage() {
       data-columns={layout.columns}
     >
       {/* Header with progress — sticky so only the content scrolls */}
-      <div className="sticky top-0 z-20 bg-[var(--color-bg)] pt-safe pt-4 md:pt-6 pb-4 flex flex-col gap-3">
+      <div className="lobby-wizard-header sticky top-0 z-20 bg-[var(--color-bg)] pt-safe pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-black flex items-center gap-2"><Icon name="controller" size={26} className="text-[var(--color-accent)]" />{t('lobby.title')}</h1>
           <div className="flex items-center gap-3">
@@ -167,7 +167,7 @@ export default function LobbyPage() {
         }`}
         data-columns={layout.columns}
       >
-        <div className="flex-1 min-w-0 min-h-0 overflow-y-auto overflow-x-hidden pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)]">
+        <div className="lobby-wizard-content flex-1 min-w-0 min-h-0 overflow-y-auto overflow-x-hidden pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)]">
           <AnimatePresence mode="wait" initial={false} custom={direction}>
             {step === 1 && (
               <motion.div
@@ -492,7 +492,7 @@ export default function LobbyPage() {
                               className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-[var(--color-accent)] flex items-center justify-center"
                             >
                               <span className="text-[8px] font-black text-white">
-                                ✓
+                                <Icon name="check" size={20} />
                               </span>
                             </motion.div>
                           )}
@@ -783,7 +783,7 @@ export default function LobbyPage() {
                                     className="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center text-xs opacity-60 hover:opacity-100 hover:bg-red-500/20 transition-all font-black"
                                     title={t('lobby.team.deleteTitle')}
                                   >
-                                    ✕
+                                    <Icon name="close" size={20} />
                                   </button>
                                 )}
                               </div>
@@ -903,7 +903,7 @@ export default function LobbyPage() {
         {/* The preview of the session — the landscape only */}
         {layout.showPreview && (
           <aside
-            className="w-80 shrink-0 self-start sticky top-28 pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)]"
+            className="lobby-wizard-preview w-80 shrink-0 self-start sticky top-28 pb-[max(12rem,env(safe-area-inset-bottom,0px)+10rem)]"
             aria-label={t('lobby.preview.title')}
           >
             <LobbyPreview
@@ -946,7 +946,7 @@ export default function LobbyPage() {
       />
 
       {/* Navigation footer — fixed at the viewport bottom */}
-      <footer className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-xl border-t border-white/5 pb-safe">
+      <footer className="lobby-wizard-footer fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-xl border-t border-white/5 pb-safe">
         <div className="max-w-2xl mx-auto px-4 md:px-8 pt-4 pb-8 flex flex-col gap-3">
           {step === TOTAL_STEPS && players.length > 0 && (
             <button

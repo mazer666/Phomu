@@ -197,7 +197,7 @@ export default function BrowsePage() {
               onClick={() => router.push('/')}
               className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-500/20 cursor-pointer hover:scale-105 transition-transform"
             >
-              <span className="text-2xl">⚡</span>
+              <span className="text-2xl"><Icon name="star" size={20} /></span>
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-black uppercase tracking-tighter flex items-center gap-2">
@@ -255,7 +255,7 @@ export default function BrowsePage() {
                 onClick={() => setShowFilters(!showFilters)}
                 className="md:hidden w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-xl transition-all"
               >
-                {showFilters ? '✕' : '⌥'}
+                <Icon name={showFilters ? 'close' : 'settings'} size={22} />
               </button>
             </div>
           </div>
@@ -305,7 +305,7 @@ export default function BrowsePage() {
                       className={`flex items-center justify-between px-5 py-3.5 rounded-2xl text-[11px] font-black transition-all border ${sortBy === s.id ? 'bg-blue-600 border-blue-500 text-white shadow-xl shadow-blue-600/20' : 'bg-white/5 border-white/5 text-white/40 hover:bg-white/10'}`}
                     >
                       <span>{t(s.labelKey)}</span>
-                      {sortBy === s.id && <span>✨</span>}
+                      {sortBy === s.id && <span><Icon name="star" size={20} /></span>}
                     </button>
                   ))}
                 </div>
@@ -733,7 +733,7 @@ function FilterToggle({
       <div
         className={`w-5 h-5 rounded-lg border-2 flex items-center justify-center transition-colors ${active ? 'border-blue-400 bg-blue-400 text-black shadow-lg shadow-blue-400/20' : 'border-white/10'}`}
       >
-        {active && <span className="text-[10px] font-black">✓</span>}
+        {active && <span className="text-[10px] font-black"><Icon name="check" size={20} /></span>}
       </div>
     </button>
   );

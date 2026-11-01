@@ -836,3 +836,9 @@ The following numbers are **not** in `PHOMU_CONFIG`, but in the code:
 | [`../../WHERE_TO_CHANGE.md`](../../WHERE_TO_CHANGE.md) | Topic → file → instructions |
 | [`../../GLOSSARY.md`](../../GLOSSARY.md) | Domain terms (pilot, round, reveal, …) |
 | [`README.md`](README.md) | Index of the design contracts |
+
+## Mix-Tape selection and pack-aware anchors
+
+The owner requested a primary Mix-Tape selection on 2026-11-01. It resolves in the shared core to one concrete mode per round, cycling Vibe-Check → Survivor → Cover Confusion. It does not introduce a combined-answer type or expose future questions. A `mix_tape_round` progress flag identifies the award cap; standalone modes keep their existing points. The advertised budget and actual award both respect `phomu_config::MIX_TAPE_MAX_POINTS`. The rotation continues after intervening Timeline, Hint-Master or Lyrics rounds using round history.
+
+The bridges ask the shared core to initialize Timeline before drawing, using the selected packs and catalogue alias normalization. Both shells read the public years from the resulting question context. Tiny packs use adjacent years to satisfy the distinct-card count; unknown packs fail. This replaces the web-only whole-catalogue year sampler.
