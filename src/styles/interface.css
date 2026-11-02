@@ -232,11 +232,19 @@ button {
 }
 
 /* Content-heavy modes grow inside the phase scrollport instead of centering above it. */
-.game-phase-area:not([data-mode='timeline']) > div,
-.game-phase-area:not([data-mode='timeline']) > div > div,
-.game-phase-area:not([data-mode='timeline']) .question-phase,
-.game-phase-area[data-phase='reveal'] > div,
-.game-phase-area[data-phase='reveal'] > div > div {
+.game-phase-area:is([data-phase='question'], [data-phase='locked-in']):not(
+    [data-mode='timeline']
+  )
+  > div,
+.game-phase-area:is([data-phase='question'], [data-phase='locked-in']):not(
+    [data-mode='timeline']
+  )
+  > div
+  > div,
+.game-phase-area:is([data-phase='question'], [data-phase='locked-in']):not(
+    [data-mode='timeline']
+  )
+  .question-phase {
   flex-shrink: 0;
   min-height: min-content;
 }
@@ -278,4 +286,9 @@ button {
 }
 [data-theme] .music-preview-layer :is(.text-white, [class*='text-white/']) {
   color: #eee;
+}
+
+/* UI-023: keep the reveal action in view; only its content scrolls. */
+.game-phase-area[data-phase='reveal'] {
+  overflow: hidden;
 }

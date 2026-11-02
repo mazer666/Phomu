@@ -601,3 +601,7 @@ The library scrolls within the screen while its search and navigation remain ava
 Correct and wrong answers trigger a short feedback banner. Tap it to continue immediately, or let it disappear after five seconds. The banner does not show a countdown and returns for new answers in later rounds.
 
 On narrow phones, the home-page links wrap onto extra lines. In compact landscape Timeline, the question replaces the drawing view immediately and retains full-sized insertion targets; scoreboard and settings remain available even when the side panel is hidden.
+
+On phones, the reveal's solution and score list scroll independently. The next
+round button stays below them on screen, including after rotating the phone.
+Tap it to return to the card draw; the scoring heading itself is not a button.

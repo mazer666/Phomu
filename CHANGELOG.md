@@ -14,6 +14,12 @@ document state, not as a version history.
 
 ## [Unreleased]
 
+### Fixed — Mobile reveal continuation
+
+- Keep the next-round action visible below the scrolling reveal and score list
+  on narrow and short phones, including rotation. Add real WASM round regression
+  coverage for every standalone mode and a longer player list (UI-023/GAME-001).
+
 ### Added — Platform expansion (specification)
 
 Phomu grows from a web application into a **family** of applications: one

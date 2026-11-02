@@ -1629,3 +1629,9 @@ The library, settings, legal pages, final score and administration use bounded s
 Evidence for UI-023 and the related player and feedback changes: [responsive UI verification](docs/acceptance/UI-RESPONSIVE-2026-11-01.md).
 
 Mobile follow-up for UI-022/UI-023: outgoing phase animations must not reduce the incoming question's layout height. Landing links wrap on narrow phones, and compact landscape layouts retain the scoreboard/settings actions when their side panel is hidden. See [mobile clipping verification](docs/acceptance/UI-MOBILE-CLIPPING-2026-11-01.md).
+
+Reveal follow-up for UI-023/GAME-001: the continuation action stays visible
+below the independently scrolling solution and score list, including mobile
+rotation. Content-sized question wrappers must not expand the reveal beyond the
+viewport. Verification: `e2e/reveal-mobile.spec.ts`; see
+[mobile reveal evidence](docs/acceptance/UI-REVEAL-MOBILE-2026-11-02.md).
