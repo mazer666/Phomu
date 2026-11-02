@@ -15,6 +15,8 @@
  */
 'use client';
 
+import { GameAction } from './GameAction';
+
 import { motion } from 'framer-motion';
 import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -332,7 +334,7 @@ export function RevealPhase({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
-        className={`flex flex-col gap-3 mt-2 ${showWinUI ? '' : 'reveal-next-round-actions'}`}
+        className="flex flex-col gap-3 mt-2"
       >
         {showWinUI ? (
           <>
@@ -342,6 +344,7 @@ export function RevealPhase({
             >
               {winnerTitle}
             </p>
+            <GameAction phase="reveal" compactLabel={t('game.page.resultsButton')}>
             <button
               onClick={onEndGame}
               className="w-full py-4 rounded-2xl text-xl font-black shadow-lg"
@@ -352,8 +355,10 @@ export function RevealPhase({
             >
               {t('game.reveal.toWinnerScreen')}
             </button>
+            </GameAction>
           </>
         ) : (
+          <GameAction phase="reveal" compactLabel={t('game.page.continueButton')}>
           <button
             onClick={onNextRound}
             data-testid="next-round"
@@ -362,6 +367,7 @@ export function RevealPhase({
           >
             {nextRoundLabel}
           </button>
+          </GameAction>
         )}
       </motion.div>
     </div>

@@ -240,3 +240,78 @@ fn the_turn_order_of_the_team_modes_names_the_teams() {
     );
     assert_eq!(session.active_turn_id(), Some("t0"));
 }
+
+#[test]
+fn timeline_helpers_each_work_once_in_either_order() {
+    use phomu_core::facade::Cheat;
+    for cheats in [
+        [Cheat::TimelineDecadeHint, Cheat::TimelineJoker],
+        [Cheat::TimelineJoker, Cheat::TimelineDecadeHint],
+    ] {
+        let mut session = session_with(GameConfig::default());
+        session.start_game(1_000).expect("game starts");
+        session
+            .init_timeline(vec![1970, 1980, 1990])
+            .expect("timeline starts");
+        session
+            .draw_song(
+                song("helper-song", "Title", "Artist", 1985),
+                SongSource::Random,
+            )
+            .expect("song is drawn");
+        let pilot = session.active_turn_id().expect("pilot exists").to_string();
+        session
+            .award_points(&pilot, 10)
+            .expect("initial score is credited");
+        // GAME-021 / GAME-022: helpers have independent once-per-round limits.
+        for cheat in cheats {
+            session.use_cheat(cheat).expect("each helper is available");
+            let scores = session.state().players.clone();
+            assert!(
+                session.use_cheat(cheat).is_err(),
+                "duplicate helper is rejected"
+            );
+            assert_eq!(
+                session.state().players,
+                scores,
+                "rejected reuse charges no points"
+            );
+        }
+        let score = session
+            .state()
+            .players
+            .iter()
+            .find(|player| player.id == pilot)
+            .expect("pilot exists")
+            .score;
+        assert_eq!(
+            score,
+            10 + phomu_config::CHEAT_PENALTY_TIMELINE_DECADE
+                + phomu_config::CHEAT_PENALTY_TIMELINE_JOKER
+        );
+        assert_eq!(session.decade_hint(), Some(1980));
+        let removed = session
+            .state()
+            .round
+            .progress
+            .joker_slot
+            .expect("joker removes a slot");
+        assert_ne!(removed, 2, "joker does not remove the correct slot");
+        session
+            .submit_answer(&ModeAnswer::Timeline { slot: 2 }, None)
+            .expect("answer accepted");
+        session.reveal().expect("answer revealed");
+        session.next_round(2_000).expect("next round starts");
+        session
+            .draw_song(
+                song("next-helper-song", "Next", "Artist", 1986),
+                SongSource::Random,
+            )
+            .expect("next song drawn");
+        for cheat in cheats {
+            session
+                .use_cheat(cheat)
+                .expect("helper is available again in the next round");
+        }
+    }
+}

@@ -82,3 +82,8 @@ Follow-up validation:
   — both dialog checks passed against the production export.
 - Typecheck, lint, all 292 unit tests, all 12 quality gates and the Webpack
   production build passed. Existing lint/static-export warnings remain.
+
+The initial reveal-only footer placement is now extended to contextual actions
+throughout the game. The current implementation moves the real control between
+its content and the bottom bar; see
+[contextual action verification](UI-CONTEXT-ACTIONS-2026-11-02.md).

@@ -14,6 +14,15 @@ document state, not as a version history.
 
 ## [Unreleased]
 
+### Changed — Contextual game actions
+
+- Use the same compact bottom-row position for drawing, revealing, continuing
+  and opening results across game phases and modes. Move each real control with
+  its original handler and disabled state; retain inline desktop placement.
+- Keep Timeline decade-hint text visible on short mobile screens by restricting
+  compact text hiding to the result subtitle. Allow the decade hint and joker
+  once each per round, as required by GAME-021/GAME-022, in either order.
+
 ### Fixed — Timeline answer feedback
 
 - Preserve correct/wrong feedback during quick round transitions instead of

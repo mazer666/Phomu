@@ -51,7 +51,7 @@
   .timeline-heading h2 {
     font-size: 1rem;
   }
-  .timeline-heading p:last-child {
+  .timeline-heading h2 > p:last-child {
     display: none;
   }
   .timeline-heading button {
@@ -214,15 +214,6 @@
 .reveal-content {
   overscroll-behavior: contain;
 }
-/* UI-023: compact screens continue in the bottom bar between points/settings. */
-@media (orientation: portrait), (max-width: 1000px), (max-height: 500px) {
-  .reveal-next-round-actions {
-    display: none;
-  }
-  .game-utilities:has(.game-continue-action) {
-    gap: 0.5rem;
-  }
-}
 @media (max-height: 500px) {
   .reveal-phase {
     padding: 0.5rem 1rem;
@@ -265,5 +256,22 @@
 @media (min-width: 1001px) and (orientation: landscape) and (max-height: 500px) {
   .game-utilities {
     display: flex;
+  }
+}
+/* Paid hints share the compact header row with the joker, not the card rail. */
+@media (max-height: 500px) {
+  .timeline-heading:has(.timeline-decade-hint) h2,
+  .timeline-heading:has(.timeline-decade-hint) > div > div:last-child {
+    display: none;
+  }
+  .timeline-heading:has(.timeline-decade-hint) > div {
+    display: block;
+  }
+  .timeline-decade-hint {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    padding: 0.3rem 0.4rem;
   }
 }

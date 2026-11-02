@@ -16,7 +16,7 @@ for (const viewport of [
     await startGame(page, 'de');
     const question = page.locator('.question-phase');
     await question.locator('[data-slot="0"]').tap();
-    await question.locator('.timeline-action .phomu-primary-action').tap();
+    await page.locator('.phomu-primary-action').tap();
     const feedback = page.getByRole('button', {
       name: 'Feedback schließen',
       exact: true,
@@ -58,7 +58,7 @@ test('Timeline feedback survives quick continuation into the next round', async 
   await page.setViewportSize({ width: 360, height: 780 });
   await setupGame(page, baseURL, 'timeline', 'de');
   await startGame(page, 'de');
-  const action = page.locator('.timeline-action .phomu-primary-action');
+  const action = page.locator('.phomu-primary-action');
   await page.locator('[data-slot="0"]').tap();
   await action.tap();
   const feedback = page.getByRole('button', {

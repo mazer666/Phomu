@@ -104,12 +104,21 @@ impl Session {
             return Err(PhomuError::new(ErrorCode::NotAvailableInPhase)
                 .with_context("phase", self.state.round.phase.as_str()));
         }
-        if self.state.round.progress.cheat_used {
+        let mode = self.state.round.mode;
+        let already_used = match (mode, cheat) {
+            (crate::modes::GameMode::Timeline, Cheat::TimelineDecadeHint) => {
+                self.state.round.progress.timeline_decade_used
+            }
+            (crate::modes::GameMode::Timeline, Cheat::TimelineJoker) => {
+                self.state.round.progress.timeline_joker_used
+            }
+            _ => self.state.round.progress.cheat_used,
+        };
+        if already_used {
             return Err(
                 PhomuError::new(ErrorCode::InvalidTransition).with_context("cheat", cheat.as_str())
             );
         }
-        let mode = self.state.round.mode;
         if !mode.has_cheat() {
             return Err(
                 PhomuError::new(ErrorCode::ModeNotEnabled).with_context("mode", mode.as_str())
@@ -130,6 +139,11 @@ impl Session {
             self.remove_joker_slot();
         }
         self.state.round.progress.cheat_used = true;
+        match cheat {
+            Cheat::TimelineDecadeHint => self.state.round.progress.timeline_decade_used = true,
+            Cheat::TimelineJoker => self.state.round.progress.timeline_joker_used = true,
+            _ => {}
+        }
         self.credit_points(&entity_id, penalty);
         Ok(penalty)
     }

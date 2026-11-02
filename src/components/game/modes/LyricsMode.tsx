@@ -16,6 +16,8 @@
  */
 'use client';
 
+import { GameAction } from '../GameAction';
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -204,6 +206,7 @@ function LyricsQuestion({
           animate={{ opacity: 1, y: 0 }}
           className="mt-4 flex justify-center"
         >
+          <GameAction phase="question" compactLabel={t('game.page.revealButton')}>
           <button
             onClick={handleConfirm}
             className="px-8 py-4 w-full rounded-2xl text-xl font-black shadow-lg hover:opacity-90 transition-opacity"
@@ -211,6 +214,7 @@ function LyricsQuestion({
           >
             {t('modes.lyrics.confirm')}
           </button>
+          </GameAction>
         </motion.div>
       )}
 

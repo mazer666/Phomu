@@ -15,6 +15,8 @@
  */
 'use client';
 
+import { GameAction } from '../GameAction';
+
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -344,16 +346,14 @@ export function CoverConfusionMode({
 
       {/* ── Footer: WEITER after done ─────────────────────────────── */}
       {phase === 'done' && onReveal && (
-        <footer className="fixed bottom-0 left-0 right-0 px-4 pb-6 pt-8 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/90 to-transparent z-[60]">
-          <div className="max-w-md mx-auto">
+        <GameAction phase="question" compactLabel={t('game.page.continueButton')}>
             <button
               onClick={onReveal}
               className="w-full py-5 rounded-3xl font-black text-lg bg-[var(--color-accent)] text-white shadow-2xl active:scale-95 transition-all"
             >
               {t('modes.continue')}
             </button>
-          </div>
-        </footer>
+        </GameAction>
       )}
     </div>
   );

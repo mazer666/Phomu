@@ -602,8 +602,12 @@ Correct and wrong answers trigger a short feedback banner. It explicitly says wh
 
 On narrow phones, the home-page links wrap onto extra lines. In compact landscape Timeline, the question replaces the drawing view immediately and retains full-sized insertion targets; scoreboard and settings remain available even when the side panel is hidden.
 
-On phones, the reveal's solution and score list scroll independently. The next
-round action appears as **Continue** between **Points** and **Settings** in the
-bottom bar, including after rotating the phone. It appears once the solution is
-revealed and returns to the card draw. Wider landscape screens keep the action
-below the reveal. The scoring heading itself is not a button.
+On phones, the reveal's solution and score list scroll independently. The current
+main action appears between **Points** and **Settings** in one bottom row:
+**Draw**, **Reveal**, **Continue** or **Results**, depending on the phase. Choices
+and hints stay with the question. Buttons retain their prerequisites, including
+selecting a Timeline slot before revealing it. Wider landscape screens keep the
+action beside its content. The scoring heading itself is not a button.
+
+The Timeline decade hint and joker can each be used once in the same round, in
+either order. The decade text remains readable after rotating a short phone.

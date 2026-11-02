@@ -37,11 +37,11 @@ for (const mode of [
     // Modes with their own reveal controls require their actual answer flow.
     if (mode === 'timeline') {
       await question.locator('[data-slot="0"]').tap();
-      await question.locator('.timeline-action .phomu-primary-action').tap();
-      await question.locator('.timeline-action .phomu-primary-action').tap();
+      await page.locator('.phomu-primary-action').tap();
+      await page.locator('.phomu-primary-action').tap();
     } else if (mode === 'lyrics') {
       await question.locator('button.font-mono').first().tap();
-      await question.getByRole('button', { name: /bestätigen/i }).tap();
+      await page.getByRole('button', { name: /bestätigen|Auflösen/i }).tap();
     } else if (mode === 'cover-confusion') {
       const original = question.getByRole('button', {
         name: 'ORIGINAL',
@@ -52,9 +52,9 @@ for (const mode of [
         await question.getByRole('button', { name: /Ich kenne ihn/ }).tap();
         await question.getByRole('button', { name: 'JA', exact: true }).tap();
       }
-      await question.getByRole('button', { name: /WEITER/ }).tap();
+      await page.getByRole('button', { name: /WEITER/i }).tap();
     } else {
-      await question.getByRole('button', { name: /Reveal/i }).tap();
+      await page.getByRole('button', { name: /Reveal|Auflösen/i }).tap();
     }
     const feedback = page.getByRole('button', {
       name: 'Feedback schließen',
@@ -108,7 +108,7 @@ for (const mode of [
     // Desktop keeps the phase action; rotation must never leave two actions visible.
     await page.setViewportSize({ width: 1280, height: 720 });
     await expect(
-      page.locator('.reveal-next-round-actions [data-testid="next-round"]')
+      page.locator('.reveal-phase [data-testid="next-round"]')
     ).toBeVisible();
     await expect(page.locator('.game-utilities')).toBeHidden();
     await page.setViewportSize({ width: 360, height: 780 });
@@ -123,7 +123,7 @@ for (const mode of [
     await expect(
       page.locator('.game-utilities [data-testid="next-round"]')
     ).toHaveCount(0);
-    await page.locator('.drawing-phase button').tap();
+    await page.locator('[data-testid="draw-card"]').tap();
     await expect(question).toBeVisible();
     await expect(reveal).toHaveCount(0);
   });
@@ -136,10 +136,7 @@ test('compact continuation fits every theme in English', async ({
   await page.setViewportSize({ width: 320, height: 568 });
   await setupGame(page, baseURL, 'hint-master', 'en');
   await startGame(page, 'en');
-  await page
-    .locator('.question-phase')
-    .getByRole('button', { name: /reveal/i })
-    .tap();
+  await page.getByRole('button', { name: /reveal/i }).tap();
   const footer = page.locator('.game-utilities');
   for (const theme of ['jackbox', 'spotify', 'youtube', 'musicwall']) {
     await page.evaluate(

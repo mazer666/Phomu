@@ -1,6 +1,8 @@
 /** Pack-aware Timeline: place a sleeve, lock the answer, then reveal the card. */
 'use client';
 
+import { GameAction } from '../GameAction';
+
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { RoundQuestion, SongIdentity } from '@/core/types';
@@ -358,6 +360,7 @@ export function TimelineMode({
           </p>
         )}
         <div className="timeline-action-row">
+          <GameAction phase="question" compactLabel={isRevealed ? t('game.page.continueButton') : t('game.page.revealButton')}>
           <button
             disabled={isSubmitting || (!isRevealed && selectedSlot === null)}
             onClick={canProceed ? onReveal : handleReveal}
@@ -365,6 +368,7 @@ export function TimelineMode({
           >
             {isRevealed ? t('modes.continue') : t('modes.timeline.reveal')}
           </button>
+          </GameAction>
           {onReroll && (
             <button
               type="button"

@@ -35,6 +35,10 @@ pub struct ModeProgress {
     pub hint_level: u32,
     /// Whether a cheat was used.
     pub cheat_used: bool,
+    /// GAME-021: the Timeline decade hint has its own once-per-round limit.
+    pub timeline_decade_used: bool,
+    /// GAME-022: the Timeline joker may also be used once in that round.
+    pub timeline_joker_used: bool,
     /// The options the mode offers.
     pub options: Vec<String>,
     /// The index of the option the player picked.

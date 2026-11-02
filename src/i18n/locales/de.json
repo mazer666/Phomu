@@ -1146,6 +1146,9 @@
     "page": {
       "exitConfirm": "Spiel abbrechen und zur Lobby zurückkehren?",
       "showScoreboardAria": "Punktestand anzeigen",
+      "drawButton": "Ziehen",
+      "revealButton": "Auflösen",
+      "resultsButton": "Ergebnis",
       "pointsButton": "Punkte",
       "continueButton": "Weiter",
       "openSettingsAria": "Spiel-Einstellungen öffnen",

@@ -1146,6 +1146,9 @@
     "page": {
       "exitConfirm": "Cancel the game and return to the lobby?",
       "showScoreboardAria": "Show scoreboard",
+      "drawButton": "Draw",
+      "revealButton": "Reveal",
+      "resultsButton": "Results",
       "pointsButton": "Points",
       "continueButton": "Continue",
       "openSettingsAria": "Open game settings",

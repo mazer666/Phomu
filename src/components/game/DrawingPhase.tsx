@@ -7,6 +7,8 @@
  */
 'use client';
 
+import { GameAction } from './GameAction';
+
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -207,7 +209,9 @@ export function DrawingPhase({
       >
         <AnimatePresence mode="wait">
           {!isDrawing ? (
+            <GameAction phase="drawing" compactLabel={t('game.page.drawButton')}>
             <motion.button
+              data-testid="draw-card"
               key="draw"
               onClick={handleDraw}
               whileHover={{ scale: 1.05 }}
@@ -220,6 +224,7 @@ export function DrawingPhase({
             >
               {drawLabel}
             </motion.button>
+            </GameAction>
           ) : (
             <motion.div
               key="loading"

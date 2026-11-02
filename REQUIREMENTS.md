@@ -306,10 +306,10 @@
 ### GAME-021 — Timeline: the decade hint costs two points
 
 **Preset:** Preset
-**Requirement:** The decade hint (e. g. "synthesiser, shoulder pads, moustache") immediately deducts 2 points from the active player and can be used only once per round.
+**Requirement:** The decade hint (e. g. "synthesiser, shoulder pads, moustache") immediately deducts 2 points from the active player and can be used only once per round. Its limit is independent of the Timeline joker (GAME-022). The hint remains readable on short mobile screens.
 **Rationale:** Help has to cost something, otherwise the pilot asks for the help and guesses immediately.
 **Acceptance:** `handleCheat` (`src/components/game/modes/TimelineMode.tsx:214-220`) — `awardPoints(currentPlayerId, -2)`, abort on `cheatActive`; visible as badge `-2 PKT CHEAT` (`:366-378`).
-**Verification:** `grep -n "awardPoints(currentPlayerId, -2)" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+**Verification:** `cargo test -p phomu-core timeline_helpers_each_work_once_in_either_order`; `e2e/timeline-hint.spec.ts` verifies the real mobile controls and hint text.
 
 ### GAME-022 — Timeline: the joker removes exactly one wrong slot for one point
 
@@ -317,7 +317,7 @@
 **Requirement:** The joker randomly chooses one of the wrong slots, makes it invalid and costs 1 point. It is only available from four slots onwards (`numSlots > 3`) and only once per round.
 **Rationale:** A joker that could also hit the right slot would be no joker, but a game of chance with high stakes.
 **Acceptance:** `handleJoker` (`src/components/game/modes/TimelineMode.tsx:222-237`) — selection exclusively from `wrongSlots`, `awardPoints(currentPlayerId, -1)`, unlocking the selection when the joker slot was chosen; availability condition in `src/components/game/modes/TimelineMode.tsx:335`.
-**Verification:** `grep -n "numSlots > 3" src/components/game/modes/TimelineMode.tsx`; no test exists — see [GAP-001](#open-gaps).
+**Verification:** `cargo test -p phomu-core timeline_helpers_each_work_once_in_either_order`; `e2e/timeline-hint.spec.ts` verifies one invalidated slot after using both helpers.
 
 ### GAME-023 — Hint-Master: five levels, five down to one point
 
@@ -1633,7 +1633,18 @@ Mobile follow-up for UI-022/UI-023: outgoing phase animations must not reduce th
 Reveal follow-up for UI-023/GAME-001: the continuation action stays visible
 in the compact bottom bar between Points and Settings, including mobile
 rotation; wider landscape screens keep it below the independently scrolling
-solution and score list. The compact action is only offered after the reveal
-and does not replace the winner-screen action. Content-sized question wrappers must not expand the reveal beyond the
+solution and score list. The compact row now holds the contextual primary action across drawing,
+question, reveal and results: Draw, Reveal, Continue or Results. It keeps the
+original handler and disabled state; choices and hints stay beside the content. Content-sized question wrappers must not expand the reveal beyond the
 viewport. Verification: `e2e/reveal-mobile.spec.ts`; see
 [mobile reveal evidence](docs/acceptance/UI-REVEAL-MOBILE-2026-11-02.md).
+
+
+Mobile primary-action follow-up for UI-023: `GameAction` moves the active phase's
+real primary control into the bottom row between Points and Settings. Only the
+active phase may publish there, including while the question remains mounted
+under the reveal. The same CSS visibility that controls the utility row selects
+the placement. Timeline decade-hint text must remain visible on short screens;
+compact subtitle rules must not hide hint paragraphs. Verification:
+`e2e/primary-action.spec.ts` and `e2e/timeline-hint.spec.ts`. See
+[contextual action verification](docs/acceptance/UI-CONTEXT-ACTIONS-2026-11-02.md).

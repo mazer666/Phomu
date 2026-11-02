@@ -115,7 +115,7 @@ export function TimelineHeader({
         <motion.div
           initial={{ opacity: 0, y: -6, scale: 0.92 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          className="mx-auto mt-1 mb-1 px-4 py-2 rounded-2xl text-center max-w-xs"
+          className="timeline-decade-hint mx-auto mt-1 mb-1 px-4 py-2 rounded-2xl text-center max-w-xs"
           style={{
             background: 'rgba(251,146,60,0.12)',
             border: '1.5px solid rgba(251,146,60,0.4)',
@@ -140,7 +140,6 @@ export function TimelineHeader({
           {t('modes.timeline.jokerShort')}
         </motion.button>
       )}
-      </div>
 
       {/* Joker Used Badge */}
       {!isRevealed && jokerUsed && (
@@ -156,6 +155,7 @@ export function TimelineHeader({
           {t('modes.timeline.jokerUsed')}
         </motion.div>
       )}
+      </div>
 
       <div className="flex items-center justify-center gap-2">
         <p className="opacity-40 text-[9px] font-black uppercase tracking-[0.2em]">

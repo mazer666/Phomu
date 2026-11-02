@@ -339,3 +339,19 @@
   font-weight: 900;
   color: var(--color-text);
 }
+
+/* UI-023: one contextual action between points and settings, never a copy. */
+.game-action-slot { flex: 1; min-width: 0; }
+.game-action-slot:empty { display: none; }
+.game-utilities { gap: 0.5rem; }
+.game-utilities .game-primary-action button {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.4rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  white-space: normal;
+  color: var(--color-on-primary);
+  background: var(--color-primary);
+}

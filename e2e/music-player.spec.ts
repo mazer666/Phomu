@@ -61,7 +61,7 @@ async function startPlayer(
   });
   await page.getByRole('button', { name: 'Quick setup →' }).click();
   await page.getByRole('button', { name: "LET'S GO!" }).click();
-  await page.locator('.drawing-phase button').click();
+  await page.locator('[data-testid="draw-card"]').click();
   if (mode === 'vibe-check')
     await expect(
       page.getByRole('button', { name: 'Open music player', exact: true })

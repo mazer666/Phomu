@@ -50,5 +50,5 @@ export async function startGame(page: Page, language: 'de' | 'en' = 'en') {
   const copy = language === 'de' ? de : en;
   await page.getByRole('button', { name: copy.lobby.quickSetup }).click();
   await page.getByRole('button', { name: copy.lobby.startNow }).click();
-  await page.locator('.drawing-phase button').click();
+  await page.locator('[data-testid="draw-card"]').click();
 }

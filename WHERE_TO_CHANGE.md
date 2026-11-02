@@ -465,6 +465,15 @@ order.
 
 ---
 
+## I want to place a game action in the compact bottom bar
+
+Wrap the mode's primary button in `GameAction` from
+`src/components/game/GameAction.tsx`, passing its owning round phase and an
+optional short translated `compactLabel`. Keep the handler and disabled state
+on the original button. `GameFloatingActions` supplies the middle slot. Secondary
+choices, hints and corrections stay with the content. Verify mobile placement,
+desktop fallback and rotation with `e2e/primary-action.spec.ts`.
+
 ## I want to change a behaviour (game rule, points, flow)
 
 1. Look for the requirement in [`REQUIREMENTS.md`](REQUIREMENTS.md) that

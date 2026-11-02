@@ -690,3 +690,15 @@ drift apart.
 The lobby has four primary selections. Mix-Tape is a selection group, resolved by `Session::pick_mode` to a concrete round mode before the question is built. Its progress flag caps budget and award; the existing answer wire types stay unchanged. The three short standalone modes remain available under More modes. See [CR-0003](docs/cr/CR-0003-card-table-and-mix-tape.md).
 
 The shared core prepares the Timeline anchors from the selected packs before drawing; both bridges call that operation through their draw path. Shells render the public years from the question context. Web Timeline uses a bounded horizontal card rail, a theme-aware SVG record sleeve, edge hints and labelled navigation. Primary actions are separate from the movable content. Compact landscape viewports hide the side column and retain utility controls; wide landscape views retain the side column. Rotating the viewport does not remount the question.
+
+
+## Contextual game actions (2026-11-02)
+
+`GameActionsProvider` and `GameAction` in `src/components/game/GameAction.tsx`
+provide a presentation-only footer slot. Modes keep their handlers, disabled
+states and conditional actions. The active phase's real button is portalled
+between Points and Settings when the utility bar's computed CSS display is
+visible; otherwise it renders inline. No viewport breakpoint is reimplemented in
+JavaScript. The active round phase controls which button can occupy the slot;
+the retained question cannot publish an action during reveal. Rotation moves only
+the control, preserving the question and media player.

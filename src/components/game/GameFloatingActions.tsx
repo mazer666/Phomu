@@ -9,6 +9,7 @@
 'use client';
 
 import { useTranslation } from 'react-i18next';
+import { GameActionSlot } from './GameAction';
 
 // ─── Props ────────────────────────────────────────────────────────
 
@@ -17,8 +18,6 @@ interface GameFloatingActionsProps {
   onShowScoreboard: () => void;
   /** Opens the in-game settings. */
   onShowSettings: () => void;
-  /** Continues a revealed round; absent while answering or showing a winner. */
-  onNextRound?: () => void;
 }
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -26,7 +25,6 @@ interface GameFloatingActionsProps {
 export function GameFloatingActions({
   onShowScoreboard,
   onShowSettings,
-  onNextRound,
 }: GameFloatingActionsProps) {
   const { t } = useTranslation();
 
@@ -46,19 +44,7 @@ export function GameFloatingActions({
         {t('game.page.pointsButton')}
       </button>
 
-      {onNextRound && (
-        <button
-          onClick={onNextRound}
-          data-testid="next-round"
-          className="game-continue-action flex-1 min-w-0 px-3 py-2 min-h-[44px] rounded-full font-black shadow-lg transition-opacity hover:opacity-90"
-          style={{
-            backgroundColor: 'var(--color-primary)',
-            color: 'var(--color-on-primary)',
-          }}
-        >
-          {t('game.page.continueButton')}
-        </button>
-      )}
+      <GameActionSlot />
 
       {/* In-game settings (reachable at any time) */}
       <button

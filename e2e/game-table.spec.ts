@@ -34,7 +34,7 @@ test('the card table keeps its placement and action visible across themes and ro
         'aria-pressed',
         'true'
       );
-      const action = page.locator('.timeline-action .phomu-primary-action');
+      const action = page.locator('.phomu-primary-action');
       await expect(action).toBeVisible();
       const bounds = await action.boundingBox();
       expect(bounds, `${width}x${height}/${theme}`).not.toBeNull();
@@ -60,11 +60,11 @@ test('the card table keeps its placement and action visible across themes and ro
     }
   }
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.locator('.timeline-action .phomu-primary-action').click();
+  await page.locator('.phomu-primary-action').click();
   await expect(
-    page.locator('.timeline-action .phomu-primary-action')
+    page.locator('.phomu-primary-action')
   ).toHaveText(/continue/i);
-  await page.locator('.timeline-action .phomu-primary-action').click();
+  await page.locator('.phomu-primary-action').click();
   await expect(table).toBeHidden();
   await expect(page.locator('.game-phase-area')).not.toContainText(
     'Something went wrong'
@@ -106,8 +106,8 @@ async function answerMode(page: Page, mode: string) {
     await question.getByRole('button', { name: /^Both/ }).click();
   } else if (mode === 'lyrics') {
     await question.locator('button.font-mono').first().click();
-    await question
-      .getByRole('button', { name: 'Confirm & reveal', exact: true })
+    await page
+      .getByRole('button', { name: /^(Confirm & reveal|Reveal)$/ })
       .click();
   } else if (mode === 'cover-confusion') {
     const original = question.getByRole('button', {
@@ -119,7 +119,7 @@ async function answerMode(page: Page, mode: string) {
       await question.getByRole('button', { name: /^I know it!/ }).click();
       await question.getByRole('button', { name: 'YES', exact: true }).click();
     }
-    await question.getByRole('button', { name: /CONTINUE/ }).click();
+    await page.getByRole('button', { name: /CONTINUE/i }).click();
   }
   const feedback = page.getByRole('button', {
     name: 'Close feedback',
@@ -127,7 +127,7 @@ async function answerMode(page: Page, mode: string) {
   });
   if (await feedback.isVisible()) await feedback.click();
   if (['survivor', 'vibe-check', 'hint-master'].includes(mode)) {
-    await question.getByRole('button', { name: /reveal/i }).click();
+    await page.getByRole('button', { name: /reveal/i }).click();
   }
   await expect(page.locator('[data-testid="next-round"]:visible')).toBeVisible();
   await page.locator('[data-testid="next-round"]:visible').click();
@@ -160,7 +160,7 @@ test('Mix-Tape takes turns across separate Vibe, Survivor and Cover rounds', asy
   for (const mode of ['vibe-check', 'survivor', 'cover-confusion']) {
     await answerMode(page, mode);
     if (mode !== 'cover-confusion')
-      await page.locator('.drawing-phase button').click();
+      await page.locator('[data-testid="draw-card"]').click();
   }
 });
 
@@ -218,9 +218,9 @@ test('correct-answer banners return in the next round and disappear after five s
     expect(box!.y + box!.height).toBeLessThanOrEqual(360);
     if (round === 0) {
       await banner.click();
-      await question.getByRole('button', { name: /reveal/i }).click();
+      await page.getByRole('button', { name: /reveal/i }).click();
       await page.locator('[data-testid="next-round"]:visible').click();
-      await page.locator('.drawing-phase button').click();
+      await page.locator('[data-testid="draw-card"]').click();
     } else {
       await expect(banner).toBeVisible();
       await expect(banner).toBeHidden({ timeout: 6500 });

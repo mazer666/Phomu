@@ -6,6 +6,8 @@
  */
 'use client';
 
+import { GameAction } from './GameAction';
+
 import { useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -136,6 +138,7 @@ export function QuestionPhase({
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
+          <GameAction phase="question" compactLabel={t('game.page.revealButton')}>
           <button
             onClick={onReveal}
             className="px-8 py-3 rounded-xl font-bold border opacity-70 hover:opacity-100
@@ -144,6 +147,7 @@ export function QuestionPhase({
           >
             {t('game.question.allDoneReveal')}
           </button>
+          </GameAction>
         </motion.div>
       )}
 

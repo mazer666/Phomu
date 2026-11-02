@@ -30,7 +30,7 @@ import { pickLastRoundMessage } from '@/utils/last-round-messages';
 import type { LastRoundMessage } from '@/utils/last-round-messages';
 import { useGameAudioCues } from '@/hooks/useGameAudioCues';
 import { answerLabel } from '@/utils/mode-rules';
-import { resolveWinner } from '@/components/game/reveal/reveal-logic';
+import { GameActionsProvider } from '@/components/game/GameAction';
 
 export default function GamePage() {
   const router = useRouter();
@@ -247,16 +247,6 @@ export default function GamePage() {
   }, [skipBrokenSong]);
 
   const lastAnswer = currentAnswers[currentAnswers.length - 1];
-  const canContinueRound =
-    roundPhase === 'reveal' &&
-    !!currentReveal?.song &&
-    !resolveWinner({
-      players,
-      teams,
-      winCondition: config.winCondition,
-      endingCondition: config.endingCondition,
-      isGameOver,
-    }).showWinUI;
 
   // Short event SFX (resilient, without interrupting the flow)
   useGameAudioCues({
@@ -287,6 +277,7 @@ export default function GamePage() {
   }
 
   return (
+    <GameActionsProvider phase={roundPhase}>
     <div
       // WHY the height: the phase of the round fills the space below the
       // header and scrolls on its own — the page itself never scrolls, so
@@ -370,7 +361,6 @@ export default function GamePage() {
       <GameFloatingActions
         onShowScoreboard={() => setShowScoreboard(true)}
         onShowSettings={() => setShowInGameSettings(true)}
-        onNextRound={canContinueRound ? handleNextRound : undefined}
       />
 
       {/* Scoreboard overlay — the portrait only, the landscape has the column */}
@@ -390,5 +380,6 @@ export default function GamePage() {
         onOpenFullSettings={() => router.push('/settings')}
       />
     </div>
+    </GameActionsProvider>
   );
 }
