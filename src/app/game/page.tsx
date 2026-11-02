@@ -1,14 +1,6 @@
 /**
- * Game page — main game screen
- *
- * Forwards to the matching phase component depending on roundPhase:
- *   drawing   → DrawingPhase   (draw a card)
- *   question  → QuestionPhase  (mode-specific question)
- *   locked-in → QuestionPhase  (same UI, locked)
- *   reveal    → RevealPhase    (uncover the song, points)
- *   scoring   → RevealPhase    (game-over overlay)
- *
- * Guard: no running game → redirect to the lobby.
+ * Main game screen: renders drawing, question, reveal and scoring phases.
+ * Without a running game it redirects to the lobby; game over opens the podium.
  */
 'use client';
 
@@ -38,6 +30,7 @@ import { pickLastRoundMessage } from '@/utils/last-round-messages';
 import type { LastRoundMessage } from '@/utils/last-round-messages';
 import { useGameAudioCues } from '@/hooks/useGameAudioCues';
 import { answerLabel } from '@/utils/mode-rules';
+import { resolveWinner } from '@/components/game/reveal/reveal-logic';
 
 export default function GamePage() {
   const router = useRouter();
@@ -254,6 +247,16 @@ export default function GamePage() {
   }, [skipBrokenSong]);
 
   const lastAnswer = currentAnswers[currentAnswers.length - 1];
+  const canContinueRound =
+    roundPhase === 'reveal' &&
+    !!currentReveal?.song &&
+    !resolveWinner({
+      players,
+      teams,
+      winCondition: config.winCondition,
+      endingCondition: config.endingCondition,
+      isGameOver,
+    }).showWinUI;
 
   // Short event SFX (resilient, without interrupting the flow)
   useGameAudioCues({
@@ -363,13 +366,12 @@ export default function GamePage() {
         />
       </GameBody>
 
-      {/* The floating buttons — the portrait only, the landscape has the column */}
-      {(
-        <GameFloatingActions
-          onShowScoreboard={() => setShowScoreboard(true)}
-          onShowSettings={() => setShowInGameSettings(true)}
-        />
-      )}
+      {/* Compact bottom bar; wider landscape screens use the side column. */}
+      <GameFloatingActions
+        onShowScoreboard={() => setShowScoreboard(true)}
+        onShowSettings={() => setShowInGameSettings(true)}
+        onNextRound={canContinueRound ? handleNextRound : undefined}
+      />
 
       {/* Scoreboard overlay — the portrait only, the landscape has the column */}
       <Scoreboard

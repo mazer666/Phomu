@@ -603,5 +603,7 @@ Correct and wrong answers trigger a short feedback banner. Tap it to continue im
 On narrow phones, the home-page links wrap onto extra lines. In compact landscape Timeline, the question replaces the drawing view immediately and retains full-sized insertion targets; scoreboard and settings remain available even when the side panel is hidden.
 
 On phones, the reveal's solution and score list scroll independently. The next
-round button stays below them on screen, including after rotating the phone.
-Tap it to return to the card draw; the scoring heading itself is not a button.
+round action appears as **Continue** between **Points** and **Settings** in the
+bottom bar, including after rotating the phone. It appears once the solution is
+revealed and returns to the card draw. Wider landscape screens keep the action
+below the reveal. The scoring heading itself is not a button.

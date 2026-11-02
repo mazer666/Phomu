@@ -30,6 +30,9 @@ for (const mode of [
     await startGame(page, 'de');
     const question = page.locator('.question-phase');
     await expect(question).toBeVisible();
+    await expect(
+      page.locator('.game-utilities [data-testid="next-round"]')
+    ).toHaveCount(0);
     // Finish without an answer through the real core timeout/reveal route.
     // Modes with their own reveal controls require their actual answer flow.
     if (mode === 'timeline') {
@@ -66,9 +69,10 @@ for (const mode of [
       { width: 780, height: 360 },
       { width: 320, height: 568 },
       { width: 568, height: 320 },
+      { width: 1024, height: 450 },
     ]) {
       await page.setViewportSize(viewport);
-      const action = page.getByTestId('next-round');
+      const action = page.locator('[data-testid="next-round"]:visible');
       await expect
         .poll(async () => {
           const bounds = await action.boundingBox();
@@ -81,17 +85,76 @@ for (const mode of [
         .toBe(true);
       const bounds = await action.boundingBox();
       expect(bounds!.height).toBeGreaterThanOrEqual(43.99);
+      const footer = page.locator('.game-utilities');
+      await expect(footer.locator('[data-testid="next-round"]')).toBeVisible();
+      await expect(footer.locator('button')).toHaveText([
+        'Punkte',
+        'Weiter',
+        'Settings',
+      ]);
+      expect(await footer.locator('button').nth(1).boundingBox()).toEqual(
+        bounds
+      );
+      await expect
+        .poll(() => unreachableControls(page, '.game-utilities'))
+        .toEqual([]);
+      expect(
+        await page.locator('[data-testid="next-round"]:visible').count()
+      ).toBe(1);
       await expect
         .poll(() => unreachableControls(page, '.reveal-phase'))
         .toEqual([]);
     }
+    // Desktop keeps the phase action; rotation must never leave two actions visible.
+    await page.setViewportSize({ width: 1280, height: 720 });
+    await expect(
+      page.locator('.reveal-next-round-actions [data-testid="next-round"]')
+    ).toBeVisible();
+    await expect(page.locator('.game-utilities')).toBeHidden();
+    await page.setViewportSize({ width: 360, height: 780 });
+    await expect(
+      page.locator('.game-utilities [data-testid="next-round"]')
+    ).toBeVisible();
     const content = page.locator('.reveal-content');
     expect(await content.evaluate((el) => el.clientHeight)).toBeGreaterThan(0);
     await page.screenshot({ path: `/tmp/phomu-reveal-${mode}.png` });
-    await page.getByTestId('next-round').tap();
+    await page.locator('[data-testid="next-round"]:visible').tap();
     await expect(page.locator('.drawing-phase')).toBeVisible();
+    await expect(
+      page.locator('.game-utilities [data-testid="next-round"]')
+    ).toHaveCount(0);
     await page.locator('.drawing-phase button').tap();
     await expect(question).toBeVisible();
     await expect(reveal).toHaveCount(0);
   });
 }
+
+test('compact continuation fits every theme in English', async ({
+  page,
+  baseURL,
+}) => {
+  await page.setViewportSize({ width: 320, height: 568 });
+  await setupGame(page, baseURL, 'hint-master', 'en');
+  await startGame(page, 'en');
+  await page
+    .locator('.question-phase')
+    .getByRole('button', { name: /reveal/i })
+    .tap();
+  const footer = page.locator('.game-utilities');
+  for (const theme of ['jackbox', 'spotify', 'youtube', 'musicwall']) {
+    await page.evaluate(
+      (name) => (document.documentElement.dataset.theme = name),
+      theme
+    );
+    await expect(footer.locator('button')).toHaveText([
+      'Points',
+      'Continue',
+      'Settings',
+    ]);
+    await expect
+      .poll(() => unreachableControls(page, '.game-utilities'))
+      .toEqual([]);
+  }
+  await footer.getByRole('button', { name: 'Continue', exact: true }).tap();
+  await expect(page.locator('.drawing-phase')).toBeVisible();
+});

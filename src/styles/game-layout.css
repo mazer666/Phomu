@@ -214,6 +214,15 @@
 .reveal-content {
   overscroll-behavior: contain;
 }
+/* UI-023: compact screens continue in the bottom bar between points/settings. */
+@media (orientation: portrait), (max-width: 1000px), (max-height: 500px) {
+  .reveal-next-round-actions {
+    display: none;
+  }
+  .game-utilities:has(.game-continue-action) {
+    gap: 0.5rem;
+  }
+}
 @media (max-height: 500px) {
   .reveal-phase {
     padding: 0.5rem 1rem;

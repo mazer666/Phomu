@@ -129,8 +129,8 @@ async function answerMode(page: Page, mode: string) {
   if (['survivor', 'vibe-check', 'hint-master'].includes(mode)) {
     await question.getByRole('button', { name: /reveal/i }).click();
   }
-  await expect(page.getByTestId('next-round')).toBeVisible();
-  await page.getByTestId('next-round').click();
+  await expect(page.locator('[data-testid="next-round"]:visible')).toBeVisible();
+  await page.locator('[data-testid="next-round"]:visible').click();
   await expect(page.locator('.drawing-phase')).toBeVisible();
 }
 
@@ -219,7 +219,7 @@ test('correct-answer banners return in the next round and disappear after five s
     if (round === 0) {
       await banner.click();
       await question.getByRole('button', { name: /reveal/i }).click();
-      await page.getByTestId('next-round').click();
+      await page.locator('[data-testid="next-round"]:visible').click();
       await page.locator('.drawing-phase button').click();
     } else {
       await expect(banner).toBeVisible();

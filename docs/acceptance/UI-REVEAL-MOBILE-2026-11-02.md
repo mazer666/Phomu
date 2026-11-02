@@ -28,7 +28,9 @@ The viewport matrix is defined in the test: Galaxy S23-sized portrait and
 landscape, reduced portrait height for browser chrome, and smaller phones.
 Touch input and mobile rendering are enabled. The test checks the action's
 viewport bounds and minimum touch height, plus all reveal controls' ancestor
-clipping. Screenshots are written under `/tmp/phomu-reveal-<mode>.png`.
+clipping. The current regression also checks the compact bar's button order,
+absence during questions/draws, and the switch to the desktop reveal action.
+Screenshots are written under `/tmp/phomu-reveal-<mode>.png`.
 
 This is Chromium mobile emulation, not a physical Samsung Galaxy S23 or a
 Samsung Internet certification. Third-party playback is outside this check.
@@ -56,3 +58,27 @@ Samsung Internet certification. Third-party playback is outside this check.
 The standard Playwright browser download was denied by the environment's network
 policy. Tests used the installed Chromium instead. The npm cache was placed
 under `/tmp` because the default home cache was not writable.
+
+
+## Bottom-bar placement follow-up
+
+On compact screens the explicit Continue action now sits between Points and
+Settings in `GameFloatingActions`. It uses the existing next-round handler and
+is offered only once the solution has been released, excluding winner screens.
+The inline reveal action is hidden at the same viewport sizes where the compact
+bar is visible. Wider landscape screens keep the inline action. Rotation
+changes presentation without changing the round. Both locale files include the
+short action label; the regression also checks English in all existing themes.
+
+Follow-up validation:
+
+- `npx playwright test -c /tmp/phomu-playwright.config.ts e2e/reveal-mobile.spec.ts e2e/mobile-clipping.spec.ts e2e/game-table.spec.ts --workers=2`
+  — 44 passed; two unrelated dialog checks encountered an additional Next.js
+  development error dialog caused by the development CSP/eval warning. Their
+  generic dialog selectors matched both the product and developer dialogs.
+- `E2E_CHROMIUM_PATH=/usr/bin/chromium npx playwright test -c playwright.production.config.ts e2e/reveal-mobile.spec.ts --workers=1 --timeout=30000`
+  — all 7 continuation tests passed against the production export.
+- `E2E_CHROMIUM_PATH=/usr/bin/chromium npx playwright test -c playwright.production.config.ts e2e/game-table.spec.ts --workers=1 -g 'scoreboard and game-settings|QR scanner can always'`
+  — both dialog checks passed against the production export.
+- Typecheck, lint, all 292 unit tests, all 12 quality gates and the Webpack
+  production build passed. Existing lint/static-export warnings remain.

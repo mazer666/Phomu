@@ -14,6 +14,11 @@ document state, not as a version history.
 
 ## [Unreleased]
 
+### Changed — Mobile round continuation
+
+- Place Continue between Points and Settings in the compact game bottom bar
+  after the reveal. Wider landscape screens retain the reveal action.
+
 ### Changed — Start flag
 
 - Replace the thin pennant with a waving chequered flag and align it with the

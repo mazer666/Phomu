@@ -1,12 +1,10 @@
 /**
  * The floating actions of the game.
  *
- * WHAT: the two round buttons that float over the game — the points and the
- * in-game settings.
+ * WHAT: the compact bottom bar for points, round continuation and settings.
  *
- * WHY they exist only in the portrait: in the landscape the scoreboard is a
- * permanent column and the settings stand in it as well. Both buttons would
- * cover the phase of the round there.
+ * CSS keeps it visible on portrait and compact landscape screens. Wider
+ * landscape screens use the side panel and the reveal's own action instead.
  */
 'use client';
 
@@ -19,6 +17,8 @@ interface GameFloatingActionsProps {
   onShowScoreboard: () => void;
   /** Opens the in-game settings. */
   onShowSettings: () => void;
+  /** Continues a revealed round; absent while answering or showing a winner. */
+  onNextRound?: () => void;
 }
 
 // ─── Komponente ───────────────────────────────────────────────────
@@ -26,6 +26,7 @@ interface GameFloatingActionsProps {
 export function GameFloatingActions({
   onShowScoreboard,
   onShowSettings,
+  onNextRound,
 }: GameFloatingActionsProps) {
   const { t } = useTranslation();
 
@@ -44,6 +45,20 @@ export function GameFloatingActions({
       >
         {t('game.page.pointsButton')}
       </button>
+
+      {onNextRound && (
+        <button
+          onClick={onNextRound}
+          data-testid="next-round"
+          className="game-continue-action flex-1 min-w-0 px-3 py-2 min-h-[44px] rounded-full font-black shadow-lg transition-opacity hover:opacity-90"
+          style={{
+            backgroundColor: 'var(--color-primary)',
+            color: 'var(--color-on-primary)',
+          }}
+        >
+          {t('game.page.continueButton')}
+        </button>
+      )}
 
       {/* In-game settings (reachable at any time) */}
       <button
