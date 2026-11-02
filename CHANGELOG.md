@@ -14,6 +14,12 @@ document state, not as a version history.
 
 ## [Unreleased]
 
+### Fixed — Timeline answer feedback
+
+- Preserve correct/wrong feedback during quick round transitions instead of
+  clearing it with the current answers. Render banners visibly before the
+  animation starts and add explicit, translated result labels.
+
 ### Changed — Mobile round continuation
 
 - Place Continue between Points and Settings in the compact game bottom bar

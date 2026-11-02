@@ -966,10 +966,10 @@
 ### UI-015 — Feedback overlays accompany the game events
 
 **Preset:** Preset
-**Requirement:** On the switch into the question phase, on the reveal, on a correct and a wrong answer as well as at the end of the game, own overlays respectively sound effects are triggered. A double trigger on a re-render is excluded (comparison with the previous state). Answer banners use a round-and-answer identity, appear again in subsequent rounds, can be dismissed by tapping, and disappear automatically after five seconds (`PHOMU_CONFIG.FEEDBACK_AUTO_DISMISS_MS`). Their visible text does not announce the automatic removal.
+**Requirement:** On the switch into the question phase, on the reveal, on a correct and a wrong answer as well as at the end of the game, own overlays respectively sound effects are triggered. A double trigger on a re-render is excluded (comparison with the previous state). Answer banners use a round-and-answer identity, appear again in subsequent rounds, can be dismissed by tapping, and disappear automatically after five seconds (`PHOMU_CONFIG.FEEDBACK_AUTO_DISMISS_MS`). The active answer event survives clearing the answer list during round continuation until dismissed or its original timer expires. Banners render visibly before animation frames run and explicitly identify correct/wrong results. Their visible text does not announce the automatic removal.
 **Rationale:** Feedback has to be coupled to the event, not to the render cycle.
-**Acceptance:** `src/hooks/useGameAudioCues.ts:76-96` (phase comparison), `:97-108` (answer counter), `:109-116` (end of game); `FeedbackOverlay` and `DiceAnimation` in `src/app/game/page.tsx`; regression coverage in `FeedbackOverlay.test.ts` and `e2e/game-table.spec.ts`.
-**Verification:** `grep -n "previousPhaseRef\|previousAnswerCountRef" src/hooks/useGameAudioCues.ts`; no test exists — see [GAP-001](#open-gaps).
+**Acceptance:** `src/hooks/useGameAudioCues.ts:76-96` (phase comparison), `:97-108` (answer counter), `:109-116` (end of game); `FeedbackOverlay` and `DiceAnimation` in `src/app/game/page.tsx`; regression coverage in `src/components/game/FeedbackOverlay.test.tsx`, `e2e/feedback-mobile.spec.ts` and `e2e/game-table.spec.ts`. See [mobile feedback verification](docs/acceptance/UI-FEEDBACK-MOBILE-2026-11-02.md).
+**Verification:** `npx vitest run src/components/game/FeedbackOverlay.test.tsx`; mobile Timeline touch regression in `e2e/feedback-mobile.spec.ts`.
 
 ### UI-016 — Sound effects can be switched off and are scalable
 

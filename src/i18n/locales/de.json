@@ -709,6 +709,8 @@
       "winCondition_other": "Gewinnscore: {{count}} Punkte"
     },
     "feedback": {
+      "correctLabel": "Richtig!",
+      "wrongLabel": "Falsch!",
       "closeAriaLabel": "Feedback schließen",
       "closeTitle": "Antippen zum Schließen",
       "hint": "Antippen zum Schließen",

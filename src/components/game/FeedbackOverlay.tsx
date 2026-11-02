@@ -45,21 +45,32 @@ export function FeedbackOverlay({
   onComplete,
 }: FeedbackOverlayProps) {
   const { t } = useTranslation();
+  // UI-015: the feedback belongs to the answer event, not the current phase.
+  // Advancing the round clears the store's answers before the banner expires.
+  const [answerEvent, setAnswerEvent] = useState<{
+    triggerKey: string;
+    isCorrect: boolean;
+  } | null>(null);
+  if (isCorrect !== null && answerEvent?.triggerKey !== triggerKey) {
+    setAnswerEvent({ triggerKey, isCorrect });
+  }
+  const eventKey = answerEvent?.triggerKey ?? triggerKey;
+  const eventCorrect = answerEvent?.isCorrect ?? null;
   const [dismissedKeys, setDismissedKeys] = useState<Set<string>>(
     () => new Set()
   );
 
   const payload = useMemo(() => {
-    if (isCorrect === null) return null;
+    if (eventCorrect === null) return null;
 
-    const pool = isCorrect ? CORRECT_MESSAGES : WRONG_MESSAGES;
-    const colors = isCorrect ? COLORS_CORRECT : COLORS_WRONG;
-    const seedBase = `${isCorrect ? '1' : '0'}:${triggerKey}`;
+    const pool = eventCorrect ? CORRECT_MESSAGES : WRONG_MESSAGES;
+    const colors = eventCorrect ? COLORS_CORRECT : COLORS_WRONG;
+    const seedBase = `${eventCorrect ? '1' : '0'}:${eventKey}`;
 
     // The quip comes from the translation (the index is deterministic as before).
     // The German original text only serves as a fallback if a key is missing.
     const messageIndex = hashSeed(`msg:${seedBase}`) % pool.length;
-    const keys = isCorrect ? FEEDBACK_CORRECT_KEYS : FEEDBACK_WRONG_KEYS;
+    const keys = eventCorrect ? FEEDBACK_CORRECT_KEYS : FEEDBACK_WRONG_KEYS;
     const message = t(keys[messageIndex % keys.length]!, {
       defaultValue: pool[messageIndex]!,
     });
@@ -67,19 +78,19 @@ export function FeedbackOverlay({
     const rotation = (hashSeed(`rot:${seedBase}`) % 11) - 5; // -5 ... +5
 
     return { message, color, rotation };
-  }, [isCorrect, triggerKey, t]);
+  }, [eventCorrect, eventKey, t]);
 
-  const isVisible = !!payload && !dismissedKeys.has(triggerKey);
+  const isVisible = !!payload && !dismissedKeys.has(eventKey);
 
   const dismiss = useCallback(() => {
     setDismissedKeys((prev) => {
-      if (prev.has(triggerKey)) return prev;
+      if (prev.has(eventKey)) return prev;
       const next = new Set(prev);
-      next.add(triggerKey);
+      next.add(eventKey);
       return next;
     });
     onComplete?.();
-  }, [triggerKey, onComplete]);
+  }, [eventKey, onComplete]);
 
   useEffect(() => {
     if (!isVisible) return;
@@ -97,13 +108,13 @@ export function FeedbackOverlay({
     <div className="fixed inset-0 z-[100] pointer-events-none flex items-center justify-center px-5">
       <motion.button
         type="button"
-        key={`${payload.message}-${triggerKey}`}
+        key={`${payload.message}-${eventKey}`}
         onClick={dismiss}
         initial={{
-          scale: 0.05,
-          opacity: 0,
-          rotate: payload.rotation - 20,
-          y: 80,
+          scale: 0.96,
+          opacity: 1,
+          rotate: payload.rotation,
+          y: 0,
         }}
         animate={{ scale: 1, opacity: 1, rotate: payload.rotation, y: 0 }}
         transition={{
@@ -122,6 +133,15 @@ export function FeedbackOverlay({
         aria-label={t('game.feedback.closeAriaLabel')}
         title={t('game.feedback.closeTitle')}
       >
+        <p
+          role="status"
+          className="mb-2 text-sm font-black uppercase tracking-widest"
+          style={{ color: payload.color }}
+        >
+          {eventCorrect
+            ? t('game.feedback.correctLabel')
+            : t('game.feedback.wrongLabel')}
+        </p>
         <p
           className="font-black italic uppercase tracking-tighter text-center break-words hyphens-auto"
           style={{

@@ -598,7 +598,7 @@ Use the controls inside the provider player. Sign-in, full songs versus previews
 
 The library scrolls within the screen while its search and navigation remain available. Album covers are loaded from the bundled catalogue. Open the filter panel on a phone to adjust the collection, then close it to return to the results. Settings, help, legal pages and the final score also scroll when their content exceeds the available height.
 
-Correct and wrong answers trigger a short feedback banner. Tap it to continue immediately, or let it disappear after five seconds. The banner does not show a countdown and returns for new answers in later rounds.
+Correct and wrong answers trigger a short feedback banner. It explicitly says whether the answer was correct or wrong. Tap it to close immediately, or let it disappear after five seconds. Moving on quickly does not remove the banner before that time. The banner does not show a countdown and returns for new answers in later rounds.
 
 On narrow phones, the home-page links wrap onto extra lines. In compact landscape Timeline, the question replaces the drawing view immediately and retains full-sized insertion targets; scoreboard and settings remain available even when the side panel is hidden.
 

@@ -709,6 +709,8 @@
       "winCondition_other": "Winning score: {{count}} points"
     },
     "feedback": {
+      "correctLabel": "Correct!",
+      "wrongLabel": "Wrong!",
       "closeAriaLabel": "Close feedback",
       "closeTitle": "Tap to close",
       "hint": "Tap to close",
