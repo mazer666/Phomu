@@ -951,9 +951,9 @@ export default function LobbyPage() {
           {step === TOTAL_STEPS && players.length > 0 && (
             <button
               onClick={handleStart}
-              className="w-full py-5 rounded-3xl bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-primary)] text-white text-xl font-black shadow-2xl shadow-[var(--color-accent)]/20 active:scale-95 transition-all"
+              className="w-full inline-flex items-center justify-center gap-2.5 py-5 rounded-3xl bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-primary)] text-white text-xl font-black shadow-2xl shadow-[var(--color-accent)]/20 active:scale-95 transition-all"
             >
-              <Icon name="flag" size={18} /> {t('lobby.startNow')}
+              <Icon name="flag" size={24} /> {t('lobby.startNow')}
             </button>
           )}
 

@@ -167,8 +167,15 @@ export function Icon({ name, size = 18, className = '' }: IconProps) {
       case 'flag':
         return (
           <>
-            <path d="M6 21V4" {...strich} />
-            <path d="M6 4h11l-2 3 2 3H6z" {...strich} />
+            <path d="M5 3v19" {...strich} />
+            <path
+              d="M5 4c6-3 10 3 16 0v10c-6 3-10-3-16 0z"
+              {...strich}
+            />
+            <path
+              d="M5 4c2-1 3.5-1 5-.6v5c-1.5-.4-3-.4-5 .6zm10 1.6c2 .4 4 .4 6-1.6v5c-2 2-4 2-6 1.6zm-5 2.8c1.7.4 3.3 1.8 5 2.2v5c-1.7-.4-3.3-1.8-5-2.2z"
+              fill="currentColor"
+            />
           </>
         );
       case 'card':

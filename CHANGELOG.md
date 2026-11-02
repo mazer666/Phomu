@@ -14,6 +14,12 @@ document state, not as a version history.
 
 ## [Unreleased]
 
+### Changed — Start flag
+
+- Replace the thin pennant with a waving chequered flag and align it with the
+  lobby start label in a centered row. The decorative SVG inherits theme text
+  colours and stays hidden from assistive technology.
+
 ### Fixed — Mobile reveal continuation
 
 - Keep the next-round action visible below the scrolling reveal and score list
