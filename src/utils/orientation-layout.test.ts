@@ -74,10 +74,30 @@ describe('resolveLobbyLayout', () => {
   });
 
   it('draws two columns with a preview in the landscape', () => {
-    const layout = resolveLobbyLayout('landscape');
+    const layout = resolveLobbyLayout('landscape', 1280);
 
     expect(layout.variant).toBe('landscape');
     expect(layout.columns).toBe(2);
     expect(layout.showPreview).toBe(true);
+  });
+
+  it('draws one column in a landscape that is too narrow for two', () => {
+    // WHY: a phone in the landscape is wide and low. Two columns do not
+    // fit next to each other there — the steps leave the screen, and a
+    // control that is out of the screen cannot be reached.
+    const layout = resolveLobbyLayout('landscape', 568);
+
+    expect(layout.variant).toBe('landscape');
+    expect(layout.columns).toBe(1);
+    expect(layout.showPreview).toBe(false);
+  });
+
+  it('draws one column when the width is unknown', () => {
+    // WHY: the one-column layout fits everywhere, the two-column layout
+    // does not. A viewport whose width is unknown gets the safe layout.
+    const layout = resolveLobbyLayout('landscape');
+
+    expect(layout.columns).toBe(1);
+    expect(layout.showPreview).toBe(false);
   });
 });

@@ -21,7 +21,16 @@ for (const viewport of [
     await expect
       .poll(() => image.evaluate((el: HTMLImageElement) => el.naturalWidth))
       .toBeGreaterThan(0);
-    await expect(image).toHaveAttribute('src', /\/Phomu\/covers\//);
+    // WHY the prefix is not part of the expectation: the covers are served
+    // from the directory of the public folder, and the prefix in front of
+    // it belongs to the deployment — the development server has none, the
+    // Pages deployment has `/Phomu`, the Cloudflare deployment none. What
+    // matters is that the cover comes from the directory of the covers and
+    // not from somewhere else.
+    await expect(image).toHaveAttribute(
+      'src',
+      /\/covers\/[^/]+\.(jpg|jpeg|png|webp)$/
+    );
     await expect
       .poll(() => results.evaluate((el) => el.scrollHeight - el.clientHeight))
       .toBeGreaterThan(50);

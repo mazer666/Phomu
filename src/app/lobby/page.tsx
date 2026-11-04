@@ -33,7 +33,6 @@ import type { TeamMode } from '@/types/player';
 import { parseQrIntent } from '@/utils/qr-intent';
 import { resolveLobbyLayout } from '@/utils/orientation-layout';
 
-
 export default function LobbyPage() {
   const { t } = useTranslation();
   const router = useRouter();
@@ -82,8 +81,8 @@ export default function LobbyPage() {
   // The portrait draws the steps of the wizard in one column, the
   // landscape draws them next to the preview of the session. The hook
   // only reports the shape of the viewport — the choices live in the store.
-  const { orientation } = useOrientation();
-  const layout = resolveLobbyLayout(orientation);
+  const { orientation, width } = useOrientation();
+  const layout = resolveLobbyLayout(orientation, width);
 
   const handleAddPlayer = useCallback(() => {
     if (!nameInput.trim()) return;
@@ -136,7 +135,14 @@ export default function LobbyPage() {
       {/* Header with progress — sticky so only the content scrolls */}
       <div className="lobby-wizard-header sticky top-0 z-20 bg-[var(--color-bg)] pt-safe pt-4 md:pt-6 pb-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-black flex items-center gap-2"><Icon name="controller" size={26} className="text-[var(--color-accent)]" />{t('lobby.title')}</h1>
+          <h1 className="text-3xl font-black flex items-center gap-2">
+            <Icon
+              name="controller"
+              size={26}
+              className="text-[var(--color-accent)]"
+            />
+            {t('lobby.title')}
+          </h1>
           <div className="flex items-center gap-3">
             <button
               onClick={() => router.push('/settings/audio?from=lobby')}
@@ -328,9 +334,11 @@ export default function LobbyPage() {
                             onClick={() => setConfig({ endingCondition: mode })}
                             className={`py-3.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all ${config.endingCondition === mode ? 'bg-[var(--color-accent)] text-white shadow-lg' : 'opacity-40 hover:opacity-100'}`}
                           >
-                            {mode === 'points' ? t('common.points')
-                              : mode === 'rounds' ? t('common.round', { count: 2 })
-                              : t('lobby.step4.conditionTime')}
+                            {mode === 'points'
+                              ? t('common.points')
+                              : mode === 'rounds'
+                                ? t('common.round', { count: 2 })
+                                : t('lobby.step4.conditionTime')}
                           </button>
                         ))}
                       </div>
@@ -482,7 +490,11 @@ export default function LobbyPage() {
                               : 'border-white/8 bg-white/5 opacity-50 hover:opacity-80'
                           }`}
                         >
-                          <Icon name={o.icon} size={26} className="opacity-90" />
+                          <Icon
+                            name={o.icon}
+                            size={26}
+                            className="opacity-90"
+                          />
                           <span className="text-[10px] font-black uppercase tracking-tight leading-none">
                             {t(o.labelKey)}
                           </span>
@@ -643,7 +655,11 @@ export default function LobbyPage() {
                             : 'border-white/8 bg-white/5 opacity-60 hover:opacity-90'
                         }`}
                       >
-                        <Icon name="ban" size={26} className="shrink-0 opacity-70" />
+                        <Icon
+                          name="ban"
+                          size={26}
+                          className="shrink-0 opacity-70"
+                        />
                         <div className="flex-1">
                           <p className="text-sm font-black">
                             {t('lobby.step5.noCheatTitle')}
@@ -812,7 +828,12 @@ export default function LobbyPage() {
                                       key={p.id}
                                       className="text-[10px] font-bold px-2 py-1 rounded-lg bg-white/5"
                                     >
-                                      <PlayerSticker kind={p.avatar} color={p.color} size={22} /> {p.name}
+                                      <PlayerSticker
+                                        kind={p.avatar}
+                                        color={p.color}
+                                        size={22}
+                                      />{' '}
+                                      {p.name}
                                     </span>
                                   ))}
                               </div>
@@ -832,7 +853,11 @@ export default function LobbyPage() {
                                   className="flex items-center gap-3 p-2 bg-white/5 rounded-2xl"
                                 >
                                   <span className="text-xl">
-                                    <PlayerSticker kind={player.avatar} color={player.color} size={26} />
+                                    <PlayerSticker
+                                      kind={player.avatar}
+                                      color={player.color}
+                                      size={26}
+                                    />
                                   </span>
                                   <span className="flex-1 text-xs font-bold">
                                     {player.name}

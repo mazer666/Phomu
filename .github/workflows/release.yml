@@ -73,11 +73,18 @@ jobs:
 
       - name: Setup the Android SDK
         uses: android-actions/setup-android@v3
-
-      - name: Install the packages of the SDK
-        run: |
-          sdkmanager 'platform-tools' 'platforms;android-35' 'build-tools;35.0.0' \
-                      'cmake;3.22.1' 'ndk;27.3.13750724'
+        with:
+          # WHY the packages are named here: the action installs `tools` and
+          # `platform-tools` when the input is empty, and the package `tools`
+          # no longer exists in the repository — the call fails with
+          # "Failed to find package 'tools'" before the build even starts.
+          # Naming the packages replaces that default.
+          packages: >-
+            platform-tools
+            platforms;android-35
+            build-tools;35.0.0
+            cmake;3.22.1
+            ndk;27.3.13750724
 
       - name: Write the local configuration
         run: |
@@ -85,6 +92,41 @@ jobs:
           sdk.dir=$ANDROID_HOME
           ndk.dir=$ANDROID_HOME/ndk/27.3.13750724
           EOF
+
+      - name: Check that the commit was checked
+        # WHY: a release is a promise — "this state was tested". The CI is
+        # the binding technical acceptance, so the release waits for it: a
+        # commit without a green CI run never becomes a beta.
+        #
+        # The check reads the runs of the CI for this commit and takes the
+        # newest one. A commit that was pushed before the CI existed cannot
+        # be released — the owner has to push it again.
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          # The list of the runs of the CI for this commit. The newest one
+          # decides — an older green run says nothing about a commit that
+          # was changed afterwards.
+          runs=$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/ci.yml/runs?head_sha=${SHA}" \
+            --jq '.workflow_runs | map({status: .status, conclusion: .conclusion})')
+          status=$(echo "${runs}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const r=JSON.parse(s);console.log(r.length?r[0].status:"none")})')
+          conclusion=$(echo "${runs}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const r=JSON.parse(s);console.log(r.length?(r[0].conclusion||"none"):"none")})')
+          echo "The CI of ${SHA}: status=${status}, conclusion=${conclusion}"
+          if [ "${status}" = "none" ]; then
+            echo "::error::The commit ${SHA} has no CI run at all. A release is only made from a checked state — push the commit again and let the CI run."
+            exit 1
+          fi
+          if [ "${status}" != "completed" ]; then
+            echo "::error::The CI of ${SHA} is still ${status}. A release is only made from a checked state — wait for the CI to finish."
+            exit 1
+          fi
+          if [ "${conclusion}" != "success" ]; then
+            echo "::error::The commit ${SHA} has a red CI run (${conclusion}). A release is only made from a checked state — see docs/releases/RELEASE-ANDROID.md."
+            exit 1
+          fi
+          echo "The state was checked by the CI."
 
       - name: Install the dependencies of the shell
         working-directory: apps/android

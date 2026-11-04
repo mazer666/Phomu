@@ -48,6 +48,8 @@ export interface OrientationState {
   isPortrait: boolean;
   /** Whether the viewport was measured already — false during the server render. */
   isMeasured: boolean;
+  /** The width of the viewport in CSS pixels; undefined while it is unknown. */
+  width?: number;
 }
 
 /**
@@ -86,12 +88,16 @@ export function useOrientation(): OrientationState {
   // that fits everywhere, the measurement follows in the effect.
   const [orientation, setOrientation] = useState<ScreenOrientation>('portrait');
   const [isMeasured, setIsMeasured] = useState(false);
+  const [width, setWidth] = useState<number | undefined>(undefined);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
     const update = () => {
       setOrientation(readOrientation());
+      // WHY the width as well: some layouts depend on how much room there
+      // is, not only on the shape of the viewport.
+      setWidth(window.innerWidth);
       setIsMeasured(true);
     };
 
@@ -120,5 +126,6 @@ export function useOrientation(): OrientationState {
     isLandscape: orientation === 'landscape',
     isPortrait: orientation === 'portrait',
     isMeasured,
+    width,
   };
 }

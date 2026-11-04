@@ -20,26 +20,26 @@
 name: Deploy to Cloudflare Pages
 
 on:
-  push:
+  # WHY the deployment waits for the CI: the CI is the binding technical
+  # acceptance of the repository. A deployment that runs on the push alone
+  # publishes a state that nobody checked. The trigger is therefore the
+  # *completion* of the CI, and the job only runs when that run was green.
+  #
+  # WHY the paths are gone: the filter of the paths decided *what* is built,
+  # but not *whether* it is checked. The CI runs on every push to the branch
+  # and decides that — a green run of the CI means the whole state is good,
+  # not only the files that were touched.
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
     branches: [main]
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'config/**'
-      - 'core/**'
-      - 'platform/**'
-      - 'scripts/build-wasm.mjs'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'next.config.ts'
-      - 'wrangler.toml'
-      - 'Cargo.toml'
-      - 'Cargo.lock'
-      - '.github/workflows/deploy-cloudflare.yml'
   workflow_dispatch:
 
 concurrency:
   group: cloudflare-pages
+  # WHY the cancellation stays on: the newest verified state is the one that
+  # has to be live. A deployment of an older commit is pointless — it would
+  # publish a state that the newer one has already superseded.
   cancel-in-progress: true
 
 permissions:
@@ -48,9 +48,19 @@ permissions:
 jobs:
   deploy:
     name: Deploy to Cloudflare Pages
+    # WHY the condition: the trigger fires for every finished CI run, also
+    # for the red ones. Only a green run may become a deployment; a manual
+    # run always may.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
+      # The commit the deployment publishes — the commit the CI verified, not
+      # the tip of the branch. The two can differ: the branch may have moved
+      # on while the CI was still running.
+      DEPLOY_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       # The name of the Pages project. It is a variable, not a constant,
@@ -85,6 +95,9 @@ jobs:
       - name: Checkout
         if: steps.credentials.outputs.available == 'true'
         uses: actions/checkout@v4
+        with:
+          # The verified commit, not the tip of the branch.
+          ref: ${{ env.DEPLOY_SHA }}
 
       - name: Setup Node
         if: steps.credentials.outputs.available == 'true'

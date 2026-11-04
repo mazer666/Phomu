@@ -126,17 +126,12 @@ impl Prompt {
 /// carries the years that are *already* on the timeline — they are known to
 /// the players, they are on the screen.
 ///
-/// EXAMPLE: the context of a Timeline round carries the slots `0`, `1` and
-/// `2` and the years `1970`, `1980` and `1990`.
+/// EXAMPLE: the context of a Timeline round carries the years `1970`, `1980`
+/// and `1990`.
 #[derive(Debug, Clone, PartialEq, Eq, Default)]
 pub struct RoundContext {
     /// The years that lie on the timeline.
     pub timeline_years: Vec<i32>,
-    /// The slots of the timeline, in which the song may be placed.
-    ///
-    /// WHY they are computed here: they depend on the year of the song, and
-    /// the year of the song is the answer of the round.
-    pub timeline_slots: Vec<usize>,
     /// The genre of the song.
     pub genre: String,
     /// The pack the song belongs to.
@@ -293,6 +288,22 @@ impl RoundView {
                         " identity={} {} {}",
                         identity.artist, identity.title, identity.year
                     ));
+                }
+                // WHY the context is in the payload: the payload is what the
+                // anti-spoiler check searches, and the context is part of
+                // what the shell receives. A field that carried the solution
+                // would slip through a check that only looked at the prompt.
+                for year in &view.context.timeline_years {
+                    text.push_str(" timelineYear=");
+                    text.push_str(&year.to_string());
+                }
+                if !view.context.genre.is_empty() {
+                    text.push_str(" genre=");
+                    text.push_str(&view.context.genre);
+                }
+                if let Some(pack) = &view.context.pack {
+                    text.push_str(" pack=");
+                    text.push_str(pack);
                 }
                 text
             }

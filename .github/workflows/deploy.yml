@@ -1,13 +1,31 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
+# Deploy the web shell to GitHub Pages
 #
-# To get started with Next.js see: https://nextjs.org/docs/pages/building-your-application/deploying/static-exports
+# WHY the deployment waits for the CI: the CI is the binding technical
+# acceptance of the repository. A deployment that runs on the push alone
+# publishes a state that nobody checked — a broken format, a broken build
+# or a broken shell would go live. The trigger is therefore the *completion*
+# of the CI, and the job only runs when that run was green.
 #
+# WHY the commit of the run is checked out and not the tip of the branch:
+# the trigger fires when the CI *finishes*, and the branch may have moved
+# on in the meantime. The deployment has to publish exactly the state the
+# CI verified — not a newer one, and not an older one.
+#
+# WHY the order of the deployments is the order of the commits: the CI
+# uses a concurrency group per branch without cancellation, so two CI runs
+# on the same branch run one after the other, and their completion events
+# arrive in the order of the commits. This workflow uses a concurrency group
+# of its own, also without cancellation — the deployments therefore wait
+# for each other and the newest verified state is the last one published.
+
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+  # The deployment follows a finished CI run on the default branch.
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,16 +39,30 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
   # Build job
   build:
+    # WHY the condition: the trigger fires for every finished CI run, also
+    # for the red ones. Only a green run may become a deployment; a manual
+    # run always may.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    env:
+      # The commit the deployment publishes. For the automatic run it is the
+      # commit the CI verified; for the manual run it is the tip of the
+      # branch.
+      DEPLOY_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The verified commit, not the tip of the branch.
+          ref: ${{ env.DEPLOY_SHA }}
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -46,7 +78,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -83,6 +115,9 @@ jobs:
 
   # Deployment job
   deploy:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

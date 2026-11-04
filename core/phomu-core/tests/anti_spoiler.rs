@@ -112,6 +112,54 @@ fn the_question_view_has_no_field_for_the_solution() {
 }
 
 #[test]
+fn the_question_of_a_timeline_carries_no_slot_of_the_answer() {
+    // WHY this test exists: the question of a Timeline round once carried
+    // the slots in which the song may be placed. Those slots depend on the
+    // year of the song — and the year of the song is the answer of the
+    // round. The payload of the question therefore handed out the solution.
+    //
+    // The test does not look at the *form* of the payload (it does not
+    // search for a year as a text) — it compares the payload with the
+    // answer itself. That is the difference: a number that encodes the
+    // answer slips through a search for texts.
+    let mut session = session_for(GameMode::Timeline);
+    session.start_game(1_000).expect("the game starts");
+    session
+        .init_timeline(vec![1970, 1980, 1990])
+        .expect("the timeline has its years");
+    let view = session
+        .draw_song(
+            song("s1", "Der Geheime Titel", "Die Geheime Band", 1985),
+            SongSource::Random,
+        )
+        .expect("the song is drawn");
+    let question = match view {
+        RoundView::Question(question) => question,
+        _ => unreachable!("the drawn song opens the question phase"),
+    };
+
+    // The slots in which the song would be right — the answer of the round.
+    let answer = phomu_core::facade::valid_slots(1985, &[1970, 1980, 1990]);
+    assert_eq!(
+        answer,
+        [2].into_iter().collect::<std::collections::BTreeSet<_>>(),
+        "the song of 1985 belongs into the slot between 1980 and 1990"
+    );
+
+    // The payload of the question may not name any of them.
+    let payload = RoundView::Question(question).payload_text();
+    for slot in &answer {
+        assert!(
+            !payload.contains(&format!("slot={slot}")),
+            "the question of the round names the slot {slot} of the answer"
+        );
+    }
+    // The years on the timeline are known to the players — they are on the
+    // screen. They may be in the payload.
+    assert!(payload.contains("1980"));
+}
+
+#[test]
 fn the_reveal_payload_carries_the_solution() {
     let mut session = session_for(GameMode::Timeline);
     session.start_game(1_000).expect("the game starts");

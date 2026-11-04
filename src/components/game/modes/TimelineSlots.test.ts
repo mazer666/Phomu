@@ -65,10 +65,14 @@ describe('TimelineSlots', () => {
           selectedSlot: 1,
           jokerSlot: null,
           correctSlot: null,
-          validSlotSet: new Set([1]),
+          isAnswerCorrect: true,
           isRevealed,
           hasAnswer,
-          identity: { title: 'Example Song', artist: 'The Example', year: 2001 },
+          identity: {
+            title: 'Example Song',
+            artist: 'The Example',
+            year: 2001,
+          },
           axis,
           onSelect: () => undefined,
         })
@@ -130,7 +134,9 @@ describe('TimelineSlots', () => {
     expect(container.textContent).not.toContain('Example Song');
     expect(container.textContent).not.toContain('The Example');
     expect(container.textContent).not.toContain('2001');
-    expect(container.querySelector('[data-slot="1"]')?.getAttribute('aria-pressed')).toBe('true');
+    expect(
+      container.querySelector('[data-slot="1"]')?.getAttribute('aria-pressed')
+    ).toBe('true');
     expect(container.querySelector('.phomu-card-back')).not.toBeNull();
   });
 
@@ -143,5 +149,4 @@ describe('TimelineSlots', () => {
       expect(slot.getAttribute('aria-label')).toContain('Position');
     }
   });
-
 });

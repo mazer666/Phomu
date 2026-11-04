@@ -54,7 +54,6 @@ class FakeGameBridge : GameBridge {
         options = emptyList(),
         context = PhomuRoundContext(
             timelineYears = listOf(1970, 1980),
-            timelineSlots = listOf(1u),
             genre = "Rock",
             pack = null,
         ),

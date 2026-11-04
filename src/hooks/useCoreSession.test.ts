@@ -88,7 +88,6 @@ function questionOf(): RoundQuestion {
     },
     context: {
       timelineYears: [1970, 1980, 1990],
-      timelineSlots: [0, 1, 2, 3],
       genre: 'Rock',
       pack: null,
     },
@@ -279,7 +278,9 @@ describe('the session of the core', () => {
     await mountHook(root);
     expect(useGameStore.getState().timelineYears).toEqual([]);
     await run(() => commands!.drawCard());
-    expect(useGameStore.getState().timelineYears).toEqual(questionOf().context.timelineYears);
+    expect(useGameStore.getState().timelineYears).toEqual(
+      questionOf().context.timelineYears
+    );
     expect(core.yearScale).not.toHaveBeenCalled();
     expect(core.startTimeline).not.toHaveBeenCalled();
   });
@@ -295,10 +296,13 @@ describe('the session of the core', () => {
   it('keeps the growing timeline synchronized on subsequent draws', async () => {
     await mountHook(root);
     await run(() => commands!.drawCard());
-    const next = questionOf(); next.context.timelineYears = [1970, 1980, 1985, 1990];
+    const next = questionOf();
+    next.context.timelineYears = [1970, 1980, 1985, 1990];
     core.drawRandom.mockResolvedValue(next);
     await run(() => commands!.drawCard());
-    expect(useGameStore.getState().timelineYears).toEqual(next.context.timelineYears);
+    expect(useGameStore.getState().timelineYears).toEqual(
+      next.context.timelineYears
+    );
     expect(core.startTimeline).not.toHaveBeenCalled();
   });
 

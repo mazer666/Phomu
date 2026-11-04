@@ -99,9 +99,6 @@ pub struct PhomuRoundContext {
     /// The years that lie on the timeline.
     #[serde(default)]
     pub timeline_years: Vec<i32>,
-    /// The slots of the timeline, in which the song may be placed.
-    #[serde(default)]
-    pub timeline_slots: Vec<u32>,
     /// The genre of the song.
     #[serde(default)]
     pub genre: String,
@@ -115,16 +112,16 @@ pub struct PhomuRoundContext {
 /// WHY a function of its own: the translation belongs to the view, and the
 /// API of the core is not a rule of the bridge.
 ///
-/// EXAMPLE: the slots `0` and `1` of the base become the slots `0` and `1`
+/// WHY there are no slots: the slots in which the song may be placed depend
+/// on the year of the song, and the year of the song is the answer of the
+/// round. The shell learns whether its placement was right from the answer it
+/// submitted (C-1).
+///
+/// EXAMPLE: the years `1970`, `1980` and `1990` of the base become the years
 /// of the shell.
 pub fn from_core_context(context: &phomu_core::facade::RoundContext) -> PhomuRoundContext {
     PhomuRoundContext {
         timeline_years: context.timeline_years.clone(),
-        timeline_slots: context
-            .timeline_slots
-            .iter()
-            .map(|slot| *slot as u32)
-            .collect(),
         genre: context.genre.clone(),
         pack: context.pack.clone(),
     }

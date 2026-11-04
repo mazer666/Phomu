@@ -42,6 +42,10 @@ export function InGameSettingsPanel({
           <motion.div
             role="dialog"
             aria-modal="true"
+            // WHY the marker: the development overlay of the framework brings
+            // a dialog of its own into the page. The tests have to be able to
+            // tell the dialogs of the product from the one of the tooling.
+            data-phomu-dialog="settings"
             aria-label={t('game.settings.title')}
             initial={{ opacity: 0, y: 24, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}

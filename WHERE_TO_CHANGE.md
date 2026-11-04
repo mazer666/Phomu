@@ -16,15 +16,15 @@ A mode is **not a file**, but a network of seven places. Whoever only creates th
 component ends up with a mode that the lobby does not offer and that the
 projector does not know.
 
-| # | File | What has to go in it |
-|---|---|---|
-| 1 | `src/config/game-config.ts` | The mode name in the type list `GameMode` (e.g. `'quiz-battle'`) and in `ALL_GAME_MODES` |
-| 2 | `src/components/game/modes/<Modus>Mode.tsx` | The mode component. It receives `song`, `onAnswer(isCorrect, pointsAwarded, answeredInSeconds?)` and optionally `onReveal` |
-| 3 | `src/components/game/QuestionPhase.tsx` | The call of the new component; additionally check whether the mode is in `MODES_WITH_REVEAL_BUTTON` (modes with their own reveal button, such as `lyrics` and `cover-confusion`, are **not** in there) |
-| 4 | `src/components/game/RevealPhase.tsx` | A separate reveal component, e.g. `<MeinModus>Reveal song={song} />` |
-| 5 | `src/components/lobby/ModeSelector.tsx` | The entry in the `MODES` list (emoji, title, tagline, text, colour gradient) |
-| 6 | `src/components/game/DrawingPhase.tsx` | The entry in `MODE_META` (icon, title, instruction) — otherwise the type check breaks |
-| 7 | `src/components/game/GameHeader.tsx` and `src/app/projector/page.tsx` | `MODE_ICONS` / `MODE_LABELS` respectively `MODE_LABELS` — icon and display name |
+| #   | File                                                                  | What has to go in it                                                                                                                                                                                   |
+| --- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | `src/config/game-config.ts`                                           | The mode name in the type list `GameMode` (e.g. `'quiz-battle'`) and in `ALL_GAME_MODES`                                                                                                               |
+| 2   | `src/components/game/modes/<Modus>Mode.tsx`                           | The mode component. It receives `song`, `onAnswer(isCorrect, pointsAwarded, answeredInSeconds?)` and optionally `onReveal`                                                                             |
+| 3   | `src/components/game/QuestionPhase.tsx`                               | The call of the new component; additionally check whether the mode is in `MODES_WITH_REVEAL_BUTTON` (modes with their own reveal button, such as `lyrics` and `cover-confusion`, are **not** in there) |
+| 4   | `src/components/game/RevealPhase.tsx`                                 | A separate reveal component, e.g. `<MeinModus>Reveal song={song} />`                                                                                                                                   |
+| 5   | `src/components/lobby/ModeSelector.tsx`                               | The entry in the `MODES` list (emoji, title, tagline, text, colour gradient)                                                                                                                           |
+| 6   | `src/components/game/DrawingPhase.tsx`                                | The entry in `MODE_META` (icon, title, instruction) — otherwise the type check breaks                                                                                                                  |
+| 7   | `src/components/game/GameHeader.tsx` and `src/app/projector/page.tsx` | `MODE_ICONS` / `MODE_LABELS` respectively `MODE_LABELS` — icon and display name                                                                                                                        |
 
 On the data side the song must carry the mode: the field `supportedModes` in
 `src/types/song.ts` and in every file under `src/data/songs/`. Without this
@@ -47,29 +47,29 @@ npm run build
 **First check whether the number already lives centrally.** The values are in
 `src/config/game-config.ts`:
 
-| Value | Constant | Default |
-|---|---|---|
-| Target score (win condition `points`) | `DEFAULT_WIN_SCORE` | 10 |
-| Points per hint level (Hint-Master) | `HINT_MASTER_POINTS` | `[5, 4, 3, 2, 1]` |
-| Point cap (Timeline) | `DEFAULT_TIMELINE_MAX_POINTS` | 5 |
-| Time decay on/off | `DEFAULT_TIME_DECAY_ENABLED` | `false` |
-| Grace period before the deduction | `DEFAULT_TIME_DECAY_GRACE_SECONDS` | 5 s |
-| Length of one deduction step | `DEFAULT_TIME_DECAY_STEP_SECONDS` | 5 s |
-| Points per deduction step | `DEFAULT_TIME_DECAY_STEP_POINTS` | 1 |
-| Minimum points for a correct answer | `DEFAULT_MIN_POINTS_PER_CORRECT` | 1 |
-| Time limit per question | `config.timeLimitSeconds` | `null` (no limit) |
+| Value                                 | Constant                           | Default           |
+| ------------------------------------- | ---------------------------------- | ----------------- |
+| Target score (win condition `points`) | `DEFAULT_WIN_SCORE`                | 10                |
+| Points per hint level (Hint-Master)   | `HINT_MASTER_POINTS`               | `[5, 4, 3, 2, 1]` |
+| Point cap (Timeline)                  | `DEFAULT_TIMELINE_MAX_POINTS`      | 5                 |
+| Time decay on/off                     | `DEFAULT_TIME_DECAY_ENABLED`       | `false`           |
+| Grace period before the deduction     | `DEFAULT_TIME_DECAY_GRACE_SECONDS` | 5 s               |
+| Length of one deduction step          | `DEFAULT_TIME_DECAY_STEP_SECONDS`  | 5 s               |
+| Points per deduction step             | `DEFAULT_TIME_DECAY_STEP_POINTS`   | 1                 |
+| Minimum points for a correct answer   | `DEFAULT_MIN_POINTS_PER_CORRECT`   | 1                 |
+| Time limit per question               | `config.timeLimitSeconds`          | `null` (no limit) |
 
 **Attention:** four modes do **not** have their points in the config, but
 hard-coded in the component:
 
-| Mode | File | Points |
-|---|---|---|
-| Lyrics Labyrinth | `src/components/game/modes/LyricsMode.tsx` | `LYRICS_POINTS = 4` |
-| Lyrics bonus round (without lyrics) | `src/components/game/modes/LyricsMode.tsx` | 2 |
-| Survivor | `src/components/game/modes/SurvivorMode.tsx` | 3 |
-| Vibe-Check | `src/components/game/modes/VibeCheckMode.tsx` | 2 (with cheat 1) |
-| Cover Confusion | `src/components/game/modes/CoverConfusionMode.tsx` | `POINTS_BY_HINTS = [5, 4, 3, 2]`, variant 3 |
-| Cheat deductions | `HintMasterMode.tsx` (−2), `TimelineMode.tsx` (−2 resp. −1), `SurvivorMode.tsx` (−1) | deducted immediately |
+| Mode                                | File                                                                                 | Points                                      |
+| ----------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------- |
+| Lyrics Labyrinth                    | `src/components/game/modes/LyricsMode.tsx`                                           | `LYRICS_POINTS = 4`                         |
+| Lyrics bonus round (without lyrics) | `src/components/game/modes/LyricsMode.tsx`                                           | 2                                           |
+| Survivor                            | `src/components/game/modes/SurvivorMode.tsx`                                         | 3                                           |
+| Vibe-Check                          | `src/components/game/modes/VibeCheckMode.tsx`                                        | 2 (with cheat 1)                            |
+| Cover Confusion                     | `src/components/game/modes/CoverConfusionMode.tsx`                                   | `POINTS_BY_HINTS = [5, 4, 3, 2]`, variant 3 |
+| Cheat deductions                    | `HintMasterMode.tsx` (−2), `TimelineMode.tsx` (−2 resp. −1), `SurvivorMode.tsx` (−1) | deducted immediately                        |
 
 If you want to change one of these numbers, change **the constant at the place
 where it stands**, and record it afterwards in `REQUIREMENTS.md`. If you want to
@@ -86,9 +86,14 @@ The **time decay calculation** itself is in `src/app/game/page.tsx` in
 
 ```ts
 const overtime = Math.max(0, answeredInSeconds - config.timeDecayGraceSeconds);
-const decaySteps = Math.floor(overtime / Math.max(1, config.timeDecayStepSeconds));
+const decaySteps = Math.floor(
+  overtime / Math.max(1, config.timeDecayStepSeconds)
+);
 const decayPoints = decaySteps * config.timeDecayStepPoints;
-pointsAwarded = Math.max(config.minPointsPerCorrect, basePointsAwarded - decayPoints);
+pointsAwarded = Math.max(
+  config.minPointsPerCorrect,
+  basePointsAwarded - decayPoints
+);
 ```
 
 **Commands:**
@@ -175,6 +180,36 @@ npm run build
 
 ---
 
+## I want to change the layout of the game
+
+The shell has **two** levels of styling, and which one applies is decided by
+the shape of the rule:
+
+1. **The utilities of Tailwind** carry the ordinary layout of a component:
+   the space, the colour of a text, the size of a button. They stand in the
+   markup of the component, next to the thing they style.
+2. **The rules of `src/styles/*.css`** carry what belongs to _the screen_ and
+   not to a single component: the grid of the game table, the columns of the
+   landscape, the frame of the music player. They are imported by
+   `src/app/globals.css` and they describe the shape of a page.
+
+The rule of thumb: a rule that belongs to one component belongs in the
+markup; a rule that belongs to the page belongs in `src/styles/`.
+
+| File                          | What it carries                                            |
+| ----------------------------- | ---------------------------------------------------------- |
+| `src/styles/game-table.css`   | the card table of the Timeline and the reveal              |
+| `src/styles/game-layout.css`  | the columns of the game page and its floating actions      |
+| `src/styles/interface.css`    | the shell around the pages: navigation, footers, the lobby |
+| `src/styles/music-player.css` | the player and its overlays                                |
+
+**WHY two levels:** the rules of the pages describe a grid that depends on
+the orientation of the device — a media query cannot live in the markup of a
+component that is rendered in a dozen places. The utilities stay the tool for
+everything else.
+
+---
+
 ## I want to add a theme
 
 Themes are sets of CSS variables that are activated via the attribute
@@ -230,6 +265,7 @@ placeholders belong in the **value** (`{{count}}`).
    ```
 
    Server components: `getTranslations` from `next/server`.
+
 4. Proper nouns (Spotify, YouTube, Jackbox, Phomu, mode names) remain identical
    in both languages.
 5. Create plural forms via `key_one` / `key_other` in parallel in both
@@ -272,11 +308,11 @@ decision of the owner**, recorded in
 Until that decision falls, the module stays where it is and the documentation
 states that it is not reachable.
 
-| Route | File | Purpose |
-|---|---|---|
-| `GET /admin/covers/search` | `src/admin-api/admin/covers/search/route.ts` | cover search via iTunes and Deezer |
-| `POST /admin/covers/save` | `src/admin-api/admin/covers/save/route.ts` | download the cover, store it in `public/covers/`, set `coverUrl` in the pack |
-| Guard and validators | `src/admin-api/_lib/security.ts` | token check, input and URL check |
+| Route                      | File                                         | Purpose                                                                      |
+| -------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
+| `GET /admin/covers/search` | `src/admin-api/admin/covers/search/route.ts` | cover search via iTunes and Deezer                                           |
+| `POST /admin/covers/save`  | `src/admin-api/admin/covers/save/route.ts`   | download the cover, store it in `public/covers/`, set `coverUrl` in the pack |
+| Guard and validators       | `src/admin-api/_lib/security.ts`             | token check, input and URL check                                             |
 
 **Rules for every change there:**
 
@@ -343,24 +379,24 @@ npm run test
 
 The card dimensions are in `src/config/game-config.ts`:
 
-| Constant | Value | Meaning |
-|---|---|---|
-| `CARD_WIDTH_MM` | 59 | card width |
-| `CARD_HEIGHT_MM` | 91 | card height |
-| `CARD_BLEED_MM` | 3 | bleed all around |
-| `MAX_CARDS_PER_SET` | 110 | cards per set |
+| Constant            | Value | Meaning          |
+| ------------------- | ----- | ---------------- |
+| `CARD_WIDTH_MM`     | 59    | card width       |
+| `CARD_HEIGHT_MM`    | 91    | card height      |
+| `CARD_BLEED_MM`     | 3     | bleed all around |
+| `MAX_CARDS_PER_SET` | 110   | cards per set    |
 
 These are the only four places — there is **no** drawing function that uses
 them. A print or export tool is **not implemented**.
 
 What the QR scanner understands is in `src/utils/qr-intent.ts`:
 
-| Content | Meaning | Processed by the game? |
-|---|---|---|
-| `@Name` | add the player to the lobby | yes |
-| `…?pack=<packId>` | select the pack in the lobby | yes |
-| `…?session=<code>` | join the session | parser yes, game no |
-| `…?id=<songId>` | open the song | explicitly **not** (`unsupported-song-link`) |
+| Content            | Meaning                      | Processed by the game?                       |
+| ------------------ | ---------------------------- | -------------------------------------------- |
+| `@Name`            | add the player to the lobby  | yes                                          |
+| `…?pack=<packId>`  | select the pack in the lobby | yes                                          |
+| `…?session=<code>` | join the session             | parser yes, game no                          |
+| `…?id=<songId>`    | open the song                | explicitly **not** (`unsupported-song-link`) |
 
 If you change the layout, change the four constants in
 `src/config/game-config.ts`, adapt the format in the printing guide
@@ -378,11 +414,11 @@ npm run test -- qr-intent
 
 ## I want to write a test
 
-| Layer | Location | Tool |
-|---|---|---|
-| Unit (utilities) | `src/utils/*.test.ts` | Vitest |
-| Unit (component) | `src/components/**/*.test.ts(x)` | Vitest |
-| E2E | `e2e/*.spec.ts` | Playwright |
+| Layer            | Location                         | Tool       |
+| ---------------- | -------------------------------- | ---------- |
+| Unit (utilities) | `src/utils/*.test.ts`            | Vitest     |
+| Unit (component) | `src/components/**/*.test.ts(x)` | Vitest     |
+| E2E              | `e2e/*.spec.ts`                  | Playwright |
 
 Existing examples: `src/utils/qr-intent.test.ts` (4 tests),
 `src/utils/validate-song-data.test.ts` (8 tests),
@@ -427,7 +463,7 @@ name: Quality
 
 on:
   push:
-    branches: ["main", "feature/**"]
+    branches: ['main', 'feature/**']
   pull_request:
   workflow_dispatch:
 
@@ -438,7 +474,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
           cache: npm
       - run: npm ci
       - run: npm run typecheck
@@ -493,13 +529,13 @@ desktop fallback and rotation with `e2e/primary-action.spec.ts`.
 
 ## I want to change the documentation
 
-| I change | Then I update |
-|---|---|
-| a term | [`GLOSSARY.md`](GLOSSARY.md) |
+| I change                  | Then I update                                                                                |
+| ------------------------- | -------------------------------------------------------------------------------------------- |
+| a term                    | [`GLOSSARY.md`](GLOSSARY.md)                                                                 |
 | a number in `src/config/` | the place in the documentation that mentions it — the constant itself remains the only truth |
-| a game mode | `REQUIREMENTS.md`, `docs/user-guide/USER-GUIDE.en.md`, `docs/BEST_IN_CLASS.md` |
-| the interface | `docs/user-guide/USER-GUIDE.en.md` |
-| the catalogue | the catalogue report, not the numbers in the README |
+| a game mode               | `REQUIREMENTS.md`, `docs/user-guide/USER-GUIDE.en.md`, `docs/BEST_IN_CLASS.md`               |
+| the interface             | `docs/user-guide/USER-GUIDE.en.md`                                                           |
+| the catalogue             | the catalogue report, not the numbers in the README                                          |
 
 Existing documentation in the repo root (`README.md`, `CONTRIBUTING.md`,
 `SECURITY.md`, `LLM.md`, `PRINTING_GUIDE.md`) stays where it is;

@@ -197,14 +197,13 @@ export function buildSituation(vector: Vector): SongFixtures {
           },
           context: {
             timelineYears: [],
-            timelineSlots: [],
             genre: song.genre,
             pack: song.packs[0] ?? null,
           },
         },
         // The source of the song — a scan or a draw. The question carries it
         // into the store, so it has to be handed over with it.
-        given.currentSongSource ?? 'random',
+        given.currentSongSource ?? 'random'
       );
     }
   }

@@ -31,7 +31,10 @@ import {
  * points of the round from the timeline it knows. The mode and the hook
  * therefore need the same rule.
  */
-export { TIMELINE_INITIAL_YEAR_COUNT, randomInitialYears } from '@/core/timeline';
+export {
+  TIMELINE_INITIAL_YEAR_COUNT,
+  randomInitialYears,
+} from '@/core/timeline';
 
 /** The penalty of every cheat the Timeline mode offers. */
 export const TIMELINE_CHEAT_PENALTIES = {
@@ -46,19 +49,6 @@ export const TIMELINE_CHEAT_PENALTIES = {
  */
 export function timelineSlotCount(yearCount: number): number {
   return yearCount + 1;
-}
-
-/**
- * Whether the placement of the player was correct.
- *
- * @param selectedSlot - The slot the player placed the song in.
- * @param validSlots - The slots the base accepts.
- */
-export function isTimelineSlotCorrect(
-  selectedSlot: number | null,
-  validSlots: ReadonlySet<number>
-): boolean {
-  return selectedSlot !== null && validSlots.has(selectedSlot);
 }
 
 /**
@@ -126,9 +116,7 @@ export interface TimelineSlotParams {
  * there is only the placement of the player. After the reveal the placement
  * is green or red, and the canonical slot of a wrong answer gets the hint.
  */
-export function describeTimelineSlot(
-  params: TimelineSlotParams
-): TimelineSlot {
+export function describeTimelineSlot(params: TimelineSlotParams): TimelineSlot {
   const {
     index,
     selectedSlot,

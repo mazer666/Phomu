@@ -49,7 +49,10 @@ export function Scoreboard({
             key="overlay"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            // WHY the pointer events: while the panel slides out, it still
+            // lies over the screen and would swallow the clicks of the
+            // player. The surface has to be usable again at once.
+            exit={{ opacity: 0, pointerEvents: 'none' }}
             onClick={onClose}
             className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
             aria-hidden
@@ -59,11 +62,18 @@ export function Scoreboard({
           <motion.aside
             role="dialog"
             aria-modal="true"
+            // WHY the marker: the development overlay of the framework brings
+            // a dialog of its own into the page. The tests have to be able to
+            // tell the dialogs of the product from the one of the tooling.
+            data-phomu-dialog="scoreboard"
             aria-label={t('game.scoreboard.title')}
             key="panel"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
-            exit={{ x: '100%' }}
+            // WHY the pointer events: while the panel slides out, it still
+            // lies over the screen and would swallow the clicks of the
+            // player. The surface has to be usable again at once.
+            exit={{ x: '100%', pointerEvents: 'none' }}
             transition={{ type: 'spring', stiffness: 350, damping: 35 }}
             className="fixed right-0 top-0 h-full w-72 z-50 flex flex-col"
             style={{

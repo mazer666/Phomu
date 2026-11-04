@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import type { SongIdentity } from '@/core/types';
 import { CardBack } from '@/components/art/CardBack';
 import { Icon } from '@/components/art/Icon';
-import { describeTimelineSlot, isTimelineSlotCorrect } from './timeline-logic';
+import { describeTimelineSlot } from './timeline-logic';
 
 export type TimelineAxis = 'vertical' | 'horizontal';
 interface TimelineSlotsProps {
@@ -13,7 +13,16 @@ interface TimelineSlotsProps {
   selectedSlot: number | null;
   jokerSlot: number | null;
   correctSlot: number | null;
-  validSlotSet: ReadonlySet<number>;
+  /**
+   * Whether the placement of the player was right.
+   *
+   * WHY the base decides: the slots in which the song may be placed depend
+   * on the year of the song, and the year of the song is the answer of the
+   * round. The shell therefore never learns which slots were right — it
+   * learns whether *its* placement was right, from the answer the base gave
+   * (C-1).
+   */
+  isAnswerCorrect: boolean;
   isRevealed: boolean;
   hasAnswer: boolean;
   identity: SongIdentity | null;
@@ -27,7 +36,7 @@ export function TimelineSlots({
   selectedSlot,
   jokerSlot,
   correctSlot,
-  validSlotSet,
+  isAnswerCorrect,
   isRevealed,
   hasAnswer,
   identity,
@@ -39,7 +48,6 @@ export function TimelineSlots({
   const [edges, setEdges] = useState({ before: false, after: false });
   const drag = useRef<{ x: number; left: number } | null>(null);
   const moved = useRef(false);
-  const answerCorrect = isTimelineSlotCorrect(selectedSlot, validSlotSet);
 
   useEffect(() => {
     const element = rail.current;
@@ -158,7 +166,7 @@ export function TimelineSlots({
                 selectedSlot,
                 jokerSlot,
                 correctSlot,
-                isAnswerCorrect: answerCorrect,
+                isAnswerCorrect,
                 isRevealed,
                 hasAnswer,
                 yearAfter: timelineYears[index],

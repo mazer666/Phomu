@@ -83,12 +83,10 @@ export function TimelineMode({
   // before the card is drawn — the hook of the core session does that
   // (`src/hooks/useCoreSession.ts`).
 
-  // The slots come from the core: they depend on the year of the song, and
-  // the year is the answer of the mode.
-  const validSlotSet = useMemo(
-    () => new Set(question.context.timelineSlots),
-    [question.context.timelineSlots]
-  );
+  // WHY the shell does not know the valid slots: they depend on the year of
+  // the song, and the year of the song is the answer of the mode. The core
+  // judges the placement and answers with the verdict — the shell learns
+  // whether its placement was right, not which slots were right (C-1).
 
   // The base owns the award; the shell shows the budget of the round.
   const points = timelinePointBudget(question.pointsPossible);
@@ -317,7 +315,7 @@ export function TimelineMode({
           selectedSlot={selectedSlot}
           jokerSlot={jokerSlot}
           correctSlot={correctSlot}
-          validSlotSet={validSlotSet}
+          isAnswerCorrect={isCorrect}
           isRevealed={isRevealed}
           hasAnswer={hasAnswer}
           identity={identity}
@@ -360,14 +358,21 @@ export function TimelineMode({
           </p>
         )}
         <div className="timeline-action-row">
-          <GameAction phase="question" compactLabel={isRevealed ? t('game.page.continueButton') : t('game.page.revealButton')}>
-          <button
-            disabled={isSubmitting || (!isRevealed && selectedSlot === null)}
-            onClick={canProceed ? onReveal : handleReveal}
-            className="phomu-primary-action"
+          <GameAction
+            phase="question"
+            compactLabel={
+              isRevealed
+                ? t('game.page.continueButton')
+                : t('game.page.revealButton')
+            }
           >
-            {isRevealed ? t('modes.continue') : t('modes.timeline.reveal')}
-          </button>
+            <button
+              disabled={isSubmitting || (!isRevealed && selectedSlot === null)}
+              onClick={canProceed ? onReveal : handleReveal}
+              className="phomu-primary-action"
+            >
+              {isRevealed ? t('modes.continue') : t('modes.timeline.reveal')}
+            </button>
           </GameAction>
           {onReroll && (
             <button

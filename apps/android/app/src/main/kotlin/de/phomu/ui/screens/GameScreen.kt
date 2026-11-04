@@ -17,6 +17,7 @@ import de.phomu.game.GamePhase
 import de.phomu.game.GameUiState
 import de.phomu.game.ModeAnswerInput
 import de.phomu.ui.components.PhomuCardBack
+import de.phomu.ui.PhomuTestTags
 import de.phomu.ui.components.PhomuPrimaryButton
 import de.phomu.ui.text.PhomuStrings
 
@@ -93,6 +94,7 @@ fun GameScreen(state: GameUiState, strings: PhomuStrings, onDraw: () -> Unit,
                 state.phase == GamePhase.Drawing || state.phase == GamePhase.Idle -> strings.text("game.drawing.drawLabel1")
                 else -> strings.text("common.next")
             }, enabled = !state.isBusy && (!question || state.answersLocked || (needsPlacement && selectedSlot != null)),
+                testTag = PhomuTestTags.PRIMARY_ACTION,
                 onClick = {
                     when {
                         needsPlacement -> selectedSlot?.let { onAnswer(ModeAnswerInput.Timeline(it)) }

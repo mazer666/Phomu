@@ -38,9 +38,15 @@ permissions:
   contents: read
 
 # Per branch only the most recent run is computed.
+#
+# WHY the running one is not cancelled: the CI is the binding technical
+# acceptance, and the deploys wait for it. A cancellation would publish a
+# state that was never checked — and with a suite of twenty minutes, every
+# push during a series would abort the run before it reached the jobs that
+# matter. The queue keeps the runs of the branch; the last one is the truth.
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   typecheck:
@@ -109,7 +115,12 @@ jobs:
     # yet — the installation of the browser and its system packages fails
     # there. The job runs on the last image that Playwright supports.
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    # WHY the forty-five minutes: the suite of the repository has seventy-two
+    # tests and needs about twenty-two minutes with one worker. A limit of
+    # twenty minutes would fail the job on the clock instead of on the
+    # content — a gate that measures the wrong thing teaches people to
+    # ignore it. The limit leaves room for a slower runner.
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -346,31 +357,32 @@ jobs:
           retention-days: 7
 
   format:
-    name: Prettier format check
+    name: Format check (the files of the commit)
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # NOT SWITCHED ON YET — this job does not block the pipeline.
+    # WHY the files of the commit and not the whole repository: the
+    # repository was never formatted with Prettier, and a blanket
+    # `prettier --write .` changes twenty thousand lines at once — that
+    # buries the real changes and turns every parallel change into a merge
+    # conflict. The gate therefore checks what was written *now*: the files
+    # of the commit. The old files stay as they are until somebody touches
+    # them — and then they have to follow the style.
     #
-    # `npm run format:check` is red today: the repository was never
-    # Prettier-formatted, and a blanket `prettier --write .` produced 30-60 %
-    # longer files in an earlier round. The repository is therefore formatted
-    # module by module — with `typecheck && lint && test` green after every
-    # module — and only when the last module is done is this flag removed
-    # and the job allowed to turn the pipeline red.
-    #
-    # Until then the job runs and reports the real state of the formatting
-    # without blocking anything. Switching it on before that would only
-    # produce a permanently red job that somebody has to disable again.
+    # WHY the job blocks the pipeline: from now on the job is red for a real
+    # reason, and a real reason is worth stopping for.
     #
     # Backlog: QA-09 remediation backlog, item 1.8 (the ordering rule for the
     # formatter) and QA-05 §QA-TST-002 ("On the formatter — do this in the
     # right order"), which describes the module-by-module procedure. The
     # procedure itself is a separate, named measure and is not part of this
     # change.
-    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The history is needed: the gate compares the commit with the one
+          # before it.
+          fetch-depth: 2
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -378,8 +390,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Prettier format check
-        run: npm run format:check
+      - name: Format check
+        run: node scripts/check-format.mjs
 
   dependency-audit:
     name: Dependency audit
@@ -404,14 +416,6 @@ jobs:
     name: Android shell (build and unit tests)
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    # NOT SWITCHED ON YET — this job does not block the pipeline.
-    #
-    # WHY: the shell of the Android track is built with the Android SDK, and
-    # the SDK is a heavy dependency of the runner. The job reports the real
-    # state of the shell — a broken shell is visible here — but it does not
-    # turn the pipeline red, because the release pipeline builds the same
-    # artefact and *that* build is the one that matters.
-    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -431,10 +435,18 @@ jobs:
           targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android
       - name: Setup the Android SDK
         uses: android-actions/setup-android@v3
-      - name: Install the packages of the SDK
-        run: |
-          sdkmanager 'platform-tools' 'platforms;android-35' 'build-tools;35.0.0' \
-                      'cmake;3.22.1' 'ndk;27.3.13750724'
+        with:
+          # WHY the packages are named here: the action installs `tools` and
+          # `platform-tools` when the input is empty, and the package `tools`
+          # no longer exists in the repository — the call fails with
+          # "Failed to find package 'tools'" before the build even starts.
+          # Naming the packages replaces that default.
+          packages: >-
+            platform-tools
+            platforms;android-35
+            build-tools;35.0.0
+            cmake;3.22.1
+            ndk;27.3.13750724
       - name: Write the local configuration
         run: |
           cat > apps/android/local.properties <<EOF

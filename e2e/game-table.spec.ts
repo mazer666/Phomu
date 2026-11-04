@@ -61,9 +61,7 @@ test('the card table keeps its placement and action visible across themes and ro
   }
   await page.setViewportSize({ width: 390, height: 844 });
   await page.locator('.phomu-primary-action').click();
-  await expect(
-    page.locator('.phomu-primary-action')
-  ).toHaveText(/continue/i);
+  await expect(page.locator('.phomu-primary-action')).toHaveText(/continue/i);
   await page.locator('.phomu-primary-action').click();
   await expect(table).toBeHidden();
   await expect(page.locator('.game-phase-area')).not.toContainText(
@@ -129,7 +127,9 @@ async function answerMode(page: Page, mode: string) {
   if (['survivor', 'vibe-check', 'hint-master'].includes(mode)) {
     await page.getByRole('button', { name: /reveal/i }).click();
   }
-  await expect(page.locator('[data-testid="next-round"]:visible')).toBeVisible();
+  await expect(
+    page.locator('[data-testid="next-round"]:visible')
+  ).toBeVisible();
   await page.locator('[data-testid="next-round"]:visible').click();
   await expect(page.locator('.drawing-phase')).toBeVisible();
 }
@@ -323,11 +323,18 @@ test('scoreboard and game-settings dialogs remain usable on short and tall scree
         continue;
       }
       await action.click();
-      const dialog = page.getByRole('dialog');
+      // WHY the marker: the development overlay of the framework brings a
+      // dialog of its own into the page. Without the marker the locator
+      // finds two elements and the test fails on the strict mode.
+      const dialog = page.locator('[data-phomu-dialog]');
       await expect(dialog).toBeVisible();
       await dialog.getByRole('button', { name: 'Close', exact: true }).hover();
-      expect(await unreachableControls(page, '[role="dialog"]')).toEqual([]);
+      expect(await unreachableControls(page, '[data-phomu-dialog]')).toEqual(
+        []
+      );
       await dialog.getByRole('button', { name: 'Close', exact: true }).click();
+      // WHY the wait: the dialog closes through an animation, and the
+      // element stays in the page while it runs.
       await expect(dialog).toBeHidden();
     }
   }
@@ -345,9 +352,9 @@ test('the QR scanner can always be cancelled without granting camera access', as
   ]) {
     await page.setViewportSize({ width, height });
     await page.getByRole('button', { name: 'Scan Phomu card' }).click();
-    const dialog = page.getByRole('dialog');
+    const dialog = page.locator('[data-phomu-dialog]');
     await expect(dialog).toBeVisible();
-    expect(await unreachableControls(page, '[role="dialog"]')).toEqual([]);
+    expect(await unreachableControls(page, '[data-phomu-dialog]')).toEqual([]);
     await dialog.getByRole('button', { name: 'Close', exact: true }).click();
     await expect(dialog).toBeHidden();
   }

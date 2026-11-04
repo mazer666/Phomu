@@ -53,7 +53,7 @@ run_check "ESLint Linting" "npm run lint" "false" || exit 1
 run_check "Unit Tests (Vitest)" "npm run test" "false" || exit 1
 
 # 4. Format Check (Non-blocking)
-run_check "Prettier Code Formatting Check" "npm run format:check" "true"
+run_check "Prettier Code Formatting Check" "node scripts/check-format.mjs" "true"
 
 # 5. Song Validation
 run_check "Song Schema & Integrity Validation" "npm run validate-songs" "false" || exit 1

@@ -65,13 +65,13 @@ fn media_of(session: &Session, song: Option<&phomu_catalog::Song>) -> Value {
 /// slots therefore depend on the year of the song — they are computed by the
 /// base and never by the shell.
 fn context_of(context: &phomu_core::facade::RoundContext) -> Value {
-    // WHY the base computes it: the slots of the timeline depend on the year
-    // of the song, and the year of the song is the answer of the round. The
-    // base therefore builds the context once — and every shell draws the same
-    // slots.
+    // WHY there are no slots here: the slots in which the song may be placed
+    // depend on the year of the song, and the year of the song is the answer
+    // of the round. Handing them to the shell in the question phase would
+    // hand out the solution (C-1). The shell learns whether its placement was
+    // right from the answer it submitted.
     json!({
         "timelineYears": context.timeline_years,
-        "timelineSlots": context.timeline_slots,
         "genre": context.genre,
         "pack": context.pack,
         "coverVariation": Value::Null,

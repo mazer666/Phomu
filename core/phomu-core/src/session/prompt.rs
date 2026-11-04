@@ -171,16 +171,14 @@ impl Session {
         } else {
             Prompt::Hidden { hints, options }
         };
-        let timeline_slots = if mode == GameMode::Timeline {
-            crate::facade::valid_slots(song.year, &self.state.timeline_years)
-                .into_iter()
-                .collect()
-        } else {
-            Vec::new()
-        };
+        // WHY the context carries no slots: the slots in which the song may
+        // be placed depend on the year of the song — and the year of the
+        // song is the answer of the round. Handing them to the shell in the
+        // question phase would hand out the solution (C-1). The shell learns
+        // whether its placement was right from the answer it submitted; the
+        // core judges it.
         let context = crate::spoiler::view::RoundContext {
             timeline_years: self.state.timeline_years.clone(),
-            timeline_slots,
             genre: song.genre.clone(),
             pack: song.packs.first().cloned(),
         };

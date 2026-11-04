@@ -363,7 +363,10 @@ function observe(
  * vectors without the core. The question carries the identifier of the song
  * and the mode of the round — the rest is not read by the vectors.
  */
-function questionOf(song: PhomuSong, mode: GameState['currentMode']): RoundQuestion {
+function questionOf(
+  song: PhomuSong,
+  mode: GameState['currentMode']
+): RoundQuestion {
   return {
     phase: 'question',
     roundNumber: 0,
@@ -387,7 +390,6 @@ function questionOf(song: PhomuSong, mode: GameState['currentMode']): RoundQuest
     },
     context: {
       timelineYears: [],
-      timelineSlots: [],
       genre: song.genre,
       pack: song.packs[0] ?? null,
     },

@@ -198,6 +198,19 @@ test('settings remain fully reachable on small phones during an active game', as
   await startGame(page, 'de');
   await expect(page.locator('.question-phase')).toBeVisible();
   const settingsPage = await page.context().newPage();
+  // WHY the state is written: the settings pages offer a way back to the
+  // game only while a game is running. The state of the game lives in the
+  // store of the tab, and the store of a *new* tab starts empty — the
+  // second tab would therefore show the settings of a game that is not
+  // running. The state is written into the storage of the second tab, so
+  // that the pages show what a player sees during a game.
+  await settingsPage.addInitScript(() => {
+    const raw = localStorage.getItem('phomu-game-state');
+    if (!raw) return;
+    const parsed = JSON.parse(raw);
+    parsed.state.currentRound = 1;
+    localStorage.setItem('phomu-game-state', JSON.stringify(parsed));
+  });
   const findings: string[] = [];
   for (const viewport of phones.slice(0, 2)) {
     await settingsPage.setViewportSize(viewport);

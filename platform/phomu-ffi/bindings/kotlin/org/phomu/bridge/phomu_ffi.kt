@@ -2268,10 +2268,6 @@ data class PhomuRoundContext (
      */
     var `timelineYears`: List<kotlin.Int>, 
     /**
-     * The slots of the timeline, in which the song may be placed.
-     */
-    var `timelineSlots`: List<kotlin.UInt>, 
-    /**
      * The genre of the song.
      */
     var `genre`: kotlin.String, 
@@ -2291,7 +2287,6 @@ public object FfiConverterTypePhomuRoundContext: FfiConverterRustBuffer<PhomuRou
     override fun read(buf: ByteBuffer): PhomuRoundContext {
         return PhomuRoundContext(
             FfiConverterSequenceInt.read(buf),
-            FfiConverterSequenceUInt.read(buf),
             FfiConverterString.read(buf),
             FfiConverterOptionalString.read(buf),
         )
@@ -2299,14 +2294,12 @@ public object FfiConverterTypePhomuRoundContext: FfiConverterRustBuffer<PhomuRou
 
     override fun allocationSize(value: PhomuRoundContext) = (
             FfiConverterSequenceInt.allocationSize(value.`timelineYears`) +
-            FfiConverterSequenceUInt.allocationSize(value.`timelineSlots`) +
             FfiConverterString.allocationSize(value.`genre`) +
             FfiConverterOptionalString.allocationSize(value.`pack`)
     )
 
     override fun write(value: PhomuRoundContext, buf: ByteBuffer) {
             FfiConverterSequenceInt.write(value.`timelineYears`, buf)
-            FfiConverterSequenceUInt.write(value.`timelineSlots`, buf)
             FfiConverterString.write(value.`genre`, buf)
             FfiConverterOptionalString.write(value.`pack`, buf)
     }
@@ -4222,34 +4215,6 @@ public object FfiConverterOptionalTypePhomuCatalogHandle: FfiConverterRustBuffer
         } else {
             buf.put(1)
             FfiConverterTypePhomuCatalogHandle.write(value, buf)
-        }
-    }
-}
-
-
-
-
-/**
- * @suppress
- */
-public object FfiConverterSequenceUInt: FfiConverterRustBuffer<List<kotlin.UInt>> {
-    override fun read(buf: ByteBuffer): List<kotlin.UInt> {
-        val len = buf.getInt()
-        return List<kotlin.UInt>(len) {
-            FfiConverterUInt.read(buf)
-        }
-    }
-
-    override fun allocationSize(value: List<kotlin.UInt>): ULong {
-        val sizeForLength = 4UL
-        val sizeForItems = value.map { FfiConverterUInt.allocationSize(it) }.sum()
-        return sizeForLength + sizeForItems
-    }
-
-    override fun write(value: List<kotlin.UInt>, buf: ByteBuffer) {
-        buf.putInt(value.size)
-        value.iterator().forEach {
-            FfiConverterUInt.write(it, buf)
         }
     }
 }

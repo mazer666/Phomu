@@ -12,7 +12,6 @@ import {
   TIMELINE_CHEAT_PENALTIES,
   TIMELINE_INITIAL_YEAR_COUNT,
   describeTimelineSlot,
-  isTimelineSlotCorrect,
   nextTimelineSlot,
   randomInitialYears,
   resolveTimelineOutcome,
@@ -57,16 +56,6 @@ describe('the slots of the timeline', () => {
     expect(timelineSlotCount(0)).toBe(1);
     expect(timelineSlotCount(3)).toBe(4);
     expect(timelineSlotCount(10)).toBe(11);
-  });
-
-  it('counts a placement in an accepted slot as correct', () => {
-    const valid = new Set([1, 2]);
-    expect(isTimelineSlotCorrect(1, valid)).toBe(true);
-    expect(isTimelineSlotCorrect(3, valid)).toBe(false);
-  });
-
-  it('counts a placement without a slot as wrong', () => {
-    expect(isTimelineSlotCorrect(null, new Set([1]))).toBe(false);
   });
 });
 
@@ -272,9 +261,7 @@ describe('the points of the timeline', () => {
   });
 
   it('takes the paid cheats off the budget', () => {
-    expect(
-      timelinePointBudget(5, [CHEAT_PENALTY_TIMELINE_DECADE])
-    ).toBe(3);
+    expect(timelinePointBudget(5, [CHEAT_PENALTY_TIMELINE_DECADE])).toBe(3);
     expect(
       timelinePointBudget(5, [
         CHEAT_PENALTY_TIMELINE_DECADE,

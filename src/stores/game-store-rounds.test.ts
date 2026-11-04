@@ -56,7 +56,6 @@ function questionOf(songId: string): RoundQuestion {
     },
     context: {
       timelineYears: [],
-      timelineSlots: [],
       genre: 'Rock',
       pack: null,
     },

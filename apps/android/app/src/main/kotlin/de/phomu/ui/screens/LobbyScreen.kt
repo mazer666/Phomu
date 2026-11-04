@@ -34,6 +34,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import de.phomu.lobby.LobbyUiState
 import de.phomu.ui.components.MINIMUM_TOUCH_TARGET
+import de.phomu.ui.PhomuTestTags
 import de.phomu.ui.components.PhomuPrimaryButton
 import de.phomu.ui.text.PhomuStrings
 
@@ -94,6 +95,7 @@ fun LobbyScreen(
         bottomBar = {
             Column(modifier = Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 PhomuPrimaryButton(text = strings.text("lobby.startNow"), onClick = onStart,
+                    testTag = PhomuTestTags.PRIMARY_ACTION,
                     enabled = state.canStart, modifier = Modifier.fillMaxWidth())
                 if (!state.canStart) Text(strings.text("lobby.pleaseSelect"), style = MaterialTheme.typography.bodyMedium)
             }

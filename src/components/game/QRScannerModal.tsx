@@ -70,6 +70,10 @@ export function QRScannerModal({
         <motion.div
           role="dialog"
           aria-modal="true"
+          // WHY the marker: the development overlay of the framework brings
+          // a dialog of its own into the page. The tests have to be able to
+          // tell the dialogs of the product from the one of the tooling.
+          data-phomu-dialog="qr-scanner"
           aria-label={t('game.qr.title')}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

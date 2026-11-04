@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
@@ -72,6 +73,7 @@ fun PhomuIconButton(
  * @param onClick what the button does
  * @param modifier the modifier of the button
  * @param enabled whether the button can be pressed
+ * @param testTag the mark that the tests use to find the button
  */
 @Composable
 fun PhomuPrimaryButton(
@@ -79,11 +81,14 @@ fun PhomuPrimaryButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
+    testTag: String? = null,
 ) {
     Button(
         onClick = onClick,
         enabled = enabled,
-        modifier = modifier.defaultMinSize(minHeight = MINIMUM_TOUCH_TARGET),
+        modifier = modifier
+            .defaultMinSize(minHeight = MINIMUM_TOUCH_TARGET)
+            .then(if (testTag != null) Modifier.testTag(testTag) else Modifier),
     ) {
         Text(text)
     }

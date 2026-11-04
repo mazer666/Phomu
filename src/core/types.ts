@@ -61,15 +61,15 @@ export interface RoundMedia {
 /**
  * The context of the mode, as the shell needs it to draw the question.
  *
- * WHY the slots of the timeline travel with the question: the Timeline mode
- * places the song between the years that are already on the timeline. The
- * slots depend on the year of the song — the base computes them.
+ * WHY there are no slots of the timeline here: the slots in which the song
+ * may be placed depend on the year of the song — and the year of the song
+ * is the answer of the round. The shell learns whether *its* placement was
+ * right from the answer the base gives, not which slots were right (C-1,
+ * `docs/design/PLATFORM-ARCHITECTURE.md` § 10.2).
  */
 export interface RoundContext {
   /** The years that are already on the timeline. */
   timelineYears: number[];
-  /** The slots in which the song of the round may be placed. */
-  timelineSlots: number[];
   /** The genre of the song. */
   genre: string;
   /** The pack the song belongs to. */
@@ -206,7 +206,11 @@ export interface RoundReveal {
 /**
  * The view of the running round, whatever phase it is in.
  */
-export type RoundView = RoundDrawing | RoundQuestion | RoundReveal | RoundScoring;
+export type RoundView =
+  | RoundDrawing
+  | RoundQuestion
+  | RoundReveal
+  | RoundScoring;
 
 /**
  * The detail of the feedback, as the mode needs it.
@@ -283,7 +287,11 @@ export interface AnswerResult {
  */
 export type AnswerChoice =
   | { kind: 'timeline'; slot: number }
-  | { kind: 'hint-master'; level: number; knew: 'both' | 'artist' | 'title' | 'none' }
+  | {
+      kind: 'hint-master';
+      level: number;
+      knew: 'both' | 'artist' | 'title' | 'none';
+    }
   | { kind: 'lyrics'; line: string }
   | { kind: 'lyrics-bonus'; claimed: boolean }
   | { kind: 'vibe-check'; mood: string; cheatUsed: boolean }

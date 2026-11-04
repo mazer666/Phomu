@@ -131,6 +131,19 @@ export function resolveGameLayout(orientation: ScreenOrientation): GameLayout {
 }
 
 /**
+ * The width a viewport needs for the two columns of the lobby.
+ *
+ * WHY the number: the preview of the session is twenty rem wide, and the
+ * steps of the wizard need room for their input field and their buttons.
+ * A viewport that is narrower than this cannot hold both — the steps would
+ * be pushed out of the screen, and a control that is out of the screen
+ * cannot be reached. A phone in the landscape (a device that is wide and
+ * low) is such a viewport: it is wide enough to be a landscape, and too
+ * narrow for two columns.
+ */
+export const LOBBY_TWO_COLUMN_MIN_WIDTH = 768;
+
+/**
  * The layout of the lobby page.
  *
  * WHY a preview: the steps of the wizard ask one question after the other,
@@ -138,17 +151,31 @@ export function resolveGameLayout(orientation: ScreenOrientation): GameLayout {
  * shows what the choices add up to — the modes, the packs, the number of
  * players and the condition that ends the game.
  *
+ * WHY the width decides and not only the orientation: a phone in the
+ * landscape is wide and low. Two columns do not fit next to each other
+ * there — the steps would leave the screen. The one-column layout fits
+ * everywhere, so the narrow landscape gets it.
+ *
  * @param orientation The orientation of the viewport
+ * @param width The width of the viewport in CSS pixels; unknown when the
+ *   browser does not tell
  * @returns The layout of the lobby page
  */
 export function resolveLobbyLayout(
-  orientation: ScreenOrientation
+  orientation: ScreenOrientation,
+  width?: number
 ): LobbyLayout {
   const isLandscape = orientation === 'landscape';
+  // WHY the unknown width counts as narrow: the one-column layout fits
+  // everywhere, the two-column layout does not. A viewport whose width is
+  // unknown therefore gets the layout that is safe.
+  const wideEnough =
+    typeof width === 'number' && width >= LOBBY_TWO_COLUMN_MIN_WIDTH;
+  const twoColumns = isLandscape && wideEnough;
 
   return {
     variant: orientation,
-    columns: isLandscape ? 2 : 1,
-    showPreview: isLandscape,
+    columns: twoColumns ? 2 : 1,
+    showPreview: twoColumns,
   };
 }

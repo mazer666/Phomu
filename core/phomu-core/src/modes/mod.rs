@@ -65,7 +65,8 @@ impl GameMode {
     /// Every mode selection, in the order of the reference implementation
     /// (`src/config/game-config.ts:300-307`).
     ///
-    /// EXAMPLE: `GameMode::ALL` has six entries.
+    /// EXAMPLE: `GameMode::ALL` has seven entries — the six round modes and
+    /// the Mix-Tape that rotates three of them.
     pub const ALL: &'static [GameMode] = &[
         GameMode::Timeline,
         GameMode::HintMaster,

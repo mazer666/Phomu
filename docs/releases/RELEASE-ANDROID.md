@@ -3,20 +3,20 @@
 The runbook of the Android track: what a beta is, how it is built, how it is
 signed and how it is published. The quality claim of a stage — Alpha, Beta,
 Stable — is defined in
-[`RELEASE-PLAN.md`](RELEASE-PLAN.md); this document is the *how* of the Beta
+[`RELEASE-PLAN.md`](RELEASE-PLAN.md); this document is the _how_ of the Beta
 stage of the Android track.
 
 ---
 
 ## 1. What a beta of the Android track is
 
-| | |
-|---|---|
-| **Artefact** | `phomu-beta.apk` — the shell of the Android track, signed with the key of the track |
-| **Channel** | Google Play **internal testing**, then **closed testing** (`RELEASE-PLAN.md` § 2.2.2) |
-| **Version** | `android-v<version>`, the version of the shell, e.g. `android-v0.2.0-beta.1` |
-| **Record** | [`RELEASE-RECORD-ANDROID.md`](RELEASE-RECORD-ANDROID.md) — the known defects, the testers, the gates |
-| **GitHub** | a **prerelease** of the repository — the artefact and the notes are attached to it |
+|              |                                                                                                      |
+| ------------ | ---------------------------------------------------------------------------------------------------- |
+| **Artefact** | `phomu-beta.apk` — the shell of the Android track, signed with the key of the track                  |
+| **Channel**  | Google Play **internal testing**, then **closed testing** (`RELEASE-PLAN.md` § 2.2.2)                |
+| **Version**  | `android-v<version>`, the version of the shell, e.g. `android-v0.2.0-beta.1`                         |
+| **Record**   | [`RELEASE-RECORD-ANDROID.md`](RELEASE-RECORD-ANDROID.md) — the known defects, the testers, the gates |
+| **GitHub**   | a **prerelease** of the repository — the artefact and the notes are attached to it                   |
 
 The prerelease flag is not a label: a beta is the quality claim of
 `RELEASE-PLAN.md` § 2.2, and the record has to show that the gates of the
@@ -39,11 +39,11 @@ The Gradle build performs the Rust build itself (the task `CargoLibraryTask`),
 so the artefact carries the library of the commit that is built — a stale
 library cannot travel into the APK.
 
-| ABI | Rust target |
-|---|---|
-| `arm64-v8a` | `aarch64-linux-android` |
+| ABI           | Rust target               |
+| ------------- | ------------------------- |
+| `arm64-v8a`   | `aarch64-linux-android`   |
 | `armeabi-v7a` | `armv7-linux-androideabi` |
-| `x86_64` | `x86_64-linux-android` |
+| `x86_64`      | `x86_64-linux-android`    |
 
 ---
 
@@ -81,12 +81,12 @@ signed with the same key, otherwise the tester cannot install it over the
 old one. The key therefore lives outside the repository, in the secrets of
 the repository:
 
-| Secret | Meaning |
-|---|---|
-| `PHOMU_RELEASE_KEYSTORE` | the key store, base64 encoded |
+| Secret                            | Meaning                       |
+| --------------------------------- | ----------------------------- |
+| `PHOMU_RELEASE_KEYSTORE`          | the key store, base64 encoded |
 | `PHOMU_RELEASE_KEYSTORE_PASSWORD` | the password of the key store |
-| `PHOMU_RELEASE_KEY_ALIAS` | the alias of the key |
-| `PHOMU_RELEASE_KEY_PASSWORD` | the password of the key |
+| `PHOMU_RELEASE_KEY_ALIAS`         | the alias of the key          |
+| `PHOMU_RELEASE_KEY_PASSWORD`      | the password of the key       |
 
 **The key is created once** and never leaves the machine of the owner:
 
@@ -119,11 +119,19 @@ whole thing:
 
 1. **Actions → Release → Run workflow** — the track and the version are the
    inputs.
-2. The workflow builds the unsigned artefact, signs it with the key of the
+2. The workflow asks the CI whether the commit it is about to release was
+   checked: a commit without a **green** CI run is refused. A beta is a
+   promise that the state was tested — a release without that promise is
+   not a beta but an accident with a version number.
+3. The workflow builds the unsigned artefact, signs it with the key of the
    track, checks the signature with `apksigner verify` and publishes a
    **prerelease** with the artefact and the notes attached.
-3. The record ([`RELEASE-RECORD-ANDROID.md`](RELEASE-RECORD-ANDROID.md)) is
+4. The record ([`RELEASE-RECORD-ANDROID.md`](RELEASE-RECORD-ANDROID.md)) is
    updated: the version, the commit, the known defects, the testers.
+
+> **The CI of the commit must exist.** A commit that was pushed before the
+> CI was switched on has no run at all — push it again and let the CI
+> check it.
 
 ```bash
 gh release list                       # the releases of the track
@@ -137,11 +145,10 @@ gh release download android-v0.2.0-beta.1   # the artefact
 The known limits of the track are listed in the record. The two that shape
 the experience of a tester:
 
-1. **The Timeline mode and the Lyrics mode cannot be answered** — the
-   question view model of the bridge carries the options as plain strings;
-   the slots of the timeline and the flag that marks the invented line are
-   not part of it. The shell shows the question and refuses to send a wrong
-   answer.
+1. ~~**The Timeline mode and the Lyrics mode cannot be answered.**~~ **Closed**
+   — the base carries the context of the round with the question, and the
+   Lyrics mode names the line the player picked instead of the flag that
+   would give the answer away. Both modes are answerable.
 2. **The catalogue screen shows the identifier of a song**, not its title:
    the summary of the bridge carries the identifier, the difficulty, the
    packs and two flags — no title, no artist, no year.
@@ -153,9 +160,9 @@ the next milestone of the base, and the shell follows without a change.
 
 ## 7. The related documents
 
-| Document | Relation |
-|---|---|
-| [`RELEASE-PLAN.md`](RELEASE-PLAN.md) | the stages, their gates and their channels |
-| [`RELEASE-RECORD-ANDROID.md`](RELEASE-RECORD-ANDROID.md) | the record of the released versions |
-| [`../../docs/design/PLATFORM-ARCHITECTURE.md`](../../docs/design/PLATFORM-ARCHITECTURE.md) | the architecture of the family of apps |
-| [`../../apps/android/README.md`](../../apps/android/README.md) | the shell of the Android track |
+| Document                                                                                   | Relation                                   |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------ |
+| [`RELEASE-PLAN.md`](RELEASE-PLAN.md)                                                       | the stages, their gates and their channels |
+| [`RELEASE-RECORD-ANDROID.md`](RELEASE-RECORD-ANDROID.md)                                   | the record of the released versions        |
+| [`../../docs/design/PLATFORM-ARCHITECTURE.md`](../../docs/design/PLATFORM-ARCHITECTURE.md) | the architecture of the family of apps     |
+| [`../../apps/android/README.md`](../../apps/android/README.md)                             | the shell of the Android track             |
