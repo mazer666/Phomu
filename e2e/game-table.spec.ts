@@ -315,6 +315,14 @@ test('scoreboard and game-settings dialogs remain usable on short and tall scree
     [1920, 1080],
   ]) {
     await page.setViewportSize({ width, height });
+    // WHY the wait: the layout of the game follows the size of the window.
+    // The test branches on it — the scoreboard is a column in the wide
+    // landscape and a floating button otherwise. Without the wait the test
+    // would read the layout of the *previous* screen and take the wrong
+    // branch.
+    await expect
+      .poll(() => page.locator('.phomu-game').getAttribute('data-layout'))
+      .toBe(width > height ? 'landscape' : 'portrait');
     for (const opener of ['Show scoreboard', 'Open game settings']) {
       const action = page.getByRole('button', { name: opener, exact: true });
       if (!(await action.isVisible())) {

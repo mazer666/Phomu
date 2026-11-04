@@ -133,6 +133,16 @@ jobs:
         run: npm ci
       - name: Install the Playwright browser
         run: npx playwright install --with-deps chromium
+      # WHY the module of the base: the shell loads the shared base as a
+      # WebAssembly module, and the module is build output — it is not in
+      # the repository. Without it the game page cannot be rendered at all,
+      # and every test of a round waits for a page that never arrives.
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Build the WebAssembly module
+        run: |
+          rustup target add wasm32-unknown-unknown
+          node scripts/build-wasm.mjs
       - name: Playwright smoke test
         # The HTML reporter is added so that the uploaded report is a real
         # one; `list` keeps the console output readable in the job log.
